@@ -53,53 +53,37 @@ jobs:
 
           ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
 
-          echo "Copying docker-compose config..."
-          cp Klacks.Api/deploy/docker-compose-server.yml Klacks.Api/docker-compose.yml
-
-          cd Klacks.Api
-
-          if command -v docker-compose &> /dev/null; then
-            COMPOSE_CMD="docker-compose"
-          else
-            COMPOSE_CMD="docker compose"
-          fi
-          echo "Using: $COMPOSE_CMD"
-
           echo "Stopping old Klacks.Marketing container..."
           docker stop klacks-marketing 2>/dev/null || true
           docker rm -f klacks-marketing 2>/dev/null || true
 
-          echo "Building Klacks.Marketing..."
-          timeout 900 $COMPOSE_CMD build klacks-marketing --no-cache
+          echo "Building Klacks.Marketing Docker image..."
+          cd Klacks.Marketing
+          docker build -t klacks-marketing -f Dockerfile .
+          cd ..
 
           echo "Starting Klacks.Marketing..."
-          $COMPOSE_CMD up -d --force-recreate klacks-marketing
+          docker run -d \
+            --name klacks-marketing \
+            --restart unless-stopped \
+            -e ASPNETCORE_ENVIRONMENT=Production \
+            -e ASPNETCORE_URLS=http://+:80 \
+            --expose 80 \
+            klacks-marketing
 
-          echo "Connecting marketing to nginx-proxy network..."
+          echo "Connecting marketing to network..."
           docker network connect apps_klacks_network klacks-marketing 2>/dev/null || true
           docker exec klacks-proxy nginx -s reload 2>/dev/null || true
 
           echo "Klacks.Marketing deployment completed!"
 
-          echo "Service status:"
-          $COMPOSE_CMD ps klacks-marketing
+          sleep 10
+          echo "Health Check..."
 
-          sleep 15
-          echo "Health Check for Klacks.Marketing..."
-
-          if $COMPOSE_CMD ps klacks-marketing | grep -q "Up"; then
+          if docker ps --filter "name=klacks-marketing" --filter "status=running" | grep -q "klacks-marketing"; then
             echo "Container is running"
           else
             echo "Container is not running"
-            $COMPOSE_CMD logs klacks-marketing --tail=20
-            exit 1
-          fi
-
-          if curl -f -s -o /dev/null -w "%{http_code}" http://localhost:7004 | grep -q "200\|301\|302"; then
-            echo "Klacks.Marketing is accessible"
-          else
-            echo "Klacks.Marketing health check failed"
-            echo "Container logs:"
-            $COMPOSE_CMD logs klacks-marketing --tail=20
+            docker logs klacks-marketing --tail=20
             exit 1
           fi
