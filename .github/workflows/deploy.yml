@@ -30,6 +30,15 @@ jobs:
 
           cd /root/apps
 
+          echo "Updating Klacks.Api repo (for docker-compose config)..."
+          if [ -d "Klacks.Api" ]; then
+            cd Klacks.Api
+            git remote set-url origin https://github.com/HeribertG/Klacks.Api.git 2>/dev/null || true
+            git fetch origin
+            git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
+            cd ..
+          fi
+
           if [ -d "Klacks.Marketing" ]; then
             echo "Updating Klacks.Marketing..."
             cd Klacks.Marketing
