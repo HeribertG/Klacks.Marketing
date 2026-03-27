@@ -30,7 +30,7 @@ jobs:
 
           cd /root/apps
 
-          echo "Updating Klacks.Api repo (for docker-compose config)..."
+          echo "Updating Klacks.Api repo (for docker-compose + nginx config)..."
           if [ -d "Klacks.Api" ]; then
             cd Klacks.Api
             git remote set-url origin https://github.com/HeribertG/Klacks.Api.git 2>/dev/null || true
@@ -54,7 +54,9 @@ jobs:
           ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
 
           echo "Copying docker-compose config..."
-          cp Klacks.Api/deploy/docker-compose-server.yml docker-compose.yml
+          cp Klacks.Api/deploy/docker-compose-server.yml Klacks.Api/docker-compose.yml
+
+          cd Klacks.Api
 
           if command -v docker-compose &> /dev/null; then
             COMPOSE_CMD="docker-compose"
