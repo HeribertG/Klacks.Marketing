@@ -3,10 +3,7 @@ name: Deploy Klacks.Marketing to Hetzner
 on:
   push:
     branches: [ main ]
-    paths:
-      - '**'
-      - '!README.md'
-      - '!docs/**'
+  workflow_dispatch:
 
 concurrency:
   group: deploy-klacks-marketing-${{ github.ref }}
