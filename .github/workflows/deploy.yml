@@ -28,11 +28,16 @@ jobs:
           set -e
           echo "Deploying Klacks.Marketing..."
 
+          # Ensure GitHub SSH host key is known
+          mkdir -p ~/.ssh
+          ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+
           cd /root/apps
 
           echo "Updating main Klacks.Api repo (docker-compose + nginx)..."
           if [ -d "Klacks.Api" ]; then
             cd Klacks.Api
+            git remote set-url origin https://github.com/HeribertG/Klacks.Api.git 2>/dev/null || true
             git fetch origin
             git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
             cd ..
@@ -41,10 +46,10 @@ jobs:
           if [ -d "Klacks.Marketing" ]; then
             echo "Updating Klacks.Marketing..."
             cd Klacks.Marketing
-            CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-            echo "Current branch: $CURRENT_BRANCH"
+            git remote set-url origin https://github.com/HeribertG/Klacks.Marketing.git 2>/dev/null || true
+            git checkout main 2>/dev/null || git checkout -b main origin/main 2>/dev/null || true
             git fetch origin
-            git reset --hard origin/$CURRENT_BRANCH
+            git reset --hard origin/main
             cd ..
           else
             echo "Cloning Klacks.Marketing..."
