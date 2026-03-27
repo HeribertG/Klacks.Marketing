@@ -28,23 +28,18 @@ jobs:
           set -e
           echo "Deploying Klacks.Marketing..."
 
-          # Ensure GitHub SSH host key is known
-          mkdir -p ~/.ssh && chmod 700 ~/.ssh
-          ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
-          chmod 600 ~/.ssh/known_hosts
-
           cd /root/apps
 
           if [ -d "Klacks.Marketing" ]; then
             echo "Updating Klacks.Marketing..."
             cd Klacks.Marketing
-            git remote set-url origin git@github.com:HeribertG/Klacks.Marketing.git 2>/dev/null || true
+            git remote set-url origin https://github.com/HeribertG/Klacks.Marketing.git 2>/dev/null || true
             git fetch origin
             git reset --hard origin/main
             cd ..
           else
             echo "Cloning Klacks.Marketing..."
-            git clone git@github.com:HeribertG/Klacks.Marketing.git
+            git clone https://github.com/HeribertG/Klacks.Marketing.git
           fi
 
           ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
