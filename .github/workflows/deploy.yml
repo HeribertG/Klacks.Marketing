@@ -66,13 +66,14 @@ jobs:
           docker run -d \
             --name klacks-marketing \
             --restart unless-stopped \
+            --network apps_klacks_network \
+            --network-alias klacks-marketing \
             -e ASPNETCORE_ENVIRONMENT=Production \
             -e ASPNETCORE_URLS=http://+:80 \
             --expose 80 \
             klacks-marketing
 
-          echo "Connecting marketing to network..."
-          docker network connect apps_klacks_network klacks-marketing 2>/dev/null || true
+          echo "Reloading nginx proxy..."
           docker exec klacks-proxy nginx -s reload 2>/dev/null || true
 
           echo "Klacks.Marketing deployment completed!"
