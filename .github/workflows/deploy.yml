@@ -53,14 +53,15 @@ jobs:
 
           ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
 
+          echo "Copying docker-compose config..."
+          cp Klacks.Api/deploy/docker-compose-server.yml docker-compose.yml
+
           if command -v docker-compose &> /dev/null; then
             COMPOSE_CMD="docker-compose"
           else
             COMPOSE_CMD="docker compose"
           fi
           echo "Using: $COMPOSE_CMD"
-
-          cd Klacks.Api
 
           echo "Stopping old Klacks.Marketing container..."
           docker stop klacks-marketing 2>/dev/null || true
