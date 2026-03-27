@@ -1,0 +1,105 @@
+name: Deploy Klacks.Marketing to Hetzner
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**'
+      - '!README.md'
+      - '!docs/**'
+
+concurrency:
+  group: deploy-klacks-marketing-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: 22
+        script: |
+          set -e
+          echo "Deploying Klacks.Marketing..."
+
+          cd /root/apps
+
+          echo "Updating main Klacks.Api repo (docker-compose + nginx)..."
+          if [ -d "Klacks.Api" ]; then
+            cd Klacks.Api
+            git fetch origin
+            git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
+            cd ..
+          fi
+
+          if [ -d "Klacks.Marketing" ]; then
+            echo "Updating Klacks.Marketing..."
+            cd Klacks.Marketing
+            CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+            echo "Current branch: $CURRENT_BRANCH"
+            git fetch origin
+            git reset --hard origin/$CURRENT_BRANCH
+            cd ..
+          else
+            echo "Cloning Klacks.Marketing..."
+            git clone https://github.com/HeribertG/Klacks.Marketing.git
+          fi
+
+          ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
+
+          if command -v docker-compose &> /dev/null; then
+            COMPOSE_CMD="docker-compose"
+          else
+            COMPOSE_CMD="docker compose"
+          fi
+          echo "Using: $COMPOSE_CMD"
+
+          cd Klacks.Api
+
+          echo "Stopping old Klacks.Marketing container..."
+          docker stop klacks-marketing 2>/dev/null || true
+          docker rm -f klacks-marketing 2>/dev/null || true
+
+          echo "Building Klacks.Marketing..."
+          timeout 900 $COMPOSE_CMD build klacks-marketing --no-cache
+
+          echo "Starting Klacks.Marketing..."
+          $COMPOSE_CMD up -d --force-recreate klacks-marketing
+
+          echo "Connecting marketing to nginx-proxy network..."
+          docker network connect apps_klacks_network klacks-marketing 2>/dev/null || true
+          docker exec klacks-proxy nginx -s reload 2>/dev/null || true
+
+          echo "Klacks.Marketing deployment completed!"
+
+          echo "Service status:"
+          $COMPOSE_CMD ps klacks-marketing
+
+          sleep 15
+          echo "Health Check for Klacks.Marketing..."
+
+          if $COMPOSE_CMD ps klacks-marketing | grep -q "Up"; then
+            echo "Container is running"
+          else
+            echo "Container is not running"
+            $COMPOSE_CMD logs klacks-marketing --tail=20
+            exit 1
+          fi
+
+          if curl -f -s -o /dev/null -w "%{http_code}" http://localhost:7004 | grep -q "200\|301\|302"; then
+            echo "Klacks.Marketing is accessible"
+          else
+            echo "Klacks.Marketing health check failed"
+            echo "Container logs:"
+            $COMPOSE_CMD logs klacks-marketing --tail=20
+            exit 1
+          fi
