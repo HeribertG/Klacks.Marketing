@@ -14,6 +14,7 @@
         </a>
         <div class="hidden md:flex items-center gap-8">
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="#features">Features</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="#planning">Planning</a>
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="#ai-assistant">AI Assistant</a>
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="#scheduling">Auto-Scheduling</a>
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="#tech-stack">Tech Stack</a>
@@ -183,6 +184,130 @@
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">route</span>
             <h4 class="text-lg font-bold mb-4">Route Optimization</h4>
             <p class="text-on-surface-variant text-sm leading-relaxed">Plan deployment routes with ant colony optimization. Supports car, bicycle, walking, and mixed transport modes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PLANNING PHILOSOPHY -->
+<section class="py-32 px-8 max-w-7xl mx-auto" id="planning">
+    <div class="text-center mb-16">
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Divide &amp; Conquer</span>
+        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">Modular planning that scales</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">Break complex schedules into manageable sheets. Every change propagates automatically &mdash; no conflicts, no surprises.</p>
+    </div>
+
+    <div class="flex justify-center mb-20">
+        <svg viewBox="0 0 960 270" xmlns="http://www.w3.org/2000/svg" fill="none" class="w-full max-w-4xl">
+            <style>
+                .sh-title { font: 700 11px/1 'Inter', sans-serif; fill: #9ca3af; letter-spacing: 0.05em; }
+                .sh-emp { font: 600 14px/1 'Inter', sans-serif; fill: white; }
+                .sh-emp-hl { font: 600 14px/1 'Inter', sans-serif; fill: #34d399; }
+                .g-hdr { font: 700 10px/1 'Inter', sans-serif; fill: #64748b; letter-spacing: 0.04em; }
+                .g-name { font: 600 13px/1 'Inter', sans-serif; fill: #1e293b; }
+                .g-name-hl { font: 600 13px/1 'Inter', sans-serif; fill: #059669; }
+                .g-cell { font: 500 12px/1 'Inter', sans-serif; fill: #94a3b8; }
+                .g-sync { font: 700 14px/1 'Inter', sans-serif; fill: #059669; }
+            </style>
+
+            <!-- Schedule Sheet 1 -->
+            <rect x="10" y="10" width="220" height="110" rx="12" fill="#1c1b1f"/>
+            <text x="30" y="38" class="sh-title">SCHEDULE SHEET 1</text>
+            <text x="30" y="68" class="sh-emp">Employee X</text>
+            <text x="30" y="96" class="sh-emp-hl">Employee Y</text>
+
+            <!-- Schedule Sheet 2 -->
+            <rect x="10" y="155" width="220" height="110" rx="12" fill="#1c1b1f"/>
+            <text x="30" y="183" class="sh-title">SCHEDULE SHEET 2</text>
+            <text x="30" y="213" class="sh-emp-hl">Employee Y</text>
+            <text x="30" y="241" class="sh-emp">Employee Z</text>
+
+            <!-- Sync badge -->
+            <circle cx="325" cy="135" r="18" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+            <text x="325" y="140" text-anchor="middle" class="g-sync">&#8596;</text>
+
+            <!-- Connecting lines -->
+            <path d="M230,68 C310,68 360,95 420,95" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 4"/>
+            <path d="M230,96 C300,96 310,135 325,135" stroke="#059669" stroke-width="2" stroke-dasharray="6 4"/>
+            <path d="M325,135 C340,135 380,148 420,148" stroke="#059669" stroke-width="2" stroke-dasharray="6 4"/>
+            <path d="M230,213 C300,213 310,135 325,135" stroke="#059669" stroke-width="2" stroke-dasharray="6 4"/>
+            <path d="M230,241 C310,241 360,198 420,198" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+            <!-- Grid -->
+            <rect x="420" y="45" width="520" height="200" rx="8" fill="white" stroke="#e2e8f0"/>
+
+            <!-- Grid header -->
+            <rect x="420" y="45" width="520" height="40" rx="8" fill="#f8fafc"/>
+            <rect x="420" y="77" width="520" height="8" fill="#f8fafc"/>
+            <line x1="420" y1="85" x2="940" y2="85" stroke="#e2e8f0"/>
+            <text x="445" y="70" class="g-hdr">EMPLOYEE</text>
+            <text x="580" y="70" class="g-hdr">DAY 1</text>
+            <text x="647" y="70" class="g-hdr">DAY 2</text>
+            <text x="714" y="70" class="g-hdr">DAY 3</text>
+            <text x="790" y="70" class="g-hdr">...</text>
+            <text x="840" y="70" class="g-hdr">...</text>
+            <text x="885" y="70" class="g-hdr">DAY 31</text>
+
+            <!-- Column separators -->
+            <line x1="565" y1="45" x2="565" y2="245" stroke="#e2e8f0"/>
+            <line x1="635" y1="45" x2="635" y2="245" stroke="#e2e8f0"/>
+            <line x1="705" y1="45" x2="705" y2="245" stroke="#e2e8f0"/>
+            <line x1="775" y1="45" x2="775" y2="245" stroke="#e2e8f0"/>
+            <line x1="825" y1="45" x2="825" y2="245" stroke="#e2e8f0"/>
+            <line x1="875" y1="45" x2="875" y2="245" stroke="#e2e8f0"/>
+
+            <!-- Row 1: Employee X -->
+            <line x1="420" y1="135" x2="940" y2="135" stroke="#e2e8f0"/>
+            <text x="445" y="115" class="g-name">Employee X</text>
+            <text x="590" y="115" class="g-cell">AM</text>
+            <text x="660" y="115" class="g-cell">AM</text>
+            <text x="728" y="115" class="g-cell">PM</text>
+            <text x="790" y="115" class="g-cell">...</text>
+            <text x="840" y="115" class="g-cell">...</text>
+            <text x="895" y="115" class="g-cell">AM</text>
+
+            <!-- Row 2: Employee Y (highlighted) -->
+            <rect x="421" y="136" width="518" height="53" fill="#ecfdf5"/>
+            <line x1="420" y1="188" x2="940" y2="188" stroke="#e2e8f0"/>
+            <text x="445" y="168" class="g-name-hl">Employee Y</text>
+            <text x="590" y="168" class="g-cell">PM</text>
+            <text x="660" y="168" class="g-cell">NT</text>
+            <text x="728" y="168" class="g-cell">AM</text>
+            <text x="790" y="168" class="g-cell">...</text>
+            <text x="840" y="168" class="g-cell">...</text>
+            <text x="895" y="168" class="g-cell">PM</text>
+
+            <!-- Row 3: Employee Z -->
+            <text x="445" y="220" class="g-name">Employee Z</text>
+            <text x="590" y="220" class="g-cell">NT</text>
+            <text x="660" y="220" class="g-cell">AM</text>
+            <text x="728" y="220" class="g-cell">AM</text>
+            <text x="790" y="220" class="g-cell">...</text>
+            <text x="840" y="220" class="g-cell">...</text>
+            <text x="895" y="220" class="g-cell">NT</text>
+
+            <!-- Small connection dots -->
+            <circle cx="420" cy="95" r="3" fill="#94a3b8"/>
+            <circle cx="420" cy="148" r="4" fill="#059669"/>
+            <circle cx="420" cy="198" r="3" fill="#94a3b8"/>
+        </svg>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-2xl p-8 max-w-3xl mx-auto mb-16">
+        <p class="text-on-surface-variant text-sm leading-relaxed m-0">
+            <strong class="text-primary">How it works:</strong> Schedule sheets are containers that hold references to employee rows &mdash; not copies. When you change Employee Y's shift in Sheet 1, the change is instantly visible in Sheet 2. This makes cross-department scheduling and employee sharing effortless. Overlapping assignments become impossible by design.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-6">auto_awesome</span>
+            <h4 class="text-lg font-bold mb-4">Phase 1: Auto-Fill</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">The tedious part &mdash; done in seconds. An evolutionary algorithm generates the rough plan, respecting all constraints: labor laws, qualifications, availability, and travel distances.</p>
+        </div>
+        <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-6">touch_app</span>
+            <h4 class="text-lg font-bold mb-4">Phase 2: Human + AI</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Drag &amp; drop on the Gantt chart, or ask the AI assistant to reshuffle. Every change is validated in real-time against your rules. You see the big picture &mdash; the AI handles the details.</p>
         </div>
     </div>
 </section>
