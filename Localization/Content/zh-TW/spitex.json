@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks 為居家照護打造 | 路線規劃與照護排班",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "專為居家照護 &amp; 到宅護理打造",
+    "titleHtml": "把時間留給照護，<span class=\"text-secondary\">而不是路線規劃。</span>",
+    "subtitle": "Klacks 自動排定服務與路線 &mdash; 依正確資格、正確加給與您所在州的假日安排。地端部署，病患資料絕不離開您的機房。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 時間軸畫面，用於居家照護的路線規劃",
+    "screenshotLabel": "時間軸",
+    "screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。"
+  },
+  "challenges": {
+    "eyebrow": "居家照護的日常",
+    "title": "每天都不一樣的排班挑戰",
+    "items": [
+      { "icon": "alt_route", "title": "以路線取代班次", "text": "每位照護人員從一位個案前往下一位。路線、順序與時間窗必須互相配合 &mdash; 每天都要重新安排。" },
+      { "icon": "verified_user", "title": "資格決定一切", "text": "給藥、傷口照護、專業證照等級：不是每個人都能承接每一項服務。" },
+      { "icon": "health_and_safety", "title": "敏感資料", "text": "病患資料必須受到保護。對許多機構而言，強制上雲端並不是可行的選項。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何減輕居家照護的負擔",
+    "subtitle": "從自動化路線到州級假日 &mdash; 每個環節都環環相扣。",
+    "items": [
+      { "icon": "route", "title": "路線自動最佳化", "text": "Klacks 會安排路線，讓路程縮短、時間窗確實遵守 &mdash; 適用開車、騎車或步行。" },
+      { "icon": "verified", "title": "自動考量資格條件", "text": "每項服務只會指派給具備對應資格的人員 &mdash; 完全不需要人工檢查。" },
+      { "icon": "event_available", "title": "您所在州的加給 &amp; 假日", "text": "夜間、週末與假日加給皆已預先設定 &mdash; 細緻到州與市鎮層級，並可自由調整。" },
+      { "icon": "shield_lock", "title": "地端部署：資料留在機房", "text": "Klacks 運行於您自有的基礎架構上。病患資料不會離開您的機房 &mdash; 就連給 AI 使用也不例外。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音完成排班", "text": "只要說「把明天的路線排滿」就好。若有人臨時請假，Klacksy 會立即建議可用的替補人選。" },
+      { "icon": "event_busy", "title": "人力缺口迅速補上", "text": "若有人員無法出勤，Klacks 會立即顯示誰具備資格且有空 &mdash; 不必打亂整份排班表。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實際案例",
+    "title": "日內瓦的居家照護機構，雙語作業，含沃州服務",
+    "text": "法語介面、日內瓦與沃州的假日、居家照護加給 &mdash; 全部在 Klacks 中設定完成，無需另外開發。路線自動最佳化、資格自動檢查，Klacksy 也能協助處理臨時異動。病患資料則完全留在機構內部。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的機構中親身體驗 Klacks",
+    "text": "我們將透過專屬展示，為您示範 Klacks 如何為您的機構處理路線、資格與加給。"
+  }
+}

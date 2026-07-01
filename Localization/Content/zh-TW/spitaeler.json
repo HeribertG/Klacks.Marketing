@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks 為醫院打造 | 24 小時排班與休息時間管理",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "專為醫院 &amp; 診所打造",
+    "titleHtml": "排班表，<span class=\"text-secondary\">全天候順利運作。</span>",
+    "subtitle": "Klacks 為病房與班次做到零缺口排班 &mdash; 確實遵守休息時間、符合資格要求，並完全掌握資料主導權。地端部署，病患資料絕不離開您的機構。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 排班表格線畫面，適用於醫院",
+    "screenshotLabel": "排班表",
+    "screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。"
+  },
+  "challenges": {
+    "eyebrow": "醫院的日常",
+    "title": "零缺口、正確合規、完整紀錄",
+    "items": [
+      { "icon": "e911_emergency", "title": "24 小時全年無休", "text": "白天、夜晚、週末、假日：每個病房都必須零缺口人力配置 &mdash; 即使臨時有人請假也一樣。" },
+      { "icon": "gavel", "title": "休息時間 &amp; 法規", "text": "工時法規、休息時間與工時上限必須確實遵守 &mdash; 靠人工幾乎不可能全面掌握。" },
+      { "icon": "health_and_safety", "title": "醫療等級的資料保護", "text": "人事與病患資料不得離開機構。強制上雲端往往是無法接受的做法。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何減輕醫院的負擔",
+    "subtitle": "從零缺口的夜班到支援人力庫 &mdash; 每個環節都環環相扣。",
+    "items": [
+      { "icon": "schedule", "title": "24 小時零缺口涵蓋", "text": "所有病房的早、中、夜班 &mdash; Klacks 會立即顯示每個缺口，並可依需求自動補齊。" },
+      { "icon": "gavel", "title": "休息時間自動檢查", "text": "工時法規、休息時間與工時上限即時受到監控 &mdash; 違規情況根本不會發生。" },
+      { "icon": "verified", "title": "資格 &amp; 病房配對", "text": "每個班次只會指派給具備對應資格的人員 &mdash; 依病房、部門與職能分別配對。" },
+      { "icon": "shield_lock", "title": "地端部署：資料留在機構內", "text": "Klacks 運行於您自有的基礎架構上。人事與病患資料不會離開醫院 &mdash; 就連給 AI 使用也不例外。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音完成排班", "text": "只要說「把內科下週的夜班排滿」就好 &mdash; Klacksy 會自動考量資格與休息時間。" },
+      { "icon": "groups", "title": "支援人力庫 &amp; 臨時缺勤", "text": "若有人員無法出勤，Klacks 會立即顯示具備資格且有空的支援人力 &mdash; 不必打亂整份排班表。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實際案例",
+    "title": "多個病房、日夜兩班制，共用一個支援人力庫",
+    "text": "每個病房都有各自的人力配置規則與資格要求。Klacks 統一排班、自動檢查休息時間，並在人力缺口時調用支援人力庫 &mdash; 病房主管隨時掌握哪裡人力吃緊。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "在您的醫院親身體驗 Klacks",
+    "text": "我們將透過專屬展示，示範 Klacks 如何為您的機構處理病房、休息時間與支援人力調度。"
+  }
+}

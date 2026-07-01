@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 為物流打造 | 路線、駕駛時間與跨境調度",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "專為物流 &amp; 運輸業打造",
+    "titleHtml": "路線、駕駛時間、交期 — <span class=\"text-secondary\">全部一手掌握。</span>",
+    "subtitle": "Klacks 為路線與駕駛排班 &mdash; 兼顧駕駛與休息時間、合適的駕照類別，以及跨境假日安排。路線會自動最佳化。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 時間軸畫面，用於路線與駕駛調度",
+    "screenshotLabel": "時間軸",
+    "screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。"
+  },
+  "challenges": {
+    "eyebrow": "物流業的日常",
+    "title": "路線、法規與交期同時兼顧",
+    "items": [
+      { "icon": "alt_route", "title": "路線 &amp; 交期", "text": "停靠點、時間窗與路程必須互相配合 &mdash; 每一次重新安排都會牽動後續。" },
+      { "icon": "timer", "title": "駕駛 &amp; 休息時間", "text": "法定駕駛與休息時間是強制規定 &mdash; 靠人工掌握眾多駕駛的狀況幾乎不可能做到確實。" },
+      { "icon": "public", "title": "跨境作業", "text": "不同國家、不同假日與規則：一趟跨境路線需要同時對應兩地的行事曆。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何減輕物流業的負擔",
+    "subtitle": "從自動最佳化路線到跨境假日 &mdash; 每個環節都環環相扣。",
+    "items": [
+      { "icon": "route", "title": "路線自動最佳化", "text": "Klacks 會將停靠點排成最合理的順序 &mdash; 路程短、時間窗確實遵守、空車率降低。" },
+      { "icon": "timer", "title": "駕駛 &amp; 休息時間檢查", "text": "法定時數上限即時受到監控 &mdash; 違規情況根本不會發生。" },
+      { "icon": "flag", "title": "多國 &amp; 多重行事曆", "text": "可混合多個國家的假日與規則 &mdash; 每一項都能各自套用到工時與加給。" },
+      { "icon": "badge", "title": "駕照類別自動比對", "text": "Klacks 只會將路線指派給具備對應駕照的駕駛 &mdash; 並在證件即將到期前提出警示。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音完成排班", "text": "只要說「安排明天的路線，梅爾司機請病假」就好 &mdash; Klacksy 會重新計算所有安排。" },
+      { "icon": "event_busy", "title": "人力缺口迅速補上", "text": "若有駕駛無法出勤，Klacks 會立即顯示誰具備資格、有空，且仍在可用駕駛時數內。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的物流公司親身體驗 Klacks",
+    "text": "我們將透過專屬展示，示範 Klacks 如何為您處理路線、駕駛時間與司機調度。"
+  }
+}

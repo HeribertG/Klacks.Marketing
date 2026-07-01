@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks voor de thuiszorg | Routeplanning & zorgroosters",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Voor thuiszorg &amp; ambulante zorg",
+    "titleHtml": "Meer tijd voor zorg, <span class=\"text-secondary\">minder voor routeplanning.</span>",
+    "subtitle": "Klacks plant inzetten en routes automatisch &mdash; met de juiste kwalificaties, correcte toeslagen en de feestdagen van uw kanton. On-premise, zodat patiëntgegevens uw organisatie nooit verlaten.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning van de thuiszorg",
+    "screenshotLabel": "Tijdlijn",
+    "screenshotCaption": "Schermafbeelding in het Duits — de applicatie zelf is beschikbaar in het Duits, Engels, Frans en Italiaans."
+  },
+  "challenges": {
+    "eyebrow": "De dagelijkse praktijk in de thuiszorg",
+    "title": "Planning die elke dag anders is",
+    "items": [
+      { "icon": "alt_route", "title": "Routes in plaats van diensten", "text": "Elke zorgverlener rijdt van cliënt naar cliënt. Route, volgorde en tijdvensters moeten kloppen &mdash; elke dag opnieuw." },
+      { "icon": "verified_user", "title": "Kwalificatie is doorslaggevend", "text": "Medicatietoediening, wondverzorging, diplomaniveau: niet iedereen mag elke inzet uitvoeren." },
+      { "icon": "health_and_safety", "title": "Gevoelige gegevens", "text": "Patiëntgegevens moeten beschermd blijven. Een cloudverplichting is voor veel organisaties geen optie." }
+    ]
+  },
+  "solutions": {
+    "title": "Hoe Klacks de thuiszorg ontlast",
+    "subtitle": "Van de automatische route tot de kantonnale feestdag &mdash; alles grijpt op elkaar in.",
+    "items": [
+      { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks stelt inzetroutes zo samen dat afstanden kort blijven en tijdvensters worden gehaald &mdash; met de auto, fiets of te voet." },
+      { "icon": "verified", "title": "Kwalificaties automatisch meegewogen", "text": "Elke inzet wordt alleen toegewezen aan personen met de juiste kwalificatie &mdash; volledig zonder handmatige controle." },
+      { "icon": "event_available", "title": "Toeslagen &amp; feestdagen van uw kanton", "text": "Nacht-, weekend- en feestdagtoeslagen zijn vooraf geconfigureerd &mdash; tot op kanton- en gemeenteniveau, vrij aan te passen." },
+      { "icon": "shield_lock", "title": "On-premise: gegevens blijven in huis", "text": "Klacks draait op uw eigen infrastructuur. Patiëntgegevens verlaten uw organisatie niet &mdash; ook niet richting de AI." },
+      { "icon": "smart_toy", "title": "Klacksy plant met de stem", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekte stelt Klacksy meteen beschikbare vervanging voor." },
+      { "icon": "event_busy", "title": "Uitval snel opgevangen", "text": "Valt iemand uit, dan toont Klacks direct wie gekwalificeerd en beschikbaar is &mdash; zonder het hele rooster overhoop te halen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Thuiszorg Genève, tweetalig, met inzetten in Vaud",
+    "text": "Franse interface, feestdagen van Genève en Vaud, thuiszorgtoeslagen &mdash; in Klacks geconfigureerd, niet nageprogrammeerd. Routes worden automatisch geoptimaliseerd, kwalificaties gecontroleerd, en Klacksy helpt bij last-minute wijzigingen. Patiëntgegevens blijven daarbij volledig in huis."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in uw thuiszorgorganisatie ervaren",
+    "text": "In een persoonlijke demo laten we zien hoe Klacks routes, kwalificaties en toeslagen voor uw organisatie overneemt."
+  }
+}

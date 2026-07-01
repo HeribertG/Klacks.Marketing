@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks pro domácí péči | Plánování tras & rozpisy péče",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Pro domácí péči &amp; ambulantní ošetřovatelství",
+    "titleHtml": "Více času na péči, <span class=\"text-secondary\">méně na plánování tras.</span>",
+    "subtitle": "Klacks automaticky plánuje nasazení a trasy &mdash; se správnými kvalifikacemi, korektními příplatky a svátky vašeho kantonu. On-premise, aby data pacientů nikdy neopustila vaše prostory.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Časová osa Klacks pro plánování tras v domácí péči",
+    "screenshotLabel": "Časová osa",
+    "screenshotCaption": "Snímek obrazovky je v němčině — rozhraní aplikace existuje pouze v němčině, angličtině, francouzštině a italštině; čeština je v současnosti podporována pouze AI asistentem Klacksy."
+  },
+  "challenges": {
+    "eyebrow": "Každodenní realita domácí péče",
+    "title": "Plánování, které je každý den jiné",
+    "items": [
+      { "icon": "alt_route", "title": "Trasy místo směn", "text": "Každý pracovník péče jezdí od klienta ke klientovi. Cesty, pořadí a časová okna musí do sebe zapadat &mdash; každý den znovu." },
+      { "icon": "verified_user", "title": "Rozhoduje kvalifikace", "text": "Podávání léků, ošetřování ran, diplomovaná úroveň kvalifikace: ne každý smí převzít každé nasazení." },
+      { "icon": "health_and_safety", "title": "Citlivá data", "text": "Data pacientů musí být chráněna. Povinnost cloudu není pro mnoho organizací přijatelnou možností." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks ulehčuje práci v domácí péči",
+    "subtitle": "Od automatické trasy až po kantonální svátek &mdash; vše do sebe zapadá.",
+    "items": [
+      { "icon": "route", "title": "Automaticky optimalizované trasy", "text": "Klacks navrhne trasy nasazení tak, aby cesty byly krátké a časová okna dodržená &mdash; pro auto, kolo nebo chůzi." },
+      { "icon": "verified", "title": "Kvalifikace zohledněny automaticky", "text": "Každé nasazení je přiděleno pouze osobám s odpovídající kvalifikací &mdash; zcela bez ručního ověřování." },
+      { "icon": "event_available", "title": "Příplatky &amp; svátky vašeho kantonu", "text": "Noční, víkendové a sváteční příplatky jsou přednastavené &mdash; až na úroveň kantonu a obce, volně upravitelné." },
+      { "icon": "shield_lock", "title": "On-premise: data zůstávají u vás", "text": "Klacks běží na vaší vlastní infrastruktuře. Data pacientů neopustí vaše prostory &mdash; ani směrem k AI." },
+      { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplň trasy na zítra“ stačí. V případě nemoci Klacksy okamžitě navrhne dostupnou náhradu." },
+      { "icon": "event_busy", "title": "Výpadky rychle vyřešené", "text": "Když někdo vypadne, Klacks okamžitě ukáže, kdo je kvalifikovaný a dostupný &mdash; aniž by bylo nutné převracet celý plán." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "Domácí péče v Ženevě, dvojjazyčně, s nasazeními v kantonu Vaud",
+    "text": "Francouzské rozhraní, ženevské a vaudské svátky, příplatky za domácí péči &mdash; nakonfigurované v Klacks, nikoli doprogramované. Trasy jsou automaticky optimalizované, kvalifikace ověřené a Klacksy pomáhá s krátkodobými změnami. Data pacientů přitom zůstávají zcela u vás."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Zažijte Klacks ve své organizaci domácí péče",
+    "text": "V osobní demonstraci vám ukážeme, jak Klacks převezme trasy, kvalifikace a příplatky pro vaši organizaci."
+  }
+}

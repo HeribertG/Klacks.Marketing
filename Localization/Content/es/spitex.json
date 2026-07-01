@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks para la atención domiciliaria | Planificación de rutas y horarios de cuidados",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Para la atención domiciliaria &amp; los cuidados ambulatorios",
+    "titleHtml": "Más tiempo para los cuidados, <span class=\"text-secondary\">menos para planificar rutas.</span>",
+    "subtitle": "Klacks planifica las visitas y las rutas automáticamente &mdash; con las cualificaciones adecuadas, los recargos correctos y los días festivos de su cantón. On-Premise, para que los datos de los pacientes nunca salgan de su empresa.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vista Timeline de Klacks para la planificación de rutas de atención domiciliaria",
+    "screenshotLabel": "Timeline",
+    "screenshotCaption": "Captura de pantalla en alemán — la aplicación de Klacks está disponible en alemán, inglés, francés e italiano."
+  },
+  "challenges": {
+    "eyebrow": "El día a día en la atención domiciliaria",
+    "title": "Una planificación distinta cada día",
+    "items": [
+      { "icon": "alt_route", "title": "Rutas en lugar de turnos", "text": "Cada cuidador se desplaza de cliente en cliente. Trayectos, orden y franjas horarias deben encajar &mdash; cada día de nuevo." },
+      { "icon": "verified_user", "title": "La cualificación es decisiva", "text": "Administración de medicamentos, curas de heridas, nivel de titulación: no cualquier persona puede asumir cualquier visita." },
+      { "icon": "health_and_safety", "title": "Datos sensibles", "text": "Los datos de los pacientes deben estar protegidos. Una nube obligatoria no es una opción para muchas organizaciones." }
+    ]
+  },
+  "solutions": {
+    "title": "Cómo Klacks alivia la carga de la atención domiciliaria",
+    "subtitle": "Desde la ruta automática hasta el día festivo cantonal &mdash; todo encaja a la perfección.",
+    "items": [
+      { "icon": "route", "title": "Rutas optimizadas automáticamente", "text": "Klacks traza las rutas de las visitas de forma que los trayectos sean cortos y se respeten las franjas horarias &mdash; en coche, bicicleta o a pie." },
+      { "icon": "verified", "title": "Cualificaciones consideradas automáticamente", "text": "Cada visita se asigna únicamente a personas con la cualificación adecuada &mdash; sin ninguna comprobación manual." },
+      { "icon": "event_available", "title": "Recargos &amp; días festivos de su cantón", "text": "Los recargos nocturnos, de fin de semana y de días festivos vienen preconfigurados &mdash; hasta el nivel de cantón y municipio, y son totalmente personalizables." },
+      { "icon": "shield_lock", "title": "On-Premise: los datos permanecen en su empresa", "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes no salen de su empresa &mdash; ni siquiera hacia la IA." },
+      { "icon": "smart_toy", "title": "Klacksy planifica por voz", "text": "Basta con decir «Rellena las rutas de mañana». En caso de baja por enfermedad, Klacksy propone de inmediato un sustituto disponible." },
+      { "icon": "event_busy", "title": "Bajas cubiertas con rapidez", "text": "Si alguien falta, Klacks muestra de inmediato quién está cualificado y disponible &mdash; sin trastocar todo el horario." }
+    ]
+  },
+  "example": {
+    "eyebrow": "En la práctica",
+    "title": "Atención domiciliaria en Ginebra, bilingüe, con visitas en Vaud",
+    "text": "Interfaz en francés, días festivos de Ginebra y Vaud, recargos de atención domiciliaria &mdash; configurados en Klacks, no programados a medida. Las rutas se optimizan automáticamente, las cualificaciones se comprueban y Klacksy ayuda con los cambios de última hora. Los datos de los pacientes permanecen en todo momento dentro de la empresa."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Descubra Klacks en su organización de atención domiciliaria",
+    "text": "En una demo personalizada, le mostramos cómo Klacks se encarga de las rutas, las cualificaciones y los recargos de su organización."
+  }
+}

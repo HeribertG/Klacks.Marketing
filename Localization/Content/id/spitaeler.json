@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks untuk Rumah Sakit | Jadwal 24/7 & Waktu Istirahat",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Untuk Rumah Sakit &amp; Klinik",
+    "titleHtml": "Jadwal kerja yang <span class=\"text-secondary\">berjalan lancar sepanjang waktu.</span>",
+    "subtitle": "Klacks menjadwalkan bangsal dan shift tanpa celah &mdash; dengan waktu istirahat yang terpenuhi, kualifikasi yang sesuai, dan kedaulatan data penuh. On-premise, sehingga data pasien tidak pernah keluar dari tempat Anda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Kisi jadwal kerja Klacks untuk rumah sakit",
+    "screenshotLabel": "Jadwal Kerja",
+    "screenshotCaption": "Tangkapan layar ditampilkan dalam bahasa Jerman — aplikasi ini saat ini tersedia dalam bahasa Jerman, Inggris, Prancis, dan Italia."
+  },
+  "challenges": {
+    "eyebrow": "Keseharian di Klinik",
+    "title": "Tanpa Celah, Akurat, Terdokumentasi",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 Tanpa Celah", "text": "Siang, malam, akhir pekan, hari libur: setiap bangsal harus terisi penuh tanpa celah &mdash; bahkan saat ada ketidakhadiran mendadak." },
+      { "icon": "gavel", "title": "Waktu Istirahat &amp; Hukum", "text": "Mematuhi undang-undang jam kerja, waktu istirahat, dan batas maksimum adalah kewajiban &mdash; dan nyaris mustahil dipantau secara manual." },
+      { "icon": "health_and_safety", "title": "Perlindungan Data Setingkat Klinik", "text": "Data staf dan pasien tidak boleh keluar dari tempat Anda. Keharusan menggunakan cloud sering kali tidak dapat diterima." }
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacks Meringankan Beban Klinik",
+    "subtitle": "Dari shift malam tanpa celah hingga pool tenaga cadangan &mdash; semuanya saling terhubung.",
+    "items": [
+      { "icon": "schedule", "title": "Cakupan 24/7 Tanpa Celah", "text": "Shift pagi, sore, dan malam di semua bangsal &mdash; Klacks langsung menunjukkan setiap celah dan mengisinya secara otomatis bila diminta." },
+      { "icon": "gavel", "title": "Waktu Istirahat Diperiksa Secara Otomatis", "text": "Undang-undang jam kerja, waktu istirahat, dan batas maksimum dipantau secara real-time &mdash; pelanggaran pun tidak sempat terjadi." },
+      { "icon": "verified", "title": "Kualifikasi &amp; Bangsal", "text": "Setiap shift hanya ditugaskan kepada staf dengan kualifikasi yang sesuai &mdash; per bangsal, departemen, dan fungsi." },
+      { "icon": "shield_lock", "title": "On-Premise: Data Tetap di Tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data staf dan pasien tidak pernah keluar dari klinik &mdash; bahkan tidak untuk diproses AI sekalipun." },
+      { "icon": "smart_toy", "title": "Klacksy Menjadwalkan Lewat Suara", "text": "Cukup katakan, “Isi shift malam bagian penyakit dalam untuk minggu depan” &mdash; Klacksy langsung mempertimbangkan kualifikasi dan waktu istirahat." },
+      { "icon": "groups", "title": "Pool Tenaga Cadangan &amp; Ketidakhadiran", "text": "Jika seseorang berhalangan, Klacks langsung menunjukkan tenaga cadangan yang berkualifikasi dan tersedia &mdash; tanpa harus mengacak ulang seluruh jadwal." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh Nyata",
+    "title": "Beberapa Bangsal, Shift Siang dan Malam, Satu Pool Tenaga Cadangan",
+    "text": "Setiap bangsal memiliki aturan pengisian dan persyaratan kualifikasi sendiri. Klacks menjadwalkan semuanya bersama-sama, memeriksa waktu istirahat secara otomatis, dan memanfaatkan pool tenaga cadangan saat ada ketidakhadiran &mdash; kepala bangsal dapat melihat kapan pun situasi mulai ketat."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Rasakan Klacks di Klinik Anda",
+    "text": "Dalam demo personal, kami akan menunjukkan bagaimana Klacks mengelola bangsal, waktu istirahat, dan tenaga cadangan untuk rumah sakit Anda."
+  }
+}

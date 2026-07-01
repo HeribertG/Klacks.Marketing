@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks 居家护理解决方案 | 路线规划与护理排班",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "面向居家护理 &amp; 上门护理机构",
+    "titleHtml": "把更多时间留给护理,<span class=\"text-secondary\">把更少时间花在路线规划上。</span>",
+    "subtitle": "Klacks 自动规划出勤与路线 &mdash; 匹配所需资质、准确核算津贴,并涵盖所在州的法定假日。本地部署,确保患者数据永远不会离开您的机构。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 时间轴视图,用于居家护理的路线规划",
+    "screenshotLabel": "时间轴",
+    "screenshotCaption": "此截图为德语界面。Klacks 应用目前仅提供德语、英语、法语和意大利语版本。"
+  },
+  "challenges": {
+    "eyebrow": "居家护理的日常",
+    "title": "排班日日不同",
+    "items": [
+      { "icon": "alt_route", "title": "路线而非班次", "text": "每位护理人员都要往返于不同患者之间。路线、顺序与时间窗口必须相互匹配 &mdash; 且每天都要重新规划。" },
+      { "icon": "verified_user", "title": "资质决定一切", "text": "给药、伤口护理、专业等级:并非人人都能承担每一项出诊任务。" },
+      { "icon": "health_and_safety", "title": "敏感数据", "text": "患者数据必须受到保护。对许多机构而言,强制使用云端服务根本不是一个选项。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何为居家护理减负",
+    "subtitle": "从自动路线规划到所在州的法定假日 &mdash; 环环相扣。",
+    "items": [
+      { "icon": "route", "title": "路线自动优化", "text": "Klacks 会规划出诊路线,使路程更短、时间窗口得到遵守 &mdash; 无论驾车、骑行还是步行。" },
+      { "icon": "verified", "title": "资质自动匹配", "text": "每次出诊都只会分配给具备相应资质的人员 &mdash; 无需人工核对。" },
+      { "icon": "event_available", "title": "所在州的津贴 &amp; 法定假日", "text": "夜班、周末及法定假日津贴均已预先配置 &mdash; 精确到州与市镇级别,并可自由调整。" },
+      { "icon": "shield_lock", "title": "本地部署:数据留在您的机构", "text": "Klacks 运行在您自己的基础设施上。患者数据不会离开您的机构 &mdash; 即便用于 AI 也不例外。" },
+      { "icon": "smart_toy", "title": "Klacksy 用语音完成排班", "text": "只需说「把明天的出诊路线排满」。一旦有人请病假,Klacksy 会立即推荐可用的替补人选。" },
+      { "icon": "event_busy", "title": "缺勤快速补位", "text": "一旦有人请假,Klacks 会立即显示谁有资质且有空 &mdash; 无需打乱整个排班。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "实际案例",
+    "title": "日内瓦居家护理机构,双语运营,兼顾沃州出诊",
+    "text": "法语界面、日内瓦与沃州的法定假日、居家护理津贴 &mdash; 均在 Klacks 中直接配置,无需额外开发。路线自动优化,资质自动核验,Klacksy 协助处理临时变更。患者数据则始终完整保留在机构内部。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "亲身体验 Klacks 在居家护理机构的应用",
+    "text": "我们将通过一对一演示,展示 Klacks 如何为您的机构接管路线、资质与津贴管理。"
+  }
+}

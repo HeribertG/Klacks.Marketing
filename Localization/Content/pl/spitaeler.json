@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks dla Szpitali | Grafiki 24/7 & Okresy Odpoczynku",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Dla szpitali &amp; klinik",
+    "titleHtml": "Grafiki, które <span class=\"text-secondary\">sprawdzają się przez całą dobę.</span>",
+    "subtitle": "Klacks planuje oddziały i zmiany bez luk &mdash; z dotrzymanymi okresami odpoczynku, odpowiednimi kwalifikacjami i pełną suwerennością danych. On-Premise, dzięki czemu dane pacjentów nigdy nie opuszczają Państwa budynku.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Siatka grafiku Klacks dla szpitali",
+    "screenshotLabel": "Grafik",
+    "screenshotCaption": "Zrzut ekranu w języku niemieckim — sama aplikacja jest dostępna w językach niemieckim, angielskim, francuskim i włoskim."
+  },
+  "challenges": {
+    "eyebrow": "Codzienność kliniczna",
+    "title": "Bez luk, poprawnie, udokumentowane",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 bez luki", "text": "Dzień, noc, weekend, święto: każdy oddział musi być obsadzony bez luk &mdash; również przy nagłych nieobecnościach." },
+      { "icon": "gavel", "title": "Okresy odpoczynku &amp; przepisy", "text": "Przestrzeganie prawa pracy, okresów odpoczynku i limitów godzin jest obowiązkiem &mdash; a ręcznie da się to ledwie ogarnąć." },
+      { "icon": "health_and_safety", "title": "Ochrona danych na poziomie klinicznym", "text": "Dane personelu i pacjentów nie mogą opuszczać budynku. Obowiązek korzystania z chmury jest często nie do przyjęcia." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża kliniki",
+    "subtitle": "Od nieprzerwanej nocnej zmiany po pulę zastępstw &mdash; wszystko ze sobą współgra.",
+    "items": [
+      { "icon": "schedule", "title": "Nieprzerwana obsada 24/7", "text": "Zmiany dzienne, popołudniowe i nocne na wszystkich oddziałach &mdash; Klacks od razu pokazuje każdą lukę i na życzenie wypełnia ją automatycznie." },
+      { "icon": "gavel", "title": "Okresy odpoczynku sprawdzane automatycznie", "text": "Prawo pracy, okresy odpoczynku i limity godzin są monitorowane w czasie rzeczywistym &mdash; naruszenia w ogóle nie powstają." },
+      { "icon": "verified", "title": "Kwalifikacje &amp; oddziały", "text": "Każda zmiana przydzielana jest tylko odpowiednio wykwalifikowanemu personelowi &mdash; według oddziału, działu i funkcji." },
+      { "icon": "shield_lock", "title": "On-Premise: dane zostają na miejscu", "text": "Klacks działa na Państwa infrastrukturze. Dane personelu i pacjentów nie opuszczają kliniki &mdash; nawet dla AI." },
+      { "icon": "smart_toy", "title": "Klacksy planuje głosem", "text": "„Wypełnij nocne zmiany oddziału wewnętrznego na przyszły tydzień” wystarczy &mdash; Klacksy uwzględnia kwalifikacje i okres odpoczynku." },
+      { "icon": "groups", "title": "Pula zastępstw &amp; nieobecności", "text": "Gdy ktoś wypada, Klacks od razu pokazuje dostępnych, wykwalifikowanych zastępców &mdash; bez przewracania całego grafiku do góry nogami." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Kilka oddziałów, dyżur dzienny i nocny, jedna pula zastępstw",
+    "text": "Każdy oddział ma własne zasady obsady i wymagania kwalifikacyjne. Klacks planuje je wszystkie razem, automatycznie sprawdza okresy odpoczynku i w razie nieobecności sięga po pulę zastępstw &mdash; kierownictwo oddziału widzi w każdej chwili, gdzie robi się ciasno."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Poznaj Klacks w swojej klinice",
+    "text": "W osobistym pokazie demo pokazujemy, jak Klacks przejmuje oddziały, okresy odpoczynku i pulę zastępstw dla Państwa placówki."
+  }
+}

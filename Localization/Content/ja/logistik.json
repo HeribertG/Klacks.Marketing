@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 物流向け | 配送ルート、運転時間 & 越境業務",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "物流 &amp; 輸送事業者向け",
+    "titleHtml": "配送ルート、運転時間、納期 — <span class=\"text-secondary\">すべてを的確に管理。</span>",
+    "subtitle": "Klacksは配送ルートとドライバーを計画します &mdash; 運転時間・休息時間、適切な免許区分、そして越境業務における祝日にも対応。ルートは自動的に最適化されます。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "配送ルートとドライバー配置のためのKlacksタイムライン表示",
+    "screenshotLabel": "タイムライン",
+    "screenshotCaption": "スクリーンショットはドイツ語版です。アプリ本体はドイツ語・英語・フランス語・イタリア語に対応しており、日本語はAIアシスタント「Klacksy」でご利用いただけます。"
+  },
+  "challenges": {
+    "eyebrow": "物流業務の日常",
+    "title": "配送ルート、法令、納期を同時に",
+    "items": [
+      { "icon": "alt_route", "title": "配送ルート &amp; 納期", "text": "配送先、時間帯、移動経路をすべて整合させる必要があります &mdash; 計画変更のたびに影響が連鎖します。" },
+      { "icon": "timer", "title": "運転時間 &amp; 休息時間", "text": "法定の運転時間と休息時間の遵守は義務です &mdash; しかし多数のドライバーを手作業で確実に管理するのはほぼ不可能です。" },
+      { "icon": "public", "title": "国境を越える業務", "text": "国が異なれば、祝日もルールも異なります。国境を越える配送には、両国のカレンダーが必要です。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksが物流の負担を軽減する方法",
+    "subtitle": "最適化されたルートから越境業務の祝日対応まで &mdash; すべてが連携して機能します。",
+    "items": [
+      { "icon": "route", "title": "配送ルートを自動最適化", "text": "Klacksは配送先を最も合理的な順序に並べます &mdash; 短い移動距離、時間帯の遵守、空車走行の削減を実現します。" },
+      { "icon": "timer", "title": "運転時間 &amp; 休息時間を自動チェック", "text": "法定の上限はリアルタイムで監視されます &mdash; 違反はそもそも発生しません。" },
+      { "icon": "flag", "title": "複数の国 &amp; カレンダーに対応", "text": "複数の国の祝日とルールを組み合わせることができます &mdash; それぞれが労働時間と割増手当に独自の形で反映されます。" },
+      { "icon": "badge", "title": "適切な免許区分", "text": "Klacksは適切な免許を持つドライバーにのみ配送ルートを割り当てます &mdash; 証明書の期限が近づくと警告もします。" },
+      { "icon": "smart_toy", "title": "Klacksyが音声で計画", "text": "「明日のルートを計画して、マイヤー運転手は病欠」と伝えるだけ &mdash; Klacksyがすべてを再計算します。" },
+      { "icon": "event_busy", "title": "欠員にすばやく対応", "text": "ドライバーが欠勤しても、Klacksは資格を持ち、対応可能で、運転時間内に収まるドライバーを即座に表示します。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "貴社の物流事業でKlacksを体験",
+    "text": "個別デモにて、貴社の配送ルート、運転時間、ドライバー管理をKlacksがどのように担うかをご紹介します。"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 為保全服務打造 | 據點、巡邏與證照管理",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "專為保全服務打造",
+    "titleHtml": "每個崗位都有人力。<span class=\"text-secondary\">每項證明都齊全。</span>",
+    "subtitle": "Klacks 為據點與巡邏做到零缺口排班 &mdash; 只指派持有效證照的人員，並採用最佳化路線。地端部署，您的作業與客戶資料完全留在您手中。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 時間軸畫面，用於巡邏與據點人力配置",
+    "screenshotLabel": "時間軸",
+    "screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。"
+  },
+  "challenges": {
+    "eyebrow": "保全業的日常",
+    "title": "零缺口且可稽核",
+    "items": [
+      { "icon": "apartment", "title": "多個據點，一份排班表", "text": "每個據點都有各自的崗位、時段與要求 &mdash; 靠人工同時掌握所有資訊幾乎不可能。" },
+      { "icon": "badge", "title": "證照 &amp; 證件", "text": "只有持有效證件的人員才能承接特定任務 &mdash; 過期的證件是真正的風險。" },
+      { "icon": "bolt", "title": "臨時任務", "text": "崗位突然出缺、新據點加入：替補人力必須在幾分鐘內到位 &mdash; 且要符合資格並有空。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何減輕保全服務的負擔",
+    "subtitle": "從崗位排班到最佳化的巡邏路線 &mdash; 每個環節都環環相扣。",
+    "items": [
+      { "icon": "shield", "title": "據點 &amp; 崗位零缺口", "text": "所有據點的每個崗位 &mdash; Klacks 會立即顯示每個空缺，並可依需求自動補齊。" },
+      { "icon": "verified", "title": "證照自動檢查", "text": "Klacks 只會將任務指派給持有效證件的人員 &mdash; 並在證件即將到期前提出警示。" },
+      { "icon": "route", "title": "巡邏路線最佳化", "text": "對於外勤任務，Klacks 會安排巡邏路線，讓路程縮短、間隔時間確實遵守。" },
+      { "icon": "schedule", "title": "24 小時輪班", "text": "日班、夜班與週末班公平輪替 &mdash; 加給與休息時間自動納入考量。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音完成排班", "text": "只要說「把北區據點的夜班排滿」就好 &mdash; Klacksy 會檢查證照與可用時間。" },
+      { "icon": "bolt", "title": "缺勤幾分鐘內補上", "text": "若有崗位出缺，Klacks 會立即顯示具備資格且有空的替補人選 &mdash; 不必打亂整份排班表。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的保全公司親身體驗 Klacks",
+    "text": "我們將透過專屬展示，示範 Klacks 如何為您處理據點、證照與巡邏路線。"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks sairaaloille | Ympärivuorokautiset työvuorolistat ja lepoajat",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Sairaaloille &amp; klinikoille",
+    "titleHtml": "Työvuorolistat, jotka <span class=\"text-secondary\">toimivat ympäri vuorokauden.</span>",
+    "subtitle": "Klacks suunnittelee osastot ja vuorot aukottomasti &mdash; lepoajat noudattaen, pätevyydet kohdallaan ja täydellä tietosuvereniteetilla. On-premise-ratkaisuna, jotta potilastiedot eivät koskaan poistu talostanne.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksin työvuorolistanäkymä sairaaloille",
+    "screenshotLabel": "Työvuorolista",
+    "screenshotCaption": "Kuvakaappaus on saksaksi — sovellus itsessään on saatavilla saksaksi, englanniksi, ranskaksi ja italiaksi."
+  },
+  "challenges": {
+    "eyebrow": "Sairaalan arki",
+    "title": "Aukotonta, oikein ja dokumentoitua",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 ilman aukkoja", "text": "Päivä, yö, viikonloppu, pyhäpäivä: jokaisen osaston on oltava miehitetty aukottomasti &mdash; myös lyhyellä varoitusajalla tapahtuvissa poissaoloissa." },
+      { "icon": "gavel", "title": "Lepoajat &amp; laki", "text": "Työaikalain, lepoaikojen ja enimmäisrajojen noudattaminen on pakollista &mdash; ja käsin tuskin hallittavissa." },
+      { "icon": "health_and_safety", "title": "Sairaalatason tietosuoja", "text": "Henkilöstö- ja potilastiedot eivät saa poistua talosta. Pilvipakko on usein mahdoton hyväksyä." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa sairaaloiden työtä",
+    "subtitle": "Aukottomasta yövuorosta sijaispooliin asti &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "schedule", "title": "Aukoton ympärivuorokautinen kattavuus", "text": "Aamu-, ilta- ja yövuorot kaikilla osastoilla &mdash; Klacks näyttää jokaisen aukon heti ja täyttää sen halutessanne automaattisesti." },
+      { "icon": "gavel", "title": "Lepoajat automaattisesti tarkistettuina", "text": "Työaikalakia, lepoaikoja ja enimmäisrajoja valvotaan reaaliajassa &mdash; rikkomuksia ei pääse syntymään." },
+      { "icon": "verified", "title": "Pätevyydet &amp; osastot", "text": "Jokainen vuoro osoitetaan vain sopivasti pätevälle henkilöstölle &mdash; osastoittain, yksiköittäin ja tehtävittäin." },
+      { "icon": "shield_lock", "title": "On-Premise: tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja potilastiedot eivät poistu sairaalasta &mdash; eivät edes tekoälylle." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Täytä sisätautien yövuorot ensi viikoksi” riittää &mdash; Klacksy huomioi pätevyyden ja lepoajat." },
+      { "icon": "groups", "title": "Sijaispooli &amp; poissaolot", "text": "Jos joku on poissa, Klacks näyttää heti saatavilla olevat, pätevät sijaiset &mdash; ilman koko suunnitelman kaatamista." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Useita osastoja, päivä- ja yövuoro, yksi sijaispooli",
+    "text": "Jokaisella osastolla on omat miehitys- ja pätevyysvaatimuksensa. Klacks suunnittelee ne kaikki yhdessä, tarkistaa lepoajat automaattisesti ja hyödyntää poissaoloissa sijaispoolia &mdash; osastonhoitaja näkee koko ajan, missä tilanne kiristyy."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Kokekaa Klacks klinikassanne",
+    "text": "Henkilökohtaisessa esittelyssä näytämme, miten Klacks ottaa haltuunsa osastonne, lepoajat ja sijaiset."
+  }
+}

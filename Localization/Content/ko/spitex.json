@@ -1,0 +1,44 @@
+{
+  "pageTitle": "재가 돌봄을 위한 Klacks | 투어 계획 & 돌봄 근무표",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "재가 돌봄 &amp; 방문 간호를 위한",
+    "titleHtml": "돌봄에 더 많은 시간을, <span class=\"text-secondary\">투어 계획에는 더 적은 시간을.</span>",
+    "subtitle": "Klacks는 방문과 투어를 자동으로 계획합니다 &mdash; 알맞은 자격, 정확한 가산 수당, 귀사 칸톤의 공휴일까지 반영하여. On-Premise 방식으로 운영되어 환자 데이터가 사외로 유출되지 않습니다.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "재가 돌봄 투어 계획을 위한 Klacks 타임라인 화면",
+    "screenshotLabel": "타임라인",
+    "screenshotCaption": "스크린샷은 독일어 화면입니다. Klacks 앱은 독일어, 영어, 프랑스어, 이탈리아어로 제공됩니다."
+  },
+  "challenges": {
+    "eyebrow": "재가 돌봄의 일상",
+    "title": "매일 달라지는 계획",
+    "items": [
+      { "icon": "alt_route", "title": "교대 대신 투어", "text": "모든 돌봄 인력은 이용자에서 이용자로 이동합니다. 경로, 순서, 시간대가 서로 맞아야 합니다 &mdash; 매일 새롭게." },
+      { "icon": "verified_user", "title": "자격이 결정합니다", "text": "투약, 상처 관리, 자격 수준: 아무나 모든 방문을 맡을 수 있는 것은 아닙니다." },
+      { "icon": "health_and_safety", "title": "민감한 데이터", "text": "환자 데이터는 철저히 보호되어야 합니다. 클라우드 의무 사용은 많은 기관에게 선택지가 될 수 없습니다." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks가 재가 돌봄의 부담을 덜어주는 방법",
+    "subtitle": "자동 투어부터 칸톤별 공휴일까지 &mdash; 모든 것이 유기적으로 맞물립니다.",
+    "items": [
+      { "icon": "route", "title": "자동으로 최적화되는 투어", "text": "Klacks는 이동 거리는 짧고 시간대는 지켜지도록 방문 경로를 설계합니다 &mdash; 자동차, 자전거, 도보 모두 지원합니다." },
+      { "icon": "verified", "title": "자동으로 반영되는 자격 요건", "text": "모든 방문은 적합한 자격을 갖춘 인력에게만 배정됩니다 &mdash; 수작업 확인 없이." },
+      { "icon": "event_available", "title": "귀사 칸톤의 가산 수당 &amp; 공휴일", "text": "야간, 주말, 공휴일 가산 수당이 미리 설정되어 있습니다 &mdash; 칸톤 및 게마인데 단위까지, 자유롭게 조정 가능합니다." },
+      { "icon": "shield_lock", "title": "On-Premise: 데이터는 사내에 남습니다", "text": "Klacks는 귀사 자체 인프라에서 실행됩니다. 환자 데이터는 사외로 나가지 않습니다 &mdash; AI에게도 마찬가지입니다." },
+      { "icon": "smart_toy", "title": "Klacksy가 음성으로 계획합니다", "text": "“내일 투어를 채워줘”면 충분합니다. 병가가 발생하면 Klacksy가 즉시 대체 가능한 인력을 제안합니다." },
+      { "icon": "event_busy", "title": "결원을 신속하게 대응", "text": "누군가 결근하면 Klacks는 즉시 자격을 갖추고 가능한 인력을 보여줍니다 &mdash; 전체 계획을 뒤엎지 않고." }
+    ]
+  },
+  "example": {
+    "eyebrow": "실제 사례",
+    "title": "제네바 재가 돌봄 기관, 이중 언어, 보(Vaud) 지역 방문 포함",
+    "text": "프랑스어 화면, 제네바와 보(Vaud)의 공휴일, 재가 돌봄 가산 수당 &mdash; 모두 Klacks에서 설정할 뿐 별도로 개발할 필요가 없습니다. 투어는 자동으로 최적화되고 자격은 검증되며, Klacksy가 급한 변경 사항을 도와줍니다. 환자 데이터는 그동안 완전히 사내에 유지됩니다."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "귀사의 재가 돌봄 기관에서 Klacks를 경험하세요",
+    "text": "개인 맞춤 데모를 통해 Klacks가 귀사 조직의 투어, 자격, 가산 수당을 어떻게 처리하는지 보여드립니다."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks dla Logistyki | Trasy, Czas Jazdy & Transport Transgraniczny",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Dla logistyki &amp; transportu",
+    "titleHtml": "Trasy, czas jazdy, terminy — <span class=\"text-secondary\">wszystko pod kontrolą.</span>",
+    "subtitle": "Klacks planuje trasy i kierowców &mdash; z czasem jazdy i odpoczynku, odpowiednimi kategoriami prawa jazdy oraz świętami transgranicznymi. Trasy są optymalizowane automatycznie.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Widok osi czasu Klacks dla tras i zleceń kierowców",
+    "screenshotLabel": "Oś czasu",
+    "screenshotCaption": "Zrzut ekranu w języku niemieckim — sama aplikacja jest dostępna w językach niemieckim, angielskim, francuskim i włoskim."
+  },
+  "challenges": {
+    "eyebrow": "Codzienność w logistyce",
+    "title": "Trasy, przepisy i terminy jednocześnie",
+    "items": [
+      { "icon": "alt_route", "title": "Trasy &amp; terminy", "text": "Przystanki, okna czasowe i odcinki muszą do siebie pasować &mdash; każda zmiana planu pociąga za sobą konsekwencje." },
+      { "icon": "timer", "title": "Czas jazdy &amp; odpoczynku", "text": "Ustawowy czas jazdy i odpoczynku jest obowiązkowy &mdash; a ręcznie przy wielu kierowcach da się go ledwie bezpiecznie dotrzymać." },
+      { "icon": "public", "title": "Transgraniczność", "text": "Różne kraje, różne święta i przepisy: trasa przez granicę wymaga obu kalendarzy." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża logistykę",
+    "subtitle": "Od zoptymalizowanej trasy po święto transgraniczne &mdash; wszystko ze sobą współgra.",
+    "items": [
+      { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa przystanki w najbardziej sensownej kolejności &mdash; krótkie odcinki, dotrzymane okna czasowe, mniej przejazdów na pusto." },
+      { "icon": "timer", "title": "Czas jazdy &amp; odpoczynku sprawdzany", "text": "Ustawowe limity są monitorowane w czasie rzeczywistym &mdash; naruszenia w ogóle nie powstają." },
+      { "icon": "flag", "title": "Wiele krajów &amp; kalendarzy", "text": "Święta i przepisy kilku krajów można ze sobą łączyć &mdash; każdy z własnym wpływem na godziny i dodatki." },
+      { "icon": "badge", "title": "Odpowiednie kategorie prawa jazdy", "text": "Klacks przydziela trasy tylko kierowcom z odpowiednimi uprawnieniami &mdash; i ostrzega przed wygasającymi dokumentami." },
+      { "icon": "smart_toy", "title": "Klacksy planuje głosem", "text": "„Zaplanuj trasy na jutro, kierowca Meier jest chory” wystarczy &mdash; Klacksy przelicza wszystko na nowo." },
+      { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy kierowca wypada, Klacks od razu pokazuje, kto jest wykwalifikowany, dostępny i mieści się w dozwolonym czasie jazdy." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Poznaj Klacks w swojej firmie logistycznej",
+    "text": "W osobistym pokazie demo pokazujemy, jak Klacks przejmuje trasy, czas jazdy i kierowców dla Państwa."
+  }
+}

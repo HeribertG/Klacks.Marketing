@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks för hemtjänst | Ruttplanering & vårdscheman",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "För hemtjänst &amp; hemsjukvård",
+    "titleHtml": "Mer tid för vård, <span class=\"text-secondary\">mindre för ruttplanering.</span>",
+    "subtitle": "Klacks planerar insatser och rutter automatiskt &mdash; med rätt kompetenser, korrekta tillägg och helgdagar för din kanton. On-premise, så att patientdata aldrig lämnar din verksamhet.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för ruttplanering inom hemtjänsten",
+    "screenshotLabel": "Tidslinje",
+    "screenshotCaption": "Skärmbilden visas på tyska — applikationen finns endast på tyska, engelska, franska och italienska."
+  },
+  "challenges": {
+    "eyebrow": "Vardagen inom hemtjänsten",
+    "title": "Planering som ser olika ut varje dag",
+    "items": [
+      { "icon": "alt_route", "title": "Rutter istället för skift", "text": "Varje vårdare åker från klient till klient. Vägar, ordningsföljd och tidsfönster måste stämma överens &mdash; varje dag på nytt." },
+      { "icon": "verified_user", "title": "Kompetens avgör", "text": "Läkemedelshantering, sårvård, utbildningsnivå: alla får inte utföra alla insatser." },
+      { "icon": "health_and_safety", "title": "Känsliga uppgifter", "text": "Patientdata måste skyddas. Ett obligatoriskt molnkrav är inget alternativ för många organisationer." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks hemtjänsten",
+    "subtitle": "Från den automatiska rutten till kantonens helgdagar &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Rutter optimeras automatiskt", "text": "Klacks lägger insatsrutter så att vägarna blir korta och tidsfönstren hålls &mdash; för bil, cykel eller till fots." },
+      { "icon": "verified", "title": "Kompetenser beaktas automatiskt", "text": "Varje insats tilldelas endast personer med rätt kompetens &mdash; helt utan manuell kontroll." },
+      { "icon": "event_available", "title": "Tillägg &amp; helgdagar för din kanton", "text": "Natt-, helg- och helgdagstillägg är förkonfigurerade &mdash; ända ner till kantons- och kommunnivå, fritt anpassningsbara." },
+      { "icon": "shield_lock", "title": "On-premise: data stannar hos dig", "text": "Klacks körs på din egen infrastruktur. Patientdata lämnar aldrig din verksamhet &mdash; inte ens till AI:n." },
+      { "icon": "smart_toy", "title": "Klacksy planerar via röst", "text": "”Fyll rutterna för imorgon” räcker. Vid sjukfrånvaro föreslår Klacksy omedelbart en tillgänglig ersättare." },
+      { "icon": "event_busy", "title": "Frånvaro hanteras snabbt", "text": "Om någon blir frånvarande visar Klacks omedelbart vem som är kompetent och tillgänglig &mdash; utan att hela schemat behöver göras om." }
+    ]
+  },
+  "example": {
+    "eyebrow": "I praktiken",
+    "title": "Hemtjänsten i Genève, tvåspråkig, med insatser i Vaud",
+    "text": "Franskt gränssnitt, helgdagar för Genève och Vaud, tillägg för hemtjänst &mdash; konfigurerat i Klacks, inte specialprogrammerat. Rutterna optimeras automatiskt, kompetenser kontrolleras, och Klacksy hjälper till vid ändringar med kort varsel. Patientdata stannar hela tiden helt inom verksamheten."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i din hemtjänst",
+    "text": "I en personlig demo visar vi hur Klacks tar hand om rutter, kompetenser och tillägg för din organisation."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks för sjukhus | 24/7-scheman & vilotider",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "För sjukhus &amp; kliniker",
+    "titleHtml": "Scheman som <span class=\"text-secondary\">går ihop dygnet runt.</span>",
+    "subtitle": "Klacks planerar avdelningar och skift utan luckor &mdash; med respekterade vilotider, rätt kompetenser och full datasuveränitet. On-premise, så att patientdata aldrig lämnar din verksamhet.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemaraster för sjukhus",
+    "screenshotLabel": "Schema",
+    "screenshotCaption": "Skärmbilden visas på tyska — applikationen finns endast på tyska, engelska, franska och italienska."
+  },
+  "challenges": {
+    "eyebrow": "Klinikvardagen",
+    "title": "Utan luckor, korrekt, dokumenterat",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 utan luckor", "text": "Dag, natt, helg, helgdag: varje avdelning måste vara fullt bemannad &mdash; även vid frånvaro med kort varsel." },
+      { "icon": "gavel", "title": "Vilotider &amp; lagkrav", "text": "Att följa arbetstidslagen, vilotider och maxgränser är obligatoriskt &mdash; och nästan omöjligt att överblicka för hand." },
+      { "icon": "health_and_safety", "title": "Dataskydd på sjukhusnivå", "text": "Personal- och patientdata får inte lämna verksamheten. Ett obligatoriskt molnkrav är ofta oacceptabelt." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks kliniker",
+    "subtitle": "Från det luckfria nattskiftet till vikariepoolen &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "schedule", "title": "Fullständig 24/7-täckning", "text": "Dag-, kvälls- och nattpass över alla avdelningar &mdash; Klacks visar varje lucka direkt och fyller den automatiskt vid behov." },
+      { "icon": "gavel", "title": "Vilotider kontrolleras automatiskt", "text": "Arbetstidslagen, vilotider och maxgränser övervakas i realtid &mdash; överträdelser uppstår aldrig." },
+      { "icon": "verified", "title": "Kompetenser &amp; avdelningar", "text": "Varje skift tilldelas endast personal med rätt kompetens &mdash; per avdelning, enhet och funktion." },
+      { "icon": "shield_lock", "title": "On-premise: data stannar hos dig", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar aldrig kliniken &mdash; inte ens till AI:n." },
+      { "icon": "smart_toy", "title": "Klacksy planerar via röst", "text": "”Fyll nattskiften på internmedicin för nästa vecka” räcker &mdash; Klacksy tar hänsyn till kompetens och vilotid." },
+      { "icon": "groups", "title": "Vikariepool &amp; frånvaro", "text": "Om någon blir frånvarande visar Klacks omedelbart tillgängliga, kompetenta vikarier &mdash; utan att hela schemat behöver göras om." }
+    ]
+  },
+  "example": {
+    "eyebrow": "I praktiken",
+    "title": "Flera avdelningar, dag- och nattpass, en gemensam vikariepool",
+    "text": "Varje avdelning har egna bemanningsregler och kompetenskrav. Klacks planerar alla tillsammans, kontrollerar vilotider automatiskt och använder vikariepoolen vid frånvaro &mdash; avdelningschefen ser hela tiden var det blir tight."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Upplev Klacks på din klinik",
+    "text": "I en personlig demo visar vi hur Klacks tar hand om avdelningar, vilotider och vikarier för din verksamhet."
+  }
+}

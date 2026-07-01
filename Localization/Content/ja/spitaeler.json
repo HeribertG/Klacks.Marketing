@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks 病院向け | 24時間365日シフト管理 & 休息期間",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "病院 &amp; クリニック向け",
+    "titleHtml": "シフト表が<span class=\"text-secondary\">24時間365日、途切れず機能する。</span>",
+    "subtitle": "Klacksは病棟とシフトを切れ目なく計画します &mdash; 休息期間の遵守、適切な資格の割り当て、完全なデータ主権を維持しながら。オンプレミス運用のため、患者データが社外に出ることはありません。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "病院向けKlacksシフト表",
+    "screenshotLabel": "シフト表",
+    "screenshotCaption": "スクリーンショットはドイツ語版です。アプリ本体はドイツ語・英語・フランス語・イタリア語に対応しており、日本語はAIアシスタント「Klacksy」でご利用いただけます。"
+  },
+  "challenges": {
+    "eyebrow": "病院の日常",
+    "title": "切れ目なく、正確に、記録に残す",
+    "items": [
+      { "icon": "e911_emergency", "title": "24時間365日、隙間なく", "text": "昼も夜も、週末も祝日も。どの病棟も切れ目なく人員を配置する必要があります &mdash; 急な欠員が出た場合でも。" },
+      { "icon": "gavel", "title": "休息期間 &amp; 法令遵守", "text": "労働時間法、休息期間、上限時間の遵守は義務です &mdash; しかし手作業ではほぼ把握しきれません。" },
+      { "icon": "health_and_safety", "title": "病院水準のデータ保護", "text": "職員および患者のデータは、施設の外に出してはなりません。クラウド利用の強制は、多くの場合受け入れられません。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksが病院の負担を軽減する方法",
+    "subtitle": "切れ目のない夜勤体制から応援要員プールまで &mdash; すべてが連携して機能します。",
+    "items": [
+      { "icon": "schedule", "title": "24時間365日、切れ目のない体制", "text": "全病棟にわたる日勤・遅番・夜勤を管理 &mdash; Klacksは人員の不足箇所を即座に表示し、ご希望に応じて自動的に埋めます。" },
+      { "icon": "gavel", "title": "休息期間を自動チェック", "text": "労働時間法、休息期間、上限時間はリアルタイムで監視されます &mdash; 違反はそもそも発生しません。" },
+      { "icon": "verified", "title": "資格 &amp; 病棟", "text": "各シフトは適切な資格を持つスタッフにのみ割り当てられます &mdash; 病棟、部門、職種ごとに。" },
+      { "icon": "shield_lock", "title": "オンプレミス:データは院内に", "text": "Klacksは貴院のインフラ上で稼働します。職員および患者データが院外に出ることはありません &mdash; AIに対しても例外ではありません。" },
+      { "icon": "smart_toy", "title": "Klacksyが音声で計画", "text": "「内科の来週の夜勤を埋めて」と伝えるだけ &mdash; Klacksyが資格と休息期間を考慮します。" },
+      { "icon": "groups", "title": "応援要員プール &amp; 欠員対応", "text": "誰かが欠勤しても、Klacksは対応可能で資格を持つ応援スタッフを即座に表示します &mdash; 計画全体を崩す必要はありません。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "具体例",
+    "title": "複数病棟、日勤・夜勤体制、ひとつの応援要員プール",
+    "text": "各病棟には独自の配置ルールと資格要件があります。Klacksはこれらすべてを一括で計画し、休息期間を自動でチェックし、欠員が出た際には応援要員プールを活用します &mdash; 病棟責任者は、どこが逼迫しているかを常に把握できます。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "貴院でKlacksを体験",
+    "text": "個別デモにて、貴院の病棟、休息期間、応援要員の管理をKlacksがどのように担うかをご紹介します。"
+  }
+}

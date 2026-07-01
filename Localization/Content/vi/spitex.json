@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks cho dịch vụ chăm sóc tại nhà | Lập tuyến đường & lịch chăm sóc",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Dành cho chăm sóc tại nhà &amp; điều dưỡng ngoại trú",
+    "titleHtml": "Nhiều thời gian hơn cho chăm sóc, <span class=\"text-secondary\">ít thời gian hơn cho lập tuyến đường.</span>",
+    "subtitle": "Klacks tự động lập lịch các buổi chăm sóc và tuyến đường &mdash; với đúng trình độ chuyên môn, phụ cấp chính xác và ngày lễ của địa phương bạn. On-Premise, để dữ liệu bệnh nhân không bao giờ rời khỏi doanh nghiệp của bạn.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Giao diện dòng thời gian của Klacks cho việc lập tuyến đường chăm sóc tại nhà",
+    "screenshotLabel": "Dòng thời gian",
+    "screenshotCaption": "Ảnh chụp màn hình bằng tiếng Đức — ứng dụng hiện chỉ có sẵn bằng tiếng Đức, Anh, Pháp và Ý."
+  },
+  "challenges": {
+    "eyebrow": "Công việc thường ngày trong chăm sóc tại nhà",
+    "title": "Lập lịch thay đổi mỗi ngày",
+    "items": [
+      { "icon": "alt_route", "title": "Tuyến đường thay vì ca làm việc", "text": "Mỗi nhân viên chăm sóc di chuyển từ bệnh nhân này đến bệnh nhân khác. Quãng đường, thứ tự và khung giờ phải khớp nhau &mdash; mỗi ngày lại khác." },
+      { "icon": "verified_user", "title": "Trình độ chuyên môn quyết định", "text": "Cấp thuốc, chăm sóc vết thương, cấp bậc bằng cấp: không phải ai cũng được phép đảm nhận mọi buổi chăm sóc." },
+      { "icon": "health_and_safety", "title": "Dữ liệu nhạy cảm", "text": "Dữ liệu bệnh nhân cần được bảo vệ. Bắt buộc dùng đám mây không phải là lựa chọn khả thi với nhiều tổ chức." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks giúp giảm tải cho dịch vụ chăm sóc tại nhà như thế nào",
+    "subtitle": "Từ tuyến đường tự động đến ngày lễ địa phương &mdash; tất cả đều ăn khớp với nhau.",
+    "items": [
+      { "icon": "route", "title": "Tuyến đường được tối ưu tự động", "text": "Klacks sắp xếp tuyến đường sao cho quãng đường ngắn và khung giờ được tuân thủ &mdash; dù đi ô tô, xe đạp hay đi bộ." },
+      { "icon": "verified", "title": "Trình độ chuyên môn được tự động xem xét", "text": "Mỗi buổi chăm sóc chỉ được giao cho người có trình độ chuyên môn phù hợp &mdash; hoàn toàn không cần kiểm tra thủ công." },
+      { "icon": "event_available", "title": "Phụ cấp &amp; ngày lễ của địa phương bạn", "text": "Phụ cấp đêm, cuối tuần và ngày lễ đã được cấu hình sẵn &mdash; đến tận cấp bang và địa phương, tự do tùy chỉnh." },
+      { "icon": "shield_lock", "title": "On-Premise: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng riêng của bạn. Dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn &mdash; kể cả để đưa vào AI." },
+      { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Điền các tuyến đường cho ngày mai”. Khi có người ốm đột xuất, Klacksy lập tức đề xuất người thay thế đang sẵn sàng." },
+      { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu có người vắng mặt, Klacks lập tức hiển thị ai đủ trình độ và sẵn sàng &mdash; mà không cần đảo lộn toàn bộ lịch." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Ví dụ thực tế",
+    "title": "Dịch vụ chăm sóc tại nhà ở Geneva, song ngữ, với các buổi chăm sóc tại Vaud",
+    "text": "Giao diện tiếng Pháp, ngày lễ của Geneva và Vaud, phụ cấp chăm sóc tại nhà &mdash; được cấu hình trong Klacks, không phải lập trình riêng. Tuyến đường được tối ưu tự động, trình độ chuyên môn được kiểm tra, và Klacksy hỗ trợ khi có thay đổi vào phút chót. Dữ liệu bệnh nhân luôn được giữ hoàn toàn trong nội bộ."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Trải nghiệm Klacks trong dịch vụ chăm sóc tại nhà của bạn",
+    "text": "Chúng tôi sẽ trình bày cho bạn trong một buổi demo riêng, cách Klacks đảm nhận tuyến đường, trình độ chuyên môn và phụ cấp cho tổ chức của bạn."
+  }
+}

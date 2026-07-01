@@ -1,0 +1,12 @@
+/* Targeted overrides for RTL locales (ar, he). Loaded on every page but inert
+   unless <html dir="rtl"> is set, so it can't regress the LTR languages. */
+
+[dir="rtl"] .icon-directional {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: 0;
+}

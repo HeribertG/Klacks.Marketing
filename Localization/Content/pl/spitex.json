@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks dla Opieki Domowej | Planowanie Tras & Grafiki Opieki",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Dla opieki domowej &amp; pielęgniarstwa ambulatoryjnego",
+    "titleHtml": "Więcej czasu na opiekę, <span class=\"text-secondary\">mniej na planowanie tras.</span>",
+    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; z właściwymi kwalifikacjami, prawidłowymi dodatkami i świętami Państwa kantonu. On-Premise, dzięki czemu dane pacjentów nigdy nie opuszczają Państwa budynku.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Widok osi czasu Klacks dla planowania tras opieki domowej",
+    "screenshotLabel": "Oś czasu",
+    "screenshotCaption": "Zrzut ekranu w języku niemieckim — sama aplikacja jest dostępna w językach niemieckim, angielskim, francuskim i włoskim."
+  },
+  "challenges": {
+    "eyebrow": "Codzienność w opiece domowej",
+    "title": "Planowanie inne każdego dnia",
+    "items": [
+      { "icon": "alt_route", "title": "Trasy zamiast zmian", "text": "Każdy opiekun jedzie od klienta do klienta. Trasy, kolejność i okna czasowe muszą do siebie pasować &mdash; każdego dnia od nowa." },
+      { "icon": "verified_user", "title": "Decyduje kwalifikacja", "text": "Podawanie leków, opatrywanie ran, poziom wykształcenia: nie każda osoba może przejąć każdą wizytę." },
+      { "icon": "health_and_safety", "title": "Dane wrażliwe", "text": "Dane pacjentów muszą być chronione. Obowiązek korzystania z chmury nie jest opcją dla wielu organizacji." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża opiekę domową",
+    "subtitle": "Od automatycznej trasy po święto kantonalne &mdash; wszystko ze sobą współgra.",
+    "items": [
+      { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa trasy tak, aby odcinki były krótkie, a okna czasowe dotrzymane &mdash; samochodem, rowerem lub pieszo." },
+      { "icon": "verified", "title": "Kwalifikacje uwzględniane automatycznie", "text": "Każda wizyta przydzielana jest tylko osobom z odpowiednią kwalifikacją &mdash; całkowicie bez ręcznej weryfikacji." },
+      { "icon": "event_available", "title": "Dodatki &amp; święta Państwa kantonu", "text": "Dodatki nocne, weekendowe i świąteczne są wstępnie skonfigurowane &mdash; aż do poziomu kantonu i gminy, dowolnie dostosowywalne." },
+      { "icon": "shield_lock", "title": "On-Premise: dane zostają na miejscu", "text": "Klacks działa na Państwa własnej infrastrukturze. Dane pacjentów nie opuszczają budynku &mdash; nawet dla AI." },
+      { "icon": "smart_toy", "title": "Klacksy planuje głosem", "text": "„Wypełnij trasy na jutro” wystarczy. W razie choroby Klacksy od razu proponuje dostępne zastępstwo." },
+      { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy ktoś wypada, Klacks od razu pokazuje, kto jest wykwalifikowany i dostępny &mdash; bez przewracania całego grafiku do góry nogami." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Opieka domowa w Genewie, dwujęzyczna, z wizytami w Vaud",
+    "text": "Francuski interfejs, święta Genewy i Vaud, dodatki dla opieki domowej &mdash; skonfigurowane w Klacks, a nie dopisane w kodzie. Trasy są optymalizowane automatycznie, kwalifikacje sprawdzane, a Klacksy pomaga przy zmianach na ostatnią chwilę. Dane pacjentów pozostają przy tym w całości na miejscu."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Poznaj Klacks w swojej organizacji opieki domowej",
+    "text": "W osobistym pokazie demo pokazujemy, jak Klacks przejmuje trasy, kwalifikacje i dodatki dla Państwa organizacji."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 清掃・施設管理サービス向け | 施設ルート & チーム編成",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "清掃 &amp; 施設管理サービス向け",
+    "titleHtml": "すべての施設を<span class=\"text-secondary\">きれいに計画。</span>",
+    "subtitle": "Klacksは施設、ルート、入れ替わるチームを効率的に割り当てます &mdash; 適切な資格と時間帯を考慮しながら。移動時間を無駄にしないよう、ルートは自動的に最適化されます。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "清掃チームと施設のためのKlacksシフト表",
+    "screenshotLabel": "シフト表",
+    "screenshotCaption": "スクリーンショットはドイツ語版です。アプリ本体はドイツ語・英語・フランス語・イタリア語に対応しており、日本語はAIアシスタント「Klacksy」でご利用いただけます。"
+  },
+  "challenges": {
+    "eyebrow": "清掃業務の日常",
+    "title": "多数の施設、限られた時間帯",
+    "items": [
+      { "icon": "pin_drop", "title": "多数の施設、多くの移動", "text": "チームは施設から施設へと移動します。非効率なルートは、毎日時間と距離、そしてコストを無駄にします。" },
+      { "icon": "groups", "title": "入れ替わるチーム", "text": "今日は誰がどこで働くのか。病欠、休暇、応援スタッフの存在により、割り当ては毎日のパズルのようになります。" },
+      { "icon": "schedule", "title": "限られた時間帯", "text": "施設によっては特定の時間帯にしか立ち入れない場合があります &mdash; 計画はその条件に正確に合わせる必要があります。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksが清掃・施設管理サービスの負担を軽減する方法",
+    "subtitle": "最適化されたルートから柔軟なチーム編成まで &mdash; すべてが連携して機能します。",
+    "items": [
+      { "icon": "route", "title": "施設ルートを最適化", "text": "Klacksは移動距離が短くなるよう施設の訪問順序を決定します &mdash; 車、自転車、徒歩に対応。" },
+      { "icon": "groups", "title": "柔軟なチーム編成", "text": "入れ替わる人員、応援スタッフ、休暇。Klacksは全体を把握し、適切な割り当てを提案します。" },
+      { "icon": "door_front", "title": "時間帯を考慮", "text": "朝または夕方にしか立ち入れない施設も、Klacksが自動的に適切な時間帯に組み込みます。" },
+      { "icon": "verified", "title": "適切な資格を考慮", "text": "特殊清掃、機械操作、セキュリティエリア。適切な資格を持つスタッフのみが割り当てられます。" },
+      { "icon": "smart_toy", "title": "Klacksyが音声で計画", "text": "「明日の朝、4区の施設を計画して」と伝えるだけ &mdash; Klacksyがルートとチームを最適化します。" },
+      { "icon": "event_busy", "title": "欠員にすばやく対応", "text": "誰かが欠勤しても、Klacksは対応可能なスタッフと最適なルートを即座に表示します。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "貴社の清掃事業でKlacksを体験",
+    "text": "個別デモにて、貴社のルート、チーム編成、時間帯管理をKlacksがどのように担うかをご紹介します。"
+  }
+}

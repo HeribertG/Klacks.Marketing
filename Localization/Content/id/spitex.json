@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks untuk Layanan Perawatan di Rumah | Perencanaan Rute & Jadwal Perawatan",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Untuk Layanan Perawatan di Rumah &amp; Keperawatan Rawat Jalan",
+    "titleHtml": "Lebih banyak waktu untuk perawatan, <span class=\"text-secondary\">lebih sedikit untuk perencanaan rute.</span>",
+    "subtitle": "Klacks menjadwalkan kunjungan dan rute secara otomatis &mdash; dengan kualifikasi yang tepat, tunjangan yang benar, dan hari libur sesuai kanton Anda. On-premise, sehingga data pasien tidak pernah keluar dari tempat Anda.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Tampilan garis waktu (timeline) Klacks untuk perencanaan rute layanan perawatan di rumah",
+    "screenshotLabel": "Timeline",
+    "screenshotCaption": "Tangkapan layar ditampilkan dalam bahasa Jerman — aplikasi ini saat ini tersedia dalam bahasa Jerman, Inggris, Prancis, dan Italia."
+  },
+  "challenges": {
+    "eyebrow": "Keseharian Layanan Perawatan di Rumah",
+    "title": "Perencanaan yang Berbeda Setiap Hari",
+    "items": [
+      { "icon": "alt_route", "title": "Rute, Bukan Sekadar Shift", "text": "Setiap tenaga perawat berpindah dari satu klien ke klien lain. Jalur, urutan, dan jendela waktu harus selalu sinkron &mdash; setiap hari, dari awal lagi." },
+      { "icon": "verified_user", "title": "Kualifikasi yang Menentukan", "text": "Pemberian obat, perawatan luka, tingkat kompetensi profesional: tidak semua orang boleh menangani semua jenis kunjungan." },
+      { "icon": "health_and_safety", "title": "Data yang Sensitif", "text": "Data pasien harus dilindungi. Keharusan menggunakan cloud bukan pilihan bagi banyak organisasi." }
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacks Meringankan Beban Layanan Perawatan di Rumah",
+    "subtitle": "Dari rute otomatis hingga hari libur kanton &mdash; semuanya saling terhubung.",
+    "items": [
+      { "icon": "route", "title": "Rute Dioptimalkan Secara Otomatis", "text": "Klacks menyusun rute kunjungan agar jarak tempuh singkat dan jendela waktu tetap terpenuhi &mdash; untuk mobil, sepeda, atau jalan kaki." },
+      { "icon": "verified", "title": "Kualifikasi Dipertimbangkan Secara Otomatis", "text": "Setiap kunjungan hanya ditugaskan kepada orang dengan kualifikasi yang sesuai &mdash; tanpa perlu pemeriksaan manual sama sekali." },
+      { "icon": "event_available", "title": "Tunjangan &amp; Hari Libur Kanton Anda", "text": "Tunjangan malam, akhir pekan, dan hari libur sudah dikonfigurasi sebelumnya &mdash; hingga tingkat kanton dan komune, dan dapat disesuaikan dengan bebas." },
+      { "icon": "shield_lock", "title": "On-Premise: Data Tetap di Tempat Anda", "text": "Klacks berjalan di infrastruktur Anda sendiri. Data pasien tidak pernah keluar dari tempat Anda &mdash; bahkan tidak untuk diproses AI sekalipun." },
+      { "icon": "smart_toy", "title": "Klacksy Menjadwalkan Lewat Suara", "text": "Cukup katakan, “Isi rute untuk besok.” Jika ada yang sakit, Klacksy langsung menyarankan pengganti yang tersedia." },
+      { "icon": "event_busy", "title": "Ketidakhadiran Cepat Tertangani", "text": "Jika seseorang berhalangan, Klacks langsung menunjukkan siapa yang memenuhi kualifikasi dan tersedia &mdash; tanpa harus mengacak ulang seluruh jadwal." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh Nyata",
+    "title": "Layanan Perawatan di Rumah Jenewa, Dwibahasa, dengan Kunjungan di Vaud",
+    "text": "Antarmuka berbahasa Prancis, hari libur Jenewa dan Vaud, tunjangan layanan perawatan di rumah &mdash; dikonfigurasi di dalam Klacks, bukan diprogram ulang. Rute dioptimalkan secara otomatis, kualifikasi diperiksa, dan Klacksy membantu perubahan mendadak. Data pasien tetap sepenuhnya berada di tempat Anda."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Rasakan Klacks di Layanan Perawatan di Rumah Anda",
+    "text": "Dalam demo personal, kami akan menunjukkan bagaimana Klacks mengelola rute, kualifikasi, dan tunjangan untuk organisasi Anda."
+  }
+}

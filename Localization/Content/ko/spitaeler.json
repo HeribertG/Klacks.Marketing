@@ -1,0 +1,44 @@
+{
+  "pageTitle": "병원을 위한 Klacks | 24시간 근무표 & 휴식 시간",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "병원 &amp; 클리닉을 위한",
+    "titleHtml": "근무표, <span class=\"text-secondary\">24시간 빈틈없이 돌아갑니다.</span>",
+    "subtitle": "Klacks는 병동과 교대 근무를 빈틈없이 계획합니다 &mdash; 휴식 시간 준수, 적합한 자격, 완전한 데이터 주권까지. On-Premise 방식으로 운영되어 환자 데이터가 사외로 유출되지 않습니다.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "병원을 위한 Klacks 근무표 화면",
+    "screenshotLabel": "근무표",
+    "screenshotCaption": "스크린샷은 독일어 화면입니다. Klacks 앱은 독일어, 영어, 프랑스어, 이탈리아어로 제공됩니다."
+  },
+  "challenges": {
+    "eyebrow": "병원의 일상",
+    "title": "빈틈없이, 정확하게, 기록으로",
+    "items": [
+      { "icon": "e911_emergency", "title": "빈틈없는 24시간 운영", "text": "낮, 밤, 주말, 공휴일: 모든 병동은 빈틈없이 인력이 배치되어야 합니다 &mdash; 갑작스러운 결원이 발생하더라도." },
+      { "icon": "gavel", "title": "휴식 시간 &amp; 법규", "text": "근로시간법, 휴식 시간, 상한 기준 준수는 의무입니다 &mdash; 하지만 수작업으로는 파악하기가 거의 불가능합니다." },
+      { "icon": "health_and_safety", "title": "병원 수준의 데이터 보호", "text": "직원 및 환자 데이터는 사외로 유출되어서는 안 됩니다. 클라우드 의무 사용은 대부분 받아들일 수 없습니다." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks가 병원의 부담을 덜어주는 방법",
+    "subtitle": "빈틈없는 야간 근무부터 대체 인력 풀까지 &mdash; 모든 것이 유기적으로 맞물립니다.",
+    "items": [
+      { "icon": "schedule", "title": "빈틈없는 24시간 커버리지", "text": "모든 병동의 주간, 오후, 야간 근무 &mdash; Klacks는 모든 공백을 즉시 표시하고 원하시면 자동으로 채웁니다." },
+      { "icon": "gavel", "title": "자동으로 검증되는 휴식 시간", "text": "근로시간법, 휴식 시간, 상한 기준이 실시간으로 모니터링됩니다 &mdash; 위반은 애초에 발생하지 않습니다." },
+      { "icon": "verified", "title": "자격 &amp; 병동", "text": "모든 교대 근무는 적합한 자격을 갖춘 인력에게만 배정됩니다 &mdash; 병동, 부서, 직무별로." },
+      { "icon": "shield_lock", "title": "On-Premise: 데이터는 사내에 남습니다", "text": "Klacks는 귀사의 인프라에서 실행됩니다. 직원 및 환자 데이터는 병원 밖으로 나가지 않습니다 &mdash; AI에게도 마찬가지입니다." },
+      { "icon": "smart_toy", "title": "Klacksy가 음성으로 계획합니다", "text": "“다음 주 내과 야간 근무를 채워줘”면 충분합니다 &mdash; Klacksy가 자격과 휴식 시간을 함께 고려합니다." },
+      { "icon": "groups", "title": "대체 인력 풀 &amp; 결원", "text": "누군가 결근하면 Klacks는 즉시 이용 가능하고 자격을 갖춘 대체 인력을 보여줍니다 &mdash; 전체 계획을 뒤엎지 않고." }
+    ]
+  },
+  "example": {
+    "eyebrow": "실제 사례",
+    "title": "여러 병동, 주간 및 야간 근무, 하나의 대체 인력 풀",
+    "text": "각 병동은 고유한 배치 규칙과 자격 요건을 가지고 있습니다. Klacks는 모든 병동을 함께 계획하고, 휴식 시간을 자동으로 검증하며, 결원 발생 시 대체 인력 풀을 활용합니다 &mdash; 병동 관리자는 언제든 어디에서 인력이 부족한지 확인할 수 있습니다."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "귀사의 병원에서 Klacks를 경험하세요",
+    "text": "개인 맞춤 데모를 통해 Klacks가 귀사의 병동, 휴식 시간, 대체 인력을 어떻게 처리하는지 보여드립니다."
+  }
+}

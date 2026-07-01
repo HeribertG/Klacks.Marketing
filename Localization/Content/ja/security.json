@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 警備会社向け | 施設・巡回 & 資格管理",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "警備会社向け",
+    "titleHtml": "すべての持ち場に、人を。<span class=\"text-secondary\">すべての資格に、証明を。</span>",
+    "subtitle": "Klacksは施設と巡回業務を切れ目なく人員配置します &mdash; 有効な資格を持つスタッフのみを、最適化されたルートで。オンプレミス運用のため、業務データと顧客データは貴社内にとどまります。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "巡回と施設配置のためのKlacksタイムライン表示",
+    "screenshotLabel": "タイムライン",
+    "screenshotCaption": "スクリーンショットはドイツ語版です。アプリ本体はドイツ語・英語・フランス語・イタリア語に対応しており、日本語はAIアシスタント「Klacksy」でご利用いただけます。"
+  },
+  "challenges": {
+    "eyebrow": "警備業務の日常",
+    "title": "切れ目なく、証明できる形で",
+    "items": [
+      { "icon": "apartment", "title": "多数の施設を、ひとつの計画で", "text": "各施設には独自の持ち場、時間帯、要件があります &mdash; これらすべてを同時に手作業で把握するのはほぼ不可能です。" },
+      { "icon": "badge", "title": "資格 &amp; 身分証", "text": "有効な資格を持つスタッフのみが特定の業務を担当できます &mdash; 期限切れの証明書は重大なリスクです。" },
+      { "icon": "bolt", "title": "急な対応が必要な業務", "text": "持ち場に欠員が出たり、新たな施設が追加されたりする場合もあります &mdash; 代替要員は数分以内に、資格を持ち対応可能な人材を確保する必要があります。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksが警備会社の負担を軽減する方法",
+    "subtitle": "人員配置済みの持ち場から最適化された巡回ルートまで &mdash; すべてが連携して機能します。",
+    "items": [
+      { "icon": "shield", "title": "施設 &amp; 持ち場を切れ目なく", "text": "すべての施設にわたる各持ち場を管理 &mdash; Klacksは空きが出るとすぐに表示し、ご希望に応じて自動的に埋めます。" },
+      { "icon": "verified", "title": "資格を自動チェック", "text": "Klacksは有効な資格を持つスタッフにのみ業務を割り当てます &mdash; 証明書の期限が切れる前に警告もします。" },
+      { "icon": "route", "title": "巡回ルートを最適化", "text": "移動を伴う業務では、Klacksが移動距離を短く、巡回間隔を守れるようにパトロールルートを組み立てます。" },
+      { "icon": "schedule", "title": "24時間365日のローテーション", "text": "日勤・夜勤・週末勤務を公平にローテーション &mdash; 割増手当と休息期間も自動的に考慮します。" },
+      { "icon": "smart_toy", "title": "Klacksyが音声で計画", "text": "「北施設の夜勤を埋めて」と伝えるだけ &mdash; Klacksyが資格と対応可否を確認します。" },
+      { "icon": "bolt", "title": "欠員も数分で代替", "text": "持ち場に欠員が出ても、Klacksは資格を持ち対応可能な代替要員を即座に表示します &mdash; 計画全体を崩す必要はありません。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "貴社の警備事業でKlacksを体験",
+    "text": "個別デモにて、貴社の施設、資格管理、巡回業務をKlacksがどのように担うかをご紹介します。"
+  }
+}

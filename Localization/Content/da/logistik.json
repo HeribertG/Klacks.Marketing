@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks til logistik | Ruter, køretider & grænseoverskridende",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Til logistik &amp; transport",
+    "titleHtml": "Ruter, køretider, aftaler — <span class=\"text-secondary\">alt under kontrol.</span>",
+    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med køre- og hviletider, de rette kørekortklasser og grænseoverskridende helligdage. Ruter optimeres automatisk.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevisning for ruter og chaufførindsatser",
+    "screenshotLabel": "Tidslinje",
+    "screenshotCaption": "Skærmbilledet er på tysk — appens brugerflade findes kun på tysk, engelsk, fransk og italiensk; dansk understøttes p.t. kun af AI-assistenten Klacksy."
+  },
+  "challenges": {
+    "eyebrow": "Hverdagen i logistikken",
+    "title": "Ruter, lovgivning og aftaler på samme tid",
+    "items": [
+      { "icon": "alt_route", "title": "Ruter &amp; aftaler", "text": "Stop, tidsvinduer og veje skal passe sammen &mdash; enhver omlægning får konsekvenser." },
+      { "icon": "timer", "title": "Køre- &amp; hviletider", "text": "Lovpligtige køre- og hviletider skal overholdes &mdash; og næsten umuligt at sikre i hånden på tværs af mange chauffører." },
+      { "icon": "public", "title": "Grænseoverskridende", "text": "Forskellige lande, forskellige helligdage og regler: en rute over grænsen kræver begge kalendere." }
+    ]
+  },
+  "solutions": {
+    "title": "Sådan letter Klacks logistikkens hverdag",
+    "subtitle": "Fra den optimerede rute til den grænseoverskridende helligdag &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger stoppene i den mest hensigtsmæssige rækkefølge &mdash; korte veje, overholdte tidsvinduer, mindre tomkørsel." },
+      { "icon": "timer", "title": "Køre- &amp; hviletider kontrolleret", "text": "Lovpligtige grænser overvåges i realtid &mdash; overtrædelser opstår slet ikke." },
+      { "icon": "flag", "title": "Flere lande &amp; kalendere", "text": "Helligdage og regler fra flere lande kan blandes &mdash; hver med sin egen virkning på tider og tillæg." },
+      { "icon": "badge", "title": "Kørekortklasser matchet", "text": "Klacks tildeler kun ruter til chauffører med den rette rettighed &mdash; og advarer om udløbende beviser." },
+      { "icon": "smart_toy", "title": "Klacksy planlægger med stemmen", "text": "»Planlæg ruterne for i morgen, chauffør Meier er syg« er nok &mdash; Klacksy genberegner alt." },
+      { "icon": "event_busy", "title": "Fravær hurtigt dækket", "text": "Falder en chauffør fra, viser Klacks straks, hvem der er kvalificeret, tilgængelig og inden for køretiden." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Oplev Klacks i din logistikvirksomhed",
+    "text": "I en personlig demo viser vi, hvordan Klacks overtager ruter, køretider og chauffører for dig."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks para Hospitais | Horários 24/7 & Períodos de Descanso",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Para hospitais &amp; clínicas",
+    "titleHtml": "Horários que <span class=\"text-secondary\">funcionam a toda a hora.</span>",
+    "subtitle": "O Klacks planeia serviços e turnos sem lacunas &mdash; com períodos de descanso respeitados, qualificações adequadas e total soberania dos dados. On-premise, para que os dados dos utentes nunca saiam das suas instalações.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grelha de horários do Klacks para hospitais",
+    "screenshotLabel": "Horário",
+    "screenshotCaption": "Captura de ecrã em alemão — a aplicação está disponível apenas em alemão, inglês, francês e italiano."
+  },
+  "challenges": {
+    "eyebrow": "O dia a dia hospitalar",
+    "title": "Sem lacunas, correto, documentado",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 sem lacunas", "text": "Dia, noite, fim de semana, feriado: cada serviço tem de estar sempre coberto &mdash; mesmo em caso de faltas de última hora." },
+      { "icon": "gavel", "title": "Períodos de descanso &amp; legislação", "text": "Cumprir a lei do trabalho, os períodos de descanso e os limites máximos é obrigatório &mdash; e quase impossível de controlar à mão." },
+      { "icon": "health_and_safety", "title": "Proteção de dados ao nível hospitalar", "text": "Os dados de pessoal e de utentes não podem sair das instalações. Uma obrigação de cloud é muitas vezes inaceitável." }
+    ]
+  },
+  "solutions": {
+    "title": "Como o Klacks alivia os hospitais",
+    "subtitle": "Do turno noturno sem lacunas à bolsa de substitutos &mdash; tudo encaixa.",
+    "items": [
+      { "icon": "schedule", "title": "Cobertura 24/7 sem lacunas", "text": "Turnos de dia, tarde e noite em todos os serviços &mdash; o Klacks assinala de imediato cada lacuna e preenche-a automaticamente, se pretendido." },
+      { "icon": "gavel", "title": "Períodos de descanso verificados automaticamente", "text": "A lei do trabalho, os períodos de descanso e os limites máximos são monitorizados em tempo real &mdash; as infrações deixam de acontecer." },
+      { "icon": "verified", "title": "Qualificações &amp; serviços", "text": "Cada turno só é atribuído a pessoal com a qualificação adequada &mdash; por serviço, departamento e função." },
+      { "icon": "shield_lock", "title": "On-premise: os dados ficam consigo", "text": "O Klacks corre na sua infraestrutura. Os dados de pessoal e de utentes não saem do hospital &mdash; nem sequer para a IA." },
+      { "icon": "smart_toy", "title": "O Klacksy planeia por voz", "text": "«Preenche os turnos noturnos de Medicina Interna para a próxima semana» basta &mdash; o Klacksy tem em conta qualificação e descanso." },
+      { "icon": "groups", "title": "Bolsa de substitutos &amp; faltas", "text": "Se alguém falta, o Klacks mostra de imediato substitutos qualificados e disponíveis &mdash; sem ter de refazer todo o plano." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Na prática",
+    "title": "Vários serviços, turno de dia e de noite, uma bolsa de substitutos",
+    "text": "Cada serviço tem as suas próprias regras de ocupação e requisitos de qualificação. O Klacks planeia tudo em conjunto, verifica os períodos de descanso automaticamente e recorre à bolsa de substitutos em caso de falta &mdash; a chefia de serviço vê a qualquer momento onde a situação está apertada."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Experimente o Klacks na sua clínica",
+    "text": "Numa demonstração personalizada, mostramos como o Klacks assume os serviços, os períodos de descanso e a bolsa de substitutos para a sua instituição."
+  }
+}

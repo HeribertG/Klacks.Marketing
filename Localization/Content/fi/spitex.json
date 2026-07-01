@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks kotihoidolle | Reittisuunnittelu ja hoitotyön työvuorolistat",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Kotihoidolle &amp; avohoidolle",
+    "titleHtml": "Enemmän aikaa hoitoon, <span class=\"text-secondary\">vähemmän reittisuunnitteluun.</span>",
+    "subtitle": "Klacks suunnittelee käynnit ja reitit automaattisesti &mdash; oikeilla pätevyyksillä sekä kantoninne oikeilla lisillä ja pyhäpäivillä. On-premise-ratkaisuna, jotta potilastiedot eivät koskaan poistu talostanne.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajananäkymä kotihoidon reittisuunnitteluun",
+    "screenshotLabel": "Aikajana",
+    "screenshotCaption": "Kuvakaappaus on saksaksi — sovellus itsessään on saatavilla saksaksi, englanniksi, ranskaksi ja italiaksi."
+  },
+  "challenges": {
+    "eyebrow": "Kotihoidon arki",
+    "title": "Suunnittelua, joka on joka päivä erilaista",
+    "items": [
+      { "icon": "alt_route", "title": "Reittejä vuorojen sijaan", "text": "Jokainen hoitaja ajaa asiakkaalta toiselle. Reitit, järjestys ja aikaikkunat on sovitettava yhteen &mdash; joka päivä uudelleen." },
+      { "icon": "verified_user", "title": "Pätevyys ratkaisee", "text": "Lääkkeenanto, haavanhoito, tutkintotaso: kaikki eivät saa hoitaa kaikkia käyntejä." },
+      { "icon": "health_and_safety", "title": "Arkaluonteiset tiedot", "text": "Potilastiedot on suojattava. Pilvipakko ei ole monelle organisaatiolle vaihtoehto." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa kotihoidon työtä",
+    "subtitle": "Automaattisesta reitistä kantonin pyhäpäivään asti &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "route", "title": "Reitit automaattisesti optimoituina", "text": "Klacks suunnittelee käyntireitit niin, että matkat pysyvät lyhyinä ja aikaikkunat pitävät &mdash; autolle, pyörälle tai kävelylle." },
+      { "icon": "verified", "title": "Pätevyydet huomioitu automaattisesti", "text": "Jokainen käynti osoitetaan vain henkilölle, jolla on siihen sopiva pätevyys &mdash; ilman manuaalista tarkistusta." },
+      { "icon": "event_available", "title": "Kantoninne lisät &amp; pyhäpäivät", "text": "Yö-, viikonloppu- ja pyhälisät ovat valmiiksi määriteltyinä &mdash; aina kantoni- ja kuntatasolle asti, vapaasti muokattavissa." },
+      { "icon": "shield_lock", "title": "On-Premise: tiedot pysyvät talossa", "text": "Klacks toimii omassa infrastruktuurissanne. Potilastiedot eivät poistu talostanne &mdash; eivät edes tekoälylle." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Täytä huomisen reitit” riittää. Sairastapauksessa Klacksy ehdottaa heti saatavilla olevaa sijaista." },
+      { "icon": "event_busy", "title": "Poissaolot nopeasti paikattuina", "text": "Jos joku on poissa, Klacks näyttää heti, kuka on pätevä ja saatavilla &mdash; ilman koko suunnitelman kaatamista." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Geneven kotihoito, kaksikielinen, Vaudin käynteineen",
+    "text": "Ranskankielinen käyttöliittymä, Geneven ja Vaudin pyhäpäivät, kotihoidon lisät &mdash; konfiguroituna Klacksissa, ei erikseen ohjelmoituna. Reitit optimoidaan automaattisesti, pätevyydet tarkistetaan, ja Klacksy auttaa lyhyen varoitusajan muutoksissa. Potilastiedot pysyvät samalla kokonaan talossa."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokekaa Klacks kotihoidossanne",
+    "text": "Näytämme henkilökohtaisessa esittelyssä, miten Klacks ottaa haltuunsa organisaationne reitit, pätevyydet ja lisät."
+  }
+}

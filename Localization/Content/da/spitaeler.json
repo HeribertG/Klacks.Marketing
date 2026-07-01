@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks til hospitaler | 24/7-vagtplaner & hviletider",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Til hospitaler &amp; klinikker",
+    "titleHtml": "Vagtplaner, der <span class=\"text-secondary\">går op døgnet rundt.</span>",
+    "subtitle": "Klacks planlægger afdelinger og vagter uden huller &mdash; med overholdte hviletider, rette kvalifikationer og fuld datasuverænitet. On-premise, så patientdata aldrig forlader dit hus.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks vagtplan-gitter til hospitaler",
+    "screenshotLabel": "Vagtplan",
+    "screenshotCaption": "Skærmbilledet er på tysk — appens brugerflade findes kun på tysk, engelsk, fransk og italiensk; dansk understøttes p.t. kun af AI-assistenten Klacksy."
+  },
+  "challenges": {
+    "eyebrow": "Hverdagen på hospitalet",
+    "title": "Uden huller, korrekt, dokumenteret",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 uden huller", "text": "Dag, nat, weekend, helligdag: hver afdeling skal være bemandet uden huller &mdash; også ved kortsigtet fravær." },
+      { "icon": "gavel", "title": "Hviletider &amp; lovgivning", "text": "Overholdelse af arbejdstidslov, hviletider og øvre grænser er obligatorisk &mdash; og næsten umuligt at holde styr på i hånden." },
+      { "icon": "health_and_safety", "title": "Databeskyttelse på hospitalsniveau", "text": "Personale- og patientdata må ikke forlade huset. Et cloud-krav er ofte uacceptabelt." }
+    ]
+  },
+  "solutions": {
+    "title": "Sådan letter Klacks klinikkernes hverdag",
+    "subtitle": "Fra den huludfyldte nattevagt til vikarpuljen &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "schedule", "title": "Sammenhængende 24/7-dækning", "text": "Dag-, aften- og nattevagter på tværs af alle afdelinger &mdash; Klacks viser straks ethvert hul og udfylder det automatisk på ønske." },
+      { "icon": "gavel", "title": "Hviletider kontrolleres automatisk", "text": "Arbejdstidslov, hviletider og øvre grænser overvåges i realtid &mdash; overtrædelser opstår slet ikke." },
+      { "icon": "verified", "title": "Kvalifikationer &amp; afdelinger", "text": "Hver vagt tildeles kun personale med den rette kvalifikation &mdash; pr. afdeling, enhed og funktion." },
+      { "icon": "shield_lock", "title": "On-premise: data bliver i huset", "text": "Klacks kører på din infrastruktur. Personale- og patientdata forlader ikke hospitalet &mdash; heller ikke til AI'en." },
+      { "icon": "smart_toy", "title": "Klacksy planlægger med stemmen", "text": "»Fyld nattevagterne på medicinsk afdeling for næste uge« er nok &mdash; Klacksy tager højde for kvalifikation og hviletid." },
+      { "icon": "groups", "title": "Vikarpulje &amp; fravær", "text": "Bliver nogen syg, viser Klacks straks tilgængelige, kvalificerede vikarer &mdash; uden at vælte hele planen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Flere afdelinger, dag- og nattevagt, én vikarpulje",
+    "text": "Hver afdeling har sine egne bemandingsregler og kvalifikationskrav. Klacks planlægger dem alle samlet, kontrollerer hviletider automatisk og trækker på vikarpuljen ved fravær &mdash; afdelingslederen kan til enhver tid se, hvor det strammer til."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Oplev Klacks på dit hospital",
+    "text": "I en personlig demo viser vi, hvordan Klacks overtager afdelinger, hviletider og vikarer for dit hus."
+  }
+}

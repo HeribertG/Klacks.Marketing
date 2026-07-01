@@ -24,7 +24,7 @@
             </button>
             @if (_languageMenuOpen)
             {
-                <div class="absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
+                <div class="lang-dropdown absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
                     @foreach (var culture in SupportedCultures.All)
                     {
                         <a href="@LanguageSwitchHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">

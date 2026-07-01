@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks 医院解决方案 | 24/7 排班与休息时间管理",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "面向医院 &amp; 诊所",
+    "titleHtml": "排班表,<span class=\"text-secondary\">全天候无缝衔接。</span>",
+    "subtitle": "Klacks 为各病区和班次实现无缝排班 &mdash; 严格遵守休息时间、匹配适当资质,并保持完整的数据自主权。本地部署,确保患者数据永远不会离开您的机构。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 医院排班表界面",
+    "screenshotLabel": "排班表",
+    "screenshotCaption": "此截图为德语界面。Klacks 应用目前仅提供德语、英语、法语和意大利语版本。"
+  },
+  "challenges": {
+    "eyebrow": "医院的日常运营",
+    "title": "无缝衔接、合规准确、有据可查",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 无缝覆盖", "text": "白班、夜班、周末、法定假日:每个病区都必须实现无缝覆盖 &mdash; 即便面对临时缺勤也不例外。" },
+      { "icon": "gavel", "title": "休息时间 &amp; 法规", "text": "遵守劳动法、休息时间规定与工时上限是强制要求 &mdash; 单靠人工几乎无法全面掌控。" },
+      { "icon": "health_and_safety", "title": "医院级数据保护", "text": "人事与患者数据绝不能离开机构。强制使用云端服务在很多情况下是不可接受的。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何为医院减负",
+    "subtitle": "从无缝衔接的夜班到候补人员库 &mdash; 环环相扣。",
+    "items": [
+      { "icon": "schedule", "title": "24/7 无缝覆盖", "text": "白班、晚班与夜班覆盖所有病区 &mdash; Klacks 会立即显示每一处空缺,并可按需自动补齐。" },
+      { "icon": "gavel", "title": "休息时间自动核查", "text": "劳动法、休息时间规定与工时上限均实时监控 &mdash; 从源头上杜绝违规。" },
+      { "icon": "verified", "title": "资质 &amp; 病区匹配", "text": "每个班次只会分配给具备相应资质的人员 &mdash; 精确到病区、科室与岗位职能。" },
+      { "icon": "shield_lock", "title": "本地部署:数据留在您的机构", "text": "Klacks 运行在您自己的基础设施上。人事与患者数据不会离开医院 &mdash; 即便用于 AI 也不例外。" },
+      { "icon": "smart_toy", "title": "Klacksy 用语音完成排班", "text": "只需说「把内科下周的夜班排满」&mdash; Klacksy 会自动兼顾资质与休息时间要求。" },
+      { "icon": "groups", "title": "候补人员库 &amp; 缺勤应对", "text": "一旦有人缺勤,Klacks 会立即显示有空且具备资质的候补人员 &mdash; 无需打乱整个排班。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "实际案例",
+    "title": "多个病区、白班与夜班、一个候补人员库",
+    "text": "每个病区都有各自的人员配置规则和资质要求。Klacks 统一排班,自动核查休息时间,并在人员缺勤时调用候补人员库 &mdash; 病区负责人可随时掌握人手紧张的情况。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "亲身体验 Klacks 在医院的应用",
+    "text": "我们将通过一对一演示,展示 Klacks 如何为您的机构接管病区排班、休息时间与候补人员管理。"
+  }
+}

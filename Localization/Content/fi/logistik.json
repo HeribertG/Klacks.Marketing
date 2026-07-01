@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks logistiikalle | Reitit, ajoajat ja rajat ylittävä liikenne",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Logistiikalle &amp; kuljetusalalle",
+    "titleHtml": "Reitit, ajoajat, aikataulut — <span class=\"text-secondary\">kaikki hallinnassa.</span>",
+    "subtitle": "Klacks suunnittelee reitit ja kuljettajat &mdash; ajo- ja lepoaikoineen, sopivine ajokorttiluokkineen ja rajat ylittävine pyhäpäivineen. Reitit optimoidaan automaattisesti.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajananäkymä reiteille ja kuljettajien tehtäville",
+    "screenshotLabel": "Aikajana",
+    "screenshotCaption": "Kuvakaappaus on saksaksi — sovellus itsessään on saatavilla saksaksi, englanniksi, ranskaksi ja italiaksi."
+  },
+  "challenges": {
+    "eyebrow": "Logistiikka-alan arki",
+    "title": "Reitit, laki ja aikataulut samaan aikaan",
+    "items": [
+      { "icon": "alt_route", "title": "Reitit &amp; aikataulut", "text": "Pysähdysten, aikaikkunoiden ja matkojen on sovittava yhteen &mdash; jokainen uudelleensuunnittelu aiheuttaa seurauksia." },
+      { "icon": "timer", "title": "Ajo- &amp; lepoajat", "text": "Lakisääteiset ajo- ja lepoajat ovat pakollisia &mdash; ja käsin useiden kuljettajien osalta tuskin luotettavasti hallittavissa." },
+      { "icon": "public", "title": "Rajat ylittävä liikenne", "text": "Eri maat, eri pyhäpäivät ja säännöt: rajan ylittävä reitti tarvitsee molemmat kalenterit." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa logistiikka-alan työtä",
+    "subtitle": "Optimoidusta reitistä rajat ylittävään pyhäpäivään asti &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "route", "title": "Reitit automaattisesti optimoituina", "text": "Klacks järjestää pysähdykset järkevimpään järjestykseen &mdash; lyhyet matkat, aikaikkunat pitävät, vähemmän tyhjiä ajoja." },
+      { "icon": "timer", "title": "Ajo- &amp; lepoajat tarkistettuina", "text": "Lakisääteisiä rajoja valvotaan reaaliajassa &mdash; rikkomuksia ei pääse syntymään." },
+      { "icon": "flag", "title": "Useita maita &amp; kalentereita", "text": "Useiden maiden pyhäpäivät ja säännöt voidaan yhdistää &mdash; jokaisella oma vaikutuksensa aikoihin ja lisiin." },
+      { "icon": "badge", "title": "Sopivat ajokorttiluokat", "text": "Klacks osoittaa reittejä vain kuljettajille, joilla on sopiva ajo-oikeus &mdash; ja varoittaa vanhentuvista todisteista." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Suunnittele huomisen reitit, kuljettaja Meier on sairaana” riittää &mdash; Klacksy laskee kaiken uudelleen." },
+      { "icon": "event_busy", "title": "Poissaolot nopeasti paikattuina", "text": "Jos kuljettaja on poissa, Klacks näyttää heti, kuka on pätevä, saatavilla ja ajoaikansa puitteissa." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokekaa Klacks logistiikkayrityksessänne",
+    "text": "Henkilökohtaisessa esittelyssä näytämme, miten Klacks ottaa haltuunsa reittinne, ajoaikanne ja kuljettajanne."
+  }
+}

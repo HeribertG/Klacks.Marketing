@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks til hjemmeplejen | Ruteplanlægning & plejevagtplaner",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Til hjemmepleje &amp; ambulant pleje",
+    "titleHtml": "Mere tid til pleje, <span class=\"text-secondary\">mindre til ruteplanlægning.</span>",
+    "subtitle": "Klacks planlægger besøg og ruter automatisk &mdash; med de rette kvalifikationer, korrekte tillæg og din kantons helligdage. On-premise, så patientdata aldrig forlader dit hus.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevisning for ruteplanlægning i hjemmeplejen",
+    "screenshotLabel": "Tidslinje",
+    "screenshotCaption": "Skærmbilledet er på tysk — appens brugerflade findes kun på tysk, engelsk, fransk og italiensk; dansk understøttes p.t. kun af AI-assistenten Klacksy."
+  },
+  "challenges": {
+    "eyebrow": "Hverdagen i hjemmeplejen",
+    "title": "Planlægning, der er anderledes hver dag",
+    "items": [
+      { "icon": "alt_route", "title": "Ruter i stedet for vagter", "text": "Hver plejemedarbejder kører fra borger til borger. Veje, rækkefølge og tidsvinduer skal passe sammen &mdash; hver dag på ny." },
+      { "icon": "verified_user", "title": "Kvalifikation afgør", "text": "Medicingivning, sårpleje, uddannelsesniveau: Ikke alle må varetage enhver opgave." },
+      { "icon": "health_and_safety", "title": "Følsomme data", "text": "Patientdata skal beskyttes. Et cloud-krav er for mange organisationer ikke en mulighed." }
+    ]
+  },
+  "solutions": {
+    "title": "Sådan letter Klacks hjemmeplejen",
+    "subtitle": "Fra den automatiske rute til den kantonale helligdag &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger ruterne, så vejene er korte og tidsvinduerne overholdes &mdash; til bil, cykel eller til fods." },
+      { "icon": "verified", "title": "Kvalifikationer taget automatisk i betragtning", "text": "Hvert besøg tildeles kun personale med den rette kvalifikation &mdash; helt uden manuel kontrol." },
+      { "icon": "event_available", "title": "Tillæg &amp; helligdage i din kanton", "text": "Nat-, weekend- og helligdagstillæg er forudkonfigureret &mdash; helt ned på kanton- og kommuneniveau, frit tilpasseligt." },
+      { "icon": "shield_lock", "title": "On-premise: data bliver i huset", "text": "Klacks kører på din egen infrastruktur. Patientdata forlader ikke dit hus &mdash; heller ikke til AI'en." },
+      { "icon": "smart_toy", "title": "Klacksy planlægger med stemmen", "text": "»Fyld ruterne for i morgen« er nok. Ved en sygemelding foreslår Klacksy straks en tilgængelig afløser." },
+      { "icon": "event_busy", "title": "Fravær hurtigt dækket", "text": "Bliver nogen syg, viser Klacks straks, hvem der er kvalificeret og tilgængelig &mdash; uden at vælte hele planen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Hjemmeplejen i Genève, tosproget, med besøg i Vaud",
+    "text": "Fransk brugerflade, helligdage fra Genève og Vaud, plejetillæg &mdash; konfigureret i Klacks, ikke programmeret. Ruter optimeres automatisk, kvalifikationer kontrolleres, og Klacksy hjælper ved kortsigtede ændringer. Patientdata bliver samtidig fuldt ud i huset."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Oplev Klacks i din hjemmepleje",
+    "text": "Vi viser dig i en personlig demo, hvordan Klacks overtager ruter, kvalifikationer og tillæg for din organisation."
+  }
+}

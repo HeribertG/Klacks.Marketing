@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks 為清潔服務打造 | 據點路線與團隊調度",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "專為清潔 &amp; 環境服務打造",
+    "titleHtml": "每個據點<span class=\"text-secondary\">都排得清清楚楚。</span>",
+    "subtitle": "Klacks 高效率調度據點、路線與輪替團隊 &mdash; 兼顧合適的資格與時間窗。路線會自動最佳化，避免在路上浪費時間。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 排班表格線畫面，用於清潔團隊與據點管理",
+    "screenshotLabel": "排班表",
+    "screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。"
+  },
+  "challenges": {
+    "eyebrow": "清潔業的日常",
+    "title": "據點多，時間窗又緊",
+    "items": [
+      { "icon": "pin_drop", "title": "據點多，路線也多", "text": "團隊必須從一個據點趕往下一個據點。不佳的路線每天都在浪費時間、里程與金錢。" },
+      { "icon": "groups", "title": "團隊輪替頻繁", "text": "今天誰在哪裡工作？病假、休假與臨時人力讓排班變成每天都要重新拼湊的難題。" },
+      { "icon": "schedule", "title": "時間窗緊迫", "text": "有些據點只在特定時段才能進入 &mdash; 排班必須精準對齊這些時段。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何減輕清潔服務的負擔",
+    "subtitle": "從最佳化路線到彈性團隊調度 &mdash; 每個環節都環環相扣。",
+    "items": [
+      { "icon": "route", "title": "據點路線自動最佳化", "text": "Klacks 會安排據點順序，讓路程保持最短 &mdash; 適用開車、騎車或步行。" },
+      { "icon": "groups", "title": "團隊彈性調度", "text": "輪替人力、臨時支援與休假：Klacks 會全盤掌握，並建議合適的人力配置。" },
+      { "icon": "door_front", "title": "自動配合時間窗", "text": "只在早上或晚上才能進入的據點，Klacks 會自動排入正確的時段。" },
+      { "icon": "verified", "title": "資格條件相符", "text": "特殊清潔、機具操作、安全管制區域：只有具備對應資格的人員才會被指派。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音完成排班", "text": "只要說「把第 4 區的據點排在明天一早」就好 &mdash; Klacksy 會最佳化路線與團隊。" },
+      { "icon": "event_busy", "title": "人力缺口迅速補上", "text": "若有人員無法出勤，Klacks 會立即顯示誰有空，以及最合適的路線安排。" }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的清潔公司親身體驗 Klacks",
+    "text": "我們將透過專屬展示，示範 Klacks 如何為您處理路線、團隊與時間窗調度。"
+  }
+}
