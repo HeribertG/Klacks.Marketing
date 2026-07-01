@@ -27,6 +27,7 @@
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">shield_lock</span> Ihre Daten bleiben im Haus</span>
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">smart_toy</span> KI mit freier Modellwahl</span>
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">public</span> DE &middot; FR &middot; IT &middot; EN + Plugins</span>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">code</span> Open Source &middot; MIT-Lizenz &middot; kostenlos</span>
             </div>
         </div>
         <div class="lg:col-span-5 relative hidden lg:block">
@@ -362,13 +363,12 @@
         </div>
         <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">Sehen Sie Klacks in Aktion</h2>
         <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">Wir zeigen Ihnen in einer persönlichen Demo, wie Klacks Ihren Dienstplan in Ihrer Branche übernimmt &mdash; mit Ihren Regeln, auf Ihrer Infrastruktur.</p>
-        <div class="flex flex-wrap justify-center gap-6 relative z-10">
-            <!-- TODO: mailto/Calendly/Formular durch echten Kontaktweg ersetzen -->
-            <a href="mailto:info@klacks.ch?subject=Demo-Anfrage%20Klacks" class="bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform no-underline flex items-center gap-3">
-                <span class="material-symbols-outlined">calendar_month</span> Demo anfragen
-            </a>
-            <a href="https://github.com/HeribertG/Klacks" target="_blank" class="bg-white/10 text-white border border-white/20 backdrop-blur-md px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/20 transition-all flex items-center gap-3 no-underline">
-                <span class="material-symbols-outlined">code</span> Auf GitHub ansehen
+        <div class="relative z-10">
+            <ContactForm />
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 relative z-10 mt-8">
+            <a href="https://github.com/HeribertG/Klacks" target="_blank" class="text-white/60 hover:text-white text-sm font-semibold inline-flex items-center gap-2 no-underline transition-colors">
+                <span class="material-symbols-outlined text-base">code</span> Auf GitHub ansehen
             </a>
         </div>
     </div>
