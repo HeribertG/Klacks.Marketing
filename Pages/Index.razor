@@ -9,16 +9,16 @@
 <header class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-16 items-center">
         <div class="lg:col-span-7">
-            <div class="inline-block px-3 py-1 bg-surface-container-high rounded-full mb-6">
+            <div class="hero-enter hero-enter-1 inline-block px-3 py-1 bg-surface-container-high rounded-full mb-6">
                 <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@IxHtml("hero.badge")</span>
             </div>
-            <h1 class="text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">
+            <h1 class="hero-enter hero-enter-2 text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">
                 @IxHtml("hero.titleHtml")
             </h1>
-            <p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
+            <p class="hero-enter hero-enter-3 text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
                 @IxHtml("hero.subtitle")
             </p>
-            <div class="flex flex-wrap gap-4 mb-10">
+            <div class="hero-enter hero-enter-4 flex flex-wrap gap-4 mb-10">
                 <a href="#kontakt" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">
                     @Sh("nav.demoRequest") <span class="material-symbols-outlined icon-directional">arrow_forward</span>
                 </a>
@@ -26,14 +26,14 @@
                     <span class="material-symbols-outlined">code</span> @Sh("nav.github")
                 </a>
             </div>
-            <div class="flex flex-wrap gap-x-6 gap-y-3">
+            <div class="hero-enter hero-enter-5 flex flex-wrap gap-x-6 gap-y-3">
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">shield_lock</span> @IxHtml("hero.trust1")</span>
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">smart_toy</span> @IxHtml("hero.trust2")</span>
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">public</span> @IxHtml("hero.trust3")</span>
                 <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">code</span> @IxHtml("hero.trust4")</span>
             </div>
         </div>
-        <div class="lg:col-span-5 relative hidden lg:block">
+        <div class="hero-enter hero-enter-3 lg:col-span-5 relative hidden lg:block">
             <div class="bg-surface-container-lowest rounded-2xl shadow-2xl p-3 overflow-hidden">
                 <div class="flex items-center justify-between mb-3 px-1">
                     <div class="flex gap-2">
@@ -56,7 +56,7 @@
 <!-- PAIN POINTS -->
 <section class="reveal bg-surface-container-low py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8">
-        <div class="grid md:grid-cols-3 gap-12">
+        <div class="reveal-stagger grid md:grid-cols-3 gap-12">
             <div class="flex flex-col items-start">
                 <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
                     <span class="material-symbols-outlined text-primary">schedule</span>
@@ -90,8 +90,8 @@
         <p class="text-on-surface-variant max-w-2xl mx-auto">@Ix("usp.subtitle")</p>
         <div class="w-16 h-1 bg-secondary mx-auto rounded-full mt-6"></div>
     </div>
-    <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+    <div class="reveal-stagger grid md:grid-cols-3 gap-8">
+        <div class="card-hover p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">shield_lock</span>
             <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">@Ix("usp.data.label")</p>
             <h4 class="text-lg font-bold mb-4">@IxHtml("usp.data.title")</h4>
@@ -103,7 +103,7 @@
             <h4 class="text-lg font-bold mb-4">@IxHtml("usp.ai.titleHtml")</h4>
             <p class="text-tertiary-fixed text-sm leading-relaxed">@IxHtml("usp.ai.text")</p>
         </div>
-        <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+        <div class="card-hover p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">tune</span>
             <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">@Ix("usp.rules.label")</p>
             <h4 class="text-lg font-bold mb-4">@IxHtml("usp.rules.title")</h4>
@@ -116,7 +116,7 @@
 <section class="reveal mx-8 mb-32">
     <div class="max-w-5xl mx-auto bg-[#141b2c] rounded-[2rem] py-16 px-8 md:px-16 text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
+            <div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
         </div>
         <div class="relative z-10">
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed">@Ix("aiSynergy.eyebrow")</span>
@@ -311,32 +311,32 @@
         <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Ix("industries.title")</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto">@IxHtml("industries.subtitle")</p>
     </div>
-    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-        <a href="@IndustryHref("spitex")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+    <div class="reveal-stagger grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <a href="@IndustryHref("spitex")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">home_health</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.spitex.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.spitex.text")</p>
             <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
         </a>
-        <a href="@IndustryHref("spitaeler")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("spitaeler")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">local_hospital</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.spitaeler.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.spitaeler.text")</p>
             <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
         </a>
-        <a href="@IndustryHref("security")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("security")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">security</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.security.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.security.text")</p>
             <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
         </a>
-        <a href="@IndustryHref("hausdienste")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("hausdienste")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">cleaning_services</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.hausdienste.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.hausdienste.text")</p>
             <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
         </a>
-        <a href="@IndustryHref("logistik")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("logistik")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">local_shipping</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.logistik.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.logistik.text")</p>
@@ -366,7 +366,7 @@
 <section class="mx-8 my-24" id="kontakt">
     <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-24 px-8 text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
+            <div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
         </div>
         <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@Ix("cta.title")</h2>
         <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@IxHtml("cta.text")</p>

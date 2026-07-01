@@ -49,6 +49,38 @@ html {
     top: 0.5rem;
 }
 
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu-open {
+    display: block;
+}
+
+/* Self-contained breakpoint logic (matches Tailwind's default md=768px) so this
+   never depends on cascade order against Tailwind's own md:hidden utility. */
+.mobile-menu-panel {
+    display: none;
+}
+
+.mobile-menu-panel.mobile-menu-open {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-panel.mobile-menu-open {
+        display: none;
+    }
+}
+
+nav.glass-nav {
+    transition: box-shadow 0.3s ease;
+}
+
+nav.glass-nav.nav-scrolled {
+    box-shadow: 0 1px 24px rgba(28, 27, 27, 0.08);
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .reveal {
         opacity: 0;
@@ -59,5 +91,101 @@ html {
     .reveal.is-visible {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    /* Staggered card reveal: apply .reveal-stagger to a grid inside a .reveal
+       section; direct children fade/slide in one after another once the
+       ancestor section becomes visible, no JS beyond the existing observer. */
+    .reveal-stagger > * {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    /* Safety net: any child beyond the explicit nth-child list below still
+       becomes visible (no delay) instead of staying hidden forever if a grid
+       ever grows past 6 items. Lower specificity than the rules below, so the
+       explicit stagger delays still win for the first 6 children. */
+    .reveal.is-visible .reveal-stagger > * {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reveal.is-visible .reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
+    .reveal.is-visible .reveal-stagger > *:nth-child(2) { transition-delay: 90ms; }
+    .reveal.is-visible .reveal-stagger > *:nth-child(3) { transition-delay: 180ms; }
+    .reveal.is-visible .reveal-stagger > *:nth-child(4) { transition-delay: 270ms; }
+    .reveal.is-visible .reveal-stagger > *:nth-child(5) { transition-delay: 360ms; }
+    .reveal.is-visible .reveal-stagger > *:nth-child(6) { transition-delay: 450ms; }
+
+    /* Hero entrance: runs once on first paint, independent of scroll. */
+    @keyframes heroEnter {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-enter {
+        opacity: 0;
+        animation: heroEnter 0.7s ease-out both;
+    }
+
+    .hero-enter-1 { animation-delay: 0ms; }
+    .hero-enter-2 { animation-delay: 120ms; }
+    .hero-enter-3 { animation-delay: 240ms; }
+    .hero-enter-4 { animation-delay: 360ms; }
+    .hero-enter-5 { animation-delay: 480ms; }
+
+    /* Card lift on hover, composes with existing Tailwind hover:shadow utilities. */
+    .card-hover {
+        transition: transform 0.3s ease;
+    }
+
+    .card-hover:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Slow ambient pulse for the decorative background blur blobs. The keyframe
+       reproduces the base -translate-x-1/2 -translate-y-1/2 centering so the
+       element doesn't jump once the animation takes over the transform property. */
+    @keyframes blobFloat {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.12); }
+    }
+
+    .blob-animate {
+        animation: blobFloat 10s ease-in-out infinite;
+    }
+
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transform: translateY(-8px) scale(0.96);
+        pointer-events: none;
+        transition: opacity 0.18s ease-out, transform 0.18s ease-out;
+    }
+
+    .dropdown-menu-open {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+    }
+
+    .mobile-menu-panel {
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
+    }
+
+    .mobile-menu-panel.mobile-menu-open {
+        max-height: 40rem;
+        opacity: 1;
+    }
+
+    @media (min-width: 768px) {
+        .mobile-menu-panel {
+            display: none;
+        }
     }
 }

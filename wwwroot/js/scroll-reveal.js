@@ -1,9 +1,29 @@
 window.klacksScrollReveal = (function () {
     let intersectionObserver = null;
     let mutationObserver = null;
+    let navScrollListenerAttached = false;
 
     function reducedMotionPreferred() {
         return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    function initNavScroll() {
+        if (navScrollListenerAttached) {
+            return;
+        }
+
+        var nav = document.querySelector('nav.glass-nav');
+        if (!nav) {
+            return;
+        }
+
+        function syncNavScrolledClass() {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+        }
+
+        window.addEventListener('scroll', syncNavScrolledClass, { passive: true });
+        syncNavScrolledClass();
+        navScrollListenerAttached = true;
     }
 
     function revealAllImmediately() {
@@ -20,6 +40,8 @@ window.klacksScrollReveal = (function () {
     }
 
     function init() {
+        initNavScroll();
+
         if (reducedMotionPreferred() || !('IntersectionObserver' in window)) {
             revealAllImmediately();
             return;
