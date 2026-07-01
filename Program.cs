@@ -44,4 +44,10 @@ app.MapFallbackToPage("/_Host");
 app.MapGet("/sitemap.xml", (IConfiguration configuration) =>
     Results.Text(SitemapGenerator.Build(configuration["Site:BaseUrl"] ?? string.Empty), "application/xml"));
 
+// "de" is the unprefixed default culture (served at "/"), so "/de/..." must not
+// resolve as a second, duplicate URL for the same content — SupportedCultures.Resolve
+// would otherwise silently fall back to German for any unrecognized prefix.
+app.MapGet("/de", () => Results.NotFound());
+app.MapGet("/de/{**path}", () => Results.NotFound());
+
 app.Run();
