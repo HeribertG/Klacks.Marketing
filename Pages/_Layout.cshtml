@@ -1,5 +1,10 @@
+@using Klacks.Marketing.Localization
+@{
+    var firstPathSegment = Context.Request.Path.Value?.Trim('/').Split('/').FirstOrDefault() ?? string.Empty;
+    var currentCulture = SupportedCultures.Resolve(firstPathSegment);
+}
 <!DOCTYPE html>
-<html class="light" lang="de">
+<html class="light" lang="@currentCulture.Code" dir="@(currentCulture.IsRtl ? "rtl" : "ltr")">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,5 +47,6 @@
     </div>
 
     <script src="~/_framework/blazor.server.js"></script>
+    <script src="~/js/scroll-reveal.js"></script>
 </body>
 </html>

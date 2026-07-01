@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks pour les hôpitaux | Plannings 24 h/24 & temps de repos",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Pour les hôpitaux &amp; cliniques",
+    "titleHtml": "Des plannings qui <span class=\"text-secondary\">tiennent, 24 heures sur 24.</span>",
+    "subtitle": "Klacks planifie les unités et les gardes sans la moindre lacune &mdash; en respectant les temps de repos, avec les qualifications adaptées et une pleine souveraineté des données. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks pour les hôpitaux",
+    "screenshotLabel": "Planning",
+    "screenshotCaption": "Capture d'écran en allemand — l'application elle-même est aussi disponible en français."
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien hospitalier",
+    "title": "Sans faille, conforme, documenté",
+    "items": [
+      { "icon": "e911_emergency", "title": "24 h/24 sans faille", "text": "Jour, nuit, week-end, jour férié : chaque unité doit être couverte sans interruption &mdash; même en cas d'absence de dernière minute." },
+      { "icon": "gavel", "title": "Temps de repos &amp; droit du travail", "text": "Respecter la loi sur le travail, les temps de repos et les seuils maximaux est une obligation &mdash; presque impossible à suivre à la main." },
+      { "icon": "health_and_safety", "title": "Protection des données au niveau hospitalier", "text": "Les données du personnel et des patients ne doivent pas quitter l'établissement. Une obligation de cloud est souvent inacceptable." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les cliniques",
+    "subtitle": "De la garde de nuit sans faille au pool de remplaçants &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      { "icon": "schedule", "title": "Couverture 24 h/24 sans faille", "text": "Services du matin, de l'après-midi et de nuit sur toutes les unités &mdash; Klacks affiche immédiatement chaque lacune et la comble automatiquement sur demande." },
+      { "icon": "gavel", "title": "Temps de repos vérifiés automatiquement", "text": "La loi sur le travail, les temps de repos et les seuils maximaux sont surveillés en temps réel &mdash; les infractions n'apparaissent jamais." },
+      { "icon": "verified", "title": "Qualifications &amp; unités", "text": "Chaque garde n'est attribuée qu'au personnel disposant de la qualification adéquate &mdash; par unité, service et fonction." },
+      { "icon": "shield_lock", "title": "On-premise : les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des patients ne quittent pas la clinique &mdash; pas même pour l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les gardes de nuit du service de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte des qualifications et des temps de repos." },
+      { "icon": "groups", "title": "Pool de remplaçants &amp; absences", "text": "En cas d'absence, Klacks indique immédiatement les remplaçants qualifiés et disponibles &mdash; sans bouleverser tout le planning." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Plusieurs unités, service de jour et de nuit, un pool de remplaçants",
+    "text": "Chaque unité a ses propres règles d'effectifs et exigences de qualification. Klacks les planifie toutes ensemble, vérifie automatiquement les temps de repos et fait appel au pool de remplaçants en cas d'absence &mdash; la direction de l'unité voit à tout moment où la situation se tend."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre clinique",
+    "text": "Lors d'une démonstration personnalisée, nous montrons comment Klacks prend en charge les unités, les temps de repos et les remplaçants pour votre établissement."
+  }
+}

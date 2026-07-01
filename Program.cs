@@ -1,3 +1,4 @@
+using Klacks.Marketing.Localization;
 using Klacks.Marketing.Services.Contact;
 using Microsoft.AspNetCore.Components.Server.Circuits;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -12,6 +13,7 @@ builder.Services.AddSingleton<InMemoryContactRateLimiter>();
 builder.Services.AddScoped<ContactCircuitIpProvider>();
 builder.Services.AddScoped<CircuitHandler, ContactIpCircuitHandler>();
 builder.Services.AddScoped<IContactMailService, SmtpContactMailService>();
+builder.Services.AddSingleton<IPageContentProvider, JsonPageContentProvider>();
 
 // klacks-proxy sits on the same Docker network, not on loopback — trust its
 // forwarded headers so the contact-form rate limiter sees the real client IP.
@@ -38,5 +40,8 @@ app.UseRouting();
 app.MapRazorPages();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+
+app.MapGet("/sitemap.xml", (IConfiguration configuration) =>
+    Results.Text(SitemapGenerator.Build(configuration["Site:BaseUrl"] ?? string.Empty), "application/xml"));
 
 app.Run();

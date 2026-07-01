@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./Pages/**/*.{razor,cshtml}",
     "./Shared/**/*.razor",
+    "./Localization/Content/**/*.json",
   ],
   darkMode: "class",
   theme: {

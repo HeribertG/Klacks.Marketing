@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks for Logistics | Routes, Driving Times & Cross-Border Operations",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "For logistics &amp; transport",
+    "titleHtml": "Routes, driving times, deadlines — <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks schedules routes and drivers &mdash; with driving and rest times, the right license classes, and cross-border public holidays. Routes are optimized automatically.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for routes and driver assignments",
+    "screenshotLabel": "Timeline",
+    "screenshotCaption": "Screenshot shown in German — the app itself is also available in English."
+  },
+  "challenges": {
+    "eyebrow": "Everyday logistics operations",
+    "title": "Routes, regulations, and deadlines at once",
+    "items": [
+      { "icon": "alt_route", "title": "Routes &amp; deadlines", "text": "Stops, time windows, and distances all have to align &mdash; every reschedule has knock-on effects." },
+      { "icon": "timer", "title": "Driving &amp; rest times", "text": "Statutory driving and rest times are mandatory &mdash; and nearly impossible to guarantee by hand across many drivers." },
+      { "icon": "public", "title": "Cross-border", "text": "Different countries, different public holidays and rules: a route crossing the border needs both calendars." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks lightens the load for logistics",
+    "subtitle": "From the optimized route to the cross-border public holiday &mdash; it all works together.",
+    "items": [
+      { "icon": "route", "title": "Routes optimized automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short distances, time windows met, fewer empty runs." },
+      { "icon": "timer", "title": "Driving &amp; rest times checked", "text": "Statutory limits are monitored in real time &mdash; violations never happen in the first place." },
+      { "icon": "flag", "title": "Multiple countries &amp; calendars", "text": "Public holidays and rules from multiple countries can be combined &mdash; each with its own effect on hours and pay premiums." },
+      { "icon": "badge", "title": "The right license classes", "text": "Klacks assigns routes only to drivers with the right license &mdash; and warns before a certification expires." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "“Schedule tomorrow's routes, driver Meier is out sick” is enough &mdash; Klacksy recalculates everything." },
+      { "icon": "event_busy", "title": "Absences covered fast", "text": "If a driver drops out, Klacks immediately shows who's qualified, available, and within driving-time limits." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in your logistics operation",
+    "text": "In a personal demo, we'll show you how Klacks handles routes, driving times, and drivers for you."
+  }
+}

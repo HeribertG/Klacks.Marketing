@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks per gli ospedali | Piani dei turni 24/7 & tempi di riposo",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Per ospedali &amp; cliniche",
+    "titleHtml": "Piani dei turni che <span class=\"text-secondary\">quadrano 24 ore su 24.</span>",
+    "subtitle": "Klacks pianifica reparti e turni senza lacune &mdash; con tempi di riposo rispettati, qualifiche adeguate e piena sovranità dei dati. On-premise, perché i dati dei pazienti non lasciano mai la Sua azienda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Griglia del piano dei turni di Klacks per ospedali",
+    "screenshotLabel": "Piano dei turni",
+    "screenshotCaption": "Schermata in tedesco — l'app stessa è disponibile anche in italiano."
+  },
+  "challenges": {
+    "eyebrow": "La quotidianità in ospedale",
+    "title": "Senza lacune, corretto, documentato",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 senza lacune", "text": "Giorno, notte, fine settimana, giorni festivi: ogni reparto deve essere coperto senza lacune &mdash; anche in caso di assenze impreviste." },
+      { "icon": "gavel", "title": "Tempi di riposo &amp; diritto", "text": "Rispettare la legge sull'orario di lavoro, i tempi di riposo e i limiti massimi è un obbligo &mdash; e a mano è quasi impossibile tenerne il controllo." },
+      { "icon": "health_and_safety", "title": "Protezione dei dati a livello ospedaliero", "text": "I dati del personale e dei pazienti non devono lasciare l'azienda. Un obbligo di cloud è spesso inaccettabile." }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacks alleggerisce le cliniche",
+    "subtitle": "Dal turno di notte senza lacune al pool di sostituti &mdash; tutto si incastra alla perfezione.",
+    "items": [
+      { "icon": "schedule", "title": "Copertura 24/7 senza lacune", "text": "Turni di mattina, pomeriggio e notte su tutti i reparti &mdash; Klacks mostra subito ogni lacuna e la colma automaticamente su richiesta." },
+      { "icon": "gavel", "title": "Tempi di riposo verificati automaticamente", "text": "Legge sull'orario di lavoro, tempi di riposo e limiti massimi sono monitorati in tempo reale &mdash; le violazioni non si verificano nemmeno." },
+      { "icon": "verified", "title": "Qualifiche &amp; reparti", "text": "Ogni turno viene assegnato solo a personale con la qualifica adeguata &mdash; per reparto, divisione e funzione." },
+      { "icon": "shield_lock", "title": "On-premise: i dati restano in azienda", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale e dei pazienti non lasciano la clinica &mdash; nemmeno verso l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy pianifica a voce", "text": "Basta dire «Riempi i turni di notte di Medicina interna per la prossima settimana» &mdash; Klacksy considera qualifiche e tempi di riposo." },
+      { "icon": "groups", "title": "Pool di sostituti &amp; assenze", "text": "Se qualcuno viene a mancare, Klacks mostra subito i sostituti qualificati disponibili &mdash; senza stravolgere l'intero piano." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Più reparti, turni di giorno e di notte, un unico pool di sostituti",
+    "text": "Ogni reparto ha proprie regole di copertura e requisiti di qualifica. Klacks li pianifica tutti insieme, verifica automaticamente i tempi di riposo e attinge al pool di sostituti in caso di assenze &mdash; la direzione di reparto vede in ogni momento dove la situazione si fa critica."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Provi Klacks nella Sua clinica",
+    "text": "In una demo personale Le mostriamo come Klacks gestisce reparti, tempi di riposo e sostituti per la Sua azienda."
+  }
+}

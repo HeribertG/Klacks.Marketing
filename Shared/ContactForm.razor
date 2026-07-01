@@ -2,26 +2,27 @@
 @inject IContactMailService MailService
 @inject InMemoryContactRateLimiter RateLimiter
 @inject ContactCircuitIpProvider IpProvider
+@inject IPageContentProvider ContentProvider
 @inject ILogger<ContactForm> Logger
 
 <EditForm Model="_model" OnValidSubmit="HandleValidSubmit" class="flex flex-col gap-4 max-w-xl mx-auto text-left">
     <DataAnnotationsValidator />
 
     <div>
-        <label for="contact-name" class="block text-sm font-semibold text-white/80 mb-1">Name</label>
-        <InputText id="contact-name" @bind-Value="_model.Name" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="Ihr Name" />
+        <label for="contact-name" class="block text-sm font-semibold text-white/80 mb-1">@Sh("contactForm.nameLabel")</label>
+        <InputText id="contact-name" @bind-Value="_model.Name" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="@Sh("contactForm.namePlaceholder")" />
         <ValidationMessage For="() => _model.Name" class="text-error text-xs mt-1 block" />
     </div>
 
     <div>
-        <label for="contact-email" class="block text-sm font-semibold text-white/80 mb-1">E-Mail</label>
-        <InputText id="contact-email" @bind-Value="_model.Email" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="ihre@firma.ch" />
+        <label for="contact-email" class="block text-sm font-semibold text-white/80 mb-1">@Sh("contactForm.emailLabel")</label>
+        <InputText id="contact-email" @bind-Value="_model.Email" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="@Sh("contactForm.emailPlaceholder")" />
         <ValidationMessage For="() => _model.Email" class="text-error text-xs mt-1 block" />
     </div>
 
     <div>
-        <label for="contact-message" class="block text-sm font-semibold text-white/80 mb-1">Nachricht</label>
-        <InputTextArea id="contact-message" @bind-Value="_model.Message" rows="4" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="Was möchten Sie über Klacks wissen?" />
+        <label for="contact-message" class="block text-sm font-semibold text-white/80 mb-1">@Sh("contactForm.messageLabel")</label>
+        <InputTextArea id="contact-message" @bind-Value="_model.Message" rows="4" class="w-full rounded-xl px-4 py-3 bg-white/10 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-secondary" placeholder="@Sh("contactForm.messagePlaceholder")" />
         <ValidationMessage For="() => _model.Message" class="text-error text-xs mt-1 block" />
     </div>
 
@@ -31,31 +32,35 @@
     </div>
 
     <button type="submit" disabled="@_isSubmitting" class="bg-secondary text-white px-10 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3">
-        <span class="material-symbols-outlined">calendar_month</span> @(_isSubmitting ? "Wird gesendet…" : "Demo anfragen")
+        <span class="material-symbols-outlined">calendar_month</span> @(_isSubmitting ? Sh("contactForm.submitting") : Sh("contactForm.submit"))
     </button>
 
-    <p class="text-white/40 text-xs text-center">Oder direkt per E-Mail: <a href="mailto:info@klacks.ch?subject=Demo-Anfrage%20Klacks" class="text-white/60 hover:text-white underline">info@klacks.ch</a></p>
+    <p class="text-white/40 text-xs text-center">@Sh("contactForm.mailFallbackLabel") <a href="mailto:info@klacks.ch?subject=Demo-Anfrage%20Klacks" class="text-white/60 hover:text-white underline">info@klacks.ch</a></p>
 
     @if (_status == SubmitStatus.Success)
     {
-        <p class="text-tertiary-fixed text-sm text-center">Danke! Wir melden uns in Kürze bei Ihnen.</p>
+        <p class="text-tertiary-fixed text-sm text-center">@Sh("contactForm.success")</p>
     }
     else if (_status == SubmitStatus.RateLimited)
     {
-        <p class="text-white/70 text-sm text-center">Sie haben bereits mehrere Anfragen gesendet. Bitte versuchen Sie es später erneut oder schreiben Sie direkt an <a href="mailto:info@klacks.ch" class="text-secondary underline">info@klacks.ch</a>.</p>
+        <p class="text-white/70 text-sm text-center">@Sh("contactForm.rateLimited") <a href="mailto:info@klacks.ch" class="text-secondary underline">info@klacks.ch</a>.</p>
     }
     else if (_status == SubmitStatus.Error)
     {
-        <p class="text-white/70 text-sm text-center">Da ist etwas schiefgelaufen. Bitte schreiben Sie uns direkt an <a href="mailto:info@klacks.ch" class="text-secondary underline">info@klacks.ch</a>.</p>
+        <p class="text-white/70 text-sm text-center">@Sh("contactForm.error") <a href="mailto:info@klacks.ch" class="text-secondary underline">info@klacks.ch</a>.</p>
     }
 </EditForm>
 
 @code {
     private enum SubmitStatus { None, Success, RateLimited, Error }
 
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
     private readonly ContactFormModel _model = new();
     private bool _isSubmitting;
     private SubmitStatus _status;
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
 
     private async Task HandleValidSubmit()
     {

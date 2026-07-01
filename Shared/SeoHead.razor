@@ -1,0 +1,29 @@
+@inject IConfiguration Configuration
+
+<HeadContent>
+    <link rel="canonical" href="@CanonicalUrl" />
+    @foreach (var culture in SupportedCultures.All)
+    {
+        <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
+    }
+    <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(SupportedCultures.Default)" />
+</HeadContent>
+
+@code {
+    [Parameter, EditorRequired] public required string PageKey { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    // No permanent domain yet — points at the current staging deployment, update once one exists.
+    private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
+
+    private string AbsoluteUrl(SupportedCulture culture)
+    {
+        var path = culture.Code == SupportedCultures.DefaultCode
+            ? (PageKey.Length == 0 ? "/" : $"/{PageKey}")
+            : (PageKey.Length == 0 ? $"/{culture.UrlSlug}" : $"/{culture.UrlSlug}/{PageKey}");
+
+        return $"{BaseUrl}{path}";
+    }
+
+    private string CanonicalUrl => AbsoluteUrl(SupportedCultures.All.First(c => c.Code == Culture));
+}

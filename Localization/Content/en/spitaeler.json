@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks for Hospitals | 24/7 Schedules & Rest Periods",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For hospitals &amp; clinics",
+    "titleHtml": "Schedules that <span class=\"text-secondary\">work around the clock.</span>",
+    "subtitle": "Klacks schedules wards and shifts with no gaps &mdash; with rest periods respected, the right qualifications, and full data sovereignty. On-premise, so patient data never leaves your building.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule grid for hospitals",
+    "screenshotLabel": "Schedule",
+    "screenshotCaption": "Screenshot shown in German — the app itself is also available in English."
+  },
+  "challenges": {
+    "eyebrow": "Everyday hospital life",
+    "title": "Gap-free, accurate, documented",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 with no gaps", "text": "Day, night, weekend, public holiday: every ward has to be staffed without gaps &mdash; even with last-minute absences." },
+      { "icon": "gavel", "title": "Rest periods &amp; the law", "text": "Complying with labor law, rest periods, and maximum limits is mandatory &mdash; and nearly impossible to track by hand." },
+      { "icon": "health_and_safety", "title": "Hospital-grade data protection", "text": "Staff and patient data must not leave the building. A mandatory cloud is often unacceptable." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks lightens the load for clinics",
+    "subtitle": "From gap-free night shifts to the float pool &mdash; it all works together.",
+    "items": [
+      { "icon": "schedule", "title": "Gap-free 24/7 coverage", "text": "Day, late, and night shifts across every ward &mdash; Klacks flags every gap instantly and fills it automatically on request." },
+      { "icon": "gavel", "title": "Rest periods checked automatically", "text": "Labor law, rest periods, and maximum limits are monitored in real time &mdash; violations never happen in the first place." },
+      { "icon": "verified", "title": "Qualifications &amp; wards", "text": "Every shift is assigned only to appropriately qualified staff &mdash; by ward, department, and role." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your infrastructure. Staff and patient data never leave the clinic &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "“Fill next week's night shifts for internal medicine” is enough &mdash; Klacksy factors in qualification and rest periods." },
+      { "icon": "groups", "title": "Float pool &amp; absences", "text": "If someone drops out, Klacks immediately shows available, qualified float staff &mdash; without turning the whole schedule upside down." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Multiple wards, day and night shifts, one float pool",
+    "text": "Each ward has its own staffing rules and qualification requirements. Klacks schedules them all together, checks rest periods automatically, and draws on the float pool when someone is absent &mdash; the ward manager can see at any time where things are getting tight."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Experience Klacks in your clinic",
+    "text": "In a personal demo, we'll show you how Klacks handles wards, rest periods, and float staff for your facility."
+  }
+}

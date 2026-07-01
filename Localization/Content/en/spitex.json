@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks for Home Care | Route Planning & Care Scheduling",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "For home care &amp; outpatient nursing",
+    "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
+    "subtitle": "Klacks schedules visits and routes automatically &mdash; with the right qualifications, correct pay premiums, and your canton's public holidays. On-premise, so patient data never leaves your building.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for home care route planning",
+    "screenshotLabel": "Timeline",
+    "screenshotCaption": "Screenshot shown in German — the app itself is also available in English."
+  },
+  "challenges": {
+    "eyebrow": "Everyday life in home care",
+    "title": "Scheduling that's different every day",
+    "items": [
+      { "icon": "alt_route", "title": "Routes instead of shifts", "text": "Every caregiver drives from client to client. Routes, sequence, and time windows all have to fit together &mdash; freshly, every single day." },
+      { "icon": "verified_user", "title": "Qualification decides", "text": "Medication administration, wound care, degree level: not everyone is allowed to take on every visit." },
+      { "icon": "health_and_safety", "title": "Sensitive data", "text": "Patient data needs to be protected. A mandatory cloud is not an option for many organizations." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks lightens the load for home care",
+    "subtitle": "From automatic routes to cantonal public holidays &mdash; it all works together.",
+    "items": [
+      { "icon": "route", "title": "Routes optimized automatically", "text": "Klacks lays out visit routes so distances stay short and time windows are met &mdash; by car, bike, or on foot." },
+      { "icon": "verified", "title": "Qualifications automatically respected", "text": "Every visit is assigned only to people with the right qualification &mdash; with no manual checking at all." },
+      { "icon": "event_available", "title": "Pay premiums &amp; public holidays for your canton", "text": "Night, weekend, and public holiday premiums come pre-configured &mdash; down to canton and municipality level, and freely adjustable." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data never leaves your building &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "“Fill tomorrow's routes” is enough. If someone calls in sick, Klacksy immediately suggests available replacements." },
+      { "icon": "event_busy", "title": "Absences covered fast", "text": "If someone drops out, Klacks immediately shows who's qualified and available &mdash; without turning the whole schedule upside down." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Home care in Geneva, bilingual, with visits in Vaud",
+    "text": "French-language interface, Geneva and Vaud public holidays, home care pay premiums &mdash; configured in Klacks, not custom-coded. Routes are optimized automatically, qualifications are checked, and Klacksy helps with last-minute changes. Patient data stays entirely in-house throughout."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in your home care organization",
+    "text": "In a personal demo, we'll show you how Klacks handles routes, qualifications, and pay premiums for your organization."
+  }
+}

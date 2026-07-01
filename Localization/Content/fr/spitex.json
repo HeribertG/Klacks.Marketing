@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks pour l'aide à domicile | Planification des tournées & plannings de soins",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Pour l'aide à domicile &amp; les soins ambulatoires",
+    "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec les bonnes qualifications, les majorations correctes et les jours fériés de votre canton. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées d'aide à domicile",
+    "screenshotLabel": "Chronologie",
+    "screenshotCaption": "Capture d'écran en allemand — l'application elle-même est aussi disponible en français."
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de l'aide à domicile",
+    "title": "Une planification différente chaque jour",
+    "items": [
+      { "icon": "alt_route", "title": "Des tournées, pas des services", "text": "Chaque soignant se déplace de client en client. Trajets, ordre et créneaux horaires doivent s'accorder &mdash; chaque jour à nouveau." },
+      { "icon": "verified_user", "title": "La qualification fait la différence", "text": "Administration de médicaments, soins de plaies, niveau de diplôme : tout le monde ne peut pas assurer n'importe quelle intervention." },
+      { "icon": "health_and_safety", "title": "Données sensibles", "text": "Les données patients doivent être protégées. Une obligation de cloud n'est pas une option pour de nombreuses organisations." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'aide à domicile",
+    "subtitle": "De la tournée automatique au jour férié cantonal &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied." },
+      { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle." },
+      { "icon": "event_available", "title": "Majorations &amp; jours fériés de votre canton", "text": "Les majorations de nuit, de week-end et de jours fériés sont préconfigurées &mdash; jusqu'au niveau du canton et de la commune, librement modifiables." },
+      { "icon": "shield_lock", "title": "On-premise : les données restent chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données patients ne quittent pas vos murs &mdash; pas même pour l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." },
+      { "icon": "event_busy", "title": "Absences compensées rapidement", "text": "En cas d'absence, Klacks indique immédiatement qui est qualifié et disponible &mdash; sans bouleverser tout le planning." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Service d'aide à domicile à Genève, bilingue, avec interventions vaudoises",
+    "text": "Interface en français, jours fériés genevois et vaudois, majorations d'aide à domicile &mdash; configurés dans Klacks, pas reprogrammés. Les tournées sont optimisées automatiquement, les qualifications vérifiées, et Klacksy aide lors de modifications de dernière minute. Les données patients restent entièrement chez vous."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre service d'aide à domicile",
+    "text": "Lors d'une démonstration personnalisée, nous vous montrons comment Klacks prend en charge les tournées, qualifications et majorations pour votre organisation."
+  }
+}

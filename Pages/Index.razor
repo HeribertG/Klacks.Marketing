@@ -1,33 +1,36 @@
 @page "/"
+@page "/{culture}"
+@inject IPageContentProvider ContentProvider
 
-<PageTitle>Klacks | Personaleinsatzplanung, die Ihnen gehört</PageTitle>
+<PageTitle>@Ix("pageTitle")</PageTitle>
+<SeoHead PageKey="" Culture="@ResolvedCulture" />
 
 <!-- HERO SECTION -->
 <header class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-16 items-center">
         <div class="lg:col-span-7">
             <div class="inline-block px-3 py-1 bg-surface-container-high rounded-full mb-6">
-                <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Open Source &middot; On-Premise &middot; Schweizer Datenschutz</span>
+                <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@IxHtml("hero.badge")</span>
             </div>
             <h1 class="text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">
-                Personaleinsatzplanung, bei der <span class="text-secondary">Sie die Kontrolle behalten.</span>
+                @IxHtml("hero.titleHtml")
             </h1>
             <p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
-                Klacks plant Dienste automatisch, optimiert Touren und steuert sich per KI-Assistent &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. Für Spitex, Spitäler, Sicherheits-, Reinigungs- und Logistikbetriebe.
+                @IxHtml("hero.subtitle")
             </p>
             <div class="flex flex-wrap gap-4 mb-10">
                 <a href="#kontakt" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">
-                    Demo anfragen <span class="material-symbols-outlined">arrow_forward</span>
+                    @Sh("nav.demoRequest") <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
                 <a href="https://github.com/HeribertG/Klacks" target="_blank" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2">
-                    <span class="material-symbols-outlined">code</span> Auf GitHub ansehen
+                    <span class="material-symbols-outlined">code</span> @Sh("nav.github")
                 </a>
             </div>
             <div class="flex flex-wrap gap-x-6 gap-y-3">
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">shield_lock</span> Ihre Daten bleiben im Haus</span>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">smart_toy</span> KI mit freier Modellwahl</span>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">public</span> DE &middot; FR &middot; IT &middot; EN + Plugins</span>
-                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">code</span> Open Source &middot; MIT-Lizenz &middot; kostenlos</span>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">shield_lock</span> @IxHtml("hero.trust1")</span>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">smart_toy</span> @IxHtml("hero.trust2")</span>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">public</span> @IxHtml("hero.trust3")</span>
+                <span class="inline-flex items-center gap-2 text-sm font-semibold text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base">code</span> @IxHtml("hero.trust4")</span>
             </div>
         </div>
         <div class="lg:col-span-5 relative hidden lg:block">
@@ -38,101 +41,105 @@
                         <div class="w-3 h-3 rounded-full bg-surface-container-high"></div>
                         <div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
                     </div>
-                    <div class="text-[0.6875rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase">Dienstplan</div>
+                    <div class="text-[0.6875rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase">@Ix("hero.screenshotLabel")</div>
                 </div>
-                <img src="images/app-schedule-de.png" alt="Klacks Dienstplan-Raster mit Schichten, Gruppen und Mitarbeitenden" class="w-full h-auto rounded-lg border border-surface-container-high" loading="eager" />
+                <img src="images/app-schedule-de.png" alt="@Ix("hero.screenshotAlt")" class="w-full h-auto rounded-lg border border-surface-container-high" loading="eager" />
+                @if (!string.IsNullOrEmpty(Ix("hero.screenshotCaption")))
+                {
+                    <p class="text-xs text-on-surface-variant mt-3 px-1 mb-0">@Ix("hero.screenshotCaption")</p>
+                }
             </div>
         </div>
     </div>
 </header>
 
 <!-- PAIN POINTS -->
-<section class="bg-surface-container-low py-24 no-line-rule">
+<section class="reveal bg-surface-container-low py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8">
         <div class="grid md:grid-cols-3 gap-12">
             <div class="flex flex-col items-start">
                 <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
                     <span class="material-symbols-outlined text-primary">schedule</span>
                 </div>
-                <h3 class="text-xl font-bold text-primary mb-3">Planung frisst Stunden</h3>
-                <p class="text-on-surface-variant text-sm leading-relaxed">Dienstpläne von Hand kosten jede Woche Stunden. Eine Änderung löst ein Dutzend Folgekonflikte aus.</p>
+                <h3 class="text-xl font-bold text-primary mb-3">@IxHtml("painPoints.item1.title")</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("painPoints.item1.text")</p>
             </div>
             <div class="flex flex-col items-start">
                 <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
                     <span class="material-symbols-outlined text-primary">gavel</span>
                 </div>
-                <h3 class="text-xl font-bold text-primary mb-3">Compliance-Risiko</h3>
-                <p class="text-on-surface-variant text-sm leading-relaxed">Ruhezeiten, Qualifikationen, Zuschläge, Feiertage. Ein übersehener Wert wird schnell zum teuren Fehler.</p>
+                <h3 class="text-xl font-bold text-primary mb-3">@IxHtml("painPoints.item2.title")</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("painPoints.item2.text")</p>
             </div>
             <div class="flex flex-col items-start">
                 <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
                     <span class="material-symbols-outlined text-primary">cloud_off</span>
                 </div>
-                <h3 class="text-xl font-bold text-primary mb-3">Cloud-Zwang &amp; Lock-in</h3>
-                <p class="text-on-surface-variant text-sm leading-relaxed">Personendaten auf fremden Servern, Abhängigkeit vom Anbieter. Sensible Branchen können sich das nicht leisten.</p>
+                <h3 class="text-xl font-bold text-primary mb-3">@IxHtml("painPoints.item3.title")</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("painPoints.item3.text")</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- USP STACK: SIE BEHALTEN DIE KONTROLLE -->
-<section class="py-32 px-8 max-w-7xl mx-auto" id="kontrolle">
+<section class="reveal py-32 px-8 max-w-7xl mx-auto" id="kontrolle">
     <div class="mb-20 text-center">
-        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Das Versprechen</span>
-        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">Sie behalten die Kontrolle.</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Über Ihre Daten, über die KI dahinter und über Ihre Regeln. Drei Gründe, warum Klacks anders ist als jede Cloud-Lösung.</p>
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Ix("usp.eyebrow")</span>
+        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Ix("usp.title")</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">@Ix("usp.subtitle")</p>
         <div class="w-16 h-1 bg-secondary mx-auto rounded-full mt-6"></div>
     </div>
     <div class="grid md:grid-cols-3 gap-8">
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">shield_lock</span>
-            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">Ihre Daten</p>
-            <h4 class="text-lg font-bold mb-4">On-Premise &amp; Open Source</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; kein Datensatz verlässt das Haus. 100 % quelloffen, kein Vendor-Lock-in. Ihre Daten gehören Ihnen, heute und in zehn Jahren.</p>
+            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">@Ix("usp.data.label")</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("usp.data.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("usp.data.text")</p>
         </div>
         <div class="p-8 bg-tertiary-container text-white rounded-2xl shadow-xl transform md:scale-105 relative z-10">
             <span class="material-symbols-outlined text-tertiary-fixed text-3xl mb-6">smart_toy</span>
-            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed mb-2">Ihre KI</p>
-            <h4 class="text-lg font-bold mb-4">Klacksy &mdash; mit freier Modellwahl</h4>
-            <p class="text-tertiary-fixed text-sm leading-relaxed">Ein KI-Assistent, den Sie per Sprache bedienen. Sie wählen das LLM selbst &mdash; von OpenAI, Anthropic &amp; Co. bis zum lokalen Modell. Kein Zwang, kein Lock-in beim KI-Anbieter.</p>
+            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed mb-2">@Ix("usp.ai.label")</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("usp.ai.titleHtml")</h4>
+            <p class="text-tertiary-fixed text-sm leading-relaxed">@IxHtml("usp.ai.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">tune</span>
-            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">Ihre Regeln</p>
-            <h4 class="text-lg font-bold mb-4">Vorkonfiguriert &amp; selbst anpassbar</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Regeln, Berechnungen und Feiertage kommen passend für Ihr Land, Ihren Kanton, Ihre Gemeinde. Anpassen können Sie alles selbst &mdash; ohne Beratertage und ohne auf das nächste Release zu warten.</p>
+            <p class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-2">@Ix("usp.rules.label")</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("usp.rules.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("usp.rules.text")</p>
         </div>
     </div>
 </section>
 
 <!-- KI + DATENHOHEIT SYNERGIE -->
-<section class="mx-8 mb-32">
+<section class="reveal mx-8 mb-32">
     <div class="max-w-5xl mx-auto bg-[#141b2c] rounded-[2rem] py-16 px-8 md:px-16 text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
         </div>
         <div class="relative z-10">
-            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed">Die Kombination, die kaum jemand bietet</span>
-            <h2 class="text-[2rem] md:text-[2.5rem] font-black text-white tracking-tighter mt-4 mb-6">KI <span class="text-tertiary-fixed">und</span> volle Datenhoheit. Zugleich.</h2>
-            <p class="text-white/70 max-w-2xl mx-auto leading-relaxed">Klacksy kann mit einem <strong class="text-white">lokalen Sprachmodell</strong> laufen. Das heißt: ein Assistent, der Dienstpläne erstellt, Mitarbeitende anlegt und die App per Sprache bedient &mdash; ohne dass ein einziger Personen- oder Patientendatensatz Ihr Haus verlässt. Genau das, was Spitäler, Spitex und Sicherheitsdienste brauchen.</p>
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed">@Ix("aiSynergy.eyebrow")</span>
+            <h2 class="text-[2rem] md:text-[2.5rem] font-black text-white tracking-tighter mt-4 mb-6">@IxHtml("aiSynergy.titleHtml")</h2>
+            <p class="text-white/70 max-w-2xl mx-auto leading-relaxed">@IxHtml("aiSynergy.textHtml")</p>
         </div>
     </div>
 </section>
 
 <!-- KLACKSY SECTION -->
-<section class="bg-surface-container-low py-32 no-line-rule" id="klacksy">
+<section class="reveal bg-surface-container-low py-32 no-line-rule" id="klacksy">
     <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
         <div>
-            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Klacksy</span>
-            <h2 class="text-[2.5rem] font-black leading-tight mb-8 mt-4">Ihr KI-Assistent für die Planung</h2>
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Ix("klacksy.eyebrow")</span>
+            <h2 class="text-[2.5rem] font-black leading-tight mb-8 mt-4">@Ix("klacksy.title")</h2>
             <ul class="space-y-6 list-none p-0">
                 <li class="flex gap-4">
                     <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1 shrink-0">
                         <span class="material-symbols-outlined text-secondary text-xs">check</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Steuerung per natürlicher Sprache</span>
-                        <span class="text-on-surface-variant text-sm">„Fülle nächste Woche die Frühschichten" genügt &mdash; getippt oder gesprochen.</span>
+                        <span class="font-bold block text-primary">@IxHtml("klacksy.item1.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("klacksy.item1.text")</span>
                     </div>
                 </li>
                 <li class="flex gap-4">
@@ -140,8 +147,8 @@
                         <span class="material-symbols-outlined text-secondary text-xs">check</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Freie Wahl des Sprachmodells</span>
-                        <span class="text-on-surface-variant text-sm">OpenAI, Anthropic, DeepSeek, Gemini &mdash; oder ein lokales Modell. Sie entscheiden über Kosten, Datenschutz und Anbieter.</span>
+                        <span class="font-bold block text-primary">@IxHtml("klacksy.item2.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("klacksy.item2.text")</span>
                     </div>
                 </li>
                 <li class="flex gap-4">
@@ -149,8 +156,8 @@
                         <span class="material-symbols-outlined text-secondary text-xs">check</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">170+ Fähigkeiten</span>
-                        <span class="text-on-surface-variant text-sm">Mitarbeitende anlegen, Gruppen verwalten, Berechtigungen setzen, navigieren &mdash; alles im Dialog.</span>
+                        <span class="font-bold block text-primary">@IxHtml("klacksy.item3.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("klacksy.item3.text")</span>
                     </div>
                 </li>
                 <li class="flex gap-4">
@@ -158,108 +165,108 @@
                         <span class="material-symbols-outlined text-secondary text-xs">check</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Anschluss für externe KI-Agenten</span>
-                        <span class="text-on-surface-variant text-sm">Über einen Model-Context-Protocol-Server lässt sich Klacks mit weiteren KI-Werkzeugen verbinden.</span>
+                        <span class="font-bold block text-primary">@IxHtml("klacksy.item4.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("klacksy.item4.text")</span>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden p-2 border border-surface-container-high">
-            <img src="images/app-klacksy-de.png" alt="Klacksy KI-Assistent als Panel in Klacks – mit Modellwahl und Steuerung per natürlicher Sprache" class="w-full h-auto rounded-xl" loading="lazy" />
+            <img src="images/app-klacksy-de.png" alt="@Ix("klacksy.imageAlt")" class="w-full h-auto rounded-xl" loading="lazy" />
         </div>
     </div>
 </section>
 
 <!-- AUTO-PLANUNG & TOUREN -->
-<section class="py-32 px-8 max-w-7xl mx-auto">
+<section class="reveal py-32 px-8 max-w-7xl mx-auto">
     <div class="text-center mb-20">
-        <h2 class="text-[2.5rem] font-black tracking-tight mb-4">Den Plan erledigt die Maschine</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Ein evolutionärer Algorithmus prüft tausende Varianten in Sekunden und findet die beste Balance aus Abdeckung, Kosten und Zufriedenheit.</p>
+        <h2 class="text-[2.5rem] font-black tracking-tight mb-4">@Ix("autoPlanning.title")</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">@Ix("autoPlanning.subtitle")</p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">auto_awesome</span>
-            <h4 class="text-lg font-bold mb-4">1-Klick-Auto-Planung</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Der mühsame Teil &mdash; in Sekunden erledigt. Der Algorithmus respektiert dabei alle Vorgaben: Arbeitsrecht, Qualifikationen, Verfügbarkeiten und Wegstrecken.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item1.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item1.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">route</span>
-            <h4 class="text-lg font-bold mb-4">Touren- &amp; Routenoptimierung</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Für mobile Einsätze: Routen mit Ameisenalgorithmus optimieren &mdash; ob Auto, Velo, zu Fuß oder gemischt. Ideal für Spitex, Sicherheitsrundgänge, Reinigung und Logistik.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item2.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item2.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">hub</span>
-            <h4 class="text-lg font-bold mb-4">Modulare Planung ohne Doppelbuchung</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Mitarbeitende über Abteilungen teilen, ohne Konflikte: Planblätter halten Verweise statt Kopien. Eine Änderung ist überall sofort sichtbar &mdash; Doppelbuchungen werden unmöglich.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item3.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item3.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">event_busy</span>
-            <h4 class="text-lg font-bold mb-4">Absenzen im Blick</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Ferien, Krankheit und eigene Absenzarten auf einen Blick als Gantt-Diagramm. Export als PDF mit einem Klick.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item4.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item4.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">checklist</span>
-            <h4 class="text-lg font-bold mb-4">Freigabe-Workflow</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Von Entwurf über Bestätigt und Genehmigt bis Abgeschlossen. Jede Stufe sperrt die Bearbeitung &mdash; mit gruppenbasierten Zugriffsrechten.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item5.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item5.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
             <span class="material-symbols-outlined text-secondary text-3xl mb-6">grid_view</span>
-            <h4 class="text-lg font-bold mb-4">Interaktives Plan-Raster</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Eine leistungsfähige Zeit-Matrix: Schichten per Drag &amp; Drop verschieben, Änderungen erscheinen in Echtzeit bei allen Beteiligten.</p>
+            <h4 class="text-lg font-bold mb-4">@IxHtml("autoPlanning.item6.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("autoPlanning.item6.text")</p>
         </div>
     </div>
 </section>
 
 <!-- TEILE UND HERRSCHE / DIVIDE & CONQUER -->
-<section class="py-24 px-8 max-w-7xl mx-auto">
+<section class="reveal py-24 px-8 max-w-7xl mx-auto">
     <div class="text-center mb-16">
-        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Teile und herrsche</span>
-        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">Große Pläne bleiben überschaubar</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Statt einen unübersichtlichen Riesenplan zu jonglieren, zerlegen Sie ihn in kleine, klare Teilpläne &mdash; und Klacks hält automatisch alles zusammen.</p>
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Ix("divideConquer.eyebrow")</span>
+        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Ix("divideConquer.title")</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">@IxHtml("divideConquer.subtitle")</p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <div class="p-8 bg-surface-container-lowest rounded-2xl text-center">
             <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
                 <span class="material-symbols-outlined text-secondary text-3xl">dashboard</span>
             </div>
-            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">Schritt 1</p>
-            <h4 class="text-lg font-bold mb-3">Aufteilen</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Den großen Dienstplan in überschaubare Bereiche gliedern &mdash; pro Team, Abteilung oder Standort.</p>
+            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">@Ix("divideConquer.step1.label")</p>
+            <h4 class="text-lg font-bold mb-3">@Ix("divideConquer.step1.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("divideConquer.step1.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl text-center">
             <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
                 <span class="material-symbols-outlined text-secondary text-3xl">how_to_reg</span>
             </div>
-            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">Schritt 2</p>
-            <h4 class="text-lg font-bold mb-3">Einmal einplanen</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Wer in mehreren Bereichen arbeitet, wird nur einmal eingeplant &mdash; und erscheint überall automatisch richtig.</p>
+            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">@Ix("divideConquer.step2.label")</p>
+            <h4 class="text-lg font-bold mb-3">@Ix("divideConquer.step2.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("divideConquer.step2.text")</p>
         </div>
         <div class="p-8 bg-surface-container-lowest rounded-2xl text-center">
             <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
                 <span class="material-symbols-outlined text-secondary text-3xl">sync</span>
             </div>
-            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">Schritt 3</p>
-            <h4 class="text-lg font-bold mb-3">Automatisch synchron</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed">Eine Änderung ist sofort überall aktuell. Doppelbuchungen sind ausgeschlossen &mdash; ganz ohne Nachpflegen.</p>
+            <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-3">@Ix("divideConquer.step3.label")</p>
+            <h4 class="text-lg font-bold mb-3">@Ix("divideConquer.step3.title")</h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed">@IxHtml("divideConquer.step3.text")</p>
         </div>
     </div>
 </section>
 
 <!-- REGELN & KALENDER -->
-<section class="bg-surface-container-low py-32 no-line-rule" id="regeln">
+<section class="reveal bg-surface-container-low py-32 no-line-rule" id="regeln">
     <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
         <div>
-            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Regeln &amp; Kalender</span>
-            <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-6">Ein Kalender für jede Realität</h2>
-            <p class="text-on-surface-variant mb-8 leading-relaxed">Feiertage und Regeln sind in der Schweiz ein Flickenteppich &mdash; kantonal, teils kommunal verschieden. Klacks beherrscht genau das, woran einfache Tools scheitern.</p>
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@IxHtml("rulesCalendar.eyebrow")</span>
+            <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-6">@Ix("rulesCalendar.title")</h2>
+            <p class="text-on-surface-variant mb-8 leading-relaxed">@IxHtml("rulesCalendar.text")</p>
             <ul class="space-y-6 list-none p-0">
                 <li class="flex gap-4">
                     <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1 shrink-0">
                         <span class="material-symbols-outlined text-secondary text-xs">place</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Bis auf Gemeinde-Ebene</span>
-                        <span class="text-on-surface-variant text-sm">Land, Region (Kanton, Bundesland, Département) und Gemeinde &mdash; passend vorkonfiguriert.</span>
+                        <span class="font-bold block text-primary">@Ix("rulesCalendar.item1.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("rulesCalendar.item1.text")</span>
                     </div>
                 </li>
                 <li class="flex gap-4">
@@ -267,8 +274,8 @@
                         <span class="material-symbols-outlined text-secondary text-xs">layers</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Kalender mischen</span>
-                        <span class="text-on-surface-variant text-sm">Mehrere Länder gleichzeitig &mdash; etwa Genf und die USA für einen Betrieb mit Handelspartnern dort.</span>
+                        <span class="font-bold block text-primary">@Ix("rulesCalendar.item2.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("rulesCalendar.item2.text")</span>
                     </div>
                 </li>
                 <li class="flex gap-4">
@@ -276,8 +283,8 @@
                         <span class="material-symbols-outlined text-secondary text-xs">tune</span>
                     </div>
                     <div>
-                        <span class="font-bold block text-primary">Wirksam oder nur informativ</span>
-                        <span class="text-on-surface-variant text-sm">Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint.</span>
+                        <span class="font-bold block text-primary">@Ix("rulesCalendar.item3.title")</span>
+                        <span class="text-on-surface-variant text-sm">@IxHtml("rulesCalendar.item3.text")</span>
                     </div>
                 </li>
             </ul>
@@ -289,68 +296,68 @@
                     <div class="w-3 h-3 rounded-full bg-surface-container-high"></div>
                     <div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
                 </div>
-                <div class="text-[0.6875rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase">Feiertagsregeln</div>
+                <div class="text-[0.6875rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase">@Ix("rulesCalendar.imageLabel")</div>
             </div>
-            <img src="images/app-calendar-de.png" alt="Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell" class="w-full h-auto rounded-lg border border-surface-container-high" loading="lazy" />
-            <p class="text-xs text-on-surface-variant mt-3 px-1 mb-0">Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar.</p>
+            <img src="images/app-calendar-de.png" alt="@Ix("rulesCalendar.imageAlt")" class="w-full h-auto rounded-lg border border-surface-container-high" loading="lazy" />
+            <p class="text-xs text-on-surface-variant mt-3 px-1 mb-0">@IxHtml("rulesCalendar.imageCaption")</p>
         </div>
     </div>
 </section>
 
 <!-- BRANCHEN -->
-<section class="py-32 px-8 max-w-7xl mx-auto" id="branchen">
+<section class="reveal py-32 px-8 max-w-7xl mx-auto" id="branchen">
     <div class="text-center mb-20">
-        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">Eine Plattform, viele Branchen</span>
-        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">Gebaut für Schicht- und Einsatzbetriebe</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Wo immer Personal in Schichten, im Außeneinsatz und nach Qualifikation geplant wird &mdash; Klacks passt sich an, nicht umgekehrt.</p>
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Ix("industries.eyebrow")</span>
+        <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Ix("industries.title")</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">@IxHtml("industries.subtitle")</p>
     </div>
     <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-        <a href="/spitex" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("spitex")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">home_health</span>
-            <h4 class="text-base font-bold text-primary mb-2">Spitex</h4>
-            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">Touren, Qualifikationen und Pflege-Zuschläge &mdash; automatisch geplant.</p>
-            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">Mehr <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.spitex.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.spitex.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
         </a>
-        <a href="/spitaeler" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("spitaeler")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">local_hospital</span>
-            <h4 class="text-base font-bold text-primary mb-2">Spitäler</h4>
-            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">24/7-Abdeckung, Ruhezeiten und Datenschutz auf Klinik-Niveau.</p>
-            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">Mehr <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.spitaeler.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.spitaeler.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
         </a>
-        <a href="/security" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("security")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">security</span>
-            <h4 class="text-base font-bold text-primary mb-2">Security</h4>
-            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">Objekte, Rundgänge und Zertifikate zuverlässig abgedeckt.</p>
-            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">Mehr <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.security.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.security.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
         </a>
-        <a href="/hausdienste" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("hausdienste")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">cleaning_services</span>
-            <h4 class="text-base font-bold text-primary mb-2">Haus-/Putzdienste</h4>
-            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">Objekt-Routen und wechselnde Teams effizient eingeteilt.</p>
-            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">Mehr <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.hausdienste.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.hausdienste.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
         </a>
-        <a href="/logistik" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+        <a href="@IndustryHref("logistik")" class="p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">local_shipping</span>
-            <h4 class="text-base font-bold text-primary mb-2">Logistik</h4>
-            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">Touren, Lenkzeiten und grenzüberschreitende Einsätze im Griff.</p>
-            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">Mehr <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.logistik.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.logistik.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
         </a>
     </div>
 </section>
 
 <!-- SPRACHEN -->
-<section class="bg-surface-container-low py-24 no-line-rule">
+<section class="reveal bg-surface-container-low py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8">
         <div class="max-w-xl">
-            <h2 class="text-3xl font-black tracking-tight mb-4">Mehrsprachig von Grund auf</h2>
-            <p class="text-on-surface-variant">Vier Kernsprachen ab Werk &mdash; Deutsch, Französisch, Italienisch und Englisch. Weitere Sprachen lassen sich als Plugins ergänzen, samt Geodaten, Kalenderregeln und Begriffen für den KI-Assistenten.</p>
+            <h2 class="text-3xl font-black tracking-tight mb-4">@Ix("languages.title")</h2>
+            <p class="text-on-surface-variant">@IxHtml("languages.text")</p>
         </div>
         <div class="flex flex-wrap gap-3">
-            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">Deutsch</div>
-            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">Français</div>
-            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">Italiano</div>
-            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">English</div>
-            <div class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-bold text-on-surface-variant">+ weitere als Plugin</div>
+            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">@Ix("languages.badge.de")</div>
+            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">@Ix("languages.badge.fr")</div>
+            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">@Ix("languages.badge.it")</div>
+            <div class="px-4 py-2 bg-secondary/10 rounded-full text-sm font-bold text-secondary border border-secondary/20">@Ix("languages.badge.en")</div>
+            <div class="px-4 py-2 bg-surface-container-high rounded-full text-sm font-bold text-on-surface-variant">@Ix("languages.badge.more")</div>
         </div>
     </div>
 </section>
@@ -361,16 +368,29 @@
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
         </div>
-        <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">Sehen Sie Klacks in Aktion</h2>
-        <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">Wir zeigen Ihnen in einer persönlichen Demo, wie Klacks Ihren Dienstplan in Ihrer Branche übernimmt &mdash; mit Ihren Regeln, auf Ihrer Infrastruktur.</p>
+        <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@Ix("cta.title")</h2>
+        <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@IxHtml("cta.text")</p>
         <div class="relative z-10">
-            <ContactForm />
+            <ContactForm Culture="@ResolvedCulture" />
         </div>
         <div class="flex flex-wrap justify-center gap-6 relative z-10 mt-8">
             <a href="https://github.com/HeribertG/Klacks" target="_blank" class="text-white/60 hover:text-white text-sm font-semibold inline-flex items-center gap-2 no-underline transition-colors">
-                <span class="material-symbols-outlined text-base">code</span> Auf GitHub ansehen
+                <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
             </a>
         </div>
     </div>
 </section>
 
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+
+    private string Ix(string key) => ContentProvider.GetText(ResolvedCulture, "index", key);
+
+    private MarkupString IxHtml(string key) => (MarkupString)Ix(key);
+
+    private string Sh(string key) => ContentProvider.GetText(ResolvedCulture, "shared", key);
+
+    private string IndustryHref(string pageKey) => ResolvedCulture == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{ResolvedCulture}/{pageKey}";
+}
