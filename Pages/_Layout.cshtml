@@ -1,7 +1,10 @@
 @using Klacks.Marketing.Localization
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
 @{
     var firstPathSegment = Context.Request.Path.Value?.Trim('/').Split('/').FirstOrDefault() ?? string.Empty;
     var currentCulture = SupportedCultures.Resolve(firstPathSegment);
+    var baseUrl = (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
+    var ogUrl = $"{baseUrl}{Context.Request.Path.Value}";
 }
 <!DOCTYPE html>
 <html class="light" lang="@currentCulture.Code" dir="@(currentCulture.IsRtl ? "rtl" : "ltr")">
@@ -15,19 +18,18 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="de_CH" />
     <meta property="og:site_name" content="Klacks" />
-    <meta property="og:image" content="images/og-image.png" />
+    <meta property="og:url" content="@ogUrl" />
+    <meta property="og:image" content="@($"{baseUrl}/images/og-image.png")" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- TODO: og:url ergaenzen und og:image auf eine absolute URL umstellen, sobald die Produktions-Domain feststeht. -->
     <base href="/" />
     <link rel="icon" href="favicon.ico" sizes="32x32" />
     <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png" />
     <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="images/klacks-logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/rtl.css" rel="stylesheet" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />

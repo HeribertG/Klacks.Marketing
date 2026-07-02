@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "규칙 &amp; 캘린더",
   "nav.industries": "업종",
-  "nav.demoRequest": "데모 요청",
+  "nav.download": "다운로드",
+  "nav.tryNow": "지금 체험하기",
   "nav.github": "GitHub에서 보기",
   "nav.githubAriaLabel": "GitHub의 소스 코드",
   "nav.menuOpen": "메뉴 열기",
@@ -13,8 +14,14 @@
   "footer.tagline": "교대근무 &amp; 현장 조직을 위한 인력 배치 계획",
   "footer.github": "GitHub",
   "footer.contact": "문의",
+  "footer.imprint": "법적 고지",
   "footer.privacy": "개인정보 보호",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Playground 열기",
+  "cta.downloadButton": "무료로 다운로드",
+  "cta.demoLoginLabel": "데모 계정",
+  "cta.demoResetNote": "공개 테스트 인스턴스 &mdash; 모든 데이터는 매일 자동으로 초기화됩니다.",
 
   "routePlanning.eyebrow": "경로 계획",
   "routePlanning.title": "최적의 경로 — 자동으로",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "자전거",
   "routePlanning.transportWalk": "도보",
   "routePlanning.tourLabel": "오늘의 투어",
-  "routePlanning.mapCaption": "예시 이미지: Klacks가 출동 장소를 최단 투어로 연결합니다.",
-
-  "contactForm.nameLabel": "이름",
-  "contactForm.namePlaceholder": "이름을 입력하세요",
-  "contactForm.emailLabel": "이메일",
-  "contactForm.emailPlaceholder": "example@company.com",
-  "contactForm.messageLabel": "메시지",
-  "contactForm.messagePlaceholder": "Klacks에 대해 궁금한 점을 알려주세요",
-  "contactForm.submit": "데모 요청",
-  "contactForm.submitting": "전송 중…",
-  "contactForm.success": "감사합니다! 곧 연락드리겠습니다.",
-  "contactForm.rateLimited": "이미 여러 차례 요청을 보내셨습니다. 잠시 후 다시 시도하시거나 아래 이메일로 직접 문의해 주세요:",
-  "contactForm.error": "문제가 발생했습니다. 아래 이메일로 직접 문의해 주세요:",
-  "contactForm.mailFallbackLabel": "또는 이메일로 직접:"
+  "routePlanning.mapCaption": "예시 이미지: Klacks가 출동 장소를 최단 투어로 연결합니다."
 }

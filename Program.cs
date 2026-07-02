@@ -1,22 +1,14 @@
 using Klacks.Marketing.Localization;
-using Klacks.Marketing.Services.Contact;
-using Microsoft.AspNetCore.Components.Server.Circuits;
 using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddHttpContextAccessor();
-builder.Services.AddMemoryCache();
-builder.Services.AddSingleton<InMemoryContactRateLimiter>();
-builder.Services.AddScoped<ContactCircuitIpProvider>();
-builder.Services.AddScoped<CircuitHandler, ContactIpCircuitHandler>();
-builder.Services.AddScoped<IContactMailService, SmtpContactMailService>();
 builder.Services.AddSingleton<IPageContentProvider, JsonPageContentProvider>();
 
 // klacks-proxy sits on the same Docker network, not on loopback — trust its
-// forwarded headers so the contact-form rate limiter sees the real client IP.
+// forwarded headers so scheme-dependent middleware sees the original HTTPS request.
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
     options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;

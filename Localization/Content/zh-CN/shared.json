@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "规则 &amp; 日历",
   "nav.industries": "行业",
-  "nav.demoRequest": "申请演示",
+  "nav.download": "下载",
+  "nav.tryNow": "立即试用",
   "nav.github": "在 GitHub 上查看",
   "nav.githubAriaLabel": "GitHub 源代码",
   "nav.menuOpen": "打开菜单",
@@ -13,8 +14,14 @@
   "footer.tagline": "面向轮班 &amp; 外勤企业的人员排班管理",
   "footer.github": "GitHub",
   "footer.contact": "联系我们",
+  "footer.imprint": "法律声明",
   "footer.privacy": "隐私政策",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "打开 Playground",
+  "cta.downloadButton": "免费下载",
+  "cta.demoLoginLabel": "演示账号",
+  "cta.demoResetNote": "公共测试实例 &mdash; 所有数据每天自动重置。",
 
   "routePlanning.eyebrow": "路线规划",
   "routePlanning.title": "最佳路线 — 自动生成",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "骑行",
   "routePlanning.transportWalk": "步行",
   "routePlanning.tourLabel": "今日路线",
-  "routePlanning.mapCaption": "示意图:Klacks 将各服务地点连接为最短路线。",
-
-  "contactForm.nameLabel": "姓名",
-  "contactForm.namePlaceholder": "您的姓名",
-  "contactForm.emailLabel": "电子邮箱",
-  "contactForm.emailPlaceholder": "you@company.com",
-  "contactForm.messageLabel": "留言",
-  "contactForm.messagePlaceholder": "您想了解 Klacks 的哪些内容?",
-  "contactForm.submit": "申请演示",
-  "contactForm.submitting": "发送中…",
-  "contactForm.success": "谢谢!我们会尽快与您联系。",
-  "contactForm.rateLimited": "您已发送多次请求,请稍后再试,或直接发送邮件至",
-  "contactForm.error": "出现了一些问题,请直接发送邮件至",
-  "contactForm.mailFallbackLabel": "或直接发送邮件:"
+  "routePlanning.mapCaption": "示意图:Klacks 将各服务地点连接为最短路线。"
 }

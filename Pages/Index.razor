@@ -19,11 +19,11 @@
                 @IxHtml("hero.subtitle")
             </p>
             <div class="hero-enter hero-enter-4 flex flex-wrap gap-4 mb-10">
-                <a href="#kontakt" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">
-                    @Sh("nav.demoRequest") <span class="material-symbols-outlined icon-directional">arrow_forward</span>
+                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">
+                    @Sh("nav.tryNow") <span class="material-symbols-outlined icon-directional">arrow_forward</span>
                 </a>
-                <a href="https://github.com/HeribertG/Klacks" target="_blank" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2">
-                    <span class="material-symbols-outlined">code</span> @Sh("nav.github")
+                <a href="#download" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2">
+                    <span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")
                 </a>
             </div>
             <div class="hero-enter hero-enter-5 flex flex-wrap gap-x-6 gap-y-3">
@@ -362,21 +362,51 @@
     </div>
 </section>
 
-<!-- CTA / KONTAKT -->
-<section class="mx-8 my-24" id="kontakt">
-    <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-24 px-8 text-center relative overflow-hidden">
+<!-- GET STARTED / DOWNLOAD -->
+<section class="mx-8 my-24" id="download">
+    <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-24 px-8 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
         </div>
-        <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@Ix("cta.title")</h2>
-        <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@IxHtml("cta.text")</p>
-        <div class="relative z-10">
-            <ContactForm Culture="@ResolvedCulture" />
+        <div class="relative z-10 text-center mb-16">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-tertiary-fixed">@Ix("getStarted.eyebrow")</span>
+            <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mt-4 mb-6">@Ix("getStarted.title")</h2>
+            <p class="text-white/70 max-w-2xl mx-auto">@IxHtml("getStarted.subtitle")</p>
         </div>
-        <div class="flex flex-wrap justify-center gap-6 relative z-10 mt-8">
-            <a href="https://github.com/HeribertG/Klacks" target="_blank" class="text-white/60 hover:text-white text-sm font-semibold inline-flex items-center gap-2 no-underline transition-colors">
-                <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
-            </a>
+        <div class="relative z-10 grid md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
+            <div class="p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col">
+                <span class="material-symbols-outlined text-tertiary-fixed text-3xl mb-4">play_circle</span>
+                <h3 class="text-lg font-bold text-white mb-3">@Ix("getStarted.playground.title")</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-6">@IxHtml("getStarted.playground.text")</p>
+                <div class="bg-black/30 rounded-lg px-4 py-3 mb-3 font-mono text-xs text-white/80 break-all">
+                    <span class="block text-white/50 mb-1 font-sans font-semibold uppercase tracking-wide text-[0.625rem]">@Sh("cta.demoLoginLabel")</span>
+                    @ExternalLinks.DemoLoginEmail<br />@ExternalLinks.DemoLoginPassword
+                </div>
+                <p class="text-white/50 text-xs mb-6">@ShHtml("cta.demoResetNote")</p>
+                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center justify-center gap-2 mt-auto">
+                    @Ix("getStarted.playground.button") <span class="material-symbols-outlined text-base icon-directional">arrow_forward</span>
+                </a>
+            </div>
+            <div class="p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col">
+                <span class="material-symbols-outlined text-tertiary-fixed text-3xl mb-4">deployed_code</span>
+                <h3 class="text-lg font-bold text-white mb-3">@Ix("getStarted.download.title")</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-6">@IxHtml("getStarted.download.text")</p>
+                <div class="bg-black/30 rounded-lg px-4 py-3 mb-6 font-mono text-xs text-white/80 overflow-x-auto whitespace-nowrap" dir="ltr">
+                    curl -fsSLO @ExternalLinks.OnPremBundleUrl<br />
+                    unzip @ExternalLinks.OnPremBundleFileName &amp;&amp; cd onprem &amp;&amp; ./install.sh
+                </div>
+                <a href="@ExternalLinks.OnPremBundleUrl" class="border border-white/30 text-white px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center justify-center gap-2 mt-auto">
+                    <span class="material-symbols-outlined text-base">download</span> @Ix("getStarted.download.button")
+                </a>
+            </div>
+            <div class="p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col">
+                <span class="material-symbols-outlined text-tertiary-fixed text-3xl mb-4">code</span>
+                <h3 class="text-lg font-bold text-white mb-3">@Ix("getStarted.source.title")</h3>
+                <p class="text-white/70 text-sm leading-relaxed mb-6">@IxHtml("getStarted.source.text")</p>
+                <a href="@ExternalLinks.GithubUrl" target="_blank" class="border border-white/30 text-white px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center justify-center gap-2 mt-auto">
+                    <span class="material-symbols-outlined text-base">code</span> @Ix("getStarted.source.button")
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -391,6 +421,8 @@
     private MarkupString IxHtml(string key) => (MarkupString)Ix(key);
 
     private string Sh(string key) => ContentProvider.GetText(ResolvedCulture, "shared", key);
+
+    private MarkupString ShHtml(string key) => (MarkupString)Sh(key);
 
     private string IndustryHref(string pageKey) => ResolvedCulture == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{ResolvedCulture}/{pageKey}";
 }

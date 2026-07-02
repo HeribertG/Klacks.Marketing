@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Quy tắc &amp; Lịch",
   "nav.industries": "Ngành nghề",
-  "nav.demoRequest": "Yêu cầu demo",
+  "nav.download": "Tải xuống",
+  "nav.tryNow": "Dùng thử ngay",
   "nav.github": "Xem trên GitHub",
   "nav.githubAriaLabel": "Mã nguồn trên GitHub",
   "nav.menuOpen": "Mở menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Lập lịch nhân sự cho các doanh nghiệp làm việc theo ca &amp; hiện trường",
   "footer.github": "GitHub",
   "footer.contact": "Liên hệ",
+  "footer.imprint": "Thông tin pháp lý",
   "footer.privacy": "Bảo mật dữ liệu",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Mở Playground",
+  "cta.downloadButton": "Tải xuống miễn phí",
+  "cta.demoLoginLabel": "Tài khoản demo",
+  "cta.demoResetNote": "Phiên bản thử nghiệm công khai &mdash; toàn bộ dữ liệu được tự động đặt lại hằng ngày.",
 
   "routePlanning.eyebrow": "Lập lộ trình",
   "routePlanning.title": "Lộ trình tốt nhất — tự động",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Xe đạp",
   "routePlanning.transportWalk": "Đi bộ",
   "routePlanning.tourLabel": "Tuyến đường hôm nay",
-  "routePlanning.mapCaption": "Ví dụ minh họa: Klacks kết nối các địa điểm thành tuyến đường ngắn nhất.",
-
-  "contactForm.nameLabel": "Họ tên",
-  "contactForm.namePlaceholder": "Họ tên của bạn",
-  "contactForm.emailLabel": "Email",
-  "contactForm.emailPlaceholder": "email@congty.com",
-  "contactForm.messageLabel": "Nội dung",
-  "contactForm.messagePlaceholder": "Bạn muốn biết điều gì về Klacks?",
-  "contactForm.submit": "Yêu cầu demo",
-  "contactForm.submitting": "Đang gửi…",
-  "contactForm.success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
-  "contactForm.rateLimited": "Bạn đã gửi nhiều yêu cầu rồi. Vui lòng thử lại sau hoặc viết thư trực tiếp đến",
-  "contactForm.error": "Đã xảy ra sự cố. Vui lòng viết thư trực tiếp cho chúng tôi tại",
-  "contactForm.mailFallbackLabel": "Hoặc liên hệ trực tiếp qua email:"
+  "routePlanning.mapCaption": "Ví dụ minh họa: Klacks kết nối các địa điểm thành tuyến đường ngắn nhất."
 }

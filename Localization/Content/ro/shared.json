@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy IA",
   "nav.rules": "Reguli &amp; Calendar",
   "nav.industries": "Domenii",
-  "nav.demoRequest": "Solicitați o demonstrație",
+  "nav.download": "Descărcare",
+  "nav.tryNow": "Încercați acum",
   "nav.github": "Vezi pe GitHub",
   "nav.githubAriaLabel": "Cod sursă pe GitHub",
   "nav.menuOpen": "Deschide meniul",
@@ -13,8 +14,14 @@
   "footer.tagline": "Planificarea personalului pentru companii cu ture &amp; intervenții pe teren",
   "footer.github": "GitHub",
   "footer.contact": "Contact",
+  "footer.imprint": "Mențiuni legale",
   "footer.privacy": "Confidențialitate",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Deschideți Playground-ul",
+  "cta.downloadButton": "Descărcați gratuit",
+  "cta.demoLoginLabel": "Acces demo",
+  "cta.demoResetNote": "Instanță de test publică &mdash; toate datele sunt resetate automat în fiecare zi.",
 
   "routePlanning.eyebrow": "Planificarea traseului",
   "routePlanning.title": "Cel mai bun traseu — automat",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Bicicletă",
   "routePlanning.transportWalk": "pe jos",
   "routePlanning.tourLabel": "Traseul de azi",
-  "routePlanning.mapCaption": "Exemplu stilizat: Klacks unește locurile de intervenție în cel mai scurt traseu.",
-
-  "contactForm.nameLabel": "Nume",
-  "contactForm.namePlaceholder": "Numele dumneavoastră",
-  "contactForm.emailLabel": "E-mail",
-  "contactForm.emailPlaceholder": "dvs@firma.ch",
-  "contactForm.messageLabel": "Mesaj",
-  "contactForm.messagePlaceholder": "Ce ați dori să știți despre Klacks?",
-  "contactForm.submit": "Solicitați o demonstrație",
-  "contactForm.submitting": "Se trimite…",
-  "contactForm.success": "Mulțumim! Vă contactăm în curând.",
-  "contactForm.rateLimited": "Ați trimis deja mai multe solicitări. Vă rugăm încercați mai târziu sau scrieți-ne direct la",
-  "contactForm.error": "Ceva nu a funcționat corect. Vă rugăm să ne scrieți direct la",
-  "contactForm.mailFallbackLabel": "Sau direct prin e-mail:"
+  "routePlanning.mapCaption": "Exemplu stilizat: Klacks unește locurile de intervenție în cel mai scurt traseu."
 }

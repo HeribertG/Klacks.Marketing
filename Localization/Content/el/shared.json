@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Κανόνες &amp; Ημερολόγιο",
   "nav.industries": "Κλάδοι",
-  "nav.demoRequest": "Αίτημα demo",
+  "nav.download": "Λήψη",
+  "nav.tryNow": "Δοκιμάστε τώρα",
   "nav.github": "Δείτε στο GitHub",
   "nav.githubAriaLabel": "Πηγαίος κώδικας στο GitHub",
   "nav.menuOpen": "Άνοιγμα μενού",
@@ -13,8 +14,14 @@
   "footer.tagline": "Προγραμματισμός προσωπικού για επιχειρήσεις βαρδιών &amp; υπηρεσιών πεδίου",
   "footer.github": "GitHub",
   "footer.contact": "Επικοινωνία",
+  "footer.imprint": "Νομική σημείωση",
   "footer.privacy": "Απόρρητο",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Άνοιγμα του Playground",
+  "cta.downloadButton": "Δωρεάν λήψη",
+  "cta.demoLoginLabel": "Πρόσβαση demo",
+  "cta.demoResetNote": "Δημόσια δοκιμαστική εγκατάσταση &mdash; όλα τα δεδομένα επαναφέρονται αυτόματα καθημερινά.",
 
   "routePlanning.eyebrow": "Σχεδιασμός διαδρομών",
   "routePlanning.title": "Η καλύτερη διαδρομή — αυτόματα",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Ποδήλατο",
   "routePlanning.transportWalk": "Πεζή",
   "routePlanning.tourLabel": "Σημερινή διαδρομή",
-  "routePlanning.mapCaption": "Στυλιζαρισμένο παράδειγμα: το Klacks συνδέει τα σημεία επίσκεψης στη συντομότερη διαδρομή.",
-
-  "contactForm.nameLabel": "Όνομα",
-  "contactForm.namePlaceholder": "Το όνομά σας",
-  "contactForm.emailLabel": "E-Mail",
-  "contactForm.emailPlaceholder": "info@etairia.gr",
-  "contactForm.messageLabel": "Μήνυμα",
-  "contactForm.messagePlaceholder": "Τι θα θέλατε να μάθετε για το Klacks;",
-  "contactForm.submit": "Αίτημα demo",
-  "contactForm.submitting": "Αποστολή…",
-  "contactForm.success": "Ευχαριστούμε! Θα επικοινωνήσουμε μαζί σας σύντομα.",
-  "contactForm.rateLimited": "Έχετε ήδη στείλει αρκετά αιτήματα. Δοκιμάστε ξανά αργότερα ή γράψτε μας απευθείας στο",
-  "contactForm.error": "Κάτι πήγε στραβά. Γράψτε μας απευθείας στο",
-  "contactForm.mailFallbackLabel": "Ή απευθείας μέσω e-mail:"
+  "routePlanning.mapCaption": "Στυλιζαρισμένο παράδειγμα: το Klacks συνδέει τα σημεία επίσκεψης στη συντομότερη διαδρομή."
 }

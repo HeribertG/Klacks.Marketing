@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "ルール&amp;カレンダー",
   "nav.industries": "業界",
-  "nav.demoRequest": "デモを依頼",
+  "nav.download": "ダウンロード",
+  "nav.tryNow": "今すぐ試す",
   "nav.github": "GitHubで見る",
   "nav.githubAriaLabel": "GitHub上のソースコード",
   "nav.menuOpen": "メニューを開く",
@@ -13,8 +14,14 @@
   "footer.tagline": "交代勤務 &amp; 出動型事業者のためのシフト管理",
   "footer.github": "GitHub",
   "footer.contact": "お問い合わせ",
+  "footer.imprint": "法的表示",
   "footer.privacy": "プライバシーポリシー",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Playgroundを開く",
+  "cta.downloadButton": "無料でダウンロード",
+  "cta.demoLoginLabel": "デモアカウント",
+  "cta.demoResetNote": "公開テスト環境です&mdash;すべてのデータは毎日自動的にリセットされます。",
 
   "routePlanning.eyebrow": "ルートプランニング",
   "routePlanning.title": "最適なルートを、自動で。",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "自転車",
   "routePlanning.transportWalk": "徒歩",
   "routePlanning.tourLabel": "本日のルート",
-  "routePlanning.mapCaption": "イメージ例:Klacksが訪問先を結び、最短ルートを作成します。",
-
-  "contactForm.nameLabel": "お名前",
-  "contactForm.namePlaceholder": "お名前を入力",
-  "contactForm.emailLabel": "メールアドレス",
-  "contactForm.emailPlaceholder": "you@company.com",
-  "contactForm.messageLabel": "メッセージ",
-  "contactForm.messagePlaceholder": "Klacksについて知りたいことをご記入ください",
-  "contactForm.submit": "デモを依頼",
-  "contactForm.submitting": "送信中…",
-  "contactForm.success": "ありがとうございます。担当者より近日中にご連絡いたします。",
-  "contactForm.rateLimited": "すでに複数回お問い合わせをいただいております。しばらく経ってから再度お試しいただくか、下記アドレスまで直接ご連絡ください:",
-  "contactForm.error": "問題が発生しました。下記アドレスまで直接ご連絡ください:",
-  "contactForm.mailFallbackLabel": "またはメールで直接:"
+  "routePlanning.mapCaption": "イメージ例:Klacksが訪問先を結び、最短ルートを作成します。"
 }

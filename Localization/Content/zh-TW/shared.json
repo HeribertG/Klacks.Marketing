@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "規則 &amp; 行事曆",
   "nav.industries": "產業別",
-  "nav.demoRequest": "預約展示",
+  "nav.download": "下載",
+  "nav.tryNow": "立即試用",
   "nav.github": "在 GitHub 上查看",
   "nav.githubAriaLabel": "GitHub 原始碼",
   "nav.menuOpen": "開啟選單",
@@ -13,8 +14,14 @@
   "footer.tagline": "專為輪班 &amp; 外勤團隊打造的人力排班方案",
   "footer.github": "GitHub",
   "footer.contact": "聯絡我們",
+  "footer.imprint": "法律聲明",
   "footer.privacy": "隱私權政策",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "開啟 Playground",
+  "cta.downloadButton": "免費下載",
+  "cta.demoLoginLabel": "示範帳號",
+  "cta.demoResetNote": "公開測試環境 &mdash; 所有資料每天都會自動重設。",
 
   "routePlanning.eyebrow": "路線規劃",
   "routePlanning.title": "最佳路線——自動生成",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "騎車",
   "routePlanning.transportWalk": "步行",
   "routePlanning.tourLabel": "今日路線",
-  "routePlanning.mapCaption": "示意範例：Klacks 會將各服務地點串連成最短路線。",
-
-  "contactForm.nameLabel": "姓名",
-  "contactForm.namePlaceholder": "您的姓名",
-  "contactForm.emailLabel": "電子郵件",
-  "contactForm.emailPlaceholder": "you@company.com",
-  "contactForm.messageLabel": "訊息",
-  "contactForm.messagePlaceholder": "您想了解 Klacks 的哪些功能？",
-  "contactForm.submit": "預約展示",
-  "contactForm.submitting": "傳送中…",
-  "contactForm.success": "感謝您！我們將盡快與您聯繫。",
-  "contactForm.rateLimited": "您已送出多次申請，請稍後再試，或直接寫信至",
-  "contactForm.error": "發生錯誤，請直接寫信至",
-  "contactForm.mailFallbackLabel": "或直接透過電子郵件："
+  "routePlanning.mapCaption": "示意範例：Klacks 會將各服務地點串連成最短路線。"
 }

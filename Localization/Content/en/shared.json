@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Rules &amp; Calendar",
   "nav.industries": "Industries",
-  "nav.demoRequest": "Request a demo",
+  "nav.download": "Download",
+  "nav.tryNow": "Try it now",
   "nav.github": "View on GitHub",
   "nav.githubAriaLabel": "Source code on GitHub",
   "nav.menuOpen": "Open menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Workforce scheduling for shift- &amp; field-based operations",
   "footer.github": "GitHub",
   "footer.contact": "Contact",
+  "footer.imprint": "Legal Notice",
   "footer.privacy": "Privacy",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Open the Playground",
+  "cta.downloadButton": "Download for free",
+  "cta.demoLoginLabel": "Demo login",
+  "cta.demoResetNote": "Public test instance &mdash; all data is automatically reset every day.",
 
   "routePlanning.eyebrow": "Route Planning",
   "routePlanning.title": "The best route — automatically",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Bike",
   "routePlanning.transportWalk": "On foot",
   "routePlanning.tourLabel": "Today's route",
-  "routePlanning.mapCaption": "Stylized example: Klacks connects the service locations into the shortest route.",
-
-  "contactForm.nameLabel": "Name",
-  "contactForm.namePlaceholder": "Your name",
-  "contactForm.emailLabel": "Email",
-  "contactForm.emailPlaceholder": "you@company.com",
-  "contactForm.messageLabel": "Message",
-  "contactForm.messagePlaceholder": "What would you like to know about Klacks?",
-  "contactForm.submit": "Request a demo",
-  "contactForm.submitting": "Sending…",
-  "contactForm.success": "Thank you! We'll get back to you shortly.",
-  "contactForm.rateLimited": "You've already sent several requests. Please try again later or email us directly at",
-  "contactForm.error": "Something went wrong. Please email us directly at",
-  "contactForm.mailFallbackLabel": "Or by email directly:"
+  "routePlanning.mapCaption": "Stylized example: Klacks connects the service locations into the shortest route."
 }

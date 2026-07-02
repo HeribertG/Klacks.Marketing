@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy ذكاء اصطناعي",
   "nav.rules": "القواعد &amp; التقويم",
   "nav.industries": "القطاعات",
-  "nav.demoRequest": "طلب عرض تجريبي",
+  "nav.download": "التنزيل",
+  "nav.tryNow": "جرّبوه الآن",
   "nav.github": "عرض على GitHub",
   "nav.githubAriaLabel": "الشيفرة المصدرية على GitHub",
   "nav.menuOpen": "فتح القائمة",
@@ -13,8 +14,14 @@
   "footer.tagline": "تخطيط القوى العاملة للمنشآت ذات النوبات &amp; المهام الميدانية",
   "footer.github": "GitHub",
   "footer.contact": "التواصل",
+  "footer.imprint": "بيانات الناشر",
   "footer.privacy": "سياسة الخصوصية",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "فتح Playground",
+  "cta.downloadButton": "التنزيل مجاناً",
+  "cta.demoLoginLabel": "بيانات الدخول التجريبية",
+  "cta.demoResetNote": "نسخة اختبارية عامة &mdash; تُعاد جميع البيانات تلقائياً إلى حالتها الأصلية كل يوم.",
 
   "routePlanning.eyebrow": "تخطيط المسارات",
   "routePlanning.title": "أفضل مسار — تلقائياً",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "دراجة",
   "routePlanning.transportWalk": "سيراً على الأقدام",
   "routePlanning.tourLabel": "جولة اليوم",
-  "routePlanning.mapCaption": "مثال توضيحي: يربط Klacks مواقع التدخل في أقصر جولة ممكنة.",
-
-  "contactForm.nameLabel": "الاسم",
-  "contactForm.namePlaceholder": "اسمكم",
-  "contactForm.emailLabel": "البريد الإلكتروني",
-  "contactForm.emailPlaceholder": "بريدكم@شركتكم.ch",
-  "contactForm.messageLabel": "الرسالة",
-  "contactForm.messagePlaceholder": "ما الذي تودون معرفته عن Klacks؟",
-  "contactForm.submit": "طلب عرض تجريبي",
-  "contactForm.submitting": "جارٍ الإرسال…",
-  "contactForm.success": "شكراً لكم! سنتواصل معكم في أقرب وقت.",
-  "contactForm.rateLimited": "لقد أرسلتم عدة طلبات بالفعل. يُرجى المحاولة لاحقاً أو مراسلتنا مباشرة على",
-  "contactForm.error": "حدث خطأ ما. يُرجى مراسلتنا مباشرة على",
-  "contactForm.mailFallbackLabel": "أو مباشرة عبر البريد الإلكتروني:"
+  "routePlanning.mapCaption": "مثال توضيحي: يربط Klacks مواقع التدخل في أقصر جولة ممكنة."
 }

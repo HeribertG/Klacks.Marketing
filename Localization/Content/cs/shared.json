@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Pravidla &amp; kalendář",
   "nav.industries": "Odvětví",
-  "nav.demoRequest": "Vyžádat demo",
+  "nav.download": "Ke stažení",
+  "nav.tryNow": "Vyzkoušet hned",
   "nav.github": "Zobrazit na GitHubu",
   "nav.githubAriaLabel": "Zdrojový kód na GitHubu",
   "nav.menuOpen": "Otevřít menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Plánování personálu pro směnové provozy &amp; terénní služby",
   "footer.github": "GitHub",
   "footer.contact": "Kontakt",
+  "footer.imprint": "Impresum",
   "footer.privacy": "Ochrana osobních údajů",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Otevřít Playground",
+  "cta.downloadButton": "Stáhnout zdarma",
+  "cta.demoLoginLabel": "Přístup k demu",
+  "cta.demoResetNote": "Veřejná testovací instance &mdash; všechna data se denně automaticky resetují.",
 
   "routePlanning.eyebrow": "Plánování tras",
   "routePlanning.title": "Nejlepší trasa — automaticky",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Kolo",
   "routePlanning.transportWalk": "Pěšky",
   "routePlanning.tourLabel": "Dnešní trasa",
-  "routePlanning.mapCaption": "Stylizovaný příklad: Klacks propojí místa nasazení do nejkratší trasy.",
-
-  "contactForm.nameLabel": "Jméno",
-  "contactForm.namePlaceholder": "Vaše jméno",
-  "contactForm.emailLabel": "E-mail",
-  "contactForm.emailPlaceholder": "vase@firma.ch",
-  "contactForm.messageLabel": "Zpráva",
-  "contactForm.messagePlaceholder": "Co byste chtěli vědět o Klacks?",
-  "contactForm.submit": "Vyžádat demo",
-  "contactForm.submitting": "Odesílání…",
-  "contactForm.success": "Děkujeme! Brzy se vám ozveme.",
-  "contactForm.rateLimited": "Již jste odeslali několik žádostí. Zkuste to prosím později znovu, nebo nám napište přímo na",
-  "contactForm.error": "Něco se pokazilo. Napište nám prosím přímo na",
-  "contactForm.mailFallbackLabel": "Nebo přímo e-mailem:"
+  "routePlanning.mapCaption": "Stylizovaný příklad: Klacks propojí místa nasazení do nejkratší trasy."
 }

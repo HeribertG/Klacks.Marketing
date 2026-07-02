@@ -70,10 +70,6 @@ jobs:
             --network-alias klacks-marketing \
             -e ASPNETCORE_ENVIRONMENT=Production \
             -e ASPNETCORE_URLS=http://+:80 \
-            -e SMTP_HOST="${{ secrets.SMTP_HOST }}" \
-            -e SMTP_PORT="${{ secrets.SMTP_PORT }}" \
-            -e SMTP_USERNAME="${{ secrets.SMTP_USERNAME }}" \
-            -e SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" \
             --expose 80 \
             klacks-marketing
 

@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Zasady &amp; Kalendarz",
   "nav.industries": "Branże",
-  "nav.demoRequest": "Umów demo",
+  "nav.download": "Pobierz",
+  "nav.tryNow": "Wypróbuj teraz",
   "nav.github": "Zobacz na GitHub",
   "nav.githubAriaLabel": "Kod źródłowy na GitHub",
   "nav.menuOpen": "Otwórz menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Planowanie personelu dla firm zmianowych &amp; wyjazdowych",
   "footer.github": "GitHub",
   "footer.contact": "Kontakt",
+  "footer.imprint": "Nota prawna",
   "footer.privacy": "Prywatność",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Otwórz Playground",
+  "cta.downloadButton": "Pobierz bezpłatnie",
+  "cta.demoLoginLabel": "Dostęp demo",
+  "cta.demoResetNote": "Publiczna instancja testowa &mdash; wszystkie dane są codziennie automatycznie resetowane.",
 
   "routePlanning.eyebrow": "Planowanie tras",
   "routePlanning.title": "Najlepsza trasa — automatycznie",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Rower",
   "routePlanning.transportWalk": "Pieszo",
   "routePlanning.tourLabel": "Trasa na dziś",
-  "routePlanning.mapCaption": "Stylizowany przykład: Klacks łączy miejsca zleceń w najkrótszą trasę.",
-
-  "contactForm.nameLabel": "Imię i nazwisko",
-  "contactForm.namePlaceholder": "Imię i nazwisko",
-  "contactForm.emailLabel": "E-mail",
-  "contactForm.emailPlaceholder": "twoja@firma.pl",
-  "contactForm.messageLabel": "Wiadomość",
-  "contactForm.messagePlaceholder": "Co chcieliby Państwo wiedzieć o Klacks?",
-  "contactForm.submit": "Umów demo",
-  "contactForm.submitting": "Wysyłanie…",
-  "contactForm.success": "Dziękujemy! Skontaktujemy się z Państwem wkrótce.",
-  "contactForm.rateLimited": "Wysłali już Państwo kilka zapytań. Proszę spróbować ponownie później lub napisać bezpośrednio na",
-  "contactForm.error": "Coś poszło nie tak. Proszę napisać bezpośrednio na",
-  "contactForm.mailFallbackLabel": "Lub bezpośrednio przez e-mail:"
+  "routePlanning.mapCaption": "Stylizowany przykład: Klacks łączy miejsca zleceń w najkrótszą trasę."
 }

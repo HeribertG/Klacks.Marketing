@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy IA",
   "nav.rules": "Regole &amp; calendario",
   "nav.industries": "Settori",
-  "nav.demoRequest": "Richiedi una demo",
+  "nav.download": "Download",
+  "nav.tryNow": "Prova subito",
   "nav.github": "Vedi su GitHub",
   "nav.githubAriaLabel": "Codice sorgente su GitHub",
   "nav.menuOpen": "Apri il menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Pianificazione del personale per aziende a turni &amp; interventi",
   "footer.github": "GitHub",
   "footer.contact": "Contatto",
+  "footer.imprint": "Impressum",
   "footer.privacy": "Protezione dei dati",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Apri il Playground",
+  "cta.downloadButton": "Scarica gratuitamente",
+  "cta.demoLoginLabel": "Accesso demo",
+  "cta.demoResetNote": "Istanza di prova pubblica &mdash; tutti i dati vengono ripristinati automaticamente ogni giorno.",
 
   "routePlanning.eyebrow": "Pianificazione dei percorsi",
   "routePlanning.title": "Il percorso migliore — in automatico",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Bicicletta",
   "routePlanning.transportWalk": "A piedi",
   "routePlanning.tourLabel": "Giro di oggi",
-  "routePlanning.mapCaption": "Esempio stilizzato: Klacks collega i luoghi d'intervento nel giro più breve.",
-
-  "contactForm.nameLabel": "Nome",
-  "contactForm.namePlaceholder": "Il Suo nome",
-  "contactForm.emailLabel": "E-mail",
-  "contactForm.emailPlaceholder": "sua@azienda.ch",
-  "contactForm.messageLabel": "Messaggio",
-  "contactForm.messagePlaceholder": "Cosa desidera sapere su Klacks?",
-  "contactForm.submit": "Richiedi una demo",
-  "contactForm.submitting": "Invio in corso…",
-  "contactForm.success": "Grazie! Le risponderemo a breve.",
-  "contactForm.rateLimited": "Ha già inviato diverse richieste. La preghiamo di riprovare più tardi oppure di scrivere direttamente a",
-  "contactForm.error": "Si è verificato un errore. La preghiamo di scriverci direttamente a",
-  "contactForm.mailFallbackLabel": "Oppure direttamente via e-mail:"
+  "routePlanning.mapCaption": "Esempio stilizzato: Klacks collega i luoghi d'intervento nel giro più breve."
 }

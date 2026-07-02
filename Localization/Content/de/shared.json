@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy KI",
   "nav.rules": "Regeln &amp; Kalender",
   "nav.industries": "Branchen",
-  "nav.demoRequest": "Demo anfragen",
+  "nav.download": "Download",
+  "nav.tryNow": "Jetzt ausprobieren",
   "nav.github": "Auf GitHub ansehen",
   "nav.githubAriaLabel": "Quellcode auf GitHub",
   "nav.menuOpen": "Menü öffnen",
@@ -13,8 +14,14 @@
   "footer.tagline": "Personaleinsatzplanung für Schicht- &amp; Einsatzbetriebe",
   "footer.github": "GitHub",
   "footer.contact": "Kontakt",
+  "footer.imprint": "Impressum",
   "footer.privacy": "Datenschutz",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Playground öffnen",
+  "cta.downloadButton": "Kostenlos herunterladen",
+  "cta.demoLoginLabel": "Demo-Zugang",
+  "cta.demoResetNote": "Öffentliche Test-Instanz &mdash; alle Daten werden täglich automatisch zurückgesetzt.",
 
   "routePlanning.eyebrow": "Routenplanung",
   "routePlanning.title": "Die beste Route — automatisch",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Velo",
   "routePlanning.transportWalk": "zu Fuss",
   "routePlanning.tourLabel": "Tour heute",
-  "routePlanning.mapCaption": "Stilisiertes Beispiel: Klacks verbindet die Einsatzorte zur kürzesten Tour.",
-
-  "contactForm.nameLabel": "Name",
-  "contactForm.namePlaceholder": "Ihr Name",
-  "contactForm.emailLabel": "E-Mail",
-  "contactForm.emailPlaceholder": "ihre@firma.ch",
-  "contactForm.messageLabel": "Nachricht",
-  "contactForm.messagePlaceholder": "Was möchten Sie über Klacks wissen?",
-  "contactForm.submit": "Demo anfragen",
-  "contactForm.submitting": "Wird gesendet…",
-  "contactForm.success": "Danke! Wir melden uns in Kürze bei Ihnen.",
-  "contactForm.rateLimited": "Sie haben bereits mehrere Anfragen gesendet. Bitte versuchen Sie es später erneut oder schreiben Sie direkt an",
-  "contactForm.error": "Da ist etwas schiefgelaufen. Bitte schreiben Sie uns direkt an",
-  "contactForm.mailFallbackLabel": "Oder direkt per E-Mail:"
+  "routePlanning.mapCaption": "Stilisiertes Beispiel: Klacks verbindet die Einsatzorte zur kürzesten Tour."
 }

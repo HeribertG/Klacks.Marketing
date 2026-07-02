@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy AI",
   "nav.rules": "Regler &amp; kalender",
   "nav.industries": "Branscher",
-  "nav.demoRequest": "Boka demo",
+  "nav.download": "Ladda ner",
+  "nav.tryNow": "Prova nu",
   "nav.github": "Visa på GitHub",
   "nav.githubAriaLabel": "Källkod på GitHub",
   "nav.menuOpen": "Öppna meny",
@@ -13,8 +14,14 @@
   "footer.tagline": "Bemanningsplanering för skift- &amp; insatsverksamheter",
   "footer.github": "GitHub",
   "footer.contact": "Kontakt",
+  "footer.imprint": "Juridisk information",
   "footer.privacy": "Integritetspolicy",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Öppna Playground",
+  "cta.downloadButton": "Ladda ner gratis",
+  "cta.demoLoginLabel": "Demoinloggning",
+  "cta.demoResetNote": "Offentlig testinstans &mdash; alla data återställs automatiskt varje dag.",
 
   "routePlanning.eyebrow": "Ruttplanering",
   "routePlanning.title": "Den bästa rutten — automatiskt",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Cykel",
   "routePlanning.transportWalk": "Till fots",
   "routePlanning.tourLabel": "Dagens rutt",
-  "routePlanning.mapCaption": "Stiliserat exempel: Klacks knyter samman insatsplatserna till den kortaste rutten.",
-
-  "contactForm.nameLabel": "Namn",
-  "contactForm.namePlaceholder": "Ditt namn",
-  "contactForm.emailLabel": "E-post",
-  "contactForm.emailPlaceholder": "din@företag.se",
-  "contactForm.messageLabel": "Meddelande",
-  "contactForm.messagePlaceholder": "Vad vill du veta om Klacks?",
-  "contactForm.submit": "Boka demo",
-  "contactForm.submitting": "Skickar…",
-  "contactForm.success": "Tack! Vi hör av oss inom kort.",
-  "contactForm.rateLimited": "Du har redan skickat flera förfrågningar. Försök igen senare eller skriv direkt till",
-  "contactForm.error": "Något gick fel. Skriv gärna direkt till oss på",
-  "contactForm.mailFallbackLabel": "Eller direkt via e-post:"
+  "routePlanning.mapCaption": "Stiliserat exempel: Klacks knyter samman insatsplatserna till den kortaste rutten."
 }

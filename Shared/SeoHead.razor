@@ -13,7 +13,7 @@
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
-    // No permanent domain yet — points at the current staging deployment, update once one exists.
+    // The marketing site has no dedicated domain yet — served on the shared domain via port 7643.
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
 
     private string AbsoluteUrl(SupportedCulture culture)

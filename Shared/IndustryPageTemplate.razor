@@ -18,7 +18,7 @@
                 @((MarkupString)Content.Hero.Subtitle)
             </p>
             <div class="hero-enter hero-enter-4 flex flex-wrap gap-4">
-                <a href="@CtaHref" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">@Sh("nav.demoRequest") <span class="material-symbols-outlined icon-directional">arrow_forward</span></a>
+                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">@Sh("nav.tryNow") <span class="material-symbols-outlined icon-directional">arrow_forward</span></a>
                 <a href="@HomeHref" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2"><span class="material-symbols-outlined icon-directional">arrow_back</span> @Sh("nav.backToIndustries")</a>
             </div>
         </div>
@@ -99,7 +99,10 @@
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"><div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div></div>
         <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@Content.Cta.Title</h2>
         <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@((MarkupString)Content.Cta.Text)</p>
-        <div class="flex flex-wrap justify-center gap-6 relative z-10"><a href="@CtaHref" class="bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform no-underline flex items-center gap-3"><span class="material-symbols-outlined">calendar_month</span> @Sh("nav.demoRequest")</a></div>
+        <div class="flex flex-wrap justify-center gap-6 relative z-10">
+            <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform no-underline flex items-center gap-3"><span class="material-symbols-outlined">play_circle</span> @Sh("cta.tryButton")</a>
+            <a href="@DownloadHref" class="border border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")</a>
+        </div>
     </div>
 </section>
 
@@ -110,7 +113,7 @@
     private IndustryPageContent Content => ContentProvider.GetIndustryPage(Culture, PageKey);
 
     private string HomeHref => Culture == SupportedCultures.DefaultCode ? "/" : $"/{Culture}";
-    private string CtaHref => $"{HomeHref}#kontakt";
+    private string DownloadHref => $"{HomeHref}#download";
 
     private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
 }

@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy KI",
   "nav.rules": "Regler &amp; kalender",
   "nav.industries": "Bransjer",
-  "nav.demoRequest": "Be om demo",
+  "nav.download": "Nedlasting",
+  "nav.tryNow": "Prøv nå",
   "nav.github": "Se på GitHub",
   "nav.githubAriaLabel": "Kildekode på GitHub",
   "nav.menuOpen": "Åpne meny",
@@ -13,8 +14,14 @@
   "footer.tagline": "Bemanningsplanlegging for turnus- &amp; oppdragsvirksomheter",
   "footer.github": "GitHub",
   "footer.contact": "Kontakt",
+  "footer.imprint": "Kolofon",
   "footer.privacy": "Personvern",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Åpne Playground",
+  "cta.downloadButton": "Last ned gratis",
+  "cta.demoLoginLabel": "Demo-innlogging",
+  "cta.demoResetNote": "Offentlig testinstans &mdash; alle data tilbakestilles automatisk hver dag.",
 
   "routePlanning.eyebrow": "Ruteplanlegging",
   "routePlanning.title": "Den beste ruten — automatisk",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Sykkel",
   "routePlanning.transportWalk": "Til fots",
   "routePlanning.tourLabel": "Dagens rute",
-  "routePlanning.mapCaption": "Stilisert eksempel: Klacks kobler sammen oppdragsstedene til den korteste ruten.",
-
-  "contactForm.nameLabel": "Navn",
-  "contactForm.namePlaceholder": "Ditt navn",
-  "contactForm.emailLabel": "E-post",
-  "contactForm.emailPlaceholder": "din@bedrift.no",
-  "contactForm.messageLabel": "Melding",
-  "contactForm.messagePlaceholder": "Hva vil du vite om Klacks?",
-  "contactForm.submit": "Be om demo",
-  "contactForm.submitting": "Sender…",
-  "contactForm.success": "Takk! Vi tar kontakt med deg snart.",
-  "contactForm.rateLimited": "Du har allerede sendt flere forespørsler. Prøv igjen senere, eller skriv direkte til",
-  "contactForm.error": "Noe gikk galt. Skriv direkte til oss på",
-  "contactForm.mailFallbackLabel": "Eller direkte per e-post:"
+  "routePlanning.mapCaption": "Stilisert eksempel: Klacks kobler sammen oppdragsstedene til den korteste ruten."
 }

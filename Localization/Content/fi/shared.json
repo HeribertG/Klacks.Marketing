@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy-tekoäly",
   "nav.rules": "Säännöt &amp; kalenteri",
   "nav.industries": "Toimialat",
-  "nav.demoRequest": "Pyydä demo",
+  "nav.download": "Lataa",
+  "nav.tryNow": "Kokeile heti",
   "nav.github": "Katso GitHubissa",
   "nav.githubAriaLabel": "Lähdekoodi GitHubissa",
   "nav.menuOpen": "Avaa valikko",
@@ -13,8 +14,14 @@
   "footer.tagline": "Henkilöstön vuorosuunnittelu vuoro- &amp; kenttätyöyrityksille",
   "footer.github": "GitHub",
   "footer.contact": "Yhteystiedot",
+  "footer.imprint": "Julkaisutiedot",
   "footer.privacy": "Tietosuoja",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Avaa Playground",
+  "cta.downloadButton": "Lataa maksutta",
+  "cta.demoLoginLabel": "Demotunnukset",
+  "cta.demoResetNote": "Julkinen testi-instanssi &mdash; kaikki tiedot nollataan automaattisesti joka päivä.",
 
   "routePlanning.eyebrow": "Reittisuunnittelu",
   "routePlanning.title": "Paras reitti — automaattisesti",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Pyörä",
   "routePlanning.transportWalk": "Kävellen",
   "routePlanning.tourLabel": "Tämän päivän reitti",
-  "routePlanning.mapCaption": "Tyylitelty esimerkki: Klacks yhdistää käyntipaikat lyhyimmäksi reitiksi.",
-
-  "contactForm.nameLabel": "Nimi",
-  "contactForm.namePlaceholder": "Nimenne",
-  "contactForm.emailLabel": "Sähköposti",
-  "contactForm.emailPlaceholder": "nimi@yritys.fi",
-  "contactForm.messageLabel": "Viesti",
-  "contactForm.messagePlaceholder": "Mitä haluaisitte tietää Klacksista?",
-  "contactForm.submit": "Pyydä demo",
-  "contactForm.submitting": "Lähetetään…",
-  "contactForm.success": "Kiitos! Otamme teihin pian yhteyttä.",
-  "contactForm.rateLimited": "Olette jo lähettäneet useita pyyntöjä. Yrittäkää myöhemmin uudelleen tai kirjoittakaa suoraan osoitteeseen",
-  "contactForm.error": "Jotain meni pieleen. Kirjoittakaa meille suoraan osoitteeseen",
-  "contactForm.mailFallbackLabel": "Tai suoraan sähköpostitse:"
+  "routePlanning.mapCaption": "Tyylitelty esimerkki: Klacks yhdistää käyntipaikat lyhyimmäksi reitiksi."
 }

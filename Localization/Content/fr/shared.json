@@ -3,7 +3,8 @@
   "nav.klacksy": "Klacksy IA",
   "nav.rules": "Règles &amp; calendrier",
   "nav.industries": "Secteurs",
-  "nav.demoRequest": "Demander une démo",
+  "nav.download": "Téléchargement",
+  "nav.tryNow": "Essayer maintenant",
   "nav.github": "Voir sur GitHub",
   "nav.githubAriaLabel": "Code source sur GitHub",
   "nav.menuOpen": "Ouvrir le menu",
@@ -13,8 +14,14 @@
   "footer.tagline": "Planification du personnel pour les entreprises à équipes &amp; interventions",
   "footer.github": "GitHub",
   "footer.contact": "Contact",
+  "footer.imprint": "Mentions légales",
   "footer.privacy": "Protection des données",
   "footer.copyright": "&copy; 2026 Klacks",
+
+  "cta.tryButton": "Ouvrir le Playground",
+  "cta.downloadButton": "Télécharger gratuitement",
+  "cta.demoLoginLabel": "Accès démo",
+  "cta.demoResetNote": "Instance de test publique &mdash; toutes les données sont automatiquement réinitialisées chaque jour.",
 
   "routePlanning.eyebrow": "Planification des tournées",
   "routePlanning.title": "Le meilleur itinéraire — automatiquement",
@@ -29,18 +36,5 @@
   "routePlanning.transportBike": "Vélo",
   "routePlanning.transportWalk": "À pied",
   "routePlanning.tourLabel": "Tournée du jour",
-  "routePlanning.mapCaption": "Exemple stylisé : Klacks relie les lieux d'intervention pour former la tournée la plus courte.",
-
-  "contactForm.nameLabel": "Nom",
-  "contactForm.namePlaceholder": "Votre nom",
-  "contactForm.emailLabel": "E-mail",
-  "contactForm.emailPlaceholder": "votre@entreprise.ch",
-  "contactForm.messageLabel": "Message",
-  "contactForm.messagePlaceholder": "Que souhaitez-vous savoir sur Klacks ?",
-  "contactForm.submit": "Demander une démo",
-  "contactForm.submitting": "Envoi en cours…",
-  "contactForm.success": "Merci ! Nous vous recontactons sous peu.",
-  "contactForm.rateLimited": "Vous avez déjà envoyé plusieurs demandes. Veuillez réessayer plus tard ou écrivez-nous directement à",
-  "contactForm.error": "Une erreur s'est produite. Veuillez nous écrire directement à",
-  "contactForm.mailFallbackLabel": "Ou directement par e-mail :"
+  "routePlanning.mapCaption": "Exemple stylisé : Klacks relie les lieux d'intervention pour former la tournée la plus courte."
 }
