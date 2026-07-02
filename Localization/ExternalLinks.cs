@@ -5,7 +5,7 @@ namespace Klacks.Marketing.Localization;
 /// </summary>
 public static class ExternalLinks
 {
-    public const string PlaygroundUrl = "https://klacks-software.ch";
+    public const string PlaygroundUrl = "https://klacks-software.ch:7643";
     public const string GithubUrl = "https://github.com/HeribertG/Klacks.Api";
     public const string OnPremBundleFileName = "klacks-onprem.zip";
     public const string OnPremBundleUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + OnPremBundleFileName;
