@@ -12,4 +12,5 @@ public static class ExternalLinks
     public const string DemoLoginEmail = "admin@test.com";
     public const string DemoLoginPassword = "P@ssw0rt1";
     public const string ContactEmail = "hgasparoli@hotmail.com";
+    public const string DiscordInviteUrl = "https://discord.gg/xxjaBRFwP";
 }
