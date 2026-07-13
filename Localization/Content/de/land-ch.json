@@ -13,21 +13,60 @@
     "eyebrow": "Der Alltag in Spital &amp; Spitex",
     "title": "ArG, Pikett und das kommende BGAP",
     "items": [
-      { "icon": "hourglass_top", "title": "BGAP in der Pipeline", "text": "Die Umsetzung der Pflegeinitiative (BGAP) soll künftig auch Dienstplan- und Pikett-Ankündigung regeln &mdash; das Gesetz ist noch nicht in Kraft, wer heute schon sauber plant, ist beim Inkrafttreten vorbereitet." },
-      { "icon": "gavel", "title": "ArG-Nachtzuschlag korrekt berechnen", "text": "Regelmässige Nachtarbeit löst nach Art. 17b ArG eine Zeitgutschrift von 10% aus &mdash; von Hand fehleranfällig." },
-      { "icon": "event_repeat", "title": "Sonntagsruhe richtig ausgleichen", "text": "Bei Sonntagseinsätzen über 5 Stunden ist ein 24-Stunden-Ersatzruhetag in der Vor- oder Folgewoche fällig (Art. 20 ArG)." }
+      {
+        "icon": "hourglass_top",
+        "title": "BGAP in der Pipeline",
+        "text": "Die Umsetzung der Pflegeinitiative (BGAP) soll künftig auch Dienstplan- und Pikett-Ankündigung regeln &mdash; das Gesetz ist noch nicht in Kraft, wer heute schon sauber plant, ist beim Inkrafttreten vorbereitet."
+      },
+      {
+        "icon": "gavel",
+        "title": "ArG-Nachtzuschlag korrekt berechnen",
+        "text": "Regelmässige Nachtarbeit löst nach Art. 17b ArG eine Zeitgutschrift von 10% aus &mdash; von Hand fehleranfällig."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Sonntagsruhe richtig ausgleichen",
+        "text": "Bei Sonntagseinsätzen über 5 Stunden ist ein 24-Stunden-Ersatzruhetag in der Vor- oder Folgewoche fällig (Art. 20 ArG)."
+      }
     ]
   },
   "solutions": {
     "title": "Wie Klacks Schweizer Betriebe entlastet",
     "subtitle": "ArG-konform heute, vorbereitet auf das kommende BGAP.",
     "items": [
-      { "icon": "gavel", "title": "Art. 17b-Zuschlag automatisch", "text": "Klacks berechnet die 10%-Zeitgutschrift für regelmässige Nachtarbeit automatisch &mdash; korrekt nach Art. 17b ArG." },
-      { "icon": "event_repeat", "title": "Sonntagsruhe-Ausgleich geplant", "text": "Der Autofill-Wizard plant den gesetzlichen Ersatzruhetag bei Sonntagseinsätzen über 5 Stunden automatisch mit ein." },
-      { "icon": "calendar_month", "title": "Vorausschauende Dienst- &amp; Pikettplanung", "text": "Klacks plant Dienst- und Pikettpläne mit Vorlauf &mdash; die Grundlage, um spätere BGAP-Ankündigungsfristen ohne Umbau zu erfüllen." },
-      { "icon": "groups", "title": "Spitex: Touren &amp; geteilte Dienste", "text": "Split-Shifts und Fahrzeiten zwischen Klient:innen werden automatisch mitgeplant." },
-      { "icon": "shield_lock", "title": "On-Premise: Datenhoheit in der Schweiz", "text": "Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; auch für die KI-Funktionen." }
+      {
+        "icon": "gavel",
+        "title": "Art. 17b-Zuschlag automatisch",
+        "text": "Klacks berechnet die 10%-Zeitgutschrift für regelmässige Nachtarbeit automatisch &mdash; korrekt nach Art. 17b ArG."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Sonntagsruhe-Ausgleich geplant",
+        "text": "Der Autofill-Wizard plant den gesetzlichen Ersatzruhetag bei Sonntagseinsätzen über 5 Stunden automatisch mit ein."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Vorausschauende Dienst- &amp; Pikettplanung",
+        "text": "Klacks plant Dienst- und Pikettpläne mit Vorlauf &mdash; die Grundlage, um spätere BGAP-Ankündigungsfristen ohne Umbau zu erfüllen."
+      },
+      {
+        "icon": "groups",
+        "title": "Spitex: Touren &amp; geteilte Dienste",
+        "text": "Split-Shifts und Fahrzeiten zwischen Klient:innen werden automatisch mitgeplant."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Datenhoheit in der Schweiz",
+        "text": "Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; auch für die KI-Funktionen."
+      }
     ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",

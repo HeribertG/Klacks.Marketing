@@ -13,22 +13,65 @@
     "eyebrow": "Der Alltag in Klinik &amp; Pflegedienst",
     "title": "Ausfälle, Recht und Fachkräftemangel",
     "items": [
-      { "icon": "phone_disabled", "title": "Der Einspring-Wahnsinn", "text": "Fällt eine Kraft kurzfristig aus, verbringen Leitungen Stunden am Telefon, um Kolleg:innen aus der Freizeit zu holen &mdash; das zerstört Betriebsklima und erhöht die Fluktuation." },
-      { "icon": "gavel", "title": "PpUGV &amp; ArbZG im Blick behalten", "text": "Pflegepersonaluntergrenzen und die gesetzliche 11-Stunden-Ruhezeit von Hand zu überwachen ist bei wechselnden Diensten praktisch unmöglich." },
-      { "icon": "trending_down", "title": "Fachkräftemangel als Dauerzustand", "text": "Über 369.000 unbesetzte Stellen (2025, OECD) treffen Pflege und Gesundheitswesen besonders hart &mdash; jede Planungsstunde zählt." }
+      {
+        "icon": "phone_disabled",
+        "title": "Der Einspring-Wahnsinn",
+        "text": "Fällt eine Kraft kurzfristig aus, verbringen Leitungen Stunden am Telefon, um Kolleg:innen aus der Freizeit zu holen &mdash; das zerstört Betriebsklima und erhöht die Fluktuation."
+      },
+      {
+        "icon": "gavel",
+        "title": "PpUGV &amp; ArbZG im Blick behalten",
+        "text": "Pflegepersonaluntergrenzen und die gesetzliche 11-Stunden-Ruhezeit von Hand zu überwachen ist bei wechselnden Diensten praktisch unmöglich."
+      },
+      {
+        "icon": "trending_down",
+        "title": "Fachkräftemangel als Dauerzustand",
+        "text": "Über 369.000 unbesetzte Stellen (2025, OECD) treffen Pflege und Gesundheitswesen besonders hart &mdash; jede Planungsstunde zählt."
+      }
     ]
   },
   "solutions": {
     "title": "Die Klacks Recovery-Engine für den deutschen Markt",
     "subtitle": "Vom automatischen Springerpool bis zur PpUGV-Kontrolle &mdash; rechtssicher und in Sekunden.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine bei Ausfall", "text": "Fällt eine Schicht aus, berechnet Klacks sofort die besten, rechtssicheren Ersatzoptionen aus dem Springerpool &mdash; ohne Telefonrunde." },
-      { "icon": "gavel", "title": "ArbZG-Ruhezeiten automatisch geprüft", "text": "Die 11-stündige Ruhezeit zwischen Diensten wird in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst." },
-      { "icon": "shield_lock", "title": "PpUGV-Mindestbesetzung im Blick", "text": "Klacks zeigt pro Schicht, ob die Pflegepersonaluntergrenze eingehalten ist &mdash; bevor es zur Meldung oder Sanktion kommt." },
-      { "icon": "favorite", "title": "Wunschdienste berücksichtigt", "text": "Die Autofill-Engine respektiert hinterlegte Mitarbeiterwünsche, damit das Team nicht unnötig verbrennt." },
-      { "icon": "receipt_long", "title": "DATEV-Export", "text": "Bewegungsdaten und Buchungsstapel gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung." },
-      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Personal- und Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." }
+      {
+        "icon": "bolt",
+        "title": "Recovery-Engine bei Ausfall",
+        "text": "Fällt eine Schicht aus, berechnet Klacks sofort die besten, rechtssicheren Ersatzoptionen aus dem Springerpool &mdash; ohne Telefonrunde."
+      },
+      {
+        "icon": "gavel",
+        "title": "ArbZG-Ruhezeiten automatisch geprüft",
+        "text": "Die 11-stündige Ruhezeit zwischen Diensten wird in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "PpUGV-Mindestbesetzung im Blick",
+        "text": "Klacks zeigt pro Schicht, ob die Pflegepersonaluntergrenze eingehalten ist &mdash; bevor es zur Meldung oder Sanktion kommt."
+      },
+      {
+        "icon": "favorite",
+        "title": "Wunschdienste berücksichtigt",
+        "text": "Die Autofill-Engine respektiert hinterlegte Mitarbeiterwünsche, damit das Team nicht unnötig verbrennt."
+      },
+      {
+        "icon": "receipt_long",
+        "title": "DATEV-Export",
+        "text": "Bewegungsdaten und Buchungsstapel gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben im Haus",
+        "text": "Personal- und Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+      }
     ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",

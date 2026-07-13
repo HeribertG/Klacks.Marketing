@@ -14,21 +14,60 @@
     "eyebrow": "Scheduling in Israel's operating reality",
     "title": "Miluim gaps and Shabbat rules",
     "items": [
-      { "icon": "groups", "title": "Reserve call-ups without warning", "text": "Miluim orders can pull staff out with almost no notice, tearing holes into security, hospital and staffing rosters." },
-      { "icon": "block", "title": "Shabbat work is restricted by default", "text": "Under the Hours of Work and Rest Law, Shabbat employment needs a state permit, and employees can refuse it on religious grounds &mdash; get the rota wrong and you're both understaffed and non-compliant." },
-      { "icon": "payments", "title": "Layered overtime &amp; rest-day pay", "text": "Standard overtime (125%/150%) combines with the 50% rest-day premium when work falls on Shabbat &mdash; manual payroll prep is error-prone." }
+      {
+        "icon": "groups",
+        "title": "Reserve call-ups without warning",
+        "text": "Miluim orders can pull staff out with almost no notice, tearing holes into security, hospital and staffing rosters."
+      },
+      {
+        "icon": "block",
+        "title": "Shabbat work is restricted by default",
+        "text": "Under the Hours of Work and Rest Law, Shabbat employment needs a state permit, and employees can refuse it on religious grounds &mdash; get the rota wrong and you're both understaffed and non-compliant."
+      },
+      {
+        "icon": "payments",
+        "title": "Layered overtime &amp; rest-day pay",
+        "text": "Standard overtime (125%/150%) combines with the 50% rest-day premium when work falls on Shabbat &mdash; manual payroll prep is error-prone."
+      }
     ]
   },
   "solutions": {
     "title": "How Klacks handles Israel's planning reality",
     "subtitle": "Crisis-resilient rostering, not a generic 24/7 planner.",
     "items": [
-      { "icon": "bolt", "title": "Instant replacement on reserve call-up", "text": "The moment a reservist is called up, the Recovery Engine finds the best qualified stand-in from your pool &mdash; without touching the reservist's own contract data." },
-      { "icon": "check_circle", "title": "Shabbat opt-out, respected automatically", "text": "Staff mark their Shabbat availability once; the autofill engine reliably excludes them from Shabbat shifts from then on." },
-      { "icon": "payments", "title": "Rest-day premiums calculated correctly", "text": "Klacks' typed surcharge engine applies the combined overtime + rest-day premium so payroll gets accurate figures, not manual guesswork." },
-      { "icon": "event", "title": "Friday/Saturday week &amp; Shabbat windows", "text": "Calendar rules handle the Friday/Saturday week and Shabbat start/end times natively." },
-      { "icon": "file_export", "title": "Payroll-ready export", "text": "Klacks already exports hours, overtime and allowances to CSV/Excel; a Hashavshevet-compatible format is next on our roadmap." }
+      {
+        "icon": "bolt",
+        "title": "Instant replacement on reserve call-up",
+        "text": "The moment a reservist is called up, the Recovery Engine finds the best qualified stand-in from your pool &mdash; without touching the reservist's own contract data."
+      },
+      {
+        "icon": "check_circle",
+        "title": "Shabbat opt-out, respected automatically",
+        "text": "Staff mark their Shabbat availability once; the autofill engine reliably excludes them from Shabbat shifts from then on."
+      },
+      {
+        "icon": "payments",
+        "title": "Rest-day premiums calculated correctly",
+        "text": "Klacks' typed surcharge engine applies the combined overtime + rest-day premium so payroll gets accurate figures, not manual guesswork."
+      },
+      {
+        "icon": "event",
+        "title": "Friday/Saturday week &amp; Shabbat windows",
+        "text": "Calendar rules handle the Friday/Saturday week and Shabbat start/end times natively."
+      },
+      {
+        "icon": "file_export",
+        "title": "Payroll-ready export",
+        "text": "Klacks already exports hours, overtime and allowances to CSV/Excel; a Hashavshevet-compatible format is next on our roadmap."
+      }
     ]
+  },
+  "klacksy": {
+    "eyebrow": "AI assistant",
+    "title": "Klacksy: the assistant built into your team's workflow",
+    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot &mdash; it&rsquo;s embedded directly in the Klacks interface. Staff and schedulers ask about shifts via chat, request shift swaps, or resolve qualification conflicts within the team. A built-in skills and rules system ensures Klacksy only ever suggests changes that actually match the qualifications and working-time limits of the people involved.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chat assistant inside the Klacks interface"
   },
   "example": {
     "eyebrow": "In practice",

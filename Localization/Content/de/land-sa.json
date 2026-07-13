@@ -13,21 +13,60 @@
     "eyebrow": "Der Alltag in Security, Facility &amp; Spital am Golf",
     "title": "Die Optimierungslücke bestehender HR-Suiten",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Dienstplaner als Nebensache gebaut", "text": "All-in-One-HR-Plattformen decken Visa, Verträge und Behördenmeldungen gut ab &mdash; ihre Dienstplaner sind aber kaum mehr als starre Tabellen, untauglich für echte 24/7-Rotationen." },
-      { "icon": "swap_horiz", "title": "Manuelle Zuschlags-Erfassung", "text": "Nacht-, Feiertags- und Split-Shift-Zuschläge werden von Hand erfasst und dann erneut in die Lohnabrechnung übertragen &mdash; langsam und fehleranfällig." },
-      { "icon": "event", "title": "Freitag/Samstag-Woche, 24/7-Abdeckung", "text": "Wachposten, Stationen und Facility-Teams brauchen weiterhin lückenlose Abdeckung über den Freitag/Samstag-Rhythmus." }
+      {
+        "icon": "hourglass_disabled",
+        "title": "Dienstplaner als Nebensache gebaut",
+        "text": "All-in-One-HR-Plattformen decken Visa, Verträge und Behördenmeldungen gut ab &mdash; ihre Dienstplaner sind aber kaum mehr als starre Tabellen, untauglich für echte 24/7-Rotationen."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Manuelle Zuschlags-Erfassung",
+        "text": "Nacht-, Feiertags- und Split-Shift-Zuschläge werden von Hand erfasst und dann erneut in die Lohnabrechnung übertragen &mdash; langsam und fehleranfällig."
+      },
+      {
+        "icon": "event",
+        "title": "Freitag/Samstag-Woche, 24/7-Abdeckung",
+        "text": "Wachposten, Stationen und Facility-Teams brauchen weiterhin lückenlose Abdeckung über den Freitag/Samstag-Rhythmus."
+      }
     ]
   },
   "solutions": {
     "title": "Wie Klacks in Ihre bestehende Systemlandschaft passt",
     "subtitle": "Best-of-Breed statt eines weiteren All-in-One-Kompromisses.",
     "items": [
-      { "icon": "bolt", "title": "Spezialisierte Schicht-Optimierung", "text": "Klacks löst die anspruchsvolle 24/7-Rotationsmathematik &mdash; Wachen, Stationen, Facility-Teams &mdash;, an der generische HR-Planer scheitern." },
-      { "icon": "file_export", "title": "Direkter Export in Ihre Lohnabrechnung", "text": "Klacks exportiert fertige Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; eine fertige Golf-Spaltenvorlage für ZenHR/Bayzat-Importe ist als Nächstes auf unserer Roadmap." },
-      { "icon": "groups", "title": "Sofortiger Ersatz bei Ausfall", "text": "Die Recovery-Engine findet den bestqualifizierten Ersatz in dem Moment, in dem eine Schicht unterbesetzt ist &mdash; ohne Telefonrunde." },
-      { "icon": "calendar_month", "title": "Freitag/Samstag-Woche eingebaut", "text": "Die Kalenderregeln von Klacks bilden das regionale Wochenend- und Feiertagsmuster nativ ab &mdash; nicht nachträglich angeflanscht." },
-      { "icon": "shield_lock", "title": "Open Source, On-Premise", "text": "Klacks ist Open Source und kann vollständig auf Ihrer eigenen Infrastruktur laufen &mdash; relevant, wo Datenresidenz (PDPL) zählt, und ohne Lock-in in einen einzelnen Anbieter." }
+      {
+        "icon": "bolt",
+        "title": "Spezialisierte Schicht-Optimierung",
+        "text": "Klacks löst die anspruchsvolle 24/7-Rotationsmathematik &mdash; Wachen, Stationen, Facility-Teams &mdash;, an der generische HR-Planer scheitern."
+      },
+      {
+        "icon": "file_export",
+        "title": "Direkter Export in Ihre Lohnabrechnung",
+        "text": "Klacks exportiert fertige Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; eine fertige Golf-Spaltenvorlage für ZenHR/Bayzat-Importe ist als Nächstes auf unserer Roadmap."
+      },
+      {
+        "icon": "groups",
+        "title": "Sofortiger Ersatz bei Ausfall",
+        "text": "Die Recovery-Engine findet den bestqualifizierten Ersatz in dem Moment, in dem eine Schicht unterbesetzt ist &mdash; ohne Telefonrunde."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Freitag/Samstag-Woche eingebaut",
+        "text": "Die Kalenderregeln von Klacks bilden das regionale Wochenend- und Feiertagsmuster nativ ab &mdash; nicht nachträglich angeflanscht."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Open Source, On-Premise",
+        "text": "Klacks ist Open Source und kann vollständig auf Ihrer eigenen Infrastruktur laufen &mdash; relevant, wo Datenresidenz (PDPL) zählt, und ohne Lock-in in einen einzelnen Anbieter."
+      }
     ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",

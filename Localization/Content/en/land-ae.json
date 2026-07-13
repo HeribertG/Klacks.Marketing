@@ -14,21 +14,60 @@
     "eyebrow": "The UAE hospital &amp; facility reality",
     "title": "The optimisation gap in existing HR suites",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Schedulers built as an afterthought", "text": "All-in-one HR platforms handle visas, contracts and WPS filing well, but their shift planners are little more than static spreadsheets." },
-      { "icon": "swap_horiz", "title": "Manual overtime &amp; allowance tracking", "text": "Night, holiday and split-shift allowances get tracked by hand, then re-typed into payroll." },
-      { "icon": "event", "title": "Saturday/Sunday week since 2022", "text": "Wards, guard posts and facility teams still need gap-free coverage across the (relatively new) Saturday/Sunday weekend." }
+      {
+        "icon": "hourglass_disabled",
+        "title": "Schedulers built as an afterthought",
+        "text": "All-in-one HR platforms handle visas, contracts and WPS filing well, but their shift planners are little more than static spreadsheets."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Manual overtime &amp; allowance tracking",
+        "text": "Night, holiday and split-shift allowances get tracked by hand, then re-typed into payroll."
+      },
+      {
+        "icon": "event",
+        "title": "Saturday/Sunday week since 2022",
+        "text": "Wards, guard posts and facility teams still need gap-free coverage across the (relatively new) Saturday/Sunday weekend."
+      }
     ]
   },
   "solutions": {
     "title": "How Klacks fits into your existing stack",
     "subtitle": "Best-of-breed, not another all-in-one compromise.",
     "items": [
-      { "icon": "bolt", "title": "Purpose-built shift optimisation", "text": "Klacks solves the hard 24/7 rotation math that generic HR schedulers can't." },
-      { "icon": "file_export", "title": "Export straight into your payroll", "text": "Klacks already exports finished hours, overtime and allowances to CSV/Excel; a ready-made Zoho Books journal-import preset is next on our roadmap." },
-      { "icon": "groups", "title": "Instant replacement on absence", "text": "The Recovery Engine finds the best qualified stand-in the moment a shift is short-staffed." },
-      { "icon": "calendar_month", "title": "Saturday/Sunday week built in", "text": "Calendar rules handle the current weekend pattern natively &mdash; no manual recalculation." },
-      { "icon": "shield_lock", "title": "On-premise data residency", "text": "Klacks can run entirely on your own infrastructure wherever data residency matters." }
+      {
+        "icon": "bolt",
+        "title": "Purpose-built shift optimisation",
+        "text": "Klacks solves the hard 24/7 rotation math that generic HR schedulers can't."
+      },
+      {
+        "icon": "file_export",
+        "title": "Export straight into your payroll",
+        "text": "Klacks already exports finished hours, overtime and allowances to CSV/Excel; a ready-made Zoho Books journal-import preset is next on our roadmap."
+      },
+      {
+        "icon": "groups",
+        "title": "Instant replacement on absence",
+        "text": "The Recovery Engine finds the best qualified stand-in the moment a shift is short-staffed."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Saturday/Sunday week built in",
+        "text": "Calendar rules handle the current weekend pattern natively &mdash; no manual recalculation."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise data residency",
+        "text": "Klacks can run entirely on your own infrastructure wherever data residency matters."
+      }
     ]
+  },
+  "klacksy": {
+    "eyebrow": "AI assistant",
+    "title": "Klacksy: the assistant built into your team's workflow",
+    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot &mdash; it&rsquo;s embedded directly in the Klacks interface. Staff and schedulers ask about shifts via chat, request shift swaps, or resolve qualification conflicts within the team. A built-in skills and rules system ensures Klacksy only ever suggests changes that actually match the qualifications and working-time limits of the people involved.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chat assistant inside the Klacks interface"
   },
   "example": {
     "eyebrow": "In practice",
