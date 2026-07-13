@@ -28,9 +28,22 @@
             <div class="lang-dropdown dropdown-menu @(_languageMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
                 @foreach (var culture in SupportedCultures.All)
                 {
-                    <a href="@LanguageSwitchHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">
-                        @culture.NativeName
-                    </a>
+                    @if (IsOnCountryPage && LanguageCountryMap.TryGetValue(culture.Code, out var countries) && countries.Length > 1)
+                    {
+                        <div class="px-4 pt-2 pb-1 text-xs font-bold uppercase tracking-wide text-on-surface-variant">@culture.NativeName</div>
+                        @foreach (var country in countries)
+                        {
+                            <a href="@CountryLanguageHref(culture, country)" class="block pl-7 pr-4 py-1.5 text-sm no-underline hover:bg-surface-container-low text-on-surface-variant" @onclick="CloseLanguageMenu">
+                                @CountryDisplayNames.GetValueOrDefault(country, country)
+                            </a>
+                        }
+                    }
+                    else
+                    {
+                        <a href="@ResolveLanguageHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">
+                            @culture.NativeName
+                        </a>
+                    }
                 }
             </div>
             <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
@@ -58,10 +71,10 @@
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.marketplace")</a>
         <div class="flex flex-wrap gap-3 pt-2 border-t border-surface-container-high">
-            @foreach (var culture in SupportedCultures.All)
+            @foreach (var link in MobileLanguageLinks())
             {
-                <a href="@LanguageSwitchHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                    @culture.Code
+                <a href="@link.Href" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(link.CultureCode == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                    @link.Label
                 </a>
             }
         </div>
@@ -106,6 +119,53 @@
         "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
         "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
         "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
+    };
+
+    // On a country landing page ("land-*"), each language maps to the country/
+    // countries where it is actually spoken/used for that page, instead of just
+    // translating the current country's content. Languages mapping to more than
+    // one country render a sub-list to pick from; languages with no mapped
+    // country fall back to the culture's home page.
+    private static readonly Dictionary<string, string[]> LanguageCountryMap = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["de"] = new[] { "land-de", "land-at", "land-ch" },
+        ["en"] = new[] { "land-gb", "land-sa", "land-ae", "land-ie" },
+        ["ar"] = new[] { "land-sa", "land-ae" },
+        ["he"] = new[] { "land-il" },
+        ["ja"] = new[] { "land-jp" },
+        ["ko"] = new[] { "land-kr" },
+        ["zh-CN"] = new[] { "land-cn" },
+        ["zh-TW"] = new[] { "land-tw" },
+        ["ms"] = new[] { "land-my" },
+        ["id"] = new[] { "land-id" },
+        ["th"] = new[] { "land-th" },
+        ["vi"] = new[] { "land-vn" },
+        ["cs"] = new[] { "land-cz" },
+        ["ro"] = new[] { "land-ro" },
+        ["sv"] = new[] { "land-se" },
+    };
+
+    private static readonly Dictionary<string, string> CountryDisplayNames = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["land-de"] = "Deutschland",
+        ["land-at"] = "Österreich",
+        ["land-ch"] = "Schweiz",
+        ["land-sa"] = "Saudi-Arabien",
+        ["land-ae"] = "VAE",
+        ["land-il"] = "Israel",
+        ["land-se"] = "Schweden",
+        ["land-ie"] = "Irland",
+        ["land-cz"] = "Tschechien",
+        ["land-gb"] = "Grossbritannien",
+        ["land-ro"] = "Rumänien",
+        ["land-jp"] = "Japan",
+        ["land-kr"] = "Südkorea",
+        ["land-cn"] = "China",
+        ["land-tw"] = "Taiwan",
+        ["land-my"] = "Malaysia",
+        ["land-id"] = "Indonesien",
+        ["land-th"] = "Thailand",
+        ["land-vn"] = "Vietnam",
     };
 
     private bool _mobileMenuOpen;
@@ -192,6 +252,49 @@
         }
 
         return effectivePageKey.Length == 0 ? $"/{target.UrlSlug}" : $"/{target.UrlSlug}/{effectivePageKey}";
+    }
+
+    private bool IsOnCountryPage => ResolveCurrentPage().PageKey.StartsWith("land-", StringComparison.OrdinalIgnoreCase);
+
+    private static string CountryLanguageHref(SupportedCulture target, string pageKey)
+        => target.Code == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{target.UrlSlug}/{pageKey}";
+
+    // Off a country page, language switching only translates the current page
+    // (LanguageSwitchHref). On a country page, a language with exactly one
+    // mapped country jumps straight there; zero or several mapped countries
+    // (the latter renders as a sub-list in the markup instead) fall back to
+    // that language's home page.
+    private string ResolveLanguageHref(SupportedCulture target)
+    {
+        if (!IsOnCountryPage)
+        {
+            return LanguageSwitchHref(target);
+        }
+
+        if (LanguageCountryMap.TryGetValue(target.Code, out var countries) && countries.Length == 1)
+        {
+            return CountryLanguageHref(target, countries[0]);
+        }
+
+        return target.Code == SupportedCultures.DefaultCode ? "/" : $"/{target.UrlSlug}";
+    }
+
+    private IEnumerable<(string Label, string Href, string CultureCode)> MobileLanguageLinks()
+    {
+        foreach (var culture in SupportedCultures.All)
+        {
+            if (IsOnCountryPage && LanguageCountryMap.TryGetValue(culture.Code, out var countries) && countries.Length > 1)
+            {
+                foreach (var country in countries)
+                {
+                    yield return ($"{culture.Code}-{country["land-".Length..]}", CountryLanguageHref(culture, country), culture.Code);
+                }
+            }
+            else
+            {
+                yield return (culture.Code, ResolveLanguageHref(culture), culture.Code);
+            }
+        }
     }
 
     private string Sh(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "shared", key);
