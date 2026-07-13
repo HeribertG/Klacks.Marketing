@@ -4,7 +4,11 @@ namespace Klacks.Marketing.Localization;
 
 public static class SitemapGenerator
 {
-    private static readonly string[] PageKeys = { "", "spitex", "spitaeler", "security", "hausdienste", "logistik" };
+    private static readonly string[] PageKeys =
+    {
+        "", "spitex", "spitaeler", "security", "hausdienste", "logistik",
+        "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
+    };
 
     public static string Build(string baseUrl)
     {

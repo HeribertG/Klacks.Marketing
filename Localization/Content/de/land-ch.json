@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für die Schweiz | ArG-konform und bereit für das kommende BGAP",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Für Spitäler &amp; Spitex in der Schweiz",
+    "titleHtml": "Schon heute bereit für das <span class=\"text-secondary\">kommende Pflegegesetz.</span>",
+    "subtitle": "Das Bundesgesetz über die Arbeitsbedingungen in der Pflege (BGAP) ist noch in parlamentarischer Beratung &mdash; Klacks erfüllt schon jetzt die zentralen ArG-Vorgaben zu Ruhezeiten und Nachtzuschlägen, damit Sie beim Inkrafttreten nicht neu planen müssen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan für Schweizer Spitäler und Spitex",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in Spital &amp; Spitex",
+    "title": "ArG, Pikett und das kommende BGAP",
+    "items": [
+      { "icon": "hourglass_top", "title": "BGAP in der Pipeline", "text": "Die Umsetzung der Pflegeinitiative (BGAP) soll künftig auch Dienstplan- und Pikett-Ankündigung regeln &mdash; das Gesetz ist noch nicht in Kraft, wer heute schon sauber plant, ist beim Inkrafttreten vorbereitet." },
+      { "icon": "gavel", "title": "ArG-Nachtzuschlag korrekt berechnen", "text": "Regelmässige Nachtarbeit löst nach Art. 17b ArG eine Zeitgutschrift von 10% aus &mdash; von Hand fehleranfällig." },
+      { "icon": "event_repeat", "title": "Sonntagsruhe richtig ausgleichen", "text": "Bei Sonntagseinsätzen über 5 Stunden ist ein 24-Stunden-Ersatzruhetag in der Vor- oder Folgewoche fällig (Art. 20 ArG)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Schweizer Betriebe entlastet",
+    "subtitle": "ArG-konform heute, vorbereitet auf das kommende BGAP.",
+    "items": [
+      { "icon": "gavel", "title": "Art. 17b-Zuschlag automatisch", "text": "Klacks berechnet die 10%-Zeitgutschrift für regelmässige Nachtarbeit automatisch &mdash; korrekt nach Art. 17b ArG." },
+      { "icon": "event_repeat", "title": "Sonntagsruhe-Ausgleich geplant", "text": "Der Autofill-Wizard plant den gesetzlichen Ersatzruhetag bei Sonntagseinsätzen über 5 Stunden automatisch mit ein." },
+      { "icon": "calendar_month", "title": "Vorausschauende Dienst- &amp; Pikettplanung", "text": "Klacks plant Dienst- und Pikettpläne mit Vorlauf &mdash; die Grundlage, um spätere BGAP-Ankündigungsfristen ohne Umbau zu erfüllen." },
+      { "icon": "groups", "title": "Spitex: Touren &amp; geteilte Dienste", "text": "Split-Shifts und Fahrzeiten zwischen Klient:innen werden automatisch mitgeplant." },
+      { "icon": "shield_lock", "title": "On-Premise: Datenhoheit in der Schweiz", "text": "Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; auch für die KI-Funktionen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nachtarbeit, Sonntagsdienst, ein Plan",
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz Nachtzuschlag oder Sonntagsruhe-Ausgleich auslöst, und plant den Ausgleich gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks ArG-Zuschläge, Ruhezeiten und Pikettplanung automatisiert &mdash; On-Premise oder im Playground, kostenlos."
+  }
+}

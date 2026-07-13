@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für Saudi-Arabien | Schicht-Optimierung statt weiterer HR-Suite",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Security-, Facility- und Spitalbetreiber in Saudi-Arabien",
+    "titleHtml": "Behalten Sie Ihr HR-System. <span class=\"text-secondary\">Lösen Sie Ihre Schichtplanung.</span>",
+    "subtitle": "ZenHR, Bayzat und ähnliche Plattformen decken GOSI, Mudad und WPS-Meldungen bereits gut ab &mdash; ihre eingebauten Dienstplaner sind aber rudimentär. Klacks ist die spezialisierte 24/7-Optimierungs-Engine, die Ihr bestehendes Lohnsystem füttert, statt ein weiteres Silo zu schaffen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in Security, Facility &amp; Spital am Golf",
+    "title": "Die Optimierungslücke bestehender HR-Suiten",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Dienstplaner als Nebensache gebaut", "text": "All-in-One-HR-Plattformen decken Visa, Verträge und Behördenmeldungen gut ab &mdash; ihre Dienstplaner sind aber kaum mehr als starre Tabellen, untauglich für echte 24/7-Rotationen." },
+      { "icon": "swap_horiz", "title": "Manuelle Zuschlags-Erfassung", "text": "Nacht-, Feiertags- und Split-Shift-Zuschläge werden von Hand erfasst und dann erneut in die Lohnabrechnung übertragen &mdash; langsam und fehleranfällig." },
+      { "icon": "event", "title": "Freitag/Samstag-Woche, 24/7-Abdeckung", "text": "Wachposten, Stationen und Facility-Teams brauchen weiterhin lückenlose Abdeckung über den Freitag/Samstag-Rhythmus." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks in Ihre bestehende Systemlandschaft passt",
+    "subtitle": "Best-of-Breed statt eines weiteren All-in-One-Kompromisses.",
+    "items": [
+      { "icon": "bolt", "title": "Spezialisierte Schicht-Optimierung", "text": "Klacks löst die anspruchsvolle 24/7-Rotationsmathematik &mdash; Wachen, Stationen, Facility-Teams &mdash;, an der generische HR-Planer scheitern." },
+      { "icon": "file_export", "title": "Direkter Export in Ihre Lohnabrechnung", "text": "Klacks exportiert fertige Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; eine fertige Golf-Spaltenvorlage für ZenHR/Bayzat-Importe ist als Nächstes auf unserer Roadmap." },
+      { "icon": "groups", "title": "Sofortiger Ersatz bei Ausfall", "text": "Die Recovery-Engine findet den bestqualifizierten Ersatz in dem Moment, in dem eine Schicht unterbesetzt ist &mdash; ohne Telefonrunde." },
+      { "icon": "calendar_month", "title": "Freitag/Samstag-Woche eingebaut", "text": "Die Kalenderregeln von Klacks bilden das regionale Wochenend- und Feiertagsmuster nativ ab &mdash; nicht nachträglich angeflanscht." },
+      { "icon": "shield_lock", "title": "Open Source, On-Premise", "text": "Klacks ist Open Source und kann vollständig auf Ihrer eigenen Infrastruktur laufen &mdash; relevant, wo Datenresidenz (PDPL) zählt, und ohne Lock-in in einen einzelnen Anbieter." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Eine Optimierungs-Engine, Ihre bestehende Lohnabrechnung",
+    "text": "Klacks plant die Rotation, erfasst Zuschläge und übergibt einen sauberen Export &mdash; Ihre HR-Plattform behält GOSI-, Mudad- und WPS-Meldung genau dort, wo sie am stärksten ist."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks neben Ihrem HR-System erleben",
+    "text": "Testen Sie im Playground, wie Klacks 24/7-Rotationen optimiert und fertige Stunden exportiert &mdash; oder betreiben Sie es On-Premise für volle Datenresidenz."
+  }
+}

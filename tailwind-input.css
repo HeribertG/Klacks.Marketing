@@ -81,7 +81,56 @@ nav.glass-nav.nav-scrolled {
     box-shadow: 0 1px 24px rgba(28, 27, 27, 0.08);
 }
 
+/* Loupe/magnifier that tracks the cursor over a screenshot (see
+   wwwroot/js/magnifier.js, which computes size/position/background on
+   mousemove). This is a positioning + clip context only, independent of
+   .screenshot-hover-zoom's own scale so both effects can run together on
+   the same image. Deliberately OUTSIDE the prefers-reduced-motion block:
+   the loupe is an interactive utility, not decorative animation — reduced
+   motion only removes its opacity fade (gated below). */
+.magnify-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.magnify-frame:hover .magnify-image {
+    cursor: none;
+}
+
+/* Outer ring: stays crisp (no filter) so the rim reads as real glass edge,
+   not a warped outline. Clips the distorted inner layer to a circle. */
+.magnify-glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 40;
+}
+
+.magnify-glass.is-active {
+    opacity: 1;
+}
+
+/* Inner layer: only this gets the magnified background image and the
+   optical displacement filter, so the distortion is concentrated on the
+   zoomed pixels themselves and fades out toward the rim. */
+.magnify-glass-inner {
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    filter: url(#klacks-magnifier-lens);
+}
+
 @media (prefers-reduced-motion: no-preference) {
+    .magnify-glass {
+        transition: opacity 0.15s ease-out;
+    }
+
     .reveal {
         opacity: 0;
         transform: translateY(24px);
@@ -142,6 +191,25 @@ nav.glass-nav.nav-scrolled {
 
     .card-hover:hover {
         transform: translateY(-6px);
+    }
+
+    /* Screenshot device-frame hover zoom: scales the whole mockup card (chrome
+       dots, image, caption) as one unit so proportions stay correct. Apply
+       directly to the "device frame" div/figure, never to a reveal-stagger
+       grid's direct child — reveal-stagger owns that element's transform at
+       rest (translateY), and a higher-specificity resting rule would silently
+       win over this :hover rule and cancel the zoom. Nest the frame one level
+       deeper instead (see IndustryPageTemplate.razor gallery markup). */
+    .screenshot-hover-zoom {
+        position: relative;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        will-change: transform;
+    }
+
+    .screenshot-hover-zoom:hover {
+        transform: scale(1.2);
+        box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.45);
+        z-index: 30;
     }
 
     /* Slow ambient pulse for the decorative background blur blobs. The keyframe

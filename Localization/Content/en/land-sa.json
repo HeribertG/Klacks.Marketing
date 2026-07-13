@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Saudi Arabia | Shift Optimization, Not Another HRIS",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "For security, facility &amp; hospital operators in Saudi Arabia",
+    "titleHtml": "Keep your HR system. <span class=\"text-secondary\">Fix your shift planning.</span>",
+    "subtitle": "ZenHR, Bayzat and similar platforms handle GOSI, Mudad and WPS filings well &mdash; but their built-in schedulers are rudimentary. Klacks is the specialised 24/7 shift-optimization engine that feeds your existing payroll system, not another silo to maintain.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks shift schedule grid",
+    "screenshotLabel": "Schedule",
+    "screenshotCaption": "Screenshot shown in German — the core app interface ships in German, English, French and Italian; the Klacksy AI assistant additionally understands Arabic."
+  },
+  "challenges": {
+    "eyebrow": "The Gulf security &amp; facility reality",
+    "title": "The optimisation gap in existing HR suites",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Schedulers built as an afterthought", "text": "All-in-one HR platforms handle visas, contracts and government filings well, but their shift planners are little more than static spreadsheets &mdash; useless for real 24/7 rotations." },
+      { "icon": "swap_horiz", "title": "Manual overtime &amp; allowance tracking", "text": "Night, holiday and split-shift allowances get tracked by hand, then re-typed into payroll &mdash; slow and error-prone." },
+      { "icon": "event", "title": "Friday/Saturday week, 24/7 coverage", "text": "Guard posts, wards and facilities still need gap-free coverage across the Friday/Saturday weekend rhythm." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks fits into your existing stack",
+    "subtitle": "Best-of-breed, not another all-in-one compromise.",
+    "items": [
+      { "icon": "bolt", "title": "Purpose-built shift optimisation", "text": "Klacks solves the hard 24/7 rotation math &mdash; guards, wards, facility teams &mdash; that generic HR schedulers can't." },
+      { "icon": "file_export", "title": "Export straight into your payroll", "text": "Klacks already exports finished hours, overtime and allowances to CSV/Excel; a ready-made Gulf payroll column preset for ZenHR/Bayzat imports is next on our roadmap." },
+      { "icon": "groups", "title": "Instant replacement on absence", "text": "The Recovery Engine finds the best qualified stand-in the moment a shift is short-staffed &mdash; no more working the phones." },
+      { "icon": "calendar_month", "title": "Friday/Saturday week built in", "text": "Klacks' calendar rules handle the regional weekend and holiday pattern natively &mdash; not bolted on." },
+      { "icon": "shield_lock", "title": "Open source, on-premise", "text": "Klacks is open source and can run entirely on your own infrastructure &mdash; relevant wherever data residency (PDPL) matters, with no vendor lock-in." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "One optimisation engine, your existing payroll",
+    "text": "Klacks plans the rotation, tracks allowances, and hands off a clean export &mdash; your HR platform still owns GOSI, Mudad and WPS filing, exactly where it's strongest."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "See Klacks alongside your HR system",
+    "text": "Try the Playground to see how Klacks optimises 24/7 rotations and exports finished hours &mdash; or run it on-premise for full data residency."
+  }
+}

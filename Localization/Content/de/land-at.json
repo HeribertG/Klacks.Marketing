@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für Österreich | SWÖ-konforme Dienstpläne",
+  "hero": {
+    "badgeIcon": "verified",
+    "badge": "Für Pflege- &amp; Sozialeinrichtungen in Österreich",
+    "titleHtml": "Dienstpläne, die den <span class=\"text-secondary\">SWÖ-Kollektivvertrag</span> automatisch einhalten.",
+    "subtitle": "Seit 1. Jänner 2026 zählt Pflege im echten Wechselschichtdienst erstmals als eigene Schwerarbeits-Kategorie. Klacks plant Wechselschichten SWÖ-konform, zählt Schwerarbeitstage mit und behält Zuschläge automatisch im Blick.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan für österreichische Pflegeeinrichtungen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der Sozialwirtschaft",
+    "title": "SWÖ-KV, Schwerarbeit und Vorlauffristen",
+    "items": [
+      { "icon": "gavel", "title": "Schwerarbeits-Nachweis seit 2026", "text": "Pflegekräfte im echten Wechselschichtdienst (&gt;50% direkte Pflege, mind. 12 Tage/Monat) zählen als Schwerarbeiter:innen &mdash; wer das nicht sauber mitzählt, riskiert Lücken bei der jährlichen Meldung an die Krankenkasse." },
+      { "icon": "calendar_month", "title": "Gestaffelte Dienstplan-Fristen", "text": "Der SWÖ-KV verlangt je nach Bereich Dienstpläne bis zum 1. bzw. 14. des Vormonats &mdash; von Hand kaum verlässlich einzuhalten." },
+      { "icon": "payments", "title": "Kleinteilige Zuschlags-Regeln", "text": "Sonn-, Feiertags- und Pflegezuschüsse unterscheiden sich zwischen mobilem und stationärem Bereich &mdash; manuelle Berechnung ist fehleranfällig." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks den österreichischen Sozialbereich entlastet",
+    "subtitle": "Von der Schwerarbeits-Zählung bis zur SWÖ-Frist &mdash; automatisch mitgeplant.",
+    "items": [
+      { "icon": "fact_check", "title": "Schwerarbeitstage automatisch gezählt", "text": "Klacks zählt die relevanten Wechselschicht-Tage pro Mitarbeiter:in mit &mdash; als Grundlage für die jährliche Meldung an die Krankenkasse." },
+      { "icon": "event_available", "title": "Vorlauffristen eingehalten", "text": "Der Autofill-Wizard plant so, dass die gestaffelten SWÖ-Fristen (1. bzw. 14. des Vormonats) zuverlässig eingehalten werden." },
+      { "icon": "payments", "title": "SWÖ-Zuschläge vorbereitet", "text": "Sonn-, Feiertags- und Pflegezuschlag werden je Bereich korrekt vorbereitet und stehen für die Lohnverrechnung bereit." },
+      { "icon": "gavel", "title": "KA-AZG für Spitäler", "text": "In Krankenanstalten überwacht Klacks die 48h/17-Wochen-Höchstarbeitszeit und die 11h-Ruhezeit automatisch." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Personal- und Klient:innendaten verlassen Ihre Einrichtung nicht &mdash; auch nicht zur KI." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wechselschicht, Schwerarbeit, ein Klick",
+    "text": "Eine Pflegekraft arbeitet regelmässig im Wechselschichtdienst. Klacks zählt automatisch mit, ob die 12-Tage-Schwelle erreicht wird, und bereitet die jährliche Meldung an die Krankenkasse vor."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Einrichtung erleben",
+    "text": "Testen Sie im Playground, wie Klacks SWÖ-Fristen, Schwerarbeits-Zählung und Zuschläge automatisiert &mdash; oder installieren Sie direkt On-Premise."
+  }
+}

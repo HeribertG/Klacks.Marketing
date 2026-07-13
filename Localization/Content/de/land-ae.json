@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für die VAE | Schicht-Optimierung statt weiterer HR-Suite",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler, Security- und Facility-Betreiber in den VAE",
+    "titleHtml": "Behalten Sie Ihr HR-System. <span class=\"text-secondary\">Lösen Sie Ihre Schichtplanung.</span>",
+    "subtitle": "Zoho, ZenHR und ähnliche Plattformen decken WPS-Meldung, Visa und Verträge bereits gut ab &mdash; ihre eingebauten Dienstplaner sind aber nicht für echte 24/7-Rotationen gebaut. Klacks ist die spezialisierte Optimierungs-Engine, die Ihre bestehende Lohnabrechnung füttert, statt ein weiteres Silo zu schaffen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in Spital &amp; Facility Management in den VAE",
+    "title": "Die Optimierungslücke bestehender HR-Suiten",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Dienstplaner als Nebensache gebaut", "text": "All-in-One-HR-Plattformen decken Visa, Verträge und WPS-Meldung gut ab &mdash; ihre Dienstplaner sind aber kaum mehr als starre Tabellen." },
+      { "icon": "swap_horiz", "title": "Manuelle Zuschlags-Erfassung", "text": "Nacht-, Feiertags- und Split-Shift-Zuschläge werden von Hand erfasst und dann erneut in die Lohnabrechnung übertragen." },
+      { "icon": "event", "title": "Samstag/Sonntag-Woche seit 2022", "text": "Stationen, Wachposten und Facility-Teams brauchen weiterhin lückenlose Abdeckung über die (relativ neue) Samstag/Sonntag-Woche." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks in Ihre bestehende Systemlandschaft passt",
+    "subtitle": "Best-of-Breed statt eines weiteren All-in-One-Kompromisses.",
+    "items": [
+      { "icon": "bolt", "title": "Spezialisierte Schicht-Optimierung", "text": "Klacks löst die anspruchsvolle 24/7-Rotationsmathematik, an der generische HR-Planer scheitern." },
+      { "icon": "file_export", "title": "Direkter Export in Ihre Lohnabrechnung", "text": "Klacks exportiert fertige Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; eine fertige Zoho-Books-Journal-Importvorlage ist als Nächstes auf unserer Roadmap." },
+      { "icon": "groups", "title": "Sofortiger Ersatz bei Ausfall", "text": "Die Recovery-Engine findet den bestqualifizierten Ersatz in dem Moment, in dem eine Schicht unterbesetzt ist." },
+      { "icon": "calendar_month", "title": "Samstag/Sonntag-Woche eingebaut", "text": "Die Kalenderregeln bilden das aktuelle Wochenendmuster nativ ab &mdash; ohne manuelles Nachrechnen." },
+      { "icon": "shield_lock", "title": "On-Premise-Datenresidenz", "text": "Klacks kann vollständig auf Ihrer eigenen Infrastruktur laufen, wo immer Datenresidenz zählt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Eine Optimierungs-Engine, Ihre bestehende Lohnabrechnung",
+    "text": "Klacks plant die Rotation und übergibt einen sauberen Export &mdash; Ihre HR-Plattform behält WPS- und Behördenmeldung genau dort, wo sie am stärksten ist."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks neben Ihrem HR-System erleben",
+    "text": "Testen Sie im Playground, wie Klacks 24/7-Rotationen optimiert und lohnabrechnungs-fertige Exporte liefert &mdash; oder betreiben Sie es On-Premise für volle Datenresidenz."
+  }
+}

@@ -7,6 +7,7 @@ public sealed class IndustryPageContent
     public required IndustrySection Challenges { get; init; }
     public required IndustrySection Solutions { get; init; }
     public IndustryExample? Example { get; init; }
+    public IndustryGallery? Gallery { get; init; }
     public bool ShowRoutePlanning { get; init; } = true;
     public required IndustryCta Cta { get; init; }
 }
@@ -51,4 +52,20 @@ public sealed class IndustryCta
 {
     public required string Title { get; init; }
     public required string Text { get; init; }
+}
+
+public sealed class IndustryGallery
+{
+    public string? Eyebrow { get; init; }
+    public required string Title { get; init; }
+    public string? Subtitle { get; init; }
+    public required IReadOnlyList<IndustryGalleryImage> Items { get; init; }
+}
+
+public sealed class IndustryGalleryImage
+{
+    public required string File { get; init; }
+    public required string Alt { get; init; }
+    public string? Label { get; init; }
+    public string? Caption { get; init; }
 }

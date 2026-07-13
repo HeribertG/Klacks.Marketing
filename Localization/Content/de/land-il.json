@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für Israel | Planung, die Miluim-Einsätze übersteht",
+  "hero": {
+    "badgeIcon": "shield",
+    "badge": "Für Sicherheitsfirmen, Spitäler &amp; Personalverleih in Israel",
+    "titleHtml": "Schichtplanung für <span class=\"text-secondary\">eine volatile Realität.</span>",
+    "subtitle": "Reservistendienst (Miluim) und Schabbat-Vorschriften reissen Lücken in jeden generischen Dienstplan. Klacks kombiniert sofortige, rechtssichere Ersatzplanung mit Schabbat-bewusster Autofill-Funktion.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Schichtplanung in Israels Betriebsrealität",
+    "title": "Miluim-Lücken und Schabbat-Regeln",
+    "items": [
+      { "icon": "groups", "title": "Reservisten-Einberufung ohne Vorwarnung", "text": "Miluim-Einberufungen können Personal fast ohne Vorlauf herausreissen &mdash; das reisst Löcher in Security-, Spital- und Personalverleih-Pläne." },
+      { "icon": "block", "title": "Schabbat-Arbeit ist grundsätzlich beschränkt", "text": "Nach dem Hours-of-Work-and-Rest-Law braucht Beschäftigung am Schabbat eine staatliche Genehmigung, und Mitarbeitende können sie aus religiösen Gründen ablehnen &mdash; ein falsch geplanter Dienstplan ist gleichzeitig unterbesetzt und nicht rechtskonform." },
+      { "icon": "payments", "title": "Mehrschichtige Überstunden- &amp; Ruhetagszuschläge", "text": "Reguläre Überstunden (125%/150%) addieren sich mit dem 50%-Ruhetagszuschlag, wenn Arbeit auf den Schabbat fällt &mdash; manuelle Lohnvorbereitung ist fehleranfällig." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Israels Planungsrealität abbildet",
+    "subtitle": "Krisenresistente Einsatzplanung statt generischem 24/7-Planer.",
+    "items": [
+      { "icon": "bolt", "title": "Sofortiger Ersatz bei Reservisten-Einberufung", "text": "Sobald ein Reservist einberufen wird, findet die Recovery-Engine den bestqualifizierten Ersatz aus dem Pool &mdash; ohne die Vertragsdaten des Reservisten anzurühren." },
+      { "icon": "check_circle", "title": "Schabbat-Ablehnung automatisch respektiert", "text": "Mitarbeitende hinterlegen ihre Schabbat-Verfügbarkeit einmal; die Autofill-Engine schliesst sie danach zuverlässig von Schabbat-Diensten aus." },
+      { "icon": "payments", "title": "Ruhetagszuschläge korrekt berechnet", "text": "Die typisierte Zuschlags-Engine von Klacks wendet den kombinierten Überstunden- plus Ruhetagszuschlag an &mdash; statt manueller Schätzung." },
+      { "icon": "event", "title": "Freitag/Samstag-Woche &amp; Schabbat-Fenster", "text": "Die Kalenderregeln bilden die Freitag/Samstag-Woche und Schabbat-Beginn/-Ende nativ ab." },
+      { "icon": "file_export", "title": "Lohnabrechnungs-fertiger Export", "text": "Klacks exportiert Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; ein Hashavshevet-kompatibles Format ist als Nächstes auf unserer Roadmap." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Reservist wird mitten im Zyklus einberufen",
+    "text": "Klacks sperrt den Platz des Reservisten, zeigt den bestpassenden, rechtskonformen Ersatz aus dem Pool &mdash; der Rest des Dienstplans bleibt unangetastet, keine manuelle Neuplanung."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks bei einem volatilen Dienstplan erleben",
+    "text": "Testen Sie im Playground, wie sofortige Ersatzplanung und Schabbat-bewusste Autofill-Funktion funktionieren &mdash; oder betreiben Sie Klacks On-Premise."
+  }
+}
