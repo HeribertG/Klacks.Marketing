@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Grossbritannien | Dienstpläne für private Pflege und Security",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für private Care Homes, Sicherheitsdienste und Facility Management in Grossbritannien",
+    "titleHtml": "Opt-out-Nachweise für die 48-Stunden-Woche &mdash; <span class=\"text-secondary\">lückenlos statt auf Zuruf.</span>",
+    "subtitle": "Die Working Time Regulations 1998 verlangen für die 48-Stunden-Woche schriftliche, jederzeit widerrufbare Opt-out-Erklärungen, die der Arbeitgeber nachweisen muss. Bei hoher Fluktuation und teuren Bank- und Agentur-Schichten wird genau diese Nachweisführung zum Schmerzpunkt &mdash; Klacks bewusst für den privaten Sektor gebaut, nicht für den NHS.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in privater Pflege, Security und Facility Management",
+    "title": "Opt-out-Dokumentation und teure Kurzfrist-Besetzung",
+    "items": [
+      { "icon": "fact_check", "title": "Opt-out-Nachweispflicht", "text": "Jede Opt-out-Erklärung zur 48-Stunden-Woche muss schriftlich vorliegen und nachweisbar sein &mdash; bei hoher Fluktuation ein wachsender Verwaltungsaufwand." },
+      { "icon": "payments", "title": "Teure Bank- und Agentur-Schichten", "text": "Kurzfristige Besetzung über Zeitarbeit oder interne Springer-Pools ist oft die teuerste Option &mdash; gute Vorausplanung reduziert den Bedarf dafür." },
+      { "icon": "groups", "title": "Hohe Fluktuation im privaten Sektor", "text": "Private Care Homes, Sicherheitsdienste und Facility-Teams kämpfen mit Personalwechsel, der jede manuelle Planung schnell veralten lässt." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung von UK-GDPR und der Vorgaben des Information Commissioner's Office (ICO) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Opt-out-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Opt-out-Nachweise und Kurzfrist-Kosten in den Griff bekommt",
+    "subtitle": "Bewusst für den privaten Sektor gebaut &mdash; ohne NHS-ESR-Anbindung, dafür schnell einsatzbereit.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort den bestqualifizierten internen Ersatz &mdash; bevor eine teure Bank- oder Agentur-Schicht nötig wird." },
+      { "icon": "fact_check", "title": "Opt-out-Tracking", "text": "Klacks führt Opt-out-Erklärungen und die durchschnittliche Wochenarbeitszeit je Mitarbeitendem fortlaufend mit &mdash; abrufbar, falls die HR-Abteilung nachfragt." },
+      { "icon": "file_export", "title": "BrightPay-kompatibler Lohnexport", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt für den in UK/Irland verbreiteten BrightPay-Import aufbereiten." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Arbeitszeit-Grenzen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst- bzw. Pflegenachweis werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für private Pflege- und Sicherheitsdienste in Grossbritannien testen",
+    "text": "Erleben Sie im Playground, wie Klacks Opt-out-Nachweise und Kurzfrist-Besetzung in den Griff bekommt &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

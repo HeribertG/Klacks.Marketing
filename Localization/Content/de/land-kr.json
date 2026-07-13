@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Südkorea | Dienstpläne für die 52-Stunden-Woche",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Facility- und Sicherheitsdienstleister in Südkorea",
+    "titleHtml": "52 Stunden pro Woche &mdash; <span class=\"text-secondary\">und im Zweifel Strafrecht statt Bussgeld.</span>",
+    "subtitle": "Das Arbeitsstandardgesetz begrenzt die Wochenarbeitszeit auf 52 Stunden (40 regulär plus max. 12 Überstunden). Wer diese Grenze reisst, riskiert nach Art. 110 nicht nur ein Bussgeld, sondern bis zu zwei Jahre Haft für Verantwortliche. Klacks überwacht die Grenze live, statt sie am Monatsende zu prüfen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in koreanischer Facility- und Sicherheitsbranche",
+    "title": "52-Stunden-Grenze mit strafrechtlichem Risiko",
+    "items": [
+      { "icon": "gavel", "title": "Strafrechtliches Risiko bei Überschreitung", "text": "Anders als in vielen Ländern drohen bei Verstoss gegen die 52-Stunden-Grenze nicht nur Bussgelder, sondern potenziell Freiheitsstrafen für Verantwortliche." },
+      { "icon": "schedule", "title": "Flexible Arbeitszeitgestaltung", "text": "Das seit 2021 mögliche 6-Monats-Modell für flexible Arbeitszeit erlaubt Durchschnittsbildung über mehrere Wochen &mdash; von Hand kaum mehr fehlerfrei nachzuvollziehen." },
+      { "icon": "groups", "title": "24/7-Abdeckung bei Facility &amp; Security", "text": "Wachpersonal und Facility-Teams brauchen lückenlose Abdeckung, obwohl die Wochenarbeitszeit streng gedeckelt ist." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des koreanischen Datenschutzgesetzes (PIPA) und der Vorgaben der Personal Information Protection Commission in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die 52-Stunden-Grenze live überwacht",
+    "subtitle": "Wochenarbeitszeit fortlaufend geprüft, nicht erst am Monatsende.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Wachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Grenzüberschreitung entsteht." },
+      { "icon": "fact_check", "title": "52-Stunden-Live-Tracking", "text": "Klacks führt die 40+12-Stunden-Aufteilung fortlaufend mit und warnt, bevor eine Schicht die Wochengrenze reisst." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für ECOUNT ERP oder Douzone Smart A ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24/7-Rotationen unter Einhaltung der 52-Stunden-Grenze." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst-Ausweis werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für koreanische Facility- und Sicherheitsdienstleister testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 52-Stunden-Grenze live überwacht &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

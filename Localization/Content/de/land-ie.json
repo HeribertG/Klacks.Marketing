@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Irland | Dienstpläne für Pflege ohne Personalnotstand-Chaos",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für private Pflegeheime und ambulante Dienste in Irland",
+    "titleHtml": "Der HSE-Personalnotstand trifft auf Ihren privaten Pflegedienst &mdash; <span class=\"text-secondary\">nicht auf ein zentrales HR-System.</span>",
+    "subtitle": "Über 6.500 unbesetzte HSE-Stellen erhöhen den Druck auf private Care Homes und ambulante Dienste, die eigenständig planen. Der Organisation of Working Time Act 1997 verlangt die 48-Stunden-Woche im Schnitt &mdash; im Krankenhaussektor oft über einen 6- statt 4-Monats-Zeitraum. Klacks macht diesen Nachweis über Monate statt Wochen beherrschbar.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in irischer Pflege",
+    "title": "48-Stunden-Woche über Monate nachweisen, nicht über Wochen",
+    "items": [
+      { "icon": "person_off", "title": "Akuter Personalnotstand", "text": "Landesweit fehlen tausende Pflege- und Hebammenstellen &mdash; private Anbieter übernehmen zunehmend Fälle, die sonst der HSE hätte betreuen müssen." },
+      { "icon": "fact_check", "title": "Langer Referenzzeitraum, lückenlose Nachweispflicht", "text": "Im Krankenhaussektor gilt für die 48-Stunden-Woche oft ein 6- statt 4-Monats-Durchschnitt &mdash; ein einzelner Excel-Fehler summiert sich unbemerkt über Monate." },
+      { "icon": "swap_horiz", "title": "Kein zentrales Ausfall-Netz", "text": "Anders als beim HSE gibt es für private Häuser kein zentrales Springer-System &mdash; jeder Ausfall muss im eigenen Team kompensiert werden." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der irischen Data Protection Commission in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und HIQA-Vorbereitung."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks den Referenzzeitraum beherrschbar macht",
+    "subtitle": "Wochenarbeitszeit über Monate im Blick, nicht erst am Monatsende.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Pflegekraft aus, findet Klacks sofort den bestqualifizierten Ersatz im eigenen Team &mdash; ohne Telefonrunde." },
+      { "icon": "fact_check", "title": "Referenzzeitraum-Tracking", "text": "Klacks führt die 48-Stunden-Woche über den gesamten hinterlegten Referenzzeitraum (4 oder 6 Monate) fortlaufend mit &mdash; Abweichungen werden sichtbar, bevor sie zum Problem werden." },
+      { "icon": "file_export", "title": "BrightPay-kompatibler Lohnexport", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt für den in Irland verbreiteten BrightPay-Import aufbereiten." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Arbeitszeit-Grenzen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für irische Pflegeeinrichtungen testen",
+    "text": "Erleben Sie im Playground, wie Klacks den Referenzzeitraum über Monate im Blick behält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

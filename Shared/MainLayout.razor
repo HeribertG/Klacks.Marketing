@@ -104,6 +104,8 @@
     {
         string.Empty, "spitex", "spitaeler", "security", "hausdienste", "logistik",
         "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
+        "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
+        "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
     };
 
     private bool _mobileMenuOpen;
@@ -168,7 +170,10 @@
 
     private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/" : $"/{CurrentCultureRecord.UrlSlug}";
 
-    private string SectionHref(string anchor) => $"{HomeHref}#{anchor}";
+    // Keeps the current localized page (culture + page key, e.g. "/en/land-de")
+    // instead of always jumping to the culture home page — reuses the same
+    // current-page resolution as LanguageSwitchHref so both stay in sync.
+    private string SectionHref(string anchor) => $"{LanguageSwitchHref(CurrentCultureRecord)}#{anchor}";
 
     private string DocsHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
         ? ExternalLinks.DocsPathDe

@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Vietnam | Dienstpläne für Logistik und Sicherheitsdienste",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik- und Sicherheitsdienstleister in Vietnam",
+    "titleHtml": "150%, 200%, 300% &mdash; <span class=\"text-secondary\">plus separate Nachtzuschläge, die sich addieren.</span>",
+    "subtitle": "Der Labor Code 2019 begrenzt Überstunden auf 40 Stunden pro Monat und 200 Stunden pro Jahr (in Ausnahmefällen 300), mit progressiven Zuschlägen von 150% (Werktag), 200% (wöchentlicher Ruhetag) und 300% (Feiertag). Nachtarbeit kommt mit zusätzlichen, separat zu addierenden Zuschlägen obendrauf. Klacks rechnet diese Kombinationen automatisch statt von Hand.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in vietnamesischer Logistik und Security",
+    "title": "Zuschläge, die sich addieren statt sich abzulösen",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "40h/Monat, 200h/Jahr Überstundengrenze", "text": "Nur in Ausnahmefällen bis 300 Stunden pro Jahr erweiterbar &mdash; bei 24/7-Logistikbetrieb schnell erreicht." },
+      { "icon": "payments", "title": "Zuschläge addieren sich", "text": "Nachtarbeitszuschläge kommen zusätzlich zu den 150/200/300%-Sätzen für Werktag, Ruhetag und Feiertag hinzu &mdash; von Hand kaum mehr fehlerfrei zu berechnen." },
+      { "icon": "local_shipping", "title": "24/7-Abdeckung in Logistik und Security", "text": "Lagerhäuser und Wachdienste brauchen lückenlose Besetzung trotz strenger Jahres- und Monatsgrenzen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der vietnamesischen Datenschutzverordnung (Decree 13/2023) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks addierte Zuschläge automatisch berechnet",
+    "subtitle": "Werktag-, Ruhetag-, Feiertag- und Nachtzuschlag korrekt kombiniert.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
+      { "icon": "fact_check", "title": "Kombinierte Zuschlags-Berechnung", "text": "Klacks addiert Nachtzuschläge korrekt zu den 150/200/300%-Sätzen und führt die 40h/Monat- sowie 200h/Jahr-Grenze fortlaufend mit." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für MISA AMIS ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24/7-Rotationen unter Einhaltung der hinterlegten Überstunden-Grenzen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst-Ausweis werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Überstunden-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für vietnamesische Logistik- und Sicherheitsdienstleister testen",
+    "text": "Erleben Sie im Playground, wie Klacks addierte Zuschläge automatisch berechnet &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

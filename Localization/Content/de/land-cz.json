@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Tschechien | Dienstpläne für die 416-Stunden-Grenze im Krankenhaus",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Kliniken und Pflegeeinrichtungen in Tschechien",
+    "titleHtml": "416 Stunden Überstunden pro Jahr &mdash; <span class=\"text-secondary\">und trotzdem lückenlos dokumentiert.</span>",
+    "subtitle": "Seit der Reform von 2023/24 gilt im Zákoník práce wieder die strikte Grenze von 416 Überstunden pro Jahr im Gesundheitswesen, dazu komplexe Regeln für 24-Stunden-Dienste samt gesetzlicher Ersatzruhe. Klacks plant diese Grenzen von Anfang an ein, statt sie am Jahresende nachzurechnen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in tschechischen Kliniken",
+    "title": "Seit den Ärzteprotesten 2023/24: strengere Grenzen, komplexere Ausgleichsregeln",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "416-Stunden-Grenze pro Jahr", "text": "150 Stunden angeordnete plus 266 Stunden einvernehmlich vereinbarte Überstunden &mdash; wer diese Grenze überschreitet, riskiert Bussgelder und Konflikte mit dem Betriebsrat." },
+      { "icon": "schedule", "title": "24-Stunden-Dienste mit Pflicht-Ersatzruhe", "text": "Seit 2024 gilt: 12 Stunden Plan-Schicht plus bis zu 12 Stunden Überstunden in einem 26-Stunden-Fenster, danach rund 22 Stunden gesetzliche Ersatzruhe &mdash; von Hand kaum mehr fehlerfrei zu planen." },
+      { "icon": "groups", "title": "Angespanntes Vertrauen nach den Protesten", "text": "Nach den Ärzteprotesten gegen zu hohe Überstundenlast ist die korrekte, überprüfbare Einhaltung der Grenzen zum Vertrauensthema im Betrieb geworden." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben des tschechischen Datenschutzamts (ÚOOÚ) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Betriebsrat."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die 416-Stunden-Grenze im Blick behält",
+    "subtitle": "Überstunden und Ersatzruhe fortlaufend mitgeführt, nicht erst am Jahresende geprüft.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
+      { "icon": "fact_check", "title": "Überstunden- und Ersatzruhe-Tracking", "text": "Klacks führt die 416-Stunden-Grenze und die 22-Stunden-Ersatzruhe nach 24-Stunden-Diensten fortlaufend mit &mdash; sichtbar für Planende und Betriebsrat." },
+      { "icon": "file_export", "title": "Pohoda-kompatibler Lohnexport", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt für den in Tschechien verbreiteten Pohoda-Import aufbereiten." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für 24-Stunden-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Dienste unter Einhaltung der hinterlegten Ersatzruhe-Regeln." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Überstunden-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für tschechische Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 416-Stunden-Grenze und Ersatzruhe im Blick behält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

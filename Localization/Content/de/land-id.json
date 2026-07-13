@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Indonesien | Dienstpläne für Hotellerie und Facility Management",
+  "hero": {
+    "badgeIcon": "hotel",
+    "badge": "Für Hotels und Facility Management in Indonesien",
+    "titleHtml": "4 Stunden, 18 Stunden &mdash; <span class=\"text-secondary\">und eine Mahlzeit, die nicht bar abgegolten werden darf.</span>",
+    "subtitle": "Die PP 35/2021 begrenzt Überstunden auf 4 Stunden pro Tag und 18 Stunden pro Woche. Weniger bekannt: Ab der vierten Überstunde ist eine Mahlzeit mit mindestens 1.400 Kalorien gesetzlich vorgeschrieben &mdash; und darf nicht durch Geld ersetzt werden. Klacks plant Überstunden so, dass diese Pflicht nicht im Alltagsgeschäft untergeht.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in indonesischer Hotellerie und Facility Management",
+    "title": "Die oft übersehene Pflicht-Mahlzeit ab der vierten Überstunde",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "4h/Tag, 18h/Woche Überstundengrenze", "text": "Die PP 35/2021 setzt enge Grenzen &mdash; bei Schichtbetrieb im Hotel- und Facility-Bereich schnell erreicht." },
+      { "icon": "restaurant", "title": "Pflicht-Mahlzeit ab 1.400 kcal", "text": "Ab vier Stunden Überstunden ist eine Mahlzeit mit mindestens 1.400 Kalorien vorgeschrieben &mdash; nicht bar abgeltbar und in der Praxis oft schlicht vergessen." },
+      { "icon": "hotel", "title": "Lückenlose Schichtabdeckung im Hotelbetrieb", "text": "Rezeption, Housekeeping und Facility-Teams brauchen durchgehende Besetzung trotz enger Überstundengrenzen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des indonesischen Datenschutzgesetzes (UU PDP) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Überstunden- und Mahlzeit-Pflicht im Blick behält",
+    "subtitle": "4h/18h-Grenze und Mahlzeit-Pflicht automatisch mitgeführt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
+      { "icon": "fact_check", "title": "Überstunden- und Pflicht-Mahlzeit-Tracking", "text": "Klacks führt die 4h/18h-Grenze fortlaufend mit und markiert Schichten, ab denen die Pflicht-Mahlzeit fällig wird." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für Accurate Online oder Mekari Talenta ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Überstunden-Grenzen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für indonesische Hotels und Facility-Unternehmen testen",
+    "text": "Erleben Sie im Playground, wie Klacks Überstunden- und Mahlzeit-Pflicht im Blick behält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

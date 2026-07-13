@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Taiwan | Dienstpläne für den gestaffelten Ruhetag-Zuschlag",
+  "hero": {
+    "badgeIcon": "storefront",
+    "badge": "Für Einzelhandel und Sicherheitsdienste in Taiwan",
+    "titleHtml": "133%, 167%, 267% &mdash; <span class=\"text-secondary\">drei Zuschlagsstufen an einem einzigen Tag.</span>",
+    "subtitle": "Das 一例一休-Prinzip (ein fester, ein flexibler Ruhetag pro Woche) verlangt am flexiblen Ruhetag gestaffelte Zuschläge: 133% für die ersten zwei Stunden, 167% für Stunde drei bis acht, 267% ab Stunde neun &mdash; bei einem Standard-Deckel von 46 Überstunden im Monat (erweiterbar auf 54 per Sonderabkommen, Quartalsobergrenze 138 Stunden). Klacks berechnet diese Stufen automatisch statt von Hand.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag im taiwanischen Einzelhandel und Sicherheitsdienst",
+    "title": "Gestaffelte Ruhetag-Zuschläge als Fehlerquelle",
+    "items": [
+      { "icon": "payments", "title": "Drei Zuschlagsstufen an einem Tag", "text": "133%, 167% und 267% je nach Stundenzahl am flexiblen Ruhetag &mdash; von Hand berechnet, ist das eine der häufigsten Fehlerquellen in der Lohnabrechnung." },
+      { "icon": "hourglass_disabled", "title": "Monats- und Quartalsdeckel gleichzeitig", "text": "46 Stunden Standard-Deckel pro Monat, 54 mit Sonderabkommen, zusätzlich 138 Stunden Obergrenze pro Quartal &mdash; drei Grenzwerte parallel im Blick zu behalten ist aufwändig." },
+      { "icon": "storefront", "title": "Lückenlose Ladenöffnungszeiten", "text": "Einzelhandel und Wachdienste brauchen durchgehende Besetzung, obwohl die Ruhetag-Regeln strikt einzuhalten sind." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des taiwanischen Datenschutzgesetzes (PDPA) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Zuschlags-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die gestaffelten Ruhetag-Zuschläge automatisch berechnet",
+    "subtitle": "133/167/267% korrekt zugeordnet, Monats- und Quartalsdeckel im Blick.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Ruhetag-Stunden entstehen." },
+      { "icon": "fact_check", "title": "Gestaffeltes Zuschlags-Tracking", "text": "Klacks ordnet jede Ruhetag-Stunde automatisch der richtigen Zuschlagsstufe zu und führt Monats- und Quartalsdeckel gemeinsam fort." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für Digiwin ERP ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der 一例一休-Regeln." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Zuschlags-Regeln der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für taiwanischen Einzelhandel und Sicherheitsdienste testen",
+    "text": "Erleben Sie im Playground, wie Klacks gestaffelte Ruhetag-Zuschläge automatisch berechnet &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

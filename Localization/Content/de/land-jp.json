@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Japan | Dienstpläne für Pflege und Sicherheitsdienste",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Pflegeeinrichtungen (Kaigo) und Sicherheitsdienste in Japan",
+    "titleHtml": "45-Stunden-Monatsdeckel &mdash; <span class=\"text-secondary\">und trotzdem genug Personal finden.</span>",
+    "subtitle": "Die Hatarakikata-Kaikaku-Reform begrenzt Überstunden regulär auf 45 Stunden pro Monat bzw. 360 Stunden pro Jahr, mit einer Sonderklausel bis 720 Jahresstunden. Gleichzeitig kommen in der Pflege auf jede offene Stelle rund 3,9 Bewerber weniger als im Landesdurchschnitt. Klacks hilft, mit weniger Personal innerhalb dieser Grenzen zu planen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in japanischer Pflege und Security",
+    "title": "45 Stunden im Monat, Sonderklausel bis 720 im Jahr",
+    "items": [
+      { "icon": "person_off", "title": "Akuter Personalmangel in der Pflege", "text": "Die Bewerberquote in der Kaigo-Pflege liegt deutlich unter dem Landesdurchschnitt &mdash; offene Stellen bleiben monatelang unbesetzt." },
+      { "icon": "hourglass_disabled", "title": "45-Stunden-Regel mit Sonderklausel", "text": "Überstunden sind grundsätzlich auf 45 Stunden pro Monat begrenzt &mdash; die Sonderklausel bis 720 Jahresstunden verlangt zusätzlich, dass kein Monat 100 Stunden und kein 2-6-Monats-Schnitt 80 Stunden übersteigt." },
+      { "icon": "fact_check", "title": "Mehrfache Grenzwerte gleichzeitig im Blick", "text": "Monats-, Jahres- und gleitende Mehrmonats-Grenzwerte parallel von Hand zu prüfen, ist fehleranfällig und zeitaufwändig." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des japanischen Datenschutzgesetzes (APPI) und der Vorgaben der Personal Information Protection Commission in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die mehrstufigen Überstunden-Grenzen im Blick behält",
+    "subtitle": "Monats-, Jahres- und Mehrmonats-Grenzwerte automatisch mitgeführt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
+      { "icon": "fact_check", "title": "Mehrstufiges Überstunden-Tracking", "text": "Klacks führt die 45-Stunden-Monatsgrenze, die 720-Stunden-Jahresgrenze und den gleitenden Mehrmonats-Schnitt gemeinsam fort &mdash; sichtbar, bevor eine Grenze gerissen wird." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für Yayoi Kaikei oder freee ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Überstunden-Grenzen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Pflege- oder Sicherheitsqualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Überstunden-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für japanische Pflege- und Sicherheitsdienste testen",
+    "text": "Erleben Sie im Playground, wie Klacks mehrstufige Überstunden-Grenzen im Blick behält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

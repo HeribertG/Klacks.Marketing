@@ -60,6 +60,28 @@
     </div>
 </section>
 
+@if (Content.OpenSource is not null)
+{
+    <!-- OPEN SOURCE & ON-PREMISE -->
+    <section class="reveal py-24 px-8 max-w-4xl mx-auto text-center no-line-rule">
+        @if (!string.IsNullOrEmpty(Content.OpenSource.Eyebrow))
+        {
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Content.OpenSource.Eyebrow</span>
+        }
+        <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.OpenSource.Title)</h2>
+        <p class="text-on-surface-variant leading-relaxed mb-10">@((MarkupString)Content.OpenSource.Text)</p>
+        <div class="grid sm:grid-cols-3 gap-8 text-left">
+            @foreach (var bullet in Content.OpenSource.Bullets)
+            {
+                <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                    <p class="text-sm text-on-surface-variant leading-relaxed m-0">@((MarkupString)bullet)</p>
+                </div>
+            }
+        </div>
+    </section>
+}
+
 <!-- LÖSUNG -->
 <section class="reveal py-32 px-8 max-w-7xl mx-auto">
     <div class="text-center mb-20">
@@ -81,6 +103,34 @@
 @if (Content.ShowRoutePlanning)
 {
     <RoutePlanningSection Culture="@Culture" />
+}
+
+@if (Content.Klacksy is not null)
+{
+    <!-- KLACKSY -->
+    <section class="reveal bg-surface-container-low py-24 no-line-rule">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6">
+                @if (!string.IsNullOrEmpty(Content.Klacksy.Eyebrow))
+                {
+                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Content.Klacksy.Eyebrow</span>
+                }
+                <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.Klacksy.Title)</h2>
+                <p class="text-on-surface-variant leading-relaxed">@((MarkupString)Content.Klacksy.Text)</p>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="screenshot-hover-zoom bg-surface-container-lowest rounded-2xl shadow-2xl p-3 overflow-hidden">
+                    <div class="magnify-frame rounded-lg border border-surface-container-high">
+                        <img src="images/@Content.Klacksy.ImageFile" alt="@Content.Klacksy.ImageAlt" class="magnify-image w-full h-auto block" loading="lazy" />
+                    </div>
+                    @if (!string.IsNullOrEmpty(Content.Klacksy.ImageCaption))
+                    {
+                        <p class="text-xs text-on-surface-variant mt-3 px-1 mb-0">@Content.Klacksy.ImageCaption</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
 }
 
 @if (Content.Example is not null)

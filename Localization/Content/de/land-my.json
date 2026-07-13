@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Malaysia | Dienstpläne für Security und Facility Management",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste und Facility Management in Malaysia",
+    "titleHtml": "45-Stunden-Woche seit 2023 &mdash; <span class=\"text-secondary\">die 104-Stunden-Grenze gibt es schon viel länger.</span>",
+    "subtitle": "Der Employment (Amendment) Act 2022 senkte die wöchentliche Höchstarbeitszeit zum 1. Januar 2023 von 48 auf 45 Stunden. Weniger bekannt: Die monatliche Überstundengrenze von 104 Stunden stammt aus separaten, seit 1980 unveränderten Vorschriften &mdash; kaum ein Unternehmen kann sie lückenlos nachweisen. Klacks führt beide Grenzen automatisch mit.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in malaysischer Security und Facility Management",
+    "title": "Zwei Gesetze, zwei Grenzwerte, ein Dienstplan",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "45-Stunden-Woche seit 2023", "text": "Die Reduktion von 48 auf 45 Stunden ist relativ neu &mdash; viele Dienstpläne rechnen noch mit dem alten Grenzwert." },
+      { "icon": "fact_check", "title": "104-Stunden-Grenze seit 1980", "text": "Die monatliche Überstundengrenze aus separaten Vorschriften wird oft übersehen, weil sie nicht im Employment Act selbst steht." },
+      { "icon": "schedule", "title": "Pflichtpause nach 5 Stunden", "text": "Schichten über 5 Stunden erfordern eine ununterbrochene 30-Minuten-Pause &mdash; bei durchgehendem Wachdienst leicht zu übersehen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des malaysischen Datenschutzgesetzes (PDPA) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks beide Grenzwerte gleichzeitig einhält",
+    "subtitle": "45-Stunden-Woche und 104-Stunden-Monatsgrenze automatisch mitgeführt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Wachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
+      { "icon": "fact_check", "title": "Zwei-Grenzwert-Tracking", "text": "Klacks führt die 45-Stunden-Woche und die 104-Stunden-Monatsgrenze gemeinsam fort und warnt, bevor eine Grenze gerissen wird." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für AutoCount Accounting oder SQL Account ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Pausen- und Überstunden-Regeln." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst-Ausweis werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für malaysische Security- und Facility-Unternehmen testen",
+    "text": "Erleben Sie im Playground, wie Klacks beide Grenzwerte gleichzeitig einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

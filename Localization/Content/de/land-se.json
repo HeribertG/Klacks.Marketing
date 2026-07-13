@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Schweden | Dienstplanung mit korrekter Dygnsvila-Dokumentation",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Alten- und Behindertenpflege sowie persönliche Assistenz in Schweden",
+    "titleHtml": "Dygnsvila-Ausnahmen sauber dokumentiert &mdash; <span class=\"text-secondary\">statt nachträglich rekonstruiert.</span>",
+    "subtitle": "Seit dem neuen Kollektivvertrag zwischen Kommunal und Vårdföretagarna (September 2025) gelten für Pflege und persönliche Assistenz (Branch E/G) präzise Regeln für verkürzte Ruhezeiten, 20&ndash;24-Stunden-Dienste und die anschliessende kompenserande vila. Klacks plant diese Ausnahmen von Anfang an ein, statt sie im Nachhinein per Hand zu belegen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in schwedischer Pflege und persönlicher Assistenz",
+    "title": "Dygnsvila ist kein neues Gesetz — aber der neue Tarifvertrag macht Ausnahmen dokumentationspflichtig",
+    "items": [
+      { "icon": "schedule", "title": "9-Stunden-Ausnahme statt 11-Stunden-Regel", "text": "Der Tarifvertrag erlaubt verkürzte Ruhezeiten und 20&ndash;24-Stunden-Dienste in Branch E und G &mdash; aber nur mit lückenloser Begründung und anschliessender kompenserande vila." },
+      { "icon": "fact_check", "title": "Kompensierende Ruhe verfolgen", "text": "Bei geplanten Ausnahmen wird das Ruhezeit-Defizit auf die nächste Ruhephase aufgeschlagen, bei ungeplanten Ereignissen muss der Ausgleich innerhalb von 14 Tagen erfolgen &mdash; von Hand kaum mehr sauber nachvollziehbar." },
+      { "icon": "groups", "title": "Fachkräftemangel in Alten- und Behindertenpflege", "text": "Wenig Personal muss die komplexen Ausnahmeregeln trotzdem einhalten &mdash; ein falsch geplanter Doppeldienst wird schnell zum Compliance-Problem." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der schwedischen Dataskyddslagen in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Personalvertretungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Dygnsvila-Ausnahmen abbildet",
+    "subtitle": "Nicht als starre Regel, sondern als nachvollziehbarer Planungsprozess.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine dokumentationspflichtige Ruhezeit-Ausnahme entsteht." },
+      { "icon": "fact_check", "title": "Ausnahme- und Ausgleichs-Tracking", "text": "Jede verkürzte Ruhezeit und jede kompenserande vila wird im Dienstplan sichtbar erfasst &mdash; abrufbar, falls Kommunal oder Vårdföretagarna nachfragen." },
+      { "icon": "file_export", "title": "SIE- und PAxml-Export", "text": "Fertige Stunden, Zuschläge und Lohnarten lassen sich direkt für den schwedischen SIE-Standard bzw. PAxml-Lohnexport aufbereiten." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Rotationen unter Einhaltung der hinterlegten Ruhezeit-Regeln, statt sie nachträglich zu prüfen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig bei spezialisierter Behindertenassistenz." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für schwedische Pflege- und Assistenzdienste testen",
+    "text": "Erleben Sie im Playground, wie Klacks Dygnsvila-Ausnahmen nachvollziehbar plant &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

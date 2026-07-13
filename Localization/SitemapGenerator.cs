@@ -8,6 +8,8 @@ public static class SitemapGenerator
     {
         "", "spitex", "spitaeler", "security", "hausdienste", "logistik",
         "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
+        "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
+        "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
     };
 
     public static string Build(string baseUrl)

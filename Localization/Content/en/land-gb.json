@@ -1,0 +1,55 @@
+{
+  "pageTitle": "Klacks for the UK | Rostering for Private Care and Security",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "For private care homes, security providers and facilities management in the UK",
+    "titleHtml": "Opt-out records for the 48-hour week &mdash; <span class=\"text-secondary\">on file, not on request.</span>",
+    "subtitle": "The Working Time Regulations 1998 require a written, freely revocable opt-out for the 48-hour week, which employers must be able to evidence. With high staff turnover and expensive bank and agency shifts, that record-keeping is the real pain point &mdash; Klacks is deliberately built for the private sector, not the NHS.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks shift schedule grid",
+    "screenshotLabel": "Schedule",
+    "screenshotCaption": "Screenshot shown in German — the core app interface ships in German, English, French and Italian; the Klacksy AI assistant additionally understands English."
+  },
+  "challenges": {
+    "eyebrow": "The everyday reality of private care, security & FM",
+    "title": "Opt-out paperwork and expensive short-notice cover",
+    "items": [
+      { "icon": "fact_check", "title": "Opt-out record-keeping", "text": "Every 48-hour-week opt-out needs to be in writing and evidenced &mdash; with high staff turnover, that's a growing administrative burden." },
+      { "icon": "payments", "title": "Expensive bank and agency shifts", "text": "Short-notice cover through agency staff or internal bank pools is often the costliest option &mdash; better forward planning reduces how often you need it." },
+      { "icon": "groups", "title": "High turnover in the private sector", "text": "Private care homes, security providers and FM teams all deal with staff turnover that makes manual rotas go stale fast." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Data sovereignty",
+    "title": "Full data sovereignty: open source &amp; on-premise",
+    "text": "Klacks was built for sectors with strict security and compliance requirements, where sensitive staff data should never leave your own infrastructure. As an open-source solution, Klacks can run entirely in your own data centre or on secured local servers &mdash; without depending on US cloud providers. That makes UK GDPR and ICO compliance entirely your own responsibility to manage, not a vendor's.",
+    "bullets": [
+      "On-premise sovereignty: full control over rosters, opt-out records and logs within your own IT environment.",
+      "Open LLM architecture: AI-assisted scheduling suggestions can also run on locally hosted language models, so no data ever leaves for external APIs.",
+      "Auditable source code: a fully inspectable codebase for IT audits and internal compliance reviews."
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks handles opt-out records and short-notice cost",
+    "subtitle": "Deliberately built for the private sector &mdash; no NHS ESR integration, so you're up and running fast.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery Engine for absences", "text": "If a staff member calls in sick, Klacks instantly finds the best-qualified internal replacement &mdash; before an expensive bank or agency shift becomes necessary." },
+      { "icon": "fact_check", "title": "Opt-out tracking", "text": "Klacks tracks each employee's opt-out status and average weekly hours continuously &mdash; on file whenever HR needs to check." },
+      { "icon": "file_export", "title": "BrightPay-compatible payroll export", "text": "Finished hours, overtime and allowances export directly in a format ready for BrightPay, widely used across the UK and Ireland." },
+      { "icon": "calendar_month", "title": "Autofill wizard for rotations", "text": "The GA-powered autofill assistant plans shift rotations while respecting the working-time limits on file." },
+      { "icon": "groups", "title": "Qualification-aware scheduling", "text": "Only staff with a matching qualification and a valid security or care licence are ever suggested for a shift." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI assistant",
+    "title": "Klacksy: the assistant built into your team's workflow",
+    "text": "Klacksy isn't a bolted-on marketing chatbot &mdash; it's embedded directly in the Klacks interface. Staff and schedulers ask about shifts via chat, request shift swaps, or resolve qualification conflicts within the team. A built-in skills and rules system ensures Klacksy only ever suggests changes that actually match the qualifications and working-time limits of the people involved.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chat assistant inside the Klacks interface"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Try Klacks for private UK care and security providers",
+    "text": "Try the Playground to see how Klacks handles opt-out records and short-notice cover &mdash; or run it on-premise for full data sovereignty."
+  }
+}

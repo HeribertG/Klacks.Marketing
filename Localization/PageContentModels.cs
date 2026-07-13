@@ -5,7 +5,9 @@ public sealed class IndustryPageContent
     public required string PageTitle { get; init; }
     public required IndustryHero Hero { get; init; }
     public required IndustrySection Challenges { get; init; }
+    public IndustryTrustSection? OpenSource { get; init; }
     public required IndustrySection Solutions { get; init; }
+    public IndustryAssistantSection? Klacksy { get; init; }
     public IndustryExample? Example { get; init; }
     public IndustryGallery? Gallery { get; init; }
     public bool ShowRoutePlanning { get; init; } = true;
@@ -68,4 +70,22 @@ public sealed class IndustryGalleryImage
     public required string Alt { get; init; }
     public string? Label { get; init; }
     public string? Caption { get; init; }
+}
+
+public sealed class IndustryTrustSection
+{
+    public string? Eyebrow { get; init; }
+    public required string Title { get; init; }
+    public required string Text { get; init; }
+    public required IReadOnlyList<string> Bullets { get; init; }
+}
+
+public sealed class IndustryAssistantSection
+{
+    public string? Eyebrow { get; init; }
+    public required string Title { get; init; }
+    public required string Text { get; init; }
+    public required string ImageFile { get; init; }
+    public required string ImageAlt { get; init; }
+    public string? ImageCaption { get; init; }
 }

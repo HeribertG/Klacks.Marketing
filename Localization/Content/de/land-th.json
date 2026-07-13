@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks für Thailand | Dienstpläne für die Hotellerie",
+  "hero": {
+    "badgeIcon": "hotel",
+    "badge": "Für Hotels und Hospitality-Betriebe in Thailand",
+    "titleHtml": "48-Stunden-Woche, Pflichtpause &mdash; <span class=\"text-secondary\">und eine Wochenruhe, die vier Wochen wandern darf.</span>",
+    "subtitle": "Der Labour Protection Act begrenzt die Wochenarbeitszeit auf 48 Stunden und verlangt nach 5 Stunden ununterbrochener Arbeit eine Pause von mindestens einer Stunde. Der eigentliche Schmerzpunkt im Hotelbetrieb ist die frei verschiebbare wöchentliche Ruhezeit &mdash; sie darf bis zu vier Wochen aufgeschoben werden, muss aber lückenlos nachvollziehbar bleiben. Klacks behält das im Blick.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in thailändischer Hotellerie",
+    "title": "Die frei verschiebbare Wochenruhe im Hotelbetrieb",
+    "items": [
+      { "icon": "schedule", "title": "Pflichtpause nach 5 Stunden", "text": "Nach 5 Stunden ununterbrochener Arbeit ist eine mindestens einstündige Pause vorgeschrieben &mdash; bei durchgehendem Servicebetrieb leicht zu übersehen." },
+      { "icon": "event", "title": "Bis zu 4 Wochen verschiebbare Wochenruhe", "text": "Anders als in vielen Ländern darf die wöchentliche Ruhezeit im Hotelbetrieb bis zu vier Wochen aufgeschoben werden &mdash; die Nachvollziehbarkeit leidet, wenn das von Hand verwaltet wird." },
+      { "icon": "hotel", "title": "Saisonale Auslastungsspitzen", "text": "Hotels müssen bei stark schwankender Auslastung trotzdem lückenlos und rechtskonform besetzt bleiben." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des thailändischen Datenschutzgesetzes (PDPA) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die verschobene Wochenruhe nachvollziehbar hält",
+    "subtitle": "Pflichtpausen und aufgeschobene Ruhezeiten automatisch mitgeführt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; auch bei saisonalen Auslastungsspitzen." },
+      { "icon": "fact_check", "title": "Ruhezeit-Verschiebungs-Tracking", "text": "Klacks führt jede verschobene Wochenruhe innerhalb des 4-Wochen-Fensters sichtbar mit, statt sie in Excel-Tabellen zu verlieren." },
+      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; eine Anbindung an gängige thailändische Buchhaltungssoftware ist Kandidat für unsere Roadmap." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Pausen- und Ruhezeit-Regeln." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für thailändische Hotels testen",
+    "text": "Erleben Sie im Playground, wie Klacks verschobene Wochenruhe nachvollziehbar hält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}
