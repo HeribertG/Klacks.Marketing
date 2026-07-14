@@ -1,81 +1,51 @@
 {
-  "pageTitle": "Klacks für Saudi-Arabien | Schicht-Optimierung statt weiterer HR-Suite",
+  "pageTitle": "Klacks für Unternehmen in Saudi-Arabien | Personaleinsatzplanung nach Art. 101, PDPL & Nitaqat",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "Für Security-, Facility- und Spitalbetreiber in Saudi-Arabien",
-    "titleHtml": "Behalten Sie Ihr HR-System. <span class=\"text-secondary\">Lösen Sie Ihre Schichtplanung.</span>",
-    "subtitle": "ZenHR, Bayzat und ähnliche Plattformen decken GOSI, Mudad und WPS-Meldungen bereits gut ab &mdash; ihre eingebauten Dienstplaner sind aber rudimentär. Klacks ist die spezialisierte 24/7-Optimierungs-Engine, die Ihr bestehendes Lohnsystem füttert, statt ein weiteres Silo zu schaffen.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; PDPL/SDAIA-konform",
+    "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">die 12-Stunden-Grenze nie überschreitet.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Aufenthaltsgrenze (Art. 101) und lässt sich per KI-Assistent Klacksy steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible biometrische Zeiterfassungsdaten physisch in Saudi-Arabien, ganz im Sinne von PDPL und SDAIA.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in Security, Facility &amp; Spital am Golf",
-    "title": "Die Optimierungslücke bestehender HR-Suiten",
+    "eyebrow": "Der Planungsalltag in saudischen Betrieben",
+    "title": "نظام العمل, Ramadan und die 12-Stunden-Grenze",
     "items": [
-      {
-        "icon": "hourglass_disabled",
-        "title": "Dienstplaner als Nebensache gebaut",
-        "text": "All-in-One-HR-Plattformen decken Visa, Verträge und Behördenmeldungen gut ab &mdash; ihre Dienstplaner sind aber kaum mehr als starre Tabellen, untauglich für echte 24/7-Rotationen."
-      },
-      {
-        "icon": "swap_horiz",
-        "title": "Manuelle Zuschlags-Erfassung",
-        "text": "Nacht-, Feiertags- und Split-Shift-Zuschläge werden von Hand erfasst und dann erneut in die Lohnabrechnung übertragen &mdash; langsam und fehleranfällig."
-      },
-      {
-        "icon": "event",
-        "title": "Freitag/Samstag-Woche, 24/7-Abdeckung",
-        "text": "Wachposten, Stationen und Facility-Teams brauchen weiterhin lückenlose Abdeckung über den Freitag/Samstag-Rhythmus."
-      }
+      { "icon": "gavel", "title": "Regelarbeitszeit &amp; 6-Tage-Grenze", "text": "Die reguläre Arbeitszeit liegt bei max. 8 Stunden pro Tag bzw. 48 Stunden pro Woche (Art. 98). Seit der Reform 2025 gilt zusätzlich: nicht mehr als 6 aufeinanderfolgende Arbeitstage ohne vollen Ruhetag." },
+      { "icon": "nightlight", "title": "Ramadan: automatisch kürzere Schichten", "text": "Für muslimische Mitarbeitende sinkt die tatsächliche Arbeitszeit während des شهر رمضان (Shahr Ramadan) zwingend auf max. 6 Stunden pro Tag bzw. 36 Stunden pro Woche &mdash; und das jedes Jahr neu für genau diese Gruppe." },
+      { "icon": "timer_off", "title": "12-Stunden-Aufenthaltsgrenze (Art. 101)", "text": "Kein Arbeitnehmer darf sich länger als 12 Stunden am Arbeitsplatz aufhalten (التواجد في مكان العمل) &mdash; inklusive Pausen, Gebets- und Essenszeiten. Zusätzlich ist nach max. 5 Stunden Arbeit am Stück eine Pause von mindestens 30 Minuten Pflicht." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks in Ihre bestehende Systemlandschaft passt",
-    "subtitle": "Best-of-Breed statt eines weiteren All-in-One-Kompromisses.",
+    "title": "Wie Klacks Betriebe in Saudi-Arabien entlastet",
+    "subtitle": "Von der automatischen 12-Stunden-Kontrolle bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      {
-        "icon": "bolt",
-        "title": "Spezialisierte Schicht-Optimierung",
-        "text": "Klacks löst die anspruchsvolle 24/7-Rotationsmathematik &mdash; Wachen, Stationen, Facility-Teams &mdash;, an der generische HR-Planer scheitern."
-      },
-      {
-        "icon": "file_export",
-        "title": "Direkter Export in Ihre Lohnabrechnung",
-        "text": "Klacks exportiert fertige Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; eine fertige Golf-Spaltenvorlage für ZenHR/Bayzat-Importe ist als Nächstes auf unserer Roadmap."
-      },
-      {
-        "icon": "groups",
-        "title": "Sofortiger Ersatz bei Ausfall",
-        "text": "Die Recovery-Engine findet den bestqualifizierten Ersatz in dem Moment, in dem eine Schicht unterbesetzt ist &mdash; ohne Telefonrunde."
-      },
-      {
-        "icon": "calendar_month",
-        "title": "Freitag/Samstag-Woche eingebaut",
-        "text": "Die Kalenderregeln von Klacks bilden das regionale Wochenend- und Feiertagsmuster nativ ab &mdash; nicht nachträglich angeflanscht."
-      },
-      {
-        "icon": "shield_lock",
-        "title": "Open Source, On-Premise",
-        "text": "Klacks ist Open Source und kann vollständig auf Ihrer eigenen Infrastruktur laufen &mdash; relevant, wo Datenresidenz (PDPL) zählt, und ohne Lock-in in einen einzelnen Anbieter."
-      }
+      { "icon": "gavel", "title": "Regelarbeitszeit &amp; 6-Tage-Grenze überwacht", "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Verstösse entstehen gar nicht erst." },
+      { "icon": "nightlight", "title": "Ramadan-Arbeitszeit automatisch gekürzt", "text": "Für muslimische Mitarbeitende plant Klacks während des Ramadan automatisch mit der reduzierten 6h/36h-Grenze (Art. 98) &mdash; ohne manuelle Umstellung des gesamten Plans." },
+      { "icon": "timer_off", "title": "12-Stunden-Grenze hart durchgesetzt (Art. 101)", "text": "Klacks blockiert Schichtfolgen, die eine Person länger als 12 Stunden am Arbeitsplatz halten würden &mdash; inklusive Pausen, Gebets- und Essenszeiten." },
+      { "icon": "payments", "title": "Überstundenzuschlag nach Art. 107", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (effektiv 150%) wird automatisch berechnet &mdash; seit der Reform 2025 wahlweise auch als bezahlter Freizeitausgleich." },
+      { "icon": "groups", "title": "Nitaqat-Saudisierung im Blick", "text": "Klacks hält fest, welche saudischen Mitarbeitenden mit einem GOSI-versicherten Gehalt ab SAR 4.000 als volle Quote (1,0) zählen und welche nur mit 0,5 (SAR 3.000 bis 3.999) angerechnet werden." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben in Saudi-Arabien", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Sensible biometrische Zeiterfassungsdaten (البيانات الشخصية الحساسة) bleiben physisch in KSA &mdash; die Transfer-Compliance-Last nach PDPL/SDAIA entfällt." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an PDPL/SDAIA-Konformität lässt sich das KI-Modell zudem lokal in Saudi-Arabien hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Eine Optimierungs-Engine, Ihre bestehende Lohnabrechnung",
-    "text": "Klacks plant die Rotation, erfasst Zuschläge und übergibt einen sauberen Export &mdash; Ihre HR-Plattform behält GOSI-, Mudad- und WPS-Meldung genau dort, wo sie am stärksten ist."
+    "title": "Ramadan-Schicht und 12-Stunden-Grenze, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht während des Ramadan die reduzierte 6h/36h-Grenze überschreiten würde oder eine Schichtfolge einen Mitarbeitenden länger als 12 Stunden am Arbeitsplatz hält (Art. 101) &mdash; und schlägt die Korrektur direkt vor."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks neben Ihrem HR-System erleben",
-    "text": "Testen Sie im Playground, wie Klacks 24/7-Rotationen optimiert und fertige Stunden exportiert &mdash; oder betreiben Sie es On-Premise für volle Datenresidenz."
+    "title": "Klacks in Ihrem Betrieb in Saudi-Arabien erleben",
+    "text": "Testen Sie im Playground, wie Klacks Art. 98/101/107, Ramadan-Arbeitszeiten und die Nitaqat-Saudisierung automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

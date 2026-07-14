@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Haus- & Reinigungsdienste in Thailand | 36h-Limit über alle Objekte",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Haus- &amp; Reinigungsdienste in Thailand",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Reinigungsteams über mehrere Objekte ein und deckelt die Summe aller Überstunden pro Mitarbeitendem automatisch auf das gesetzliche 36-Stunden-Wochenlimit &mdash; objektübergreifend, nicht nur pro Einsatzort.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Thailand",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Facility-Alltag in Thailand",
+    "title": "Mehrere Objekte, ein 36-Stunden-Limit",
+    "items": [
+      { "icon": "apartment", "title": "Reinigungskräfte an mehreren Objekten", "text": "Wer Reinigungskräfte (Phanakngan Tham Khwam Sa-at) an mehreren Objekten einsetzt, muss die Summe aller Überstunden über alle Objekte pro Mitarbeitendem auf 36 Stunden pro Woche deckeln (Section 26) &mdash; von Hand ist diese objektübergreifende Aggregation kaum zuverlässig zu leisten." },
+      { "icon": "gavel", "title": "Sanktionsrisiko bei Überschreitung", "text": "Wird das 36-Stunden-Limit überschritten, drohen Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB (Section 144) &mdash; pro Fall, nicht nur symbolisch." },
+      { "icon": "event_busy", "title": "Kurzfristige Ausfälle über mehrere Objekte", "text": "Fällt eine Reinigungskraft aus, muss der Ersatz an einem anderen Objekt sofort verfügbar sein, ohne das 36-Stunden-Limit dieser Person zu sprengen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Haus- &amp; Reinigungsdienste in Thailand entlastet",
+    "subtitle": "Von der objektübergreifenden Deckelung bis zur optimierten Route &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "gavel", "title": "36h-Wochenlimit objektübergreifend gedeckelt", "text": "Klacks summiert die Überstunden jeder Reinigungskraft über alle Objekte hinweg und sperrt die Planung, bevor das 36-Stunden-Limit nach Section 26 überschritten wird &mdash; genau die Aggregation, die von Hand am schwersten fällt." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor, ohne das 36-Stunden-Limit einer Person zu überschreiten." },
+      { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben in Ihrem Firmennetz, auch bei der KI-Nutzung." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und das 36-Stunden-Limit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mehrere Objekte, ein Limit",
+    "text": "Klacks summiert die Überstunden einer Reinigungskraft automatisch über alle Objekte hinweg und stoppt die Einteilung, bevor das 36-Stunden-Wochenlimit erreicht ist &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Teams und das 36-Stunden-Limit übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für China | Dienstpläne für Logistik und Facility Management",
+  "pageTitle": "Klacks für Unternehmen in China | On-Premise-Zeiterfassung ohne CAC-Prüfung",
   "hero": {
-    "badgeIcon": "local_shipping",
-    "badge": "Für Logistik- und Facility-Management-Unternehmen in China",
-    "titleHtml": "44 Stunden, 36-Stunden-Deckel, drei Zuschlagsstufen &mdash; <span class=\"text-secondary\">alle gleichzeitig im Blick.</span>",
-    "subtitle": "Das chinesische Arbeitsgesetz begrenzt die Wochenarbeitszeit auf 44 Stunden und Überstunden auf 36 Stunden im Monat, mit drei unterschiedlichen Zuschlagsstufen (150/200/300%) je nach Tag. Wo genehmigungspflichtige Ausnahmeregime wie die kumulierte Arbeitszeitberechnung greifen, wird es zusätzlich komplex. Klacks bildet diese Regeln ab, statt sie von Hand nachzurechnen.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; PIPL-konform",
+    "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">im Land bleibt.</span>",
+    "subtitle": "Klacks überwacht die 36-Stunden-Überstundengrenze tagesaktuell, staffelt Zuschläge automatisch nach 150/200/300 % und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten China nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in China",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in chinesischer Logistik und Facility Management",
-    "title": "Drei Zuschlagsstufen, ein monatlicher Überstunden-Deckel",
+    "eyebrow": "Der Planungsalltag in China",
+    "title": "Art. 41, Art. 44 und die Frage der Datenhoheit",
     "items": [
-      { "icon": "hourglass_disabled", "title": "36-Stunden-Überstunden-Deckel", "text": "Über die 44-Stunden-Woche hinaus sind Überstunden auf 36 Stunden pro Monat begrenzt &mdash; bei 24/7-Betrieb schnell erreicht." },
-      { "icon": "payments", "title": "150/200/300%-Zuschlagsstufen", "text": "Werktags-Überstunden, Wochenenddienst und Feiertagsarbeit werden unterschiedlich vergütet &mdash; Wochenenddienst lässt sich zusätzlich durch Freizeitausgleich vermeiden, Feiertagsarbeit nicht." },
-      { "icon": "gavel", "title": "Genehmigungspflichtige Ausnahmeregime", "text": "Die kumulierte Arbeitszeitberechnung (综合计算工时工作制) erlaubt Durchschnittsbildung über längere Zeiträume, braucht aber eine behördliche Genehmigung und saubere Dokumentation." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des chinesischen Datenschutzgesetzes (PIPL) mit seinen Vorgaben zur Datenlokalisierung in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+      { "icon": "gavel", "title": "36-Stunden-Überstundengrenze pro Monat", "text": "Das Arbeitsgesetz (劳动法) Art. 41 erlaubt Überstunden (加班, jiābān) normalerweise nur bis 1 Stunde/Tag, aus besonderen Gründen bis 3 Stunden/Tag und höchstens 36 Stunden im Monat &mdash; und nur nach Konsultation von Gewerkschaft und Belegschaft." },
+      { "icon": "payments", "title": "150/200/300 %-Zuschläge korrekt stufen", "text": "Art. 44 verlangt mindestens 150 % an Werktagen, 200 % an Ruhetagen (mit Wahlrecht auf Freizeitausgleich) und mindestens 300 % an gesetzlichen Feiertagen (法定节假日) &mdash; Letzteres darf nie durch Freizeit ersetzt werden. Seit den 10 Referenzfällen von Oberstem Volksgericht und MOHRSS gegen das „996“-Schema (26.08.2021) prüfen Gerichte das genau." },
+      { "icon": "privacy_tip", "title": "Biometrische Daten &amp; PIPL", "text": "Das Persönliche-Informationen-Schutzgesetz (PIPL) zählt Gesichts-, Fingerabdruck- und Stimmdaten zu sensiblen persönlichen Informationen. Gehen sensible Daten von über 10'000 Betroffenen ins Ausland, ist eine CAC-Sicherheitsprüfung (网信办, PIPL Art. 38) Pflicht." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die drei Zuschlagsstufen automatisch trennt",
-    "subtitle": "Werktag, Wochenende und Feiertag von Anfang an unterschiedlich behandelt.",
+    "title": "Wie Klacks Unternehmen in China entlastet",
+    "subtitle": "Von der tagesaktuellen Überstunden-Grenze bis zur Datenhoheit vor Ort &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
-      { "icon": "fact_check", "title": "Zuschlagsstufen- und Deckel-Tracking", "text": "Klacks unterscheidet Werktags-, Wochenend- und Feiertagsüberstunden automatisch und führt den 36-Stunden-Monatsdeckel fortlaufend mit." },
-      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für Yonyou oder Kingdee ist Kandidat für unsere Roadmap." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Überstunden-Grenzen." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "schedule", "title": "36h-Monatsgrenze tagesaktuell überwacht", "text": "Klacks führt jiābān gegen die Art.-41-Grenzen (1h/Tag normal, 3h/Tag aus besonderem Grund, 36h/Monat) &mdash; und warnt, bevor die Grenze erreicht ist, statt erst danach." },
+      { "icon": "payments", "title": "150/200/300 % automatisch gestuft", "text": "Klacks ordnet jede Überstunde automatisch der richtigen Stufe nach Art. 44 zu &mdash; inklusive der Regel, dass der 300 %-Feiertagszuschlag nie durch Freizeit ersetzt werden darf." },
+      { "icon": "fact_check", "title": "Monats-Soll seit 1.1.2025 aktuell: 165,3h", "text": "Klacks rechnet mit dem seit 1.1.2025 gültigen MOHRSS-Monats-Soll von 165,3 Stunden (20,67 Tage × 8h) &mdash; nicht mehr mit dem veralteten Wert von 166,6 Stunden." },
+      { "icon": "shield_lock", "title": "On-Premise: biometrische Daten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Biometrische Zeiterfassungs-Logs verlassen das Land nie &mdash; die CAC-Cross-Border-Prüfung nach PIPL Art. 38 entfällt damit." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung. Das Sprachmodell lässt sich auch lokal hosten." },
+      { "icon": "map", "title": "Provinzielle Lohnunterschiede abgebildet", "text": "China kennt keinen landesweiten Mindestlohn &mdash; die Sätze legen 31 Provinzen und Städte in eigenen Klassen (A/B/C) fest. Klacks bildet das als Konfiguration pro Standort ab, statt es hart zu verdrahten." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Überstunden-Grenzen der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an PIPL und Datenlokalisierung lässt sich das KI-Modell zudem lokal in China hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "40-Stunden-Woche, Art. 41 und 165,3h, ein Blick",
+    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden rechnet Klacks exakt nach Art. 41/44 ab, mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für chinesische Logistik- und Facility-Unternehmen testen",
-    "text": "Erleben Sie im Playground, wie Klacks die drei Zuschlagsstufen automatisch trennt &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Unternehmen in China erleben",
+    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze, die 150/200/300 %-Zuschläge und die PIPL-Datenhoheit automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Logistics in Saudi Arabia | TGA Driving Hours & Summer Midday Ban",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "For logistics &amp; transport in Saudi Arabia",
+    "titleHtml": "Routes, driving hours, loading times &mdash; <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks schedules routes and drivers &mdash; with driving and rest times per TGA (الهيئة العامة للنقل) and the summer midday ban for loading and unloading at uncovered ramps.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for routes and driver assignments in Saudi Arabia",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Day-to-day logistics operations in Saudi Arabia",
+    "title": "TGA Driving Hours, Rest Times and the Summer Midday Ban",
+    "items": [
+      { "icon": "timer", "title": "Driving Hours under TGA", "text": "A maximum of 9 hours of driving time per day (exceptionally 10 hours, no more than twice a week), 56 hours per week, and a maximum of 90 hours per two weeks (ساعات القيادة) &mdash; hard to guarantee by hand across many drivers and routes." },
+      { "icon": "pause_circle", "title": "Breaks &amp; Rest Times", "text": "After at most 4.5 hours of continuous driving, a break of at least 45 minutes is mandatory, plus 11 hours of daily rest and 48 hours of rest after a work week. Fine for violations: SAR 2,000 to 5,000." },
+      { "icon": "wb_sunny", "title": "Summer Midday Ban at Ramps &amp; Loading Zones", "text": "From June 15 to September 15, loading and unloading at uncovered ramps and loading zones is banned daily between 12:00 and 15:00 &mdash; loading times must be scheduled accordingly." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks Takes the Load Off Logistics in Saudi Arabia",
+    "subtitle": "From optimised routes to the summer midday ban &mdash; it all fits together.",
+    "items": [
+      { "icon": "route", "title": "Routes Optimised Automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short distances, time windows kept, fewer empty runs." },
+      { "icon": "timer", "title": "TGA Driving Hours Checked", "text": "The 9-hour limit, the 56-hour weekly limit and the 90-hour limit per two weeks are monitored in real time &mdash; violations simply never occur." },
+      { "icon": "pause_circle", "title": "Breaks &amp; Rest Times Scheduled", "text": "Klacks automatically builds in the 45-minute break after 4.5 hours of driving, along with the 11-hour daily rest and the 48-hour weekly rest." },
+      { "icon": "wb_sunny", "title": "Summer Midday Ban at Ramps Considered", "text": "Klacks schedules loading and unloading at uncovered ramps so the window from 12:00 to 15:00 (June 15 to September 15) stays clear." },
+      { "icon": "badge", "title": "Matching License Classes", "text": "Klacks assigns routes only to drivers with the appropriate license &mdash; and warns before certifications expire." },
+      { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Plan tomorrow&rsquo;s routes, driver is sick\" is enough &mdash; Klacksy recalculates everything, including driving hours and the summer midday ban." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In Practice",
+    "title": "Driving Hours and the Summer Midday Ban, One Plan",
+    "text": "Klacks automatically checks driving and rest times under TGA and schedules loading times at uncovered ramps so the summer midday ban (12:00 to 15:00, June 15 to September 15) is observed."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in Your Logistics Business",
+    "text": "Try the Playground to see how Klacks handles routes, driving hours and the summer midday ban &mdash; or install it directly on your own infrastructure. Free and without registration."
+  }
+}

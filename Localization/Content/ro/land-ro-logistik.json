@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks pentru logistică din România | Pachetul de mobilitate UE &amp; autoutilitare 2026",
+  "pageTitle": "Klacks pentru logistică din România | Pachetul de mobilitate UE & autoutilitare 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pentru logistică &amp; transport din România",
@@ -13,21 +13,57 @@
     "eyebrow": "Realitatea zilnică din logistica din România",
     "title": "Timpi de conducere, curse de noapte și noile reguli pentru autoutilitare",
     "items": [
-      { "icon": "timer", "title": "Timpi de conducere &amp; obligativitatea pauzelor", "text": "Maximum 9 ore de conducere pe zi (extensibil la 10 ore de două ori pe săptămână), plus o pauză de cel puțin 45 de minute după cel mult 4,5 ore de conducere &mdash; greu de respectat sigur manual pentru mulți șoferi și trasee." },
-      { "icon": "bedtime", "title": "Limita de 10 ore la cursele de noapte", "text": "Dacă un șofer conduce într-un interval de noapte de cel puțin 4 ore consecutive între orele 0 și 7, timpul total de lucru în 24 de ore nu poate depăși 10 ore &mdash; iar activitatea de conducere este limitată suplimentar la maximum 6 ore fără pauză (Ordonanța Guvernului nr. 37/2007)." },
-      { "icon": "local_shipping", "title": "Autoutilitarele intră sub Pachetul de mobilitate UE de la iulie 2026", "text": "De la 1 iulie 2026, reglementările UE privind timpii de conducere/repaus, obligativitatea tahografului și normele de detașare se aplică și vehiculelor între 2,5 și 3,5 tone în transportul transfrontalier și la cabotaj." }
+      {
+        "icon": "timer",
+        "title": "Timpi de conducere &amp; obligativitatea pauzelor",
+        "text": "Maximum 9 ore de conducere pe zi (extensibil la 10 ore de două ori pe săptămână), plus o pauză de cel puțin 45 de minute după cel mult 4,5 ore de conducere &mdash; greu de respectat sigur manual pentru mulți șoferi și trasee."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Limita de 10 ore la cursele de noapte",
+        "text": "Dacă un șofer conduce într-un interval de noapte de cel puțin 4 ore consecutive între orele 0 și 7, timpul total de lucru în 24 de ore nu poate depăși 10 ore &mdash; iar activitatea de conducere este limitată suplimentar la maximum 6 ore fără pauză (Ordonanța Guvernului nr. 37/2007)."
+      },
+      {
+        "icon": "local_shipping",
+        "title": "Autoutilitarele intră sub Pachetul de mobilitate UE de la iulie 2026",
+        "text": "De la 1 iulie 2026, reglementările UE privind timpii de conducere/repaus, obligativitatea tahografului și normele de detașare se aplică și vehiculelor între 2,5 și 3,5 tone în transportul transfrontalier și la cabotaj."
+      }
     ]
   },
   "solutions": {
     "title": "Cum ușurează Klacks logistica din România",
     "subtitle": "De la traseul optimizat până la noua obligație pentru autoutilitare &mdash; totul se îmbină perfect.",
     "items": [
-      { "icon": "route", "title": "Trasee optimizate automat", "text": "Klacks stabilește opririle în cea mai logică ordine &mdash; drumuri scurte, intervale orare respectate, mai puține curse în gol." },
-      { "icon": "timer", "title": "Timpi de conducere &amp; de pauză monitorizați", "text": "Limita de 9 ore (respectiv 10 ore în două zile pe săptămână) și obligativitatea pauzei de 45 de minute după 4,5 ore de conducere sunt verificate continuu." },
-      { "icon": "bedtime", "title": "Limita de 10 ore la cursele de noapte, verificată", "text": "Klacks detectează intervențiile din intervalul de noapte și limitează automat timpul total de lucru la 10 ore per 24 de ore." },
-      { "icon": "local_shipping", "title": "Pregătit pentru regula autoutilitarelor de la iulie 2026", "text": "Klacks reflectă și combinațiile de autoutilitare între 2,5 și 3,5 tone, care intră nou sub Pachetul de mobilitate UE în transportul transfrontalier." },
-      { "icon": "badge", "title": "Categoriile de permis potrivite", "text": "Klacks alocă traseele doar șoferilor cu autorizația potrivită &mdash; și avertizează înainte ca un document să expire." },
-      { "icon": "smart_toy", "title": "Klacksy planifică prin voce", "text": "„Planifică traseele pentru mâine, șoferul Popescu este bolnav” este suficient &mdash; Klacksy recalculează totul, inclusiv timpii de conducere." }
+      {
+        "icon": "route",
+        "title": "Trasee optimizate automat",
+        "text": "Klacks stabilește opririle în cea mai logică ordine &mdash; drumuri scurte, intervale orare respectate, mai puține curse în gol."
+      },
+      {
+        "icon": "timer",
+        "title": "Timpi de conducere &amp; de pauză monitorizați",
+        "text": "Limita de 9 ore (respectiv 10 ore în două zile pe săptămână) și obligativitatea pauzei de 45 de minute după 4,5 ore de conducere sunt verificate continuu."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Limita de 10 ore la cursele de noapte, verificată",
+        "text": "Klacks detectează intervențiile din intervalul de noapte și limitează automat timpul total de lucru la 10 ore per 24 de ore."
+      },
+      {
+        "icon": "local_shipping",
+        "title": "Pregătit pentru regula autoutilitarelor de la iulie 2026",
+        "text": "Klacks reflectă și combinațiile de autoutilitare între 2,5 și 3,5 tone, care intră nou sub Pachetul de mobilitate UE în transportul transfrontalier."
+      },
+      {
+        "icon": "badge",
+        "title": "Categoriile de permis potrivite",
+        "text": "Klacks alocă traseele doar șoferilor cu autorizația potrivită &mdash; și avertizează înainte ca un document să expire."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifică prin voce",
+        "text": "„Planifică traseele pentru mâine, șoferul Popescu este bolnav” este suficient &mdash; Klacksy recalculează totul, inclusiv timpii de conducere."
+      }
     ]
   },
   "example": {

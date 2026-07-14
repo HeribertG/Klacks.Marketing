@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Gebäudereinigung in Südkorea | Bezahlte Wartezeit bei geteilten Diensten",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Gebäudereinigung in Südkorea",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks plant Objekte, Routen und geteilte Reinigungsschichten (분할근무) effizient ein &mdash; und erfasst Wartezeiten zwischen den Einsätzen korrekt als bezahlte Arbeitszeit.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Südkorea",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Südkorea",
+    "title": "Geteilte Schichten und bezahlte Wartezeit",
+    "items": [
+      { "icon": "pin_drop", "title": "Viele Objekte, geteilte Schichten", "text": "Geteilte Reinigungsschichten (분할근무) mit Lücken zwischen den Einsätzen sind in der Branche üblich &mdash; die Wartezeit dazwischen wird leicht übersehen." },
+      { "icon": "payments", "title": "Wartezeit zählt als volle Arbeitszeit", "text": "Zeit, in der Reinigungspersonal unter Weisung/Aufsicht des Arbeitgebers auf den nächsten Einsatz wartet (대기시간), gilt gesetzlich als volle Arbeitszeit und ist zu vergüten (§ 50 Abs. 3 LSA)." },
+      { "icon": "gavel", "title": "52-Stunden-Cap gilt auch hier", "text": "Auch für Reinigungsteams gilt die 52-Stunden-Woche aus 40h regulär plus max. 12h Überstunden (§§ 50, 53 LSA) &mdash; bei mehreren Objekten und geteilten Schichten von Hand schwer im Blick zu behalten." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Hausdienste in Südkorea entlastet",
+    "subtitle": "Von der optimierten Route bis zur korrekt erfassten Wartezeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; auch bei geteilten Schichten über den Tag verteilt." },
+      { "icon": "payments", "title": "Wartezeit korrekt als Arbeitszeit erfasst", "text": "Klacks erfasst die Zeit zwischen zwei Einsätzen einer geteilten Schicht automatisch als vergütungspflichtige Arbeitszeit (§ 50 Abs. 3 LSA)." },
+      { "icon": "gavel", "title": "52-Stunden-Cap automatisch überwacht", "text": "Klacks summiert reguläre und Überstunden je Mitarbeitendem und warnt, bevor die 52-Stunden-Grenze erreicht wird." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Aushilfen: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatzdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Gangnam für morgen früh“ genügt &mdash; Klacksy optimiert Route und Wartezeit gleich mit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wartezeit, Route, ein Nachweis",
+    "text": "Klacks erfasst die Wartezeit zwischen zwei Einsätzen einer geteilten Schicht automatisch als Arbeitszeit und hält gleichzeitig die 52-Stunden-Woche im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Wartezeit und den 52-Stunden-Cap übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

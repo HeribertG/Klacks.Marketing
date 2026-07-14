@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik Saudi-Arabien | TGA-Lenkzeiten & Sommer-Mittagsverbot",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in Saudi-Arabien",
+    "titleHtml": "Touren, Lenkzeiten, Verladezeiten &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Lenk- und Ruhezeiten gemäss TGA (الهيئة العامة للنقل) und dem Sommer-Mittagsverbot für Be- und Entladung an unüberdachten Rampen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Saudi-Arabien",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Saudi-Arabien",
+    "title": "TGA-Lenkzeiten, Ruhezeiten und Sommer-Mittagsverbot",
+    "items": [
+      { "icon": "timer", "title": "Lenkzeiten nach TGA", "text": "Maximal 9 Stunden Lenkzeit pro Tag (in Ausnahmen 10 Stunden, höchstens 2x pro Woche), 56 Stunden pro Woche und max. 90 Stunden pro zwei Wochen (ساعات القيادة) &mdash; über viele Fahrer und Touren von Hand kaum sicher einzuhalten." },
+      { "icon": "pause_circle", "title": "Pausen- &amp; Ruhezeiten", "text": "Nach spätestens 4,5 Stunden durchgehender Fahrt sind mindestens 45 Minuten Pause Pflicht, dazu 11 Stunden Tagesruhe und 48 Stunden Ruhe nach einer Arbeitswoche. Bussgeld bei Verstoss: SAR 2.000 bis 5.000." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot an Rampen &amp; Ladezonen", "text": "Vom 15. Juni bis 15. September ist Be- und Entladung an unüberdachten Rampen und Ladezonen täglich zwischen 12:00 und 15:00 Uhr verboten &mdash; Verladezeiten müssen entsprechend getaktet werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in Saudi-Arabien entlastet",
+    "subtitle": "Von der optimierten Tour bis zum Sommer-Mittagsverbot &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "timer", "title": "TGA-Lenkzeiten geprüft", "text": "Die 9-Stunden-Grenze, die 56-Stunden-Wochengrenze und die 90-Stunden-Grenze pro zwei Wochen werden in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst." },
+      { "icon": "pause_circle", "title": "Pausen- &amp; Ruhezeiten eingeplant", "text": "Klacks plant die 45-Minuten-Pause nach 4,5 Stunden Fahrt sowie die 11-Stunden-Tagesruhe und die 48-Stunden-Wochenruhe automatisch mit ein." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot an Rampen berücksichtigt", "text": "Klacks taktet Be- und Entladung an unüberdachten Rampen so, dass das Fenster von 12:00 bis 15:00 Uhr (15. Juni bis 15. September) frei bleibt." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Lenkzeiten und Sommer-Mittagsverbot." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Lenkzeit und Sommer-Mittagsverbot, ein Plan",
+    "text": "Klacks prüft Lenk- und Ruhezeiten nach TGA automatisch und taktet Verladezeiten an unüberdachten Rampen so, dass das Sommer-Mittagsverbot (12:00 bis 15:00 Uhr, 15. Juni bis 15. September) eingehalten wird."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und das Sommer-Mittagsverbot übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

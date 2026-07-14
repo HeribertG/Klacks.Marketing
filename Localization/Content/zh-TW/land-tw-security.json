@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks 台灣保全業版 | 240至288小時月工時上限",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "適用於台灣保全業",
+    "titleHtml": "每個崗位都補滿 &mdash; <span class=\"text-secondary\">絕不突破288小時上限。</span>",
+    "subtitle": "Klacks 為據點與巡邏排班補齊每個崗位 &mdash; 並自動監控責任制保全人員每月240小時基本工時至最高288小時的階梯上限。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 台灣據點排班與巡邏時間軸畫面",
+    "screenshotLabel": "時間軸"
+  },
+  "challenges": {
+    "eyebrow": "台灣保全業的日常挑戰",
+    "title": "240/288小時上限、每日工時上限與班次間隔",
+    "items": [
+      { "icon": "schedule", "title": "每月240至最高288小時", "text": "適用責任制（勞基法第84-1條）的保全人員，核定正常月工時為240小時，加班上限為48小時 &mdash; 絕對上限為288小時。第241小時至第288小時之間的每一小時均屬加班（勞動部保全業審查指導原則）。" },
+      { "icon": "bedtime", "title": "10/12小時每日上限 &amp; 11小時間隔", "text": "每日正常工時上限為10小時，含加班則上限為12小時；班次之間須保有至少11小時的休息時間 &mdash; 跨多個據點與班別時，人工作業難以確保完全合規。" },
+      { "icon": "gavel", "title": "人身保全 &amp; 運鈔車保全：各自適用不同規範", "text": "人身保全與運鈔車保全適用有別於一般保全業的規範 &mdash; 若對所有保全人員套用同一套計算模式，將無法涵蓋實際差異。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何為台灣保全業減輕負擔",
+    "subtitle": "從崗位補齊到正確的月工時上限 &mdash; 環環相扣，一次到位。",
+    "items": [
+      { "icon": "shield", "title": "據點 &amp; 崗位無縫排班", "text": "涵蓋所有據點的每個崗位 &mdash; Klacks 即時顯示每個空缺，並可依需求自動補齊。" },
+      { "icon": "schedule", "title": "自動監控240至288小時上限", "text": "Klacks 在排班表中監控第241小時的臨界點，並在觸及每月288小時絕對上限前提前預警。" },
+      { "icon": "bedtime", "title": "強制執行每日上限 &amp; 11小時間隔", "text": "Klacks 不允許任何含加班超過12小時的班次，並自動納入11小時班次間隔的規劃。" },
+      { "icon": "gavel", "title": "人身保全 &amp; 運鈔車保全分開處理", "text": "Klacks 將人身保全與運鈔車保全的特殊規範，與一般保全業分開處理。" },
+      { "icon": "verified", "title": "自動檢核證照", "text": "Klacks 僅將班次分配給持有效證照的人員 &mdash; 並在證照即將到期前提前預警。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音指令排班", "text": "只要說「補齊北區據點的夜班」即可 &mdash; Klacksy 會自動檢查240/288小時上限。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實例說明",
+    "title": "240至288小時，一目了然",
+    "text": "只要保全人員的當月工時超過240小時，Klacks 便會立即在排班表中顯示，並持續監控不超過288小時的絕對上限。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的保全公司中體驗 Klacks",
+    "text": "在體驗平台中親自測試 Klacks 如何處理崗位排班、月工時上限與班次間隔 &mdash; 完全免費，無需註冊。"
+  }
+}

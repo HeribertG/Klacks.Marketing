@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege in Südkorea | RFID-Besuchsnachweis & Ruhetagszuschlag",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege (요양보호사) in Südkorea",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für den Nachweis.</span>",
+    "subtitle": "Klacks gleicht geplante Einsätze automatisch mit den RFID-Besuchsstempeln ab, die das staatliche System an die NHIS meldet &mdash; und plant den Zuschlag für Arbeit am wöchentlichen Ruhetag gleich mit ein. On-Premise, damit Pflegedaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Südkorea",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege in Südkorea (재가급여)",
+    "title": "RFID-Nachweis, NHIS und der Ruhetagszuschlag",
+    "items": [
+      { "icon": "punch_clock", "title": "RFID-Besuchsnachweis für jeden Einsatz", "text": "Pflegekräfte (요양보호사) müssen Beginn und Ende jedes Hausbesuchs per RFID-Tag im Haushalt der Klient:innen erfassen &mdash; nur so registrierte Zeiten vergütet die Langzeitpflegekasse über die NHIS (국민건강보험공단)." },
+      { "icon": "fact_check", "title": "Ist-Daten gegen Plan abgleichen", "text": "Weichen die RFID-Stempel vom geplanten Einsatz ab, drohen Rückfragen der NHIS &mdash; ein manueller Abgleich zwischen Plan und Stempeldaten kostet Zeit." },
+      { "icon": "event_repeat", "title": "Zuschlag am wöchentlichen Ruhetag", "text": "Mindestens 1 bezahlter Ruhetag pro Woche (주휴일, § 55 LSA) steht zu; wird an diesem Tag gearbeitet, entsteht ein Zuschlag von 50% bis 8h und 100% ab der 9. Stunde (§ 56 Abs. 2 LSA)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in Südkorea entlastet",
+    "subtitle": "Von der automatischen Tour bis zum RFID-Abgleich &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden." },
+      { "icon": "fact_check", "title": "RFID-Stempel gegen Plan abgeglichen", "text": "Klacks vergleicht die geplanten Einsätze mit den tatsächlichen RFID-Besuchsstempeln, die an die NHIS gemeldet werden &mdash; Abweichungen fallen sofort auf, statt erst bei der Abrechnung." },
+      { "icon": "event_available", "title": "Ruhetag &amp; Zuschlag automatisch geplant", "text": "Klacks stellt den wöchentlichen bezahlten Ruhetag (주휴일) sicher und berechnet den fälligen Zuschlag von 50% bzw. 100%, sobald an diesem Tag gearbeitet wird." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Pflege- und Personendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "RFID-Stempel, Ruhetag, ein Abgleich",
+    "text": "Klacks gleicht die RFID-Besuchsstempel automatisch mit dem geplanten Einsatz ab und berechnet den Zuschlag, sobald am wöchentlichen Ruhetag gearbeitet wird &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer häuslichen Pflege erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, RFID-Abgleich und den Ruhetagszuschlag übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

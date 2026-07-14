@@ -1,0 +1,74 @@
+{
+  "pageTitle": "Klacks untuk Jasa Kebersihan & Rumah Tangga Indonesia | Tunjangan Tepat untuk Sistem 5 atau 6 Hari",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Untuk Jasa Kebersihan &amp; Rumah Tangga (Petugas Kebersihan) di Indonesia",
+    "titleHtml": "Setiap objek <span class=\"text-secondary\">terjadwal rapi dan bersih.</span>",
+    "subtitle": "Klacks membagi objek dan rute secara efisien serta menghitung tunjangan hari libur secara otomatis dengan tabel yang tepat &mdash; tergantung apakah objek Anda beroperasi dengan sistem 5 hari atau 6 hari.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Kisi jadwal dinas Klacks untuk tim kebersihan dan objek di Indonesia",
+    "screenshotLabel": "Jadwal Kerja"
+  },
+  "challenges": {
+    "eyebrow": "Keseharian jasa kebersihan di Indonesia",
+    "title": "Sistem 5 hari atau 6 hari, tabel tunjangan yang berbeda",
+    "items": [
+      {
+        "icon": "calendar_month",
+        "title": "Model operasional menentukan tabel tunjangan hari libur",
+        "text": "Jika sebuah objek beroperasi dengan sistem 5 hari (8 jam/hari), 8 jam pertama pada hari libur dikenai 2,0×; pada sistem 6 hari (7 jam/hari), 7 jam pertama dikenai 2,0× &mdash; setelah itu 3,0× dan 4,0× (UU 13/2003 Pasal 77, PP 35/2021 Pasal 31). Jika model tersebut tidak dicatat dengan rapi per objek, tabel yang salah dengan cepat akan diterapkan."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Istirahat sesuai undang-undang saat berpindah objek",
+        "text": "Setelah 4 jam kerja berturut-turut, istirahat tanpa dibayar minimal 30 menit wajib dilakukan (UU 13/2003 Pasal 79) &mdash; mudah terlewat saat objek berganti-ganti dan melibatkan tenaga paruh waktu."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacks meringankan beban jasa kebersihan Indonesia",
+    "subtitle": "Dari rute yang dioptimalkan hingga tabel tunjangan yang tepat &mdash; semuanya saling terhubung.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Rute objek dioptimalkan",
+        "text": "Klacks menyusun urutan objek agar jarak tempuh tetap singkat."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Tabel tunjangan yang tepat untuk setiap objek",
+        "text": "Klacks mencatat untuk setiap objek apakah berlaku sistem 5 hari atau 6 hari, dan secara otomatis menerapkan tabel tunjangan hari libur yang sesuai dari PP 35/2021 Pasal 31 &mdash; 8 jam pertama atau 7 jam pertama dikenai 2,0×, setelah itu meningkat secara progresif."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Istirahat terjadwal otomatis",
+        "text": "Istirahat minimal 30 menit setelah 4 jam kerja (UU 13/2003 Pasal 79) otomatis direncanakan untuk setiap shift."
+      },
+      {
+        "icon": "groups",
+        "title": "Tim diatur secara fleksibel",
+        "text": "Susunan personel yang berganti-ganti dan tenaga bantuan &mdash; Klacks tetap memberikan gambaran menyeluruh dan mengusulkan penempatan yang sesuai."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: kedaulatan data penuh",
+        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; data objek dan personel tetap berada di tempat yang Anda inginkan."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy merencanakan lewat perintah suara",
+        "text": "“Rencanakan objek untuk besok pagi” saja sudah cukup &mdash; Klacksy mengoptimalkan rute, tim, dan istirahat."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh Konkret",
+    "title": "Dinas hari libur pada objek sistem 6 hari, satu rencana",
+    "text": "Klacks mengenali bahwa sebuah objek beroperasi dengan sistem 6 hari, dan menghitung tunjangan 7 jam pertama pada hari libur dengan tepat sebesar 2,0× &mdash; tanpa perlu menghitung ulang secara manual."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Rasakan Klacks di perusahaan jasa kebersihan Anda",
+    "text": "Coba di Playground bagaimana Klacks menangani rute, tim, dan tabel tunjangan &mdash; atau instal langsung di infrastruktur Anda sendiri. Gratis dan tanpa registrasi."
+  }
+}

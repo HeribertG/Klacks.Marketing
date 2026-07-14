@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Krankenhäuser in Südkorea | Assistenzarzt-Dauerschicht 24h & 11h-Ruhe",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Südkorea",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">der neuen Assistenzarzt-Grenze standhalten.</span>",
+    "subtitle": "Ab 21. Februar 2026 sinkt die maximale Dauerschicht für Assistenzärzte von 36 auf 24 Stunden (28h im Notfall) &mdash; Klacks plant diese Grenze und die 11-stündige Mindestruhe im Gesundheitswesen automatisch mit.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Südkorea",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Südkorea",
+    "title": "Neue Assistenzarzt-Grenze und Ruhezeit-Pflicht",
+    "items": [
+      { "icon": "medical_services", "title": "Assistenzarzt-Dauerschicht sinkt auf 24h", "text": "Ab 21. Februar 2026 sinkt die maximale kontinuierliche Dienstzeit für Assistenzärzte (전공의) von 36 auf 24 Stunden, in Notfällen ausnahmsweise bis 28 Stunden (Medical Resident Act; MOHW)." },
+      { "icon": "gavel", "title": "Bussgeld bei Verstoss", "text": "Ausbildungskrankenhäuser, die die neue Grenze überschreiten, riskieren ein Ordnungsgeld (과태료) von 5 Mio. KRW." },
+      { "icon": "bedtime", "title": "11 Stunden Ruhe auch im Gesundheitswesen", "text": "Krankenhäuser zählen zu den Sonderausnahme-Branchen nach § 59 LSA; adoptieren sie die Ausnahmevereinbarung, müssen sie 11 zusammenhängende Ruhestunden zwischen zwei Arbeitstagen gewähren." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Kliniken in Südkorea entlastet",
+    "subtitle": "Von der 24-Stunden-Grenze bis zur 11-Stunden-Ruhe &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "24-Stunden-Grenze ab 21.2.2026 vorbereitet", "text": "Klacks kennt die neue Obergrenze von 24 Stunden Dauerschicht für Assistenzärzte (28h im Notfall) und warnt, bevor ein Dienstplan sie überschreitet." },
+      { "icon": "gavel", "title": "Bussgeld-Risiko reduziert", "text": "Da die Grenze pro Assistenzarzt automatisch überwacht wird, sinkt das Risiko eines Ordnungsgelds von 5 Mio. KRW für das Ausbildungskrankenhaus." },
+      { "icon": "bedtime", "title": "11-Stunden-Ruhe automatisch eingeplant", "text": "Klacks stellt sicher, dass zwischen zwei Arbeitstagen die nach § 59 LSA vorgeschriebenen 11 zusammenhängenden Ruhestunden liegen." },
+      { "icon": "verified", "title": "Stationen &amp; Qualifikationen abgestimmt", "text": "Jeder Dienst wird nur Personen mit passender Qualifikation zugeteilt &mdash; über alle Stationen hinweg." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Prüfe die Dauerschichten der Assistenzärzte für nächste Woche“ genügt &mdash; Klacksy berechnet Ruhezeit und Grenze gleich mit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Dauerschicht, Ruhezeit, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Assistenzarzt-Schicht die 24-Stunden-Grenze (28h im Notfall) erreicht, und plant die 11-stündige Ruhezeit danach gleich mit ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks die neue Assistenzarzt-Grenze und die Ruhezeit nach § 59 LSA übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "pageTitle": "Klacks 日本の清掃業向け | 深夜割増・巡回ルート",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "日本の清掃サービス(清掃)向け",
+    "titleHtml": "すべての対象物件を <span class=\"text-secondary\">きれいに計画。</span>",
+    "subtitle": "Klacksは対象物件、ルート、チームを効率的に割り当てます&mdash;法定の深夜帯にかかる清掃シフトの深夜割増も自動的に考慮します。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "日本の清掃チームと対象物件向けKlacksシフト表グリッド",
+    "screenshotLabel": "シフト表"
+  },
+  "challenges": {
+    "eyebrow": "日本の清掃現場の日常",
+    "title": "多くの対象物件、夜間シフト",
+    "items": [
+      {
+        "icon": "pin_drop",
+        "title": "多くの対象物件、多くの移動",
+        "text": "チームは対象物件から対象物件へと移動します。ルートが非効率だと、毎日時間・走行距離・コストが無駄になります。"
+      },
+      {
+        "icon": "bedtime",
+        "title": "法定の深夜帯における深夜割増",
+        "text": "商業施設における清掃シフトのうち、22時から翌5時までの深夜帯にかかる部分には、最低25%の深夜割増(深夜労働手当)が必要です&mdash;シフトが深夜帯を一部だけ跨ぐ場合、見落としやすい点です。"
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksが日本の清掃業の負担をどう軽減するか",
+    "subtitle": "最適化されたルートから正確な深夜割増の計算まで&mdash;すべてが連携して機能します。",
+    "items": [
+      {
+        "icon": "route",
+        "title": "対象物件の巡回ルートを最適化",
+        "text": "Klacksは、移動距離が短くなるように対象物件の順序を設定します&mdash;車、自転車、徒歩のいずれにも対応します。"
+      },
+      {
+        "icon": "groups",
+        "title": "チームを柔軟に編成",
+        "text": "人員の入れ替わりや欠勤があっても、Klacksが全体を把握し、適切な編成を提案します。"
+      },
+      {
+        "icon": "bedtime",
+        "title": "深夜割増を自動計算",
+        "text": "Klacksは、22時から翌5時までの深夜帯を跨ぐシフトを自動的に分割し、25%の割増分を按分して計算します。"
+      },
+      {
+        "icon": "shield_lock",
+        "title": "オンプレミス:完全なデータ主権",
+        "text": "Klacksは自社インフラ上で稼働します&mdash;対象物件データと従業員データは日本国内にとどまります。AI機能の利用時も同様です。"
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksyは音声・文章で計画",
+        "text": "「明日の朝、渋谷区の物件を計画してください」と伝えるだけです&mdash;Klacksyがルートとチーム編成を最適化します。"
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "貴社でKlacksを体験する",
+    "text": "Klacksがルート、チーム編成、深夜割増をどのように管理するか、プレイグラウンドでお試しください&mdash;あるいは、自社インフラに直接導入することもできます。無料・登録不要です。"
+  }
+}

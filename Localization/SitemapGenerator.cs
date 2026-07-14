@@ -26,6 +26,17 @@ public static class SitemapGenerator
         "land-nl/spitex", "land-nl/spitaeler", "land-nl/security", "land-nl/hausdienste", "land-nl/logistik",
         "land-se/spitex", "land-se/spitaeler", "land-se/security", "land-se/hausdienste", "land-se/logistik",
         "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
+        "land-ae/spitex", "land-ae/spitaeler", "land-ae/security", "land-ae/hausdienste", "land-ae/logistik",
+        "land-sa/spitex", "land-sa/spitaeler", "land-sa/security", "land-sa/hausdienste", "land-sa/logistik",
+        "land-il/spitex", "land-il/spitaeler", "land-il/security", "land-il/hausdienste", "land-il/logistik",
+        "land-jp/spitex", "land-jp/spitaeler", "land-jp/security", "land-jp/hausdienste", "land-jp/logistik",
+        "land-kr/spitex", "land-kr/spitaeler", "land-kr/security", "land-kr/hausdienste", "land-kr/logistik",
+        "land-cn/spitex", "land-cn/spitaeler", "land-cn/security", "land-cn/hausdienste", "land-cn/logistik",
+        "land-tw/spitex", "land-tw/spitaeler", "land-tw/security", "land-tw/hausdienste", "land-tw/logistik",
+        "land-my/spitex", "land-my/spitaeler", "land-my/security", "land-my/hausdienste", "land-my/logistik",
+        "land-id/spitex", "land-id/spitaeler", "land-id/security", "land-id/hausdienste", "land-id/logistik",
+        "land-th/spitex", "land-th/spitaeler", "land-th/security", "land-th/hausdienste", "land-th/logistik",
+        "land-vn/spitex", "land-vn/spitaeler", "land-vn/security", "land-vn/hausdienste", "land-vn/logistik",
     };
 
     public static string Build(string baseUrl)

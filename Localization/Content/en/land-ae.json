@@ -1,82 +1,51 @@
 {
-  "pageTitle": "Klacks for the UAE | Shift Optimization, Not Another HRIS",
+  "pageTitle": "Klacks for Businesses in the United Arab Emirates | Automatic Ramadan Hours & WPS-Compliant Time Tracking",
   "hero": {
-    "badgeIcon": "local_hospital",
-    "badge": "For hospitals, security &amp; facility operators in the UAE",
-    "titleHtml": "Keep your HR system. <span class=\"text-secondary\">Fix your shift planning.</span>",
-    "subtitle": "Zoho, ZenHR and similar platforms handle WPS filing, visas and contracts well &mdash; but their built-in schedulers weren't built for real 24/7 rotations. Klacks is the specialised optimisation engine that feeds your existing payroll, not another silo.",
+    "badgeIcon": "mosque",
+    "badge": "WPS-compliant &middot; PDPL-compliant &middot; On-premise",
+    "titleHtml": "Schedules that factor in Ramadan <span class=\"text-secondary\">automatically.</span>",
+    "subtitle": "Klacks automatically shortens working hours for all staff during the holy month of Ramadan, keeps a running check on the overtime cap, and maintains WPS-ready hour accounts &mdash; on-premise, so biometric time-tracking data required under the PDPL stays on your own infrastructure.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks shift schedule grid",
-    "screenshotLabel": "Schedule",
-    "screenshotCaption": "Screenshot shown in German — the core app interface ships in German, English, French and Italian; the Klacksy AI assistant additionally understands Arabic."
+    "screenshotAlt": "Klacks schedule overview for businesses in the United Arab Emirates",
+    "screenshotLabel": "Schedule"
   },
   "challenges": {
-    "eyebrow": "The UAE hospital &amp; facility reality",
-    "title": "The optimisation gap in existing HR suites",
+    "eyebrow": "Everyday scheduling in UAE businesses",
+    "title": "Ramadan, the overtime cap and WPS deadlines",
     "items": [
-      {
-        "icon": "hourglass_disabled",
-        "title": "Schedulers built as an afterthought",
-        "text": "All-in-one HR platforms handle visas, contracts and WPS filing well, but their shift planners are little more than static spreadsheets."
-      },
-      {
-        "icon": "swap_horiz",
-        "title": "Manual overtime &amp; allowance tracking",
-        "text": "Night, holiday and split-shift allowances get tracked by hand, then re-typed into payroll."
-      },
-      {
-        "icon": "event",
-        "title": "Saturday/Sunday week since 2022",
-        "text": "Wards, guard posts and facility teams still need gap-free coverage across the (relatively new) Saturday/Sunday weekend."
-      }
+      { "icon": "nights_stay", "title": "Shortened Ramadan hours for everyone", "text": "During the holy month of Ramadan, regular daily working hours are cut by 2 hours &mdash; with no reduction in pay, for every private-sector employee regardless of religion (Federal Decree-Law No. 33 of 2021, Art. 17, read with Cabinet Resolution No. 1 of 2022)." },
+      { "icon": "schedule", "title": "Daily overtime limit &amp; the 144-hour cap", "text": "Overtime is capped at 2 hours a day, and total working hours may not exceed 144 hours per 3-week period &mdash; paid at a minimum +25% premium, rising to at least +50% between 22:00 and 04:00 (Art. 19)." },
+      { "icon": "payments", "title": "Meeting WPS payroll deadlines", "text": "Onshore private-sector wages must be paid electronically through the Wage Protection System (WPS) &mdash; employers who miss the 15-day payment window risk a freeze on new work permits (Ministerial Resolution No. 340 of 2026, in force since 1 June 2026)." },
+      { "icon": "fingerprint", "title": "Keeping biometric time tracking PDPL-compliant", "text": "The PDPL (Federal Decree-Law No. 45 of 2021) explicitly classifies biometric data as sensitive personal data &mdash; cross-border transfers are tightly regulated." }
     ]
   },
   "solutions": {
-    "title": "How Klacks fits into your existing stack",
-    "subtitle": "Best-of-breed, not another all-in-one compromise.",
+    "title": "How Klacks takes the load off UAE businesses",
+    "subtitle": "From automatic Ramadan hours to WPS-ready payroll security &mdash; everything works together.",
     "items": [
-      {
-        "icon": "bolt",
-        "title": "Purpose-built shift optimisation",
-        "text": "Klacks solves the hard 24/7 rotation math that generic HR schedulers can't."
-      },
-      {
-        "icon": "file_export",
-        "title": "Export straight into your payroll",
-        "text": "Klacks already exports finished hours, overtime and allowances to CSV/Excel; a ready-made Zoho Books journal-import preset is next on our roadmap."
-      },
-      {
-        "icon": "groups",
-        "title": "Instant replacement on absence",
-        "text": "The Recovery Engine finds the best qualified stand-in the moment a shift is short-staffed."
-      },
-      {
-        "icon": "calendar_month",
-        "title": "Saturday/Sunday week built in",
-        "text": "Calendar rules handle the current weekend pattern natively &mdash; no manual recalculation."
-      },
-      {
-        "icon": "shield_lock",
-        "title": "On-premise data residency",
-        "text": "Klacks can run entirely on your own infrastructure wherever data residency matters."
-      }
+      { "icon": "nights_stay", "title": "Ramadan hours shortened automatically", "text": "Klacks automatically cuts daily working hours by 2 hours for all staff during Ramadan &mdash; with no deduction in pay and no need to manually adjust every single schedule." },
+      { "icon": "schedule", "title": "Overtime &amp; the 144-hour cap monitored automatically", "text": "Klacks warns before the 2-hour daily limit or the 144-hour cap per 3-week period is reached, and calculates the night premium between 22:00 and 04:00 automatically." },
+      { "icon": "payments", "title": "WPS-ready hour accounts", "text": "Klacks keeps hour accounts reconciled against the schedule that feed straight into WPS payroll under Ministerial Resolution No. 340 of 2026 &mdash; on time, instead of at risk." },
+      { "icon": "fingerprint", "title": "PDPL-compliant on-premise time tracking", "text": "Biometric clocking data stays on-premise, on your own infrastructure &mdash; with none of the cross-border data transfer that the PDPL tightly regulates." },
+      { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy schedules by voice command &mdash; traceable to defined skills and rules, never an opaque AI decision." },
+      { "icon": "event_busy", "title": "Absences covered fast", "text": "If someone calls in sick, Klacks immediately shows who is qualified and available &mdash; without tearing up the whole schedule." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI assistant",
     "title": "Klacksy: the assistant built into your team's workflow",
-    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot &mdash; it&rsquo;s embedded directly in the Klacks interface. Staff and schedulers ask about shifts via chat, request shift swaps, or resolve qualification conflicts within the team. A built-in skills and rules system ensures Klacksy only ever suggests changes that actually match the qualifications and working-time limits of the people involved.",
+    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot, but embedded directly in the Klacks interface. Staff and schedulers ask about shift times via chat, request shift swaps, or check availability. A built-in skills and rules system ensures Klacksy only ever makes traceable suggestions &mdash; never a black-box decision. For businesses with strict PDPL requirements around sensitive personal data, the AI model can also be hosted locally.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chat assistant inside the Klacks interface"
   },
   "example": {
     "eyebrow": "In practice",
-    "title": "One optimisation engine, your existing payroll",
-    "text": "Klacks plans the rotation and hands off a clean export &mdash; your HR platform still owns WPS and government filing, exactly where it's strongest."
+    "title": "Ramadan and the overtime cap, at a glance",
+    "text": "Klacks automatically recognises the start of Ramadan, shortens daily working hours by 2 hours with no deduction in pay, and keeps an eye on the 144-hour cap per 3-week period at the same time &mdash; no manual recalculating required."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "See Klacks alongside your HR system",
-    "text": "Try the Playground to see 24/7 rotation optimisation and payroll-ready exports &mdash; or run it on-premise for full data residency."
+    "title": "See Klacks in your UAE business",
+    "text": "Try the Playground to see how Klacks handles automatic Ramadan hours, the overtime cap and WPS-ready hour accounts &mdash; on-premise or in the Playground, free and with no registration required."
   }
 }

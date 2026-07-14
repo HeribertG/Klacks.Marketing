@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks 台灣物流版 | 10小時駕駛時間 & 強制休息規定",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "適用於台灣物流業 &amp; 營業大貨車",
+    "titleHtml": "路線、駕駛時間、休息 &mdash; <span class=\"text-secondary\">自動全面合規。</span>",
+    "subtitle": "Klacks 為貨車司機規劃路線與排班 &mdash; 自動納入每日最高10小時駕駛時間、連續駕駛4小時後的強制休息，以及兩個工作日之間至少10小時休息時間的規定。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 台灣路線與司機排班時間軸畫面",
+    "screenshotLabel": "時間軸"
+  },
+  "challenges": {
+    "eyebrow": "台灣物流業的日常挑戰",
+    "title": "10小時駕駛時間、強制休息與12小時總工時上限",
+    "items": [
+      { "icon": "timer", "title": "純駕駛時間最高10小時", "text": "營業大貨車每日純駕駛時間上限為10小時（汽車運輸業管理規則，交通部） &mdash; 違反者最高可處新台幣9萬元罰鍰，情節重大時甚至可能被勒令停業或吊扣車牌。" },
+      { "icon": "pause_circle", "title": "連續駕駛4小時後須強制休息", "text": "連續駕駛最長4小時後，須休息至少30分鐘；亦可分次休息，惟每次不得少於15分鐘。" },
+      { "icon": "bedtime", "title": "駕駛時間不等於總工時", "text": "10小時上限僅適用於純駕駛時間 &mdash; 每日包含加班在內的總工時上限則另外規定為12小時（勞基法第32條）。此外，兩個工作日之間須保有至少連續10小時的休息時間（每週最多可縮減至8小時兩次，但不得連續兩天縮減）。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何為台灣物流業減輕負擔",
+    "subtitle": "從最佳化路線到正確的強制休息規定 &mdash; 環環相扣，一次到位。",
+    "items": [
+      { "icon": "route", "title": "自動優化路線", "text": "Klacks 將停靠點安排在最合理的順序 &mdash; 路程更短、時間窗口確實遵守、減少空車行駛。" },
+      { "icon": "timer", "title": "監控10小時駕駛時間上限", "text": "Klacks 持續監控大貨車每日10小時的駕駛時間上限 &mdash; 並與總工時分開計算。" },
+      { "icon": "pause_circle", "title": "自動排入強制休息", "text": "Klacks 在連續駕駛4小時後，自動排入法定的30分鐘休息 &mdash; 或改以每次至少15分鐘的分段休息。" },
+      { "icon": "bedtime", "title": "12小時總工時上限 &amp; 10小時休息分開檢核", "text": "Klacks 明確區分10小時駕駛時間上限與勞基法第32條所定的12小時總工時上限，並自動納入兩個工作日之間10小時休息時間的規劃。" },
+      { "icon": "badge", "title": "駕照 &amp; 證照精準對應", "text": "Klacks 僅將路線分配給持有相符駕照的司機 &mdash; 並在證照即將到期前提前預警。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音指令排班", "text": "只要說「安排明天的路線，陳司機請病假」即可 &mdash; Klacksy 會自動重新計算駕駛時間、中途休息與班距休息時間。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實例說明",
+    "title": "駕駛時間、休息與班距休息，一次規劃到位",
+    "text": "Klacks 自動將純駕駛時間限制在10小時內，納入連續駕駛4小時後的強制休息，並確保兩個工作日之間保有10小時的休息時間 &mdash; 完全不必手動核算。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的物流公司中體驗 Klacks",
+    "text": "在體驗平台中親自測試 Klacks 如何處理路線、駕駛時間與休息規劃 &mdash; 完全免費，無需註冊。"
+  }
+}

@@ -1,54 +1,86 @@
 {
-  "pageTitle": "Klacks untuk Indonesia | Jadwal Kerja untuk Perhotelan dan Facility Management",
+  "pageTitle": "Klacks untuk Perusahaan Indonesia | Tunjangan Lembur Progresif sesuai PP 35/2021",
   "hero": {
-    "badgeIcon": "hotel",
-    "badge": "Untuk Hotel dan Facility Management di Indonesia",
-    "titleHtml": "4 jam, 18 jam &mdash; <span class=\"text-secondary\">dan makanan yang tidak boleh diganti dengan uang.</span>",
-    "subtitle": "PP 35/2021 membatasi lembur maksimal 4 jam per hari dan 18 jam per minggu. Yang kurang diketahui: mulai jam lembur keempat, pemberian makanan dengan kandungan minimal 1.400 kalori diwajibkan oleh undang-undang &mdash; dan tidak boleh diganti dalam bentuk uang. Klacks merencanakan lembur sedemikian rupa sehingga kewajiban ini tidak terlewat dalam operasional sehari-hari.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; Pencatatan Waktu Sesuai UU PDP",
+    "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
+    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan, dan berjalan On-Premise &mdash; sehingga data biometrik untuk pencatatan waktu, yang oleh UU PDP dikategorikan sebagai data pribadi yang wajib dilindungi secara khusus, tetap berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Tampilan jadwal kerja Klacks",
+    "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
   },
   "challenges": {
-    "eyebrow": "Keseharian di perhotelan dan facility management Indonesia",
-    "title": "Kewajiban pemberian makanan yang sering terlewat mulai jam lembur keempat",
+    "eyebrow": "Keseharian perencanaan di perusahaan Indonesia",
+    "title": "PP 35/2021, tunjangan progresif, dan batas 18 jam",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Batas lembur 4 jam/hari, 18 jam/minggu", "text": "PP 35/2021 menetapkan batas yang ketat &mdash; cepat tercapai pada operasional shift di sektor hotel dan facility management." },
-      { "icon": "restaurant", "title": "Kewajiban makanan minimal 1.400 kkal", "text": "Mulai empat jam lembur, pemberian makanan dengan kandungan minimal 1.400 kalori diwajibkan &mdash; tidak dapat diganti dengan uang dan dalam praktiknya sering kali terlupakan begitu saja." },
-      { "icon": "hotel", "title": "Pencakupan shift tanpa celah di operasional hotel", "text": "Resepsionis, housekeeping, dan tim facility membutuhkan penempatan staf yang berkesinambungan meski dengan batas lembur yang ketat." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Kedaulatan Data",
-    "title": "Kedaulatan data penuh: Open Source &amp; On-Premise",
-    "text": "Klacks dikembangkan untuk industri dengan persyaratan keamanan dan kepatuhan yang ketat, di mana data karyawan yang sensitif tidak boleh meninggalkan infrastruktur milik sendiri. Sebagai solusi open source, Klacks dapat dijalankan langsung di pusat data Anda sendiri atau di server lokal yang aman &mdash; tanpa ketergantungan pada penyedia cloud asal AS. Hal ini memudahkan kepatuhan terhadap Undang-Undang Perlindungan Data Pribadi Indonesia (UU PDP) secara mandiri.",
-    "bullets": [
-      "Kedaulatan on-premise: kendali penuh atas jadwal kerja, bukti lembur, dan log di dalam lingkungan IT Anda sendiri.",
-      "Arsitektur LLM yang bebas dipilih: saran perencanaan berbasis AI juga dapat dijalankan dengan model bahasa yang di-hosting secara lokal, tanpa data mengalir ke API eksternal.",
-      "Kode sumber yang dapat diaudit: basis kode yang sepenuhnya dapat diperiksa untuk audit IT dan pemeriksaan kepatuhan internal."
+      {
+        "icon": "hourglass_top",
+        "title": "Mematuhi batas lembur mingguan",
+        "text": "Lembur yang direncanakan (waktu kerja lembur) menurut PP 35/2021 Pasal 26 maksimal 4 jam per hari dan 18 jam per minggu &mdash; lembur pada hari istirahat dan hari libur dihitung terpisah. Setiap lembur juga memerlukan persetujuan tertulis dari pekerja serta perintah tertulis yang disertai daftar lembur."
+      },
+      {
+        "icon": "calculate",
+        "title": "Formula tunjangan empat tingkat rawan kesalahan bila dihitung manual",
+        "text": "PP 35/2021 Pasal 31 mewajibkan 1,5× untuk jam lembur pertama pada hari kerja, lalu 2,0× untuk jam berikutnya &mdash; pada hari istirahat dan hari libur bahkan bisa mencapai 4,0×, dengan tabel yang berbeda tergantung sistem 5 atau 6 hari kerja per minggu. Dasar perhitungannya adalah 1/173 dari upah bulanan (Pasal 32)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Pencatatan waktu biometrik sebagai data sensitif",
+        "text": "UU 27/2022 (PDP) secara eksplisit mencantumkan data biometrik dalam Pasal 4 sebagai data pribadi spesifik &mdash; setara dengan data kesehatan, genetika, dan keuangan &mdash; sehingga memerlukan perlindungan yang lebih ketat dan persetujuan tersendiri."
+      }
     ]
   },
   "solutions": {
-    "title": "Bagaimana Klacks memantau kewajiban lembur dan pemberian makanan",
-    "subtitle": "Batas 4 jam/18 jam dan kewajiban pemberian makanan dipantau secara otomatis.",
+    "title": "Bagaimana Klacks meringankan beban perusahaan Indonesia",
+    "subtitle": "Dari perhitungan tunjangan otomatis hingga infrastruktur milik sendiri &mdash; semuanya saling terhubung.",
     "items": [
-      { "icon": "bolt", "title": "Recovery engine untuk ketidakhadiran mendadak", "text": "Jika seorang karyawan berhalangan, Klacks langsung menemukan pengganti yang memenuhi kualifikasi &mdash; tanpa menimbulkan lembur tambahan yang tidak direncanakan." },
-      { "icon": "fact_check", "title": "Pelacakan lembur dan kewajiban pemberian makanan", "text": "Klacks terus memantau batas 4 jam/18 jam dan menandai shift yang mewajibkan pemberian makanan." },
-      { "icon": "file_export", "title": "Ekspor CSV/Excel sudah tersedia sekarang", "text": "Jam kerja, lembur, dan tunjangan yang telah selesai dapat langsung diekspor sebagai CSV/Excel; format khusus untuk Accurate Online atau Mekari Talenta menjadi kandidat untuk roadmap kami." },
-      { "icon": "calendar_month", "title": "Autofill wizard untuk rotasi shift", "text": "Asisten autofill berbasis algoritma genetika (GA) merencanakan rotasi shift dengan tetap mematuhi batas lembur yang telah ditetapkan." },
-      { "icon": "groups", "title": "Perencanaan penugasan sesuai kualifikasi", "text": "Hanya karyawan dengan kualifikasi yang sesuai yang diusulkan untuk suatu shift." }
+      {
+        "icon": "hourglass_top",
+        "title": "Batas 18 jam per minggu dipantau otomatis",
+        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan persetujuan tertulis."
+      },
+      {
+        "icon": "calculate",
+        "title": "Tunjangan progresif dihitung dengan benar",
+        "text": "Klacks menerapkan tingkatan 1,5×/2,0×/3,0×/4,0× dari PP 35/2021 Pasal 31 secara otomatis &mdash; dengan tabel yang tepat untuk operasional 5 atau 6 hari kerja dan dasar 1/173 dari upah bulanan."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Istirahat shift sesuai undang-undang terjadwal otomatis",
+        "text": "Setelah 4 jam kerja berturut-turut, Klacks otomatis menjadwalkan istirahat wajib minimal 30 menit (UU 13/2003 Pasal 79) &mdash; tidak dibayar dan dikeluarkan dengan benar dari perhitungan jam kerja."
+      },
+      {
+        "icon": "route",
+        "title": "Rute &amp; penugasan dioptimalkan secara otomatis",
+        "text": "Klacks menyusun penugasan dan rute agar jarak tempuh singkat dan jendela waktu terpenuhi &mdash; dapat digunakan lintas sektor."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: data biometrik tetap di dalam perusahaan",
+        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; termasuk yang di-hosting secara lokal, tanpa perlu mengirim data biometrik pencatatan waktu yang sensitif ke luar negeri."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: berbasis aturan, bukan kotak hitam",
+        "text": "Asisten AI terintegrasi Klacksy merencanakan melalui perintah suara &mdash; dapat dilacak berdasarkan skill dan aturan yang telah ditetapkan, bukan keputusan AI yang tidak transparan."
+      }
     ]
   },
   "klacksy": {
     "eyebrow": "Asisten AI",
     "title": "Klacksy: Asisten terintegrasi untuk tim Anda",
-    "text": "Klacksy bukan chatbot marketing tempelan, melainkan tertanam langsung di dalam antarmuka Klacks. Karyawan dan perencana dapat menanyakan jadwal kerja melalui chat, mengajukan permintaan tukar shift, atau mengklarifikasi konflik kualifikasi dalam tim. Sistem skill dan aturan yang tertanam memastikan Klacksy hanya memberikan saran yang sesuai dengan kualifikasi aktual dan batas jam kerja pihak yang terlibat.",
+    "text": "Klacksy bukan chatbot marketing tempelan, melainkan tertanam langsung di dalam antarmuka Klacks. Karyawan dan perencana dapat menanyakan jam dinas melalui chat, mengajukan permintaan tukar shift, atau mengklarifikasi ketersediaan. Sistem skill dan aturan yang tertanam memastikan Klacksy memberikan saran yang dapat dilacak &mdash; bukan keputusan kotak hitam. Untuk perusahaan dengan kebutuhan perlindungan data yang tinggi, model AI juga dapat di-hosting secara lokal.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Asisten chat Klacksy di antarmuka Klacks"
   },
+  "example": {
+    "eyebrow": "Contoh Konkret",
+    "title": "Lembur di hari istirahat, sekali lihat",
+    "text": "Klacks secara otomatis mengenali apakah lembur terjadi pada hari kerja atau hari istirahat, menerapkan tingkat yang sesuai dari 1,5× hingga 4,0×, sekaligus memantau batas 18 jam per minggu &mdash; tanpa perlu menghitung ulang secara manual."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Coba Klacks untuk hotel dan perusahaan facility management di Indonesia",
-    "text": "Rasakan sendiri di Playground bagaimana Klacks memantau kewajiban lembur dan pemberian makanan &mdash; atau jalankan Klacks secara On-Premise untuk kedaulatan data penuh."
+    "title": "Rasakan Klacks di perusahaan Anda",
+    "text": "Coba di Playground bagaimana Klacks mengotomatisasi tunjangan lembur progresif, batas mingguan, dan istirahat shift sesuai undang-undang &mdash; On-Premise atau di Playground, gratis dan tanpa registrasi."
   }
 }

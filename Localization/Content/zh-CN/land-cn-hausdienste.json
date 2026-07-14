@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks 中国家政保洁版 | 精准记录拆分班次",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "面向中国家政与保洁服务行业",
+    "titleHtml": "拆分班次,<span class=\"text-secondary\">精准记录。</span>",
+    "subtitle": "Klacks 精准记录保洁员在拆分班次中的实际工作时间,并将其清晰对照综合计算工时工作制的周期标准工时进行核算。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 中国保洁团队排班表视图",
+    "screenshotLabel": "排班表"
+  },
+  "challenges": {
+    "eyebrow": "中国保洁服务的日常挑战",
+    "title": "拆分班次与多个项目点",
+    "items": [
+      { "icon": "schedule", "title": "拆分班次(例如06:00-10:00 / 17:00-21:00)", "text": "保洁员常常按拆分班次工作 &mdash; 要将实际工作时间与综合计算工时工作制的周期标准工时清晰区分,人工处理十分繁琐。" },
+      { "icon": "apartment", "title": "多个项目点,团队频繁轮换", "text": "不同项目点、轮换的团队与临时用工同时统筹,人工几乎难以兼顾。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何为中国家政保洁企业减负",
+    "subtitle": "从清晰区分班次到优化路线规划 &mdash; 环环相扣,浑然一体。",
+    "items": [
+      { "icon": "schedule", "title": "精准记录拆分班次", "text": "Klacks 精准记录拆分班次中每个工作时段的实际工作时间,并自动在排班表中汇总合并。" },
+      { "icon": "fact_check", "title": "综合计算工时工作制下的周期工时", "text": "Klacks 按综合计算工时工作制的要求,严格依照经审批的核算周期汇总工时。" },
+      { "icon": "route", "title": "优化项目点路线", "text": "Klacks 合理安排各项目点的先后顺序,确保路程最短 &mdash; 无论是驾车、骑行还是步行。" },
+      { "icon": "groups", "title": "团队灵活调配", "text": "面对频繁轮换的人员和临时用工,Klacks 始终保持全局掌控,并给出合适的排班建议。" },
+      { "icon": "shield_lock", "title": "本地部署:数据不出境", "text": "Klacks 运行在您自有的基础设施上。人员和项目点数据始终不会离开中国 &mdash; 因此无需再进行PIPL规定的数据出境安全评估。" },
+      { "icon": "smart_toy", "title": "Klacksy 语音排班", "text": "Klacksy 一步到位,同时优化拆分班次下的路线安排、团队调配与周期工时记录。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "实例",
+    "title": "拆分班次,一目了然",
+    "text": "Klacks 自动识别拆分班次,并将两个工作时段的实际工作时间清晰对照周期标准工时进行核算 &mdash; 无需人工重新计算。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的中国保洁企业中体验 Klacks",
+    "text": "在 Playground 中亲自体验 Klacks 如何自动处理拆分班次、路线规划与团队调配 &mdash; 或直接部署在您自己的基础设施上。免费且无需注册。"
+  }
+}

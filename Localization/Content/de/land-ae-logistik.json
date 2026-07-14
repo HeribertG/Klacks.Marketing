@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik in den VAE | Mittagsarbeitsverbot am Terminal",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Terminalbetrieb in den VAE",
+    "titleHtml": "Terminalschichten planen, <span class=\"text-secondary\">ohne das Mittagsverbot zu riskieren.</span>",
+    "subtitle": "Klacks sperrt Be- und Entladeschichten an unüberdachten Containerterminals automatisch im gesetzlichen Mittagsarbeitsverbot vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr &mdash; und verhindert so Bussgelder von bis zu AED 50.000. On-Premise, damit Personaldaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Terminal- und Logistikschichten in den VAE",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Terminalalltag in der Logistik der VAE",
+    "title": "Das Mittagsarbeitsverbot an unüberdachten Terminals",
+    "items": [
+      { "icon": "wb_sunny", "title": "Verbot der Aussenarbeit (حظر العمل في الأماكن المكشوفة)", "text": "Vom 15. Juni bis 15. September ist Arbeit unter direkter Sonneneinstrahlung täglich von 12:30 bis 15:00 Uhr verboten &mdash; das gilt auch für Be- und Entladepersonal an unüberdachten Containerterminals und Ladehöfen (MOHRE-Ministerialentscheidung)." },
+      { "icon": "payments", "title": "Bussgeld bis AED 50.000 pro Verstoss", "text": "Verstösse kosten AED 5.000 pro betroffenem Mitarbeitenden, gedeckelt bei AED 50.000 &mdash; gleiche Struktur wie beim allgemeinen Mittagsarbeitsverbot." },
+      { "icon": "warehouse", "title": "Überdachte und unüberdachte Flächen unterscheiden", "text": "Nur Arbeit unter direkter Sonneneinstrahlung ist betroffen &mdash; ob eine Ladefläche als überdacht gilt oder nicht, muss pro Schicht klar dokumentiert sein." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Logistikbetriebe in den VAE entlastet",
+    "subtitle": "Von der automatischen Sperre bis zur überdacht/unüberdacht-Deklaration &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "wb_sunny", "title": "Mittagsfenster für Aussenschichten automatisch gesperrt", "text": "Klacks sperrt Terminal- und Ladehof-Schichten unter freiem Himmel vom 15. Juni bis 15. September zwischen 12:30 und 15:00 Uhr automatisch &mdash; jährlich, ohne manuelles Nachtragen des Datums." },
+      { "icon": "warehouse", "title": "Überdacht oder unüberdacht klar deklariert", "text": "Klacks lässt sich pro Terminalbereich als überdacht oder unüberdacht deklarieren &mdash; nur betroffene Flächen werden im Verbotsfenster gesperrt." },
+      { "icon": "payments", "title": "Bussgeldrisiko von AED 50.000 vermieden", "text": "Weil das Verbotsfenster für Aussenflächen gar nicht erst verplant werden kann, entfällt das Risiko der AED-5.000-Busse pro Mitarbeitendem." },
+      { "icon": "route", "title": "Touren &amp; Anlieferungen automatisch optimiert", "text": "Klacks stimmt Anlieferungen, Ladezeiten und Personaleinsatz am Terminal automatisch aufeinander ab." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten Ihres Terminalteams verlassen Ihr Haus nicht." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Verschiebe die Ladeschicht am Terminal 2 aus dem Mittagsfenster“ genügt &mdash; Klacksy berücksichtigt das Verbot automatisch." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mittagsverbot am Terminal, ein Blick",
+    "text": "Klacks erkennt automatisch, dass eine Ladeschicht an einem unüberdachten Terminal zwischen dem 15. Juni und 15. September in das Verbotsfenster 12:30 bis 15:00 Uhr fällt, und verschiebt sie auf Vormittag oder späten Nachmittag &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks das Mittagsarbeitsverbot, Terminalschichten und Anlieferungen übernimmt &mdash; oder installieren Sie es direkt On-Premise. Kostenlos und ohne Registrierung."
+  }
+}

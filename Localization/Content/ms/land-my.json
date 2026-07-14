@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks untuk Malaysia | Jadual Kerja untuk Syarikat Keselamatan dan Pengurusan Fasiliti",
+  "pageTitle": "Klacks untuk Syarikat di Malaysia | Pengurusan Kakitangan Mematuhi Employment Act 1955 & PDPA",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "Untuk syarikat keselamatan dan pengurusan fasiliti di Malaysia",
-    "titleHtml": "Minggu kerja 45 jam sejak 2023 &mdash; <span class=\"text-secondary\">had 104 jam pula sudah wujud jauh lebih lama.</span>",
-    "subtitle": "Akta Kerja (Pindaan) 2022 menurunkan had waktu bekerja maksimum mingguan daripada 48 jam kepada 45 jam berkuat kuasa 1 Januari 2023. Kurang diketahui: had lebih masa bulanan sebanyak 104 jam berasal daripada peraturan berasingan yang tidak berubah sejak 1980 &mdash; hampir tiada syarikat yang dapat membuktikannya secara lengkap dan berterusan. Klacks menjejaki kedua-dua had ini secara automatik.",
+    "badgeIcon": "public",
+    "badge": "Sumber Terbuka &middot; On-Premise &middot; Perlindungan Data Malaysia (PDPA)",
+    "titleHtml": "Penjadualan kakitangan yang <span class=\"text-secondary\">anda kekal mengawal.</span>",
+    "subtitle": "Klacks memantau minggu kerja 45 jam di bawah Employment Act 1955 secara automatik, mengasingkan kadar lebih masa bertingkat dengan tepat dan berjalan secara on-premise &mdash; supaya data cap jari/pengecaman wajah untuk kehadiran, yang diiktiraf secara jelas sebagai data peribadi sensitif sejak pindaan PDPA 2024 (Act A1727), kekal dalam infrastruktur syarikat anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Grid jadual kerja Klacks",
+    "screenshotAlt": "Papar keseluruhan jadual kerja Klacks untuk syarikat di Malaysia",
     "screenshotLabel": "Jadual Kerja"
   },
   "challenges": {
-    "eyebrow": "Realiti harian dalam industri keselamatan dan pengurusan fasiliti di Malaysia",
-    "title": "Dua akta, dua had, satu jadual kerja",
+    "eyebrow": "Realiti harian penjadualan di syarikat Malaysia",
+    "title": "Employment Act 1955, kadar lebih masa bertingkat dan PDPA",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Minggu kerja 45 jam sejak 2023", "text": "Pengurangan daripada 48 kepada 45 jam masih agak baharu &mdash; ramai jadual kerja masih dikira berdasarkan had lama." },
-      { "icon": "fact_check", "title": "Had 104 jam sejak 1980", "text": "Had lebih masa bulanan daripada peraturan berasingan sering terlepas pandang kerana ia tidak termaktub dalam Akta Kerja itu sendiri." },
-      { "icon": "schedule", "title": "Rehat wajib selepas 5 jam", "text": "Syif melebihi 5 jam memerlukan rehat berterusan selama 30 minit &mdash; mudah terlepas pandang semasa tugasan pengawal keselamatan yang berterusan." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Kedaulatan Data",
-    "title": "Kedaulatan Data Sepenuhnya: Sumber Terbuka &amp; On-Premise",
-    "text": "Klacks dibangunkan untuk industri dengan keperluan keselamatan dan pematuhan yang ketat, di mana data pekerja yang sensitif tidak sepatutnya keluar daripada infrastruktur syarikat sendiri. Sebagai penyelesaian sumber terbuka, Klacks boleh dijalankan terus di pusat data anda sendiri atau di pelayan tempatan yang selamat &mdash; tanpa bergantung kepada penyedia awan AS. Ini memudahkan pematuhan Akta Perlindungan Data Peribadi (PDPA) Malaysia secara berdikari.",
-    "bullets": [
-      "Kedaulatan on-premise: kawalan penuh ke atas jadual kerja, rekod lebih masa dan log dalam persekitaran IT syarikat sendiri.",
-      "Seni bina LLM bebas: cadangan penjadualan berbantukan AI juga boleh dijalankan dengan model bahasa yang dihoskan secara tempatan, tanpa data mengalir keluar ke API luar.",
-      "Kod sumber boleh diaudit: kod asas yang boleh disemak sepenuhnya untuk audit IT dan semakan pematuhan dalaman."
+      { "icon": "gavel", "title": "Memantau minggu kerja 45 jam sejak 2023", "text": "Employment (Amendment) Act 2022 (Act A1651) menurunkan waktu bekerja mingguan biasa daripada 48 jam kepada 45 jam berkuat kuasa 1 Januari 2023 (Section 60A Employment Act 1955) &mdash; terpakai untuk Semenanjung Malaysia dan Labuan, manakala Sabah dan Sarawak mempunyai ordinan sendiri yang sebahagian besarnya selari. Setiap jam yang dijadualkan melebihi had ini secara automatik menjadi lebih masa yang layak mendapat elaun." },
+      { "icon": "paid", "title": "Mengasingkan kadar lebih masa bertingkat dengan tepat", "text": "Lebih masa pada hari bekerja biasa berkos sekurang-kurangnya 1.5 kali, pada hari rehat mingguan 2.0 kali dan pada hari kelepasan am 3.0 kali gaji sejam (Section 60A(3), 60(3), 60D(3)) &mdash; ditambah had gaji RM4,000, apabila dilepasi hak elaun ini tidak lagi terpakai. Sumber kesilapan biasa jika dikira secara manual." },
+      { "icon": "fingerprint", "title": "Data kehadiran biometrik sebagai data PDPA sensitif", "text": "Sejak Personal Data Protection (Amendment) Act 2024 (Act A1727), data cap jari dan pengecaman wajah untuk tujuan kehadiran diiktiraf secara jelas sebagai data peribadi sensitif &mdash; dengan keperluan persetujuan dan pemindahan rentas sempadan yang lebih ketat." }
     ]
   },
   "solutions": {
-    "title": "Bagaimana Klacks mematuhi kedua-dua had secara serentak",
-    "subtitle": "Minggu kerja 45 jam dan had bulanan 104 jam dijejaki secara automatik.",
+    "title": "Bagaimana Klacks meringankan beban syarikat Malaysia",
+    "subtitle": "Daripada pengiraan elaun automatik hingga infrastruktur sendiri &mdash; semuanya saling melengkapi.",
     "items": [
-      { "icon": "bolt", "title": "Enjin Pemulihan untuk Ketidakhadiran", "text": "Jika seorang pengawal keselamatan tidak dapat hadir, Klacks segera mencari pengganti yang layak &mdash; tanpa menyebabkan lebih masa tambahan yang tidak dirancang." },
-      { "icon": "fact_check", "title": "Penjejakan Dua Had", "text": "Klacks menjejaki minggu kerja 45 jam dan had bulanan 104 jam secara bersama serta memberi amaran sebelum mana-mana had dilanggar." },
-      { "icon": "file_export", "title": "Eksport CSV/Excel Sudah Tersedia", "text": "Jam siap kerja, lebih masa dan elaun boleh dieksport terus sebagai CSV/Excel; format untuk AutoCount Accounting atau SQL Account adalah calon untuk roadmap kami." },
-      { "icon": "calendar_month", "title": "Wizard Autofill untuk Rotasi", "text": "Pembantu Autofill berasaskan GA merancang rotasi syif sambil mematuhi peraturan rehat dan lebih masa yang telah ditetapkan." },
-      { "icon": "groups", "title": "Penjadualan Tepat Mengikut Kelayakan", "text": "Hanya pekerja dengan kelayakan yang sesuai dan lesen pengawal keselamatan yang sah dicadangkan untuk sesuatu syif." }
+      { "icon": "gavel", "title": "Minggu kerja 45 jam dipantau automatik", "text": "Klacks mengetahui had 45 jam daripada Section 60A (sejak 1.1.2023) serta had harian 8 jam (9 jam bagi minggu bekerja 5 hari) &mdash; setiap jam yang dijadualkan melebihi had ini ditanda secara automatik sebagai lebih masa." },
+      { "icon": "paid", "title": "Elaun 1.5x/2.0x/3.0x diasingkan secara automatik", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dikira mengikut kadar yang betul masing-masing &mdash; termasuk had gaji RM4,000, apabila dilepasi peruntukan elaun Section 60/60A/60C/60D/60J tidak lagi terpakai." },
+      { "icon": "schedule", "title": "Spread-over dan had bulanan sentiasa dipantau", "text": "Had spread-over 10 jam daripada permulaan kerja pertama hingga waktu pulang (Section 60A(1)), had siling 12 jam sehari dan had lebih masa bulanan 104 jam (Employment (Limitation of Overtime Work) Regulations 1980) dipantau secara automatik, begitu juga rehat 30 minit selepas 5 jam berturut-turut." },
+      { "icon": "shield_lock", "title": "On-Premise: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kehadiran biometrik, yang menjadi data PDPA sensitif sejak Act A1727/2024, tidak pernah keluar daripada premis anda." },
+      { "icon": "smart_toy", "title": "Klacksy: berasaskan peraturan, bukan kotak hitam", "text": "Pembantu AI bersepadu, Klacksy, menjadualkan melalui arahan suara/teks &mdash; boleh dijejaki mengikut kemahiran dan peraturan yang ditetapkan, bukan keputusan AI yang tidak telus." },
+      { "icon": "event_busy", "title": "Ketidakhadiran diselesaikan dengan pantas", "text": "Jika seseorang tidak dapat hadir, Klacks segera menunjukkan siapa yang layak dan tersedia &mdash; tanpa perlu merombak keseluruhan jadual." }
     ]
   },
   "klacksy": {
     "eyebrow": "Pembantu AI",
     "title": "Klacksy: Pembantu Bersepadu untuk Pasukan Anda",
-    "text": "Klacksy bukan chatbot pemasaran yang ditambah begitu sahaja, tetapi disepadukan terus ke dalam antara muka Klacks. Pekerja dan perancang boleh menyemak waktu tugas, membuat permintaan pertukaran syif atau menyelesaikan konflik kelayakan dalam pasukan melalui sembang. Sistem kemahiran dan peraturan yang ditetapkan memastikan Klacksy hanya memberikan cadangan yang sesuai dengan kelayakan sebenar dan had waktu bekerja pihak yang terlibat.",
+    "text": "Klacksy bukan chatbot pemasaran yang ditambah begitu sahaja, tetapi disepadukan terus ke dalam antara muka Klacks. Pekerja dan perancang boleh menyemak waktu tugas atau menjelaskan ketersediaan melalui sembang. Sistem kemahiran dan peraturan yang ditetapkan memastikan Klacksy memberikan cadangan yang boleh dijejaki &mdash; bukan keputusan kotak hitam. Bagi syarikat dengan keperluan perlindungan data yang tinggi, model AI juga boleh dihoskan secara tempatan, tanpa sebarang pemindahan data pekerja ke luar negara.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Pembantu sembang Klacksy dalam antara muka Klacks"
   },
+  "example": {
+    "eyebrow": "Contoh Konkrit",
+    "title": "Jam mingguan, elaun, sepintas lalu",
+    "text": "Klacks mengesan secara automatik apabila sesuatu syif mencapai had minggu kerja 45 jam atau had spread-over 10 jam, dan terus menetapkan kadar elaun yang sesuai (1.5x/2.0x/3.0x) &mdash; tanpa perlu mengira semula secara manual."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Cuba Klacks untuk syarikat keselamatan dan pengurusan fasiliti di Malaysia",
-    "text": "Alami sendiri dalam playground bagaimana Klacks mematuhi kedua-dua had secara serentak &mdash; atau jalankan Klacks secara on-premise untuk kedaulatan data sepenuhnya."
+    "title": "Alami Klacks di Syarikat Anda",
+    "text": "Cuba dalam Playground bagaimana Klacks mengautomasikan minggu kerja 45 jam, elaun bertingkat dan had spread-over &mdash; secara on-premise atau dalam Playground, percuma dan tanpa pendaftaran."
   }
 }

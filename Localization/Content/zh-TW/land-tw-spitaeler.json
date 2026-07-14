@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks 台灣醫院版 | 護理人員不適用勞基法第84-1條",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "適用於台灣醫院 &amp; 診所（醫療機構）",
+    "titleHtml": "排班表，<span class=\"text-secondary\">精準核算每一分鐘護理工時。</span>",
+    "subtitle": "Klacks 規劃病房排班與交班作業 &mdash; 護理人員自2014年1月1日起已全面排除於責任制（勞基法第84-1條）之外，每一小時加班皆依勞基法第24條正常核算。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 台灣醫院排班表格",
+    "screenshotLabel": "排班表"
+  },
+  "challenges": {
+    "eyebrow": "台灣醫院的日常挑戰",
+    "title": "護理人員不適用責任制、交班時間與班次間隔",
+    "items": [
+      { "icon": "gavel", "title": "護理人員自2014年起排除於第84-1條之外", "text": "醫事人員逐步排除於責任制（勞基法第84-1條）之外 &mdash; 自2014年1月1日起全面適用一般工時規定。護理人員的每一分鐘工時自此皆正常核計；超過每日8小時的加班須依勞基法第24條給付（前兩小時1.34倍）。" },
+      { "icon": "groups", "title": "交班時間視為工作時間", "text": "兩班之間的交班時間視為工作時間，須予以記錄。實務上交班通常耗時15至30分鐘 &mdash; 這是常見的經驗值，並非法定的固定時長。" },
+      { "icon": "bedtime", "title": "醫院輪班同樣適用11小時班次間隔", "text": "即使是24小時運作的病房，同樣適用法定的11小時班次間隔（勞基法第34條） &mdash; 跨多個病房與班別時，人工作業幾乎不可能完全無漏地確保合規。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何為台灣醫院減輕負擔",
+    "subtitle": "從全天候無縫排班到正確的交班時間認定 &mdash; 環環相扣，一次到位。",
+    "items": [
+      { "icon": "schedule", "title": "全天候無縫病房排班", "text": "涵蓋所有病房的白班、小夜班與大夜班 &mdash; Klacks 即時顯示每個排班缺口，並可依需求自動補齊。" },
+      { "icon": "gavel", "title": "護理人員加班依第24條正確核算", "text": "Klacks 自動依勞基法第24條核算不適用責任制之護理人員的每一小時加班 &mdash; 前兩小時1.34倍，第三小時起1.67倍。" },
+      { "icon": "groups", "title": "交班時間納入排班並完整記錄", "text": "Klacks 將交班時間納入工作時間排程 &mdash; 時長可由企業自行設定，而非套用僵化的法定標準。" },
+      { "icon": "bedtime", "title": "各病房均強制執行11小時班次間隔", "text": "Klacks 不允許任何病房出現低於勞基法第34條所定11小時間隔的班次安排。" },
+      { "icon": "verified", "title": "資格 &amp; 病房精準對應", "text": "每個班次僅分配給具備相符資格的人員 &mdash; 依病房、科別與職能精準對應。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音指令排班", "text": "只要說「補齊下週內科的大夜班」即可 &mdash; Klacksy 會自動納入交班時間與班次間隔的考量。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實例說明",
+    "title": "交班與班次間隔，一次規劃到位",
+    "text": "Klacks 將交班時間納入工作時間排程，並確保兩班之間保有法定的11小時休息時間 &mdash; 完全不必手動核算。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "在您的醫院中體驗 Klacks",
+    "text": "在體驗平台中親自測試 Klacks 如何處理交班時間、班次間隔與護理人員加班 &mdash; 完全免費，無需註冊。"
+  }
+}

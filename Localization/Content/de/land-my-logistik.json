@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik in Malaysia | 45-Stunden-Woche & Spread-over für Fahrer",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in Malaysia",
+    "titleHtml": "Touren, Stunden, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 45-Stunden-Woche, dem 10-Stunden-Spread-over-Limit und der Pausenpflicht des Employment Act 1955 automatisch berücksichtigt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Malaysia",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Malaysia",
+    "title": "45-Stunden-Woche, Spread-over und Pausenpflicht für Fahrer",
+    "items": [
+      { "icon": "gavel", "title": "45-Stunden-Woche gilt auch für Fahrer", "text": "Lkw-Fahrer (pemandu lori) unterliegen als Arbeitnehmer denselben Grenzen wie alle anderen Beschäftigten: 45 Stunden pro Woche (Section 60A) und ein tägliches 8-Stunden-Limit &mdash; jede Tour muss das einhalten." },
+      { "icon": "schedule", "title": "10-Stunden-Spread-over über die ganze Tour", "text": "Die Spanne vom ersten Arbeitsbeginn bis zum Feierabend darf 10 Stunden nicht überschreiten (Section 60A(1)) &mdash; bei langen Touren mit mehreren Stopps von Hand schwer im Blick zu behalten." },
+      { "icon": "pause_circle", "title": "30-Minuten-Pause nach 5 Stunden", "text": "Kein Fahrer darf ohne eine Pause von mindestens 30 Minuten länger als 5 aufeinanderfolgende Stunden im Einsatz sein (Section 60A(1))." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in Malaysia entlastet",
+    "subtitle": "Von der optimierten Tour bis zur eingehaltenen Pausenpflicht &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks prüft laufend, ob die 45-Stunden-Grenze (Section 60A) und das tägliche 8-Stunden-Limit eingehalten werden." },
+      { "icon": "schedule", "title": "Spread-over-Limit im Blick", "text": "Klacks behält die 10-Stunden-Spanne zwischen erstem Arbeitsbeginn und Feierabend (Section 60A(1)) für jede Tour im Blick." },
+      { "icon": "pause_circle", "title": "Pausenpflicht automatisch eingeplant", "text": "Die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden wird bei der Tourenplanung automatisch berücksichtigt." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Tan ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Spread-over." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Tour, Spread-over, ein Plan",
+    "text": "Klacks prüft die 45-Stunden-Woche und das 10-Stunden-Spread-over-Limit automatisch und plant die Pause nach 5 Stunden gleich mit ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Stunden und Pausen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

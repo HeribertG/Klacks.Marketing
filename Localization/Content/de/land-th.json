@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für Thailand | Dienstpläne für die Hotellerie",
+  "pageTitle": "Klacks für Unternehmen in Thailand | 36-Stunden-Limit & PDPA-konforme Personalplanung",
   "hero": {
-    "badgeIcon": "hotel",
-    "badge": "Für Hotels und Hospitality-Betriebe in Thailand",
-    "titleHtml": "48-Stunden-Woche, Pflichtpause &mdash; <span class=\"text-secondary\">und eine Wochenruhe, die vier Wochen wandern darf.</span>",
-    "subtitle": "Der Labour Protection Act begrenzt die Wochenarbeitszeit auf 48 Stunden und verlangt nach 5 Stunden ununterbrochener Arbeit eine Pause von mindestens einer Stunde. Der eigentliche Schmerzpunkt im Hotelbetrieb ist die frei verschiebbare wöchentliche Ruhezeit &mdash; sie darf bis zu vier Wochen aufgeschoben werden, muss aber lückenlos nachvollziehbar bleiben. Klacks behält das im Blick.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Thailändischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks deckelt Überstunden und Feiertagsarbeit automatisch auf das gesetzliche Wochenlimit, reserviert Pausen verlässlich und läuft On-Premise &mdash; damit sensible biometrische Zeiterfassungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Thailand",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in thailändischer Hotellerie",
-    "title": "Die frei verschiebbare Wochenruhe im Hotelbetrieb",
+    "eyebrow": "Der Planungsalltag in thailändischen Betrieben",
+    "title": "36-Stunden-Limit, Pausenpflicht und PDPA-Biometrie",
     "items": [
-      { "icon": "schedule", "title": "Pflichtpause nach 5 Stunden", "text": "Nach 5 Stunden ununterbrochener Arbeit ist eine mindestens einstündige Pause vorgeschrieben &mdash; bei durchgehendem Servicebetrieb leicht zu übersehen." },
-      { "icon": "event", "title": "Bis zu 4 Wochen verschiebbare Wochenruhe", "text": "Anders als in vielen Ländern darf die wöchentliche Ruhezeit im Hotelbetrieb bis zu vier Wochen aufgeschoben werden &mdash; die Nachvollziehbarkeit leidet, wenn das von Hand verwaltet wird." },
-      { "icon": "hotel", "title": "Saisonale Auslastungsspitzen", "text": "Hotels müssen bei stark schwankender Auslastung trotzdem lückenlos und rechtskonform besetzt bleiben." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des thailändischen Datenschutzgesetzes (PDPA) in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26, Labour Protection Act B.E. 2541). Verstösse werden mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet (Section 144) &mdash; von Hand pro Mitarbeitendem kaum zuverlässig zu überwachen." },
+      { "icon": "hourglass_top", "title": "Pausenpflicht nach 5 Stunden", "text": "Nach höchstens 5 aufeinanderfolgenden Arbeitsstunden ist eine Pause von mindestens 1 zusammenhängenden Stunde zu gewähren (Section 27, เวลาพัก / Wela Phak) &mdash; aufteilbar in mehrere Blöcke, solange die Tagessumme mind. 1 Stunde beträgt." },
+      { "icon": "fingerprint", "title": "PDPA: Biometrische Zeiterfassung ist sensibel", "text": "Gesichts- oder Fingerabdruckscans zur Zeiterfassung gelten nach Section 26 PDPA (Personal Data Protection Act B.E. 2562) als sensible personenbezogene Daten und dürfen grundsätzlich nur mit ausdrücklicher Einwilligung verarbeitet werden. Die Durchsetzung ist real: Im November 2025 ordnete die PDPC die Löschung von rund 1,2 Mio. Iris-Datensätzen bei einem Anbieter an." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die verschobene Wochenruhe nachvollziehbar hält",
-    "subtitle": "Pflichtpausen und aufgeschobene Ruhezeiten automatisch mitgeführt.",
+    "title": "Wie Klacks thailändische Betriebe entlastet",
+    "subtitle": "Von der automatischen 36h-Deckelung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; auch bei saisonalen Auslastungsspitzen." },
-      { "icon": "fact_check", "title": "Ruhezeit-Verschiebungs-Tracking", "text": "Klacks führt jede verschobene Wochenruhe innerhalb des 4-Wochen-Fensters sichtbar mit, statt sie in Excel-Tabellen zu verlieren." },
-      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; eine Anbindung an gängige thailändische Buchhaltungssoftware ist Kandidat für unsere Roadmap." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Pausen- und Ruhezeit-Regeln." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem live und sperrt die Planung, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und schützt so vor dem Strafrahmen nach Section 144." },
+      { "icon": "layers", "title": "Dreistufige Überstundensätze automatisch zugewiesen", "text": "Klacks weist die Überstundensätze automatisch zu &mdash; 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62) und 3,0-fach für Überstunden an Feiertagen/Ruhetagen (Section 63)." },
+      { "icon": "hourglass_top", "title": "Pausenpflicht nach 5 Stunden eingeplant", "text": "Klacks reserviert die gesetzliche 1-Stunden-Pause nach maximal 5 Arbeitsstunden automatisch im Dienstplan &mdash; auch aufgeteilt in mehrere Blöcke (Section 27)." },
+      { "icon": "event_available", "title": "Ruhetag-Abstand max. 6 Tage", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und stellt sicher, dass zwischen zwei Ruhetagen nie mehr als 6 Tage liegen (Section 28)." },
+      { "icon": "shield_lock", "title": "PDPA-konforme On-Premise-Speicherung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; biometrische Zeiterfassungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen PDPA-Anforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer sensibler Personaldaten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "36-Stunden-Limit und Pausenpflicht, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Woche das 36-Stunden-Überstundenlimit erreicht oder eine Schicht die 5-Stunden-Pausenpflicht auslöst, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für thailändische Hotels testen",
-    "text": "Erleben Sie im Playground, wie Klacks verschobene Wochenruhe nachvollziehbar hält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks das 36-Stunden-Limit, Pausenpflichten und PDPA-konforme Speicherung automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

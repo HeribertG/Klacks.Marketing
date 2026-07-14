@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks 中国居家养老护理版 | 综合计算工时工作制助力养老护理员排班",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "面向中国居家养老护理(养老护理)行业",
+    "titleHtml": "护理排班,<span class=\"text-secondary\">精准契合核定周期。</span>",
+    "subtitle": "Klacks 严格按照经当地劳动行政部门审批的综合计算工时工作制核定周期汇总工时 &mdash; 只有当周期内实际工时超过核定标准工时时,才会产生加班。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 中国护理排班时间轴视图",
+    "screenshotLabel": "时间轴"
+  },
+  "challenges": {
+    "eyebrow": "中国居家养老护理的日常挑战",
+    "title": "综合计算工时工作制:审批与核算周期",
+    "items": [
+      { "icon": "fact_check", "title": "周期工时须经审批", "text": "对养老护理员按核算周期而非自然日排班的机构,须事先取得当地劳动行政部门对综合计算工时工作制的审批(《劳动法》第39条)&mdash; 否则将面临违规风险。" },
+      { "icon": "schedule", "title": "加班需到周期末才能核算清楚", "text": "只有当整个核算周期(周、月、季度或年)的总工时超过标准工时,才产生加班,而非按单日计算 &mdash; 护理任务频繁变动时,人工核算几乎无法理清。" },
+      { "icon": "groups", "title": "任务频繁变动,亟需统一视图", "text": "护理人员需要在不同客户和班次之间频繁切换 &mdash; 同时兼顾周期标准工时与具体任务安排,人工处理十分繁琐。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何为中国居家养老护理机构减负",
+    "subtitle": "从精准的周期工时汇总到本地数据主权 &mdash; 环环相扣,浑然一体。",
+    "items": [
+      { "icon": "fact_check", "title": "精准管理周期工时", "text": "Klacks 严格按照经审批的核算周期(周、月、季度或年)汇总工时 &mdash; 只有当周期内实际工时确实超过标准工时,系统才会提示加班。" },
+      { "icon": "description", "title": "留存审批所需的完整记录", "text": "Klacks 按照当地劳动行政部门审批综合计算工时工作制所要求的格式,完整留存周期工时数据。" },
+      { "icon": "route", "title": "自动规划护理路线", "text": "Klacks 会合理安排护理任务的先后顺序,确保时间窗口不被延误 &mdash; 无论是驾车、骑行还是步行。" },
+      { "icon": "verified", "title": "自动匹配资质要求", "text": "每项任务只会分配给具备相应资质的人员 &mdash; 无需人工逐一核实。" },
+      { "icon": "shield_lock", "title": "本地部署:患者数据不出境", "text": "Klacks 运行在您自有的基础设施上。敏感的健康数据和人员数据始终不会离开中国 &mdash; 因此无需再进行PIPL规定的数据出境安全评估。" },
+      { "icon": "smart_toy", "title": "Klacksy 语音排班", "text": "只需说一句“把明天上午的任务安排好” &mdash; Klacksy 会自动核对周期标准工时、资质与可用时间。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "实例",
+    "title": "周期工时汇总,一目了然",
+    "text": "Klacks 持续按经审批的核算周期汇总每位护理人员的工时,只有当周期标准工时确实被超过时,才会提示加班 &mdash; 无需在每个自然日结束时人工重新核算。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的中国养老护理机构中体验 Klacks",
+    "text": "在 Playground 中亲自体验 Klacks 如何自动处理周期工时、任务安排与资质匹配 &mdash; 或直接部署在您自己的基础设施上。免费且无需注册。"
+  }
+}

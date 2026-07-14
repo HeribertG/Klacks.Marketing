@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks cho Việt Nam | Lịch làm việc cho ngành logistics và dịch vụ bảo vệ",
+  "pageTitle": "Klacks cho doanh nghiệp tại Việt Nam | Giới hạn làm thêm giờ 3 cấp & phụ cấp làm đêm",
   "hero": {
-    "badgeIcon": "local_shipping",
-    "badge": "Dành cho doanh nghiệp logistics và dịch vụ bảo vệ tại Việt Nam",
-    "titleHtml": "150%, 200%, 300% &mdash; <span class=\"text-secondary\">cộng thêm phụ cấp làm đêm riêng biệt, được cộng dồn.</span>",
-    "subtitle": "Bộ luật Lao động 2019 giới hạn giờ làm thêm ở mức 40 giờ mỗi tháng và 200 giờ mỗi năm (trường hợp đặc biệt tối đa 300 giờ), với mức phụ cấp lũy tiến 150% (ngày thường), 200% (ngày nghỉ hằng tuần) và 300% (ngày lễ, tết). Làm việc ban đêm còn được cộng thêm phụ cấp riêng, cộng dồn vào các mức trên. Klacks tự động tính các tổ hợp này thay vì phải tính thủ công.",
+    "badgeIcon": "public",
+    "badge": "Mã nguồn mở &middot; On-Premise &middot; Chủ quyền dữ liệu tại Việt Nam",
+    "titleHtml": "Lập lịch nhân sự, nơi <span class=\"text-secondary\">bạn luôn giữ quyền kiểm soát.</span>",
+    "subtitle": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm) và tính công thức phụ cấp làm đêm lũy tiến theo Bộ luật Lao động 2019 &mdash; đồng thời vận hành On-Premise để dữ liệu chấm công sinh trắc học luôn nằm trong hạ tầng riêng của bạn.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Lưới lịch làm việc Klacks",
+    "screenshotAlt": "Tổng quan lịch làm việc Klacks cho doanh nghiệp tại Việt Nam",
     "screenshotLabel": "Lịch làm việc"
   },
   "challenges": {
-    "eyebrow": "Thực tế hằng ngày trong ngành logistics và bảo vệ tại Việt Nam",
-    "title": "Các khoản phụ cấp cộng dồn thay vì thay thế lẫn nhau",
+    "eyebrow": "Thực tế lập lịch hằng ngày tại các doanh nghiệp Việt Nam",
+    "title": "Giới hạn 3 cấp, phụ cấp làm đêm và bảo vệ dữ liệu",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Giới hạn làm thêm giờ: 40 giờ/tháng, 200 giờ/năm", "text": "Chỉ có thể nâng lên tối đa 300 giờ/năm trong trường hợp đặc biệt &mdash; với hoạt động logistics 24/7, giới hạn này nhanh chóng bị chạm tới." },
-      { "icon": "payments", "title": "Các khoản phụ cấp cộng dồn với nhau", "text": "Phụ cấp làm đêm được cộng thêm vào các mức 150/200/300% cho ngày thường, ngày nghỉ và ngày lễ &mdash; gần như không thể tính thủ công mà không có sai sót." },
-      { "icon": "local_shipping", "title": "Đảm bảo trực 24/7 trong logistics và bảo vệ", "text": "Kho bãi và dịch vụ bảo vệ cần bố trí nhân sự liên tục, không gián đoạn, dù phải tuân thủ giới hạn nghiêm ngặt theo tháng và theo năm." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Chủ quyền dữ liệu",
-    "title": "Toàn quyền kiểm soát dữ liệu: Mã nguồn mở &amp; Triển khai tại chỗ",
-    "text": "Klacks được phát triển cho các ngành có yêu cầu bảo mật và tuân thủ nghiêm ngặt, nơi dữ liệu nhân viên nhạy cảm không được phép rời khỏi hạ tầng nội bộ. Là một giải pháp mã nguồn mở, Klacks có thể được triển khai trực tiếp tại trung tâm dữ liệu riêng của bạn hoặc trên máy chủ nội bộ được bảo mật &mdash; không phụ thuộc vào các nhà cung cấp dịch vụ đám mây của Mỹ. Điều này giúp việc tuân thủ Nghị định về bảo vệ dữ liệu cá nhân của Việt Nam (Nghị định 13/2023/NĐ-CP) trở nên chủ động và dễ dàng hơn.",
-    "bullets": [
-      "Chủ quyền tại chỗ: toàn quyền kiểm soát lịch làm việc, chứng từ làm thêm giờ và nhật ký hoạt động trong chính hệ thống CNTT của bạn.",
-      "Kiến trúc LLM linh hoạt: các đề xuất lập lịch dựa trên AI cũng có thể vận hành với mô hình ngôn ngữ được lưu trữ nội bộ, không để dữ liệu rò rỉ ra các API bên ngoài.",
-      "Mã nguồn có thể kiểm toán: toàn bộ codebase minh bạch, phục vụ kiểm toán CNTT và kiểm tra tuân thủ nội bộ."
+      { "icon": "gavel", "title": "Giới hạn làm thêm giờ 3 cấp", "text": "Giờ làm thêm không được vượt quá 50% giờ làm việc bình thường trong ngày (với ca 8 giờ, tối đa 4 giờ/ngày), tối đa 40 giờ/tháng và tối đa 200 giờ/năm theo mặc định, có thể nâng lên 300 giờ đối với các ngành được pháp luật quy định riêng (Điều 107 Bộ luật Lao động 2019). Chỉ cần vượt một trong ba cấp này đã là vi phạm, dù hai cấp còn lại vẫn được tuân thủ." },
+      { "icon": "bedtime", "title": "Mức phụ cấp làm thêm giờ ban đêm cộng dồn", "text": "Mức phụ cấp làm thêm giờ cơ bản 150% (ngày thường), 200% (ngày nghỉ) hoặc 300% (ngày lễ) cộng thêm 30% phụ cấp làm đêm, cộng thêm 20% nữa trên mức phụ cấp làm thêm giờ tương ứng khi làm việc ban đêm (Điều 98 Bộ luật Lao động 2019) tạo thành mức cộng dồn khoảng 210% hoặc 270% &mdash; một trong những phép tính lương dễ sai sót nhất nếu làm thủ công." },
+      { "icon": "fingerprint", "title": "Dữ liệu sinh trắc học là dữ liệu nhạy cảm", "text": "Dữ liệu sinh trắc học được coi là dữ liệu cá nhân nhạy cảm (Nghị định 13/2023/NĐ-CP) &mdash; việc chuyển dữ liệu ra nước ngoài đòi hỏi phải có hồ sơ đánh giá tác động chuyển dữ liệu trình Bộ Công an." }
     ]
   },
   "solutions": {
-    "title": "Klacks tự động tính các khoản phụ cấp cộng dồn như thế nào",
-    "subtitle": "Kết hợp chính xác phụ cấp ngày thường, ngày nghỉ, ngày lễ và làm đêm.",
+    "title": "Klacks giúp giảm tải cho doanh nghiệp tại Việt Nam như thế nào",
+    "subtitle": "Từ giới hạn làm thêm giờ được giám sát tự động đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
-      { "icon": "bolt", "title": "Cơ chế tự động tìm người thay thế khi thiếu nhân sự", "text": "Khi một nhân viên vắng mặt đột xuất, Klacks lập tức tìm người thay thế đủ trình độ &mdash; mà không phát sinh giờ làm thêm ngoài kế hoạch." },
-      { "icon": "fact_check", "title": "Tính toán phụ cấp kết hợp", "text": "Klacks cộng chính xác phụ cấp làm đêm vào các mức 150/200/300%, đồng thời theo dõi liên tục giới hạn 40 giờ/tháng và 200 giờ/năm." },
-      { "icon": "file_export", "title": "Xuất CSV/Excel ngay từ hôm nay", "text": "Số giờ làm việc thực tế, giờ làm thêm và phụ cấp có thể xuất trực tiếp dưới dạng CSV/Excel; định dạng cho MISA AMIS đang được cân nhắc đưa vào lộ trình phát triển." },
-      { "icon": "calendar_month", "title": "Trình hướng dẫn tự động điền cho ca luân phiên", "text": "Trợ lý tự động điền dựa trên thuật toán di truyền (GA) lập lịch luân phiên 24/7 trong khi vẫn tuân thủ các giới hạn giờ làm thêm đã thiết lập." },
-      { "icon": "groups", "title": "Bố trí ca làm việc chính xác theo trình độ chuyên môn", "text": "Chỉ những nhân viên có trình độ chuyên môn phù hợp và chứng chỉ hành nghề bảo vệ còn hiệu lực mới được đề xuất cho một ca làm việc." }
+      { "icon": "gavel", "title": "Giới hạn 3 cấp được giám sát tự động", "text": "Klacks liên tục đối chiếu giới hạn ngày, tháng và năm (Điều 107) và cảnh báo trước khi một trong các cấp bị vượt quá." },
+      { "icon": "bedtime", "title": "Tính đúng phụ cấp làm thêm giờ ban đêm", "text": "Klacks tự động tính công thức lồng nhau gồm mức cơ bản, 30% phụ cấp làm đêm và thêm 20% nữa (Điều 98) &mdash; bao gồm cả mức cộng dồn 210% hoặc 270%." },
+      { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca được tuân thủ", "text": "Khung giờ làm đêm từ 22:00 đến 06:00 (Điều 106) và thời gian nghỉ 12 giờ giữa hai ca (Điều 110) được tự động tính đến trong lịch làm việc." },
+      { "icon": "fingerprint", "title": "Tuân thủ quy định về dữ liệu sinh trắc học, không cần chuyển ra nước ngoài", "text": "Lưu trữ On-Premise giữ toàn bộ dữ liệu chấm công sinh trắc học trong mạng nội bộ của doanh nghiệp &mdash; không cần đến hồ sơ đánh giá tác động chuyển dữ liệu theo Nghị định 13/2023." },
+      { "icon": "shield_lock", "title": "On-Premise: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn, bạn tự chọn mô hình AI &mdash; kể cả lưu trữ nội bộ hoàn toàn, không có dữ liệu nhân sự nào chuyển ra nước ngoài." },
+      { "icon": "smart_toy", "title": "Klacksy: dựa trên quy tắc, không phải hộp đen", "text": "Trợ lý AI tích hợp Klacksy lập lịch theo lệnh thoại &mdash; minh bạch theo các kỹ năng và quy tắc đã thiết lập sẵn, không phải quyết định AI khó hiểu." }
     ]
   },
   "klacksy": {
     "eyebrow": "Trợ lý AI",
     "title": "Klacksy: Trợ lý tích hợp cho đội ngũ của bạn",
-    "text": "Klacksy không phải là một chatbot tiếp thị gắn thêm, mà được tích hợp trực tiếp vào giao diện Klacks. Nhân viên và người lập lịch có thể tra cứu giờ làm việc qua trò chuyện, gửi yêu cầu đổi ca hoặc giải quyết xung đột về trình độ chuyên môn trong nhóm. Một hệ thống kỹ năng và quy tắc được thiết lập sẵn đảm bảo Klacksy chỉ đưa ra đề xuất phù hợp với trình độ chuyên môn thực tế và giới hạn giờ làm thêm của những người liên quan.",
+    "text": "Klacksy không phải là một chatbot tiếp thị gắn thêm, mà được tích hợp trực tiếp vào giao diện Klacks. Nhân viên và người lập lịch có thể tra cứu giờ làm việc qua trò chuyện, gửi yêu cầu đổi ca hoặc xác nhận tình trạng sẵn sàng làm việc. Một hệ thống kỹ năng và quy tắc được thiết lập sẵn đảm bảo Klacksy luôn đưa ra đề xuất minh bạch, dễ hiểu &mdash; không phải quyết định hộp đen. Đối với doanh nghiệp có yêu cầu bảo mật dữ liệu cao, mô hình AI còn có thể được lưu trữ hoàn toàn nội bộ.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Trợ lý trò chuyện Klacksy trong giao diện Klacks"
   },
+  "example": {
+    "eyebrow": "Ví dụ thực tế",
+    "title": "Phụ cấp làm đêm và giới hạn 3 cấp, một cái nhìn tổng quan",
+    "text": "Klacks tự động nhận biết khi một ca làm việc rơi vào khung giờ đêm hoặc khi một cấp của giới hạn làm thêm giờ đã đạt tới, và tính luôn mức phụ cấp cộng dồn &mdash; không cần tính toán thủ công."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Dùng thử Klacks cho doanh nghiệp logistics và dịch vụ bảo vệ tại Việt Nam",
-    "text": "Trải nghiệm trong Playground cách Klacks tự động tính các khoản phụ cấp cộng dồn &mdash; hoặc triển khai Klacks tại chỗ để có toàn quyền kiểm soát dữ liệu."
+    "title": "Trải nghiệm Klacks trong doanh nghiệp của bạn",
+    "text": "Hãy dùng thử trong Playground để xem Klacks tự động hóa giới hạn làm thêm giờ 3 cấp, công thức phụ cấp làm đêm cộng dồn và việc tuân thủ quy định về dữ liệu sinh trắc học như thế nào &mdash; On-Premise hoặc trong Playground, miễn phí và không cần đăng ký."
   }
 }

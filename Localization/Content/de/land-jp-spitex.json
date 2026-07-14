@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege in Japan | Wegezeit & Nachtzuschlag",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege (訪問介護) in Japan",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und dem Nachtzuschlag für Einsätze zwischen 22 und 5 Uhr. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Japan",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege (訪問介護)",
+    "title": "Touren statt Schichten, Wegezeit und Nachtarbeit",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Touren statt Schichten",
+        "text": "Jede Pflegekraft fährt von Klient:in zu Klient:in. Wege, Reihenfolge und Zeitfenster müssen jeden Tag neu zusammenpassen."
+      },
+      {
+        "icon": "timer",
+        "title": "Wegezeit zählt als Arbeitszeit",
+        "text": "Fahrzeit zwischen Betrieb bzw. Sammelpunkt und Klientenwohnungen oder von einer Klientenwohnung zur nächsten gilt grundsätzlich als Arbeitszeit (移動時間), sofern der Arbeitgeber die Fahrt anordnet. Nur die reine Fahrt von/zur eigenen Wohnung &mdash; direkt zum ersten bzw. vom letzten Klienten &mdash; zählt als Pendelzeit."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Nachtzuschlag bei Einsätzen ab 22 Uhr",
+        "text": "Aktive Einsatzzeit im Nachtfenster zwischen 22:00 und 05:00 Uhr verlangt mindestens 25 % Nachtzuschlag (深夜割増) &mdash; leicht übersehen, wenn Touren spät enden."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in Japan entlastet",
+    "subtitle": "Von der automatischen Tour bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Touren automatisch optimiert",
+        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß."
+      },
+      {
+        "icon": "timer",
+        "title": "Wegezeit korrekt als Arbeitszeit erfasst",
+        "text": "Klacks rechnet die Fahrzeit-Anteile im Tagesroster automatisch als Arbeitszeit &mdash; nur die reine An- und Rückfahrt von/zur eigenen Wohnung bleibt außen vor."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Nachtzuschlag automatisch berechnet",
+        "text": "Den 25%-Nachtzuschlag für Einsätze im Fenster zwischen 22:00 und 05:00 Uhr rechnet Klacks automatisch mit ein &mdash; ohne Nachrechnen von Hand."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifikationen automatisch berücksichtigt",
+        "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wegezeit und Nachtzuschlag, ein Plan",
+    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und schlägt den 25%-Nachtzuschlag vor, sobald ein Einsatz zwischen 22:00 und 05:00 Uhr fällt &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Wegezeit, Touren und Nachtzuschlag übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

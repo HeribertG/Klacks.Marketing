@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks 台灣清潔服務版 | 週末出勤休息日加班費",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "適用於台灣清潔服務業",
+    "titleHtml": "每一次週末出勤 <span class=\"text-secondary\">薪資都精準核算。</span>",
+    "subtitle": "Klacks 安排據點與清潔團隊的排班 &mdash; 當臨時班次落在休息日時，會自動依勞基法第24條計算階梯式加班費。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 台灣清潔團隊與據點排班表格",
+    "screenshotLabel": "排班表"
+  },
+  "challenges": {
+    "eyebrow": "台灣清潔服務業的日常挑戰",
+    "title": "週末出勤與休息日加班費級距",
+    "items": [
+      { "icon": "gavel", "title": "週末班次遇上休息日規則", "text": "清潔人員多半採標準工時排班。若有人臨時在休息日出勤支援，即適用勞基法第24條／第36條的一般加班費級距 &mdash; 清潔業並無專屬規則，而是與其他行業相同的標準。" },
+      { "icon": "calculate", "title": "三段加班費級距，而非單一費率", "text": "前兩小時1.34倍，第3至第8小時1.67倍，第9至第12小時2.67倍 &mdash; 單一次週末出勤就涉及三種不同費率，人工計算極易出錯。" },
+      { "icon": "groups", "title": "團隊 &amp; 據點經常異動", "text": "臨時工、兼職人員與經常變動的據點分配，讓正確且一致地套用休息日加班費變得更加困難。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何為台灣清潔服務業減輕負擔",
+    "subtitle": "從最佳化據點路線到正確的休息日加班費 &mdash; 環環相扣，一次到位。",
+    "items": [
+      { "icon": "route", "title": "自動優化據點路線", "text": "Klacks 安排據點的作業順序，確保路程最短 &mdash; 適用於開車或步行。" },
+      { "icon": "gavel", "title": "自動計算休息日階梯加班費", "text": "若團隊在休息日臨時支援，Klacks 會自動計算1.34倍／1.67倍／2.67倍三段加班費級距 &mdash; 無須逐時手動核算。" },
+      { "icon": "groups", "title": "團隊彈性調度", "text": "無論人員如何異動或臨時支援，Klacks 都能全面掌握，並提出合適的排班建議。" },
+      { "icon": "verified", "title": "資格精準對應", "text": "特殊清潔、機械操作、管制區域：僅分配具備相符資格的人員。" },
+      { "icon": "shield_lock", "title": "內部部署：符合PDPA的資料自主權", "text": "Klacks 運行於您自有的基礎架構上 &mdash; 員工資料不會離開企業網路，AI模型也由您自行選擇。" },
+      { "icon": "smart_toy", "title": "Klacksy 以語音指令排班", "text": "只要說「安排東區據點的週末清潔」即可 &mdash; Klacksy 會自動套用休息日加班費級距。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實例說明",
+    "title": "週末出勤與三段加班費，一目了然",
+    "text": "Klacks 自動判斷週末出勤是否落在休息日，並依每小時套用對應的加班費級距 &mdash; 完全不必手動核算。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的清潔公司中體驗 Klacks",
+    "text": "在體驗平台中親自測試 Klacks 如何處理據點路線、團隊調度與休息日加班費 &mdash; 完全免費，無需註冊。"
+  }
+}

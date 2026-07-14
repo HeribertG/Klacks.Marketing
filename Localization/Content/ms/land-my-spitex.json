@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks untuk Penjagaan di Rumah di Malaysia | Syif Berpecah & Kehadiran Mematuhi PDPA",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Untuk penjagaan di rumah (penjaga) di Malaysia",
+    "titleHtml": "Lebih masa untuk penjagaan, <span class=\"text-secondary\">kurang untuk perancangan laluan.</span>",
+    "subtitle": "Klacks menjadualkan lawatan dan laluan secara automatik &mdash; serta memantau had spread-over 10 jam daripada lawatan pertama hingga waktu pulang, sepertimana disyaratkan Employment Act 1955 bagi syif berpecah. Beroperasi secara on-premise, supaya data pesakit tidak pernah keluar daripada premis anda.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Paparan garis masa Klacks untuk perancangan laluan penjagaan di rumah di Malaysia",
+    "screenshotLabel": "Garis Masa"
+  },
+  "challenges": {
+    "eyebrow": "Realiti harian penjagaan di rumah di Malaysia",
+    "title": "Syif berpecah, kelayakan dan perlindungan data",
+    "items": [
+      { "icon": "alt_route", "title": "Syif berpecah di bawah had spread-over 10 jam", "text": "Bagi penjaga yang bertugas pada waktu pagi dan petang, tiada peraturan syif berpecah yang tersendiri &mdash; had spread-over am 10 jam terpakai (Section 60A(1) Employment Act 1955, Semenanjung/Labuan): jangka masa daripada permulaan kerja pertama hingga waktu pulang terakhir tidak boleh melebihi 10 jam, jika tidak lebihannya menjadi lebih masa." },
+      { "icon": "verified", "title": "Memastikan kelayakan bagi setiap klien", "text": "Setiap lawatan memerlukan kelayakan yang sesuai &mdash; sukar dipantau secara manual apabila laluan dan gantian sering berubah." },
+      { "icon": "fingerprint", "title": "Data kehadiran biometrik sebagai data PDPA sensitif", "text": "Jika penjaga merekodkan lawatan mereka melalui cap jari atau pengecaman wajah, data ini diiktiraf secara jelas sebagai data peribadi sensitif sejak Personal Data Protection (Amendment) Act 2024 (Act A1727)." }
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacks meringankan beban penjagaan di rumah di Malaysia",
+    "subtitle": "Daripada laluan automatik hingga infrastruktur sendiri &mdash; semuanya saling melengkapi.",
+    "items": [
+      { "icon": "route", "title": "Laluan dioptimumkan secara automatik", "text": "Klacks menyusun laluan lawatan supaya jarak perjalanan pendek dan tetingkap masa dipatuhi &mdash; sama ada dengan kereta, motosikal atau berjalan kaki." },
+      { "icon": "schedule", "title": "Spread-over dipantau secara automatik", "text": "Klacks memantau jangka masa 10 jam antara lawatan pertama dan waktu pulang terakhir (Section 60A(1)) serta menanda lebihannya secara automatik sebagai lebih masa." },
+      { "icon": "paid", "title": "Elaun bertingkat dikira secara automatik", "text": "Elaun lebih masa, hari rehat dan hari kelepasan am (1.5x/2.0x/3.0x) dikira dan diasingkan secara automatik &mdash; termasuk had gaji RM4,000." },
+      { "icon": "verified", "title": "Kelayakan diambil kira secara automatik", "text": "Setiap lawatan hanya diberikan kepada individu yang mempunyai kelayakan yang sesuai &mdash; tanpa perlu semakan manual." },
+      { "icon": "shield_lock", "title": "On-Premise: data kekal di premis", "text": "Klacks berjalan pada infrastruktur anda sendiri. Data pesakit dan data kehadiran biometrik &mdash; data PDPA sensitif sejak Act A1727/2024 &mdash; tidak keluar daripada premis anda." },
+      { "icon": "smart_toy", "title": "Klacksy menjadualkan melalui suara", "text": "\"Isikan laluan untuk esok\" sudah memadai. Jika berlaku ketidakhadiran, Klacksy segera mencadangkan gantian yang tersedia." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh Konkrit",
+    "title": "Spread-over dan elaun, satu jadual",
+    "text": "Klacks mengesan secara automatik apabila jangka masa 10 jam antara lawatan pertama dan waktu pulang dilepasi, dan terus menetapkan lebihan itu kepada kadar elaun yang sesuai &mdash; tanpa perlu mengira semula secara manual."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Alami Klacks dalam Perkhidmatan Penjagaan di Rumah Anda",
+    "text": "Cuba dalam Playground bagaimana Klacks menguruskan laluan, spread-over dan elaun &mdash; atau pasang terus pada infrastruktur anda sendiri. Percuma dan tanpa pendaftaran."
+  }
+}

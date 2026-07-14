@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks til hjemmeplejen i Danmark | Fritvalgsordning &amp; omlægningsfrist",
+  "pageTitle": "Klacks til hjemmeplejen i Danmark | Fritvalgsordning & omlægningsfrist",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Til hjemmeplejen i Danmark",
@@ -13,21 +13,57 @@
     "eyebrow": "Hverdagen i den danske hjemmepleje",
     "title": "Fritvalgsordning, omlægningsfrist og delte tjenester",
     "items": [
-      { "icon": "savings", "title": "Ny fritvalgsordning fra OK26", "text": "Fra 1. april 2026 kan social- og sundhedshjælpere individuelt konvertere en del af deres løn til fridage, kontant løn eller ekstra pension (2,35% årligt plus 2,42% månedligt) &mdash; hver enkelt kan vælge forskelligt, frem til 31. marts 2029." },
-      { "icon": "event_repeat", "title": "4-dages-frist ved omlægning", "text": "Bliver en planlagt vagt lagt om med kortere varsel end 4 dage, udløses et tillæg på 30,85 DKK pr. omlagt time &mdash; nemt at overse, når ruter skal justeres spontant." },
-      { "icon": "call_split", "title": "Delte tjenester på dagen", "text": "Bliver dagsvagten delt i to (delt tjeneste), udløses et tillæg efter FOA-SOSU-overenskomsten &mdash; som skal registreres korrekt pr. person og indsats." }
+      {
+        "icon": "savings",
+        "title": "Ny fritvalgsordning fra OK26",
+        "text": "Fra 1. april 2026 kan social- og sundhedshjælpere individuelt konvertere en del af deres løn til fridage, kontant løn eller ekstra pension (2,35% årligt plus 2,42% månedligt) &mdash; hver enkelt kan vælge forskelligt, frem til 31. marts 2029."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "4-dages-frist ved omlægning",
+        "text": "Bliver en planlagt vagt lagt om med kortere varsel end 4 dage, udløses et tillæg på 30,85 DKK pr. omlagt time &mdash; nemt at overse, når ruter skal justeres spontant."
+      },
+      {
+        "icon": "call_split",
+        "title": "Delte tjenester på dagen",
+        "text": "Bliver dagsvagten delt i to (delt tjeneste), udløses et tillæg efter FOA-SOSU-overenskomsten &mdash; som skal registreres korrekt pr. person og indsats."
+      }
     ]
   },
   "solutions": {
     "title": "Sådan aflaster Klacks den danske hjemmepleje",
     "subtitle": "Fra den optimerede rute til den individuelle fritvalgsordning-konto &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger indsatsruter, så vejene bliver korte og tidsvinduerne overholdes &mdash; til bil, cykel eller til fods." },
-      { "icon": "savings", "title": "Fritvalgsordning ført individuelt", "text": "Klacks fører for hver medarbejder den individuelle valgkonto mellem fridage, løn og ekstra pension efter OK26 opdateret dag for dag." },
-      { "icon": "event_repeat", "title": "4-dages-frist overvåget automatisk", "text": "Klacks advarer, før en omlægning underskrider 4-dages-fristen, og bogfører automatisk tillægget på 30,85 DKK pr. time, hvis det alligevel skal ske med kort varsel." },
-      { "icon": "call_split", "title": "Delte tjenester tillagt korrekt", "text": "Klacks genkender automatisk delt tjeneste og beregner det overenskomstmæssige tillæg for hver berørt medarbejder." },
-      { "icon": "verified", "title": "Kvalifikationer tages automatisk i betragtning", "text": "Hver indsats tildeles kun personer med den rette kvalifikation &mdash; helt uden manuel kontrol." },
-      { "icon": "smart_toy", "title": "Klacksy planlægger via tale", "text": "\"Fyld ruterne for i morgen ud\" er nok. Ved sygdom foreslår Klacksy straks tilgængelig erstatning." }
+      {
+        "icon": "route",
+        "title": "Ruter optimeret automatisk",
+        "text": "Klacks lægger indsatsruter, så vejene bliver korte og tidsvinduerne overholdes &mdash; til bil, cykel eller til fods."
+      },
+      {
+        "icon": "savings",
+        "title": "Fritvalgsordning ført individuelt",
+        "text": "Klacks fører for hver medarbejder den individuelle valgkonto mellem fridage, løn og ekstra pension efter OK26 opdateret dag for dag."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "4-dages-frist overvåget automatisk",
+        "text": "Klacks advarer, før en omlægning underskrider 4-dages-fristen, og bogfører automatisk tillægget på 30,85 DKK pr. time, hvis det alligevel skal ske med kort varsel."
+      },
+      {
+        "icon": "call_split",
+        "title": "Delte tjenester tillagt korrekt",
+        "text": "Klacks genkender automatisk delt tjeneste og beregner det overenskomstmæssige tillæg for hver berørt medarbejder."
+      },
+      {
+        "icon": "verified",
+        "title": "Kvalifikationer tages automatisk i betragtning",
+        "text": "Hver indsats tildeles kun personer med den rette kvalifikation &mdash; helt uden manuel kontrol."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planlægger via tale",
+        "text": "\"Fyld ruterne for i morgen ud\" er nok. Ved sygdom foreslår Klacksy straks tilgængelig erstatning."
+      }
     ]
   },
   "example": {

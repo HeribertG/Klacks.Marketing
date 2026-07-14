@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks for Hospitals in Saudi Arabia | Shift Operations under Art. 100 & 3-Week Averaging",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For hospitals &amp; clinics in Saudi Arabia",
+    "titleHtml": "Shift schedules that <span class=\"text-secondary\">stay balanced across weeks.</span>",
+    "subtitle": "Klacks schedules wards and shift operations so the 3-week average required by Art. 100 works out &mdash; including correctly compensated overtime. On-premise, so patient data never leaves your facility.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule grid for hospitals in Saudi Arabia",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Day-to-day hospital operations in Saudi Arabia",
+    "title": "Shift Operations, 3-Week Averaging and Art. 100",
+    "items": [
+      { "icon": "schedule", "title": "Shift Operations Beyond 8h/48h (Art. 100)", "text": "With ministry approval, employers running shift operations (العمل بنظام المناوبات) may exceed 8 hours per day or 48 hours per week &mdash; provided the average over 3 weeks comes back to 8h/48h." },
+      { "icon": "timelapse", "title": "Up to 9h/Day for Intermittent Duties", "text": "For staff categories with intermittent (non-continuous) duties, Art. 100 allows up to 9 hours per day &mdash; nearly impossible to track by hand across many wards and rotations." },
+      { "icon": "gavel", "title": "Overtime Still under Art. 107", "text": "Even in shift operations, every overtime hour must be paid at the hourly wage plus 50% of the base wage (effectively 150%)." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks Takes the Load Off Hospitals in Saudi Arabia",
+    "subtitle": "From the 3-week average calculation to 24/7 coverage &mdash; it all fits together.",
+    "items": [
+      { "icon": "schedule", "title": "Gap-Free 24/7 Coverage", "text": "Day, evening and night shifts across all wards &mdash; Klacks flags every gap instantly and fills it automatically on request." },
+      { "icon": "balance", "title": "3-Week Average Calculated under Art. 100", "text": "Klacks tracks the average over the required 3 weeks and warns before it deviates from 8h/48h." },
+      { "icon": "timelapse", "title": "9-Hour Limit for Intermittent Duties", "text": "Categories with intermittent duties are correctly scheduled with up to 9 hours per day." },
+      { "icon": "gavel", "title": "Overtime Premium Calculated Automatically", "text": "The statutory 50% premium on the base wage (Art. 107) is calculated automatically for every overtime hour." },
+      { "icon": "verified", "title": "Qualifications &amp; Wards", "text": "Every shift is assigned only to appropriately qualified staff &mdash; per ward, department and role." },
+      { "icon": "shield_lock", "title": "On-Premise: Data Stays In-House", "text": "Klacks runs on your infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Fill next week&rsquo;s ER night shifts\" is enough &mdash; Klacksy takes qualifications and the 3-week average into account." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In Practice",
+    "title": "Shift Rotation and 3-Week Averaging, One Plan",
+    "text": "Klacks schedules shifts so the average over 3 weeks stays at 8 hours per day or 48 hours per week (Art. 100), and automatically calculates every overtime hour with the statutory premium (Art. 107)."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Experience Klacks in Your Hospital",
+    "text": "Try the Playground to see how Klacks handles shift operations, 3-week averaging and overtime &mdash; or install it directly in your facility. Free and without registration."
+  }
+}

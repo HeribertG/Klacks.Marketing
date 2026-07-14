@@ -1,0 +1,44 @@
+{
+  "pageTitle": "Klacks für Spitäler Saudi-Arabien | Schichtbetrieb nach Art. 100 & 3-Wochen-Ausgleich",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Saudi-Arabien",
+    "titleHtml": "Schichtpläne, die <span class=\"text-secondary\">über Wochen im Gleichgewicht bleiben.</span>",
+    "subtitle": "Klacks plant Stationen und Schichtbetrieb so, dass der 3-Wochen-Durchschnitt nach Art. 100 stimmt &mdash; inklusive korrekt vergüteter Überstunden. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Saudi-Arabien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Saudi-Arabien",
+    "title": "Schichtbetrieb, 3-Wochen-Ausgleich und Art. 100",
+    "items": [
+      { "icon": "schedule", "title": "Schichtbetrieb über 8h/48h hinaus (Art. 100)", "text": "Mit Zustimmung des Ministeriums darf der Arbeitgeber im Schichtbetrieb (العمل بنظام المناوبات) über 8 Stunden pro Tag bzw. 48 Stunden pro Woche hinausgehen &mdash; sofern der Durchschnitt über 3 Wochen wieder bei 8h/48h liegt." },
+      { "icon": "timelapse", "title": "Bis zu 9h/Tag bei nicht durchgehender Tätigkeit", "text": "Für Personalkategorien mit nicht durchgehender Tätigkeit sind nach Art. 100 bis zu 9 Stunden pro Tag möglich &mdash; über viele Stationen und Rotationen von Hand kaum zu überblicken." },
+      { "icon": "gavel", "title": "Überstunden weiterhin nach Art. 107", "text": "Auch im Schichtbetrieb ist jede Überstunde mit dem Stundenlohn plus 50% des Grundlohns (effektiv 150%) zu vergüten." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in Saudi-Arabien entlastet",
+    "subtitle": "Von der 3-Wochen-Durchschnittsrechnung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "balance", "title": "3-Wochen-Durchschnitt nach Art. 100 berechnet", "text": "Klacks behält den Durchschnitt über die vorgeschriebenen 3 Wochen im Blick und warnt, bevor er von 8h/48h abweicht." },
+      { "icon": "timelapse", "title": "9-Stunden-Grenze für nicht durchgehende Tätigkeit", "text": "Kategorien mit nicht durchgehender Tätigkeit werden korrekt mit bis zu 9 Stunden pro Tag geplant." },
+      { "icon": "gavel", "title": "Überstundenzuschlag automatisch berechnet", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (Art. 107) wird für jede Überstunde automatisch berechnet." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Notaufnahme für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und den 3-Wochen-Durchschnitt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichtrotation und 3-Wochen-Ausgleich, ein Plan",
+    "text": "Klacks plant Schichten so, dass der Durchschnitt über 3 Wochen bei 8 Stunden pro Tag bzw. 48 Stunden pro Woche bleibt (Art. 100), und berechnet jede Überstunde automatisch mit dem gesetzlichen Zuschlag (Art. 107)."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Schichtbetrieb, den 3-Wochen-Ausgleich und Überstunden übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks 中国安保服务版 | 综合计算工时工作制助力保安人员排班",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "面向中国安保服务行业",
+    "titleHtml": "岗位全员到位,<span class=\"text-secondary\">每个班次都精准契合核算周期。</span>",
+    "subtitle": "Klacks 严格按照经当地人力资源和社会保障局(人社局)审批的核算周期,汇总保安人员12小时轮班制下的工时 &mdash; 只有当周期内工时确实超过标准工时,才会核算加班工资。",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks 中国安保服务时间轴视图",
+    "screenshotLabel": "时间轴"
+  },
+  "challenges": {
+    "eyebrow": "中国安保服务的日常挑战",
+    "title": "12小时轮班与周期工时",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "12小时轮班与审批义务",
+        "text": "保安人员通常实行12小时轮班制。要使这一排班合法,企业须事先向当地人力资源和社会保障局(人社局)申请综合计算工时工作制的审批。"
+      },
+      {
+        "icon": "gavel",
+        "title": "加班按周期核算,而非按自然月",
+        "text": "加班工资(工作日150%,法定节假日300%)按经审批的核算周期 &mdash; 例如一个季度 &mdash; 计算,而非按自然月。综合计算工时工作制并无固定的月度上限,这使得人工核算极易出错。"
+      },
+      {
+        "icon": "apartment",
+        "title": "多个项目点,统一排班",
+        "text": "每个项目点都有各自的岗位、时段和要求 &mdash; 同时统筹兼顾,人工几乎难以做到。"
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何为中国安保服务企业减负",
+    "subtitle": "从精准的周期工时汇总到项目点岗位无缝覆盖 &mdash; 环环相扣,浑然一体。",
+    "items": [
+      {
+        "icon": "fact_check",
+        "title": "精准汇总周期工时",
+        "text": "Klacks 按经审批的核算周期(例如一个季度)汇总工时 &mdash; 只有当周期内工时确实超过标准工时,才会提示加班,而不是机械地按自然月核算。"
+      },
+      {
+        "icon": "payments",
+        "title": "150%/300%自动匹配",
+        "text": "一旦周期内产生真正的加班,Klacks 会依据第44条自动匹配相应的加班工资 &mdash; 工作日150%,法定节假日300%。"
+      },
+      {
+        "icon": "description",
+        "title": "留存审批所需的完整记录",
+        "text": "Klacks 按照当地人社局审批综合计算工时工作制所要求的格式,完整留存周期工时数据。"
+      },
+      {
+        "icon": "shield",
+        "title": "项目点与岗位无缝覆盖",
+        "text": "覆盖所有项目点的每一个岗位 &mdash; Klacks 会即时显示每一处空缺,并可根据需要自动填补。"
+      },
+      {
+        "icon": "shield_lock",
+        "title": "本地部署:执勤数据不出境",
+        "text": "Klacks 运行在您自有的基础设施上。人员和项目点数据始终不会离开中国 &mdash; 因此无需再进行PIPL规定的数据出境安全评估。"
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy 语音排班",
+        "text": "Klacksy 在每次派班时都会自动核对综合计算工时工作制当前的周期进度,并给出合适的排班建议。"
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "实例",
+    "title": "按周期而非自然月核算,一目了然",
+    "text": "Klacks 持续按经审批的核算周期汇总保安人员的12小时轮班工时,精准显示何时产生须按150%或300%支付的真正加班 &mdash; 依据周期标准工时计算,而非机械地按自然月核算。"
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "在您的中国安保企业中体验 Klacks",
+    "text": "在 Playground 中亲自体验 Klacks 如何自动处理项目点、周期加班工资与审批要求 &mdash; 或直接部署在您自己的基础设施上。免费且无需注册。"
+  }
+}

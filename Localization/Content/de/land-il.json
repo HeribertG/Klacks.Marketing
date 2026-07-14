@@ -1,81 +1,50 @@
 {
-  "pageTitle": "Klacks für Israel | Planung, die Miluim-Einsätze übersteht",
+  "pageTitle": "Klacks für Israel | Zeiterfassung gegen die 60-Überstunden-Vermutung (Amendment 24)",
   "hero": {
-    "badgeIcon": "shield",
-    "badge": "Für Sicherheitsfirmen, Spitäler &amp; Personalverleih in Israel",
-    "titleHtml": "Schichtplanung für <span class=\"text-secondary\">eine volatile Realität.</span>",
-    "subtitle": "Reservistendienst (Miluim) und Schabbat-Vorschriften reissen Lücken in jeden generischen Dienstplan. Klacks kombiniert sofortige, rechtssichere Ersatzplanung mit Schabbat-bewusster Autofill-Funktion.",
-    "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
-    "screenshotLabel": "Dienstplan"
+    "badgeIcon": "fact_check",
+    "badge": "Open Source &middot; On-Premise &middot; Amendment-24-konforme Zeiterfassung",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie den Nachweis in der Hand haben.</span>",
+    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und respektiert die wöchentliche Sabbatruhe &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So lässt sich die Beweislast nach Amendment 24 im Streitfall erfüllen, statt an der gesetzlichen 60-Stunden-Vermutung zu scheitern.",
+    "screenshotFile": "app-calendar-de.png",
+    "screenshotAlt": "Klacks Kalenderansicht für Unternehmen in Israel",
+    "screenshotLabel": "Kalender"
   },
   "challenges": {
-    "eyebrow": "Schichtplanung in Israels Betriebsrealität",
-    "title": "Miluim-Lücken und Schabbat-Regeln",
+    "eyebrow": "Der Planungsalltag in israelischen Betrieben",
+    "title": "Amendment 24, Sabbatruhe und die Beweislastumkehr",
     "items": [
-      {
-        "icon": "groups",
-        "title": "Reservisten-Einberufung ohne Vorwarnung",
-        "text": "Miluim-Einberufungen können Personal fast ohne Vorlauf herausreissen &mdash; das reisst Löcher in Security-, Spital- und Personalverleih-Pläne."
-      },
-      {
-        "icon": "block",
-        "title": "Schabbat-Arbeit ist grundsätzlich beschränkt",
-        "text": "Nach dem Hours-of-Work-and-Rest-Law braucht Beschäftigung am Schabbat eine staatliche Genehmigung, und Mitarbeitende können sie aus religiösen Gründen ablehnen &mdash; ein falsch geplanter Dienstplan ist gleichzeitig unterbesetzt und nicht rechtskonform."
-      },
-      {
-        "icon": "payments",
-        "title": "Mehrschichtige Überstunden- &amp; Ruhetagszuschläge",
-        "text": "Reguläre Überstunden (125%/150%) addieren sich mit dem 50%-Ruhetagszuschlag, wenn Arbeit auf den Schabbat fällt &mdash; manuelle Lohnvorbereitung ist fehleranfällig."
-      }
+      { "icon": "gavel", "title": "Amendment 24: Beweislastumkehr vermeiden", "text": "Amendment 24 zum Lohnschutzgesetz (חוק הגנת השכר) verpflichtet zu lückenloser Zeiterfassung. Ohne ordnungsgemäße Nachweise trägt der Arbeitgeber die Beweislast &mdash; gelingt sie nicht, greift die gesetzliche Vermutung von bis zu 60 Überstunden pro Monat zu seinen Lasten. GPS-/Standort-Tracking ersetzt die Anwesenheitserfassung ausdrücklich NICHT." },
+      { "icon": "synagogue", "title": "Sabbatruhe &amp; Genehmigungspflicht", "text": "Mindestens 36 zusammenhängende Stunden Wochenruhe (המנוחה השבועית), für jüdische Mitarbeitende inklusive Sabbat (Freitag bis Samstag), für muslimische inklusive Freitag. Einsatz während der Ruhezeit ist ohne Sondergenehmigung des Arbeitsministeriums grundsätzlich untersagt und mit mindestens 150 % zuschlagspflichtig." },
+      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung nur mit Einwilligung", "text": "Das Nationale Arbeitsgericht entschied am 15.3.2017, dass Mitarbeitende nicht zur Nutzung biometrischer Stempeluhren gezwungen werden dürfen &mdash; nötig sind informierte, freiwillige Einwilligung und eine zumutbare Alternative. Die Privacy Protection Regulations 2017 stufen biometrische Daten zudem in eine erhöhte Sicherheitsstufe ein." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks Israels Planungsrealität abbildet",
-    "subtitle": "Krisenresistente Einsatzplanung statt generischem 24/7-Planer.",
+    "title": "Wie Klacks israelische Betriebe entlastet",
+    "subtitle": "Von der Beweissicherung bis zur Sabbat-konformen Planung &mdash; alles greift ineinander.",
     "items": [
-      {
-        "icon": "bolt",
-        "title": "Sofortiger Ersatz bei Reservisten-Einberufung",
-        "text": "Sobald ein Reservist einberufen wird, findet die Recovery-Engine den bestqualifizierten Ersatz aus dem Pool &mdash; ohne die Vertragsdaten des Reservisten anzurühren."
-      },
-      {
-        "icon": "check_circle",
-        "title": "Schabbat-Ablehnung automatisch respektiert",
-        "text": "Mitarbeitende hinterlegen ihre Schabbat-Verfügbarkeit einmal; die Autofill-Engine schliesst sie danach zuverlässig von Schabbat-Diensten aus."
-      },
-      {
-        "icon": "payments",
-        "title": "Ruhetagszuschläge korrekt berechnet",
-        "text": "Die typisierte Zuschlags-Engine von Klacks wendet den kombinierten Überstunden- plus Ruhetagszuschlag an &mdash; statt manueller Schätzung."
-      },
-      {
-        "icon": "event",
-        "title": "Freitag/Samstag-Woche &amp; Schabbat-Fenster",
-        "text": "Die Kalenderregeln bilden die Freitag/Samstag-Woche und Schabbat-Beginn/-Ende nativ ab."
-      },
-      {
-        "icon": "file_export",
-        "title": "Lohnabrechnungs-fertiger Export",
-        "text": "Klacks exportiert Stunden, Überstunden und Zuschläge bereits heute als CSV/Excel; ein Hashavshevet-kompatibles Format ist als Nächstes auf unserer Roadmap."
-      }
+      { "icon": "fact_check", "title": "Arbeitszeitbuch statt Beweislastrisiko", "text": "Klacks führt ein lückenloses, exportierbares Arbeitszeitbuch &mdash; die Grundlage, um der Amendment-24-Beweislast und der 60-Überstunden-Vermutung im Streitfall etwas entgegenzusetzen." },
+      { "icon": "calculate", "title": "Überstundenzuschläge automatisch berechnet", "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle rechnet Klacks die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 % &mdash; ohne Nachrechnen von Hand." },
+      { "icon": "synagogue", "title": "Sabbat- &amp; Wochenruhe automatisch geprüft", "text": "Klacks erkennt, wenn ein Einsatz in die 36-stündige Wochenruhe fällt, weist auf die nötige Ministeriums-Genehmigung hin und bereitet den 150 %-Zuschlag samt Ersatzruhetag vor." },
+      { "icon": "shield_lock", "title": "On-Premise: sensible Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Biometrische und personenbezogene Daten verlassen Ihr Haus nicht &mdash; ein sinnvoller Ansatz angesichts der erhöhten Sicherheitsstufe für biometrische Daten, auch ohne gesetzliche Cloud-Pflicht." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Ein Reservist wird mitten im Zyklus einberufen",
-    "text": "Klacks sperrt den Platz des Reservisten, zeigt den bestpassenden, rechtskonformen Ersatz aus dem Pool &mdash; der Rest des Dienstplans bleibt unangetastet, keine manuelle Neuplanung."
+    "title": "Sabbat-Dienst und Überstunde, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz in die Sabbat-Wochenruhe fällt oder die 8,6-Stunden-Schwelle überschreitet, und schlägt Genehmigungs-Hinweis, Zuschlag und Ersatzruhetag gleich vor &mdash; während im Hintergrund lückenlos das Arbeitszeitbuch für Amendment 24 mitläuft."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks bei einem volatilen Dienstplan erleben",
-    "text": "Testen Sie im Playground, wie sofortige Ersatzplanung und Schabbat-bewusste Autofill-Funktion funktionieren &mdash; oder betreiben Sie Klacks On-Premise."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Arbeitszeitbuch, Überstundenzuschläge und Sabbatruhe automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks til danske hospitaler | Holdskifte &amp; 48-timers-dokumentation",
+  "pageTitle": "Klacks til danske hospitaler | Holdskifte & 48-timers-dokumentation",
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Til sygehuse &amp; hospitaler i Danmark",
@@ -13,21 +13,57 @@
     "eyebrow": "Klinikhverdagen i Danmark",
     "title": "Holdskifte, hviletid og 48-timers-grænsen",
     "items": [
-      { "icon": "bedtime", "title": "Hviletid ved holdskifte", "text": "I holddrift kan den daglige hviletid undtagelsesvis afkortes til 8 timer, når den fulde hviletid ikke kan overholdes mellem to hold &mdash; arbejdsgiveren skal aftale dette med tillidsrepræsentanten på forhånd." },
-      { "icon": "gavel", "title": "48-timers-grænsen som 4-måneders-gennemsnit", "text": "Arbejdstidsloven og tidsregistreringspligten kræver dokumentation for, at den gennemsnitlige ugentlige arbejdstid over en glidende 4-måneders-periode ikke overstiger 48 timer &mdash; besværligt at holde styr på manuelt på tværs af skiftende afdelingsvagter." },
-      { "icon": "groups", "title": "Mange overenskomster, én klinik", "text": "Plejepersonale, assistenter og læger hører under forskellige overenskomster (bl.a. Danske Regioner, Yngre Læger) med hver deres tillægssatser &mdash; et vagtplansystem skal kunne afbilde denne mangfoldighed i stedet for at gennemtvinge én stiv regel." }
+      {
+        "icon": "bedtime",
+        "title": "Hviletid ved holdskifte",
+        "text": "I holddrift kan den daglige hviletid undtagelsesvis afkortes til 8 timer, når den fulde hviletid ikke kan overholdes mellem to hold &mdash; arbejdsgiveren skal aftale dette med tillidsrepræsentanten på forhånd."
+      },
+      {
+        "icon": "gavel",
+        "title": "48-timers-grænsen som 4-måneders-gennemsnit",
+        "text": "Arbejdstidsloven og tidsregistreringspligten kræver dokumentation for, at den gennemsnitlige ugentlige arbejdstid over en glidende 4-måneders-periode ikke overstiger 48 timer &mdash; besværligt at holde styr på manuelt på tværs af skiftende afdelingsvagter."
+      },
+      {
+        "icon": "groups",
+        "title": "Mange overenskomster, én klinik",
+        "text": "Plejepersonale, assistenter og læger hører under forskellige overenskomster (bl.a. Danske Regioner, Yngre Læger) med hver deres tillægssatser &mdash; et vagtplansystem skal kunne afbilde denne mangfoldighed i stedet for at gennemtvinge én stiv regel."
+      }
     ]
   },
   "solutions": {
     "title": "Sådan aflaster Klacks danske hospitaler",
     "subtitle": "Fra den korrekte holdskifte-undtagelse til 24/7-dækning &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "schedule", "title": "24/7-dækning uden huller", "text": "Dag-, aften- og nattevagter på tværs af alle afdelinger &mdash; Klacks viser straks ethvert hul og udfylder det automatisk efter ønske." },
-      { "icon": "bedtime", "title": "Holdskifte-undtagelse dokumenteret korrekt", "text": "Klacks genkender, hvornår hviletiden ved holdskifte må afkortes til 8 timer, og fastholder den forudgående aftale med tillidsrepræsentanten på en gennemskuelig måde." },
-      { "icon": "gavel", "title": "48-timers-gennemsnit tjekket løbende", "text": "Klacks tjekker automatisk det glidende 4-måneders-gennemsnit og advarer, før 48-timers-grænsen nås." },
-      { "icon": "tune", "title": "Fleksibel til enhver overenskomst", "text": "Klacks kan indstilles til de til enhver tid gældende tillægssatser i overenskomsterne for pleje-, assistent- og lægegrupper, i stedet for at diktere én stiv regel for alle faggrupper." },
-      { "icon": "shield_lock", "title": "On-premise: data bliver i huset", "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata forlader ikke klinikken &mdash; heller ikke til AI'en." },
-      { "icon": "smart_toy", "title": "Klacksy planlægger via tale", "text": "\"Fyld afdelingens nattevagter for næste uge ud\" er nok &mdash; Klacksy tager højde for kvalifikation og hviletidsgrænser." }
+      {
+        "icon": "schedule",
+        "title": "24/7-dækning uden huller",
+        "text": "Dag-, aften- og nattevagter på tværs af alle afdelinger &mdash; Klacks viser straks ethvert hul og udfylder det automatisk efter ønske."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Holdskifte-undtagelse dokumenteret korrekt",
+        "text": "Klacks genkender, hvornår hviletiden ved holdskifte må afkortes til 8 timer, og fastholder den forudgående aftale med tillidsrepræsentanten på en gennemskuelig måde."
+      },
+      {
+        "icon": "gavel",
+        "title": "48-timers-gennemsnit tjekket løbende",
+        "text": "Klacks tjekker automatisk det glidende 4-måneders-gennemsnit og advarer, før 48-timers-grænsen nås."
+      },
+      {
+        "icon": "tune",
+        "title": "Fleksibel til enhver overenskomst",
+        "text": "Klacks kan indstilles til de til enhver tid gældende tillægssatser i overenskomsterne for pleje-, assistent- og lægegrupper, i stedet for at diktere én stiv regel for alle faggrupper."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: data bliver i huset",
+        "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata forlader ikke klinikken &mdash; heller ikke til AI'en."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planlægger via tale",
+        "text": "\"Fyld afdelingens nattevagter for næste uge ud\" er nok &mdash; Klacksy tager højde for kvalifikation og hviletidsgrænser."
+      }
     ]
   },
   "example": {

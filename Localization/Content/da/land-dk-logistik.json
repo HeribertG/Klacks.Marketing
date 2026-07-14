@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks til logistik i Danmark | Transport- og Logistikoverenskomst 2025-2028 &amp; Bilag 23",
+  "pageTitle": "Klacks til logistik i Danmark | Transport- og Logistikoverenskomst 2025-2028 & Bilag 23",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Til transport &amp; logistik i Danmark",
@@ -13,21 +13,57 @@
     "eyebrow": "Logistik-hverdagen i Danmark",
     "title": "Nattevindue, 10-timers-grænse og nyt overenskomsttrin",
     "items": [
-      { "icon": "timer", "title": "10-timers-grænse ved natarbejde (Bilag 23)", "text": "Indeholder en vagt for mobile chauffører natarbejde i vinduet 01:00-05:00, må den daglige arbejdstid ikke overstige 10 timer inden for 24 timer &mdash; ifølge overenskomsten kan et afvigende 4-timers-vindue mellem 00:00 og 07:00 være aftalt." },
-      { "icon": "payments", "title": "Nyt overenskomsttrin pr. 1. marts 2026", "text": "Normaltimelønnen stiger pr. 1. marts 2026 med 4,75 DKK, og fritvalgskontoen fra 9% til 10% af lønnen." },
-      { "icon": "bedtime", "title": "Overholdelse af 35 timers ugentlig fridøgn", "text": "Også for chauffører gælder det ugentlige fridøgn på 35 sammenhængende timer &mdash; svært at overskue manuelt på tværs af skiftende ruter og teams." }
+      {
+        "icon": "timer",
+        "title": "10-timers-grænse ved natarbejde (Bilag 23)",
+        "text": "Indeholder en vagt for mobile chauffører natarbejde i vinduet 01:00-05:00, må den daglige arbejdstid ikke overstige 10 timer inden for 24 timer &mdash; ifølge overenskomsten kan et afvigende 4-timers-vindue mellem 00:00 og 07:00 være aftalt."
+      },
+      {
+        "icon": "payments",
+        "title": "Nyt overenskomsttrin pr. 1. marts 2026",
+        "text": "Normaltimelønnen stiger pr. 1. marts 2026 med 4,75 DKK, og fritvalgskontoen fra 9% til 10% af lønnen."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Overholdelse af 35 timers ugentlig fridøgn",
+        "text": "Også for chauffører gælder det ugentlige fridøgn på 35 sammenhængende timer &mdash; svært at overskue manuelt på tværs af skiftende ruter og teams."
+      }
     ]
   },
   "solutions": {
     "title": "Sådan aflaster Klacks dansk logistik",
     "subtitle": "Fra den optimerede rute til det automatisk opdaterede overenskomsttrin &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger stop i den mest hensigtsmæssige rækkefølge &mdash; korte veje, overholdte tidsvinduer, færre tomkørsler." },
-      { "icon": "timer", "title": "10-timers-grænse ved natarbejde overvåget", "text": "Klacks genkender automatisk, når en vagt berører nattevinduet efter Bilag 23, og overholder 10-timers-grænsen &mdash; også ved et afvigende aftalt 4-timers-vindue." },
-      { "icon": "payments", "title": "Nyt overenskomsttrin lagt ind automatisk", "text": "Lønstigningen og fritvalgskontoen, der stiger til 10% pr. 1. marts 2026, er lagt ind i Klacks." },
-      { "icon": "badge", "title": "Kørekortklasser passer", "text": "Klacks tildeler kun ruter til chauffører med den rette tilladelse &mdash; og advarer om udløbende beviser." },
-      { "icon": "bedtime", "title": "Ugentlig fridøgn planlagt automatisk", "text": "Klacks planlægger automatisk de 35 sammenhængende timers ugentlige hvile ind, før den næste ruteplan står klar." },
-      { "icon": "smart_toy", "title": "Klacksy planlægger via tale", "text": "\"Planlæg ruterne for i morgen, chauffør Nielsen er syg\" er nok &mdash; Klacksy genberegner alt, inklusive nattevindue." }
+      {
+        "icon": "route",
+        "title": "Ruter optimeret automatisk",
+        "text": "Klacks lægger stop i den mest hensigtsmæssige rækkefølge &mdash; korte veje, overholdte tidsvinduer, færre tomkørsler."
+      },
+      {
+        "icon": "timer",
+        "title": "10-timers-grænse ved natarbejde overvåget",
+        "text": "Klacks genkender automatisk, når en vagt berører nattevinduet efter Bilag 23, og overholder 10-timers-grænsen &mdash; også ved et afvigende aftalt 4-timers-vindue."
+      },
+      {
+        "icon": "payments",
+        "title": "Nyt overenskomsttrin lagt ind automatisk",
+        "text": "Lønstigningen og fritvalgskontoen, der stiger til 10% pr. 1. marts 2026, er lagt ind i Klacks."
+      },
+      {
+        "icon": "badge",
+        "title": "Kørekortklasser passer",
+        "text": "Klacks tildeler kun ruter til chauffører med den rette tilladelse &mdash; og advarer om udløbende beviser."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ugentlig fridøgn planlagt automatisk",
+        "text": "Klacks planlægger automatisk de 35 sammenhængende timers ugentlige hvile ind, før den næste ruteplan står klar."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planlægger via tale",
+        "text": "\"Planlæg ruterne for i morgen, chauffør Nielsen er syg\" er nok &mdash; Klacksy genberegner alt, inklusive nattevindue."
+      }
     ]
   },
   "example": {

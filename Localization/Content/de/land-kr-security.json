@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste in Südkorea | § 63-Befreiung & Nachtzuschlag",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste (감시적&middot;단속적 근로자) in Südkorea",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Nachtzuschlag korrekt.</span>",
+    "subtitle": "Sicherheitsdienste können mit MOEL-Genehmigung von Arbeitszeit-, Pausen- und Ruhetagsregeln befreit werden (§ 63 LSA) &mdash; doch der Nachtzuschlag bleibt zwingend. Klacks hinterlegt die Befreiung pro Mitarbeitendem und berechnet den Zuschlag trotzdem automatisch.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten im Sicherheitsgewerbe in Südkorea",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag im Objektschutz in Südkorea",
+    "title": "§ 63-Befreiung und der Nachtzuschlag, der bleibt",
+    "items": [
+      { "icon": "verified_user", "title": "Sondergenehmigung für 24h-Wechselschichten", "text": "Für Überwachungs- und intermittierende Arbeit (감시적&middot;단속적 근로자) können Sicherheitsdienste mit MOEL-Genehmigung von den Regelungen zu Arbeitszeit, Pausen und Ruhetagen &mdash; inklusive der 52-Stunden-Woche &mdash; befreit werden (§ 63 LSA)." },
+      { "icon": "fact_check", "title": "Befreiung pro Mitarbeitendem nachweisen", "text": "Die Befreiung gilt nicht automatisch für den ganzen Betrieb, sondern muss je nach Genehmigung pro Mitarbeitendem hinterlegt und nachgewiesen werden können." },
+      { "icon": "nightlight", "title": "Nachtzuschlag bleibt trotz Befreiung Pflicht", "text": "§ 63 nimmt Arbeitszeit, Pausen und Ruhetage aus &mdash; nicht die Nachtarbeitsvergütung. Der 50%-Nachtzuschlag (22:00-06:00) ist auch für befreite Wachleute weiter zu zahlen (§ 56 i.V.m. § 63 LSA)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Sicherheitsdienste in Südkorea entlastet",
+    "subtitle": "Von der lückenlosen Postenbesetzung bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "fact_check", "title": "§ 63-Befreiung pro Mitarbeitendem hinterlegt", "text": "Klacks speichert die MOEL-Genehmigung je Mitarbeitendem und weiss dadurch, für wen die Ausnahme von Arbeitszeit, Pausen und Ruhetagen gilt." },
+      { "icon": "nightlight", "title": "Nachtzuschlag trotzdem automatisch berechnet", "text": "Auch bei befreiten Wachleuten berechnet Klacks den 50%-Nachtzuschlag für Arbeit zwischen 22:00 und 06:00 zuverlässig weiter." },
+      { "icon": "schedule", "title": "24-Stunden-Wechselschichten geplant", "text": "Klacks plant lange Wechselschichten über mehrere Objekte hinweg, ohne den Überblick über Besetzung und Ablösung zu verlieren." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch bei KI-Funktionen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Gangnam“ genügt &mdash; Klacksy prüft Befreiung und Nachtzuschlag gleich mit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Befreiung, Nachtzuschlag, ein Blick",
+    "text": "Klacks weiss, welche Wachleute per § 63-Genehmigung von Arbeitszeit und Ruhetagen befreit sind, und berechnet den 50%-Nachtzuschlag trotzdem automatisch &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks die § 63-Befreiung und den Nachtzuschlag übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

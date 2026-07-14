@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks cho bệnh viện tại Việt Nam | Ngân sách 300 giờ/năm & phụ cấp làm thêm giờ ban đêm",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Dành cho bệnh viện &amp; phòng khám tại Việt Nam",
+    "titleHtml": "Lịch trực, <span class=\"text-secondary\">vận hành suôn sẻ suốt 24 giờ.</span>",
+    "subtitle": "Klacks giám sát ngân sách làm thêm giờ mở rộng 300 giờ/năm dành cho ngành y tế và tự động tính công thức phụ cấp làm đêm cộng dồn &mdash; On-Premise, để dữ liệu bệnh nhân không bao giờ rời khỏi doanh nghiệp của bạn.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Lưới lịch trực Klacks cho bệnh viện tại Việt Nam",
+    "screenshotLabel": "Lịch làm việc"
+  },
+  "challenges": {
+    "eyebrow": "Công việc thường ngày tại bệnh viện ở Việt Nam",
+    "title": "Ngân sách 300 giờ, phụ cấp làm đêm và thời gian nghỉ giữa ca",
+    "items": [
+      { "icon": "gavel", "title": "Ngân sách 300 giờ/năm thay vì 200 giờ", "text": "Ngành y tế thuộc nhóm ngành được phép sử dụng tối đa 300 giờ làm thêm mỗi năm thay vì mức tiêu chuẩn 200 giờ (Điều 107 Khoản 3 Bộ luật Lao động 2019 kết hợp với Điều 61 Nghị định 145/2020/NĐ-CP) &mdash; với điều kiện đã có văn bản thông báo gửi cơ quan quản lý lao động. Giới hạn 40 giờ/tháng và mức trần theo ngày vẫn có hiệu lực." },
+      { "icon": "bedtime", "title": "Mức phụ cấp làm thêm giờ ban đêm cộng dồn", "text": "Khi trực đêm, mức cơ bản, 30% phụ cấp làm đêm và thêm 20% nữa cộng dồn thành khoảng 210% hoặc 270% (Điều 98 Bộ luật Lao động 2019) &mdash; hầu như không thể tính chính xác thủ công khi có nhiều khoa và nhiều ca luân phiên." },
+      { "icon": "schedule", "title": "Thời gian nghỉ 12 giờ giữa các ca trực", "text": "Trước khi bắt đầu ca làm việc tiếp theo, phải có ít nhất 12 giờ nghỉ liên tục theo quy định (Điều 110 Bộ luật Lao động 2019) &mdash; điều này dễ bị bỏ sót khi lịch trực các khoa luân phiên liên tục." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks giúp giảm tải cho bệnh viện tại Việt Nam như thế nào",
+    "subtitle": "Từ giám sát ngân sách 300 giờ đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",
+    "items": [
+      { "icon": "gavel", "title": "Giám sát ngân sách 300 giờ", "text": "Klacks theo dõi giới hạn năm mở rộng cho từng nhân viên và trực quan hóa mức sử dụng &mdash; bao gồm cả điều kiện phải có văn bản thông báo gửi cơ quan quản lý lao động." },
+      { "icon": "bedtime", "title": "Tự động tính phụ cấp làm thêm giờ ban đêm", "text": "Klacks tự động tính công thức lồng nhau gồm mức cơ bản, phụ cấp làm đêm và phụ cấp làm thêm giờ ban đêm (Điều 98) &mdash; bao gồm cả mức cộng dồn 210% hoặc 270%." },
+      { "icon": "schedule", "title": "Tuân thủ thời gian nghỉ 12 giờ", "text": "Klacks chặn các chuỗi ca làm việc có thể vi phạm thời gian nghỉ theo luật định của Điều 110." },
+      { "icon": "verified", "title": "Trình độ chuyên môn &amp; các khoa", "text": "Mỗi ca trực chỉ được giao cho nhân viên có trình độ chuyên môn phù hợp &mdash; theo từng khoa, bộ phận và chức năng." },
+      { "icon": "shield_lock", "title": "On-Premise: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và bệnh nhân, bao gồm cả dữ liệu chấm công sinh trắc học, không rời khỏi bệnh viện &mdash; kể cả để đưa vào AI." },
+      { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Điền các ca trực đêm của khoa Nội cho tuần tới” &mdash; Klacksy sẽ tính đến trình độ chuyên môn và ngân sách năm." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Ví dụ thực tế",
+    "title": "Ngân sách 300 giờ và trực đêm, một lịch trực",
+    "text": "Klacks luôn theo dõi ngân sách năm mở rộng 300 giờ và tự động tính công thức phụ cấp làm đêm cộng dồn &mdash; không cần tính toán thủ công."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Trải nghiệm Klacks trong bệnh viện của bạn",
+    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận ngân sách 300 giờ, phụ cấp làm đêm và các khoa như thế nào &mdash; hoặc cài đặt trực tiếp trong doanh nghiệp của bạn. Miễn phí và không cần đăng ký."
+  }
+}

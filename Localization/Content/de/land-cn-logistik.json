@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik China | 4-Stunden/20-Minuten-Regel gegen 疲劳驾驶",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in China",
+    "titleHtml": "Touren, die <span class=\"text-secondary\">die Lenkzeit nie überschreiten.</span>",
+    "subtitle": "Klacks überwacht ununterbrochene Lenkzeit und Pausenlänge nach der 4-Stunden/20-Minuten-Regel gegen Ermüdungsfahren (疲劳驾驶) &mdash; und hält Güterverkehr sauber von der neuen, nur für den Personentransport geltenden Regel ab 1.6.2026 getrennt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in China",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in China",
+    "title": "疲劳驾驶, die 4h/20min-Regel und eine neue Unterscheidung",
+    "items": [
+      { "icon": "timer", "title": "4-Stunden/20-Minuten-Regel", "text": "Ununterbrochenes Fahren über 4 Stunden oder eine Pause unter 20 Minuten gilt als Verstoss gegen die Durchführungsbestimmungen zum Strassenverkehrssicherheitsgesetz (道路交通安全法实施条例) &mdash; für Güterfahrzeuge mit 3 Strafpunkten je Verstoss geahndet." },
+      { "icon": "rule", "title": "Neue Regel ab 1.6.2026 gilt nicht für Fracht", "text": "Die ab 1.6.2026 geltende neue Ermüdungs-Regelung (max. 8h Fahrzeit/24h) betrifft den Personentransport &mdash; für den Güterverkehr bleibt die 4h/20min-Regel massgeblich. Diese Unterscheidung von Hand sauber zu halten ist fehleranfällig." },
+      { "icon": "route", "title": "Viele Touren, ein Überblick", "text": "Fahrer, Touren und Lenkzeiten über den ganzen Fuhrpark hinweg gleichzeitig im Blick zu behalten ist von Hand kaum machbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in China entlastet",
+    "subtitle": "Von der automatisch getakteten Lenkzeit bis zur optimierten Tour &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "timer", "title": "4h/20min-Regel automatisch getaktet", "text": "Klacks überwacht ununterbrochene Lenkzeit und Pausenlänge in Echtzeit und warnt, bevor ein Verstoss entsteht." },
+      { "icon": "gavel", "title": "Strafpunkte vermieden", "text": "Klacks verhindert Touren, die zu den 3 Strafpunkten je Verstoss bei Güterfahrzeugen führen würden." },
+      { "icon": "rule", "title": "Fracht und Personentransport sauber getrennt", "text": "Klacks wendet die richtige Regel an &mdash; die 4h/20min-Regel für Güterfahrzeuge, die neue 8h/24h-Regelung ab 1.6.2026 ausschliesslich für den Personentransport." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "shield_lock", "title": "On-Premise: Fahrer- und Kundendaten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personal- und Kundendaten verlassen China nicht &mdash; die CAC-Cross-Border-Prüfung nach PIPL entfällt." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Wang ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Lenkzeiten." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Lange Tour, ein Plan",
+    "text": "Klacks erkennt automatisch, wenn ein Fahrer die 4-Stunden-Lenkzeitgrenze erreicht, und plant die vorgeschriebene 20-Minuten-Pause gleich mit ein &mdash; für Güterfahrzeuge nach der bewährten 4h/20min-Regel, nicht nach der erst 2026 für den Personentransport geltenden 8h/24h-Regelung."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb in China erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

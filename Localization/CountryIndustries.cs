@@ -28,6 +28,8 @@ public static class CountryIndustries
         SwissCountryPageKey,
         "land-be", "land-gb", "land-ie", "land-no", "land-pl", "land-pt", "land-ro",
         "land-cz", "land-dk", "land-es", "land-fi", "land-gr", "land-nl", "land-se",
+        "land-ae", "land-sa", "land-il", "land-jp", "land-kr", "land-cn",
+        "land-tw", "land-my", "land-id", "land-th", "land-vn",
     };
 
     private static readonly Dictionary<string, IReadOnlyList<CountryIndustry>> ByCountry =

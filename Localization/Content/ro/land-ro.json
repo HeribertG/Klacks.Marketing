@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks pentru companii din România | Pontaj, repaus &amp; conformitate ITM",
+  "pageTitle": "Klacks pentru companii din România | Pontaj, repaus & conformitate ITM",
   "hero": {
     "badgeIcon": "fact_check",
     "badge": "Pontaj conform ITM &middot; Automatizarea repausului &middot; România",
@@ -13,21 +13,57 @@
     "eyebrow": "Realitatea planificării în companiile din România",
     "title": "Pontaj zilnic, spor de repaus și amenzi mai severe",
     "items": [
-      { "icon": "fact_check", "title": "Pontaj zilnic, rezistent la controlul ITM", "text": "Art. 119 din Codul Muncii impune o evidență zilnică a orei de începere și de încheiere a programului pentru fiecare angajat, prezentabilă la cererea Inspecției Muncii (ITM) &mdash; nu există o formă obligatorie, dar demonstrabilitatea fără nicio lacună este esențială." },
-      { "icon": "gavel", "title": "Amenzi mai severe pentru munca la negru", "text": "Începând cu 1 ianuarie 2026, fiecare caz identificat de muncă la negru costă 40.000 RON per persoană, cumulat până la 1.000.000 RON (Legea nr. 239/2025) &mdash; o documentație completă protejează împotriva acestui risc." },
-      { "icon": "event_repeat", "title": "Repaus de 48 de ore &amp; spor de 150%", "text": "Perioada săptămânală de repaus de 48 de ore consecutive se acordă, de regulă, sâmbăta/duminica (Art. 137). Dacă nu este acordată în mod consecvent, potrivit Deciziei ICCJ nr. 415/2025 se aplică un spor de 150% la salariul de bază &mdash; independent de orele suplimentare." }
+      {
+        "icon": "fact_check",
+        "title": "Pontaj zilnic, rezistent la controlul ITM",
+        "text": "Art. 119 din Codul Muncii impune o evidență zilnică a orei de începere și de încheiere a programului pentru fiecare angajat, prezentabilă la cererea Inspecției Muncii (ITM) &mdash; nu există o formă obligatorie, dar demonstrabilitatea fără nicio lacună este esențială."
+      },
+      {
+        "icon": "gavel",
+        "title": "Amenzi mai severe pentru munca la negru",
+        "text": "Începând cu 1 ianuarie 2026, fiecare caz identificat de muncă la negru costă 40.000 RON per persoană, cumulat până la 1.000.000 RON (Legea nr. 239/2025) &mdash; o documentație completă protejează împotriva acestui risc."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Repaus de 48 de ore &amp; spor de 150%",
+        "text": "Perioada săptămânală de repaus de 48 de ore consecutive se acordă, de regulă, sâmbăta/duminica (Art. 137). Dacă nu este acordată în mod consecvent, potrivit Deciziei ICCJ nr. 415/2025 se aplică un spor de 150% la salariul de bază &mdash; independent de orele suplimentare."
+      }
     ]
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea companiilor din România",
     "subtitle": "De la pontajul fără nicio lacună până la sporul de repaus calculat corect &mdash; totul se îmbină perfect.",
     "items": [
-      { "icon": "fact_check", "title": "Pontaj zilnic documentat conform ITM", "text": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii." },
-      { "icon": "fingerprint", "title": "Fără date biometrice", "text": "Klacks înregistrează timpul de lucru fără amprentă digitală sau scanare facială &mdash; ANSPDCP sancționează pontajul biometric atunci când sunt disponibile mijloace mai puțin invazive, precum cardul cu cip sau codul PIN." },
-      { "icon": "event_repeat", "title": "Repaus de 48 de ore &amp; sporul ICCJ sub control", "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și semnalează sporul de 150% datorat separat, conform Deciziei ICCJ nr. 415/2025." },
-      { "icon": "schedule", "title": "Compensarea orelor suplimentare planificată la termen", "text": "Klacks planifică compensarea cu timp liber în cadrul termenului de 90 de zile și indică unde se datorează, în schimb, sporul de cel puțin 75%." },
-      { "icon": "shield_lock", "title": "Documentație împotriva amenzilor pentru muncă la negru", "text": "Dovezile complete reduc riscul amenzilor pentru muncă la negru, majorate din 2026 până la 1.000.000 RON." },
-      { "icon": "smart_toy", "title": "Klacksy: bazat pe reguli, nu o cutie neagră", "text": "Asistentul AI integrat Klacksy planifică prin comandă vocală &mdash; în mod transparent, conform abilităților și regulilor predefinite, nu ca o decizie AI opacă." }
+      {
+        "icon": "fact_check",
+        "title": "Pontaj zilnic documentat conform ITM",
+        "text": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Fără date biometrice",
+        "text": "Klacks înregistrează timpul de lucru fără amprentă digitală sau scanare facială &mdash; ANSPDCP sancționează pontajul biometric atunci când sunt disponibile mijloace mai puțin invazive, precum cardul cu cip sau codul PIN."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Repaus de 48 de ore &amp; sporul ICCJ sub control",
+        "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și semnalează sporul de 150% datorat separat, conform Deciziei ICCJ nr. 415/2025."
+      },
+      {
+        "icon": "schedule",
+        "title": "Compensarea orelor suplimentare planificată la termen",
+        "text": "Klacks planifică compensarea cu timp liber în cadrul termenului de 90 de zile și indică unde se datorează, în schimb, sporul de cel puțin 75%."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Documentație împotriva amenzilor pentru muncă la negru",
+        "text": "Dovezile complete reduc riscul amenzilor pentru muncă la negru, majorate din 2026 până la 1.000.000 RON."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: bazat pe reguli, nu o cutie neagră",
+        "text": "Asistentul AI integrat Klacksy planifică prin comandă vocală &mdash; în mod transparent, conform abilităților și regulilor predefinite, nu ca o decizie AI opacă."
+      }
     ]
   },
   "klacksy": {

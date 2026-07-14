@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für Malaysia | Dienstpläne für Security und Facility Management",
+  "pageTitle": "Klacks für Unternehmen in Malaysia | Employment Act 1955 & PDPA-konforme Personalplanung",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "Für Sicherheitsdienste und Facility Management in Malaysia",
-    "titleHtml": "45-Stunden-Woche seit 2023 &mdash; <span class=\"text-secondary\">die 104-Stunden-Grenze gibt es schon viel länger.</span>",
-    "subtitle": "Der Employment (Amendment) Act 2022 senkte die wöchentliche Höchstarbeitszeit zum 1. Januar 2023 von 48 auf 45 Stunden. Weniger bekannt: Die monatliche Überstundengrenze von 104 Stunden stammt aus separaten, seit 1980 unveränderten Vorschriften &mdash; kaum ein Unternehmen kann sie lückenlos nachweisen. Klacks führt beide Grenzen automatisch mit.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Malaysischer Datenschutz (PDPA)",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks überwacht die 45-Stunden-Woche nach dem Employment Act 1955 automatisch, trennt die gestuften Überstundenzuschläge sauber und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten, seit der PDPA-Novelle 2024 (Act A1727) ausdrücklich sensible Daten, in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Malaysia",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in malaysischer Security und Facility Management",
-    "title": "Zwei Gesetze, zwei Grenzwerte, ein Dienstplan",
+    "eyebrow": "Der Planungsalltag in malaysischen Betrieben",
+    "title": "Employment Act 1955, gestufte Zuschläge und PDPA",
     "items": [
-      { "icon": "hourglass_disabled", "title": "45-Stunden-Woche seit 2023", "text": "Die Reduktion von 48 auf 45 Stunden ist relativ neu &mdash; viele Dienstpläne rechnen noch mit dem alten Grenzwert." },
-      { "icon": "fact_check", "title": "104-Stunden-Grenze seit 1980", "text": "Die monatliche Überstundengrenze aus separaten Vorschriften wird oft übersehen, weil sie nicht im Employment Act selbst steht." },
-      { "icon": "schedule", "title": "Pflichtpause nach 5 Stunden", "text": "Schichten über 5 Stunden erfordern eine ununterbrochene 30-Minuten-Pause &mdash; bei durchgehendem Wachdienst leicht zu übersehen." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung des malaysischen Datenschutzgesetzes (PDPA) in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und interne Compliance-Prüfungen."
+      { "icon": "gavel", "title": "45-Stunden-Woche seit 2023 im Blick behalten", "text": "Der Employment (Amendment) Act 2022 (Act A1651) senkte die reguläre Wochenarbeitszeit zum 1. Januar 2023 von 48 auf 45 Stunden (Section 60A Employment Act 1955) &mdash; gültig für Halbinsel-Malaysia und Labuan, während Sabah und Sarawak eigene, weitgehend parallele Ordinances haben. Jede darüber geplante Stunde ist automatisch zuschlagspflichtige Überstunde." },
+      { "icon": "paid", "title": "Gestufte Überstundenzuschläge korrekt trennen", "text": "Überstunden an normalen Arbeitstagen kosten mindestens das 1,5-Fache, am wöchentlichen Ruhetag (hari rehat) das 2,0-Fache und an gesetzlichen Feiertagen (hari kelepasan am) das 3,0-Fache des Stundenlohns (Section 60A(3), 60(3), 60D(3)) &mdash; dazu die RM-4.000-Lohnschwelle, ab der diese Zuschlagsrechte entfallen. Von Hand eine häufige Fehlerquelle." },
+      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung als sensible PDPA-Daten", "text": "Seit dem Personal Data Protection (Amendment) Act 2024 (Act A1727) gelten Fingerabdruck- und Gesichtsscan-Daten zur Zeiterfassung ausdrücklich als sensible persönliche Daten &mdash; mit strengeren Einwilligungs- und Cross-Border-Transfer-Pflichten." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks beide Grenzwerte gleichzeitig einhält",
-    "subtitle": "45-Stunden-Woche und 104-Stunden-Monatsgrenze automatisch mitgeführt.",
+    "title": "Wie Klacks malaysische Betriebe entlastet",
+    "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Wachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
-      { "icon": "fact_check", "title": "Zwei-Grenzwert-Tracking", "text": "Klacks führt die 45-Stunden-Woche und die 104-Stunden-Monatsgrenze gemeinsam fort und warnt, bevor eine Grenze gerissen wird." },
-      { "icon": "file_export", "title": "CSV/Excel-Export bereits heute", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt als CSV/Excel exportieren; ein Format für AutoCount Accounting oder SQL Account ist Kandidat für unsere Roadmap." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten Pausen- und Überstunden-Regeln." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst-Ausweis werden für eine Schicht vorgeschlagen." }
+      { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks kennt die 45-Stunden-Grenze aus Section 60A (seit 1.1.2023) ebenso wie das tägliche 8-Stunden-Limit (9h in der 5-Tage-Woche) &mdash; jede darüber geplante Stunde wird automatisch als Überstunde markiert." },
+      { "icon": "paid", "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt", "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; inklusive der RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen." },
+      { "icon": "schedule", "title": "Spread-over und Monatslimit im Blick", "text": "Die 10-Stunden-Spanne vom ersten Arbeitsbeginn bis Feierabend (Section 60A(1)), die 12-Stunden-Tageskappe und das 104-Stunden-Monatslimit (Employment (Limitation of Overtime Work) Regulations 1980) werden automatisch überwacht, ebenso die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; biometrische Zeiterfassungsdaten, seit Act A1727/2024 sensible PDPA-Daten, verlassen Ihr Haus nie." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Grenzen der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer von Personaldaten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wochenstunden, Zuschlag, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht die 45-Stunden-Woche oder die 10-Stunden-Spread-over-Grenze erreicht, und ordnet die passende Zuschlagsstufe (1,5x/2,0x/3,0x) gleich zu &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für malaysische Security- und Facility-Unternehmen testen",
-    "text": "Erleben Sie im Playground, wie Klacks beide Grenzwerte gleichzeitig einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks die 45-Stunden-Woche, gestufte Zuschläge und die Spread-over-Grenze automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

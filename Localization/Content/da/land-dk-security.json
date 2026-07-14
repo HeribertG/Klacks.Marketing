@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks til vagtselskaber i Danmark | Varskotillæg &amp; Vagtoverenskomsten 2025-2028",
+  "pageTitle": "Klacks til vagtselskaber i Danmark | Varskotillæg & Vagtoverenskomsten 2025-2028",
   "hero": {
     "badgeIcon": "security",
     "badge": "Til vagtselskaber i Danmark",
@@ -13,21 +13,57 @@
     "eyebrow": "Vagt-hverdagen i Danmark",
     "title": "Varskotillæg, ny overenskomsttrin og mange objekter",
     "items": [
-      { "icon": "apartment", "title": "Mange objekter, én plan", "text": "Hvert objekt har egne poster, tider og krav &mdash; det er stort set umuligt at overskue det hele manuelt på samme tid." },
-      { "icon": "bolt", "title": "Varskotillæg ved kortfristet omlægning", "text": "Bliver en planlagt vagt ændret med for kort varsel, udløses efter Vagtoverenskomsten et tillæg på 525,29 DKK pr. døgn &mdash; med mange objekter bliver det hurtigt dyrt, hvis der skal omdisponeres spontant." },
-      { "icon": "payments", "title": "Nyt overenskomsttrin pr. 1. marts 2026", "text": "Vagtoverenskomsten 2025-2028 (OK25) fastsætter endnu en forhøjelse pr. 1. marts 2026 &mdash; blandt andet stiger fritvalgsordningen med 1 procentpoint til 10% af lønnen." }
+      {
+        "icon": "apartment",
+        "title": "Mange objekter, én plan",
+        "text": "Hvert objekt har egne poster, tider og krav &mdash; det er stort set umuligt at overskue det hele manuelt på samme tid."
+      },
+      {
+        "icon": "bolt",
+        "title": "Varskotillæg ved kortfristet omlægning",
+        "text": "Bliver en planlagt vagt ændret med for kort varsel, udløses efter Vagtoverenskomsten et tillæg på 525,29 DKK pr. døgn &mdash; med mange objekter bliver det hurtigt dyrt, hvis der skal omdisponeres spontant."
+      },
+      {
+        "icon": "payments",
+        "title": "Nyt overenskomsttrin pr. 1. marts 2026",
+        "text": "Vagtoverenskomsten 2025-2028 (OK25) fastsætter endnu en forhøjelse pr. 1. marts 2026 &mdash; blandt andet stiger fritvalgsordningen med 1 procentpoint til 10% af lønnen."
+      }
     ]
   },
   "solutions": {
     "title": "Sådan aflaster Klacks danske vagtselskaber",
     "subtitle": "Fra den besatte post til den undgåede kortfristede omlægning &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "shield", "title": "Objekter &amp; poster uden huller", "text": "Hver post på tværs af alle objekter &mdash; Klacks viser straks enhver åben stilling og udfylder den automatisk efter ønske." },
-      { "icon": "bolt", "title": "Varskotillæg undgået i stedet for betalt", "text": "Klacks planlægger objekter så tidligt, at omlægninger sker i god tid, og advarer, før en spontan ændring udløser tillægget på 525,29 DKK pr. døgn." },
-      { "icon": "payments", "title": "Overenskomsttrin automatisk opdateret", "text": "Fritvalgsordningen, der stiger til 10% pr. 1. marts 2026, samt øvrige justeringer i Vagtoverenskomsten 2025-2028 er lagt ind i Klacks." },
-      { "icon": "verified", "title": "Certifikater tjekket automatisk", "text": "Klacks tildeler kun indsatser til personale med gyldigt certifikat &mdash; og advarer, før et bevis udløber." },
-      { "icon": "route", "title": "Runderinger optimeret", "text": "Ved mobile vagter lægger Klacks patruljeruter, så vejene bliver korte og intervallerne overholdes." },
-      { "icon": "smart_toy", "title": "Klacksy planlægger via tale", "text": "\"Besæt nattevagten for objekt Nord\" er nok &mdash; Klacksy tjekker certifikater, tilgængelighed og omlægningsfrister." }
+      {
+        "icon": "shield",
+        "title": "Objekter &amp; poster uden huller",
+        "text": "Hver post på tværs af alle objekter &mdash; Klacks viser straks enhver åben stilling og udfylder den automatisk efter ønske."
+      },
+      {
+        "icon": "bolt",
+        "title": "Varskotillæg undgået i stedet for betalt",
+        "text": "Klacks planlægger objekter så tidligt, at omlægninger sker i god tid, og advarer, før en spontan ændring udløser tillægget på 525,29 DKK pr. døgn."
+      },
+      {
+        "icon": "payments",
+        "title": "Overenskomsttrin automatisk opdateret",
+        "text": "Fritvalgsordningen, der stiger til 10% pr. 1. marts 2026, samt øvrige justeringer i Vagtoverenskomsten 2025-2028 er lagt ind i Klacks."
+      },
+      {
+        "icon": "verified",
+        "title": "Certifikater tjekket automatisk",
+        "text": "Klacks tildeler kun indsatser til personale med gyldigt certifikat &mdash; og advarer, før et bevis udløber."
+      },
+      {
+        "icon": "route",
+        "title": "Runderinger optimeret",
+        "text": "Ved mobile vagter lægger Klacks patruljeruter, så vejene bliver korte og intervallerne overholdes."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planlægger via tale",
+        "text": "\"Besæt nattevagten for objekt Nord\" er nok &mdash; Klacksy tjekker certifikater, tilgængelighed og omlægningsfrister."
+      }
     ]
   },
   "example": {

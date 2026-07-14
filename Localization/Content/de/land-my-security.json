@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste in Malaysia | 12-Stunden-Schicht & Ruhetag",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste in Malaysia",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der Aufteilung der 12-Stunden-Wachschicht in Normalzeit und Überstunden sowie dem wöchentlichen Ruhetag automatisch berücksichtigt. On-Premise, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Wachschichten und Objektbesetzung in Malaysia",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Malaysia",
+    "title": "12-Stunden-Schicht, Ruhetag und viele Objekte",
+    "items": [
+      { "icon": "schedule", "title": "12-Stunden-Wachschicht korrekt aufteilen", "text": "Aus dem täglichen 8-Stunden-Limit und Section 60A(3) Employment Act 1955 folgt bei der branchenüblichen 12-Stunden-Schicht: 8 Stunden Normalzeit, 4 Stunden Überstunden zum 1,5-fachen Satz (kerja lebih masa) &mdash; getrennt auszuweisen." },
+      { "icon": "event_repeat", "title": "Wöchentlichen Ruhetag sicherstellen", "text": "Jeder Arbeitnehmer hat Anspruch auf mindestens einen ganzen Ruhetag pro Woche (hari rehat, Section 59) &mdash; bei rollierenden Wachschichten von Hand schwer zu garantieren." },
+      { "icon": "apartment", "title": "Viele Objekte, ein Plan", "text": "Jedes Objekt hat eigene Posten, Zeiten und Anforderungen &mdash; alles gleichzeitig zu überblicken ist von Hand kaum machbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Sicherheitsdienste in Malaysia entlastet",
+    "subtitle": "Vom besetzten Posten bis zur korrekten Schichtaufteilung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "12-Stunden-Schicht automatisch aufgeteilt", "text": "Klacks trennt bei der 12-Stunden-Wachschicht automatisch 8 Stunden Normalzeit von 4 Stunden Überstunden zum 1,5-fachen Satz." },
+      { "icon": "event_available", "title": "Wöchentlicher Ruhetag automatisch geplant", "text": "Klacks stellt sicher, dass jede Wache pro Woche mindestens einen ganzen Ruhetag erhält, auch bei rollierenden Rotationen." },
+      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks teilt Einsätze nur Personal mit gültigem Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft." },
+      { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Süd“ genügt &mdash; Klacksy prüft Zertifikate, Verfügbarkeit und den Ruhetag." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wachschicht und Ruhetag, ein Plan",
+    "text": "Klacks trennt die 12-Stunden-Wachschicht automatisch in 8 Stunden Normalzeit und 4 Stunden Überstunden zum 1,5-fachen Satz und behält den wöchentlichen Ruhetag im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Schichtaufteilung und Rundgänge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

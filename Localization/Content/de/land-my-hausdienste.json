@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Reinigungsdienste in Malaysia | Manuelle Arbeiter & Zuschläge ohne Lohngrenze",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Haus- &amp; Reinigungsdienste in Malaysia",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte und Routen effizient ein &mdash; und berechnet die Überstunden- und Ruhetagszuschläge für Reinigungskräfte unabhängig von der Lohnhöhe, wie es der Employment Act 1955 für manuelle Arbeiter vorschreibt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Malaysia",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Malaysia",
+    "title": "Manuelle Arbeiter, Zuschläge ohne Lohngrenze und viele Objekte",
+    "items": [
+      { "icon": "engineering", "title": "Reinigungskräfte als manuelle Arbeiter", "text": "Reinigungskräfte (pekerja pembersihan) fallen unter die Kategorie „engaged in manual labour“ der First Schedule (Para 2(2)) Employment Act 1955 &mdash; die RM-4.000-Lohndeckelung der Zuschlagsbestimmungen gilt für sie nicht." },
+      { "icon": "paid", "title": "Zuschläge unabhängig vom Lohn", "text": "Reinigungskräfte behalten ihre Überstunden- (1,5x) und Ruhetagszuschläge (2,0x) auch oberhalb von RM 4.000 &mdash; das Abrechnungssystem muss diese Sätze lückenlos berechnen." },
+      { "icon": "apartment", "title": "Viele Objekte, ein Plan", "text": "Jedes Objekt hat eigene Teams, Zeiten und Anforderungen &mdash; alles gleichzeitig im Blick zu behalten ist von Hand mühsam." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Reinigungsdienste in Malaysia entlastet",
+    "subtitle": "Von der optimierten Route bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Motorrad oder zu Fuss." },
+      { "icon": "paid", "title": "Zuschläge unabhängig vom Lohn berechnet", "text": "Klacks berechnet die Überstunden- (1,5x) und Ruhetagszuschläge (2,0x) für manuelle Arbeiter durchgehend &mdash; auch oberhalb der RM-4.000-Schwelle, die für sie nicht gilt." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Vertretungen: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung oder Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ganz ohne Auslandtransfer von Personaldaten." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Bezirk Bangsar für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Zuschläge." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Manuelle Arbeiter, Zuschlag, ein Plan",
+    "text": "Klacks erkennt Reinigungskräfte als manuelle Arbeiter und berechnet ihre Überstunden- und Ruhetagszuschläge automatisch unabhängig vom Lohn &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und Zuschläge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

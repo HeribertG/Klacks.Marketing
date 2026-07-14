@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Logistics in the UAE | The Midday Work Ban at the Terminal",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "For logistics &amp; terminal operations in the UAE",
+    "titleHtml": "Schedule terminal shifts <span class=\"text-secondary\">without risking the midday ban.</span>",
+    "subtitle": "Klacks automatically blocks loading and unloading shifts at uncovered container terminals during the statutory midday work ban from 15 June to 15 September, 12:30 to 15:00 &mdash; preventing fines of up to AED 50,000. On-premise, so staff data never leaves your organisation.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for terminal and logistics shifts in the UAE",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday terminal operations in UAE logistics",
+    "title": "The midday work ban at uncovered terminals",
+    "items": [
+      { "icon": "wb_sunny", "title": "The ban on outdoor work", "text": "From 15 June to 15 September, work in direct sunlight is banned every day from 12:30 to 15:00 &mdash; this also applies to loading and unloading staff at uncovered container terminals and loading yards (MOHRE ministerial decision)." },
+      { "icon": "payments", "title": "Fines of up to AED 50,000 per breach", "text": "Breaches cost AED 5,000 per affected employee, capped at AED 50,000 &mdash; the same structure as the general midday work ban." },
+      { "icon": "warehouse", "title": "Distinguishing covered from uncovered areas", "text": "Only work in direct sunlight is affected &mdash; whether a loading area counts as covered or uncovered must be clearly documented for every shift." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off logistics operators in the UAE",
+    "subtitle": "From the automatic block to covered/uncovered declarations &mdash; everything works together.",
+    "items": [
+      { "icon": "wb_sunny", "title": "The midday window for outdoor shifts blocked automatically", "text": "Klacks automatically blocks open-air terminal and loading-yard shifts between 12:30 and 15:00 from 15 June to 15 September &mdash; every year, with no need to re-enter the dates by hand." },
+      { "icon": "warehouse", "title": "Covered or uncovered, clearly declared", "text": "Klacks lets you declare each terminal zone as covered or uncovered &mdash; only affected areas are blocked during the banned window." },
+      { "icon": "payments", "title": "The AED 50,000 fine risk avoided", "text": "Because the banned window can never be scheduled for outdoor areas in the first place, the risk of the AED 5,000 fine per employee simply doesn't arise." },
+      { "icon": "route", "title": "Routes &amp; deliveries automatically optimised", "text": "Klacks automatically aligns deliveries, loading times and staff deployment at the terminal." },
+      { "icon": "shield_lock", "title": "On-premise: full data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; your terminal team's personal data never leaves your organisation." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Move the loading shift at Terminal 2 out of the midday window\" is all it takes &mdash; Klacksy automatically observes the ban." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "The midday ban at the terminal, at a glance",
+    "text": "Klacks automatically recognises when a loading shift at an uncovered terminal between 15 June and 15 September falls within the banned window of 12:30 to 15:00, and moves it to the morning or late afternoon &mdash; no manual recalculating required."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "See Klacks in your logistics operation",
+    "text": "Try the Playground to see how Klacks handles the midday work ban, terminal shifts and deliveries &mdash; or install it directly on-premise. Free, with no registration required."
+  }
+}

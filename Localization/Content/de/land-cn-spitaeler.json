@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler China | 值班 vs. 加班 korrekt unterschieden",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in China",
+    "titleHtml": "Bereitschaft und Arbeit, <span class=\"text-secondary\">sauber getrennt.</span>",
+    "subtitle": "Klacks erfasst 值班 (zhíbān, Bereitschaft) und 加班 (jiābān, echte Überstunden) getrennt &mdash; substantielle Arbeit während des Nachtdiensts wird automatisch als zuschlagspflichtig markiert, bevor es vor Gericht zum Streitfall wird.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in China",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in China",
+    "title": "值班 oder 加班? Die Abgrenzung entscheidet",
+    "items": [
+      { "icon": "gavel", "title": "值班 oder 加班 &mdash; die Abgrenzung entscheidet", "text": "Bereitschaftsdienst (值班) für arbeitsfremde, leichtere Aufgaben ist gesetzlich nicht geregelt und wird meist niedriger vergütet. Fällt während des Nachtdiensts substantielle Arbeit an (Patientenbehandlung, Notfälle), gilt sie rechtlich als 加班 und ist nach Art. 44 zuschlagspflichtig (150/200/300 %)." },
+      { "icon": "fact_check", "title": "Beweislast vor Gericht", "text": "Chinesische Arbeitsgerichte prüfen im Streitfall genau, ob im nächtlichen 值班 tatsächlich gearbeitet wurde &mdash; ohne saubere Dokumentation drohen rückwirkende Nachzahlungsansprüche." },
+      { "icon": "schedule", "title": "Überstundengrenze bei echtem 加班", "text": "Wird nächtliches 值班 rechtlich zu 加班, zählt diese Zeit auch für die allgemeine gesetzliche Überstundengrenze mit &mdash; über viele Rotationen und Stationen von Hand kaum zu überblicken." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in China entlastet",
+    "subtitle": "Von der sauberen 值班/加班-Trennung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "fact_check", "title": "值班 und 加班 sauber getrennt erfasst", "text": "Klacks erfasst nächtlichen Bereitschaftsdienst und tatsächliche Arbeitstätigkeit getrennt &mdash; substantielle Arbeit während des 值班 wird automatisch als zuschlagspflichtiger 加班 markiert." },
+      { "icon": "payments", "title": "150/200/300 % korrekt zugeordnet", "text": "Wird aus 值班 rechtlich 加班, berechnet Klacks den passenden Zuschlag nach Art. 44 automatisch &mdash; Werktag 150 %, Ruhetag 200 %, gesetzlicher Feiertag 300 % ohne Freizeitausgleich." },
+      { "icon": "gavel", "title": "Überstundengrenze im Blick", "text": "Klacks summiert echten 加班 laufend gegen die gesetzliche Überstundengrenze &mdash; über alle Stationen und Rotationen hinweg." },
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik und China nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "Klacksy erkennt bei der Planung automatisch, ob ein Nachtdienst als 值班 oder 加班 einzustufen ist, und schlägt die korrekte Vergütung vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nächtlicher Bereitschaftsdienst, ein Plan",
+    "text": "Meldet eine Pflegekraft während des nächtlichen 值班 einen Notfalleinsatz, markiert Klacks diese Zeit automatisch als 加班 und rechnet den passenden Zuschlag nach Art. 44 ab &mdash; ohne dass die Unterscheidung später vor Gericht geklärt werden muss."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik in China erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks 值班, 加班 und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}
