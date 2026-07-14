@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for norske sykehus | Spekter-turnus & helligdagstillegg",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For sykehus &amp; klinikker i Norge",
+    "titleHtml": "Vaktplaner som <span class=\"text-secondary\">overholder Spekter-turnusen.</span>",
+    "subtitle": "Klacks gjenkjenner automatisk den helkontinuerlige 3-skiftturnusen etter Spekter-tariffavtalen, anvender den reduserte 33,6-timersuken og beregner helligdags- og helgetillegg korrekt. On-Premise, slik at pasientdata aldri forlater huset ditt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks vaktplan-rutenett for norske sykehus og klinikker",
+    "screenshotLabel": "Vaktplan"
+  },
+  "challenges": {
+    "eyebrow": "Klinikkhverdagen i Norge",
+    "title": "Uten hull, tariffriktig, korrekt tillagt",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 uten hull", "text": "Dag, natt, helg, helligdag: Hver avdeling må være bemannet uten hull &mdash; også ved fravær i siste liten." },
+      { "icon": "schedule", "title": "33,6-timersuke i turnus", "text": "Etter Spekter-tariffavtalen Del A2, Overenskomstområde 10 (Helseforetak) gjelder for helkontinuerlig 3-skiftturnus med minst hver 3. søndag som tjenestedag en gjennomsnittlig ukentlig arbeidstid på maksimalt 33,6 timer &mdash; for hånd er korrekt tilordning til dette reduserte regimet krevende." },
+      { "icon": "celebration", "title": "Helligdags- &amp; helgetillegg", "text": "På store helligdager (påske, pinse, jul, nyttårsaften, hver gang fra kl. 12 dagen før) gjelder et tillegg på 133,33 %, i helgen (lørdag 00:00 til søndag 24:00) et tillegg på 26 %, minst likevel 75 NOK/time." }
+    ]
+  },
+  "solutions": {
+    "title": "Slik avlaster Klacks norske klinikker",
+    "subtitle": "Fra den sømløse nattevakten til den korrekte tilleggsberegningen &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "schedule", "title": "24/7-dekning uten hull", "text": "Dag-, kvelds- og nattevakter på tvers av alle avdelinger &mdash; Klacks viser hvert hull umiddelbart og fyller det automatisk på forespørsel." },
+      { "icon": "gavel", "title": "33,6-timersuke gjenkjent automatisk", "text": "Klacks gjenkjenner den helkontinuerlige 3-skiftturnusen med minst hver 3. søndag som tjenestedag, og anvender automatisk den reduserte 33,6-timersuken etter Spekter A2." },
+      { "icon": "payments", "title": "Helligdags- &amp; helgetillegg beregnet automatisk", "text": "Helligdagstillegget på 133,33 % og helgetillegget på 26 % (minst 75 NOK/time) anvendes automatisk på hver berørte vakt." },
+      { "icon": "shield_lock", "title": "On-Premise: data blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata forlater ikke klinikken &mdash; heller ikke til KI-en." },
+      { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Fyll nattevaktene for indremedisin neste uke» er nok &mdash; Klacksy tar hensyn til kvalifikasjon og turnusregime." },
+      { "icon": "groups", "title": "Vikarpool &amp; fravær", "text": "Faller noen fra, viser Klacks straks tilgjengelige, kvalifiserte vikarer &mdash; uten å velte hele planen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Turnusregime og helligdagsvakt, ett blikk",
+    "text": "Klacks gjenkjenner at en avdeling går i helkontinuerlig 3-skiftturnus med minst hver 3. søndag som tjenestedag, anvender 33,6-timersuken og beregner automatisk helligdagstillegget på 133,33 % for en julevakt &mdash; uten manuell etterberegning."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Opplev Klacks på din klinikk",
+    "text": "Prøv i Playground hvordan Klacks overtar turnusregime, helligdags- og helgetillegg &mdash; eller installer det direkte i eget hus. Gratis og uten registrering."
+  }
+}

@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks dla Polski | Prawidłowo zaplanowany równoważny czas pracy dla branży ochrony",
+  "pageTitle": "Klacks dla firm w Polsce | Ewidencja czasu pracy i planowanie personelu zgodne z PIP",
   "hero": {
-    "badgeIcon": "gavel",
-    "badge": "Dla firm ochroniarskich i placówek opieki zdrowotnej w Polsce",
-    "titleHtml": "Do 24 godzin służby w ochronie obiektów &mdash; <span class=\"text-secondary\">z prawidłowo zaplanowanym odpoczynkiem wyrównawczym.</span>",
-    "subtitle": "Art. 137 Kodeksu Pracy zezwala w ochronie obiektów i osób (ochrona mienia), w ramach równoważnego czasu pracy, na przedłużenie dobowego wymiaru czasu pracy do 24 godzin &mdash; z następującym po nim odpoczynkiem równoważnym, trwającym co najmniej tyle samo godzin, ile przepracowano. Ponadto zgodnie z art. 132 KP dla wszystkich branż obowiązuje dobowy minimalny nieprzerwany odpoczynek w wymiarze 11 godzin w każdym okresie 24 godzin.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Polska ochrona danych",
+    "titleHtml": "Planowanie personelu, w którym <span class=\"text-secondary\">to Ty masz kontrolę.</span>",
+    "subtitle": "Klacks prowadzi pełną ewidencję czasu pracy zamiast zwykłej listy obecności, automatycznie sprawdza okresy odpoczynku i działa On-Premise &mdash; bez biometrycznej ewidencji czasu pracy, którą krytycznie oceniają polskie sądy i Urząd Ochrony Danych Osobowych (UODO).",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Siatka grafiku dyżurów Klacks",
+    "screenshotAlt": "Przegląd grafiku dyżurów Klacks dla firm w Polsce",
     "screenshotLabel": "Grafik dyżurów"
   },
   "challenges": {
-    "eyebrow": "Codzienność w polskiej branży ochrony i ochronie zdrowia",
-    "title": "Służby 24-godzinne, odpoczynek wyrównawczy i zaostrzone kontrole PIP",
+    "eyebrow": "Codzienność planowania w polskich firmach",
+    "title": "Ewidencja, reforma PIP i zakaz biometrii",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Do 24 godzin służby w ochronie obiektów", "text": "Art. 137 KP zezwala w ramach równoważnego czasu pracy w ochronie obiektów i osób na przedłużenie dobowego wymiaru czasu pracy do 24 godzin &mdash; przy okresie rozliczeniowym wynoszącym z reguły jeden miesiąc, a w uzasadnionych przypadkach do trzech miesięcy." },
-      { "icon": "hourglass_top", "title": "11-godzinny odpoczynek zgodnie z art. 132 KP", "text": "Niezależnie od systemu czasu pracy obowiązuje co najmniej 11 nieprzerwanych godzin odpoczynku w każdym okresie 24 godzin &mdash; wyjątki dotyczą jedynie akcji ratowniczych oraz systemów przedłużonego dobowego wymiaru czasu pracy z odpoczynkiem wyrównawczym." },
-      { "icon": "fact_check", "title": "PIP od 2026 roku intensywniej kontroluje pozorne samozatrudnienie", "text": "Od czasu reformy PIP (obowiązującej od 8 lipca 2026 r.) Państwowa Inspekcja Pracy może umowy zlecenia w ochronie zdrowia przekształcić bezpośrednio w decyzji administracyjnej w stosunek pracy, bez konieczności drogi sądowej &mdash; prawnie pewne planowanie zatrudnienia na etacie staje się coraz pilniejsze." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Suwerenność danych",
-    "title": "Pełna suwerenność danych: Open Source i On-Premise",
-    "text": "Klacks został zaprojektowany dla branż o wysokich wymaganiach w zakresie bezpieczeństwa i zgodności z przepisami, w których wrażliwe dane pracowników nie powinny opuszczać własnej infrastruktury. Jako rozwiązanie open source Klacks można uruchomić bezpośrednio we własnym centrum danych lub na zabezpieczonych serwerach lokalnych &mdash; bez zależności od amerykańskich dostawców chmury. Ułatwia to samodzielne zapewnienie zgodności z RODO oraz wymogami polskiego organu ochrony danych osobowych UODO.",
-    "bullets": [
-      "Suwerenność On-Premise: pełna kontrola nad grafikami dyżurów, dowodami przestrzegania czasu odpoczynku i protokołami we własnym środowisku IT.",
-      "Otwarta architektura LLM: wspierane przez AI propozycje planowania mogą działać również na lokalnie hostowanych modelach językowych, dzięki czemu dane nie trafiają do zewnętrznych API.",
-      "Kod źródłowy podlegający audytowi: w pełni dostępna baza kodu na potrzeby audytów IT i kontroli PIP."
+      { "icon": "history_edu", "title": "Ewidencja czasu pracy zamiast listy obecności", "text": "Zwykła lista obecności z podpisami nie jest wystarczająca prawnie &mdash; wymagana jest pełna ewidencja czasu pracy zgodnie z art. 149 Kodeksu pracy." },
+      { "icon": "gavel", "title": "Reforma kar od 8 lipca 2026 r.", "text": "Standardowy zakres grzywien za naruszenia praw pracowniczych rośnie do przedziału od 2000 do 60 000 PLN &mdash; przy powtarzających się poważnych naruszeniach grozi nawet do 90 000 PLN (art. 281 Kodeksu pracy)." },
+      { "icon": "fingerprint", "title": "Zakaz biometrii w ewidencji czasu pracy", "text": "Ewidencja czasu pracy oparta na odciskach palców jest niedopuszczalna nawet za zgodą pracownika (art. 22¹b Kodeksu pracy) &mdash; chmurowe systemy ewidencji czasu pracy szybko wpadają tym samym w szarą strefę." }
     ]
   },
   "solutions": {
-    "title": "Jak Klacks prawidłowo rozlicza służby 24-godzinne i odpoczynek wyrównawczy",
-    "subtitle": "Równoważny czas pracy i zasada 11 godzin jednocześnie pod kontrolą.",
+    "title": "Jak Klacks odciąża polskie firmy",
+    "subtitle": "Od pełnej ewidencji po własną infrastrukturę &mdash; wszystko działa razem.",
     "items": [
-      { "icon": "bolt", "title": "Silnik Recovery na wypadek nieobecności", "text": "Gdy pracownik nagle wypada, Klacks natychmiast znajduje wykwalifikowane zastępstwo &mdash; bez ryzyka nieplanowanego naruszenia czasu odpoczynku." },
-      { "icon": "fact_check", "title": "Śledzenie odpoczynku wyrównawczego zgodnie z art. 137 KP", "text": "Klacks automatycznie oblicza odpoczynek równoważny po każdej wydłużonej służbie i śledzi go przez cały okres rozliczeniowy." },
-      { "icon": "calendar_month", "title": "Kreator Autofill dla rotacji 24-godzinnych", "text": "Asystent Autofill oparty na algorytmie genetycznym automatycznie uwzględnia 24-godzinne służby w ochronie obiektów, przestrzegając przy tym odpoczynku wyrównawczego." },
-      { "icon": "groups", "title": "Planowanie obsad zgodne z kwalifikacjami", "text": "Do danej zmiany proponowani są wyłącznie pracownicy o odpowiednich kwalifikacjach i prawnie pewnym statusie zatrudnienia." }
+      { "icon": "fact_check", "title": "Pełna ewidencja czasu pracy", "text": "Klacks rejestruje czas pracy bez luk zgodnie z art. 149 Kodeksu pracy &mdash; nie zwykła lista z podpisami, lecz prawnie pewne dane na wypadek każdej kontroli PIP." },
+      { "icon": "bedtime", "title": "Automatyczna kontrola odpoczynku", "text": "11-godzinny dobowy i 35-godzinny tygodniowy odpoczynek (art. 132 i nast. Kodeksu pracy) są dotrzymywane automatycznie, wraz z tygodniowym odpoczynkiem obejmującym z reguły niedzielę." },
+      { "icon": "calendar_month", "title": "Prawidłowo zaplanowany równoważny czas pracy", "text": "Klacks uwzględnia do 12 godzin dobowego wymiaru czasu pracy w równoważnym systemie czasu pracy oraz standardowy 1-miesięczny okres rozliczeniowy &mdash; wraz z uzasadnionym przedłużeniem." },
+      { "icon": "fingerprint", "title": "Bez konieczności biometrycznej ewidencji czasu pracy", "text": "Klacks działa całkowicie bez odcisku palca czy rozpoznawania twarzy &mdash; a tym samym bez ryzyka prawnego, jakie widzi w tym art. 22¹b Kodeksu pracy i orzecznictwo NSA." },
+      { "icon": "shield_lock", "title": "On-Premise: pełna suwerenność danych", "text": "Klacks działa na Twojej własnej infrastrukturze, a model AI wybierasz samodzielnie &mdash; bez przymusu chmury i bez ryzyk dla ochrony danych, jakie UODO krytykuje u dostawców zewnętrznych." },
+      { "icon": "smart_toy", "title": "Klacksy: oparty na regułach, bez czarnej skrzynki", "text": "Zintegrowany asystent AI Klacksy planuje na polecenie głosowe &mdash; w sposób przejrzysty, zgodnie z zapisanymi umiejętnościami i regułami, a nie jako nieprzejrzysta decyzja AI." }
     ]
   },
   "klacksy": {
     "eyebrow": "Asystent AI",
     "title": "Klacksy: zintegrowany asystent dla Twojego zespołu",
-    "text": "Klacksy to nie doczepiony marketingowy chatbot, lecz asystent bezpośrednio wbudowany w interfejs Klacks. Pracownicy i planiści za pomocą czatu sprawdzają godziny służby, zgłaszają prośby o zamianę zmian lub wyjaśniają konflikty kwalifikacji w zespole. Wbudowany system umiejętności i reguł zapewnia, że Klacksy przedstawia wyłącznie propozycje zgodne z rzeczywistymi kwalifikacjami i wymogami dotyczącymi czasu odpoczynku zaangażowanych osób.",
+    "text": "Klacksy to nie doczepiony marketingowy chatbot, lecz asystent wbudowany bezpośrednio w interfejs Klacks. Pracownicy i planiści za pomocą czatu sprawdzają godziny dyżurów lub wyjaśniają dostępność. Wbudowany system umiejętności i reguł zapewnia, że Klacksy przedstawia zrozumiałe propozycje &mdash; a nie nieprzejrzystą decyzję czarnej skrzynki. Dla firm o wysokich wymaganiach w zakresie ochrony danych model AI można dodatkowo hostować lokalnie, całkowicie bez transferu danych personalnych za granicę.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Asystent czatu Klacksy w interfejsie Klacks"
   },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Ewidencja, odpoczynek, jedno spojrzenie",
+    "text": "Klacks automatycznie rozpoznaje, gdy okres odpoczynku jest za krótki lub gdy zmiana osiąga 12-godzinną granicę w równoważnym systemie czasu pracy, i od razu dokumentuje pełną ewidencję czasu pracy &mdash; bez ręcznego przeliczania."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Przetestuj Klacks dla polskich firm ochroniarskich i klinik",
-    "text": "Przekonaj się w Playgroundzie, jak Klacks prawidłowo rozlicza służby 24-godzinne i odpoczynek wyrównawczy &mdash; lub uruchom Klacks On-Premise dla pełnej suwerenności danych."
+    "title": "Zobacz Klacks w swojej firmie",
+    "text": "Przetestuj w Playgroundzie, jak Klacks automatyzuje ewidencję czasu pracy, okresy odpoczynku i równoważny system czasu pracy &mdash; On-Premise lub w Playgroundzie, bezpłatnie i bez rejestracji."
   }
 }

@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für Tschechien | Dienstpläne für die 416-Stunden-Grenze im Krankenhaus",
+  "pageTitle": "Klacks für Unternehmen in Tschechien | Schichtabhängiges Wochensoll & 2-Wochen-Frist",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Kliniken und Pflegeeinrichtungen in Tschechien",
-    "titleHtml": "416 Stunden Überstunden pro Jahr &mdash; <span class=\"text-secondary\">und trotzdem lückenlos dokumentiert.</span>",
-    "subtitle": "Seit der Reform von 2023/24 gilt im Zákoník práce wieder die strikte Grenze von 416 Überstunden pro Jahr im Gesundheitswesen, dazu komplexe Regeln für 24-Stunden-Dienste samt gesetzlicher Ersatzruhe. Klacks plant diese Grenzen von Anfang an ein, statt sie am Jahresende nachzurechnen.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Datenhoheit in Tschechien",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks kennt das Wochensoll je Schichtmodell, die 2-Wochen-Ankündigungsfrist für Dienstpläne und die 416-Stunden-Jahresgrenze für Überstunden nach dem Zákoník práce &mdash; und läuft On-Premise, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Tschechien",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in tschechischen Kliniken",
-    "title": "Seit den Ärzteprotesten 2023/24: strengere Grenzen, komplexere Ausgleichsregeln",
+    "eyebrow": "Der Planungsalltag in tschechischen Betrieben",
+    "title": "Schichtmodell, Vorlauffrist und Überstundendeckel",
     "items": [
-      { "icon": "hourglass_disabled", "title": "416-Stunden-Grenze pro Jahr", "text": "150 Stunden angeordnete plus 266 Stunden einvernehmlich vereinbarte Überstunden &mdash; wer diese Grenze überschreitet, riskiert Bussgelder und Konflikte mit dem Betriebsrat." },
-      { "icon": "schedule", "title": "24-Stunden-Dienste mit Pflicht-Ersatzruhe", "text": "Seit 2024 gilt: 12 Stunden Plan-Schicht plus bis zu 12 Stunden Überstunden in einem 26-Stunden-Fenster, danach rund 22 Stunden gesetzliche Ersatzruhe &mdash; von Hand kaum mehr fehlerfrei zu planen." },
-      { "icon": "groups", "title": "Angespanntes Vertrauen nach den Protesten", "text": "Nach den Ärzteprotesten gegen zu hohe Überstundenlast ist die korrekte, überprüfbare Einhaltung der Grenzen zum Vertrauensthema im Betrieb geworden." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben des tschechischen Datenschutzamts (ÚOOÚ) in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Überstunden-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Betriebsrat."
+      { "icon": "schedule", "title": "Wochensoll hängt am Schichtmodell", "text": "40 Stunden im Einschichtbetrieb, 38,75 Stunden im Zweischichtbetrieb, 37,5 Stunden im Drei- und Mehrschicht- oder kontinuierlichen Betrieb (§ 79 Zákoník práce) &mdash; von Hand schnell verwechselt, mit der Folge unbeabsichtigter Überstunden." },
+      { "icon": "campaign", "title": "Mindestens 2 Wochen Vorlauf für den Dienstplan", "text": "Der Arbeitgeber muss den Wochendienstplan mindestens 2 Wochen vor Beginn bekanntgeben, bei einem Arbeitszeitkonto nur 1 Woche (§ 84 ZP) &mdash; kurzfristige Umplanungen geraten schnell in Konflikt mit dieser Frist." },
+      { "icon": "gavel", "title": "Überstunden bis maximal 416 Stunden im Jahr", "text": "Einseitig angeordnete Überstunden sind auf 8 Stunden pro Woche und 150 Stunden pro Jahr begrenzt, die absolute Jahresobergrenze inklusive vereinbarter Überstunden liegt bei 416 Stunden über einen Ausgleichszeitraum von 26 (per Tarifvertrag bis 52) Wochen (§ 93 ZP)." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die 416-Stunden-Grenze im Blick behält",
-    "subtitle": "Überstunden und Ersatzruhe fortlaufend mitgeführt, nicht erst am Jahresende geprüft.",
+    "title": "Wie Klacks Betriebe in Tschechien entlastet",
+    "subtitle": "Vom schichtabhängigen Wochensoll bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant zusätzliche Überstunden entstehen." },
-      { "icon": "fact_check", "title": "Überstunden- und Ersatzruhe-Tracking", "text": "Klacks führt die 416-Stunden-Grenze und die 22-Stunden-Ersatzruhe nach 24-Stunden-Diensten fortlaufend mit &mdash; sichtbar für Planende und Betriebsrat." },
-      { "icon": "file_export", "title": "Pohoda-kompatibler Lohnexport", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt für den in Tschechien verbreiteten Pohoda-Import aufbereiten." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für 24-Stunden-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Dienste unter Einhaltung der hinterlegten Ersatzruhe-Regeln." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "schedule", "title": "Wochensoll automatisch je Schichttyp", "text": "Klacks kennt die 40-, 38,75- und 37,5-Stunden-Normen je nach Schichtmodell und rechnet das jeweils gültige Wochensoll automatisch mit, ohne manuelles Nachschlagen." },
+      { "icon": "campaign", "title": "2-Wochen-Frist automatisch eingehalten", "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten." },
+      { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks verfolgt sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze automatisch &mdash; über den passenden 26- oder 52-Wochen-Zeitraum." },
+      { "icon": "edit_calendar", "title": "Selbst-Planung nach § 87a möglich", "text": "Für Mitarbeitende mit einer schriftlichen Self-Scheduling-Vereinbarung (seit 1.1.2025) hält Klacks automatisch die 12-Stunden-Schichtobergrenze und alle Ruhezeiten ein." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Überstunden-Grenzen der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichttyp, Wochensoll, ein Blick",
+    "text": "Wechselt eine Abteilung vom Ein- in den Dreischichtbetrieb, rechnet Klacks das Wochensoll automatisch von 40 auf 37,5 Stunden um und behält gleichzeitig die 416-Stunden-Jahresgrenze für Überstunden im Blick &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für tschechische Kliniken testen",
-    "text": "Erleben Sie im Playground, wie Klacks die 416-Stunden-Grenze und Ersatzruhe im Blick behält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks schichtabhängiges Wochensoll, Vorlauffristen und die 416-Stunden-Grenze automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

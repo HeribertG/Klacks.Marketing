@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Städbolag in Schweden | Serviceentreprenadavtalet 2025-2027",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Städbolag in Schweden",
+    "titleHtml": "Jede Teilzeitkraft <span class=\"text-secondary\">korrekt vergütet.</span>",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem Übergang von mertid zu voller Überstundenvergütung und dem neuen arbetstidsförkortning-Tag ab 2026 automatisch hinterlegt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Schweden",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Städbolag-Alltag in Schweden",
+    "title": "Mertid-Ende, neuer freier Tag, Nachtruhe",
+    "items": [
+      { "icon": "payments", "title": "Teilzeit-Mehrarbeit wird zur Überstunde", "text": "Nach dem Serviceentreprenadavtalet (Almega/Fastighets &amp; Seko, 1.9.2025-31.8.2027) erhalten Teilzeit-Reinigungskräfte ab 1. Juni 2026 volle Überstundenvergütung (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) statt der bisherigen, geringer vergüteten mertid &mdash; die schrittweise Abschaffung im ersten und zweiten Vertragsjahr macht die korrekte Zuordnung schwierig." },
+      { "icon": "event_repeat", "title": "Neuer freier Tag ab 2026", "text": "Vollzeitkräfte erhalten ab 2026 einen bezahlten freien Tag pro Jahr (arbetstidsförkortning), Teilzeitkräfte anteilig &mdash; den Termin legt der Arbeitgeber fest." },
+      { "icon": "bedtime", "title": "Nachtruhe 00:00 bis 05:00 Uhr", "text": "Nach der Arbetstidslagen (ATL § 13) muss das Fenster Mitternacht bis 05:00 Uhr grundsätzlich in der dygnsvila liegen &mdash; auch für Reinigungskräfte mit frühen oder späten Einsätzen relevant." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks schwedische Städbolag entlastet",
+    "subtitle": "Von der optimierten Route bis zur korrekten Überstundenvergütung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "payments", "title": "Mertid-Übergang automatisch nachvollzogen", "text": "Klacks kennt den Übergang von mertid zu voller Überstundenvergütung (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags ab 1. Juni 2026) für Teilzeitkräfte und wendet die passende Vergütung an." },
+      { "icon": "event_available", "title": "Freier Tag automatisch eingeplant", "text": "Klacks plant den bezahlten freien Tag für Vollzeitkräfte bzw. den anteiligen Anspruch für Teilzeitkräfte ab 2026 automatisch mit ein." },
+      { "icon": "bedtime", "title": "Nachtruhe eingehalten", "text": "Klacks berücksichtigt automatisch, dass das Fenster Mitternacht bis 05:00 Uhr nach ATL § 13 grundsätzlich in der Ruhezeit liegen muss." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mertid-Ende und freier Tag, ein Plan",
+    "text": "Klacks erkennt automatisch, dass ab 1. Juni 2026 auch Teilzeitkräfte volle Überstundenvergütung statt mertid erhalten, und plant gleichzeitig den neuen arbetstidsförkortning-Tag mit ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Städbolag erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und die neue Überstundenregel übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

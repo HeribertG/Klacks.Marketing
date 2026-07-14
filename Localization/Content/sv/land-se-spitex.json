@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för hemtjänst i Sverige | Dygnsvila & restid korrekt planerad",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "För hemtjänst &amp; hemsjukvård i Sverige",
+    "titleHtml": "Mer tid för vård, <span class=\"text-secondary\">mindre tid åt dygnsvila-räkning.</span>",
+    "subtitle": "Klacks planerar insatser och rutter automatiskt &mdash; inklusive restid mellan klienter som arbetstid, de skärpta dygnsvila-reglerna för privat vård och jourtidsgränserna. On-premise, så att patientdata aldrig lämnar er verksamhet.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för ruttplanering inom svensk hemtjänst",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Vardagen inom svensk hemtjänst",
+    "title": "Skärpt dygnsvila, jourtid och restid",
+    "items": [
+      { "icon": "bedtime", "title": "Skärpta dygnsvila-regler 2025/2026", "text": "För privata vård- och assistansverksamheter gäller de skärpta 11-timmars dygnsvila-reglerna från 1 september 2025 (Vårdföretagarna/Kommunal) respektive från 1 januari 2026 (Fremia/Kommunal); en förkortning till minst 9 timmar är endast tillåten i undantagsfall med efterföljande kompenserande vila inom 14 dagar." },
+      { "icon": "schedule", "title": "Håll koll på jourtidsgränserna", "text": "Jourtid är enligt ATL § 6 begränsad till högst 48 timmar per 4 veckor eller 50 timmar per kalendermånad &mdash; så snart faktiskt arbete utförs räknas tiden inte längre som jourtid." },
+      { "icon": "alt_route", "title": "Restid mellan klienter", "text": "Resor mellan enskilda klientbesök under arbetsdagen räknas som arbetstid och driver upp dags- och veckoarbetstiden &mdash; endast vägen hemifrån till första och från sista insatsen räknas i regel inte med." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks svensk hemtjänst",
+    "subtitle": "Från dygnsvila beroende på avtalsdatum till korrekt restid &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Rutter automatiskt optimerade", "text": "Klacks lägger insatsrutter så att sträckorna blir korta och tidsfönstren hålls &mdash; för bil, cykel eller till fots." },
+      { "icon": "bedtime", "title": "Dygnsvila korrekt enligt avtalsdatum", "text": "Klacks känner till de stegvisa brytdatumen &mdash; 1 september 2025 (Vårdföretagarna/Kommunal) och 1 januari 2026 (Fremia/Kommunal) &mdash; och planerar automatiskt in den 11-timmars vilotiden samt i undantagsfall den kompenserande vilan inom 14 dagar." },
+      { "icon": "schedule", "title": "Jourtid begränsas automatiskt", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad enligt ATL § 6 övervakas automatiskt." },
+      { "icon": "alt_route", "title": "Restid korrekt registrerad som arbetstid", "text": "Resor mellan klienter räknas automatiskt som arbetstid &mdash; endast första och sista resan lämnas utanför." },
+      { "icon": "verified", "title": "Kompetenser beaktas automatiskt", "text": "Varje insats tilldelas endast personal med rätt kompetens &mdash; helt utan manuell kontroll." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Fyll turerna för imorgon” räcker. Vid sjukdom föreslår Klacksy omedelbart tillgänglig ersättare." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Dygnsvila-brytdatum och restid, en plan",
+    "text": "Klacks vet för varje vårdare om den skärpta 11-timmars dygnsvila-regeln redan gäller från 1 september 2025 eller från 1 januari 2026, och räknar samtidigt automatiskt in restiden mellan klienter som arbetstid &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i er hemtjänst",
+    "text": "Prova i Playground hur Klacks tar hand om dygnsvila, jourtid och restid &mdash; eller installera det direkt på er egen infrastruktur. Gratis och utan registrering."
+  }
+}

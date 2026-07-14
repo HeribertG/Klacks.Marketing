@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für Schweden | Dienstplanung mit korrekter Dygnsvila-Dokumentation",
+  "pageTitle": "Klacks für schwedische Unternehmen | Dienstplanung nach Arbetstidslagen & Kollektivavtal",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Alten- und Behindertenpflege sowie persönliche Assistenz in Schweden",
-    "titleHtml": "Dygnsvila-Ausnahmen sauber dokumentiert &mdash; <span class=\"text-secondary\">statt nachträglich rekonstruiert.</span>",
-    "subtitle": "Seit dem neuen Kollektivvertrag zwischen Kommunal und Vårdföretagarna (September 2025) gelten für Pflege und persönliche Assistenz (Branch E/G) präzise Regeln für verkürzte Ruhezeiten, 20&ndash;24-Stunden-Dienste und die anschliessende kompenserande vila. Klacks plant diese Ausnahmen von Anfang an ein, statt sie im Nachhinein per Hand zu belegen.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; Schwedischer Datenschutz",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">Kollektivavtal und Arbetstidslagen automatisch einhalten.</span>",
+    "subtitle": "Klacks erkennt automatisch, welche Kollektivavtal-Abweichungen von der Arbetstidslagen (ATL) für Ihren Betrieb gelten, hält Überstundengrenzen und dygnsvila ein und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von der IMY beanstandete biometrische Zeiterfassung.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für schwedische Unternehmen",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in schwedischer Pflege und persönlicher Assistenz",
-    "title": "Dygnsvila ist kein neues Gesetz — aber der neue Tarifvertrag macht Ausnahmen dokumentationspflichtig",
+    "eyebrow": "Der Planungsalltag in schwedischen Betrieben",
+    "title": "Kollektivavtal, Dygnsvila und IMY",
     "items": [
-      { "icon": "schedule", "title": "9-Stunden-Ausnahme statt 11-Stunden-Regel", "text": "Der Tarifvertrag erlaubt verkürzte Ruhezeiten und 20&ndash;24-Stunden-Dienste in Branch E und G &mdash; aber nur mit lückenloser Begründung und anschliessender kompenserande vila." },
-      { "icon": "fact_check", "title": "Kompensierende Ruhe verfolgen", "text": "Bei geplanten Ausnahmen wird das Ruhezeit-Defizit auf die nächste Ruhephase aufgeschlagen, bei ungeplanten Ereignissen muss der Ausgleich innerhalb von 14 Tagen erfolgen &mdash; von Hand kaum mehr sauber nachvollziehbar." },
-      { "icon": "groups", "title": "Fachkräftemangel in Alten- und Behindertenpflege", "text": "Wenig Personal muss die komplexen Ausnahmeregeln trotzdem einhalten &mdash; ein falsch geplanter Doppeldienst wird schnell zum Compliance-Problem." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der schwedischen Dataskyddslagen in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Personalvertretungen."
+      { "icon": "gavel", "title": "Kollektivavtal statt starrem Gesetz", "text": "Die Arbetstidslagen (ATL) ist nach § 3 in weiten Teilen dispositiv &mdash; ein Kollektivavtal kann davon abweichen, solange der EU-Mindestschutz gewahrt bleibt. Welche Regel im eigenen Betrieb gilt, ist von Hand schwer zu überblicken." },
+      { "icon": "bedtime", "title": "Überstunden &amp; Dygnsvila korrekt einhalten", "text": "Die allmän övertid ist auf 48 Stunden je 4 Wochen oder 50 Stunden je Kalendermonat, höchstens jedoch 200 Stunden je Jahr begrenzt (ATL § 8); dazu kommen 11 Stunden zusammenhängende dygnsvila mit dem Fenster Mitternacht bis 05:00 Uhr (ATL § 13)." },
+      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung: rechtliches Risiko", "text": "Die IMY stuft Fingerabdruck- und Gesichtserkennungsdaten als sensible Daten ein &mdash; eine Einwilligung im Arbeitsverhältnis gilt wegen des Machtungleichgewichts in der Regel nicht als freiwillig. Standard-Stempeluhren mit Biometrie stehen damit auf rechtlich unsicherem Boden." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die Dygnsvila-Ausnahmen abbildet",
-    "subtitle": "Nicht als starre Regel, sondern als nachvollziehbarer Planungsprozess.",
+    "title": "Wie Klacks schwedische Betriebe entlastet",
+    "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine dokumentationspflichtige Ruhezeit-Ausnahme entsteht." },
-      { "icon": "fact_check", "title": "Ausnahme- und Ausgleichs-Tracking", "text": "Jede verkürzte Ruhezeit und jede kompenserande vila wird im Dienstplan sichtbar erfasst &mdash; abrufbar, falls Kommunal oder Vårdföretagarna nachfragen." },
-      { "icon": "file_export", "title": "SIE- und PAxml-Export", "text": "Fertige Stunden, Zuschläge und Lohnarten lassen sich direkt für den schwedischen SIE-Standard bzw. PAxml-Lohnexport aufbereiten." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Rotationen unter Einhaltung der hinterlegten Ruhezeit-Regeln, statt sie nachträglich zu prüfen." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig bei spezialisierter Behindertenassistenz." }
+      { "icon": "gavel", "title": "Kollektivavtal-Abweichungen hinterlegt", "text": "Klacks lässt sich auf die im jeweiligen Kollektivavtal vereinbarten Abweichungen von der ATL einstellen, statt starr die gesetzlichen Grundwerte anzuwenden." },
+      { "icon": "timer", "title": "Überstundengrenzen automatisch überwacht", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 werden automatisch mitgeführt." },
+      { "icon": "bedtime", "title": "Dygnsvila &amp; Nachtfenster eingehalten", "text": "Die 11-stündige zusammenhängende Ruhezeit inklusive des Fensters Mitternacht bis 05:00 Uhr nach ATL § 13 plant Klacks automatisch mit ein." },
+      { "icon": "route", "title": "Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Touren so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
+      { "icon": "how_to_reg", "title": "Zeiterfassung ohne Biometrie", "text": "Klacks kommt ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das von der IMY beanstandete Einwilligungsproblem bei biometrischen Daten im Arbeitsverhältnis." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Dygnsvila und Überstundengrenze, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht das Fenster Mitternacht bis 05:00 Uhr innerhalb der dygnsvila verletzt oder die Jahresgrenze von 200 Überstunden erreicht ist, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für schwedische Pflege- und Assistenzdienste testen",
-    "text": "Erleben Sie im Playground, wie Klacks Dygnsvila-Ausnahmen nachvollziehbar plant &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Kollektivavtal-Regeln, dygnsvila und Überstundengrenzen automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

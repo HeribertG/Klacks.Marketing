@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks pro Česko | Rozpisy směn pro 416hodinový limit přesčasů ve zdravotnictví",
+  "pageTitle": "Klacks pro firmy v Česku | Týdenní pracovní doba podle směn a 2týdenní lhůta",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Pro nemocnice a pečovatelská zařízení v Česku",
-    "titleHtml": "416 hodin přesčasů ročně &mdash; <span class=\"text-secondary\">a přesto bezezbytku zdokumentováno.</span>",
-    "subtitle": "Od reformy 2023/24 platí v zákoníku práce znovu striktní limit 416 hodin přesčasů ročně ve zdravotnictví, k tomu komplexní pravidla pro 24hodinové služby včetně zákonné náhradní doby odpočinku. Klacks tyto limity plánuje od začátku, místo aby je dopočítával až na konci roku.",
+    "badgeIcon": "public",
+    "badge": "Open source &middot; on-premise &middot; suverenita nad daty v Česku",
+    "titleHtml": "Plánování směn, u kterého <span class=\"text-secondary\">máte kontrolu vy.</span>",
+    "subtitle": "Klacks zná týdenní pracovní dobu podle typu směnného provozu, dvoutýdenní lhůtu pro oznámení rozpisu směn i roční limit 416 hodin přesčasů podle zákoníku práce &mdash; a běží on-premise, takže personální data zůstávají ve vaší vlastní infrastruktuře.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Mřížka rozpisu směn Klacks",
+    "screenshotAlt": "Přehled rozpisu směn Klacks pro firmy v Česku",
     "screenshotLabel": "Rozpis směn"
   },
   "challenges": {
-    "eyebrow": "Každodenní provoz v českých nemocnicích",
-    "title": "Po protestech lékařů 2023/24: přísnější limity, komplexnější kompenzační pravidla",
+    "eyebrow": "Každodenní plánování v českých firmách",
+    "title": "Směnný provoz, lhůta pro oznámení a strop přesčasů",
     "items": [
-      { "icon": "hourglass_disabled", "title": "416hodinový limit přesčasů ročně", "text": "150 hodin nařízených plus 266 hodin dohodnutých přesčasů &mdash; kdo tento limit překročí, riskuje pokuty i konflikty s odborovou organizací nebo radou zaměstnanců." },
-      { "icon": "schedule", "title": "24hodinové služby s povinnou náhradní dobou odpočinku", "text": "Od roku 2024 platí: 12 hodin plánované směny plus až 12 hodin přesčasů v 26hodinovém okně, poté zhruba 22 hodin zákonné náhradní doby odpočinku &mdash; ručně už téměř nezvládnutelné bez chyb." },
-      { "icon": "groups", "title": "Napjatá důvěra po protestech", "text": "Po protestech lékařů proti přílišné zátěži přesčasy se správné, prokazatelné dodržování limitů stalo otázkou důvěry na pracovišti." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Suverenita nad daty",
-    "title": "Plná suverenita nad daty: open source &amp; on-premise",
-    "text": "Klacks byl vyvinut pro obory s přísnými bezpečnostními a compliance požadavky, kde citlivá data zaměstnanců nesmí opustit vlastní infrastrukturu. Jako open source řešení lze Klacks provozovat přímo ve vlastním datovém centru nebo na zabezpečených lokálních serverech &mdash; bez závislosti na cloudových poskytovatelích z USA. To usnadňuje dodržování GDPR a požadavků Úřadu pro ochranu osobních údajů (ÚOOÚ) ve vlastní režii.",
-    "bullets": [
-      "On-premise suverenita: plná kontrola nad rozpisy směn, doklady o přesčasech a protokoly v rámci vlastního IT prostředí.",
-      "Otevřená architektura LLM: AI podporované návrhy plánování lze provozovat i s lokálně hostovanými jazykovými modely, aniž by data odcházela k externím API.",
-      "Auditovatelný zdrojový kód: plně přístupná kódová základna pro IT audity a radu zaměstnanců."
+      { "icon": "schedule", "title": "Týdenní pracovní doba závisí na typu provozu", "text": "40 hodin v jednosměnném provozu, 38,75 hodin v dvousměnném provozu, 37,5 hodin ve tří- a vícesměnném nebo nepřetržitém provozu (§ 79 zákoníku práce) &mdash; ručně se to snadno splete, což vede k neúmyslným přesčasům." },
+      { "icon": "campaign", "title": "Rozpis směn minimálně 2 týdny předem", "text": "Zaměstnavatel musí týdenní rozpis směn oznámit nejméně 2 týdny předem, u konta pracovní doby stačí 1 týden (§ 84 ZP) &mdash; narychlo provedené změny se s touto lhůtou snadno dostanou do konfliktu." },
+      { "icon": "gavel", "title": "Přesčasy až do maximálně 416 hodin ročně", "text": "Jednostranně nařízené přesčasy jsou omezeny na 8 hodin týdně a 150 hodin ročně, absolutní roční strop včetně dohodnutých přesčasů činí 416 hodin za vyrovnávací období 26 týdnů (na základě kolektivní smlouvy až 52 týdnů) (§ 93 ZP)." }
     ]
   },
   "solutions": {
-    "title": "Jak Klacks hlídá 416hodinový limit přesčasů",
-    "subtitle": "Přesčasy a náhradní doba odpočinku se sledují průběžně, nikoli až na konci roku.",
+    "title": "Jak Klacks ulehčuje práci firmám v Česku",
+    "subtitle": "Od týdenní pracovní doby podle typu směn až po vlastní infrastrukturu &mdash; vše do sebe zapadá.",
     "items": [
-      { "icon": "bolt", "title": "Recovery engine pro výpadky", "text": "Když vypadne odborný pracovník, Klacks okamžitě najde kvalifikovanou náhradu &mdash; aniž by tím vznikaly neplánované další přesčasy." },
-      { "icon": "fact_check", "title": "Sledování přesčasů a náhradní doby odpočinku", "text": "Klacks průběžně sleduje 416hodinový limit i 22hodinovou náhradní dobu odpočinku po 24hodinových službách &mdash; viditelně pro plánovače i radu zaměstnanců." },
-      { "icon": "file_export", "title": "Export mezd kompatibilní s Pohodou", "text": "Hotové hodiny, přesčasy a příplatky lze připravit přímo pro import do v Česku rozšířeného systému Pohoda." },
-      { "icon": "calendar_month", "title": "Průvodce automatickým vyplněním pro 24hodinové rotace", "text": "Asistent automatického vyplnění založený na genetickém algoritmu plánuje 24hodinové služby s dodržením uložených pravidel náhradní doby odpočinku." },
-      { "icon": "groups", "title": "Plánování nasazení podle kvalifikace", "text": "Na směnu jsou navrhováni pouze zaměstnanci s odpovídající kvalifikací." }
+      { "icon": "schedule", "title": "Týdenní pracovní doba automaticky podle typu směn", "text": "Klacks zná normy 40, 38,75 a 37,5 hodiny podle typu směnného provozu a automaticky počítá s příslušnou platnou týdenní pracovní dobou, bez ručního vyhledávání." },
+      { "icon": "campaign", "title": "2týdenní lhůta dodržena automaticky", "text": "Klacks upozorní, než je rozpis směn zveřejněn příliš pozdě, a zohledňuje zkrácenou jednotýdenní lhůtu u konta pracovní doby." },
+      { "icon": "gavel", "title": "416hodinový limit pod kontrolou", "text": "Klacks automaticky sleduje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; v příslušném 26 nebo 52týdenním období." },
+      { "icon": "edit_calendar", "title": "Samoplánování podle § 87a je možné", "text": "U zaměstnanců s písemnou dohodou o samoplánování (od 1. 1. 2025) Klacks automaticky dodržuje 12hodinový limit délky směny i všechny doby odpočinku." },
+      { "icon": "shield_lock", "title": "On-premise: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře, AI model si vybíráte sami &mdash; i lokálně hostovaný, zcela bez přenosu personálních dat do zahraničí." },
+      { "icon": "smart_toy", "title": "Klacksy: na základě pravidel, žádná černá skříňka", "text": "Integrovaný AI asistent Klacksy plánuje na hlasový příkaz &mdash; srozumitelně podle uložených dovedností a pravidel, nikoli jako neprůhledné rozhodnutí AI." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI asistent",
     "title": "Klacksy: integrovaný asistent pro váš tým",
-    "text": "Klacksy není nasazený marketingový chatbot, ale je přímo zabudovaný do rozhraní Klacks. Zaměstnanci i plánovači se přes chat ptají na časy směn, podávají žádosti o výměnu směny nebo v týmu řeší konflikty kvalifikací. Uložený systém dovedností a pravidel zajišťuje, že Klacksy navrhuje pouze řešení, která odpovídají skutečným kvalifikacím a limitům přesčasů zúčastněných osob.",
+    "text": "Klacksy není nasazený marketingový chatbot, ale je přímo zabudovaný do rozhraní Klacks. Zaměstnanci i plánovači se přes chat ptají na časy směn, podávají žádosti o výměnu směny nebo si ujasňují dostupnost. Uložený systém dovedností a pravidel zajišťuje, že Klacksy dává srozumitelné návrhy &mdash; žádné rozhodnutí černé skříňky. Pro firmy s vysokými nároky na ochranu dat lze navíc AI model hostovat lokálně.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Chatovací asistent Klacksy v rozhraní Klacks"
   },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "Typ směn, týdenní pracovní doba, jeden pohled",
+    "text": "Když oddělení přejde z jednosměnného na třísměnný provoz, Klacks automaticky přepočítá týdenní pracovní dobu ze 40 na 37,5 hodiny a zároveň hlídá roční limit 416 hodin přesčasů &mdash; bez ručního přepočítávání."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Vyzkoušejte Klacks pro české nemocnice",
-    "text": "Vyzkoušejte si v Playgroundu, jak Klacks hlídá 416hodinový limit přesčasů a náhradní dobu odpočinku &mdash; nebo provozujte Klacks on-premise pro plnou suverenitu nad daty."
+    "title": "Zažijte Klacks ve své firmě",
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks automatizuje týdenní pracovní dobu podle typu směn, lhůty pro oznámení a limit 416 hodin &mdash; on-premise nebo v Playgroundu, zdarma a bez registrace."
   }
 }

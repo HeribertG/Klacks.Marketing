@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks pour les services de sécurité en Belgique | CP 317, temps de repos & prime de changement",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Pour les services de sécurité en Belgique (CP 317)",
+    "titleHtml": "Chaque poste occupé. <span class=\"text-secondary\">Chaque changement documenté.</span>",
+    "subtitle": "Klacks occupe les sites sans faille, publie le planning de base dans les délais entre le 22 et le 25 du mois précédent et comptabilise chaque modification ultérieure &mdash; pour que la prime de changement ne devienne jamais une surprise.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour l'occupation des sites et les rondes en Belgique",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de la sécurité en Belgique",
+    "title": "Moyenne de 37h, temps de repos et prime de changement",
+    "items": [
+      { "icon": "schedule", "title": "Moyenne hebdomadaire de 37h sur l'année", "text": "La CP 317 fixe la durée moyenne de travail hebdomadaire à 37 heures en moyenne annuelle &mdash; difficile à contrôler à la main sur de nombreux sites et des services de 12h." },
+      { "icon": "bedtime", "title": "Repos de 12h et limite de 6 jours", "text": "Après un service de 12h, un repos minimal de 12h est obligatoire ; après un maximum de 6 jours de travail consécutifs, ou 48 heures, un repos minimal de 36h est requis." },
+      { "icon": "event_repeat", "title": "Prime de changement à partir de la 4e modification", "text": "Le planning de base doit être établi entre le 22 et le 25 du mois précédent &mdash; si l'employeur le modifie une quatrième fois au cours du même mois, une prime est due. Facilement négligée sans comptage dans le planning." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les services de sécurité belges",
+    "subtitle": "Du poste occupé à la modification de planning comptabilisée &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      { "icon": "shield", "title": "Sites &amp; postes sans faille", "text": "Chaque poste sur l'ensemble des sites &mdash; Klacks signale immédiatement chaque poste vacant et le comble automatiquement sur demande." },
+      { "icon": "schedule", "title": "Moyenne annuelle de 37h surveillée automatiquement", "text": "Klacks garde un œil sur la moyenne hebdomadaire de 37h, même avec des services de 12h alternés." },
+      { "icon": "bedtime", "title": "Temps de repos correctement respectés", "text": "Le repos de 12h après chaque service et le repos de 36h après un maximum de 6 jours de travail ou 48 heures sont planifiés automatiquement." },
+      { "icon": "event_repeat", "title": "Prime de changement comptabilisée automatiquement", "text": "Klacks comptabilise chaque modification de planning après le planning de base du 22 au 25 du mois précédent, et avertit avant que la 4e modification ne déclenche la prime, actuellement de 0,6056 €/heure." },
+      { "icon": "nightlight", "title": "Supplément de nuit à deux paliers décompté automatiquement", "text": "Klacks distingue automatiquement le supplément de 12% entre 20h et 22h et le supplément de 22,5% entre 22h et 6h." },
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Affecte le service de nuit pour le site Nord » suffit &mdash; Klacksy vérifie les temps de repos, la moyenne annuelle et les suppléments." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Planning de base, modification, un seul planning",
+    "text": "Klacks publie le planning de base dans les délais entre le 22 et le 25 du mois précédent, comptabilise chaque modification ultérieure et avertit à temps avant que la 4e modification ne déclenche la prime &mdash; sans calcul manuel."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre service de sécurité",
+    "text": "Testez dans le Playground comment Klacks prend en charge les sites, les temps de repos et la prime de changement &mdash; gratuitement et sans inscription."
+  }
+}

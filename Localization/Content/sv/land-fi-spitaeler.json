@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för sjukhus i Finland | Periodarbete, övertid & lediga dagar",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "För sjukhus &amp; kliniker i Finland",
+    "titleHtml": "Scheman som <span class=\"text-secondary\">går ihop dygnet runt.</span>",
+    "subtitle": "Klacks planerar avdelningar och rotationer i SOTE-sjukhusens periodarbete (jaksotyö) utan luckor &mdash; med korrekt trappad övertid, lediga dagar och veckovila. On-premise, så att patientdata aldrig lämnar ditt hus.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemarutnät för finländska sjukhus",
+    "screenshotLabel": "Schema"
+  },
+  "challenges": {
+    "eyebrow": "Klinikvardagen i Finland",
+    "title": "Trappad övertid, lediga dagar och veckovila",
+    "items": [
+      { "icon": "gavel", "title": "Trappa övertidsersättningen", "text": "Under 3-veckorsperioden ska de första 18 övertidstimmarna (timmarna 121 till 138) ersättas med 50 % och varje ytterligare timme med 100 % &mdash; felbenäget för hand över många rotationer och avdelningar." },
+      { "icon": "event_available", "title": "Lediga dagar i 3-veckorsrytmen", "text": "SOTE-avtalet kräver minst två lediga dagar per vecka och eftersträvar två sammanhängande lediga dagar inom tre veckor &mdash; svårt att garantera vid roterande scheman i 24/7-drift." },
+      { "icon": "bedtime", "title": "Veckovilan förkortad, kompenserad i genomsnitt", "text": "I sammanhängande periodarbete kan veckovilan förkortas till minst 24 timmar &mdash; i genomsnitt måste dock minst 35 timmar uppnås under en 14-dagarsperiod. Att hålla detta genomsnitt över rullande perioder är knappt möjligt för hand." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks finländska sjukhus",
+    "subtitle": "Från heltäckande 24/7-bemanning till korrekt trappad övertidsersättning &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "schedule", "title": "Heltäckande bemanning dygnet runt", "text": "Dag-, kvälls- och nattskift på alla avdelningar &mdash; Klacks visar varje lucka direkt och fyller den automatiskt om du vill." },
+      { "icon": "gavel", "title": "Övertid trappas automatiskt", "text": "Klacks beräknar de första 18 övertidstimmarna per 3-veckorsperiod med 50 % och varje ytterligare timme med 100 % &mdash; korrekt och utan efterräkning." },
+      { "icon": "event_available", "title": "Lediga dagar &amp; veckovila planeras automatiskt", "text": "Klacks säkerställer de två lediga dagarna per vecka, planerar om möjligt in två sammanhängande lediga dagar inom tre veckor och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14-dagarsperioden." },
+      { "icon": "verified", "title": "Kompetenser &amp; avdelningar", "text": "Varje skift tilldelas endast personal med rätt kompetens &mdash; per avdelning, enhet och funktion." },
+      { "icon": "shield_lock", "title": "On-premise: data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; inte ens till AI:n." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Fyll medicinavdelningens nattskift nästa vecka” räcker &mdash; Klacksy beaktar kompetens, lediga dagar och veckovila." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Rotation, lediga dagar och övertid, ett schema",
+    "text": "Klacks trappar övertidsersättningen korrekt (18 timmar med 50 %, därefter 100 %), säkerställer de två lediga dagarna per vecka och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14 dagar &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Upplev Klacks på din klinik",
+    "text": "Testa i Playground hur Klacks tar hand om rotationer, lediga dagar och övertid &mdash; eller installera det direkt i ditt hus. Gratis och utan registrering."
+  }
+}

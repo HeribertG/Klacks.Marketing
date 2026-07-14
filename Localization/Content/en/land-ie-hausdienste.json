@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks for Contract Cleaning in Ireland | ERO Minimum Wage, Night Allowance & Sunday Working",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "For contract cleaning &amp; facility services in Ireland",
+    "titleHtml": "Every site <span class=\"text-secondary\">billed correctly.</span>",
+    "subtitle": "Klacks assigns sites and changing teams efficiently &mdash; automatically factoring in the ERO minimum wage, the night allowance between midnight and 6am, and the double Sunday rate. Routes are optimised automatically at the same time.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule grid for cleaning teams and sites in Ireland",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Everyday cleaning work in Ireland",
+    "title": "ERO rates, the night window and Sunday working",
+    "items": [
+      { "icon": "payments", "title": "ERO minimum wage rises at the new year", "text": "The Employment Regulation Order of the Contract Cleaning Industry Joint Labour Committee (S.I. No. 430/2025) raises the minimum wage from €14.10 (from 17 October 2025) to €14.80 per hour from 1 January 2026." },
+      { "icon": "bedtime", "title": "Night allowance between midnight and 6am", "text": "The €1.00-per-hour allowance applies to work between 00:00 and 06:00, provided at least 3 hours are worked within that window &mdash; from 1 January 2026, that comes to €15.80 per hour." },
+      { "icon": "event_repeat", "title": "Sunday working at double rate", "text": "Sunday work is paid at double the hourly rate &mdash; €29.60 per hour from 1 January 2026. With changing sites and teams, that's error-prone by hand." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off facility services in Ireland",
+    "subtitle": "From optimised routes to the correct ERO allowance &mdash; it all fits together.",
+    "items": [
+      { "icon": "route", "title": "Site routes optimised", "text": "Klacks sequences sites so that journeys stay short &mdash; whether by car, bike or on foot." },
+      { "icon": "payments", "title": "ERO minimum wage applied automatically", "text": "Klacks calculates using the current ERO rate of €14.80 per hour from 1 January 2026, and updates future increases centrally." },
+      { "icon": "bedtime", "title": "Night allowance within the right time window", "text": "The €1.00-per-hour night allowance between 00:00 and 06:00 is only correctly calculated where at least 3 hours are worked within that window &mdash; Klacks checks this automatically." },
+      { "icon": "event_repeat", "title": "Sunday working recorded at double rate", "text": "Klacks automatically recognises Sunday shifts and applies the double hourly rate of €29.60 per hour (from 1 January 2026)." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure &mdash; staff data never leaves your organisation, not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Schedule the sites in the North district for tomorrow morning\" is enough &mdash; Klacksy optimises the route and team and factors in the ERO rates at the same time." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in your cleaning business",
+    "text": "Try the Playground to see how Klacks handles routes, the ERO minimum wage and allowances &mdash; or install it directly on your own infrastructure. Free and without registration."
+  }
+}

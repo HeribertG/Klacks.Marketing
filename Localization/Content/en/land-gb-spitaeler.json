@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Hospitals UK | Junior Doctor Shift Limits & WTR Transparency",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For hospitals &amp; clinics in the UK",
+    "titleHtml": "Rotas that <span class=\"text-secondary\">work round the clock.</span>",
+    "subtitle": "Klacks plans wards and junior doctor rotations with no gaps &mdash; automatically factoring in the shift and rest-period limits of the Junior Doctor Contract. On-premise, so patient data never leaves your organisation.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule grid for hospitals in the UK",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Everyday hospital life in England",
+    "title": "The 13-hour limit, the rest-period cascade and WTR transparency",
+    "items": [
+      { "icon": "timer", "title": "13-hour shift limit for junior doctors", "text": "The Junior Doctor Contract 2016 (England) provides that shifts must not be scheduled for longer than 13 hours &mdash; almost impossible to track by hand across many rotations and wards. Scotland, Wales and Northern Ireland each have their own, differing contracts." },
+      { "icon": "bedtime", "title": "Observing the rest-period cascade", "text": "After a maximum of 4 consecutive shifts over 10 hours, 48 hours' rest is due; after a maximum of 4 nights, 46 hours; after a maximum of 7 shifts, 48 hours &mdash; plus at least 11 hours' rest between any two shifts." },
+      { "icon": "visibility", "title": "Making WTR compliance visible", "text": "NHS England's e-rostering guidance requires Working Time Regulations rules to be built into the system, with breaches surfaced through reports &mdash; a reliable overview is barely achievable without software." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off hospitals in England",
+    "subtitle": "From gap-free ward cover to WTR transparency &mdash; everything works together.",
+    "items": [
+      { "icon": "schedule", "title": "Gap-free 24/7 cover", "text": "Day, late and night shifts across every ward &mdash; Klacks shows every gap immediately and fills it automatically on request." },
+      { "icon": "timer", "title": "13-hour limit observed automatically", "text": "Klacks plans junior doctor shifts so that the 13-hour limit under the Junior Doctor Contract is never exceeded." },
+      { "icon": "bedtime", "title": "Rest-period cascade checked continuously", "text": "The 48/46/48-hour rest periods after consecutive shifts or nights, as well as the 11-hour rest between shifts, are factored into the plan automatically." },
+      { "icon": "visibility", "title": "WTR breaches made visible", "text": "Klacks has the Working Time Regulations built into the system and flags breaches before the rota is published &mdash; fully traceable for any support-and-challenge meeting." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice or chat", "text": "\"Fill next week's night shifts for General Medicine\" is all it takes &mdash; Klacksy factors in shift limits and rest periods." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Junior doctor rotation, one plan",
+    "text": "Klacks automatically observes the 13-hour shift limit and the rest-period cascade under the Junior Doctor Contract, and shows ward managers early on where things are getting tight."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "See Klacks in your hospital",
+    "text": "Try the Playground to see how Klacks handles shift limits, rest periods and wards &mdash; or install it directly within your organisation. Free, with no registration required."
+  }
+}

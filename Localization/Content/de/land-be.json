@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks für Belgien | PC 330-konforme Dienstplanung für Pflege und Sicherheit",
+  "pageTitle": "Klacks für Unternehmen in Belgien | Paritair Comité, Sprachgesetz & Dienstplan-Reform 2026",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Gesundheitseinrichtungen und Sicherheitsdienste in Belgien",
-    "titleHtml": "PC 330 im Griff &mdash; <span class=\"text-secondary\">38-Stunden-Referenz, 11h-Tagesmaximum, 50h-Wochenmaximum.</span>",
-    "subtitle": "Das Paritair Comité 330 (Gezondheidsinrichtingen en -diensten) regelt für den grössten Non-Profit-Sektor Belgiens die Arbeitszeit im Detail: 38 Stunden Referenz pro Woche, maximal 11 Stunden pro Tag, maximal 50 Stunden pro Woche, ausgeglichen über bis zu 6 Monate. Nachtarbeit zwischen 20 und 6 Uhr bleibt in Pflege und Sicherheitsgewerbe über eigene, seit Jahren stabile sektorale Abkommen geregelt.",
+    "badgeIcon": "gavel",
+    "badge": "Für Unternehmen in Belgien &middot; Alle Paritair Comités",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jedes Paritair Comité respektieren.</span>",
+    "subtitle": "Klacks kennt die Regeln Ihres Paritair Comité (CP/PC), erstellt Dienstpläne automatisch in der Sprache jeder Betriebsstätte und dokumentiert jede Abweichung &mdash; damit Sie die Reform 2026 lückenlos einhalten.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Belgien",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in belgischer Pflege und Sicherheit",
-    "title": "PC 330 und sektorale Nachtarbeits-Abkommen im Zusammenspiel",
+    "eyebrow": "Der Planungsalltag in belgischen Betrieben",
+    "title": "Paritair Comité, Sprachgesetz und die Reform 2026",
     "items": [
-      { "icon": "hourglass_disabled", "title": "38h-Referenz, 11h/50h-Grenzen", "text": "Das PC 330 setzt die Referenzarbeitszeit auf 38 Stunden pro Woche, mit einem Tagesmaximum von 11 und einem Wochenmaximum von 50 Stunden &mdash; ausgeglichen über einen Zeitraum von bis zu 6 Monaten." },
-      { "icon": "schedule", "title": "Nachtarbeit sektoral geregelt", "text": "Nachtarbeit zwischen 20 und 6 Uhr bleibt in Pflege und Sicherheitsgewerbe über eigene Branchenabkommen geregelt, unabhängig von der Lockerung des allgemeinen Nachtarbeitsverbots für andere Sektoren ab Juni 2026." },
-      { "icon": "groups", "title": "Personalmangel in woonzorgcentra", "text": "Altenheime (woonzorgcentra) und Krankenhäuser, besonders in Flandern, kämpfen mit akutem Personalmangel &mdash; eine faire Verteilung unbeliebter Nacht- und Wochenendschichten wird zur Führungsaufgabe." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der belgischen Datenschutzbehörde (APD/GBA) in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Sozialpartner."
+      { "icon": "gavel", "title": "Jedes Paritair Comité hat eigene Regeln", "text": "Jedes Unternehmen ist zwingend einem Paritair Comité (PC/CP) zugeordnet &mdash; etwa PC 330 Gesundheit, PC 317 Security, PC 121 Reinigung oder PC 140.03 Logistik. Die jeweilige CAO regelt Zuschläge, Arbeitszeitgrenzen und Planungsfristen verbindlich, nicht ein einheitliches Gesetz." },
+      { "icon": "translate", "title": "Sprache nach Betriebsstätte, nicht Hauptsitz", "text": "Arbeitsverträge, Dienstpläne und Zeiterfassung müssen in der Sprache der jeweiligen Betriebsstätte vorliegen &mdash; Niederländisch in Flandern, Französisch in der Wallonie, Deutsch in der Deutschsprachigen Gemeinschaft. Verstösse können das Dokument zugunsten der Arbeitnehmenden unwirksam machen." },
+      { "icon": "fact_check", "title": "Abweichungsregister und Reform 2026", "text": "Jede Abweichung vom publizierten Teilzeit-Dienstplan muss lückenlos dokumentiert werden, sonst gilt gesetzlich Vollzeitbeschäftigung. Seit 1. Juni 2026 sank zudem die Teilzeit-Mindestarbeitszeit von einem Drittel auf ein Zehntel der Vollzeitquote, und die Publikationsfrist verkürzte sich auf 7 Werktage im Voraus." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks PC 330 und Nachtarbeits-Abkommen zusammenführt",
-    "subtitle": "38h-Referenz, Tages-/Wochengrenzen und sektorale Nachtarbeit in einem Plan.",
+    "title": "Wie Klacks belgische Betriebe entlastet",
+    "subtitle": "Von der PC-spezifischen Regel bis zur mehrsprachigen Dokumentation &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine PC-330-Grenze verletzt wird." },
-      { "icon": "fact_check", "title": "PC-330-Grenzen-Tracking", "text": "Klacks führt die 38h-Referenz sowie die 11h/50h-Grenzen über den gesamten Ausgleichszeitraum fortlaufend mit." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für faire Nachtrotationen", "text": "Der GA-gestützte Autofill-Assistent verteilt Nacht- und Wochenendschichten ausgewogen und unter Einhaltung der sektoralen Abkommen." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "gavel", "title": "Paritair Comité automatisch berücksichtigt", "text": "Klacks kennt die Zuschläge, Arbeitszeitgrenzen und Planungsfristen des jeweils zugeordneten PC &mdash; ob PC 330, PC 317, PC 121 oder PC 140.03." },
+      { "icon": "translate", "title": "Dienstpläne je Betriebsstätte in der richtigen Sprache", "text": "Klacks erstellt Dienstpläne und Zeiterfassung automatisch in der Sprache der jeweiligen Betriebsstätte &mdash; Niederländisch, Französisch oder Deutsch." },
+      { "icon": "fact_check", "title": "Abweichungsregister lückenlos geführt", "text": "Jede Planänderung bei Teilzeitkräften wird automatisch dokumentiert &mdash; die gesetzliche Vollzeitvermutung entsteht gar nicht erst." },
+      { "icon": "event_available", "title": "Reform 2026 automatisch eingehalten", "text": "Klacks veröffentlicht Dienstpläne innerhalb der gesetzlichen Frist von 7 Werktagen im Voraus (oder der per CAO verkürzten Frist) und berücksichtigt die neue Teilzeit-Mindestarbeitszeit von einem Zehntel der Vollzeitquote automatisch." },
+      { "icon": "schedule", "title": "Freiwillige Überstunden sauber getrennt", "text": "Die ersten 240 der bis zu 360 freiwilligen Jahresüberstunden sind von Zuschlag, Sozialabgaben und Steuer befreit &mdash; Klacks führt diese Grenze automatisch mit." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und PC-330-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist direkt in die Klacks-Oberfläche eingebettet und hilft, PC-spezifische Regeln, Sprachvorgaben je Betriebsstätte und die Publikationsfrist der Reform 2026 einzuhalten. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, keine Blackbox-Entscheidung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Paritair Comité und Sprachvorgabe, ein Blick",
+    "text": "Klacks erkennt automatisch, welches Paritair Comité für eine Betriebsstätte gilt, erstellt den Dienstplan in der richtigen Sprache und dokumentiert jede Abweichung &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für belgische Pflege- und Sicherheitsdienste testen",
-    "text": "Erleben Sie im Playground, wie Klacks PC 330 automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Paritair-Comité-Regeln, Sprachvorgaben und die Publikationsfrist der Reform 2026 automatisiert &mdash; kostenlos und ohne Registrierung."
   }
 }

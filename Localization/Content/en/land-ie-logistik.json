@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks for Logistics in Ireland | the 60-Hour Limit, Reference Period & Period of Availability",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "For logistics &amp; transport in Ireland",
+    "titleHtml": "Routes, driving hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks plans routes and drivers &mdash; keeping the absolute 60-hour weekly limit, the 48-hour average over the reference period, and correctly recorded Period of Availability (POA) under S.I. No. 2/2005 all in view. Routes are optimised automatically.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for routes and driver assignments in Ireland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday logistics work in Ireland",
+    "title": "The 60-hour limit, reference period and POA",
+    "items": [
+      { "icon": "timer", "title": "Absolute 60-hour weekly limit", "text": "S.I. No. 2/2005 sets an absolute maximum of 60 hours in any single calendar week for mobile road transport workers &mdash; on top of the 48-hour average limit." },
+      { "icon": "fact_check", "title": "48-hour average over 4 months", "text": "The reference period for the 48-hour average limit is 4 months by default; an extension to 6 months is only possible through a collective or workforce agreement, not automatically as in other sectors." },
+      { "icon": "hourglass_top", "title": "Recording Period of Availability (POA) correctly", "text": "Waiting time at borders or during ferry crossings counts as POA rather than towards the 48-hour working time, but must still be recorded and made known to the worker in advance &mdash; a frequent source of error by hand." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off logistics in Ireland",
+    "subtitle": "From optimised routes to correctly recorded POA &mdash; it all fits together.",
+    "items": [
+      { "icon": "route", "title": "Routes optimised automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short journeys, time windows kept, fewer empty runs." },
+      { "icon": "timer", "title": "60-hour and 48-hour limits monitored", "text": "Klacks checks both the absolute 60-hour weekly limit and the 48-hour average limit over the 4-month reference period in real time, in line with S.I. No. 2/2005." },
+      { "icon": "hourglass_top", "title": "POA recorded correctly", "text": "Klacks records Periods of Availability (POA) separately from working time and makes sure they are known to the worker in advance." },
+      { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence &mdash; and warns before certificates expire." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure &mdash; route and driver data never leave your organisation, not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Plan tomorrow's routes, driver Murphy is off sick\" is enough &mdash; Klacksy recalculates everything, POA included." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in your logistics business",
+    "text": "Try the Playground to see how Klacks handles routes, driving hours and POA &mdash; or install it directly on your own infrastructure. Free and without registration."
+  }
+}

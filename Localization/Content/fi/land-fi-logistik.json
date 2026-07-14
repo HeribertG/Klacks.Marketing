@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks Suomen logistiikalle | Jaksotyö, TES 2026 & päivärahat",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Suomen logistiikalle ja kuljetusalalle",
+    "titleHtml": "Reitit, jaksot, päivärahat &mdash; <span class=\"text-secondary\">kaikki hallinnassa.</span>",
+    "subtitle": "Klacks suunnittelee reitit ja kuljettajat kuljetusalan jaksotyössä &mdash; porrastetuin ylitöin, sopivin päivärahoin ja Kuorma-autoalan TES:n 1.6.2026 voimaan tulleen korotuksen huomioiden.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajana-näkymä reiteille ja kuljettajien työvuoroille Suomessa",
+    "screenshotLabel": "Aikajana"
+  },
+  "challenges": {
+    "eyebrow": "Logistiikan arki Suomessa",
+    "title": "Jaksotyö, päivärahat ja TES-korotus 2026",
+    "items": [
+      { "icon": "gavel", "title": "Kuljetusalan jaksotyötuntien laskeminen", "text": "Kuljetusala kuuluu epäsäännöllistä työaikaa vaativiin aloihin: työaika voidaan järjestää enintään 120 tunniksi 3 viikon jaksossa tai enintään 80 tunniksi 2 viikon jaksossa (Työaikalaki 7 §) &mdash; käsin lähes mahdoton pitää varmasti hallinnassa useiden kuljettajien ja reittien yli." },
+      { "icon": "payments", "title": "Päivärahojen erottelu oikein", "text": "Matkan keston mukaan sovelletaan täyttä 43,80 euron päivärahaa, osittaista 19,90 euron päivärahaa tai korotettua 54,00 euron päivärahaa &mdash; oikean tason osoittaminen käsin kullekin reitille on virhealtista." },
+      { "icon": "trending_up", "title": "TES-korotuksen 1.6.2026 huomioiminen", "text": "1.6.2026 alkaen Kuorma-autoalan TES:n palkat nousivat 2,9 % &mdash; osana noin 6 %:n kokonaiskorotusta sopimuskaudella, jonka on tultava oikein huomioiduksi palkkasuunnittelussa." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa suomalaisen logistiikan arkea",
+    "subtitle": "Optimoidusta reitistä oikeaan päivärahaan &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "route", "title": "Reitit optimoidaan automaattisesti", "text": "Klacks järjestää pysähdykset järkevimpään järjestykseen &mdash; lyhyet matkat, pitävät aikaikkunat, vähemmän tyhjänä ajoa." },
+      { "icon": "gavel", "title": "Jaksotyö ja ylityöt lasketaan automaattisesti", "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee porrastetun ylityökorvauksen: ensimmäiset 18 ylityötuntia 50 %:lla, sen jälkeen 100 %:lla." },
+      { "icon": "payments", "title": "Päivärahat osoitetaan automaattisesti", "text": "Klacks osoittaa jokaiselle reitille sopivan päivärahan &mdash; 43,80 € täydeltä, 19,90 € osittaiselta ja 54,00 € korotetulta päivältä &mdash; ja on valmis 1.6.2026 voimaan tulleeseen palkkaportaaseen." },
+      { "icon": "bedtime", "title": "Lepoajat ja sunnuntailisä huomioitu", "text": "Klacks valvoo vuorokautista ja viikoittaista lepoaikaa ja kirjaa lakisääteisen 100 %:n sunnuntailisän automaattisesti." },
+      { "icon": "badge", "title": "Ajokorttiluokat sopivasti", "text": "Klacks osoittaa reitit vain kuljettajille, joilla on sopiva ajo-oikeus &mdash; ja varoittaa vanhenevista todistuksista." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Suunnittele huomisen reitit, kuljettaja Korhonen on sairaana” riittää &mdash; Klacksy laskee kaiken uudelleen, mukaan lukien jaksotunnit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Rajat ylittävä reitti, yksi suunnitelma",
+    "text": "Klacks laskee jaksotunnit oikein, osoittaa reitille sopivan päivärahan (43,80 €, 19,90 € tai 54,00 €) ja huomioi 1.6.2026 voimaan tulleen palkankorotuksen &mdash; ilman käsin laskemista."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokeilkaa Klacksia logistiikkayrityksessänne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa reitit, jaksotyön ja päivärahat &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

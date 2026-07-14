@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för logistik i Finland | Periodarbete, kollektivavtal 2026 & dagtraktamenten",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "För logistik &amp; transport i Finland",
+    "titleHtml": "Rutter, perioder, dagtraktamenten &mdash; <span class=\"text-secondary\">allt under kontroll.</span>",
+    "subtitle": "Klacks planerar rutter och förare i transportsektorns periodarbete (jaksotyö) &mdash; med trappad övertid, rätt dagtraktamenten och löneförhöjningen i Lastbilsbranschens kollektivavtal (Kuorma-autoalan TES) som trädde i kraft 1.6.2026.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för rutter och förarpass i Finland",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Logistikvardagen i Finland",
+    "title": "Periodarbete, dagtraktamenten och kollektivavtalshöjningen 2026",
+    "items": [
+      { "icon": "gavel", "title": "Summera periodarbete inom transport", "text": "Transport räknas till branscherna med oregelbunden arbetsbelastning: arbetstiden får förläggas till högst 120 timmar per 3-veckorsperiod eller högst 80 timmar per 2-veckorsperiod (arbetstidslagen § 7) &mdash; svårt att hålla säkert för hand över många förare och rutter." },
+      { "icon": "payments", "title": "Skilja korrekt mellan dagtraktamenten", "text": "Beroende på resans längd gäller ett fullt dagtraktamente på 43,80 €, ett halvt på 19,90 € eller ett förhöjt på 54,00 € &mdash; att för hand tilldela rätt nivå per runda är felbenäget." },
+      { "icon": "trending_up", "title": "Avspegla kollektivavtalshöjningen sedan 1.6.2026", "text": "Den 1.6.2026 höjdes lönerna i Lastbilsbranschens kollektivavtal (Kuorma-autoalan TES) med 2,9 % &mdash; en del av en total höjning på cirka 6 % under avtalsperioden, som måste komma in korrekt i löneplaneringen." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks finländsk logistik",
+    "subtitle": "Från den optimerade rundan till det korrekta dagtraktamentet &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Rundor optimeras automatiskt", "text": "Klacks lägger stoppen i den mest logiska ordningen &mdash; korta vägar, hållna tidsfönster, färre tomkörningar." },
+      { "icon": "gavel", "title": "Periodarbete &amp; övertid beräknas automatiskt", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den trappade övertidsersättningen: de första 18 övertidstimmarna med 50 %, därefter 100 %." },
+      { "icon": "payments", "title": "Dagtraktamenten tilldelas automatiskt", "text": "Klacks tilldelar varje runda rätt dagtraktamente &mdash; 43,80 € för den fulla, 19,90 € för den halva och 54,00 € för den förhöjda dagen &mdash; och är redo för lönenivån som trädde i kraft 1.6.2026." },
+      { "icon": "bedtime", "title": "Vilotider &amp; söndagstillägg beaktade", "text": "Klacks övervakar den dagliga och veckovisa vilotiden och bokför det lagstadgade 100-procentiga tillägget för söndagsarbete automatiskt." },
+      { "icon": "badge", "title": "Rätt körkortsbehörighet", "text": "Klacks tilldelar rundor endast till förare med rätt behörighet &mdash; och varnar för intyg som håller på att löpa ut." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera morgondagens rundor, föraren Korhonen är sjuk” räcker &mdash; Klacksy räknar om allt, inklusive periodtimmarna." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Gränsöverskridande runda, ett schema",
+    "text": "Klacks summerar periodtimmarna korrekt, tilldelar rundan rätt dagtraktamente (43,80 €, 19,90 € eller 54,00 €) och beaktar löneförhöjningen som trädde i kraft 1.6.2026 &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i din logistikverksamhet",
+    "text": "Testa i Playground hur Klacks tar hand om rundor, periodarbete och dagtraktamenten &mdash; eller installera det direkt på din egen infrastruktur. Gratis och utan registrering."
+  }
+}

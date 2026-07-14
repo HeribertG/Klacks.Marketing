@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks för Sverige | Schemaläggning med korrekt dokumentation av dygnsvila",
+  "pageTitle": "Klacks för svenska företag | Schemaläggning enligt arbetstidslagen & kollektivavtal",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "För äldreomsorg, funktionshinderomsorg och personlig assistans i Sverige",
-    "titleHtml": "Undantag från dygnsvilan dokumenterade från början &mdash; <span class=\"text-secondary\">inte rekonstruerade i efterhand.</span>",
-    "subtitle": "Sedan det nya kollektivavtalet mellan Kommunal och Vårdföretagarna (september 2025) gäller precisa regler för vård och personlig assistans (bransch E/G) kring förkortad dygnsvila, 20&ndash;24-timmarspass och den efterföljande kompenserande vilan. Klacks planerar dessa undantag redan från början, i stället för att dokumentera dem i efterhand för hand.",
+    "badgeIcon": "shield_lock",
+    "badge": "Öppen källkod &middot; On-premise &middot; Svenskt dataskydd",
+    "titleHtml": "Scheman som <span class=\"text-secondary\">automatiskt följer kollektivavtal och arbetstidslagen.</span>",
+    "subtitle": "Klacks upptäcker automatiskt vilka kollektivavtalsavvikelser från arbetstidslagen (ATL) som gäller för er verksamhet, håller koll på övertidsgränser och dygnsvila och körs on-premise &mdash; med den AI-modell ni själva väljer, helt utan den biometriska tidsregistrering som IMY har kritiserat.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks schemarutnät",
+    "screenshotAlt": "Klacks schemaöversikt för svenska företag",
     "screenshotLabel": "Schema"
   },
   "challenges": {
-    "eyebrow": "Vardagen inom svensk vård och personlig assistans",
-    "title": "Dygnsvila är ingen ny lag — men det nya kollektivavtalet gör undantag dokumentationspliktiga",
+    "eyebrow": "Planeringsvardagen i svenska verksamheter",
+    "title": "Kollektivavtal, dygnsvila och IMY",
     "items": [
-      { "icon": "schedule", "title": "9-timmarsundantag i stället för 11-timmarsregeln", "text": "Kollektivavtalet tillåter förkortad dygnsvila och 20&ndash;24-timmarspass i bransch E och G &mdash; men bara med heltäckande motivering och efterföljande kompenserande vila." },
-      { "icon": "fact_check", "title": "Uppföljning av kompenserande vila", "text": "Vid planerade undantag läggs underskottet i vilotid till nästa vilopass, vid oplanerade händelser måste kompensationen ske inom 14 dagar &mdash; för hand knappast längre möjligt att hålla ordning på." },
-      { "icon": "groups", "title": "Personalbrist inom äldreomsorg och funktionshinderomsorg", "text": "Med knapp bemanning måste de komplexa undantagsreglerna ändå följas &mdash; ett felplanerat dubbelpass blir snabbt ett compliance-problem." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datasuveränitet",
-    "title": "Full datasuveränitet: öppen källkod &amp; on-premise",
-    "text": "Klacks har utvecklats för branscher med stränga säkerhets- och regelkrav, där känsliga personaluppgifter inte ska lämna den egna infrastrukturen. Som en programvara med öppen källkod kan Klacks köras direkt i ert eget datacenter eller på skyddade lokala servrar &mdash; utan beroende av amerikanska molnleverantörer. Det underlättar efterlevnaden av GDPR och den svenska Dataskyddslagen i egen regi.",
-    "bullets": [
-      "On-premise-suveränitet: full kontroll över scheman, underlag för vilotid och loggar inom den egna IT-miljön.",
-      "Fri LLM-arkitektur: AI-baserade planeringsförslag kan även köras med lokalt hostade språkmodeller, utan att data skickas till externa API:er.",
-      "Granskningsbar källkod: en fullständigt genomsynlig kodbas för IT-granskningar och personalrepresentanter."
+      { "icon": "gavel", "title": "Kollektivavtal i stället för stel lagstiftning", "text": "Arbetstidslagen (ATL) är enligt § 3 till stora delar dispositiv &mdash; ett kollektivavtal kan avvika från den, så länge EU:s minimiskydd upprätthålls. Vilken regel som gäller i det egna företaget är svårt att överblicka för hand." },
+      { "icon": "bedtime", "title": "Övertid &amp; dygnsvila korrekt hanterade", "text": "Allmän övertid är begränsad till 48 timmar per 4 veckor eller 50 timmar per kalendermånad, dock högst 200 timmar per år (ATL § 8); dessutom krävs 11 timmars sammanhängande dygnsvila med tidsfönstret midnatt till 05.00 (ATL § 13)." },
+      { "icon": "fingerprint", "title": "Biometrisk tidsregistrering: en juridisk risk", "text": "IMY klassar fingeravtrycks- och ansiktsigenkänningsdata som känsliga uppgifter &mdash; ett samtycke i en anställningsrelation räknas i regel inte som frivilligt på grund av maktobalansen. Vanliga stämpelklockor med biometri står därmed på juridiskt osäker mark." }
     ]
   },
   "solutions": {
-    "title": "Så avbildar Klacks undantagen från dygnsvilan",
-    "subtitle": "Inte som en stel regel, utan som en spårbar planeringsprocess.",
+    "title": "Så avlastar Klacks svenska verksamheter",
+    "subtitle": "Från den automatiska kollektivavtalsavvikelsen till den egna infrastrukturen &mdash; allt hänger ihop.",
     "items": [
-      { "icon": "bolt", "title": "Återställningsmotor för bortfall", "text": "Om en yrkeskunnig medarbetare uteblir hittar Klacks omedelbart en kvalificerad ersättare &mdash; utan att det oplanerat uppstår ett dokumentationspliktigt undantag från dygnsvilan." },
-      { "icon": "fact_check", "title": "Undantags- och kompensationsuppföljning", "text": "Varje förkortad dygnsvila och varje kompenserande vila registreras synligt i schemat &mdash; tillgänglig om Kommunal eller Vårdföretagarna efterfrågar det." },
-      { "icon": "file_export", "title": "SIE- och PAxml-export", "text": "Färdiga timmar, tillägg och lönearter kan bearbetas direkt för den svenska SIE-standarden respektive PAxml-löneexporten." },
-      { "icon": "calendar_month", "title": "Automatisk ifyllningsguide för rotationer", "text": "Den genetiskt baserade ifyllningsassistenten planerar 24-timmarsrotationer med hänsyn till de lagrade vilotidsreglerna, i stället för att kontrollera dem i efterhand." },
-      { "icon": "groups", "title": "Kompetensexakt schemaläggning", "text": "Endast medarbetare med rätt kompetens föreslås för ett pass &mdash; viktigt vid specialiserad assistans för personer med funktionsnedsättning." }
+      { "icon": "gavel", "title": "Kollektivavtalsavvikelser inlagda", "text": "Klacks kan ställas in på de avvikelser från ATL som avtalats i respektive kollektivavtal, i stället för att stelt tillämpa lagens grundvärden." },
+      { "icon": "timer", "title": "Övertidsgränser övervakas automatiskt", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 följs automatiskt upp." },
+      { "icon": "bedtime", "title": "Dygnsvila &amp; nattfönster respekteras", "text": "Den 11 timmar långa sammanhängande vilotiden, inklusive tidsfönstret midnatt till 05.00 enligt ATL § 13, planerar Klacks automatiskt in." },
+      { "icon": "route", "title": "Uppdrag optimeras automatiskt", "text": "Klacks lägger uppdrag och rutter så att vägar blir korta och tidsfönster hålls &mdash; användbart oavsett bransch." },
+      { "icon": "how_to_reg", "title": "Tidsregistrering utan biometri", "text": "Klacks klarar sig utan fingeravtryck eller ansiktsigenkänning &mdash; och därmed utan det samtyckesproblem för biometriska uppgifter i anställningsförhållanden som IMY har kritiserat." },
+      { "icon": "shield_lock", "title": "On-premise: full datasuveränitet", "text": "Klacks körs på er egen infrastruktur, och ni väljer själva AI-modell &mdash; även lokalt driftsatt." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI-assistent",
     "title": "Klacksy: den integrerade assistenten för ert team",
-    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Anställda och schemaläggare frågar via chatt om arbetstider, gör förfrågningar om skiftbyte eller klarar ut kompetenskonflikter i teamet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy endast ger förslag som stämmer överens med de berördas faktiska kompetenser och vilotidskrav.",
+    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Anställda och schemaläggare frågar via chatt om arbetstider, gör bytesönskemål eller reder ut tillgänglighet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy ger spårbara förslag &mdash; inget svarta lådan-beslut. För verksamheter med höga krav på dataskydd kan AI-modellen dessutom hostas lokalt.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chattassistent i Klacks användargränssnitt"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Dygnsvila och övertidsgräns, en överblick",
+    "text": "Klacks upptäcker automatiskt när ett pass bryter mot tidsfönstret midnatt till 05.00 inom dygnsvilan eller när årsgränsen på 200 övertidstimmar nås, och föreslår kompensationen direkt &mdash; utan manuell efterräkning."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Testa Klacks för svensk vård- och assistansverksamhet",
-    "text": "Upplev i Playground hur Klacks planerar undantag från dygnsvilan på ett spårbart sätt &mdash; eller kör Klacks on-premise för full datasuveränitet."
+    "title": "Upplev Klacks i er verksamhet",
+    "text": "Testa i Playground hur Klacks automatiserar kollektivavtalsregler, dygnsvila och övertidsgränser &mdash; on-premise eller i Playground, gratis och utan registrering."
   }
 }

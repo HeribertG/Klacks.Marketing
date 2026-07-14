@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks för Finland | 0,65-personaldimensioneringen styrkt utan luckor",
+  "pageTitle": "Klacks för finländska företag | Periodarbete, vilotider & skyldighet att publicera arbetsschema",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "För äldreomsorg med heldygnsomsorg i Finland",
-    "titleHtml": "0,65 vårdare per klient &mdash; <span class=\"text-secondary\">styrkt genomgående, inte bara på papperet.</span>",
-    "subtitle": "Inom äldreomsorgen med heldygnsomsorg gäller enligt lag en minsta personaldimensionering på 0,65 behöriga anställda per klient. Den ursprungligen planerade höjningen till 0,7 sköts på grund av den akuta personalbristen upp till den 1 januari 2028. Klacks styrker dimensioneringen skift för skift, i stället för att rekonstruera den i slutet av månaden.",
+    "badgeIcon": "gavel",
+    "badge": "Open Source &middot; On-Premise &middot; arbetstidslagen (872/2019)",
+    "titleHtml": "Planera periodarbete <span class=\"text-secondary\">utan att förlora överblicken.</span>",
+    "subtitle": "Klacks schemalägger automatiskt enligt reglerna för finländskt periodarbete (jaksotyö) &mdash; inklusive vilotider, skyldigheten att publicera arbetsschemat i tid och det tillägg som passar din bransch och ditt kollektivavtal (TES). On-premise, med den AI-modell du själv väljer.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks schemarutnät",
+    "screenshotAlt": "Klacks schemaöversikt för finländska företag",
     "screenshotLabel": "Schema"
   },
   "challenges": {
-    "eyebrow": "Vardagen på finländska vårdenheter",
-    "title": "0,65-dimensioneringen gäller skift för skift, inte som månadsgenomsnitt",
+    "eyebrow": "Planeringsvardagen i Finland",
+    "title": "Periodarbete, vilotider och tidsfristen för arbetsschemat",
     "items": [
-      { "icon": "fact_check", "title": "0,65 vårdare per klient", "text": "Den lagstadgade minimidimensioneringen inom äldreomsorgen med heldygnsomsorg kräver genomgående 0,65 behöriga anställda per klient &mdash; om dimensioneringen underskrids i enskilda skift är det ett regelbrott, även om månadsgenomsnittet stämmer." },
-      { "icon": "hourglass_top", "title": "Höjningen till 0,7 uppskjuten till 2028", "text": "Den ursprungligen planerade höjningen av dimensioneringen till 0,7 sköts officiellt upp till den 1 januari 2028 på grund av den akuta bristen på yrkeskunnig personal &mdash; enheterna måste ändå följa den nuvarande 0,65-gränsen utan undantag fram till dess." },
-      { "icon": "groups", "title": "En av Nordeuropas största vårdpersonalbrister", "text": "Finland kämpar med en av de mest dramatiska personalbristerna inom äldreomsorgen i Nordeuropa &mdash; enheterna kombinerar i allt högre grad schemaplaneringsprogram med sensorteknik för att ändå hålla dimensioneringen." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datasuveränitet",
-    "title": "Full datasuveränitet: öppen källkod &amp; on-premise",
-    "text": "Klacks har utvecklats för branscher med stränga säkerhets- och regelkrav, där känsliga personaluppgifter inte ska lämna den egna infrastrukturen. Som en programvara med öppen källkod kan Klacks köras direkt i ert eget datacenter eller på skyddade lokala servrar &mdash; utan beroende av amerikanska molnleverantörer. Det underlättar efterlevnaden av GDPR och kraven från den finländska dataskyddsmyndigheten Dataombudsmannens byrå i egen regi.",
-    "bullets": [
-      "On-premise-suveränitet: full kontroll över scheman, dimensioneringsbevis och loggar inom den egna IT-miljön.",
-      "Fri LLM-arkitektur: AI-baserade planeringsförslag kan även köras med lokalt hostade språkmodeller, utan att data skickas till externa API:er.",
-      "Granskningsbar källkod: en fullständigt genomsynlig kodbas för IT-granskningar och tillsynsmyndigheter."
+      { "icon": "gavel", "title": "Summera periodarbete (jaksotyö) korrekt", "text": "I branscher med oregelbunden arbetsbelastning får arbetstiden förläggas till högst 120 timmar per 3-veckorsperiod eller högst 80 timmar per 2-veckorsperiod (arbetstidslagen 872/2019 § 7) &mdash; övertid uppstår först när denna periodsumma överskrids. För hand är detta felbenäget över många medarbetare." },
+      { "icon": "bedtime", "title": "Korrekt förkorta och kompensera vilotider", "text": "Den dagliga vilotiden på 11 timmar (§ 25) kan i skift- eller periodarbete förkortas till 9 timmar &mdash; den förlorade tiden måste då kompenseras sammanhängande inom 14 dagar. Den veckovisa vilotiden (§ 27) måste vara minst 35 sammanhängande timmar." },
+      { "icon": "event_note", "title": "Publicera arbetsschemat (työvuoroluettelo) i tid", "text": "Arbetsschemat måste meddelas medarbetarna skriftligen minst en vecka innan perioden börjar. När det väl har publicerats får det bara ändras med medarbetarens samtycke eller av ett vägande, arbetsrelaterat skäl (painava syy)." }
     ]
   },
   "solutions": {
-    "title": "Så styrker Klacks 0,65-dimensioneringen skift för skift",
-    "subtitle": "Kontrollerat för varje skift, inte upptäckt först i månadsgenomsnittet.",
+    "title": "Så avlastar Klacks finländska verksamheter",
+    "subtitle": "Från automatisk periodberäkning till publicering i tid &mdash; allt hänger ihop.",
     "items": [
-      { "icon": "bolt", "title": "Återställningsmotor för bortfall", "text": "Om en yrkeskunnig medarbetare uteblir hittar Klacks omedelbart en behörig ersättare &mdash; innan 0,65-dimensioneringen underskrids i ett skift." },
-      { "icon": "fact_check", "title": "Dimensioneringsuppföljning per skift", "text": "Klacks kontrollerar 0,65-dimensioneringen för varje enskilt skift, inte bara som månadsgenomsnitt &mdash; tillgänglig för interna kontroller och tillsynsmyndigheter." },
-      { "icon": "calendar_month", "title": "Automatisk ifyllningsguide med dimensioneringskontroll", "text": "Den genetiskt baserade ifyllningsassistenten föreslår endast rotationer som uppfyller vårddimensioneringen i varje skift." },
-      { "icon": "groups", "title": "Kompetensexakt schemaläggning", "text": "Endast anställda med rätt kompetens räknas in i dimensioneringen &mdash; Klacks skiljer automatiskt mellan behörig och understödjande personal." }
+      { "icon": "gavel", "title": "Periodarbete &amp; övertid beräknas automatiskt", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %." },
+      { "icon": "bedtime", "title": "Vilotider &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på 14-dagarsfristen för kompensationen &mdash; liksom den veckovisa minsta vilotiden på 35 timmar." },
+      { "icon": "event_note", "title": "Arbetsschemat publiceras i tid", "text": "Klacks säkerställer att arbetsschemat publiceras minst en vecka i förväg och markerar efterhandsändringar som samtyckespliktiga &mdash; anpassat efter ditt branschspecifika kollektivavtal (TES)." },
+      { "icon": "paid", "title": "Söndagstillägg korrekt bokfört", "text": "För arbete på söndagar och kyrkliga helgdagar bokför Klacks automatiskt det lagstadgade 100-procentiga tillägget (§ 20) &mdash; uppstår samtidigt övertidsarbete tillkommer övertidsersättningen." },
+      { "icon": "shield_lock", "title": "On-premise: full datasuveränitet", "text": "Klacks körs på din egen infrastruktur, AI-modellen väljer du själv &mdash; även lokalt hostad. Det stödjer en återhållsam hantering av personaldata, så som lagen om integritetsskydd i arbetslivet (759/2004) kräver." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbaserad, ingen svart låda", "text": "Den integrerade AI-assistenten Klacksy planerar via röstkommandon &mdash; spårbart enligt lagrade färdigheter och regler, inte som ett ogenomskinligt AI-beslut." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI-assistent",
-    "title": "Klacksy: den integrerade assistenten för ert team",
-    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Anställda och schemaläggare frågar via chatt om arbetstider, gör förfrågningar om skiftbyte eller klarar ut kompetenskonflikter i teamet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy endast ger förslag som stämmer överens med de berördas faktiska kompetenser och personaldimensionering.",
+    "title": "Klacksy: den integrerade assistenten för ditt team",
+    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Medarbetare och schemaläggare frågar via chatt om arbetstider, gör bytesförfrågningar eller klarar ut tillgänglighet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy ger spårbara förslag &mdash; inget beslut från en svart låda. För verksamheter med höga krav på dataskydd kan AI-modellen dessutom hostas lokalt.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chattassistent i Klacks användargränssnitt"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "En 3-veckorsperiod, korrekt avräknad",
+    "text": "Om en medarbetare i en 3-veckorsperiod når 120-timmarsgränsen räknar Klacks automatiskt av de följande 18 timmarna med 50 % och varje ytterligare timme med 100 % &mdash; utan manuell efterräkning."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Testa Klacks för finländska vårdenheter",
-    "text": "Upplev i Playground hur Klacks styrker 0,65-personaldimensioneringen skift för skift &mdash; eller kör Klacks on-premise för full datasuveränitet."
+    "title": "Upplev Klacks i din finländska verksamhet",
+    "text": "Testa i Playground hur Klacks automatiserar periodarbete, vilotider och tidsfristen för arbetsschemat &mdash; on-premise eller i Playground, gratis och utan registrering."
   }
 }

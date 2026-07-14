@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Vartiointi Finnland | Jaksotyö, Nachtarbeit & TES 2026",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste (vartiointi) in Finnland",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Nacht korrekt geplant.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge in der Periodenarbeit (jaksotyö) der Vartiointiala lückenlos &mdash; mit den Grenzen für Nachtarbeit und der Tariferhöhung des Vartiointialan TES zum 1.9.2026 automatisch berücksichtigt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Finnland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Finnland",
+    "title": "Jaksotyö, Nachtarbeit und die TES-Erhöhung 2026",
+    "items": [
+      { "icon": "gavel", "title": "Periodenarbeit im Wachdienst summieren", "text": "Bewachung zählt zu den Branchen mit unregelmässigem Arbeitsanfall: die Arbeitszeit darf als max. 120 Stunden je 3-Wochen-Periode oder max. 80 Stunden je 2-Wochen-Periode angeordnet werden (Työaikalaki § 7) &mdash; über viele Objekte und Wachpersonen hinweg von Hand kaum zu überblicken." },
+      { "icon": "bedtime", "title": "Nachtarbeit-Grenzen einhalten", "text": "Nachtarbeit (23:00-06:00 Uhr) ist in besonders belastender Arbeit auf max. 8 Stunden je 24-Stunden-Fenster begrenzt, und es sind höchstens 5 aufeinanderfolgende Nachtschichten zulässig, danach mindestens 24 Stunden Ruhe &mdash; bei durchgehenden Nachtobjekten leicht zu überschreiten." },
+      { "icon": "trending_up", "title": "TES-Erhöhung zum 1.9.2026 vorbereiten", "text": "Zum 1.9.2026 steigen im Vartiointialan TES sowohl die Löhne als auch die Zeitzuschläge für Abend-, Nacht- und Samstagsarbeit um 2,5 % &mdash; die Umstellung muss termingerecht in der Planung ankommen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks finnische Sicherheitsdienste entlastet",
+    "subtitle": "Vom besetzten Posten bis zur termingerechten TES-Erhöhung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "Periodenarbeit automatisch berechnet", "text": "Klacks summiert die Arbeitszeit je 3- oder 2-Wochen-Periode und berechnet die gestaffelte Überstundenvergütung: die ersten 18 Überstunden mit 50 %, danach 100 %." },
+      { "icon": "bedtime", "title": "Nachtarbeit-Grenzen automatisch eingehalten", "text": "Klacks überwacht die 8-Stunden-Grenze bei belastender Nachtarbeit und die maximal 5 aufeinanderfolgenden Nachtschichten &mdash; inklusive der anschliessenden Ruhezeit." },
+      { "icon": "paid", "title": "Sonntagszuschlag &amp; TES-Erhöhung 2026 hinterlegt", "text": "Der gesetzliche 100-%-Zuschlag für Sonn- und Feiertagsarbeit (§ 20) ist ebenso hinterlegt wie die zum 1.9.2026 greifende Erhöhung von Löhnen und Zeitzuschlägen um 2,5 %." },
+      { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Verfügbarkeit, Periodenstunden und Nachtarbeit-Grenzen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nachtobjekt, Periodenstunden, ein Plan",
+    "text": "Klacks behält bei durchgehenden Nachtobjekten die 8-Stunden-Grenze und die maximal 5 aufeinanderfolgenden Nachtschichten im Blick, summiert die Periodenstunden korrekt und bucht den Sonntagszuschlag automatisch &mdash; bereit für die TES-Erhöhung zum 1.9.2026."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Periodenarbeit und Nachtarbeit-Grenzen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

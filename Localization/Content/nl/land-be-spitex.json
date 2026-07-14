@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks voor thuiszorg België | Reistijd, onderbroken diensten & rimpelregeling",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Voor thuis- &amp; ambulante zorg in België (PC 330)",
+    "titleHtml": "Meer tijd voor zorg, <span class=\"text-secondary\">minder voor de routeplanning.</span>",
+    "subtitle": "Klacks plant zorgtaken en routes automatisch &mdash; inclusief reistijd tussen patiënten als arbeidstijd, de 50%-toeslag bij onderbroken diensten en de rimpelregeling vanaf 45 jaar.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning van thuiszorg in België",
+    "screenshotLabel": "Tijdlijn"
+  },
+  "challenges": {
+    "eyebrow": "De dagelijkse praktijk in de Belgische thuiszorg",
+    "title": "Reistijd, onderbroken diensten en rimpelregeling",
+    "items": [
+      { "icon": "alt_route", "title": "Reistijd tussen patiënten telt als arbeidstijd", "text": "Verplaatsingen tussen twee bezoeken zijn volwaardige arbeidstijd &mdash; enkel de eerste rit van thuis en de laatste rit naar huis tellen niet mee. Deze regel geldt sectorbreed, niet enkel voor PC 330." },
+      { "icon": "call_split", "title": "50%-toeslag bij onderbroken diensten", "text": "Een onderbroken dienst leidt volgens het PC-330-loonbarema tot een toeslag van 50% &mdash; met de hand gemakkelijk over het hoofd gezien." },
+      { "icon": "elderly", "title": "Rimpelregeling vanaf 45 jaar", "text": "Medewerkers krijgen vanaf 45, 50 en 55 jaar bijkomende wekelijkse vrijstellingsuren (2/4/6 uur) &mdash; de routeplanning moet dit leeftijdsafhankelijk automatisch meenemen." }
+    ]
+  },
+  "solutions": {
+    "title": "Hoe Klacks de Belgische thuiszorg ontlast",
+    "subtitle": "Van de automatische route tot de rimpelregeling &mdash; alles grijpt op elkaar in.",
+    "items": [
+      { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks legt zorgroutes zo vast dat afstanden kort blijven en tijdsvensters worden gerespecteerd &mdash; met de auto, fiets of te voet." },
+      { "icon": "schedule", "title": "Reistijd correct als arbeidstijd geregistreerd", "text": "Verplaatsingen tussen patiënten worden automatisch als arbeidstijd berekend &mdash; enkel de eerste en de laatste rit blijven buiten beschouwing." },
+      { "icon": "call_split", "title": "50%-toeslag bij onderbroken diensten berekend", "text": "Klacks herkent een onderbroken dienst automatisch en past de 50%-toeslag toe volgens het PC-330-loonbarema." },
+      { "icon": "elderly", "title": "Rimpelregeling automatisch ingepland", "text": "De leeftijdsafhankelijke vrijstellingsuren vanaf 45, 50 en 55 jaar worden automatisch meegenomen in de routeplanning." },
+      { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke zorgtaak wordt enkel toegewezen aan personen met de juiste kwalificatie &mdash; zonder manuele controle." },
+      { "icon": "smart_toy", "title": "Klacksy plant via spraak", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekte stelt Klacksy meteen een beschikbare vervanger voor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Reistijd, onderbroken dienst, één plan",
+    "text": "Klacks rekent de reistijd tussen patiënten automatisch mee als arbeidstijd, herkent onderbroken diensten en past de 50%-toeslag toe &mdash; zonder handmatig narekenen."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Ervaar Klacks in uw zorgorganisatie",
+    "text": "Probeer in de playground hoe Klacks reistijd, onderbroken diensten en de rimpelregeling overneemt &mdash; gratis en zonder registratie."
+  }
+}

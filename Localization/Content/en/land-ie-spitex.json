@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Home Care in Ireland | Travel Time, HSE Home Support & the Tyco Ruling",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "For Home Support &amp; home care in Ireland",
+    "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
+    "subtitle": "Klacks plans visits and routes automatically &mdash; including travel time between clients as working time under the CJEU Tyco line of case law and the requirements of the HSE Home Support Authorisation Scheme. On-premise, so patient data never leaves your organisation.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for route planning in home care in Ireland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday life in Irish home care",
+    "title": "Travel time, HSE requirements and the Tyco ruling",
+    "items": [
+      { "icon": "alt_route", "title": "Travel time counts as working time", "text": "Under the CJEU Tyco ruling (C-266/14), applied via the OWTA by the WRC and the Labour Court, it isn't only travel between clients that counts as working time &mdash; for staff with no fixed place of work, the first journey from home to the first client and the last journey back count too." },
+      { "icon": "payments", "title": "HSE Home Support Authorisation Scheme", "text": "The 2023 HSE scheme pays provider organisations a fixed rate of €31 per hour, while also requiring them to pay carers at least the Living Wage and to remunerate travel time between clients." },
+      { "icon": "groups", "title": "Changing routes, many clients", "text": "Home Support teams look after several clients a day at changing locations &mdash; by hand, it's almost impossible to track which travel time counts as working time where, and where the Living Wage obligation applies." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off home care in Ireland",
+    "subtitle": "From automatic routing to correct travel-time recording &mdash; it all fits together.",
+    "items": [
+      { "icon": "route", "title": "Routes optimised automatically", "text": "Klacks lays out visit routes so that journeys stay short and time windows are kept &mdash; whether by car, bike or on foot." },
+      { "icon": "schedule", "title": "Travel time correctly recorded as working time", "text": "In line with the Tyco ruling, Klacks records not only journeys between clients but, for staff with no fixed place of work, also the first and last journey automatically as working time." },
+      { "icon": "payments", "title": "HSE remuneration kept in view", "text": "Klacks supports tracking the Living Wage obligation and travel-time remuneration under the 2023 HSE Home Support Authorisation Scheme." },
+      { "icon": "verified", "title": "Qualifications taken into account automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data never leaves your organisation &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Fill the routes for tomorrow\" is enough. If someone calls in sick, Klacksy immediately suggests available cover." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Travel time, HSE pay, one plan",
+    "text": "Klacks automatically counts journeys between clients, as well as the first and last journey, as working time, while keeping the requirements of the HSE Home Support Authorisation Scheme in view &mdash; no manual recalculating required."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experience Klacks in your care organisation",
+    "text": "Try the Playground to see how Klacks handles travel time, routes and HSE requirements &mdash; or install it directly on your own infrastructure. Free and without registration."
+  }
+}

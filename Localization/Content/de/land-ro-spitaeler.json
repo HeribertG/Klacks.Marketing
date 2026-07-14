@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler Rumänien | Gardă-Ruhezeit &amp; 35-Stunden-Woche",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Rumänien",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">nach der Gardă aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste (Gardă) rund um die Uhr &mdash; mit der 24-Stunden-Ruhezeit nach jedem Gardă-Dienst und der tariflich vereinbarten 35-Stunden-Woche für Ärztinnen und Ärzte automatisch berücksichtigt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Rumänien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Rumänien",
+    "title": "24-Stunden-Ruhezeit nach der Gardă und die 35-Stunden-Woche",
+    "items": [
+      { "icon": "bedtime", "title": "24 Stunden Ruhezeit nach jeder Gardă", "text": "Nach durchgehender Diensttätigkeit inklusive Bereitschaftsdienst (Gardă) steht Ärztinnen und Ärzten ein Ruheanspruch von 24 Stunden zu &mdash; auch nach einer Gardă an Sonn- oder Feiertagen vor einem regulären Arbeitstag (Ordinul MS nr. 870/2004)." },
+      { "icon": "groups", "title": "Personalunterbesetzung verschiebt die Ruhezeit", "text": "Bei Personalunterbesetzung in einer Fachrichtung kann die 24-Stunden-Ruhezeit entfallen oder verschoben werden &mdash; die reguläre Tagesnorm muss dann an anderen Tagen im Monat nachgeholt werden." },
+      { "icon": "schedule", "title": "35-Stunden-Woche im Gesundheitssektor", "text": "Für Ärztinnen und Ärzte in öffentlichen Gesundheitseinrichtungen gilt tariflich eine reguläre Arbeitszeit von durchschnittlich 35 Stunden pro Woche (7h/Tag) gemäss der sektoralen Kollektivvereinbarung im Gesundheitswesen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks rumänische Spitäler entlastet",
+    "subtitle": "Von der korrekten Gardă-Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "bedtime", "title": "24-Stunden-Ruhezeit nach Gardă automatisch geplant", "text": "Klacks plant den 24-Stunden-Ruheanspruch nach jedem Bereitschaftsdienst automatisch mit ein &mdash; auch bei Gardă an Sonn- und Feiertagen." },
+      { "icon": "groups", "title": "Nachholung bei Personalunterbesetzung erkannt", "text": "Muss die Ruhezeit wegen Personalunterbesetzung verschoben werden, zeigt Klacks, an welchen Tagen die reguläre Tagesnorm nachzuholen ist." },
+      { "icon": "gavel", "title": "35-Stunden-Woche im Blick", "text": "Klacks überwacht die tariflich vereinbarte 35-Stunden-Woche der Ärztinnen und Ärzte fortlaufend." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Gardă-Ruhezeit und Wochenstunden." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Gardă, Ruhezeit, ein Plan",
+    "text": "Klacks plant die 24-Stunden-Ruhezeit nach jeder Gardă automatisch ein und zeigt frühzeitig, wenn Personalunterbesetzung eine Nachholung der Tagesnorm nötig macht."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Gardă-Ruhezeiten und die 35-Stunden-Woche übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

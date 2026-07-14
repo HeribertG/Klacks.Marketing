@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks pour la Belgique | Planification des services conforme à la CP 330 pour les soins et la sécurité",
+  "pageTitle": "Klacks pour les entreprises en Belgique | Commission Paritaire, loi linguistique & réforme des horaires 2026",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Pour les établissements de soins et les services de sécurité en Belgique",
-    "titleHtml": "La CP 330 maîtrisée &mdash; <span class=\"text-secondary\">référence de 38 heures, maximum journalier de 11h, maximum hebdomadaire de 50h.</span>",
-    "subtitle": "La Commission Paritaire 330 (Établissements et services de santé) régit dans le détail le temps de travail du plus grand secteur non marchand de Belgique : référence de 38 heures par semaine, maximum de 11 heures par jour, maximum de 50 heures par semaine, compensés sur une période pouvant aller jusqu'à 6 mois. Le travail de nuit entre 20h et 6h reste encadré, dans les secteurs des soins et de la sécurité, par des conventions sectorielles propres, stables depuis des années.",
+    "badgeIcon": "gavel",
+    "badge": "Pour les entreprises en Belgique &middot; Toutes les Commissions Paritaires",
+    "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">respectent chaque Commission Paritaire.</span>",
+    "subtitle": "Klacks connaît les règles de votre Commission Paritaire (CP), crée automatiquement les horaires dans la langue de chaque siège d'exploitation et documente chaque écart &mdash; pour que vous respectiez intégralement la réforme 2026.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Grille de planning Klacks",
-    "screenshotLabel": "Planning"
+    "screenshotAlt": "Vue d'ensemble des horaires Klacks pour les entreprises en Belgique",
+    "screenshotLabel": "Horaire"
   },
   "challenges": {
-    "eyebrow": "Le quotidien dans les soins et la sécurité en Belgique",
-    "title": "L'interaction entre la CP 330 et les conventions sectorielles sur le travail de nuit",
+    "eyebrow": "Le quotidien de la planification dans les entreprises belges",
+    "title": "Commission Paritaire, loi linguistique et la réforme 2026",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Référence de 38h, limites de 11h/50h", "text": "La CP 330 fixe la durée de travail de référence à 38 heures par semaine, avec un maximum journalier de 11 heures et un maximum hebdomadaire de 50 heures &mdash; compensés sur une période pouvant aller jusqu'à 6 mois." },
-      { "icon": "schedule", "title": "Travail de nuit réglé au niveau sectoriel", "text": "Le travail de nuit entre 20h et 6h reste régi, dans les secteurs des soins et de la sécurité, par des conventions sectorielles propres, indépendamment de l'assouplissement de l'interdiction générale du travail de nuit prévu pour d'autres secteurs à partir de juin 2026." },
-      { "icon": "groups", "title": "Pénurie de personnel dans les maisons de repos et de soins", "text": "Les maisons de repos et de soins (MRS) et les hôpitaux, particulièrement en Flandre, sont confrontés à une pénurie aiguë de personnel &mdash; une répartition équitable des services de nuit et de week-end peu appréciés devient un enjeu de management." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Souveraineté des données",
-    "title": "Souveraineté totale des données : open source &amp; on-premise",
-    "text": "Klacks a été conçu pour des secteurs soumis à des exigences strictes de sécurité et de conformité, où les données sensibles du personnel ne doivent pas quitter votre propre infrastructure. En tant que solution open source, Klacks peut être exploité directement dans votre propre centre de données ou sur des serveurs locaux sécurisés &mdash; sans dépendance à des fournisseurs cloud américains. Cela facilite le respect du RGPD et des exigences de l'APD (Autorité de protection des données), l'autorité belge de protection des données, en toute autonomie.",
-    "bullets": [
-      "Souveraineté on-premise : contrôle total sur les plannings de service, les justificatifs de temps de travail et les journaux, au sein de votre propre environnement informatique.",
-      "Architecture LLM libre : les suggestions de planification assistées par IA peuvent aussi fonctionner avec des modèles de langage hébergés localement, sans que les données ne soient transmises à des API externes.",
-      "Code source auditable : base de code entièrement consultable pour les audits informatiques et les partenaires sociaux."
+      { "icon": "gavel", "title": "Chaque Commission Paritaire a ses propres règles", "text": "Chaque entreprise est obligatoirement rattachée à une Commission Paritaire (CP) &mdash; par exemple la CP 330 Santé, la CP 317 Gardiennage, la CP 121 Nettoyage ou la CP 140.03 Logistique. C'est la CCT respective qui régit de façon contraignante les suppléments, les limites de temps de travail et les délais de planification, et non une loi uniforme." },
+      { "icon": "translate", "title": "La langue selon le siège d'exploitation, pas le siège social", "text": "Les contrats de travail, les horaires et le pointage doivent être établis dans la langue du siège d'exploitation concerné &mdash; le néerlandais en Flandre, le français en Wallonie, l'allemand en Communauté germanophone. Toute infraction peut rendre le document inopposable, au bénéfice des travailleurs." },
+      { "icon": "fact_check", "title": "Registre des écarts et réforme 2026", "text": "Tout écart par rapport à l'horaire à temps partiel publié doit être documenté sans faille, sinon un temps plein est présumé de plein droit. Depuis le 1er juin 2026, la durée de travail minimale à temps partiel est en outre passée d'un tiers à un dixième du temps plein, et le délai de publication a été réduit à 7 jours ouvrables à l'avance." }
     ]
   },
   "solutions": {
-    "title": "Comment Klacks concilie la CP 330 et les conventions sur le travail de nuit",
-    "subtitle": "Référence de 38h, limites journalières/hebdomadaires et travail de nuit sectoriel réunis dans un seul planning.",
+    "title": "Comment Klacks soulage les entreprises belges",
+    "subtitle": "De la règle spécifique à la CP jusqu'à la documentation multilingue &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "bolt", "title": "Moteur de récupération en cas d'absence", "text": "Si un professionnel qualifié est absent, Klacks trouve immédiatement un remplaçant qualifié &mdash; sans qu'il en résulte une violation imprévue d'une limite de la CP 330." },
-      { "icon": "fact_check", "title": "Suivi des limites de la CP 330", "text": "Klacks suit en continu la référence de 38h ainsi que les limites de 11h/50h sur toute la période de compensation." },
-      { "icon": "calendar_month", "title": "Assistant de remplissage automatique pour des rotations de nuit équitables", "text": "L'assistant de remplissage automatique, basé sur un algorithme génétique, répartit les services de nuit et de week-end de manière équilibrée et dans le respect des conventions sectorielles." },
-      { "icon": "groups", "title": "Planification des affectations selon les qualifications", "text": "Seuls les collaborateurs disposant de la qualification requise sont proposés pour un service." }
+      { "icon": "gavel", "title": "La Commission Paritaire prise en compte automatiquement", "text": "Klacks connaît les suppléments, les limites de temps de travail et les délais de planification de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03." },
+      { "icon": "translate", "title": "Des horaires dans la bonne langue selon le siège d'exploitation", "text": "Klacks crée automatiquement les horaires et le pointage dans la langue du siège d'exploitation concerné &mdash; néerlandais, français ou allemand." },
+      { "icon": "fact_check", "title": "Registre des écarts tenu sans faille", "text": "Chaque modification de planning pour le personnel à temps partiel est documentée automatiquement &mdash; la présomption légale de temps plein ne peut même pas naître." },
+      { "icon": "event_available", "title": "La réforme 2026 respectée automatiquement", "text": "Klacks publie les horaires dans le délai légal de 7 jours ouvrables à l'avance (ou le délai raccourci prévu par CCT) et applique automatiquement la nouvelle durée de travail minimale à temps partiel d'un dixième du temps plein." },
+      { "icon": "schedule", "title": "Heures supplémentaires volontaires clairement séparées", "text": "Les 240 premières des 360 heures supplémentaires volontaires annuelles maximales sont exonérées de supplément, de cotisations sociales et d'impôt &mdash; Klacks tient cette limite à jour automatiquement." },
+      { "icon": "smart_toy", "title": "Klacksy : basé sur des règles, jamais une boîte noire", "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable selon les compétences et règles enregistrées, jamais comme une décision d'IA opaque." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistant IA",
     "title": "Klacksy : l'assistant intégré pour votre équipe",
-    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange de service ou clarifient des conflits de qualification au sein de l'équipe. Un système de compétences et de règles intégré garantit que Klacksy ne fait que des suggestions conformes aux qualifications réelles et aux exigences de la CP 330 des personnes concernées.",
+    "text": "Klacksy est directement intégré à l'interface de Klacks et aide à respecter les règles spécifiques à la CP, les exigences linguistiques par siège d'exploitation et le délai de publication de la réforme 2026. Les collaborateurs et les planificateurs consultent les horaires par chat ou clarifient les disponibilités &mdash; de façon traçable selon les compétences et règles enregistrées, jamais une décision de boîte noire.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Commission Paritaire et exigence linguistique, en un coup d'œil",
+    "text": "Klacks détecte automatiquement quelle Commission Paritaire s'applique à un siège d'exploitation, crée l'horaire dans la bonne langue et documente chaque écart &mdash; sans calcul manuel."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Tester Klacks pour les services belges de soins et de sécurité",
-    "text": "Découvrez dans le Playground comment Klacks respecte automatiquement la CP 330 &mdash; ou exploitez Klacks en on-premise pour une souveraineté totale des données."
+    "title": "Découvrez Klacks dans votre entreprise",
+    "text": "Testez dans le Playground comment Klacks automatise les règles de la Commission Paritaire, les exigences linguistiques et le délai de publication de la réforme 2026 &mdash; gratuitement et sans inscription."
   }
 }

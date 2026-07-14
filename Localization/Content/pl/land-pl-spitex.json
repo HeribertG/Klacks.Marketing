@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks dla opieki domowej w Polsce | Czas dojazdu i przekwalifikowanie przez PIP",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Dla opieki domowej w Polsce",
+    "titleHtml": "Więcej czasu na opiekę, <span class=\"text-secondary\">mniej na planowanie tras.</span>",
+    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; łącznie z prawidłowo rejestrowanym czasem dojazdu między klientami. On-Premise, dzięki czemu dane pacjentów nigdy nie opuszczają Twojej firmy.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Widok osi czasu Klacks do planowania tras w opiece domowej w Polsce",
+    "screenshotLabel": "Oś czasu"
+  },
+  "challenges": {
+    "eyebrow": "Codzienność opieki domowej w Polsce",
+    "title": "Czas dojazdu, umowy i reforma PIP",
+    "items": [
+      { "icon": "alt_route", "title": "Czas dojazdu liczy się jako czas pracy", "text": "Przejazdy między klientami są uznawane za czas pracy, o ile dojazd jest niezbędny do wykonania podstawowego zadania (wyrok SN III PSKP 4/21) &mdash; dopiero przy braku obowiązku stawiennictwa w stałym miejscu pracy czas pracy zaczyna się od pierwszego klienta." },
+      { "icon": "description", "title": "Umowa zlecenie pod presją", "text": "Wiele opiekunek i opiekunów pracuje na podstawie umów cywilnoprawnych (umowa zlecenie) zamiast umowy o pracę &mdash; przy stałych godzinach pracy i podporządkowaniu poleceniom to ryzyko prawne." },
+      { "icon": "gavel", "title": "Reforma PIP od 8 lipca 2026 r.", "text": "PIP będzie mogła w przyszłości przekwalifikować umowę zlecenie na rzeczywistą umowę o pracę, z odwróconym ciężarem dowodu: to zleceniodawca musi udowodnić faktyczne samozatrudnienie, a nie odwrotnie." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża opiekę domową w Polsce",
+    "subtitle": "Od automatycznej trasy po solidną dokumentację &mdash; wszystko działa razem.",
+    "items": [
+      { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa trasy wizyt tak, by dojazdy były krótkie, a przedziały czasowe dotrzymane &mdash; dla samochodu czy pieszo." },
+      { "icon": "schedule", "title": "Czas dojazdu prawidłowo liczony jako czas pracy", "text": "Przejazdy między klientami są automatycznie liczone jako czas pracy &mdash; łącznie z wyjątkiem dotyczącym pierwszego przejazdu przy obowiązku stawiennictwa." },
+      { "icon": "fact_check", "title": "Solidne dowody na wypadek ryzyka przekwalifikowania", "text": "Klacks dokumentuje bez luk czas wizyt, miejsca i polecenia &mdash; ważne dowody, gdyby PIP w ramach odwróconego ciężaru dowodu badała formę umowy." },
+      { "icon": "verified", "title": "Kwalifikacje uwzględniane automatycznie", "text": "Każda wizyta jest przydzielana wyłącznie osobom z odpowiednimi kwalifikacjami &mdash; całkowicie bez ręcznego sprawdzania." },
+      { "icon": "shield_lock", "title": "On-Premise: dane pozostają w firmie", "text": "Klacks działa na Twojej własnej infrastrukturze. Dane pacjentów nie opuszczają Twojej firmy &mdash; również nie trafiają do AI." },
+      { "icon": "smart_toy", "title": "Klacksy planuje na polecenie głosowe", "text": "„Wypełnij trasy na jutro” wystarczy. W razie nieobecności Klacksy od razu proponuje dostępne zastępstwo." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Czas dojazdu, forma umowy, jeden dowód",
+    "text": "Klacks automatycznie zalicza czas przejazdu między klientami do czasu pracy i dokumentuje bez luk miejsca oraz godziny wizyt &mdash; solidna podstawa, gdyby PIP badała formę umowy zlecenie."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Zobacz Klacks w swojej opiece domowej",
+    "text": "Wypróbuj w Playgroundzie, jak Klacks przejmuje czas dojazdu, trasy i dokumentację czasu wizyt &mdash; lub zainstaluj go bezpośrednio na własnej infrastrukturze. Bezpłatnie i bez rejestracji."
+  }
+}

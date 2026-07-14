@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste Rumänien | 12h-Schicht &amp; 24h-Ruhezeit",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste (Pază și Securitate) in Rumänien",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Keine 24/24-Schicht.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der maximalen 12-Stunden-Schicht und der zwingenden 24-Stunden-Ruhezeit danach automatisch berücksichtigt. Unzulässige 24/24-Dauerschichten entstehen so gar nicht erst.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Rumänien",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Rumänien",
+    "title": "12-Stunden-Grenze, 24-Stunden-Ruhezeit und die Pausenfrage",
+    "items": [
+      { "icon": "schedule", "title": "Maximal 12 Stunden, danach 24 Stunden Ruhe", "text": "Nach Art. 115 Codul Muncii ist die Tagesschicht auf 12 Stunden begrenzt, danach ist zwingend mindestens 24 Stunden ununterbrochene Ruhezeit einzuhalten &mdash; 24-Stunden-Dauerschichten (\"24/24\") sind unzulässig." },
+      { "icon": "swap_horiz", "title": "12h/24h- oder 12h-Nacht/48h-frei-Modell", "text": "Per Einzelvertrag ist zusätzlich das Modell \"12h Tag / 24h frei\" bzw. \"12h Nacht / 48h frei\" möglich (Art. 116 Codul Muncii) &mdash; über viele Objekte hinweg von Hand schwer zu steuern." },
+      { "icon": "pause_circle", "title": "Pausenregelung braucht Betriebsvereinbarung", "text": "Ab 6 Stunden Tagesarbeitszeit besteht Anspruch auf Pause (Art. 134); ob sie als bezahlte Arbeitszeit gilt, muss im CCM oder in der internen Arbeitsordnung festgelegt werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks rumänische Sicherheitsdienste entlastet",
+    "subtitle": "Vom besetzten Posten bis zur korrekten Ruhezeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "12-Stunden-Grenze &amp; 24-Stunden-Ruhezeit erzwungen", "text": "Klacks lässt keine Schicht über 12 Stunden zu und plant danach zwingend die 24-Stunden-Ruhezeit mit ein &mdash; 24/24-Dauerschichten sind so ausgeschlossen." },
+      { "icon": "swap_horiz", "title": "12h/24h- und 12h-Nacht/48h-frei-Modelle abgebildet", "text": "Klacks unterstützt beide vertraglich möglichen Schichtmodelle nach Art. 116 Codul Muncii und hält sie über alle Objekte hinweg konsistent." },
+      { "icon": "pause_circle", "title": "Pausenregelung je Betriebsvereinbarung", "text": "Klacks bildet die im CCM oder in der Arbeitsordnung festgelegte Pausenregelung ab &mdash; inklusive der Frage, ob die Pause als Arbeitszeit gilt." },
+      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks teilt Einsätze nur Personal mit gültigem Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Zertifikate, Verfügbarkeit und die 12h/24h-Regel." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "12-Stunden-Schicht, 24-Stunden-Ruhe, ein Plan",
+    "text": "Klacks erzwingt automatisch die 24-Stunden-Ruhezeit nach jeder 12-Stunden-Schicht und verhindert so unzulässige 24/24-Dauerschichten &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Posten, Schichtgrenzen und Ruhezeiten übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks for Norge | Turnus-arbeidstid automatisk redusert til 38 eller 36 timer",
+  "pageTitle": "Klacks for norske bedrifter | Automatisk vaktplanlegging etter Arbeidsmiljøloven",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "For sykehus og omsorgsinstitusjoner i Norge",
-    "titleHtml": "38 eller 36 timer i stedet for 40 &mdash; <span class=\"text-secondary\">automatisk beregnet ut fra belastning.</span>",
-    "subtitle": "Arbeidsmiljøloven (AML § 10-4) reduserer den ordinære ukentlige arbeidstiden fra 40 til 38 timer ved døgnkontinuerlig skift-/turnusarbeid, og til 36 timer ved helkontinuerlig skiftarbeid med regelmessig søndagsarbeid. Fra 1. januar 2026 pålegger en tilføyelse til AML arbeidsgivere generelt å foreta en strukturert vurdering av psykososiale belastninger som rolleuklarhet og tidspress &mdash; relevant også for skiftteam.",
+    "badgeIcon": "shield_lock",
+    "badge": "Åpen kildekode &middot; On-Premise &middot; Norsk personvern",
+    "titleHtml": "Vaktplaner som <span class=\"text-secondary\">automatisk følger Arbeidsmiljøloven.</span>",
+    "subtitle": "Klacks gjenkjenner automatisk hvilket arbeidstidsregime i Arbeidsmiljøloven (AML) som gjelder for hvilken vaktplan, overholder 14-dagers varslingsfristen og kjører On-Premise &mdash; med KI-modellen du selv velger, helt uten den biometriske skylagringen som Datatilsynet ser kritisk på.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks vaktplan-rutenett",
+    "screenshotAlt": "Klacks vaktplan-oversikt for norske bedrifter",
     "screenshotLabel": "Vaktplan"
   },
   "challenges": {
-    "eyebrow": "Hverdagen ved norske klinikker",
-    "title": "38t, 36t eller 40t &mdash; avhengig av turnusbelastning",
+    "eyebrow": "Planleggingshverdagen i norske bedrifter",
+    "title": "AML, skiftregime og Datatilsynet",
     "items": [
-      { "icon": "hourglass_disabled", "title": "38t ved døgnkontinuerlig, 36t ved helkontinuerlig", "text": "Avhengig av omfanget av natt- og søndagsarbeid i turnusen reduseres den ordinære ukentlige arbeidstiden automatisk til 38 eller 36 timer &mdash; en feilklassifisert turnus fører til feil arbeidstidskontoer." },
-      { "icon": "groups", "title": "Psykososialt arbeidsmiljø i fokus siden 2026", "text": "En tilføyelse til AML fra 1. januar 2026 pålegger arbeidsgivere å foreta en strukturert vurdering av emosjonell belastning, rolleklarhet og tidspress &mdash; for skiftteam med natt- og helgevakter innebærer dette en ekstra dokumentasjonsbyrde." },
-      { "icon": "schedule", "title": "Mangel på helsepersonell i kommunene", "text": "Særlig i de nordlige, spredtbygde kommunene mangler det sykepleiere og jordmødre &mdash; korrekt turnusklassifisering må ikke bli en salderingspost til tross for bemanningsknapphet." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datasuverenitet",
-    "title": "Full datasuverenitet: åpen kildekode &amp; on-premise",
-    "text": "Klacks er utviklet for bransjer med strenge sikkerhets- og compliance-krav, der sensitive ansattdata ikke skal forlate egen infrastruktur. Som en løsning med åpen kildekode kan Klacks driftes direkte i eget datasenter eller på sikrede lokale servere &mdash; uten avhengighet av amerikanske skytjenesteleverandører. Dette gjør det enklere å overholde GDPR og kravene fra det norske Datatilsynet i egen regi.",
-    "bullets": [
-      "On-premise-suverenitet: full kontroll over vaktplaner, arbeidstidsdokumentasjon og logger innenfor eget IT-miljø.",
-      "Fri LLM-arkitektur: KI-baserte planleggingsforslag kan også kjøres med lokalt hostede språkmodeller, uten at data sendes til eksterne API-er.",
-      "Reviderbar kildekode: fullt innsynbar kodebase for IT-revisjoner og tillitsvalgte."
+      { "icon": "gavel", "title": "Tre arbeidstidsregimer samtidig", "text": "AML § 10-4 fastsetter en alminnelig arbeidstid på 40 timer/uke, men 38 timer ved døgnkontinuerlig skiftarbeid samt to-skiftarbeid med regelmessig søndags-/helligdagsarbeid, og 36 timer for helkontinuerlig drift med full 3-skiftturnus inkludert helger. For hånd er riktig klassifisering feilutsatt." },
+      { "icon": "event_repeat", "title": "14-dagers frist for vaktplanen", "text": "Etter AML § 10-3 skal vaktplanen ved skiftende arbeidstid drøftes med tillitsvalgte så tidlig som mulig, og senest kunngjøres 14 dager før den trer i kraft." },
+      { "icon": "fingerprint", "title": "Datatilsynet &amp; biometriske data", "text": "Datatilsynet regulerer overvåking av ansatte og biometrisk datainnsamling &mdash; for eksempel fingeravtrykk eller ansiktsgjenkjenning ved stempling &mdash; svært restriktivt, siden samtykke i et avhengighetsforhold mellom arbeidsgiver og arbeidstaker ofte ikke anses som et frivillig rettsgrunnlag (Personopplysningsloven)." }
     ]
   },
   "solutions": {
-    "title": "Slik beregner Klacks automatisk riktig turnus-arbeidstid",
-    "subtitle": "38t, 36t eller 40t korrekt tildelt, i stedet for manuelt klassifisert.",
+    "title": "Slik avlaster Klacks norske bedrifter",
+    "subtitle": "Fra automatisk regimegjenkjenning til egen infrastruktur &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-motor for fravær", "text": "Faller en fagperson ut, finner Klacks umiddelbart en kvalifisert erstatning &mdash; uten at dette fører til feil turnusklassifisering." },
-      { "icon": "fact_check", "title": "Automatisk turnusklassifisering", "text": "Klacks gjenkjenner døgnkontinuerlig- og helkontinuerlig-rotasjoner automatisk og anvender den reduserte ukentlige arbeidstiden korrekt." },
-      { "icon": "calendar_month", "title": "Autofyll-veiviser for turnusrotasjoner", "text": "Den GA-baserte autofyll-assistenten planlegger turnusrotasjoner automatisk med, samtidig som de reduserte arbeidstidsgrensene overholdes." },
-      { "icon": "groups", "title": "Kvalifikasjonsriktig vaktplanlegging", "text": "Kun ansatte med riktig kvalifikasjon foreslås for en vakt." }
+      { "icon": "gavel", "title": "Alle tre arbeidstidsregimer gjenkjent automatisk", "text": "Klacks tilordner hver vaktplan automatisk til riktig AML-regime &mdash; 40, 38 eller 36 timer &mdash; avhengig av om det er døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig turnus." },
+      { "icon": "event_available", "title": "14-dagers frist overholdt automatisk", "text": "Klacks oppretter og publiserer vaktplaner så tidlig at kunngjøringsfristen etter § 10-3 alltid overholdes." },
+      { "icon": "timer", "title": "Overtidsgrenser overvåket", "text": "De lovbestemte grensene etter § 10-6 &mdash; 10 timer/7 dager, 25 timer/4 uker, 200 timer/12 måneder &mdash; samt tillegget på minst 40 % føres automatisk." },
+      { "icon": "route", "title": "Ruter &amp; oppdrag optimert automatisk", "text": "Klacks legger oppdrag og ruter slik at veier blir korte og tidsvinduer overholdes &mdash; kan brukes på tvers av bransjer." },
+      { "icon": "shield_lock", "title": "On-Premise: ingen biometrisk skyregistrering", "text": "Klacks kjører på din egen infrastruktur, helt uten tvang til fingeravtrykk- eller ansiktsgjenkjenningstjenester i skyen &mdash; i tråd med Personopplysningsloven og Datatilsynets retningslinjer." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasert, ingen svart boks", "text": "Den integrerte KI-assistenten Klacksy planlegger via talekommando &mdash; etterprøvbart ut fra lagrede skills og regler, og KI-modellen kan i tillegg hostes lokalt." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-assistent",
     "title": "Klacksy: Den integrerte assistenten for teamet ditt",
-    "text": "Klacksy er ikke en påmontert markedsførings-chatbot, men er integrert direkte i Klacks-grensesnittet. Ansatte og planleggere kan via chat spørre om vakttider, sende forespørsler om skiftbytte eller avklare kvalifikasjonskonflikter i teamet. Et innebygd skill- og regelsystem sørger for at Klacksy kun gir forslag som samsvarer med de faktiske kvalifikasjonene og arbeidstidskravene til de involverte.",
+    "text": "Klacksy er ikke en påmontert markedsførings-chatbot, men er integrert direkte i Klacks-grensesnittet. Ansatte og planleggere kan via chat spørre om vakttider, be om skiftbytte eller avklare tilgjengelighet. Et lagret skill- og regelsystem sørger for at Klacksy gir etterprøvbare forslag &mdash; ingen svart-boks-avgjørelse. For bedrifter med høye personvernkrav etter Datatilsynet kan KI-modellen i tillegg hostes lokalt.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chat-assistent i Klacks-grensesnittet"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Skiftregime og kunngjøringsfrist, ett blikk",
+    "text": "Klacks gjenkjenner automatisk om en vaktplan gjelder som døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig, anvender riktig 40-, 38- eller 36-timersgrense og publiserer planen i god tid før 14-dagersfristen etter § 10-3 &mdash; uten manuell etterberegning."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Test Klacks for norske klinikker",
-    "text": "Opplev i playground hvordan Klacks automatisk reduserer turnus-arbeidstiden til 38 eller 36 timer &mdash; eller drift Klacks on-premise for full datasuverenitet."
+    "title": "Opplev Klacks i din bedrift",
+    "text": "Prøv i Playground hvordan Klacks automatiserer AML-arbeidstidsregimer, kunngjøringsfrister og overtidsgrenser &mdash; On-Premise eller i Playground, gratis og uten registrering."
   }
 }

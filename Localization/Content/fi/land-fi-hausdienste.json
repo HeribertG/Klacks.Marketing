@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks Suomen siivouspalveluille | Kiinteistöpalvelualan TES & lisät",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Suomen kiinteistö- ja siivouspalveluille",
+    "titleHtml": "Jokainen kohde <span class=\"text-secondary\">laskutettuna oikein.</span>",
+    "subtitle": "Klacks jakaa kohteet ja siivoustiimit tehokkaasti &mdash; Kiinteistöpalvelualan TES:n mukaisine vähimmäistuntipalkkoineen ja vuorolisineen sekä 1.8.2026 voimaan tulevine korotuksineen automaattisesti tallennettuina.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksin työvuoroluettelo suomalaisille siivoustiimeille ja kohteille",
+    "screenshotLabel": "Työvuoroluettelo"
+  },
+  "challenges": {
+    "eyebrow": "Siivousalan arki Suomessa",
+    "title": "Vähimmäispalkka, lisät ja TES-korotus 2026",
+    "items": [
+      { "icon": "payments", "title": "Vähimmäistuntipalkka ja korotus 1.8.2026", "text": "Kiinteistöpalvelualan TES määrää yksinkertaisille siivoustehtäville (vaativuusryhmä 2) 13,22 euron vähimmäistuntipalkan; 1.8.2026 alkaen taulukkopalkat nousevat 2,7 % &mdash; käsin työlästä valvoa useiden osa-aikaisten työntekijöiden yli." },
+      { "icon": "schedule", "title": "Kiinteiden vuorolisien soveltaminen oikein", "text": "Iltatyö (klo 18-23) tuo 0,73 €/h lisän, yötyö (klo 23-06) 1,36 €/h, sunnuntaityö lakisääteisesti 100 % &mdash; vaihtelevissa ja jaetuissa työvuoroissa helposti sekaisin." },
+      { "icon": "bedtime", "title": "Lepoaika lyhennetty vuorotyössä", "text": "Vuorokautinen 11 tunnin lepoaika voidaan vuorotyössä lyhentää 9 tuntiin &mdash; menetetty aika on annettava yhdenjaksoisena tasoituksena 14 vuorokauden kuluessa." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa suomalaisten siivouspalveluiden arkea",
+    "subtitle": "Optimoidusta reitistä oikein tallennettuun vähimmäispalkkaan &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "route", "title": "Kohdereitit optimoitu", "text": "Klacks järjestää kohteiden käyntijärjestyksen niin, että matkat pysyvät lyhyinä &mdash; autolle, pyörälle tai jalan kuljettaville." },
+      { "icon": "payments", "title": "Vähimmäispalkka ja TES-korotus tallennettuina", "text": "13,22 euron vähimmäistuntipalkka (vaativuusryhmä 2) on tallennettu, samoin 1.8.2026 voimaan tuleva taulukkopalkkojen 2,7 %:n korotus." },
+      { "icon": "schedule", "title": "Vuorolisät lasketaan automaattisesti", "text": "Klacks kirjaa iltalisän (0,73 €/h), yölisän (1,36 €/h) ja lakisääteisen sunnuntailisän (100 %) automaattisesti &mdash; myös jaetuissa työvuoroissa." },
+      { "icon": "bedtime", "title": "Lepoaika ja 14 vuorokauden tasoitus valvotaan", "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja varmistaa tasoituksen 14 vuorokauden määräajan kuluessa." },
+      { "icon": "verified", "title": "Pätevyydet sopivasti", "text": "Erikoissiivous, koneet, turva-alueet: vain sopivasti pätevä henkilöstö osoitetaan tehtävään." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Suunnittele keskustan kohteet huomisaamulle” riittää &mdash; Klacksy optimoi reitin, tiimin ja lisät." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Ilta-, yö- ja sunnuntaityö, yksi suunnitelma",
+    "text": "Klacks tunnistaa ilta- ja yötyövuorot automaattisesti, kirjaa 0,73 €/h ja 1,36 €/h lisät oikein ja laskuttaa sunnuntaityön lakisääteisellä 100 %:n lisällä &mdash; ilman käsin laskemista."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokeilkaa Klacksia siivousyrityksessänne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa reitit, lisät ja vähimmäispalkan &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

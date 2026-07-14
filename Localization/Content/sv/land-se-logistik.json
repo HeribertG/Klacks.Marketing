@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för logistik i Sverige | Transportavtalet 2025-2027 & vägarbetstidslagen",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "För godstransport i Sverige",
+    "titleHtml": "Rutter, regelverk och <span class=\"text-secondary\">avtal på samma gång.</span>",
+    "subtitle": "Klacks planerar rutter och förare &mdash; med Transportavtalet 2025-2027 och den korrekta uppdelningen av arbetstid och väntetid enligt vägarbetstidslagen automatiskt inlagda. Rutterna optimeras automatiskt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för rutter och förarinsatser i Sverige",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Logistikvardagen i Sverige",
+    "title": "Nytt avtal, väntetid och färdskrivare",
+    "items": [
+      { "icon": "gavel", "title": "Transportavtalet 2025-2027", "text": "Kollektivavtalet mellan Biltrafikens Arbetsgivareförbund och Svenska Transportarbetareförbundet gäller från 1 april 2025 till 31 mars 2027; lastbilsförare har rätt till ett kvalificerat tillägg för obekväm arbetstid på fredagskvällar." },
+      { "icon": "timer", "title": "Väntetid räknas som arbetstid", "text": "Enligt vägarbetstidslagen § 12 räknas även väntetider, då föraren inte fritt kan förfoga över sin tid, in i den sammanlagda arbetstiden &mdash; begränsad till högst 48 timmar per vecka i genomsnitt över 4 månader och högst 60 timmar under en enskild vecka." },
+      { "icon": "fact_check", "title": "Avstämning mot färdskrivardata", "text": "Effektiv arbetstid och ren beredskap måste hållas isär och stämmas av mot färdskrivarens registreringar &mdash; en tidskrävande process för hand." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks svensk logistik",
+    "subtitle": "Från den optimerade rutten till det korrekta avtalet &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Rutter automatiskt optimerade", "text": "Klacks lägger stoppen i den mest logiska ordningen &mdash; korta sträckor, hållna tidsfönster, färre tomkörningar." },
+      { "icon": "gavel", "title": "Transportavtalet automatiskt inlagt", "text": "Avtalsperioden 2025-2027 och det kvalificerade fredagskvällstillägget för obekväm arbetstid är inlagda i Klacks." },
+      { "icon": "timer", "title": "§ 12-gränser övervakas automatiskt", "text": "Klacks övervakar gränserna på 48 timmar per vecka i genomsnitt över 4 månader och högst 60 timmar under en enskild vecka enligt vägarbetstidslagen § 12." },
+      { "icon": "fact_check", "title": "Väntetid korrekt avskild från arbetstid", "text": "Klacks skiljer automatiskt effektiv arbetstid från ren väntetid enligt § 12 och håller avstämningen mot färdskrivardata spårbar." },
+      { "icon": "badge", "title": "Rätt körkortsbehörigheter", "text": "Klacks tilldelar endast förare med rätt behörighet till rutterna &mdash; och varnar för intyg som håller på att gå ut." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera rutterna för imorgon, förare Andersson är sjuk” räcker &mdash; Klacksy räknar om allt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Väntetid och fredagskvällstillägg, en plan",
+    "text": "Klacks känner automatiskt igen att en väntetid mellan två lastplatser räknas in i den sammanlagda arbetstiden enligt § 12, och tillämpar samtidigt det kvalificerade fredagskvällstillägget från Transportavtalet på den berörda rutten &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i er logistikverksamhet",
+    "text": "Prova i Playground hur Klacks tar hand om rutter, avtal och väntetid &mdash; eller installera det direkt på er egen infrastruktur. Gratis och utan registrering."
+  }
+}

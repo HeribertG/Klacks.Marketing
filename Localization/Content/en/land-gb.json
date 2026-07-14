@@ -1,55 +1,50 @@
 {
-  "pageTitle": "Klacks for the UK | Rostering for Private Care and Security",
+  "pageTitle": "Klacks for the UK | Working Time Regulations, UK GDPR & Open Source Workforce Scheduling",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "For private care homes, security providers and facilities management in the UK",
-    "titleHtml": "Opt-out records for the 48-hour week &mdash; <span class=\"text-secondary\">on file, not on request.</span>",
-    "subtitle": "The Working Time Regulations 1998 require a written, freely revocable opt-out for the 48-hour week, which employers must be able to evidence. With high staff turnover and expensive bank and agency shifts, that record-keeping is the real pain point &mdash; Klacks is deliberately built for the private sector, not the NHS.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; UK GDPR compliant",
+    "titleHtml": "Workforce scheduling where <span class=\"text-secondary\">you stay in control.</span>",
+    "subtitle": "Klacks schedules shifts automatically, monitors working time under the Working Time Regulations 1998, and can be controlled through an AI assistant &mdash; on-premise, open source, with the AI model of your choice. That keeps staff data on your own infrastructure, with no biometric time tracking, and in line with UK GDPR and the Data Protection Act 2018.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks shift schedule grid",
-    "screenshotLabel": "Schedule",
-    "screenshotCaption": "Screenshot shown in German — the core app interface ships in German, English, French and Italian; the Klacksy AI assistant additionally understands English."
+    "screenshotAlt": "Klacks schedule overview for businesses in the UK",
+    "screenshotLabel": "Schedule"
   },
   "challenges": {
-    "eyebrow": "The everyday reality of private care, security & FM",
-    "title": "Opt-out paperwork and expensive short-notice cover",
+    "eyebrow": "Everyday scheduling in UK businesses",
+    "title": "Working Time Regulations, rest periods and data protection",
     "items": [
-      { "icon": "fact_check", "title": "Opt-out record-keeping", "text": "Every 48-hour-week opt-out needs to be in writing and evidenced &mdash; with high staff turnover, that's a growing administrative burden." },
-      { "icon": "payments", "title": "Expensive bank and agency shifts", "text": "Short-notice cover through agency staff or internal bank pools is often the costliest option &mdash; better forward planning reduces how often you need it." },
-      { "icon": "groups", "title": "High turnover in the private sector", "text": "Private care homes, security providers and FM teams all deal with staff turnover that makes manual rotas go stale fast." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Data sovereignty",
-    "title": "Full data sovereignty: open source &amp; on-premise",
-    "text": "Klacks was built for sectors with strict security and compliance requirements, where sensitive staff data should never leave your own infrastructure. As an open-source solution, Klacks can run entirely in your own data centre or on secured local servers &mdash; without depending on US cloud providers. That makes UK GDPR and ICO compliance entirely your own responsibility to manage, not a vendor's.",
-    "bullets": [
-      "On-premise sovereignty: full control over rosters, opt-out records and logs within your own IT environment.",
-      "Open LLM architecture: AI-assisted scheduling suggestions can also run on locally hosted language models, so no data ever leaves for external APIs.",
-      "Auditable source code: a fully inspectable codebase for IT audits and internal compliance reviews."
+      { "icon": "gavel", "title": "Keeping the 48-hour week &amp; opt-out under control", "text": "The Working Time Regulations 1998 cap average weekly working time at 48 hours, calculated over a standard 17-week reference period &mdash; extendable by agreement. Staff can opt out in writing, which makes manual tracking even harder." },
+      { "icon": "bedtime", "title": "Guaranteeing daily &amp; weekly rest periods", "text": "The WTR require at least 11 consecutive hours of rest per 24 hours and 24 uninterrupted hours per 7-day period (Reg. 10 &amp; 11) &mdash; error-prone to track by hand across rotating shifts." },
+      { "icon": "fingerprint", "title": "Biometric time tracking as a data protection risk", "text": "In February 2024, the ICO took enforcement action against Serco Leisure after facial recognition and fingerprint clocking systems at 38 sites processed data on over 2,000 employees without a lawful basis &mdash; a warning sign for any time-tracking solution." }
     ]
   },
   "solutions": {
-    "title": "How Klacks handles opt-out records and short-notice cost",
-    "subtitle": "Deliberately built for the private sector &mdash; no NHS ESR integration, so you're up and running fast.",
+    "title": "How Klacks takes the load off UK businesses",
+    "subtitle": "From automatic rest-period control to data-protection-compliant time tracking &mdash; everything works together.",
     "items": [
-      { "icon": "bolt", "title": "Recovery Engine for absences", "text": "If a staff member calls in sick, Klacks instantly finds the best-qualified internal replacement &mdash; before an expensive bank or agency shift becomes necessary." },
-      { "icon": "fact_check", "title": "Opt-out tracking", "text": "Klacks tracks each employee's opt-out status and average weekly hours continuously &mdash; on file whenever HR needs to check." },
-      { "icon": "file_export", "title": "BrightPay-compatible payroll export", "text": "Finished hours, overtime and allowances export directly in a format ready for BrightPay, widely used across the UK and Ireland." },
-      { "icon": "calendar_month", "title": "Autofill wizard for rotations", "text": "The GA-powered autofill assistant plans shift rotations while respecting the working-time limits on file." },
-      { "icon": "groups", "title": "Qualification-aware scheduling", "text": "Only staff with a matching qualification and a valid security or care licence are ever suggested for a shift." }
+      { "icon": "gavel", "title": "48-hour limit &amp; opt-out managed automatically", "text": "Klacks continuously calculates the 17-week average under WTR Reg. 4 and flags anyone working beyond the 48-hour limit under an opt-out &mdash; fully traceable for any inspection." },
+      { "icon": "bedtime", "title": "Rest periods observed automatically", "text": "The 11-hour daily rest and 24-hour weekly rest under WTR Reg. 10 &amp; 11 are factored into every shift plan automatically &mdash; breaches never occur in the first place." },
+      { "icon": "fingerprint", "title": "Time tracking without the biometric risk", "text": "Klacks records working time without needing facial recognition or fingerprints &mdash; no Serco-Leisure-style case, no questions from the ICO." },
+      { "icon": "shield_lock", "title": "On-premise: full data sovereignty", "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; in line with UK GDPR and the Data Protection Act 2018, with no cross-border transfer of staff data at all." },
+      { "icon": "hourglass_top", "title": "Ready for the Employment Rights Act 2025", "text": "The Employment Rights Act 2025 received Royal Assent on 18 December 2025 and will in future govern advance notice periods for shifts and compensation for cancelled shifts &mdash; the exact thresholds have yet to be set. Klacks can easily be extended with new notice-period and compensation rules once they are confirmed." },
+      { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy schedules via voice or chat command &mdash; traceable through defined skills and rules, not an opaque AI decision." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI assistant",
-    "title": "Klacksy: the assistant built into your team's workflow",
-    "text": "Klacksy isn't a bolted-on marketing chatbot &mdash; it's embedded directly in the Klacks interface. Staff and schedulers ask about shifts via chat, request shift swaps, or resolve qualification conflicts within the team. A built-in skills and rules system ensures Klacksy only ever suggests changes that actually match the qualifications and working-time limits of the people involved.",
+    "title": "Klacksy: the assistant built into your team",
+    "text": "Klacksy isn't a bolted-on marketing chatbot &mdash; it's embedded directly in the Klacks interface. Staff and schedulers use chat to check shift times, request swaps, or clarify availability. A built-in skills and rules system ensures Klacksy always makes traceable suggestions &mdash; never a black-box decision. For businesses with strict data protection requirements, the AI model can also be hosted locally.",
     "imageFile": "app-klacksy-de.png",
-    "imageAlt": "Klacksy chat assistant inside the Klacks interface"
+    "imageAlt": "Klacksy chat assistant in the Klacks interface"
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "The 48-hour week and rest periods, at a glance",
+    "text": "Klacks automatically detects when an employee is approaching the 48-hour limit or a rest period under WTR Reg. 10 would fall short, and suggests the adjustment straight away &mdash; no manual recalculating required."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Try Klacks for private UK care and security providers",
-    "text": "Try the Playground to see how Klacks handles opt-out records and short-notice cover &mdash; or run it on-premise for full data sovereignty."
+    "title": "See Klacks in your business",
+    "text": "Try the Playground to see how Klacks automates Working Time Regulations limits, rest periods and data-protection-compliant time tracking &mdash; on-premise or in the Playground, free and with no registration required."
   }
 }

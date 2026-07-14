@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die Kotihoito Finnland | Jaksotyö, 9-Stunden-Ruhe & SOTE",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die ambulante Pflege (kotihoito) in Finnland",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Besuche und Touren in der Periodenarbeit (jaksotyö) der Kotihoito automatisch &mdash; inklusive der verkürzten 9-Stunden-Ruhezeit mit 14-Tage-Ausgleich und der Essenszeit, die während der Arbeit als Arbeitszeit zählt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Kotihoito in Finnland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der finnischen Kotihoito",
+    "title": "Verkürzte Ruhezeit, Essenszeit und viele Besuche",
+    "items": [
+      { "icon": "bedtime", "title": "Tagesruhe auf 9 Stunden verkürzt", "text": "In der Periodenarbeit der Kotihoito (SOTE-Sopimus) lässt sich die tägliche Ruhezeit auf 9 Stunden verkürzen &mdash; die entgangenen Stunden müssen dann innerhalb von 14 Tagen als zusammenhängender Ausgleich gewährt werden. Über viele Schichten hinweg ist das von Hand schwer zu überwachen." },
+      { "icon": "restaurant", "title": "Essenszeit zählt als Arbeitszeit", "text": "Während die reguläre Essenspause normalerweise unbezahlte Freizeit ist, wird die Mahlzeit in der SOTE-Periodenarbeit während der Arbeitszeit eingenommen und als Arbeitszeit gezählt &mdash; ein Detail, das viele Zeiterfassungen übersehen." },
+      { "icon": "route", "title": "Viele Besuche, ein Tag", "text": "Zahlreiche Klientenbesuche über den Tag verteilt, mit engen Zeitfenstern und wechselnden Wegstrecken &mdash; von Hand kaum effizient zu planen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die finnische Kotihoito entlastet",
+    "subtitle": "Von der optimierten Tour bis zur korrekt gezählten Essenszeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Besuchsrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "bedtime", "title": "9-Stunden-Ruhe &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und stellt sicher, dass der Ausgleich innerhalb der gesetzlichen 14-Tage-Frist eingeplant wird." },
+      { "icon": "restaurant", "title": "Essenszeit korrekt als Arbeitszeit gebucht", "text": "Klacks bucht die während der Periodenarbeit eingenommene Mahlzeit als bezahlte Arbeitszeit &mdash; statt sie fälschlich als unbezahlte Pause zu behandeln." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Besuch wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Verkürzte Ruhe, Essenszeit, ein Plan",
+    "text": "Verkürzt eine Schicht die Tagesruhe auf 9 Stunden, plant Klacks den Ausgleich automatisch innerhalb von 14 Tagen ein &mdash; und bucht die Essenszeit während der Periodenarbeit korrekt als Arbeitszeit, statt als unbezahlte Pause."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Kotihoito erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Ruhezeiten und Essenszeit übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

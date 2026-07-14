@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für schwedische Krankenhäuser | Dygnsvila, Jour & MBL-Verhandlungspflicht",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Sjukhus &amp; Kliniken in Schweden",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die 13-Stunden-Grenze und Jourdienste einhalten.</span>",
+    "subtitle": "Klacks erkennt automatisch, wann ein Dienst die reguläre 13-Stunden-Grenze erreicht, wann ein kombinierter Arbeit-Jour-Dienst bis zu 20 Stunden zulässig ist, und markiert wichtigere Planänderungen im Sinne der MBL-Verhandlungspflicht. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für schwedische Krankenhäuser und Kliniken",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Schweden",
+    "title": "Dygnsvila, Jourdienst und Mitbestimmung",
+    "items": [
+      { "icon": "gavel", "title": "MBL-Verhandlungspflicht bei Planänderungen", "text": "Vor einer „wichtigeren Änderung“ der Arbeits- oder Anstellungsbedingungen tarifgebundener Mitarbeitender muss der Arbeitgeber nach dem Mitbestimmungsgesetz (MBL § 11) von sich aus mit der Gewerkschaft verhandeln &mdash; bei umfassenden Schichtplan-Umstellungen leicht zu übersehen." },
+      { "icon": "schedule", "title": "20-Stunden-Dienst mit Jour", "text": "Nach den Allmänna bestämmelser (AB) ist als Ausnahme von der 11-Stunden-dygnsvila ein Arbeitspass aus Arbeit und jour von bis zu 20 Stunden zulässig, sofern mindestens 5 Stunden zusammenhängende jourtid zwischen 22:00 und 08:00 Uhr enthalten sind; die Ausgleichsruhezeit muss zusammenhängend gewährt werden." },
+      { "icon": "timer", "title": "13-Stunden-Grenze für reguläre Dienste", "text": "Im Normalfall ist die Arbeitszeit je 24-Stunden-Periode auf 13 Stunden (Arbeit, jour und Pausen) begrenzt, damit die 11-stündige zusammenhängende dygnsvila möglich bleibt." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks schwedische Kliniken entlastet",
+    "subtitle": "Von der 13-Stunden-Grenze bis zur dokumentierten Planänderung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "MBL-Verhandlungspflicht im Blick", "text": "Klacks markiert wichtigere Änderungen am Schichtmuster deutlich, damit rechtzeitig erkennbar ist, wann die Verhandlungspflicht nach MBL § 11 gegenüber der Gewerkschaft greift." },
+      { "icon": "schedule", "title": "20-Stunden-Jourdienst korrekt geplant", "text": "Klacks erkennt Dienste, die Arbeit und jour kombinieren, und stellt sicher, dass mindestens 5 Stunden zusammenhängende jourtid zwischen 22:00 und 08:00 Uhr sowie die zusammenhängende Ausgleichsruhe eingehalten werden." },
+      { "icon": "timer", "title": "13-Stunden-Grenze automatisch eingehalten", "text": "Klacks begrenzt reguläre Dienste automatisch auf 13 Stunden je 24-Stunden-Periode, damit die 11-stündige dygnsvila gewahrt bleibt." },
+      { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die branchenüblich gestaffelten Zuschlagsstufen der jeweiligen Schicht zu." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und dygnsvila." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Jourdienst und 13-Stunden-Grenze, ein Blick",
+    "text": "Klacks erkennt, ob ein Dienst als kombinierter Arbeit-Jour-Dienst mit mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr geplant ist oder als regulärer Dienst der 13-Stunden-Grenze unterliegt, und schlägt die passende Ausgleichsruhe gleich vor &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Jourdienste, dygnsvila und Zuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

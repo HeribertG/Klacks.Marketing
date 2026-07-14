@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks Suomen sairaaloille | Jaksotyö, ylityöt & vapaapäivät",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Suomen sairaaloille ja klinikoille",
+    "titleHtml": "Työvuorolistat, jotka <span class=\"text-secondary\">toimivat ympäri vuorokauden.</span>",
+    "subtitle": "Klacks suunnittelee SOTE-sairaaloiden osastot ja kierrot jaksotyössä aukottomasti &mdash; oikein porrastetuin ylitöin, vapaapäivin ja viikkolevoin. On-Premise-ratkaisuna, jotta potilastiedot eivät koskaan poistu talostanne.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksin työvuoroluettelo suomalaisille sairaaloille",
+    "screenshotLabel": "Työvuoroluettelo"
+  },
+  "challenges": {
+    "eyebrow": "Klinikan arki Suomessa",
+    "title": "Porrastetut ylityöt, vapaapäivät ja viikkolepo",
+    "items": [
+      { "icon": "gavel", "title": "Ylityökorvausten porrastaminen", "text": "3 viikon jaksossa ensimmäiset 18 ylityötuntia (tunnit 121-138) korvataan 50 %:lla ja jokainen seuraava tunti 100 %:lla &mdash; käsin laskettuna virhealtista useiden kiertojen ja osastojen yli." },
+      { "icon": "event_available", "title": "Vapaapäivät 3 viikon rytmissä", "text": "SOTE-sopimus edellyttää vähintään kahta vapaapäivää viikossa ja tavoittelee kahta peräkkäistä vapaapäivää kolmen viikon sisällä &mdash; kiertävissä työvuoroluetteloissa ympärivuorokautisessa toiminnassa vaikeasti taattavissa." },
+      { "icon": "bedtime", "title": "Viikkolepo lyhennetty, keskimäärin tasoitettu", "text": "Jatkuvassa jaksotyössä viikkolepo voidaan lyhentää enintään 24 tuntiin &mdash; keskimäärin on kuitenkin saavutettava vähintään 35 tuntia 14 vuorokauden ajanjaksolla. Tämän keskiarvon säilyttäminen liukuvien ajanjaksojen yli on käsin lähes mahdotonta." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa suomalaisten sairaaloiden arkea",
+    "subtitle": "Aukottomasta 24/7-kattavuudesta oikein porrastettuun ylityökorvaukseen &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "schedule", "title": "Aukoton 24/7-kattavuus", "text": "Aamu-, ilta- ja yövuorot kaikilla osastoilla &mdash; Klacks näyttää jokaisen aukon heti ja täyttää sen halutessanne automaattisesti." },
+      { "icon": "gavel", "title": "Ylityöt porrastetaan automaattisesti", "text": "Klacks laskee 3 viikon jakson ensimmäiset 18 ylityötuntia 50 %:lla ja jokaisen seuraavan tunnin 100 %:lla &mdash; oikein ja ilman jälkilaskentaa." },
+      { "icon": "event_available", "title": "Vapaapäivät &amp; viikkolepo suunnitellaan automaattisesti", "text": "Klacks varmistaa kaksi vapaapäivää viikossa, suunnittelee mahdollisuuksien mukaan kaksi peräkkäistä vapaapäivää kolmen viikon sisällä ja pitää keskimäärin 35 tunnin viikkolevon hallinnassa 14 vuorokauden ajanjaksolla." },
+      { "icon": "verified", "title": "Pätevyydet ja osastot", "text": "Jokainen vuoro osoitetaan vain sopivasti pätevälle henkilöstölle &mdash; osastoittain, yksiköittäin ja tehtävittäin." },
+      { "icon": "shield_lock", "title": "On-Premise: tiedot pysyvät talossa", "text": "Klacks toimii infrastruktuurissanne. Henkilöstö- ja potilastiedot eivät poistu klinikalta &mdash; eivät edes tekoälyä varten." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Täytä sisätautien yövuorot ensi viikolle” riittää &mdash; Klacksy huomioi pätevyyden, vapaapäivät ja viikkolevon." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Kierto, vapaapäivät ja ylityöt, yksi suunnitelma",
+    "text": "Klacks porrastaa ylityökorvauksen oikein (18 tuntia 50 %:lla, sen jälkeen 100 %), varmistaa kaksi vapaapäivää viikossa ja pitää keskimäärin 35 tunnin viikkolevon hallinnassa 14 vuorokauden ajalta &mdash; ilman käsin laskemista."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Kokeilkaa Klacksia klinikallanne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa kierrot, vapaapäivät ja ylityöt &mdash; tai asentakaa se suoraan taloonne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

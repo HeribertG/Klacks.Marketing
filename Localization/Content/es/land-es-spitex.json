@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks para la Ayuda a Domicilio en España | Tiempos de trayecto & Convenio SAD Madrid",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Para el Servicio de Ayuda a Domicilio (SAD) en España",
+    "titleHtml": "Más tiempo para los cuidados, <span class=\"text-secondary\">menos para planificar rutas.</span>",
+    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; distinguiendo correctamente entre el trayecto no retribuido de ida y vuelta al domicilio y el tiempo de desplazamiento entre clientes, que según el convenio aplicable puede computar como tiempo de trabajo. On-Premise, para que los datos de los pacientes nunca salgan de su empresa.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vista Timeline de Klacks para la planificación de rutas en el Servicio de Ayuda a Domicilio",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "El día a día del SAD español",
+    "title": "Tiempos de trayecto, convenio y la semana de 35 horas",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Distinguir correctamente los tiempos de trayecto",
+        "text": "El trayecto desde el domicilio hasta el primer cliente y el regreso desde el último, según la STS 1305/2024, no se considera en principio tiempo de trabajo &mdash; los trayectos entre clientes, en cambio, sí lo son allí donde el convenio aplicable (como el Convenio SAD de la Comunidad de Madrid) lo regule expresamente así."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Semana de 35 horas en Madrid desde 2026",
+        "text": "El Convenio SAD de la Comunidad de Madrid (vigencia 2024-2028) reduce la jornada semanal máxima a tiempo completo, a partir del 1 de enero de 2026, de 36 a 35 horas efectivas, calculadas en periodo bimensual."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Descansos pese a muchas intervenciones breves",
+        "text": "Incluso con numerosas visitas cortas repartidas a lo largo del día, se aplican los descansos mínimos de 12 horas diarias y 36 horas semanales según los art. 34.3 y 37.1 ET &mdash; algo que con rutas muy ajustadas se pierde de vista fácilmente."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Cómo Klacks alivia la carga del SAD español",
+    "subtitle": "Desde la ruta automática hasta el tiempo de trayecto ajustado al convenio &mdash; todo encaja a la perfección.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Rutas optimizadas automáticamente",
+        "text": "Klacks traza las rutas de intervención de forma que los trayectos sean cortos y se respeten las franjas horarias &mdash; en coche, bicicleta o a pie."
+      },
+      {
+        "icon": "schedule",
+        "title": "Tiempo de trayecto calculado según el convenio",
+        "text": "Klacks computa como tiempo de trabajo los trayectos entre clientes allí donde el convenio aplicable (p. ej. el Convenio SAD Madrid) lo prevé, y deja fuera el primer y el último trayecto conforme a la STS 1305/2024."
+      },
+      {
+        "icon": "event_available",
+        "title": "Límite de 35 horas desde 2026 ya previsto",
+        "text": "Para Madrid, la reducción de la jornada máxima a tiempo completo a 35 horas a partir del 1 de enero de 2026 ya está incorporada &mdash; calculada correctamente en periodo bimensual."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Descansos comprobados automáticamente",
+        "text": "El descanso diario de 12 horas y el descanso semanal de 36 horas según los art. 34.3 y 37.1 ET se respetan automáticamente incluso con rutas muy ajustadas."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: los datos permanecen en su empresa",
+        "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes no salen de su empresa &mdash; ni siquiera hacia la IA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifica por voz",
+        "text": "Basta con decir «Rellena las rutas de mañana». Ante una baja por enfermedad, Klacksy propone de inmediato un sustituto disponible."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "En concreto",
+    "title": "Tiempo de trayecto, convenio, un solo plan",
+    "text": "Klacks computa como tiempo de trabajo el desplazamiento entre clientes allí donde lo prevé el Convenio SAD, deja fuera el trayecto puro de ida y vuelta al domicilio, y controla el límite de 35 horas vigente en Madrid desde 2026 &mdash; sin cálculos manuales."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Descubra Klacks en su servicio de SAD",
+    "text": "Pruebe en el Playground cómo Klacks se encarga de los tiempos de trayecto, las rutas y los límites de jornada específicos del convenio &mdash; o instálelo directamente en su propia infraestructura. Gratis y sin registro."
+  }
+}

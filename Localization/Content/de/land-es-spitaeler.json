@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks für Krankenhäuser in Spanien | Guardias, Ruhezeiten & AEPD",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Spanien",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Guardias lückenlos &mdash; mit automatisch geprüften Ruhezeiten nach dem Estatuto Marco und ohne biometrische Zeiterfassung. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Spanien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Spanien",
+    "title": "Guardias, Ruhezeiten und Grenzen bei der Zeiterfassung",
+    "items": [
+      {
+        "icon": "e911_emergency",
+        "title": "24-Stunden-Guardias korrekt einplanen",
+        "text": "Bereitschaftsdienste (guardias) von bis zu 24 Stunden sind bei organisatorischer Notwendigkeit zulässig &mdash; danach greift die tägliche Mindestruhezeit von 12 Stunden nach dem Estatuto Marco (Ley 55/2003), ohne dass ein höherer Wert gesetzlich fixiert ist."
+      },
+      {
+        "icon": "gavel",
+        "title": "36-Stunden-Wochenruhe über alle Stationen",
+        "text": "Zusätzlich zur täglichen Ruhezeit gilt eine wöchentliche Ruhezeit von 36 Stunden &mdash; über mehrere Stationen und rotierende Guardia-Pläne von Hand kaum lückenlos zu überwachen."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung an der Grenze",
+        "text": "Nach der AEPD-Leitlinie vom 23. November 2023 gilt Zeiterfassung per Fingerabdruck oder Gesichtserkennung als Verarbeitung besonderer Datenkategorien und ist ohne ausdrückliche gesetzliche Grundlage de facto untersagt &mdash; ein Klinikbetrieb braucht eine konforme Alternative."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks spanische Kliniken entlastet",
+    "subtitle": "Von der lückenlosen Guardia bis zur biometriefreien Zeiterfassung &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Lückenlose 24/7-Abdeckung",
+        "text": "Tag-, Nacht- und Guardia-Dienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch."
+      },
+      {
+        "icon": "gavel",
+        "title": "Ruhezeiten nach dem Estatuto Marco automatisch geprüft",
+        "text": "Die 12-Stunden-Mindestruhe nach einer Guardia und die 36-Stunden-Wochenruhe werden in Echtzeit überwacht &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Zeiterfassung ohne Biometrie",
+        "text": "Klacks erfasst Beginn und Ende jeder Schicht ohne Fingerabdruck- oder Gesichtsscan &mdash; im Einklang mit der AEPD-Leitlinie zur biometrischen Zeiterfassung, und ohne dass biometrische Daten je in eine Cloud gelangen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Fülle die Guardias der Notaufnahme für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit."
+      },
+      {
+        "icon": "groups",
+        "title": "Springerpool &amp; Ausfälle",
+        "text": "Fällt jemand aus, zeigt Klacks sofort verfügbare, qualifizierte Springer &mdash; ohne den ganzen Plan umzuwerfen."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Eine Guardia, die passende Ruhezeit, kein Fingerabdruckscanner",
+    "text": "Nach einer 24-Stunden-Guardia plant Klacks automatisch die 12-Stunden-Mindestruhe nach dem Estatuto Marco ein und erfasst Beginn und Ende jeder Schicht direkt im System &mdash; ganz ohne biometrischen Zeiterfassungsscanner und ohne Cloud-Übertragung."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Guardias, Ruhezeiten und biometriefreie Zeiterfassung übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,53 +1,86 @@
 {
-  "pageTitle": "Klacks para España | 12 horas de descanso diario en lugar del mínimo de la UE",
+  "pageTitle": "Klacks para España | Planificación de personal Open Source & Registro de Jornada",
   "hero": {
-    "badgeIcon": "shield_lock",
-    "badge": "Para hospitales y la Atención Primaria en España",
-    "titleHtml": "12 horas de descanso en lugar de 11 &mdash; <span class=\"text-secondary\">y el descanso semanal se debe por separado.</span>",
-    "subtitle": "El artículo 34.3 del Estatuto de los Trabajadores exige un mínimo de 12 horas consecutivas de descanso diario &mdash; un umbral más estricto que el mínimo de 11 horas de la UE. El Tribunal Supremo aclaró en 2026 que estas 12 horas no pueden fusionarse con el descanso semanal de 36 horas: juntas suman 48 horas. Los incumplimientos se consideran infracción grave, con multas de hasta 7.500 euros por trabajador.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Conforme a la normativa española",
+    "titleHtml": "Planificación de personal <span class=\"text-secondary\">con la que usted mantiene el control.</span>",
+    "subtitle": "Klacks planifica turnos automáticamente, comprueba los descansos según el Estatuto de los Trabajadores en tiempo real y documenta el inicio y el fin de cada jornada &mdash; open source, instalable on-premise y con el modelo de IA que usted elija. Así los datos del personal permanecen donde sus responsables de protección de datos quieren que estén: en su propia empresa.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Cuadrante de turnos de Klacks",
+    "screenshotAlt": "Cuadrante de turnos de Klacks para empresas en España",
     "screenshotLabel": "Cuadrante"
   },
   "challenges": {
-    "eyebrow": "El día a día en las clínicas españolas",
-    "title": "El descanso diario de 12h y el descanso semanal de 36h no pueden fusionarse",
+    "eyebrow": "El día a día en las empresas españolas",
+    "title": "Descansos, Registro de Jornada y distribución irregular",
     "items": [
-      { "icon": "hourglass_top", "title": "12 horas de descanso diario", "text": "El art. 34.3 ET exige un mínimo de 12 horas consecutivas de descanso entre dos jornadas laborales &mdash; un umbral superior al estándar de la UE de 11 horas." },
-      { "icon": "gavel", "title": "El descanso semanal de 36h se debe por separado", "text": "El Tribunal Supremo confirmó, en su sentencia de 12 de marzo de 2026, que el descanso semanal de 36 horas se aplica de forma acumulativa al descanso diario de 12 horas &mdash; juntos suman 48 horas, sin posibilidad de compensación entre ambos." },
-      { "icon": "groups", "title": "Cuadrantes sin errores, bajo observación", "text": "En la Atención Primaria, las huelgas persistentes y la frustración del personal hacen que las infracciones de la regla de las 12 horas sean denunciadas de inmediato por los trabajadores y los sindicatos." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Soberanía de datos",
-    "title": "Soberanía total de los datos: código abierto &amp; on-premise",
-    "text": "Klacks fue desarrollado para sectores con estrictos requisitos de seguridad y cumplimiento normativo, en los que los datos sensibles del personal no deben salir de la propia infraestructura. Como solución de código abierto, Klacks puede ejecutarse directamente en su propio centro de datos o en servidores locales seguros &mdash; sin depender de proveedores de nube estadounidenses. Esto facilita el cumplimiento del RGPD y de las exigencias de la Agencia Española de Protección de Datos (AEPD) bajo su propio control.",
-    "bullets": [
-      "Soberanía on-premise: control total sobre los cuadrantes de turnos, los registros de descanso y los protocolos dentro de su propio entorno de TI.",
-      "Arquitectura de LLM libre: las propuestas de planificación asistidas por IA también pueden ejecutarse con modelos de lenguaje alojados localmente, sin que los datos salgan hacia APIs externas.",
-      "Código fuente auditable: base de código totalmente accesible para auditorías de TI y comités de empresa."
+      {
+        "icon": "bedtime",
+        "title": "Descansos según el Estatuto de los Trabajadores",
+        "text": "Mínimo 12 horas de descanso diario entre dos jornadas (art. 34.3 ET) y 1,5 días (36 horas) de descanso semanal, acumulable hasta 14 días (art. 37.1 ET) &mdash; algo casi imposible de controlar a mano con turnos cambiantes."
+      },
+      {
+        "icon": "punch_clock",
+        "title": "Tomarse en serio el Registro de Jornada",
+        "text": "Desde el Real Decreto-ley 8/2019, toda empresa debe registrar el inicio y el fin de la jornada diaria y conservar los registros durante 4 años. El incumplimiento se considera infracción grave (art. 7.5 LISOS), con multas de 751 a 7.500 € por centro de trabajo."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Distribución irregular con un plazo de 5 días",
+        "text": "Si el empresario distribuye la jornada de forma irregular a falta de acuerdo (hasta el 10 % de la jornada anual, art. 34.2 ET), el día afectado debe anunciarse con un preaviso mínimo de 5 días &mdash; un riesgo constante cuando los planes cambian a corto plazo."
+      }
     ]
   },
   "solutions": {
-    "title": "Cómo Klacks cumple por separado el descanso diario de 12h y el descanso semanal de 36h",
-    "subtitle": "Ambos regímenes de descanso se gestionan simultáneamente, sin compensarse nunca entre sí.",
+    "title": "Cómo Klacks alivia la carga de las empresas españolas",
+    "subtitle": "Desde la comprobación automática del descanso hasta su propia infraestructura &mdash; todo encaja a la perfección.",
     "items": [
-      { "icon": "bolt", "title": "Motor de recuperación para bajas imprevistas", "text": "Si un profesional falta, Klacks encuentra de inmediato un sustituto cualificado &mdash; sin que ello genere, de forma no planificada, una infracción de la regla de las 12h o de las 36h." },
-      { "icon": "fact_check", "title": "Seguimiento del descanso conforme al art. 34.3 ET", "text": "Klacks registra de forma separada y continua el descanso diario de 12 horas y el descanso semanal de 36 horas &mdash; disponible ante consultas del personal o de los sindicatos." },
-      { "icon": "calendar_month", "title": "Asistente de autocompletado para cuadrantes sin errores", "text": "El asistente de autocompletado basado en algoritmos genéticos planifica automáticamente los turnos respetando ambos regímenes de descanso." },
-      { "icon": "groups", "title": "Planificación de turnos según cualificación", "text": "Solo se proponen para un turno los trabajadores con la cualificación adecuada." }
+      {
+        "icon": "bedtime",
+        "title": "Descansos supervisados automáticamente",
+        "text": "El descanso diario de 12 horas y el descanso semanal de 36 horas según los art. 34.3 y 37.1 ET se comprueban automáticamente, incluida la acumulación a 14 días &mdash; los incumplimientos ni siquiera llegan a producirse."
+      },
+      {
+        "icon": "punch_clock",
+        "title": "Registro de Jornada integrado",
+        "text": "Klacks documenta el inicio y el fin de cada turno de forma continua &mdash; el registro exigido por ley según el RD-ley 8/2019 forma así parte de la planificación diaria, y no de un paso adicional."
+      },
+      {
+        "icon": "event_available",
+        "title": "Plazo de 5 días en la distribución irregular",
+        "text": "Cuando Klacks planifica una distribución irregular de la jornada, el preaviso legal mínimo de 5 días se respeta y se documenta automáticamente."
+      },
+      {
+        "icon": "gavel",
+        "title": "Límite de 80 horas extraordinarias bajo control",
+        "text": "Klacks supervisa el límite anual de horas extraordinarias según el art. 35 ET y tiene en cuenta automáticamente que los trabajadores nocturnos y los menores de 18 años quedan excluidos de las horas extraordinarias (art. 36.1 ET)."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: soberanía total de los datos",
+        "text": "Klacks funciona en su propia infraestructura, y usted elige el modelo de IA &mdash; también alojado localmente, sin ninguna transferencia de datos del personal al extranjero."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: basado en reglas, sin caja negra",
+        "text": "El asistente de IA integrado Klacksy planifica por comando de voz &mdash; de forma trazable, según las habilidades y reglas definidas, y no como una decisión opaca de la IA."
+      }
     ]
   },
   "klacksy": {
     "eyebrow": "Asistente de IA",
     "title": "Klacksy: el asistente integrado para su equipo",
-    "text": "Klacksy no es un chatbot de marketing añadido, sino que está integrado directamente en la interfaz de Klacks. El personal y los planificadores consultan por chat sus horarios, solicitan intercambios de turno o resuelven conflictos de cualificación en el equipo. Un sistema subyacente de habilidades y reglas garantiza que Klacksy solo haga propuestas acordes con las cualificaciones reales y las normas de descanso de las personas implicadas.",
+    "text": "Klacksy no es un chatbot de marketing añadido, sino que está integrado directamente en la interfaz de Klacks. El personal y los planificadores consultan por chat sus horarios, solicitan intercambios de turno o resuelven dudas de disponibilidad &mdash; fuera del horario laboral permanece en silencio, en línea con el derecho a la desconexión digital (art. 88 Ley Orgánica 3/2018). Un sistema subyacente de habilidades y reglas garantiza que Klacksy haga propuestas trazables. Para empresas con altos requisitos de protección de datos, el modelo de IA también puede alojarse localmente.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Asistente de chat Klacksy en la interfaz de Klacks"
   },
+  "example": {
+    "eyebrow": "En concreto",
+    "title": "Descanso, Registro de Jornada y preaviso, de un vistazo",
+    "text": "Klacks detecta automáticamente cuando un turno planificado incumpliría el descanso de 12 horas, documenta el inicio y el fin de cada servicio para el Registro de Jornada y respeta el plazo de 5 días en la distribución irregular &mdash; sin cálculos manuales."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Pruebe Klacks para clínicas españolas",
-    "text": "Descubra en el Playground cómo Klacks cumple automáticamente el descanso diario de 12h y el descanso semanal de 36h &mdash; o utilice Klacks on-premise para una soberanía total de los datos."
+    "title": "Descubra Klacks en su empresa",
+    "text": "Pruebe en el Playground cómo Klacks automatiza los descansos, el Registro de Jornada y los plazos de preaviso &mdash; on-premise o en el Playground, gratis y sin registro."
   }
 }

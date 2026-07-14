@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Gebäudereinigung in Tschechien | 38,75-Stunden-Soll & Selbst-Planung",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Gebäudereinigung &amp; Hausdienste in Tschechien",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks kennt das reduzierte Wochensoll im Zweischichtbetrieb, hält die 12-Stunden-Obergrenze bei der Selbst-Planung von Teilzeitkräften ein und berechnet den Urlaubsanspruch für dohoda-Kräfte automatisch.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Tschechien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Tschechien",
+    "title": "Reduziertes Soll, Selbst-Planung und dohoda-Urlaub",
+    "items": [
+      { "icon": "schedule", "title": "38,75-Stunden-Soll im Zweischichtbetrieb", "text": "Reinigungsbetriebe mit echtem Früh-/Spätschichtbetrieb (dvousměnný provoz) haben ein reduziertes Wochensoll von 38,75 Stunden (§ 79 Abs. 2 ZP). Wird darüber hinaus geplant, entstehen Überstunden mit mindestens 25 % Zuschlag (§ 114 ZP)." },
+      { "icon": "edit_calendar", "title": "Selbst-Planung für Teilzeitkräfte", "text": "Seit 1.1.2025 können Teilzeit-Reinigungskräfte ihre Schichten per schriftlicher Vereinbarung selbst einteilen (§ 87a ZP) &mdash; die 12-Stunden-Schichtobergrenze (§ 83 ZP) muss dabei trotzdem eingehalten werden." },
+      { "icon": "beach_access", "title": "Urlaubsanspruch für DPP/DPČ-Kräfte", "text": "Seit 1.1.2024 erwerben auch Reinigungskräfte auf dohoda-Basis Urlaub &mdash; berechnet über eine fiktive 20-Stunden-Woche, sofern die dohoda im Kalenderjahr mindestens 4 Wochen dauert und mindestens 80 Stunden geleistet werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Hausdienste in Tschechien entlastet",
+    "subtitle": "Von der optimierten Route bis zum dohoda-Urlaubsanspruch &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "schedule", "title": "38,75-Stunden-Soll automatisch erkannt", "text": "Klacks kennt das reduzierte Wochensoll im Zweischichtbetrieb und berechnet den 25 %-Überstundenzuschlag automatisch, sobald darüber hinaus geplant wird." },
+      { "icon": "edit_calendar", "title": "Selbst-Planung mit 12-Stunden-Deckel", "text": "Auch wenn Teilzeitkräfte ihre Schicht per Vereinbarung selbst wählen, hält Klacks die 12-Stunden-Obergrenze je Schicht automatisch ein." },
+      { "icon": "beach_access", "title": "Urlaubsanspruch für DPP/DPČ berechnet", "text": "Klacks berechnet den Urlaubsanspruch von dohoda-Kräften automatisch über die fiktive 20-Stunden-Woche &mdash; inklusive der Mindestdauer- und Mindeststunden-Voraussetzung." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "38,75-Stunden-Soll, Selbst-Planung, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn im Zweischichtbetrieb über das 38,75-Stunden-Soll hinaus geplant wird, und hält bei der Selbst-Planung von Teilzeitkräften gleichzeitig die 12-Stunden-Grenze je Schicht ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Selbst-Planung und den dohoda-Urlaubsanspruch übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks para o Apoio Domiciliário em Portugal | Tempo de Deslocação, Horários Repartidos & Descanso",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Para o Apoio Domiciliário &amp; cuidados de saúde ao domicílio em Portugal",
+    "titleHtml": "Mais tempo para cuidar, <span class=\"text-secondary\">menos para planear rotas.</span>",
+    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; incluindo o tempo de deslocação entre utentes como tempo de trabalho integral, mesmo na primeira e na última viagem, quando não existe um local de trabalho fixo. On-premise, para que os dados dos utentes nunca saiam das suas instalações.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vista de linha temporal do Klacks para o planeamento de rotas no apoio domiciliário em Portugal",
+    "screenshotLabel": "Linha temporal"
+  },
+  "challenges": {
+    "eyebrow": "O dia a dia no apoio domiciliário português",
+    "title": "Tempo de deslocação, horários repartidos e o descanso de 11 horas",
+    "items": [
+      { "icon": "alt_route", "title": "O tempo de deslocação conta como tempo de trabalho integral", "text": "Para os profissionais de cuidados sem local de trabalho fixo, de acordo com a jurisprudência sobre o art. 197.º do CT, também a primeira viagem de casa até ao primeiro utente e a última viagem de regresso a casa contam como tempo de trabalho &mdash; e não apenas as deslocações entre utentes." },
+      { "icon": "call_split", "title": "Horários repartidos &amp; descanso de 11 horas", "text": "Os horários repartidos têm de ser planeados de forma a respeitar o período de descanso mínimo legal de 11 horas consecutivas em cada período de 24 horas &mdash; um dos principais focos de fiscalização da ACT no setor dos cuidados." },
+      { "icon": "fingerprint", "title": "Registo de ponto para equipas móveis", "text": "Mesmo sem um local de trabalho fixo, o tempo de trabalho tem de ser registado de forma completa e consultável &mdash; algo dificilmente fiável de gerir manualmente com rotas em constante mudança." }
+    ]
+  },
+  "solutions": {
+    "title": "Como o Klacks alivia o apoio domiciliário português",
+    "subtitle": "Da rota automática ao tempo de deslocação correto &mdash; tudo funciona em conjunto.",
+    "items": [
+      { "icon": "route", "title": "Rotas otimizadas automaticamente", "text": "O Klacks define as rotas de intervenção de forma a manter os percursos curtos e a respeitar as janelas horárias &mdash; a pé ou de carro." },
+      { "icon": "schedule", "title": "Tempo de deslocação registado corretamente como tempo de trabalho", "text": "O Klacks contabiliza as deslocações entre utentes como tempo de trabalho &mdash; e, na ausência de um local fixo, também a primeira e a última viagem, tal como exige a interpretação do art. 197.º do CT." },
+      { "icon": "bedtime", "title": "Descanso de 11 horas nos horários repartidos", "text": "O Klacks planeia os horários repartidos de forma a garantir o período de descanso mínimo de 11 horas consecutivas em cada período de 24 horas." },
+      { "icon": "verified", "title": "Qualificações consideradas automaticamente", "text": "Cada intervenção só é atribuída a pessoas com a qualificação adequada &mdash; sem qualquer verificação manual." },
+      { "icon": "shield_lock", "title": "On-premise: os dados ficam nas suas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes não saem das suas instalações &mdash; nem sequer para a IA." },
+      { "icon": "smart_toy", "title": "O Klacksy planeia por comando de voz", "text": "Basta dizer «Preenche as rotas para amanhã». Em caso de falta, o Klacksy sugere de imediato um substituto disponível." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Na prática",
+    "title": "Tempo de deslocação e horário repartido, um único plano",
+    "text": "O Klacks contabiliza automaticamente o tempo de deslocação entre utentes &mdash; e, na ausência de um local fixo, também a primeira e a última viagem &mdash; como tempo de trabalho, e mantém sob controlo o descanso de 11 horas nos horários repartidos &mdash; sem cálculos manuais."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Experimente o Klacks no seu serviço de apoio domiciliário",
+    "text": "Experimente no Playground como o Klacks assume o tempo de deslocação, as rotas e os períodos de descanso &mdash; ou instale-o diretamente na sua própria infraestrutura. Gratuito e sem registo."
+  }
+}

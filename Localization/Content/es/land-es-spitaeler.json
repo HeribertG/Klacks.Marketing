@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks para hospitales en España | Guardias, descansos & AEPD",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Para hospitales &amp; clínicas en España",
+    "titleHtml": "Cuadrantes que <span class=\"text-secondary\">cuadran las 24 horas del día.</span>",
+    "subtitle": "Klacks planifica plantas y guardias sin huecos &mdash; con los descansos comprobados automáticamente según el Estatuto Marco y sin fichaje biométrico. On-Premise, para que los datos de los pacientes nunca salgan de su empresa.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Cuadrante de turnos de Klacks para hospitales y clínicas en España",
+    "screenshotLabel": "Cuadrante"
+  },
+  "challenges": {
+    "eyebrow": "El día a día hospitalario en España",
+    "title": "Guardias, descansos y los límites del fichaje",
+    "items": [
+      {
+        "icon": "e911_emergency",
+        "title": "Planificar correctamente guardias de 24 horas",
+        "text": "Las guardias de hasta 24 horas son admisibles cuando existe necesidad organizativa &mdash; después se aplica el descanso mínimo diario de 12 horas según el Estatuto Marco (Ley 55/2003), sin que la ley fije un valor superior."
+      },
+      {
+        "icon": "gavel",
+        "title": "36 horas de descanso semanal en toda la plantilla",
+        "text": "Además del descanso diario, se aplica un descanso semanal de 36 horas &mdash; algo casi imposible de vigilar a mano entre varias plantas y cuadros de guardia rotativos."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "El fichaje biométrico, en el límite",
+        "text": "Según la directriz de la AEPD del 23 de noviembre de 2023, el fichaje mediante huella dactilar o reconocimiento facial constituye un tratamiento de categorías especiales de datos y está de facto prohibido sin una base legal expresa &mdash; un hospital necesita una alternativa conforme a la normativa."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Cómo Klacks alivia la carga de las clínicas españolas",
+    "subtitle": "Desde la cobertura de guardias sin huecos hasta el fichaje sin biometría &mdash; todo encaja a la perfección.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Cobertura 24/7 sin huecos",
+        "text": "Turnos de día, de noche y de guardia en todas las plantas &mdash; Klacks muestra cada hueco al instante y lo cubre automáticamente si así se desea."
+      },
+      {
+        "icon": "gavel",
+        "title": "Descansos comprobados automáticamente según el Estatuto Marco",
+        "text": "El descanso mínimo de 12 horas tras una guardia y el descanso semanal de 36 horas se supervisan en tiempo real &mdash; los incumplimientos ni siquiera llegan a producirse."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Fichaje sin biometría",
+        "text": "Klacks registra el inicio y el fin de cada turno sin huella dactilar ni reconocimiento facial &mdash; en línea con la directriz de la AEPD sobre fichaje biométrico, y sin que ningún dato biométrico llegue jamás a la nube."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: los datos permanecen en su empresa",
+        "text": "Klacks funciona en su propia infraestructura. Los datos del personal y de los pacientes no salen del hospital &mdash; ni siquiera hacia la IA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifica por voz",
+        "text": "Basta con decir «Rellena las guardias de urgencias para la semana próxima» &mdash; Klacksy tiene en cuenta la cualificación y el descanso."
+      },
+      {
+        "icon": "groups",
+        "title": "Bolsa de refuerzo &amp; bajas",
+        "text": "Si alguien falta, Klacks muestra de inmediato sustitutos cualificados y disponibles &mdash; sin trastocar todo el cuadrante."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "En concreto",
+    "title": "Una guardia, el descanso correspondiente, sin lector de huellas",
+    "text": "Tras una guardia de 24 horas, Klacks planifica automáticamente el descanso mínimo de 12 horas según el Estatuto Marco y registra el inicio y el fin de cada turno directamente en el sistema &mdash; sin ningún lector biométrico de fichaje y sin transmisión a la nube."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Descubra Klacks en su hospital",
+    "text": "Pruebe en el Playground cómo Klacks se encarga de las guardias, los descansos y el fichaje sin biometría &mdash; o instálelo directamente en su empresa. Gratis y sin registro."
+  }
+}

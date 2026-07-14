@@ -6,14 +6,15 @@ namespace Klacks.Marketing.Localization;
 // Icon is the Material Symbols name shown on the card.
 public sealed record CountryIndustry(string Slug, string LabelKey, string TextKey, string Icon);
 
-// Registry of per-country industry sub-pages. Switzerland is the pilot; other
-// countries have no sub-pages yet and therefore resolve to null, which keeps the
-// industry dropdown and the on-page industry grid hidden for them.
+// Registry of per-country industry sub-pages. Every registered country exposes
+// the same five branches (the labels stay localized via the shared "index"
+// content keys); countries that are not registered resolve to null, which keeps
+// the industry dropdown and the on-page industry grid hidden for them.
 public static class CountryIndustries
 {
     public const string SwissCountryPageKey = "land-ch";
 
-    private static readonly IReadOnlyList<CountryIndustry> Swiss = new[]
+    private static readonly IReadOnlyList<CountryIndustry> Standard = new[]
     {
         new CountryIndustry("spitex", "industries.spitex.title", "industries.spitex.text", "home_health"),
         new CountryIndustry("spitaeler", "industries.spitaeler.title", "industries.spitaeler.text", "local_hospital"),
@@ -22,11 +23,18 @@ public static class CountryIndustries
         new CountryIndustry("logistik", "industries.logistik.title", "industries.logistik.text", "local_shipping"),
     };
 
+    private static readonly IReadOnlyList<string> CountriesWithIndustries = new[]
+    {
+        SwissCountryPageKey,
+        "land-be", "land-gb", "land-ie", "land-no", "land-pl", "land-pt", "land-ro",
+        "land-cz", "land-dk", "land-es", "land-fi", "land-gr", "land-nl", "land-se",
+    };
+
     private static readonly Dictionary<string, IReadOnlyList<CountryIndustry>> ByCountry =
-        new(StringComparer.OrdinalIgnoreCase)
-        {
-            [SwissCountryPageKey] = Swiss,
-        };
+        CountriesWithIndustries.ToDictionary(
+            key => key,
+            _ => Standard,
+            StringComparer.OrdinalIgnoreCase);
 
     // Returns the industry sub-pages for a country page key ("land-ch"), or null
     // when that country has no industry sub-pages yet.

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks Suomen vartiointialalle | Jaksotyö, yötyö & TES 2026",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Suomen vartiointialalle",
+    "titleHtml": "Jokainen vartiopaikka miehitetty. <span class=\"text-secondary\">Jokainen yö oikein suunniteltu.</span>",
+    "subtitle": "Klacks miehittää kohteet ja kierrokset vartiointialan jaksotyössä aukottomasti &mdash; yötyön rajat ja Vartiointialan TES:n 1.9.2026 voimaan tulevan korotuksen huomioiden automaattisesti.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajana-näkymä kierroksille ja kohteiden miehitykselle Suomessa",
+    "screenshotLabel": "Aikajana"
+  },
+  "challenges": {
+    "eyebrow": "Vartioinnin arki Suomessa",
+    "title": "Jaksotyö, yötyö ja TES-korotus 2026",
+    "items": [
+      { "icon": "gavel", "title": "Vartioinnin jaksotyötuntien laskeminen", "text": "Vartiointi kuuluu epäsäännöllistä työaikaa vaativiin aloihin: työaika voidaan järjestää enintään 120 tunniksi 3 viikon jaksossa tai enintään 80 tunniksi 2 viikon jaksossa (Työaikalaki 7 §) &mdash; käsin lähes mahdoton hallita useiden kohteiden ja vartijoiden yli." },
+      { "icon": "bedtime", "title": "Yötyön rajojen noudattaminen", "text": "Yötyö (klo 23.00-06.00) on erityisen kuormittavassa työssä rajattu enintään 8 tuntiin 24 tunnin ikkunassa, ja peräkkäisiä yövuoroja saa olla enintään 5, minkä jälkeen on pidettävä vähintään 24 tunnin lepo &mdash; jatkuvissa yökohteissa raja ylittyy helposti." },
+      { "icon": "trending_up", "title": "TES-korotukseen 1.9.2026 varautuminen", "text": "1.9.2026 alkaen Vartiointialan TES:ssä nousevat sekä palkat että ilta-, yö- ja lauantaityön aikalisät 2,5 % &mdash; muutoksen on tultava ajallaan voimaan suunnittelussa." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa suomalaisten vartiointiyritysten arkea",
+    "subtitle": "Miehitetystä vartiopaikasta ajallaan voimaan tulevaan TES-korotukseen &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "shield", "title": "Kohteet ja vartiopaikat aukottomasti", "text": "Jokainen vartiopaikka kaikissa kohteissa &mdash; Klacks näyttää jokaisen avoimen paikan heti ja täyttää sen halutessanne automaattisesti." },
+      { "icon": "gavel", "title": "Jaksotyö lasketaan automaattisesti", "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee porrastetun ylityökorvauksen: ensimmäiset 18 ylityötuntia 50 %:lla, sen jälkeen 100 %:lla." },
+      { "icon": "bedtime", "title": "Yötyön rajoja noudatetaan automaattisesti", "text": "Klacks valvoo kuormittavan yötyön 8 tunnin rajaa ja enintään 5 peräkkäistä yövuoroa &mdash; mukaan lukien sitä seuraavan lepoajan." },
+      { "icon": "paid", "title": "Sunnuntailisä ja TES-korotus 2026 valmiina", "text": "Lakisääteinen 100 %:n lisä sunnuntai- ja pyhäpäivätyöstä (20 §) on tallennettu, samoin 1.9.2026 voimaan tuleva palkkojen ja aikalisien 2,5 %:n korotus." },
+      { "icon": "route", "title": "Kierrokset optimoitu", "text": "Liikkuvissa palveluissa Klacks suunnittelee partiointireitit niin, että matkat pysyvät lyhyinä ja välit pitävät." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Miehitä kohteen Pohjoinen yövuoro” riittää &mdash; Klacksy tarkistaa saatavuuden, jaksotunnit ja yötyön rajat." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Yökohde, jaksotunnit, yksi suunnitelma",
+    "text": "Klacks pitää jatkuvissa yökohteissa 8 tunnin rajan ja enintään 5 peräkkäistä yövuoroa hallinnassa, laskee jaksotunnit oikein ja kirjaa sunnuntailisän automaattisesti &mdash; valmiina 1.9.2026 voimaan tulevaan TES-korotukseen."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokeilkaa Klacksia vartiointiyrityksessänne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa kohteet, jaksotyön ja yötyön rajat &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

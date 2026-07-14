@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks pentru România | Planificarea turelor în ciuda exodului de specialiști",
+  "pageTitle": "Klacks pentru companii din România | Pontaj, repaus &amp; conformitate ITM",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "Pentru firme de pază, facility management și curățenie din România",
-    "titleHtml": "Specialiștii pleacă în străinătate &mdash; <span class=\"text-secondary\">planificarea turelor trebuie totuși să funcționeze.</span>",
-    "subtitle": "Firmele românești de pază, curățenie și facility management pierd constant personal către Germania, Italia și Olanda &mdash; numai în domeniul pazei erau recent peste 800 de posturi neocupate. În același timp, Art. 137 din Codul Muncii impune 48 de ore consecutive de repaus săptămânal. Klacks ajută să planificați fără lacune și conform legii, chiar și cu personal redus.",
+    "badgeIcon": "fact_check",
+    "badge": "Pontaj conform ITM &middot; Automatizarea repausului &middot; România",
+    "titleHtml": "Timp de lucru <span class=\"text-secondary\">demonstrabil fără nicio lacună.</span>",
+    "subtitle": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii (ITM), fără date biometrice. Repausul săptămânal, sporul stabilit de ICCJ și termenele pentru orele suplimentare sunt gestionate automat.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Grila de planificare a turelor Klacks",
-    "screenshotLabel": "Planificarea turelor"
+    "screenshotAlt": "Prezentare generală a planificării turelor Klacks pentru companii din România",
+    "screenshotLabel": "Planificare"
   },
   "challenges": {
-    "eyebrow": "Realitatea din paza, facility management și curățenia din România",
-    "title": "Mai puțin personal, aceeași obligație legală de repaus",
+    "eyebrow": "Realitatea planificării în companiile din România",
+    "title": "Pontaj zilnic, spor de repaus și amenzi mai severe",
     "items": [
-      { "icon": "person_off", "title": "Exod continuu de personal", "text": "Personalul calificat pleacă spre Europa de Vest &mdash; găsirea unui înlocuitor durează, iar echipele rămase trebuie să acopere golurile." },
-      { "icon": "event", "title": "Repausul săptămânal de 48 de ore (Art. 137 Codul Muncii)", "text": "În cazul muncii în ture, pot fi stabilite alte zile de repaus decât sâmbătă/duminică &mdash; dar numai pe o bază contractuală solidă și cu o evidență completă." },
-      { "icon": "fact_check", "title": "Obligația de evidență a timpului de muncă", "text": "Art. 119 din Codul Muncii impune o evidență zilnică a timpului de muncă, ce poate fi prezentată la cerere inspectorilor de muncă &mdash; hârtia este suficientă din punct de vedere legal, dar devine rapid greu de gestionat." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Suveranitatea datelor",
-    "title": "Suveranitate deplină asupra datelor: Open Source &amp; On-Premise",
-    "text": "Klacks a fost dezvoltat pentru domenii cu cerințe stricte de securitate și conformitate, în care datele sensibile ale angajaților nu trebuie să părăsească infrastructura proprie. Fiind o soluție open source, Klacks poate fi operat direct în propriul centru de date sau pe servere locale securizate &mdash; fără dependență de furnizorii de cloud din SUA. Acest lucru facilitează respectarea GDPR și a cerințelor Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP) sub controlul propriu al companiei.",
-    "bullets": [
-      "Suveranitate on-premise: control deplin asupra planurilor de ture, dovezilor timpului de muncă și jurnalelor, în cadrul propriului mediu IT.",
-      "Arhitectură LLM liberă: sugestiile de planificare asistate de AI pot fi generate și cu modele lingvistice găzduite local, fără ca datele să ajungă la API-uri externe.",
-      "Cod sursă auditabil: bază de cod complet accesibilă pentru audituri IT și controale ale inspecției muncii."
+      { "icon": "fact_check", "title": "Pontaj zilnic, rezistent la controlul ITM", "text": "Art. 119 din Codul Muncii impune o evidență zilnică a orei de începere și de încheiere a programului pentru fiecare angajat, prezentabilă la cererea Inspecției Muncii (ITM) &mdash; nu există o formă obligatorie, dar demonstrabilitatea fără nicio lacună este esențială." },
+      { "icon": "gavel", "title": "Amenzi mai severe pentru munca la negru", "text": "Începând cu 1 ianuarie 2026, fiecare caz identificat de muncă la negru costă 40.000 RON per persoană, cumulat până la 1.000.000 RON (Legea nr. 239/2025) &mdash; o documentație completă protejează împotriva acestui risc." },
+      { "icon": "event_repeat", "title": "Repaus de 48 de ore &amp; spor de 150%", "text": "Perioada săptămânală de repaus de 48 de ore consecutive se acordă, de regulă, sâmbăta/duminica (Art. 137). Dacă nu este acordată în mod consecvent, potrivit Deciziei ICCJ nr. 415/2025 se aplică un spor de 150% la salariul de bază &mdash; independent de orele suplimentare." }
     ]
   },
   "solutions": {
-    "title": "Cum planifică Klacks conform legii, chiar și cu mai puțin personal",
-    "subtitle": "Perioadele de repaus și dovezile timpului de muncă sunt gestionate automat.",
+    "title": "Cum ușurează Klacks activitatea companiilor din România",
+    "subtitle": "De la pontajul fără nicio lacună până la sporul de repaus calculat corect &mdash; totul se îmbină perfect.",
     "items": [
-      { "icon": "bolt", "title": "Motor de recuperare pentru absențe", "text": "Dacă un angajat lipsește, Klacks găsește imediat un înlocuitor calificat în echipa rămasă &mdash; esențial atunci când aducerea unui înlocuitor din exterior este aproape imposibilă." },
-      { "icon": "fact_check", "title": "Evidența repausului și a timpului de muncă", "text": "Klacks gestionează digital și fără lacune repausul săptămânal de 48 de ore și evidența zilnică a timpului de muncă, conform Art. 119 din Codul Muncii." },
-      { "icon": "file_export", "title": "Export salarial compatibil WinMentor", "text": "Orele finalizate, orele suplimentare și sporurile pot fi pregătite direct pentru importul în WinMentor, program răspândit în România." },
-      { "icon": "calendar_month", "title": "Asistent Autofill pentru rotații", "text": "Asistentul Autofill bazat pe algoritmi genetici planifică rotațiile de ture astfel încât perioadele legale de repaus să fie respectate chiar și atunci când personalul este limitat." },
-      { "icon": "groups", "title": "Planificare precisă în funcție de calificări", "text": "Pentru o tură sunt propuși doar angajații cu calificarea potrivită și cu atestat valabil de agent de pază." }
+      { "icon": "fact_check", "title": "Pontaj zilnic documentat conform ITM", "text": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii." },
+      { "icon": "fingerprint", "title": "Fără date biometrice", "text": "Klacks înregistrează timpul de lucru fără amprentă digitală sau scanare facială &mdash; ANSPDCP sancționează pontajul biometric atunci când sunt disponibile mijloace mai puțin invazive, precum cardul cu cip sau codul PIN." },
+      { "icon": "event_repeat", "title": "Repaus de 48 de ore &amp; sporul ICCJ sub control", "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și semnalează sporul de 150% datorat separat, conform Deciziei ICCJ nr. 415/2025." },
+      { "icon": "schedule", "title": "Compensarea orelor suplimentare planificată la termen", "text": "Klacks planifică compensarea cu timp liber în cadrul termenului de 90 de zile și indică unde se datorează, în schimb, sporul de cel puțin 75%." },
+      { "icon": "shield_lock", "title": "Documentație împotriva amenzilor pentru muncă la negru", "text": "Dovezile complete reduc riscul amenzilor pentru muncă la negru, majorate din 2026 până la 1.000.000 RON." },
+      { "icon": "smart_toy", "title": "Klacksy: bazat pe reguli, nu o cutie neagră", "text": "Asistentul AI integrat Klacksy planifică prin comandă vocală &mdash; în mod transparent, conform abilităților și regulilor predefinite, nu ca o decizie AI opacă." }
     ]
   },
   "klacksy": {
     "eyebrow": "Asistent AI",
     "title": "Klacksy: asistentul integrat pentru echipa dumneavoastră",
-    "text": "Klacksy nu este un chatbot de marketing atașat ulterior, ci este integrat direct în interfața Klacks. Angajații și planificatorii pot verifica prin chat programul de lucru, pot trimite cereri de schimb de tură sau pot clarifica conflicte de calificare în echipă. Un sistem de abilități și reguli predefinite se asigură că Klacksy face doar sugestii care corespund calificărilor reale și cerințelor de repaus ale celor implicați.",
+    "text": "Klacksy nu este un chatbot de marketing atașat ulterior, ci este integrat direct în interfața Klacks. Angajații și planificatorii pot verifica prin chat programul de lucru sau pot clarifica întrebări legate de repaus. Un sistem de abilități și reguli predefinite se asigură că Klacksy face sugestii transparente &mdash; nicio decizie de tip cutie neagră.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Asistentul de chat Klacksy în interfața Klacks"
   },
+  "example": {
+    "eyebrow": "Concret",
+    "title": "Amânarea repausului și sporul, dintr-o privire",
+    "text": "Klacks indică automat atunci când o amânare a repausului săptămânal declanșează sporul de 150% conform Deciziei ICCJ nr. 415/2025 și îl calculează separat de plata orelor suplimentare."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Testați Klacks pentru firme românești de pază, curățenie și facility management",
-    "text": "Descoperiți în Playground cum planifică Klacks fără lacune, în ciuda exodului de specialiști &mdash; sau operați Klacks On-Premise pentru suveranitate deplină asupra datelor."
+    "title": "Descoperiți Klacks în compania dumneavoastră",
+    "text": "Încercați în Playground cum automatizează Klacks pontajul, sporurile de repaus și termenele pentru orele suplimentare &mdash; gratuit și fără înregistrare."
   }
 }

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks voor logistiek in Nederland | Overurenhervorming & toeslagen 2026",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Voor logistiek &amp; transport in Nederland",
+    "titleHtml": "Routes, toeslagen, termijnen &mdash; <span class=\"text-secondary\">alles onder controle.</span>",
+    "subtitle": "Klacks plant routes en chauffeurs &mdash; met de nieuwe gelijkstelling van overuren voor deeltijd en voltijd vanaf 1-1-2026 en de weekend- en nachttoeslagen van de CAO Beroepsgoederenvervoer automatisch meegenomen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tijdlijnweergave voor routes en chauffeursinzet in Nederland",
+    "screenshotLabel": "Tijdlijn"
+  },
+  "challenges": {
+    "eyebrow": "De logistieke praktijk in Nederland",
+    "title": "Overurenhervorming, weekendtoeslagen en nachtritten",
+    "items": [
+      { "icon": "timer", "title": "Overurenhervorming 2026 voor deeltijdmedewerkers", "text": "Sinds 1-1-2026 gelden voor deeltijdmedewerkers alle uren ma-vr boven de individueel overeengekomen arbeidstijd als overuren &mdash; niet meer pas vanaf het 41e weekuur zoals voorheen." },
+      { "icon": "paid", "title": "Weekend- en feestdagtoeslagen", "text": "Zaterdag wordt vergoed met 150% van het basisuurloon, zon- en feestdagen met 200% &mdash; over wisselende routes heen handmatig foutgevoelig." },
+      { "icon": "nightlight", "title": "Nachttoeslag bij eendaagse ritten", "text": "Voor eendaagse ritten geldt tussen 21:00 en 05:00 uur een toeslag van 19% &mdash; overlapt deze met een ploegentoeslag, dan wordt alleen de hoogste uitbetaald." }
+    ]
+  },
+  "solutions": {
+    "title": "Hoe Klacks de Nederlandse logistiek ontlast",
+    "subtitle": "Van de correcte overurenberekening tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
+    "items": [
+      { "icon": "timer", "title": "Overuren correct berekend volgens de hervorming van 2026", "text": "Klacks berekent overuren voor deeltijd- en voltijdmedewerkers gelijk &mdash; vanaf de individueel overeengekomen arbeidstijd, niet pas vanaf het 41e weekuur." },
+      { "icon": "paid", "title": "Weekend- en feestdagtoeslagen automatisch", "text": "De 150%-zaterdagvergoeding en de 200%-zon-/feestdagvergoeding worden automatisch toegepast." },
+      { "icon": "nightlight", "title": "Nachttoeslag van eendaagse ritten herkend", "text": "Klacks herkent de 19%-toeslag tussen 21:00 en 05:00 uur automatisch en past de samenloopregel correct toe &mdash; alleen de hoogste toeslag wordt uitbetaald." },
+      { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks zet stops in de meest logische volgorde &mdash; korte afstanden, nageleefde tijdvakken, minder lege ritten." },
+      { "icon": "badge", "title": "Rijbewijscategorieën passend", "text": "Klacks wijst routes alleen toe aan chauffeurs met de juiste bevoegdheid &mdash; en waarschuwt voor verlopende bewijzen." },
+      { "icon": "smart_toy", "title": "Klacksy plant via spraak", "text": "„Plan de routes voor morgen, chauffeur Jansen is ziek” volstaat &mdash; Klacksy berekent alles opnieuw, inclusief toeslagen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Zaterdagroute met nachtrit, één plan",
+    "text": "Klacks herkent automatisch dat een zaterdagroute met nachtrit zowel de 150%-weekendtoeslag als de 19%-nachttoeslag raakt, en past de samenloopregel correct toe &mdash; zonder handmatig nawerk."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Ervaar Klacks in uw logistiek bedrijf",
+    "text": "Probeer in de playground hoe Klacks routes, toeslagen en chauffeurs overneemt &mdash; of installeer het direct op uw eigen infrastructuur. Gratis en zonder registratie."
+  }
+}

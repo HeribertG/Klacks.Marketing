@@ -1,54 +1,50 @@
 {
-  "pageTitle": "Klacks für Rumänien | Dienstpläne trotz Fachkräfte-Abwanderung",
+  "pageTitle": "Klacks für Unternehmen in Rumänien | Zeiterfassung, Ruhezeit &amp; ITM-Konformität",
   "hero": {
-    "badgeIcon": "security",
-    "badge": "Für Sicherheitsdienste, Facility Management und Reinigungsunternehmen in Rumänien",
-    "titleHtml": "Fachkräfte wandern ab &mdash; <span class=\"text-secondary\">Ihre Dienstplanung muss trotzdem aufgehen.</span>",
-    "subtitle": "Rumänische Security-, Reinigungs- und Facility-Unternehmen verlieren laufend Personal an Deutschland, Italien und die Niederlande &mdash; allein im Sicherheitsdienst waren zuletzt über 800 Stellen unbesetzt. Gleichzeitig verlangt Art. 137 Codul Muncii 48 zusammenhängende Stunden Wochenruhe. Klacks hilft, mit weniger Personal trotzdem lückenlos und rechtskonform zu planen.",
+    "badgeIcon": "fact_check",
+    "badge": "ITM-konforme Zeiterfassung &middot; Ruhezeit-Automatik &middot; Rumänien",
+    "titleHtml": "Arbeitszeit, die <span class=\"text-secondary\">lückenlos nachweisbar ist.</span>",
+    "subtitle": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion (ITM) vorlegbar, ganz ohne biometrische Daten. Die wöchentliche Ruhezeit, der ICCJ-Zuschlag und die Überstunden-Fristen laufen automatisch mit.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Rumänien",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in rumänischer Security, Facility & Reinigung",
-    "title": "Weniger Personal, gleiche gesetzliche Ruhezeit-Pflicht",
+    "eyebrow": "Der Planungsalltag in rumänischen Betrieben",
+    "title": "Tägliche Zeiterfassung, Ruhezeit-Zuschlag und verschärfte Bußgelder",
     "items": [
-      { "icon": "person_off", "title": "Anhaltende Abwanderung", "text": "Qualifiziertes Personal wandert nach Westeuropa ab &mdash; Ersatz zu finden dauert, die verbleibenden Teams müssen die Lücken auffangen." },
-      { "icon": "event", "title": "48-Stunden-Wochenruhe (Art. 137 Codul Muncii)", "text": "Bei Schichtarbeit dürfen andere Ruhetage als Samstag/Sonntag gelten &mdash; aber nur mit sauberer vertraglicher Grundlage und lückenloser Erfassung." },
-      { "icon": "fact_check", "title": "Arbeitszeit-Dokumentationspflicht", "text": "Art. 119 Codul Muncii verlangt eine tägliche Arbeitszeit-Erfassung, die Arbeitsinspektoren auf Verlangen vorgelegt werden kann &mdash; Papier reicht rechtlich, wird aber schnell unübersichtlich." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der rumänischen Datenschutzbehörde (ANSPDCP) in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Kontrollen der Arbeitsinspektion."
+      { "icon": "fact_check", "title": "Tägliche Zeiterfassung, ITM-fest", "text": "Art. 119 Codul Muncii verlangt eine tägliche Aufzeichnung von Beginn und Ende je Arbeitnehmer, auf Verlangen der Arbeitsinspektion (ITM) vorzulegen &mdash; keine Formvorschrift, aber lückenlose Nachweisbarkeit ist entscheidend." },
+      { "icon": "gavel", "title": "Verschärfte Bußgelder gegen Schwarzarbeit", "text": "Seit 1. Januar 2026 kostet jede identifizierte Schwarzarbeit 40.000 RON pro Person, kumuliert bis zu 1.000.000 RON (Legea nr. 239/2025) &mdash; lückenlose Dokumentation schützt davor." },
+      { "icon": "event_repeat", "title": "48-Stunden-Ruhezeit &amp; 150%-Zuschlag", "text": "Das wöchentliche Ruhefenster von 48 zusammenhängenden Stunden gilt in der Regel Samstag/Sonntag (Art. 137). Wird es nicht konsequent gewährt, greift laut ICCJ-Entscheidung Nr. 415/2025 ein Zuschlag von 150% auf den Grundlohn &mdash; unabhängig von Überstunden." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks mit weniger Personal trotzdem rechtskonform plant",
-    "subtitle": "Ruhezeiten und Arbeitszeit-Nachweise automatisch mitgeführt.",
+    "title": "Wie Klacks rumänische Betriebe entlastet",
+    "subtitle": "Von der lückenlosen Zeiterfassung bis zum korrekten Ruhezeit-Zuschlag &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Kraft aus, findet Klacks sofort einen qualifizierten Ersatz im verbleibenden Team &mdash; wichtig, wenn Nachrücken von aussen kaum möglich ist." },
-      { "icon": "fact_check", "title": "Ruhezeit- und Arbeitszeit-Tracking", "text": "Klacks führt die 48-Stunden-Wochenruhe und die tägliche Arbeitszeit-Dokumentation nach Art. 119 Codul Muncii digital und lückenlos mit." },
-      { "icon": "file_export", "title": "WinMentor-kompatibler Lohnexport", "text": "Fertige Stunden, Überstunden und Zuschläge lassen sich direkt für den in Rumänien verbreiteten WinMentor-Import aufbereiten." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen so, dass auch bei knapper Personaldecke gesetzliche Ruhezeiten eingehalten werden." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und gültigem Wachdienst-Ausweis werden für eine Schicht vorgeschlagen." }
+      { "icon": "fact_check", "title": "Tägliche Zeiterfassung ITM-fest dokumentiert", "text": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion vorlegbar." },
+      { "icon": "fingerprint", "title": "Ohne biometrische Daten", "text": "Klacks erfasst Arbeitszeiten ohne Fingerabdruck oder Gesichtsscan &mdash; die ANSPDCP sanktioniert biometrische Zeiterfassung, wenn mildere Mittel wie Chipkarte oder PIN verfügbar sind." },
+      { "icon": "event_repeat", "title": "48-Stunden-Ruhezeit &amp; ICCJ-Zuschlag im Blick", "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und weist auf den gesondert geschuldeten 150%-Zuschlag nach ICCJ Nr. 415/2025 hin." },
+      { "icon": "schedule", "title": "Überstunden-Ausgleich fristgerecht geplant", "text": "Klacks plant den Freizeitausgleich innerhalb der 90-Tage-Frist mit und zeigt, wo stattdessen der mindestens 75%-Zuschlag fällig wird." },
+      { "icon": "shield_lock", "title": "Dokumentation gegen Schwarzarbeits-Bußgelder", "text": "Lückenlose Nachweise senken das Risiko der seit 2026 auf bis zu 1.000.000 RON verschärften Bußgelder gegen Schwarzarbeit." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Ruhezeit-Fragen. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ruhezeit-Verschiebung und Zuschlag, ein Blick",
+    "text": "Klacks zeigt automatisch, wenn eine Verschiebung der wöchentlichen Ruhezeit den 150%-Zuschlag nach ICCJ Nr. 415/2025 auslöst, und rechnet ihn getrennt von der Überstundenvergütung."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für rumänische Security-, Reinigungs- und Facility-Unternehmen testen",
-    "text": "Erleben Sie im Playground, wie Klacks trotz Fachkräfte-Abwanderung lückenlos plant &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Zeiterfassung, Ruhezeit-Zuschläge und Überstunden-Fristen automatisiert &mdash; kostenlos und ohne Registrierung."
   }
 }

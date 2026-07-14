@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för städtjänster i Finland | Fastighetsservicebranschens kollektivavtal & tillägg",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "För fastighets- &amp; städtjänster (siivous) i Finland",
+    "titleHtml": "Varje objekt <span class=\"text-secondary\">korrekt fakturerat.</span>",
+    "subtitle": "Klacks fördelar objekt och städteam effektivt &mdash; med minimitimlönen och skifttilläggen enligt Fastighetsservicebranschens kollektivavtal (Kiinteistöpalvelualan TES) samt höjningen från 1.8.2026 automatiskt inlagda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemarutnät för finländska städteam och objekt",
+    "screenshotLabel": "Schema"
+  },
+  "challenges": {
+    "eyebrow": "Städvardagen i Finland",
+    "title": "Minimilön, tillägg och kollektivavtalshöjningen 2026",
+    "items": [
+      { "icon": "payments", "title": "Minimitimlön &amp; höjning från 1.8.2026", "text": "Fastighetsservicebranschens kollektivavtal (Kiinteistöpalvelualan TES) föreskriver för enkla städuppgifter (svårighetsgrupp 2, vaativuusryhmä 2) en minimitimlön på 13,22 € ; från 1.8.2026 höjs tabellönerna med 2,7 % &mdash; mödosamt att kontrollera för hand över många deltidsanställda." },
+      { "icon": "schedule", "title": "Tillämpa fasta skifttillägg korrekt", "text": "Kvällsarbete (18-23) ger ett tillägg på 0,73 €/h, nattarbete (23-06) 1,36 €/h, söndagsarbete lagstadgat 100 % &mdash; lätt att blanda ihop vid växlande och delade arbetspass." },
+      { "icon": "bedtime", "title": "Vilotiden förkortad i skiftarbete", "text": "Den dagliga vilotiden på 11 timmar kan i skiftarbete förkortas till 9 timmar &mdash; den förlorade tiden måste kompenseras sammanhängande inom 14 dagar." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks finländska städtjänster",
+    "subtitle": "Från den optimerade rutten till den korrekt inlagda minimilönen &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Objektrutter optimerade", "text": "Klacks lägger ordningen på objekten så att vägarna blir korta &mdash; för bil, cykel eller till fots." },
+      { "icon": "payments", "title": "Minimilön &amp; kollektivavtalshöjning inlagda", "text": "Minimitimlönen på 13,22 € (svårighetsgrupp 2) är inlagd, liksom höjningen av tabellönerna med 2,7 % som gäller från 1.8.2026." },
+      { "icon": "schedule", "title": "Skifttillägg beräknas automatiskt", "text": "Klacks bokför kvällstillägg (0,73 €/h), nattillägg (1,36 €/h) och det lagstadgade söndagstillägget (100 %) automatiskt &mdash; även vid delade arbetspass." },
+      { "icon": "bedtime", "title": "Vilotid &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och säkerställer kompensationen inom 14-dagarsfristen." },
+      { "icon": "verified", "title": "Rätt kompetens", "text": "Specialstädning, maskiner, säkerhetsområden: endast personal med rätt kompetens tilldelas." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera objekten i centrum för i morgon bitti” räcker &mdash; Klacksy optimerar rutt, team och tillägg." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Kvälls-, natt- och söndagsinsats, ett schema",
+    "text": "Klacks känner automatiskt igen kvälls- och nattinsatser, bokför tilläggen på 0,73 €/h och 1,36 €/h korrekt och räknar av söndagsarbete med det lagstadgade 100-procentiga tillägget &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i din städverksamhet",
+    "text": "Testa i Playground hur Klacks tar hand om rutter, tillägg och minimilön &mdash; eller installera det direkt på din egen infrastruktur. Gratis och utan registrering."
+  }
+}

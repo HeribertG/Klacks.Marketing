@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler Portugal | SNS 35h, Private 40h & Bereitschaftsdienst",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Portugal",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">für SNS und private Träger aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste lückenlos &mdash; mit der 35-Stunden-Woche des öffentlichen SNS und der 40-Stunden-Woche privater Träger automatisch als getrennte Basis. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Portugal",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Portugal",
+    "title": "35 vs. 40 Stunden, Ruhezeit und Trägerschaft",
+    "items": [
+      { "icon": "compare_arrows", "title": "SNS: 35 Stunden, Privat: 40 Stunden", "text": "Personal des öffentlichen Gesundheitswesens (SNS) arbeitet nach der Lei Geral do Trabalho em Funções Públicas 35 Stunden/Woche, private Spitäler unterliegen dagegen der regulären 40-Stunden-Woche des Código do Trabalho &mdash; ein Planungssystem muss beide Basen je nach Trägerschaft sauber trennen." },
+      { "icon": "bedtime", "title": "11-Stunden-Ruhezeit nach Bereitschaft", "text": "Nach einem Notaufnahme- oder Bereitschaftsdienst gilt für Ärzt:innen und Pflegepersonal die allgemeine Mindestruhezeit von 11 Stunden vor dem nächsten Einsatz (Art. 214 CT) &mdash; über viele Rotationen hinweg von Hand schwer zu überblicken." },
+      { "icon": "fingerprint", "title": "Registo de ponto über alle Stationen", "text": "Arbeitszeit und Bereitschaft müssen lückenlos erfasst, am Arbeitsplatz einsehbar gemacht und 5 Jahre aufbewahrt werden &mdash; bei durchgehendem Schichtbetrieb ein Kontrollschwerpunkt der ACT." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in Portugal entlastet",
+    "subtitle": "Von der trägerabhängigen Wochenbasis bis zur korrekten Ruhezeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "compare_arrows", "title": "35h- und 40h-Basis automatisch getrennt", "text": "Klacks bildet die 35-Stunden-Woche des SNS und die 40-Stunden-Woche privater Träger parallel ab &mdash; je nach Trägerschaft der Station oder Klinik." },
+      { "icon": "bedtime", "title": "11-Stunden-Ruhezeit nach Bereitschaft", "text": "Klacks plant nach jedem Notaufnahme- oder Bereitschaftsdienst automatisch die gesetzliche Mindestruhezeit von 11 Stunden ein, bevor der nächste Einsatz beginnt." },
+      { "icon": "fingerprint", "title": "Registo de ponto normkonform", "text": "Klacks erfasst Arbeitszeit und Bereitschaft lückenlos, hält sie 5 Jahre bereit und macht sie am Arbeitsplatz sofort einsehbar." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Trägerschaft, Qualifikation und Ruhezeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "SNS-Station und private Klinik, ein System",
+    "text": "Klacks unterscheidet die 35-Stunden-Basis des SNS von der 40-Stunden-Basis privater Träger automatisch, plant die 11-Stunden-Ruhezeit nach jedem Bereitschaftsdienst mit ein und zeigt der Stationsleitung frühzeitig, wo es eng wird."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Trägerschaft, Ruhezeit und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

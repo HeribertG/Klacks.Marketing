@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Krankenhäuser in Tschechien | 24-Stunden-Dienst & 416-Stunden-Grenze",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Tschechien",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant 24-Stunden-Dienste inklusive der zwingenden 22-Stunden-Ruhezeit danach und hält die 416-Stunden-Jahresgrenze für Überstunden im Blick, seit die frühere Sonderausnahme im Gesundheitswesen 2024 weggefallen ist. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Tschechien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Tschechien",
+    "title": "24-Stunden-Dienst, Jahresgrenze und Zuschlag",
+    "items": [
+      { "icon": "e911_emergency", "title": "24-Stunden-Dienst, 22 Stunden Pflichtruhe", "text": "Medizinisches Personal darf einen durchgehenden Dienst von bis zu 24 Stunden leisten (12 Stunden Schicht plus 12 Stunden Überstunden). Unmittelbar danach ist eine ununterbrochene Ruhezeit von mindestens 22 Stunden zwingend (§ 90b ZP, seit 1.8.2024)." },
+      { "icon": "gavel", "title": "416-Stunden-Jahresgrenze statt alter Sonderregel", "text": "Seit 1.1.2024 gilt für Gesundheitspersonal wieder die allgemeine Überstundengrenze: 150 Stunden angeordnete Überstunden pro Jahr, insgesamt maximal 416 Stunden über 26 (per Tarifvertrag bis 52) Wochen &mdash; die frühere Sonderausnahme mit bis zu rund 832 Stunden ist ersatzlos gestrichen." },
+      { "icon": "payments", "title": "Überstundenzuschlag einheitlich 25 %", "text": "Der gesetzliche Überstundenzuschlag beträgt unabhängig von der Uhrzeit oder Stundenzahl im Dienst mindestens 25 % des Durchschnittsverdienstes (§ 114 ZP)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Krankenhäuser in Tschechien entlastet",
+    "subtitle": "Vom 24-Stunden-Dienst bis zur 416-Stunden-Grenze &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "bedtime", "title": "22-Stunden-Ruhezeit automatisch geplant", "text": "Klacks blockiert nach jedem 24-Stunden-Dienst automatisch die zwingende 22-Stunden-Ruhezeit, bevor die nächste Schicht beginnen kann." },
+      { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks verfolgt sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze automatisch &mdash; keine Rückkehr zur alten Sonderregel nötig." },
+      { "icon": "payments", "title": "Überstundenzuschlag korrekt berechnet", "text": "Klacks rechnet den gesetzlichen Überstundenzuschlag von mindestens 25 % einheitlich, unabhängig von Uhrzeit oder Stundenzahl im Dienst." },
+      { "icon": "verified", "title": "Stationen &amp; Qualifikationen abgestimmt", "text": "Jeder Dienst wird nur Personen mit passender Qualifikation zugeteilt &mdash; über alle Stationen hinweg." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle den 24-Stunden-Dienst der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "24-Stunden-Dienst, Ruhezeit, Jahresgrenze",
+    "text": "Nach einem 24-Stunden-Dienst plant Klacks automatisch die 22-Stunden-Ruhezeit ein und behält gleichzeitig die 416-Stunden-Jahresgrenze für Überstunden im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks 24-Stunden-Dienste, Ruhezeiten und die 416-Stunden-Grenze übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

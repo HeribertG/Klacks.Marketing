@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for renholdsbedrifter i Norge | Renholdsoverenskomsten 2026",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "For renholdsbedrifter i Norge",
+    "titleHtml": "Hvert objekt <span class=\"text-secondary\">rent planlagt.</span>",
+    "subtitle": "Klacks fordeler objekter, ruter og skiftende team effektivt &mdash; med de nye minstelønnssatsene fra Renholdsoverenskomsten, trappet etter ansiennitet, og nattillegget automatisk lagt inn.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks vaktplan-rutenett for renholdsteam og objekter i Norge",
+    "screenshotLabel": "Vaktplan"
+  },
+  "challenges": {
+    "eyebrow": "Renholdshverdagen i Norge",
+    "title": "Mange objekter, nye lønninger, nattarbeid",
+    "items": [
+      { "icon": "pin_drop", "title": "Mange objekter, mange veier", "text": "Team kjører fra objekt til objekt. Dårlige ruter koster tid, kilometer og penger hver eneste dag." },
+      { "icon": "payments", "title": "Nye minstelønninger etter ansiennitet", "text": "Etter en tre uker lang streik (9. til 31. mai 2026) gjelder fra 1. juni 2026 nye minstelønnssatser i den allmenngjorte Renholdsoverenskomsten, trappet etter ansiennitet: 247,29 NOK (0-2 år), 250,66 NOK (2-4 år), 257,39 NOK (4-10 år) og 261,24 NOK (over 10 år) &mdash; garantitilleggene gjaldt allerede fra 1. mai 2026." },
+      { "icon": "bedtime", "title": "Beregne nattillegget korrekt", "text": "For arbeid mellom kl. 21:00 og 06:00 kommer det et nattillegg på minst 29 NOK/time i tillegg &mdash; på toppen av den gjeldende minstelønnen etter ansiennitet." }
+    ]
+  },
+  "solutions": {
+    "title": "Slik avlaster Klacks norske renholdsbedrifter",
+    "subtitle": "Fra den optimerte ruten til riktig lønn etter ansiennitet &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "route", "title": "Objektruter optimert", "text": "Klacks legger rekkefølgen på objektene slik at veiene forblir korte &mdash; med bil, sykkel eller til fots." },
+      { "icon": "groups", "title": "Team fordelt fleksibelt", "text": "Skiftende bemanning og fravær: Klacks holder oversikten og foreslår passende fordeling." },
+      { "icon": "payments", "title": "Minstelønninger etter ansiennitet lagt inn automatisk", "text": "De fire ansiennitetstrinnene i Renholdsoverenskomsten fra 1. juni 2026 &mdash; 247,29, 250,66, 257,39 og 261,24 NOK &mdash; er lagt inn sammen med garantitilleggene fra 1. mai 2026." },
+      { "icon": "bedtime", "title": "Nattillegg lagt til automatisk", "text": "For oppdrag mellom kl. 21:00 og 06:00 legger Klacks automatisk til nattillegget på minst 29 NOK/time på minstelønnen." },
+      { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Planlegg objektene i bydel Sentrum for i morgen tidlig» er nok &mdash; Klacksy optimerer rute og team." },
+      { "icon": "event_busy", "title": "Fravær raskt dekket", "text": "Faller noen fra, viser Klacks straks hvem som er tilgjengelig og hvilken rute som passer best." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ansiennitet, nattillegg, én lønn",
+    "text": "Klacks kjenner den gjeldende ansienniteten for hver renholder, og legger ved et nattoppdrag mellom kl. 21:00 og 06:00 automatisk til tillegget på minst 29 NOK/time på riktig minstelønnssats i Renholdsoverenskomsten &mdash; uten manuell etterberegning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Opplev Klacks i din renholdsbedrift",
+    "text": "Prøv i Playground hvordan Klacks overtar ruter, team og lønninger &mdash; eller installer det direkte på din egen infrastruktur. Gratis og uten registrering."
+  }
+}

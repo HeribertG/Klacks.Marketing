@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Ziekenhuizen in den Niederlanden | Bereikbaarheidsdienst & Oproepvrije Dagen",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Ziekenhuizen &amp; Kliniken in den Niederlanden",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Bereikbaarheidsdiensten lückenlos &mdash; mit der 8-Stunden-Ruhezeit nach nächtlichem Einsatz und den oproepvrije dagen der CAO Ziekenhuizen automatisch berücksichtigt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für niederländische Ziekenhuizen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in den Niederlanden",
+    "title": "Bereikbaarheidsdienst, oproepvrije dagen und 24/7-Abdeckung",
+    "items": [
+      { "icon": "call", "title": "8 Stunden Ruhe nach nächtlichem Bereikbaarheidsdienst", "text": "Wird während einer Bereikbaarheidsdienst zwischen 00:00 und 06:00 Uhr tatsächlich gearbeitet, besteht im direkten Anschluss Anspruch auf mindestens 8 Stunden ununterbrochene Ruhezeit &mdash; CAO Ziekenhuizen 2025-2027." },
+      { "icon": "event_busy", "title": "Oproepvrije dagen einhalten", "text": "Mindestens 14 rufbereitschaftsfreie Tage in jedem rollierenden 28-Tage-Fenster, dazu mindestens zwei freie Wochenenden &mdash; über viele Rotationen von Hand kaum zu überblicken." },
+      { "icon": "schedule", "title": "24/7-Abdeckung über alle Stationen", "text": "Tag-, Spät- und Nachtdienste müssen über jede Station lückenlos besetzt sein &mdash; bei gleichzeitig steigenden Ruhezeit-Anforderungen eine ständige Gratwanderung." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks niederländische Ziekenhuizen entlastet",
+    "subtitle": "Von der korrekten Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "call", "title": "8-Stunden-Ruhezeit automatisch eingeplant", "text": "Wird während einer Bereikbaarheidsdienst nachts tatsächlich gearbeitet, plant Klacks die anschliessende 8-Stunden-Ruhezeit automatisch mit ein." },
+      { "icon": "event_available", "title": "Oproepvrije dagen automatisch bewacht", "text": "Klacks kontrolliert laufend, ob die 14 rufbereitschaftsfreien Tage je 28-Tage-Fenster und die zwei freien Wochenenden eingehalten werden." },
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Interne Geneeskunde für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Bereikbaarheidsdienst, Ruhezeit, ein Plan",
+    "text": "Wird eine Fachkraft während einer nächtlichen Bereikbaarheidsdienst tatsächlich eingesetzt, plant Klacks die anschliessenden 8 Stunden Ruhezeit automatisch mit ein und behält gleichzeitig die oproepvrije dagen im 28-Tage-Fenster im Blick."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Ziekenhuis erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Bereikbaarheidsdiensten, Ruhezeiten und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

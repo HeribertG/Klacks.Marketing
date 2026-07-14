@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks pro úklid budov v Česku | Týdenní norma 38,75 hodiny & samoplánování",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Pro úklid budov &amp; domovní služby v Česku",
+    "titleHtml": "Každý objekt <span class=\"text-secondary\">čistě naplánovaný.</span>",
+    "subtitle": "Klacks zná sníženou týdenní pracovní dobu v dvousměnném provozu, dodržuje 12hodinový limit délky směny při samoplánování směn u zaměstnanců na částečný úvazek a automaticky počítá nárok na dovolenou pro pracovníky na dohodu.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Mřížka rozpisu směn Klacks pro úklidové týmy a objekty v Česku",
+    "screenshotLabel": "Rozpis směn"
+  },
+  "challenges": {
+    "eyebrow": "Každodenní provoz v úklidu v Česku",
+    "title": "Snížená norma, samoplánování a dovolená na dohodu",
+    "items": [
+      { "icon": "schedule", "title": "Norma 38,75 hodiny v dvousměnném provozu", "text": "Úklidové firmy se skutečným ranním/odpoledním směnným provozem (dvousměnný provoz) mají sníženou týdenní pracovní dobu 38,75 hodiny (§ 79 odst. 2 ZP). Naplánuje-li se nad tento rámec, vznikají přesčasy s příplatkem nejméně 25 % (§ 114 ZP)." },
+      { "icon": "edit_calendar", "title": "Samoplánování pro zaměstnance na částečný úvazek", "text": "Od 1. 1. 2025 si mohou úklidoví pracovníci na částečný úvazek na základě písemné dohody sami rozvrhovat směny (§ 87a ZP) &mdash; přesto musí být dodržen 12hodinový limit délky směny (§ 83 ZP)." },
+      { "icon": "beach_access", "title": "Nárok na dovolenou pro pracovníky na DPP/DPČ", "text": "Od 1. 1. 2024 získávají nárok na dovolenou i úklidoví pracovníci na dohodu &mdash; počítá se přes fiktivní dvacetihodinový týden, pokud dohoda trvá v kalendářním roce nejméně 4 týdny a je odpracováno nejméně 80 hodin." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks ulehčuje práci domovním službám v Česku",
+    "subtitle": "Od optimalizované trasy až po nárok na dovolenou na dohodu &mdash; vše do sebe zapadá.",
+    "items": [
+      { "icon": "route", "title": "Optimalizované trasy mezi objekty", "text": "Klacks stanoví pořadí objektů tak, aby cesty zůstaly krátké &mdash; pro auto, kolo i pěší chůzi." },
+      { "icon": "schedule", "title": "Norma 38,75 hodiny rozpoznána automaticky", "text": "Klacks zná sníženou týdenní pracovní dobu v dvousměnném provozu a automaticky počítá 25% příplatek za přesčasy, jakmile se naplánuje nad tento rámec." },
+      { "icon": "edit_calendar", "title": "Samoplánování s 12hodinovým stropem", "text": "I když si zaměstnanci na částečný úvazek volí směnu sami na základě dohody, Klacks automaticky dodržuje 12hodinový limit na směnu." },
+      { "icon": "beach_access", "title": "Nárok na dovolenou pro DPP/DPČ vypočítán", "text": "Klacks automaticky počítá nárok na dovolenou pracovníků na dohodu přes fiktivní dvacetihodinový týden &mdash; včetně podmínky minimální doby trvání a minimálního počtu hodin." },
+      { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplánuj objekty v centrálním obvodu na zítřejší ráno“ stačí &mdash; Klacksy optimalizuje trasu i tým." },
+      { "icon": "event_busy", "title": "Výpadky rychle vyřešené", "text": "Když někdo vypadne, Klacks okamžitě ukáže, kdo je dostupný a která trasa se hodí nejlépe." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "Norma 38,75 hodiny, samoplánování, jeden pohled",
+    "text": "Klacks automaticky rozpozná, když se v dvousměnném provozu naplánuje nad normu 38,75 hodiny, a zároveň při samoplánování zaměstnanců na částečný úvazek dodržuje 12hodinový limit na směnu &mdash; bez ručního přepočítávání."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Zažijte Klacks ve své úklidové firmě",
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks převezme trasy, samoplánování i nárok na dovolenou na dohodu &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Zdarma a bez registrace."
+  }
+}

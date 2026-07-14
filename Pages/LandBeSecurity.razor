@@ -1,0 +1,10 @@
+@page "/land-be/security"
+@page "/{culture}/land-be/security"
+
+<IndustryPageTemplate PageKey="land-be-security" RoutePath="land-be/security" Culture="@ResolvedCulture" />
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+}

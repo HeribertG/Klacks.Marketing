@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks til rengøringsvirksomheder i Danmark | OK26-overenskomstskift &amp; variabel arbejdstid",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Til rengørings- &amp; serviceassistenter i Danmark",
+    "titleHtml": "Hvert objekt <span class=\"text-secondary\">rent planlagt.</span>",
+    "subtitle": "Klacks fordeler objekter, teams og tilkald effektivt &mdash; og omstiller automatisk overenskomsttilknytningen, når FOA pr. 1. april 2026 bliver eneste overenskomstpart for ufaglærte rengøringsmedarbejdere i den kommunale sektor.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks vagtplan-gitter til danske rengøringsteams og objekter",
+    "screenshotLabel": "Vagtplan"
+  },
+  "challenges": {
+    "eyebrow": "Rengørings-hverdagen i Danmark",
+    "title": "Overenskomstskift, variabel arbejdstid og tilkald",
+    "items": [
+      { "icon": "swap_horiz", "title": "Overenskomstskift pr. 1. april 2026", "text": "I den kommunale sektor udtræder 3F pr. 1. april 2026 af overenskomsten for ufaglærte rengørings- og køkkenmedarbejdere, og FOA bliver eneste overenskomstpart &mdash; tilknytning og tillægsprofiler skal omstilles tilsvarende." },
+      { "icon": "schedule", "title": "Variabel ugentlig arbejdstid mellem 15 og 37 timer", "text": "Ved variabel arbejdstid gælder et gennemsnit på mindst 15 og højst 37 timer over mindst 2 uger &mdash; svært at holde styr på manuelt på tværs af skiftende teams." },
+      { "icon": "call", "title": "Mindsteløn pr. tilkald", "text": "Springer nogen til med kort varsel for en tilkaldevagt, skal der mindst betales 2 timers løn &mdash; også selvom selve indsatsen varer kortere." }
+    ]
+  },
+  "solutions": {
+    "title": "Sådan aflaster Klacks danske rengøringsvirksomheder",
+    "subtitle": "Fra den optimerede objekt-rute til det korrekt aflønnede tilkald &mdash; alt spiller sammen.",
+    "items": [
+      { "icon": "route", "title": "Objekt-ruter optimeret", "text": "Klacks lægger rækkefølgen af objekter, så vejene forbliver korte &mdash; til bil, cykel eller til fods." },
+      { "icon": "swap_horiz", "title": "Overenskomstskift automatisk opdateret", "text": "Klacks omstiller automatisk overenskomsttilknytningen til FOA pr. 1. april 2026, så snart 3F udtræder af den kommunale overenskomst." },
+      { "icon": "schedule", "title": "15-37-timers-gennemsnit overvåget", "text": "Klacks holder styr på gennemsnittet af den variable ugentlige arbejdstid over den foreskrevne periode og advarer ved over- eller underskridelse." },
+      { "icon": "call", "title": "Tilkald korrekt aflønnet", "text": "Klacks beregner automatisk mindst 2-timers-minimumsvederlaget for hver tilkaldevagt." },
+      { "icon": "groups", "title": "Teams fordelt fleksibelt", "text": "Skiftende bemandinger, afløsere og ferie: Klacks holder overblikket og foreslår passende fordelinger." },
+      { "icon": "smart_toy", "title": "Klacksy planlægger via tale", "text": "\"Planlæg objekterne i centrum for i morgen tidlig\" er nok &mdash; Klacksy optimerer rute, team og tilkald-vederlag." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Tilkald og ugegennemsnit, én plan",
+    "text": "Klacks beregner ved et kortfristet tilkald automatisk 2-timers-minimumsvederlaget og holder samtidig styr på 15-37-timers-gennemsnittet for den variable arbejdstid &mdash; uden manuel efterregning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Oplev Klacks i jeres rengøringsvirksomhed",
+    "text": "Prøv i playgrounden, hvordan Klacks overtager ruter, teams og tilkald &mdash; eller installer det direkte på jeres egen infrastruktur. Gratis og uden registrering."
+  }
+}

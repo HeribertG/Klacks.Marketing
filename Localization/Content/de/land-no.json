@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks für Norwegen | Turnus-Arbeitszeit automatisch auf 38 oder 36 Stunden reduziert",
+  "pageTitle": "Klacks für norwegische Unternehmen | Dienstplan-Automatisierung nach der Arbeidsmiljøloven",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Norwegen",
-    "titleHtml": "38 oder 36 Stunden statt 40 &mdash; <span class=\"text-secondary\">automatisch nach Belastung berechnet.</span>",
-    "subtitle": "Das Arbeidsmiljøloven (AML § 10-4) reduziert die reguläre Wochenarbeitszeit von 40 auf 38 Stunden bei durchgehendem Schicht-/Turnusdienst (døgnkontinuerlig) bzw. auf 36 Stunden bei durchgehendem Dienst mit regelmässiger Sonntagsarbeit (helkontinuerlig). Seit dem 1. Januar 2026 verpflichtet eine AML-Ergänzung Arbeitgeber zudem generell, psychosoziale Belastungen wie Rollenunklarheit und Zeitdruck strukturiert zu prüfen &mdash; auch in Schichtteams relevant.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; Norwegischer Datenschutz",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die Arbeidsmiljøloven automatisch einhalten.</span>",
+    "subtitle": "Klacks erkennt automatisch, welches Arbeitszeit-Regime der Arbeidsmiljøloven (AML) für welchen Schichtplan gilt, hält die 14-Tage-Bekanntgabefrist ein und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für norwegische Unternehmen",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in norwegischen Kliniken",
-    "title": "38h, 36h oder 40h &mdash; je nach Turnus-Belastung",
+    "eyebrow": "Der Planungsalltag in norwegischen Betrieben",
+    "title": "AML, Schichtregime und Datatilsynet",
     "items": [
-      { "icon": "hourglass_disabled", "title": "38h bei døgnkontinuerlig, 36h bei helkontinuerlig", "text": "Je nach Ausmass an Nacht- und Sonntagsarbeit im Turnus reduziert sich die reguläre Wochenarbeitszeit automatisch auf 38 oder 36 Stunden &mdash; ein falsch klassifizierter Turnus führt zu falschen Arbeitszeitkonten." },
-      { "icon": "groups", "title": "Psychosoziales Arbeitsumfeld seit 2026 im Fokus", "text": "Eine AML-Ergänzung zum 1. Januar 2026 verpflichtet Arbeitgeber, emotionale Belastung, Rollenklarheit und Zeitdruck strukturiert zu prüfen &mdash; für Schichtteams mit Nacht- und Wochenenddienst ein zusätzlicher Dokumentationsaufwand." },
-      { "icon": "schedule", "title": "Mangel an Pflegekräften in den kommuner", "text": "Besonders in den nördlichen, ländlichen Gemeinden fehlen Krankenschwestern und Hebammen &mdash; die korrekte Turnus-Klassifizierung darf trotz Personalknappheit nicht zur Nebensache werden." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der norwegischen Datenschutzbehörde Datatilsynet in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Tillitsvalgte."
+      { "icon": "gavel", "title": "Drei Arbeitszeit-Regime gleichzeitig", "text": "AML § 10-4 kennt eine Regelarbeitszeit von 40 Stunden/Woche, aber 38 Stunden für Rund-um-die-Uhr-Schichtdienst (døgnkontinuerlig) sowie Zweischichtarbeit mit regelmässiger Sonn-/Feiertagsarbeit, und 36 Stunden für den volldurchgehenden 3-Schicht-Betrieb inkl. Wochenenden (helkontinuerlig). Von Hand ist die richtige Zuordnung fehleranfällig." },
+      { "icon": "event_repeat", "title": "14-Tage-Frist für den Dienstplan", "text": "Nach AML § 10-3 muss der Dienstplan bei wechselnden Arbeitszeiten so früh wie möglich mit den Vertrauensleuten besprochen und spätestens 14 Tage vor Inkrafttreten bekanntgegeben werden." },
+      { "icon": "fingerprint", "title": "Datatilsynet &amp; biometrische Daten", "text": "Datatilsynet reguliert Mitarbeiterüberwachung und biometrische Datenerfassung &mdash; etwa Fingerabdruck oder Gesichtserkennung beim Stempeln &mdash; sehr restriktiv, da Einwilligung im Abhängigkeitsverhältnis zwischen Arbeitgeber und Arbeitnehmer oft nicht als freiwillige Rechtsgrundlage gilt (Personopplysningsloven)." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die richtige Turnus-Arbeitszeit automatisch berechnet",
-    "subtitle": "38h, 36h oder 40h korrekt zugeordnet, statt manuell klassifiziert.",
+    "title": "Wie Klacks norwegische Betriebe entlastet",
+    "subtitle": "Von der automatischen Regime-Erkennung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus eine falsche Turnus-Einstufung entsteht." },
-      { "icon": "fact_check", "title": "Automatische Turnus-Klassifizierung", "text": "Klacks erkennt døgnkontinuerlig- und helkontinuerlig-Rotationen automatisch und wendet die reduzierte Wochenarbeitszeit korrekt an." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Turnusrotationen", "text": "Der GA-gestützte Autofill-Assistent plant Turnusrotationen unter Einhaltung der reduzierten Arbeitszeitgrenzen automatisch mit ein." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "gavel", "title": "Alle drei Arbeitszeit-Regime automatisch erkannt", "text": "Klacks ordnet jeden Schichtplan automatisch dem passenden AML-Regime zu &mdash; 40, 38 oder 36 Stunden &mdash; je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt." },
+      { "icon": "event_available", "title": "14-Tage-Frist automatisch eingehalten", "text": "Klacks erstellt und veröffentlicht Dienstpläne so rechtzeitig, dass die Bekanntgabefrist nach § 10-3 stets eingehalten wird." },
+      { "icon": "timer", "title": "Überstundengrenzen überwacht", "text": "Die gesetzlichen Grenzen nach § 10-6 &mdash; 10 Stunden/7 Tage, 25 Stunden/4 Wochen, 200 Stunden/12 Monate &mdash; sowie der Zuschlag von mindestens 40 % werden automatisch mitgeführt." },
+      { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
+      { "icon": "shield_lock", "title": "On-Premise: keine biometrische Cloud-Erfassung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, ganz ohne Zwang zu Fingerabdruck- oder Gesichtserkennungs-Diensten in der Cloud &mdash; im Sinne der Personopplysningsloven und der Datatilsynet-Richtlinien." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäss Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichtregime und Bekanntgabefrist, ein Blick",
+    "text": "Klacks erkennt automatisch, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt, wendet die passende 40-, 38- oder 36-Stunden-Grenze an und veröffentlicht den Plan rechtzeitig vor der 14-Tage-Frist nach § 10-3 &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für norwegische Kliniken testen",
-    "text": "Erleben Sie im Playground, wie Klacks Turnus-Arbeitszeit automatisch auf 38 oder 36 Stunden reduziert &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime, Bekanntgabefristen und Überstundengrenzen automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

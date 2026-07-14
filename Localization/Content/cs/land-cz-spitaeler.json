@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks pro nemocnice v Česku | 24hodinová služba & limit 416 hodin",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Pro nemocnice &amp; kliniky v Česku",
+    "titleHtml": "Rozpisy směn, které <span class=\"text-secondary\">fungují nepřetržitě.</span>",
+    "subtitle": "Klacks plánuje 24hodinové služby včetně povinné navazující 22hodinové doby odpočinku a hlídá roční limit 416 hodin přesčasů od doby, kdy ve zdravotnictví v roce 2024 zanikla dřívější zvláštní výjimka. On-premise, takže data pacientů nikdy neopustí vaši nemocnici.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Mřížka rozpisu směn Klacks pro nemocnice a kliniky v Česku",
+    "screenshotLabel": "Rozpis směn"
+  },
+  "challenges": {
+    "eyebrow": "Každodenní provoz kliniky v Česku",
+    "title": "24hodinová služba, roční limit a příplatek",
+    "items": [
+      { "icon": "e911_emergency", "title": "24hodinová služba, 22 hodin povinného odpočinku", "text": "Zdravotnický personál smí vykonávat nepřetržitou službu v délce až 24 hodin (12hodinová směna plus 12 hodin přesčasů). Bezprostředně poté je povinná nepřerušená doba odpočinku v délce nejméně 22 hodin (§ 90b ZP, od 1. 8. 2024)." },
+      { "icon": "gavel", "title": "Roční limit 416 hodin místo staré zvláštní úpravy", "text": "Od 1. 1. 2024 platí pro zdravotnický personál opět obecný limit přesčasů: 150 hodin nařízených přesčasů ročně, celkově nejvýše 416 hodin za 26 týdnů (na základě kolektivní smlouvy až 52 týdnů) &mdash; dřívější zvláštní výjimka s až přibližně 832 hodinami byla bez náhrady zrušena." },
+      { "icon": "payments", "title": "Příplatek za přesčasy jednotně 25 %", "text": "Zákonný příplatek za přesčasy činí bez ohledu na denní dobu nebo počet hodin ve službě nejméně 25 % průměrného výdělku (§ 114 ZP)." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks ulehčuje práci nemocnicím v Česku",
+    "subtitle": "Od 24hodinové služby až po limit 416 hodin &mdash; vše do sebe zapadá.",
+    "items": [
+      { "icon": "bedtime", "title": "22hodinová doba odpočinku naplánována automaticky", "text": "Klacks po každé 24hodinové službě automaticky zablokuje povinnou 22hodinovou dobu odpočinku, než může začít další směna." },
+      { "icon": "gavel", "title": "Limit 416 hodin pod kontrolou", "text": "Klacks automaticky sleduje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; návrat ke staré zvláštní úpravě není potřeba." },
+      { "icon": "payments", "title": "Příplatek za přesčasy správně vypočítán", "text": "Klacks počítá zákonný příplatek za přesčasy ve výši nejméně 25 % jednotně, bez ohledu na denní dobu nebo počet hodin ve službě." },
+      { "icon": "verified", "title": "Oddělení &amp; kvalifikace sladěny", "text": "Každá služba je přidělena pouze osobám s odpovídající kvalifikací &mdash; napříč všemi odděleními." },
+      { "icon": "shield_lock", "title": "On-premise: data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální data i data pacientů neopustí kliniku &mdash; ani směrem k AI." },
+      { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplň 24hodinovou službu interny na příští týden“ stačí &mdash; Klacksy zohlední kvalifikaci i dobu odpočinku." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "24hodinová služba, doba odpočinku, roční limit",
+    "text": "Po 24hodinové službě Klacks automaticky naplánuje 22hodinovou dobu odpočinku a zároveň hlídá roční limit 416 hodin přesčasů &mdash; bez ručního přepočítávání."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Zažijte Klacks ve své klinice",
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks převezme 24hodinové služby, doby odpočinku a limit 416 hodin &mdash; nebo si ho nainstalujte přímo u vás. Zdarma a bez registrace."
+  }
+}

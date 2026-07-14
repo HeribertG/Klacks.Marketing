@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks für Polen | Równoważny czas pracy für das Sicherheitsgewerbe korrekt geplant",
+  "pageTitle": "Klacks für Unternehmen in Polen | Ewidencja czasu pracy & PIP-konforme Personalplanung",
   "hero": {
-    "badgeIcon": "gavel",
-    "badge": "Für Sicherheitsdienste und Gesundheitseinrichtungen in Polen",
-    "titleHtml": "Bis zu 24 Stunden Dienst im Objektschutz &mdash; <span class=\"text-secondary\">mit korrekt eingeplantem Ausgleich.</span>",
-    "subtitle": "Art. 137 Kodeks Pracy erlaubt im Objekt- und Personenschutz (ochrona mienia) im Rahmen des równoważny czas pracy eine Verlängerung der täglichen Arbeitszeit auf bis zu 24 Stunden &mdash; mit anschliessendem odpoczynek równoważny, mindestens so lang wie die geleisteten Stunden. Daneben gilt nach Art. 132 KP für alle Branchen eine tägliche Mindestruhezeit von 11 ununterbrochenen Stunden pro 24-Stunden-Zeitraum.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Polnischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks führt eine vollständige Ewidencja czasu pracy statt einer blossen Anwesenheitsliste, prüft Ruhezeiten automatisch und läuft On-Premise &mdash; ganz ohne die biometrische Zeiterfassung, die polnische Gerichte und die Datenschutzbehörde UODO kritisch sehen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Polen",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag im polnischen Sicherheitsgewerbe und Gesundheitswesen",
-    "title": "24h-Dienste, Ausgleichsruhe und die verschärfte PIP-Kontrolle",
+    "eyebrow": "Der Planungsalltag in polnischen Betrieben",
+    "title": "Ewidencja, PIP-Reform und das Biometrie-Verbot",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Bis zu 24h Dienst im Objektschutz", "text": "Art. 137 KP erlaubt im Rahmen des równoważny czas pracy für Objekt- und Personenschutz eine Verlängerung der täglichen Arbeitszeit auf bis zu 24 Stunden &mdash; mit einem Abrechnungszeitraum von in der Regel einem, in begründeten Fällen bis zu drei Monaten." },
-      { "icon": "hourglass_top", "title": "11-Stunden-Ruhezeit nach Art. 132 KP", "text": "Unabhängig vom Arbeitszeitsystem gelten mindestens 11 ununterbrochene Ruhestunden pro 24-Stunden-Zeitraum &mdash; Ausnahmen bestehen nur für Rettungseinsätze und verlängerte Tagesarbeitszeit-Systeme mit Ausgleichsruhe." },
-      { "icon": "fact_check", "title": "PIP kontrolliert seit 2026 verstärkt Scheinselbstständigkeit", "text": "Seit der PIP-Reform (in Kraft ab 8. Juli 2026) kann die staatliche Arbeitsinspektion Umowa-zlecenie-Verträge im Gesundheitswesen direkt per Verwaltungsentscheid in ein Arbeitsverhältnis umwandeln, statt den Gerichtsweg zu benötigen &mdash; rechtssichere Festangestellten-Planung wird dringlicher." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der polnischen Datenschutzbehörde UODO in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und PIP-Kontrollen."
+      { "icon": "history_edu", "title": "Ewidencja czasu pracy statt Anwesenheitsliste", "text": "Eine blosse Anwesenheitsliste (lista obecności) mit Unterschriften reicht rechtlich nicht aus &mdash; verlangt ist eine vollständige Arbeitszeiterfassung nach Art. 149 Kodeks pracy." },
+      { "icon": "gavel", "title": "Bussgeld-Reform ab 8. Juli 2026", "text": "Der Regelstrafrahmen für Verstösse gegen Arbeitnehmerrechte steigt auf 2.000 bis 60.000 PLN &mdash; bei wiederholten schweren Verstössen drohen bis zu 90.000 PLN (Art. 281 Kodeks pracy)." },
+      { "icon": "fingerprint", "title": "Biometrie-Verbot bei der Zeiterfassung", "text": "Fingerabdruck-Zeiterfassung ist auch mit Einwilligung der Mitarbeitenden unzulässig (Art. 22¹b Kodeks pracy) &mdash; Cloud-Zeiterfassungssysteme geraten damit schnell in eine Grauzone." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks 24h-Dienste und Ausgleichsruhe korrekt verrechnet",
-    "subtitle": "Równoważny czas pracy und die 11h-Regel gleichzeitig im Blick.",
+    "title": "Wie Klacks polnische Betriebe entlastet",
+    "subtitle": "Von der vollständigen Ewidencja bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus eine ungeplante Ruhezeit-Verletzung entsteht." },
-      { "icon": "fact_check", "title": "Ausgleichsruhe-Tracking nach Art. 137 KP", "text": "Klacks berechnet den odpoczynek równoważny nach jedem verlängerten Dienst automatisch und führt ihn über den gesamten Abrechnungszeitraum mit." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für 24h-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Dienste im Objektschutz unter Einhaltung der Ausgleichsruhe automatisch mit ein." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und rechtssicherem Vertragsstatus werden für eine Schicht vorgeschlagen." }
+      { "icon": "fact_check", "title": "Vollständige Ewidencja czasu pracy", "text": "Klacks erfasst Arbeitszeiten lückenlos nach Art. 149 Kodeks pracy &mdash; keine blosse Unterschriftenliste, sondern rechtssichere Daten für jede PIP-Kontrolle." },
+      { "icon": "bedtime", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) werden automatisch eingehalten, inklusive der in der Regel den Sonntag umfassenden Wochenruhe." },
+      { "icon": "calendar_month", "title": "Równoważny czas pracy korrekt geplant", "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung." },
+      { "icon": "fingerprint", "title": "Keine biometrische Zeiterfassung nötig", "text": "Klacks kommt ganz ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das rechtliche Risiko, das Art. 22¹b Kodeks pracy und die Rechtsprechung des NSA hier sehen." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang und ohne die Datenschutzrisiken, die die UODO bei Drittanbietern kritisiert." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer von Personaldaten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ewidencja, Ruhezeit, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Ruhezeit unterschritten wird oder eine Schicht die 12-Stunden-Grenze im äquivalenten Arbeitszeitsystem erreicht, und dokumentiert die vollständige Ewidencja czasu pracy gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für polnische Sicherheitsdienste und Kliniken testen",
-    "text": "Erleben Sie im Playground, wie Klacks 24h-Dienste und Ausgleichsruhe korrekt verrechnet &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Ewidencja czasu pracy, Ruhezeiten und das äquivalente Arbeitszeitsystem automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

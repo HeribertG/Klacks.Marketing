@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för städbolag i Sverige | Serviceentreprenadavtalet 2025-2027",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "För städbolag i Sverige",
+    "titleHtml": "Varje deltidsanställd <span class=\"text-secondary\">korrekt ersatt.</span>",
+    "subtitle": "Klacks fördelar objekt och städteam effektivt &mdash; med övergången från mertid till full övertidsersättning och den nya arbetstidsförkortningsdagen från 2026 automatiskt inlagda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemaraster för städteam och objekt i Sverige",
+    "screenshotLabel": "Schema"
+  },
+  "challenges": {
+    "eyebrow": "Städbolagsvardagen i Sverige",
+    "title": "Mertidens slut, ny ledig dag, nattvila",
+    "items": [
+      { "icon": "payments", "title": "Deltidsmerarbete blir övertid", "text": "Enligt Serviceentreprenadavtalet (Almega/Fastighets &amp; Seko, 1.9.2025-31.8.2027) får deltidsanställda städare från och med 1 juni 2026 full övertidsersättning (73,63 SEK/tim vardagar, 91,39 SEK/tim sön- och helgdagar) i stället för den tidigare, lägre ersatta mertiden &mdash; den stegvisa avvecklingen under första och andra avtalsåret gör den korrekta tilldelningen svår." },
+      { "icon": "event_repeat", "title": "Ny ledig dag från 2026", "text": "Heltidsanställda får från 2026 en betald ledig dag per år (arbetstidsförkortning), deltidsanställda proportionellt &mdash; arbetsgivaren bestämmer datumet." },
+      { "icon": "bedtime", "title": "Nattvila 00.00 till 05.00", "text": "Enligt arbetstidslagen (ATL § 13) måste tidsfönstret midnatt till 05.00 i regel ligga inom dygnsvilan &mdash; relevant även för städpersonal med tidiga eller sena insatser." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks svenska städbolag",
+    "subtitle": "Från den optimerade rutten till den korrekta övertidsersättningen &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Objektrutter optimerade", "text": "Klacks bestämmer objektens ordning så att sträckorna hålls korta &mdash; för bil, cykel eller till fots." },
+      { "icon": "payments", "title": "Mertidsövergången automatiskt hanterad", "text": "Klacks känner till övergången från mertid till full övertidsersättning (73,63 SEK/tim vardagar, 91,39 SEK/tim sön- och helgdagar från 1 juni 2026) för deltidsanställda och tillämpar korrekt ersättning." },
+      { "icon": "event_available", "title": "Ledig dag automatiskt inplanerad", "text": "Klacks planerar automatiskt in den betalda lediga dagen för heltidsanställda respektive den proportionella rätten för deltidsanställda från 2026." },
+      { "icon": "bedtime", "title": "Nattvila respekterad", "text": "Klacks tar automatiskt hänsyn till att tidsfönstret midnatt till 05.00 enligt ATL § 13 i regel måste ligga inom vilotiden." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera objekten i centrumdistriktet för imorgon bitti” räcker &mdash; Klacksy optimerar rutt och team." },
+      { "icon": "event_busy", "title": "Bortfall snabbt hanterade", "text": "Faller någon bort visar Klacks direkt vem som är tillgänglig och vilken rutt som passar bäst." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mertidens slut och ledig dag, en plan",
+    "text": "Klacks känner automatiskt igen att deltidsanställda från och med 1 juni 2026 får full övertidsersättning i stället för mertid, och planerar samtidigt in den nya arbetstidsförkortningsdagen &mdash; utan manuell efterräkning."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i ert städbolag",
+    "text": "Prova i Playground hur Klacks tar hand om rutter, team och den nya övertidsregeln &mdash; eller installera det direkt på er egen infrastruktur. Gratis och utan registrering."
+  }
+}

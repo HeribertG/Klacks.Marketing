@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks pour l'aide à domicile en Belgique | Temps de trajet, services coupés & rimpelregeling",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Belgique (CP 330)",
+    "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre patient·e·s comme temps de travail, le supplément de 50% pour les services coupés et la rimpelregeling dès 45 ans.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Belgique",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de l'aide à domicile belge",
+    "title": "Temps de trajet, services coupés et rimpelregeling",
+    "items": [
+      { "icon": "alt_route", "title": "Le temps de trajet entre patient·e·s compte comme temps de travail", "text": "Les trajets entre deux visites constituent du temps de travail à part entière &mdash; seuls le premier trajet depuis le domicile et le dernier trajet retour n'en font pas partie. Cette règle s'applique à l'ensemble du secteur, pas seulement à la CP 330." },
+      { "icon": "call_split", "title": "Supplément de 50% pour les services coupés", "text": "Un service interrompu (onderbroken dienst) déclenche, selon le barème salarial de la CP 330, un supplément de 50% &mdash; facilement négligé à la main." },
+      { "icon": "elderly", "title": "Rimpelregeling dès 45 ans", "text": "Les collaborateurs·trices bénéficient dès 45, 50 et 55 ans d'heures de dispense hebdomadaires supplémentaires (2/4/6 heures) &mdash; la planification des tournées doit en tenir compte automatiquement selon l'âge." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'aide à domicile belge",
+    "subtitle": "De la tournée automatique à la rimpelregeling &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied." },
+      { "icon": "schedule", "title": "Temps de trajet correctement comptabilisé comme temps de travail", "text": "Les trajets entre patient·e·s sont automatiquement comptés comme temps de travail &mdash; seuls le premier et le dernier trajet restent exclus." },
+      { "icon": "call_split", "title": "Supplément de 50% pour services coupés calculé", "text": "Klacks détecte automatiquement un service interrompu et applique le supplément de 50% selon le barème salarial de la CP 330." },
+      { "icon": "elderly", "title": "Rimpelregeling automatiquement planifiée", "text": "Les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, sont automatiquement intégrées à la planification des tournées." },
+      { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle." },
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Temps de trajet, service coupé, un seul planning",
+    "text": "Klacks intègre automatiquement le temps de trajet entre patient·e·s comme temps de travail, détecte les services coupés et applique le supplément de 50% &mdash; sans calcul manuel."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre organisation de soins",
+    "text": "Testez dans le Playground comment Klacks prend en charge le temps de trajet, les services coupés et la rimpelregeling &mdash; gratuitement et sans inscription."
+  }
+}

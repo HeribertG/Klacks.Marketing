@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks für Dänemark | Die 11-timers reglen automatisch eingehalten",
+  "pageTitle": "Klacks für dänische Unternehmen | Dienstplanung nach der Overenskomst",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Dänemark",
-    "titleHtml": "11 Stunden Freizeit pro 24 Stunden &mdash; <span class=\"text-secondary\">verlässlich geplant, nicht dem Zufall überlassen.</span>",
-    "subtitle": "Die 11-timers reglen im dänischen Arbejdstidsloven schreibt mindestens 11 zusammenhängende Stunden Freizeit innerhalb von 24 Stunden vor, mit engen Ausnahmen in bestimmten Berufen und sofortigem Ausgleich. Seit dem grossen Pflegestreik 2021 ist der Personalmangel in dänischen Kliniken chronisch &mdash; verlässliche, regelkonforme Planung wird zum Wettbewerbsvorteil um knappes Personal.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; Dänischer Datenschutz",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">mit Ihrer Overenskomst mitwachsen.</span>",
+    "subtitle": "In Dänemark regeln Overenskomster &mdash; nicht ein einheitliches Gesetz &mdash; Arbeitszeit, Zuschläge und Urlaub. Klacks bildet diese Tarifregeln flexibel ab, überwacht Ruhezeiten und die seit 1. Juli 2024 vorgeschriebene Zeiterfassung, und läuft On-Premise mit dem KI-Modell Ihrer Wahl &mdash; damit Personaldaten Ihre Infrastruktur nie verlassen müssen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für dänische Unternehmen",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in dänischen Kliniken",
-    "title": "11-timers reglen und akuter Fachkräftemangel",
+    "eyebrow": "Der Planungsalltag in dänischen Betrieben",
+    "title": "Overenskomst statt Gesetz, Ruhezeit und Zeiterfassungspflicht",
     "items": [
-      { "icon": "hourglass_top", "title": "11-timers reglen", "text": "Mindestens 11 zusammenhängende Stunden Freizeit innerhalb von 24 Stunden &mdash; mit einer Ausnahmeregel auf 8 Stunden in bestimmten Berufen bei sofortigem Ausgleich." },
-      { "icon": "groups", "title": "Nachwirkungen des Pflegestreiks 2021", "text": "Nach dem Sygeplejerskestrejken 2021 blieben in der Region Hovedstaden zeitweise 63% der ausgeschriebenen Pflegestellen unbesetzt, rund 200 Betten mussten geschlossen werden &mdash; der Personalmangel ist bis heute spürbar." },
-      { "icon": "gavel", "title": "Tarif-Souveränität statt starrem Gesetz", "text": "Viele Details der Arbeitszeit werden nicht gesetzlich, sondern über Kollektivabkommen mit Gewerkschaften wie FOA oder DSR ausgehandelt &mdash; ein Dienstplaner muss hochgradig anpassbare Regeln unterstützen." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der dänischen Datenschutzbehörde Datatilsynet in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Gewerkschaften."
+      { "icon": "gavel", "title": "Den danske model: Tarif statt Einheitsgesetz", "text": "Arbeitszeit, Zuschläge und Urlaub regeln in Dänemark vor allem die Overenskomster von 3F, FOA und VSL sowie der Arbeitgeberverband DI &mdash; nicht ein landesweites Gesetz. Ein Dienstplansystem muss sich an die jeweils geltende Overenskomst anpassen lassen, statt starre Regeln fest zu verdrahten." },
+      { "icon": "bedtime", "title": "11 Stunden Ruhezeit, 35 Stunden Wochenruhe", "text": "Die Arbejdsmiljøloven verlangt 11 zusammenhängende Ruhestunden je 24 Stunden und ein wöchentliches Fridøgn von 35 zusammenhängenden Stunden. Bei Schichtwechsel im Schichtbetrieb (holddrift) darf die Ruhezeit ausnahmsweise auf 8 Stunden verkürzt werden &mdash; muss aber vorher mit dem/der Tillidsrepræsentant besprochen werden." },
+      { "icon": "fact_check", "title": "Zeiterfassungspflicht seit 1. Juli 2024", "text": "Seit dem 1. Juli 2024 muss jeder dänische Betrieb ein objektives, zuverlässiges Zeiterfassungssystem führen, das die 48-Stunden-Grenze im gleitenden 4-Monats-Schnitt nachweist &mdash; die Aufzeichnungen sind 5 Jahre aufzubewahren." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die 11-timers reglen zuverlässig einhält",
-    "subtitle": "Regelbasierte Tarifabkommen abgebildet, nicht starr vorgegeben.",
+    "title": "Wie Klacks dänische Betriebe entlastet",
+    "subtitle": "Von der flexiblen Overenskomst-Abbildung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Verletzung der 11-timers reglen entsteht." },
-      { "icon": "fact_check", "title": "Ruhezeit-Tracking", "text": "Klacks führt die 11-Stunden-Freizeit sowie tarifliche Ausnahmen fortlaufend mit &mdash; sichtbar für Planende und Gewerkschaftsvertretung." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard bei Personalmangel", "text": "Der GA-gestützte Autofill-Assistent findet auch bei knapper Personaldecke regelkonforme Rotationen, statt Lücken manuell zu stopfen." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+      { "icon": "gavel", "title": "Overenskomst-Regeln flexibel hinterlegt", "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt." },
+      { "icon": "bedtime", "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant", "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch und erkennt, wann eine Verkürzung auf 8 Stunden bei Schichtwechsel zulässig ist." },
+      { "icon": "fact_check", "title": "Zeiterfassung &amp; 48-Stunden-Nachweis automatisch", "text": "Klacks dokumentiert die tägliche Arbeitszeit lückenlos, prüft den 48-Stunden-Schnitt über 4 Monate und hält die Nachweise 5 Jahre bereit." },
+      { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäss Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichtwechsel und Zeiterfassung, ein Blick",
+    "text": "Klacks erkennt automatisch, wann die Ruhezeit bei Schichtwechsel auf 8 Stunden verkürzt werden darf, hält die 48-Stunden-Grenze im 4-Monats-Schnitt ein und dokumentiert die Arbeitszeit lückenlos für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für dänische Kliniken testen",
-    "text": "Erleben Sie im Playground, wie Klacks die 11-timers reglen automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Overenskomst-Regeln, Ruhezeiten und die Zeiterfassungspflicht automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

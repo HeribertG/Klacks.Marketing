@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks dla logistyki w Polsce | 10-godzinny limit nocny i obowiązek dla lekkich dostawczych",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Dla logistyki i transportu w Polsce",
+    "titleHtml": "Trasy, czas jazdy, terminy &mdash; <span class=\"text-secondary\">wszystko pod kontrolą.</span>",
+    "subtitle": "Klacks planuje trasy i kierowców &mdash; z twardym 10-godzinnym limitem przy pracy w nocy oraz nowym obowiązkiem montażu tachografu dla lekkich pojazdów dostawczych od 1 lipca 2026 r. Trasy są optymalizowane automatycznie.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Widok osi czasu Klacks dla tras i zleceń kierowców w Polsce",
+    "screenshotLabel": "Oś czasu"
+  },
+  "challenges": {
+    "eyebrow": "Codzienność logistyki w Polsce",
+    "title": "Praca w nocy i nowe obowiązki dla lekkich pojazdów dostawczych",
+    "items": [
+      { "icon": "alt_route", "title": "Trasy i terminy", "text": "Przystanki, przedziały czasowe i trasy muszą do siebie pasować &mdash; każda zmiana planu pociąga za sobą konsekwencje." },
+      { "icon": "nightlight", "title": "Twardy 10-godzinny limit przy pracy w nocy", "text": "Jeśli czas pracy kierowcy choćby częściowo przypada na ustalone przez pracodawcę 4-godzinne okno nocne między 00:00 a 07:00, łączny czas pracy między dwoma okresami odpoczynku nie może przekroczyć 10 godzin (art. 21 ustawy o czasie pracy kierowców)." },
+      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze: nowy obowiązek montażu tachografu", "text": "Od 1 lipca 2026 r. dla pojazdów o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów obowiązują te same zasady czasu jazdy co dla ciężkich samochodów ciężarowych &mdash; wraz z obowiązkiem montażu tachografu inteligentnego drugiej generacji." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża logistykę w Polsce",
+    "subtitle": "Od zoptymalizowanej trasy po nowy obowiązek dla lekkich pojazdów dostawczych &mdash; wszystko działa razem.",
+    "items": [
+      { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa przystanki w najsensowniejszej kolejności &mdash; krótkie trasy, dotrzymane przedziały czasowe, mniej pustych przejazdów." },
+      { "icon": "nightlight", "title": "10-godzinny limit nocny sprawdzany automatycznie", "text": "Klacks rozpoznaje, gdy zmiana wchodzi w okno nocne, i automatycznie ogranicza łączny czas pracy do 10 godzin między dwoma okresami odpoczynku." },
+      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze zaplanowane prawidłowo od 1.7.2026 r.", "text": "Dla pojazdów o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks planuje według tych samych zasad czasu jazdy co dla ciężkich samochodów ciężarowych &mdash; wraz z 4,5-godzinnym czasem jazdy, 45-minutową przerwą i maksymalnie 9 (a w dwa dni w tygodniu 10) godzinami dziennego czasu jazdy." },
+      { "icon": "badge", "title": "Kategorie prawa jazdy dopasowane", "text": "Klacks przydziela trasy wyłącznie kierowcom z odpowiednimi uprawnieniami &mdash; i ostrzega przed wygasającymi dokumentami." },
+      { "icon": "smart_toy", "title": "Klacksy planuje na polecenie głosowe", "text": "„Zaplanuj trasy na jutro, kierowca Kowalski jest chory” wystarczy &mdash; Klacksy przelicza wszystko od nowa." },
+      { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy kierowca wypada, Klacks od razu pokazuje, kto jest wykwalifikowany, dostępny i mieści się w limicie czasu jazdy." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Okno nocne, lekkie pojazdy dostawcze, jeden plan",
+    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ogranicza łączny czas pracy do 10 godzin &mdash; i planuje lekkie pojazdy dostawcze w międzynarodowym przewozie od 1.7.2026 r. od razu według zasad czasu jazdy dla samochodów ciężarowych."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Zobacz Klacks w swojej firmie logistycznej",
+    "text": "Wypróbuj w Playgroundzie, jak Klacks przejmuje trasy, limity nocne i nowy obowiązek dla lekkich pojazdów dostawczych &mdash; lub zainstaluj go bezpośrednio na własnej infrastrukturze. Bezpłatnie i bez rejestracji."
+  }
+}

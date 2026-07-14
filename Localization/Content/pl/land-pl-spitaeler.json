@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks dla szpitali w Polsce | Norma 7h35, dyżur i okresy odpoczynku",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Dla szpitali i klinik w Polsce",
+    "titleHtml": "Grafiki dyżurów, które <span class=\"text-secondary\">funkcjonują całą dobę.</span>",
+    "subtitle": "Klacks planuje oddziały i dyżury bez luk &mdash; z uwzględnieniem szczególnej normy 7h35 dla personelu medycznego oraz okresów odpoczynku zgodnie z Kodeksem pracy. On-Premise, dzięki czemu dane pacjentów nigdy nie opuszczają Twojej placówki.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Siatka grafiku dyżurów Klacks dla szpitali i klinik w Polsce",
+    "screenshotLabel": "Grafik dyżurów"
+  },
+  "challenges": {
+    "eyebrow": "Codzienność szpitalna w Polsce",
+    "title": "Dwie normy czasu pracy, jedna placówka",
+    "items": [
+      {
+        "icon": "medical_services",
+        "title": "Szczególna norma 7h35 dla personelu medycznego",
+        "text": "Personel lekarski i pielęgniarski pracuje standardowo 7 godzin 35 minut dziennie, czyli 37 godzin 55 minut tygodniowo &mdash; personel techniczny i gospodarczy pozostaje przy regularnej normie 8h/40h (art. 93 ustawy o działalności leczniczej)."
+      },
+      {
+        "icon": "e911_emergency",
+        "title": "Dyżur medyczny do 24 godzin",
+        "text": "Dopuszczalne są dyżury trwające do 24 godzin &mdash; bezpośrednio po nich przysługuje co najmniej 11 godzin nieprzerwanego odpoczynku."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Wyjątek: skrócony odpoczynek tygodniowy",
+        "text": "W uzasadnionych organizacyjnie przypadkach tygodniowy odpoczynek personelu pełniącego dyżur może zostać skrócony do co najmniej 24 godzin &mdash; musi jednak zostać wyrównany w ciągu 14 dni."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks odciąża kliniki w Polsce",
+    "subtitle": "Od normy 7h35 po wyrównanie po dyżurze &mdash; wszystko działa razem.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Dwie normy planowane równolegle",
+        "text": "Klacks automatycznie rozróżnia normę 7h35/37h55 dla personelu medycznego od regularnej normy 8h/40h dla personelu technicznego i gospodarczego."
+      },
+      {
+        "icon": "e911_emergency",
+        "title": "Dyżur medyczny zaplanowany prawidłowo",
+        "text": "Dyżury do 24 godzin są planowane wraz z obowiązkowym 11-godzinnym odpoczynkiem bezpośrednio po nich."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Skrócony odpoczynek tygodniowy pod kontrolą",
+        "text": "Gdy tygodniowy odpoczynek zostaje wyjątkowo skrócony do 24 godzin, Klacks pilnuje 14-dniowego terminu na wyrównanie."
+      },
+      {
+        "icon": "verified",
+        "title": "Oddziały i kwalifikacje dopasowane",
+        "text": "Każdy dyżur jest przydzielany wyłącznie osobom z odpowiednimi kwalifikacjami &mdash; na wszystkich oddziałach."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: dane pozostają w placówce",
+        "text": "Klacks działa na Twojej infrastrukturze. Dane personelu i pacjentów nie opuszczają kliniki &mdash; również nie trafiają do AI."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planuje na polecenie głosowe",
+        "text": "„Wypełnij dyżury oddziału wewnętrznego na przyszły tydzień” wystarczy &mdash; Klacksy uwzględnia kwalifikacje i odpoczynek."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Dyżur, odpoczynek, dwie normy",
+    "text": "Po 24-godzinnym dyżurze Klacks automatycznie planuje 11-godzinny odpoczynek, jednocześnie dotrzymując normy 7h35 dla pozostałego personelu medycznego &mdash; bez ręcznego przeliczania."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Zobacz Klacks w swojej klinice",
+    "text": "Wypróbuj w Playgroundzie, jak Klacks przejmuje dyżury, okresy odpoczynku i dwie normy czasu pracy &mdash; lub zainstaluj go bezpośrednio w swojej placówce. Bezpłatnie i bez rejestracji."
+  }
+}

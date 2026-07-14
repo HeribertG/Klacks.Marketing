@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks voor Nederland | ATW-conforme dienstroostering zonder extra werk",
+  "pageTitle": "Klacks voor bedrijven in Nederland | Arbeidstijdenwet & oproepkrachten automatisch geregeld",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Voor ziekenhuizen en zorginstellingen in Nederland",
-    "titleHtml": "De Arbeidstijdenwet automatisch nageleefd &mdash; <span class=\"text-secondary\">in plaats van handmatig nagerekend.</span>",
-    "subtitle": "De Arbeidstijdenwet (ATW) beperkt een dienst tot maximaal 12 uur en de wekelijkse arbeidstijd tot gemiddeld 55 uur over 4 weken en 48 uur over 16 weken. Daarnaast geldt een rusttijd van minimaal 11 uur, die eenmaal per 7 dagen mag worden ingekort tot 8 uur, wanneer de aard van het werk of bedrijfsomstandigheden dit vereisen. Klacks houdt deze grenzen vanaf het begin aan &mdash; als bijdrage aan het landelijke initiatief (Ont)Regel de Zorg tegen onnodige administratieve lasten in de zorg.",
+    "badgeIcon": "shield_lock",
+    "badge": "Voor werkgevers in Nederland &middot; open source &middot; on-premise",
+    "titleHtml": "Dienstroosters die de <span class=\"text-secondary\">Arbeidstijdenwet nooit overtreden.</span>",
+    "subtitle": "Klacks plant diensten automatisch volgens de Nederlandse Arbeidstijdenwet (ATW) en regelt oproepkrachten correct volgens de Wet arbeidsmarkt in balans (WAB) &mdash; on-premise, zodat personeelsgegevens in uw eigen infrastructuur blijven.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks dienstroosterraster",
+    "screenshotAlt": "Klacks dienstroosteroverzicht voor bedrijven in Nederland",
     "screenshotLabel": "Dienstrooster"
   },
   "challenges": {
-    "eyebrow": "De dagelijkse praktijk in Nederlandse ziekenhuizen en de zorg",
-    "title": "ATW-grenzen naleven zonder extra bureaucratie op te bouwen",
+    "eyebrow": "De planningspraktijk in Nederlandse bedrijven",
+    "title": "ATW-maximale arbeidstijd, rusttijden en oproepkrachten",
     "items": [
-      { "icon": "hourglass_disabled", "title": "12-uursdienst, wekelijkse grenzen van 55u/48u", "text": "De ATW beperkt een dienst tot 12 uur en de wekelijkse arbeidstijd tot gemiddeld 55 respectievelijk 48 uur over 4 respectievelijk 16 weken &mdash; handmatig over meerdere roosterrotaties nauwelijks nog foutloos bij te houden." },
-      { "icon": "schedule", "title": "11-uurs rusttijd met uitzonderingen", "text": "Na elke dienst geldt een rusttijd van minimaal 11 uur, bij nachtdiensten die na 02:00 uur eindigen zelfs 14 uur &mdash; eenmaal per 7 dagen is een inkorting tot 8 uur toegestaan, wanneer het werk dit vereist." },
-      { "icon": "groups", "title": "(Ont)Regel de Zorg: minder administratie", "text": "Het initiatief (Ont)Regel de Zorg dringt sinds 2018 aan op minder registratieverplichtingen in de zorg &mdash; een dienstroosterprogramma dat ATW-grenzen automatisch bijhoudt in plaats van ze achteraf te moeten aantonen, levert daar een directe bijdrage aan." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datasoevereiniteit",
-    "title": "Volledige datasoevereiniteit: open source &amp; on-premise",
-    "text": "Klacks is ontwikkeld voor sectoren met strenge veiligheids- en compliance-eisen, waarin gevoelige medewerkersgegevens de eigen infrastructuur niet mogen verlaten. Als opensourceoplossing kan Klacks rechtstreeks in uw eigen datacenter of op beveiligde lokale servers worden gehost &mdash; zonder afhankelijkheid van Amerikaanse cloudaanbieders. Dat vergemakkelijkt het in eigen regie naleven van de AVG en de richtlijnen van de Autoriteit Persoonsgegevens.",
-    "bullets": [
-      "On-premise soevereiniteit: volledige controle over dienstroosters, rusttijdregistraties en logboeken binnen de eigen IT-omgeving.",
-      "Vrije LLM-architectuur: AI-ondersteunde planningsvoorstellen kunnen ook met lokaal gehoste taalmodellen worden gebruikt, zonder dat gegevens naar externe API's stromen.",
-      "Auditeerbare broncode: volledig inzichtelijke codebasis voor IT-audits en de ondernemingsraad."
+      { "icon": "gavel", "title": "Maximale arbeidstijd volgens de Arbeidstijdenwet", "text": "De ATW (art. 5:7) staat maximaal 12 uur per dienst en 60 uur per week toe &mdash; gemiddeld echter slechts 55 uur over telkens 4 en 48 uur over telkens 16 opeenvolgende weken. Bij CAO afwijkbaar, maar nooit boven de 60 uur. Handmatig nauwelijks doorlopend te controleren." },
+      { "icon": "bedtime", "title": "Rusttijden volgens ATW art. 5:3 &amp; 5:5", "text": "Minimaal 11 uur dagelijkse en 36 uur wekelijkse rusttijd zijn verplicht &mdash; met beperkte uitzonderingen voor verkorting. Wie dit handmatig controleert over wisselende diensten heen, mist al snel een overtreding." },
+      { "icon": "event_repeat", "title": "Oproepkrachten correct inplannen", "text": "Voor oproepkrachten geldt een wettelijke aankondigingstermijn van 4 dagen (WAB, BW art. 7:628a) &mdash; wordt een oproep op korte termijn afgezegd, dan blijft de volledige loonaanspraak voor de opgeroepen uren bestaan." }
     ]
   },
   "solutions": {
-    "title": "Hoe Klacks de ATW-grenzen automatisch bijhoudt",
-    "subtitle": "12-uursdienst, wekelijkse grenzen van 55u/48u en rusttijd-uitzonderingen in één plan.",
+    "title": "Hoe Klacks Nederlandse bedrijven ontlast",
+    "subtitle": "Van de automatische ATW-controle tot de AVG-conforme tijdsregistratie &mdash; alles grijpt in elkaar.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-engine voor uitval", "text": "Valt een zorgprofessional uit, dan vindt Klacks direct een gekwalificeerde vervanger &mdash; zonder dat daardoor ongepland een ATW-overtreding ontstaat." },
-      { "icon": "fact_check", "title": "ATW-grenzen-tracking", "text": "Klacks houdt de 12-uursdienstgrens, de wekelijkse grenzen van 55u/48u en de rusttijd van 11u/14u continu bij &mdash; zichtbaar voor planners en de ondernemingsraad." },
-      { "icon": "calendar_month", "title": "Autofill-wizard voor roosterrotaties", "text": "De GA-gestuurde autofill-assistent plant dienstrotaties automatisch in met inachtneming van de vastgelegde ATW-regels." },
-      { "icon": "groups", "title": "Kwalificatiegerichte inzetplanning", "text": "Alleen medewerkers met de juiste kwalificatie worden voor een dienst voorgesteld." }
+      { "icon": "gavel", "title": "ATW-maximale arbeidstijd automatisch bewaakt", "text": "Klacks kent de 12-uursgrens per dienst, de 60-uurs weekgrens en de gemiddelden over 4 en 16 weken &mdash; overtredingen worden al bij het plannen voorkomen." },
+      { "icon": "bedtime", "title": "Rusttijden automatisch nageleefd", "text": "De 11 uur dagrust en de 36 uur weekrust volgens ATW art. 5:3 en 5:5 worden bij elk dienstrooster automatisch meeberekend." },
+      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "Klacks kent de 4-dagen-aankondigingstermijn voor oproepkrachten en maakt zichtbaar waar een afzegging op korte termijn een loonaanspraak veroorzaakt." },
+      { "icon": "privacy_tip", "title": "Geen biometrische tijdsregistratie nodig", "text": "Diensten en werktijden worden in Klacks geregistreerd zonder vingerafdruk- of gezichtsscan &mdash; volledig zonder het AVG-risico op grond van art. 9 dat de Autoriteit Persoonsgegevens ziet bij biometrische tijdsregistratie op de werkvloer." },
+      { "icon": "shield_lock", "title": "On-premise: volledige datasoevereiniteit", "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; personeelsgegevens verlaten uw pand niet." },
+      { "icon": "smart_toy", "title": "Klacksy: regelgebaseerd, geen blackbox", "text": "De geïntegreerde AI-assistent Klacksy plant op basis van spraakopdrachten &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI-assistent",
     "title": "Klacksy: de geïntegreerde assistent voor uw team",
-    "text": "Klacksy is geen opgetuigde marketingchatbot, maar rechtstreeks ingebed in de Klacks-interface. Medewerkers en planners vragen via de chat diensttijden op, dienen dienstruilverzoeken in of lossen kwalificatieconflicten in het team op. Een vastgelegd skills- en regelsysteem zorgt ervoor dat Klacksy alleen voorstellen doet die passen bij de daadwerkelijke kwalificaties en ATW-vereisten van de betrokkenen.",
+    "text": "Klacksy is geen opgetuigde marketingchatbot, maar rechtstreeks ingebed in de Klacks-interface. Medewerkers en planners vragen via de chat diensttijden op, verhelderen oproepmomenten of beschikbaarheden. Een vastgelegd skills- en regelsysteem zorgt ervoor dat Klacksy navolgbare voorstellen doet &mdash; geen blackbox-beslissing. Voor bedrijven met hoge privacy-eisen kan het AI-model bovendien lokaal worden gehost.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chatassistent in de Klacks-interface"
   },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Oproepkracht, afzegging op korte termijn, één blik",
+    "text": "Wordt een oproepkracht binnen de 4-dagentermijn weer afgezegd, dan maakt Klacks de daaruit voortvloeiende loonaanspraak direct zichtbaar &mdash; zonder handmatig nawerk."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Test Klacks voor Nederlandse ziekenhuizen en zorginstellingen",
-    "text": "Ervaar in de playground hoe Klacks de ATW-grenzen automatisch naleeft &mdash; of host Klacks on-premise voor volledige datasoevereiniteit."
+    "title": "Ervaar Klacks in uw bedrijf",
+    "text": "Test in de playground hoe Klacks ATW-maximale arbeidstijden, rusttijden en oproepkrachten automatiseert &mdash; on-premise of in de playground, gratis en zonder registratie."
   }
 }

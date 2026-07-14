@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Haus- & Reinigungsdienste Belgien | Anwesenheitserfassung, Mobilitätspauschale & 18h-Teilzeit",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Haus- &amp; Reinigungsdienste in Belgien (PC 121)",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber dokumentiert.</span>",
+    "subtitle": "Klacks erfasst jeden Objekteinsatz elektronisch, rechnet die Mobilitätspauschale zwischen Objekten automatisch ab und hält die sektorale Teilzeit-Untergrenze von 18h pro Woche ein.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für belgische Reinigungsteams und Objekte",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Belgien",
+    "title": "Anwesenheitspflicht, Mobilitätspauschale und Mindestdauern",
+    "items": [
+      { "icon": "fingerprint", "title": "Elektronische Anwesenheitserfassung Pflicht", "text": "Seit 1.9.2024 ist die elektronische Anwesenheitserfassung branchenübergreifend Pflicht, seit 1.5.2025 mit scharfen Bussen &mdash; administrativ € 400 bis € 4.000, strafrechtlich € 800 bis € 8.000, jeweils pro betroffenem Arbeitnehmenden." },
+      { "icon": "directions_car", "title": "Mobilitätspauschale zwischen Objekten", "text": "Für Wege zwischen mehreren Objekten am selben Tag gilt eine Pauschale von € 0,1075 pro km, mindestens € 2,15 pro Fahrt &mdash; von Hand mühsam nachzuhalten." },
+      { "icon": "schedule", "title": "1h-Mindesteinsatz und 18h-Teilzeit-Untergrenze", "text": "Für die Reinigungskategorien 1A/1B genügt eine Mindestdauer von 1 Stunde pro Objekt, gleichzeitig gilt sektoral eine Teilzeit-Untergrenze von 18 Stunden pro Woche bzw. 3 Stunden pro Tag &mdash; höher als die allgemeine belgische Regel und leicht zu übersehen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks belgische Hausdienste entlastet",
+    "subtitle": "Von der lückenlosen Anwesenheitserfassung bis zur Mobilitätspauschale &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "fingerprint", "title": "Anwesenheit elektronisch &amp; lückenlos erfasst", "text": "Jeder Objekteinsatz wird elektronisch dokumentiert &mdash; auditsicher, wie es die Programmawet seit 2024 verlangt. Auch die € 7,00/Monat-Pauschale bei Nutzung privater Smartphones verwaltet Klacks automatisch." },
+      { "icon": "directions_car", "title": "Mobilitätspauschale automatisch berechnet", "text": "Klacks rechnet die Pauschale von € 0,1075/km, mindestens € 2,15 pro Fahrt, für jede Strecke zwischen Objekten automatisch ab." },
+      { "icon": "schedule", "title": "Mindestdauern automatisch eingehalten", "text": "Klacks berücksichtigt die 1-Stunden-Mindestdauer für Kategorie 1A/1B ebenso wie die sektorale Teilzeit-Untergrenze von 18h pro Woche bzw. 3h pro Tag." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Ferien: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Bezirk für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Anwesenheitserfassung." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Objektwechsel, Mobilitätspauschale, ein Plan",
+    "text": "Klacks erfasst jeden Objekteinsatz elektronisch, rechnet die Mobilitätspauschale zwischen den Objekten automatisch ab und behält die 18h-Teilzeit-Untergrenze im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Anwesenheitserfassung, Mobilitätspauschale und Teilzeit-Untergrenzen übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

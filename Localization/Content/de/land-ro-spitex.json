@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für häusliche Pflege Rumänien | Wegzeit &amp; Teilzeit-Überstunden",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege (Îngrijire la domiciliu) in Rumänien",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für Vertragsfallen.</span>",
+    "subtitle": "Klacks plant Einsätze und Touren und bildet Wegzeit zwischen Klient:innen korrekt ab, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; und verhindert, dass Teilzeitkräfte ungewollt Überstunden zugeteilt bekommen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Tourenplanung in der häuslichen Pflege in Rumänien",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege in Rumänien",
+    "title": "Wegzeit-Vertragsklausel und die Teilzeit-Überstunden-Falle",
+    "items": [
+      { "icon": "alt_route", "title": "Wegzeit nur mit Vertragsklausel Arbeitszeit", "text": "Der Arbeitszeitbegriff nach Art. 111 Codul Muncii ist weit gefasst, doch Wegzeit zwischen Klient:innen zählt nur dann als (Überstunden-)Arbeitszeit, wenn Einzel- oder Kollektivvertrag dies ausdrücklich vorsieht." },
+      { "icon": "block", "title": "Teilzeitkräfte dürfen grundsätzlich keine Überstunden leisten", "text": "Nach Art. 105 Codul Muncii sind Überstunden bei Teilzeitverträgen nur bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten erlaubt." },
+      { "icon": "description", "title": "Fehlende Klausel macht den Vertrag zum Vollzeitvertrag", "text": "Fehlt im Teilzeitvertrag die entsprechende Überstundenklausel, gilt der Vertrag automatisch als Vollzeitvertrag &mdash; mit allen Konsequenzen für Lohn und Planung." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in Rumänien entlastet",
+    "subtitle": "Von der vertragskonformen Wegzeit bis zur Teilzeit-Kontrolle &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuss." },
+      { "icon": "schedule", "title": "Wegzeit vertragskonform abgebildet", "text": "Klacks erfasst Fahrzeit zwischen Klient:innen als Arbeitszeit, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; nicht pauschal, sondern regelbasiert je Vertrag." },
+      { "icon": "block", "title": "Teilzeit-Überstunden verhindert", "text": "Klacks warnt, bevor einer Teilzeitkraft ohne entsprechende Vertragsklausel Überstunden zugeteilt werden &mdash; ausser bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten." },
+      { "icon": "description", "title": "Vertragsklauseln im Blick", "text": "Klacks hält fest, welche Verträge eine Überstundenklausel enthalten, und schützt so vor der ungewollten Umwandlung in einen Vollzeitvertrag." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt &mdash; Klacksy prüft Vertragsart, Wegzeit-Regelung und Verfügbarkeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wegzeit und Teilzeitvertrag, ein Plan",
+    "text": "Klacks prüft automatisch, ob eine Teilzeitkraft laut Vertrag Wegzeit als Arbeitszeit erfasst bekommt, und verhindert unzulässige Überstunden, bevor sie entstehen."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, Touren und Teilzeitverträge korrekt abbildet &mdash; kostenlos und ohne Registrierung."
+  }
+}

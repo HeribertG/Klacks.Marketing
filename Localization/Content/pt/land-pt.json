@@ -1,53 +1,50 @@
 {
-  "pageTitle": "Klacks para Portugal | Suplementos de horas extraordinárias no SNS calculados ao milímetro",
+  "pageTitle": "Klacks para Empresas em Portugal | Planeamento de Pessoal Open Source com Registo de Ponto & Soberania dos Dados",
   "hero": {
-    "badgeIcon": "gavel",
-    "badge": "Para hospitais do Serviço Nacional de Saúde (SNS) português",
-    "titleHtml": "45% a 85,5% de suplemento &mdash; <span class=\"text-secondary\">escalonado em blocos de 48 horas, não de forma fixa.</span>",
-    "subtitle": "O Decreto-Lei n.º 119/2026 (em vigor desde 17 de junho de 2026) limita as horas extraordinárias dos médicos do SNS a 150 ou 250 horas por ano (este último valor em regime de dedicação plena) e prevê, em caso de excesso, suplementos escalonados de 45% a 85,5% do vencimento base, calculados em blocos rigorosos de 48 horas, acrescidos de um suplemento de 20% a partir de 48 horas de trabalho ao sábado/domingo num período de 8 semanas. A escassez aguda de médicos no SNS torna o registo isento de erros e auditável destes suplementos numa condição essencial para o funcionamento dos hospitais.",
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; Soberania dos dados em conformidade com a CNPD",
+    "titleHtml": "Planeamento de pessoal em que <span class=\"text-secondary\">mantém sempre o controlo.</span>",
+    "subtitle": "O Klacks regista automaticamente os horários de trabalho nos termos do registo de ponto obrigatório, monitoriza o banco de horas grupal e pode ser controlado através de um assistente de IA &mdash; on-premise, open source, com o modelo de IA à sua escolha. Assim, os dados de pessoal permanecem na sua própria infraestrutura, em plena conformidade com as exigências de proporcionalidade da CNPD.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Grelha de escalas de serviço do Klacks",
+    "screenshotAlt": "Vista geral da escala de serviço do Klacks para empresas em Portugal",
     "screenshotLabel": "Escala de serviço"
   },
   "challenges": {
-    "eyebrow": "O dia a dia no sistema de saúde português",
-    "title": "Suplementos escalonados nos termos do Decreto-Lei n.º 119/2026",
+    "eyebrow": "O dia a dia do planeamento nas empresas portuguesas",
+    "title": "Registo de ponto, banco de horas e exigências da CNPD",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Limite de 150 ou 250 horas extraordinárias por ano", "text": "Os médicos do SNS sem dedicação plena podem realizar no máximo 150 horas extraordinárias por ano; com dedicação plena, o limite sobe para 250 horas &mdash; um limite que tem de ser acompanhado continuamente ao longo do ano." },
-      { "icon": "gavel", "title": "Suplemento de 45% a 85,5% em blocos de 48h", "text": "Ao ultrapassar o limite anual, aplicam-se dez níveis escalonados de suplemento, de 45% a 85,5% do vencimento base, calculados sempre em blocos rigorosos de 48 horas &mdash; acrescidos de um suplemento de 20% a partir de 48 horas de trabalho ao fim de semana num período de 8 semanas." },
-      { "icon": "groups", "title": "Escassez aguda de médicos no SNS", "text": "Vários serviços de urgência tiveram de restringir a sua atividade em 2026 por simples falta de médicos disponíveis &mdash; neste contexto, um cálculo de suplementos rigoroso e em conformidade com a lei torna-se indispensável para conseguir sequer atrair médicos para serviços adicionais." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Soberania dos dados",
-    "title": "Soberania total dos dados: Open Source &amp; On-Premise",
-    "text": "O Klacks foi concebido para setores com requisitos de segurança e conformidade rigorosos, nos quais os dados sensíveis dos colaboradores não devem sair da própria infraestrutura. Sendo uma solução de código aberto, o Klacks pode ser executado diretamente no seu próprio centro de dados ou em servidores locais protegidos &mdash; sem depender de fornecedores de cloud norte-americanos. Isto facilita o cumprimento do RGPD e das exigências da Comissão Nacional de Proteção de Dados (CNPD) portuguesa, de forma totalmente autónoma.",
-    "bullets": [
-      "Soberania on-premise: controlo total sobre escalas de serviço, comprovativos de suplementos e registos dentro do seu próprio ambiente informático.",
-      "Arquitetura LLM livre: as sugestões de planeamento assistidas por IA também podem funcionar com modelos de linguagem alojados localmente, sem que os dados sejam enviados para APIs externas.",
-      "Código-fonte auditável: base de código totalmente acessível para auditorias informáticas e para a administração do SNS."
+      { "icon": "fingerprint", "title": "Registo de ponto completo &amp; consultável", "text": "As entidades empregadoras têm de registar de forma completa o início, o fim e os intervalos de cada período de trabalho, torná-los imediatamente consultáveis no local de trabalho e conservá-los durante 5 anos &mdash; as infrações constituem contraordenação grave, com coimas até cerca de 9.690 € (art. 202.º e art. 554.º do CT)." },
+      { "icon": "groups", "title": "Banco de horas grupal por referendo", "text": "Se pelo menos 65 % dos trabalhadores aprovarem por referendo, o período normal de trabalho diário pode ser alargado até 2 horas &mdash; com um limite de 50 horas/semana, 150 horas/ano e uma vigência máxima de 4 anos (art. 208.º-B do CT)." },
+      { "icon": "privacy_tip", "title": "Registo biométrico só com teste de proporcionalidade", "text": "A CNPD não proíbe de forma generalizada o registo biométrico de assiduidade, mas exige, caso a caso, um teste de proporcionalidade rigoroso, bem como uma solução alternativa para situações de erro." }
     ]
   },
   "solutions": {
-    "title": "Como o Klacks calcula automaticamente os suplementos escalonados do SNS",
-    "subtitle": "Limite anual de 150h/250h, blocos de 48h e suplemento de fim de semana num único plano.",
+    "title": "Como o Klacks alivia as empresas portuguesas",
+    "subtitle": "Do registo de ponto automático à infraestrutura própria &mdash; tudo funciona em conjunto.",
     "items": [
-      { "icon": "bolt", "title": "Motor de recuperação para faltas", "text": "Se um profissional falta, o Klacks encontra imediatamente um substituto qualificado &mdash; tendo em conta o limite anual de horas extraordinárias ainda disponível." },
-      { "icon": "fact_check", "title": "Suplemento por blocos de 48h escalonado automaticamente", "text": "O Klacks calcula corretamente o suplemento de 45%-85,5% em blocos de 48 horas e acrescenta automaticamente o suplemento de 20% para trabalho ao fim de semana assim que o limiar é atingido." },
-      { "icon": "calendar_month", "title": "Assistente de preenchimento automático com verificação do limite anual", "text": "O assistente de preenchimento automático, baseado em algoritmo genético, considera automaticamente o limite anual de 150h/250h em cada sugestão de serviço adicional." },
-      { "icon": "groups", "title": "Planeamento de turnos rigoroso quanto às qualificações", "text": "Apenas os colaboradores com a qualificação adequada são sugeridos para um turno." }
+      { "icon": "fingerprint", "title": "Registo de ponto automático &amp; em conformidade legal", "text": "O Klacks regista de forma completa o início, o fim e os intervalos de cada turno, mantém-nos disponíveis durante 5 anos e torna-os imediatamente consultáveis no local de trabalho &mdash; exatamente como exige o art. 202.º do CT." },
+      { "icon": "groups", "title": "Banco de horas grupal calculado corretamente", "text": "Assim que o referendo for aprovado com 65 % de votos favoráveis, o Klacks monitoriza automaticamente o limite de 50 horas semanais, o limite de 150 horas anuais e a vigência máxima de 4 anos." },
+      { "icon": "bedtime", "title": "Períodos de descanso &amp; dia de descanso semanal respeitados", "text": "O período de descanso diário de 11 horas (art. 214.º do CT) e o dia de descanso semanal (art. 232.º do CT) &mdash; incluindo a sua transferência em regime de laboração contínua, vigilância ou limpeza &mdash; são planeados automaticamente." },
+      { "icon": "shield_lock", "title": "On-premise: soberania dos dados para dados sensíveis", "text": "O Klacks corre na sua própria infraestrutura e é você quem escolhe o modelo de IA &mdash; inclusive alojado localmente. Isto facilita o teste de proporcionalidade exigido pela CNPD para dados biométricos e de tempo de trabalho, sem qualquer transferência para o estrangeiro." },
+      { "icon": "smart_toy", "title": "Klacksy: baseado em regras, sem caixa negra", "text": "O assistente de IA integrado, Klacksy, planeia por comando de voz &mdash; de forma rastreável, segundo competências e regras predefinidas, e não como uma decisão opaca da IA." },
+      { "icon": "event_busy", "title": "Faltas rapidamente resolvidas", "text": "Se alguém falta, o Klacks mostra de imediato quem está qualificado e disponível &mdash; sem ter de refazer todo o plano." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistente de IA",
     "title": "Klacksy: o assistente integrado para a sua equipa",
-    "text": "O Klacksy não é um chatbot de marketing acrescentado à parte, mas está diretamente integrado na interface do Klacks. Colaboradores e responsáveis de planeamento consultam horários de serviço por chat, apresentam pedidos de troca de turno ou esclarecem conflitos de qualificações dentro da equipa. Um sistema de competências e regras definido garante que o Klacksy só faz sugestões compatíveis com as qualificações reais e as regras de suplementos aplicáveis aos envolvidos.",
+    "text": "O Klacksy não é um chatbot de marketing acrescentado à parte, mas está diretamente integrado na interface do Klacks. Colaboradores e responsáveis de planeamento consultam horários de serviço por chat, apresentam pedidos de troca de turno ou esclarecem disponibilidades. Um sistema de competências e regras predefinido garante que o Klacksy faz sugestões rastreáveis &mdash; nunca uma decisão de caixa negra. Para empresas com exigências elevadas de soberania dos dados, o modelo de IA também pode ser alojado localmente.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistente de chat Klacksy na interface do Klacks"
   },
+  "example": {
+    "eyebrow": "Na prática",
+    "title": "Registo de ponto e banco de horas, num relance",
+    "text": "O Klacks regista cada turno em conformidade legal, verifica automaticamente os limites do banco de horas grupal e sugere de imediato a respetiva compensação &mdash; sem cálculos manuais."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Experimente o Klacks para hospitais do SNS português",
-    "text": "Descubra no Playground como o Klacks calcula automaticamente os suplementos escalonados do SNS &mdash; ou opere o Klacks on-premise para soberania total dos dados."
+    "title": "Experimente o Klacks na sua empresa",
+    "text": "Experimente no Playground como o Klacks automatiza o registo de ponto, o banco de horas e os períodos de descanso &mdash; on-premise ou no Playground, gratuito e sem registo."
   }
 }

@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks für Krankenhäuser in Polen | 7h35-Norm, Dyżur & Ruhezeiten",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser &amp; Kliniken (szpitale) in Polen",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Dyżury lückenlos &mdash; mit der medizinischen 7h35-Sondernorm und den Ruhezeiten nach Kodeks pracy im Blick. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Polen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Polen",
+    "title": "Zwei Arbeitszeit-Normen, ein Haus",
+    "items": [
+      {
+        "icon": "medical_services",
+        "title": "7h35-Sondernorm fürs medizinische Personal",
+        "text": "Ärztliches und pflegerisches Personal arbeitet regulär 7 Stunden 35 Minuten täglich bzw. 37 Stunden 55 Minuten wöchentlich &mdash; technisches und Wirtschaftspersonal bleibt bei der regulären 8h/40h-Norm (Art. 93 Ustawa o działalności leczniczej)."
+      },
+      {
+        "icon": "e911_emergency",
+        "title": "Dyżur medyczny bis zu 24 Stunden",
+        "text": "Bereitschaftsdienste von bis zu 24 Stunden sind zulässig &mdash; unmittelbar danach stehen mindestens 11 Stunden ununterbrochene Ruhezeit zu."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ausnahme: verkürzte Wochenruhe",
+        "text": "In organisatorisch begründeten Ausnahmefällen darf die wöchentliche Ruhezeit diensthabenden Personals auf mindestens 24 Stunden verkürzt werden &mdash; muss aber innerhalb von 14 Tagen ausgeglichen werden."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Kliniken in Polen entlastet",
+    "subtitle": "Von der 7h35-Norm bis zum Ausgleich nach Dyżur &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Zwei Normen parallel geplant",
+        "text": "Klacks unterscheidet automatisch zwischen der 7h35/37h55-Norm für medizinisches Personal und der regulären 8h/40h-Norm für technisches und Wirtschaftspersonal."
+      },
+      {
+        "icon": "e911_emergency",
+        "title": "Dyżur medyczny korrekt eingeplant",
+        "text": "Bereitschaftsdienste bis 24 Stunden werden geplant, inklusive der zwingenden 11-Stunden-Ruhezeit direkt danach."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Verkürzte Wochenruhe im Blick",
+        "text": "Wird die wöchentliche Ruhezeit ausnahmsweise auf 24 Stunden verkürzt, behält Klacks die 14-Tage-Frist für den Ausgleich im Blick."
+      },
+      {
+        "icon": "verified",
+        "title": "Stationen &amp; Qualifikationen abgestimmt",
+        "text": "Jeder Dienst wird nur Personen mit passender Qualifikation zugeteilt &mdash; über alle Stationen hinweg."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Fülle die Dyżury der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Dyżur, Ruhezeit, zwei Normen",
+    "text": "Nach einem 24-Stunden-Dyżur plant Klacks automatisch die 11-Stunden-Ruhezeit ein und hält gleichzeitig die 7h35-Norm für das übrige medizinische Personal ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Dyżury, Ruhezeiten und die zwei Arbeitszeitnormen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

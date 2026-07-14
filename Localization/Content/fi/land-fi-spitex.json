@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks Suomen kotihoidolle | Jaksotyö, 9 tunnin lepoaika & SOTE",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Suomen kotihoidolle",
+    "titleHtml": "Enemmän aikaa hoivaan, <span class=\"text-secondary\">vähemmän reittisuunnitteluun.</span>",
+    "subtitle": "Klacks suunnittelee kotihoidon käynnit ja reitit jaksotyössä automaattisesti &mdash; mukaan lukien lyhennetyn 9 tunnin lepoajan 14 vuorokauden tasoituksineen sekä ruokailuajan, joka lasketaan työajaksi työn aikana. On-Premise-ratkaisuna, jotta potilastiedot eivät koskaan poistu talostanne.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajana-näkymä Suomen kotihoidon reittisuunnitteluun",
+    "screenshotLabel": "Aikajana"
+  },
+  "challenges": {
+    "eyebrow": "Arki suomalaisessa kotihoidossa",
+    "title": "Lyhennetty lepoaika, ruokailuaika ja lukuisat käynnit",
+    "items": [
+      { "icon": "bedtime", "title": "Vuorokausilepo lyhennetty 9 tuntiin", "text": "Kotihoidon jaksotyössä (SOTE-sopimus) vuorokautinen lepoaika voidaan lyhentää 9 tuntiin &mdash; menetetyt tunnit on tällöin annettava yhdenjaksoisena tasoituksena 14 vuorokauden kuluessa. Useiden vuorojen yli tätä on käsin vaikea valvoa." },
+      { "icon": "restaurant", "title": "Ruokailuaika lasketaan työajaksi", "text": "Vaikka tavallinen ruokatauko on normaalisti palkatonta vapaa-aikaa, SOTE-jaksotyössä ateria nautitaan työajan kuluessa ja lasketaan työajaksi &mdash; yksityiskohta, joka jää monilta työajanseurannoilta huomaamatta." },
+      { "icon": "route", "title": "Monta käyntiä, yksi päivä", "text": "Lukuisia asiakaskäyntejä ympäri päivän, tiukoin aikaikkunoin ja vaihtelevin matkoin &mdash; käsin tehokkaasti suunniteltavaksi lähes mahdotonta." }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa suomalaisen kotihoidon arkea",
+    "subtitle": "Optimoidusta reitistä oikein laskettuun ruokailuaikaan &mdash; kaikki toimii yhdessä.",
+    "items": [
+      { "icon": "route", "title": "Reitit optimoidaan automaattisesti", "text": "Klacks suunnittelee käyntireitit niin, että matkat pysyvät lyhyinä ja aikaikkunat pitävät &mdash; autolle, pyörälle tai jalan kuljettaville." },
+      { "icon": "bedtime", "title": "9 tunnin lepoaika ja 14 vuorokauden tasoitus valvotaan", "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja varmistaa, että tasoitus suunnitellaan lakisääteisen 14 vuorokauden määräajan kuluessa." },
+      { "icon": "restaurant", "title": "Ruokailuaika kirjataan oikein työajaksi", "text": "Klacks kirjaa jaksotyön aikana nautitun aterian palkalliseksi työajaksi &mdash; sen sijaan, että se virheellisesti käsiteltäisiin palkattomana taukona." },
+      { "icon": "verified", "title": "Pätevyydet huomioidaan automaattisesti", "text": "Jokainen käynti osoitetaan vain henkilölle, jolla on sopiva pätevyys &mdash; täysin ilman manuaalista tarkistusta." },
+      { "icon": "shield_lock", "title": "On-Premise: potilastiedot pysyvät talossa", "text": "Klacks toimii omassa infrastruktuurissanne. Potilastiedot eivät poistu talostanne &mdash; eivät edes tekoälyä varten." },
+      { "icon": "smart_toy", "title": "Klacksy suunnittelee puheella", "text": "”Täytä huomisen reitit” riittää. Sairastapauksessa Klacksy ehdottaa heti saatavilla olevaa sijaista." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Lyhennetty lepo, ruokailuaika, yksi suunnitelma",
+    "text": "Kun vuoro lyhentää vuorokausilevon 9 tuntiin, Klacks suunnittelee tasoituksen automaattisesti 14 vuorokauden kuluessa &mdash; ja kirjaa jaksotyön aikaisen ruokailuajan oikein työajaksi palkattoman tauon sijaan."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Kokeilkaa Klacksia kotihoidossanne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa reitit, lepoajat ja ruokailuajan &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

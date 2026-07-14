@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks pour les hôpitaux en Belgique | Art. 23 de la loi sur le travail & suppléments non cumulables",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Pour les hôpitaux &amp; cliniques en Belgique (CP 330)",
+    "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">tiennent 24 heures sur 24.</span>",
+    "subtitle": "Klacks planifie les services et les équipes &mdash; en tenant compte automatiquement de l'exception de l'art. 23 (jusqu'à 11h/jour, 50h/semaine en moyenne trimestrielle) et des suppléments non cumulables pour le week-end, les jours fériés et le soir.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks pour les hôpitaux belges",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien hospitalier en Belgique",
+    "title": "Art. 23, moyenne trimestrielle et de nombreux suppléments",
+    "items": [
+      { "icon": "gavel", "title": "Jusqu'à 11h/jour, 50h/semaine &mdash; en moyenne trimestrielle", "text": "L'art. 23 de la loi sur le travail autorise pour la CP 330 des services plus longs, à condition que la moyenne hebdomadaire de 38 heures soit respectée sur une période de référence en principe trimestrielle &mdash; presque impossible à surveiller à la main sur de nombreuses rotations." },
+      { "icon": "percent", "title": "Des suppléments qui ne s'additionnent pas", "text": "26% le samedi, 56% le dimanche/jour férié, 20% pour le travail du soir entre 19h et 20h &mdash; les suppléments ne sont pas cumulables, seul le plus élevé s'applique. Un arbitrage permanent à la main." },
+      { "icon": "schedule", "title": "Couverture des services 24 heures sur 24, 7 jours sur 7", "text": "Assurer sans faille les services de jour, de soir et de nuit dans tous les services, tout en respectant la moyenne trimestrielle, est presque impossible à réaliser à la main." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les hôpitaux belges",
+    "subtitle": "Du contrôle trimestriel au supplément correct &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      { "icon": "schedule", "title": "Couverture 24/7 sans faille", "text": "Services de jour, de soir et de nuit dans tous les services &mdash; Klacks signale immédiatement chaque lacune et la comble automatiquement sur demande." },
+      { "icon": "gavel", "title": "Moyenne trimestrielle surveillée automatiquement", "text": "Klacks garde un œil sur la moyenne de 38 heures sur la période de référence, même si certaines semaines atteignent jusqu'à 50 heures." },
+      { "icon": "percent", "title": "Toujours le supplément le plus élevé", "text": "Klacks détecte automatiquement le travail du samedi, du dimanche, des jours fériés et du soir, et applique toujours le supplément le plus élevé, non cumulable." },
+      { "icon": "verified", "title": "Qualifications &amp; services", "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par service, département et fonction." },
+      { "icon": "shield_lock", "title": "On-premise : les données restent chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données du personnel et des patients ne quittent pas l'établissement &mdash; pas même pour l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte de la qualification et de la moyenne trimestrielle." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Moyenne trimestrielle et supplément, un seul planning",
+    "text": "Klacks garde un œil sur la moyenne de 38 heures sur le trimestre, même si certains services durent jusqu'à 11 heures, et applique automatiquement le supplément le plus élevé en cas de travail le week-end ou le soir &mdash; sans calcul manuel."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre clinique",
+    "text": "Testez dans le Playground comment Klacks prend en charge la moyenne trimestrielle, les suppléments et les services &mdash; gratuitement et sans inscription."
+  }
+}

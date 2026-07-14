@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks for Hospitals in Ireland | OWTA Reference Period, Compensatory Rest & the NCHD Agreement",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For hospitals &amp; clinics in Ireland",
+    "titleHtml": "Rosters that <span class=\"text-secondary\">work round the clock.</span>",
+    "subtitle": "Klacks plans wards and shifts without gaps &mdash; keeping the 6-month reference period for the 48-hour OWTA limit, compensatory rest under WRC Code of Practice COP8, and the consecutive-days requirements of the NCHD Agreement all in view. On-premise, so patient data never leaves your organisation.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule grid for hospitals and clinics in Ireland",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Everyday hospital life in Ireland",
+    "title": "6-month reference period, compensatory rest and NCHD requirements",
+    "items": [
+      { "icon": "gavel", "title": "6-month reference period for the 48-hour limit", "text": "For medical staff, Section 15 of the OWTA 1997 allows a reference period of 6 rather than 4 months for calculating the average 48-hour week &mdash; almost impossible to track by hand across changing shift patterns." },
+      { "icon": "bedtime", "title": "Compensatory rest under COP8", "text": "If a rest period is shortened, the WRC Code of Practice on Compensatory Rest Periods (COP8) requires a compensatory rest period &mdash; when and how it is granted must be documented." },
+      { "icon": "local_hospital", "title": "NCHD Agreement: 10 consecutive duty days maximum", "text": "The HSE/IMO NCHD Agreement 2022, in force since January 2023, mandates rest for non-consultant hospital doctors after a maximum of 10 consecutive duty days, together with compensatory payments." }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off hospitals in Ireland",
+    "subtitle": "From seamless 24/7 cover to compensatory rest &mdash; it all fits together.",
+    "items": [
+      { "icon": "schedule", "title": "Seamless 24/7 cover", "text": "Day, evening and night shifts across every ward &mdash; Klacks flags every gap instantly and fills it automatically on request." },
+      { "icon": "gavel", "title": "6-month reference period calculated automatically", "text": "Klacks calculates the average 48-hour week over the 6-month period provided for medical staff under Section 15 OWTA." },
+      { "icon": "bedtime", "title": "Compensatory rest under COP8 planned in", "text": "If a rest period is shortened, Klacks automatically suggests the appropriate compensatory rest period under WRC Code of Practice COP8." },
+      { "icon": "verified", "title": "NCHD duty days kept in view", "text": "Klacks counts consecutive duty days for non-consultant hospital doctors and warns before the 10-day limit from the NCHD Agreement 2022 is exceeded." },
+      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Fill next week's night shifts on Medicine\" is enough &mdash; Klacksy takes qualifications and rest periods into account." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Multiple wards, one view of COP8 and NCHD",
+    "text": "Every ward has its own staffing rules. Klacks plans them together, calculates the 48-hour limit over the 6-month period, and automatically suggests the appropriate compensatory rest under COP8 whenever a rest period is shortened &mdash; the director of nursing can see at any time where things are getting tight."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Experience Klacks in your hospital",
+    "text": "Try the Playground to see how Klacks handles wards, compensatory rest and NCHD requirements &mdash; or install it directly within your own organisation. Free and without registration."
+  }
+}

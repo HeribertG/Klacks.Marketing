@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks voor de thuiszorg in Nederland | ORT-toeslagen & CAO VVT",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Voor de thuiszorg &amp; ambulante zorg in Nederland",
+    "titleHtml": "Elke ORT-toeslagschaal <span class=\"text-secondary\">automatisch juist.</span>",
+    "subtitle": "Klacks berekent de onregelmatigheidstoeslag (ORT) van de CAO VVT automatisch per tijdvak en herkent de nieuwe €25-dagvergoeding vanaf 1-1-2026 &mdash; on-premise, zodat patiëntgegevens uw organisatie nooit verlaten.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning in de Nederlandse thuiszorg",
+    "screenshotLabel": "Tijdlijn"
+  },
+  "challenges": {
+    "eyebrow": "De dagelijkse praktijk in de Nederlandse thuiszorg",
+    "title": "ORT-toeslagen, €25-vergoeding en oproepkrachten",
+    "items": [
+      { "icon": "schedule", "title": "ORT: vijf toeslagschalen", "text": "De onregelmatigheidstoeslag van de CAO VVT (geldig vanaf 1-1-2026) onderscheidt werkdag-avond (22%), werkdag-nacht (47%), zaterdag-dag (38%), zaterdag-nacht (52%) en zon-/feestdag (60%) &mdash; handmatig nauwelijks foutloos te berekenen." },
+      { "icon": "paid", "title": "Nieuwe €25-dagvergoeding vanaf 2026", "text": "Wie in Verzorging/Verpleging een extra dag werkt bovenop de overeengekomen werkdagen, ontvangt daarvoor vanaf 1-1-2026 25 euro bruto extra &mdash; behalve bij nulurencontracten of regiecontracten en Hulp bij het huishouden." },
+      { "icon": "event_repeat", "title": "Oproepkrachten in de zorg", "text": "Oproepkrachten moeten minstens 4 dagen van tevoren worden geïnformeerd &mdash; bij afzegging op korte termijn blijft de volledige loonaanspraak bestaan." }
+    ]
+  },
+  "solutions": {
+    "title": "Hoe Klacks de Nederlandse thuiszorg ontlast",
+    "subtitle": "Van de automatische ORT-berekening tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
+    "items": [
+      { "icon": "schedule", "title": "ORT automatisch per tijdvak berekend", "text": "Klacks kent alle vijf ORT-schalen van de CAO VVT &mdash; 22%, 47%, 38%, 52% en 60% &mdash; en wijst elke dienst automatisch de juiste schaal toe." },
+      { "icon": "paid", "title": "€25-dagvergoeding automatisch herkend", "text": "Klacks toont zodra een extra werkdag de nieuwe €25-vergoeding uitlokt &mdash; en waar nulurencontracten of regiecontracten zijn uitgezonderd." },
+      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "De 4-dagen-aankondigingstermijn wordt automatisch nageleefd, afzeggingen op korte termijn met loonaanspraak worden direct zichtbaar gemaakt." },
+      { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks bepaalt de routes zo dat afstanden kort blijven en tijdvakken worden nageleefd &mdash; voor auto, fiets of te voet." },
+      { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke inzet wordt alleen toegewezen aan personen met de juiste kwalificatie &mdash; volledig zonder handmatige controle." },
+      { "icon": "smart_toy", "title": "Klacksy plant via spraak", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekmelding stelt Klacksy direct een beschikbare vervanger voor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Nachtdienst, ORT, één blik",
+    "text": "Klacks herkent automatisch wanneer een nachtdienst in het weekend de 52%-ORT-schaal uitlokt, en kent de nieuwe €25-dagvergoeding bij een extra werkdag meteen mee toe &mdash; zonder handmatig nawerk."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Ervaar Klacks in uw thuiszorgorganisatie",
+    "text": "Probeer in de playground hoe Klacks ORT-toeslagen, de €25-vergoeding en routes overneemt &mdash; of installeer het direct op uw eigen infrastructuur. Gratis en zonder registratie."
+  }
+}

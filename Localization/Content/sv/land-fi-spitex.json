@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks för hemtjänsten i Finland (kotihoito) | Periodarbete, 9 timmars vila & SOTE",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "För hemtjänsten (kotihoito) i Finland",
+    "titleHtml": "Mer tid för vård, <span class=\"text-secondary\">mindre för ruttplanering.</span>",
+    "subtitle": "Klacks planerar besök och rutter i hemtjänstens periodarbete (jaksotyö) automatiskt &mdash; inklusive den förkortade 9-timmars vilotiden med 14-dagars kompensation och måltidstiden som räknas som arbetstid under arbetet. On-premise, så att patientdata aldrig lämnar ditt hus.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för ruttplanering av hemtjänsten i Finland",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Vardagen inom den finländska hemtjänsten",
+    "title": "Förkortad vilotid, måltidstid och många besök",
+    "items": [
+      { "icon": "bedtime", "title": "Dygnsvilan förkortad till 9 timmar", "text": "I hemtjänstens periodarbete (SOTE-avtalet) kan den dagliga vilotiden förkortas till 9 timmar &mdash; de förlorade timmarna måste då kompenseras sammanhängande inom 14 dagar. Över många skift är detta svårt att övervaka för hand." },
+      { "icon": "restaurant", "title": "Måltidstiden räknas som arbetstid", "text": "Medan den vanliga matrasten normalt är obetald fritid, intas måltiden i SOTE-periodarbetet under arbetstiden och räknas som arbetstid &mdash; en detalj som många tidsregistreringssystem missar." },
+      { "icon": "route", "title": "Många besök, en dag", "text": "Många klientbesök spridda över dagen, med snäva tidsfönster och varierande sträckor &mdash; nästan omöjligt att planera effektivt för hand." }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks den finländska hemtjänsten",
+    "subtitle": "Från den optimerade rutten till den korrekt räknade måltidstiden &mdash; allt hänger ihop.",
+    "items": [
+      { "icon": "route", "title": "Rutter optimeras automatiskt", "text": "Klacks lägger besöksrutterna så att vägarna blir korta och tidsfönstren hålls &mdash; för bil, cykel eller till fots." },
+      { "icon": "bedtime", "title": "9-timmars vila &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och säkerställer att kompensationen planeras in inom den lagstadgade 14-dagarsfristen." },
+      { "icon": "restaurant", "title": "Måltidstiden bokförs korrekt som arbetstid", "text": "Klacks bokför måltiden som intas under periodarbetet som betald arbetstid &mdash; i stället för att felaktigt behandla den som en obetald rast." },
+      { "icon": "verified", "title": "Kompetenser beaktas automatiskt", "text": "Varje besök tilldelas endast personer med rätt kompetens &mdash; helt utan manuell kontroll." },
+      { "icon": "shield_lock", "title": "On-premise: patientdata stannar i huset", "text": "Klacks körs på din egen infrastruktur. Patientdata lämnar inte ditt hus &mdash; inte ens till AI:n." },
+      { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Fyll rutterna för i morgon” räcker. Vid ett sjukdomsfall föreslår Klacksy omedelbart en tillgänglig ersättare." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Förkortad vila, måltidstid, ett schema",
+    "text": "Om ett skift förkortar dygnsvilan till 9 timmar planerar Klacks automatiskt in kompensationen inom 14 dagar &mdash; och bokför måltidstiden under periodarbetet korrekt som arbetstid, i stället för som obetald rast."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Upplev Klacks i din hemtjänst",
+    "text": "Testa i Playground hur Klacks tar hand om rutter, vilotider och måltidstid &mdash; eller installera det direkt på din egen infrastruktur. Gratis och utan registrering."
+  }
+}
