@@ -1,49 +1,50 @@
 {
-  "pageTitle": "Klacks per la Svizzera | Conforme alla ArG e pronto per la futura BGAP",
+  "pageTitle": "Klacks per le aziende svizzere | Pianificazione del personale open source con sovranità dei dati",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Per ospedali e Spitex in Svizzera",
-    "titleHtml": "Già pronti oggi per la <span class=\"text-secondary\">futura legge sulle cure.</span>",
-    "subtitle": "La Legge federale sulle condizioni di lavoro nel settore delle cure (BGAP) è ancora in fase di dibattito parlamentare &mdash; Klacks rispetta già oggi i requisiti centrali della ArG in materia di tempi di riposo e supplementi notturni, così al momento dell'entrata in vigore non dovrà ripianificare da capo.",
+    "badge": "Open Source &middot; On-Premise &middot; Protezione dei dati svizzera",
+    "titleHtml": "Pianificazione del personale, dove <span class=\"text-secondary\">il controllo resta a Lei.</span>",
+    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i giri e si comanda tramite l'assistente IA &mdash; On-Premise, open source, con il modello di IA di Sua scelta. I dati del personale restano così nella Sua infrastruttura, in piena conformità con la nuova Legge federale sulla protezione dei dati (nLPD).",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Piano turni Klacks per ospedali e Spitex svizzeri",
-    "screenshotLabel": "Piano turni"
+    "screenshotAlt": "Panoramica del piano dei turni di Klacks per le aziende svizzere",
+    "screenshotLabel": "Piano dei turni"
   },
   "challenges": {
-    "eyebrow": "La quotidianità in ospedale e Spitex",
-    "title": "ArG, reperibilità e la futura BGAP",
+    "eyebrow": "La quotidianità della pianificazione nelle aziende svizzere",
+    "title": "LL, protezione dei dati e il bisogno di controllo",
     "items": [
-      { "icon": "hourglass_top", "title": "BGAP in arrivo", "text": "L'attuazione dell'iniziativa sulle cure infermieristiche (BGAP) dovrà in futuro disciplinare anche la comunicazione di piani turni e reperibilità &mdash; la legge non è ancora in vigore, ma chi pianifica già oggi in modo corretto sarà pronto al momento dell'entrata in vigore." },
-      { "icon": "gavel", "title": "Calcolare correttamente il supplemento notturno ArG", "text": "Il lavoro notturno regolare, secondo l'Art. 17b ArG, comporta un accredito di tempo del 10% &mdash; un calcolo manuale è soggetto a errori." },
-      { "icon": "event_repeat", "title": "Compensare correttamente il riposo domenicale", "text": "Per gli interventi domenicali di oltre 5 ore è dovuto un giorno di riposo compensativo di 24 ore nella settimana precedente o successiva (Art. 20 ArG)." }
+      { "icon": "gavel", "title": "Tenere sotto controllo la durata massima settimanale del lavoro", "text": "A seconda del settore vige una durata massima del lavoro di 45 o 50 ore &mdash; e le regole sul supplemento per lavoro straordinario variano da gruppo a gruppo. A mano, tutto ciò è soggetto a errori." },
+      { "icon": "bedtime", "title": "Pianificare correttamente tempi di riposo &amp; lavoro notturno", "text": "11 ore di riposo giornaliero, una durata massima del lavoro di 14 ore e un supplemento di tempo per il lavoro notturno regolare &mdash; la LL richiede un controllo senza lacune su ogni piano dei turni." },
+      { "icon": "cloud_off", "title": "Sovranità dei dati invece dell'obbligo di cloud USA", "text": "Dall'entrata in vigore della nuova Legge federale sulla protezione dei dati (nLPD), molte aziende si chiedono se i dati del personale possano finire in un cloud statunitense &mdash; soprattutto per le funzioni di IA." }
     ]
   },
   "solutions": {
     "title": "Come Klacks alleggerisce le aziende svizzere",
-    "subtitle": "Conforme alla ArG oggi, pronto per la futura BGAP.",
+    "subtitle": "Dal calcolo automatico dei supplementi alla propria infrastruttura &mdash; tutto si incastra alla perfezione.",
     "items": [
-      { "icon": "gavel", "title": "Supplemento Art. 17b automatico", "text": "Klacks calcola automaticamente l'accredito di tempo del 10% per il lavoro notturno regolare &mdash; corretto secondo l'Art. 17b ArG." },
-      { "icon": "event_repeat", "title": "Compensazione del riposo domenicale pianificata", "text": "L'Autofill Wizard integra automaticamente il giorno di riposo compensativo previsto dalla legge per gli interventi domenicali di oltre 5 ore." },
-      { "icon": "calendar_month", "title": "Pianificazione anticipata di turni e reperibilità", "text": "Klacks pianifica piani turni e di reperibilità con largo anticipo &mdash; la base per rispettare, senza modifiche, i futuri termini di comunicazione previsti dalla BGAP." },
-      { "icon": "groups", "title": "Spitex: giri e turni spezzati", "text": "Turni spezzati (split-shift) e tempi di percorrenza tra i clienti vengono pianificati automaticamente." },
-      { "icon": "shield_lock", "title": "On-Premise: sovranità dei dati in Svizzera", "text": "I dati del personale e dei pazienti restano nella Sua infrastruttura &mdash; anche per le funzioni di IA." }
+      { "icon": "gavel", "title": "Durata massima settimanale sorvegliata automaticamente", "text": "Klacks conosce i limiti di 45 e 50 ore per settore e le diverse soglie per il supplemento sul lavoro straordinario &mdash; dalla 60ª ora straordinaria annua per il personale d'ufficio e di vendita, dalla prima ora straordinaria per tutti gli altri settori." },
+      { "icon": "bedtime", "title": "Tempi di riposo &amp; supplemento notturno calcolati correttamente", "text": "Le 11 ore di riposo e il supplemento di tempo del 10% per il lavoro notturno regolare a partire dalla 25ª notte annua vengono pianificati automaticamente &mdash; come tempo libero, non come pagamento." },
+      { "icon": "route", "title": "Giri &amp; interventi ottimizzati automaticamente", "text": "Klacks organizza interventi e percorsi in modo che le distanze siano brevi e le fasce orarie rispettate &mdash; utilizzabile in tutti i settori." },
+      { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura, il modello di IA lo sceglie Lei &mdash; anche ospitato localmente, senza alcun trasferimento dei dati del personale all'estero." },
+      { "icon": "smart_toy", "title": "Klacksy: basato su regole, non una scatola nera", "text": "L'assistente IA integrato Klacksy pianifica tramite comando vocale &mdash; in modo tracciabile, secondo competenze e regole predefinite, non come decisione IA opaca." },
+      { "icon": "event_busy", "title": "Assenze coperte rapidamente", "text": "Se qualcuno viene a mancare, Klacks mostra subito chi è qualificato e disponibile &mdash; senza stravolgere l'intero piano." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistente IA",
     "title": "Klacksy: l'assistente integrato per il Suo team",
-    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks. Collaboratori e pianificatori possono chiedere via chat gli orari di servizio, presentare richieste di scambio turno o chiarire conflitti di qualifica all'interno del team. Un sistema di competenze e regole predefinito garantisce che Klacksy proponga solo soluzioni compatibili con le qualifiche effettive e con i requisiti di orario di lavoro delle persone coinvolte.",
+    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks. Collaboratori e pianificatori possono chiedere via chat gli orari di servizio, presentare richieste di scambio turno o chiarire le disponibilità. Un sistema di competenze e regole predefinito garantisce che Klacksy formuli proposte tracciabili &mdash; nessuna decisione da scatola nera. Per le aziende con elevate esigenze di protezione dei dati, il modello di IA può inoltre essere ospitato localmente.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistente chat Klacksy nell'interfaccia di Klacks"
   },
   "example": {
     "eyebrow": "Concretamente",
-    "title": "Lavoro notturno, turno domenicale, un unico piano",
-    "text": "Klacks riconosce automaticamente quando un intervento genera un supplemento notturno o una compensazione del riposo domenicale, e pianifica subito anche il recupero &mdash; senza calcoli manuali."
+    "title": "Lavoro notturno e durata massima settimanale, un unico sguardo",
+    "text": "Klacks riconosce automaticamente quando un intervento genera il supplemento notturno o quando viene raggiunta la durata massima settimanale, e propone subito anche la compensazione &mdash; senza calcoli manuali."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Scopra Klacks nella Sua azienda",
-    "text": "Provi nel Playground come Klacks automatizza supplementi ArG, tempi di riposo e pianificazione della reperibilità &mdash; On-Premise o nel Playground, gratuitamente."
+    "text": "Provi nel Playground come Klacks automatizza le durate massime del lavoro secondo la LL, i tempi di riposo e i supplementi notturni &mdash; On-Premise o nel Playground, gratuitamente e senza registrazione."
   }
 }

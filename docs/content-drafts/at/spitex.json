@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die Hauskrankenpflege | SWÖ-konforme Tourenplanung",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die Hauskrankenpflege",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Wegzeiten, die der SWÖ-Kollektivvertrag als volle Arbeitszeit zählt, und mit Rufbereitschaft im gesetzlichen Rahmen. On-Premise, damit Klient:innendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der Hauskrankenpflege",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der Hauskrankenpflege",
+    "title": "Touren, Schwerarbeit und Rufbereitschaft",
+    "items": [
+      { "icon": "alt_route", "title": "Touren statt Schichten", "text": "Jede Pflegekraft fährt von Klient:in zu Klient:in &mdash; Wegzeiten zählen nach dem SWÖ-KV als volle Arbeitszeit und müssen entsprechend eingeplant werden." },
+      { "icon": "fact_check", "title": "Schwerarbeit dokumentieren", "text": "Wer mind. 12 Tage im Monat im rotierenden Schichtdienst inkl. Nachtarbeit steht, kann als Schwerarbeiter:in gelten &mdash; das muss für die jährliche Meldung lückenlos nachgewiesen werden." },
+      { "icon": "phone_forwarded", "title": "Rufbereitschaft im Rahmen halten", "text": "Rufbereitschaft ist auf max. 30 Tage innerhalb von 3 Monaten begrenzt &mdash; von Hand ist das über mehrere Mitarbeitende kaum zu überblicken." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Hauskrankenpflege entlastet",
+    "subtitle": "Von der automatischen Tour bis zur Schwerarbeits-Dokumentation &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz sind und Zeitfenster eingehalten werden &mdash; für Auto, Rad oder zu Fuß." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "payments", "title": "SWÖ-konforme Zuschläge &amp; Rufbereitschaft", "text": "Zuschläge werden nach SWÖ-KV vorbereitet, und Klacks behält die 30-Tage-Grenze für Rufbereitschaft je Mitarbeitende:r im Blick." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Klient:innendaten verlassen Ihre Organisation nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wegzeiten, Rufbereitschaft, ein Klick",
+    "text": "Eine Pflegekraft fährt zwischen mehreren Klient:innen. Klacks zählt die Wegzeiten als Arbeitszeit mit, prüft die Rufbereitschafts-Grenze automatisch und bereitet die SWÖ-Zuschläge für die Lohnverrechnung vor."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Hauskrankenpflege erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Schwerarbeit und Rufbereitschaft übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

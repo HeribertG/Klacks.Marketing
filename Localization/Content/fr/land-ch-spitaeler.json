@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Klacks pour les hôpitaux en Suisse | Piquet, heures des médecins-assistant·e·s & 42+4",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Pour les hôpitaux &amp; cliniques en Suisse",
+    "titleHtml": "Des plannings de service qui <span class=\"text-secondary\">tiennent 24 heures sur 24.</span>",
+    "subtitle": "Klacks planifie les unités, les piquets et les heures des médecins-assistant·e·s sans la moindre lacune &mdash; avec un temps de présence et de disponibilité correctement enregistré. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks pour les hôpitaux suisses",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien hospitalier en Suisse",
+    "title": "Heures des médecins-assistant·e·s, piquet et le chemin vers le 42+4",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Médecins-assistant·e·s : limite de 50h &amp; heures supplémentaires",
+        "text": "Les médecins-assistant·e·s ne peuvent pas travailler plus de 50 heures par semaine ; les heures supplémentaires sont plafonnées à 140 heures par année &mdash; à peine gérable à la main sur de nombreuses rotations."
+      },
+      {
+        "icon": "call",
+        "title": "Piquet sur place ou à domicile ?",
+        "text": "Le piquet effectué sur place à l'hôpital compte comme temps de travail complet, le piquet à domicile uniquement comme temps d'intervention effectif, trajet compris &mdash; chaque planning doit refléter correctement cette distinction."
+      },
+      {
+        "icon": "trending_down",
+        "title": "En route vers le 42+4",
+        "text": "Certains hôpitaux &mdash; comme l'Hôpital universitaire de Zurich &mdash; réduisent progressivement la durée hebdomadaire de travail vers le modèle 42+4 heures : une heure de moins chaque année, sans compromettre la sécurité de l'exploitation."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Compenser correctement le repos dominical",
+        "text": "En cas d'intervention dominicale de plus de 5 heures, un jour de repos compensatoire de 24 heures est dû dans la semaine précédente ou suivante (art. 20 LTr) &mdash; à peine gérable à la main sur de nombreuses unités et rotations."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "Garder un œil sur la future BGAP",
+        "text": "Pour le personnel soignant, la loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet &mdash; qui planifie déjà rigoureusement aujourd'hui sera prêt lors de son entrée en vigueur."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les hôpitaux suisses",
+    "subtitle": "De la saisie correcte du piquet à la couverture 24 h/24 et 7 j/7 &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Couverture 24 h/24 sans faille",
+        "text": "Services de jour, de l'après-midi et de nuit sur toutes les unités &mdash; Klacks affiche immédiatement chaque lacune et la comble automatiquement sur demande."
+      },
+      {
+        "icon": "gavel",
+        "title": "Heures des médecins-assistant·e·s surveillées automatiquement",
+        "text": "La limite de 50 heures et le plafond annuel de 140 heures d'heures supplémentaires sont vérifiés en continu &mdash; les infractions n'apparaissent jamais."
+      },
+      {
+        "icon": "call",
+        "title": "Piquet correctement distingué",
+        "text": "Klacks enregistre différemment le piquet de présence sur place et le piquet à domicile &mdash; trajet compris en cas d'intervention depuis le domicile."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications &amp; unités",
+        "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification adéquate &mdash; par unité, service et fonction."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise : les données restent chez vous",
+        "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des patients ne quittent pas la clinique &mdash; pas même pour l'IA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte de la qualification et de la durée maximale de travail."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Majoration de nuit calculée automatiquement",
+        "text": "Klacks calcule automatiquement le crédit-temps de 10 % pour le travail de nuit régulier conformément à l'art. 17b LTr &mdash; sous forme de temps libre, pas de versement."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Rotation des médecins-assistant·e·s et piquet, un seul planning",
+    "text": "Klacks garde un œil sur la limite de 50 heures et les heures supplémentaires annuelles, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre clinique",
+    "text": "Testez dans le Playground comment Klacks prend en charge le piquet, les heures des médecins-assistant·e·s et les unités &mdash; ou installez-le directement dans votre établissement. Gratuit et sans inscription."
+  }
+}

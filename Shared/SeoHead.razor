@@ -13,13 +13,21 @@
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
+    // The URL path segment for canonical/alternate links. Defaults to PageKey,
+    // but differs when the content key (e.g. "land-ch-spitex") is not identical
+    // to the route (e.g. "land-ch/spitex").
+    [Parameter] public string? RoutePath { get; set; }
+
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
+
+    private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
     private string AbsoluteUrl(SupportedCulture culture)
     {
+        var routePath = EffectiveRoutePath;
         var path = culture.Code == SupportedCultures.DefaultCode
-            ? (PageKey.Length == 0 ? "/" : $"/{PageKey}")
-            : (PageKey.Length == 0 ? $"/{culture.UrlSlug}" : $"/{culture.UrlSlug}/{PageKey}");
+            ? (routePath.Length == 0 ? "/" : $"/{routePath}")
+            : (routePath.Length == 0 ? $"/{culture.UrlSlug}" : $"/{culture.UrlSlug}/{routePath}");
 
         return $"{BaseUrl}{path}";
     }

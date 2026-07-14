@@ -1,0 +1,81 @@
+{
+  "pageTitle": "Klacks für Österreich | Open Source, On-Premise, volle Kontrolle",
+  "hero": {
+    "badgeIcon": "verified",
+    "badge": "Open Source · On-Premise · Österreichischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. Arbeitszeit- und Ruhezeitgrenzen nach AZG und ARG sind von Anfang an eingebaut, und die Zustimmungspflicht des Betriebsrats nach § 96a ArbVG lässt sich mit einer transparenten, im eigenen Haus laufenden Software leichter erfüllen als mit einer intransparenten Cloud-KI.",
+    "screenshotFile": "app-calendar-de.png",
+    "screenshotAlt": "Klacks Kalenderansicht für die Personaleinsatzplanung in Österreich",
+    "screenshotLabel": "Kalender"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in österreichischen Betrieben",
+    "title": "Arbeitszeit, Mitbestimmung und Kontrolle über die eigenen Daten",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "AZG &amp; ARG im Blick behalten",
+        "text": "8 Stunden Normalarbeitszeit, 12 Stunden Höchstgrenze, im Schnitt maximal 48 Wochenstunden über den Durchrechnungszeitraum &mdash; und die ununterbrochene 36-Stunden-Wochenendruhe nach ARG, die den Sonntag einschliessen muss. Von Hand ist das kaum verlässlich zu überblicken."
+      },
+      {
+        "icon": "groups",
+        "title": "Betriebsrat &amp; § 96a ArbVG",
+        "text": "Dienstplan- und Zeiterfassungssoftware braucht nach § 96a ArbVG die Zustimmung des Betriebsrats (nicht zu verwechseln mit dem strengeren Persönlichkeitsschutz nach § 96) &mdash; wird sie verweigert, entscheidet die Schlichtungsstelle. Intransparente Cloud-Tools erschweren diesen Prozess zusätzlich."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Datenhoheit statt Cloud-Zwang",
+        "text": "Personaldaten in einer fremden Cloud zu verarbeiten, ist für viele Betriebe keine Option &mdash; On-Premise und Open Source schaffen die nötige Kontrolle."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks österreichische Betriebe entlastet",
+    "subtitle": "Von der automatischen Dienstplanung bis zur eigenen Infrastruktur &mdash; alles unter Ihrer Kontrolle.",
+    "items": [
+      {
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Der Autofill-Wizard plant Schichten und Touren nach Qualifikation, Verfügbarkeit und Wunsch &mdash; in Minuten statt Stunden."
+      },
+      {
+        "icon": "gavel",
+        "title": "AZG- &amp; ARG-Grenzen automatisch geprüft",
+        "text": "Höchstarbeitszeit, Ruhezeiten und die 36-Stunden-Wochenendruhe werden in Echtzeit überwacht &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "route",
+        "title": "Touren automatisch optimiert",
+        "text": "Wo Einsätze an wechselnden Orten stattfinden, legt Klacks die Reihenfolge so, dass Wege kurz und Zeitfenster eingehalten werden."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personaldaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source: nachvollziehbar &amp; anpassbar",
+        "text": "Der Quellcode liegt offen &mdash; Sie sehen, was Klacks tut, und passen an, was Ihr Betrieb braucht."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent mit freier Modellwahl",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet und lässt sich mit dem KI-Modell Ihrer Wahl betreiben. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben passen &mdash; transparent und nachvollziehbar, was die Zustimmungspflicht des Betriebsrats nach § 96a ArbVG leichter erfüllbar macht als eine intransparente Cloud-KI.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Dienstplan, mehrere Regelwerke im Griff",
+    "text": "Ein Betrieb mit Schichtarbeit plant Wochenenddienste, Klacks prüft automatisch die 36-Stunden-Wochenendruhe und bereitet die Zustimmung des Betriebsrats nach § 96a ArbVG mit einer nachvollziehbaren, On-Premise laufenden Lösung vor &mdash; ganz ohne Cloud-Zwang."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, AZG- und ARG-Grenzen prüft und sich per KI-Assistent steuern lässt &mdash; oder installieren Sie direkt On-Premise. Kostenlos und ohne Registrierung."
+  }
+}

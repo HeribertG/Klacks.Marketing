@@ -1,6 +1,6 @@
 window.klacksMagnifier = (function () {
     var ZOOM_FACTOR = 2.5;
-    var LENS_SIZE_RATIO = 0.5; // Loupe diameter relative to the shorter edge of the image.
+    var LENS_SIZE_RATIO = 0.75; // Loupe diameter relative to the shorter edge of the image.
     var FILTER_ID = 'klacks-magnifier-lens';
     var mutationObserver = null;
     var filterReady = false;
@@ -161,10 +161,24 @@ window.klacksMagnifier = (function () {
             var radius = size / 2;
             var src = img.currentSrc || img.src;
 
+            // The ring follows the cursor freely and stays a full circle even
+            // when it geometrically overhangs the image edge. Only the zoomed
+            // content (glassInner) is clipped to the part of the circle that
+            // actually lies over the image rectangle; in the overhanging rest
+            // of the circle the glass is transparent, so the real page shows
+            // through at normal scale. Overhang per side is computed in
+            // frame-local pixels, which equal glass-local pixels.
+            var clipTop = Math.max(0, radius - y);
+            var clipRight = Math.max(0, x + radius - width);
+            var clipBottom = Math.max(0, y + radius - height);
+            var clipLeft = Math.max(0, radius - x);
+
             glass.style.width = size + 'px';
             glass.style.height = size + 'px';
             glass.style.transform = 'translate3d(' + (x - radius) + 'px, ' + (y - radius) + 'px, 0)';
 
+            glassInner.style.clipPath =
+                'inset(' + clipTop + 'px ' + clipRight + 'px ' + clipBottom + 'px ' + clipLeft + 'px)';
             glassInner.style.backgroundImage = 'url("' + src + '")';
             glassInner.style.backgroundSize = (width * ZOOM_FACTOR) + 'px ' + (height * ZOOM_FACTOR) + 'px';
             glassInner.style.backgroundPosition =

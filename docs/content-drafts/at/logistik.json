@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks für Logistik | Touren, Lenkzeiten & Nachweispflicht",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport",
+    "titleHtml": "Touren, Lenkzeiten, Nachweise &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit Einsatz- und Lenkzeitgrenzen nach § 16 AZG und der 56-Tage-Nachweispflicht für Fahrtenschreiberdaten automatisch im Blick. Routen werden automatisch optimiert.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag",
+    "title": "Touren, Lenkzeiten und Nachweispflicht zugleich",
+    "items": [
+      { "icon": "alt_route", "title": "Touren &amp; Termine", "text": "Stopps, Zeitfenster und Wege müssen zusammenpassen &mdash; jede Umplanung zieht Folgen nach sich." },
+      { "icon": "timer", "title": "Einsatz- &amp; Lenkzeiten", "text": "Die Einsatzzeit darf 12, bei Lkw über 3,5 Tonnen oder Bussen mit mehr als 9 Plätzen per KV bis zu 14 Stunden betragen, die reine Lenkzeit im Schnitt maximal 48 Wochenstunden &mdash; von Hand über viele Fahrer:innen kaum sicher einzuhalten." },
+      { "icon": "history", "title": "56-Tage-Nachweispflicht", "text": "Seit 31.12.2024 müssen Fahrtenschreiberdaten 56 statt 28 Tage mitgeführt werden &mdash; lückenlos und jederzeit prüfbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik entlastet",
+    "subtitle": "Von der optimierten Tour bis zur Nachweispflicht &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "timer", "title": "Einsatz- &amp; Lenkzeiten geprüft", "text": "Die Grenzen nach § 16 AZG werden in Echtzeit überwacht &mdash; Verstöße entstehen gar nicht erst." },
+      { "icon": "history", "title": "56-Tage-Nachweis vorbereitet", "text": "Klacks hält die Nachweise für Fahrtenschreiberdaten strukturiert und jederzeit abrufbar bereit." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Huber ist krank“ genügt &mdash; Klacksy rechnet alles neu." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und in der Lenkzeit ist." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Nachweispflicht übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

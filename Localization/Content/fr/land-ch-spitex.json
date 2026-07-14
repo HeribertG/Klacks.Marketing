@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks pour l'aide à domicile en Suisse | Temps de trajet, repos dominical & BGAP",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Suisse",
+    "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et la compensation dominicale légale. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Suisse",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de l'aide à domicile suisse",
+    "title": "Temps de trajet, piquet et la BGAP à venir",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Le temps de trajet compte comme temps de travail",
+        "text": "Les trajets entre client·e·s constituent du temps de travail à part entière &mdash; seuls le premier trajet du matin et le dernier trajet retour comptent comme trajet domicile-travail normal et non rémunéré (OLT 1 art. 13)."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Respecter les dimanches libres",
+        "text": "Au moins un dimanche sur deux doit rester libre &mdash; difficile à suivre à la main avec des tournées et services changeants."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "Garder un œil sur la future BGAP",
+        "text": "La loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'aide à domicile suisse",
+    "subtitle": "De la tournée automatique à la compensation dominicale &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Tournées optimisées automatiquement",
+        "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied."
+      },
+      {
+        "icon": "schedule",
+        "title": "Temps de trajet correctement comptabilisé comme temps de travail",
+        "text": "Les trajets entre client·e·s sont automatiquement comptés comme temps de travail &mdash; seuls le trajet aller et le trajet retour restent exclus."
+      },
+      {
+        "icon": "event_available",
+        "title": "Dimanches libres planifiés automatiquement",
+        "text": "Klacks garantit qu'au moins un dimanche sur deux reste libre, et planifie directement la compensation correspondante."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications prises en compte automatiquement",
+        "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise : les données restent chez vous",
+        "text": "Klacks tourne sur votre propre infrastructure. Les données patients ne quittent pas vos murs &mdash; pas même pour l'IA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Temps de trajet, service dominical, un seul planning",
+    "text": "Klacks intègre automatiquement le temps de trajet entre client·e·s comme temps de travail et veille à ce qu'au moins un dimanche sur deux reste libre &mdash; sans calcul manuel. Dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre service d'aide à domicile",
+    "text": "Testez dans le Playground comment Klacks prend en charge le temps de trajet, les tournées et la compensation dominicale &mdash; ou installez-le directement sur votre propre infrastructure. Gratuit et sans inscription."
+  }
+}

@@ -12,13 +12,33 @@
             Klacks
         </a>
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")">@Sh("nav.solution")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("klacksy")">@Sh("nav.klacksy")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")">@ShHtml("nav.rules")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")">@Sh("nav.industries")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("download")">@Sh("nav.download")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref">@Sh("nav.docs")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank">@Sh("nav.marketplace")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")">@Sh("nav.solution")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("klacksy")">@Sh("nav.klacksy")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")">@ShHtml("nav.rules")</a>
+            @if (ShowIndustryMenu)
+            {
+                <div class="relative">
+                    <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
+                        @Sh("nav.industries")
+                        <span class="material-symbols-outlined text-base">expand_more</span>
+                    </button>
+                    <div class="dropdown-menu @(_industryMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
+                        @foreach (var industry in CurrentCountryIndustries)
+                        {
+                            <a href="@IndustryHref(industry.Slug)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseIndustryMenu">
+                                @Ix(industry.LabelKey)
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")">@Sh("nav.industries")</a>
+            }
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("download")">@Sh("nav.download")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref">@Sh("nav.docs")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank">@Sh("nav.marketplace")</a>
         </div>
         <div class="hidden md:flex items-center gap-4">
             <div class="relative">
@@ -74,7 +94,24 @@
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("klacksy")" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
+        @if (ShowIndustryMenu)
+        {
+            <div class="flex flex-col gap-1">
+                <span class="text-slate-600 text-sm font-medium tracking-tight">@Sh("nav.industries")</span>
+                <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
+                    @foreach (var industry in CurrentCountryIndustries)
+                    {
+                        <a href="@IndustryHref(industry.Slug)" class="py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                            @Ix(industry.LabelKey)
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
+        }
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("download")" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.marketplace")</a>
@@ -214,6 +251,7 @@
     private bool _mobileMenuOpen;
     private bool _languageMenuOpen;
     private bool _countryMenuOpen;
+    private bool _industryMenuOpen;
 
     protected override void OnInitialized()
     {
@@ -234,6 +272,7 @@
         _mobileMenuOpen = false;
         _languageMenuOpen = false;
         _countryMenuOpen = false;
+        _industryMenuOpen = false;
         InvokeAsync(async () =>
         {
             var culture = CurrentCultureRecord;
@@ -258,9 +297,19 @@
     {
         _countryMenuOpen = !_countryMenuOpen;
         _languageMenuOpen = false;
+        _industryMenuOpen = false;
     }
 
     private void CloseCountryMenu() => _countryMenuOpen = false;
+
+    private void ToggleIndustryMenu()
+    {
+        _industryMenuOpen = !_industryMenuOpen;
+        _languageMenuOpen = false;
+        _countryMenuOpen = false;
+    }
+
+    private void CloseIndustryMenu() => _industryMenuOpen = false;
 
     private (string Culture, string PageKey) ResolveCurrentPage()
     {
@@ -287,10 +336,20 @@
 
     private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/" : $"/{CurrentCultureRecord.UrlSlug}";
 
-    // Keeps the current localized page (culture + page key, e.g. "/en/land-de")
-    // instead of always jumping to the culture home page — reuses the same
-    // current-page resolution as LanguageSwitchHref so both stay in sync.
-    private string SectionHref(string anchor) => $"{LanguageSwitchHref(CurrentCultureRecord)}#{anchor}";
+    // The raw current relative path (culture + full page key incl. any industry
+    // sub-page slug), without fragment/query. Empty string on the site root.
+    private string CurrentRelativePath()
+        => Nav.ToBaseRelativePath(Nav.Uri).Split('#')[0].Split('?')[0].Trim('/');
+
+    // Anchors to a section on the exact current page. Building from the real path
+    // (not the collapsed page key) keeps section links on an industry sub-page
+    // (e.g. "/it/land-ch/spitex#regeln") on that page instead of jumping to the
+    // country general page, which is what the collapsed key produced.
+    private string SectionHref(string anchor)
+    {
+        var path = CurrentRelativePath();
+        return path.Length == 0 ? $"/#{anchor}" : $"/{path}#{anchor}";
+    }
 
     private string DocsHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
         ? ExternalLinks.DocsPathDe
@@ -315,6 +374,46 @@
 
     private static string CountryLanguageHref(SupportedCulture target, string pageKey)
         => target.Code == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{target.UrlSlug}/{pageKey}";
+
+    // The current country page key ("land-ch" for both the general page and its
+    // industry sub-pages, since ResolveCurrentPage collapses the sub-page slug).
+    private string CurrentCountryPageKey => ResolveCurrentPage().PageKey;
+
+    // The industry navigation (dropdown + on-page grid) is shown only on a country
+    // whose page key has industry sub-pages registered (Switzerland is the pilot).
+    private bool ShowIndustryMenu => IsOnCountryPage && CountryIndustries.HasIndustries(CurrentCountryPageKey);
+
+    private IReadOnlyList<CountryIndustry> CurrentCountryIndustries
+        => CountryIndustries.ForCountry(CurrentCountryPageKey) ?? Array.Empty<CountryIndustry>();
+
+    // Builds the route to an industry sub-page ("/land-ch/<slug>") keeping both the
+    // active culture and the active country. The route uses a slash (not the
+    // hyphenated content key).
+    private string IndustryHref(string slug)
+        => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+            ? $"/{CurrentCountryPageKey}/{slug}"
+            : $"/{CurrentCultureRecord.UrlSlug}/{CurrentCountryPageKey}/{slug}";
+
+    // The active industry slug derived from the raw path, since ResolveCurrentPage
+    // collapses "/land-ch/spitex" to the "land-ch" page key and cannot report the
+    // branch. Empty when not on an industry sub-page.
+    private string CurrentIndustrySlug
+    {
+        get
+        {
+            var segments = CurrentRelativePath() is { Length: > 0 } p ? p.Split('/') : Array.Empty<string>();
+
+            if (segments.Length > 0 && SupportedCultures.All.Any(c =>
+                c.UrlSlug.Length > 0 && c.UrlSlug.Equals(segments[0], StringComparison.OrdinalIgnoreCase)))
+            {
+                segments = segments[1..];
+            }
+
+            return segments.Length >= 2 && segments[0].StartsWith("land-", StringComparison.OrdinalIgnoreCase)
+                ? segments[1]
+                : string.Empty;
+        }
+    }
 
     // Off a country page, language switching only translates the current page
     // (LanguageSwitchHref). On a country page, the language jumps straight to
@@ -383,6 +482,8 @@
     private string Sh(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "shared", key);
 
     private MarkupString ShHtml(string key) => (MarkupString)Sh(key);
+
+    private string Ix(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "index", key);
 
     public void Dispose() => Nav.LocationChanged -= HandleLocationChanged;
 }

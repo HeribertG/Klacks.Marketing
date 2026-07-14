@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Klacks für Deutschland | Personaleinsatzplanung Open Source & On-Premise",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source · On-Premise · Deutschland-Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: im eigenen Haus.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan für Unternehmen in Deutschland",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in deutschen Betrieben",
+    "title": "Recht, Nachweispflicht und Datenschutz zugleich",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Arbeitszeitgesetz von Hand kaum zu überblicken",
+        "text": "Die 8-Stunden-Grenze, die 11-Stunden-Ruhezeit und die Nachtarbeitsregeln nach §§ 3, 5 und 6 ArbZG über mehrere Teams und Schichtmodelle hinweg manuell korrekt einzuhalten, ist kaum realistisch."
+      },
+      {
+        "icon": "punch_clock",
+        "title": "Zeiterfassungspflicht ernst nehmen",
+        "text": "Seit dem BAG-Beschluss vom 13.09.2022 (1 ABR 22/21) muss Arbeitszeit erfasst werden. Gesetzlich reicht dafür formfrei sogar Papier &mdash; in der Praxis wird das bei wechselnden Schichten trotzdem schnell unübersichtlich."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Datenschutz ohne Kompromisse",
+        "text": "Personaldaten in eine externe Cloud zu geben, ist für viele Betriebsräte und Datenschutzbeauftragte keine Option &mdash; erst recht nicht, wenn eine KI mitliest."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks deutsche Betriebe entlastet",
+    "subtitle": "Vom automatischen Dienstplan bis zum DATEV-Export &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Klacks füllt Schichten regelbasiert und lernt aus bestehenden Mustern &mdash; ohne dass jede Woche neu von Hand geplant werden muss."
+      },
+      {
+        "icon": "gavel",
+        "title": "ArbZG-Ruhezeiten automatisch geprüft",
+        "text": "Die 11-Stunden-Ruhezeit und die Höchstarbeitszeiten nach §§ 3, 5 und 6 ArbZG werden in Echtzeit überwacht &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "route",
+        "title": "Touren optimiert",
+        "text": "Wo Mitarbeitende zwischen Einsatzorten unterwegs sind, plant Klacks die Reihenfolge so, dass Wege kurz bleiben."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI. Das entspricht dem DSGVO-Rahmen für den Beschäftigtendatenschutz (Art. 88)."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source: kein Vendor-Lock-in",
+        "text": "Der Quellcode liegt offen. Sie entscheiden, wo Klacks läuft, wie es angepasst wird und mit wem Sie zusammenarbeiten."
+      },
+      {
+        "icon": "receipt_long",
+        "title": "DATEV-Export",
+        "text": "Bewegungsdaten und Buchungsstapel gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Transparent statt Blackbox",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge immer zu Qualifikationen, Arbeitszeitgesetz und den hinterlegten Regeln passen &mdash; nachvollziehbar für Mitarbeitende, Betriebsrat und Datenschutzbeauftragte. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Ausfall, keine Excel-Odyssee",
+    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten, ArbZG-konformen Ersatz &mdash; die Planung bestätigt mit einem Klick, ohne dass Daten das Haus verlassen."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Unternehmen erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, Ruhezeiten prüft und Touren optimiert &mdash; oder installieren Sie On-Premise, open source, mit dem KI-Modell Ihrer Wahl. Kostenlos und ohne Registrierung."
+  }
+}

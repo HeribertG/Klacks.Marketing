@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Ospedali | 24/7-Dienstpläne & 11-Stunden-Ruhezeit",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser in Italien (Ospedali)",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit eingehaltener 11-Stunden-Ruhezeit, die seit der Legge n. 161/2014 auch für Ärzt:innen gilt, passenden Qualifikationen und voller Datenhoheit. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Italien",
+    "title": "Lückenlos, ruhezeit-konform, dokumentiert",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 ohne Lücke", "text": "Tag, Nacht, Wochenende, Feiertag: Jede Station muss lückenlos besetzt sein &mdash; auch bei kurzfristigen Ausfällen." },
+      { "icon": "gavel", "title": "11-Stunden-Ruhezeit auch für Ärzt:innen", "text": "Seit der Legge n. 161/2014 (in Kraft seit 25.11.2015) gilt die 11-Stunden-Ruhezeit auch für Spitalärzt:innen &mdash; die frühere Ausnahmeregelung wurde nach einem EU-Vertragsverletzungsverfahren aufgehoben." },
+      { "icon": "schedule", "title": "Schichtdauer-Grenzen", "text": "Im öffentlichen Gesundheitswesen ist die reguläre Schichtdauer laut CCNL Comparto Sanità auf maximal 12 Stunden begrenzt." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Ospedali entlastet",
+    "subtitle": "Von der lückenlosen Nachtschicht bis zum Springerpool &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-Stunden-Ruhezeit &mdash; seit Legge n. 161/2014 auch für Ärzt:innen &mdash; wird in Echtzeit überwacht, ebenso die maximale Schichtdauer von 12 Stunden nach CCNL Comparto Sanità." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit." },
+      { "icon": "groups", "title": "Springerpool &amp; Ausfälle", "text": "Fällt jemand aus, zeigt Klacks sofort verfügbare, qualifizierte Springer &mdash; ohne den ganzen Plan umzuwerfen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mehrere Stationen, Tag- und Nachtdienst, ein Springerpool",
+    "text": "Jede Station hat eigene Besetzungsregeln und Qualifikationsanforderungen. Klacks plant alle gemeinsam, prüft die 11-Stunden-Ruhezeit automatisch &mdash; auch für Ärzt:innen &mdash; und greift bei Ausfällen auf den Springerpool zu."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Ospedale erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Stationen, Ruhezeiten und Springer übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

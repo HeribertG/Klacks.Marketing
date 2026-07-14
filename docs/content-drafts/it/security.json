@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks für Vigilanza privata | Ruhezeit-Ausgleich & Wochenruhe",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste in Italien (Vigilanza privata)",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Nachweis erbracht.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit automatisch überwachten Ruhezeit-Verkürzungen und Ausgleichsfristen nach CCNL Vigilanza Privata. On-Premise, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Italien",
+    "title": "Viele Objekte, enge Ausgleichsfristen",
+    "items": [
+      { "icon": "apartment", "title": "Viele Objekte, ein Plan", "text": "Jedes Objekt hat eigene Posten, Zeiten und Anforderungen &mdash; alles gleichzeitig zu überblicken ist von Hand kaum machbar." },
+      { "icon": "gavel", "title": "Ruhezeit-Verkürzung &amp; Ausgleichspflicht", "text": "Die tägliche Ruhezeit ist auf 9 Stunden verkürzbar (max. 3x/Monat, 12x/Jahr) &mdash; der Ausgleich muss binnen 30 Tagen erfolgen, sonst greift ein Zuschlag von 40-50% (Art. 72 CCNL Vigilanza Privata)." },
+      { "icon": "event_repeat", "title": "Wochenruhe-Streckung", "text": "Die wöchentliche Ruhezeit-Basis von 35 Stunden lässt sich im Ausnahmefall auf einen Zeitraum von bis zu 14 Tagen strecken &mdash; ohne systematische Kontrolle drohen Verstösse." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Vigilanza privata entlastet",
+    "subtitle": "Vom besetzten Posten bis zur automatisch überwachten Ausgleichsfrist &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "CCNL-Ausgleichsfristen automatisch überwacht", "text": "Wird die tägliche Ruhezeit auf 9 Stunden verkürzt, plant Klacks den 30-Tage-Ausgleich automatisch mit &mdash; und warnt, bevor der 40-50%-Zuschlag nach Art. 72 CCNL Vigilanza Privata droht." },
+      { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
+      { "icon": "event_repeat", "title": "Wochenruhe im Blick", "text": "Die 35-Stunden-Basis der wöchentlichen Ruhezeit sowie ihre Streckung über bis zu 14 Tage werden automatisch nachgehalten." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Verfügbarkeit und Ruhezeit-Ausgleich." },
+      { "icon": "bolt", "title": "Ausfälle in Minuten ersetzt", "text": "Fällt ein Posten aus, zeigt Klacks sofort qualifizierten, verfügbaren Ersatz &mdash; ohne den ganzen Plan zu kippen." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Ruhezeit-Ausgleich und Rundgänge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

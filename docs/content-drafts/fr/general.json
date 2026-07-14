@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Klacks für Frankreich | Personaleinsatzplanung Open Source & On-Premise",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source · On-Premise · France-Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Überstundenzuschläge und Ruhezeiten nach dem Code du travail in Echtzeit und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo es die CNIL erwartet: im eigenen Haus.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan für Unternehmen in Frankreich",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in französischen Unternehmen",
+    "title": "Code du travail, Modulation und CNIL zugleich",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Code du travail von Hand kaum zu überblicken",
+        "text": "Die 35-Stunden-Woche und die Staffelung der Überstundenzuschläge &mdash; in der Regel +25% für die ersten acht Überstunden, danach +50% (Art. L3121-27 & L3121-36) &mdash; über mehrere Teams und abweichende CCN-Sätze hinweg manuell korrekt einzuhalten, ist kaum realistisch."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Jahresarbeitszeit-Modulation",
+        "text": "Eine Modulation der Wochenarbeitszeit über das Jahr ist bis 1.607 Stunden möglich, mit Ausgleichstagen (den korrekt so genannten „jours de récupération“, nicht „RTT“) &mdash; die zwingende 48-Stunden-Grenze pro Woche (Art. L3121-20, L3121-41 bis L3121-47) im Blick zu behalten, ist von Hand fehleranfällig."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "CNIL: Datenschutz ohne Kompromisse",
+        "text": "Geolokalisation und biometrische Zeiterfassung unterliegen strengen CNIL-Sanktionen (RGPD Art. 88), automatisierte Personalentscheidungen zusätzlich Art. 22 RGPD &mdash; eine externe Cloud-KI, die mitliest, ist für viele Unternehmen und den CSE keine Option."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks französische Unternehmen entlastet",
+    "subtitle": "Vom automatischen Dienstplan bis zur freien KI-Modell-Wahl &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Klacks füllt Schichten regelbasiert und lernt aus bestehenden Mustern &mdash; ohne dass jede Woche neu von Hand geplant werden muss."
+      },
+      {
+        "icon": "gavel",
+        "title": "Überstunden &amp; Ruhezeiten automatisch geprüft",
+        "text": "Die Zuschlagsstaffelung ab der 36. Stunde (Art. L3121-27 & L3121-36) sowie die tägliche 11-Stunden- und wöchentliche 35-Stunden-Ruhezeit (Art. L3131-1 & L3132-2) werden in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst."
+      },
+      {
+        "icon": "route",
+        "title": "Touren optimiert",
+        "text": "Wo Mitarbeitende zwischen Einsatzorten unterwegs sind, plant Klacks die Reihenfolge so, dass Wege kurz bleiben."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI. Das entspricht der CNIL-Erwartung an den Beschäftigtendatenschutz (RGPD Art. 88)."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source: kein Vendor-Lock-in",
+        "text": "Der Quellcode liegt offen. Sie entscheiden, wo Klacks läuft, wie es angepasst wird und mit wem Sie zusammenarbeiten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Freie KI-Modell-Wahl",
+        "text": "Klacksy lässt sich auch mit lokal gehosteten Sprachmodellen betreiben &mdash; transparent und nachvollziehbar, statt intransparentem Profiling nach Art. 22 RGPD."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Transparent statt Blackbox",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge immer zu Qualifikationen, dem Code du travail und den hinterlegten Regeln passen &mdash; nachvollziehbar für Mitarbeitende und das Comité Social et Économique (CSE), passend zur CNIL-Erwartung an transparente, nicht-überwachende Systeme. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "35-Stunden-Woche, Jahresmodulation, ein Plan",
+    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks plant Ausgleichstage automatisch mit ein, berechnet Überstundenzuschläge korrekt und hält die 48-Stunden-Grenze ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Unternehmen erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, Überstunden und Ruhezeiten prüft und Touren optimiert &mdash; oder installieren Sie On-Premise, open source, mit dem KI-Modell Ihrer Wahl. Kostenlos und ohne Registrierung."
+  }
+}

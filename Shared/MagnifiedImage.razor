@@ -1,0 +1,19 @@
+@* Reusable screenshot image with hover zoom, cursor loupe (magnifier.js) and a
+   thin border. Src is the full image path, Alt the alt text, Caption an optional
+   text below the image, Loading the img loading strategy (lazy by default). *@
+<figure class="m-0">
+    <div class="screenshot-hover-zoom magnify-frame rounded-lg border border-surface-container-high">
+        <img src="@Src" alt="@Alt" class="magnify-image w-full h-auto block" loading="@Loading" />
+    </div>
+    @if (!string.IsNullOrEmpty(Caption))
+    {
+        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed mb-0">@Caption</figcaption>
+    }
+</figure>
+
+@code {
+    [Parameter, EditorRequired] public required string Src { get; set; }
+    [Parameter, EditorRequired] public required string Alt { get; set; }
+    [Parameter] public string? Caption { get; set; }
+    [Parameter] public string Loading { get; set; } = "lazy";
+}

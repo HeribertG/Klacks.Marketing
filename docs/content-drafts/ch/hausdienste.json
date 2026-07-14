@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Haus- &amp; Reinigungsdienste Schweiz | aveGAV Reinigung &amp; Splitting-Pausen",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Haus- &amp; Reinigungsdienste in der Schweiz",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte, Routen und Splitting-Dienste effizient ein &mdash; mit der 42-Stunden-Woche des aveGAV Reinigung und den gesetzlichen Pausenregeln automatisch berücksichtigt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Schweizer Reinigungsteams und Objekte",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in der Schweiz",
+    "title": "42-Stunden-Woche, Splitting und Ausfälle",
+    "items": [
+      { "icon": "schedule", "title": "42-Stunden-Woche einhalten", "text": "Der aveGAV Reinigung Deutschschweiz setzt die Wochenarbeitszeit bei 100%-Pensum auf 42 Stunden &mdash; über wechselnde Teams und Objekte hinweg von Hand mühsam zu kontrollieren." },
+      { "icon": "pause_circle", "title": "Pausen bei Splitting-Diensten", "text": "Geteilte Einsätze morgens und abends brauchen ab 5,5 Stunden Arbeitszeit mindestens 15 Minuten unbezahlte Pause &mdash; leicht übersehen." },
+      { "icon": "event_busy", "title": "Kurzfristige Absagen durch Kunden", "text": "Sagt ein Kunde kurzfristig ab, kann eine Lohnfortzahlungspflicht entstehen &mdash; die Planung sollte das in der Regel im Blick behalten." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Schweizer Hausdienste entlastet",
+    "subtitle": "Von der optimierten Route bis zur korrekten Pausenregelung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "schedule", "title": "42-Stunden-Woche automatisch überwacht", "text": "Klacks prüft laufend, ob die Wochenarbeitszeit pro 100%-Pensum eingehalten wird &mdash; gemäss aveGAV Reinigung." },
+      { "icon": "pause_circle", "title": "Pausen bei Splitting-Diensten eingeplant", "text": "Bei geteilten Einsätzen ab 5,5 Stunden Arbeitszeit plant Klacks die gesetzliche Pause automatisch mit ein." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Ferien: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Kreis 4 für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Pausen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Splitting-Dienst, Pause, ein Plan",
+    "text": "Klacks erkennt geteilte Einsätze automatisch und plant die gesetzliche Pause ab 5,5 Stunden Arbeitszeit gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und Pausenregeln übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

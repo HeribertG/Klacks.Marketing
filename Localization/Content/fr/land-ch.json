@@ -1,49 +1,50 @@
 {
-  "pageTitle": "Klacks pour la Suisse | Conforme à l'ArG et prêt pour la BGAP à venir",
+  "pageTitle": "Klacks pour les entreprises suisses | Planification du personnel open source avec souveraineté des données",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Pour les hôpitaux &amp; l'aide à domicile en Suisse",
-    "titleHtml": "Dès aujourd'hui prêt pour la <span class=\"text-secondary\">future loi sur les soins infirmiers.</span>",
-    "subtitle": "La loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) est encore en délibération au Parlement &mdash; Klacks respecte déjà aujourd'hui les exigences centrales de l'ArG en matière de temps de repos et de majorations de nuit, afin que vous n'ayez pas à tout replanifier lors de son entrée en vigueur.",
+    "badge": "Open Source &middot; On-Premise &middot; Protection des données suisse",
+    "titleHtml": "Une planification du personnel où <span class=\"text-secondary\">vous gardez le contrôle.</span>",
+    "subtitle": "Klacks planifie automatiquement les services, optimise les tournées et se pilote par assistant IA &mdash; on-premise, open source, avec le modèle d'IA de votre choix. Les données du personnel restent ainsi dans votre propre infrastructure, conformément à la loi révisée sur la protection des données (nLPD).",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Planning de service Klacks pour les hôpitaux et services d'aide à domicile suisses",
+    "screenshotAlt": "Aperçu du planning de service Klacks pour les entreprises suisses",
     "screenshotLabel": "Planning"
   },
   "challenges": {
-    "eyebrow": "Le quotidien à l'hôpital et dans l'aide à domicile",
-    "title": "ArG, piquet et la BGAP à venir",
+    "eyebrow": "Le quotidien de la planification dans les entreprises suisses",
+    "title": "LTr, protection des données et l'exigence de contrôle",
     "items": [
-      { "icon": "hourglass_top", "title": "La BGAP en préparation", "text": "La mise en œuvre de l'initiative sur les soins infirmiers (BGAP) doit à l'avenir aussi régler l'annonce des plannings de service et des piquets &mdash; la loi n'est pas encore en vigueur, mais qui planifie déjà rigoureusement aujourd'hui sera prêt lors de son entrée en vigueur." },
-      { "icon": "gavel", "title": "Calculer correctement la majoration de nuit ArG", "text": "Le travail de nuit régulier déclenche, selon l'art. 17b ArG, un crédit-temps de 10 % &mdash; source d'erreurs fréquente en calcul manuel." },
-      { "icon": "event_repeat", "title": "Compenser correctement le repos dominical", "text": "En cas d'intervention dominicale de plus de 5 heures, un jour de repos compensatoire de 24 heures est dû dans la semaine précédente ou suivante (art. 20 ArG)." }
+      { "icon": "gavel", "title": "Garder un œil sur la durée maximale de la semaine de travail", "text": "Selon la branche, la durée maximale de travail est de 45 ou 50 heures &mdash; et les règles de majoration pour heures supplémentaires diffèrent selon le groupe de personnel. À la main, les erreurs sont vite arrivées." },
+      { "icon": "bedtime", "title": "Planifier correctement les temps de repos &amp; le travail de nuit", "text": "11 heures de repos quotidien, une durée de travail maximale de 14 heures et un crédit-temps pour le travail de nuit régulier &mdash; la LTr exige un contrôle sans faille de chaque planning." },
+      { "icon": "cloud_off", "title": "Souveraineté des données plutôt que dépendance au cloud américain", "text": "Depuis la révision de la loi sur la protection des données (nLPD), de nombreuses entreprises se demandent si les données du personnel peuvent seulement être hébergées dans un cloud américain &mdash; en particulier pour les fonctions d'IA." }
     ]
   },
   "solutions": {
     "title": "Comment Klacks soulage les entreprises suisses",
-    "subtitle": "Conforme à l'ArG dès aujourd'hui, préparé pour la BGAP à venir.",
+    "subtitle": "Du calcul automatique des majorations à votre propre infrastructure &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "gavel", "title": "Majoration art. 17b automatique", "text": "Klacks calcule automatiquement le crédit-temps de 10 % pour le travail de nuit régulier &mdash; conformément à l'art. 17b ArG." },
-      { "icon": "event_repeat", "title": "Compensation du repos dominical planifiée", "text": "L'assistant de remplissage automatique intègre automatiquement le jour de repos compensatoire légal en cas d'intervention dominicale de plus de 5 heures." },
-      { "icon": "calendar_month", "title": "Planification anticipée des services &amp; des piquets", "text": "Klacks planifie les services et les piquets avec anticipation &mdash; la base pour respecter, sans restructuration, les futurs délais d'annonce imposés par la BGAP." },
-      { "icon": "groups", "title": "Aide à domicile : tournées &amp; services fractionnés", "text": "Les services fractionnés (split-shifts) et les temps de trajet entre client·e·s sont automatiquement intégrés à la planification." },
-      { "icon": "shield_lock", "title": "On-premise : souveraineté des données en Suisse", "text": "Les données du personnel et des patients restent dans votre infrastructure &mdash; y compris pour les fonctions d'IA." }
+      { "icon": "gavel", "title": "Durée maximale de la semaine de travail surveillée automatiquement", "text": "Klacks connaît les seuils de 45h et 50h selon la branche ainsi que les différents seuils de majoration pour heures supplémentaires &mdash; à partir de la 60e heure supplémentaire de l'année pour le personnel de bureau et de vente, dès la première heure supplémentaire pour toutes les autres branches." },
+      { "icon": "bedtime", "title": "Temps de repos &amp; majoration de nuit calculés correctement", "text": "Le repos de 11 heures et le crédit-temps de 10 % pour le travail de nuit régulier dès la 25e nuit de l'année sont automatiquement intégrés à la planification &mdash; sous forme de temps libre, pas de versement." },
+      { "icon": "route", "title": "Tournées &amp; interventions optimisées automatiquement", "text": "Klacks organise les interventions et les itinéraires de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; utilisable dans toutes les branches." },
+      { "icon": "shield_lock", "title": "On-premise : pleine souveraineté des données", "text": "Klacks tourne sur votre propre infrastructure, vous choisissez vous-même le modèle d'IA &mdash; y compris hébergé localement, sans aucun transfert de données du personnel à l'étranger." },
+      { "icon": "smart_toy", "title": "Klacksy : basé sur des règles, pas de boîte noire", "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable, selon des compétences et règles définies, et non comme une décision d'IA opaque." },
+      { "icon": "event_busy", "title": "Absences compensées rapidement", "text": "En cas d'absence, Klacks indique immédiatement qui est qualifié et disponible &mdash; sans bouleverser tout le planning." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistant IA",
     "title": "Klacksy : l'assistant intégré pour votre équipe",
-    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange de service ou clarifient des conflits de qualification au sein de l'équipe. Un système de compétences et de règles intégré garantit que Klacksy ne fait que des suggestions conformes aux qualifications réelles et aux exigences de temps de travail des personnes concernées.",
+    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange ou clarifient des disponibilités. Un système de compétences et de règles intégré garantit que Klacksy fait des suggestions traçables &mdash; jamais une décision de boîte noire. Pour les entreprises ayant des exigences élevées en matière de protection des données, le modèle d'IA peut en outre être hébergé localement.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },
   "example": {
     "eyebrow": "Concrètement",
-    "title": "Travail de nuit, service dominical, un seul planning",
-    "text": "Klacks détecte automatiquement quand une intervention déclenche une majoration de nuit ou une compensation du repos dominical, et planifie immédiatement la compensation correspondante &mdash; sans calcul manuel."
+    "title": "Travail de nuit et durée maximale de la semaine, en un coup d'œil",
+    "text": "Klacks détecte automatiquement quand une intervention déclenche la majoration de nuit ou atteint la durée maximale de la semaine de travail, et propose aussitôt la compensation correspondante &mdash; sans calcul manuel."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Découvrez Klacks dans votre établissement",
-    "text": "Testez dans le Playground comment Klacks automatise les majorations ArG, les temps de repos et la planification des piquets &mdash; en on-premise ou dans le Playground, gratuitement."
+    "title": "Découvrez Klacks dans votre entreprise",
+    "text": "Testez dans le Playground comment Klacks automatise les durées maximales de travail selon la LTr, les temps de repos et les majorations de nuit &mdash; on-premise ou dans le Playground, gratuitement et sans inscription."
   }
 }

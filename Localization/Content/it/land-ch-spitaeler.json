@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Klacks per gli ospedali in Svizzera | Reperibilità, ore dei medici assistenti & 42+4",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Per ospedali &amp; cliniche in Svizzera",
+    "titleHtml": "Piani dei turni che <span class=\"text-secondary\">quadrano 24 ore su 24.</span>",
+    "subtitle": "Klacks pianifica reparti, turni di reperibilità e ore dei medici assistenti senza lacune &mdash; con il tempo di reperibilità in sede e a domicilio registrato correttamente. On-premise, perché i dati dei pazienti non lasciano mai la Sua azienda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Griglia del piano dei turni di Klacks per gli ospedali svizzeri",
+    "screenshotLabel": "Piano dei turni"
+  },
+  "challenges": {
+    "eyebrow": "La quotidianità in clinica in Svizzera",
+    "title": "Ore dei medici assistenti, reperibilità e il percorso verso il modello 42+4",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Medici assistenti: limite di 50 ore &amp; ore supplementari",
+        "text": "I medici assistenti possono lavorare al massimo 50 ore alla settimana, e le ore supplementari sono limitate a 140 ore all'anno &mdash; su molte rotazioni, a mano è quasi impossibile mantenere una visione d'insieme."
+      },
+      {
+        "icon": "call",
+        "title": "Reperibilità a domicilio o in sede?",
+        "text": "Il servizio di reperibilità in sede in ospedale conta come tempo di lavoro pieno, la reperibilità a domicilio solo come effettivo tempo di intervento incluso il tragitto &mdash; ogni piano dei turni deve riflettere correttamente questa distinzione."
+      },
+      {
+        "icon": "trending_down",
+        "title": "Sulla strada verso il modello 42+4",
+        "text": "Alcuni ospedali &mdash; ad esempio l'Ospedale universitario di Zurigo &mdash; riducono progressivamente l'orario settimanale verso il modello delle 42+4 ore: un'ora in meno ogni anno, mantenendo invariata la sicurezza operativa."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Compensare correttamente il riposo domenicale",
+        "text": "Per gli interventi domenicali di oltre 5 ore è dovuto un giorno di riposo compensativo di 24 ore nella settimana precedente o successiva (art. 20 LL) &mdash; su molti reparti e rotazioni, a mano è quasi impossibile mantenere una visione d'insieme."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "La futura LCInf sotto controllo",
+        "text": "Per il personale infermieristico, l'iniziativa sulle cure infermieristiche (LCInf) non è ancora in vigore, ma prevede in futuro una durata massima del lavoro di 45 ore, un maggiore preavviso nella pianificazione dei turni e una compensazione regolamentata della reperibilità &mdash; chi pianifica correttamente già oggi sarà pronto al momento dell'entrata in vigore."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacks alleggerisce gli ospedali svizzeri",
+    "subtitle": "Dalla corretta registrazione della reperibilità alla copertura 24/7 &mdash; tutto si incastra alla perfezione.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Copertura 24/7 senza lacune",
+        "text": "Turni di mattina, pomeriggio e notte su tutti i reparti &mdash; Klacks mostra subito ogni lacuna e la colma automaticamente su richiesta."
+      },
+      {
+        "icon": "gavel",
+        "title": "Ore dei medici assistenti sorvegliate automaticamente",
+        "text": "Il limite di 50 ore e il tetto annuo di 140 ore per le ore supplementari vengono verificati costantemente &mdash; le violazioni non si verificano nemmeno."
+      },
+      {
+        "icon": "call",
+        "title": "Reperibilità distinta correttamente",
+        "text": "Klacks registra in modo distinto la reperibilità in sede e quella a domicilio &mdash; incluso il tempo di tragitto in caso di intervento da casa."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifiche &amp; reparti",
+        "text": "Ogni turno viene assegnato solo a personale con la qualifica adeguata &mdash; per reparto, divisione e funzione."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: i dati restano in azienda",
+        "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale e dei pazienti non lasciano la clinica &mdash; nemmeno verso l'IA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy pianifica a voce",
+        "text": "Basta dire «Riempi i turni di notte di Medicina interna per la prossima settimana» &mdash; Klacksy considera qualifiche e durata massima del lavoro."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Supplemento notturno calcolato automaticamente",
+        "text": "Klacks calcola automaticamente il supplemento di tempo del 10% per il lavoro notturno regolare secondo l'art. 17b LL &mdash; come accredito di tempo libero, non come pagamento."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Rotazione dei medici assistenti e reperibilità, un unico piano",
+    "text": "Klacks tiene sotto controllo il limite di 50 ore e le ore supplementari annue, distingue automaticamente la reperibilità in sede da quella telefonica e mostra per tempo alla direzione di reparto dove la situazione si fa critica &mdash; anche sulla strada verso modelli graduali come il 42+4. Non appena la LCInf entrerà in vigore per il personale infermieristico, la base di pianificazione sarà già pronta."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Provi Klacks nella Sua clinica",
+    "text": "Provi nel Playground come Klacks gestisce reperibilità, ore dei medici assistenti e reparti &mdash; oppure lo installi direttamente nella Sua struttura. Gratuito e senza registrazione."
+  }
+}

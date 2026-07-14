@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks für Pulizia | 6.-Tag-Zuschlag & Turno spezzato",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Reinigungsdienste in Italien (Pulizia)",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit korrekt berechnetem 6.-Tag-Zuschlag und eingehaltenen Grenzen für geteilte Dienste (turno spezzato). Touren werden automatisch optimiert, damit keine Zeit auf der Strasse verloren geht.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Italien",
+    "title": "Viele Objekte, enge Zeitfenster, eigene Zuschläge",
+    "items": [
+      { "icon": "pin_drop", "title": "Viele Objekte, viele Wege", "text": "Teams fahren von Objekt zu Objekt. Schlechte Routen kosten jeden Tag Zeit, Kilometer und Geld." },
+      { "icon": "event_repeat", "title": "6.-Tag-Zuschlag &amp; Turno spezzato", "text": "Ein 6. Arbeitstag in der Woche (z.B. Samstag) löst einen Zuschlag von 25% aus (Art. 30 CCNL Imprese di Pulizia), geteilte Dienste sind auf maximal 2 Arbeitsblöcke pro Tag begrenzt." },
+      { "icon": "schedule", "title": "Enge Zeitfenster", "text": "Manche Objekte sind nur zu bestimmten Zeiten zugänglich &mdash; die Planung muss das exakt treffen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Pulizia-Betriebe entlastet",
+    "subtitle": "Von der optimierten Route bis zum korrekten Zuschlag &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Ferien: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "payments", "title": "Zuschläge korrekt berechnet", "text": "Der 25%-Zuschlag für den 6. Arbeitstag (Art. 30 CCNL Imprese di Pulizia) wird automatisch berechnet, geteilte Dienste bleiben auf 2 Arbeitsblöcke pro Tag begrenzt." },
+      { "icon": "door_front", "title": "Zeitfenster berücksichtigt", "text": "Objekte, die nur morgens oder abends zugänglich sind, plant Klacks automatisch ins richtige Fenster." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Zuschlag." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Zuschläge und Teams übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}
