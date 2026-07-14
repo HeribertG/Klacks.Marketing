@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für die Niederlande | ATW-konforme Dienstplanung ohne Mehraufwand",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in den Niederlanden",
+    "titleHtml": "Die Arbeidstijdenwet automatisch eingehalten &mdash; <span class=\"text-secondary\">statt manuell nachgerechnet.</span>",
+    "subtitle": "Die Arbeidstijdenwet (ATW) begrenzt eine Schicht auf maximal 12 Stunden und die Wochenarbeitszeit im 4-Wochen-Schnitt auf 55, im 16-Wochen-Schnitt auf 48 Stunden. Dazu gilt eine Ruhezeit von mindestens 11 Stunden, die einmal pro 7 Tage auf 8 Stunden verkürzt werden darf, wenn Art der Arbeit oder betriebliche Umstände dies erfordern. Klacks plant diese Grenzen von Anfang an ein &mdash; als Beitrag zur landesweiten Initiative (Ont)Regel de Zorg gegen unnötigen Verwaltungsaufwand in der Pflege.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in niederländischen Kliniken und der Pflege",
+    "title": "ATW-Grenzen einhalten, ohne zusätzliche Bürokratie aufzubauen",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "12-Stunden-Schicht, 55h/48h-Wochengrenzen", "text": "Die ATW begrenzt eine Schicht auf 12 Stunden und die Wochenarbeitszeit im 4- bzw. 16-Wochen-Schnitt auf 55 bzw. 48 Stunden &mdash; von Hand über mehrere Rotationen hinweg kaum mehr fehlerfrei zu führen." },
+      { "icon": "schedule", "title": "11-Stunden-Ruhezeit mit Ausnahmen", "text": "Nach jeder Schicht gelten mindestens 11 Stunden Ruhezeit, bei Nachtschichten mit Ende nach 02:00 Uhr sogar 14 Stunden &mdash; einmal pro 7 Tage ist eine Verkürzung auf 8 Stunden zulässig, wenn es die Arbeit erfordert." },
+      { "icon": "groups", "title": "(Ont)Regel de Zorg: weniger Administration", "text": "Die Initiative (Ont)Regel de Zorg drängt seit 2018 auf weniger Registrierpflichten in der Pflege &mdash; ein Dienstplaner, der ATW-Grenzen automatisch mitführt, statt sie nachträglich zu belegen, leistet dazu einen direkten Beitrag." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der niederländischen Datenschutzbehörde Autoriteit Persoonsgegevens in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Ondernemingsraad."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die ATW-Grenzen automatisch mitführt",
+    "subtitle": "12h-Schicht, 55h/48h-Wochengrenzen und Ruhezeit-Ausnahmen in einem Plan.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine ATW-Verletzung entsteht." },
+      { "icon": "fact_check", "title": "ATW-Grenzen-Tracking", "text": "Klacks führt die 12h-Schichtgrenze, die 55h/48h-Wochengrenzen und die 11h/14h-Ruhezeit fortlaufend mit &mdash; sichtbar für Planende und Ondernemingsraad." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Schichtrotationen unter Einhaltung der hinterlegten ATW-Regeln automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und ATW-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für niederländische Kliniken und Pflegeeinrichtungen testen",
+    "text": "Erleben Sie im Playground, wie Klacks die ATW-Grenzen automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

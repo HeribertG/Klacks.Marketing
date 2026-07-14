@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Finnland | Die 0,65-Pflegequote lückenlos nachgewiesen",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für die stationäre Altenpflege in Finnland",
+    "titleHtml": "0,65 Pflegekräfte pro Klient &mdash; <span class=\"text-secondary\">durchgehend nachweisbar, nicht nur auf dem Papier.</span>",
+    "subtitle": "In der stationären 24-Stunden-Altenpflege gilt gesetzlich eine Mindestquote von 0,65 qualifizierten Mitarbeitenden pro Klient. Die ursprünglich geplante Anhebung auf 0,7 wurde wegen des akuten Personalmangels auf den 1. Januar 2028 verschoben. Klacks weist die Quote schichtgenau nach, statt sie am Monatsende zu rekonstruieren.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in finnischen Pflegeeinrichtungen",
+    "title": "Die 0,65-Quote gilt schichtgenau, nicht im Monatsschnitt",
+    "items": [
+      { "icon": "fact_check", "title": "0,65 Pflegekräfte pro Klient", "text": "Die gesetzliche Mindestquote in der stationären 24h-Altenpflege verlangt durchgehend 0,65 qualifizierte Mitarbeitende pro Klient &mdash; eine Unterschreitung in einzelnen Schichten ist ein Compliance-Verstoss, auch wenn der Monatsschnitt stimmt." },
+      { "icon": "hourglass_top", "title": "Anhebung auf 0,7 verschoben auf 2028", "text": "Die ursprünglich vorgesehene Anhebung der Quote auf 0,7 wurde wegen des akuten Fachkräftemangels offiziell auf den 1. Januar 2028 verschoben &mdash; Einrichtungen müssen die aktuelle 0,65-Grenze bis dahin dennoch lückenlos einhalten." },
+      { "icon": "groups", "title": "Einer der grössten Pflegekräftemangel Nordeuropas", "text": "Finnland kämpft mit einem der dramatischsten Personalengpässe in der Altenpflege Nordeuropas &mdash; Einrichtungen kombinieren zunehmend Schichtplanungs-Software mit Sensortechnik, um die Quote trotzdem zu halten." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der finnischen Datenschutzbehörde Tietosuojavaltuutetun toimisto in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Quoten-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Aufsichtsbehörden."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die 0,65-Quote schichtgenau nachweist",
+    "subtitle": "Pro Schicht geprüft, nicht erst im Monatsschnitt entdeckt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; bevor die 0,65-Quote in einer Schicht unterschritten wird." },
+      { "icon": "fact_check", "title": "Quoten-Tracking pro Schicht", "text": "Klacks prüft die 0,65-Quote für jede einzelne Schicht, nicht nur im Monatsdurchschnitt &mdash; abrufbar für interne Kontrollen und Aufsichtsbehörden." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard mit Quoten-Prüfung", "text": "Der GA-gestützte Autofill-Assistent schlägt nur Rotationen vor, die die Pflegequote in jeder Schicht einhalten." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation zählen zur Quote &mdash; Klacks unterscheidet automatisch zwischen qualifiziertem und unterstützendem Personal." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und der Pflegequote der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für finnische Pflegeeinrichtungen testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 0,65-Pflegequote schichtgenau nachweist &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Griechenland | Der 6. Arbeitstag korrekt verzuschlagt und bei ERGANI II gemeldet",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Für Krankenhäuser und Sicherheitsdienste in Griechenland",
+    "titleHtml": "Gesetz 5053/2023: der 6. Arbeitstag &mdash; <span class=\"text-secondary\">automatisch verzuschlagt und gemeldet.</span>",
+    "subtitle": "Das Gesetz 5053/2023 erlaubt Betrieben mit echtem 24/7-Schichtbetrieb (Art. 25&ndash;26) einen 6. Arbeitstag von maximal 8 Stunden &mdash; mit 40% Zuschlag, der sich auf 115% erhöht, wenn der Tag auf einen Sonntag oder Feiertag fällt. Die Zuweisung muss vor Schichtbeginn zwingend im staatlichen System ERGANI II gemeldet werden.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in griechischen Kliniken und Sicherheitsdiensten",
+    "title": "6. Arbeitstag, Zuschlag und Meldepflicht in einem Schritt",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Max. 8 Stunden am 6. Tag", "text": "Das Gesetz 5053/2023 erlaubt für Betriebe mit rotierendem 24/7-Schichtbetrieb einen 6. Arbeitstag &mdash; begrenzt auf maximal 8 Stunden, ohne zusätzliche Überstunden an diesem Tag." },
+      { "icon": "gavel", "title": "40% Zuschlag, 115% an Sonn-/Feiertagen", "text": "Für den 6. Arbeitstag ist ein Zuschlag von 40% auf das Tagesgehalt fällig &mdash; fällt der Tag auf einen Sonntag oder Feiertag, addiert sich der Sonntags-/Feiertagszuschlag von 75% dazu, macht 115% in Summe." },
+      { "icon": "fact_check", "title": "Meldepflicht bei ERGANI II", "text": "Jede Zuweisung eines 6. Arbeitstags muss vor Schichtbeginn im staatlichen System ERGANI II registriert werden &mdash; eine verpasste Vorabmeldung ist ein eigenständiger Compliance-Verstoss." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der griechischen Datenschutzbehörde (ΑΠΔΠΧ) in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Zuschlags-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Arbeitsinspektion."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks den 6. Arbeitstag automatisch korrekt behandelt",
+    "subtitle": "Zuschlag, 8h-Obergrenze und ERGANI II-Meldung in einem Arbeitsschritt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ein ungeplanter, nicht gemeldeter 6. Arbeitstag entsteht." },
+      { "icon": "fact_check", "title": "40%/115%-Zuschlag automatisch berechnet", "text": "Klacks erkennt einen 6. Arbeitstag automatisch und berechnet den 40%- bzw. 115%-Zuschlag korrekt, je nachdem ob der Tag auf einen Sonntag oder Feiertag fällt." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard mit 8h-Obergrenze", "text": "Der GA-gestützte Autofill-Assistent begrenzt den 6. Arbeitstag automatisch auf 8 Stunden und vermeidet zusätzliche Überstunden an diesem Tag." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Zuschlagsregeln der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für griechische Kliniken und Sicherheitsdienste testen",
+    "text": "Erleben Sie im Playground, wie Klacks den 6. Arbeitstag nach Gesetz 5053/2023 automatisch verzuschlagt &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

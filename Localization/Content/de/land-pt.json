@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Portugal | Überstunden-Zuschläge im SNS millimetergenau erfasst",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Für Krankenhäuser im portugiesischen Serviço Nacional de Saúde (SNS)",
+    "titleHtml": "45% bis 85,5% Zuschlag &mdash; <span class=\"text-secondary\">gestaffelt in 48-Stunden-Blöcken, nicht pauschal.</span>",
+    "subtitle": "Das Decreto-Lei n.º 119/2026 (in Kraft seit 17. Juni 2026) begrenzt Überstunden von SNS-Ärzten auf 150 bzw. 250 Stunden pro Jahr (letzteres bei voller Widmung, dedicação plena) und schreibt bei Überschreitung gestaffelte Zuschläge von 45% bis 85,5% des Grundgehalts vor, berechnet in strengen 48-Stunden-Blöcken, plus 20% Wochenend-Zuschlag ab 48 Stunden Sa/So-Arbeit innerhalb von 8 Wochen. Der akute Ärztemangel im SNS macht eine fehlerfreie, prüfbare Erfassung dieser Zuschläge zur Voraussetzung für den Klinikbetrieb.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag im portugiesischen Gesundheitswesen",
+    "title": "Gestaffelte Zuschläge nach Decreto-Lei n.º 119/2026",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "150 bzw. 250 Überstunden-Limit pro Jahr", "text": "SNS-Ärzte ohne volle Widmung dürfen maximal 150, mit dedicação plena maximal 250 Überstunden pro Jahr leisten &mdash; eine Grenze, die über das Jahr fortlaufend mitgeführt werden muss." },
+      { "icon": "gavel", "title": "45% bis 85,5% Zuschlag in 48h-Blöcken", "text": "Bei Überschreitung des Jahreslimits gelten zehn gestaffelte Zuschlagsstufen von 45% bis 85,5% des Grundgehalts, jeweils berechnet in strengen 48-Stunden-Blöcken &mdash; plus 20% Zuschlag ab 48 Stunden Wochenendarbeit innerhalb von 8 Wochen." },
+      { "icon": "groups", "title": "Akuter Ärztemangel im SNS", "text": "Mehrere Notaufnahmen mussten 2026 Leistungen einschränken, weil schlicht zu wenige Ärzte verfügbar waren &mdash; in diesem Umfeld wird eine lückenlose, gesetzeskonforme Zuschlagsberechnung zur Voraussetzung, um Ärzte überhaupt für Zusatzdienste zu gewinnen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der portugiesischen Datenschutzbehörde CNPD in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Zuschlags-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und SNS-Verwaltung."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die gestaffelten SNS-Zuschläge automatisch berechnet",
+    "subtitle": "150h/250h-Jahreslimit, 48h-Blöcke und Wochenend-Zuschlag in einem Plan.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; mit Blick auf das verbleibende Jahres-Überstundenlimit." },
+      { "icon": "fact_check", "title": "48h-Block-Zuschlag automatisch gestaffelt", "text": "Klacks berechnet den 45%-85,5%-Zuschlag korrekt in 48-Stunden-Blöcken und ergänzt automatisch den 20%-Wochenend-Zuschlag, sobald die Schwelle erreicht ist." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard mit Jahreslimit-Prüfung", "text": "Der GA-gestützte Autofill-Assistent berücksichtigt das 150h/250h-Jahreslimit automatisch bei jedem Zusatzdienst-Vorschlag." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Zuschlagsregeln der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für portugiesische SNS-Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks die gestaffelten SNS-Zuschläge automatisch berechnet &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

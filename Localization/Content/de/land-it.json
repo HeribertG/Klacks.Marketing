@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Italien | Riposo giornaliero und Reperibilità korrekt geplant",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Italien",
+    "titleHtml": "11 Stunden Riposo giornaliero &mdash; <span class=\"text-secondary\">auch wenn die Reperibilità dazwischenfunkt.</span>",
+    "subtitle": "Der Decreto Legislativo n. 66/2003 garantiert jeder Arbeitskraft mindestens 11 zusammenhängende Ruhestunden pro 24-Stunden-Zeitraum (riposo giornaliero). Wird ein Bereitschaftsdienst (reperibilità) durch einen Einsatz unterbrochen, muss die Ruhezeit ausgesetzt und binnen 3 Tagen nachgeholt werden &mdash; ein Nachrechnen von Hand ist fehleranfällig.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in italienischen Kliniken",
+    "title": "Riposo giornaliero und Reperibilità im Zusammenspiel",
+    "items": [
+      { "icon": "hourglass_top", "title": "11 Stunden Riposo giornaliero", "text": "Art. 7 D.Lgs. 66/2003 garantiert 11 zusammenhängende Ruhestunden pro 24 Stunden &mdash; ein Grundrecht, das auch bei Personalknappheit nicht verhandelbar ist." },
+      { "icon": "schedule", "title": "Reperibilità unterbricht die Ruhezeit", "text": "Bereitschaftsdienst selbst zählt nicht als Arbeitszeit, ein Abruf während der Reperibilità setzt die Ruhezeit aber aus &mdash; der Ausgleich muss binnen 3 Tagen nachgeholt werden." },
+      { "icon": "groups", "title": "Brain Drain der Pflegekräfte", "text": "Italienische Kliniken verlieren Pflegepersonal an besser bezahlte Märkte wie die Schweiz oder Grossbritannien &mdash; verbleibende Teams müssen die Riposo-giornaliero-Regel trotz dünnerer Personaldecke lückenlos einhalten." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der italienischen Datenschutzbehörde Garante in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Gewerkschaften."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Riposo giornaliero und Reperibilità zusammen im Blick behält",
+    "subtitle": "Ausgesetzte Ruhezeiten automatisch erkannt, Ausgleich innerhalb von 3 Tagen eingeplant.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Ruhezeit-Verletzung entsteht." },
+      { "icon": "fact_check", "title": "Reperibilità-Tracking mit 3-Tage-Ausgleich", "text": "Wird die Riposo giornaliero durch einen Abruf während der Reperibilità ausgesetzt, plant Klacks den gesetzlichen Ausgleich automatisch innerhalb der 3-Tage-Frist ein." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Bereitschaftsrotationen", "text": "Der GA-gestützte Autofill-Assistent plant Reperibilità-Rotationen unter Einhaltung der 11-Stunden-Ruhezeit automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig bei dünner Personaldecke." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für italienische Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks Riposo giornaliero und Reperibilità automatisch zusammenführt &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

@@ -20,32 +20,40 @@
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref">@Sh("nav.docs")</a>
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank">@Sh("nav.marketplace")</a>
         </div>
-        <div class="hidden md:flex items-center gap-4 relative">
-            <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
-                @CurrentCultureRecord.Code
-                <span class="material-symbols-outlined text-base">expand_more</span>
-            </button>
-            <div class="lang-dropdown dropdown-menu @(_languageMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
-                @foreach (var culture in SupportedCultures.All)
-                {
-                    @if (IsOnCountryPage && LanguageCountryMap.TryGetValue(culture.Code, out var countries) && countries.Length > 1)
-                    {
-                        <div class="px-4 pt-2 pb-1 text-xs font-bold uppercase tracking-wide text-on-surface-variant">@culture.NativeName</div>
-                        @foreach (var country in countries)
-                        {
-                            <a href="@CountryLanguageHref(culture, country)" class="block pl-7 pr-4 py-1.5 text-sm no-underline hover:bg-surface-container-low text-on-surface-variant" @onclick="CloseLanguageMenu">
-                                @CountryDisplayNames.GetValueOrDefault(country, country)
-                            </a>
-                        }
-                    }
-                    else
+        <div class="hidden md:flex items-center gap-4">
+            <div class="relative">
+                <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
+                    @CurrentCultureRecord.Code
+                    <span class="material-symbols-outlined text-base">expand_more</span>
+                </button>
+                <div class="lang-dropdown dropdown-menu @(_languageMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
+                    @foreach (var culture in SupportedCultures.All)
                     {
                         <a href="@ResolveLanguageHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">
                             @culture.NativeName
                         </a>
                     }
-                }
+                </div>
             </div>
+            @if (ShowCountryDropdown)
+            {
+                <div class="relative">
+                    <button type="button" class="flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleCountryMenu">
+                        <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-5 h-auto rounded-[2px]" />
+                        @CurrentCountryCode
+                        <span class="material-symbols-outlined text-base">expand_more</span>
+                    </button>
+                    <div class="country-dropdown dropdown-menu @(_countryMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
+                        @foreach (var country in CurrentLanguageCountries)
+                        {
+                            <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(IsCurrentCountry(country) ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCountryMenu">
+                                <img src="@FlagSrc(CountryCode(country))" alt="" class="w-5 h-auto rounded-[2px]" />
+                                @CountryDisplayNames.GetValueOrDefault(country, country)
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
             <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
                 <span class="material-symbols-outlined">code</span>
             </a>
@@ -71,13 +79,25 @@
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.marketplace")</a>
         <div class="flex flex-wrap gap-3 pt-2 border-t border-surface-container-high">
-            @foreach (var link in MobileLanguageLinks())
+            @foreach (var culture in SupportedCultures.All)
             {
-                <a href="@link.Href" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(link.CultureCode == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                    @link.Label
+                <a href="@ResolveLanguageHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                    @culture.Code
                 </a>
             }
         </div>
+        @if (ShowCountryDropdown)
+        {
+            <div class="flex flex-wrap gap-3">
+                @foreach (var country in CurrentLanguageCountries)
+                {
+                    <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                        <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
+                        @CountryDisplayNames.GetValueOrDefault(country, country)
+                    </a>
+                }
+            </div>
+        }
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
             <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
         </a>
@@ -119,13 +139,15 @@
         "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
         "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
         "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
+        "land-fr", "land-it", "land-nl", "land-be", "land-dk", "land-gr", "land-es", "land-fi", "land-no", "land-pl", "land-pt",
     };
 
     // On a country landing page ("land-*"), each language maps to the country/
     // countries where it is actually spoken/used for that page, instead of just
     // translating the current country's content. Languages mapping to more than
-    // one country render a sub-list to pick from; languages with no mapped
-    // country fall back to the culture's home page.
+    // one country show a separate country dropdown (ShowCountryDropdown) to pick
+    // from, defaulting to the first entry; languages with no mapped country fall
+    // back to the culture's home page.
     private static readonly Dictionary<string, string[]> LanguageCountryMap = new(StringComparer.OrdinalIgnoreCase)
     {
         ["de"] = new[] { "land-de", "land-at", "land-ch" },
@@ -143,6 +165,16 @@
         ["cs"] = new[] { "land-cz" },
         ["ro"] = new[] { "land-ro" },
         ["sv"] = new[] { "land-se" },
+        ["fr"] = new[] { "land-fr", "land-be" },
+        ["it"] = new[] { "land-it" },
+        ["nl"] = new[] { "land-nl", "land-be" },
+        ["da"] = new[] { "land-dk" },
+        ["el"] = new[] { "land-gr" },
+        ["es"] = new[] { "land-es" },
+        ["fi"] = new[] { "land-fi" },
+        ["nb"] = new[] { "land-no" },
+        ["pl"] = new[] { "land-pl" },
+        ["pt"] = new[] { "land-pt" },
     };
 
     private static readonly Dictionary<string, string> CountryDisplayNames = new(StringComparer.OrdinalIgnoreCase)
@@ -166,10 +198,22 @@
         ["land-id"] = "Indonesien",
         ["land-th"] = "Thailand",
         ["land-vn"] = "Vietnam",
+        ["land-fr"] = "Frankreich",
+        ["land-it"] = "Italien",
+        ["land-nl"] = "Niederlande",
+        ["land-be"] = "Belgien",
+        ["land-dk"] = "Dänemark",
+        ["land-gr"] = "Griechenland",
+        ["land-es"] = "Spanien",
+        ["land-fi"] = "Finnland",
+        ["land-no"] = "Norwegen",
+        ["land-pl"] = "Polen",
+        ["land-pt"] = "Portugal",
     };
 
     private bool _mobileMenuOpen;
     private bool _languageMenuOpen;
+    private bool _countryMenuOpen;
 
     protected override void OnInitialized()
     {
@@ -189,6 +233,7 @@
     {
         _mobileMenuOpen = false;
         _languageMenuOpen = false;
+        _countryMenuOpen = false;
         InvokeAsync(async () =>
         {
             var culture = CurrentCultureRecord;
@@ -201,9 +246,21 @@
 
     private void CloseMobileMenu() => _mobileMenuOpen = false;
 
-    private void ToggleLanguageMenu() => _languageMenuOpen = !_languageMenuOpen;
+    private void ToggleLanguageMenu()
+    {
+        _languageMenuOpen = !_languageMenuOpen;
+        _countryMenuOpen = false;
+    }
 
     private void CloseLanguageMenu() => _languageMenuOpen = false;
+
+    private void ToggleCountryMenu()
+    {
+        _countryMenuOpen = !_countryMenuOpen;
+        _languageMenuOpen = false;
+    }
+
+    private void CloseCountryMenu() => _countryMenuOpen = false;
 
     private (string Culture, string PageKey) ResolveCurrentPage()
     {
@@ -260,10 +317,10 @@
         => target.Code == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{target.UrlSlug}/{pageKey}";
 
     // Off a country page, language switching only translates the current page
-    // (LanguageSwitchHref). On a country page, a language with exactly one
-    // mapped country jumps straight there; zero or several mapped countries
-    // (the latter renders as a sub-list in the markup instead) fall back to
-    // that language's home page.
+    // (LanguageSwitchHref). On a country page, the language jumps straight to
+    // its first mapped country; the separate country dropdown (ShowCountryDropdown)
+    // lets the user pick a different one when a language maps to several.
+    // A language with no mapped country falls back to that language's home page.
     private string ResolveLanguageHref(SupportedCulture target)
     {
         if (!IsOnCountryPage)
@@ -271,7 +328,7 @@
             return LanguageSwitchHref(target);
         }
 
-        if (LanguageCountryMap.TryGetValue(target.Code, out var countries) && countries.Length == 1)
+        if (LanguageCountryMap.TryGetValue(target.Code, out var countries) && countries.Length > 0)
         {
             return CountryLanguageHref(target, countries[0]);
         }
@@ -279,23 +336,49 @@
         return target.Code == SupportedCultures.DefaultCode ? "/" : $"/{target.UrlSlug}";
     }
 
-    private IEnumerable<(string Label, string Href, string CultureCode)> MobileLanguageLinks()
+    // Shown on every page (not just /land-*) whenever the active language maps to
+    // more than one country — picking an entry always jumps to that country's
+    // page. Off a country page there is no "current" country yet, so the first
+    // mapped entry is treated as the default (button label + bold highlight).
+    private bool ShowCountryDropdown
+        => LanguageCountryMap.TryGetValue(CurrentCultureRecord.Code, out var countries) && countries.Length > 1;
+
+    private string[] CurrentLanguageCountries
+        => LanguageCountryMap.TryGetValue(CurrentCultureRecord.Code, out var countries) ? countries : Array.Empty<string>();
+
+    private string CurrentCountryCode
     {
-        foreach (var culture in SupportedCultures.All)
+        get
         {
-            if (IsOnCountryPage && LanguageCountryMap.TryGetValue(culture.Code, out var countries) && countries.Length > 1)
+            if (IsOnCountryPage)
             {
-                foreach (var country in countries)
-                {
-                    yield return ($"{culture.Code}-{country["land-".Length..]}", CountryLanguageHref(culture, country), culture.Code);
-                }
+                return CountryCode(ResolveCurrentPage().PageKey);
             }
-            else
-            {
-                yield return (culture.Code, ResolveLanguageHref(culture), culture.Code);
-            }
+
+            var countries = CurrentLanguageCountries;
+            return countries.Length > 0 ? CountryCode(countries[0]) : string.Empty;
         }
     }
+
+    private bool IsCurrentCountry(string pageKey)
+    {
+        if (IsOnCountryPage)
+        {
+            return pageKey.Equals(ResolveCurrentPage().PageKey, StringComparison.OrdinalIgnoreCase);
+        }
+
+        var countries = CurrentLanguageCountries;
+        return countries.Length > 0 && pageKey.Equals(countries[0], StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string CountryCode(string pageKey)
+        => pageKey.StartsWith("land-", StringComparison.OrdinalIgnoreCase) ? pageKey["land-".Length..].ToUpperInvariant() : pageKey.ToUpperInvariant();
+
+    // Flag emoji render as bare two-letter text on Windows Chrome/Edge (no
+    // color-flag font installed by default), so flags are self-hosted SVGs
+    // (MIT-licensed, github.com/lipis/flag-icons) under wwwroot/images/flags/.
+    private static string FlagSrc(string twoLetterCode)
+        => $"images/flags/{twoLetterCode.ToLowerInvariant()}.svg";
 
     private string Sh(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "shared", key);
 

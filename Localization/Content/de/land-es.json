@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Spanien | 12 Stunden descanso diario statt EU-Mindestmass",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Für Krankenhäuser und die Atención Primaria in Spanien",
+    "titleHtml": "12 statt 11 Stunden Ruhezeit &mdash; <span class=\"text-secondary\">und die Wochenruhe bleibt getrennt davon geschuldet.</span>",
+    "subtitle": "Art. 34.3 des Estatuto de los Trabajadores schreibt mindestens 12 zusammenhängende Stunden tägliche Ruhezeit (descanso diario) vor &mdash; strenger als das EU-Mindestmass von 11 Stunden. Der Tribunal Supremo hat 2026 klargestellt, dass diese 12 Stunden nicht mit der wöchentlichen 36-Stunden-Ruhezeit verschmolzen werden dürfen: beide zusammen ergeben 48 Stunden. Verstösse gelten als schwere Ordnungswidrigkeit mit Bussgeldern bis 7.500 Euro pro Mitarbeitendem.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in spanischen Kliniken",
+    "title": "12h-Tagesruhe und 36h-Wochenruhe dürfen nicht verschmolzen werden",
+    "items": [
+      { "icon": "hourglass_top", "title": "12 Stunden descanso diario", "text": "Art. 34.3 ET verlangt mindestens 12 zusammenhängende Ruhestunden zwischen zwei Arbeitstagen &mdash; ein Mass, das über dem EU-Standard von 11 Stunden liegt." },
+      { "icon": "gavel", "title": "36h-Wochenruhe bleibt getrennt geschuldet", "text": "Der Tribunal Supremo hat mit Urteil vom 12. März 2026 bestätigt, dass die wöchentliche 36-Stunden-Ruhezeit kumulativ zur täglichen 12-Stunden-Ruhezeit gilt &mdash; zusammen 48 Stunden, nicht verrechenbar." },
+      { "icon": "groups", "title": "Fehlerfreie Pläne unter Beobachtung", "text": "In der Atención Primaria sorgen anhaltende Streiks und Personalfrust dafür, dass Verstösse gegen die 12-Stunden-Regel von Mitarbeitenden und Gewerkschaften sofort zur Anzeige gebracht werden." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der spanischen Datenschutzbehörde AEPD in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Betriebsräte."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks 12h-Tagesruhe und 36h-Wochenruhe getrennt einhält",
+    "subtitle": "Beide Ruhezeit-Regime gleichzeitig geführt, nie gegeneinander verrechnet.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Verletzung der 12h- oder 36h-Regel entsteht." },
+      { "icon": "fact_check", "title": "Ruhezeit-Tracking nach Art. 34.3 ET", "text": "Klacks führt die 12-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe getrennt und fortlaufend mit &mdash; abrufbar bei Nachfragen von Mitarbeitenden oder Gewerkschaft." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für fehlerfreie Pläne", "text": "Der GA-gestützte Autofill-Assistent plant Schichten unter Einhaltung beider Ruhezeit-Regime automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für spanische Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 12h-Tagesruhe und die 36h-Wochenruhe automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

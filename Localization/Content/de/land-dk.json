@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Dänemark | Die 11-timers reglen automatisch eingehalten",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Dänemark",
+    "titleHtml": "11 Stunden Freizeit pro 24 Stunden &mdash; <span class=\"text-secondary\">verlässlich geplant, nicht dem Zufall überlassen.</span>",
+    "subtitle": "Die 11-timers reglen im dänischen Arbejdstidsloven schreibt mindestens 11 zusammenhängende Stunden Freizeit innerhalb von 24 Stunden vor, mit engen Ausnahmen in bestimmten Berufen und sofortigem Ausgleich. Seit dem grossen Pflegestreik 2021 ist der Personalmangel in dänischen Kliniken chronisch &mdash; verlässliche, regelkonforme Planung wird zum Wettbewerbsvorteil um knappes Personal.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in dänischen Kliniken",
+    "title": "11-timers reglen und akuter Fachkräftemangel",
+    "items": [
+      { "icon": "hourglass_top", "title": "11-timers reglen", "text": "Mindestens 11 zusammenhängende Stunden Freizeit innerhalb von 24 Stunden &mdash; mit einer Ausnahmeregel auf 8 Stunden in bestimmten Berufen bei sofortigem Ausgleich." },
+      { "icon": "groups", "title": "Nachwirkungen des Pflegestreiks 2021", "text": "Nach dem Sygeplejerskestrejken 2021 blieben in der Region Hovedstaden zeitweise 63% der ausgeschriebenen Pflegestellen unbesetzt, rund 200 Betten mussten geschlossen werden &mdash; der Personalmangel ist bis heute spürbar." },
+      { "icon": "gavel", "title": "Tarif-Souveränität statt starrem Gesetz", "text": "Viele Details der Arbeitszeit werden nicht gesetzlich, sondern über Kollektivabkommen mit Gewerkschaften wie FOA oder DSR ausgehandelt &mdash; ein Dienstplaner muss hochgradig anpassbare Regeln unterstützen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der dänischen Datenschutzbehörde Datatilsynet in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Gewerkschaften."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die 11-timers reglen zuverlässig einhält",
+    "subtitle": "Regelbasierte Tarifabkommen abgebildet, nicht starr vorgegeben.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Verletzung der 11-timers reglen entsteht." },
+      { "icon": "fact_check", "title": "Ruhezeit-Tracking", "text": "Klacks führt die 11-Stunden-Freizeit sowie tarifliche Ausnahmen fortlaufend mit &mdash; sichtbar für Planende und Gewerkschaftsvertretung." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard bei Personalmangel", "text": "Der GA-gestützte Autofill-Assistent findet auch bei knapper Personaldecke regelkonforme Rotationen, statt Lücken manuell zu stopfen." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für dänische Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 11-timers reglen automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Polen | Równoważny czas pracy für das Sicherheitsgewerbe korrekt geplant",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Für Sicherheitsdienste und Gesundheitseinrichtungen in Polen",
+    "titleHtml": "Bis zu 24 Stunden Dienst im Objektschutz &mdash; <span class=\"text-secondary\">mit korrekt eingeplantem Ausgleich.</span>",
+    "subtitle": "Art. 137 Kodeks Pracy erlaubt im Objekt- und Personenschutz (ochrona mienia) im Rahmen des równoważny czas pracy eine Verlängerung der täglichen Arbeitszeit auf bis zu 24 Stunden &mdash; mit anschliessendem odpoczynek równoważny, mindestens so lang wie die geleisteten Stunden. Daneben gilt nach Art. 132 KP für alle Branchen eine tägliche Mindestruhezeit von 11 ununterbrochenen Stunden pro 24-Stunden-Zeitraum.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag im polnischen Sicherheitsgewerbe und Gesundheitswesen",
+    "title": "24h-Dienste, Ausgleichsruhe und die verschärfte PIP-Kontrolle",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Bis zu 24h Dienst im Objektschutz", "text": "Art. 137 KP erlaubt im Rahmen des równoważny czas pracy für Objekt- und Personenschutz eine Verlängerung der täglichen Arbeitszeit auf bis zu 24 Stunden &mdash; mit einem Abrechnungszeitraum von in der Regel einem, in begründeten Fällen bis zu drei Monaten." },
+      { "icon": "hourglass_top", "title": "11-Stunden-Ruhezeit nach Art. 132 KP", "text": "Unabhängig vom Arbeitszeitsystem gelten mindestens 11 ununterbrochene Ruhestunden pro 24-Stunden-Zeitraum &mdash; Ausnahmen bestehen nur für Rettungseinsätze und verlängerte Tagesarbeitszeit-Systeme mit Ausgleichsruhe." },
+      { "icon": "fact_check", "title": "PIP kontrolliert seit 2026 verstärkt Scheinselbstständigkeit", "text": "Seit der PIP-Reform (in Kraft ab 8. Juli 2026) kann die staatliche Arbeitsinspektion Umowa-zlecenie-Verträge im Gesundheitswesen direkt per Verwaltungsentscheid in ein Arbeitsverhältnis umwandeln, statt den Gerichtsweg zu benötigen &mdash; rechtssichere Festangestellten-Planung wird dringlicher." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der polnischen Datenschutzbehörde UODO in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und PIP-Kontrollen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks 24h-Dienste und Ausgleichsruhe korrekt verrechnet",
+    "subtitle": "Równoważny czas pracy und die 11h-Regel gleichzeitig im Blick.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus eine ungeplante Ruhezeit-Verletzung entsteht." },
+      { "icon": "fact_check", "title": "Ausgleichsruhe-Tracking nach Art. 137 KP", "text": "Klacks berechnet den odpoczynek równoważny nach jedem verlängerten Dienst automatisch und führt ihn über den gesamten Abrechnungszeitraum mit." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für 24h-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant 24-Stunden-Dienste im Objektschutz unter Einhaltung der Ausgleichsruhe automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation und rechtssicherem Vertragsstatus werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für polnische Sicherheitsdienste und Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks 24h-Dienste und Ausgleichsruhe korrekt verrechnet &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

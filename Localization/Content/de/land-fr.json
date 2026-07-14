@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Frankreich | Dienstplanung mit 12-Stunden-Ruhezeit im Krankenhaus",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Frankreich",
+    "titleHtml": "12 Stunden Ruhezeit in der Fonction Publique Hospitalière &mdash; <span class=\"text-secondary\">automatisch eingehalten, nicht nachgerechnet.</span>",
+    "subtitle": "Der Décret n° 2002-9 begrenzt Dauerdienste auf 9 Stunden tagsüber bzw. 10 Stunden nachts, dazu gilt in der Fonction Publique Hospitalière eine tägliche Ruhezeit von 12 zusammenhängenden Stunden &mdash; über dem EU-Mindestmass von 11 Stunden. Eine neue Instruktion vom Dezember 2025 begrenzt zusätzlich die Dauerarbeitszeit bestimmter Fachdienste auf 24 Stunden.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in französischen Krankenhäusern",
+    "title": "Zwei Ruhezeit-Regime, die nicht verwechselt werden dürfen",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "9h/10h-Grenze für Dauerdienst", "text": "Der Décret n° 2002-9 begrenzt die tägliche Arbeitszeit von Personal im Dauerdienst (travail continu) auf 9 Stunden tagsüber bzw. 10 Stunden nachts &mdash; Abweichungen sind nur in engen Grenzen zulässig." },
+      { "icon": "schedule", "title": "12 statt 11 Stunden Ruhezeit", "text": "In der Fonction Publique Hospitalière gilt eine tägliche Mindestruhezeit von 12 zusammenhängenden Stunden plus 36 Stunden Wochenruhe &mdash; strenger als das EU-Mindestmass von 11 Stunden." },
+      { "icon": "gavel", "title": "Neue 24h-Grenze nur für Spezialdienste", "text": "Seit einer Instruktion vom 30. Dezember 2025 gilt für bestimmte Fachdienste (Anästhesie, Notfall, Neonatologie, Geburtshilfe) eine Obergrenze von 24 Stunden Dauerdienst &mdash; alle anderen Dienste bleiben bei der Standard-Ruhezeit von 11 Stunden. Wer diese beiden Regime verwechselt, plant falsch." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der französischen Datenschutzbehörde CNIL in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Personalvertretungen."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die zwei Ruhezeit-Regime auseinanderhält",
+    "subtitle": "9h/10h-Dauerdienst und die 24h-Ausnahme getrennt geführt, nicht vermischt.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Ruhezeit-Verletzung entsteht." },
+      { "icon": "fact_check", "title": "Ruhezeit-Tracking nach Dienstart", "text": "Klacks unterscheidet Standard-Dienste (11h-Ruhezeit) von den freigegebenen 24h-Fachdiensten &mdash; jede Ausnahme bleibt nachvollziehbar dokumentiert." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Dauerdienst-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Dauerdienste unter Einhaltung der 9h/10h-Grenze und der 12h-Ruhezeit automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig für die freigegebenen Fachdienste mit 24h-Regelung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für französische Krankenhäuser testen",
+    "text": "Erleben Sie im Playground, wie Klacks die 9h/10h-Grenze und die 12-Stunden-Ruhezeit automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}

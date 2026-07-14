@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks für Norwegen | Turnus-Arbeitszeit automatisch auf 38 oder 36 Stunden reduziert",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Norwegen",
+    "titleHtml": "38 oder 36 Stunden statt 40 &mdash; <span class=\"text-secondary\">automatisch nach Belastung berechnet.</span>",
+    "subtitle": "Das Arbeidsmiljøloven (AML § 10-4) reduziert die reguläre Wochenarbeitszeit von 40 auf 38 Stunden bei durchgehendem Schicht-/Turnusdienst (døgnkontinuerlig) bzw. auf 36 Stunden bei durchgehendem Dienst mit regelmässiger Sonntagsarbeit (helkontinuerlig). Seit dem 1. Januar 2026 verpflichtet eine AML-Ergänzung Arbeitgeber zudem generell, psychosoziale Belastungen wie Rollenunklarheit und Zeitdruck strukturiert zu prüfen &mdash; auch in Schichtteams relevant.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in norwegischen Kliniken",
+    "title": "38h, 36h oder 40h &mdash; je nach Turnus-Belastung",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "38h bei døgnkontinuerlig, 36h bei helkontinuerlig", "text": "Je nach Ausmass an Nacht- und Sonntagsarbeit im Turnus reduziert sich die reguläre Wochenarbeitszeit automatisch auf 38 oder 36 Stunden &mdash; ein falsch klassifizierter Turnus führt zu falschen Arbeitszeitkonten." },
+      { "icon": "groups", "title": "Psychosoziales Arbeitsumfeld seit 2026 im Fokus", "text": "Eine AML-Ergänzung zum 1. Januar 2026 verpflichtet Arbeitgeber, emotionale Belastung, Rollenklarheit und Zeitdruck strukturiert zu prüfen &mdash; für Schichtteams mit Nacht- und Wochenenddienst ein zusätzlicher Dokumentationsaufwand." },
+      { "icon": "schedule", "title": "Mangel an Pflegekräften in den kommuner", "text": "Besonders in den nördlichen, ländlichen Gemeinden fehlen Krankenschwestern und Hebammen &mdash; die korrekte Turnus-Klassifizierung darf trotz Personalknappheit nicht zur Nebensache werden." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datenhoheit",
+    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
+    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der norwegischen Datenschutzbehörde Datatilsynet in eigener Regie.",
+    "bullets": [
+      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Arbeitszeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
+      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
+      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Tillitsvalgte."
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die richtige Turnus-Arbeitszeit automatisch berechnet",
+    "subtitle": "38h, 36h oder 40h korrekt zugeordnet, statt manuell klassifiziert.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus eine falsche Turnus-Einstufung entsteht." },
+      { "icon": "fact_check", "title": "Automatische Turnus-Klassifizierung", "text": "Klacks erkennt døgnkontinuerlig- und helkontinuerlig-Rotationen automatisch und wendet die reduzierte Wochenarbeitszeit korrekt an." },
+      { "icon": "calendar_month", "title": "Autofill-Wizard für Turnusrotationen", "text": "Der GA-gestützte Autofill-Assistent plant Turnusrotationen unter Einhaltung der reduzierten Arbeitszeitgrenzen automatisch mit ein." },
+      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks für norwegische Kliniken testen",
+    "text": "Erleben Sie im Playground, wie Klacks Turnus-Arbeitszeit automatisch auf 38 oder 36 Stunden reduziert &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+  }
+}
