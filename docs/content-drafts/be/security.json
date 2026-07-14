@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste Belgien | PC 317, Ruhezeiten & Änderungsprämie",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste in Belgien (PC 317)",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Änderung dokumentiert.</span>",
+    "subtitle": "Klacks besetzt Objekte lückenlos, veröffentlicht den Basisplan fristgerecht zwischen dem 22. und 25. des Vormonats und zählt jede spätere Änderung mit &mdash; damit die Änderungsprämie nie überraschend fällig wird.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rundgänge in Belgien",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Belgien",
+    "title": "37h-Schnitt, Ruhezeiten und Änderungsprämie",
+    "items": [
+      { "icon": "schedule", "title": "37h-Wochenschnitt im Jahr", "text": "PC 317 setzt die durchschnittliche Wochenarbeitszeit auf 37 Stunden im Jahresschnitt &mdash; über viele Objekte und 12h-Schichten hinweg von Hand mühsam zu kontrollieren." },
+      { "icon": "bedtime", "title": "12h-Ruhezeit und 6-Tage-Grenze", "text": "Nach einer 12h-Schicht sind mindestens 12h Ruhezeit vorgeschrieben, nach maximal 6 durchgehenden Arbeitstagen bzw. 48 Stunden mindestens 36h Ruhezeit." },
+      { "icon": "event_repeat", "title": "Änderungsprämie ab der 4. Planänderung", "text": "Der Basisplan muss zwischen dem 22. und 25. des Vormonats stehen &mdash; ändert der Arbeitgeber danach ein viertes Mal im selben Monat, fällt eine Prämie an. Ohne Zählung im Plan leicht übersehen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks belgische Sicherheitsdienste entlastet",
+    "subtitle": "Vom besetzten Posten bis zur gezählten Planänderung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "37h-Jahresschnitt automatisch überwacht", "text": "Klacks behält den durchschnittlichen 37h-Wochenschnitt im Blick, auch bei wechselnden 12h-Schichten." },
+      { "icon": "bedtime", "title": "Ruhezeiten korrekt eingehalten", "text": "Die 12h-Ruhezeit nach jeder Schicht und die 36h-Ruhezeit nach maximal 6 Arbeitstagen bzw. 48 Stunden werden automatisch eingeplant." },
+      { "icon": "event_repeat", "title": "Änderungsprämie automatisch gezählt", "text": "Klacks zählt jede Planänderung nach dem Basisplan vom 22.-25. des Vormonats mit und warnt, bevor die 4. Änderung die Prämie von aktuell € 0,6056/Std. auslöst." },
+      { "icon": "nightlight", "title": "Zweigeteilter Nachtzuschlag automatisch verrechnet", "text": "Klacks unterscheidet automatisch zwischen dem 12%-Zuschlag von 20 bis 22 Uhr und dem 22,5%-Zuschlag von 22 bis 6 Uhr." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Ruhezeiten, Jahresschnitt und Zuschläge." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Basisplan, Änderung, ein Plan",
+    "text": "Klacks veröffentlicht den Basisplan fristgerecht zwischen dem 22. und 25. des Vormonats, zählt jede spätere Änderung mit und warnt rechtzeitig, bevor die 4. Änderung die Prämie auslöst &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Ruhezeiten und die Änderungsprämie übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

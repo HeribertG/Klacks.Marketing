@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Griechenland | Ψηφιακή Κάρτα Εργασίας & Sechstagewoche",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; ERGANI-konforme Zeiterfassung",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks erfasst Dienstzeiten lückenlos, trennt Mehrarbeit, Überstunde und die neue 13-Stunden-Tag-Regelung korrekt und läuft On-Premise &mdash; während die digitale Arbeitskarte (Ψηφιακή Κάρτα Εργασίας) branchenweise zur ERGANI-II-Pflicht wird und Abweichungen mit 10.500 € pro Mitarbeitendem geahndet werden.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Griechenland",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in griechischen Betrieben",
+    "title": "ERGANI II, Sechstagewoche und der neue 13-Stunden-Tag",
+    "items": [
+      { "icon": "fingerprint", "title": "Digitale Arbeitskarte &amp; ERGANI II", "text": "Die Ψηφιακή Κάρτα Εργασίας erfasst Beginn und Ende jeder Schicht in Echtzeit und speist automatisch ERGANI II &mdash; jede Abweichung von den gemeldeten Zeiten kostet 10.500 € pro Mitarbeitendem." },
+      { "icon": "calendar_month", "title": "Sechstagewoche (Εξαήμερο) korrekt verzuschlagen", "text": "Seit 1. Juli 2024 dürfen 24/7-Betriebe einen 6. Arbeitstag anordnen &mdash; maximal 8 Stunden, mit 40 % Zuschlag bzw. 115 % an Sonn-/Feiertagen. Von Hand ist das fehleranfällig." },
+      { "icon": "gavel", "title": "Neuer 13-Stunden-Tag nach Gesetz 5239/2025", "text": "Seit 16. Februar 2026 ist ein 13-Stunden-Tag bei einem einzigen Arbeitgeber zulässig &mdash; an maximal 37,5 Tagen im Jahr und nur, wenn die 11-stündige Tagesruhe voll gewahrt bleibt." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks griechische Betriebe entlastet",
+    "subtitle": "Von der ERGANI-konformen Erfassung bis zur korrekten Zuschlagslogik &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "fingerprint", "title": "ERGANI-konforme Zeiterfassung", "text": "Klacks erfasst Beginn und Ende jeder Schicht lückenlos &mdash; bereit für den branchenweisen ERGANI-II-Abgleich und ohne das Risiko der 10.500-€-Busse." },
+      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Klacks berechnet den 40 %-Zuschlag für den 6. Arbeitstag automatisch &mdash; bzw. 115 %, wenn er auf einen Sonn- oder Feiertag fällt &mdash; und hält den 8-Stunden-Deckel ein." },
+      { "icon": "layers", "title": "Drei Überstunden-Stufen sauber getrennt", "text": "Mehrarbeit (+20 %), Überstunde (+40 %, max. 150 h/Jahr) und nicht deklarierte Überstunde (+120 %) werden von Klacks automatisch unterschieden &mdash; inklusive der 45h/48h-Wochenobergrenze." },
+      { "icon": "hourglass_top", "title": "13-Stunden-Tag nach Gesetz 5239/2025 im Blick", "text": "Klacks überwacht die 37,5-Tage-Jahresgrenze und stellt sicher, dass die 11-stündige Tagesruhe bei jeder verlängerten Schicht gewahrt bleibt." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten bleiben, wo Sie sie haben wollen." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "6. Arbeitstag, Überstunde, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht den 6. Arbeitstag der Woche darstellt oder die Mehrarbeits- bzw. Überstundengrenze erreicht, und schlägt den korrekten Zuschlag gleich vor &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks ERGANI-konforme Zeiterfassung, Sechstagewoche und Überstunden-Zuschläge automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

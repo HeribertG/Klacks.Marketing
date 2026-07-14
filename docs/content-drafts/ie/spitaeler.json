@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Krankenhäuser in Irland | OWTA-Referenzzeitraum, Ersatzruhezeit & NCHD-Agreement",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Irland",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit dem 6-Monats-Referenzzeitraum für die 48-Stunden-Grenze nach OWTA, der Ersatzruhezeit nach WRC Code of Practice COP8 und den Diensttage-Vorgaben des NCHD-Agreements im Blick. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Irland",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Irland",
+    "title": "6-Monats-Referenz, Ersatzruhezeit und NCHD-Vorgaben",
+    "items": [
+      { "icon": "gavel", "title": "6-Monats-Referenzzeitraum für die 48h-Grenze", "text": "Für medizinisches Personal erlaubt Section 15 OWTA 1997 einen Referenzzeitraum von 6 statt 4 Monaten zur Berechnung der durchschnittlichen 48-Stunden-Woche &mdash; über wechselnde Dienste hinweg von Hand kaum nachvollziehbar." },
+      { "icon": "bedtime", "title": "Ersatzruhezeit nach COP8", "text": "Wird eine Ruhezeit verkürzt, verlangt der WRC Code of Practice on Compensatory Rest Periods (COP8) eine Ersatzruhezeit &mdash; wann und wie diese gewährt wird, muss dokumentiert sein." },
+      { "icon": "local_hospital", "title": "NCHD-Agreement: maximal 10 Diensttage", "text": "Das HSE/IMO NCHD-Agreement 2022, in Kraft seit Januar 2023, schreibt für Assistenzärzt:innen verpflichtende Ruhe nach maximal 10 aufeinanderfolgenden Diensttagen vor, verbunden mit Ausgleichszahlungen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in Irland entlastet",
+    "subtitle": "Von der lückenlosen 24/7-Abdeckung bis zur Ersatzruhezeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "6-Monats-Referenzzeitraum automatisch berechnet", "text": "Klacks berechnet die durchschnittliche 48-Stunden-Woche über den nach Section 15 OWTA vorgesehenen 6-Monats-Zeitraum für medizinisches Personal." },
+      { "icon": "bedtime", "title": "Ersatzruhezeit nach COP8 mitgeplant", "text": "Wird eine Ruhezeit verkürzt, schlägt Klacks automatisch die passende Ersatzruhezeit gemäss WRC Code of Practice COP8 vor." },
+      { "icon": "verified", "title": "NCHD-Diensttage im Blick", "text": "Klacks zählt aufeinanderfolgende Diensttage für Assistenzärzt:innen mit und warnt vor Überschreitung der 10-Tage-Grenze aus dem NCHD-Agreement 2022." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Mehrere Stationen, ein Blick auf COP8 und NCHD",
+    "text": "Jede Station hat eigene Besetzungsregeln. Klacks plant sie gemeinsam, berechnet die 48-Stunden-Grenze über den 6-Monats-Zeitraum und schlägt bei verkürzter Ruhezeit automatisch die passende Ersatzruhezeit nach COP8 vor &mdash; die Pflegedienstleitung sieht jederzeit, wo es eng wird."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Stationen, Ersatzruhezeit und NCHD-Vorgaben übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

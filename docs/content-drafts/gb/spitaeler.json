@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler Grossbritannien | Junior-Doctor-Schichtlimits & WTR-Transparenz",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Grossbritannien",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Assistenzarzt-Rotationen lückenlos &mdash; mit den Schicht- und Ruhezeitgrenzen des Junior Doctor Contract automatisch berücksichtigt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Grossbritannien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in England",
+    "title": "13-Stunden-Limit, Ruhezeiten-Kaskade und WTR-Transparenz",
+    "items": [
+      { "icon": "timer", "title": "13-Stunden-Schichtlimit für Assistenzärzte", "text": "Der Junior Doctor Contract 2016 (England) sieht vor, dass Schichten nicht länger als 13 Stunden angesetzt werden &mdash; über viele Rotationen und Stationen hinweg von Hand kaum zu überblicken. Schottland, Wales und Nordirland haben eigene, abweichende Verträge." },
+      { "icon": "bedtime", "title": "Ruhezeiten-Kaskade einhalten", "text": "Nach maximal 4 aufeinanderfolgenden Schichten über 10 Stunden sind 48 Stunden Ruhe fällig, nach maximal 4 Nächten 46 Stunden, nach maximal 7 Schichten 48 Stunden &mdash; und mindestens 11 Stunden Ruhe zwischen zwei Schichten." },
+      { "icon": "visibility", "title": "WTR-Konformität sichtbar machen", "text": "Die NHS-England-Guidance zum E-Rostering verlangt, dass Working-Time-Regulations-Regeln im System hinterlegt sind und Verstösse über Reports sichtbar gemacht werden &mdash; ein verlässlicher Überblick ist ohne Software kaum zu leisten." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in England entlastet",
+    "subtitle": "Von der lückenlosen Stationsabdeckung bis zur WTR-Transparenz &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "timer", "title": "13-Stunden-Limit automatisch eingehalten", "text": "Klacks plant Assistenzarzt-Schichten so, dass die 13-Stunden-Grenze des Junior Doctor Contract nicht überschritten wird." },
+      { "icon": "bedtime", "title": "Ruhezeiten-Kaskade laufend geprüft", "text": "Die 48/46/48-Stunden-Ruhezeiten nach aufeinanderfolgenden Schichten oder Nächten sowie die 11-Stunden-Ruhe zwischen Schichten werden automatisch mitgeplant." },
+      { "icon": "visibility", "title": "WTR-Verstösse sichtbar gemacht", "text": "Klacks hinterlegt die Working Time Regulations im System und zeigt Verstösse an, bevor der Dienstplan veröffentlicht wird &mdash; nachvollziehbar für jedes Support-and-Challenge-Meeting." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Schichtlimits und Ruhezeiten." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Assistenzarzt-Rotation, ein Plan",
+    "text": "Klacks hält das 13-Stunden-Schichtlimit und die Ruhezeiten-Kaskade des Junior Doctor Contract automatisch ein und zeigt der Stationsleitung frühzeitig, wo es eng wird."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Schichtlimits, Ruhezeiten und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

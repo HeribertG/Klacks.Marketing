@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Belgien | Paritair Comité, Sprachgesetz & Dienstplan-Reform 2026",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Für Unternehmen in Belgien &middot; Alle Paritair Comités",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jedes Paritair Comité respektieren.</span>",
+    "subtitle": "Klacks kennt die Regeln Ihres Paritair Comité (CP/PC), erstellt Dienstpläne automatisch in der Sprache jeder Betriebsstätte und dokumentiert jede Abweichung &mdash; damit Sie die Reform 2026 lückenlos einhalten.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Belgien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in belgischen Betrieben",
+    "title": "Paritair Comité, Sprachgesetz und die Reform 2026",
+    "items": [
+      { "icon": "gavel", "title": "Jedes Paritair Comité hat eigene Regeln", "text": "Jedes Unternehmen ist zwingend einem Paritair Comité (PC/CP) zugeordnet &mdash; etwa PC 330 Gesundheit, PC 317 Security, PC 121 Reinigung oder PC 140.03 Logistik. Die jeweilige CAO regelt Zuschläge, Arbeitszeitgrenzen und Planungsfristen verbindlich, nicht ein einheitliches Gesetz." },
+      { "icon": "translate", "title": "Sprache nach Betriebsstätte, nicht Hauptsitz", "text": "Arbeitsverträge, Dienstpläne und Zeiterfassung müssen in der Sprache der jeweiligen Betriebsstätte vorliegen &mdash; Niederländisch in Flandern, Französisch in der Wallonie, Deutsch in der Deutschsprachigen Gemeinschaft. Verstösse können das Dokument zugunsten der Arbeitnehmenden unwirksam machen." },
+      { "icon": "fact_check", "title": "Abweichungsregister und Reform 2026", "text": "Jede Abweichung vom publizierten Teilzeit-Dienstplan muss lückenlos dokumentiert werden, sonst gilt gesetzlich Vollzeitbeschäftigung. Seit 1. Juni 2026 sank zudem die Teilzeit-Mindestarbeitszeit von einem Drittel auf ein Zehntel der Vollzeitquote, und die Publikationsfrist verkürzte sich auf 7 Werktage im Voraus." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks belgische Betriebe entlastet",
+    "subtitle": "Von der PC-spezifischen Regel bis zur mehrsprachigen Dokumentation &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "Paritair Comité automatisch berücksichtigt", "text": "Klacks kennt die Zuschläge, Arbeitszeitgrenzen und Planungsfristen des jeweils zugeordneten PC &mdash; ob PC 330, PC 317, PC 121 oder PC 140.03." },
+      { "icon": "translate", "title": "Dienstpläne je Betriebsstätte in der richtigen Sprache", "text": "Klacks erstellt Dienstpläne und Zeiterfassung automatisch in der Sprache der jeweiligen Betriebsstätte &mdash; Niederländisch, Französisch oder Deutsch." },
+      { "icon": "fact_check", "title": "Abweichungsregister lückenlos geführt", "text": "Jede Planänderung bei Teilzeitkräften wird automatisch dokumentiert &mdash; die gesetzliche Vollzeitvermutung entsteht gar nicht erst." },
+      { "icon": "event_available", "title": "Reform 2026 automatisch eingehalten", "text": "Klacks veröffentlicht Dienstpläne innerhalb der gesetzlichen Frist von 7 Werktagen im Voraus (oder der per CAO verkürzten Frist) und berücksichtigt die neue Teilzeit-Mindestarbeitszeit von einem Zehntel der Vollzeitquote automatisch." },
+      { "icon": "schedule", "title": "Freiwillige Überstunden sauber getrennt", "text": "Die ersten 240 der bis zu 360 freiwilligen Jahresüberstunden sind von Zuschlag, Sozialabgaben und Steuer befreit &mdash; Klacks führt diese Grenze automatisch mit." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist direkt in die Klacks-Oberfläche eingebettet und hilft, PC-spezifische Regeln, Sprachvorgaben je Betriebsstätte und die Publikationsfrist der Reform 2026 einzuhalten. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, keine Blackbox-Entscheidung.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Paritair Comité und Sprachvorgabe, ein Blick",
+    "text": "Klacks erkennt automatisch, welches Paritair Comité für eine Betriebsstätte gilt, erstellt den Dienstplan in der richtigen Sprache und dokumentiert jede Abweichung &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Paritair-Comité-Regeln, Sprachvorgaben und die Publikationsfrist der Reform 2026 automatisiert &mdash; kostenlos und ohne Registrierung."
+  }
+}

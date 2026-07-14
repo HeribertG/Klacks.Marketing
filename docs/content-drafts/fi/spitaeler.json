@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler Finnland | Jaksotyö, Überstunden & freie Tage",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Finnland",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Rotationen in der Periodenarbeit (jaksotyö) der SOTE-Spitäler lückenlos &mdash; mit korrekt gestaffelten Überstunden, freien Tagen und Wochenruhe. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für finnische Spitäler",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Finnland",
+    "title": "Gestaffelte Überstunden, freie Tage und Wochenruhe",
+    "items": [
+      { "icon": "gavel", "title": "Überstunden gestaffelt vergüten", "text": "In der 3-Wochen-Periode sind die ersten 18 Überstunden (Stunden 121 bis 138) mit 50 % und jede weitere Stunde mit 100 % zu vergüten &mdash; über viele Rotationen und Stationen hinweg von Hand fehleranfällig." },
+      { "icon": "event_available", "title": "Freie Tage im 3-Wochen-Rhythmus", "text": "Der SOTE-Sopimus verlangt mindestens zwei freie Tage pro Woche und strebt zwei aufeinanderfolgende freie Tage innerhalb von drei Wochen an &mdash; bei rotierenden Dienstplänen im 24/7-Betrieb schwer zu garantieren." },
+      { "icon": "bedtime", "title": "Wochenruhe verkürzt, im Schnitt ausgeglichen", "text": "In durchgehender Periodenarbeit lässt sich die Wochenruhe auf minimal 24 Stunden verkürzen &mdash; im Durchschnitt müssen aber mindestens 35 Stunden über einen 14-Tage-Zeitraum erreicht werden. Diesen Schnitt über rollierende Zeiträume zu behalten, ist von Hand kaum machbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks finnische Spitäler entlastet",
+    "subtitle": "Von der lückenlosen 24/7-Abdeckung bis zur korrekt gestaffelten Überstundenvergütung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "Überstunden automatisch gestaffelt", "text": "Klacks berechnet die ersten 18 Überstunden je 3-Wochen-Periode mit 50 % und jede weitere Stunde mit 100 % &mdash; korrekt und ohne Nachrechnen." },
+      { "icon": "event_available", "title": "Freie Tage &amp; Wochenruhe automatisch geplant", "text": "Klacks stellt die zwei freien Tage pro Woche sicher, plant nach Möglichkeit zwei aufeinanderfolgende freie Tage innerhalb von drei Wochen ein und behält die im Schnitt 35-stündige Wochenruhe über den 14-Tage-Zeitraum im Blick." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation, freie Tage und Wochenruhe." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Rotation, freie Tage und Überstunden, ein Plan",
+    "text": "Klacks staffelt die Überstundenvergütung korrekt (18 Stunden zu 50 %, danach 100 %), sichert die zwei freien Tage pro Woche und behält die im Schnitt 35-stündige Wochenruhe über 14 Tage im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Rotationen, freie Tage und Überstunden übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die Thuiszorg in den Niederlanden | ORT-toeslagen & CAO VVT",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die Thuiszorg &amp; ambulante Pflege in den Niederlanden",
+    "titleHtml": "Jede ORT-Zuschlagsstufe <span class=\"text-secondary\">automatisch richtig.</span>",
+    "subtitle": "Klacks berechnet die Onregelmatigheidstoeslag (ORT) der CAO VVT automatisch nach Zeitfenster und erkennt die neue €25-Tagesvergütung ab 1.1.2026 &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der niederländischen Thuiszorg",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der niederländischen Thuiszorg",
+    "title": "ORT-Zuschläge, €25-Vergütung und Oproepkrachten",
+    "items": [
+      { "icon": "schedule", "title": "ORT: fünf Zuschlagsstufen", "text": "Die Onregelmatigheidstoeslag der CAO VVT (gültig ab 1.1.2026) unterscheidet Werktag-Abend (22%), Werktag-Nacht (47%), Samstag-Tag (38%), Samstag-Nacht (52%) und Sonn-/Feiertag (60%) &mdash; von Hand kaum fehlerfrei zu berechnen." },
+      { "icon": "paid", "title": "Neue €25-Tagesvergütung ab 2026", "text": "Wer in Verzorging/Verpleging einen zusätzlichen Tag über die vereinbarten Arbeitstage hinaus arbeitet, erhält dafür ab 1.1.2026 25 € brutto extra &mdash; ausser bei Nullstunden- oder Regieverträgen und Hulp bij het huishouden." },
+      { "icon": "event_repeat", "title": "Oproepkrachten in der Pflege", "text": "Abrufkräfte müssen mindestens 4 Tage im Voraus informiert werden &mdash; bei kurzfristiger Absage bleibt der volle Lohnanspruch bestehen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die niederländische Thuiszorg entlastet",
+    "subtitle": "Von der automatischen ORT-Berechnung bis zur optimierten Tour &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "ORT automatisch nach Zeitfenster berechnet", "text": "Klacks kennt alle fünf ORT-Stufen der CAO VVT &mdash; 22%, 47%, 38%, 52% und 60% &mdash; und ordnet jeden Dienst automatisch der richtigen Stufe zu." },
+      { "icon": "paid", "title": "€25-Tagesvergütung automatisch erkannt", "text": "Klacks zeigt, sobald ein zusätzlicher Arbeitstag die neue €25-Vergütung auslöst &mdash; und wo Nullstunden- oder Regieverträge ausgenommen sind." },
+      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Die 4-Tage-Ankündigungsfrist wird automatisch eingehalten, kurzfristige Absagen mit Lohnanspruch sofort sichtbar gemacht." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nachtdienst, ORT, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn ein Nachtdienst am Wochenende die 52%-ORT-Stufe auslöst, und ordnet die neue €25-Tagesvergütung bei einem zusätzlichen Arbeitstag gleich mit zu &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Thuiszorg-Organisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks ORT-Zuschläge, die €25-Vergütung und Touren übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

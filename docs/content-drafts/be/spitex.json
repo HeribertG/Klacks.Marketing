@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege Belgien | Wegzeit, geteilte Dienste & Rimpelregeling",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für häusliche &amp; ambulante Pflege in Belgien (PC 330)",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Patient:innen als Arbeitszeit, dem 50%-Zuschlag bei geteilten Diensten und der Rimpelregeling ab 45 Jahren.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Belgien",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der belgischen häuslichen Pflege",
+    "title": "Wegzeit, geteilte Dienste und Rimpelregeling",
+    "items": [
+      { "icon": "alt_route", "title": "Wegzeit zwischen Patient:innen zählt als Arbeitszeit", "text": "Fahrten zwischen zwei Besuchen sind volle Arbeitszeit &mdash; nur der erste Weg von zuhause und der letzte Heimweg zählen nicht dazu. Diese Regel gilt branchenweit, nicht nur für PC 330." },
+      { "icon": "call_split", "title": "50%-Zuschlag bei geteilten Diensten", "text": "Ein unterbrochener Dienst (onderbroken dienst) löst laut PC-330-Lohnbarema einen Zuschlag von 50% aus &mdash; von Hand leicht übersehen." },
+      { "icon": "elderly", "title": "Rimpelregeling ab 45 Jahren", "text": "Mitarbeitende erhalten ab 45, 50 und 55 Jahren zusätzliche wöchentliche Freistellungsstunden (2/4/6 Stunden) &mdash; die Tourenplanung muss das altersabhängig automatisch berücksichtigen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die belgische häusliche Pflege entlastet",
+    "subtitle": "Von der automatischen Tour bis zur Rimpelregeling &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Patient:innen werden automatisch als Arbeitszeit gerechnet &mdash; nur der erste und letzte Weg bleiben aussen vor." },
+      { "icon": "call_split", "title": "50%-Zuschlag bei geteilten Diensten berechnet", "text": "Klacks erkennt einen unterbrochenen Dienst automatisch und wendet den 50%-Zuschlag nach PC-330-Lohnbarema an." },
+      { "icon": "elderly", "title": "Rimpelregeling automatisch eingeplant", "text": "Die altersabhängigen Freistellungsstunden ab 45, 50 und 55 Jahren fliessen automatisch in die Tourenplanung ein." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wegzeit, geteilter Dienst, ein Plan",
+    "text": "Klacks rechnet die Fahrzeit zwischen Patient:innen automatisch als Arbeitszeit ein, erkennt geteilte Dienste und wendet den 50%-Zuschlag an &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, geteilte Dienste und die Rimpelregeling übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

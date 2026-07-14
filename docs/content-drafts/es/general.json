@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Klacks für Spanien | Open Source Personaleinsatzplanung & Registro de Jornada",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Spanien-konform",
+    "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Ruhezeiten nach dem Estatuto de los Trabajadores in Echtzeit und dokumentiert Beginn und Ende jeder Schicht &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihre Datenschutzverantwortlichen sie haben wollen: im eigenen Haus.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan für Unternehmen in Spanien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in spanischen Betrieben",
+    "title": "Ruhezeiten, Registro de Jornada und unregelmäßige Verteilung",
+    "items": [
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeiten nach dem Estatuto de los Trabajadores",
+        "text": "Mindestens 12 Stunden tägliche Ruhezeit zwischen zwei Jornadas (Art. 34.3 ET) und 1,5 Tage (36 Stunden) wöchentliche Ruhezeit, akkumulierbar über bis zu 14 Tage (Art. 37.1 ET) &mdash; über wechselnde Dienste hinweg von Hand kaum sauber nachzuhalten."
+      },
+      {
+        "icon": "punch_clock",
+        "title": "Registro de Jornada ernst nehmen",
+        "text": "Seit dem Real Decreto-ley 8/2019 muss jedes Unternehmen Beginn und Ende der täglichen Arbeitszeit erfassen und die Aufzeichnungen 4 Jahre aufbewahren. Ein Verstoß gilt als schwere Ordnungswidrigkeit (Art. 7.5 LISOS) mit Bußgeldern von 751 bis 7.500 € pro Arbeitsstätte."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Unregelmäßige Verteilung mit 5-Tage-Frist",
+        "text": "Verteilt der Arbeitgeber die Jornada mangels Vereinbarung unregelmäßig (bis zu 10 % der Jahresarbeitszeit, Art. 34.2 ET), muss der betroffene Tag mit mindestens 5 Tagen Vorlauf angekündigt werden &mdash; bei kurzfristigen Planänderungen ein ständiges Risiko."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks spanische Betriebe entlastet",
+    "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeiten automatisch überwacht",
+        "text": "Die 12-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach Art. 34.3 und 37.1 ET werden inklusive der 14-Tage-Akkumulation automatisch geprüft &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "punch_clock",
+        "title": "Registro de Jornada eingebaut",
+        "text": "Klacks dokumentiert Beginn und Ende jeder Schicht durchgehend &mdash; die gesetzlich verlangte Erfassung nach RD-ley 8/2019 ist damit bereits Teil der täglichen Planung, nicht ein separater Schritt."
+      },
+      {
+        "icon": "event_available",
+        "title": "5-Tage-Frist bei unregelmäßiger Verteilung",
+        "text": "Plant Klacks eine unregelmäßige Jornada-Verteilung, wird die gesetzliche Vorlauffrist von mindestens 5 Tagen automatisch eingehalten und dokumentiert."
+      },
+      {
+        "icon": "gavel",
+        "title": "Überstunden-Limit von 80 Stunden im Blick",
+        "text": "Klacks überwacht das jährliche Überstundenlimit nach Art. 35 ET und berücksichtigt automatisch, dass Nachtarbeiter und Minderjährige unter 18 Jahren von Überstunden ausgenommen sind (Art. 36.1 ET)."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten &mdash; außerhalb der Arbeitszeit bleibt es still, im Sinne des Rechts auf digitale Abschaltung (derecho a la desconexión digital, Art. 88 Ley Orgánica 3/2018). Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ruhezeit, Registro de Jornada und Vorlauffrist, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine geplante Schicht die 12-Stunden-Ruhezeit unterschreiten würde, dokumentiert Beginn und Ende jedes Dienstes für den Registro de Jornada und hält bei unregelmäßiger Verteilung die 5-Tage-Frist ein &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Ruhezeiten, Registro de Jornada und Vorlauffristen automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

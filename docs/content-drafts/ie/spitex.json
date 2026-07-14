@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege in Irland | Wegzeit, HSE Home Support & Tyco-Urteil",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für Home Support &amp; häusliche Pflege in Irland",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klient:innen als Arbeitszeit nach der EuGH-Tyco-Linie und den Vorgaben des HSE Home Support Authorisation Scheme. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Irland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der irischen häuslichen Pflege",
+    "title": "Wegzeit, HSE-Vorgaben und das Tyco-Urteil",
+    "items": [
+      { "icon": "alt_route", "title": "Wegzeit zählt als Arbeitszeit", "text": "Nach dem EuGH-Urteil Tyco (C-266/14), angewendet über den OWTA durch WRC und Labour Court, zählt nicht nur die Fahrt zwischen Klient:innen als Arbeitszeit &mdash; bei Mitarbeitenden ohne festen Arbeitsort auch der erste Weg von zuhause zum ersten Klienten und der letzte Weg zurück." },
+      { "icon": "payments", "title": "HSE Home Support Authorisation Scheme", "text": "Das HSE-Schema 2023 zahlt Anbieter-Organisationen eine fixe Vergütung von €31 pro Stunde und verpflichtet zugleich zur Zahlung mindestens des Living Wage an die Fachkräfte sowie zur Vergütung der Wegzeit zwischen Klient:innen." },
+      { "icon": "groups", "title": "Wechselnde Touren, viele Klient:innen", "text": "Home-Support-Teams betreuen täglich mehrere Klient:innen an wechselnden Orten &mdash; von Hand ist kaum nachzuvollziehen, welche Wegzeit wo als Arbeitszeit zählt und wo die Living-Wage-Pflicht greift." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in Irland entlastet",
+    "subtitle": "Von der automatischen Tour bis zur korrekten Wegzeit-Erfassung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Nach der Tyco-Linie erfasst Klacks nicht nur die Fahrten zwischen Klient:innen, sondern bei Mitarbeitenden ohne festen Arbeitsort auch den ersten und letzten Weg automatisch als Arbeitszeit." },
+      { "icon": "payments", "title": "HSE-Vergütung im Blick", "text": "Klacks unterstützt die Nachverfolgung der Living-Wage-Pflicht und der Wegzeitvergütung aus dem HSE Home Support Authorisation Scheme 2023." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wegzeit, HSE-Vergütung, ein Plan",
+    "text": "Klacks rechnet Fahrten zwischen Klient:innen sowie den ersten und letzten Weg automatisch als Arbeitszeit ein und behält die Vorgaben aus dem HSE Home Support Authorisation Scheme im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, Touren und HSE-Vorgaben übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

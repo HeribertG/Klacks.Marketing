@@ -1,0 +1,75 @@
+# FI — korrigierte, fact-gecheckte Fakten (Stand nach Fact-Check)
+
+## Teil 1: Allgemein (branchenneutral)
+
+- **Periodenarbeit (*jaksotyö*), Työaikalaki 872/2019 § 7 — BESTÄTIGT.** In Branchen mit unregelmässigem Arbeitsanfall (u. a. Bewachung/Sicherheit, Rettungsdienst, Gesundheitswesen, Transport) darf die regelmässige Arbeitszeit als **max. 120 Stunden je 3-Wochen-Periode** oder **max. 80 Stunden je 2-Wochen-Periode** angeordnet werden; Überstunden entstehen erst bei Überschreitung dieser Periodensummen. Ergänzend erlaubt § 7 eine Zusammenlegung auf **max. 240 h über zwei aufeinanderfolgende 3-Wochen-Perioden** (bzw. drei 2-Wochen-Perioden), begrenzt auf 128 h je einzelner 3-Wochen- bzw. 88 h je einzelner 2-Wochen-Periode. Quelle: finlex.fi, Työaikalaki 872/2019 § 7 (https://www.finlex.fi/fi/laki/ajantasa/2019/20190872); tyosuojelu.fi (https://tyosuojelu.fi/en/services-and-contact-information/permits-and-notifications/period-based-work).
+
+- **Überstundenvergütung in der Periodenarbeit — BESTÄTIGT (mit Korrektur der Zahl).** In der Periodenarbeit sind die **ersten 18 Überstunden** einer 3-Wochen-Periode (Stunden ab 120) mit **50 %** und **jede weitere Stunde mit 100 %** zu vergüten. Das ist eine **gesetzliche** Regel (Työaikalaki, Ylityökorvaus), kein Tarifspezifikum. — Achtung: Ottos Brainstorm nennt fälschlich „die ersten 15 Überstunden (120–135)" und zitiert § 20 (das ist Sonntagsarbeit). Korrekt sind **18 Stunden**, und die Rechtsgrundlage ist die Überstundenvergütung, nicht § 20. Quelle: tyosuojelu.fi Additional work and overtime (https://tyosuojelu.fi/en/employment-relationship/working-hours/additional-work-and-overtime); Palkanlaskijan opas / Työaikalaki (https://palkanlaskijanopas.fi/wp-content/uploads/Tyoaikalaki.pdf).
+
+- **Dienstplan-Bekanntgabe eine Woche im Voraus (*työvuoroluettelo*) — BESTÄTIGT (Paragraphennummer offen).** Der Dienstplan muss den Mitarbeitern schriftlich **mindestens eine Woche (7 Tage) vor Beginn des Zeitraums** mitgeteilt werden, sofern nicht lokal anderes vereinbart ist; ein einmal veröffentlichter Plan darf danach nur noch mit Zustimmung des Mitarbeiters oder aus schwerwiegendem, arbeitsbezogenem Grund (*painava syy*) geändert werden. Die inhaltliche Regel ist mehrfach belegt. Die exakte Paragraphennummer liess sich **nicht gegen den Primärtext verifizieren**: der finlex-Volltext (HTML) rendert über das Abruf-Tool nicht, edilex verweigert die Verbindung, die amtlichen PDFs sind binär/nicht auslesbar. Sekundärquellen widersprechen sich (**§ 30** bei Otto vs. **§ 31** bei anderen Portalen). Die Nummer daher NICHT als gesichert zitieren, bis sie direkt an finlex.fi geprüft ist; die Frist selbst („1 Woche") ist gesichert. Quelle: tyosuojelu.fi (https://tyosuojelu.fi/en/employment-relationship/working-hours); Minilex (https://www.minilex.fi/q/ty%C3%B6vuorojen-ilmoittaminen-p%C3%A4iv%C3%A4%C3%A4-ennen-alkua).
+
+- **Allgemeinverbindlichkeit der Tarifverträge (*yleissitovuus*), Työsopimuslaki 55/2001, 2. Kapitel § 7 — BESTÄTIGT.** Ein national repräsentativer Tarifvertrag (*työehtosopimus/TES*) ist allgemeinverbindlich; jeder Arbeitgeber der Branche — auch ohne Verbandsmitgliedschaft — muss mindestens dessen Bedingungen einhalten, abweichende Einzelvereinbarungen sind nichtig und werden durch die TES-Bestimmung ersetzt. (Ottos „dänisch-finnischer" ist ein Vorlagen-Fehler; es geht ausschliesslich um finnische TES.) Quelle: finlex.fi, Työsopimuslaki 55/2001, 2:7 (https://www.finlex.fi/en/legislation/2001/55).
+
+- **Ruhezeiten, § 25 (Tagesruhe) & § 27 (Wochenruhe) — BESTÄTIGT (mit Paragraphen-Korrektur).** Mindestens **11 zusammenhängende Stunden tägliche Ruhezeit** (*vuorokausilepo*) je 24-Stunden-Fenster ab Schichtbeginn; in Schicht-/Periodenarbeit auf **9 Stunden verkürzbar**. Wird die Ruhezeit verkürzt, muss die entgangene Ruhezeit als zusammenhängender Ausgleich gewährt werden — **spätestens innerhalb von 14 Tagen** (die 14-Tage-Frist ist zwingend, gerechnet ab jeder Verkürzung). Wöchentliche Ruhezeit (*viikkolepo*): **mindestens 35 zusammenhängende Stunden** je 7-Tage-Fenster (nach Möglichkeit an einen Sonntag gelegt). — Otto zitierte „§ 24 & § 25"; nach den geprüften Behörden-Quellen ist die **Tagesruhe § 25**; die Wochenruhe wird als § 27 geführt (§ 24 = Ruhepausen/Tauko). Quellen: tyosuojelu.fi Rest periods (https://tyosuojelu.fi/en/employment-relationship/working-hours/rest-periods).
+
+- **Sonntagsarbeit = 100 % Zuschlag, § 20 — BESTÄTIGT (starke, branchenübergreifende Grundlage).** Für an Sonn- und kirchlichen Feiertagen geleistete Arbeit ist gesetzlich zwingend ein **100-%-Zuschlag** auf den Grundlohn zu zahlen (Doppellohn); fällt gleichzeitig Überstundenarbeit an, kommt die Überstundenvergütung zusätzlich hinzu. Dies ist **gesetzlich (nicht bloss tariflich)** und gilt für alle unten genannten Branchen — die branchenspezifischen „Sonntag 100 %"-Angaben leiten sich hieraus ab. (Ottos Brainstorm zitiert für die Reinigung fälschlich „§ 21"; korrekt ist § 20.) Quelle: finlex.fi, Työaikalaki 872/2019 § 20 (https://www.finlex.fi/fi/laki/ajantasa/2019/20190872).
+
+- **Nachtarbeit (*yötyö*), Työaikalaki § 8 — BESTÄTIGT.** Nachtarbeit ist Arbeit zwischen **23:00 und 06:00 Uhr**. In besonders gefährlicher oder körperlich/geistig sehr belastender Arbeit darf die Nachtarbeit **höchstens 8 Stunden je 24-Stunden-Fenster** betragen; in Schicht-/Dauerschichtarbeit sind **höchstens 5 aufeinanderfolgende Nachtschichten** zulässig, danach mind. 24 h Ruhe (mit Zustimmung 2 weitere Nächte). — Ottos Brainstorm-Behauptung „max. 10 Stunden je 24 h bei Nachtarbeit, § 17" ist falsch: die gesetzliche Nacht-Obergrenze beträgt **8 h** (und nur für belastende Arbeit), und § 17 regelt Überstunden, nicht Nachtarbeit. Quelle: tyosuojelu/TTL Työaikalainsäädäntö (https://www.ttl.fi/teemat/tyohyvinvointi-ja-tyokyky/tyoaika/vuorotyo/tyoaikalainsaadanto).
+
+- **Datenschutz im Arbeitsleben, Laki yksityisyyden suojasta työelämässä 759/2004 — BESTÄTIGT.** Das „Työelämän tietosuojalaki" (in Kraft seit 1.10.2004, ergänzend zur DSGVO/GDPR) regelt eng, welche Beschäftigtendaten der Arbeitgeber verarbeiten, erheben (z. B. Bonitäts-/Drogentests, Eignungstests) und technisch überwachen (Kamera, E-Mail) darf; Aufsicht durch Datenschutzbeauftragte + Arbeitsschutzbehörde. Gesetzesnummer und Titel korrekt. Der On-Premise-Nutzenbezug (lokale Datenhaltung, kein US-Cloud-Transfer) ist eine Marketing-Interpretation, nicht Gesetzestext. Quelle: finlex.fi 759/2004 (https://www.finlex.fi/en/legislation/2004/759); tietosuoja.fi (https://tietosuoja.fi/tyoelaman-tietosuojalaki).
+
+## Häusliche Pflege
+
+*(SOTE-sopimus 2025–2028 des kommunalen Sozial-/Gesundheitssektors, KT; ambulante Pflege / kotihoito.)*
+
+- **Verkürzte Tagesruhe auf 9 h + Ausgleich binnen 14 Tagen — BESTÄTIGT (auf gesetzlicher Basis).** In der Periodenarbeit der ambulanten Pflege kann die Tagesruhe auf 9 h verkürzt werden; die entgangenen (bis zu 2) Stunden sind als zusammenhängender Ausgleich innerhalb von **14 Tagen** nachzugewähren (Työaikalaki § 25, im SOTE-Kontext anwendbar). Ein Schichtplansystem, das Verkürzungen registriert und den 14-Tage-Ausgleich überwacht, adressiert damit eine reale gesetzliche Pflicht. Quelle: tyosuojelu.fi Rest periods (https://tyosuojelu.fi/en/employment-relationship/working-hours/rest-periods).
+
+- **Bezahlte Mahlzeit während der Arbeitszeit in der Periodenarbeit — TEILWEISE BESTÄTIGT / DETAILS NICHT VERIFIZIERBAR.** Grundsatz nach Työaikalaki: die reguläre Essenspause (*ruokatauko*, mind. 30 min) ist unbezahlte Freizeit, **wenn** der Arbeitnehmer den Arbeitsplatz verlassen darf. In der SOTE-Periodenarbeit wird die Mahlzeit dagegen **während der Arbeitszeit** eingenommen und **als Arbeitszeit gezählt** (im SOTE-Text sind *ruokailutauko/palautumistauko* als Arbeitszeit geführt) — das stützt Ottos Kernaussage. Die konkrete Bezeichnung *„joutuisa ruokailu"* und die Zeitspanne **15–20 Minuten** liessen sich in den geprüften SOTE-Quellen **nicht verifizieren** — diese Detailzahl nicht als gesicherten Fakt verwenden. Quelle (Grundsatz): KT SOTE 2025–2028, Lepoajat (https://www.kt.fi/sopimukset/sote/2025-2028/tyoaika/lepoajat).
+
+## Spitäler
+
+*(SOTE-sopimus.)*
+
+- **Progressive Überstundenvergütung — BESTÄTIGT als gesetzliche Regel (siehe Teil 1).** In der 3-Wochen-Periode: erste **18 Überstunden 50 %**, danach **100 %** — statutarisch, gilt auch im Spitalbetrieb. Ottos Brainstorm-Zahl „15 Stunden (120–135)" ist zu korrigieren auf **18 Stunden**. Quelle: tyosuojelu.fi Additional work and overtime (https://tyosuojelu.fi/en/employment-relationship/working-hours/additional-work-and-overtime).
+
+- **„Verkürzung der Wochenruhe auf 24 h → 46 h in der Folgewoche" — NICHT VERIFIZIERBAR / voraussichtlich falsch.** Der geprüfte SOTE-Text (KT) besagt: Wochenruhe **mindestens 35 h**, in der durchgehenden Periodenarbeit **auf minimal 24 h/Woche verkürzbar**, im Durchschnitt jedoch 35 h über einen 14-Tage- (bzw. bis 12-Wochen-)Zeitraum. **Eine Vorschrift, dass in der Folgewoche zwingend 46 h Ruhe zu gewähren seien, findet sich im SOTE-Text nicht** — der Ausgleich verkürzter Wochenruhe erfolgt laut § 24 SOTE über Arbeitszeitverkürzung bzw. Geldersatz. Die Zahl „46 h" nicht als SOTE-Fakt darstellen. Quelle: KT SOTE 2025–2028, Lepoajat (https://www.kt.fi/sopimukset/sote/2025-2028/tyoaika/lepoajat).
+
+- **Zwei zusammenhängende freie Tage — KORREKTUR NÖTIG.** SOTE § 9 (Periodenarbeit) Abs. 7: es sind **mindestens zwei freie Tage pro Woche** zu geben. Das Ziel **zusammenhängender** freier Tage ist laut Anwendungsanweisung als **„mindestens zwei aufeinanderfolgende freie Tage innerhalb von drei Wochen"** formuliert — **nicht** „pro Kalenderwoche", wie Otto behauptet. Korrekt fürs Marketing: „SOTE verlangt zwei freie Tage je Woche und strebt zwei zusammenhängende freie Tage innerhalb von drei Wochen an." Quelle: KT SOTE 2025–2028, Säännölliset työajat (https://www.kt.fi/sopimukset/sote/2025-2028/tyoaika/saannolliset-tyoajat).
+
+- **Notfall-/Rückrufpauschale (*hälytysraha*) 25–60 € je Einsatz — NICHT VERIFIZIERBAR.** Ein tariflicher Alarm-/Rückrufzuschlag existiert im SOTE-Umfeld dem Grunde nach, die konkrete Spanne 25–60 € liess sich in den auslesbaren Quellen nicht belegen (TES-Volltext binär). Nicht als Fakt zitieren.
+
+## Security
+
+*(Vartiointialan työehtosopimus 1.4.2025–31.3.2028, PAM ry / Palta ry.)*
+
+- **Tariferhöhung +2,5 % zum 1.9.2026 — BESTÄTIGT.** Zum **1.9.2026** werden Löhne/Tabellenlöhne **und** die Arbeitszeitzuschläge (Abend-, Nacht-, Samstagszuschlag) um **2,5 %** erhöht (Teil einer front-geladenen Gesamterhöhung von ca. 7,8 % über die Laufzeit). Quelle (Gewerkschaft, Primär-Kommunikation): PAM (https://www.pam.fi/artikkelit/vartiointialalle-palkkaratkaisu-ja-parannuksia-tyoehtoihin-palkat-nousevat-etupainotteisesti-78-prosenttia/); TES-Volltext PAM/Palta (https://www.pam.fi/wp-content/uploads/2023/05/TES_Vartiointiala_2025.pdf).
+
+- **Sonntags-/Feiertagszuschlag 100 % — BESTÄTIGT.** Deckt sich mit dem gesetzlichen § 20 (siehe Teil 1) und wird im Vartiointiala-TES bestätigt.
+
+- **Verschärfte Dienstplan-Ankündigungsfrist 14 Tage — NICHT VERIFIZIERBAR.** Ottos Brainstorm behauptet, der Sicherheits-TES verlange eine Dienstplan-Veröffentlichung mindestens 14 Tage im Voraus (statt der gesetzlichen 1 Woche). Das liess sich am auslesbaren TES-Volltext (binäres PDF) nicht bestätigen. Nicht als Fakt zitieren.
+
+- **Nacht-/Samstagszuschläge (Eurobeträge) — NICHT VERIFIZIERBAR.** Otto nennt Samstag 2,23 €/h (ab 1.9.2026), Nacht ca. 1,50–2,50 €/h sowie eine Überstunden-Staffel (100 % ab 3. Tages-/9. Wochenstunde). Der offizielle TES-Volltext liegt nur binär vor; ein Payroll-/Berufsportal nennt zur Orientierung Abend ~1,33 €/h und Nacht ~2,20 €/h — nur Sekundärquelle mit Beleg-Lücke, kein gesicherter Tarifwert. Exakte Beträge vor Verwendung an der PAM-Lohntabelle prüfen. Quelle (Sekundär): vartijaksi.com (https://vartijaksi.com/blogi/vartijoiden-tes/).
+
+## Haus-/Putzdienste
+
+*(Kiinteistöpalvelualan työehtosopimus 1.4.2025–31.3.2028, PAM ry / Kiinteistötyönantajat ry.)*
+
+- **Tariferhöhung +2,7 % zum 1.8.2026 und Mindeststundenlohn 13,22 €/h (Vaativuusryhmä 2) — nur über Sekundärquelle belegt (Beleg-Lücke).** Die Tabellenlöhne steigen zum **1.8.2026 um 2,7 %**; für einfache Reinigungsaufgaben (*vaativuusryhmä 2*) wird ein Mindeststundenlohn von **13,22 €/h** genannt. (Eine Erhöhung um 2,7 % galt bereits zum 1.8.2025 — der TES enthält jährliche Stufen.) Der amtliche finlex-Volltext ist ein binäres PDF (nicht auslesbar); Bestätigung nur über ein Payroll-Portal. Quelle (Sekundär): tyohakuapu.fi (https://www.tyohakuapu.fi/tes/kiinteistopalvelualan-tyontekijoita-koskeva-tyoehtosopimus); Primär-PDF (binär): finlex.fi (https://www.finlex.fi/api/media/collective-agreement-general-applicability-decision/678530/collectiveAgreement/Kiinteist%C3%B6palveluala2504.pdf).
+
+- **Feste Schichtzuschläge Reinigung — nur über Sekundärquelle belegt (Beleg-Lücke):** Abendzuschlag (*iltalisä*, 18–23 Uhr) **0,73 €/h**, Nachtzuschlag (*yölisä*, 23–06 Uhr) **1,36 €/h**, Sonntagszuschlag **100 %** (Letzteres zusätzlich gesetzlich über § 20 abgesichert). Amtlicher TES-Volltext (binär) konnte die Eurobeträge nicht bestätigen — bei kritischer Verwendung an der PAM-Lohntabelle gegenprüfen. Quelle (Sekundär): tyohakuapu.fi (wie oben).
+
+- **Zulage für geteilte Schichten (*jaettu työpäivä*) 3,50–5,00 €/Tag — NICHT VERIFIZIERBAR.** In den auslesbaren Quellen nicht belegbar (TES-Volltext binär). Nicht als Fakt verwenden.
+
+## Logistik
+
+*(Kuorma-autoalan työehtosopimus 2025–2028, AKT ry / ALT ry.)*
+
+- **Tariferhöhung +2,9 % zum 1.6.2026 — nur über Sekundärquelle belegt (Beleg-Lücke).** Zum **1.6.2026** steigen die Löhne um **2,9 %** (Teil einer Gesamterhöhung von ca. 6 % über die Laufzeit). Quelle (Sekundär): tyohakuapu.fi (https://www.tyohakuapu.fi/tes/kuorma-autoalan-tyoehtosopimus); Kontext: AKT-lehti (https://www.aktlehti.fi/liitto/autoliikennealojen-tyoehtosopimukset-nostavat-palkkoja-kuusi-prosenttia/).
+
+- **Volle Tagespauschale (*kokopäiväraha*) 43,80 € ab 1.6.2026 — NICHT VERIFIZIERBAR.** Belegt ist der **2025er-Wert von 42,50 €** (voller Tag; halber Tag 19,30 €, erhöhter Tag 53,00 €). Der von Otto genannte 2026er-Wert von **43,80 €** liess sich in den auslesbaren Quellen nicht bestätigen (AKT-Lohntabellen 1.6.2026 nur binär verfügbar); plausibel als leicht erhöhter Folgewert, aber nicht als Fakt zitieren, bis die AKT-Tabelle 1.6.2026 gegengeprüft ist. Quelle 2025-Wert: AKT (https://akt.fi/tyoehtosopimukset/kuorma-autoala/).
+
+- **Mindestvergütung 4 h 45 min pro angetretener Schicht — NICHT VERIFIZIERBAR.** In den auslesbaren Quellen nicht belegbar (TES-Volltext binär). Nicht als Fakt verwenden.
+
+- **ADR-/Gefahrgutzuschlag 5 % — NICHT VERIFIZIERBAR.** In den auslesbaren Quellen nicht belegbar (TES-Volltext binär). Nicht als Fakt verwenden.
+
+- **Zeitzuschläge Abend 15 % (18–22) / Nacht 30 % (22–06) — NICHT VERIFIZIERBAR.** Otto-Brainstorm-Prozentsätze; TES-Volltext binär, nicht belegbar. Nicht als Fakt verwenden. (Beachte: die gesetzliche Nachtdefinition ist 23–06, nicht 22–06.)

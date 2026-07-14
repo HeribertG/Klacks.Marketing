@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für dänische Krankenhäuser | Schichtwechsel &amp; 48-Stunden-Nachweis",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Sygehuse &amp; Hospitaler in Dänemark",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Schichtwechsel im Schichtbetrieb (holddrift) lückenlos &mdash; inklusive der Ausnahme-Ruhezeit bei Schichtwechsel und dem 48-Stunden-Nachweis im 4-Monats-Schnitt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für dänische Krankenhäuser",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Dänemark",
+    "title": "Schichtwechsel, Ruhezeit und die 48-Stunden-Grenze",
+    "items": [
+      { "icon": "bedtime", "title": "Ruhezeit bei Schichtwechsel (holdskifte)", "text": "Bei Schichtbetrieb (holddrift) darf die tägliche Ruhezeit ausnahmsweise auf 8 Stunden verkürzt werden, wenn zwischen zwei Schichten die volle Ruhezeit nicht eingehalten werden kann &mdash; der Arbeitgeber muss dies vorher mit dem/der Tillidsrepræsentant besprechen." },
+      { "icon": "gavel", "title": "48-Stunden-Grenze im 4-Monats-Schnitt", "text": "Arbeitszeitgesetz und Zeiterfassungspflicht verlangen einen Nachweis, dass die durchschnittliche Wochenarbeitszeit über einen gleitenden 4-Monats-Zeitraum 48 Stunden nicht übersteigt &mdash; über wechselnde Stationsdienste hinweg von Hand mühsam zu führen." },
+      { "icon": "groups", "title": "Viele Overenskomster, eine Klinik", "text": "Pflegepersonal, Assistenzkräfte und Ärzt:innen fallen unter unterschiedliche Tarifverträge (u. a. Danske Regioner, Yngre Læger) mit je eigenen Zuschlagssätzen &mdash; ein Dienstplansystem muss diese Vielfalt abbilden können, statt eine einzige starre Regel zu erzwingen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks dänische Krankenhäuser entlastet",
+    "subtitle": "Von der korrekten Schichtwechsel-Ausnahme bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "bedtime", "title": "Schichtwechsel-Ausnahme korrekt dokumentiert", "text": "Klacks erkennt, wann die Ruhezeit bei Schichtwechsel auf 8 Stunden verkürzt werden darf, und hält die vorherige Abstimmung mit dem/der Tillidsrepræsentant nachvollziehbar fest." },
+      { "icon": "gavel", "title": "48-Stunden-Schnitt laufend geprüft", "text": "Klacks prüft den gleitenden 4-Monats-Schnitt automatisch und warnt, bevor die 48-Stunden-Grenze erreicht wird." },
+      { "icon": "tune", "title": "Flexibel für jede Overenskomst", "text": "Klacks lässt sich auf die jeweils geltenden Zuschlagssätze von Pflege-, Assistenz- und Ärzte-Tarifverträgen einstellen, statt eine starre Regel für alle Berufsgruppen vorzugeben." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Station für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit-Grenzen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichtwechsel und 48-Stunden-Nachweis, ein Plan",
+    "text": "Klacks erkennt automatisch, wann die Ruhezeit beim Schichtwechsel auf 8 Stunden verkürzt werden darf, hält die Abstimmung mit dem/der Tillidsrepræsentant fest und überwacht die 48-Stunden-Grenze im 4-Monats-Schnitt fortlaufend &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Schichtwechsel, Ruhezeit und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

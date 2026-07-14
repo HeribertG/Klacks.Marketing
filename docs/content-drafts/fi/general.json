@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für finnische Unternehmen | Jaksotyö, Ruhezeiten & Dienstplanpflicht",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Open Source &middot; On-Premise &middot; Työaikalaki 872/2019",
+    "titleHtml": "Periodenarbeit planen, <span class=\"text-secondary\">ohne den Überblick zu verlieren.</span>",
+    "subtitle": "Klacks plant Dienste automatisch nach den Regeln der finnischen Periodenarbeit (jaksotyö) &mdash; inklusive Ruhezeiten, Dienstplanpflicht und dem Zuschlag, der zu Ihrer Branche und Ihrem Tarifvertrag (TES) passt. On-Premise, mit dem KI-Modell Ihrer Wahl.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für finnische Unternehmen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in Finnland",
+    "title": "Jaksotyö, Ruhezeiten und die Dienstplanfrist",
+    "items": [
+      { "icon": "gavel", "title": "Periodenarbeit (jaksotyö) richtig summieren", "text": "In Branchen mit unregelmässigem Arbeitsanfall darf die Arbeitszeit als max. 120 Stunden je 3-Wochen-Periode oder max. 80 Stunden je 2-Wochen-Periode angeordnet werden (Työaikalaki 872/2019 § 7) &mdash; Überstunden entstehen erst beim Überschreiten dieser Periodensumme. Von Hand ist das über viele Mitarbeitende fehleranfällig." },
+      { "icon": "bedtime", "title": "Ruhezeiten korrekt verkürzen und ausgleichen", "text": "Die tägliche Ruhezeit von 11 Stunden (§ 25) lässt sich in Schicht- oder Periodenarbeit auf 9 Stunden verkürzen &mdash; die entgangene Zeit muss dann innerhalb von 14 Tagen als zusammenhängender Ausgleich gewährt werden. Die wöchentliche Ruhezeit (§ 27) muss mindestens 35 zusammenhängende Stunden betragen." },
+      { "icon": "event_note", "title": "Dienstplan (työvuoroluettelo) fristgerecht veröffentlichen", "text": "Der Dienstplan muss den Mitarbeitenden mindestens eine Woche vor Beginn des Zeitraums schriftlich mitgeteilt werden. Ist er einmal veröffentlicht, darf er nur noch mit Zustimmung der Mitarbeitenden oder aus einem schwerwiegenden, arbeitsbezogenen Grund (painava syy) geändert werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks finnische Betriebe entlastet",
+    "subtitle": "Von der automatischen Periodenberechnung bis zur fristgerechten Veröffentlichung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "Periodenarbeit &amp; Überstunden automatisch berechnet", "text": "Klacks summiert die Arbeitszeit je 3- oder 2-Wochen-Periode und berechnet die gesetzliche Überstundenvergütung korrekt: die ersten 18 Überstunden mit 50 %, jede weitere Stunde mit 100 %." },
+      { "icon": "bedtime", "title": "Ruhezeiten &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und behält die 14-Tage-Frist für den Ausgleich im Blick &mdash; ebenso die wöchentliche Mindestruhezeit von 35 Stunden." },
+      { "icon": "event_note", "title": "Dienstplan fristgerecht veröffentlicht", "text": "Klacks stellt sicher, dass der Dienstplan mindestens eine Woche im Voraus veröffentlicht wird, und markiert nachträgliche Änderungen als zustimmungspflichtig &mdash; passend zu Ihrem branchenspezifischen Tarifvertrag (TES)." },
+      { "icon": "paid", "title": "Sonntagszuschlag korrekt gebucht", "text": "Für Arbeit an Sonn- und kirchlichen Feiertagen bucht Klacks automatisch den gesetzlichen 100-%-Zuschlag (§ 20) &mdash; fällt gleichzeitig Überstundenarbeit an, kommt die Überstundenvergütung dazu." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Das unterstützt einen sparsamen Umgang mit Beschäftigtendaten, wie ihn das Työelämän tietosuojalaki 759/2004 verlangt." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Eine 3-Wochen-Periode, korrekt abgerechnet",
+    "text": "Erreicht eine Mitarbeiterin in einer 3-Wochen-Periode die 120-Stunden-Grenze, rechnet Klacks die folgenden 18 Stunden automatisch mit 50 % und jede weitere Stunde mit 100 % ab &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem finnischen Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Periodenarbeit, Ruhezeiten und die Dienstplanfrist automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

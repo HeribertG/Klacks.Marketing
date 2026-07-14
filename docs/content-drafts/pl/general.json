@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Polen | Ewidencja czasu pracy & PIP-konforme Personalplanung",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Polnischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks führt eine vollständige Ewidencja czasu pracy statt einer blossen Anwesenheitsliste, prüft Ruhezeiten automatisch und läuft On-Premise &mdash; ganz ohne die biometrische Zeiterfassung, die polnische Gerichte und die Datenschutzbehörde UODO kritisch sehen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Polen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in polnischen Betrieben",
+    "title": "Ewidencja, PIP-Reform und das Biometrie-Verbot",
+    "items": [
+      { "icon": "history_edu", "title": "Ewidencja czasu pracy statt Anwesenheitsliste", "text": "Eine blosse Anwesenheitsliste (lista obecności) mit Unterschriften reicht rechtlich nicht aus &mdash; verlangt ist eine vollständige Arbeitszeiterfassung nach Art. 149 Kodeks pracy." },
+      { "icon": "gavel", "title": "Bussgeld-Reform ab 8. Juli 2026", "text": "Der Regelstrafrahmen für Verstösse gegen Arbeitnehmerrechte steigt auf 2.000 bis 60.000 PLN &mdash; bei wiederholten schweren Verstössen drohen bis zu 90.000 PLN (Art. 281 Kodeks pracy)." },
+      { "icon": "fingerprint", "title": "Biometrie-Verbot bei der Zeiterfassung", "text": "Fingerabdruck-Zeiterfassung ist auch mit Einwilligung der Mitarbeitenden unzulässig (Art. 22¹b Kodeks pracy) &mdash; Cloud-Zeiterfassungssysteme geraten damit schnell in eine Grauzone." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks polnische Betriebe entlastet",
+    "subtitle": "Von der vollständigen Ewidencja bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "fact_check", "title": "Vollständige Ewidencja czasu pracy", "text": "Klacks erfasst Arbeitszeiten lückenlos nach Art. 149 Kodeks pracy &mdash; keine blosse Unterschriftenliste, sondern rechtssichere Daten für jede PIP-Kontrolle." },
+      { "icon": "bedtime", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) werden automatisch eingehalten, inklusive der in der Regel den Sonntag umfassenden Wochenruhe." },
+      { "icon": "calendar_month", "title": "Równoważny czas pracy korrekt geplant", "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung." },
+      { "icon": "fingerprint", "title": "Keine biometrische Zeiterfassung nötig", "text": "Klacks kommt ganz ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das rechtliche Risiko, das Art. 22¹b Kodeks pracy und die Rechtsprechung des NSA hier sehen." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang und ohne die Datenschutzrisiken, die die UODO bei Drittanbietern kritisiert." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer von Personaldaten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ewidencja, Ruhezeit, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Ruhezeit unterschritten wird oder eine Schicht die 12-Stunden-Grenze im äquivalenten Arbeitszeitsystem erreicht, und dokumentiert die vollständige Ewidencja czasu pracy gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Ewidencja czasu pracy, Ruhezeiten und das äquivalente Arbeitszeitsystem automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

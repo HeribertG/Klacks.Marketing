@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Schoonmaakbedrijven in den Niederlanden | CAO Schoonmaak-Toeslagen & Contractaanbod 2026",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Schoonmaakbedrijven in den Niederlanden",
+    "titleHtml": "Jede Zuschlagsstufe <span class=\"text-secondary\">automatisch richtig.</span>",
+    "subtitle": "Klacks berechnet die Nacht-, Tag- und Abendzuschläge der CAO Schoonmaak automatisch und erkennt frühzeitig, wenn die neue 15%-Meerarbeit-Regel ab 1.1.2026 ein Vertragsangebot auslöst.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für niederländische Schoonmaakteams und Objekte",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Schoonmaak-Alltag in den Niederlanden",
+    "title": "Komplexe Toeslagtabelle und neue Contractaanbod-Pflicht",
+    "items": [
+      { "icon": "schedule", "title": "Fünf Zuschlagsstufen je Tageszeit", "text": "Die CAO Schoonmaak unterscheidet Nacht (00:00-06:00), Tag (06:00-21:30) und Abend (21:30-24:00) mit jeweils eigenen Zuschlägen von 0 bis 150% &mdash; je nach Wochentag, Wochenende oder Feiertag von Hand kaum fehlerfrei zu berechnen." },
+      { "icon": "description", "title": "Neue Contractaanbod-Pflicht ab 2026", "text": "Arbeitet eine Kraft im vierten Quartal durchschnittlich 15% mehr Stunden als vertraglich vereinbart, muss der Arbeitgeber ab 1. Januar ein angepasstes Vertragsangebot unterbreiten &mdash; die Überstunden-Zuschläge entfallen dafür ab 2026." },
+      { "icon": "event_repeat", "title": "Oproepkrachten in der Reinigung", "text": "Auch hier gilt die 4-Tage-Ankündigungsfrist der WAB &mdash; bei kurzfristiger Absage bleibt der volle Lohnanspruch bestehen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks niederländische Schoonmaakbedrijven entlastet",
+    "subtitle": "Von der automatischen Toeslag-Berechnung bis zur rechtzeitigen Vertragsanpassung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Toeslagtabelle vollständig automatisch berechnet", "text": "Klacks kennt alle Zuschlagsstufen der CAO Schoonmaak &mdash; Nacht 50%/30%, Tag 0%/50%, Abend 30%/50%, Feiertag 150% &mdash; und ordnet jeden Dienst korrekt zu." },
+      { "icon": "description", "title": "Q4-Meerarbeit frühzeitig erkannt", "text": "Klacks zeigt rechtzeitig, wenn die durchschnittlichen Stunden im vierten Quartal die 15%-Schwelle erreichen &mdash; damit das Vertragsangebot fristgerecht vorbereitet werden kann." },
+      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Die 4-Tage-Ankündigungsfrist wird automatisch eingehalten, kurzfristige Absagen mit Lohnanspruch sofort sichtbar gemacht." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objecten in Amsterdam-Zuid für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Zuschläge." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nachtdienst am Feiertag, Toeslag, ein Blick",
+    "text": "Klacks erkennt automatisch, dass ein Nachtdienst am Feiertag den 150%-Zuschlag auslöst, und behält gleichzeitig im Blick, ob die Q4-Meerarbeit-Schwelle von 15% erreicht wird &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Schoonmaakbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Toeslagen, Contractaanbod und Routen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

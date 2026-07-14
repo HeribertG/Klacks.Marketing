@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die Hjemmepleje Dänemark | Fritvalgsordning &amp; Umplanungsfrist",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege (Hjemmepleje) in Dänemark",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Dienstplan-Verwaltung.</span>",
+    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; inklusive der neuen Fritvalgsordning ab OK26 und der 4-Tage-Frist bei Umplanungen. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren in der dänischen Hjemmepleje",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der dänischen Hjemmepleje",
+    "title": "Fritvalgsordning, Umplanungsfrist und geteilte Dienste",
+    "items": [
+      { "icon": "savings", "title": "Neue Fritvalgsordning ab OK26", "text": "Ab 1. April 2026 können Sozial- und Gesundheitshelfer:innen (social- og sundhedshjælpere) einen Teil ihrer Vergütung individuell in freie Tage, Gehalt oder Zusatzrente umwandeln (2,35% jährlich plus 2,42% monatlich) &mdash; jede Person kann anders wählen, bis 31. März 2029." },
+      { "icon": "event_repeat", "title": "4-Tage-Frist bei Umplanung", "text": "Wird ein geplanter Dienst kurzfristiger als 4 Tage im Voraus umgelegt, wird pro umgelegter Stunde ein Zuschlag von 30,85 DKK fällig &mdash; leicht übersehen, wenn Touren spontan angepasst werden müssen." },
+      { "icon": "call_split", "title": "Geteilte Dienste am Tag", "text": "Wird der Tagesdienst in zwei Teile geteilt (delt tjeneste), fällt nach der FOA-SOSU-Overenskomst ein Zuschlag an &mdash; der korrekt pro Person und Einsatz erfasst werden muss." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die dänische Hjemmepleje entlastet",
+    "subtitle": "Von der optimierten Tour bis zum individuellen Fritvalgsordning-Konto &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "savings", "title": "Fritvalgsordning individuell geführt", "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter das individuelle Wahlkonto zwischen freien Tagen, Gehalt und Zusatzrente gemäss OK26 tagesaktuell mit." },
+      { "icon": "event_repeat", "title": "4-Tage-Frist automatisch überwacht", "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet, und bucht den Zuschlag von 30,85 DKK pro Stunde automatisch, wenn es doch kurzfristig sein muss." },
+      { "icon": "call_split", "title": "Geteilte Dienste korrekt zugeschlagen", "text": "Klacks erkennt delt tjeneste automatisch und rechnet den tariflichen Zuschlag für jede betroffene Pflegekraft mit." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Umplanung und Fritvalgsordning, ein Plan",
+    "text": "Klacks bucht bei einer Umplanung unter 4 Tagen automatisch den Zuschlag von 30,85 DKK pro Stunde und führt gleichzeitig das individuelle Fritvalgsordning-Konto jeder Pflegekraft weiter &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Hjemmepleje erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Fritvalgsordning und Umplanungsfristen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

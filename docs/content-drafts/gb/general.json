@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Grossbritannien | Working Time Regulations, UK GDPR & Open Source Personaleinsatzplanung",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; UK-GDPR-konform",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, überwacht Arbeitszeiten nach den Working Time Regulations 1998 und lässt sich per KI-Assistent steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten in Ihrer eigenen Infrastruktur, ganz ohne biometrische Zeiterfassung und im Einklang mit UK GDPR und dem Data Protection Act 2018.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Grossbritannien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in britischen Betrieben",
+    "title": "Working Time Regulations, Ruhezeiten und Datenschutz",
+    "items": [
+      { "icon": "gavel", "title": "48-Stunden-Woche &amp; Opt-out im Blick behalten", "text": "Die Working Time Regulations 1998 begrenzen die wöchentliche Arbeitszeit im Schnitt auf 48 Stunden, berechnet über einen Referenzzeitraum von regulär 17 Wochen &mdash; per Vereinbarung verlängerbar. Mitarbeitende können per schriftlichem Opt-out aussteigen, was den Überblick von Hand zusätzlich erschwert." },
+      { "icon": "bedtime", "title": "Tägliche &amp; wöchentliche Ruhezeiten sichern", "text": "Mindestens 11 zusammenhängende Stunden Ruhe pro 24 Stunden und 24 ununterbrochene Stunden pro 7-Tage-Periode schreiben die WTR vor (Reg. 10 &amp; 11) &mdash; über wechselnde Schichten hinweg ist das von Hand fehleranfällig." },
+      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung als Datenschutzrisiko", "text": "Die ICO verhängte im Februar 2024 Massnahmen gegen Serco Leisure, weil an 38 Standorten Gesichtserkennungs- und Fingerabdruck-Stempeluhren ohne rechtmässige Grundlage über 2'000 Mitarbeitende erfassten &mdash; ein Warnsignal für jede Zeiterfassungslösung." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks britische Betriebe entlastet",
+    "subtitle": "Von der automatischen Ruhezeit-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "48-Stunden-Grenze &amp; Opt-out automatisch verwaltet", "text": "Klacks berechnet den 17-Wochen-Schnitt nach WTR Reg. 4 laufend und zeigt an, wer per Opt-out ausserhalb der 48-Stunden-Grenze arbeitet &mdash; nachvollziehbar für jede Kontrolle." },
+      { "icon": "bedtime", "title": "Ruhezeiten automatisch eingehalten", "text": "Die 11-Stunden-Tagesruhe und die 24-Stunden-Wochenruhe nach WTR Reg. 10 &amp; 11 werden bei jeder Schichtplanung automatisch berücksichtigt &mdash; Verstösse entstehen gar nicht erst." },
+      { "icon": "fingerprint", "title": "Zeiterfassung ohne Biometrie-Risiko", "text": "Klacks erfasst Arbeitszeiten, ohne Gesichtserkennung oder Fingerabdrücke zu benötigen &mdash; kein Fall wie bei Serco Leisure, keine Nachfragen der ICO." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Einklang mit UK GDPR und dem Data Protection Act 2018, ganz ohne Auslandtransfer von Personaldaten." },
+      { "icon": "hourglass_top", "title": "Bereit für den Employment Rights Act 2025", "text": "Der Employment Rights Act 2025 erhielt am 18. Dezember 2025 Royal Assent und wird künftig Vorankündigungsfristen für Schichten sowie Entschädigung bei abgesagten Diensten regeln &mdash; die konkreten Schwellenwerte stehen noch aus. Klacks lässt sich einfach um neue Vorlauf- und Kompensationsregeln erweitern, sobald diese feststehen." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "48-Stunden-Woche und Ruhezeit, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn sich eine Mitarbeiterin der 48-Stunden-Grenze nähert oder eine Ruhezeit nach WTR Reg. 10 unterschritten würde, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Working-Time-Regulations-Grenzen, Ruhezeiten und datenschutzkonforme Zeiterfassung automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler in Griechenland | ERGANI-Pflicht & Bereitschaftsdienste",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Griechenland",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste lückenlos, dokumentiert jede Schicht ERGANI-konform und hält die Ruhezeiten des Pflegepersonals ein &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für griechische Spitäler",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Griechenland",
+    "title": "ERGANI-Pflicht, Εφημερία und Ruhezeiten",
+    "items": [
+      { "icon": "fact_check", "title": "Digitale Arbeitskarte für nicht-ärztliches Personal", "text": "Ab 12. Oktober 2026 muss auch das nicht-ärztliche Klinikpersonal lückenlos in ERGANI II erfasst sein &mdash; Abweichungen kosten 10.500 € pro Mitarbeitendem." },
+      { "icon": "call", "title": "24-Stunden-Bereitschaft (Εφημερία) der Ärzte", "text": "Gesetz 4498/2017 regelt Bereitschaftsdienste der ESY-Ärzte im Sinne der EU-Arbeitszeitrichtlinie &mdash; 24-Stunden-Dienste müssen mit einer angemessenen Ausgleichsruhe geplant werden." },
+      { "icon": "bedtime", "title": "Ruhezeiten des Pflegepersonals", "text": "Mindestens 11 Stunden Tagesruhe und 24 Stunden Wochenruhe, bevorzugt am Sonntag (P.D. 88/1999), müssen auch bei rotierenden Stationsdiensten eingehalten werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks griechische Spitäler entlastet",
+    "subtitle": "Von der lückenlosen Stationsabdeckung bis zur ERGANI-konformen Dokumentation &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Stationsabdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "fact_check", "title": "ERGANI-konform ab 12. Oktober 2026", "text": "Klacks dokumentiert jede Schicht des nicht-ärztlichen Personals lückenlos &mdash; bereit für den ERGANI-Abgleich, ohne das Risiko der 10.500-€-Busse." },
+      { "icon": "call", "title": "Bereitschaftsdienste korrekt geplant", "text": "Klacks plant 24-Stunden-Bereitschaften und die anschliessende Ausgleichsruhe mit &mdash; im Sinne von Gesetz 4498/2017." },
+      { "icon": "bedtime", "title": "Ruhezeiten des Pflegepersonals automatisch eingehalten", "text": "Die 11-stündige Tagesruhe und die 24-stündige Wochenruhe (P.D. 88/1999) werden auch bei rotierenden Diensten automatisch geprüft." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeiten." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Bereitschaftsdienst und Ruhezeit, ein Plan",
+    "text": "Klacks behält die Ausgleichsruhe nach einer 24-Stunden-Bereitschaft im Blick und prüft gleichzeitig, dass die 11-stündige Tagesruhe des Pflegepersonals eingehalten bleibt &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Bereitschaftsdienste, Ruhezeiten und die ERGANI-Dokumentation übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

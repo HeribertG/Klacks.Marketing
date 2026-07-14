@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler Belgien | Art. 23 Arbeidswet & nicht kumulierbare Zuschläge",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Belgien (PC 330)",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Schichten &mdash; mit der Art.-23-Ausnahme (bis 11h/Tag, 50h/Woche im Trimesterschnitt) und den nicht kumulierbaren Zuschlägen für Wochenende, Feiertag und Abend automatisch berücksichtigt.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für belgische Spitäler",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Belgien",
+    "title": "Art. 23, Trimesterschnitt und viele Zuschläge",
+    "items": [
+      { "icon": "gavel", "title": "Bis zu 11h/Tag, 50h/Woche &mdash; im Trimesterschnitt", "text": "Art. 23 Arbeidswet erlaubt für PC 330 längere Schichten, sofern der wöchentliche Durchschnitt von 38 Stunden über eine Referenzperiode von grundsätzlich einem Trimester eingehalten wird &mdash; über viele Rotationen von Hand kaum zu überblicken." },
+      { "icon": "percent", "title": "Zuschläge, die sich nicht addieren", "text": "26% Samstag, 56% Sonn-/Feiertag, 20% Abendarbeit zwischen 19 und 20 Uhr &mdash; die Zuschläge sind nicht kumulierbar, es gilt jeweils nur der höchste. Von Hand ein ständiges Abwägen." },
+      { "icon": "schedule", "title": "24/7-Stationsbesetzung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen lückenlos zu besetzen und gleichzeitig den Trimesterschnitt einzuhalten, ist von Hand kaum machbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks belgische Spitäler entlastet",
+    "subtitle": "Von der Trimester-Kontrolle bis zum korrekten Zuschlag &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "Trimesterschnitt automatisch überwacht", "text": "Klacks behält den 38-Stunden-Durchschnitt über die Referenzperiode im Blick, auch wenn einzelne Wochen bis zu 50 Stunden erreichen." },
+      { "icon": "percent", "title": "Immer nur der höchste Zuschlag", "text": "Klacks erkennt Samstags-, Sonntags-, Feiertags- und Abendarbeit automatisch und wendet stets den höchsten, nicht kumulierbaren Zuschlag an." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Trimesterschnitt." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Trimesterschnitt und Zuschlag, ein Plan",
+    "text": "Klacks behält den 38-Stunden-Durchschnitt über das Trimester im Blick, auch wenn einzelne Schichten bis zu 11 Stunden dauern, und wendet bei Wochenend- oder Abendarbeit automatisch den höchsten Zuschlag an &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Trimesterschnitt, Zuschläge und Stationen übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

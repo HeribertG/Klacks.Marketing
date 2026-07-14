@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in den Niederlanden | Arbeidstijdenwet & Oproepkrachten automatisch geregelt",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Für Arbeitgeber in den Niederlanden &middot; Open Source &middot; On-Premise",
+    "titleHtml": "Dienstpläne, die die <span class=\"text-secondary\">Arbeidstijdenwet nie verletzen.</span>",
+    "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und regelt Oproepkrachten korrekt nach der Wet arbeidsmarkt in balans (WAB) &mdash; On-Premise, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Niederlanden",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in niederländischen Betrieben",
+    "title": "ATW-Höchstarbeitszeit, Rusttijden und Oproepkrachten",
+    "items": [
+      { "icon": "gavel", "title": "Höchstarbeitszeit nach der Arbeidstijdenwet", "text": "Die ATW (Art. 5:7) erlaubt maximal 12 Stunden pro Dienst und 60 Stunden pro Woche &mdash; im Schnitt aber nur 55 Stunden über je 4 und 48 Stunden über je 16 aufeinanderfolgende Wochen. Per CAO abweichbar, aber nie über 60 Stunden. Von Hand kaum durchgängig zu kontrollieren." },
+      { "icon": "bedtime", "title": "Rusttijden nach ATW Art. 5:3 &amp; 5:5", "text": "Mindestens 11 Stunden tägliche und 36 Stunden wöchentliche Ruhezeit sind vorgeschrieben &mdash; mit engen Ausnahmen für eine Verkürzung. Wer das über wechselnde Dienste hinweg von Hand prüft, übersieht schnell eine Verletzung." },
+      { "icon": "event_repeat", "title": "Oproepkrachten korrekt einplanen", "text": "Für Abrufkräfte gilt eine gesetzliche Ankündigungsfrist von 4 Tagen (WAB, BW Art. 7:628a) &mdash; wird ein Einsatz kurzfristig abgesagt, bleibt der volle Lohnanspruch für die abgerufenen Stunden bestehen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks niederländische Betriebe entlastet",
+    "subtitle": "Von der automatischen ATW-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "ATW-Höchstarbeitszeit automatisch überwacht", "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst, die 60-Stunden-Wochengrenze sowie die Durchschnittswerte über 4 und 16 Wochen &mdash; Verstösse werden gar nicht erst eingeplant." },
+      { "icon": "bedtime", "title": "Rusttijden automatisch eingehalten", "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgerechnet." },
+      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Klacks kennt die 4-Tage-Ankündigungsfrist für Abrufkräfte und macht sichtbar, wo eine kurzfristige Absage einen Lohnanspruch auslöst." },
+      { "icon": "privacy_tip", "title": "Keine biometrische Zeiterfassung nötig", "text": "Dienste und Arbeitszeiten lassen sich in Klacks ohne Fingerabdruck- oder Gesichtsscan erfassen &mdash; ganz ohne das AVG-Risiko nach Art. 9, das die Autoriteit Persoonsgegevens bei biometrischer Zeiterfassung am Arbeitsplatz sieht." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten verlassen Ihr Haus nicht." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, klären Oproep-Termine oder Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Oproepkracht, kurzfristige Absage, ein Blick",
+    "text": "Wird eine Abrufkraft innerhalb der 4-Tage-Frist wieder abgesagt, macht Klacks den daraus entstehenden Lohnanspruch sofort sichtbar &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks ATW-Höchstarbeitszeiten, Rusttijden und Oproepkrachten automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}
