@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für häusliche Pflege China | 综合计算工时工作制 für 养老护理员",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für häusliche Pflege (养老护理) in China",
+    "titleHtml": "Pflegeeinsätze planen, <span class=\"text-secondary\">die den Zyklus einhalten.</span>",
+    "subtitle": "Klacks aggregiert Arbeitszeit exakt über den bei der lokalen Arbeitsbehörde genehmigten Zyklus des umfassenden Arbeitszeitsystems (综合计算工时工作制) &mdash; Überstunden entstehen erst, wenn die Zyklus-Sollzeit tatsächlich überschritten wird.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Pflegeeinsätze in China",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege in China",
+    "title": "综合计算工时工作制: Genehmigung und Zyklus",
+    "items": [
+      { "icon": "fact_check", "title": "Genehmigungspflicht für Zyklus-Arbeitszeit", "text": "Wer Pflegekräfte (养老护理员) in Zyklen statt in Kalendertagen plant, braucht vorab eine Genehmigung der lokalen Arbeitsbehörde für das umfassende Arbeitszeitsystem (Art. 39 Arbeitsgesetz) &mdash; ohne sie drohen Auflagenverstösse." },
+      { "icon": "schedule", "title": "Überstunden erst am Zyklusende sichtbar", "text": "Überstunden entstehen erst, wenn die Gesamtzeit eines Zyklus (Woche, Monat, Quartal oder Jahr) die Sollzeit übersteigt, nicht an einzelnen Tagen &mdash; bei wechselnden Pflegeeinsätzen von Hand kaum nachvollziehbar." },
+      { "icon": "groups", "title": "Wechselnde Einsätze, ein Überblick", "text": "Pflegekräfte wechseln zwischen Klient:innen und Schichten &mdash; Zyklus-Sollzeiten und Einsätze gleichzeitig im Blick zu behalten ist von Hand aufwändig." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in China entlastet",
+    "subtitle": "Von der korrekten Zyklus-Aggregation bis zur Datenhoheit vor Ort &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "fact_check", "title": "Zyklus-Arbeitszeit korrekt geführt", "text": "Klacks aggregiert Arbeitszeit exakt über den genehmigten Zyklus (Woche, Monat, Quartal oder Jahr) &mdash; Überstunden werden erst gemeldet, wenn die Zyklus-Sollzeit tatsächlich überschritten ist." },
+      { "icon": "description", "title": "Genehmigungsauflagen dokumentiert", "text": "Klacks hält die Zyklus-Daten so bereit, wie sie die Genehmigung des umfassenden Arbeitszeitsystems bei der lokalen Arbeitsbehörde verlangt." },
+      { "icon": "route", "title": "Einsätze automatisch geplant", "text": "Klacks legt die Reihenfolge der Pflegeeinsätze so, dass Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Gesundheits- und Personaldaten verlassen China nicht &mdash; die CAC-Cross-Border-Prüfung nach PIPL entfällt." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Einsätze für morgen früh“ genügt &mdash; Klacksy prüft Zyklus-Sollzeit, Qualifikation und Verfügbarkeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Zyklus-Aggregation, ein Plan",
+    "text": "Klacks summiert die Arbeitszeit einer Pflegekraft laufend über den genehmigten Zyklus und meldet erst dann eine Überstunde, wenn die Zyklus-Sollzeit tatsächlich überschritten ist &mdash; ohne Nachrechnen von Hand am Ende jedes Kalendertags."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation in China erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Zyklus-Arbeitszeit, Einsätze und Qualifikationen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

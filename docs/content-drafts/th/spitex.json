@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege in Thailand | Pausenpflicht & 36h-Limit im Pflegeraster",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege in Thailand",
+    "titleHtml": "Mehr Zeit für die Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Pflegeeinsätze und Touren automatisch und reserviert die gesetzliche 1-Stunden-Pause nach 5 Arbeitsstunden verlässlich im Raster &mdash; On-Premise, damit sensible Patienten- und Zeiterfassungsdaten nach dem PDPA in Ihrem eigenen Firmennetz bleiben.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Thailand",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege in Thailand",
+    "title": "Pausenpflicht, 36h-Limit und unregelmässige Schichten",
+    "items": [
+      { "icon": "hourglass_top", "title": "1-Stunden-Pause nach 5 Stunden Pflege", "text": "Nach höchstens 5 aufeinanderfolgenden Arbeitsstunden bei Patient:innen (Phu Dulae Phu Sung Ayu) muss eine zusammenhängende Pause von mind. 1 Stunde eingehalten und dokumentiert werden (Section 27) &mdash; bei wechselnden, unregelmässigen Pflegeschichten von Hand schwer zu überblicken." },
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstösse können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." },
+      { "icon": "fingerprint", "title": "PDPA bei sensiblen Patientendaten", "text": "Biometrische Zeiterfassung gilt nach Section 26 PDPA als sensible personenbezogene Daten &mdash; bei Pflegekräften mit Zugriff auf Patientendaten ein doppelt sensibles Thema." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in Thailand entlastet",
+    "subtitle": "Von der automatischen Pausenreservierung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Pflegeeinsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden." },
+      { "icon": "hourglass_top", "title": "1-Stunden-Pause verlässlich dokumentiert", "text": "Klacks reserviert die gesetzliche Pause nach maximal 5 Arbeitsstunden automatisch im Pflegeraster und dokumentiert sie &mdash; auch bei wechselnden, unregelmässigen Schichten (Section 27)." },
+      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Pflegekraft live und sperrt die Planung, bevor das 36-Stunden-Limit nach Section 26 überschritten wird." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und biometrische Zeiterfassungsdaten nach PDPA verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Pausenpflicht und 36h-Limit, ein Plan",
+    "text": "Klacks reserviert die 1-Stunden-Pause nach 5 Arbeitsstunden automatisch im Pflegeraster und behält gleichzeitig das 36-Stunden-Wochenlimit für Überstunden im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Pausenpflicht, Touren und das 36-Stunden-Limit übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Saudi-Arabien | Personaleinsatzplanung nach Art. 101, PDPL & Nitaqat",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; PDPL/SDAIA-konform",
+    "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">die 12-Stunden-Grenze nie überschreitet.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Aufenthaltsgrenze (Art. 101) und lässt sich per KI-Assistent Klacksy steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible biometrische Zeiterfassungsdaten physisch in Saudi-Arabien, ganz im Sinne von PDPL und SDAIA.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Saudi-Arabien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in saudischen Betrieben",
+    "title": "نظام العمل, Ramadan und die 12-Stunden-Grenze",
+    "items": [
+      { "icon": "gavel", "title": "Regelarbeitszeit &amp; 6-Tage-Grenze", "text": "Die reguläre Arbeitszeit liegt bei max. 8 Stunden pro Tag bzw. 48 Stunden pro Woche (Art. 98). Seit der Reform 2025 gilt zusätzlich: nicht mehr als 6 aufeinanderfolgende Arbeitstage ohne vollen Ruhetag." },
+      { "icon": "nightlight", "title": "Ramadan: automatisch kürzere Schichten", "text": "Für muslimische Mitarbeitende sinkt die tatsächliche Arbeitszeit während des شهر رمضان (Shahr Ramadan) zwingend auf max. 6 Stunden pro Tag bzw. 36 Stunden pro Woche &mdash; und das jedes Jahr neu für genau diese Gruppe." },
+      { "icon": "timer_off", "title": "12-Stunden-Aufenthaltsgrenze (Art. 101)", "text": "Kein Arbeitnehmer darf sich länger als 12 Stunden am Arbeitsplatz aufhalten (التواجد في مكان العمل) &mdash; inklusive Pausen, Gebets- und Essenszeiten. Zusätzlich ist nach max. 5 Stunden Arbeit am Stück eine Pause von mindestens 30 Minuten Pflicht." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Betriebe in Saudi-Arabien entlastet",
+    "subtitle": "Von der automatischen 12-Stunden-Kontrolle bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "Regelarbeitszeit &amp; 6-Tage-Grenze überwacht", "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Verstösse entstehen gar nicht erst." },
+      { "icon": "nightlight", "title": "Ramadan-Arbeitszeit automatisch gekürzt", "text": "Für muslimische Mitarbeitende plant Klacks während des Ramadan automatisch mit der reduzierten 6h/36h-Grenze (Art. 98) &mdash; ohne manuelle Umstellung des gesamten Plans." },
+      { "icon": "timer_off", "title": "12-Stunden-Grenze hart durchgesetzt (Art. 101)", "text": "Klacks blockiert Schichtfolgen, die eine Person länger als 12 Stunden am Arbeitsplatz halten würden &mdash; inklusive Pausen, Gebets- und Essenszeiten." },
+      { "icon": "payments", "title": "Überstundenzuschlag nach Art. 107", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (effektiv 150%) wird automatisch berechnet &mdash; seit der Reform 2025 wahlweise auch als bezahlter Freizeitausgleich." },
+      { "icon": "groups", "title": "Nitaqat-Saudisierung im Blick", "text": "Klacks hält fest, welche saudischen Mitarbeitenden mit einem GOSI-versicherten Gehalt ab SAR 4.000 als volle Quote (1,0) zählen und welche nur mit 0,5 (SAR 3.000 bis 3.999) angerechnet werden." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben in Saudi-Arabien", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Sensible biometrische Zeiterfassungsdaten (البيانات الشخصية الحساسة) bleiben physisch in KSA &mdash; die Transfer-Compliance-Last nach PDPL/SDAIA entfällt." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an PDPL/SDAIA-Konformität lässt sich das KI-Modell zudem lokal in Saudi-Arabien hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ramadan-Schicht und 12-Stunden-Grenze, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht während des Ramadan die reduzierte 6h/36h-Grenze überschreiten würde oder eine Schichtfolge einen Mitarbeitenden länger als 12 Stunden am Arbeitsplatz hält (Art. 101) &mdash; und schlägt die Korrektur direkt vor."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb in Saudi-Arabien erleben",
+    "text": "Testen Sie im Playground, wie Klacks Art. 98/101/107, Ramadan-Arbeitszeiten und die Nitaqat-Saudisierung automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "pageTitle": "Klacks für Logistik Indonesien | Lenkzeit nach UU 22/2009 (LLAJ)",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in Indonesien",
+    "titleHtml": "Touren, Lenkzeit, Pausen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Schichten Ihrer Fahrer &mdash; mit der 8-Stunden-Lenkzeitgrenze und der 30-Minuten-Pausenpflicht nach UU 22/2009 (LLAJ) automatisch berücksichtigt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Lenkzeiten in der indonesischen Logistik",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Indonesien",
+    "title": "Lenkzeitgrenze und Pausenpflicht nach UU 22/2009",
+    "items": [
+      {
+        "icon": "timer",
+        "title": "8-Stunden-Lenkzeitgrenze pro Tag",
+        "text": "Für Fahrer öffentlicher Kraftfahrzeuge gilt nach UU 22/2009 Pasal 90 eine maximale Arbeits-/Lenkzeit von 8 Stunden pro Tag &mdash; unter bestimmten Umständen bis maximal 12 Stunden inklusive 1 Stunde Ruhezeit."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Pflichtpause nach 4 Stunden Fahrt",
+        "text": "Nach 4 Stunden ununterbrochener Fahrt ist eine Ruhepause von mindestens 30 Minuten zwingend vorgeschrieben &mdash; bei engen Tourenplänen leicht zu übersehen. Verstösse werden nach UU 22/2009 Pasal 92 verwaltungsrechtlich geahndet."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die indonesische Logistik entlastet",
+    "subtitle": "Von der optimierten Tour bis zur eingehaltenen Lenkzeit &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Touren automatisch optimiert",
+        "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten."
+      },
+      {
+        "icon": "timer",
+        "title": "8-Stunden-Lenkzeitgrenze überwacht",
+        "text": "Klacks überwacht die tägliche Lenkzeitgrenze aus UU 22/2009 Pasal 90 automatisch und warnt, bevor eine Tour das gesetzliche Limit überschreitet."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "30-Minuten-Pause automatisch eingeplant",
+        "text": "Die Pflichtpause nach 4 Stunden ununterbrochener Fahrt wird für jede Tour automatisch mitgeplant."
+      },
+      {
+        "icon": "badge",
+        "title": "Führerschein-Klassen passend",
+        "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Touren- und Fahrerdaten bleiben, wo Sie sie haben wollen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Plane die Touren für morgen, ein Fahrer fällt aus“ genügt &mdash; Klacksy rechnet alles neu, inklusive Lenkzeit und Pausen."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Lange Tour, ein Plan",
+    "text": "Klacks erkennt, wenn eine Tour die 4-Stunden-Fahrtgrenze erreicht, plant die Pflichtpause automatisch ein und behält die 8-Stunden-Tagesgrenze im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Pausen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

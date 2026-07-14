@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für die häusliche Pflege in den VAE | 56-Stunden-Schichtausnahme & PDPL-Datenschutz",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Für die häusliche Pflege &amp; ambulante Dienste in den VAE",
+    "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
+    "subtitle": "Klacks plant Touren und aufeinanderfolgende Schichten (المناوبات المتعاقبة) automatisch &mdash; inklusive der 56-Stunden-Ausnahme für kontinuierlichen Schichtbetrieb. On-Premise, damit sensible Patientendaten nach dem PDPL Ihr Haus nie verlassen.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in den VAE",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Alltag in der häuslichen Pflege der VAE",
+    "title": "Kontinuierlicher Schichtbetrieb und die 56-Stunden-Grenze",
+    "items": [
+      { "icon": "update", "title": "56-Stunden-Ausnahme korrekt begründen", "text": "Für Tätigkeiten mit aufeinanderfolgendem Schicht-/Wechselbetrieb erlaubt Art. 15 der Cabinet Resolution No. 1 of 2022 eine durchschnittliche Wochenarbeitszeit von bis zu 56 Stunden &mdash; eine eng gefasste Ausnahme, die begründet werden muss, keine Generallizenz." },
+      { "icon": "groups", "title": "Passende Qualifikation je Klient:in sicherstellen", "text": "24/7-Pflegeeinsätze wechseln oft die Betreuungsperson &mdash; jeder Einsatz muss dennoch zur Qualifikation und Verfügbarkeit der Pflegekraft passen." },
+      { "icon": "fingerprint", "title": "Sensible Patientendaten PDPL-konform schützen", "text": "Das PDPL stuft biometrische und Gesundheitsdaten als sensible personenbezogene Daten ein &mdash; auch bei mobiler Zeiterfassung im Kundeneinsatz." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die häusliche Pflege in den VAE entlastet",
+    "subtitle": "Von der korrekt begründeten Schichtausnahme bis zur On-Premise-Datenhaltung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten zwischen Klient:innen so, dass Wege kurz und Zeitfenster eingehalten werden." },
+      { "icon": "update", "title": "56-Stunden-Schnitt laufend geprüft", "text": "Klacks überwacht den durchschnittlichen Wochenschnitt fortlaufend und dokumentiert, dass die Ausnahme nach Art. 15 der Cabinet Resolution No. 1 of 2022 tatsächlich greift &mdash; statt sie pauschal anzunehmen." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "fingerprint", "title": "PDPL-konforme On-Premise-Datenhaltung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Patienten- und Zeiterfassungsdaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz mit passender Qualifikation vor." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Schichtausnahme und Tour, ein Plan",
+    "text": "Klacks prüft fortlaufend, ob die durchschnittliche Wochenarbeitszeit einer Pflegekraft innerhalb der 56-Stunden-Ausnahme für Schichtbetrieb bleibt, und plant die Tour zwischen Klient:innen gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrer Pflegeorganisation erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Schichten und die 56-Stunden-Grenze übernimmt &mdash; oder installieren Sie es direkt On-Premise. Kostenlos und ohne Registrierung."
+  }
+}

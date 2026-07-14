@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste China | 综合计算工时工作制 für 保安人员",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste in China",
+    "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jede Schicht im Zyklus korrekt.</span>",
+    "subtitle": "Klacks aggregiert die Arbeitszeit von 保安人员 im 12-Stunden-Schichtbetrieb exakt über den bei der lokalen Behörde (人社局) genehmigten Zyklus &mdash; Zuschläge werden erst berechnet, wenn der Zyklus die Sollzeit tatsächlich überschreitet.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Sicherheitsdienste in China",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in China",
+    "title": "12-Stunden-Schichten und Zyklus-Arbeitszeit",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "12-Stunden-Schichten &amp; Genehmigungspflicht",
+        "text": "保安人员 (Sicherheitspersonal) arbeitet meist im 12-Stunden-Schichtbetrieb. Damit das rechtlich zulässig ist, braucht der Betrieb eine Genehmigung des umfassenden Arbeitszeitsystems (综合计算工时工作制) beim lokalen Arbeits- und Sozialamt (人社局)."
+      },
+      {
+        "icon": "gavel",
+        "title": "Überstunden über den Zyklus, nicht den Monat",
+        "text": "Zuschläge (150 % Werktag, 300 % gesetzlicher Feiertag) werden über den genehmigten Zyklus &mdash; z. B. ein Quartal &mdash; berechnet, nicht pro Kalendermonat. Einen fixen Monats-Hardcap kennt das umfassende System nicht, was die Abrechnung von Hand fehleranfällig macht."
+      },
+      {
+        "icon": "apartment",
+        "title": "Viele Objekte, ein Plan",
+        "text": "Jedes Objekt hat eigene Posten, Zeiten und Anforderungen &mdash; alles gleichzeitig zu überblicken ist von Hand kaum machbar."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Sicherheitsdienste in China entlastet",
+    "subtitle": "Von der korrekten Zyklus-Aggregation bis zur lückenlosen Objektbesetzung &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "fact_check",
+        "title": "Zyklus-Arbeitszeit korrekt aggregiert",
+        "text": "Klacks summiert Arbeitszeit über den genehmigten Zyklus (z. B. ein Quartal) &mdash; Überstunden werden erst gemeldet, wenn der Zyklus die Sollzeit tatsächlich überschreitet, statt starr pro Kalendermonat abzurechnen."
+      },
+      {
+        "icon": "payments",
+        "title": "150 %/300 % automatisch zugeordnet",
+        "text": "Sobald innerhalb des Zyklus echter 加班 anfällt, ordnet Klacks den passenden Zuschlag nach Art. 44 automatisch zu &mdash; 150 % Werktag, 300 % gesetzlicher Feiertag."
+      },
+      {
+        "icon": "description",
+        "title": "Genehmigungsauflagen dokumentiert",
+        "text": "Klacks hält die Zyklus-Daten so bereit, wie sie die Genehmigung des umfassenden Arbeitszeitsystems beim lokalen Arbeits- und Sozialamt (人社局) verlangt."
+      },
+      {
+        "icon": "shield",
+        "title": "Objekte &amp; Posten lückenlos",
+        "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Einsatzdaten bleiben im Land",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personal- und Objektdaten verlassen China nicht &mdash; die CAC-Cross-Border-Prüfung nach PIPL entfällt."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "Klacksy prüft bei jeder Zuteilung automatisch, wo der Zyklus im umfassenden Arbeitszeitsystem gerade steht, und schlägt passende Besetzungen vor."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Zyklus statt Kalendermonat, ein Plan",
+    "text": "Klacks summiert die 12-Stunden-Schichten eines Wachmanns laufend über den genehmigten Zyklus und zeigt exakt, wann echter 加班 mit 150 % oder 300 % anfällt &mdash; auf Basis der Zyklus-Sollzeit, statt starr pro Kalendermonat."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst in China erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Zyklus-Zuschläge und Genehmigungsauflagen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

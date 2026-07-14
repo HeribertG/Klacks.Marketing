@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik in Thailand | Lenk- & Ruhezeiten nach Ministerialverordnung Nr. 12",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in Thailand",
+    "titleHtml": "Touren, Lenkzeiten, Ruhepausen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Lenk- und Ruhezeiten gemäss Ministerialverordnung Nr. 12 B.E. 2541 und dem 36-Stunden-Wochenlimit für Überstunden automatisch berücksichtigt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Thailand",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Thailand",
+    "title": "Lenkzeiten, Ruhepausen und das 36h-Limit",
+    "items": [
+      { "icon": "timer", "title": "Ruhepause nach 4 Stunden Lenkzeit", "text": "Nach höchstens 4 Stunden zusammenhängender Fahrzeit ist eine Ruhepause von insgesamt 1 Stunde zu gewähren, aufteilbar in Intervalle von mind. 20 Minuten (Ministerialverordnung Nr. 12 B.E. 2541 zum Labour Protection Act) &mdash; über viele Berufskraftfahrer (Phanakngan Khap Rot Banthuk) und Touren hinweg von Hand kaum sicher einzuhalten." },
+      { "icon": "schedule", "title": "8h/Tag plus max. 2h Überstunde", "text": "Für Fahrer im Landtransport gilt eine reguläre Arbeitszeit von 8 Stunden pro Tag plus maximal 2 Stunden Überstunde pro Tag &mdash; die zusätzlich aufs 36-Stunden-Wochenlimit angerechnet werden." },
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstösse können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in Thailand entlastet",
+    "subtitle": "Von der optimierten Tour bis zur korrekten Ruhepause &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "timer", "title": "Ruhepause nach 4h Lenkzeit eingeplant", "text": "Klacks reserviert die 1-Stunden-Ruhepause nach maximal 4 Stunden zusammenhängender Fahrzeit automatisch &mdash; auch aufgeteilt in Intervalle von mind. 20 Minuten." },
+      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert die Überstunden pro Fahrer live und sperrt die Planung, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird." },
+      { "icon": "schedule", "title": "8h+2h-Grenze pro Fahrer überwacht", "text": "Klacks prüft laufend, ob die reguläre Arbeitszeit von 8 Stunden plus maximal 2 Stunden Überstunde pro Tag eingehalten wird." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Somchai ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Lenk- und Ruhezeiten." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Lenkzeit, Ruhepause, ein Plan",
+    "text": "Klacks prüft die Ruhepause nach 4 Stunden Lenkzeit automatisch, hält die 8h+2h-Grenze pro Fahrer ein und behält gleichzeitig das 36-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

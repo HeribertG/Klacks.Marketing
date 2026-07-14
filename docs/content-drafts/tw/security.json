@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste Taiwan | 240 zu 288-Stunden-Monatscap",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste (保全) in Taiwan",
+    "titleHtml": "Jeder Posten besetzt &mdash; <span class=\"text-secondary\">ohne den 288-Stunden-Deckel zu sprengen.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit dem monatlichen Stufencap von 240 auf maximal 288 Stunden für Sicherheitsmitarbeiter (保全人員) im Verantwortungssystem automatisch überwacht.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rundgänge in Taiwan",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Taiwan",
+    "title": "240/288-Stunden-Cap, Tagesgrenze und Schichtabstand",
+    "items": [
+      { "icon": "schedule", "title": "240 auf maximal 288 Stunden pro Monat", "text": "Für Sicherheitsmitarbeiter (保全人員) im Verantwortungssystem (責任制 / § 84-1 LSA) gilt eine genehmigte reguläre Monatsarbeitszeit von 240 Stunden, plus maximal 48 Stunden Überstunden &mdash; absolutes Limit 288 Stunden. Jede Stunde zwischen der 241. und 288. ist Überstunde (MOL-Prüfrichtlinie für das Bewachungsgewerbe)." },
+      { "icon": "bedtime", "title": "10/12-Stunden-Tagesgrenze &amp; 11-Stunden-Abstand", "text": "Tageshöchstarbeitszeit 10 Stunden regulär, 12 Stunden inklusive Überstunden; dazwischen sind mindestens 11 Stunden Ruhezeit einzuhalten &mdash; über viele Objekte und Schichtmodelle hinweg von Hand schwer zu sichern." },
+      { "icon": "gavel", "title": "Personenschutz &amp; Werttransport: eigene Regeln", "text": "Für Personenschutz (人身保全) und Werttransport (運鈔車保全) gelten abweichende Regelungen zum allgemeinen Bewachungsgewerbe &mdash; ein einheitliches Rechenmodell für alle Sicherheitskräfte greift zu kurz." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks taiwanische Sicherheitsdienste entlastet",
+    "subtitle": "Vom besetzten Posten bis zum korrekten Monatscap &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "240-zu-288-Stunden-Cap automatisch überwacht", "text": "Klacks überwacht den Sprung ab der 241. Stunde im Dienstplan und warnt, bevor das absolute Monatslimit von 288 Stunden erreicht wird." },
+      { "icon": "bedtime", "title": "Tagesgrenze &amp; 11-Stunden-Abstand erzwungen", "text": "Klacks lässt keine Schicht über 12 Stunden inklusive Überstunden zu und plant den 11-Stunden-Schichtabstand automatisch mit ein." },
+      { "icon": "gavel", "title": "Personenschutz &amp; Werttransport separat abgebildet", "text": "Klacks bildet die abweichenden Regeln für Personenschutz (人身保全) und Werttransport (運鈔車保全) getrennt vom allgemeinen Bewachungsgewerbe ab." },
+      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks teilt Einsätze nur Personal mit gültigem Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft dabei automatisch das 240/288-Stunden-Cap." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "240 zu 288 Stunden, ein Blick",
+    "text": "Klacks zeigt im Dienstplan sofort, sobald ein Sicherheitsmitarbeiter die 240. Stunde im Monat überschreitet, und wacht darüber, dass das absolute Limit von 288 Stunden nicht überschritten wird."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Posten, Monatscap und Schichtabstände übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

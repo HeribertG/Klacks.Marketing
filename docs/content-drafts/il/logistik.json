@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Logistik in Israel | Regulation 168: Lenk- & Ruhezeiten exakt im Blick",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport in Israel",
+    "titleHtml": "Lenkzeiten, Ruhezeiten &mdash; <span class=\"text-secondary\">alles nach Regulation 168.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit den exakten Lenk- und Ruhezeitgrenzen nach Regulation 168 (תקנה 168) für Fahrzeuge über 6.000 kg automatisch im Blick. Routen werden automatisch optimiert.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Israel",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Israel",
+    "title": "Regulation 168, Pflichtpausen und Ruhezeiten",
+    "items": [
+      { "icon": "timer", "title": "Regulation 168: Lenkzeit exakt begrenzt", "text": "Für Fahrer:innen öffentlicher Fahrzeuge, Busse und Nutzfahrzeuge über 6.000 kg gilt nach Regulation 168 (תקנה 168) eine Höchstlenkzeit von 12 Stunden je 24-Stunden-Zeitraum und maximal 68 Fahrstunden je 7 Tage &mdash; nach spätestens 4 Stunden ununterbrochener Fahrt ist eine Pause von mindestens 30 Minuten vorgeschrieben." },
+      { "icon": "bedtime", "title": "Vorruhe &amp; wöchentliche Ruhezeit", "text": "Vor Fahrtantritt ist eine Ruhezeit außerhalb der Arbeit von mindestens 7 zusammenhängenden Stunden vorgeschrieben. Die wöchentliche Ruhezeit muss mindestens 25 zusammenhängende Stunden je 8-Tage-Zeitraum betragen, mit mindestens 52 Ruhetagen im Jahr &mdash; über viele Fahrer:innen von Hand kaum verlässlich einzuhalten." },
+      { "icon": "warning", "title": "Befristete Notstands-Erleichterungen", "text": "Sicherheitslagebedingte, befristete Notstandsverordnungen (הוראות שעה) können die 12-Stunden-Lenkzeitgrenze zeitweise anheben &mdash; solche Ausnahmen müssen exakt dokumentiert und wieder zurückgesetzt werden, sobald sie auslaufen." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in Israel entlastet",
+    "subtitle": "Von der optimierten Tour bis zur Regulation-168-Kontrolle &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "timer", "title": "Lenkzeit nach Regulation 168 geprüft", "text": "Klacks überwacht die 12-Stunden-Grenze je 24 Stunden und die 68-Stunden-Grenze je 7 Tage in Echtzeit &mdash; Verstöße entstehen gar nicht erst." },
+      { "icon": "free_breakfast", "title": "Pflichtpause nach 4 Stunden Fahrt", "text": "Klacks plant die vorgeschriebene 30-Minuten-Pause nach spätestens 4 Stunden ununterbrochener Fahrt automatisch mit ein." },
+      { "icon": "bedtime", "title": "Vorruhe &amp; Wochenruhe automatisch eingehalten", "text": "Klacks stellt die 7-stündige Vorruhe vor Fahrtantritt und die 25-stündige wöchentliche Ruhezeit je 8-Tage-Zeitraum sicher &mdash; inklusive der mindestens 52 Ruhetage im Jahr." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Cohen ist krank“ genügt &mdash; Klacksy rechnet Lenk- und Ruhezeiten neu." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der Lenkzeitgrenzen ist." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Lenkzeit und Pflichtpause, ein Blick",
+    "text": "Ein Fahrer nähert sich der 4. Fahrstunde. Klacks plant die 30-Minuten-Pflichtpause automatisch ein und überwacht parallel die 12-Stunden-Tagesgrenze sowie die 25-stündige Wochenruhe nach Regulation 168 &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Ruhezeiten nach Regulation 168 übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

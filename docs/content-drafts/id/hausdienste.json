@@ -1,0 +1,74 @@
+{
+  "pageTitle": "Klacks für Haus- & Reinigungsdienste Indonesien | 5- oder 6-Tage-Modell korrekt verzuschlagt",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Haus- &amp; Reinigungsdienste (Petugas kebersihan) in Indonesien",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte und Routen effizient ein und berechnet Feiertagszuschläge automatisch mit der richtigen Tabelle &mdash; je nachdem, ob Ihr Objekt im 5-Tage- oder 6-Tage-Modell betrieben wird.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Indonesien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Indonesien",
+    "title": "5-Tage- oder 6-Tage-Modell, unterschiedliche Zuschlagstabelle",
+    "items": [
+      {
+        "icon": "calendar_month",
+        "title": "Betriebsmodell bestimmt die Feiertagszuschlagstabelle",
+        "text": "Läuft ein Objekt im 5-Tage-Modell (8 h/Tag), gelten die ersten 8 Feiertagsstunden zu 2,0×; im 6-Tage-Modell (7 h/Tag) sind es die ersten 7 Stunden zu 2,0× &mdash; danach 3,0× und 4,0× (UU 13/2003 Pasal 77, PP 35/2021 Pasal 31). Wird das Modell pro Objekt nicht sauber hinterlegt, greift schnell die falsche Tabelle."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Gesetzliche Pause bei wechselnden Objekten",
+        "text": "Nach 4 aufeinanderfolgenden Arbeitsstunden ist eine mindestens 30-minütige, unbezahlte Pause zwingend (UU 13/2003 Pasal 79) &mdash; bei wechselnden Objekten und Teilzeitkräften leicht zu übersehen."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks indonesische Hausdienste entlastet",
+    "subtitle": "Von der optimierten Route bis zur richtigen Zuschlagstabelle &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Objekt-Routen optimiert",
+        "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Richtige Zuschlagstabelle je Objekt",
+        "text": "Klacks hinterlegt pro Objekt, ob 5-Tage- oder 6-Tage-Modell gilt, und wendet automatisch die passende Feiertagszuschlagstabelle aus PP 35/2021 Pasal 31 an &mdash; erste 8 oder erste 7 Stunden zu 2,0×, danach progressiv weiter."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Pausen automatisch eingeplant",
+        "text": "Die mindestens 30-minütige Pause nach 4 Arbeitsstunden (UU 13/2003 Pasal 79) wird für jede Schicht automatisch mitgeplant."
+      },
+      {
+        "icon": "groups",
+        "title": "Teams flexibel eingeteilt",
+        "text": "Wechselnde Besetzungen und Aushilfen &mdash; Klacks behält den Überblick und schlägt passende Einteilungen vor."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Objekt- und Personaldaten bleiben, wo Sie sie haben wollen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Plane die Objekte für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Pausen."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Feiertagsdienst im 6-Tage-Objekt, ein Plan",
+    "text": "Klacks erkennt, dass ein Objekt im 6-Tage-Modell läuft, und verzuschlagt die ersten 7 Feiertagsstunden korrekt mit 2,0× &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und Zuschlagstabellen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

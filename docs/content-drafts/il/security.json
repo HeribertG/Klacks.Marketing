@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks für Sicherheitsdienste in Israel | 8-Stunden-Ruhe & 7-Stunden-Nachtschicht",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Für Sicherheitsdienste in Israel",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Ruhezeit eingehalten.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der gesetzlichen 8-Stunden-Ruhe zwischen Arbeitstagen und der auf 7 Stunden begrenzten Nachtschicht automatisch im Blick. On-Premise, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Israel",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Sicherheits-Alltag in Israel",
+    "title": "Viele Objekte, allgemeines Arbeitszeitrecht, keine Ausnahme",
+    "items": [
+      {
+        "icon": "apartment",
+        "title": "Viele Objekte, ein Plan",
+        "text": "Jedes Objekt hat eigene Posten, Zeiten und Anforderungen &mdash; alles gleichzeitig zu überblicken ist von Hand kaum machbar."
+      },
+      {
+        "icon": "bedtime",
+        "title": "8-Stunden-Ruhe zwischen Arbeitstagen",
+        "text": "Das allgemeine Hours of Work and Rest Law verlangt mindestens 8 Stunden zwischen zwei Arbeitstagen &mdash; sonst gelten beide als ein durchgehender Arbeitstag mit entsprechender Überstundenfolge. Das gilt branchenübergreifend, nicht nur für Sicherheitsdienste, ist aber bei dichten Schichtfolgen besonders leicht zu verletzen."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nachtschicht auf 7 Stunden begrenzt",
+        "text": "Nachtarbeit (mindestens 2 Stunden im Fenster 22:00&ndash;06:00) ist regulär auf 7 statt 8 Stunden begrenzt; jede weitere Stunde ist überstundenpflichtig (125 % bzw. 150 %). Auch dies ist allgemeines Recht, kein bewachungsspezifischer Tarifwert &mdash; aber gerade bei rotierenden Nachtdiensten entscheidend."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Sicherheitsdienste in Israel entlastet",
+    "subtitle": "Vom besetzten Posten bis zur eingehaltenen Ruhezeit &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Objekte &amp; Posten lückenlos",
+        "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch."
+      },
+      {
+        "icon": "bedtime",
+        "title": "8-Stunden-Ruhe automatisch geprüft",
+        "text": "Klacks erkennt, wenn zwischen zwei Diensten weniger als 8 Stunden liegen, und verhindert die ungewollte Zusammenlegung zu einem Arbeitstag mit Überstundenfolge."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nachtschicht-Grenze korrekt verzuschlagt",
+        "text": "Klacks erkennt die 7-Stunden-Grenze für Nachtarbeit und rechnet jede weitere Stunde automatisch mit 125 % bzw. 150 % Überstundenzuschlag."
+      },
+      {
+        "icon": "route",
+        "title": "Rundgänge optimiert",
+        "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Ruhezeit und Nachtschicht-Grenze automatisch mit."
+      },
+      {
+        "icon": "bolt",
+        "title": "Ausfälle in Minuten ersetzt",
+        "text": "Fällt ein Posten aus, zeigt Klacks sofort qualifizierten, verfügbaren Ersatz &mdash; ohne den ganzen Plan zu kippen."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Sicherheitsdienst erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Ruhezeiten und Nachtschicht-Zuschläge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

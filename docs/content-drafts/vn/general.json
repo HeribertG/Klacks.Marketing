@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Vietnam | 3-Stufen-Überstunden-Cap & Nachtzuschlag",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Datenhoheit in Vietnam",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag/Monat/Jahr) und rechnet die kumulative Nacht-Überstundenformel des Bộ luật Lao động 2019 automatisch &mdash; und läuft On-Premise, damit biometrische Zeiterfassungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Vietnam",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in vietnamesischen Betrieben",
+    "title": "3-Stufen-Cap, Nachtzuschlag und Datenschutz",
+    "items": [
+      { "icon": "gavel", "title": "Der 3-Stufen-Überstunden-Cap", "text": "Überstunden dürfen 50 % der normalen Tagesarbeitszeit nicht überschreiten (bei einer 8h-Schicht also max. 4h/Tag), monatlich max. 40 Stunden und jährlich standardmässig max. 200 Stunden, erweiterbar auf 300 Stunden in gesetzlich definierten Sektoren (Art. 107 Bộ luật Lao động 2019). Das Überschreiten einer einzigen Stufe ist bereits ein Verstoss, auch wenn die anderen zwei eingehalten sind." },
+      { "icon": "bedtime", "title": "Kumulative Nacht-Überstundensätze", "text": "Überstunden-Grundsätze von 150 % (Werktag), 200 % (Ruhetag) oder 300 % (Feiertag) plus 30 % Nachtzuschlag plus weitere 20 % auf den jeweiligen Überstundensatz bei Nachtarbeit (Art. 98 Bộ luật Lao động 2019) ergeben kumulativ rund 210 % bzw. 270 % &mdash; von Hand eine der fehleranfälligsten Lohnberechnungen überhaupt." },
+      { "icon": "fingerprint", "title": "Biometrie als sensible Daten", "text": "Biometrische Daten gelten als sensible personenbezogene Daten (Decree 13/2023/NĐ-CP) &mdash; eine grenzüberschreitende Übermittlung erfordert ein Transfer-Impact-Assessment-Dossier beim Ministerium für öffentliche Sicherheit." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Betriebe in Vietnam entlastet",
+    "subtitle": "Vom automatisch überwachten Überstunden-Cap bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "3-Stufen-Cap automatisch überwacht", "text": "Klacks prüft Tages-, Monats- und Jahreslimit (Art. 107) laufend gegeneinander und warnt, bevor eine einzelne Stufe überschritten wird." },
+      { "icon": "bedtime", "title": "Nacht-Überstunden korrekt berechnet", "text": "Die verschachtelte Formel aus Grundsatz, 30%-Nachtzuschlag und weiteren 20 % (Art. 98) rechnet Klacks automatisch &mdash; inklusive der kumulierten 210%- bzw. 270%-Sätze." },
+      { "icon": "schedule", "title": "Nachtzeit &amp; Schichtruhe eingehalten", "text": "Die Nachtzeit von 22:00 bis 06:00 Uhr (Art. 106) und die 12-stündige Ruhezeit zwischen zwei Schichten (Art. 110) werden automatisch im Dienstplan berücksichtigt." },
+      { "icon": "fingerprint", "title": "Biometrie-Compliance ohne Cross-Border-Transfer", "text": "On-Premise-Hosting hält biometrische Zeiterfassungsdaten vollständig im eigenen Firmennetz &mdash; das Transfer-Impact-Assessment-Dossier nach Decree 13/2023 entfällt." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Nacht-Überstunden und 3-Stufen-Cap, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht in die Nachtzeit fällt oder eine Stufe des Überstunden-Caps erreicht ist, und rechnet den kumulierten Zuschlagssatz gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks den 3-Stufen-Überstunden-Cap, die kumulative Nacht-Überstundenformel und die Biometrie-Compliance automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

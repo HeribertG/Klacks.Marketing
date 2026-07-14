@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Klacks für Unternehmen in Taiwan | 休息日-Zuschlagsstaffel & Vier-Wochen-Flex automatisiert",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Open Source &middot; On-Premise &middot; 勞動基準法-konform",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede 休息日-Stunde richtig zählen.</span>",
+    "subtitle": "Klacks berechnet die gestaffelten Zuschläge für Arbeit am 休息日, überwacht die monatlichen Überstunden-Grenzen und den 11-Stunden-Schichtabstand automatisch &mdash; und hält Personaldaten dank On-Premise-Betrieb im eigenen Firmennetz, ganz im Sinne des PDPA (個人資料保護法).",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Taiwan",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in taiwanischen Betrieben",
+    "title": "休息日-Zuschlagsstaffel, Überstunden-Aggregation und Schichtabstand",
+    "items": [
+      { "icon": "gavel", "title": "休息日 oder 例假日? Die Zuschlagsfalle", "text": "Arbeit am flexiblen Ruhetag (休息日) wird gestaffelt vergütet &mdash; 1,34× für die ersten zwei Stunden, 1,67× für Stunde 3 bis 8, 2,67× für Stunde 9 bis 12 (§ 24 LSA). Arbeit am gesetzlichen Pflichtruhetag (例假日) hingegen wird verdoppelt (加倍) &mdash; zwei unterschiedliche Rechenwege, die von Hand leicht verwechselt werden." },
+      { "icon": "hourglass_top", "title": "46/54-Stunden-Grenze über rollierendes 3-Monats-Fenster", "text": "Überstunden sind auf 46 Stunden pro Monat begrenzt, mit Zustimmung von Gewerkschaft oder Betriebsrat auf 54 Stunden anhebbar &mdash; sofern in keinem rollierenden 3-Monats-Zeitraum 138 Stunden überschritten werden. Dazu kommt die tägliche Höchstarbeitszeit von 12 Stunden inklusive Überstunden (§ 32 LSA)." },
+      { "icon": "bedtime", "title": "11-Stunden-Schichtabstand &amp; hohe Bussen", "text": "Zwischen zwei Schichten sind mindestens 11 zusammenhängende Stunden Ruhezeit einzuhalten (§ 34 LSA). Verstösse werden mit Bussen von NT$ 20.000 bis 1.000.000 geahndet &mdash; im Wiederholungsfall zzgl. 50 % (§ 79 LSA)." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks taiwanische Betriebe entlastet",
+    "subtitle": "Von der korrekten 休息日-Staffel bis zur Vier-Wochen-Flexibilisierung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "gavel", "title": "休息日-Staffel automatisch berechnet", "text": "Klacks unterscheidet automatisch zwischen dem gestaffelten Zuschlag am 休息日 (1,34× / 1,67× / 2,67×, § 24 LSA) und der Verdoppelung (加倍) am 例假日 &mdash; keine Verwechslung mehr zwischen den beiden Ruhetag-Arten." },
+      { "icon": "hourglass_top", "title": "46/54/138-Stunden-Aggregation im Blick", "text": "Klacks überwacht die monatliche 46- bzw. 54-Stunden-Grenze und das rollierende 3-Monats-Limit von 138 Stunden fortlaufend &mdash; inklusive der täglichen 12-Stunden-Obergrenze (§ 32 LSA)." },
+      { "icon": "bedtime", "title": "11-Stunden-Schichtabstand erzwungen", "text": "Klacks lässt keine Schichtfolge zu, die den gesetzlichen 11-Stunden-Abstand unterschreitet &mdash; und schützt so vor Bussen von NT$ 20.000 bis 1.000.000 (§ 34 / § 79 LSA)." },
+      { "icon": "event_repeat", "title": "Vier-Wochen-Flex &amp; 12-Tage-Grenze abgebildet", "text": "Klacks bildet die Vier-Wochen-Flexibilisierung nach § 30-1 LSA ab: bis zu 10 Stunden reguläre Tagesarbeitszeit, mindestens 2 例假 pro 14 Tage und mindestens 8 freie Tage pro 4 Wochen &mdash; damit bleibt auch die Grenze von maximal 12 aufeinanderfolgenden Arbeitstagen automatisch gewahrt." },
+      { "icon": "shield_lock", "title": "On-Premise: Datenhoheit nach PDPA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Firmennetz nicht, das KI-Modell wählen Sie selbst. Das stärkt die PDPA-Compliance (個人資料保護法) generell, unabhängig von einzelnen Datenkategorien." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären, ob eine Schicht auf den 休息日 oder den 例假日 fällt. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "休息日-Staffel und 138-Stunden-Fenster, ein Blick",
+    "text": "Klacks erkennt automatisch, ob eine Zusatzschicht auf den 休息日 oder den 例假日 fällt, wendet den passenden Zuschlag an und zeigt, ob das rollierende 138-Stunden-Fenster über die letzten drei Monate noch Spielraum lässt &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks 休息日-Zuschläge, Überstunden-Grenzen und Schichtabstände automatisiert &mdash; kostenlos und ohne Registrierung."
+  }
+}

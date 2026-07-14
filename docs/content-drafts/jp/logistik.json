@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks für Logistik in Japan | 2024-Problem, 拘束時間 & 9-Std.-Ruhezeit",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Für Logistik &amp; Transport (物流) in Japan",
+    "titleHtml": "Touren, Bindungszeit, Ruhezeit &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 960-Stunden-Jahresgrenze aus dem „2024-Problem“, der täglichen Bindungszeit (拘束時間) und der 9-Stunden-Mindestruhe nach der Verbesserungsrichtlinie (改善基準告示) automatisch berücksichtigt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Japan",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Logistik-Alltag in Japan",
+    "title": "Das „2024-Problem“, Bindungszeit und Lenkpausen",
+    "items": [
+      {
+        "icon": "timer",
+        "title": "960-Stunden-Grenze seit April 2024",
+        "text": "Die jährlichen Überstunden für Lkw-Fahrer sind seit April 2024 hart auf 960 Std./Jahr gedeckelt (物流の2024年問題) &mdash; über viele Touren und Fahrer hinweg von Hand kaum sicher einzuhalten."
+      },
+      {
+        "icon": "schedule",
+        "title": "拘束時間 (Bindungszeit) &amp; 9-Stunden-Ruhezeit",
+        "text": "Die tägliche Bindungszeit darf in der Regel max. 13 Std. betragen, ausdehnbar auf max. 15 Std. (Langstrecken-Ausnahme bis 16 Std., max. 2×/Woche). Die tägliche Ruhezeit gilt grundsätzlich durchgehend mit 11 Std., Untergrenze 9 Std. &mdash; 8 Std. sind nur bei Langstreckentransport ab 450 km eine Ausnahme, nicht die Regel."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "4-Stunden-Lenkzeit &amp; Pausenpflicht",
+        "text": "Ununterbrochene Lenkzeit darf 4 Std. nicht überschreiten; danach sind Pausen von insgesamt mindestens 30 Minuten fällig, aufteilbar in Blöcke ab 10 Minuten."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks die Logistik in Japan entlastet",
+    "subtitle": "Von der optimierten Tour bis zur Bindungszeit-Kontrolle &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Touren automatisch optimiert",
+        "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten."
+      },
+      {
+        "icon": "timer",
+        "title": "960-Stunden-Grenze überwacht",
+        "text": "Klacks warnt, bevor die jährliche 960-Stunden-Grenze des „2024-Problems“ für einen Fahrer erreicht ist &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "schedule",
+        "title": "拘束時間 &amp; 9-Stunden-Ruhezeit geprüft",
+        "text": "Klacks pflegt die 13/15-Stunden-Bindungszeit und die 9-Stunden-Mindestruhe direkt in den Dienst- und Fahrplan ein &mdash; inklusive der Langstrecken-Ausnahmen."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "4-Stunden-Lenkzeit &amp; 30-Minuten-Pause eingeplant",
+        "text": "Klacks plant die Pausenpflicht nach 4 Stunden Lenkzeit automatisch mit ein &mdash; auch wenn die 30 Minuten in kleinere Blöcke aufgeteilt werden."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Fahrer- und Tourdaten bleiben in Japan, auch bei KI-Funktionen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Plane die Touren für morgen, Fahrer Tanaka ist krank“ genügt &mdash; Klacksy rechnet Bindungszeit und Ruhezeit gleich mit."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Bindungszeit, Ruhezeit, Lenkpause, ein Plan",
+    "text": "Klacks prüft die tägliche Bindungszeit und die 9-Stunden-Mindestruhe nach der Verbesserungsrichtlinie automatisch, plant die 30-Minuten-Pause nach 4 Stunden Lenkzeit gleich mit ein und behält die jährliche 960-Stunden-Grenze im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Logistikbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Bindungszeit und Ruhezeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}

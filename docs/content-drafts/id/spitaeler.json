@@ -1,0 +1,69 @@
+{
+  "pageTitle": "Klacks für Spitäler in Indonesien | Feiertagsdienst nach KEP.233/MEN/2003",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken (Rumah Sakit) in Indonesien",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen durchgehend und berechnet den Feiertagszuschlag automatisch korrekt &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Indonesien",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Indonesien",
+    "title": "Durchgehender Betrieb, korrekter Feiertagszuschlag",
+    "items": [
+      {
+        "icon": "local_hospital",
+        "title": "Gesundheitsdienste ohne Feiertagssperre",
+        "text": "KEP.233/MEN/2003 listet Gesundheitsdienste (pelayanan kesehatan) in Pasal 3 ausdrücklich als durchgehend zu betreibende Tätigkeit &mdash; Personal darf mit Zustimmung auch an gesetzlichen Feiertagen eingesetzt werden, aber nur gegen den korrekten Überstundenzuschlag."
+      },
+      {
+        "icon": "calculate",
+        "title": "Feiertagszuschlag nach PP 35/2021 berechnen",
+        "text": "Arbeit an Ruhetagen und Feiertagen wird nach PP 35/2021 Pasal 31 progressiv verzuschlagt &mdash; 2,0× bis 4,0× je nach Stundenzahl und 5- oder 6-Tage-Modell &mdash; bei durchgehendem Stationsbetrieb von Hand schwer zu überblicken."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks indonesische Spitäler entlastet",
+    "subtitle": "Von der lückenlosen Stationsabdeckung bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Lückenlose 24/7-Stationsabdeckung",
+        "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch, auch an gesetzlichen Feiertagen."
+      },
+      {
+        "icon": "calculate",
+        "title": "Feiertagszuschlag automatisch korrekt",
+        "text": "Klacks berechnet die progressiven Stufen aus PP 35/2021 Pasal 31 für Feiertags- und Ruhetagsdienste automatisch &mdash; mit der richtigen Tabelle für 5- oder 6-Tage-Betrieb."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifikationen automatisch berücksichtigt",
+        "text": "Jede Schicht wird nur Personal mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Fülle die Feiertagsschichten der Station für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Zuschläge."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Feiertagsdienst, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn eine Schicht auf einen gesetzlichen Feiertag fällt, und berechnet den passenden Zuschlag aus PP 35/2021 gleich mit &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Stationsabdeckung und Feiertagszuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

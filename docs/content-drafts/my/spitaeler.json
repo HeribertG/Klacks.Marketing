@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Spitäler in Malaysia | Schichtübergabe & RM-4.000-Schwelle",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in Malaysia",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit korrekt erfasster Übergabezeit und den gestuften Überstundenzuschlägen des Employment Act 1955. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Malaysia",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in Malaysia",
+    "title": "RM-4.000-Schwelle, Übergabezeit und Zuschläge",
+    "items": [
+      { "icon": "payments", "title": "RM-4.000-Schwelle erfasst die meisten Pflegekräfte", "text": "Die Überstunden-, Ruhetags- und Feiertagszuschläge (Section 60A(3) u.a.) gelten bis zu einem Monatslohn von RM 4.000 &mdash; damit sind die meisten Krankenschwestern (jururawat) im privaten Kliniksektor erfasst." },
+      { "icon": "schedule", "title": "Schichtübergabe zählt als Arbeitszeit", "text": "Zeit, in der eine Pflegekraft dem Arbeitgeber zur Verfügung steht &mdash; etwa bei der Schichtübergabe (handover) &mdash; zählt grundsätzlich als Arbeitszeit und muss in die 45-Stunden- und Überstundenrechnung einfliessen." },
+      { "icon": "gavel", "title": "Gestufte Zuschläge korrekt trennen", "text": "Überstunden an normalen Arbeitstagen, am Ruhetag und an Feiertagen lösen unterschiedliche Sätze aus (1,5x/2,0x/3,0x) &mdash; über viele Rotationen und Stationen von Hand kaum verlässlich." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in Malaysia entlastet",
+    "subtitle": "Von der lückenlosen Abdeckung bis zur korrekten Übergabezeit &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose Schichtabdeckung", "text": "Tag-, Spät- und Nachtschichten über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "payments", "title": "RM-4.000-Schwelle automatisch berücksichtigt", "text": "Klacks weiss, für wen die Zuschlagsbestimmungen der Section 60A(3) u.a. greifen, und rechnet die Sätze entsprechend korrekt." },
+      { "icon": "swap_horiz", "title": "Übergabezeit korrekt eingerechnet", "text": "Klacks erfasst die Zeit der Schichtübergabe (handover) als Arbeitszeit und rechnet sie automatisch in die 45-Stunden-Woche und die Überstunden ein." },
+      { "icon": "gavel", "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt", "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; pro Station und Rotation." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Station für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Höchstarbeitszeit." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Übergabezeit und Zuschlag, ein Plan",
+    "text": "Klacks rechnet die Schichtübergabe automatisch als Arbeitszeit ein und behält die RM-4.000-Schwelle für die Zuschlagsrechte im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Spital erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Schichten, Übergabezeit und Zuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

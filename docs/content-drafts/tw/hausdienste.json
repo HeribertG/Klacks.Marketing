@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks für Reinigungsdienste Taiwan | 休息日-Zuschlag bei Wochenendeinsätzen",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Für Reinigungsdienste (清潔服務) in Taiwan",
+    "titleHtml": "Jeder Wochenend-Einsatz <span class=\"text-secondary\">korrekt entlohnt.</span>",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams ein &mdash; und berechnet, wenn eine kurzfristige Schicht auf den 休息日 fällt, automatisch die gestaffelten Zuschläge nach § 24 LSA.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Taiwan",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Reinigungs-Alltag in Taiwan",
+    "title": "Wochenendeinsätze und die 休息日-Zuschlagsstaffel",
+    "items": [
+      { "icon": "gavel", "title": "Wochenendschicht trifft auf 休息日-Regel", "text": "Reinigungskräfte (清潔人員) arbeiten meist nach Standardarbeitszeit. Springt jemand kurzfristig am flexiblen Ruhetag (休息日) ein, gilt die allgemeine Zuschlagsstaffel nach § 24 / § 36 LSA &mdash; keine eigene Reinigungsbranchen-Regel, sondern dieselbe Regel wie überall im Betrieb." },
+      { "icon": "calculate", "title": "Drei Zuschlagsstufen statt einem Satz", "text": "1,34× für die ersten zwei Stunden, 1,67× für Stunde 3 bis 8, 2,67× für Stunde 9 bis 12 &mdash; drei unterschiedliche Sätze für einen einzigen Wochenendeinsatz sind von Hand fehleranfällig." },
+      { "icon": "groups", "title": "Wechselnde Teams &amp; Objekte", "text": "Aushilfen, Teilzeitkräfte und wechselnde Objektzuteilungen erschweren zusätzlich, den passenden 休息日-Zuschlag konsistent anzuwenden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks taiwanische Reinigungsdienste entlastet",
+    "subtitle": "Von der optimierten Objekt-Route bis zum korrekten 休息日-Zuschlag &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto oder zu Fuss." },
+      { "icon": "gavel", "title": "休息日-Zuschlag automatisch gestaffelt", "text": "Springt ein Team am 休息日 ein, berechnet Klacks die drei Zuschlagsstufen 1,34× / 1,67× / 2,67× automatisch &mdash; ohne manuelles Nachrechnen der einzelnen Stunden." },
+      { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Aushilfen: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
+      { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
+      { "icon": "shield_lock", "title": "On-Premise: Datenhoheit nach PDPA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Firmennetz nicht, das KI-Modell wählen Sie selbst." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Wochenendreinigung für Objekt Ost“ genügt &mdash; Klacksy wendet die 休息日-Zuschlagsstaffel automatisch an." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Wochenend-Einsatz, drei Zuschlagsstufen, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn ein Wochenendeinsatz auf den 休息日 fällt, und wendet die passende Zuschlagsstufe je Stunde an &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekt-Routen, Teams und den 休息日-Zuschlag übernimmt &mdash; kostenlos und ohne Registrierung."
+  }
+}

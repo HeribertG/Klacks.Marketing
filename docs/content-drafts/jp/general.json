@@ -1,0 +1,91 @@
+{
+  "pageTitle": "Klacks für Japan | 36協定-Obergrenzen, Überstundenzuschlag & On-Premise",
+  "hero": {
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; APPI-konform",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch und behält die 36協定-Obergrenzen sowie den 50%-Zuschlagssprung ab 60 Überstunden im Blick &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo die APPI es ohne Auslandtransfer-Einwilligung erlaubt: im eigenen Haus in Japan.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Japan",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in japanischen Betrieben",
+    "title": "36協定, Zuschlagssprünge und Datentransfer-Hürden",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "36協定-Obergrenzen (Saburoku Kyōtei) einhalten",
+        "text": "Ohne Sondervereinbarung sind maximal 45 Std. Überstunden pro Monat und 360 Std. pro Jahr erlaubt. Unter Sonderumständen gelten strafbewehrte absolute Obergrenzen: 720 Std./Jahr, max. 100 Std. in einem Einzelmonat und im Schnitt max. 80 Std./Monat über jeden Zeitraum von 2 bis 6 Monaten &mdash; von Hand kaum verlässlich zu überwachen."
+      },
+      {
+        "icon": "trending_up",
+        "title": "Die 60-Stunden-Schwelle und der 50%-Zuschlagssprung",
+        "text": "Überstunden über 60 Std./Monat verlangen einen Zuschlag von mind. 50 % statt der sonst üblichen 25 % (割増賃金, Warimashi Chingin). Seit 1. April 2023 gilt das auch für kleine und mittlere Unternehmen &mdash; wer die Schwelle nicht kommen sieht, zahlt drauf."
+      },
+      {
+        "icon": "event_available",
+        "title": "Pflicht-Mindestabnahme von 5 Urlaubstagen",
+        "text": "Für jeden Arbeitnehmer mit Anspruch auf mindestens 10 bezahlte Urlaubstage muss der Arbeitgeber sicherstellen, dass tatsächlich mindestens 5 Tage pro Jahr genommen werden &mdash; sonst droht ein Bußgeld bis 300.000 Yen pro betroffenem Mitarbeiter."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Datentransfer ins Ausland unter der APPI",
+        "text": "Die Übermittlung personenbezogener Daten &mdash; auch biometrischer Identifikatoren, die als 個人識別符号 gelten &mdash; in eine ausländische Cloud verlangt nach APPI Art. 28 eine Opt-in-Einwilligung oder ein anerkanntes Schutzniveau. Gerade bei KI-Funktionen ist das für viele Betriebe eine offene Frage."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks japanische Betriebe entlastet",
+    "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Klacks füllt Schichten regelbasiert und lernt aus bestehenden Mustern &mdash; ohne dass jede Woche neu von Hand geplant werden muss."
+      },
+      {
+        "icon": "gavel",
+        "title": "36協定-Obergrenzen als Live-Ampel",
+        "text": "Klacks warnt Planer laufend, bevor die 45/360-Std.-Grenze oder die strafbewehrten Obergrenzen von 720/100/80 Std. erreicht werden &mdash; Verstöße entstehen gar nicht erst."
+      },
+      {
+        "icon": "trending_up",
+        "title": "60-Stunden-Schwelle automatisch überwacht",
+        "text": "Klacks zeigt frühzeitig, wenn sich ein Monat der 60-Stunden-Grenze nähert, und rechnet den 50%-Zuschlag korrekt, bevor unerwartete Lohnmehrkosten entstehen."
+      },
+      {
+        "icon": "event_available",
+        "title": "5-Tage-Pflichturlaub pro Kopf getrackt",
+        "text": "Klacks verfolgt für jeden Anspruchsberechtigten, ob die gesetzliche Mindestabnahme von 5 Urlaubstagen im 12-Monats-Zeitraum erfüllt ist."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Daten bleiben in Japan",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne die Opt-in-Hürde für Auslandtransfer nach APPI Art. 28."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source: kein Vendor-Lock-in",
+        "text": "Der Quellcode liegt offen. Sie entscheiden, wo Klacks läuft, wie es angepasst wird und mit wem Sie zusammenarbeiten."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer nach APPI.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "36協定-Grenze und 60-Stunden-Schwelle, ein Blick",
+    "text": "Klacks erkennt automatisch, wenn ein Mitarbeiter sich der 60-Stunden-Schwelle nähert oder eine 36協定-Obergrenze in Reichweite kommt, und schlägt frühzeitig eine Umverteilung vor &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks 36協定-Obergrenzen, den 60-Stunden-Zuschlagssprung und die Pflicht-Urlaubsabnahme automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

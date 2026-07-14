@@ -1,0 +1,51 @@
+{
+  "pageTitle": "Klacks für Unternehmen in den Vereinigten Arabischen Emiraten | Ramadan-Automatik & WPS-konforme Zeiterfassung",
+  "hero": {
+    "badgeIcon": "mosque",
+    "badge": "WPS-konform &middot; PDPL-konform &middot; On-Premise",
+    "titleHtml": "Dienstpläne, die den Ramadan <span class=\"text-secondary\">automatisch mitdenken.</span>",
+    "subtitle": "Klacks kürzt die Arbeitszeit im Fastenmonat Ramadan automatisch für alle Mitarbeitenden, überwacht den Überstunden-Deckel und führt WPS-konforme Stundenkonten &mdash; On-Premise, damit biometrische Zeiterfassungsdaten nach dem PDPL in Ihrer eigenen Infrastruktur bleiben.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Vereinigten Arabischen Emiraten",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in Unternehmen der VAE",
+    "title": "Ramadan, Überstundendeckel und WPS-Fristen",
+    "items": [
+      { "icon": "nights_stay", "title": "Ramadan-Arbeitszeitverkürzung für alle", "text": "Während des Fastenmonats Ramadan (شهر رمضان) verkürzt sich die reguläre tägliche Arbeitszeit um 2 Stunden &mdash; ohne Lohnkürzung und für alle Beschäftigten im Privatsektor, unabhängig von Religion (Federal Decree-Law No. 33 of 2021, Art. 17 i.V.m. Cabinet Resolution No. 1 of 2022)." },
+      { "icon": "schedule", "title": "Überstunden-Tageslimit &amp; 144-Stunden-Deckel", "text": "Überstunden (ساعات العمل الإضافية) sind auf max. 2 Stunden pro Tag begrenzt, die Gesamtarbeitszeit darf 144 Stunden je 3 Wochen nicht übersteigen &mdash; mit mindestens +25% Zuschlag, zwischen 22:00 und 04:00 Uhr mindestens +50% (Art. 19)." },
+      { "icon": "payments", "title": "WPS-Fristen fürs Lohnschutzsystem einhalten", "text": "Löhne im Onshore-Privatsektor müssen über das staatliche Lohnschutzsystem WPS (نظام حماية الأجور) elektronisch ausgezahlt werden &mdash; wer nicht binnen 15 Tagen zahlt, riskiert eine Sperre neuer Arbeitsgenehmigungen (Ministerial Resolution No. 340 of 2026, seit 1. Juni 2026 in Kraft)." },
+      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung PDPL-konform halten", "text": "Das PDPL (Federal Decree-Law No. 45 of 2021) stuft biometrische Daten ausdrücklich als sensible personenbezogene Daten (البيانات الشخصية الحساسة) ein &mdash; grenzüberschreitende Transfers sind streng reguliert." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Unternehmen in den VAE entlastet",
+    "subtitle": "Von der Ramadan-Automatik bis zur WPS-konformen Lohnabsicherung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "nights_stay", "title": "Ramadan-Verkürzung automatisch eingeplant", "text": "Klacks kürzt die Tagesarbeitszeit im Ramadan automatisch um 2 Stunden für alle Mitarbeitenden &mdash; ohne Lohnabzug und ohne manuelle Anpassung jedes einzelnen Dienstplans." },
+      { "icon": "schedule", "title": "Überstunden &amp; 144-Stunden-Deckel automatisch überwacht", "text": "Klacks warnt, bevor das 2-Stunden-Tageslimit oder der 144-Stunden-Deckel je 3 Wochen erreicht wird, und berechnet den Nachtzuschlag zwischen 22:00 und 04:00 Uhr automatisch." },
+      { "icon": "payments", "title": "WPS-konforme Stundenkonten", "text": "Klacks führt dienstplan-abgeglichene Stundenkonten, die sich direkt für die WPS-Lohnauszahlung nach Ministerial Resolution No. 340 of 2026 verwenden lassen &mdash; fristgerecht statt riskant." },
+      { "icon": "fingerprint", "title": "PDPL-konforme On-Premise-Zeiterfassung", "text": "Biometrische Stempeldaten bleiben On-Premise in Ihrer eigenen Infrastruktur &mdash; ganz ohne den grenzüberschreitenden Datentransfer, den das PDPL streng reguliert." },
+      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Unternehmen mit hohen PDPL-Anforderungen an sensible personenbezogene Daten lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ramadan und Überstundendeckel, ein Blick",
+    "text": "Klacks erkennt den Beginn des Ramadan automatisch, kürzt die Tagesarbeitszeit um 2 Stunden ohne Lohnabzug und behält gleichzeitig den 144-Stunden-Deckel je 3 Wochen im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem VAE-Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks Ramadan-Automatik, Überstundendeckel und WPS-konforme Stundenkonten übernimmt &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}

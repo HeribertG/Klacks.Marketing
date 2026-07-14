@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacks für Spitäler in den VAE | Notfall-Ausnahme & 144-Stunden-Deckel",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Für Spitäler &amp; Kliniken in den VAE",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">auch im Notfall standhalten.</span>",
+    "subtitle": "Klacks plant Stationen rund um die Uhr, erkennt echte Notfälle (حالات الطوارئ) für die Überstunden-Ausnahme und behält den harten 144-Stunden-Deckel je 3 Wochen im Blick &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in den VAE",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Klinik-Alltag in den VAE",
+    "title": "Notfall-Ausnahme und der 144-Stunden-Deckel",
+    "items": [
+      { "icon": "emergency", "title": "Notfall-Ausnahme vom 2-Stunden-Tageslimit", "text": "Das reguläre Tageslimit von 2 Überstunden darf überschritten werden, wenn die Arbeit nötig ist, um einen schweren Verlust oder ernsten Unfall zu verhindern bzw. dessen Folgen zu mindern (Art. 19) &mdash; der 144-Stunden-Deckel je 3 Wochen bleibt dabei die harte Obergrenze." },
+      { "icon": "schedule", "title": "Lückenlose Stationsabdeckung rund um die Uhr", "text": "Tag-, Spät- und Nachtdienste müssen über alle Stationen hinweg lückenlos besetzt sein &mdash; bei kurzfristigen Notfalleinsätzen zusätzlich erschwert." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Spitäler in den VAE entlastet",
+    "subtitle": "Von der korrekt dokumentierten Notfall-Ausnahme bis zur lückenlosen Stationsabdeckung &mdash; alles greift ineinander.",
+    "items": [
+      { "icon": "schedule", "title": "Lückenlose 24/7-Stationsabdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "emergency", "title": "Notfall-Überstunden korrekt erfasst", "text": "Klacks erfasst Notfalleinsätze, die das reguläre 2-Stunden-Tageslimit übersteigen, gesondert und dokumentiert den Grund &mdash; nachvollziehbar statt pauschal." },
+      { "icon": "gavel", "title": "144-Stunden-Deckel laufend geprüft", "text": "Klacks überwacht den 144-Stunden-Deckel je 3 Wochen fortlaufend und warnt, bevor die Gesamtarbeitszeit die Grenze erreicht &mdash; auch bei Notfalleinsätzen." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Dienst wird nur Personal mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Station für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und den 144-Stunden-Deckel." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Notfall-Ausnahme und 144-Stunden-Deckel, ein Blick",
+    "text": "Klacks erfasst einen Notfalleinsatz, der das 2-Stunden-Tageslimit übersteigt, gesondert und prüft gleichzeitig, dass der 144-Stunden-Deckel je 3 Wochen nicht überschritten wird &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrer Klinik erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Stationsdienste, Notfall-Ausnahmen und den 144-Stunden-Deckel übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+  }
+}

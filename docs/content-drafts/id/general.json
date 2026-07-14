@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Klacks für indonesische Unternehmen | Progressive Überstunden-Zuschläge nach PP 35/2021",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; On-Premise &middot; UU PDP-konforme Zeiterfassung",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten, die das UU PDP als besonders schützenswert einstuft, in Ihrer eigenen Infrastruktur bleiben.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks Dienstplan-Übersicht für indonesische Unternehmen",
+    "screenshotLabel": "Dienstplan"
+  },
+  "challenges": {
+    "eyebrow": "Der Planungsalltag in indonesischen Betrieben",
+    "title": "PP 35/2021, progressive Zuschläge und die 18-Stunden-Grenze",
+    "items": [
+      {
+        "icon": "hourglass_top",
+        "title": "Wöchentliches Überstundenlimit einhalten",
+        "text": "Geplante Überstunden (waktu kerja lembur) dürfen nach PP 35/2021 Pasal 26 höchstens 4 Stunden pro Tag und 18 Stunden pro Woche betragen &mdash; Überstunden an Ruhetagen und Feiertagen zählen separat. Jede Überstunde braucht zudem die schriftliche Zustimmung des Mitarbeitenden und eine schriftliche Anordnung mit Überstundenliste."
+      },
+      {
+        "icon": "calculate",
+        "title": "Vierstufige Zuschlagsformel von Hand fehleranfällig",
+        "text": "PP 35/2021 Pasal 31 verlangt 1,5× für die erste Überstunde am Werktag, danach 2,0× &mdash; an Ruhetagen und Feiertagen sogar bis zu 4,0×, mit unterschiedlichen Tabellen je nach 5- oder 6-Tage-Woche. Die Basis bildet 1/173 des Monatslohns (Pasal 32)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung als sensibles Datum",
+        "text": "Das UU 27/2022 (PDP) listet biometrische Daten in Pasal 4 ausdrücklich als data pribadi spesifik &mdash; neben Gesundheits-, Genetik- und Finanzdaten &mdash; und verlangt dafür strengeren Schutz und eine gesonderte Einwilligung."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks indonesische Betriebe entlastet",
+    "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "hourglass_top",
+        "title": "18-Stunden-Wochenlimit automatisch überwacht",
+        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und der schriftlichen Freigabe."
+      },
+      {
+        "icon": "calculate",
+        "title": "Progressive Zuschläge korrekt berechnet",
+        "text": "Klacks wendet die Stufen 1,5×/2,0×/3,0×/4,0× aus PP 35/2021 Pasal 31 automatisch an &mdash; mit der richtigen Tabelle für 5- oder 6-Tage-Betriebe und der Basis 1/173 des Monatslohns."
+      },
+      {
+        "icon": "pause_circle",
+        "title": "Gesetzliche Schichtpause eingeplant",
+        "text": "Nach 4 aufeinanderfolgenden Arbeitsstunden plant Klacks die zwingende, mindestens 30-minütige Pause (UU 13/2003 Pasal 79) automatisch mit &mdash; unbezahlt und korrekt aus der Arbeitszeit herausgerechnet."
+      },
+      {
+        "icon": "route",
+        "title": "Touren &amp; Einsätze automatisch optimiert",
+        "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: biometrische Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ohne dass sensible biometrische Zeiterfassungsdaten ins Ausland übertragen werden müssen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "KI-Assistent",
+    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Überstunde am Ruhetag, ein Blick",
+    "text": "Klacks erkennt automatisch, ob eine Überstunde am Werktag oder an einem Ruhetag anfällt, wendet die passende Stufe aus 1,5× bis 4,0× an und behält gleichzeitig das 18-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Testen Sie im Playground, wie Klacks progressive Überstunden-Zuschläge, Wochenlimits und die gesetzliche Schichtpause automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+  }
+}
