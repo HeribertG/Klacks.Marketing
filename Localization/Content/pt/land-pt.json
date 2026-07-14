@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks para Portugal | Suplementos de horas extraordinárias no SNS calculados ao milímetro",
+  "hero": {
+    "badgeIcon": "gavel",
+    "badge": "Para hospitais do Serviço Nacional de Saúde (SNS) português",
+    "titleHtml": "45% a 85,5% de suplemento &mdash; <span class=\"text-secondary\">escalonado em blocos de 48 horas, não de forma fixa.</span>",
+    "subtitle": "O Decreto-Lei n.º 119/2026 (em vigor desde 17 de junho de 2026) limita as horas extraordinárias dos médicos do SNS a 150 ou 250 horas por ano (este último valor em regime de dedicação plena) e prevê, em caso de excesso, suplementos escalonados de 45% a 85,5% do vencimento base, calculados em blocos rigorosos de 48 horas, acrescidos de um suplemento de 20% a partir de 48 horas de trabalho ao sábado/domingo num período de 8 semanas. A escassez aguda de médicos no SNS torna o registo isento de erros e auditável destes suplementos numa condição essencial para o funcionamento dos hospitais.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grelha de escalas de serviço do Klacks",
+    "screenshotLabel": "Escala de serviço"
+  },
+  "challenges": {
+    "eyebrow": "O dia a dia no sistema de saúde português",
+    "title": "Suplementos escalonados nos termos do Decreto-Lei n.º 119/2026",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Limite de 150 ou 250 horas extraordinárias por ano", "text": "Os médicos do SNS sem dedicação plena podem realizar no máximo 150 horas extraordinárias por ano; com dedicação plena, o limite sobe para 250 horas &mdash; um limite que tem de ser acompanhado continuamente ao longo do ano." },
+      { "icon": "gavel", "title": "Suplemento de 45% a 85,5% em blocos de 48h", "text": "Ao ultrapassar o limite anual, aplicam-se dez níveis escalonados de suplemento, de 45% a 85,5% do vencimento base, calculados sempre em blocos rigorosos de 48 horas &mdash; acrescidos de um suplemento de 20% a partir de 48 horas de trabalho ao fim de semana num período de 8 semanas." },
+      { "icon": "groups", "title": "Escassez aguda de médicos no SNS", "text": "Vários serviços de urgência tiveram de restringir a sua atividade em 2026 por simples falta de médicos disponíveis &mdash; neste contexto, um cálculo de suplementos rigoroso e em conformidade com a lei torna-se indispensável para conseguir sequer atrair médicos para serviços adicionais." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Soberania dos dados",
+    "title": "Soberania total dos dados: Open Source &amp; On-Premise",
+    "text": "O Klacks foi concebido para setores com requisitos de segurança e conformidade rigorosos, nos quais os dados sensíveis dos colaboradores não devem sair da própria infraestrutura. Sendo uma solução de código aberto, o Klacks pode ser executado diretamente no seu próprio centro de dados ou em servidores locais protegidos &mdash; sem depender de fornecedores de cloud norte-americanos. Isto facilita o cumprimento do RGPD e das exigências da Comissão Nacional de Proteção de Dados (CNPD) portuguesa, de forma totalmente autónoma.",
+    "bullets": [
+      "Soberania on-premise: controlo total sobre escalas de serviço, comprovativos de suplementos e registos dentro do seu próprio ambiente informático.",
+      "Arquitetura LLM livre: as sugestões de planeamento assistidas por IA também podem funcionar com modelos de linguagem alojados localmente, sem que os dados sejam enviados para APIs externas.",
+      "Código-fonte auditável: base de código totalmente acessível para auditorias informáticas e para a administração do SNS."
+    ]
+  },
+  "solutions": {
+    "title": "Como o Klacks calcula automaticamente os suplementos escalonados do SNS",
+    "subtitle": "Limite anual de 150h/250h, blocos de 48h e suplemento de fim de semana num único plano.",
+    "items": [
+      { "icon": "bolt", "title": "Motor de recuperação para faltas", "text": "Se um profissional falta, o Klacks encontra imediatamente um substituto qualificado &mdash; tendo em conta o limite anual de horas extraordinárias ainda disponível." },
+      { "icon": "fact_check", "title": "Suplemento por blocos de 48h escalonado automaticamente", "text": "O Klacks calcula corretamente o suplemento de 45%-85,5% em blocos de 48 horas e acrescenta automaticamente o suplemento de 20% para trabalho ao fim de semana assim que o limiar é atingido." },
+      { "icon": "calendar_month", "title": "Assistente de preenchimento automático com verificação do limite anual", "text": "O assistente de preenchimento automático, baseado em algoritmo genético, considera automaticamente o limite anual de 150h/250h em cada sugestão de serviço adicional." },
+      { "icon": "groups", "title": "Planeamento de turnos rigoroso quanto às qualificações", "text": "Apenas os colaboradores com a qualificação adequada são sugeridos para um turno." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Assistente de IA",
+    "title": "Klacksy: o assistente integrado para a sua equipa",
+    "text": "O Klacksy não é um chatbot de marketing acrescentado à parte, mas está diretamente integrado na interface do Klacks. Colaboradores e responsáveis de planeamento consultam horários de serviço por chat, apresentam pedidos de troca de turno ou esclarecem conflitos de qualificações dentro da equipa. Um sistema de competências e regras definido garante que o Klacksy só faz sugestões compatíveis com as qualificações reais e as regras de suplementos aplicáveis aos envolvidos.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Assistente de chat Klacksy na interface do Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Experimente o Klacks para hospitais do SNS português",
+    "text": "Descubra no Playground como o Klacks calcula automaticamente os suplementos escalonados do SNS &mdash; ou opere o Klacks on-premise para soberania total dos dados."
+  }
+}

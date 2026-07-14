@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks pour la Belgique | Planification des services conforme à la CP 330 pour les soins et la sécurité",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Pour les établissements de soins et les services de sécurité en Belgique",
+    "titleHtml": "La CP 330 maîtrisée &mdash; <span class=\"text-secondary\">référence de 38 heures, maximum journalier de 11h, maximum hebdomadaire de 50h.</span>",
+    "subtitle": "La Commission Paritaire 330 (Établissements et services de santé) régit dans le détail le temps de travail du plus grand secteur non marchand de Belgique : référence de 38 heures par semaine, maximum de 11 heures par jour, maximum de 50 heures par semaine, compensés sur une période pouvant aller jusqu'à 6 mois. Le travail de nuit entre 20h et 6h reste encadré, dans les secteurs des soins et de la sécurité, par des conventions sectorielles propres, stables depuis des années.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien dans les soins et la sécurité en Belgique",
+    "title": "L'interaction entre la CP 330 et les conventions sectorielles sur le travail de nuit",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Référence de 38h, limites de 11h/50h", "text": "La CP 330 fixe la durée de travail de référence à 38 heures par semaine, avec un maximum journalier de 11 heures et un maximum hebdomadaire de 50 heures &mdash; compensés sur une période pouvant aller jusqu'à 6 mois." },
+      { "icon": "schedule", "title": "Travail de nuit réglé au niveau sectoriel", "text": "Le travail de nuit entre 20h et 6h reste régi, dans les secteurs des soins et de la sécurité, par des conventions sectorielles propres, indépendamment de l'assouplissement de l'interdiction générale du travail de nuit prévu pour d'autres secteurs à partir de juin 2026." },
+      { "icon": "groups", "title": "Pénurie de personnel dans les maisons de repos et de soins", "text": "Les maisons de repos et de soins (MRS) et les hôpitaux, particulièrement en Flandre, sont confrontés à une pénurie aiguë de personnel &mdash; une répartition équitable des services de nuit et de week-end peu appréciés devient un enjeu de management." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Souveraineté des données",
+    "title": "Souveraineté totale des données : open source &amp; on-premise",
+    "text": "Klacks a été conçu pour des secteurs soumis à des exigences strictes de sécurité et de conformité, où les données sensibles du personnel ne doivent pas quitter votre propre infrastructure. En tant que solution open source, Klacks peut être exploité directement dans votre propre centre de données ou sur des serveurs locaux sécurisés &mdash; sans dépendance à des fournisseurs cloud américains. Cela facilite le respect du RGPD et des exigences de l'APD (Autorité de protection des données), l'autorité belge de protection des données, en toute autonomie.",
+    "bullets": [
+      "Souveraineté on-premise : contrôle total sur les plannings de service, les justificatifs de temps de travail et les journaux, au sein de votre propre environnement informatique.",
+      "Architecture LLM libre : les suggestions de planification assistées par IA peuvent aussi fonctionner avec des modèles de langage hébergés localement, sans que les données ne soient transmises à des API externes.",
+      "Code source auditable : base de code entièrement consultable pour les audits informatiques et les partenaires sociaux."
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks concilie la CP 330 et les conventions sur le travail de nuit",
+    "subtitle": "Référence de 38h, limites journalières/hebdomadaires et travail de nuit sectoriel réunis dans un seul planning.",
+    "items": [
+      { "icon": "bolt", "title": "Moteur de récupération en cas d'absence", "text": "Si un professionnel qualifié est absent, Klacks trouve immédiatement un remplaçant qualifié &mdash; sans qu'il en résulte une violation imprévue d'une limite de la CP 330." },
+      { "icon": "fact_check", "title": "Suivi des limites de la CP 330", "text": "Klacks suit en continu la référence de 38h ainsi que les limites de 11h/50h sur toute la période de compensation." },
+      { "icon": "calendar_month", "title": "Assistant de remplissage automatique pour des rotations de nuit équitables", "text": "L'assistant de remplissage automatique, basé sur un algorithme génétique, répartit les services de nuit et de week-end de manière équilibrée et dans le respect des conventions sectorielles." },
+      { "icon": "groups", "title": "Planification des affectations selon les qualifications", "text": "Seuls les collaborateurs disposant de la qualification requise sont proposés pour un service." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Assistant IA",
+    "title": "Klacksy : l'assistant intégré pour votre équipe",
+    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange de service ou clarifient des conflits de qualification au sein de l'équipe. Un système de compétences et de règles intégré garantit que Klacksy ne fait que des suggestions conformes aux qualifications réelles et aux exigences de la CP 330 des personnes concernées.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Tester Klacks pour les services belges de soins et de sécurité",
+    "text": "Découvrez dans le Playground comment Klacks respecte automatiquement la CP 330 &mdash; ou exploitez Klacks en on-premise pour une souveraineté totale des données."
+  }
+}

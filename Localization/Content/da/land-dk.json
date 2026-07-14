@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks til Danmark | 11-timers reglen overholdes automatisk",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Til hospitaler og plejeinstitutioner i Danmark",
+    "titleHtml": "11 timers frihed pr. 24 timer &mdash; <span class=\"text-secondary\">planlagt pålideligt, ikke overladt til tilfældighederne.</span>",
+    "subtitle": "11-timers reglen i den danske Arbejdstidslov foreskriver mindst 11 sammenhængende timers frihed inden for 24 timer, med snævre undtagelser i visse erhverv og øjeblikkelig kompensation. Siden den store sygeplejerskestrejke i 2021 har personalemanglen på danske hospitaler været kronisk &mdash; pålidelig, regelkonform planlægning bliver en konkurrencefordel i kampen om det knappe personale.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks vagtplan-gitter",
+    "screenshotLabel": "Vagtplan"
+  },
+  "challenges": {
+    "eyebrow": "Hverdagen på danske hospitaler",
+    "title": "11-timers reglen og akut mangel på fagpersonale",
+    "items": [
+      { "icon": "hourglass_top", "title": "11-timers reglen", "text": "Mindst 11 sammenhængende timers frihed inden for 24 timer &mdash; med en undtagelsesregel på 8 timer i visse erhverv med øjeblikkelig kompensation." },
+      { "icon": "groups", "title": "Eftervirkninger af sygeplejerskestrejken i 2021", "text": "Efter Sygeplejerskestrejken i 2021 stod op til 63% af de opslåede sygeplejerskestillinger i Region Hovedstaden tidvis ubesatte, og omkring 200 senge måtte lukkes &mdash; personalemanglen mærkes fortsat den dag i dag." },
+      { "icon": "gavel", "title": "Overenskomstsuverænitet frem for stiv lovgivning", "text": "Mange detaljer om arbejdstiden fastlægges ikke ved lov, men forhandles gennem overenskomster med fagforeninger som FOA eller DSR &mdash; et vagtplanlægningssystem skal derfor understøtte i høj grad tilpasbare regler." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datasuverænitet",
+    "title": "Fuld datasuverænitet: Open source &amp; on-premise",
+    "text": "Klacks er udviklet til brancher med strenge sikkerheds- og compliance-krav, hvor følsomme medarbejderdata ikke må forlade egen infrastruktur. Som open source-løsning kan Klacks drives direkte i jeres eget datacenter eller på sikrede lokale servere &mdash; uden afhængighed af amerikanske cloud-udbydere. Det gør det lettere selv at overholde GDPR og kravene fra den danske Datatilsynet.",
+    "bullets": [
+      "On-premise-suverænitet: fuld kontrol over vagtplaner, hviletidsdokumentation og logs inden for eget IT-miljø.",
+      "Fri LLM-arkitektur: AI-understøttede planlægningsforslag kan også køres med lokalt hostede sprogmodeller, uden at data sendes til eksterne API'er.",
+      "Auditerbar kildekode: fuldt gennemsigtig kodebase til IT-audits og fagforeninger."
+    ]
+  },
+  "solutions": {
+    "title": "Sådan overholder Klacks 11-timers reglen pålideligt",
+    "subtitle": "Regelbaserede overenskomster afbildet, ikke stift dikteret.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-motor til frafald", "text": "Falder en medarbejder fra, finder Klacks straks en kvalificeret erstatning &mdash; uden at det utilsigtet fører til en overtrædelse af 11-timers reglen." },
+      { "icon": "fact_check", "title": "Hviletids-sporing", "text": "Klacks holder løbende styr på de 11 timers frihed samt overenskomstmæssige undtagelser &mdash; synligt for planlæggere og tillidsrepræsentanter." },
+      { "icon": "calendar_month", "title": "Autofill-guide ved personalemangel", "text": "Den GA-baserede autofill-assistent finder regelkonforme rotationer, selv når personaledækningen er stram, i stedet for at huller skal lukkes manuelt." },
+      { "icon": "groups", "title": "Kvalifikationspræcis vagtplanlægning", "text": "Kun medarbejdere med den rette kvalifikation foreslås til en vagt." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI-assistent",
+    "title": "Klacksy: Den integrerede assistent til jeres team",
+    "text": "Klacksy er ikke en påklistret marketing-chatbot, men er indlejret direkte i Klacks-brugerfladen. Medarbejdere og planlæggere kan via chat spørge om vagttider, sende anmodninger om vagtbytte eller afklare kvalifikationskonflikter i teamet. Et bagvedliggende skill- og regelsystem sikrer, at Klacksy kun kommer med forslag, der passer til de involveredes faktiske kvalifikationer og hviletidskrav.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chat-assistent i Klacks-brugerfladen"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Afprøv Klacks til danske hospitaler",
+    "text": "Oplev i playgrounden, hvordan Klacks automatisk overholder 11-timers reglen &mdash; eller kør Klacks on-premise for fuld datasuverænitet."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks pour la France | Planification des services avec repos de 12 heures à l'hôpital",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Pour les hôpitaux et établissements de soins en France",
+    "titleHtml": "12 heures de repos dans la Fonction Publique Hospitalière &mdash; <span class=\"text-secondary\">respectées automatiquement, sans calcul manuel.</span>",
+    "subtitle": "Le Décret n° 2002-9 limite les services continus à 9 heures de jour et 10 heures de nuit ; la Fonction Publique Hospitalière impose en outre un repos quotidien de 12 heures consécutives &mdash; au-delà du minimum européen de 11 heures. Une nouvelle instruction de décembre 2025 limite de surcroît la durée continue de travail de certains services spécialisés à 24 heures.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien dans les hôpitaux français",
+    "title": "Deux régimes de repos à ne pas confondre",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Limite de 9h/10h pour le travail continu", "text": "Le Décret n° 2002-9 limite la durée quotidienne de travail du personnel en travail continu à 9 heures de jour et 10 heures de nuit &mdash; les dérogations ne sont admises que dans des limites étroites." },
+      { "icon": "schedule", "title": "12 heures de repos au lieu de 11", "text": "Dans la Fonction Publique Hospitalière, un repos quotidien minimal de 12 heures consécutives s'applique, ainsi que 36 heures de repos hebdomadaire &mdash; plus strict que le minimum européen de 11 heures." },
+      { "icon": "gavel", "title": "Nouvelle limite de 24h réservée aux services spécialisés", "text": "Depuis une instruction du 30 décembre 2025, certains services spécialisés (anesthésie, urgences, néonatologie, obstétrique) sont soumis à un plafond de 24 heures de service continu &mdash; tous les autres services restent soumis au repos standard de 11 heures. Confondre ces deux régimes conduit à une planification erronée." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Souveraineté des données",
+    "title": "Souveraineté totale des données : open source &amp; on-premise",
+    "text": "Klacks a été conçu pour des secteurs soumis à des exigences strictes de sécurité et de conformité, où les données sensibles des collaborateurs ne doivent pas quitter votre propre infrastructure. En tant que solution open source, Klacks peut être exploité directement dans votre propre centre de données ou sur des serveurs locaux sécurisés &mdash; sans dépendance à des fournisseurs cloud américains. Cela facilite le respect du RGPD et des exigences de la CNIL, l'autorité française de protection des données, en toute autonomie.",
+    "bullets": [
+      "Souveraineté on-premise : contrôle total sur les plannings de service, les justificatifs de temps de repos et les journaux, au sein de votre propre environnement informatique.",
+      "Architecture LLM libre : les suggestions de planification assistées par IA peuvent aussi fonctionner avec des modèles de langage hébergés localement, sans que les données ne soient transmises à des API externes.",
+      "Code source auditable : base de code entièrement consultable pour les audits informatiques et les représentants du personnel."
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks distingue les deux régimes de repos",
+    "subtitle": "Le travail continu 9h/10h et l'exception de 24h sont gérés séparément, sans être mélangés.",
+    "items": [
+      { "icon": "bolt", "title": "Moteur de récupération en cas d'absence", "text": "Si un professionnel est absent, Klacks trouve immédiatement un remplaçant qualifié &mdash; sans qu'il en résulte une violation imprévue du temps de repos." },
+      { "icon": "fact_check", "title": "Suivi du temps de repos selon le type de service", "text": "Klacks distingue les services standard (repos de 11h) des services spécialisés autorisés à 24h &mdash; chaque exception reste documentée de façon traçable." },
+      { "icon": "calendar_month", "title": "Assistant de remplissage automatique pour les rotations en travail continu", "text": "L'assistant de remplissage automatique, basé sur un algorithme génétique, planifie automatiquement les services continus en respectant la limite de 9h/10h et le repos de 12h." },
+      { "icon": "groups", "title": "Planification des affectations selon les qualifications", "text": "Seuls les collaborateurs disposant de la qualification requise sont proposés pour un service &mdash; un point essentiel pour les services spécialisés autorisés à la règle des 24h." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Assistant IA",
+    "title": "Klacksy : l'assistant intégré pour votre équipe",
+    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange de service ou clarifient des conflits de qualification au sein de l'équipe. Un système de compétences et de règles intégré garantit que Klacksy ne fait que des suggestions conformes aux qualifications réelles et aux exigences de temps de repos des personnes concernées.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Tester Klacks pour les hôpitaux français",
+    "text": "Découvrez dans le Playground comment Klacks respecte automatiquement la limite de 9h/10h et le repos de 12 heures &mdash; ou exploitez Klacks en on-premise pour une souveraineté totale des données."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks Suomelle | 0,65-hoitajamitoitus aukottomasti todistettuna",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Ympärivuorokautiseen vanhustenhoitoon Suomessa",
+    "titleHtml": "0,65 hoitajaa asiakasta kohti &mdash; <span class=\"text-secondary\">jatkuvasti todistettavissa, ei vain paperilla.</span>",
+    "subtitle": "Ympärivuorokautisessa vanhustenhoidon tehostetussa palveluasumisessa laissa säädetty vähimmäismitoitus on 0,65 pätevää työntekijää asiakasta kohti. Alun perin suunniteltu korotus 0,7:ään siirrettiin akuutin henkilöstöpulan vuoksi 1.1.2028 alkaen. Klacks todistaa mitoituksen vuorotasolla, sen sijaan että se rekonstruoitaisiin vasta kuukauden lopussa.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks-työvuorotaulukko",
+    "screenshotLabel": "Työvuorosuunnittelu"
+  },
+  "challenges": {
+    "eyebrow": "Arki suomalaisissa hoivayksiköissä",
+    "title": "0,65-mitoitus koskee jokaista vuoroa, ei kuukausikeskiarvoa",
+    "items": [
+      { "icon": "fact_check", "title": "0,65 hoitajaa asiakasta kohti", "text": "Ympärivuorokautisen vanhustenhoidon lakisääteinen vähimmäismitoitus edellyttää jatkuvasti 0,65 pätevää työntekijää asiakasta kohti &mdash; alitus yksittäisessä vuorossa on vaatimustenvastaisuus, vaikka kuukausikeskiarvo täyttyisikin." },
+      { "icon": "hourglass_top", "title": "Korotus 0,7:ään siirretty vuoteen 2028", "text": "Alun perin suunniteltu mitoituksen korotus 0,7:ään siirrettiin virallisesti 1.1.2028 alkaen akuutin ammattitaitoisen henkilöstön puutteen vuoksi &mdash; yksiköiden on silti noudatettava nykyistä 0,65-rajaa aukottomasti siihen asti." },
+      { "icon": "groups", "title": "Yksi Pohjois-Euroopan pahimmista hoitajapulista", "text": "Suomi kamppailee yhden Pohjois-Euroopan dramaattisimman vanhustenhoidon henkilöstöpulan kanssa &mdash; yksiköt yhdistävät yhä useammin työvuorosuunnitteluohjelmiston anturiteknologiaan pitääkseen mitoituksen silti hallinnassa." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Tietosuvereniteetti",
+    "title": "Täysi tietosuvereniteetti: avoin lähdekoodi &amp; on-premise",
+    "text": "Klacks on kehitetty toimialoille, joilla on tiukat tietoturva- ja vaatimustenmukaisuusvaatimukset ja joilla arkaluonteisten henkilöstötietojen ei tule poistua omasta infrastruktuurista. Avoimen lähdekoodin ratkaisuna Klacksin voi ajaa suoraan omassa konesalissa tai suojatuilla paikallisilla palvelimilla &mdash; ilman riippuvuutta yhdysvaltalaisista pilvipalveluntarjoajista. Tämä helpottaa GDPR:n ja Suomen tietosuojavaltuutetun toimiston vaatimusten noudattamista omassa hallinnassa.",
+    "bullets": [
+      "On-premise-suvereniteetti: täysi hallinta työvuorosuunnitelmista, mitoitustodisteista ja lokeista omassa IT-ympäristössä.",
+      "Vapaa LLM-arkkitehtuuri: tekoälyavusteiset suunnitteluehdotukset voidaan ajaa myös paikallisesti isännöidyillä kielimalleilla ilman, että tietoja siirtyy ulkoisiin rajapintoihin.",
+      "Auditoitavissa oleva lähdekoodi: täysin tarkasteltavissa oleva koodikanta IT-auditointeja ja valvontaviranomaisia varten."
+    ]
+  },
+  "solutions": {
+    "title": "Näin Klacks todistaa 0,65-mitoituksen vuorotasolla",
+    "subtitle": "Tarkistettu jokaiselle vuorolle, ei vasta kuukausikeskiarvosta havaittu.",
+    "items": [
+      { "icon": "bolt", "title": "Palautumismoottori poissaoloille", "text": "Jos ammattilainen jää pois, Klacks löytää heti pätevän korvaajan &mdash; ennen kuin 0,65-mitoitus alittuu vuorossa." },
+      { "icon": "fact_check", "title": "Mitoitusseuranta jokaiselle vuorolle", "text": "Klacks tarkistaa 0,65-mitoituksen jokaiselle yksittäiselle vuorolle, ei vain kuukausikeskiarvona &mdash; saatavilla sisäisiä tarkastuksia ja valvontaviranomaisia varten." },
+      { "icon": "calendar_month", "title": "Automaattitäyttö-ohjattu toiminto mitoitustarkistuksella", "text": "Geneettiseen algoritmiin perustuva automaattitäyttöavustaja ehdottaa vain kiertoja, jotka täyttävät hoitomitoituksen jokaisessa vuorossa." },
+      { "icon": "groups", "title": "Pätevyystarkka työvuorosuunnittelu", "text": "Vain sopivan pätevyyden omaavat työntekijät lasketaan mitoitukseen &mdash; Klacks erottaa automaattisesti pätevän ja avustavan henkilöstön toisistaan." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Tekoälyavustaja",
+    "title": "Klacksy: tiimillenne integroitu avustaja",
+    "text": "Klacksy ei ole päälle liimattu markkinointichatbotti, vaan suoraan Klacks-käyttöliittymään upotettu. Työntekijät ja suunnittelijat kysyvät chatin kautta työaikoja, tekevät vuoronvaihtopyyntöjä tai selvittävät pätevyysristiriitoja tiimissä. Taustalla oleva taito- ja sääntöjärjestelmä varmistaa, että Klacksy tekee vain ehdotuksia, jotka vastaavat osapuolten todellisia pätevyyksiä ja hoitomitoitusta.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy-chatavustaja Klacks-käyttöliittymässä"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Kokeile Klacksia suomalaisissa hoivayksiköissä",
+    "text": "Kokeile Playgroundissa, miten Klacks todistaa 0,65-hoitajamitoituksen vuorotasolla &mdash; tai käytä Klacksia on-premise-ratkaisuna täyttä tietosuvereniteettia varten."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks voor België | PC 330-conforme dienstplanning voor zorg en beveiliging",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Voor zorginstellingen en beveiligingsdiensten in België",
+    "titleHtml": "PC 330 onder controle &mdash; <span class=\"text-secondary\">38-uren referentie, 11u-dagmaximum, 50u-weekmaximum.</span>",
+    "subtitle": "Het Paritair Comité 330 (Gezondheidsinrichtingen en -diensten) regelt voor de grootste non-profitsector van België de arbeidstijd tot in detail: 38 uur referentie per week, maximaal 11 uur per dag, maximaal 50 uur per week, uitgemiddeld over een periode van maximaal 6 maanden. Nachtarbeid tussen 20 en 6 uur blijft in de zorg- en beveiligingssector geregeld via eigen, al jaren stabiele sectorale akkoorden.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks dienstroosterraster",
+    "screenshotLabel": "Dienstrooster"
+  },
+  "challenges": {
+    "eyebrow": "De dagelijkse praktijk in de Belgische zorg en beveiliging",
+    "title": "PC 330 en sectorale nachtarbeidsakkoorden in samenspel",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "38u-referentie, 11u/50u-grenzen", "text": "Het PC 330 stelt de referentiearbeidstijd vast op 38 uur per week, met een dagmaximum van 11 en een weekmaximum van 50 uur &mdash; uitgemiddeld over een periode van maximaal 6 maanden." },
+      { "icon": "schedule", "title": "Nachtarbeid sectoraal geregeld", "text": "Nachtarbeid tussen 20 en 6 uur blijft in de zorg- en beveiligingssector geregeld via eigen sectorale akkoorden, los van de versoepeling van het algemene nachtarbeidsverbod voor andere sectoren vanaf juni 2026." },
+      { "icon": "groups", "title": "Personeelstekort in woonzorgcentra", "text": "Woonzorgcentra en ziekenhuizen, vooral in Vlaanderen, kampen met een acuut personeelstekort &mdash; een eerlijke verdeling van minder populaire nacht- en weekendshiften wordt een leidinggevende taak." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datasoevereiniteit",
+    "title": "Volledige datasoevereiniteit: open source &amp; on-premise",
+    "text": "Klacks is ontwikkeld voor sectoren met strenge veiligheids- en compliance-eisen, waarin gevoelige medewerkersgegevens de eigen infrastructuur niet mogen verlaten. Als opensourceoplossing kan Klacks rechtstreeks in uw eigen datacenter of op beveiligde lokale servers worden gehost &mdash; zonder afhankelijkheid van Amerikaanse cloudaanbieders. Dat vergemakkelijkt het in eigen regie naleven van de AVG en de richtlijnen van de Belgische Gegevensbeschermingsautoriteit (APD/GBA).",
+    "bullets": [
+      "On-premise soevereiniteit: volledige controle over dienstroosters, arbeidstijdregistraties en logboeken binnen de eigen IT-omgeving.",
+      "Vrije LLM-architectuur: AI-ondersteunde planningsvoorstellen kunnen ook met lokaal gehoste taalmodellen worden gebruikt, zonder dat gegevens naar externe API's stromen.",
+      "Auditeerbare broncode: volledig inzichtelijke codebasis voor IT-audits en sociale partners."
+    ]
+  },
+  "solutions": {
+    "title": "Hoe Klacks PC 330 en nachtarbeidsakkoorden samenbrengt",
+    "subtitle": "38u-referentie, dag-/weekgrenzen en sectorale nachtarbeid in één plan.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery-engine voor uitval", "text": "Valt een medewerker uit, dan vindt Klacks direct een gekwalificeerde vervanger &mdash; zonder dat daardoor ongepland een PC-330-grens wordt overschreden." },
+      { "icon": "fact_check", "title": "PC-330-grenzentracking", "text": "Klacks houdt de 38u-referentie en de 11u/50u-grenzen over de volledige referteperiode continu bij." },
+      { "icon": "calendar_month", "title": "Autofill-wizard voor eerlijke nachtrotaties", "text": "De GA-gestuurde autofill-assistent verdeelt nacht- en weekendshiften evenwichtig en met inachtneming van de sectorale akkoorden." },
+      { "icon": "groups", "title": "Kwalificatiegerichte inzetplanning", "text": "Alleen medewerkers met de juiste kwalificatie worden voor een shift voorgesteld." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI-assistent",
+    "title": "Klacksy: de geïntegreerde assistent voor uw team",
+    "text": "Klacksy is geen opgetuigde marketingchatbot, maar rechtstreeks ingebed in de Klacks-interface. Medewerkers en planners vragen via de chat diensttijden op, dienen shiftruilverzoeken in of lossen kwalificatieconflicten in het team op. Een vastgelegd skills- en regelsysteem zorgt ervoor dat Klacksy alleen voorstellen doet die passen bij de daadwerkelijke kwalificaties en PC-330-vereisten van de betrokkenen.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chatassistent in de Klacks-interface"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Test Klacks voor Belgische zorg- en beveiligingsdiensten",
+    "text": "Ervaar in de playground hoe Klacks PC 330 automatisch naleeft &mdash; of host Klacks on-premise voor volledige datasoevereiniteit."
+  }
+}

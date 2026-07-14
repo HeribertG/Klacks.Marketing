@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks para España | 12 horas de descanso diario en lugar del mínimo de la UE",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Para hospitales y la Atención Primaria en España",
+    "titleHtml": "12 horas de descanso en lugar de 11 &mdash; <span class=\"text-secondary\">y el descanso semanal se debe por separado.</span>",
+    "subtitle": "El artículo 34.3 del Estatuto de los Trabajadores exige un mínimo de 12 horas consecutivas de descanso diario &mdash; un umbral más estricto que el mínimo de 11 horas de la UE. El Tribunal Supremo aclaró en 2026 que estas 12 horas no pueden fusionarse con el descanso semanal de 36 horas: juntas suman 48 horas. Los incumplimientos se consideran infracción grave, con multas de hasta 7.500 euros por trabajador.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Cuadrante de turnos de Klacks",
+    "screenshotLabel": "Cuadrante"
+  },
+  "challenges": {
+    "eyebrow": "El día a día en las clínicas españolas",
+    "title": "El descanso diario de 12h y el descanso semanal de 36h no pueden fusionarse",
+    "items": [
+      { "icon": "hourglass_top", "title": "12 horas de descanso diario", "text": "El art. 34.3 ET exige un mínimo de 12 horas consecutivas de descanso entre dos jornadas laborales &mdash; un umbral superior al estándar de la UE de 11 horas." },
+      { "icon": "gavel", "title": "El descanso semanal de 36h se debe por separado", "text": "El Tribunal Supremo confirmó, en su sentencia de 12 de marzo de 2026, que el descanso semanal de 36 horas se aplica de forma acumulativa al descanso diario de 12 horas &mdash; juntos suman 48 horas, sin posibilidad de compensación entre ambos." },
+      { "icon": "groups", "title": "Cuadrantes sin errores, bajo observación", "text": "En la Atención Primaria, las huelgas persistentes y la frustración del personal hacen que las infracciones de la regla de las 12 horas sean denunciadas de inmediato por los trabajadores y los sindicatos." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Soberanía de datos",
+    "title": "Soberanía total de los datos: código abierto &amp; on-premise",
+    "text": "Klacks fue desarrollado para sectores con estrictos requisitos de seguridad y cumplimiento normativo, en los que los datos sensibles del personal no deben salir de la propia infraestructura. Como solución de código abierto, Klacks puede ejecutarse directamente en su propio centro de datos o en servidores locales seguros &mdash; sin depender de proveedores de nube estadounidenses. Esto facilita el cumplimiento del RGPD y de las exigencias de la Agencia Española de Protección de Datos (AEPD) bajo su propio control.",
+    "bullets": [
+      "Soberanía on-premise: control total sobre los cuadrantes de turnos, los registros de descanso y los protocolos dentro de su propio entorno de TI.",
+      "Arquitectura de LLM libre: las propuestas de planificación asistidas por IA también pueden ejecutarse con modelos de lenguaje alojados localmente, sin que los datos salgan hacia APIs externas.",
+      "Código fuente auditable: base de código totalmente accesible para auditorías de TI y comités de empresa."
+    ]
+  },
+  "solutions": {
+    "title": "Cómo Klacks cumple por separado el descanso diario de 12h y el descanso semanal de 36h",
+    "subtitle": "Ambos regímenes de descanso se gestionan simultáneamente, sin compensarse nunca entre sí.",
+    "items": [
+      { "icon": "bolt", "title": "Motor de recuperación para bajas imprevistas", "text": "Si un profesional falta, Klacks encuentra de inmediato un sustituto cualificado &mdash; sin que ello genere, de forma no planificada, una infracción de la regla de las 12h o de las 36h." },
+      { "icon": "fact_check", "title": "Seguimiento del descanso conforme al art. 34.3 ET", "text": "Klacks registra de forma separada y continua el descanso diario de 12 horas y el descanso semanal de 36 horas &mdash; disponible ante consultas del personal o de los sindicatos." },
+      { "icon": "calendar_month", "title": "Asistente de autocompletado para cuadrantes sin errores", "text": "El asistente de autocompletado basado en algoritmos genéticos planifica automáticamente los turnos respetando ambos regímenes de descanso." },
+      { "icon": "groups", "title": "Planificación de turnos según cualificación", "text": "Solo se proponen para un turno los trabajadores con la cualificación adecuada." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Asistente de IA",
+    "title": "Klacksy: el asistente integrado para su equipo",
+    "text": "Klacksy no es un chatbot de marketing añadido, sino que está integrado directamente en la interfaz de Klacks. El personal y los planificadores consultan por chat sus horarios, solicitan intercambios de turno o resuelven conflictos de cualificación en el equipo. Un sistema subyacente de habilidades y reglas garantiza que Klacksy solo haga propuestas acordes con las cualificaciones reales y las normas de descanso de las personas implicadas.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Asistente de chat Klacksy en la interfaz de Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Pruebe Klacks para clínicas españolas",
+    "text": "Descubra en el Playground cómo Klacks cumple automáticamente el descanso diario de 12h y el descanso semanal de 36h &mdash; o utilice Klacks on-premise para una soberanía total de los datos."
+  }
+}
