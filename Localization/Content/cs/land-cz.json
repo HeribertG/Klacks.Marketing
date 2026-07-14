@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks pro Česko | Rozpisy směn pro 416hodinový limit přesčasů ve zdravotnictví",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "Pro nemocnice a pečovatelská zařízení v Česku",
+    "titleHtml": "416 hodin přesčasů ročně &mdash; <span class=\"text-secondary\">a přesto bezezbytku zdokumentováno.</span>",
+    "subtitle": "Od reformy 2023/24 platí v zákoníku práce znovu striktní limit 416 hodin přesčasů ročně ve zdravotnictví, k tomu komplexní pravidla pro 24hodinové služby včetně zákonné náhradní doby odpočinku. Klacks tyto limity plánuje od začátku, místo aby je dopočítával až na konci roku.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Mřížka rozpisu směn Klacks",
+    "screenshotLabel": "Rozpis směn"
+  },
+  "challenges": {
+    "eyebrow": "Každodenní provoz v českých nemocnicích",
+    "title": "Po protestech lékařů 2023/24: přísnější limity, komplexnější kompenzační pravidla",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "416hodinový limit přesčasů ročně", "text": "150 hodin nařízených plus 266 hodin dohodnutých přesčasů &mdash; kdo tento limit překročí, riskuje pokuty i konflikty s odborovou organizací nebo radou zaměstnanců." },
+      { "icon": "schedule", "title": "24hodinové služby s povinnou náhradní dobou odpočinku", "text": "Od roku 2024 platí: 12 hodin plánované směny plus až 12 hodin přesčasů v 26hodinovém okně, poté zhruba 22 hodin zákonné náhradní doby odpočinku &mdash; ručně už téměř nezvládnutelné bez chyb." },
+      { "icon": "groups", "title": "Napjatá důvěra po protestech", "text": "Po protestech lékařů proti přílišné zátěži přesčasy se správné, prokazatelné dodržování limitů stalo otázkou důvěry na pracovišti." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Suverenita nad daty",
+    "title": "Plná suverenita nad daty: open source &amp; on-premise",
+    "text": "Klacks byl vyvinut pro obory s přísnými bezpečnostními a compliance požadavky, kde citlivá data zaměstnanců nesmí opustit vlastní infrastrukturu. Jako open source řešení lze Klacks provozovat přímo ve vlastním datovém centru nebo na zabezpečených lokálních serverech &mdash; bez závislosti na cloudových poskytovatelích z USA. To usnadňuje dodržování GDPR a požadavků Úřadu pro ochranu osobních údajů (ÚOOÚ) ve vlastní režii.",
+    "bullets": [
+      "On-premise suverenita: plná kontrola nad rozpisy směn, doklady o přesčasech a protokoly v rámci vlastního IT prostředí.",
+      "Otevřená architektura LLM: AI podporované návrhy plánování lze provozovat i s lokálně hostovanými jazykovými modely, aniž by data odcházela k externím API.",
+      "Auditovatelný zdrojový kód: plně přístupná kódová základna pro IT audity a radu zaměstnanců."
+    ]
+  },
+  "solutions": {
+    "title": "Jak Klacks hlídá 416hodinový limit přesčasů",
+    "subtitle": "Přesčasy a náhradní doba odpočinku se sledují průběžně, nikoli až na konci roku.",
+    "items": [
+      { "icon": "bolt", "title": "Recovery engine pro výpadky", "text": "Když vypadne odborný pracovník, Klacks okamžitě najde kvalifikovanou náhradu &mdash; aniž by tím vznikaly neplánované další přesčasy." },
+      { "icon": "fact_check", "title": "Sledování přesčasů a náhradní doby odpočinku", "text": "Klacks průběžně sleduje 416hodinový limit i 22hodinovou náhradní dobu odpočinku po 24hodinových službách &mdash; viditelně pro plánovače i radu zaměstnanců." },
+      { "icon": "file_export", "title": "Export mezd kompatibilní s Pohodou", "text": "Hotové hodiny, přesčasy a příplatky lze připravit přímo pro import do v Česku rozšířeného systému Pohoda." },
+      { "icon": "calendar_month", "title": "Průvodce automatickým vyplněním pro 24hodinové rotace", "text": "Asistent automatického vyplnění založený na genetickém algoritmu plánuje 24hodinové služby s dodržením uložených pravidel náhradní doby odpočinku." },
+      { "icon": "groups", "title": "Plánování nasazení podle kvalifikace", "text": "Na směnu jsou navrhováni pouze zaměstnanci s odpovídající kvalifikací." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI asistent",
+    "title": "Klacksy: integrovaný asistent pro váš tým",
+    "text": "Klacksy není nasazený marketingový chatbot, ale je přímo zabudovaný do rozhraní Klacks. Zaměstnanci i plánovači se přes chat ptají na časy směn, podávají žádosti o výměnu směny nebo v týmu řeší konflikty kvalifikací. Uložený systém dovedností a pravidel zajišťuje, že Klacksy navrhuje pouze řešení, která odpovídají skutečným kvalifikacím a limitům přesčasů zúčastněných osob.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Chatovací asistent Klacksy v rozhraní Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Vyzkoušejte Klacks pro české nemocnice",
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks hlídá 416hodinový limit přesčasů a náhradní dobu odpočinku &mdash; nebo provozujte Klacks on-premise pro plnou suverenitu nad daty."
+  }
+}

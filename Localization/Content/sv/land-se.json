@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks för Sverige | Schemaläggning med korrekt dokumentation av dygnsvila",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "För äldreomsorg, funktionshinderomsorg och personlig assistans i Sverige",
+    "titleHtml": "Undantag från dygnsvilan dokumenterade från början &mdash; <span class=\"text-secondary\">inte rekonstruerade i efterhand.</span>",
+    "subtitle": "Sedan det nya kollektivavtalet mellan Kommunal och Vårdföretagarna (september 2025) gäller precisa regler för vård och personlig assistans (bransch E/G) kring förkortad dygnsvila, 20&ndash;24-timmarspass och den efterföljande kompenserande vilan. Klacks planerar dessa undantag redan från början, i stället för att dokumentera dem i efterhand för hand.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemarutnät",
+    "screenshotLabel": "Schema"
+  },
+  "challenges": {
+    "eyebrow": "Vardagen inom svensk vård och personlig assistans",
+    "title": "Dygnsvila är ingen ny lag — men det nya kollektivavtalet gör undantag dokumentationspliktiga",
+    "items": [
+      { "icon": "schedule", "title": "9-timmarsundantag i stället för 11-timmarsregeln", "text": "Kollektivavtalet tillåter förkortad dygnsvila och 20&ndash;24-timmarspass i bransch E och G &mdash; men bara med heltäckande motivering och efterföljande kompenserande vila." },
+      { "icon": "fact_check", "title": "Uppföljning av kompenserande vila", "text": "Vid planerade undantag läggs underskottet i vilotid till nästa vilopass, vid oplanerade händelser måste kompensationen ske inom 14 dagar &mdash; för hand knappast längre möjligt att hålla ordning på." },
+      { "icon": "groups", "title": "Personalbrist inom äldreomsorg och funktionshinderomsorg", "text": "Med knapp bemanning måste de komplexa undantagsreglerna ändå följas &mdash; ett felplanerat dubbelpass blir snabbt ett compliance-problem." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datasuveränitet",
+    "title": "Full datasuveränitet: öppen källkod &amp; on-premise",
+    "text": "Klacks har utvecklats för branscher med stränga säkerhets- och regelkrav, där känsliga personaluppgifter inte ska lämna den egna infrastrukturen. Som en programvara med öppen källkod kan Klacks köras direkt i ert eget datacenter eller på skyddade lokala servrar &mdash; utan beroende av amerikanska molnleverantörer. Det underlättar efterlevnaden av GDPR och den svenska Dataskyddslagen i egen regi.",
+    "bullets": [
+      "On-premise-suveränitet: full kontroll över scheman, underlag för vilotid och loggar inom den egna IT-miljön.",
+      "Fri LLM-arkitektur: AI-baserade planeringsförslag kan även köras med lokalt hostade språkmodeller, utan att data skickas till externa API:er.",
+      "Granskningsbar källkod: en fullständigt genomsynlig kodbas för IT-granskningar och personalrepresentanter."
+    ]
+  },
+  "solutions": {
+    "title": "Så avbildar Klacks undantagen från dygnsvilan",
+    "subtitle": "Inte som en stel regel, utan som en spårbar planeringsprocess.",
+    "items": [
+      { "icon": "bolt", "title": "Återställningsmotor för bortfall", "text": "Om en yrkeskunnig medarbetare uteblir hittar Klacks omedelbart en kvalificerad ersättare &mdash; utan att det oplanerat uppstår ett dokumentationspliktigt undantag från dygnsvilan." },
+      { "icon": "fact_check", "title": "Undantags- och kompensationsuppföljning", "text": "Varje förkortad dygnsvila och varje kompenserande vila registreras synligt i schemat &mdash; tillgänglig om Kommunal eller Vårdföretagarna efterfrågar det." },
+      { "icon": "file_export", "title": "SIE- och PAxml-export", "text": "Färdiga timmar, tillägg och lönearter kan bearbetas direkt för den svenska SIE-standarden respektive PAxml-löneexporten." },
+      { "icon": "calendar_month", "title": "Automatisk ifyllningsguide för rotationer", "text": "Den genetiskt baserade ifyllningsassistenten planerar 24-timmarsrotationer med hänsyn till de lagrade vilotidsreglerna, i stället för att kontrollera dem i efterhand." },
+      { "icon": "groups", "title": "Kompetensexakt schemaläggning", "text": "Endast medarbetare med rätt kompetens föreslås för ett pass &mdash; viktigt vid specialiserad assistans för personer med funktionsnedsättning." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI-assistent",
+    "title": "Klacksy: den integrerade assistenten för ert team",
+    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Anställda och schemaläggare frågar via chatt om arbetstider, gör förfrågningar om skiftbyte eller klarar ut kompetenskonflikter i teamet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy endast ger förslag som stämmer överens med de berördas faktiska kompetenser och vilotidskrav.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chattassistent i Klacks användargränssnitt"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Testa Klacks för svensk vård- och assistansverksamhet",
+    "text": "Upplev i Playground hur Klacks planerar undantag från dygnsvilan på ett spårbart sätt &mdash; eller kör Klacks on-premise för full datasuveränitet."
+  }
+}

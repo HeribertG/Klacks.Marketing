@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks cho Việt Nam | Lịch làm việc cho ngành logistics và dịch vụ bảo vệ",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Dành cho doanh nghiệp logistics và dịch vụ bảo vệ tại Việt Nam",
+    "titleHtml": "150%, 200%, 300% &mdash; <span class=\"text-secondary\">cộng thêm phụ cấp làm đêm riêng biệt, được cộng dồn.</span>",
+    "subtitle": "Bộ luật Lao động 2019 giới hạn giờ làm thêm ở mức 40 giờ mỗi tháng và 200 giờ mỗi năm (trường hợp đặc biệt tối đa 300 giờ), với mức phụ cấp lũy tiến 150% (ngày thường), 200% (ngày nghỉ hằng tuần) và 300% (ngày lễ, tết). Làm việc ban đêm còn được cộng thêm phụ cấp riêng, cộng dồn vào các mức trên. Klacks tự động tính các tổ hợp này thay vì phải tính thủ công.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Lưới lịch làm việc Klacks",
+    "screenshotLabel": "Lịch làm việc"
+  },
+  "challenges": {
+    "eyebrow": "Thực tế hằng ngày trong ngành logistics và bảo vệ tại Việt Nam",
+    "title": "Các khoản phụ cấp cộng dồn thay vì thay thế lẫn nhau",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Giới hạn làm thêm giờ: 40 giờ/tháng, 200 giờ/năm", "text": "Chỉ có thể nâng lên tối đa 300 giờ/năm trong trường hợp đặc biệt &mdash; với hoạt động logistics 24/7, giới hạn này nhanh chóng bị chạm tới." },
+      { "icon": "payments", "title": "Các khoản phụ cấp cộng dồn với nhau", "text": "Phụ cấp làm đêm được cộng thêm vào các mức 150/200/300% cho ngày thường, ngày nghỉ và ngày lễ &mdash; gần như không thể tính thủ công mà không có sai sót." },
+      { "icon": "local_shipping", "title": "Đảm bảo trực 24/7 trong logistics và bảo vệ", "text": "Kho bãi và dịch vụ bảo vệ cần bố trí nhân sự liên tục, không gián đoạn, dù phải tuân thủ giới hạn nghiêm ngặt theo tháng và theo năm." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Chủ quyền dữ liệu",
+    "title": "Toàn quyền kiểm soát dữ liệu: Mã nguồn mở &amp; Triển khai tại chỗ",
+    "text": "Klacks được phát triển cho các ngành có yêu cầu bảo mật và tuân thủ nghiêm ngặt, nơi dữ liệu nhân viên nhạy cảm không được phép rời khỏi hạ tầng nội bộ. Là một giải pháp mã nguồn mở, Klacks có thể được triển khai trực tiếp tại trung tâm dữ liệu riêng của bạn hoặc trên máy chủ nội bộ được bảo mật &mdash; không phụ thuộc vào các nhà cung cấp dịch vụ đám mây của Mỹ. Điều này giúp việc tuân thủ Nghị định về bảo vệ dữ liệu cá nhân của Việt Nam (Nghị định 13/2023/NĐ-CP) trở nên chủ động và dễ dàng hơn.",
+    "bullets": [
+      "Chủ quyền tại chỗ: toàn quyền kiểm soát lịch làm việc, chứng từ làm thêm giờ và nhật ký hoạt động trong chính hệ thống CNTT của bạn.",
+      "Kiến trúc LLM linh hoạt: các đề xuất lập lịch dựa trên AI cũng có thể vận hành với mô hình ngôn ngữ được lưu trữ nội bộ, không để dữ liệu rò rỉ ra các API bên ngoài.",
+      "Mã nguồn có thể kiểm toán: toàn bộ codebase minh bạch, phục vụ kiểm toán CNTT và kiểm tra tuân thủ nội bộ."
+    ]
+  },
+  "solutions": {
+    "title": "Klacks tự động tính các khoản phụ cấp cộng dồn như thế nào",
+    "subtitle": "Kết hợp chính xác phụ cấp ngày thường, ngày nghỉ, ngày lễ và làm đêm.",
+    "items": [
+      { "icon": "bolt", "title": "Cơ chế tự động tìm người thay thế khi thiếu nhân sự", "text": "Khi một nhân viên vắng mặt đột xuất, Klacks lập tức tìm người thay thế đủ trình độ &mdash; mà không phát sinh giờ làm thêm ngoài kế hoạch." },
+      { "icon": "fact_check", "title": "Tính toán phụ cấp kết hợp", "text": "Klacks cộng chính xác phụ cấp làm đêm vào các mức 150/200/300%, đồng thời theo dõi liên tục giới hạn 40 giờ/tháng và 200 giờ/năm." },
+      { "icon": "file_export", "title": "Xuất CSV/Excel ngay từ hôm nay", "text": "Số giờ làm việc thực tế, giờ làm thêm và phụ cấp có thể xuất trực tiếp dưới dạng CSV/Excel; định dạng cho MISA AMIS đang được cân nhắc đưa vào lộ trình phát triển." },
+      { "icon": "calendar_month", "title": "Trình hướng dẫn tự động điền cho ca luân phiên", "text": "Trợ lý tự động điền dựa trên thuật toán di truyền (GA) lập lịch luân phiên 24/7 trong khi vẫn tuân thủ các giới hạn giờ làm thêm đã thiết lập." },
+      { "icon": "groups", "title": "Bố trí ca làm việc chính xác theo trình độ chuyên môn", "text": "Chỉ những nhân viên có trình độ chuyên môn phù hợp và chứng chỉ hành nghề bảo vệ còn hiệu lực mới được đề xuất cho một ca làm việc." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Trợ lý AI",
+    "title": "Klacksy: Trợ lý tích hợp cho đội ngũ của bạn",
+    "text": "Klacksy không phải là một chatbot tiếp thị gắn thêm, mà được tích hợp trực tiếp vào giao diện Klacks. Nhân viên và người lập lịch có thể tra cứu giờ làm việc qua trò chuyện, gửi yêu cầu đổi ca hoặc giải quyết xung đột về trình độ chuyên môn trong nhóm. Một hệ thống kỹ năng và quy tắc được thiết lập sẵn đảm bảo Klacksy chỉ đưa ra đề xuất phù hợp với trình độ chuyên môn thực tế và giới hạn giờ làm thêm của những người liên quan.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Trợ lý trò chuyện Klacksy trong giao diện Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Dùng thử Klacks cho doanh nghiệp logistics và dịch vụ bảo vệ tại Việt Nam",
+    "text": "Trải nghiệm trong Playground cách Klacks tự động tính các khoản phụ cấp cộng dồn &mdash; hoặc triển khai Klacks tại chỗ để có toàn quyền kiểm soát dữ liệu."
+  }
+}

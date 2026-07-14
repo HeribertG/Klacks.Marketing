@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks 中国版 | 物流与设施管理排班解决方案",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "面向中国物流与设施管理企业",
+    "titleHtml": "44小时工时、36小时加班上限、三档加班工资标准 &mdash; <span class=\"text-secondary\">尽在掌握。</span>",
+    "subtitle": "中国《劳动法》规定,每周工作时间不得超过44小时,每月加班时间不得超过36小时,并按工作日、休息日、法定节假日分别执行150%/200%/300%三档加班工资标准。当需要审批的例外制度(如综合计算工时工作制)介入时,情况会更加复杂。Klacks 将这些规则直接映射到系统中,而不必手工重新核算。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 排班表格视图",
+    "screenshotLabel": "排班表"
+  },
+  "challenges": {
+    "eyebrow": "中国物流与设施管理的日常挑战",
+    "title": "三档加班工资标准,一个月度加班上限",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "每月36小时加班上限", "text": "在每周44小时工时之外,加班时间每月不得超过36小时 &mdash; 在24/7运营模式下很快就会触及上限。" },
+      { "icon": "payments", "title": "150%/200%/300%三档加班工资", "text": "工作日加班、休息日值班与法定节假日工作分别按不同标准计酬 &mdash; 休息日值班还可以用调休来避免,法定节假日工作则不行。" },
+      { "icon": "gavel", "title": "需审批的例外工时制度", "text": "综合计算工时工作制允许在较长周期内对工时进行平均计算,但需要获得劳动行政部门审批,并要有规范的文档记录。" }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "数据主权",
+    "title": "完全掌控数据主权:开源 &amp; 本地部署",
+    "text": "Klacks 专为对安全与合规要求严格的行业而设计,在这些行业中,敏感的员工数据不应离开企业自身的基础设施。作为开源解决方案,Klacks 可以直接部署在您自己的数据中心或受保护的本地服务器上运行 &mdash; 无需依赖美国云服务商。这有助于您自主满足中国《个人信息保护法》(PIPL) 对数据本地化的要求。",
+    "bullets": [
+      "本地部署自主权:在自有IT环境中,对排班表、加班记录和日志拥有完全控制权。",
+      "开放的LLM架构:AI辅助排班建议也可以使用本地托管的语言模型运行,数据不会流向外部API。",
+      "可审计的源代码:完全公开可查的代码库,便于IT审计和内部合规检查。"
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何自动区分三档加班工资标准",
+    "subtitle": "从一开始就区分对待工作日、休息日与法定节假日。",
+    "items": [
+      { "icon": "bolt", "title": "缺勤应急调度引擎", "text": "一旦有员工缺勤,Klacks 会立即找到具备相应资质的替补人员 &mdash; 且不会因此产生计划外的额外加班。" },
+      { "icon": "fact_check", "title": "加班工资标准与上限追踪", "text": "Klacks 会自动区分工作日、休息日和法定节假日的加班时间,并持续追踪每月36小时的加班上限。" },
+      { "icon": "file_export", "title": "CSV/Excel导出功能现已提供", "text": "已核定的工时、加班时间与加班工资可直接导出为CSV/Excel格式;针对 Yonyou 或 Kingdee 的专用格式已列入我们的路线图候选项。" },
+      { "icon": "calendar_month", "title": "轮班自动排班向导", "text": "基于遗传算法(GA)的自动排班助手会在遵守预设加班上限的前提下规划轮班排期。" },
+      { "icon": "groups", "title": "精准匹配资质的排班", "text": "系统只会为班次推荐具备相应资质的员工。" }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI助手",
+    "title": "Klacksy:为您的团队打造的内置助手",
+    "text": "Klacksy 并非附加的营销聊天机器人,而是直接嵌入在 Klacks 界面中。员工和排班人员可以通过聊天方式查询班次时间、提出换班申请,或在团队内澄清资质冲突。内置的技能与规则系统确保 Klacksy 只会给出符合相关人员实际资质与加班上限的建议。",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacks 界面中的 Klacksy 聊天助手"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "为中国物流与设施管理企业试用 Klacks",
+    "text": "在 Playground 中亲身体验 Klacks 如何自动区分三档加班工资标准 &mdash; 或者选择本地部署 Klacks,完全掌控您的数据主权。"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks 台灣版 | 適用於分級休息日加班費的排班系統",
+  "hero": {
+    "badgeIcon": "storefront",
+    "badge": "適用於台灣零售業與保全業",
+    "titleHtml": "133%、167%、267% &mdash; <span class=\"text-secondary\">同一天內三種加班費級距。</span>",
+    "subtitle": "一例一休制度（每週一天例假、一天彈性休息日）要求在彈性休息日出勤時採階梯式加班費：前兩小時 133%，第三至第八小時 167%，第九小時起 267% &mdash; 且每月標準加班上限為 46 小時（經特別協議可延長至 54 小時，每季總上限為 138 小時）。Klacks 會自動計算這些級距，不必再手動核算。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 排班表格",
+    "screenshotLabel": "排班表"
+  },
+  "challenges": {
+    "eyebrow": "台灣零售業與保全業的日常挑戰",
+    "title": "分級休息日加班費是常見的錯誤來源",
+    "items": [
+      { "icon": "payments", "title": "同一天內三種加班費級距", "text": "彈性休息日出勤依時數不同分為 133%、167% 與 267% 三種級距 &mdash; 若以人工計算，是薪資核算中最常見的錯誤來源之一。" },
+      { "icon": "hourglass_disabled", "title": "月上限與季上限須同時掌握", "text": "每月標準上限 46 小時，經特別協議可達 54 小時，另加每季 138 小時的總上限 &mdash; 同時盯緊三個門檻相當耗費心力。" },
+      { "icon": "storefront", "title": "門市營業時間不能中斷", "text": "零售業與保全業需要不間斷的人力配置，同時又必須嚴格遵守休息日規定。" }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "資料自主權",
+    "title": "完全資料自主：開源 &amp; 內部部署",
+    "text": "Klacks 專為對安全性與法規遵循要求嚴格的產業所設計，這些產業的敏感員工資料不應離開自有基礎架構。作為開源解決方案，Klacks 可直接部署於您自己的資料中心或安全的本地伺服器上 &mdash; 不必依賴美國雲端服務商。這讓您能夠自主落實台灣個人資料保護法（PDPA）的合規要求。",
+    "bullets": [
+      "內部部署自主權：在自有 IT 環境中完全掌控排班表、加班費證明與紀錄。",
+      "自由的 LLM 架構：AI 輔助排班建議也可搭配本地部署的語言模型運作，資料不會外流至第三方 API。",
+      "可稽核的原始碼：完整可檢視的程式碼庫，便於 IT 稽核與內部合規檢查。"
+    ]
+  },
+  "solutions": {
+    "title": "Klacks 如何自動計算分級休息日加班費",
+    "subtitle": "正確歸類 133%／167%／267%，同時掌握月上限與季上限。",
+    "items": [
+      { "icon": "bolt", "title": "人力缺口即時補位引擎", "text": "當有人員臨時無法出勤時，Klacks 會立即找出合格的替補人選 &mdash; 且不會因此產生未經規劃的額外休息日工時。" },
+      { "icon": "fact_check", "title": "分級加班費自動追蹤", "text": "Klacks 會自動將每一小時的休息日工時歸類至正確的加班費級距，並持續合併追蹤月上限與季上限。" },
+      { "icon": "file_export", "title": "現已支援 CSV／Excel 匯出", "text": "已完成的工時、加班時數與加班費可直接匯出為 CSV／Excel；針對鼎新（Digiwin）ERP 的匯出格式已列入產品規劃候選清單。" },
+      { "icon": "calendar_month", "title": "輪班自動排班精靈", "text": "採用基因演算法的自動排班精靈會在遵守一例一休規定的前提下規劃輪班順序。" },
+      { "icon": "groups", "title": "依資格精準派班", "text": "系統只會推薦具備相符資格的員工投入該班次。" }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI 助理",
+    "title": "Klacksy：內建於團隊工作流程的助理",
+    "text": "Klacksy 並非外掛式的行銷聊天機器人，而是直接內嵌於 Klacks 操作介面中。員工與排班人員可透過對話查詢班表、提出換班申請，或釐清團隊內的資格衝突。內建的技能與規則系統確保 Klacksy 只會提出符合相關人員實際資格與加班費規定的建議。",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy 聊天助理於 Klacks 介面中"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "為台灣零售業與保全業試用 Klacks",
+    "text": "在體驗平台中親自感受 Klacks 如何自動計算分級休息日加班費 &mdash; 或選擇內部部署以完全掌握資料自主權。"
+  }
+}

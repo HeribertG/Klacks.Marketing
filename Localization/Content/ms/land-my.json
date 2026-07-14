@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Klacks untuk Malaysia | Jadual Kerja untuk Syarikat Keselamatan dan Pengurusan Fasiliti",
+  "hero": {
+    "badgeIcon": "security",
+    "badge": "Untuk syarikat keselamatan dan pengurusan fasiliti di Malaysia",
+    "titleHtml": "Minggu kerja 45 jam sejak 2023 &mdash; <span class=\"text-secondary\">had 104 jam pula sudah wujud jauh lebih lama.</span>",
+    "subtitle": "Akta Kerja (Pindaan) 2022 menurunkan had waktu bekerja maksimum mingguan daripada 48 jam kepada 45 jam berkuat kuasa 1 Januari 2023. Kurang diketahui: had lebih masa bulanan sebanyak 104 jam berasal daripada peraturan berasingan yang tidak berubah sejak 1980 &mdash; hampir tiada syarikat yang dapat membuktikannya secara lengkap dan berterusan. Klacks menjejaki kedua-dua had ini secara automatik.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grid jadual kerja Klacks",
+    "screenshotLabel": "Jadual Kerja"
+  },
+  "challenges": {
+    "eyebrow": "Realiti harian dalam industri keselamatan dan pengurusan fasiliti di Malaysia",
+    "title": "Dua akta, dua had, satu jadual kerja",
+    "items": [
+      { "icon": "hourglass_disabled", "title": "Minggu kerja 45 jam sejak 2023", "text": "Pengurangan daripada 48 kepada 45 jam masih agak baharu &mdash; ramai jadual kerja masih dikira berdasarkan had lama." },
+      { "icon": "fact_check", "title": "Had 104 jam sejak 1980", "text": "Had lebih masa bulanan daripada peraturan berasingan sering terlepas pandang kerana ia tidak termaktub dalam Akta Kerja itu sendiri." },
+      { "icon": "schedule", "title": "Rehat wajib selepas 5 jam", "text": "Syif melebihi 5 jam memerlukan rehat berterusan selama 30 minit &mdash; mudah terlepas pandang semasa tugasan pengawal keselamatan yang berterusan." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Kedaulatan Data",
+    "title": "Kedaulatan Data Sepenuhnya: Sumber Terbuka &amp; On-Premise",
+    "text": "Klacks dibangunkan untuk industri dengan keperluan keselamatan dan pematuhan yang ketat, di mana data pekerja yang sensitif tidak sepatutnya keluar daripada infrastruktur syarikat sendiri. Sebagai penyelesaian sumber terbuka, Klacks boleh dijalankan terus di pusat data anda sendiri atau di pelayan tempatan yang selamat &mdash; tanpa bergantung kepada penyedia awan AS. Ini memudahkan pematuhan Akta Perlindungan Data Peribadi (PDPA) Malaysia secara berdikari.",
+    "bullets": [
+      "Kedaulatan on-premise: kawalan penuh ke atas jadual kerja, rekod lebih masa dan log dalam persekitaran IT syarikat sendiri.",
+      "Seni bina LLM bebas: cadangan penjadualan berbantukan AI juga boleh dijalankan dengan model bahasa yang dihoskan secara tempatan, tanpa data mengalir keluar ke API luar.",
+      "Kod sumber boleh diaudit: kod asas yang boleh disemak sepenuhnya untuk audit IT dan semakan pematuhan dalaman."
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacks mematuhi kedua-dua had secara serentak",
+    "subtitle": "Minggu kerja 45 jam dan had bulanan 104 jam dijejaki secara automatik.",
+    "items": [
+      { "icon": "bolt", "title": "Enjin Pemulihan untuk Ketidakhadiran", "text": "Jika seorang pengawal keselamatan tidak dapat hadir, Klacks segera mencari pengganti yang layak &mdash; tanpa menyebabkan lebih masa tambahan yang tidak dirancang." },
+      { "icon": "fact_check", "title": "Penjejakan Dua Had", "text": "Klacks menjejaki minggu kerja 45 jam dan had bulanan 104 jam secara bersama serta memberi amaran sebelum mana-mana had dilanggar." },
+      { "icon": "file_export", "title": "Eksport CSV/Excel Sudah Tersedia", "text": "Jam siap kerja, lebih masa dan elaun boleh dieksport terus sebagai CSV/Excel; format untuk AutoCount Accounting atau SQL Account adalah calon untuk roadmap kami." },
+      { "icon": "calendar_month", "title": "Wizard Autofill untuk Rotasi", "text": "Pembantu Autofill berasaskan GA merancang rotasi syif sambil mematuhi peraturan rehat dan lebih masa yang telah ditetapkan." },
+      { "icon": "groups", "title": "Penjadualan Tepat Mengikut Kelayakan", "text": "Hanya pekerja dengan kelayakan yang sesuai dan lesen pengawal keselamatan yang sah dicadangkan untuk sesuatu syif." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Pembantu AI",
+    "title": "Klacksy: Pembantu Bersepadu untuk Pasukan Anda",
+    "text": "Klacksy bukan chatbot pemasaran yang ditambah begitu sahaja, tetapi disepadukan terus ke dalam antara muka Klacks. Pekerja dan perancang boleh menyemak waktu tugas, membuat permintaan pertukaran syif atau menyelesaikan konflik kelayakan dalam pasukan melalui sembang. Sistem kemahiran dan peraturan yang ditetapkan memastikan Klacksy hanya memberikan cadangan yang sesuai dengan kelayakan sebenar dan had waktu bekerja pihak yang terlibat.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Pembantu sembang Klacksy dalam antara muka Klacks"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Cuba Klacks untuk syarikat keselamatan dan pengurusan fasiliti di Malaysia",
+    "text": "Alami sendiri dalam playground bagaimana Klacks mematuhi kedua-dua had secara serentak &mdash; atau jalankan Klacks secara on-premise untuk kedaulatan data sepenuhnya."
+  }
+}

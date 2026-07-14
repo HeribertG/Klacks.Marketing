@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Klacks för Finland | 0,65-personaldimensioneringen styrkt utan luckor",
+  "hero": {
+    "badgeIcon": "groups",
+    "badge": "För äldreomsorg med heldygnsomsorg i Finland",
+    "titleHtml": "0,65 vårdare per klient &mdash; <span class=\"text-secondary\">styrkt genomgående, inte bara på papperet.</span>",
+    "subtitle": "Inom äldreomsorgen med heldygnsomsorg gäller enligt lag en minsta personaldimensionering på 0,65 behöriga anställda per klient. Den ursprungligen planerade höjningen till 0,7 sköts på grund av den akuta personalbristen upp till den 1 januari 2028. Klacks styrker dimensioneringen skift för skift, i stället för att rekonstruera den i slutet av månaden.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schemarutnät",
+    "screenshotLabel": "Schema"
+  },
+  "challenges": {
+    "eyebrow": "Vardagen på finländska vårdenheter",
+    "title": "0,65-dimensioneringen gäller skift för skift, inte som månadsgenomsnitt",
+    "items": [
+      { "icon": "fact_check", "title": "0,65 vårdare per klient", "text": "Den lagstadgade minimidimensioneringen inom äldreomsorgen med heldygnsomsorg kräver genomgående 0,65 behöriga anställda per klient &mdash; om dimensioneringen underskrids i enskilda skift är det ett regelbrott, även om månadsgenomsnittet stämmer." },
+      { "icon": "hourglass_top", "title": "Höjningen till 0,7 uppskjuten till 2028", "text": "Den ursprungligen planerade höjningen av dimensioneringen till 0,7 sköts officiellt upp till den 1 januari 2028 på grund av den akuta bristen på yrkeskunnig personal &mdash; enheterna måste ändå följa den nuvarande 0,65-gränsen utan undantag fram till dess." },
+      { "icon": "groups", "title": "En av Nordeuropas största vårdpersonalbrister", "text": "Finland kämpar med en av de mest dramatiska personalbristerna inom äldreomsorgen i Nordeuropa &mdash; enheterna kombinerar i allt högre grad schemaplaneringsprogram med sensorteknik för att ändå hålla dimensioneringen." }
+    ]
+  },
+  "openSource": {
+    "eyebrow": "Datasuveränitet",
+    "title": "Full datasuveränitet: öppen källkod &amp; on-premise",
+    "text": "Klacks har utvecklats för branscher med stränga säkerhets- och regelkrav, där känsliga personaluppgifter inte ska lämna den egna infrastrukturen. Som en programvara med öppen källkod kan Klacks köras direkt i ert eget datacenter eller på skyddade lokala servrar &mdash; utan beroende av amerikanska molnleverantörer. Det underlättar efterlevnaden av GDPR och kraven från den finländska dataskyddsmyndigheten Dataombudsmannens byrå i egen regi.",
+    "bullets": [
+      "On-premise-suveränitet: full kontroll över scheman, dimensioneringsbevis och loggar inom den egna IT-miljön.",
+      "Fri LLM-arkitektur: AI-baserade planeringsförslag kan även köras med lokalt hostade språkmodeller, utan att data skickas till externa API:er.",
+      "Granskningsbar källkod: en fullständigt genomsynlig kodbas för IT-granskningar och tillsynsmyndigheter."
+    ]
+  },
+  "solutions": {
+    "title": "Så styrker Klacks 0,65-dimensioneringen skift för skift",
+    "subtitle": "Kontrollerat för varje skift, inte upptäckt först i månadsgenomsnittet.",
+    "items": [
+      { "icon": "bolt", "title": "Återställningsmotor för bortfall", "text": "Om en yrkeskunnig medarbetare uteblir hittar Klacks omedelbart en behörig ersättare &mdash; innan 0,65-dimensioneringen underskrids i ett skift." },
+      { "icon": "fact_check", "title": "Dimensioneringsuppföljning per skift", "text": "Klacks kontrollerar 0,65-dimensioneringen för varje enskilt skift, inte bara som månadsgenomsnitt &mdash; tillgänglig för interna kontroller och tillsynsmyndigheter." },
+      { "icon": "calendar_month", "title": "Automatisk ifyllningsguide med dimensioneringskontroll", "text": "Den genetiskt baserade ifyllningsassistenten föreslår endast rotationer som uppfyller vårddimensioneringen i varje skift." },
+      { "icon": "groups", "title": "Kompetensexakt schemaläggning", "text": "Endast anställda med rätt kompetens räknas in i dimensioneringen &mdash; Klacks skiljer automatiskt mellan behörig och understödjande personal." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI-assistent",
+    "title": "Klacksy: den integrerade assistenten för ert team",
+    "text": "Klacksy är ingen pålimmad marknadsföringschattbot, utan är direkt inbäddad i Klacks användargränssnitt. Anställda och schemaläggare frågar via chatt om arbetstider, gör förfrågningar om skiftbyte eller klarar ut kompetenskonflikter i teamet. Ett bakomliggande system av färdigheter och regler säkerställer att Klacksy endast ger förslag som stämmer överens med de berördas faktiska kompetenser och personaldimensionering.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chattassistent i Klacks användargränssnitt"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Testa Klacks för finländska vårdenheter",
+    "text": "Upplev i Playground hur Klacks styrker 0,65-personaldimensioneringen skift för skift &mdash; eller kör Klacks on-premise för full datasuveränitet."
+  }
+}

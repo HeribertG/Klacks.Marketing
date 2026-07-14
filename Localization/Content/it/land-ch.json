@@ -1,0 +1,49 @@
+{
+  "pageTitle": "Klacks per la Svizzera | Conforme alla ArG e pronto per la futura BGAP",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Per ospedali e Spitex in Svizzera",
+    "titleHtml": "Già pronti oggi per la <span class=\"text-secondary\">futura legge sulle cure.</span>",
+    "subtitle": "La Legge federale sulle condizioni di lavoro nel settore delle cure (BGAP) è ancora in fase di dibattito parlamentare &mdash; Klacks rispetta già oggi i requisiti centrali della ArG in materia di tempi di riposo e supplementi notturni, così al momento dell'entrata in vigore non dovrà ripianificare da capo.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Piano turni Klacks per ospedali e Spitex svizzeri",
+    "screenshotLabel": "Piano turni"
+  },
+  "challenges": {
+    "eyebrow": "La quotidianità in ospedale e Spitex",
+    "title": "ArG, reperibilità e la futura BGAP",
+    "items": [
+      { "icon": "hourglass_top", "title": "BGAP in arrivo", "text": "L'attuazione dell'iniziativa sulle cure infermieristiche (BGAP) dovrà in futuro disciplinare anche la comunicazione di piani turni e reperibilità &mdash; la legge non è ancora in vigore, ma chi pianifica già oggi in modo corretto sarà pronto al momento dell'entrata in vigore." },
+      { "icon": "gavel", "title": "Calcolare correttamente il supplemento notturno ArG", "text": "Il lavoro notturno regolare, secondo l'Art. 17b ArG, comporta un accredito di tempo del 10% &mdash; un calcolo manuale è soggetto a errori." },
+      { "icon": "event_repeat", "title": "Compensare correttamente il riposo domenicale", "text": "Per gli interventi domenicali di oltre 5 ore è dovuto un giorno di riposo compensativo di 24 ore nella settimana precedente o successiva (Art. 20 ArG)." }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacks alleggerisce le aziende svizzere",
+    "subtitle": "Conforme alla ArG oggi, pronto per la futura BGAP.",
+    "items": [
+      { "icon": "gavel", "title": "Supplemento Art. 17b automatico", "text": "Klacks calcola automaticamente l'accredito di tempo del 10% per il lavoro notturno regolare &mdash; corretto secondo l'Art. 17b ArG." },
+      { "icon": "event_repeat", "title": "Compensazione del riposo domenicale pianificata", "text": "L'Autofill Wizard integra automaticamente il giorno di riposo compensativo previsto dalla legge per gli interventi domenicali di oltre 5 ore." },
+      { "icon": "calendar_month", "title": "Pianificazione anticipata di turni e reperibilità", "text": "Klacks pianifica piani turni e di reperibilità con largo anticipo &mdash; la base per rispettare, senza modifiche, i futuri termini di comunicazione previsti dalla BGAP." },
+      { "icon": "groups", "title": "Spitex: giri e turni spezzati", "text": "Turni spezzati (split-shift) e tempi di percorrenza tra i clienti vengono pianificati automaticamente." },
+      { "icon": "shield_lock", "title": "On-Premise: sovranità dei dati in Svizzera", "text": "I dati del personale e dei pazienti restano nella Sua infrastruttura &mdash; anche per le funzioni di IA." }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "Assistente IA",
+    "title": "Klacksy: l'assistente integrato per il Suo team",
+    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks. Collaboratori e pianificatori possono chiedere via chat gli orari di servizio, presentare richieste di scambio turno o chiarire conflitti di qualifica all'interno del team. Un sistema di competenze e regole predefinito garantisce che Klacksy proponga solo soluzioni compatibili con le qualifiche effettive e con i requisiti di orario di lavoro delle persone coinvolte.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Assistente chat Klacksy nell'interfaccia di Klacks"
+  },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Lavoro notturno, turno domenicale, un unico piano",
+    "text": "Klacks riconosce automaticamente quando un intervento genera un supplemento notturno o una compensazione del riposo domenicale, e pianifica subito anche il recupero &mdash; senza calcoli manuali."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Scopra Klacks nella Sua azienda",
+    "text": "Provi nel Playground come Klacks automatizza supplementi ArG, tempi di riposo e pianificazione della reperibilità &mdash; On-Premise o nel Playground, gratuitamente."
+  }
+}
