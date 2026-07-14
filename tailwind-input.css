@@ -266,7 +266,7 @@ nav.glass-nav.nav-scrolled {
     }
 
     .screenshot-hover-zoom:hover {
-        transform: scale(1.6);
+        transform: scale(2.0);
         box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.45);
         z-index: 30;
     }
