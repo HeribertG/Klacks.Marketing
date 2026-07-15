@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Feiertage, die sich nicht an Landesgrenzen halten",
+    "text": "Frankreich wirkt auf den ersten Blick einheitlich &mdash; ist es aber nicht: Elsass-Moselle und die Überseegebiete kennen eigene gesetzliche Feiertage. Klacks bildet genau das ab, woran einfache Tools scheitern.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Département-genau, wo es zählt",
+        "text": "Bas-Rhin, Haut-Rhin und Moselle haben nach lokalem Sonderrecht zwei zusätzliche gesetzliche Feiertage &mdash; Karfreitag und den Stephanstag am 26. Dezember (Art. L3134-13 Code du travail). Die Überseegebiete wie Réunion, Martinique und Guadeloupe begehen zudem eigene, unterschiedlich datierte Gedenktage zur Abschaffung der Sklaverei."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Pflege- oder Sicherheitsunternehmen mit Standorten in Paris und Straßburg braucht zwei Kalender gleichzeitig: Am 26. Dezember gilt in Straßburg ein gesetzlicher Feiertag mit Beschäftigungsverboten und Zuschlägen, während in Paris regulär gearbeitet wird."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks französische Unternehmen entlastet",
     "subtitle": "Vom automatischen Dienstplan bis zur freien KI-Modell-Wahl &mdash; alles greift ineinander.",

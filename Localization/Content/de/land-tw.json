@@ -18,6 +18,31 @@
       { "icon": "bedtime", "title": "11-Stunden-Schichtabstand &amp; hohe Bußgelder", "text": "Zwischen zwei Schichten sind mindestens 11 zusammenhängende Stunden Ruhezeit einzuhalten (§ 34 LSA). Verstöße werden mit Bußgeldern von NT$ 20.000 bis 1.000.000 geahndet &mdash; im Wiederholungsfall zzgl. 50 % (§ 79 LSA)." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender, der sich jedes Jahr neu verschiebt",
+    "text": "Taiwans gesetzliche Feiertage (國定假日) gelten landesweit einheitlich &mdash; eine regionale oder kommunale Ebene mit eigenen Feiertagen wie in der Schweiz oder Japan gibt es nicht. Die eigentliche Tücke liegt anderswo: in einer Ausgleichsregel, die sich 2026 grundlegend geändert hat, und in individuellen Zusatztagen für einzelne Mitarbeitende.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Ersatzruhetag statt Ersatz-Arbeitstag",
+        "text": "Fällt ein Feiertag auf ein Wochenende, gewährt Taiwan einen Ersatz-Ruhetag an einem Werktag (補假) &mdash; verzichtet dabei aber seit 2026 auf den früher üblichen Ausgleichs-Samstag als Arbeitstag (補班). Der Kalender sieht dadurch jedes Jahr anders aus und lässt sich nicht einfach vom Vorjahr kopieren."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Halbleiter- und Logistikbetriebe im Hsinchu Science Park planen häufig gegen Kunden in Festlandchina oder im Westen &mdash; mit jeweils eigenem Feiertagsrhythmus. Klacks führt mehrere Länderkalender gleichzeitig, statt einen Kompromiss zu erzwingen."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks taiwanische Betriebe entlastet",
     "subtitle": "Von der korrekten 休息日-Staffel bis zur Vier-Wochen-Flexibilisierung &mdash; alles greift ineinander.",

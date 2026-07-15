@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Datatilsynet &amp; biometrische Daten", "text": "Datatilsynet reguliert Mitarbeiterüberwachung und biometrische Datenerfassung &mdash; etwa Fingerabdruck oder Gesichtserkennung beim Stempeln &mdash; sehr restriktiv, da Einwilligung im Abhängigkeitsverhältnis zwischen Arbeitgeber und Arbeitnehmer oft nicht als freiwillige Rechtsgrundlage gilt (Personopplysningsloven)." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Land, ein Kalender &mdash; die Grenze liegt woanders",
+    "text": "Anders als in vielen Ländern gibt es in Norwegen keinen Flickenteppich: Die zehn gesetzlichen Feiertage nach der Helligdagsloven gelten einheitlich im ganzen Land, auch auf Svalbard &mdash; ohne Unterschiede nach Fylke oder Kommune. Die eigentliche Herausforderung entsteht dort, wo norwegische Betriebe mit Partnern in Ländern mit ganz anderen Feiertagskalendern zusammenarbeiten.",
+    "items": [
+      { "icon": "place", "title": "National einheitlich, eine Ausnahme kennen", "text": "Alle Feiertage gelten landesweit gleich &mdash; auch der Samische Nationalfeiertag am 6. Februar ist zwar offizieller Flaggentag, aber kein gesetzlich arbeitsfreier Tag. Klacks unterscheidet Feiertag und Gedenktag sauber." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Offshore- oder Reedereibetrieb aus Bergen oder Stavanger setzt Crews im norwegischen wie im britischen Nordsee-Sektor ein: Skjærtorsdag und der 17. Mai sind in Norwegen gesetzliche Feiertage, in Großbritannien normale Werktage &mdash; und umgekehrt gelten dort eigene Bank Holidays. Klacks führt beide Länderkalender parallel." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Norwegische und britische Feiertage parallel geführt für Nordsee-Einsätze",
+    "imageCaption": "Echte Regeln aus Klacks: ein Kalender für Norwegen, ein zweiter für Großbritannien &mdash; frei kombinierbar."
+  },
   "solutions": {
     "title": "Wie Klacks norwegische Betriebe entlastet",
     "subtitle": "Von der konfigurierten Regime-Grenze bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

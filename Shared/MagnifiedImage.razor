@@ -7,7 +7,7 @@
     </div>
     @if (!string.IsNullOrEmpty(Caption))
     {
-        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed mb-0">@Caption</figcaption>
+        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed mb-0">@((MarkupString)Caption)</figcaption>
     }
 </figure>
 

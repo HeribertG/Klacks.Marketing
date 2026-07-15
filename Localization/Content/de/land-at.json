@@ -30,6 +30,19 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landespatron-Tage im Blick, ohne falsche Versprechen",
+    "text": "Neben den 13 bundesweiten Feiertagen kennt Österreich Landesfeiertage der Landespatrone &mdash; sie gelten standardmäßig nur für Schulen und Landesbehörden, nicht automatisch für die Privatwirtschaft. Klacks bildet genau diese Unterscheidung ab.",
+    "items": [
+      { "icon": "place", "title": "Landespatron-Tage vorkonfiguriert", "text": "Leopolditag (15. November) in Wien und Niederösterreich, Rupertitag (24. September) in Salzburg, Josefitag (19. März) unter anderem in der Steiermark &mdash; als informative Markierung, nicht als automatischer Ruhetag für den Betrieb." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb mit Standorten in Wien, Salzburg und der Steiermark sieht alle Landespatron-Tage auf einen Blick &mdash; wichtig, weil an diesen Tagen wegen fehlender Kinderbetreuung vermehrt Urlaubsanträge anfallen. Grenzbetriebe, etwa in Vorarlberg, ergänzen zusätzlich Feiertagskalender aus der Schweiz oder Deutschland." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks österreichische Betriebe entlastet",
     "subtitle": "Von der automatischen Dienstplanung bis zur eigenen Infrastruktur &mdash; alles unter Ihrer Kontrolle.",

@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Datatilsynet &amp; biometriske data", "text": "Datatilsynet regulerer overvåking av ansatte og biometrisk datainnsamling &mdash; for eksempel fingeravtrykk eller ansiktsgjenkjenning ved stempling &mdash; svært restriktivt, siden samtykke i et avhengighetsforhold mellom arbeidsgiver og arbeidstaker ofte ikke anses som et frivillig rettsgrunnlag (Personopplysningsloven)." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regler &amp; kalender",
+    "title": "Ett land, én kalender &mdash; grensen ligger et annet sted",
+    "text": "I motsetning til mange land har ikke Norge noe lappeteppe: De ti lovbestemte helligdagene etter helligdagsloven gjelder likt i hele landet, også på Svalbard &mdash; uten forskjeller mellom fylke eller kommune. Den egentlige utfordringen oppstår der norske virksomheter samarbeider med partnere i land med helt andre helligdagskalendere.",
+    "items": [
+      { "icon": "place", "title": "Nasjonalt likt, med ett unntak å kjenne til", "text": "Alle helligdager gjelder likt i hele landet &mdash; også samenes nasjonaldag 6. februar, som er offisiell flaggdag, men ikke en lovbestemt fridag. Klacks skiller tydelig mellom helligdag og merkedag." },
+      { "icon": "layers", "title": "Blande kalendere", "text": "En offshore- eller rederibedrift fra Bergen eller Stavanger setter mannskap inn i både norsk og britisk sektor i Nordsjøen: Skjærtorsdag og 17. mai er lovbestemte helligdager i Norge, men vanlige arbeidsdager i Storbritannia &mdash; som til gjengjeld har egne bank holidays. Klacks fører begge landskalendere parallelt." },
+      { "icon": "tune", "title": "Virkende eller bare informativ", "text": "Du bestemmer per kalender om en helligdag skal påvirke timer &amp; tillegg &mdash; eller bare vises som en påminnelse." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feriedagsregler i Klacks: norske og britiske helligdager ført parallelt for Nordsjø-oppdrag",
+    "imageCaption": "Ekte regler fra Klacks: én kalender for Norge, én for Storbritannia &mdash; fritt kombinerbare."
+  },
   "solutions": {
     "title": "Slik avlaster Klacks norske bedrifter",
     "subtitle": "Fra den konfigurerte regimegrensen til egen infrastruktur &mdash; alt spiller sammen.",

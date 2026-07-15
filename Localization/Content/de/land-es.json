@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jede Gemeinde",
+    "text": "Spanien kennt kein einheitliches Feiertagssystem, sondern drei ineinandergreifende Ebenen: 8 landesweite Feiertage, bis zu 4 von der jeweiligen Comunidad Autónoma bestimmte und 2 von der Gemeinde festgelegte &mdash; macht 14 pro Jahr, aber an jedem Standort andere. Klacks bildet genau das ab, statt es zu vereinfachen.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Bis auf Gemeinde-Ebene",
+        "text": "Neben den 8 landesweiten Feiertagen bestimmt jede Comunidad Autónoma bis zu 4 eigene &mdash; etwa Kataloniens Diada Nacional (11. September) und San Juan (24. Juni) oder die Fiesta de la Comunidad de Madrid (2. Mai) &mdash; und jede Gemeinde ergänzt zusätzlich 2 lokale, meist dem Schutzpatron gewidmete Feiertage."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Pflege- oder Sicherheitsdienst mit Zentrale in der Stadt Madrid und Niederlassungen in Getafe, Leganés und Pozuelo de Alarcón verwaltet die kommunalen Feiertage jedes Standorts einzeln &mdash; San Isidro (15. Mai) gilt streng nur innerhalb der Stadtgrenze Madrids, die Vororte arbeiten an diesem Tag regulär und haben ihre eigenen Schutzpatron-Tage."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks spanische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

@@ -13,21 +13,82 @@
     "eyebrow": "Everyday scheduling in UK businesses",
     "title": "Working Time Regulations, rest periods and data protection",
     "items": [
-      { "icon": "gavel", "title": "Keeping the 48-hour week &amp; opt-out under control", "text": "The Working Time Regulations 1998 cap average weekly working time at 48 hours, calculated over a standard 17-week reference period &mdash; extendable by agreement. Staff can opt out in writing, which makes manual tracking even harder." },
-      { "icon": "bedtime", "title": "Guaranteeing daily &amp; weekly rest periods", "text": "The WTR require at least 11 consecutive hours of rest per 24 hours and 24 uninterrupted hours per 7-day period (Reg. 10 &amp; 11) &mdash; error-prone to track by hand across rotating shifts." },
-      { "icon": "fingerprint", "title": "Biometric time tracking as a data protection risk", "text": "In February 2024, the ICO took enforcement action against Serco Leisure after facial recognition and fingerprint clocking systems at 38 sites processed data on over 2,000 employees without a lawful basis &mdash; a warning sign for any time-tracking solution." }
+      {
+        "icon": "gavel",
+        "title": "Keeping the 48-hour week &amp; opt-out under control",
+        "text": "The Working Time Regulations 1998 cap average weekly working time at 48 hours, calculated over a standard 17-week reference period &mdash; extendable by agreement. Staff can opt out in writing, which makes manual tracking even harder."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Guaranteeing daily &amp; weekly rest periods",
+        "text": "The WTR require at least 11 consecutive hours of rest per 24 hours and 24 uninterrupted hours per 7-day period (Reg. 10 &amp; 11) &mdash; error-prone to track by hand across rotating shifts."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometric time tracking as a data protection risk",
+        "text": "In February 2024, the ICO took enforcement action against Serco Leisure after facial recognition and fingerprint clocking systems at 38 sites processed data on over 2,000 employees without a lawful basis &mdash; a warning sign for any time-tracking solution."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Rules &amp; calendar",
+    "title": "A calendar for every nation",
+    "text": "Bank holidays are anything but uniform across the United Kingdom: England &amp; Wales, Scotland and Northern Ireland each observe their own set of statutory holidays, and individual councils add local holidays on top &mdash; such as Glasgow Fair Monday, the third Monday in July. Klacks handles exactly what simple tools get wrong.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Three nations, three sets of holidays",
+        "text": "2 January and St Andrew's Day (30 November) are bank holidays only in Scotland; St Patrick's Day (17 March) and the Battle of the Boyne &mdash; known as \"the Twelfth\" (12 July) &mdash; only in Northern Ireland: pre-configured and ready to use."
+      },
+      {
+        "icon": "layers",
+        "title": "Mix calendars",
+        "text": "A care, security or logistics business with sites in London, Edinburgh and Belfast runs all three calendars side by side &mdash; including bank holiday premiums and the reduced staff availability on days when nurseries and schools close in only one nation."
+      },
+      {
+        "icon": "tune",
+        "title": "Binding or purely informational",
+        "text": "For each calendar, you decide whether a bank holiday affects hours &amp; premiums &mdash; or simply appears as a reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Holiday rules in Klacks: holidays by nation and region — Germany, the USA (Alaska), and the Swiss cantons of Lucerne, Jura, Glarus and Appenzell",
+    "imageCaption": "Real rules from Klacks: one list mixes holidays from several countries and regions &mdash; freely extensible."
   },
   "solutions": {
     "title": "How Klacks takes the load off UK businesses",
     "subtitle": "From automatic rest-period control to data-protection-compliant time tracking &mdash; everything works together.",
     "items": [
-      { "icon": "gavel", "title": "48-hour limit &amp; opt-out kept in view", "text": "Klacks continuously makes weekly working time visible, warns as anyone approaches the 48-hour limit under WTR Reg. 4, and flags who is working beyond it under an opt-out &mdash; fully traceable for any inspection." },
-      { "icon": "bedtime", "title": "Rest periods observed automatically", "text": "The 11-hour daily rest and 24-hour weekly rest under WTR Reg. 10 &amp; 11 are factored into every automatic shift plan &mdash; and any breach is immediately made visible." },
-      { "icon": "fingerprint", "title": "Time tracking without the biometric risk", "text": "Klacks records working time without needing facial recognition or fingerprints &mdash; no Serco-Leisure-style case, no questions from the ICO." },
-      { "icon": "shield_lock", "title": "On-premise: full data sovereignty", "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; in line with UK GDPR and the Data Protection Act 2018, with no cross-border transfer of staff data at all." },
-      { "icon": "hourglass_top", "title": "Ready for the Employment Rights Act 2025", "text": "The Employment Rights Act 2025 received Royal Assent on 18 December 2025 and will in future govern advance notice periods for shifts and compensation for cancelled shifts &mdash; the exact thresholds have yet to be set. Klacks can easily be extended with new notice-period and compensation rules once they are confirmed." },
-      { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy schedules via voice or chat command &mdash; traceable through defined skills and rules, not an opaque AI decision." }
+      {
+        "icon": "gavel",
+        "title": "48-hour limit &amp; opt-out kept in view",
+        "text": "Klacks continuously makes weekly working time visible, warns as anyone approaches the 48-hour limit under WTR Reg. 4, and flags who is working beyond it under an opt-out &mdash; fully traceable for any inspection."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rest periods observed automatically",
+        "text": "The 11-hour daily rest and 24-hour weekly rest under WTR Reg. 10 &amp; 11 are factored into every automatic shift plan &mdash; and any breach is immediately made visible."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Time tracking without the biometric risk",
+        "text": "Klacks records working time without needing facial recognition or fingerprints &mdash; no Serco-Leisure-style case, no questions from the ICO."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: full data sovereignty",
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; in line with UK GDPR and the Data Protection Act 2018, with no cross-border transfer of staff data at all."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "Ready for the Employment Rights Act 2025",
+        "text": "The Employment Rights Act 2025 received Royal Assent on 18 December 2025 and will in future govern advance notice periods for shifts and compensation for cancelled shifts &mdash; the exact thresholds have yet to be set. Klacks can easily be extended with new notice-period and compensation rules once they are confirmed."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: rule-based, not a black box",
+        "text": "The built-in AI assistant Klacksy schedules via voice or chat command &mdash; traceable through defined skills and rules, not an opaque AI decision."
+      }
     ]
   },
   "klacksy": {

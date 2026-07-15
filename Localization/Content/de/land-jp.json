@@ -35,6 +35,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender, der auch die Ausnahmen kennt",
+    "text": "Japans 16 gesetzliche Feiertage (国民の祝日) gelten landesweit einheitlich &mdash; einen kantonalen oder kommunalen Flickenteppich wie in der Schweiz gibt es nicht. Die eigentliche Tücke steckt im Detail: der automatischen Ersatzfeiertag-Regel und einzelnen präfektur-eigenen Schliesstagen, die Klacks zuverlässig nachführt.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "National einheitlich, mit eingebauter Verschiebe-Logik",
+        "text": "Fällt ein gesetzlicher Feiertag auf einen Sonntag, wird nach Art. 3 des Feiertagsgesetzes automatisch der nächste Werktag zum Ersatzfeiertag (振替休日, Furikae kyūjitsu) &mdash; ausser bei Neujahr. Klacks berechnet diese Verschiebung korrekt, ganz ohne Handarbeit."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Schliessen am Okinawa-Gedenktag (23. Juni) Schulen und Präfekturbehörden vor Ort, ist in Tokio ein normaler Arbeitstag &mdash; und am Tokioter Bürgertag (1. Oktober), an dem dort die Schulen schliessen, läuft der Betrieb in Okinawa regulär weiter. Klacks führt beide Standortkalender parallel, damit Betreuungsengpässe rechtzeitig sichtbar werden."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint, etwa bei einem präfektur-eigenen Gedenktag ohne gesetzliche Zuschlagspflicht."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks japanische Betriebe entlastet",
     "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

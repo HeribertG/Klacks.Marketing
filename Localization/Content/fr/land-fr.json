@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Règles &amp; calendrier",
+    "title": "Des jours fériés qui ne s'arrêtent pas aux frontières",
+    "text": "Au premier regard, la France semble uniforme &mdash; elle ne l'est pas : l'Alsace-Moselle et les territoires d'outre-mer ont leurs propres jours fériés légaux. Klacks reproduit exactement ce sur quoi les outils simples échouent.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Précis au département, là où ça compte",
+        "text": "Le Bas-Rhin, le Haut-Rhin et la Moselle bénéficient, en vertu du droit local, de deux jours fériés supplémentaires &mdash; le Vendredi Saint et la Saint-Étienne le 26 décembre (Art. L3134-13 du Code du travail). Les territoires d'outre-mer comme La Réunion, la Martinique et la Guadeloupe célèbrent en outre leurs propres commémorations de l'abolition de l'esclavage, à des dates différentes."
+      },
+      {
+        "icon": "layers",
+        "title": "Combiner des calendriers",
+        "text": "Une entreprise de soins ou de sécurité avec des sites à Paris et à Strasbourg a besoin de deux calendriers en parallèle : le 26 décembre, un jour férié légal avec interdictions de travail et majorations s'applique à Strasbourg, alors que Paris travaille normalement."
+      },
+      {
+        "icon": "tune",
+        "title": "Contraignant ou simplement informatif",
+        "text": "Vous déterminez, calendrier par calendrier, si un jour férié influence les heures &amp; majorations &mdash; ou n'apparaît que comme un rappel."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Règles de jours fériés dans Klacks : jours fériés par nation et région – Allemagne, États-Unis (Alaska) ainsi que les cantons suisses de Lucerne, Jura, Glaris et Appenzell",
+    "imageCaption": "De vraies règles issues de Klacks : une liste combine les jours fériés de plusieurs pays et régions &mdash; librement extensible."
+  },
   "solutions": {
     "title": "Comment Klacks soulage les entreprises françaises",
     "subtitle": "Du planning automatique au libre choix du modèle d'IA &mdash; tout s'imbrique parfaitement.",

@@ -18,6 +18,19 @@
       { "icon": "privacy_tip", "title": "Biometrische Zeiterfassung nur mit Verhältnismäßigkeitsprüfung", "text": "Die CNPD verbietet biometrische Zeiterfassung nicht pauschal, verlangt aber im Einzelfall eine strenge Verhältnismäßigkeitsprüfung sowie eine Alternativlösung für Fehlerfälle." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jede Region",
+    "text": "Portugal kennt 13 landesweite Feiertage &mdash; doch die Autonomen Regionen Azoren und Madeira ergänzen je einen eigenen Regionalfeiertag, und jede der 308 Gemeinden kann zusätzlich einen feriado municipal festlegen. Klacks bildet genau das ab, statt es zu vereinfachen.",
+    "items": [
+      { "icon": "place", "title": "Bis auf Gemeinde-Ebene", "text": "Die Azoren feiern den Dia dos Açores am Pfingstmontag, Madeira den Dia da Região Autónoma da Madeira am 1. Juli &mdash; beides gesetzliche Regionalfeiertage. Zusätzlich kann jede Gemeinde einen feriado municipal (meist der Schutzpatron-Tag) festlegen &mdash; als feriado facultativo gilt er, sobald Tarifvertrag oder Arbeitsvertrag ihn vorsehen (Art. 235 CT)." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Pflege- oder Sicherheitsdienst mit Standorten in Lissabon und Porto, der den feriado municipal per Tarifvertrag übernimmt, verwaltet beide Gemeindekalender getrennt &mdash; Lissabon hat am 13. Juni (Santo António) frei, während Porto an diesem Tag regulär arbeitet und stattdessen am 24. Juni (São João) pausiert." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks portugiesische Betriebe entlastet",
     "subtitle": "Vom automatischen registo de ponto bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

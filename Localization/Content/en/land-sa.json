@@ -13,22 +13,87 @@
     "eyebrow": "Day-to-day scheduling in Saudi businesses",
     "title": "Saudi Labor Law, Ramadan and the 12-Hour Limit",
     "items": [
-      { "icon": "gavel", "title": "Standard Hours &amp; the 6-Day Limit", "text": "Standard working time is capped at 8 hours per day or 48 hours per week (Art. 98). Since the 2025 reform, an additional rule applies: no more than 6 consecutive working days without a full rest day." },
-      { "icon": "nightlight", "title": "Ramadan: Shorter Shifts, Automatically", "text": "For Muslim staff, actual working hours mandatorily drop during شهر رمضان (Shahr Ramadan) to a maximum of 6 hours per day or 36 hours per week &mdash; recalculated every year for exactly this group." },
-      { "icon": "timer_off", "title": "12-Hour Presence Limit (Art. 101)", "text": "No employee may remain at the workplace (التواجد في مكان العمل) for more than 12 hours &mdash; including breaks, prayer and meal times. In addition, after a maximum of 5 hours of continuous work, a break of at least 30 minutes is mandatory." }
+      {
+        "icon": "gavel",
+        "title": "Standard Hours &amp; the 6-Day Limit",
+        "text": "Standard working time is capped at 8 hours per day or 48 hours per week (Art. 98). Since the 2025 reform, an additional rule applies: no more than 6 consecutive working days without a full rest day."
+      },
+      {
+        "icon": "nightlight",
+        "title": "Ramadan: Shorter Shifts, Automatically",
+        "text": "For Muslim staff, actual working hours mandatorily drop during شهر رمضان (Shahr Ramadan) to a maximum of 6 hours per day or 36 hours per week &mdash; recalculated every year for exactly this group."
+      },
+      {
+        "icon": "timer_off",
+        "title": "12-Hour Presence Limit (Art. 101)",
+        "text": "No employee may remain at the workplace (التواجد في مكان العمل) for more than 12 hours &mdash; including breaks, prayer and meal times. In addition, after a maximum of 5 hours of continuous work, a break of at least 30 minutes is mandatory."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Rules &amp; calendar",
+    "title": "A calendar that follows the moon",
+    "text": "In Saudi Arabia, the Ministry of Human Resources and Social Development decrees all four official public holidays centrally &mdash; uniformly across the whole Kingdom, with no provincial or municipal level like in Europe. The real challenge lies elsewhere: the two religious holidays, whose exact date is only confirmed at short notice by moon sighting.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Uniform nationwide, no regional level",
+        "text": "Eid al-Fitr, Eid al-Adha, National Day on September 23 and Founding Day on February 22 apply unchanged across the whole Kingdom &mdash; for the public and private sector alike, with no cantonal or municipal exceptions."
+      },
+      {
+        "icon": "layers",
+        "title": "Mix calendars",
+        "text": "A business based in Riyadh or Dhahran with partners in the Emirates, Qatar, Bahrain or Oman needs several country calendars running at once &mdash; moon sightings occasionally differ by a day between Gulf states, as they did between Saudi Arabia and Oman in 2023."
+      },
+      {
+        "icon": "tune",
+        "title": "Binding or purely informational",
+        "text": "For each calendar, you decide whether a holiday affects hours &amp; premiums &mdash; or simply appears as a reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Holiday rules in Klacks: holidays by nation and region — Germany, the USA (Alaska), and the Swiss cantons of Lucerne, Jura, Glarus and Appenzell",
+    "imageCaption": "Real rules from Klacks: one list mixes holidays from several countries and regions &mdash; freely extensible."
   },
   "solutions": {
     "title": "How Klacks Takes the Load Off Businesses in Saudi Arabia",
     "subtitle": "From automatic 12-hour monitoring to your own infrastructure &mdash; it all fits together.",
     "items": [
-      { "icon": "gavel", "title": "Standard Hours &amp; 6-Day Limit Monitored", "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded." },
-      { "icon": "nightlight", "title": "Ramadan Hours Reduced Automatically", "text": "For Muslim staff, Klacks automatically schedules with the reduced 6h/36h limit (Art. 98) during Ramadan &mdash; without manually reworking the entire plan." },
-      { "icon": "timer_off", "title": "12-Hour Limit Monitored Live (Art. 101)", "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times." },
-      { "icon": "payments", "title": "Overtime Premium under Art. 107", "text": "The statutory premium of 50% on the base wage (effectively 150%) is calculated automatically &mdash; since the 2025 reform, optionally also as paid time off in lieu." },
-      { "icon": "groups", "title": "Nitaqat Saudization Tracked", "text": "Klacks documents the employment data for each Saudi employee as the basis for Nitaqat classification &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000, 0.5 for SAR 3,000 to 3,999) is met is calculated by your payroll system." },
-      { "icon": "shield_lock", "title": "On-Premise: Data Stays in Saudi Arabia", "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
-      { "icon": "smart_toy", "title": "Klacksy: Rule-Based, No Black Box", "text": "The built-in Klacksy AI assistant schedules by voice command &mdash; transparently, based on defined skills and rules, not as an opaque AI decision." }
+      {
+        "icon": "gavel",
+        "title": "Standard Hours &amp; 6-Day Limit Monitored",
+        "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded."
+      },
+      {
+        "icon": "nightlight",
+        "title": "Ramadan Hours Reduced Automatically",
+        "text": "For Muslim staff, Klacks automatically schedules with the reduced 6h/36h limit (Art. 98) during Ramadan &mdash; without manually reworking the entire plan."
+      },
+      {
+        "icon": "timer_off",
+        "title": "12-Hour Limit Monitored Live (Art. 101)",
+        "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times."
+      },
+      {
+        "icon": "payments",
+        "title": "Overtime Premium under Art. 107",
+        "text": "The statutory premium of 50% on the base wage (effectively 150%) is calculated automatically &mdash; since the 2025 reform, optionally also as paid time off in lieu."
+      },
+      {
+        "icon": "groups",
+        "title": "Nitaqat Saudization Tracked",
+        "text": "Klacks documents the employment data for each Saudi employee as the basis for Nitaqat classification &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000, 0.5 for SAR 3,000 to 3,999) is met is calculated by your payroll system."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: Data Stays in Saudi Arabia",
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: Rule-Based, No Black Box",
+        "text": "The built-in Klacksy AI assistant schedules by voice command &mdash; transparently, based on defined skills and rules, not as an opaque AI decision."
+      }
     ]
   },
   "klacksy": {

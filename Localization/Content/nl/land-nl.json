@@ -13,21 +13,82 @@
     "eyebrow": "De planningspraktijk in Nederlandse bedrijven",
     "title": "ATW-maximale arbeidstijd, rusttijden en oproepkrachten",
     "items": [
-      { "icon": "gavel", "title": "Maximale arbeidstijd volgens de Arbeidstijdenwet", "text": "De ATW (art. 5:7) staat maximaal 12 uur per dienst en 60 uur per week toe &mdash; gemiddeld echter slechts 55 uur over telkens 4 en 48 uur over telkens 16 opeenvolgende weken. Bij CAO afwijkbaar, maar nooit boven de 60 uur. Handmatig nauwelijks doorlopend te controleren." },
-      { "icon": "bedtime", "title": "Rusttijden volgens ATW art. 5:3 &amp; 5:5", "text": "Minimaal 11 uur dagelijkse en 36 uur wekelijkse rusttijd zijn verplicht &mdash; met beperkte uitzonderingen voor verkorting. Wie dit handmatig controleert over wisselende diensten heen, mist al snel een overtreding." },
-      { "icon": "event_repeat", "title": "Oproepkrachten correct inplannen", "text": "Voor oproepkrachten geldt een wettelijke aankondigingstermijn van 4 dagen (WAB, BW art. 7:628a) &mdash; wordt een oproep op korte termijn afgezegd, dan blijft de volledige loonaanspraak voor de opgeroepen uren bestaan." }
+      {
+        "icon": "gavel",
+        "title": "Maximale arbeidstijd volgens de Arbeidstijdenwet",
+        "text": "De ATW (art. 5:7) staat maximaal 12 uur per dienst en 60 uur per week toe &mdash; gemiddeld echter slechts 55 uur over telkens 4 en 48 uur over telkens 16 opeenvolgende weken. Bij CAO afwijkbaar, maar nooit boven de 60 uur. Handmatig nauwelijks doorlopend te controleren."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rusttijden volgens ATW art. 5:3 &amp; 5:5",
+        "text": "Minimaal 11 uur dagelijkse en 36 uur wekelijkse rusttijd zijn verplicht &mdash; met beperkte uitzonderingen voor verkorting. Wie dit handmatig controleert over wisselende diensten heen, mist al snel een overtreding."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Oproepkrachten correct inplannen",
+        "text": "Voor oproepkrachten geldt een wettelijke aankondigingstermijn van 4 dagen (WAB, BW art. 7:628a) &mdash; wordt een oproep op korte termijn afgezegd, dan blijft de volledige loonaanspraak voor de opgeroepen uren bestaan."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regels &amp; kalender",
+    "title": "Landelijk uniform op het vasteland, eigen in het Caribisch gebied",
+    "text": "Nederland kent geen feestdagen op provincieniveau &mdash; de wettelijke kalender geldt landelijk uniform. Toch bestaan er echte verschillen: door Caribisch Nederland en door traditionele stadsfeestdagen zoals Leidens Ontzet. Klacks brengt dat in beeld, in plaats van het te vereenvoudigen.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Caribisch Nederland: eigen feestdagen",
+        "text": "Bonaire, Sint Eustatius en Saba horen sinds 2010 bij Nederland, maar kennen eigen vrije dagen &mdash; zoals Dia di Rincon (30 april) en Vlaggendag (6 september) op Bonaire of Statia Day (16 november) op Sint Eustatius."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalenders combineren",
+        "text": "Een bedrijf in Enschede of Maastricht plant grensarbeiders in Duitsland of België in &mdash; dan tellen de Nederlandse en de buitenlandse feestdagenkalender gelijktijdig, inclusief de bijbehorende toeslagen."
+      },
+      {
+        "icon": "tune",
+        "title": "Werkzaam of louter informatief",
+        "text": "U bepaalt per kalender of een feestdag doorwerkt op uren &amp; toeslagen &mdash; of enkel ter herinnering verschijnt."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feestdagregels in Klacks: feestdagen per natie en regio — Duitsland, VS (Alaska) en de Zwitserse kantons Luzern, Jura, Glarus en Appenzell",
+    "imageCaption": "Echte regels uit Klacks: een lijst combineert feestdagen van meerdere landen en regio's &mdash; vrij uitbreidbaar."
   },
   "solutions": {
     "title": "Hoe Klacks Nederlandse bedrijven ontlast",
     "subtitle": "Van de automatische ATW-controle tot de AVG-conforme tijdsregistratie &mdash; alles grijpt in elkaar.",
     "items": [
-      { "icon": "gavel", "title": "ATW-maximale arbeidstijd automatisch bewaakt", "text": "Klacks kent de 12-uursgrens per dienst, de 60-uurs weekgrens en de gemiddelden over 4 en 16 weken &mdash; dreigende overtredingen worden live zichtbaar gemaakt voordat het dienstrooster vaststaat." },
-      { "icon": "bedtime", "title": "Rusttijden automatisch nageleefd", "text": "De 11 uur dagrust en de 36 uur weekrust volgens ATW art. 5:3 en 5:5 worden bij elk dienstrooster automatisch meeberekend." },
-      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "Klacks kent de 4-dagen-aankondigingstermijn voor oproepkrachten en maakt zichtbaar waar een afzegging op korte termijn een loonaanspraak veroorzaakt." },
-      { "icon": "privacy_tip", "title": "Geen biometrische tijdsregistratie nodig", "text": "Diensten en werktijden worden in Klacks geregistreerd zonder vingerafdruk- of gezichtsscan &mdash; volledig zonder het AVG-risico op grond van art. 9 dat de Autoriteit Persoonsgegevens ziet bij biometrische tijdsregistratie op de werkvloer." },
-      { "icon": "shield_lock", "title": "On-premise: volledige datasoevereiniteit", "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; personeelsgegevens verlaten uw pand niet." },
-      { "icon": "smart_toy", "title": "Klacksy: regelgebaseerd, geen blackbox", "text": "De geïntegreerde AI-assistent Klacksy plant op basis van spraakopdrachten &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing." }
+      {
+        "icon": "gavel",
+        "title": "ATW-maximale arbeidstijd automatisch bewaakt",
+        "text": "Klacks kent de 12-uursgrens per dienst, de 60-uurs weekgrens en de gemiddelden over 4 en 16 weken &mdash; dreigende overtredingen worden live zichtbaar gemaakt voordat het dienstrooster vaststaat."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rusttijden automatisch nageleefd",
+        "text": "De 11 uur dagrust en de 36 uur weekrust volgens ATW art. 5:3 en 5:5 worden bij elk dienstrooster automatisch meeberekend."
+      },
+      {
+        "icon": "event_available",
+        "title": "Oproepkrachten correct gepland",
+        "text": "Klacks kent de 4-dagen-aankondigingstermijn voor oproepkrachten en maakt zichtbaar waar een afzegging op korte termijn een loonaanspraak veroorzaakt."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "Geen biometrische tijdsregistratie nodig",
+        "text": "Diensten en werktijden worden in Klacks geregistreerd zonder vingerafdruk- of gezichtsscan &mdash; volledig zonder het AVG-risico op grond van art. 9 dat de Autoriteit Persoonsgegevens ziet bij biometrische tijdsregistratie op de werkvloer."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: volledige datasoevereiniteit",
+        "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; personeelsgegevens verlaten uw pand niet."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelgebaseerd, geen blackbox",
+        "text": "De geïntegreerde AI-assistent Klacksy plant op basis van spraakopdrachten &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing."
+      }
     ]
   },
   "klacksy": {

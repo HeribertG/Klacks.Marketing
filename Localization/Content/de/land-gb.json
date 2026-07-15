@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Biometrische Zeiterfassung als Datenschutzrisiko", "text": "Die ICO verhängte im Februar 2024 Maßnahmen gegen Serco Leisure, weil an 38 Standorten Gesichtserkennungs- und Fingerabdruck-Stempeluhren ohne rechtmäßige Grundlage über 2.000 Mitarbeitende erfassten &mdash; ein Warnsignal für jede Zeiterfassungslösung." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jede Nation",
+    "text": "Bank Holidays sind im Vereinigten Königreich kein einheitliches Konzept: England &amp; Wales, Schottland und Nordirland haben teils eigene gesetzliche Feiertage, dazu setzen einzelne Councils wie Glasgow eigene lokale Feiertage fest (Glasgow Fair Monday, dritter Montag im Juli). Klacks bildet genau das ab, statt es zu vereinfachen.",
+    "items": [
+      { "icon": "place", "title": "Drei Nationen, eigene Feiertage", "text": "Der 2. Januar und der St. Andrew's Day (30. November) gelten nur in Schottland, St. Patrick's Day (17. März) und die Battle of the Boyne &mdash; bekannt als \"the Twelfth\" (12. Juli) &mdash; nur in Nordirland: passend vorkonfiguriert." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Pflege-, Sicherheits- oder Logistikbetrieb mit Standorten in London, Edinburgh und Belfast führt alle drei Kalender parallel &mdash; inklusive Bank-Holiday-Zuschlägen und eingeschränkter Verfügbarkeit an Tagen, an denen nur in einer Nation Kitas und Schulen schließen." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Bank Holiday auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks britische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",

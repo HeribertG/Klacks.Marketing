@@ -13,22 +13,87 @@
     "eyebrow": "Der Planungsalltag in Unternehmen der VAE",
     "title": "Ramadan, Überstundendeckel und WPS-Fristen",
     "items": [
-      { "icon": "nights_stay", "title": "Ramadan-Arbeitszeitverkürzung für alle", "text": "Während des Fastenmonats Ramadan (شهر رمضان) verkürzt sich die reguläre tägliche Arbeitszeit um 2 Stunden &mdash; ohne Lohnkürzung und für alle Beschäftigten im Privatsektor, unabhängig von Religion (Federal Decree-Law No. 33 of 2021, Art. 17 i.V.m. Cabinet Resolution No. 1 of 2022)." },
-      { "icon": "schedule", "title": "Überstunden-Tageslimit &amp; 144-Stunden-Deckel", "text": "Überstunden (ساعات العمل الإضافية) sind auf max. 2 Stunden pro Tag begrenzt, die Gesamtarbeitszeit darf 144 Stunden je 3 Wochen nicht übersteigen &mdash; mit mindestens +25% Zuschlag, zwischen 22:00 und 04:00 Uhr mindestens +50% (Art. 19)." },
-      { "icon": "payments", "title": "WPS-Fristen fürs Lohnschutzsystem einhalten", "text": "Löhne im Onshore-Privatsektor müssen über das staatliche Lohnschutzsystem WPS (نظام حماية الأجور) elektronisch ausgezahlt werden &mdash; wer nicht binnen 15 Tagen zahlt, riskiert eine Sperre neuer Arbeitsgenehmigungen (Ministerial Resolution No. 340 of 2026, seit 1. Juni 2026 in Kraft)." },
-      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung PDPL-konform halten", "text": "Das PDPL (Federal Decree-Law No. 45 of 2021) stuft biometrische Daten ausdrücklich als sensible personenbezogene Daten (البيانات الشخصية الحساسة) ein &mdash; grenzüberschreitende Transfers sind streng reguliert." }
+      {
+        "icon": "nights_stay",
+        "title": "Ramadan-Arbeitszeitverkürzung für alle",
+        "text": "Während des Fastenmonats Ramadan (شهر رمضان) verkürzt sich die reguläre tägliche Arbeitszeit um 2 Stunden &mdash; ohne Lohnkürzung und für alle Beschäftigten im Privatsektor, unabhängig von Religion (Federal Decree-Law No. 33 of 2021, Art. 17 i.V.m. Cabinet Resolution No. 1 of 2022)."
+      },
+      {
+        "icon": "schedule",
+        "title": "Überstunden-Tageslimit &amp; 144-Stunden-Deckel",
+        "text": "Überstunden (ساعات العمل الإضافية) sind auf max. 2 Stunden pro Tag begrenzt, die Gesamtarbeitszeit darf 144 Stunden je 3 Wochen nicht übersteigen &mdash; mit mindestens +25% Zuschlag, zwischen 22:00 und 04:00 Uhr mindestens +50% (Art. 19)."
+      },
+      {
+        "icon": "payments",
+        "title": "WPS-Fristen fürs Lohnschutzsystem einhalten",
+        "text": "Löhne im Onshore-Privatsektor müssen über das staatliche Lohnschutzsystem WPS (نظام حماية الأجور) elektronisch ausgezahlt werden &mdash; wer nicht binnen 15 Tagen zahlt, riskiert eine Sperre neuer Arbeitsgenehmigungen (Ministerial Resolution No. 340 of 2026, seit 1. Juni 2026 in Kraft)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung PDPL-konform halten",
+        "text": "Das PDPL (Federal Decree-Law No. 45 of 2021) stuft biometrische Daten ausdrücklich als sensible personenbezogene Daten (البيانات الشخصية الحساسة) ein &mdash; grenzüberschreitende Transfers sind streng reguliert."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender im Takt des Mondes",
+    "text": "In den Vereinigten Arabischen Emiraten legt das Kabinett der VAE alle gesetzlichen Feiertage zentral fest &mdash; einheitlich für alle sieben Emirate, ohne kantonale oder kommunale Unterschiede wie in Europa. Die eigentliche Herausforderung liegt woanders: bei Feiertagen, deren genaues Datum erst kurzfristig feststeht, und bei Unternehmen, die über mehrere Golfstaaten hinweg planen.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Landesweit einheitlich, kurzfristig bestätigt",
+        "text": "Alle Feiertage gelten gleich für alle Emirate &mdash; die religiösen Termine wie Eid al-Fitr und Eid al-Adha bestätigt jedoch erst eine staatliche Mondsichtungs-Kommission, oft nur wenige Tage im Voraus. Neue Daten lassen sich in Klacks sofort nachtragen."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Dubai-Betrieb mit Niederlassungen in Saudi-Arabien, Katar oder Oman braucht mehrere Länderkalender gleichzeitig &mdash; die Mondsichtung weicht zwischen den Golfstaaten gelegentlich um einen Tag ab, und die Nationalfeiertage fallen ohnehin auf unterschiedliche Daten."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
   },
   "solutions": {
     "title": "Wie Klacks Unternehmen in den VAE entlastet",
     "subtitle": "Von der Ramadan-Automatik bis zur WPS-konformen Lohnabsicherung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "nights_stay", "title": "Ramadan-Sollzeit für alle hinterlegbar", "text": "Klacks lässt sich für den Fastenmonat Ramadan mit einer um 2 Stunden reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen &mdash; ohne manuelle Anpassung jedes einzelnen Dienstplans." },
-      { "icon": "schedule", "title": "Überstunden-Tageslimit &amp; 3-Wochen-Summe live im Blick", "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und macht die Gesamtarbeitszeit je 3 Wochen laufend sichtbar; der Nachtzuschlag für Nachtarbeit wird automatisch berechnet." },
-      { "icon": "payments", "title": "Stundenbasis für die WPS-Auszahlung", "text": "Klacks führt dienstplan-abgeglichene Stundenkonten, die die Stundenbasis für die WPS-Lohnauszahlung nach Ministerial Resolution No. 340 of 2026 liefern &mdash; fristgerecht dokumentiert statt riskant geschätzt." },
-      { "icon": "fingerprint", "title": "PDPL-konformes On-Premise-Hosting", "text": "Ihre Planungs- und Personaldaten bleiben On-Premise in Ihrer eigenen Infrastruktur &mdash; ganz ohne den grenzüberschreitenden Datentransfer, den das PDPL für sensible personenbezogene Daten streng reguliert." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
-      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
+      {
+        "icon": "nights_stay",
+        "title": "Ramadan-Sollzeit für alle hinterlegbar",
+        "text": "Klacks lässt sich für den Fastenmonat Ramadan mit einer um 2 Stunden reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen &mdash; ohne manuelle Anpassung jedes einzelnen Dienstplans."
+      },
+      {
+        "icon": "schedule",
+        "title": "Überstunden-Tageslimit &amp; 3-Wochen-Summe live im Blick",
+        "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und macht die Gesamtarbeitszeit je 3 Wochen laufend sichtbar; der Nachtzuschlag für Nachtarbeit wird automatisch berechnet."
+      },
+      {
+        "icon": "payments",
+        "title": "Stundenbasis für die WPS-Auszahlung",
+        "text": "Klacks führt dienstplan-abgeglichene Stundenkonten, die die Stundenbasis für die WPS-Lohnauszahlung nach Ministerial Resolution No. 340 of 2026 liefern &mdash; fristgerecht dokumentiert statt riskant geschätzt."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "PDPL-konformes On-Premise-Hosting",
+        "text": "Ihre Planungs- und Personaldaten bleiben On-Premise in Ihrer eigenen Infrastruktur &mdash; ganz ohne den grenzüberschreitenden Datentransfer, den das PDPL für sensible personenbezogene Daten streng reguliert."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Ausfälle schnell aufgefangen",
+        "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen."
+      }
     ]
   },
   "klacksy": {

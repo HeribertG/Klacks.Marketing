@@ -18,6 +18,19 @@
       { "icon": "gavel", "title": "Neuer 13-Stunden-Tag nach Gesetz 5239/2025", "text": "Seit 16. Februar 2026 ist ein 13-Stunden-Tag bei einem einzigen Arbeitgeber zulässig &mdash; an maximal 37,5 Tagen im Jahr und nur, wenn die 11-stündige Tagesruhe voll gewahrt bleibt." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jeden Schutzpatron",
+    "text": "In Griechenland gelten neben den landesweiten Feiertagen zusätzliche lokale Feiertage (τοπικές αργίες) zu Ehren des jeweiligen Stadtpatrons &mdash; verbindlich für Behörden, Schulen und vielerorts auch für private Betriebe am jeweiligen Ort. Klacks bildet genau das ab, woran einfache Tools scheitern.",
+    "items": [
+      { "icon": "place", "title": "Bis auf den Schutzpatron genau", "text": "Thessaloniki feiert am 26. Oktober den Agios Dimitrios, Patras am 30. November den Agios Andreas und Piräus am 12. Dezember den Agios Spyridon &mdash; jeweils ein eigener lokaler Feiertag, gültig nur für die betroffene Stadt." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Sicherheits- oder Pflegedienst mit Standorten in Athen, Thessaloniki und Patras braucht getrennte Kalender: An Agios Dimitrios ruht nur Thessaloniki, an Agios Andreas nur Patras &mdash; während die Athener Zentrale ganz normal weiterarbeitet." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein lokaler Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks griechische Betriebe entlastet",
     "subtitle": "Von der ERGANI-konformen Erfassung bis zur korrekten Zuschlagslogik &mdash; alles greift ineinander.",

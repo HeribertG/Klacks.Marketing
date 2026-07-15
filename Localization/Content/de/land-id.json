@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für Java und Bali zugleich",
+    "text": "Landesweit gelten dieselben gesetzlichen Feiertage &mdash; ergänzt um cuti bersama, zusätzliche Brückentage per gemeinsamem Ministerialbeschluss. Die hinduistische Provinz Bali kommt mit eigenen religiösen Ruhetagen hinzu, die im Rest des mehrheitlich muslimischen Indonesiens normale Arbeitstage sind.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Bis auf Provinz-Ebene: Bali",
+        "text": "Landesweit gelten dieselben Feiertage, doch der Gouverneur von Bali legt per Rundschreiben (Surat Edaran) jährlich zusätzliche Dispensationstage für hinduistische Feste wie Galungan und Kuningan fest &mdash; eine feste kommunale Feiertagsebene wie in Europa kennt Indonesien dagegen nicht."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Sicherheits- oder Hoteldienst mit Standorten in Jakarta und auf Bali plant beide Kalender parallel &mdash; inklusive Nyepi, dem balinesischen Tag der Stille, an dem die Insel für 24 Stunden vollständig stillsteht, während Jakarta normal weiterarbeitet."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag &mdash; etwa ein cuti-bersama-Brückentag &mdash; auf Stunden &amp; Zuschläge wirkt, oder nur als Hinweis erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks indonesische Betriebe entlastet",
     "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

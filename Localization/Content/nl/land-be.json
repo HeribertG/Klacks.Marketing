@@ -13,21 +13,82 @@
     "eyebrow": "De dagelijkse planningspraktijk in Belgische bedrijven",
     "title": "Paritair Comité, taalwet en de hervorming van 2026",
     "items": [
-      { "icon": "gavel", "title": "Elk Paritair Comité heeft eigen regels", "text": "Elk bedrijf is verplicht ingedeeld bij een Paritair Comité (PC) &mdash; bijvoorbeeld PC 330 Gezondheid, PC 317 Bewaking, PC 121 Schoonmaak of PC 140.03 Logistiek. De betreffende CAO regelt bindend de toeslagen, arbeidstijdgrenzen en planningstermijnen, niet één uniforme wet." },
-      { "icon": "translate", "title": "Taal per vestiging, niet per hoofdzetel", "text": "Arbeidsovereenkomsten, dienstroosters en tijdsregistratie moeten worden opgesteld in de taal van de betreffende vestiging &mdash; Nederlands in Vlaanderen, Frans in Wallonië, Duits in de Duitstalige Gemeenschap. Overtredingen kunnen het document ten voordele van de werknemer ongeldig maken." },
-      { "icon": "fact_check", "title": "Afwijkingenregister en hervorming 2026", "text": "Elke afwijking van het gepubliceerde deeltijdse dienstrooster moet volledig worden gedocumenteerd, anders geldt wettelijk een voltijdse tewerkstelling. Sinds 1 juni 2026 daalde bovendien de minimale deeltijdse arbeidsduur van een derde naar een tiende van de voltijdse norm, en werd de publicatietermijn ingekort tot 7 werkdagen op voorhand." }
+      {
+        "icon": "gavel",
+        "title": "Elk Paritair Comité heeft eigen regels",
+        "text": "Elk bedrijf is verplicht ingedeeld bij een Paritair Comité (PC) &mdash; bijvoorbeeld PC 330 Gezondheid, PC 317 Bewaking, PC 121 Schoonmaak of PC 140.03 Logistiek. De betreffende CAO regelt bindend de toeslagen, arbeidstijdgrenzen en planningstermijnen, niet één uniforme wet."
+      },
+      {
+        "icon": "translate",
+        "title": "Taal per vestiging, niet per hoofdzetel",
+        "text": "Arbeidsovereenkomsten, dienstroosters en tijdsregistratie moeten worden opgesteld in de taal van de betreffende vestiging &mdash; Nederlands in Vlaanderen, Frans in Wallonië, Duits in de Duitstalige Gemeenschap. Overtredingen kunnen het document ten voordele van de werknemer ongeldig maken."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Afwijkingenregister en hervorming 2026",
+        "text": "Elke afwijking van het gepubliceerde deeltijdse dienstrooster moet volledig worden gedocumenteerd, anders geldt wettelijk een voltijdse tewerkstelling. Sinds 1 juni 2026 daalde bovendien de minimale deeltijdse arbeidsduur van een derde naar een tiende van de voltijdse norm, en werd de publicatietermijn ingekort tot 7 werkdagen op voorhand."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regels &amp; kalender",
+    "title": "Eén kalender voor elke gemeenschap",
+    "text": "België kent geen uniforme feestdagenkalender &mdash; de drie taalgemeenschappen hebben elk hun eigen feestdag, die geen wettelijke feestdag is voor de privésector, maar wel scholen, besturen en bepaalde sectoren raakt. Klacks beeldt dat af, in plaats van het te vereenvoudigen.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Tot op gemeenschapsniveau",
+        "text": "De Vlaamse, Franse en Duitstalige Gemeenschap hebben elk een eigen feestdag (11 juli, 27 september, 15 november) &mdash; vooraf ingesteld, zonder dat er een extra gemeentelijk niveau nodig is."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalenders combineren",
+        "text": "Een zorg- of schoonmaakbedrijf met vestigingen in Antwerpen en Luik beheert beide gemeenschapsfeestdagen naast elkaar &mdash; van belang, want scholen van de betreffende gemeenschap sluiten die dag en opvangverplichtingen wijzigen de beschikbaarheid."
+      },
+      {
+        "icon": "tune",
+        "title": "Werkzaam of louter informatief",
+        "text": "U bepaalt per kalender of een feestdag doorwerkt op uren &amp; toeslagen &mdash; of enkel ter herinnering verschijnt."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feestdagregels in Klacks: feestdagen per natie en regio — Duitsland, VS (Alaska) en de Zwitserse kantons Luzern, Jura, Glarus en Appenzell",
+    "imageCaption": "Echte regels uit Klacks: een lijst combineert feestdagen van meerdere landen en kantons &mdash; vrij uitbreidbaar."
   },
   "solutions": {
     "title": "Hoe Klacks Belgische bedrijven ontlast",
     "subtitle": "Van de PC-specifieke regel tot de meertalige documentatie &mdash; alles grijpt op elkaar in.",
     "items": [
-      { "icon": "gavel", "title": "Paritair Comité individueel vastgelegd", "text": "Klacks legt de toeslagen en arbeidstijdgrenzen van het betreffende PC vast &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is &mdash; rechtstreeks in uw regelconfiguratie." },
-      { "icon": "translate", "title": "Dienstroosters per vestiging in de juiste taal", "text": "Klacks is voor elke vestiging beschikbaar in het Nederlands, Frans of Duits &mdash; medewerkers en planners werken in hun eigen landstaal." },
-      { "icon": "fact_check", "title": "Afwijkingenregister volledig bijgehouden", "text": "Elke planwijziging bij deeltijdse medewerkers wordt automatisch gedocumenteerd &mdash; de basis om het wettelijke vermoeden van voltijdse tewerkstelling te voorkomen." },
-      { "icon": "event_available", "title": "Hervorming 2026: deeltijdse minimumarbeidsduur in het oog", "text": "De sinds 1 juni 2026 geldende minimale deeltijdse arbeidsduur van een tiende van de voltijdse norm legt u vast als grenswaarde in Klacks &mdash; het systeem waarschuwt automatisch bij onderschrijding." },
-      { "icon": "schedule", "title": "Vrijwillige overuren in het oog", "text": "Klacks houdt de tot 360 vrijwillige jaarlijkse overuren automatisch bij en toont wanneer de 240-uursgrens is bereikt &mdash; de drempel die uw loonadministratie nodig heeft voor de vrijstelling van bijdragen en belasting." },
-      { "icon": "smart_toy", "title": "Klacksy: regelgebaseerd, geen black box", "text": "De geïntegreerde AI-assistent Klacksy plant via een spraakopdracht &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing." }
+      {
+        "icon": "gavel",
+        "title": "Paritair Comité individueel vastgelegd",
+        "text": "Klacks legt de toeslagen en arbeidstijdgrenzen van het betreffende PC vast &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is &mdash; rechtstreeks in uw regelconfiguratie."
+      },
+      {
+        "icon": "translate",
+        "title": "Dienstroosters per vestiging in de juiste taal",
+        "text": "Klacks is voor elke vestiging beschikbaar in het Nederlands, Frans of Duits &mdash; medewerkers en planners werken in hun eigen landstaal."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Afwijkingenregister volledig bijgehouden",
+        "text": "Elke planwijziging bij deeltijdse medewerkers wordt automatisch gedocumenteerd &mdash; de basis om het wettelijke vermoeden van voltijdse tewerkstelling te voorkomen."
+      },
+      {
+        "icon": "event_available",
+        "title": "Hervorming 2026: deeltijdse minimumarbeidsduur in het oog",
+        "text": "De sinds 1 juni 2026 geldende minimale deeltijdse arbeidsduur van een tiende van de voltijdse norm legt u vast als grenswaarde in Klacks &mdash; het systeem waarschuwt automatisch bij onderschrijding."
+      },
+      {
+        "icon": "schedule",
+        "title": "Vrijwillige overuren in het oog",
+        "text": "Klacks houdt de tot 360 vrijwillige jaarlijkse overuren automatisch bij en toont wanneer de 240-uursgrens is bereikt &mdash; de drempel die uw loonadministratie nodig heeft voor de vrijstelling van bijdragen en belasting."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelgebaseerd, geen black box",
+        "text": "De geïntegreerde AI-assistent Klacksy plant via een spraakopdracht &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing."
+      }
     ]
   },
   "klacksy": {

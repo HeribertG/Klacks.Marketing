@@ -18,6 +18,19 @@
       { "icon": "gavel", "title": "Přesčasy až do maximálně 416 hodin ročně", "text": "Jednostranně nařízené přesčasy jsou omezeny na 8 hodin týdně a 150 hodin ročně, absolutní roční strop včetně dohodnutých přesčasů činí 416 hodin za vyrovnávací období 26 týdnů (na základě kolektivní smlouvy až 52 týdnů) (§ 93 ZP)." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Pravidla &amp; kalendář",
+    "title": "Celostátně jednotné &mdash; a přesto sledované až za hranice",
+    "text": "Česko nezná krajské ani obecní svátky: všech 13 státních svátků platí jednotně pro celou zemi podle zákona č. 245/2000 Sb. Pro firmy poblíž německé hranice ale záleží i na tom, co platí za ní.",
+    "items": [
+      { "icon": "place", "title": "Celostátně jednotné", "text": "Na rozdíl od Německa nebo Švýcarska Česko nezná svátky na úrovni kraje ani obce &mdash; zákon č. 245/2000 Sb. stanovuje všech 13 státních svátků jednotně pro celou zemi." },
+      { "icon": "layers", "title": "Kombinace kalendářů", "text": "Dodavatelský podnik například v Plzni nebo Liberci si navíc uloží německé regionální svátky &mdash; třeba svátek Božího těla a Všech svatých v Bavorsku nebo Den pokání a modliteb v Sasku &mdash; aby sladil výrobu a dispozici kamionů se závody za hranicí." },
+      { "icon": "tune", "title": "Závazné, nebo jen informativní", "text": "U každého kalendáře si sami určíte, zda svátek ovlivňuje hodiny &amp; příplatky &mdash; nebo se zobrazí jen jako připomínka." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Pravidla svátků v Klacks: svátky podle státu a regionu – Německo, USA (Aljaška) a švýcarské kantony Lucern, Jura, Glarus a Appenzell",
+    "imageCaption": "Skutečná pravidla z Klacks: jeden seznam kombinuje svátky několika zemí a jednotlivých kantonů &mdash; libovolně rozšiřitelný."
+  },
   "solutions": {
     "title": "Jak Klacks ulehčuje práci firmám v Česku",
     "subtitle": "Od týdenní pracovní doby podle typu směn až po vlastní infrastrukturu &mdash; vše do sebe zapadá.",

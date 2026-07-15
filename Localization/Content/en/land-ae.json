@@ -13,22 +13,87 @@
     "eyebrow": "Everyday scheduling in UAE businesses",
     "title": "Ramadan, the overtime cap and WPS deadlines",
     "items": [
-      { "icon": "nights_stay", "title": "Shortened Ramadan hours for everyone", "text": "During the holy month of Ramadan, regular daily working hours are cut by 2 hours &mdash; with no reduction in pay, for every private-sector employee regardless of religion (Federal Decree-Law No. 33 of 2021, Art. 17, read with Cabinet Resolution No. 1 of 2022)." },
-      { "icon": "schedule", "title": "Daily overtime limit &amp; the 144-hour cap", "text": "Overtime is capped at 2 hours a day, and total working hours may not exceed 144 hours per 3-week period &mdash; paid at a minimum +25% premium, rising to at least +50% between 22:00 and 04:00 (Art. 19)." },
-      { "icon": "payments", "title": "Meeting WPS payroll deadlines", "text": "Onshore private-sector wages must be paid electronically through the Wage Protection System (WPS) &mdash; employers who miss the 15-day payment window risk a freeze on new work permits (Ministerial Resolution No. 340 of 2026, in force since 1 June 2026)." },
-      { "icon": "fingerprint", "title": "Keeping biometric time tracking PDPL-compliant", "text": "The PDPL (Federal Decree-Law No. 45 of 2021) explicitly classifies biometric data as sensitive personal data &mdash; cross-border transfers are tightly regulated." }
+      {
+        "icon": "nights_stay",
+        "title": "Shortened Ramadan hours for everyone",
+        "text": "During the holy month of Ramadan, regular daily working hours are cut by 2 hours &mdash; with no reduction in pay, for every private-sector employee regardless of religion (Federal Decree-Law No. 33 of 2021, Art. 17, read with Cabinet Resolution No. 1 of 2022)."
+      },
+      {
+        "icon": "schedule",
+        "title": "Daily overtime limit &amp; the 144-hour cap",
+        "text": "Overtime is capped at 2 hours a day, and total working hours may not exceed 144 hours per 3-week period &mdash; paid at a minimum +25% premium, rising to at least +50% between 22:00 and 04:00 (Art. 19)."
+      },
+      {
+        "icon": "payments",
+        "title": "Meeting WPS payroll deadlines",
+        "text": "Onshore private-sector wages must be paid electronically through the Wage Protection System (WPS) &mdash; employers who miss the 15-day payment window risk a freeze on new work permits (Ministerial Resolution No. 340 of 2026, in force since 1 June 2026)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Keeping biometric time tracking PDPL-compliant",
+        "text": "The PDPL (Federal Decree-Law No. 45 of 2021) explicitly classifies biometric data as sensitive personal data &mdash; cross-border transfers are tightly regulated."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Rules &amp; calendar",
+    "title": "A calendar that keeps pace with the moon",
+    "text": "In the United Arab Emirates, all official public holidays are decreed centrally by the UAE Cabinet &mdash; uniformly for all seven emirates, with no cantonal or municipal variation like in Europe. The real challenge lies elsewhere: holidays whose exact date is only confirmed at short notice, and businesses that plan across several Gulf states.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Uniform nationwide, confirmed at short notice",
+        "text": "Every holiday applies equally across all emirates &mdash; but religious dates such as Eid al-Fitr and Eid al-Adha are confirmed only by a national moon-sighting committee, often just days in advance. New dates can be added to Klacks the moment they're announced."
+      },
+      {
+        "icon": "layers",
+        "title": "Mix calendars",
+        "text": "A Dubai business with branches in Saudi Arabia, Qatar or Oman needs several country calendars running at once &mdash; moon sightings occasionally differ by a day between Gulf states, and national days fall on different dates to begin with."
+      },
+      {
+        "icon": "tune",
+        "title": "Binding or purely informational",
+        "text": "For each calendar, you decide whether a holiday affects hours &amp; premiums &mdash; or simply appears as a reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Holiday rules in Klacks: holidays by nation and region — Germany, the USA (Alaska), and the Swiss cantons of Lucerne, Jura, Glarus and Appenzell",
+    "imageCaption": "Real rules from Klacks: one list mixes holidays from several countries and regions &mdash; freely extensible."
   },
   "solutions": {
     "title": "How Klacks takes the load off UAE businesses",
     "subtitle": "From automatic Ramadan hours to WPS-ready payroll security &mdash; everything works together.",
     "items": [
-      { "icon": "nights_stay", "title": "Ramadan target hours can be set for everyone", "text": "Klacks can be set up with daily target hours reduced by 2 hours for all staff during the holy month of Ramadan &mdash; with no need to manually adjust every single schedule." },
-      { "icon": "schedule", "title": "Overtime daily limit &amp; 3-week total live in view", "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and keeps total working hours per 3-week period continuously visible; the night-work premium is calculated automatically." },
-      { "icon": "payments", "title": "The hour basis for WPS payroll", "text": "Klacks keeps hour accounts reconciled against the schedule that provide the hour basis for WPS payroll under Ministerial Resolution No. 340 of 2026 &mdash; documented on time, instead of risky guesswork." },
-      { "icon": "fingerprint", "title": "PDPL-compliant on-premise hosting", "text": "Your scheduling and staff data stay on-premise, on your own infrastructure &mdash; with none of the cross-border data transfer that the PDPL tightly regulates for sensitive personal data." },
-      { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy schedules by voice command &mdash; traceable to defined skills and rules, never an opaque AI decision." },
-      { "icon": "event_busy", "title": "Absences covered fast", "text": "If someone calls in sick, Klacks immediately shows who is qualified and available &mdash; without tearing up the whole schedule." }
+      {
+        "icon": "nights_stay",
+        "title": "Ramadan target hours can be set for everyone",
+        "text": "Klacks can be set up with daily target hours reduced by 2 hours for all staff during the holy month of Ramadan &mdash; with no need to manually adjust every single schedule."
+      },
+      {
+        "icon": "schedule",
+        "title": "Overtime daily limit &amp; 3-week total live in view",
+        "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and keeps total working hours per 3-week period continuously visible; the night-work premium is calculated automatically."
+      },
+      {
+        "icon": "payments",
+        "title": "The hour basis for WPS payroll",
+        "text": "Klacks keeps hour accounts reconciled against the schedule that provide the hour basis for WPS payroll under Ministerial Resolution No. 340 of 2026 &mdash; documented on time, instead of risky guesswork."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "PDPL-compliant on-premise hosting",
+        "text": "Your scheduling and staff data stay on-premise, on your own infrastructure &mdash; with none of the cross-border data transfer that the PDPL tightly regulates for sensitive personal data."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: rule-based, not a black box",
+        "text": "The built-in AI assistant Klacksy schedules by voice command &mdash; traceable to defined skills and rules, never an opaque AI decision."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences covered fast",
+        "text": "If someone calls in sick, Klacks immediately shows who is qualified and available &mdash; without tearing up the whole schedule."
+      }
     ]
   },
   "klacksy": {

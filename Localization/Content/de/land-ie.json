@@ -18,6 +18,19 @@
       { "icon": "cloud_off", "title": "Datenhoheit statt Drittland-Cloud", "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landesweit einheitlich, an der Grenze zweigeteilt",
+    "text": "Die Republik Irland kennt keine Feiertage auf County- oder Gemeinde-Ebene: Alle gesetzlichen Feiertage gelten nach dem Organisation of Working Time Act 1997 landesweit einheitlich. Für Betriebe mit Bezug zu Nordirland zählt trotzdem, was jenseits der Grenze gilt &mdash; dort herrscht ein komplett eigenständiges Feiertagsregime.",
+    "items": [
+      { "icon": "place", "title": "Kein Flickenteppich in Irland selbst", "text": "Anders als in vielen anderen Ländern gibt es in der Republik Irland keine Feiertage auf County- oder Gemeinde-Ebene &mdash; der Organisation of Working Time Act 1997 legt alle gesetzlichen Feiertage landesweit einheitlich fest. Nordirland als Teil des Vereinigten Königreichs hat dagegen ein komplett eigenständiges Regime." },
+      { "icon": "layers", "title": "Republik und Nordirland kombinieren", "text": "Ein Betrieb in der Grenzregion &mdash; etwa in Dundalk (County Louth) oder Letterkenny (County Donegal) &mdash; oder mit Standorten in Dublin und Belfast hinterlegt beide Kalender parallel: St. Brigid's Day (erster Montag im Februar) und den Juni-Feiertag in der Republik, den Orangemen's Day (12. Juli) in Nordirland." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks irische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

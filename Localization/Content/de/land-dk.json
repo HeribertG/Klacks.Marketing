@@ -18,6 +18,19 @@
       { "icon": "fact_check", "title": "Zeiterfassungspflicht seit 1. Juli 2024", "text": "Seit dem 1. Juli 2024 muss jeder dänische Betrieb ein objektives, zuverlässiges Zeiterfassungssystem führen, das die 48-Stunden-Grenze im gleitenden 4-Monats-Schnitt nachweist &mdash; die Aufzeichnungen sind 5 Jahre aufzubewahren." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender fürs ganze Königreich",
+    "text": "Die Färöer und Grönland gehören zum Königreich Dänemark, haben aber eigene gesetzliche Feiertage &mdash; und selbst der Kalender im dänischen Kernland ändert sich: 2024 wurde der Buß- und Bettag als Feiertag gestrichen. Klacks bildet all das ab.",
+    "items": [
+      { "icon": "place", "title": "Eigene Feiertage auf Färöer &amp; Grönland", "text": "Die Färöer feiern Flaggdagur (25. April) und Ólavsøka (29. Juli), Grönland den Nationalfeiertag Ullortuneq (21. Juni) und Helligtrekongersdag (6. Januar) &mdash; Tage, die im dänischen Kernland kein Feiertag sind." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb mit Sitz in Kopenhagen und Einheiten auf den Färöern oder in Grönland kombiniert deren Nationalfeiertage mit dem dänischen Kalender &mdash; ebenso lässt sich für Grenzgänger in der Öresund-Region der schwedische Kalender ergänzen, etwa für das dort arbeitsfreie Mittsommerfest." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks dänische Betriebe entlastet",
     "subtitle": "Von der flexiblen Overenskomst-Abbildung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

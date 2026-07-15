@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Biometrie-Verbot bei der Zeiterfassung", "text": "Fingerabdruck-Zeiterfassung ist auch mit Einwilligung der Mitarbeitenden unzulässig (Art. 22¹b Kodeks pracy) &mdash; Cloud-Zeiterfassungssysteme geraten damit schnell in eine Grauzone." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landesweit einheitlich &mdash; und trotzdem grenzübergreifend im Blick",
+    "text": "Polen kennt keine Feiertage auf Woiwodschafts- oder Gemeinde-Ebene: Alle 14 gesetzlichen Feiertage gelten nach dem Feiertagsgesetz (Ustawa o dniach wolnych od pracy) einheitlich im ganzen Land. Für Betriebe an der Westgrenze zählt trotzdem, was jenseits davon gilt.",
+    "items": [
+      { "icon": "place", "title": "Landesweit einheitlich", "text": "Anders als in Deutschland oder der Schweiz gibt es in Polen keine Feiertage auf Woiwodschafts- oder Gemeinde-Ebene &mdash; das Feiertagsgesetz legt alle 14 gesetzlichen Feiertage landesweit einheitlich fest. Auch der Sankt-Martins-Tag in Posen bleibt ein städtisches Fest ohne eigenen arbeitsfreien Status &mdash; er fällt auf den ohnehin landesweiten Unabhängigkeitstag am 11. November." },
+      { "icon": "layers", "title": "Kalender über die Grenze mischen", "text": "Ein Zulieferbetrieb in der Woiwodschaft Lebus oder Westpommern, der Just-in-Time-Komponenten an Werke in Sachsen oder Bayern liefert, hinterlegt zusätzlich die dortigen Regionalfeiertage &mdash; etwa Fronleichnam und Allerheiligen in Bayern oder den Reformationstag in Sachsen &mdash; um Lagerüberlastung und Lkw-Standzeiten an geschlossenen deutschen Werkstoren zu vermeiden." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks polnische Betriebe entlastet",
     "subtitle": "Von der vollständigen Ewidencja bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

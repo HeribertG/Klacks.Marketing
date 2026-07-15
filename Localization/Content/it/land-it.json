@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "balance",
     "badge": "Open Source · On-Premise · Protezione dei dati italiana",
-    "titleHtml": "Pianificazione del personale, in cui <span class=\"text-secondary\">siete voi a mantenere il controllo.</span>",
-    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i percorsi e si lascia guidare da un assistente IA &mdash; On-Premise, Open Source, con il modello IA di vostra scelta. Klacksy lavora in modo basato su regole e verificabile anziché con un controllo algoritmico a distanza non trasparente &mdash; il che facilita l'accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro richiesti dall'Art. 4 dello Statuto dei Lavoratori (Legge n. 300/1970).",
+    "titleHtml": "Pianificazione del personale, in cui <span class=\"text-secondary\">è Lei a mantenere il controllo.</span>",
+    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i percorsi e si lascia guidare da un assistente IA &mdash; On-Premise, Open Source, con il modello IA di Sua scelta. Klacksy lavora in modo basato su regole e verificabile anziché con un controllo algoritmico a distanza non trasparente &mdash; il che facilita l'accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro richiesti dall'Art. 4 dello Statuto dei Lavoratori (Legge n. 300/1970).",
     "screenshotFile": "app-calendar-de.png",
     "screenshotAlt": "Vista calendario di Klacks per la pianificazione del personale in Italia",
     "screenshotLabel": "Calendario"
@@ -18,21 +18,34 @@
       { "icon": "shield_lock", "title": "Garante Privacy &amp; sovranità dei dati", "text": "I dati sensibili dei dipendenti, come i saldi di straordinario o i dati sanitari, sono soggetti alle rigide disposizioni del Garante per la protezione dei dati personali &mdash; in particolare in caso di trattamento dei dati al di fuori dell'UE." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regole &amp; calendario",
+    "title": "Decide il santo patrono: un giorno festivo per ogni comune",
+    "text": "In Italia ognuno dei circa 7.900 comuni ha una propria festività legale &mdash; il giorno del santo patrono, stabilito con delibera comunale e disciplinato dalla Legge n. 260/1949. Klacks rispecchia esattamente questa realtà frammentata, invece di ignorarla.",
+    "items": [
+      { "icon": "place", "title": "Santo patrono per ogni comune", "text": "Milano festeggia Sant'Ambrogio il 7 dicembre, Roma i Santi Pietro e Paolo il 29 giugno (a Roma persino sancito da un'intesa di Stato con la Santa Sede) e Napoli San Gennaro il 19 settembre &mdash; se il giorno cade in una giornata lavorativa, è festivo a tutti gli effetti per aziende private e pubblica amministrazione." },
+      { "icon": "layers", "title": "Unire calendari", "text": "Un'azienda di assistenza o di vigilanza attiva tra Milano e la vicina Sesto San Giovanni, a pochi chilometri di distanza, gestisce due calendari patronali in parallelo: il 7 dicembre a Milano è festivo con obbligo di maggiorazione, mentre a Sesto San Giovanni &mdash; il cui patrono San Giovanni Battista si festeggia solo il 24 giugno &mdash; si lavora normalmente." },
+      { "icon": "tune", "title": "Vincolante o solo informativo", "text": "Lei decide, calendario per calendario, se un giorno festivo influisce su ore &amp; supplementi &mdash; oppure appare solo come promemoria." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Regole sui giorni festivi in Klacks: giorni festivi per nazione e regione – Germania, USA (Alaska) e i cantoni svizzeri di Lucerna, Giura, Glarona e Appenzello",
+    "imageCaption": "Regole reali di Klacks: un elenco unisce i giorni festivi di più paesi e singoli cantoni &mdash; liberamente ampliabile."
+  },
   "solutions": {
     "title": "Come Klacks alleggerisce le aziende italiane",
-    "subtitle": "Dalla pianificazione automatica dei turni alla propria infrastruttura &mdash; tutto sotto il vostro controllo.",
+    "subtitle": "Dalla pianificazione automatica dei turni alla propria infrastruttura &mdash; tutto sotto il Suo controllo.",
     "items": [
       { "icon": "auto_awesome", "title": "Turni pianificati automaticamente", "text": "L'Autofill Wizard pianifica turni e percorsi in base a qualifica, disponibilità e preferenze &mdash; in pochi minuti anziché ore." },
       { "icon": "gavel", "title": "Regole su orario di lavoro e riposo verificate automaticamente", "text": "L'orario normale, l'orario massimo e il riposo giornaliero di almeno 11 ore ogni 24 ore vengono monitorati in tempo reale in base al CCNL configurato (D.Lgs. 66/2003, Art. 7 &amp; 9)." },
       { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Dove gli interventi si svolgono in luoghi diversi, Klacks stabilisce l'ordine in modo che i percorsi restino brevi e le fasce orarie vengano rispettate." },
-      { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla vostra infrastruttura. I dati del personale non lasciano la vostra azienda &mdash; nemmeno verso l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
-      { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; potete vedere esattamente cosa fa Klacks, creando così la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." }
+      { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale non lasciano la Sua azienda &mdash; nemmeno verso l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
+      { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; può vedere esattamente cosa fa Klacks, creando così la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistente IA",
     "title": "Klacksy: l'assistente integrato con scelta libera del modello",
-    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks e può essere gestito con il modello IA di vostra scelta &mdash; anche ospitato localmente. Un sistema di competenze e regole predefinito garantisce che ogni proposta resti verificabile: nessun controllo algoritmico a distanza non trasparente ai sensi dell'Art. 4 dello Statuto dei Lavoratori, ma una pianificazione basata su regole e spiegabile.",
+    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks e può essere gestito con il modello IA di Sua scelta &mdash; anche ospitato localmente. Un sistema di competenze e regole predefinito garantisce che ogni proposta resti verificabile: nessun controllo algoritmico a distanza non trasparente ai sensi dell'Art. 4 dello Statuto dei Lavoratori, ma una pianificazione basata su regole e spiegabile.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistente chat Klacksy nell'interfaccia Klacks"
   },
@@ -43,7 +56,7 @@
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Provate Klacks nella vostra azienda",
-    "text": "Provate nel Playground come Klacks pianifica i turni, verifica le regole sull'orario di lavoro dei CCNL e si lascia guidare da un assistente IA &mdash; oppure installatelo direttamente On-Premise. Gratuito e senza registrazione."
+    "title": "Provi Klacks nella Sua azienda",
+    "text": "Provi nel Playground come Klacks pianifica i turni, verifica le regole sull'orario di lavoro dei CCNL e si lascia guidare da un assistente IA &mdash; oppure lo installi direttamente On-Premise. Gratuito e senza registrazione."
   }
 }

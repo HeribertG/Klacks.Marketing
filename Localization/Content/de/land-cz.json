@@ -18,6 +18,19 @@
       { "icon": "gavel", "title": "Überstunden bis maximal 416 Stunden im Jahr", "text": "Einseitig angeordnete Überstunden sind auf 8 Stunden pro Woche und 150 Stunden pro Jahr begrenzt, die absolute Jahresobergrenze inklusive vereinbarter Überstunden liegt bei 416 Stunden über einen Ausgleichszeitraum von 26 (per Tarifvertrag bis 52) Wochen (§ 93 ZP)." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landesweit einheitlich &mdash; und trotzdem grenzübergreifend im Blick",
+    "text": "Tschechien kennt keine kantonalen oder kommunalen Feiertage: Alle 13 gesetzlichen Feiertage gelten nach dem Gesetz Nr. 245/2000 Sb. einheitlich im ganzen Land. Für Betriebe nahe der deutschen Grenze zählt trotzdem, was jenseits davon gilt.",
+    "items": [
+      { "icon": "place", "title": "Landesweit einheitlich", "text": "Anders als in Deutschland oder der Schweiz gibt es in Tschechien keine Feiertage auf Kraj- oder Gemeinde-Ebene &mdash; das Gesetz Nr. 245/2000 Sb. legt alle 13 gesetzlichen Feiertage bundesweit einheitlich fest." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Zulieferbetrieb etwa im Raum Pilsen oder Reichenberg (Liberec) hinterlegt zusätzlich die deutschen Regionalfeiertage &mdash; etwa Fronleichnam und Allerheiligen in Bayern oder den Buß- und Bettag in Sachsen &mdash; um Produktion und Lkw-Disposition mit den Werken jenseits der Grenze zu synchronisieren." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks Betriebe in Tschechien entlastet",
     "subtitle": "Vom schichtabhängigen Wochensoll bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

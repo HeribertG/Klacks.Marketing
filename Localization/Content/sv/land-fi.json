@@ -13,21 +13,82 @@
     "eyebrow": "Planeringsvardagen i Finland",
     "title": "Periodarbete, vilotider och tidsfristen för arbetsschemat",
     "items": [
-      { "icon": "gavel", "title": "Summera periodarbete (jaksotyö) korrekt", "text": "I branscher med oregelbunden arbetsbelastning får arbetstiden förläggas till högst 120 timmar per 3-veckorsperiod eller högst 80 timmar per 2-veckorsperiod (arbetstidslagen 872/2019 § 7) &mdash; övertid uppstår först när denna periodsumma överskrids. För hand är detta felbenäget över många medarbetare." },
-      { "icon": "bedtime", "title": "Korrekt förkorta och kompensera vilotider", "text": "Den dagliga vilotiden på 11 timmar (§ 25) kan i skift- eller periodarbete förkortas till 9 timmar &mdash; den förlorade tiden måste då kompenseras sammanhängande inom 14 dagar. Den veckovisa vilotiden (§ 27) måste vara minst 35 sammanhängande timmar." },
-      { "icon": "event_note", "title": "Publicera arbetsschemat (työvuoroluettelo) i tid", "text": "Arbetsschemat måste meddelas medarbetarna skriftligen minst en vecka innan perioden börjar. När det väl har publicerats får det bara ändras med medarbetarens samtycke eller av ett vägande, arbetsrelaterat skäl (painava syy)." }
+      {
+        "icon": "gavel",
+        "title": "Summera periodarbete (jaksotyö) korrekt",
+        "text": "I branscher med oregelbunden arbetsbelastning får arbetstiden förläggas till högst 120 timmar per 3-veckorsperiod eller högst 80 timmar per 2-veckorsperiod (arbetstidslagen 872/2019 § 7) &mdash; övertid uppstår först när denna periodsumma överskrids. För hand är detta felbenäget över många medarbetare."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Korrekt förkorta och kompensera vilotider",
+        "text": "Den dagliga vilotiden på 11 timmar (§ 25) kan i skift- eller periodarbete förkortas till 9 timmar &mdash; den förlorade tiden måste då kompenseras sammanhängande inom 14 dagar. Den veckovisa vilotiden (§ 27) måste vara minst 35 sammanhängande timmar."
+      },
+      {
+        "icon": "event_note",
+        "title": "Publicera arbetsschemat (työvuoroluettelo) i tid",
+        "text": "Arbetsschemat måste meddelas medarbetarna skriftligen minst en vecka innan perioden börjar. När det väl har publicerats får det bara ändras med medarbetarens samtycke eller av ett vägande, arbetsrelaterat skäl (painava syy)."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regler och kalender",
+    "title": "Enhetligt i hela landet &mdash; med ett självstyrt undantag",
+    "text": "Finlands lagstadgade helgdagar gäller enhetligt i hela landet &mdash; en regional eller kommunal nivå som i Tyskland eller Schweiz finns inte. Det enda undantaget är det autonoma landskapet Åland: självstyrelsedagen är där en egen ledig dag &mdash; men bara för den offentliga sektorn.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Åland: en dag, två regler",
+        "text": "Självstyrelsedagen (9 juni) är på Åland en officiell flaggdag och ledig för förvaltning och skolor &mdash; för den privata sektorn gäller den inte automatiskt, eftersom Åland saknar lagstiftningsbehörighet över privata anställningsförhållanden. Klacks avbildar just denna sektorsspecifika skillnad."
+      },
+      {
+        "icon": "layers",
+        "title": "Blanda kalendrar",
+        "text": "Ett rederi med säte i Mariehamn planerar besättningar och hamnpersonal mellan finländska fastlandet, Åland och Sverige &mdash; och behöver därför upp till tre helgdagskalendrar samtidigt, inklusive Sveriges nationaldag (6 juni) och den svenska midsommaren."
+      },
+      {
+        "icon": "tune",
+        "title": "Verksam eller bara informativ",
+        "text": "Du bestämmer per kalender om en helgdag påverkar timmar &amp; tillägg &mdash; eller bara visas som en påminnelse."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Helgdagsregler i Klacks: helgdagar per nation och region — Tyskland, USA (Alaska) samt de schweiziska kantonerna Luzern, Jura, Glarus och Appenzell",
+    "imageCaption": "Verkliga regler från Klacks: en lista blandar helgdagar från flera länder och regioner &mdash; fritt utökningsbar."
   },
   "solutions": {
     "title": "Så avlastar Klacks finländska verksamheter",
     "subtitle": "Från automatisk periodberäkning till publicering i tid &mdash; allt hänger ihop.",
     "items": [
-      { "icon": "gavel", "title": "Periodarbete &amp; övertid beräknas automatiskt", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %." },
-      { "icon": "bedtime", "title": "Vilotider &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på 14-dagarsfristen för kompensationen &mdash; liksom den veckovisa minsta vilotiden på 35 timmar." },
-      { "icon": "event_note", "title": "Arbetsschemat publiceras i tid", "text": "Klacks synliggör en-veckorsfristen för publiceringen av arbetsschemat och markerar efterhandsändringar som samtyckespliktiga &mdash; anpassat efter ditt branschspecifika kollektivavtal (TES)." },
-      { "icon": "paid", "title": "Söndagstillägg korrekt bokfört", "text": "För arbete på söndagar och kyrkliga helgdagar bokför Klacks automatiskt det lagstadgade 100-procentiga tillägget (§ 20) &mdash; uppstår samtidigt övertidsarbete tillkommer övertidsersättningen." },
-      { "icon": "shield_lock", "title": "On-premise: full datasuveränitet", "text": "Klacks körs på din egen infrastruktur, AI-modellen väljer du själv &mdash; även lokalt hostad. Det stödjer en återhållsam hantering av personaldata, så som lagen om integritetsskydd i arbetslivet (759/2004) kräver." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbaserad, ingen svart låda", "text": "Den integrerade AI-assistenten Klacksy planerar via röstkommandon &mdash; spårbart enligt lagrade färdigheter och regler, inte som ett ogenomskinligt AI-beslut." }
+      {
+        "icon": "gavel",
+        "title": "Periodarbete &amp; övertid beräknas automatiskt",
+        "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Vilotider &amp; 14-dagars kompensation övervakas",
+        "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på 14-dagarsfristen för kompensationen &mdash; liksom den veckovisa minsta vilotiden på 35 timmar."
+      },
+      {
+        "icon": "event_note",
+        "title": "Arbetsschemat publiceras i tid",
+        "text": "Klacks synliggör en-veckorsfristen för publiceringen av arbetsschemat och markerar efterhandsändringar som samtyckespliktiga &mdash; anpassat efter ditt branschspecifika kollektivavtal (TES)."
+      },
+      {
+        "icon": "paid",
+        "title": "Söndagstillägg korrekt bokfört",
+        "text": "För arbete på söndagar och kyrkliga helgdagar bokför Klacks automatiskt det lagstadgade 100-procentiga tillägget (§ 20) &mdash; uppstår samtidigt övertidsarbete tillkommer övertidsersättningen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: full datasuveränitet",
+        "text": "Klacks körs på din egen infrastruktur, AI-modellen väljer du själv &mdash; även lokalt hostad. Det stödjer en återhållsam hantering av personaldata, så som lagen om integritetsskydd i arbetslivet (759/2004) kräver."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbaserad, ingen svart låda",
+        "text": "Den integrerade AI-assistenten Klacksy planerar via röstkommandon &mdash; spårbart enligt lagrade färdigheter och regler, inte som ett ogenomskinligt AI-beslut."
+      }
     ]
   },
   "klacksy": {

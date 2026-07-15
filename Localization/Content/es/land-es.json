@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Reglas &amp; calendario",
+    "title": "Un calendario para cada municipio",
+    "text": "España no tiene un sistema festivo único, sino tres niveles que se combinan: 8 festivos nacionales, hasta 4 que decide cada Comunidad Autónoma y 2 que fija cada ayuntamiento &mdash; 14 al año, pero distintos en cada ubicación. Klacks refleja exactamente eso, en lugar de simplificarlo.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Hasta el nivel municipal",
+        "text": "Además de los 8 festivos nacionales, cada Comunidad Autónoma añade hasta 4 propios &mdash; como la Diada Nacional de Cataluña (11 de septiembre) y San Juan (24 de junio), o la Fiesta de la Comunidad de Madrid (2 de mayo) &mdash; y cada ayuntamiento suma además 2 festivos locales, normalmente dedicados al patrón o a la patrona."
+      },
+      {
+        "icon": "layers",
+        "title": "Combinar calendarios",
+        "text": "Una empresa de cuidados o de seguridad con sede en la ciudad de Madrid y delegaciones en Getafe, Leganés y Pozuelo de Alarcón gestiona los festivos municipales de cada centro por separado &mdash; San Isidro (15 de mayo) rige estrictamente solo dentro del término municipal de Madrid, mientras las localidades vecinas trabajan con normalidad ese día y tienen sus propios festivos patronales."
+      },
+      {
+        "icon": "tune",
+        "title": "Con efecto o solo informativo",
+        "text": "Usted decide, para cada calendario, si un festivo afecta a las horas y a los pluses &mdash; o si aparece solo como recordatorio."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Reglas de festivos en Klacks: festivos por nación y región — Alemania, Estados Unidos (Alaska) así como los cantones suizos de Lucerna, Jura, Glaris y Appenzell",
+    "imageCaption": "Reglas reales de Klacks: una lista combina festivos de varios países y cantones &mdash; ampliable libremente."
+  },
   "solutions": {
     "title": "Cómo Klacks alivia la carga de las empresas españolas",
     "subtitle": "Desde la comprobación automática del descanso hasta su propia infraestructura &mdash; todo encaja a la perfección.",

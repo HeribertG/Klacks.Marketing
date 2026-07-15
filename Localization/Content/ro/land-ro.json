@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Reguli &amp; calendar",
+    "title": "Uniform la nivel național &mdash; cu o excepție personală",
+    "text": "Sărbătorile legale din România, conform art. 139 din Codul Muncii, sunt aceleași în întreaga țară &mdash; fără reguli speciale la nivel de județ sau localitate. O particularitate nu privește însă regiunea, ci persoana.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Individual, nu regional",
+        "text": "România nu are sărbători legale la nivel de județ sau localitate &mdash; există însă un drept individual: angajații care aparțin unor culte religioase legale, altele decât cele creștine, primesc câte două zile libere plătite pentru fiecare dintre cele 3 sărbători religioase proprii anuale (art. 139 din Codul Muncii)."
+      },
+      {
+        "icon": "layers",
+        "title": "Calendare combinate",
+        "text": "Centrele internaționale BPO și Shared Service din București, Cluj-Napoca sau Timișoara gestionează în paralel calendarul ortodox (iulian) din România și calendarul occidental al clienților lor &mdash; Paștele, Rusaliile și Înălțarea cad adesea la săptămâni distanță."
+      },
+      {
+        "icon": "tune",
+        "title": "Cu efect sau doar informativ",
+        "text": "Stabiliți pentru fiecare calendar dacă o sărbătoare influențează orele &amp; sporurile &mdash; sau apare doar ca reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Regulile privind sărbătorile legale în Klacks: sărbători pe națiune și regiune — Germania, SUA (Alaska) și cantoanele elvețiene Luzern, Jura, Glarus și Appenzell",
+    "imageCaption": "Reguli reale din Klacks: o listă combină sărbătorile mai multor țări și regiuni &mdash; extensibilă liber."
+  },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea companiilor din România",
     "subtitle": "De la pontajul fără nicio lacună până la sporul de repaus calculat corect &mdash; totul se îmbină perfect.",

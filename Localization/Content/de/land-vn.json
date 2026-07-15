@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Biometrie als sensible Daten", "text": "Biometrische Daten gelten als sensible personenbezogene Daten (Decree 13/2023/NĐ-CP) &mdash; eine grenzüberschreitende Übermittlung erfordert ein Transfer-Impact-Assessment-Dossier beim Ministerium für öffentliche Sicherheit." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Nationalkalender &mdash; und trotzdem beweglich",
+    "text": "Vietnam kennt keine Provinz- oder Gemeinde-Feiertage &mdash; alle 11 gesetzlichen Feiertage gelten landesweit einheitlich nach dem Bộ luật Lao động. Beweglich wird es trotzdem: Die genaue Tage-Aufteilung rund um das mehrtägige Tết-Fest legt die Regierung jedes Jahr neu per Beschluss fest.",
+    "items": [
+      { "icon": "place", "title": "Ein Land, ein Kalender", "text": "Keine Provinz- oder Gemeinde-Ebene: Alle 11 nationalen Feiertage &mdash; darunter das mehrtägige Tết Nguyên Đán und der Nationalfeiertag am 2. September &mdash; gelten im gesamten Staatsgebiet gleich. Nur die genaue Aufteilung der Tết-Tage bestimmt die Regierung jährlich neu per Beschluss." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ausländische Mitarbeitende haben laut Art. 112 Bộ luật Lao động Anspruch auf zwei zusätzliche bezahlte freie Tage &mdash; für ihr Neujahrsfest und ihren Nationalfeiertag im Herkunftsland. Klacks führt diese individuellen Kalender parallel zum vietnamesischen Nationalkalender." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; die vorgeschriebenen 300%-Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks Betriebe in Vietnam entlastet",
     "subtitle": "Vom automatisch überwachten Überstunden-Cap bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",

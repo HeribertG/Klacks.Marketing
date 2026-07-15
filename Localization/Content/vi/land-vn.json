@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Dữ liệu sinh trắc học là dữ liệu nhạy cảm", "text": "Dữ liệu sinh trắc học được coi là dữ liệu cá nhân nhạy cảm (Nghị định 13/2023/NĐ-CP) &mdash; việc chuyển dữ liệu ra nước ngoài đòi hỏi phải có hồ sơ đánh giá tác động chuyển dữ liệu trình Bộ Công an." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Quy tắc &amp; Lịch",
+    "title": "Một lịch quốc gia &mdash; nhưng vẫn linh hoạt",
+    "text": "Việt Nam không có ngày nghỉ lễ ở cấp tỉnh hay cấp xã &mdash; toàn bộ 11 ngày nghỉ lễ theo Bộ luật Lao động áp dụng thống nhất trên cả nước. Tuy vậy vẫn có sự linh hoạt: cách sắp xếp cụ thể các ngày nghỉ Tết Nguyên Đán được Chính phủ quyết định lại mỗi năm bằng nghị quyết riêng.",
+    "items": [
+      { "icon": "place", "title": "Một đất nước, một lịch", "text": "Không có cấp tỉnh hay cấp xã: toàn bộ 11 ngày nghỉ lễ quốc gia &mdash; trong đó có Tết Nguyên Đán kéo dài nhiều ngày và Quốc khánh 2/9 &mdash; áp dụng như nhau trên cả nước. Chỉ cách sắp xếp cụ thể các ngày nghỉ Tết được Chính phủ quyết định lại mỗi năm." },
+      { "icon": "layers", "title": "Kết hợp nhiều lịch", "text": "Theo Điều 112 Bộ luật Lao động, người lao động nước ngoài có thêm 2 ngày nghỉ hưởng nguyên lương &mdash; 1 ngày Tết cổ truyền và 1 ngày Quốc khánh của nước họ. Klacks quản lý song song các lịch cá nhân này cùng với lịch quốc gia Việt Nam." },
+      { "icon": "tune", "title": "Có hiệu lực hay chỉ mang tính thông tin", "text": "Bạn tự quyết định cho từng lịch: một ngày lễ có ảnh hưởng đến giờ công &amp; mức phụ cấp 300% bắt buộc hay chỉ hiển thị như một lời nhắc." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Quy tắc ngày nghỉ lễ trong Klacks: ngày lễ theo từng quốc gia và khu vực – Đức, Hoa Kỳ (Alaska) cùng các bang (Kanton) của Thụy Sĩ Luzern, Jura, Glarus và Appenzell",
+    "imageCaption": "Quy tắc thực tế từ Klacks: một danh sách kết hợp ngày lễ của nhiều quốc gia và khu vực &mdash; có thể mở rộng tùy ý."
+  },
   "solutions": {
     "title": "Klacks giúp giảm tải cho doanh nghiệp tại Việt Nam như thế nào",
     "subtitle": "Từ giới hạn làm thêm giờ được giám sát tự động đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",

@@ -18,6 +18,19 @@
       { "icon": "fact_check", "title": "Abweichungsregister und Reform 2026", "text": "Jede Abweichung vom publizierten Teilzeit-Dienstplan muss lückenlos dokumentiert werden, sonst gilt gesetzlich Vollzeitbeschäftigung. Seit 1. Juni 2026 sank zudem die Teilzeit-Mindestarbeitszeit von einem Drittel auf ein Zehntel der Vollzeitquote, und die Publikationsfrist verkürzte sich auf 7 Werktage im Voraus." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jede Sprachgemeinschaft",
+    "text": "Belgien hat keinen einheitlichen Feiertagskalender &mdash; die drei Sprachgemeinschaften pflegen eigene Gemeinschaftsfeiertage, die zwar nicht landesweit gesetzlich sind, aber Schulen, Verwaltung und einzelne Branchen betreffen. Klacks bildet das ab, statt es zu vereinfachen.",
+    "items": [
+      { "icon": "place", "title": "Bis auf Gemeinschaftsebene", "text": "Flämische, Französische und Deutschsprachige Gemeinschaft haben je einen eigenen Gemeinschaftsfeiertag (11. Juli, 27. September, 15. November) &mdash; passend hinterlegt, eine zusätzliche Gemeinde-Ebene braucht es dafür nicht." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Pflege- oder Reinigungsbetrieb mit Standorten in Antwerpen und Lüttich verwaltet beide Gemeinschaftsfeiertage parallel &mdash; wichtig, weil an diesen Tagen die Schulen der jeweiligen Gemeinschaft schliessen und Betreuungspflichten die Verfügbarkeit ändern." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks belgische Betriebe entlastet",
     "subtitle": "Von der PC-spezifischen Regel bis zur mehrsprachigen Dokumentation &mdash; alles greift ineinander.",

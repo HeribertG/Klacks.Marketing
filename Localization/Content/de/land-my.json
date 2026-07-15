@@ -13,21 +13,82 @@
     "eyebrow": "Der Planungsalltag in malaysischen Betrieben",
     "title": "Employment Act 1955, gestufte Zuschläge und PDPA",
     "items": [
-      { "icon": "gavel", "title": "45-Stunden-Woche seit 2023 im Blick behalten", "text": "Der Employment (Amendment) Act 2022 (Act A1651) senkte die reguläre Wochenarbeitszeit zum 1. Januar 2023 von 48 auf 45 Stunden (Section 60A Employment Act 1955) &mdash; gültig für Halbinsel-Malaysia und Labuan, während Sabah und Sarawak eigene, weitgehend parallele Ordinances haben. Jede darüber geplante Stunde ist automatisch zuschlagspflichtige Überstunde." },
-      { "icon": "paid", "title": "Gestufte Überstundenzuschläge korrekt trennen", "text": "Überstunden an normalen Arbeitstagen kosten mindestens das 1,5-Fache, am wöchentlichen Ruhetag (hari rehat) das 2,0-Fache und an gesetzlichen Feiertagen (hari kelepasan am) das 3,0-Fache des Stundenlohns (Section 60A(3), 60(3), 60D(3)) &mdash; dazu die RM-4.000-Lohnschwelle, ab der diese Zuschlagsrechte entfallen. Von Hand eine häufige Fehlerquelle." },
-      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung als sensible PDPA-Daten", "text": "Seit dem Personal Data Protection (Amendment) Act 2024 (Act A1727) gelten Fingerabdruck- und Gesichtsscan-Daten zur Zeiterfassung ausdrücklich als sensible persönliche Daten &mdash; mit strengeren Einwilligungs- und Cross-Border-Transfer-Pflichten." }
+      {
+        "icon": "gavel",
+        "title": "45-Stunden-Woche seit 2023 im Blick behalten",
+        "text": "Der Employment (Amendment) Act 2022 (Act A1651) senkte die reguläre Wochenarbeitszeit zum 1. Januar 2023 von 48 auf 45 Stunden (Section 60A Employment Act 1955) &mdash; gültig für Halbinsel-Malaysia und Labuan, während Sabah und Sarawak eigene, weitgehend parallele Ordinances haben. Jede darüber geplante Stunde ist automatisch zuschlagspflichtige Überstunde."
+      },
+      {
+        "icon": "paid",
+        "title": "Gestufte Überstundenzuschläge korrekt trennen",
+        "text": "Überstunden an normalen Arbeitstagen kosten mindestens das 1,5-Fache, am wöchentlichen Ruhetag (hari rehat) das 2,0-Fache und an gesetzlichen Feiertagen (hari kelepasan am) das 3,0-Fache des Stundenlohns (Section 60A(3), 60(3), 60D(3)) &mdash; dazu die RM-4.000-Lohnschwelle, ab der diese Zuschlagsrechte entfallen. Von Hand eine häufige Fehlerquelle."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung als sensible PDPA-Daten",
+        "text": "Seit dem Personal Data Protection (Amendment) Act 2024 (Act A1727) gelten Fingerabdruck- und Gesichtsscan-Daten zur Zeiterfassung ausdrücklich als sensible persönliche Daten &mdash; mit strengeren Einwilligungs- und Cross-Border-Transfer-Pflichten."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jeden Bundesstaat",
+    "text": "Malaysias 13 Bundesstaaten und 3 Bundesterritorien dürfen nach dem Holidays Act 1951 eigene gesetzliche Feiertage erlassen &mdash; oft nur für ein einziges Bundesland gültig. Klacks bildet genau diesen Flickenteppich ab.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Bis auf Bundesstaats-Ebene",
+        "text": "Section 9 des Holidays Act 1951 erlaubt jedem Bundesstaat eigene Feiertage &mdash; vom Geburtstag des Sultans von Selangor am 11. Dezember bis zu den Erntefesten Tadau Kaamatan in Sabah (30./31. Mai) und Hari Gawai in Sarawak (1./2. Juni), die auf der malaysischen Halbinsel reguläre Arbeitstage sind."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Betrieb mit Hauptsitz im Bundesterritorium Kuala Lumpur, Lager im angrenzenden Selangor und Kunden in Johor braucht mehrere Kalender parallel &mdash; etwa für den Hari-Wilayah-Feiertag am 1. Februar, der nur in Kuala Lumpur, Putrajaya und Labuan gilt, während Selangor und Johor arbeiten."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Bundesstaaten &mdash; frei erweiterbar."
   },
   "solutions": {
     "title": "Wie Klacks malaysische Betriebe entlastet",
     "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks kennt die 45-Stunden-Grenze aus Section 60A (seit 1.1.2023) ebenso wie das tägliche 8-Stunden-Limit (9h in der 5-Tage-Woche) &mdash; jede darüber geplante Stunde wird automatisch als Überstunde markiert." },
-      { "icon": "paid", "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt", "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; inklusive der RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen." },
-      { "icon": "schedule", "title": "Spread-over und Monatslimit im Blick", "text": "Die 10-Stunden-Spanne vom ersten Arbeitsbeginn bis Feierabend (Section 60A(1)), die 12-Stunden-Tageskappe und das 104-Stunden-Monatslimit (Employment (Limitation of Overtime Work) Regulations 1980) werden automatisch überwacht, ebenso die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Ihre Personal- und Planungsdaten verlassen Ihr Haus nie." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
-      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
+      {
+        "icon": "gavel",
+        "title": "45-Stunden-Woche automatisch überwacht",
+        "text": "Klacks kennt die 45-Stunden-Grenze aus Section 60A (seit 1.1.2023) ebenso wie das tägliche 8-Stunden-Limit (9h in der 5-Tage-Woche) &mdash; jede darüber geplante Stunde wird automatisch als Überstunde markiert."
+      },
+      {
+        "icon": "paid",
+        "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt",
+        "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; inklusive der RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen."
+      },
+      {
+        "icon": "schedule",
+        "title": "Spread-over und Monatslimit im Blick",
+        "text": "Die 10-Stunden-Spanne vom ersten Arbeitsbeginn bis Feierabend (Section 60A(1)), die 12-Stunden-Tageskappe und das 104-Stunden-Monatslimit (Employment (Limitation of Overtime Work) Regulations 1980) werden automatisch überwacht, ebenso die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Ihre Personal- und Planungsdaten verlassen Ihr Haus nie."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Ausfälle schnell aufgefangen",
+        "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen."
+      }
     ]
   },
   "klacksy": {

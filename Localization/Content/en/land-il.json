@@ -31,6 +31,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Rules &amp; calendar",
+    "title": "Holidays beyond the map",
+    "text": "Israel has no cantonal or regional holiday layer the way other countries do &mdash; the legal variety runs along religious affiliation instead, and in Jerusalem even along an ancient walled-city privilege. Klacks captures exactly what purely geography-based tools miss.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Holidays by religious affiliation",
+        "text": "Jewish holidays apply nationally, but Muslim, Christian and Druze employees have the legal right to take the holidays of their own religion as a paid rest day instead &mdash; chosen per person, but only as a whole package, never mixed."
+      },
+      {
+        "icon": "layers",
+        "title": "Mix calendars",
+        "text": "Purim falls on 14 Adar nationwide, but in the anciently walled city of Jerusalem it is observed a day later as Shushan Purim. A business with sites in Tel Aviv and Jerusalem therefore needs two calendars running at once &mdash; plus, for religious diversity within the team, the Jewish, Muslim and Christian calendars in parallel."
+      },
+      {
+        "icon": "tune",
+        "title": "Binding or purely informational",
+        "text": "For each calendar, you decide whether a holiday affects hours &amp; premiums &mdash; or simply appears as a reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Holiday rules in Klacks: holidays by nation and region — Germany, the USA (Alaska), and the Swiss cantons of Lucerne, Jura, Glarus and Appenzell",
+    "imageCaption": "Real rules from Klacks: one list mixes holidays from several countries and regions &mdash; freely extensible."
+  },
   "solutions": {
     "title": "How Klacks handles Israel's planning reality",
     "subtitle": "Crisis-resilient rostering, not a generic 24/7 planner.",

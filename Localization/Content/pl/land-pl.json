@@ -18,6 +18,19 @@
       { "icon": "fingerprint", "title": "Zakaz biometrii w ewidencji czasu pracy", "text": "Ewidencja czasu pracy oparta na odciskach palców jest niedopuszczalna nawet za zgodą pracownika (art. 22¹b Kodeksu pracy) &mdash; chmurowe systemy ewidencji czasu pracy szybko wpadają tym samym w szarą strefę." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Zasady &amp; kalendarz",
+    "title": "Jednolicie w całym kraju &mdash; a mimo to z okiem na drugą stronę granicy",
+    "text": "Polska nie zna świąt na poziomie województwa ani gminy: wszystkie 14 dni ustawowo wolnych od pracy obowiązuje jednolicie w całym kraju na mocy ustawy o dniach wolnych od pracy. Dla firm przy zachodniej granicy liczy się jednak też to, co obowiązuje po drugiej stronie.",
+    "items": [
+      { "icon": "place", "title": "Jednolicie w całym kraju", "text": "W przeciwieństwie do Niemiec czy Szwajcarii w Polsce nie ma świąt na poziomie województwa ani gminy &mdash; ustawa o dniach wolnych od pracy ustala wszystkie 14 dni ustawowo wolnych jednolicie dla całego kraju. Także Dzień Świętego Marcina w Poznaniu pozostaje miejskim świętem bez własnego statusu dnia wolnego &mdash; przypada na obowiązujące i tak w całym kraju Narodowe Święto Niepodległości 11 listopada." },
+      { "icon": "layers", "title": "Łączenie kalendarzy ponad granicą", "text": "Firma poddostawcza w województwie lubuskim lub zachodniopomorskim, dostarczająca komponenty just-in-time do zakładów w Saksonii lub Bawarii, dodatkowo uwzględnia tamtejsze święta regionalne &mdash; na przykład Boże Ciało i Wszystkich Świętych w Bawarii albo Święto Reformacji w Saksonii &mdash; aby uniknąć przeciążenia magazynu i przestojów ciężarówek przy zamkniętych niemieckich bramach zakładowych." },
+      { "icon": "tune", "title": "Wiążące czy tylko informacyjne", "text": "Dla każdego kalendarza decydujesz, czy święto wpływa na godziny &amp; dodatki &mdash; czy pojawia się tylko jako przypomnienie." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Zasady świąt w Klacks: święta według kraju i regionu – Niemcy, USA (Alaska) oraz szwajcarskie kantony Lucerna, Jura, Glarus i Appenzell",
+    "imageCaption": "Prawdziwe reguły z Klacks: jedna lista łączy święta kilku krajów i poszczególnych regionów &mdash; dowolnie rozszerzalna."
+  },
   "solutions": {
     "title": "Jak Klacks odciąża polskie firmy",
     "subtitle": "Od pełnej ewidencji po własną infrastrukturę &mdash; wszystko działa razem.",

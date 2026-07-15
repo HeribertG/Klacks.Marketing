@@ -13,21 +13,82 @@
     "eyebrow": "Le quotidien de la planification dans les entreprises belges",
     "title": "Commission Paritaire, loi linguistique et la réforme 2026",
     "items": [
-      { "icon": "gavel", "title": "Chaque Commission Paritaire a ses propres règles", "text": "Chaque entreprise est obligatoirement rattachée à une Commission Paritaire (CP) &mdash; par exemple la CP 330 Santé, la CP 317 Gardiennage, la CP 121 Nettoyage ou la CP 140.03 Logistique. C'est la CCT respective qui régit de façon contraignante les suppléments, les limites de temps de travail et les délais de planification, et non une loi uniforme." },
-      { "icon": "translate", "title": "La langue selon le siège d'exploitation, pas le siège social", "text": "Les contrats de travail, les horaires et le pointage doivent être établis dans la langue du siège d'exploitation concerné &mdash; le néerlandais en Flandre, le français en Wallonie, l'allemand en Communauté germanophone. Toute infraction peut rendre le document inopposable, au bénéfice des travailleurs." },
-      { "icon": "fact_check", "title": "Registre des écarts et réforme 2026", "text": "Tout écart par rapport à l'horaire à temps partiel publié doit être documenté sans faille, sinon un temps plein est présumé de plein droit. Depuis le 1er juin 2026, la durée de travail minimale à temps partiel est en outre passée d'un tiers à un dixième du temps plein, et le délai de publication a été réduit à 7 jours ouvrables à l'avance." }
+      {
+        "icon": "gavel",
+        "title": "Chaque Commission Paritaire a ses propres règles",
+        "text": "Chaque entreprise est obligatoirement rattachée à une Commission Paritaire (CP) &mdash; par exemple la CP 330 Santé, la CP 317 Gardiennage, la CP 121 Nettoyage ou la CP 140.03 Logistique. C'est la CCT respective qui régit de façon contraignante les suppléments, les limites de temps de travail et les délais de planification, et non une loi uniforme."
+      },
+      {
+        "icon": "translate",
+        "title": "La langue selon le siège d'exploitation, pas le siège social",
+        "text": "Les contrats de travail, les horaires et le pointage doivent être établis dans la langue du siège d'exploitation concerné &mdash; le néerlandais en Flandre, le français en Wallonie, l'allemand en Communauté germanophone. Toute infraction peut rendre le document inopposable, au bénéfice des travailleurs."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Registre des écarts et réforme 2026",
+        "text": "Tout écart par rapport à l'horaire à temps partiel publié doit être documenté sans faille, sinon un temps plein est présumé de plein droit. Depuis le 1er juin 2026, la durée de travail minimale à temps partiel est en outre passée d'un tiers à un dixième du temps plein, et le délai de publication a été réduit à 7 jours ouvrables à l'avance."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Règles &amp; calendrier",
+    "title": "Un calendrier pour chaque communauté linguistique",
+    "text": "La Belgique n'a pas de calendrier de jours fériés uniforme &mdash; les trois communautés linguistiques ont chacune leur propre fête communautaire, qui n'est pas un jour férié légal à l'échelle nationale, mais qui concerne les écoles, les administrations et certains secteurs. Klacks reflète cette réalité au lieu de la simplifier.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Jusqu'au niveau de la communauté",
+        "text": "La Communauté flamande, la Communauté française et la Communauté germanophone ont chacune leur fête (11 juillet, 27 septembre, 15 novembre) &mdash; déjà configurées, sans niveau communal supplémentaire à gérer."
+      },
+      {
+        "icon": "layers",
+        "title": "Mélanger les calendriers",
+        "text": "Une entreprise de soins ou de nettoyage active à Anvers et à Liège gère les deux fêtes communautaires en parallèle &mdash; important, car les écoles de la communauté concernée ferment ce jour-là et les obligations de garde modifient les disponibilités."
+      },
+      {
+        "icon": "tune",
+        "title": "Actif ou simplement informatif",
+        "text": "Vous déterminez, calendrier par calendrier, si un jour férié agit sur les heures &amp; les suppléments &mdash; ou n'apparaît qu'à titre d'information."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Règles de jours fériés dans Klacks : jours fériés par nation et région — Allemagne, États-Unis (Alaska) ainsi que les cantons suisses de Lucerne, Jura, Glaris et Appenzell",
+    "imageCaption": "Règles réelles issues de Klacks : une liste mélange les jours fériés de plusieurs pays et cantons &mdash; librement extensible."
   },
   "solutions": {
     "title": "Comment Klacks soulage les entreprises belges",
     "subtitle": "De la règle spécifique à la CP jusqu'à la documentation multilingue &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "gavel", "title": "La Commission Paritaire configurée individuellement", "text": "Klacks reproduit les suppléments et les limites de temps de travail de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03 &mdash; directement dans votre configuration de règles." },
-      { "icon": "translate", "title": "Des horaires dans la bonne langue selon le siège d'exploitation", "text": "Klacks est disponible pour chaque siège d'exploitation en néerlandais, français ou allemand &mdash; les collaborateurs et les planificateurs travaillent dans leur langue nationale." },
-      { "icon": "fact_check", "title": "Registre des écarts tenu sans faille", "text": "Chaque modification de planning pour le personnel à temps partiel est documentée automatiquement &mdash; la base pour prévenir la présomption légale de temps plein." },
-      { "icon": "event_available", "title": "Réforme 2026 : durée de travail minimale à temps partiel sous contrôle", "text": "Vous configurez dans Klacks, comme seuil, la durée de travail minimale à temps partiel d'un dixième du temps plein en vigueur depuis le 1er juin 2026 &mdash; le système avertit automatiquement en cas de non-respect." },
-      { "icon": "schedule", "title": "Heures supplémentaires volontaires sous contrôle", "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles, jusqu'à 360 heures maximum, et indique quand le seuil de 240 heures est atteint &mdash; la limite dont votre gestion de la paie a besoin pour l'exonération de cotisations et d'impôt." },
-      { "icon": "smart_toy", "title": "Klacksy : basé sur des règles, jamais une boîte noire", "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable selon les compétences et règles enregistrées, jamais comme une décision d'IA opaque." }
+      {
+        "icon": "gavel",
+        "title": "La Commission Paritaire configurée individuellement",
+        "text": "Klacks reproduit les suppléments et les limites de temps de travail de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03 &mdash; directement dans votre configuration de règles."
+      },
+      {
+        "icon": "translate",
+        "title": "Des horaires dans la bonne langue selon le siège d'exploitation",
+        "text": "Klacks est disponible pour chaque siège d'exploitation en néerlandais, français ou allemand &mdash; les collaborateurs et les planificateurs travaillent dans leur langue nationale."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Registre des écarts tenu sans faille",
+        "text": "Chaque modification de planning pour le personnel à temps partiel est documentée automatiquement &mdash; la base pour prévenir la présomption légale de temps plein."
+      },
+      {
+        "icon": "event_available",
+        "title": "Réforme 2026 : durée de travail minimale à temps partiel sous contrôle",
+        "text": "Vous configurez dans Klacks, comme seuil, la durée de travail minimale à temps partiel d'un dixième du temps plein en vigueur depuis le 1er juin 2026 &mdash; le système avertit automatiquement en cas de non-respect."
+      },
+      {
+        "icon": "schedule",
+        "title": "Heures supplémentaires volontaires sous contrôle",
+        "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles, jusqu'à 360 heures maximum, et indique quand le seuil de 240 heures est atteint &mdash; la limite dont votre gestion de la paie a besoin pour l'exonération de cotisations et d'impôt."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy : basé sur des règles, jamais une boîte noire",
+        "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable selon les compétences et règles enregistrées, jamais comme une décision d'IA opaque."
+      }
     ]
   },
   "klacksy": {

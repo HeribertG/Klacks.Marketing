@@ -18,6 +18,19 @@
       { "icon": "event_repeat", "title": "Oproepkrachten korrekt einplanen", "text": "Für Abrufkräfte gilt eine gesetzliche Ankündigungsfrist von 4 Tagen (WAB, BW Art. 7:628a) &mdash; wird ein Einsatz kurzfristig abgesagt, bleibt der volle Lohnanspruch für die abgerufenen Stunden bestehen." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Einheitlich auf dem Festland, eigen in der Karibik",
+    "text": "Die Niederlande kennen keine Feiertage auf Provinz-Ebene &mdash; der gesetzliche Kalender gilt landesweit einheitlich. Echte Unterschiede entstehen trotzdem: durch die Karibischen Niederlande und durch traditionelle Stadtfeiertage wie Leidens Ontzet. Klacks bildet das ab, statt es zu vereinfachen.",
+    "items": [
+      { "icon": "place", "title": "Karibische Niederlande: eigene Feiertage", "text": "Bonaire, Sint Eustatius und Saba gehören seit 2010 zu den Niederlanden, führen aber eigene freie Tage &mdash; etwa Dia di Rincon (30. April) und den Flag Day (6. September) auf Bonaire oder den Statia Day (16. November) auf Sint Eustatius." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb in Enschede oder Maastricht disponiert Grenzgänger nach Deutschland oder Belgien &mdash; da zählen der niederländische und der jeweils ausländische Feiertagskalender gleichzeitig, inklusive der jeweiligen Zuschläge." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks niederländische Betriebe entlastet",
     "subtitle": "Von der automatischen ATW-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",

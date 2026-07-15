@@ -13,21 +13,82 @@
     "eyebrow": "Planeringsvardagen i svenska verksamheter",
     "title": "Kollektivavtal, dygnsvila och IMY",
     "items": [
-      { "icon": "gavel", "title": "Kollektivavtal i stället för stel lagstiftning", "text": "Arbetstidslagen (ATL) är enligt § 3 till stora delar dispositiv &mdash; ett kollektivavtal kan avvika från den, så länge EU:s minimiskydd upprätthålls. Vilken regel som gäller i det egna företaget är svårt att överblicka för hand." },
-      { "icon": "bedtime", "title": "Övertid &amp; dygnsvila korrekt hanterade", "text": "Allmän övertid är begränsad till 48 timmar per 4 veckor eller 50 timmar per kalendermånad, dock högst 200 timmar per år (ATL § 8); dessutom krävs 11 timmars sammanhängande dygnsvila med tidsfönstret midnatt till 05.00 (ATL § 13)." },
-      { "icon": "fingerprint", "title": "Biometrisk tidsregistrering: en juridisk risk", "text": "IMY klassar fingeravtrycks- och ansiktsigenkänningsdata som känsliga uppgifter &mdash; ett samtycke i en anställningsrelation räknas i regel inte som frivilligt på grund av maktobalansen. Vanliga stämpelklockor med biometri står därmed på juridiskt osäker mark." }
+      {
+        "icon": "gavel",
+        "title": "Kollektivavtal i stället för stel lagstiftning",
+        "text": "Arbetstidslagen (ATL) är enligt § 3 till stora delar dispositiv &mdash; ett kollektivavtal kan avvika från den, så länge EU:s minimiskydd upprätthålls. Vilken regel som gäller i det egna företaget är svårt att överblicka för hand."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Övertid &amp; dygnsvila korrekt hanterade",
+        "text": "Allmän övertid är begränsad till 48 timmar per 4 veckor eller 50 timmar per kalendermånad, dock högst 200 timmar per år (ATL § 8); dessutom krävs 11 timmars sammanhängande dygnsvila med tidsfönstret midnatt till 05.00 (ATL § 13)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrisk tidsregistrering: en juridisk risk",
+        "text": "IMY klassar fingeravtrycks- och ansiktsigenkänningsdata som känsliga uppgifter &mdash; ett samtycke i en anställningsrelation räknas i regel inte som frivilligt på grund av maktobalansen. Vanliga stämpelklockor med biometri står därmed på juridiskt osäker mark."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regler och kalender",
+    "title": "Enhetligt i hela landet &mdash; men rörligt",
+    "text": "Sveriges allmänna helgdagar regleras enhetligt i lag (1989:253) för hela landet &mdash; någon läns- eller kommunnivå som i Tyskland eller Schweiz finns inte. Den egentliga komplexiteten ligger någon annanstans: flera helgdagar infaller på en rörlig lördag, och de informella klämdagarna mellan helgdag och helg hanteras olika från arbetsplats till arbetsplats.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Rörligt i stället för fast datum",
+        "text": "Midsommardagen och Alla helgons dag infaller inte på ett fast datum, utan på lördagen mellan 20 och 26 juni respektive 31 oktober och 6 november &mdash; därtill kommer den lediga, men inte lagstadgade, midsommarafton. Klacks räknar automatiskt fram sådana rörliga helgdagar för varje år."
+      },
+      {
+        "icon": "layers",
+        "title": "Blanda kalendrar",
+        "text": "Verksamheter i Öresundsregionen med pendlare från Köpenhamn hanterar två kalendrar parallellt: den danska skärtorsdagen är en vanlig arbetsdag i Sverige, medan trettondedag jul (6 januari) och midsommarafton inte gäller i Danmark. Klacks kombinerar båda ländernas kalendrar i ett och samma schema."
+      },
+      {
+        "icon": "tune",
+        "title": "Verksam eller bara informativ",
+        "text": "Du bestämmer per kalender om en helgdag ska påverka timmar &amp; tillägg &mdash; eller bara visas som en påminnelse."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Helgdagsregler i Klacks: helgdagar per nation och region — Tyskland, USA (Alaska) samt de schweiziska kantonerna Luzern, Jura, Glarus och Appenzell",
+    "imageCaption": "Verkliga regler från Klacks: en lista blandar helgdagar från flera länder och regioner &mdash; fritt utökningsbar."
   },
   "solutions": {
     "title": "Så avlastar Klacks svenska verksamheter",
     "subtitle": "Från den automatiska kollektivavtalsavvikelsen till den egna infrastrukturen &mdash; allt hänger ihop.",
     "items": [
-      { "icon": "gavel", "title": "Kollektivavtalsavvikelser inlagda", "text": "Klacks kan ställas in på de avvikelser från ATL som avtalats i respektive kollektivavtal, i stället för att stelt tillämpa lagens grundvärden." },
-      { "icon": "timer", "title": "Övertidsgränser ständigt synliga", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 håller Klacks ständigt synliga &mdash; så kan ni styra i tid." },
-      { "icon": "bedtime", "title": "Dygnsvila &amp; nattfönster under uppsikt", "text": "Den 11 timmar långa sammanhängande vilotiden enligt ATL § 13 planerar Klacks automatiskt in &mdash; tidsfönstret midnatt till 05.00 förblir samtidigt synligt i schemat." },
-      { "icon": "route", "title": "Uppdrag optimeras automatiskt", "text": "Klacks lägger uppdrag och rutter så att vägar blir korta och tidsfönster hålls &mdash; användbart oavsett bransch." },
-      { "icon": "how_to_reg", "title": "Tidsregistrering utan biometri", "text": "Klacks klarar sig utan fingeravtryck eller ansiktsigenkänning &mdash; och därmed utan det samtyckesproblem för biometriska uppgifter i anställningsförhållanden som IMY har kritiserat." },
-      { "icon": "shield_lock", "title": "On-premise: full datasuveränitet", "text": "Klacks körs på er egen infrastruktur, och ni väljer själva AI-modell &mdash; även lokalt driftsatt." }
+      {
+        "icon": "gavel",
+        "title": "Kollektivavtalsavvikelser inlagda",
+        "text": "Klacks kan ställas in på de avvikelser från ATL som avtalats i respektive kollektivavtal, i stället för att stelt tillämpa lagens grundvärden."
+      },
+      {
+        "icon": "timer",
+        "title": "Övertidsgränser ständigt synliga",
+        "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 håller Klacks ständigt synliga &mdash; så kan ni styra i tid."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Dygnsvila &amp; nattfönster under uppsikt",
+        "text": "Den 11 timmar långa sammanhängande vilotiden enligt ATL § 13 planerar Klacks automatiskt in &mdash; tidsfönstret midnatt till 05.00 förblir samtidigt synligt i schemat."
+      },
+      {
+        "icon": "route",
+        "title": "Uppdrag optimeras automatiskt",
+        "text": "Klacks lägger uppdrag och rutter så att vägar blir korta och tidsfönster hålls &mdash; användbart oavsett bransch."
+      },
+      {
+        "icon": "how_to_reg",
+        "title": "Tidsregistrering utan biometri",
+        "text": "Klacks klarar sig utan fingeravtryck eller ansiktsigenkänning &mdash; och därmed utan det samtyckesproblem för biometriska uppgifter i anställningsförhållanden som IMY har kritiserat."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-premise: full datasuveränitet",
+        "text": "Klacks körs på er egen infrastruktur, och ni väljer själva AI-modell &mdash; även lokalt driftsatt."
+      }
     ]
   },
   "klacksy": {

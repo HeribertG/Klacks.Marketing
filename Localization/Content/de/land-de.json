@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jedes Bundesland &mdash; und jede Gemeinde",
+    "text": "Feiertage sind in Deutschland Ländersache und manchmal sogar Gemeindesache. Klacks bildet genau diese Kleinteiligkeit ab, statt sie zu ignorieren.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Bis auf Gemeinde-Ebene",
+        "text": "Heilige Drei Könige nur in Bayern, Baden-Württemberg und Sachsen-Anhalt, Reformationstag nur im Norden und Osten &mdash; und mit dem Augsburger Hohen Friedensfest sogar ein Feiertag, der ausschließlich innerhalb einer einzigen Stadt gilt."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Speditionsbetrieb in Kehl disponiert Grenzgänger nach Straßburg &mdash; da zählen baden-württembergische und französische Feiertage gleichzeitig, inklusive der jeweiligen Zuschläge."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks deutsche Betriebe entlastet",
     "subtitle": "Vom automatischen Dienstplan bis zum DATEV-Export &mdash; alles greift ineinander.",

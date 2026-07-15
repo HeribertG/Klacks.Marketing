@@ -18,6 +18,19 @@
       { "icon": "privacy_tip", "title": "Registo biométrico só com teste de proporcionalidade", "text": "A CNPD não proíbe de forma generalizada o registo biométrico de assiduidade, mas exige, caso a caso, um teste de proporcionalidade rigoroso, bem como uma solução alternativa para situações de erro." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regras &amp; Calendário",
+    "title": "Um calendário para cada região",
+    "text": "Portugal tem 13 feriados nacionais &mdash; mas as Regiões Autónomas dos Açores e da Madeira acrescentam cada uma o seu próprio feriado regional, e cada um dos 308 municípios pode ainda fixar um feriado municipal. O Klacks reflete exatamente isso, em vez de o simplificar.",
+    "items": [
+      { "icon": "place", "title": "Até ao nível do município", "text": "Os Açores celebram o Dia dos Açores na Segunda-feira de Pentecostes, e a Madeira o Dia da Região Autónoma da Madeira a 1 de julho &mdash; ambos feriados regionais obrigatórios. Além disso, cada município pode fixar um feriado municipal (normalmente o dia do santo padroeiro) &mdash; como feriado facultativo, só é observado quando previsto em instrumento de regulamentação coletiva de trabalho ou no contrato de trabalho (art. 235.º do CT)." },
+      { "icon": "layers", "title": "Combinar calendários", "text": "Uma empresa de cuidados ou de segurança privada com sede em Lisboa e filial no Porto, que aplique o feriado municipal por via de IRCT, gere os dois calendários municipais em separado &mdash; em Lisboa há tolerância a 13 de junho (Santo António), enquanto no Porto se trabalha normalmente nesse dia e a pausa acontece a 24 de junho (São João)." },
+      { "icon": "tune", "title": "Com efeito ou apenas informativo", "text": "Para cada calendário, decide se um feriado afeta as horas &amp; os suplementos &mdash; ou se aparece apenas como lembrete." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Regras de feriados no Klacks: feriados por nação e região – Alemanha, EUA (Alasca) e os cantões suíços de Lucerna, Jura, Glarus e Appenzell",
+    "imageCaption": "Regras reais do Klacks: uma lista combina feriados de vários países e de cantões individuais &mdash; livremente ampliável."
+  },
   "solutions": {
     "title": "Como o Klacks alivia as empresas portuguesas",
     "subtitle": "Do registo de ponto automático à infraestrutura própria &mdash; tudo funciona em conjunto.",

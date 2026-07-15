@@ -30,6 +30,31 @@
       }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landesweit einheitlich &mdash; mit einer persönlichen Ausnahme",
+    "text": "Rumäniens gesetzliche Feiertage nach Art. 139 Codul Muncii gelten bundesweit einheitlich &mdash; ohne Kreis- (Județ-) oder Gemeinde-Sonderregeln. Eine Besonderheit betrifft trotzdem nicht die Region, sondern die einzelne Person.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Individuell statt regional",
+        "text": "Rumänien kennt keine Kreis- oder Gemeinde-Feiertage &mdash; wohl aber ein persönliches Recht: Angehörige gesetzlich anerkannter nicht-christlicher Glaubensgemeinschaften erhalten für bis zu drei eigene religiöse Feiertage im Jahr je zwei bezahlte freie Tage (Art. 139 Codul Muncii)."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Internationale BPO- und Shared-Service-Center in Bukarest, Cluj-Napoca oder Timișoara führen den orthodoxen (julianischen) rumänischen Kalender parallel zum westlichen Kalender ihrer Kunden &mdash; Ostern, Pfingsten und Himmelfahrt fallen oft Wochen auseinander."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks rumänische Betriebe entlastet",
     "subtitle": "Von der lückenlosen Zeiterfassung bis zum korrekten Ruhezeit-Zuschlag &mdash; alles greift ineinander.",

@@ -18,6 +18,19 @@
       { "icon": "shield_lock", "title": "Garante Privacy &amp; Datenhoheit", "text": "Sensible Mitarbeiterdaten wie Überstundensalden oder Krankheitsdaten unterliegen strengen Vorgaben der italienischen Datenschutzbehörde Garante &mdash; besonders bei Datenverarbeitung außerhalb der EU." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Der Schutzpatron entscheidet: ein Feiertag pro Gemeinde",
+    "text": "In Italien hat jede der rund 7.900 Gemeinden einen eigenen gesetzlichen Feiertag &mdash; den Tag ihres Schutzpatrons (santo patrono), festgelegt per Gemeindebeschluss und verankert im Gesetz Nr. 260/1949. Klacks bildet genau diese kleinteilige Wirklichkeit ab, statt sie zu ignorieren.",
+    "items": [
+      { "icon": "place", "title": "Schutzpatron pro Gemeinde", "text": "Mailand feiert Sant'Ambrogio am 7. Dezember, Rom die Apostelfürsten Petrus und Paulus am 29. Juni (in Rom sogar durch Staatsvertrag mit dem Vatikan gesetzlich verankert) und Neapel San Gennaro am 19. September &mdash; fällt der Tag auf einen Arbeitstag, ist er rechtlich bindend arbeitsfrei." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Pflege- oder Sicherheitsdienst zwischen Mailand und dem nur wenige Kilometer entfernten Sesto San Giovanni braucht zwei Schutzpatron-Kalender gleichzeitig: Am 7. Dezember gilt in Mailand ein Feiertag mit Zuschlagspflicht, während in Sesto San Giovanni &mdash; dessen Patron San Giovanni Battista erst am 24. Juni gefeiert wird &mdash; ganz regulär gearbeitet wird." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Regionen &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks italienische Unternehmen entlastet",
     "subtitle": "Von der automatischen Dienstplanung bis zur eigenen Infrastruktur &mdash; alles unter Ihrer Kontrolle.",

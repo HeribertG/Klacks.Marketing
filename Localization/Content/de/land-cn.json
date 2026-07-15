@@ -18,6 +18,19 @@
       { "icon": "privacy_tip", "title": "Biometrische Daten &amp; PIPL", "text": "Das Persönliche-Informationen-Schutzgesetz (PIPL) zählt Gesichts-, Fingerabdruck- und Stimmdaten zu sensiblen persönlichen Informationen. Gehen sensible Daten von über 10.000 Betroffenen ins Ausland, ist eine CAC-Sicherheitsprüfung (网信办, PIPL Art. 38) Pflicht." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Feiertage auf drei Ebenen",
+    "text": "Neben den landesweiten Feiertagen kennt China eigene, gesetzlich verankerte Feiertage für autonome Regionen und Bezirke &mdash; und mit Hongkong ein komplett eigenständiges System ohne Tiaoxiu-Ausgleich. Klacks bildet genau diese Schichten ab.",
+    "items": [
+      { "icon": "place", "title": "Autonome Regionen &amp; Bezirke vorkonfiguriert", "text": "Tibet legt mit Losar (藏历新年) und dem Shoton-Fest (雪顿节) je 7 zusätzliche Feiertage fest, Guangxi mit dem Sanyuesan-Fest (三月三) seit 2014 &mdash; und selbst auf Bezirksebene, etwa im Autonomen Bezirk Xishuangbanna (Yunnan) mit dem Wasserfest der Dai, gilt eine eigene, per Autonomiestatut geregelte Feiertagsordnung." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb in Shenzhen mit Partnern im nahen Hongkong braucht zwei Kalender gleichzeitig: das Festland mit Tiaoxiu-Ausgleichstagen für die Golden Week, Hongkong mit eigenem, britisch geprägtem Feiertagssystem ganz ohne Wochenend-Verschiebung." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
+  },
   "solutions": {
     "title": "Wie Klacks Unternehmen in China entlastet",
     "subtitle": "Von der tagesaktuellen Überstunden-Grenze bis zur Datenhoheit vor Ort &mdash; alles greift ineinander.",

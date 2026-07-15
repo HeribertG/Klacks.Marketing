@@ -18,6 +18,19 @@
       { "icon": "fact_check", "title": "Tidsregistreringspligt siden 1. juli 2024", "text": "Siden den 1. juli 2024 skal enhver dansk virksomhed føre et objektivt, pålideligt tidsregistreringssystem, der dokumenterer 48-timers-grænsen som et glidende gennemsnit over 4 måneder &mdash; registreringerne skal opbevares i 5 år." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regler &amp; kalender",
+    "title": "En kalender til hele kongeriget",
+    "text": "Færøerne og Grønland hører til Kongeriget Danmark, men har deres egne lovbestemte helligdage &mdash; og selv kalenderen i det danske kerneland ændrer sig: I 2024 blev Store Bededag afskaffet som helligdag. Klacks afbilder det hele.",
+    "items": [
+      { "icon": "place", "title": "Egne helligdage på Færøerne &amp; Grønland", "text": "Færøerne fejrer Flaggdagur (25. april) og Ólavsøka (29. juli), Grønland nationaldagen Ullortuneq (21. juni) og Helligtrekongersdag (6. januar) &mdash; dage, der ikke er helligdage i det danske kerneland." },
+      { "icon": "layers", "title": "Kalendere kombineret", "text": "En virksomhed med hovedsæde i København og enheder på Færøerne eller i Grønland kombinerer disses nationaldage med den danske kalender &mdash; på samme måde kan den svenske kalender tilføjes for grænsependlere i Øresundsregionen, f.eks. for den svenske midsommer, som er en almindelig arbejdsdag i Danmark." },
+      { "icon": "tune", "title": "Effektiv eller kun informativ", "text": "I bestemmer pr. kalender, om en helligdag påvirker timer &amp; tillæg &mdash; eller blot vises som en påmindelse." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Helligdagsregler i Klacks: helligdage efter nation og region – Tyskland, USA (Alaska) samt de schweiziske kantoner Luzern, Jura, Glarus og Appenzell",
+    "imageCaption": "Ægte regler fra Klacks: en liste kombinerer helligdage fra flere lande og enkelte regioner &mdash; frit udvidelig."
+  },
   "solutions": {
     "title": "Sådan aflaster Klacks danske virksomheder",
     "subtitle": "Fra fleksibel overenskomst-afbildning til egen infrastruktur &mdash; alt spiller sammen.",

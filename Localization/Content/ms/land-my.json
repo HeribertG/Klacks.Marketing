@@ -13,21 +13,82 @@
     "eyebrow": "Realiti harian penjadualan di syarikat Malaysia",
     "title": "Employment Act 1955, kadar lebih masa bertingkat dan PDPA",
     "items": [
-      { "icon": "gavel", "title": "Memantau minggu kerja 45 jam sejak 2023", "text": "Employment (Amendment) Act 2022 (Act A1651) menurunkan waktu bekerja mingguan biasa daripada 48 jam kepada 45 jam berkuat kuasa 1 Januari 2023 (Section 60A Employment Act 1955) &mdash; terpakai untuk Semenanjung Malaysia dan Labuan, manakala Sabah dan Sarawak mempunyai ordinan sendiri yang sebahagian besarnya selari. Setiap jam yang dijadualkan melebihi had ini secara automatik menjadi lebih masa yang layak mendapat elaun." },
-      { "icon": "paid", "title": "Mengasingkan kadar lebih masa bertingkat dengan tepat", "text": "Lebih masa pada hari bekerja biasa berkos sekurang-kurangnya 1.5 kali, pada hari rehat mingguan 2.0 kali dan pada hari kelepasan am 3.0 kali gaji sejam (Section 60A(3), 60(3), 60D(3)) &mdash; ditambah had gaji RM4,000, apabila dilepasi hak elaun ini tidak lagi terpakai. Sumber kesilapan biasa jika dikira secara manual." },
-      { "icon": "fingerprint", "title": "Data kehadiran biometrik sebagai data PDPA sensitif", "text": "Sejak Personal Data Protection (Amendment) Act 2024 (Act A1727), data cap jari dan pengecaman wajah untuk tujuan kehadiran diiktiraf secara jelas sebagai data peribadi sensitif &mdash; dengan keperluan persetujuan dan pemindahan rentas sempadan yang lebih ketat." }
+      {
+        "icon": "gavel",
+        "title": "Memantau minggu kerja 45 jam sejak 2023",
+        "text": "Employment (Amendment) Act 2022 (Act A1651) menurunkan waktu bekerja mingguan biasa daripada 48 jam kepada 45 jam berkuat kuasa 1 Januari 2023 (Section 60A Employment Act 1955) &mdash; terpakai untuk Semenanjung Malaysia dan Labuan, manakala Sabah dan Sarawak mempunyai ordinan sendiri yang sebahagian besarnya selari. Setiap jam yang dijadualkan melebihi had ini secara automatik menjadi lebih masa yang layak mendapat elaun."
+      },
+      {
+        "icon": "paid",
+        "title": "Mengasingkan kadar lebih masa bertingkat dengan tepat",
+        "text": "Lebih masa pada hari bekerja biasa berkos sekurang-kurangnya 1.5 kali, pada hari rehat mingguan 2.0 kali dan pada hari kelepasan am 3.0 kali gaji sejam (Section 60A(3), 60(3), 60D(3)) &mdash; ditambah had gaji RM4,000, apabila dilepasi hak elaun ini tidak lagi terpakai. Sumber kesilapan biasa jika dikira secara manual."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Data kehadiran biometrik sebagai data PDPA sensitif",
+        "text": "Sejak Personal Data Protection (Amendment) Act 2024 (Act A1727), data cap jari dan pengecaman wajah untuk tujuan kehadiran diiktiraf secara jelas sebagai data peribadi sensitif &mdash; dengan keperluan persetujuan dan pemindahan rentas sempadan yang lebih ketat."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Peraturan &amp; Kalendar",
+    "title": "Satu Kalendar untuk Setiap Negeri",
+    "text": "13 negeri dan 3 wilayah persekutuan Malaysia boleh mengisytiharkan hari kelepasan am negeri sendiri di bawah Holidays Act 1951 &mdash; selalunya hanya terpakai untuk satu negeri sahaja. Klacks memetakan struktur berlapis ini dengan tepat.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Sehingga peringkat negeri",
+        "text": "Section 9 Holidays Act 1951 membenarkan setiap negeri mengisytiharkan hari kelepasan am sendiri &mdash; daripada Hari Keputeraan Sultan Selangor pada 11 Disember hingga perayaan menuai Tadau Kaamatan di Sabah (30/31 Mei) dan Hari Gawai di Sarawak (1/2 Jun), yang merupakan hari bekerja biasa di Semenanjung Malaysia."
+      },
+      {
+        "icon": "layers",
+        "title": "Menggabungkan kalendar",
+        "text": "Sebuah syarikat dengan ibu pejabat di Wilayah Persekutuan Kuala Lumpur, gudang di Selangor yang bersebelahan dan pelanggan di Johor memerlukan beberapa kalendar serentak &mdash; contohnya Hari Wilayah Persekutuan pada 1 Februari, yang hanya terpakai di Kuala Lumpur, Putrajaya dan Labuan, manakala Selangor dan Johor terus bekerja."
+      },
+      {
+        "icon": "tune",
+        "title": "Berkuat kuasa atau sekadar informasi",
+        "text": "Anda tentukan bagi setiap kalendar sama ada hari kelepasan am memberi kesan kepada jam &amp; elaun &mdash; atau hanya dipaparkan sebagai peringatan."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Peraturan hari kelepasan am dalam Klacks: cuti mengikut negara dan wilayah — Jerman, Amerika Syarikat (Alaska) serta kanton Switzerland Luzern, Jura, Glarus dan Appenzell",
+    "imageCaption": "Peraturan sebenar daripada Klacks: satu senarai menggabungkan hari kelepasan am pelbagai negara dan negeri &mdash; boleh dikembangkan dengan bebas."
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban syarikat Malaysia",
     "subtitle": "Daripada pengiraan elaun automatik hingga infrastruktur sendiri &mdash; semuanya saling melengkapi.",
     "items": [
-      { "icon": "gavel", "title": "Minggu kerja 45 jam dipantau automatik", "text": "Klacks mengetahui had 45 jam daripada Section 60A (sejak 1.1.2023) serta had harian 8 jam (9 jam bagi minggu bekerja 5 hari) &mdash; setiap jam yang dijadualkan melebihi had ini ditanda secara automatik sebagai lebih masa." },
-      { "icon": "paid", "title": "Elaun 1.5x/2.0x/3.0x diasingkan secara automatik", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dikira mengikut kadar yang betul masing-masing &mdash; termasuk had gaji RM4,000, apabila dilepasi peruntukan elaun Section 60/60A/60C/60D/60J tidak lagi terpakai." },
-      { "icon": "schedule", "title": "Spread-over dan had bulanan sentiasa dipantau", "text": "Had spread-over 10 jam daripada permulaan kerja pertama hingga waktu pulang (Section 60A(1)), had siling 12 jam sehari dan had lebih masa bulanan 104 jam (Employment (Limitation of Overtime Work) Regulations 1980) dipantau secara automatik, begitu juga rehat 30 minit selepas 5 jam berturut-turut." },
-      { "icon": "shield_lock", "title": "On-Premise: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kakitangan dan data perancangan anda tidak pernah keluar daripada premis anda." },
-      { "icon": "smart_toy", "title": "Klacksy: berasaskan peraturan, bukan kotak hitam", "text": "Pembantu AI bersepadu, Klacksy, menjadualkan melalui arahan suara/teks &mdash; boleh dijejaki mengikut kemahiran dan peraturan yang ditetapkan, bukan keputusan AI yang tidak telus." },
-      { "icon": "event_busy", "title": "Ketidakhadiran diselesaikan dengan pantas", "text": "Jika seseorang tidak dapat hadir, Klacks segera menunjukkan siapa yang layak dan tersedia &mdash; tanpa perlu merombak keseluruhan jadual." }
+      {
+        "icon": "gavel",
+        "title": "Minggu kerja 45 jam dipantau automatik",
+        "text": "Klacks mengetahui had 45 jam daripada Section 60A (sejak 1.1.2023) serta had harian 8 jam (9 jam bagi minggu bekerja 5 hari) &mdash; setiap jam yang dijadualkan melebihi had ini ditanda secara automatik sebagai lebih masa."
+      },
+      {
+        "icon": "paid",
+        "title": "Elaun 1.5x/2.0x/3.0x diasingkan secara automatik",
+        "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dikira mengikut kadar yang betul masing-masing &mdash; termasuk had gaji RM4,000, apabila dilepasi peruntukan elaun Section 60/60A/60C/60D/60J tidak lagi terpakai."
+      },
+      {
+        "icon": "schedule",
+        "title": "Spread-over dan had bulanan sentiasa dipantau",
+        "text": "Had spread-over 10 jam daripada permulaan kerja pertama hingga waktu pulang (Section 60A(1)), had siling 12 jam sehari dan had lebih masa bulanan 104 jam (Employment (Limitation of Overtime Work) Regulations 1980) dipantau secara automatik, begitu juga rehat 30 minit selepas 5 jam berturut-turut."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: kedaulatan data sepenuhnya",
+        "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kakitangan dan data perancangan anda tidak pernah keluar daripada premis anda."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: berasaskan peraturan, bukan kotak hitam",
+        "text": "Pembantu AI bersepadu, Klacksy, menjadualkan melalui arahan suara/teks &mdash; boleh dijejaki mengikut kemahiran dan peraturan yang ditetapkan, bukan keputusan AI yang tidak telus."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Ketidakhadiran diselesaikan dengan pantas",
+        "text": "Jika seseorang tidak dapat hadir, Klacks segera menunjukkan siapa yang layak dan tersedia &mdash; tanpa perlu merombak keseluruhan jadual."
+      }
     ]
   },
   "klacksy": {

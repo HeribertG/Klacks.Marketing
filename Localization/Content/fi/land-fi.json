@@ -13,21 +13,82 @@
     "eyebrow": "Suunnittelun arki Suomessa",
     "title": "Jaksotyö, lepoajat ja työvuoroluettelon määräaika",
     "items": [
-      { "icon": "gavel", "title": "Jaksotyön tuntien laskeminen oikein", "text": "Epäsäännöllistä työaikaa vaativilla aloilla työaika voidaan järjestää enintään 120 tunniksi 3 viikon jaksossa tai enintään 80 tunniksi 2 viikon jaksossa (Työaikalaki 872/2019 7 §) &mdash; ylityötä syntyy vasta, kun tämä jaksosumma ylittyy. Käsin laskettuna tämä on virhealtista, kun työntekijöitä on paljon." },
-      { "icon": "bedtime", "title": "Lepoaikojen lyhentäminen ja tasoittaminen oikein", "text": "Vuorokautinen 11 tunnin lepoaika (25 §) voidaan vuoro- tai jaksotyössä lyhentää 9 tuntiin &mdash; menetetty aika on tällöin annettava yhdenjaksoisena tasoituksena 14 vuorokauden kuluessa. Viikoittaisen lepoajan (27 §) on oltava vähintään 35 yhdenjaksoista tuntia." },
-      { "icon": "event_note", "title": "Työvuoroluettelon julkaiseminen määräajassa", "text": "Työvuoroluettelo on annettava työntekijöille kirjallisesti tiedoksi viimeistään viikkoa ennen jakson alkua. Kun se on kerran julkaistu, sitä saa muuttaa enää työntekijän suostumuksella tai painavasta, työhön liittyvästä syystä." }
+      {
+        "icon": "gavel",
+        "title": "Jaksotyön tuntien laskeminen oikein",
+        "text": "Epäsäännöllistä työaikaa vaativilla aloilla työaika voidaan järjestää enintään 120 tunniksi 3 viikon jaksossa tai enintään 80 tunniksi 2 viikon jaksossa (Työaikalaki 872/2019 7 §) &mdash; ylityötä syntyy vasta, kun tämä jaksosumma ylittyy. Käsin laskettuna tämä on virhealtista, kun työntekijöitä on paljon."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Lepoaikojen lyhentäminen ja tasoittaminen oikein",
+        "text": "Vuorokautinen 11 tunnin lepoaika (25 §) voidaan vuoro- tai jaksotyössä lyhentää 9 tuntiin &mdash; menetetty aika on tällöin annettava yhdenjaksoisena tasoituksena 14 vuorokauden kuluessa. Viikoittaisen lepoajan (27 §) on oltava vähintään 35 yhdenjaksoista tuntia."
+      },
+      {
+        "icon": "event_note",
+        "title": "Työvuoroluettelon julkaiseminen määräajassa",
+        "text": "Työvuoroluettelo on annettava työntekijöille kirjallisesti tiedoksi viimeistään viikkoa ennen jakson alkua. Kun se on kerran julkaistu, sitä saa muuttaa enää työntekijän suostumuksella tai painavasta, työhön liittyvästä syystä."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Säännöt ja kalenteri",
+    "title": "Yhtenäinen koko maassa &mdash; yhtä itsehallinnollista poikkeusta lukuun ottamatta",
+    "text": "Suomen lakisääteiset vapaapäivät ovat voimassa yhtenäisesti koko maassa &mdash; alueellista tai kunnallista tasoa kuten Saksassa tai Sveitsissä ei tunneta. Ainoa poikkeus on itsehallinnollinen Ahvenanmaa: itsehallintopäivä on siellä oma vapaapäivä &mdash; mutta vain julkiselle sektorille.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Ahvenanmaa: yksi päivä, kaksi sääntöä",
+        "text": "Itsehallintopäivä (Självstyrelsedagen, 9. kesäkuuta) on Ahvenanmaalla virallinen liputuspäivä ja vapaa hallinnolle ja kouluille &mdash; yksityiselle sektorille se ei ole automaattisesti vapaa, koska Ahvenanmaalla ei ole lainsäädäntövaltaa yksityisiin työsuhteisiin. Klacks ottaa juuri tämän sektorikohtaisen eron huomioon."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalenterien yhdistäminen",
+        "text": "Mariehamniin sijoittunut varustamo suunnittelee miehistöjen ja satamahenkilöstön vuoroja Manner-Suomen, Ahvenanmaan ja Ruotsin välillä &mdash; ja tarvitsee siihen jopa kolme vapaapäiväkalenteria samanaikaisesti, mukaan lukien Ruotsin kansallispäivän (6. kesäkuuta) ja Ruotsin juhannuksen."
+      },
+      {
+        "icon": "tune",
+        "title": "Vaikuttava vai vain tiedoksi",
+        "text": "Voit määrittää kalenterikohtaisesti, vaikuttaako vapaapäivä tunteihin &amp; lisiin &mdash; vai näkyykö se vain muistutuksena."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Vapaapäiväsäännöt Klacksissa: vapaapäivät maittain ja alueittain — Saksa, USA (Alaska) sekä Sveitsin kantonit Luzern, Jura, Glarus ja Appenzell",
+    "imageCaption": "Todelliset säännöt Klacksista: yksi lista yhdistää useiden maiden ja alueiden vapaapäivät &mdash; vapaasti laajennettavissa."
   },
   "solutions": {
     "title": "Miten Klacks helpottaa suomalaisten yritysten arkea",
     "subtitle": "Automaattisesta jaksolaskennasta määräajassa julkaisemiseen &mdash; kaikki toimii yhdessä.",
     "items": [
-      { "icon": "gavel", "title": "Jaksotyö &amp; ylityöt lasketaan automaattisesti", "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee lakisääteisen ylityökorvauksen oikein: ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava tunti 100 %:lla." },
-      { "icon": "bedtime", "title": "Lepoajat &amp; 14 vuorokauden tasoitus valvotaan", "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää 14 vuorokauden tasoitusmääräajan hallinnassa &mdash; samoin viikoittaisen vähintään 35 tunnin lepoajan." },
-      { "icon": "event_note", "title": "Työvuoroluettelo julkaistaan määräajassa", "text": "Klacks näyttää selvästi työvuoroluettelon viikon julkaisumääräajan ja merkitsee jälkikäteiset muutokset suostumusta vaativiksi &mdash; alakohtaisen työehtosopimuksenne (TES) mukaisesti." },
-      { "icon": "paid", "title": "Sunnuntailisä kirjataan oikein", "text": "Sunnuntai- ja kirkollisina juhlapäivinä tehdystä työstä Klacks kirjaa automaattisesti lakisääteisen 100 %:n lisän (20 §) &mdash; jos samaan aikaan kertyy ylityötä, ylityökorvaus lisätään mukaan." },
-      { "icon": "shield_lock", "title": "On-Premise: täysi tietosuvereniteetti", "text": "Klacks toimii omassa infrastruktuurissanne, ja tekoälymallin valitsette itse &mdash; myös paikallisesti isännöitynä. Tämä tukee säästäväistä työntekijätietojen käsittelyä, jota Työelämän tietosuojalaki 759/2004 edellyttää." },
-      { "icon": "smart_toy", "title": "Klacksy: sääntöpohjainen, ei mustaa laatikkoa", "text": "Klacksiin integroitu tekoälyavustaja Klacksy suunnittelee puhekomennoilla &mdash; jäljitettävästi tallennettujen taitojen ja sääntöjen mukaan, ei läpinäkymättömänä tekoälypäätöksenä." }
+      {
+        "icon": "gavel",
+        "title": "Jaksotyö &amp; ylityöt lasketaan automaattisesti",
+        "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee lakisääteisen ylityökorvauksen oikein: ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava tunti 100 %:lla."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Lepoajat &amp; 14 vuorokauden tasoitus valvotaan",
+        "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää 14 vuorokauden tasoitusmääräajan hallinnassa &mdash; samoin viikoittaisen vähintään 35 tunnin lepoajan."
+      },
+      {
+        "icon": "event_note",
+        "title": "Työvuoroluettelo julkaistaan määräajassa",
+        "text": "Klacks näyttää selvästi työvuoroluettelon viikon julkaisumääräajan ja merkitsee jälkikäteiset muutokset suostumusta vaativiksi &mdash; alakohtaisen työehtosopimuksenne (TES) mukaisesti."
+      },
+      {
+        "icon": "paid",
+        "title": "Sunnuntailisä kirjataan oikein",
+        "text": "Sunnuntai- ja kirkollisina juhlapäivinä tehdystä työstä Klacks kirjaa automaattisesti lakisääteisen 100 %:n lisän (20 §) &mdash; jos samaan aikaan kertyy ylityötä, ylityökorvaus lisätään mukaan."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: täysi tietosuvereniteetti",
+        "text": "Klacks toimii omassa infrastruktuurissanne, ja tekoälymallin valitsette itse &mdash; myös paikallisesti isännöitynä. Tämä tukee säästäväistä työntekijätietojen käsittelyä, jota Työelämän tietosuojalaki 759/2004 edellyttää."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: sääntöpohjainen, ei mustaa laatikkoa",
+        "text": "Klacksiin integroitu tekoälyavustaja Klacksy suunnittelee puhekomennoilla &mdash; jäljitettävästi tallennettujen taitojen ja sääntöjen mukaan, ei läpinäkymättömänä tekoälypäätöksenä."
+      }
     ]
   },
   "klacksy": {

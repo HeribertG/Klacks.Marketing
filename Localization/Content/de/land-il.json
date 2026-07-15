@@ -13,21 +13,82 @@
     "eyebrow": "Der Planungsalltag in israelischen Betrieben",
     "title": "Amendment 24, Sabbatruhe und die Beweislastumkehr",
     "items": [
-      { "icon": "gavel", "title": "Amendment 24: Beweislastumkehr vermeiden", "text": "Amendment 24 zum Lohnschutzgesetz (חוק הגנת השכר) verpflichtet zu lückenloser Zeiterfassung. Ohne ordnungsgemäße Nachweise trägt der Arbeitgeber die Beweislast &mdash; gelingt sie nicht, greift die gesetzliche Vermutung von bis zu 60 Überstunden pro Monat zu seinen Lasten. GPS-/Standort-Tracking ersetzt die Anwesenheitserfassung ausdrücklich NICHT." },
-      { "icon": "synagogue", "title": "Sabbatruhe &amp; Genehmigungspflicht", "text": "Mindestens 36 zusammenhängende Stunden Wochenruhe (המנוחה השבועית), für jüdische Mitarbeitende inklusive Sabbat (Freitag bis Samstag), für muslimische inklusive Freitag. Einsatz während der Ruhezeit ist ohne Sondergenehmigung des Arbeitsministeriums grundsätzlich untersagt und mit mindestens 150 % zuschlagspflichtig." },
-      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung nur mit Einwilligung", "text": "Das Nationale Arbeitsgericht entschied am 15.3.2017, dass Mitarbeitende nicht zur Nutzung biometrischer Stempeluhren gezwungen werden dürfen &mdash; nötig sind informierte, freiwillige Einwilligung und eine zumutbare Alternative. Die Privacy Protection Regulations 2017 stufen biometrische Daten zudem in eine erhöhte Sicherheitsstufe ein." }
+      {
+        "icon": "gavel",
+        "title": "Amendment 24: Beweislastumkehr vermeiden",
+        "text": "Amendment 24 zum Lohnschutzgesetz (חוק הגנת השכר) verpflichtet zu lückenloser Zeiterfassung. Ohne ordnungsgemäße Nachweise trägt der Arbeitgeber die Beweislast &mdash; gelingt sie nicht, greift die gesetzliche Vermutung von bis zu 60 Überstunden pro Monat zu seinen Lasten. GPS-/Standort-Tracking ersetzt die Anwesenheitserfassung ausdrücklich NICHT."
+      },
+      {
+        "icon": "synagogue",
+        "title": "Sabbatruhe &amp; Genehmigungspflicht",
+        "text": "Mindestens 36 zusammenhängende Stunden Wochenruhe (המנוחה השבועית), für jüdische Mitarbeitende inklusive Sabbat (Freitag bis Samstag), für muslimische inklusive Freitag. Einsatz während der Ruhezeit ist ohne Sondergenehmigung des Arbeitsministeriums grundsätzlich untersagt und mit mindestens 150 % zuschlagspflichtig."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung nur mit Einwilligung",
+        "text": "Das Nationale Arbeitsgericht entschied am 15.3.2017, dass Mitarbeitende nicht zur Nutzung biometrischer Stempeluhren gezwungen werden dürfen &mdash; nötig sind informierte, freiwillige Einwilligung und eine zumutbare Alternative. Die Privacy Protection Regulations 2017 stufen biometrische Daten zudem in eine erhöhte Sicherheitsstufe ein."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Feiertage jenseits der Landkarte",
+    "text": "Israel kennt keine kantonale oder regionale Feiertagsebene wie andere Länder &mdash; die gesetzliche Vielfalt verläuft stattdessen entlang der Religionszugehörigkeit, und in Jerusalem sogar entlang eines jahrtausendealten Stadtmauer-Privilegs. Klacks bildet genau das ab, woran rein geografisch denkende Tools scheitern.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Feiertage nach Religionszugehörigkeit",
+        "text": "Jüdische Feiertage gelten national, doch muslimische, christliche und drusische Mitarbeitende haben das gesetzliche Recht, stattdessen die Feiertage ihrer eigenen Religion als bezahlten Ruhetag zu wählen &mdash; pro Person wählbar, aber nur als Ganzes und nicht gemischt."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Purim fällt landesweit auf den 14. Adar, in der seit alters ummauerten Stadt Jerusalem als Schuschan Purim jedoch einen Tag später. Ein Betrieb mit Standorten in Tel Aviv und Jerusalem braucht deshalb zwei Kalender gleichzeitig &mdash; und für die religiöse Vielfalt im Team zusätzlich den jüdischen, muslimischen und christlichen Kalender parallel."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
   },
   "solutions": {
     "title": "Wie Klacks israelische Betriebe entlastet",
     "subtitle": "Von der Beweissicherung bis zur Sabbat-konformen Planung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "fact_check", "title": "Arbeitszeitbuch statt Beweislastrisiko", "text": "Klacks führt ein lückenloses, exportierbares Arbeitszeitbuch &mdash; die Grundlage, um der Amendment-24-Beweislast und der 60-Überstunden-Vermutung im Streitfall etwas entgegenzusetzen." },
-      { "icon": "calculate", "title": "Überstundenzuschläge automatisch berechnet", "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle rechnet Klacks die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 % &mdash; ohne Nachrechnen von Hand." },
-      { "icon": "synagogue", "title": "Sabbat- &amp; Wochenruhe automatisch geprüft", "text": "Klacks erkennt, wenn ein Einsatz in die 36-stündige Wochenruhe fällt, weist auf die nötige Ministeriums-Genehmigung hin und bereitet den 150 %-Zuschlag samt Ersatzruhetag vor." },
-      { "icon": "shield_lock", "title": "On-Premise: sensible Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Planungs- und Personaldaten verlassen Ihr Haus nicht &mdash; ganz ohne biometrische Zeiterfassung, deren erhöhte Sicherheitsanforderungen nach den Privacy Protection Regulations 2017 Sie sich damit sparen." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
-      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
+      {
+        "icon": "fact_check",
+        "title": "Arbeitszeitbuch statt Beweislastrisiko",
+        "text": "Klacks führt ein lückenloses, exportierbares Arbeitszeitbuch &mdash; die Grundlage, um der Amendment-24-Beweislast und der 60-Überstunden-Vermutung im Streitfall etwas entgegenzusetzen."
+      },
+      {
+        "icon": "calculate",
+        "title": "Überstundenzuschläge automatisch berechnet",
+        "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle rechnet Klacks die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 % &mdash; ohne Nachrechnen von Hand."
+      },
+      {
+        "icon": "synagogue",
+        "title": "Sabbat- &amp; Wochenruhe automatisch geprüft",
+        "text": "Klacks erkennt, wenn ein Einsatz in die 36-stündige Wochenruhe fällt, weist auf die nötige Ministeriums-Genehmigung hin und bereitet den 150 %-Zuschlag samt Ersatzruhetag vor."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: sensible Daten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Planungs- und Personaldaten verlassen Ihr Haus nicht &mdash; ganz ohne biometrische Zeiterfassung, deren erhöhte Sicherheitsanforderungen nach den Privacy Protection Regulations 2017 Sie sich damit sparen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Ausfälle schnell aufgefangen",
+        "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen."
+      }
     ]
   },
   "klacksy": {

@@ -13,21 +13,82 @@
     "eyebrow": "Der Planungsalltag in schwedischen Betrieben",
     "title": "Kollektivavtal, Dygnsvila und IMY",
     "items": [
-      { "icon": "gavel", "title": "Kollektivavtal statt starrem Gesetz", "text": "Die Arbetstidslagen (ATL) ist nach § 3 in weiten Teilen dispositiv &mdash; ein Kollektivavtal kann davon abweichen, solange der EU-Mindestschutz gewahrt bleibt. Welche Regel im eigenen Betrieb gilt, ist von Hand schwer zu überblicken." },
-      { "icon": "bedtime", "title": "Überstunden &amp; Dygnsvila korrekt einhalten", "text": "Die allmän övertid ist auf 48 Stunden je 4 Wochen oder 50 Stunden je Kalendermonat, höchstens jedoch 200 Stunden je Jahr begrenzt (ATL § 8); dazu kommen 11 Stunden zusammenhängende dygnsvila mit dem Fenster Mitternacht bis 05:00 Uhr (ATL § 13)." },
-      { "icon": "fingerprint", "title": "Biometrische Zeiterfassung: rechtliches Risiko", "text": "Die IMY stuft Fingerabdruck- und Gesichtserkennungsdaten als sensible Daten ein &mdash; eine Einwilligung im Arbeitsverhältnis gilt wegen des Machtungleichgewichts in der Regel nicht als freiwillig. Standard-Stempeluhren mit Biometrie stehen damit auf rechtlich unsicherem Boden." }
+      {
+        "icon": "gavel",
+        "title": "Kollektivavtal statt starrem Gesetz",
+        "text": "Die Arbetstidslagen (ATL) ist nach § 3 in weiten Teilen dispositiv &mdash; ein Kollektivavtal kann davon abweichen, solange der EU-Mindestschutz gewahrt bleibt. Welche Regel im eigenen Betrieb gilt, ist von Hand schwer zu überblicken."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Überstunden &amp; Dygnsvila korrekt einhalten",
+        "text": "Die allmän övertid ist auf 48 Stunden je 4 Wochen oder 50 Stunden je Kalendermonat, höchstens jedoch 200 Stunden je Jahr begrenzt (ATL § 8); dazu kommen 11 Stunden zusammenhängende dygnsvila mit dem Fenster Mitternacht bis 05:00 Uhr (ATL § 13)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrische Zeiterfassung: rechtliches Risiko",
+        "text": "Die IMY stuft Fingerabdruck- und Gesichtserkennungsdaten als sensible Daten ein &mdash; eine Einwilligung im Arbeitsverhältnis gilt wegen des Machtungleichgewichts in der Regel nicht als freiwillig. Standard-Stempeluhren mit Biometrie stehen damit auf rechtlich unsicherem Boden."
+      }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Landesweit einheitlich &mdash; aber beweglich",
+    "text": "Schwedens gesetzliche Feiertage (allmänna helgdagar) sind bundeseinheitlich im Gesetz (1989:253) geregelt &mdash; eine Provinz- oder Kommunalebene wie in Deutschland oder der Schweiz kennt das Land nicht. Die eigentliche Komplexität liegt anderswo: mehrere Feiertage fallen auf einen beweglichen Samstag, und die informellen klämdagar zwischen Feiertag und Wochenende werden von Betrieb zu Betrieb unterschiedlich gehandhabt.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Beweglich statt fest datiert",
+        "text": "Mittsommertag und Allerheiligen fallen nicht auf ein festes Datum, sondern auf den Samstag zwischen dem 20. und 26. Juni beziehungsweise dem 31. Oktober und 6. November &mdash; dazu kommt der arbeitsfreie, aber nicht gesetzliche Mittsommerabend (Midsommarafton). Klacks berechnet solche beweglichen Feiertage automatisch für jedes Jahr."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Betriebe in der Öresund-Region mit Pendlern aus Kopenhagen führen zwei Kalender parallel: Der dänische Gründonnerstag (Skærtorsdag) ist in Schweden ein normaler Arbeitstag, während Trettondedag jul (6. Januar) und Mittsommerabend in Dänemark nicht gelten. Klacks kombiniert beide Länderkalender in einem Dienstplan."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region — Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und Regionen &mdash; frei erweiterbar."
   },
   "solutions": {
     "title": "Wie Klacks schwedische Betriebe entlastet",
     "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Kollektivavtal-Abweichungen hinterlegt", "text": "Klacks lässt sich auf die im jeweiligen Kollektivavtal vereinbarten Abweichungen von der ATL einstellen, statt starr die gesetzlichen Grundwerte anzuwenden." },
-      { "icon": "timer", "title": "Überstundengrenzen laufend sichtbar", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 hält Klacks laufend sichtbar &mdash; so steuern Sie rechtzeitig gegen." },
-      { "icon": "bedtime", "title": "Dygnsvila &amp; Nachtfenster im Blick", "text": "Die 11-stündige zusammenhängende Ruhezeit nach ATL § 13 plant Klacks automatisch mit ein &mdash; das Fenster Mitternacht bis 05:00 Uhr bleibt dabei im Plan sichtbar." },
-      { "icon": "route", "title": "Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Touren so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
-      { "icon": "how_to_reg", "title": "Zeiterfassung ohne Biometrie", "text": "Klacks kommt ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das von der IMY beanstandete Einwilligungsproblem bei biometrischen Daten im Arbeitsverhältnis." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet." }
+      {
+        "icon": "gavel",
+        "title": "Kollektivavtal-Abweichungen hinterlegt",
+        "text": "Klacks lässt sich auf die im jeweiligen Kollektivavtal vereinbarten Abweichungen von der ATL einstellen, statt starr die gesetzlichen Grundwerte anzuwenden."
+      },
+      {
+        "icon": "timer",
+        "title": "Überstundengrenzen laufend sichtbar",
+        "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 hält Klacks laufend sichtbar &mdash; so steuern Sie rechtzeitig gegen."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Dygnsvila &amp; Nachtfenster im Blick",
+        "text": "Die 11-stündige zusammenhängende Ruhezeit nach ATL § 13 plant Klacks automatisch mit ein &mdash; das Fenster Mitternacht bis 05:00 Uhr bleibt dabei im Plan sichtbar."
+      },
+      {
+        "icon": "route",
+        "title": "Einsätze automatisch optimiert",
+        "text": "Klacks legt Einsätze und Touren so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar."
+      },
+      {
+        "icon": "how_to_reg",
+        "title": "Zeiterfassung ohne Biometrie",
+        "text": "Klacks kommt ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das von der IMY beanstandete Einwilligungsproblem bei biometrischen Daten im Arbeitsverhältnis."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet."
+      }
     ]
   },
   "klacksy": {
