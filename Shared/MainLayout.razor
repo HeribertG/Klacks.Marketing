@@ -77,9 +77,9 @@
             <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
                 <span class="material-symbols-outlined">code</span>
             </a>
-            <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm hover:scale-95 active:scale-90 transition-transform duration-200 no-underline">
+            <button type="button" @onclick="OpenDemoModal" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm hover:scale-95 active:scale-90 transition-transform duration-200">
                 @Sh("nav.tryNow")
-            </a>
+            </button>
         </div>
         <button type="button"
                 class="md:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
@@ -138,13 +138,17 @@
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
             <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
         </a>
-        <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-primary text-on-primary px-6 py-3 rounded-xl font-semibold text-sm text-center no-underline" @onclick="CloseMobileMenu">
+        <button type="button" class="bg-primary text-on-primary px-6 py-3 rounded-xl font-semibold text-sm text-center" @onclick="OpenDemoModalFromMobileMenu">
             @Sh("nav.tryNow")
-        </a>
+        </button>
     </div>
 </nav>
 
-@Body
+<CascadingValue Name="OpenDemoModal" Value="OpenDemoModalCallback">
+    @Body
+</CascadingValue>
+
+<DemoDisclaimerModal IsOpen="_showDemoModal" Culture="@CurrentCultureRecord.Code" OnClose="CloseDemoModal" />
 
 <!-- FOOTER -->
 <footer class="bg-slate-50 no-line-rule">
@@ -252,6 +256,19 @@
     private bool _languageMenuOpen;
     private bool _countryMenuOpen;
     private bool _industryMenuOpen;
+    private bool _showDemoModal;
+
+    private EventCallback OpenDemoModalCallback => EventCallback.Factory.Create(this, OpenDemoModal);
+
+    private void OpenDemoModal() => _showDemoModal = true;
+
+    private void OpenDemoModalFromMobileMenu()
+    {
+        CloseMobileMenu();
+        OpenDemoModal();
+    }
+
+    private void CloseDemoModal() => _showDemoModal = false;
 
     protected override void OnInitialized()
     {

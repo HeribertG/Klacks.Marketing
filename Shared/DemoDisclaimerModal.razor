@@ -1,0 +1,36 @@
+@inject IPageContentProvider ContentProvider
+
+@if (IsOpen)
+{
+    <div class="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 px-4" @onclick="Close">
+        <div class="glass-nav bg-surface-container-lowest rounded-2xl shadow-2xl max-w-md w-full p-8 relative" @onclick:stopPropagation="true">
+            <button type="button" class="absolute top-4 right-4 p-1 text-slate-500 hover:text-black transition-colors" @onclick="Close" aria-label="@Sh("demoModal.closeAriaLabel")">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="flex items-center gap-2 mb-4">
+                <span class="material-symbols-outlined text-secondary">info</span>
+                <h2 class="text-lg font-bold text-black">@Sh("demoModal.title")</h2>
+            </div>
+            <p class="text-sm text-on-surface-variant leading-relaxed mb-4">@((MarkupString)Sh("demoModal.body"))</p>
+            <div class="bg-black/5 rounded-lg px-4 py-3 mb-4 font-mono text-xs text-on-surface-variant break-all" dir="ltr">
+                <span class="block text-slate-500 mb-1 font-sans font-semibold uppercase tracking-wide text-[0.625rem]">@Sh("cta.demoLoginLabel")</span>
+                @ExternalLinks.DemoLoginEmail<br />@ExternalLinks.DemoLoginPassword
+            </div>
+            <p class="text-xs text-slate-500 mb-6">@((MarkupString)Sh("demoModal.languageNote"))</p>
+            <div class="flex gap-3">
+                <button type="button" class="flex-1 px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-600 hover:bg-slate-100/50 transition-all" @onclick="Close">@Sh("demoModal.cancelButton")</button>
+                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="flex-1 text-center bg-secondary text-white px-4 py-2.5 rounded-xl font-bold text-sm hover:opacity-90 transition-all no-underline" @onclick="Close">@Sh("demoModal.continueButton")</a>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private Task Close() => OnClose.InvokeAsync();
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
+}

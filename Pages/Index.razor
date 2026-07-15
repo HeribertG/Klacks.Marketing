@@ -19,9 +19,9 @@
                 @IxHtml("hero.subtitle")
             </p>
             <div class="hero-enter hero-enter-4 flex flex-wrap gap-4 mb-10">
-                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2 no-underline">
+                <button type="button" @onclick="OpenDemoModal" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
                     @Sh("nav.tryNow") <span class="material-symbols-outlined icon-directional">arrow_forward</span>
-                </a>
+                </button>
                 <a href="#download" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2">
                     <span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")
                 </a>
@@ -383,9 +383,9 @@
                     @ExternalLinks.DemoLoginEmail<br />@ExternalLinks.DemoLoginPassword
                 </div>
                 <p class="text-white/50 text-xs mb-6">@ShHtml("cta.demoResetNote")</p>
-                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center justify-center gap-2 mt-auto">
+                <button type="button" @onclick="OpenDemoModal" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center justify-center gap-2 mt-auto">
                     @Ix("getStarted.playground.button") <span class="material-symbols-outlined text-base icon-directional">arrow_forward</span>
-                </a>
+                </button>
             </div>
             <div class="p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col">
                 <span class="material-symbols-outlined text-tertiary-fixed text-3xl mb-4">deployed_code</span>
@@ -420,6 +420,8 @@
 
 @code {
     [Parameter] public string? Culture { get; set; }
+
+    [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
 
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
 
