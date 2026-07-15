@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; PDPL/SDAIA-konform",
     "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">die 12-Stunden-Grenze live überwacht.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Aufenthaltsgrenze (Art. 101) und lässt sich per KI-Assistent Klacksy steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible Personal- und Planungsdaten physisch in Saudi-Arabien, ganz im Sinne von PDPL und SDAIA.",
+    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Aufenthaltsgrenze (Art. 101) &mdash; auf Wunsch mit hartem Block &mdash; und lässt sich per KI-Assistent Klacksy steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible Personal- und Planungsdaten physisch in Saudi-Arabien, ganz im Sinne von PDPL und SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -62,7 +62,7 @@
       {
         "icon": "gavel",
         "title": "Regelarbeitszeit &amp; 6-Tage-Grenze überwacht",
-        "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Klacks überwacht beide Grenzen live und warnt rechtzeitig vor einer Überschreitung."
+        "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Klacks überwacht beide Grenzen live und warnt rechtzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart."
       },
       {
         "icon": "nightlight",
@@ -72,7 +72,7 @@
       {
         "icon": "timer_off",
         "title": "12-Stunden-Grenze live überwacht (Art. 101)",
-        "text": "Klacks überwacht Schichtfolgen live und warnt sofort, sobald eine Person länger als 12 Stunden am Arbeitsplatz gehalten würde &mdash; inklusive Pausen, Gebets- und Essenszeiten."
+        "text": "Klacks überwacht Schichtfolgen live und warnt sofort, sobald eine Person länger als 12 Stunden am Arbeitsplatz gehalten würde &mdash; inklusive Pausen, Gebets- und Essenszeiten. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "payments",

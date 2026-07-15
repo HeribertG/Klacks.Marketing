@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Frankreich",
     "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit lückenlos dokumentierter Stundenbasis für die heures d'équivalence nach CCN 16 und Planungszeiten als Ergänzung zum Fahrtenschreiber-Nachweis. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Zuschlagsstaffeln der heures d'équivalence nach CCN 16 und Planungszeiten als Ergänzung zum Fahrtenschreiber-Nachweis. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Frankreich",
     "screenshotLabel": "Timeline"
@@ -41,18 +41,18 @@
       },
       {
         "icon": "calculate",
-        "title": "Stundenbasis für Äquivalenz- und Überstunden",
-        "text": "Klacks dokumentiert jede Stunde ab der 36. lückenlos und wochengenau &mdash; die Unterscheidung zwischen den mit +25% vergüteten Äquivalenzstunden und echten Überstunden ab der 40. bzw. 44. Stunde (CCN 16) ist Tariffakt; Ihre Lohnabrechnung berechnet die Zuschläge auf dieser sauberen Stundenbasis."
+        "title": "Äquivalenz- und Überstunden gestaffelt verzuschlagt",
+        "text": "Klacks bildet die Staffelung der CCN 16 direkt ab: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; +25% für die Äquivalenzstunden ab der 36., +50% für echte Überstunden ab der 40. bzw. 44. Stunde; die Auszahlung übernimmt Ihre Lohnabrechnung auf dieser fertig verzuschlagten Basis."
       },
       {
         "icon": "timer",
         "title": "Lenk- &amp; Ruhezeiten überwacht",
-        "text": "Gesetzliche Lenk- und Ruhezeiten werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
+        "text": "Gesetzliche Lenk- und Ruhezeiten werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; auf Wunsch blockiert Klacks sie hart, ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
       },
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen."
+        "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
       },
       {
         "icon": "smart_toy",
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Stundenbasis und Lenkzeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Zuschlagsstaffeln und Lenkzeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

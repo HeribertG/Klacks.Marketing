@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste in Österreich",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit lückenlos dokumentierter Arbeitszeit als Basis für Überstunden- und Mehrarbeitszuschläge. Touren werden automatisch optimiert.",
+    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit gestaffelten Überstunden- und Mehrarbeitszuschlägen als eigenem Zuschlagstyp, direkt in der Planung berechnet. Touren werden automatisch optimiert.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Wie Klacks Gebäudereinigung &amp; Hausdienste entlastet",
-    "subtitle": "Von der optimierten Route bis zur dokumentierten Zuschlagsbasis &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur gestaffelten Zuschlagsberechnung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Rad oder zu Fuß." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Urlaub: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
-      { "icon": "payments", "title": "Stundenbasis für Zuschläge dokumentiert", "text": "Die 11. und 12. Arbeitsstunde dokumentiert Klacks lückenlos als Stundenbasis &mdash; die gestaffelten Zuschlagssätze (75% bzw. 25% Mehrarbeit) hinterlegt die Lohnverrechnung." },
+      { "icon": "payments", "title": "Zuschlagsstaffeln direkt abgebildet", "text": "Die gestaffelten Überstundenzuschläge bildet Klacks als eigenen Zuschlagstyp direkt ab &mdash; mit bis zu drei Staffeln auf Tages- oder Wochenbasis, etwa 25% für Mehrarbeit, 50% für Überstunden und 75% ab der 11. Arbeitsstunde; die Auszahlung übernimmt Ihre Lohnverrechnung auf dieser fertig verzuschlagten Basis." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Bezirk für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
@@ -34,6 +34,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen und Teams übernimmt und die Stundenbasis für Zuschläge dokumentiert &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen und Teams übernimmt und die gestaffelten Zuschläge direkt abbildet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

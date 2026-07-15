@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Vietnam",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und liefert die transparente Stundenbasis für die kumulativen Nacht-Überstundensätze &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und kumuliert die Nacht-Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -22,9 +22,9 @@
     "title": "Wie Klacks Krankenhäuser in Vietnam entlastet",
     "subtitle": "Von der 300-Stunden-Überwachung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "300-Stunden-Budget überwacht", "text": "Klacks verfolgt das erweiterte Jahreslimit pro Mitarbeiter und visualisiert die Ausschöpfung &mdash; inklusive der Voraussetzung einer schriftlichen Anzeige an die Arbeitsbehörde." },
-      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren &mdash; Klacks weist Nachtdiensten den Zuschlag automatisch zu und dokumentiert jede Stunde als saubere Basis für die kumulierten 210%- bzw. 270%-Sätze in Ihrer Lohnabrechnung." },
-      { "icon": "schedule", "title": "12-Stunden-Schichtruhe überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde." },
+      { "icon": "gavel", "title": "300-Stunden-Budget überwacht", "text": "Klacks verfolgt das erweiterte Jahreslimit pro Mitarbeiter und visualisiert die Ausschöpfung &mdash; inklusive der Voraussetzung einer schriftlichen Anzeige an die Arbeitsbehörde. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
+      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze stehen damit fertig berechnet in der Stundenbasis für Ihre Lohnabrechnung." },
+      { "icon": "schedule", "title": "12-Stunden-Schichtruhe überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde. Auf Wunsch blockiert Klacks den Verstoß hart &mdash; eine unzulässige Schichtfolge lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und das Jahresbudget." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "300-Stunden-Budget und Nachtdienst, ein Plan",
-    "text": "Klacks behält das erweiterte 300-Stunden-Jahresbudget im Blick und dokumentiert jede Nachtdienst-Stunde als Basis für die kumulierte Nacht-Überstundenformel &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks behält das erweiterte 300-Stunden-Jahresbudget im Blick und kumuliert die Zuschläge jeder Nachtdienst-Stunde im additiven Rechenmodus automatisch &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "mosque",
     "badge": "Stundenbasis für WPS &middot; PDPL-konform &middot; On-Premise",
     "titleHtml": "Dienstpläne, die den Ramadan <span class=\"text-secondary\">automatisch mitdenken.</span>",
-    "subtitle": "Klacks lässt sich für den Fastenmonat Ramadan mit einer reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen, überwacht den Überstunden-Deckel und führt Stundenkonten als Basis für die WPS-Lohnauszahlung &mdash; On-Premise, damit Ihre Planungs- und Personaldaten nach dem PDPL in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks lässt sich für den Fastenmonat Ramadan mit einer reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen, überwacht den Überstunden-Deckel live &mdash; auf Wunsch mit hartem Block &mdash; und führt Stundenkonten als Basis für die WPS-Lohnauszahlung &mdash; On-Premise, damit Ihre Planungs- und Personaldaten nach dem PDPL in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Vereinigten Arabischen Emiraten",
     "screenshotLabel": "Dienstplan"
@@ -71,8 +71,8 @@
       },
       {
         "icon": "schedule",
-        "title": "Überstunden-Tageslimit &amp; 3-Wochen-Summe live im Blick",
-        "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und macht die Gesamtarbeitszeit je 3 Wochen laufend sichtbar; der Nachtzuschlag für Nachtarbeit wird automatisch berechnet."
+        "title": "Überstunden-Tageslimit &amp; 144-Stunden-Deckel live überwacht",
+        "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und überwacht die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel; der Nachtzuschlag wird automatisch berechnet, mit exakt konfigurierbarem Zeitfenster (22:00 bis 04:00). Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "payments",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ramadan und Überstundendeckel, ein Blick",
-    "text": "Für die Ramadan-Periode lässt sich die reduzierte Tagesarbeitszeit hinterlegen, und Klacks macht gleichzeitig die Gesamtarbeitszeit je 3 Wochen laufend sichtbar &mdash; ohne Nachrechnen von Hand."
+    "text": "Für die Ramadan-Periode lässt sich die reduzierte Tagesarbeitszeit hinterlegen, und Klacks überwacht gleichzeitig die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

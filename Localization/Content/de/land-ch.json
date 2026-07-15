@@ -35,7 +35,7 @@
     "title": "Wie Klacks Schweizer Betriebe entlastet",
     "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks überwacht die 45h- und 50h-Wochengrenzen je Branche laufend und macht Überschreitungen sofort sichtbar &mdash; die branchenspezifischen Überstundenzuschlags-Schwellen lassen sich als Referenzwert hinterlegen." },
+      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks überwacht die 45h- und 50h-Wochengrenzen je Branche laufend und macht Überschreitungen sofort sichtbar &mdash; auf Wunsch blockiert Klacks die Überschreitung hart, ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Überstundenzuschläge bildet Klacks als eigenen Zuschlagstyp mit bis zu drei Staffeln auf Tages- oder Wochenbasis ab; die branchenspezifischen Überstundenzuschlags-Schwellen lassen sich als Referenzwert hinterlegen." },
       { "icon": "bedtime", "title": "Ruhezeiten automatisch geplant, Nachtzuschlag dokumentiert", "text": "Die 11-Stunden-Ruhezeit plant Klacks automatisch mit, und die zuschlagspflichtigen Nachtstunden werden dokumentiert &mdash; als Basis für die gesetzliche Zeitgutschrift ab der 25. Nacht im Jahr." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtarbeit und Wochenhöchstarbeitszeit, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn ein Einsatz den Nachtzuschlag auslöst oder die Wochenhöchstarbeitszeit erreicht wird, und macht das sofort sichtbar &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz den Nachtzuschlag auslöst oder die Wochenhöchstarbeitszeit erreicht wird, und macht das sofort sichtbar &mdash; ohne Nachrechnen von Hand. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
   },
   "showRoutePlanning": false,
   "cta": {

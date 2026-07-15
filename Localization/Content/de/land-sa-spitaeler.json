@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Saudi-Arabien",
     "titleHtml": "Schichtpläne, die <span class=\"text-secondary\">über Wochen im Gleichgewicht bleiben.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtbetrieb und macht Abweichungen vom 3-Wochen-Durchschnitt nach Art. 100 sofort sichtbar &mdash; inklusive korrekt vergüteter Überstunden. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichtbetrieb und überwacht den rollierenden 3-Wochen-Durchschnitt nach Art. 100 live &mdash; inklusive korrekt vergüteter Überstunden. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -23,7 +23,7 @@
     "subtitle": "Von der 3-Wochen-Durchschnittsrechnung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "balance", "title": "3-Wochen-Durchschnitt nach Art. 100 berechnet", "text": "Klacks behält den Durchschnitt über die vorgeschriebenen 3 Wochen im Blick und warnt, bevor er von 8h/48h abweicht." },
+      { "icon": "balance", "title": "3-Wochen-Durchschnitt nach Art. 100 berechnet", "text": "Klacks überwacht den rollierenden 3-Wochen-Schnitt live und warnt, bevor der Durchschnitt von 8h/48h kippt &mdash; auf Wunsch blockiert Klacks die Überschreitung hart, nur mit dokumentierter Vorgesetzten-Freigabe umgehbar." },
       { "icon": "timelapse", "title": "9-Stunden-Grenze für nicht durchgehende Tätigkeit", "text": "Kategorien mit nicht durchgehender Tätigkeit werden korrekt mit bis zu 9 Stunden pro Tag geplant." },
       { "icon": "gavel", "title": "Überstundenzuschlag automatisch berechnet", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (Art. 107) wird für jede Überstunde automatisch berechnet." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },

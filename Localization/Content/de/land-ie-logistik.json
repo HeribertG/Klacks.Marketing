@@ -23,9 +23,9 @@
     "subtitle": "Von der optimierten Tour bis zur korrekt ausgewiesenen POA &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "60-Stunden- und 48-Stunden-Grenze überwacht", "text": "Klacks prüft nach S.I. No. 2/2005 sowohl die absolute 60-Stunden-Wochengrenze als auch die 48-Stunden-Durchschnittsgrenze über den 4-Monats-Referenzzeitraum in Echtzeit." },
+      { "icon": "timer", "title": "60-Stunden- und 48-Stunden-Grenze überwacht", "text": "Klacks prüft nach S.I. No. 2/2005 sowohl die absolute 60-Stunden-Wochengrenze als auch die 48-Stunden-Durchschnittsgrenze über den rollierenden 4-Monats-Referenzzeitraum live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt &mdash; und warnt, bevor ein Grenzwert kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "hourglass_top", "title": "POA sauber abbildbar", "text": "Perioden der Verfügbarkeit (POA) lassen sich in Klacks als eigener Status getrennt von der Arbeitszeit einrichten, sodass sie im Dienstplan sichtbar und der Arbeitskraft vorab bekannt sind." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Führerschein hat." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Touren- und Fahrerdaten verlassen Ihr Haus nicht, auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Murphy ist krank“ genügt &mdash; Klacksy rechnet alles neu und berücksichtigt den eingerichteten POA-Status mit." }
     ]

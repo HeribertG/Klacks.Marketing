@@ -23,9 +23,9 @@
     "subtitle": "Von der optimierten Route bis zur korrekten Pausenregelung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Motorrad oder zu Fuß." },
-      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch zugewiesen", "text": "Klacks erkennt Nachteinsätze automatisch und weist den hinterlegten 30%-Nachtzuschlag nach Art. 98 Abs. 2 zu." },
+      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch zugewiesen", "text": "Klacks erkennt Nachteinsätze automatisch und weist den hinterlegten 30%-Nachtzuschlag nach Art. 98 Abs. 2 zu &mdash; das Nachtfenster 22:00&ndash;06:00 hinterlegen Sie exakt, und im additiven Rechenmodus kumuliert der Nachtzuschlag mit weiteren Zuschlägen, statt dass nur der höchste Satz gilt." },
       { "icon": "pause_circle", "title": "Pausen ab 6 Stunden automatisch eingeplant", "text": "Bei durchgehenden Schichten ab 6 Stunden plant Klacks die gesetzliche Pause automatisch mit ein &mdash; 30 Minuten tagsüber, 45 Minuten nachts." },
-      { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) laufend mit &mdash; über alle Objekte und Teams hinweg." },
+      { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) laufend mit &mdash; über alle Objekte und Teams hinweg. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Distrikt 1 für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Pausen." }
     ]

@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; Französischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, dokumentiert Arbeitsstunden und Ruhezeiten nach dem Code du travail lückenlos und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo es die CNIL erwartet: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, bildet die Überstunden-Zuschlagsstaffeln des Code du travail direkt ab, überwacht Ruhezeiten lückenlos und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo es die CNIL erwartet: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Frankreich",
     "screenshotLabel": "Dienstplan"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "gavel",
-        "title": "Arbeitsstunden dokumentiert, Ruhezeiten überwacht",
-        "text": "Klacks dokumentiert jede Arbeitsstunde ab der 36. lückenlos als Basis für die Zuschlagsstaffel (+25%/+50%, Art. L3121-27 &amp; L3121-36) &mdash; die Sätze selbst berechnet Ihre Lohnabrechnung auf dieser sauberen Stundenbasis. Die tägliche 11-Stunden- und wöchentliche 35-Stunden-Ruhezeit (Art. L3131-1 &amp; L3132-2) werden in Echtzeit überwacht, Überschreitungen macht Klacks sofort sichtbar."
+        "title": "Zuschlagsstaffeln berechnet, Ruhezeiten überwacht",
+        "text": "Klacks bildet die Zuschlagsstaffel des Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) direkt ab: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; die Auszahlung übernimmt Ihre Lohnabrechnung auf dieser fertig verzuschlagten Basis. Die tägliche 11-Stunden- und wöchentliche 35-Stunden-Ruhezeit (Art. L3131-1 &amp; L3132-2) werden in Echtzeit überwacht, Überschreitungen macht Klacks sofort sichtbar &mdash; auf Wunsch blockiert Klacks sie hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "route",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "35-Stunden-Woche, Jahresmodulation, ein Plan",
-    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks behält die 48-Stunden-Wochengrenze im Blick, dokumentiert die Arbeitsstunden lückenlos als Basis für die Zuschlagsstaffel und macht sichtbar, wo Ausgleichstage nötig werden &mdash; die Berechnung der Zuschläge übernimmt die Lohnabrechnung."
+    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks behält die 48-Stunden-Wochengrenze im Blick, rechnet die Überstunden-Zuschlagsstaffel (+25%/+50%) als eigenen Zuschlagstyp gleich mit und macht sichtbar, wo Ausgleichstage nötig werden &mdash; die Auszahlung übernimmt die Lohnabrechnung."
   },
   "showRoutePlanning": false,
   "cta": {

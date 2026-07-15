@@ -52,7 +52,7 @@
       {
         "icon": "event_available",
         "title": "Amplitude &amp; Sonntagsruhe im Blick",
-        "text": "Die 12-Stunden-Amplitude und die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht."
+        "text": "Die 12-Stunden-Amplitude und die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick: Die freien Sonntage werden im rollierenden Fenster überwacht (mindestens 2 freie Sonntage pro Monat), Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht, und blockiert sie auf Wunsch hart."
       },
       {
         "icon": "shield_lock",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mehrere Touren, ein Sonntagsdienst, dokumentierte Kilometer",
-    "text": "Eine ambulante Pflegeorganisation in Frankreich plant Touren mit wechselnden Patient:innen. Klacks rechnet Fahrzeiten als Arbeitszeit ein, dokumentiert die gefahrenen Kilometer als Basis für die Pauschale und behält die vorgeschriebenen freien Sonntage im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Eine ambulante Pflegeorganisation in Frankreich plant Touren mit wechselnden Patient:innen. Klacks rechnet Fahrzeiten als Arbeitszeit ein, dokumentiert die gefahrenen Kilometer als Basis für die Pauschale und überwacht die vorgeschriebenen freien Sonntage im rollierenden Fenster &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

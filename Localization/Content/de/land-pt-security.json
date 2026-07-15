@@ -23,9 +23,9 @@
     "subtitle": "Vom besetzten Posten bis zur korrekten Rotation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "Adaptabilitätsregime automatisch geprüft", "text": "Klacks überwacht die 10-Stunden-Tages- und 50-Stunden-Wochengrenze automatisch und dokumentiert die Stundenbasis für den 6-Monats-Durchschnitt von 40 Stunden/Woche &mdash; gemäß CCT Segurança Privada, Cláusula 22." },
-      { "icon": "event_repeat", "title": "Sonntagsrotation im Blick", "text": "Klacks macht auf einen Blick sichtbar, wann der wöchentliche Ruhetag zuletzt auf einen Sonntag fiel &mdash; so planen Sie die CCT-Vorgabe von mindestens zwei Sonntagen in 8 Wochen zuverlässig ein." },
-      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks gleicht bei jeder Zuteilung die geforderte Ausweis-Qualifikation ab &mdash; und warnt, bevor ein Nachweis abläuft." },
+      { "icon": "schedule", "title": "Adaptabilitätsregime automatisch geprüft", "text": "Klacks überwacht die 10-Stunden-Tages- und 50-Stunden-Wochengrenze automatisch und den rollierenden 6-Monats-Schnitt von 40 Stunden/Woche live gleich mit &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und Klacks warnt, bevor der Grenzwert kippt (CCT Segurança Privada, Cláusula 22)." },
+      { "icon": "event_repeat", "title": "Sonntagsrotation live überwacht", "text": "Klacks überwacht die freien Sonntage im rollierenden 8-Wochen-Fenster live und warnt, wenn die CCT-Vorgabe von mindestens zwei Sonntagen in 8 Wochen zu kippen droht &mdash; auf Wunsch blockiert es Verstöße hart. Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt." },
+      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks gleicht bei jeder Zuteilung die geforderte Ausweis-Qualifikation ab &mdash; und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Zertifikate, Verfügbarkeit und das Adaptabilitätsregime." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Adaptabilidade und Sonntagsrotation, ein Plan",
-    "text": "Klacks überwacht das Adaptabilitätsregime des CCT Segurança Privada automatisch und zeigt die Sonntagsrotation der vergangenen Wochen auf einen Blick &mdash; so planen Sie die zwei Sonntage in 8 Wochen ohne Nachrechnen von Hand."
+    "text": "Klacks überwacht das Adaptabilitätsregime des CCT Segurança Privada automatisch und die Sonntagsrotation im rollierenden 8-Wochen-Fenster live gleich mit &mdash; so halten Sie die zwei Sonntage in 8 Wochen ohne Nachrechnen von Hand ein."
   },
   "showRoutePlanning": true,
   "cta": {

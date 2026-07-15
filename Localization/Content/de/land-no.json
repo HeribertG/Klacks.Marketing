@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Norwegischer Datenschutz",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die Arbeidsmiljøloven zuverlässig abbilden.</span>",
-    "subtitle": "Klacks bildet die drei Arbeitszeit-Regime der Arbeidsmiljøloven (AML) als konfigurierbare Grenzwerte ab, unterstützt die frühzeitige Dienstplan-Veröffentlichung nach § 10-3 und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
+    "subtitle": "Klacks bildet die drei Arbeitszeit-Regime der Arbeidsmiljøloven (AML) als konfigurierbare Grenzwerte ab, prüft die 14-Tage-Frist der Dienstplan-Veröffentlichung nach § 10-3 automatisch und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für norwegische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -36,8 +36,8 @@
     "subtitle": "Von der konfigurierten Regime-Grenze bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "gavel", "title": "Alle drei Arbeitszeit-Regime konfigurierbar hinterlegt", "text": "Klacks hinterlegt für jeden Schichtplan die passende AML-Wochengrenze &mdash; 40, 38 oder 36 Stunden &mdash;, je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt; die Zuordnung legen Sie einmalig pro Vertrag oder Gruppe fest." },
-      { "icon": "event_available", "title": "Dienstpläne frühzeitig erstellt und veröffentlicht", "text": "Klacks erstellt und veröffentlicht Dienstpläne so früh, wie Sie planen möchten &mdash; die Grundlage, um die Bekanntgabefrist nach § 10-3 zuverlässig einzuhalten." },
-      { "icon": "timer", "title": "Überstundengrenzen überwacht", "text": "Die gesetzlichen Grenzen nach § 10-6 &mdash; 10 Stunden/7 Tage, 25 Stunden/4 Wochen, 200 Stunden/12 Monate &mdash; sowie der Zuschlag von mindestens 40 % überwacht Klacks laufend und warnt rechtzeitig vor Überschreitungen." },
+      { "icon": "event_available", "title": "14-Tage-Publikationsfrist automatisch geprüft", "text": "Klacks prüft bei der Publikation automatisch, ob der Dienstplan den hinterlegten Mindest-Vorlauf einhält &mdash; die 14-Tage-Frist nach § 10-3 hinterlegen Sie als Regel, und Klacks warnt, bevor ein Plan zu kurzfristig veröffentlicht würde." },
+      { "icon": "timer", "title": "Überstundengrenzen überwacht", "text": "Die gesetzlichen Grenzen nach § 10-6 &mdash; 10 Stunden/7 Tage, 25 Stunden/4 Wochen, 200 Stunden/12 Monate &mdash; sowie der Zuschlag von mindestens 40 % überwacht Klacks laufend und warnt rechtzeitig vor Überschreitungen. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: keine biometrische Cloud-Erfassung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, ganz ohne Zwang zu Fingerabdruck- oder Gesichtserkennungs-Diensten in der Cloud &mdash; im Sinne der Personopplysningsloven und der Datatilsynet-Richtlinien." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
@@ -53,11 +53,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtregime und Bekanntgabefrist, ein Blick",
-    "text": "Sie legen fest, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt &mdash; Klacks wendet die passende 40-, 38- oder 36-Stunden-Grenze automatisch an und lässt Sie den Plan so früh veröffentlichen, wie es die 14-Tage-Frist nach § 10-3 verlangt &mdash; ohne Nachrechnen von Hand."
+    "text": "Sie legen fest, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt &mdash; Klacks wendet die passende 40-, 38- oder 36-Stunden-Grenze automatisch an und prüft bei der Veröffentlichung automatisch, ob die 14-Tage-Frist nach § 10-3 eingehalten ist &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime abbildet, frühzeitige Dienstplan-Veröffentlichung ermöglicht und Überstundengrenzen überwacht &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime abbildet, die 14-Tage-Publikationsfrist automatisch prüft und Überstundengrenzen überwacht &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Österreich",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit den KA-AZG-Höchstgrenzen für das ärztliche Personal automatisch im Blick. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit den KA-AZG-Höchstgrenzen für das ärztliche Personal im rollierenden 17-Wochen-Schnitt automatisch überwacht. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für österreichische Krankenhäuser",
     "screenshotLabel": "Dienstplan"
@@ -23,7 +23,7 @@
     "subtitle": "Von der lückenlosen Nachtschicht bis zur KA-AZG-Kontrolle &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "KA-AZG-Grenzen laufend überwacht", "text": "Klacks überwacht die 48- bzw. mit Opt-out 52-Stunden-Grenze pro Person in Echtzeit und macht jede Überschreitung sofort sichtbar." },
+      { "icon": "gavel", "title": "KA-AZG-Grenzen laufend überwacht", "text": "Klacks überwacht die 48- bzw. mit Opt-out 52-Stunden-Grenze pro Person als rollierenden 17-Wochen-Schnitt nach KA-AZG in Echtzeit &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt &mdash; und warnt, bevor der Grenzwert kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und KA-AZG-Grenzen." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mehrere Stationen, ein Dienstplan",
-    "text": "Jede Station hat eigene Besetzungsregeln. Klacks plant alle gemeinsam, macht die KA-AZG-Höchstgrenzen laufend sichtbar und greift bei Ausfällen auf den Springerpool zu &mdash; die Stationsleitung sieht jederzeit, wo es eng wird."
+    "text": "Jede Station hat eigene Besetzungsregeln. Klacks plant alle gemeinsam, überwacht die KA-AZG-Höchstgrenzen im rollierenden 17-Wochen-Schnitt und greift bei Ausfällen auf den Springerpool zu &mdash; die Stationsleitung sieht jederzeit, wo es eng wird."
   },
   "showRoutePlanning": false,
   "cta": {

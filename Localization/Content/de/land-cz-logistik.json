@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "fact_check", "title": "Dienstzeiten lückenlos dokumentiert", "text": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos und hält sie jederzeit abrufbar bereit &mdash; als Ergänzung zu den separat vorzulegenden Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht." },
-      { "icon": "schedule", "title": "60-Stunden-Woche im 26-Wochen-Schnitt geprüft", "text": "Klacks lässt einzelne 60-Stunden-Wochen zu, überwacht die 10-Stunden-Grenze bei Nachtschichten automatisch und hält die Stundenbasis für den 26-Wochen-Durchschnitt laufend sichtbar." },
+      { "icon": "schedule", "title": "60-Stunden-Woche im 26-Wochen-Schnitt geprüft", "text": "Klacks lässt einzelne 60-Stunden-Wochen zu, überwacht die 10-Stunden-Grenze bei Nachtschichten automatisch und den rollierenden 26-Wochen-Schnitt live gleich mit &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und Klacks warnt, bevor der Grenzwert kippt." },
       { "icon": "call", "title": "Rufbereitschaft sauber getrennt", "text": "Klacks unterscheidet automatisch zwischen vereinbarter Rufbereitschaft (10 %-Zuschlag) und einem tatsächlichen Einsatz, der sofort als Überstunde gerechnet wird." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Tour- und Fahrerdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Novák ist krank“ genügt &mdash; Klacksy rechnet alles neu." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "56 Tage, 60-Stunden-Woche, Rufbereitschaft",
-    "text": "Klacks dokumentiert die Dienstzeiten der letzten 56 Tage lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen, hält die Stundenbasis für den 26-Wochen-Schnitt laufend sichtbar und rechnet eine tatsächlich abgerufene Rufbereitschaft gleich als Überstunde &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks dokumentiert die Dienstzeiten der letzten 56 Tage lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen, überwacht den rollierenden 26-Wochen-Schnitt live und rechnet eine tatsächlich abgerufene Rufbereitschaft gleich als Überstunde &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

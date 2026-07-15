@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; Datenhoheit in Vietnam",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag/Monat/Jahr) und liefert die transparente Stundenbasis für die kumulativen Nacht-Überstundensätze des Bộ luật Lao động 2019 &mdash; und läuft On-Premise, damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag/Monat/Jahr) und kumuliert die Nacht- und Überstundenzuschläge des Bộ luật Lao động 2019 auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; und läuft On-Premise, damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -35,9 +35,9 @@
     "title": "Wie Klacks Betriebe in Vietnam entlastet",
     "subtitle": "Vom automatisch überwachten Überstunden-Cap bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "3-Stufen-Cap automatisch überwacht", "text": "Klacks prüft Tages-, Monats- und Jahreslimit (Art. 107) laufend gegeneinander und warnt, bevor eine einzelne Stufe überschritten wird." },
-      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren &mdash; Klacks weist Nachteinsätzen den Zuschlag automatisch zu und dokumentiert jede Stunde als saubere Basis für die kumulierten 210%- bzw. 270%-Sätze in Ihrer Lohnabrechnung." },
-      { "icon": "schedule", "title": "Nachtzeit &amp; Schichtruhe im Blick", "text": "Klacks erkennt Nachteinsätze automatisch und prüft die 12-stündige Ruhezeit zwischen zwei Schichten (Art. 110) &mdash; mit Warnung, bevor sie unterschritten würde." },
+      { "icon": "gavel", "title": "3-Stufen-Cap automatisch überwacht", "text": "Klacks prüft Tages-, Monats- und Jahreslimit (Art. 107) laufend gegeneinander und warnt, bevor eine einzelne Stufe überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
+      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze stehen damit fertig berechnet in der Stundenbasis für Ihre Lohnabrechnung." },
+      { "icon": "schedule", "title": "Nachtzeit &amp; Schichtruhe im Blick", "text": "Klacks erkennt Nachteinsätze automatisch &mdash; das Nachtfenster 22:00&ndash;06:00 (Art. 106) hinterlegen Sie exakt &mdash; und prüft die 12-stündige Ruhezeit zwischen zwei Schichten (Art. 110), mit Warnung, bevor sie unterschritten würde." },
       { "icon": "fingerprint", "title": "On-Premise ohne Cross-Border-Transfer", "text": "Klacks erfasst keine biometrischen Daten &mdash; die Personal- und Planungsdaten, mit denen Klacks arbeitet, bleiben durch On-Premise-Hosting vollständig im eigenen Firmennetz, ganz ohne Transfer-Impact-Assessment-Dossier nach Decree 13/2023." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
@@ -53,11 +53,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nacht-Überstunden und 3-Stufen-Cap, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht in die Nachtzeit fällt oder eine Stufe des Überstunden-Caps erreicht ist, und weist den hinterlegten Zuschlagssatz gleich zu &mdash; die dokumentierten Stunden liefern die Basis für die kumulierte Lohnberechnung, ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine Schicht in die Nachtzeit fällt oder eine Stufe des Überstunden-Caps erreicht ist, und kumuliert die hinterlegten Zuschläge im additiven Rechenmodus gleich automatisch &mdash; die fertig berechneten Stunden liefern die Basis für Ihre Lohnabrechnung, ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks den 3-Stufen-Überstunden-Cap überwacht und Nachtzuschläge automatisch zuweist &mdash; On-Premise für volle Datenhoheit, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks den 3-Stufen-Überstunden-Cap überwacht und Nacht- und Überstundenzuschläge additiv kumuliert &mdash; On-Premise für volle Datenhoheit, kostenlos und ohne Registrierung."
   }
 }

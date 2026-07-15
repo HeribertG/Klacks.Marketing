@@ -23,8 +23,8 @@
     "subtitle": "Von der lückenlosen Nachtschicht bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "33,6-Stunden-Woche konfigurierbar hinterlegt", "text": "Für den volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag hinterlegen Sie die reduzierte 33,6-Stunden-Woche nach Spekter A2 als Grenzwert &mdash; Klacks überwacht die Einhaltung fortlaufend." },
-      { "icon": "payments", "title": "Feiertags- &amp; Wochenendzuschläge automatisch berechnet", "text": "Der Feiertagszuschlag von 133,33 % und der Wochenendzuschlag von 26 % (mindestens 75 NOK/Stunde) werden automatisch auf jede betroffene Schicht angewendet." },
+      { "icon": "gavel", "title": "33,6-Stunden-Woche konfigurierbar hinterlegt", "text": "Für den volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag hinterlegen Sie die reduzierte 33,6-Stunden-Woche nach Spekter A2 als Grenzwert &mdash; Klacks überwacht den rollierenden Wochenschnitt live und warnt, bevor der Grenzwert kippt. Die Sonntags-Rotation behält Klacks im rollierenden Fenster gleich mit im Blick &mdash; Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt." },
+      { "icon": "payments", "title": "Feiertags- &amp; Wochenendzuschläge automatisch berechnet", "text": "Der Feiertagszuschlag von 133,33 % und der Wochenendzuschlag von 26 % (mindestens 75 NOK/Stunde) werden automatisch auf jede betroffene Schicht angewendet &mdash; der Mindestbetrag pro Stunde ist dabei als Untergrenze direkt in der Zuschlagsregel hinterlegt." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Turnusregime." },
       { "icon": "groups", "title": "Springerpool &amp; Ausfälle", "text": "Fällt jemand aus, zeigt Klacks sofort verfügbare, qualifizierte Springer &mdash; ohne den ganzen Plan umzuwerfen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Turnusregime und Feiertagsdienst, ein Blick",
-    "text": "Sie legen fest, dass eine Station im volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag läuft &mdash; Klacks wendet die 33,6-Stunden-Woche als Grenzwert an und berechnet für einen Weihnachtsdienst automatisch den Feiertagszuschlag von 133,33 % &mdash; ohne Nachrechnen von Hand."
+    "text": "Sie legen fest, dass eine Station im volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag läuft &mdash; Klacks überwacht die 33,6-Stunden-Woche als rollierenden Wochenschnitt live und berechnet für einen Weihnachtsdienst automatisch den Feiertagszuschlag von 133,33 % &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

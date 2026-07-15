@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; PIPA-konformer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht die 52-Stunden-Woche pro Mitarbeitendem, weist Nacht- und Überstundenzuschläge automatisch korrekt zu und läuft On-Premise &mdash; damit Ihre Planungs- und Personaldaten nach dem Personal Information Protection Act (PIPA) im Betrieb bleiben, statt die Cross-Border-Hürde zu riskieren.",
+    "subtitle": "Klacks überwacht die 52-Stunden-Woche pro Mitarbeitendem, kumuliert Nacht- und Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen und läuft On-Premise &mdash; damit Ihre Planungs- und Personaldaten nach dem Personal Information Protection Act (PIPA) im Betrieb bleiben, statt die Cross-Border-Hürde zu riskieren.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Südkorea",
     "screenshotLabel": "Dienstplan"
@@ -62,12 +62,12 @@
       {
         "icon": "gavel",
         "title": "52-Stunden-Cap pro Mitarbeitendem überwacht",
-        "text": "Klacks kennt die harte Grenze aus 40h regulär plus max. 12h Überstunden (§§ 50, 53 LSA) und warnt, bevor eine Planung sie überschreitet &mdash; das stärkste Argument gegen die strafbewehrte Haftung nach § 110 LSA."
+        "text": "Klacks kennt die harte Grenze aus 40h regulär plus max. 12h Überstunden (§§ 50, 53 LSA) und warnt, bevor eine Planung sie überschreitet &mdash; das stärkste Argument gegen die strafbewehrte Haftung nach § 110 LSA. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch zugewiesen",
-        "text": "Überstunden- und Nachtzuschlag (je mind. 50%, § 56 LSA) sind als konfigurierbare Zuschlagssätze hinterlegt und werden automatisch zugewiesen &mdash; die Kumulierung auf 200% behalten Sie damit im Gesamtüberblick, statt sie von Hand zu addieren."
+        "title": "Zuschläge additiv kumuliert",
+        "text": "Überstunden- und Nachtzuschlag (je mind. 50%, § 56 LSA) hinterlegen Sie als eigene Zuschlagstypen &mdash; das Nachtfenster 22:00&ndash;06:00 exakt konfigurierbar, Überstundenzuschläge auf Wunsch gestaffelt. Im additiven Rechenmodus kumuliert Klacks beide Zuschläge automatisch zur 200%-Gesamtvergütung, statt nur den höchsten Satz anzusetzen &mdash; pro Dienst wählbar."
       },
       {
         "icon": "schedule",
@@ -101,11 +101,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "52-Stunden-Cap, Zuschlag, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Überstunde mit Nachtarbeit zusammentrifft, zeigt beide Zuschlagssätze auf einen Blick und warnt, bevor die 52-Stunden-Woche überschritten wird &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine Überstunde mit Nachtarbeit zusammentrifft, kumuliert beide Zuschläge im additiven Rechenmodus zur 200%-Gesamtvergütung und warnt, bevor die 52-Stunden-Woche überschritten wird &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks den 52-Stunden-Cap überwacht, Zuschläge automatisch zuweist und Ihre Planungsdaten PIPA-konform On-Premise hält &mdash; kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks den 52-Stunden-Cap überwacht, Zuschläge additiv kumuliert und Ihre Planungsdaten PIPA-konform On-Premise hält &mdash; kostenlos und ohne Registrierung."
   }
 }

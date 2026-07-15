@@ -37,7 +37,7 @@
     "items": [
       { "icon": "gavel", "title": "Overenskomst-Regeln flexibel hinterlegt", "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt." },
       { "icon": "bedtime", "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant", "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch; die Verkürzung auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen." },
-      { "icon": "fact_check", "title": "Zeiterfassung dokumentiert, 48-Stunden-Nachweis vorbereitet", "text": "Klacks dokumentiert die tägliche Arbeitszeit, liefert die Zeitbasis für den 48-Stunden-Nachweis im 4-Monats-Schnitt und hält die Nachweise 5 Jahre bereit." },
+      { "icon": "fact_check", "title": "Zeiterfassung dokumentiert, 48-Stunden-Schnitt live überwacht", "text": "Klacks dokumentiert die tägliche Arbeitszeit, überwacht den rollierenden 48-Stunden-Schnitt über 4 Monate live und warnt, bevor der Grenzwert kippt &mdash; die Nachweise hält Klacks 5 Jahre bereit." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtwechsel und Zeiterfassung, ein Blick",
-    "text": "Klacks lässt die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel als Sonderregel konfigurieren, hält die Stundenbasis für den 48-Stunden-Nachweis im 4-Monats-Schnitt sichtbar und dokumentiert die Arbeitszeit für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel als Sonderregel konfigurieren, überwacht den rollierenden 48-Stunden-Schnitt im 4-Monats-Fenster live und dokumentiert die Arbeitszeit für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

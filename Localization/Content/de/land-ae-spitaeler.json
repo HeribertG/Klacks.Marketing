@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in den VAE",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">auch im Notfall standhalten.</span>",
-    "subtitle": "Klacks plant Stationen rund um die Uhr, lässt Notfalleinsätze (حالات الطوارئ) als Ausnahme von der Überstunden-Grenze gesondert mit Notizen erfassen und macht die 144-Stunden-Summe je 3 Wochen laufend sichtbar &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen rund um die Uhr, lässt Notfalleinsätze (حالات الطوارئ) als Ausnahme von der Überstunden-Grenze gesondert mit Notizen erfassen und überwacht die 144-Stunden-Summe je 3 Wochen live &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in den VAE",
     "screenshotLabel": "Dienstplan"
@@ -23,7 +23,7 @@
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Stationsabdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "emergency", "title": "Notfall-Überstunden gesondert erfasst", "text": "Notfalleinsätze, die das reguläre 2-Stunden-Tageslimit übersteigen, lassen sich in Klacks gesondert mit Notizen zum Grund erfassen &mdash; nachvollziehbar statt pauschal." },
-      { "icon": "gavel", "title": "144-Stunden-Summe laufend sichtbar", "text": "Klacks summiert die Gesamtarbeitszeit je 3 Wochen fortlaufend und macht sie sichtbar &mdash; auch bei Notfalleinsätzen, damit Sie den 144-Stunden-Deckel selbst im Blick behalten." },
+      { "icon": "gavel", "title": "144-Stunden-Deckel live überwacht", "text": "Klacks überwacht die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel und warnt, bevor der Grenzwert kippt &mdash; auch bei Notfalleinsätzen. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Dienst wird nur Personal mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Station für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikationen automatisch und macht die 144-Stunden-Summe sichtbar." }
@@ -32,7 +32,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Notfall-Ausnahme und 144-Stunden-Deckel, ein Blick",
-    "text": "Ein Notfalleinsatz, der das 2-Stunden-Tageslimit übersteigt, lässt sich in Klacks gesondert mit Grund erfassen, während die Gesamtarbeitszeit je 3 Wochen laufend sichtbar bleibt &mdash; ohne Nachrechnen von Hand."
+    "text": "Ein Notfalleinsatz, der das 2-Stunden-Tageslimit übersteigt, lässt sich in Klacks gesondert mit Grund erfassen, während Klacks die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel überwacht &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

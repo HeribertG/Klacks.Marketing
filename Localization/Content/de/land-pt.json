@@ -36,7 +36,7 @@
     "subtitle": "Vom automatischen registo de ponto bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "fingerprint", "title": "Registo de ponto: lückenlose Datenbasis", "text": "Klacks dokumentiert Beginn, Ende und Pausen jeder Schicht lückenlos, hält sie 5 Jahre bereit und macht sie am Arbeitsplatz sofort einsehbar &mdash; die Datenbasis für das registo de ponto nach Art. 202 CT." },
-      { "icon": "groups", "title": "Banco de horas grupal im Blick", "text": "Klacks überwacht die 50-Stunden-Wochengrenze automatisch und dokumentiert die Stundenbasis für die 150-Stunden-Jahresgrenze und die maximale Laufzeit von 4 Jahren &mdash; sobald das Referendum mit 65 % Zustimmung angenommen wurde." },
+      { "icon": "groups", "title": "Banco de horas grupal im Blick", "text": "Klacks überwacht die 50-Stunden-Wochengrenze und die 150-Stunden-Jahresgrenze live und warnt, bevor eine Grenze kippt; die maximale Laufzeit von 4 Jahren bleibt dokumentiert &mdash; sobald das Referendum mit 65 % Zustimmung angenommen wurde. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "bedtime", "title": "Ruhezeiten &amp; Wochenruhetag eingehalten", "text": "Die 11-stündige tägliche Ruhezeit (Art. 214 CT) und der wöchentliche Ruhetag (Art. 232 CT) &mdash; inklusive Verlegung bei Dauerbetrieb, Bewachung oder Reinigung &mdash; werden automatisch mitgeplant." },
       { "icon": "shield_lock", "title": "On-Premise: Datenhoheit für sensible Daten", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Klacks kommt dabei ganz ohne biometrische Zeiterfassung aus &mdash; die von der CNPD kritisch geprüfte Datenkategorie entsteht gar nicht erst, und Arbeitszeitdaten bleiben ohne Auslandtransfer im Haus." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Registo de ponto und Arbeitszeitkonto, ein Blick",
-    "text": "Klacks dokumentiert jede Schicht lückenlos, macht die Grenzen des banco de horas grupal laufend sichtbar &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks dokumentiert jede Schicht lückenlos und überwacht die Grenzen des banco de horas grupal live &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

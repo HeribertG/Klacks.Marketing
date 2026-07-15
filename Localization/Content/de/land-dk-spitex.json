@@ -47,7 +47,7 @@
       {
         "icon": "event_repeat",
         "title": "4-Tage-Frist automatisch überwacht",
-        "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet, und der Zuschlag von 30,85 DKK pro Stunde lässt sich als Zuschlagstyp hinterlegen, falls es doch kurzfristig sein muss."
+        "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet &mdash; und muss es doch kurzfristig sein, bucht Klacks den als Fixbetrag-Zuschlag hinterlegten Satz von 30,85 DKK für jede umgelegte Stunde direkt mit."
       },
       {
         "icon": "call_split",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Umplanung und Fritvalgsordning, ein Plan",
-    "text": "Klacks warnt bei einer Umplanung unter 4 Tagen vor dem Zuschlag von 30,85 DKK pro Stunde und dokumentiert gleichzeitig die für die Fritvalgsordning relevanten Stunden jeder Pflegekraft &mdash; als verlässliche Basis für die Lohnbuchhaltung."
+    "text": "Klacks warnt bei einer Umplanung unter 4 Tagen vor dem Zuschlag von 30,85 DKK pro Stunde, bucht ihn als hinterlegten Fixbetrag-Zuschlag für jede umgelegte Stunde direkt mit und dokumentiert gleichzeitig die für die Fritvalgsordning relevanten Stunden jeder Pflegekraft &mdash; als verlässliche Basis für die Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {

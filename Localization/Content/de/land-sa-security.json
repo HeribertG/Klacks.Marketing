@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Saudi-Arabien",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Die 12-Stunden-Grenze live überwacht.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und überwacht live, ob 12-Stunden-Schichten die gesetzliche Aufenthaltsgrenze (Art. 101) einhalten, mit sofortiger Warnung bei drohender Überschreitung. On-Premise, damit Ihre Einsatz- und Kundendaten in Saudi-Arabien bleiben.",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und überwacht live, ob 12-Stunden-Schichten die gesetzliche Aufenthaltsgrenze (Art. 101) einhalten, mit sofortiger Warnung bei drohender Überschreitung &mdash; auf Wunsch blockiert Klacks die Überschreitung hart. On-Premise, damit Ihre Einsatz- und Kundendaten in Saudi-Arabien bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rundgänge in Saudi-Arabien",
     "screenshotLabel": "Timeline"
@@ -23,7 +23,7 @@
     "subtitle": "Vom besetzten Posten bis zur harten 12-Stunden-Grenze &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "12-Stunden-Grenze live überwacht (Art. 101)", "text": "Klacks überwacht Schichtfolgen live und warnt sofort, sobald eine Wache länger als 12 Stunden am Arbeitsplatz gehalten würde &mdash; inklusive Pausen und Gebetszeiten." },
+      { "icon": "schedule", "title": "12-Stunden-Grenze live überwacht (Art. 101)", "text": "Klacks überwacht Schichtfolgen live und warnt sofort, sobald eine Wache länger als 12 Stunden am Arbeitsplatz gehalten würde &mdash; inklusive Pausen und Gebetszeiten. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "event", "title": "Freitagsruhe automatisch eingeplant", "text": "Klacks plant den wöchentlichen Ruhetag mit mindestens 24 zusammenhängenden Stunden automatisch mit ein &mdash; die Dokumentation liefert die Basis dafür, dass er voll bezahlt bleibt." },
       { "icon": "gavel", "title": "Ruhetagsarbeit korrekt zugeschlagen", "text": "Arbeit am Ruhetag wird automatisch mit dem 50%-Zuschlag verrechnet oder als bezahlter Ersatztag eingeplant (Art. 107)." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },

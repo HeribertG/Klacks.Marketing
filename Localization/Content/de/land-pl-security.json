@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (ochrona) in Polen",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks plant Objekte und 24-Stunden-Schichten im äquivalenten Arbeitszeitsystem &mdash; mit der Ausgleichsruhezeit im Blick und automatisch zugewiesenen Zuschlagssätzen. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
+    "subtitle": "Klacks plant Objekte und 24-Stunden-Schichten im äquivalenten Arbeitszeitsystem &mdash; mit der Ausgleichsruhezeit im Blick und auf Wunsch additiv kumulierten Zuschlägen. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten im Sicherheitsgewerbe in Polen",
     "screenshotLabel": "Timeline"
@@ -23,9 +23,9 @@
     "subtitle": "Von der 24-Stunden-Schicht bis zum passenden Zuschlag &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "24-Stunden-Schichten korrekt geplant", "text": "Klacks plant Schichten im äquivalenten Arbeitszeitsystem nach Art. 137 Kodeks pracy, inklusive der 1- bis 4-monatigen Abrechnungszeiträume." },
+      { "icon": "schedule", "title": "24-Stunden-Schichten korrekt geplant", "text": "Klacks plant Schichten im äquivalenten Arbeitszeitsystem nach Art. 137 Kodeks pracy und überwacht den Durchschnitt über den 1- bis 4-monatigen Abrechnungszeitraum rollierend live &mdash; mit Warnung, bevor der Grenzwert kippt." },
       { "icon": "bedtime", "title": "Ausgleichsruhezeit im Blick", "text": "Klacks behält die nach einer verlängerten Schicht zustehende Ausgleichsruhezeit im Blick und warnt, wenn sie nicht eingehalten wird." },
-      { "icon": "payments", "title": "Zuschläge automatisch zugewiesen", "text": "Klacks weist die passenden Nacht-, Sonn- und Feiertagszuschläge automatisch dem jeweiligen Dienst zu &mdash; die Sätze sind frei konfigurierbar &mdash; und dokumentiert jede zuschlagspflichtige Stunde einzeln. Die nach Art. 151 § 8 KP kumulative Berechnung von Überstunden- plus Nachtzuschlag nimmt Ihre Lohnabrechnung auf dieser sauberen Stundenbasis vor." },
+      { "icon": "payments", "title": "Zuschläge additiv kumuliert", "text": "Klacks weist die passenden Nacht-, Sonn- und Feiertagszuschläge automatisch dem jeweiligen Dienst zu &mdash; die Sätze sind frei konfigurierbar, Überstundenzuschläge als eigener Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Überstunden- plus Nachtzuschlag nach Art. 151 § 8 KP automatisch, statt nur den höchsten Satz anzusetzen &mdash; pro Dienst wählbar, und jede zuschlagspflichtige Stunde steht fertig berechnet für Ihre Lohnabrechnung bereit." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die 24-Stunden-Schicht für Objekt Nord“ genügt &mdash; Klacksy prüft Ausgleichsruhezeit und Verfügbarkeit." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "24-Stunden-Schicht, Ausgleich, Zuschlag",
-    "text": "Nach einer 24-Stunden-Schicht behält Klacks die Ausgleichsruhezeit im Blick und weist den zutreffenden Nacht- oder Feiertagszuschlag automatisch zu &mdash; ohne Nachrechnen von Hand."
+    "text": "Nach einer 24-Stunden-Schicht behält Klacks die Ausgleichsruhezeit im Blick und kumuliert Nacht-, Feiertags- und Überstundenzuschläge im additiven Rechenmodus automatisch &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

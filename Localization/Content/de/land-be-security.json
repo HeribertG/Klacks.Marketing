@@ -23,9 +23,9 @@
     "subtitle": "Vom besetzten Posten bis zur gezählten Planänderung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "37h-Jahresschnitt automatisch überwacht", "text": "Klacks behält den durchschnittlichen 37h-Wochenschnitt im Blick, auch bei wechselnden 12h-Schichten." },
+      { "icon": "schedule", "title": "37h-Jahresschnitt automatisch überwacht", "text": "Klacks überwacht den rollierenden 37h-Wochenschnitt über das Jahr live und warnt, bevor der Grenzwert kippt &mdash; auch bei wechselnden 12h-Schichten; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "bedtime", "title": "Ruhezeiten korrekt eingehalten", "text": "Die 12h-Ruhezeit nach jeder Schicht und die 36h-Ruhezeit nach maximal 6 Arbeitstagen bzw. 48 Stunden werden automatisch eingeplant." },
-      { "icon": "event_repeat", "title": "Änderungsprämie automatisch gezählt", "text": "Klacks zählt jede Planänderung nach dem Basisplan vom 22.-25. des Vormonats mit und warnt, bevor die 4. Änderung die Prämie von aktuell € 0,6056/Std. auslöst." },
+      { "icon": "event_repeat", "title": "Änderungsprämie automatisch gezählt", "text": "Klacks zählt jede Planänderung nach dem Basisplan vom 22.-25. des Vormonats mit und warnt, bevor die 4. Änderung die Prämie von aktuell € 0,6056/Std. auslöst &mdash; die Prämie selbst lässt sich als fester Betrag pro Stunde hinterlegen und automatisch verrechnen." },
       { "icon": "nightlight", "title": "Zweigeteilter Nachtzuschlag automatisch verrechnet", "text": "Klacks unterscheidet automatisch zwischen dem 12%-Zuschlag von 20 bis 22 Uhr und dem 22,5%-Zuschlag von 22 bis 6 Uhr." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Ruhezeiten, Jahresschnitt und Zuschläge." }
     ]

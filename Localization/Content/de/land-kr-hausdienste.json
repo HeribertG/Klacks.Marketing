@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; auch bei geteilten Schichten über den Tag verteilt." },
       { "icon": "payments", "title": "Wartezeit korrekt als Arbeitszeit erfasst", "text": "Klacks erfasst die Zeit zwischen zwei Einsätzen einer geteilten Schicht automatisch als vergütungspflichtige Arbeitszeit (§ 50 Abs. 3 LSA)." },
-      { "icon": "gavel", "title": "52-Stunden-Cap automatisch überwacht", "text": "Klacks summiert reguläre und Überstunden je Mitarbeitendem und warnt, bevor die 52-Stunden-Grenze erreicht wird." },
+      { "icon": "gavel", "title": "52-Stunden-Cap automatisch überwacht", "text": "Klacks summiert reguläre und Überstunden je Mitarbeitendem und warnt, bevor die 52-Stunden-Grenze erreicht wird. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Aushilfen: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatzdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Gangnam für morgen früh“ genügt &mdash; Klacksy optimiert Route und Wartezeit gleich mit." }

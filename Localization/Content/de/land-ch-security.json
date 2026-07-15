@@ -46,13 +46,13 @@
       },
       {
         "icon": "gavel",
-        "title": "210-Stunden-Schwelle hinterlegt",
-        "text": "Die monatliche Überstunden-Schwelle von 210 Stunden, ab der ein 25%-Zeitzuschlag gilt, lässt sich als Referenzwert hinterlegen &mdash; als Dokumentationsbasis für die Kompensation innert der 3-Monats-Frist."
+        "title": "210-Stunden-Schwelle live überwacht",
+        "text": "Die monatliche Schwelle von 210 Stunden, ab der ein 25%-Zeitzuschlag gilt, überwacht Klacks als Monats-Stundenlimit live und warnt, bevor sie überschritten wird &mdash; auf Wunsch blockiert Klacks die Überschreitung hart. Die dokumentierten Stunden bilden die Basis für die Kompensation innert der 3-Monats-Frist."
       },
       {
         "icon": "verified",
         "title": "Zertifikate automatisch geprüft",
-        "text": "Klacks prüft bei jeder Zuteilung die hinterlegten Zertifikate und warnt rechtzeitig, bevor ein Nachweis abläuft."
+        "text": "Klacks prüft bei jeder Zuteilung die hinterlegten Zertifikate und warnt rechtzeitig, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtdienst, Zeitbonus, ein Plan",
-    "text": "Klacks berechnet den Zeitbonus für Nacht- und Sonntagsarbeit automatisch als Basis für Ihr Zeitkonto und hält die 210-Stunden-Schwelle als Referenzwert fest &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks berechnet den Zeitbonus für Nacht- und Sonntagsarbeit automatisch als Basis für Ihr Zeitkonto und überwacht die 210-Stunden-Schwelle live &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

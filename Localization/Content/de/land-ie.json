@@ -35,9 +35,9 @@
     "title": "Wie Klacks irische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks berechnet die 48-Stunden-Durchschnittsgrenze über den nach OWTA Section 15 maßgeblichen Referenzzeitraum &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen." },
+      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks überwacht den rollierenden 48-Stunden-Schnitt über den nach OWTA Section 15 maßgeblichen Referenzzeitraum live und warnt, bevor der Grenzwert kippt &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "bedtime", "title": "Ruhezeiten in Echtzeit überwacht", "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Abweichungen macht Klacks sofort sichtbar." },
-      { "icon": "campaign", "title": "Schichtankündigung im Blick", "text": "Klacks zeigt Dienstpläne frühzeitig an, sodass sich die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten in der Praxis einhalten lässt." },
+      { "icon": "campaign", "title": "Schichtankündigung im Blick", "text": "Klacks prüft den Mindest-Vorlauf für die Dienstplan-Publikation automatisch: Die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten wird als Publikationsfrist hinterlegt, und Klacks warnt, wenn ein Plan zu kurzfristig veröffentlicht würde." },
       { "icon": "fact_check", "title": "Banded-Hours-Anträge dokumentiert", "text": "Klacks dokumentiert die geplanten und geleisteten Stunden lückenlos, sodass sich ein Antrag auf Banded Hours nach Section 18A OWTA innerhalb der 4-Wochen-Frist fundiert beantworten lässt." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "24 Stunden Vorlauf, ein Blick",
-    "text": "Ein Dienstplan ändert sich kurzfristig. Klacks zeigt die neue Schicht sofort im Plan an, sodass sich die 24-Stunden-Vorlauffrist nach Section 17 OWTA einhalten lässt, und behält zugleich die 11-Stunden-Ruhezeit im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Ein Dienstplan ändert sich kurzfristig. Klacks prüft die 24-Stunden-Vorlauffrist nach Section 17 OWTA automatisch gegen die hinterlegte Publikationsfrist und behält zugleich die 11-Stunden-Ruhezeit im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

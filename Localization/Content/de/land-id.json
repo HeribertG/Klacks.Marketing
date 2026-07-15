@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; UU PDP-konforme Zeiterfassung",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit und läuft On-Premise &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit &mdash; auf Wunsch blockiert Klacks Verstöße hart &mdash; und läuft On-Premise &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für indonesische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -62,7 +62,7 @@
       {
         "icon": "hourglass_top",
         "title": "18-Stunden-Wochenlimit automatisch überwacht",
-        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und eines Hinweises auf die erforderliche schriftliche Freigabe."
+        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und eines Hinweises auf die erforderliche schriftliche Freigabe. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "calculate",

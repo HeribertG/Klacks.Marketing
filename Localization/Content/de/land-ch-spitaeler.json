@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Assistenzarzt-Stunden automatisch überwacht",
-        "text": "Klacks überwacht die 50-Stunden-Wochengrenze laufend und macht Überschreitungen sofort sichtbar &mdash; die 140-Stunden-Jahresgrenze für Überzeit lässt sich als Referenzwert hinterlegen."
+        "text": "Klacks überwacht die 50-Stunden-Wochengrenze laufend und macht Überschreitungen sofort sichtbar &mdash; auf Wunsch blockiert Klacks die Überschreitung hart, ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die 140-Stunden-Jahresgrenze für Überzeit lässt sich als Referenzwert hinterlegen."
       },
       {
         "icon": "call",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenzarzt-Rotation und Pikett, ein Plan",
-    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, unterscheidet Präsenz- von Rufpikett automatisch und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, unterscheidet Präsenz- von Rufpikett automatisch und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Publikationsfristen mit Mindest-Vorlauf (z. B. zwei Wochen) prüft Klacks schon heute automatisch &mdash; sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -23,7 +23,7 @@
     "subtitle": "Von der optimierten Route bis zur korrekten Überstundenvergütung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "payments", "title": "Mertid-Übergang dokumentiert", "text": "Den Übergang von mertid zu voller Überstundenvergütung ab 1. Juni 2026 bilden Sie in Klacks ab &mdash; die festen Sätze (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) hinterlegen Sie als Referenzwerte, die dokumentierten Stunden liefern die Basis für Ihre Lohnabrechnung." },
+      { "icon": "payments", "title": "Mertid-Übergang mit festen Sätzen gebucht", "text": "Den Übergang von mertid zu voller Überstundenvergütung ab 1. Juni 2026 bilden Sie in Klacks ab &mdash; die festen Sätze (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) bucht Klacks als Fixbetrag-Zuschläge pro Stunde direkt mit, die dokumentierten Stunden liefern die Basis für Ihre Lohnabrechnung." },
       { "icon": "event_available", "title": "Freier Tag direkt eingeplant", "text": "Den bezahlten freien Tag für Vollzeitkräfte ab 2026 planen Sie in Klacks direkt ein &mdash; den anteiligen Anspruch für Teilzeitkräfte hinterlegen Sie je Person." },
       { "icon": "bedtime", "title": "Nachtruhe im Blick", "text": "Klacks macht sichtbar, wenn eine Schicht in das Fenster Mitternacht bis 05:00 Uhr fällt, das nach ATL § 13 grundsätzlich in der Ruhezeit liegen muss." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mertid-Ende und freier Tag, ein Plan",
-    "text": "Klacks dokumentiert die Mehrstunden von Teilzeitkräften als Basis für die ab 1. Juni 2026 geltende volle Überstundenvergütung und plant den neuen arbetstidsförkortning-Tag direkt mit ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks bucht die Mehrstunden von Teilzeitkräften ab 1. Juni 2026 mit den festen Überstundensätzen als Fixbetrag-Zuschlag pro Stunde und plant den neuen arbetstidsförkortning-Tag direkt mit ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
