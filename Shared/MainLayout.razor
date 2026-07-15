@@ -368,11 +368,9 @@
         return path.Length == 0 ? $"/#{anchor}" : $"/{path}#{anchor}";
     }
 
-    private string DocsHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
-        ? ExternalLinks.DocsPathDe
-        : CurrentCultureRecord.Code.StartsWith("zh", StringComparison.OrdinalIgnoreCase)
-            ? ExternalLinks.DocsPathZh
-            : ExternalLinks.DocsPathEn;
+    private string DocsHref => CurrentCultureRecord.DocsLocale == SupportedCultures.DefaultCode
+        ? ExternalLinks.DocsBasePath
+        : $"{ExternalLinks.DocsBasePath}{CurrentCultureRecord.DocsLocale}/";
 
     private string LanguageSwitchHref(SupportedCulture target)
     {
