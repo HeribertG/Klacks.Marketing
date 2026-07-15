@@ -1,30 +1,30 @@
 {
-  "pageTitle": "Klacks für Spitäler in Thailand | Schichtübergabe & 36-Stunden-Limit",
+  "pageTitle": "Klacks für Krankenhäuser in Thailand | Schichtübergabe & 36-Stunden-Limit",
   "hero": {
     "badgeIcon": "local_hospital",
-    "badge": "Für Spitäler &amp; Kliniken in Thailand",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Thailand",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtübergaben lückenlos und deckelt Überstunden automatisch auf das gesetzliche Wochenlimit &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichtübergaben lückenlos und überwacht Überstunden live gegen das gesetzliche Wochenlimit &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Thailand",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Thailand",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
     "eyebrow": "Der Klinik-Alltag in Thailand",
     "title": "Schichtübergabe, 36h-Limit und Überstundensätze",
     "items": [
-      { "icon": "swap_horiz", "title": "Schichtübergabe zählt als Arbeitszeit", "text": "Die tägliche Schichtübergabe (Wela Song Wen) zählt als Arbeitszeit; überschreitet sie die 8-Stunden-Tagesgrenze, ist der Zuschlag mit dem 1,5-fachen Satz zu vergüten (Section 61). Wie lange eine Übergabe in der Praxis dauert, ist Sache des jeweiligen Spitals &mdash; keine feste Gesetzeszahl, aber die Zuschlagspflicht ist es." },
-      { "icon": "gavel", "title": "36-Stunden-Wochenlimit über alle Stationen", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; über wechselnde Stationsbesetzungen und Rotationen hinweg von Hand kaum zuverlässig zu überwachen. Verstösse: Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB (Section 144)." },
-      { "icon": "layers", "title": "Dreistufige Überstundensätze", "text": "Überstunden am gewöhnlichen Arbeitstag mit 1,5-fachem Satz (Section 61), Feiertags-/Ruhetagsarbeit mit 2,0-fachem bzw. +1,0-fachem Satz für Monatslöhner (Section 62) und Überstunden an Feiertagen/Ruhetagen mit 3,0-fachem Satz (Section 63) &mdash; im 24/7-Schichtbetrieb eines Spitals eine ständige Fehlerquelle." }
+      { "icon": "swap_horiz", "title": "Schichtübergabe zählt als Arbeitszeit", "text": "Die tägliche Schichtübergabe (Wela Song Wen) zählt als Arbeitszeit; überschreitet sie die 8-Stunden-Tagesgrenze, ist der Zuschlag mit dem 1,5-fachen Satz zu vergüten (Section 61). Wie lange eine Übergabe in der Praxis dauert, ist Sache des jeweiligen Krankenhauses &mdash; keine feste Gesetzeszahl, aber die Zuschlagspflicht ist es." },
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit über alle Stationen", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; über wechselnde Stationsbesetzungen und Rotationen hinweg von Hand kaum zuverlässig zu überwachen. Verstöße: Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB (Section 144)." },
+      { "icon": "layers", "title": "Dreistufige Überstundensätze", "text": "Überstunden am gewöhnlichen Arbeitstag mit 1,5-fachem Satz (Section 61), Feiertags-/Ruhetagsarbeit mit 2,0-fachem bzw. +1,0-fachem Satz für Monatslöhner (Section 62) und Überstunden an Feiertagen/Ruhetagen mit 3,0-fachem Satz (Section 63) &mdash; im 24/7-Schichtbetrieb eines Krankenhauses eine ständige Fehlerquelle." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks Spitäler in Thailand entlastet",
+    "title": "Wie Klacks Krankenhäuser in Thailand entlastet",
     "subtitle": "Von der lückenlosen Stationsabdeckung bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "swap_horiz", "title": "Schichtübergabe korrekt vergütet", "text": "Klacks erfasst die tägliche Schichtübergabe als Arbeitszeit und schlägt automatisch den 1,5-fachen Zuschlag vor, sobald die 8-Stunden-Tagesgrenze überschritten wird (Section 61)." },
-      { "icon": "gavel", "title": "36h-Wochenlimit stationsübergreifend gedeckelt", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem über alle Stationen und Rotationen und sperrt die Planung vor Überschreitung des 36-Stunden-Limits (Section 26)." },
+      { "icon": "gavel", "title": "36h-Wochenlimit stationsübergreifend live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem über alle Stationen und Rotationen und warnt rechtzeitig vor Überschreitung des 36-Stunden-Limits (Section 26)." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Station 3 für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und das 36-Stunden-Limit." }

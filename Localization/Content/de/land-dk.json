@@ -23,8 +23,8 @@
     "subtitle": "Von der flexiblen Overenskomst-Abbildung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "gavel", "title": "Overenskomst-Regeln flexibel hinterlegt", "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt." },
-      { "icon": "bedtime", "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant", "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch und erkennt, wann eine Verkürzung auf 8 Stunden bei Schichtwechsel zulässig ist." },
-      { "icon": "fact_check", "title": "Zeiterfassung &amp; 48-Stunden-Nachweis automatisch", "text": "Klacks dokumentiert die tägliche Arbeitszeit lückenlos, prüft den 48-Stunden-Schnitt über 4 Monate und hält die Nachweise 5 Jahre bereit." },
+      { "icon": "bedtime", "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant", "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch; die Verkürzung auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen." },
+      { "icon": "fact_check", "title": "Zeiterfassung dokumentiert, 48-Stunden-Nachweis vorbereitet", "text": "Klacks dokumentiert die tägliche Arbeitszeit, liefert die Zeitbasis für den 48-Stunden-Nachweis im 4-Monats-Schnitt und hält die Nachweise 5 Jahre bereit." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
@@ -33,18 +33,18 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäss Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäß Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtwechsel und Zeiterfassung, ein Blick",
-    "text": "Klacks erkennt automatisch, wann die Ruhezeit bei Schichtwechsel auf 8 Stunden verkürzt werden darf, hält die 48-Stunden-Grenze im 4-Monats-Schnitt ein und dokumentiert die Arbeitszeit lückenlos für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel als Sonderregel konfigurieren, hält die Stundenbasis für den 48-Stunden-Nachweis im 4-Monats-Schnitt sichtbar und dokumentiert die Arbeitszeit für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Overenskomst-Regeln, Ruhezeiten und die Zeiterfassungspflicht automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Overenskomst-Regeln abbildet, Ruhezeiten überwacht und die Zeiterfassung dokumentiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

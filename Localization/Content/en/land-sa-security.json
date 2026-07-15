@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "For security services in Saudi Arabia",
-    "titleHtml": "Every post covered. <span class=\"text-secondary\">The 12-hour limit never breached.</span>",
-    "subtitle": "Klacks covers sites and patrols gap-free &mdash; and makes sure 12-hour shifts never exceed the statutory presence limit (Art. 101). On-premise, so your deployment and client data stay in Saudi Arabia.",
+    "titleHtml": "Every post covered. <span class=\"text-secondary\">The 12-hour limit monitored live.</span>",
+    "subtitle": "Klacks covers sites and patrols gap-free &mdash; and monitors live whether 12-hour shifts stay within the statutory presence limit (Art. 101), with an immediate warning if a breach is imminent. On-premise, so your deployment and client data stay in Saudi Arabia.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for site coverage and patrols in Saudi Arabia",
     "screenshotLabel": "Timeline"
@@ -23,11 +23,11 @@
     "subtitle": "From covered posts to a hard 12-hour limit &mdash; it all fits together.",
     "items": [
       { "icon": "shield", "title": "Sites &amp; Posts, Gap-Free", "text": "Every post across all sites &mdash; Klacks flags every open slot instantly and fills it automatically on request." },
-      { "icon": "schedule", "title": "12-Hour Limit Strictly Enforced (Art. 101)", "text": "Klacks blocks shift sequences that would keep a guard at the workplace for more than 12 hours &mdash; including breaks and prayer times." },
-      { "icon": "event", "title": "Friday Rest Scheduled Automatically", "text": "Klacks ensures the weekly rest day lasts at least 24 consecutive hours and remains fully paid." },
+      { "icon": "schedule", "title": "12-Hour Limit Monitored Live (Art. 101)", "text": "Klacks monitors shift sequences live and warns immediately if a guard would be kept at the workplace for more than 12 hours &mdash; including breaks and prayer times." },
+      { "icon": "event", "title": "Friday Rest Scheduled Automatically", "text": "Klacks automatically schedules the weekly rest day with at least 24 consecutive hours &mdash; the documentation provides the basis for it to remain fully paid." },
       { "icon": "gavel", "title": "Rest-Day Work Correctly Compensated", "text": "Work on the rest day is automatically billed with the 50% premium, or scheduled as a paid substitute day (Art. 107)." },
       { "icon": "route", "title": "Patrols Optimised", "text": "For mobile services, Klacks lays out patrol routes so distances stay short and intervals are kept." },
-      { "icon": "shield_lock", "title": "On-Premise: Deployment Data Stays in KSA", "text": "Klacks runs on your own infrastructure. Sensitive biometric time-tracking data stays physically in Saudi Arabia &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
+      { "icon": "shield_lock", "title": "On-Premise: Deployment Data Stays in KSA", "text": "Klacks runs on your own infrastructure. Sensitive deployment and personnel data stays physically in Saudi Arabia &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
       { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Cover the night shift for Site North\" is enough &mdash; Klacksy automatically checks the 12-hour limit and Friday rest." }
     ]
   },

@@ -4,7 +4,7 @@
     "badgeIcon": "gavel",
     "badge": "Pour les entreprises en Belgique &middot; Toutes les Commissions Paritaires",
     "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">respectent chaque Commission Paritaire.</span>",
-    "subtitle": "Klacks connaît les règles de votre Commission Paritaire (CP), crée automatiquement les horaires dans la langue de chaque siège d'exploitation et documente chaque écart &mdash; pour que vous respectiez intégralement la réforme 2026.",
+    "subtitle": "Klacks connaît les règles de votre Commission Paritaire (CP), est disponible dans la langue de chaque siège d'exploitation et documente chaque écart &mdash; pour que vous gardiez la réforme 2026 à l'œil.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Vue d'ensemble des horaires Klacks pour les entreprises en Belgique",
     "screenshotLabel": "Horaire"
@@ -22,29 +22,29 @@
     "title": "Comment Klacks soulage les entreprises belges",
     "subtitle": "De la règle spécifique à la CP jusqu'à la documentation multilingue &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "gavel", "title": "La Commission Paritaire prise en compte automatiquement", "text": "Klacks connaît les suppléments, les limites de temps de travail et les délais de planification de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03." },
-      { "icon": "translate", "title": "Des horaires dans la bonne langue selon le siège d'exploitation", "text": "Klacks crée automatiquement les horaires et le pointage dans la langue du siège d'exploitation concerné &mdash; néerlandais, français ou allemand." },
-      { "icon": "fact_check", "title": "Registre des écarts tenu sans faille", "text": "Chaque modification de planning pour le personnel à temps partiel est documentée automatiquement &mdash; la présomption légale de temps plein ne peut même pas naître." },
-      { "icon": "event_available", "title": "La réforme 2026 respectée automatiquement", "text": "Klacks publie les horaires dans le délai légal de 7 jours ouvrables à l'avance (ou le délai raccourci prévu par CCT) et applique automatiquement la nouvelle durée de travail minimale à temps partiel d'un dixième du temps plein." },
-      { "icon": "schedule", "title": "Heures supplémentaires volontaires clairement séparées", "text": "Les 240 premières des 360 heures supplémentaires volontaires annuelles maximales sont exonérées de supplément, de cotisations sociales et d'impôt &mdash; Klacks tient cette limite à jour automatiquement." },
+      { "icon": "gavel", "title": "La Commission Paritaire configurée individuellement", "text": "Klacks reproduit les suppléments et les limites de temps de travail de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03 &mdash; directement dans votre configuration de règles." },
+      { "icon": "translate", "title": "Des horaires dans la bonne langue selon le siège d'exploitation", "text": "Klacks est disponible pour chaque siège d'exploitation en néerlandais, français ou allemand &mdash; les collaborateurs et les planificateurs travaillent dans leur langue nationale." },
+      { "icon": "fact_check", "title": "Registre des écarts tenu sans faille", "text": "Chaque modification de planning pour le personnel à temps partiel est documentée automatiquement &mdash; la base pour prévenir la présomption légale de temps plein." },
+      { "icon": "event_available", "title": "Réforme 2026 : durée de travail minimale à temps partiel sous contrôle", "text": "Vous configurez dans Klacks, comme seuil, la durée de travail minimale à temps partiel d'un dixième du temps plein en vigueur depuis le 1er juin 2026 &mdash; le système avertit automatiquement en cas de non-respect." },
+      { "icon": "schedule", "title": "Heures supplémentaires volontaires sous contrôle", "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles, jusqu'à 360 heures maximum, et indique quand le seuil de 240 heures est atteint &mdash; la limite dont votre gestion de la paie a besoin pour l'exonération de cotisations et d'impôt." },
       { "icon": "smart_toy", "title": "Klacksy : basé sur des règles, jamais une boîte noire", "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable selon les compétences et règles enregistrées, jamais comme une décision d'IA opaque." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistant IA",
     "title": "Klacksy : l'assistant intégré pour votre équipe",
-    "text": "Klacksy est directement intégré à l'interface de Klacks et aide à respecter les règles spécifiques à la CP, les exigences linguistiques par siège d'exploitation et le délai de publication de la réforme 2026. Les collaborateurs et les planificateurs consultent les horaires par chat ou clarifient les disponibilités &mdash; de façon traçable selon les compétences et règles enregistrées, jamais une décision de boîte noire.",
+    "text": "Klacksy est directement intégré à l'interface de Klacks et aide à garder à l'œil les règles spécifiques à la CP et les exigences linguistiques par siège d'exploitation. Les collaborateurs et les planificateurs consultent les horaires par chat ou clarifient les disponibilités &mdash; de façon traçable selon les compétences et règles enregistrées, jamais une décision de boîte noire.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Commission Paritaire et exigence linguistique, en un coup d'œil",
-    "text": "Klacks détecte automatiquement quelle Commission Paritaire s'applique à un siège d'exploitation, crée l'horaire dans la bonne langue et documente chaque écart &mdash; sans calcul manuel."
+    "text": "Klacks applique les suppléments et seuils configurés de la Commission Paritaire compétente pour chaque siège d'exploitation, est disponible dans la bonne langue et documente chaque écart &mdash; sans calcul manuel."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise",
-    "text": "Testez dans le Playground comment Klacks automatise les règles de la Commission Paritaire, les exigences linguistiques et le délai de publication de la réforme 2026 &mdash; gratuitement et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge les règles de la Commission Paritaire, les exigences linguistiques et la durée de travail minimale à temps partiel de la réforme 2026 &mdash; gratuitement et sans inscription."
   }
 }

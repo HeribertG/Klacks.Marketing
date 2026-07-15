@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Pentru servicii de pază și securitate din România",
-    "titleHtml": "Fiecare post este acoperit. <span class=\"text-secondary\">Nicio tură de 24/24.</span>",
-    "subtitle": "Klacks acoperă obiectivele și rondurile de patrulare fără nicio lacună &mdash; cu tura maximă de 12 ore și repausul obligatoriu de 24 de ore după aceasta luate automat în calcul. Astfel, turele continue nepermise de tip 24/24 nici nu mai apar.",
+    "titleHtml": "Fiecare post este acoperit. <span class=\"text-secondary\">Turele de 24/24 sunt detectate instant.</span>",
+    "subtitle": "Klacks acoperă obiectivele și rondurile de patrulare fără nicio lacună &mdash; cu tura maximă de 12 ore și repausul obligatoriu de 24 de ore după aceasta luate automat în calcul și monitorizate live. Astfel, turele continue nepermise de tip 24/24 devin vizibile instant.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru ronduri de patrulare și acoperirea obiectivelor din România",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "schedule",
-        "title": "Limita de 12 ore &amp; repausul de 24 de ore, impuse automat",
-        "text": "Klacks nu permite nicio tură de peste 12 ore și planifică apoi obligatoriu repausul de 24 de ore &mdash; astfel, turele continue de tip 24/24 sunt excluse de la bun început."
+        "title": "Limita de 12 ore &amp; repausul de 24 de ore, monitorizate",
+        "text": "Klacks avertizează de îndată ce o tură depășește limita de 12 ore și planifică apoi automat repausul de 24 de ore &mdash; astfel, turele continue de tip 24/24 devin vizibile instant."
       },
       {
         "icon": "swap_horiz",
@@ -57,7 +57,7 @@
       {
         "icon": "verified",
         "title": "Certificate verificate automat",
-        "text": "Klacks alocă misiunile doar personalului cu legitimație valabilă &mdash; și avertizează înainte ca un document să expire."
+        "text": "Klacks alocă misiunile personalului calificat corespunzător &mdash; și avertizează înainte ca legitimația să expire."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Tură de 12 ore, repaus de 24 de ore, un singur plan",
-    "text": "Klacks impune automat repausul de 24 de ore după fiecare tură de 12 ore și previne astfel turele continue nepermise de tip 24/24 &mdash; fără niciun calcul manual."
+    "text": "Klacks planifică automat repausul de 24 de ore după fiecare tură de 12 ore și face vizibile instant turele continue nepermise de tip 24/24 &mdash; fără niciun calcul manual."
   },
   "showRoutePlanning": true,
   "cta": {

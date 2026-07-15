@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For home care &amp; domiciliary care in the UK",
     "titleHtml": "More time for care, <span class=\"text-secondary\">less for payroll.</span>",
-    "subtitle": "Klacks schedules visits and rounds automatically &mdash; including travel time between clients as paid working time, so the effective hourly rate reliably stays above the National Living Wage. On-premise, so patient data never leaves your organisation.",
+    "subtitle": "Klacks schedules visits and rounds automatically &mdash; including travel time between clients as paid working time, for a correct time basis against the National Living Wage. On-premise, so patient data never leaves your organisation.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for round planning in home care in the UK",
     "screenshotLabel": "Timeline"
@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Rounds automatically optimised", "text": "Klacks plans visit routes so that journeys stay short and time windows are met &mdash; by car, bike or on foot." },
       { "icon": "schedule", "title": "Travel time correctly recorded as working time", "text": "Travel between clients is automatically counted as paid working time &mdash; only the outbound journey to the first client and the return journey from the last are excluded, fully in line with the leading case HMRC v Taylors Services Ltd." },
-      { "icon": "payments", "title": "National Living Wage checked continuously", "text": "Klacks has the current rate of £12.71 an hour on file and warns before the effective hourly rate, including travel time, falls below it." },
+      { "icon": "payments", "title": "National Living Wage always kept up to date on file", "text": "Klacks has the current rate of £12.71 an hour on file &mdash; a reliable reference for your time and pay basis, including travel time." },
       { "icon": "verified", "title": "Qualifications factored in automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all." },
       { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data never leaves your organisation &mdash; not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice or chat", "text": "\"Fill the rounds for tomorrow\" is all it takes. If someone calls in sick, Klacksy immediately suggests available cover." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "Travel time, the Living Wage, one plan",
-    "text": "Klacks automatically counts travel time between clients as working time and reliably keeps the effective hourly rate above the current National Living Wage of £12.71 an hour &mdash; no manual recalculating required."
+    "text": "Klacks automatically counts travel time between clients as working time and keeps the current National Living Wage of £12.71 an hour on file as a reference value for the time basis &mdash; no manual recalculating required."
   },
   "showRoutePlanning": true,
   "cta": {

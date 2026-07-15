@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "For renholdsbedrifter i Norge",
     "titleHtml": "Hvert objekt <span class=\"text-secondary\">rent planlagt.</span>",
-    "subtitle": "Klacks fordeler objekter, ruter og skiftende team effektivt &mdash; med de nye minstelønnssatsene fra Renholdsoverenskomsten, trappet etter ansiennitet, og nattillegget automatisk lagt inn.",
+    "subtitle": "Klacks fordeler objekter, ruter og skiftende team effektivt &mdash; med de nye minstelønnssatsene fra Renholdsoverenskomsten, trappet etter ansiennitet, og nattillegget lagt inn som lønns- og tilleggsregler.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vaktplan-rutenett for renholdsteam og objekter i Norge",
     "screenshotLabel": "Vaktplan"
@@ -24,8 +24,8 @@
     "items": [
       { "icon": "route", "title": "Objektruter optimert", "text": "Klacks legger rekkefølgen på objektene slik at veiene forblir korte &mdash; med bil, sykkel eller til fots." },
       { "icon": "groups", "title": "Team fordelt fleksibelt", "text": "Skiftende bemanning og fravær: Klacks holder oversikten og foreslår passende fordeling." },
-      { "icon": "payments", "title": "Minstelønninger etter ansiennitet lagt inn automatisk", "text": "De fire ansiennitetstrinnene i Renholdsoverenskomsten fra 1. juni 2026 &mdash; 247,29, 250,66, 257,39 og 261,24 NOK &mdash; er lagt inn sammen med garantitilleggene fra 1. mai 2026." },
-      { "icon": "bedtime", "title": "Nattillegg lagt til automatisk", "text": "For oppdrag mellom kl. 21:00 og 06:00 legger Klacks automatisk til nattillegget på minst 29 NOK/time på minstelønnen." },
+      { "icon": "payments", "title": "Minstelønninger etter ansiennitet lagt inn", "text": "De fire ansiennitetstrinnene i Renholdsoverenskomsten fra 1. juni 2026 &mdash; 247,29, 250,66, 257,39 og 261,24 NOK &mdash; samt garantitilleggene fra 1. mai 2026 kan legges inn i Klacks som lønnssatser; tildelingen til riktig ansiennitetstrinn gjøres per ansatt." },
+      { "icon": "bedtime", "title": "Nattillegg lagt inn som tilleggsregel", "text": "Nattillegget på minst 29 NOK/time for nattoppdrag legger du inn i Klacks som en tilleggsregel til gjeldende minstelønn." },
       { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Planlegg objektene i bydel Sentrum for i morgen tidlig» er nok &mdash; Klacksy optimerer rute og team." },
       { "icon": "event_busy", "title": "Fravær raskt dekket", "text": "Faller noen fra, viser Klacks straks hvem som er tilgjengelig og hvilken rute som passer best." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ansiennitet, nattillegg, én lønn",
-    "text": "Klacks kjenner den gjeldende ansienniteten for hver renholder, og legger ved et nattoppdrag mellom kl. 21:00 og 06:00 automatisk til tillegget på minst 29 NOK/time på riktig minstelønnssats i Renholdsoverenskomsten &mdash; uten manuell etterberegning."
+    "text": "For hver renholder legger du inn den gjeldende ansienniteten med riktig minstelønnssats i Renholdsoverenskomsten, og nattillegget på minst 29 NOK/time for nattoppdrag legger Klacks automatisk til &mdash; uten manuell etterberegning."
   },
   "showRoutePlanning": true,
   "cta": {

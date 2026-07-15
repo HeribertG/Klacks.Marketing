@@ -24,7 +24,7 @@
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "fact_check", "title": "§ 63-Befreiung pro Mitarbeitendem hinterlegt", "text": "Klacks speichert die MOEL-Genehmigung je Mitarbeitendem und weiss dadurch, für wen die Ausnahme von Arbeitszeit, Pausen und Ruhetagen gilt." },
-      { "icon": "nightlight", "title": "Nachtzuschlag trotzdem automatisch berechnet", "text": "Auch bei befreiten Wachleuten berechnet Klacks den 50%-Nachtzuschlag für Arbeit zwischen 22:00 und 06:00 zuverlässig weiter." },
+      { "icon": "nightlight", "title": "Nachtzuschlag trotzdem automatisch berechnet", "text": "Auch bei befreiten Wachleuten berechnet Klacks den 50%-Nachtzuschlag für Nachtarbeit zuverlässig weiter." },
       { "icon": "schedule", "title": "24-Stunden-Wechselschichten geplant", "text": "Klacks plant lange Wechselschichten über mehrere Objekte hinweg, ohne den Überblick über Besetzung und Ablösung zu verlieren." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Gangnam“ genügt &mdash; Klacksy prüft Befreiung und Nachtzuschlag gleich mit." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Befreiung, Nachtzuschlag, ein Blick",
-    "text": "Klacks weiss, welche Wachleute per § 63-Genehmigung von Arbeitszeit und Ruhetagen befreit sind, und berechnet den 50%-Nachtzuschlag trotzdem automatisch &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks weiß, welche Wachleute per § 63-Genehmigung von Arbeitszeit und Ruhetagen befreit sind, und berechnet den 50%-Nachtzuschlag trotzdem automatisch &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

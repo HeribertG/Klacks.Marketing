@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; Malaysischer Datenschutz (PDPA)",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht die 45-Stunden-Woche nach dem Employment Act 1955 automatisch, trennt die gestuften Überstundenzuschläge sauber und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten, seit der PDPA-Novelle 2024 (Act A1727) ausdrücklich sensible Daten, in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks überwacht die 45-Stunden-Woche nach dem Employment Act 1955 automatisch, trennt die gestuften Überstundenzuschläge sauber und läuft On-Premise &mdash; damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Malaysia",
     "screenshotLabel": "Dienstplan"
@@ -25,7 +25,7 @@
       { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks kennt die 45-Stunden-Grenze aus Section 60A (seit 1.1.2023) ebenso wie das tägliche 8-Stunden-Limit (9h in der 5-Tage-Woche) &mdash; jede darüber geplante Stunde wird automatisch als Überstunde markiert." },
       { "icon": "paid", "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt", "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; inklusive der RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen." },
       { "icon": "schedule", "title": "Spread-over und Monatslimit im Blick", "text": "Die 10-Stunden-Spanne vom ersten Arbeitsbeginn bis Feierabend (Section 60A(1)), die 12-Stunden-Tageskappe und das 104-Stunden-Monatslimit (Employment (Limitation of Overtime Work) Regulations 1980) werden automatisch überwacht, ebenso die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; biometrische Zeiterfassungsdaten, seit Act A1727/2024 sensible PDPA-Daten, verlassen Ihr Haus nie." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Ihre Personal- und Planungsdaten verlassen Ihr Haus nie." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]

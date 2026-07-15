@@ -23,8 +23,8 @@
     "subtitle": "Von der optimierten Tour bis zur neuen Kleintransporter-Pflicht &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "nightlight", "title": "10-Stunden-Nachtgrenze automatisch geprüft", "text": "Klacks erkennt, sobald eine Schicht ins Nachtfenster fällt, und begrenzt die Gesamtarbeitszeit automatisch auf 10 Stunden zwischen zwei Ruhezeiten." },
-      { "icon": "fact_check", "title": "Kleintransporter ab 1.7.2026 korrekt geplant", "text": "Für Fahrzeuge zwischen 2,5 und 3,5 Tonnen im grenzüberschreitenden Güterverkehr plant Klacks nach denselben Lenkzeitregeln wie für schwere Lkw &mdash; inklusive 4,5-Stunden-Lenkzeit, 45-Minuten-Pause und maximal 9 (an zwei Tagen pro Woche 10) Stunden Tageslenkzeit." },
+      { "icon": "nightlight", "title": "10-Stunden-Nachtgrenze automatisch im Blick", "text": "Klacks erkennt, sobald eine Schicht ins Nachtfenster fällt, und warnt automatisch, wenn die Gesamtarbeitszeit zwischen zwei Ruhezeiten die 10-Stunden-Grenze überschreiten würde." },
+      { "icon": "fact_check", "title": "Kleintransporter ab 1.7.2026 im Blick", "text": "Für Fahrzeuge zwischen 2,5 und 3,5 Tonnen im grenzüberschreitenden Güterverkehr berücksichtigt Klacks dieselben Lenkzeitregeln wie für schwere Lkw &mdash; inklusive 4,5-Stunden-Lenkzeit, 45-Minuten-Pause und maximal 9 (an zwei Tagen pro Woche 10) Stunden Tageslenkzeit &mdash; und warnt bei drohender Überschreitung." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Kowalski ist krank“ genügt &mdash; Klacksy rechnet alles neu." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der Lenkzeit ist." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtfenster, Kleintransporter, ein Plan",
-    "text": "Fällt eine Schicht ins Nachtfenster, begrenzt Klacks die Gesamtarbeitszeit automatisch auf 10 Stunden &mdash; und plant Kleintransporter im grenzüberschreitenden Verkehr ab 1.7.2026 gleich nach den Lkw-Lenkzeitregeln."
+    "text": "Fällt eine Schicht ins Nachtfenster, warnt Klacks automatisch, sobald die 10-Stunden-Grenze überschritten würde &mdash; und plant Kleintransporter im grenzüberschreitenden Verkehr ab 1.7.2026 gleich nach den Lkw-Lenkzeitregeln."
   },
   "showRoutePlanning": true,
   "cta": {

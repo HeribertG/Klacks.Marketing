@@ -22,10 +22,10 @@
     "title": "Jak Klacks ulehčuje práci firmám v Česku",
     "subtitle": "Od týdenní pracovní doby podle typu směn až po vlastní infrastrukturu &mdash; vše do sebe zapadá.",
     "items": [
-      { "icon": "schedule", "title": "Týdenní pracovní doba automaticky podle typu směn", "text": "Klacks zná normy 40, 38,75 a 37,5 hodiny podle typu směnného provozu a automaticky počítá s příslušnou platnou týdenní pracovní dobou, bez ručního vyhledávání." },
-      { "icon": "campaign", "title": "2týdenní lhůta dodržena automaticky", "text": "Klacks upozorní, než je rozpis směn zveřejněn příliš pozdě, a zohledňuje zkrácenou jednotýdenní lhůtu u konta pracovní doby." },
-      { "icon": "gavel", "title": "416hodinový limit pod kontrolou", "text": "Klacks automaticky sleduje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; v příslušném 26 nebo 52týdenním období." },
-      { "icon": "edit_calendar", "title": "Samoplánování podle § 87a je možné", "text": "U zaměstnanců s písemnou dohodou o samoplánování (od 1. 1. 2025) Klacks automaticky dodržuje 12hodinový limit délky směny i všechny doby odpočinku." },
+      { "icon": "schedule", "title": "Týdenní pracovní doba automaticky podle typu směn", "text": "Normy 40, 38,75 a 37,5 hodiny si uložíte pro každý typ směnného provozu jako smluvní základ &mdash; Klacks automaticky počítá s příslušnou platnou týdenní pracovní dobou, bez ručního vyhledávání." },
+      { "icon": "campaign", "title": "2týdenní lhůta pod kontrolou", "text": "Klacks upozorní, než je rozpis směn zveřejněn příliš pozdě, a zohledňuje zkrácenou jednotýdenní lhůtu u konta pracovní doby." },
+      { "icon": "gavel", "title": "416hodinový limit pod kontrolou", "text": "Klacks průběžně zobrazuje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; v příslušném 26 nebo 52týdenním období." },
+      { "icon": "edit_calendar", "title": "Samoplánování podle § 87a je možné", "text": "U zaměstnanců s písemnou dohodou o samoplánování (od 1. 1. 2025) Klacks automaticky hlídá 12hodinový limit délky směny i všechny doby odpočinku a upozorní při porušení." },
       { "icon": "shield_lock", "title": "On-premise: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře, AI model si vybíráte sami &mdash; i lokálně hostovaný, zcela bez přenosu personálních dat do zahraničí." },
       { "icon": "smart_toy", "title": "Klacksy: na základě pravidel, žádná černá skříňka", "text": "Integrovaný AI asistent Klacksy plánuje na hlasový příkaz &mdash; srozumitelně podle uložených dovedností a pravidel, nikoli jako neprůhledné rozhodnutí AI." }
     ]
@@ -45,6 +45,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Zažijte Klacks ve své firmě",
-    "text": "Vyzkoušejte si v Playgroundu, jak Klacks automatizuje týdenní pracovní dobu podle typu směn, lhůty pro oznámení a limit 416 hodin &mdash; on-premise nebo v Playgroundu, zdarma a bez registrace."
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks počítá týdenní pracovní dobu podle typu směn a hlídá lhůty pro oznámení i limit 416 hodin &mdash; on-premise nebo v Playgroundu, zdarma a bez registrace."
   }
 }

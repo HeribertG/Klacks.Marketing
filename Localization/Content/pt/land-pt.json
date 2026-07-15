@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Soberania dos dados em conformidade com a CNPD",
     "titleHtml": "Planeamento de pessoal em que <span class=\"text-secondary\">mantém sempre o controlo.</span>",
-    "subtitle": "O Klacks regista automaticamente os horários de trabalho nos termos do registo de ponto obrigatório, monitoriza o banco de horas grupal e pode ser controlado através de um assistente de IA &mdash; on-premise, open source, com o modelo de IA à sua escolha. Assim, os dados de pessoal permanecem na sua própria infraestrutura, em plena conformidade com as exigências de proporcionalidade da CNPD.",
+    "subtitle": "O Klacks documenta os horários de trabalho sem lacunas como base para o registo de ponto obrigatório, monitoriza o banco de horas grupal e pode ser controlado através de um assistente de IA &mdash; on-premise, open source, com o modelo de IA à sua escolha. Assim, os dados de pessoal permanecem na sua própria infraestrutura, em plena conformidade com as exigências de proporcionalidade da CNPD.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Vista geral da escala de serviço do Klacks para empresas em Portugal",
     "screenshotLabel": "Escala de serviço"
@@ -22,10 +22,10 @@
     "title": "Como o Klacks alivia as empresas portuguesas",
     "subtitle": "Do registo de ponto automático à infraestrutura própria &mdash; tudo funciona em conjunto.",
     "items": [
-      { "icon": "fingerprint", "title": "Registo de ponto automático &amp; em conformidade legal", "text": "O Klacks regista de forma completa o início, o fim e os intervalos de cada turno, mantém-nos disponíveis durante 5 anos e torna-os imediatamente consultáveis no local de trabalho &mdash; exatamente como exige o art. 202.º do CT." },
-      { "icon": "groups", "title": "Banco de horas grupal calculado corretamente", "text": "Assim que o referendo for aprovado com 65 % de votos favoráveis, o Klacks monitoriza automaticamente o limite de 50 horas semanais, o limite de 150 horas anuais e a vigência máxima de 4 anos." },
+      { "icon": "fingerprint", "title": "Registo de ponto: base de dados sem lacunas", "text": "O Klacks documenta de forma completa o início, o fim e os intervalos de cada turno, mantém-nos disponíveis durante 5 anos e torna-os imediatamente consultáveis no local de trabalho &mdash; a base de dados para o registo de ponto nos termos do art. 202.º do CT." },
+      { "icon": "groups", "title": "Banco de horas grupal sob controlo", "text": "O Klacks monitoriza automaticamente o limite de 50 horas semanais e documenta a base horária para o limite de 150 horas anuais e a vigência máxima de 4 anos &mdash; assim que o referendo for aprovado com 65 % de votos favoráveis." },
       { "icon": "bedtime", "title": "Períodos de descanso &amp; dia de descanso semanal respeitados", "text": "O período de descanso diário de 11 horas (art. 214.º do CT) e o dia de descanso semanal (art. 232.º do CT) &mdash; incluindo a sua transferência em regime de laboração contínua, vigilância ou limpeza &mdash; são planeados automaticamente." },
-      { "icon": "shield_lock", "title": "On-premise: soberania dos dados para dados sensíveis", "text": "O Klacks corre na sua própria infraestrutura e é você quem escolhe o modelo de IA &mdash; inclusive alojado localmente. Isto facilita o teste de proporcionalidade exigido pela CNPD para dados biométricos e de tempo de trabalho, sem qualquer transferência para o estrangeiro." },
+      { "icon": "shield_lock", "title": "On-premise: soberania dos dados para dados sensíveis", "text": "O Klacks corre na sua própria infraestrutura e é você quem escolhe o modelo de IA &mdash; inclusive alojado localmente. O Klacks dispensa por completo o registo biométrico &mdash; a categoria de dados que a CNPD examina de forma crítica simplesmente não chega a existir, e os dados de tempo de trabalho permanecem na empresa, sem qualquer transferência para o estrangeiro." },
       { "icon": "smart_toy", "title": "Klacksy: baseado em regras, sem caixa negra", "text": "O assistente de IA integrado, Klacksy, planeia por comando de voz &mdash; de forma rastreável, segundo competências e regras predefinidas, e não como uma decisão opaca da IA." },
       { "icon": "event_busy", "title": "Faltas rapidamente resolvidas", "text": "Se alguém falta, o Klacks mostra de imediato quem está qualificado e disponível &mdash; sem ter de refazer todo o plano." }
     ]
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Na prática",
     "title": "Registo de ponto e banco de horas, num relance",
-    "text": "O Klacks regista cada turno em conformidade legal, verifica automaticamente os limites do banco de horas grupal e sugere de imediato a respetiva compensação &mdash; sem cálculos manuais."
+    "text": "O Klacks documenta cada turno sem lacunas e torna visíveis, em permanência, os limites do banco de horas grupal &mdash; sem cálculos manuais."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Experimente o Klacks na sua empresa",
-    "text": "Experimente no Playground como o Klacks automatiza o registo de ponto, o banco de horas e os períodos de descanso &mdash; on-premise ou no Playground, gratuito e sem registo."
+    "text": "Experimente no Playground como o Klacks documenta o registo de ponto, monitoriza o banco de horas e verifica os períodos de descanso &mdash; on-premise ou no Playground, gratuito e sem registo."
   }
 }

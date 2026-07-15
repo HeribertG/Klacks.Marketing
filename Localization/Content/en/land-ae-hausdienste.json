@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "For facility &amp; cleaning services in the UAE",
     "titleHtml": "Schedule outdoor cleaning <span class=\"text-secondary\">without risking the midday ban.</span>",
-    "subtitle": "Klacks automatically blocks outdoor and window cleaning during the statutory midday work ban from 15 June to 15 September, 12:30 to 15:00 &mdash; preventing fines of up to AED 50,000. On-premise, so staff data never leaves your organisation.",
+    "subtitle": "Klacks immediately flags outdoor and window-cleaning shifts that fall within the statutory midday work ban from 15 June to 15 September, 12:30 to 15:00 &mdash; helping you avoid fines of up to AED 50,000. On-premise, so staff data never leaves your organisation.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for facility and cleaning services in the UAE",
     "screenshotLabel": "Schedule"
@@ -22,22 +22,22 @@
     "title": "How Klacks takes the load off facility and cleaning services in the UAE",
     "subtitle": "From the automatic block to split-shift planning &mdash; everything works together.",
     "items": [
-      { "icon": "wb_sunny", "title": "The midday window blocked automatically", "text": "Klacks automatically blocks outdoor and window-cleaning shifts between 12:30 and 15:00 from 15 June to 15 September &mdash; every year, with no need to re-enter the dates by hand." },
-      { "icon": "payments", "title": "The AED 50,000 fine risk avoided", "text": "Because the banned window can never be scheduled in the first place, the risk of the AED 5,000 fine per employee simply doesn't arise." },
+      { "icon": "wb_sunny", "title": "The midday window made visible, not overlooked", "text": "Klacks can be set up so that outdoor and window-cleaning shifts within the banned window from 15 June to 15 September, 12:30 to 15:00, stand out immediately &mdash; stored as a blocked time, not discovered after the fact." },
+      { "icon": "payments", "title": "The AED 50,000 fine risk reduced", "text": "Because the banned window is stored visibly in Klacks and stands out during scheduling, the risk of the AED 5,000 fine per employee is significantly reduced." },
       { "icon": "route", "title": "Sites &amp; routes automatically optimised", "text": "Klacks plans cleaning routes between sites so that journeys stay short and time windows are met." },
-      { "icon": "schedule", "title": "Split shifts suggested automatically", "text": "Klacks suggests shifts before and after the banned window, so the day's working hours still add up." },
+      { "icon": "schedule", "title": "Split shifts before and after the banned window made possible", "text": "Klacks supports split shifts before and after the banned window, so the day's working hours still add up." },
       { "icon": "shield_lock", "title": "On-premise: full data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; your cleaning team's personal data never leaves your organisation." },
-      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Split tomorrow's outdoor cleaning across morning and afternoon\" is all it takes &mdash; Klacksy automatically observes the midday ban." }
+      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Split tomorrow's outdoor cleaning across morning and afternoon\" is all it takes &mdash; Klacksy schedules according to the blocked times you've stored." }
     ]
   },
   "example": {
     "eyebrow": "In practice",
     "title": "The midday ban and the split shift, at a glance",
-    "text": "Klacks automatically recognises when an outdoor-cleaning shift between 15 June and 15 September falls within the banned window of 12:30 to 15:00, and immediately suggests a split shift before and after it &mdash; no manual recalculating required."
+    "text": "Once the banned window from 15 June to 15 September, 12:30 to 15:00, is stored as a blocked time, Klacks immediately flags an outdoor-cleaning shift that falls within it &mdash; the split shift before and after can then be scheduled directly."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "See Klacks in your cleaning service",
-    "text": "Try the Playground to see how Klacks handles the midday work ban, split shifts and routes &mdash; or install it directly on-premise. Free, with no registration required."
+    "text": "Try the Playground to see how Klacks makes the midday work ban visible, supports split shifts and optimises routes &mdash; or install it directly on-premise. Free, with no registration required."
   }
 }

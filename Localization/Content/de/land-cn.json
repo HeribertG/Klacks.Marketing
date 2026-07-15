@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; PIPL-konform",
     "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">im Land bleibt.</span>",
-    "subtitle": "Klacks überwacht die 36-Stunden-Überstundengrenze tagesaktuell, staffelt Zuschläge automatisch nach 150/200/300 % und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten China nie verlassen.",
+    "subtitle": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar, ordnet Ruhetags- und Feiertagszuschläge automatisch nach 200/300 % zu und läuft On-Premise &mdash; damit Planungs- und Personaldaten China nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in China",
     "screenshotLabel": "Dienstplan"
@@ -15,19 +15,19 @@
     "items": [
       { "icon": "gavel", "title": "36-Stunden-Überstundengrenze pro Monat", "text": "Das Arbeitsgesetz (劳动法) Art. 41 erlaubt Überstunden (加班, jiābān) normalerweise nur bis 1 Stunde/Tag, aus besonderen Gründen bis 3 Stunden/Tag und höchstens 36 Stunden im Monat &mdash; und nur nach Konsultation von Gewerkschaft und Belegschaft." },
       { "icon": "payments", "title": "150/200/300 %-Zuschläge korrekt stufen", "text": "Art. 44 verlangt mindestens 150 % an Werktagen, 200 % an Ruhetagen (mit Wahlrecht auf Freizeitausgleich) und mindestens 300 % an gesetzlichen Feiertagen (法定节假日) &mdash; Letzteres darf nie durch Freizeit ersetzt werden. Seit den 10 Referenzfällen von Oberstem Volksgericht und MOHRSS gegen das „996“-Schema (26.08.2021) prüfen Gerichte das genau." },
-      { "icon": "privacy_tip", "title": "Biometrische Daten &amp; PIPL", "text": "Das Persönliche-Informationen-Schutzgesetz (PIPL) zählt Gesichts-, Fingerabdruck- und Stimmdaten zu sensiblen persönlichen Informationen. Gehen sensible Daten von über 10'000 Betroffenen ins Ausland, ist eine CAC-Sicherheitsprüfung (网信办, PIPL Art. 38) Pflicht." }
+      { "icon": "privacy_tip", "title": "Biometrische Daten &amp; PIPL", "text": "Das Persönliche-Informationen-Schutzgesetz (PIPL) zählt Gesichts-, Fingerabdruck- und Stimmdaten zu sensiblen persönlichen Informationen. Gehen sensible Daten von über 10.000 Betroffenen ins Ausland, ist eine CAC-Sicherheitsprüfung (网信办, PIPL Art. 38) Pflicht." }
     ]
   },
   "solutions": {
     "title": "Wie Klacks Unternehmen in China entlastet",
     "subtitle": "Von der tagesaktuellen Überstunden-Grenze bis zur Datenhoheit vor Ort &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "36h-Monatsgrenze tagesaktuell überwacht", "text": "Klacks führt jiābān gegen die Art.-41-Grenzen (1h/Tag normal, 3h/Tag aus besonderem Grund, 36h/Monat) &mdash; und warnt, bevor die Grenze erreicht ist, statt erst danach." },
-      { "icon": "payments", "title": "150/200/300 % automatisch gestuft", "text": "Klacks ordnet jede Überstunde automatisch der richtigen Stufe nach Art. 44 zu &mdash; inklusive der Regel, dass der 300 %-Feiertagszuschlag nie durch Freizeit ersetzt werden darf." },
+      { "icon": "schedule", "title": "36h-Monatsgrenze laufend im Blick", "text": "Klacks führt jiābān gegen die Art.-41-Tagesgrenzen (1h/Tag normal, 3h/Tag aus besonderem Grund) und macht die 36h-Monatssumme laufend sichtbar &mdash; damit Sie die Grenze rechtzeitig erkennen, statt sie erst hinterher zu entdecken." },
+      { "icon": "payments", "title": "200/300 % automatisch gestuft", "text": "Klacks ordnet Ruhetags- (200 %) und Feiertagszuschlag (300 %, nie durch Freizeit ersetzbar) automatisch nach Art. 44 zu; die Werktags-Überstundenprämie (150 %) lässt sich als weiterer Zuschlag hinterlegen." },
       { "icon": "fact_check", "title": "Monats-Soll seit 1.1.2025 aktuell: 165,3h", "text": "Klacks rechnet mit dem seit 1.1.2025 gültigen MOHRSS-Monats-Soll von 165,3 Stunden (20,67 Tage × 8h) &mdash; nicht mehr mit dem veralteten Wert von 166,6 Stunden." },
-      { "icon": "shield_lock", "title": "On-Premise: biometrische Daten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Biometrische Zeiterfassungs-Logs verlassen das Land nie &mdash; die CAC-Cross-Border-Prüfung nach PIPL Art. 38 entfällt damit." },
+      { "icon": "shield_lock", "title": "On-Premise: Personaldaten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Planungs- und Personaldaten verlassen das Land nie, und Klacks erhebt keine biometrischen Daten &mdash; die CAC-Cross-Border-Prüfung nach PIPL Art. 38 für sensible personenbezogene Daten entfällt damit." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung. Das Sprachmodell lässt sich auch lokal hosten." },
-      { "icon": "map", "title": "Provinzielle Lohnunterschiede abgebildet", "text": "China kennt keinen landesweiten Mindestlohn &mdash; die Sätze legen 31 Provinzen und Städte in eigenen Klassen (A/B/C) fest. Klacks bildet das als Konfiguration pro Standort ab, statt es hart zu verdrahten." }
+      { "icon": "map", "title": "Provinzielle Unterschiede pro Standort konfigurierbar", "text": "China kennt keinen landesweiten Mindestlohn &mdash; die Sätze legen 31 Provinzen und Städte in eigenen Klassen (A/B/C) fest. Klacks legt Standorte und Regelwerke pro Provinz getrennt an und liefert die Datenbasis für den Export in Ihre Lohnbuchhaltung &mdash; die Lohnbeträge selbst verwaltet Klacks nicht." }
     ]
   },
   "klacksy": {
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "40-Stunden-Woche, Art. 41 und 165,3h, ein Blick",
-    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden rechnet Klacks exakt nach Art. 41/44 ab, mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden ordnet Klacks nach Art. 44 automatisch den Ruhetags- (200 %) und Feiertagszuschlägen (300 %) zu und macht die Monatsgrenze nach Art. 41 laufend sichtbar, gerechnet mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Unternehmen in China erleben",
-    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze, die 150/200/300 %-Zuschläge und die PIPL-Datenhoheit automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze laufend sichtbar macht, Ruhetags- und Feiertagszuschläge automatisch zuordnet und Ihre Planungs- und Personaldaten On-Premise in China hält &mdash; kostenlos und ohne Registrierung."
   }
 }

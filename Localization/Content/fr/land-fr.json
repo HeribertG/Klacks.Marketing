@@ -1,53 +1,86 @@
 {
-  "pageTitle": "Klacks pour la France | Planification des services avec repos de 12 heures à l'hôpital",
+  "pageTitle": "Klacks pour la France | Planification des effectifs Open Source & On-Premise",
   "hero": {
-    "badgeIcon": "shield_lock",
-    "badge": "Pour les hôpitaux et établissements de soins en France",
-    "titleHtml": "12 heures de repos dans la Fonction Publique Hospitalière &mdash; <span class=\"text-secondary\">respectées automatiquement, sans calcul manuel.</span>",
-    "subtitle": "Le Décret n° 2002-9 limite les services continus à 9 heures de jour et 10 heures de nuit ; la Fonction Publique Hospitalière impose en outre un repos quotidien de 12 heures consécutives &mdash; au-delà du minimum européen de 11 heures. Une nouvelle instruction de décembre 2025 limite de surcroît la durée continue de travail de certains services spécialisés à 24 heures.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Confidentialité des données à la française",
+    "titleHtml": "La planification des effectifs, <span class=\"text-secondary\">dont vous gardez le contrôle.</span>",
+    "subtitle": "Klacks planifie les services automatiquement, documente sans faille les heures de travail et les temps de repos selon le Code du travail, et optimise les tournées &mdash; open source, installable on-premise et avec le modèle d'IA de votre choix. Ainsi, les données du personnel restent là où la CNIL les attend : dans vos propres murs.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Grille de planning Klacks",
+    "screenshotAlt": "Planning de service Klacks pour les entreprises en France",
     "screenshotLabel": "Planning"
   },
   "challenges": {
-    "eyebrow": "Le quotidien dans les hôpitaux français",
-    "title": "Deux régimes de repos à ne pas confondre",
+    "eyebrow": "Le quotidien dans les entreprises françaises",
+    "title": "Code du travail, modulation et CNIL à la fois",
     "items": [
-      { "icon": "hourglass_disabled", "title": "Limite de 9h/10h pour le travail continu", "text": "Le Décret n° 2002-9 limite la durée quotidienne de travail du personnel en travail continu à 9 heures de jour et 10 heures de nuit &mdash; les dérogations ne sont admises que dans des limites étroites." },
-      { "icon": "schedule", "title": "12 heures de repos au lieu de 11", "text": "Dans la Fonction Publique Hospitalière, un repos quotidien minimal de 12 heures consécutives s'applique, ainsi que 36 heures de repos hebdomadaire &mdash; plus strict que le minimum européen de 11 heures." },
-      { "icon": "gavel", "title": "Nouvelle limite de 24h réservée aux services spécialisés", "text": "Depuis une instruction du 30 décembre 2025, certains services spécialisés (anesthésie, urgences, néonatologie, obstétrique) sont soumis à un plafond de 24 heures de service continu &mdash; tous les autres services restent soumis au repos standard de 11 heures. Confondre ces deux régimes conduit à une planification erronée." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Souveraineté des données",
-    "title": "Souveraineté totale des données : open source &amp; on-premise",
-    "text": "Klacks a été conçu pour des secteurs soumis à des exigences strictes de sécurité et de conformité, où les données sensibles des collaborateurs ne doivent pas quitter votre propre infrastructure. En tant que solution open source, Klacks peut être exploité directement dans votre propre centre de données ou sur des serveurs locaux sécurisés &mdash; sans dépendance à des fournisseurs cloud américains. Cela facilite le respect du RGPD et des exigences de la CNIL, l'autorité française de protection des données, en toute autonomie.",
-    "bullets": [
-      "Souveraineté on-premise : contrôle total sur les plannings de service, les justificatifs de temps de repos et les journaux, au sein de votre propre environnement informatique.",
-      "Architecture LLM libre : les suggestions de planification assistées par IA peuvent aussi fonctionner avec des modèles de langage hébergés localement, sans que les données ne soient transmises à des API externes.",
-      "Code source auditable : base de code entièrement consultable pour les audits informatiques et les représentants du personnel."
+      {
+        "icon": "gavel",
+        "title": "Le Code du travail, difficile à maîtriser à la main",
+        "text": "Respecter manuellement la semaine de 35 heures et la majoration échelonnée des heures supplémentaires &mdash; en principe +25% pour les huit premières heures supplémentaires, puis +50% (Art. L3121-27 &amp; L3121-36) &mdash; sur plusieurs équipes et avec des taux de CCN différents, est difficilement réaliste."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Modulation du temps de travail sur l'année",
+        "text": "Une modulation de la durée hebdomadaire de travail sur l'année est possible jusqu'à 1 607 heures, avec des jours de récupération (terme exact, à ne pas confondre avec des RTT) &mdash; garder à l'œil la limite impérative de 48 heures par semaine (Art. L3121-20, L3121-41 à L3121-47) est source d'erreurs si le suivi se fait à la main."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "CNIL : la protection des données sans compromis",
+        "text": "La géolocalisation et le pointage biométrique sont soumis à de lourdes sanctions de la CNIL (RGPD Art. 88), les décisions RH automatisées relèvent en outre de l'Art. 22 du RGPD &mdash; une IA cloud externe qui accède aux données n'est pas une option pour beaucoup d'entreprises ni pour le CSE."
+      }
     ]
   },
   "solutions": {
-    "title": "Comment Klacks distingue les deux régimes de repos",
-    "subtitle": "Le travail continu 9h/10h et l'exception de 24h sont gérés séparément, sans être mélangés.",
+    "title": "Comment Klacks soulage les entreprises françaises",
+    "subtitle": "Du planning automatique au libre choix du modèle d'IA &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "bolt", "title": "Moteur de récupération en cas d'absence", "text": "Si un professionnel est absent, Klacks trouve immédiatement un remplaçant qualifié &mdash; sans qu'il en résulte une violation imprévue du temps de repos." },
-      { "icon": "fact_check", "title": "Suivi du temps de repos selon le type de service", "text": "Klacks distingue les services standard (repos de 11h) des services spécialisés autorisés à 24h &mdash; chaque exception reste documentée de façon traçable." },
-      { "icon": "calendar_month", "title": "Assistant de remplissage automatique pour les rotations en travail continu", "text": "L'assistant de remplissage automatique, basé sur un algorithme génétique, planifie automatiquement les services continus en respectant la limite de 9h/10h et le repos de 12h." },
-      { "icon": "groups", "title": "Planification des affectations selon les qualifications", "text": "Seuls les collaborateurs disposant de la qualification requise sont proposés pour un service &mdash; un point essentiel pour les services spécialisés autorisés à la règle des 24h." }
+      {
+        "icon": "auto_awesome",
+        "title": "Services planifiés automatiquement",
+        "text": "Klacks remplit les services selon des règles et apprend à partir des habitudes existantes &mdash; sans qu'il faille tout replanifier à la main chaque semaine."
+      },
+      {
+        "icon": "gavel",
+        "title": "Heures de travail documentées, temps de repos surveillés",
+        "text": "Klacks documente sans faille chaque heure de travail à partir de la 36e, comme base pour l'échelle de majoration (+25%/+50%, Art. L3121-27 &amp; L3121-36) &mdash; le calcul des taux lui-même reste l'affaire de votre gestion de la paie, sur cette base horaire propre. Le repos quotidien de 11 heures et le repos hebdomadaire de 35 heures (Art. L3131-1 &amp; L3132-2) sont surveillés en temps réel, Klacks rend immédiatement visible tout dépassement."
+      },
+      {
+        "icon": "route",
+        "title": "Tournées optimisées",
+        "text": "Lorsque les collaborateurs se déplacent entre plusieurs lieux d'intervention, Klacks planifie l'ordre des trajets de façon à les raccourcir."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise : souveraineté totale des données",
+        "text": "Klacks fonctionne sur votre propre infrastructure &mdash; les données du personnel ne quittent jamais vos murs, pas même pour l'IA. Cela répond à l'exigence de la CNIL en matière de protection des données des salariés (RGPD Art. 88)."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source : aucun vendor lock-in",
+        "text": "Le code source est entièrement ouvert. Vous décidez où Klacks fonctionne, comment il est adapté et avec qui vous collaborez."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Libre choix du modèle d'IA",
+        "text": "Klacksy peut aussi fonctionner avec des modèles de langage hébergés localement &mdash; de façon transparente et traçable, plutôt qu'un profilage opaque selon l'Art. 22 du RGPD."
+      }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistant IA",
-    "title": "Klacksy : l'assistant intégré pour votre équipe",
-    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais un élément directement intégré à l'interface de Klacks. Les collaborateurs et les planificateurs consultent les horaires de service par chat, formulent des demandes d'échange de service ou clarifient des conflits de qualification au sein de l'équipe. Un système de compétences et de règles intégré garantit que Klacksy ne fait que des suggestions conformes aux qualifications réelles et aux exigences de temps de repos des personnes concernées.",
+    "title": "Klacksy : transparent, pas une boîte noire",
+    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais directement intégré à l'interface de Klacks. Un système de compétences et de règles enregistré garantit que les suggestions correspondent aux qualifications, au Code du travail et aux règles définies &mdash; de façon traçable pour les collaborateurs et le Comité Social et Économique (CSE), conformément à l'exigence de la CNIL en matière de systèmes transparents et non intrusifs. Vous choisissez vous-même le modèle d'IA sous-jacent, y compris un fonctionnement sans aucune connexion externe.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Semaine de 35 heures, modulation annuelle, un seul planning",
+    "text": "Une entreprise avec plusieurs sites en France module la durée hebdomadaire de travail sur l'année. Klacks garde à l'œil la limite hebdomadaire de 48 heures, documente sans faille les heures de travail comme base pour l'échelle de majoration, et fait apparaître où des jours de récupération deviennent nécessaires &mdash; le calcul des majorations reste l'affaire de la gestion de la paie."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Tester Klacks pour les hôpitaux français",
-    "text": "Découvrez dans le Playground comment Klacks respecte automatiquement la limite de 9h/10h et le repos de 12 heures &mdash; ou exploitez Klacks en on-premise pour une souveraineté totale des données."
+    "title": "Découvrez Klacks dans votre entreprise",
+    "text": "Testez dans le Playground comment Klacks planifie les services, surveille les heures de travail et les temps de repos, et optimise les tournées &mdash; ou installez-le en on-premise, open source, avec le modèle d'IA de votre choix. Gratuitement et sans inscription."
   }
 }

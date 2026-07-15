@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks per l'Assistenza domiciliare | Percorsi & CCNL Cooperative Sociali",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Per l'assistenza domiciliare in Italia",
+    "titleHtml": "Più tempo per l'assistenza, <span class=\"text-secondary\">meno per la pianificazione dei percorsi.</span>",
+    "subtitle": "Klacks pianifica interventi e percorsi in automatico &mdash; con la corretta settimana di 38 ore secondo il CCNL Cooperative Sociali, i limiti di reperibilità monitorati e i tempi di percorrenza conteggiati come orario di lavoro. On-Premise, perché i dati dei pazienti non lasciano mai la vostra azienda.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vista Timeline di Klacks per la pianificazione dei percorsi dell'Assistenza domiciliare",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "La quotidianità nell'Assistenza domiciliare",
+    "title": "Percorsi, contratto collettivo e reperibilità allo stesso tempo",
+    "items": [
+      { "icon": "alt_route", "title": "Percorsi anziché turni fissi", "text": "Ogni operatore si sposta da un cliente all'altro &mdash; secondo la giurisprudenza europea (CGUE „Tyco“, C-266/14) i tempi di percorrenza tra gli interventi sono orario di lavoro e vanno pianificati di conseguenza." },
+      { "icon": "schedule", "title": "Settimana di 38 ore secondo il CCNL Cooperative Sociali", "text": "L'Art. 51 del CCNL Cooperative Sociali fissa l'orario normale a 38 ore anziché le 40 previste dalla legge &mdash; un dettaglio che nella pianificazione dei percorsi viene facilmente trascurato." },
+      { "icon": "phone_in_talk", "title": "Limiti di reperibilità", "text": "La reperibilità è limitata a un massimo di 12 ore (minimo 4 ore) e a non più di 8 interventi al mese, con un'indennità di circa 1,55 €/ora (Art. 58 CCNL Cooperative Sociali) &mdash; difficile da monitorare in modo affidabile a mano." }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacks alleggerisce l'Assistenza domiciliare",
+    "subtitle": "Dal percorso ottimizzato all'indennità di reperibilità documentata &mdash; tutto si incastra alla perfezione.",
+    "items": [
+      { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Klacks traccia i percorsi degli interventi in modo che le distanze restino brevi e le fasce orarie vengano rispettate &mdash; i tempi di percorrenza tra i clienti vengono così registrati correttamente come orario di lavoro." },
+      { "icon": "verified", "title": "Qualifiche considerate automaticamente", "text": "Klacks confronta la qualifica richiesta con i profili registrati e avverte per tempo prima che una qualifica scada &mdash; l'assegnazione resta verificabile, senza alcun controllo manuale." },
+      { "icon": "gavel", "title": "Settimana di 38 ore verificata, reperibilità documentata", "text": "L'orario normale di 38 ore previsto dal CCNL viene monitorato automaticamente, gli interventi di reperibilità, inclusi i limiti dell'Art. 58 CCNL Cooperative Sociali, vengono documentati senza lacune &mdash; come base per il conteggio dell'indennità." },
+      { "icon": "shield_lock", "title": "On-Premise: i dati restano in azienda", "text": "Klacks funziona sulla vostra infrastruttura. I dati dei pazienti non lasciano la vostra azienda &mdash; nemmeno verso l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy pianifica a voce", "text": "Basta dire «Riempi i percorsi di domani». In caso di assenza, Klacksy propone subito un sostituto disponibile e qualificato." },
+      { "icon": "event_busy", "title": "Assenze gestite rapidamente", "text": "Se qualcuno risulta assente, Klacks mostra subito chi è qualificato e disponibile &mdash; senza dover rivoluzionare l'intero piano dei percorsi." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Assistenza domiciliare in Lombardia, con rotazione della reperibilità",
+    "text": "CCNL Cooperative Sociali, settimana di 38 ore, indennità di reperibilità &mdash; configurati in Klacks, non riprogrammati. I percorsi vengono ottimizzati automaticamente, le qualifiche verificate, e Klacksy aiuta in caso di modifiche last minute. I dati dei pazienti restano interamente in azienda."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Provate Klacks nella vostra Assistenza domiciliare",
+    "text": "Provate nel Playground come Klacks gestisce percorsi, reperibilità e qualifiche &mdash; oppure installatelo direttamente sulla vostra infrastruttura. Gratuito e senza registrazione."
+  }
+}

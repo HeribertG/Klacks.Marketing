@@ -22,8 +22,8 @@
     "title": "Wie Klacks Reinigungsdienste in Vietnam entlastet",
     "subtitle": "Von der optimierten Route bis zur korrekten Pausenregelung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Motorrad oder zu Fuss." },
-      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch gebucht", "text": "Klacks erkennt Einsätze zwischen 22:00 und 06:00 Uhr automatisch und bucht den 30%-Nachtzuschlag nach Art. 98 Abs. 2 mit." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Motorrad oder zu Fuß." },
+      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch zugewiesen", "text": "Klacks erkennt Nachteinsätze automatisch und weist den hinterlegten 30%-Nachtzuschlag nach Art. 98 Abs. 2 zu." },
       { "icon": "pause_circle", "title": "Pausen ab 6 Stunden automatisch eingeplant", "text": "Bei durchgehenden Schichten ab 6 Stunden plant Klacks die gesetzliche Pause automatisch mit ein &mdash; 30 Minuten tagsüber, 45 Minuten nachts." },
       { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) laufend mit &mdash; über alle Objekte und Teams hinweg." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben bei Ihnen, auch bei KI-Funktionen." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtzuschlag und Pause, ein Plan",
-    "text": "Klacks erkennt Nachteinsätze automatisch, bucht den 30%-Zuschlag mit und plant die verlängerte Pause ab 6 Stunden Arbeitszeit gleich ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt Nachteinsätze automatisch, weist den hinterlegten 30%-Zuschlag zu und plant die verlängerte Pause ab 6 Stunden Arbeitszeit gleich ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

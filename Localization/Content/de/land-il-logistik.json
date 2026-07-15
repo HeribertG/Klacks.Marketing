@@ -22,9 +22,9 @@
     "title": "Wie Klacks die Logistik in Israel entlastet",
     "subtitle": "Von der optimierten Tour bis zur Regulation-168-Kontrolle &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "timer", "title": "Lenkzeit nach Regulation 168 geprüft", "text": "Klacks überwacht die 12-Stunden-Grenze je 24 Stunden und die 68-Stunden-Grenze je 7 Tage in Echtzeit &mdash; Verstöße entstehen gar nicht erst." },
-      { "icon": "free_breakfast", "title": "Pflichtpause nach 4 Stunden Fahrt", "text": "Klacks plant die vorgeschriebene 30-Minuten-Pause nach spätestens 4 Stunden ununterbrochener Fahrt automatisch mit ein." },
-      { "icon": "bedtime", "title": "Vorruhe &amp; Wochenruhe automatisch eingehalten", "text": "Klacks stellt die 7-stündige Vorruhe vor Fahrtantritt und die 25-stündige wöchentliche Ruhezeit je 8-Tage-Zeitraum sicher &mdash; inklusive der mindestens 52 Ruhetage im Jahr." },
+      { "icon": "timer", "title": "Lenkzeit nach Regulation 168 geprüft", "text": "Klacks überwacht die 12-Stunden-Grenze je 24 Stunden und die 68-Stunden-Grenze je 7 Tage in Echtzeit und warnt, bevor eine Grenze überschritten wird." },
+      { "icon": "free_breakfast", "title": "Pflichtpause nach 4 Stunden Fahrt", "text": "Klacks weist rechtzeitig auf die vorgeschriebene 30-Minuten-Pause nach spätestens 4 Stunden ununterbrochener Fahrt hin, damit sie eingeplant wird." },
+      { "icon": "bedtime", "title": "Vorruhe &amp; Wochenruhe im Blick", "text": "Klacks prüft die 25-stündige wöchentliche Ruhezeit je 8-Tage-Zeitraum und warnt bei Verstößen &mdash; die 7-stündige Vorruhe vor Fahrtantritt und die mindestens 52 Ruhetage im Jahr lassen sich ebenso hinterlegen und überwachen." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Cohen ist krank“ genügt &mdash; Klacksy rechnet Lenk- und Ruhezeiten neu." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der Lenkzeitgrenzen ist." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Lenkzeit und Pflichtpause, ein Blick",
-    "text": "Ein Fahrer nähert sich der 4. Fahrstunde. Klacks plant die 30-Minuten-Pflichtpause automatisch ein und überwacht parallel die 12-Stunden-Tagesgrenze sowie die 25-stündige Wochenruhe nach Regulation 168 &mdash; ohne Nachrechnen von Hand."
+    "text": "Ein Fahrer nähert sich der 4. Fahrstunde. Klacks weist rechtzeitig auf die 30-Minuten-Pflichtpause hin und überwacht parallel die 12-Stunden-Tagesgrenze sowie die 25-stündige Wochenruhe nach Regulation 168 &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

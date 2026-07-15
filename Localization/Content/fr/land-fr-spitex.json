@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks pour l'aide à domicile en France | Tournées & CCN BAD",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "Pour l'aide à domicile en France (Aide à domicile)",
+    "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec le temps de trajet comme temps de travail à part entière (CCN BAD), les kilomètres documentés comme base pour l'indemnité forfaitaire et l'amplitude sous surveillance. On-premise, pour que les données des patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de l'aide à domicile",
+    "title": "Tournées, temps de trajet et jours de repos correctement planifiés",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Des tournées plutôt que des services",
+        "text": "Chaque intervenant·e se déplace de patient en patient. Les trajets, l'ordre des visites et les créneaux horaires doivent s'accorder &mdash; chaque jour à nouveau."
+      },
+      {
+        "icon": "directions_car",
+        "title": "Temps de trajet &amp; CCN BAD",
+        "text": "Depuis l'Avenant n° 43/2020 à la CCN BAD (IDCC 2941), les temps de trajet entre patient·e·s comptent comme du temps de travail à part entière &mdash; un avenant distinct (n° 76/2026, en vigueur depuis le 1.6.2026) a en outre porté l'indemnité kilométrique à 0,40 €/km. Distinguer correctement ces deux règles à la main est source d'erreurs."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Amplitude &amp; repos dominical",
+        "text": "L'amplitude journalière est limitée à 12 heures (exception jusqu'à 13 heures, au maximum 7 jours par mois), avec en outre au moins 2 dimanches de repos par mois obligatoires."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'aide à domicile",
+    "subtitle": "De la tournée automatique à la base kilométrique documentée &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Tournées optimisées automatiquement",
+        "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications automatiquement prises en compte",
+        "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle."
+      },
+      {
+        "icon": "payments",
+        "title": "Temps de trajet comme temps de travail, kilomètres documentés",
+        "text": "Les temps de trajet entre patient·e·s comptent comme temps de travail (CCN BAD) et sont saisis en conséquence ; les kilomètres parcourus sont documentés par Klacks comme base dont votre gestion de la paie a besoin pour l'indemnité forfaitaire de 0,40 €/km (Avenant n° 76/2026)."
+      },
+      {
+        "icon": "event_available",
+        "title": "Amplitude &amp; repos dominical sous surveillance",
+        "text": "Klacks garde automatiquement à l'œil l'amplitude de 12 heures et les dimanches de repos obligatoires &mdash; Klacks rend visible tout dépassement avant que le planning ne soit finalisé."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise : les données restent chez vous",
+        "text": "Klacks fonctionne sur votre propre infrastructure. Les données des patients ne quittent jamais vos murs &mdash; pas même pour l'IA."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences compensées rapidement",
+        "text": "En cas d'absence, Klacks indique immédiatement qui est qualifié et disponible &mdash; sans bouleverser tout le planning."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Plusieurs tournées, un service dominical, des kilomètres documentés",
+    "text": "Une organisation d'aide à domicile en France planifie des tournées avec des patient·e·s changeant régulièrement. Klacks compte les temps de trajet comme temps de travail, documente les kilomètres parcourus comme base pour l'indemnité forfaitaire et garde à l'œil les dimanches de repos obligatoires &mdash; sans recalcul manuel."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre service d'aide à domicile",
+    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, les temps de trajet et la documentation kilométrique &mdash; ou installez-le directement sur votre propre infrastructure. Gratuitement et sans inscription."
+  }
+}

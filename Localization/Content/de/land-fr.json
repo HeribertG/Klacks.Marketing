@@ -1,53 +1,86 @@
 {
-  "pageTitle": "Klacks für Frankreich | Dienstplanung mit 12-Stunden-Ruhezeit im Krankenhaus",
+  "pageTitle": "Klacks für Frankreich | Personaleinsatzplanung Open Source & On-Premise",
   "hero": {
-    "badgeIcon": "shield_lock",
-    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Frankreich",
-    "titleHtml": "12 Stunden Ruhezeit in der Fonction Publique Hospitalière &mdash; <span class=\"text-secondary\">automatisch eingehalten, nicht nachgerechnet.</span>",
-    "subtitle": "Der Décret n° 2002-9 begrenzt Dauerdienste auf 9 Stunden tagsüber bzw. 10 Stunden nachts, dazu gilt in der Fonction Publique Hospitalière eine tägliche Ruhezeit von 12 zusammenhängenden Stunden &mdash; über dem EU-Mindestmass von 11 Stunden. Eine neue Instruktion vom Dezember 2025 begrenzt zusätzlich die Dauerarbeitszeit bestimmter Fachdienste auf 24 Stunden.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Französischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, dokumentiert Arbeitsstunden und Ruhezeiten nach dem Code du travail lückenlos und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo es die CNIL erwartet: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
+    "screenshotAlt": "Klacks Dienstplan für Unternehmen in Frankreich",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in französischen Krankenhäusern",
-    "title": "Zwei Ruhezeit-Regime, die nicht verwechselt werden dürfen",
+    "eyebrow": "Der Alltag in französischen Unternehmen",
+    "title": "Code du travail, Modulation und CNIL zugleich",
     "items": [
-      { "icon": "hourglass_disabled", "title": "9h/10h-Grenze für Dauerdienst", "text": "Der Décret n° 2002-9 begrenzt die tägliche Arbeitszeit von Personal im Dauerdienst (travail continu) auf 9 Stunden tagsüber bzw. 10 Stunden nachts &mdash; Abweichungen sind nur in engen Grenzen zulässig." },
-      { "icon": "schedule", "title": "12 statt 11 Stunden Ruhezeit", "text": "In der Fonction Publique Hospitalière gilt eine tägliche Mindestruhezeit von 12 zusammenhängenden Stunden plus 36 Stunden Wochenruhe &mdash; strenger als das EU-Mindestmass von 11 Stunden." },
-      { "icon": "gavel", "title": "Neue 24h-Grenze nur für Spezialdienste", "text": "Seit einer Instruktion vom 30. Dezember 2025 gilt für bestimmte Fachdienste (Anästhesie, Notfall, Neonatologie, Geburtshilfe) eine Obergrenze von 24 Stunden Dauerdienst &mdash; alle anderen Dienste bleiben bei der Standard-Ruhezeit von 11 Stunden. Wer diese beiden Regime verwechselt, plant falsch." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der französischen Datenschutzbehörde CNIL in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Personalvertretungen."
+      {
+        "icon": "gavel",
+        "title": "Code du travail von Hand kaum zu überblicken",
+        "text": "Die 35-Stunden-Woche und die Staffelung der Überstundenzuschläge &mdash; in der Regel +25% für die ersten acht Überstunden, danach +50% (Art. L3121-27 &amp; L3121-36) &mdash; über mehrere Teams und abweichende CCN-Sätze hinweg manuell korrekt einzuhalten, ist kaum realistisch."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Jahresarbeitszeit-Modulation",
+        "text": "Eine Modulation der Wochenarbeitszeit über das Jahr ist bis 1.607 Stunden möglich, mit Ausgleichstagen (den korrekt so genannten „jours de récupération“, nicht „RTT“) &mdash; die zwingende 48-Stunden-Grenze pro Woche (Art. L3121-20, L3121-41 bis L3121-47) im Blick zu behalten, ist von Hand fehleranfällig."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "CNIL: Datenschutz ohne Kompromisse",
+        "text": "Geolokalisation und biometrische Zeiterfassung unterliegen strengen CNIL-Sanktionen (RGPD Art. 88), automatisierte Personalentscheidungen zusätzlich Art. 22 RGPD &mdash; eine externe Cloud-KI, die mitliest, ist für viele Unternehmen und den CSE keine Option."
+      }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die zwei Ruhezeit-Regime auseinanderhält",
-    "subtitle": "9h/10h-Dauerdienst und die 24h-Ausnahme getrennt geführt, nicht vermischt.",
+    "title": "Wie Klacks französische Unternehmen entlastet",
+    "subtitle": "Vom automatischen Dienstplan bis zur freien KI-Modell-Wahl &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Ruhezeit-Verletzung entsteht." },
-      { "icon": "fact_check", "title": "Ruhezeit-Tracking nach Dienstart", "text": "Klacks unterscheidet Standard-Dienste (11h-Ruhezeit) von den freigegebenen 24h-Fachdiensten &mdash; jede Ausnahme bleibt nachvollziehbar dokumentiert." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Dauerdienst-Rotationen", "text": "Der GA-gestützte Autofill-Assistent plant Dauerdienste unter Einhaltung der 9h/10h-Grenze und der 12h-Ruhezeit automatisch mit ein." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig für die freigegebenen Fachdienste mit 24h-Regelung." }
+      {
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Klacks füllt Schichten regelbasiert und lernt aus bestehenden Mustern &mdash; ohne dass jede Woche neu von Hand geplant werden muss."
+      },
+      {
+        "icon": "gavel",
+        "title": "Arbeitsstunden dokumentiert, Ruhezeiten überwacht",
+        "text": "Klacks dokumentiert jede Arbeitsstunde ab der 36. lückenlos als Basis für die Zuschlagsstaffel (+25%/+50%, Art. L3121-27 &amp; L3121-36) &mdash; die Sätze selbst berechnet Ihre Lohnabrechnung auf dieser sauberen Stundenbasis. Die tägliche 11-Stunden- und wöchentliche 35-Stunden-Ruhezeit (Art. L3131-1 &amp; L3132-2) werden in Echtzeit überwacht, Überschreitungen macht Klacks sofort sichtbar."
+      },
+      {
+        "icon": "route",
+        "title": "Touren optimiert",
+        "text": "Wo Mitarbeitende zwischen Einsatzorten unterwegs sind, plant Klacks die Reihenfolge so, dass Wege kurz bleiben."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI. Das entspricht der CNIL-Erwartung an den Beschäftigtendatenschutz (RGPD Art. 88)."
+      },
+      {
+        "icon": "code",
+        "title": "Open Source: kein Vendor-Lock-in",
+        "text": "Der Quellcode liegt offen. Sie entscheiden, wo Klacks läuft, wie es angepasst wird und mit wem Sie zusammenarbeiten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Freie KI-Modell-Wahl",
+        "text": "Klacksy lässt sich auch mit lokal gehosteten Sprachmodellen betreiben &mdash; transparent und nachvollziehbar, statt intransparentem Profiling nach Art. 22 RGPD."
+      }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
-    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "title": "Klacksy: Transparent statt Blackbox",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge zu Qualifikationen, dem Code du travail und den hinterlegten Regeln passen &mdash; nachvollziehbar für Mitarbeitende und das Comité Social et Économique (CSE), passend zur CNIL-Erwartung an transparente, nicht-überwachende Systeme. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "35-Stunden-Woche, Jahresmodulation, ein Plan",
+    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks behält die 48-Stunden-Wochengrenze im Blick, dokumentiert die Arbeitsstunden lückenlos als Basis für die Zuschlagsstaffel und macht sichtbar, wo Ausgleichstage nötig werden &mdash; die Berechnung der Zuschläge übernimmt die Lohnabrechnung."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für französische Krankenhäuser testen",
-    "text": "Erleben Sie im Playground, wie Klacks die 9h/10h-Grenze und die 12-Stunden-Ruhezeit automatisch einhält &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Unternehmen erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, Arbeitsstunden und Ruhezeiten überwacht und Touren optimiert &mdash; oder installieren Sie On-Premise, open source, mit dem KI-Modell Ihrer Wahl. Kostenlos und ohne Registrierung."
   }
 }

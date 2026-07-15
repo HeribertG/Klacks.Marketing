@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Voor de thuiszorg &amp; ambulante zorg in Nederland",
     "titleHtml": "Elke ORT-toeslagschaal <span class=\"text-secondary\">automatisch juist.</span>",
-    "subtitle": "Klacks berekent de onregelmatigheidstoeslag (ORT) van de CAO VVT automatisch per tijdvak en herkent de nieuwe €25-dagvergoeding vanaf 1-1-2026 &mdash; on-premise, zodat patiëntgegevens uw organisatie nooit verlaten.",
+    "subtitle": "Klacks berekent de onregelmatigheidstoeslag (ORT) van de CAO VVT automatisch per tijdvak en verwerkt de nieuwe €25-dagvergoeding vanaf 1-1-2026 als toeslag &mdash; on-premise, zodat patiëntgegevens uw organisatie nooit verlaten.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning in de Nederlandse thuiszorg",
     "screenshotLabel": "Tijdlijn"
@@ -23,8 +23,8 @@
     "subtitle": "Van de automatische ORT-berekening tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
     "items": [
       { "icon": "schedule", "title": "ORT automatisch per tijdvak berekend", "text": "Klacks kent alle vijf ORT-schalen van de CAO VVT &mdash; 22%, 47%, 38%, 52% en 60% &mdash; en wijst elke dienst automatisch de juiste schaal toe." },
-      { "icon": "paid", "title": "€25-dagvergoeding automatisch herkend", "text": "Klacks toont zodra een extra werkdag de nieuwe €25-vergoeding uitlokt &mdash; en waar nulurencontracten of regiecontracten zijn uitgezonderd." },
-      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "De 4-dagen-aankondigingstermijn wordt automatisch nageleefd, afzeggingen op korte termijn met loonaanspraak worden direct zichtbaar gemaakt." },
+      { "icon": "paid", "title": "€25-dagvergoeding als toeslag verwerkt", "text": "Klacks verwerkt de nieuwe €25-vergoeding als configureerbare dagtoeslag en toont waar nulurencontracten of regiecontracten zijn uitgezonderd." },
+      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "Klacks houdt de 4-dagen-aankondigingstermijn in de gaten, afzeggingen op korte termijn met loonaanspraak worden direct zichtbaar gemaakt." },
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks bepaalt de routes zo dat afstanden kort blijven en tijdvakken worden nageleefd &mdash; voor auto, fiets of te voet." },
       { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke inzet wordt alleen toegewezen aan personen met de juiste kwalificatie &mdash; volledig zonder handmatige controle." },
       { "icon": "smart_toy", "title": "Klacksy plant via spraak", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekmelding stelt Klacksy direct een beschikbare vervanger voor." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Concreet",
     "title": "Nachtdienst, ORT, één blik",
-    "text": "Klacks herkent automatisch wanneer een nachtdienst in het weekend de 52%-ORT-schaal uitlokt, en kent de nieuwe €25-dagvergoeding bij een extra werkdag meteen mee toe &mdash; zonder handmatig nawerk."
+    "text": "Klacks herkent automatisch wanneer een nachtdienst in het weekend de 52%-ORT-schaal uitlokt, en berekent de nieuwe €25-dagvergoeding als toeslag voor de extra werkdag mee &mdash; zonder handmatig nawerk."
   },
   "showRoutePlanning": true,
   "cta": {

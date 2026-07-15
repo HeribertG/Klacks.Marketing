@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Renholdsbedrifter in Norwegen",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit den neuen, nach Dienstjahren gestaffelten Renholdsoverenskomsten-Mindestlöhnen und dem Nachtzuschlag automatisch hinterlegt.",
+    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit den neuen, nach Dienstjahren gestaffelten Renholdsoverenskomsten-Mindestlöhnen und dem Nachtzuschlag als hinterlegten Lohn- und Zuschlagsregeln.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Norwegen",
     "screenshotLabel": "Dienstplan"
@@ -22,10 +22,10 @@
     "title": "Wie Klacks norwegische Renholdsbedrifter entlastet",
     "subtitle": "Von der optimierten Route bis zum korrekten Dienstjahres-Lohn &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
-      { "icon": "payments", "title": "Mindestlöhne nach Dienstjahren automatisch hinterlegt", "text": "Die vier Dienstjahresstufen der Renholdsoverenskomsten ab dem 1. Juni 2026 &mdash; 247,29, 250,66, 257,39 und 261,24 NOK &mdash; sind samt den Garantiezulagen ab dem 1. Mai 2026 hinterlegt." },
-      { "icon": "bedtime", "title": "Nachtzuschlag automatisch addiert", "text": "Für Einsätze zwischen 21:00 und 06:00 rechnet Klacks den Nachtzuschlag von mindestens 29 NOK/Stunde automatisch zum Mindestlohn hinzu." },
+      { "icon": "payments", "title": "Mindestlöhne nach Dienstjahren hinterlegt", "text": "Die vier Dienstjahresstufen der Renholdsoverenskomsten ab dem 1. Juni 2026 &mdash; 247,29, 250,66, 257,39 und 261,24 NOK &mdash; sowie die Garantiezulagen ab dem 1. Mai 2026 lassen sich in Klacks als Lohnsätze hinterlegen; die Zuordnung zur passenden Dienstjahresstufe erfolgt pro Mitarbeitendem." },
+      { "icon": "bedtime", "title": "Nachtzuschlag als Zuschlagsregel hinterlegt", "text": "Den Nachtzuschlag von mindestens 29 NOK/Stunde für Nachteinsätze hinterlegen Sie in Klacks als Zuschlagsregel zum jeweiligen Mindestlohn." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dienstjahr, Nachtzuschlag, ein Lohn",
-    "text": "Klacks kennt für jede Reinigungskraft das massgebliche Dienstjahr und rechnet bei einem Nachteinsatz zwischen 21:00 und 06:00 automatisch den Zuschlag von mindestens 29 NOK/Stunde zum passenden Mindestlohnsatz der Renholdsoverenskomsten hinzu &mdash; ohne Nachrechnen von Hand."
+    "text": "Für jede Reinigungskraft hinterlegen Sie das maßgebliche Dienstjahr mit dem passenden Mindestlohnsatz der Renholdsoverenskomsten, und den Nachtzuschlag von mindestens 29 NOK/Stunde für Nachteinsätze rechnet Klacks automatisch dazu &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

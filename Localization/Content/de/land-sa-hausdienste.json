@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in Saudi-Arabien",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">auch im Sommer sauber eingeplant.</span>",
-    "subtitle": "Klacks erzwingt automatisch Split-Shifts während des jährlichen Sommer-Mittagsverbots (15. Juni bis 15. September, täglich 12:00 bis 15:00 Uhr) &mdash; und plant Reinigungsteams so, dass keine Arbeit unter direkter Sonneneinstrahlung entsteht.",
+    "subtitle": "Klacks plant automatisch Split-Shifts während des jährlichen Sommer-Mittagsverbots (15. Juni bis 15. September, täglich 12:00 bis 15:00 Uhr) &mdash; und plant Reinigungsteams so, dass keine Arbeit unter direkter Sonneneinstrahlung entsteht.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -13,7 +13,7 @@
     "eyebrow": "Der Reinigungs-Alltag in Saudi-Arabien",
     "title": "Sommer-Mittagsverbot, Split-Shifts und Nitaqat",
     "items": [
-      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot einhalten", "text": "Vom 15. Juni bis 15. September ist täglich zwischen 12:00 und 15:00 Uhr jede Arbeit unter direkter Sonneneinstrahlung verboten (حظر العمل تحت أشعة الشمس) &mdash; Verstösse werden über die Hotline 19911 gemeldet." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot einhalten", "text": "Vom 15. Juni bis 15. September ist täglich zwischen 12:00 und 15:00 Uhr jede Arbeit unter direkter Sonneneinstrahlung verboten (حظر العمل تحت أشعة الشمس) &mdash; Verstöße werden über die Hotline 19911 gemeldet." },
       { "icon": "schedule", "title": "Split-Shifts im Verbotsfenster erzwingen", "text": "Der Dienstplan muss für dieses Fenster zwingend geteilte Einsätze vorsehen &mdash; über viele Objekte und Teams von Hand mühsam zu koordinieren." },
       { "icon": "groups", "title": "Nitaqat-Mindestlohn im Blick", "text": "Ein saudischer Mitarbeitender zählt nur als voller Wert (1,0) für die Saudisierungsquote, wenn das GOSI-versicherte Gehalt mindestens SAR 4.000 pro Monat beträgt &mdash; für FM-Firmen zentral." }
     ]
@@ -23,9 +23,9 @@
     "subtitle": "Vom automatischen Split-Shift bis zur Nitaqat-Quote &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben." },
-      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot automatisch erzwungen", "text": "Klacks teilt Einsätze zwischen 15. Juni und 15. September für das Fenster 12:00 bis 15:00 Uhr automatisch in Split-Shifts auf &mdash; keine Arbeit unter direkter Sonneneinstrahlung." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot automatisch eingeplant", "text": "Klacks teilt Einsätze zwischen 15. Juni und 15. September für das Fenster 12:00 bis 15:00 Uhr automatisch in Split-Shifts auf &mdash; keine Arbeit unter direkter Sonneneinstrahlung." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
-      { "icon": "badge", "title": "Nitaqat-Mindestlohn dokumentiert", "text": "Klacks hält im Blick, welche saudischen Mitarbeitenden mit einem GOSI-Gehalt ab SAR 4.000 als volle Quote (1,0) zählen." },
+      { "icon": "badge", "title": "Nitaqat-Mindestlohn dokumentiert", "text": "Klacks führt die Beschäftigungsdaten je Mitarbeitendem, die für die Nitaqat-Einstufung nötig sind &mdash; ob die GOSI-Gehaltsschwelle für die volle Quote (1,0 ab SAR 4.000) erreicht ist, prüft Ihr Lohnsystem." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte für morgen früh, vor dem Mittagsverbot“ genügt &mdash; Klacksy optimiert Route, Team und Pausen." }
     ]
@@ -38,6 +38,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, das Sommer-Mittagsverbot und die Nitaqat-Quote übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen und das Sommer-Mittagsverbot übernimmt und die Nitaqat-Dokumentation unterstützt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

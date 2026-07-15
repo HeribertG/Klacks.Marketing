@@ -18,12 +18,26 @@
       { "icon": "cloud_off", "title": "Sovranità dei dati invece dell'obbligo di cloud USA", "text": "Dall'entrata in vigore della nuova Legge federale sulla protezione dei dati (nLPD), molte aziende si chiedono se i dati del personale possano finire in un cloud statunitense &mdash; soprattutto per le funzioni di IA." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Regole &amp; calendario",
+    "title": "Un calendario per ogni realtà",
+    "text": "In Svizzera, giorni festivi e regole sono un mosaico &mdash; diversi da cantone a cantone, talvolta persino da comune a comune. Klacks padroneggia esattamente ciò su cui falliscono gli strumenti semplici.",
+    "items": [
+      { "icon": "place", "title": "Fino al livello comunale", "text": "Paese, regione (Cantone, Land, Département) e comune &mdash; preconfigurati in modo appropriato." },
+      { "icon": "layers", "title": "Unire calendari", "text": "Più paesi contemporaneamente &mdash; ad esempio Ginevra e gli USA per un'azienda con partner commerciali lì." },
+      { "icon": "tune", "title": "Vincolante o solo informativo", "text": "Lei decide, calendario per calendario, se un giorno festivo influisce su ore &amp; supplementi &mdash; oppure appare solo come promemoria." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageLabel": "Regole sui giorni festivi",
+    "imageAlt": "Regole sui giorni festivi in Klacks: giorni festivi per nazione e regione – Germania, USA (Alaska) e i cantoni svizzeri di Lucerna, Giura, Glarona e Appenzello",
+    "imageCaption": "Regole reali di Klacks: un elenco unisce i giorni festivi di più paesi e singoli cantoni &mdash; liberamente ampliabile."
+  },
   "solutions": {
     "title": "Come Klacks alleggerisce le aziende svizzere",
     "subtitle": "Dal calcolo automatico dei supplementi alla propria infrastruttura &mdash; tutto si incastra alla perfezione.",
     "items": [
-      { "icon": "gavel", "title": "Durata massima settimanale sorvegliata automaticamente", "text": "Klacks conosce i limiti di 45 e 50 ore per settore e le diverse soglie per il supplemento sul lavoro straordinario &mdash; dalla 60ª ora straordinaria annua per il personale d'ufficio e di vendita, dalla prima ora straordinaria per tutti gli altri settori." },
-      { "icon": "bedtime", "title": "Tempi di riposo &amp; supplemento notturno calcolati correttamente", "text": "Le 11 ore di riposo e il supplemento di tempo del 10% per il lavoro notturno regolare a partire dalla 25ª notte annua vengono pianificati automaticamente &mdash; come tempo libero, non come pagamento." },
+      { "icon": "gavel", "title": "Durata massima settimanale sorvegliata automaticamente", "text": "Klacks sorveglia costantemente i limiti settimanali di 45 e 50 ore per settore e rende visibile subito ogni superamento &mdash; le soglie del supplemento per lavoro straordinario specifiche per settore possono essere impostate come valore di riferimento." },
+      { "icon": "bedtime", "title": "Tempi di riposo pianificati automaticamente, supplemento notturno documentato", "text": "Klacks pianifica automaticamente le 11 ore di riposo, e le ore notturne soggette a supplemento vengono documentate &mdash; come base per l'accredito di tempo libero previsto dalla legge a partire dalla 25ª notte annua." },
       { "icon": "route", "title": "Giri &amp; interventi ottimizzati automaticamente", "text": "Klacks organizza interventi e percorsi in modo che le distanze siano brevi e le fasce orarie rispettate &mdash; utilizzabile in tutti i settori." },
       { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura, il modello di IA lo sceglie Lei &mdash; anche ospitato localmente, senza alcun trasferimento dei dati del personale all'estero." },
       { "icon": "smart_toy", "title": "Klacksy: basato su regole, non una scatola nera", "text": "L'assistente IA integrato Klacksy pianifica tramite comando vocale &mdash; in modo tracciabile, secondo competenze e regole predefinite, non come decisione IA opaca." },
@@ -40,7 +54,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Lavoro notturno e durata massima settimanale, un unico sguardo",
-    "text": "Klacks riconosce automaticamente quando un intervento genera il supplemento notturno o quando viene raggiunta la durata massima settimanale, e propone subito anche la compensazione &mdash; senza calcoli manuali."
+    "text": "Klacks riconosce automaticamente quando un intervento genera il supplemento notturno o quando viene raggiunta la durata massima settimanale, e lo rende subito visibile &mdash; senza calcoli manuali."
   },
   "showRoutePlanning": false,
   "cta": {

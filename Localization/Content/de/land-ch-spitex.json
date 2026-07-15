@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die Spitex &amp; ambulante Pflege in der Schweiz",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klient:innen als Arbeitszeit und dem gesetzlichen Sonntagsausgleich. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klientinnen und Klienten als Arbeitszeit und sichtbar geplanter Sonntagsarbeit. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Spitex in der Schweiz",
     "screenshotLabel": "Timeline"
@@ -16,7 +16,7 @@
       {
         "icon": "alt_route",
         "title": "Wegzeit zählt als Arbeitszeit",
-        "text": "Fahrten zwischen Klient:innen sind volle Arbeitszeit &mdash; nur die erste Anfahrt am Morgen und die letzte Heimfahrt gelten als normaler, unbezahlter Arbeitsweg (ArGV 1 Art. 13)."
+        "text": "Fahrten zwischen Klientinnen und Klienten sind volle Arbeitszeit &mdash; nur die erste Anfahrt am Morgen und die letzte Heimfahrt gelten als normaler, unbezahlter Arbeitsweg (ArGV 1 Art. 13)."
       },
       {
         "icon": "event_repeat",
@@ -26,7 +26,7 @@
       {
         "icon": "hourglass_top",
         "title": "Das kommende BGAP im Blick",
-        "text": "Die Pflegeinitiative (BGAP) ist noch nicht in Kraft, sieht aber künftig eine Höchstarbeitszeit von 45 Stunden, mehr Vorlaufzeit bei der Dienstplanung und geregelte Pikett-Kompensation vor."
+        "text": "Das Bundesgesetz über die Arbeitsbedingungen in der Pflege (BGAP) &mdash; die Pflegeinitiative &mdash; ist noch nicht in Kraft, sieht aber künftig eine Höchstarbeitszeit von 45 Stunden, mehr Vorlaufzeit bei der Dienstplanung und geregelte Pikett-Kompensation vor."
       }
     ]
   },
@@ -42,12 +42,12 @@
       {
         "icon": "schedule",
         "title": "Wegzeit korrekt als Arbeitszeit erfasst",
-        "text": "Fahrten zwischen Klient:innen werden automatisch als Arbeitszeit gerechnet &mdash; nur An- und Rückfahrt bleiben aussen vor."
+        "text": "Fahrten zwischen Klientinnen und Klienten werden automatisch als Arbeitszeit gerechnet &mdash; nur An- und Rückfahrt bleiben aussen vor."
       },
       {
         "icon": "event_available",
-        "title": "Freie Sonntage automatisch geplant",
-        "text": "Klacks stellt sicher, dass mindestens jeder zweite Sonntag frei bleibt, und plant den Ausgleich gleich mit ein."
+        "title": "Ruhetage und Sonntagseinsätze im Blick",
+        "text": "Klacks plant Wochenruhetage automatisch mit ein und macht jeden Sonntagseinsatz auf einen Blick sichtbar &mdash; so behalten Sie den gesetzlichen Ausgleich selbst in der Hand."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, Sonntagsdienst, ein Plan",
-    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und behält im Blick, dass mindestens jeder zweite Sonntag frei bleibt &mdash; ohne Nachrechnen von Hand. Sobald das BGAP in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks rechnet die Fahrzeit zwischen Klientinnen und Klienten automatisch als Arbeitszeit ein und macht Sonntagseinsätze auf einen Blick sichtbar &mdash; ohne Nachrechnen von Hand. Sobald das BGAP in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": true,
   "cta": {

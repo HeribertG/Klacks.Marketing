@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Suisse",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et la compensation dominicale légale. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et le travail dominical planifié de manière visible. On-premise, pour que les données patients ne quittent jamais vos murs.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Suisse",
     "screenshotLabel": "Chronologie"
@@ -26,7 +26,7 @@
       {
         "icon": "hourglass_top",
         "title": "Garder un œil sur la future BGAP",
-        "text": "La loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet."
+        "text": "La loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) &mdash; l'initiative sur les soins infirmiers &mdash; n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet."
       }
     ]
   },
@@ -46,8 +46,8 @@
       },
       {
         "icon": "event_available",
-        "title": "Dimanches libres planifiés automatiquement",
-        "text": "Klacks garantit qu'au moins un dimanche sur deux reste libre, et planifie directement la compensation correspondante."
+        "title": "Jours de repos et interventions dominicales sous contrôle",
+        "text": "Klacks planifie automatiquement les jours de repos hebdomadaire et rend chaque intervention dominicale visible en un coup d'œil &mdash; pour que vous gardiez vous-même la maîtrise de la compensation légale."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Temps de trajet, service dominical, un seul planning",
-    "text": "Klacks intègre automatiquement le temps de trajet entre client·e·s comme temps de travail et veille à ce qu'au moins un dimanche sur deux reste libre &mdash; sans calcul manuel. Dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
+    "text": "Klacks intègre automatiquement le temps de trajet entre client·e·s comme temps de travail et rend les interventions du dimanche visibles en un coup d'œil &mdash; sans calcul manuel. Dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -41,18 +41,18 @@
       },
       {
         "icon": "schedule",
-        "title": "Majoration créditée automatiquement",
-        "text": "La majoration de 10 % pour le travail de nuit et du dimanche est automatiquement créditée sur le compte de temps de travail &mdash; conformément à la CCT VSSU."
+        "title": "Majoration calculée automatiquement",
+        "text": "Les heures de nuit et du dimanche soumises à majoration selon la CCT VSSU sont calculées et documentées automatiquement par Klacks &mdash; comme base de la majoration de 10 % sur votre compte de temps."
       },
       {
         "icon": "gavel",
-        "title": "Seuil de 210 heures sous contrôle",
-        "text": "Klacks alerte avant d'atteindre le seuil mensuel de 210 heures au-delà duquel une majoration de 25 % s'applique, et planifie directement la compensation dans le délai de 3 mois."
+        "title": "Seuil de 210 heures enregistré",
+        "text": "Le seuil mensuel de 210 heures supplémentaires, au-delà duquel une majoration de 25 % s'applique, peut être enregistré comme valeur de référence &mdash; comme base de documentation pour la compensation dans le délai de 3 mois."
       },
       {
         "icon": "verified",
         "title": "Certificats vérifiés automatiquement",
-        "text": "Klacks n'attribue les interventions qu'au personnel muni d'une carte valide &mdash; et alerte avant l'expiration d'un justificatif."
+        "text": "Klacks vérifie à chaque attribution les certificats enregistrés et alerte à temps avant l'expiration d'un justificatif."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Service de nuit, majoration, un seul planning",
-    "text": "Klacks crédite automatiquement la majoration pour travail de nuit et du dimanche sur le compte de temps de travail et garde un œil sur le seuil de 210 heures &mdash; sans calcul manuel."
+    "text": "Klacks calcule automatiquement la majoration pour travail de nuit et du dimanche comme base pour votre compte de temps et retient le seuil de 210 heures comme valeur de référence &mdash; sans calcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {

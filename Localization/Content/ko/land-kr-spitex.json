@@ -1,10 +1,10 @@
 {
-  "pageTitle": "대한민국 재가 요양보호를 위한 Klacks | RFID 방문 인증 & 주휴일 가산수당",
+  "pageTitle": "대한민국 재가 요양보호를 위한 Klacks | 방문 경로 계획 & 주휴일 가산수당",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "대한민국 재가 요양보호(요양보호사)를 위한",
-    "titleHtml": "돌봄에는 더 많은 시간을, <span class=\"text-secondary\">증빙에는 더 적은 시간을.</span>",
-    "subtitle": "Klacks는 계획된 방문을 국가 시스템이 국민건강보험공단(NHIS)에 보고하는 RFID 방문 태그 기록과 자동으로 대조합니다 &mdash; 그리고 주휴일 근무에 대한 가산수당도 함께 계산합니다. 온프레미스로 운영되어 돌봄 데이터가 귀사를 벗어나지 않습니다.",
+    "titleHtml": "돌봄에는 더 많은 시간을, <span class=\"text-secondary\">행정업무에는 더 적은 시간을.</span>",
+    "subtitle": "Klacks는 재가 요양 방문 일정과 경로를 한눈에 계획하고, 주휴일 근무에 대한 가산수당도 함께 계산합니다 &mdash; 온프레미스로 운영되어 돌봄 데이터가 귀사를 벗어나지 않습니다.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "대한민국 재가 요양보호 방문 일정을 위한 Klacks 타임라인 화면",
     "screenshotLabel": "타임라인"
@@ -20,10 +20,10 @@
   },
   "solutions": {
     "title": "Klacks가 대한민국 재가 요양보호의 부담을 덜어주는 방법",
-    "subtitle": "자동 방문 경로 계획부터 RFID 대조까지 &mdash; 모든 것이 유기적으로 맞물립니다.",
+    "subtitle": "자동 방문 경로 계획부터 주휴일 가산수당까지 &mdash; 모든 것이 유기적으로 맞물립니다.",
     "items": [
       { "icon": "route", "title": "방문 경로 자동 최적화", "text": "Klacks는 이동 거리는 짧게, 방문 시간대는 정확히 지켜지도록 경로를 설계합니다." },
-      { "icon": "fact_check", "title": "RFID 기록과 계획 자동 대조", "text": "Klacks는 계획된 방문을 NHIS에 보고되는 실제 RFID 방문 기록과 비교합니다 &mdash; 오차는 정산 시점이 아니라 즉시 드러납니다." },
+      { "icon": "fact_check", "title": "계획된 방문 빠짐없이 기록", "text": "Klacks는 각 가정 방문에 대해 누가, 언제, 어디서 배치되는지 정확히 기록합니다 &mdash; 귀사가 공식 RFID 신고 데이터와 대조할 때 활용할 수 있는 신뢰할 수 있는 계획 기준입니다." },
       { "icon": "event_available", "title": "주휴일 &amp; 가산수당 자동 계획", "text": "Klacks는 매주 유급 주휴일을 보장하고, 이 날 근무가 발생하면 50% 또는 100%의 가산수당을 즉시 계산합니다." },
       { "icon": "verified", "title": "자격 요건 자동 반영", "text": "모든 방문은 해당 자격을 갖춘 인력에게만 배정됩니다 &mdash; 수작업 확인 없이." },
       { "icon": "shield_lock", "title": "온프레미스: 데이터는 사업장 안에", "text": "Klacks는 귀사 자체 인프라에서 운영됩니다. 돌봄 데이터와 개인정보는 사업장을 벗어나지 않습니다 &mdash; AI 기능을 사용할 때도 마찬가지입니다." },
@@ -32,12 +32,12 @@
   },
   "example": {
     "eyebrow": "구체적으로",
-    "title": "RFID 기록, 주휴일, 한 번의 대조",
-    "text": "Klacks는 RFID 방문 기록을 계획된 방문과 자동으로 대조하고, 주휴일에 근무가 발생하면 가산수당을 즉시 계산합니다 &mdash; 수작업 재계산 없이."
+    "title": "일정, 주휴일, 한눈에",
+    "text": "Klacks는 각 가정 방문의 계획된 일정을 한눈에 보여주고, 주휴일에 근무가 발생하면 가산수당을 즉시 계산합니다 &mdash; 수작업 재계산 없이."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "귀사의 재가 요양보호 사업에서 Klacks를 경험하세요",
-    "text": "Klacks가 방문 경로, RFID 대조, 주휴일 가산수당을 어떻게 처리하는지 Playground에서 직접 확인해 보세요 &mdash; 또는 귀사 자체 인프라에 바로 설치하세요. 무료이며 회원가입도 필요 없습니다."
+    "text": "Klacks가 방문 경로, 일정 관리, 주휴일 가산수당을 어떻게 처리하는지 Playground에서 직접 확인해 보세요 &mdash; 또는 귀사 자체 인프라에 바로 설치하세요. 무료이며 회원가입도 필요 없습니다."
   }
 }

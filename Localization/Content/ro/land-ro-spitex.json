@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pentru îngrijirea la domiciliu în România",
     "titleHtml": "Mai mult timp pentru îngrijire, <span class=\"text-secondary\">mai puțin pentru capcane contractuale.</span>",
-    "subtitle": "Klacks planifică intervențiile și turele și reflectă corect timpul de deplasare între clienți, atunci când contractul individual sau colectiv de muncă prevede acest lucru &mdash; și împiedică alocarea neintenționată de ore suplimentare angajaților part-time.",
+    "subtitle": "Klacks planifică intervențiile și turele și reflectă corect timpul de deplasare între clienți, atunci când contractul individual sau colectiv de muncă prevede acest lucru &mdash; și avertizează live înainte ca angajaților part-time să li se aloce neintenționat ore suplimentare.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru planificarea turelor în îngrijirea la domiciliu din România",
     "screenshotLabel": "Timeline"
@@ -46,13 +46,13 @@
       },
       {
         "icon": "block",
-        "title": "Ore suplimentare part-time, prevenite",
+        "title": "Ore suplimentare part-time, detectate live",
         "text": "Klacks avertizează înainte ca unui angajat part-time să i se aloce ore suplimentare fără clauza contractuală corespunzătoare &mdash; cu excepția cazurilor de forță majoră sau a lucrărilor urgente de prevenire a accidentelor."
       },
       {
         "icon": "description",
         "title": "Clauzele contractuale, sub control",
-        "text": "Klacks ține evidența contractelor care conțin o clauză privind orele suplimentare și protejează astfel împotriva transformării neintenționate într-un contract cu normă întreagă."
+        "text": "Klacks ține evidența contractelor care conțin o clauză privind orele suplimentare și face vizibil unde lipsa clauzei poate declanșa transformarea neintenționată într-un contract cu normă întreagă."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Timpul de deplasare și contractul part-time, un plan",
-    "text": "Klacks verifică automat dacă, potrivit contractului, unui angajat part-time i se înregistrează timpul de deplasare ca timp de lucru și împiedică orele suplimentare nepermise, înainte ca acestea să apară."
+    "text": "Klacks verifică automat dacă, potrivit contractului, unui angajat part-time i se înregistrează timpul de deplasare ca timp de lucru și avertizează în legătură cu orele suplimentare nepermise, înainte ca acestea să apară."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en Suisse",
     "titleHtml": "Tournées, temps de conduite, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les temps de conduite et de repos selon l'OTR 1, l'obligation de justificatif sur 56 jours et la future obligation OTR pour les camionnettes en trafic transfrontalier.",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec la surveillance du temps de travail et des pauses selon l'OTR 1, l'obligation de justificatif sur 56 jours et la future obligation OTR pour les camionnettes en trafic transfrontalier.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations de chauffeurs en Suisse",
     "screenshotLabel": "Chronologie"
@@ -41,35 +41,35 @@
       },
       {
         "icon": "timer",
-        "title": "Temps de conduite &amp; de repos selon l'OTR 1 vérifiés",
-        "text": "La limite de 9 heures et l'obligation de pause après 4,5 heures de conduite sont surveillées en temps réel &mdash; les infractions n'apparaissent jamais."
+        "title": "Temps de travail &amp; pauses selon l'OTR 1 surveillés",
+        "text": "Klacks surveille en continu les limites de temps de travail et de pause, et alerte tôt avant d'atteindre les valeurs de l'OTR 1 &mdash; 9 heures de conduite, pause après 4,5 heures."
       },
       {
         "icon": "fact_check",
         "title": "Justificatif de 56 jours documenté",
-        "text": "Klacks conserve les justificatifs des temps de conduite et de repos pour la période prescrite."
+        "text": "Klacks conserve les temps de travail documentés pour la période prescrite de 56 jours."
       },
       {
         "icon": "local_shipping",
         "title": "Prêt pour la nouvelle règle sur les camionnettes 2026",
-        "text": "Klacks prend aussi en charge les combinaisons de camionnettes qui seront nouvellement soumises à l'OTR en trafic transfrontalier dès mi-2026."
+        "text": "Klacks planifie les tournées indépendamment du type de véhicule &mdash; la surveillance du temps de travail et des pauses s'applique aussi aux camionnettes qui seront nouvellement soumises à l'OTR en trafic transfrontalier dès mi-2026."
       },
       {
         "icon": "badge",
         "title": "Catégories de permis adéquates",
-        "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'autorisation adéquate &mdash; et alerte avant l'expiration des justificatifs."
+        "text": "Klacks tient compte de la catégorie de permis adéquate lors de l'attribution des tournées et alerte avant l'expiration d'un justificatif."
       },
       {
         "icon": "smart_toy",
         "title": "Klacksy planifie à la voix",
-        "text": "« Planifie les tournées de demain, le chauffeur Meier est malade » suffit &mdash; Klacksy recalcule tout, temps de conduite compris."
+        "text": "« Planifie les tournées de demain, le chauffeur Meier est malade » suffit &mdash; Klacksy recalcule tout, limites de temps de travail et de pause comprises."
       }
     ]
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Tournée transfrontalière, un seul planning",
-    "text": "Klacks vérifie automatiquement les temps de conduite et de repos selon l'OTR 1, conserve les justificatifs pendant 56 jours et prend aussi en charge les camionnettes qui seront nouvellement soumises à l'OTR à l'avenir."
+    "text": "Klacks surveille automatiquement les limites de temps de travail et de pause selon l'OTR 1, conserve les justificatifs pendant 56 jours et planifie aussi les camionnettes qui seront nouvellement soumises à l'OTR à l'avenir."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Vietnam",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jedes Limit im Blick.</span>",
-    "subtitle": "Klacks besetzt Objekte lückenlos und überwacht das monatliche 40-Stunden-Überstundenlimit sowie die kumulative Nacht-Überstundenformel automatisch &mdash; On-Premise, damit Einsatz- und Zutrittsdaten bei Ihnen bleiben.",
+    "subtitle": "Klacks besetzt Objekte lückenlos, überwacht das monatliche 40-Stunden-Überstundenlimit und weist Nachtzuschläge automatisch zu &mdash; On-Premise, damit Einsatz- und Zutrittsdaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Wachpläne und Objektbesetzung in Vietnam",
     "screenshotLabel": "Timeline"
@@ -23,17 +23,17 @@
     "subtitle": "Vom überwachten Monatslimit bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "gavel", "title": "40-Stunden-Monatsfenster laufend überwacht", "text": "Klacks überwacht das rollierende Monatsfenster nach Art. 107 Abs. 2 und plant rechtzeitig Ersatzkräfte, bevor das Limit erreicht ist." },
-      { "icon": "bedtime", "title": "Nacht-Überstunden automatisch berechnet", "text": "Die verschachtelte Formel aus Grundsatz, Nachtzuschlag und Nacht-Überstundenaufschlag (Art. 98) rechnet Klacks automatisch &mdash; inklusive der kumulierten 210%- bzw. 270%-Sätze." },
-      { "icon": "schedule", "title": "Nachtzeit &amp; Schichtruhe eingehalten", "text": "Klacks berücksichtigt die Nachtzeit (Art. 106) und die 12-Stunden-Ruhezeit zwischen Schichten (Art. 110) automatisch, auch bei rollierenden Wachplänen über mehrere Objekte." },
+      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren &mdash; Klacks weist Nachtposten den Zuschlag automatisch zu und dokumentiert jede Stunde als saubere Basis für die kumulierten 210%- bzw. 270%-Sätze in Ihrer Lohnabrechnung." },
+      { "icon": "schedule", "title": "Nachtzeit &amp; Schichtruhe im Blick", "text": "Klacks erkennt Nachteinsätze automatisch und prüft die 12-Stunden-Ruhezeit zwischen Schichten (Art. 110) &mdash; mit Warnung, auch bei rollierenden Wachplänen über mehrere Objekte." },
       { "icon": "route", "title": "Rundgänge &amp; Objekte optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Personaldaten inklusive biometrischer Zeiterfassung bleiben bei Ihnen, auch bei KI-Funktionen." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Personaldaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Verfügbarkeit und das Monatslimit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtposten und Monatslimit, ein Plan",
-    "text": "Klacks berechnet die Nacht-Überstunden eines Postens automatisch und warnt, bevor das 40-Stunden-Monatslimit erreicht ist &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks weist einem Nachtposten den hinterlegten Zuschlag automatisch zu und warnt, bevor das 40-Stunden-Monatslimit erreicht ist &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

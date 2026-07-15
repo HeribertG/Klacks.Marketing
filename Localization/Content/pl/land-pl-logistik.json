@@ -23,8 +23,8 @@
     "subtitle": "Od zoptymalizowanej trasy po nowy obowiązek dla lekkich pojazdów dostawczych &mdash; wszystko działa razem.",
     "items": [
       { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa przystanki w najsensowniejszej kolejności &mdash; krótkie trasy, dotrzymane przedziały czasowe, mniej pustych przejazdów." },
-      { "icon": "nightlight", "title": "10-godzinny limit nocny sprawdzany automatycznie", "text": "Klacks rozpoznaje, gdy zmiana wchodzi w okno nocne, i automatycznie ogranicza łączny czas pracy do 10 godzin między dwoma okresami odpoczynku." },
-      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze zaplanowane prawidłowo od 1.7.2026 r.", "text": "Dla pojazdów o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks planuje według tych samych zasad czasu jazdy co dla ciężkich samochodów ciężarowych &mdash; wraz z 4,5-godzinnym czasem jazdy, 45-minutową przerwą i maksymalnie 9 (a w dwa dni w tygodniu 10) godzinami dziennego czasu jazdy." },
+      { "icon": "nightlight", "title": "10-godzinny limit nocny automatycznie pod kontrolą", "text": "Klacks rozpoznaje, gdy zmiana wchodzi w okno nocne, i automatycznie ostrzega, gdy łączny czas pracy między dwoma okresami odpoczynku miałby przekroczyć 10-godzinny limit." },
+      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze od 1.7.2026 r. pod kontrolą", "text": "Dla pojazdów o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks uwzględnia te same zasady czasu jazdy co dla ciężkich samochodów ciężarowych &mdash; wraz z 4,5-godzinnym czasem jazdy, 45-minutową przerwą i maksymalnie 9 (a w dwa dni w tygodniu 10) godzinami dziennego czasu jazdy &mdash; i ostrzega w razie groźby przekroczenia." },
       { "icon": "badge", "title": "Kategorie prawa jazdy dopasowane", "text": "Klacks przydziela trasy wyłącznie kierowcom z odpowiednimi uprawnieniami &mdash; i ostrzega przed wygasającymi dokumentami." },
       { "icon": "smart_toy", "title": "Klacksy planuje na polecenie głosowe", "text": "„Zaplanuj trasy na jutro, kierowca Kowalski jest chory” wystarczy &mdash; Klacksy przelicza wszystko od nowa." },
       { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy kierowca wypada, Klacks od razu pokazuje, kto jest wykwalifikowany, dostępny i mieści się w limicie czasu jazdy." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Okno nocne, lekkie pojazdy dostawcze, jeden plan",
-    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ogranicza łączny czas pracy do 10 godzin &mdash; i planuje lekkie pojazdy dostawcze w międzynarodowym przewozie od 1.7.2026 r. od razu według zasad czasu jazdy dla samochodów ciężarowych."
+    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ostrzega, gdy tylko 10-godzinny limit zostałby przekroczony &mdash; i planuje lekkie pojazdy dostawcze w międzynarodowym przewozie od 1.7.2026 r. od razu według zasad czasu jazdy dla samochodów ciężarowych."
   },
   "showRoutePlanning": true,
   "cta": {

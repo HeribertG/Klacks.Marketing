@@ -18,12 +18,26 @@
       { "icon": "cloud_off", "title": "Souveraineté des données plutôt que dépendance au cloud américain", "text": "Depuis la révision de la loi sur la protection des données (nLPD), de nombreuses entreprises se demandent si les données du personnel peuvent seulement être hébergées dans un cloud américain &mdash; en particulier pour les fonctions d'IA." }
     ]
   },
+  "rulesCalendar": {
+    "eyebrow": "Règles &amp; calendrier",
+    "title": "Un calendrier pour chaque réalité",
+    "text": "En Suisse, les jours fériés et les règles forment une mosaïque &mdash; différente selon le canton, parfois même selon la commune. Klacks maîtrise précisément ce qui fait achopper les outils simples.",
+    "items": [
+      { "icon": "place", "title": "Jusqu'au niveau communal", "text": "Pays, région (canton, Land, département) et commune &mdash; préconfigurés de façon adaptée." },
+      { "icon": "layers", "title": "Combiner des calendriers", "text": "Plusieurs pays simultanément &mdash; par exemple Genève et les États-Unis pour une entreprise ayant des partenaires commerciaux là-bas." },
+      { "icon": "tune", "title": "Contraignant ou simplement informatif", "text": "Vous déterminez, calendrier par calendrier, si un jour férié influence les heures &amp; majorations &mdash; ou n'apparaît que comme un rappel." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageLabel": "Règles de jours fériés",
+    "imageAlt": "Règles de jours fériés dans Klacks : jours fériés par nation et région – Allemagne, États-Unis (Alaska) ainsi que les cantons suisses de Lucerne, Jura, Glaris et Appenzell",
+    "imageCaption": "De vraies règles issues de Klacks : une liste combine les jours fériés de plusieurs pays et de cantons individuels &mdash; librement extensible."
+  },
   "solutions": {
     "title": "Comment Klacks soulage les entreprises suisses",
     "subtitle": "Du calcul automatique des majorations à votre propre infrastructure &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "gavel", "title": "Durée maximale de la semaine de travail surveillée automatiquement", "text": "Klacks connaît les seuils de 45h et 50h selon la branche ainsi que les différents seuils de majoration pour heures supplémentaires &mdash; à partir de la 60e heure supplémentaire de l'année pour le personnel de bureau et de vente, dès la première heure supplémentaire pour toutes les autres branches." },
-      { "icon": "bedtime", "title": "Temps de repos &amp; majoration de nuit calculés correctement", "text": "Le repos de 11 heures et le crédit-temps de 10 % pour le travail de nuit régulier dès la 25e nuit de l'année sont automatiquement intégrés à la planification &mdash; sous forme de temps libre, pas de versement." },
+      { "icon": "gavel", "title": "Durée maximale de la semaine de travail surveillée automatiquement", "text": "Klacks surveille en continu les limites hebdomadaires de 45h et 50h selon la branche et rend tout dépassement immédiatement visible &mdash; les seuils de majoration pour heures supplémentaires propres à chaque branche peuvent être enregistrés comme valeur de référence." },
+      { "icon": "bedtime", "title": "Temps de repos planifiés automatiquement, majoration de nuit documentée", "text": "Klacks intègre automatiquement le repos de 11 heures à la planification, et les heures de nuit soumises à majoration sont documentées &mdash; comme base du crédit-temps légal dès la 25e nuit de l'année." },
       { "icon": "route", "title": "Tournées &amp; interventions optimisées automatiquement", "text": "Klacks organise les interventions et les itinéraires de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; utilisable dans toutes les branches." },
       { "icon": "shield_lock", "title": "On-premise : pleine souveraineté des données", "text": "Klacks tourne sur votre propre infrastructure, vous choisissez vous-même le modèle d'IA &mdash; y compris hébergé localement, sans aucun transfert de données du personnel à l'étranger." },
       { "icon": "smart_toy", "title": "Klacksy : basé sur des règles, pas de boîte noire", "text": "L'assistant IA intégré Klacksy planifie sur commande vocale &mdash; de façon traçable, selon des compétences et règles définies, et non comme une décision d'IA opaque." },
@@ -40,7 +54,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Travail de nuit et durée maximale de la semaine, en un coup d'œil",
-    "text": "Klacks détecte automatiquement quand une intervention déclenche la majoration de nuit ou atteint la durée maximale de la semaine de travail, et propose aussitôt la compensation correspondante &mdash; sans calcul manuel."
+    "text": "Klacks détecte automatiquement quand une intervention déclenche la majoration de nuit ou atteint la durée maximale de la semaine de travail, et le rend immédiatement visible &mdash; sans calcul manuel."
   },
   "showRoutePlanning": false,
   "cta": {

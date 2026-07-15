@@ -26,6 +26,7 @@ public static class CountryIndustries
     private static readonly IReadOnlyList<string> CountriesWithIndustries = new[]
     {
         SwissCountryPageKey,
+        "land-at", "land-de", "land-fr", "land-it",
         "land-be", "land-gb", "land-ie", "land-no", "land-pl", "land-pt", "land-ro",
         "land-cz", "land-dk", "land-es", "land-fi", "land-gr", "land-nl", "land-se",
         "land-ae", "land-sa", "land-il", "land-jp", "land-kr", "land-cn",

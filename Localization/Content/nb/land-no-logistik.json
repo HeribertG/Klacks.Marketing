@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "For godstransport i Norge",
     "titleHtml": "Ruter, jus og <span class=\"text-secondary\">tariff samtidig.</span>",
-    "subtitle": "Klacks planlegger ruter og sjåfører &mdash; med minstelønnen som siden juni 2025 er utvidet til kjøretøy fra 2,5 tonn, og grunnlønnsøkningen fra Godsoverenskomsten-tariffoppgjøret 2026 automatisk lagt inn. Ruter optimeres automatisk.",
+    "subtitle": "Klacks planlegger ruter og sjåfører &mdash; med minstelønnen som siden juni 2025 er utvidet til kjøretøy fra 2,5 tonn, og grunnlønnsøkningen fra Godsoverenskomsten-tariffoppgjøret 2026 lagt inn som lønnssatser. Ruter optimeres automatisk.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for ruter og sjåføroppdrag i Norge",
     "screenshotLabel": "Tidslinje"
@@ -23,8 +23,8 @@
     "subtitle": "Fra den optimerte ruten til gjeldende tariff &mdash; alt spiller sammen.",
     "items": [
       { "icon": "route", "title": "Ruter automatisk optimert", "text": "Klacks legger stopp i den mest hensiktsmessige rekkefølgen &mdash; korte veier, overholdte tidsvinduer, mindre tomkjøring." },
-      { "icon": "payments", "title": "Minstelønn fra 2,5 tonn korrekt anvendt", "text": "Satsen på 229,00 NOK/time gjelder siden juni 2025 allerede for kjøretøy fra 2,5 tonn totalvekt, og er lagt inn i Klacks for alle berørte kjøretøyklasser." },
-      { "icon": "gavel", "title": "Godsoverenskomsten-tariff automatisk oppdatert", "text": "Grunnlønnsøkningen på 10,50 NOK/time fra tariffoppgjøret 2026, samt de bransjevanlige natt-, helge- og overtidstilleggene i henhold til Godsoverenskomsten, er lagt inn i Klacks." },
+      { "icon": "payments", "title": "Minstelønn fra 2,5 tonn lagt inn", "text": "Satsen på 229,00 NOK/time, som siden juni 2025 også gjelder for kjøretøy fra 2,5 tonn totalvekt, kan legges inn i Klacks som lønnssats for alle berørte kjøretøyklasser." },
+      { "icon": "gavel", "title": "Godsoverenskomsten-tariff lagt inn", "text": "Grunnlønnsøkningen på 10,50 NOK/time fra tariffoppgjøret 2026, samt de bransjevanlige natt- og helgetilleggene i henhold til Godsoverenskomsten, er lagt inn i Klacks; for overtid gjelder den høyeste konfigurerte tilleggssatsen." },
       { "icon": "badge", "title": "Riktige førerkortklasser", "text": "Klacks tildeler ruter bare til sjåfører med riktig førerkort &mdash; og varsler før et sertifikat utløper." },
       { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Planlegg morgendagens ruter, sjåfør Hansen er syk» er nok &mdash; Klacksy regner alt på nytt." },
       { "icon": "event_busy", "title": "Fravær raskt dekket", "text": "Faller en sjåfør fra, viser Klacks straks hvem som er kvalifisert og tilgjengelig." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Lettere kjøretøy, ny tariff, én plan",
-    "text": "Klacks gjenkjenner automatisk at også et 2,5-tonns kjøretøy siden juni 2025 faller inn under minstelønnsforskriften på 229,00 NOK/time, og anvender samtidig grunnlønnsøkningen fra Godsoverenskomsten-tariffoppgjøret 2026 på de berørte rutene &mdash; uten manuell etterberegning."
+    "text": "Du legger inn at også et 2,5-tonns kjøretøy siden juni 2025 faller inn under minstelønnsforskriften på 229,00 NOK/time &mdash; Klacks anvender satsen sammen med grunnlønnsøkningen fra Godsoverenskomsten-tariffoppgjøret 2026 automatisk på de berørte rutene &mdash; uten manuell etterberegning."
   },
   "showRoutePlanning": true,
   "cta": {

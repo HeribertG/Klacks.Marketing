@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Irland",
     "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der absoluten 60-Stunden-Wochengrenze, dem 48-Stunden-Durchschnitt über den Referenzzeitraum und der korrekt ausgewiesenen Period of Availability (POA) nach S.I. No. 2/2005. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der absoluten 60-Stunden-Wochengrenze, dem 48-Stunden-Durchschnitt über den Referenzzeitraum und der als eigener Status abbildbaren Period of Availability (POA) nach S.I. No. 2/2005. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Irland",
     "screenshotLabel": "Timeline"
@@ -13,8 +13,8 @@
     "eyebrow": "Der Logistik-Alltag in Irland",
     "title": "60-Stunden-Grenze, Referenzzeitraum und POA",
     "items": [
-      { "icon": "timer", "title": "Absolute 60-Stunden-Grenze pro Woche", "text": "S.I. No. 2/2005 setzt für mobile Arbeitskräfte im Strassentransport eine absolute Höchstgrenze von 60 Stunden in einer einzelnen Kalenderwoche &mdash; zusätzlich zur 48-Stunden-Durchschnittsgrenze." },
-      { "icon": "fact_check", "title": "48-Stunden-Durchschnitt über 4 Monate", "text": "Der Referenzzeitraum für die 48-Stunden-Durchschnittsgrenze beträgt standardmässig 4 Monate; eine Verlängerung auf 6 Monate ist nur per Kollektiv- oder Workforce Agreement möglich, nicht automatisch wie in anderen Branchen." },
+      { "icon": "timer", "title": "Absolute 60-Stunden-Grenze pro Woche", "text": "S.I. No. 2/2005 setzt für mobile Arbeitskräfte im Straßentransport eine absolute Höchstgrenze von 60 Stunden in einer einzelnen Kalenderwoche &mdash; zusätzlich zur 48-Stunden-Durchschnittsgrenze." },
+      { "icon": "fact_check", "title": "48-Stunden-Durchschnitt über 4 Monate", "text": "Der Referenzzeitraum für die 48-Stunden-Durchschnittsgrenze beträgt standardmäßig 4 Monate; eine Verlängerung auf 6 Monate ist nur per Kollektiv- oder Workforce Agreement möglich, nicht automatisch wie in anderen Branchen." },
       { "icon": "hourglass_top", "title": "Period of Availability (POA) korrekt erfassen", "text": "Wartezeiten an Grenzen oder bei Fährüberfahrten zählen als POA nicht zur 48-Stunden-Arbeitszeit, müssen aber erfasst und der Arbeitskraft vorab bekannt sein &mdash; von Hand ein Quell für Fehler." }
     ]
   },
@@ -24,16 +24,16 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "timer", "title": "60-Stunden- und 48-Stunden-Grenze überwacht", "text": "Klacks prüft nach S.I. No. 2/2005 sowohl die absolute 60-Stunden-Wochengrenze als auch die 48-Stunden-Durchschnittsgrenze über den 4-Monats-Referenzzeitraum in Echtzeit." },
-      { "icon": "hourglass_top", "title": "POA korrekt ausgewiesen", "text": "Klacks erfasst Perioden der Verfügbarkeit (POA) getrennt von der Arbeitszeit und sorgt dafür, dass sie der Arbeitskraft vorab bekannt sind." },
+      { "icon": "hourglass_top", "title": "POA sauber abbildbar", "text": "Perioden der Verfügbarkeit (POA) lassen sich in Klacks als eigener Status getrennt von der Arbeitszeit einrichten, sodass sie im Dienstplan sichtbar und der Arbeitskraft vorab bekannt sind." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Touren- und Fahrerdaten verlassen Ihr Haus nicht, auch nicht zur KI." },
-      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Murphy ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive POA." }
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Murphy ist krank“ genügt &mdash; Klacksy rechnet alles neu und berücksichtigt den eingerichteten POA-Status mit." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und POA übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren optimiert, Lenkzeiten überwacht und POA als eigenen Status abbildet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

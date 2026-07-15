@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "面向中国物流与运输行业",
-    "titleHtml": "行车路线规划,<span class=\"text-secondary\">驾驶时间永不超限。</span>",
+    "titleHtml": "行车路线规划,<span class=\"text-secondary\">驾驶时间尽在掌控。</span>",
     "subtitle": "Klacks 依据防止疲劳驾驶的4小时/20分钟规则,实时监控连续驾驶时间与休息时长 &mdash; 并将货运与仅适用于客运、自2026年6月1日起施行的新规则清晰区分开来。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 中国车队行车路线与司机排班时间轴视图",
@@ -23,7 +23,7 @@
     "subtitle": "从自动监控驾驶时间到优化行车路线 &mdash; 环环相扣,浑然一体。",
     "items": [
       { "icon": "timer", "title": "自动监控4小时/20分钟规则", "text": "Klacks 实时监控连续驾驶时间与休息时长,并在即将违规前发出预警。" },
-      { "icon": "gavel", "title": "避免被记分处罚", "text": "Klacks 会主动规避可能导致货运车辆每违反一次被记3分的行车安排。" },
+      { "icon": "gavel", "title": "记分风险一目了然", "text": "Klacks 会在行车安排可能导致货运车辆每违反一次被记3分之前发出预警 &mdash; 以便在发车前及时调整。" },
       { "icon": "rule", "title": "货运与客运清晰区分", "text": "Klacks 会自动适用正确的规则 &mdash; 货运车辆适用4小时/20分钟规则,自2026年6月1日起施行的新8小时/24小时规定仅适用于客运。" },
       { "icon": "route", "title": "自动优化行车路线", "text": "Klacks 将各个停靠点安排为最合理的顺序 &mdash; 路程更短、时间窗口不延误、空驶更少。" },
       { "icon": "shield_lock", "title": "本地部署:司机与客户数据不出境", "text": "Klacks 运行在您自有的基础设施上。人员和客户数据始终不会离开中国 &mdash; 因此无需再进行PIPL规定的数据出境安全评估。" },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "实例",
     "title": "长途行车,一目了然",
-    "text": "Klacks 会自动识别司机即将达到4小时驾驶时间上限,并同步安排好规定的20分钟休息 &mdash; 对货运车辆适用成熟的4小时/20分钟规则,而非2026年才开始适用于客运的8小时/24小时新规定。"
+    "text": "Klacks 会在司机即将接近4小时驾驶时间上限时进行识别,并及时预警,以便安排规定的20分钟休息 &mdash; 对货运车辆适用成熟的4小时/20分钟规则,而非2026年才开始适用于客运的8小时/24小时新规定。"
   },
   "showRoutePlanning": true,
   "cta": {

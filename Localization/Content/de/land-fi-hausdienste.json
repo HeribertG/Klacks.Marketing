@@ -22,10 +22,10 @@
     "title": "Wie Klacks finnische Reinigungsdienste entlastet",
     "subtitle": "Von der optimierten Route bis zum korrekt hinterlegten Mindestlohn &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Velo oder zu Fuss." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
       { "icon": "payments", "title": "Mindestlohn &amp; TES-Erhöhung hinterlegt", "text": "Der Mindeststundenlohn von 13,22 € (Vaativuusryhmä 2) ist ebenso hinterlegt wie die zum 1.8.2026 greifende Erhöhung der Tabellenlöhne um 2,7 %." },
-      { "icon": "schedule", "title": "Schichtzuschläge automatisch berechnet", "text": "Klacks bucht Abendzuschlag (0,73 €/h), Nachtzuschlag (1,36 €/h) und den gesetzlichen Sonntagszuschlag (100 %) automatisch &mdash; auch bei geteilten Einsätzen." },
-      { "icon": "bedtime", "title": "Ruhezeit &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und stellt den Ausgleich innerhalb der 14-Tage-Frist sicher." },
+      { "icon": "schedule", "title": "Sonntagszuschlag automatisch, feste Zuschläge hinterlegt", "text": "Klacks erkennt Abend- und Nachteinsätze automatisch und bucht den gesetzlichen Sonntagszuschlag (100 %) direkt &mdash; die festen TES-Sätze (0,73 €/h Abend, 1,36 €/h Nacht) hinterlegen Sie als Referenzwerte für Ihre Abrechnung, auch bei geteilten Einsätzen." },
+      { "icon": "bedtime", "title": "Ruhezeit &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und behält den Ausgleich innerhalb der 14-Tage-Frist im Blick." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Zuschläge." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Abend-, Nacht- und Sonntagseinsatz, ein Plan",
-    "text": "Klacks erkennt Abend- und Nachteinsätze automatisch, bucht die Zuschläge von 0,73 €/h und 1,36 €/h korrekt und rechnet Sonntagsarbeit mit dem gesetzlichen 100-%-Zuschlag ab &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt Abend- und Nachteinsätze automatisch, hinterlegt die TES-Sätze von 0,73 €/h und 1,36 €/h als Referenzwerte und rechnet Sonntagsarbeit mit dem gesetzlichen 100-%-Zuschlag automatisch ab &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

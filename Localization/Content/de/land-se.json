@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Schwedischer Datenschutz",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">Kollektivavtal und Arbetstidslagen automatisch einhalten.</span>",
-    "subtitle": "Klacks erkennt automatisch, welche Kollektivavtal-Abweichungen von der Arbetstidslagen (ATL) für Ihren Betrieb gelten, hält Überstundengrenzen und dygnsvila ein und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von der IMY beanstandete biometrische Zeiterfassung.",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">Kollektivavtal und Arbetstidslagen automatisch überwachen.</span>",
+    "subtitle": "Klacks lässt sich auf die für Ihren Betrieb geltenden Kollektivavtal-Abweichungen von der Arbetstidslagen (ATL) einstellen, überwacht Überstundengrenzen und dygnsvila und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von der IMY beanstandete biometrische Zeiterfassung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für schwedische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -23,8 +23,8 @@
     "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "gavel", "title": "Kollektivavtal-Abweichungen hinterlegt", "text": "Klacks lässt sich auf die im jeweiligen Kollektivavtal vereinbarten Abweichungen von der ATL einstellen, statt starr die gesetzlichen Grundwerte anzuwenden." },
-      { "icon": "timer", "title": "Überstundengrenzen automatisch überwacht", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 werden automatisch mitgeführt." },
-      { "icon": "bedtime", "title": "Dygnsvila &amp; Nachtfenster eingehalten", "text": "Die 11-stündige zusammenhängende Ruhezeit inklusive des Fensters Mitternacht bis 05:00 Uhr nach ATL § 13 plant Klacks automatisch mit ein." },
+      { "icon": "timer", "title": "Überstundengrenzen laufend sichtbar", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 hält Klacks laufend sichtbar &mdash; so steuern Sie rechtzeitig gegen." },
+      { "icon": "bedtime", "title": "Dygnsvila &amp; Nachtfenster im Blick", "text": "Die 11-stündige zusammenhängende Ruhezeit nach ATL § 13 plant Klacks automatisch mit ein &mdash; das Fenster Mitternacht bis 05:00 Uhr bleibt dabei im Plan sichtbar." },
       { "icon": "route", "title": "Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Touren so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "how_to_reg", "title": "Zeiterfassung ohne Biometrie", "text": "Klacks kommt ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das von der IMY beanstandete Einwilligungsproblem bei biometrischen Daten im Arbeitsverhältnis." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet." }
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila und Überstundengrenze, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht das Fenster Mitternacht bis 05:00 Uhr innerhalb der dygnsvila verletzt oder die Jahresgrenze von 200 Überstunden erreicht ist, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt automatisch, wenn eine Schicht die 11-Stunden-dygnsvila unterschreiten würde, und hält die Jahressumme gegen die 200-Überstunden-Grenze laufend sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Kollektivavtal-Regeln, dygnsvila und Überstundengrenzen automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Kollektivavtal-Regeln hinterlegt, dygnsvila prüft und Überstundengrenzen sichtbar macht &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

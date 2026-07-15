@@ -11,10 +11,10 @@
   },
   "challenges": {
     "eyebrow": "Der Alltag in der häuslichen Pflege in Thailand",
-    "title": "Pausenpflicht, 36h-Limit und unregelmässige Schichten",
+    "title": "Pausenpflicht, 36h-Limit und unregelmäßige Schichten",
     "items": [
-      { "icon": "hourglass_top", "title": "1-Stunden-Pause nach 5 Stunden Pflege", "text": "Nach höchstens 5 aufeinanderfolgenden Arbeitsstunden bei Patient:innen (Phu Dulae Phu Sung Ayu) muss eine zusammenhängende Pause von mind. 1 Stunde eingehalten und dokumentiert werden (Section 27) &mdash; bei wechselnden, unregelmässigen Pflegeschichten von Hand schwer zu überblicken." },
-      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstösse können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." },
+      { "icon": "hourglass_top", "title": "1-Stunden-Pause nach 5 Stunden Pflege", "text": "Nach höchstens 5 aufeinanderfolgenden Arbeitsstunden bei Patient:innen (Phu Dulae Phu Sung Ayu) muss eine zusammenhängende Pause von mind. 1 Stunde eingehalten und dokumentiert werden (Section 27) &mdash; bei wechselnden, unregelmäßigen Pflegeschichten von Hand schwer zu überblicken." },
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstöße können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." },
       { "icon": "fingerprint", "title": "PDPA bei sensiblen Patientendaten", "text": "Biometrische Zeiterfassung gilt nach Section 26 PDPA als sensible personenbezogene Daten &mdash; bei Pflegekräften mit Zugriff auf Patientendaten ein doppelt sensibles Thema." }
     ]
   },
@@ -23,10 +23,10 @@
     "subtitle": "Von der automatischen Pausenreservierung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Pflegeeinsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden." },
-      { "icon": "hourglass_top", "title": "1-Stunden-Pause verlässlich dokumentiert", "text": "Klacks reserviert die gesetzliche Pause nach maximal 5 Arbeitsstunden automatisch im Pflegeraster und dokumentiert sie &mdash; auch bei wechselnden, unregelmässigen Schichten (Section 27)." },
-      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Pflegekraft live und sperrt die Planung, bevor das 36-Stunden-Limit nach Section 26 überschritten wird." },
+      { "icon": "hourglass_top", "title": "1-Stunden-Pause verlässlich dokumentiert", "text": "Klacks reserviert die gesetzliche Pause nach maximal 5 Arbeitsstunden automatisch im Pflegeraster und dokumentiert sie &mdash; auch bei wechselnden, unregelmäßigen Schichten (Section 27)." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Pflegekraft live und warnt rechtzeitig, bevor das 36-Stunden-Limit nach Section 26 überschritten wird." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und biometrische Zeiterfassungsdaten nach PDPA verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und Personaldaten nach PDPA verlassen Ihr Haus nicht &mdash; auch nicht zur KI. Eine eigene biometrische Zeiterfassung führt Klacks nicht." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

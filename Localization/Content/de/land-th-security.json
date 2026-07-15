@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Thailand",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Überstunde korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte und 12-Stunden-Schichten lückenlos und deckelt Überstunden automatisch auf das gesetzliche 36-Stunden-Wochenlimit &mdash; On-Premise, damit Ihre Einsatz- und Personaldaten bei Ihnen bleiben.",
+    "subtitle": "Klacks besetzt Objekte und 12-Stunden-Schichten lückenlos und überwacht Überstunden live gegen das gesetzliche 36-Stunden-Wochenlimit &mdash; On-Premise, damit Ihre Einsatz- und Personaldaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten in Thailand",
     "screenshotLabel": "Timeline"
@@ -24,8 +24,8 @@
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "schedule", "title": "12h-Schichten korrekt verrechnet", "text": "Klacks trennt die 8 Stunden reguläre Arbeitszeit von den 4 Stunden Überstunde und weist automatisch den 1,5-fachen Satz zu (Section 61)." },
-      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert die Überstunden pro Wachperson live und sperrt die Planung, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und schützt so vor dem Strafrahmen nach Section 144." },
-      { "icon": "event_available", "title": "Ruhetag-Abstand automatisch eingehalten", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und stellt sicher, dass zwischen zwei Ruhetagen nie mehr als 6 Tage liegen (Section 28)." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Wachperson live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar." },
+      { "icon": "event_available", "title": "Ruhetag-Abstand automatisch überwacht", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)." },
       { "icon": "verified", "title": "Lizenzen automatisch geprüft", "text": "Klacks teilt Posten nur Wachleuten mit gültiger persönlicher Lizenz zu &mdash; und warnt, bevor ein Nachweis abläuft." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Lizenz, Verfügbarkeit und das 36-Stunden-Limit." }
     ]

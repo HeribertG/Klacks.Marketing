@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Pro nemocnice &amp; kliniky v Česku",
     "titleHtml": "Rozpisy směn, které <span class=\"text-secondary\">fungují nepřetržitě.</span>",
-    "subtitle": "Klacks plánuje 24hodinové služby včetně povinné navazující 22hodinové doby odpočinku a hlídá roční limit 416 hodin přesčasů od doby, kdy ve zdravotnictví v roce 2024 zanikla dřívější zvláštní výjimka. On-premise, takže data pacientů nikdy neopustí vaši nemocnici.",
+    "subtitle": "Klacks plánuje 24hodinové služby, automaticky zobrazuje povinnou navazující 22hodinovou dobu odpočinku a hlídá roční limit 416 hodin přesčasů od doby, kdy ve zdravotnictví v roce 2024 zanikla dřívější zvláštní výjimka. On-premise, takže data pacientů nikdy neopustí vaši nemocnici.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Mřížka rozpisu směn Klacks pro nemocnice a kliniky v Česku",
     "screenshotLabel": "Rozpis směn"
@@ -22,9 +22,9 @@
     "title": "Jak Klacks ulehčuje práci nemocnicím v Česku",
     "subtitle": "Od 24hodinové služby až po limit 416 hodin &mdash; vše do sebe zapadá.",
     "items": [
-      { "icon": "bedtime", "title": "22hodinová doba odpočinku naplánována automaticky", "text": "Klacks po každé 24hodinové službě automaticky zablokuje povinnou 22hodinovou dobu odpočinku, než může začít další směna." },
-      { "icon": "gavel", "title": "Limit 416 hodin pod kontrolou", "text": "Klacks automaticky sleduje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; návrat ke staré zvláštní úpravě není potřeba." },
-      { "icon": "payments", "title": "Příplatek za přesčasy správně vypočítán", "text": "Klacks počítá zákonný příplatek za přesčasy ve výši nejméně 25 % jednotně, bez ohledu na denní dobu nebo počet hodin ve službě." },
+      { "icon": "bedtime", "title": "22hodinová doba odpočinku uložena jako pravidlo", "text": "Povinnou 22hodinovou dobu odpočinku po 24hodinové službě si uložíte jako pravidlo doby odpočinku &mdash; Klacks upozorní, než by další směna začala příliš brzy." },
+      { "icon": "gavel", "title": "Limit 416 hodin pod kontrolou", "text": "Klacks průběžně zobrazuje jak 150hodinový limit pro nařízené přesčasy, tak absolutní roční limit 416 hodin &mdash; návrat ke staré zvláštní úpravě není potřeba." },
+      { "icon": "payments", "title": "Přesčasy transparentně dokumentovány", "text": "Klacks jednotně dokumentuje každou přesčasovou hodinu, bez ohledu na denní dobu nebo počet hodin ve službě &mdash; čistý základ pro zákonný příplatek ve výši nejméně 25 %." },
       { "icon": "verified", "title": "Oddělení &amp; kvalifikace sladěny", "text": "Každá služba je přidělena pouze osobám s odpovídající kvalifikací &mdash; napříč všemi odděleními." },
       { "icon": "shield_lock", "title": "On-premise: data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální data i data pacientů neopustí kliniku &mdash; ani směrem k AI." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplň 24hodinovou službu interny na příští týden“ stačí &mdash; Klacksy zohlední kvalifikaci i dobu odpočinku." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "24hodinová služba, doba odpočinku, roční limit",
-    "text": "Po 24hodinové službě Klacks automaticky naplánuje 22hodinovou dobu odpočinku a zároveň hlídá roční limit 416 hodin přesčasů &mdash; bez ručního přepočítávání."
+    "text": "Po 24hodinové službě se uplatní uložené pravidlo 22hodinové doby odpočinku &mdash; Klacks upozorní na příliš brzy naplánovanou další směnu a zároveň zobrazuje roční limit 416 hodin přesčasů &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": false,
   "cta": {

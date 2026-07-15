@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pro logistiku &amp; dopravu v Česku",
     "titleHtml": "Trasy, doby řízení, termíny &mdash; <span class=\"text-secondary\">všechno pod kontrolou.</span>",
-    "subtitle": "Klacks bezezbytku dokumentuje doby řízení a pracovní doby pro 56denní povinnost dokladování, kontroluje jednotlivý 60hodinový týden v rámci 26týdenního průměru a čistě odděluje sjednanou pracovní pohotovost od skutečných výjezdů. Trasy jsou automaticky optimalizované.",
+    "subtitle": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby jako doplněk k záznamům tachografu pro 56denní povinnost dokladování, kontroluje jednotlivý 60hodinový týden v rámci 26týdenního průměru a čistě odděluje sjednanou pracovní pohotovost od skutečných výjezdů. Trasy jsou automaticky optimalizované.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro trasy a nasazení řidičů v Česku",
     "screenshotLabel": "Časová osa"
@@ -23,8 +23,8 @@
     "subtitle": "Od optimalizované trasy až po čistě oddělenou pracovní pohotovost &mdash; vše do sebe zapadá.",
     "items": [
       { "icon": "route", "title": "Trasy automaticky optimalizované", "text": "Klacks seřadí zastávky do nejsmysluplnějšího pořadí &mdash; krátké cesty, dodržená časová okna, méně jízd naprázdno." },
-      { "icon": "fact_check", "title": "56denní doklad vždy po ruce", "text": "Klacks bezezbytku dokumentuje doby řízení a pracovní doby a má je kdykoli připravené k dispozici pro kontrolní den i předchozích 56 dní." },
-      { "icon": "schedule", "title": "60hodinový týden kontrolován v 26týdenním průměru", "text": "Klacks umožňuje jednotlivé 60hodinové týdny, ale automaticky kontroluje průměr za 26 týdnů i 10hodinový limit u nočních směn." },
+      { "icon": "fact_check", "title": "Doba služby bezezbytku dokumentována", "text": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby a má je kdykoli připravené k dispozici &mdash; jako doplněk k samostatně předkládaným záznamům tachografu pro 56denní povinnost dokladování." },
+      { "icon": "schedule", "title": "60hodinový týden kontrolován v 26týdenním průměru", "text": "Klacks umožňuje jednotlivé 60hodinové týdny, automaticky hlídá 10hodinový limit u nočních směn a průběžně zobrazuje hodinovou základnu pro 26týdenní průměr." },
       { "icon": "call", "title": "Pracovní pohotovost čistě oddělená", "text": "Klacks automaticky rozlišuje mezi sjednanou pracovní pohotovostí (10% příplatek) a skutečným výjezdem, který se ihned počítá jako přesčas." },
       { "icon": "shield_lock", "title": "On-premise: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o trasách i řidičích zůstávají u vás, a to i u AI funkcí." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplánuj trasy na zítra, řidič Novák je nemocný“ stačí &mdash; Klacksy vše přepočítá." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "56 dní, 60hodinový týden, pracovní pohotovost",
-    "text": "Klacks má připravené záznamy tachografu za posledních 56 dní, automaticky kontroluje jednotlivý 60hodinový týden proti 26týdennímu průměru a skutečně čerpanou pracovní pohotovost rovnou počítá jako přesčas &mdash; bez ručního přepočítávání."
+    "text": "Klacks bezezbytku dokumentuje dobu služby za posledních 56 dní jako doplněk k záznamům tachografu, průběžně zobrazuje hodinovou základnu pro 26týdenní průměr a skutečně čerpanou pracovní pohotovost rovnou počítá jako přesčas &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {

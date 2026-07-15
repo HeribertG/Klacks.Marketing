@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Pencatatan Waktu Sesuai UU PDP",
     "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
-    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan, dan berjalan On-Premise &mdash; sehingga data biometrik untuk pencatatan waktu, yang oleh UU PDP dikategorikan sebagai data pribadi yang wajib dilindungi secara khusus, tetap berada di infrastruktur Anda sendiri.",
+    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan, dan berjalan On-Premise &mdash; sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
@@ -37,7 +37,7 @@
       {
         "icon": "hourglass_top",
         "title": "Batas 18 jam per minggu dipantau otomatis",
-        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan persetujuan tertulis."
+        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan pengingat mengenai persetujuan tertulis yang diwajibkan."
       },
       {
         "icon": "calculate",
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "On-Premise: data biometrik tetap di dalam perusahaan",
-        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; termasuk yang di-hosting secara lokal, tanpa perlu mengirim data biometrik pencatatan waktu yang sensitif ke luar negeri."
+        "title": "On-Premise: data personel tetap di dalam perusahaan",
+        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; termasuk yang di-hosting secara lokal, tanpa perlu mengirim data personel dan perencanaan yang sensitif ke luar negeri."
       },
       {
         "icon": "smart_toy",

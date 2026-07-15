@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Sumber Terbuka &middot; On-Premise &middot; Perlindungan Data Malaysia (PDPA)",
     "titleHtml": "Penjadualan kakitangan yang <span class=\"text-secondary\">anda kekal mengawal.</span>",
-    "subtitle": "Klacks memantau minggu kerja 45 jam di bawah Employment Act 1955 secara automatik, mengasingkan kadar lebih masa bertingkat dengan tepat dan berjalan secara on-premise &mdash; supaya data cap jari/pengecaman wajah untuk kehadiran, yang diiktiraf secara jelas sebagai data peribadi sensitif sejak pindaan PDPA 2024 (Act A1727), kekal dalam infrastruktur syarikat anda sendiri.",
+    "subtitle": "Klacks memantau minggu kerja 45 jam di bawah Employment Act 1955 secara automatik, mengasingkan kadar lebih masa bertingkat dengan tepat dan berjalan secara on-premise &mdash; supaya data kakitangan dan data perancangan anda kekal dalam infrastruktur syarikat anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Papar keseluruhan jadual kerja Klacks untuk syarikat di Malaysia",
     "screenshotLabel": "Jadual Kerja"
@@ -25,7 +25,7 @@
       { "icon": "gavel", "title": "Minggu kerja 45 jam dipantau automatik", "text": "Klacks mengetahui had 45 jam daripada Section 60A (sejak 1.1.2023) serta had harian 8 jam (9 jam bagi minggu bekerja 5 hari) &mdash; setiap jam yang dijadualkan melebihi had ini ditanda secara automatik sebagai lebih masa." },
       { "icon": "paid", "title": "Elaun 1.5x/2.0x/3.0x diasingkan secara automatik", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dikira mengikut kadar yang betul masing-masing &mdash; termasuk had gaji RM4,000, apabila dilepasi peruntukan elaun Section 60/60A/60C/60D/60J tidak lagi terpakai." },
       { "icon": "schedule", "title": "Spread-over dan had bulanan sentiasa dipantau", "text": "Had spread-over 10 jam daripada permulaan kerja pertama hingga waktu pulang (Section 60A(1)), had siling 12 jam sehari dan had lebih masa bulanan 104 jam (Employment (Limitation of Overtime Work) Regulations 1980) dipantau secara automatik, begitu juga rehat 30 minit selepas 5 jam berturut-turut." },
-      { "icon": "shield_lock", "title": "On-Premise: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kehadiran biometrik, yang menjadi data PDPA sensitif sejak Act A1727/2024, tidak pernah keluar daripada premis anda." },
+      { "icon": "shield_lock", "title": "On-Premise: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kakitangan dan data perancangan anda tidak pernah keluar daripada premis anda." },
       { "icon": "smart_toy", "title": "Klacksy: berasaskan peraturan, bukan kotak hitam", "text": "Pembantu AI bersepadu, Klacksy, menjadualkan melalui arahan suara/teks &mdash; boleh dijejaki mengikut kemahiran dan peraturan yang ditetapkan, bukan keputusan AI yang tidak telus." },
       { "icon": "event_busy", "title": "Ketidakhadiran diselesaikan dengan pantas", "text": "Jika seseorang tidak dapat hadir, Klacks segera menunjukkan siapa yang layak dan tersedia &mdash; tanpa perlu merombak keseluruhan jadual." }
     ]

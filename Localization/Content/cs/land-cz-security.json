@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Pro bezpečnostní služby &amp; ostrahu v Česku",
     "titleHtml": "Každé stanoviště obsazené. <span class=\"text-secondary\">Každé pravidlo dodrženo.</span>",
-    "subtitle": "Klacks automaticky omezuje noční směny na 8 hodin za 24 hodin, dodržuje třídenní lhůtu pro oznámení i příplatky pro dohodáře a čistě naplánuje zkrácenou denní dobu odpočinku. On-premise, takže data o výjezdech zůstávají u vás.",
+    "subtitle": "Klacks průběžně hlídá 8hodinový limit nočních směn za 24 hodin, zobrazuje třídenní lhůtu pro oznámení dohodářům, automaticky jim přiřazuje příplatky a upozorní na zkrácenou denní dobu odpočinku, pokud chybí vyrovnání v následující době odpočinku. On-premise, takže data o výjezdech zůstávají u vás.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro obsazení objektů a směny v bezpečnostním sektoru v Česku",
     "screenshotLabel": "Časová osa"
@@ -23,9 +23,9 @@
     "subtitle": "Od bezezbytkového obsazení stanovišť až po zkrácenou dobu odpočinku &mdash; vše do sebe zapadá.",
     "items": [
       { "icon": "shield", "title": "Objekty &amp; stanoviště bez mezer", "text": "Každé stanoviště napříč všemi objekty &mdash; Klacks okamžitě zobrazí každé neobsazené místo a na přání ho automaticky vyplní." },
-      { "icon": "nightlight", "title": "8hodinový noční limit automaticky kontrolován", "text": "Klacks rozpozná noční směny mezi 22:00 a 6:00 hodinou a automaticky omezí délku směny na 8 hodin za 24 hodin, s výjimkou přípustného 26týdenního průměru." },
-      { "icon": "groups", "title": "DPP/DPČ správně zohledněny", "text": "Klacks dodržuje třídenní lhůtu pro oznámení a automaticky počítá noční a víkendový příplatek pro dohodáře." },
-      { "icon": "bedtime", "title": "Zkrácená doba odpočinku čistě vyrovnaná", "text": "Je-li denní doba odpočinku zkrácena na 8 hodin, Klacks automaticky naplánuje odpovídající vyrovnání v následující době odpočinku." },
+      { "icon": "nightlight", "title": "8hodinový noční limit hlídán", "text": "Klacks automaticky rozpozná noční směny a upozorní, jakmile délka směny překročí 8 hodin za 24 hodin &mdash; hodinovou základnu pro přípustný 26týdenní průměr přitom rovnou dokumentuje." },
+      { "icon": "groups", "title": "DPP/DPČ správně zohledněny", "text": "Klacks zobrazuje třídenní lhůtu pro oznámení a automaticky přiřazuje noční a víkendový příplatek dohodářům." },
+      { "icon": "bedtime", "title": "Zkrácená doba odpočinku pod kontrolou", "text": "Je-li denní doba odpočinku zkrácena na 8 hodin, Klacks zobrazí potřebné vyrovnání v následující době odpočinku a upozorní, pokud chybí." },
       { "icon": "shield_lock", "title": "On-premise: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o výjezdech i zákaznících zůstávají u vás, a to i u AI funkcí." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Obsaď noční směnu pro objekt Sever“ stačí &mdash; Klacksy zkontroluje délku směny, dobu odpočinku i dostupnost." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "Noční směna, dohodář, jeden plán",
-    "text": "Klacks automaticky omezí noční směnu na 8 hodin, oznámí rozpis směn dohodářům nejméně 3 dny předem a rovnou spočítá noční i víkendový příplatek &mdash; bez ručního přepočítávání."
+    "text": "Klacks upozorní, jakmile noční směna překročí 8 hodin, zobrazí třídenní lhůtu pro dohodáře a rovnou přiřadí noční a víkendový příplatek &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {

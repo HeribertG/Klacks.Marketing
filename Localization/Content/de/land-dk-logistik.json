@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Transport &amp; Logistik in Dänemark",
     "titleHtml": "Touren, Nachtfenster, Tarifstufen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der 10-Stunden-Grenze bei Nachtarbeit nach Bilag 23 und der zum 1. März 2026 steigenden Tarifstufe der Transport- og Logistikoverenskomst automatisch berücksichtigt.",
+    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der 10-Stunden-Grenze bei Nachtarbeit nach Bilag 23 im Blick und der zum 1. März 2026 steigenden Tarifstufe der Transport- og Logistikoverenskomst konfigurierbar hinterlegt.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Dänemark",
     "screenshotLabel": "Timeline"
@@ -42,12 +42,12 @@
       {
         "icon": "timer",
         "title": "10-Stunden-Grenze bei Nachtarbeit überwacht",
-        "text": "Klacks erkennt automatisch, wenn eine Schicht das Nachtfenster nach Bilag 23 berührt, und hält die 10-Stunden-Grenze ein &mdash; auch bei einem abweichend vereinbarten 4-Stunden-Fenster."
+        "text": "Das Nachtfenster nach Bilag 23 lässt sich hinterlegen, und Klacks warnt, bevor die 10-Stunden-Grenze überschritten wird &mdash; auch bei einem abweichend vereinbarten 4-Stunden-Fenster."
       },
       {
         "icon": "payments",
-        "title": "Neue Tarifstufe automatisch hinterlegt",
-        "text": "Die Lohnerhöhung und die auf 10% steigende Freizeitkonto-Sonderersparnis zum 1. März 2026 sind in Klacks hinterlegt."
+        "title": "Neue Tarifstufe mit Gültigkeitsdatum hinterlegt",
+        "text": "Die Lohnerhöhung zum 1. März 2026 lässt sich mit Gültigkeitsdatum vorab hinterlegen; die auf 10% steigende Freizeitkonto-Sonderersparnis (fritvalgskonto) bleibt Sache Ihrer Lohnbuchhaltung, für die Klacks die Stundenbasis liefert."
       },
       {
         "icon": "badge",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtfenster und Tarifstufe, ein Plan",
-    "text": "Klacks erkennt automatisch, wenn eine Tour das Nachtfenster nach Bilag 23 berührt, hält die 10-Stunden-Grenze ein und wendet die zum 1. März 2026 steigende Tarifstufe automatisch an &mdash; ohne Nachrechnen von Hand."
+    "text": "Das Nachtfenster nach Bilag 23 lässt sich für die Tour hinterlegen, Klacks warnt vor der 10-Stunden-Grenze und wendet die zum 1. März 2026 steigende Tarifstufe an &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

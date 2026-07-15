@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (Pază și Securitate) in Rumänien",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Keine 24/24-Schicht.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der maximalen 12-Stunden-Schicht und der zwingenden 24-Stunden-Ruhezeit danach automatisch berücksichtigt. Unzulässige 24/24-Dauerschichten entstehen so gar nicht erst.",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">24/24-Schichten sofort erkannt.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der maximalen 12-Stunden-Schicht und der zwingenden 24-Stunden-Ruhezeit danach automatisch berücksichtigt und live überwacht. Unzulässige 24/24-Dauerschichten werden so sofort sichtbar.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Rumänien",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "schedule",
-        "title": "12-Stunden-Grenze &amp; 24-Stunden-Ruhezeit erzwungen",
-        "text": "Klacks lässt keine Schicht über 12 Stunden zu und plant danach zwingend die 24-Stunden-Ruhezeit mit ein &mdash; 24/24-Dauerschichten sind so ausgeschlossen."
+        "title": "12-Stunden-Grenze &amp; 24-Stunden-Ruhezeit überwacht",
+        "text": "Klacks warnt, sobald eine Schicht die 12-Stunden-Grenze überschreitet, und plant danach automatisch die 24-Stunden-Ruhezeit mit ein &mdash; so werden 24/24-Dauerschichten sofort sichtbar."
       },
       {
         "icon": "swap_horiz",
@@ -57,7 +57,7 @@
       {
         "icon": "verified",
         "title": "Zertifikate automatisch geprüft",
-        "text": "Klacks teilt Einsätze nur Personal mit gültigem Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft."
+        "text": "Klacks teilt Einsätze passend qualifiziertem Personal zu &mdash; und warnt, bevor ein Ausweis abläuft."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "12-Stunden-Schicht, 24-Stunden-Ruhe, ein Plan",
-    "text": "Klacks erzwingt automatisch die 24-Stunden-Ruhezeit nach jeder 12-Stunden-Schicht und verhindert so unzulässige 24/24-Dauerschichten &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks plant automatisch die 24-Stunden-Ruhezeit nach jeder 12-Stunden-Schicht ein und macht unzulässige 24/24-Dauerschichten sofort sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Til transport &amp; logistik i Danmark",
     "titleHtml": "Ruter, nattevindue, overenskomsttrin &mdash; <span class=\"text-secondary\">alt under kontrol.</span>",
-    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med 10-timers-grænsen ved natarbejde efter Bilag 23 og det overenskomsttrin i Transport- og Logistikoverenskomsten, der stiger pr. 1. marts 2026, automatisk taget i betragtning.",
+    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med 10-timers-grænsen ved natarbejde efter Bilag 23 i syne og det overenskomsttrin i Transport- og Logistikoverenskomsten, der stiger pr. 1. marts 2026, konfigurerbart lagt ind.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for ruter og chaufførindsatser i Danmark",
     "screenshotLabel": "Timeline"
@@ -42,12 +42,12 @@
       {
         "icon": "timer",
         "title": "10-timers-grænse ved natarbejde overvåget",
-        "text": "Klacks genkender automatisk, når en vagt berører nattevinduet efter Bilag 23, og overholder 10-timers-grænsen &mdash; også ved et afvigende aftalt 4-timers-vindue."
+        "text": "Nattevinduet efter Bilag 23 kan registreres, og Klacks advarer, før 10-timers-grænsen overskrides &mdash; også ved et afvigende aftalt 4-timers-vindue."
       },
       {
         "icon": "payments",
-        "title": "Nyt overenskomsttrin lagt ind automatisk",
-        "text": "Lønstigningen og fritvalgskontoen, der stiger til 10% pr. 1. marts 2026, er lagt ind i Klacks."
+        "title": "Nyt overenskomsttrin lagt ind med gyldighedsdato",
+        "text": "Lønstigningen pr. 1. marts 2026 kan forudregistreres med gyldighedsdato; fritvalgskontoen, der stiger til 10%, forbliver jeres lønbogholderis opgave, som Klacks leverer timegrundlaget for."
       },
       {
         "icon": "badge",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nattevindue og overenskomsttrin, én plan",
-    "text": "Klacks genkender automatisk, når en rute berører nattevinduet efter Bilag 23, overholder 10-timers-grænsen og anvender automatisk det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
+    "text": "Nattevinduet efter Bilag 23 kan registreres for ruten, Klacks advarer om 10-timers-grænsen og anvender det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": true,
   "cta": {

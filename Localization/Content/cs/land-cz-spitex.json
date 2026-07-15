@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pro domácí péči &amp; pečovatelskou službu v Česku",
     "titleHtml": "Více času na péči, <span class=\"text-secondary\">méně na administrativu.</span>",
-    "subtitle": "Klacks přiděluje výjezdy podle absolvovaného kvalifikačního kurzu pro nové kompetence od 1. července 2026, automaticky dodržuje limit 3 osob pro pracovníky sociální péče platný od 1. 1. 2026 a rozlišuje noční příplatek podle formy zřizovatele. On-premise, takže data pacientů nikdy neopustí vaši organizaci.",
+    "subtitle": "Klacks přiděluje výjezdy podle absolvovaného kvalifikačního kurzu pro nové kompetence od 1. července 2026, zobrazuje v plánu limit 3 osob pro pracovníky sociální péče platný od 1. 1. 2026 a promítá noční příplatek podle formy zřizovatele jako uloženou sazbu. On-premise, takže data pacientů nikdy neopustí vaši organizaci.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro plánování tras v domácí péči v Česku",
     "screenshotLabel": "Časová osa"
@@ -24,8 +24,8 @@
     "items": [
       { "icon": "route", "title": "Trasy automaticky optimalizované", "text": "Klacks navrhuje trasy výjezdů tak, aby cesty byly krátké a časová okna dodržená &mdash; pro auto, kolo i pěší chůzi." },
       { "icon": "medication", "title": "Nové kompetence řízené podle kvalifikace", "text": "Klacks ví, kdo absolvoval kvalifikační kurz pro podávání léků a výměnu stomických sáčků, a od 1. 7. 2026 přiděluje tyto úkoly pouze odpovídajícím způsobem kvalifikovanému personálu." },
-      { "icon": "groups", "title": "3osobový limit dodržován automaticky", "text": "Klacks u každého asistenta sociální péče počítá, kolik klientů je současně v péči, a upozorní na hrozící překročení limitu 3 osob platného od 1. 1. 2026." },
-      { "icon": "payments", "title": "Noční příplatek správně podle formy zřizovatele", "text": "Klacks při výpočtu nočního příplatku automaticky rozlišuje mezi veřejným zřizovatelem (nejméně 20 %) a soukromým zřizovatelem (nejméně 10 %)." },
+      { "icon": "groups", "title": "3osobový limit viditelný v plánu", "text": "V rozpisu směn vidíte na jeden pohled, kolik klientů asistent sociální péče současně obsluhuje &mdash; tak spolehlivě udržíte pod kontrolou limit 3 osob platný od 1. 1. 2026." },
+      { "icon": "payments", "title": "Noční příplatek podle formy zřizovatele uložen", "text": "Rozdílné noční příplatky &mdash; nejméně 20 % u veřejného, nejméně 10 % u soukromého zřizovatele &mdash; si uložíte pro každého zřizovatele jako sazbu příplatku; Klacks je pak automaticky přiřadí." },
       { "icon": "shield_lock", "title": "On-premise: data zůstávají u vás", "text": "Klacks běží na vaší vlastní infrastruktuře. Data pacientů neopustí vaši organizaci &mdash; ani směrem k AI." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplň trasy na zítra“ stačí. V případě nemoci Klacksy okamžitě navrhne dostupnou a odpovídajícím způsobem kvalifikovanou náhradu." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "Kvalifikační kurz, limit 3 osob, jeden plán",
-    "text": "Klacks od 1. 7. 2026 přiděluje nové činnosti pouze osobám s dokončeným kvalifikačním kurzem a zároveň hlídá, aby žádný asistent sociální péče nepečoval o více než 3 klienty současně &mdash; bez ručního přepočítávání."
+    "text": "Klacks od 1. 7. 2026 přiděluje nové činnosti pouze osobám s dokončeným kvalifikačním kurzem a zároveň na jeden pohled ukazuje, kolik klientů asistent sociální péče souběžně obsluhuje &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Zažijte Klacks ve své pečovatelské organizaci",
-    "text": "Vyzkoušejte si v Playgroundu, jak Klacks převezme trasy, kvalifikace a limit počtu osob &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Zdarma a bez registrace."
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks optimalizuje trasy, zohledňuje kvalifikace a zobrazuje limit počtu osob &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Zdarma a bez registrace."
   }
 }

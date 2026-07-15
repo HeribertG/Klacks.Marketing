@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Rundor optimeras automatiskt", "text": "Klacks lägger stoppen i den mest logiska ordningen &mdash; korta vägar, hållna tidsfönster, färre tomkörningar." },
       { "icon": "gavel", "title": "Periodarbete &amp; övertid beräknas automatiskt", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den trappade övertidsersättningen: de första 18 övertidstimmarna med 50 %, därefter 100 %." },
-      { "icon": "payments", "title": "Dagtraktamenten tilldelas automatiskt", "text": "Klacks tilldelar varje runda rätt dagtraktamente &mdash; 43,80 € för den fulla, 19,90 € för den halva och 54,00 € för den förhöjda dagen &mdash; och är redo för lönenivån som trädde i kraft 1.6.2026." },
+      { "icon": "payments", "title": "Dagtraktamenten sparade som traktamentessatser", "text": "Klacks sparar dagtraktamentet som traktamentessats &mdash; 43,80 € för den fulla, 19,90 € för den halva och 54,00 € för den förhöjda dagen &mdash; och är redo för lönenivån som trädde i kraft 1.6.2026." },
       { "icon": "bedtime", "title": "Vilotider &amp; söndagstillägg beaktade", "text": "Klacks övervakar den dagliga och veckovisa vilotiden och bokför det lagstadgade 100-procentiga tillägget för söndagsarbete automatiskt." },
       { "icon": "badge", "title": "Rätt körkortsbehörighet", "text": "Klacks tilldelar rundor endast till förare med rätt behörighet &mdash; och varnar för intyg som håller på att löpa ut." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera morgondagens rundor, föraren Korhonen är sjuk” räcker &mdash; Klacksy räknar om allt, inklusive periodtimmarna." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Gränsöverskridande runda, ett schema",
-    "text": "Klacks summerar periodtimmarna korrekt, tilldelar rundan rätt dagtraktamente (43,80 €, 19,90 € eller 54,00 €) och beaktar löneförhöjningen som trädde i kraft 1.6.2026 &mdash; utan manuell efterräkning."
+    "text": "Klacks summerar periodtimmarna korrekt, sparar rätt dagtraktamente som traktamentessats (43,80 €, 19,90 € eller 54,00 €) och beaktar löneförhöjningen som trädde i kraft 1.6.2026 &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {

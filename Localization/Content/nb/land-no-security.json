@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "For vaktselskaper i Norge",
     "titleHtml": "Hver post bemannet, <span class=\"text-secondary\">hvert tillegg korrekt.</span>",
-    "subtitle": "Klacks bemanner objekter og runder uten hull &mdash; med den nye Vekteroverenskomsten-tariffen 2026-2028 og riktig overtidsregel for deltids- og heltidsansatte automatisk lagt inn. On-Premise, slik at oppdrags- og kundedataene dine blir hos deg.",
+    "subtitle": "Klacks bemanner objekter og runder uten hull &mdash; med den nye Vekteroverenskomsten-tariffen 2026-2028 og overtidsterskelen for deltids- og heltidsansatte lagt inn som konfigurerbare verdier. On-Premise, slik at oppdrags- og kundedataene dine blir hos deg.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for runder og objektbemanning i den norske sikkerhetsbransjen",
     "screenshotLabel": "Tidslinje"
@@ -23,17 +23,17 @@
     "subtitle": "Fra den bemannede posten til den korrekte overtidsregelen &mdash; alt spiller sammen.",
     "items": [
       { "icon": "shield", "title": "Objekter &amp; poster uten hull", "text": "Hver post på tvers av alle objekter &mdash; Klacks viser hver åpne stilling umiddelbart og fyller den automatisk på forespørsel." },
-      { "icon": "payments", "title": "Ny tariff lagt inn automatisk", "text": "Grunnlønnsøkningen på 10,50 NOK/time med tilbakevirkende kraft fra 1. april 2026 og fagbrevtillegget hevet til 14,50 NOK/time fra Vekteroverenskomsten 2026-2028 er lagt inn i Klacks." },
-      { "icon": "gavel", "title": "Deltids-/heltids-overtidsregel korrekt anvendt", "text": "Klacks skiller automatisk mellom merarbeid uten tillegg opp til ordinær heltids arbeidstid, og tilleggspliktig overtid ved enhver overskridelse av vaktplanen for heltidsansatte." },
+      { "icon": "payments", "title": "Ny tariff korrekt lagt inn", "text": "Grunnlønnsøkningen på 10,50 NOK/time med tilbakevirkende kraft fra 1. april 2026 og fagbrevtillegget hevet til 14,50 NOK/time fra Vekteroverenskomsten 2026-2028 kan legges inn i Klacks som gjeldende verdier." },
+      { "icon": "gavel", "title": "Deltids-/heltids-overtidsterskel konfigurerbart avbildet", "text": "Den ulike tilleggsterskelen mellom merarbeid for en deltidsansatt (opp til ordinær heltids arbeidstid) og tilleggspliktig overtid for en heltidsansatt avbilder Klacks gjennom konfigurerbare grenseverdier &mdash; ved overskridelse varsler systemet." },
       { "icon": "route", "title": "Runder optimert", "text": "Ved mobile tjenester legger Klacks patruljeruter slik at veier blir korte og intervaller overholdes." },
-      { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Bemann nattevakten for objekt Nord» er nok &mdash; Klacksy sjekker tilgjengelighet og vaktplangrenser." },
+      { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Bemann nattevakten for objekt Nord» er nok &mdash; Klacksy sjekker tilgjengeligheten og varsler når vaktplangrensene nås." },
       { "icon": "bolt", "title": "Fravær erstattet på minutter", "text": "Blir en post ledig, viser Klacks straks kvalifisert, tilgjengelig erstatning &mdash; uten å velte hele planen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Ny tariff, riktig avregnet",
-    "text": "Klacks anvender automatisk den tilbakevirkende grunnlønnsøkningen på 10,50 NOK/time fra 1. april 2026 på alle berørte vakter, og skiller samtidig korrekt mellom merarbeid for en deltidsansatt og tilleggspliktig overtid for en heltidsansatt &mdash; uten manuell etterberegning."
+    "text": "Klacks anvender automatisk den tilbakevirkende grunnlønnsøkningen på 10,50 NOK/time fra 1. april 2026 på alle berørte vakter, og avbilder samtidig den ulike tilleggsterskelen mellom merarbeid for en deltidsansatt og tilleggspliktig overtid for en heltidsansatt gjennom konfigurerbare grenseverdier &mdash; uten manuell etterberegning."
   },
   "showRoutePlanning": true,
   "cta": {

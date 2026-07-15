@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Klacks für Spitäler in Israel | Toranut-Schichten auf 18 bzw. 21 Stunden begrenzt",
+  "pageTitle": "Klacks für Krankenhäuser in Israel | Toranut-Schichten auf 18 bzw. 21 Stunden begrenzt",
   "hero": {
     "badgeIcon": "local_hospital",
-    "badge": "Für Spitäler &amp; Kliniken in Israel",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Israel",
     "titleHtml": "Toranut-Dienste, die <span class=\"text-secondary\">die neuen Grenzen einhalten.</span>",
     "subtitle": "Klacks plant Stationen und Bereitschaftsdienste (תורנות) lückenlos &mdash; mit den seit 2021 geltenden 18-Stunden- bzw. seit September 2023 geltenden 21-Stunden-Grenzen für Assistenzärzt:innen (מתמחים) automatisch im Blick. On-Premise, damit Patient:innendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster für Spitäler in Israel",
+    "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Israel",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
@@ -14,16 +14,16 @@
     "title": "Toranut-Reform und lückenlose Besetzung",
     "items": [
       { "icon": "e911_emergency", "title": "24/7 ohne Lücke", "text": "Jede Station muss lückenlos besetzt sein &mdash; auch bei kurzfristigen Ausfällen im Bereitschaftsdienst (תורנות)." },
-      { "icon": "gavel", "title": "Toranut-Höchstdauer: 18 bzw. 21 Stunden", "text": "Historisch dauerten Bereitschaftsdienste für Assistenzärzt:innen (מתמחים) bis zu 26 Stunden. Eine Reform von 2021 senkte die Höchstdauer auf 18 zusammenhängende Stunden; seit September 2023 gilt in Peripherie-Spitälern (außerhalb Tel Aviv, Jerusalem, Ashdod, Haifa) eine Obergrenze von 21 Stunden. Die 18-Stunden-Regel ist bislang nicht flächendeckend umgesetzt &mdash; von Hand über viele Dienstpläne kaum verlässlich zu überwachen." },
+      { "icon": "gavel", "title": "Toranut-Höchstdauer: 18 bzw. 21 Stunden", "text": "Historisch dauerten Bereitschaftsdienste für Assistenzärzt:innen (מתמחים) bis zu 26 Stunden. Eine Reform von 2021 senkte die Höchstdauer auf 18 zusammenhängende Stunden; seit September 2023 gilt in Peripherie-Krankenhäusern (außerhalb Tel Aviv, Jerusalem, Ashdod, Haifa) eine Obergrenze von 21 Stunden. Die 18-Stunden-Regel ist bislang nicht flächendeckend umgesetzt &mdash; von Hand über viele Dienstpläne kaum verlässlich zu überwachen." },
       { "icon": "health_and_safety", "title": "Datenschutz auf Klinik-Niveau", "text": "Personal- und Patient:innendaten dürfen das Haus nicht verlassen &mdash; eine Cloud-Pflicht ist oft inakzeptabel, zumal biometrische Daten nach den Privacy Protection Regulations 2017 einer erhöhten Sicherheitsstufe unterliegen." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks Spitäler in Israel entlastet",
+    "title": "Wie Klacks Krankenhäuser in Israel entlastet",
     "subtitle": "Von der lückenlosen Nachtschicht bis zur Toranut-Grenze &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "Toranut-Grenze automatisch geprüft", "text": "Klacks überwacht die 18-Stunden-Grenze bzw. die 21-Stunden-Grenze für Peripherie-Spitäler je Bereitschaftsdienst (תורנות) in Echtzeit &mdash; Verstöße entstehen gar nicht erst." },
+      { "icon": "gavel", "title": "Toranut-Grenze automatisch geprüft", "text": "Klacks überwacht die 18-Stunden-Grenze bzw. die 21-Stunden-Grenze für Peripherie-Krankenhäuser je Bereitschaftsdienst (תורנות) in Echtzeit und warnt rechtzeitig, bevor die Grenze überschritten wird." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patient:innendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Toranut-Dienste der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und die 18/21-Stunden-Grenze." },
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Toranut-Dienst, ein Blick",
-    "text": "Ein Assistenzarzt übernimmt einen Bereitschaftsdienst (תורנות). Klacks erkennt automatisch, ob die 18-Stunden-Grenze bzw. in Peripherie-Spitälern die 21-Stunden-Grenze erreicht wird, und schlägt die Ablösung rechtzeitig vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Ein Assistenzarzt übernimmt einen Bereitschaftsdienst (תורנות). Klacks erkennt automatisch, ob die 18-Stunden-Grenze bzw. in Peripherie-Krankenhäusern die 21-Stunden-Grenze erreicht wird, und schlägt die Ablösung rechtzeitig vor &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks in Ihrem Spital erleben",
+    "title": "Klacks in Ihrem Krankenhaus erleben",
     "text": "Probieren Sie im Playground aus, wie Klacks Stationen, Toranut-Grenzen und Springer übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
   }
 }

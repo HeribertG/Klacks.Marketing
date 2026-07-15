@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (訪問介護) in Japan",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und dem Nachtzuschlag für Einsätze zwischen 22 und 5 Uhr. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und einem auf das japanische Nachtfenster (22 bis 5 Uhr) eingerichteten Nachtzuschlag. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Japan",
     "screenshotLabel": "Timeline"
@@ -47,7 +47,7 @@
       {
         "icon": "bedtime",
         "title": "Nachtzuschlag automatisch berechnet",
-        "text": "Den 25%-Nachtzuschlag für Einsätze im Fenster zwischen 22:00 und 05:00 Uhr rechnet Klacks automatisch mit ein &mdash; ohne Nachrechnen von Hand."
+        "text": "Klacks lässt sich auf das gesetzliche Nachtfenster zwischen 22:00 und 05:00 Uhr einrichten und rechnet den 25%-Zuschlag danach automatisch mit ein &mdash; ohne Nachrechnen von Hand."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegezeit und Nachtzuschlag, ein Plan",
-    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und schlägt den 25%-Nachtzuschlag vor, sobald ein Einsatz zwischen 22:00 und 05:00 Uhr fällt &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und wendet den für das japanische Nachtfenster (22:00 bis 05:00 Uhr) eingerichteten 25%-Zuschlag automatisch an &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

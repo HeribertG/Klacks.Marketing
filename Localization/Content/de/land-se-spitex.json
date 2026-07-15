@@ -13,7 +13,7 @@
     "eyebrow": "Der Alltag in der schwedischen Hemtjänst",
     "title": "Verschärfte Dygnsvila, Jourtid und Wegezeit",
     "items": [
-      { "icon": "bedtime", "title": "Verschärfte Dygnsvila-Regeln 2025/2026", "text": "Für private Pflege- und Assistenzdienste gelten die verschärften 11-Stunden-dygnsvila-Regeln ab 1. September 2025 (Vårdföretagarna/Kommunal) bzw. ab 1. Januar 2026 (Fremia/Kommunal); eine Verkürzung auf mindestens 9 Stunden ist nur im Ausnahmefall mit anschliessender Ausgleichsruhe binnen 14 Tagen zulässig." },
+      { "icon": "bedtime", "title": "Verschärfte Dygnsvila-Regeln 2025/2026", "text": "Für private Pflege- und Assistenzdienste gelten die verschärften 11-Stunden-dygnsvila-Regeln ab 1. September 2025 (Vårdföretagarna/Kommunal) bzw. ab 1. Januar 2026 (Fremia/Kommunal); eine Verkürzung auf mindestens 9 Stunden ist nur im Ausnahmefall mit anschließender Ausgleichsruhe binnen 14 Tagen zulässig." },
       { "icon": "schedule", "title": "Jourtid-Grenzen einhalten", "text": "Bereitschaftszeit (jourtid) ist nach ATL § 6 auf höchstens 48 Stunden je 4 Wochen oder 50 Stunden je Kalendermonat begrenzt &mdash; sobald tatsächlich gearbeitet wird, zählt die Zeit nicht mehr als jourtid." },
       { "icon": "alt_route", "title": "Wegezeit zwischen Klient:innen", "text": "Fahrten zwischen einzelnen Klientenbesuchen innerhalb des Arbeitstages sind Arbeitszeit und treiben die Tages- und Wochenarbeitszeit hoch &mdash; nur der Weg von zu Hause zum ersten und vom letzten Einsatzort zurück zählt in der Regel nicht dazu." }
     ]
@@ -22,10 +22,10 @@
     "title": "Wie Klacks die schwedische Hemtjänst entlastet",
     "subtitle": "Von der Dygnsvila je nach Tarifstichtag bis zur korrekten Wegezeit &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
-      { "icon": "bedtime", "title": "Dygnsvila je nach Tarifstichtag korrekt", "text": "Klacks kennt die gestaffelten Stichtage &mdash; 1. September 2025 (Vårdföretagarna/Kommunal) und 1. Januar 2026 (Fremia/Kommunal) &mdash; und plant die 11-Stunden-Ruhezeit sowie im Ausnahmefall die Ausgleichsruhe binnen 14 Tagen automatisch mit." },
-      { "icon": "schedule", "title": "Jourtid automatisch begrenzt", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat nach ATL § 6 werden automatisch überwacht." },
-      { "icon": "alt_route", "title": "Wegezeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Klient:innen werden automatisch als Arbeitszeit gerechnet &mdash; nur der erste und letzte Weg bleiben aussen vor." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "bedtime", "title": "Dygnsvila je nach Tarifstichtag hinterlegt", "text": "Die gestaffelten Stichtage &mdash; 1. September 2025 (Vårdföretagarna/Kommunal) und 1. Januar 2026 (Fremia/Kommunal) &mdash; hinterlegen Sie mit datierter Gültigkeit; Klacks plant die 11-Stunden-Ruhezeit automatisch mit und behält im Ausnahmefall die Ausgleichsruhe binnen 14 Tagen im Blick." },
+      { "icon": "schedule", "title": "Jourtid-Grenzen überwacht", "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat nach ATL § 6 werden automatisch überwacht." },
+      { "icon": "alt_route", "title": "Wegezeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Klient:innen werden automatisch als Arbeitszeit gerechnet &mdash; nur der erste und letzte Weg bleiben außen vor." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila-Stichtag und Wegezeit, ein Plan",
-    "text": "Klacks kennt für jede Pflegekraft, ob bereits die verschärfte 11-Stunden-dygnsvila-Regel ab 1. September 2025 oder ab 1. Januar 2026 gilt, und rechnet gleichzeitig die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks berücksichtigt über die hinterlegte, datierte Gültigkeit, ob für eine Pflegekraft bereits die verschärfte 11-Stunden-dygnsvila-Regel ab 1. September 2025 oder ab 1. Januar 2026 gilt, und rechnet gleichzeitig die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

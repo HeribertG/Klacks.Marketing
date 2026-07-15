@@ -24,7 +24,7 @@
     "items": [
       { "icon": "schedule", "title": "Heltäckande bemanning dygnet runt", "text": "Dag-, kvälls- och nattskift på alla avdelningar &mdash; Klacks visar varje lucka direkt och fyller den automatiskt om du vill." },
       { "icon": "gavel", "title": "Övertid trappas automatiskt", "text": "Klacks beräknar de första 18 övertidstimmarna per 3-veckorsperiod med 50 % och varje ytterligare timme med 100 % &mdash; korrekt och utan efterräkning." },
-      { "icon": "event_available", "title": "Lediga dagar &amp; veckovila planeras automatiskt", "text": "Klacks säkerställer de två lediga dagarna per vecka, planerar om möjligt in två sammanhängande lediga dagar inom tre veckor och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14-dagarsperioden." },
+      { "icon": "event_available", "title": "Lediga dagar &amp; veckovila planeras automatiskt", "text": "Klacks planerar in de två lediga dagarna per vecka, uppmärksammar om möjligt två sammanhängande lediga dagar inom tre veckor och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14-dagarsperioden." },
       { "icon": "verified", "title": "Kompetenser &amp; avdelningar", "text": "Varje skift tilldelas endast personal med rätt kompetens &mdash; per avdelning, enhet och funktion." },
       { "icon": "shield_lock", "title": "On-premise: data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; inte ens till AI:n." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Fyll medicinavdelningens nattskift nästa vecka” räcker &mdash; Klacksy beaktar kompetens, lediga dagar och veckovila." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Rotation, lediga dagar och övertid, ett schema",
-    "text": "Klacks trappar övertidsersättningen korrekt (18 timmar med 50 %, därefter 100 %), säkerställer de två lediga dagarna per vecka och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14 dagar &mdash; utan manuell efterräkning."
+    "text": "Klacks trappar övertidsersättningen korrekt (18 timmar med 50 %, därefter 100 %), planerar in de två lediga dagarna per vecka och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14 dagar &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {

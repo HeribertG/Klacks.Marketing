@@ -32,17 +32,17 @@
       {
         "icon": "schedule",
         "title": "Geteilte Schichten sauber erfasst",
-        "text": "Klacks erfasst bei geteilten Diensten die aktive Arbeitszeit jedes Einsatzblocks exakt und führt sie automatisch im Dienstplan zusammen."
+        "text": "Klacks erfasst bei geteilten Diensten die aktive Arbeitszeit jedes Einsatzblocks exakt und stellt sie im Dienstplan klar nebeneinander dar."
       },
       {
         "icon": "fact_check",
-        "title": "Zyklus-Arbeitszeit im umfassenden System",
-        "text": "Klacks aggregiert die Arbeitszeit über den genehmigten Zyklus, wie es das umfassende Arbeitszeitsystem verlangt."
+        "title": "Zyklus-Arbeitszeit im umfassenden System sichtbar",
+        "text": "Klacks summiert die Arbeitszeit laufend über Woche und Monat und macht den Stand gegen die im umfassenden Arbeitszeitsystem genehmigte Zyklus-Sollzeit sichtbar."
       },
       {
         "icon": "route",
         "title": "Objekt-Routen optimiert",
-        "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss."
+        "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß."
       },
       {
         "icon": "groups",
@@ -57,14 +57,14 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy plant per Sprache",
-        "text": "Klacksy optimiert Route, Team und die Zyklus-Erfassung bei geteilten Diensten in einem Schritt."
+        "text": "Klacksy optimiert Route und Teameinteilung und macht die Zyklus-Sollzeit bei geteilten Diensten sichtbar."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Geteilter Dienst, ein Plan",
-    "text": "Klacks erkennt geteilte Einsätze automatisch und führt die aktive Arbeitszeit beider Blöcke sauber gegen die Zyklus-Sollzeit &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erfasst geteilte Einsätze exakt und stellt die aktive Arbeitszeit beider Blöcke der Zyklus-Sollzeit gegenüber &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

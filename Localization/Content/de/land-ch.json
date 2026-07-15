@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Schweizer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten in Ihrer eigenen Infrastruktur, ganz im Sinne des revidierten Datenschutzgesetzes (nDSG).",
+    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten in Ihrer eigenen Infrastruktur, ganz im Sinne des revidierten Datenschutzgesetzes (revDSG).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Schweizer Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -13,17 +13,31 @@
     "eyebrow": "Der Planungsalltag in Schweizer Betrieben",
     "title": "ArG, Datenschutz und der Ruf nach Kontrolle",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit im Blick behalten", "text": "Je nach Branche gilt eine Höchstarbeitszeit von 45 oder 50 Stunden &mdash; und die Überstunden-Zuschlagsregeln unterscheiden sich je nach Gruppe. Von Hand ist das fehleranfällig." },
+      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit im Blick behalten", "text": "Je nach Branche gilt eine Höchstarbeitszeit von 45 oder 50 Stunden &mdash; und die Überzeit-Zuschlagsregeln unterscheiden sich je nach Gruppe. Von Hand ist das fehleranfällig." },
       { "icon": "bedtime", "title": "Ruhezeiten &amp; Nachtarbeit korrekt planen", "text": "11 Stunden tägliche Ruhezeit, eine maximale Arbeitsspanne von 14 Stunden und ein Zeitbonus für regelmässige Nachtarbeit &mdash; das ArG verlangt lückenlose Kontrolle über jeden Dienstplan." },
-      { "icon": "cloud_off", "title": "Datenhoheit statt US-Cloud-Zwang", "text": "Seit dem revidierten Datenschutzgesetz (nDSG) stellen sich viele Betriebe die Frage, ob Personaldaten überhaupt in eine US-Cloud dürfen &mdash; gerade bei KI-Funktionen." }
+      { "icon": "cloud_off", "title": "Datenhoheit statt US-Cloud-Zwang", "text": "Seit dem revidierten Datenschutzgesetz (revDSG) stellen sich viele Betriebe die Frage, ob Personaldaten überhaupt in eine US-Cloud dürfen &mdash; gerade bei KI-Funktionen." }
     ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Regeln &amp; Kalender",
+    "title": "Ein Kalender für jede Realität",
+    "text": "Feiertage und Regeln sind in der Schweiz ein Flickenteppich &mdash; kantonal, teils kommunal verschieden. Klacks beherrscht genau das, woran einfache Tools scheitern.",
+    "items": [
+      { "icon": "place", "title": "Bis auf Gemeinde-Ebene", "text": "Land, Region (Kanton, Bundesland, Département) und Gemeinde &mdash; passend vorkonfiguriert." },
+      { "icon": "layers", "title": "Kalender mischen", "text": "Mehrere Länder gleichzeitig &mdash; etwa Genf und die USA für einen Betrieb mit Handelspartnern dort." },
+      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageLabel": "Feiertagsregeln",
+    "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
+    "imageCaption": "Echte Regeln aus Klacks: eine Liste mischt Feiertage mehrerer Länder und einzelner Kantone &mdash; frei erweiterbar."
   },
   "solutions": {
     "title": "Wie Klacks Schweizer Betriebe entlastet",
     "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks kennt die 45h- und 50h-Grenzen je Branche sowie die unterschiedlichen Schwellen für den Überstundenzuschlag &mdash; ab der 60. Überstunde im Jahr bei Büro- und Verkaufspersonal, ab der ersten Überstunde bei allen anderen Branchen." },
-      { "icon": "bedtime", "title": "Ruhezeiten &amp; Nachtzuschlag korrekt berechnet", "text": "Die 11-Stunden-Ruhezeit und der 10%-Zeitbonus für regelmässige Nachtarbeit ab der 25. Nacht im Jahr werden automatisch mitgeplant &mdash; als Freizeit, nicht als Auszahlung." },
+      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks überwacht die 45h- und 50h-Wochengrenzen je Branche laufend und macht Überschreitungen sofort sichtbar &mdash; die branchenspezifischen Überstundenzuschlags-Schwellen lassen sich als Referenzwert hinterlegen." },
+      { "icon": "bedtime", "title": "Ruhezeiten automatisch geplant, Nachtzuschlag dokumentiert", "text": "Die 11-Stunden-Ruhezeit plant Klacks automatisch mit, und die zuschlagspflichtigen Nachtstunden werden dokumentiert &mdash; als Basis für die gesetzliche Zeitgutschrift ab der 25. Nacht im Jahr." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
@@ -40,7 +54,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtarbeit und Wochenhöchstarbeitszeit, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn ein Einsatz den Nachtzuschlag auslöst oder die Wochenhöchstarbeitszeit erreicht ist, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz den Nachtzuschlag auslöst oder die Wochenhöchstarbeitszeit erreicht wird, und macht das sofort sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

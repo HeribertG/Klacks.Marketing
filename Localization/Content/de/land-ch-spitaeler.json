@@ -15,12 +15,12 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Assistenzärzte: 50h-Grenze &amp; Überzeit",
+        "title": "Assistenzärztinnen und -ärzte: 50h-Grenze &amp; Überzeit",
         "text": "Assistenzärztinnen und -ärzte dürfen maximal 50 Stunden pro Woche arbeiten, die Überzeit ist auf 140 Stunden im Jahr begrenzt &mdash; über viele Rotationen hinweg von Hand kaum zu überblicken."
       },
       {
         "icon": "call",
-        "title": "Pikett zuhause oder im Haus?",
+        "title": "Pikett im Haus oder als Rufbereitschaft?",
         "text": "Pikettdienst vor Ort im Spital zählt als volle Arbeitszeit, Pikett zuhause nur als tatsächliche Einsatzzeit inklusive Anfahrt &mdash; die Unterscheidung muss jeder Dienstplan korrekt abbilden."
       },
       {
@@ -36,7 +36,7 @@
       {
         "icon": "hourglass_top",
         "title": "Das kommende BGAP im Blick",
-        "text": "Für das Pflegepersonal ist die Pflegeinitiative (BGAP) noch nicht in Kraft, sieht aber künftig eine Höchstarbeitszeit von 45 Stunden, mehr Vorlaufzeit bei der Dienstplanung und geregelte Pikett-Kompensation vor &mdash; wer heute sauber plant, ist beim Inkrafttreten vorbereitet."
+        "text": "Für das Pflegepersonal ist das Bundesgesetz über die Arbeitsbedingungen in der Pflege (BGAP) &mdash; die Pflegeinitiative &mdash; noch nicht in Kraft, sieht aber künftig eine Höchstarbeitszeit von 45 Stunden, mehr Vorlaufzeit bei der Dienstplanung und geregelte Pikett-Kompensation vor &mdash; wer heute sauber plant, ist beim Inkrafttreten vorbereitet."
       }
     ]
   },
@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Assistenzarzt-Stunden automatisch überwacht",
-        "text": "Die 50-Stunden-Grenze und die 140-Stunden-Jahresgrenze für Überzeit werden laufend geprüft &mdash; Verstösse entstehen gar nicht erst."
+        "text": "Klacks überwacht die 50-Stunden-Wochengrenze laufend und macht Überschreitungen sofort sichtbar &mdash; die 140-Stunden-Jahresgrenze für Überzeit lässt sich als Referenzwert hinterlegen."
       },
       {
         "icon": "call",
@@ -76,15 +76,15 @@
       },
       {
         "icon": "bedtime",
-        "title": "Nachtzuschlag automatisch berechnet",
-        "text": "Den 10%-Zeitzuschlag für regelmässige Nachtarbeit berechnet Klacks automatisch nach Art. 17b ArG &mdash; als Freizeitgutschrift, nicht als Auszahlung."
+        "title": "Nachtzuschlag automatisch dokumentiert",
+        "text": "Die zuschlagspflichtigen Nachtstunden nach Art. 17b ArG berechnet und dokumentiert Klacks automatisch &mdash; als Basis für die gesetzliche Zeitgutschrift."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenzarzt-Rotation und Pikett, ein Plan",
-    "text": "Klacks behält die 50-Stunden-Grenze und die jährliche Überzeit im Blick, unterscheidet Präsenz- von Rufpikett automatisch und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, unterscheidet Präsenz- von Rufpikett automatisch und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": false,
   "cta": {

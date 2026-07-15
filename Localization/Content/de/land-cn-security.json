@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in China",
-    "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jede Schicht im Zyklus korrekt.</span>",
-    "subtitle": "Klacks aggregiert die Arbeitszeit von 保安人员 im 12-Stunden-Schichtbetrieb exakt über den bei der lokalen Behörde (人社局) genehmigten Zyklus &mdash; Zuschläge werden erst berechnet, wenn der Zyklus die Sollzeit tatsächlich überschreitet.",
+    "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jede Schicht im Zyklus im Blick.</span>",
+    "subtitle": "Klacks summiert die Arbeitszeit von 保安人员 im 12-Stunden-Schichtbetrieb laufend über Woche und Monat und macht den Stand gegen den bei der lokalen Behörde (人社局) genehmigten Zyklus sichtbar &mdash; die Basis, um Zuschläge erst zu berechnen, wenn der Zyklus die Sollzeit tatsächlich überschreitet.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Sicherheitsdienste in China",
     "screenshotLabel": "Timeline"
@@ -36,18 +36,18 @@
     "items": [
       {
         "icon": "fact_check",
-        "title": "Zyklus-Arbeitszeit korrekt aggregiert",
-        "text": "Klacks summiert Arbeitszeit über den genehmigten Zyklus (z. B. ein Quartal) &mdash; Überstunden werden erst gemeldet, wenn der Zyklus die Sollzeit tatsächlich überschreitet, statt starr pro Kalendermonat abzurechnen."
+        "title": "Zyklus-Arbeitszeit laufend sichtbar",
+        "text": "Klacks summiert die Arbeitszeit laufend über Woche und Monat und macht den Stand gegen die genehmigte Zyklus-Sollzeit sichtbar &mdash; die Basis, um Überstunden zu erkennen, statt starr pro Kalendermonat abzurechnen."
       },
       {
         "icon": "payments",
-        "title": "150 %/300 % automatisch zugeordnet",
-        "text": "Sobald innerhalb des Zyklus echter 加班 anfällt, ordnet Klacks den passenden Zuschlag nach Art. 44 automatisch zu &mdash; 150 % Werktag, 300 % gesetzlicher Feiertag."
+        "title": "300 % Feiertagszuschlag automatisch zugeordnet",
+        "text": "Fällt innerhalb des Zyklus ein gesetzlicher Feiertag mit echtem 加班 zusammen, ordnet Klacks den 300 %-Zuschlag nach Art. 44 automatisch zu; die Werktags-Prämie (150 %) lässt sich als weiterer Zuschlag hinterlegen."
       },
       {
         "icon": "description",
-        "title": "Genehmigungsauflagen dokumentiert",
-        "text": "Klacks hält die Zyklus-Daten so bereit, wie sie die Genehmigung des umfassenden Arbeitszeitsystems beim lokalen Arbeits- und Sozialamt (人社局) verlangt."
+        "title": "Reports als Genehmigungsgrundlage",
+        "text": "Klacks liefert die Stunden- und Perioden-Reports als Grundlage für die Genehmigungsunterlagen des umfassenden Arbeitszeitsystems beim lokalen Arbeits- und Sozialamt (人社局)."
       },
       {
         "icon": "shield",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Zyklus statt Kalendermonat, ein Plan",
-    "text": "Klacks summiert die 12-Stunden-Schichten eines Wachmanns laufend über den genehmigten Zyklus und zeigt exakt, wann echter 加班 mit 150 % oder 300 % anfällt &mdash; auf Basis der Zyklus-Sollzeit, statt starr pro Kalendermonat."
+    "text": "Klacks summiert die 12-Stunden-Schichten eines Wachmanns laufend über Woche und Monat und macht sichtbar, wann echter 加班 anfällt und ob er auf einen gesetzlichen Feiertag (300 %) fällt &mdash; auf Basis der Zyklus-Sollzeit, statt starr pro Kalendermonat."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Klacks per gli Ospedali | Piani turni 24/7 & riposo di 11 ore",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Per gli ospedali in Italia",
+    "titleHtml": "Piani turni che <span class=\"text-secondary\">funzionano 24 ore su 24.</span>",
+    "subtitle": "Klacks pianifica reparti e turni senza lacune &mdash; con il riposo di 11 ore rispettato, in vigore dalla Legge n. 161/2014 anche per i medici, qualifiche adeguate e piena sovranità dei dati. On-Premise, perché i dati dei pazienti non lasciano mai la vostra struttura.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Griglia del piano turni Klacks per gli ospedali",
+    "screenshotLabel": "Piano turni"
+  },
+  "challenges": {
+    "eyebrow": "La quotidianità ospedaliera in Italia",
+    "title": "Senza lacune, conforme al riposo, documentato",
+    "items": [
+      { "icon": "e911_emergency", "title": "24/7 senza lacune", "text": "Giorno, notte, weekend, festivi: ogni reparto deve essere presidiato senza interruzioni &mdash; anche in caso di assenze last minute." },
+      { "icon": "gavel", "title": "Riposo di 11 ore anche per i medici", "text": "Dalla Legge n. 161/2014 (in vigore dal 25.11.2015) il riposo di 11 ore si applica anche ai medici ospedalieri &mdash; la precedente deroga è stata abolita in seguito a una procedura d'infrazione UE." },
+      { "icon": "schedule", "title": "Limiti di durata del turno", "text": "Nella sanità pubblica la durata regolare del turno è limitata a un massimo di 12 ore secondo il CCNL Comparto Sanità." }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacks alleggerisce gli Ospedali",
+    "subtitle": "Dal turno di notte senza lacune al pool di sostituti &mdash; tutto si incastra alla perfezione.",
+    "items": [
+      { "icon": "schedule", "title": "Copertura 24/7 senza lacune", "text": "Turni di giorno, pomeriggio e notte su tutti i reparti &mdash; Klacks mostra subito ogni lacuna e la colma automaticamente su richiesta." },
+      { "icon": "gavel", "title": "Riposi verificati automaticamente", "text": "Il riposo di 11 ore &mdash; dalla Legge n. 161/2014 valido anche per i medici &mdash; viene monitorato in tempo reale, così come la durata massima del turno di 12 ore secondo il CCNL Comparto Sanità." },
+      { "icon": "verified", "title": "Qualifiche &amp; reparti", "text": "Klacks confronta la qualifica richiesta con i profili registrati e avverte per tempo prima che una qualifica scada &mdash; per reparto, unità e funzione." },
+      { "icon": "shield_lock", "title": "On-Premise: i dati restano in struttura", "text": "Klacks funziona sulla vostra infrastruttura. I dati del personale e dei pazienti non lasciano la struttura &mdash; nemmeno verso l'IA." },
+      { "icon": "smart_toy", "title": "Klacksy pianifica a voce", "text": "Basta dire «Riempi i turni di notte di Medicina Interna per la prossima settimana» &mdash; Klacksy tiene conto di qualifica e riposo." },
+      { "icon": "groups", "title": "Pool di sostituti &amp; assenze", "text": "Se qualcuno risulta assente, Klacks mostra subito i sostituti disponibili e qualificati &mdash; senza dover rivoluzionare l'intero piano." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Più reparti, turni di giorno e di notte, un unico pool di sostituti",
+    "text": "Ogni reparto ha proprie regole di copertura e requisiti di qualifica. Klacks li pianifica tutti insieme, verifica automaticamente il riposo di 11 ore &mdash; anche per i medici &mdash; e in caso di assenze attinge al pool di sostituti."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Provate Klacks nel vostro Ospedale",
+    "text": "Provate nel Playground come Klacks gestisce reparti, riposi e sostituti &mdash; oppure installatelo direttamente nella vostra struttura. Gratuito e senza registrazione."
+  }
+}

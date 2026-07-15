@@ -2,7 +2,7 @@
   "pageTitle": "Klacks für Logistik Taiwan | 10-Stunden-Fahrzeit & Pausenpflicht",
   "hero": {
     "badgeIcon": "local_shipping",
-    "badge": "Für Logistik &amp; Grosskraftfahrzeuge (營業大貨車) in Taiwan",
+    "badge": "Für Logistik &amp; Großkraftfahrzeuge (營業大貨車) in Taiwan",
     "titleHtml": "Touren, Fahrzeit, Pausen &mdash; <span class=\"text-secondary\">automatisch im Rahmen.</span>",
     "subtitle": "Klacks plant Touren und Fahrer (貨車司機) &mdash; mit der maximalen Fahrzeit von 10 Stunden pro Tag, der Pausenpflicht nach 4 Stunden Fahrt und der 10-Stunden-Ruhe zwischen zwei Arbeitstagen automatisch berücksichtigt.",
     "screenshotFile": "app-timeline-de.png",
@@ -13,7 +13,7 @@
     "eyebrow": "Der Logistik-Alltag in Taiwan",
     "title": "10-Stunden-Fahrzeit, Pausenpflicht und die 12-Stunden-Gesamtgrenze",
     "items": [
-      { "icon": "timer", "title": "Maximal 10 Stunden reine Fahrzeit", "text": "Für gewerbliche Grosskraftfahrzeuge (營業大貨車) gilt eine tägliche Fahrzeit-Obergrenze von 10 Stunden (汽車運輸業管理規則, MOTC) &mdash; Verstösse kosten bis zu NT$ 90.000, im Extremfall droht Betriebs- oder Kennzeichenentzug." },
+      { "icon": "timer", "title": "Maximal 10 Stunden reine Fahrzeit", "text": "Für gewerbliche Großkraftfahrzeuge (營業大貨車) gilt eine tägliche Fahrzeit-Obergrenze von 10 Stunden (汽車運輸業管理規則, MOTC) &mdash; Verstöße kosten bis zu NT$ 90.000, im Extremfall droht Betriebs- oder Kennzeichenentzug." },
       { "icon": "pause_circle", "title": "Pausenpflicht nach 4 Stunden Fahrt", "text": "Nach maximal 4 Stunden ununterbrochener Fahrt ist mindestens eine 30-minütige Pause vorgeschrieben, ersatzweise in Teilen von je mindestens 15 Minuten." },
       { "icon": "bedtime", "title": "Fahrzeit ist nicht Gesamtarbeitszeit", "text": "Die 10-Stunden-Grenze gilt nur für die reine Fahrzeit &mdash; die tägliche Gesamtarbeitszeit inklusive Überstunden bleibt separat auf 12 Stunden begrenzt (§ 32 LSA). Zwischen zwei Arbeitstagen sind zudem mindestens 10 zusammenhängende Ruhestunden einzuhalten (reduzierbar auf 8 Stunden, maximal zweimal pro Woche, nicht an aufeinanderfolgenden Tagen)." }
     ]
@@ -23,7 +23,7 @@
     "subtitle": "Von der optimierten Tour bis zur korrekten Pausenpflicht &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "10-Stunden-Fahrzeitgrenze überwacht", "text": "Klacks überwacht die tägliche Fahrzeit-Obergrenze von 10 Stunden für Grosskraftfahrzeuge fortlaufend &mdash; getrennt von der Gesamtarbeitszeit." },
+      { "icon": "timer", "title": "10-Stunden-Fahrzeitgrenze überwacht", "text": "Klacks überwacht die tägliche Fahrzeit-Obergrenze von 10 Stunden für Großkraftfahrzeuge fortlaufend &mdash; getrennt von der Gesamtarbeitszeit." },
       { "icon": "pause_circle", "title": "Pausenpflicht automatisch eingeplant", "text": "Klacks plant nach 4 Stunden ununterbrochener Fahrt automatisch die vorgeschriebene 30-minütige Pause ein &mdash; oder alternativ Teilpausen von mindestens 15 Minuten." },
       { "icon": "bedtime", "title": "12-Stunden-Gesamtgrenze &amp; 10-Stunden-Ruhe getrennt geprüft", "text": "Klacks unterscheidet die 10-Stunden-Fahrzeitgrenze von der 12-Stunden-Gesamtarbeitszeitgrenze nach § 32 LSA und plant die 10-Stunden-Ruhezeit zwischen zwei Arbeitstagen automatisch mit ein." },
       { "icon": "badge", "title": "Führerscheine &amp; Nachweise passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },

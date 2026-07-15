@@ -13,7 +13,7 @@
     "eyebrow": "Der Logistik-Alltag in Finnland",
     "title": "Jaksotyö, Tagespauschalen und die TES-Erhöhung 2026",
     "items": [
-      { "icon": "gavel", "title": "Periodenarbeit im Transport summieren", "text": "Transport zählt zu den Branchen mit unregelmässigem Arbeitsanfall: die Arbeitszeit darf als max. 120 Stunden je 3-Wochen-Periode oder max. 80 Stunden je 2-Wochen-Periode angeordnet werden (Työaikalaki § 7) &mdash; über viele Fahrer und Touren hinweg von Hand kaum sicher einzuhalten." },
+      { "icon": "gavel", "title": "Periodenarbeit im Transport summieren", "text": "Transport zählt zu den Branchen mit unregelmäßigem Arbeitsanfall: die Arbeitszeit darf als max. 120 Stunden je 3-Wochen-Periode oder max. 80 Stunden je 2-Wochen-Periode angeordnet werden (Työaikalaki § 7) &mdash; über viele Fahrer und Touren hinweg von Hand kaum sicher einzuhalten." },
       { "icon": "payments", "title": "Tagespauschalen korrekt unterscheiden", "text": "Je nach Reisedauer gilt eine volle Tagespauschale von 43,80 €, eine halbe von 19,90 € oder eine erhöhte von 54,00 € &mdash; die richtige Stufe pro Tour von Hand zuzuordnen, ist fehleranfällig." },
       { "icon": "trending_up", "title": "TES-Erhöhung seit 1.6.2026 abbilden", "text": "Zum 1.6.2026 sind die Löhne im Kuorma-autoalan TES um 2,9 % gestiegen &mdash; ein Teil einer Gesamterhöhung von rund 6 % über die Laufzeit, die in der Lohnplanung korrekt ankommen muss." }
     ]
@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "gavel", "title": "Periodenarbeit &amp; Überstunden automatisch berechnet", "text": "Klacks summiert die Arbeitszeit je 3- oder 2-Wochen-Periode und berechnet die gestaffelte Überstundenvergütung: die ersten 18 Überstunden mit 50 %, danach 100 %." },
-      { "icon": "payments", "title": "Tagespauschalen automatisch zugeordnet", "text": "Klacks ordnet jeder Tour die passende Tagespauschale zu &mdash; 43,80 € für den vollen, 19,90 € für den halben und 54,00 € für den erhöhten Tag &mdash; und ist bereit für die zum 1.6.2026 in Kraft getretene Lohnstufe." },
+      { "icon": "payments", "title": "Tagespauschalen als Spesen-Sätze hinterlegt", "text": "Klacks hinterlegt die Tagespauschale als Spesen-Satz &mdash; 43,80 € für den vollen, 19,90 € für den halben und 54,00 € für den erhöhten Tag &mdash; und ist bereit für die zum 1.6.2026 in Kraft getretene Lohnstufe." },
       { "icon": "bedtime", "title": "Ruhezeiten &amp; Sonntagszuschlag berücksichtigt", "text": "Klacks überwacht die tägliche und wöchentliche Ruhezeit und bucht den gesetzlichen 100-%-Zuschlag für Sonntagsarbeit automatisch." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Korhonen ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Periodenstunden." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks summiert die Periodenstunden korrekt, ordnet der Tour die passende Tagespauschale zu (43,80 €, 19,90 € oder 54,00 €) und berücksichtigt die zum 1.6.2026 in Kraft getretene Lohnerhöhung &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks summiert die Periodenstunden korrekt, hinterlegt die passende Tagespauschale als Spesen-Satz (43,80 €, 19,90 € oder 54,00 €) und berücksichtigt die zum 1.6.2026 in Kraft getretene Lohnerhöhung &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

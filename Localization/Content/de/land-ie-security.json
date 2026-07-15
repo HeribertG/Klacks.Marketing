@@ -23,9 +23,9 @@
     "subtitle": "Vom besetzten Posten bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "payments", "title": "ERO-Mindestlohn automatisch angewendet", "text": "Klacks rechnet mit dem aktuellen ERO-Satz von €15,41 pro Stunde und passt künftige Anhebungen zentral an." },
+      { "icon": "payments", "title": "ERO-Mindestlohn zentral hinterlegt", "text": "Klacks hinterlegt den aktuellen ERO-Satz von €15,41 pro Stunde zentral, künftige Anhebungen passen Sie an einer Stelle an." },
       { "icon": "bedtime", "title": "Nachtzuschlag korrekt berechnet", "text": "Der Zuschlag von €20,00 pro Nachtschicht seit 1. Januar 2026 wird automatisch mitgerechnet &mdash; ohne Nachrechnen von Hand." },
-      { "icon": "verified", "title": "PSA-Standards im Blick", "text": "Klacks dokumentiert die Einhaltung der ERO-Beschäftigungsbedingungen, die PSA-Auditor:innen im Rahmen der Licensing Standards prüfen." },
+      { "icon": "verified", "title": "PSA-Standards im Blick", "text": "Klacks dokumentiert Einsatzpläne und Zuschläge planungsbasiert &mdash; eine Grundlage für Nachweise, die PSA-Auditor:innen im Rahmen der Licensing Standards prüfen." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten verlassen Ihr Haus nicht, auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Zuschlag und Verfügbarkeit gleich mit." }
     ]
@@ -34,6 +34,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Sicherheitsdienst erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, ERO-Mindestlohn und Nachtzuschlag übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte besetzt, den ERO-Mindestlohn zentral hinterlegt und den Nachtzuschlag automatisch berechnet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

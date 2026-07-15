@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Satpam-Sicherheitsdienste in Indonesien",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte lückenlos und blockiert Schichten über 12 Stunden hart im Roster &mdash; weil dieser Tagescap den gesetzlichen Überstundenrahmen aus PP 35/2021 bereits voll ausschöpft. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
+    "subtitle": "Klacks besetzt Objekte lückenlos und überwacht Schichten über 12 Stunden live im Roster &mdash; weil dieser Tagescap den gesetzlichen Überstundenrahmen aus PP 35/2021 bereits voll ausschöpft. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung von Sicherheitsdiensten in Indonesien",
     "screenshotLabel": "Timeline"
@@ -27,12 +27,12 @@
   },
   "solutions": {
     "title": "Wie Klacks indonesische Sicherheitsdienste entlastet",
-    "subtitle": "Von der harten Zeitgrenze bis zum besetzten Posten &mdash; alles greift ineinander.",
+    "subtitle": "Von der überwachten Zeitgrenze bis zum besetzten Posten &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "block",
-        "title": "Harte 12-Stunden-Sperre im Roster",
-        "text": "Klacks blockiert Schichten über 12 Stunden automatisch, weil dieser Tagescap (8 h + 4 h Überstunden) aus PP 35/2021 Pasal 26 keinen Spielraum für ungeplante Verlängerungen lässt."
+        "title": "12-Stunden-Tagescap live überwacht",
+        "text": "Klacks warnt automatisch, sobald eine Schicht die 12-Stunden-Grenze (8 h + 4 h Überstunden) aus PP 35/2021 Pasal 26 überschreitet, weil dieser Tagescap keinen Spielraum für ungeplante Verlängerungen lässt."
       },
       {
         "icon": "shield",
@@ -47,7 +47,7 @@
       {
         "icon": "verified",
         "title": "Zertifikate automatisch geprüft",
-        "text": "Klacks teilt Einsätze nur Personal mit gültigem Satpam-Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft."
+        "text": "Klacks prüft den Satpam-Ausweis bei jeder Zuteilung und warnt rechtzeitig, bevor ein Nachweis abläuft."
       },
       {
         "icon": "shield_lock",
@@ -64,7 +64,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "12-Stunden-Schicht, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht den 12-Stunden-Tagescap aus PP 35/2021 erreicht, und blockiert jede weitere Verlängerung &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine Schicht den 12-Stunden-Tagescap aus PP 35/2021 erreicht, und warnt vor jeder weiteren Verlängerung &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

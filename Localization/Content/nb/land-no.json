@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Åpen kildekode &middot; On-Premise &middot; Norsk personvern",
-    "titleHtml": "Vaktplaner som <span class=\"text-secondary\">automatisk følger Arbeidsmiljøloven.</span>",
-    "subtitle": "Klacks gjenkjenner automatisk hvilket arbeidstidsregime i Arbeidsmiljøloven (AML) som gjelder for hvilken vaktplan, overholder 14-dagers varslingsfristen og kjører On-Premise &mdash; med KI-modellen du selv velger, helt uten den biometriske skylagringen som Datatilsynet ser kritisk på.",
+    "titleHtml": "Vaktplaner som <span class=\"text-secondary\">pålitelig avbilder Arbeidsmiljøloven.</span>",
+    "subtitle": "Klacks avbilder de tre arbeidstidsregimene i Arbeidsmiljøloven (AML) som konfigurerbare grenseverdier, støtter tidlig publisering av vaktplanen etter § 10-3 og kjører On-Premise &mdash; med KI-modellen du selv velger, helt uten den biometriske skylagringen som Datatilsynet ser kritisk på.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vaktplan-oversikt for norske bedrifter",
     "screenshotLabel": "Vaktplan"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Slik avlaster Klacks norske bedrifter",
-    "subtitle": "Fra automatisk regimegjenkjenning til egen infrastruktur &mdash; alt spiller sammen.",
+    "subtitle": "Fra den konfigurerte regimegrensen til egen infrastruktur &mdash; alt spiller sammen.",
     "items": [
-      { "icon": "gavel", "title": "Alle tre arbeidstidsregimer gjenkjent automatisk", "text": "Klacks tilordner hver vaktplan automatisk til riktig AML-regime &mdash; 40, 38 eller 36 timer &mdash; avhengig av om det er døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig turnus." },
-      { "icon": "event_available", "title": "14-dagers frist overholdt automatisk", "text": "Klacks oppretter og publiserer vaktplaner så tidlig at kunngjøringsfristen etter § 10-3 alltid overholdes." },
-      { "icon": "timer", "title": "Overtidsgrenser overvåket", "text": "De lovbestemte grensene etter § 10-6 &mdash; 10 timer/7 dager, 25 timer/4 uker, 200 timer/12 måneder &mdash; samt tillegget på minst 40 % føres automatisk." },
+      { "icon": "gavel", "title": "Alle tre arbeidstidsregimer konfigurerbart lagt inn", "text": "Klacks legger inn riktig AML-ukesgrense for hver vaktplan &mdash; 40, 38 eller 36 timer &mdash;, avhengig av om det er døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig turnus; tilordningen fastsetter du én gang per kontrakt eller gruppe." },
+      { "icon": "event_available", "title": "Vaktplaner opprettet og publisert tidlig", "text": "Klacks oppretter og publiserer vaktplaner så tidlig som du selv ønsker å planlegge &mdash; grunnlaget for pålitelig å overholde kunngjøringsfristen etter § 10-3." },
+      { "icon": "timer", "title": "Overtidsgrenser overvåket", "text": "De lovbestemte grensene etter § 10-6 &mdash; 10 timer/7 dager, 25 timer/4 uker, 200 timer/12 måneder &mdash; samt tillegget på minst 40 % overvåker Klacks fortløpende og varsler i god tid før overskridelser." },
       { "icon": "route", "title": "Ruter &amp; oppdrag optimert automatisk", "text": "Klacks legger oppdrag og ruter slik at veier blir korte og tidsvinduer overholdes &mdash; kan brukes på tvers av bransjer." },
       { "icon": "shield_lock", "title": "On-Premise: ingen biometrisk skyregistrering", "text": "Klacks kjører på din egen infrastruktur, helt uten tvang til fingeravtrykk- eller ansiktsgjenkjenningstjenester i skyen &mdash; i tråd med Personopplysningsloven og Datatilsynets retningslinjer." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasert, ingen svart boks", "text": "Den integrerte KI-assistenten Klacksy planlegger via talekommando &mdash; etterprøvbart ut fra lagrede skills og regler, og KI-modellen kan i tillegg hostes lokalt." }
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Skiftregime og kunngjøringsfrist, ett blikk",
-    "text": "Klacks gjenkjenner automatisk om en vaktplan gjelder som døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig, anvender riktig 40-, 38- eller 36-timersgrense og publiserer planen i god tid før 14-dagersfristen etter § 10-3 &mdash; uten manuell etterberegning."
+    "text": "Du fastsetter om en vaktplan gjelder som døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig &mdash; Klacks anvender automatisk riktig 40-, 38- eller 36-timersgrense og lar deg publisere planen så tidlig som 14-dagersfristen etter § 10-3 krever &mdash; uten manuell etterberegning."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Opplev Klacks i din bedrift",
-    "text": "Prøv i Playground hvordan Klacks automatiserer AML-arbeidstidsregimer, kunngjøringsfrister og overtidsgrenser &mdash; On-Premise eller i Playground, gratis og uten registrering."
+    "text": "Prøv i Playground hvordan Klacks avbilder AML-arbeidstidsregimer, muliggjør tidlig publisering av vaktplaner og overvåker overtidsgrenser &mdash; On-Premise eller i Playground, gratis og uten registrering."
   }
 }

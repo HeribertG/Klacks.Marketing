@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Städbolag in Schweden",
     "titleHtml": "Jede Teilzeitkraft <span class=\"text-secondary\">korrekt vergütet.</span>",
-    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem Übergang von mertid zu voller Überstundenvergütung und dem neuen arbetstidsförkortning-Tag ab 2026 automatisch hinterlegt.",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem Übergang von mertid zu voller Überstundenvergütung und dem neuen arbetstidsförkortning-Tag ab 2026 als hinterlegte Regeln.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Schweden",
     "screenshotLabel": "Dienstplan"
@@ -22,10 +22,10 @@
     "title": "Wie Klacks schwedische Städbolag entlastet",
     "subtitle": "Von der optimierten Route bis zur korrekten Überstundenvergütung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
-      { "icon": "payments", "title": "Mertid-Übergang automatisch nachvollzogen", "text": "Klacks kennt den Übergang von mertid zu voller Überstundenvergütung (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags ab 1. Juni 2026) für Teilzeitkräfte und wendet die passende Vergütung an." },
-      { "icon": "event_available", "title": "Freier Tag automatisch eingeplant", "text": "Klacks plant den bezahlten freien Tag für Vollzeitkräfte bzw. den anteiligen Anspruch für Teilzeitkräfte ab 2026 automatisch mit ein." },
-      { "icon": "bedtime", "title": "Nachtruhe eingehalten", "text": "Klacks berücksichtigt automatisch, dass das Fenster Mitternacht bis 05:00 Uhr nach ATL § 13 grundsätzlich in der Ruhezeit liegen muss." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "payments", "title": "Mertid-Übergang dokumentiert", "text": "Den Übergang von mertid zu voller Überstundenvergütung ab 1. Juni 2026 bilden Sie in Klacks ab &mdash; die festen Sätze (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) hinterlegen Sie als Referenzwerte, die dokumentierten Stunden liefern die Basis für Ihre Lohnabrechnung." },
+      { "icon": "event_available", "title": "Freier Tag direkt eingeplant", "text": "Den bezahlten freien Tag für Vollzeitkräfte ab 2026 planen Sie in Klacks direkt ein &mdash; den anteiligen Anspruch für Teilzeitkräfte hinterlegen Sie je Person." },
+      { "icon": "bedtime", "title": "Nachtruhe im Blick", "text": "Klacks macht sichtbar, wenn eine Schicht in das Fenster Mitternacht bis 05:00 Uhr fällt, das nach ATL § 13 grundsätzlich in der Ruhezeit liegen muss." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mertid-Ende und freier Tag, ein Plan",
-    "text": "Klacks erkennt automatisch, dass ab 1. Juni 2026 auch Teilzeitkräfte volle Überstundenvergütung statt mertid erhalten, und plant gleichzeitig den neuen arbetstidsförkortning-Tag mit ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks dokumentiert die Mehrstunden von Teilzeitkräften als Basis für die ab 1. Juni 2026 geltende volle Überstundenvergütung und plant den neuen arbetstidsförkortning-Tag direkt mit ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Städbolag erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und die neue Überstundenregel übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen optimiert, Teams einteilt und die neue Überstundenregel dokumentiert &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

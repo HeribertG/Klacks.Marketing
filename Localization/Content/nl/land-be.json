@@ -4,7 +4,7 @@
     "badgeIcon": "gavel",
     "badge": "Voor bedrijven in België &middot; Alle Paritaire Comités",
     "titleHtml": "Dienstroosters die <span class=\"text-secondary\">elk Paritair Comité respecteren.</span>",
-    "subtitle": "Klacks kent de regels van uw Paritair Comité (PC), stelt dienstroosters automatisch op in de taal van elke vestiging en documenteert elke afwijking &mdash; zodat u de hervorming van 2026 volledig naleeft.",
+    "subtitle": "Klacks kent de regels van uw Paritair Comité (PC), is beschikbaar in de taal van elke vestiging en documenteert elke afwijking &mdash; zodat u de hervorming van 2026 in het oog houdt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosteroverzicht voor bedrijven in België",
     "screenshotLabel": "Dienstrooster"
@@ -22,29 +22,29 @@
     "title": "Hoe Klacks Belgische bedrijven ontlast",
     "subtitle": "Van de PC-specifieke regel tot de meertalige documentatie &mdash; alles grijpt op elkaar in.",
     "items": [
-      { "icon": "gavel", "title": "Paritair Comité automatisch meegenomen", "text": "Klacks kent de toeslagen, arbeidstijdgrenzen en planningstermijnen van het betreffende PC &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is." },
-      { "icon": "translate", "title": "Dienstroosters per vestiging in de juiste taal", "text": "Klacks stelt dienstroosters en tijdsregistratie automatisch op in de taal van de betreffende vestiging &mdash; Nederlands, Frans of Duits." },
-      { "icon": "fact_check", "title": "Afwijkingenregister volledig bijgehouden", "text": "Elke planwijziging bij deeltijdse medewerkers wordt automatisch gedocumenteerd &mdash; het wettelijke vermoeden van voltijdse tewerkstelling ontstaat zo niet." },
-      { "icon": "event_available", "title": "Hervorming 2026 automatisch nageleefd", "text": "Klacks publiceert dienstroosters binnen de wettelijke termijn van 7 werkdagen op voorhand (of de via CAO ingekorte termijn) en houdt automatisch rekening met de nieuwe minimale deeltijdse arbeidsduur van een tiende van de voltijdse norm." },
-      { "icon": "schedule", "title": "Vrijwillige overuren netjes gescheiden", "text": "De eerste 240 van maximaal 360 vrijwillige jaarlijkse overuren zijn vrijgesteld van toeslag, sociale bijdragen en belasting &mdash; Klacks houdt deze grens automatisch bij." },
+      { "icon": "gavel", "title": "Paritair Comité individueel vastgelegd", "text": "Klacks legt de toeslagen en arbeidstijdgrenzen van het betreffende PC vast &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is &mdash; rechtstreeks in uw regelconfiguratie." },
+      { "icon": "translate", "title": "Dienstroosters per vestiging in de juiste taal", "text": "Klacks is voor elke vestiging beschikbaar in het Nederlands, Frans of Duits &mdash; medewerkers en planners werken in hun eigen landstaal." },
+      { "icon": "fact_check", "title": "Afwijkingenregister volledig bijgehouden", "text": "Elke planwijziging bij deeltijdse medewerkers wordt automatisch gedocumenteerd &mdash; de basis om het wettelijke vermoeden van voltijdse tewerkstelling te voorkomen." },
+      { "icon": "event_available", "title": "Hervorming 2026: deeltijdse minimumarbeidsduur in het oog", "text": "De sinds 1 juni 2026 geldende minimale deeltijdse arbeidsduur van een tiende van de voltijdse norm legt u vast als grenswaarde in Klacks &mdash; het systeem waarschuwt automatisch bij onderschrijding." },
+      { "icon": "schedule", "title": "Vrijwillige overuren in het oog", "text": "Klacks houdt de tot 360 vrijwillige jaarlijkse overuren automatisch bij en toont wanneer de 240-uursgrens is bereikt &mdash; de drempel die uw loonadministratie nodig heeft voor de vrijstelling van bijdragen en belasting." },
       { "icon": "smart_toy", "title": "Klacksy: regelgebaseerd, geen black box", "text": "De geïntegreerde AI-assistent Klacksy plant via een spraakopdracht &mdash; navolgbaar volgens vastgelegde skills en regels, niet als ondoorzichtige AI-beslissing." }
     ]
   },
   "klacksy": {
     "eyebrow": "AI-assistent",
     "title": "Klacksy: de geïntegreerde assistent voor uw team",
-    "text": "Klacksy is rechtstreeks ingebed in de Klacks-interface en helpt om PC-specifieke regels, taalvereisten per vestiging en de publicatietermijn van de hervorming 2026 na te leven. Medewerkers en planners vragen via de chat diensttijden op of verduidelijken beschikbaarheden &mdash; navolgbaar volgens vastgelegde skills en regels, geen black-box-beslissing.",
+    "text": "Klacksy is rechtstreeks ingebed in de Klacks-interface en helpt om PC-specifieke regels en taalvereisten per vestiging in het oog te houden. Medewerkers en planners vragen via de chat diensttijden op of verduidelijken beschikbaarheden &mdash; navolgbaar volgens vastgelegde skills en regels, geen black-box-beslissing.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chatassistent in de Klacks-interface"
   },
   "example": {
     "eyebrow": "Concreet",
     "title": "Paritair Comité en taalvereiste, in één oogopslag",
-    "text": "Klacks herkent automatisch welk Paritair Comité geldt voor een vestiging, stelt het dienstrooster op in de juiste taal en documenteert elke afwijking &mdash; zonder handmatig narekenen."
+    "text": "Klacks past de vastgelegde toeslagen en grenswaarden van het betreffende Paritair Comité per vestiging toe, is beschikbaar in de juiste taal en documenteert elke afwijking &mdash; zonder handmatig narekenen."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Ervaar Klacks in uw bedrijf",
-    "text": "Test in de playground hoe Klacks Paritair-Comité-regels, taalvereisten en de publicatietermijn van de hervorming 2026 automatiseert &mdash; gratis en zonder registratie."
+    "text": "Test in de playground hoe Klacks Paritair-Comité-regels, taalvereisten en de deeltijdse minimumarbeidsduur van de hervorming 2026 ondersteunt &mdash; gratis en zonder registratie."
   }
 }

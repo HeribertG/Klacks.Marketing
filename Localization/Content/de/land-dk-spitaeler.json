@@ -41,13 +41,13 @@
       },
       {
         "icon": "bedtime",
-        "title": "Schichtwechsel-Ausnahme korrekt dokumentiert",
-        "text": "Klacks erkennt, wann die Ruhezeit bei Schichtwechsel auf 8 Stunden verkürzt werden darf, und hält die vorherige Abstimmung mit dem/der Tillidsrepræsentant nachvollziehbar fest."
+        "title": "Schichtwechsel-Ausnahme konfigurierbar geplant",
+        "text": "Die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen; die vorherige Abstimmung mit dem/der Tillidsrepræsentant halten Sie in den Dienstplan-Notizen fest."
       },
       {
         "icon": "gavel",
-        "title": "48-Stunden-Schnitt laufend geprüft",
-        "text": "Klacks prüft den gleitenden 4-Monats-Schnitt automatisch und warnt, bevor die 48-Stunden-Grenze erreicht wird."
+        "title": "48-Stunden-Schnitt laufend sichtbar",
+        "text": "Klacks hält die Stundenbasis für den gleitenden 4-Monats-Schnitt laufend sichtbar &mdash; so erkennen Sie rechtzeitig, wenn sich jemand der 48-Stunden-Grenze nähert."
       },
       {
         "icon": "tune",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtwechsel und 48-Stunden-Nachweis, ein Plan",
-    "text": "Klacks erkennt automatisch, wann die Ruhezeit beim Schichtwechsel auf 8 Stunden verkürzt werden darf, hält die Abstimmung mit dem/der Tillidsrepræsentant fest und überwacht die 48-Stunden-Grenze im 4-Monats-Schnitt fortlaufend &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt die Verkürzung der Ruhezeit beim Schichtwechsel auf 8 Stunden als Sonderregel planen, hält Raum für die Abstimmung mit dem/der Tillidsrepræsentant in den Notizen fest und hält die Stundenbasis für den 48-Stunden-Nachweis im 4-Monats-Schnitt fortlaufend sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

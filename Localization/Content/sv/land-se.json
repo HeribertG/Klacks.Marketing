@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Öppen källkod &middot; On-premise &middot; Svenskt dataskydd",
-    "titleHtml": "Scheman som <span class=\"text-secondary\">automatiskt följer kollektivavtal och arbetstidslagen.</span>",
-    "subtitle": "Klacks upptäcker automatiskt vilka kollektivavtalsavvikelser från arbetstidslagen (ATL) som gäller för er verksamhet, håller koll på övertidsgränser och dygnsvila och körs on-premise &mdash; med den AI-modell ni själva väljer, helt utan den biometriska tidsregistrering som IMY har kritiserat.",
+    "titleHtml": "Scheman som <span class=\"text-secondary\">automatiskt övervakar kollektivavtal och arbetstidslagen.</span>",
+    "subtitle": "Klacks kan ställas in på de kollektivavtalsavvikelser från arbetstidslagen (ATL) som gäller för er verksamhet, övervakar övertidsgränser och dygnsvila och körs on-premise &mdash; med den AI-modell ni själva väljer, helt utan den biometriska tidsregistrering som IMY har kritiserat.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaöversikt för svenska företag",
     "screenshotLabel": "Schema"
@@ -23,8 +23,8 @@
     "subtitle": "Från den automatiska kollektivavtalsavvikelsen till den egna infrastrukturen &mdash; allt hänger ihop.",
     "items": [
       { "icon": "gavel", "title": "Kollektivavtalsavvikelser inlagda", "text": "Klacks kan ställas in på de avvikelser från ATL som avtalats i respektive kollektivavtal, i stället för att stelt tillämpa lagens grundvärden." },
-      { "icon": "timer", "title": "Övertidsgränser övervakas automatiskt", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 följs automatiskt upp." },
-      { "icon": "bedtime", "title": "Dygnsvila &amp; nattfönster respekteras", "text": "Den 11 timmar långa sammanhängande vilotiden, inklusive tidsfönstret midnatt till 05.00 enligt ATL § 13, planerar Klacks automatiskt in." },
+      { "icon": "timer", "title": "Övertidsgränser ständigt synliga", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 håller Klacks ständigt synliga &mdash; så kan ni styra i tid." },
+      { "icon": "bedtime", "title": "Dygnsvila &amp; nattfönster under uppsikt", "text": "Den 11 timmar långa sammanhängande vilotiden enligt ATL § 13 planerar Klacks automatiskt in &mdash; tidsfönstret midnatt till 05.00 förblir samtidigt synligt i schemat." },
       { "icon": "route", "title": "Uppdrag optimeras automatiskt", "text": "Klacks lägger uppdrag och rutter så att vägar blir korta och tidsfönster hålls &mdash; användbart oavsett bransch." },
       { "icon": "how_to_reg", "title": "Tidsregistrering utan biometri", "text": "Klacks klarar sig utan fingeravtryck eller ansiktsigenkänning &mdash; och därmed utan det samtyckesproblem för biometriska uppgifter i anställningsförhållanden som IMY har kritiserat." },
       { "icon": "shield_lock", "title": "On-premise: full datasuveränitet", "text": "Klacks körs på er egen infrastruktur, och ni väljer själva AI-modell &mdash; även lokalt driftsatt." }
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila och övertidsgräns, en överblick",
-    "text": "Klacks upptäcker automatiskt när ett pass bryter mot tidsfönstret midnatt till 05.00 inom dygnsvilan eller när årsgränsen på 200 övertidstimmar nås, och föreslår kompensationen direkt &mdash; utan manuell efterräkning."
+    "text": "Klacks varnar automatiskt när ett pass riskerar att understiga den 11-timmars dygnsvilan, och håller årssumman ständigt synlig mot 200-timmarsgränsen för övertid &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Upplev Klacks i er verksamhet",
-    "text": "Testa i Playground hur Klacks automatiserar kollektivavtalsregler, dygnsvila och övertidsgränser &mdash; on-premise eller i Playground, gratis och utan registrering."
+    "text": "Testa i Playground hur Klacks lägger in kollektivavtalsregler, kontrollerar dygnsvila och gör övertidsgränser synliga &mdash; on-premise eller i Playground, gratis och utan registrering."
   }
 }

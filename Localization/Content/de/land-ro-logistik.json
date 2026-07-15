@@ -47,12 +47,12 @@
       {
         "icon": "bedtime",
         "title": "10-Stunden-Grenze bei Nachtfahrten geprüft",
-        "text": "Klacks erkennt Einsätze im Nachtfenster und begrenzt die Gesamtarbeitszeit automatisch auf 10 Stunden je 24 Stunden."
+        "text": "Klacks erkennt Einsätze im Nachtfenster und warnt, sobald die Gesamtarbeitszeit die 10-Stunden-Grenze je 24 Stunden zu überschreiten droht."
       },
       {
         "icon": "local_shipping",
-        "title": "Bereit für die Kleintransporter-Regel ab Juli 2026",
-        "text": "Klacks bildet auch Kleintransporter-Kombinationen zwischen 2,5 und 3,5 Tonnen ab, die im grenzüberschreitenden Verkehr neu unter das EU-Mobilitätspaket fallen."
+        "title": "Kleintransporter ab Juli 2026 mitgeplant",
+        "text": "Klacks plant auch Kleintransporter-Kombinationen zwischen 2,5 und 3,5 Tonnen mit ein, die im grenzüberschreitenden Verkehr neu unter das EU-Mobilitätspaket fallen &mdash; für Fahrtenschreiber- und Entsendepflichten braucht es weiterhin eine eigene Lösung."
       },
       {
         "icon": "badge",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks prüft Lenk- und Pausenzeiten automatisch, begrenzt Nachtfahrten auf 10 Stunden je 24 Stunden und bildet auch Kleintransporter ab, die ab Juli 2026 neu unter das EU-Mobilitätspaket fallen."
+    "text": "Klacks prüft Lenk- und Pausenzeiten automatisch, warnt bei drohender Überschreitung der 10-Stunden-Grenze für Nachtfahrten und plant auch Kleintransporter mit, die ab Juli 2026 neu unter das EU-Mobilitätspaket fallen."
   },
   "showRoutePlanning": true,
   "cta": {

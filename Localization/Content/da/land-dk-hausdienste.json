@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Til rengørings- &amp; serviceassistenter i Danmark",
     "titleHtml": "Hvert objekt <span class=\"text-secondary\">rent planlagt.</span>",
-    "subtitle": "Klacks fordeler objekter, teams og tilkald effektivt &mdash; og omstiller automatisk overenskomsttilknytningen, når FOA pr. 1. april 2026 bliver eneste overenskomstpart for ufaglærte rengøringsmedarbejdere i den kommunale sektor.",
+    "subtitle": "Klacks fordeler objekter, teams og tilkald effektivt &mdash; og kan omkonfigureres til den nye FOA-overenskomsttilknytning pr. 1. april 2026, så snart FOA bliver eneste overenskomstpart for ufaglærte rengøringsmedarbejdere i den kommunale sektor.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vagtplan-gitter til danske rengøringsteams og objekter",
     "screenshotLabel": "Vagtplan"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "swap_horiz",
-        "title": "Overenskomstskift automatisk opdateret",
-        "text": "Klacks omstiller automatisk overenskomsttilknytningen til FOA pr. 1. april 2026, så snart 3F udtræder af den kommunale overenskomst."
+        "title": "Overenskomsttilknytning omkonfigurerbar til stikdato",
+        "text": "Klacks kan omkonfigureres til den nye FOA-overenskomsttilknytning pr. 1. april 2026, så snart 3F udtræder af den kommunale overenskomst."
       },
       {
         "icon": "schedule",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "call",
-        "title": "Tilkald korrekt aflønnet",
-        "text": "Klacks beregner automatisk mindst 2-timers-minimumsvederlaget for hver tilkaldevagt."
+        "title": "Tilkald planlagt med minimumsvarighed",
+        "text": "Klacks kan konfigureres til tilkald med den foreskrevne 2-timers-minimumsvarighed, så minimumsvederlaget indgår i tidsgrundlaget."
       },
       {
         "icon": "groups",
@@ -62,14 +62,14 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy planlægger via tale",
-        "text": "\"Planlæg objekterne i centrum for i morgen tidlig\" er nok &mdash; Klacksy optimerer rute, team og tilkald-vederlag."
+        "text": "\"Planlæg objekterne i centrum for i morgen tidlig\" er nok &mdash; Klacksy optimerer rute, team og tilkald-indsatser."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Tilkald og ugegennemsnit, én plan",
-    "text": "Klacks beregner ved et kortfristet tilkald automatisk 2-timers-minimumsvederlaget og holder samtidig styr på 15-37-timers-gennemsnittet for den variable arbejdstid &mdash; uden manuel efterregning."
+    "text": "Klacks planlægger et kortfristet tilkald med den foreskrevne 2-timers-minimumsvarighed og holder samtidig de præsterede timer synlige som grundlag for 15-37-timers-gennemsnittet af den variable arbejdstid &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": true,
   "cta": {

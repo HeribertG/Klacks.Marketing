@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Sykehus &amp; Kliniken in Norwegen",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">den Spekter-Turnus einhalten.</span>",
-    "subtitle": "Klacks erkennt den volldurchgehenden 3-Schicht-Turnus nach dem Spekter-Tarifabkommen automatisch, wendet die reduzierte 33,6-Stunden-Woche an und berechnet Feiertags- und Wochenendzuschläge korrekt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks bildet den volldurchgehenden 3-Schicht-Turnus nach dem Spekter-Tarifabkommen mit der reduzierten 33,6-Stunden-Woche als hinterlegte Grenze ab und berechnet Feiertags- und Wochenendzuschläge korrekt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für norwegische Krankenhäuser und Kliniken",
     "screenshotLabel": "Dienstplan"
@@ -15,7 +15,7 @@
     "items": [
       { "icon": "e911_emergency", "title": "24/7 ohne Lücke", "text": "Tag, Nacht, Wochenende, Feiertag: Jede Station muss lückenlos besetzt sein &mdash; auch bei kurzfristigen Ausfällen." },
       { "icon": "schedule", "title": "33,6-Stunden-Woche im Turnus", "text": "Nach dem Spekter-Tarifabkommen Del A2, Bereich 10 (Helseforetak) gilt für den volldurchgehenden 3-Schicht-Turnusdienst mit mindestens jedem 3. Sonntag als Diensttag eine durchschnittliche Wochenarbeitszeit von maximal 33,6 Stunden &mdash; von Hand ist die korrekte Zuordnung zu diesem reduzierten Regime aufwändig." },
-      { "icon": "celebration", "title": "Feiertags- &amp; Wochenendzuschläge", "text": "An grossen Feiertagen (Ostern, Pfingsten, Weihnachten, Silvester, jeweils ab 12 Uhr des Vortags) gilt ein Zuschlag von 133,33 %, am Wochenende (Samstag 00:00 bis Sonntag 24:00) ein Zuschlag von 26 %, mindestens jedoch 75 NOK/Stunde." }
+      { "icon": "celebration", "title": "Feiertags- &amp; Wochenendzuschläge", "text": "An großen Feiertagen (Ostern, Pfingsten, Weihnachten, Silvester, jeweils ab 12 Uhr des Vortags) gilt ein Zuschlag von 133,33 %, am Wochenende (Samstag 00:00 bis Sonntag 24:00) ein Zuschlag von 26 %, mindestens jedoch 75 NOK/Stunde." }
     ]
   },
   "solutions": {
@@ -23,7 +23,7 @@
     "subtitle": "Von der lückenlosen Nachtschicht bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "33,6-Stunden-Woche automatisch erkannt", "text": "Klacks erkennt den volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag und wendet die reduzierte 33,6-Stunden-Woche nach Spekter A2 automatisch an." },
+      { "icon": "gavel", "title": "33,6-Stunden-Woche konfigurierbar hinterlegt", "text": "Für den volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag hinterlegen Sie die reduzierte 33,6-Stunden-Woche nach Spekter A2 als Grenzwert &mdash; Klacks überwacht die Einhaltung fortlaufend." },
       { "icon": "payments", "title": "Feiertags- &amp; Wochenendzuschläge automatisch berechnet", "text": "Der Feiertagszuschlag von 133,33 % und der Wochenendzuschlag von 26 % (mindestens 75 NOK/Stunde) werden automatisch auf jede betroffene Schicht angewendet." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Turnusregime." },
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Turnusregime und Feiertagsdienst, ein Blick",
-    "text": "Klacks erkennt, dass eine Station im volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag läuft, wendet die 33,6-Stunden-Woche an und berechnet für einen Weihnachtsdienst automatisch den Feiertagszuschlag von 133,33 % &mdash; ohne Nachrechnen von Hand."
+    "text": "Sie legen fest, dass eine Station im volldurchgehenden 3-Schicht-Turnus mit mindestens jedem 3. Sonntag als Diensttag läuft &mdash; Klacks wendet die 33,6-Stunden-Woche als Grenzwert an und berechnet für einen Weihnachtsdienst automatisch den Feiertagszuschlag von 133,33 % &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Turnusregime, Feiertags- und Wochenendzuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Turnus-Grenzwerte, Feiertags- und Wochenendzuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
   }
 }

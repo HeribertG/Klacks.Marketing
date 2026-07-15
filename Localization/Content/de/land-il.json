@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Israel | Zeiterfassung gegen die 60-Überstunden-Vermutung (Amendment 24)",
   "hero": {
     "badgeIcon": "fact_check",
-    "badge": "Open Source &middot; On-Premise &middot; Amendment-24-konforme Zeiterfassung",
+    "badge": "Open Source &middot; On-Premise &middot; lückenlose Zeitdokumentation für Amendment 24",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie den Nachweis in der Hand haben.</span>",
-    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und respektiert die wöchentliche Sabbatruhe &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. So lässt sich die Beweislast nach Amendment 24 im Streitfall erfüllen, statt an der gesetzlichen 60-Stunden-Vermutung zu scheitern.",
+    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und behält die wöchentliche Sabbatruhe im Blick &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. Das liefert die dokumentierte Zeitbasis, um der Beweislast nach Amendment 24 im Streitfall etwas entgegenzusetzen, statt der gesetzlichen 60-Stunden-Vermutung hilflos ausgeliefert zu sein.",
     "screenshotFile": "app-calendar-de.png",
     "screenshotAlt": "Klacks Kalenderansicht für Unternehmen in Israel",
     "screenshotLabel": "Kalender"
@@ -25,7 +25,7 @@
       { "icon": "fact_check", "title": "Arbeitszeitbuch statt Beweislastrisiko", "text": "Klacks führt ein lückenloses, exportierbares Arbeitszeitbuch &mdash; die Grundlage, um der Amendment-24-Beweislast und der 60-Überstunden-Vermutung im Streitfall etwas entgegenzusetzen." },
       { "icon": "calculate", "title": "Überstundenzuschläge automatisch berechnet", "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle rechnet Klacks die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 % &mdash; ohne Nachrechnen von Hand." },
       { "icon": "synagogue", "title": "Sabbat- &amp; Wochenruhe automatisch geprüft", "text": "Klacks erkennt, wenn ein Einsatz in die 36-stündige Wochenruhe fällt, weist auf die nötige Ministeriums-Genehmigung hin und bereitet den 150 %-Zuschlag samt Ersatzruhetag vor." },
-      { "icon": "shield_lock", "title": "On-Premise: sensible Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Biometrische und personenbezogene Daten verlassen Ihr Haus nicht &mdash; ein sinnvoller Ansatz angesichts der erhöhten Sicherheitsstufe für biometrische Daten, auch ohne gesetzliche Cloud-Pflicht." },
+      { "icon": "shield_lock", "title": "On-Premise: sensible Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Planungs- und Personaldaten verlassen Ihr Haus nicht &mdash; ganz ohne biometrische Zeiterfassung, deren erhöhte Sicherheitsanforderungen nach den Privacy Protection Regulations 2017 Sie sich damit sparen." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]

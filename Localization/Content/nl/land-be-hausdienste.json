@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Voor huis- &amp; schoonmaakdiensten in België (PC 121)",
     "titleHtml": "Elk object <span class=\"text-secondary\">netjes gedocumenteerd.</span>",
-    "subtitle": "Klacks registreert elke objectinzet elektronisch, rekent de mobiliteitsvergoeding tussen objecten automatisch af en houdt de sectorale deeltijdondergrens van 18u per week aan.",
+    "subtitle": "Klacks documenteert elke objectinzet sluitend, levert de kilometergegevens voor de mobiliteitsvergoeding tussen objecten en houdt de sectorale deeltijdondergrens van 18u per week in het oog.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosterraster voor Belgische schoonmaakteams en objecten",
     "screenshotLabel": "Dienstrooster"
@@ -23,9 +23,9 @@
     "subtitle": "Van de volledige aanwezigheidsregistratie tot de mobiliteitsvergoeding &mdash; alles grijpt op elkaar in.",
     "items": [
       { "icon": "route", "title": "Objectroutes geoptimaliseerd", "text": "Klacks legt de volgorde van de objecten zo vast dat afstanden kort blijven &mdash; met de auto, fiets of te voet." },
-      { "icon": "fingerprint", "title": "Aanwezigheid elektronisch &amp; volledig geregistreerd", "text": "Elke objectinzet wordt elektronisch gedocumenteerd &mdash; auditbestendig, zoals de Programmawet sinds 2024 vereist. Ook de forfait van € 7,00/maand bij gebruik van privésmartphones beheert Klacks automatisch." },
-      { "icon": "directions_car", "title": "Mobiliteitsvergoeding automatisch berekend", "text": "Klacks rekent het forfait van € 0,1075/km, met een minimum van € 2,15 per rit, voor elk traject tussen objecten automatisch af." },
-      { "icon": "schedule", "title": "Minimumduren automatisch nageleefd", "text": "Klacks houdt rekening met de 1-uurs minimumduur voor categorie 1A/1B, evenals met de sectorale deeltijdondergrens van 18u per week of 3u per dag." },
+      { "icon": "fingerprint", "title": "Aanwezigheid elektronisch &amp; volledig geregistreerd", "text": "Elke objectinzet wordt elektronisch en sluitend gedocumenteerd &mdash; de planningsbasis voor de aanwezigheidsregistratie die de Programmawet sinds 2024 vereist. Ook inzetten met een privésmartphone legt Klacks vast, als basis voor de forfait van € 7,00/maand in uw loonadministratie." },
+      { "icon": "directions_car", "title": "Kilometergegevens voor mobiliteitsvergoeding geregistreerd", "text": "Klacks registreert automatisch de afgelegde kilometers tussen objecten op dezelfde dag &mdash; de basis die uw loonadministratie nodig heeft voor het forfait van € 0,1075/km (minimaal € 2,15 per rit)." },
+      { "icon": "schedule", "title": "Minimumduren automatisch bewaakt", "text": "Klacks houdt de 1-uurs minimumduur voor categorie 1A/1B evenals de sectorale deeltijdondergrens van 18u per week of 3u per dag in het oog en waarschuwt bij onderschrijding." },
       { "icon": "groups", "title": "Teams flexibel ingedeeld", "text": "Wisselende bezettingen, invalkrachten en vakantie: Klacks houdt het overzicht en stelt passende indelingen voor." },
       { "icon": "smart_toy", "title": "Klacksy plant via spraak", "text": "„Plan de objecten in het district voor morgenvroeg” volstaat &mdash; Klacksy optimaliseert route, team en aanwezigheidsregistratie." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Concreet",
     "title": "Objectwissel, mobiliteitsvergoeding, één plan",
-    "text": "Klacks registreert elke objectinzet elektronisch, rekent de mobiliteitsvergoeding tussen de objecten automatisch af en houdt de 18u-deeltijdondergrens in het oog &mdash; zonder handmatig narekenen."
+    "text": "Klacks registreert elke objectinzet elektronisch, levert de kilometergegevens voor de mobiliteitsvergoeding tussen de objecten en houdt de 18u-deeltijdondergrens in het oog &mdash; zonder handmatig narekenen."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Ervaar Klacks in uw schoonmaakbedrijf",
-    "text": "Probeer in de playground hoe Klacks aanwezigheidsregistratie, mobiliteitsvergoeding en deeltijdondergrenzen overneemt &mdash; gratis en zonder registratie."
+    "text": "Probeer in de playground hoe Klacks aanwezigheidsregistratie, kilometergegevens voor de mobiliteitsvergoeding en deeltijdondergrenzen in het oog houdt &mdash; gratis en zonder registratie."
   }
 }

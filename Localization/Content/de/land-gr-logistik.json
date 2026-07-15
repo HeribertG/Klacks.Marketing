@@ -15,7 +15,7 @@
     "items": [
       { "icon": "fact_check", "title": "Digitale Arbeitskarte ab 16. November 2026", "text": "Lagerhaltung, Logistik und Transport-Unterstützung fallen unter Phase B der digitalen Arbeitskarte &mdash; jede Schicht muss ab dann lückenlos gemeldet sein, sonst drohen 10.500 € pro Mitarbeitendem." },
       { "icon": "calendar_month", "title": "Sechstagewoche bei Frachtspitzen", "text": "Bei Frachtspitzen darf ein 6. Arbeitstag angeordnet werden &mdash; max. 8 Stunden, mit 40 % Zuschlag bzw. 115 % an Sonn-/Feiertagen, und Vorab-Meldepflicht in ERGANI II." },
-      { "icon": "timer", "title": "Nacht-Arbeitszeitgrenze für Fahrpersonal", "text": "Für mobiles Transportpersonal gilt gemäss RL 2002/15/EG (umgesetzt durch P.D. 167/2006) eine 10-Stunden-Grenze bei Nachtarbeit im 24-Stunden-Fenster." }
+      { "icon": "timer", "title": "Nacht-Arbeitszeitgrenze für Fahrpersonal", "text": "Für mobiles Transportpersonal gilt gemäß RL 2002/15/EG (umgesetzt durch P.D. 167/2006) eine 10-Stunden-Grenze bei Nachtarbeit im 24-Stunden-Fenster." }
     ]
   },
   "solutions": {
@@ -23,9 +23,9 @@
     "subtitle": "Von der optimierten Tour bis zur ERGANI-konformen Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "fact_check", "title": "ERGANI-konform ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; bereit für die Meldepflicht der Phase B, ohne das Risiko der 10.500-€-Busse." },
-      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; wird automatisch berechnet, inklusive rechtzeitiger ERGANI-Meldung." },
-      { "icon": "timer", "title": "Nachtgrenze für Fahrpersonal überwacht", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäss RL 2002/15/EG / P.D. 167/2006 wird für mobiles Transportpersonal automatisch eingehalten." },
+      { "icon": "fact_check", "title": "ERGANI-konform ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht der Phase B." },
+      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen; die ERGANI-Meldung selbst bleibt bei Ihnen." },
+      { "icon": "timer", "title": "Nachtgrenze für Fahrpersonal überwacht", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäß RL 2002/15/EG / P.D. 167/2006 wird für mobiles Transportpersonal automatisch überwacht." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, ein Fahrer fällt aus“ genügt &mdash; Klacksy rechnet alles neu, inklusive Zuschläge und Nachtgrenze." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Frachtspitze am 6. Tag, ein Plan",
-    "text": "Klacks erkennt, wenn eine Tour auf den 6. Arbeitstag fällt, berechnet den passenden Zuschlag und prüft gleichzeitig die Nacht-Arbeitszeitgrenze für das Fahrpersonal &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt sich für den Zuschlag am 6. Arbeitstag konfigurieren und überwacht gleichzeitig die Nacht-Arbeitszeitgrenze für das Fahrpersonal &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Rengørings- &amp; Serviceassistenten in Dänemark",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Teams und Tilkald effizient ein &mdash; und stellt die Tarifzuordnung automatisch um, wenn zum 1. April 2026 FOA alleiniger Tarifpartner für ungelernte Reinigungskräfte im kommunalen Sektor wird.",
+    "subtitle": "Klacks teilt Objekte, Teams und Tilkald effizient ein &mdash; und lässt sich zum 1. April 2026 auf die neue FOA-Tarifzuordnung umkonfigurieren, sobald FOA alleiniger Tarifpartner für ungelernte Reinigungskräfte im kommunalen Sektor wird.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für dänische Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -37,12 +37,12 @@
       {
         "icon": "route",
         "title": "Objekt-Routen optimiert",
-        "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Velo oder zu Fuss."
+        "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß."
       },
       {
         "icon": "swap_horiz",
-        "title": "Tarifwechsel automatisch nachgeführt",
-        "text": "Klacks stellt die Tarifzuordnung zum 1. April 2026 automatisch auf FOA um, sobald 3F aus dem kommunalen Vertrag ausscheidet."
+        "title": "Tarifzuordnung zum Stichtag umkonfigurierbar",
+        "text": "Klacks lässt sich zum 1. April 2026 auf die neue FOA-Tarifzuordnung umkonfigurieren, sobald 3F aus dem kommunalen Vertrag ausscheidet."
       },
       {
         "icon": "schedule",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "call",
-        "title": "Tilkald korrekt vergütet",
-        "text": "Klacks rechnet für jeden Abrufdienst automatisch mindestens die 2-Stunden-Mindestvergütung ein."
+        "title": "Tilkald mit Mindestdauer geplant",
+        "text": "Klacks lässt sich für Tilkald mit der vorgeschriebenen 2-Stunden-Mindestdauer konfigurieren, damit die Mindestvergütung in der Zeitbasis berücksichtigt ist."
       },
       {
         "icon": "groups",
@@ -62,14 +62,14 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy plant per Sprache",
-        "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Tilkald-Vergütung."
+        "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Tilkald-Einsätze."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Tilkald und Wochenschnitt, ein Plan",
-    "text": "Klacks rechnet bei einem kurzfristigen Tilkald automatisch die 2-Stunden-Mindestvergütung ein und behält gleichzeitig den 15-37-Stunden-Schnitt der variablen Arbeitszeit im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks plant ein kurzfristiges Tilkald mit der vorgeschriebenen 2-Stunden-Mindestdauer und hält gleichzeitig die geleisteten Stunden als Basis für den 15-37-Stunden-Schnitt der variablen Arbeitszeit sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

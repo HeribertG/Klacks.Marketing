@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "För sjukhus &amp; kliniker i Sverige",
     "titleHtml": "Scheman som <span class=\"text-secondary\">håller 13-timmarsgränsen och jourpassen.</span>",
-    "subtitle": "Klacks upptäcker automatiskt när ett pass når den ordinarie 13-timmarsgränsen, när ett kombinerat arbete-jour-pass på upp till 20 timmar är tillåtet, och markerar viktigare schemaändringar enligt MBL-förhandlingsskyldigheten. On-premise, så att patientdata aldrig lämnar er verksamhet.",
+    "subtitle": "Klacks övervakar automatiskt den ordinarie 13-timmarsgränsen, stödjer planeringen av kombinerade arbete-jour-pass på upp till 20 timmar och markerar viktigare schemaändringar enligt MBL-förhandlingsskyldigheten. On-premise, så att patientdata aldrig lämnar er verksamhet.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaraster för svenska sjukhus och kliniker",
     "screenshotLabel": "Schema"
@@ -23,9 +23,9 @@
     "subtitle": "Från 13-timmarsgränsen till den dokumenterade schemaändringen &mdash; allt hänger ihop.",
     "items": [
       { "icon": "gavel", "title": "MBL-förhandlingsskyldighet under uppsikt", "text": "Klacks markerar tydligt viktigare förändringar i skiftmönstret, så att det i god tid syns när förhandlingsskyldigheten enligt MBL § 11 gentemot facket gäller." },
-      { "icon": "schedule", "title": "20-timmars jourpass korrekt planerat", "text": "Klacks känner igen pass som kombinerar arbete och jour, och säkerställer att minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00 samt den sammanhängande kompenserande vilan hålls." },
-      { "icon": "timer", "title": "13-timmarsgräns hålls automatiskt", "text": "Klacks begränsar automatiskt ordinarie pass till 13 timmar per 24-timmarsperiod, så att den 11 timmar långa dygnsvilan bevaras." },
-      { "icon": "payments", "title": "OB-tillägg efter tid på dygnet identifierade", "text": "Klacks känner automatiskt igen när ett natt- eller helgtillägg för obekväm arbetstid gäller, och tilldelar de branschvanliga, stegvis differentierade tilläggsnivåerna till respektive pass." },
+      { "icon": "schedule", "title": "20-timmars jourpass planerbart", "text": "Kombinerade arbete-jour-pass planerar ni målinriktat i Klacks &mdash; kraven på minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00 och den sammanhängande kompenserande vilan håller ni samtidigt synligt i sikte." },
+      { "icon": "timer", "title": "13-timmarsgräns övervakas automatiskt", "text": "Klacks varnar så snart ett ordinarie pass riskerar att överskrida 13 timmar per 24-timmarsperiod &mdash; så att den 11 timmar långa dygnsvilan bevaras." },
+      { "icon": "payments", "title": "OB-tillägg efter tid på dygnet identifierade", "text": "Klacks känner automatiskt igen när ett natt- eller helgtillägg för obekväm arbetstid gäller, och tilldelar de inlagda, branschvanliga, stegvis differentierade tilläggsnivåerna till respektive pass." },
       { "icon": "shield_lock", "title": "On-premise: data stannar i huset", "text": "Klacks körs på er infrastruktur. Personal- och patientdata lämnar aldrig kliniken &mdash; inte ens till AI:n." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Fyll nattskiften på internmedicin för nästa vecka” räcker &mdash; Klacksy tar hänsyn till kompetens och dygnsvila." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Jourpass och 13-timmarsgräns, en överblick",
-    "text": "Klacks känner igen om ett pass är planerat som ett kombinerat arbete-jour-pass med minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00, eller om det är ett ordinarie pass som omfattas av 13-timmarsgränsen, och föreslår direkt lämplig kompenserande vila &mdash; utan manuell efterräkning."
+    "text": "Klacks visar om ett pass är planerat som ett kombinerat arbete-jour-pass med minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00, eller om det är ett ordinarie pass som omfattas av 13-timmarsgränsen, och varnar vid en förkortad vilotid &mdash; den kompenserande vilan planerar ni in med tydlig överblick &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {

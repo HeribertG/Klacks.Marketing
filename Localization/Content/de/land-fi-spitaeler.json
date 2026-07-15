@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Klacks für Spitäler Finnland | Jaksotyö, Überstunden & freie Tage",
+  "pageTitle": "Klacks für Krankenhäuser Finnland | Jaksotyö, Überstunden & freie Tage",
   "hero": {
     "badgeIcon": "local_hospital",
-    "badge": "Für Spitäler &amp; Kliniken in Finnland",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Finnland",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Rotationen in der Periodenarbeit (jaksotyö) der SOTE-Spitäler lückenlos &mdash; mit korrekt gestaffelten Überstunden, freien Tagen und Wochenruhe. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Rotationen in der Periodenarbeit (jaksotyö) der SOTE-Krankenhäuser lückenlos &mdash; mit korrekt gestaffelten Überstunden, freien Tagen und Wochenruhe. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster für finnische Spitäler",
+    "screenshotAlt": "Klacks Dienstplan-Raster für finnische Krankenhäuser",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
@@ -19,12 +19,12 @@
     ]
   },
   "solutions": {
-    "title": "Wie Klacks finnische Spitäler entlastet",
+    "title": "Wie Klacks finnische Krankenhäuser entlastet",
     "subtitle": "Von der lückenlosen 24/7-Abdeckung bis zur korrekt gestaffelten Überstundenvergütung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "gavel", "title": "Überstunden automatisch gestaffelt", "text": "Klacks berechnet die ersten 18 Überstunden je 3-Wochen-Periode mit 50 % und jede weitere Stunde mit 100 % &mdash; korrekt und ohne Nachrechnen." },
-      { "icon": "event_available", "title": "Freie Tage &amp; Wochenruhe automatisch geplant", "text": "Klacks stellt die zwei freien Tage pro Woche sicher, plant nach Möglichkeit zwei aufeinanderfolgende freie Tage innerhalb von drei Wochen ein und behält die im Schnitt 35-stündige Wochenruhe über den 14-Tage-Zeitraum im Blick." },
+      { "icon": "event_available", "title": "Freie Tage &amp; Wochenruhe automatisch geplant", "text": "Klacks plant die zwei freien Tage pro Woche ein, achtet nach Möglichkeit auf zwei aufeinanderfolgende freie Tage innerhalb von drei Wochen und behält die im Schnitt 35-stündige Wochenruhe über den 14-Tage-Zeitraum im Blick." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation, freie Tage und Wochenruhe." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Rotation, freie Tage und Überstunden, ein Plan",
-    "text": "Klacks staffelt die Überstundenvergütung korrekt (18 Stunden zu 50 %, danach 100 %), sichert die zwei freien Tage pro Woche und behält die im Schnitt 35-stündige Wochenruhe über 14 Tage im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks staffelt die Überstundenvergütung korrekt (18 Stunden zu 50 %, danach 100 %), plant die zwei freien Tage pro Woche ein und behält die im Schnitt 35-stündige Wochenruhe über 14 Tage im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

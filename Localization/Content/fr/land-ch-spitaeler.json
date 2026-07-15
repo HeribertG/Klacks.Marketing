@@ -36,7 +36,7 @@
       {
         "icon": "hourglass_top",
         "title": "Garder un œil sur la future BGAP",
-        "text": "Pour le personnel soignant, la loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet &mdash; qui planifie déjà rigoureusement aujourd'hui sera prêt lors de son entrée en vigueur."
+        "text": "Pour le personnel soignant, la loi fédérale sur les conditions de travail dans les soins infirmiers (BGAP) &mdash; l'initiative sur les soins infirmiers &mdash; n'est pas encore en vigueur, mais prévoit à l'avenir une durée maximale de travail de 45 heures, davantage de délai d'annonce pour la planification des services et une compensation réglementée du piquet &mdash; qui planifie déjà rigoureusement aujourd'hui sera prêt lors de son entrée en vigueur."
       }
     ]
   },
@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Heures des médecins-assistant·e·s surveillées automatiquement",
-        "text": "La limite de 50 heures et le plafond annuel de 140 heures d'heures supplémentaires sont vérifiés en continu &mdash; les infractions n'apparaissent jamais."
+        "text": "Klacks surveille en continu la limite hebdomadaire de 50 heures et signale immédiatement tout dépassement &mdash; le plafond annuel de 140 heures d'heures supplémentaires peut être enregistré comme valeur de référence."
       },
       {
         "icon": "call",
@@ -76,15 +76,15 @@
       },
       {
         "icon": "bedtime",
-        "title": "Majoration de nuit calculée automatiquement",
-        "text": "Klacks calcule automatiquement le crédit-temps de 10 % pour le travail de nuit régulier conformément à l'art. 17b LTr &mdash; sous forme de temps libre, pas de versement."
+        "title": "Majoration de nuit documentée automatiquement",
+        "text": "Klacks calcule et documente automatiquement les heures de nuit soumises à majoration selon l'art. 17b LTr &mdash; comme base du crédit-temps légal."
       }
     ]
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Rotation des médecins-assistant·e·s et piquet, un seul planning",
-    "text": "Klacks garde un œil sur la limite de 50 heures et les heures supplémentaires annuelles, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
+    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -23,8 +23,8 @@
     "subtitle": "From covered posts to valid SIA licences &mdash; everything works together.",
     "items": [
       { "icon": "shield", "title": "Sites &amp; posts with no gaps", "text": "Every post across every site &mdash; Klacks shows every open slot immediately and fills it automatically on request." },
-      { "icon": "badge", "title": "SIA licences checked automatically", "text": "Klacks only assigns shifts to staff with a valid SIA licence &mdash; and warns before a licence expires." },
-      { "icon": "bedtime", "title": "Night workers identified automatically", "text": "Klacks identifies who counts as a \"night worker\" under the Working Time Regulations and keeps track of when the health assessment is due." },
+      { "icon": "badge", "title": "SIA licence matched automatically, expiry in view", "text": "Klacks only assigns shifts to staff with the matching SIA licence qualification &mdash; and warns before a licence on file expires." },
+      { "icon": "bedtime", "title": "Night workers identified automatically", "text": "Klacks automatically identifies who counts as a \"night worker\" under the Working Time Regulations &mdash; the basis for triggering the statutory health assessment in good time." },
       { "icon": "route", "title": "Patrols optimised", "text": "For mobile patrol services, Klacks plans routes so journeys stay short and intervals are met." },
       { "icon": "shield_lock", "title": "On-premise: data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; deployment and client data stay with you, not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice or chat", "text": "\"Cover the night shift at the North site\" is all it takes &mdash; Klacksy checks SIA licensing, availability and night-worker status." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "Night shift, licence, one plan",
-    "text": "Klacks automatically identifies night workers, checks the SIA licence of every person rostered, and keeps track of when the health assessment is due &mdash; no manual recalculating required."
+    "text": "Klacks automatically identifies night workers, assigns shifts only to staff with the matching SIA licence qualification, and so provides the basis for the health assessment that falls due &mdash; no manual recalculating required."
   },
   "showRoutePlanning": true,
   "cta": {

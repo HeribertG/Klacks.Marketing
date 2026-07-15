@@ -1,53 +1,49 @@
 {
-  "pageTitle": "Klacks für Italien | Riposo giornaliero und Reperibilità korrekt geplant",
+  "pageTitle": "Klacks für italienische Unternehmen | Open Source Personaleinsatzplanung mit Datenhoheit",
   "hero": {
-    "badgeIcon": "shield_lock",
-    "badge": "Für Krankenhäuser und Pflegeeinrichtungen in Italien",
-    "titleHtml": "11 Stunden Riposo giornaliero &mdash; <span class=\"text-secondary\">auch wenn die Reperibilità dazwischenfunkt.</span>",
-    "subtitle": "Der Decreto Legislativo n. 66/2003 garantiert jeder Arbeitskraft mindestens 11 zusammenhängende Ruhestunden pro 24-Stunden-Zeitraum (riposo giornaliero). Wird ein Bereitschaftsdienst (reperibilità) durch einen Einsatz unterbrochen, muss die Ruhezeit ausgesetzt und binnen 3 Tagen nachgeholt werden &mdash; ein Nachrechnen von Hand ist fehleranfällig.",
-    "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster",
-    "screenshotLabel": "Dienstplan"
+    "badgeIcon": "balance",
+    "badge": "Open Source · On-Premise · Italienischer Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; On-Premise, Open Source, mit dem KI-Modell Ihrer Wahl. Klacksy arbeitet dabei regelbasiert und nachvollziehbar statt mit intransparenter algorithmischer Fernkontrolle &mdash; das erleichtert die nach Art. 4 Statuto dei Lavoratori (Legge n. 300/1970) nötige Einigung mit RSU/RSA oder die Genehmigung des Ispettorato del Lavoro.",
+    "screenshotFile": "app-calendar-de.png",
+    "screenshotAlt": "Klacks Kalenderansicht für die Personaleinsatzplanung in Italien",
+    "screenshotLabel": "Kalender"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in italienischen Kliniken",
-    "title": "Riposo giornaliero und Reperibilità im Zusammenspiel",
+    "eyebrow": "Der Alltag in italienischen Unternehmen",
+    "title": "Arbeitsrecht, Mitbestimmung und Kontrolle über die eigenen Daten",
     "items": [
-      { "icon": "hourglass_top", "title": "11 Stunden Riposo giornaliero", "text": "Art. 7 D.Lgs. 66/2003 garantiert 11 zusammenhängende Ruhestunden pro 24 Stunden &mdash; ein Grundrecht, das auch bei Personalknappheit nicht verhandelbar ist." },
-      { "icon": "schedule", "title": "Reperibilità unterbricht die Ruhezeit", "text": "Bereitschaftsdienst selbst zählt nicht als Arbeitszeit, ein Abruf während der Reperibilità setzt die Ruhezeit aber aus &mdash; der Ausgleich muss binnen 3 Tagen nachgeholt werden." },
-      { "icon": "groups", "title": "Brain Drain der Pflegekräfte", "text": "Italienische Kliniken verlieren Pflegepersonal an besser bezahlte Märkte wie die Schweiz oder Grossbritannien &mdash; verbleibende Teams müssen die Riposo-giornaliero-Regel trotz dünnerer Personaldecke lückenlos einhalten." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Datenhoheit",
-    "title": "Volle Datenhoheit: Open Source &amp; On-Premise",
-    "text": "Klacks wurde für Branchen mit strengen Sicherheits- und Compliance-Anforderungen entwickelt, in denen sensible Mitarbeiterdaten die eigene Infrastruktur nicht verlassen sollen. Als quelloffene Lösung lässt sich Klacks direkt in Ihrem eigenen Rechenzentrum oder auf gesicherten lokalen Servern betreiben &mdash; ohne Abhängigkeit von US-Cloud-Anbietern. Das erleichtert die Einhaltung der DSGVO und der Vorgaben der italienischen Datenschutzbehörde Garante in eigener Regie.",
-    "bullets": [
-      "On-Premise-Souveränität: volle Kontrolle über Dienstpläne, Ruhezeit-Nachweise und Protokolle innerhalb der eigenen IT-Umgebung.",
-      "Freie LLM-Architektur: KI-gestützte Planungsvorschläge lassen sich auch mit lokal gehosteten Sprachmodellen betreiben, ohne dass Daten an externe APIs abfliessen.",
-      "Auditierbarer Quellcode: vollständig einsehbare Codebasis für IT-Audits und Gewerkschaften."
+      { "icon": "gavel", "title": "Statuto dei Lavoratori Art. 4", "text": "Fernüberwachung und algorithmische Kontrolle von Mitarbeitenden sind ohne vorherige Einigung mit RSU/RSA oder Genehmigung des Ispettorato del Lavoro untersagt (Legge n. 300/1970) &mdash; auch bei automatisierter Planungssoftware." },
+      { "icon": "schedule", "title": "Viele CCNL, viele Arbeitszeitregeln", "text": "Die gesetzliche Normalarbeitszeit liegt bei 40 Stunden pro Woche, viele Tarifverträge setzen sie auf 38 oder 36 Stunden herab &mdash; die Höchstarbeitszeit inklusive Überstunden bleibt im Schnitt bei 48 Stunden über mehrere Monate (D.Lgs. 66/2003, Art. 3 &amp; 4)." },
+      { "icon": "shield_lock", "title": "Garante Privacy &amp; Datenhoheit", "text": "Sensible Mitarbeiterdaten wie Überstundensalden oder Krankheitsdaten unterliegen strengen Vorgaben der italienischen Datenschutzbehörde Garante &mdash; besonders bei Datenverarbeitung außerhalb der EU." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks Riposo giornaliero und Reperibilità zusammen im Blick behält",
-    "subtitle": "Ausgesetzte Ruhezeiten automatisch erkannt, Ausgleich innerhalb von 3 Tagen eingeplant.",
+    "title": "Wie Klacks italienische Unternehmen entlastet",
+    "subtitle": "Von der automatischen Dienstplanung bis zur eigenen Infrastruktur &mdash; alles unter Ihrer Kontrolle.",
     "items": [
-      { "icon": "bolt", "title": "Recovery-Engine für Ausfälle", "text": "Fällt eine Fachkraft aus, findet Klacks sofort einen qualifizierten Ersatz &mdash; ohne dass daraus ungeplant eine Ruhezeit-Verletzung entsteht." },
-      { "icon": "fact_check", "title": "Reperibilità-Tracking mit 3-Tage-Ausgleich", "text": "Wird die Riposo giornaliero durch einen Abruf während der Reperibilità ausgesetzt, plant Klacks den gesetzlichen Ausgleich automatisch innerhalb der 3-Tage-Frist ein." },
-      { "icon": "calendar_month", "title": "Autofill-Wizard für Bereitschaftsrotationen", "text": "Der GA-gestützte Autofill-Assistent plant Reperibilità-Rotationen unter Einhaltung der 11-Stunden-Ruhezeit automatisch mit ein." },
-      { "icon": "groups", "title": "Qualifikationsgenaue Einsatzplanung", "text": "Nur Mitarbeitende mit passender Qualifikation werden für eine Schicht vorgeschlagen &mdash; wichtig bei dünner Personaldecke." }
+      { "icon": "auto_awesome", "title": "Dienste automatisch geplant", "text": "Der Autofill-Wizard plant Schichten und Touren nach Qualifikation, Verfügbarkeit und Wunsch &mdash; in Minuten statt Stunden." },
+      { "icon": "gavel", "title": "Arbeitszeit- &amp; Ruhezeitregeln automatisch geprüft", "text": "Normalarbeitszeit, Höchstarbeitszeit und die tägliche Ruhezeit von mindestens 11 Stunden je 24 Stunden werden je nach hinterlegtem CCNL in Echtzeit überwacht (D.Lgs. 66/2003, Art. 7 &amp; 9)." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Wo Einsätze an wechselnden Orten stattfinden, legt Klacks die Reihenfolge so, dass Wege kurz und Zeitfenster eingehalten werden." },
+      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personaldaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI, was die Vorgaben des Garante Privacy in eigener Regie erleichtert." },
+      { "icon": "code", "title": "Open Source: nachvollziehbar &amp; anpassbar", "text": "Der Quellcode liegt offen &mdash; Sie sehen, was Klacks tut, und schaffen damit die Transparenz, die Art. 4 Statuto dei Lavoratori gegenüber RSU/RSA verlangt." }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
-    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Ruhezeit-Vorgaben der Beteiligten passen.",
+    "title": "Klacksy: Der integrierte Assistent mit freier Modellwahl",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet und lässt sich mit dem KI-Modell Ihrer Wahl betreiben &mdash; auch lokal gehostet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass jeder Vorschlag nachvollziehbar bleibt: keine intransparente algorithmische Fernkontrolle im Sinne von Art. 4 Statuto dei Lavoratori, sondern regelbasierte, erklärbare Planung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Dienstplan, mehrere Tarifverträge im Griff",
+    "text": "Ein Betrieb mit unterschiedlichen CCNL für verschiedene Teams plant Schichten, Klacks prüft automatisch die jeweils geltende Normalarbeitszeit und die 11-Stunden-Ruhezeit &mdash; nachvollziehbar für RSU/RSA und ohne dass Personaldaten das Haus verlassen."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks für italienische Kliniken testen",
-    "text": "Erleben Sie im Playground, wie Klacks Riposo giornaliero und Reperibilità automatisch zusammenführt &mdash; oder betreiben Sie Klacks On-Premise für volle Datenhoheit."
+    "title": "Klacks in Ihrem Unternehmen erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, CCNL-Arbeitszeitregeln prüft und sich per KI-Assistent steuern lässt &mdash; oder installieren Sie direkt On-Premise. Kostenlos und ohne Registrierung."
   }
 }

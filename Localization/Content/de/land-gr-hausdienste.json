@@ -13,7 +13,7 @@
     "eyebrow": "Der Reinigungs-Alltag in Griechenland",
     "title": "ERGANI-Pflicht, Parallelbeschäftigung und Pausen",
     "items": [
-      { "icon": "fact_check", "title": "Digitale Arbeitskarte ab 12. Oktober 2026", "text": "Gebäude- und Aussenreinigung fällt unter Phase A der digitalen Arbeitskarte &mdash; jeder Objekt-Einsatz muss lückenlos gemeldet sein, sonst drohen 10.500 € pro Mitarbeitendem." },
+      { "icon": "fact_check", "title": "Digitale Arbeitskarte ab 12. Oktober 2026", "text": "Gebäude- und Außenreinigung fällt unter Phase A der digitalen Arbeitskarte &mdash; jeder Objekt-Einsatz muss lückenlos gemeldet sein, sonst drohen 10.500 € pro Mitarbeitendem." },
       { "icon": "alt_route", "title": "Parallelbeschäftigung bei mehreren Arbeitgebern", "text": "Viele Reinigungskräfte arbeiten für mehrere Auftraggeber &mdash; die 11-stündige Tagesruhe je 24 Stunden (Gesetz 5053/2023, Art. 9) muss dabei trotzdem gewahrt bleiben, woraus sich rechnerisch bis zu 13 Stunden Gesamtarbeitszeit ergeben." },
       { "icon": "pause_circle", "title": "Pausen nach Gesetz 4093/2012", "text": "Ab 6 Stunden Arbeitszeit ist eine 15-minütige Pause vorgeschrieben &mdash; bei wechselnden Objekten und Teilzeitkräften leicht zu übersehen." }
     ]
@@ -23,8 +23,8 @@
     "subtitle": "Von der optimierten Route bis zur korrekten Ruhezeit &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben." },
-      { "icon": "fact_check", "title": "ERGANI-konform ab 12. Oktober 2026", "text": "Klacks dokumentiert jeden Objekt-Einsatz lückenlos &mdash; bereit für die Meldepflicht, ohne das Risiko der 10.500-€-Busse." },
-      { "icon": "alt_route", "title": "Parallelbeschäftigung korrekt begrenzt", "text": "Klacks wahrt die 11-stündige Tagesruhe je 24 Stunden automatisch, auch wenn Mitarbeitende für mehrere Auftraggeber im Einsatz sind &mdash; inklusive der seit Gesetz 5239/2025 möglichen 13-Stunden-Tage bei einem einzigen Arbeitgeber, begrenzt auf 37,5 Tage im Jahr." },
+      { "icon": "fact_check", "title": "ERGANI-konform ab 12. Oktober 2026", "text": "Klacks dokumentiert jeden Objekt-Einsatz lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht." },
+      { "icon": "alt_route", "title": "Parallelbeschäftigung im Blick", "text": "Klacks wahrt die 11-stündige Tagesruhe innerhalb des bei Ihnen geplanten Einsatzes automatisch &mdash; die Abstimmung mit weiteren Auftraggebern bleibt bei Ihnen. Inklusive der seit Gesetz 5239/2025 möglichen 13-Stunden-Tage bei einem einzigen Arbeitgeber, deren 37,5-Tage-Jahresgrenze Klacks im Blick behält." },
       { "icon": "pause_circle", "title": "Pausen automatisch eingeplant", "text": "Die 15-minütige Pause ab 6 Stunden Arbeitszeit (Gesetz 4093/2012) wird für jede Schicht automatisch mitgeplant." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Aushilfen &mdash; Klacks behält den Überblick und schlägt passende Einteilungen vor." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte für morgen früh“ genügt &mdash; Klacksy optimiert Route, Team und Pausen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mehrere Auftraggeber, ein Plan",
-    "text": "Klacks erkennt Parallelbeschäftigung automatisch, wahrt die 11-stündige Tagesruhe und plant die vorgeschriebene Pause gleich mit ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks wahrt die 11-stündige Tagesruhe innerhalb des bei Ihnen geplanten Einsatzes automatisch und plant die vorgeschriebene Pause gleich mit ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

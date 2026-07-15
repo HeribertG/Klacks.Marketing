@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste in Irland",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">korrekt abgerechnet.</span>",
-    "subtitle": "Klacks teilt Objekte und wechselnde Teams effizient ein &mdash; mit dem ERO-Mindestlohn, dem Nachtzuschlag zwischen Mitternacht und 6 Uhr und dem doppelten Sonntagssatz automatisch berücksichtigt. Touren werden zugleich automatisch optimiert.",
+    "subtitle": "Klacks teilt Objekte und wechselnde Teams effizient ein &mdash; mit dem ERO-Mindestlohn zentral hinterlegt sowie dem Nachtzuschlag zwischen Mitternacht und 6 Uhr und dem doppelten Sonntagssatz automatisch berücksichtigt. Touren werden zugleich automatisch optimiert.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Irland",
     "screenshotLabel": "Dienstplan"
@@ -22,18 +22,18 @@
     "title": "Wie Klacks Hausdienste in Irland entlastet",
     "subtitle": "Von der optimierten Route bis zum korrekten ERO-Zuschlag &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
-      { "icon": "payments", "title": "ERO-Mindestlohn automatisch angewendet", "text": "Klacks rechnet mit dem aktuellen ERO-Satz von €14,80 pro Stunde ab 1.1.2026 und passt künftige Anhebungen zentral an." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "payments", "title": "ERO-Mindestlohn zentral hinterlegt", "text": "Klacks hinterlegt den aktuellen ERO-Satz von €14,80 pro Stunde ab 1.1.2026 zentral, künftige Anhebungen passen Sie an einer Stelle an." },
       { "icon": "bedtime", "title": "Nachtzuschlag im richtigen Zeitfenster", "text": "Der Nachtzuschlag von €1,00 pro Stunde zwischen 00:00 und 06:00 Uhr wird nur bei mindestens 3 Stunden Arbeit in diesem Fenster korrekt berechnet &mdash; Klacks prüft das automatisch." },
       { "icon": "event_repeat", "title": "Sonntagsarbeit zum doppelten Satz erfasst", "text": "Klacks erkennt Sonntagseinsätze automatisch und rechnet den doppelten Stundensatz von €29,60 pro Stunde (ab 1.1.2026)." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI." },
-      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Nord für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team und berücksichtigt die ERO-Sätze gleich mit." }
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Nord für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team und rechnet mit den hinterlegten ERO-Sätzen gleich mit." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, ERO-Mindestlohn und Zuschläge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen optimiert, den ERO-Mindestlohn zentral hinterlegt und Zuschläge automatisch berechnet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

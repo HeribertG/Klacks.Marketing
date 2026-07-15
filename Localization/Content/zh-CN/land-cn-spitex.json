@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "home_health",
     "badge": "面向中国居家养老护理(养老护理)行业",
-    "titleHtml": "护理排班,<span class=\"text-secondary\">精准契合核定周期。</span>",
-    "subtitle": "Klacks 严格按照经当地劳动行政部门审批的综合计算工时工作制核定周期汇总工时 &mdash; 只有当周期内实际工时超过核定标准工时时,才会产生加班。",
+    "titleHtml": "护理排班,<span class=\"text-secondary\">周期标准工时一目了然。</span>",
+    "subtitle": "Klacks 按周、按月持续汇总工时,并将进度清晰对照经当地劳动行政部门审批的综合计算工时工作制核定周期 &mdash; 以此为基础,只有当周期内实际工时确实超过核定标准工时,才会识别加班。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 中国护理排班时间轴视图",
     "screenshotLabel": "时间轴"
@@ -22,8 +22,8 @@
     "title": "Klacks 如何为中国居家养老护理机构减负",
     "subtitle": "从精准的周期工时汇总到本地数据主权 &mdash; 环环相扣,浑然一体。",
     "items": [
-      { "icon": "fact_check", "title": "精准管理周期工时", "text": "Klacks 严格按照经审批的核算周期(周、月、季度或年)汇总工时 &mdash; 只有当周期内实际工时确实超过标准工时,系统才会提示加班。" },
-      { "icon": "description", "title": "留存审批所需的完整记录", "text": "Klacks 按照当地劳动行政部门审批综合计算工时工作制所要求的格式,完整留存周期工时数据。" },
+      { "icon": "fact_check", "title": "周期工时持续可见", "text": "Klacks 按周、按月持续汇总工时,并随时显示进度相对于经审批的周期标准工时的情况 &mdash; 以此为基础,只有当周期确实显示超时,才会识别加班。" },
+      { "icon": "description", "title": "报表作为审批依据", "text": "Klacks 提供工时与周期报表,作为向当地劳动行政部门申请综合计算工时工作制审批材料的依据。" },
       { "icon": "route", "title": "自动规划护理路线", "text": "Klacks 会合理安排护理任务的先后顺序,确保时间窗口不被延误 &mdash; 无论是驾车、骑行还是步行。" },
       { "icon": "verified", "title": "自动匹配资质要求", "text": "每项任务只会分配给具备相应资质的人员 &mdash; 无需人工逐一核实。" },
       { "icon": "shield_lock", "title": "本地部署:患者数据不出境", "text": "Klacks 运行在您自有的基础设施上。敏感的健康数据和人员数据始终不会离开中国 &mdash; 因此无需再进行PIPL规定的数据出境安全评估。" },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "实例",
     "title": "周期工时汇总,一目了然",
-    "text": "Klacks 持续按经审批的核算周期汇总每位护理人员的工时,只有当周期标准工时确实被超过时,才会提示加班 &mdash; 无需在每个自然日结束时人工重新核算。"
+    "text": "Klacks 按周、按月持续汇总每位护理人员的工时,并显示进度相对于经审批的周期标准工时的情况 &mdash; 以此为基础,只有当周期确实显示超时,才会识别加班,而不必在每个自然日结束时人工重新核算。"
   },
   "showRoutePlanning": true,
   "cta": {

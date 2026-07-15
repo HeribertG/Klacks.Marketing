@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Mã nguồn mở &middot; On-Premise &middot; Chủ quyền dữ liệu tại Việt Nam",
     "titleHtml": "Lập lịch nhân sự, nơi <span class=\"text-secondary\">bạn luôn giữ quyền kiểm soát.</span>",
-    "subtitle": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm) và tính công thức phụ cấp làm đêm lũy tiến theo Bộ luật Lao động 2019 &mdash; đồng thời vận hành On-Premise để dữ liệu chấm công sinh trắc học luôn nằm trong hạ tầng riêng của bạn.",
+    "subtitle": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm) và cung cấp cơ sở tính giờ minh bạch cho các mức phụ cấp làm đêm cộng dồn theo Bộ luật Lao động 2019 &mdash; đồng thời vận hành On-Premise để dữ liệu nhân sự và lập lịch của bạn luôn nằm trong hạ tầng riêng.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tổng quan lịch làm việc Klacks cho doanh nghiệp tại Việt Nam",
     "screenshotLabel": "Lịch làm việc"
@@ -23,9 +23,9 @@
     "subtitle": "Từ giới hạn làm thêm giờ được giám sát tự động đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
       { "icon": "gavel", "title": "Giới hạn 3 cấp được giám sát tự động", "text": "Klacks liên tục đối chiếu giới hạn ngày, tháng và năm (Điều 107) và cảnh báo trước khi một trong các cấp bị vượt quá." },
-      { "icon": "bedtime", "title": "Tính đúng phụ cấp làm thêm giờ ban đêm", "text": "Klacks tự động tính công thức lồng nhau gồm mức cơ bản, 30% phụ cấp làm đêm và thêm 20% nữa (Điều 98) &mdash; bao gồm cả mức cộng dồn 210% hoặc 270%." },
-      { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca được tuân thủ", "text": "Khung giờ làm đêm từ 22:00 đến 06:00 (Điều 106) và thời gian nghỉ 12 giờ giữa hai ca (Điều 110) được tự động tính đến trong lịch làm việc." },
-      { "icon": "fingerprint", "title": "Tuân thủ quy định về dữ liệu sinh trắc học, không cần chuyển ra nước ngoài", "text": "Lưu trữ On-Premise giữ toàn bộ dữ liệu chấm công sinh trắc học trong mạng nội bộ của doanh nghiệp &mdash; không cần đến hồ sơ đánh giá tác động chuyển dữ liệu theo Nghị định 13/2023." },
+      { "icon": "bedtime", "title": "Nắm vững mức phụ cấp làm đêm và làm thêm giờ", "text": "Bạn thiết lập các mức phụ cấp theo Điều 98 dưới dạng hệ số có thể cấu hình &mdash; Klacks tự động gán phụ cấp cho các ca làm đêm và ghi lại từng giờ làm việc làm cơ sở rõ ràng cho mức cộng dồn 210% hoặc 270% trong bảng lương của bạn." },
+      { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca trong tầm kiểm soát", "text": "Klacks tự động nhận biết các ca làm đêm và kiểm tra thời gian nghỉ 12 giờ giữa hai ca (Điều 110) &mdash; kèm cảnh báo trước khi thời gian nghỉ bị vi phạm." },
+      { "icon": "fingerprint", "title": "On-Premise, không cần chuyển dữ liệu ra nước ngoài", "text": "Klacks không thu thập dữ liệu sinh trắc học &mdash; dữ liệu nhân sự và lập lịch mà Klacks sử dụng được lưu trữ On-Premise, giữ toàn bộ trong mạng nội bộ của doanh nghiệp, hoàn toàn không cần đến hồ sơ đánh giá tác động chuyển dữ liệu theo Nghị định 13/2023." },
       { "icon": "shield_lock", "title": "On-Premise: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn, bạn tự chọn mô hình AI &mdash; kể cả lưu trữ nội bộ hoàn toàn, không có dữ liệu nhân sự nào chuyển ra nước ngoài." },
       { "icon": "smart_toy", "title": "Klacksy: dựa trên quy tắc, không phải hộp đen", "text": "Trợ lý AI tích hợp Klacksy lập lịch theo lệnh thoại &mdash; minh bạch theo các kỹ năng và quy tắc đã thiết lập sẵn, không phải quyết định AI khó hiểu." }
     ]
@@ -40,11 +40,11 @@
   "example": {
     "eyebrow": "Ví dụ thực tế",
     "title": "Phụ cấp làm đêm và giới hạn 3 cấp, một cái nhìn tổng quan",
-    "text": "Klacks tự động nhận biết khi một ca làm việc rơi vào khung giờ đêm hoặc khi một cấp của giới hạn làm thêm giờ đã đạt tới, và tính luôn mức phụ cấp cộng dồn &mdash; không cần tính toán thủ công."
+    "text": "Klacks tự động nhận biết khi một ca làm việc rơi vào khung giờ đêm hoặc khi một cấp của giới hạn làm thêm giờ đã đạt tới, và gán luôn mức phụ cấp đã thiết lập sẵn &mdash; các giờ làm việc được ghi lại sẽ là cơ sở để tính lương cộng dồn, không cần tính toán thủ công."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Trải nghiệm Klacks trong doanh nghiệp của bạn",
-    "text": "Hãy dùng thử trong Playground để xem Klacks tự động hóa giới hạn làm thêm giờ 3 cấp, công thức phụ cấp làm đêm cộng dồn và việc tuân thủ quy định về dữ liệu sinh trắc học như thế nào &mdash; On-Premise hoặc trong Playground, miễn phí và không cần đăng ký."
+    "text": "Hãy dùng thử trong Playground để xem Klacks giám sát giới hạn làm thêm giờ 3 cấp và tự động gán phụ cấp làm đêm như thế nào &mdash; On-Premise để có toàn quyền kiểm soát dữ liệu, miễn phí và không cần đăng ký."
   }
 }

@@ -22,10 +22,10 @@
     "title": "Wie Klacks Betriebe in Tschechien entlastet",
     "subtitle": "Vom schichtabhängigen Wochensoll bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "Wochensoll automatisch je Schichttyp", "text": "Klacks kennt die 40-, 38,75- und 37,5-Stunden-Normen je nach Schichtmodell und rechnet das jeweils gültige Wochensoll automatisch mit, ohne manuelles Nachschlagen." },
-      { "icon": "campaign", "title": "2-Wochen-Frist automatisch eingehalten", "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten." },
-      { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks verfolgt sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze automatisch &mdash; über den passenden 26- oder 52-Wochen-Zeitraum." },
-      { "icon": "edit_calendar", "title": "Selbst-Planung nach § 87a möglich", "text": "Für Mitarbeitende mit einer schriftlichen Self-Scheduling-Vereinbarung (seit 1.1.2025) hält Klacks automatisch die 12-Stunden-Schichtobergrenze und alle Ruhezeiten ein." },
+      { "icon": "schedule", "title": "Wochensoll automatisch je Schichttyp", "text": "Die 40-, 38,75- und 37,5-Stunden-Normen hinterlegen Sie je Schichtmodell als Vertragsbasis &mdash; Klacks rechnet das jeweils gültige Wochensoll automatisch mit, ohne manuelles Nachschlagen." },
+      { "icon": "campaign", "title": "2-Wochen-Frist im Blick", "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten." },
+      { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks hält sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze laufend sichtbar &mdash; über den passenden 26- oder 52-Wochen-Zeitraum." },
+      { "icon": "edit_calendar", "title": "Selbst-Planung nach § 87a möglich", "text": "Für Mitarbeitende mit einer schriftlichen Self-Scheduling-Vereinbarung (seit 1.1.2025) überwacht Klacks die 12-Stunden-Schichtobergrenze und alle Ruhezeiten automatisch und warnt bei Verstößen." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
@@ -45,6 +45,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks schichtabhängiges Wochensoll, Vorlauffristen und die 416-Stunden-Grenze automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks schichtabhängiges Wochensoll berechnet sowie Vorlauffristen und die 416-Stunden-Grenze überwacht &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

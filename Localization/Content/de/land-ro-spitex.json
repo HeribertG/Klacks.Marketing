@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (Îngrijire la domiciliu) in Rumänien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für Vertragsfallen.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren und bildet Wegzeit zwischen Klient:innen korrekt ab, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; und verhindert, dass Teilzeitkräfte ungewollt Überstunden zugeteilt bekommen.",
+    "subtitle": "Klacks plant Einsätze und Touren und bildet Wegzeit zwischen Klient:innen korrekt ab, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; und warnt live, bevor Teilzeitkräfte ungewollt Überstunden zugeteilt bekommen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Tourenplanung in der häuslichen Pflege in Rumänien",
     "screenshotLabel": "Timeline"
@@ -37,7 +37,7 @@
       {
         "icon": "route",
         "title": "Touren automatisch optimiert",
-        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuss."
+        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuß."
       },
       {
         "icon": "schedule",
@@ -46,13 +46,13 @@
       },
       {
         "icon": "block",
-        "title": "Teilzeit-Überstunden verhindert",
-        "text": "Klacks warnt, bevor einer Teilzeitkraft ohne entsprechende Vertragsklausel Überstunden zugeteilt werden &mdash; ausser bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten."
+        "title": "Teilzeit-Überstunden live erkannt",
+        "text": "Klacks warnt, bevor einer Teilzeitkraft ohne entsprechende Vertragsklausel Überstunden zugeteilt werden &mdash; außer bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten."
       },
       {
         "icon": "description",
         "title": "Vertragsklauseln im Blick",
-        "text": "Klacks hält fest, welche Verträge eine Überstundenklausel enthalten, und schützt so vor der ungewollten Umwandlung in einen Vollzeitvertrag."
+        "text": "Klacks hält fest, welche Verträge eine Überstundenklausel enthalten, und macht sichtbar, wo eine fehlende Klausel eine ungewollte Umwandlung in einen Vollzeitvertrag auslösen kann."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit und Teilzeitvertrag, ein Plan",
-    "text": "Klacks prüft automatisch, ob eine Teilzeitkraft laut Vertrag Wegzeit als Arbeitszeit erfasst bekommt, und verhindert unzulässige Überstunden, bevor sie entstehen."
+    "text": "Klacks prüft automatisch, ob eine Teilzeitkraft laut Vertrag Wegzeit als Arbeitszeit erfasst bekommt, und warnt vor unzulässigen Überstunden, bevor sie entstehen."
   },
   "showRoutePlanning": true,
   "cta": {

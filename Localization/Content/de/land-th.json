@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; Thailändischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks deckelt Überstunden und Feiertagsarbeit automatisch auf das gesetzliche Wochenlimit, reserviert Pausen verlässlich und läuft On-Premise &mdash; damit sensible biometrische Zeiterfassungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
+    "subtitle": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt rechtzeitig vor einer Überschreitung, reserviert Pausen verlässlich und läuft On-Premise &mdash; damit Ihre sensiblen Personal- und Planungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Thailand",
     "screenshotLabel": "Dienstplan"
@@ -13,7 +13,7 @@
     "eyebrow": "Der Planungsalltag in thailändischen Betrieben",
     "title": "36-Stunden-Limit, Pausenpflicht und PDPA-Biometrie",
     "items": [
-      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26, Labour Protection Act B.E. 2541). Verstösse werden mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet (Section 144) &mdash; von Hand pro Mitarbeitendem kaum zuverlässig zu überwachen." },
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26, Labour Protection Act B.E. 2541). Verstöße werden mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet (Section 144) &mdash; von Hand pro Mitarbeitendem kaum zuverlässig zu überwachen." },
       { "icon": "hourglass_top", "title": "Pausenpflicht nach 5 Stunden", "text": "Nach höchstens 5 aufeinanderfolgenden Arbeitsstunden ist eine Pause von mindestens 1 zusammenhängenden Stunde zu gewähren (Section 27, เวลาพัก / Wela Phak) &mdash; aufteilbar in mehrere Blöcke, solange die Tagessumme mind. 1 Stunde beträgt." },
       { "icon": "fingerprint", "title": "PDPA: Biometrische Zeiterfassung ist sensibel", "text": "Gesichts- oder Fingerabdruckscans zur Zeiterfassung gelten nach Section 26 PDPA (Personal Data Protection Act B.E. 2562) als sensible personenbezogene Daten und dürfen grundsätzlich nur mit ausdrücklicher Einwilligung verarbeitet werden. Die Durchsetzung ist real: Im November 2025 ordnete die PDPC die Löschung von rund 1,2 Mio. Iris-Datensätzen bei einem Anbieter an." }
     ]
@@ -22,11 +22,11 @@
     "title": "Wie Klacks thailändische Betriebe entlastet",
     "subtitle": "Von der automatischen 36h-Deckelung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "36h-Wochenlimit hart gedeckelt", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem live und sperrt die Planung, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und schützt so vor dem Strafrahmen nach Section 144." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar." },
       { "icon": "layers", "title": "Dreistufige Überstundensätze automatisch zugewiesen", "text": "Klacks weist die Überstundensätze automatisch zu &mdash; 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62) und 3,0-fach für Überstunden an Feiertagen/Ruhetagen (Section 63)." },
       { "icon": "hourglass_top", "title": "Pausenpflicht nach 5 Stunden eingeplant", "text": "Klacks reserviert die gesetzliche 1-Stunden-Pause nach maximal 5 Arbeitsstunden automatisch im Dienstplan &mdash; auch aufgeteilt in mehrere Blöcke (Section 27)." },
-      { "icon": "event_available", "title": "Ruhetag-Abstand max. 6 Tage", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und stellt sicher, dass zwischen zwei Ruhetagen nie mehr als 6 Tage liegen (Section 28)." },
-      { "icon": "shield_lock", "title": "PDPA-konforme On-Premise-Speicherung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; biometrische Zeiterfassungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden." },
+      { "icon": "event_available", "title": "Ruhetag-Abstand max. 6 Tage", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)." },
+      { "icon": "shield_lock", "title": "PDPA-konforme On-Premise-Speicherung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Ihre sensiblen Personal- und Planungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden. Eine eigene biometrische Zeiterfassung führt Klacks nicht." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
   },

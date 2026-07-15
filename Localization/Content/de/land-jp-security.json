@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (警備) in Japan",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Bereitschaftszeit korrekt erfasst.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und trennt bei 24-Stunden-Wachschichten sauber zwischen echter Ruhezeit und reaktionspflichtiger Wartezeit. On-Premise, damit Ihre Einsatz- und Kundendaten in Japan bleiben.",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und bildet bei 24-Stunden-Wachschichten reaktionspflichtige Wartezeit sauber getrennt von echter Ruhezeit als bezahlte Arbeitszeit ab. On-Premise, damit Ihre Einsatz- und Kundendaten in Japan bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung im Sicherheitsgewerbe in Japan",
     "screenshotLabel": "Timeline"
@@ -36,8 +36,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Ruhezeit und Wartezeit sauber getrennt",
-        "text": "Klacks trennt im Dienstplan echte Ruhezeit von reaktionspflichtiger Wartezeit (手待時間) während der Schlafphase einer 24-Stunden-Wachschicht &mdash; und rechnet Letztere korrekt als bezahlte Arbeitszeit."
+        "title": "Wartezeit sauber als Arbeitszeit abgebildet",
+        "text": "Klacks bildet reaktionspflichtige Wartezeit (手待時間) während der Schlafphase einer 24-Stunden-Wachschicht getrennt von echter Ruhezeit ab &mdash; und rechnet sie korrekt als bezahlte Arbeitszeit."
       },
       {
         "icon": "verified",
@@ -64,7 +64,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "24-Stunden-Wachschicht, ein Plan",
-    "text": "Klacks weist die Schlafphase einer 24-Stunden-Wachschicht automatisch als reaktionspflichtige Wartezeit aus, sobald ein Alarmdienst besteht &mdash; und rechnet sie korrekt als bezahlte Arbeitszeit statt als unbezahlte Pause."
+    "text": "Klacks bildet die Schlafphase einer 24-Stunden-Wachschicht bei bestehender Alarmpflicht als reaktionspflichtige Wartezeit ab &mdash; und rechnet sie korrekt als bezahlte Arbeitszeit statt als unbezahlte Pause."
   },
   "showRoutePlanning": true,
   "cta": {

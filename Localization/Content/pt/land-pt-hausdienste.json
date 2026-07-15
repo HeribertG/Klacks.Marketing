@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Para a limpeza &amp; serviços de limpeza em Portugal",
     "titleHtml": "Cada instalação <span class=\"text-secondary\">corretamente faturada.</span>",
-    "subtitle": "O Klacks distribui instalações e rotas com eficiência &mdash; com o subsídio noturno uniforme de 30% do CCT Limpeza para o período das 21h-06h automaticamente considerado.",
+    "subtitle": "O Klacks distribui instalações e rotas com eficiência &mdash; com o subsídio noturno uniforme de 30% do CCT Limpeza automaticamente considerado, configurado para o período tarifário das 21h&ndash;06h.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grelha de escalas de serviço do Klacks para equipas de limpeza e instalações em Portugal",
     "screenshotLabel": "Escala de serviço"
@@ -23,9 +23,9 @@
     "subtitle": "Da rota otimizada ao subsídio noturno correto &mdash; tudo funciona em conjunto.",
     "items": [
       { "icon": "route", "title": "Rotas entre instalações otimizadas", "text": "O Klacks define a ordem das instalações de forma a manter os percursos curtos &mdash; de carro, bicicleta ou a pé." },
-      { "icon": "bedtime", "title": "Subsídio noturno de 30% calculado corretamente", "text": "O Klacks calcula automaticamente o subsídio noturno uniforme de 30% para o período das 21:00 às 06:00 &mdash; nos termos da Cláusula 27 do CCT Limpeza." },
-      { "icon": "description", "title": "CCT atual sempre refletido", "text": "O Klacks mantém atualizadas as condições do CCT STTEPS Limpeza Industrial 2026-2027 &mdash; sem necessidade de atualização manual a cada alteração contratual." },
-      { "icon": "fingerprint", "title": "Registo de ponto em conformidade legal", "text": "O Klacks regista o tempo de trabalho de forma completa em instalações e equipas variáveis, tornando-o imediatamente consultável no local de trabalho." },
+      { "icon": "bedtime", "title": "Subsídio noturno de 30% atribuído automaticamente", "text": "O subsídio noturno uniforme de 30% (CCT Limpeza, Cláusula 27) pode ser configurado para o período tarifário das 21:00 às 06:00 &mdash; o Klacks atribui-o automaticamente às intervenções noturnas." },
+      { "icon": "description", "title": "Taxas do CCT registadas centralmente", "text": "As condições do CCT STTEPS Limpeza Industrial 2026-2027 ficam registadas de forma centralizada &mdash; ao ocorrer uma alteração contratual, ajusta as taxas uma única vez e elas aplicam-se de imediato a todos os planeamentos." },
+      { "icon": "fingerprint", "title": "Registo de ponto: base de dados sem lacunas", "text": "O Klacks regista o tempo de trabalho de forma completa em instalações e equipas variáveis, tornando-o imediatamente consultável no local de trabalho." },
       { "icon": "groups", "title": "Equipas distribuídas com flexibilidade", "text": "Escalas variáveis, trabalhadores temporários e férias: o Klacks mantém a visão geral e sugere as distribuições adequadas." },
       { "icon": "smart_toy", "title": "O Klacksy planeia por comando de voz", "text": "Basta dizer «Planeia o turno noturno para a instalação Lisboa-Este» &mdash; o Klacksy calcula a rota, a equipa e o subsídio noturno." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Na prática",
     "title": "Turno noturno e subsídio, um único plano",
-    "text": "O Klacks reconhece automaticamente as intervenções no período das 21:00 às 06:00 e calcula de imediato o subsídio noturno uniforme de 30% &mdash; sem cálculos manuais."
+    "text": "O Klacks reconhece automaticamente as intervenções noturnas no período configurado e atribui de imediato o subsídio noturno uniforme de 30% &mdash; sem cálculos manuais."
   },
   "showRoutePlanning": true,
   "cta": {

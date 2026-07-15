@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; UU PDP-konforme Zeiterfassung",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit und läuft On-Premise &mdash; damit biometrische Zeiterfassungsdaten, die das UU PDP als besonders schützenswert einstuft, in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit und läuft On-Premise &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für indonesische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -37,7 +37,7 @@
       {
         "icon": "hourglass_top",
         "title": "18-Stunden-Wochenlimit automatisch überwacht",
-        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und der schriftlichen Freigabe."
+        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und eines Hinweises auf die erforderliche schriftliche Freigabe."
       },
       {
         "icon": "calculate",
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "On-Premise: biometrische Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ohne dass sensible biometrische Zeiterfassungsdaten ins Ausland übertragen werden müssen."
+        "title": "On-Premise: Personaldaten bleiben im Haus",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ohne dass sensible Personal- und Planungsdaten ins Ausland übertragen werden müssen."
       },
       {
         "icon": "smart_toy",

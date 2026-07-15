@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Til hjemmeplejen i Danmark",
     "titleHtml": "Mere tid til pleje, <span class=\"text-secondary\">mindre til vagtplan-administration.</span>",
-    "subtitle": "Klacks planlægger ruter og vagter automatisk &mdash; inklusive den nye fritvalgsordning fra OK26 og 4-dages-fristen ved omlægninger. On-premise, så patientdata aldrig forlader jeres institution.",
+    "subtitle": "Klacks planlægger ruter og vagter automatisk &mdash; dokumenterer timerne til den nye fritvalgsordning fra OK26 og advarer om 4-dages-fristen ved omlægninger. On-premise, så patientdata aldrig forlader jeres institution.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for ruter i den danske hjemmepleje",
     "screenshotLabel": "Timeline"
@@ -41,13 +41,13 @@
       },
       {
         "icon": "savings",
-        "title": "Fritvalgsordning ført individuelt",
-        "text": "Klacks fører for hver medarbejder den individuelle valgkonto mellem fridage, løn og ekstra pension efter OK26 opdateret dag for dag."
+        "title": "Fritvalgsordning-timer dokumenteret",
+        "text": "Klacks dokumenterer for hver medarbejder de timer, der er relevante for fritvalgsordningen efter OK26 &mdash; som pålideligt grundlag for jeres lønbogholderi."
       },
       {
         "icon": "event_repeat",
         "title": "4-dages-frist overvåget automatisk",
-        "text": "Klacks advarer, før en omlægning underskrider 4-dages-fristen, og bogfører automatisk tillægget på 30,85 DKK pr. time, hvis det alligevel skal ske med kort varsel."
+        "text": "Klacks advarer, før en omlægning underskrider 4-dages-fristen, og tillægget på 30,85 DKK pr. time kan registreres som en tillægstype, hvis det alligevel skal ske med kort varsel."
       },
       {
         "icon": "call_split",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Omlægning og fritvalgsordning, én plan",
-    "text": "Klacks bogfører ved en omlægning under 4 dage automatisk tillægget på 30,85 DKK pr. time og fører samtidig hver medarbejders individuelle fritvalgsordning-konto videre &mdash; uden manuel efterregning."
+    "text": "Klacks advarer ved en omlægning under 4 dage om tillægget på 30,85 DKK pr. time og dokumenterer samtidig de timer, der er relevante for fritvalgsordningen, for hver medarbejder &mdash; som pålideligt grundlag for lønbogholderiet."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Oplev Klacks i jeres hjemmepleje",
-    "text": "Prøv i playgrounden, hvordan Klacks overtager ruter, fritvalgsordning og omlægningsfrister &mdash; eller installer det direkte på jeres egen infrastruktur. Gratis og uden registrering."
+    "text": "Prøv i playgrounden, hvordan Klacks planlægger ruter, dokumenterer fritvalgsordning-timer og holder øje med omlægningsfrister &mdash; eller installer det direkte på jeres egen infrastruktur. Gratis og uden registrering."
   }
 }

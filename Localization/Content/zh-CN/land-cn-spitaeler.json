@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "面向中国医院与诊所",
     "titleHtml": "值班与加班,<span class=\"text-secondary\">泾渭分明。</span>",
-    "subtitle": "Klacks 将值班与加班分别记录 &mdash; 夜班期间的实质性工作会被自动标记为应付加班工资,防患于未然,避免日后对簿公堂。",
+    "subtitle": "Klacks 将值班(zhíbān)与加班(jiābān)作为两种独立的班次类型分别记录 &mdash; 夜班期间的实质性工作可一键标记为应付加班工资的加班,防患于未然,避免日后对簿公堂。",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks 中国医院排班表视图",
     "screenshotLabel": "排班表"
@@ -22,18 +22,18 @@
     "title": "Klacks 如何为中国医院减负",
     "subtitle": "从清晰区分值班与加班到实现24/7全时段覆盖 &mdash; 环环相扣,浑然一体。",
     "items": [
-      { "icon": "fact_check", "title": "清晰区分记录值班与加班", "text": "Klacks 将夜间值班与实际工作分别记录 &mdash; 值班期间发生的实质性工作会被自动标记为应付加班工资的加班。" },
-      { "icon": "payments", "title": "150%/200%/300%精准匹配", "text": "一旦值班在法律上被认定为加班,Klacks 会依据第44条自动核算相应的加班工资 &mdash; 工作日150%,休息日200%,法定节假日300%且不得以调休替代。" },
+      { "icon": "fact_check", "title": "清晰区分记录值班与加班", "text": "Klacks 将夜间值班与实际工作作为两种独立的班次类型分别记录 &mdash; 值班期间发生的实质性工作可直接标记为应付加班工资的加班。" },
+      { "icon": "payments", "title": "200%/300%自动匹配", "text": "一旦值班在法律上被认定为加班,Klacks 会依据第44条自动匹配休息日(200%)和法定节假日(300%,不得以调休替代)加班工资;工作日150%的加班工资可作为另一项加班类型单独设置。" },
       { "icon": "gavel", "title": "实时掌控加班上限", "text": "Klacks 持续将真正的加班时间汇总,并对照法定加班上限进行监控 &mdash; 覆盖所有科室和轮班。" },
       { "icon": "schedule", "title": "全天候24/7无缝覆盖", "text": "白班、晚班与夜班覆盖所有科室 &mdash; Klacks 会即时显示每一处排班缺口,并可根据需要自动填补。" },
       { "icon": "shield_lock", "title": "本地部署:患者数据不出院区", "text": "Klacks 运行在您自有的基础设施上。人员和患者数据既不会离开医院,也不会离开中国 &mdash; 包括提供给AI处理时也是如此。" },
-      { "icon": "smart_toy", "title": "Klacksy 语音排班", "text": "Klacksy 在排班时会自动判断某个夜班应归类为值班还是加班,并给出相应的正确报酬建议。" }
+      { "icon": "smart_toy", "title": "Klacksy 语音排班", "text": "Klacksy 会协助判断某个夜班应归类为值班还是加班,并给出相应的报酬建议。" }
     ]
   },
   "example": {
     "eyebrow": "实例",
     "title": "夜间值班,一目了然",
-    "text": "若某位医护人员在夜间值班期间处理了一次急诊,Klacks 会自动将该时段标记为加班,并依据第44条核算相应加班工资 &mdash; 无需日后再对簿公堂厘清性质。"
+    "text": "若某位医护人员在夜间值班期间处理了一次急诊,可直接将该时段标记为加班 &mdash; Klacks 会依据第44条自动匹配休息日或法定节假日加班工资,并留存清晰记录,以备日后对簿公堂。"
   },
   "showRoutePlanning": false,
   "cta": {

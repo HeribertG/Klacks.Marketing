@@ -1,30 +1,30 @@
 {
-  "pageTitle": "Klacks für häusliche Pflege Grossbritannien | Wegzeit & National Living Wage",
+  "pageTitle": "Klacks für häusliche Pflege Großbritannien | Wegzeit & National Living Wage",
   "hero": {
     "badgeIcon": "home_health",
-    "badge": "Für häusliche &amp; ambulante Pflege (Domiciliary Care) in Grossbritannien",
+    "badge": "Für häusliche &amp; ambulante Pflege (Domiciliary Care) in Großbritannien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Lohnabrechnung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klient:innen als bezahlte Arbeitszeit, damit der Effektivlohn zuverlässig über dem National Living Wage bleibt. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klient:innen als bezahlte Arbeitszeit, für eine korrekte Zeitbasis gegenüber dem National Living Wage. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
-    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Grossbritannien",
+    "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Großbritannien",
     "screenshotLabel": "Timeline"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in der häuslichen Pflege in Grossbritannien",
+    "eyebrow": "Der Alltag in der häuslichen Pflege in Großbritannien",
     "title": "Wegzeit, National Living Wage und Nachweispflicht",
     "items": [
-      { "icon": "alt_route", "title": "Wegzeit zwischen Klient:innen zählt als Arbeitszeit", "text": "Fahrten zwischen Klient:innen während eines Einsatztages gelten nach gängiger HMRC-Praxis als vergütungspflichtige Arbeitszeit, damit der effektive Stundenlohn nicht unter den National Living Wage rutscht &mdash; nur die erste Anfahrt und die letzte Heimfahrt bleiben aussen vor." },
+      { "icon": "alt_route", "title": "Wegzeit zwischen Klient:innen zählt als Arbeitszeit", "text": "Fahrten zwischen Klient:innen während eines Einsatztages gelten nach gängiger HMRC-Praxis als vergütungspflichtige Arbeitszeit, damit der effektive Stundenlohn nicht unter den National Living Wage rutscht &mdash; nur die erste Anfahrt und die letzte Heimfahrt bleiben außen vor." },
       { "icon": "payments", "title": "National Living Wage steigt weiter", "text": "Seit 1. April 2026 gilt der National Living Wage von £12.71 pro Stunde &mdash; nach £12.21 seit April 2025. Dienstplan und Lohnlauf müssen diese Sätze synchron abbilden, sonst drohen Nachzahlungen." },
-      { "icon": "gavel", "title": "HMRC-Sanktionsrisiko bei Unterbezahlung", "text": "Verstösse gegen den National Living Wage können mit einer Nachzahlung von bis zu 200% plus öffentlicher Nennung (Naming-and-Shaming) durch HMRC geahndet werden &mdash; gedeckelt bei £20'000 pro Mitarbeiter:in." }
+      { "icon": "gavel", "title": "HMRC-Sanktionsrisiko bei Unterbezahlung", "text": "Verstöße gegen den National Living Wage können mit einer Nachzahlung von bis zu 200% plus öffentlicher Nennung (Naming-and-Shaming) durch HMRC geahndet werden &mdash; gedeckelt bei £20.000 pro Mitarbeiter:in." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacks die häusliche Pflege in Grossbritannien entlastet",
+    "title": "Wie Klacks die häusliche Pflege in Großbritannien entlastet",
     "subtitle": "Von der korrekten Wegzeit-Erfassung bis zum aktuellen Living-Wage-Satz &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
-      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Klient:innen werden automatisch als bezahlte Arbeitszeit gerechnet &mdash; nur An- und Rückfahrt zur ersten bzw. von der letzten Klientin bleiben aussen vor, ganz im Sinn des Grundsatzurteils HMRC v Taylors Services Ltd." },
-      { "icon": "payments", "title": "National Living Wage laufend geprüft", "text": "Klacks hat den aktuellen Satz von £12.71 pro Stunde hinterlegt und warnt, bevor der Effektivlohn inklusive Wegzeit darunter rutscht." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Klient:innen werden automatisch als bezahlte Arbeitszeit gerechnet &mdash; nur An- und Rückfahrt zur ersten bzw. von der letzten Klientin bleiben außen vor, ganz im Sinn des Grundsatzurteils HMRC v Taylors Services Ltd." },
+      { "icon": "payments", "title": "National Living Wage stets aktuell hinterlegt", "text": "Klacks hat den aktuellen Satz von £12.71 pro Stunde hinterlegt &mdash; als verlässliche Referenz für Ihre Zeit- und Lohnbasis inklusive Wegzeit." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, Living Wage, ein Plan",
-    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und hält den Effektivlohn zuverlässig über dem aktuellen National Living Wage von £12.71 pro Stunde &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und hinterlegt den aktuellen National Living Wage von £12.71 pro Stunde als Referenzwert für die Zeitbasis &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

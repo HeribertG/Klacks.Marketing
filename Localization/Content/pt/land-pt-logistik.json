@@ -23,8 +23,8 @@
     "subtitle": "Da rota otimizada ao subsídio correto &mdash; tudo funciona em conjunto.",
     "items": [
       { "icon": "route", "title": "Rotas otimizadas automaticamente", "text": "O Klacks organiza as paragens na ordem mais lógica &mdash; percursos curtos, janelas horárias respeitadas, menos viagens em vazio." },
-      { "icon": "gavel", "title": "Sobretaxa de 75% evitada automaticamente", "text": "O Klacks monitoriza continuamente os limites da Cláusula 21 e avisa antes de um excesso desencadear a sobretaxa de 75%." },
-      { "icon": "description", "title": "Novo CCT 2026 já refletido", "text": "O Klacks reflete as condições do CCT em vigor desde 13 de março de 2026, incluindo a remuneração retroativa a partir de 1.1.2026." },
+      { "icon": "gavel", "title": "Sobretaxa de 75% sob controlo", "text": "O Klacks monitoriza continuamente os limites da Cláusula 21 e avisa antes de um excesso desencadear a sobretaxa de 75%." },
+      { "icon": "description", "title": "Novo CCT 2026 registado", "text": "Os valores do CCT em vigor desde 13 de março de 2026 ficam registados no Klacks &mdash; incluindo a base horária documentada de que a sua contabilidade salarial precisa para a remuneração retroativa a partir de 1.1.2026." },
       { "icon": "block", "title": "Proibição de carga/descarga considerada", "text": "O Klacks planeia separadamente os tempos de carga e descarga e não atribui aos motoristas qualquer tarefa de carga própria &mdash; tal como exigem o CCT e o acordo-quadro." },
       { "icon": "badge", "title": "Categorias de carta de condução adequadas", "text": "O Klacks só atribui rotas a motoristas com a habilitação adequada &mdash; e avisa antes de os documentos expirarem." },
       { "icon": "smart_toy", "title": "O Klacksy planeia por comando de voz", "text": "Basta dizer «Planeia as rotas para amanhã, o motorista Silva está doente» &mdash; o Klacksy recalcula tudo, incluindo subsídios e tempos de carga." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Na prática",
     "title": "Rota transfronteiriça, um único plano",
-    "text": "O Klacks verifica automaticamente os limites da convenção do CCT 2026, evita a sobretaxa de 75% e planeia os tempos de carga e descarga separadamente do tempo de condução &mdash; sem cálculos manuais."
+    "text": "O Klacks verifica automaticamente os limites da convenção do CCT 2026, avisa antes da sobretaxa de 75% e planeia os tempos de carga e descarga separadamente do tempo de condução &mdash; sem cálculos manuais."
   },
   "showRoutePlanning": true,
   "cta": {

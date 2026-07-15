@@ -19,12 +19,12 @@
     ]
   },
   "solutions": {
-    "title": "Wie Klacks Spitäler in Irland entlastet",
+    "title": "Wie Klacks Krankenhäuser in Irland entlastet",
     "subtitle": "Von der lückenlosen 24/7-Abdeckung bis zur Ersatzruhezeit &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "6-Monats-Referenzzeitraum automatisch berechnet", "text": "Klacks berechnet die durchschnittliche 48-Stunden-Woche über den nach Section 15 OWTA vorgesehenen 6-Monats-Zeitraum für medizinisches Personal." },
-      { "icon": "bedtime", "title": "Ersatzruhezeit nach COP8 mitgeplant", "text": "Wird eine Ruhezeit verkürzt, schlägt Klacks automatisch die passende Ersatzruhezeit gemäss WRC Code of Practice COP8 vor." },
+      { "icon": "gavel", "title": "6-Monats-Referenzzeitraum überwacht", "text": "Klacks überwacht die durchschnittliche 48-Stunden-Woche über den nach Section 15 OWTA vorgesehenen 6-Monats-Zeitraum für medizinisches Personal und warnt bei drohender Überschreitung." },
+      { "icon": "bedtime", "title": "Ersatzruhezeit nach COP8 im Blick", "text": "Klacks macht eine verkürzte Ruhezeit sofort sichtbar, damit die Ersatzruhezeit gemäß WRC Code of Practice COP8 gezielt nachgeplant werden kann." },
       { "icon": "verified", "title": "NCHD-Diensttage im Blick", "text": "Klacks zählt aufeinanderfolgende Diensttage für Assistenzärzt:innen mit und warnt vor Überschreitung der 10-Tage-Grenze aus dem NCHD-Agreement 2022." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeit." }
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mehrere Stationen, ein Blick auf COP8 und NCHD",
-    "text": "Jede Station hat eigene Besetzungsregeln. Klacks plant sie gemeinsam, berechnet die 48-Stunden-Grenze über den 6-Monats-Zeitraum und schlägt bei verkürzter Ruhezeit automatisch die passende Ersatzruhezeit nach COP8 vor &mdash; die Pflegedienstleitung sieht jederzeit, wo es eng wird."
+    "text": "Jede Station hat eigene Besetzungsregeln. Klacks plant sie gemeinsam, überwacht die 48-Stunden-Grenze über den 6-Monats-Zeitraum und macht eine verkürzte Ruhezeit sofort sichtbar, damit die Ersatzruhezeit nach COP8 gezielt nachgeplant werden kann &mdash; die Pflegedienstleitung sieht jederzeit, wo es eng wird."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Stationen, Ersatzruhezeit und NCHD-Vorgaben übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Stationen plant, Ruhezeiten im Blick behält und vor NCHD-Diensttage-Grenzen warnt &mdash; oder installieren Sie es direkt in Ihrem Haus. Kostenlos und ohne Registrierung."
   }
 }

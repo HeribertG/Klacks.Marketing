@@ -3,6 +3,8 @@
 > Grundlage: `USP-KLACKS-MAPPING.md` (Backbone-Capability-Inventur, Zeilen 17–30). `klacks-capabilities.md` existiert im Repo nicht mehr; die Backbone-Tabelle ist die gültige Capability-Quelle.
 > Legende: ✅ voll · ⚠️ mit Vorbehalt · ❌ Lücke. Regel: „überwacht/geprüft/verfolgt/visualisiert" = Warnung → ✅; „erzwungen/gesperrt/blockiert" → ⚠️ (Klacks warnt, sperrt Speichern nie); „biometrische Zeiterfassung" → Biometrie existiert nicht.
 
+> **KORREKTUR 2026-07-15 (Haupt-Session):** Zwei ✅-Verdikte dieses Mappings widersprachen der Backbone-Inventur und wurden herabgestuft: (1) „Nacht-Überstunden verschachtelte Formel, kumuliert 210%/270% automatisch" → **⚠️** — Klacks kennt KEIN Zuschlag-Stacking (höchster Satz gewinnt) und keinen Überstunden-Zuschlagstyp; ehrlich ist „konfigurierbarer Multiplikator + dokumentierte Stundenbasis für die Lohnberechnung". (2) „Nachtzeit 22:00–06:00 automatisch berücksichtigt" → **⚠️** — das Nachtfenster ist im Code hart 23:00–06:00, nicht konfigurierbar. Die Live-de-Texte wurden entsprechend umformuliert (subtitle/solutions/example/cta in land-vn.json, -spitaeler, -security, -hausdienste).
+
 ## General
 
 | USP-Versprechen | Klacks-Fähigkeit | Verdikt | Anmerkung |

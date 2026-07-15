@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "home_health",
     "badge": "For home care providers in Saudi Arabia",
-    "titleHtml": "Care routes that <span class=\"text-secondary\">never blow past the 12-hour limit.</span>",
-    "subtitle": "Klacks schedules care visits automatically &mdash; and prevents shift sequences that would keep a caregiver at the workplace for more than 12 hours (Art. 101). On-premise, so patient data never leaves Saudi Arabia.",
+    "titleHtml": "Care routes that <span class=\"text-secondary\">monitor the 12-hour limit live.</span>",
+    "subtitle": "Klacks schedules care visits automatically &mdash; and warns live about shift sequences that would keep a caregiver at the workplace for more than 12 hours (Art. 101). On-premise, so patient data never leaves Saudi Arabia.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for care routes in Saudi Arabia",
     "screenshotLabel": "Timeline"
@@ -23,11 +23,11 @@
     "subtitle": "From automatic 12-hour monitoring to your own infrastructure &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Routes Optimised Automatically", "text": "Klacks arranges care visits and routes so that time windows are kept &mdash; whether by car or on foot." },
-      { "icon": "schedule", "title": "12-Hour Limit on 24-Hour Chains Blocked", "text": "Klacks automatically prevents shift sequences that would keep a caregiver at the workplace for more than 12 hours straight (Art. 101)." },
+      { "icon": "schedule", "title": "12-Hour Limit on 24-Hour Chains Monitored Live", "text": "Klacks monitors shift sequences live and automatically warns as soon as a caregiver would be kept at the workplace for more than 12 hours straight (Art. 101)." },
       { "icon": "trending_up", "title": "Exceptional Hours under Art. 106 Tracked", "text": "The exceptional ceiling of 10 hours per day or 60 hours per week is checked continuously, including during seasonal peaks." },
       { "icon": "verified", "title": "Qualifications Considered Automatically", "text": "Every visit is assigned only to caregivers with the matching qualification." },
-      { "icon": "shield_lock", "title": "On-Premise: Patient Data Stays in KSA", "text": "Klacks runs on your own infrastructure. Sensitive biometric time-tracking data stays physically in Saudi Arabia &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
-      { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Fill tomorrow&rsquo;s care routes\" is enough. If someone is unavailable, Klacksy immediately suggests an available replacement &mdash; without breaching the 12-hour limit." }
+      { "icon": "shield_lock", "title": "On-Premise: Patient Data Stays in KSA", "text": "Klacks runs on your own infrastructure. Sensitive personnel and scheduling data stays physically in Saudi Arabia &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
+      { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Fill tomorrow&rsquo;s care routes\" is enough. If someone is unavailable, Klacksy immediately suggests an available replacement &mdash; and warns if doing so would breach the 12-hour limit." }
     ]
   },
   "example": {

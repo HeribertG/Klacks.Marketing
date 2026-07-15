@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Für Arbeitgeber in den Niederlanden &middot; Open Source &middot; On-Premise",
-    "titleHtml": "Dienstpläne, die die <span class=\"text-secondary\">Arbeidstijdenwet nie verletzen.</span>",
+    "titleHtml": "Dienstpläne, die die <span class=\"text-secondary\">Arbeidstijdenwet live im Blick behalten.</span>",
     "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und regelt Oproepkrachten korrekt nach der Wet arbeidsmarkt in balans (WAB) &mdash; On-Premise, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Niederlanden",
@@ -22,7 +22,7 @@
     "title": "Wie Klacks niederländische Betriebe entlastet",
     "subtitle": "Von der automatischen ATW-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "ATW-Höchstarbeitszeit automatisch überwacht", "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst, die 60-Stunden-Wochengrenze sowie die Durchschnittswerte über 4 und 16 Wochen &mdash; Verstösse werden gar nicht erst eingeplant." },
+      { "icon": "gavel", "title": "ATW-Höchstarbeitszeit automatisch überwacht", "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst, die 60-Stunden-Wochengrenze sowie die Durchschnittswerte über 4 und 16 Wochen &mdash; drohende Verstöße werden live sichtbar gemacht, bevor der Dienstplan steht." },
       { "icon": "bedtime", "title": "Rusttijden automatisch eingehalten", "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgerechnet." },
       { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Klacks kennt die 4-Tage-Ankündigungsfrist für Abrufkräfte und macht sichtbar, wo eine kurzfristige Absage einen Lohnanspruch auslöst." },
       { "icon": "privacy_tip", "title": "Keine biometrische Zeiterfassung nötig", "text": "Dienste und Arbeitszeiten lassen sich in Klacks ohne Fingerabdruck- oder Gesichtsscan erfassen &mdash; ganz ohne das AVG-Risiko nach Art. 9, das die Autoriteit Persoonsgegevens bei biometrischer Zeiterfassung am Arbeitsplatz sieht." },

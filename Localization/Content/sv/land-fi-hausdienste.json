@@ -24,8 +24,8 @@
     "items": [
       { "icon": "route", "title": "Objektrutter optimerade", "text": "Klacks lägger ordningen på objekten så att vägarna blir korta &mdash; för bil, cykel eller till fots." },
       { "icon": "payments", "title": "Minimilön &amp; kollektivavtalshöjning inlagda", "text": "Minimitimlönen på 13,22 € (svårighetsgrupp 2) är inlagd, liksom höjningen av tabellönerna med 2,7 % som gäller från 1.8.2026." },
-      { "icon": "schedule", "title": "Skifttillägg beräknas automatiskt", "text": "Klacks bokför kvällstillägg (0,73 €/h), nattillägg (1,36 €/h) och det lagstadgade söndagstillägget (100 %) automatiskt &mdash; även vid delade arbetspass." },
-      { "icon": "bedtime", "title": "Vilotid &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och säkerställer kompensationen inom 14-dagarsfristen." },
+      { "icon": "schedule", "title": "Söndagstillägg automatiskt, fasta tillägg sparade", "text": "Klacks känner automatiskt igen kvälls- och nattinsatser och bokför det lagstadgade söndagstillägget (100 %) direkt &mdash; de fasta TES-satserna (0,73 €/h kväll, 1,36 €/h natt) sparar du som referensvärden för din avräkning, även vid delade arbetspass." },
+      { "icon": "bedtime", "title": "Vilotid &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på kompensationen inom 14-dagarsfristen." },
       { "icon": "verified", "title": "Rätt kompetens", "text": "Specialstädning, maskiner, säkerhetsområden: endast personal med rätt kompetens tilldelas." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera objekten i centrum för i morgon bitti” räcker &mdash; Klacksy optimerar rutt, team och tillägg." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Kvälls-, natt- och söndagsinsats, ett schema",
-    "text": "Klacks känner automatiskt igen kvälls- och nattinsatser, bokför tilläggen på 0,73 €/h och 1,36 €/h korrekt och räknar av söndagsarbete med det lagstadgade 100-procentiga tillägget &mdash; utan manuell efterräkning."
+    "text": "Klacks känner automatiskt igen kvälls- och nattinsatser, sparar TES-satserna på 0,73 €/h och 1,36 €/h som referensvärden och räknar automatiskt av söndagsarbete med det lagstadgade 100-procentiga tillägget &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {

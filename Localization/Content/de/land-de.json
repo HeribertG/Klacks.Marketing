@@ -1,86 +1,86 @@
 {
-  "pageTitle": "Klacks für Deutschland | Dienstpläne ohne Ausfall-Chaos",
+  "pageTitle": "Klacks für Deutschland | Personaleinsatzplanung Open Source & On-Premise",
   "hero": {
-    "badgeIcon": "groups",
-    "badge": "Für Spitäler &amp; Spitex in Deutschland",
-    "titleHtml": "Schluss mit dem <span class=\"text-secondary\">Telefonterror am Sonntagvormittag.</span>",
-    "subtitle": "Wenn eine Fachkraft ausfällt, entscheidet sich, ob Ihr Team ausbrennt oder stabil bleibt. Die Klacks Recovery-Engine findet in Sekunden den passenden, rechtssicheren Ersatz &mdash; unter Einhaltung von ArbZG-Ruhezeiten und Pflegepersonaluntergrenzen.",
+    "badgeIcon": "public",
+    "badge": "Open Source &middot; On-Premise &middot; Deutschland-Datenschutz",
+    "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, on-premise installierbar und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan für deutsche Kliniken und Pflegedienste",
+    "screenshotAlt": "Klacks Dienstplan für Unternehmen in Deutschland",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
-    "eyebrow": "Der Alltag in Klinik &amp; Pflegedienst",
-    "title": "Ausfälle, Recht und Fachkräftemangel",
+    "eyebrow": "Der Alltag in deutschen Betrieben",
+    "title": "Recht, Nachweispflicht und Datenschutz zugleich",
     "items": [
       {
-        "icon": "phone_disabled",
-        "title": "Der Einspring-Wahnsinn",
-        "text": "Fällt eine Kraft kurzfristig aus, verbringen Leitungen Stunden am Telefon, um Kolleg:innen aus der Freizeit zu holen &mdash; das zerstört Betriebsklima und erhöht die Fluktuation."
-      },
-      {
         "icon": "gavel",
-        "title": "PpUGV &amp; ArbZG im Blick behalten",
-        "text": "Pflegepersonaluntergrenzen und die gesetzliche 11-Stunden-Ruhezeit von Hand zu überwachen ist bei wechselnden Diensten praktisch unmöglich."
+        "title": "Arbeitszeitgesetz von Hand kaum zu überblicken",
+        "text": "Die 8-Stunden-Grenze, die 11-Stunden-Ruhezeit und die Nachtarbeitsregeln nach §§ 3, 5 und 6 ArbZG über mehrere Teams und Schichtmodelle hinweg manuell korrekt einzuhalten, ist kaum realistisch."
       },
       {
-        "icon": "trending_down",
-        "title": "Fachkräftemangel als Dauerzustand",
-        "text": "Über 369.000 unbesetzte Stellen (2025, OECD) treffen Pflege und Gesundheitswesen besonders hart &mdash; jede Planungsstunde zählt."
+        "icon": "punch_clock",
+        "title": "Zeiterfassungspflicht ernst nehmen",
+        "text": "Seit dem BAG-Beschluss vom 13.09.2022 (1 ABR 22/21) muss Arbeitszeit erfasst werden. Gesetzlich reicht dafür formfrei sogar Papier &mdash; in der Praxis wird das bei wechselnden Schichten trotzdem schnell unübersichtlich."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Datenschutz ohne Kompromisse",
+        "text": "Personaldaten in eine externe Cloud zu geben, ist für viele Betriebsräte und Datenschutzbeauftragte keine Option &mdash; erst recht nicht, wenn eine KI mitliest."
       }
     ]
   },
   "solutions": {
-    "title": "Die Klacks Recovery-Engine für den deutschen Markt",
-    "subtitle": "Vom automatischen Springerpool bis zur PpUGV-Kontrolle &mdash; rechtssicher und in Sekunden.",
+    "title": "Wie Klacks deutsche Betriebe entlastet",
+    "subtitle": "Vom automatischen Dienstplan bis zum DATEV-Export &mdash; alles greift ineinander.",
     "items": [
       {
-        "icon": "bolt",
-        "title": "Recovery-Engine bei Ausfall",
-        "text": "Fällt eine Schicht aus, berechnet Klacks sofort die besten, rechtssicheren Ersatzoptionen aus dem Springerpool &mdash; ohne Telefonrunde."
+        "icon": "auto_awesome",
+        "title": "Dienste automatisch geplant",
+        "text": "Klacks füllt Schichten regelbasiert und lernt aus bestehenden Mustern &mdash; ohne dass jede Woche neu von Hand geplant werden muss."
       },
       {
         "icon": "gavel",
         "title": "ArbZG-Ruhezeiten automatisch geprüft",
-        "text": "Die 11-stündige Ruhezeit zwischen Diensten wird in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst."
+        "text": "Die 11-Stunden-Ruhezeit und die Höchstarbeitszeiten nach §§ 3, 5 und 6 ArbZG werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht."
+      },
+      {
+        "icon": "route",
+        "title": "Touren optimiert",
+        "text": "Wo Mitarbeitende zwischen Einsatzorten unterwegs sind, plant Klacks die Reihenfolge so, dass Wege kurz bleiben."
       },
       {
         "icon": "shield_lock",
-        "title": "PpUGV-Mindestbesetzung im Blick",
-        "text": "Klacks zeigt pro Schicht, ob die Pflegepersonaluntergrenze eingehalten ist &mdash; bevor es zur Meldung oder Sanktion kommt."
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne dass Personaldaten das Haus verlassen. Das entspricht dem DSGVO-Rahmen für den Beschäftigtendatenschutz (Art. 88)."
       },
       {
-        "icon": "favorite",
-        "title": "Wunschdienste berücksichtigt",
-        "text": "Die Autofill-Engine respektiert hinterlegte Mitarbeiterwünsche, damit das Team nicht unnötig verbrennt."
+        "icon": "code",
+        "title": "Open Source: kein Vendor-Lock-in",
+        "text": "Der Quellcode liegt offen. Sie entscheiden, wo Klacks läuft, wie es angepasst wird und mit wem Sie zusammenarbeiten."
       },
       {
         "icon": "receipt_long",
         "title": "DATEV-Export",
-        "text": "Bewegungsdaten und Buchungsstapel gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
-      },
-      {
-        "icon": "shield_lock",
-        "title": "On-Premise: Daten bleiben im Haus",
-        "text": "Personal- und Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+        "text": "Lohn-Bewegungsdaten gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
       }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
-    "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Schichttausch-Anfragen oder klären Qualifikations-Konflikte im Team. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nur Vorschläge macht, die zu den tatsächlichen Qualifikationen und Arbeitszeit-Vorgaben der Beteiligten passen.",
+    "title": "Klacksy: Transparent statt Blackbox",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge immer zu Qualifikationen, Arbeitszeitgesetz und den hinterlegten Regeln passen &mdash; nachvollziehbar für Mitarbeitende, Betriebsrat und Datenschutzbeauftragte. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Ein Ausfall, kein Chaos",
-    "text": "Eine Pflegekraft meldet sich krank. Statt zehn Anrufe zu tätigen, zeigt Klacks sofort die passenden, ruhezeit-konformen Ersatzoptionen aus dem Springerpool &mdash; die Stationsleitung bestätigt mit einem Klick."
+    "title": "Ein Ausfall, keine Excel-Odyssee",
+    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten, ArbZG-konformen Ersatz &mdash; die Planung bestätigt mit einem Klick, ohne dass Daten das Haus verlassen."
   },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Klacks in Ihrer Einrichtung erleben",
-    "text": "Testen Sie im Playground, wie Klacks Ausfälle, Ruhezeiten und PpUGV-Mindestbesetzung automatisch löst &mdash; oder installieren Sie direkt On-Premise. Kostenlos und ohne Registrierung."
+    "title": "Klacks in Ihrem Unternehmen erleben",
+    "text": "Testen Sie im Playground, wie Klacks Dienste plant, Ruhezeiten prüft und Touren optimiert &mdash; oder installieren Sie On-Premise, open source, mit dem KI-Modell Ihrer Wahl. Kostenlos und ohne Registrierung."
   }
 }

@@ -4,29 +4,29 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste in Spanien",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Routen und Teilzeitkräfte korrekt ein &mdash; mit begrenzten Horas Complementarias, konvenio-genauem Nachtzuschlag und je Provinz eigenen Wochenarbeitszeit-Grenzen. Touren werden automatisch optimiert.",
+    "subtitle": "Klacks teilt Objekte, Routen und Teilzeitkräfte korrekt ein &mdash; mit im Blick behaltenen Horas Complementarias, konvenio-genauem Nachtzuschlag und je Provinz eigenen Wochenarbeitszeit-Grenzen. Touren werden automatisch optimiert.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Spanien",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
     "eyebrow": "Der Reinigungs-Alltag in Spanien",
-    "title": "Horas Complementarias, Nachtzuschlag und Provinz-Konvenios",
+    "title": "Horas Complementarias, Nachtzuschlag und Provinz-Convenios",
     "items": [
       {
         "icon": "schedule",
         "title": "Horas Complementarias korrekt begrenzt",
-        "text": "Vereinbarte Zusatzstunden bei Teilzeit dürfen höchstens 30 % der vertraglichen Arbeitszeit ausmachen, per Konvenio erweiterbar auf bis zu 60 % (Art. 12.5 ET) &mdash; verlangt wird eine schriftliche Vereinbarung und mindestens 3 Tage Vorlauf vor dem Einsatz."
+        "text": "Vereinbarte Zusatzstunden bei Teilzeit dürfen höchstens 30 % der vertraglichen Arbeitszeit ausmachen, per Convenio erweiterbar auf bis zu 60 % (Art. 12.5 ET) &mdash; verlangt wird eine schriftliche Vereinbarung und mindestens 3 Tage Vorlauf vor dem Einsatz."
       },
       {
         "icon": "bedtime",
-        "title": "Nachtzuschlag je nach Konvenio",
-        "text": "Für Arbeit zwischen 22:00 und 06:00 Uhr sieht der Convenio de Limpieza der Comunidad de Madrid einen Zuschlag von 25 % auf den Basisstundenlohn vor &mdash; andere Provinz-Konvenios können abweichende Regeln haben."
+        "title": "Nachtzuschlag je nach Convenio",
+        "text": "Für Arbeit zwischen 22:00 und 06:00 Uhr sieht der Convenio de Limpieza der Comunidad de Madrid einen Zuschlag von 25 % auf den Basisstundenlohn vor &mdash; andere Provinz-Convenios können abweichende Regeln haben."
       },
       {
         "icon": "payments",
         "title": "Unterschiedliche Wochenstunden je Provinz",
-        "text": "Der Convenio de Limpieza der Provinz Sevilla senkt die Wochenarbeitszeit zum 1. Januar 2026 tariflich von 38 auf 37,5 Stunden &mdash; eine Regelung dieses einen Konvenios, nicht ein allgemeines Gesetz."
+        "text": "Der Convenio de Limpieza der Provinz Sevilla senkt die Wochenarbeitszeit zum 1. Januar 2026 tariflich von 38 auf 37,5 Stunden &mdash; eine Regelung dieses einen Convenios, nicht ein allgemeines Gesetz."
       }
     ]
   },
@@ -41,18 +41,18 @@
       },
       {
         "icon": "schedule",
-        "title": "Horas Complementarias automatisch begrenzt",
-        "text": "Klacks hält die 30-%-Grenze (oder die per Konvenio erweiterte 60-%-Grenze) für vereinbarte Zusatzstunden ein und sorgt für die 3-Tage-Vorlauffrist &mdash; inklusive schriftlicher Vereinbarung."
+        "title": "Horas Complementarias im Blick",
+        "text": "Klacks behält die 30-%-Grenze (oder die per Convenio erweiterte 60-%-Grenze) für vereinbarte Zusatzstunden im Blick und sorgt für die 3-Tage-Vorlauffrist &mdash; inklusive schriftlicher Vereinbarung."
       },
       {
         "icon": "bedtime",
         "title": "Nachtzuschlag automatisch berechnet",
-        "text": "Für Einsätze zwischen 22:00 und 06:00 Uhr rechnet Klacks den im jeweiligen Konvenio hinterlegten Nachtzuschlag &mdash; etwa die 25 % nach dem Convenio de Limpieza Madrid."
+        "text": "Für Nachtstunden rechnet Klacks den im jeweiligen Convenio hinterlegten Nachtzuschlag automatisch &mdash; etwa die 25 % nach dem Convenio de Limpieza Madrid."
       },
       {
         "icon": "payments",
-        "title": "Provinz-Konvenios individuell hinterlegt",
-        "text": "Ob 38 oder ab 2026 37,5 Wochenstunden wie im Convenio der Provinz Sevilla: Klacks bildet die Wochenarbeitszeit-Grenze jedes anwendbaren Konvenios eigenständig ab."
+        "title": "Provinz-Convenios individuell hinterlegt",
+        "text": "Ob 38 oder ab 2026 37,5 Wochenstunden wie im Convenio der Provinz Sevilla: Klacks bildet die Wochenarbeitszeit-Grenze jedes anwendbaren Convenios eigenständig ab."
       },
       {
         "icon": "smart_toy",

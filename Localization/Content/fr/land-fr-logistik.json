@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks pour la logistique en France | Tournées, temps de conduite & CCN 16",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "Pour la logistique &amp; le transport en France",
+    "titleHtml": "Tournées, temps de conduite, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec une base horaire documentée sans faille pour les heures d'équivalence selon la CCN 16, et des temps de planification en complément du justificatif du chronotachygraphe. Les itinéraires sont optimisés automatiquement.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations des chauffeurs en France",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de la logistique en France",
+    "title": "Tournées, majorations et obligation de justificatif à la fois",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Tournées &amp; rendez-vous",
+        "text": "Les arrêts, les créneaux horaires et les trajets doivent s'accorder &mdash; chaque replanification a des conséquences en cascade."
+      },
+      {
+        "icon": "timer",
+        "title": "Heures d'équivalence &amp; heures supplémentaires (CCN 16)",
+        "text": "Selon la CCN Transports routiers (IDCC 16), les heures de la 36e à la 39e, voire à la 43e semaine, sont considérées comme des « heures d'équivalence » majorées de 25%, non soumises à contingent. Les véritables heures supplémentaires, majorées de 50%, ne s'appliquent qu'à partir de la 40e heure (courte distance) ou de la 44e heure (longue distance) &mdash; facile à confondre à la main."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Justificatif de 56 jours",
+        "text": "Depuis le 31 décembre 2024, les enregistrements du chronotachygraphe doivent pouvoir être présentés lors de contrôles routiers pour les 56 derniers jours (Règlement UE 2020/1054, Art. 36 du Règlement 165/2014)."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage la logistique en France",
+    "subtitle": "De la tournée optimisée à la base horaire documentée &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Tournées optimisées automatiquement",
+        "text": "Klacks place les arrêts dans l'ordre le plus judicieux &mdash; trajets courts, créneaux horaires respectés, moins de trajets à vide."
+      },
+      {
+        "icon": "calculate",
+        "title": "Base horaire pour les heures d'équivalence et les heures supplémentaires",
+        "text": "Klacks documente sans faille et au jour près chaque heure à partir de la 36e &mdash; la distinction entre les heures d'équivalence majorées de 25% et les véritables heures supplémentaires à partir de la 40e ou de la 44e heure (CCN 16) relève de la convention collective ; votre gestion de la paie calcule les majorations sur cette base horaire propre."
+      },
+      {
+        "icon": "timer",
+        "title": "Temps de conduite &amp; de repos surveillés",
+        "text": "Les temps de conduite et de repos légaux sont surveillés, Klacks rend visible tout dépassement &mdash; les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
+      },
+      {
+        "icon": "badge",
+        "title": "Catégories de permis adaptées",
+        "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Planifie les tournées de demain, le chauffeur Dupont est malade » suffit &mdash; Klacksy recalcule tout."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences compensées rapidement",
+        "text": "Si un chauffeur est absent, Klacks indique immédiatement qui est qualifié, disponible et dans les temps de conduite autorisés."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre entreprise de logistique",
+    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, la base horaire et les temps de conduite &mdash; ou installez-le directement sur votre propre infrastructure. Gratuitement et sans inscription."
+  }
+}

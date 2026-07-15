@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Norwegischer Datenschutz",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die Arbeidsmiljøloven automatisch einhalten.</span>",
-    "subtitle": "Klacks erkennt automatisch, welches Arbeitszeit-Regime der Arbeidsmiljøloven (AML) für welchen Schichtplan gilt, hält die 14-Tage-Bekanntgabefrist ein und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die Arbeidsmiljøloven zuverlässig abbilden.</span>",
+    "subtitle": "Klacks bildet die drei Arbeitszeit-Regime der Arbeidsmiljøloven (AML) als konfigurierbare Grenzwerte ab, unterstützt die frühzeitige Dienstplan-Veröffentlichung nach § 10-3 und läuft On-Premise &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für norwegische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -13,18 +13,18 @@
     "eyebrow": "Der Planungsalltag in norwegischen Betrieben",
     "title": "AML, Schichtregime und Datatilsynet",
     "items": [
-      { "icon": "gavel", "title": "Drei Arbeitszeit-Regime gleichzeitig", "text": "AML § 10-4 kennt eine Regelarbeitszeit von 40 Stunden/Woche, aber 38 Stunden für Rund-um-die-Uhr-Schichtdienst (døgnkontinuerlig) sowie Zweischichtarbeit mit regelmässiger Sonn-/Feiertagsarbeit, und 36 Stunden für den volldurchgehenden 3-Schicht-Betrieb inkl. Wochenenden (helkontinuerlig). Von Hand ist die richtige Zuordnung fehleranfällig." },
+      { "icon": "gavel", "title": "Drei Arbeitszeit-Regime gleichzeitig", "text": "AML § 10-4 kennt eine Regelarbeitszeit von 40 Stunden/Woche, aber 38 Stunden für Rund-um-die-Uhr-Schichtdienst (døgnkontinuerlig) sowie Zweischichtarbeit mit regelmäßiger Sonn-/Feiertagsarbeit, und 36 Stunden für den volldurchgehenden 3-Schicht-Betrieb inkl. Wochenenden (helkontinuerlig). Von Hand ist die richtige Zuordnung fehleranfällig." },
       { "icon": "event_repeat", "title": "14-Tage-Frist für den Dienstplan", "text": "Nach AML § 10-3 muss der Dienstplan bei wechselnden Arbeitszeiten so früh wie möglich mit den Vertrauensleuten besprochen und spätestens 14 Tage vor Inkrafttreten bekanntgegeben werden." },
       { "icon": "fingerprint", "title": "Datatilsynet &amp; biometrische Daten", "text": "Datatilsynet reguliert Mitarbeiterüberwachung und biometrische Datenerfassung &mdash; etwa Fingerabdruck oder Gesichtserkennung beim Stempeln &mdash; sehr restriktiv, da Einwilligung im Abhängigkeitsverhältnis zwischen Arbeitgeber und Arbeitnehmer oft nicht als freiwillige Rechtsgrundlage gilt (Personopplysningsloven)." }
     ]
   },
   "solutions": {
     "title": "Wie Klacks norwegische Betriebe entlastet",
-    "subtitle": "Von der automatischen Regime-Erkennung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "subtitle": "Von der konfigurierten Regime-Grenze bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Alle drei Arbeitszeit-Regime automatisch erkannt", "text": "Klacks ordnet jeden Schichtplan automatisch dem passenden AML-Regime zu &mdash; 40, 38 oder 36 Stunden &mdash; je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt." },
-      { "icon": "event_available", "title": "14-Tage-Frist automatisch eingehalten", "text": "Klacks erstellt und veröffentlicht Dienstpläne so rechtzeitig, dass die Bekanntgabefrist nach § 10-3 stets eingehalten wird." },
-      { "icon": "timer", "title": "Überstundengrenzen überwacht", "text": "Die gesetzlichen Grenzen nach § 10-6 &mdash; 10 Stunden/7 Tage, 25 Stunden/4 Wochen, 200 Stunden/12 Monate &mdash; sowie der Zuschlag von mindestens 40 % werden automatisch mitgeführt." },
+      { "icon": "gavel", "title": "Alle drei Arbeitszeit-Regime konfigurierbar hinterlegt", "text": "Klacks hinterlegt für jeden Schichtplan die passende AML-Wochengrenze &mdash; 40, 38 oder 36 Stunden &mdash;, je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt; die Zuordnung legen Sie einmalig pro Vertrag oder Gruppe fest." },
+      { "icon": "event_available", "title": "Dienstpläne frühzeitig erstellt und veröffentlicht", "text": "Klacks erstellt und veröffentlicht Dienstpläne so früh, wie Sie planen möchten &mdash; die Grundlage, um die Bekanntgabefrist nach § 10-3 zuverlässig einzuhalten." },
+      { "icon": "timer", "title": "Überstundengrenzen überwacht", "text": "Die gesetzlichen Grenzen nach § 10-6 &mdash; 10 Stunden/7 Tage, 25 Stunden/4 Wochen, 200 Stunden/12 Monate &mdash; sowie der Zuschlag von mindestens 40 % überwacht Klacks laufend und warnt rechtzeitig vor Überschreitungen." },
       { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
       { "icon": "shield_lock", "title": "On-Premise: keine biometrische Cloud-Erfassung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, ganz ohne Zwang zu Fingerabdruck- oder Gesichtserkennungs-Diensten in der Cloud &mdash; im Sinne der Personopplysningsloven und der Datatilsynet-Richtlinien." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
@@ -33,18 +33,18 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäss Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab, stellen Tauschwünsche oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen gemäß Datatilsynet lässt sich das KI-Modell zudem lokal hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtregime und Bekanntgabefrist, ein Blick",
-    "text": "Klacks erkennt automatisch, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt, wendet die passende 40-, 38- oder 36-Stunden-Grenze an und veröffentlicht den Plan rechtzeitig vor der 14-Tage-Frist nach § 10-3 &mdash; ohne Nachrechnen von Hand."
+    "text": "Sie legen fest, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt &mdash; Klacks wendet die passende 40-, 38- oder 36-Stunden-Grenze automatisch an und lässt Sie den Plan so früh veröffentlichen, wie es die 14-Tage-Frist nach § 10-3 verlangt &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime, Bekanntgabefristen und Überstundengrenzen automatisiert &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime abbildet, frühzeitige Dienstplan-Veröffentlichung ermöglicht und Überstundengrenzen überwacht &mdash; On-Premise oder im Playground, kostenlos und ohne Registrierung."
   }
 }

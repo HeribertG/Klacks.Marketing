@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks pour les hôpitaux en France | Plannings 24/7 & temps de repos",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "Pour les hôpitaux en France (Hôpitaux)",
+    "titleHtml": "Des plannings de service qui <span class=\"text-secondary\">tiennent la route 24 heures sur 24.</span>",
+    "subtitle": "Klacks planifie les services et les unités sans faille &mdash; avec des durées maximales de travail surveillées, les qualifications requises et une souveraineté totale des données. On-premise, pour que les données des patients ne quittent jamais vos murs.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks pour les hôpitaux en France",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien hospitalier en France",
+    "title": "Sans faille, conforme, documenté",
+    "items": [
+      {
+        "icon": "e911_emergency",
+        "title": "24/7 sans interruption",
+        "text": "Jour, nuit, week-end, jour férié : chaque unité doit être couverte sans faille &mdash; y compris en cas d'absence de dernière minute."
+      },
+      {
+        "icon": "gavel",
+        "title": "Temps de repos stricts (Décret n° 2002-9)",
+        "text": "Le Décret n° 2002-9 limite les services continus réguliers à 9 heures de jour ou 10 heures de nuit (Art. 7), des dérogations jusqu'à 12 heures n'étant admises qu'en cas de nécessité impérieuse. Pour le personnel non médical de la Fonction Publique Hospitalière (FPH), un repos quotidien minimal de 12 heures consécutives s'applique en outre (Art. 6) &mdash; plus strict que le standard général de 11 heures."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "Protection des données selon la CNIL",
+        "text": "Les données du personnel et des patients ne doivent pas quitter l'établissement. La CNIL sanctionne strictement toute surveillance abusive telle que la géolocalisation ou le pointage biométrique (RGPD Art. 88)."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les hôpitaux en France",
+    "subtitle": "De la nuit sans faille au pool de remplacement &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Couverture 24/7 sans faille",
+        "text": "Services de jour, de soir et de nuit sur toutes les unités &mdash; Klacks signale immédiatement chaque poste vacant et le comble automatiquement sur demande."
+      },
+      {
+        "icon": "gavel",
+        "title": "Temps de repos surveillés automatiquement",
+        "text": "La limite de 9h/10h pour les services continus (Art. 7) et le repos de 12 heures pour le personnel non médical (Art. 6) sont surveillés en temps réel &mdash; comme limite ferme pour les plannings créés automatiquement, et Klacks rend immédiatement visible tout dépassement lors d'ajustements manuels."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications &amp; unités",
+        "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par unité, service et fonction."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise : les données restent dans l'établissement",
+        "text": "Klacks fonctionne sur votre infrastructure. Les données du personnel et des patients ne quittent jamais l'hôpital &mdash; pas même pour l'IA, ce qui facilite la conformité CNIL."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte des qualifications et des temps de repos."
+      },
+      {
+        "icon": "groups",
+        "title": "Pool de remplacement &amp; absences",
+        "text": "En cas d'absence, Klacks indique immédiatement les remplaçant·e·s qualifié·e·s et disponibles &mdash; sans bouleverser tout le planning."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Plusieurs unités, service de jour et de nuit, un pool de remplacement",
+    "text": "Un hôpital en France avec plusieurs unités planifie des services continus dans la limite de 9h/10h, surveille automatiquement le repos de 12 heures et fait appel au pool de remplacement en cas d'absence &mdash; l'encadrement de l'unité voit à tout moment où la situation devient tendue."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre hôpital",
+    "text": "Testez dans le Playground comment Klacks prend en charge les unités, les temps de repos et les remplacements &mdash; ou installez-le directement dans votre établissement. Gratuitement et sans inscription."
+  }
+}

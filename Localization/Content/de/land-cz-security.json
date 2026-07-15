@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste &amp; Ostraha in Tschechien",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Regel eingehalten.</span>",
-    "subtitle": "Klacks begrenzt Nachtschichten automatisch auf 8 Stunden je 24 Stunden, hält die 3-Tage-Ankündigungsfrist und die Zuschläge für dohodáři ein und plant die verkürzte tägliche Ruhezeit sauber aus. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
+    "subtitle": "Klacks überwacht die 8-Stunden-Grenze für Nachtschichten je 24 Stunden live, macht die 3-Tage-Ankündigungsfrist für dohodáři sichtbar, weist deren Zuschläge automatisch zu und warnt bei einer verkürzten täglichen Ruhezeit, falls der Ausgleich in der Folgeruhezeit fehlt. On-Premise, damit Ihre Einsatzdaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten im Sicherheitsgewerbe in Tschechien",
     "screenshotLabel": "Timeline"
@@ -13,7 +13,7 @@
     "eyebrow": "Der Alltag im Objektschutz in Tschechien",
     "title": "Nachtschicht-Grenze, dohodáři und verkürzte Ruhezeit",
     "items": [
-      { "icon": "nightlight", "title": "Nachtschicht: max. 8 Stunden je 24 Stunden", "text": "Nachtzeit ist die Zeit zwischen 22:00 und 06:00 Uhr; wer im Schnitt mindestens 3 Stunden davon arbeitet, gilt als Nachtarbeiter. Die Schichtlänge darf 8 Stunden je 24 Stunden nicht überschreiten, ausser im zulässigen Durchschnitt über höchstens 26 Wochen (§ 94 ZP)." },
+      { "icon": "nightlight", "title": "Nachtschicht: max. 8 Stunden je 24 Stunden", "text": "Nachtzeit ist die Zeit zwischen 22:00 und 06:00 Uhr; wer im Schnitt mindestens 3 Stunden davon arbeitet, gilt als Nachtarbeiter. Die Schichtlänge darf 8 Stunden je 24 Stunden nicht überschreiten, außer im zulässigen Durchschnitt über höchstens 26 Wochen (§ 94 ZP)." },
       { "icon": "groups", "title": "DPP/DPČ-Kräfte mit eigenen Regeln", "text": "Sicherheitsdienste setzen häufig dohodáři ein. Für diese gilt die 3-Tage-Dienstplan-Ankündigungsfrist (§ 74 ZP) sowie der volle Zuschlagsanspruch: mindestens 10 % Nachtzuschlag (§ 116) und mindestens 10 % Wochenendzuschlag (§ 118)." },
       { "icon": "bedtime", "title": "Verkürzte tägliche Ruhezeit möglich", "text": "Die grundsätzlich 11-stündige tägliche Ruhezeit darf für Volljährige auf 8 Stunden verkürzt werden, sofern die darauffolgende Ruhezeit um die Verkürzung verlängert wird (§ 90 ZP) &mdash; im Wechselschichtbetrieb des Objektschutzes von Hand schwer zu verfolgen." }
     ]
@@ -23,9 +23,9 @@
     "subtitle": "Von der lückenlosen Postenbesetzung bis zur verkürzten Ruhezeit &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "nightlight", "title": "8-Stunden-Nachtgrenze automatisch geprüft", "text": "Klacks erkennt Nachtschichten zwischen 22:00 und 06:00 Uhr und begrenzt die Schichtlänge automatisch auf 8 Stunden je 24 Stunden, ausser im zulässigen 26-Wochen-Durchschnitt." },
-      { "icon": "groups", "title": "DPP/DPČ korrekt behandelt", "text": "Klacks hält die 3-Tage-Ankündigungsfrist ein und rechnet Nacht- und Wochenendzuschlag automatisch für dohodáři mit." },
-      { "icon": "bedtime", "title": "Verkürzte Ruhezeit sauber ausgeglichen", "text": "Wird die tägliche Ruhezeit auf 8 Stunden verkürzt, plant Klacks den entsprechenden Ausgleich in der folgenden Ruhezeit automatisch mit ein." },
+      { "icon": "nightlight", "title": "8-Stunden-Nachtgrenze überwacht", "text": "Klacks erkennt Nachtschichten automatisch und warnt, sobald die Schichtlänge 8 Stunden je 24 Stunden überschreitet &mdash; die Stundenbasis für den zulässigen 26-Wochen-Durchschnitt dokumentiert es gleich mit." },
+      { "icon": "groups", "title": "DPP/DPČ korrekt behandelt", "text": "Klacks macht die 3-Tage-Ankündigungsfrist sichtbar und weist Nacht- und Wochenendzuschlag für dohodáři automatisch zu." },
+      { "icon": "bedtime", "title": "Verkürzte Ruhezeit im Blick", "text": "Wird die tägliche Ruhezeit auf 8 Stunden verkürzt, macht Klacks den nötigen Ausgleich in der folgenden Ruhezeit sichtbar und warnt, falls er fehlt." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Schichtlänge, Ruhezeit und Verfügbarkeit." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtschicht, dohodář, ein Plan",
-    "text": "Klacks begrenzt eine Nachtschicht automatisch auf 8 Stunden, kündigt den Dienstplan für dohodáři mindestens 3 Tage im Voraus an und rechnet Nacht- und Wochenendzuschlag gleich mit &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt, sobald eine Nachtschicht 8 Stunden überschreitet, macht die 3-Tage-Frist für dohodáři sichtbar und weist Nacht- und Wochenendzuschlag gleich zu &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

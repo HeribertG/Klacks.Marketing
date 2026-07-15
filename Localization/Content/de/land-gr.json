@@ -22,10 +22,10 @@
     "title": "Wie Klacks griechische Betriebe entlastet",
     "subtitle": "Von der ERGANI-konformen Erfassung bis zur korrekten Zuschlagslogik &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "fingerprint", "title": "ERGANI-konforme Zeiterfassung", "text": "Klacks erfasst Beginn und Ende jeder Schicht lückenlos &mdash; bereit für den branchenweisen ERGANI-II-Abgleich und ohne das Risiko der 10.500-€-Busse." },
-      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Klacks berechnet den 40 %-Zuschlag für den 6. Arbeitstag automatisch &mdash; bzw. 115 %, wenn er auf einen Sonn- oder Feiertag fällt &mdash; und hält den 8-Stunden-Deckel ein." },
+      { "icon": "fingerprint", "title": "ERGANI-konforme Zeiterfassung", "text": "Klacks erfasst Beginn und Ende jeder Schicht lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für den branchenweiten ERGANI-II-Abgleich." },
+      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 %, wenn er auf einen Sonn- oder Feiertag fällt &mdash; lässt sich als eigene Zuschlagsregel mit 8-Stunden-Deckel hinterlegen." },
       { "icon": "layers", "title": "Drei Überstunden-Stufen sauber getrennt", "text": "Mehrarbeit (+20 %), Überstunde (+40 %, max. 150 h/Jahr) und nicht deklarierte Überstunde (+120 %) werden von Klacks automatisch unterschieden &mdash; inklusive der 45h/48h-Wochenobergrenze." },
-      { "icon": "hourglass_top", "title": "13-Stunden-Tag nach Gesetz 5239/2025 im Blick", "text": "Klacks überwacht die 37,5-Tage-Jahresgrenze und stellt sicher, dass die 11-stündige Tagesruhe bei jeder verlängerten Schicht gewahrt bleibt." },
+      { "icon": "hourglass_top", "title": "13-Stunden-Tag nach Gesetz 5239/2025 im Blick", "text": "Klacks behält die 37,5-Tage-Jahresgrenze im Blick und warnt, wenn die 11-stündige Tagesruhe bei einer verlängerten Schicht unterschritten würde." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten bleiben, wo Sie sie haben wollen." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
     ]
@@ -40,7 +40,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "6. Arbeitstag, Überstunde, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht den 6. Arbeitstag der Woche darstellt oder die Mehrarbeits- bzw. Überstundengrenze erreicht, und schlägt den korrekten Zuschlag gleich vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks macht sichtbar, wenn eine Schicht die Mehrarbeits- bzw. Überstundengrenze erreicht, und schlägt den passenden Zuschlag inklusive der hinterlegten 6.-Tag-Regel gleich vor &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

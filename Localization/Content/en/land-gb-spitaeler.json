@@ -23,8 +23,8 @@
     "subtitle": "From gap-free ward cover to WTR transparency &mdash; everything works together.",
     "items": [
       { "icon": "schedule", "title": "Gap-free 24/7 cover", "text": "Day, late and night shifts across every ward &mdash; Klacks shows every gap immediately and fills it automatically on request." },
-      { "icon": "timer", "title": "13-hour limit observed automatically", "text": "Klacks plans junior doctor shifts so that the 13-hour limit under the Junior Doctor Contract is never exceeded." },
-      { "icon": "bedtime", "title": "Rest-period cascade checked continuously", "text": "The 48/46/48-hour rest periods after consecutive shifts or nights, as well as the 11-hour rest between shifts, are factored into the plan automatically." },
+      { "icon": "timer", "title": "13-hour limit continuously monitored", "text": "Klacks warns when planning junior doctor shifts before the 13-hour limit under the Junior Doctor Contract is exceeded &mdash; visible before the shift is finalised." },
+      { "icon": "bedtime", "title": "Rest-period cascade kept in view", "text": "The 11-hour rest between shifts is factored into the plan automatically; Klacks flags the 48/46/48-hour cascade after several consecutive shifts or nights as a warning." },
       { "icon": "visibility", "title": "WTR breaches made visible", "text": "Klacks has the Working Time Regulations built into the system and flags breaches before the rota is published &mdash; fully traceable for any support-and-challenge meeting." },
       { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice or chat", "text": "\"Fill next week's night shifts for General Medicine\" is all it takes &mdash; Klacksy factors in shift limits and rest periods." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "Junior doctor rotation, one plan",
-    "text": "Klacks automatically observes the 13-hour shift limit and the rest-period cascade under the Junior Doctor Contract, and shows ward managers early on where things are getting tight."
+    "text": "Klacks continuously monitors the 13-hour shift limit and the rest-period cascade under the Junior Doctor Contract, and shows ward managers early on where things are getting tight."
   },
   "showRoutePlanning": false,
   "cta": {

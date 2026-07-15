@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Pro úklid budov &amp; domovní služby v Česku",
     "titleHtml": "Každý objekt <span class=\"text-secondary\">čistě naplánovaný.</span>",
-    "subtitle": "Klacks zná sníženou týdenní pracovní dobu v dvousměnném provozu, dodržuje 12hodinový limit délky směny při samoplánování směn u zaměstnanců na částečný úvazek a automaticky počítá nárok na dovolenou pro pracovníky na dohodu.",
+    "subtitle": "Klacks zná sníženou týdenní pracovní dobu v dvousměnném provozu, dodržuje 12hodinový limit délky směny při samoplánování směn u zaměstnanců na částečný úvazek a dokumentuje odpracované hodiny pracovníků na dohodu jako základ pro jejich nárok na dovolenou.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Mřížka rozpisu směn Klacks pro úklidové týmy a objekty v Česku",
     "screenshotLabel": "Rozpis směn"
@@ -23,9 +23,9 @@
     "subtitle": "Od optimalizované trasy až po nárok na dovolenou na dohodu &mdash; vše do sebe zapadá.",
     "items": [
       { "icon": "route", "title": "Optimalizované trasy mezi objekty", "text": "Klacks stanoví pořadí objektů tak, aby cesty zůstaly krátké &mdash; pro auto, kolo i pěší chůzi." },
-      { "icon": "schedule", "title": "Norma 38,75 hodiny rozpoznána automaticky", "text": "Klacks zná sníženou týdenní pracovní dobu v dvousměnném provozu a automaticky počítá 25% příplatek za přesčasy, jakmile se naplánuje nad tento rámec." },
-      { "icon": "edit_calendar", "title": "Samoplánování s 12hodinovým stropem", "text": "I když si zaměstnanci na částečný úvazek volí směnu sami na základě dohody, Klacks automaticky dodržuje 12hodinový limit na směnu." },
-      { "icon": "beach_access", "title": "Nárok na dovolenou pro DPP/DPČ vypočítán", "text": "Klacks automaticky počítá nárok na dovolenou pracovníků na dohodu přes fiktivní dvacetihodinový týden &mdash; včetně podmínky minimální doby trvání a minimálního počtu hodin." },
+      { "icon": "schedule", "title": "Norma 38,75 hodiny uložena jako základ", "text": "Sníženou týdenní pracovní dobu v dvousměnném provozu si uložíte jako smluvní základ &mdash; Klacks zobrazí, jakmile se naplánuje nad tento rámec, a dokumentuje přesčasové hodiny jako základ pro 25% příplatek." },
+      { "icon": "edit_calendar", "title": "Samoplánování s 12hodinovým stropem", "text": "I když si zaměstnanci na částečný úvazek volí směnu sami na základě dohody, Klacks automaticky hlídá 12hodinový limit na směnu a upozorní při jeho překročení." },
+      { "icon": "beach_access", "title": "Odpracované hodiny pro dovolenou DPP/DPČ dokumentovány", "text": "Klacks bezezbytku dokumentuje odpracované hodiny a dobu trvání dohody u pracovníků na dohodu &mdash; základ potřebný pro výpočet nároku na dovolenou přes fiktivní dvacetihodinový týden." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplánuj objekty v centrálním obvodu na zítřejší ráno“ stačí &mdash; Klacksy optimalizuje trasu i tým." },
       { "icon": "event_busy", "title": "Výpadky rychle vyřešené", "text": "Když někdo vypadne, Klacks okamžitě ukáže, kdo je dostupný a která trasa se hodí nejlépe." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "Norma 38,75 hodiny, samoplánování, jeden pohled",
-    "text": "Klacks automaticky rozpozná, když se v dvousměnném provozu naplánuje nad normu 38,75 hodiny, a zároveň při samoplánování zaměstnanců na částečný úvazek dodržuje 12hodinový limit na směnu &mdash; bez ručního přepočítávání."
+    "text": "Klacks automaticky zobrazí, když se v dvousměnném provozu naplánuje nad normu 38,75 hodiny, a upozorní při samoplánování zaměstnanců na částečný úvazek, jakmile by byl překročen 12hodinový limit na směnu &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Zažijte Klacks ve své úklidové firmě",
-    "text": "Vyzkoušejte si v Playgroundu, jak Klacks převezme trasy, samoplánování i nárok na dovolenou na dohodu &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Zdarma a bez registrace."
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks optimalizuje trasy, hlídá samoplánování a dokumentuje hodinovou základnu pro nárok na dovolenou na dohodu &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Zdarma a bez registrace."
   }
 }

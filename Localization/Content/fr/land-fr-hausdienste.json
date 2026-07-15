@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks pour les services de nettoyage en France | Coupures & CCN Propreté",
+  "hero": {
+    "badgeIcon": "cleaning_services",
+    "badge": "Pour les services de nettoyage en France (Propreté)",
+    "titleHtml": "Chaque site <span class=\"text-secondary\">planifié avec soin.</span>",
+    "subtitle": "Klacks répartit efficacement les sites, les itinéraires et les équipes qui changent &mdash; en gardant à l'œil les règles de coupure de la CCN Propreté. Les tournées sont optimisées automatiquement, pour qu'aucun temps ne soit perdu sur la route.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Grille de planning Klacks pour les équipes de nettoyage et les sites en France",
+    "screenshotLabel": "Planning"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien du nettoyage en France",
+    "title": "De nombreux sites, des règles de coupure échelonnées",
+    "items": [
+      {
+        "icon": "pin_drop",
+        "title": "De nombreux sites, de nombreux trajets",
+        "text": "Les équipes se déplacent de site en site. De mauvais itinéraires coûtent chaque jour du temps, des kilomètres et de l'argent."
+      },
+      {
+        "icon": "gavel",
+        "title": "Coupures &amp; amplitude (CCN 3043)",
+        "text": "La CCN Propreté (IDCC 3043) échelonne les services coupés selon les heures hebdomadaires : moins de 16 heures, 1 coupure/jour maximum avec 12 heures d'amplitude ; de 16 à 24 heures, 1 coupure maximum avec 13 heures d'amplitude ; au-delà de 24 heures, 2 coupures maximum avec 13 heures d'amplitude (Art. 6.2, Avenant n°3/2014)."
+      },
+      {
+        "icon": "schedule",
+        "title": "Créneaux horaires serrés",
+        "text": "Certains sites ne sont accessibles qu'à des horaires déterminés &mdash; la planification doit les respecter avec précision."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage les services de nettoyage en France",
+    "subtitle": "De l'itinéraire optimisé à la règle de coupure surveillée &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Itinéraires des sites optimisés",
+        "text": "Klacks définit l'ordre des sites de façon à raccourcir les trajets &mdash; en voiture, à vélo ou à pied."
+      },
+      {
+        "icon": "groups",
+        "title": "Équipes réparties avec flexibilité",
+        "text": "Effectifs changeants, remplaçant·e·s et congés : Klacks garde une vue d'ensemble et propose des répartitions adaptées."
+      },
+      {
+        "icon": "verified",
+        "title": "Règles de coupure vérifiées automatiquement",
+        "text": "Les limites de coupure et d'amplitude de la CCN Propreté, échelonnées selon les heures hebdomadaires, sont vérifiées automatiquement &mdash; la rémunération minimale prescrite pour les interventions courtes de moins d'une heure reste ensuite l'affaire de votre gestion de la paie, sur cette base documentée."
+      },
+      {
+        "icon": "door_front",
+        "title": "Créneaux horaires pris en compte",
+        "text": "Les sites accessibles uniquement le matin ou le soir sont automatiquement planifiés dans le bon créneau par Klacks."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Planifie les sites du secteur Nord pour demain matin » suffit &mdash; Klacksy optimise l'itinéraire et l'équipe."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences compensées rapidement",
+        "text": "En cas d'absence, Klacks indique immédiatement qui est disponible et quel itinéraire convient le mieux."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "Découvrez Klacks dans votre entreprise de nettoyage",
+    "text": "Testez dans le Playground comment Klacks prend en charge les itinéraires, les équipes et les règles de coupure &mdash; ou installez-le directement sur votre propre infrastructure. Gratuitement et sans inscription."
+  }
+}

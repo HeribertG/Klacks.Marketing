@@ -7,8 +7,12 @@ public static class SitemapGenerator
     private static readonly string[] PageKeys =
     {
         "", "spitex", "spitaeler", "security", "hausdienste", "logistik",
-        "land-de", "land-at", "land-ch",
+        "land-de", "land-at", "land-fr", "land-it", "land-ch",
         "land-ch/spitex", "land-ch/spitaeler", "land-ch/security", "land-ch/hausdienste", "land-ch/logistik",
+        "land-de/spitex", "land-de/spitaeler", "land-de/security", "land-de/hausdienste", "land-de/logistik",
+        "land-at/spitex", "land-at/spitaeler", "land-at/security", "land-at/hausdienste", "land-at/logistik",
+        "land-fr/spitex", "land-fr/spitaeler", "land-fr/security", "land-fr/hausdienste", "land-fr/logistik",
+        "land-it/spitex", "land-it/spitaeler", "land-it/security", "land-it/hausdienste", "land-it/logistik",
         "land-sa", "land-ae", "land-il",
         "land-be", "land-gb", "land-ie", "land-no", "land-pl", "land-pt", "land-ro", "land-cz", "land-dk", "land-es", "land-fi", "land-gr", "land-nl", "land-se",
         "land-be/spitex", "land-be/spitaeler", "land-be/security", "land-be/hausdienste", "land-be/logistik",

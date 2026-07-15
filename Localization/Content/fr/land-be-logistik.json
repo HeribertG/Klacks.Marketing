@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en Belgique (CP 140.03)",
     "titleHtml": "Tournées, indemnités, justificatifs &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs, vérifie automatiquement le droit aux chèques-repas et consigne fidèlement dans le règlement de travail le cadre horaire réellement pratiqué &mdash; comme l'exige la réforme 2026.",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs, documente l'ancienneté et les jours de travail comme base du droit au chèque-repas et consigne fidèlement dans le règlement de travail le cadre horaire réellement pratiqué &mdash; comme l'exige la réforme 2026.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations des chauffeurs en Belgique",
     "screenshotLabel": "Chronologie"
@@ -23,21 +23,21 @@
     "subtitle": "De la tournée optimisée au cadre horaire correct &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks place les arrêts dans l'ordre le plus judicieux &mdash; trajets courts, créneaux horaires respectés, moins de trajets à vide." },
-      { "icon": "restaurant", "title": "Droit au chèque-repas vérifié automatiquement", "text": "Klacks vérifie automatiquement, pour chaque service, si l'ancienneté et la durée de travail minimale requises pour le chèque-repas sont remplies." },
+      { "icon": "restaurant", "title": "Base du droit au chèque-repas documentée", "text": "Klacks documente automatiquement, pour chaque service, l'ancienneté et les journées de travail d'au moins 4 heures &mdash; les données dont votre gestion de la paie a besoin pour le droit au chèque-repas." },
       { "icon": "fact_check", "title": "Cadre horaire documenté fidèlement", "text": "Klacks reflète le cadre horaire à partir des services réellement planifiés &mdash; pas de plage alibi, mais le véritable travail de week-end et de nuit." },
-      { "icon": "schedule", "title": "Franchise de 240h sur les heures supplémentaires sous contrôle", "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles et indique quand la limite de 240 heures exonérées de cotisations et d'impôt est atteinte." },
+      { "icon": "schedule", "title": "Franchise de 240h sur les heures supplémentaires sous contrôle", "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles et indique quand le seuil de 240 heures est atteint &mdash; la limite dont votre gestion de la paie a besoin pour l'exonération de cotisations et d'impôt." },
       { "icon": "badge", "title": "Catégories de permis adaptées", "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance." },
-      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Planifie les tournées de demain, le chauffeur Janssens est malade » suffit &mdash; Klacksy recalcule tout, y compris les heures supplémentaires et les chèques-repas." }
+      { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Planifie les tournées de demain, le chauffeur Janssens est malade » suffit &mdash; Klacksy recalcule tout, y compris les heures supplémentaires et les jours qui comptent pour le chèque-repas." }
     ]
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Chèque-repas et cadre horaire, un seul planning",
-    "text": "Klacks vérifie automatiquement si un service remplit les critères du chèque-repas, tient à jour les heures supplémentaires volontaires jusqu'à la franchise de 240 heures et consigne fidèlement le cadre horaire dans le règlement de travail &mdash; sans calcul manuel."
+    "text": "Klacks documente l'ancienneté et les jours de travail comme base du droit au chèque-repas, tient à jour les heures supplémentaires volontaires jusqu'au seuil de 240 heures et consigne fidèlement le cadre horaire dans le règlement de travail &mdash; sans calcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de logistique",
-    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, les chèques-repas et le cadre horaire &mdash; gratuitement et sans inscription."
+    "text": "Testez dans le Playground comment Klacks optimise les tournées, documente les données de base des chèques-repas et consigne fidèlement le cadre horaire &mdash; gratuitement et sans inscription."
   }
 }

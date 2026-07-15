@@ -24,8 +24,8 @@
     "items": [
       { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied." },
       { "icon": "schedule", "title": "Temps de trajet correctement comptabilisé comme temps de travail", "text": "Les trajets entre patient·e·s sont automatiquement comptés comme temps de travail &mdash; seuls le premier et le dernier trajet restent exclus." },
-      { "icon": "call_split", "title": "Supplément de 50% pour services coupés calculé", "text": "Klacks détecte automatiquement un service interrompu et applique le supplément de 50% selon le barème salarial de la CP 330." },
-      { "icon": "elderly", "title": "Rimpelregeling automatiquement planifiée", "text": "Les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, sont automatiquement intégrées à la planification des tournées." },
+      { "icon": "call_split", "title": "Supplément de 50% pour services coupés calculé", "text": "Klacks détecte automatiquement un service interrompu et propose le supplément de 50% selon la CP 330." },
+      { "icon": "elderly", "title": "Rimpelregeling intégrée comme règle de planification", "text": "Vous configurez les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, comme règle de disponibilité &mdash; elles s'intègrent ensuite automatiquement à la planification des tournées." },
       { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle." },
       { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." }
     ]

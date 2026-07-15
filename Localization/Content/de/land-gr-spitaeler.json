@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Klacks für Spitäler in Griechenland | ERGANI-Pflicht & Bereitschaftsdienste",
+  "pageTitle": "Klacks für Krankenhäuser in Griechenland | ERGANI-Pflicht & Bereitschaftsdienste",
   "hero": {
     "badgeIcon": "local_hospital",
-    "badge": "Für Spitäler &amp; Kliniken in Griechenland",
+    "badge": "Für Krankenhäuser &amp; Kliniken in Griechenland",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste lückenlos, dokumentiert jede Schicht ERGANI-konform und hält die Ruhezeiten des Pflegepersonals ein &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste lückenlos, dokumentiert jede Schicht ERGANI-konform und behält die Ruhezeiten des Pflegepersonals im Blick &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Klacks Dienstplan-Raster für griechische Spitäler",
+    "screenshotAlt": "Klacks Dienstplan-Raster für griechische Krankenhäuser",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
@@ -19,13 +19,13 @@
     ]
   },
   "solutions": {
-    "title": "Wie Klacks griechische Spitäler entlastet",
+    "title": "Wie Klacks griechische Krankenhäuser entlastet",
     "subtitle": "Von der lückenlosen Stationsabdeckung bis zur ERGANI-konformen Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Stationsabdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "fact_check", "title": "ERGANI-konform ab 12. Oktober 2026", "text": "Klacks dokumentiert jede Schicht des nicht-ärztlichen Personals lückenlos &mdash; bereit für den ERGANI-Abgleich, ohne das Risiko der 10.500-€-Busse." },
-      { "icon": "call", "title": "Bereitschaftsdienste korrekt geplant", "text": "Klacks plant 24-Stunden-Bereitschaften und die anschliessende Ausgleichsruhe mit &mdash; im Sinne von Gesetz 4498/2017." },
-      { "icon": "bedtime", "title": "Ruhezeiten des Pflegepersonals automatisch eingehalten", "text": "Die 11-stündige Tagesruhe und die 24-stündige Wochenruhe (P.D. 88/1999) werden auch bei rotierenden Diensten automatisch geprüft." },
+      { "icon": "fact_check", "title": "ERGANI-konform ab 12. Oktober 2026", "text": "Klacks dokumentiert jede Schicht des nicht-ärztlichen Personals lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für den ERGANI-Abgleich." },
+      { "icon": "call", "title": "Bereitschaftsdienste im Blick", "text": "Klacks unterstützt die Planung von 24-Stunden-Bereitschaften samt anschließender Ausgleichsruhe &mdash; orientiert an Gesetz 4498/2017." },
+      { "icon": "bedtime", "title": "Ruhezeiten des Pflegepersonals automatisch geprüft", "text": "Die 11-stündige Tagesruhe und die 24-stündige Wochenruhe (P.D. 88/1999) werden auch bei rotierenden Diensten automatisch geprüft." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Ruhezeiten." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Bereitschaftsdienst und Ruhezeit, ein Plan",
-    "text": "Klacks behält die Ausgleichsruhe nach einer 24-Stunden-Bereitschaft im Blick und prüft gleichzeitig, dass die 11-stündige Tagesruhe des Pflegepersonals eingehalten bleibt &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks behält die Ausgleichsruhe nach einer 24-Stunden-Bereitschaft im Blick und prüft gleichzeitig, ob die 11-stündige Tagesruhe des Pflegepersonals eingehalten wird &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

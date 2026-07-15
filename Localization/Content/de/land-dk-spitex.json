@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (Hjemmepleje) in Dänemark",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Dienstplan-Verwaltung.</span>",
-    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; inklusive der neuen Fritvalgsordning ab OK26 und der 4-Tage-Frist bei Umplanungen. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; dokumentiert die Stunden für die neue Fritvalgsordning ab OK26 und warnt vor der 4-Tage-Frist bei Umplanungen. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren in der dänischen Hjemmepleje",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "route",
         "title": "Touren automatisch optimiert",
-        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss."
+        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß."
       },
       {
         "icon": "savings",
-        "title": "Fritvalgsordning individuell geführt",
-        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter das individuelle Wahlkonto zwischen freien Tagen, Gehalt und Zusatzrente gemäss OK26 tagesaktuell mit."
+        "title": "Fritvalgsordning-Stunden dokumentiert",
+        "text": "Klacks dokumentiert für jede Mitarbeiterin und jeden Mitarbeiter die für die Fritvalgsordning gemäß OK26 relevanten Stunden &mdash; als verlässliche Basis für Ihre Lohnbuchhaltung."
       },
       {
         "icon": "event_repeat",
         "title": "4-Tage-Frist automatisch überwacht",
-        "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet, und bucht den Zuschlag von 30,85 DKK pro Stunde automatisch, wenn es doch kurzfristig sein muss."
+        "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet, und der Zuschlag von 30,85 DKK pro Stunde lässt sich als Zuschlagstyp hinterlegen, falls es doch kurzfristig sein muss."
       },
       {
         "icon": "call_split",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Umplanung und Fritvalgsordning, ein Plan",
-    "text": "Klacks bucht bei einer Umplanung unter 4 Tagen automatisch den Zuschlag von 30,85 DKK pro Stunde und führt gleichzeitig das individuelle Fritvalgsordning-Konto jeder Pflegekraft weiter &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt bei einer Umplanung unter 4 Tagen vor dem Zuschlag von 30,85 DKK pro Stunde und dokumentiert gleichzeitig die für die Fritvalgsordning relevanten Stunden jeder Pflegekraft &mdash; als verlässliche Basis für die Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Hjemmepleje erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Fritvalgsordning und Umplanungsfristen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren plant, Fritvalgsordning-Stunden dokumentiert und Umplanungsfristen im Blick behält &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

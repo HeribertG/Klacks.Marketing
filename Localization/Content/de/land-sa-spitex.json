@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Für häusliche Pflege (Home Care) in Saudi-Arabien",
-    "titleHtml": "Pflege-Touren, die <span class=\"text-secondary\">die 12-Stunden-Grenze nie sprengen.</span>",
-    "subtitle": "Klacks plant Pflegeeinsätze automatisch &mdash; und verhindert Schichtfolgen, die eine Pflegekraft länger als 12 Stunden am Arbeitsplatz halten (Art. 101). On-Premise, damit Patientendaten Saudi-Arabien nie verlassen.",
+    "titleHtml": "Pflege-Touren, die <span class=\"text-secondary\">die 12-Stunden-Grenze live überwachen.</span>",
+    "subtitle": "Klacks plant Pflegeeinsätze automatisch &mdash; und warnt live vor Schichtfolgen, die eine Pflegekraft länger als 12 Stunden am Arbeitsplatz halten würden (Art. 101). On-Premise, damit Patientendaten Saudi-Arabien nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Pflege-Touren in Saudi-Arabien",
     "screenshotLabel": "Timeline"
@@ -14,7 +14,7 @@
     "title": "24-Stunden-Ketten, Ausnahme-Arbeitszeit und die 12-Stunden-Grenze",
     "items": [
       { "icon": "schedule", "title": "12-Stunden-Grenze bei 24-h-Ketten", "text": "Für 24-Stunden-Betreuungsketten gilt Art. 101: Rückt eine Pflegekraft in Back-to-Back-Schichten länger als 12 Stunden am Stück ein, ist das unzulässig &mdash; über wechselnde Klient:innen von Hand schwer zu überblicken." },
-      { "icon": "trending_up", "title": "Ausnahme-Höchstarbeitszeit nach Art. 106", "text": "In Ausnahmefällen &mdash; etwa zur Abwendung drohender Schäden, bei aussergewöhnlichem Arbeitsdruck oder saisonal (حالات استثنائية) &mdash; darf die reguläre Arbeitszeit überschritten werden, die tatsächliche Arbeitszeit aber max. 10 Stunden pro Tag bzw. 60 Stunden pro Woche." },
+      { "icon": "trending_up", "title": "Ausnahme-Höchstarbeitszeit nach Art. 106", "text": "In Ausnahmefällen &mdash; etwa zur Abwendung drohender Schäden, bei außergewöhnlichem Arbeitsdruck oder saisonal (حالات استثنائية) &mdash; darf die reguläre Arbeitszeit überschritten werden, die tatsächliche Arbeitszeit aber max. 10 Stunden pro Tag bzw. 60 Stunden pro Woche." },
       { "icon": "gavel", "title": "Überstunden korrekt vergütet", "text": "Jede Überstunde ist mit dem Stundenlohn plus 50% des Grundlohns (effektiv 150%) zu vergüten (Art. 107) &mdash; seit der Reform 2025 wahlweise als bezahlter Freizeitausgleich." }
     ]
   },
@@ -22,12 +22,12 @@
     "title": "Wie Klacks die häusliche Pflege in Saudi-Arabien entlastet",
     "subtitle": "Von der automatischen 12-Stunden-Kontrolle bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Pflegeeinsätze und Wege so, dass Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuss." },
-      { "icon": "schedule", "title": "12-Stunden-Grenze bei 24-h-Ketten blockiert", "text": "Klacks verhindert automatisch Schichtfolgen, die eine Pflegekraft länger als 12 Stunden am Stück am Arbeitsplatz halten würden (Art. 101)." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Pflegeeinsätze und Wege so, dass Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuß." },
+      { "icon": "schedule", "title": "12-Stunden-Grenze bei 24-h-Ketten live überwacht", "text": "Klacks überwacht Schichtfolgen live und warnt automatisch, sobald eine Pflegekraft länger als 12 Stunden am Stück am Arbeitsplatz gehalten würde (Art. 101)." },
       { "icon": "trending_up", "title": "Ausnahme-Arbeitszeit nach Art. 106 im Blick", "text": "Die Ausnahme-Obergrenze von 10 Stunden pro Tag bzw. 60 Stunden pro Woche wird laufend geprüft, auch in saisonalen Spitzen." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit passender Qualifikation zugeteilt." },
-      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben in KSA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible biometrische Zeiterfassungsdaten bleiben physisch in Saudi-Arabien &mdash; die Transfer-Compliance-Last nach PDPL/SDAIA entfällt." },
-      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor &mdash; ohne die 12-Stunden-Grenze zu verletzen." }
+      { "icon": "shield_lock", "title": "On-Premise: Patientendaten bleiben in KSA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Personal- und Planungsdaten bleiben physisch in Saudi-Arabien &mdash; die Transfer-Compliance-Last nach PDPL/SDAIA entfällt." },
+      { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor &mdash; und warnt, falls dabei die 12-Stunden-Grenze überschritten würde." }
     ]
   },
   "example": {

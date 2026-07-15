@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Bevakningsföretag in Schweden",
     "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jeder Tarif aktuell.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit dem Bevakningsavtalet 2025-2027 und der Deltidspension ab 62 Jahren automatisch hinterlegt. On-Premise, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit dem Bevakningsavtalet 2025-2027 und der Deltidspension ab 62 Jahren als hinterlegte Regeln. On-Premise, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung im schwedischen Bewachungsgewerbe",
     "screenshotLabel": "Timeline"
@@ -23,9 +23,9 @@
     "subtitle": "Vom besetzten Posten bis zur korrekten Deltidspension &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "Bevakningsavtalet automatisch hinterlegt", "text": "Die Laufzeit 2025-2027 und die neuen Bestimmungen des Bevakningsavtalet sind in Klacks abgebildet." },
-      { "icon": "elderly", "title": "Deltidspension automatisch berücksichtigt", "text": "Klacks berücksichtigt den Anspruch auf bis zu 50 % Arbeitszeitreduktion ab 62 Jahren sowie den ab 2026 fälligen Arbeitgeberbeitrag von 0,1 % der Lohnsumme." },
-      { "icon": "timer", "title": "Überstundengrenzen automatisch überwacht", "text": "Die Grenzen von 48 Stunden je 4 Wochen, 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 werden automatisch mitgeführt." },
+      { "icon": "gavel", "title": "Bevakningsavtalet hinterlegt", "text": "Die Laufzeit 2025-2027 und die neuen Bestimmungen des Bevakningsavtalet hinterlegen Sie in Klacks als Zuschlags- und Grenzwerte &mdash; zentral an einer Stelle." },
+      { "icon": "elderly", "title": "Deltidspension direkt einplanbar", "text": "Die bis zu 50 % Arbeitszeitreduktion ab 62 Jahren planen Sie in Klacks direkt ein &mdash; die dokumentierten Stunden liefern die Basis, die Ihre Lohnbuchhaltung für den ab 2026 fälligen 0,1-%-Arbeitgeberbeitrag braucht." },
+      { "icon": "timer", "title": "Überstundengrenzen laufend sichtbar", "text": "Die Grenzen von 48 Stunden je 4 Wochen, 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 hält Klacks laufend sichtbar &mdash; so steuern Sie rechtzeitig gegen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy prüft Verfügbarkeit und Dienstplan-Grenzen." },
       { "icon": "event_busy", "title": "Ausfälle in Minuten ersetzt", "text": "Fällt ein Posten aus, zeigt Klacks sofort qualifizierten, verfügbaren Ersatz &mdash; ohne den ganzen Plan zu kippen." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Deltidspension und Jahresgrenze, ein Blick",
-    "text": "Klacks berücksichtigt automatisch den Deltidspension-Anspruch einer 62-jährigen Wachperson und behält gleichzeitig im Blick, dass die Jahresgrenze von 200 Überstunden nach ATL § 8 nicht überschritten wird &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks plant die reduzierte Arbeitszeit einer 62-jährigen Wachperson mit Deltidspension direkt ein und hält gleichzeitig die Jahressumme gegen die 200-Überstunden-Grenze nach ATL § 8 sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Bevakningsföretag erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Tarif und Deltidspension übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte besetzt, Tarifwerte hinterlegt und Deltidspension einplant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

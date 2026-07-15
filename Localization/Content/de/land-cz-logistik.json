@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Tschechien",
     "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks dokumentiert Lenk- und Arbeitszeiten lückenlos für die 56-Tage-Nachweispflicht, prüft die 60-Stunden-Einzelwoche im 26-Wochen-Schnitt und trennt vereinbarte Rufbereitschaft sauber von tatsächlichen Einsätzen. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht, prüft die 60-Stunden-Einzelwoche im 26-Wochen-Schnitt und trennt vereinbarte Rufbereitschaft sauber von tatsächlichen Einsätzen. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Tschechien",
     "screenshotLabel": "Timeline"
@@ -13,9 +13,9 @@
     "eyebrow": "Der Logistik-Alltag in Tschechien",
     "title": "Nachweispflicht, Wochenobergrenze und Rufbereitschaft",
     "items": [
-      { "icon": "fact_check", "title": "56-Tage-Nachweispflicht", "text": "Bei einer Strassenkontrolle müssen Fahrer die Fahrtenschreiber-Aufzeichnungen für den Kontrolltag und die vorangegangenen 56 Tage vorlegen. Die tägliche Lenkzeit ist auf 9 Stunden begrenzt, zweimal pro Woche auf 10 Stunden verlängerbar (EU-VO 561/2006)." },
+      { "icon": "fact_check", "title": "56-Tage-Nachweispflicht", "text": "Bei einer Straßenkontrolle müssen Fahrer die Fahrtenschreiber-Aufzeichnungen für den Kontrolltag und die vorangegangenen 56 Tage vorlegen. Die tägliche Lenkzeit ist auf 9 Stunden begrenzt, zweimal pro Woche auf 10 Stunden verlängerbar (EU-VO 561/2006)." },
       { "icon": "schedule", "title": "Bis zu 60 Wochenstunden, aber im Schnitt begrenzt", "text": "Ein Fahrer darf in einer einzelnen Woche bis zu 60 Stunden arbeiten, sofern der Durchschnitt über höchstens 26 Wochen die Sollarbeitszeit nicht übersteigt. Bei Nachtarbeit (zwischen 22:00 und 06:00 Uhr) darf die Schichtlänge zusätzlich 10 Stunden je 24 Stunden nicht überschreiten (Nařízení vlády č. 589/2006 Sb., § 5)." },
-      { "icon": "call", "title": "Rufbereitschaft nur per Vereinbarung", "text": "Rufbereitschaft ausserhalb Arbeitszeit und Arbeitsplatz wird mit mindestens 10 % des Durchschnittsverdienstes vergütet und darf nur vereinbart, nicht einseitig angeordnet werden (§ 95 ZP). Wird der Fahrer tatsächlich gerufen, gilt diese Zeit sofort als Überstunde." }
+      { "icon": "call", "title": "Rufbereitschaft nur per Vereinbarung", "text": "Rufbereitschaft außerhalb Arbeitszeit und Arbeitsplatz wird mit mindestens 10 % des Durchschnittsverdienstes vergütet und darf nur vereinbart, nicht einseitig angeordnet werden (§ 95 ZP). Wird der Fahrer tatsächlich gerufen, gilt diese Zeit sofort als Überstunde." }
     ]
   },
   "solutions": {
@@ -23,8 +23,8 @@
     "subtitle": "Von der optimierten Tour bis zur sauber getrennten Rufbereitschaft &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "fact_check", "title": "56-Tage-Nachweis immer griffbereit", "text": "Klacks dokumentiert Lenk- und Arbeitszeiten lückenlos und hält sie für den Kontrolltag und die vorangegangenen 56 Tage jederzeit abrufbar bereit." },
-      { "icon": "schedule", "title": "60-Stunden-Woche im 26-Wochen-Schnitt geprüft", "text": "Klacks lässt einzelne 60-Stunden-Wochen zu, prüft aber automatisch den Durchschnitt über 26 Wochen sowie die 10-Stunden-Grenze bei Nachtschichten." },
+      { "icon": "fact_check", "title": "Dienstzeiten lückenlos dokumentiert", "text": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos und hält sie jederzeit abrufbar bereit &mdash; als Ergänzung zu den separat vorzulegenden Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht." },
+      { "icon": "schedule", "title": "60-Stunden-Woche im 26-Wochen-Schnitt geprüft", "text": "Klacks lässt einzelne 60-Stunden-Wochen zu, überwacht die 10-Stunden-Grenze bei Nachtschichten automatisch und hält die Stundenbasis für den 26-Wochen-Durchschnitt laufend sichtbar." },
       { "icon": "call", "title": "Rufbereitschaft sauber getrennt", "text": "Klacks unterscheidet automatisch zwischen vereinbarter Rufbereitschaft (10 %-Zuschlag) und einem tatsächlichen Einsatz, der sofort als Überstunde gerechnet wird." },
       { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Tour- und Fahrerdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Novák ist krank“ genügt &mdash; Klacksy rechnet alles neu." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "56 Tage, 60-Stunden-Woche, Rufbereitschaft",
-    "text": "Klacks hält die Fahrtenschreiber-Nachweise der letzten 56 Tage griffbereit, prüft eine 60-Stunden-Einzelwoche automatisch gegen den 26-Wochen-Schnitt und rechnet eine tatsächlich abgerufene Rufbereitschaft gleich als Überstunde &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks dokumentiert die Dienstzeiten der letzten 56 Tage lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen, hält die Stundenbasis für den 26-Wochen-Schnitt laufend sichtbar und rechnet eine tatsächlich abgerufene Rufbereitschaft gleich als Überstunde &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

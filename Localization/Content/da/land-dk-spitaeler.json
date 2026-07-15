@@ -41,13 +41,13 @@
       },
       {
         "icon": "bedtime",
-        "title": "Holdskifte-undtagelse dokumenteret korrekt",
-        "text": "Klacks genkender, hvornår hviletiden ved holdskifte må afkortes til 8 timer, og fastholder den forudgående aftale med tillidsrepræsentanten på en gennemskuelig måde."
+        "title": "Holdskifte-undtagelse konfigurerbart planlagt",
+        "text": "Afkortningen af hviletiden til 8 timer ved holdskifte kan registreres som en særregel; den forudgående aftale med tillidsrepræsentanten fastholder I i vagtplanens notater."
       },
       {
         "icon": "gavel",
-        "title": "48-timers-gennemsnit tjekket løbende",
-        "text": "Klacks tjekker automatisk det glidende 4-måneders-gennemsnit og advarer, før 48-timers-grænsen nås."
+        "title": "48-timers-gennemsnit løbende synligt",
+        "text": "Klacks holder timegrundlaget for det glidende 4-måneders-gennemsnit løbende synligt &mdash; så I i god tid opdager, hvis nogen nærmer sig 48-timers-grænsen."
       },
       {
         "icon": "tune",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Holdskifte og 48-timers-dokumentation, én plan",
-    "text": "Klacks genkender automatisk, hvornår hviletiden ved holdskifte må afkortes til 8 timer, fastholder aftalen med tillidsrepræsentanten og overvåger løbende 48-timers-grænsen som 4-måneders-gennemsnit &mdash; uden manuel efterregning."
+    "text": "Klacks lader afkortningen af hviletiden ved holdskifte til 8 timer planlægges som en særregel, holder plads til aftalen med tillidsrepræsentanten i notaterne og holder timegrundlaget for 48-timers-dokumentationen som 4-måneders-gennemsnit løbende synligt &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": false,
   "cta": {

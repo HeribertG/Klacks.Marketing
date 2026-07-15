@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; PDPL/SDAIA Compliant",
-    "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">never breaches the 12-hour limit.</span>",
-    "subtitle": "Klacks schedules shifts automatically, enforces the 12-hour presence limit (Art. 101), and can be controlled through the Klacksy AI assistant &mdash; on-premise, open source, with the AI model of your choice. Sensitive biometric time-tracking data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
+    "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">monitors the 12-hour limit live.</span>",
+    "subtitle": "Klacks schedules shifts automatically, enforces the 12-hour presence limit (Art. 101), and can be controlled through the Klacksy AI assistant &mdash; on-premise, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -22,12 +22,12 @@
     "title": "How Klacks Takes the Load Off Businesses in Saudi Arabia",
     "subtitle": "From automatic 12-hour monitoring to your own infrastructure &mdash; it all fits together.",
     "items": [
-      { "icon": "gavel", "title": "Standard Hours &amp; 6-Day Limit Monitored", "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; violations simply never occur." },
+      { "icon": "gavel", "title": "Standard Hours &amp; 6-Day Limit Monitored", "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded." },
       { "icon": "nightlight", "title": "Ramadan Hours Reduced Automatically", "text": "For Muslim staff, Klacks automatically schedules with the reduced 6h/36h limit (Art. 98) during Ramadan &mdash; without manually reworking the entire plan." },
-      { "icon": "timer_off", "title": "12-Hour Limit Strictly Enforced (Art. 101)", "text": "Klacks blocks shift sequences that would keep a person at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times." },
+      { "icon": "timer_off", "title": "12-Hour Limit Monitored Live (Art. 101)", "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times." },
       { "icon": "payments", "title": "Overtime Premium under Art. 107", "text": "The statutory premium of 50% on the base wage (effectively 150%) is calculated automatically &mdash; since the 2025 reform, optionally also as paid time off in lieu." },
-      { "icon": "groups", "title": "Nitaqat Saudization Tracked", "text": "Klacks tracks which Saudi employees with a GOSI-insured salary of SAR 4,000 or more count as a full quota unit (1.0), and which count as only 0.5 (SAR 3,000 to 3,999)." },
-      { "icon": "shield_lock", "title": "On-Premise: Data Stays in Saudi Arabia", "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive biometric time-tracking data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
+      { "icon": "groups", "title": "Nitaqat Saudization Tracked", "text": "Klacks documents the employment data for each Saudi employee as the basis for Nitaqat classification &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000, 0.5 for SAR 3,000 to 3,999) is met is calculated by your payroll system." },
+      { "icon": "shield_lock", "title": "On-Premise: Data Stays in Saudi Arabia", "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA." },
       { "icon": "smart_toy", "title": "Klacksy: Rule-Based, No Black Box", "text": "The built-in Klacksy AI assistant schedules by voice command &mdash; transparently, based on defined skills and rules, not as an opaque AI decision." }
     ]
   },
@@ -46,6 +46,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Experience Klacks in Your Business in Saudi Arabia",
-    "text": "Try the Playground to see how Klacks automates Art. 98/101/107, Ramadan working hours and Nitaqat Saudization &mdash; on-premise or in the Playground, free and without registration."
+    "text": "Try the Playground to see how Klacks automatically assigns the premiums under Art. 107, monitors the limits under Art. 98/101, reflects Ramadan target hours, and documents Nitaqat classification &mdash; on-premise or in the Playground, free and without registration."
   }
 }

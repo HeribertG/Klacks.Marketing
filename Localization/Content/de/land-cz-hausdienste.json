@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste in Tschechien",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks kennt das reduzierte Wochensoll im Zweischichtbetrieb, hält die 12-Stunden-Obergrenze bei der Selbst-Planung von Teilzeitkräften ein und berechnet den Urlaubsanspruch für dohoda-Kräfte automatisch.",
+    "subtitle": "Klacks kennt das reduzierte Wochensoll im Zweischichtbetrieb, hält die 12-Stunden-Obergrenze bei der Selbst-Planung von Teilzeitkräften ein und dokumentiert die geleisteten Stunden von dohoda-Kräften als Basis für deren Urlaubsanspruch.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Tschechien",
     "screenshotLabel": "Dienstplan"
@@ -22,10 +22,10 @@
     "title": "Wie Klacks Hausdienste in Tschechien entlastet",
     "subtitle": "Von der optimierten Route bis zum dohoda-Urlaubsanspruch &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuss." },
-      { "icon": "schedule", "title": "38,75-Stunden-Soll automatisch erkannt", "text": "Klacks kennt das reduzierte Wochensoll im Zweischichtbetrieb und berechnet den 25 %-Überstundenzuschlag automatisch, sobald darüber hinaus geplant wird." },
-      { "icon": "edit_calendar", "title": "Selbst-Planung mit 12-Stunden-Deckel", "text": "Auch wenn Teilzeitkräfte ihre Schicht per Vereinbarung selbst wählen, hält Klacks die 12-Stunden-Obergrenze je Schicht automatisch ein." },
-      { "icon": "beach_access", "title": "Urlaubsanspruch für DPP/DPČ berechnet", "text": "Klacks berechnet den Urlaubsanspruch von dohoda-Kräften automatisch über die fiktive 20-Stunden-Woche &mdash; inklusive der Mindestdauer- und Mindeststunden-Voraussetzung." },
+      { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "schedule", "title": "38,75-Stunden-Soll hinterlegt", "text": "Das reduzierte Wochensoll im Zweischichtbetrieb hinterlegen Sie als Vertragsbasis &mdash; Klacks macht sichtbar, sobald darüber hinaus geplant wird, und dokumentiert die Mehrstunden als Basis für den 25 %-Überstundenzuschlag." },
+      { "icon": "edit_calendar", "title": "Selbst-Planung mit 12-Stunden-Deckel", "text": "Auch wenn Teilzeitkräfte ihre Schicht per Vereinbarung selbst wählen, überwacht Klacks die 12-Stunden-Obergrenze je Schicht automatisch und warnt bei Überschreitung." },
+      { "icon": "beach_access", "title": "Geleistete Stunden für DPP/DPČ-Urlaub dokumentiert", "text": "Klacks dokumentiert lückenlos die geleisteten Stunden und die Vertragsdauer von dohoda-Kräften &mdash; die Basis, die für die Berechnung des Urlaubsanspruchs über die fiktive 20-Stunden-Woche nötig ist." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy optimiert Route und Team." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer verfügbar ist und welche Route am besten passt." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "38,75-Stunden-Soll, Selbst-Planung, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn im Zweischichtbetrieb über das 38,75-Stunden-Soll hinaus geplant wird, und hält bei der Selbst-Planung von Teilzeitkräften gleichzeitig die 12-Stunden-Grenze je Schicht ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks macht automatisch sichtbar, wenn im Zweischichtbetrieb über das 38,75-Stunden-Soll hinaus geplant wird, und warnt bei der Selbst-Planung von Teilzeitkräften, sobald die 12-Stunden-Grenze je Schicht überschritten würde &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Selbst-Planung und den dohoda-Urlaubsanspruch übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen optimiert, Selbst-Planung überwacht und die Stundenbasis für den dohoda-Urlaubsanspruch dokumentiert &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

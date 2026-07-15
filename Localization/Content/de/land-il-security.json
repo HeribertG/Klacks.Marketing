@@ -42,12 +42,12 @@
       {
         "icon": "bedtime",
         "title": "8-Stunden-Ruhe automatisch geprüft",
-        "text": "Klacks erkennt, wenn zwischen zwei Diensten weniger als 8 Stunden liegen, und verhindert die ungewollte Zusammenlegung zu einem Arbeitstag mit Überstundenfolge."
+        "text": "Klacks erkennt, wenn zwischen zwei Diensten weniger als 8 Stunden liegen, und warnt vor der ungewollten Zusammenlegung zu einem Arbeitstag mit Überstundenfolge."
       },
       {
         "icon": "nights_stay",
-        "title": "Nachtschicht-Grenze korrekt verzuschlagt",
-        "text": "Klacks erkennt die 7-Stunden-Grenze für Nachtarbeit und rechnet jede weitere Stunde automatisch mit 125 % bzw. 150 % Überstundenzuschlag."
+        "title": "Nachtschicht-Zuschlag automatisch berechnet",
+        "text": "Klacks erkennt Nachtschichten und rechnet Stunden über der eingerichteten Grenze automatisch mit 125 % bzw. 150 % Zuschlag ab &mdash; ganz ohne eigenes Nachrechnen."
       },
       {
         "icon": "route",

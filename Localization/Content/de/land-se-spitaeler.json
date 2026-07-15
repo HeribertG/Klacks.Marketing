@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Sjukhus &amp; Kliniken in Schweden",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die 13-Stunden-Grenze und Jourdienste einhalten.</span>",
-    "subtitle": "Klacks erkennt automatisch, wann ein Dienst die reguläre 13-Stunden-Grenze erreicht, wann ein kombinierter Arbeit-Jour-Dienst bis zu 20 Stunden zulässig ist, und markiert wichtigere Planänderungen im Sinne der MBL-Verhandlungspflicht. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks überwacht die reguläre 13-Stunden-Grenze automatisch, unterstützt die Planung kombinierter Arbeit-Jour-Dienste bis 20 Stunden und markiert wichtigere Planänderungen im Sinne der MBL-Verhandlungspflicht. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für schwedische Krankenhäuser und Kliniken",
     "screenshotLabel": "Dienstplan"
@@ -23,9 +23,9 @@
     "subtitle": "Von der 13-Stunden-Grenze bis zur dokumentierten Planänderung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "gavel", "title": "MBL-Verhandlungspflicht im Blick", "text": "Klacks markiert wichtigere Änderungen am Schichtmuster deutlich, damit rechtzeitig erkennbar ist, wann die Verhandlungspflicht nach MBL § 11 gegenüber der Gewerkschaft greift." },
-      { "icon": "schedule", "title": "20-Stunden-Jourdienst korrekt geplant", "text": "Klacks erkennt Dienste, die Arbeit und jour kombinieren, und stellt sicher, dass mindestens 5 Stunden zusammenhängende jourtid zwischen 22:00 und 08:00 Uhr sowie die zusammenhängende Ausgleichsruhe eingehalten werden." },
-      { "icon": "timer", "title": "13-Stunden-Grenze automatisch eingehalten", "text": "Klacks begrenzt reguläre Dienste automatisch auf 13 Stunden je 24-Stunden-Periode, damit die 11-stündige dygnsvila gewahrt bleibt." },
-      { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die branchenüblich gestaffelten Zuschlagsstufen der jeweiligen Schicht zu." },
+      { "icon": "schedule", "title": "20-Stunden-Jourdienst planbar", "text": "Kombinierte Arbeit-Jour-Dienste planen Sie in Klacks gezielt &mdash; die Vorgaben von mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr und der zusammenhängenden Ausgleichsruhe behalten Sie dabei sichtbar im Blick." },
+      { "icon": "timer", "title": "13-Stunden-Grenze automatisch überwacht", "text": "Klacks warnt, sobald ein regulärer Dienst 13 Stunden je 24-Stunden-Periode überschreiten würde &mdash; damit die 11-stündige dygnsvila gewahrt bleibt." },
+      { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die hinterlegten, branchenüblich gestaffelten Zuschlagsstufen der jeweiligen Schicht zu." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und dygnsvila." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Jourdienst und 13-Stunden-Grenze, ein Blick",
-    "text": "Klacks erkennt, ob ein Dienst als kombinierter Arbeit-Jour-Dienst mit mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr geplant ist oder als regulärer Dienst der 13-Stunden-Grenze unterliegt, und schlägt die passende Ausgleichsruhe gleich vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks zeigt, ob ein Dienst als kombinierter Arbeit-Jour-Dienst mit mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr geplant ist oder als regulärer Dienst der 13-Stunden-Grenze unterliegt, und warnt bei einer verkürzten Ruhezeit &mdash; die Ausgleichsruhe planen Sie mit klarer Sicht nach &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

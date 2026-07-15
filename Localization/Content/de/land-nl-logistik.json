@@ -24,7 +24,7 @@
     "items": [
       { "icon": "timer", "title": "Overuren korrekt nach Reform 2026 berechnet", "text": "Klacks rechnet Überstunden für Teilzeit- und Vollzeitkräfte gleich &mdash; ab der individuell vereinbarten Arbeitszeit, nicht erst ab der 41. Wochenstunde." },
       { "icon": "paid", "title": "Wochenend- und Feiertagszuschläge automatisch", "text": "Die 150%-Samstagsvergütung und die 200%-Sonn-/Feiertagsvergütung werden automatisch angewendet." },
-      { "icon": "nightlight", "title": "Nachtzuschlag eintägiger Fahrten erkannt", "text": "Klacks erkennt den 19%-Zuschlag zwischen 21:00 und 05:00 Uhr automatisch und löst die Samenloop-Regel korrekt auf &mdash; nur der höhere Zuschlag wird gezahlt." },
+      { "icon": "nightlight", "title": "Nachtzuschlag eintägiger Fahrten abgebildet", "text": "Klacks bildet den 19%-Nachtzuschlag als Zeitfenster-Zuschlag ab und löst die Samenloop-Regel korrekt auf &mdash; nur der höhere Zuschlag wird gezahlt." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "badge", "title": "Rijbewijs-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Jansen ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Toeslagen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Samstagstour mit Nachtfahrt, ein Plan",
-    "text": "Klacks erkennt automatisch, dass eine Samstagstour mit Nachtfahrt sowohl den 150%-Wochenendzuschlag als auch den 19%-Nachtzuschlag betrifft, und löst die Samenloop-Regel korrekt auf &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks bildet sowohl den 150%-Wochenendzuschlag als auch den 19%-Nachtzuschlag als Zeitfenster-Zuschläge ab und löst die Samenloop-Regel korrekt auf &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Untuk Jasa Keamanan Satpam di Indonesia",
     "titleHtml": "Setiap pos terisi. <span class=\"text-secondary\">Setiap tunjangan tepat.</span>",
-    "subtitle": "Klacks mengisi objek tanpa celah dan memblokir secara tegas shift lebih dari 12 jam di roster &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. On-Premise, sehingga data penugasan Anda tetap berada di tangan Anda.",
+    "subtitle": "Klacks mengisi objek tanpa celah dan memantau secara langsung shift lebih dari 12 jam di roster &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. On-Premise, sehingga data penugasan Anda tetap berada di tangan Anda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk penempatan objek jasa keamanan di Indonesia",
     "screenshotLabel": "Timeline"
@@ -27,12 +27,12 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban jasa keamanan Indonesia",
-    "subtitle": "Dari batas waktu yang tegas hingga pos yang terisi &mdash; semuanya saling terhubung.",
+    "subtitle": "Dari batas waktu yang dipantau hingga pos yang terisi &mdash; semuanya saling terhubung.",
     "items": [
       {
         "icon": "block",
-        "title": "Batas tegas 12 jam di roster",
-        "text": "Klacks secara otomatis memblokir shift lebih dari 12 jam, karena batas harian (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26 tidak memberi ruang untuk perpanjangan yang tidak direncanakan."
+        "title": "Batas harian 12 jam dipantau langsung",
+        "text": "Klacks secara otomatis memberi peringatan begitu sebuah shift melewati batas 12 jam (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26, karena batas harian ini tidak memberi ruang untuk perpanjangan yang tidak direncanakan."
       },
       {
         "icon": "shield",
@@ -47,7 +47,7 @@
       {
         "icon": "verified",
         "title": "Sertifikat diperiksa secara otomatis",
-        "text": "Klacks hanya menugaskan personel dengan kartu identitas Satpam yang berlaku &mdash; dan memberi peringatan sebelum bukti sertifikasi kedaluwarsa."
+        "text": "Klacks memeriksa kartu identitas Satpam pada setiap penugasan dan memberi peringatan tepat waktu sebelum bukti tersebut kedaluwarsa."
       },
       {
         "icon": "shield_lock",
@@ -64,7 +64,7 @@
   "example": {
     "eyebrow": "Contoh Konkret",
     "title": "Shift 12 jam, sekali lihat",
-    "text": "Klacks secara otomatis mengenali saat sebuah shift mencapai batas harian 12 jam dari PP 35/2021, dan memblokir setiap perpanjangan lebih lanjut &mdash; tanpa perlu menghitung ulang secara manual."
+    "text": "Klacks secara otomatis mengenali saat sebuah shift mencapai batas harian 12 jam dari PP 35/2021, dan memberi peringatan atas setiap perpanjangan lebih lanjut &mdash; tanpa perlu menghitung ulang secara manual."
   },
   "showRoutePlanning": true,
   "cta": {

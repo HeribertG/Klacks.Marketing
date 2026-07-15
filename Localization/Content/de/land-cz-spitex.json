@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche Pflege &amp; Pečovatelská služba in Tschechien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Verwaltung.</span>",
-    "subtitle": "Klacks teilt Einsätze nach absolviertem Qualifikationskurs für die neuen Kompetenzen ab 1. Juli 2026 zu, hält die 3-Personen-Grenze für Pflegeassistenten ab 1.1.2026 automatisch ein und unterscheidet den Nachtzuschlag nach Trägerform. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks teilt Einsätze nach absolviertem Qualifikationskurs für die neuen Kompetenzen ab 1. Juli 2026 zu, macht die 3-Personen-Grenze für Pflegeassistenten ab 1.1.2026 im Plan sichtbar und bildet den Nachtzuschlag je Trägerform als hinterlegten Satz ab. On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Tschechien",
     "screenshotLabel": "Timeline"
@@ -22,10 +22,10 @@
     "title": "Wie Klacks die häusliche Pflege in Tschechien entlastet",
     "subtitle": "Von der optimierten Tour bis zum trägerabhängigen Zuschlag &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuss." },
-      { "icon": "medication", "title": "Neue Kompetenzen qualifikationsgesteuert", "text": "Klacks weiss, wer den Qualifikationskurs für Medikamentengabe und Stomabeutel-Wechsel absolviert hat, und teilt diese Aufgaben ab 1.7.2026 nur entsprechend qualifiziertem Personal zu." },
-      { "icon": "groups", "title": "3-Personen-Limit automatisch eingehalten", "text": "Klacks zählt für jeden Pflegeassistenten mit, wie viele Klient:innen gleichzeitig betreut werden, und warnt vor einer Überschreitung der ab 1.1.2026 geltenden 3-Personen-Grenze." },
-      { "icon": "payments", "title": "Nachtzuschlag je Trägerform korrekt", "text": "Klacks unterscheidet automatisch zwischen öffentlichem Träger (mindestens 20 %) und privatem Träger (mindestens 10 %) bei der Berechnung des Nachtzuschlags." },
+      { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
+      { "icon": "medication", "title": "Neue Kompetenzen qualifikationsgesteuert", "text": "Klacks weiß, wer den Qualifikationskurs für Medikamentengabe und Stomabeutel-Wechsel absolviert hat, und teilt diese Aufgaben ab 1.7.2026 nur entsprechend qualifiziertem Personal zu." },
+      { "icon": "groups", "title": "3-Personen-Limit im Plan sichtbar", "text": "Im Dienstplan sehen Sie auf einen Blick, wie viele Klient:innen ein Pflegeassistent gleichzeitig betreut &mdash; so behalten Sie die ab 1.1.2026 geltende 3-Personen-Grenze zuverlässig im Griff." },
+      { "icon": "payments", "title": "Nachtzuschlag je Trägerform hinterlegt", "text": "Die unterschiedlichen Nachtzuschläge &mdash; mindestens 20 % beim öffentlichen, mindestens 10 % beim privaten Träger &mdash; hinterlegen Sie je Träger als Zuschlagssatz; Klacks weist sie automatisch zu." },
       { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren und passend qualifizierten Ersatz vor." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Qualifikationskurs, 3-Personen-Grenze, ein Plan",
-    "text": "Klacks teilt die neuen Tätigkeiten ab 1.7.2026 nur Personen mit abgeschlossenem Qualifikationskurs zu und behält gleichzeitig im Blick, dass kein Pflegeassistent mehr als 3 Klient:innen gleichzeitig betreut &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks teilt die neuen Tätigkeiten ab 1.7.2026 nur Personen mit abgeschlossenem Qualifikationskurs zu und zeigt gleichzeitig auf einen Blick, wie viele Klient:innen ein Pflegeassistent parallel betreut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Pflegeorganisation erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Qualifikationen und das Personenlimit übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren optimiert, Qualifikationen berücksichtigt und das Personenlimit sichtbar macht &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

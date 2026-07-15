@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Pour les services d'entretien &amp; de nettoyage en Belgique (CP 121)",
     "titleHtml": "Chaque site <span class=\"text-secondary\">documenté avec précision.</span>",
-    "subtitle": "Klacks enregistre électroniquement chaque intervention sur site, calcule automatiquement l'indemnité de mobilité entre les sites et respecte le plancher sectoriel de temps partiel de 18h par semaine.",
+    "subtitle": "Klacks documente chaque intervention sur site sans faille, fournit les données kilométriques pour l'indemnité de mobilité entre les sites et garde à l'œil le plancher sectoriel de temps partiel de 18h par semaine.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grille de planning Klacks pour les équipes de nettoyage et les sites belges",
     "screenshotLabel": "Planning"
@@ -23,9 +23,9 @@
     "subtitle": "Du pointage de présence sans faille à l'indemnité de mobilité &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "route", "title": "Itinéraires des sites optimisés", "text": "Klacks définit l'ordre des sites de façon à raccourcir les trajets &mdash; en voiture, à vélo ou à pied." },
-      { "icon": "fingerprint", "title": "Présence enregistrée électroniquement &amp; sans faille", "text": "Chaque intervention sur site est documentée électroniquement &mdash; conforme aux exigences d'audit imposées par la loi-programme depuis 2024. Klacks gère aussi automatiquement l'indemnité forfaitaire de 7,00 €/mois en cas d'utilisation de smartphones privés." },
-      { "icon": "directions_car", "title": "Indemnité de mobilité calculée automatiquement", "text": "Klacks décompte automatiquement l'indemnité de 0,1075 €/km, avec un minimum de 2,15 € par trajet, pour chaque trajet entre les sites." },
-      { "icon": "schedule", "title": "Durées minimales automatiquement respectées", "text": "Klacks prend en compte la durée minimale d'1 heure pour la catégorie 1A/1B ainsi que le plancher sectoriel de temps partiel de 18h par semaine ou 3h par jour." },
+      { "icon": "fingerprint", "title": "Présence enregistrée électroniquement &amp; sans faille", "text": "Chaque intervention sur site est documentée électroniquement et retracée sans faille &mdash; la base de planification pour le pointage de présence exigé par la loi-programme depuis 2024. Klacks enregistre aussi les interventions effectuées avec un smartphone privé, comme base pour l'indemnité forfaitaire de 7,00 €/mois dans votre gestion de la paie." },
+      { "icon": "directions_car", "title": "Données kilométriques pour l'indemnité de mobilité enregistrées", "text": "Klacks enregistre automatiquement les kilomètres parcourus entre les sites le même jour &mdash; la base dont votre gestion de la paie a besoin pour l'indemnité de 0,1075 €/km (minimum 2,15 € par trajet)." },
+      { "icon": "schedule", "title": "Durées minimales automatiquement surveillées", "text": "Klacks garde à l'œil la durée minimale d'1 heure pour la catégorie 1A/1B ainsi que le plancher sectoriel de temps partiel de 18h par semaine ou 3h par jour, et avertit en cas de non-respect." },
       { "icon": "groups", "title": "Équipes réparties avec flexibilité", "text": "Effectifs changeants, remplaçants et congés : Klacks garde une vue d'ensemble et propose des répartitions adaptées." },
       { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Planifie les sites du secteur pour demain matin » suffit &mdash; Klacksy optimise l'itinéraire, l'équipe et le pointage de présence." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Changement de site, indemnité de mobilité, un seul planning",
-    "text": "Klacks enregistre électroniquement chaque intervention sur site, calcule automatiquement l'indemnité de mobilité entre les sites et garde un œil sur le plancher de temps partiel de 18h &mdash; sans calcul manuel."
+    "text": "Klacks enregistre électroniquement chaque intervention sur site, fournit les données kilométriques pour l'indemnité de mobilité entre les sites et garde un œil sur le plancher de temps partiel de 18h &mdash; sans calcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de nettoyage",
-    "text": "Testez dans le Playground comment Klacks prend en charge le pointage de présence, l'indemnité de mobilité et les planchers de temps partiel &mdash; gratuitement et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge le pointage de présence, les données kilométriques pour l'indemnité de mobilité et garde à l'œil les planchers de temps partiel &mdash; gratuitement et sans inscription."
   }
 }

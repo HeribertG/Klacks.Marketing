@@ -29,7 +29,7 @@
 </header>
 
 <!-- HERAUSFORDERUNGEN -->
-<section id="regeln" class="reveal bg-surface-container-low py-24 no-line-rule">
+<section class="reveal bg-surface-container-low py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8">
         <div class="text-center mb-16">
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)(Content.Challenges.Eyebrow ?? string.Empty))</span>
@@ -47,6 +47,55 @@
         </div>
     </div>
 </section>
+
+@if (Content.RulesCalendar is not null)
+{
+    <!-- REGELN & KALENDER -->
+    <section id="regeln" class="reveal bg-surface-container-low py-32 no-line-rule">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                @if (!string.IsNullOrEmpty(Content.RulesCalendar.Eyebrow))
+                {
+                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.RulesCalendar.Eyebrow)</span>
+                }
+                <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.RulesCalendar.Title)</h2>
+                <p class="text-on-surface-variant mb-8 leading-relaxed">@((MarkupString)Content.RulesCalendar.Text)</p>
+                <ul class="space-y-6 list-none p-0">
+                    @foreach (var item in Content.RulesCalendar.Items)
+                    {
+                        <li class="flex gap-4">
+                            <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1 shrink-0">
+                                <span class="material-symbols-outlined text-secondary text-xs">@item.Icon</span>
+                            </div>
+                            <div>
+                                <span class="font-bold block text-primary">@((MarkupString)item.Title)</span>
+                                <span class="text-on-surface-variant text-sm">@((MarkupString)item.Text)</span>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="bg-surface-container-lowest rounded-2xl shadow-xl p-3 overflow-hidden border border-surface-container-high">
+                <div class="flex items-center justify-between mb-3 px-1">
+                    <div class="flex gap-2">
+                        <div class="w-3 h-3 rounded-full bg-error"></div>
+                        <div class="w-3 h-3 rounded-full bg-surface-container-high"></div>
+                        <div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+                    </div>
+                    @if (!string.IsNullOrEmpty(Content.RulesCalendar.ImageLabel))
+                    {
+                        <div class="text-[0.6875rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase">@Content.RulesCalendar.ImageLabel</div>
+                    }
+                </div>
+                <img src="@($"images/{Content.RulesCalendar.ImageFile}")" alt="@Content.RulesCalendar.ImageAlt" class="w-full h-auto rounded-lg border border-surface-container-high" loading="lazy" />
+                @if (!string.IsNullOrEmpty(Content.RulesCalendar.ImageCaption))
+                {
+                    <p class="text-xs text-on-surface-variant mt-3 px-1 mb-0">@((MarkupString)Content.RulesCalendar.ImageCaption)</p>
+                }
+            </div>
+        </div>
+    </section>
+}
 
 @if (Content.OpenSource is not null)
 {

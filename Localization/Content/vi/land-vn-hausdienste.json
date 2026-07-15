@@ -23,7 +23,7 @@
     "subtitle": "Từ lộ trình được tối ưu đến quy định giờ nghỉ giải lao chính xác &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
       { "icon": "route", "title": "Lộ trình giữa các mục tiêu được tối ưu", "text": "Klacks sắp xếp thứ tự các mục tiêu sao cho quãng đường luôn ngắn nhất &mdash; dù đi ô tô, xe máy hay đi bộ." },
-      { "icon": "bedtime", "title": "Tự động ghi nhận 30% phụ cấp làm đêm", "text": "Klacks tự động nhận biết các ca làm việc trong khung giờ từ 22:00 đến 06:00 và ghi nhận luôn 30% phụ cấp làm đêm theo Điều 98 Khoản 2." },
+      { "icon": "bedtime", "title": "Tự động gán 30% phụ cấp làm đêm", "text": "Klacks tự động nhận biết các ca làm đêm và tự động gán mức phụ cấp làm đêm 30% đã thiết lập sẵn theo Điều 98 Khoản 2." },
       { "icon": "pause_circle", "title": "Tự động lên kế hoạch nghỉ giải lao từ 6 giờ làm việc", "text": "Với các ca làm việc liên tục từ 6 giờ trở lên, Klacks tự động lên kế hoạch giờ nghỉ giải lao theo luật định &mdash; 30 phút vào ban ngày, 45 phút vào ban đêm." },
       { "icon": "gavel", "title": "Giám sát giới hạn làm thêm giờ", "text": "Klacks liên tục theo dõi giới hạn 40 giờ/tháng và 200 giờ/năm (Điều 107) &mdash; trên tất cả các mục tiêu và đội nhóm." },
       { "icon": "shield_lock", "title": "On-Premise: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; dữ liệu nhân sự luôn ở lại với bạn, kể cả khi sử dụng các tính năng AI." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Ví dụ thực tế",
     "title": "Phụ cấp làm đêm và giờ nghỉ giải lao, một lịch làm việc",
-    "text": "Klacks tự động nhận biết các ca làm đêm, ghi nhận luôn 30% phụ cấp và lên kế hoạch giờ nghỉ giải lao kéo dài từ 6 giờ làm việc &mdash; không cần tính toán thủ công."
+    "text": "Klacks tự động nhận biết các ca làm đêm, tự động gán mức phụ cấp làm đêm 30% đã thiết lập sẵn và lên kế hoạch giờ nghỉ giải lao kéo dài từ 6 giờ làm việc &mdash; không cần tính toán thủ công."
   },
   "showRoutePlanning": true,
   "cta": {

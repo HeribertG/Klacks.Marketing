@@ -1,53 +1,49 @@
 {
-  "pageTitle": "Klacks per l'Italia | Riposo giornaliero e reperibilità pianificati correttamente",
+  "pageTitle": "Klacks per le aziende italiane | Pianificazione del personale Open Source con sovranità dei dati",
   "hero": {
-    "badgeIcon": "shield_lock",
-    "badge": "Per ospedali e strutture sanitarie in Italia",
-    "titleHtml": "11 ore di riposo giornaliero &mdash; <span class=\"text-secondary\">anche quando la reperibilità si mette di mezzo.</span>",
-    "subtitle": "Il Decreto Legislativo n. 66/2003 garantisce a ogni lavoratore almeno 11 ore consecutive di riposo ogni 24 ore (riposo giornaliero). Se un turno di reperibilità viene interrotto da una chiamata in servizio, il riposo deve essere sospeso e recuperato entro 3 giorni &mdash; ricalcolare tutto a mano è fonte di errori.",
-    "screenshotFile": "app-schedule-de.png",
-    "screenshotAlt": "Griglia del piano turni Klacks",
-    "screenshotLabel": "Piano turni"
+    "badgeIcon": "balance",
+    "badge": "Open Source · On-Premise · Protezione dei dati italiana",
+    "titleHtml": "Pianificazione del personale, in cui <span class=\"text-secondary\">siete voi a mantenere il controllo.</span>",
+    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i percorsi e si lascia guidare da un assistente IA &mdash; On-Premise, Open Source, con il modello IA di vostra scelta. Klacksy lavora in modo basato su regole e verificabile anziché con un controllo algoritmico a distanza non trasparente &mdash; il che facilita l'accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro richiesti dall'Art. 4 dello Statuto dei Lavoratori (Legge n. 300/1970).",
+    "screenshotFile": "app-calendar-de.png",
+    "screenshotAlt": "Vista calendario di Klacks per la pianificazione del personale in Italia",
+    "screenshotLabel": "Calendario"
   },
   "challenges": {
-    "eyebrow": "La quotidianità nelle cliniche italiane",
-    "title": "Riposo giornaliero e reperibilità: un equilibrio da gestire",
+    "eyebrow": "La quotidianità nelle aziende italiane",
+    "title": "Diritto del lavoro, cogestione e controllo sui propri dati",
     "items": [
-      { "icon": "hourglass_top", "title": "11 ore di riposo giornaliero", "text": "L'Art. 7 del D.Lgs. 66/2003 garantisce 11 ore consecutive di riposo ogni 24 ore &mdash; un diritto fondamentale non negoziabile, anche in caso di carenza di personale." },
-      { "icon": "schedule", "title": "La reperibilità interrompe il riposo", "text": "La reperibilità in sé non conta come orario di lavoro, ma una chiamata in servizio durante la reperibilità sospende il riposo &mdash; il recupero deve avvenire entro 3 giorni." },
-      { "icon": "groups", "title": "Fuga di personale infermieristico", "text": "Le cliniche italiane perdono personale infermieristico verso mercati meglio retribuiti come la Svizzera o il Regno Unito &mdash; i team rimasti devono rispettare senza eccezioni la regola del riposo giornaliero, pur con organici più sottili." }
-    ]
-  },
-  "openSource": {
-    "eyebrow": "Sovranità dei dati",
-    "title": "Piena sovranità dei dati: Open Source &amp; On-Premise",
-    "text": "Klacks è stato sviluppato per settori con requisiti di sicurezza e conformità rigorosi, in cui i dati sensibili del personale non devono lasciare la propria infrastruttura. Essendo una soluzione open source, Klacks può essere gestito direttamente nel proprio data center o su server locali protetti &mdash; senza dipendere da fornitori cloud statunitensi. Questo facilita il rispetto del GDPR e delle disposizioni del Garante per la protezione dei dati personali in piena autonomia.",
-    "bullets": [
-      "Sovranità On-Premise: controllo completo su piani turni, prove di riposo e log all'interno del proprio ambiente IT.",
-      "Architettura LLM libera: i suggerimenti di pianificazione basati sull'IA possono essere eseguiti anche con modelli linguistici ospitati localmente, senza che i dati vengano trasmessi ad API esterne.",
-      "Codice sorgente verificabile: base di codice completamente ispezionabile per audit IT e sindacati."
+      { "icon": "gavel", "title": "Statuto dei Lavoratori Art. 4", "text": "Il controllo a distanza e il controllo algoritmico dei lavoratori sono vietati senza un previo accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro (Legge n. 300/1970) &mdash; anche per i software di pianificazione automatizzati." },
+      { "icon": "schedule", "title": "Molti CCNL, molte regole sull'orario di lavoro", "text": "L'orario di lavoro normale previsto dalla legge è di 40 ore settimanali, molti CCNL lo riducono a 38 o 36 ore &mdash; l'orario massimo, straordinari inclusi, resta in media a 48 ore su più mesi (D.Lgs. 66/2003, Art. 3 &amp; 4)." },
+      { "icon": "shield_lock", "title": "Garante Privacy &amp; sovranità dei dati", "text": "I dati sensibili dei dipendenti, come i saldi di straordinario o i dati sanitari, sono soggetti alle rigide disposizioni del Garante per la protezione dei dati personali &mdash; in particolare in caso di trattamento dei dati al di fuori dell'UE." }
     ]
   },
   "solutions": {
-    "title": "Come Klacks tiene sotto controllo insieme riposo giornaliero e reperibilità",
-    "subtitle": "Riposi sospesi riconosciuti automaticamente, recupero pianificato entro 3 giorni.",
+    "title": "Come Klacks alleggerisce le aziende italiane",
+    "subtitle": "Dalla pianificazione automatica dei turni alla propria infrastruttura &mdash; tutto sotto il vostro controllo.",
     "items": [
-      { "icon": "bolt", "title": "Recovery Engine per le assenze impreviste", "text": "Se un operatore risulta assente, Klacks trova immediatamente una sostituzione qualificata &mdash; senza che ne derivi una violazione non pianificata del riposo." },
-      { "icon": "fact_check", "title": "Tracciamento della reperibilità con recupero in 3 giorni", "text": "Se il riposo giornaliero viene sospeso da una chiamata in servizio durante la reperibilità, Klacks pianifica automaticamente il recupero previsto dalla legge entro il termine di 3 giorni." },
-      { "icon": "calendar_month", "title": "Autofill Wizard per le rotazioni di reperibilità", "text": "L'assistente Autofill basato su algoritmo genetico pianifica automaticamente le rotazioni di reperibilità nel rispetto delle 11 ore di riposo." },
-      { "icon": "groups", "title": "Pianificazione dei turni per qualifica", "text": "Per ogni turno vengono proposti solo i collaboratori con la qualifica adeguata &mdash; un aspetto cruciale quando l'organico è ridotto." }
+      { "icon": "auto_awesome", "title": "Turni pianificati automaticamente", "text": "L'Autofill Wizard pianifica turni e percorsi in base a qualifica, disponibilità e preferenze &mdash; in pochi minuti anziché ore." },
+      { "icon": "gavel", "title": "Regole su orario di lavoro e riposo verificate automaticamente", "text": "L'orario normale, l'orario massimo e il riposo giornaliero di almeno 11 ore ogni 24 ore vengono monitorati in tempo reale in base al CCNL configurato (D.Lgs. 66/2003, Art. 7 &amp; 9)." },
+      { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Dove gli interventi si svolgono in luoghi diversi, Klacks stabilisce l'ordine in modo che i percorsi restino brevi e le fasce orarie vengano rispettate." },
+      { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla vostra infrastruttura. I dati del personale non lasciano la vostra azienda &mdash; nemmeno verso l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
+      { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; potete vedere esattamente cosa fa Klacks, creando così la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistente IA",
-    "title": "Klacksy: l'assistente integrato per il vostro team",
-    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks. Collaboratori e pianificatori possono chiedere via chat gli orari di servizio, presentare richieste di scambio turno o chiarire conflitti di qualifica all'interno del team. Un sistema di competenze e regole predefinito garantisce che Klacksy proponga solo soluzioni compatibili con le qualifiche effettive e con i requisiti di riposo delle persone coinvolte.",
+    "title": "Klacksy: l'assistente integrato con scelta libera del modello",
+    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks e può essere gestito con il modello IA di vostra scelta &mdash; anche ospitato localmente. Un sistema di competenze e regole predefinito garantisce che ogni proposta resti verificabile: nessun controllo algoritmico a distanza non trasparente ai sensi dell'Art. 4 dello Statuto dei Lavoratori, ma una pianificazione basata su regole e spiegabile.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistente chat Klacksy nell'interfaccia Klacks"
   },
+  "example": {
+    "eyebrow": "Concretamente",
+    "title": "Un piano turni, più contratti collettivi sotto controllo",
+    "text": "Un'azienda con CCNL diversi per i vari team pianifica i turni, Klacks verifica automaticamente l'orario normale applicabile e il riposo giornaliero di 11 ore &mdash; in modo verificabile per RSU/RSA e senza che i dati del personale lascino l'azienda."
+  },
   "showRoutePlanning": false,
   "cta": {
-    "title": "Provate Klacks per le cliniche italiane",
-    "text": "Scoprite nel playground come Klacks concilia automaticamente riposo giornaliero e reperibilità &mdash; oppure gestite Klacks On-Premise per la piena sovranità dei dati."
+    "title": "Provate Klacks nella vostra azienda",
+    "text": "Provate nel Playground come Klacks pianifica i turni, verifica le regole sull'orario di lavoro dei CCNL e si lascia guidare da un assistente IA &mdash; oppure installatelo direttamente On-Premise. Gratuito e senza registrazione."
   }
 }
