@@ -416,10 +416,15 @@
     }
 
     // Off a country page, language switching only translates the current page
-    // (LanguageSwitchHref). On a country page, the language jumps straight to
-    // its first mapped country; the separate country dropdown (ShowCountryDropdown)
-    // lets the user pick a different one when a language maps to several.
-    // A language with no mapped country falls back to that language's home page.
+    // (LanguageSwitchHref). On a country page, the language stays on the
+    // currently active country when that country also speaks the target
+    // language (e.g. de + land-ch -> fr keeps land-ch instead of jumping to
+    // land-fr), since the country is the more specific choice the user already
+    // made. Only falls back to the language's first mapped country when the
+    // active country doesn't speak it; the separate country dropdown
+    // (ShowCountryDropdown) lets the user pick a different one when a language
+    // maps to several. A language with no mapped country falls back to that
+    // language's home page.
     private string ResolveLanguageHref(SupportedCulture target)
     {
         if (!IsOnCountryPage)
@@ -429,7 +434,11 @@
 
         if (LanguageCountryMap.TryGetValue(target.Code, out var countries) && countries.Length > 0)
         {
-            return CountryLanguageHref(target, countries[0]);
+            var currentCountry = CurrentCountryPageKey;
+            var country = Array.Exists(countries, c => c.Equals(currentCountry, StringComparison.OrdinalIgnoreCase))
+                ? currentCountry
+                : countries[0];
+            return CountryLanguageHref(target, country);
         }
 
         return target.Code == SupportedCultures.DefaultCode ? "/" : $"/{target.UrlSlug}";
