@@ -334,7 +334,7 @@
 
     private SupportedCulture CurrentCultureRecord => SupportedCultures.All.First(c => c.Code == ResolveCurrentPage().Culture);
 
-    private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/" : $"/{CurrentCultureRecord.UrlSlug}";
+    private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/land-ch" : $"/{CurrentCultureRecord.UrlSlug}";
 
     // The raw current relative path (culture + full page key incl. any industry
     // sub-page slug), without fragment/query. Empty string on the site root.

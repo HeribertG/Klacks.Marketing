@@ -42,4 +42,9 @@ app.MapGet("/sitemap.xml", (IConfiguration configuration) =>
 app.MapGet("/de", () => Results.NotFound());
 app.MapGet("/de/{**path}", () => Results.NotFound());
 
+// The bare default-culture homepage redirects to the Switzerland landing page
+// (first go-to-market focus), so klacks-software.ch/ never serves the generic,
+// country-agnostic Index page directly.
+app.MapGet("/", () => Results.Redirect("/land-ch", permanent: true));
+
 app.Run();
