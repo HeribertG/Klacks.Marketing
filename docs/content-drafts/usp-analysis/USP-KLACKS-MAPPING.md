@@ -6,7 +6,7 @@
 
 **Legende:** ✅ voll erfüllt · ⚠️ teilweise / mit Vorbehalt · ❌ Lücke (Klacks kann das (noch) nicht) · 🔎 Verifikation gegen Capability-Inventur ausstehend
 
-**Status:** ✅ FERTIG — Capability-Inventur (`klacks-capabilities.md`), 25× USP-Extraktion (`usp-<xx>.md`), 25× Länder-Bewertung (`mapping-<xx>.md`), Master-Übersicht unten.
+**Status:** ✅ FERTIG — Capability-Inventur (`klacks-capabilities.md`), 30× USP-Extraktion (`usp-<xx>.md`), 30× Länder-Bewertung (`mapping-<xx>.md`; 25 Länder + Pilotländer AT/CH/DE/FR/IT), Master-Übersicht unten.
 
 ---
 
