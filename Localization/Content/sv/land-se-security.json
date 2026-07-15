@@ -25,7 +25,7 @@
       { "icon": "shield", "title": "Objekt &amp; poster utan luckor", "text": "Varje post över samtliga objekt &mdash; Klacks visar varje vakans direkt och fyller den automatiskt vid behov." },
       { "icon": "gavel", "title": "Bevakningsavtalet inlagt", "text": "Avtalsperioden 2025-2027 och de nya bestämmelserna i Bevakningsavtalet lägger ni in i Klacks som tilläggs- och gränsvärden &mdash; samlat på ett ställe." },
       { "icon": "elderly", "title": "Deltidspension direkt planerbar", "text": "Arbetstidsminskningen på upp till 50 % från 62 års ålder planerar ni in direkt i Klacks &mdash; de dokumenterade timmarna ger underlaget som er löneadministration behöver för den arbetsgivaravgift på 0,1 % av lönesumman som gäller från 2026." },
-      { "icon": "timer", "title": "Övertidsgränser ständigt synliga", "text": "Gränserna på 48 timmar per 4 veckor, 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 håller Klacks ständigt synliga &mdash; så kan ni styra i tid." },
+      { "icon": "timer", "title": "Övertidsgränser övervakas live", "text": "Gränserna på 48 timmar per 4 veckor, 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 övervakar Klacks live och varnar innan ett gränsvärde överskrids &mdash; på begäran blockerar Klacks överskridandet helt, och en ny överträdelse kan då bara sparas med dokumenterat godkännande från arbetsledningen." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Bemanna nattskiftet för objekt Nord” räcker &mdash; Klacksy kontrollerar tillgänglighet och schemagränser." },
       { "icon": "event_busy", "title": "Bortfall ersätts inom minuter", "text": "Faller en post bort visar Klacks direkt kvalificerad, tillgänglig ersättare &mdash; utan att välta hela schemat." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Deltidspension och årsgräns, en överblick",
-    "text": "Klacks planerar direkt in den minskade arbetstiden för en 62-årig väktare med deltidspension och håller samtidigt årssumman synlig mot 200-timmarsgränsen för övertid enligt ATL § 8 &mdash; utan manuell efterräkning."
+    "text": "Klacks planerar direkt in den minskade arbetstiden för en 62-årig väktare med deltidspension och övervakar samtidigt årssumman mot 200-timmarsgränsen för övertid enligt ATL § 8 live &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {

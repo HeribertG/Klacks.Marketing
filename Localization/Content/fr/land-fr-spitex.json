@@ -52,7 +52,7 @@
       {
         "icon": "event_available",
         "title": "Amplitude &amp; repos dominical sous surveillance",
-        "text": "Klacks garde automatiquement à l'œil l'amplitude de 12 heures et les dimanches de repos obligatoires &mdash; Klacks rend visible tout dépassement avant que le planning ne soit finalisé."
+        "text": "Klacks garde automatiquement à l'œil l'amplitude de 12 heures et les dimanches de repos obligatoires : les dimanches de repos sont surveillés dans une fenêtre glissante (au moins 2 dimanches de repos par mois), les services de nuit empiétant sur le dimanche étant correctement comptés comme occupés &mdash; Klacks rend visible tout dépassement avant que le planning ne soit finalisé, et le bloque strictement sur demande."
       },
       {
         "icon": "shield_lock",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Plusieurs tournées, un service dominical, des kilomètres documentés",
-    "text": "Une organisation d'aide à domicile en France planifie des tournées avec des patient·e·s changeant régulièrement. Klacks compte les temps de trajet comme temps de travail, documente les kilomètres parcourus comme base pour l'indemnité forfaitaire et garde à l'œil les dimanches de repos obligatoires &mdash; sans recalcul manuel."
+    "text": "Une organisation d'aide à domicile en France planifie des tournées avec des patient·e·s changeant régulièrement. Klacks compte les temps de trajet comme temps de travail, documente les kilomètres parcourus comme base pour l'indemnité forfaitaire et surveille les dimanches de repos obligatoires dans une fenêtre glissante &mdash; sans recalcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Trasy automaticky optimalizované", "text": "Klacks seřadí zastávky do nejsmysluplnějšího pořadí &mdash; krátké cesty, dodržená časová okna, méně jízd naprázdno." },
       { "icon": "fact_check", "title": "Doba služby bezezbytku dokumentována", "text": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby a má je kdykoli připravené k dispozici &mdash; jako doplněk k samostatně předkládaným záznamům tachografu pro 56denní povinnost dokladování." },
-      { "icon": "schedule", "title": "60hodinový týden kontrolován v 26týdenním průměru", "text": "Klacks umožňuje jednotlivé 60hodinové týdny, automaticky hlídá 10hodinový limit u nočních směn a průběžně zobrazuje hodinovou základnu pro 26týdenní průměr." },
+      { "icon": "schedule", "title": "60hodinový týden kontrolován v 26týdenním průměru", "text": "Klacks umožňuje jednotlivé 60hodinové týdny, automaticky hlídá 10hodinový limit u nočních směn a zároveň v reálném čase hlídá klouzavý 26týdenní průměr &mdash; datum nástupu do zaměstnání přitom správně zohledňuje a upozorní, než se limit překročí." },
       { "icon": "call", "title": "Pracovní pohotovost čistě oddělená", "text": "Klacks automaticky rozlišuje mezi sjednanou pracovní pohotovostí (10% příplatek) a skutečným výjezdem, který se ihned počítá jako přesčas." },
       { "icon": "shield_lock", "title": "On-premise: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o trasách i řidičích zůstávají u vás, a to i u AI funkcí." },
       { "icon": "smart_toy", "title": "Klacksy plánuje hlasem", "text": "„Naplánuj trasy na zítra, řidič Novák je nemocný“ stačí &mdash; Klacksy vše přepočítá." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "56 dní, 60hodinový týden, pracovní pohotovost",
-    "text": "Klacks bezezbytku dokumentuje dobu služby za posledních 56 dní jako doplněk k záznamům tachografu, průběžně zobrazuje hodinovou základnu pro 26týdenní průměr a skutečně čerpanou pracovní pohotovost rovnou počítá jako přesčas &mdash; bez ručního přepočítávání."
+    "text": "Klacks bezezbytku dokumentuje dobu služby za posledních 56 dní jako doplněk k záznamům tachografu, v reálném čase hlídá klouzavý 26týdenní průměr a skutečně čerpanou pracovní pohotovost rovnou počítá jako přesčas &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {

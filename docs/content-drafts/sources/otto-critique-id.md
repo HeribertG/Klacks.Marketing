@@ -60,3 +60,18 @@ Hier ist der einzige Optimierungsvorschlag zur Vermeidung des Schweizer Helvetis
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Einziger Vorschlag („Spitäler"→„Krankenhäuser") war bereits durch den site-weiten Helvetismus-Sweep umgesetzt (alle Nicht-CH/AT-Seiten). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + Tagescap-Überwachung — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (Verbesserungsvorschläge für die Subtitles zur Erhöhung der Lesbarkeit — Mehrfach-Gedankenstrich-Verschachtelung).
+
+Kein Überversprechen gefunden.
+
+**Nur dokumentiert (nicht übernommen — Restrukturierungsvorschlag für zwei Subtitles):**
+- land-id-security.json: Otto empfiehlt, den Subtitle-Satz „...live im Roster und blockiert die Überschreitung auf Wunsch hart &mdash; weil..." umzubauen zu „...überwacht Schichten über 12 Stunden live im Roster &mdash; mit optionaler harter Blockierung von Überschreitungen &mdash; weil...". Nicht übernommen: Otto reviewt hier reine Stilfrage/Satzbau, die inhaltlich unstrittig ist, aber die Restrukturierung berührt die Kern-Subtitle-Formel der Seite — bewusst dem Marketing-Redakteur zur finalen Wortwahl überlassen statt einer Automatik-Übernahme durch die Kritik-Runde.
+- land-id.json: analoger Vorschlag für den Haupt-Subtitle („...wöchentliche Überstundenlimit &mdash; auf Wunsch blockiert Klacks Verstöße hart &mdash; und läuft On-Premise &mdash;" → Klammer-Variante). Gleiche Begründung: dokumentiert, nicht automatisch übernommen.
+
+**Eingearbeitet:** keine (beide Otto-Vorschläge betreffen Haupt-Subtitles und wurden bewusst zur redaktionellen Prüfung dokumentiert statt automatisch reingeschrieben).

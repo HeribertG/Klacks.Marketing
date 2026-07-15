@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Per la Spitex &amp; le cure ambulatoriali in Svizzera",
     "titleHtml": "Più tempo per la cura, <span class=\"text-secondary\">meno per la pianificazione dei giri.</span>",
-    "subtitle": "Klacks pianifica interventi e giri in automatico &mdash; inclusi i tempi di percorrenza tra i clienti come tempo di lavoro e il lavoro domenicale pianificato in modo visibile. On-premise, perché i dati dei pazienti non lasciano mai la Sua azienda.",
+    "subtitle": "Klacks pianifica interventi e giri in automatico &mdash; inclusi i tempi di percorrenza tra i clienti come tempo di lavoro e domeniche libere sorvegliate, bloccate rigidamente su richiesta. On-premise, perché i dati dei pazienti non lasciano mai la Sua azienda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per la pianificazione dei giri della Spitex in Svizzera",
     "screenshotLabel": "Timeline"
@@ -46,8 +46,8 @@
       },
       {
         "icon": "event_available",
-        "title": "Riposo e interventi domenicali sotto controllo",
-        "text": "Klacks pianifica automaticamente i giorni di riposo settimanale e rende visibile a colpo d'occhio ogni intervento domenicale &mdash; così può mantenere Lei stesso il controllo sulla compensazione legale."
+        "title": "Domeniche libere sorvegliate &mdash; bloccate rigidamente su richiesta",
+        "text": "Klacks sorveglia le domeniche libere in una finestra scorrevole (ad esempio una domenica su due libera) e blocca rigidamente le infrazioni su richiesta &mdash; i turni notturni che sconfinano nella domenica vengono correttamente conteggiati come occupati. Klacks integra automaticamente i giorni di riposo settimanale nella pianificazione."
       },
       {
         "icon": "verified",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Tempo di percorrenza, turno domenicale, un unico piano",
-    "text": "Klacks conteggia automaticamente il tempo di spostamento tra i clienti come tempo di lavoro e rende visibili a colpo d'occhio gli interventi domenicali &mdash; senza calcoli manuali. Non appena la LCInf entrerà in vigore, la base di pianificazione sarà già pronta."
+    "text": "Klacks conteggia automaticamente il tempo di spostamento tra i clienti come tempo di lavoro e sorveglia le domeniche libere in una finestra scorrevole &mdash; senza calcoli manuali. Klacks verifica già oggi automaticamente i termini di pubblicazione con preavviso minimo (ad esempio due settimane) &mdash; non appena la LCInf entrerà in vigore, la base di pianificazione sarà già pronta."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Provi Klacks nella Sua Spitex",
-    "text": "Provi nel Playground come Klacks gestisce tempi di percorrenza, giri e compensazione domenicale &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Gratuito e senza registrazione."
+    "text": "Provi nel Playground come Klacks gestisce tempi di percorrenza, giri e la sorveglianza delle domeniche libere &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Gratuito e senza registrazione."
   }
 }

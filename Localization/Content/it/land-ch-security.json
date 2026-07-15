@@ -46,13 +46,13 @@
       },
       {
         "icon": "gavel",
-        "title": "Soglia delle 210 ore impostata",
-        "text": "La soglia mensile di 210 ore di straordinario, oltre la quale si applica un supplemento del 25%, può essere impostata come valore di riferimento &mdash; come base di documentazione per la compensazione entro il termine di 3 mesi."
+        "title": "Soglia delle 210 ore sorvegliata in tempo reale",
+        "text": "Klacks sorveglia in tempo reale la soglia mensile di 210 ore, oltre la quale si applica un supplemento del 25%, e avverte prima che venga superata &mdash; su richiesta, Klacks blocca rigidamente il superamento. Le ore documentate costituiscono la base per la compensazione entro il termine di 3 mesi."
       },
       {
         "icon": "verified",
         "title": "Certificati verificati automaticamente",
-        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada."
+        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada. Su richiesta, Klacks blocca completamente l'assegnazione in caso di attestato obbligatorio scaduto &mdash; viene pianificato solo chi dispone di un attestato valido."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Turno di notte, supplemento orario, un unico piano",
-    "text": "Klacks calcola automaticamente il supplemento di tempo per il lavoro notturno e domenicale come base per il Suo conto orario e tiene la soglia delle 210 ore come valore di riferimento &mdash; senza calcoli manuali."
+    "text": "Klacks calcola automaticamente il supplemento di tempo per il lavoro notturno e domenicale come base per il Suo conto orario e sorveglia la soglia delle 210 ore in tempo reale &mdash; senza calcoli manuali."
   },
   "showRoutePlanning": true,
   "cta": {

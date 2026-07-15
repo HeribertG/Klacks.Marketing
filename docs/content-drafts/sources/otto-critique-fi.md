@@ -56,3 +56,17 @@ Hier sind die wenigen Rechtschreibanpassungen für die deutsche Basisfassung:
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep umgesetzt. Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Fixbetrag-Zuschläge TES-Sätze — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** (mit minimalem stilistischen Optimierungsvorschlag).
+
+Terminologie „Fixbetrag-Zuschläge pro Stunde" als payroll-präzise gelobt; Überversprechen-Check bestanden (keine automatische Tarif-Update-Behauptung, feste TES-Sätze stehen explizit im Text).
+
+**Eingearbeitet:**
+- land-fi-hausdienste.json: Wortwiederholung „bucht ... bucht" behoben → „... rechnet Klacks als Fixbetrag-Zuschläge pro Stunde gleich mit ab".
+
+**Nur dokumentiert:** keine.

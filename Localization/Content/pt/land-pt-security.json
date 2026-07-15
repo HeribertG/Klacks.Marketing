@@ -23,9 +23,9 @@
     "subtitle": "Do posto ocupado à rotação correta &mdash; tudo funciona em conjunto.",
     "items": [
       { "icon": "shield", "title": "Instalações &amp; postos sem lacunas", "text": "Todos os postos em todas as instalações &mdash; o Klacks mostra de imediato qualquer vaga em aberto e preenche-a automaticamente, se assim o desejar." },
-      { "icon": "schedule", "title": "Regime de adaptabilidade verificado automaticamente", "text": "O Klacks monitoriza automaticamente o limite de 10 horas diárias e 50 horas semanais, e documenta a base horária para a média de 40 horas/semana num período de 6 meses &mdash; nos termos da Cláusula 22 do CCT da Segurança Privada." },
-      { "icon": "event_repeat", "title": "Rotação de domingos sob controlo", "text": "O Klacks mostra num relance quando o dia de descanso semanal coincidiu pela última vez com um domingo &mdash; assim planeia com segurança o requisito do CCT de pelo menos dois domingos em 8 semanas." },
-      { "icon": "verified", "title": "Certificados verificados automaticamente", "text": "O Klacks verifica em cada atribuição a qualificação de cartão profissional exigida &mdash; e avisa antes de um documento expirar." },
+      { "icon": "schedule", "title": "Regime de adaptabilidade verificado automaticamente", "text": "O Klacks monitoriza automaticamente o limite de 10 horas diárias e 50 horas semanais, e em tempo real também a média rolante de 40 horas/semana num período de 6 meses &mdash; o início do vínculo laboral é tido corretamente em conta, e o Klacks avisa antes de o limite ser ultrapassado (Cláusula 22 do CCT da Segurança Privada)." },
+      { "icon": "event_repeat", "title": "Rotação de domingos monitorizada em tempo real", "text": "O Klacks monitoriza em tempo real os domingos livres na janela rolante de 8 semanas e avisa quando o requisito do CCT de pelo menos dois domingos em 8 semanas estiver prestes a ser incumprido &mdash; a pedido, bloqueia mesmo as infrações. Os turnos noturnos que se prolongam para o domingo contam corretamente como domingo ocupado." },
+      { "icon": "verified", "title": "Certificados verificados automaticamente", "text": "O Klacks verifica em cada atribuição a qualificação de cartão profissional exigida &mdash; e avisa antes de um documento expirar. A pedido, o Klacks bloqueia por completo a atribuição com um comprovativo obrigatório expirado &mdash; só é planeado quem tiver um cartão profissional válido." },
       { "icon": "route", "title": "Rondas otimizadas", "text": "Nos serviços móveis, o Klacks define as rotas de patrulha de forma a manter os percursos curtos e a respeitar os intervalos." },
       { "icon": "smart_toy", "title": "O Klacksy planeia por comando de voz", "text": "Basta dizer «Ocupa o turno noturno para a instalação Norte» &mdash; o Klacksy verifica certificados, disponibilidade e o regime de adaptabilidade." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Na prática",
     "title": "Adaptabilidade e rotação de domingos, um único plano",
-    "text": "O Klacks monitoriza automaticamente o regime de adaptabilidade do CCT da Segurança Privada e mostra num relance a rotação dominical das últimas semanas &mdash; assim planeia os dois domingos em 8 semanas sem cálculos manuais."
+    "text": "O Klacks monitoriza automaticamente o regime de adaptabilidade do CCT da Segurança Privada e, em tempo real, a rotação dominical na janela rolante de 8 semanas &mdash; assim cumpre os dois domingos em 8 semanas sem cálculos manuais."
   },
   "showRoutePlanning": true,
   "cta": {

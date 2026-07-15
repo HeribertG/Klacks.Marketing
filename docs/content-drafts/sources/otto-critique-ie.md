@@ -57,3 +57,16 @@ Da dies der deutsche Basistext für Irland ist, müssen lediglich die Schweizer 
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Orthografie-Vorschläge über den site-weiten ß-Sweep umgesetzt (standardmäßig, maßgeblich, zu Fuß, Velo→Fahrrad, Straßentransport). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Fixbetrag-Zuschläge + rollierende Schnitte + Publikationsfrist — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge.
+
+Terminologie („fester Betrag pro Stunde/Schicht", „OWTA Section 15/17", „Publikationsfrist") als exzellent gelobt; Überversprechen-Check bestanden auf allen 6 Dateien (Opt-in klar, keine automatische Tarif-Update-Behauptung, kein automatisches Einplanen bei Rotationen).
+
+**Eingearbeitet:** keine (keine Vorschläge vorhanden).
+
+**Nur dokumentiert:** keine.

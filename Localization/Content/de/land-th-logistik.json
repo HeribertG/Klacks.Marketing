@@ -24,9 +24,9 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "timer", "title": "Ruhepause nach 4h Lenkzeit eingeplant", "text": "Klacks reserviert die 1-Stunden-Ruhepause nach maximal 4 Stunden zusammenhängender Fahrzeit automatisch &mdash; auch aufgeteilt in Intervalle von mind. 20 Minuten." },
-      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Fahrer live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Fahrer live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung konsequent &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "schedule", "title": "8h+2h-Grenze pro Fahrer überwacht", "text": "Klacks prüft laufend, ob die reguläre Arbeitszeit von 8 Stunden plus maximal 2 Stunden Überstunde pro Tag eingehalten wird." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, Fahrer Somchai ist krank“ genügt &mdash; Klacksy rechnet alles neu, inklusive Lenk- und Ruhezeiten." }
     ]
   },

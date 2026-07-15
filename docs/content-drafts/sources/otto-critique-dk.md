@@ -52,3 +52,17 @@ Da auch die Orthografie im dänischen Entwurf bereits makellos auf Standard-Esze
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Keine Änderungen nötig — Otto ohne Beanstandung, alle 6 Seiten „einverstanden". ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Fixbetrag-Zuschläge + Vorwarnfrist + rollierende Fenster — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine verpflichtenden Verbesserungsvorschläge.
+
+Kein Überversprechen gefunden; Opt-in via „Auf Wunsch blockiert..." durchgehend klar, Import-Presets klar als Vorlage (nicht Auto-Update) beschrieben.
+
+**Eingearbeitet:** keine (einzige Anmerkung war ausdrücklich optional).
+
+**Nur dokumentiert (von Otto selbst als optional markiert, nicht übernommen):**
+- land-dk-spitex.json: Otto bietet „bucht" → „erfasst" als mögliche Alternative an, bewertet „bucht ... mit" aber selbst als „bereits absolut verständlich und flüssig" — keine Änderung vorgenommen, da keine feste Empfehlung.

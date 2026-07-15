@@ -58,3 +58,19 @@ Für die deutsche Basisfassung müssen lediglich die typischen Schweizer Rechtsc
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep über alle Nicht-CH-Länderseiten umgesetzt (Verstoß/Bußgeld/gemäß/zu Fuß/Straßen/außer/…mäßig etc.). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + Publikationsfrist + Rotations-Überwachung — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (drei punktuelle Textbereinigungen, ansonsten exzellente Aufwertung).
+
+Kein Überversprechen gefunden; „behält im Blick"/„überwacht" durchgehend als reines Monitoring erkennbar, keine automatische Einplanung von Rotationen suggeriert.
+
+**Eingearbeitet:**
+- land-no-security.json: „blockiert es den neuen Verstoß hart" → „... den Verstoß hart" (Wort „neuen" technisch ungenau, da auch bei nachträglicher Bearbeitung älterer Schichten blockiert wird).
+- land-no-spitaeler.json: „bevor der Grenzwert kippt" → „... überschritten wird"; „zählen dabei korrekt als belegt" → „... als Sonntagsdienst" (präziser im Kontext der Sonntags-Rotation).
+- land-no.json: „ein neuer Verstoß lässt sich" → „ein Verstoß lässt sich" (analog zur Security-Korrektur).
+
+**Nur dokumentiert:** keine.

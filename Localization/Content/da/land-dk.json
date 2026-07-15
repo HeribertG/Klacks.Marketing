@@ -37,7 +37,7 @@
     "items": [
       { "icon": "gavel", "title": "Overenskomstregler fleksibelt indlagt", "text": "Klacks afbilder arbejdstids- og tillægsreglerne for jeres overenskomst (3F, FOA, VSL, DI) og kan tilpasses, så snart en ny overenskomstaftale som OK26 træder i kraft." },
       { "icon": "bedtime", "title": "Hviletid &amp; holdskifte planlagt korrekt", "text": "Klacks overvåger automatisk de 11 timers hviletid og det 35-timers fridøgn; afkortningen til 8 timer ved holdskifte kan registreres som en særregel." },
-      { "icon": "fact_check", "title": "Tidsregistrering dokumenteret, 48-timers-dokumentation forberedt", "text": "Klacks dokumenterer den daglige arbejdstid, leverer tidsgrundlaget for 48-timers-dokumentationen over 4 måneder og holder dokumentationen klar i 5 år." },
+      { "icon": "fact_check", "title": "Tidsregistrering dokumenteret, 48-timers-gennemsnit overvåget live", "text": "Klacks dokumenterer den daglige arbejdstid, overvåger det rullende 48-timers-gennemsnit over 4 måneder live og advarer, før grænseværdien overskrides &mdash; dokumentationen holder Klacks klar i 5 år." },
       { "icon": "route", "title": "Ruter &amp; indsatser optimeret automatisk", "text": "Klacks lægger indsatser og ruter, så vejene bliver korte og tidsvinduerne overholdes &mdash; kan bruges på tværs af brancher." },
       { "icon": "shield_lock", "title": "On-premise: fuld datasuverænitet", "text": "Klacks kører på jeres egen infrastruktur, og I vælger selv AI-modellen &mdash; i tråd med Datatilsynets GDPR-tilsyn, helt uden overførsel af medarbejderdata til udlandet." },
       { "icon": "smart_toy", "title": "Klacksy: regelbaseret, ingen black box", "text": "Den integrerede AI-assistent Klacksy planlægger via talekommando &mdash; gennemskueligt efter fastlagte skills og regler, og AI-modellen kan desuden hostes lokalt." }
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Holdskifte og tidsregistrering, ét overblik",
-    "text": "Klacks lader afkortningen af hviletiden til 8 timer ved holdskifte konfigurere som en særregel, holder timegrundlaget for 48-timers-dokumentationen som 4-måneders-gennemsnit synligt og dokumenterer arbejdstiden i de foreskrevne 5 år &mdash; uden manuel efterregning."
+    "text": "Klacks lader afkortningen af hviletiden til 8 timer ved holdskifte konfigurere som en særregel, overvåger det rullende 48-timers-gennemsnit i 4-måneders-vinduet live og dokumenterer arbejdstiden i de foreskrevne 5 år &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": false,
   "cta": {

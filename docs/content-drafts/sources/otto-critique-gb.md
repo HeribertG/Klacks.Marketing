@@ -59,3 +59,19 @@ Da es sich um den deutschen Basistext für den britischen Markt handelt, müssen
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Orthografie-Vorschläge über den site-weiten ß-Sweep umgesetzt (Maßnahmen, rechtmäßig, außerhalb, Verstoß/Verstöße, Großbritannien). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + rollierender 17-Wochen-Schnitt — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (Präzisionskorrekturen im Sicherheits-/Pflege-Vokabular sowie zur Vorbeugung von Auto-Scheduling-Missverständnissen).
+
+Überversprechen-Check: Otto identifiziert eine Lese-Unschärfe (nicht als bestehendes Überversprechen, sondern als Vorsichtsmaßnahme) — „eingeplant wird nur, wer..." könnte als automatische Zuweisung statt als reine Validierungsschranke gelesen werden.
+
+**Eingearbeitet:**
+- land-gb-logistik.json: „eingeplant wird nur, wer einen gültigen Führerschein hat" → „eingeplant werden kann nur, wer..." (schließt Fehllesung als Auto-Scheduling aus).
+- land-gb-security.json: analog „eingeplant wird nur" → „eingeplant werden kann nur" (SIA-Lizenz).
+- land-gb-spitex.json: „eingeplant wird nur, wer einen gültigen Ausweis hat" → „eingeplant werden kann nur, wer einen gültigen Nachweis hat" (Domiciliary-Care-Personal weist sich über Schulungszertifikate nach, nicht über physischen Ausweis).
+
+**Nur dokumentiert:** keine.

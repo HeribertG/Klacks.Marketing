@@ -60,3 +60,22 @@ Hier ist der einzige Optimierungsvorschlag zur Eliminierung des Schweizer Helvet
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Einziger Vorschlag („Spitäler"→„Krankenhäuser") war bereits durch den site-weiten Helvetismus-Sweep umgesetzt (alle Nicht-CH/AT-Seiten). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + Publikationsfristen — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einverstanden** mit den vorgeschlagenen sprachlichen Feinjustierungen (Ersetzung von „hart", Gedankenstrich-Optimierung).
+
+Kein Überversprechen gefunden; Opt-in-Charakter des Block-Modus überall über „Auf Wunsch" korrekt markiert.
+
+**Eingearbeitet:**
+- land-th-hausdienste.json: „(auf Wunsch mit harter Blockierung statt Warnung)" → „(auf Wunsch mit aktiver Blockierung statt einer reinen Warnung)".
+- land-th-logistik.json: „blockiert Klacks die Überschreitung hart" → „... konsequent" (36h-Wochenlimit); „eingeplant wird nur, wer einen gültigen Ausweis hat" → „... wer einen gültigen Nachweis besitzt" (Führerschein ist kein Ausweisdokument).
+- land-th-security.json: verschachtelter Gedankenstrich-Einschub aufgelöst, „hart" → „konsequent (... umgehbar)"; „gültigen Ausweis hat" → „eine gültige Lizenz besitzt" (Security-Branchenbegriff).
+- land-th-spitaeler.json: „hart, nur mit ... umgehbar" → „aktiv (nur mit ... umgehbar)".
+- land-th-spitex.json: „hart" → „konsequent".
+- land-th.json: Subtitle-Dreifach-Gedankenstrich auf Klammer umgestellt; „blockiert Klacks solche Verstöße hart:" → „... konsequent:".
+
+**Nur dokumentiert:** keine (alle Vorschläge waren unkritische Stilkorrekturen ohne fachliche Implikation, vollständig übernommen).

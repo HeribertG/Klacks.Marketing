@@ -23,9 +23,9 @@
     "subtitle": "From optimised routes to the new tachograph requirement &mdash; everything works together.",
     "items": [
       { "icon": "route", "title": "Routes automatically optimised", "text": "Klacks sequences stops in the most sensible order &mdash; short journeys, time windows met, fewer empty runs." },
-      { "icon": "timer", "title": "GB Domestic Rules continuously monitored", "text": "Klacks makes the 10-hour driving-time and 11-hour duty-time limits under the Transport Act 1968 visible at every route planning stage and warns in good time before a limit is exceeded." },
+      { "icon": "timer", "title": "GB Domestic Rules continuously monitored", "text": "Klacks makes the 10-hour driving-time and 11-hour duty-time limits under the Transport Act 1968 visible at every route planning stage and warns in good time before a limit is exceeded. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval." },
       { "icon": "local_shipping", "title": "Ready for the light-van tachograph requirement", "text": "Klacks distinguishes purely domestic GB transport from cross-border light-van routes that will newly require a tachograph from July 2026." },
-      { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence category &mdash; and warns before documents expire." },
+      { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence category &mdash; and warns before documents expire. On request, Klacks can fully block assignment once a required document has expired &mdash; only drivers with a valid licence can be scheduled." },
       { "icon": "shield_lock", "title": "On-premise: data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; route and driver data stay with you, not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice or chat", "text": "\"Plan tomorrow's routes, driver Smith is off sick\" is all it takes &mdash; Klacksy recalculates everything, including driving hours." }
     ]

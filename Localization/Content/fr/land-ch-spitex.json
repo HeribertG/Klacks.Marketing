@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Suisse",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et le travail dominical planifié de manière visible. On-premise, pour que les données patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et des dimanches libres surveillés, bloqués strictement sur demande. On-premise, pour que les données patients ne quittent jamais vos murs.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Suisse",
     "screenshotLabel": "Chronologie"
@@ -46,8 +46,8 @@
       },
       {
         "icon": "event_available",
-        "title": "Jours de repos et interventions dominicales sous contrôle",
-        "text": "Klacks planifie automatiquement les jours de repos hebdomadaire et rend chaque intervention dominicale visible en un coup d'œil &mdash; pour que vous gardiez vous-même la maîtrise de la compensation légale."
+        "title": "Dimanches libres surveillés &mdash; bloqués strictement sur demande",
+        "text": "Klacks surveille les dimanches libres dans une fenêtre glissante (par exemple un dimanche sur deux libre) et bloque strictement les infractions sur demande &mdash; les services de nuit qui débordent sur le dimanche comptent alors correctement comme occupés. Klacks intègre automatiquement les jours de repos hebdomadaire à la planification."
       },
       {
         "icon": "verified",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Temps de trajet, service dominical, un seul planning",
-    "text": "Klacks intègre automatiquement le temps de trajet entre client·e·s comme temps de travail et rend les interventions du dimanche visibles en un coup d'œil &mdash; sans calcul manuel. Dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
+    "text": "Klacks intègre automatiquement le temps de trajet entre client·e·s comme temps de travail et surveille les dimanches libres dans une fenêtre glissante &mdash; sans calcul manuel. Klacks vérifie déjà automatiquement aujourd'hui les délais de publication avec préavis minimal (par exemple deux semaines) &mdash; dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre service d'aide à domicile",
-    "text": "Testez dans le Playground comment Klacks prend en charge le temps de trajet, les tournées et la compensation dominicale &mdash; ou installez-le directement sur votre propre infrastructure. Gratuit et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge le temps de trajet, les tournées et la surveillance des dimanches libres &mdash; ou installez-le directement sur votre propre infrastructure. Gratuit et sans inscription."
   }
 }

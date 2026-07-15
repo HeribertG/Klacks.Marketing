@@ -54,3 +54,18 @@ Hier ist der einzige Optimierungsvorschlag zur Eliminierung des Schweizer Helvet
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge umgesetzt: „Spitäler"→„Krankenhäuser" über den site-weiten Helvetismus-Sweep (alle Nicht-CH/AT-Seiten); Außen-/ß-Schreibweisen über den erweiterten Orthografie-Sweep (Aussen→Außen, zu Fuß). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + rollierender 3-Wochen-Schnitt — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (zwei kleine begründete Verbesserungsvorschläge zur Präzision und Tonwahrung).
+
+Kein Überversprechen gefunden.
+
+**Eingearbeitet:**
+- land-sa-logistik.json: „eingeplant wird nur, wer einen gültigen Ausweis hat" → „... wer einen gültigen Nachweis hat" (Ausweis ist im SA-Kontext das Iqama/ID-Dokument, nicht die Fahrerlaubnis).
+- land-sa-spitaeler.json: „warnt, bevor der Durchschnitt von 8h/48h kippt" → „... überschritten wird" (umgangssprachlich → nüchterner Spital-Ton); „Schnitt" im Titel-nahen Text auf „Durchschnitt" vereinheitlicht.
+
+**Nur dokumentiert:** keine.

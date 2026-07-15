@@ -31,3 +31,19 @@ Da im bereitgestellten Entwurf nur die allgemeine Seite aufgeführt ist, bezieht
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle 3 Vorschläge umgesetzt: regelmäßig (ß), Krankenkasse → Österreichische Gesundheitskasse (ÖGK) an beiden Stellen, Gender-Formen neutralisiert (Schwerarbeitsregelung / pro Person / Klientendaten). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Zuschlagsstaffeln + Hard-Block-Opt-in + rollierender 48h-/17-Wochen-Schnitt — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (drei sprachlich-fachliche Detailverbesserungen bei Hausdienste, Logistik und Spitex, ansonsten exzellente und rechtssichere Aufwertung).
+
+Überversprechen-Check: keine bestehende Überversprechung gefunden; Otto empfiehlt an zwei Stellen eine präzisierende Schranken-Formulierung, um eine mögliche Fehllesung als automatisches Einplanen vorsorglich auszuschließen.
+
+**Eingearbeitet:**
+- land-at-hausdienste.json: „... auf dieser fertig verzuschlagten Basis" → „... auf dieser fertig berechneten Zuschlagsbasis" (weniger umgangssprachlich).
+- land-at-logistik.json: „eingeplant wird nur, wer einen gültigen Ausweis hat" → „eingeplant werden kann nur, wer..." (schließt Fehllesung als Auto-Scheduling aus, analog GB).
+- land-at-spitex.json: „eingeplant wird nur, wer einen gültigen Ausweis hat" → „eingeplant werden kann nur, wer einen gültigen Nachweis hat" (Pflegekräfte weisen sich über Qualifikationsnachweise/GBR-Registrierung aus, nicht per Ausweis).
+
+**Nur dokumentiert:** keine.

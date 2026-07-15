@@ -95,3 +95,17 @@ Alle 8 Vorschläge Ottos wurden als berechtigt bewertet und in den deutschen Bas
 8. ARV1 → ARV 1 (logistik, 7 Stellen — amtliche Schreibweise)
 
 Otto-Gesamturteil: **einverstanden**. Abnahme-Runde für CH damit abgeschlossen; Übersetzungs-Sync (fr/it) folgt im Übersetzungs-Schritt.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + Zuschlagstyp-Staffeln — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (Terminologie-Korrektur „Führerausweis-Kategorie" in Logistik, Rest komplett freigegeben).
+
+Fokus: (a) Terminologie der neuen Block-Modus-/Zuschlagsstaffel-Sätze, (b) Überversprechen-Check (Block=Opt-in? kein Automatik-Claim?), (c) Tonkonsistenz. Kein Überversprechen gefunden — Opt-in-Charakter überall sauber via „Auf Wunsch" markiert.
+
+**Eingearbeitet:**
+- land-ch-logistik.json: „die passende Führerschein-Klasse" → „die passende Führerausweis-Kategorie" (CH-Amtssprache: Führerausweis statt Führerschein).
+
+**Nur dokumentiert (keine weiteren Einwände):** keine.

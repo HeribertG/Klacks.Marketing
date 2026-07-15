@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Untuk Jasa Keamanan Satpam di Indonesia",
     "titleHtml": "Setiap pos terisi. <span class=\"text-secondary\">Setiap tunjangan tepat.</span>",
-    "subtitle": "Klacks mengisi objek tanpa celah dan memantau secara langsung shift lebih dari 12 jam di roster &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. On-Premise, sehingga data penugasan Anda tetap berada di tangan Anda.",
+    "subtitle": "Klacks mengisi objek tanpa celah, memantau secara langsung shift lebih dari 12 jam di roster, dan atas permintaan memblokir pelanggaran tersebut secara ketat &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. On-Premise, sehingga data penugasan Anda tetap berada di tangan Anda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk penempatan objek jasa keamanan di Indonesia",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
       {
         "icon": "block",
         "title": "Batas harian 12 jam dipantau langsung",
-        "text": "Klacks secara otomatis memberi peringatan begitu sebuah shift melewati batas 12 jam (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26, karena batas harian ini tidak memberi ruang untuk perpanjangan yang tidak direncanakan."
+        "text": "Klacks secara otomatis memberi peringatan begitu sebuah shift melewati batas 12 jam (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26, karena batas harian ini tidak memberi ruang untuk perpanjangan yang tidak direncanakan. Atas permintaan, Klacks memblokir pelanggaran ini secara ketat &mdash; pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi."
       },
       {
         "icon": "shield",
@@ -47,7 +47,7 @@
       {
         "icon": "verified",
         "title": "Sertifikat diperiksa secara otomatis",
-        "text": "Klacks memeriksa kartu identitas Satpam pada setiap penugasan dan memberi peringatan tepat waktu sebelum bukti tersebut kedaluwarsa."
+        "text": "Klacks memeriksa kartu identitas Satpam pada setiap penugasan dan memberi peringatan tepat waktu sebelum bukti tersebut kedaluwarsa. Atas permintaan, Klacks memblokir penugasan kepada petugas dengan bukti izin wajib yang telah kedaluwarsa sepenuhnya &mdash; hanya petugas dengan kartu identitas yang masih berlaku yang akan dijadwalkan."
       },
       {
         "icon": "shield_lock",

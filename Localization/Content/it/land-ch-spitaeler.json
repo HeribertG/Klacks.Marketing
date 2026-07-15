@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Ore dei medici assistenti sorvegliate automaticamente",
-        "text": "Klacks sorveglia costantemente il limite settimanale di 50 ore e rende subito visibile ogni superamento &mdash; il tetto annuo di 140 ore per le ore supplementari può essere impostato come valore di riferimento."
+        "text": "Klacks sorveglia costantemente il limite settimanale di 50 ore e rende subito visibile ogni superamento &mdash; su richiesta, Klacks blocca rigidamente il superamento, una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore. Il tetto annuo di 140 ore per le ore supplementari può essere impostato come valore di riferimento."
       },
       {
         "icon": "call",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Rotazione dei medici assistenti e reperibilità, un unico piano",
-    "text": "Klacks tiene sotto controllo il limite di 50 ore e registra il limite annuo di ore supplementari come valore di riferimento, distingue automaticamente la reperibilità in sede da quella telefonica e mostra per tempo alla direzione di reparto dove la situazione si fa critica &mdash; anche sulla strada verso modelli graduali come il 42+4. Non appena la LCInf entrerà in vigore per il personale infermieristico, la base di pianificazione sarà già pronta."
+    "text": "Klacks tiene sotto controllo il limite di 50 ore e registra il limite annuo di ore supplementari come valore di riferimento, distingue automaticamente la reperibilità in sede da quella telefonica e mostra per tempo alla direzione di reparto dove la situazione si fa critica &mdash; anche sulla strada verso modelli graduali come il 42+4. Klacks verifica già oggi automaticamente i termini di pubblicazione con preavviso minimo (ad esempio due settimane) &mdash; non appena la LCInf entrerà in vigore per il personale infermieristico, la base di pianificazione sarà già pronta."
   },
   "showRoutePlanning": false,
   "cta": {

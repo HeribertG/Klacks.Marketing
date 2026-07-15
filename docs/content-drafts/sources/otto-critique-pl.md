@@ -57,3 +57,18 @@ Hier sind 3 gezielte Optimierungen für die deutsche Basisfassung:
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Orthografie-Punkte durch den site-weiten ß-Sweep umgesetzt. Security-Punkt (kumulative Zuschläge nach Art. 151 § 8 KP): Ottos Befund der Inkonsistenz ist berechtigt, sein Formulierungsvorschlag („werden gesetzeskonform kumuliert") wäre aber ein falsches Produktversprechen — die Klacks-Engine kumuliert nicht (highest wins, siehe mapping-pl.md/Code-Inventur). Umgesetzt wurde die ehrliche Auflösung: Klacks weist Zuschläge automatisch zu und dokumentiert jede zuschlagspflichtige Stunde einzeln; die gesetzlich geforderte kumulative Berechnung nimmt die Lohnabrechnung auf dieser Stundenbasis vor. Der falsche „höchster Satz"-Satz (der das Engine-Verhalten als gesetzeskonforme Lösung darstellte) wurde entfernt. Otto-Urteil: einverstanden (nach Korrektur). ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Nachtfenster + additive Kumulierung — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** (unter Berücksichtigung zweier präzisierender Detail-Verbesserungen).
+
+Kein Überversprechen gefunden.
+
+**Eingearbeitet:**
+- land-pl-logistik.json: „eingeplant wird nur, wer einen gültigen Ausweis hat" → „... wer einen gültigen Nachweis hat" (Ausweis ≠ Führerschein-Berechtigung).
+- land-pl-security.json: „nach Art. 151 § 8 KP" → „nach Art. 151-8 KP" (Otto: Art. 151 hat nur §1/§2; gemeint ist der eigenständige Art. 151⁸ — „§ 8" ist ein gängiger Übersetzungsfehler; „151-8" gewählt statt hochgestelltem Unicode-Index aus Web-Kompatibilitätsgründen).
+
+**Nur dokumentiert:** keine.

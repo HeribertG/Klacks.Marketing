@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Dành cho dịch vụ bảo vệ tại Việt Nam",
     "titleHtml": "Mỗi vị trí đều có người trực. <span class=\"text-secondary\">Mọi giới hạn đều trong tầm kiểm soát.</span>",
-    "subtitle": "Klacks bố trí nhân sự cho các mục tiêu không có khoảng trống, giám sát giới hạn làm thêm giờ 40 giờ/tháng và tự động gán phụ cấp làm đêm &mdash; On-Premise, để dữ liệu ca trực và ra vào luôn ở lại với bạn.",
+    "subtitle": "Klacks bố trí nhân sự cho các mục tiêu không có khoảng trống, giám sát giới hạn làm thêm giờ 40 giờ/tháng và, nếu muốn, cộng dồn phụ cấp làm đêm và làm thêm giờ theo chế độ tính cộng dồn &mdash; On-Premise, để dữ liệu ca trực và ra vào luôn ở lại với bạn.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho lịch trực và bố trí mục tiêu tại Việt Nam",
     "screenshotLabel": "Dòng thời gian"
@@ -22,9 +22,9 @@
     "title": "Klacks giúp giảm tải cho dịch vụ bảo vệ tại Việt Nam như thế nào",
     "subtitle": "Từ giới hạn tháng được giám sát đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
-      { "icon": "gavel", "title": "Giám sát liên tục khung 40 giờ/tháng", "text": "Klacks giám sát khung thời gian tháng luân phiên theo Điều 107 Khoản 2 và lên kế hoạch bố trí nhân sự thay thế kịp thời trước khi đạt giới hạn." },
-      { "icon": "bedtime", "title": "Nắm vững mức phụ cấp làm đêm và làm thêm giờ", "text": "Bạn thiết lập các mức phụ cấp theo Điều 98 dưới dạng hệ số có thể cấu hình &mdash; Klacks tự động gán phụ cấp cho các vị trí trực đêm và ghi lại từng giờ làm việc làm cơ sở rõ ràng cho mức cộng dồn 210% hoặc 270% trong bảng lương của bạn." },
-      { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca trong tầm kiểm soát", "text": "Klacks tự động nhận biết các ca làm đêm và kiểm tra thời gian nghỉ 12 giờ giữa các ca (Điều 110) &mdash; kèm cảnh báo, kể cả với lịch trực luân phiên trên nhiều mục tiêu." },
+      { "icon": "gavel", "title": "Giám sát liên tục khung 40 giờ/tháng", "text": "Klacks giám sát khung thời gian tháng luân phiên theo Điều 107 Khoản 2 và lên kế hoạch bố trí nhân sự thay thế kịp thời trước khi đạt giới hạn. Nếu muốn, Klacks sẽ chặn cứng việc vượt giới hạn này &mdash; khi đó, một vi phạm mới chỉ có thể được lưu lại khi có sự phê duyệt bằng văn bản của cấp quản lý." },
+      { "icon": "bedtime", "title": "Nắm vững mức phụ cấp làm đêm và làm thêm giờ", "text": "Bạn thiết lập các mức phụ cấp theo Điều 98 dưới dạng hệ số có thể cấu hình, và phụ cấp làm thêm giờ như một loại phụ cấp riêng có thang bậc. Ở chế độ tính cộng dồn, Klacks tự động cộng dồn phụ cấp làm đêm và làm thêm giờ thay vì chỉ áp dụng mức cao nhất &mdash; nhờ đó mức cộng dồn 210% hoặc 270% đã được tính sẵn ngay trong cơ sở giờ công cho bảng lương của bạn." },
+      { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca trong tầm kiểm soát", "text": "Klacks tự động nhận biết các ca làm đêm &mdash; khung giờ làm đêm 22:00&ndash;06:00 (Điều 106) do bạn thiết lập chính xác &mdash; và kiểm tra thời gian nghỉ 12 giờ giữa các ca (Điều 110), kèm cảnh báo, kể cả với lịch trực luân phiên trên nhiều mục tiêu." },
       { "icon": "route", "title": "Tuần tra &amp; mục tiêu được tối ưu", "text": "Với các dịch vụ tuần tra di động, Klacks sắp xếp lộ trình tuần tra sao cho quãng đường ngắn và khoảng thời gian giữa các lượt được tuân thủ." },
       { "icon": "shield_lock", "title": "On-Premise: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; dữ liệu ca trực và nhân sự luôn ở lại với bạn, kể cả khi sử dụng các tính năng AI." },
       { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Bố trí ca đêm cho mục tiêu Bắc” &mdash; Klacksy sẽ kiểm tra tình trạng sẵn sàng và giới hạn tháng." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Ví dụ thực tế",
     "title": "Ca trực đêm và giới hạn tháng, một lịch trực",
-    "text": "Klacks tự động gán mức phụ cấp đã thiết lập sẵn cho một vị trí trực đêm và cảnh báo trước khi đạt giới hạn 40 giờ/tháng &mdash; không cần tính toán thủ công."
+    "text": "Klacks tự động cộng dồn các mức phụ cấp đã thiết lập sẵn cho một vị trí trực đêm theo chế độ tính cộng dồn, và cảnh báo trước khi đạt giới hạn 40 giờ/tháng &mdash; không cần tính toán thủ công."
   },
   "showRoutePlanning": true,
   "cta": {

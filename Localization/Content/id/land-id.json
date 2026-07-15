@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; Pencatatan Waktu Sesuai UU PDP",
     "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
-    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan, dan berjalan On-Premise &mdash; sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
+    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan &mdash; atas permintaan, Klacks memblokir pelanggaran secara ketat &mdash; dan berjalan On-Premise, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
@@ -62,7 +62,7 @@
       {
         "icon": "hourglass_top",
         "title": "Batas 18 jam per minggu dipantau otomatis",
-        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan pengingat mengenai persetujuan tertulis yang diwajibkan."
+        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan pengingat mengenai persetujuan tertulis yang diwajibkan. Atas permintaan, Klacks memblokir pelanggaran semacam ini secara ketat: dalam mode blokir, pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi (dapat dikonfigurasi per jenis aturan)."
       },
       {
         "icon": "calculate",

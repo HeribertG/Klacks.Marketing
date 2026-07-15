@@ -46,13 +46,13 @@
       },
       {
         "icon": "gavel",
-        "title": "Seuil de 210 heures enregistré",
-        "text": "Le seuil mensuel de 210 heures supplémentaires, au-delà duquel une majoration de 25 % s'applique, peut être enregistré comme valeur de référence &mdash; comme base de documentation pour la compensation dans le délai de 3 mois."
+        "title": "Seuil de 210 heures surveillé en temps réel",
+        "text": "Klacks surveille en temps réel le seuil mensuel de 210 heures, au-delà duquel une majoration de 25 % s'applique, et alerte avant qu'il ne soit dépassé &mdash; sur demande, Klacks bloque strictement le dépassement. Les heures documentées constituent la base de la compensation dans le délai de 3 mois."
       },
       {
         "icon": "verified",
         "title": "Certificats vérifiés automatiquement",
-        "text": "Klacks vérifie à chaque attribution les certificats enregistrés et alerte à temps avant l'expiration d'un justificatif."
+        "text": "Klacks vérifie à chaque attribution les certificats enregistrés et alerte à temps avant l'expiration d'un justificatif. Sur demande, Klacks bloque entièrement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Service de nuit, majoration, un seul planning",
-    "text": "Klacks calcule automatiquement la majoration pour travail de nuit et du dimanche comme base pour votre compte de temps et retient le seuil de 210 heures comme valeur de référence &mdash; sans calcul manuel."
+    "text": "Klacks calcule automatiquement la majoration pour travail de nuit et du dimanche comme base pour votre compte de temps et surveille le seuil de 210 heures en temps réel &mdash; sans calcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {

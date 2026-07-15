@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en France",
     "titleHtml": "Tournées, temps de conduite, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec une base horaire documentée sans faille pour les heures d'équivalence selon la CCN 16, et des temps de planification en complément du justificatif du chronotachygraphe. Les itinéraires sont optimisés automatiquement.",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les échelles de majoration des heures d'équivalence selon la CCN 16, et des temps de planification en complément du justificatif du chronotachygraphe. Les itinéraires sont optimisés automatiquement.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations des chauffeurs en France",
     "screenshotLabel": "Chronologie"
@@ -41,18 +41,18 @@
       },
       {
         "icon": "calculate",
-        "title": "Base horaire pour les heures d'équivalence et les heures supplémentaires",
-        "text": "Klacks documente sans faille et au jour près chaque heure à partir de la 36e &mdash; la distinction entre les heures d'équivalence majorées de 25% et les véritables heures supplémentaires à partir de la 40e ou de la 44e heure (CCN 16) relève de la convention collective ; votre gestion de la paie calcule les majorations sur cette base horaire propre."
+        "title": "Heures d'équivalence &amp; heures supplémentaires majorées par paliers",
+        "text": "Klacks reproduit directement l'échelonnement de la CCN 16 : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; +25% pour les heures d'équivalence à partir de la 36e, +50% pour les véritables heures supplémentaires à partir de la 40e ou de la 44e heure ; votre gestion de la paie n'a plus qu'à verser les montants sur cette base déjà majorée."
       },
       {
         "icon": "timer",
         "title": "Temps de conduite &amp; de repos surveillés",
-        "text": "Les temps de conduite et de repos légaux sont surveillés, Klacks rend visible tout dépassement &mdash; les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
+        "text": "Les temps de conduite et de repos légaux sont surveillés, Klacks rend visible tout dépassement &mdash; sur demande, Klacks les bloque strictement : toute nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée du responsable hiérarchique. Les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
       },
       {
         "icon": "badge",
         "title": "Catégories de permis adaptées",
-        "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance."
+        "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance. Sur demande, Klacks bloque entièrement l'affectation en cas de justificatif obligatoire expiré &mdash; seul un chauffeur disposant d'un justificatif valide est planifié."
       },
       {
         "icon": "smart_toy",
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de logistique",
-    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, la base horaire et les temps de conduite &mdash; ou installez-le directement sur votre propre infrastructure. Gratuitement et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, les échelles de majoration et les temps de conduite &mdash; ou installez-le directement sur votre propre infrastructure. Gratuitement et sans inscription."
   }
 }

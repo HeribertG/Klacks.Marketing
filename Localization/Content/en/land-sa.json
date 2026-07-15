@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; On-Premise &middot; PDPL/SDAIA Compliant",
     "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">monitors the 12-hour limit live.</span>",
-    "subtitle": "Klacks schedules shifts automatically, enforces the 12-hour presence limit (Art. 101), and can be controlled through the Klacksy AI assistant &mdash; on-premise, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
+    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour presence limit (Art. 101), optionally with a hard block, and can be controlled through the Klacksy AI assistant &mdash; on-premise, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -62,7 +62,7 @@
       {
         "icon": "gavel",
         "title": "Standard Hours &amp; 6-Day Limit Monitored",
-        "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded."
+        "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded. On request, Klacks blocks the excess as a hard block."
       },
       {
         "icon": "nightlight",
@@ -72,7 +72,7 @@
       {
         "icon": "timer_off",
         "title": "12-Hour Limit Monitored Live (Art. 101)",
-        "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times."
+        "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times. On request, Klacks enforces such violations as a hard block: in block mode, a new violation can only be saved with documented supervisor approval (configurable per rule type)."
       },
       {
         "icon": "payments",

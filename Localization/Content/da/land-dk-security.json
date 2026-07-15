@@ -42,7 +42,7 @@
       {
         "icon": "bolt",
         "title": "Varskotillæg undgået i stedet for betalt",
-        "text": "Klacks planlægger objekter så tidligt, at omlægninger sker i god tid, og advarer, før en spontan ændring udløser tillægget på 525,29 DKK pr. døgn."
+        "text": "Klacks planlægger objekter så tidligt, at omlægninger sker i god tid, og advarer, før en spontan ændring udløser tillægget på 525,29 DKK pr. døgn. Skal det alligevel ske med kort varsel, kan tillægget registreres som et fast beløb pr. vagt og tilknyttes de berørte vagter."
       },
       {
         "icon": "payments",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "verified",
-        "title": "Certifikaters udløb i syne",
-        "text": "Klacks viser, hvilket personale der aktuelt er kvalificeret, og advarer i god tid, før et bevis eller certifikat udløber."
+        "title": "Kun planlagt med gyldigt bevis",
+        "text": "Klacks viser, hvilket personale der aktuelt er kvalificeret, og advarer med en konfigurerbar varslingsfrist, før et bevis eller certifikat udløber. Efter ønske blokerer Klacks helt for tildeling ved udløbet obligatorisk dokumentation &mdash; der planlægges kun med personale, der har et gyldigt bevis."
       },
       {
         "icon": "route",

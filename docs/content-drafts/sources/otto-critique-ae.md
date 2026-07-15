@@ -58,3 +58,20 @@ Hier sind die wenigen Anpassungen zur Rechtschreibung (Eszett) und zur Beseitigu
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge umgesetzt: „Spitäler"→„Krankenhäuser" über den site-weiten Helvetismus-Sweep (alle Nicht-CH/AT-Seiten); Außen-/ß-Schreibweisen über den erweiterten Orthografie-Sweep (Aussen→Außen, zu Fuß). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + 144h/3-Wochen-Deckel — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (Terminologie-Details „kippt"/„hart").
+
+Kein Überversprechen gefunden — Opt-in via „Auf Wunsch" durchgehend sauber.
+
+**Eingearbeitet:**
+- land-ae-security.json: „blockiert Klacks die Überschreitung hart" → „... strikt" (144h-Deckel).
+- land-ae-spitaeler.json: „warnt, bevor der Grenzwert kippt" → „... überschritten wird"; „Überschreitung hart" → „... strikt".
+- land-ae-spitex.json: zweimal „kippt" → „überschritten wird" / „erreicht bzw. überschritten wird" (56h-Ausnahme-Grenzen).
+
+**Nur dokumentiert (Otto selbst als optional markiert, nicht übernommen):**
+- land-ae.json: Otto nennt „strikt" statt „hart" für Subtitle/Tageslimit als *optionale* Alternative, bewertet den Ist-Zustand aber ausdrücklich als „vollkommen im Rahmen" bzw. „Einverstanden" — deshalb nicht angefasst, um unnötige Inkonsistenz zur bewusst offen gelassenen Otto-Bewertung zu vermeiden.

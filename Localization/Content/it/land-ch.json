@@ -35,7 +35,7 @@
     "title": "Come Klacks alleggerisce le aziende svizzere",
     "subtitle": "Dal calcolo automatico dei supplementi alla propria infrastruttura &mdash; tutto si incastra alla perfezione.",
     "items": [
-      { "icon": "gavel", "title": "Durata massima settimanale sorvegliata automaticamente", "text": "Klacks sorveglia costantemente i limiti settimanali di 45 e 50 ore per settore e rende visibile subito ogni superamento &mdash; le soglie del supplemento per lavoro straordinario specifiche per settore possono essere impostate come valore di riferimento." },
+      { "icon": "gavel", "title": "Durata massima settimanale sorvegliata automaticamente", "text": "Klacks sorveglia costantemente i limiti settimanali di 45 e 50 ore per settore e rende visibile subito ogni superamento &mdash; su richiesta, Klacks blocca rigidamente il superamento, una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore. Klacks rappresenta i supplementi per lavoro straordinario come un tipo di supplemento proprio con fino a tre scaglioni su base giornaliera o settimanale; le soglie del supplemento per lavoro straordinario specifiche per settore possono essere impostate come valore di riferimento." },
       { "icon": "bedtime", "title": "Tempi di riposo pianificati automaticamente, supplemento notturno documentato", "text": "Klacks pianifica automaticamente le 11 ore di riposo, e le ore notturne soggette a supplemento vengono documentate &mdash; come base per l'accredito di tempo libero previsto dalla legge a partire dalla 25ª notte annua." },
       { "icon": "route", "title": "Giri &amp; interventi ottimizzati automaticamente", "text": "Klacks organizza interventi e percorsi in modo che le distanze siano brevi e le fasce orarie rispettate &mdash; utilizzabile in tutti i settori." },
       { "icon": "shield_lock", "title": "On-Premise: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura, il modello di IA lo sceglie Lei &mdash; anche ospitato localmente, senza alcun trasferimento dei dati del personale all'estero." },
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Lavoro notturno e durata massima settimanale, un unico sguardo",
-    "text": "Klacks riconosce automaticamente quando un intervento genera il supplemento notturno o quando viene raggiunta la durata massima settimanale, e lo rende subito visibile &mdash; senza calcoli manuali."
+    "text": "Klacks riconosce automaticamente quando un intervento genera il supplemento notturno o quando viene raggiunta la durata massima settimanale, e lo rende subito visibile &mdash; senza calcoli manuali. Su richiesta, Klacks blocca rigidamente il superamento &mdash; una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in Saudi Arabia",
     "titleHtml": "Shift schedules that <span class=\"text-secondary\">stay balanced across weeks.</span>",
-    "subtitle": "Klacks schedules wards and shift operations and instantly flags deviations from the 3-week average required by Art. 100 &mdash; including correctly compensated overtime. On-premise, so patient data never leaves your facility.",
+    "subtitle": "Klacks schedules wards and shift operations and monitors the rolling 3-week average required by Art. 100 live &mdash; including correctly compensated overtime. On-premise, so patient data never leaves your facility.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -23,7 +23,7 @@
     "subtitle": "From the 3-week average calculation to 24/7 coverage &mdash; it all fits together.",
     "items": [
       { "icon": "schedule", "title": "Gap-Free 24/7 Coverage", "text": "Day, evening and night shifts across all wards &mdash; Klacks flags every gap instantly and fills it automatically on request." },
-      { "icon": "balance", "title": "3-Week Average Calculated under Art. 100", "text": "Klacks tracks the average over the required 3 weeks and warns before it deviates from 8h/48h." },
+      { "icon": "balance", "title": "3-Week Average Calculated under Art. 100", "text": "Klacks monitors the rolling 3-week average live and warns before the average of 8h/48h is exceeded &mdash; on request, Klacks enforces the excess as a hard block, only overridable with documented supervisor approval." },
       { "icon": "timelapse", "title": "9-Hour Limit for Intermittent Duties", "text": "Categories with intermittent duties are correctly scheduled with up to 9 hours per day." },
       { "icon": "gavel", "title": "Overtime Premium Calculated Automatically", "text": "The statutory 50% premium on the base wage (Art. 107) is calculated automatically for every overtime hour." },
       { "icon": "verified", "title": "Qualifications &amp; Wards", "text": "Every shift is assigned only to appropriately qualified staff &mdash; per ward, department and role." },

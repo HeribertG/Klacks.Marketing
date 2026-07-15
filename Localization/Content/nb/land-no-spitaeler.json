@@ -23,8 +23,8 @@
     "subtitle": "Fra den sømløse nattevakten til den korrekte tilleggsberegningen &mdash; alt spiller sammen.",
     "items": [
       { "icon": "schedule", "title": "24/7-dekning uten hull", "text": "Dag-, kvelds- og nattevakter på tvers av alle avdelinger &mdash; Klacks viser hvert hull umiddelbart og fyller det automatisk på forespørsel." },
-      { "icon": "gavel", "title": "33,6-timersuke konfigurerbart lagt inn", "text": "For den helkontinuerlige 3-skiftturnusen med minst hver 3. søndag som tjenestedag legger du inn den reduserte 33,6-timersuken etter Spekter A2 som grenseverdi &mdash; Klacks overvåker overholdelsen fortløpende." },
-      { "icon": "payments", "title": "Helligdags- &amp; helgetillegg beregnet automatisk", "text": "Helligdagstillegget på 133,33 % og helgetillegget på 26 % (minst 75 NOK/time) anvendes automatisk på hver berørte vakt." },
+      { "icon": "gavel", "title": "33,6-timersuke konfigurerbart lagt inn", "text": "For den helkontinuerlige 3-skiftturnusen med minst hver 3. søndag som tjenestedag legger du inn den reduserte 33,6-timersuken etter Spekter A2 som grenseverdi &mdash; Klacks overvåker det rullerende ukesnittet fortløpende og varsler før grenseverdien overskrides. Søndagsrotasjonen holder Klacks samtidig oversikt over i det rullerende vinduet &mdash; nattevakter som strekker seg inn i søndagen, telles da korrekt som søndagsvakt." },
+      { "icon": "payments", "title": "Helligdags- &amp; helgetillegg beregnet automatisk", "text": "Helligdagstillegget på 133,33 % og helgetillegget på 26 % (minst 75 NOK/time) anvendes automatisk på hver berørte vakt &mdash; minstebeløpet per time er lagt inn direkte som nedre grense i tilleggsregelen." },
       { "icon": "shield_lock", "title": "On-Premise: data blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata forlater ikke klinikken &mdash; heller ikke til KI-en." },
       { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Fyll nattevaktene for indremedisin neste uke» er nok &mdash; Klacksy tar hensyn til kvalifikasjon og turnusregime." },
       { "icon": "groups", "title": "Vikarpool &amp; fravær", "text": "Faller noen fra, viser Klacks straks tilgjengelige, kvalifiserte vikarer &mdash; uten å velte hele planen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Turnusregime og helligdagsvakt, ett blikk",
-    "text": "Du fastsetter at en avdeling går i helkontinuerlig 3-skiftturnus med minst hver 3. søndag som tjenestedag &mdash; Klacks anvender 33,6-timersuken som grenseverdi og beregner automatisk helligdagstillegget på 133,33 % for en julevakt &mdash; uten manuell etterberegning."
+    "text": "Du fastsetter at en avdeling går i helkontinuerlig 3-skiftturnus med minst hver 3. søndag som tjenestedag &mdash; Klacks overvåker 33,6-timersuken som et rullerende ukesnitt og beregner automatisk helligdagstillegget på 133,33 % for en julevakt &mdash; uten manuell etterberegning."
   },
   "showRoutePlanning": false,
   "cta": {

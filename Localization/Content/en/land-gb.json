@@ -62,7 +62,7 @@
       {
         "icon": "gavel",
         "title": "48-hour limit &amp; opt-out kept in view",
-        "text": "Klacks continuously makes weekly working time visible, warns as anyone approaches the 48-hour limit under WTR Reg. 4, and flags who is working beyond it under an opt-out &mdash; fully traceable for any inspection."
+        "text": "Klacks monitors the rolling 17-week average of working time live, correctly factoring in each employee's start date, and warns before the 48-hour limit under WTR Reg. 4 is exceeded &mdash; while flagging who is working beyond it under an opt-out. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval. Fully traceable for any inspection."
       },
       {
         "icon": "bedtime",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "The 48-hour week and rest periods, at a glance",
-    "text": "Klacks automatically detects when an employee is approaching the 48-hour limit or a rest period under WTR Reg. 10 would fall short, and suggests the adjustment straight away &mdash; no manual recalculating required."
+    "text": "Klacks automatically detects when an employee is approaching the 48-hour limit in the rolling 17-week average or a rest period under WTR Reg. 10 would fall short, and suggests the adjustment straight away &mdash; no manual recalculating required."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in the UAE",
     "titleHtml": "Rosters that <span class=\"text-secondary\">hold up in an emergency too.</span>",
-    "subtitle": "Klacks schedules wards around the clock, lets you record emergency call-outs as an exception to the overtime limit separately with notes, and keeps the 144-hour total per 3-week period continuously visible &mdash; on-premise, so patient data never leaves your organisation.",
+    "subtitle": "Klacks schedules wards around the clock, lets you record emergency call-outs as an exception to the overtime limit separately with notes, and monitors the 144-hour total per 3-week period live &mdash; on-premise, so patient data never leaves your organisation.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals in the UAE",
     "screenshotLabel": "Schedule"
@@ -23,7 +23,7 @@
     "items": [
       { "icon": "schedule", "title": "Gap-free 24/7 ward coverage", "text": "Day, evening and night shifts across every ward &mdash; Klacks flags every gap immediately and can fill it automatically on request." },
       { "icon": "emergency", "title": "Emergency overtime recorded separately", "text": "Emergency call-outs that exceed the regular 2-hour daily limit can be recorded separately in Klacks with notes on the reason &mdash; traceable, not blanket." },
-      { "icon": "gavel", "title": "The 144-hour total continuously visible", "text": "Klacks continuously totals working hours per 3-week period and makes them visible &mdash; even where emergency call-outs are involved, so you can keep the 144-hour cap in view yourself." },
+      { "icon": "gavel", "title": "The 144-hour cap monitored live", "text": "Klacks monitors total working hours per 3-week period live against the 144-hour cap and warns before the limit is exceeded &mdash; even where emergency call-outs are involved. On request, Klacks strictly enforces the excess as a hard block &mdash; a new violation can then only be saved with documented supervisor approval." },
       { "icon": "verified", "title": "Qualifications factored in automatically", "text": "Every shift is only assigned to staff with the matching qualification &mdash; with no manual checking at all." },
       { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Fill next week's night shifts for the ward\" is all it takes &mdash; Klacksy automatically factors in qualifications and shows the 144-hour total." }
@@ -32,7 +32,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "The emergency exception and the 144-hour cap, at a glance",
-    "text": "An emergency call-out that exceeds the 2-hour daily limit can be recorded separately in Klacks together with the reason, while total working hours per 3-week period remain continuously visible &mdash; no manual recalculating required."
+    "text": "An emergency call-out that exceeds the 2-hour daily limit can be recorded separately in Klacks together with the reason, while Klacks monitors total working hours per 3-week period live against the 144-hour cap &mdash; no manual recalculating required."
   },
   "showRoutePlanning": false,
   "cta": {

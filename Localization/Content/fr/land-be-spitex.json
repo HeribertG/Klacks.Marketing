@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Temps de trajet correctement comptabilisé comme temps de travail", "text": "Les trajets entre patient·e·s sont automatiquement comptés comme temps de travail &mdash; seuls le premier et le dernier trajet restent exclus." },
       { "icon": "call_split", "title": "Supplément de 50% pour services coupés calculé", "text": "Klacks détecte automatiquement un service interrompu et propose le supplément de 50% selon la CP 330." },
       { "icon": "elderly", "title": "Rimpelregeling intégrée comme règle de planification", "text": "Vous configurez les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, comme règle de disponibilité &mdash; elles s'intègrent ensuite automatiquement à la planification des tournées." },
-      { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle." },
+      { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle. Sur demande, Klacks bloque complètement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée." },
       { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." }
     ]
   },

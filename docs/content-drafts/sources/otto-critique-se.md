@@ -55,3 +55,17 @@ Hier sind die wenigen Rechtschreibanpassungen für die deutsche Basisfassung:
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep umgesetzt. Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Fixbetrag-Zuschläge + rollierender 48h-Schnitt — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** (mit stilistischer Detail-Optimierung bei Logistik).
+
+Kein Überversprechen gefunden; konkrete SEK-Tarifsätze im Text schließen „automatisch aktuell"-Claims aus.
+
+**Eingearbeitet:**
+- land-se-logistik.json: „live gleich mit &mdash; mit Warnung" → „... &mdash; samt Warnung" (Wortwiederholung „mit ... mit" behoben).
+
+**Nur dokumentiert:** keine.

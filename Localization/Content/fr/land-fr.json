@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; On-Premise &middot; Confidentialité des données à la française",
     "titleHtml": "La planification des effectifs, <span class=\"text-secondary\">dont vous gardez le contrôle.</span>",
-    "subtitle": "Klacks planifie les services automatiquement, documente sans faille les heures de travail et les temps de repos selon le Code du travail, et optimise les tournées &mdash; open source, installable on-premise et avec le modèle d'IA de votre choix. Ainsi, les données du personnel restent là où la CNIL les attend : dans vos propres murs.",
+    "subtitle": "Klacks planifie les services automatiquement, reproduit directement les échelles de majoration des heures supplémentaires du Code du travail, surveille sans faille les temps de repos, et optimise les tournées &mdash; open source, installable on-premise et avec le modèle d'IA de votre choix. Ainsi, les données du personnel restent là où la CNIL les attend : dans vos propres murs.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Planning de service Klacks pour les entreprises en France",
     "screenshotLabel": "Planning"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "gavel",
-        "title": "Heures de travail documentées, temps de repos surveillés",
-        "text": "Klacks documente sans faille chaque heure de travail à partir de la 36e, comme base pour l'échelle de majoration (+25%/+50%, Art. L3121-27 &amp; L3121-36) &mdash; le calcul des taux lui-même reste l'affaire de votre gestion de la paie, sur cette base horaire propre. Le repos quotidien de 11 heures et le repos hebdomadaire de 35 heures (Art. L3131-1 &amp; L3132-2) sont surveillés en temps réel, Klacks rend immédiatement visible tout dépassement."
+        "title": "Échelles de majoration calculées, temps de repos surveillés",
+        "text": "Klacks reproduit directement l'échelle de majoration du Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; votre gestion de la paie n'a plus qu'à verser les montants sur cette base déjà majorée. Le repos quotidien de 11 heures et le repos hebdomadaire de 35 heures (Art. L3131-1 &amp; L3132-2) sont surveillés en temps réel, Klacks rend immédiatement visible tout dépassement &mdash; et les bloque strictement sur demande : en mode blocage, toute nouvelle infraction ne peut être enregistrée qu'avec une autorisation documentée du responsable hiérarchique (configurable par type de règle)."
       },
       {
         "icon": "route",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Semaine de 35 heures, modulation annuelle, un seul planning",
-    "text": "Une entreprise avec plusieurs sites en France module la durée hebdomadaire de travail sur l'année. Klacks garde à l'œil la limite hebdomadaire de 48 heures, documente sans faille les heures de travail comme base pour l'échelle de majoration, et fait apparaître où des jours de récupération deviennent nécessaires &mdash; le calcul des majorations reste l'affaire de la gestion de la paie."
+    "text": "Une entreprise avec plusieurs sites en France module la durée hebdomadaire de travail sur l'année. Klacks garde à l'œil la limite hebdomadaire de 48 heures, calcule directement l'échelle de majoration des heures supplémentaires (+25%/+50%) comme type de majoration à part entière, et fait apparaître où des jours de récupération deviennent nécessaires &mdash; le versement reste l'affaire de la gestion de la paie."
   },
   "showRoutePlanning": false,
   "cta": {

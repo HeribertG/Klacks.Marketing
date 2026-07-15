@@ -23,7 +23,7 @@
     "subtitle": "Från den optimerade rutten till den korrekta övertidsersättningen &mdash; allt hänger ihop.",
     "items": [
       { "icon": "route", "title": "Objektrutter optimerade", "text": "Klacks bestämmer objektens ordning så att sträckorna hålls korta &mdash; för bil, cykel eller till fots." },
-      { "icon": "payments", "title": "Mertidsövergången dokumenterad", "text": "Övergången från mertid till full övertidsersättning från 1 juni 2026 hanterar ni i Klacks &mdash; de fasta satserna (73,63 SEK/tim vardagar, 91,39 SEK/tim sön- och helgdagar) lägger ni in som referensvärden, och de dokumenterade timmarna ger underlaget för er löneadministration." },
+      { "icon": "payments", "title": "Mertidsövergången bokförd med fasta satser", "text": "Övergången från mertid till full övertidsersättning från 1 juni 2026 hanterar ni i Klacks &mdash; de fasta satserna (73,63 SEK/tim vardagar, 91,39 SEK/tim sön- och helgdagar) bokför Klacks direkt som fasta tilläggsbelopp per timme, och de dokumenterade timmarna ger underlaget för er löneadministration." },
       { "icon": "event_available", "title": "Ledig dag direkt inplanerad", "text": "Den betalda lediga dagen för heltidsanställda från 2026 planerar ni in direkt i Klacks &mdash; den proportionella rätten för deltidsanställda lägger ni in per person." },
       { "icon": "bedtime", "title": "Nattvila under uppsikt", "text": "Klacks visar tydligt när ett pass faller inom tidsfönstret midnatt till 05.00, som enligt ATL § 13 i regel måste ligga inom vilotiden." },
       { "icon": "smart_toy", "title": "Klacksy planerar med rösten", "text": "”Planera objekten i centrumdistriktet för imorgon bitti” räcker &mdash; Klacksy optimerar rutt och team." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mertidens slut och ledig dag, en plan",
-    "text": "Klacks dokumenterar deltidsanställdas mertidstimmar som underlag för den fulla övertidsersättning som gäller från och med 1 juni 2026, och planerar samtidigt in den nya arbetstidsförkortningsdagen &mdash; utan manuell efterräkning."
+    "text": "Klacks bokför deltidsanställdas mertidstimmar från och med 1 juni 2026 med de fasta övertidssatserna som fast tilläggsbelopp per timme, och planerar samtidigt in den nya arbetstidsförkortningsdagen &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Heures des médecins-assistant·e·s surveillées automatiquement",
-        "text": "Klacks surveille en continu la limite hebdomadaire de 50 heures et signale immédiatement tout dépassement &mdash; le plafond annuel de 140 heures d'heures supplémentaires peut être enregistré comme valeur de référence."
+        "text": "Klacks surveille en continu la limite hebdomadaire de 50 heures et signale immédiatement tout dépassement &mdash; sur demande, Klacks bloque strictement le dépassement, une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie. Le plafond annuel de 140 heures d'heures supplémentaires peut être enregistré comme valeur de référence."
       },
       {
         "icon": "call",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Rotation des médecins-assistant·e·s et piquet, un seul planning",
-    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
+    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Klacks vérifie déjà automatiquement aujourd'hui les délais de publication avec préavis minimal (par exemple deux semaines) &mdash; dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
   },
   "showRoutePlanning": false,
   "cta": {

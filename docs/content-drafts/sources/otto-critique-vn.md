@@ -59,3 +59,17 @@ Hier ist der einzige Optimierungsvorschlag zur Vermeidung des Schweizer Helvetis
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Einziger Vorschlag („Spitäler"→„Krankenhäuser") war bereits durch den site-weiten Helvetismus-Sweep umgesetzt (alle Nicht-CH/AT-Seiten). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Nachtzuschlag + Überstunden-Cap + additive Kumulierung — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (nur eine Wortwiederholung in land-vn.json, Rest komplett freigegeben).
+
+Kein Überversprechen gefunden.
+
+**Eingearbeitet:**
+- land-vn.json: „kumuliert die hinterlegten Zuschläge im additiven Rechenmodus gleich automatisch" → „... gleich direkt" (Wortwiederholung „automatisch ... automatisch" im selben Satz behoben).
+
+**Nur dokumentiert:** keine.

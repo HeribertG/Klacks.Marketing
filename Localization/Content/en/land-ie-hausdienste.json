@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Site routes optimised", "text": "Klacks sequences sites so that journeys stay short &mdash; whether by car, bike or on foot." },
       { "icon": "payments", "title": "ERO minimum wage applied automatically", "text": "Klacks calculates using the current ERO rate of €14.80 per hour from 1 January 2026, and updates future increases centrally." },
-      { "icon": "bedtime", "title": "Night allowance within the right time window", "text": "The €1.00-per-hour night allowance between 00:00 and 06:00 is only correctly calculated where at least 3 hours are worked within that window &mdash; Klacks checks this automatically." },
+      { "icon": "bedtime", "title": "Night allowance within the right time window", "text": "The €1.00-per-hour night allowance is set up as a fixed amount per hour with a configurable time window, and is only correctly calculated where at least 3 hours are worked between 00:00 and 06:00 &mdash; Klacks checks this automatically." },
       { "icon": "event_repeat", "title": "Sunday working recorded at double rate", "text": "Klacks automatically recognises Sunday shifts and applies the double hourly rate of €29.60 per hour (from 1 January 2026)." },
       { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure &mdash; staff data never leaves your organisation, not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Schedule the sites in the North district for tomorrow morning\" is enough &mdash; Klacksy optimises the route and team and factors in the ERO rates at the same time." }

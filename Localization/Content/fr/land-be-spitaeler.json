@@ -23,9 +23,9 @@
     "subtitle": "Du contrôle trimestriel au supplément correct &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "schedule", "title": "Couverture 24/7 sans faille", "text": "Services de jour, de soir et de nuit dans tous les services &mdash; Klacks signale immédiatement chaque lacune et la comble automatiquement sur demande." },
-      { "icon": "gavel", "title": "Moyenne trimestrielle surveillée automatiquement", "text": "Klacks garde un œil sur la moyenne de 38 heures sur la période de référence, même si certaines semaines atteignent jusqu'à 50 heures." },
+      { "icon": "gavel", "title": "Moyenne trimestrielle surveillée automatiquement", "text": "Klacks surveille en continu la moyenne glissante de 38 heures sur la période de référence trimestrielle et avertit avant que le seuil ne soit dépassé &mdash; la date d'entrée en fonction est prise en compte correctement, même si certaines semaines atteignent jusqu'à 50 heures. Sur demande, Klacks bloque strictement tout dépassement &mdash; une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie." },
       { "icon": "percent", "title": "Toujours le supplément le plus élevé", "text": "Klacks détecte automatiquement le travail du samedi, du dimanche, des jours fériés et du soir, et applique toujours le supplément le plus élevé, non cumulable." },
-      { "icon": "verified", "title": "Qualifications &amp; services", "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par service, département et fonction." },
+      { "icon": "verified", "title": "Qualifications &amp; services", "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par service, département et fonction. Sur demande, Klacks bloque complètement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée." },
       { "icon": "shield_lock", "title": "On-premise : les données restent chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données du personnel et des patients ne quittent pas l'établissement &mdash; pas même pour l'IA." },
       { "icon": "smart_toy", "title": "Klacksy planifie à la voix", "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte de la qualification et de la moyenne trimestrielle." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Moyenne trimestrielle et supplément, un seul planning",
-    "text": "Klacks garde un œil sur la moyenne de 38 heures sur le trimestre, même si certains services durent jusqu'à 11 heures, et applique automatiquement le supplément le plus élevé en cas de travail le week-end ou le soir &mdash; sans calcul manuel."
+    "text": "Klacks surveille en continu la moyenne de 38 heures sur le trimestre glissant, même si certains services durent jusqu'à 11 heures, et applique automatiquement le supplément le plus élevé en cas de travail le week-end ou le soir &mdash; sans calcul manuel."
   },
   "showRoutePlanning": false,
   "cta": {

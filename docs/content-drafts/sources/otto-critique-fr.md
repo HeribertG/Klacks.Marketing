@@ -33,3 +33,16 @@ Um den Lesefluss des deutschen Basistextes und die Verständlichkeit für Übers
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle 3 Vorschläge umgesetzt: „Das französische Dekret Nr. 2002-9 (Décret n° 2002-9)" + Folgestelle eingedeutscht, EU-Mindestmaß (ß), FPH-Abkürzung beim ersten Auftreten etabliert („öffentlicher Krankenhausdienst (Fonction Publique Hospitalière, FPH)"). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Zuschlagstyp-Staffeln + Hard-Block-Opt-in — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge.
+
+Terminologie (CCN 16, Code du travail Art. L3121-27) als hochprofessionell gelobt; Überversprechen-Check bestanden — Abgrenzung „Klacks berechnet, die Lohnabrechnung zahlt aus" durchgehend sauber, Block-Modus klar als „pro Regelart konfigurierbar" deklariert.
+
+**Eingearbeitet:** keine (keine Vorschläge vorhanden).
+
+**Nur dokumentiert:** keine.

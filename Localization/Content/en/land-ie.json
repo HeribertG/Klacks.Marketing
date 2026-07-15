@@ -35,9 +35,9 @@
     "title": "How Klacks takes the load off Irish businesses",
     "subtitle": "From automatic rest-period checks to your own infrastructure &mdash; it all fits together.",
     "items": [
-      { "icon": "gavel", "title": "Weekly working-time limit monitored automatically", "text": "Klacks calculates the 48-hour average limit over the reference period set out in OWTA Section 15 &mdash; including the sector-specific extension to 6 months for security and healthcare." },
+      { "icon": "gavel", "title": "Weekly working-time limit monitored automatically", "text": "Klacks monitors the rolling 48-hour average live over the reference period set out in OWTA Section 15, and warns before the limit is exceeded &mdash; including the sector-specific extension to 6 months for security and healthcare, correctly factoring in each employee's start date. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval." },
       { "icon": "bedtime", "title": "Rest periods observed automatically", "text": "The daily rest period of at least 11 consecutive hours (Section 11) and the weekly rest period of at least 24 hours (Section 13) are monitored in real time &mdash; breaches simply never occur." },
-      { "icon": "campaign", "title": "Shift notice with 24 hours' lead time", "text": "Klacks makes sure start and finish times are set at least 24 hours in advance whenever the roster isn't fixed, as required by Section 17 OWTA." },
+      { "icon": "campaign", "title": "Shift notice with 24 hours' lead time", "text": "Klacks automatically checks the minimum lead time for roster publication: the 24-hour advance-notice period for start and finish times required by Section 17 OWTA is stored as a publication deadline, and Klacks warns if a roster would be published too close to the deadline." },
       { "icon": "fact_check", "title": "Banded Hours applications documented", "text": "Klacks records actual hours worked over 12 months, so an application for Banded Hours under Section 18A OWTA can be answered cleanly within the 4-week deadline." },
       { "icon": "shield_lock", "title": "On-premise: full data sovereignty", "text": "Klacks runs on your own infrastructure, and you choose the AI model &mdash; including locally hosted, with no staff data ever transferred abroad." },
       { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy schedules by voice command &mdash; transparently, based on defined skills and rules, not as an opaque AI decision." }
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "24 hours' notice, one view",
-    "text": "A schedule changes at short notice. Klacks makes sure the new shift is announced at least 24 hours in advance, as required by Section 17 OWTA, while keeping the 11-hour rest period in view &mdash; no manual recalculating required."
+    "text": "A roster changes at short notice. Klacks automatically checks the 24-hour advance-notice period under Section 17 OWTA against the stored publication deadline, while keeping the 11-hour rest period in view &mdash; no manual recalculating required."
   },
   "showRoutePlanning": false,
   "cta": {

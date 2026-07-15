@@ -23,10 +23,10 @@
     "subtitle": "From optimised routes to the summer midday ban &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Routes Optimised Automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short distances, time windows kept, fewer empty runs." },
-      { "icon": "timer", "title": "TGA Driving Hours Checked", "text": "The 9-hour limit, the 56-hour weekly limit and the 90-hour limit per two weeks are monitored in real time &mdash; Klacks warns before any limit is exceeded." },
+      { "icon": "timer", "title": "TGA Driving Hours Checked", "text": "The 9-hour limit, the 56-hour weekly limit and the 90-hour limit per two weeks are monitored in real time &mdash; Klacks warns before any limit is exceeded. On request, Klacks enforces the limit as a hard block &mdash; a new violation can then only be saved with documented supervisor approval." },
       { "icon": "pause_circle", "title": "Breaks &amp; Rest Times Scheduled", "text": "Klacks automatically builds in the 45-minute break after 4.5 hours of driving, along with the 11-hour daily rest and the 48-hour weekly rest." },
       { "icon": "wb_sunny", "title": "Summer Midday Ban at Ramps Considered", "text": "Klacks schedules loading and unloading at uncovered ramps so the window from 12:00 to 15:00 (June 15 to September 15) stays clear." },
-      { "icon": "badge", "title": "Matching License Classes", "text": "Klacks assigns routes only to drivers with the appropriate license &mdash; and warns before certifications expire." },
+      { "icon": "badge", "title": "Matching License Classes", "text": "Klacks assigns routes only to drivers with the appropriate license &mdash; and warns before certifications expire. On request, Klacks can fully block assignment when a mandatory certification has expired &mdash; only drivers with a valid certification get scheduled." },
       { "icon": "smart_toy", "title": "Klacksy Schedules by Voice", "text": "\"Plan tomorrow&rsquo;s routes, driver is sick\" is enough &mdash; Klacksy recalculates everything, including driving hours and the summer midday ban." }
     ]
   },

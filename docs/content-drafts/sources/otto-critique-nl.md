@@ -55,3 +55,16 @@ Hier sind 2 winzige Rechtschreibanpassungen für die deutsche Basisfassung:
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep umgesetzt. Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + rollierende 4-/16-Wochen-Schnitte — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge am deutschen Text.
+
+Kein Überversprechen gefunden. Otto lieferte zusätzlich (unaufgefordert) niederländische Formulierungsvorschläge für die NL-Zielsprache — außerhalb des Scopes dieser Gegenpass-Runde (nur de-Redaktion), nicht übernommen, aber hier vermerkt für einen künftigen NL-Übersetzungs-Sync: „Desgewenst blokkeert Klacks..." (security) bzw. „...Desgewenst blokkeert Klacks de overschrijding hard..." (general).
+
+**Eingearbeitet:** keine (keine de-Textänderungen empfohlen).
+
+**Nur dokumentiert:** NL-Übersetzungsvorschläge (siehe oben), nicht Teil dieser de-Redaktionsrunde.

@@ -56,3 +56,16 @@ Für die deutsche Basisfassung müssen lediglich die typischen Schweizer Rechtsc
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep über alle Nicht-CH-Länderseiten umgesetzt (Verstoß/Bußgeld/gemäß/zu Fuß/Straßen/außer/…mäßig etc.). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Regel-Set-Import + Hard-Block-Opt-in + Sonntags-Rotation — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge.
+
+Kein Überversprechen gefunden; „Auf Wunsch blockiert..." und Import-Presets (statt Auto-Update) durchgehend sauber formuliert.
+
+**Eingearbeitet:** keine (keine Vorschläge vorhanden).
+
+**Nur dokumentiert:** keine.

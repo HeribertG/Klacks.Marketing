@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Dành cho bệnh viện &amp; phòng khám tại Việt Nam",
     "titleHtml": "Lịch trực, <span class=\"text-secondary\">vận hành suôn sẻ suốt 24 giờ.</span>",
-    "subtitle": "Klacks giám sát ngân sách làm thêm giờ mở rộng 300 giờ/năm dành cho ngành y tế và cung cấp cơ sở tính giờ minh bạch cho các mức phụ cấp làm đêm cộng dồn &mdash; On-Premise, để dữ liệu bệnh nhân không bao giờ rời khỏi doanh nghiệp của bạn.",
+    "subtitle": "Klacks giám sát ngân sách làm thêm giờ mở rộng 300 giờ/năm dành cho ngành y tế và nếu muốn, cộng dồn phụ cấp làm đêm và làm thêm giờ theo chế độ tính cộng dồn thay vì chỉ áp dụng mức cao nhất &mdash; On-Premise, để dữ liệu bệnh nhân không bao giờ rời khỏi doanh nghiệp của bạn.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Lưới lịch trực Klacks cho bệnh viện tại Việt Nam",
     "screenshotLabel": "Lịch làm việc"
@@ -22,9 +22,9 @@
     "title": "Klacks giúp giảm tải cho bệnh viện tại Việt Nam như thế nào",
     "subtitle": "Từ giám sát ngân sách 300 giờ đến hạ tầng riêng của bạn &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
-      { "icon": "gavel", "title": "Giám sát ngân sách 300 giờ", "text": "Klacks theo dõi giới hạn năm mở rộng cho từng nhân viên và trực quan hóa mức sử dụng &mdash; bao gồm cả điều kiện phải có văn bản thông báo gửi cơ quan quản lý lao động." },
-      { "icon": "bedtime", "title": "Nắm vững mức phụ cấp làm đêm và làm thêm giờ", "text": "Bạn thiết lập các mức phụ cấp theo Điều 98 dưới dạng hệ số có thể cấu hình &mdash; Klacks tự động gán phụ cấp cho các ca trực đêm và ghi lại từng giờ làm việc làm cơ sở rõ ràng cho mức cộng dồn 210% hoặc 270% trong bảng lương của bạn." },
-      { "icon": "schedule", "title": "Giám sát thời gian nghỉ 12 giờ", "text": "Klacks cảnh báo trước khi một chuỗi ca làm việc có nguy cơ vi phạm thời gian nghỉ theo luật định của Điều 110." },
+      { "icon": "gavel", "title": "Giám sát ngân sách 300 giờ", "text": "Klacks theo dõi giới hạn năm mở rộng cho từng nhân viên và trực quan hóa mức sử dụng &mdash; bao gồm cả điều kiện phải có văn bản thông báo gửi cơ quan quản lý lao động. Nếu muốn, Klacks sẽ chặn cứng việc vượt giới hạn này &mdash; khi đó, một vi phạm mới chỉ có thể được lưu lại khi có sự phê duyệt bằng văn bản của cấp quản lý." },
+      { "icon": "bedtime", "title": "Nắm vững mức phụ cấp làm đêm và làm thêm giờ", "text": "Bạn thiết lập các mức phụ cấp theo Điều 98 dưới dạng hệ số có thể cấu hình, và phụ cấp làm thêm giờ như một loại phụ cấp riêng có thang bậc. Ở chế độ tính cộng dồn, Klacks tự động cộng dồn phụ cấp làm đêm và làm thêm giờ thay vì chỉ áp dụng mức cao nhất &mdash; nhờ đó mức cộng dồn 210% hoặc 270% đã được tính sẵn ngay trong cơ sở giờ công cho bảng lương của bạn." },
+      { "icon": "schedule", "title": "Giám sát thời gian nghỉ 12 giờ", "text": "Klacks cảnh báo trước khi một chuỗi ca làm việc có nguy cơ vi phạm thời gian nghỉ theo luật định của Điều 110. Nếu muốn, Klacks sẽ chặn cứng vi phạm này &mdash; khi đó, một chuỗi ca không hợp lệ chỉ có thể được lưu lại khi có sự phê duyệt bằng văn bản của cấp quản lý." },
       { "icon": "verified", "title": "Trình độ chuyên môn &amp; các khoa", "text": "Mỗi ca trực chỉ được giao cho nhân viên có trình độ chuyên môn phù hợp &mdash; theo từng khoa, bộ phận và chức năng." },
       { "icon": "shield_lock", "title": "On-Premise: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và bệnh nhân không rời khỏi bệnh viện &mdash; kể cả để đưa vào AI." },
       { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Điền các ca trực đêm của khoa Nội cho tuần tới” &mdash; Klacksy sẽ tính đến trình độ chuyên môn và ngân sách năm." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Ví dụ thực tế",
     "title": "Ngân sách 300 giờ và trực đêm, một lịch trực",
-    "text": "Klacks luôn theo dõi ngân sách năm mở rộng 300 giờ và ghi lại từng giờ trực đêm làm cơ sở cho công thức phụ cấp làm đêm cộng dồn &mdash; không cần tính toán thủ công."
+    "text": "Klacks luôn theo dõi ngân sách năm mở rộng 300 giờ và tự động cộng dồn phụ cấp cho từng giờ trực đêm theo chế độ tính cộng dồn &mdash; không cần tính toán thủ công."
   },
   "showRoutePlanning": false,
   "cta": {

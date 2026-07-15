@@ -58,3 +58,16 @@ Hier sind die wenigen Rechtschreibanpassungen für die deutsche Basisfassung:
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Alle Vorschläge waren Orthografie (Schweizer ss → Standard-ß) und wurden durch den site-weiten Orthografie-Sweep über alle Nicht-CH-Länderseiten umgesetzt (Verstoß/Bußgeld/gemäß/zu Fuß/Straßen/außer/…mäßig etc.). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Rollierender 26-/416h-Schnitt + Selbst-Planungs-Block — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge.
+
+Terminologie („vyrovnávací období"-Bezug, „Vorgesetzten-Freigabe") als sehr professionell gelobt; Überversprechen-Check bestanden (Warn-Modus klar von optionalem Block-Modus getrennt, kein Automatik-Claim bei Rotationen).
+
+**Eingearbeitet:** keine (keine Vorschläge vorhanden).
+
+**Nur dokumentiert:** keine.

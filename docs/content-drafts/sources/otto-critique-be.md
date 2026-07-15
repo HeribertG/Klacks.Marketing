@@ -56,3 +56,20 @@ Ein einziger, aber dafür **extrem amüsanter und kritischer Übersetzungsfehler
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Beide Vorschläge umgesetzt: Verstöße (ß), „scharfe Bussen" → „scharfe Bußgelder" (Helvetismus behoben). Zusätzlich wurde daraufhin ein site-weiter Orthografie-Sweep über ALLE Nicht-CH-Länderseiten gefahren (86 Dateien: Verstoß/Bußgeld/gemäß/zu Fuß/Straßen/außerhalb/…mäßig/Velo→Fahrrad etc.); CH-Seiten behalten bewusst die Schweizer Schreibweise. Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + rollierender 37h-/Trimester-Schnitt — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: Einwände siehe oben** (Bindestrich-Bereinigung sowie „Ausweis" → „Nachweis" im medizinisch-pflegerischen Kontext).
+
+Kein Überversprechen gefunden.
+
+**Eingearbeitet:**
+- land-be-logistik.json: „Zuweisung mit abgelaufenem Pflicht-Nachweis" → „Zuweisung bei abgelaufenem Pflichtnachweis" (Präposition + gängige Zusammenschreibung).
+- land-be-security.json: „dokumentierter Vorgesetzten-Freigabe" → „dokumentierter Vorgesetztenfreigabe" (Bindestrich entfernt).
+- land-be-spitaeler.json: gleiche Vorgesetztenfreigabe-Korrektur; zusätzlich „Zuweisung mit abgelaufenem Pflicht-Nachweis komplett ... gültigen Ausweis hat" → „Zuweisung bei abgelaufenem Pflichtnachweis komplett ... gültigen Nachweis besitzt" (im Spital-Kontext sind es Berufszulassungen, keine Ausweisdokumente).
+- land-be-spitex.json: gleiche Ausweis→Nachweis-Korrektur wie Spitäler.
+
+**Nur dokumentiert:** keine.

@@ -35,7 +35,7 @@
     "title": "Comment Klacks soulage les entreprises suisses",
     "subtitle": "Du calcul automatique des majorations à votre propre infrastructure &mdash; tout s'imbrique parfaitement.",
     "items": [
-      { "icon": "gavel", "title": "Durée maximale de la semaine de travail surveillée automatiquement", "text": "Klacks surveille en continu les limites hebdomadaires de 45h et 50h selon la branche et rend tout dépassement immédiatement visible &mdash; les seuils de majoration pour heures supplémentaires propres à chaque branche peuvent être enregistrés comme valeur de référence." },
+      { "icon": "gavel", "title": "Durée maximale de la semaine de travail surveillée automatiquement", "text": "Klacks surveille en continu les limites hebdomadaires de 45h et 50h selon la branche et rend tout dépassement immédiatement visible &mdash; sur demande, Klacks bloque strictement le dépassement, une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie. Klacks représente les majorations pour heures supplémentaires comme un type de majoration propre avec jusqu'à trois paliers sur base journalière ou hebdomadaire ; les seuils de majoration pour heures supplémentaires propres à chaque branche peuvent être enregistrés comme valeur de référence." },
       { "icon": "bedtime", "title": "Temps de repos planifiés automatiquement, majoration de nuit documentée", "text": "Klacks intègre automatiquement le repos de 11 heures à la planification, et les heures de nuit soumises à majoration sont documentées &mdash; comme base du crédit-temps légal dès la 25e nuit de l'année." },
       { "icon": "route", "title": "Tournées &amp; interventions optimisées automatiquement", "text": "Klacks organise les interventions et les itinéraires de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; utilisable dans toutes les branches." },
       { "icon": "shield_lock", "title": "On-premise : pleine souveraineté des données", "text": "Klacks tourne sur votre propre infrastructure, vous choisissez vous-même le modèle d'IA &mdash; y compris hébergé localement, sans aucun transfert de données du personnel à l'étranger." },
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Travail de nuit et durée maximale de la semaine, en un coup d'œil",
-    "text": "Klacks détecte automatiquement quand une intervention déclenche la majoration de nuit ou atteint la durée maximale de la semaine de travail, et le rend immédiatement visible &mdash; sans calcul manuel."
+    "text": "Klacks détecte automatiquement quand une intervention déclenche la majoration de nuit ou atteint la durée maximale de la semaine de travail, et le rend immédiatement visible &mdash; sans calcul manuel. Sur demande, Klacks bloque strictement le dépassement &mdash; une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -46,8 +46,8 @@
       },
       {
         "icon": "gavel",
-        "title": "48-timers-gennemsnit løbende synligt",
-        "text": "Klacks holder timegrundlaget for det glidende 4-måneders-gennemsnit løbende synligt &mdash; så I i god tid opdager, hvis nogen nærmer sig 48-timers-grænsen."
+        "title": "48-timers-gennemsnit overvåget live",
+        "text": "Klacks overvåger det glidende 4-måneders-gennemsnit live og advarer, før nogen overskrider 48-timers-grænsen. Efter ønske blokerer Klacks overskridelsen hårdt &mdash; en ny overtrædelse kan så kun gemmes med en dokumenteret godkendelse fra en overordnet."
       },
       {
         "icon": "tune",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Holdskifte og 48-timers-dokumentation, én plan",
-    "text": "Klacks lader afkortningen af hviletiden ved holdskifte til 8 timer planlægges som en særregel, holder plads til aftalen med tillidsrepræsentanten i notaterne og holder timegrundlaget for 48-timers-dokumentationen som 4-måneders-gennemsnit løbende synligt &mdash; uden manuel efterregning."
+    "text": "Klacks lader afkortningen af hviletiden ved holdskifte til 8 timer planlægges som en særregel, holder plads til aftalen med tillidsrepræsentanten i notaterne og overvåger 48-timers-gennemsnittet i det glidende 4-måneders-vindue løbende med advarsel, før grænseværdien overskrides &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": false,
   "cta": {

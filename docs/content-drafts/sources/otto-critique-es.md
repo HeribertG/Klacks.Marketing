@@ -58,3 +58,18 @@ Hier sind 3 kleine Optimierungen für die deutsche Basisfassung (primär Orthogr
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Orthografie-Punkte durch den site-weiten ß-Sweep umgesetzt; „Konvenio" → „Convenio" harmonisiert (security + hausdienste). Otto-Urteil: einverstanden. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Hard-Block-Opt-in + rollierende Schnitte — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge am deutschen Text.
+
+Kein Überversprechen gefunden (Art. 35 ET / Convenio-Referenzen als gesetzlich verankert korrekt eingeordnet, keine dynamischen Tarif-Update-Claims).
+
+**Hinweis zur Otto-Selbstauskunft:** Otto eröffnete die Antwort mit der Behauptung, die 4 Paare „vorhin direkt aus dem Git-Repository" analysiert zu haben — das ist nicht plausibel (Otto hat keinen Repo-Zugriff; frühere Versuche, Dateien/Repo zu durchsuchen, schlugen in dieser Runde nachweislich fehl). Diese Selbstauskunft wurde NICHT als Beleg gewertet; die inhaltliche Kritik selbst deckt sich aber korrekt mit den tatsächlich übermittelten 4 Paaren und wurde entsprechend gewürdigt.
+
+**Eingearbeitet:** keine (keine de-Textänderungen empfohlen; ES-Übersetzungsvorschläge außerhalb des de-Scopes, hier nicht übernommen).
+
+**Nur dokumentiert:** ES-Fachbegriff-Vorschläge (fecha de alta, periodo de referencia móvil, promedio bimensual móvil, límite anual de 80 horas extraordinarias) für einen künftigen ES-Übersetzungs-Sync.

@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Dla firm ochroniarskich w Polsce",
     "titleHtml": "Każdy posterunek obsadzony. <span class=\"text-secondary\">Każdy dodatek naliczony poprawnie.</span>",
-    "subtitle": "Klacks planuje obiekty i 24-godzinne zmiany w równoważnym systemie czasu pracy &mdash; pilnując odpoczynku wyrównawczego i automatycznie przydzielając stawki dodatków. On-Premise, dzięki czemu dane o zleceniach pozostają u Ciebie.",
+    "subtitle": "Klacks planuje obiekty i 24-godzinne zmiany w równoważnym systemie czasu pracy &mdash; pilnując odpoczynku wyrównawczego i na życzenie addytywnie kumulując dodatki. On-Premise, dzięki czemu dane o zleceniach pozostają u Ciebie.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks do obsady obiektów i zmian w branży ochrony w Polsce",
     "screenshotLabel": "Oś czasu"
@@ -23,9 +23,9 @@
     "subtitle": "Od 24-godzinnej zmiany po właściwy dodatek &mdash; wszystko działa razem.",
     "items": [
       { "icon": "shield", "title": "Obiekty i posterunki bez luk", "text": "Każdy posterunek na wszystkich obiektach &mdash; Klacks od razu pokazuje każde wolne miejsce i na życzenie wypełnia je automatycznie." },
-      { "icon": "schedule", "title": "24-godzinne zmiany zaplanowane prawidłowo", "text": "Klacks planuje zmiany w równoważnym systemie czasu pracy zgodnie z art. 137 Kodeksu pracy, wraz z 1- do 4-miesięcznymi okresami rozliczeniowymi." },
+      { "icon": "schedule", "title": "24-godzinne zmiany zaplanowane prawidłowo", "text": "Klacks planuje zmiany w równoważnym systemie czasu pracy zgodnie z art. 137 Kodeksu pracy i na bieżąco monitoruje średnią w 1- do 4-miesięcznym okresie rozliczeniowym &mdash; z ostrzeżeniem, zanim limit zostanie przekroczony." },
       { "icon": "bedtime", "title": "Odpoczynek wyrównawczy pod kontrolą", "text": "Klacks pilnuje przysługującego po wydłużonej zmianie odpoczynku wyrównawczego i ostrzega, gdy nie zostanie on dotrzymany." },
-      { "icon": "payments", "title": "Dodatki przypisywane automatycznie", "text": "Klacks automatycznie przypisuje odpowiednie dodatki nocne, niedzielne i świąteczne do danego dyżuru &mdash; stawki są w pełni konfigurowalne &mdash; i dokumentuje każdą godzinę podlegającą dodatkowi osobno. Kumulatywne obliczenie dodatku za nadgodziny i dodatku nocnego zgodnie z art. 151 § 8 Kodeksu pracy wykonuje na tej rzetelnej podstawie godzinowej Twoje rozliczenie płac." },
+      { "icon": "payments", "title": "Dodatki kumulowane addytywnie", "text": "Klacks automatycznie przypisuje odpowiednie dodatki nocne, niedzielne i świąteczne do danego dyżuru &mdash; stawki są w pełni konfigurowalne, a dodatek za nadgodziny to osobny typ dodatku z własnymi progami. W addytywnym trybie obliczeniowym Klacks automatycznie kumuluje dodatek za nadgodziny i dodatek nocny zgodnie z art. 151 § 8 Kodeksu pracy, zamiast stosować tylko najwyższą stawkę &mdash; wybieralnie dla każdego dyżuru, a każda godzina podlegająca dodatkowi trafia gotowo wyliczona do Twojego rozliczenia płac." },
       { "icon": "shield_lock", "title": "On-Premise: pełna suwerenność danych", "text": "Klacks działa na Twojej własnej infrastrukturze &mdash; dane o zleceniach i klientach pozostają u Ciebie, także przy funkcjach AI." },
       { "icon": "smart_toy", "title": "Klacksy planuje na polecenie głosowe", "text": "„Obsadź 24-godzinną zmianę dla obiektu Północ” wystarczy &mdash; Klacksy sprawdza odpoczynek wyrównawczy i dostępność." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkretnie",
     "title": "24-godzinna zmiana, wyrównanie, dodatek",
-    "text": "Po 24-godzinnej zmianie Klacks pilnuje odpoczynku wyrównawczego i automatycznie przyznaje właściwy dodatek nocny lub świąteczny &mdash; bez ręcznego przeliczania."
+    "text": "Po 24-godzinnej zmianie Klacks pilnuje odpoczynku wyrównawczego i w addytywnym trybie obliczeniowym automatycznie kumuluje dodatki nocne, świąteczne i za nadgodziny &mdash; bez ręcznego przeliczania."
   },
   "showRoutePlanning": true,
   "cta": {

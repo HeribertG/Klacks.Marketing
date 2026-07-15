@@ -37,3 +37,16 @@ Hier ist der einzige Optimierungsvorschlag (der sich nur auf den internen Sektio
 ---
 ## Umsetzung (Haupt-Session, 2026-07-15)
 Kein Datei-Fix nötig — Ottos einziger Punkt betraf den internen Sektionstitel des Review-Digests („Seite: Spitäler"), nicht den Seitentext (dort stand bereits „Krankenhäuser" nach dem Sweep). Otto-Urteil: einverstanden, Texte makellos. ABGENOMMEN.
+
+
+---
+
+## Gegenpass 2026-07-15 (Zuschlagstyp-Staffeln + additive Kumulierung — Otto-Kritik-Runde)
+
+Otto-Gesamturteil: **GESAMT: einverstanden** — keine Verbesserungsvorschläge.
+
+Terminologie („additiver Rechenmodus", „Zuschlagsstaffeln") als technisch präzise gelobt; Überversprechen-Check bestanden (Opt-in via „Auf Wunsch"/„hinterlegen Sie" durchgehend klar).
+
+**Eingearbeitet:** keine (keine Vorschläge vorhanden).
+
+**Nur dokumentiert:** keine.
