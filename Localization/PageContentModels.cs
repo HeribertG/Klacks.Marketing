@@ -80,7 +80,6 @@ public sealed class IndustryRulesCalendarSection
     public required string Text { get; init; }
     public required IReadOnlyList<IndustryItem> Items { get; init; }
     public required string ImageFile { get; init; }
-    public string? ImageLabel { get; init; }
     public required string ImageAlt { get; init; }
     public string? ImageCaption { get; init; }
 }
