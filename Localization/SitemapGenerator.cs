@@ -6,7 +6,7 @@ public static class SitemapGenerator
 {
     private static readonly string[] PageKeys =
     {
-        "", "spitex", "spitaeler", "security", "hausdienste", "logistik",
+        "", "spitex", "spitaeler", "security", "hausdienste", "logistik", "klacksy",
         "land-de", "land-at", "land-fr", "land-it", "land-ch",
         "land-ch/spitex", "land-ch/spitaeler", "land-ch/security", "land-ch/hausdienste", "land-ch/logistik",
         "land-de/spitex", "land-de/spitaeler", "land-de/security", "land-de/hausdienste", "land-de/logistik",
