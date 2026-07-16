@@ -10,12 +10,14 @@
   "hero.screenshotLabel": "근무표",
   "hero.screenshotAlt": "교대, 그룹, 직원이 표시된 Klacks 근무표 화면",
   "hero.screenshotCaption": "스크린샷은 독일어 화면입니다. Klacks 앱은 독일어, 영어, 프랑스어, 이탈리아어로 제공됩니다.",
+
   "painPoints.item1.title": "계획에 소모되는 시간",
   "painPoints.item1.text": "근무표를 수작업으로 짜면 매주 몇 시간이 소요됩니다. 한 번의 변경이 수십 건의 후속 충돌을 일으킵니다.",
   "painPoints.item2.title": "컴플라이언스 리스크",
   "painPoints.item2.text": "휴식 시간, 자격 요건, 가산 수당, 공휴일. 하나라도 놓치면 금세 값비싼 실수가 됩니다.",
   "painPoints.item3.title": "클라우드 강제 &amp; 락인",
   "painPoints.item3.text": "개인 데이터가 타사 서버에 저장되고, 공급업체에 종속됩니다. 민감한 업종은 이를 감당할 수 없습니다.",
+
   "usp.eyebrow": "약속",
   "usp.title": "통제권은 당신에게 있습니다.",
   "usp.subtitle": "귀사의 데이터, 그 뒤의 AI, 그리고 귀사의 규칙까지. Klacks가 어떤 클라우드 솔루션과도 다른 세 가지 이유입니다.",
@@ -28,9 +30,11 @@
   "usp.rules.label": "귀사의 규칙",
   "usp.rules.title": "사전 설정 &amp; 직접 커스터마이즈 가능",
   "usp.rules.text": "규칙, 계산 방식, 공휴일은 귀사의 국가, 칸톤, 게마인데에 맞게 미리 설정되어 있습니다. 모든 것을 직접 조정할 수 있습니다 &mdash; 컨설팅 비용도, 다음 릴리스를 기다릴 필요도 없습니다.",
+
   "aiSynergy.eyebrow": "거의 아무도 제공하지 않는 조합",
   "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">그리고</span> 완전한 데이터 주권. 동시에.",
   "aiSynergy.textHtml": "Klacksy는 <strong class=\"text-white\">로컬 언어 모델</strong>로도 작동할 수 있습니다. 즉, 근무표를 작성하고 직원을 등록하며 음성으로 앱을 조작하는 어시스턴트가 &mdash; 단 하나의 개인정보나 환자 데이터도 사외로 유출하지 않습니다. 병원, 재가 돌봄, 보안 업체가 정확히 필요로 하는 것입니다.",
+
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "계획을 위한 당신의 AI 어시스턴트",
   "klacksy.item1.title": "자연어로 조작",
@@ -42,6 +46,7 @@
   "klacksy.item4.title": "외부 AI 에이전트 연결",
   "klacksy.item4.text": "Model Context Protocol 서버를 통해 Klacks를 다른 AI 도구와 연결할 수 있습니다.",
   "klacksy.imageAlt": "Klacks 내 패널로 표시된 Klacksy AI 어시스턴트 – 모델 선택과 자연어 조작 기능 포함",
+
   "autoPlanning.title": "계획은 기계가 처리합니다",
   "autoPlanning.subtitle": "진화 알고리즘이 수천 가지 조합을 몇 초 만에 검토하여 커버리지, 비용, 만족도 사이의 최적 균형을 찾아냅니다.",
   "autoPlanning.item1.title": "원클릭 자동 계획",
@@ -56,6 +61,7 @@
   "autoPlanning.item5.text": "초안부터 확정, 승인, 완료까지. 각 단계는 편집을 잠급니다 &mdash; 그룹 기반 접근 권한과 함께.",
   "autoPlanning.item6.title": "인터랙티브 계획 그리드",
   "autoPlanning.item6.text": "강력한 시간 매트릭스: 드래그 &amp; 드롭으로 근무를 이동하면, 변경 사항이 모든 관계자에게 실시간으로 표시됩니다.",
+
   "divideConquer.eyebrow": "분할 정복",
   "divideConquer.title": "큰 계획도 한눈에 파악됩니다",
   "divideConquer.subtitle": "복잡하고 거대한 전체 계획을 붙들고 씨름하는 대신, 작고 명확한 하위 계획으로 나누세요 &mdash; Klacks가 모든 것을 자동으로 연결합니다.",
@@ -68,6 +74,7 @@
   "divideConquer.step3.label": "3단계",
   "divideConquer.step3.title": "자동 동기화",
   "divideConquer.step3.text": "한 번의 변경이 즉시 모든 곳에 반영됩니다. 이중 배정은 애초에 발생하지 않습니다 &mdash; 별도의 유지보수 없이.",
+
   "rulesCalendar.eyebrow": "규칙 &amp; 캘린더",
   "rulesCalendar.title": "모든 현실에 맞는 캘린더",
   "rulesCalendar.text": "스위스의 공휴일과 규칙은 칸톤마다, 때로는 게마인데마다 다른 복잡한 모자이크입니다 &mdash; Klacks는 단순한 도구가 실패하는 바로 그 지점을 정확히 다룹니다.",
@@ -80,6 +87,7 @@
   "rulesCalendar.imageLabel": "공휴일 규칙",
   "rulesCalendar.imageAlt": "Klacks의 공휴일 규칙: 국가 및 지역별 공휴일 – 독일, 미국(알래스카) 및 스위스 루체른, 쥐라, 글라루스, 아펜첼 칸톤",
   "rulesCalendar.imageCaption": "Klacks의 실제 규칙: 하나의 목록에 여러 국가와 개별 칸톤의 공휴일이 혼합되어 있습니다 &mdash; 자유롭게 확장 가능합니다.",
+
   "industries.eyebrow": "하나의 플랫폼, 다양한 업종",
   "industries.title": "교대 및 현장 출동 조직을 위해 설계됨",
   "industries.subtitle": "교대, 외근, 자격 기준에 따라 인력을 배치해야 하는 모든 곳에서 &mdash; 적응하는 쪽은 Klacks이지, 그 반대가 아닙니다.",
@@ -96,6 +104,7 @@
   "industries.logistik.text": "투어, 운전 시간, 국경 간 운행까지 완벽하게 관리합니다.",
   "industries.klacksy.title": "다른 업종이신가요?",
   "industries.klacksy.text": "귀사의 운영 규칙을 Klacksy가 별도 프로그래밍 없이 자동으로 계획에 반영합니다.",
+
   "languages.title": "처음부터 다국어 지원",
   "languages.text": "기본 제공되는 4개 핵심 언어 &mdash; 독일어, 프랑스어, 이탈리아어, 영어. 추가 언어는 지리 데이터, 캘린더 규칙, AI 어시스턴트용 용어까지 포함한 플러그인 형태로 추가할 수 있습니다.",
   "languages.badge.de": "Deutsch",
@@ -103,6 +112,7 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ 플러그인으로 추가",
+
   "getStarted.eyebrow": "바로 시작하기",
   "getStarted.title": "체험. 다운로드. 시작.",
   "getStarted.subtitle": "데모 일정도, 영업 상담도 필요 없습니다: 브라우저에서 바로 Klacks를 사용해 보세요 &mdash; 또는 몇 분 만에 자체 서버에 설치하세요.",

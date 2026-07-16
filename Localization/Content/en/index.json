@@ -10,12 +10,14 @@
   "hero.screenshotLabel": "Schedule",
   "hero.screenshotAlt": "Klacks schedule grid with shifts, groups, and staff",
   "hero.screenshotCaption": "Screenshot shown in German — the app itself is also available in English.",
+
   "painPoints.item1.title": "Scheduling eats up hours",
   "painPoints.item1.text": "Building schedules by hand costs hours every week. One change triggers a dozen follow-on conflicts.",
   "painPoints.item2.title": "Compliance risk",
   "painPoints.item2.text": "Rest periods, qualifications, pay premiums, public holidays. One overlooked value quickly becomes a costly mistake.",
   "painPoints.item3.title": "Forced cloud &amp; lock-in",
   "painPoints.item3.text": "Personal data on someone else's servers, dependence on a single vendor. Sensitive industries can't afford that.",
+
   "usp.eyebrow": "The promise",
   "usp.title": "You stay in control.",
   "usp.subtitle": "Over your data, over the AI behind it, and over your rules. Three reasons why Klacks is different from any cloud solution.",
@@ -28,9 +30,11 @@
   "usp.rules.label": "Your rules",
   "usp.rules.title": "Pre-configured &amp; fully customizable",
   "usp.rules.text": "Rules, calculations, and public holidays come pre-configured for your country, canton, and municipality. You can adjust everything yourself &mdash; no consulting days, no waiting for the next release.",
+
   "aiSynergy.eyebrow": "The combination almost no one offers",
   "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">and</span> full data sovereignty. At the same time.",
   "aiSynergy.textHtml": "Klacksy can run on a <strong class=\"text-white\">local language model</strong>. That means an assistant that builds schedules, creates staff records, and operates the app by voice &mdash; without a single personnel or patient record ever leaving your building. Exactly what hospitals, home care, and security services need.",
+
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Your AI assistant for scheduling",
   "klacksy.item1.title": "Control in natural language",
@@ -42,6 +46,7 @@
   "klacksy.item4.title": "Gateway for external AI agents",
   "klacksy.item4.text": "A Model Context Protocol server lets you connect Klacks to other AI tools.",
   "klacksy.imageAlt": "Klacksy AI assistant panel in Klacks – with model selection and natural-language control",
+
   "autoPlanning.title": "Let the machine build the schedule",
   "autoPlanning.subtitle": "An evolutionary algorithm checks thousands of variants in seconds and finds the best balance of coverage, cost, and satisfaction.",
   "autoPlanning.item1.title": "One-click auto-scheduling",
@@ -56,6 +61,7 @@
   "autoPlanning.item5.text": "From draft through confirmed and approved to completed. Each stage locks further editing &mdash; with group-based access rights.",
   "autoPlanning.item6.title": "Interactive schedule grid",
   "autoPlanning.item6.text": "A powerful time matrix: move shifts by drag &amp; drop, and changes appear in real time for everyone involved.",
+
   "divideConquer.eyebrow": "Divide and conquer",
   "divideConquer.title": "Large schedules stay manageable",
   "divideConquer.subtitle": "Instead of juggling one unwieldy master schedule, break it into small, clear sub-schedules &mdash; and Klacks automatically keeps everything in sync.",
@@ -68,6 +74,7 @@
   "divideConquer.step3.label": "Step 3",
   "divideConquer.step3.title": "Automatically in sync",
   "divideConquer.step3.text": "A single change is instantly current everywhere. Double-booking is ruled out &mdash; with no manual upkeep at all.",
+
   "rulesCalendar.eyebrow": "Rules &amp; Calendar",
   "rulesCalendar.title": "A calendar for every reality",
   "rulesCalendar.text": "Public holidays and rules are a patchwork in Switzerland &mdash; they vary by canton, and sometimes even by municipality. Klacks masters exactly what simple tools fail at.",
@@ -80,6 +87,7 @@
   "rulesCalendar.imageLabel": "Public holiday rules",
   "rulesCalendar.imageAlt": "Public holiday rules in Klacks: holidays by nation and region – Germany, the US (Alaska), and the Swiss cantons of Lucerne, Jura, Glarus, and Appenzell",
   "rulesCalendar.imageCaption": "Real rules from Klacks: one list mixes public holidays from several countries and individual cantons &mdash; freely extendable.",
+
   "industries.eyebrow": "One platform, many industries",
   "industries.title": "Built for shift- and field-based operations",
   "industries.subtitle": "Wherever staff are scheduled in shifts, in the field, and by qualification &mdash; Klacks adapts to you, not the other way around.",
@@ -96,6 +104,7 @@
   "industries.logistik.text": "Routes, driving times, and cross-border operations under control.",
   "industries.klacksy.title": "Another industry?",
   "industries.klacksy.text": "Your operational rules &mdash; automatically factored into planning by Klacksy, no coding required.",
+
   "languages.title": "Multilingual from the ground up",
   "languages.text": "Four core languages out of the box &mdash; German, French, Italian, and English. Additional languages can be added as plugins, complete with geodata, calendar rules, and terminology for the AI assistant.",
   "languages.badge.de": "Deutsch",
@@ -103,6 +112,7 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ more via plugin",
+
   "getStarted.eyebrow": "Get started right away",
   "getStarted.title": "Try it. Download it. Get going.",
   "getStarted.subtitle": "No demo appointments, no sales calls: try Klacks right in your browser &mdash; or install it on your own server in a matter of minutes.",

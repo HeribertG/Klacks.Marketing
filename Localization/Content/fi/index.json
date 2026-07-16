@@ -10,12 +10,14 @@
   "hero.screenshotLabel": "Työvuorolista",
   "hero.screenshotAlt": "Klacksin työvuorolistanäkymä vuoroineen, ryhmineen ja työntekijöineen",
   "hero.screenshotCaption": "Kuvakaappaus on saksaksi — sovellus itsessään on saatavilla saksaksi, englanniksi, ranskaksi ja italiaksi.",
+
   "painPoints.item1.title": "Suunnittelu vie tunteja",
   "painPoints.item1.text": "Käsin tehdyt työvuorolistat vievät joka viikko tunteja. Yksi muutos laukaisee kymmenkunta seurannaisristiriitaa.",
   "painPoints.item2.title": "Vaatimustenmukaisuusriski",
   "painPoints.item2.text": "Lepoajat, pätevyydet, lisät, pyhäpäivät. Yksi huomaamatta jäänyt arvo muuttuu nopeasti kalliiksi virheeksi.",
   "painPoints.item3.title": "Pakollinen pilvi &amp; lukkiutuminen toimittajaan",
   "painPoints.item3.text": "Henkilötiedot vieraalla palvelimella, riippuvuus toimittajasta. Arkaluonteisilla toimialoilla tähän ei ole varaa.",
+
   "usp.eyebrow": "Lupaus",
   "usp.title": "Hallinta säilyy teillä.",
   "usp.subtitle": "Tiedoistanne, niitä käyttävästä tekoälystä ja säännöistänne. Kolme syytä, miksi Klacks eroaa jokaisesta pilviratkaisusta.",
@@ -28,9 +30,11 @@
   "usp.rules.label": "Sääntönne",
   "usp.rules.title": "Esikonfiguroitu &amp; itse muokattavissa",
   "usp.rules.text": "Säännöt, laskennat ja pyhäpäivät tulevat valmiiksi sovitettuina maallenne, alueellenne ja kunnallenne. Voitte muokata kaikkea itse &mdash; ilman konsulttipäiviä ja ilman seuraavan julkaisun odottamista.",
+
   "aiSynergy.eyebrow": "Yhdistelmä, jota tuskin kukaan muu tarjoaa",
   "aiSynergy.titleHtml": "Tekoäly <span class=\"text-tertiary-fixed\">ja</span> täysi tietosuvereniteetti. Samaan aikaan.",
   "aiSynergy.textHtml": "Klacksy voi toimia <strong class=\"text-white\">paikallisella kielimallilla</strong>. Tämä tarkoittaa avustajaa, joka laatii työvuorolistoja, luo työntekijätietoja ja ohjaa sovellusta puheella &mdash; ilman että yksikään henkilö- tai potilastieto poistuu talostanne. Juuri sitä, mitä sairaalat, kotihoito ja turvallisuusalan yritykset tarvitsevat.",
+
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Tekoälyavustajanne suunnitteluun",
   "klacksy.item1.title": "Ohjaus luonnollisella kielellä",
@@ -42,6 +46,7 @@
   "klacksy.item4.title": "Liitäntä ulkoisille tekoälyagenteille",
   "klacksy.item4.text": "Model Context Protocol -palvelimen kautta Klacksin voi yhdistää muihin tekoälytyökaluihin.",
   "klacksy.imageAlt": "Klacksy-tekoälyavustaja paneelina Klacksissa – mallinvalinnalla ja luonnollisen kielen ohjauksella",
+
   "autoPlanning.title": "Koneen tekemä suunnitelma",
   "autoPlanning.subtitle": "Evolutiivinen algoritmi tarkistaa tuhansia vaihtoehtoja sekunneissa ja löytää parhaan tasapainon kattavuuden, kustannusten ja tyytyväisyyden välillä.",
   "autoPlanning.item1.title": "Automaattinen suunnittelu yhdellä klikkauksella",
@@ -56,6 +61,7 @@
   "autoPlanning.item5.text": "Luonnoksesta vahvistetun ja hyväksytyn kautta valmiiksi. Jokainen vaihe lukitsee muokkauksen &mdash; ryhmäkohtaisin käyttöoikeuksin.",
   "autoPlanning.item6.title": "Interaktiivinen suunnitteluruudukko",
   "autoPlanning.item6.text": "Tehokas aikamatriisi: siirtäkää vuoroja Drag &amp; Drop -toiminnolla, muutokset näkyvät reaaliajassa kaikille osallisille.",
+
   "divideConquer.eyebrow": "Jaa ja hallitse",
   "divideConquer.title": "Suuret suunnitelmat pysyvät hallittavina",
   "divideConquer.subtitle": "Sen sijaan, että jonglaisitte yhtä sekavaa jättisuunnitelmaa, jaatte sen pieniin, selkeisiin osasuunnitelmiin &mdash; ja Klacks pitää kaiken automaattisesti yhtenäisenä.",
@@ -68,6 +74,7 @@
   "divideConquer.step3.label": "Vaihe 3",
   "divideConquer.step3.title": "Automaattisesti synkronoituna",
   "divideConquer.step3.text": "Muutos on heti ajan tasalla kaikkialla. Päällekkäisvaraukset ovat poissuljettuja &mdash; ilman jälkikäteistä ylläpitoa.",
+
   "rulesCalendar.eyebrow": "Säännöt &amp; kalenteri",
   "rulesCalendar.title": "Kalenteri jokaiseen todellisuuteen",
   "rulesCalendar.text": "Pyhäpäivät ja säännöt ovat Sveitsissä kirjava kokonaisuus &mdash; vaihtelevat kantoneittain, osin jopa kunnittain. Klacks hallitsee juuri sen, mihin yksinkertaiset työkalut kompastuvat.",
@@ -80,6 +87,7 @@
   "rulesCalendar.imageLabel": "Pyhäpäiväsäännöt",
   "rulesCalendar.imageAlt": "Pyhäpäiväsäännöt Klacksissa: pyhäpäivät maan ja alueen mukaan – Saksa, Yhdysvallat (Alaska) sekä Sveitsin kantonit Luzern, Jura, Glarus ja Appenzell",
   "rulesCalendar.imageCaption": "Todellisia sääntöjä Klacksista: yksi lista yhdistää useiden maiden ja yksittäisten kantonien pyhäpäivät &mdash; vapaasti laajennettavissa.",
+
   "industries.eyebrow": "Yksi alusta, monta toimialaa",
   "industries.title": "Rakennettu vuoro- ja kenttätyöyrityksille",
   "industries.subtitle": "Missä tahansa henkilöstöä suunnitellaan vuoroittain, kenttätyössä ja pätevyyden mukaan &mdash; Klacks mukautuu teihin, ei toisin päin.",
@@ -96,6 +104,7 @@
   "industries.logistik.text": "Reitit, ajoajat ja rajat ylittävät kuljetukset hallinnassa.",
   "industries.klacksy.title": "Toinen toimiala?",
   "industries.klacksy.text": "Yrityksenne omat säännöt &mdash; Klacksy ottaa ne automaattisesti huomioon suunnittelussa, ilman ohjelmointia.",
+
   "languages.title": "Monikielinen alusta lähtien",
   "languages.text": "Neljä ydinkieltä valmiina &mdash; saksa, ranska, italia ja englanti. Lisäkieliä voidaan lisätä laajennuksina, mukaan lukien paikkatiedot, kalenterisäännöt ja käsitteet tekoälyavustajaa varten.",
   "languages.badge.de": "Deutsch",
@@ -103,6 +112,7 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ lisää laajennuksina",
+
   "getStarted.eyebrow": "Heti käyntiin",
   "getStarted.title": "Kokeilkaa. Ladatkaa. Aloittakaa.",
   "getStarted.subtitle": "Ei demoaikoja, ei myyntipuheita: kokeilkaa Klacksia suoraan selaimessa &mdash; tai asentakaa se muutamassa minuutissa omalle palvelimellenne.",
