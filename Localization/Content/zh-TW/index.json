@@ -10,14 +10,12 @@
   "hero.screenshotLabel": "排班表",
   "hero.screenshotAlt": "Klacks 排班表格線，顯示班次、群組與員工",
   "hero.screenshotCaption": "畫面截圖為德文版本，應用程式介面目前僅提供德文、英文、法文及義大利文。",
-
   "painPoints.item1.title": "排班耗費大量時間",
   "painPoints.item1.text": "手動排班每週都要花上好幾個小時，一個異動就會引發一連串後續衝突。",
   "painPoints.item2.title": "合規風險",
   "painPoints.item2.text": "休息時間、資格要求、加給、國定假日——任何一項疏漏都可能演變成代價高昂的錯誤。",
   "painPoints.item3.title": "雲端綁定 &amp; 廠商鎖定",
   "painPoints.item3.text": "個人資料存放在他人伺服器上，且過度依賴單一廠商，這是敏感產業無法承受的風險。",
-
   "usp.eyebrow": "我們的承諾",
   "usp.title": "主控權始終在您手上。",
   "usp.subtitle": "掌控您的資料、背後的 AI，以及您的規則。這是 Klacks 與所有雲端方案不同的三大理由。",
@@ -30,11 +28,9 @@
   "usp.rules.label": "您的規則",
   "usp.rules.title": "預先設定 &amp; 完全可自訂",
   "usp.rules.text": "規則、計算方式與國定假日皆已針對您所在的國家、州（省）與市鎮預先設定完成。您可以自行調整所有內容 &mdash; 無需顧問協助，也無需等待下一次版本更新。",
-
   "aiSynergy.eyebrow": "少有廠商能同時提供的組合",
   "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">與</span>完整資料自主權，兩者兼備。",
   "aiSynergy.textHtml": "Klacksy 可以搭配<strong class=\"text-white\">地端語言模型</strong>運行。這代表：一個能建立排班表、新增員工資料，並以語音操作應用程式的助理 &mdash; 卻不會有任何一筆人事或病患資料離開您的機房。這正是醫院、居家照護與保全服務所需要的。",
-
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "您排班作業的 AI 助理",
   "klacksy.item1.title": "以自然語言操作",
@@ -46,7 +42,6 @@
   "klacksy.item4.title": "串接外部 AI 代理",
   "klacksy.item4.text": "透過模型上下文協定（MCP）伺服器，可將 Klacks 與其他 AI 工具串接。",
   "klacksy.imageAlt": "Klacksy AI 助理面板顯示於 Klacks 中，具備模型選擇與自然語言操作功能",
-
   "autoPlanning.title": "排班交給機器處理",
   "autoPlanning.subtitle": "演化演算法在幾秒內比對數千種組合，找出涵蓋率、成本與滿意度之間的最佳平衡。",
   "autoPlanning.item1.title": "一鍵自動排班",
@@ -61,7 +56,6 @@
   "autoPlanning.item5.text": "從草稿、已確認、已核准到已完成 &mdash; 每個階段都會鎖定編輯權限，並搭配以群組為基礎的存取權限。",
   "autoPlanning.item6.title": "互動式排班表格線",
   "autoPlanning.item6.text": "強大的時間矩陣：以拖放（drag &amp; drop）方式移動班次，異動會即時顯示給所有相關人員。",
-
   "divideConquer.eyebrow": "分而治之",
   "divideConquer.title": "再龐大的排班表也能井然有序",
   "divideConquer.subtitle": "與其操作一份難以掌控的巨型排班表，不如拆分成多份清楚的子排班表 &mdash; Klacks 會自動保持所有內容同步。",
@@ -74,7 +68,6 @@
   "divideConquer.step3.label": "步驟三",
   "divideConquer.step3.title": "自動同步",
   "divideConquer.step3.text": "任何異動都會立即在所有位置同步更新，完全排除重複排班的可能 &mdash; 不需要額外手動維護。",
-
   "rulesCalendar.eyebrow": "規則 &amp; 行事曆",
   "rulesCalendar.title": "為每一種情況打造的行事曆",
   "rulesCalendar.text": "瑞士的假日與規則猶如拼布 &mdash; 依州而異，有時甚至依市鎮而不同。Klacks 正好擅長處理簡易工具無法應付的複雜情況。",
@@ -87,7 +80,6 @@
   "rulesCalendar.imageLabel": "假日規則",
   "rulesCalendar.imageAlt": "Klacks 中的假日規則：依國家與地區顯示的假日——德國、美國（阿拉斯加）以及瑞士的琉森州、汝拉州、格拉魯斯州與阿彭策爾州",
   "rulesCalendar.imageCaption": "取自 Klacks 的真實規則：同一份清單可混合多個國家與個別州的假日 &mdash; 並可自由擴充。",
-
   "industries.eyebrow": "一個平台，多種產業",
   "industries.title": "專為輪班與外勤作業打造",
   "industries.subtitle": "無論人力是依班次、外勤或資格條件安排 &mdash; Klacks 都能配合您調整，而不是反過來要求您配合。",
@@ -102,7 +94,8 @@
   "industries.hausdienste.text": "據點路線與輪替團隊，高效率調度。",
   "industries.logistik.title": "物流",
   "industries.logistik.text": "路線、駕駛時間與跨境作業，一手掌握。",
-
+  "industries.klacksy.title": "其他行業？",
+  "industries.klacksy.text": "您的企業規則 &mdash; Klacksy 會自動納入排班考量，無需程式設計。",
   "languages.title": "從底層就支援多語言",
   "languages.text": "內建四種核心語言 &mdash; 德語、法語、義大利語與英語。其他語言可透過外掛新增，並包含對應的地理資料、行事曆規則與 AI 助理所需的專業術語。",
   "languages.badge.de": "Deutsch",
@@ -110,7 +103,6 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ 更多語言（外掛提供）",
-
   "getStarted.eyebrow": "立即開始",
   "getStarted.title": "試用。下載。立即上手。",
   "getStarted.subtitle": "不需預約展示，也沒有推銷話術：直接在瀏覽器中試用 Klacks &mdash; 或在幾分鐘內將它安裝到您自己的伺服器上。",

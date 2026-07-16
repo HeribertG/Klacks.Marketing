@@ -21,6 +21,7 @@ public static class CountryIndustries
         new CountryIndustry("security", "industries.security.title", "industries.security.text", "security"),
         new CountryIndustry("hausdienste", "industries.hausdienste.title", "industries.hausdienste.text", "cleaning_services"),
         new CountryIndustry("logistik", "industries.logistik.title", "industries.logistik.text", "local_shipping"),
+        new CountryIndustry("klacksy", "industries.klacksy.title", "industries.klacksy.text", "add_business"),
     };
 
     private static readonly IReadOnlyList<string> CountriesWithIndustries = new[]

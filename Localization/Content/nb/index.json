@@ -10,14 +10,12 @@
   "hero.screenshotLabel": "Vaktplan",
   "hero.screenshotAlt": "Klacks vaktplan-rutenett med vakter, grupper og ansatte",
   "hero.screenshotCaption": "Skjermbildet vises på tysk — selve appen er tilgjengelig på tysk, engelsk, fransk og italiensk.",
-
   "painPoints.item1.title": "Planlegging spiser tid",
   "painPoints.item1.text": "Å lage vaktplaner for hånd koster timer hver uke. Én endring utløser et dusin følgekonflikter.",
   "painPoints.item2.title": "Risiko for regelbrudd",
   "painPoints.item2.text": "Hviletid, kvalifikasjoner, tillegg, helligdager. Én oversett verdi blir fort en kostbar feil.",
   "painPoints.item3.title": "Tvunget sky &amp; leverandørbinding",
   "painPoints.item3.text": "Persondata på andres servere, avhengighet av én leverandør. Sensitive bransjer har ikke råd til det.",
-
   "usp.eyebrow": "Løftet",
   "usp.title": "Du beholder kontrollen.",
   "usp.subtitle": "Over dataene dine, over KI-en bak dem og over reglene dine. Tre grunner til at Klacks er annerledes enn enhver skyløsning.",
@@ -30,11 +28,9 @@
   "usp.rules.label": "Dine regler",
   "usp.rules.title": "Ferdig konfigurert &amp; fritt tilpassbar",
   "usp.rules.text": "Regler, beregninger og helligdager kommer ferdig tilpasset for ditt land, din region og din kommune. Du kan justere alt selv &mdash; uten konsulentdager og uten å vente på neste utgivelse.",
-
   "aiSynergy.eyebrow": "Kombinasjonen nesten ingen andre tilbyr",
   "aiSynergy.titleHtml": "KI <span class=\"text-tertiary-fixed\">og</span> full datasuverenitet. Samtidig.",
   "aiSynergy.textHtml": "Klacksy kan kjøre med en <strong class=\"text-white\">lokal språkmodell</strong>. Det betyr en assistent som lager vaktplaner, oppretter ansatte og styrer appen med stemmen &mdash; uten at et eneste person- eller pasientdatasett noen gang forlater huset ditt. Akkurat det sykehus, hjemmesykepleie og sikkerhetstjenester trenger.",
-
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Din KI-assistent for planlegging",
   "klacksy.item1.title": "Styring med naturlig språk",
@@ -46,7 +42,6 @@
   "klacksy.item4.title": "Tilkobling for eksterne KI-agenter",
   "klacksy.item4.text": "Via en Model-Context-Protocol-server kan Klacks kobles til andre KI-verktøy.",
   "klacksy.imageAlt": "Klacksy KI-assistent som panel i Klacks – med modellvalg og styring med naturlig språk",
-
   "autoPlanning.title": "Maskinen lager planen",
   "autoPlanning.subtitle": "En evolusjonær algoritme tester tusenvis av varianter på sekunder og finner den beste balansen mellom dekning, kostnad og trivsel.",
   "autoPlanning.item1.title": "Automatisk planlegging med ett klikk",
@@ -61,7 +56,6 @@
   "autoPlanning.item5.text": "Fra utkast via bekreftet og godkjent til avsluttet. Hvert trinn låser redigeringen &mdash; med gruppebaserte tilgangsrettigheter.",
   "autoPlanning.item6.title": "Interaktivt planrutenett",
   "autoPlanning.item6.text": "En kraftig tidsmatrise: flytt vakter med dra &amp; slipp, og endringer vises i sanntid hos alle involverte.",
-
   "divideConquer.eyebrow": "Del og hersk",
   "divideConquer.title": "Store planer forblir oversiktlige",
   "divideConquer.subtitle": "I stedet for å sjonglere én uoversiktlig kjempeplan, deler du den opp i små, oversiktlige delplaner &mdash; og Klacks holder automatisk alt sammen.",
@@ -74,7 +68,6 @@
   "divideConquer.step3.label": "Trinn 3",
   "divideConquer.step3.title": "Automatisk synkronisert",
   "divideConquer.step3.text": "En endring er umiddelbart oppdatert overalt. Dobbeltbooking er utelukket &mdash; helt uten manuelt etterarbeid.",
-
   "rulesCalendar.eyebrow": "Regler &amp; kalender",
   "rulesCalendar.title": "En kalender for enhver virkelighet",
   "rulesCalendar.text": "Helligdager og regler er et lappeteppe i Sveits &mdash; ulike fra kanton til kanton, til dels også fra kommune til kommune. Klacks mestrer nettopp det enkle verktøy strander på.",
@@ -87,7 +80,6 @@
   "rulesCalendar.imageLabel": "Regler for helligdager",
   "rulesCalendar.imageAlt": "Regler for helligdager i Klacks: helligdager per nasjon og region – Tyskland, USA (Alaska) samt de sveitsiske kantonene Luzern, Jura, Glarus og Appenzell",
   "rulesCalendar.imageCaption": "Ekte regler fra Klacks: én liste blander helligdager fra flere land og enkeltkantoner &mdash; fritt utvidbar.",
-
   "industries.eyebrow": "Én plattform, mange bransjer",
   "industries.title": "Bygget for turnus- og oppdragsvirksomheter",
   "industries.subtitle": "Overalt der personell planlegges i turnus, i felt og etter kvalifikasjon &mdash; Klacks tilpasser seg deg, ikke omvendt.",
@@ -102,7 +94,8 @@
   "industries.hausdienste.text": "Objektruter og skiftende team effektivt fordelt.",
   "industries.logistik.title": "Logistikk",
   "industries.logistik.text": "Ruter, kjøretid og grensekryssende oppdrag under kontroll.",
-
+  "industries.klacksy.title": "En annen bransje?",
+  "industries.klacksy.text": "Deres interne regler &mdash; Klacksy tar automatisk hensyn til dem i planleggingen, helt uten programmering.",
   "languages.title": "Flerspråklig fra grunnen av",
   "languages.text": "Fire kjernespråk fra fabrikk &mdash; tysk, fransk, italiensk og engelsk. Flere språk kan legges til som plugins, komplett med geodata, kalenderregler og begreper for KI-assistenten.",
   "languages.badge.de": "Deutsch",
@@ -110,7 +103,6 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ flere som plugin",
-
   "getStarted.eyebrow": "Kom rett i gang",
   "getStarted.title": "Prøv. Last ned. Kom i gang.",
   "getStarted.subtitle": "Ingen demoavtaler, ingen salgssamtaler: Prøv Klacks direkte i nettleseren &mdash; eller installer det på din egen server på få minutter.",

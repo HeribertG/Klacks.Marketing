@@ -10,14 +10,12 @@
   "hero.screenshotLabel": "排班表",
   "hero.screenshotAlt": "Klacks 排班表界面,展示班次、分组与员工",
   "hero.screenshotCaption": "此截图为德语界面。Klacks 应用目前仅提供德语、英语、法语和意大利语版本。",
-
   "painPoints.item1.title": "排班耗费大量时间",
   "painPoints.item1.text": "手工排班每周都要耗费大量时间,一处改动就会引发一连串后续冲突。",
   "painPoints.item2.title": "合规风险",
   "painPoints.item2.text": "休息时间、资质、津贴、法定假日。一处疏漏就可能酿成代价高昂的错误。",
   "painPoints.item3.title": "云端强制 &amp; 供应商锁定",
   "painPoints.item3.text": "个人数据存放在第三方服务器上,依赖单一供应商。敏感行业承担不起这样的风险。",
-
   "usp.eyebrow": "我们的承诺",
   "usp.title": "主导权始终在您手中。",
   "usp.subtitle": "掌控您的数据、背后的 AI,以及您的规则。这是 Klacks 有别于任何云端方案的三大理由。",
@@ -30,11 +28,9 @@
   "usp.rules.label": "您的规则",
   "usp.rules.title": "预先配置 &amp; 自由调整",
   "usp.rules.text": "规则、计算方式和法定假日均已针对您所在的国家、州和市镇预先配置完成。您可以自行调整一切 &mdash; 无需咨询顾问,也无需等待下一个版本发布。",
-
   "aiSynergy.eyebrow": "几乎无人能提供的组合",
   "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">与</span>完全的数据自主权。二者兼得。",
   "aiSynergy.textHtml": "Klacksy 可以在<strong class=\"text-white\">本地语言模型</strong>上运行。也就是说:一个能创建排班表、录入员工信息并以语音操控应用的助手 &mdash; 不会有任何一条人员或患者数据离开您的企业。这正是医院、居家护理机构和安保企业所需要的。",
-
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "您的排班 AI 助手",
   "klacksy.item1.title": "自然语言操控",
@@ -46,7 +42,6 @@
   "klacksy.item4.title": "支持外部 AI 智能体接入",
   "klacksy.item4.text": "通过 Model Context Protocol(模型上下文协议)服务器,Klacks 可与其他 AI 工具互联。",
   "klacksy.imageAlt": "Klacksy AI 助手面板界面,支持模型选择与自然语言操控",
-
   "autoPlanning.title": "把排班交给机器完成",
   "autoPlanning.subtitle": "进化算法在数秒内比对数千种方案,在覆盖率、成本与满意度之间找到最佳平衡。",
   "autoPlanning.item1.title": "一键自动排班",
@@ -61,7 +56,6 @@
   "autoPlanning.item5.text": "从草稿到已确认、已批准,直至已完成。每个阶段都会锁定编辑权限 &mdash; 并配合基于分组的访问权限。",
   "autoPlanning.item6.title": "交互式排班表",
   "autoPlanning.item6.text": "强大的时间矩阵:通过拖放(Drag &amp; Drop)移动班次,所有改动实时呈现给每一位相关人员。",
-
   "divideConquer.eyebrow": "分而治之",
   "divideConquer.title": "大型排班依然井然有序",
   "divideConquer.subtitle": "与其在一份庞杂的总排班表中疲于应对,不如将其拆分为清晰的小型子排班表 &mdash; Klacks 会自动保持整体同步。",
@@ -74,7 +68,6 @@
   "divideConquer.step3.label": "第三步",
   "divideConquer.step3.title": "自动同步",
   "divideConquer.step3.text": "任何改动都会立即在各处生效。重复排班从此杜绝 &mdash; 完全无需人工维护。",
-
   "rulesCalendar.eyebrow": "规则 &amp; 日历",
   "rulesCalendar.title": "为每一种现实情况准备的日历",
   "rulesCalendar.text": "在瑞士,法定假日和相关规则错综复杂 &mdash; 各州各不相同,有时甚至精确到市镇。Klacks 恰恰擅长处理简单工具无法应对的这类复杂情况。",
@@ -87,7 +80,6 @@
   "rulesCalendar.imageLabel": "法定假日规则",
   "rulesCalendar.imageAlt": "Klacks 中的法定假日规则:按国家和地区划分的假日 — 德国、美国(阿拉斯加州)以及瑞士的卢塞恩州、汝拉州、格拉鲁斯州和阿彭策尔州",
   "rulesCalendar.imageCaption": "来自 Klacks 的真实规则:一份列表混合了多个国家及个别州的法定假日 &mdash; 可自由扩展。",
-
   "industries.eyebrow": "一个平台,覆盖多个行业",
   "industries.title": "专为轮班与外勤企业打造",
   "industries.subtitle": "无论员工按班次、外勤方式还是资质进行排班 &mdash; 都是 Klacks 适应您,而非相反。",
@@ -102,7 +94,8 @@
   "industries.hausdienste.text": "场所路线与轮换团队,高效安排。",
   "industries.logistik.title": "物流",
   "industries.logistik.text": "路线、驾驶时间与跨境作业,尽在掌握。",
-
+  "industries.klacksy.title": "其他行业？",
+  "industries.klacksy.text": "您的企业规则 &mdash; Klacksy 会自动纳入排班考虑，无需编程。",
   "languages.title": "从底层就支持多语言",
   "languages.text": "开箱即用支持四种核心语言 &mdash; 德语、法语、意大利语和英语。更多语言可作为插件添加,并附带地理数据、日历规则及 AI 助手所需的专业术语。",
   "languages.badge.de": "Deutsch",
@@ -110,7 +103,6 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ 更多插件语言",
-
   "getStarted.eyebrow": "即刻开始",
   "getStarted.title": "试用。下载。上手。",
   "getStarted.subtitle": "无需预约演示,也没有销售环节:直接在浏览器中试用 Klacks &mdash; 或在几分钟内将其安装到您自己的服务器上。",

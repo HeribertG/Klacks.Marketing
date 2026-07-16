@@ -10,14 +10,12 @@
   "hero.screenshotLabel": "Cuadrante",
   "hero.screenshotAlt": "Cuadrante de turnos de Klacks con turnos, grupos y personal",
   "hero.screenshotCaption": "Captura de pantalla en alemán — la aplicación de Klacks está disponible en alemán, inglés, francés e italiano.",
-
   "painPoints.item1.title": "La planificación devora horas",
   "painPoints.item1.text": "Elaborar los horarios a mano cuesta horas cada semana. Un solo cambio desencadena una decena de conflictos en cadena.",
   "painPoints.item2.title": "Riesgo de incumplimiento",
   "painPoints.item2.text": "Periodos de descanso, cualificaciones, recargos, días festivos. Un dato pasado por alto se convierte rápidamente en un error costoso.",
   "painPoints.item3.title": "Nube obligatoria &amp; dependencia del proveedor",
   "painPoints.item3.text": "Datos personales en servidores ajenos, dependencia de un único proveedor. Los sectores sensibles no pueden permitírselo.",
-
   "usp.eyebrow": "La promesa",
   "usp.title": "Usted mantiene el control.",
   "usp.subtitle": "Sobre sus datos, sobre la IA que hay detrás y sobre sus reglas. Tres razones por las que Klacks es diferente de cualquier solución en la nube.",
@@ -30,11 +28,9 @@
   "usp.rules.label": "Sus reglas",
   "usp.rules.title": "Preconfiguradas &amp; totalmente personalizables",
   "usp.rules.text": "Las reglas, los cálculos y los días festivos vienen preconfigurados según su país, su cantón y su municipio. Usted mismo puede ajustarlo todo &mdash; sin días de consultoría y sin esperar a la próxima versión.",
-
   "aiSynergy.eyebrow": "La combinación que casi nadie ofrece",
   "aiSynergy.titleHtml": "IA <span class=\"text-tertiary-fixed\">y</span> plena soberanía de datos. Al mismo tiempo.",
   "aiSynergy.textHtml": "Klacksy puede funcionar con un <strong class=\"text-white\">modelo de lenguaje local</strong>. Es decir: un asistente que crea horarios, da de alta a empleados y controla la aplicación por voz &mdash; sin que un solo dato de personal o de paciente salga de su empresa. Exactamente lo que necesitan los hospitales, los servicios de atención domiciliaria y las empresas de seguridad.",
-
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Su asistente de IA para la planificación",
   "klacksy.item1.title": "Control mediante lenguaje natural",
@@ -46,7 +42,6 @@
   "klacksy.item4.title": "Conexión para agentes de IA externos",
   "klacksy.item4.text": "Mediante un servidor Model Context Protocol, Klacks puede conectarse con otras herramientas de IA.",
   "klacksy.imageAlt": "Asistente de IA Klacksy como panel en Klacks: con selección de modelo y control mediante lenguaje natural",
-
   "autoPlanning.title": "El horario lo hace la máquina",
   "autoPlanning.subtitle": "Un algoritmo evolutivo evalúa miles de variantes en segundos y encuentra el mejor equilibrio entre cobertura, coste y satisfacción.",
   "autoPlanning.item1.title": "Planificación automática en un clic",
@@ -61,7 +56,6 @@
   "autoPlanning.item5.text": "De Borrador a Confirmado y Aprobado, hasta Finalizado. Cada etapa bloquea la edición &mdash; con permisos de acceso basados en grupos.",
   "autoPlanning.item6.title": "Cuadrante interactivo",
   "autoPlanning.item6.text": "Una potente matriz temporal: mueva los turnos con Drag &amp; Drop y los cambios aparecen en tiempo real para todos los implicados.",
-
   "divideConquer.eyebrow": "Divide y vencerás",
   "divideConquer.title": "Los grandes horarios siguen siendo manejables",
   "divideConquer.subtitle": "En lugar de manejar un enorme horario confuso, divídalo en pequeños subplanes claros &mdash; y Klacks lo mantiene todo sincronizado automáticamente.",
@@ -74,7 +68,6 @@
   "divideConquer.step3.label": "Paso 3",
   "divideConquer.step3.title": "Sincronización automática",
   "divideConquer.step3.text": "Un cambio se actualiza de inmediato en todas partes. Las dobles reservas quedan excluidas &mdash; sin ningún mantenimiento manual.",
-
   "rulesCalendar.eyebrow": "Reglas &amp; calendario",
   "rulesCalendar.title": "Un calendario para cada realidad",
   "rulesCalendar.text": "En Suiza, los días festivos y las reglas son un auténtico mosaico &mdash; varían por cantón, a veces incluso por municipio. Klacks domina precisamente aquello con lo que las herramientas simples fracasan.",
@@ -87,7 +80,6 @@
   "rulesCalendar.imageLabel": "Reglas de días festivos",
   "rulesCalendar.imageAlt": "Reglas de días festivos en Klacks: festivos por país y región – Alemania, Estados Unidos (Alaska) y los cantones suizos de Lucerna, Jura, Glaris y Appenzell",
   "rulesCalendar.imageCaption": "Reglas reales de Klacks: una lista combina días festivos de varios países y cantones concretos &mdash; ampliable libremente.",
-
   "industries.eyebrow": "Una plataforma, muchos sectores",
   "industries.title": "Diseñado para empresas de turnos y servicios externos",
   "industries.subtitle": "Allí donde el personal se planifica por turnos, en servicios externos y según cualificación &mdash; es Klacks quien se adapta, no al revés.",
@@ -102,7 +94,8 @@
   "industries.hausdienste.text": "Rutas entre instalaciones y equipos rotativos organizados con eficiencia.",
   "industries.logistik.title": "Logística",
   "industries.logistik.text": "Rutas, tiempos de conducción y servicios transfronterizos bajo control.",
-
+  "industries.klacksy.title": "¿Otro sector?",
+  "industries.klacksy.text": "Sus normas internas &mdash; Klacksy las tiene en cuenta automáticamente en la planificación, sin necesidad de programar.",
   "languages.title": "Multilingüe desde su base",
   "languages.text": "Cuatro idiomas principales de fábrica &mdash; alemán, francés, italiano e inglés. Se pueden añadir más idiomas como plugins, incluidos datos geográficos, reglas de calendario y terminología para el asistente de IA.",
   "languages.badge.de": "Deutsch",
@@ -110,7 +103,6 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ más como plugin",
-
   "getStarted.eyebrow": "Empiece de inmediato",
   "getStarted.title": "Pruebe. Descargue. Empiece.",
   "getStarted.subtitle": "Sin citas de demostración ni conversaciones de venta: pruebe Klacks directamente en el navegador &mdash; o instálelo en pocos minutos en su propio servidor.",

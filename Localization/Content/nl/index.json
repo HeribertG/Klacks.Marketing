@@ -10,14 +10,12 @@
   "hero.screenshotLabel": "Dienstrooster",
   "hero.screenshotAlt": "Klacks dienstroosterraster met diensten, groepen en medewerkers",
   "hero.screenshotCaption": "Schermafbeelding in het Duits — de applicatie zelf is beschikbaar in het Duits, Engels, Frans en Italiaans.",
-
   "painPoints.item1.title": "Planning kost uren",
   "painPoints.item1.text": "Dienstroosters met de hand opstellen kost elke week uren. Eén wijziging leidt tot een dozijn vervolgconflicten.",
   "painPoints.item2.title": "Compliancerisico",
   "painPoints.item2.text": "Rusttijden, kwalificaties, toeslagen, feestdagen. Eén over het hoofd geziene waarde wordt al snel een kostbare fout.",
   "painPoints.item3.title": "Cloudverplichting &amp; lock-in",
   "painPoints.item3.text": "Persoonsgegevens op servers van derden, afhankelijkheid van de leverancier. Gevoelige branches kunnen zich dat niet veroorloven.",
-
   "usp.eyebrow": "De belofte",
   "usp.title": "U behoudt de controle.",
   "usp.subtitle": "Over uw gegevens, over de AI erachter en over uw regels. Drie redenen waarom Klacks anders is dan elke cloudoplossing.",
@@ -30,11 +28,9 @@
   "usp.rules.label": "Uw regels",
   "usp.rules.title": "Vooraf geconfigureerd &amp; zelf aan te passen",
   "usp.rules.text": "Regels, berekeningen en feestdagen zijn afgestemd op uw land, uw kanton, uw gemeente. U past alles zelf aan &mdash; zonder adviesdagen en zonder te wachten op de volgende release.",
-
   "aiSynergy.eyebrow": "De combinatie die bijna niemand biedt",
   "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">en</span> volledige datasoevereiniteit. Tegelijkertijd.",
   "aiSynergy.textHtml": "Klacksy kan draaien met een <strong class=\"text-white\">lokaal taalmodel</strong>. Dat betekent: een assistent die dienstroosters opstelt, medewerkers aanmaakt en de app met de stem bedient &mdash; zonder dat ook maar één personeels- of patiëntgegeven uw pand verlaat. Precies wat ziekenhuizen, thuiszorg en beveiligingsdiensten nodig hebben.",
-
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Uw AI-assistent voor de planning",
   "klacksy.item1.title": "Bediening in natuurlijke taal",
@@ -46,7 +42,6 @@
   "klacksy.item4.title": "Koppeling voor externe AI-agenten",
   "klacksy.item4.text": "Via een Model Context Protocol-server kan Klacks worden gekoppeld aan andere AI-tools.",
   "klacksy.imageAlt": "Klacksy AI-assistent als paneel in Klacks – met modelkeuze en bediening in natuurlijke taal",
-
   "autoPlanning.title": "De machine maakt het rooster",
   "autoPlanning.subtitle": "Een evolutionair algoritme toetst duizenden varianten in seconden en vindt de beste balans tussen dekking, kosten en tevredenheid.",
   "autoPlanning.item1.title": "Automatische planning met één klik",
@@ -61,7 +56,6 @@
   "autoPlanning.item5.text": "Van concept via bevestigd en goedgekeurd tot afgerond. Elke fase vergrendelt de bewerking &mdash; met groepsgebaseerde toegangsrechten.",
   "autoPlanning.item6.title": "Interactief roosterraster",
   "autoPlanning.item6.text": "Een krachtige tijdmatrix: diensten verplaatsen met slepen &amp; neerzetten, wijzigingen verschijnen in realtime bij alle betrokkenen.",
-
   "divideConquer.eyebrow": "Verdeel en heers",
   "divideConquer.title": "Grote roosters blijven overzichtelijk",
   "divideConquer.subtitle": "In plaats van te jongleren met één onoverzichtelijk megarooster, verdeelt u het in kleine, overzichtelijke deelroosters &mdash; en Klacks houdt automatisch alles synchroon.",
@@ -74,7 +68,6 @@
   "divideConquer.step3.label": "Stap 3",
   "divideConquer.step3.title": "Automatisch synchroon",
   "divideConquer.step3.text": "Een wijziging is meteen overal actueel. Dubbele boekingen zijn uitgesloten &mdash; volledig zonder handmatig bijwerken.",
-
   "rulesCalendar.eyebrow": "Regels &amp; kalender",
   "rulesCalendar.title": "Een kalender voor elke realiteit",
   "rulesCalendar.text": "Feestdagen en regels vormen in Zwitserland een lappendeken &mdash; ze verschillen per kanton en soms zelfs per gemeente. Klacks beheerst precies dat waarop eenvoudige tools stuklopen.",
@@ -87,7 +80,6 @@
   "rulesCalendar.imageLabel": "Feestdagregels",
   "rulesCalendar.imageAlt": "Feestdagregels in Klacks: feestdagen per land en regio – Duitsland, VS (Alaska) en de Zwitserse kantons Luzern, Jura, Glarus en Appenzell",
   "rulesCalendar.imageCaption": "Echte regels uit Klacks: één lijst combineert feestdagen van meerdere landen en afzonderlijke kantons &mdash; vrij uit te breiden.",
-
   "industries.eyebrow": "Eén platform, veel branches",
   "industries.title": "Gebouwd voor ploegendiensten en operationele teams",
   "industries.subtitle": "Overal waar personeel in diensten, buiten op locatie en op basis van kwalificatie wordt ingepland &mdash; Klacks past zich aan, niet andersom.",
@@ -102,7 +94,8 @@
   "industries.hausdienste.text": "Objectroutes en wisselende teams efficiënt ingedeeld.",
   "industries.logistik.title": "Logistiek",
   "industries.logistik.text": "Routes, rijtijden en grensoverschrijdende inzet onder controle.",
-
+  "industries.klacksy.title": "Andere branche?",
+  "industries.klacksy.text": "Uw eigen bedrijfsregels &mdash; door Klacksy automatisch meegenomen in de planning, zonder programmeren.",
   "languages.title": "Meertalig vanaf de basis",
   "languages.text": "Vier kerntalen standaard aanwezig &mdash; Duits, Frans, Italiaans en Engels. Extra talen kunnen als plugins worden toegevoegd, inclusief geodata, kalenderregels en terminologie voor de AI-assistent.",
   "languages.badge.de": "Deutsch",
@@ -110,7 +103,6 @@
   "languages.badge.it": "Italiano",
   "languages.badge.en": "English",
   "languages.badge.more": "+ meer via plugin",
-
   "getStarted.eyebrow": "Direct aan de slag",
   "getStarted.title": "Testen. Downloaden. Aan de slag.",
   "getStarted.subtitle": "Geen demo-afspraken, geen verkoopgesprekken: probeer Klacks direct in de browser &mdash; of installeer het binnen enkele minuten op uw eigen server.",

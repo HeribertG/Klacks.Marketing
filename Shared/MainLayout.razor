@@ -406,9 +406,11 @@
     // active culture and the active country. The route uses a slash (not the
     // hyphenated content key).
     private string IndustryHref(string slug)
-        => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
-            ? $"/{CurrentCountryPageKey}/{slug}"
-            : $"/{CurrentCultureRecord.UrlSlug}/{CurrentCountryPageKey}/{slug}";
+        => slug == "klacksy"
+            ? KlacksyHref
+            : CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+                ? $"/{CurrentCountryPageKey}/{slug}"
+                : $"/{CurrentCultureRecord.UrlSlug}/{CurrentCountryPageKey}/{slug}";
 
     // The active industry slug derived from the raw path, since ResolveCurrentPage
     // collapses "/land-ch/spitex" to the "land-ch" page key and cannot report the
