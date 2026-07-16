@@ -13,7 +13,7 @@
         </a>
         <div class="hidden md:flex items-center gap-8">
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")">@Sh("nav.solution")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("klacksy")">@Sh("nav.klacksy")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")">@ShHtml("nav.rules")</a>
             @if (ShowIndustryMenu)
             {
@@ -92,7 +92,7 @@
 
     <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") glass-nav border-t border-surface-container-high px-8 py-6 flex flex-col gap-5">
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("klacksy")" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
+        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
         @if (ShowIndustryMenu)
         {
@@ -352,6 +352,7 @@
     private SupportedCulture CurrentCultureRecord => SupportedCultures.All.First(c => c.Code == ResolveCurrentPage().Culture);
 
     private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/land-ch" : $"/{CurrentCultureRecord.UrlSlug}";
+    private string KlacksyHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/klacksy" : $"/{CurrentCultureRecord.UrlSlug}/klacksy";
 
     // The raw current relative path (culture + full page key incl. any industry
     // sub-page slug), without fragment/query. Empty string on the site root.

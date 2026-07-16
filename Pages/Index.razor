@@ -312,7 +312,7 @@
         <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Ix("industries.title")</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto">@IxHtml("industries.subtitle")</p>
     </div>
-    <div class="reveal-stagger grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <div class="reveal-stagger grid md:grid-cols-3 gap-6">
         <a href="@IndustryHref("spitex")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">home_health</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.spitex.title")</h4>
@@ -341,6 +341,12 @@
             <span class="material-symbols-outlined text-secondary text-3xl mb-4">local_shipping</span>
             <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.logistik.title")</h4>
             <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.logistik.text")</p>
+            <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
+        </a>
+        <a href="@IndustryHref("klacksy")" class="card-hover p-6 bg-surface-container-lowest rounded-2xl flex flex-col items-start group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all no-underline">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4">add_business</span>
+            <h4 class="text-base font-bold text-primary mb-2">@Ix("industries.klacksy.title")</h4>
+            <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@IxHtml("industries.klacksy.text")</p>
             <span class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-auto">@Ix("industries.moreLabel") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></span>
         </a>
     </div>
