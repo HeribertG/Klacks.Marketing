@@ -41,6 +41,12 @@ public static class SitemapGenerator
         "land-id/spitex", "land-id/spitaeler", "land-id/security", "land-id/hausdienste", "land-id/logistik",
         "land-th/spitex", "land-th/spitaeler", "land-th/security", "land-th/hausdienste", "land-th/logistik",
         "land-vn/spitex", "land-vn/spitaeler", "land-vn/security", "land-vn/hausdienste", "land-vn/logistik",
+        "land-ae/klacksy", "land-at/klacksy", "land-be/klacksy", "land-ch/klacksy", "land-cn/klacksy",
+        "land-cz/klacksy", "land-de/klacksy", "land-dk/klacksy", "land-es/klacksy", "land-fi/klacksy",
+        "land-fr/klacksy", "land-gb/klacksy", "land-gr/klacksy", "land-id/klacksy", "land-ie/klacksy",
+        "land-il/klacksy", "land-it/klacksy", "land-jp/klacksy", "land-kr/klacksy", "land-my/klacksy",
+        "land-nl/klacksy", "land-no/klacksy", "land-pl/klacksy", "land-pt/klacksy", "land-ro/klacksy",
+        "land-sa/klacksy", "land-se/klacksy", "land-th/klacksy", "land-tw/klacksy", "land-vn/klacksy",
     };
 
     public static string Build(string baseUrl)

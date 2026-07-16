@@ -37,11 +37,9 @@
     // Builds "/land-ch/<slug>" (or "/<culture>/land-ch/<slug>") so both the active
     // culture and the active country are preserved when switching branches.
     private string IndustryHref(string slug)
-        => slug == "klacksy"
-            ? (Culture == SupportedCultures.DefaultCode ? "/klacksy" : $"/{Culture}/klacksy")
-            : Culture == SupportedCultures.DefaultCode
-                ? $"/{CountryPageKey}/{slug}"
-                : $"/{Culture}/{CountryPageKey}/{slug}";
+        => Culture == SupportedCultures.DefaultCode
+            ? $"/{CountryPageKey}/{slug}"
+            : $"/{Culture}/{CountryPageKey}/{slug}";
 
     private string Ix(string key) => ContentProvider.GetText(Culture, "index", key);
 

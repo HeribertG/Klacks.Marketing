@@ -352,7 +352,20 @@
     private SupportedCulture CurrentCultureRecord => SupportedCultures.All.First(c => c.Code == ResolveCurrentPage().Culture);
 
     private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/land-ch" : $"/{CurrentCultureRecord.UrlSlug}";
-    private string KlacksyHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/klacksy" : $"/{CurrentCultureRecord.UrlSlug}/klacksy";
+    // Keeps the active country when navigating to Klacksy from a country page
+    // (so the back-link/language-/country-switcher there stay meaningful); falls
+    // back to the generic, country-less page anywhere else (e.g. the plain
+    // homepage variants of non-default cultures).
+    private string KlacksyHref
+    {
+        get
+        {
+            var suffix = IsOnCountryPage ? $"{CurrentCountryPageKey}/klacksy" : "klacksy";
+            return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+                ? $"/{suffix}"
+                : $"/{CurrentCultureRecord.UrlSlug}/{suffix}";
+        }
+    }
 
     // The raw current relative path (culture + full page key incl. any industry
     // sub-page slug), without fragment/query. Empty string on the site root.
@@ -406,11 +419,9 @@
     // active culture and the active country. The route uses a slash (not the
     // hyphenated content key).
     private string IndustryHref(string slug)
-        => slug == "klacksy"
-            ? KlacksyHref
-            : CurrentCultureRecord.Code == SupportedCultures.DefaultCode
-                ? $"/{CurrentCountryPageKey}/{slug}"
-                : $"/{CurrentCultureRecord.UrlSlug}/{CurrentCountryPageKey}/{slug}";
+        => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+            ? $"/{CurrentCountryPageKey}/{slug}"
+            : $"/{CurrentCultureRecord.UrlSlug}/{CurrentCountryPageKey}/{slug}";
 
     // The active industry slug derived from the raw path, since ResolveCurrentPage
     // collapses "/land-ch/spitex" to the "land-ch" page key and cannot report the
