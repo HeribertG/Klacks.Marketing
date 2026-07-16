@@ -1,0 +1,41 @@
+{
+  "pageTitle": "Klacksy: Der KI-Assistent, der Ihre betrieblichen Regeln lernt | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Für alle Branchen &middot; KI-Assistent",
+    "titleHtml": "Klacksy: Der KI-Assistent, <span class=\"text-secondary\">der Ihre betrieblichen Regeln lernt.</span>",
+    "subtitle": "Keine generische KI von der Stange. Steuern Sie Tonalität, Autonomie und Fachvokabular für einen Schichtplan-Assistenten, der sich exakt an Ihre Vorgaben hält &mdash; regelbasiert, nachvollziehbar, in Ihrer Hand.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksy KI-Assistent in der Klacks-Dienstplanung",
+    "screenshotLabel": "Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Das Problem mit generischer KI",
+    "title": "Blackbox-Chatbots ohne betriebliche Kontrolle",
+    "items": [
+      { "icon": "psychology_alt", "title": "Generische KI kennt Ihre Regeln nicht", "text": "Standard-Chatbots wissen nichts von Ihren Betriebsvereinbarungen, Qualifikationsanforderungen oder branchenspezifischen Vorschriften &mdash; jede Antwort ist ein Blindflug." },
+      { "icon": "visibility_off", "title": "Unklarer Handlungsspielraum", "text": "Bei vielen KI-Tools ist unklar, was die KI selbstständig verändern darf und was nicht &mdash; ein Risiko, sobald echte Dienstpläne betroffen sind." },
+      { "icon": "record_voice_over", "title": "Fremde Sprache, fremde Abkürzungen", "text": "Firmeninterne Kürzel und Fachbegriffe versteht eine generische KI nicht &mdash; jede Anfrage muss erst umständlich erklärt werden." }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacksy sich Ihrem Betrieb anpasst",
+    "subtitle": "Vier Stellschrauben, mit denen Sie Klacksy zu Ihrem Assistenten machen.",
+    "items": [
+      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Firmenregel einfach im Chat &mdash; etwa &bdquo;Nachtzuschlag 25% ab 23 Uhr&ldquo;. Klacksy fragt gezielt nach, bis alle Pflichtangaben vollständig und geprüft sind, zeigt eine Vorschau des Ergebnisses und speichert erst nach Ihrer ausdrücklichen Bestätigung &mdash; jederzeit nachvollziehbar im Regel-Register und rückgängig machbar." },
+      { "icon": "tune", "title": "Autonomie selbst bestimmen", "text": "Über vier einstellbare Stufen legen Sie fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen dabei immer Ihre Bestätigung." },
+      { "icon": "face", "title": "Persönlichkeit anpassen", "text": "Über den Persönlichkeits-Editor bestimmen Sie Tonalität und Charakter von Klacksy &mdash; passend zu Ihrer Unternehmenskultur." },
+      { "icon": "translate", "title": "Fachvokabular trainieren", "text": "Klacksy lernt Ihre betriebsspezifischen Abkürzungen und Formulierungen, damit Anfragen auf Anhieb richtig verstanden werden." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Pflegedienst stellt Klacksy auf sein Team ein",
+    "text": "Die Leitung setzt die Autonomie-Stufe auf „schlägt vor, fragt nach\" für alle Planungsänderungen, passt Ton und Wortwahl im Persönlichkeits-Editor an die eigene Unternehmenskultur an und trainiert Klacksy auf die im Haus üblichen Abkürzungen. Schon heute reagiert der Assistent entsprechend &mdash; ganz ohne Programmierung."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacksy in Aktion erleben",
+    "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, Persönlichkeit und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}
