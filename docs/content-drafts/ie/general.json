@@ -13,21 +13,62 @@
     "eyebrow": "Der Planungsalltag in irischen Betrieben",
     "title": "OWTA, Banded Hours und die Frage nach der Datenhoheit",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit nach OWTA im Blick behalten", "text": "Der Organisation of Working Time Act 1997 begrenzt die Arbeitszeit im Schnitt auf 48 Stunden pro Woche, Referenzzeitraum standardmässig 4 Monate. Eine Verlängerung auf 6 Monate ist nur für bestimmte Tätigkeiten wie Security oder Gesundheitswesen vorgesehen &mdash; von Hand ist das fehleranfällig." },
-      { "icon": "campaign", "title": "Banded Hours &amp; Schichtankündigung", "text": "Mitarbeitende können nach Section 18A OWTA eine Einstufung in ein Stundenband beantragen, wenn ihre Vertragsstunden nicht der Realität entsprechen; der Arbeitgeber hat dafür 4 Wochen Zeit. Zusätzlich verlangt Section 17 OWTA bei nicht fixem Dienstplan mindestens 24 Stunden Vorankündigung von Start- und Endzeiten." },
-      { "icon": "cloud_off", "title": "Datenhoheit statt Drittland-Cloud", "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen." }
+      {
+        "icon": "gavel",
+        "title": "Wochenhöchstarbeitszeit nach OWTA im Blick behalten",
+        "text": "Der Organisation of Working Time Act 1997 begrenzt die Arbeitszeit im Schnitt auf 48 Stunden pro Woche, Referenzzeitraum standardmässig 4 Monate. Eine Verlängerung auf 6 Monate ist nur für bestimmte Tätigkeiten wie Security oder Gesundheitswesen vorgesehen &mdash; von Hand ist das fehleranfällig."
+      },
+      {
+        "icon": "campaign",
+        "title": "Banded Hours &amp; Schichtankündigung",
+        "text": "Mitarbeitende können nach Section 18A OWTA eine Einstufung in ein Stundenband beantragen, wenn ihre Vertragsstunden nicht der Realität entsprechen; der Arbeitgeber hat dafür 4 Wochen Zeit. Zusätzlich verlangt Section 17 OWTA bei nicht fixem Dienstplan mindestens 24 Stunden Vorankündigung von Start- und Endzeiten."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Datenhoheit statt Drittland-Cloud",
+        "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen."
+      }
     ]
   },
   "solutions": {
     "title": "Wie Klacks irische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks berechnet die 48-Stunden-Durchschnittsgrenze über den nach OWTA Section 15 massgeblichen Referenzzeitraum &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen." },
-      { "icon": "bedtime", "title": "Ruhezeiten automatisch eingehalten", "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst." },
-      { "icon": "campaign", "title": "Schichtankündigung mit 24 Stunden Vorlauf", "text": "Klacks stellt sicher, dass Start- und Endzeiten bei nicht fixem Dienstplan mindestens 24 Stunden im Voraus feststehen, wie es Section 17 OWTA verlangt." },
-      { "icon": "fact_check", "title": "Banded-Hours-Anträge dokumentiert", "text": "Klacks hält die tatsächlich geleisteten Stunden über 12 Monate fest, damit ein Antrag auf Banded Hours nach Section 18A OWTA innerhalb der 4-Wochen-Frist sauber beantwortet werden kann." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+      {
+        "icon": "gavel",
+        "title": "Wochenhöchstarbeitszeit automatisch überwacht",
+        "text": "Klacks berechnet die 48-Stunden-Durchschnittsgrenze über den nach OWTA Section 15 massgeblichen Referenzzeitraum &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeiten automatisch eingehalten",
+        "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Verstösse entstehen gar nicht erst."
+      },
+      {
+        "icon": "campaign",
+        "title": "Schichtankündigung mit 24 Stunden Vorlauf",
+        "text": "Klacks stellt sicher, dass Start- und Endzeiten bei nicht fixem Dienstplan mindestens 24 Stunden im Voraus feststehen, wie es Section 17 OWTA verlangt."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Banded-Hours-Anträge dokumentiert",
+        "text": "Klacks hält die tatsächlich geleisteten Stunden über 12 Monate fest, damit ein Antrag auf Banded Hours nach Section 18A OWTA innerhalb der 4-Wochen-Frist sauber beantwortet werden kann."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die gesetzlichen Ruhezeiten und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {
