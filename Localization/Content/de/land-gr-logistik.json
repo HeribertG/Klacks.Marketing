@@ -24,9 +24,9 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "fact_check", "title": "ERGANI-konform ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht der Phase B." },
-      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen; die ERGANI-Meldung selbst bleibt bei Ihnen." },
+      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt oder blockiert, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, Block mit dokumentierter Vorgesetzten-Freigabe überschreibbar); die ERGANI-Meldung selbst bleibt bei Ihnen." },
       { "icon": "timer", "title": "Nachtgrenze für Fahrpersonal überwacht", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäß RL 2002/15/EG / P.D. 167/2006 wird für mobiles Transportpersonal automatisch überwacht." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Läuft ein Pflicht-Nachweis dennoch ab, lässt sich die Zuteilung auf Wunsch hart blockieren." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Plane die Touren für morgen, ein Fahrer fällt aus“ genügt &mdash; Klacksy rechnet alles neu, inklusive Zuschläge und Nachtgrenze." }
     ]
   },

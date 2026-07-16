@@ -42,12 +42,17 @@
       {
         "icon": "bedtime",
         "title": "8-Stunden-Ruhe automatisch geprüft",
-        "text": "Klacks erkennt, wenn zwischen zwei Diensten weniger als 8 Stunden liegen, und warnt vor der ungewollten Zusammenlegung zu einem Arbeitstag mit Überstundenfolge."
+        "text": "Klacks erkennt, wenn zwischen zwei Diensten weniger als 8 Stunden liegen, und warnt vor der ungewollten Zusammenlegung zu einem Arbeitstag mit Überstundenfolge. Auf Wunsch blockiert Klacks solche Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "nights_stay",
         "title": "Nachtschicht-Zuschlag automatisch berechnet",
-        "text": "Klacks erkennt Nachtschichten und rechnet Stunden über der eingerichteten Grenze automatisch mit 125 % bzw. 150 % Zuschlag ab &mdash; ganz ohne eigenes Nachrechnen."
+        "text": "Klacks erkennt Nachtschichten in einem frei konfigurierbaren Zeitfenster &mdash; Start und Ende lassen sich exakt auf 22:00&ndash;06:00 wie gesetzlich vorgesehen einstellen &mdash; und rechnet Stunden über der eingerichteten 7-Stunden-Grenze automatisch mit 125 % bzw. 150 % Zuschlag ab &mdash; ganz ohne eigenes Nachrechnen."
+      },
+      {
+        "icon": "badge",
+        "title": "Pflichtnachweise automatisch geprüft",
+        "text": "Klacks warnt rechtzeitig, bevor ein Pflichtnachweis (etwa eine Wach- oder Sicherheitslizenz) abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt."
       },
       {
         "icon": "route",
