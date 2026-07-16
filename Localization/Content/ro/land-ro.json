@@ -26,7 +26,7 @@
       {
         "icon": "event_repeat",
         "title": "Repaus de 48 de ore &amp; spor de 150%",
-        "text": "Perioada săptămânală de repaus de 48 de ore consecutive se acordă, de regulă, sâmbăta/duminica (Art. 137). Dacă nu este acordată în mod consecvent, potrivit Deciziei ICCJ nr. 415/2025 se aplică un spor de 150% la salariul de bază &mdash; independent de orele suplimentare."
+        "text": "Perioada săptămânală de repaus de 48 de ore consecutive se acordă, de regulă, sâmbăta/duminica (Art. 137). Pentru cazul special reglementat de lege &mdash; repausul acordat cumulat după cel mult 14 zile de activitate continuă, cu autorizarea prealabilă a ITM și acordul organizației sindicale sau al reprezentanților salariaților &mdash; potrivit Deciziei ÎCCJ nr. 415/2025 (art. 137 alin. 5) se aplică un spor de 150% la salariul de bază &mdash; indiferent dacă orele prestate depășesc sau nu durata normală a timpului de lucru."
       }
     ]
   },
@@ -72,7 +72,7 @@
       {
         "icon": "event_repeat",
         "title": "Repaus de 48 de ore &amp; sporul ICCJ sub control",
-        "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și semnalează sporul de 150% datorat separat, conform Deciziei ICCJ nr. 415/2025. La cerere, Klacks blochează consecvent o nouă încălcare a repausului săptămânal: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
+        "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și face acest lucru vizibil pentru fiecare persoană. Pentru cazul special reglementat de lege al repausului cumulat după cel mult 14 zile de activitate continuă, este disponibil un spor de 150% configurabil separat, conform Deciziei ÎCCJ nr. 415/2025. La cerere, Klacks blochează consecvent o nouă încălcare a repausului săptămânal: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
       },
       {
         "icon": "schedule",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Amânarea repausului și sporul, dintr-o privire",
-    "text": "Klacks indică automat atunci când o amânare a repausului săptămânal declanșează sporul de 150% conform Deciziei ICCJ nr. 415/2025 și îl calculează separat de plata orelor suplimentare."
+    "text": "Klacks indică automat atunci când repausul săptămânal este amânat sau nu este acordat sâmbăta/duminica și pune la dispoziție, pentru cazul special reglementat conform Deciziei ÎCCJ nr. 415/2025, un spor de 150% separat &mdash; distinct de plata orelor suplimentare."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -26,7 +26,7 @@
       {
         "icon": "event_repeat",
         "title": "48-Stunden-Ruhezeit &amp; 150%-Zuschlag",
-        "text": "Das wöchentliche Ruhefenster von 48 zusammenhängenden Stunden gilt in der Regel Samstag/Sonntag (Art. 137). Wird es nicht konsequent gewährt, greift laut ICCJ-Entscheidung Nr. 415/2025 ein Zuschlag von 150% auf den Grundlohn &mdash; unabhängig von Überstunden."
+        "text": "Das wöchentliche Ruhefenster von 48 zusammenhängenden Stunden gilt in der Regel Samstag/Sonntag (Art. 137). Für den gesetzlichen Sonderfall &mdash; kumulierte Ruhezeit nach bis zu 14 Tagen ununterbrochener Arbeit, mit vorheriger ITM-Genehmigung und Zustimmung von Gewerkschaft oder Arbeitnehmervertretung &mdash; greift laut ICCJ-Entscheidung Nr. 415/2025 (Art. 137 Abs. 5) ein Zuschlag von 150% auf den Grundlohn &mdash; unabhängig davon, ob die geleisteten Stunden die normale Arbeitszeit übersteigen."
       }
     ]
   },
@@ -72,7 +72,7 @@
       {
         "icon": "event_repeat",
         "title": "48-Stunden-Ruhezeit &amp; ICCJ-Zuschlag im Blick",
-        "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und weist auf den gesondert geschuldeten 150%-Zuschlag nach ICCJ Nr. 415/2025 hin. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Wochenruhe konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und macht das für jede Person sichtbar. Für den gesetzlichen Sonderfall der kumulierten Ruhezeit nach bis zu 14 Tagen Dauerarbeit steht ein eigener, konfigurierbarer 150%-Zuschlag nach ICCJ Nr. 415/2025 zur Verfügung. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Wochenruhe konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "schedule",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ruhezeit-Verschiebung und Zuschlag, ein Blick",
-    "text": "Klacks zeigt automatisch, wenn eine Verschiebung der wöchentlichen Ruhezeit den 150%-Zuschlag nach ICCJ Nr. 415/2025 auslöst, und rechnet ihn getrennt von der Überstundenvergütung."
+    "text": "Klacks zeigt automatisch, wenn die wöchentliche Ruhezeit verschoben oder nicht an Samstag/Sonntag gewährt wird, und stellt für den Sonderfall der kumulierten Ruhezeit nach ICCJ Nr. 415/2025 einen eigenen 150%-Zuschlag bereit &mdash; getrennt von der Überstundenvergütung."
   },
   "showRoutePlanning": false,
   "cta": {
