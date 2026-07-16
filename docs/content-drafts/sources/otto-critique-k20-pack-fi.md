@@ -63,3 +63,36 @@ healthcare, fehlende eigenständige Poliisihallitus-Zulassung bei security (mit 
 
 **Datei geändert:** `Klacks.Api/deploy/onprem/regions/fi.json` (Sektionen
 `industryProfiles.healthcare.qualificationCatalog`, `industryProfiles.security.qualificationCatalog`)
+
+---
+
+## Nachtrag 2026-07-16: Globaler Rolling-Cap ergänzt — bewusst KEIN Überstunden-Cap
+
+Im Zuge der Nachrüstung der gesetzlichen Überstunden-Caps für SE/NO (neues Engine-Feature
+`PeriodCapScope.OvertimeHours`) wurde auch `fi.json` geprüft. Ergebnis: Finnland bekommt **keinen**
+`overtimeHours`-Cap, sondern einen globalen Rolling-Average-Cap in `compliance.periodCaps`:
+
+| Neuer Cap | Rechtsgrundlage |
+|---|---|
+| `{ "windowWeeks": 17, "maxAverageWeeklyHours": 48 }` | Työaikalaki 872/2019 §18 — Gesamtarbeitszeit **inkl. Überstunden** im Schnitt max **48 h/Woche über 4 Monate** (≈17 Wochen) |
+
+Quelle (Primärquelle, Gesetzestext): https://www.finlex.fi/en/legislation/2019/872
+(Bestätigung u. a. EK-Anwendungsleitfaden: https://ek.fi/wp-content/uploads/Uusi-tyoaikalaki-soveltamisohje.pdf)
+
+**Warum Rolling-Cap statt overtimeHours-Cap:** Das Arbeitszeitgesetz 872/2019 hat die alten
+absoluten Überstunden-Obergrenzen des Vorgängergesetzes 605/1996 (138 h/4 Monate, 250 h/Jahr)
+**abgeschafft**. §18 des geltenden Gesetzes kennt nur noch eine Maximalgrenze der
+GESAMT-Arbeitszeit einschließlich Überstunden: im Durchschnitt 48 h/Woche über einen
+4-Monats-Bezugszeitraum (per Tarifvertrag auf bis zu 12 Monate verlängerbar). Das ist strukturell
+ein Rolling-Average-Cap über alle Stunden, kein Cap auf die Überstunden-Teilmenge — ein
+`scope: "overtimeHours"`-Eintrag wäre eine Erfindung einer nicht (mehr) existierenden Rechtsnorm.
+Die konservative 17-Wochen-Abbildung der 4 Monate folgt derselben Rundungslogik wie bei DK/SE.
+
+Der branchengebundene SOTE-Cap (Jaksotyöaika, 3 Wochen / Ø40 h in homecare/healthcare) bleibt
+unverändert bestehen; der neue globale 17-W-Cap greift zusätzlich für alle Branchen.
+
+Verifikationsstatus: unabhängig gegen die Primärquelle (Finlex 872/2019 §18) verifiziert. Ottos
+Web-Recherche ist wieder funktionsfähig (Gegencheck zu SE ATL §8 lieferte deckungsgleiche Werte),
+Otto dient wieder als Zweitmeinung.
+
+**Datei geändert:** `Klacks.Api/deploy/onprem/regions/fi.json` (Sektion `compliance.periodCaps`, neu angelegt)

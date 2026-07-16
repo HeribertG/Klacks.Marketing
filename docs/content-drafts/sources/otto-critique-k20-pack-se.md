@@ -54,3 +54,38 @@ gefunden und behoben: die Länsstyrelsen-Personenzulassung fehlte als eigenstän
 und war mit der BYA-Ausbildung vermischt — beide wurden sauber getrennt.
 
 **Datei geändert:** `Klacks.Api/deploy/onprem/regions/se.json` (Sektion `industryProfiles.security.qualificationCatalog`)
+
+---
+
+## Nachtrag 2026-07-16: Gesetzliche Überstunden-Caps ergänzt (PeriodCapScope.OvertimeHours)
+
+Mit der Fertigstellung des Engine-Features `PeriodCapScope.OvertimeHours` (inkl. importierbarem
+`period: "customWeeks"`) wurde die bisher als "nicht abbildbar" dokumentierte Lücke
+(k20-country-pack-authoring-lessons, "Perioden-/Jahres-Überstunden-Caps") für Schweden geschlossen.
+In `compliance.periodCaps` von `se.json` wurden zwei Einträge ergänzt:
+
+| Neuer Cap | Rechtsgrundlage |
+|---|---|
+| `{ "period": "year", "scope": "overtimeHours", "capHours": 200 }` | Arbetstidslag (1982:673) §8 — allmän övertid max **200 h pro Kalenderjahr** |
+| `{ "period": "month", "scope": "overtimeHours", "capHours": 50 }` | Arbetstidslag (1982:673) §8 — allmän övertid max **50 h pro Kalendermonat** |
+
+Quelle (Primärquelle, Gesetzestext):
+https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/arbetstidslag-1982673_sfs-1982-673/
+
+**Warum die 48h/4-Wochen-Alternative NICHT als eigener Cap abgebildet ist:** ATL §8 formuliert die
+kurzperiodische Grenze als Alternative — "högst 48 timmar ... under en tid av fyra veckor **eller**
+50 timmar under en kalendermånad". Es handelt sich also um EINE Grenze mit zwei zulässigen
+Bemessungsvarianten, nicht um zwei kumulative Grenzen. Abgebildet wird die
+Kalendermonat-Variante (50 h/Monat); würde man zusätzlich 48 h/4 Wochen als eigenen Cap eintragen,
+würde das Preset kumulativ strenger warnen als das Gesetz verlangt. Bewusster Entscheid: nie
+strenger als die gesetzliche Grundregel warnen.
+
+Der bestehende Rolling-Cap (17 Wochen / Ø48 h, EU-Arbeitszeitrichtlinie) bleibt unverändert daneben
+bestehen — er deckelt die GESAMT-Arbeitszeit im Schnitt, die neuen Einträge deckeln ausschließlich
+die Überstunden oberhalb des Vertragssolls (`scope: "overtimeHours"`).
+
+Verifikationsstatus: Zahlen unabhängig gegen die Primärquelle (Riksdagen-Gesetzestext) verifiziert.
+Ottos Web-Recherche ist wieder funktionsfähig; Gegencheck durch Otto zu SE §8 ergab deckungsgleiche
+Werte (200 h/Jahr, 50 h/Monat, 48 h/4 W als Alternative).
+
+**Datei geändert:** `Klacks.Api/deploy/onprem/regions/se.json` (Sektion `compliance.periodCaps`)

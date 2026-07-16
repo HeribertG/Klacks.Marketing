@@ -71,3 +71,32 @@ bewusst OFFEN, da beide denkbaren Korrekturen eine Produktentscheidung außerhal
 Fact-Check-Scopes erfordern.
 
 **Datei geändert:** `Klacks.Api/deploy/onprem/regions/no.json` (Sektion `industryProfiles.security.qualificationCatalog`)
+
+---
+
+## Nachtrag 2026-07-16: Gesetzliche Überstunden-Caps ergänzt (PeriodCapScope.OvertimeHours + customWeeks)
+
+Mit der Fertigstellung des Engine-Features `PeriodCapScope.OvertimeHours` inkl. `period:
+"customWeeks"` (trailing Fenster von N Wochen) wurde die bisher als "nicht abbildbar" dokumentierte
+Lücke (k20-country-pack-authoring-lessons, "Perioden-/Jahres-Überstunden-Caps") für Norwegen
+geschlossen. `compliance` in `no.json` hat neu ein `periodCaps`-Array mit drei Einträgen:
+
+| Neuer Cap | Rechtsgrundlage |
+|---|---|
+| `{ "period": "customWeeks", "customPeriodWeeks": 1, "scope": "overtimeHours", "capHours": 10 }` | Arbeidsmiljøloven §10-6 (4) — Überstunden max **10 h pro 7 Tage** |
+| `{ "period": "customWeeks", "customPeriodWeeks": 4, "scope": "overtimeHours", "capHours": 25 }` | Arbeidsmiljøloven §10-6 (4) — max **25 h pro 4 zusammenhängende Wochen** |
+| `{ "period": "customWeeks", "customPeriodWeeks": 52, "scope": "overtimeHours", "capHours": 200 }` | Arbeidsmiljøloven §10-6 (4) — max **200 h pro 52 Wochen** |
+
+Quelle (Primärquelle, Gesetzestext): https://lovdata.no/dokument/NL/lov/2005-06-17-62/KAPITTEL_11
+
+Abgebildet ist bewusst die **Grundregel** des §10-6 (4). §10-6 (5) erlaubt per schriftlicher
+Tarifvereinbarung erweiterte Grenzen (bis 20 h/7 Tage, 50 h/4 Wochen, 300 h/52 Wochen) — das ist eine
+betriebs-/tarifindividuelle Erweiterung, kein gesetzlicher Default, und gehört damit nicht ins
+Länder-Preset (Kunden mit Tarifvereinbarung passen die importierten Cap-Zeilen an; der Import ist
+idempotent und überschreibt kundeneditierten Zeilen nie).
+
+Verifikationsstatus: Zahlen unabhängig gegen die Primärquelle (Lovdata-Gesetzestext §10-6) verifiziert.
+Ottos Web-Recherche ist wieder funktionsfähig (Gegencheck zu SE ATL §8 lieferte deckungsgleiche
+Werte), Otto dient wieder als Zweitmeinung.
+
+**Datei geändert:** `Klacks.Api/deploy/onprem/regions/no.json` (Sektion `compliance.periodCaps`, neu angelegt)
