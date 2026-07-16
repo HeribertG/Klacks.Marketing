@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Wie Klacks schwedische Betriebe entlastet",
-    "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zum PAXML-Export &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
@@ -66,8 +66,8 @@
       },
       {
         "icon": "timer",
-        "title": "Überstundengrenzen live überwacht",
-        "text": "Die Grenzen von 48 Stunden je 4 Wochen bzw. 50 Stunden je Monat und höchstens 200 Stunden je Jahr nach ATL § 8 überwacht Klacks live und warnt, bevor ein Grenzwert kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "title": "Allmän övertid live überwacht",
+        "text": "Die allmän övertid-Grenzen nach ATL § 8 &mdash; 50 Stunden je Kalendermonat und höchstens 200 Stunden je Jahr &mdash; zählt Klacks automatisch mit und warnt, bevor ein Grenzwert kippt; die alternative Grenze von 48 Stunden je 4 Wochen lässt sich stattdessen als rollierendes 4-Wochen-Fenster hinterlegen. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
       },
       {
         "icon": "bedtime",
@@ -75,9 +75,9 @@
         "text": "Die 11-stündige zusammenhängende Ruhezeit nach ATL § 13 plant Klacks automatisch mit ein &mdash; das Fenster Mitternacht bis 05:00 Uhr bleibt dabei im Plan sichtbar."
       },
       {
-        "icon": "route",
-        "title": "Einsätze automatisch optimiert",
-        "text": "Klacks legt Einsätze und Touren so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar."
+        "icon": "receipt_long",
+        "title": "PAXML-Export",
+        "text": "Lohn-Bewegungsdaten &mdash; Stunden je Lohnart (lönart) und zugeordnete Abwesenheiten &mdash; gehen im schwedischen PAXML-Format direkt an Ihr Lohnsystem, ohne Doppelerfassung."
       },
       {
         "icon": "how_to_reg",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila und Überstundengrenze, ein Blick",
-    "text": "Klacks warnt automatisch, wenn eine Schicht die 11-Stunden-dygnsvila unterschreiten würde, und überwacht die Jahressumme gegen die 200-Überstunden-Grenze live &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt automatisch, wenn eine Schicht die 11-Stunden-dygnsvila unterschreiten würde, und zählt Monats- und Jahressumme der allmän övertid gegen die 50- und 200-Stunden-Grenzen mit &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

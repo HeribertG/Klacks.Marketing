@@ -37,7 +37,7 @@
     "items": [
       { "icon": "gavel", "title": "Alle tre arbeidstidsregimer konfigurerbart lagt inn", "text": "Klacks legger inn riktig AML-ukesgrense for hver vaktplan &mdash; 40, 38 eller 36 timer &mdash;, avhengig av om det er døgnkontinuerlig, søndags-/helligdags-toskift eller helkontinuerlig turnus; tilordningen fastsetter du én gang per kontrakt eller gruppe." },
       { "icon": "event_available", "title": "14-dagersfristen for publisering sjekkes automatisk", "text": "Klacks sjekker automatisk ved publisering om vaktplanen overholder den lagrede minimumsfristen &mdash; 14-dagersfristen etter § 10-3 legger du inn som regel, og Klacks varsler før en plan ville blitt publisert for sent." },
-      { "icon": "timer", "title": "Overtidsgrenser overvåket", "text": "De lovbestemte grensene etter § 10-6 &mdash; 10 timer/7 dager, 25 timer/4 uker, 200 timer/12 måneder &mdash; samt tillegget på minst 40 % overvåker Klacks fortløpende og varsler i god tid før overskridelser. På forespørsel blokkerer Klacks overskridelsen strengt &mdash; en overtredelse kan da bare lagres med en dokumentert godkjenning fra overordnet." },
+      { "icon": "timer", "title": "Tre rullerende overtidsgrenser, overvåket parallelt", "text": "De tre grensene etter arbeidsmiljøloven § 10-6 (4) &mdash; 10 timer per 7 dager, 25 timer per 4 uker og 200 timer per 52 uker &mdash; teller Klacks parallelt som rullerende vinduer per person og varsler i god tid før en av de tre grensene vipper; tillegget på minst 40 % viser Klacks automatisk. På forespørsel blokkerer Klacks overskridelsen strengt &mdash; en overtredelse kan da bare lagres med en dokumentert godkjenning fra overordnet." },
       { "icon": "route", "title": "Ruter &amp; oppdrag optimert automatisk", "text": "Klacks legger oppdrag og ruter slik at veier blir korte og tidsvinduer overholdes &mdash; kan brukes på tvers av bransjer." },
       { "icon": "shield_lock", "title": "On-Premise: ingen biometrisk skyregistrering", "text": "Klacks kjører på din egen infrastruktur, helt uten tvang til fingeravtrykk- eller ansiktsgjenkjenningstjenester i skyen &mdash; i tråd med Personopplysningsloven og Datatilsynets retningslinjer." },
       { "icon": "smart_toy", "title": "Klacksy: regelbasert, ingen svart boks", "text": "Den integrerte KI-assistenten Klacksy planlegger via talekommando &mdash; etterprøvbart ut fra lagrede skills og regler, og KI-modellen kan i tillegg hostes lokalt." }
@@ -58,6 +58,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Opplev Klacks i din bedrift",
-    "text": "Prøv i Playground hvordan Klacks avbilder AML-arbeidstidsregimer, sjekker automatisk 14-dagersfristen for publisering og overvåker overtidsgrenser &mdash; On-Premise eller i Playground, gratis og uten registrering."
+    "text": "Prøv i Playground hvordan Klacks avbilder AML-arbeidstidsregimer, sjekker automatisk 14-dagersfristen for publisering og teller alle tre rullerende overtidsgrenser parallelt &mdash; On-Premise eller i Playground, gratis og uten registrering."
   }
 }

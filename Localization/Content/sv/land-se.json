@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks svenska verksamheter",
-    "subtitle": "Från den automatiska kollektivavtalsavvikelsen till den egna infrastrukturen &mdash; allt hänger ihop.",
+    "subtitle": "Från den automatiska kollektivavtalsavvikelsen till PAXML-exporten &mdash; allt hänger ihop.",
     "items": [
       {
         "icon": "gavel",
@@ -66,8 +66,8 @@
       },
       {
         "icon": "timer",
-        "title": "Övertidsgränser övervakas live",
-        "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad och högst 200 timmar per år enligt ATL § 8 övervakar Klacks live och varnar innan ett gränsvärde överskrids. På begäran blockerar Klacks överskridandet helt &mdash; en ny överträdelse kan då bara sparas med dokumenterat godkännande från arbetsledningen."
+        "title": "Allmän övertid övervakas live",
+        "text": "Gränserna för allmän övertid enligt ATL § 8 &mdash; 50 timmar per kalendermånad och högst 200 timmar per år &mdash; räknar Klacks automatiskt och varnar innan ett gränsvärde överskrids; den alternativa gränsen på 48 timmar per 4 veckor kan i stället läggas in som ett rullande 4-veckorsfönster. På begäran blockerar Klacks överskridandet helt &mdash; en ny överträdelse kan då bara sparas med dokumenterat godkännande från arbetsledningen."
       },
       {
         "icon": "bedtime",
@@ -75,9 +75,9 @@
         "text": "Den 11 timmar långa sammanhängande vilotiden enligt ATL § 13 planerar Klacks automatiskt in &mdash; tidsfönstret midnatt till 05.00 förblir samtidigt synligt i schemat."
       },
       {
-        "icon": "route",
-        "title": "Uppdrag optimeras automatiskt",
-        "text": "Klacks lägger uppdrag och rutter så att vägar blir korta och tidsfönster hålls &mdash; användbart oavsett bransch."
+        "icon": "receipt_long",
+        "title": "PAXML-export",
+        "text": "Lönetransaktioner &mdash; timmar per lönart och tillhörande frånvaro &mdash; går i det svenska PAXML-formatet direkt till ert lönesystem, utan dubbelregistrering."
       },
       {
         "icon": "how_to_reg",
@@ -101,7 +101,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila och övertidsgräns, en överblick",
-    "text": "Klacks varnar automatiskt när ett pass riskerar att understiga den 11-timmars dygnsvilan, och övervakar årssumman mot 200-timmarsgränsen för övertid live &mdash; utan manuell efterräkning."
+    "text": "Klacks varnar automatiskt när ett pass riskerar att understiga den 11-timmars dygnsvilan, och räknar månads- och årssumman av allmän övertid mot 50- respektive 200-timmarsgränserna &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {

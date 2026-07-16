@@ -62,7 +62,7 @@
       {
         "icon": "gavel",
         "title": "Periodarbete &amp; övertid beräknas automatiskt",
-        "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %."
+        "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %. Samtidigt övervakar Klacks arbetstidslagens totalgräns: sedan 2020 finns ingen fast övertidskvot längre &mdash; avgörande är ett genomsnitt på högst 48 timmar per vecka inklusive övertid under den fyra månader långa utjämningsperioden, och just det räknar Klacks rullande."
       },
       {
         "icon": "bedtime",
@@ -106,6 +106,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Upplev Klacks i din finländska verksamhet",
-    "text": "Testa i Playground hur Klacks automatiserar periodarbete, vilotider och tidsfristen för arbetsschemat &mdash; on-premise eller i Playground, gratis och utan registrering."
+    "text": "Testa i Playground hur Klacks automatiserar periodarbete, vilotider och tidsfristen för arbetsschemat och löpande räknar 48-timmarsgenomsnittet per vecka &mdash; on-premise eller i Playground, gratis och utan registrering."
   }
 }
