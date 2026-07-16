@@ -137,6 +137,10 @@
                 }
                 <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.Klacksy.Title)</h2>
                 <p class="text-on-surface-variant leading-relaxed">@((MarkupString)Content.Klacksy.Text)</p>
+                @if (!string.Equals(PageKey, "klacksy", StringComparison.OrdinalIgnoreCase))
+                {
+                    <a href="@KlacksyPageHref" class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-6 no-underline">@Sh("nav.learnMore") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></a>
+                }
             </div>
             <div class="lg:col-span-6">
                 <MagnifiedImage Src="@($"images/{Content.Klacksy.ImageFile}")" Alt="@Content.Klacksy.ImageAlt" Caption="@Content.Klacksy.ImageCaption" />
@@ -236,6 +240,7 @@
     }
     private string PageHref => Culture == SupportedCultures.DefaultCode ? $"/{EffectiveRoutePath}" : $"/{Culture}/{EffectiveRoutePath}";
     private string DownloadHref => $"{PageHref}#download";
+    private string KlacksyPageHref => Culture == SupportedCultures.DefaultCode ? "/klacksy" : $"/{Culture}/klacksy";
 
     private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
 }
