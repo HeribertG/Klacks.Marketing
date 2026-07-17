@@ -31,20 +31,25 @@
     <link href="css/rtl.css" rel="stylesheet" asp-append-version="true" />
 </head>
 <body class="font-['Inter'] bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-    <div class="min-h-screen flex flex-col">
+    <div class="min-h-screen flex flex-col relative overflow-hidden">
         <header class="px-6 pt-6 md:px-10 md:pt-8">
             <div class="inline-flex items-center gap-2">
                 <img src="images/klacks-logo.svg" class="w-8 h-8" alt="Klacks Logo" />
                 <span class="text-2xl font-black tracking-tighter text-black">Klacks</span>
             </div>
         </header>
-        <main class="flex-1 flex items-center justify-center px-6 py-16">
-            <div class="max-w-xl text-center">
+        <main class="flex-1 flex items-center justify-center px-6 py-12">
+            @* The figure fills the viewport behind the text; at 10% it reads as a
+               backdrop rather than competing with the headline. *@
+            <img src="images/404-illustration.svg" alt="" class="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none select-none" />
+            @* min-w-0: flex items default to min-width:auto and would grow past the
+               viewport instead of wrapping the headline on narrow screens. *@
+            <div class="relative min-w-0 max-w-2xl w-full text-center">
                 <div class="inline-block px-3 py-1 bg-surface-container-high rounded-full mb-6">
                     <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh("notFound.badge")</span>
                 </div>
                 <h1 class="text-[2.5rem] md:text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">@Sh("notFound.title")</h1>
-                <p class="text-xl text-on-surface-variant mb-10 leading-relaxed">@Sh("notFound.text")</p>
+                <p class="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-xl mx-auto">@Sh("notFound.text")</p>
                 <a href="@homeHref" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
                     @Sh("notFound.button") <span class="material-symbols-outlined icon-directional">arrow_forward</span>
                 </a>
