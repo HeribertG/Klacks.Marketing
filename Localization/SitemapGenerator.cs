@@ -6,7 +6,10 @@ public static class SitemapGenerator
 {
     private static readonly string[] PageKeys =
     {
-        "", "spitex", "spitaeler", "security", "hausdienste", "logistik", "klacksy",
+        // Every page exists only under a country; the country-less variants
+        // (including the homepages) are legacy redirects (LegacyProductRoutes) and
+        // are not listed here. The country-scoped legal pages are appended by
+        // AllPageKeys.
         "land-de", "land-at", "land-fr", "land-it", "land-ch",
         "land-ch/spitex", "land-ch/spitaeler", "land-ch/security", "land-ch/hausdienste", "land-ch/logistik",
         "land-de/spitex", "land-de/spitaeler", "land-de/security", "land-de/hausdienste", "land-de/logistik",
@@ -49,6 +52,10 @@ public static class SitemapGenerator
         "land-sa/klacksy", "land-se/klacksy", "land-th/klacksy", "land-tw/klacksy", "land-vn/klacksy",
     };
 
+    // The legal pages are country-scoped like everything else, but their content is
+    // company-wide — so they are generated per country rather than hand-listed.
+    private static readonly string[] LegalSlugs = { "impressum", "datenschutz" };
+
     public static string Build(string baseUrl)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
@@ -60,20 +67,39 @@ public static class SitemapGenerator
         {
             foreach (var culture in SupportedCultures.All)
             {
-                sb.AppendLine("  <url>");
-                sb.AppendLine($"    <loc>{BuildUrl(trimmedBase, culture, pageKey)}</loc>");
+                AppendUrl(sb, trimmedBase, culture, _ => pageKey);
+            }
+        }
 
-                foreach (var altCulture in SupportedCultures.All)
-                {
-                    sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{altCulture.Code}\" href=\"{BuildUrl(trimmedBase, altCulture, pageKey)}\" />");
-                }
-
-                sb.AppendLine("  </url>");
+        // The legal pages are reachable under every country, but their content is
+        // identical everywhere and their canonical URL is the culture's default
+        // country (SeoHead.SameForEveryCountry). Listing only that one keeps the
+        // sitemap free of ~1500 duplicates of the same two documents.
+        foreach (var slug in LegalSlugs)
+        {
+            foreach (var culture in SupportedCultures.All)
+            {
+                AppendUrl(sb, trimmedBase, culture, target => $"{LanguageCountries.DefaultCountryFor(target.Code)}/{slug}");
             }
         }
 
         sb.AppendLine("</urlset>");
         return sb.ToString();
+    }
+
+    // pageKeyFor resolves the page key per culture, since a page can live under a
+    // different country depending on the language.
+    private static void AppendUrl(StringBuilder sb, string baseUrl, SupportedCulture culture, Func<SupportedCulture, string> pageKeyFor)
+    {
+        sb.AppendLine("  <url>");
+        sb.AppendLine($"    <loc>{BuildUrl(baseUrl, culture, pageKeyFor(culture))}</loc>");
+
+        foreach (var altCulture in SupportedCultures.All)
+        {
+            sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{altCulture.Code}\" href=\"{BuildUrl(baseUrl, altCulture, pageKeyFor(altCulture))}\" />");
+        }
+
+        sb.AppendLine("  </url>");
     }
 
     private static string BuildUrl(string baseUrl, SupportedCulture culture, string pageKey)

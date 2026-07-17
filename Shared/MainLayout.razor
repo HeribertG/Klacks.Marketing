@@ -163,8 +163,8 @@
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.DiscordInviteUrl" target="_blank">@Sh("footer.discord")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="mailto:@ExternalLinks.ContactEmail">@Sh("footer.contact")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank">@Sh("footer.marketplace")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="/impressum">@Sh("footer.imprint")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="/datenschutz">@Sh("footer.privacy")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ImprintHref">@Sh("footer.imprint")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
             </div>
             <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
                 @ShHtml("footer.copyright")
@@ -174,48 +174,17 @@
 </footer>
 
 @code {
+    private const string ImprintPageKey = "impressum";
+    private const string PrivacyPageKey = "datenschutz";
+    private const string KlacksyPageSlug = "klacksy";
+
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
-        string.Empty, "spitex", "spitaeler", "security", "hausdienste", "logistik",
+        string.Empty,
         "land-de", "land-at", "land-ch", "land-sa", "land-ae", "land-il",
         "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
         "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
         "land-fr", "land-it", "land-nl", "land-be", "land-dk", "land-gr", "land-es", "land-fi", "land-no", "land-pl", "land-pt",
-    };
-
-    // On a country landing page ("land-*"), each language maps to the country/
-    // countries where it is actually spoken/used for that page, instead of just
-    // translating the current country's content. Languages mapping to more than
-    // one country show a separate country dropdown (ShowCountryDropdown) to pick
-    // from, defaulting to the first entry; languages with no mapped country fall
-    // back to the culture's home page.
-    private static readonly Dictionary<string, string[]> LanguageCountryMap = new(StringComparer.OrdinalIgnoreCase)
-    {
-        ["de"] = new[] { "land-de", "land-at", "land-ch" },
-        ["en"] = new[] { "land-gb", "land-sa", "land-ae", "land-ie" },
-        ["ar"] = new[] { "land-sa", "land-ae", "land-il" },
-        ["he"] = new[] { "land-il" },
-        ["ja"] = new[] { "land-jp" },
-        ["ko"] = new[] { "land-kr" },
-        ["zh-CN"] = new[] { "land-cn" },
-        ["zh-TW"] = new[] { "land-tw" },
-        ["ms"] = new[] { "land-my" },
-        ["id"] = new[] { "land-id" },
-        ["th"] = new[] { "land-th" },
-        ["vi"] = new[] { "land-vn" },
-        ["cs"] = new[] { "land-cz" },
-        ["ro"] = new[] { "land-ro" },
-        ["sv"] = new[] { "land-se", "land-fi" },
-        ["fr"] = new[] { "land-fr", "land-ch", "land-be" },
-        ["it"] = new[] { "land-it", "land-ch" },
-        ["nl"] = new[] { "land-nl", "land-be" },
-        ["da"] = new[] { "land-dk" },
-        ["el"] = new[] { "land-gr" },
-        ["es"] = new[] { "land-es" },
-        ["fi"] = new[] { "land-fi" },
-        ["nb"] = new[] { "land-no" },
-        ["pl"] = new[] { "land-pl" },
-        ["pt"] = new[] { "land-pt" },
     };
 
     private static readonly Dictionary<string, string> CountryDisplayNames = new(StringComparer.OrdinalIgnoreCase)
@@ -351,16 +320,30 @@
 
     private SupportedCulture CurrentCultureRecord => SupportedCultures.All.First(c => c.Code == ResolveCurrentPage().Culture);
 
-    private string HomeHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode ? "/land-ch" : $"/{CurrentCultureRecord.UrlSlug}";
-    // Keeps the active country when navigating to Klacksy from a country page
-    // (so the back-link/language-/country-switcher there stay meaningful); falls
-    // back to the generic, country-less page anywhere else (e.g. the plain
-    // homepage variants of non-default cultures).
+    // Every page lives under a country, so the logo links to the country landing
+    // page: the active one where there is one, otherwise the culture's default.
+    private string HomeHref
+    {
+        get
+        {
+            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+
+            return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+                ? $"/{country}"
+                : $"/{CurrentCultureRecord.UrlSlug}/{country}";
+        }
+    }
+    // Keeps the active country when navigating to Klacksy from a country page (so
+    // the back-link/language-/country-switcher there stay meaningful); off a
+    // country page it targets the culture's default country, since the Klacksy
+    // page exists only under a country.
     private string KlacksyHref
     {
         get
         {
-            var suffix = IsOnCountryPage ? $"{CurrentCountryPageKey}/klacksy" : "klacksy";
+            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+            var suffix = $"{country}/{KlacksyPageSlug}";
+
             return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
                 ? $"/{suffix}"
                 : $"/{CurrentCultureRecord.UrlSlug}/{suffix}";
@@ -380,6 +363,22 @@
     {
         var path = CurrentRelativePath();
         return path.Length == 0 ? $"/#{anchor}" : $"/{path}#{anchor}";
+    }
+
+    // Legal pages live under a country like every other page, and exist in every
+    // culture, so the footer links keep both the active country and culture.
+    private string ImprintHref => LegalHref(ImprintPageKey);
+
+    private string PrivacyHref => LegalHref(PrivacyPageKey);
+
+    private string LegalHref(string pageKey)
+    {
+        var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+        var suffix = $"{country}/{pageKey}";
+
+        return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+            ? $"/{suffix}"
+            : $"/{CurrentCultureRecord.UrlSlug}/{suffix}";
     }
 
     private string DocsHref => CurrentCultureRecord.DocsLocale == SupportedCultures.DefaultCode
@@ -461,7 +460,7 @@
             return LanguageSwitchHref(target);
         }
 
-        if (LanguageCountryMap.TryGetValue(target.Code, out var countries) && countries.Length > 0)
+        if (LanguageCountries.TryGetCountries(target.Code, out var countries) && countries.Length > 0)
         {
             var currentCountry = CurrentCountryPageKey;
             var country = Array.Exists(countries, c => c.Equals(currentCountry, StringComparison.OrdinalIgnoreCase))
@@ -478,10 +477,10 @@
     // page. Off a country page there is no "current" country yet, so the first
     // mapped entry is treated as the default (button label + bold highlight).
     private bool ShowCountryDropdown
-        => LanguageCountryMap.TryGetValue(CurrentCultureRecord.Code, out var countries) && countries.Length > 1;
+        => LanguageCountries.TryGetCountries(CurrentCultureRecord.Code, out var countries) && countries.Length > 1;
 
     private string[] CurrentLanguageCountries
-        => LanguageCountryMap.TryGetValue(CurrentCultureRecord.Code, out var countries) ? countries : Array.Empty<string>();
+        => LanguageCountries.TryGetCountries(CurrentCultureRecord.Code, out var countries) ? countries : Array.Empty<string>();
 
     private string CurrentCountryCode
     {

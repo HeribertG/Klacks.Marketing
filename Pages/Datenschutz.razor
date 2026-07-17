@@ -1,91 +1,25 @@
-@page "/datenschutz"
+@page "/{country}/datenschutz"
+@page "/{culture}/{country}/datenschutz"
+@inject IPageContentProvider ContentProvider
 
-<PageTitle>Klacks | Datenschutz</PageTitle>
+<PageTitle>Klacks | @Lx("privacy.title")</PageTitle>
+<SeoHead PageKey="datenschutz" Culture="@ResolvedCulture" SameForEveryCountry="true" />
 
 <header class="pt-32 pb-16 px-8 max-w-3xl mx-auto">
-    <h1 class="text-[2.5rem] font-black tracking-tight text-primary mb-10">Datenschutzerklärung</h1>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">1. Verantwortlicher</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Verantwortlich für die Datenverarbeitung auf dieser Website ist:
-        </p>
-        <p class="text-on-surface-variant text-sm leading-relaxed mt-4">
-            Klacks Software<br />
-            Heribert Gasparoli<br />
-            Kirchstrasse 52<br />
-            CH-3097 Liebefeld, Schweiz<br />
-            E-Mail: <a href="mailto:hgasparoli@hotmail.com" class="text-secondary no-underline hover:underline">hgasparoli@hotmail.com</a>
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">2. Hosting und Server-Logs</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Diese Website wird auf Servern der Hetzner Online GmbH (Deutschland) betrieben. Beim Aufruf der
-            Website werden technisch bedingt Zugriffsdaten in Server-Logfiles verarbeitet (IP-Adresse,
-            Zeitpunkt des Zugriffs, aufgerufene Seite, Browser-Kennung). Diese Daten dienen ausschliesslich
-            dem sicheren Betrieb der Website und werden nicht mit anderen Datenquellen zusammengeführt.
-            Rechtsgrundlage ist unser berechtigtes Interesse an einem stabilen und sicheren Betrieb.
-        </p>
-        <p class="text-on-surface-variant text-sm leading-relaxed mt-4">
-            Die Website nutzt für die Seitendarstellung eine dauerhafte Verbindung zum Server
-            (WebSocket/SignalR). Dabei werden keine über die Server-Logs hinausgehenden personenbezogenen
-            Daten gespeichert.
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">3. Keine Cookies, kein Tracking, keine Drittanbieter</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Diese Website setzt keine Cookies, verwendet kein Analytics- oder Tracking-Tool und lädt keine
-            Inhalte von Drittanbietern nach. Schriftarten und Icons werden lokal von unserem eigenen Server
-            ausgeliefert; es findet keine Übermittlung Ihrer IP-Adresse an Dritte (z.&nbsp;B. Google Fonts) statt.
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">4. Kontakt per E-Mail</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben
-            (E-Mail-Adresse, Inhalt der Nachricht), um Ihre Anfrage zu beantworten. Die Daten werden nicht
-            in einer Datenbank gespeichert und nicht an Dritte weitergegeben.
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">5. Playground-Instanz</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Die über diese Website verlinkte Playground-Instanz von Klacks ist eine öffentliche
-            Test-Umgebung. Geben Sie dort keine echten Personendaten ein &mdash; alle Daten der
-            Playground-Instanz werden regelmässig automatisch zurückgesetzt. Für die Playground-Instanz
-            gilt zusätzlich die in der Anwendung abrufbare Datenschutzerklärung.
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">6. Ihre Rechte</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Nach dem schweizerischen Datenschutzgesetz (DSG) und &mdash; soweit anwendbar &mdash; der DSGVO
-            haben Sie folgende Rechte:
-        </p>
-        <ul class="text-on-surface-variant text-sm leading-relaxed list-disc pl-5 mt-4 space-y-2">
-            <li><strong class="text-primary">Auskunft:</strong> Sie können Auskunft über Ihre gespeicherten personenbezogenen Daten verlangen.</li>
-            <li><strong class="text-primary">Berichtigung:</strong> Sie können die Berichtigung unrichtiger Daten verlangen.</li>
-            <li><strong class="text-primary">Löschung:</strong> Sie können die Löschung Ihrer Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</li>
-            <li><strong class="text-primary">Einschränkung und Widerspruch:</strong> Sie können der Verarbeitung widersprechen oder deren Einschränkung verlangen.</li>
-            <li><strong class="text-primary">Beschwerde:</strong> Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (in der Schweiz: EDÖB).</li>
-        </ul>
-        <p class="text-on-surface-variant text-sm leading-relaxed mt-4">
-            Zur Ausübung Ihrer Rechte wenden Sie sich an den oben genannten Verantwortlichen.
-        </p>
-    </section>
-
-    <section class="mb-10">
-        <h2 class="text-xl font-bold text-primary mb-3">7. Änderungen</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed">
-            Diese Datenschutzerklärung kann jederzeit angepasst werden. Die aktuelle Version ist stets über
-            diese Seite abrufbar.
-        </p>
-    </section>
+    <h1 class="text-[2.5rem] font-black tracking-tight text-primary mb-10">@Lx("privacy.title")</h1>
+    <div class="legal-prose">@LxHtml("privacy.contentHtml")</div>
 </header>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    // Present so the route binds; the policy describes this website as a whole and
+    // does not vary by country.
+    [Parameter] public string? Country { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+
+    private string Lx(string key) => ContentProvider.GetText(ResolvedCulture, "legal", key);
+
+    private MarkupString LxHtml(string key) => (MarkupString)Lx(key);
+}

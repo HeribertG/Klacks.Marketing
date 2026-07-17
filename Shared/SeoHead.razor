@@ -18,13 +18,22 @@
     // to the route (e.g. "land-ch/spitex").
     [Parameter] public string? RoutePath { get; set; }
 
+    // For pages that are served under every country but whose content is the same
+    // everywhere (the legal pages): the canonical URL points at the culture's
+    // default country, so the other country variants are treated as duplicates of
+    // it rather than as separate pages.
+    [Parameter] public bool SameForEveryCountry { get; set; }
+
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
 
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
     private string AbsoluteUrl(SupportedCulture culture)
     {
-        var routePath = EffectiveRoutePath;
+        var routePath = SameForEveryCountry
+            ? $"{LanguageCountries.DefaultCountryFor(culture.Code)}/{EffectiveRoutePath}"
+            : EffectiveRoutePath;
+
         var path = culture.Code == SupportedCultures.DefaultCode
             ? (routePath.Length == 0 ? "/" : $"/{routePath}")
             : (routePath.Length == 0 ? $"/{culture.UrlSlug}" : $"/{culture.UrlSlug}/{routePath}");

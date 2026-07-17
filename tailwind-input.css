@@ -364,4 +364,43 @@ nav.glass-nav.nav-scrolled {
             display: none;
         }
     }
+
+    /* Legal pages render their body as one localized HTML blob, so the section
+       styling lives here instead of on individual elements. */
+    .legal-prose h2 {
+        @apply text-xl font-bold text-primary mb-3 mt-10;
+    }
+
+    .legal-prose h3 {
+        @apply text-base font-bold text-primary mb-2 mt-6;
+    }
+
+    .legal-prose p {
+        @apply text-on-surface-variant text-sm leading-relaxed mb-4;
+    }
+
+    .legal-prose ul {
+        @apply text-on-surface-variant text-sm leading-relaxed mb-4 ps-6 list-disc;
+    }
+
+    .legal-prose li {
+        @apply mb-1;
+    }
+
+    .legal-prose a {
+        @apply text-secondary no-underline hover:underline;
+    }
+
+    .legal-prose table {
+        @apply w-full text-on-surface-variant text-xs mb-4 border-collapse;
+    }
+
+    .legal-prose th,
+    .legal-prose td {
+        @apply border border-surface-container-high p-2 text-start align-top;
+    }
+
+    .legal-prose th {
+        @apply font-bold text-primary;
+    }
 }

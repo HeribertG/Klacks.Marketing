@@ -209,6 +209,8 @@
 </section>
 
 @code {
+    private const string KlacksySlug = "klacksy";
+
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
@@ -240,12 +242,15 @@
     }
     private string PageHref => Culture == SupportedCultures.DefaultCode ? $"/{EffectiveRoutePath}" : $"/{Culture}/{EffectiveRoutePath}";
     private string DownloadHref => $"{PageHref}#download";
+    // The Klacksy page exists only under a country, so a page outside any country
+    // targets the culture's default one.
     private string KlacksyPageHref
     {
         get
         {
-            var owningCountry = CountryIndustries.OwningCountry(PageKey);
-            var suffix = owningCountry is null ? "klacksy" : $"{owningCountry}/klacksy";
+            var country = CountryIndustries.OwningCountry(PageKey) ?? LanguageCountries.DefaultCountryFor(Culture);
+            var suffix = $"{country}/{KlacksySlug}";
+
             return Culture == SupportedCultures.DefaultCode ? $"/{suffix}" : $"/{Culture}/{suffix}";
         }
     }

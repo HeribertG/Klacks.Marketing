@@ -40,6 +40,15 @@ public static class CountryIndustries
             _ => Standard,
             StringComparer.OrdinalIgnoreCase);
 
+    // Every product page lives under a country ("/land-ch/spitex"). These are the
+    // slugs whose country-less variants ("/spitex") are legacy URLs and redirect.
+    public static IReadOnlyList<string> ProductSlugs { get; } =
+        Standard.Select(industry => industry.Slug).ToArray();
+
+    // Every country page key the site serves; used to expand the "{country}" route
+    // parameter into the concrete set of valid paths.
+    public static IReadOnlyList<string> AllCountries { get; } = CountriesWithIndustries.ToArray();
+
     // Returns the industry sub-pages for a country page key ("land-ch"), or null
     // when that country has no industry sub-pages yet.
     public static IReadOnlyList<CountryIndustry>? ForCountry(string countryPageKey)

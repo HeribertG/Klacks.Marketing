@@ -27,6 +27,37 @@ if (!app.Environment.IsDevelopment())
 app.UseForwardedHeaders();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Legacy country-less product URLs redirect, and unknown page URLs answer 404
+// instead of being swallowed by the "/{culture}" route — that route matches any
+// single unknown segment and renders the German default page with HTTP 200 (a soft
+// 404 duplicating the homepage under arbitrary URLs). Both checks live here, ahead
+// of routing: the 404 guard would otherwise short-circuit any redirect endpoint
+// before it is reached. Runs after UseStaticFiles so real assets are already
+// served, and skips framework paths ("/_blazor") plus anything with a file
+// extension ("/sitemap.xml"), which are endpoints rather than component routes.
+app.Use(async (context, next) =>
+{
+    var path = context.Request.Path.Value ?? "/";
+
+    if (RequiresKnownPage(path))
+    {
+        if (LegacyProductRoutes.ResolveTarget(path) is { } target)
+        {
+            context.Response.Redirect(target + context.Request.QueryString, permanent: true);
+            return;
+        }
+
+        if (!KnownPageRoutes.Contains(path))
+        {
+            context.Response.StatusCode = StatusCodes.Status404NotFound;
+            return;
+        }
+    }
+
+    await next();
+});
+
 app.UseRouting();
 
 app.MapRazorPages();
@@ -36,15 +67,9 @@ app.MapFallbackToPage("/_Host");
 app.MapGet("/sitemap.xml", (IConfiguration configuration) =>
     Results.Text(SitemapGenerator.Build(configuration["Site:BaseUrl"] ?? string.Empty), "application/xml"));
 
-// "de" is the unprefixed default culture (served at "/"), so "/de/..." must not
-// resolve as a second, duplicate URL for the same content — SupportedCultures.Resolve
-// would otherwise silently fall back to German for any unrecognized prefix.
-app.MapGet("/de", () => Results.NotFound());
-app.MapGet("/de/{**path}", () => Results.NotFound());
-
-// The bare default-culture homepage redirects to the Switzerland landing page
-// (first go-to-market focus), so klacks-software.ch/ never serves the generic,
-// country-agnostic Index page directly.
-app.MapGet("/", () => Results.Redirect("/land-ch", permanent: true));
-
 app.Run();
+
+// Framework paths and static assets are served by endpoints, not by component
+// routes, so they must bypass the known-page check.
+static bool RequiresKnownPage(string path) =>
+    !path.StartsWith("/_", StringComparison.Ordinal) && !Path.HasExtension(path);
