@@ -1,4 +1,5 @@
 @inject IConfiguration Configuration
+@inject IPageContentProvider ContentProvider
 
 <HeadContent>
     <link rel="canonical" href="@CanonicalUrl" />
@@ -7,9 +8,34 @@
         <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
     }
     <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(SupportedCultures.Default)" />
+
+    @if (!string.IsNullOrEmpty(Description))
+    {
+        <meta name="description" content="@Description" />
+        <meta property="og:description" content="@Description" />
+    }
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <meta property="og:title" content="@Title" />
+    }
+    <meta property="og:locale" content="@OgLocaleValue" />
 </HeadContent>
 
+@* JSON-LD is rendered in the component body, not in HeadContent: the prerendered
+   HeadOutlet drops <script> elements, whereas <meta>/<link> survive. Structured
+   data is valid anywhere in the document, so body placement is fully supported.
+   Each block is a complete <script> element emitted as raw markup so the type stays
+   the literal "application/ld+json" (see JsonLdBuilder). *@
+@foreach (var script in JsonLdScripts)
+{
+    @((MarkupString)script)
+}
+
 @code {
+    private const string IndexContentKey = "index";
+    private const string ProductPitchTextKey = "hero.subtitle";
+    private const string IndustryTitleKeyFormat = "industries.{0}.title";
+
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
@@ -24,22 +50,88 @@
     // it rather than as separate pages.
     [Parameter] public bool SameForEveryCountry { get; set; }
 
+    // The page title, mirrored into og:title (kept identical to <PageTitle>).
+    [Parameter] public string? Title { get; set; }
+
+    // Raw source for the meta description; may contain inline HTML/entities, which
+    // are stripped and the result truncated. Null falls back to no description.
+    [Parameter] public string? DescriptionSource { get; set; }
+
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
+
+    private SupportedCulture CultureRecord => SupportedCultures.All.First(c => c.Code == Culture);
 
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
-    private string AbsoluteUrl(SupportedCulture culture)
-    {
-        var routePath = SameForEveryCountry
+    private string RoutePathFor(SupportedCulture culture)
+        => SameForEveryCountry
             ? $"{LanguageCountries.DefaultCountryFor(culture.Code)}/{EffectiveRoutePath}"
             : EffectiveRoutePath;
 
-        var path = culture.Code == SupportedCultures.DefaultCode
-            ? (routePath.Length == 0 ? "/" : $"/{routePath}")
-            : (routePath.Length == 0 ? $"/{culture.UrlSlug}" : $"/{culture.UrlSlug}/{routePath}");
+    private string AbsoluteUrl(SupportedCulture culture)
+        => SeoUrls.Absolute(BaseUrl, culture, RoutePathFor(culture));
 
-        return $"{BaseUrl}{path}";
+    private string CanonicalUrl => AbsoluteUrl(CultureRecord);
+
+    private string Description => SeoText.ToDescription(DescriptionSource);
+
+    // The country whose territory drives og:locale: the page's own country, or the
+    // culture's default country for pages served identically under every country.
+    private string CountryPageKey
+        => SameForEveryCountry
+            ? LanguageCountries.DefaultCountryFor(Culture)
+            : CountryIndustries.OwningCountry(PageKey) ?? LanguageCountries.DefaultCountryFor(Culture);
+
+    private string OgLocaleValue => SeoUrls.OgLocale(CultureRecord, CountryPageKey);
+
+    // Product-level pitch, reused as the SoftwareApplication description; localized
+    // per culture with a German fallback via the content provider.
+    private string ProductDescription
+        => SeoText.ToDescription(ContentProvider.GetText(Culture, IndexContentKey, ProductPitchTextKey));
+
+    private IReadOnlyList<string> JsonLdScripts
+    {
+        get
+        {
+            var scripts = new List<string>
+            {
+                JsonLdBuilder.OrganizationScript(BaseUrl),
+                JsonLdBuilder.SoftwareApplicationScript(BaseUrl, Culture, ProductDescription),
+                JsonLdBuilder.WebSiteScript(BaseUrl, Culture),
+            };
+
+            if (BreadcrumbScript is { } breadcrumb)
+            {
+                scripts.Add(breadcrumb);
+            }
+
+            return scripts;
+        }
     }
 
-    private string CanonicalUrl => AbsoluteUrl(SupportedCultures.All.First(c => c.Code == Culture));
+    // A breadcrumb (country -> industry) is emitted only on industry sub-pages,
+    // where the hierarchy is meaningful; a country page is the section root and a
+    // single-item breadcrumb would add nothing.
+    private string? BreadcrumbScript
+    {
+        get
+        {
+            var country = CountryIndustries.OwningCountry(PageKey);
+            if (country is null || PageKey.Length <= country.Length + 1)
+            {
+                return null;
+            }
+
+            var slug = PageKey[(country.Length + 1)..];
+            var industryName = ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
+
+            return JsonLdBuilder.BreadcrumbScript(
+                BaseUrl,
+                CultureRecord,
+                CountryNames.DisplayName(country),
+                country,
+                industryName,
+                EffectiveRoutePath);
+        }
+    }
 }

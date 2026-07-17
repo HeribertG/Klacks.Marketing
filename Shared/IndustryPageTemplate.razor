@@ -1,7 +1,7 @@
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@Content.PageTitle</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" />
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" />
 
 <!-- HERO -->
 <header id="branchen" class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
@@ -224,6 +224,10 @@
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
     private IndustryPageContent Content => ContentProvider.GetIndustryPage(Culture, PageKey);
+
+    // Meta description source: a dedicated field when the content provides one,
+    // otherwise the hero subtitle (both may carry inline HTML, stripped downstream).
+    private string DescriptionSource => Content.MetaDescription ?? Content.Hero.Subtitle;
 
     // "Alle Branchen" goes back to the owning country's general page (which lists
     // all of that country's industry sub-pages) when the current page belongs to

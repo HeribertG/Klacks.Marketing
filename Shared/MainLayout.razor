@@ -68,7 +68,7 @@
                         {
                             <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(IsCurrentCountry(country) ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCountryMenu">
                                 <img src="@FlagSrc(CountryCode(country))" alt="" class="w-5 h-auto rounded-[2px]" />
-                                @CountryDisplayNames.GetValueOrDefault(country, country)
+                                @CountryNames.DisplayName(country)
                             </a>
                         }
                     </div>
@@ -130,7 +130,7 @@
                 {
                     <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
                         <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
-                        @CountryDisplayNames.GetValueOrDefault(country, country)
+                        @CountryNames.DisplayName(country)
                     </a>
                 }
             </div>
@@ -185,40 +185,6 @@
         "land-se", "land-ie", "land-cz", "land-gb", "land-ro",
         "land-jp", "land-kr", "land-cn", "land-tw", "land-my", "land-id", "land-th", "land-vn",
         "land-fr", "land-it", "land-nl", "land-be", "land-dk", "land-gr", "land-es", "land-fi", "land-no", "land-pl", "land-pt",
-    };
-
-    private static readonly Dictionary<string, string> CountryDisplayNames = new(StringComparer.OrdinalIgnoreCase)
-    {
-        ["land-de"] = "Deutschland",
-        ["land-at"] = "Österreich",
-        ["land-ch"] = "Schweiz",
-        ["land-sa"] = "Saudi-Arabien",
-        ["land-ae"] = "VAE",
-        ["land-il"] = "Israel",
-        ["land-se"] = "Schweden",
-        ["land-ie"] = "Irland",
-        ["land-cz"] = "Tschechien",
-        ["land-gb"] = "Grossbritannien",
-        ["land-ro"] = "Rumänien",
-        ["land-jp"] = "Japan",
-        ["land-kr"] = "Südkorea",
-        ["land-cn"] = "China",
-        ["land-tw"] = "Taiwan",
-        ["land-my"] = "Malaysia",
-        ["land-id"] = "Indonesien",
-        ["land-th"] = "Thailand",
-        ["land-vn"] = "Vietnam",
-        ["land-fr"] = "Frankreich",
-        ["land-it"] = "Italien",
-        ["land-nl"] = "Niederlande",
-        ["land-be"] = "Belgien",
-        ["land-dk"] = "Dänemark",
-        ["land-gr"] = "Griechenland",
-        ["land-es"] = "Spanien",
-        ["land-fi"] = "Finnland",
-        ["land-no"] = "Norwegen",
-        ["land-pl"] = "Polen",
-        ["land-pt"] = "Portugal",
     };
 
     private bool _mobileMenuOpen;

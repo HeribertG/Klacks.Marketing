@@ -3,6 +3,11 @@ namespace Klacks.Marketing.Localization;
 public sealed class IndustryPageContent
 {
     public required string PageTitle { get; init; }
+
+    // Optional dedicated meta description. When absent, the SEO head falls back to
+    // the stripped hero subtitle, so no page needs a hand-written description.
+    public string? MetaDescription { get; init; }
+
     public required IndustryHero Hero { get; init; }
     public required IndustrySection Challenges { get; init; }
     public IndustryRulesCalendarSection? RulesCalendar { get; init; }

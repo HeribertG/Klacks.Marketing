@@ -102,7 +102,9 @@ public static class SitemapGenerator
         sb.AppendLine("  </url>");
     }
 
-    private static string BuildUrl(string baseUrl, SupportedCulture culture, string pageKey)
+    // Public so SEO generators (llms.txt) can build the exact same absolute URLs
+    // from the same page keys instead of hand-assembling routes that might drift.
+    public static string BuildUrl(string baseUrl, SupportedCulture culture, string pageKey)
     {
         var path = culture.Code == SupportedCultures.DefaultCode
             ? (pageKey.Length == 0 ? "/" : $"/{pageKey}")
