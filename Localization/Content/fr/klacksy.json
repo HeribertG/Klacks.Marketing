@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy : l'assistant IA qui apprend vos règles internes | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Pour tous les secteurs &middot; Assistant IA",
+    "titleHtml": "Klacksy : l'assistant IA, <span class=\"text-secondary\">qui apprend vos règles internes.</span>",
+    "subtitle": "Pas une IA générique standard. Pilotez le ton, l'autonomie et le vocabulaire métier d'un assistant de planification qui respecte exactement vos consignes &mdash; basé sur des règles, traçable, entre vos mains.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Assistant IA Klacksy dans la planification Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Capture d'écran en allemand — l'application elle-même est aussi disponible en français."
+  },
+  "challenges": {
+    "eyebrow": "Le problème avec l'IA standard",
+    "title": "Chatbots boîte noire, sans contrôle opérationnel",
+    "items": [
+      { "icon": "psychology_alt", "title": "L'IA standard ne connaît pas vos règles", "text": "Les chatbots standards ignorent tout de vos conventions internes, exigences de qualification ou réglementations propres à votre secteur &mdash; chaque réponse est un pari à l'aveugle." },
+      { "icon": "visibility_off", "title": "Marge de manœuvre floue", "text": "Avec de nombreux outils IA, on ne sait pas ce que l'IA peut modifier seule et ce qu'elle ne peut pas &mdash; un risque dès que de vrais plannings sont concernés." },
+      { "icon": "record_voice_over", "title": "Langage étranger, abréviations étrangères", "text": "Une IA standard ne comprend pas les sigles et le jargon internes à votre entreprise &mdash; chaque demande doit d'abord être expliquée laborieusement." }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacksy s'adapte à votre entreprise",
+    "subtitle": "Quatre réglages avec lesquels vous faites de Klacksy votre propre assistant.",
+    "items": [
+      { "icon": "tune", "title": "Définissez vous-même l'autonomie", "text": "Quatre niveaux réglables vous permettent de définir, pour chaque utilisateur, ce que Klacksy peut faire seul &mdash; de la simple suggestion aux modifications autonomes. Les actions sensibles exigent toujours votre confirmation." },
+      { "icon": "menu_book", "title": "Des règles internes, juste en les disant", "text": "Vous décrivez une règle d'entreprise directement dans le chat &mdash; par exemple « majoration de nuit 25 % à partir de 23 h » ou « maximum 3 nuits par semaine ». Klacksy pose des questions précises jusqu'à ce que toutes les informations obligatoires soient complètes et vérifiées, affiche un aperçu du résultat et n'enregistre qu'après votre confirmation explicite &mdash; toujours traçable dans le registre des règles, et réversible." },
+      { "icon": "translate", "title": "Entraînez le vocabulaire métier", "text": "Klacksy apprend vos abréviations et formulations propres à l'entreprise, afin que les demandes soient comprises correctement dès la première fois." },
+      { "icon": "face", "title": "Adaptez la personnalité", "text": "Dans les paramètres, vous trouverez l'éditeur de personnalité « Personnalité de Klacksy » : vous y définissez le ton et le caractère de Klacksy &mdash; en accord avec la culture de votre entreprise." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrètement",
+    "title": "Un service de soins à domicile configure Klacksy pour son équipe",
+    "text": "Le niveau d'autonomie est réglé sur « Proposer » : Klacksy prépare des propositions de tournées et vérifie automatiquement les qualifications du personnel &mdash; la décision finale revient toujours à la direction. La règle de majoration de nuit a en plus été définie dans le chat, et Klacksy a été entraîné aux abréviations utilisées en interne. L'assistant réagit déjà en conséquence &mdash; sans aucune programmation."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacksy en action",
+    "text": "Testez dans le Playground comment Klacksy applique les niveaux d'autonomie, la personnalité et le vocabulaire métier &mdash; ou installez Klacks directement sur votre propre infrastructure. Gratuit et sans inscription."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: AI asistent, který se učí vaše firemní pravidla | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Pro všechna odvětví &middot; AI asistent",
+    "titleHtml": "Klacksy: AI asistent, <span class=\"text-secondary\">který se učí vaše firemní pravidla.</span>",
+    "subtitle": "Žádná obyčejná AI z krabice. Ovládejte tón, autonomii a odbornou terminologii asistenta pro plánování směn, který se přesně řídí vašimi pokyny &mdash; založeno na pravidlech, dohledatelné, ve vašich rukou.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "AI asistent Klacksy v plánování směn Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Snímek obrazovky je v němčině — rozhraní aplikace existuje pouze v němčině, angličtině, francouzštině a italštině; čeština je v současnosti podporována pouze AI asistentem Klacksy."
+  },
+  "challenges": {
+    "eyebrow": "Problém s běžnou AI",
+    "title": "Chatboti typu černá skříňka bez provozní kontroly",
+    "items": [
+      { "icon": "psychology_alt", "title": "Běžná AI nezná vaše pravidla", "text": "Běžní chatboti nevědí nic o vašich firemních dohodách, kvalifikačních požadavcích ani oborových předpisech &mdash; každá odpověď je let naslepo." },
+      { "icon": "visibility_off", "title": "Nejasný prostor pro jednání", "text": "U mnoha AI nástrojů není jasné, co smí AI měnit samostatně a co ne &mdash; riziko, jakmile jde o skutečné směny." },
+      { "icon": "record_voice_over", "title": "Cizí jazyk, cizí zkratky", "text": "Firemní zkratky a odborné pojmy běžná AI nechápe &mdash; každý požadavek je nejprve nutné zdlouhavě vysvětlovat." }
+    ]
+  },
+  "solutions": {
+    "title": "Jak se Klacksy přizpůsobí vaší firmě",
+    "subtitle": "Čtyři nastavení, kterými uděláte z Klacksy svého vlastního asistenta.",
+    "items": [
+      { "icon": "tune", "title": "Určete si autonomii sami", "text": "Pomocí čtyř nastavitelných úrovní určujete pro každého uživatele, kolik toho Klacksy smí dělat samostatně &mdash; od pouhých návrhů až po samostatné změny. Citlivé akce vždy vyžadují vaše potvrzení." },
+      { "icon": "menu_book", "title": "Firemní pravidla, stačí je vyslovit", "text": "Firemní pravidlo jednoduše popíšete v chatu &mdash; například „noční příplatek 25 % od 23 hodin“ nebo „maximálně 3 noční směny týdně“. Klacksy se cíleně doptá, dokud nejsou všechny povinné údaje kompletní a ověřené, zobrazí náhled výsledku a uloží jej až po vašem výslovném potvrzení &mdash; kdykoli dohledatelné v registru pravidel a vratné." },
+      { "icon": "translate", "title": "Natrénujte odbornou terminologii", "text": "Klacksy se učí vaše firemní zkratky a formulace, aby byly požadavky napoprvé správně pochopeny." },
+      { "icon": "face", "title": "Upravte osobnost", "text": "V Nastavení najdete editor osobnosti „Osobnost Klacksy“: tam určujete tón a povahu Klacksy &mdash; podle firemní kultury vaší společnosti." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "Pečovatelská služba nastavuje Klacksy pro svůj tým",
+    "text": "Úroveň autonomie je nastavena na „Navrhovat“: Klacksy připravuje návrhy tras a přitom automaticky kontroluje kvalifikace pracovníků &mdash; konečné rozhodnutí je vždy na vedoucím. Kromě toho bylo pravidlo nočního příplatku zadáno přes chat a Klacksy byl natrénován na zkratky běžné v provozu. Asistent už dnes reaguje odpovídajícím způsobem &mdash; zcela bez programování."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Vyzkoušejte Klacksy v akci",
+    "text": "Vyzkoušejte v Playgroundu, jak Klacksy přebírá úrovně autonomie, osobnost a odbornou terminologii &mdash; nebo si nainstalujte Klacks přímo na vlastní infrastrukturu. Zdarma a bez registrace."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: l'assistente IA che impara le regole della Sua azienda | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Per tutti i settori &middot; Assistente IA",
+    "titleHtml": "Klacksy: l'assistente IA <span class=\"text-secondary\">che impara le regole della Sua azienda.</span>",
+    "subtitle": "Non un'IA generica di serie. Controlli tono, autonomia e vocabolario tecnico di un assistente per la pianificazione dei turni che segue esattamente le Sue indicazioni &mdash; basato su regole, tracciabile, nelle Sue mani.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Assistente IA Klacksy nella pianificazione di Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Schermata in tedesco — l'app stessa è disponibile anche in italiano."
+  },
+  "challenges": {
+    "eyebrow": "Il problema con l'IA standard",
+    "title": "Chatbot scatola nera, senza controllo aziendale",
+    "items": [
+      { "icon": "psychology_alt", "title": "L'IA standard non conosce le Sue regole", "text": "I chatbot standard non sanno nulla dei Suoi accordi aziendali, dei requisiti di qualifica o delle normative specifiche del settore &mdash; ogni risposta è un volo alla cieca." },
+      { "icon": "visibility_off", "title": "Margine d'azione poco chiaro", "text": "Con molti strumenti IA non è chiaro cosa l'IA possa modificare autonomamente e cosa no &mdash; un rischio non appena sono coinvolti turni reali." },
+      { "icon": "record_voice_over", "title": "Lingua estranea, abbreviazioni estranee", "text": "Un'IA standard non capisce le sigle e i termini tecnici interni alla Sua azienda &mdash; ogni richiesta va prima spiegata laboriosamente." }
+    ]
+  },
+  "solutions": {
+    "title": "Come Klacksy si adatta alla Sua azienda",
+    "subtitle": "Quattro leve con cui rende Klacksy il Suo assistente personale.",
+    "items": [
+      { "icon": "tune", "title": "Definisca Lei stesso l'autonomia", "text": "Con quattro livelli regolabili decide, per ogni utente, quanto Klacksy possa agire autonomamente &mdash; da semplici proposte fino a modifiche indipendenti. Le azioni sensibili richiedono sempre la Sua conferma." },
+      { "icon": "menu_book", "title": "Regole aziendali, dette a voce", "text": "Descriva una regola aziendale direttamente in chat &mdash; ad esempio «maggiorazione notturna 25% dalle 23» oppure «massimo 3 turni notturni a settimana». Klacksy fa domande mirate finché tutti i dati obbligatori sono completi e verificati, mostra un'anteprima del risultato e salva solo dopo la Sua conferma esplicita &mdash; sempre tracciabile nel registro delle regole e annullabile." },
+      { "icon": "translate", "title": "Addestri il vocabolario tecnico", "text": "Klacksy impara le abbreviazioni e le formulazioni specifiche della Sua azienda, così le richieste vengono comprese correttamente fin da subito." },
+      { "icon": "face", "title": "Personalizzi la personalità", "text": "In Impostazioni trova l'editor di personalità «Personalità di Klacksy»: lì definisce tono e carattere di Klacksy &mdash; in linea con la cultura della Sua azienda." }
+    ]
+  },
+  "example": {
+    "eyebrow": "In pratica",
+    "title": "Un servizio di assistenza domiciliare configura Klacksy per il proprio team",
+    "text": "Il livello di autonomia è impostato su «Proporre»: Klacksy prepara proposte di percorso e verifica automaticamente le qualifiche del personale &mdash; la decisione finale spetta sempre alla direzione. È stata inoltre registrata a voce la regola della maggiorazione notturna, e Klacksy è stato addestrato sulle abbreviazioni in uso in azienda. L'assistente reagisce già di conseguenza &mdash; senza alcuna programmazione."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Scopra Klacksy in azione",
+    "text": "Provi nel Playground come Klacksy applica livelli di autonomia, personalità e vocabolario tecnico &mdash; oppure installi Klacks direttamente sulla Sua infrastruttura. Gratuito e senza registrazione."
+  }
+}

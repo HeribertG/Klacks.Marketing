@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy：学习贵公司运营规则的 AI 助手 | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "适用于所有行业 &middot; AI 助手",
+    "titleHtml": "Klacksy：<span class=\"text-secondary\">学习贵公司运营规则的 AI 助手。</span>",
+    "subtitle": "不是千篇一律的通用 AI。您可以控制排班助手的语气、自主性和专业术语，使其精确遵循您的规定 &mdash; 基于规则、可追溯、完全由您掌控。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksy AI 助手在 Klacks 排班中的应用",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "此截图为德语界面。Klacks 应用目前仅提供德语、英语、法语和意大利语版本。"
+  },
+  "challenges": {
+    "eyebrow": "普通 AI 的问题",
+    "title": "缺乏运营控制的黑箱聊天机器人",
+    "items": [
+      { "icon": "psychology_alt", "title": "普通 AI 不了解您的规则", "text": "普通聊天机器人对贵公司的内部协议、资质要求或行业特定法规一无所知 &mdash; 每个回答都是盲目猜测。" },
+      { "icon": "visibility_off", "title": "行动权限不明确", "text": "许多 AI 工具无法明确界定 AI 可以自行更改的范围 &mdash; 一旦涉及真实排班，就是风险。" },
+      { "icon": "record_voice_over", "title": "陌生的语言，陌生的缩写", "text": "公司内部的缩写和专业术语，普通 AI 根本无法理解 &mdash; 每次请求都需要先费力解释一遍。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksy 如何适应贵公司",
+    "subtitle": "四项设置，让 Klacksy 成为您专属的助手。",
+    "items": [
+      { "icon": "tune", "title": "自主决定自主性", "text": "通过四个可调节的等级，您可以为每位用户设定 Klacksy 能够自主处理的程度 &mdash; 从单纯提出建议到独立执行更改。敏感操作始终需要您的确认。" },
+      { "icon": "menu_book", "title": "运营规则，只需说出来", "text": "您只需在聊天中描述一条公司规则 &mdash; 例如「23 点起夜班津贴 25%」或「每周最多 3 个夜班」。Klacksy 会有针对性地追问，直到所有必填信息完整且经过核实，展示结果预览，并在您明确确认后才会保存 &mdash; 始终可在规则登记册中追溯，且可撤销。" },
+      { "icon": "translate", "title": "训练专业术语", "text": "Klacksy 会学习贵公司特有的缩写和表达方式，使请求一开始就能被正确理解。" },
+      { "icon": "face", "title": "调整个性", "text": "在设置中，您可以找到个性编辑器「Klacksy 个性」：在这里您可以设定 Klacksy 的语气和性格 &mdash; 与贵公司的企业文化相匹配。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "实际案例",
+    "title": "一家居家护理机构为团队配置 Klacksy",
+    "text": "自主性等级设置为「建议」：Klacksy 准备路线建议，并自动核查护理人员的资质 &mdash; 最终决定始终由管理层做出。此外，夜班津贴规则已通过聊天录入，Klacksy 也已学会机构内常用的缩写。助手今天起就已相应作出反应 &mdash; 完全无需编程。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "体验 Klacksy 的实际效果",
+    "text": "在 Playground 中试试 Klacksy 如何应用自主性等级、个性和专业术语 &mdash; 或者直接将 Klacks 安装在您自己的基础设施上。免费，无需注册。"
+  }
+}

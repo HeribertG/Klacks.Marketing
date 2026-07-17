@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: 귀사의 운영 규칙을 학습하는 AI 어시스턴트 | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "모든 업종 지원 &middot; AI 어시스턴트",
+    "titleHtml": "Klacksy: <span class=\"text-secondary\">귀사의 운영 규칙을 학습하는 AI 어시스턴트.</span>",
+    "subtitle": "획일적인 범용 AI가 아닙니다. 어조, 자율성, 전문 용어를 직접 제어할 수 있는 근무표 어시스턴트가 귀사의 지침을 정확하게 따릅니다 &mdash; 규칙 기반이며, 추적 가능하고, 귀사의 손안에 있습니다.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks 근무표에 표시된 Klacksy AI 어시스턴트",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "스크린샷은 독일어 화면입니다. Klacks 앱은 독일어, 영어, 프랑스어, 이탈리아어로 제공됩니다."
+  },
+  "challenges": {
+    "eyebrow": "범용 AI의 문제점",
+    "title": "운영 통제가 불가능한 블랙박스형 챗봇",
+    "items": [
+      { "icon": "psychology_alt", "title": "범용 AI는 귀사의 규칙을 모릅니다", "text": "일반 챗봇은 귀사의 단체협약, 자격 요건, 업종별 규정에 대해 아무것도 알지 못합니다 &mdash; 모든 답변이 눈감고 하는 추측입니다." },
+      { "icon": "visibility_off", "title": "불명확한 행동 범위", "text": "많은 AI 도구에서 AI가 스스로 무엇을 변경해도 되는지가 불명확합니다 &mdash; 실제 근무표가 관련되는 순간 위험이 됩니다." },
+      { "icon": "record_voice_over", "title": "낯선 언어, 낯선 약어", "text": "회사 내부의 약어와 전문 용어를 범용 AI는 이해하지 못합니다 &mdash; 매번 요청할 때마다 번거롭게 다시 설명해야 합니다." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksy가 귀사에 적응하는 방식",
+    "subtitle": "Klacksy를 귀사만의 어시스턴트로 만드는 네 가지 설정.",
+    "items": [
+      { "icon": "tune", "title": "자율성을 직접 결정하세요", "text": "네 가지 조정 가능한 단계를 통해 사용자별로 Klacksy가 스스로 얼마나 처리할 수 있는지 결정합니다 &mdash; 단순 제안부터 독립적인 변경까지. 민감한 작업은 항상 사용자의 확인이 필요합니다." },
+      { "icon": "menu_book", "title": "운영 규칙, 말로 설명하기만 하면 됩니다", "text": "채팅으로 회사 규칙을 바로 설명하세요 &mdash; 예를 들어 “23시부터 야간수당 25%” 또는 “주당 야간 근무 최대 3회”. Klacksy는 필수 정보가 모두 완비되고 확인될 때까지 구체적으로 되물은 뒤 결과 미리보기를 보여주고, 명시적으로 확인한 후에만 저장합니다 &mdash; 규칙 등록부에서 언제든 확인할 수 있으며 취소도 가능합니다." },
+      { "icon": "translate", "title": "전문 용어를 학습시키세요", "text": "Klacksy는 귀사만의 약어와 표현 방식을 학습하여 요청을 처음부터 정확히 이해합니다." },
+      { "icon": "face", "title": "성격을 조정하세요", "text": "설정에서 “Klacksy 성격” 편집기를 찾을 수 있습니다: 여기서 Klacksy의 어조와 성격을 결정합니다 &mdash; 귀사의 기업 문화에 맞게." }
+    ]
+  },
+  "example": {
+    "eyebrow": "실제 사례",
+    "title": "재가 요양 서비스가 팀을 위해 Klacksy를 설정하다",
+    "text": "자율성 단계는 “제안”으로 설정되어 있습니다: Klacksy는 경로 제안을 준비하고 직원의 자격을 자동으로 확인합니다 &mdash; 최종 결정은 항상 관리자가 내립니다. 또한 야간수당 규칙을 채팅으로 등록하고, 현장에서 사용하는 약어도 Klacksy에 학습시켰습니다. 어시스턴트는 오늘부터 이미 그에 맞춰 대응합니다 &mdash; 프로그래밍 없이도 말입니다."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacksy를 직접 경험해 보세요",
+    "text": "Playground에서 Klacksy가 자율성 단계, 성격, 전문 용어를 어떻게 적용하는지 확인해 보세요 &mdash; 또는 Klacks를 직접 자체 인프라에 설치할 수도 있습니다. 무료이며 등록이 필요하지 않습니다."
+  }
+}

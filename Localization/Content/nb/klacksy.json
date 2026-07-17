@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: KI-assistenten som lærer dine bedriftsregler | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "For alle bransjer &middot; KI-assistent",
+    "titleHtml": "Klacksy: KI-assistenten <span class=\"text-secondary\">som lærer dine bedriftsregler.</span>",
+    "subtitle": "Ingen generisk KI fra hylla. Styr tonefall, autonomi og fagspråk for en vaktplan-assistent som følger reglene dine nøyaktig &mdash; regelbasert, sporbart, i dine hender.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksy KI-assistent i Klacks' vaktplanlegging",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Skjermbildet vises på tysk — selve appen er tilgjengelig på tysk, engelsk, fransk og italiensk."
+  },
+  "challenges": {
+    "eyebrow": "Problemet med standard-KI",
+    "title": "Svart boks-chatboter uten driftskontroll",
+    "items": [
+      { "icon": "psychology_alt", "title": "Standard-KI kjenner ikke reglene dine", "text": "Standard-chatboter vet ingenting om tariffavtalene, kvalifikasjonskravene eller bransjespesifikke reglene deres &mdash; hvert svar er et blindt gjetteri." },
+      { "icon": "visibility_off", "title": "Uklart handlingsrom", "text": "Med mange KI-verktøy er det uklart hva KI-en får endre selv, og hva den ikke får &mdash; en risiko så snart ekte vaktplaner er involvert." },
+      { "icon": "record_voice_over", "title": "Fremmed språk, fremmede forkortelser", "text": "En standard-KI forstår ikke interne forkortelser og fagbegreper &mdash; hver forespørsel må først forklares tungvint." }
+    ]
+  },
+  "solutions": {
+    "title": "Slik tilpasser Klacksy seg bedriften din",
+    "subtitle": "Fire innstillinger du bruker for å gjøre Klacksy til din egen assistent.",
+    "items": [
+      { "icon": "tune", "title": "Bestem autonomien selv", "text": "Med fire justerbare nivåer bestemmer du per bruker hvor mye Klacksy får gjøre på egen hånd &mdash; fra rene forslag til selvstendige endringer. Sensitive handlinger krever alltid din bekreftelse." },
+      { "icon": "menu_book", "title": "Bedriftsregler, bare ved å si dem", "text": "Du beskriver en bedriftsregel direkte i chatten &mdash; for eksempel «nattillegg 25 % fra kl. 23» eller «maks 3 nattevakter per uke». Klacksy stiller målrettede oppfølgingsspørsmål til alle obligatoriske opplysninger er komplette og kontrollert, viser en forhåndsvisning av resultatet og lagrer først etter din uttrykkelige bekreftelse &mdash; alltid sporbart i regelregisteret, og reversibel." },
+      { "icon": "translate", "title": "Tren fagspråket", "text": "Klacksy lærer bedriftsspesifikke forkortelser og formuleringer, slik at forespørsler forstås riktig med én gang." },
+      { "icon": "face", "title": "Tilpass personligheten", "text": "Under Innstillinger finner du personlighetseditoren «Klacksy Personlighet»: der bestemmer du tonefallet og karakteren til Klacksy &mdash; tilpasset bedriftskulturen din." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "En hjemmetjeneste stiller inn Klacksy for teamet sitt",
+    "text": "Autonominivået står på «Foreslå»: Klacksy forbereder ruteforslag og sjekker automatisk fagkompetansen til de ansatte &mdash; den endelige avgjørelsen ligger alltid hos ledelsen. I tillegg er nattillegg-regelen lagt inn via chat, og Klacksy er trent på forkortelsene som brukes internt. Assistenten reagerer allerede i dag deretter &mdash; helt uten programmering."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Opplev Klacksy i aksjon",
+    "text": "Test i Playground hvordan Klacksy tar i bruk autonominivåer, personlighet og fagspråk &mdash; eller installer Klacks direkte på din egen infrastruktur. Gratis og uten registrering."
+  }
+}

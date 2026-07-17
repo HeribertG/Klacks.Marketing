@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy：貴社の運用ルールを学習するAIアシスタント | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "全業種対応 &middot; AIアシスタント",
+    "titleHtml": "Klacksy：貴社の運用ルールを<span class=\"text-secondary\">学習するAIアシスタント。</span>",
+    "subtitle": "画一的な汎用AIではありません。口調、自律性、専門用語を制御できるシフト計画アシスタントが、貴社の規定に正確に従います &mdash; ルールベースで、追跡可能で、貴社の手の中に。",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksの計画画面に表示されたKlacksy AIアシスタント",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "スクリーンショットはドイツ語版です。アプリ本体はドイツ語・英語・フランス語・イタリア語に対応しており、日本語はAIアシスタント「Klacksy」でご利用いただけます。"
+  },
+  "challenges": {
+    "eyebrow": "汎用AIの問題点",
+    "title": "運用管理ができないブラックボックス型チャットボット",
+    "items": [
+      { "icon": "psychology_alt", "title": "汎用AIは貴社のルールを知らない", "text": "一般的なチャットボットは、労使協定、資格要件、業種特有の規制について何も知りません &mdash; どの回答も当てずっぽうです。" },
+      { "icon": "visibility_off", "title": "行動範囲が不明確", "text": "多くのAIツールでは、AIが自律的に変更してよい範囲が不明確です &mdash; 実際のシフト表が関わる時点でリスクとなります。" },
+      { "icon": "record_voice_over", "title": "見知らぬ言葉、見知らぬ略語", "text": "社内の略語や専門用語を汎用AIは理解できません &mdash; 依頼のたびに、まず手間をかけて説明し直す必要があります。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksyが貴社の運用に適応する仕組み",
+    "subtitle": "Klacksyを貴社専用のアシスタントにする4つの調整項目。",
+    "items": [
+      { "icon": "tune", "title": "自律性を自分で決める", "text": "4段階の調整可能なレベルで、Klacksyがどこまで自律的に動作してよいかをユーザーごとに設定します &mdash; 提案のみから自律的な変更まで。機密性の高い操作には常に確認が必要です。" },
+      { "icon": "menu_book", "title": "運用ルールは話しかけるだけ", "text": "チャットで会社のルールを説明するだけです &mdash; 例えば「23時から夜勤手当25%」や「夜勤は週3回まで」。Klacksyは必須項目がすべて揃い確認されるまで的確に質問を重ね、結果のプレビューを表示し、明示的な確認後にのみ保存します &mdash; ルール登録簿でいつでも確認・取り消しが可能です。" },
+      { "icon": "translate", "title": "専門用語をトレーニングする", "text": "Klacksyは貴社独自の略語や言い回しを学習し、依頼を最初から正しく理解できるようになります。" },
+      { "icon": "face", "title": "パーソナリティを調整する", "text": "設定内の「Klacksyのパーソナリティ」エディタで、Klacksyの口調と性格を決められます &mdash; 貴社の企業文化に合わせて。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "具体例",
+    "title": "訪問介護サービスがチーム向けにKlacksyを設定",
+    "text": "自律性レベルは「提案」に設定：Klacksyはルートの提案を準備し、スタッフの資格を自動的に確認します &mdash; 最終判断は常に管理者が行います。さらに夜勤手当のルールをチャットで登録し、現場でよく使う略語もKlacksyに学習させました。アシスタントは今日からすでにそれに応じて反応します &mdash; プログラミングは一切不要です。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacksyの実力を体験する",
+    "text": "Playgroundで、Klacksyが自律性レベル・パーソナリティ・専門用語をどのように適用するか試してみてください &mdash; または、Klacksを直接ご自身のインフラにインストールすることもできます。無料、登録不要です。"
+  }
+}

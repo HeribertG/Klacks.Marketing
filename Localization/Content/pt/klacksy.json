@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: o assistente de IA que aprende as suas regras internas | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Para todos os setores &middot; Assistente de IA",
+    "titleHtml": "Klacksy: o assistente de IA <span class=\"text-secondary\">que aprende as suas regras internas.</span>",
+    "subtitle": "Nada de IA genérica de série. Controle o tom, a autonomia e o vocabulário técnico de um assistente de planeamento de turnos que segue exatamente as suas indicações &mdash; baseado em regras, rastreável, nas suas mãos.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Assistente de IA Klacksy no planeamento da Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Captura de ecrã em alemão — a aplicação está disponível apenas em alemão, inglês, francês e italiano."
+  },
+  "challenges": {
+    "eyebrow": "O problema com a IA padrão",
+    "title": "Chatbots caixa-preta sem controlo operacional",
+    "items": [
+      { "icon": "psychology_alt", "title": "A IA padrão não conhece as suas regras", "text": "Os chatbots padrão não sabem nada sobre os seus acordos internos, requisitos de qualificação ou regulamentos específicos do setor &mdash; cada resposta é um voo às cegas." },
+      { "icon": "visibility_off", "title": "Margem de ação pouco clara", "text": "Em muitas ferramentas de IA não fica claro o que a IA pode alterar por conta própria e o que não pode &mdash; um risco assim que estão em causa escalas reais." },
+      { "icon": "record_voice_over", "title": "Linguagem estranha, abreviaturas estranhas", "text": "Uma IA padrão não compreende as siglas e termos técnicos internos da sua empresa &mdash; cada pedido tem primeiro de ser explicado de forma trabalhosa." }
+    ]
+  },
+  "solutions": {
+    "title": "Como a Klacksy se adapta à sua empresa",
+    "subtitle": "Quatro ajustes com os quais transforma a Klacksy no seu assistente.",
+    "items": [
+      { "icon": "tune", "title": "Defina a autonomia à sua medida", "text": "Com quatro níveis ajustáveis, decide, por utilizador, quanto a Klacksy pode fazer por conta própria &mdash; desde meras sugestões até alterações autónomas. As ações sensíveis exigem sempre a sua confirmação." },
+      { "icon": "menu_book", "title": "Regras internas, só de as dizer", "text": "Descreve uma regra da empresa diretamente no chat &mdash; por exemplo, «suplemento noturno de 25% a partir das 23h» ou «máximo 3 turnos noturnos por semana». A Klacksy faz perguntas específicas até todos os dados obrigatórios estarem completos e verificados, mostra uma pré-visualização do resultado e só guarda após a sua confirmação expressa &mdash; sempre rastreável no registo de regras, e reversível." },
+      { "icon": "translate", "title": "Treine o vocabulário técnico", "text": "A Klacksy aprende as abreviaturas e expressões específicas da sua empresa, para que os pedidos sejam compreendidos corretamente logo à primeira." },
+      { "icon": "face", "title": "Ajuste a personalidade", "text": "Em Definições encontra o editor de personalidade «Personalidade da Klacksy»: aí define o tom e o carácter da Klacksy &mdash; de acordo com a cultura da sua empresa." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Na prática",
+    "title": "Um serviço de apoio domiciliário configura a Klacksy para a sua equipa",
+    "text": "O nível de autonomia está definido para «Propor»: a Klacksy prepara propostas de rotas e verifica automaticamente as qualificações dos profissionais &mdash; a decisão final cabe sempre à direção. Foi também registada a regra do suplemento noturno por chat, e a Klacksy foi treinada nas abreviaturas habituais na empresa. O assistente já reage em conformidade &mdash; sem qualquer programação."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Veja a Klacksy em ação",
+    "text": "Experimente no Playground como a Klacksy aplica níveis de autonomia, personalidade e vocabulário técnico &mdash; ou instale a Klacks diretamente na sua própria infraestrutura. Gratuito e sem registo."
+  }
+}

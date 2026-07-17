@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: AI-assistenten som lär sig dina interna regler | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "För alla branscher &middot; AI-assistent",
+    "titleHtml": "Klacksy: AI-assistenten <span class=\"text-secondary\">som lär sig dina interna regler.</span>",
+    "subtitle": "Ingen generisk AI från hyllan. Styr tonläge, autonomi och fackspråk för en schemaassistent som följer dina regler exakt &mdash; regelbaserad, spårbar, i dina händer.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksy AI-assistent i Klacks schemaläggning",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Skärmbilden visas på tyska — applikationen finns endast på tyska, engelska, franska och italienska."
+  },
+  "challenges": {
+    "eyebrow": "Problemet med standard-AI",
+    "title": "Svarta lådor utan driftskontroll",
+    "items": [
+      { "icon": "psychology_alt", "title": "Standard-AI känner inte dina regler", "text": "Vanliga chattbottar vet ingenting om era kollektivavtal, kompetenskrav eller branschspecifika regler &mdash; varje svar är ett skott i mörkret." },
+      { "icon": "visibility_off", "title": "Otydligt handlingsutrymme", "text": "Med många AI-verktyg är det oklart vad AI:n får ändra på egen hand och vad den inte får &mdash; en risk så snart verkliga scheman berörs." },
+      { "icon": "record_voice_over", "title": "Främmande språk, främmande förkortningar", "text": "En standard-AI förstår inte dina interna förkortningar och fackuttryck &mdash; varje förfrågan måste först förklaras omständligt." }
+    ]
+  },
+  "solutions": {
+    "title": "Så anpassar sig Klacksy efter din verksamhet",
+    "subtitle": "Fyra inställningar som gör Klacksy till din egen assistent.",
+    "items": [
+      { "icon": "tune", "title": "Bestäm autonomin själv", "text": "Med fyra justerbara nivåer bestämmer du per användare hur mycket Klacksy får göra på egen hand &mdash; från rena förslag till självständiga ändringar. Känsliga åtgärder kräver alltid din bekräftelse." },
+      { "icon": "menu_book", "title": "Interna regler, bara genom att säga dem", "text": "Du beskriver en företagsregel direkt i chatten &mdash; till exempel ”nattillägg 25% från kl. 23” eller ”max 3 nattpass per vecka”. Klacksy ställer riktade följdfrågor tills alla obligatoriska uppgifter är kompletta och kontrollerade, visar en förhandsgranskning av resultatet och sparar först efter din uttryckliga bekräftelse &mdash; alltid spårbart i regelregistret och går att ångra." },
+      { "icon": "translate", "title": "Träna fackspråket", "text": "Klacksy lär sig dina företagsspecifika förkortningar och uttryck, så att förfrågningar förstås rätt direkt." },
+      { "icon": "face", "title": "Anpassa personligheten", "text": "Under Inställningar hittar du personlighetsredigeraren ”Klacksy Personlighet”: där bestämmer du Klacksys tonläge och karaktär &mdash; anpassat efter din företagskultur." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "En hemtjänst ställer in Klacksy för sitt team",
+    "text": "Autonominivån är inställd på ”Föreslå”: Klacksy förbereder ruttförslag och kontrollerar automatiskt personalens kompetenser &mdash; det slutgiltiga beslutet ligger alltid hos enhetschefen. Dessutom har nattillägget lagts in via chatten, och Klacksy har tränats på de förkortningar som används internt. Assistenten reagerar redan idag därefter &mdash; helt utan programmering."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Upplev Klacksy i praktiken",
+    "text": "Testa i Playground hur Klacksy tillämpar autonominivåer, personlighet och fackspråk &mdash; eller installera Klacks direkt på din egen infrastruktur. Gratis och utan registrering."
+  }
+}

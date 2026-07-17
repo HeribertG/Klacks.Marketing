@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: tekoälyavustaja, joka oppii yrityksenne säännöt | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Kaikille toimialoille &middot; Tekoälyavustaja",
+    "titleHtml": "Klacksy: tekoälyavustaja, <span class=\"text-secondary\">joka oppii yrityksenne säännöt.</span>",
+    "subtitle": "Ei tavallista vakiotekoälyä. Hallitkaa sävyä, autonomiaa ja ammattisanastoa vuorosuunnitteluavustajalle, joka noudattaa tarkasti ohjeitanne &mdash; sääntöpohjaisesti, jäljitettävästi, omissa käsissänne.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacksy-tekoälyavustaja Klacksin vuorosuunnittelussa",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Kuvakaappaus on saksaksi — sovellus itsessään on saatavilla saksaksi, englanniksi, ranskaksi ja italiaksi."
+  },
+  "challenges": {
+    "eyebrow": "Vakiotekoälyn ongelma",
+    "title": "Mustan laatikon chatbotit ilman toiminnan hallintaa",
+    "items": [
+      { "icon": "psychology_alt", "title": "Vakiotekoäly ei tunne sääntöjänne", "text": "Tavalliset chatbotit eivät tiedä mitään työehtosopimuksistanne, pätevyysvaatimuksistanne tai toimialakohtaisista määräyksistänne &mdash; jokainen vastaus on sokkolento." },
+      { "icon": "visibility_off", "title": "Epäselvä toimintavalta", "text": "Monien tekoälytyökalujen kohdalla on epäselvää, mitä tekoäly saa muuttaa itsenäisesti ja mitä ei &mdash; riski heti, kun kyse on todellisista työvuoroista." },
+      { "icon": "record_voice_over", "title": "Vieras kieli, vieraat lyhenteet", "text": "Vakiotekoäly ei ymmärrä yrityksenne sisäisiä lyhenteitä ja ammattitermejä &mdash; jokainen pyyntö pitää ensin selittää työläästi." }
+    ]
+  },
+  "solutions": {
+    "title": "Näin Klacksy mukautuu yrityksenne toimintaan",
+    "subtitle": "Neljä säädintä, joilla teette Klacksysta oman avustajanne.",
+    "items": [
+      { "icon": "tune", "title": "Määrittäkää autonomia itse", "text": "Neljällä säädettävällä tasolla päätätte käyttäjäkohtaisesti, kuinka paljon Klacksy saa tehdä itsenäisesti &mdash; pelkistä ehdotuksista itsenäisiin muutoksiin asti. Arkaluonteiset toimet vaativat aina teidän vahvistuksenne." },
+      { "icon": "menu_book", "title": "Yrityssäännöt vain kertomalla", "text": "Kuvailette yrityksen säännön suoraan chatissa &mdash; esimerkiksi ”yölisä 25 % klo 23 alkaen” tai ”enintään 3 yövuoroa viikossa”. Klacksy kysyy tarkentavia kysymyksiä, kunnes kaikki pakolliset tiedot ovat täydellisiä ja tarkistettuja, näyttää esikatselun lopputuloksesta ja tallentaa vasta nimenomaisen vahvistuksenne jälkeen &mdash; aina jäljitettävissä sääntörekisterissä ja peruutettavissa." },
+      { "icon": "translate", "title": "Kouluttakaa ammattisanasto", "text": "Klacksy oppii yrityksenne omat lyhenteet ja ilmaisut, jotta pyynnöt ymmärretään heti oikein." },
+      { "icon": "face", "title": "Muokatkaa persoonallisuutta", "text": "Asetuksista löytyy persoonallisuuseditori ”Klacksyn persoonallisuus”: siellä määritätte Klacksyn sävyn ja luonteen &mdash; yrityskulttuurinne mukaisesti." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Kotihoidon yksikkö säätää Klacksyn tiimilleen",
+    "text": "Autonomiataso on asetettu tilaan ”Ehdota”: Klacksy valmistelee reittiehdotuksia ja tarkistaa samalla automaattisesti hoitajien pätevyydet &mdash; lopullinen päätös on aina esimiehellä. Lisäksi yölisäsääntö on kirjattu chatin kautta, ja Klacksy on koulutettu talossa käytettyihin lyhenteisiin. Avustaja reagoi jo tänään sen mukaisesti &mdash; täysin ilman ohjelmointia."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Koe Klacksy käytännössä",
+    "text": "Kokeilkaa Playgroundissa, miten Klacksy soveltaa autonomiatasoja, persoonallisuutta ja ammattisanastoa &mdash; tai asentakaa Klacks suoraan omaan infrastruktuuriinne. Ilmaiseksi ja ilman rekisteröitymistä."
+  }
+}

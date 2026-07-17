@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: Asisten AI yang Mempelajari Aturan Perusahaan Anda | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Untuk semua industri &middot; Asisten AI",
+    "titleHtml": "Klacksy: Asisten AI <span class=\"text-secondary\">yang mempelajari aturan perusahaan Anda.</span>",
+    "subtitle": "Bukan AI generik yang biasa. Kendalikan gaya bahasa, otonomi, dan istilah khusus untuk asisten penjadwalan shift yang mengikuti persis ketentuan Anda &mdash; berbasis aturan, dapat dilacak, sepenuhnya di tangan Anda.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Asisten AI Klacksy dalam penjadwalan Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Tangkapan layar ditampilkan dalam bahasa Jerman — aplikasi ini saat ini tersedia dalam bahasa Jerman, Inggris, Prancis, dan Italia."
+  },
+  "challenges": {
+    "eyebrow": "Masalah dengan AI standar",
+    "title": "Chatbot kotak hitam tanpa kendali operasional",
+    "items": [
+      { "icon": "psychology_alt", "title": "AI standar tidak mengenal aturan Anda", "text": "Chatbot standar tidak tahu apa-apa tentang kesepakatan internal, persyaratan kualifikasi, atau regulasi khusus industri Anda &mdash; setiap jawaban adalah tebakan buta." },
+      { "icon": "visibility_off", "title": "Batas wewenang tidak jelas", "text": "Pada banyak alat AI, tidak jelas apa yang boleh diubah AI secara mandiri dan apa yang tidak &mdash; risiko begitu jadwal kerja sungguhan terlibat." },
+      { "icon": "record_voice_over", "title": "Bahasa asing, singkatan asing", "text": "Singkatan dan istilah internal perusahaan Anda tidak dipahami oleh AI standar &mdash; setiap permintaan harus dijelaskan panjang lebar terlebih dahulu." }
+    ]
+  },
+  "solutions": {
+    "title": "Bagaimana Klacksy menyesuaikan diri dengan bisnis Anda",
+    "subtitle": "Empat pengaturan yang menjadikan Klacksy sebagai asisten Anda sendiri.",
+    "items": [
+      { "icon": "tune", "title": "Tentukan sendiri tingkat otonomi", "text": "Dengan empat tingkat yang dapat diatur, Anda menentukan per pengguna seberapa banyak Klacksy boleh bertindak sendiri &mdash; dari sekadar saran hingga perubahan mandiri. Tindakan sensitif selalu memerlukan konfirmasi Anda." },
+      { "icon": "menu_book", "title": "Aturan perusahaan, cukup dengan mengucapkannya", "text": "Anda menjelaskan aturan perusahaan langsung di chat &mdash; misalnya “tunjangan malam 25% mulai pukul 23.00” atau “maksimal 3 shift malam per minggu”. Klacksy mengajukan pertanyaan lanjutan yang terarah hingga semua data wajib lengkap dan terverifikasi, menampilkan pratinjau hasilnya, dan baru menyimpannya setelah konfirmasi tegas Anda &mdash; selalu dapat dilacak dalam registri aturan, dan dapat dibatalkan." },
+      { "icon": "translate", "title": "Latih istilah khusus", "text": "Klacksy mempelajari singkatan dan cara penulisan khas perusahaan Anda, sehingga permintaan langsung dipahami dengan benar." },
+      { "icon": "face", "title": "Sesuaikan kepribadian", "text": "Di Pengaturan, Anda akan menemukan editor kepribadian “Kepribadian Klacksy”: di sana Anda menentukan gaya bahasa dan karakter Klacksy &mdash; sesuai dengan budaya perusahaan Anda." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh nyata",
+    "title": "Layanan perawatan di rumah menyesuaikan Klacksy untuk timnya",
+    "text": "Tingkat otonomi diatur ke “Ajukan Saran”: Klacksy menyiapkan usulan rute dan secara otomatis memeriksa kualifikasi staf &mdash; keputusan akhir selalu berada di tangan pimpinan. Selain itu, aturan tunjangan malam telah dimasukkan melalui chat, dan Klacksy telah dilatih dengan singkatan yang biasa digunakan di lingkungan kerja. Asisten ini sudah merespons sesuai hal tersebut sejak hari ini &mdash; sepenuhnya tanpa pemrograman."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Lihat Klacksy Beraksi",
+    "text": "Coba di Playground bagaimana Klacksy menerapkan tingkat otonomi, kepribadian, dan istilah khusus &mdash; atau instal Klacks langsung di infrastruktur Anda sendiri. Gratis dan tanpa registrasi."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: el asistente de IA que aprende sus normas internas | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Para todos los sectores &middot; Asistente de IA",
+    "titleHtml": "Klacksy: el asistente de IA <span class=\"text-secondary\">que aprende sus normas internas.</span>",
+    "subtitle": "Nada de IA genérica de fábrica. Controle el tono, la autonomía y el vocabulario técnico de un asistente de planificación de turnos que sigue exactamente sus indicaciones &mdash; basado en reglas, trazable, en sus manos.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Asistente de IA Klacksy en la planificación de Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Captura de pantalla en alemán — la aplicación de Klacks está disponible en alemán, inglés, francés e italiano."
+  },
+  "challenges": {
+    "eyebrow": "El problema con la IA estándar",
+    "title": "Chatbots de caja negra sin control operativo",
+    "items": [
+      { "icon": "psychology_alt", "title": "La IA estándar no conoce sus normas", "text": "Los chatbots estándar no saben nada de sus convenios internos, requisitos de cualificación o normativas específicas del sector &mdash; cada respuesta es un vuelo a ciegas." },
+      { "icon": "visibility_off", "title": "Margen de actuación poco claro", "text": "Con muchas herramientas de IA no está claro qué puede modificar la IA por su cuenta y qué no &mdash; un riesgo en cuanto se ven afectados turnos reales." },
+      { "icon": "record_voice_over", "title": "Idioma ajeno, abreviaturas ajenas", "text": "Una IA estándar no entiende las siglas y términos internos de su empresa &mdash; cada solicitud hay que explicarla primero de forma laboriosa." }
+    ]
+  },
+  "solutions": {
+    "title": "Cómo se adapta Klacksy a su empresa",
+    "subtitle": "Cuatro ajustes con los que convierte a Klacksy en su propio asistente.",
+    "items": [
+      { "icon": "tune", "title": "Determine usted mismo la autonomía", "text": "Con cuatro niveles ajustables decide, por usuario, cuánto puede hacer Klacksy por su cuenta &mdash; desde simples propuestas hasta cambios autónomos. Las acciones sensibles siempre requieren su confirmación." },
+      { "icon": "menu_book", "title": "Normas internas, con solo decirlas", "text": "Describe una norma de la empresa directamente en el chat &mdash; por ejemplo, «recargo nocturno del 25 % a partir de las 23 h» o «máximo 3 turnos de noche por semana». Klacksy pregunta de forma específica hasta que todos los datos obligatorios estén completos y comprobados, muestra una vista previa del resultado y solo lo guarda tras su confirmación expresa &mdash; siempre visible en el registro de normas y reversible." },
+      { "icon": "translate", "title": "Entrene el vocabulario técnico", "text": "Klacksy aprende las abreviaturas y expresiones propias de su empresa, para que las solicitudes se entiendan correctamente desde el primer momento." },
+      { "icon": "face", "title": "Adapte la personalidad", "text": "En Ajustes encontrará el editor de personalidad «Personalidad de Klacksy»: allí determina el tono y el carácter de Klacksy &mdash; acorde con la cultura de su empresa." }
+    ]
+  },
+  "example": {
+    "eyebrow": "En la práctica",
+    "title": "Un servicio de atención domiciliaria configura Klacksy para su equipo",
+    "text": "El nivel de autonomía está en «Proponer»: Klacksy prepara propuestas de rutas y comprueba automáticamente las cualificaciones del personal &mdash; la decisión final siempre corresponde a la dirección. Además, se ha registrado la norma del recargo nocturno por chat y se ha entrenado a Klacksy con las abreviaturas habituales en la empresa. El asistente ya responde en consecuencia &mdash; sin necesidad de programar nada."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Vea Klacksy en acción",
+    "text": "Pruebe en el Playground cómo Klacksy aplica los niveles de autonomía, la personalidad y el vocabulario técnico &mdash; o instale Klacks directamente en su propia infraestructura. Gratis y sin registro."
+  }
+}

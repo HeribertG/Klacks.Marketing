@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Klacksy: asistentul IA care învață regulile companiei dumneavoastră | Klacks",
+  "hero": {
+    "badgeIcon": "smart_toy",
+    "badge": "Pentru toate domeniile &middot; Asistent IA",
+    "titleHtml": "Klacksy: asistentul IA, <span class=\"text-secondary\">care învață regulile companiei dumneavoastră.</span>",
+    "subtitle": "Nicio IA generică de serie. Controlați tonul, autonomia și vocabularul de specialitate al unui asistent de planificare a turelor care respectă exact cerințele dumneavoastră &mdash; bazat pe reguli, trasabil, în mâinile dumneavoastră.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Asistentul IA Klacksy în planificarea Klacks",
+    "screenshotLabel": "Klacksy",
+    "screenshotCaption": "Captură de ecran în limba germană — aplicația este disponibilă doar în germană, engleză, franceză și italiană."
+  },
+  "challenges": {
+    "eyebrow": "Problema cu IA standard",
+    "title": "Chatboți de tip cutie neagră, fără control operațional",
+    "items": [
+      { "icon": "psychology_alt", "title": "IA standard nu vă cunoaște regulile", "text": "Chatboții standard nu știu nimic despre acordurile dumneavoastră interne, cerințele de calificare sau reglementările specifice domeniului &mdash; fiecare răspuns este un zbor orb." },
+      { "icon": "visibility_off", "title": "Marjă de acțiune neclară", "text": "La multe instrumente IA nu este clar ce poate modifica IA de sine stătător și ce nu &mdash; un risc de îndată ce sunt implicate ture reale." },
+      { "icon": "record_voice_over", "title": "Limbaj străin, abrevieri străine", "text": "O IA standard nu înțelege abrevierile și termenii interni ai companiei dumneavoastră &mdash; fiecare cerere trebuie mai întâi explicată laborios." }
+    ]
+  },
+  "solutions": {
+    "title": "Cum se adaptează Klacksy companiei dumneavoastră",
+    "subtitle": "Patru reglaje cu care transformați Klacksy în propriul dumneavoastră asistent.",
+    "items": [
+      { "icon": "tune", "title": "Stabiliți singuri autonomia", "text": "Prin patru niveluri reglabile stabiliți, pentru fiecare utilizator, cât de mult poate face Klacksy de sine stătător &mdash; de la simple sugestii până la modificări autonome. Acțiunile sensibile necesită întotdeauna confirmarea dumneavoastră." },
+      { "icon": "menu_book", "title": "Reguli ale companiei, doar spunându-le", "text": "Descrieți o regulă a companiei direct în chat &mdash; de exemplu „spor de noapte 25% începând cu ora 23” sau „maximum 3 ture de noapte pe săptămână”. Klacksy pune întrebări țintite până când toate datele obligatorii sunt complete și verificate, afișează o previzualizare a rezultatului și salvează abia după confirmarea dumneavoastră explicită &mdash; mereu trasabil în registrul de reguli și reversibil." },
+      { "icon": "translate", "title": "Antrenați vocabularul de specialitate", "text": "Klacksy învață abrevierile și formulările specifice companiei dumneavoastră, astfel încât cererile sunt înțelese corect din prima." },
+      { "icon": "face", "title": "Adaptați personalitatea", "text": "La Setări găsiți editorul de personalitate „Personalitatea Klacksy”: acolo stabiliți tonul și caracterul lui Klacksy &mdash; potrivit culturii companiei dumneavoastră." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concret",
+    "title": "Un serviciu de îngrijire la domiciliu configurează Klacksy pentru echipa sa",
+    "text": "Nivelul de autonomie este setat pe „Propune”: Klacksy pregătește propuneri de trasee și verifică automat calificările personalului &mdash; decizia finală rămâne întotdeauna la conducere. În plus, regula sporului de noapte a fost înregistrată prin chat, iar Klacksy a fost antrenat cu abrevierile folosite în cadrul companiei. Asistentul reacționează deja astăzi în consecință &mdash; fără nicio programare."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Descoperiți Klacksy în acțiune",
+    "text": "Testați în Playground cum aplică Klacksy nivelurile de autonomie, personalitatea și vocabularul de specialitate &mdash; sau instalați Klacks direct pe propria infrastructură. Gratuit și fără înregistrare."
+  }
+}
