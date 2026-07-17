@@ -13,9 +13,21 @@
     "eyebrow": "Der Planungsalltag in irischen Betrieben",
     "title": "OWTA, Banded Hours und die Frage nach der Datenhoheit",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit nach OWTA im Blick behalten", "text": "Der Organisation of Working Time Act 1997 begrenzt die Arbeitszeit im Schnitt auf 48 Stunden pro Woche, Referenzzeitraum standardmäßig 4 Monate. Eine Verlängerung auf 6 Monate ist nur für bestimmte Tätigkeiten wie Security oder Gesundheitswesen vorgesehen &mdash; von Hand ist das fehleranfällig." },
-      { "icon": "campaign", "title": "Banded Hours &amp; Schichtankündigung", "text": "Mitarbeitende können nach Section 18A OWTA eine Einstufung in ein Stundenband beantragen, wenn ihre Vertragsstunden nicht der Realität entsprechen; der Arbeitgeber hat dafür 4 Wochen Zeit. Zusätzlich verlangt Section 17 OWTA bei nicht fixem Dienstplan mindestens 24 Stunden Vorankündigung von Start- und Endzeiten." },
-      { "icon": "cloud_off", "title": "Datenhoheit statt Drittland-Cloud", "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen." }
+      {
+        "icon": "gavel",
+        "title": "Wochenhöchstarbeitszeit nach OWTA im Blick behalten",
+        "text": "Der Organisation of Working Time Act 1997 begrenzt die Arbeitszeit im Schnitt auf 48 Stunden pro Woche, Referenzzeitraum standardmäßig 4 Monate. Eine Verlängerung auf 6 Monate ist nur für bestimmte Tätigkeiten wie Security oder Gesundheitswesen vorgesehen &mdash; von Hand ist das fehleranfällig."
+      },
+      {
+        "icon": "campaign",
+        "title": "Banded Hours &amp; Schichtankündigung",
+        "text": "Mitarbeitende können nach Section 18A OWTA eine Einstufung in ein Stundenband beantragen, wenn ihre Vertragsstunden nicht der Realität entsprechen; der Arbeitgeber hat dafür 4 Wochen Zeit. Zusätzlich verlangt Section 17 OWTA bei nicht fixem Dienstplan mindestens 24 Stunden Vorankündigung von Start- und Endzeiten."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Datenhoheit statt Drittland-Cloud",
+        "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen."
+      }
     ]
   },
   "rulesCalendar": {
@@ -23,9 +35,21 @@
     "title": "Landesweit einheitlich, an der Grenze zweigeteilt",
     "text": "Die Republik Irland kennt keine Feiertage auf County- oder Gemeinde-Ebene: Alle gesetzlichen Feiertage gelten nach dem Organisation of Working Time Act 1997 landesweit einheitlich. Für Betriebe mit Bezug zu Nordirland zählt trotzdem, was jenseits der Grenze gilt &mdash; dort herrscht ein komplett eigenständiges Feiertagsregime.",
     "items": [
-      { "icon": "place", "title": "Kein Flickenteppich in Irland selbst", "text": "Anders als in vielen anderen Ländern gibt es in der Republik Irland keine Feiertage auf County- oder Gemeinde-Ebene &mdash; der Organisation of Working Time Act 1997 legt alle gesetzlichen Feiertage landesweit einheitlich fest. Nordirland als Teil des Vereinigten Königreichs hat dagegen ein komplett eigenständiges Regime." },
-      { "icon": "layers", "title": "Republik und Nordirland kombinieren", "text": "Ein Betrieb in der Grenzregion &mdash; etwa in Dundalk (County Louth) oder Letterkenny (County Donegal) &mdash; oder mit Standorten in Dublin und Belfast hinterlegt beide Kalender parallel: St. Brigid's Day (erster Montag im Februar) und den Juni-Feiertag in der Republik, den Orangemen's Day (12. Juli) in Nordirland." },
-      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+      {
+        "icon": "place",
+        "title": "Kein Flickenteppich in Irland selbst",
+        "text": "Anders als in vielen anderen Ländern gibt es in der Republik Irland keine Feiertage auf County- oder Gemeinde-Ebene &mdash; der Organisation of Working Time Act 1997 legt alle gesetzlichen Feiertage landesweit einheitlich fest. Nordirland als Teil des Vereinigten Königreichs hat dagegen ein komplett eigenständiges Regime."
+      },
+      {
+        "icon": "layers",
+        "title": "Republik und Nordirland kombinieren",
+        "text": "Ein Betrieb in der Grenzregion &mdash; etwa in Dundalk (County Louth) oder Letterkenny (County Donegal) &mdash; oder mit Standorten in Dublin und Belfast hinterlegt beide Kalender parallel: St. Brigid's Day (erster Montag im Februar) und den Juni-Feiertag in der Republik, den Orangemen's Day (12. Juli) in Nordirland."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
     ],
     "imageFile": "app-calendar-de.png",
     "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
@@ -35,12 +59,41 @@
     "title": "Wie Klacks irische Betriebe entlastet",
     "subtitle": "Von der automatischen Ruhezeit-Prüfung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Wochenhöchstarbeitszeit automatisch überwacht", "text": "Klacks überwacht den rollierenden 48-Stunden-Schnitt über den nach OWTA Section 15 maßgeblichen Referenzzeitraum live und warnt, bevor der Grenzwert kippt &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "bedtime", "title": "Ruhezeiten in Echtzeit überwacht", "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Abweichungen macht Klacks sofort sichtbar." },
-      { "icon": "campaign", "title": "Schichtankündigung im Blick", "text": "Klacks prüft den Mindest-Vorlauf für die Dienstplan-Publikation automatisch: Die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten wird als Publikationsfrist hinterlegt, und Klacks warnt, wenn ein Plan zu kurzfristig veröffentlicht würde." },
-      { "icon": "fact_check", "title": "Banded-Hours-Anträge dokumentiert", "text": "Klacks dokumentiert die geplanten und geleisteten Stunden lückenlos, sodass sich ein Antrag auf Banded Hours nach Section 18A OWTA innerhalb der 4-Wochen-Frist fundiert beantworten lässt." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+      {
+        "icon": "gavel",
+        "title": "Wochenhöchstarbeitszeit automatisch überwacht",
+        "text": "Klacks überwacht den rollierenden 48-Stunden-Schnitt über den nach OWTA Section 15 maßgeblichen Referenzzeitraum live und warnt, bevor der Grenzwert kippt &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeiten in Echtzeit überwacht",
+        "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Abweichungen macht Klacks sofort sichtbar."
+      },
+      {
+        "icon": "campaign",
+        "title": "Schichtankündigung im Blick",
+        "text": "Klacks prüft den Mindest-Vorlauf für die Dienstplan-Publikation automatisch: Die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten wird als Publikationsfrist hinterlegt, und Klacks warnt, wenn ein Plan zu kurzfristig veröffentlicht würde."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Banded-Hours-Anträge dokumentiert",
+        "text": "Klacks dokumentiert die geplanten und geleisteten Stunden lückenlos, sodass sich ein Antrag auf Banded Hours nach Section 18A OWTA innerhalb der 4-Wochen-Frist fundiert beantworten lässt."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 11-Stunden-Ruhezeit (Section 11) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

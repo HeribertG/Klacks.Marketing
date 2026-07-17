@@ -13,22 +13,62 @@
     "eyebrow": "Der Planungsalltag in polnischen Betrieben",
     "title": "Ewidencja, PIP-Reform und das Biometrie-Verbot",
     "items": [
-      { "icon": "history_edu", "title": "Ewidencja czasu pracy statt Anwesenheitsliste", "text": "Eine blosse Anwesenheitsliste (lista obecności) mit Unterschriften reicht rechtlich nicht aus &mdash; verlangt ist eine vollständige Arbeitszeiterfassung nach Art. 149 Kodeks pracy." },
-      { "icon": "gavel", "title": "Bussgeld-Reform ab 8. Juli 2026", "text": "Der Regelstrafrahmen für Verstösse gegen Arbeitnehmerrechte steigt auf 2.000 bis 60.000 PLN &mdash; bei wiederholten schweren Verstössen drohen bis zu 90.000 PLN (Art. 281 Kodeks pracy)." },
-      { "icon": "fingerprint", "title": "Biometrie-Verbot bei der Zeiterfassung", "text": "Fingerabdruck-Zeiterfassung ist auch mit Einwilligung der Mitarbeitenden unzulässig (Art. 22¹b Kodeks pracy) &mdash; Cloud-Zeiterfassungssysteme geraten damit schnell in eine Grauzone." }
+      {
+        "icon": "history_edu",
+        "title": "Ewidencja czasu pracy statt Anwesenheitsliste",
+        "text": "Eine blosse Anwesenheitsliste (lista obecności) mit Unterschriften reicht rechtlich nicht aus &mdash; verlangt ist eine vollständige Arbeitszeiterfassung nach Art. 149 Kodeks pracy."
+      },
+      {
+        "icon": "gavel",
+        "title": "Bussgeld-Reform ab 8. Juli 2026",
+        "text": "Der Regelstrafrahmen für Verstösse gegen Arbeitnehmerrechte steigt auf 2.000 bis 60.000 PLN &mdash; bei wiederholten schweren Verstössen drohen bis zu 90.000 PLN (Art. 281 Kodeks pracy)."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Biometrie-Verbot bei der Zeiterfassung",
+        "text": "Fingerabdruck-Zeiterfassung ist auch mit Einwilligung der Mitarbeitenden unzulässig (Art. 22¹b Kodeks pracy) &mdash; Cloud-Zeiterfassungssysteme geraten damit schnell in eine Grauzone."
+      }
     ]
   },
   "solutions": {
     "title": "Wie Klacks polnische Betriebe entlastet",
     "subtitle": "Von der vollständigen Ewidencja bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "fact_check", "title": "Vollständige Ewidencja czasu pracy", "text": "Klacks erfasst Arbeitszeiten lückenlos nach Art. 149 Kodeks pracy &mdash; keine blosse Unterschriftenliste, sondern rechtssichere Daten für jede PIP-Kontrolle." },
-      { "icon": "bedtime", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) werden automatisch eingehalten, inklusive der in der Regel den Sonntag umfassenden Wochenruhe." },
-      { "icon": "calendar_month", "title": "Równoważny czas pracy korrekt geplant", "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung." },
-      { "icon": "fingerprint", "title": "Keine biometrische Zeiterfassung nötig", "text": "Klacks kommt ganz ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das rechtliche Risiko, das Art. 22¹b Kodeks pracy und die Rechtsprechung des NSA hier sehen." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang und ohne die Datenschutzrisiken, die die UODO bei Drittanbietern kritisiert." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
-      { "icon": "science", "title": "Planänderungen risikofrei testen", "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; Ruhezeiten und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen." }
+      {
+        "icon": "fact_check",
+        "title": "Vollständige Ewidencja czasu pracy",
+        "text": "Klacks erfasst Arbeitszeiten lückenlos nach Art. 149 Kodeks pracy &mdash; keine blosse Unterschriftenliste, sondern rechtssichere Daten für jede PIP-Kontrolle."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeiten automatisch geprüft",
+        "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) werden automatisch eingehalten, inklusive der in der Regel den Sonntag umfassenden Wochenruhe."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Równoważny czas pracy korrekt geplant",
+        "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Keine biometrische Zeiterfassung nötig",
+        "text": "Klacks kommt ganz ohne Fingerabdruck- oder Gesichtserkennung aus &mdash; und damit ohne das rechtliche Risiko, das Art. 22¹b Kodeks pracy und die Rechtsprechung des NSA hier sehen."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang und ohne die Datenschutzrisiken, die die UODO bei Drittanbietern kritisiert."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 11-stündige Ruhezeit (Art. 132 Kodeks pracy) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

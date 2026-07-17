@@ -13,9 +13,21 @@
     "eyebrow": "Der Planungsalltag in tschechischen Betrieben",
     "title": "Schichtmodell, Vorlauffrist und Überstundendeckel",
     "items": [
-      { "icon": "schedule", "title": "Wochensoll hängt am Schichtmodell", "text": "40 Stunden im Einschichtbetrieb, 38,75 Stunden im Zweischichtbetrieb, 37,5 Stunden im Drei- und Mehrschicht- oder kontinuierlichen Betrieb (§ 79 Zákoník práce) &mdash; von Hand schnell verwechselt, mit der Folge unbeabsichtigter Überstunden." },
-      { "icon": "campaign", "title": "Mindestens 2 Wochen Vorlauf für den Dienstplan", "text": "Der Arbeitgeber muss den Wochendienstplan mindestens 2 Wochen vor Beginn bekanntgeben, bei einem Arbeitszeitkonto nur 1 Woche (§ 84 ZP) &mdash; kurzfristige Umplanungen geraten schnell in Konflikt mit dieser Frist." },
-      { "icon": "gavel", "title": "Überstunden bis maximal 416 Stunden im Jahr", "text": "Einseitig angeordnete Überstunden sind auf 8 Stunden pro Woche und 150 Stunden pro Jahr begrenzt, die absolute Jahresobergrenze inklusive vereinbarter Überstunden liegt bei 416 Stunden über einen Ausgleichszeitraum von 26 (per Tarifvertrag bis 52) Wochen (§ 93 ZP)." }
+      {
+        "icon": "schedule",
+        "title": "Wochensoll hängt am Schichtmodell",
+        "text": "40 Stunden im Einschichtbetrieb, 38,75 Stunden im Zweischichtbetrieb, 37,5 Stunden im Drei- und Mehrschicht- oder kontinuierlichen Betrieb (§ 79 Zákoník práce) &mdash; von Hand schnell verwechselt, mit der Folge unbeabsichtigter Überstunden."
+      },
+      {
+        "icon": "campaign",
+        "title": "Mindestens 2 Wochen Vorlauf für den Dienstplan",
+        "text": "Der Arbeitgeber muss den Wochendienstplan mindestens 2 Wochen vor Beginn bekanntgeben, bei einem Arbeitszeitkonto nur 1 Woche (§ 84 ZP) &mdash; kurzfristige Umplanungen geraten schnell in Konflikt mit dieser Frist."
+      },
+      {
+        "icon": "gavel",
+        "title": "Überstunden bis maximal 416 Stunden im Jahr",
+        "text": "Einseitig angeordnete Überstunden sind auf 8 Stunden pro Woche und 150 Stunden pro Jahr begrenzt, die absolute Jahresobergrenze inklusive vereinbarter Überstunden liegt bei 416 Stunden über einen Ausgleichszeitraum von 26 (per Tarifvertrag bis 52) Wochen (§ 93 ZP)."
+      }
     ]
   },
   "rulesCalendar": {
@@ -23,9 +35,21 @@
     "title": "Landesweit einheitlich &mdash; und trotzdem grenzübergreifend im Blick",
     "text": "Tschechien kennt keine kantonalen oder kommunalen Feiertage: Alle 13 gesetzlichen Feiertage gelten nach dem Gesetz Nr. 245/2000 Sb. einheitlich im ganzen Land. Für Betriebe nahe der deutschen Grenze zählt trotzdem, was jenseits davon gilt.",
     "items": [
-      { "icon": "place", "title": "Landesweit einheitlich", "text": "Anders als in Deutschland oder der Schweiz gibt es in Tschechien keine Feiertage auf Kraj- oder Gemeinde-Ebene &mdash; das Gesetz Nr. 245/2000 Sb. legt alle 13 gesetzlichen Feiertage bundesweit einheitlich fest." },
-      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Zulieferbetrieb etwa im Raum Pilsen oder Reichenberg (Liberec) hinterlegt zusätzlich die deutschen Regionalfeiertage &mdash; etwa Fronleichnam und Allerheiligen in Bayern oder den Buß- und Bettag in Sachsen &mdash; um Produktion und Lkw-Disposition mit den Werken jenseits der Grenze zu synchronisieren." },
-      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+      {
+        "icon": "place",
+        "title": "Landesweit einheitlich",
+        "text": "Anders als in Deutschland oder der Schweiz gibt es in Tschechien keine Feiertage auf Kraj- oder Gemeinde-Ebene &mdash; das Gesetz Nr. 245/2000 Sb. legt alle 13 gesetzlichen Feiertage bundesweit einheitlich fest."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Zulieferbetrieb etwa im Raum Pilsen oder Reichenberg (Liberec) hinterlegt zusätzlich die deutschen Regionalfeiertage &mdash; etwa Fronleichnam und Allerheiligen in Bayern oder den Buß- und Bettag in Sachsen &mdash; um Produktion und Lkw-Disposition mit den Werken jenseits der Grenze zu synchronisieren."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
     ],
     "imageFile": "app-calendar-de.png",
     "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
@@ -35,12 +59,41 @@
     "title": "Wie Klacks Betriebe in Tschechien entlastet",
     "subtitle": "Vom schichtabhängigen Wochensoll bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "Wochensoll automatisch je Schichttyp", "text": "Die 40-, 38,75- und 37,5-Stunden-Normen hinterlegen Sie je Schichtmodell als Vertragsbasis &mdash; Klacks rechnet das jeweils gültige Wochensoll automatisch mit, ohne manuelles Nachschlagen." },
-      { "icon": "campaign", "title": "2-Wochen-Frist automatisch geprüft", "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten." },
-      { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks überwacht sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze live über den passenden rollierenden 26- oder 52-Wochen-Zeitraum und warnt, bevor eine Grenze kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "edit_calendar", "title": "Selbst-Planung nach § 87a möglich", "text": "Für Mitarbeitende mit einer schriftlichen Self-Scheduling-Vereinbarung (seit 1.1.2025) überwacht Klacks die 12-Stunden-Schichtobergrenze und alle Ruhezeiten automatisch und warnt bei Verstößen. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+      {
+        "icon": "schedule",
+        "title": "Wochensoll automatisch je Schichttyp",
+        "text": "Die 40-, 38,75- und 37,5-Stunden-Normen hinterlegen Sie je Schichtmodell als Vertragsbasis &mdash; Klacks rechnet das jeweils gültige Wochensoll automatisch mit, ohne manuelles Nachschlagen."
+      },
+      {
+        "icon": "campaign",
+        "title": "2-Wochen-Frist automatisch geprüft",
+        "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten."
+      },
+      {
+        "icon": "gavel",
+        "title": "416-Stunden-Grenze im Blick",
+        "text": "Klacks überwacht sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze live über den passenden rollierenden 26- oder 52-Wochen-Zeitraum und warnt, bevor eine Grenze kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+      },
+      {
+        "icon": "edit_calendar",
+        "title": "Selbst-Planung nach § 87a möglich",
+        "text": "Für Mitarbeitende mit einer schriftlichen Self-Scheduling-Vereinbarung (seit 1.1.2025) überwacht Klacks die 12-Stunden-Schichtobergrenze und alle Ruhezeiten automatisch und warnt bei Verstößen. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Ruhezeiten und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

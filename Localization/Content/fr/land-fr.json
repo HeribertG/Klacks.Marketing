@@ -88,6 +88,11 @@
         "icon": "smart_toy",
         "title": "Libre choix du modèle d'IA",
         "text": "Klacksy peut aussi fonctionner avec des modèles de langage hébergés localement &mdash; de façon transparente et traçable, plutôt qu'un profilage opaque selon l'Art. 22 du RGPD."
+      },
+      {
+        "icon": "science",
+        "title": "Tester les modifications de planning sans risque",
+        "text": "Avant qu'une modification de planning ne passe en production, vous pouvez la tester comme une copie isolée &mdash; le repos de 11 heures (Art. L3131-1) et les majorations sont alors calculés en temps réel, exactement comme dans le planning réel. Ce n'est qu'une fois que tout est correct que vous adoptez la variante ; jusque-là, votre planning en cours reste inchangé. Vous préparez ainsi à l'avance un scénario adapté à des situations prévisibles &mdash; comme une absence pour maladie ou un pic d'activité &mdash; et vous êtes immédiatement opérationnel le moment venu, au lieu d'improviser sous la pression du temps. Il n'y a par ailleurs aucune limite artificielle &mdash; vous créez autant de scénarios que nécessaire."
       }
     ]
   },

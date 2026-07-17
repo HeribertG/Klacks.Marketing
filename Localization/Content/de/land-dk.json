@@ -13,9 +13,21 @@
     "eyebrow": "Der Planungsalltag in dänischen Betrieben",
     "title": "Overenskomst statt Gesetz, Ruhezeit und Zeiterfassungspflicht",
     "items": [
-      { "icon": "gavel", "title": "Den danske model: Tarif statt Einheitsgesetz", "text": "Arbeitszeit, Zuschläge und Urlaub regeln in Dänemark vor allem die Overenskomster von 3F, FOA und VSL sowie der Arbeitgeberverband DI &mdash; nicht ein landesweites Gesetz. Ein Dienstplansystem muss sich an die jeweils geltende Overenskomst anpassen lassen, statt starre Regeln fest zu verdrahten." },
-      { "icon": "bedtime", "title": "11 Stunden Ruhezeit, 35 Stunden Wochenruhe", "text": "Die Arbejdsmiljøloven verlangt 11 zusammenhängende Ruhestunden je 24 Stunden und ein wöchentliches Fridøgn von 35 zusammenhängenden Stunden. Bei Schichtwechsel im Schichtbetrieb (holddrift) darf die Ruhezeit ausnahmsweise auf 8 Stunden verkürzt werden &mdash; muss aber vorher mit dem/der Tillidsrepræsentant besprochen werden." },
-      { "icon": "fact_check", "title": "Zeiterfassungspflicht seit 1. Juli 2024", "text": "Seit dem 1. Juli 2024 muss jeder dänische Betrieb ein objektives, zuverlässiges Zeiterfassungssystem führen, das die 48-Stunden-Grenze im gleitenden 4-Monats-Schnitt nachweist &mdash; die Aufzeichnungen sind 5 Jahre aufzubewahren." }
+      {
+        "icon": "gavel",
+        "title": "Den danske model: Tarif statt Einheitsgesetz",
+        "text": "Arbeitszeit, Zuschläge und Urlaub regeln in Dänemark vor allem die Overenskomster von 3F, FOA und VSL sowie der Arbeitgeberverband DI &mdash; nicht ein landesweites Gesetz. Ein Dienstplansystem muss sich an die jeweils geltende Overenskomst anpassen lassen, statt starre Regeln fest zu verdrahten."
+      },
+      {
+        "icon": "bedtime",
+        "title": "11 Stunden Ruhezeit, 35 Stunden Wochenruhe",
+        "text": "Die Arbejdsmiljøloven verlangt 11 zusammenhängende Ruhestunden je 24 Stunden und ein wöchentliches Fridøgn von 35 zusammenhängenden Stunden. Bei Schichtwechsel im Schichtbetrieb (holddrift) darf die Ruhezeit ausnahmsweise auf 8 Stunden verkürzt werden &mdash; muss aber vorher mit dem/der Tillidsrepræsentant besprochen werden."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Zeiterfassungspflicht seit 1. Juli 2024",
+        "text": "Seit dem 1. Juli 2024 muss jeder dänische Betrieb ein objektives, zuverlässiges Zeiterfassungssystem führen, das die 48-Stunden-Grenze im gleitenden 4-Monats-Schnitt nachweist &mdash; die Aufzeichnungen sind 5 Jahre aufzubewahren."
+      }
     ]
   },
   "rulesCalendar": {
@@ -23,9 +35,21 @@
     "title": "Ein Kalender fürs ganze Königreich",
     "text": "Die Färöer und Grönland gehören zum Königreich Dänemark, haben aber eigene gesetzliche Feiertage &mdash; und selbst der Kalender im dänischen Kernland ändert sich: 2024 wurde der Buß- und Bettag als Feiertag gestrichen. Klacks bildet all das ab.",
     "items": [
-      { "icon": "place", "title": "Eigene Feiertage auf Färöer &amp; Grönland", "text": "Die Färöer feiern Flaggdagur (25. April) und Ólavsøka (29. Juli), Grönland den Nationalfeiertag Ullortuneq (21. Juni) und Helligtrekongersdag (6. Januar) &mdash; Tage, die im dänischen Kernland kein Feiertag sind." },
-      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb mit Sitz in Kopenhagen und Einheiten auf den Färöern oder in Grönland kombiniert deren Nationalfeiertage mit dem dänischen Kalender &mdash; ebenso lässt sich für Grenzgänger in der Öresund-Region der schwedische Kalender ergänzen, etwa für das dort arbeitsfreie Mittsommerfest." },
-      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+      {
+        "icon": "place",
+        "title": "Eigene Feiertage auf Färöer &amp; Grönland",
+        "text": "Die Färöer feiern Flaggdagur (25. April) und Ólavsøka (29. Juli), Grönland den Nationalfeiertag Ullortuneq (21. Juni) und Helligtrekongersdag (6. Januar) &mdash; Tage, die im dänischen Kernland kein Feiertag sind."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Betrieb mit Sitz in Kopenhagen und Einheiten auf den Färöern oder in Grönland kombiniert deren Nationalfeiertage mit dem dänischen Kalender &mdash; ebenso lässt sich für Grenzgänger in der Öresund-Region der schwedische Kalender ergänzen, etwa für das dort arbeitsfreie Mittsommerfest."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
     ],
     "imageFile": "app-calendar-de.png",
     "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
@@ -35,12 +59,41 @@
     "title": "Wie Klacks dänische Betriebe entlastet",
     "subtitle": "Von der flexiblen Overenskomst-Abbildung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Overenskomst-Regeln flexibel hinterlegt", "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt." },
-      { "icon": "bedtime", "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant", "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch; die Verkürzung auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen." },
-      { "icon": "fact_check", "title": "Zeiterfassung dokumentiert, 48-Stunden-Schnitt live überwacht", "text": "Klacks dokumentiert die tägliche Arbeitszeit, überwacht den rollierenden 48-Stunden-Schnitt über 4 Monate live und warnt, bevor der Grenzwert kippt &mdash; die Nachweise hält Klacks 5 Jahre bereit." },
-      { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
+      {
+        "icon": "gavel",
+        "title": "Overenskomst-Regeln flexibel hinterlegt",
+        "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant",
+        "text": "Klacks überwacht die 11-Stunden-Ruhezeit und das 35-Stunden-Fridøgn automatisch; die Verkürzung auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen."
+      },
+      {
+        "icon": "fact_check",
+        "title": "Zeiterfassung dokumentiert, 48-Stunden-Schnitt live überwacht",
+        "text": "Klacks dokumentiert die tägliche Arbeitszeit, überwacht den rollierenden 48-Stunden-Schnitt über 4 Monate live und warnt, bevor der Grenzwert kippt &mdash; die Nachweise hält Klacks 5 Jahre bereit."
+      },
+      {
+        "icon": "route",
+        "title": "Touren &amp; Einsätze automatisch optimiert",
+        "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 11-Stunden-Ruhezeit und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

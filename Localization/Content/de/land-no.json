@@ -13,9 +13,21 @@
     "eyebrow": "Der Planungsalltag in norwegischen Betrieben",
     "title": "AML, Schichtregime und Datatilsynet",
     "items": [
-      { "icon": "gavel", "title": "Drei Arbeitszeit-Regime gleichzeitig", "text": "AML § 10-4 kennt eine Regelarbeitszeit von 40 Stunden/Woche, aber 38 Stunden für Rund-um-die-Uhr-Schichtdienst (døgnkontinuerlig) sowie Zweischichtarbeit mit regelmäßiger Sonn-/Feiertagsarbeit, und 36 Stunden für den volldurchgehenden 3-Schicht-Betrieb inkl. Wochenenden (helkontinuerlig). Von Hand ist die richtige Zuordnung fehleranfällig." },
-      { "icon": "event_repeat", "title": "14-Tage-Frist für den Dienstplan", "text": "Nach AML § 10-3 muss der Dienstplan bei wechselnden Arbeitszeiten so früh wie möglich mit den Vertrauensleuten besprochen und spätestens 14 Tage vor Inkrafttreten bekanntgegeben werden." },
-      { "icon": "fingerprint", "title": "Datatilsynet &amp; biometrische Daten", "text": "Datatilsynet reguliert Mitarbeiterüberwachung und biometrische Datenerfassung &mdash; etwa Fingerabdruck oder Gesichtserkennung beim Stempeln &mdash; sehr restriktiv, da Einwilligung im Abhängigkeitsverhältnis zwischen Arbeitgeber und Arbeitnehmer oft nicht als freiwillige Rechtsgrundlage gilt (Personopplysningsloven)." }
+      {
+        "icon": "gavel",
+        "title": "Drei Arbeitszeit-Regime gleichzeitig",
+        "text": "AML § 10-4 kennt eine Regelarbeitszeit von 40 Stunden/Woche, aber 38 Stunden für Rund-um-die-Uhr-Schichtdienst (døgnkontinuerlig) sowie Zweischichtarbeit mit regelmäßiger Sonn-/Feiertagsarbeit, und 36 Stunden für den volldurchgehenden 3-Schicht-Betrieb inkl. Wochenenden (helkontinuerlig). Von Hand ist die richtige Zuordnung fehleranfällig."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "14-Tage-Frist für den Dienstplan",
+        "text": "Nach AML § 10-3 muss der Dienstplan bei wechselnden Arbeitszeiten so früh wie möglich mit den Vertrauensleuten besprochen und spätestens 14 Tage vor Inkrafttreten bekanntgegeben werden."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Datatilsynet &amp; biometrische Daten",
+        "text": "Datatilsynet reguliert Mitarbeiterüberwachung und biometrische Datenerfassung &mdash; etwa Fingerabdruck oder Gesichtserkennung beim Stempeln &mdash; sehr restriktiv, da Einwilligung im Abhängigkeitsverhältnis zwischen Arbeitgeber und Arbeitnehmer oft nicht als freiwillige Rechtsgrundlage gilt (Personopplysningsloven)."
+      }
     ]
   },
   "rulesCalendar": {
@@ -23,9 +35,21 @@
     "title": "Ein Land, ein Kalender &mdash; die Grenze liegt woanders",
     "text": "Anders als in vielen Ländern gibt es in Norwegen keinen Flickenteppich: Die zehn gesetzlichen Feiertage nach der Helligdagsloven gelten einheitlich im ganzen Land, auch auf Svalbard &mdash; ohne Unterschiede nach Fylke oder Kommune. Die eigentliche Herausforderung entsteht dort, wo norwegische Betriebe mit Partnern in Ländern mit ganz anderen Feiertagskalendern zusammenarbeiten.",
     "items": [
-      { "icon": "place", "title": "National einheitlich, eine Ausnahme kennen", "text": "Alle Feiertage gelten landesweit gleich &mdash; auch der Samische Nationalfeiertag am 6. Februar ist zwar offizieller Flaggentag, aber kein gesetzlich arbeitsfreier Tag. Klacks unterscheidet Feiertag und Gedenktag sauber." },
-      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Offshore- oder Reedereibetrieb aus Bergen oder Stavanger setzt Crews im norwegischen wie im britischen Nordsee-Sektor ein: Skjærtorsdag und der 17. Mai sind in Norwegen gesetzliche Feiertage, in Großbritannien normale Werktage &mdash; und umgekehrt gelten dort eigene Bank Holidays. Klacks führt beide Länderkalender parallel." },
-      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+      {
+        "icon": "place",
+        "title": "National einheitlich, eine Ausnahme kennen",
+        "text": "Alle Feiertage gelten landesweit gleich &mdash; auch der Samische Nationalfeiertag am 6. Februar ist zwar offizieller Flaggentag, aber kein gesetzlich arbeitsfreier Tag. Klacks unterscheidet Feiertag und Gedenktag sauber."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Offshore- oder Reedereibetrieb aus Bergen oder Stavanger setzt Crews im norwegischen wie im britischen Nordsee-Sektor ein: Skjærtorsdag und der 17. Mai sind in Norwegen gesetzliche Feiertage, in Großbritannien normale Werktage &mdash; und umgekehrt gelten dort eigene Bank Holidays. Klacks führt beide Länderkalender parallel."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
     ],
     "imageFile": "app-calendar-de.png",
     "imageAlt": "Feiertagsregeln in Klacks: Norwegische und britische Feiertage parallel geführt für Nordsee-Einsätze",
@@ -35,12 +59,41 @@
     "title": "Wie Klacks norwegische Betriebe entlastet",
     "subtitle": "Von der konfigurierten Regime-Grenze bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "Alle drei Arbeitszeit-Regime konfigurierbar hinterlegt", "text": "Klacks hinterlegt für jeden Schichtplan die passende AML-Wochengrenze &mdash; 40, 38 oder 36 Stunden &mdash;, je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt; die Zuordnung legen Sie einmalig pro Vertrag oder Gruppe fest." },
-      { "icon": "event_available", "title": "14-Tage-Publikationsfrist automatisch geprüft", "text": "Klacks prüft bei der Publikation automatisch, ob der Dienstplan den hinterlegten Mindest-Vorlauf einhält &mdash; die 14-Tage-Frist nach § 10-3 hinterlegen Sie als Regel, und Klacks warnt, bevor ein Plan zu kurzfristig veröffentlicht würde." },
-      { "icon": "timer", "title": "Drei rollierende Überstundengrenzen, parallel überwacht", "text": "Die drei Grenzen nach AML § 10-6 (4) &mdash; 10 Stunden je 7 Tage, 25 Stunden je 4 Wochen und 200 Stunden je 52 Wochen &mdash; zählt Klacks als rollierende Fenster pro Person parallel mit und warnt rechtzeitig, bevor eine der drei Grenzen kippt; den Zuschlag von mindestens 40 % weist Klacks automatisch aus. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "route", "title": "Touren &amp; Einsätze automatisch optimiert", "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar." },
-      { "icon": "shield_lock", "title": "On-Premise: keine biometrische Cloud-Erfassung", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, ganz ohne Zwang zu Fingerabdruck- oder Gesichtserkennungs-Diensten in der Cloud &mdash; im Sinne der Personopplysningsloven und der Datatilsynet-Richtlinien." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten." }
+      {
+        "icon": "gavel",
+        "title": "Alle drei Arbeitszeit-Regime konfigurierbar hinterlegt",
+        "text": "Klacks hinterlegt für jeden Schichtplan die passende AML-Wochengrenze &mdash; 40, 38 oder 36 Stunden &mdash;, je nachdem, ob døgnkontinuerlig, Sonn-/Feiertags-Zweischicht oder helkontinuerlig-Turnus vorliegt; die Zuordnung legen Sie einmalig pro Vertrag oder Gruppe fest."
+      },
+      {
+        "icon": "event_available",
+        "title": "14-Tage-Publikationsfrist automatisch geprüft",
+        "text": "Klacks prüft bei der Publikation automatisch, ob der Dienstplan den hinterlegten Mindest-Vorlauf einhält &mdash; die 14-Tage-Frist nach § 10-3 hinterlegen Sie als Regel, und Klacks warnt, bevor ein Plan zu kurzfristig veröffentlicht würde."
+      },
+      {
+        "icon": "timer",
+        "title": "Drei rollierende Überstundengrenzen, parallel überwacht",
+        "text": "Die drei Grenzen nach AML § 10-6 (4) &mdash; 10 Stunden je 7 Tage, 25 Stunden je 4 Wochen und 200 Stunden je 52 Wochen &mdash; zählt Klacks als rollierende Fenster pro Person parallel mit und warnt rechtzeitig, bevor eine der drei Grenzen kippt; den Zuschlag von mindestens 40 % weist Klacks automatisch aus. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+      },
+      {
+        "icon": "route",
+        "title": "Touren &amp; Einsätze automatisch optimiert",
+        "text": "Klacks legt Einsätze und Routen so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; branchenübergreifend einsetzbar."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: keine biometrische Cloud-Erfassung",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, ganz ohne Zwang zu Fingerabdruck- oder Gesichtserkennungs-Diensten in der Cloud &mdash; im Sinne der Personopplysningsloven und der Datatilsynet-Richtlinien."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, das KI-Modell lässt sich zudem lokal hosten."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die gesetzlichen Ruhezeiten und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

@@ -13,9 +13,21 @@
     "eyebrow": "Der Planungsalltag in niederländischen Betrieben",
     "title": "ATW-Höchstarbeitszeit, Rusttijden und Oproepkrachten",
     "items": [
-      { "icon": "gavel", "title": "Höchstarbeitszeit nach der Arbeidstijdenwet", "text": "Die ATW (Art. 5:7) erlaubt maximal 12 Stunden pro Dienst und 60 Stunden pro Woche &mdash; im Schnitt aber nur 55 Stunden über je 4 und 48 Stunden über je 16 aufeinanderfolgende Wochen. Per CAO abweichbar, aber nie über 60 Stunden. Von Hand kaum durchgängig zu kontrollieren." },
-      { "icon": "bedtime", "title": "Rusttijden nach ATW Art. 5:3 &amp; 5:5", "text": "Mindestens 11 Stunden tägliche und 36 Stunden wöchentliche Ruhezeit sind vorgeschrieben &mdash; mit engen Ausnahmen für eine Verkürzung. Wer das über wechselnde Dienste hinweg von Hand prüft, übersieht schnell eine Verletzung." },
-      { "icon": "event_repeat", "title": "Oproepkrachten korrekt einplanen", "text": "Für Abrufkräfte gilt eine gesetzliche Ankündigungsfrist von 4 Tagen (WAB, BW Art. 7:628a) &mdash; wird ein Einsatz kurzfristig abgesagt, bleibt der volle Lohnanspruch für die abgerufenen Stunden bestehen." }
+      {
+        "icon": "gavel",
+        "title": "Höchstarbeitszeit nach der Arbeidstijdenwet",
+        "text": "Die ATW (Art. 5:7) erlaubt maximal 12 Stunden pro Dienst und 60 Stunden pro Woche &mdash; im Schnitt aber nur 55 Stunden über je 4 und 48 Stunden über je 16 aufeinanderfolgende Wochen. Per CAO abweichbar, aber nie über 60 Stunden. Von Hand kaum durchgängig zu kontrollieren."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rusttijden nach ATW Art. 5:3 &amp; 5:5",
+        "text": "Mindestens 11 Stunden tägliche und 36 Stunden wöchentliche Ruhezeit sind vorgeschrieben &mdash; mit engen Ausnahmen für eine Verkürzung. Wer das über wechselnde Dienste hinweg von Hand prüft, übersieht schnell eine Verletzung."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Oproepkrachten korrekt einplanen",
+        "text": "Für Abrufkräfte gilt eine gesetzliche Ankündigungsfrist von 4 Tagen (WAB, BW Art. 7:628a) &mdash; wird ein Einsatz kurzfristig abgesagt, bleibt der volle Lohnanspruch für die abgerufenen Stunden bestehen."
+      }
     ]
   },
   "rulesCalendar": {
@@ -23,9 +35,21 @@
     "title": "Einheitlich auf dem Festland, eigen in der Karibik",
     "text": "Die Niederlande kennen keine Feiertage auf Provinz-Ebene &mdash; der gesetzliche Kalender gilt landesweit einheitlich. Echte Unterschiede entstehen trotzdem: durch die Karibischen Niederlande und durch traditionelle Stadtfeiertage wie Leidens Ontzet. Klacks bildet das ab, statt es zu vereinfachen.",
     "items": [
-      { "icon": "place", "title": "Karibische Niederlande: eigene Feiertage", "text": "Bonaire, Sint Eustatius und Saba gehören seit 2010 zu den Niederlanden, führen aber eigene freie Tage &mdash; etwa Dia di Rincon (30. April) und den Flag Day (6. September) auf Bonaire oder den Statia Day (16. November) auf Sint Eustatius." },
-      { "icon": "layers", "title": "Kalender mischen", "text": "Ein Betrieb in Enschede oder Maastricht disponiert Grenzgänger nach Deutschland oder Belgien &mdash; da zählen der niederländische und der jeweils ausländische Feiertagskalender gleichzeitig, inklusive der jeweiligen Zuschläge." },
-      { "icon": "tune", "title": "Wirksam oder nur informativ", "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint." }
+      {
+        "icon": "place",
+        "title": "Karibische Niederlande: eigene Feiertage",
+        "text": "Bonaire, Sint Eustatius und Saba gehören seit 2010 zu den Niederlanden, führen aber eigene freie Tage &mdash; etwa Dia di Rincon (30. April) und den Flag Day (6. September) auf Bonaire oder den Statia Day (16. November) auf Sint Eustatius."
+      },
+      {
+        "icon": "layers",
+        "title": "Kalender mischen",
+        "text": "Ein Betrieb in Enschede oder Maastricht disponiert Grenzgänger nach Deutschland oder Belgien &mdash; da zählen der niederländische und der jeweils ausländische Feiertagskalender gleichzeitig, inklusive der jeweiligen Zuschläge."
+      },
+      {
+        "icon": "tune",
+        "title": "Wirksam oder nur informativ",
+        "text": "Sie bestimmen pro Kalender, ob ein Feiertag auf Stunden &amp; Zuschläge wirkt &mdash; oder nur als Erinnerung erscheint."
+      }
     ],
     "imageFile": "app-calendar-de.png",
     "imageAlt": "Feiertagsregeln in Klacks: Feiertage je Nation und Region – Deutschland, USA (Alaska) sowie Schweizer Kantone Luzern, Jura, Glarus und Appenzell",
@@ -35,12 +59,41 @@
     "title": "Wie Klacks niederländische Betriebe entlastet",
     "subtitle": "Von der automatischen ATW-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "ATW-Höchstarbeitszeit automatisch überwacht", "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst und die 60-Stunden-Wochengrenze und überwacht die rollierenden Schnitte über 4 und 16 Wochen live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und drohende Verstöße werden sichtbar, bevor der Dienstplan steht. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "bedtime", "title": "Rusttijden automatisch eingehalten", "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgerechnet." },
-      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Klacks kennt die 4-Tage-Ankündigungsfrist für Abrufkräfte und macht sichtbar, wo eine kurzfristige Absage einen Lohnanspruch auslöst." },
-      { "icon": "privacy_tip", "title": "Keine biometrische Zeiterfassung nötig", "text": "Dienste und Arbeitszeiten lassen sich in Klacks ohne Fingerabdruck- oder Gesichtsscan erfassen &mdash; ganz ohne das AVG-Risiko nach Art. 9, das die Autoriteit Persoonsgegevens bei biometrischer Zeiterfassung am Arbeitsplatz sieht." },
-      { "icon": "shield_lock", "title": "On-Premise: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten verlassen Ihr Haus nicht." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." }
+      {
+        "icon": "gavel",
+        "title": "ATW-Höchstarbeitszeit automatisch überwacht",
+        "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst und die 60-Stunden-Wochengrenze und überwacht die rollierenden Schnitte über 4 und 16 Wochen live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und drohende Verstöße werden sichtbar, bevor der Dienstplan steht. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rusttijden automatisch eingehalten",
+        "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgerechnet."
+      },
+      {
+        "icon": "event_available",
+        "title": "Oproepkrachten korrekt geplant",
+        "text": "Klacks kennt die 4-Tage-Ankündigungsfrist für Abrufkräfte und macht sichtbar, wo eine kurzfristige Absage einen Lohnanspruch auslöst."
+      },
+      {
+        "icon": "privacy_tip",
+        "title": "Keine biometrische Zeiterfassung nötig",
+        "text": "Dienste und Arbeitszeiten lassen sich in Klacks ohne Fingerabdruck- oder Gesichtsscan erfassen &mdash; ganz ohne das AVG-Risiko nach Art. 9, das die Autoriteit Persoonsgegevens bei biometrischer Zeiterfassung am Arbeitsplatz sieht."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "On-Premise: volle Datenhoheit",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten verlassen Ihr Haus nicht."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Rusttijden (ATW Art. 5:3) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {

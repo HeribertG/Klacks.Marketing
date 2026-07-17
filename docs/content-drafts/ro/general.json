@@ -13,22 +13,62 @@
     "eyebrow": "Der Planungsalltag in rumänischen Betrieben",
     "title": "Tägliche Zeiterfassung, Ruhezeit-Zuschlag und verschärfte Bußgelder",
     "items": [
-      { "icon": "fact_check", "title": "Tägliche Zeiterfassung, ITM-fest", "text": "Art. 119 Codul Muncii verlangt eine tägliche Aufzeichnung von Beginn und Ende je Arbeitnehmer, auf Verlangen der Arbeitsinspektion (ITM) vorzulegen &mdash; keine Formvorschrift, aber lückenlose Nachweisbarkeit ist entscheidend." },
-      { "icon": "gavel", "title": "Verschärfte Bußgelder gegen Schwarzarbeit", "text": "Seit 1. Januar 2026 kostet jede identifizierte Schwarzarbeit 40.000 RON pro Person, kumuliert bis zu 1.000.000 RON (Legea nr. 239/2025) &mdash; lückenlose Dokumentation schützt davor." },
-      { "icon": "event_repeat", "title": "48-Stunden-Ruhezeit &amp; 150%-Zuschlag", "text": "Das wöchentliche Ruhefenster von 48 zusammenhängenden Stunden gilt in der Regel Samstag/Sonntag (Art. 137). Wird es nicht konsequent gewährt, greift laut ICCJ-Entscheidung Nr. 415/2025 ein Zuschlag von 150% auf den Grundlohn &mdash; unabhängig von Überstunden." }
+      {
+        "icon": "fact_check",
+        "title": "Tägliche Zeiterfassung, ITM-fest",
+        "text": "Art. 119 Codul Muncii verlangt eine tägliche Aufzeichnung von Beginn und Ende je Arbeitnehmer, auf Verlangen der Arbeitsinspektion (ITM) vorzulegen &mdash; keine Formvorschrift, aber lückenlose Nachweisbarkeit ist entscheidend."
+      },
+      {
+        "icon": "gavel",
+        "title": "Verschärfte Bußgelder gegen Schwarzarbeit",
+        "text": "Seit 1. Januar 2026 kostet jede identifizierte Schwarzarbeit 40.000 RON pro Person, kumuliert bis zu 1.000.000 RON (Legea nr. 239/2025) &mdash; lückenlose Dokumentation schützt davor."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "48-Stunden-Ruhezeit &amp; 150%-Zuschlag",
+        "text": "Das wöchentliche Ruhefenster von 48 zusammenhängenden Stunden gilt in der Regel Samstag/Sonntag (Art. 137). Wird es nicht konsequent gewährt, greift laut ICCJ-Entscheidung Nr. 415/2025 ein Zuschlag von 150% auf den Grundlohn &mdash; unabhängig von Überstunden."
+      }
     ]
   },
   "solutions": {
     "title": "Wie Klacks rumänische Betriebe entlastet",
     "subtitle": "Von der lückenlosen Zeiterfassung bis zum korrekten Ruhezeit-Zuschlag &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "fact_check", "title": "Tägliche Zeiterfassung ITM-fest dokumentiert", "text": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion vorlegbar." },
-      { "icon": "fingerprint", "title": "Ohne biometrische Daten", "text": "Klacks erfasst Arbeitszeiten ohne Fingerabdruck oder Gesichtsscan &mdash; die ANSPDCP sanktioniert biometrische Zeiterfassung, wenn mildere Mittel wie Chipkarte oder PIN verfügbar sind." },
-      { "icon": "event_repeat", "title": "48-Stunden-Ruhezeit &amp; ICCJ-Zuschlag im Blick", "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und weist auf den gesondert geschuldeten 150%-Zuschlag nach ICCJ Nr. 415/2025 hin." },
-      { "icon": "schedule", "title": "Überstunden-Ausgleich fristgerecht geplant", "text": "Klacks plant den Freizeitausgleich innerhalb der 90-Tage-Frist mit und zeigt, wo stattdessen der mindestens 75%-Zuschlag fällig wird." },
-      { "icon": "shield_lock", "title": "Dokumentation gegen Schwarzarbeits-Bußgelder", "text": "Lückenlose Nachweise senken das Risiko der seit 2026 auf bis zu 1.000.000 RON verschärften Bußgelder gegen Schwarzarbeit." },
-      { "icon": "smart_toy", "title": "Klacksy: regelbasiert, keine Blackbox", "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung." },
-      { "icon": "science", "title": "Planänderungen risikofrei testen", "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 48-Stunden-Ruhezeit und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen." }
+      {
+        "icon": "fact_check",
+        "title": "Tägliche Zeiterfassung ITM-fest dokumentiert",
+        "text": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion vorlegbar."
+      },
+      {
+        "icon": "fingerprint",
+        "title": "Ohne biometrische Daten",
+        "text": "Klacks erfasst Arbeitszeiten ohne Fingerabdruck oder Gesichtsscan &mdash; die ANSPDCP sanktioniert biometrische Zeiterfassung, wenn mildere Mittel wie Chipkarte oder PIN verfügbar sind."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "48-Stunden-Ruhezeit &amp; ICCJ-Zuschlag im Blick",
+        "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und weist auf den gesondert geschuldeten 150%-Zuschlag nach ICCJ Nr. 415/2025 hin."
+      },
+      {
+        "icon": "schedule",
+        "title": "Überstunden-Ausgleich fristgerecht geplant",
+        "text": "Klacks plant den Freizeitausgleich innerhalb der 90-Tage-Frist mit und zeigt, wo stattdessen der mindestens 75%-Zuschlag fällig wird."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Dokumentation gegen Schwarzarbeits-Bußgelder",
+        "text": "Lückenlose Nachweise senken das Risiko der seit 2026 auf bis zu 1.000.000 RON verschärften Bußgelder gegen Schwarzarbeit."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: regelbasiert, keine Blackbox",
+        "text": "Der integrierte KI-Assistent Klacksy plant per Sprachbefehl &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, nicht als undurchsichtige KI-Entscheidung."
+      },
+      {
+        "icon": "science",
+        "title": "Planänderungen risikofrei testen",
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 48-Stunden-Ruhezeit (Art. 137) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+      }
     ]
   },
   "klacksy": {
