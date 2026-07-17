@@ -26,6 +26,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseForwardedHeaders();
 app.UseHttpsRedirection();
+
+// Renders the branded 404 page while keeping the 404 status code. Registered
+// ahead of the known-page guard below so it catches the status that guard sets.
+// The re-executed path starts with "_", so RequiresKnownPage lets it through
+// instead of looping back into the guard.
+app.UseStatusCodePagesWithReExecute(NotFoundPage.Route);
+
 app.UseStaticFiles();
 
 // Legacy country-less product URLs redirect, and unknown page URLs answer 404
