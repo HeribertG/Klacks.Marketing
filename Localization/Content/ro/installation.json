@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instalați Klacks: On-Prem sau Docker Compose cu pachetul de țară | Klacks",
+  "metaDescription": "Instalați Klacks pe propria infrastructură: instalator On-Prem ghidat sau stack Docker Compose, preconfigurat cu sărbătorile legale, regulile timpului de lucru și sporurile țării dumneavoastră. Gratuit, open source, fără înregistrare.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalare &middot; Gratuit &amp; open source",
+    "titleHtml": "Rulați Klacks pe cont propriu &mdash; <span class=\"text-secondary\">pe propria dumneavoastră infrastructură.</span>",
+    "subtitle": "Două căi, un singur rezultat: instalatorul On-Prem ghidat sau stack-ul Docker Compose pentru propriul dumneavoastră mediu. Pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru, sporurile și presetările pe domenii ale țării dumneavoastră &mdash; fără înregistrare, fără costuri de licență."
+  },
+  "industry": {
+    "eyebrow": "Pachet de țară",
+    "title": "Alegeți domeniul &mdash; opțional",
+    "text": "Alegerea dumneavoastră este scrisă în profilul de țară ca presetare și determină ce module de domeniu sunt active la prima pornire. Pachetul conține întotdeauna toate domeniile &mdash; puteți activa oricând altele direct în aplicație.",
+    "allLabel": "Toate domeniile"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Instalator On-Prem",
+    "text": "Calea ghidată pentru propriul server: un script de instalare generează secretele și un certificat autosemnat, preia cea mai recentă versiune publicată și pornește întregul stack &mdash; pe Linux sau Windows.",
+    "requirementsTitle": "Cerințe",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) sau Docker Engine cu pluginul Compose (Linux)",
+      "Acces de ieșire către ghcr.io și github.com (imagini și actualizări automate)",
+      "Porturile 80 și 443 libere (configurabile)"
+    ],
+    "stepsTitle": "Trei pași",
+    "steps": [
+      { "title": "Descărcați și dezarhivați", "text": "Descărcați arhiva ZIP pentru țara dumneavoastră și dezarhivați-o pe mașina țintă." },
+      { "title": "Rulați scriptul de instalare", "text": "Pe Linux rulați scriptul shell inclus, pe Windows scriptul PowerShell. Acesta generează secretele și certificatul, aplică profilul de țară și așteaptă până când stack-ul funcționează." },
+      { "title": "Autentificați-vă și schimbați parola", "text": "Autentificați-vă din browser și schimbați imediat parola inițială menționată în fișierul README inclus." }
+    ],
+    "downloadLabel": "Descărcați pachetul On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Calea directă pentru echipele care își administrează singure stack-urile de containere: docker-compose.yml, configurația nginx, scripturi de inițializare, profilul de țară și un șablon .env pregătit cu toate variabilele &mdash; păstrați controlul deplin.",
+    "requirementsTitle": "Cerințe",
+    "requirements": [
+      "Docker Engine cu pluginul Compose (sau Docker Desktop)",
+      "Acces de ieșire către ghcr.io și github.com (imagini și actualizări automate)",
+      "Experiență în operarea stack-urilor Docker Compose"
+    ],
+    "stepsTitle": "Trei pași",
+    "steps": [
+      { "title": "Descărcați și dezarhivați", "text": "Descărcați arhiva ZIP Compose pentru țara dumneavoastră și dezarhivați-o &mdash; fișierul README inclus explică fiecare pas." },
+      { "title": "Configurați .env", "text": "Copiați șablonul .env.example în .env și setați numele serverului plus parolele/secretele. Calea către profilul de țară este deja precompletată." },
+      { "title": "Porniți stack-ul", "text": "Rulați &bdquo;docker compose up -d&rdquo;, autentificați-vă din browser și schimbați imediat parola inițială." }
+    ],
+    "downloadLabel": "Descărcați pachetul Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Doar profilul &mdash; pentru instalările existente",
+    "text": "Klacks rulează deja la dumneavoastră? Profilul (JSON) poartă presetările de țară &mdash; sărbători legale, reguli ale timpului de lucru, sporuri și domenii &mdash; și este aplicat la prima pornire a unei instalări. Este totodată calea de a adăuga ulterior un alt domeniu cu presetările sale.",
+    "downloadLabel": "Descărcați profilul (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Pentru această țară nu există încă un pachet de țară preconfigurat.",
+    "noticeText": "Puteți instala totuși Klacks în întregime: pachetul standard conține totul, cu excepția presetărilor de țară. Sărbătorile legale, regulile timpului de lucru și sporurile le configurați apoi în aplicație.",
+    "downloadLabel": "Descărcați pachetul standard",
+    "composeNote": "Pentru această țară nu există încă un pachet Compose separat &mdash; pachetul standard conține stack-ul Docker Compose complet."
+  },
+  "notes": {
+    "title": "Bine de știut",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Codul sursă complet este public pe GitHub sub licența MIT &mdash; fără costuri de licență, fără vendor lock-in." },
+      { "icon": "storage", "title": "Datele rămân în companie", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare nu părăsesc niciodată serverul dumneavoastră &mdash; nu există cloud obligatoriu." },
+      { "icon": "update", "title": "Actualizări automate", "text": "Instalarea fixează cea mai recentă versiune publicată; un serviciu de actualizare din interiorul stack-ului aplică automat versiunile nou publicate." },
+      { "icon": "lock", "title": "HTTPS de la început", "text": "Instalatorul generează un certificat autosemnat pentru start &mdash; puteți trece oricând la propriul certificat. Schimbați parola inițială imediat după prima autentificare." }
+    ]
+  },
+  "cta": {
+    "title": "Întâi testați, apoi instalați?",
+    "text": "În Playground testați Klacks direct în browser, cu date de exemplu &mdash; fără instalare, fără înregistrare. Sau aruncați o privire asupra codului sursă pe GitHub."
+  }
+}

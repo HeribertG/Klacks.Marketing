@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Installera Klacks: On-Prem eller Docker Compose med landspaket | Klacks",
+  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat On-Prem-installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och tillägg. Gratis, öppen källkod, utan registrering.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installation &middot; Gratis &amp; öppen källkod",
+    "titleHtml": "Kör Klacks själv &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
+    "subtitle": "Två vägar, ett resultat: det guidade On-Prem-installationsprogrammet eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler, tillägg och branschförinställningar &mdash; utan registrering, utan licenskostnader."
+  },
+  "industry": {
+    "eyebrow": "Landspaket",
+    "title": "Välj din bransch &mdash; valfritt",
+    "text": "Ditt val skrivs in i landsprofilen som förinställning och avgör vilka branschmoduler som är aktiva vid första starten. Paketet innehåller alltid alla branscher &mdash; du kan när som helst aktivera fler i appen.",
+    "allLabel": "Alla branscher"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem-installationsprogram",
+    "text": "Den guidade vägen för din egen server: ett installationsskript genererar secrets och ett självsignerat certifikat, hämtar den senast släppta versionen och startar hela stacken &mdash; på Linux eller Windows.",
+    "requirementsTitle": "Krav",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) eller Docker Engine med Compose-plugin (Linux)",
+      "Utgående åtkomst till ghcr.io och github.com (images och automatiska uppdateringar)",
+      "Lediga portar 80 och 443 (konfigurerbart)"
+    ],
+    "stepsTitle": "Tre steg",
+    "steps": [
+      { "title": "Ladda ner och packa upp", "text": "Ladda ner ZIP-filen för ditt land och packa upp den på målmaskinen." },
+      { "title": "Kör installationsskriptet", "text": "Kör det medföljande shellskriptet på Linux, eller PowerShell-skriptet på Windows. Det genererar secrets och certifikatet, tillämpar landsprofilen och väntar tills stacken är igång." },
+      { "title": "Logga in och byt lösenord", "text": "Logga in i webbläsaren och byt omedelbart det initiala lösenordet som anges i den medföljande README-filen." }
+    ],
+    "downloadLabel": "Ladda ner On-Prem-paketet"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Den direkta vägen för team som hanterar sina containerstackar själva: docker-compose.yml, nginx-konfiguration, init-skript, landsprofilen och en förberedd .env-mall med alla variabler &mdash; du behåller full kontroll.",
+    "requirementsTitle": "Krav",
+    "requirements": [
+      "Docker Engine med Compose-plugin (eller Docker Desktop)",
+      "Utgående åtkomst till ghcr.io och github.com (images och automatiska uppdateringar)",
+      "Erfarenhet av att driva Docker Compose-stackar"
+    ],
+    "stepsTitle": "Tre steg",
+    "steps": [
+      { "title": "Ladda ner och packa upp", "text": "Ladda ner Compose-ZIP-filen för ditt land och packa upp den &mdash; den medföljande README-filen går igenom varje steg." },
+      { "title": "Ställ in .env", "text": "Kopiera mallen .env.example till .env och ange servernamn samt lösenord/secrets. Sökvägen till landsprofilen är redan ifylld." },
+      { "title": "Starta stacken", "text": "Kör &rdquo;docker compose up -d&rdquo;, logga in i webbläsaren och byt omedelbart det initiala lösenordet." }
+    ],
+    "downloadLabel": "Ladda ner Compose-paketet"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Endast profilen &mdash; för befintliga installationer",
+    "text": "Kör du redan Klacks? Profilen (JSON) innehåller landsförinställningarna &mdash; helgdagar, arbetstidsregler, tillägg och branscher &mdash; och tillämpas vid en installations första start. Den är också vägen för att senare lägga till ytterligare en bransch med dess förinställningar.",
+    "downloadLabel": "Ladda ner profil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Det finns ännu inget förkonfigurerat landspaket för det här landet.",
+    "noticeText": "Du kan ändå installera Klacks fullt ut: standardpaketet innehåller allt utom landsförinställningarna. Helgdagar, arbetstidsregler och tillägg ställer du sedan in i appen.",
+    "downloadLabel": "Ladda ner standardpaketet",
+    "composeNote": "Det finns ännu inget separat Compose-paket för det här landet &mdash; standardpaketet innehåller den kompletta Docker Compose-stacken."
+  },
+  "notes": {
+    "title": "Bra att veta",
+    "items": [
+      { "icon": "code", "title": "Öppen källkod (MIT)", "text": "Hela källkoden är offentlig på GitHub under MIT-licensen &mdash; inga licenskostnader, ingen leverantörsinlåsning." },
+      { "icon": "storage", "title": "Data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och schemadata lämnar aldrig din server &mdash; det finns inget molntvång." },
+      { "icon": "update", "title": "Automatiska uppdateringar", "text": "Installationen låser den senast släppta versionen; en uppdateringstjänst i stacken installerar nysläppta versioner automatiskt." },
+      { "icon": "lock", "title": "HTTPS från start", "text": "Installationsprogrammet genererar ett självsignerat certifikat så att du kommer igång &mdash; du kan när som helst byta till ett eget certifikat. Byt det initiala lösenordet direkt efter första inloggningen." }
+    ]
+  },
+  "cta": {
+    "title": "Testa först, installera sedan?",
+    "text": "I Playground testar du Klacks direkt i webbläsaren med exempeldata &mdash; utan installation och utan registrering. Eller ta en titt på källkoden på GitHub."
+  }
+}

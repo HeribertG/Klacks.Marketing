@@ -56,6 +56,8 @@ public static class SitemapGenerator
     // company-wide — so they are generated per country rather than hand-listed.
     private static readonly string[] LegalSlugs = { "impressum", "datenschutz" };
 
+    private const string InstallationSlug = "installation";
+
     public static string Build(string baseUrl)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
@@ -68,6 +70,14 @@ public static class SitemapGenerator
             foreach (var culture in SupportedCultures.All)
             {
                 AppendUrl(sb, trimmedBase, culture, _ => pageKey);
+            }
+        }
+
+        foreach (var countryPageKey in CountryIndustries.AllCountries)
+        {
+            foreach (var culture in SupportedCultures.All)
+            {
+                AppendUrl(sb, trimmedBase, culture, _ => $"{countryPageKey}/{InstallationSlug}");
             }
         }
 

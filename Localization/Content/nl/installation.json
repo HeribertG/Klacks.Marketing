@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Klacks installeren: On-Prem of Docker Compose met landenpakket | Klacks",
+  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide On-Prem-installer of Docker Compose-stack, voorgeconfigureerd met de feestdagen, arbeidstijdregels en toeslagen van uw land. Gratis, open source, zonder registratie.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installatie &middot; Gratis &amp; open source",
+    "titleHtml": "Klacks zelf draaien &mdash; <span class=\"text-secondary\">op uw eigen infrastructuur.</span>",
+    "subtitle": "Twee wegen, één resultaat: de begeleide On-Prem-installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels, toeslagen en branchevoorinstellingen van uw land &mdash; zonder registratie, zonder licentiekosten."
+  },
+  "industry": {
+    "eyebrow": "Landenpakket",
+    "title": "Kies uw branche &mdash; optioneel",
+    "text": "Uw keuze wordt als voorinstelling in het landenprofiel opgenomen en bepaalt welke branchemodules bij de eerste start actief zijn. Het pakket bevat altijd alle branches &mdash; u kunt er in de app op elk moment meer activeren.",
+    "allLabel": "Alle branches"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem-installer",
+    "text": "De begeleide weg voor uw eigen server: een installatiescript genereert secrets en een zelfondertekend certificaat, haalt de laatst uitgebrachte versie op en start de complete stack &mdash; op Linux of Windows.",
+    "requirementsTitle": "Vereisten",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) of Docker Engine met de Compose-plugin (Linux)",
+      "Uitgaande toegang tot ghcr.io en github.com (images en automatische updates)",
+      "Vrije poorten 80 en 443 (configureerbaar)"
+    ],
+    "stepsTitle": "Drie stappen",
+    "steps": [
+      { "title": "Downloaden en uitpakken", "text": "Download het ZIP-bestand voor uw land en pak het uit op de doelmachine." },
+      { "title": "Installatiescript uitvoeren", "text": "Voer op Linux het meegeleverde shellscript uit, op Windows het PowerShell-script. Het genereert secrets en het certificaat, past het landenprofiel toe en wacht tot de stack draait." },
+      { "title": "Inloggen en wachtwoord wijzigen", "text": "Log in via de browser en wijzig direct het initiële wachtwoord uit de meegeleverde README." }
+    ],
+    "downloadLabel": "On-Prem-pakket downloaden"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "De directe weg voor teams die hun containerstacks zelf beheren: docker-compose.yml, nginx-configuratie, init-scripts, het landenprofiel en een voorbereide .env-template met alle variabelen &mdash; u houdt de volledige controle.",
+    "requirementsTitle": "Vereisten",
+    "requirements": [
+      "Docker Engine met de Compose-plugin (of Docker Desktop)",
+      "Uitgaande toegang tot ghcr.io en github.com (images en automatische updates)",
+      "Ervaring met het draaien van Docker Compose-stacks"
+    ],
+    "stepsTitle": "Drie stappen",
+    "steps": [
+      { "title": "Downloaden en uitpakken", "text": "Download het Compose-ZIP-bestand voor uw land en pak het uit &mdash; de meegeleverde README beschrijft elke stap." },
+      { "title": ".env instellen", "text": "Kopieer de template .env.example naar .env en stel de servernaam en de wachtwoorden/secrets in. Het pad naar het landenprofiel is al ingevuld." },
+      { "title": "Stack starten", "text": "Voer &bdquo;docker compose up -d&rdquo; uit, log in via de browser en wijzig direct het initiële wachtwoord." }
+    ],
+    "downloadLabel": "Compose-pakket downloaden"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Alleen het profiel &mdash; voor bestaande installaties",
+    "text": "Draait Klacks al? Het profiel (JSON) bevat de landenvoorinstellingen &mdash; feestdagen, arbeidstijdregels, toeslagen en branches &mdash; en wordt bij de eerste start van een installatie toegepast. Het is ook de manier om later een extra branche met bijbehorende voorinstellingen toe te voegen.",
+    "downloadLabel": "Profiel (JSON) downloaden"
+  },
+  "fallback": {
+    "noticeTitle": "Voor dit land is er nog geen voorgeconfigureerd landenpakket.",
+    "noticeText": "U kunt Klacks toch volledig installeren: het standaardpakket bevat alles behalve de landenvoorinstellingen. Feestdagen, arbeidstijdregels en toeslagen stelt u daarna in de app in.",
+    "downloadLabel": "Standaardpakket downloaden",
+    "composeNote": "Een apart Compose-pakket is er voor dit land nog niet &mdash; het standaardpakket bevat de volledige Docker Compose-stack."
+  },
+  "notes": {
+    "title": "Goed om te weten",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "De volledige broncode is openbaar op GitHub onder de MIT-licentie &mdash; geen licentiekosten, geen vendor lock-in." },
+      { "icon": "storage", "title": "Gegevens blijven in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens verlaten uw server nooit &mdash; er is geen verplichte cloud." },
+      { "icon": "update", "title": "Automatische updates", "text": "De installatie pint de laatst uitgebrachte versie vast; een updateservice binnen de stack voert nieuw uitgebrachte versies automatisch door." },
+      { "icon": "lock", "title": "HTTPS vanaf de start", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen." }
+    ]
+  },
+  "cta": {
+    "title": "Eerst uitproberen, dan installeren?",
+    "text": "In de Playground test u Klacks direct in de browser met voorbeelddata &mdash; zonder installatie en zonder registratie. Of bekijk de broncode op GitHub."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instalar Klacks: On-Prem o Docker Compose con paquete de país | Klacks",
+  "metaDescription": "Instale Klacks en su propia infraestructura: instalador On-Prem guiado o stack de Docker Compose, preconfigurado con los días festivos, las normas de jornada laboral y los recargos de su país. Gratis, de código abierto, sin registro.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalación &middot; Gratis &amp; código abierto",
+    "titleHtml": "Opere Klacks usted mismo &mdash; <span class=\"text-secondary\">en su propia infraestructura.</span>",
+    "subtitle": "Dos caminos, un mismo resultado: el instalador On-Prem guiado o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral, los recargos y los ajustes predefinidos por sector de su país &mdash; sin registro, sin costes de licencia."
+  },
+  "industry": {
+    "eyebrow": "Paquete de país",
+    "title": "Elija su sector &mdash; opcional",
+    "text": "Su selección se incorpora al perfil de país como ajuste predefinido y determina qué módulos sectoriales están activos en el primer arranque. El paquete contiene siempre todos los sectores &mdash; puede activar más en la aplicación en cualquier momento.",
+    "allLabel": "Todos los sectores"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Instalador On-Prem",
+    "text": "El camino guiado para su propio servidor: un script de instalación genera los secretos y un certificado autofirmado, descarga la última versión publicada y arranca el stack completo &mdash; en Linux o Windows.",
+    "requirementsTitle": "Requisitos",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) o Docker Engine con el plugin de Compose (Linux)",
+      "Acceso saliente a ghcr.io y github.com (imágenes y actualizaciones automáticas)",
+      "Puertos 80 y 443 libres (configurable)"
+    ],
+    "stepsTitle": "Tres pasos",
+    "steps": [
+      { "title": "Descargar y descomprimir", "text": "Descargue el ZIP de su país y descomprímalo en la máquina de destino." },
+      { "title": "Ejecutar el script de instalación", "text": "Ejecute el script de shell incluido en Linux, o el script de PowerShell en Windows. Genera los secretos y el certificado, aplica el perfil de país y espera hasta que el stack esté operativo." },
+      { "title": "Iniciar sesión y cambiar la contraseña", "text": "Inicie sesión desde el navegador y cambie de inmediato la contraseña inicial indicada en el README incluido." }
+    ],
+    "downloadLabel": "Descargar paquete On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "El camino directo para equipos que gestionan sus propios stacks de contenedores: docker-compose.yml, configuración de nginx, scripts de inicialización, el perfil de país y una plantilla .env preparada con todas las variables &mdash; usted mantiene el control total.",
+    "requirementsTitle": "Requisitos",
+    "requirements": [
+      "Docker Engine con el plugin de Compose (o Docker Desktop)",
+      "Acceso saliente a ghcr.io y github.com (imágenes y actualizaciones automáticas)",
+      "Experiencia en la operación de stacks de Docker Compose"
+    ],
+    "stepsTitle": "Tres pasos",
+    "steps": [
+      { "title": "Descargar y descomprimir", "text": "Descargue el ZIP de Compose de su país y descomprímalo &mdash; el README incluido explica cada paso." },
+      { "title": "Configurar .env", "text": "Copie la plantilla .env.example a .env y defina el nombre del servidor y las contraseñas/secretos. La ruta al perfil de país ya viene precargada." },
+      { "title": "Arrancar el stack", "text": "Ejecute &laquo;docker compose up -d&raquo;, inicie sesión desde el navegador y cambie de inmediato la contraseña inicial." }
+    ],
+    "downloadLabel": "Descargar paquete de Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Solo el perfil &mdash; para instalaciones existentes",
+    "text": "¿Ya tiene Klacks en marcha? El perfil (JSON) contiene los ajustes predefinidos del país &mdash; días festivos, normas de jornada laboral, recargos y sectores &mdash; y se aplica en el primer arranque de una instalación. Es también la vía para añadir más adelante otro sector con sus ajustes predefinidos.",
+    "downloadLabel": "Descargar perfil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Todavía no existe un paquete de país preconfigurado para este país.",
+    "noticeText": "Aun así puede instalar Klacks al completo: el paquete estándar contiene todo excepto los ajustes predefinidos del país. Después configura los días festivos, las normas de jornada laboral y los recargos en la aplicación.",
+    "downloadLabel": "Descargar paquete estándar",
+    "composeNote": "Todavía no hay un paquete de Compose separado para este país &mdash; el paquete estándar contiene el stack completo de Docker Compose."
+  },
+  "notes": {
+    "title": "Conviene saber",
+    "items": [
+      { "icon": "code", "title": "Código abierto (MIT)", "text": "El código fuente completo es público en GitHub bajo licencia MIT &mdash; sin costes de licencia, sin dependencia de un proveedor." },
+      { "icon": "storage", "title": "Los datos se quedan en casa", "text": "Klacks se ejecuta en su infraestructura. Los datos de personal y de planificación nunca salen de su servidor &mdash; no hay nube obligatoria." },
+      { "icon": "update", "title": "Actualizaciones automáticas", "text": "La instalación fija la última versión publicada; un servicio de actualización dentro del stack aplica automáticamente las nuevas versiones publicadas." },
+      { "icon": "lock", "title": "HTTPS desde el principio", "text": "El instalador genera un certificado autofirmado para empezar &mdash; puede cambiar a su propio certificado en cualquier momento. Cambie la contraseña inicial justo después del primer inicio de sesión." }
+    ]
+  },
+  "cta": {
+    "title": "¿Probar primero e instalar después?",
+    "text": "El Playground le permite probar Klacks directamente en el navegador con datos de ejemplo &mdash; sin instalación y sin registro. O eche un vistazo al código fuente en GitHub."
+  }
+}

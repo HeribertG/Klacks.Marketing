@@ -1,0 +1,60 @@
+<div class="card-hover p-8 bg-surface-container-lowest rounded-2xl flex flex-col hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+    <div class="icon-pop w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
+        <span class="material-symbols-outlined text-primary">@Path.Icon</span>
+    </div>
+    <h3 class="text-2xl font-bold text-primary mb-3">@((MarkupString)Path.Title)</h3>
+    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">@((MarkupString)Path.Text)</p>
+
+    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-3">@Path.RequirementsTitle</span>
+    <ul class="space-y-2 list-none p-0 mb-8">
+        @foreach (var requirement in Path.Requirements)
+        {
+            <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                <span class="text-sm text-on-surface-variant leading-relaxed">@((MarkupString)requirement)</span>
+            </li>
+        }
+    </ul>
+
+    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-3">@Path.StepsTitle</span>
+    <ol class="space-y-5 list-none p-0 mb-10">
+        @foreach (var (step, index) in Path.Steps.Select((step, index) => (step, index)))
+        {
+            <li class="flex gap-4">
+                <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 text-secondary font-bold text-sm">@(index + 1)</div>
+                <div>
+                    <span class="font-bold block text-primary text-sm">@((MarkupString)step.Title)</span>
+                    <span class="text-on-surface-variant text-sm">@((MarkupString)step.Text)</span>
+                </div>
+            </li>
+        }
+    </ol>
+
+    <div class="mt-auto">
+        @if (!string.IsNullOrEmpty(DownloadUrl))
+        {
+            <a href="@DownloadUrl" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                <span class="material-symbols-outlined">download</span> @DownloadLabel
+            </a>
+        }
+        @if (!string.IsNullOrEmpty(Note))
+        {
+            <p class="text-xs text-on-surface-variant mt-4 mb-0 font-mono">@Note</p>
+        }
+    </div>
+</div>
+
+@code {
+    // One of the two installation paths (on-prem installer / Docker Compose):
+    // localized card content plus the concrete download target resolved by the parent.
+    [Parameter, EditorRequired] public required InstallPath Path { get; set; }
+
+    // The resolved artifact URL; null renders the card without a download button.
+    [Parameter] public string? DownloadUrl { get; set; }
+
+    [Parameter] public string DownloadLabel { get; set; } = string.Empty;
+
+    // Small print under the button: the expected file name, or the localized
+    // fallback note when no artifact exists for this country.
+    [Parameter] public string? Note { get; set; }
+}

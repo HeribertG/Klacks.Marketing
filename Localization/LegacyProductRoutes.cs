@@ -7,8 +7,9 @@ namespace Klacks.Marketing.Localization;
 // CountryIndustries.ProductSlugs so a new product page cannot be forgotten here.
 public static class LegacyProductRoutes
 {
-    // Legal pages are not products but follow the same country-scoped rule.
-    private static readonly string[] LegalSlugs = { "impressum", "datenschutz" };
+    // Legal pages and the installation/download page are not products but follow
+    // the same country-scoped rule, so their country-less URLs redirect as well.
+    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "installation" };
 
     private static readonly Dictionary<string, string> Redirects = Build();
 
@@ -36,7 +37,7 @@ public static class LegacyProductRoutes
     {
         var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
-        foreach (var slug in CountryIndustries.ProductSlugs.Concat(LegalSlugs))
+        foreach (var slug in CountryIndustries.ProductSlugs.Concat(CountryScopedSlugs))
         {
             foreach (var culture in SupportedCultures.All)
             {

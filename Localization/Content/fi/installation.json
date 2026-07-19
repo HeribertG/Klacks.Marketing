@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Asenna Klacks: On-Prem tai Docker Compose maapaketilla | Klacks",
+  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu On-Prem-asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja lisillä. Ilmainen, avoin lähdekoodi, ei rekisteröitymistä.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Asennus &middot; Ilmainen &amp; avoin lähdekoodi",
+    "titleHtml": "Ajakaa Klacksia itse &mdash; <span class=\"text-secondary\">omassa infrastruktuurissanne.</span>",
+    "subtitle": "Kaksi polkua, yksi lopputulos: ohjattu On-Prem-asennusohjelma tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt, lisät ja toimialakohtaiset esiasetukset &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
+  },
+  "industry": {
+    "eyebrow": "Maapaketti",
+    "title": "Valitkaa toimialanne &mdash; valinnainen",
+    "text": "Valintanne kirjataan maaprofiiliin esiasetuksena, ja se määrää, mitkä toimialamoduulit ovat aktiivisia ensimmäisellä käynnistyskerralla. Paketti sisältää aina kaikki toimialat &mdash; voitte aktivoida lisää sovelluksessa milloin tahansa.",
+    "allLabel": "Kaikki toimialat"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem-asennusohjelma",
+    "text": "Ohjattu polku omalle palvelimelle: asennusskripti luo salaisuudet ja itseallekirjoitetun varmenteen, noutaa uusimman julkaistun version ja käynnistää koko pinon &mdash; Linuxissa tai Windowsissa.",
+    "requirementsTitle": "Vaatimukset",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) tai Docker Engine Compose-laajennuksella (Linux)",
+      "Lähtevä yhteys osoitteisiin ghcr.io ja github.com (imaget ja automaattiset päivitykset)",
+      "Vapaat portit 80 ja 443 (määritettävissä)"
+    ],
+    "stepsTitle": "Kolme vaihetta",
+    "steps": [
+      { "title": "Lataus ja purku", "text": "Ladatkaa maanne ZIP-paketti ja purkakaa se kohdekoneella." },
+      { "title": "Asennusskriptin suoritus", "text": "Suorittakaa Linuxissa mukana tuleva shell-skripti tai Windowsissa PowerShell-skripti. Se luo salaisuudet ja varmenteen, ottaa maaprofiilin käyttöön ja odottaa, kunnes pino on toiminnassa." },
+      { "title": "Kirjautuminen ja salasanan vaihto", "text": "Kirjautukaa selaimella sisään ja vaihtakaa heti mukana tulevassa README-tiedostossa mainittu alkusalasana." }
+    ],
+    "downloadLabel": "Lataa On-Prem-paketti"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Suora polku tiimeille, jotka hallinnoivat konttipinojaan itse: docker-compose.yml, nginx-konfiguraatio, init-skriptit, maaprofiili ja valmiiksi laadittu .env-pohja kaikkine muuttujineen &mdash; täysi hallinta säilyy teillä.",
+    "requirementsTitle": "Vaatimukset",
+    "requirements": [
+      "Docker Engine Compose-laajennuksella (tai Docker Desktop)",
+      "Lähtevä yhteys osoitteisiin ghcr.io ja github.com (imaget ja automaattiset päivitykset)",
+      "Kokemusta Docker Compose -pinojen ylläpidosta"
+    ],
+    "stepsTitle": "Kolme vaihetta",
+    "steps": [
+      { "title": "Lataus ja purku", "text": "Ladatkaa maanne Compose-ZIP-paketti ja purkakaa se &mdash; mukana tuleva README opastaa jokaisen vaiheen." },
+      { "title": ".env-tiedoston määritys", "text": "Kopioikaa pohja .env.example nimelle .env ja asettakaa palvelimen nimi sekä salasanat/salaisuudet. Polku maaprofiiliin on jo valmiiksi täytetty." },
+      { "title": "Pinon käynnistys", "text": "Suorittakaa &rdquo;docker compose up -d&rdquo;, kirjautukaa selaimella sisään ja vaihtakaa alkusalasana heti." }
+    ],
+    "downloadLabel": "Lataa Compose-paketti"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Pelkkä profiili &mdash; olemassa oleviin asennuksiin",
+    "text": "Onko Klacks jo käytössä? Profiili (JSON) sisältää maakohtaiset esiasetukset &mdash; pyhäpäivät, työaikasäännöt, lisät ja toimialat &mdash; ja se otetaan käyttöön asennuksen ensimmäisellä käynnistyskerralla. Se on myös tapa lisätä myöhemmin uusi toimiala esiasetuksineen.",
+    "downloadLabel": "Lataa profiili (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Tälle maalle ei ole vielä esikonfiguroitua maapakettia.",
+    "noticeText": "Voitte silti asentaa Klacksin kokonaisuudessaan: vakiopaketti sisältää kaiken paitsi maakohtaiset esiasetukset. Pyhäpäivät, työaikasäännöt ja lisät määritätte sen jälkeen sovelluksessa.",
+    "downloadLabel": "Lataa vakiopaketti",
+    "composeNote": "Tälle maalle ei ole vielä erillistä Compose-pakettia &mdash; vakiopaketti sisältää täydellisen Docker Compose -pinon."
+  },
+  "notes": {
+    "title": "Hyvä tietää",
+    "items": [
+      { "icon": "code", "title": "Avoin lähdekoodi (MIT)", "text": "Koko lähdekoodi on julkisesti GitHubissa MIT-lisenssillä &mdash; ei lisenssimaksuja, ei toimittajalukkoa." },
+      { "icon": "storage", "title": "Tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot eivät koskaan poistu palvelimeltanne &mdash; pilvipakkoa ei ole." },
+      { "icon": "update", "title": "Automaattiset päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version; pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti." },
+      { "icon": "lock", "title": "HTTPS alusta alkaen", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen." }
+    ]
+  },
+  "cta": {
+    "title": "Ensin kokeilu, sitten asennus?",
+    "text": "Playgroundissa voitte testata Klacksia suoraan selaimessa esimerkkidatalla &mdash; ilman asennusta ja ilman rekisteröitymistä. Tai tutustukaa lähdekoodiin GitHubissa."
+  }
+}

@@ -36,7 +36,7 @@
             {
                 <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")">@Sh("nav.industries")</a>
             }
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("download")">@Sh("nav.download")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref">@Sh("nav.download")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank">@Sh("nav.marketplace")</a>
         </div>
@@ -112,7 +112,7 @@
         {
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
         }
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("download")" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
+        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@ExternalLinks.MarketplaceUrl" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.marketplace")</a>
         <div class="flex flex-wrap gap-3 pt-2 border-t border-surface-container-high">
@@ -177,6 +177,7 @@
     private const string ImprintPageKey = "impressum";
     private const string PrivacyPageKey = "datenschutz";
     private const string KlacksyPageSlug = "klacksy";
+    private const string InstallationPageSlug = "installation";
 
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -309,6 +310,22 @@
         {
             var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
             var suffix = $"{country}/{KlacksyPageSlug}";
+
+            return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
+                ? $"/{suffix}"
+                : $"/{CurrentCultureRecord.UrlSlug}/{suffix}";
+        }
+    }
+
+    // Same country-preserving pattern as KlacksyHref: the installation/download
+    // page exists only under a country, so off a country page it targets the
+    // culture's default one.
+    private string InstallationHref
+    {
+        get
+        {
+            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+            var suffix = $"{country}/{InstallationPageSlug}";
 
             return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
                 ? $"/{suffix}"

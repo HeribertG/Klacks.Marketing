@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Installer Klacks : On-Prem ou Docker Compose avec le paquet pays | Klacks",
+  "metaDescription": "Installez Klacks sur votre propre infrastructure : installateur on-prem guidé ou stack Docker Compose, préconfiguré avec les jours fériés, les règles de temps de travail et les majorations de votre pays. Gratuit, open source, sans inscription.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installation &middot; Gratuit &amp; open source",
+    "titleHtml": "Exploitez Klacks vous-même &mdash; <span class=\"text-secondary\">sur votre propre infrastructure.</span>",
+    "subtitle": "Deux chemins, un même résultat : l'installateur on-prem guidé, ou le stack Docker Compose pour votre propre configuration. Le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail, les majorations et les préréglages sectoriels de votre pays &mdash; sans inscription, sans frais de licence."
+  },
+  "industry": {
+    "eyebrow": "Paquet pays",
+    "title": "Choisissez votre secteur &mdash; optionnel",
+    "text": "Votre choix est inscrit dans le profil pays comme préréglage et détermine quels blocs sectoriels sont actifs au premier démarrage. Le paquet contient toujours tous les secteurs &mdash; vous pouvez en activer d'autres à tout moment dans l'application.",
+    "allLabel": "Tous les secteurs"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Installateur on-prem",
+    "text": "Le chemin guidé pour votre propre serveur : un script d'installation génère les secrets et un certificat auto-signé, récupère la dernière version publiée et démarre l'ensemble du stack &mdash; sous Linux ou Windows.",
+    "requirementsTitle": "Prérequis",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) ou Docker Engine avec le plugin Compose (Linux)",
+      "Accès sortant vers ghcr.io et github.com (images et mises à jour automatiques)",
+      "Ports 80 et 443 libres (configurables)"
+    ],
+    "stepsTitle": "En trois étapes",
+    "steps": [
+      { "title": "Télécharger et décompresser", "text": "Téléchargez le ZIP de votre pays et décompressez-le sur la machine cible." },
+      { "title": "Lancer le script d'installation", "text": "Exécutez le script shell fourni sous Linux, ou le script PowerShell sous Windows. Il génère les secrets et le certificat, applique le profil pays et attend que le stack soit opérationnel." },
+      { "title": "Se connecter et changer le mot de passe", "text": "Connectez-vous depuis votre navigateur et changez immédiatement le mot de passe initial indiqué dans le README fourni." }
+    ],
+    "downloadLabel": "Télécharger le paquet on-prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Le chemin direct pour les équipes qui gèrent elles-mêmes leurs stacks de conteneurs : docker-compose.yml, configuration nginx, scripts d'initialisation, le profil pays et un modèle .env préparé avec toutes les variables &mdash; vous gardez le contrôle total.",
+    "requirementsTitle": "Prérequis",
+    "requirements": [
+      "Docker Engine avec le plugin Compose (ou Docker Desktop)",
+      "Accès sortant vers ghcr.io et github.com (images et mises à jour automatiques)",
+      "Expérience de l'exploitation de stacks Docker Compose"
+    ],
+    "stepsTitle": "En trois étapes",
+    "steps": [
+      { "title": "Télécharger et décompresser", "text": "Téléchargez le ZIP Compose de votre pays et décompressez-le &mdash; le README fourni détaille chaque étape." },
+      { "title": "Configurer le .env", "text": "Copiez le modèle .env.example vers .env et renseignez le nom du serveur ainsi que les mots de passe/secrets. Le chemin vers le profil pays est déjà prérempli." },
+      { "title": "Démarrer le stack", "text": "Exécutez &laquo; docker compose up -d &raquo;, connectez-vous depuis votre navigateur et changez immédiatement le mot de passe initial." }
+    ],
+    "downloadLabel": "Télécharger le paquet Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Le profil seul &mdash; pour les installations existantes",
+    "text": "Klacks tourne déjà ? Le profil (JSON) contient les préréglages du pays &mdash; jours fériés, règles de temps de travail, majorations et secteurs &mdash; et il est appliqué au premier démarrage d'une installation. C'est aussi la voie pour ajouter plus tard un autre secteur avec ses préréglages.",
+    "downloadLabel": "Télécharger le profil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Il n'existe pas encore de paquet pays préconfiguré pour ce pays.",
+    "noticeText": "Vous pouvez néanmoins installer Klacks intégralement : le paquet standard contient tout, sauf les préréglages nationaux. Vous configurez ensuite les jours fériés, les règles de temps de travail et les majorations dans l'application.",
+    "downloadLabel": "Télécharger le paquet standard",
+    "composeNote": "Il n'existe pas encore de paquet Compose séparé pour ce pays &mdash; le paquet standard contient le stack Docker Compose complet."
+  },
+  "notes": {
+    "title": "Bon à savoir",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Le code source complet est public sur GitHub sous licence MIT &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
+      { "icon": "storage", "title": "Les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings ne quittent jamais votre serveur &mdash; aucun cloud imposé." },
+      { "icon": "update", "title": "Mises à jour automatiques", "text": "L'installation épingle la dernière version publiée ; un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
+      { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }
+    ]
+  },
+  "cta": {
+    "title": "Essayer d'abord, installer ensuite ?",
+    "text": "Le Playground vous permet de tester Klacks directement dans le navigateur avec des données d'exemple &mdash; sans installation ni inscription. Ou consultez le code source sur GitHub."
+  }
+}

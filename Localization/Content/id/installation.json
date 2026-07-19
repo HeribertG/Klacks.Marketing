@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instal Klacks: On-Prem atau Docker Compose dengan Paket Negara | Klacks",
+  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer On-Prem terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan tunjangan negara Anda. Gratis, open source, tanpa registrasi.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalasi &middot; Gratis &amp; open source",
+    "titleHtml": "Jalankan Klacks sendiri &mdash; <span class=\"text-secondary\">di infrastruktur Anda sendiri.</span>",
+    "subtitle": "Dua jalur, satu hasil: installer On-Prem terpandu, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, tunjangan, dan prasetel industri negara Anda &mdash; tanpa registrasi, tanpa biaya lisensi."
+  },
+  "industry": {
+    "eyebrow": "Paket negara",
+    "title": "Pilih industri Anda &mdash; opsional",
+    "text": "Pilihan Anda dituliskan ke dalam profil negara sebagai prasetel dan menentukan modul industri mana yang aktif saat pertama kali dijalankan. Paket ini selalu berisi semua industri &mdash; Anda dapat mengaktifkan lebih banyak lagi di aplikasi kapan saja.",
+    "allLabel": "Semua industri"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Installer On-Prem",
+    "text": "Jalur terpandu untuk server Anda sendiri: skrip instalasi membuat secret dan sertifikat self-signed, mengambil versi rilis terbaru, dan menjalankan seluruh stack &mdash; di Linux maupun Windows.",
+    "requirementsTitle": "Persyaratan",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) atau Docker Engine dengan plugin Compose (Linux)",
+      "Akses keluar ke ghcr.io dan github.com (image dan pembaruan otomatis)",
+      "Port 80 dan 443 tersedia (dapat dikonfigurasi)"
+    ],
+    "stepsTitle": "Tiga langkah",
+    "steps": [
+      { "title": "Unduh dan ekstrak", "text": "Unduh ZIP untuk negara Anda dan ekstrak di mesin tujuan." },
+      { "title": "Jalankan skrip instalasi", "text": "Jalankan skrip shell yang disertakan di Linux, atau skrip PowerShell di Windows. Skrip ini membuat secret dan sertifikat, menerapkan profil negara, dan menunggu hingga stack siap beroperasi." },
+      { "title": "Masuk dan ganti kata sandi", "text": "Masuk melalui browser dan segera ganti kata sandi awal yang tercantum dalam README yang disertakan." }
+    ],
+    "downloadLabel": "Unduh paket On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Jalur langsung bagi tim yang mengelola stack kontainernya sendiri: docker-compose.yml, konfigurasi nginx, skrip init, profil negara, dan templat .env yang telah disiapkan dengan semua variabel &mdash; kendali penuh tetap di tangan Anda.",
+    "requirementsTitle": "Persyaratan",
+    "requirements": [
+      "Docker Engine dengan plugin Compose (atau Docker Desktop)",
+      "Akses keluar ke ghcr.io dan github.com (image dan pembaruan otomatis)",
+      "Berpengalaman mengoperasikan stack Docker Compose"
+    ],
+    "stepsTitle": "Tiga langkah",
+    "steps": [
+      { "title": "Unduh dan ekstrak", "text": "Unduh ZIP Compose untuk negara Anda dan ekstrak &mdash; README yang disertakan memandu setiap langkah." },
+      { "title": "Siapkan .env", "text": "Salin templat .env.example menjadi .env dan atur nama server serta kata sandi/secret. Jalur ke profil negara sudah terisi sebelumnya." },
+      { "title": "Jalankan stack", "text": "Jalankan &ldquo;docker compose up -d&rdquo;, masuk melalui browser, dan segera ganti kata sandi awal." }
+    ],
+    "downloadLabel": "Unduh paket Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Hanya profil &mdash; untuk instalasi yang sudah ada",
+    "text": "Sudah menjalankan Klacks? Profil (JSON) memuat prasetel negara &mdash; hari libur nasional, aturan jam kerja, tunjangan, dan industri &mdash; dan diterapkan saat pertama kali sebuah instalasi dijalankan. Ini juga cara untuk menambahkan industri lain beserta prasetelnya di kemudian hari.",
+    "downloadLabel": "Unduh profil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Belum ada paket negara yang telah dikonfigurasi sebelumnya untuk negara ini.",
+    "noticeText": "Anda tetap dapat menginstal Klacks secara lengkap: paket standar berisi semuanya kecuali prasetel negara. Hari libur nasional, aturan jam kerja, dan tunjangan kemudian Anda atur sendiri di aplikasi.",
+    "downloadLabel": "Unduh paket standar",
+    "composeNote": "Belum ada paket Compose terpisah untuk negara ini &mdash; paket standar sudah berisi stack Docker Compose lengkap."
+  },
+  "notes": {
+    "title": "Perlu diketahui",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Seluruh kode sumber tersedia untuk publik di GitHub di bawah lisensi MIT &mdash; tanpa biaya lisensi, tanpa vendor lock-in." },
+      { "icon": "storage", "title": "Data tetap di tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan tidak pernah meninggalkan server Anda &mdash; tidak ada keharusan menggunakan cloud." },
+      { "icon": "update", "title": "Pembaruan otomatis", "text": "Instalasi mengunci versi rilis terbaru; layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis." },
+      { "icon": "lock", "title": "HTTPS sejak awal", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama." }
+    ]
+  },
+  "cta": {
+    "title": "Coba dulu, instal kemudian?",
+    "text": "Playground memungkinkan Anda menguji Klacks langsung di browser dengan data contoh &mdash; tanpa instalasi, tanpa registrasi. Atau lihat kode sumbernya di GitHub."
+  }
+}

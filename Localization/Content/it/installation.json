@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Installare Klacks: On-Prem o Docker Compose con il pacchetto paese | Klacks",
+  "metaDescription": "Installate Klacks sulla vostra infrastruttura: installer on-prem guidato o stack Docker Compose, preconfigurato con giorni festivi, regole sull'orario di lavoro e maggiorazioni del vostro paese. Gratuito, open source, senza registrazione.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installazione &middot; Gratuito &amp; open source",
+    "titleHtml": "Gestite Klacks in autonomia &mdash; <span class=\"text-secondary\">sulla vostra infrastruttura.</span>",
+    "subtitle": "Due strade, un unico risultato: l'installer on-prem guidato oppure lo stack Docker Compose per la vostra configurazione. Il pacchetto paese porta con sé giorni festivi, regole sull'orario di lavoro, maggiorazioni e preimpostazioni di settore del vostro paese &mdash; senza registrazione, senza costi di licenza."
+  },
+  "industry": {
+    "eyebrow": "Pacchetto paese",
+    "title": "Scegliete il vostro settore &mdash; facoltativo",
+    "text": "La scelta viene scritta nel profilo paese come preimpostazione e determina quali blocchi di settore sono attivi al primo avvio. Il pacchetto contiene sempre tutti i settori &mdash; potrete attivarne altri in qualsiasi momento nell'app.",
+    "allLabel": "Tutti i settori"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Installer on-prem",
+    "text": "La via guidata per il vostro server: uno script di installazione genera i secret e un certificato autofirmato, scarica l'ultima versione pubblicata e avvia l'intero stack &mdash; su Linux o Windows.",
+    "requirementsTitle": "Requisiti",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) oppure Docker Engine con il plugin Compose (Linux)",
+      "Accesso in uscita verso ghcr.io e github.com (immagini e aggiornamenti automatici)",
+      "Porte 80 e 443 libere (configurabili)"
+    ],
+    "stepsTitle": "In tre passi",
+    "steps": [
+      { "title": "Scaricare ed estrarre", "text": "Scaricate lo ZIP del vostro paese ed estraetelo sulla macchina di destinazione." },
+      { "title": "Avviare lo script di installazione", "text": "Eseguite lo script shell incluso su Linux, oppure lo script PowerShell su Windows. Genera i secret e il certificato, applica il profilo paese e attende che lo stack sia operativo." },
+      { "title": "Accedere e cambiare la password", "text": "Accedete dal browser e cambiate subito la password iniziale indicata nel README incluso." }
+    ],
+    "downloadLabel": "Scarica il pacchetto on-prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "La via diretta per i team che gestiscono da sé i propri stack di container: docker-compose.yml, configurazione nginx, script di inizializzazione, il profilo paese e un modello .env già pronto con tutte le variabili &mdash; il controllo resta a voi.",
+    "requirementsTitle": "Requisiti",
+    "requirements": [
+      "Docker Engine con il plugin Compose (oppure Docker Desktop)",
+      "Accesso in uscita verso ghcr.io e github.com (immagini e aggiornamenti automatici)",
+      "Esperienza nella gestione di stack Docker Compose"
+    ],
+    "stepsTitle": "In tre passi",
+    "steps": [
+      { "title": "Scaricare ed estrarre", "text": "Scaricate lo ZIP Compose del vostro paese ed estraetelo &mdash; il README incluso descrive ogni passaggio." },
+      { "title": "Configurare il .env", "text": "Copiate il modello .env.example in .env e impostate il nome del server oltre a password e secret. Il percorso del profilo paese è già precompilato." },
+      { "title": "Avviare lo stack", "text": "Eseguite &laquo;docker compose up -d&raquo;, accedete dal browser e cambiate subito la password iniziale." }
+    ],
+    "downloadLabel": "Scarica il pacchetto Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Solo il profilo &mdash; per installazioni esistenti",
+    "text": "Klacks è già in funzione? Il profilo (JSON) contiene le preimpostazioni del paese &mdash; giorni festivi, regole sull'orario di lavoro, maggiorazioni e settori &mdash; e viene applicato al primo avvio di un'installazione. È anche il modo per aggiungere in seguito un altro settore con le sue preimpostazioni.",
+    "downloadLabel": "Scarica il profilo (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Per questo paese non esiste ancora un pacchetto paese preconfigurato.",
+    "noticeText": "Potete comunque installare Klacks per intero: il pacchetto standard contiene tutto tranne le preimpostazioni nazionali. Giorni festivi, regole sull'orario di lavoro e maggiorazioni si configurano poi nell'app.",
+    "downloadLabel": "Scarica il pacchetto standard",
+    "composeNote": "Per questo paese non esiste ancora un pacchetto Compose separato &mdash; il pacchetto standard contiene lo stack Docker Compose completo."
+  },
+  "notes": {
+    "title": "Da sapere",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Il codice sorgente completo è pubblico su GitHub con licenza MIT &mdash; nessun costo di licenza, nessun vendor lock-in." },
+      { "icon": "storage", "title": "I dati restano in azienda", "text": "Klacks gira sulla vostra infrastruttura. I dati del personale e dei turni non lasciano mai il vostro server &mdash; nessun cloud obbligato." },
+      { "icon": "update", "title": "Aggiornamenti automatici", "text": "L'installazione fissa l'ultima versione pubblicata; un servizio di aggiornamento nello stack applica automaticamente le nuove versioni pubblicate." },
+      { "icon": "lock", "title": "HTTPS fin dall'inizio", "text": "L'installer genera un certificato autofirmato per partire &mdash; potete passare in qualsiasi momento a un certificato vostro. Cambiate la password iniziale subito dopo il primo accesso." }
+    ]
+  },
+  "cta": {
+    "title": "Prima provare, poi installare?",
+    "text": "Nel Playground provate Klacks direttamente nel browser con dati di esempio &mdash; senza installazione e senza registrazione. Oppure date un'occhiata al codice sorgente su GitHub."
+  }
+}

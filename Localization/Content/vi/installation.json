@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Cài đặt Klacks: On-Prem hoặc Docker Compose với gói quốc gia của bạn | Klacks",
+  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt On-Prem có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp của quốc gia bạn. Miễn phí, mã nguồn mở, không cần đăng ký.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Cài đặt &middot; Miễn phí &amp; mã nguồn mở",
+    "titleHtml": "Tự vận hành Klacks &mdash; <span class=\"text-secondary\">trên hạ tầng của riêng bạn.</span>",
+    "subtitle": "Hai con đường, một kết quả: trình cài đặt On-Prem có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc, phụ cấp và các thiết lập sẵn theo ngành của quốc gia bạn &mdash; không cần đăng ký, không phí bản quyền."
+  },
+  "industry": {
+    "eyebrow": "Gói quốc gia",
+    "title": "Chọn ngành của bạn &mdash; tùy chọn",
+    "text": "Lựa chọn của bạn được ghi vào hồ sơ quốc gia dưới dạng thiết lập sẵn và quyết định những khối ngành nào được kích hoạt ở lần khởi động đầu tiên. Gói luôn chứa đầy đủ mọi ngành &mdash; bạn có thể kích hoạt thêm trong ứng dụng bất cứ lúc nào.",
+    "allLabel": "Tất cả các ngành"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Trình cài đặt On-Prem",
+    "text": "Con đường có hướng dẫn cho máy chủ của riêng bạn: một tập lệnh cài đặt sẽ tạo các khóa bí mật và chứng chỉ tự ký, kéo về phiên bản phát hành mới nhất và khởi động toàn bộ stack &mdash; trên Linux hoặc Windows.",
+    "requirementsTitle": "Yêu cầu",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) hoặc Docker Engine với plugin Compose (Linux)",
+      "Kết nối ra ngoài tới ghcr.io và github.com (image và cập nhật tự động)",
+      "Cổng 80 và 443 còn trống (có thể cấu hình)"
+    ],
+    "stepsTitle": "Ba bước",
+    "steps": [
+      { "title": "Tải về và giải nén", "text": "Tải tệp ZIP cho quốc gia của bạn và giải nén trên máy đích." },
+      { "title": "Chạy tập lệnh cài đặt", "text": "Trên Linux chạy shell script đi kèm, trên Windows chạy tập lệnh PowerShell. Tập lệnh tạo các khóa bí mật và chứng chỉ, áp dụng hồ sơ quốc gia và chờ cho đến khi stack sẵn sàng hoạt động." },
+      { "title": "Đăng nhập và đổi mật khẩu", "text": "Đăng nhập từ trình duyệt và đổi ngay mật khẩu ban đầu được ghi trong README đi kèm." }
+    ],
+    "downloadLabel": "Tải gói On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Con đường trực tiếp cho các đội ngũ tự quản lý stack container của mình: docker-compose.yml, cấu hình nginx, các script khởi tạo, hồ sơ quốc gia và một mẫu .env đã chuẩn bị sẵn với đầy đủ biến &mdash; bạn giữ toàn quyền kiểm soát.",
+    "requirementsTitle": "Yêu cầu",
+    "requirements": [
+      "Docker Engine với plugin Compose (hoặc Docker Desktop)",
+      "Kết nối ra ngoài tới ghcr.io và github.com (image và cập nhật tự động)",
+      "Kinh nghiệm vận hành các stack Docker Compose"
+    ],
+    "stepsTitle": "Ba bước",
+    "steps": [
+      { "title": "Tải về và giải nén", "text": "Tải tệp ZIP Compose cho quốc gia của bạn và giải nén &mdash; README đi kèm hướng dẫn từng bước." },
+      { "title": "Thiết lập .env", "text": "Sao chép mẫu .env.example thành .env và đặt tên máy chủ cùng các mật khẩu/khóa bí mật. Đường dẫn tới hồ sơ quốc gia đã được điền sẵn." },
+      { "title": "Khởi động stack", "text": "Chạy “docker compose up -d”, đăng nhập từ trình duyệt và đổi ngay mật khẩu ban đầu." }
+    ],
+    "downloadLabel": "Tải gói Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Chỉ hồ sơ &mdash; cho các bản cài đặt hiện có",
+    "text": "Bạn đã chạy Klacks rồi? Hồ sơ (JSON) chứa các thiết lập sẵn của quốc gia &mdash; ngày lễ, quy định thời giờ làm việc, phụ cấp và ngành nghề &mdash; và được áp dụng ở lần khởi động đầu tiên của một bản cài đặt. Đây cũng là cách để bổ sung thêm một ngành cùng các thiết lập sẵn của nó về sau.",
+    "downloadLabel": "Tải hồ sơ (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Hiện chưa có gói quốc gia được cấu hình sẵn cho quốc gia này.",
+    "noticeText": "Bạn vẫn có thể cài đặt Klacks đầy đủ: gói tiêu chuẩn chứa mọi thứ ngoại trừ các thiết lập sẵn theo quốc gia. Sau đó bạn tự thiết lập ngày lễ, quy định thời giờ làm việc và phụ cấp trong ứng dụng.",
+    "downloadLabel": "Tải gói tiêu chuẩn",
+    "composeNote": "Hiện chưa có gói Compose riêng cho quốc gia này &mdash; gói tiêu chuẩn đã chứa đầy đủ stack Docker Compose."
+  },
+  "notes": {
+    "title": "Những điều nên biết",
+    "items": [
+      { "icon": "code", "title": "Mã nguồn mở (MIT)", "text": "Toàn bộ mã nguồn được công khai trên GitHub theo giấy phép MIT &mdash; không phí bản quyền, không bị khóa chặt vào nhà cung cấp." },
+      { "icon": "storage", "title": "Dữ liệu ở lại trong doanh nghiệp", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc không bao giờ rời khỏi máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud." },
+      { "icon": "update", "title": "Cập nhật tự động", "text": "Bản cài đặt ghim phiên bản phát hành mới nhất; một dịch vụ cập nhật bên trong stack sẽ tự động áp dụng các phiên bản mới được phát hành." },
+      { "icon": "lock", "title": "HTTPS ngay từ đầu", "text": "Trình cài đặt tạo một chứng chỉ tự ký để bạn khởi đầu &mdash; bạn có thể chuyển sang chứng chỉ riêng bất cứ lúc nào. Hãy đổi mật khẩu ban đầu ngay sau lần đăng nhập đầu tiên." }
+    ]
+  },
+  "cta": {
+    "title": "Dùng thử trước, cài đặt sau?",
+    "text": "Playground cho phép bạn thử Klacks ngay trong trình duyệt với dữ liệu mẫu &mdash; không cần cài đặt, không cần đăng ký. Hoặc xem mã nguồn trên GitHub."
+  }
+}

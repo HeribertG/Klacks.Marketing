@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Klacksのインストール：国別パッケージ付きOn-PremまたはDocker Compose | Klacks",
+  "metaDescription": "Klacksを自社インフラにインストール：ガイド付きOn-PremインストーラーまたはDocker Composeスタック。貴社の国の祝日、労働時間規則、割増手当があらかじめ設定済み。無料、オープンソース、登録不要。",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "インストール &middot; 無料 &amp; オープンソース",
+    "titleHtml": "Klacksを自分で運用する &mdash; <span class=\"text-secondary\">自社のインフラ上で。</span>",
+    "subtitle": "2つの方法、1つの結果：ガイド付きOn-Premインストーラー、または独自セットアップ向けのDocker Composeスタック。国別パッケージには、貴社の国の祝日、労働時間規則、割増手当、業種プリセットが最初から含まれています &mdash; 登録不要、ライセンス費用もかかりません。"
+  },
+  "industry": {
+    "eyebrow": "国別パッケージ",
+    "title": "業種を選択 &mdash; 任意",
+    "text": "選択した内容はプリセットとして国別プロファイルに書き込まれ、初回起動時にどの業種ブロックが有効になるかを決定します。パッケージには常にすべての業種が含まれています &mdash; アプリ内でいつでも追加の業種を有効化できます。",
+    "allLabel": "すべての業種"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Premインストーラー",
+    "text": "自社サーバー向けのガイド付きの方法：インストールスクリプトがシークレットと自己署名証明書を生成し、最新のリリース版を取得してスタック全体を起動します &mdash; LinuxでもWindowsでも。",
+    "requirementsTitle": "必要条件",
+    "requirements": [
+      "Docker Desktop（Windows/Mac）またはComposeプラグイン付きDocker Engine（Linux）",
+      "ghcr.ioおよびgithub.comへの外向き接続（イメージと自動更新）",
+      "空きポート80および443（変更可能）"
+    ],
+    "stepsTitle": "3つのステップ",
+    "steps": [
+      { "title": "ダウンロードして展開", "text": "貴社の国向けのZIPをダウンロードし、対象マシン上で展開します。" },
+      { "title": "インストールスクリプトを実行", "text": "Linuxでは同梱のシェルスクリプトを、WindowsではPowerShellスクリプトを実行します。シークレットと証明書を生成し、国別プロファイルを適用して、スタックが正常に起動するまで待機します。" },
+      { "title": "ログインしてパスワードを変更", "text": "ブラウザからログインし、同梱のREADMEに記載された初期パスワードをただちに変更します。" }
+    ],
+    "downloadLabel": "On-Premパッケージをダウンロード"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "コンテナスタックを自社で管理するチーム向けの直接的な方法：docker-compose.yml、nginx設定、初期化スクリプト、国別プロファイル、そしてすべての変数を備えた.envテンプレート &mdash; 完全なコントロールを維持できます。",
+    "requirementsTitle": "必要条件",
+    "requirements": [
+      "Composeプラグイン付きDocker Engine（またはDocker Desktop）",
+      "ghcr.ioおよびgithub.comへの外向き接続（イメージと自動更新）",
+      "Docker Composeスタックの運用経験"
+    ],
+    "stepsTitle": "3つのステップ",
+    "steps": [
+      { "title": "ダウンロードして展開", "text": "貴社の国向けのCompose ZIPをダウンロードして展開します &mdash; 同梱のREADMEが各ステップを解説しています。" },
+      { "title": ".envを設定", "text": ".env.exampleテンプレートを.envにコピーし、サーバー名とパスワード／シークレットを設定します。国別プロファイルへのパスはあらかじめ入力済みです。" },
+      { "title": "スタックを起動", "text": "「docker compose up -d」を実行し、ブラウザからログインして初期パスワードをただちに変更します。" }
+    ],
+    "downloadLabel": "Composeパッケージをダウンロード"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "プロファイルのみ &mdash; 既存インストール向け",
+    "text": "すでにKlacksをご利用中ですか？プロファイル（JSON）には国別プリセット（祝日、労働時間規則、割増手当、業種）が含まれており、インストールの初回起動時に適用されます。後から別の業種をそのプリセットとともに追加する場合もこの方法を使います。",
+    "downloadLabel": "プロファイル（JSON）をダウンロード"
+  },
+  "fallback": {
+    "noticeTitle": "この国向けの事前設定済み国別パッケージはまだありません。",
+    "noticeText": "それでもKlacksは完全にインストールできます：標準パッケージには国別プリセット以外のすべてが含まれています。祝日、労働時間規則、割増手当は、その後アプリ内で設定します。",
+    "downloadLabel": "標準パッケージをダウンロード",
+    "composeNote": "この国向けの個別のComposeパッケージはまだありません &mdash; 標準パッケージに完全なDocker Composeスタックが含まれています。"
+  },
+  "notes": {
+    "title": "知っておきたいこと",
+    "items": [
+      { "icon": "code", "title": "オープンソース（MIT）", "text": "完全なソースコードはMITライセンスのもとGitHubで公開されています &mdash; ライセンス費用なし、ベンダーロックインなし。" },
+      { "icon": "storage", "title": "データは社内に留まる", "text": "Klacksは貴社のインフラ上で動作します。人事データやシフトデータが貴社のサーバーから外に出ることはありません &mdash; クラウドの強制はありません。" },
+      { "icon": "update", "title": "自動更新", "text": "インストール時に最新のリリース版が固定され、スタック内の更新サービスが新しくリリースされたバージョンを自動的に適用します。" },
+      { "icon": "lock", "title": "最初からHTTPS", "text": "インストーラーはスタート用に自己署名証明書を生成します &mdash; 独自の証明書へはいつでも切り替え可能です。初回ログイン後、初期パスワードをただちに変更してください。" }
+    ]
+  },
+  "cta": {
+    "title": "まず試してから、インストールしますか？",
+    "text": "Playgroundでは、サンプルデータを使ってブラウザ上で直接Klacksを試せます &mdash; インストール不要、登録不要。あるいはGitHubでソースコードをご覧ください。"
+  }
+}

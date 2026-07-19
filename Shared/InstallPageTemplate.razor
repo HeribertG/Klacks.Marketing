@@ -1,0 +1,208 @@
+@inject IPageContentProvider ContentProvider
+@inject IConfiguration Configuration
+
+<PageTitle>@Content.PageTitle</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" BreadcrumbName="@Sh("nav.download")" />
+
+<!-- HERO -->
+<header class="pt-32 pb-16 px-8 max-w-4xl mx-auto text-center">
+    <div class="hero-enter hero-enter-1 inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-6">
+        <span class="material-symbols-outlined text-secondary text-base">@Content.Hero.BadgeIcon</span>
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Hero.Badge)</span>
+    </div>
+    <h1 class="hero-enter hero-enter-2 text-[2.75rem] md:text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">
+        @((MarkupString)Content.Hero.TitleHtml)
+    </h1>
+    <p class="hero-enter hero-enter-3 text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        @((MarkupString)Content.Hero.Subtitle)
+    </p>
+</header>
+
+@if (PackageAvailable)
+{
+    <!-- INDUSTRY PICKER -->
+    <section class="reveal px-8 max-w-4xl mx-auto text-center pb-16 no-line-rule">
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Industry.Eyebrow)</span>
+        <h2 class="text-[1.75rem] md:text-[2rem] font-black tracking-tight mt-4 mb-4">@((MarkupString)Content.Industry.Title)</h2>
+        <p class="text-on-surface-variant text-sm leading-relaxed max-w-2xl mx-auto mb-8">@((MarkupString)Content.Industry.Text)</p>
+        <div class="flex flex-wrap justify-center gap-3">
+            <button type="button" @onclick="() => SelectIndustry(RegionPackages.AllIndustries)" class="@PillClass(RegionPackages.AllIndustries)">
+                @Content.Industry.AllLabel
+            </button>
+            @foreach (var industry in SelectableIndustries)
+            {
+                var marketplaceSlug = RegionPackages.IndustryFor(industry.Slug);
+                <button type="button" @onclick="() => SelectIndustry(marketplaceSlug)" class="@PillClass(marketplaceSlug)">
+                    @Ix(industry.LabelKey)
+                </button>
+            }
+        </div>
+    </section>
+}
+else
+{
+    <!-- NO COUNTRY PACKAGE NOTICE -->
+    <section class="reveal px-8 max-w-4xl mx-auto pb-16 no-line-rule">
+        <div class="p-6 bg-surface-container-low rounded-2xl flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary text-2xl">info</span>
+            <div>
+                <span class="font-bold block text-primary mb-1">@((MarkupString)Content.Fallback.NoticeTitle)</span>
+                <span class="text-on-surface-variant text-sm leading-relaxed">@((MarkupString)Content.Fallback.NoticeText)</span>
+            </div>
+        </div>
+    </section>
+}
+
+<!-- TWO INSTALLATION PATHS -->
+<section class="reveal pb-24 px-8 max-w-7xl mx-auto no-line-rule">
+    <div class="reveal-stagger grid lg:grid-cols-2 gap-8 items-stretch">
+        <InstallPathCard Path="@Content.OnPrem"
+                         DownloadUrl="@OnPremDownloadUrl"
+                         DownloadLabel="@OnPremDownloadLabel"
+                         Note="@OnPremNote" />
+        <InstallPathCard Path="@Content.Compose"
+                         DownloadUrl="@ComposeDownloadUrl"
+                         DownloadLabel="@Content.Compose.DownloadLabel"
+                         Note="@ComposeNote" />
+    </div>
+</section>
+
+@if (PackageAvailable)
+{
+    <!-- PROFILE JSON FOR EXISTING INSTALLATIONS -->
+    <section class="reveal pb-24 px-8 max-w-7xl mx-auto no-line-rule">
+        <div class="p-8 bg-surface-container-low rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
+            <div class="icon-pop w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest shrink-0">
+                <span class="material-symbols-outlined text-primary">@Content.Profile.Icon</span>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-lg font-bold text-primary mb-2">@((MarkupString)Content.Profile.Title)</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed m-0">@((MarkupString)Content.Profile.Text)</p>
+            </div>
+            <a href="@ProfileDownloadUrl" class="px-6 py-3 rounded-xl font-bold text-secondary border border-secondary/30 hover:bg-secondary/5 transition-all no-underline inline-flex items-center gap-2 shrink-0">
+                <span class="material-symbols-outlined">description</span> @Content.Profile.DownloadLabel
+            </a>
+        </div>
+    </section>
+}
+
+<!-- GOOD TO KNOW -->
+<section class="reveal bg-surface-container-low py-24 no-line-rule">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight">@((MarkupString)Content.Notes.Title)</h2>
+        </div>
+        <div class="reveal-stagger grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            @foreach (var note in Content.Notes.Items)
+            {
+                <div class="flex flex-col items-start">
+                    <div class="icon-pop w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-5"><span class="material-symbols-outlined text-primary">@note.Icon</span></div>
+                    <h4 class="text-base font-bold text-primary mb-2">@((MarkupString)note.Title)</h4>
+                    <p class="text-on-surface-variant text-sm leading-relaxed m-0">@((MarkupString)note.Text)</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="mx-8 my-24">
+    <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-24 px-8 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
+            <div class="blob-animate-2 absolute -bottom-32 -left-16 w-[480px] h-[480px] bg-secondary-fixed-dim rounded-full blur-[100px]"></div>
+        </div>
+        <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@((MarkupString)Content.Cta.Title)</h2>
+        <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@((MarkupString)Content.Cta.Text)</p>
+        <div class="flex flex-wrap justify-center gap-6 relative z-10">
+            <button type="button" @onclick="OpenDemoModal" class="btn-shine bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform flex items-center gap-3"><span class="material-symbols-outlined">play_circle</span> @Sh("cta.tryButton")</button>
+            <a href="@ExternalLinks.GithubUrl" target="_blank" class="border border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined">code</span> @Sh("nav.github")</a>
+        </div>
+    </div>
+</section>
+
+@code {
+    private const string MarketplaceBaseUrlConfigKey = "Marketplace:BaseUrl";
+    private const string OnPremFileNameFormat = "klacks-onprem-{0}-{1}.zip";
+    private const string ComposeFileNameFormat = "klacks-compose-{0}-{1}.zip";
+
+    [Parameter, EditorRequired] public required string PageKey { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+    [Parameter] public string? RoutePath { get; set; }
+
+    [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
+
+    private string _selectedIndustry = RegionPackages.AllIndustries;
+
+    private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
+
+    private InstallPageContent Content => ContentProvider.GetInstallPage(Culture, PageKey);
+
+    private string DescriptionSource => Content.MetaDescription ?? Content.Hero.Subtitle;
+
+    private string MarketplaceBaseUrl => Configuration[MarketplaceBaseUrlConfigKey] ?? ExternalLinks.MarketplaceUrl;
+
+    // The two-letter marketplace country code derived from the owning country page
+    // ("land-ch-installation" -> "ch").
+    private string? CountryCode
+    {
+        get
+        {
+            var owningCountry = CountryIndustries.OwningCountry(PageKey);
+            return owningCountry is null ? null : RegionPackages.CountryCode(owningCountry);
+        }
+    }
+
+    private bool PackageAvailable => CountryCode is { } code && RegionPackages.HasPackage(code);
+
+    // The country's industry pages that map onto a marketplace industry slug
+    // (excludes the Klacksy pseudo-industry card).
+    private IEnumerable<CountryIndustry> SelectableIndustries
+    {
+        get
+        {
+            var owningCountry = CountryIndustries.OwningCountry(PageKey);
+            var industries = owningCountry is null ? null : CountryIndustries.ForCountry(owningCountry);
+
+            return industries?.Where(industry => RegionPackages.HasIndustryMapping(industry.Slug))
+                ?? Enumerable.Empty<CountryIndustry>();
+        }
+    }
+
+    private void SelectIndustry(string marketplaceSlug) => _selectedIndustry = marketplaceSlug;
+
+    private string PillClass(string marketplaceSlug)
+        => marketplaceSlug == _selectedIndustry
+            ? "px-5 py-2.5 rounded-full text-sm font-bold bg-secondary text-white transition-all"
+            : "px-5 py-2.5 rounded-full text-sm font-bold bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-all";
+
+    private string? DownloadUrl(string artifact)
+        => PackageAvailable
+            ? RegionPackages.DownloadUrl(MarketplaceBaseUrl, CountryCode!, _selectedIndustry, artifact)
+            : null;
+
+    private string? OnPremDownloadUrl
+        => PackageAvailable ? DownloadUrl(RegionPackages.OnPremZipArtifact) : ExternalLinks.OnPremBundleUrl;
+
+    private string OnPremDownloadLabel
+        => PackageAvailable ? Content.OnPrem.DownloadLabel : Content.Fallback.DownloadLabel;
+
+    private string OnPremNote
+        => PackageAvailable
+            ? string.Format(OnPremFileNameFormat, CountryCode, _selectedIndustry)
+            : ExternalLinks.OnPremBundleFileName;
+
+    private string? ComposeDownloadUrl => DownloadUrl(RegionPackages.ComposeZipArtifact);
+
+    private string ComposeNote
+        => PackageAvailable
+            ? string.Format(ComposeFileNameFormat, CountryCode, _selectedIndustry)
+            : Content.Fallback.ComposeNote;
+
+    private string ProfileDownloadUrl
+        => RegionPackages.DownloadUrl(MarketplaceBaseUrl, CountryCode ?? string.Empty, _selectedIndustry, RegionPackages.ProfileJsonArtifact);
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
+
+    private string Ix(string key) => ContentProvider.GetText(Culture, "index", key);
+}

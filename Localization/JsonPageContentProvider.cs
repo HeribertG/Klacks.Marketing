@@ -9,6 +9,7 @@ public sealed class JsonPageContentProvider : IPageContentProvider
 
     private readonly string _contentRoot;
     private readonly ConcurrentDictionary<string, IndustryPageContent?> _industryCache = new();
+    private readonly ConcurrentDictionary<string, InstallPageContent?> _installCache = new();
     private readonly ConcurrentDictionary<string, IReadOnlyDictionary<string, string>?> _flatCache = new();
 
     public JsonPageContentProvider(IWebHostEnvironment environment)
@@ -29,6 +30,17 @@ public sealed class JsonPageContentProvider : IPageContentProvider
             ?? LoadIndustryPage(SupportedCultures.DefaultCode, pageKey)
             ?? (masterKey is null ? null : LoadIndustryPage(SupportedCultures.DefaultCode, masterKey))
             ?? throw new InvalidOperationException($"No content found for industry page '{pageKey}'.");
+    }
+
+    public InstallPageContent GetInstallPage(string cultureCode, string pageKey)
+    {
+        var masterKey = CountryLessKey(pageKey);
+
+        return LoadInstallPage(cultureCode, pageKey)
+            ?? (masterKey is null ? null : LoadInstallPage(cultureCode, masterKey))
+            ?? LoadInstallPage(SupportedCultures.DefaultCode, pageKey)
+            ?? (masterKey is null ? null : LoadInstallPage(SupportedCultures.DefaultCode, masterKey))
+            ?? throw new InvalidOperationException($"No content found for install page '{pageKey}'.");
     }
 
     // "land-gb-klacksy" -> "klacksy"; null when the key is not country-scoped.
@@ -70,6 +82,21 @@ public sealed class JsonPageContentProvider : IPageContentProvider
 
             using var stream = File.OpenRead(path);
             return JsonSerializer.Deserialize<IndustryPageContent>(stream, SerializerOptions);
+        });
+    }
+
+    private InstallPageContent? LoadInstallPage(string cultureCode, string pageKey)
+    {
+        return _installCache.GetOrAdd($"{cultureCode}/{pageKey}", _ =>
+        {
+            var path = Path.Combine(_contentRoot, cultureCode, $"{pageKey}.json");
+            if (!File.Exists(path))
+            {
+                return null;
+            }
+
+            using var stream = File.OpenRead(path);
+            return JsonSerializer.Deserialize<InstallPageContent>(stream, SerializerOptions);
         });
     }
 

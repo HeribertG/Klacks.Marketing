@@ -13,6 +13,7 @@ public static class LlmsTxtGenerator
 {
     private const string EnglishCultureCode = "en";
     private const string KlacksySlug = "klacksy";
+    private const string InstallationSlug = "installation";
     private const string ImpressumSlug = "impressum";
     private const string DatenschutzSlug = "datenschutz";
 
@@ -53,6 +54,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "On-premise, open-source workforce scheduling — overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "Voice- and chat-controlled scheduling assistant with free choice of language model.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Download country packages for on-premise or Docker Compose installation.");
         sb.AppendLine();
 
         sb.AppendLine("## Countries");
@@ -125,6 +127,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine("- Playground: a public Klacks instance with sample data, right in the browser, no installation and no registration.");
         sb.AppendLine("- On-premise package: Docker images, installer, database, HTTPS and automatic updates in a single bundle.");
+        sb.AppendLine("- Country packages: preconfigured downloads (installer bundle, Docker Compose bundle or profile file) for 30 countries, with an optional industry preselection, served by the Klacks Marketplace.");
         sb.AppendLine("- Source code: Klacks is open source under the MIT licence, with backend, frontend and Docker images public on GitHub.");
         sb.AppendLine();
 
@@ -132,6 +135,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "Product overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "The scheduling assistant in detail.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Country packages for on-premise or Docker Compose installation.");
         foreach (var (pageKey, name) in EnglishMarkets)
         {
             AppendLink(sb, trimmedBase, pageKey, name, null);

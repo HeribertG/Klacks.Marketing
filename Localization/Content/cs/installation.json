@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instalace Klacks: On-Prem nebo Docker Compose s balíčkem pro vaši zemi | Klacks",
+  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: řízený On-Prem instalátor nebo Docker Compose stack, předkonfigurovaný se svátky, pravidly pracovní doby a příplatky vaší země. Zdarma, open source, bez registrace.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalace &middot; Zdarma &amp; open source",
+    "titleHtml": "Provozujte Klacks sami &mdash; <span class=\"text-secondary\">na vlastní infrastruktuře.</span>",
+    "subtitle": "Dvě cesty, jeden výsledek: řízený On-Prem instalátor, nebo Docker Compose stack pro vaše vlastní prostředí. Balíček pro zemi přináší svátky, pravidla pracovní doby, příplatky i oborová přednastavení vaší země &mdash; bez registrace, bez licenčních poplatků."
+  },
+  "industry": {
+    "eyebrow": "Balíček pro zemi",
+    "title": "Zvolte své odvětví &mdash; volitelné",
+    "text": "Vaše volba se zapíše do profilu země jako přednastavení a určuje, které oborové moduly budou při prvním spuštění aktivní. Balíček vždy obsahuje všechna odvětví &mdash; další můžete kdykoli aktivovat přímo v aplikaci.",
+    "allLabel": "Všechna odvětví"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem instalátor",
+    "text": "Řízená cesta pro vlastní server: instalační skript vygeneruje tajné klíče (secrets) a samopodepsaný certifikát, stáhne nejnovější vydanou verzi a spustí celý stack &mdash; na Linuxu i Windows.",
+    "requirementsTitle": "Předpoklady",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) nebo Docker Engine s pluginem Compose (Linux)",
+      "Odchozí přístup na ghcr.io a github.com (image a automatické aktualizace)",
+      "Volné porty 80 a 443 (konfigurovatelné)"
+    ],
+    "stepsTitle": "Tři kroky",
+    "steps": [
+      { "title": "Stáhnout a rozbalit", "text": "Stáhněte ZIP pro svou zemi a rozbalte jej na cílovém stroji." },
+      { "title": "Spustit instalační skript", "text": "Na Linuxu spusťte přiložený shellový skript, na Windows skript PowerShell. Vygeneruje tajné klíče a certifikát, aplikuje profil země a počká, dokud celý stack neběží." },
+      { "title": "Přihlásit se a změnit heslo", "text": "Přihlaste se v prohlížeči a ihned změňte výchozí heslo uvedené v přiloženém README." }
+    ],
+    "downloadLabel": "Stáhnout On-Prem balíček"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Přímá cesta pro týmy, které si své kontejnerové stacky spravují samy: docker-compose.yml, konfigurace nginx, inicializační skripty, profil země a připravená šablona .env se všemi proměnnými &mdash; plná kontrola zůstává ve vašich rukou.",
+    "requirementsTitle": "Předpoklady",
+    "requirements": [
+      "Docker Engine s pluginem Compose (nebo Docker Desktop)",
+      "Odchozí přístup na ghcr.io a github.com (image a automatické aktualizace)",
+      "Zkušenosti s provozem Docker Compose stacků"
+    ],
+    "stepsTitle": "Tři kroky",
+    "steps": [
+      { "title": "Stáhnout a rozbalit", "text": "Stáhněte Compose ZIP pro svou zemi a rozbalte jej &mdash; přiložené README popisuje každý krok." },
+      { "title": "Nastavit .env", "text": "Zkopírujte šablonu .env.example do .env a nastavte název serveru a hesla/tajné klíče. Cesta k profilu země je již předvyplněna." },
+      { "title": "Spustit stack", "text": "Spusťte &bdquo;docker compose up -d&ldquo;, přihlaste se v prohlížeči a ihned změňte výchozí heslo." }
+    ],
+    "downloadLabel": "Stáhnout Compose balíček"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Pouze profil &mdash; pro stávající instalace",
+    "text": "Klacks už vám běží? Profil (JSON) nese přednastavení pro zemi &mdash; svátky, pravidla pracovní doby, příplatky a odvětví &mdash; a aplikuje se při prvním spuštění instalace. Je to zároveň způsob, jak později doplnit další odvětví s jeho přednastaveními.",
+    "downloadLabel": "Stáhnout profil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Pro tuto zemi zatím neexistuje předkonfigurovaný balíček.",
+    "noticeText": "Klacks přesto můžete nainstalovat kompletně: standardní balíček obsahuje vše kromě přednastavení pro zemi. Svátky, pravidla pracovní doby a příplatky si pak nastavíte v aplikaci.",
+    "downloadLabel": "Stáhnout standardní balíček",
+    "composeNote": "Samostatný Compose balíček pro tuto zemi zatím neexistuje &mdash; standardní balíček obsahuje kompletní Docker Compose stack."
+  },
+  "notes": {
+    "title": "Dobré vědět",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí MIT &mdash; žádné licenční poplatky, žádný vendor lock-in." },
+      { "icon": "storage", "title": "Data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data nikdy neopustí váš server &mdash; žádný povinný cloud." },
+      { "icon": "update", "title": "Automatické aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi; aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky." },
+      { "icon": "lock", "title": "HTTPS od začátku", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení." }
+    ]
+  },
+  "cta": {
+    "title": "Nejprve vyzkoušet, pak instalovat?",
+    "text": "V Playgroundu si Klacks vyzkoušíte přímo v prohlížeči s ukázkovými daty &mdash; bez instalace a bez registrace. Nebo se podívejte na zdrojový kód na GitHub."
+  }
+}

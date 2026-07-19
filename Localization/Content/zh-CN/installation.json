@@ -1,0 +1,77 @@
+{
+  "pageTitle": "安装 Klacks：On-Prem 或 Docker Compose，附国家套件 | Klacks",
+  "metaDescription": "在自有基础设施上安装 Klacks：引导式 On-Prem 安装程序或 Docker Compose 堆栈，预先配置好您所在国家的法定节假日、工时规则和津贴。免费、开源、无需注册。",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "安装 &middot; 免费 &amp; 开源",
+    "titleHtml": "自行运行 Klacks &mdash; <span class=\"text-secondary\">在您自己的基础设施上。</span>",
+    "subtitle": "两条路径，同一结果：引导式 On-Prem 安装程序，或适用于自有环境的 Docker Compose 堆栈。国家套件随附您所在国家的法定节假日、工时规则、津贴和行业预设 &mdash; 无需注册，没有许可费用。"
+  },
+  "industry": {
+    "eyebrow": "国家套件",
+    "title": "选择行业 &mdash; 可选",
+    "text": "您的选择将作为预设写入国家配置文件，并决定首次启动时激活哪些行业模块。套件始终包含所有行业 &mdash; 您随时可以在应用中激活更多行业。",
+    "allLabel": "所有行业"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem 安装程序",
+    "text": "适用于自有服务器的引导式路径：安装脚本生成密钥和自签名证书，拉取最新发布版本并启动整个堆栈 &mdash; 支持 Linux 和 Windows。",
+    "requirementsTitle": "前提条件",
+    "requirements": [
+      "Docker Desktop（Windows/Mac）或带 Compose 插件的 Docker Engine（Linux）",
+      "可对外访问 ghcr.io 和 github.com（镜像与自动更新）",
+      "空闲端口 80 和 443（可配置）"
+    ],
+    "stepsTitle": "三个步骤",
+    "steps": [
+      { "title": "下载并解压", "text": "下载适用于您所在国家的 ZIP，并在目标机器上解压。" },
+      { "title": "运行安装脚本", "text": "在 Linux 上运行随附的 Shell 脚本，在 Windows 上运行 PowerShell 脚本。脚本会生成密钥和证书，应用国家配置文件，并等待堆栈正常运行。" },
+      { "title": "登录并修改密码", "text": "在浏览器中登录，并立即修改随附 README 中列出的初始密码。" }
+    ],
+    "downloadLabel": "下载 On-Prem 套件"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "适用于自行管理容器堆栈的团队的直接路径：docker-compose.yml、nginx 配置、初始化脚本、国家配置文件，以及一份包含所有变量的 .env 模板 &mdash; 完全的控制权在您手中。",
+    "requirementsTitle": "前提条件",
+    "requirements": [
+      "带 Compose 插件的 Docker Engine（或 Docker Desktop）",
+      "可对外访问 ghcr.io 和 github.com（镜像与自动更新）",
+      "具备运行 Docker Compose 堆栈的经验"
+    ],
+    "stepsTitle": "三个步骤",
+    "steps": [
+      { "title": "下载并解压", "text": "下载适用于您所在国家的 Compose ZIP 并解压 &mdash; 随附的 README 详细说明每一步。" },
+      { "title": "配置 .env", "text": "将 .env.example 模板复制为 .env，设置服务器名称以及密码/密钥。国家配置文件的路径已预先填好。" },
+      { "title": "启动堆栈", "text": "运行「docker compose up -d」，在浏览器中登录并立即修改初始密码。" }
+    ],
+    "downloadLabel": "下载 Compose 套件"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "仅配置文件 &mdash; 适用于现有安装",
+    "text": "已经在运行 Klacks？该配置文件（JSON）包含国家预设 &mdash; 法定节假日、工时规则、津贴和行业 &mdash; 并在安装首次启动时应用。之后要为现有安装补充另一个行业及其预设，也是通过这一方式。",
+    "downloadLabel": "下载配置文件（JSON）"
+  },
+  "fallback": {
+    "noticeTitle": "该国家目前还没有预配置的国家套件。",
+    "noticeText": "您仍然可以完整安装 Klacks：标准套件包含除国家预设之外的全部内容。之后您可以在应用中自行设置法定节假日、工时规则和津贴。",
+    "downloadLabel": "下载标准套件",
+    "composeNote": "该国家目前还没有单独的 Compose 套件 &mdash; 标准套件已包含完整的 Docker Compose 堆栈。"
+  },
+  "notes": {
+    "title": "值得了解",
+    "items": [
+      { "icon": "code", "title": "开源（MIT）", "text": "完整源代码以 MIT 许可证在 GitHub 上公开 &mdash; 没有许可费用，没有供应商锁定。" },
+      { "icon": "storage", "title": "数据留在企业内部", "text": "Klacks 运行在您的基础设施上。人员和排班数据绝不会离开您的服务器 &mdash; 没有强制上云。" },
+      { "icon": "update", "title": "自动更新", "text": "安装时会固定最新发布版本；堆栈内的更新服务会自动应用新发布的版本。" },
+      { "icon": "lock", "title": "从一开始就使用 HTTPS", "text": "安装程序会生成自签名证书供您起步 &mdash; 您随时可以换成自己的证书。首次登录后请立即修改初始密码。" }
+    ]
+  },
+  "cta": {
+    "title": "先试用，再安装？",
+    "text": "在 Playground 中，您可以直接在浏览器里用示例数据试用 Klacks &mdash; 无需安装，无需注册。或者到 GitHub 上看看源代码。"
+  }
+}

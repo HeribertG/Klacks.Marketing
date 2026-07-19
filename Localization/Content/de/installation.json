@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Klacks installieren: On-Prem oder Docker Compose mit Länderpaket | Klacks",
+  "metaDescription": "Klacks auf eigener Infrastruktur installieren: On-Prem-Installer oder Docker-Compose-Stack, vorkonfiguriert mit Feiertagen, Arbeitszeitregeln und Zuschlägen Ihres Landes. Kostenlos, Open Source, ohne Registrierung.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installation &middot; Kostenlos &amp; Open Source",
+    "titleHtml": "Klacks selbst betreiben &mdash; <span class=\"text-secondary\">auf Ihrer eigenen Infrastruktur.</span>",
+    "subtitle": "Zwei Wege, ein Ergebnis: der geführte On-Prem-Installer oder der Docker-Compose-Stack für Ihr eigenes Setup. Das Länderpaket bringt Feiertage, Arbeitszeitregeln, Zuschläge und Branchen-Voreinstellungen Ihres Landes gleich mit &mdash; ohne Registrierung, ohne Lizenzkosten."
+  },
+  "industry": {
+    "eyebrow": "Länderpaket",
+    "title": "Branche wählen &mdash; optional",
+    "text": "Ihre Auswahl wird als Voreinstellung ins Länderprofil übernommen und bestimmt, welche Branchen-Bausteine beim ersten Start aktiv sind. Das Paket enthält immer alle Branchen &mdash; Sie können weitere später jederzeit in der App aktivieren.",
+    "allLabel": "Alle Branchen"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-Prem-Installer",
+    "text": "Der geführte Weg für den eigenen Server: Ein Installations-Skript erzeugt Secrets und ein selbstsigniertes Zertifikat, holt die aktuelle veröffentlichte Version und startet den kompletten Stack &mdash; auf Linux oder Windows.",
+    "requirementsTitle": "Voraussetzungen",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) oder Docker Engine mit Compose-Plugin (Linux)",
+      "Ausgehende Verbindung zu ghcr.io und github.com (Images und automatische Updates)",
+      "Freie Ports 80 und 443 (konfigurierbar)"
+    ],
+    "stepsTitle": "In drei Schritten",
+    "steps": [
+      { "title": "Paket laden und entpacken", "text": "Das ZIP für Ihr Land herunterladen und auf dem Zielrechner entpacken." },
+      { "title": "Installations-Skript starten", "text": "Unter Linux das mitgelieferte Shell-Skript, unter Windows das PowerShell-Skript ausführen. Es erzeugt Secrets und Zertifikat, übernimmt das Länderprofil und wartet, bis der Stack läuft." },
+      { "title": "Anmelden und Passwort ändern", "text": "Im Browser anmelden und das Initialpasswort aus dem beiliegenden README sofort ändern." }
+    ],
+    "downloadLabel": "On-Prem-Paket laden"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Der direkte Weg für Teams, die ihre Container-Stacks selbst verwalten: docker-compose.yml, nginx-Konfiguration, Init-Skripte, das Länderprofil und eine vorbereitete .env-Vorlage mit allen Variablen &mdash; Sie behalten die volle Kontrolle.",
+    "requirementsTitle": "Voraussetzungen",
+    "requirements": [
+      "Docker Engine mit Compose-Plugin (oder Docker Desktop)",
+      "Ausgehende Verbindung zu ghcr.io und github.com (Images und automatische Updates)",
+      "Erfahrung mit Docker-Compose-Betrieb"
+    ],
+    "stepsTitle": "In drei Schritten",
+    "steps": [
+      { "title": "Paket laden und entpacken", "text": "Das Compose-ZIP für Ihr Land herunterladen und entpacken &mdash; das beiliegende README beschreibt jeden Schritt." },
+      { "title": ".env einrichten", "text": "Die Vorlage .env.example zu .env kopieren und Servername sowie Passwörter/Secrets setzen. Der Pfad zum Länderprofil ist bereits vorbelegt." },
+      { "title": "Stack starten", "text": "&bdquo;docker compose up -d&ldquo; ausführen, im Browser anmelden und das Initialpasswort sofort ändern." }
+    ],
+    "downloadLabel": "Compose-Paket laden"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Nur das Länderprofil &mdash; für bestehende Installationen",
+    "text": "Klacks läuft schon? Das Profil (JSON) enthält die Länder-Voreinstellungen &mdash; Feiertage, Arbeitszeitregeln, Zuschläge und Branchen &mdash; und wird beim ersten Start einer Installation eingebunden. Auch der Weg, um eine weitere Branche mit deren Voreinstellungen nachzuziehen.",
+    "downloadLabel": "Profil (JSON) laden"
+  },
+  "fallback": {
+    "noticeTitle": "Für dieses Land gibt es noch kein vorkonfiguriertes Länderpaket.",
+    "noticeText": "Sie können Klacks trotzdem vollständig installieren: Das Standard-Paket enthält alles ausser den Länder-Voreinstellungen. Feiertage, Arbeitszeitregeln und Zuschläge richten Sie danach in der App ein.",
+    "downloadLabel": "Standard-Paket laden",
+    "composeNote": "Ein separates Compose-Paket gibt es für dieses Land noch nicht &mdash; das Standard-Paket enthält den vollständigen Docker-Compose-Stack."
+  },
+  "notes": {
+    "title": "Gut zu wissen",
+    "items": [
+      { "icon": "code", "title": "Open Source (MIT)", "text": "Der komplette Quellcode ist unter MIT-Lizenz auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
+      { "icon": "storage", "title": "Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten verlassen Ihren Server nicht &mdash; es gibt keinen Cloud-Zwang." },
+      { "icon": "update", "title": "Automatische Updates", "text": "Die Installation pinnt die zuletzt veröffentlichte Version; ein Update-Dienst im Stack spielt neue veröffentlichte Versionen automatisch ein." },
+      { "icon": "lock", "title": "HTTPS ab dem Start", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern." }
+    ]
+  },
+  "cta": {
+    "title": "Erst ausprobieren, dann installieren?",
+    "text": "Im Playground testen Sie Klacks direkt im Browser mit Beispieldaten &mdash; ohne Installation und ohne Registrierung. Oder Sie schauen sich den Quellcode auf GitHub an."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instalacja Klacks: On-Prem lub Docker Compose z pakietem krajowym | Klacks",
+  "metaDescription": "Klacks na własnej infrastrukturze: prowadzony instalator On-Prem lub stack Docker Compose, wstępnie skonfigurowany ze świętami państwowymi, regułami czasu pracy i dodatkami dla Państwa kraju. Bezpłatnie, open source, bez rejestracji.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalacja &middot; Bezpłatnie &amp; open source",
+    "titleHtml": "Klacks u siebie &mdash; <span class=\"text-secondary\">na własnej infrastrukturze.</span>",
+    "subtitle": "Dwie drogi, jeden rezultat: prowadzony instalator On-Prem albo stack Docker Compose dla własnej konfiguracji. Pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy, dodatki i branżowe ustawienia wstępne Państwa kraju &mdash; bez rejestracji, bez opłat licencyjnych."
+  },
+  "industry": {
+    "eyebrow": "Pakiet krajowy",
+    "title": "Wybór branży &mdash; opcjonalnie",
+    "text": "Państwa wybór zostaje zapisany w profilu krajowym jako ustawienie wstępne i decyduje, które moduły branżowe będą aktywne przy pierwszym uruchomieniu. Pakiet zawsze zawiera wszystkie branże &mdash; kolejne mogą Państwo w każdej chwili aktywować w aplikacji.",
+    "allLabel": "Wszystkie branże"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Instalator On-Prem",
+    "text": "Prowadzona droga na własny serwer: skrypt instalacyjny generuje sekrety i samopodpisany certyfikat, pobiera najnowszą opublikowaną wersję i uruchamia cały stack &mdash; na Linuksie lub Windows.",
+    "requirementsTitle": "Wymagania",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) lub Docker Engine z wtyczką Compose (Linux)",
+      "Wychodzący dostęp do ghcr.io i github.com (obrazy i automatyczne aktualizacje)",
+      "Wolne porty 80 i 443 (konfigurowalne)"
+    ],
+    "stepsTitle": "Trzy kroki",
+    "steps": [
+      { "title": "Pobranie i rozpakowanie", "text": "Pobierają Państwo plik ZIP dla swojego kraju i rozpakowują go na maszynie docelowej." },
+      { "title": "Uruchomienie skryptu instalacyjnego", "text": "Na Linuksie uruchamiają Państwo dołączony skrypt powłoki, na Windows skrypt PowerShell. Generuje on sekrety i certyfikat, wprowadza profil krajowy i czeka, aż cały stack będzie gotowy do pracy." },
+      { "title": "Logowanie i zmiana hasła", "text": "Logują się Państwo w przeglądarce i natychmiast zmieniają hasło początkowe podane w dołączonym pliku README." }
+    ],
+    "downloadLabel": "Pobierz pakiet On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "Bezpośrednia droga dla zespołów, które samodzielnie zarządzają swoimi stackami kontenerowymi: docker-compose.yml, konfiguracja nginx, skrypty inicjalizacyjne, profil krajowy i przygotowany szablon .env ze wszystkimi zmiennymi &mdash; pełna kontrola pozostaje w Państwa rękach.",
+    "requirementsTitle": "Wymagania",
+    "requirements": [
+      "Docker Engine z wtyczką Compose (lub Docker Desktop)",
+      "Wychodzący dostęp do ghcr.io i github.com (obrazy i automatyczne aktualizacje)",
+      "Doświadczenie w utrzymywaniu stacków Docker Compose"
+    ],
+    "stepsTitle": "Trzy kroki",
+    "steps": [
+      { "title": "Pobranie i rozpakowanie", "text": "Pobierają Państwo ZIP Compose dla swojego kraju i rozpakowują go &mdash; dołączony README prowadzi przez każdy krok." },
+      { "title": "Konfiguracja .env", "text": "Kopiują Państwo szablon .env.example do .env i ustawiają nazwę serwera oraz hasła/sekrety. Ścieżka do profilu krajowego jest już wstępnie wypełniona." },
+      { "title": "Uruchomienie stacka", "text": "Wykonują Państwo &bdquo;docker compose up -d&rdquo;, logują się w przeglądarce i natychmiast zmieniają hasło początkowe." }
+    ],
+    "downloadLabel": "Pobierz pakiet Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Sam profil &mdash; dla istniejących instalacji",
+    "text": "Klacks już u Państwa działa? Profil (JSON) zawiera krajowe ustawienia wstępne &mdash; święta państwowe, reguły czasu pracy, dodatki i branże &mdash; i jest wczytywany przy pierwszym uruchomieniu instalacji. To także sposób, aby później dodać kolejną branżę wraz z jej ustawieniami wstępnymi.",
+    "downloadLabel": "Pobierz profil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Dla tego kraju nie ma jeszcze wstępnie skonfigurowanego pakietu krajowego.",
+    "noticeText": "Mimo to mogą Państwo w pełni zainstalować Klacks: pakiet standardowy zawiera wszystko poza krajowymi ustawieniami wstępnymi. Święta państwowe, reguły czasu pracy i dodatki konfigurują Państwo następnie w aplikacji.",
+    "downloadLabel": "Pobierz pakiet standardowy",
+    "composeNote": "Osobnego pakietu Compose dla tego kraju jeszcze nie ma &mdash; pakiet standardowy zawiera kompletny stack Docker Compose."
+  },
+  "notes": {
+    "title": "Warto wiedzieć",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "Kompletny kod źródłowy jest publicznie dostępny na GitHub na licencji MIT &mdash; bez opłat licencyjnych, bez vendor lock-in." },
+      { "icon": "storage", "title": "Dane zostają w firmie", "text": "Klacks działa na Państwa infrastrukturze. Dane kadrowe i grafiki nigdy nie opuszczają Państwa serwera &mdash; nie ma przymusu chmury." },
+      { "icon": "update", "title": "Automatyczne aktualizacje", "text": "Instalacja przypina najnowszą opublikowaną wersję; usługa aktualizacji wewnątrz stacka automatycznie wdraża nowo opublikowane wersje." },
+      { "icon": "lock", "title": "HTTPS od samego początku", "text": "Instalator generuje samopodpisany certyfikat na start &mdash; w każdej chwili mogą Państwo przejść na własny certyfikat. Hasło początkowe należy zmienić zaraz po pierwszym logowaniu." }
+    ]
+  },
+  "cta": {
+    "title": "Najpierw wypróbować, potem zainstalować?",
+    "text": "W Playgroundzie przetestują Państwo Klacks bezpośrednio w przeglądarce na przykładowych danych &mdash; bez instalacji i bez rejestracji. Mogą Państwo także zajrzeć do kodu źródłowego na GitHub."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Install Klacks: On-Prem or Docker Compose with Your Country Package | Klacks",
+  "metaDescription": "Install Klacks on your own infrastructure: guided on-prem installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and surcharges. Free, open source, no registration.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Installation &middot; Free &amp; open source",
+    "titleHtml": "Run Klacks yourself &mdash; <span class=\"text-secondary\">on your own infrastructure.</span>",
+    "subtitle": "Two paths, one result: the guided on-prem installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules, surcharges and industry presets &mdash; no registration, no licence fees."
+  },
+  "industry": {
+    "eyebrow": "Country package",
+    "title": "Pick your industry &mdash; optional",
+    "text": "Your choice is written into the country profile as a preset and determines which industry blocks are active on first start. The package always contains every industry &mdash; you can activate more in the app at any time.",
+    "allLabel": "All industries"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "On-prem installer",
+    "text": "The guided path for your own server: an install script generates secrets and a self-signed certificate, pulls the latest released version and brings up the whole stack &mdash; on Linux or Windows.",
+    "requirementsTitle": "Requirements",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) or Docker Engine with the Compose plugin (Linux)",
+      "Outbound access to ghcr.io and github.com (images and automatic updates)",
+      "Free ports 80 and 443 (configurable)"
+    ],
+    "stepsTitle": "Three steps",
+    "steps": [
+      { "title": "Download and extract", "text": "Download the ZIP for your country and extract it on the target machine." },
+      { "title": "Run the install script", "text": "Run the bundled shell script on Linux, or the PowerShell script on Windows. It generates secrets and the certificate, applies the country profile and waits until the stack is healthy." },
+      { "title": "Log in and change the password", "text": "Log in from your browser and immediately change the initial password listed in the bundled README." }
+    ],
+    "downloadLabel": "Download on-prem package"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "The direct path for teams that manage their own container stacks: docker-compose.yml, nginx configuration, init scripts, the country profile and a prepared .env template with every variable &mdash; you keep full control.",
+    "requirementsTitle": "Requirements",
+    "requirements": [
+      "Docker Engine with the Compose plugin (or Docker Desktop)",
+      "Outbound access to ghcr.io and github.com (images and automatic updates)",
+      "Experience running Docker Compose stacks"
+    ],
+    "stepsTitle": "Three steps",
+    "steps": [
+      { "title": "Download and extract", "text": "Download the Compose ZIP for your country and extract it &mdash; the bundled README walks through every step." },
+      { "title": "Set up .env", "text": "Copy the .env.example template to .env and set the server name plus passwords/secrets. The path to the country profile is already prefilled." },
+      { "title": "Start the stack", "text": "Run &ldquo;docker compose up -d&rdquo;, log in from your browser and change the initial password immediately." }
+    ],
+    "downloadLabel": "Download Compose package"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Profile only &mdash; for existing installations",
+    "text": "Already running Klacks? The profile (JSON) carries the country presets &mdash; public holidays, working-time rules, surcharges and industries &mdash; and is applied on an installation's first start. It is also the way to add another industry with its presets later.",
+    "downloadLabel": "Download profile (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "There is no preconfigured country package for this country yet.",
+    "noticeText": "You can still install Klacks in full: the standard package contains everything except the country presets. You then set up public holidays, working-time rules and surcharges in the app.",
+    "downloadLabel": "Download standard package",
+    "composeNote": "There is no separate Compose package for this country yet &mdash; the standard package contains the complete Docker Compose stack."
+  },
+  "notes": {
+    "title": "Good to know",
+    "items": [
+      { "icon": "code", "title": "Open source (MIT)", "text": "The complete source code is public on GitHub under the MIT licence &mdash; no licence fees, no vendor lock-in." },
+      { "icon": "storage", "title": "Data stays in-house", "text": "Klacks runs on your infrastructure. Staff and scheduling data never leave your server &mdash; there is no forced cloud." },
+      { "icon": "update", "title": "Automatic updates", "text": "The installation pins the latest released version; an update service inside the stack applies newly released versions automatically." },
+      { "icon": "lock", "title": "HTTPS from the start", "text": "The installer generates a self-signed certificate to get you started &mdash; you can switch to your own certificate at any time. Change the initial password right after the first login." }
+    ]
+  },
+  "cta": {
+    "title": "Try first, install later?",
+    "text": "The Playground lets you test Klacks right in the browser with sample data &mdash; no installation, no registration. Or take a look at the source code on GitHub."
+  }
+}

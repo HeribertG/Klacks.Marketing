@@ -1,0 +1,77 @@
+{
+  "pageTitle": "Instalar a Klacks: On-Prem ou Docker Compose com pacote de país | Klacks",
+  "metaDescription": "Instale a Klacks na sua própria infraestrutura: instalador On-Prem guiado ou stack Docker Compose, pré-configurado com os feriados, as regras de tempo de trabalho e os suplementos do seu país. Gratuito, código aberto, sem registo.",
+  "hero": {
+    "badgeIcon": "install_desktop",
+    "badge": "Instalação &middot; Gratuito &amp; código aberto",
+    "titleHtml": "Opere a Klacks por conta própria &mdash; <span class=\"text-secondary\">na sua própria infraestrutura.</span>",
+    "subtitle": "Dois caminhos, um resultado: o instalador On-Prem guiado ou o stack Docker Compose para a sua própria configuração. O pacote de país traz consigo os feriados, as regras de tempo de trabalho, os suplementos e as predefinições por setor do seu país &mdash; sem registo, sem custos de licença."
+  },
+  "industry": {
+    "eyebrow": "Pacote de país",
+    "title": "Escolha o seu setor &mdash; opcional",
+    "text": "A sua escolha é gravada no perfil de país como predefinição e determina que módulos setoriais ficam ativos no primeiro arranque. O pacote contém sempre todos os setores &mdash; pode ativar outros na aplicação em qualquer altura.",
+    "allLabel": "Todos os setores"
+  },
+  "onPrem": {
+    "icon": "dns",
+    "title": "Instalador On-Prem",
+    "text": "O caminho guiado para o seu próprio servidor: um script de instalação gera os segredos e um certificado autoassinado, obtém a versão publicada mais recente e arranca todo o stack &mdash; em Linux ou Windows.",
+    "requirementsTitle": "Requisitos",
+    "requirements": [
+      "Docker Desktop (Windows/Mac) ou Docker Engine com o plugin Compose (Linux)",
+      "Acesso de saída a ghcr.io e github.com (imagens e atualizações automáticas)",
+      "Portas 80 e 443 livres (configurável)"
+    ],
+    "stepsTitle": "Três passos",
+    "steps": [
+      { "title": "Transferir e extrair", "text": "Transfira o ZIP do seu país e extraia-o na máquina de destino." },
+      { "title": "Executar o script de instalação", "text": "Execute o script de shell incluído em Linux, ou o script PowerShell em Windows. Gera os segredos e o certificado, aplica o perfil de país e aguarda até o stack estar operacional." },
+      { "title": "Iniciar sessão e alterar a palavra-passe", "text": "Inicie sessão no browser e altere de imediato a palavra-passe inicial indicada no README incluído." }
+    ],
+    "downloadLabel": "Transferir pacote On-Prem"
+  },
+  "compose": {
+    "icon": "deployed_code",
+    "title": "Docker Compose",
+    "text": "O caminho direto para equipas que gerem os seus próprios stacks de contentores: docker-compose.yml, configuração nginx, scripts de inicialização, o perfil de país e um modelo .env preparado com todas as variáveis &mdash; mantém o controlo total.",
+    "requirementsTitle": "Requisitos",
+    "requirements": [
+      "Docker Engine com o plugin Compose (ou Docker Desktop)",
+      "Acesso de saída a ghcr.io e github.com (imagens e atualizações automáticas)",
+      "Experiência na operação de stacks Docker Compose"
+    ],
+    "stepsTitle": "Três passos",
+    "steps": [
+      { "title": "Transferir e extrair", "text": "Transfira o ZIP Compose do seu país e extraia-o &mdash; o README incluído descreve cada passo." },
+      { "title": "Configurar o .env", "text": "Copie o modelo .env.example para .env e defina o nome do servidor e as palavras-passe/segredos. O caminho para o perfil de país já vem preenchido." },
+      { "title": "Arrancar o stack", "text": "Execute &laquo;docker compose up -d&raquo;, inicie sessão no browser e altere de imediato a palavra-passe inicial." }
+    ],
+    "downloadLabel": "Transferir pacote Compose"
+  },
+  "profile": {
+    "icon": "description",
+    "title": "Apenas o perfil &mdash; para instalações existentes",
+    "text": "A Klacks já está a funcionar? O perfil (JSON) contém as predefinições do país &mdash; feriados, regras de tempo de trabalho, suplementos e setores &mdash; e é aplicado no primeiro arranque de uma instalação. É também a forma de acrescentar mais tarde outro setor com as respetivas predefinições.",
+    "downloadLabel": "Transferir perfil (JSON)"
+  },
+  "fallback": {
+    "noticeTitle": "Ainda não existe um pacote de país pré-configurado para este país.",
+    "noticeText": "Mesmo assim pode instalar a Klacks na íntegra: o pacote standard contém tudo exceto as predefinições do país. Depois configura os feriados, as regras de tempo de trabalho e os suplementos na aplicação.",
+    "downloadLabel": "Transferir pacote standard",
+    "composeNote": "Ainda não há um pacote Compose separado para este país &mdash; o pacote standard contém o stack Docker Compose completo."
+  },
+  "notes": {
+    "title": "Convém saber",
+    "items": [
+      { "icon": "code", "title": "Código aberto (MIT)", "text": "O código-fonte completo está público no GitHub sob a licença MIT &mdash; sem custos de licença, sem dependência de fornecedor." },
+      { "icon": "storage", "title": "Os dados ficam em casa", "text": "A Klacks é executada na sua infraestrutura. Os dados de pessoal e de escalas nunca saem do seu servidor &mdash; não há nuvem obrigatória." },
+      { "icon": "update", "title": "Atualizações automáticas", "text": "A instalação fixa a versão publicada mais recente; um serviço de atualização dentro do stack aplica automaticamente as novas versões publicadas." },
+      { "icon": "lock", "title": "HTTPS desde o início", "text": "O instalador gera um certificado autoassinado para começar &mdash; pode mudar para o seu próprio certificado em qualquer altura. Altere a palavra-passe inicial logo após o primeiro início de sessão." }
+    ]
+  },
+  "cta": {
+    "title": "Experimentar primeiro, instalar depois?",
+    "text": "No Playground testa a Klacks diretamente no browser com dados de exemplo &mdash; sem instalação e sem registo. Ou dê uma vista de olhos ao código-fonte no GitHub."
+  }
+}

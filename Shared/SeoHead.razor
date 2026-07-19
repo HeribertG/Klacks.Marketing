@@ -57,6 +57,11 @@
     // are stripped and the result truncated. Null falls back to no description.
     [Parameter] public string? DescriptionSource { get; set; }
 
+    // Display name for the sub-page level of the breadcrumb. Country sub-pages
+    // whose slug is not an industry (e.g. the installation page) must provide it,
+    // since the default derives the name from the industry title keys.
+    [Parameter] public string? BreadcrumbName { get; set; }
+
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
 
     private SupportedCulture CultureRecord => SupportedCultures.All.First(c => c.Code == Culture);
@@ -123,14 +128,15 @@
             }
 
             var slug = PageKey[(country.Length + 1)..];
-            var industryName = ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
+            var pageName = BreadcrumbName
+                ?? ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
 
             return JsonLdBuilder.BreadcrumbScript(
                 BaseUrl,
                 CultureRecord,
                 CountryNames.DisplayName(country),
                 country,
-                industryName,
+                pageName,
                 EffectiveRoutePath);
         }
     }

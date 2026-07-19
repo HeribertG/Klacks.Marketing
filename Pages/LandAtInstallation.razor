@@ -1,0 +1,10 @@
+@page "/land-at/installation"
+@page "/{culture}/land-at/installation"
+
+<InstallPageTemplate PageKey="land-at-installation" RoutePath="land-at/installation" Culture="@ResolvedCulture" />
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+}
