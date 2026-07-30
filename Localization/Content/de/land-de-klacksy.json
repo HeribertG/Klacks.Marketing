@@ -1,41 +1,41 @@
 {
-  "pageTitle": "Klacksy: Der KI-Assistent, der Ihre betrieblichen Regeln lernt | Klacks",
+  "pageTitle": "Klacksy: KI-Assistent mit nachvollziehbaren Grenzen | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Für alle Branchen &middot; KI-Assistent",
-    "titleHtml": "Klacksy: Der KI-Assistent, <span class=\"text-secondary\">der Ihre betrieblichen Regeln lernt.</span>",
-    "subtitle": "Keine generische KI von der Stange. Steuern Sie Tonalität, Autonomie und Fachvokabular für einen Schichtplan-Assistenten, der sich exakt an Ihre Vorgaben hält &mdash; regelbasiert, nachvollziehbar, in Ihrer Hand.",
-    "screenshotFile": "app-schedule-de.png",
+    "titleHtml": "Klacksy: Der KI-Assistent, <span class=\"text-secondary\">dessen Grenzen Sie im Betrieb festlegen.</span>",
+    "subtitle": "Wer eine KI in die Dienstplanung holt, muss erklären können, was sie darf &mdash; spätestens gegenüber dem Betriebsrat. Klacksy macht das prüfbar: vier einstellbare Autonomie-Stufen, ein Regel-Register, in dem jede hinterlegte Vorgabe nachlesbar bleibt, und Bestätigungspflicht für sensible Aktionen.",
+    "screenshotFile": "app-klacksy-de.png",
     "screenshotAlt": "Klacksy KI-Assistent in der Klacks-Dienstplanung",
     "screenshotLabel": "Klacksy"
   },
   "challenges": {
     "eyebrow": "Das Problem mit generischer KI",
-    "title": "Blackbox-Chatbots ohne betriebliche Kontrolle",
+    "title": "Ein Assistent, den Sie nicht erklären können",
     "items": [
-      { "icon": "psychology_alt", "title": "Generische KI kennt Ihre Regeln nicht", "text": "Standard-Chatbots wissen nichts von Ihren Betriebsvereinbarungen, Qualifikationsanforderungen oder branchenspezifischen Vorschriften &mdash; jede Antwort ist ein Blindflug." },
-      { "icon": "visibility_off", "title": "Unklarer Handlungsspielraum", "text": "Bei vielen KI-Tools ist unklar, was die KI selbstständig verändern darf und was nicht &mdash; ein Risiko, sobald echte Dienstpläne betroffen sind." },
-      { "icon": "record_voice_over", "title": "Fremde Sprache, fremde Abkürzungen", "text": "Firmeninterne Kürzel und Fachbegriffe versteht eine generische KI nicht &mdash; jede Anfrage muss erst umständlich erklärt werden." }
+      { "icon": "groups", "title": "Der Betriebsrat fragt, was die KI darf", "text": "Die Einführung technischer Einrichtungen, die Verhalten oder Leistung erfassen können, ist nach § 87 Abs. 1 Nr. 6 BetrVG mitbestimmungspflichtig. Wer den Handlungsspielraum eines KI-Assistenten nicht benennen kann, kommt in dieser Diskussion nicht weit." },
+      { "icon": "psychology_alt", "title": "Generische KI kennt Ihre Vereinbarungen nicht", "text": "Standard-Chatbots wissen nichts von Ihrer Betriebsvereinbarung, den Qualifikationsanforderungen Ihrer Branche oder den Ruhezeiten des Arbeitszeitgesetzes &mdash; jede Antwort ist ein Blindflug." },
+      { "icon": "visibility_off", "title": "Eine Blackbox lässt sich nicht dokumentieren", "text": "Wenn nicht nachlesbar ist, nach welcher Regel ein Vorschlag zustande kam, fehlt die Grundlage für jede Betriebsvereinbarung &mdash; und für die Antwort auf die Frage, warum jemand ausgerechnet diese Schicht bekommen hat." }
     ]
   },
   "solutions": {
-    "title": "Wie Klacksy sich Ihrem Betrieb anpasst",
-    "subtitle": "Vier Stellschrauben, mit denen Sie Klacksy zu Ihrem Assistenten machen.",
+    "title": "Wie Klacksy verhandelbar wird",
+    "subtitle": "Vier Stellschrauben, die sich in einer Betriebsvereinbarung beschreiben lassen.",
     "items": [
-      { "icon": "tune", "title": "Autonomie selbst bestimmen", "text": "Über vier einstellbare Stufen legen Sie fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen dabei immer Ihre Bestätigung." },
-      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Firmenregel einfach im Chat &mdash; etwa &bdquo;Nachtzuschlag 25% ab 23 Uhr&ldquo; oder &bdquo;maximal 3 Nachtschichten pro Woche&ldquo;. Klacksy fragt gezielt nach, bis alle Pflichtangaben vollständig und geprüft sind, zeigt eine Vorschau des Ergebnisses und speichert erst nach Ihrer ausdrücklichen Bestätigung &mdash; jederzeit nachvollziehbar im Regel-Register und rückgängig machbar." },
-      { "icon": "translate", "title": "Fachvokabular trainieren", "text": "Klacksy lernt Ihre betriebsspezifischen Abkürzungen und Formulierungen, damit Anfragen auf Anhieb richtig verstanden werden." },
-      { "icon": "face", "title": "Persönlichkeit anpassen", "text": "Über den Persönlichkeits-Editor bestimmen Sie Tonalität und Charakter von Klacksy &mdash; passend zu Ihrer Unternehmenskultur." }
+      { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Die Stufe ist eine benennbare Einstellung, kein Versprechen: genau die Art Festlegung, die sich schriftlich vereinbaren lässt. Sensible Aktionen brauchen immer Ihre Bestätigung." },
+      { "icon": "menu_book", "title": "Regel-Register statt Blackbox", "text": "Sie beschreiben eine Firmenregel im Chat &mdash; etwa &bdquo;Nachtzuschlag 25 % ab 23 Uhr&ldquo; oder &bdquo;maximal 3 Nachtschichten pro Woche&ldquo;. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer ausdrücklichen Bestätigung. Jede Regel bleibt im Register nachlesbar und rückgängig machbar." },
+      { "icon": "gavel", "title": "Die Ruhezeiten prüft das System, nicht die KI", "text": "Die Prüfung der Ruhezeiten nach Arbeitszeitgesetz läuft in Klacks selbst, nicht im Sprachmodell. Klacksy schlägt vor &mdash; die Grenzen zieht die Regelmaschine, unabhängig davon, welches KI-Modell Sie einsetzen." },
+      { "icon": "dns", "title": "Lokales Modell möglich", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Für Betriebe, deren Datenschutzbeauftragter beim Stichwort Cloud-KI hellhörig wird, verlässt damit kein Personaldatensatz das Haus." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Ein Pflegedienst stellt Klacksy auf sein Team ein",
-    "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei automatisch die Fachkraft-Qualifikationen &mdash; die finale Entscheidung liegt immer bei der Leitung. Dazu die Nachtzuschlag-Regel per Zuruf hinterlegt und Klacksy auf die im Haus üblichen Abkürzungen trainiert. Schon heute reagiert der Assistent entsprechend &mdash; ganz ohne Programmierung."
+    "title": "Ein Pflegedienst führt Klacksy mit dem Betriebsrat ein",
+    "text": "Vereinbart wird die Autonomie-Stufe &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei die Fachkraft-Qualifikationen &mdash; die Entscheidung bleibt bei der Leitung. Die Nachtzuschlag-Regel wird per Zuruf hinterlegt und ist im Regel-Register für beide Seiten nachlesbar. Was der Assistent darf, steht damit nicht in einer Produktbroschüre, sondern in einer Einstellung, die sich jederzeit prüfen lässt."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacksy in Aktion erleben",
-    "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, Persönlichkeit und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, Regel-Register und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }

@@ -1,41 +1,41 @@
 {
-  "pageTitle": "Klacksy: Der KI-Assistent, der Ihre betrieblichen Regeln lernt | Klacks",
+  "pageTitle": "Klacksy: KI-Assistent ohne biometrische Erfassung | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Für alle Branchen &middot; KI-Assistent",
-    "titleHtml": "Klacksy: Der KI-Assistent, <span class=\"text-secondary\">der Ihre betrieblichen Regeln lernt.</span>",
-    "subtitle": "Keine generische KI von der Stange. Steuern Sie Tonalität, Autonomie und Fachvokabular für einen Schichtplan-Assistenten, der sich exakt an Ihre Vorgaben hält &mdash; regelbasiert, nachvollziehbar, in Ihrer Hand.",
-    "screenshotFile": "app-schedule-de.png",
+    "titleHtml": "Klacksy: Ein KI-Assistent, <span class=\"text-secondary\">der ohne biometrische Daten auskommt.</span>",
+    "subtitle": "Viele KI-gestützte Zeitsysteme setzen auf Fingerabdruck oder Gesichtserkennung &mdash; ein Weg, den polnische Gerichte und die Datenschutzbehörde UODO kritisch sehen. Klacksy arbeitet stattdessen mit Dienstplandaten und einem hinterlegten Regelwerk, und das Sprachmodell kann lokal laufen.",
+    "screenshotFile": "app-klacksy-de.png",
     "screenshotAlt": "Klacksy KI-Assistent in der Klacks-Dienstplanung",
     "screenshotLabel": "Klacksy"
   },
   "challenges": {
     "eyebrow": "Das Problem mit generischer KI",
-    "title": "Blackbox-Chatbots ohne betriebliche Kontrolle",
+    "title": "Ein Assistent, der zum Datenschutzrisiko wird",
     "items": [
-      { "icon": "psychology_alt", "title": "Generische KI kennt Ihre Regeln nicht", "text": "Standard-Chatbots wissen nichts von Ihren Betriebsvereinbarungen, Qualifikationsanforderungen oder branchenspezifischen Vorschriften &mdash; jede Antwort ist ein Blindflug." },
-      { "icon": "visibility_off", "title": "Unklarer Handlungsspielraum", "text": "Bei vielen KI-Tools ist unklar, was die KI selbstständig verändern darf und was nicht &mdash; ein Risiko, sobald echte Dienstpläne betroffen sind." },
-      { "icon": "record_voice_over", "title": "Fremde Sprache, fremde Abkürzungen", "text": "Firmeninterne Kürzel und Fachbegriffe versteht eine generische KI nicht &mdash; jede Anfrage muss erst umständlich erklärt werden." }
+      { "icon": "fingerprint", "title": "Biometrie als Standardweg", "text": "Viele Zeiterfassungssysteme identifizieren per Fingerabdruck oder Gesicht. Art. 22¹b Kodeks pracy zieht der Verarbeitung solcher Daten im Beschäftigungsverhältnis enge Grenzen &mdash; ein Risiko, das sich vermeiden lässt." },
+      { "icon": "psychology_alt", "title": "Generische KI kennt Ihr Regelwerk nicht", "text": "Ein Standard-Chatbot weiß nichts von der równoważny czas pracy Ihres Betriebs, den Ruhezeiten nach Art. 132 f. Kodeks pracy oder Ihren betrieblichen Vereinbarungen &mdash; jede Antwort ist ein Blindflug." },
+      { "icon": "cloud_off", "title": "Personaldaten in fremden Rechenzentren", "text": "Wer einen Cloud-Chatbot auf Dienstpläne loslässt, überträgt Beschäftigtendaten an einen externen Anbieter. Für Betriebe mit hohen Anforderungen an die Datenhoheit ist das keine Option." }
     ]
   },
   "solutions": {
     "title": "Wie Klacksy sich Ihrem Betrieb anpasst",
-    "subtitle": "Vier Stellschrauben, mit denen Sie Klacksy zu Ihrem Assistenten machen.",
+    "subtitle": "Vier Stellschrauben, mit denen Sie den Assistenten in der Hand behalten.",
     "items": [
-      { "icon": "tune", "title": "Autonomie selbst bestimmen", "text": "Über vier einstellbare Stufen legen Sie fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen dabei immer Ihre Bestätigung." },
-      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Firmenregel einfach im Chat &mdash; etwa &bdquo;Nachtzuschlag 25% ab 23 Uhr&ldquo; oder &bdquo;maximal 3 Nachtschichten pro Woche&ldquo;. Klacksy fragt gezielt nach, bis alle Pflichtangaben vollständig und geprüft sind, zeigt eine Vorschau des Ergebnisses und speichert erst nach Ihrer ausdrücklichen Bestätigung &mdash; jederzeit nachvollziehbar im Regel-Register und rückgängig machbar." },
-      { "icon": "translate", "title": "Fachvokabular trainieren", "text": "Klacksy lernt Ihre betriebsspezifischen Abkürzungen und Formulierungen, damit Anfragen auf Anhieb richtig verstanden werden." },
-      { "icon": "face", "title": "Persönlichkeit anpassen", "text": "Über den Persönlichkeits-Editor bestimmen Sie Tonalität und Charakter von Klacksy &mdash; passend zu Ihrer Unternehmenskultur." }
+      { "icon": "fact_check", "title": "Auskunft aus der Ewidencja, nicht aus dem Modell", "text": "Klacksy beantwortet Fragen zu geleisteten Stunden und Ruhezeiten aus der in Klacks geführten Arbeitszeitdokumentation nach Art. 149 Kodeks pracy. Die Zahlen kommen aus dem System, nicht aus der Schätzung eines Sprachmodells." },
+      { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen immer Ihre Bestätigung." },
+      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Regel im Chat &mdash; etwa einen Zuschlagssatz oder eine Obergrenze für Nachtschichten. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer Bestätigung. Jede Regel bleibt im Register nachlesbar und rückgängig machbar." },
+      { "icon": "dns", "title": "Modell lokal betreiben", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Damit lässt sich der Assistent betreiben, ohne dass Beschäftigtendaten das Haus oder das Land verlassen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Ein Pflegedienst stellt Klacksy auf sein Team ein",
-    "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei automatisch die Fachkraft-Qualifikationen &mdash; die finale Entscheidung liegt immer bei der Leitung. Dazu die Nachtzuschlag-Regel per Zuruf hinterlegt und Klacksy auf die im Haus üblichen Abkürzungen trainiert. Schon heute reagiert der Assistent entsprechend &mdash; ganz ohne Programmierung."
+    "title": "Ein Pflegedienst in Westpommern stellt Klacksy ein",
+    "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei die Qualifikationen &mdash; die Entscheidung bleibt bei der Leitung. Die betriebsüblichen Abkürzungen lernt der Assistent, die Zuschlagsregel wird per Zuruf hinterlegt. Zur Identifikation der Mitarbeitenden braucht es dabei weder Fingerabdruck noch Gesichtserkennung."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacksy in Aktion erleben",
-    "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, Persönlichkeit und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, Regel-Register und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
   }
 }
