@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Vue d'ensemble du plan de service Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Règles de jours fériés et calendriers dans Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Assistant IA Klacksy dans Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Chronologie de planification dans Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Service planifié automatiquement" },
+      { "icon": "route", "text": "Tournée optimisée" },
+      { "icon": "warning", "text": "Conflit détecté" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Planification des services" },
+      { "icon": "route", "text": "Optimisation des tournées" },
+      { "icon": "smart_toy", "text": "Assistant IA" },
+      { "icon": "schedule", "text": "Suivi du temps" },
+      { "icon": "event_busy", "text": "Absences" },
+      { "icon": "gavel", "text": "Règles &amp; majorations" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Mode d'emploi",
+    "title": "Votre plan de service en trois étapes",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installer",
+        "text": "Klacks fonctionne on-premise sur votre propre infrastructure &mdash; prêt en quelques minutes via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Adapter les règles",
+        "text": "Jours fériés, majorations et temps de repos sont préconfigurés pour votre pays &mdash; et modifiables à tout moment."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planifier automatiquement",
+        "text": "Klacks crée les plans de service, détecte les conflits et optimise les tournées &mdash; avec un assistant IA si vous le souhaitez."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks en chiffres",
+    "title": "Des faits, pas des promesses",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "de code open source" },
+      { "value": 25, "suffix": "", "label": "langues" },
+      { "value": 5, "suffix": "", "label": "solutions métier" },
+      { "value": 30, "suffix": "+", "label": "pays" }
+    ]
+  }
+}

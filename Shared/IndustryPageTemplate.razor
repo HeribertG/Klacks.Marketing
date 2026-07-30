@@ -23,10 +23,23 @@
             </div>
         </div>
         <div class="hero-enter hero-enter-3 lg:col-span-5 relative hidden lg:block">
-            <MagnifiedImage Src="@($"images/{Content.Hero.ScreenshotFile}")" Alt="@Content.Hero.ScreenshotAlt" Caption="@Content.Hero.ScreenshotCaption" Loading="eager" />
+            @if (Content.HeroMockup is not null && Content.HeroMockup.Images.Count > 0)
+            {
+                <HeroProductMockup Mockup="@Content.HeroMockup" />
+            }
+            else
+            {
+                <MagnifiedImage Src="@($"images/{Content.Hero.ScreenshotFile}")" Alt="@Content.Hero.ScreenshotAlt" Caption="@Content.Hero.ScreenshotCaption" Loading="eager" />
+            }
         </div>
     </div>
 </header>
+
+@if (Content.Ticker is not null && Content.Ticker.Items.Count > 0)
+{
+    <!-- FEATURE-TICKER -->
+    <FeatureTickerSection Content="@Content.Ticker" />
+}
 
 <!-- HERAUSFORDERUNGEN -->
 <section class="reveal bg-surface-container-low py-24 no-line-rule">
@@ -47,6 +60,12 @@
         </div>
     </div>
 </section>
+
+@if (Content.Steps is not null && Content.Steps.Items.Count > 0)
+{
+    <!-- SCHRITTE -->
+    <StepsSection Content="@Content.Steps" />
+}
 
 @if (Content.RulesCalendar is not null)
 {
@@ -119,6 +138,12 @@
         }
     </div>
 </section>
+
+@if (Content.Stats is not null && Content.Stats.Items.Count > 0)
+{
+    <!-- KENNZAHLEN -->
+    <StatsCounterSection Content="@Content.Stats" Culture="@Culture" />
+}
 
 @if (Content.ShowRoutePlanning)
 {

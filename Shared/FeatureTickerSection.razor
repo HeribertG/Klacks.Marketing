@@ -1,0 +1,30 @@
+@* Nahtloses CSS-Marquee (translateX-Loop in tailwind-input.css): der Inhalt ist
+   zweimal im Markup, die Duplikat-Spur trägt aria-hidden und wird nur unter
+   prefers-reduced-motion: no-preference eingeblendet — sonst steht eine
+   statische, umbrechende Zeile. Pausiert bei :hover/:focus-within. *@
+<section class="bg-surface-container-low border-y border-surface-container-high py-5 overflow-hidden no-line-rule" aria-label="@Content.Items.FirstOrDefault()?.Text">
+    <div class="feature-ticker" tabindex="0">
+        <div class="feature-ticker-track">
+            @foreach (var item in Content.Items)
+            {
+                <span class="feature-ticker-item">
+                    <span class="material-symbols-outlined text-secondary text-xl">@item.Icon</span>
+                    <span>@((MarkupString)item.Text)</span>
+                </span>
+            }
+        </div>
+        <div class="feature-ticker-track feature-ticker-duplicate" aria-hidden="true">
+            @foreach (var item in Content.Items)
+            {
+                <span class="feature-ticker-item">
+                    <span class="material-symbols-outlined text-secondary text-xl">@item.Icon</span>
+                    <span>@((MarkupString)item.Text)</span>
+                </span>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired] public required IndustryTickerSection Content { get; set; }
+}

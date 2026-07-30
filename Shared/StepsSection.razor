@@ -1,0 +1,29 @@
+@* 3-Schritte-Sektion mit Nummer-Badges im bestehenden reveal-stagger-Muster —
+   nutzt das vorhandene Scroll-Reveal, kein eigenes JS. *@
+<section class="reveal py-24 px-8 max-w-7xl mx-auto no-line-rule">
+    <div class="text-center mb-16">
+        @if (!string.IsNullOrEmpty(Content.Eyebrow))
+        {
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Eyebrow)</span>
+        }
+        <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@((MarkupString)Content.Title)</h2>
+    </div>
+    <div class="reveal-stagger grid md:grid-cols-3 gap-12">
+        @for (var i = 0; i < Content.Items.Count; i++)
+        {
+            var step = Content.Items[i];
+            <div class="relative flex flex-col items-start p-8 bg-surface-container-lowest rounded-2xl border border-surface-container-high">
+                <div class="absolute top-6 end-6 text-[2.5rem] font-black tracking-tighter text-surface-container-highest select-none" aria-hidden="true">@(i + 1)</div>
+                <div class="icon-pop w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/10 mb-6">
+                    <span class="material-symbols-outlined text-secondary">@step.Icon</span>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">@((MarkupString)step.Title)</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed m-0">@((MarkupString)step.Text)</p>
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired] public required IndustryStepsSection Content { get; set; }
+}

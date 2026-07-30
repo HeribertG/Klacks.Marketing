@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Gambaran keseluruhan jadual syif Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Peraturan cuti umum dan kalendar dalam Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Pembantu AI Klacksy dalam Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Garis masa penjadualan dalam Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Syif dijadualkan secara automatik" },
+      { "icon": "route", "text": "Laluan dioptimumkan" },
+      { "icon": "warning", "text": "Konflik dikesan" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Penjadualan syif" },
+      { "icon": "route", "text": "Pengoptimuman laluan" },
+      { "icon": "smart_toy", "text": "Pembantu AI" },
+      { "icon": "schedule", "text": "Penjejakan masa" },
+      { "icon": "event_busy", "text": "Ketidakhadiran" },
+      { "icon": "gavel", "text": "Peraturan &amp; elaun" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Semudah ini",
+    "title": "Jadual syif siap dalam tiga langkah",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Pasang",
+        "text": "Klacks berjalan on-premise pada infrastruktur anda sendiri &mdash; sedia dalam beberapa minit melalui Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Laraskan peraturan",
+        "text": "Cuti umum, elaun dan tempoh rehat diprakonfigurasi untuk negara anda &mdash; dan boleh diubah bila-bila masa."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Jadualkan secara automatik",
+        "text": "Klacks menyusun jadual syif, mengesan konflik dan mengoptimumkan laluan &mdash; dengan pembantu AI jika mahu."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks dalam angka",
+    "title": "Fakta, bukan janji",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "kod sumber terbuka" },
+      { "value": 25, "suffix": "", "label": "bahasa" },
+      { "value": 5, "suffix": "", "label": "penyelesaian industri" },
+      { "value": 30, "suffix": "+", "label": "negara" }
+    ]
+  }
+}

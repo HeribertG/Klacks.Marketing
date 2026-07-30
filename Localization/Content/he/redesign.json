@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "מבט כללי על לוח המשמרות של Klacks" },
+      { "file": "app-calendar-de.png", "alt": "כללי חגים ולוחות שנה ב-Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "עוזר ה-AI Klacksy ב-Klacks" },
+      { "file": "app-timeline-de.png", "alt": "ציר זמן של תזמון ב-Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "המשמרת תוזמנה אוטומטית" },
+      { "icon": "route", "text": "המסלול אופטם" },
+      { "icon": "warning", "text": "זוהתה התנגשות" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "תזמון משמרות" },
+      { "icon": "route", "text": "אופטימיזציית מסלולים" },
+      { "icon": "smart_toy", "text": "עוזר AI" },
+      { "icon": "schedule", "text": "מעקב שעות" },
+      { "icon": "event_busy", "text": "היעדרויות" },
+      { "icon": "gavel", "text": "כללים ותוספות" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "ככה פשוט",
+    "title": "לוח משמרות מוכן בשלושה צעדים",
+    "items": [
+      {
+        "icon": "download",
+        "title": "התקנה",
+        "text": "Klacks רץ On-Premise על התשתית שלכם &mdash; מוכן תוך דקות באמצעות Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "התאמת כללים",
+        "text": "חגים, תוספות וזמני מנוחה מוגדרים מראש עבור המדינה שלכם &mdash; וניתן לשנותם בכל עת."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "תזמון אוטומטי",
+        "text": "Klacks יוצר לוחות משמרות, מזהה התנגשויות ומבצע אופטימיזציה של מסלולים &mdash; עם עוזר AI אם תרצו."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks במספרים",
+    "title": "עובדות, לא הבטחות",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "קוד פתוח" },
+      { "value": 25, "suffix": "", "label": "שפות" },
+      { "value": 5, "suffix": "", "label": "פתרונות ענפיים" },
+      { "value": 30, "suffix": "+", "label": "מדינות" }
+    ]
+  }
+}

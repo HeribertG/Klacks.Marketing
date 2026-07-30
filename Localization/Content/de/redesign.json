@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Klacks Dienstplan-Übersicht" },
+      { "file": "app-calendar-de.png", "alt": "Feiertagsregeln und Kalender in Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy KI-Assistent in Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Zeitachse der Einsatzplanung in Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Dienst automatisch geplant" },
+      { "icon": "route", "text": "Route optimiert" },
+      { "icon": "warning", "text": "Konflikt erkannt" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Dienstplanung" },
+      { "icon": "route", "text": "Tourenoptimierung" },
+      { "icon": "smart_toy", "text": "KI-Assistent" },
+      { "icon": "schedule", "text": "Zeiterfassung" },
+      { "icon": "event_busy", "text": "Abwesenheiten" },
+      { "icon": "gavel", "text": "Regeln &amp; Zuschläge" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "So einfach geht's",
+    "title": "In drei Schritten zum fertigen Dienstplan",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installieren",
+        "text": "Klacks läuft On-Premise auf Ihrer eigenen Infrastruktur &mdash; per Docker in Minuten startklar."
+      },
+      {
+        "icon": "tune",
+        "title": "Regeln anpassen",
+        "text": "Feiertage, Zuschläge und Ruhezeiten sind für Ihr Land vorkonfiguriert &mdash; und jederzeit selbst anpassbar."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Automatisch planen",
+        "text": "Klacks erstellt Dienstpläne, erkennt Konflikte und optimiert Touren &mdash; auf Wunsch per KI-Assistent."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks in Zahlen",
+    "title": "Fakten statt Versprechen",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "Open-Source-Code" },
+      { "value": 25, "suffix": "", "label": "Sprachen" },
+      { "value": 5, "suffix": "", "label": "Branchenlösungen" },
+      { "value": 30, "suffix": "+", "label": "Länder" }
+    ]
+  }
+}

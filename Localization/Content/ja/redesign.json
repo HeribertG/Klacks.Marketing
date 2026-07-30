@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Klacksシフト表の概要" },
+      { "file": "app-calendar-de.png", "alt": "Klacksの祝日ルールとカレンダー" },
+      { "file": "app-klacksy-de.png", "alt": "KlacksのKlacksy AIアシスタント" },
+      { "file": "app-timeline-de.png", "alt": "Klacksの計画タイムライン" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "シフトを自動作成しました" },
+      { "icon": "route", "text": "ルートを最適化しました" },
+      { "icon": "warning", "text": "競合を検出しました" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "シフト計画" },
+      { "icon": "route", "text": "ルート最適化" },
+      { "icon": "smart_toy", "text": "AIアシスタント" },
+      { "icon": "schedule", "text": "勤怠管理" },
+      { "icon": "event_busy", "text": "休暇管理" },
+      { "icon": "gavel", "text": "規則・割増" },
+      { "icon": "dns", "text": "オンプレミス" },
+      { "icon": "code", "text": "オープンソース" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "使い方はかんたん",
+    "title": "3ステップで完成するシフト表",
+    "items": [
+      {
+        "icon": "download",
+        "title": "インストール",
+        "text": "Klacksは自社インフラ上でオンプレミス稼働 &mdash; Dockerで数分で準備完了。"
+      },
+      {
+        "icon": "tune",
+        "title": "ルールを調整",
+        "text": "祝日・割増・休息時間は国別にプリセット済み &mdash; いつでも自分で調整可能。"
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "自動で計画",
+        "text": "Klacksがシフト表を作成し、競合を検出し、ルートを最適化 &mdash; 希望すればAIアシスタントも。"
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "数字で見るKlacks",
+    "title": "約束ではなく事実を",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "オープンソースコード" },
+      { "value": 25, "suffix": "", "label": "言語" },
+      { "value": 5, "suffix": "", "label": "業種別ソリューション" },
+      { "value": 30, "suffix": "+", "label": "か国" }
+    ]
+  }
+}

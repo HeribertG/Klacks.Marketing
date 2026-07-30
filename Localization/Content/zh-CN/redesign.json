@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Klacks 排班表概览" },
+      { "file": "app-calendar-de.png", "alt": "Klacks 中的节假日规则与日历" },
+      { "file": "app-klacksy-de.png", "alt": "Klacks 中的 Klacksy AI 助手" },
+      { "file": "app-timeline-de.png", "alt": "Klacks 中的排班时间轴" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "班次已自动排定" },
+      { "icon": "route", "text": "路线已优化" },
+      { "icon": "warning", "text": "检测到冲突" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "排班" },
+      { "icon": "route", "text": "路线优化" },
+      { "icon": "smart_toy", "text": "AI 助手" },
+      { "icon": "schedule", "text": "工时记录" },
+      { "icon": "event_busy", "text": "请假管理" },
+      { "icon": "gavel", "text": "规则与补贴" },
+      { "icon": "dns", "text": "本地部署" },
+      { "icon": "code", "text": "开源" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "就是这么简单",
+    "title": "三步搞定排班表",
+    "items": [
+      {
+        "icon": "download",
+        "title": "安装",
+        "text": "Klacks 在您自己的基础设施上本地运行 &mdash; 通过 Docker 几分钟即可就绪。"
+      },
+      {
+        "icon": "tune",
+        "title": "调整规则",
+        "text": "节假日、补贴和休息时间已按您的国家预配置 &mdash; 并且随时可以自行调整。"
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "自动排班",
+        "text": "Klacks 自动生成排班表、检测冲突并优化路线 &mdash; 如需要还可使用 AI 助手。"
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks 数据一览",
+    "title": "用事实说话，不靠承诺",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "开源代码" },
+      { "value": 25, "suffix": "", "label": "种语言" },
+      { "value": 5, "suffix": "", "label": "个行业方案" },
+      { "value": 30, "suffix": "+", "label": "个国家" }
+    ]
+  }
+}

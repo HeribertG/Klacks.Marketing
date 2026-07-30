@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Oversikt over Klacks vaktplan" },
+      { "file": "app-calendar-de.png", "alt": "Helligdagsregler og kalendere i Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy AI-assistent i Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Planleggingstidslinje i Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Vakt planlagt automatisk" },
+      { "icon": "route", "text": "Rute optimalisert" },
+      { "icon": "warning", "text": "Konflikt oppdaget" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Vaktplanlegging" },
+      { "icon": "route", "text": "Ruteoptimalisering" },
+      { "icon": "smart_toy", "text": "AI-assistent" },
+      { "icon": "schedule", "text": "Tidsregistrering" },
+      { "icon": "event_busy", "text": "Fravær" },
+      { "icon": "gavel", "text": "Regler &amp; tillegg" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Slik fungerer det",
+    "title": "Ferdig vaktplan i tre steg",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installer",
+        "text": "Klacks kjører on-premise på deres egen infrastruktur &mdash; klart på minutter via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Tilpass regler",
+        "text": "Helligdager, tillegg og hvileperioder er forhåndskonfigurert for deres land &mdash; og kan endres når som helst."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planlegg automatisk",
+        "text": "Klacks lager vaktplaner, oppdager konflikter og optimaliserer ruter &mdash; med en AI-assistent om dere vil."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks i tall",
+    "title": "Fakta, ikke løfter",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "åpen kildekode" },
+      { "value": 25, "suffix": "", "label": "språk" },
+      { "value": 5, "suffix": "", "label": "bransjeløsninger" },
+      { "value": 30, "suffix": "+", "label": "land" }
+    ]
+  }
+}

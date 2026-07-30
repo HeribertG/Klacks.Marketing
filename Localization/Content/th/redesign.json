@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "ภาพรวมตารางเวร Klacks" },
+      { "file": "app-calendar-de.png", "alt": "กฎวันหยุดและปฏิทินใน Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "ผู้ช่วย AI Klacksy ใน Klacks" },
+      { "file": "app-timeline-de.png", "alt": "ไทม์ไลน์การจัดตารางใน Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "จัดเวรอัตโนมัติแล้ว" },
+      { "icon": "route", "text": "ปรับเส้นทางให้เหมาะสมแล้ว" },
+      { "icon": "warning", "text": "ตรวจพบความขัดแย้ง" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "การจัดเวร" },
+      { "icon": "route", "text": "การปรับเส้นทางให้เหมาะสม" },
+      { "icon": "smart_toy", "text": "ผู้ช่วย AI" },
+      { "icon": "schedule", "text": "การลงเวลา" },
+      { "icon": "event_busy", "text": "การลา" },
+      { "icon": "gavel", "text": "กฎและเบี้ยเลี้ยง" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "ง่ายแค่นี้เอง",
+    "title": "ตารางเวรสำเร็จในสามขั้นตอน",
+    "items": [
+      {
+        "icon": "download",
+        "title": "ติดตั้ง",
+        "text": "Klacks ทำงานแบบ on-premise บนโครงสร้างพื้นฐานของคุณเอง &mdash; พร้อมใช้งานในไม่กี่นาทีผ่าน Docker"
+      },
+      {
+        "icon": "tune",
+        "title": "ปรับกฎ",
+        "text": "วันหยุดนักขัตฤกษ์ เบี้ยเลี้ยง และเวลาพักถูกตั้งค่าล่วงหน้าสำหรับประเทศของคุณ &mdash; และปรับเปลี่ยนได้ทุกเมื่อ"
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "จัดตารางอัตโนมัติ",
+        "text": "Klacks สร้างตารางเวร ตรวจจับความขัดแย้ง และปรับเส้นทางให้เหมาะสม &mdash; พร้อมผู้ช่วย AI หากต้องการ"
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks ในตัวเลข",
+    "title": "ข้อเท็จจริง ไม่ใช่คำมั่นสัญญา",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "โค้ดโอเพนซอร์ส" },
+      { "value": 25, "suffix": "", "label": "ภาษา" },
+      { "value": 5, "suffix": "", "label": "โซลูชันเฉพาะอุตสาหกรรม" },
+      { "value": 30, "suffix": "+", "label": "ประเทศ" }
+    ]
+  }
+}

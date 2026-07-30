@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Oversigt over Klacks vagtplan" },
+      { "file": "app-calendar-de.png", "alt": "Helligdagsregler og kalendere i Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy AI-assistent i Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Planlægningstidslinje i Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Vagt planlagt automatisk" },
+      { "icon": "route", "text": "Rute optimeret" },
+      { "icon": "warning", "text": "Konflikt registreret" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Vagtplanlægning" },
+      { "icon": "route", "text": "Ruteoptimering" },
+      { "icon": "smart_toy", "text": "AI-assistent" },
+      { "icon": "schedule", "text": "Tidsregistrering" },
+      { "icon": "event_busy", "text": "Fravær" },
+      { "icon": "gavel", "text": "Regler &amp; tillæg" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Sådan virker det",
+    "title": "Færdig vagtplan i tre trin",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installér",
+        "text": "Klacks kører on-premise på jeres egen infrastruktur &mdash; klar på få minutter via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Tilpas regler",
+        "text": "Helligdage, tillæg og hvileperioder er forudkonfigureret for jeres land &mdash; og kan tilpasses når som helst."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planlæg automatisk",
+        "text": "Klacks laver vagtplaner, opdager konflikter og optimerer ruter &mdash; med en AI-assistent, hvis I vil."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks i tal",
+    "title": "Fakta frem for løfter",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "open-source-kode" },
+      { "value": 25, "suffix": "", "label": "sprog" },
+      { "value": 5, "suffix": "", "label": "brancheløsninger" },
+      { "value": 30, "suffix": "+", "label": "lande" }
+    ]
+  }
+}

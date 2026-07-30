@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Vista general del plan de turnos de Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Reglas de festivos y calendarios en Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Asistente de IA Klacksy en Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Cronología de planificación en Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Turno planificado automáticamente" },
+      { "icon": "route", "text": "Ruta optimizada" },
+      { "icon": "warning", "text": "Conflicto detectado" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Planificación de turnos" },
+      { "icon": "route", "text": "Optimización de rutas" },
+      { "icon": "smart_toy", "text": "Asistente de IA" },
+      { "icon": "schedule", "text": "Registro horario" },
+      { "icon": "event_busy", "text": "Ausencias" },
+      { "icon": "gavel", "text": "Reglas y complementos" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Así de fácil",
+    "title": "Tu plan de turnos en tres pasos",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Instalar",
+        "text": "Klacks funciona on-premise en tu propia infraestructura &mdash; listo en minutos con Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Ajustar reglas",
+        "text": "Festivos, complementos y descansos vienen preconfigurados para tu país &mdash; y puedes ajustarlos cuando quieras."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planificar automáticamente",
+        "text": "Klacks crea planes de turnos, detecta conflictos y optimiza rutas &mdash; con un asistente de IA si lo deseas."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks en cifras",
+    "title": "Hechos, no promesas",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "código open source" },
+      { "value": 25, "suffix": "", "label": "idiomas" },
+      { "value": 5, "suffix": "", "label": "soluciones sectoriales" },
+      { "value": 30, "suffix": "+", "label": "países" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Przegląd grafiku Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Reguły świąt i kalendarze w Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Asystent AI Klacksy w Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Oś czasu planowania w Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Zmiana zaplanowana automatycznie" },
+      { "icon": "route", "text": "Trasa zoptymalizowana" },
+      { "icon": "warning", "text": "Wykryto konflikt" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Planowanie zmian" },
+      { "icon": "route", "text": "Optymalizacja tras" },
+      { "icon": "smart_toy", "text": "Asystent AI" },
+      { "icon": "schedule", "text": "Ewidencja czasu" },
+      { "icon": "event_busy", "text": "Nieobecności" },
+      { "icon": "gavel", "text": "Reguły i dodatki" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "To takie proste",
+    "title": "Gotowy grafik w trzech krokach",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Zainstaluj",
+        "text": "Klacks działa on-premise na własnej infrastrukturze &mdash; gotowy w kilka minut przez Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Dostosuj reguły",
+        "text": "Święta, dodatki i okresy odpoczynku są prekonfigurowane dla twojego kraju &mdash; i zawsze możesz je zmienić."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planuj automatycznie",
+        "text": "Klacks tworzy grafiki, wykrywa konflikty i optymalizuje trasy &mdash; z asystentem AI, jeśli chcesz."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks w liczbach",
+    "title": "Fakty, nie obietnice",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "kodu open source" },
+      { "value": 25, "suffix": "", "label": "języków" },
+      { "value": 5, "suffix": "", "label": "rozwiązań branżowych" },
+      { "value": 30, "suffix": "+", "label": "krajów" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Klacks-vuorosuunnitelman yleisnäkymä" },
+      { "file": "app-calendar-de.png", "alt": "Pyhäpäiväsäännöt ja kalenterit Klacksissa" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy-tekoälyavustaja Klacksissa" },
+      { "file": "app-timeline-de.png", "alt": "Suunnittelun aikajana Klacksissa" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Vuoro suunniteltu automaattisesti" },
+      { "icon": "route", "text": "Reitti optimoitu" },
+      { "icon": "warning", "text": "Ristiriita havaittu" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Vuorosuunnittelu" },
+      { "icon": "route", "text": "Reittioptimointi" },
+      { "icon": "smart_toy", "text": "Tekoälyavustaja" },
+      { "icon": "schedule", "text": "Ajanseuranta" },
+      { "icon": "event_busy", "text": "Poissaolot" },
+      { "icon": "gavel", "text": "Säännöt &amp; lisät" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Näin helppoa se on",
+    "title": "Valmis työvuorosuunnitelma kolmessa vaiheessa",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Asenna",
+        "text": "Klacks toimii on-premise omassa infrastruktuurissasi &mdash; valmis minuuteissa Dockerilla."
+      },
+      {
+        "icon": "tune",
+        "title": "Säädä säännöt",
+        "text": "Pyhäpäivät, lisät ja lepoajat on esikonfiguroitu maallesi &mdash; ja voit muuttaa niitä milloin tahansa."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Suunnittele automaattisesti",
+        "text": "Klacks laatii vuorosuunnitelmat, havaitsee ristiriidat ja optimoi reitit &mdash; halutessasi tekoälyavustajalla."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks lukuina",
+    "title": "Faktoja, ei lupauksia",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "avoimen lähdekoodin koodia" },
+      { "value": 25, "suffix": "", "label": "kieltä" },
+      { "value": 5, "suffix": "", "label": "toimialaratkaisua" },
+      { "value": 30, "suffix": "+", "label": "maata" }
+    ]
+  }
+}

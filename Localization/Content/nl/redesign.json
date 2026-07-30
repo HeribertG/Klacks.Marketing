@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Overzicht van het Klacks-rooster" },
+      { "file": "app-calendar-de.png", "alt": "Feestdagenregels en kalenders in Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy AI-assistent in Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Planningstijdlijn in Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Dienst automatisch ingepland" },
+      { "icon": "route", "text": "Route geoptimaliseerd" },
+      { "icon": "warning", "text": "Conflict gedetecteerd" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Dienstplanning" },
+      { "icon": "route", "text": "Route-optimalisatie" },
+      { "icon": "smart_toy", "text": "AI-assistent" },
+      { "icon": "schedule", "text": "Tijdregistratie" },
+      { "icon": "event_busy", "text": "Afwezigheden" },
+      { "icon": "gavel", "text": "Regels &amp; toeslagen" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Zo eenvoudig werkt het",
+    "title": "In drie stappen een kant-en-klaar rooster",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installeren",
+        "text": "Klacks draait on-premise op je eigen infrastructuur &mdash; via Docker binnen enkele minuten klaar."
+      },
+      {
+        "icon": "tune",
+        "title": "Regels aanpassen",
+        "text": "Feestdagen, toeslagen en rusttijden zijn voorgeconfigureerd voor jouw land &mdash; en altijd zelf aan te passen."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Automatisch plannen",
+        "text": "Klacks maakt roosters, detecteert conflicten en optimaliseert routes &mdash; desgewenst met een AI-assistent."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks in cijfers",
+    "title": "Feiten, geen beloften",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "open-sourcecode" },
+      { "value": 25, "suffix": "", "label": "talen" },
+      { "value": 5, "suffix": "", "label": "brancheoplossingen" },
+      { "value": 30, "suffix": "+", "label": "landen" }
+    ]
+  }
+}

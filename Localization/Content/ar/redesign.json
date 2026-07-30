@@ -1,0 +1,57 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-ar.png", "alt": "نظرة عامة على جدول الورديات في Klacks" },
+      { "file": "app-calendar-ar.png", "alt": "قواعد العطل الرسمية والتقويمات في Klacks" },
+      { "file": "app-klacksy-ar.png", "alt": "المساعد الذكي Klacksy في Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "تمت جدولة الوردية تلقائيًا" },
+      { "icon": "route", "text": "تم تحسين المسار" },
+      { "icon": "warning", "text": "تم اكتشاف تعارض" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "جدولة الورديات" },
+      { "icon": "route", "text": "تحسين المسارات" },
+      { "icon": "smart_toy", "text": "مساعد ذكاء اصطناعي" },
+      { "icon": "schedule", "text": "تتبع الوقت" },
+      { "icon": "event_busy", "text": "الغيابات" },
+      { "icon": "gavel", "text": "القواعد والبدلات" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "بهذه البساطة",
+    "title": "جدول وردياتك الجاهز في ثلاث خطوات",
+    "items": [
+      {
+        "icon": "download",
+        "title": "التثبيت",
+        "text": "يعمل Klacks محليًا على بنيتك التحتية الخاصة &mdash; جاهز خلال دقائق عبر Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "تعديل القواعد",
+        "text": "العطل الرسمية والبدلات وفترات الراحة مُعدة مسبقًا لبلدك &mdash; ويمكنك تعديلها في أي وقت."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "الجدولة التلقائية",
+        "text": "ينشئ Klacks جداول الورديات ويكتشف التعارضات ويحسّن المسارات &mdash; وبمساعد ذكاء اصطناعي إن رغبت."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks بالأرقام",
+    "title": "حقائق لا وعود",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "شيفرة مفتوحة المصدر" },
+      { "value": 25, "suffix": "", "label": "لغة" },
+      { "value": 5, "suffix": "", "label": "حلول قطاعية" },
+      { "value": 30, "suffix": "+", "label": "دولة" }
+    ]
+  }
+}

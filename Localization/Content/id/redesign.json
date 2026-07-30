@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Ikhtisar jadwal shift Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Aturan hari libur dan kalender di Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Asisten AI Klacksy di Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Linimasa penjadwalan di Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Shift dijadwalkan otomatis" },
+      { "icon": "route", "text": "Rute dioptimalkan" },
+      { "icon": "warning", "text": "Konflik terdeteksi" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Penjadwalan shift" },
+      { "icon": "route", "text": "Optimasi rute" },
+      { "icon": "smart_toy", "text": "Asisten AI" },
+      { "icon": "schedule", "text": "Pencatatan waktu" },
+      { "icon": "event_busy", "text": "Ketidakhadiran" },
+      { "icon": "gavel", "text": "Aturan &amp; tunjangan" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Semudah ini",
+    "title": "Jadwal shift selesai dalam tiga langkah",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Instal",
+        "text": "Klacks berjalan on-premise di infrastruktur Anda sendiri &mdash; siap dalam hitungan menit via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Sesuaikan aturan",
+        "text": "Hari libur, tunjangan, dan waktu istirahat sudah dikonfigurasi untuk negara Anda &mdash; dan bisa diubah kapan saja."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Jadwalkan otomatis",
+        "text": "Klacks menyusun jadwal shift, mendeteksi konflik, dan mengoptimalkan rute &mdash; dengan asisten AI bila diinginkan."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks dalam angka",
+    "title": "Fakta, bukan janji",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "kode open source" },
+      { "value": 25, "suffix": "", "label": "bahasa" },
+      { "value": 5, "suffix": "", "label": "solusi industri" },
+      { "value": 30, "suffix": "+", "label": "negara" }
+    ]
+  }
+}

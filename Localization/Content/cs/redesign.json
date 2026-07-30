@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Přehled plánu směn Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Pravidla svátků a kalendáře v Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "AI asistent Klacksy v Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Časová osa plánování v Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Směna naplánována automaticky" },
+      { "icon": "route", "text": "Trasa optimalizována" },
+      { "icon": "warning", "text": "Zjištěn konflikt" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Plánování směn" },
+      { "icon": "route", "text": "Optimalizace tras" },
+      { "icon": "smart_toy", "text": "AI asistent" },
+      { "icon": "schedule", "text": "Evidence času" },
+      { "icon": "event_busy", "text": "Absence" },
+      { "icon": "gavel", "text": "Pravidla &amp; příplatky" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Jak to funguje",
+    "title": "Hotový plán směn ve třech krocích",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Instalace",
+        "text": "Klacks běží on-premise na vaší vlastní infrastruktuře &mdash; přes Docker je připraven během minut."
+      },
+      {
+        "icon": "tune",
+        "title": "Úprava pravidel",
+        "text": "Svátky, příplatky a doby odpočinku jsou přednastaveny pro vaši zemi &mdash; a kdykoli je můžete upravit."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Automatické plánování",
+        "text": "Klacks vytváří plány směn, odhaluje konflikty a optimalizuje trasy &mdash; na přání s AI asistentem."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks v číslech",
+    "title": "Fakta, ne sliby",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "open-source kódu" },
+      { "value": 25, "suffix": "", "label": "jazyků" },
+      { "value": 5, "suffix": "", "label": "oborových řešení" },
+      { "value": 30, "suffix": "+", "label": "zemí" }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Klacks shift plan overview" },
+      { "file": "app-calendar-de.png", "alt": "Public holiday rules and calendars in Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy AI assistant in Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Scheduling timeline in Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Shift scheduled automatically" },
+      { "icon": "route", "text": "Route optimized" },
+      { "icon": "warning", "text": "Conflict detected" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Shift planning" },
+      { "icon": "route", "text": "Route optimization" },
+      { "icon": "smart_toy", "text": "AI assistant" },
+      { "icon": "schedule", "text": "Time tracking" },
+      { "icon": "event_busy", "text": "Absences" },
+      { "icon": "gavel", "text": "Rules &amp; surcharges" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "How it works",
+    "title": "Your finished shift plan in three steps",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Install",
+        "text": "Klacks runs on-premise on your own infrastructure &mdash; ready in minutes via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Adjust rules",
+        "text": "Public holidays, surcharges and rest periods come preconfigured for your country &mdash; and you can adjust them anytime."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Plan automatically",
+        "text": "Klacks builds shift plans, flags conflicts and optimizes routes &mdash; with an AI assistant if you want."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks in numbers",
+    "title": "Facts, not promises",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "open-source code" },
+      { "value": 25, "suffix": "", "label": "languages" },
+      { "value": 5, "suffix": "", "label": "industry solutions" },
+      { "value": 30, "suffix": "+", "label": "countries" }
+    ]
+  }
+}

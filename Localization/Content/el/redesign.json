@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Επισκόπηση προγράμματος βαρδιών Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Κανόνες αργιών και ημερολόγια στο Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Βοηθός AI Klacksy στο Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Χρονολόγιο προγραμματισμού στο Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Η βάρδια προγραμματίστηκε αυτόματα" },
+      { "icon": "route", "text": "Βελτιστοποιημένη διαδρομή" },
+      { "icon": "warning", "text": "Εντοπίστηκε σύγκρουση" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Προγραμματισμός βαρδιών" },
+      { "icon": "route", "text": "Βελτιστοποίηση διαδρομών" },
+      { "icon": "smart_toy", "text": "Βοηθός AI" },
+      { "icon": "schedule", "text": "Καταγραφή χρόνου" },
+      { "icon": "event_busy", "text": "Απουσίες" },
+      { "icon": "gavel", "text": "Κανόνες &amp; προσαυξήσεις" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Πώς λειτουργεί",
+    "title": "Το έτοιμο πρόγραμμα βαρδιών σε τρία βήματα",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Εγκατάσταση",
+        "text": "Το Klacks τρέχει on-premise στη δική σας υποδομή &mdash; έτοιμο σε λίγα λεπτά μέσω Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Προσαρμογή κανόνων",
+        "text": "Αργίες, προσαυξήσεις και περίοδοι ανάπαυσης είναι προδιαμορφωμένες για τη χώρα σας &mdash; και τις αλλάζετε οποτεδήποτε."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Αυτόματος προγραμματισμός",
+        "text": "Το Klacks δημιουργεί προγράμματα βαρδιών, εντοπίζει συγκρούσεις και βελτιστοποιεί διαδρομές &mdash; με βοηθό AI αν θέλετε."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Το Klacks σε αριθμούς",
+    "title": "Γεγονότα, όχι υποσχέσεις",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "ανοικτός κώδικας" },
+      { "value": 25, "suffix": "", "label": "γλώσσες" },
+      { "value": 5, "suffix": "", "label": "λύσεις κλάδων" },
+      { "value": 30, "suffix": "+", "label": "χώρες" }
+    ]
+  }
+}

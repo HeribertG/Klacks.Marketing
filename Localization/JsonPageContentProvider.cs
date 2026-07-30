@@ -11,6 +11,7 @@ public sealed class JsonPageContentProvider : IPageContentProvider
     private readonly ConcurrentDictionary<string, IndustryPageContent?> _industryCache = new();
     private readonly ConcurrentDictionary<string, InstallPageContent?> _installCache = new();
     private readonly ConcurrentDictionary<string, IReadOnlyDictionary<string, string>?> _flatCache = new();
+    private readonly ConcurrentDictionary<string, IndustryRedesignContent?> _redesignCache = new();
 
     public JsonPageContentProvider(IWebHostEnvironment environment)
     {
@@ -81,7 +82,53 @@ public sealed class JsonPageContentProvider : IPageContentProvider
             }
 
             using var stream = File.OpenRead(path);
-            return JsonSerializer.Deserialize<IndustryPageContent>(stream, SerializerOptions);
+            var content = JsonSerializer.Deserialize<IndustryPageContent>(stream, SerializerOptions);
+            if (content is not null)
+            {
+                ApplyRedesign(cultureCode, content);
+            }
+
+            return content;
+        });
+    }
+
+    // Füllt die optionalen Redesign-Sektionen (HeroMockup/Ticker/Steps/Stats) aus
+    // der kulturspezifischen redesign.json nach, wenn die Seite sie nicht selbst
+    // definiert. Läuft hier (nicht in GetIndustryPage), damit die nachgefüllte
+    // Kultur immer zur Kultur der tatsächlich geladenen Datei passt — sonst käme
+    // z. B. arabische Redesign-Sprache auf den deutschen Fallback-Inhalt.
+    private void ApplyRedesign(string cultureCode, IndustryPageContent content)
+    {
+        if (content.HeroMockup is not null && content.Ticker is not null
+            && content.Steps is not null && content.Stats is not null)
+        {
+            return;
+        }
+
+        var redesign = LoadRedesign(cultureCode) ?? LoadRedesign(SupportedCultures.DefaultCode);
+        if (redesign is null)
+        {
+            return;
+        }
+
+        content.HeroMockup ??= redesign.HeroMockup;
+        content.Ticker ??= redesign.Ticker;
+        content.Steps ??= redesign.Steps;
+        content.Stats ??= redesign.Stats;
+    }
+
+    private IndustryRedesignContent? LoadRedesign(string cultureCode)
+    {
+        return _redesignCache.GetOrAdd(cultureCode, _ =>
+        {
+            var path = Path.Combine(_contentRoot, cultureCode, "redesign.json");
+            if (!File.Exists(path))
+            {
+                return null;
+            }
+
+            using var stream = File.OpenRead(path);
+            return JsonSerializer.Deserialize<IndustryRedesignContent>(stream, SerializerOptions);
         });
     }
 

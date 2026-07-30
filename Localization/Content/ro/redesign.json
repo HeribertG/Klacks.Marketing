@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Privire de ansamblu asupra planului de ture Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Reguli de sărbători și calendare în Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Asistentul AI Klacksy în Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Cronologia planificării în Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Tură planificată automat" },
+      { "icon": "route", "text": "Traseu optimizat" },
+      { "icon": "warning", "text": "Conflict detectat" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Planificarea turelor" },
+      { "icon": "route", "text": "Optimizarea traseelor" },
+      { "icon": "smart_toy", "text": "Asistent AI" },
+      { "icon": "schedule", "text": "Pontaj" },
+      { "icon": "event_busy", "text": "Absențe" },
+      { "icon": "gavel", "text": "Reguli &amp; sporuri" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Atât de simplu",
+    "title": "Planul de ture gata în trei pași",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Instalează",
+        "text": "Klacks rulează on-premise pe propria infrastructură &mdash; gata în câteva minute prin Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Ajustează regulile",
+        "text": "Sărbătorile, sporurile și perioadele de odihnă sunt preconfigurate pentru țara ta &mdash; și le poți modifica oricând."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Planifică automat",
+        "text": "Klacks creează planuri de ture, detectează conflicte și optimizează trasee &mdash; cu un asistent AI, dacă dorești."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks în cifre",
+    "title": "Fapte, nu promisiuni",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "cod open source" },
+      { "value": 25, "suffix": "", "label": "limbi" },
+      { "value": 5, "suffix": "", "label": "soluții pe industrii" },
+      { "value": 30, "suffix": "+", "label": "țări" }
+    ]
+  }
+}

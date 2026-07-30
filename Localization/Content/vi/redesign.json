@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Tổng quan lịch làm việc Klacks" },
+      { "file": "app-calendar-de.png", "alt": "Quy tắc ngày lễ và lịch trong Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Trợ lý AI Klacksy trong Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Dòng thời gian xếp lịch trong Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Ca làm việc đã được xếp tự động" },
+      { "icon": "route", "text": "Tuyến đường đã tối ưu" },
+      { "icon": "warning", "text": "Phát hiện xung đột" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Xếp ca làm việc" },
+      { "icon": "route", "text": "Tối ưu tuyến đường" },
+      { "icon": "smart_toy", "text": "Trợ lý AI" },
+      { "icon": "schedule", "text": "Chấm công" },
+      { "icon": "event_busy", "text": "Nghỉ phép" },
+      { "icon": "gavel", "text": "Quy tắc &amp; phụ cấp" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Đơn giản vậy thôi",
+    "title": "Lịch làm việc hoàn chỉnh trong ba bước",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Cài đặt",
+        "text": "Klacks chạy on-premise trên hạ tầng của riêng bạn &mdash; sẵn sàng trong vài phút qua Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Điều chỉnh quy tắc",
+        "text": "Ngày lễ, phụ cấp và thời gian nghỉ được cấu hình sẵn cho quốc gia của bạn &mdash; và có thể thay đổi bất cứ lúc nào."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Xếp lịch tự động",
+        "text": "Klacks tạo lịch làm việc, phát hiện xung đột và tối ưu tuyến đường &mdash; kèm trợ lý AI nếu bạn muốn."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks qua con số",
+    "title": "Sự thật, không phải lời hứa",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "mã nguồn mở" },
+      { "value": 25, "suffix": "", "label": "ngôn ngữ" },
+      { "value": 5, "suffix": "", "label": "giải pháp ngành" },
+      { "value": 30, "suffix": "+", "label": "quốc gia" }
+    ]
+  }
+}

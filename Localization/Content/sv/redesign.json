@@ -1,0 +1,58 @@
+{
+  "heroMockup": {
+    "images": [
+      { "file": "app-schedule-de.png", "alt": "Översikt över Klacks schema" },
+      { "file": "app-calendar-de.png", "alt": "Helgdagsregler och kalendrar i Klacks" },
+      { "file": "app-klacksy-de.png", "alt": "Klacksy AI-assistent i Klacks" },
+      { "file": "app-timeline-de.png", "alt": "Planeringstidslinje i Klacks" }
+    ],
+    "badges": [
+      { "icon": "auto_awesome", "text": "Pass schemalagt automatiskt" },
+      { "icon": "route", "text": "Rutt optimerad" },
+      { "icon": "warning", "text": "Konflikt upptäckt" }
+    ]
+  },
+  "ticker": {
+    "items": [
+      { "icon": "calendar_month", "text": "Schemaläggning" },
+      { "icon": "route", "text": "Ruttoptimering" },
+      { "icon": "smart_toy", "text": "AI-assistent" },
+      { "icon": "schedule", "text": "Tidsregistrering" },
+      { "icon": "event_busy", "text": "Frånvaro" },
+      { "icon": "gavel", "text": "Regler &amp; tillägg" },
+      { "icon": "dns", "text": "On-Premise" },
+      { "icon": "code", "text": "Open Source" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Så enkelt är det",
+    "title": "Färdigt schema i tre steg",
+    "items": [
+      {
+        "icon": "download",
+        "title": "Installera",
+        "text": "Klacks körs on-premise på er egen infrastruktur &mdash; klart på några minuter via Docker."
+      },
+      {
+        "icon": "tune",
+        "title": "Anpassa regler",
+        "text": "Helgdagar, tillägg och vilotider är förkonfigurerade för ert land &mdash; och kan ändras när som helst."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Schemalägg automatiskt",
+        "text": "Klacks skapar scheman, upptäcker konflikter och optimerar rutter &mdash; med en AI-assistent om ni vill."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "Klacks i siffror",
+    "title": "Fakta, inte löften",
+    "items": [
+      { "value": 100, "suffix": "%", "label": "öppen källkod" },
+      { "value": 25, "suffix": "", "label": "språk" },
+      { "value": 5, "suffix": "", "label": "branschlösningar" },
+      { "value": 30, "suffix": "+", "label": "länder" }
+    ]
+  }
+}
