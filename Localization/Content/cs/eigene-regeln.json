@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Nastavení vlastních plánovacích pravidel s Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Vlastní plánovací pravidla &middot; nastavení vedené AI",
+    "titleHtml": "Vaše odvětví v nabídce není? <span class=\"text-secondary\">Klacksy nastaví vaše pravidla v dialogu.</span>",
+    "subtitle": "Ať už jako výchozí bod poslouží oborová šablona, nebo zcela vlastní pravidla: Klacksy vás provede nastavením otázku po otázce, u každé hodnoty vysvětlí její vliv na plánování a změny převezme až po vašem výslovném potvrzení.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy vás formou dialogu otázek a odpovědí provede nastavením vlastních plánovacích pravidel",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Na čem standardní software selhává",
+    "title": "Vaše pravidla se nevejdou do žádné škatulky",
+    "items": [
+      { "icon": "domain_disabled", "title": "Žádná oborová šablona nesedí", "text": "Pečovatelské služby, security nebo logistika pokrývají hodně &mdash; ale vaše firemní dohoda, vaše příplatky a vaše doby odpočinku jsou prostě přesně vaše." },
+      { "icon": "code_off", "title": "Přizpůsobení bez programování", "text": "Klasický plánovací software vyžaduje pro vlastní pravidla konzultanty nebo skripty. Tady svá pravidla jednoduše popíšete vlastními slovy &mdash; zbytek udělá Klacksy." },
+      { "icon": "rule", "title": "Pravidla musí fungovat v plánování", "text": "Pravidlo v PDF nikoho nechrání. Teprve když ho plánovač kontroluje při každém přiřazení směny, stává se z něj skutečná ochrana pro váš tým." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Otázka &amp; odpověď",
+    "title": "Ve třech krocích k vlastnímu plánovacímu profilu",
+    "items": [
+      { "icon": "playlist_add", "title": "Zvolte výchozí situaci", "text": "Klacksy se nejprve zeptá: Má se jako upravitelný výchozí bod zkopírovat oborová šablona &mdash; nebo začínáte s prázdným pravidlem úplně od nuly?" },
+      { "icon": "question_answer", "title": "Odpovídejte otázku po otázce", "text": "Klacksy se ptá na každý parametr zvlášť &mdash; pracovní doba, horní limity, doby odpočinku, příplatky &mdash; a u každé otázky vysvětluje, co hodnota znamená a jak mění plánování. Nezodpovězená povinná pole a již zadané hodnoty jsou kdykoli viditelné." },
+      { "icon": "task_alt", "title": "Zkontrolujte náhled, pak potvrďte", "text": "Před uložením zobrazí Klacksy kompletní soubor pravidel jako náhled. Převzetí proběhne až po vašem potvrzení &mdash; transakčně, dohledatelně v registru pravidel a vratně." }
+    ]
+  },
+  "solutions": {
+    "title": "Na co se Klacksy přitom ptá",
+    "subtitle": "16 parametrů, každý s významem a vlivem na plánování &mdash; toto jsou tematické oblasti.",
+    "items": [
+      { "icon": "schedule", "title": "Základ pracovní doby", "text": "Běžné denní hodiny a týdenní hodiny pro 100% úvazek &mdash; reference pro procenta částečného úvazku a výpočet plánovaných hodin." },
+      { "icon": "speed", "title": "Horní limity", "text": "Maximální počet hodin za den a za týden &mdash; plánovač odmítá směny, které je překračují." },
+      { "icon": "calendar_month", "title": "Po sobě jdoucí dny &amp; dny volna", "text": "Kolik pracovních dní v řadě je povoleno a kolik dnů volna je zaručeno v každém plánovacím okně." },
+      { "icon": "bedtime", "title": "Doby odpočinku &amp; noční příplatek", "text": "Minimální přestávka mezi dvěma směnami a také začátek, konec a sazba nočního příplatku." },
+      { "icon": "more_time", "title": "Přesčasy", "text": "Od kolika hodin se odpracovaná doba počítá jako přesčas &mdash; kumulovaně za den nebo za týden." },
+      { "icon": "beach_access", "title": "Svátky &amp; dovolená", "text": "Příplatková sazba za práci o svátcích a roční nárok na dovolenou pro zaměstnance podle tohoto pravidla." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkrétně",
+    "title": "Bezpečnostní služba nastavuje své 12hodinové pravidlo",
+    "text": "Výchozí situace: oborová šablona „Security“ jako startovní bod. Klacksy se ptá postupně: „Kolik hodin smí služba maximálně trvat?“ &mdash; odpověď: 12. „Kolik po sobě jdoucích dní je povoleno?“ &mdash; 3. Každá odpověď je vysvětlena včetně svého vlivu na plánování, nakonec náhled zobrazí celý profil. Jeden klik na Potvrdit &mdash; a pravidlo okamžitě platí při každém automatickém plánování."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Nastavte si svá pravidla",
+    "text": "Spusťte dialog s Klacksy v Playgroundu &mdash; nebo si nainstalujte Klacks na vlastní infrastrukturu a definujte svá plánovací pravidla během minut místo dnů s konzultanty."
+  }
+}

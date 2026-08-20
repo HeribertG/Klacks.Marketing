@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Eigen planningsregels instellen met Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Eigen planningsregels &middot; AI-begeleide setup",
+    "titleHtml": "Uw branche zit er niet tussen? <span class=\"text-secondary\">Klacksy stelt uw regels in via een dialoog.</span>",
+    "subtitle": "Of u nu een branchetemplate als startpunt gebruikt of volledig eigen regels maakt: Klacksy leidt u vraag voor vraag door de setup, legt bij elke waarde uit wat het effect is op de planning en neemt pas over na uw uitdrukkelijke bevestiging.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy leidt via een vraag-en-antwoorddialoog door de setup van eigen planningsregels",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Waar standaardsoftware op vastloopt",
+    "title": "Uw regels passen in geen enkel hokje",
+    "items": [
+      { "icon": "domain_disabled", "title": "Geen enkele branchetemplate past", "text": "Thuiszorg, security of logistik dekken veel af &mdash; maar uw bedrijfsafspraken, uw toeslagen en uw rusttijden zijn nu eenmaal precies die van u." },
+      { "icon": "code_off", "title": "Maatwerk zonder programmeren", "text": "Klassieke planningssoftware vereist consultants of scripts voor eigen regels. Hier beschrijft u uw regels gewoon in uw eigen woorden &mdash; Klacksy doet de rest." },
+      { "icon": "rule", "title": "Regels moeten in de planning werken", "text": "Een regel in een pdf beschermt niemand. Pas als de planner die bij elke diensttoewijzing controleert, wordt het geleefde bescherming voor uw team." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Vraag &amp; antwoord",
+    "title": "In drie stappen naar uw planningsprofiel",
+    "items": [
+      { "icon": "playlist_add", "title": "Uitgangspunt kiezen", "text": "Klacksy vraagt eerst: moet een branchetemplate als bewerkbaar startpunt worden gekopieerd &mdash; of begint u met een lege regel helemaal opnieuw?" },
+      { "icon": "question_answer", "title": "Vraag voor vraag beantwoorden", "text": "Klacksy vraagt elke parameter afzonderlijk uit &mdash; werktijden, bovengrenzen, rusttijden, toeslagen &mdash; en legt bij elke vraag uit wat de waarde betekent en hoe deze de planning verandert. Open verplichte velden en reeds ingevoerde waarden zijn altijd zichtbaar." },
+      { "icon": "task_alt", "title": "Voorbeeld controleren, dan bevestigen", "text": "Voor het opslaan toont Klacksy het volledige regelwerk als voorbeeld. Pas na uw bevestiging wordt overgenomen &mdash; transactioneel, navolgbaar in het regelregister en terug te draaien." }
+    ]
+  },
+  "solutions": {
+    "title": "Wat Klacksy daarbij uitvraagt",
+    "subtitle": "16 parameters, elk met betekenis en planningseffect &mdash; dit zijn de themavelden.",
+    "items": [
+      { "icon": "schedule", "title": "Werktijd-basis", "text": "Normale daguren en de weekuren voor een 100%-aanstelling &mdash; de referentie voor deeltijdpercentages en de berekening van de normuren." },
+      { "icon": "speed", "title": "Bovengrenzen", "text": "Maximale uren per dag en per week &mdash; de planner weigert diensten die daarboven uitkomen." },
+      { "icon": "calendar_month", "title": "Vervolgdagen &amp; rustdagen", "text": "Hoeveel opeenvolgende werkdagen zijn toegestaan en hoeveel rustdagen per planningsvenster worden gegarandeerd." },
+      { "icon": "bedtime", "title": "Rustpauzes &amp; nachttoeslag", "text": "Minimale pauze tussen twee diensten plus begin, einde en tarief van de nachttoeslag." },
+      { "icon": "more_time", "title": "Overwerk", "text": "Vanaf hoeveel uren gewerkte tijd als overwerk geldt &mdash; gecumuleerd per dag of per week." },
+      { "icon": "beach_access", "title": "Feestdagen &amp; vakantie", "text": "Toeslagtarief voor werken op feestdagen en het jaarlijkse vakantierecht voor medewerkers op deze regel." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreet",
+    "title": "Een beveiligingsdienst stelt zijn 12-urenregel in",
+    "text": "Uitgangspunt: branchetemplate „Security” als startpunt. Klacksy vraagt achtereenvolgens: „Hoeveel uur mag een dienst maximaal duren?” &mdash; antwoord: 12. „Hoeveel vervolgdagen zijn toegestaan?” &mdash; 3. Elk antwoord wordt uitgelegd met het planningseffect ervan, aan het einde toont het voorbeeld het hele profiel. Een klik op Bevestigen &mdash; en de regel geldt vanaf nu bij elke automatische planning."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Stel uw regels in",
+    "text": "Start de dialoog met Klacksy in de Playground &mdash; of installeer Klacks op uw eigen infrastructuur en definieer uw planningsregels in minuten in plaats van in consultantdagen."
+  }
+}

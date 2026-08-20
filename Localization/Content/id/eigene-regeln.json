@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Menyiapkan Aturan Penjadwalan Sendiri dengan Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Aturan penjadwalan sendiri &middot; Setup terpandu AI",
+    "titleHtml": "Industri Anda belum tercakup? <span class=\"text-secondary\">Klacksy menyiapkan aturan Anda melalui dialog.</span>",
+    "subtitle": "Baik memakai templat industri sebagai titik awal maupun aturan yang sepenuhnya Anda susun sendiri: Klacksy memandu Anda langkah demi langkah melalui setup, menjelaskan dampak setiap nilai terhadap penjadwalan, dan baru menerapkan semuanya setelah konfirmasi tegas Anda.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy memandu melalui dialog tanya-jawab untuk menyiapkan aturan penjadwalan sendiri",
+    "screenshotLabel": "Setup Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Di mana software standar gagal",
+    "title": "Aturan Anda tidak muat dalam kotak mana pun",
+    "items": [
+      { "icon": "domain_disabled", "title": "Tidak ada templat industri yang cocok", "text": "Perawatan di rumah, keamanan, atau logistik mencakup banyak hal &mdash; tetapi kesepakatan internal, tunjangan, dan waktu istirahat Anda tetaplah khas milik Anda." },
+      { "icon": "code_off", "title": "Kustomisasi tanpa pemrograman", "text": "Software penjadwalan klasik menuntut konsultan atau skrip untuk aturan khusus. Di sini Anda cukup mendeskripsikan aturan Anda dengan kata-kata Anda sendiri &mdash; Klacksy menangani sisanya." },
+      { "icon": "rule", "title": "Aturan harus bekerja dalam penjadwalan", "text": "Aturan di dalam PDF tidak melindungi siapa pun. Baru ketika perencana memeriksanya pada setiap penugasan shift, aturan itu menjadi perlindungan nyata bagi tim Anda." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Tanya &amp; Jawab",
+    "title": "Menuju profil penjadwalan Anda dalam tiga langkah",
+    "items": [
+      { "icon": "playlist_add", "title": "Pilih titik awal", "text": "Klacksy bertanya lebih dulu: Apakah templat industri akan disalin sebagai titik awal yang dapat diedit &mdash; atau Anda memulai dari awal dengan aturan kosong?" },
+      { "icon": "question_answer", "title": "Jawab pertanyaan demi pertanyaan", "text": "Klacksy menanyakan setiap parameter satu per satu &mdash; jam kerja, batas maksimal, waktu istirahat, tunjangan &mdash; dan menjelaskan pada setiap pertanyaan apa arti nilai tersebut dan bagaimana pengaruhnya terhadap penjadwalan. Kolom wajib yang masih kosong dan nilai yang sudah tercatat selalu terlihat." },
+      { "icon": "task_alt", "title": "Periksa pratinjau, lalu konfirmasi", "text": "Sebelum menyimpan, Klacksy menampilkan seluruh perangkat aturan sebagai pratinjau. Baru setelah konfirmasi Anda aturan diterapkan &mdash; secara transaksional, dapat dilacak dalam registri aturan, dan dapat dibatalkan." }
+    ]
+  },
+  "solutions": {
+    "title": "Apa saja yang ditanyakan Klacksy",
+    "subtitle": "16 parameter, masing-masing dengan arti dan dampaknya pada penjadwalan &mdash; inilah bidang-bidang temanya.",
+    "items": [
+      { "icon": "schedule", "title": "Dasar jam kerja", "text": "Jam harian normal dan jam mingguan untuk posisi 100% &mdash; referensi untuk persentase paruh waktu dan perhitungan jam target." },
+      { "icon": "speed", "title": "Batas maksimal", "text": "Jam maksimal per hari dan per minggu &mdash; perencana menolak shift yang melampauinya." },
+      { "icon": "calendar_month", "title": "Hari berurutan &amp; hari libur", "text": "Berapa hari kerja berurutan yang diizinkan dan berapa hari libur yang dijamin per jendela perencanaan." },
+      { "icon": "bedtime", "title": "Jeda istirahat &amp; tunjangan malam", "text": "Jeda minimum antara dua shift serta awal, akhir, dan tarif tunjangan malam." },
+      { "icon": "more_time", "title": "Lembur", "text": "Mulai dari jam ke berapa waktu kerja dihitung sebagai lembur &mdash; diakumulasi per hari atau per minggu." },
+      { "icon": "beach_access", "title": "Hari raya &amp; cuti", "text": "Tarif tunjangan untuk kerja pada hari raya dan hak cuti tahunan bagi karyawan pada aturan ini." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Sebuah layanan keamanan menyiapkan aturan 12 jamnya",
+    "text": "Titik awal: templat industri “Keamanan” sebagai dasar. Klacksy bertanya satu per satu: “Berapa jam maksimal satu shift boleh berlangsung?” &mdash; Jawaban: 12. “Berapa hari berurutan yang diizinkan?” &mdash; 3. Setiap jawaban dijelaskan beserta dampaknya pada penjadwalan, dan di akhir pratinjau menampilkan seluruh profil. Satu klik pada Konfirmasi &mdash; dan aturan tersebut langsung berlaku pada setiap penjadwalan otomatis."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Siapkan aturan Anda",
+    "text": "Mulailah dialog dengan Klacksy di Playground &mdash; atau instal Klacks di infrastruktur Anda sendiri dan definisikan aturan penjadwalan Anda dalam hitungan menit, bukan hari-hari konsultasi."
+  }
+}

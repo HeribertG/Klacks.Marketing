@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Egne planleggingsregler med Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Egne planleggingsregler &middot; KI-styrt oppsett",
+    "titleHtml": "Bransjen din er ikke med? <span class=\"text-secondary\">Klacksy setter opp reglene dine i dialog.</span>",
+    "subtitle": "Enten du bruker en bransjemal som utgangspunkt eller helt egne regler: Klacksy leder deg spørsmål for spørsmål gjennom oppsettet, forklarer for hver verdi hvilken virkning den har på planleggingen, og tar det i bruk først etter din uttrykkelige bekreftelse.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy leder gjennom oppsettet av egne planleggingsregler med spørsmål og svar",
+    "screenshotLabel": "Klacksy-oppsett"
+  },
+  "challenges": {
+    "eyebrow": "Der standardprogramvare svikter",
+    "title": "Reglene dine passer ikke inn i noen skuff",
+    "items": [
+      { "icon": "domain_disabled", "title": "Ingen bransjemal passer", "text": "Hjemmesykepleie, sikkerhet eller logistikk dekker mye &mdash; men din bedriftsavtale, dine tillegg og dine hvileperioder er nettopp dine." },
+      { "icon": "code_off", "title": "Tilpasning uten programmering", "text": "Klassisk planleggingsprogramvare krever konsulenter eller skript for egne regler. Her beskriver du reglene dine med egne ord &mdash; Klacksy gjør resten." },
+      { "icon": "rule", "title": "Regler må virke i planleggingen", "text": "En regel i en PDF beskytter ingen. Først når planleggeren sjekker den ved hver vakttildeling, blir det levende beskyttelse for teamet ditt." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Spørsmål &amp; svar",
+    "title": "I tre trinn til din planleggingsprofil",
+    "items": [
+      { "icon": "playlist_add", "title": "Velg utgangspunkt", "text": "Klacksy spør først: Skal en bransjemal kopieres som et redigerbart utgangspunkt &mdash; eller starter du med en tom regel helt fra bunnen?" },
+      { "icon": "question_answer", "title": "Svar spørsmål for spørsmål", "text": "Klacksy spør om hver parameter enkeltvis &mdash; arbeidstider, øvre grenser, hvileperioder, tillegg &mdash; og forklarer ved hvert spørsmål hva verdien betyr og hvordan den endrer planleggingen. Åpne obligatoriske felt og allerede registrerte verdier er synlige til enhver tid." },
+      { "icon": "task_alt", "title": "Sjekk forhåndsvisningen, bekreft så", "text": "Før lagring viser Klacksy hele regelverket som forhåndsvisning. Det tas i bruk først etter din bekreftelse &mdash; transaksjonsbasert, sporbart i regelregisteret og kan gjøres om." }
+    ]
+  },
+  "solutions": {
+    "title": "Hva Klacksy spør om underveis",
+    "subtitle": "16 parametere, hver med betydning og virkning på planleggingen &mdash; dette er temaområdene.",
+    "items": [
+      { "icon": "schedule", "title": "Arbeidstid-grunnlag", "text": "Vanlige dagtimer og uketimene for en 100 %-stilling &mdash; referansen for deltidsprosenter og beregning av normaltimer." },
+      { "icon": "speed", "title": "Øvre grenser", "text": "Maksimalt antall timer per dag og per uke &mdash; planleggeren nekter vakter som går utover dette." },
+      { "icon": "calendar_month", "title": "Sammenhengende dager &amp; hviledager", "text": "Hvor mange sammenhengende arbeidsdager som er tillatt, og hvor mange hviledager per planleggingsvindu som er garantert." },
+      { "icon": "bedtime", "title": "Hvilepauser &amp; nattillegg", "text": "Minimumspause mellom to vakter samt start, slutt og sats for nattillegget." },
+      { "icon": "more_time", "title": "Overtid", "text": "Fra hvor mange timer arbeidet tid regnes som overtid &mdash; kumulert per dag eller per uke." },
+      { "icon": "beach_access", "title": "Helligdager &amp; ferie", "text": "Tilleggssats for helligdagsarbeid og det årlige feriekravet for ansatte på denne regelen." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Et sikkerhetsselskap setter opp 12-timersregelen sin",
+    "text": "Utgangspunkt: bransjemalen «Security» som startpunkt. Klacksy spør ett etter ett: «Hvor mange timer kan en vakt vare maksimalt?» &mdash; Svar: 12. «Hvor mange sammenhengende dager er tillatt?» &mdash; 3. Hvert svar forklares med sin virkning på planleggingen, til slutt viser forhåndsvisningen hele profilen. Ett klikk på Bekreft &mdash; og regelen gjelder fra nå av ved all automatisk planlegging."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Sett opp reglene dine",
+    "text": "Start dialogen med Klacksy i Playground &mdash; eller installer Klacks på din egen infrastruktur og definer planleggingsreglene dine på minutter i stedet for konsulentdager."
+  }
+}

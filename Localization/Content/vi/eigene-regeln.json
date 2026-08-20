@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Thiết lập quy tắc lập lịch riêng với Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Quy tắc lập lịch riêng &middot; Thiết lập có AI hướng dẫn",
+    "titleHtml": "Ngành của bạn chưa có trong danh sách? <span class=\"text-secondary\">Klacksy thiết lập quy tắc của bạn qua hội thoại.</span>",
+    "subtitle": "Dù bắt đầu từ mẫu theo ngành hay hoàn toàn từ đầu: Klacksy hướng dẫn bạn qua từng câu hỏi trong quá trình thiết lập, giải thích tác động của từng giá trị đến việc lập lịch và chỉ áp dụng sau khi bạn xác nhận rõ ràng.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy hướng dẫn thiết lập quy tắc lập lịch riêng qua hội thoại hỏi &amp; đáp",
+    "screenshotLabel": "Thiết lập Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Điểm yếu của phần mềm tiêu chuẩn",
+    "title": "Quy tắc của bạn không vừa với bất kỳ khuôn mẫu nào",
+    "items": [
+      { "icon": "domain_disabled", "title": "Không có mẫu ngành nào phù hợp", "text": "Chăm sóc tại nhà, an ninh hay logistics bao quát được nhiều thứ &mdash; nhưng thỏa ước nội bộ, phụ cấp và thời gian nghỉ của bạn vẫn là của riêng bạn." },
+      { "icon": "code_off", "title": "Tùy chỉnh không cần lập trình", "text": "Phần mềm lập lịch truyền thống đòi hỏi tư vấn viên hoặc script cho các quy tắc riêng. Ở đây bạn chỉ cần mô tả quy tắc bằng lời của mình &mdash; Klacksy lo phần còn lại." },
+      { "icon": "rule", "title": "Quy tắc phải có hiệu lực trong lập lịch", "text": "Một quy tắc trong file PDF không bảo vệ được ai. Chỉ khi trình lập lịch kiểm tra quy tắc đó ở mọi lần phân ca, nó mới trở thành sự bảo vệ thực sự cho đội của bạn." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Hỏi &amp; đáp",
+    "title": "Ba bước đến hồ sơ lập lịch của bạn",
+    "items": [
+      { "icon": "playlist_add", "title": "Chọn điểm xuất phát", "text": "Klacksy hỏi trước tiên: Có nên sao chép một mẫu theo ngành làm điểm xuất phát có thể chỉnh sửa &mdash; hay bạn bắt đầu hoàn toàn từ đầu với một quy tắc trống?" },
+      { "icon": "question_answer", "title": "Trả lời từng câu hỏi", "text": "Klacksy hỏi từng tham số một &mdash; giờ làm việc, giới hạn trên, thời gian nghỉ, phụ cấp &mdash; và giải thích ở mỗi câu hỏi ý nghĩa của giá trị và cách nó thay đổi việc lập lịch. Các trường bắt buộc còn thiếu và các giá trị đã nhập luôn hiển thị rõ ràng." },
+      { "icon": "task_alt", "title": "Kiểm tra bản xem trước, sau đó xác nhận", "text": "Trước khi lưu, Klacksy hiển thị toàn bộ bộ quy tắc dưới dạng xem trước. Chỉ sau khi bạn xác nhận, quy tắc mới được áp dụng &mdash; theo giao dịch, có thể truy vết trong sổ đăng ký quy tắc và có thể hoàn tác." }
+    ]
+  },
+  "solutions": {
+    "title": "Những gì Klacksy hỏi trong quá trình này",
+    "subtitle": "16 tham số, mỗi tham số đều có ý nghĩa và tác động đến việc lập lịch &mdash; đây là các nhóm chủ đề.",
+    "items": [
+      { "icon": "schedule", "title": "Cơ sở thời gian làm việc", "text": "Số giờ làm việc tiêu chuẩn mỗi ngày và số giờ mỗi tuần cho vị trí toàn thời gian 100% &mdash; tham chiếu cho tỷ lệ bán thời gian và tính toán giờ mục tiêu." },
+      { "icon": "speed", "title": "Giới hạn trên", "text": "Số giờ tối đa mỗi ngày và mỗi tuần &mdash; trình lập lịch từ chối các ca vượt quá giới hạn này." },
+      { "icon": "calendar_month", "title": "Ngày làm việc liên tiếp &amp; ngày nghỉ", "text": "Số ngày làm việc liên tiếp được phép và số ngày nghỉ được đảm bảo trong mỗi kỳ lập lịch." },
+      { "icon": "bedtime", "title": "Thời gian nghỉ giữa ca &amp; phụ cấp ca đêm", "text": "Thời gian nghỉ tối thiểu giữa hai ca cũng như thời điểm bắt đầu, kết thúc và mức phụ cấp ca đêm." },
+      { "icon": "more_time", "title": "Làm thêm giờ", "text": "Từ bao nhiêu giờ trở lên thì thời gian làm việc được tính là làm thêm giờ &mdash; cộng dồn theo ngày hoặc theo tuần." },
+      { "icon": "beach_access", "title": "Ngày lễ &amp; kỳ nghỉ phép", "text": "Mức phụ cấp cho việc làm việc vào ngày lễ và số ngày nghỉ phép hằng năm cho nhân viên áp dụng quy tắc này." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Cụ thể",
+    "title": "Một dịch vụ an ninh thiết lập quy tắc ca 12 giờ",
+    "text": "Điểm xuất phát: mẫu ngành “An ninh” làm cơ sở. Klacksy hỏi lần lượt: “Một ca trực được kéo dài tối đa bao nhiêu giờ?” &mdash; Trả lời: 12. “Bao nhiêu ngày làm việc liên tiếp được phép?” &mdash; 3. Mỗi câu trả lời đều được giải thích kèm tác động đến việc lập lịch, và cuối cùng bản xem trước hiển thị toàn bộ hồ sơ. Một cú nhấp vào Xác nhận &mdash; và quy tắc có hiệu lực ngay trong mọi lần lập lịch tự động."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Thiết lập quy tắc của bạn",
+    "text": "Bắt đầu hội thoại với Klacksy trong Playground &mdash; hoặc cài đặt Klacks trên hạ tầng riêng của bạn và định nghĩa quy tắc lập lịch trong vài phút thay vì nhiều ngày tư vấn."
+  }
+}

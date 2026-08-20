@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Normas de planificación propias con Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Normas de planificación propias &middot; Configuración guiada por IA",
+    "titleHtml": "¿Su sector no está en la lista? <span class=\"text-secondary\">Klacksy configura sus normas en un diálogo.</span>",
+    "subtitle": "Tanto si parte de una plantilla sectorial como si crea normas completamente propias: Klacksy le guía pregunta a pregunta por la configuración, explica en cada valor su efecto en la planificación y solo aplica los cambios tras su confirmación expresa.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy guía mediante un diálogo de preguntas y respuestas la configuración de normas de planificación propias",
+    "screenshotLabel": "Configuración de Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Dónde falla el software estándar",
+    "title": "Sus normas no encajan en ningún molde",
+    "items": [
+      { "icon": "domain_disabled", "title": "Ninguna plantilla sectorial encaja", "text": "La atención domiciliaria, la seguridad o la logística cubren mucho terreno &mdash; pero su convenio interno, sus recargos y sus tiempos de descanso son exactamente eso: suyos." },
+      { "icon": "code_off", "title": "Personalización sin programación", "text": "El software de planificación clásico exige consultores o scripts para normas propias. Aquí simplemente describe sus normas con sus propias palabras &mdash; Klacksy se encarga del resto." },
+      { "icon": "rule", "title": "Las normas deben actuar en la planificación", "text": "Una norma en un PDF no protege a nadie. Solo cuando el planificador la comprueba en cada asignación de turnos se convierte en protección real para su equipo." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Preguntas &amp; respuestas",
+    "title": "Su perfil de planificación en tres pasos",
+    "items": [
+      { "icon": "playlist_add", "title": "Elegir el punto de partida", "text": "Klacksy pregunta primero: ¿desea copiar una plantilla sectorial como punto de partida editable &mdash; o empezar desde cero con una norma vacía?" },
+      { "icon": "question_answer", "title": "Responder pregunta a pregunta", "text": "Klacksy consulta cada parámetro individualmente &mdash; horarios de trabajo, límites máximos, tiempos de descanso, recargos &mdash; y explica en cada pregunta qué significa el valor y cómo modifica la planificación. Los campos obligatorios pendientes y los valores ya registrados están visibles en todo momento." },
+      { "icon": "task_alt", "title": "Revisar la vista previa y confirmar", "text": "Antes de guardar, Klacksy muestra el conjunto completo de normas como vista previa. Solo tras su confirmación se aplican &mdash; de forma transaccional, trazable en el registro de normas y reversible." }
+    ]
+  },
+  "solutions": {
+    "title": "Lo que Klacksy consulta en el proceso",
+    "subtitle": "16 parámetros, cada uno con su significado y su efecto en la planificación &mdash; estos son los ámbitos temáticos.",
+    "items": [
+      { "icon": "schedule", "title": "Base del tiempo de trabajo", "text": "Horas normales por día y horas semanales para una jornada del 100 % &mdash; la referencia para los porcentajes de tiempo parcial y el cálculo de horas objetivo." },
+      { "icon": "speed", "title": "Límites máximos", "text": "Horas máximas por día y por semana &mdash; el planificador rechaza los turnos que las superen." },
+      { "icon": "calendar_month", "title": "Días consecutivos &amp; días de descanso", "text": "Cuántos días de trabajo consecutivos están permitidos y cuántos días de descanso se garantizan por periodo de planificación." },
+      { "icon": "bedtime", "title": "Pausas de descanso &amp; recargo nocturno", "text": "Pausa mínima entre dos turnos, así como inicio, fin y tasa del recargo nocturno." },
+      { "icon": "more_time", "title": "Horas extraordinarias", "text": "A partir de cuántas horas el tiempo trabajado cuenta como horas extraordinarias &mdash; acumulado por día o por semana." },
+      { "icon": "beach_access", "title": "Festivos &amp; vacaciones", "text": "Tasa de recargo por trabajo en festivos y derecho anual a vacaciones de los empleados bajo esta norma." }
+    ]
+  },
+  "example": {
+    "eyebrow": "En concreto",
+    "title": "Un servicio de seguridad configura su norma de turnos de 12 horas",
+    "text": "Punto de partida: plantilla sectorial «Security» como base. Klacksy pregunta sucesivamente: «¿Cuántas horas puede durar un servicio como máximo?» &mdash; respuesta: 12. «¿Cuántos días consecutivos están permitidos?» &mdash; 3. Cada respuesta se explica con su efecto en la planificación; al final, la vista previa muestra todo el perfil. Un clic en Confirmar &mdash; y la norma rige de inmediato en cada planificación automática."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Configure sus normas",
+    "text": "Inicie el diálogo con Klacksy en el Playground &mdash; o instale Klacks en su propia infraestructura y defina sus normas de planificación en minutos en lugar de días de consultoría."
+  }
+}

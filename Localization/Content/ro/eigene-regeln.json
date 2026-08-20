@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Configurați reguli de planificare proprii cu Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Reguli de planificare proprii &middot; Configurare ghidată de IA",
+    "titleHtml": "Domeniul dumneavoastră nu este inclus? <span class=\"text-secondary\">Klacksy configurează regulile dumneavoastră prin dialog.</span>",
+    "subtitle": "Fie că porniți de la un șablon de domeniu, fie că definiți reguli complet proprii: Klacksy vă ghidează prin configurare întrebare cu întrebare, explică la fiecare valoare impactul asupra planificării și preia totul abia după confirmarea dumneavoastră explicită.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy ghidează prin dialog de tip întrebare-răspuns la configurarea regulilor de planificare proprii",
+    "screenshotLabel": "Configurare Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Unde dă greș software-ul standard",
+    "title": "Regulile dumneavoastră nu încap în nicio categorie",
+    "items": [
+      { "icon": "domain_disabled", "title": "Niciun șablon de domeniu nu se potrivește", "text": "Îngrijirea la domiciliu, securitatea sau logistica acoperă multe &mdash; dar acordul dumneavoastră intern, sporurile și timpii de repaus sunt exact ai dumneavoastră." },
+      { "icon": "code_off", "title": "Personalizare fără programare", "text": "Software-ul clasic de planificare cere consultanți sau scripturi pentru reguli proprii. Aici vă descrieți regulile pur și simplu cu propriile cuvinte &mdash; Klacksy face restul." },
+      { "icon": "rule", "title": "Regulile trebuie să funcționeze în planificare", "text": "O regulă într-un PDF nu protejează pe nimeni. Abia atunci când planificatorul o verifică la fiecare atribuire de tură devine o protecție reală pentru echipa dumneavoastră." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Întrebare &amp; răspuns",
+    "title": "În trei pași către profilul dumneavoastră de planificare",
+    "items": [
+      { "icon": "playlist_add", "title": "Alegeți punctul de plecare", "text": "Klacksy întreabă mai întâi: doriți să copiați un șablon de domeniu ca punct de plecare editabil &mdash; sau porniți de la zero cu o regulă goală?" },
+      { "icon": "question_answer", "title": "Răspundeți întrebare cu întrebare", "text": "Klacksy vă întreabă fiecare parametru în parte &mdash; timpi de lucru, limite maxime, timpi de repaus, sporuri &mdash; și explică la fiecare întrebare ce înseamnă valoarea și cum schimbă planificarea. Câmpurile obligatorii deschise și valorile deja introduse sunt vizibile oricând." },
+      { "icon": "task_alt", "title": "Verificați previzualizarea, apoi confirmați", "text": "Înainte de salvare, Klacksy afișează întregul set de reguli ca previzualizare. Preluarea se face abia după confirmarea dumneavoastră &mdash; tranzacțional, trasabil în registrul de reguli și reversibil." }
+    ]
+  },
+  "solutions": {
+    "title": "Ce întreabă Klacksy în acest proces",
+    "subtitle": "16 parametri, fiecare cu semnificație și impact asupra planificării &mdash; acestea sunt domeniile tematice.",
+    "items": [
+      { "icon": "schedule", "title": "Baza timpului de lucru", "text": "Orele normale pe zi și orele pe săptămână pentru un program de 100% &mdash; referința pentru procentele de timp parțial și calculul orelor țintă." },
+      { "icon": "speed", "title": "Limite maxime", "text": "Orele maxime pe zi și pe săptămână &mdash; planificatorul refuză turele care depășesc aceste limite." },
+      { "icon": "calendar_month", "title": "Zile consecutive &amp; zile libere", "text": "Câte zile de lucru consecutive sunt permise și câte zile libere pe fereastră de planificare sunt garantate." },
+      { "icon": "bedtime", "title": "Pauze de repaus &amp; spor de noapte", "text": "Pauza minimă între două ture, precum și începutul, sfârșitul și cota sporului de noapte." },
+      { "icon": "more_time", "title": "Ore suplimentare", "text": "De la câte ore timpul lucrat se consideră ore suplimentare &mdash; cumulat pe zi sau pe săptămână." },
+      { "icon": "beach_access", "title": "Sărbători &amp; concediu", "text": "Cota de spor pentru munca în zile de sărbătoare și dreptul anual la concediu pentru angajații care lucrează pe această regulă." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concret",
+    "title": "Un serviciu de securitate configurează regula sa de 12 ore",
+    "text": "Punct de plecare: șablonul de domeniu „Security” ca start. Klacksy întreabă pe rând: „Câte ore poate dura maximum o tură?” &mdash; Răspuns: 12. „Câte zile consecutive sunt permise?” &mdash; 3. Fiecare răspuns este explicat cu impactul său asupra planificării, iar la final previzualizarea arată întregul profil. Un clic pe Confirmare &mdash; și regula se aplică de îndată la fiecare planificare automată."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Configurați-vă regulile",
+    "text": "Porniți dialogul cu Klacksy în Playground &mdash; sau instalați Klacks pe propria infrastructură și definiți regulile de planificare în câteva minute, nu în zile de consultanță."
+  }
+}

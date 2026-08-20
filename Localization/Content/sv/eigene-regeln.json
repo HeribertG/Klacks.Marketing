@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Ställ in egna schemaläggningsregler med Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Egna schemaläggningsregler &middot; AI-guidad konfiguration",
+    "titleHtml": "Din bransch finns inte med? <span class=\"text-secondary\">Klacksy ställer in dina regler i dialogform.</span>",
+    "subtitle": "Vare sig du utgår från en branschmall eller helt egna regler: Klacksy guidar dig fråga för fråga genom konfigurationen, förklarar för varje värde vilken effekt det får på schemaläggningen och sparar först efter din uttryckliga bekräftelse.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy guidar genom konfigurationen av egna schemaläggningsregler i en fråga-svar-dialog",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Där standardmjukvara misslyckas",
+    "title": "Dina regler passar inte i något fack",
+    "items": [
+      { "icon": "domain_disabled", "title": "Ingen branschmall passar", "text": "Hemtjänst, säkerhet eller logistik täcker mycket &mdash; men ert arbetsavtal, era tillägg och era vilotider är just era." },
+      { "icon": "code_off", "title": "Anpassning utan programmering", "text": "Klassisk schemaläggningsmjukvara kräver konsulter eller skript för egna regler. Här beskriver du dina regler med dina egna ord &mdash; Klacksy sköter resten." },
+      { "icon": "rule", "title": "Regler måste få effekt i schemaläggningen", "text": "En regel i en PDF skyddar ingen. Först när planeraren kontrollerar den vid varje passtilldelning blir det ett levande skydd för ditt team." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Fråga &amp; svar",
+    "title": "I tre steg till din schemaläggningsprofil",
+    "items": [
+      { "icon": "playlist_add", "title": "Välj utgångsläge", "text": "Klacksy frågar först: Ska en branschmall kopieras som redigerbar utgångspunkt &mdash; eller börjar du med en tom regel helt från början?" },
+      { "icon": "question_answer", "title": "Svara fråga för fråga", "text": "Klacksy frågar om varje parameter för sig &mdash; arbetstider, övre gränser, vilotider, tillägg &mdash; och förklarar vid varje fråga vad värdet betyder och hur det förändrar schemaläggningen. Öppna obligatoriska fält och redan inmatade värden är alltid synliga." },
+      { "icon": "task_alt", "title": "Granska förhandsvisningen och bekräfta", "text": "Innan lagring visar Klacksy hela regelverket som förhandsgranskning. Först efter din bekräftelse sparas det &mdash; transaktionsbaserat, spårbart i regelregistret och möjligt att ångra." }
+    ]
+  },
+  "solutions": {
+    "title": "Vad Klacksy frågar om",
+    "subtitle": "16 parametrar, var och en med betydelse och effekt på schemaläggningen &mdash; det här är ämnesområdena.",
+    "items": [
+      { "icon": "schedule", "title": "Grund för arbetstid", "text": "Normala dagstimmar och veckotimmarna för en 100%-anställning &mdash; referensen för deltidsprocent och beräkning av måltimmar." },
+      { "icon": "speed", "title": "Övre gränser", "text": "Maximalt antal timmar per dag och per vecka &mdash; planeraren avvisar pass som går utöver det." },
+      { "icon": "calendar_month", "title": "Följdagar &amp; vilodagar", "text": "Hur många arbetsdagar i följd som är tillåtna och hur många vilodagar per planeringsperiod som garanteras." },
+      { "icon": "bedtime", "title": "Vilopauser &amp; nattillägg", "text": "Minsta vila mellan två pass samt start, slut och sats för nattillägget." },
+      { "icon": "more_time", "title": "Övertid", "text": "Från hur många timmar arbetad tid räknas som övertid &mdash; ackumulerat per dag eller per vecka." },
+      { "icon": "beach_access", "title": "Helgdagar &amp; semester", "text": "Tilläggssats för arbete på helgdagar och den årliga semesterrätten för anställda på den här regeln." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ett säkerhetsföretag ställer in sin 12-timmarsregel",
+    "text": "Utgångsläge: branschmallen ”Säkerhet” som startpunkt. Klacksy frågar i tur och ordning: ”Hur många timmar får ett pass maximalt vara?” &mdash; Svar: 12. ”Hur många följdagar är tillåtna?” &mdash; 3. Varje svar förklaras med sin effekt på schemaläggningen, och till slut visar förhandsgranskningen hela profilen. Ett klick på Bekräfta &mdash; och regeln gäller direkt vid varje automatisk schemaläggning."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Ställ in dina regler",
+    "text": "Starta dialogen med Klacksy i Playground &mdash; eller installera Klacks på din egen infrastruktur och definiera dina schemaläggningsregler på minuter i stället för konsultdagar."
+  }
+}

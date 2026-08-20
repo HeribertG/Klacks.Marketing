@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Configurar regras de planeamento próprias com a Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Regras de planeamento próprias &middot; Configuração guiada por IA",
+    "titleHtml": "O seu setor não está incluído? <span class=\"text-secondary\">A Klacksy configura as suas regras em diálogo.</span>",
+    "subtitle": "Quer comece com um modelo de setor como ponto de partida ou com regras totalmente próprias: a Klacksy conduz pela configuração, pergunta a pergunta, explica em cada valor o impacto no planeamento e só assume após a sua confirmação expressa.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "A Klacksy conduz por um diálogo de perguntas e respostas através da configuração de regras de planeamento próprias",
+    "screenshotLabel": "Configuração da Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Onde o software padrão falha",
+    "title": "As suas regras não cabem em nenhuma gaveta",
+    "items": [
+      { "icon": "domain_disabled", "title": "Nenhum modelo de setor serve", "text": "Apoio domiciliário, segurança ou logística cobrem muita coisa &mdash; mas o seu acordo interno, os seus suplementos e os seus períodos de descanso são exatamente seus." },
+      { "icon": "code_off", "title": "Personalização sem programação", "text": "O software de planeamento clássico exige consultores ou scripts para regras próprias. Aqui descreve as suas regras simplesmente nas suas palavras &mdash; a Klacksy trata do resto." },
+      { "icon": "rule", "title": "As regras têm de funcionar no planeamento", "text": "Uma regra num PDF não protege ninguém. Só quando o planeador a verifica em cada atribuição de turno é que se torna proteção efetiva para a sua equipa." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Pergunta &amp; resposta",
+    "title": "Em três passos até ao seu perfil de planeamento",
+    "items": [
+      { "icon": "playlist_add", "title": "Escolher o ponto de partida", "text": "A Klacksy pergunta primeiro: deve ser copiado um modelo de setor como ponto de partida editável &mdash; ou prefere começar do zero com uma regra em branco?" },
+      { "icon": "question_answer", "title": "Responder pergunta a pergunta", "text": "A Klacksy pergunta cada parâmetro individualmente &mdash; horários de trabalho, limites máximos, períodos de descanso, suplementos &mdash; e explica em cada pergunta o que o valor significa e como altera o planeamento. Os campos obrigatórios em aberto e os valores já introduzidos estão sempre visíveis." },
+      { "icon": "task_alt", "title": "Verificar a pré-visualização e confirmar", "text": "Antes de guardar, a Klacksy mostra o conjunto completo de regras como pré-visualização. Só após a sua confirmação é que é assumido &mdash; de forma transacional, rastreável no registo de regras e reversível." }
+    ]
+  },
+  "solutions": {
+    "title": "O que a Klacksy pergunta",
+    "subtitle": "16 parâmetros, cada um com significado e impacto no planeamento &mdash; estas são as áreas temáticas.",
+    "items": [
+      { "icon": "schedule", "title": "Base do tempo de trabalho", "text": "Horas normais por dia e horas semanais para uma ocupação a 100% &mdash; a referência para percentagens de tempo parcial e o cálculo das horas previstas." },
+      { "icon": "speed", "title": "Limites máximos", "text": "Horas máximas por dia e por semana &mdash; o planeador recusa turnos que as ultrapassem." },
+      { "icon": "calendar_month", "title": "Dias consecutivos &amp; dias de descanso", "text": "Quantos dias de trabalho consecutivos são permitidos e quantos dias de descanso por janela de planeamento são garantidos." },
+      { "icon": "bedtime", "title": "Pausas de descanso &amp; suplemento noturno", "text": "Pausa mínima entre dois turnos, bem como início, fim e taxa do suplemento noturno." },
+      { "icon": "more_time", "title": "Horas extraordinárias", "text": "A partir de quantas horas o tempo trabalhado conta como horas extraordinárias &mdash; acumulado por dia ou por semana." },
+      { "icon": "beach_access", "title": "Feriados &amp; férias", "text": "Taxa de suplemento para trabalho em feriados e o direito anual a férias dos colaboradores abrangidos por esta regra." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Na prática",
+    "title": "Uma empresa de segurança configura a sua regra de 12 horas",
+    "text": "Ponto de partida: modelo de setor «Segurança» como base. A Klacksy pergunta sucessivamente: «Quantas horas pode durar, no máximo, um serviço?» &mdash; resposta: 12. «Quantos dias consecutivos são permitidos?» &mdash; 3. Cada resposta é explicada com o seu efeito no planeamento e, no final, a pré-visualização mostra o perfil completo. Um clique em Confirmar &mdash; e a regra passa a valer de imediato em cada planeamento automático."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Configure as suas regras",
+    "text": "Inicie o diálogo com a Klacksy no Playground &mdash; ou instale a Klacks na sua própria infraestrutura e defina as suas regras de planeamento em minutos em vez de dias de consultoria."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "pageTitle": "使用 Klacksy 配置自定义排班规则 | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "自定义排班规则 &middot; AI 引导式设置",
+    "titleHtml": "您的行业不在模板中？<span class=\"text-secondary\">Klacksy 通过对话为您配置规则。</span>",
+    "subtitle": "无论是以行业模板作为起点，还是完全自定义规则：Klacksy 会逐问逐答地引导您完成设置，为每个数值解释其对排班的影响，并且只有在您明确确认后才会生效。",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy 通过问答对话引导完成自定义排班规则的设置",
+    "screenshotLabel": "Klacksy 设置"
+  },
+  "challenges": {
+    "eyebrow": "标准软件为何力不从心",
+    "title": "您的规则不属于任何现成类别",
+    "items": [
+      { "icon": "domain_disabled", "title": "没有合适的行业模板", "text": "居家护理、安保或物流模板覆盖面很广 &mdash; 但贵公司的运营协议、津贴和休息时间恰恰是属于您自己的。" },
+      { "icon": "code_off", "title": "无需编程的定制", "text": "传统排班软件要实现自定义规则，往往需要顾问或脚本。在这里，您只需用自己的话描述规则 &mdash; 剩下的交给 Klacksy。" },
+      { "icon": "rule", "title": "规则必须在排班中生效", "text": "写在 PDF 里的规则保护不了任何人。只有当排班器在每次班次分配时都检查规则，它才会成为团队真正落实的保障。" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "问 &amp; 答",
+    "title": "三步完成您的排班配置",
+    "items": [
+      { "icon": "playlist_add", "title": "选择起点", "text": "Klacksy 首先会问：是否复制一个行业模板作为可编辑的起点 &mdash; 还是从一条空白规则重新开始？" },
+      { "icon": "question_answer", "title": "逐问逐答", "text": "Klacksy 会逐个询问每个参数 &mdash; 工作时间、上限、休息时间、津贴 &mdash; 并在每个问题中说明该数值的含义以及它如何改变排班。未填写的必填项和已录入的数值始终清晰可见。" },
+      { "icon": "task_alt", "title": "检查预览，然后确认", "text": "保存之前，Klacksy 会以预览形式展示完整的规则体系。只有在您确认后才会生效 &mdash; 以事务方式执行，可在规则登记册中追溯，并可撤销。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksy 会询问哪些内容",
+    "subtitle": "16 个参数，每个都附带含义和排班影响说明 &mdash; 以下是相关主题领域。",
+    "items": [
+      { "icon": "schedule", "title": "工作时间基准", "text": "标准日工时以及 100% 工作量的周工时 &mdash; 这是兼职百分比和目标工时计算的参考基准。" },
+      { "icon": "speed", "title": "上限", "text": "每日和每周的最大工时 &mdash; 排班器会拒绝超出上限的班次。" },
+      { "icon": "calendar_month", "title": "连续工作日 &amp; 休息日", "text": "允许连续工作多少天，以及每个排班周期内保证多少个休息日。" },
+      { "icon": "bedtime", "title": "休息间隔 &amp; 夜班津贴", "text": "两个班次之间的最短休息间隔，以及夜班津贴的起止时间和费率。" },
+      { "icon": "more_time", "title": "加班", "text": "工作多少小时后计为加班 &mdash; 按日或按周累计。" },
+      { "icon": "beach_access", "title": "节假日 &amp; 年假", "text": "节假日工作的津贴费率，以及适用该规则的员工年度假期额度。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "具体案例",
+    "title": "一家安保公司配置其 12 小时规则",
+    "text": "起点：以行业模板「安保」作为基础。Klacksy 依次提问：「一个班次最长可以持续多少小时？」&mdash; 回答：12。「允许多少个连续工作日？」&mdash; 3。每个回答都会附带其排班影响的说明，最后预览会展示完整的配置。点击确认 &mdash; 该规则即刻在每次自动排班中生效。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "配置您的规则",
+    "text": "在 Playground 中开始与 Klacksy 对话 &mdash; 或者将 Klacks 安装在您自己的基础设施上，用几分钟而不是数天的顾问时间来定义您的排班规则。"
+  }
+}

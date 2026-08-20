@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Omien suunnittelusääntöjen määrittäminen Klacksyn avulla | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Omat suunnittelusäännöt &middot; Tekoälyohjattu käyttöönotto",
+    "titleHtml": "Eikö toimialaanne löydy? <span class=\"text-secondary\">Klacksy määrittää sääntönne vuoropuhelussa.</span>",
+    "subtitle": "Olipa lähtökohtana toimialamalli tai täysin omat säännöt: Klacksy ohjaa teitä kysymys kysymykseltä käyttöönotossa, selittää jokaisen arvon vaikutuksen suunnitteluun ja ottaa säännöt käyttöön vasta nimenomaisen vahvistuksenne jälkeen.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy ohjaa kysymys-vastaus-dialogilla omien suunnittelusääntöjen käyttöönotossa",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Miksi vakio-ohjelmistot epäonnistuvat",
+    "title": "Sääntönne eivät mahdu mihinkään lokeroon",
+    "items": [
+      { "icon": "domain_disabled", "title": "Mikään toimialamalli ei sovi", "text": "Kotisairaalanhoito, turvallisuusala tai logistiikka kattavat paljon &mdash; mutta yrityssopimuksenne, lisanne ja lepoaikanne ovat juuri teidän ominaisuuksianne." },
+      { "icon": "code_off", "title": "Mukauttaminen ilman ohjelmointia", "text": "Perinteinen suunnitteluohjelmisto vaatii omille säännöille konsultteja tai skriptejä. Täällä kuvailette sääntönne yksinkertaisesti omin sanoin &mdash; Klacksy hoitaa loput." },
+      { "icon": "rule", "title": "Sääntöjen on näyttävä suunnittelussa", "text": "PDF-tiedostossa oleva sääntö ei suojaa ketään. Vasta kun suunnittelija tarkistaa sen jokaisen vuorojaon yhteydessä, siitä tulee toteutunutta suojaa tiimillenne." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Kysymys &amp; vastaus",
+    "title": "Suunnitteluprofiiliinne kolmessa vaiheessa",
+    "items": [
+      { "icon": "playlist_add", "title": "Valitkaa lähtötilanne", "text": "Klacksy kysyy ensin: kopioidaanko toimialamalli muokattavaksi lähtökohdaksi &mdash; vai aloitatteko tyhjästä säännöstä aivan alusta?" },
+      { "icon": "question_answer", "title": "Vastatkaa kysymyksiin yksitellen", "text": "Klacksy kysyy jokaisen parametrin erikseen &mdash; työajat, enimmäisrajat, lepoajat, lisät &mdash; ja selittää jokaisen kysymyksen yhteydessä, mitä arvo tarkoittaa ja miten se muuttaa suunnittelua. Avoimet pakolliset kentät ja jo syötetyt arvot ovat näkyvissä koko ajan." },
+      { "icon": "task_alt", "title": "Tarkistakaa esikatselu ja vahvistakaa sitten", "text": "Ennen tallennusta Klacksy näyttää koko säännöstön esikatseluna. Käyttöönotto tapahtuu vasta vahvistuksenne jälkeen &mdash; transaktionaalisesti, jäljitettävästi sääntörekisterissä ja peruutettavissa." }
+    ]
+  },
+  "solutions": {
+    "title": "Mitä Klacksy kysyy",
+    "subtitle": "16 parametria, jokaisella merkitys ja suunnitteluvaikutus &mdash; nämä ovat aihealueet.",
+    "items": [
+      { "icon": "schedule", "title": "Työajan perusta", "text": "Normaalit päivätunnit ja 100-prosenttisen työsuhteen viikkotunnit &mdash; vertailuarvo osa-aikaprosenteille ja tavoitetuntien laskennalle." },
+      { "icon": "speed", "title": "Enimmäisrajat", "text": "Enimmäistunnit päivässä ja viikossa &mdash; suunnittelija hylkää vuorot, jotka ylittävät ne." },
+      { "icon": "calendar_month", "title": "Peräkkäiset päivät &amp; lepopäivät", "text": "Kuinka monta peräkkäistä työpäivää sallitaan ja kuinka monta lepopäivää suunnittelujaksoa kohden taataan." },
+      { "icon": "bedtime", "title": "Lepotauot &amp; yölisä", "text": "Vähimmäistauko kahden vuoron välillä sekä yölisän alkamis- ja päättymisaika ja korvausprosentti." },
+      { "icon": "more_time", "title": "Ylityö", "text": "Kuinka monen tunnin jälkeen tehty työ katsotaan ylityöksi &mdash; kumulatiivisesti päivässä tai viikossa." },
+      { "icon": "beach_access", "title": "Pyhäpäivät &amp; lomat", "text": "Lisäprosentti pyhäpäivätyöstä ja vuosittainen loma-oikeus tällä säännöllä työskenteleville työntekijöille." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Käytännössä",
+    "title": "Turvallisuusyritys määrittää 12 tunnin sääntönsä",
+    "text": "Lähtötilanne: toimialamalli ”Security” lähtökohtana. Klacksy kysyy peräkkäin: ”Kuinka monta tuntia vuoro saa enintään kestää?” &mdash; vastaus: 12. ”Kuinka monta peräkkäistä päivää sallitaan?” &mdash; 3. Jokainen vastaus selitetään suunnitteluvaikutuksineen, ja lopuksi esikatselu näyttää koko profiilin. Yksi klikkaus Vahvista-painikkeeseen &mdash; ja sääntö pätee heti jokaisessa automaattisessa suunnittelussa."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Määrittäkää sääntönne",
+    "text": "Aloittakaa dialogi Klacksyn kanssa Playgroundissa &mdash; tai asentakaa Klacks omaan infrastruktuuriinne ja määrittäkää suunnittelusääntönne minuuteissa konsulttipäivien sijaan."
+  }
+}

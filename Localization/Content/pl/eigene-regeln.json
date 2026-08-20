@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Własne reguły planowania z Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Własne reguły planowania &middot; Konfiguracja prowadzona przez AI",
+    "titleHtml": "Państwa branży nie ma na liście? <span class=\"text-secondary\">Klacksy skonfiguruje Państwa reguły w dialogu.</span>",
+    "subtitle": "Niezależnie od tego, czy wybiorą Państwo szablon branżowy jako punkt wyjścia, czy zupełnie własne reguły: Klacksy prowadzi Państwa pytanie po pytaniu przez konfigurację, przy każdej wartości wyjaśnia jej wpływ na planowanie i zapisuje dopiero po Państwa wyraźnym potwierdzeniu.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy prowadzi w dialogu pytań i odpowiedzi przez konfigurację własnych reguł planowania",
+    "screenshotLabel": "Konfiguracja Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Na czym polega porażka standardowego oprogramowania",
+    "title": "Państwa reguły nie pasują do żadnej szufladki",
+    "items": [
+      { "icon": "domain_disabled", "title": "Żaden szablon branżowy nie pasuje", "text": "Opieka domowa, ochrona czy logistyka obejmują wiele &mdash; ale Państwa porozumienie zakładowe, Państwa dodatki i Państwa okresy odpoczynku są po prostu tylko Państwa." },
+      { "icon": "code_off", "title": "Dostosowanie bez programowania", "text": "Klasyczne oprogramowanie do planowania wymaga dla własnych reguł konsultantów lub skryptów. Tutaj opisują Państwo swoje reguły po prostu własnymi słowami &mdash; resztą zajmie się Klacksy." },
+      { "icon": "rule", "title": "Reguły muszą działać w planowaniu", "text": "Reguła zapisana w pliku PDF nikogo nie chroni. Dopiero gdy planista sprawdza ją przy każdym przydziale zmiany, staje się realną ochroną dla Państwa zespołu." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Pytanie &amp; odpowiedź",
+    "title": "W trzech krokach do Państwa profilu planowania",
+    "items": [
+      { "icon": "playlist_add", "title": "Wybór punktu wyjścia", "text": "Klacksy pyta najpierw: Czy skopiować szablon branżowy jako edytowalny punkt wyjścia &mdash; czy zaczynają Państwo od pustej reguły, zupełnie od zera?" },
+      { "icon": "question_answer", "title": "Odpowiedzi pytanie po pytaniu", "text": "Klacksy odpytuje każdy parametr osobno &mdash; czasy pracy, limity górne, okresy odpoczynku, dodatki &mdash; i przy każdym pytaniu wyjaśnia, co dana wartość oznacza i jak zmienia planowanie. Otwarte pola obowiązkowe i już wprowadzone wartości są zawsze widoczne." },
+      { "icon": "task_alt", "title": "Sprawdzić podgląd, potem potwierdzić", "text": "Przed zapisem Klacksy pokazuje kompletny zestaw reguł jako podgląd. Zapis następuje dopiero po Państwa potwierdzeniu &mdash; transakcyjnie, możliwy do prześledzenia w rejestrze reguł i odwracalny." }
+    ]
+  },
+  "solutions": {
+    "title": "O co Klacksy przy tym pyta",
+    "subtitle": "16 parametrów, każdy ze znaczeniem i wpływem na planowanie &mdash; oto obszary tematyczne.",
+    "items": [
+      { "icon": "schedule", "title": "Podstawa czasu pracy", "text": "Normalne godziny dzienne i godziny tygodniowe dla 100% etatu &mdash; punkt odniesienia dla procentów niepełnoetatowych i obliczania godzin docelowych." },
+      { "icon": "speed", "title": "Limity górne", "text": "Maksymalne godziny na dzień i na tydzień &mdash; planista odrzuca zmiany, które wykraczają poza te limity." },
+      { "icon": "calendar_month", "title": "Dni następujące po sobie &amp; dni wolne", "text": "Ile dni pracy z rzędu jest dozwolonych i ile dni wolnych na okno planowania jest gwarantowanych." },
+      { "icon": "bedtime", "title": "Przerwy na odpoczynek &amp; dodatek nocny", "text": "Minimalna przerwa między dwiema zmianami oraz początek, koniec i stawka dodatku nocnego." },
+      { "icon": "more_time", "title": "Nadgodziny", "text": "Od ilu godzin przepracowany czas liczy się jako nadgodziny &mdash; kumulowane dziennie lub tygodniowo." },
+      { "icon": "beach_access", "title": "Święta &amp; urlopy", "text": "Stawka dodatku za pracę w święta oraz roczny wymiar urlopu dla pracowników objętych tą regułą." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkretnie",
+    "title": "Firma ochroniarska konfiguruje swoją regułę 12-godzinną",
+    "text": "Punkt wyjścia: szablon branżowy „Ochrona” jako baza. Klacksy pyta po kolei: „Ile godzin maksymalnie może trwać służba?” &mdash; odpowiedź: 12. „Ile dni następujących po sobie jest dozwolonych?” &mdash; 3. Każda odpowiedź jest wyjaśniana wraz z jej wpływem na planowanie, na koniec podgląd pokazuje cały profil. Jeden klik na Potwierdź &mdash; i reguła obowiązuje od zaraz przy każdym automatycznym planowaniu."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Niech Państwo skonfigurują swoje reguły",
+    "text": "Rozpoczną Państwo dialog z Klacksy w Playgroundzie &mdash; albo zainstalują Klacks na własnej infrastrukturze i zdefiniują swoje reguły planowania w minuty, a nie w dniach konsultingowych."
+  }
+}

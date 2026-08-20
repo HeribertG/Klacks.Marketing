@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Sediakan Peraturan Penjadualan Sendiri dengan Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Peraturan Penjadualan Sendiri &middot; Persediaan Berpandukan AI",
+    "titleHtml": "Industri Anda tiada dalam senarai? <span class=\"text-secondary\">Klacksy menyediakan peraturan Anda melalui dialog.</span>",
+    "subtitle": "Sama ada templat industri sebagai titik permulaan atau peraturan yang sepenuhnya anda sendiri: Klacksy membimbing Anda soalan demi soalan melalui persediaan, menerangkan kesan setiap nilai terhadap penjadualan dan hanya menggunakannya selepas pengesahan jelas daripada Anda.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy membimbing melalui dialog soal jawab semasa persediaan peraturan penjadualan sendiri",
+    "screenshotLabel": "Persediaan Klacksy"
+  },
+  "challenges": {
+    "eyebrow": "Di mana perisian standard gagal",
+    "title": "Peraturan Anda tidak muat dalam mana-mana kotak",
+    "items": [
+      { "icon": "domain_disabled", "title": "Tiada templat industri yang sesuai", "text": "Perkhidmatan penjagaan di rumah, keselamatan atau logistik merangkumi banyak perkara &mdash; tetapi perjanjian dalaman, elaun dan waktu rehat Anda memang kekal milik Anda." },
+      { "icon": "code_off", "title": "Penyesuaian tanpa pengaturcaraan", "text": "Perisian penjadualan klasik memerlukan perunding atau skrip untuk peraturan tersendiri. Di sini Anda hanya menerangkan peraturan Anda dengan kata-kata sendiri &mdash; Klacksy menguruskan selebihnya." },
+      { "icon": "rule", "title": "Peraturan mesti berkuat kuasa dalam penjadualan", "text": "Peraturan dalam PDF tidak melindungi sesiapa. Hanya apabila perancang menyemaknya setiap kali syif diberikan, ia menjadi perlindungan nyata untuk pasukan Anda." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Soal &amp; Jawab",
+    "title": "Tiga langkah menuju profil penjadualan Anda",
+    "items": [
+      { "icon": "playlist_add", "title": "Pilih titik permulaan", "text": "Klacksy bertanya dahulu: Adakah templat industri perlu disalin sebagai titik permulaan yang boleh disunting &mdash; atau Anda mahu bermula dengan peraturan kosong dari awal?" },
+      { "icon": "question_answer", "title": "Jawab soalan demi soalan", "text": "Klacksy menanyakan setiap parameter satu demi satu &mdash; waktu bekerja, had atas, waktu rehat, elaun &mdash; dan menerangkan pada setiap soalan apa maksud nilai itu dan bagaimana ia mengubah penjadualan. Medan wajib yang masih terbuka dan nilai yang telah direkodkan kelihatan pada setiap masa." },
+      { "icon": "task_alt", "title": "Semak pratonton, kemudian sahkan", "text": "Sebelum disimpan, Klacksy memaparkan keseluruhan set peraturan sebagai pratonton. Hanya selepas pengesahan Anda ia akan digunakan &mdash; secara transaksional, boleh dijejaki dalam daftar peraturan dan boleh dibatalkan." }
+    ]
+  },
+  "solutions": {
+    "title": "Apa yang ditanyakan oleh Klacksy",
+    "subtitle": "16 parameter, setiap satunya dengan maksud dan kesan terhadap penjadualan &mdash; inilah bidang-bidangnya.",
+    "items": [
+      { "icon": "schedule", "title": "Asas waktu bekerja", "text": "Jam harian biasa dan jam mingguan untuk jawatan sepenuh masa 100% &mdash; rujukan untuk peratusan kerja separuh masa dan pengiraan jam sasaran." },
+      { "icon": "speed", "title": "Had atas", "text": "Jam maksimum sehari dan seminggu &mdash; perancang menolak syif yang melampauinya." },
+      { "icon": "calendar_month", "title": "Hari berturut-turut &amp; hari rehat", "text": "Berapa hari bekerja berturut-turut dibenarkan dan berapa hari rehat yang dijamin dalam setiap tempoh perancangan." },
+      { "icon": "bedtime", "title": "Rehat &amp; elaun malam", "text": "Rehat minimum antara dua syif serta permulaan, akhir dan kadar elaun malam." },
+      { "icon": "more_time", "title": "Kerja lebih masa", "text": "Daripada berapa jam waktu bekerja dikira sebagai kerja lebih masa &mdash; terkumpul mengikut hari atau minggu." },
+      { "icon": "beach_access", "title": "Cuti umum &amp; cuti tahunan", "text": "Kadar elaun untuk kerja pada cuti umum dan hak cuti tahunan untuk kakitangan di bawah peraturan ini." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Contoh konkrit",
+    "title": "Sebuah syarikat keselamatan menyediakan peraturan 12 jamnya",
+    "text": "Titik permulaan: templat industri “Keselamatan” sebagai asas. Klacksy bertanya satu demi satu: “Berapa jam maksimum satu tugas boleh berlangsung?” &mdash; Jawapan: 12. “Berapa hari berturut-turut dibenarkan?” &mdash; 3. Setiap jawapan diterangkan dengan kesannya terhadap penjadualan, dan pada akhirnya pratonton memaparkan keseluruhan profil. Satu klik pada Sahkan &mdash; dan peraturan itu terus berkuat kuasa dalam setiap penjadualan automatik."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Sediakan peraturan Anda",
+    "text": "Mulakan dialog dengan Klacksy di Playground &mdash; atau pasang Klacks pada infrastruktur Anda sendiri dan tetapkan peraturan penjadualan Anda dalam beberapa minit, bukannya berhari-hari dengan perunding."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "pageTitle": "透過 Klacksy 設定專屬排班規則 | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "專屬排班規則 &middot; AI 引導式設定",
+    "titleHtml": "您的行業不在範本之列？<span class=\"text-secondary\">Klacksy 透過對話為您建立專屬規則。</span>",
+    "subtitle": "無論是以行業範本為起點，還是完全自訂規則：Klacksy 會逐一提問，引導您完成設定，說明每個數值對排班的影響，並且在您明確確認後才會套用。",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy 透過問答對話引導完成專屬排班規則的設定",
+    "screenshotLabel": "Klacksy 設定"
+  },
+  "challenges": {
+    "eyebrow": "標準軟體的侷限",
+    "title": "您的規則無法被歸類套用",
+    "items": [
+      { "icon": "domain_disabled", "title": "沒有合適的行業範本", "text": "居家照護、保全或物流範本涵蓋了許多內容 &mdash; 但貴公司的營運協議、加給規定與休息時間，畢竟是您專屬的。" },
+      { "icon": "code_off", "title": "無需程式設計的自訂設定", "text": "傳統排班軟體若要自訂規則，往往需要顧問或腳本。在這裡，您只需用自己的話描述規則 &mdash; 剩下的交給 Klacksy。" },
+      { "icon": "rule", "title": "規則必須在排班中發揮作用", "text": "寫在 PDF 裡的規則無法保障任何人。只有當排班系統在每次指派班次時都加以檢查，才能真正落實對團隊的保障。" }
+    ]
+  },
+  "steps": {
+    "eyebrow": "問與答",
+    "title": "三步驟完成您的排班設定檔",
+    "items": [
+      { "icon": "playlist_add", "title": "選擇起點", "text": "Klacksy 會先詢問：要複製一份行業範本作為可編輯的起點，還是從空白規則開始，一切從零建立？" },
+      { "icon": "question_answer", "title": "逐一回答問題", "text": "Klacksy 會逐項詢問每個參數 &mdash; 工時、上限、休息時間、加給 &mdash; 並在每個問題中說明該數值的意義，以及它會如何改變排班結果。尚未填寫的必填欄位與已輸入的數值隨時清楚可見。" },
+      { "icon": "task_alt", "title": "檢查預覽，然後確認", "text": "儲存前，Klacksy 會以預覽方式顯示完整的規則內容。只有在您確認後才會套用 &mdash; 採交易式處理，可在規則登記冊中追溯，且可復原。" }
+    ]
+  },
+  "solutions": {
+    "title": "Klacksy 會詢問哪些內容",
+    "subtitle": "16 個參數，每個都附有意義說明與排班影響 &mdash; 以下是各主題領域。",
+    "items": [
+      { "icon": "schedule", "title": "工時基礎", "text": "每日正常工時，以及 100% 全職的每週工時 &mdash; 這是兼職百分比與應出勤時數計算的基準。" },
+      { "icon": "speed", "title": "上限", "text": "每日與每週的最高工時 &mdash; 排班系統會拒絕超出上限的班次。" },
+      { "icon": "calendar_month", "title": "連續工作日 &amp; 休假日", "text": "允許連續工作幾天，以及每個排班週期內保證幾天休假。" },
+      { "icon": "bedtime", "title": "休息間隔 &amp; 夜班加給", "text": "兩個班次之間的最短休息時間，以及夜班加給的開始時間、結束時間與費率。" },
+      { "icon": "more_time", "title": "加班", "text": "工作超過多少小時後視為加班 &mdash; 按日或按週累計。" },
+      { "icon": "beach_access", "title": "國定假日 &amp; 特休", "text": "假日出勤的加給費率，以及適用此規則之員工的年度特休天數。" }
+    ]
+  },
+  "example": {
+    "eyebrow": "實際案例",
+    "title": "一家保全公司設定其 12 小時規則",
+    "text": "起點：以行業範本「保全」作為基礎。Klacksy 逐一詢問：「一個班次最長可持續幾小時？」&mdash; 回答：12。「允許連續工作幾天？」&mdash; 3。每個回答都會附上其對排班的影響說明，最後由預覽顯示完整的設定檔。點擊確認 &mdash; 該規則即刻起適用於每一次自動排班。"
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "立即設定您的規則",
+    "text": "在 Playground 中開始與 Klacksy 對話 &mdash; 或將 Klacks 安裝在您自己的基礎設施上，以分鐘而非顧問天數的時間定義您的排班規則。"
+  }
+}
