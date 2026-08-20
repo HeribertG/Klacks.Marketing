@@ -1,0 +1,10 @@
+@page "/land-my/eigene-regeln"
+@page "/{culture}/land-my/eigene-regeln"
+
+<IndustryPageTemplate PageKey="land-my-eigene-regeln" RoutePath="land-my/eigene-regeln" Culture="@ResolvedCulture" />
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+}

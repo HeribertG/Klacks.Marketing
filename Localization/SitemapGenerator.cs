@@ -50,6 +50,12 @@ public static class SitemapGenerator
         "land-il/klacksy", "land-it/klacksy", "land-jp/klacksy", "land-kr/klacksy", "land-my/klacksy",
         "land-nl/klacksy", "land-no/klacksy", "land-pl/klacksy", "land-pt/klacksy", "land-ro/klacksy",
         "land-sa/klacksy", "land-se/klacksy", "land-th/klacksy", "land-tw/klacksy", "land-vn/klacksy",
+        "land-ae/eigene-regeln", "land-at/eigene-regeln", "land-be/eigene-regeln", "land-ch/eigene-regeln", "land-cn/eigene-regeln",
+        "land-cz/eigene-regeln", "land-de/eigene-regeln", "land-dk/eigene-regeln", "land-es/eigene-regeln", "land-fi/eigene-regeln",
+        "land-fr/eigene-regeln", "land-gb/eigene-regeln", "land-gr/eigene-regeln", "land-id/eigene-regeln", "land-ie/eigene-regeln",
+        "land-il/eigene-regeln", "land-it/eigene-regeln", "land-jp/eigene-regeln", "land-kr/eigene-regeln", "land-my/eigene-regeln",
+        "land-nl/eigene-regeln", "land-no/eigene-regeln", "land-pl/eigene-regeln", "land-pt/eigene-regeln", "land-ro/eigene-regeln",
+        "land-sa/eigene-regeln", "land-se/eigene-regeln", "land-th/eigene-regeln", "land-tw/eigene-regeln", "land-vn/eigene-regeln",
     };
 
     // The legal pages are country-scoped like everything else, but their content is

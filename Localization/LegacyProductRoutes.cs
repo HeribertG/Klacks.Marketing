@@ -9,7 +9,9 @@ public static class LegacyProductRoutes
 {
     // Legal pages and the installation/download page are not products but follow
     // the same country-scoped rule, so their country-less URLs redirect as well.
-    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "installation" };
+    // "klacksy" is listed explicitly because the industry registry entry now
+    // points to "eigene-regeln" while the Klacksy page itself lives on.
+    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "installation", "klacksy" };
 
     private static readonly Dictionary<string, string> Redirects = Build();
 

@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Eigene Planungsregeln mit Klacksy einrichten | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Eigene Planungsregeln &middot; KI-geführtes Setup",
+    "titleHtml": "Ihre Branche ist nicht dabei? <span class=\"text-secondary\">Klacksy richtet Ihre Regeln im Dialog ein.</span>",
+    "subtitle": "Ob Branchen-Vorlage als Startpunkt oder komplett eigene Regeln: Klacksy führt Sie Frage für Frage durch das Setup, erklärt bei jedem Wert die Auswirkung auf die Planung und übernimmt erst nach Ihrer ausdrücklichen Bestätigung.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy führt per Frage-Antwort-Dialog durch das Setup eigener Planungsregeln",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Woran Standardsoftware scheitert",
+    "title": "Ihre Regeln passen in keine Schublade",
+    "items": [
+      { "icon": "domain_disabled", "title": "Keine Branchen-Vorlage passt", "text": "Spitex, Security oder Logistik decken viel ab &mdash; aber Ihre Betriebsvereinbarung, Ihre Zuschläge und Ihre Ruhezeiten sind eben genau Ihre." },
+      { "icon": "code_off", "title": "Customizing ohne Programmierung", "text": "Klassische Planungssoftware verlangt für eigene Regeln Berater oder Skripte. Hier beschreiben Sie Ihre Regeln einfach in Ihren Worten &mdash; Klacksy macht den Rest." },
+      { "icon": "rule", "title": "Regeln müssen in der Planung wirken", "text": "Eine Regel in einem PDF schützt niemanden. Erst wenn der Planer sie bei jeder Schichtvergabe prüft, wird daraus gelebter Schutz für Ihr Team." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Frage &amp; Antwort",
+    "title": "In drei Schritten zu Ihrem Planungsprofil",
+    "items": [
+      { "icon": "playlist_add", "title": "Ausgangslage wählen", "text": "Klacksy fragt zuerst: Soll eine Branchen-Vorlage als bearbeitbarer Startpunkt kopiert werden &mdash; oder starten Sie mit einer leeren Regel ganz von vorne?" },
+      { "icon": "question_answer", "title": "Frage für Frage beantworten", "text": "Klacksy fragt jeden Parameter einzeln ab &mdash; Arbeitszeiten, Obergrenzen, Ruhezeiten, Zuschläge &mdash; und erklärt bei jeder Frage, was der Wert bedeutet und wie er die Planung verändert. Offene Pflichtfelder und bereits erfasste Werte sind jederzeit sichtbar." },
+      { "icon": "task_alt", "title": "Vorschau prüfen, dann bestätigen", "text": "Vor dem Speichern zeigt Klacksy das vollständige Regelwerk als Vorschau. Erst nach Ihrer Bestätigung wird übernommen &mdash; transaktional, nachvollziehbar im Regel-Register und rückgängig machbar." }
+    ]
+  },
+  "solutions": {
+    "title": "Was Klacksy dabei abfragt",
+    "subtitle": "16 Parameter, jeder mit Bedeutung und Planungsauswirkung &mdash; das sind die Themenfelder.",
+    "items": [
+      { "icon": "schedule", "title": "Arbeitszeit-Basis", "text": "Normale Tagesstunden und die Wochenstunden für ein 100%-Pensum &mdash; die Referenz für Teilzeit-Prozente und Sollstunden-Berechnung." },
+      { "icon": "speed", "title": "Obergrenzen", "text": "Maximale Stunden pro Tag und pro Woche &mdash; der Planer verweigert Schichten, die darüber hinausgehen." },
+      { "icon": "calendar_month", "title": "Folgetage &amp; Ruhetage", "text": "Wie viele Arbeitstage in Folge erlaubt sind und wie viele Ruhetage pro Planungsfenster garantiert werden." },
+      { "icon": "bedtime", "title": "Ruhepausen &amp; Nachtzuschlag", "text": "Mindestpause zwischen zwei Schichten sowie Beginn, Ende und Satz des Nachtzuschlags." },
+      { "icon": "more_time", "title": "Überzeit", "text": "Ab wie vielen Stunden gearbeitete Zeit als Überzeit gilt &mdash; kumuliert pro Tag oder pro Woche." },
+      { "icon": "beach_access", "title": "Feiertage &amp; Ferien", "text": "Zuschlagssatz für Feiertagsarbeit und der jährliche Ferienanspruch für Mitarbeitende auf dieser Regel." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Konkret",
+    "title": "Ein Sicherheitsdienst richtet seine 12-Stunden-Regel ein",
+    "text": "Ausgangslage: Branchen-Vorlage &bdquo;Security&ldquo; als Startpunkt. Klacksy fragt nacheinander: &bdquo;Wie viele Stunden darf ein Dienst maximal dauern?&ldquo; &mdash; Antwort: 12. &bdquo;Wie viele Folgetage sind erlaubt?&ldquo; &mdash; 3. Jede Antwort wird mit ihrer Planungswirkung erklärt, am Schluss zeigt die Vorschau das ganze Profil. Ein Klick auf Bestätigen &mdash; und die Regel gilt ab sofort bei jeder automatischen Planung."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Richten Sie Ihre Regeln ein",
+    "text": "Starten Sie den Dialog mit Klacksy im Playground &mdash; oder installieren Sie Klacks auf Ihrer eigenen Infrastruktur und definieren Sie Ihre Planungsregeln in Minuten statt in Beratertagen."
+  }
+}

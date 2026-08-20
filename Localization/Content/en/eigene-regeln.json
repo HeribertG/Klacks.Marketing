@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Set up custom planning rules with Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Custom planning rules &middot; AI-guided setup",
+    "titleHtml": "Your industry is not listed? <span class=\"text-secondary\">Klacksy sets up your rules in dialogue.</span>",
+    "subtitle": "Whether you start from an industry template or from scratch: Klacksy guides you through the setup one question at a time, explains the planning impact of every value, and applies nothing without your explicit confirmation.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy guides you through the custom planning-rules setup in a Q&amp;A dialogue",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Where standard software fails",
+    "title": "Your rules fit no template",
+    "items": [
+      { "icon": "domain_disabled", "title": "No industry template fits", "text": "Home care, security or logistics cover a lot &mdash; but your company agreement, your surcharges and your rest times are exactly yours." },
+      { "icon": "code_off", "title": "Customizing without coding", "text": "Classic planning software demands consultants or scripts for custom rules. Here you simply describe your rules in your own words &mdash; Klacksy does the rest." },
+      { "icon": "rule", "title": "Rules must act inside planning", "text": "A rule in a PDF protects nobody. Only when the planner checks it on every shift assignment does it become real protection for your team." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Question &amp; answer",
+    "title": "Three steps to your planning profile",
+    "items": [
+      { "icon": "playlist_add", "title": "Choose your starting point", "text": "Klacksy asks first: should an industry template be copied as your editable starting point &mdash; or do you start from scratch with a single blank rule?" },
+      { "icon": "question_answer", "title": "Answer question by question", "text": "Klacksy asks for each parameter one at a time &mdash; working hours, caps, rest times, surcharges &mdash; explaining what the value means and how it changes the plan. Open required fields and values already collected are visible at any time." },
+      { "icon": "task_alt", "title": "Review the preview, then confirm", "text": "Before saving, Klacksy shows the complete rule set as a preview. Nothing is applied until you confirm &mdash; transactional, traceable in the rule register, and reversible." }
+    ]
+  },
+  "solutions": {
+    "title": "What Klacksy asks about",
+    "subtitle": "16 parameters, each with its meaning and planning impact &mdash; these are the topic areas.",
+    "items": [
+      { "icon": "schedule", "title": "Working-time baseline", "text": "Standard daily hours and the weekly hours of a full-time workload &mdash; the reference for part-time percentages and target-hour calculations." },
+      { "icon": "speed", "title": "Caps", "text": "Maximum hours per day and per week &mdash; the planner refuses shifts that would exceed them." },
+      { "icon": "calendar_month", "title": "Consecutive &amp; rest days", "text": "How many working days in a row are allowed and how many rest days per planning window are guaranteed." },
+      { "icon": "bedtime", "title": "Rest breaks &amp; night surcharge", "text": "Minimum rest between two shifts plus the start, end and rate of the night surcharge window." },
+      { "icon": "more_time", "title": "Overtime", "text": "From how many hours worked time counts as overtime &mdash; accumulated per day or per week." },
+      { "icon": "beach_access", "title": "Holidays &amp; vacation", "text": "The surcharge rate for working on public holidays and the annual vacation entitlement for staff on this rule." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concrete",
+    "title": "A security company sets up its 12-hour rule",
+    "text": "Starting point: the &bdquo;Security&ldquo; industry template as a basis. Klacksy asks in sequence: &bdquo;How many hours may a shift last at most?&ldquo; &mdash; answer: 12. &bdquo;How many consecutive days are allowed?&ldquo; &mdash; 3. Every answer is explained with its planning impact, and finally the preview shows the entire profile. One click on confirm &mdash; and the rule applies to every automatic plan from now on."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Set up your rules",
+    "text": "Start the dialogue with Klacksy in the playground &mdash; or install Klacks on your own infrastructure and define your planning rules in minutes instead of consultant days."
+  }
+}

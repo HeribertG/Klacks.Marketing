@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Configurare regole di pianificazione personalizzate con Klacksy | Klacks",
+  "hero": {
+    "badgeIcon": "add_business",
+    "badge": "Regole personalizzate &middot; configurazione guidata dall'IA",
+    "titleHtml": "Il vostro settore non è in elenco? <span class=\"text-secondary\">Klacksy configura le vostre regole in dialogo.</span>",
+    "subtitle": "Che partiate da un modello di settore o da zero: Klacksy vi guida una domanda alla volta, spiega l'impatto di ogni valore sulla pianificazione e non applica nulla senza la vostra conferma esplicita.",
+    "screenshotFile": "app-klacksy-de.png",
+    "screenshotAlt": "Klacksy guida la configurazione di regole di pianificazione personalizzate in un dialogo a domande e risposte",
+    "screenshotLabel": "Klacksy Setup"
+  },
+  "challenges": {
+    "eyebrow": "Dove il software standard fallisce",
+    "title": "Le vostre regole non stanno in nessuno schema",
+    "items": [
+      { "icon": "domain_disabled", "title": "Nessun modello di settore è adatto", "text": "Cure a domicilio, sicurezza o logistica coprono molti casi &mdash; ma il vostro contratto aziendale, le vostre maggiorazioni e i vostri tempi di riposo sono esattamente i vostri." },
+      { "icon": "code_off", "title": "Personalizzazione senza programmazione", "text": "I software classici richiedono consulenti o script per regole proprie. Qui descrivete le vostre regole con le vostre parole &mdash; al resto pensa Klacksy." },
+      { "icon": "rule", "title": "Le regole devono agire nella pianificazione", "text": "Una regola in un PDF non protegge nessuno. Solo quando il pianificatore la verifica a ogni assegnazione diventa una protezione reale per il team." }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Domande &amp; risposte",
+    "title": "Tre passi verso il vostro profilo di pianificazione",
+    "items": [
+      { "icon": "playlist_add", "title": "Scegliere il punto di partenza", "text": "Klacksy chiede subito: copiare un modello di settore come punto di partenza modificabile &mdash; oppure partire da zero con una regola vuota?" },
+      { "icon": "question_answer", "title": "Rispondere domanda per domanda", "text": "Klacksy chiede ogni parametro uno alla volta &mdash; orari, limiti, riposi, maggiorazioni &mdash; spiegando ogni volta cosa significa il valore e come cambia la pianificazione. I campi obbligatori aperti e i valori già raccolti sono sempre visibili." },
+      { "icon": "task_alt", "title": "Verificare l'anteprima, poi confermare", "text": "Prima del salvataggio, Klacksy mostra l'intero regolamento in anteprima. Nulla viene applicato senza la vostra conferma &mdash; in modo transazionale, tracciabile nel registro delle regole e reversibile." }
+    ]
+  },
+  "solutions": {
+    "title": "Cosa chiede Klacksy",
+    "subtitle": "16 parametri, ognuno con significato e impatto sulla pianificazione &mdash; ecco le aree tematiche.",
+    "items": [
+      { "icon": "schedule", "title": "Base dell'orario di lavoro", "text": "Ore normali giornaliere e ore settimanali di un impiego al 100% &mdash; il riferimento per le percentuali part-time e il calcolo delle ore obiettivo." },
+      { "icon": "speed", "title": "Limiti massimi", "text": "Ore massime al giorno e alla settimana &mdash; il pianificatore rifiuta i turni che li superano." },
+      { "icon": "calendar_month", "title": "Giorni consecutivi &amp; di riposo", "text": "Quanti giorni lavorativi consecutivi sono consentiti e quanti giorni di riposo sono garantiti per finestra di pianificazione." },
+      { "icon": "bedtime", "title": "Riposi &amp; maggiorazione notturna", "text": "Pausa minima tra due turni e inizio, fine e aliquota della maggiorazione notturna." },
+      { "icon": "more_time", "title": "Straordinario", "text": "Da quante ore il tempo lavorato conta come straordinario &mdash; cumulato al giorno o alla settimana." },
+      { "icon": "beach_access", "title": "Festivi &amp; vacanze", "text": "Aliquota di maggiorazione per il lavoro nei giorni festivi e ferie annuali per i collaboratori su questa regola." }
+    ]
+  },
+  "example": {
+    "eyebrow": "Concreto",
+    "title": "Un servizio di sicurezza configura la sua regola delle 12 ore",
+    "text": "Punto di partenza: il modello di settore &bdquo;Sicurezza&ldquo; come base. Klacksy chiede in sequenza: &bdquo;Quante ore può durare al massimo un servizio?&ldquo; &mdash; risposta: 12. &bdquo;Quanti giorni consecutivi sono consentiti?&ldquo; &mdash; 3. Ogni risposta viene spiegata con il suo impatto sulla pianificazione e alla fine l'anteprima mostra l'intero profilo. Un clic su conferma &mdash; e la regola vale da subito per ogni pianificazione automatica."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Configurate le vostre regole",
+    "text": "Avviate il dialogo con Klacksy nel playground &mdash; oppure installate Klacks sulla vostra infrastruttura e definite le vostre regole di pianificazione in pochi minuti invece che in giornate di consulenza."
+  }
+}
