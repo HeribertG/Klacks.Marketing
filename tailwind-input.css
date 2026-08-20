@@ -253,6 +253,13 @@ nav.glass-nav.nav-scrolled {
     white-space: nowrap;
 }
 
+/* Der Ticker ist fix am unteren Viewport-Rand (feature-ticker-bar) und liegt am
+   Seitenende über dem Footer; der extra Abstand verhindert, dass die Leiste
+   Footer-Inhalte überdeckt. Höhe der Leiste: py-5 + Inhalt ≈ 4.25rem. */
+body:has(.feature-ticker-bar) footer {
+    padding-bottom: 5rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .magnify-glass {
         transition: opacity 0.15s ease-out;
@@ -529,19 +536,25 @@ nav.glass-nav.nav-scrolled {
     .hero-badge-2 { animation-delay: 4s; }
     .hero-badge-3 { animation-delay: 8s; }
 
-    /* Feature-Ticker als nahtloser Marquee-Loop: Inhalt liegt zweimal im Markup,
-       translateX(-50%) rollt genau eine Spur weit. Pausiert bei Hover/Fokus. */
+    /* Feature-Ticker als nahtloser Marquee-Loop bei JEDER Viewport-Breite:
+       die Animation liegt auf den einzelnen Spuren und verschiebt jede um ihre
+       eigene Breite (-100%) — kein Prozent-Loop auf dem Container, der bei
+       breiten Screens eine Lücke riss. min-width: 100% garantiert, dass eine
+       Spur den Viewport immer füllt; space-around verteilt überschüssigen Platz
+       gleichmässig. Das halbe Gap als Spur-Padding (1.25rem + 1.25rem = 2.5rem)
+       macht den Übergang zwischen zwei Spuren exakt so breit wie den
+       Item-Abstand — der Rhythmus bleibt über den Loop hinweg gleichmässig.
+       Pausiert bei Hover/Fokus. */
     .feature-ticker {
         flex-wrap: nowrap;
         justify-content: flex-start;
-        width: max-content;
+        width: 100%;
         padding: 0;
         gap: 0;
-        animation: tickerScroll 32s linear infinite;
     }
 
-    .feature-ticker:hover,
-    .feature-ticker:focus-within {
+    .feature-ticker:hover .feature-ticker-track,
+    .feature-ticker:focus-within .feature-ticker-track {
         animation-play-state: paused;
     }
 
@@ -549,8 +562,11 @@ nav.glass-nav.nav-scrolled {
         display: flex;
         align-items: center;
         gap: 2.5rem;
-        padding-inline-end: 2.5rem;
+        padding-inline: 1.25rem;
         flex-shrink: 0;
+        min-width: 100%;
+        justify-content: space-around;
+        animation: tickerScroll 32s linear infinite;
     }
 
     .feature-ticker-duplicate {
@@ -559,17 +575,17 @@ nav.glass-nav.nav-scrolled {
 
     @keyframes tickerScroll {
         from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+        to { transform: translateX(-100%); }
     }
 
     /* RTL (ar, he): die Duplikat-Spur liegt wegen der umgekehrten Flex-Richtung
        links der ersten, der Loop muss daher nach rechts laufen. */
-    [dir="rtl"] .feature-ticker {
+    [dir="rtl"] .feature-ticker-track {
         animation-name: tickerScrollRtl;
     }
 
     @keyframes tickerScrollRtl {
         from { transform: translateX(0); }
-        to { transform: translateX(50%); }
+        to { transform: translateX(100%); }
     }
 }

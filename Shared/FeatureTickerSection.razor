@@ -1,8 +1,12 @@
 @* Nahtloses CSS-Marquee (translateX-Loop in tailwind-input.css): der Inhalt ist
    zweimal im Markup, die Duplikat-Spur trägt aria-hidden und wird nur unter
    prefers-reduced-motion: no-preference eingeblendet — sonst steht eine
-   statische, umbrechende Zeile. Pausiert bei :hover/:focus-within. *@
-<section class="bg-surface-container-low border-y border-surface-container-high py-5 overflow-hidden no-line-rule" aria-label="@Content.Items.FirstOrDefault()?.Text">
+   statische, umbrechende Zeile. Pausiert bei :hover/:focus-within.
+   Die Sektion ist fix am unteren Viewport-Rand (z-40: unter Nav z-50 und Modal
+   z-[60]); die Marker-Klasse feature-ticker-bar gibt dem Footer in
+   tailwind-input.css per body:has() zusätzlichen Abstand nach unten, damit die
+   Leiste am Seitenende keinen Footer-Inhalt überdeckt. *@
+<section class="feature-ticker-bar fixed bottom-0 inset-x-0 z-40 bg-surface-container-low border-y border-surface-container-high py-5 overflow-hidden no-line-rule" aria-label="@Content.Items.FirstOrDefault()?.Text">
     <div class="feature-ticker" tabindex="0">
         <div class="feature-ticker-track">
             @foreach (var item in Content.Items)
