@@ -203,26 +203,9 @@ nav.glass-nav.nav-scrolled {
     background: #0853ce;
 }
 
-/* Schwebende Badge-Karten um das Mockup herum. inset-inline-* statt left/right,
-   damit die Positionen in RTL-Locales (ar, he) sauber spiegeln. */
-.hero-badge {
-    z-index: 10;
-}
-
-.hero-badge-1 {
-    top: -1rem;
-    inset-inline-end: -1rem;
-}
-
-.hero-badge-2 {
-    top: 40%;
-    inset-inline-start: -2rem;
-}
-
-.hero-badge-3 {
-    bottom: 3.5rem;
-    inset-inline-end: -0.5rem;
-}
+/* Die schwebenden Badge-Karten um das Hero-Mockup wurden entfernt
+   (2026-08-20); die dazugehörigen .hero-badge-Styles und heroBadgePop-Keyframes
+   sind ebenfalls gelöscht. */
 
 /* Feature-Ticker (FeatureTickerSection.razor): Basis ist die statische,
    umbrechende Zeile für reduced-motion und No-JS; die Duplikat-Spur für den
@@ -517,24 +500,6 @@ body:has(.feature-ticker-bar) footer {
     .hero-slide.is-active {
         animation: heroKenBurns 7s ease-out both;
     }
-
-    /* Badge-Pop: 12s-Loop, pro Badge versetzt um 4s (Delays unten), sodass immer
-       nur eine Karte sichtbar ist. fill-mode both hält die Karten mit Delay
-       schon vor ihrem ersten Durchlauf versteckt. */
-    @keyframes heroBadgePop {
-        0%, 100% { opacity: 0; transform: translateY(10px) scale(0.92); }
-        5%, 28% { opacity: 1; transform: translateY(0) scale(1); }
-        34% { opacity: 0; transform: translateY(-6px) scale(0.96); }
-        35% { opacity: 0; transform: translateY(10px) scale(0.92); }
-    }
-
-    .hero-badge {
-        animation: heroBadgePop 12s ease-in-out infinite both;
-    }
-
-    .hero-badge-1 { animation-delay: 0s; }
-    .hero-badge-2 { animation-delay: 4s; }
-    .hero-badge-3 { animation-delay: 8s; }
 
     /* Feature-Ticker als nahtloser Marquee-Loop bei JEDER Viewport-Breite:
        die Animation liegt auf den einzelnen Spuren und verschiebt jede um ihre

@@ -157,9 +157,65 @@ window.klacksMagnifier = (function () {
             var x = (pendingClientX - rect.left) / scaleX;
             var y = (pendingClientY - rect.top) / scaleY;
 
-            var size = LENS_SIZE_RATIO * Math.min(width, height);
+            // The image fills the frame's CONTENT box, while absolutely
+            // positioned children (the glass) are placed from the PADDING box
+            // origin. clientLeft/clientTop (the border widths) convert the
+            // border-box coordinates above into image coordinates.
+            var ix = x - frame.clientLeft;
+            var iy = y - frame.clientTop;
+            var boxW = frame.clientWidth;
+            var boxH = frame.clientHeight;
+
+            var size = LENS_SIZE_RATIO * Math.min(boxW, boxH);
             var radius = size / 2;
-            var src = img.currentSrc || img.src;
+
+            // Frames can host several stacked images (hero slideshow): the
+            // loupe follows whichever slide currently carries .is-active.
+            // Single-image frames (MagnifiedImage) have no .is-active and
+            // fall back to the image found at attach time.
+            var activeImg = frame.querySelector('.magnify-image.is-active') || img;
+            var src = activeImg.currentSrc || activeImg.src;
+
+            // The lens background must reproduce the image's on-screen mapping
+            // exactly, or the zoomed content drifts away from what is under
+            // the cursor (the "fake border" artifact):
+            // - object-fit: cover crops the image into the box (hero slides
+            //   keep a fixed 16/10 aspect regardless of the screenshot's own
+            //   aspect); the crop offset follows object-position.
+            // - the hero's Ken Burns animation scales the active slide about
+            //   the box center; the live factor comes from the computed
+            //   transform matrix (uniform scale, a === d).
+            var dispW = boxW;
+            var dispH = boxH;
+            var cropX = 0;
+            var cropY = 0;
+            var zoom = 1;
+
+            if (activeImg.naturalWidth > 0 && activeImg.naturalHeight > 0) {
+                var style = getComputedStyle(activeImg);
+
+                if (style.objectFit === 'cover') {
+                    var coverScale = Math.max(boxW / activeImg.naturalWidth, boxH / activeImg.naturalHeight);
+                    dispW = activeImg.naturalWidth * coverScale;
+                    dispH = activeImg.naturalHeight * coverScale;
+                    var posParts = style.objectPosition.split(' ');
+                    cropX = (parseFloat(posParts[0]) / 100) * (dispW - boxW);
+                    cropY = (parseFloat(posParts[1]) / 100) * (dispH - boxH);
+                }
+
+                if (style.transform !== 'none') {
+                    var matrix = new DOMMatrixReadOnly(style.transform);
+                    if (matrix.a > 0) {
+                        zoom = matrix.a;
+                    }
+                }
+            }
+
+            // Box point p shows image coordinate p + (zoom-1)*center +
+            // zoom*crop; the background is sized to the live displayed size,
+            // so magnifying by ZOOM_FACTOR keeps the lens aligned.
+            var mapX = ix + (zoom - 1) * (boxW / 2) + zoom * cropX;
+            var mapY = iy + (zoom - 1) * (boxH / 2) + zoom * cropY;
 
             // The ring follows the cursor freely and stays a full circle even
             // when it geometrically overhangs the image edge. Only the zoomed
@@ -168,21 +224,21 @@ window.klacksMagnifier = (function () {
             // of the circle the glass is transparent, so the real page shows
             // through at normal scale. Overhang per side is computed in
             // frame-local pixels, which equal glass-local pixels.
-            var clipTop = Math.max(0, radius - y);
-            var clipRight = Math.max(0, x + radius - width);
-            var clipBottom = Math.max(0, y + radius - height);
-            var clipLeft = Math.max(0, radius - x);
+            var clipTop = Math.max(0, radius - iy);
+            var clipRight = Math.max(0, ix + radius - boxW);
+            var clipBottom = Math.max(0, iy + radius - boxH);
+            var clipLeft = Math.max(0, radius - ix);
 
             glass.style.width = size + 'px';
             glass.style.height = size + 'px';
-            glass.style.transform = 'translate3d(' + (x - radius) + 'px, ' + (y - radius) + 'px, 0)';
+            glass.style.transform = 'translate3d(' + (ix - radius) + 'px, ' + (iy - radius) + 'px, 0)';
 
             glassInner.style.clipPath =
                 'inset(' + clipTop + 'px ' + clipRight + 'px ' + clipBottom + 'px ' + clipLeft + 'px)';
             glassInner.style.backgroundImage = 'url("' + src + '")';
-            glassInner.style.backgroundSize = (width * ZOOM_FACTOR) + 'px ' + (height * ZOOM_FACTOR) + 'px';
+            glassInner.style.backgroundSize = (dispW * zoom * ZOOM_FACTOR) + 'px ' + (dispH * zoom * ZOOM_FACTOR) + 'px';
             glassInner.style.backgroundPosition =
-                (-(x * ZOOM_FACTOR - radius)) + 'px ' + (-(y * ZOOM_FACTOR - radius)) + 'px';
+                (-(mapX * ZOOM_FACTOR - radius)) + 'px ' + (-(mapY * ZOOM_FACTOR - radius)) + 'px';
         }
 
         // Continuous rAF loop while hovered: the card-scale transition keeps

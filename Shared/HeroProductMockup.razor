@@ -1,41 +1,26 @@
-@* Browser-Fenster-Mockup mit Crossfade-Slideshow der App-Screenshots
-   (wwwroot/js/hero-slideshow.js) und schwebenden Badge-Karten.
-   Progressive Enhancement: das erste Bild ist serverseitig is-active, also ohne
-   JS oder bei prefers-reduced-motion statisch sichtbar; die Progress-Dots
-   blendet erst das JS per .hero-slideshow-js ein. *@
+@* Produkt-Screenshot mit Crossfade-Slideshow (wwwroot/js/hero-slideshow.js),
+   Hover-Expand (screenshot-hover-zoom) und Cursor-Lupe (magnifier.js) wie bei
+   den anderen Screenshots. Die frühere Browser-Chrome-Leiste (Punkte + URL)
+   wurde 2026-08-20 entfernt. Progressive Enhancement: das erste Bild ist
+   serverseitig is-active, also ohne JS oder bei prefers-reduced-motion statisch
+   sichtbar; die Progress-Dots blendet erst das JS per .hero-slideshow-js ein. *@
 <div class="hero-slideshow relative">
-    <div class="rounded-2xl border border-surface-container-high bg-surface-container-lowest shadow-[0_24px_48px_-12px_rgba(28,27,27,0.12)] overflow-hidden">
-        <!-- Browser-Chrome -->
-        <div class="flex items-center gap-3 px-4 py-3 bg-surface-container-low border-b border-surface-container-high">
-            <div class="flex gap-1.5 shrink-0" aria-hidden="true">
-                <span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
-            </div>
-            <div class="flex-1 flex items-center justify-center gap-1.5 px-3 py-1 bg-surface-container-lowest rounded-full text-[0.6875rem] text-on-surface-variant">
-                <span class="material-symbols-outlined text-xs">lock</span>
-                <span dir="ltr">app.klacks-software.ch</span>
-            </div>
-        </div>
+    @* Der Frame ist BEWUSST ohne overflow-hidden (magnify-frame-Konvention):
+       die Lupe muss als voller Kreis über den Bildrand ragen können. Die
+       gestapelten Slides clippt der innere Container; Ecken sind seit
+       2026-08-20 bewusst eckig (kein rounded-*). *@
+    <div class="screenshot-hover-zoom magnify-frame border border-surface-container-high bg-surface-container-lowest shadow-[0_24px_48px_-12px_rgba(28,27,27,0.12)]">
         <!-- Slides -->
         <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
             @for (var i = 0; i < Mockup.Images.Count; i++)
             {
                 var image = Mockup.Images[i];
                 <img src="images/@image.File" alt="@image.Alt"
-                     class="hero-slide @(i == 0 ? "is-active" : "")"
+                     class="hero-slide magnify-image @(i == 0 ? "is-active" : "")"
                      loading="@(i == 0 ? "eager" : "lazy")" />
             }
         </div>
     </div>
-    @for (var i = 0; i < Mockup.Badges.Count && i < 3; i++)
-    {
-        var badge = Mockup.Badges[i];
-        <div class="hero-badge hero-badge-@(i + 1) absolute flex items-center gap-2 px-4 py-2.5 bg-surface-container-lowest rounded-xl shadow-lg border border-surface-container-high text-sm font-bold text-primary whitespace-nowrap">
-            <span class="material-symbols-outlined text-secondary text-lg">@badge.Icon</span>
-            <span>@badge.Text</span>
-        </div>
-    }
     @if (Mockup.Images.Count > 1)
     {
         <div class="hero-slideshow-dots justify-center items-center gap-2 mt-5">
