@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Klacks cho khách sạn & nhà hàng | Lịch làm việc, phụ cấp & thời gian nghỉ ngơi",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Dành cho khách sạn &amp; nhà hàng",
+    "titleHtml": "Ca sáng, ca chiều, ca đêm &mdash; <span class=\"text-secondary\">được lập lịch công bằng.</span>",
+    "subtitle": "Klacks lập lịch cho bộ phận phục vụ, bếp và buồng phòng &mdash; với ca chia đôi, phụ cấp chủ nhật và ngày lễ cùng thời gian nghỉ ngơi theo luật định không thể lặng lẽ bỏ qua. Kế hoạch tự động xử lý cao điểm mùa vụ và các trường hợp vắng mặt.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Giao diện dòng thời gian của Klacks cho lịch làm việc trong khách sạn và nhà hàng",
+    "screenshotLabel": "Dòng thời gian",
+    "screenshotCaption": "Ảnh chụp màn hình bằng tiếng Đức — ứng dụng hiện chỉ có sẵn bằng tiếng Đức, Anh, Pháp và Ý."
+  },
+  "challenges": {
+    "eyebrow": "Công việc thường ngày trong ngành khách sạn &amp; nhà hàng",
+    "title": "Khách đông, nhân sự mỏng",
+    "items": [
+      { "icon": "splitscreen", "title": "Ca chia đôi", "text": "Phục vụ bữa trưa và bữa tối với thời gian nghỉ giữa ca: ca chia đôi là chuyện thường ngày &mdash; và kéo theo các vấn đề về thời gian nghỉ ngơi và phụ cấp mà gần như không thể lập lịch thủ công một cách chuẩn xác." },
+      { "icon": "event_repeat", "title": "Mùa vụ &amp; lương theo giờ", "text": "Cao điểm mùa vụ, nhân viên thời vụ và lịch rảnh thay đổi liên tục: tỷ lệ nhân sự thay đổi hàng tuần, nhưng lịch làm việc vẫn phải chính xác." },
+      { "icon": "nights_stay", "title": "Ca đêm, chủ nhật &amp; ngày lễ", "text": "Doanh nghiệp hoạt động đúng lúc người khác được nghỉ &mdash; cân đối phụ cấp, thời gian nghỉ ngơi và những ngày chủ nhật được nghỉ mới là nghệ thuật lập lịch thực sự." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks giúp giảm tải cho ngành khách sạn &amp; nhà hàng như thế nào",
+    "subtitle": "Từ ca sáng đến ca đêm &mdash; tất cả đều ăn khớp với nhau.",
+    "items": [
+      { "icon": "splitscreen", "title": "Ca chia đôi được lập lịch chuẩn xác", "text": "Klacks sắp xếp các khối trưa và tối sao cho thời gian nghỉ tối thiểu và giới hạn tối đa mỗi ngày được tuân thủ &mdash; mọi vi phạm đều được hiển thị ngay lập tức." },
+      { "icon": "timer", "title": "Thời gian nghỉ ngơi trong tầm kiểm soát", "text": "Giới hạn thời gian nghỉ theo luật định được giám sát theo thời gian thực &mdash; vi phạm sẽ không thể xảy ra ngay từ đầu. Nếu muốn, Klacks sẽ chặn cứng các vi phạm này: ở chế độ chặn, một vi phạm chỉ có thể được lưu khi có sự phê duyệt được ghi lại của cấp quản lý." },
+      { "icon": "payments", "title": "Phụ cấp tự động", "text": "Phụ cấp ca đêm, chủ nhật và ngày lễ được Klacks tự động tính toán &mdash; có thể cấu hình theo từng quốc gia và bộ quy định, không cần xử lý thủ công khi chuẩn bị bảng lương." },
+      { "icon": "badge", "title": "Trình độ &amp; chứng chỉ", "text": "Ca làm việc chỉ được xếp cho người có trình độ phù hợp &mdash; Klacks cảnh báo trước khi chứng chỉ sắp hết hạn trở thành vấn đề." },
+      { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Lập lịch cho cuối tuần, hai nhân viên phục vụ bị ốm” &mdash; Klacksy tự tính toán lại toàn bộ." },
+      { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu có người vắng mặt, Klacks lập tức hiển thị ai đủ trình độ, đang rảnh và nằm trong giới hạn thời gian nghỉ ngơi và thời gian làm việc tối đa." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Trải nghiệm Klacks trong doanh nghiệp của bạn",
+    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận lịch làm việc, phụ cấp và thời gian nghỉ ngơi như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Miễn phí và không cần đăng ký."
+  }
+}

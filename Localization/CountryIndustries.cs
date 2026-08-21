@@ -7,7 +7,7 @@ namespace Klacks.Marketing.Localization;
 public sealed record CountryIndustry(string Slug, string LabelKey, string TextKey, string Icon);
 
 // Registry of per-country industry sub-pages. Every registered country exposes
-// the same five branches (the labels stay localized via the shared "index"
+// the same six branches (the labels stay localized via the shared "index"
 // content keys); countries that are not registered resolve to null, which keeps
 // the industry dropdown and the on-page industry grid hidden for them.
 public static class CountryIndustries
@@ -21,6 +21,7 @@ public static class CountryIndustries
         new CountryIndustry("security", "industries.security.title", "industries.security.text", "security"),
         new CountryIndustry("hausdienste", "industries.hausdienste.title", "industries.hausdienste.text", "cleaning_services"),
         new CountryIndustry("logistik", "industries.logistik.title", "industries.logistik.text", "local_shipping"),
+        new CountryIndustry("hotellerie-gastronomie", "industries.hotellerie-gastronomie.title", "industries.hotellerie-gastronomie.text", "restaurant"),
         // "Andere Branche?" zeigt auf die Seite für eigene Planungsregeln
         // (Klacksy-Setup per Frage/Antwort), nicht auf die allgemeine Klacksy-Seite.
         new CountryIndustry("eigene-regeln", "industries.klacksy.title", "industries.klacksy.text", "add_business"),

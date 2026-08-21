@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks pour l'hôtellerie & la restauration en France | Plannings selon la CCN HCR",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Pour l'hôtellerie &amp; la restauration",
+    "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés en toute sécurité selon la CCN HCR.</span>",
+    "subtitle": "Klacks planifie le service, la cuisine et les étages selon la convention collective de branche généralement obligatoire CCN HCR &mdash; y compris les maxima journaliers par catégorie (cuisiniers 11 h, réception/veilleur de nuit 12 h), la plage de nuit de 22 h à 7 h et deux jours de repos par semaine.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour les plannings dans l'hôtellerie et la restauration",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de la gastronomie",
+    "title": "Maison pleine, effectifs réduits",
+    "items": [
+      {
+        "icon": "splitscreen",
+        "title": "Coupures sans chaos",
+        "text": "Les services fractionnés sont clairement limités en France : au maximum une coupure par jour, et en temps partiel au plus cinq heures entre les blocs. Les coordonner à la main coûte des heures chaque semaine."
+      },
+      {
+        "icon": "schedule",
+        "title": "Maxima journaliers par catégorie sous contrôle",
+        "text": "La CCN HCR fixe des durées journalières maximales différentes selon la fonction &mdash; 11 heures pour les cuisiniers, 11h30 pour le personnel d'exploitation, 12 heures pour la réception et la veille de nuit. Qui retient tout cela de tête fait des erreurs."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "La saison comprime le repos",
+        "text": "En saison, le temps de repos peut être réduit de 11 à 10 heures &mdash; mais uniquement avec une compensation de 20 minutes par application. S'y ajoute la limite de 12 semaines avec une moyenne de 46 heures."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'hôtellerie &amp; la restauration",
+    "subtitle": "Du service du matin à la nuit &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Limites HCR par catégorie",
+        "text": "Klacks connaît les maxima journaliers de la CCN HCR par fonction &mdash; 11 h, 11h30 ou 12 h &mdash; et signale immédiatement chaque dépassement, avant que le planning ne soit publié."
+      },
+      {
+        "icon": "hotel",
+        "title": "Repos de saison avec compensation",
+        "text": "La réduction saisonnière à 10 heures de repos peut être enregistrée comme règle &mdash; Klacks surveille automatiquement la compensation prescrite de 20 minutes par application."
+      },
+      {
+        "icon": "event_available",
+        "title": "Deux jours de repos par semaine",
+        "text": "La CCN HCR garantit deux jours de repos par semaine &mdash; plus que ce que la loi exige. Klacks compte avec et avertit lorsque la prescription n'est pas respectée dans le planning."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Plage de nuit de 22 h à 7 h",
+        "text": "La plage de nuit HCR de 22h00 à 7h00 est enregistrée &mdash; le travail de nuit est correctement détecté et déclaré, sans retraitement manuel lors de la préparation des salaires."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Planifie le week-end, deux serveurs sont malades » suffit &mdash; Klacksy recalcule tout."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences compensées rapidement",
+        "text": "Si quelqu'un tombe en défaillance, Klacks indique immédiatement qui est qualifié, disponible et dans les limites de temps de repos et de durée maximale du travail."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre établissement",
+    "text": "Testez dans le Playground comment Klacks prend en charge vos plannings, majorations et temps de repos &mdash; ou installez-le directement sur votre propre infrastructure. Gratuit et sans inscription."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks hotelli- ja ravintola-alalle Suomessa | MaRa-PAM:n mukaiset työvuorolistat",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Hotelli- &amp; ravintola-alalle",
+    "titleHtml": "Aamu-, ilta- ja yövuoro &mdash; <span class=\"text-secondary\">MaRa-PAM-TES:n mukaan suunniteltuna.</span>",
+    "subtitle": "Klacks suunnittelee palvelun, keittiön ja kerroshoidon yleissitovan MaRa-PAM-työehtosopimuksen mukaan &mdash; jaksotyön 80 tunnin työajalla kahdessa viikossa (§ 7 Työaikalaki), enintään 10 tunnin työvuoroin ja korkeintaan viidellä peräkkäisellä yövuorolla.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacksin aikajananäkymä hotelli- ja ravintola-alan työvuorolistoihin",
+    "screenshotLabel": "Aikajana"
+  },
+  "challenges": {
+    "eyebrow": "Ravintola-alan arkipäivä",
+    "title": "Talo täynnä, henkilökuntaa vähän",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "Jaksotyö eli työaikajaksot",
+        "text": "Majoitus- ja ravitsemusalalle työaikalaki säätää nimenomaisesti jaksotyöstä: 80 tuntia kahdessa viikossa tai 120 tuntia kolmessa (§ 7 Työaikalaki). Liukuvien jaksokeskiarvojen suunnitteleminen käsin on työlästä."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Yövuorot rajattuina",
+        "text": "Korkeintaan viiden peräkkäisen yövuoron jälkeen on annettava vähintään 24 tuntia vapaa-aikaa (§ 8 Abs. 5 Työaikalaki) &mdash; yövuoroa käyttävässä hotellitoiminnassa todellinen suunnittelutehtävä."
+      },
+      {
+        "icon": "hotel",
+        "title": "Lepoaika lyhennettävissä 8 tuntiin",
+        "text": "11 tunnin lepoaika on vakiota, jaksotyössä lyhennettävissä 9 tuntiin (§ 25 Työaikalaki), työehtosopimuksella ja suostumuksella jopa 8 tuntiin &mdash; monivaiheiset säännöt, joita ilman järjestelmää tuskin pystyy luotettavasti seuraamaan."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Miten Klacks helpottaa hotelli- ja ravintola-alan työtä",
+    "subtitle": "Aamuvuorosta yövuoroon &mdash; kaikki toimii yhdessä.",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "Jaksotyö automaattisesti valvottuna",
+        "text": "Klacks tallentaa jaksotyön säännöstönä &mdash; MaRa-PAM-TES:n mukaan 112,5 tuntia kolmessa viikossa, laskennallisesti 37,5 viikossa &mdash; ja näyttää jokaisen jaksokeskiarvon ylityksen välittömästi."
+      },
+      {
+        "icon": "timer",
+        "title": "Vuororajat TES:n mukaan",
+        "text": "Enintään 10 tuntia vuorossa ja 16 tunnin päivittäinen työaika &mdash; niin määrää MaRa-PAM-TES: Klacks näyttää rikkomukset ennen kuin ne päätyvät suunnitelmaan, halutessanne johdonmukaisesti estettynä."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Yövuororaja hallinnassa",
+        "text": "Viidennen peräkkäisen yövuoron jälkeen Klacks huomioi suunnittelussa automaattisesti säädetyt vähintään 24 tuntia vapaa-aikaa (§ 8 Abs. 5 Työaikalaki)."
+      },
+      {
+        "icon": "event_available",
+        "title": "V-päivä ja X-päivä suunnitelmassa",
+        "text": "Kaksi vapaapäivää 5-päiväisessä viikossa &mdash; niin TES edellyttää: Klacks laskee vapaapäivät mukaan, jotta määräys ei unohdu edes sesonkina."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy suunnittelee puheella",
+        "text": "”Suunnittele viikonloppu, kaksi tarjoilijaa on sairaana” riittää &mdash; Klacksy laskee kaiken uudelleen."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Poissaolot nopeasti paikattuina",
+        "text": "Jos joku on poissa, Klacks näyttää heti, kuka on pätevä, saatavilla ja lepoaika- ja enimmäistyöaikavaatimusten rajoissa."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Kokeilkaa Klacksia omassa yrityksessänne",
+    "text": "Kokeilkaa Playgroundissa, miten Klacks ottaa haltuunsa työvuorolistat, lisät ja lepoajat &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Maksutta ja ilman rekisteröitymistä."
+  }
+}

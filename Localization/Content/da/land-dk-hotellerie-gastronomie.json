@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks til hotel & restauration i Danmark | HORESTA-3F-sikre vagtplaner",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Til hotel &amp; restauration",
+    "titleHtml": "Morgen-, aften- og nattevagter &mdash; <span class=\"text-secondary\">HORESTA-sikkert planlagt.</span>",
+    "subtitle": "Klacks planlægger service, køkken og etage efter HORESTA-3F-overenskomsten &mdash; med 37-timers uge (148 timer i 4-ugers rul), regelbundet forkortelse af hviletiden til 8 timer og nattetillæg fra midnat.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevisning for vagtplaner i hotel- og restaurationsbranchen",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Gastro-hverdagen",
+    "title": "Fuldt hus, tynd bemanding",
+    "items": [
+      {
+        "icon": "splitscreen",
+        "title": "Delte vagter? Kun med lokal aftale",
+        "text": "I HORESTA-3F-overenskomsten gælder: „Den daglige arbejdstid kan ikke deles“ &mdash; den daglige arbejdstid må ikke deles. Delte vagter er kun tilladt ved lokaloverenskomst (§ 5 Stk. 1) &mdash; den, der planlægger dem, skal have denne aftale dokumenteret under kontrol."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "37 timer i stedet for 48",
+        "text": "Overenskomsten fastsætter 148 timer pr. 4-ugers rul &mdash; regnet 37 timer om ugen og dermed klart under den lovpligtige 48-timers grænse. At føre glidende rulgennemsnit i hånden er besværligt."
+      },
+      {
+        "icon": "hotel",
+        "title": "8-timers hviletid med klare regler",
+        "text": "11-timers hviletiden må i overenskomsten forkortes til 8 timer &mdash; men højst to gange om ugen og aldrig to gange i træk (§ 5 Stk. 11). At overvåge sådanne mønstre er næppe muligt uden et system."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Sådan letter Klacks hverdagen i hotel &amp; restauration",
+    "subtitle": "Fra morgenvagt til nattevagt &mdash; alt spiller sammen.",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "4-ugers rul automatisk",
+        "text": "Klacks lægger 148 timer pr. rul ind som regelsæt og overvåger det glidende gennemsnit &mdash; overskridelser af 37-timers ugen bliver straks synlige."
+      },
+      {
+        "icon": "hotel",
+        "title": "Hviletidsforkortelse regelbaseret",
+        "text": "8-timers hviletider kan lægges ind som overenskomstregel: Klacks advarer, så snart grænsen på to forkortelser om ugen eller forbuddet mod to forkortelser i træk overtrædes (§ 5 Stk. 11)."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nattetillæg fra kl. 0",
+        "text": "Overenskomstens tillægsvindue 24:00 til 06:00 (Nattillæg, § 3 Stk. 3) beregner Klacks automatisk &mdash; kan konfigureres pr. regelsæt, uden manuelt efterarbejde i lønforberedelsen."
+      },
+      {
+        "icon": "event_available",
+        "title": "Friweekender for øje",
+        "text": "Mindst fem frie weekender på tre måneder kræver overenskomsten (§ 5 Stk. 10): Klacks tæller friweekenderne med, så kravet ikke går i glemmebogen."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planlægger med stemmen",
+        "text": "»Planlæg weekenden, to servicemedarbejdere er syge« er nok &mdash; Klacksy genberegner alt."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Fravær hurtigt dækket",
+        "text": "Falder nogen fra, viser Klacks straks, hvem der er kvalificeret, tilgængelig og inden for hviletids- og maksimumsarbejdstidskravene."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Oplev Klacks i din virksomhed",
+    "text": "Prøv selv i Playground, hvordan Klacks overtager vagtplaner, tillæg og hviletider &mdash; eller installer det direkte på din egen infrastruktur. Gratis og uden registrering."
+  }
+}

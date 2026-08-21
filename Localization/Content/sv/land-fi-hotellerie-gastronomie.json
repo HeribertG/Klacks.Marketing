@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks för hotell & restaurang i Finland | MaRa-PAM-säkra skiftplaner",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "För hotell &amp; restaurang",
+    "titleHtml": "Tidiga, sena och nattpass &mdash; <span class=\"text-secondary\">planerade enligt MaRa-PAM-TES.</span>",
+    "subtitle": "Klacks planerar servering, kök och hushåll enligt det allmängiltiga MaRa-PAM-kollektivavtalet &mdash; med jaksotyö-periodarbetstid på 80 timmar per två veckor (§ 7 Työaikalaki), maximalt 10-timmarspass och högst fem nattskift i följd.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks tidslinjevy för skiftplaner inom hotell och restaurang",
+    "screenshotLabel": "Tidslinje"
+  },
+  "challenges": {
+    "eyebrow": "Vardagen inom restaurangbranschen",
+    "title": "Fullbelagt hus, tunn personalbemanning",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "Periodarbetstid jaksotyö",
+        "text": "För hotell- och restaurangbranschen föreskriver arbetstidslagen uttryckligen periodarbetstid: 80 timmar per två veckor eller 120 timmar per tre (§ 7 Työaikalaki). Att för hand planera rörliga periodgenomsnitt är tidskrävande."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nattskift begränsade",
+        "text": "Efter högst fem nattskift i följd ska det finnas minst 24 timmars fritid (§ 8 Abs. 5 Työaikalaki) &mdash; en verklig planeringsuppgift i hotelldrift med nattpass."
+      },
+      {
+        "icon": "hotel",
+        "title": "Vilotid förkortningsbar till 8 timmar",
+        "text": "11 timmars vilotid är standard, i jaksotyö reducerbar till 9 timmar (§ 25 Työaikalaki), via TES med samtycke till och med till 8 &mdash; regler i flera nivåer som knappt går att följa korrekt utan system."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Så avlastar Klacks hotell &amp; restaurang",
+    "subtitle": "Från tidigpasset till nattskiftet &mdash; allt hänger ihop.",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "jaksotyö övervakas automatiskt",
+        "text": "Klacks lagrar periodarbetstiden som regelverk &mdash; enligt MaRa-PAM-TES 112,5 timmar per tre veckor, räknat 37,5 per vecka &mdash; och gör varje överskridande av periodgenomsnittet omedelbart synligt."
+      },
+      {
+        "icon": "timer",
+        "title": "Passgränser enligt TES",
+        "text": "Maximalt 10 timmar per pass och 16 timmars daglig arbetstid föreskriver MaRa-PAM-TES: Klacks gör överträdelser synliga innan de hamnar i planen &mdash; på begäran konsekvent blockerade."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nattskiftsgränsen under uppsikt",
+        "text": "Efter det femte nattskiftet i följd tar Klacks automatiskt hänsyn till de föreskrivna minst 24 timmarna fritid (§ 8 Abs. 5 Työaikalaki) i planeringen."
+      },
+      {
+        "icon": "event_available",
+        "title": "V-dag och X-dag i planen",
+        "text": "Två lediga dagar per 5-dagarsvecka föreskriver TES: Klacks räknar de lediga dagarna med, så att kravet inte faller i glömska ens under högsäsong."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planerar med rösten",
+        "text": "”Planera helgen, två servitörer är sjuka” räcker &mdash; Klacksy räknar om allt."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Bortfall snabbt hanterade",
+        "text": "Faller någon bort visar Klacks direkt vem som är kvalificerad, tillgänglig och inom gränserna för vilotider och högsta arbetstider."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Upplev Klacks i din verksamhet",
+    "text": "Prova i Playground hur Klacks tar hand om skiftplaner, tillägg och vilotider &mdash; eller installera det direkt på din egen infrastruktur. Gratis och utan registrering."
+  }
+}

@@ -1,0 +1,10 @@
+@page "/land-no/hotellerie-gastronomie"
+@page "/{culture}/land-no/hotellerie-gastronomie"
+
+<IndustryPageTemplate PageKey="land-no-hotellerie-gastronomie" RoutePath="land-no/hotellerie-gastronomie" Culture="@ResolvedCulture" />
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+}

@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks pour l'hôtellerie & la restauration en Suisse | Plannings conformes au L-GAV",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Pour l'hôtellerie &amp; la restauration",
+    "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés conformément au L-GAV.</span>",
+    "subtitle": "Klacks planifie le service, la cuisine et les étages selon la loi suisse sur le travail et le L-GAV &mdash; la convention collective généralement obligatoire pour tous les établissements de l'hôtellerie-restauration, avec une durée hebdomadaire de travail de 42 heures, deux jours de repos par semaine et la règle des 7 jours.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Vue chronologique de Klacks pour les plannings dans l'hôtellerie et la restauration en Suisse",
+    "screenshotLabel": "Chronologie"
+  },
+  "challenges": {
+    "eyebrow": "Le quotidien de la gastronomie",
+    "title": "Maison pleine, effectifs réduits",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Le L-GAV s'applique à tous",
+        "text": "Le L-GAV est déclaré d'obligation générale par le Conseil fédéral &mdash; il s'applique à chaque établissement de l'hôtellerie-restauration, membre ou non. Les 42 heures de travail hebdomadaires (43,5 pour les entreprises saisonnières, 45 pour les petites entreprises) au lieu des 50 heures légales ne sont pas un bonus volontaire, mais une obligation."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "7 jours d'affilée &mdash; mais correctement",
+        "text": "Le L-GAV autorise jusqu'à sept jours de travail consécutifs &mdash; mais uniquement avec un maximum de 9 heures de travail par jour, suivi d'au moins 83 heures de repos. S'y ajoutent deux jours de repos par semaine. Enchaîner tout cela à la main est source d'erreurs."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nuits &amp; peu de dimanches libres",
+        "text": "Le travail de nuit et du dimanche n'est pas soumis à autorisation dans l'hôtellerie-restauration, et les dimanches libres peuvent être réduits à quatre par an &mdash; en contrepartie, les majorations de nuit (+25 % en salaire en cas de travail temporaire, +10 % en temps en cas de travail de nuit régulier) doivent être correctement déclarées."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Comment Klacks soulage l'hôtellerie &amp; la restauration",
+    "subtitle": "Du service du matin à la nuit &mdash; tout s'imbrique parfaitement.",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Le L-GAV enregistré comme règlement",
+        "text": "Durée hebdomadaire de 42 heures, deux jours de repos par semaine, série de 7 jours avec 83 heures de compensation &mdash; Klacks enregistre les prescriptions du L-GAV comme règlement et signale immédiatement chaque infraction."
+      },
+      {
+        "icon": "timer",
+        "title": "Temps de repos sous contrôle",
+        "text": "Onze heures de repos selon l'art. 15a LTr &mdash; réductibles à 8 heures au plus une fois par semaine, si la moyenne sur deux semaines reste à 11 heures. Klacks surveille les deux en temps réel."
+      },
+      {
+        "icon": "schedule",
+        "title": "Cadre de 14 heures respecté",
+        "text": "Le travail de jour et du soir, pauses comprises, doit tenir dans le cadre de 14 heures, le travail de nuit est limité à 9 à 10 heures &mdash; Klacks planifie les postes de sorte que les cadres horaires ne soient pas dépassés."
+      },
+      {
+        "icon": "payments",
+        "title": "Majorations de nuit automatiques",
+        "text": "+25 % en salaire en cas de travail de nuit temporaire, +10 % en temps en cas de travail de nuit régulier (23 h à 6 h) &mdash; Klacks calcule les majorations automatiquement, sans retraitement manuel lors de la préparation des salaires."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy planifie à la voix",
+        "text": "« Planifie le week-end, deux serveurs sont malades » suffit &mdash; Klacksy recalcule tout."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences compensées rapidement",
+        "text": "Si quelqu'un tombe en défaillance, Klacks indique immédiatement qui est qualifié, disponible et dans les limites de temps de repos et de durée maximale du travail."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Découvrez Klacks dans votre établissement",
+    "text": "Testez dans le Playground comment Klacks prend en charge vos plannings, majorations et temps de repos &mdash; ou installez-le directement sur votre propre infrastructure. Gratuit et sans inscription."
+  }
+}

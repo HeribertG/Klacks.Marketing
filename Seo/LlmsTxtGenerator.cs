@@ -18,7 +18,7 @@ public static class LlmsTxtGenerator
     private const string DatenschutzSlug = "datenschutz";
 
     private const string Tagline =
-        "Open-source, on-premise workforce scheduling for shift- and field-based operations — home care, hospitals, security, cleaning and logistics. Automatic shift scheduling, route optimisation and a voice- and chat-controlled AI assistant (Klacksy) with your own choice of language model.";
+        "Open-source, on-premise workforce scheduling for shift- and field-based operations — home care, hospitals, security, cleaning, logistics and hospitality. Automatic shift scheduling, route optimisation and a voice- and chat-controlled AI assistant (Klacksy) with your own choice of language model.";
 
     // English-language country landing pages (page key -> English country name).
     // Only countries with their own English content are listed here; the site
@@ -115,7 +115,7 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("## Industries");
         sb.AppendLine();
-        sb.AppendLine("Klacks is built for shift- and field-based operations: home care, hospitals, security, cleaning services and logistics — anywhere staff are scheduled in shifts, in the field and by qualification.");
+        sb.AppendLine("Klacks is built for shift- and field-based operations: home care, hospitals, security, cleaning services, logistics and hospitality — anywhere staff are scheduled in shifts, in the field and by qualification.");
         sb.AppendLine();
 
         sb.AppendLine("## Countries and languages");

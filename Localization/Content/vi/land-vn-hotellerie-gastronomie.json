@@ -1,0 +1,39 @@
+{
+  "pageTitle": "Klacks cho khách sạn & nhà hàng tại Việt Nam | Tuần 48 giờ & nghỉ 12 giờ trong lịch làm việc",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Dành cho khách sạn &amp; nhà hàng",
+    "titleHtml": "Ca sáng, ca chiều, ca đêm &mdash; <span class=\"text-secondary\">thời gian nghỉ 12 giờ được tuân thủ.</span>",
+    "subtitle": "Klacks lập lịch cho bộ phận phục vụ, bếp và buồng phòng theo luật lao động Việt Nam &mdash; với thời gian làm việc tối đa 48 giờ mỗi tuần (Điều 105), mười hai giờ nghỉ giữa các ca (Điều 110) và phụ cấp ca đêm 30 phần trăm từ 22 giờ đến 6 giờ (Điều 98, 106).",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Giao diện dòng thời gian của Klacks cho lịch làm việc trong khách sạn và nhà hàng",
+    "screenshotLabel": "Dòng thời gian"
+  },
+  "challenges": {
+    "eyebrow": "Công việc thường ngày trong ngành khách sạn &amp; nhà hàng",
+    "title": "Khách đông, nhân sự mỏng",
+    "items": [
+      { "icon": "splitscreen", "title": "Ca chia đôi &amp; nghỉ 12 giờ", "text": "Phục vụ bữa trưa và bữa tối với thời gian nghỉ giữa ca là chuyện thường ngày &mdash; nhưng giữa hai ca, luật lao động Việt Nam quy định mười hai giờ nghỉ ngơi (Điều 110). Theo dõi thủ công điều này rất dễ sai sót." },
+      { "icon": "beach_access", "title": "Khu nghỉ dưỡng 24/7 &amp; ngày nghỉ", "text": "Ở những nơi ngày nghỉ hàng tuần không khả thi về mặt vận hành, Việt Nam cho phép tính bình quân theo tháng: tối thiểu bốn ngày nghỉ mỗi tháng (Điều 111 khoản 2). Giữ được cái nhìn tổng quan qua các cao điểm mùa vụ mới là thử thách thực sự." },
+      { "icon": "nights_stay", "title": "Ca đêm từ 22 giờ &mdash; kèm phụ cấp", "text": "Làm việc ban đêm từ 22 giờ đến 6 giờ tại Việt Nam phải được trả phụ cấp 30 phần trăm (Điều 98, 106) &mdash; ca tối và ca đêm tại quầy bar khách sạn và dịch vụ phòng vì thế trực tiếp kéo theo chi phí lương." }
+    ]
+  },
+  "solutions": {
+    "title": "Klacks giúp giảm tải cho ngành khách sạn &amp; nhà hàng như thế nào",
+    "subtitle": "Từ ca sáng đến ca đêm &mdash; tất cả đều ăn khớp với nhau.",
+    "items": [
+      { "icon": "timer", "title": "Tuần 48 giờ, giới hạn 12 giờ mỗi ngày", "text": "Klacks giám sát thời gian làm việc tối đa 48 giờ mỗi tuần và giới hạn cứng 12 giờ mỗi ngày bao gồm cả làm thêm giờ (Điều 105, 107) &mdash; mọi vượt giới hạn đều được hiển thị ngay lập tức." },
+      { "icon": "hotel", "title": "Thời gian nghỉ 12 giờ trong tầm kiểm soát", "text": "Thời gian nghỉ bắt buộc mười hai giờ giữa các ca (Điều 110) được giám sát theo thời gian thực &mdash; vi phạm sẽ không thể xảy ra ngay từ đầu." },
+      { "icon": "event_available", "title": "Ngày nghỉ tính bình quân theo tháng", "text": "Đối với các doanh nghiệp hoạt động liên tục, Klacks theo dõi quy định tối thiểu bốn ngày nghỉ mỗi tháng tính bình quân (Điều 111 khoản 2) &mdash; yêu cầu tối thiểu này không còn bị quên." },
+      { "icon": "payments", "title": "Phụ cấp ca đêm tự động", "text": "Phụ cấp ca đêm 30 phần trăm từ 22 giờ đến 6 giờ (Điều 98, 106) được Klacks tự động tính toán &mdash; có thể cấu hình theo từng bộ quy định, không cần xử lý thủ công khi chuẩn bị bảng lương." },
+      { "icon": "smart_toy", "title": "Klacksy lập lịch bằng giọng nói", "text": "Chỉ cần nói “Lập lịch cho cuối tuần, hai nhân viên phục vụ bị ốm” &mdash; Klacksy tự tính toán lại toàn bộ." },
+      { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu có người vắng mặt, Klacks lập tức hiển thị ai đủ trình độ, đang rảnh và nằm trong giới hạn thời gian nghỉ ngơi và thời gian làm việc tối đa." }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Trải nghiệm Klacks trong doanh nghiệp của bạn",
+    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận lịch làm việc, phụ cấp và thời gian nghỉ ngơi như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Miễn phí và không cần đăng ký."
+  }
+}
