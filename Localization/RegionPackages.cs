@@ -35,6 +35,7 @@ public static class RegionPackages
         ["security"] = "security",
         ["hausdienste"] = "facility",
         ["logistik"] = "logistics",
+        ["hotellerie-gastronomie"] = "hospitality",
     };
 
     // "land-ch" -> "ch"; null when the key is not a country page key.
