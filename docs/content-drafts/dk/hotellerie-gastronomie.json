@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks für Hotellerie & Gastronomie in Dänemark | HORESTA-3F-sichere Dienstpläne",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "Für Hotellerie &amp; Gastronomie",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">HORESTA-sicher geplant.</span>",
+    "subtitle": "Klacks plant Service, Küche und Etage nach dem HORESTA-3F-Kollektivvertrag &mdash; mit 37-Stunden-Woche (148 Stunden im 4-Wochen-Turnus), regelgebundener Ruhezeit-Verkürzung auf 8 Stunden und Nachtzuschlägen ab Mitternacht.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Der Gastro-Alltag",
+    "title": "Volles Haus, dünne Personaldecke",
+    "items": [
+      {
+        "icon": "splitscreen",
+        "title": "Geteilte Dienste? Nur mit Lokalvereinbarung",
+        "text": "Im HORESTA-3F-Vertrag gilt: „Den daglige arbejdstid kan ikke deles“ &mdash; die tägliche Arbeitszeit darf nicht geteilt werden. Geteilte Dienste sind nur per Lokalvereinbarung zulässig (§ 5 Stk. 1) &mdash; wer sie plant, braucht diese Vereinbarung dokumentiert im Griff."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "37 Stunden statt 48",
+        "text": "Der Kollektivvertrag legt 148 Stunden pro 4-Wochen-Turnus fest &mdash; rechnerisch 37 Stunden pro Woche und damit deutlich unter der gesetzlichen 48-Stunden-Grenze. Gleitende Turnus-Durchschnitte von Hand nachzuhalten ist aufwendig."
+      },
+      {
+        "icon": "hotel",
+        "title": "8-Stunden-Ruhezeit mit klaren Regeln",
+        "text": "Die 11-Stunden-Ruhezeit darf im KV auf 8 Stunden verkürzt werden &mdash; aber höchstens zweimal pro Woche und nie zweimal in Folge (§ 5 Stk. 11). Solche Muster zu überwachen ist ohne System kaum machbar."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Wie Klacks Hotellerie &amp; Gastronomie entlastet",
+    "subtitle": "Vom Frühdienst bis zur Nachtschicht &mdash; alles greift ineinander.",
+    "items": [
+      {
+        "icon": "event_repeat",
+        "title": "4-Wochen-Turnus automatisch",
+        "text": "Klacks hinterlegt 148 Stunden pro Turnus als Regelwerk und überwacht den gleitenden Durchschnitt &mdash; Überschreitungen der 37-Stunden-Woche werden sofort sichtbar."
+      },
+      {
+        "icon": "hotel",
+        "title": "Ruhezeit-Verkürzung regelbasiert",
+        "text": "8-Stunden-Ruhezeiten lassen sich als KV-Regel hinterlegen: Klacks warnt, sobald die Grenze von zwei Verkürzungen pro Woche oder das Verbot zweier Verkürzungen in Folge verletzt wird (§ 5 Stk. 11)."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nachtzuschläge ab 0 Uhr",
+        "text": "Das KV-Zuschlagsfenster 24:00 bis 06:00 Uhr (Nattillæg, § 3 Stk. 3) rechnet Klacks automatisch aus &mdash; konfigurierbar pro Regelwerk, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+      },
+      {
+        "icon": "event_available",
+        "title": "Freie Wochenenden im Blick",
+        "text": "Mindestens fünf freie Wochenenden in drei Monaten schreibt der KV vor (§ 5 Stk. 10): Klacks zählt die Friweekends mit, damit die Vorgabe nicht in Vergessenheit gerät."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy plant per Sprache",
+        "text": "„Plane das Wochenende, zwei Servicekräfte sind krank“ genügt &mdash; Klacksy rechnet alles neu."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Ausfälle schnell aufgefangen",
+        "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der Ruhezeit- und Höchstarbeitszeit-Vorgaben ist."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "Klacks in Ihrem Betrieb erleben",
+    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zuschläge und Ruhezeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Kostenlos und ohne Registrierung."
+  }
+}
