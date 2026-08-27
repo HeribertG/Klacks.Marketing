@@ -36,7 +36,7 @@
             {
                 <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")">@Sh("nav.industries")</a>
             }
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref">@Sh("nav.download")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
         </div>
@@ -112,7 +112,7 @@
         {
             <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
         }
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
+        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
         <div class="flex flex-wrap gap-3 pt-2 border-t border-surface-container-high">
@@ -177,7 +177,6 @@
     private const string ImprintPageKey = "impressum";
     private const string PrivacyPageKey = "datenschutz";
     private const string KlacksyPageSlug = "klacksy";
-    private const string InstallationPageSlug = "installation";
 
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -319,22 +318,6 @@
         }
     }
 
-    // Same country-preserving pattern as KlacksyHref: the installation/download
-    // page exists only under a country, so off a country page it targets the
-    // culture's default one.
-    private string InstallationHref
-    {
-        get
-        {
-            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
-            var suffix = $"{country}/{InstallationPageSlug}";
-
-            return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
-                ? $"/{suffix}"
-                : $"/{CurrentCultureRecord.UrlSlug}/{suffix}";
-        }
-    }
-
     // The raw current relative path (culture + full page key incl. any industry
     // sub-page slug), without fragment/query. Empty string on the site root.
     private string CurrentRelativePath()
@@ -373,6 +356,20 @@
     // Trailing slash is required: nginx 301-redirects the bare "/store" path without
     // preserving the query string, which would silently drop ?culture=.
     private string StoreHref => $"{ExternalLinks.MarketplaceUrl}/?culture={CurrentCultureRecord.Code}";
+
+    // Same country-preserving pattern as KlacksyHref: the region's install package
+    // page exists only under a country, so off a country page it targets the
+    // culture's default one.
+    private string InstallationHref
+    {
+        get
+        {
+            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+            var countryCode = CountryCode(country).ToLowerInvariant();
+
+            return $"{ExternalLinks.MarketplaceUrl}/region/{countryCode}?culture={CurrentCultureRecord.Code}";
+        }
+    }
 
     private string LanguageSwitchHref(SupportedCulture target)
     {
