@@ -1,0 +1,154 @@
+@page "/vergleich"
+@page "/{culture}/vergleich"
+@inject IPageContentProvider ContentProvider
+
+<PageTitle>@GetText("pageTitle")</PageTitle>
+<SeoHead PageKey="vergleich" Culture="@Culture" RoutePath="vergleich"
+         Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
+
+<div class="min-h-screen bg-surface text-on-surface">
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto pt-24 pb-16 px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-6">
+            @GetText("hero.title")
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+            @GetText("hero.subtitle")
+        </p>
+    </section>
+
+    <!-- Vergleichstabelle -->
+    <section class="max-w-6xl mx-auto py-16 px-8">
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse rounded-2xl overflow-hidden shadow-sm">
+                <thead>
+                    <tr class="bg-surface-container-high">
+                        <th class="text-left p-6 font-bold">@GetText("table.feature")</th>
+                        <th class="text-center p-6 font-bold text-secondary">@GetText("table.klacks")</th>
+                        <th class="text-center p-6 font-bold text-on-surface-variant">@GetText("table.saas")</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in GetComparisonRows())
+                    {
+                        <tr class="border-b border-outline/20 @(row.IsHighlighted ? "bg-secondary/5" : "")">
+                            <td class="p-5 @(row.IsHighlighted ? "font-semibold" : "")">@row.Feature</td>
+                            <td class="p-5 text-center">
+                                @if (row.Klacks == "yes")
+                                {
+                                    <span class="material-symbols-outlined text-green-600 text-2xl">check_circle</span>
+                                }
+                                else if (row.Klacks == "partial")
+                                {
+                                    <span class="text-secondary font-medium">@row.KlacksLabel</span>
+                                }
+                                else
+                                {
+                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
+                                }
+                            </td>
+                            <td class="p-5 text-center">
+                                @if (row.Saas == "yes")
+                                {
+                                    <span class="material-symbols-outlined text-green-600 text-2xl">check_circle</span>
+                                }
+                                else if (row.Saas == "partial")
+                                {
+                                    <span class="text-on-surface-variant font-medium">@row.SaasLabel</span>
+                                }
+                                else
+                                {
+                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Detaillierte Unterschiede -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <h2 class="text-2xl font-bold mb-8">@GetText("details.title")</h2>
+        <div class="space-y-6">
+            @for (var i = 0; i < 6; i++)
+            {
+                <div class="bg-surface-container rounded-xl p-6">
+                    <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">@GetText($"details.items.{i}.icon")</span>
+                        @GetText($"details.items.{i}.title")
+                    </h3>
+                    <p class="text-on-surface-variant">@GetText($"details.items.{i}.text")</p>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Ehrliche Nachteile -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <div class="bg-surface-container-high rounded-2xl p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-amber-500">warning</span>
+                @GetText("honest.title")
+            </h2>
+            <p class="text-on-surface-variant mb-4">@GetText("honest.intro")</p>
+            <ul class="space-y-3">
+                @for (var i = 0; i < 5; i++)
+                {
+                    <li class="flex gap-3 items-start">
+                        <span class="material-symbols-outlined text-amber-500 mt-0.5 flex-shrink-0">info</span>
+                        <span class="text-on-surface-variant">@GetText($"honest.items.{i}")</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <div class="bg-[#141b2c] rounded-2xl py-16 px-8 text-center">
+            <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
+            <p class="text-white/70 max-w-xl mx-auto mb-8">@GetText("cta.text")</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/installation" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">download</span> @GetText("cta.install")
+                </a>
+                <a href="/partner" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">group</span> @GetText("cta.partner")
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+    private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, "vergleich", key);
+
+    private ComparisonRow[] GetComparisonRows() => new[]
+    {
+        new ComparisonRow { Feature = GetText("table.rows.hosting"), Klacks = "yes", Saas = "no", IsHighlighted = true },
+        new ComparisonRow { Feature = GetText("table.rows.license"), Klacks = "yes", Saas = "no" },
+        new ComparisonRow { Feature = GetText("table.rows.ki"), Klacks = "yes", Saas = "no", IsHighlighted = true },
+        new ComparisonRow { Feature = GetText("table.rows.lockin"), Klacks = "yes", Saas = "no" },
+        new ComparisonRow { Feature = GetText("table.rows.languages"), Klacks = "25", KlacksLabel = "25", Saas = "partial", SaasLabel = GetText("table.values.few") },
+        new ComparisonRow { Feature = GetText("table.rows.compliance"), Klacks = "30+", KlacksLabel = "30+", Saas = "partial", SaasLabel = GetText("table.values.limited") },
+        new ComparisonRow { Feature = GetText("table.rows.branches"), Klacks = "yes", Saas = "partial", SaasLabel = GetText("table.values.generic") },
+        new ComparisonRow { Feature = GetText("table.rows.price"), Klacks = "free", KlacksLabel = GetText("table.values.free"), Saas = "per-user", SaasLabel = GetText("table.values.perUser") },
+        new ComparisonRow { Feature = GetText("table.rows.biometrie"), Klacks = "no", Saas = "partial", SaasLabel = GetText("table.values.some") },
+        new ComparisonRow { Feature = GetText("table.rows.gps"), Klacks = "no", Saas = "partial", SaasLabel = GetText("table.values.some") },
+    };
+
+    private record ComparisonRow
+    {
+        public required string Feature { get; init; }
+        public required string Klacks { get; init; }
+        public string? KlacksLabel { get; init; }
+        public required string Saas { get; init; }
+        public string? SaasLabel { get; init; }
+        public bool IsHighlighted { get; init; }
+    }
+}

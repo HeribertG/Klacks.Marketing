@@ -1,0 +1,65 @@
+{
+  "pageTitle": "Klacks im Vergleich | Open Source vs. SaaS Personaleinsatzplanung",
+  "hero.title": "Klacks vs. herkömmliche Einsatzplanung",
+  "hero.subtitle": "Warum On-Premise, Open Source und KI-Wahlfreiheit den Unterschied machen — ehrlich verglichen.",
+
+  "table.feature": "Merkmal",
+  "table.klacks": "Klacks",
+  "table.saas": "Typische SaaS-Lösung",
+
+  "table.rows.hosting": "Daten auf eigener Infrastruktur (On-Premise)",
+  "table.rows.license": "Open Source (MIT-Lizenz)",
+  "table.rows.ki": "KI-Assistent mit freier Modellwahl",
+  "table.rows.lockin": "Kein Vendor-Lock-in",
+  "table.rows.languages": "Sprachen unterstützt",
+  "table.rows.compliance": "Länder vorkonfiguriert",
+  "table.rows.branches": "Branchenspezifische Vorlagen",
+  "table.rows.price": "Kosten",
+  "table.rows.biometrie": "Biometrie / Fingerabdruck",
+  "table.rows.gps": "Live-GPS-Tracking",
+
+  "table.values.free": "Kostenlos",
+  "table.values.perUser": "CHF 4-12 / MA / Monat",
+  "table.values.few": "2-8 Sprachen",
+  "table.values.limited": "1-5 Länder",
+  "table.values.generic": "Generisch",
+  "table.values.some": "Teilweise",
+
+  "details.title": "Die Unterschiede im Detail",
+  "details.items.0.icon": "cloud_off",
+  "details.items.0.title": "Hosting: On-Premise vs. Cloud",
+  "details.items.0.text": "Klacks läuft auf Ihrer eigenen Infrastruktur via Docker. Personaldaten verlassen nie Ihr Haus — revDSG-konform, kein Auslandtransfer. SaaS-Lösungen speichern Daten auf eigenen Servern, oft in den USA. Der Wechsel zu einem anderen Anbieter ist bei SaaS aufwändig (Datenexport, Migration).",
+
+  "details.items.1.icon": "code",
+  "details.items.1.title": "Lizenz: Open Source vs. proprietär",
+  "details.items.1.text": "Klacks ist unter der MIT-Lizenz kostenlos nutzbar — kein Abo, keine pro-Mitarbeiter-Gebühren. Sie können den Code einsehen, anpassen und selbst hosten. SaaS-Anbieter sind proprietär: Sie zahlen monatlich pro Mitarbeiter und haben keine Kontrolle über den Code.",
+
+  "details.items.2.icon": "psychology",
+  "details.items.2.title": "KI-Assistent: Modellwahl vs. Blackbox",
+  "details.items.2.text": "Klacksy unterstützt 7+ Provider (OpenAI, Anthropic, Google, Mistral, DeepSeek, lokale Modelle). Der Admin wählt — kein Lock-in. Die meisten SaaS-Anbieter haben keine KI-Planung oder eine proprietäre Blackbox die nicht austauschbar ist.",
+
+  "details.items.3.icon": "translate",
+  "details.items.3.title": "Sprachen: 25 vs. begrenzt",
+  "details.items.3.text": "Klacks unterstützt 25 Sprachen (4 Core + 21 Plugins). SaaS-Lösungen bieten typischerweise 2-8 Sprachen. Für internationale Teams ist Klacks damit deutlich flexibler.",
+
+  "details.items.4.icon": "public",
+  "details.items.4.title": "Compliance: 30+ Länder vorkonfiguriert",
+  "details.items.4.text": "Klacks kommt mit Feiertagskalendern und Arbeitszeitregeln für 30 Länder. SaaS-Anbieter decken meist nur DACH oder DACH+EN ab. Eigene Regelparameter (29+) ermöglichen branchenspezifische Anpassungen.",
+
+  "details.items.5.icon": "category",
+  "details.items.5.title": "Branchen: 6 Vorlagen + Custom",
+  "details.items.5.text": "Klacks liefert Vorlagen für Spitex, Spitäler, Security, Facility, Logistik und Hotellerie/Gastro. Mit Klacksy können Sie darüber hinaus jede beliebige Branche konfigurieren (29+ Parameter). SaaS-Lösungen sind meist generisch.",
+
+  "honest.title": "Was Klacks nicht kann (ehrlich)",
+  "honest.intro": "Wir übertreiben nicht. Hier sind die Grenzen von Klacks:",
+  "honest.items.0": "Keine Biometrie oder Fingerabdruck-Erkennung — Klacks plant nach Qualifikation und Verfügbarkeit, nicht nach biometrischer Anwesenheit.",
+  "honest.items.1": "Kein Live-GPS-Tracking — Klacks optimiert Touren antizipativ, trackt aber nicht live wo Mitarbeiter sind.",
+  "honest.items.2": "Keine Stempeluhr / Kiosk / NFC-Terminal — Klacks ist Planung, nicht Zeiterfassung.",
+  "honest.items.3": "Keine echte Lohnbuchhaltung — Klacks exportiert formatierte Daten (z.B. DATEV), rechnet aber nicht ab.",
+  "honest.items.4": "Compliance-Warnungen, kein Hard-Block — Klacks warnt bei Verstössen gegen Arbeitszeitregeln, blockiert aber nicht das Speichern (ausser Generalrats-Veto).",
+
+  "cta.title": "Selber überzeugen?",
+  "cta.text": "Klacks herunterladen, Docker starten, und den Unterschied live sehen. Keine Registrierung, keine Kosten.",
+  "cta.install": "Installation",
+  "cta.partner": "Für Berater"
+}

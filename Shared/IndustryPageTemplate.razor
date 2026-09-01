@@ -1,7 +1,7 @@
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@Content.PageTitle</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" />
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" OgImage="@OgImagePath" />
 
 <!-- HERO -->
 <header id="branchen" class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
@@ -293,6 +293,34 @@
             var suffix = $"{country}/{KlacksySlug}";
 
             return Culture == SupportedCultures.DefaultCode ? $"/{suffix}" : $"/{Culture}/{suffix}";
+        }
+    }
+
+    // Branch-specific OG image path derived from the industry slug.
+    private string? OgImagePath
+    {
+        get
+        {
+            var country = CountryIndustries.OwningCountry(PageKey);
+            if (country is null || PageKey.Length <= country.Length + 1)
+                return null;
+            var slug = PageKey[(country.Length + 1)..];
+            var imageName = slug switch
+            {
+                "spitex" => "spitex",
+                "spitaeler" => "spitaeler",
+                "security" => "security",
+                "hausdienste" => "hausdienste",
+                "logistik" => "logistik",
+                "hotellerie-gastronomie" => "hotellerie-gastronomie",
+                "homecare" => "homecare",
+                "healthcare" => "healthcare",
+                "facility" => "facility",
+                "logistics" => "logistics",
+                "hospitality" => "hospitality",
+                _ => null
+            };
+            return imageName is not null ? $"/images/og-image-{imageName}.png" : null;
         }
     }
 

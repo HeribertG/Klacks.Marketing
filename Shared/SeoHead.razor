@@ -19,6 +19,12 @@
         <meta property="og:title" content="@Title" />
     }
     <meta property="og:locale" content="@OgLocaleValue" />
+    @if (!string.IsNullOrEmpty(OgImage))
+    {
+        <meta property="og:image" content="@($"{BaseUrl}{OgImage}")" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+    }
 </HeadContent>
 
 @* JSON-LD is rendered in the component body, not in HeadContent: the prerendered
@@ -56,6 +62,10 @@
     // Raw source for the meta description; may contain inline HTML/entities, which
     // are stripped and the result truncated. Null falls back to no description.
     [Parameter] public string? DescriptionSource { get; set; }
+
+    // Optional branch-specific OG image path (e.g. "/images/og-image-spitex.png").
+    // If null, no og:image is emitted from SeoHead (falls back to _Layout default).
+    [Parameter] public string? OgImage { get; set; }
 
     // Display name for the sub-page level of the breadcrumb. Country sub-pages
     // whose slug is not an industry (e.g. the installation page) must provide it,
