@@ -233,13 +233,6 @@
     </div>
 </section>
 
-<!-- Demo Request Form (Contact / Lead Capture) -->
-<section id="kontakt" class="mx-8 my-16">
-    <div class="max-w-4xl mx-auto bg-surface-container-low rounded-2xl p-8 shadow-sm">
-        <DemoRequestForm PageKey="@PageKey" Culture="@Culture" Industry="@IndustryTitle" CountryCode="@CountryCode" />
-    </div>
-</section>
-
 @code {
     private const string KlacksySlug = "klacksy";
     private const string InstallationSlug = "installation";
@@ -304,20 +297,4 @@
     }
 
     private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
-
-    // Industry title for the demo request form (null on country root pages).
-    private string? IndustryTitle
-    {
-        get
-        {
-            var country = CountryIndustries.OwningCountry(PageKey);
-            if (country is null || PageKey.Length <= country.Length + 1)
-                return null;
-            var slug = PageKey[(country.Length + 1)..];
-            return ContentProvider.GetText(Culture, "index", $"industries.{slug}.title");
-        }
-    }
-
-    // Country code for the demo request form.
-    private string? CountryCode => CountryIndustries.OwningCountry(PageKey);
 }
