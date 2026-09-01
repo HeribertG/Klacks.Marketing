@@ -80,9 +80,11 @@ public static class JsonLdBuilder
 
     // FAQPage JSON-LD for country/industry landing pages. Gives LLMs structured
     // answers they can cite directly when users ask about Klacks in a specific sector.
-    public static string FAQPageScript(string culture, string industryName)
+    public static string FAQPageScript(string culture, string? industryName)
     {
-        var faqItems = BuildFAQItems(industryName);
+        var faqItems = industryName is not null
+            ? BuildFAQItems(industryName)
+            : BuildGenericFAQItems();
         return Script(new JsonLdFAQPage { MainEntity = faqItems });
     }
 
@@ -139,6 +141,54 @@ public static class JsonLdBuilder
                     Text = $"Yes. Beyond the six shipped templates, {productName} allows creating custom " +
                         "industry profiles with your own scheduling rules, qualification catalogs, and " +
                         "compliance parameters."
+                },
+            },
+        };
+    }
+
+    // Generic FAQs for country root pages (no specific industry).
+    private static JsonLdFAQQuestion[] BuildGenericFAQItems()
+    {
+        var productName = OrganizationFacts.SoftwareApplicationName;
+
+        return new[]
+        {
+            new JsonLdFAQQuestion
+            {
+                Name = $"What is {productName}?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} is open-source, on-premise workforce scheduling software " +
+                        "for shift- and field-based operations. It supports six core industries " +
+                        "(homecare, healthcare, security, cleaning, logistics, hospitality) and " +
+                        "allows custom industry profiles."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"Is {productName} free?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} is open source under the MIT licence. " +
+                        "You can host it on your own infrastructure at no cost — there are no licensing fees."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"What languages does {productName} support?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} supports 25 languages: 4 core languages " +
+                        "(German, English, French, Italian) plus 21 installable plugin language packs."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"Does {productName} run on my own servers?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"Yes. {productName} is designed for on-premise deployment via Docker. " +
+                        "All personnel data stays on your own infrastructure."
                 },
             },
         };

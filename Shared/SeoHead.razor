@@ -146,18 +146,25 @@
         }
     }
 
-    // FAQPage JSON-LD on industry sub-pages only (not country root, not legal pages).
-    // Gives LLMs structured Q&A they can cite directly.
+    // FAQPage JSON-LD on industry sub-pages (5 industry-specific questions) and
+    // country root pages (4 generic questions). Not on legal/installation pages.
     private string? FAQPageScript
     {
         get
         {
             var country = CountryIndustries.OwningCountry(PageKey);
-            if (country is null || PageKey.Length <= country.Length + 1)
+            if (country is null)
             {
                 return null;
             }
 
+            // Country root page (e.g. "land-de") → generic FAQs
+            if (PageKey.Length <= country.Length)
+            {
+                return JsonLdBuilder.FAQPageScript(Culture, null);
+            }
+
+            // Industry sub-page (e.g. "land-de-spitex") → industry-specific FAQs
             var slug = PageKey[(country.Length + 1)..];
             var industryTitle = BreadcrumbName
                 ?? ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
