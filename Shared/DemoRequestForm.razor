@@ -1,0 +1,189 @@
+<!-- Demo Request Form -->
+<div class="max-w-xl mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold text-on-surface mb-2">@_t("form.title")</h2>
+    <p class="text-on-surface-variant mb-8">@_t("form.subtitle")</p>
+
+    @if (_success)
+    {
+        <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+            <span class="material-symbols-outlined text-green-600 text-4xl mb-2">check_circle</span>
+            <p class="text-green-800 font-semibold">@_t("form.success")</p>
+            <p class="text-green-600 text-sm mt-1">@_t("form.successNote")</p>
+        </div>
+    }
+    else if (!_submitted)
+    {
+        <form @onsubmit="SubmitForm" class="space-y-5">
+            <div>
+                <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.name") <span class="text-red-500">*</span></label>
+                <input type="text" @bind="_model.Name" required maxlength="200"
+                       class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
+                       placeholder="@_t("form.namePlaceholder")" />
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.email") <span class="text-red-500">*</span></label>
+                <input type="email" @bind="_model.Email" required maxlength="200"
+                       class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
+                       placeholder="@_t("form.emailPlaceholder")" />
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.company")</label>
+                <input type="text" @bind="_model.Company" maxlength="200"
+                       class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
+                       placeholder="@_t("form.companyPlaceholder")" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.country")</label>
+                    <input type="text" @bind="_model.CountryCode" maxlength="10"
+                           class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
+                           placeholder="DE" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.industry")</label>
+                    <input type="text" @bind="_model.Industry" maxlength="50"
+                           class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
+                           placeholder="Homecare" />
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-on-surface mb-1">@_t("form.message")</label>
+                <textarea @bind="_model.Message" maxlength="2000" rows="3"
+                          class="w-full rounded-lg border border-outline px-4 py-2.5 bg-surface text-on-surface focus:ring-2 focus:ring-secondary focus:border-transparent outline-none resize-none"
+                          placeholder="@_t("form.messagePlaceholder")"></textarea>
+            </div>
+
+            @if (!string.IsNullOrEmpty(_error))
+            {
+                <div class="bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">@_error</div>
+            }
+
+            <button type="submit" disabled="_submitting"
+                    class="w-full bg-secondary text-white py-3 rounded-xl font-bold hover:opacity-90 transition-all disabled:opacity-50 flex items-center justify-center gap-2">
+                @if (_submitting)
+                {
+                    <span class="material-symbols-outlined animate-spin">progress_activity</span>
+                    @_t("form.submitting")
+                }
+                else
+                {
+                    @_t("form.submit")
+                    <span class="material-symbols-outlined">send</span>
+                }
+            </button>
+        </form>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public required string PageKey { get; set; }
+    [Parameter, EditorRequired] public required string Culture { get; set; }
+    [Parameter] public string? Industry { get; set; }
+    [Parameter] public string? CountryCode { get; set; }
+
+    [Inject] private IConfiguration Config { get; set; } = null!;
+    [Inject] private NavigationManager Nav { get; set; } = null!;
+    [Inject] private IJSRuntime JS { get; set; } = null!;
+
+    private readonly FormModel _model = new();
+    private bool _submitting;
+    private bool _submitted;
+    private bool _success;
+    private string? _error;
+
+    private string ApiBaseUrl => Config["Api:BaseUrl"] ?? "https://localhost:5001";
+
+    private string _t(string key) => key switch
+    {
+        "form.title" => Culture switch { "de" => "Demo anfordern", "fr" => "Demander une démo", "it" => "Richiedi una demo", _ => "Request a Demo" },
+        "form.subtitle" => Culture switch { "de" => "Wir melden uns innerhalb von 24 Stunden.", "fr" => "Réponse sous 24h.", "it" => "Risposta entro 24 ore.", _ => "We'll respond within 24 hours." },
+        "form.name" => Culture switch { "de" => "Name", "fr" => "Nom", "it" => "Nome", _ => "Name" },
+        "form.namePlaceholder" => Culture switch { "de" => "Ihr Name", "fr" => "Votre nom", "it" => "Il vostro nome", _ => "Your name" },
+        "form.email" => Culture switch { "de" => "E-Mail", "fr" => "E-mail", "it" => "E-mail", _ => "Email" },
+        "form.emailPlaceholder" => Culture switch { "de" => "ihre@email.de", _ => "you@email.com" },
+        "form.company" => Culture switch { "de" => "Firma", "fr" => "Entreprise", "it" => "Azienda", _ => "Company" },
+        "form.companyPlaceholder" => Culture switch { "de" => "Optional", _ => "Optional" },
+        "form.country" => Culture switch { "de" => "Land", "fr" => "Pays", "it" => "Paese", _ => "Country" },
+        "form.industry" => Culture switch { "de" => "Branche", "fr" => "Secteur", "it" => "Settore", _ => "Industry" },
+        "form.message" => Culture switch { "de" => "Nachricht", "fr" => "Message", "it" => "Messaggio", _ => "Message" },
+        "form.messagePlaceholder" => Culture switch { "de" => "Ihre Anforderungen...", _ => "Your needs..." },
+        "form.submit" => Culture switch { "de" => "Demo anfordern", "fr" => "Demander", "it" => "Richiedi", _ => "Request Demo" },
+        "form.submitting" => Culture switch { "de" => "Senden...", "fr" => "Envoi...", "it" => "Invio...", _ => "Sending..." },
+        "form.success" => Culture switch { "de" => "Vielen Dank!", "fr" => "Merci!", "it" => "Grazie!", _ => "Thank you!" },
+        "form.successNote" => Culture switch { "de" => "Wir melden uns innerhalb von 24 Stunden.", "fr" => "Réponse sous 24h.", "it" => "Risposta entro 24 ore.", _ => "We'll respond within 24 hours." },
+        "form.error" => Culture switch { "de" => "Fehler beim Senden.", "fr" => "Erreur d'envoi.", "it" => "Errore di invio.", _ => "Submission error." },
+        _ => key
+    };
+
+    protected override void OnInitialized()
+    {
+        _model.CountryCode = CountryCode;
+        _model.Industry = Industry;
+    }
+
+    private async Task SubmitForm()
+    {
+        _submitting = true;
+        _error = null;
+
+        try
+        {
+            var uri = new Uri(Nav.Uri);
+            string? utmCampaign = null;
+            if (!string.IsNullOrEmpty(uri.Query))
+            {
+                var pairs = uri.Query.TrimStart('?').Split('&');
+                foreach (var pair in pairs)
+                {
+                    var kv = pair.Split('=');
+                    if (kv.Length == 2 && kv[0] == "utm_campaign")
+                    {
+                        utmCampaign = Uri.UnescapeDataString(kv[1]);
+                        break;
+                    }
+                }
+            }
+
+            var url = $"{ApiBaseUrl}/api/DemoRequests";
+            var body = System.Text.Json.JsonSerializer.Serialize(new
+            {
+                Name = _model.Name,
+                Email = _model.Email,
+                Company = _model.Company,
+                CountryCode = _model.CountryCode,
+                Industry = _model.Industry,
+                Message = _model.Message,
+                UtmCampaign = utmCampaign,
+                SourceUrl = uri.ToString()
+            });
+
+            // Use JS fetch since HttpClient isn't registered in Marketing
+            var ok = await JS.InvokeAsync<bool>("eval",
+                $"(async()=>{{try{{const r=await fetch('{url}',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:{EscapeJs(body)}}});return r.ok}}catch{{return false}}}})()");
+
+            if (ok) { _success = true; _submitted = true; }
+            else { _error = _t("form.error"); }
+        }
+        catch (Exception ex)
+        {
+            _error = $"{_t("form.error")}: {ex.Message}";
+        }
+        finally { _submitting = false; }
+    }
+
+    private class FormModel
+    {
+        public string Name { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string? Company { get; set; }
+        public string? CountryCode { get; set; }
+        public string? Industry { get; set; }
+        public string? Message { get; set; }
+    }
+
+    private static string EscapeJs(string s) => s.Replace("\\", "\\\\").Replace("'", "\\'").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "\\n");
+}
