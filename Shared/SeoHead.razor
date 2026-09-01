@@ -110,6 +110,11 @@
                 scripts.Add(breadcrumb);
             }
 
+            if (FAQPageScript is { } faq)
+            {
+                scripts.Add(faq);
+            }
+
             return scripts;
         }
     }
@@ -138,6 +143,26 @@
                 country,
                 pageName,
                 EffectiveRoutePath);
+        }
+    }
+
+    // FAQPage JSON-LD on industry sub-pages only (not country root, not legal pages).
+    // Gives LLMs structured Q&A they can cite directly.
+    private string? FAQPageScript
+    {
+        get
+        {
+            var country = CountryIndustries.OwningCountry(PageKey);
+            if (country is null || PageKey.Length <= country.Length + 1)
+            {
+                return null;
+            }
+
+            var slug = PageKey[(country.Length + 1)..];
+            var industryTitle = BreadcrumbName
+                ?? ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
+
+            return JsonLdBuilder.FAQPageScript(Culture, industryTitle);
         }
     }
 }

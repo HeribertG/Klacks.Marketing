@@ -80,6 +80,26 @@ public sealed record JsonLdListItem
     [JsonPropertyName("item")] public required string Item { get; init; }
 }
 
+public sealed record JsonLdFAQPage
+{
+    [JsonPropertyName("@context")] public string Context => JsonLd.Context;
+    [JsonPropertyName("@type")] public string Type => "FAQPage";
+    [JsonPropertyName("mainEntity")] public required IReadOnlyList<JsonLdFAQQuestion> MainEntity { get; init; }
+}
+
+public sealed record JsonLdFAQQuestion
+{
+    [JsonPropertyName("@type")] public string Type => "Question";
+    [JsonPropertyName("name")] public required string Name { get; init; }
+    [JsonPropertyName("acceptedAnswer")] public required JsonLdAnswer AcceptedAnswer { get; init; }
+}
+
+public sealed record JsonLdAnswer
+{
+    [JsonPropertyName("@type")] public string Type => "Answer";
+    [JsonPropertyName("text")] public required string Text { get; init; }
+}
+
 public static class JsonLd
 {
     public const string Context = "https://schema.org";

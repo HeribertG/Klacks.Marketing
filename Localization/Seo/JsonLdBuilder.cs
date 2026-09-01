@@ -78,6 +78,72 @@ public static class JsonLdBuilder
             },
         });
 
+    // FAQPage JSON-LD for country/industry landing pages. Gives LLMs structured
+    // answers they can cite directly when users ask about Klacks in a specific sector.
+    public static string FAQPageScript(string culture, string industryName)
+    {
+        var faqItems = BuildFAQItems(industryName);
+        return Script(new JsonLdFAQPage { MainEntity = faqItems });
+    }
+
+    private static JsonLdFAQQuestion[] BuildFAQItems(string industryName)
+    {
+        var productName = OrganizationFacts.SoftwareApplicationName;
+
+        return new[]
+        {
+            new JsonLdFAQQuestion
+            {
+                Name = $"How does {productName} plan shifts in {industryName}?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} uses industry-specific scheduling presets (up to 29 rule parameters: " +
+                        "working hours, rest periods, overtime tiers, night/holiday rates). " +
+                        $"The AI assistant plans shifts automatically, optimises routes, and enforces " +
+                        "labour-law compliance — 45h/50h weekly limits, 11-hour rest periods, night-work rules."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"Is {productName} free?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} is open source under the MIT licence. " +
+                        "You can host it on your own infrastructure at no cost — there are no licensing fees."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"What languages does {productName} support?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"{productName} supports 25 languages: 4 core languages " +
+                        "(German, English, French, Italian) plus 21 installable plugin language packs " +
+                        "including Arabic, Spanish, Japanese, Korean, Chinese, and more."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"Does {productName} run on my own servers?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"Yes. {productName} is designed for on-premise deployment via Docker. " +
+                        "All personnel data stays on your own infrastructure — no cloud transfer required."
+                },
+            },
+            new JsonLdFAQQuestion
+            {
+                Name = $"Can I create custom industry profiles in {productName}?",
+                AcceptedAnswer = new JsonLdAnswer
+                {
+                    Text = $"Yes. Beyond the six shipped templates, {productName} allows creating custom " +
+                        "industry profiles with your own scheduling rules, qualification catalogs, and " +
+                        "compliance parameters."
+                },
+            },
+        };
+    }
+
     private static JsonLdOrganization BuildOrganization(string baseUrl)
         => new()
         {

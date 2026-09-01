@@ -20,6 +20,49 @@ public static class LlmsTxtGenerator
     private const string Tagline =
         "Open-source, on-premise workforce scheduling for shift- and field-based operations — home care, hospitals, security, cleaning, logistics and hospitality. Automatic shift scheduling, route optimisation and a voice- and chat-controlled AI assistant (Klacksy) with your own choice of language model.";
 
+    // Six core industries with use-case descriptions for LLM recommendation context.
+    // Each entry includes the industry name, a short use-case description, and key
+    // compliance/qualification features that differentiate Klacks in that sector.
+    private static readonly (string Name, string UseCase, string ComplianceHighlight)[] Industries =
+    {
+        (
+            "Homecare / Spitex",
+            "Ambulatory care visit planning with tour optimisation and qualification tracking. " +
+            "Presets for Pflegefachkraft and Betreuungskraft (§43b SGB XI).",
+            "48h/week cap, 11h rest period automatic, night surcharges documented, travel-time between visits optimised."
+        ),
+        (
+            "Healthcare / Hospitals",
+            "Hospital shift planning with department-based qualification, rolling rest periods, " +
+            "and multi-department staff sharing without double-booking.",
+            "45h/50h limits per Arbeitszeitgesetz, supervisor override with documented approval, night-work rules."
+        ),
+        (
+            "Security",
+            "Guard scheduling with post-based assignment, qualification expiry tracking " +
+            "(§34a GewO Unterrichtung/Sachkunde), and shift handover management.",
+            "10h max daily shift, competence-expiry alerts, night shift 23:00–06:00 presets."
+        ),
+        (
+            "Facility / Cleaning",
+            "Cleaning crew scheduling with object-based assignment, mobile team tour planning, " +
+            "and qualification tracking for Gebäudereiniger and glass/facade specialists.",
+            "Mobile route optimisation (ant-colony algorithm), shift windows by object opening hours."
+        ),
+        (
+            "Logistics",
+            "Driver scheduling with licence tracking (C/CE, ADR, Code 95), vehicle assignment, " +
+            "and compliance with driving-time regulations.",
+            "Driving-time rules, rest-period enforcement, ADR/licence expiry tracking."
+        ),
+        (
+            "Hospitality / Hotels & Gastro",
+            "Hotel and restaurant shift planning with seasonal workforce, split-shift support, " +
+            "and food-hygiene qualification tracking (§43 IfSG Belehrung).",
+            "Arbeitszeitgesetz Gastro exceptions, split-shift handling, weekend/holiday premium rates."
+        ),
+    };
+
     // English-language country landing pages (page key -> English country name).
     // Only countries with their own English content are listed here; the site
     // serves ~30 country sites in total (CountryIndustries.AllCountries).
@@ -55,6 +98,11 @@ public static class LlmsTxtGenerator
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "On-premise, open-source workforce scheduling — overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "Voice- and chat-controlled scheduling assistant with free choice of language model.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Download country packages for on-premise or Docker Compose installation.");
+        sb.AppendLine();
+
+        sb.AppendLine("## Industries");
+        sb.AppendLine();
+        sb.AppendLine("Six industry templates with compliance enforcement: homecare/spitex, healthcare/hospitals, security, facility/cleaning, logistics, hospitality/hotellerie-gastro. Custom industry profiles supported.");
         sb.AppendLine();
 
         sb.AppendLine("## Countries");
@@ -115,7 +163,22 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("## Industries");
         sb.AppendLine();
-        sb.AppendLine("Klacks is built for shift- and field-based operations: home care, hospitals, security, cleaning services, logistics and hospitality — anywhere staff are scheduled in shifts, in the field and by qualification.");
+        foreach (var (name, useCase, compliance) in Industries)
+        {
+            sb.AppendLine($"### {name}");
+            sb.AppendLine();
+            sb.AppendLine(useCase);
+            sb.AppendLine();
+            sb.AppendLine($"Compliance: {compliance}");
+            sb.AppendLine();
+        }
+
+        sb.AppendLine("### Custom Industries");
+        sb.AppendLine();
+        sb.AppendLine("Beyond the six shipped templates, Klacks allows creating custom industry profiles. " +
+            "Via the Planning Profile Setup flow, administrators define their own scheduling rules " +
+            "(29+ parameters: working hours, rest periods, overtime tiers, night/holiday rates, contract limits). " +
+            "The system sets ACTIVE_INDUSTRIES=custom and copies base templates as new rows.");
         sb.AppendLine();
 
         sb.AppendLine("## Countries and languages");
