@@ -1,0 +1,167 @@
+@page "/partner"
+@page "/{culture}/partner"
+@inject IConfiguration Configuration
+@inject NavigationManager Navigation
+
+<SeoHead PageKey="partner" Culture="@Culture" />
+
+<div class="min-h-screen bg-surface text-on-surface">
+    <!-- Hero -->
+    <section class="max-w-5xl mx-auto pt-24 pb-16 px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-6">
+            Klacks als Planungs-Engine für Ihre Kunden
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+            Open-Source-Einsatzplanung mit KI-Assistent. On-Premise, 6 Branchenvorlagen,
+            25 Sprachen, 30 Länder — und die Fähigkeit, mit Klacksy jede beliebige
+            Branche individuell zu konfigurieren.
+        </p>
+    </section>
+
+    <!-- Custom Industries — Haupt-USP -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <div class="bg-surface-container rounded-2xl p-8 md:p-12">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-secondary text-3xl">tune</span>
+                <h2 class="text-2xl font-bold">Custom Industries — Klacksy konfiguriert Ihre eigene Branche</h2>
+            </div>
+            <p class="text-on-surface-variant mb-8 leading-relaxed">
+                Über die sechs vordefinierten Branchenprofile hinaus (Homecare, Healthcare, Security,
+                Facility, Logistik, Hospitality) können Sie mit Klacksy Ihre ganz eigene Planungsumgebung
+                erstellen. Klacksy führt Sie interaktiv durch den <strong>"Planning Profile Setup"</strong>-Flow:
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-secondary mt-0.5">settings</span>
+                    <div>
+                        <h3 class="font-semibold mb-1">29+ Regelparameter definieren</h3>
+                        <p class="text-sm text-on-surface-variant">Arbeitszeiten, Ruhezeiten, Überstunden, Nachtarbeit, Feiertage, Vertragslimits, Qualifikationsanforderungen</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-secondary mt-0.5">badge</span>
+                    <div>
+                        <h3 class="font-semibold mb-1">Eigene Qualifikations-Kataloge</h3>
+                        <p class="text-sm text-on-surface-variant">z.B. §43b Betreuungskraft, Sachkundeprüfung §34a, C/CE-Fahrerlaubnis, §43 IfSG, Glassanierungsmeister</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-secondary mt-0.5">gavel</span>
+                    <div>
+                        <h3 class="font-semibold mb-1">Branchenspezifische Compliance</h3>
+                        <p class="text-sm text-on-surface-variant">45h/50h-Wochengrenzen, 11h-Ruhezeit, Nachtzuschläge ab 25. Nacht, Feiertagskalender kantonal/kommunal</p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-secondary mt-0.5">bolt</span>
+                    <div>
+                        <h3 class="font-semibold mb-1">Sofort einsatzbereit</h3>
+                        <p class="text-sm text-on-surface-variant">Das System setzt ACTIVE_INDUSTRIES=custom und kopiert eine Basis-Vorlage — ohne Programmieraufwand, rein über Klacksy-Dialog</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface-container-high rounded-xl p-6 text-center">
+                <p class="text-on-surface font-medium">
+                    Das Ergebnis: Eine maßgeschneiderte Planungs-Engine für Ihre spezifische Branche —
+                    <strong>ohne Programmieraufwand, rein über Klacksy-Dialog.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vorteile für Berater -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <h2 class="text-2xl font-bold mb-8">Warum für Berater und Systemhäuser?</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-surface-container rounded-xl p-6">
+                <span class="material-symbols-outlined text-secondary text-2xl mb-3">security</span>
+                <h3 class="font-bold mb-2">Datenhoheit</h3>
+                <p class="text-sm text-on-surface-variant">Läuft beim Kunden, keine Cloud-Abhängigkeit. Alle Personaldaten bleiben in eigener Infrastruktur — revDSG-konform.</p>
+            </div>
+            <div class="bg-surface-container rounded-xl p-6">
+                <span class="material-symbols-outlined text-secondary text-2xl mb-3">psychology</span>
+                <h3 class="font-bold mb-2">KI-Wahlfreiheit</h3>
+                <p class="text-sm text-on-surface-variant">7 Provider aktiv, Admin wählt — kein Vendor-Lock-in. Klacksy plant per Spracheingabe, optimiert Touren, erzwingt Compliance.</p>
+            </div>
+            <div class="bg-surface-container rounded-xl p-6">
+                <span class="material-symbols-outlined text-secondary text-2xl mb-3">scale</span>
+                <h3 class="font-bold mb-2">White-Label-fähig</h3>
+                <p class="text-sm text-on-surface-variant">MIT-Lizenz, On-Premise. Sie hosten beim Kunden, betreuen die Instanz, skalieren über mehrere Mandanten.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <h2 class="text-2xl font-bold mb-8">Integration</h2>
+        <div class="bg-surface-container rounded-2xl p-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">api</span> REST API
+                    </h3>
+                    <ul class="text-sm text-on-surface-variant space-y-1">
+                        <li>• JWT / PAT / OAuth Authentication</li>
+                        <li>• CRUD für Mitarbeiter, Gruppen, Schichten, Klienten</li>
+                        <li>• SchedulingRules konfigurierbar</li>
+                        <li>• Qualification-Catalog verwaltbar</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">hub</span> MCP-Endpoint
+                    </h3>
+                    <ul class="text-sm text-on-surface-variant space-y-1">
+                        <li>• POST /mcp (Streamable HTTP, stateless)</li>
+                        <li>• RFC 9728, OAuth 2.1</li>
+                        <li>• Skill-basierter Katalog (Lesen/Schreiben)</li>
+                        <li>• Confirmation-Flow für Write-Actions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">deploy</span> Deployment
+                    </h3>
+                    <ul class="text-sm text-on-surface-variant space-y-1">
+                        <li>• Docker in wenigen Minuten</li>
+                        <li>• Eigene Infrastruktur, keine Cloud</li>
+                        <li>• 30 Länder-Pakete mit Feiertagskalendern</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">translate</span> Sprachen
+                    </h3>
+                    <ul class="text-sm text-on-surface-variant space-y-1">
+                        <li>• 4 Core-Sprachen (DE/EN/FR/IT)</li>
+                        <li>• 21 Plugin-Language-Packs</li>
+                        <li>• 25 Sprachen insgesamt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-4xl mx-auto py-16 px-8">
+        <div class="bg-[#141b2c] rounded-2xl py-16 px-8 text-center">
+            <h2 class="text-2xl font-black text-white mb-4">Bereit?</h2>
+            <p class="text-white/70 max-w-xl mx-auto mb-8">
+                Klacks herunterladen, Docker starten, und mit Klacksy Ihr eigenes
+                Branchenprofil konfigurieren. Keine Registrierung nötig.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/installation" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">download</span> Installation
+                </a>
+                <a href="https://github.com/HeribertG/Klacks.Api" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">code</span> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+}
