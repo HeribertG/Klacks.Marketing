@@ -18,7 +18,7 @@
                 @((MarkupString)Content.Hero.Subtitle)
             </p>
             <div class="hero-enter hero-enter-4 flex flex-wrap gap-4">
-                <button type="button" @onclick="OpenDemoModal" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">@Sh("nav.tryNow") <span class="material-symbols-outlined icon-directional">arrow_forward</span></button>
+                <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">@Sh("nav.tryNow") <span class="material-symbols-outlined icon-directional">arrow_forward</span></button>
                 <a href="@HomeHref" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2"><span class="material-symbols-outlined icon-directional">arrow_back</span> @Sh("nav.backToIndustries")</a>
             </div>
         </div>
