@@ -27,5 +27,5 @@ public static class OrganizationFacts
 
     public const string Telephone = "+41 79 102 14 02";
 
-    public const string Email = "hgasparoli@hotmail.com";
+    public const string Email = "marketing@klacks-software.ch";
 }
