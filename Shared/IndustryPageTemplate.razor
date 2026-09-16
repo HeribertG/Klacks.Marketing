@@ -6,12 +6,12 @@
 <!-- HERO -->
 <header id="branchen" class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-16 items-center">
-        <div class="lg:col-span-7">
+        <div class="lg:col-span-7 min-w-0">
             <div class="hero-enter hero-enter-1 inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-6">
                 <span class="material-symbols-outlined text-secondary text-base">@Content.Hero.BadgeIcon</span>
                 <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Hero.Badge)</span>
             </div>
-            <h1 class="hero-enter hero-enter-2 text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6">
+            <h1 class="hero-enter hero-enter-2 text-[2.25rem] md:text-[2.75rem] lg:text-[3.5rem] leading-[1.1] font-black tracking-tighter text-primary mb-6 break-words">
                 @((MarkupString)Content.Hero.TitleHtml)
             </h1>
             <p class="hero-enter hero-enter-3 text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
@@ -22,7 +22,7 @@
                 <a href="@HomeHref" class="px-8 py-4 rounded-xl font-bold text-primary hover:bg-surface-container-low transition-all no-underline flex items-center gap-2"><span class="material-symbols-outlined icon-directional">arrow_back</span> @Sh("nav.backToIndustries")</a>
             </div>
         </div>
-        <div class="hero-enter hero-enter-3 lg:col-span-5 relative hidden lg:block">
+        <div class="hero-enter hero-enter-3 lg:col-span-5 relative">
             @if (Content.HeroMockup is not null && Content.HeroMockup.Images.Count > 0)
             {
                 <HeroProductMockup Mockup="@Content.HeroMockup" />
