@@ -99,11 +99,39 @@ installed) headless against the locally running `dotnet run` instance, measuring
 across `/land-ch`, `/land-de`, `/land-se`, and an industry sub-page. Script was deleted after use,
 not committed — worth promoting to a real committed regression check if mobile overflow recurs.
 
+## Root cause 5: mobile hamburger menu rendered as flowing text, not a list
+
+After deploying root causes 1-4, the owner reported on a real device: "sub-menus appear already
+expanded, but unformatted." `MainLayout.razor`'s `.mobile-menu-panel` carries Tailwind's
+`flex flex-col gap-5`, but the component's own CSS set `display: block` on the open-state rule
+(both the plain rule and the `prefers-reduced-motion: no-preference` animated-collapse rule).
+Equal specificity (0-1-0) against Tailwind's `.flex{display:flex}`, and the component rule sits
+later in the compiled `site.css`, so `display: block` always won — the panel's `<a>` children
+lost their flex-blockification and ran together as inline text instead of a spaced vertical list.
+
+**Pre-existing, not a regression from root causes 1-4**: `flex flex-col gap-5` was added
+2026-07-01 in `33ef0cf`, the colliding `display: block` rule the same day in `c54b386` — three
+months before this session. `MainLayout.razor` was untouched by any of the mobile-overflow
+commits, confirmed via `git log`.
+
+Fixed by changing both `display: block` occurrences to `display: flex` (`tailwind-input.css`).
+Verified with Playwright: computed `display` is `flex` (`flex-direction: column`, `gap: 20px`
+matching `gap-5`), consecutive links now have `getBoundingClientRect().top` values ~40px apart
+instead of collapsing onto one line. Desktop (≥768px, panel always `display:none`) and the
+closed mobile state (`opacity: 0`) were regression-checked and remain correct.
+
+Two false leads investigated and ruled out before finding this: (a) the desktop "Industries"
+dropdown (`.dropdown-menu`) renders correctly on production, computed styles match Tailwind's
+config-overridden `border-radius: 8px` (not the default `0.75rem` — `tailwind.config.js` sets
+`borderRadius.xl` to `0.5rem` for this project); (b) production's compiled `site.css` was
+byte-identical to a fresh local `npm run build:css`, so this was never a deploy/cache issue.
+
 ## Commits
 
 - `64bf5b0` — hero headline responsive scale, hero image unhidden, 3 heading consistency fixes.
 - `789d9d3` — global `overflow-wrap: break-word` guard.
 - `104d1ec` — mobile-first spacing pass across 10 files (root cause 4).
+- `f0f8a03` — flex layout fix for the mobile hamburger menu (root cause 5).
 
 ## Deployment
 
