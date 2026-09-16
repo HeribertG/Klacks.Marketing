@@ -97,15 +97,21 @@
         @if (ShowIndustryMenu)
         {
             <div class="flex flex-col gap-1">
-                <span class="text-slate-600 text-sm font-medium tracking-tight">@Sh("nav.industries")</span>
-                <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
-                    @foreach (var industry in CurrentCountryIndustries)
-                    {
-                        <a href="@IndustryHref(industry.Slug)" class="py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
-                            @Ix(industry.LabelKey)
-                        </a>
-                    }
-                </div>
+                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
+                    @MobileIndustryHeaderText
+                    <span class="material-symbols-outlined text-base">@(_mobileIndustryOpen ? "expand_less" : "expand_more")</span>
+                </button>
+                @if (_mobileIndustryOpen)
+                {
+                    <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
+                        @foreach (var industry in CurrentCountryIndustries)
+                        {
+                            <a href="@IndustryHref(industry.Slug)" class="py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                                @Ix(industry.LabelKey)
+                            </a>
+                        }
+                    </div>
+                }
             </div>
         }
         else
@@ -115,23 +121,44 @@
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
-        <div class="flex flex-wrap gap-3 pt-2 border-t border-surface-container-high">
-            @foreach (var culture in SupportedCultures.All)
+        <div class="flex flex-col gap-1 pt-2 border-t border-surface-container-high">
+            <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight uppercase" aria-expanded="@(_mobileLanguageOpen ? "true" : "false")" aria-label="@Sh("nav.languages")" @onclick="ToggleMobileLanguageMenu">
+                @CurrentCultureRecord.Code
+                <span class="material-symbols-outlined text-base">@(_mobileLanguageOpen ? "expand_less" : "expand_more")</span>
+            </button>
+            @if (_mobileLanguageOpen)
             {
-                <a href="@ResolveLanguageHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                    @culture.Code
-                </a>
+                <div class="flex flex-wrap gap-3">
+                    @foreach (var culture in SupportedCultures.All)
+                    {
+                        <a href="@ResolveLanguageHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                            @culture.Code
+                        </a>
+                    }
+                </div>
             }
         </div>
         @if (ShowCountryDropdown)
         {
-            <div class="flex flex-wrap gap-3">
-                @foreach (var country in CurrentLanguageCountries)
+            <div class="flex flex-col gap-1">
+                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileCountryOpen ? "true" : "false")" aria-label="@Sh("nav.countries")" @onclick="ToggleMobileCountryMenu">
+                    <span class="flex items-center gap-2">
+                        <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-4 h-auto rounded-[2px]" />
+                        @CurrentCountryDisplayName
+                    </span>
+                    <span class="material-symbols-outlined text-base">@(_mobileCountryOpen ? "expand_less" : "expand_more")</span>
+                </button>
+                @if (_mobileCountryOpen)
                 {
-                    <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                        <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
-                        @CountryNames.DisplayName(country)
-                    </a>
+                    <div class="flex flex-wrap gap-3">
+                        @foreach (var country in CurrentLanguageCountries)
+                        {
+                            <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                                <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
+                                @CountryNames.DisplayName(country)
+                            </a>
+                        }
+                    </div>
                 }
             </div>
         }
@@ -188,6 +215,9 @@
     };
 
     private bool _mobileMenuOpen;
+    private bool _mobileIndustryOpen;
+    private bool _mobileLanguageOpen;
+    private bool _mobileCountryOpen;
     private bool _languageMenuOpen;
     private bool _countryMenuOpen;
     private bool _industryMenuOpen;
@@ -224,6 +254,9 @@
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
         _mobileMenuOpen = false;
+        _mobileIndustryOpen = false;
+        _mobileLanguageOpen = false;
+        _mobileCountryOpen = false;
         _languageMenuOpen = false;
         _countryMenuOpen = false;
         _industryMenuOpen = false;
@@ -235,9 +268,30 @@
         });
     }
 
-    private void ToggleMobileMenu() => _mobileMenuOpen = !_mobileMenuOpen;
+    private void ToggleMobileMenu()
+    {
+        _mobileMenuOpen = !_mobileMenuOpen;
+        if (!_mobileMenuOpen)
+        {
+            _mobileIndustryOpen = false;
+            _mobileLanguageOpen = false;
+            _mobileCountryOpen = false;
+        }
+    }
 
-    private void CloseMobileMenu() => _mobileMenuOpen = false;
+    private void CloseMobileMenu()
+    {
+        _mobileMenuOpen = false;
+        _mobileIndustryOpen = false;
+        _mobileLanguageOpen = false;
+        _mobileCountryOpen = false;
+    }
+
+    private void ToggleMobileIndustryMenu() => _mobileIndustryOpen = !_mobileIndustryOpen;
+
+    private void ToggleMobileLanguageMenu() => _mobileLanguageOpen = !_mobileLanguageOpen;
+
+    private void ToggleMobileCountryMenu() => _mobileCountryOpen = !_mobileCountryOpen;
 
     private void ToggleLanguageMenu()
     {
@@ -429,6 +483,24 @@
         }
     }
 
+    // Shows the active industry directly on the mobile accordion header (instead
+    // of the generic "Industries" label) when on an industry sub-page; falls back
+    // to the generic label on the country's general page, where there is none.
+    private string MobileIndustryHeaderText
+    {
+        get
+        {
+            var slug = CurrentIndustrySlug;
+            if (slug.Length == 0)
+            {
+                return Sh("nav.industries");
+            }
+
+            var match = CurrentCountryIndustries.FirstOrDefault(industry => industry.Slug == slug);
+            return match is null ? Sh("nav.industries") : Ix(match.LabelKey);
+        }
+    }
+
     // Off a country page, language switching only translates the current page
     // (LanguageSwitchHref). On a country page, the language stays on the
     // currently active country when that country also speaks the target
@@ -479,6 +551,23 @@
 
             var countries = CurrentLanguageCountries;
             return countries.Length > 0 ? CountryCode(countries[0]) : string.Empty;
+        }
+    }
+
+    // Same "current country" resolution as CurrentCountryCode, but the localized
+    // display name for the mobile accordion header (shows the selected country
+    // directly instead of a generic "Countries" label).
+    private string CurrentCountryDisplayName
+    {
+        get
+        {
+            if (IsOnCountryPage)
+            {
+                return CountryNames.DisplayName(ResolveCurrentPage().PageKey);
+            }
+
+            var countries = CurrentLanguageCountries;
+            return countries.Length > 0 ? CountryNames.DisplayName(countries[0]) : string.Empty;
         }
     }
 
