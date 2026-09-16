@@ -1,6 +1,6 @@
 @* 3-Schritte-Sektion mit Nummer-Badges im bestehenden reveal-stagger-Muster —
    nutzt das vorhandene Scroll-Reveal, kein eigenes JS. *@
-<section class="reveal py-24 px-8 max-w-7xl mx-auto no-line-rule">
+<section class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
     <div class="text-center mb-16">
         @if (!string.IsNullOrEmpty(Content.Eyebrow))
         {
@@ -8,7 +8,7 @@
         }
         <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@((MarkupString)Content.Title)</h2>
     </div>
-    <div class="reveal-stagger grid md:grid-cols-3 gap-12">
+    <div class="reveal-stagger grid md:grid-cols-3 gap-8 md:gap-12">
         @for (var i = 0; i < Content.Items.Count; i++)
         {
             var step = Content.Items[i];

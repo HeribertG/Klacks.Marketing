@@ -4,8 +4,8 @@
 <SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" OgImage="@OgImagePath" />
 
 <!-- HERO -->
-<header id="branchen" class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
-    <div class="grid lg:grid-cols-12 gap-16 items-center">
+<header id="branchen" class="pt-20 md:pt-32 pb-12 md:pb-20 px-8 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div class="lg:col-span-7 min-w-0">
             <div class="hero-enter hero-enter-1 inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full mb-6">
                 <span class="material-symbols-outlined text-secondary text-base">@Content.Hero.BadgeIcon</span>
@@ -42,13 +42,13 @@
 }
 
 <!-- HERAUSFORDERUNGEN -->
-<section class="reveal bg-surface-container-low py-24 no-line-rule">
+<section class="reveal bg-surface-container-low py-14 md:py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8">
         <div class="text-center mb-16">
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)(Content.Challenges.Eyebrow ?? string.Empty))</span>
             <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@((MarkupString)Content.Challenges.Title)</h2>
         </div>
-        <div class="reveal-stagger grid md:grid-cols-3 gap-12">
+        <div class="reveal-stagger grid md:grid-cols-3 gap-8 md:gap-12">
             @foreach (var item in Content.Challenges.Items)
             {
                 <div class="group flex flex-col items-start">
@@ -70,8 +70,8 @@
 @if (Content.RulesCalendar is not null)
 {
     <!-- REGELN & KALENDER -->
-    <section id="regeln" class="reveal bg-surface-container-low py-32 no-line-rule">
-        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+    <section id="regeln" class="reveal bg-surface-container-low py-16 md:py-32 no-line-rule">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div>
                 @if (!string.IsNullOrEmpty(Content.RulesCalendar.Eyebrow))
                 {
@@ -102,7 +102,7 @@
 @if (Content.OpenSource is not null)
 {
     <!-- OPEN SOURCE & ON-PREMISE -->
-    <section class="reveal py-24 px-8 max-w-4xl mx-auto text-center no-line-rule">
+    <section class="reveal py-14 md:py-24 px-8 max-w-4xl mx-auto text-center no-line-rule">
         @if (!string.IsNullOrEmpty(Content.OpenSource.Eyebrow))
         {
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.OpenSource.Eyebrow)</span>
@@ -122,7 +122,7 @@
 }
 
 <!-- LÖSUNG -->
-<section id="kontrolle" class="reveal py-32 px-8 max-w-7xl mx-auto">
+<section id="kontrolle" class="reveal py-16 md:py-32 px-8 max-w-7xl mx-auto">
     <div class="text-center mb-20">
         <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mb-4">@((MarkupString)Content.Solutions.Title)</h2>
         <p class="text-on-surface-variant max-w-2xl mx-auto">@((MarkupString)(Content.Solutions.Subtitle ?? string.Empty))</p>
@@ -153,8 +153,8 @@
 @if (Content.Klacksy is not null)
 {
     <!-- KLACKSY -->
-    <section id="klacksy" class="reveal bg-surface-container-low py-24 no-line-rule">
-        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-16 items-center">
+    <section id="klacksy" class="reveal bg-surface-container-low py-14 md:py-24 no-line-rule">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-12 gap-8 md:gap-16 items-center">
             <div class="lg:col-span-6">
                 @if (!string.IsNullOrEmpty(Content.Klacksy.Eyebrow))
                 {
@@ -177,7 +177,7 @@
 @if (Content.Example is not null)
 {
     <!-- BEISPIEL -->
-    <section class="reveal bg-surface-container-low py-24 no-line-rule">
+    <section class="reveal bg-surface-container-low py-14 md:py-24 no-line-rule">
         <div class="max-w-3xl mx-auto px-8 text-center">
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Example.Eyebrow)</span>
             <h2 class="text-[1.75rem] md:text-[2rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.Example.Title)</h2>
@@ -189,7 +189,7 @@
 @if (Content.Gallery is not null && Content.Gallery.Items.Count > 0)
 {
     <!-- GALLERY -->
-    <section class="reveal py-24 px-8 max-w-7xl mx-auto no-line-rule">
+    <section class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
         <div class="text-center mb-16">
             @if (!string.IsNullOrEmpty(Content.Gallery.Eyebrow))
             {
@@ -219,7 +219,7 @@
 
 <!-- CTA -->
 <section id="download" class="mx-8 my-24">
-    <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-24 px-8 text-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto bg-[#141b2c] rounded-[2rem] py-14 md:py-24 px-8 text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div class="blob-animate absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary rounded-full blur-[120px]"></div>
             <div class="blob-animate-2 absolute -bottom-32 -left-16 w-[480px] h-[480px] bg-secondary-fixed-dim rounded-full blur-[100px]"></div>

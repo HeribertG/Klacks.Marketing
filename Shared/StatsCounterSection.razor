@@ -2,7 +2,7 @@
    formatierte Endwert im Markup — ohne JS oder bei prefers-reduced-motion bleibt
    er einfach stehen; das JS zählt beim Viewport-Eintritt hoch und überschreibt
    den Text. *@
-<section class="reveal bg-surface-container-low py-24 no-line-rule">
+<section class="reveal bg-surface-container-low py-14 md:py-24 no-line-rule">
     <div class="max-w-7xl mx-auto px-8">
         <div class="text-center mb-16">
             @if (!string.IsNullOrEmpty(Content.Eyebrow))
@@ -11,7 +11,7 @@
             }
             <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@((MarkupString)Content.Title)</h2>
         </div>
-        <div class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+        <div class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 text-center">
             @foreach (var item in Content.Items)
             {
                 <div>
