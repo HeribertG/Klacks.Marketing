@@ -126,12 +126,46 @@ config-overridden `border-radius: 8px` (not the default `0.75rem` — `tailwind.
 `borderRadius.xl` to `0.5rem` for this project); (b) production's compiled `site.css` was
 byte-identical to a fresh local `npm run build:css`, so this was never a deploy/cache issue.
 
+## Feature 6: collapsible accordions for industries/languages/countries in the mobile menu
+
+After root cause 5 shipped, the owner sent a real-device screenshot: the industries submenu
+inside the hamburger panel rendered as a permanently expanded, unstyled-looking list (7 industry
+links always shown under "Branchen"), pushing Download/Docs/Store and everything below off-screen
+without scrolling. This was pre-existing UX, not a regression — the mobile industries list had
+never had a collapse state, unlike the equivalent desktop header dropdown.
+
+Added three independent accordion sections to `MainLayout.razor`'s mobile panel — industries,
+languages (25 badges), countries (flags) — each with its own boolean state (`_mobileIndustryOpen`,
+`_mobileLanguageOpen`, `_mobileCountryOpen`), all defaulting to collapsed, mirroring the toggle
+button + `expand_more`/`expand_less` chevron pattern the desktop header already uses for the same
+three menus. All three reset to collapsed on mobile-menu close and on navigation, so the panel
+always starts fresh.
+
+**Follow-up UX request in the same session**: rather than a generic "Industries"/"Languages"/
+"Countries" label, each collapsed header now shows the *currently selected value* — exactly what
+the desktop dropdowns already do (current language code, current country flag). Industries shows
+the active industry name on an industry sub-page (e.g. "Spitex" on `/land-ch/spitex`), falling
+back to the generic label where none is active (the country's general page). Languages shows the
+current language code (e.g. "DE"). Countries shows the current country's flag + display name
+(e.g. "Schweiz"). A translated `aria-label` on each button keeps a proper description available
+to screen readers despite the terser visible text.
+
+New keys `nav.languages`/`nav.countries` were added to all 25 locale `shared.json` files for the
+labels (used as `aria-label`, and as the industries-header fallback text already existed via
+`nav.industries`). No existing key needed to change.
+
+Verified with Playwright across the full interaction matrix: independent open/close per section
+with no cross-interference, reset to collapsed on menu-close/navigation, correct header text on
+both a country general page and an industry sub-page, correct text after a live language switch,
+desktop dropdowns (separate state variables) unaffected, no console errors.
+
 ## Commits
 
 - `64bf5b0` — hero headline responsive scale, hero image unhidden, 3 heading consistency fixes.
 - `789d9d3` — global `overflow-wrap: break-word` guard.
 - `104d1ec` — mobile-first spacing pass across 10 files (root cause 4).
 - `f0f8a03` — flex layout fix for the mobile hamburger menu (root cause 5).
+- `e78cac9` — collapsible mobile accordions + current-value headers (feature 6).
 
 ## Deployment
 
