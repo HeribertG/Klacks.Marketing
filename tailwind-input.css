@@ -65,7 +65,7 @@ html {
 }
 
 .mobile-menu-panel.mobile-menu-open {
-    display: block;
+    display: flex;
 }
 
 @media (min-width: 768px) {
@@ -429,7 +429,7 @@ body:has(.feature-ticker-bar) footer {
     }
 
     .mobile-menu-panel {
-        display: block;
+        display: flex;
         overflow: hidden;
         max-height: 0;
         opacity: 0;
