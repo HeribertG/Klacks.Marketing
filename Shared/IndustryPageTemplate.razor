@@ -229,7 +229,8 @@
             <div class="blob-animate-2 absolute -bottom-32 -left-16 w-[480px] h-[480px] bg-secondary-fixed-dim rounded-full blur-[100px]"></div>
         </div>
         <h2 class="text-[2.5rem] md:text-[3rem] font-black text-white tracking-tighter mb-6 relative z-10">@((MarkupString)Content.Cta.Title)</h2>
-        <p class="text-white/70 max-w-xl mx-auto mb-10 relative z-10">@((MarkupString)Content.Cta.Text)</p>
+        <p class="text-white/70 max-w-xl mx-auto mb-4 relative z-10">@((MarkupString)Content.Cta.Text)</p>
+        <p class="text-white/70 text-sm max-w-xl mx-auto mb-10 relative z-10">@Sh("cta.openSourceNote")</p>
         <div class="flex flex-wrap justify-center gap-6 relative z-10">
             <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform flex items-center gap-3"><span class="material-symbols-outlined">play_circle</span> @Sh("cta.tryButton")</button>
             <a href="@DownloadHref" class="border border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")</a>
