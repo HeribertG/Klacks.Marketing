@@ -19,13 +19,18 @@
             {
                 <div class="relative">
                     <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
-                        @Sh("nav.industries")
+                        @if (CurrentIndustryIcon.Length > 0)
+                        {
+                            <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
+                        }
+                        @IndustryHeaderText
                         <span class="material-symbols-outlined text-base">expand_more</span>
                     </button>
                     <div class="dropdown-menu @(_industryMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
                         @foreach (var industry in CurrentCountryIndustries)
                         {
-                            <a href="@IndustryHref(industry.Slug)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseIndustryMenu">
+                            <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseIndustryMenu">
+                                <span class="material-symbols-outlined text-base">@industry.Icon</span>
                                 @Ix(industry.LabelKey)
                             </a>
                         }
@@ -98,7 +103,13 @@
         {
             <div class="flex flex-col gap-1">
                 <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
-                    @MobileIndustryHeaderText
+                    <span class="flex items-center gap-2">
+                        @if (CurrentIndustryIcon.Length > 0)
+                        {
+                            <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
+                        }
+                        @IndustryHeaderText
+                    </span>
                     <span class="material-symbols-outlined text-base">@(_mobileIndustryOpen ? "expand_less" : "expand_more")</span>
                 </button>
                 @if (_mobileIndustryOpen)
@@ -106,7 +117,8 @@
                     <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
                         @foreach (var industry in CurrentCountryIndustries)
                         {
-                            <a href="@IndustryHref(industry.Slug)" class="py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                            <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                                <span class="material-symbols-outlined text-base">@industry.Icon</span>
                                 @Ix(industry.LabelKey)
                             </a>
                         }
@@ -483,21 +495,25 @@
         }
     }
 
-    // Shows the active industry directly on the mobile accordion header (instead
-    // of the generic "Industries" label) when on an industry sub-page; falls back
-    // to the generic label on the country's general page, where there is none.
-    private string MobileIndustryHeaderText
+    // Shows the active industry directly on the menu (desktop dropdown button and
+    // mobile accordion header) instead of the generic "Industries" label when on
+    // an industry sub-page; falls back to the generic label on the country's
+    // general page, where there is none.
+    private string IndustryHeaderText
+        => CurrentIndustry is { } industry ? Ix(industry.LabelKey) : Sh("nav.industries");
+
+    // The Material Symbol for the active industry, shown next to IndustryHeaderText;
+    // empty on the country's general page, where there is no active industry.
+    private string CurrentIndustryIcon => CurrentIndustry?.Icon ?? string.Empty;
+
+    private CountryIndustry? CurrentIndustry
     {
         get
         {
             var slug = CurrentIndustrySlug;
-            if (slug.Length == 0)
-            {
-                return Sh("nav.industries");
-            }
-
-            var match = CurrentCountryIndustries.FirstOrDefault(industry => industry.Slug == slug);
-            return match is null ? Sh("nav.industries") : Ix(match.LabelKey);
+            return slug.Length == 0
+                ? null
+                : CurrentCountryIndustries.FirstOrDefault(industry => industry.Slug == slug);
         }
     }
 
