@@ -11,7 +11,7 @@
             <img src="images/klacks-logo.svg" class="w-8 h-8" alt="Klacks Logo" />
             Klacks
         </a>
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden xl:flex items-center gap-8">
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")">@Sh("nav.solution")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")">@ShHtml("nav.rules")</a>
@@ -45,7 +45,7 @@
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
         </div>
-        <div class="hidden md:flex items-center gap-4">
+        <div class="hidden xl:flex items-center gap-4">
             <div class="relative">
                 <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
                     @CurrentCultureRecord.Code
@@ -87,7 +87,7 @@
             </button>
         </div>
         <button type="button"
-                class="md:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
+                class="xl:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
                 aria-label="@(_mobileMenuOpen ? Sh("nav.menuClose") : Sh("nav.menuOpen"))"
                 aria-expanded="@(_mobileMenuOpen ? "true" : "false")"
                 @onclick="ToggleMobileMenu">
@@ -95,7 +95,7 @@
         </button>
     </div>
 
-    <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") glass-nav border-t border-surface-container-high px-8 py-6 flex flex-col gap-5">
+    <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full right-8 mt-2 w-full max-w-sm bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-8 py-6 flex flex-col gap-5">
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>

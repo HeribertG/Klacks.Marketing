@@ -58,8 +58,11 @@ html {
     display: block;
 }
 
-/* Self-contained breakpoint logic (matches Tailwind's default md=768px) so this
-   never depends on cascade order against Tailwind's own md:hidden utility. */
+/* Self-contained breakpoint logic (matches Tailwind's xl=1280px, the same
+   breakpoint as the nav's hidden xl:flex / xl:hidden utilities) so this never
+   depends on cascade order against Tailwind's own xl:hidden utility. Tablet
+   widths (768-1024px) don't have room for the full desktop nav, so they keep
+   the hamburger menu instead of switching at md=768px. */
 .mobile-menu-panel {
     display: none;
 }
@@ -68,7 +71,7 @@ html {
     display: flex;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
     .mobile-menu-panel.mobile-menu-open {
         display: none;
     }
@@ -441,7 +444,7 @@ body:has(.feature-ticker-bar) footer {
         opacity: 1;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
         .mobile-menu-panel {
             display: none;
         }
