@@ -12,7 +12,7 @@ public static class ExternalLinks
     public const string OnPremBundleUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + OnPremBundleFileName;
     public const string DemoLoginEmail = "admin@test.com";
     public const string DemoLoginPassword = "P@ssw0rt1";
-    public const string ContactEmail = "hgasparoli@hotmail.com";
+    public const string ContactEmail = Seo.OrganizationFacts.Email;
     public const string DiscordInviteUrl = "https://discord.gg/YRP8p2abVC";
     public const string DocsBasePath = "/docs/";
 }

@@ -12,6 +12,7 @@ public sealed class JsonPageContentProvider : IPageContentProvider
     private readonly ConcurrentDictionary<string, InstallPageContent?> _installCache = new();
     private readonly ConcurrentDictionary<string, IReadOnlyDictionary<string, string>?> _flatCache = new();
     private readonly ConcurrentDictionary<string, IndustryRedesignContent?> _redesignCache = new();
+    private readonly ConcurrentDictionary<string, bool> _availabilityCache = new();
 
     public JsonPageContentProvider(IWebHostEnvironment environment)
     {
@@ -43,6 +44,23 @@ public sealed class JsonPageContentProvider : IPageContentProvider
             ?? (masterKey is null ? null : LoadInstallPage(SupportedCultures.DefaultCode, masterKey))
             ?? throw new InvalidOperationException($"No content found for install page '{pageKey}'.");
     }
+
+    // Mirrors the first two steps of the resolution order above: everything after
+    // them is a fallback to the default culture. Country root pages ("land-de")
+    // have no country-less master, so only their own file counts.
+    public bool HasContentIn(string cultureCode, string pageKey)
+    {
+        return _availabilityCache.GetOrAdd($"{cultureCode}/{pageKey}", _ =>
+        {
+            var masterKey = CountryLessKey(pageKey);
+
+            return ContentFileExists(cultureCode, pageKey)
+                || (masterKey is not null && ContentFileExists(cultureCode, masterKey));
+        });
+    }
+
+    private bool ContentFileExists(string cultureCode, string pageKey)
+        => File.Exists(Path.Combine(_contentRoot, cultureCode, $"{pageKey}.json"));
 
     // "land-gb-klacksy" -> "klacksy"; null when the key is not country-scoped.
     private static string? CountryLessKey(string pageKey)

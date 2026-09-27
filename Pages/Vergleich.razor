@@ -3,7 +3,7 @@
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@GetText("pageTitle")</PageTitle>
-<SeoHead PageKey="vergleich" Culture="@Culture" RoutePath="vergleich"
+<SeoHead PageKey="vergleich" Culture="@ResolvedCulture" RoutePath="vergleich"
          Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
 
 <div class="min-h-screen bg-surface text-on-surface">

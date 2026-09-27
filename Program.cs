@@ -81,8 +81,8 @@ app.MapFallbackToPage("/_Host");
 // Resolved once so the SEO endpoints below don't each index IConfiguration separately.
 var baseUrl = app.Configuration["Site:BaseUrl"] ?? string.Empty;
 
-app.MapGet("/sitemap.xml", () =>
-    Results.Text(SitemapGenerator.Build(baseUrl), "application/xml"));
+app.MapGet("/sitemap.xml", (IPageContentProvider contentProvider) =>
+    Results.Text(SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn), "application/xml"));
 
 // robots.txt and the llms.txt companions carry a ".txt" extension, so the
 // known-page guard in the pipeline above lets them straight through to routing

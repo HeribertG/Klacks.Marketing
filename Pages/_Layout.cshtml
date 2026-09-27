@@ -11,16 +11,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @* Page-specific description, og:title, og:description and og:locale are emitted
-       per page via SeoHead (Blazor HeadContent); keeping static copies here would
-       duplicate them. The tags below are the same on every page. *@
+    @* Page-specific description, og:title, og:description, og:locale and og:image are
+       emitted per page via SeoHead (Blazor HeadContent); keeping static copies here
+       would duplicate them. The tags below are the same on every page. *@
     <meta name="keywords" content="Personaleinsatzplanung, Dienstplanung, Schichtplanung, Einsatzplanung, Tourenplanung, Spitex Software, Spitalplanung, Sicherheitsdienst Planung, KI-Assistent, On-Premise, Open Source" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Klacks" />
     <meta property="og:url" content="@ogUrl" />
-    <meta property="og:image" content="@($"{baseUrl}/images/og-image.png")" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <base href="/" />
     <link rel="icon" href="favicon.ico" sizes="32x32" />

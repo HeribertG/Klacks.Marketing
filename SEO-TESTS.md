@@ -22,9 +22,17 @@ curl -s "$BASE/robots.txt" | grep -c "GPTBot"          # soll 1
 curl -s "$BASE/robots.txt" | grep -c "Google-Extended"  # soll 1
 curl -s "$BASE/robots.txt" | grep -c "Amazonbot"        # soll 1
 
-# 4. JSON-LD auf Branchen-Seite — muss FAQPage enthalten
-curl -s "$BASE/en/land-gb/spitex" | grep -c "FAQPage"  # soll 1
+# 4. JSON-LD auf Branchen-Seite — kein FAQPage (FAQ-Markup nur mit sichtbarer FAQ)
+curl -s "$BASE/en/land-gb/spitex" | grep -c "FAQPage"  # soll 0
 curl -s "$BASE/en/land-gb/spitex" | grep -c "application/ld+json"  # soll >= 1
+
+# 5. Unübersetzte Varianten — noindex, nicht in der Sitemap
+curl -s "$BASE/en/land-de" | grep -c 'name="robots" content="noindex'  # soll 1
+curl -s "$BASE/en/land-gb" | grep -c 'name="robots" content="noindex'  # soll 0
+curl -s "$BASE/sitemap.xml" | grep -c "<loc>$BASE/en/land-de</loc>"     # soll 0
+
+# 6. Genau ein og:image pro Seite
+curl -s "$BASE/en/land-gb/spitex" | grep -c 'property="og:image"'      # soll 1
 ```
 
 ## Erwartete Ergebnisse
@@ -39,5 +47,9 @@ curl -s "$BASE/en/land-gb/spitex" | grep -c "application/ld+json"  # soll >= 1
 | robots.txt enthält "GPTBot" | Ja |
 | robots.txt enthält "Google-Extended" | Ja |
 | robots.txt enthält "Amazonbot" | Ja |
-| /en/land-gb/spitex enthält "FAQPage" | Ja |
+| /en/land-gb/spitex enthält "FAQPage" | Nein |
 | /en/land-gb/spitex enthält "application/ld+json" | Ja |
+| /en/land-de hat `noindex` | Ja |
+| /en/land-gb hat `noindex` | Nein |
+| sitemap.xml enthält /en/land-de | Nein |
+| /en/land-gb/spitex hat genau ein `og:image` | Ja |

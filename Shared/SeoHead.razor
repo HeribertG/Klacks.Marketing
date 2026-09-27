@@ -1,9 +1,14 @@
 @inject IConfiguration Configuration
 @inject IPageContentProvider ContentProvider
+@inject IWebHostEnvironment Environment
 
 <HeadContent>
     <link rel="canonical" href="@CanonicalUrl" />
-    @foreach (var culture in SupportedCultures.All)
+    @if (!IsTranslated(CultureRecord))
+    {
+        <meta name="robots" content="noindex, follow" />
+    }
+    @foreach (var culture in SupportedCultures.All.Where(IsTranslated))
     {
         <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
     }
@@ -19,12 +24,9 @@
         <meta property="og:title" content="@Title" />
     }
     <meta property="og:locale" content="@OgLocaleValue" />
-    @if (!string.IsNullOrEmpty(OgImage))
-    {
-        <meta property="og:image" content="@($"{BaseUrl}{OgImage}")" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-    }
+    <meta property="og:image" content="@($"{BaseUrl}{EffectiveOgImage}")" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 </HeadContent>
 
 @* JSON-LD is rendered in the component body, not in HeadContent: the prerendered
@@ -41,6 +43,7 @@
     private const string IndexContentKey = "index";
     private const string ProductPitchTextKey = "hero.subtitle";
     private const string IndustryTitleKeyFormat = "industries.{0}.title";
+    private const string DefaultOgImage = "/images/og-image.png";
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
@@ -64,7 +67,8 @@
     [Parameter] public string? DescriptionSource { get; set; }
 
     // Optional branch-specific OG image path (e.g. "/images/og-image-spitex.png").
-    // If null, no og:image is emitted from SeoHead (falls back to _Layout default).
+    // Used only when the file actually exists in wwwroot; otherwise the site-wide
+    // default image is emitted, so a page never advertises a broken preview image.
     [Parameter] public string? OgImage { get; set; }
 
     // Display name for the sub-page level of the breadcrumb. Country sub-pages
@@ -72,7 +76,21 @@
     // since the default derives the name from the industry title keys.
     [Parameter] public string? BreadcrumbName { get; set; }
 
+    // For industry and install pages, whose content may fall back to the default
+    // culture: a culture variant without its own text is kept out of the hreflang
+    // set and marked noindex, so search engines never index German text served
+    // under a foreign language URL.
+    [Parameter] public bool IndexTranslatedOnly { get; set; }
+
+    private bool IsTranslated(SupportedCulture culture)
+        => !IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, PageKey);
+
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
+
+    private string EffectiveOgImage
+        => !string.IsNullOrEmpty(OgImage) && Environment.WebRootFileProvider.GetFileInfo(OgImage).Exists
+            ? OgImage
+            : DefaultOgImage;
 
     private SupportedCulture CultureRecord => SupportedCultures.All.First(c => c.Code == Culture);
 
@@ -120,11 +138,6 @@
                 scripts.Add(breadcrumb);
             }
 
-            if (FAQPageScript is { } faq)
-            {
-                scripts.Add(faq);
-            }
-
             return scripts;
         }
     }
@@ -153,33 +166,6 @@
                 country,
                 pageName,
                 EffectiveRoutePath);
-        }
-    }
-
-    // FAQPage JSON-LD on industry sub-pages (5 industry-specific questions) and
-    // country root pages (4 generic questions). Not on legal/installation pages.
-    private string? FAQPageScript
-    {
-        get
-        {
-            var country = CountryIndustries.OwningCountry(PageKey);
-            if (country is null)
-            {
-                return null;
-            }
-
-            // Country root page (e.g. "land-de") → generic FAQs
-            if (PageKey.Length <= country.Length)
-            {
-                return JsonLdBuilder.FAQPageScript(Culture, null);
-            }
-
-            // Industry sub-page (e.g. "land-de-spitex") → industry-specific FAQs
-            var slug = PageKey[(country.Length + 1)..];
-            var industryTitle = BreadcrumbName
-                ?? ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
-
-            return JsonLdBuilder.FAQPageScript(Culture, industryTitle);
         }
     }
 }

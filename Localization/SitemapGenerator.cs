@@ -64,7 +64,10 @@ public static class SitemapGenerator
 
     private const string InstallationSlug = "installation";
 
-    public static string Build(string baseUrl)
+    // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
+    // that culture; variants that would only show the default culture's text are
+    // left out, matching the noindex/hreflang rule in SeoHead.
+    public static string Build(string baseUrl, Func<string, string, bool> hasContentIn)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
         var sb = new StringBuilder();
@@ -73,18 +76,12 @@ public static class SitemapGenerator
 
         foreach (var pageKey in PageKeys)
         {
-            foreach (var culture in SupportedCultures.All)
-            {
-                AppendUrl(sb, trimmedBase, culture, _ => pageKey);
-            }
+            AppendTranslatedUrls(sb, trimmedBase, pageKey, hasContentIn);
         }
 
         foreach (var countryPageKey in CountryIndustries.AllCountries)
         {
-            foreach (var culture in SupportedCultures.All)
-            {
-                AppendUrl(sb, trimmedBase, culture, _ => $"{countryPageKey}/{InstallationSlug}");
-            }
+            AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
         }
 
         // The legal pages are reachable under every country, but their content is
@@ -103,14 +100,32 @@ public static class SitemapGenerator
         return sb.ToString();
     }
 
+    // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex").
+    private static void AppendTranslatedUrls(StringBuilder sb, string baseUrl, string routeKey, Func<string, string, bool> hasContentIn)
+    {
+        var contentKey = routeKey.Replace('/', '-');
+        var cultures = SupportedCultures.All.Where(c => hasContentIn(c.Code, contentKey)).ToList();
+
+        foreach (var culture in cultures)
+        {
+            AppendUrl(sb, baseUrl, culture, _ => routeKey, cultures);
+        }
+    }
+
     // pageKeyFor resolves the page key per culture, since a page can live under a
-    // different country depending on the language.
-    private static void AppendUrl(StringBuilder sb, string baseUrl, SupportedCulture culture, Func<SupportedCulture, string> pageKeyFor)
+    // different country depending on the language. alternates defaults to every
+    // culture.
+    private static void AppendUrl(
+        StringBuilder sb,
+        string baseUrl,
+        SupportedCulture culture,
+        Func<SupportedCulture, string> pageKeyFor,
+        IReadOnlyList<SupportedCulture>? alternates = null)
     {
         sb.AppendLine("  <url>");
         sb.AppendLine($"    <loc>{BuildUrl(baseUrl, culture, pageKeyFor(culture))}</loc>");
 
-        foreach (var altCulture in SupportedCultures.All)
+        foreach (var altCulture in alternates ?? SupportedCultures.All)
         {
             sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{altCulture.Code}\" href=\"{BuildUrl(baseUrl, altCulture, pageKeyFor(altCulture))}\" />");
         }
