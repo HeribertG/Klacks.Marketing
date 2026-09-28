@@ -64,7 +64,7 @@
   "notes": {
     "title": "Gut zu wissen",
     "items": [
-      { "icon": "code", "title": "Open Source (MIT)", "text": "Der komplette Quellcode ist unter MIT-Lizenz auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
+      { "icon": "code", "title": "Open Source (AGPL-3.0)", "text": "Der komplette Quellcode ist unter der AGPL-3.0 auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
       { "icon": "storage", "title": "Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten verlassen Ihren Server nicht &mdash; es gibt keinen Cloud-Zwang." },
       { "icon": "update", "title": "Automatische Updates", "text": "Die Installation pinnt die zuletzt veröffentlichte Version; ein Update-Dienst im Stack spielt neue veröffentlichte Versionen automatisch ein." },
       { "icon": "lock", "title": "HTTPS ab dem Start", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern." }

@@ -64,7 +64,7 @@
   "notes": {
     "title": "Godt at vide",
     "items": [
-      { "icon": "code", "title": "Open source (MIT)", "text": "Den komplette kildekode er offentlig på GitHub under MIT-licensen &mdash; ingen licensomkostninger, ingen vendor lock-in." },
+      { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Den komplette kildekode er offentlig på GitHub under AGPL-3.0 &mdash; ingen licensomkostninger, ingen vendor lock-in." },
       { "icon": "storage", "title": "Data bliver i huset", "text": "Klacks kører på din infrastruktur. Personale- og vagtplandata forlader aldrig din server &mdash; der er ingen tvungen cloud." },
       { "icon": "update", "title": "Automatiske opdateringer", "text": "Installationen fastlåser den seneste udgivne version; en opdateringstjeneste i stacken indlæser automatisk nyudgivne versioner." },
       { "icon": "lock", "title": "HTTPS fra starten", "text": "Installeren genererer et selvsigneret certifikat, så du kan komme i gang &mdash; du kan til enhver tid skifte til dit eget certifikat. Skift den indledende adgangskode straks efter første login." }

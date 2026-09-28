@@ -64,7 +64,7 @@
   "notes": {
     "title": "Dobré vědět",
     "items": [
-      { "icon": "code", "title": "Open source (MIT)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí MIT &mdash; žádné licenční poplatky, žádný vendor lock-in." },
+      { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí AGPL-3.0 &mdash; žádné licenční poplatky, žádný vendor lock-in." },
       { "icon": "storage", "title": "Data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data nikdy neopustí váš server &mdash; žádný povinný cloud." },
       { "icon": "update", "title": "Automatické aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi; aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky." },
       { "icon": "lock", "title": "HTTPS od začátku", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení." }

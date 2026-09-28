@@ -64,7 +64,7 @@
   "notes": {
     "title": "Bon à savoir",
     "items": [
-      { "icon": "code", "title": "Open source (MIT)", "text": "Le code source complet est public sur GitHub sous licence MIT &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
+      { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Le code source complet est public sur GitHub sous licence AGPL-3.0 &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
       { "icon": "storage", "title": "Les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings ne quittent jamais votre serveur &mdash; aucun cloud imposé." },
       { "icon": "update", "title": "Mises à jour automatiques", "text": "L'installation épingle la dernière version publiée ; un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
       { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }

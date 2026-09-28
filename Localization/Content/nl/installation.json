@@ -64,7 +64,7 @@
   "notes": {
     "title": "Goed om te weten",
     "items": [
-      { "icon": "code", "title": "Open source (MIT)", "text": "De volledige broncode is openbaar op GitHub onder de MIT-licentie &mdash; geen licentiekosten, geen vendor lock-in." },
+      { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "De volledige broncode is openbaar op GitHub onder de AGPL-3.0 &mdash; geen licentiekosten, geen vendor lock-in." },
       { "icon": "storage", "title": "Gegevens blijven in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens verlaten uw server nooit &mdash; er is geen verplichte cloud." },
       { "icon": "update", "title": "Automatische updates", "text": "De installatie pint de laatst uitgebrachte versie vast; een updateservice binnen de stack voert nieuw uitgebrachte versies automatisch door." },
       { "icon": "lock", "title": "HTTPS vanaf de start", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen." }

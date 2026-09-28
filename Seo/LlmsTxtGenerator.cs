@@ -90,7 +90,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine($"> {Tagline}");
         sb.AppendLine();
-        sb.AppendLine("Klacks runs on your own infrastructure and is open source under the MIT licence. The application ships in four core languages — German, French, Italian and English — with more languages, geodata and calendar rules available as plugins.");
+        sb.AppendLine("Klacks runs on your own infrastructure and is open source under the GNU AGPL-3.0 licence. The application ships in four core languages — German, French, Italian and English — with more languages, geodata and calendar rules available as plugins.");
         sb.AppendLine();
 
         sb.AppendLine("## Product");
@@ -133,7 +133,7 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("## Overview");
         sb.AppendLine();
-        sb.AppendLine("Klacks is a workforce-scheduling application for organisations that plan staff in shifts, in the field and by qualification. It is open source under the MIT licence and runs on your own infrastructure (on-premise), so no personnel or patient records have to leave the building. There is no vendor lock-in and no forced cloud.");
+        sb.AppendLine("Klacks is a workforce-scheduling application for organisations that plan staff in shifts, in the field and by qualification. It is open source under the GNU AGPL-3.0 licence and runs on your own infrastructure (on-premise), so no personnel or patient records have to leave the building. There is no vendor lock-in and no forced cloud.");
         sb.AppendLine();
 
         sb.AppendLine("## Key features");
@@ -191,7 +191,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine("- Playground: a public Klacks instance with sample data, right in the browser, no installation and no registration.");
         sb.AppendLine("- On-premise package: Docker images, installer, database, HTTPS and automatic updates in a single bundle.");
         sb.AppendLine("- Country packages: preconfigured downloads (installer bundle, Docker Compose bundle or profile file) for 30 countries, with an optional industry preselection, served by the Klacks Marketplace.");
-        sb.AppendLine("- Source code: Klacks is open source under the MIT licence, with backend, frontend and Docker images public on GitHub.");
+        sb.AppendLine("- Source code: Klacks is open source under the GNU AGPL-3.0 licence, with backend, frontend and Docker images public on GitHub.");
         sb.AppendLine();
 
         sb.AppendLine("## Links");
