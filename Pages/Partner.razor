@@ -1,9 +1,9 @@
-@page "/partner"
-@page "/{culture}/partner"
+@page "/{country}/partner"
+@page "/{culture}/{country}/partner"
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@GetText("pageTitle")</PageTitle>
-<SeoHead PageKey="partner" Culture="@ResolvedCulture" RoutePath="@EffectiveRoutePath" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
+<SeoHead PageKey="partner" Culture="@ResolvedCulture" RoutePath="@EffectiveRoutePath" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
 
 <div class="min-h-screen bg-surface text-on-surface">
     <!-- Hero -->
@@ -135,7 +135,7 @@
                 @GetText("cta.text")
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/installation" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                <a href="@InstallationHref" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
                     <span class="material-symbols-outlined">download</span> Installation
                 </a>
                 <a href="https://github.com/HeribertG/Klacks.Api" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">
@@ -149,9 +149,14 @@
 @code {
     [Parameter] public string? Culture { get; set; }
 
+    // The partner offer is company-wide; the country only keeps the navigation context.
+    [Parameter] public string? Country { get; set; }
+
     private string EffectiveRoutePath => "partner";
 
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+
+    private string InstallationHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.InstallationSlug);
 
     private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, "partner", key);
 }

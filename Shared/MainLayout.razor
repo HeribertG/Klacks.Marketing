@@ -204,6 +204,8 @@
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@StoreHref" target="_blank">@Sh("footer.store")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ImprintHref">@Sh("footer.imprint")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PartnerHref">@Sh("footer.partner")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ComparisonHref">@Sh("footer.comparison")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
             <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
@@ -217,11 +219,14 @@
     private const string ImprintPageKey = "impressum";
     private const string PrivacyPageKey = "datenschutz";
     private const string LicensePageKey = "lizenz";
+    private const string PartnerPageKey = "partner";
+    private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
 
-    private static readonly HashSet<string> LegalPageKeys = new(StringComparer.OrdinalIgnoreCase)
+    // Pages whose content is the same for every country and culture combination.
+    private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
-        ImprintPageKey, PrivacyPageKey, LicensePageKey,
+        ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey,
     };
 
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
@@ -399,30 +404,34 @@
     // Anchors to a section on the exact current page. Building from the real path
     // (not the collapsed page key) keeps section links on an industry sub-page
     // (e.g. "/it/land-ch/spitex#regeln") on that page instead of jumping to the
-    // country general page, which is what the collapsed key produced. Legal pages
-    // have none of these sections, so there the anchor targets the country page.
+    // country general page, which is what the collapsed key produced. Company-wide
+    // pages have none of these sections, so there the anchor targets the country page.
     private string SectionHref(string anchor)
     {
         var path = CurrentRelativePath();
-        var legalSlug = CurrentLegalSlug;
+        var companyWideSlug = CurrentCompanyWideSlug;
 
-        if (legalSlug.Length > 0)
+        if (companyWideSlug.Length > 0)
         {
-            path = path[..^(legalSlug.Length + 1)];
+            path = path[..^(companyWideSlug.Length + 1)];
         }
 
         return path.Length == 0 ? $"/#{anchor}" : $"/{path}#{anchor}";
     }
 
-    // Legal pages live under a country like every other page, and exist in every
-    // culture, so the footer links keep both the active country and culture.
-    private string ImprintHref => LegalHref(ImprintPageKey);
+    // Company-wide pages live under a country like every other page, and exist in
+    // every culture, so the footer links keep both the active country and culture.
+    private string ImprintHref => CompanyWideHref(ImprintPageKey);
 
-    private string PrivacyHref => LegalHref(PrivacyPageKey);
+    private string PrivacyHref => CompanyWideHref(PrivacyPageKey);
 
-    private string LicenseHref => LegalHref(LicensePageKey);
+    private string LicenseHref => CompanyWideHref(LicensePageKey);
 
-    private string LegalHref(string pageKey)
+    private string PartnerHref => CompanyWideHref(PartnerPageKey);
+
+    private string ComparisonHref => CompanyWideHref(ComparisonPageKey);
+
+    private string CompanyWideHref(string pageKey)
     {
         var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
         var suffix = $"{country}/{pageKey}";
@@ -469,26 +478,26 @@
 
     private bool IsOnCountryPage => ResolveCurrentPage().PageKey.StartsWith("land-", StringComparison.OrdinalIgnoreCase);
 
-    // Legal pages exist under every country and culture, so switching either one
-    // stays on the same legal page instead of jumping to the country landing page.
+    // Company-wide pages exist under every country and culture, so switching either
+    // one stays on the same page instead of jumping to the country landing page.
     private string CountryLanguageHref(SupportedCulture target, string pageKey)
     {
-        var legalSlug = CurrentLegalSlug;
-        var path = legalSlug.Length == 0 ? pageKey : $"{pageKey}/{legalSlug}";
+        var companyWideSlug = CurrentCompanyWideSlug;
+        var path = companyWideSlug.Length == 0 ? pageKey : $"{pageKey}/{companyWideSlug}";
 
         return target.Code == SupportedCultures.DefaultCode ? $"/{path}" : $"/{target.UrlSlug}/{path}";
     }
 
-    // The legal page slug ("impressum", "datenschutz", "lizenz") when the current
-    // path ends in one, otherwise empty.
-    private string CurrentLegalSlug
+    // The company-wide page slug ("impressum", "lizenz", "partner", ...) when the
+    // current path ends in one, otherwise empty.
+    private string CurrentCompanyWideSlug
     {
         get
         {
             var path = CurrentRelativePath();
             var lastSegment = path[(path.LastIndexOf('/') + 1)..];
 
-            return path.Contains('/') && LegalPageKeys.Contains(lastSegment) ? lastSegment : string.Empty;
+            return path.Contains('/') && CompanyWidePageKeys.Contains(lastSegment) ? lastSegment : string.Empty;
         }
     }
 

@@ -8,7 +8,7 @@ public static class SitemapGenerator
     {
         // Every page exists only under a country; the country-less variants
         // (including the homepages) are legacy redirects (LegacyProductRoutes) and
-        // are not listed here. The country-scoped legal pages are appended by
+        // are not listed here. The country-scoped company-wide pages are appended by
         // AllPageKeys.
         "land-de", "land-at", "land-fr", "land-it", "land-ch",
         "land-ch/spitex", "land-ch/spitaeler", "land-ch/security", "land-ch/hausdienste", "land-ch/logistik", "land-ch/hotellerie-gastronomie",
@@ -58,9 +58,10 @@ public static class SitemapGenerator
         "land-sa/eigene-regeln", "land-se/eigene-regeln", "land-th/eigene-regeln", "land-tw/eigene-regeln", "land-vn/eigene-regeln",
     };
 
-    // The legal pages are country-scoped like everything else, but their content is
-    // company-wide — so they are generated per country rather than hand-listed.
-    private static readonly string[] LegalSlugs = { "impressum", "datenschutz", "lizenz" };
+    // The legal, partner and comparison pages are country-scoped like everything
+    // else, but their content is company-wide — so they are generated per country
+    // rather than hand-listed.
+    private static readonly string[] CompanyWideSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich" };
 
     private const string InstallationSlug = "installation";
 
@@ -84,11 +85,11 @@ public static class SitemapGenerator
             AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
         }
 
-        // The legal pages are reachable under every country, but their content is
+        // The company-wide pages are reachable under every country, but their content is
         // identical everywhere and their canonical URL is the culture's default
         // country (SeoHead.SameForEveryCountry). Listing only that one keeps the
-        // sitemap free of ~2250 duplicates of the same three documents.
-        foreach (var slug in LegalSlugs)
+        // sitemap free of ~3750 duplicates of the same five documents.
+        foreach (var slug in CompanyWideSlugs)
         {
             foreach (var culture in SupportedCultures.All)
             {
