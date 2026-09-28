@@ -1,9 +1,9 @@
-@page "/lizenz"
-@page "/{culture}/lizenz"
+@page "/{country}/lizenz"
+@page "/{culture}/{country}/lizenz"
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@GetText("pageTitle")</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" IndexTranslatedOnly="true" />
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
 
 <div class="min-h-screen bg-surface text-on-surface">
     <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-8 text-center">
@@ -88,7 +88,6 @@
 
 @code {
     private const string PageKey = "lizenz";
-    private const string FallbackContentCulture = "en";
 
     private static readonly (string Icon, int Index)[] AgplItems =
     {
@@ -106,13 +105,11 @@
 
     [Parameter] public string? Culture { get; set; }
 
+    // Present so the route binds; the license terms are company-wide and do not
+    // vary by country.
+    [Parameter] public string? Country { get; set; }
+
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
 
-    // The page is written in the core languages only; every other culture reads the
-    // English text rather than the German default, and SeoHead marks it noindex.
-    private string ContentCulture => ContentProvider.HasContentIn(ResolvedCulture, PageKey)
-        ? ResolvedCulture
-        : FallbackContentCulture;
-
-    private string GetText(string key) => ContentProvider.GetText(ContentCulture, PageKey, key);
+    private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
 }

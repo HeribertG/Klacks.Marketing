@@ -60,12 +60,9 @@ public static class SitemapGenerator
 
     // The legal pages are country-scoped like everything else, but their content is
     // company-wide — so they are generated per country rather than hand-listed.
-    private static readonly string[] LegalSlugs = { "impressum", "datenschutz" };
+    private static readonly string[] LegalSlugs = { "impressum", "datenschutz", "lizenz" };
 
     private const string InstallationSlug = "installation";
-
-    // Pages that are the same for every country and therefore only culture-scoped.
-    private static readonly string[] CountryIndependentPageKeys = { "lizenz" };
 
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
@@ -87,15 +84,10 @@ public static class SitemapGenerator
             AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
         }
 
-        foreach (var pageKey in CountryIndependentPageKeys)
-        {
-            AppendTranslatedUrls(sb, trimmedBase, pageKey, hasContentIn);
-        }
-
         // The legal pages are reachable under every country, but their content is
         // identical everywhere and their canonical URL is the culture's default
         // country (SeoHead.SameForEveryCountry). Listing only that one keeps the
-        // sitemap free of ~1500 duplicates of the same two documents.
+        // sitemap free of ~2250 duplicates of the same three documents.
         foreach (var slug in LegalSlugs)
         {
             foreach (var culture in SupportedCultures.All)

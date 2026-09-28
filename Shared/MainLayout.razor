@@ -219,6 +219,11 @@
     private const string LicensePageKey = "lizenz";
     private const string KlacksyPageSlug = "klacksy";
 
+    private static readonly HashSet<string> LegalPageKeys = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ImprintPageKey, PrivacyPageKey, LicensePageKey,
+    };
+
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         string.Empty,
@@ -394,10 +399,18 @@
     // Anchors to a section on the exact current page. Building from the real path
     // (not the collapsed page key) keeps section links on an industry sub-page
     // (e.g. "/it/land-ch/spitex#regeln") on that page instead of jumping to the
-    // country general page, which is what the collapsed key produced.
+    // country general page, which is what the collapsed key produced. Legal pages
+    // have none of these sections, so there the anchor targets the country page.
     private string SectionHref(string anchor)
     {
         var path = CurrentRelativePath();
+        var legalSlug = CurrentLegalSlug;
+
+        if (legalSlug.Length > 0)
+        {
+            path = path[..^(legalSlug.Length + 1)];
+        }
+
         return path.Length == 0 ? $"/#{anchor}" : $"/{path}#{anchor}";
     }
 
@@ -407,10 +420,7 @@
 
     private string PrivacyHref => LegalHref(PrivacyPageKey);
 
-    // The license page is the same for every country, so it is only culture-scoped.
-    private string LicenseHref => CurrentCultureRecord.Code == SupportedCultures.DefaultCode
-        ? $"/{LicensePageKey}"
-        : $"/{CurrentCultureRecord.UrlSlug}/{LicensePageKey}";
+    private string LicenseHref => LegalHref(LicensePageKey);
 
     private string LegalHref(string pageKey)
     {
@@ -459,8 +469,28 @@
 
     private bool IsOnCountryPage => ResolveCurrentPage().PageKey.StartsWith("land-", StringComparison.OrdinalIgnoreCase);
 
-    private static string CountryLanguageHref(SupportedCulture target, string pageKey)
-        => target.Code == SupportedCultures.DefaultCode ? $"/{pageKey}" : $"/{target.UrlSlug}/{pageKey}";
+    // Legal pages exist under every country and culture, so switching either one
+    // stays on the same legal page instead of jumping to the country landing page.
+    private string CountryLanguageHref(SupportedCulture target, string pageKey)
+    {
+        var legalSlug = CurrentLegalSlug;
+        var path = legalSlug.Length == 0 ? pageKey : $"{pageKey}/{legalSlug}";
+
+        return target.Code == SupportedCultures.DefaultCode ? $"/{path}" : $"/{target.UrlSlug}/{path}";
+    }
+
+    // The legal page slug ("impressum", "datenschutz", "lizenz") when the current
+    // path ends in one, otherwise empty.
+    private string CurrentLegalSlug
+    {
+        get
+        {
+            var path = CurrentRelativePath();
+            var lastSegment = path[(path.LastIndexOf('/') + 1)..];
+
+            return path.Contains('/') && LegalPageKeys.Contains(lastSegment) ? lastSegment : string.Empty;
+        }
+    }
 
     // The current country page key ("land-ch" for both the general page and its
     // industry sub-pages, since ResolveCurrentPage collapses the sub-page slug).
