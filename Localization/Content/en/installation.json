@@ -20,7 +20,7 @@
     "requirementsTitle": "Requirements",
     "requirements": [
       "Docker Desktop (Windows/Mac) or Docker Engine with the Compose plugin (Linux)",
-      "Outbound access to ghcr.io and github.com (images and automatic updates)",
+      "Outbound access to ghcr.io and github.com (images and updates)",
       "Free ports 80 and 443 (configurable)"
     ],
     "stepsTitle": "Three steps",
@@ -38,7 +38,7 @@
     "requirementsTitle": "Requirements",
     "requirements": [
       "Docker Engine with the Compose plugin (or Docker Desktop)",
-      "Outbound access to ghcr.io and github.com (images and automatic updates)",
+      "Outbound access to ghcr.io and github.com (images and updates)",
       "Experience running Docker Compose stacks"
     ],
     "stepsTitle": "Three steps",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "The complete source code is public on GitHub under the AGPL-3.0 &mdash; no licence fees, no vendor lock-in." },
       { "icon": "storage", "title": "Data stays in-house", "text": "Klacks runs on your infrastructure. Staff and scheduling data never leave your server &mdash; there is no forced cloud." },
-      { "icon": "update", "title": "Automatic updates", "text": "The installation pins the latest released version; an update service inside the stack applies newly released versions automatically." },
+      { "icon": "update", "title": "Updates", "text": "The installation pins the latest released version. On Linux, an update service inside the stack applies newly released versions automatically. On Windows and macOS, automatic updates are not available yet; there, updates are applied manually for now." },
       { "icon": "lock", "title": "HTTPS from the start", "text": "The installer generates a self-signed certificate to get you started &mdash; you can switch to your own certificate at any time. Change the initial password right after the first login." }
     ]
   },

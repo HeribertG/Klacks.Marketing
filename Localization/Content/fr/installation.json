@@ -20,7 +20,7 @@
     "requirementsTitle": "Prérequis",
     "requirements": [
       "Docker Desktop (Windows/Mac) ou Docker Engine avec le plugin Compose (Linux)",
-      "Accès sortant vers ghcr.io et github.com (images et mises à jour automatiques)",
+      "Accès sortant vers ghcr.io et github.com (images et mises à jour)",
       "Ports 80 et 443 libres (configurables)"
     ],
     "stepsTitle": "En trois étapes",
@@ -38,7 +38,7 @@
     "requirementsTitle": "Prérequis",
     "requirements": [
       "Docker Engine avec le plugin Compose (ou Docker Desktop)",
-      "Accès sortant vers ghcr.io et github.com (images et mises à jour automatiques)",
+      "Accès sortant vers ghcr.io et github.com (images et mises à jour)",
       "Expérience de l'exploitation de stacks Docker Compose"
     ],
     "stepsTitle": "En trois étapes",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Le code source complet est public sur GitHub sous licence AGPL-3.0 &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
       { "icon": "storage", "title": "Les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings ne quittent jamais votre serveur &mdash; aucun cloud imposé." },
-      { "icon": "update", "title": "Mises à jour automatiques", "text": "L'installation épingle la dernière version publiée ; un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
+      { "icon": "update", "title": "Mises à jour", "text": "L'installation épingle la dernière version publiée. Sous Linux, un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées. Sous Windows et macOS, la mise à jour automatique n'est pas encore disponible ; les mises à jour y sont pour l'instant appliquées manuellement." },
       { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }
     ]
   },

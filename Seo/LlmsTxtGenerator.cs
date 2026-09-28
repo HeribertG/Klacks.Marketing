@@ -16,6 +16,9 @@ public static class LlmsTxtGenerator
     private const string InstallationSlug = "installation";
     private const string ImpressumSlug = "impressum";
     private const string DatenschutzSlug = "datenschutz";
+    private const string LicenseSlug = "lizenz";
+    private const string PartnerSlug = "partner";
+    private const string ComparisonSlug = "vergleich";
 
     private const string Tagline =
         "Open-source, on-premise workforce scheduling for shift- and field-based operations — home care, hospitals, security, cleaning, logistics and hospitality. Automatic shift scheduling, route optimisation and a voice- and chat-controlled AI assistant (Klacksy) with your own choice of language model.";
@@ -28,25 +31,25 @@ public static class LlmsTxtGenerator
         (
             "Homecare / Spitex",
             "Ambulatory care visit planning with tour optimisation and qualification tracking. " +
-            "Presets for Pflegefachkraft and Betreuungskraft (§43b SGB XI).",
-            "48h/week cap, 11h rest period automatic, night surcharges documented, travel-time between visits optimised."
+            "Qualification presets for registered nurses and care assistants.",
+            "Weekly hour caps and rest periods per the country's working-time law, night surcharges documented, travel time between visits optimised."
         ),
         (
             "Healthcare / Hospitals",
             "Hospital shift planning with department-based qualification, rolling rest periods, " +
             "and multi-department staff sharing without double-booking.",
-            "45h/50h limits per Arbeitszeitgesetz, supervisor override with documented approval, night-work rules."
+            "Daily and weekly limits per the country's working-time law, supervisor override with documented approval, night-work rules."
         ),
         (
             "Security",
             "Guard scheduling with post-based assignment, qualification expiry tracking " +
-            "(§34a GewO Unterrichtung/Sachkunde), and shift handover management.",
-            "10h max daily shift, competence-expiry alerts, night shift 23:00–06:00 presets."
+            "(national security-guard licences and training certificates), and shift handover management.",
+            "Maximum daily shift length, competence-expiry alerts, night-shift presets."
         ),
         (
             "Facility / Cleaning",
             "Cleaning crew scheduling with object-based assignment, mobile team tour planning, " +
-            "and qualification tracking for Gebäudereiniger and glass/facade specialists.",
+            "and qualification tracking for building cleaners and glass/facade specialists.",
             "Mobile route optimisation (ant-colony algorithm), shift windows by object opening hours."
         ),
         (
@@ -58,8 +61,8 @@ public static class LlmsTxtGenerator
         (
             "Hospitality / Hotels & Gastro",
             "Hotel and restaurant shift planning with seasonal workforce, split-shift support, " +
-            "and food-hygiene qualification tracking (§43 IfSG Belehrung).",
-            "Arbeitszeitgesetz Gastro exceptions, split-shift handling, weekend/holiday premium rates."
+            "and food-hygiene qualification tracking.",
+            "Hospitality exceptions of the working-time law, split-shift handling, weekend/holiday premium rates."
         ),
     };
 
@@ -117,6 +120,9 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{ImpressumSlug}", "Legal notice", null);
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{DatenschutzSlug}", "Privacy", null);
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{LicenseSlug}", "Commercial license", "When the AGPL-3.0 is enough and when a commercial license is needed.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{PartnerSlug}", "For consultants and integrators", "Klacks as a scheduling engine for service providers.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{ComparisonSlug}", "Comparison", "Klacks compared with typical SaaS scheduling tools.");
 
         return sb.ToString();
     }
@@ -205,6 +211,9 @@ public static class LlmsTxtGenerator
         }
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{ImpressumSlug}", "Legal notice", null);
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{DatenschutzSlug}", "Privacy", null);
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{LicenseSlug}", "Commercial license", "When the AGPL-3.0 is enough and when a commercial license is needed.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{PartnerSlug}", "For consultants and integrators", "Klacks as a scheduling engine for service providers.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{ComparisonSlug}", "Comparison", "Klacks compared with typical SaaS scheduling tools.");
 
         return sb.ToString();
     }

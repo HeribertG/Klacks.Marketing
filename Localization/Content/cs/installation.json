@@ -20,7 +20,7 @@
     "requirementsTitle": "Předpoklady",
     "requirements": [
       "Docker Desktop (Windows/Mac) nebo Docker Engine s pluginem Compose (Linux)",
-      "Odchozí přístup na ghcr.io a github.com (image a automatické aktualizace)",
+      "Odchozí přístup na ghcr.io a github.com (image a aktualizace)",
       "Volné porty 80 a 443 (konfigurovatelné)"
     ],
     "stepsTitle": "Tři kroky",
@@ -38,7 +38,7 @@
     "requirementsTitle": "Předpoklady",
     "requirements": [
       "Docker Engine s pluginem Compose (nebo Docker Desktop)",
-      "Odchozí přístup na ghcr.io a github.com (image a automatické aktualizace)",
+      "Odchozí přístup na ghcr.io a github.com (image a aktualizace)",
       "Zkušenosti s provozem Docker Compose stacků"
     ],
     "stepsTitle": "Tři kroky",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí AGPL-3.0 &mdash; žádné licenční poplatky, žádný vendor lock-in." },
       { "icon": "storage", "title": "Data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data nikdy neopustí váš server &mdash; žádný povinný cloud." },
-      { "icon": "update", "title": "Automatické aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi; aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky." },
+      { "icon": "update", "title": "Aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi. Na Linuxu aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky. Na Windows a macOS automatické aktualizace zatím nejsou dostupné; aktualizace se tam prozatím provádějí ručně." },
       { "icon": "lock", "title": "HTTPS od začátku", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení." }
     ]
   },

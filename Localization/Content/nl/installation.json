@@ -20,7 +20,7 @@
     "requirementsTitle": "Vereisten",
     "requirements": [
       "Docker Desktop (Windows/Mac) of Docker Engine met de Compose-plugin (Linux)",
-      "Uitgaande toegang tot ghcr.io en github.com (images en automatische updates)",
+      "Uitgaande toegang tot ghcr.io en github.com (images en updates)",
       "Vrije poorten 80 en 443 (configureerbaar)"
     ],
     "stepsTitle": "Drie stappen",
@@ -38,7 +38,7 @@
     "requirementsTitle": "Vereisten",
     "requirements": [
       "Docker Engine met de Compose-plugin (of Docker Desktop)",
-      "Uitgaande toegang tot ghcr.io en github.com (images en automatische updates)",
+      "Uitgaande toegang tot ghcr.io en github.com (images en updates)",
       "Ervaring met het draaien van Docker Compose-stacks"
     ],
     "stepsTitle": "Drie stappen",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "De volledige broncode is openbaar op GitHub onder de AGPL-3.0 &mdash; geen licentiekosten, geen vendor lock-in." },
       { "icon": "storage", "title": "Gegevens blijven in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens verlaten uw server nooit &mdash; er is geen verplichte cloud." },
-      { "icon": "update", "title": "Automatische updates", "text": "De installatie pint de laatst uitgebrachte versie vast; een updateservice binnen de stack voert nieuw uitgebrachte versies automatisch door." },
+      { "icon": "update", "title": "Updates", "text": "De installatie pint de laatst uitgebrachte versie vast. Onder Linux voert een updateservice binnen de stack nieuw uitgebrachte versies automatisch door. Onder Windows en macOS is het automatische update nog niet beschikbaar; daar worden updates voorlopig handmatig doorgevoerd." },
       { "icon": "lock", "title": "HTTPS vanaf de start", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen." }
     ]
   },

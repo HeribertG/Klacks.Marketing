@@ -20,7 +20,7 @@
     "requirementsTitle": "必要条件",
     "requirements": [
       "Docker Desktop（Windows/Mac）またはComposeプラグイン付きDocker Engine（Linux）",
-      "ghcr.ioおよびgithub.comへの外向き接続（イメージと自動更新）",
+      "ghcr.ioおよびgithub.comへの外向き接続（イメージと更新）",
       "空きポート80および443（変更可能）"
     ],
     "stepsTitle": "3つのステップ",
@@ -38,7 +38,7 @@
     "requirementsTitle": "必要条件",
     "requirements": [
       "Composeプラグイン付きDocker Engine（またはDocker Desktop）",
-      "ghcr.ioおよびgithub.comへの外向き接続（イメージと自動更新）",
+      "ghcr.ioおよびgithub.comへの外向き接続（イメージと更新）",
       "Docker Composeスタックの運用経験"
     ],
     "stepsTitle": "3つのステップ",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "オープンソース（AGPL-3.0）", "text": "完全なソースコードはAGPL-3.0ライセンスのもとGitHubで公開されています &mdash; ライセンス費用なし、ベンダーロックインなし。" },
       { "icon": "storage", "title": "データは社内に留まる", "text": "Klacksは貴社のインフラ上で動作します。人事データやシフトデータが貴社のサーバーから外に出ることはありません &mdash; クラウドの強制はありません。" },
-      { "icon": "update", "title": "自動更新", "text": "インストール時に最新のリリース版が固定され、スタック内の更新サービスが新しくリリースされたバージョンを自動的に適用します。" },
+      { "icon": "update", "title": "更新", "text": "インストール時に最新のリリース版が固定されます。Linuxではスタック内の更新サービスが新しくリリースされたバージョンを自動的に適用します。WindowsおよびmacOSでは自動更新はまだ利用できず、当面は手動で更新を適用します。" },
       { "icon": "lock", "title": "最初からHTTPS", "text": "インストーラーはスタート用に自己署名証明書を生成します &mdash; 独自の証明書へはいつでも切り替え可能です。初回ログイン後、初期パスワードをただちに変更してください。" }
     ]
   },

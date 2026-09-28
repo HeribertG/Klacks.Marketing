@@ -20,7 +20,7 @@
     "requirementsTitle": "Krav",
     "requirements": [
       "Docker Desktop (Windows/Mac) eller Docker Engine med Compose-plugin (Linux)",
-      "Utgående åtkomst till ghcr.io och github.com (images och automatiska uppdateringar)",
+      "Utgående åtkomst till ghcr.io och github.com (images och uppdateringar)",
       "Lediga portar 80 och 443 (konfigurerbart)"
     ],
     "stepsTitle": "Tre steg",
@@ -38,7 +38,7 @@
     "requirementsTitle": "Krav",
     "requirements": [
       "Docker Engine med Compose-plugin (eller Docker Desktop)",
-      "Utgående åtkomst till ghcr.io och github.com (images och automatiska uppdateringar)",
+      "Utgående åtkomst till ghcr.io och github.com (images och uppdateringar)",
       "Erfarenhet av att driva Docker Compose-stackar"
     ],
     "stepsTitle": "Tre steg",
@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Öppen källkod (AGPL-3.0)", "text": "Hela källkoden är offentlig på GitHub under AGPL-3.0 &mdash; inga licenskostnader, ingen leverantörsinlåsning." },
       { "icon": "storage", "title": "Data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och schemadata lämnar aldrig din server &mdash; det finns inget molntvång." },
-      { "icon": "update", "title": "Automatiska uppdateringar", "text": "Installationen låser den senast släppta versionen; en uppdateringstjänst i stacken installerar nysläppta versioner automatiskt." },
+      { "icon": "update", "title": "Uppdateringar", "text": "Installationen låser den senast släppta versionen. Under Linux installerar en uppdateringstjänst i stacken nysläppta versioner automatiskt. Under Windows och macOS är de automatiska uppdateringarna ännu inte tillgängliga; där installeras uppdateringar tills vidare manuellt." },
       { "icon": "lock", "title": "HTTPS från start", "text": "Installationsprogrammet genererar ett självsignerat certifikat så att du kommer igång &mdash; du kan när som helst byta till ett eget certifikat. Byt det initiala lösenordet direkt efter första inloggningen." }
     ]
   },
