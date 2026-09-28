@@ -15,4 +15,5 @@ public static class ExternalLinks
     public const string ContactEmail = Seo.OrganizationFacts.Email;
     public const string DiscordInviteUrl = "https://discord.gg/YRP8p2abVC";
     public const string DocsBasePath = "/docs/";
+    public const string AgplLicenseUrl = "https://www.gnu.org/licenses/agpl-3.0.html";
 }

@@ -64,6 +64,9 @@ public static class SitemapGenerator
 
     private const string InstallationSlug = "installation";
 
+    // Pages that are the same for every country and therefore only culture-scoped.
+    private static readonly string[] CountryIndependentPageKeys = { "lizenz" };
+
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
     // left out, matching the noindex/hreflang rule in SeoHead.
@@ -82,6 +85,11 @@ public static class SitemapGenerator
         foreach (var countryPageKey in CountryIndustries.AllCountries)
         {
             AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
+        }
+
+        foreach (var pageKey in CountryIndependentPageKeys)
+        {
+            AppendTranslatedUrls(sb, trimmedBase, pageKey, hasContentIn);
         }
 
         // The legal pages are reachable under every country, but their content is
