@@ -76,7 +76,7 @@ const VIDEO_NOISE_CSS = `
 const OCTOBER = { year: 2026, month: 10, isoWeek: 41 };
 const NOVEMBER = { year: 2026, month: 11, isoWeek: 45 };
 const PLAN_WEEK = { from: "2026-11-02", until: "2026-11-08" };
-const PROTECTED_MONTH = { from: "2026-10-01", until: "2026-10-31", expectedWorks: 119 };
+const PROTECTED_MONTH = { from: "2026-10-01", until: "2026-10-31", expectedWorks: 118 };
 
 const WORK_ENTRY_TYPE = 0;
 const MIN_REST_HOURS = 11;
@@ -95,7 +95,7 @@ const CURSOR_PARK_BELOW_ROOM_CSS = CURSOR_PARK_BELOW_GAP_CSS + CURSOR_SIZE_PX + 
 const PARK_SIDE = "side";
 const PARK_BELOW = "below";
 const COMMENT_TEXT_WIDTH_CSS = 330;
-const MIN_REST_DAYS_PER_WEEK = 1;
+const MIN_REST_DAYS_PER_WEEK = 2;
 const MAX_CONSECUTIVE_DAYS = 6;
 const DAYS_PER_WEEK = 7;
 const ISO_SUNDAY = 7;
