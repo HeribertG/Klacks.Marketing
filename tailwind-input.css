@@ -204,7 +204,18 @@ nav.glass-nav.nav-scrolled {
 }
 
 .hero-slideshow-dot.is-active {
-    background: #0853ce;
+    background: theme('colors.secondary');
+}
+
+.hero-title .text-secondary {
+    background-image: linear-gradient(
+        transparent 62%,
+        theme('colors.highlight / 45%') 62%,
+        theme('colors.highlight / 45%') 92%,
+        transparent 92%
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 /* Die schwebenden Badge-Karten um das Hero-Mockup wurden entfernt

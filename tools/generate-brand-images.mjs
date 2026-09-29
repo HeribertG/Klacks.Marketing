@@ -38,14 +38,14 @@ async function renderOgImage() {
   const logoTop = 55;
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-      <rect width="${width}" height="${height}" fill="#141b2c" />
-      <circle cx="${width - 120}" cy="80" r="260" fill="#0853ce" opacity="0.15" />
+      <rect width="${width}" height="${height}" fill="#0F1E1F" />
+      <circle cx="${width - 120}" cy="80" r="260" fill="#0E6E6B" opacity="0.15" />
       <g transform="translate(${width / 2 - logoSize / 2}, ${logoTop}) scale(${logoSize / 210})">
-        ${extractInner(await readFile(logoSvgPath, "utf8")).replace("#808080", "#e5e2e1").replace("#2890CE", "#85f8c4")}
+        ${extractInner(await readFile(logoSvgPath, "utf8")).replace("#808080", "#e5e2e1").replace("#2890CE", "#F2A516")}
       </g>
       <text x="${width / 2}" y="370" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="72" fill="#ffffff" letter-spacing="-2">Klacks</text>
       <text x="${width / 2}" y="425" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="30" fill="#e5e2e1">Personaleinsatzplanung, die Ihnen gehört</text>
-      <text x="${width / 2}" y="480" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" letter-spacing="2" fill="#85f8c4">OPEN SOURCE &#183; ON-PREMISE &#183; SCHWEIZER DATENSCHUTZ</text>
+      <text x="${width / 2}" y="480" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" letter-spacing="2" fill="#F2A516">OPEN SOURCE &#183; ON-PREMISE &#183; SCHWEIZER DATENSCHUTZ</text>
     </svg>`;
   return sharp(Buffer.from(svg)).png().toBuffer();
 }
