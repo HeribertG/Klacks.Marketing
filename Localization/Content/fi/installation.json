@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Avoin lähdekoodi (AGPL-3.0)", "text": "Koko lähdekoodi on julkisesti GitHubissa AGPL-3.0-lisenssillä &mdash; ei lisenssimaksuja, ei toimittajalukkoa." },
       { "icon": "storage", "title": "Tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot eivät koskaan poistu palvelimeltanne &mdash; pilvipakkoa ei ole." },
-      { "icon": "update", "title": "Päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version. Linuxilla pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti. Windowsilla ja macOS:llä automaattinen päivitys ei ole vielä käytettävissä; päivitykset asennetaan toistaiseksi käsin." },
+      { "icon": "update", "title": "Päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version. Pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti." },
       { "icon": "lock", "title": "HTTPS alusta alkaen", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen." }
     ]
   },

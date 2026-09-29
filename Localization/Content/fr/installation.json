@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Le code source complet est public sur GitHub sous licence AGPL-3.0 &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
       { "icon": "storage", "title": "Les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings ne quittent jamais votre serveur &mdash; aucun cloud imposé." },
-      { "icon": "update", "title": "Mises à jour", "text": "L'installation épingle la dernière version publiée. Sous Linux, un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées. Sous Windows et macOS, la mise à jour automatique n'est pas encore disponible ; les mises à jour y sont pour l'instant appliquées manuellement." },
+      { "icon": "update", "title": "Mises à jour", "text": "L'installation épingle la dernière version publiée. Un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
       { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }
     ]
   },

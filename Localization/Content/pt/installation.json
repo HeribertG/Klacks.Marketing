@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Código aberto (AGPL-3.0)", "text": "O código-fonte completo está público no GitHub sob a AGPL-3.0 &mdash; sem custos de licença, sem dependência de fornecedor." },
       { "icon": "storage", "title": "Os dados ficam em casa", "text": "A Klacks é executada na sua infraestrutura. Os dados de pessoal e de escalas nunca saem do seu servidor &mdash; não há nuvem obrigatória." },
-      { "icon": "update", "title": "Atualizações", "text": "A instalação fixa a versão publicada mais recente. No Linux, um serviço de atualização dentro do stack aplica automaticamente as novas versões publicadas. No Windows e no macOS, a atualização automática ainda não está disponível; por enquanto, as atualizações são aplicadas manualmente." },
+      { "icon": "update", "title": "Atualizações", "text": "A instalação fixa a versão publicada mais recente. Um serviço de atualização dentro do stack aplica automaticamente as novas versões publicadas." },
       { "icon": "lock", "title": "HTTPS desde o início", "text": "O instalador gera um certificado autoassinado para começar &mdash; pode mudar para o seu próprio certificado em qualquer altura. Altere a palavra-passe inicial logo após o primeiro início de sessão." }
     ]
   },

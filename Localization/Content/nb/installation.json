@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Åpen kildekode (AGPL-3.0)", "text": "Hele kildekoden er offentlig på GitHub under AGPL-3.0 &mdash; ingen lisenskostnader, ingen leverandørinnlåsing." },
       { "icon": "storage", "title": "Dataene blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og vaktplandata forlater aldri serveren din &mdash; det finnes ingen tvungen skyløsning." },
-      { "icon": "update", "title": "Oppdateringer", "text": "Installasjonen låser den sist utgitte versjonen. Under Linux tar en oppdateringstjeneste i stacken automatisk i bruk nye utgitte versjoner. Under Windows og macOS er automatiske oppdateringer ennå ikke tilgjengelig; der spilles oppdateringer foreløpig inn manuelt." },
+      { "icon": "update", "title": "Oppdateringer", "text": "Installasjonen låser den sist utgitte versjonen. En oppdateringstjeneste i stacken tar automatisk i bruk nye utgitte versjoner." },
       { "icon": "lock", "title": "HTTPS fra start", "text": "Installasjonsprogrammet genererer et selvsignert sertifikat for å komme i gang &mdash; du kan når som helst bytte til ditt eget sertifikat. Bytt det opprinnelige passordet rett etter første innlogging." }
     ]
   },

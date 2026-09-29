@@ -66,7 +66,7 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Seluruh kode sumber tersedia untuk publik di GitHub di bawah lisensi AGPL-3.0 &mdash; tanpa biaya lisensi, tanpa vendor lock-in." },
       { "icon": "storage", "title": "Data tetap di tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan tidak pernah meninggalkan server Anda &mdash; tidak ada keharusan menggunakan cloud." },
-      { "icon": "update", "title": "Pembaruan", "text": "Instalasi mengunci versi rilis terbaru. Di Linux, layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis. Di Windows dan macOS, pembaruan otomatis belum tersedia; untuk sementara pembaruan diterapkan secara manual." },
+      { "icon": "update", "title": "Pembaruan", "text": "Instalasi mengunci versi rilis terbaru. Layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis." },
       { "icon": "lock", "title": "HTTPS sejak awal", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama." }
     ]
   },
