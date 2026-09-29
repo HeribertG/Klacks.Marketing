@@ -61,7 +61,7 @@ public static class SitemapGenerator
     // The legal, partner and comparison pages are country-scoped like everything
     // else, but their content is company-wide — so they are generated per country
     // rather than hand-listed.
-    private static readonly string[] CompanyWideSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich" };
+    private static readonly string[] CompanyWideSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", "kleine-betriebe", "ueber-uns" };
 
     private const string InstallationSlug = "installation";
 
@@ -88,7 +88,7 @@ public static class SitemapGenerator
         // The company-wide pages are reachable under every country, but their content is
         // identical everywhere and their canonical URL is the culture's default
         // country (SeoHead.SameForEveryCountry). Listing only that one keeps the
-        // sitemap free of ~3750 duplicates of the same five documents.
+        // sitemap free of ~5250 duplicates of the same seven documents.
         foreach (var slug in CompanyWideSlugs)
         {
             foreach (var culture in SupportedCultures.All)

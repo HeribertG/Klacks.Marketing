@@ -1,0 +1,105 @@
+@page "/{country}/ueber-uns"
+@page "/{culture}/{country}/ueber-uns"
+@inject IPageContentProvider ContentProvider
+
+<PageTitle>@GetText("pageTitle")</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
+
+<div class="min-h-screen bg-surface text-on-surface">
+    <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-6">
+            @GetText("hero.title")
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+            @GetText("hero.subtitle")
+        </p>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-8 md:py-12 px-8">
+        <div class="bg-surface-container rounded-2xl p-8 md:p-12 grid md:grid-cols-3 gap-8 items-start">
+            <img src="@FounderImagePath" alt="@GetText("founder.imageAlt")" width="480" height="600" loading="lazy" class="w-full max-w-[16rem] mx-auto rounded-2xl" />
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold mb-4">@GetText("founder.title")</h2>
+                @for (var i = 0; i < StoryParagraphCount; i++)
+                {
+                    <p class="text-on-surface-variant leading-relaxed mb-4">@GetText($"founder.story.{i}")</p>
+                }
+                <p class="text-on-surface-variant leading-relaxed">@GetText("founder.text")</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-8 md:py-12 px-8">
+        <h2 class="text-2xl font-bold mb-4">@GetText("ai.title")</h2>
+        <p class="text-on-surface-variant leading-relaxed mb-6">@GetText("ai.text")</p>
+        <div class="bg-surface-container rounded-xl p-6 mb-6">
+            <h3 class="font-bold mb-3">@GetText("ai.ownerTitle")</h3>
+            <ul class="list-disc pl-5 space-y-2 text-sm text-on-surface-variant">
+                @for (var i = 0; i < OwnerItemCount; i++)
+                {
+                    <li>@GetText($"ai.ownerItems.{i}")</li>
+                }
+            </ul>
+        </div>
+        <p class="text-sm text-on-surface-variant">@GetText("ai.note")</p>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-8 md:py-12 px-8">
+        <h2 class="text-2xl font-bold mb-2">@GetText("continuity.title")</h2>
+        <p class="text-on-surface-variant mb-8">@GetText("continuity.subtitle")</p>
+        <div class="grid md:grid-cols-3 gap-6">
+            @foreach (var (icon, index) in ContinuityItems)
+            {
+                <div class="bg-surface-container rounded-xl p-6">
+                    <span class="material-symbols-outlined text-secondary text-2xl mb-3">@icon</span>
+                    <h3 class="font-bold mb-2">@GetText($"continuity.items.{index}.title")</h3>
+                    <p class="text-sm text-on-surface-variant">@GetText($"continuity.items.{index}.text")</p>
+                </div>
+            }
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-8 md:py-12 pb-16 px-8">
+        <h2 class="text-2xl font-bold mb-4">@GetText("contact.title")</h2>
+        <p class="text-on-surface-variant mb-6">@GetText("contact.text")</p>
+        <div class="flex flex-wrap gap-6 text-sm">
+            <a href="mailto:@ExternalLinks.ContactEmail" class="text-secondary font-semibold no-underline inline-flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">mail</span> @GetText("contact.email")
+            </a>
+            <a href="@ImprintHref" class="text-secondary font-semibold no-underline inline-flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">info</span> @GetText("contact.imprint")
+            </a>
+            <a href="@ExternalLinks.GithubUrl" target="_blank" class="text-secondary font-semibold no-underline inline-flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">code</span> @GetText("links.github")
+            </a>
+        </div>
+    </section>
+</div>
+
+@code {
+    private const string PageKey = "ueber-uns";
+    private const int OwnerItemCount = 4;
+    private const int StoryParagraphCount = 3;
+    private const string FounderImagePath = "/images/heribert-gasparoli.webp";
+
+    private static readonly (string Icon, int Index)[] ContinuityItems =
+    {
+        ("groups", 0),
+        ("build", 1),
+        ("code", 2),
+        ("storage", 3),
+        ("update", 4),
+    };
+
+    [Parameter] public string? Culture { get; set; }
+
+    // Present so the route binds; the page content is company-wide and does not
+    // vary by country.
+    [Parameter] public string? Country { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+
+    private string ImprintHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.ImprintSlug);
+
+    private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
+}

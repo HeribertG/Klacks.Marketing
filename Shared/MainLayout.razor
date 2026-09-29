@@ -206,6 +206,8 @@
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PartnerHref">@Sh("footer.partner")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ComparisonHref">@Sh("footer.comparison")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
             <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
@@ -220,13 +222,15 @@
     private const string PrivacyPageKey = "datenschutz";
     private const string LicensePageKey = "lizenz";
     private const string PartnerPageKey = "partner";
+    private const string SmallBusinessPageKey = "kleine-betriebe";
+    private const string AboutPageKey = "ueber-uns";
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
 
     // Pages whose content is the same for every country and culture combination.
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
-        ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey,
+        ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
     };
 
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
@@ -430,6 +434,10 @@
     private string PartnerHref => CompanyWideHref(PartnerPageKey);
 
     private string ComparisonHref => CompanyWideHref(ComparisonPageKey);
+
+    private string SmallBusinessHref => CompanyWideHref(SmallBusinessPageKey);
+
+    private string AboutHref => CompanyWideHref(AboutPageKey);
 
     private string CompanyWideHref(string pageKey)
     {
