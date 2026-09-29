@@ -6,6 +6,8 @@
     "build:css": "tailwindcss -i tailwind-input.css -o wwwroot/css/site.css --minify",
     "watch:css": "tailwindcss -i tailwind-input.css -o wwwroot/css/site.css --watch",
     "generate:brand-images": "node tools/generate-brand-images.mjs",
+    "capture:screenshots": "node tools/capture-app-screenshots.mjs",
+    "capture:videos": "node tools/capture-app-videos.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "license": "AGPL-3.0-only",
   "description": "",
   "devDependencies": {
+    "playwright-core": "1.61.1",
     "png-to-ico": "^3.0.1",
     "sharp": "^0.35.3",
     "tailwindcss": "^3.4.19"

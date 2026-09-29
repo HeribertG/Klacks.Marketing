@@ -1,0 +1,49 @@
+{
+  "klacksy-plans-week": {
+    "de": {
+      "messages": [
+        {
+          "text": "Starte den Planassistenten für Winterthur vom 2. bis 8. November 2026."
+        },
+        {
+          "text": "Zeig mir das Ergebnis des Assistenten.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, übernimm es.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "ar": {
+      "messages": [
+        {
+          "text": "شغّل مساعد التخطيط لفريق فينترتور من 2 إلى 8 نوفمبر 2026."
+        },
+        {
+          "text": "أرني نتيجة المساعد.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "نعم، اعتمدها.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "ja": {
+      "messages": [
+        {
+          "text": "ヴィンタートゥールの2026年11月2日から8日までのプランニングアシスタントを開始してください。"
+        },
+        {
+          "text": "アシスタントの結果を見せてください。",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "はい、採用してください。",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    }
+  }
+}
