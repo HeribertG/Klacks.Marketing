@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Install Klacks: On-Prem or Docker Compose with Your Country Package | Klacks",
-  "metaDescription": "Install Klacks on your own infrastructure: guided on-prem installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and surcharges. No license fees, open source, no registration.",
+  "pageTitle": "Install Klacks: Guided Installer or Docker Compose with Your Country Package | Klacks",
+  "metaDescription": "Install Klacks on your own infrastructure: guided installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and surcharges. No license fees, open source, no registration.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; No license fees &amp; open source",
     "titleHtml": "Run Klacks yourself &mdash; <span class=\"text-secondary\">on your own infrastructure.</span>",
-    "subtitle": "Two paths, one result: the guided on-prem installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules, surcharges and industry presets &mdash; no registration, no licence fees."
+    "subtitle": "Two paths, one result: the guided installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules, surcharges and industry presets &mdash; no registration, no licence fees."
   },
   "industry": {
     "eyebrow": "Country package",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-prem installer",
+    "title": "Guided installer",
     "text": "The guided path for your own server: an install script generates secrets and a self-signed certificate, pulls the latest released version and brings up the whole stack &mdash; on Linux or Windows.",
     "requirementsTitle": "Requirements",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Run the install script", "text": "Run the bundled shell script on Linux, or the PowerShell script on Windows. It generates secrets and the certificate, applies the country profile and waits until the stack is healthy." },
       { "title": "Log in and change the password", "text": "Log in from your browser and immediately change the initial password listed in the bundled README." }
     ],
-    "downloadLabel": "Download on-prem package"
+    "downloadLabel": "Download installation package"
   },
   "compose": {
     "icon": "deployed_code",

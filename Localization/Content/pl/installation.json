@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Instalacja Klacks: On-Prem lub Docker Compose z pakietem krajowym | Klacks",
-  "metaDescription": "Klacks na własnej infrastrukturze: prowadzony instalator On-Prem lub stack Docker Compose, wstępnie skonfigurowany ze świętami państwowymi, regułami czasu pracy i dodatkami dla Państwa kraju. Bez opłat licencyjnych, open source, bez rejestracji.",
+  "pageTitle": "Instalacja Klacks: prowadzony instalator lub Docker Compose z pakietem krajowym | Klacks",
+  "metaDescription": "Klacks na własnej infrastrukturze: prowadzony instalator lub stack Docker Compose, wstępnie skonfigurowany ze świętami państwowymi, regułami czasu pracy i dodatkami dla Państwa kraju. Bez opłat licencyjnych, open source, bez rejestracji.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalacja &middot; Bez opłat licencyjnych &amp; open source",
     "titleHtml": "Klacks u siebie &mdash; <span class=\"text-secondary\">na własnej infrastrukturze.</span>",
-    "subtitle": "Dwie drogi, jeden rezultat: prowadzony instalator On-Prem albo stack Docker Compose dla własnej konfiguracji. Pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy, dodatki i branżowe ustawienia wstępne Państwa kraju &mdash; bez rejestracji, bez opłat licencyjnych."
+    "subtitle": "Dwie drogi, jeden rezultat: prowadzony instalator albo stack Docker Compose dla własnej konfiguracji. Pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy, dodatki i branżowe ustawienia wstępne Państwa kraju &mdash; bez rejestracji, bez opłat licencyjnych."
   },
   "industry": {
     "eyebrow": "Pakiet krajowy",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "Instalator On-Prem",
+    "title": "Prowadzony instalator",
     "text": "Prowadzona droga na własny serwer: skrypt instalacyjny generuje sekrety i samopodpisany certyfikat, pobiera najnowszą opublikowaną wersję i uruchamia cały stack &mdash; na Linuksie lub Windows.",
     "requirementsTitle": "Wymagania",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Uruchomienie skryptu instalacyjnego", "text": "Na Linuksie uruchamiają Państwo dołączony skrypt powłoki, na Windows skrypt PowerShell. Generuje on sekrety i certyfikat, wprowadza profil krajowy i czeka, aż cały stack będzie gotowy do pracy." },
       { "title": "Logowanie i zmiana hasła", "text": "Logują się Państwo w przeglądarce i natychmiast zmieniają hasło początkowe podane w dołączonym pliku README." }
     ],
-    "downloadLabel": "Pobierz pakiet On-Prem"
+    "downloadLabel": "Pobierz pakiet instalacyjny"
   },
   "compose": {
     "icon": "deployed_code",

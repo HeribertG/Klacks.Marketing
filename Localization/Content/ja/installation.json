@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Klacksのインストール：国別パッケージ付きOn-PremまたはDocker Compose | Klacks",
-  "metaDescription": "Klacksを自社インフラにインストール：ガイド付きOn-PremインストーラーまたはDocker Composeスタック。貴社の国の祝日、労働時間規則、割増手当があらかじめ設定済み。ライセンス料不要、オープンソース、登録不要。",
+  "pageTitle": "Klacksのインストール：国別パッケージ付きの自社導入またはDocker Compose | Klacks",
+  "metaDescription": "Klacksを自社インフラにインストール：ガイド付きインストーラーまたはDocker Composeスタック。貴社の国の祝日、労働時間規則、割増手当があらかじめ設定済み。ライセンス料不要、オープンソース、登録不要。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "インストール &middot; ライセンス料不要 &amp; オープンソース",
     "titleHtml": "Klacksを自分で運用する &mdash; <span class=\"text-secondary\">自社のインフラ上で。</span>",
-    "subtitle": "2つの方法、1つの結果：ガイド付きOn-Premインストーラー、または独自セットアップ向けのDocker Composeスタック。国別パッケージには、貴社の国の祝日、労働時間規則、割増手当、業種プリセットが最初から含まれています &mdash; 登録不要、ライセンス費用もかかりません。"
+    "subtitle": "2つの方法、1つの結果：ガイド付きインストーラー、または独自セットアップ向けのDocker Composeスタック。国別パッケージには、貴社の国の祝日、労働時間規則、割増手当、業種プリセットが最初から含まれています &mdash; 登録不要、ライセンス費用もかかりません。"
   },
   "industry": {
     "eyebrow": "国別パッケージ",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Premインストーラー",
+    "title": "ガイド付きインストーラー",
     "text": "自社サーバー向けのガイド付きの方法：インストールスクリプトがシークレットと自己署名証明書を生成し、最新のリリース版を取得してスタック全体を起動します &mdash; LinuxでもWindowsでも。",
     "requirementsTitle": "必要条件",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "インストールスクリプトを実行", "text": "Linuxでは同梱のシェルスクリプトを、WindowsではPowerShellスクリプトを実行します。シークレットと証明書を生成し、国別プロファイルを適用して、スタックが正常に起動するまで待機します。" },
       { "title": "ログインしてパスワードを変更", "text": "ブラウザからログインし、同梱のREADMEに記載された初期パスワードをただちに変更します。" }
     ],
-    "downloadLabel": "On-Premパッケージをダウンロード"
+    "downloadLabel": "インストールパッケージをダウンロード"
   },
   "compose": {
     "icon": "deployed_code",

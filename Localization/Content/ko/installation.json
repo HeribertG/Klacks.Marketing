@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Klacks 설치: 국가별 패키지와 함께 On-Prem 또는 Docker Compose | Klacks",
-  "metaDescription": "자체 인프라에 Klacks 설치: 가이드형 On-Prem 설치 프로그램 또는 Docker Compose 스택, 귀사 국가의 공휴일, 근로시간 규정, 할증 수당이 사전 구성되어 있습니다. 라이선스 비용 없음, 오픈 소스, 등록 불필요.",
+  "pageTitle": "Klacks 설치: 국가별 패키지와 함께 직접 설치 또는 Docker Compose | Klacks",
+  "metaDescription": "자체 인프라에 Klacks 설치: 가이드형 설치 프로그램 또는 Docker Compose 스택, 귀사 국가의 공휴일, 근로시간 규정, 할증 수당이 사전 구성되어 있습니다. 라이선스 비용 없음, 오픈 소스, 등록 불필요.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "설치 &middot; 라이선스 비용 없음 &amp; 오픈 소스",
     "titleHtml": "Klacks를 직접 운영하세요 &mdash; <span class=\"text-secondary\">귀사의 자체 인프라에서.</span>",
-    "subtitle": "두 가지 방법, 하나의 결과: 가이드형 On-Prem 설치 프로그램 또는 자체 구성을 위한 Docker Compose 스택. 국가별 패키지에는 귀사 국가의 공휴일, 근로시간 규정, 할증 수당, 업종별 사전 설정이 처음부터 포함되어 있습니다 &mdash; 등록도, 라이선스 비용도 필요 없습니다."
+    "subtitle": "두 가지 방법, 하나의 결과: 가이드형 설치 프로그램 또는 자체 구성을 위한 Docker Compose 스택. 국가별 패키지에는 귀사 국가의 공휴일, 근로시간 규정, 할증 수당, 업종별 사전 설정이 처음부터 포함되어 있습니다 &mdash; 등록도, 라이선스 비용도 필요 없습니다."
   },
   "industry": {
     "eyebrow": "국가별 패키지",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem 설치 프로그램",
+    "title": "가이드형 설치 프로그램",
     "text": "자체 서버를 위한 가이드형 방법: 설치 스크립트가 시크릿과 자체 서명 인증서를 생성하고, 최신 릴리스 버전을 가져와 전체 스택을 시작합니다 &mdash; Linux와 Windows 모두에서.",
     "requirementsTitle": "요구 사항",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "설치 스크립트 실행", "text": "Linux에서는 함께 제공되는 셸 스크립트를, Windows에서는 PowerShell 스크립트를 실행합니다. 스크립트는 시크릿과 인증서를 생성하고 국가 프로필을 적용하며 스택이 정상 작동할 때까지 기다립니다." },
       { "title": "로그인 후 비밀번호 변경", "text": "브라우저에서 로그인하고 함께 제공되는 README에 적힌 초기 비밀번호를 즉시 변경합니다." }
     ],
-    "downloadLabel": "On-Prem 패키지 다운로드"
+    "downloadLabel": "설치 패키지 다운로드"
   },
   "compose": {
     "icon": "deployed_code",

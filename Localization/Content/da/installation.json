@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Installér Klacks: On-Prem eller Docker Compose med din landepakke | Klacks",
-  "metaDescription": "Installér Klacks på din egen infrastruktur: guidet On-Prem-installer eller Docker Compose-stack, forudkonfigureret med dit lands helligdage, arbejdstidsregler og tillæg. Ingen licensafgifter, open source, uden registrering.",
+  "pageTitle": "Installér Klacks: guidet installer eller Docker Compose med din landepakke | Klacks",
+  "metaDescription": "Installér Klacks på din egen infrastruktur: guidet installer eller Docker Compose-stack, forudkonfigureret med dit lands helligdage, arbejdstidsregler og tillæg. Ingen licensafgifter, open source, uden registrering.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ingen licensafgifter &amp; open source",
     "titleHtml": "Kør selv Klacks &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
-    "subtitle": "To veje, ét resultat: den guidede On-Prem-installer eller Docker Compose-stacken til dit eget setup. Landepakken leveres med dit lands helligdage, arbejdstidsregler, tillæg og brancheforudindstillinger &mdash; ingen registrering, ingen licensomkostninger."
+    "subtitle": "To veje, ét resultat: den guidede installer eller Docker Compose-stacken til dit eget setup. Landepakken leveres med dit lands helligdage, arbejdstidsregler, tillæg og brancheforudindstillinger &mdash; ingen registrering, ingen licensomkostninger."
   },
   "industry": {
     "eyebrow": "Landepakke",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem-installer",
+    "title": "Guidet installer",
     "text": "Den guidede vej til din egen server: et installationsscript genererer secrets og et selvsigneret certifikat, henter den seneste udgivne version og starter hele stacken &mdash; på Linux eller Windows.",
     "requirementsTitle": "Forudsætninger",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Kør installationsscriptet", "text": "Kør det medfølgende shell-script på Linux eller PowerShell-scriptet på Windows. Det genererer secrets og certifikatet, anvender landeprofilen og venter, indtil stacken kører." },
       { "title": "Log ind, og skift adgangskode", "text": "Log ind fra din browser, og skift straks den indledende adgangskode, der står i den medfølgende README." }
     ],
-    "downloadLabel": "Download On-Prem-pakke"
+    "downloadLabel": "Download installationspakke"
   },
   "compose": {
     "icon": "deployed_code",

@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Klacks installeren: On-Prem of Docker Compose met landenpakket | Klacks",
-  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide On-Prem-installer of Docker Compose-stack, voorgeconfigureerd met de feestdagen, arbeidstijdregels en toeslagen van uw land. Geen licentiekosten, open source, zonder registratie.",
+  "pageTitle": "Klacks installeren: begeleide installer of Docker Compose met landenpakket | Klacks",
+  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide installer of Docker Compose-stack, voorgeconfigureerd met de feestdagen, arbeidstijdregels en toeslagen van uw land. Geen licentiekosten, open source, zonder registratie.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installatie &middot; Geen licentiekosten &amp; open source",
     "titleHtml": "Klacks zelf draaien &mdash; <span class=\"text-secondary\">op uw eigen infrastructuur.</span>",
-    "subtitle": "Twee wegen, één resultaat: de begeleide On-Prem-installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels, toeslagen en branchevoorinstellingen van uw land &mdash; zonder registratie, zonder licentiekosten."
+    "subtitle": "Twee wegen, één resultaat: de begeleide installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels, toeslagen en branchevoorinstellingen van uw land &mdash; zonder registratie, zonder licentiekosten."
   },
   "industry": {
     "eyebrow": "Landenpakket",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem-installer",
+    "title": "Begeleide installer",
     "text": "De begeleide weg voor uw eigen server: een installatiescript genereert secrets en een zelfondertekend certificaat, haalt de laatst uitgebrachte versie op en start de complete stack &mdash; op Linux of Windows.",
     "requirementsTitle": "Vereisten",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Installatiescript uitvoeren", "text": "Voer op Linux het meegeleverde shellscript uit, op Windows het PowerShell-script. Het genereert secrets en het certificaat, past het landenprofiel toe en wacht tot de stack draait." },
       { "title": "Inloggen en wachtwoord wijzigen", "text": "Log in via de browser en wijzig direct het initiële wachtwoord uit de meegeleverde README." }
     ],
-    "downloadLabel": "On-Prem-pakket downloaden"
+    "downloadLabel": "Installatiepakket downloaden"
   },
   "compose": {
     "icon": "deployed_code",

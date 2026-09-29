@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in the UAE",
     "titleHtml": "Rosters that <span class=\"text-secondary\">hold up in an emergency too.</span>",
-    "subtitle": "Klacks schedules wards around the clock, lets you record emergency call-outs as an exception to the overtime limit separately with notes, and monitors the 144-hour total per 3-week period live &mdash; on-premise, so patient data never leaves your organisation.",
+    "subtitle": "Klacks schedules wards around the clock, lets you record emergency call-outs as an exception to the overtime limit separately with notes, and monitors the 144-hour total per 3-week period live &mdash; installed on your premises, so patient data never leaves your organisation.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals in the UAE",
     "screenshotLabel": "Schedule"
@@ -25,7 +25,7 @@
       { "icon": "emergency", "title": "Emergency overtime recorded separately", "text": "Emergency call-outs that exceed the regular 2-hour daily limit can be recorded separately in Klacks with notes on the reason &mdash; traceable, not blanket." },
       { "icon": "gavel", "title": "The 144-hour cap monitored live", "text": "Klacks monitors total working hours per 3-week period live against the 144-hour cap and warns before the limit is exceeded &mdash; even where emergency call-outs are involved. On request, Klacks strictly enforces the excess as a hard block &mdash; a new violation can then only be saved with documented supervisor approval." },
       { "icon": "verified", "title": "Qualifications factored in automatically", "text": "Every shift is only assigned to staff with the matching qualification &mdash; with no manual checking at all." },
-      { "icon": "shield_lock", "title": "On-premise: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data never leave the hospital &mdash; not even for the AI." },
       { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Fill next week's night shifts for the ward\" is all it takes &mdash; Klacksy automatically factors in qualifications and shows the 144-hour total." }
     ]
   },

@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Instalace Klacks: On-Prem nebo Docker Compose s balíčkem pro vaši zemi | Klacks",
-  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: řízený On-Prem instalátor nebo Docker Compose stack, předkonfigurovaný se svátky, pravidly pracovní doby a příplatky vaší země. Žádné licenční poplatky, open source, bez registrace.",
+  "pageTitle": "Instalace Klacks: řízený instalátor nebo Docker Compose s balíčkem pro vaši zemi | Klacks",
+  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: řízený instalátor nebo Docker Compose stack, předkonfigurovaný se svátky, pravidly pracovní doby a příplatky vaší země. Žádné licenční poplatky, open source, bez registrace.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalace &middot; Žádné licenční poplatky &amp; open source",
     "titleHtml": "Provozujte Klacks sami &mdash; <span class=\"text-secondary\">na vlastní infrastruktuře.</span>",
-    "subtitle": "Dvě cesty, jeden výsledek: řízený On-Prem instalátor, nebo Docker Compose stack pro vaše vlastní prostředí. Balíček pro zemi přináší svátky, pravidla pracovní doby, příplatky i oborová přednastavení vaší země &mdash; bez registrace, bez licenčních poplatků."
+    "subtitle": "Dvě cesty, jeden výsledek: řízený instalátor, nebo Docker Compose stack pro vaše vlastní prostředí. Balíček pro zemi přináší svátky, pravidla pracovní doby, příplatky i oborová přednastavení vaší země &mdash; bez registrace, bez licenčních poplatků."
   },
   "industry": {
     "eyebrow": "Balíček pro zemi",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem instalátor",
+    "title": "Řízený instalátor",
     "text": "Řízená cesta pro vlastní server: instalační skript vygeneruje tajné klíče (secrets) a samopodepsaný certifikát, stáhne nejnovější vydanou verzi a spustí celý stack &mdash; na Linuxu i Windows.",
     "requirementsTitle": "Předpoklady",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Spustit instalační skript", "text": "Na Linuxu spusťte přiložený shellový skript, na Windows skript PowerShell. Vygeneruje tajné klíče a certifikát, aplikuje profil země a počká, dokud celý stack neběží." },
       { "title": "Přihlásit se a změnit heslo", "text": "Přihlaste se v prohlížeči a ihned změňte výchozí heslo uvedené v přiloženém README." }
     ],
-    "downloadLabel": "Stáhnout On-Prem balíček"
+    "downloadLabel": "Stáhnout instalační balíček"
   },
   "compose": {
     "icon": "deployed_code",

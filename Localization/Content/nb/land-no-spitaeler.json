@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For sykehus &amp; klinikker i Norge",
     "titleHtml": "Vaktplaner som <span class=\"text-secondary\">overholder Spekter-turnusen.</span>",
-    "subtitle": "Klacks avbilder den helkontinuerlige 3-skiftturnusen etter Spekter-tariffavtalen med den reduserte 33,6-timersuken lagt inn som grenseverdi, og beregner helligdags- og helgetillegg korrekt. On-Premise, slik at pasientdata aldri forlater huset ditt.",
+    "subtitle": "Klacks avbilder den helkontinuerlige 3-skiftturnusen etter Spekter-tariffavtalen med den reduserte 33,6-timersuken lagt inn som grenseverdi, og beregner helligdags- og helgetillegg korrekt. Installert hos deg, slik at pasientdata aldri forlater huset ditt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vaktplan-rutenett for norske sykehus og klinikker",
     "screenshotLabel": "Vaktplan"
@@ -25,7 +25,7 @@
       { "icon": "schedule", "title": "24/7-dekning uten hull", "text": "Dag-, kvelds- og nattevakter på tvers av alle avdelinger &mdash; Klacks viser hvert hull umiddelbart og fyller det automatisk på forespørsel." },
       { "icon": "gavel", "title": "33,6-timersuke konfigurerbart lagt inn", "text": "For den helkontinuerlige 3-skiftturnusen med minst hver 3. søndag som tjenestedag legger du inn den reduserte 33,6-timersuken etter Spekter A2 som grenseverdi &mdash; Klacks overvåker det rullerende ukesnittet fortløpende og varsler før grenseverdien overskrides. Søndagsrotasjonen holder Klacks samtidig oversikt over i det rullerende vinduet &mdash; nattevakter som strekker seg inn i søndagen, telles da korrekt som søndagsvakt." },
       { "icon": "payments", "title": "Helligdags- &amp; helgetillegg beregnet automatisk", "text": "Helligdagstillegget på 133,33 % og helgetillegget på 26 % (minst 75 NOK/time) anvendes automatisk på hver berørte vakt &mdash; minstebeløpet per time er lagt inn direkte som nedre grense i tilleggsregelen." },
-      { "icon": "shield_lock", "title": "On-Premise: data blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata forlater ikke klinikken &mdash; heller ikke til KI-en." },
+      { "icon": "shield_lock", "title": "Installert hos deg: data blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata forlater ikke klinikken &mdash; heller ikke til KI-en." },
       { "icon": "smart_toy", "title": "Klacksy planlegger med stemmen", "text": "«Fyll nattevaktene for indremedisin neste uke» er nok &mdash; Klacksy tar hensyn til kvalifikasjon og turnusregime." },
       { "icon": "groups", "title": "Vikarpool &amp; fravær", "text": "Faller noen fra, viser Klacks straks tilgjengelige, kvalifiserte vikarer &mdash; uten å velte hele planen." }
     ]

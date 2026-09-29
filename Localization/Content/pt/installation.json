@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Instalar a Klacks: On-Prem ou Docker Compose com pacote de país | Klacks",
-  "metaDescription": "Instale a Klacks na sua própria infraestrutura: instalador On-Prem guiado ou stack Docker Compose, pré-configurado com os feriados, as regras de tempo de trabalho e os suplementos do seu país. Sem taxas de licença, código aberto, sem registo.",
+  "pageTitle": "Instalar a Klacks: instalador guiado ou Docker Compose com pacote de país | Klacks",
+  "metaDescription": "Instale a Klacks na sua própria infraestrutura: instalador guiado ou stack Docker Compose, pré-configurado com os feriados, as regras de tempo de trabalho e os suplementos do seu país. Sem taxas de licença, código aberto, sem registo.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalação &middot; Sem taxas de licença &amp; código aberto",
     "titleHtml": "Opere a Klacks por conta própria &mdash; <span class=\"text-secondary\">na sua própria infraestrutura.</span>",
-    "subtitle": "Dois caminhos, um resultado: o instalador On-Prem guiado ou o stack Docker Compose para a sua própria configuração. O pacote de país traz consigo os feriados, as regras de tempo de trabalho, os suplementos e as predefinições por setor do seu país &mdash; sem registo, sem custos de licença."
+    "subtitle": "Dois caminhos, um resultado: o instalador guiado ou o stack Docker Compose para a sua própria configuração. O pacote de país traz consigo os feriados, as regras de tempo de trabalho, os suplementos e as predefinições por setor do seu país &mdash; sem registo, sem custos de licença."
   },
   "industry": {
     "eyebrow": "Pacote de país",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "Instalador On-Prem",
+    "title": "Instalador guiado",
     "text": "O caminho guiado para o seu próprio servidor: um script de instalação gera os segredos e um certificado autoassinado, obtém a versão publicada mais recente e arranca todo o stack &mdash; em Linux ou Windows.",
     "requirementsTitle": "Requisitos",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Executar o script de instalação", "text": "Execute o script de shell incluído em Linux, ou o script PowerShell em Windows. Gera os segredos e o certificado, aplica o perfil de país e aguarda até o stack estar operacional." },
       { "title": "Iniciar sessão e alterar a palavra-passe", "text": "Inicie sessão no browser e altere de imediato a palavra-passe inicial indicada no README incluído." }
     ],
-    "downloadLabel": "Transferir pacote On-Prem"
+    "downloadLabel": "Transferir pacote de instalação"
   },
   "compose": {
     "icon": "deployed_code",

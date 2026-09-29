@@ -20,7 +20,7 @@
       { "icon": "schedule", "text": "근무시간 기록" },
       { "icon": "event_busy", "text": "결근 관리" },
       { "icon": "gavel", "text": "규칙 및 수당" },
-      { "icon": "dns", "text": "온프레미스" },
+      { "icon": "dns", "text": "귀사에 설치" },
       { "icon": "code", "text": "오픈 소스" }
     ]
   },
@@ -31,7 +31,7 @@
       {
         "icon": "download",
         "title": "설치",
-        "text": "Klacks는 자체 인프라에서 온프레미스로 실행됩니다 &mdash; Docker로 몇 분이면 준비 완료."
+        "text": "Klacks는 자체 인프라에서 실행됩니다 &mdash; Docker로 몇 분이면 준비 완료."
       },
       {
         "icon": "tune",

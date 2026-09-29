@@ -20,7 +20,7 @@
       { "icon": "schedule", "text": "勤怠管理" },
       { "icon": "event_busy", "text": "休暇管理" },
       { "icon": "gavel", "text": "規則・割増" },
-      { "icon": "dns", "text": "オンプレミス" },
+      { "icon": "dns", "text": "自社内に導入" },
       { "icon": "code", "text": "オープンソース" }
     ]
   },
@@ -31,7 +31,7 @@
       {
         "icon": "download",
         "title": "インストール",
-        "text": "Klacksは自社インフラ上でオンプレミス稼働 &mdash; Dockerで数分で準備完了。"
+        "text": "Klacksは自社インフラ上で稼働 &mdash; Dockerで数分で準備完了。"
       },
       {
         "icon": "tune",

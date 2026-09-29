@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Vietnam",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und kumuliert die Nacht-Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; On-Premise, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und kumuliert die Nacht-Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze stehen damit fertig berechnet in der Stundenbasis für Ihre Lohnabrechnung." },
       { "icon": "schedule", "title": "12-Stunden-Schichtruhe überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde. Auf Wunsch blockiert Klacks den Verstoß hart &mdash; eine unzulässige Schichtfolge lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "On-Premise: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy plant per Sprache", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und das Jahresbudget." }
     ]
   },

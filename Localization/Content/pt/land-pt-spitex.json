@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para o Apoio Domiciliário &amp; cuidados de saúde ao domicílio em Portugal",
     "titleHtml": "Mais tempo para cuidar, <span class=\"text-secondary\">menos para planear rotas.</span>",
-    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; incluindo o tempo de deslocação entre utentes como tempo de trabalho integral, mesmo na primeira e na última viagem, quando não existe um local de trabalho fixo. On-premise, para que os dados dos utentes nunca saiam das suas instalações.",
+    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; incluindo o tempo de deslocação entre utentes como tempo de trabalho integral, mesmo na primeira e na última viagem, quando não existe um local de trabalho fixo. Instalado nas suas instalações, para que os dados dos utentes nunca saiam das suas instalações.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista de linha temporal do Klacks para o planeamento de rotas no apoio domiciliário em Portugal",
     "screenshotLabel": "Linha temporal"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Tempo de deslocação registado corretamente como tempo de trabalho", "text": "O Klacks contabiliza as deslocações entre utentes como tempo de trabalho &mdash; e, na ausência de um local fixo, também a primeira e a última viagem, tal como exige a interpretação do art. 197.º do CT." },
       { "icon": "bedtime", "title": "Descanso de 11 horas nos horários repartidos", "text": "O Klacks planeia os horários repartidos de forma a garantir o período de descanso mínimo de 11 horas consecutivas em cada período de 24 horas." },
       { "icon": "verified", "title": "Qualificações consideradas automaticamente", "text": "Cada intervenção só é atribuída a pessoas com a qualificação adequada &mdash; sem qualquer verificação manual." },
-      { "icon": "shield_lock", "title": "On-premise: os dados ficam nas suas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes não saem das suas instalações &mdash; nem sequer para a IA." },
+      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados ficam nas suas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes não saem das suas instalações &mdash; nem sequer para a IA." },
       { "icon": "smart_toy", "title": "O Klacksy planeia por comando de voz", "text": "Basta dizer «Preenche as rotas para amanhã». Em caso de falta, o Klacksy sugere de imediato um substituto disponível." }
     ]
   },

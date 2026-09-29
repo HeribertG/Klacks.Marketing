@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Installer Klacks : On-Prem ou Docker Compose avec le paquet pays | Klacks",
-  "metaDescription": "Installez Klacks sur votre propre infrastructure : installateur on-prem guidé ou stack Docker Compose, préconfiguré avec les jours fériés, les règles de temps de travail et les majorations de votre pays. Sans frais de licence, open source, sans inscription.",
+  "pageTitle": "Installer Klacks : installateur guidé ou Docker Compose avec le paquet pays | Klacks",
+  "metaDescription": "Installez Klacks sur votre propre infrastructure : installateur guidé ou stack Docker Compose, préconfiguré avec les jours fériés, les règles de temps de travail et les majorations de votre pays. Sans frais de licence, open source, sans inscription.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Sans frais de licence &amp; open source",
     "titleHtml": "Exploitez Klacks vous-même &mdash; <span class=\"text-secondary\">sur votre propre infrastructure.</span>",
-    "subtitle": "Deux chemins, un même résultat : l'installateur on-prem guidé, ou le stack Docker Compose pour votre propre configuration. Le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail, les majorations et les préréglages sectoriels de votre pays &mdash; sans inscription, sans frais de licence."
+    "subtitle": "Deux chemins, un même résultat : l'installateur guidé, ou le stack Docker Compose pour votre propre configuration. Le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail, les majorations et les préréglages sectoriels de votre pays &mdash; sans inscription, sans frais de licence."
   },
   "industry": {
     "eyebrow": "Paquet pays",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "Installateur on-prem",
+    "title": "Installateur guidé",
     "text": "Le chemin guidé pour votre propre serveur : un script d'installation génère les secrets et un certificat auto-signé, récupère la dernière version publiée et démarre l'ensemble du stack &mdash; sous Linux ou Windows.",
     "requirementsTitle": "Prérequis",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Lancer le script d'installation", "text": "Exécutez le script shell fourni sous Linux, ou le script PowerShell sous Windows. Il génère les secrets et le certificat, applique le profil pays et attend que le stack soit opérationnel." },
       { "title": "Se connecter et changer le mot de passe", "text": "Connectez-vous depuis votre navigateur et changez immédiatement le mot de passe initial indiqué dans le README fourni." }
     ],
-    "downloadLabel": "Télécharger le paquet on-prem"
+    "downloadLabel": "Télécharger le pack d'installation"
   },
   "compose": {
     "icon": "deployed_code",

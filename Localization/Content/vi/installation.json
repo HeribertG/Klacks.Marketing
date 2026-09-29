@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Cài đặt Klacks: On-Prem hoặc Docker Compose với gói quốc gia của bạn | Klacks",
-  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt On-Prem có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp của quốc gia bạn. Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
+  "pageTitle": "Cài đặt Klacks: trình cài đặt có hướng dẫn hoặc Docker Compose với gói quốc gia của bạn | Klacks",
+  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp của quốc gia bạn. Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Cài đặt &middot; Không mất phí bản quyền &amp; mã nguồn mở",
     "titleHtml": "Tự vận hành Klacks &mdash; <span class=\"text-secondary\">trên hạ tầng của riêng bạn.</span>",
-    "subtitle": "Hai con đường, một kết quả: trình cài đặt On-Prem có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc, phụ cấp và các thiết lập sẵn theo ngành của quốc gia bạn &mdash; không cần đăng ký, không phí bản quyền."
+    "subtitle": "Hai con đường, một kết quả: trình cài đặt có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc, phụ cấp và các thiết lập sẵn theo ngành của quốc gia bạn &mdash; không cần đăng ký, không phí bản quyền."
   },
   "industry": {
     "eyebrow": "Gói quốc gia",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "Trình cài đặt On-Prem",
+    "title": "Trình cài đặt có hướng dẫn",
     "text": "Con đường có hướng dẫn cho máy chủ của riêng bạn: một tập lệnh cài đặt sẽ tạo các khóa bí mật và chứng chỉ tự ký, kéo về phiên bản phát hành mới nhất và khởi động toàn bộ stack &mdash; trên Linux hoặc Windows.",
     "requirementsTitle": "Yêu cầu",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Chạy tập lệnh cài đặt", "text": "Trên Linux chạy shell script đi kèm, trên Windows chạy tập lệnh PowerShell. Tập lệnh tạo các khóa bí mật và chứng chỉ, áp dụng hồ sơ quốc gia và chờ cho đến khi stack sẵn sàng hoạt động." },
       { "title": "Đăng nhập và đổi mật khẩu", "text": "Đăng nhập từ trình duyệt và đổi ngay mật khẩu ban đầu được ghi trong README đi kèm." }
     ],
-    "downloadLabel": "Tải gói On-Prem"
+    "downloadLabel": "Tải gói cài đặt"
   },
   "compose": {
     "icon": "deployed_code",

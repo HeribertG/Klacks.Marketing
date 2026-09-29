@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Installera Klacks: On-Prem eller Docker Compose med landspaket | Klacks",
-  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat On-Prem-installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och tillägg. Inga licensavgifter, öppen källkod, utan registrering.",
+  "pageTitle": "Installera Klacks: guidat installationsprogram eller Docker Compose med landspaket | Klacks",
+  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och tillägg. Inga licensavgifter, öppen källkod, utan registrering.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Inga licensavgifter &amp; öppen källkod",
     "titleHtml": "Kör Klacks själv &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
-    "subtitle": "Två vägar, ett resultat: det guidade On-Prem-installationsprogrammet eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler, tillägg och branschförinställningar &mdash; utan registrering, utan licenskostnader."
+    "subtitle": "Två vägar, ett resultat: det guidade installationsprogrammet eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler, tillägg och branschförinställningar &mdash; utan registrering, utan licenskostnader."
   },
   "industry": {
     "eyebrow": "Landspaket",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem-installationsprogram",
+    "title": "Guidat installationsprogram",
     "text": "Den guidade vägen för din egen server: ett installationsskript genererar secrets och ett självsignerat certifikat, hämtar den senast släppta versionen och startar hela stacken &mdash; på Linux eller Windows.",
     "requirementsTitle": "Krav",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Kör installationsskriptet", "text": "Kör det medföljande shellskriptet på Linux, eller PowerShell-skriptet på Windows. Det genererar secrets och certifikatet, tillämpar landsprofilen och väntar tills stacken är igång." },
       { "title": "Logga in och byt lösenord", "text": "Logga in i webbläsaren och byt omedelbart det initiala lösenordet som anges i den medföljande README-filen." }
     ],
-    "downloadLabel": "Ladda ner On-Prem-paketet"
+    "downloadLabel": "Ladda ner installationspaketet"
   },
   "compose": {
     "icon": "deployed_code",

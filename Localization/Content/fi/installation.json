@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Asenna Klacks: On-Prem tai Docker Compose maapaketilla | Klacks",
-  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu On-Prem-asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja lisillä. Ei lisenssimaksuja, avoin lähdekoodi, ei rekisteröitymistä.",
+  "pageTitle": "Asenna Klacks: ohjattu asennusohjelma tai Docker Compose maapaketilla | Klacks",
+  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja lisillä. Ei lisenssimaksuja, avoin lähdekoodi, ei rekisteröitymistä.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Asennus &middot; Ei lisenssimaksuja &amp; avoin lähdekoodi",
     "titleHtml": "Ajakaa Klacksia itse &mdash; <span class=\"text-secondary\">omassa infrastruktuurissanne.</span>",
-    "subtitle": "Kaksi polkua, yksi lopputulos: ohjattu On-Prem-asennusohjelma tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt, lisät ja toimialakohtaiset esiasetukset &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
+    "subtitle": "Kaksi polkua, yksi lopputulos: ohjattu asennusohjelma tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt, lisät ja toimialakohtaiset esiasetukset &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
   },
   "industry": {
     "eyebrow": "Maapaketti",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem-asennusohjelma",
+    "title": "Ohjattu asennusohjelma",
     "text": "Ohjattu polku omalle palvelimelle: asennusskripti luo salaisuudet ja itseallekirjoitetun varmenteen, noutaa uusimman julkaistun version ja käynnistää koko pinon &mdash; Linuxissa tai Windowsissa.",
     "requirementsTitle": "Vaatimukset",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Asennusskriptin suoritus", "text": "Suorittakaa Linuxissa mukana tuleva shell-skripti tai Windowsissa PowerShell-skripti. Se luo salaisuudet ja varmenteen, ottaa maaprofiilin käyttöön ja odottaa, kunnes pino on toiminnassa." },
       { "title": "Kirjautuminen ja salasanan vaihto", "text": "Kirjautukaa selaimella sisään ja vaihtakaa heti mukana tulevassa README-tiedostossa mainittu alkusalasana." }
     ],
-    "downloadLabel": "Lataa On-Prem-paketti"
+    "downloadLabel": "Lataa asennuspaketti"
   },
   "compose": {
     "icon": "deployed_code",

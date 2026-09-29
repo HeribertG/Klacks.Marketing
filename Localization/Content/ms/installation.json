@@ -1,11 +1,11 @@
 {
-  "pageTitle": "Pasang Klacks: On-Prem atau Docker Compose dengan Pakej Negara Anda | Klacks",
-  "metaDescription": "Pasang Klacks pada infrastruktur Anda sendiri: pemasang On-Prem berpandu atau stack Docker Compose, diprakonfigurasi dengan cuti umum, peraturan waktu bekerja dan elaun negara Anda. Tiada yuran lesen, sumber terbuka, tanpa pendaftaran.",
+  "pageTitle": "Pasang Klacks: Pemasang Berpandu atau Docker Compose dengan Pakej Negara Anda | Klacks",
+  "metaDescription": "Pasang Klacks pada infrastruktur Anda sendiri: pemasang berpandu atau stack Docker Compose, diprakonfigurasi dengan cuti umum, peraturan waktu bekerja dan elaun negara Anda. Tiada yuran lesen, sumber terbuka, tanpa pendaftaran.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Pemasangan &middot; Tiada yuran lesen &amp; sumber terbuka",
     "titleHtml": "Jalankan Klacks sendiri &mdash; <span class=\"text-secondary\">pada infrastruktur Anda sendiri.</span>",
-    "subtitle": "Dua laluan, satu hasil: pemasang On-Prem berpandu, atau stack Docker Compose untuk persediaan Anda sendiri. Pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja, elaun dan pratetap industri negara Anda &mdash; tanpa pendaftaran, tanpa yuran lesen."
+    "subtitle": "Dua laluan, satu hasil: pemasang berpandu, atau stack Docker Compose untuk persediaan Anda sendiri. Pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja, elaun dan pratetap industri negara Anda &mdash; tanpa pendaftaran, tanpa yuran lesen."
   },
   "industry": {
     "eyebrow": "Pakej negara",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "Pemasang On-Prem",
+    "title": "Pemasang Berpandu",
     "text": "Laluan berpandu untuk pelayan Anda sendiri: skrip pemasangan menjana kunci rahsia dan sijil ditandatangan sendiri, menarik versi terbitan terkini dan menghidupkan keseluruhan stack &mdash; pada Linux atau Windows.",
     "requirementsTitle": "Keperluan",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "Jalankan skrip pemasangan", "text": "Jalankan skrip shell yang disertakan pada Linux, atau skrip PowerShell pada Windows. Ia menjana kunci rahsia dan sijil, menggunakan profil negara dan menunggu sehingga stack berjalan dengan baik." },
       { "title": "Log masuk dan tukar kata laluan", "text": "Log masuk dari pelayar Anda dan segera tukar kata laluan awal yang tersenarai dalam README yang disertakan." }
     ],
-    "downloadLabel": "Muat turun pakej On-Prem"
+    "downloadLabel": "Muat turun pakej pemasangan"
   },
   "compose": {
     "icon": "deployed_code",

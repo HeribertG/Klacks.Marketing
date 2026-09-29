@@ -1,11 +1,11 @@
 {
-  "pageTitle": "安装 Klacks：On-Prem 或 Docker Compose，附国家套件 | Klacks",
-  "metaDescription": "在自有基础设施上安装 Klacks：引导式 On-Prem 安装程序或 Docker Compose 堆栈，预先配置好您所在国家的法定节假日、工时规则和津贴。无许可费用、开源、无需注册。",
+  "pageTitle": "安装 Klacks：引导式安装程序或 Docker Compose，附国家套件 | Klacks",
+  "metaDescription": "在自有基础设施上安装 Klacks：引导式 安装程序或 Docker Compose 堆栈，预先配置好您所在国家的法定节假日、工时规则和津贴。无许可费用、开源、无需注册。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "安装 &middot; 无许可费用 &amp; 开源",
     "titleHtml": "自行运行 Klacks &mdash; <span class=\"text-secondary\">在您自己的基础设施上。</span>",
-    "subtitle": "两条路径，同一结果：引导式 On-Prem 安装程序，或适用于自有环境的 Docker Compose 堆栈。国家套件随附您所在国家的法定节假日、工时规则、津贴和行业预设 &mdash; 无需注册，没有许可费用。"
+    "subtitle": "两条路径，同一结果：引导式 安装程序，或适用于自有环境的 Docker Compose 堆栈。国家套件随附您所在国家的法定节假日、工时规则、津贴和行业预设 &mdash; 无需注册，没有许可费用。"
   },
   "industry": {
     "eyebrow": "国家套件",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem 安装程序",
+    "title": "引导式安装程序",
     "text": "适用于自有服务器的引导式路径：安装脚本生成密钥和自签名证书，拉取最新发布版本并启动整个堆栈 &mdash; 支持 Linux 和 Windows。",
     "requirementsTitle": "前提条件",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "运行安装脚本", "text": "在 Linux 上运行随附的 Shell 脚本，在 Windows 上运行 PowerShell 脚本。脚本会生成密钥和证书，应用国家配置文件，并等待堆栈正常运行。" },
       { "title": "登录并修改密码", "text": "在浏览器中登录，并立即修改随附 README 中列出的初始密码。" }
     ],
-    "downloadLabel": "下载 On-Prem 套件"
+    "downloadLabel": "下载 安装包"
   },
   "compose": {
     "icon": "deployed_code",

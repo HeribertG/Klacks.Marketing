@@ -1,11 +1,11 @@
 {
-  "pageTitle": "安裝 Klacks：On-Prem 或 Docker Compose，附國家套件 | Klacks",
-  "metaDescription": "在自有基礎設施上安裝 Klacks：引導式 On-Prem 安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日、工時規則與加給。沒有授權費用、開源、無需註冊。",
+  "pageTitle": "安裝 Klacks：引導式安裝程式或 Docker Compose，附國家套件 | Klacks",
+  "metaDescription": "在自有基礎設施上安裝 Klacks：引導式 安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日、工時規則與加給。沒有授權費用、開源、無需註冊。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "安裝 &middot; 沒有授權費用 &amp; 開源",
     "titleHtml": "自行架設 Klacks &mdash; <span class=\"text-secondary\">在您自己的基礎設施上。</span>",
-    "subtitle": "兩條路徑，同一結果：引導式 On-Prem 安裝程式，或適用於自有環境的 Docker Compose 堆疊。國家套件隨附您所在國家的國定假日、工時規則、加給與行業預設值 &mdash; 無需註冊，沒有授權費用。"
+    "subtitle": "兩條路徑，同一結果：引導式 安裝程式，或適用於自有環境的 Docker Compose 堆疊。國家套件隨附您所在國家的國定假日、工時規則、加給與行業預設值 &mdash; 無需註冊，沒有授權費用。"
   },
   "industry": {
     "eyebrow": "國家套件",
@@ -15,7 +15,7 @@
   },
   "onPrem": {
     "icon": "dns",
-    "title": "On-Prem 安裝程式",
+    "title": "引導式安裝程式",
     "text": "適用於自有伺服器的引導式路徑：安裝指令碼會產生密鑰與自簽憑證，取得最新發行版本並啟動整個堆疊 &mdash; 支援 Linux 與 Windows。",
     "requirementsTitle": "系統需求",
     "requirements": [
@@ -29,7 +29,7 @@
       { "title": "執行安裝指令碼", "text": "在 Linux 上執行隨附的 Shell 指令碼，在 Windows 上執行 PowerShell 指令碼。它會產生密鑰與憑證，套用國家設定檔，並等待堆疊正常運作。" },
       { "title": "登入並變更密碼", "text": "在瀏覽器中登入，並立即變更隨附 README 中所列的初始密碼。" }
     ],
-    "downloadLabel": "下載 On-Prem 套件"
+    "downloadLabel": "下載 安裝套件"
   },
   "compose": {
     "icon": "deployed_code",
