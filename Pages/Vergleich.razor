@@ -34,31 +34,31 @@
                         <tr class="border-b border-outline/20 @(row.IsHighlighted ? "bg-secondary/5" : "")">
                             <td class="p-5 @(row.IsHighlighted ? "font-semibold" : "")">@row.Feature</td>
                             <td class="p-5 text-center">
-                                @if (row.Klacks == "yes")
+                                @if (row.Klacks == Yes)
                                 {
                                     <span class="material-symbols-outlined text-green-600 text-2xl">check_circle</span>
                                 }
-                                else if (row.Klacks == "partial")
+                                else if (row.Klacks == No)
+                                {
+                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
+                                }
+                                else
                                 {
                                     <span class="text-secondary font-medium">@row.KlacksLabel</span>
                                 }
-                                else
-                                {
-                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
-                                }
                             </td>
                             <td class="p-5 text-center">
-                                @if (row.Saas == "yes")
+                                @if (row.Saas == Yes)
                                 {
                                     <span class="material-symbols-outlined text-green-600 text-2xl">check_circle</span>
                                 }
-                                else if (row.Saas == "partial")
+                                else if (row.Saas == No)
                                 {
-                                    <span class="text-on-surface-variant font-medium">@row.SaasLabel</span>
+                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
                                 }
                                 else
                                 {
-                                    <span class="material-symbols-outlined text-red-500 text-2xl">cancel</span>
+                                    <span class="text-on-surface-variant font-medium">@row.SaasLabel</span>
                                 }
                             </td>
                         </tr>
@@ -123,6 +123,9 @@
 </div>
 
 @code {
+    private const string Yes = "yes";
+    private const string No = "no";
+
     [Parameter] public string? Culture { get; set; }
 
     // The comparison is company-wide; the country only keeps the navigation context.

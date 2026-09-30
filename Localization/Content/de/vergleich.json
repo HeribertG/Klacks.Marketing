@@ -19,36 +19,36 @@
   "table.rows.gps": "Live-GPS-Tracking",
 
   "table.values.free": "Ohne Lizenzgebühren",
-  "table.values.perUser": "Monatlich pro Mitarbeiter",
-  "table.values.few": "2-8 Sprachen",
-  "table.values.limited": "1-5 Länder",
-  "table.values.generic": "Generisch",
+  "table.values.perUser": "Meist Abo pro Person, teils Gratis-Stufe",
+  "table.values.few": "Je nach Anbieter",
+  "table.values.limited": "Je nach Anbieter",
+  "table.values.generic": "Je nach Anbieter",
   "table.values.some": "Teilweise",
 
   "details.title": "Die Unterschiede im Detail",
   "details.items.0.icon": "cloud_off",
   "details.items.0.title": "Hosting: bei Ihnen installiert (On-Premise) vs. Cloud",
-  "details.items.0.text": "Klacks läuft auf Ihrer eigenen Infrastruktur via Docker. Mit einem lokalen KI-Modell verlassen Personaldaten Ihr Haus nicht. SaaS-Lösungen speichern Daten auf eigenen Servern, oft in den USA. Der Wechsel zu einem anderen Anbieter ist bei SaaS aufwändig (Datenexport, Migration).",
+  "details.items.0.text": "Klacks läuft auf Ihrer eigenen Infrastruktur via Docker. Mit einem lokalen KI-Modell verlassen Personaldaten Ihr Haus nicht. Sie bestimmen selbst, wo Ihre Daten liegen, und haben jederzeit vollen Zugriff auf die Datenbank.",
 
   "details.items.1.icon": "code",
   "details.items.1.title": "Lizenz: Open Source vs. proprietär",
-  "details.items.1.text": "Klacks ist unter der AGPL-3.0 ohne Lizenzgebühren nutzbar — kein Abo, keine pro-Mitarbeiter-Gebühren. Sie können den Code einsehen, anpassen und selbst hosten; wer eine geänderte Fassung anderen über ein Netzwerk anbietet, legt deren Quellcode offen. SaaS-Anbieter sind proprietär: Sie zahlen monatlich pro Mitarbeiter und haben keine Kontrolle über den Code.",
+  "details.items.1.text": "Klacks ist unter der AGPL-3.0 ohne Lizenzgebühren nutzbar — kein Abo, keine pro-Mitarbeiter-Gebühren. Sie können den Code einsehen, anpassen und selbst hosten; wer eine geänderte Fassung anderen über ein Netzwerk anbietet, legt deren Quellcode offen. So behalten Sie die Kontrolle über Code und Daten.",
 
   "details.items.2.icon": "psychology",
-  "details.items.2.title": "KI-Assistent: Modellwahl vs. Blackbox",
-  "details.items.2.text": "Klacksy unterstützt 7+ Provider (OpenAI, Anthropic, Google, Mistral, DeepSeek, lokale Modelle). Der Admin wählt — kein Lock-in. Die meisten SaaS-Anbieter haben keine KI-Planung oder eine proprietäre Blackbox die nicht austauschbar ist.",
+  "details.items.2.title": "KI-Assistent: freie Modellwahl",
+  "details.items.2.text": "Bei Klacks wählen Sie das KI-Modell selbst: Anthropic, Azure, DeepSeek, Gemini, Mistral, OpenAI sowie generische und lokal betriebene Modelle. Der Admin entscheidet — kein Lock-in.",
 
   "details.items.3.icon": "translate",
-  "details.items.3.title": "Sprachen: 25 vs. begrenzt",
-  "details.items.3.text": "Klacks unterstützt 25 Sprachen (4 Core + 21 Plugins). SaaS-Lösungen bieten typischerweise 2-8 Sprachen. Für internationale Teams ist Klacks damit deutlich flexibler.",
+  "details.items.3.title": "Sprachen: 25 unterstützt",
+  "details.items.3.text": "Klacks unterstützt 25 Sprachen (4 Core + 21 Plugins). Damit eignet sich Klacks auch für internationale Teams.",
 
   "details.items.4.icon": "public",
   "details.items.4.title": "Compliance: 30+ Länder vorkonfiguriert",
-  "details.items.4.text": "Klacks kommt mit Feiertagskalendern und Arbeitszeitregeln für 30 Länder. SaaS-Anbieter decken meist nur DACH oder DACH+EN ab. Eigene Regelparameter (29+) ermöglichen branchenspezifische Anpassungen.",
+  "details.items.4.text": "Klacks kommt mit Feiertagskalendern und Arbeitszeitregeln für 30 Länder. Eigene Regelparameter (29+) ermöglichen branchenspezifische Anpassungen.",
 
   "details.items.5.icon": "category",
   "details.items.5.title": "Branchen: 6 Vorlagen + Custom",
-  "details.items.5.text": "Klacks liefert Vorlagen für Spitex, Spitäler, Security, Facility, Logistik und Hotellerie/Gastro. Mit Klacksy können Sie darüber hinaus jede beliebige Branche konfigurieren (29+ Parameter). SaaS-Lösungen sind meist generisch.",
+  "details.items.5.text": "Klacks liefert Vorlagen für Spitex, Spitäler, Security, Facility, Logistik und Hotellerie/Gastro. Mit Klacksy können Sie darüber hinaus jede beliebige Branche konfigurieren (29+ Parameter).",
 
   "honest.title": "Was Klacks nicht kann (ehrlich)",
   "honest.intro": "Wir übertreiben nicht. Hier sind die Grenzen von Klacks:",
