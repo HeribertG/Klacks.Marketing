@@ -1,4 +1,4 @@
-// Playback control for the looping demo video (RuleConflictVideo.razor).
+// Playback control for the looping demo videos (DemoVideo.razor).
 // Same pattern as scroll-reveal.js: vanilla IIFE, init via IJSRuntime, MutationObserver
 // for Blazor Server re-rendering the prerendered DOM. Under prefers-reduced-motion the
 // video never plays (CSS additionally shows only the poster image); otherwise it is

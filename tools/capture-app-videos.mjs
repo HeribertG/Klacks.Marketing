@@ -72,6 +72,9 @@ const VIDEO_NOISE_CSS = `
   .tooltip, .mat-mdc-tooltip, ngb-tooltip-window, .badge-mail, .mail-badge, app-company-clock-warning { display: none !important; }
   * { caret-color: transparent !important; }
 `;
+const CHAT_VIDEO_NOISE_CSS = `${VIDEO_NOISE_CSS}
+  app-toasts { display: none !important; }
+`;
 
 const OCTOBER = { year: 2026, month: 10, isoWeek: 41 };
 const NOVEMBER = { year: 2026, month: 11, isoWeek: 45 };
@@ -157,7 +160,8 @@ const CANVAS_SETTLE_MS = 1500;
 const STABLE_POLL_MS = 150;
 const STABLE_MAX_CHECKS = 40;
 
-const BEAT = { intro: 300, hover: 300, afterDrop: 250, afterTab: 150, holdResult: 1200, readAnswer: 3500, finalHold: 3000 };
+const BEAT = { intro: 300, hover: 300, afterDrop: 250, afterTab: 150, holdResult: 1200, readAnswer: 3500, finalHold: 6000 };
+const CUT = Number.POSITIVE_INFINITY;
 const MOVE = { short: 400, normal: 600, drag: 850 };
 const TYPE_DELAY_MS = 55;
 const FAST_FACTOR = { validation: 4, llm: 12, wizard: 40 };
@@ -166,6 +170,7 @@ const NOT_ACCEPTED = "notAccepted";
 const PLANNING_SKILLS = ["start_autowizard", "start_wizard1"];
 const ACCEPT_SKILL = "accept_scenario";
 const JOB_ID_PATTERN = /job ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i;
+const ACCEPTED_SCENARIO_ID_PATTERN = /scenario ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}) accepted/i;
 const JOB_STATUS_RUNNING = "running";
 const JOB_STATUS_API = { start_autowizard: "/api/backend/AutoWizard/Status", start_wizard1: "/api/backend/Wizard/Status" };
 const SKILL_ERROR_PREFIX = "Error:";
@@ -849,6 +854,23 @@ function startedJob(turns) {
   return null;
 }
 
+function startedJobCount(turns) {
+  return turns.flatMap((turn) => turn.results ?? [])
+    .filter((r) => PLANNING_SKILLS.includes(r.name) && !r.result.startsWith(SKILL_ERROR_PREFIX) && JOB_ID_PATTERN.test(r.result))
+    .length;
+}
+
+function acceptedScenarioId(turns) {
+  for (const turn of turns) {
+    for (const r of turn.results ?? []) {
+      if (r.name !== ACCEPT_SKILL || r.result.startsWith(SKILL_ERROR_PREFIX)) continue;
+      const id = (r.result.match(ACCEPTED_SCENARIO_ID_PATTERN) ?? [])[1];
+      if (id) return id.toLowerCase();
+    }
+  }
+  return null;
+}
+
 function acceptedScenario(turns) {
   return turns.some((turn) => turn.results?.some((r) => r.name === ACCEPT_SKILL && !r.result.startsWith(SKILL_ERROR_PREFIX)));
 }
@@ -868,7 +890,15 @@ async function waitForJobAndScenario(take, job) {
       if (status && status.status !== JOB_STATUS_RUNNING) break;
       await page.waitForTimeout(SCENARIO_POLL_MS);
     }
-    report.job = { ...job, status: status?.status ?? null, reason: status?.reason ?? null };
+    report.job = {
+      ...job,
+      status: status?.status ?? null,
+      reason: status?.reason ?? null,
+      finalScenarioId: status?.result?.finalScenarioId ?? null,
+      finalScenarioName: status?.result?.finalScenarioName ?? null,
+      harmonizationSkipped: status?.result?.harmonizationSkipped ?? null,
+      harmonizationSkippedReason: status?.result?.harmonizationSkippedReason ?? null,
+    };
     log(`job ${job.skill} ${job.id}: ${report.job.status}${report.job.reason ? ` (${report.job.reason})` : ""}`);
     const scenarios = (await api.scenarios(options.groupId)) ?? [];
     return scenarios.find(overlapsPlanWeek) ?? null;
@@ -913,7 +943,7 @@ async function takeKlacksyPlansWeek(take) {
       log(`calls: ${turn.calls.map((c) => c.name).join(", ") || "-"}; answer: ${oneLine(turn.content, LOG_PREVIEW_CHARS)}`);
     }
     if (!page.url().includes(S.SCHEDULE_PATH)) report.navigatedAwayTo = page.url();
-    await recorder.beginFast(FAST_FACTOR.validation);
+    await recorder.beginFast(CUT);
     await openSchedule(page, options);
     await recorder.endFast();
     report.posterAt = ScreenRecorder.now();
@@ -922,9 +952,19 @@ async function takeKlacksyPlansWeek(take) {
     await recorder.stop({ posterAt: report.posterAt ?? null, crop: deviceCrop({ x: 0, y: 0, ...viewport }, scale) });
     report.planWeekWorksAfterTake = worksIn(await api.schedule(filter), PLAN_WEEK.from, PLAN_WEEK.until).length;
     report.acceptedViaChat = acceptedScenario(report.turns);
-    report.publishable = report.planWeekWorksAfterTake > 0 && report.acceptedViaChat;
+    report.startedJobs = startedJobCount(report.turns);
+    report.acceptedScenarioId = acceptedScenarioId(report.turns);
+    report.holisticRan = report.job?.harmonizationSkipped === false;
+    report.acceptedFinalScenario = report.acceptedScenarioId !== null
+      && report.acceptedScenarioId === String(report.job?.finalScenarioId ?? "").toLowerCase();
+    report.publishable = report.planWeekWorksAfterTake > 0 && report.acceptedViaChat && report.startedJobs === 1
+      && report.holisticRan && report.acceptedFinalScenario;
     if (!report.publishable && !report.failure) {
-      report.failure = report.acceptedViaChat ? "no works landed in the plan week" : "Klacksy did not accept the scenario in the chat";
+      if (!report.acceptedViaChat) report.failure = "Klacksy did not accept the scenario in the chat";
+      else if (report.startedJobs !== 1) report.failure = `Klacksy started ${report.startedJobs} planning jobs instead of one`;
+      else if (!report.holisticRan) report.failure = `stage 3 did not run: ${report.job?.harmonizationSkippedReason ?? report.job?.reason ?? "unknown"}`;
+      else if (!report.acceptedFinalScenario) report.failure = "Klacksy accepted a scenario other than the job's final one";
+      else report.failure = "no works landed in the plan week";
     }
     report.octoberUnchanged = sameSnapshot(octoberBefore, snapshotOf(await api.schedule(octoberFilter), PROTECTED_MONTH));
     if (!report.octoberUnchanged) throw new Error("October changed during the Klacksy take - check the demo data!");
@@ -932,8 +972,8 @@ async function takeKlacksyPlansWeek(take) {
 }
 
 const TAKES = {
-  [VIDEO_REST_CONFLICT]: { period: OCTOBER, viewport: VIEWPORT, run: takeRestConflict },
-  [VIDEO_KLACKSY_PLANS_WEEK]: { period: NOVEMBER, viewport: CHAT_VIEWPORT, run: takeKlacksyPlansWeek },
+  [VIDEO_REST_CONFLICT]: { period: OCTOBER, viewport: VIEWPORT, css: VIDEO_NOISE_CSS, run: takeRestConflict },
+  [VIDEO_KLACKSY_PLANS_WEEK]: { period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek },
 };
 
 async function recordTake(browser, options, shared, video, culture) {
@@ -946,7 +986,7 @@ async function recordTake(browser, options, shared, video, culture) {
     deviceScaleFactor: scale,
     viewMode: S.VIEW_MODE_TABLE,
     period: definition.period,
-    css: VIDEO_NOISE_CSS,
+    css: definition.css,
     extraInitScripts: [cursorInitScript(start)],
   });
   const page = await context.newPage();

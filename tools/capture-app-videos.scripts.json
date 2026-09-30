@@ -44,6 +44,336 @@
           "sendWhen": "notAccepted"
         }
       ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Start the planning assistant for Winterthur from 2 to 8 November 2026."
+        },
+        {
+          "text": "Show me the assistant's result.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Yes, apply it.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Lance l'assistant de planification pour Winterthour du 2 au 8 novembre 2026."
+        },
+        {
+          "text": "Montre-moi le résultat de l'assistant.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Oui, accepte cette proposition.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Avvia l'assistente di pianificazione per Winterthur dal 2 all'8 novembre 2026."
+        },
+        {
+          "text": "Mostrami il risultato dell'assistente.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Sì, applicalo.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "cs": {
+      "messages": [
+        {
+          "text": "Spusť plánovacího asistenta pro Winterthur od 2. do 8. listopadu 2026."
+        },
+        {
+          "text": "Ukaž mi výsledek asistenta.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ano, schval ho.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "da": {
+      "messages": [
+        {
+          "text": "Start planlægningsassistenten for Winterthur fra 2. til 8. november 2026."
+        },
+        {
+          "text": "Vis mig assistentens resultat.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, accepter scenariet.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "el": {
+      "messages": [
+        {
+          "text": "Ξεκίνα τον βοηθό προγραμματισμού για το Βίντερτουρ από 2 έως 8 Νοεμβρίου 2026."
+        },
+        {
+          "text": "Δείξε μου το αποτέλεσμα του βοηθού.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ναι, αποδέξου την πρόταση.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "es": {
+      "messages": [
+        {
+          "text": "Inicia el asistente de planificación para Winterthur del 2 al 8 de noviembre de 2026."
+        },
+        {
+          "text": "Muéstrame el resultado del asistente.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Sí, aplícalo.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "fi": {
+      "messages": [
+        {
+          "text": "Käynnistä suunnitteluavustaja Winterthurille 2.–8. marraskuuta 2026."
+        },
+        {
+          "text": "Näytä avustajan tulos.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Kyllä, hyväksy se.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "he": {
+      "messages": [
+        {
+          "text": "הפעל את עוזר התכנון עבור וינטרתור מ-2 עד 8 בנובמבר 2026."
+        },
+        {
+          "text": "הראה לי את התוצאה של העוזר.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "כן, אשר את ההצעה.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "id": {
+      "messages": [
+        {
+          "text": "Jalankan asisten perencanaan untuk Winterthur dari 2 sampai 8 November 2026."
+        },
+        {
+          "text": "Tunjukkan hasil asisten kepada saya.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ya, terapkan.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "ko": {
+      "messages": [
+        {
+          "text": "빈터투어의 2026년 11월 2일부터 8일까지 계획 도우미를 시작해 주세요."
+        },
+        {
+          "text": "도우미 결과를 보여 주세요.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "네, 이 시나리오를 수락해 주세요.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "ms": {
+      "messages": [
+        {
+          "text": "Mulakan pembantu perancangan untuk Winterthur dari 2 hingga 8 November 2026."
+        },
+        {
+          "text": "Tunjukkan hasil pembantu kepada saya.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ya, luluskan cadangan ini.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "nb": {
+      "messages": [
+        {
+          "text": "Start planleggingsassistenten for Winterthur fra 2. til 8. november 2026."
+        },
+        {
+          "text": "Vis meg resultatet fra assistenten.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, godkjenn forslaget.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "nl": {
+      "messages": [
+        {
+          "text": "Start de planningsassistent voor Winterthur van 2 tot en met 8 november 2026."
+        },
+        {
+          "text": "Laat me het resultaat van de assistent zien.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, neem het voorstel over.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "pl": {
+      "messages": [
+        {
+          "text": "Uruchom asystenta planowania dla Winterthur od 2 do 8 listopada 2026."
+        },
+        {
+          "text": "Pokaż mi wynik asystenta.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Tak, zaakceptuj ten scenariusz.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "pt": {
+      "messages": [
+        {
+          "text": "Inicia o assistente de planeamento para Winterthur de 2 a 8 de novembro de 2026."
+        },
+        {
+          "text": "Mostra-me o resultado do assistente.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Sim, aceita a proposta.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "ro": {
+      "messages": [
+        {
+          "text": "Pornește asistentul de planificare pentru Winterthur între 2 și 8 noiembrie 2026."
+        },
+        {
+          "text": "Arată-mi rezultatul asistentului.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Da, acceptă propunerea.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "sv": {
+      "messages": [
+        {
+          "text": "Starta planeringsassistenten för Winterthur från 2 till 8 november 2026."
+        },
+        {
+          "text": "Visa mig assistentens resultat.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, godkänn förslaget.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "th": {
+      "messages": [
+        {
+          "text": "เริ่มผู้ช่วยวางแผนสำหรับวินเทอร์ทูร์ ตั้งแต่วันที่ 2 ถึง 8 พฤศจิกายน 2026"
+        },
+        {
+          "text": "แสดงผลลัพธ์ของผู้ช่วยให้ดูหน่อย",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "ใช่ อนุมัติข้อเสนอนี้เลย",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "vi": {
+      "messages": [
+        {
+          "text": "Hãy khởi chạy trợ lý lập kế hoạch cho Winterthur từ ngày 2 đến ngày 8 tháng 11 năm 2026."
+        },
+        {
+          "text": "Cho tôi xem kết quả của trợ lý.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Có, hãy chấp nhận đề xuất này.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "zh-CN": {
+      "messages": [
+        {
+          "text": "为温特图尔启动2026年11月2日至8日的排班助手。"
+        },
+        {
+          "text": "给我看看助手的结果。",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "好的，采用这个方案。",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    },
+    "zh-TW": {
+      "messages": [
+        {
+          "text": "為溫特圖爾啟動2026年11月2日至8日的排班助理。"
+        },
+        {
+          "text": "讓我看看助理的結果。",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "好，採用這個方案。",
+          "sendWhen": "notAccepted"
+        }
+      ]
     }
   }
 }

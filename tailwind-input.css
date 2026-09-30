@@ -133,7 +133,7 @@ nav.glass-nav.nav-scrolled {
     border-radius: inherit;
 }
 
-/* Looping demo video (RuleConflictVideo.razor). The poster image is the static
+/* Looping demo video (DemoVideo.razor). The poster image is the static
    stand-in: under reduced motion only the poster is shown and the video is never
    displayed (rule-conflict-video.js additionally keeps it paused). */
 .rule-demo-poster {
