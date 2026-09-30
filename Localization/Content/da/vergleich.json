@@ -24,35 +24,35 @@
   "table.values.generic": "Afhænger af udbyderen",
   "table.values.some": "Delvist",
 
-  "extend.title": "Mangler I noget? Klacks kan udvides.",
-  "extend.text": "Klacks kan udvides med udvidelser (plugins). Måske dækker en gratis udvidelse allerede netop det – ellers kan der efter aftale udvikles en skræddersyet udvidelse til jeres virksomhed.",
+  "extend.title": "Mangler du noget? Klacks kan udvides.",
+  "extend.text": "Klacks kan udvides via udvidelser (plugins). Måske findes der allerede en gratis udvidelse, der dækker netop dette – ellers kan der på forespørgsel udvikles en skræddersyet udvidelse til din virksomhed.",
   "extend.marketplace": "Se udvidelser i Store",
   "extend.custom": "Forespørg om en skræddersyet udvidelse",
 
   "details.title": "Forskellene i detaljer",
   "details.items.0.icon": "cloud_off",
   "details.items.0.title": "Hosting: installeret hos dig (on-premise) vs. cloud",
-  "details.items.0.text": "Klacks kører på jeres egen infrastruktur via Docker. Med en lokal AI-model forlader personaledata ikke jeres virksomhed. I bestemmer selv, hvor jeres data ligger, og har til enhver tid fuld adgang til databasen.",
+  "details.items.0.text": "Klacks kører på din egen infrastruktur via Docker. Med en lokal AI-model forlader personaledata ikke din virksomhed. Du bestemmer selv, hvor dine data ligger, og har til enhver tid fuld adgang til databasen.",
 
   "details.items.1.icon": "code",
   "details.items.1.title": "Licens: Open source vs. proprietær",
-  "details.items.1.text": "Klacks kan bruges under AGPL-3.0 uden licensafgifter — intet abonnement, ingen afgifter pr. medarbejder. I kan se koden, tilpasse den og selv hoste den; hvis en ændret version stilles til rådighed for andre via et netværk, skal kildekoden offentliggøres. Sådan bevarer I kontrollen over kode og data.",
+  "details.items.1.text": "Klacks kan bruges under AGPL-3.0 uden licensafgifter — intet abonnement, ingen afgifter pr. medarbejder. Du kan se koden, tilpasse den og selv hoste den; den, der stiller en ændret version til rådighed for andre via et netværk, skal offentliggøre kildekoden. Sådan bevarer du kontrollen over kode og data.",
 
   "details.items.2.icon": "psychology",
   "details.items.2.title": "AI-assistent: frit valg af udbyder og model",
-  "details.items.2.text": "Klacksy fungerer sammen med OpenAI, Anthropic, Google, Mistral, DeepSeek og Azure – og med enhver anden udbyder med en OpenAI-kompatibel grænseflade, også med lokalt driftede modeller. Udbydere og modeller tilføjer I selv.",
+  "details.items.2.text": "Klacksy fungerer sammen med OpenAI, Anthropic, Google, Mistral, DeepSeek og Azure – og med enhver anden udbyder med en OpenAI-kompatibel grænseflade, også med lokalt driftede modeller. Udbydere og modeller tilføjer du selv.",
 
   "details.items.3.icon": "translate",
-  "details.items.3.title": "Sprog: 25 understøttet",
-  "details.items.3.text": "Klacks understøtter 25 sprog (4 kerne + 21 plugins). Dermed egner Klacks sig også til internationale teams.",
+  "details.items.3.title": "Sprog: 25 understøttede",
+  "details.items.3.text": "Klacks understøtter 25 sprog (4 kernesprog + 21 plugins). Dermed egner Klacks sig også til internationale teams.",
 
   "details.items.4.icon": "public",
   "details.items.4.title": "Compliance: 30+ lande forudkonfigureret",
-  "details.items.4.text": "Klacks leveres med helligdagsoversigter og regler for arbejdstid for 30 lande. Egne regelparametre (29+) muliggør branchespecifikke tilpasninger.",
+  "details.items.4.text": "Klacks leveres med helligdagskalendere og regler for arbejdstid for 30 lande. Egne regelparametre (29+) muliggør branchespecifikke tilpasninger.",
 
   "details.items.5.icon": "category",
   "details.items.5.title": "Brancher: 6 skabeloner + tilpassede",
-  "details.items.5.text": "Klacks leverer skabeloner til hjemmepleje, hospitaler, sikkerhed, facility management, logistik og hotel- og restaurationsbranchen. Med Klacksy kan I desuden konfigurere enhver branche (29+ parametre).",
+  "details.items.5.text": "Klacks leverer skabeloner til hjemmepleje, hospitaler, sikkerhed, facility management, logistik og hotel- og restaurationsbranchen. Med Klacksy kan du desuden konfigurere enhver branche (29+ parametre).",
 
   "honest.title": "Hvad Klacks ikke kan",
   "honest.intro": "Vi overdriver ikke. Her er grænserne for Klacks:",
@@ -63,7 +63,7 @@
   "honest.items.4": "Compliance-advarsler, ingen hard-block — Klacks advarer ved overtrædelser af arbejdstidsreglerne, men blokerer ikke gemningen (undtagen ved veto fra generalrådet).",
   "honest.extend": "Biometri og live-GPS kan i princippet tilføjes via en udvidelse (plugin). I dag findes der endnu ingen færdig udvidelse til det.",
 
-  "cta.title": "Vil I selv se det?",
+  "cta.title": "Vil du selv se det?",
   "cta.text": "Download Klacks, start Docker, og se forskellen i praksis. Ingen registrering, ingen licensafgifter.",
   "cta.install": "Installation",
   "cta.partner": "For konsulenter"

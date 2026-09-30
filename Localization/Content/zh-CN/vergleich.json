@@ -9,7 +9,7 @@
 
   "table.rows.hosting": "数据存储于自有基础设施（本地部署）",
   "table.rows.license": "开源（AGPL-3.0）",
-  "table.rows.ki": "可自由选择服务商和模型的 AI 助手",
+  "table.rows.ki": "可自由选择供应商和模型的 AI 助手",
   "table.rows.languages": "支持的语言",
   "table.rows.compliance": "预配置国家/地区",
   "table.rows.branches": "行业专用模板",
@@ -19,9 +19,9 @@
 
   "table.values.free": "无需许可费",
   "table.values.yes": "是",
-  "table.values.few": "视服务商而定",
-  "table.values.limited": "视服务商而定",
-  "table.values.generic": "视服务商而定",
+  "table.values.few": "视供应商而定",
+  "table.values.limited": "视供应商而定",
+  "table.values.generic": "视供应商而定",
   "table.values.some": "部分支持",
 
   "extend.title": "缺少什么功能？Klacks 可以扩展。",
@@ -39,8 +39,8 @@
   "details.items.1.text": "Klacks 基于 AGPL-3.0 许可，无需许可费即可使用——无需订阅，也不按员工人数收费。您可以查看、修改代码并自行托管；若通过网络向他人提供修改后的版本，则必须公开其源代码。这样，您就能掌控代码和数据。",
 
   "details.items.2.icon": "psychology",
-  "details.items.2.title": "AI 助手：自由选择服务商和模型",
-  "details.items.2.text": "Klacksy 可与 OpenAI、Anthropic、Google、Mistral、DeepSeek 和 Azure 配合使用，也支持任何其他提供 OpenAI 兼容接口的服务商，包括本地运行的模型。服务商和模型由您自行添加。",
+  "details.items.2.title": "AI 助手：自由选择供应商和模型",
+  "details.items.2.text": "Klacksy 可与 OpenAI、Anthropic、Google、Mistral、DeepSeek 和 Azure 配合使用，也支持任何其他提供 OpenAI 兼容接口的供应商，包括本地运行的模型。供应商和模型由您自行添加。",
 
   "details.items.3.icon": "translate",
   "details.items.3.title": "语言：支持 25 种",
