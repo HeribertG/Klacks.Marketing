@@ -140,14 +140,13 @@
 
     private ComparisonRow[] GetComparisonRows() => new[]
     {
-        new ComparisonRow { Feature = GetText("table.rows.hosting"), Klacks = "yes", Saas = "no", IsHighlighted = true },
+        new ComparisonRow { Feature = GetText("table.rows.hosting"), Klacks = "yes", Saas = "partial", SaasLabel = GetText("table.values.some"), IsHighlighted = true },
         new ComparisonRow { Feature = GetText("table.rows.license"), Klacks = "yes", Saas = "no" },
         new ComparisonRow { Feature = GetText("table.rows.ki"), Klacks = "yes", Saas = "no", IsHighlighted = true },
-        new ComparisonRow { Feature = GetText("table.rows.lockin"), Klacks = "yes", Saas = "no" },
         new ComparisonRow { Feature = GetText("table.rows.languages"), Klacks = "25", KlacksLabel = "25", Saas = "partial", SaasLabel = GetText("table.values.few") },
         new ComparisonRow { Feature = GetText("table.rows.compliance"), Klacks = "30+", KlacksLabel = "30+", Saas = "partial", SaasLabel = GetText("table.values.limited") },
         new ComparisonRow { Feature = GetText("table.rows.branches"), Klacks = "yes", Saas = "partial", SaasLabel = GetText("table.values.generic") },
-        new ComparisonRow { Feature = GetText("table.rows.price"), Klacks = "free", KlacksLabel = GetText("table.values.free"), Saas = "per-user", SaasLabel = GetText("table.values.perUser") },
+        new ComparisonRow { Feature = GetText("table.rows.price"), Klacks = "free", KlacksLabel = GetText("table.values.free"), Saas = "billing", SaasLabel = GetText("table.values.yes") },
         new ComparisonRow { Feature = GetText("table.rows.biometrie"), Klacks = "no", Saas = "partial", SaasLabel = GetText("table.values.some") },
         new ComparisonRow { Feature = GetText("table.rows.gps"), Klacks = "no", Saas = "partial", SaasLabel = GetText("table.values.some") },
     };

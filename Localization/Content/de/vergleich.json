@@ -9,8 +9,7 @@
 
   "table.rows.hosting": "Daten auf eigener Infrastruktur (On-Premise)",
   "table.rows.license": "Open Source (AGPL-3.0)",
-  "table.rows.ki": "KI-Assistent mit freier Modellwahl",
-  "table.rows.lockin": "Kein Vendor-Lock-in",
+  "table.rows.ki": "KI-Assistent mit freier Anbieter- und Modellwahl",
   "table.rows.languages": "Sprachen unterstützt",
   "table.rows.compliance": "Länder vorkonfiguriert",
   "table.rows.branches": "Branchenspezifische Vorlagen",
@@ -19,7 +18,7 @@
   "table.rows.gps": "Live-GPS-Tracking",
 
   "table.values.free": "Ohne Lizenzgebühren",
-  "table.values.perUser": "Meist Abo pro Person, teils Gratis-Stufe",
+  "table.values.yes": "Ja",
   "table.values.few": "Je nach Anbieter",
   "table.values.limited": "Je nach Anbieter",
   "table.values.generic": "Je nach Anbieter",
@@ -35,8 +34,8 @@
   "details.items.1.text": "Klacks ist unter der AGPL-3.0 ohne Lizenzgebühren nutzbar — kein Abo, keine pro-Mitarbeiter-Gebühren. Sie können den Code einsehen, anpassen und selbst hosten; wer eine geänderte Fassung anderen über ein Netzwerk anbietet, legt deren Quellcode offen. So behalten Sie die Kontrolle über Code und Daten.",
 
   "details.items.2.icon": "psychology",
-  "details.items.2.title": "KI-Assistent: freie Modellwahl",
-  "details.items.2.text": "Bei Klacks wählen Sie das KI-Modell selbst: Anthropic, Azure, DeepSeek, Gemini, Mistral, OpenAI sowie generische und lokal betriebene Modelle. Der Admin entscheidet — kein Lock-in.",
+  "details.items.2.title": "KI-Assistent: freie Wahl von Anbieter und Modell",
+  "details.items.2.text": "Klacksy arbeitet mit OpenAI, Anthropic, Google, Mistral, DeepSeek und Azure – und mit jedem weiteren Anbieter mit OpenAI-kompatibler Schnittstelle, auch mit lokal betriebenen Modellen. Anbieter und Modelle fügen Sie selbst hinzu.",
 
   "details.items.3.icon": "translate",
   "details.items.3.title": "Sprachen: 25 unterstützt",
