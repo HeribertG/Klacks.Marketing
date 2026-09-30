@@ -68,6 +68,24 @@
         </div>
     </section>
 
+    <!-- Erweiterungen -->
+    <section class="max-w-4xl mx-auto pb-10 md:pb-16 px-8">
+        <div class="bg-surface-container rounded-2xl p-8 border border-secondary/30">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">extension</span>
+                @GetText("extend.title")
+            </h2>
+            <p class="text-on-surface-variant leading-relaxed mb-6">@GetText("extend.text")</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="@MarketplaceHref" target="_blank" rel="noopener" class="bg-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">storefront</span> @GetText("extend.marketplace")
+                </a>
+                <a href="mailto:@ExternalLinks.ContactEmail" class="border border-secondary/30 text-secondary px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined">mail</span> @GetText("extend.custom")
+                </a>
+            </div>
+        </div>
+    </section>
     <!-- Detaillierte Unterschiede -->
     <section class="max-w-4xl mx-auto py-10 md:py-16 px-8">
         <h2 class="text-2xl font-bold mb-8">@GetText("details.title")</h2>
@@ -102,6 +120,7 @@
                     </li>
                 }
             </ul>
+            <p class="text-on-surface-variant mt-6">@GetText("honest.extend")</p>
         </div>
     </section>
 
@@ -136,6 +155,8 @@
     private string InstallationHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.InstallationSlug);
 
     private string PartnerHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.PartnerSlug);
+
+    private string MarketplaceHref => $"{ExternalLinks.MarketplaceUrl}/?culture={ResolvedCulture}";
     private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, "vergleich", key);
 
     private ComparisonRow[] GetComparisonRows() => new[]

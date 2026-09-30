@@ -24,6 +24,11 @@
   "table.values.generic": "Je nach Anbieter",
   "table.values.some": "Teilweise",
 
+  "extend.title": "Fehlt Ihnen etwas? Klacks lässt sich erweitern.",
+  "extend.text": "Klacks ist über Erweiterungen (Plugins) ausbaubar. Vielleicht gibt es bereits eine kostenlose Erweiterung, die genau das abdeckt – sonst lässt sich auf Anfrage eine massgeschneiderte Erweiterung für Ihren Betrieb entwickeln.",
+  "extend.marketplace": "Erweiterungen im Store ansehen",
+  "extend.custom": "Massgeschneiderte Erweiterung anfragen",
+
   "details.title": "Die Unterschiede im Detail",
   "details.items.0.icon": "cloud_off",
   "details.items.0.title": "Hosting: bei Ihnen installiert (On-Premise) vs. Cloud",
@@ -49,13 +54,14 @@
   "details.items.5.title": "Branchen: 6 Vorlagen + Custom",
   "details.items.5.text": "Klacks liefert Vorlagen für Spitex, Spitäler, Security, Facility, Logistik und Hotellerie/Gastro. Mit Klacksy können Sie darüber hinaus jede beliebige Branche konfigurieren (29+ Parameter).",
 
-  "honest.title": "Was Klacks nicht kann (ehrlich)",
+  "honest.title": "Was Klacks nicht kann",
   "honest.intro": "Wir übertreiben nicht. Hier sind die Grenzen von Klacks:",
   "honest.items.0": "Keine Biometrie oder Fingerabdruck-Erkennung — Klacks plant nach Qualifikation und Verfügbarkeit, nicht nach biometrischer Anwesenheit.",
   "honest.items.1": "Kein Live-GPS-Tracking — Klacks optimiert Touren antizipativ, trackt aber nicht live wo Mitarbeiter sind.",
   "honest.items.2": "Keine Stempeluhr / Kiosk / NFC-Terminal — Klacks ist Planung, nicht Zeiterfassung.",
   "honest.items.3": "Keine echte Lohnbuchhaltung — Klacks exportiert formatierte Daten (z.B. DATEV), rechnet aber nicht ab.",
   "honest.items.4": "Compliance-Warnungen, kein Hard-Block — Klacks warnt bei Verstössen gegen Arbeitszeitregeln, blockiert aber nicht das Speichern (ausser Generalrats-Veto).",
+  "honest.extend": "Biometrie und Live-GPS lassen sich grundsätzlich über eine Erweiterung (Plugin) nachrüsten. Heute gibt es dafür noch keine fertige Erweiterung.",
 
   "cta.title": "Selber überzeugen?",
   "cta.text": "Klacks herunterladen, Docker starten, und den Unterschied live sehen. Keine Registrierung, keine Lizenzgebühren.",
