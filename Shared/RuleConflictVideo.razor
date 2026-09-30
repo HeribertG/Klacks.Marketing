@@ -1,0 +1,47 @@
+@inject ILocalizedVideoCatalog VideoCatalog
+@inject IPageContentProvider ContentProvider
+
+@* Looping, muted demo video of a rest-time warning in the page culture's app UI
+   (wwwroot/js/rule-conflict-video.js). Renders nothing when no video exists in the
+   page culture - there is deliberately no fallback to another language. Culture is
+   the page culture code; texts come from shared.json (ruleDemo.*). *@
+@if (_sources is not null)
+{
+    <figure class="reveal mt-16 mb-0 mx-auto max-w-[844px]">
+        <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
+               muted autoplay loop playsinline preload="metadata"
+               width="@VideoWidth" height="@VideoHeight"
+               poster="@_sources.PosterPath"
+               aria-label="@Sh(VideoLabelKey)">
+            <source src="@_sources.WebmPath" type="@WebmMimeType" />
+            <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
+        </video>
+        <img class="rule-demo-poster w-full h-auto rounded-2xl shadow-xl"
+             src="@_sources.PosterPath" alt="@Sh(VideoLabelKey)"
+             width="@VideoWidth" height="@VideoHeight" loading="lazy" />
+        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed text-center mb-0">@((MarkupString)Sh(CaptionKey))</figcaption>
+    </figure>
+}
+
+@code {
+    public const string VideoName = "rest-conflict";
+    public const int VideoWidth = 844;
+    public const int VideoHeight = 582;
+
+    private const string WebmMimeType = "video/webm";
+    private const string Mp4MimeType = "video/mp4";
+    private const string SharedContentKey = "shared";
+    private const string VideoLabelKey = "ruleDemo.videoLabel";
+    private const string CaptionKey = "ruleDemo.caption";
+
+    private LocalizedVideoSources? _sources;
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    protected override void OnParametersSet()
+    {
+        _sources = VideoCatalog.Find(VideoName, Culture);
+    }
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+}

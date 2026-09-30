@@ -5,6 +5,8 @@
  * them as WebP files named app-<view>-<culture>.webp into wwwroot/images.
  * Every view has one fixed viewport and one fixed output size for all cultures; only the WebP quality is tuned
  * to stay within the byte budget (the capture fails instead of silently shrinking the image).
+ * Exception: the calendar view has a fixed output width but a content-fitted height (the holiday-rules card is
+ * clipped exactly, so no empty page background is baked into the image; its height depends on the row count).
  * CLI: --cultures de,ar,ja  --views schedule,timeline,calendar,klacksy  --base-url  --api-url  --png-dir
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID.
  * The scripted Klacksy conversation per culture lives in capture-app-screenshots.chat.json (prompt + answer).
@@ -41,9 +43,8 @@ const ALL_VIEWS = [VIEW_SCHEDULE, VIEW_TIMELINE, VIEW_CALENDAR, VIEW_KLACKSY];
 const FULL_PAGE_VIEWPORT = { width: 1500, height: 940 };
 const FULL_PAGE_OUTPUT = { width: 2400, height: 1504 };
 const CALENDAR_VIEWPORT = { width: 1440, height: 1000 };
-const CALENDAR_OUTPUT = { width: 1880, height: 1520 };
+const CALENDAR_OUTPUT = { width: 1880, height: null };
 const DEVICE_SCALE_FACTOR = 2;
-const BACKGROUND_SAMPLE_OFFSET_PX = 4;
 const VIEW_SPECS = {
   [VIEW_SCHEDULE]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
   [VIEW_TIMELINE]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
@@ -350,29 +351,13 @@ async function captureCalendar(page, options, culture, spec) {
   await waitUntilLoaded(page);
   const box = await card.boundingBox();
   const pagination = await card.locator(SEL_CALENDAR_PAGINATION).boundingBox();
-  const clip = { x: box.x, y: box.y, width: box.width, height: box.width * spec.output.height / spec.output.width };
-  if (!pagination || pagination.y + pagination.height > clip.y + clip.height || box.height > clip.height) {
-    throw new Error(`holiday rules card (${Math.round(box.height)} px) does not fit the fixed ${Math.round(clip.height)} px frame`);
+  if (!pagination || pagination.y + pagination.height > box.y + box.height) {
+    throw new Error("holiday rules pagination lies outside the card");
   }
-  if (clip.y + clip.height > spec.viewport.height) {
-    throw new Error("holiday rules frame reaches beyond the viewport");
+  if (box.y + box.height > spec.viewport.height) {
+    throw new Error(`holiday rules card (${Math.round(box.height)} px) reaches beyond the ${spec.viewport.height} px viewport`);
   }
-  return maskBelowCard(await page.screenshot({ clip }), box.height);
-}
-
-/**
- * Paints everything below the card in the page background colour (sampled just below the card), so the next
- * settings card does not peek into the fixed frame.
- */
-async function maskBelowCard(png, cardHeightCss) {
-  const { width, height } = await sharp(png).metadata();
-  const cardBottom = Math.ceil(cardHeightCss * DEVICE_SCALE_FACTOR);
-  const sampleY = Math.min(height - 1, cardBottom + BACKGROUND_SAMPLE_OFFSET_PX);
-  const { data } = await sharp(png).extract({ left: BACKGROUND_SAMPLE_OFFSET_PX, top: sampleY, width: 1, height: 1 })
-    .raw().toBuffer({ resolveWithObject: true });
-  const background = { r: data[0], g: data[1], b: data[2] };
-  const card = await sharp(png).extract({ left: 0, top: 0, width, height: cardBottom }).toBuffer();
-  return sharp(card).extend({ bottom: height - cardBottom, background }).png().toBuffer();
+  return page.screenshot({ clip: { x: box.x, y: box.y, width: box.width, height: box.height } });
 }
 
 function buildSseBody(answer) {
@@ -516,7 +501,7 @@ async function captureView(browser, options, culture, view, metadata) {
  * Scales the capture to the view's fixed output size and walks the quality ladder until the file fits the budget.
  */
 async function encodeWebp(png, output) {
-  const resized = await sharp(png).resize({ width: output.width, height: output.height, fit: "fill", kernel: "lanczos3" }).toBuffer();
+  const resized = await sharp(png).resize({ width: output.width, height: output.height ?? undefined, fit: "fill", kernel: "lanczos3" }).toBuffer();
   for (const quality of WEBP_QUALITY_LADDER) {
     const buffer = await sharp(resized).webp({ quality, effort: WEBP_EFFORT, smartSubsample: true }).toBuffer();
     if (buffer.length <= WEBP_TARGET_BYTES) return { buffer, quality };
@@ -526,6 +511,7 @@ async function encodeWebp(png, output) {
 }
 
 function assertAspect(png, output, name) {
+  if (output.height === null) return Promise.resolve();
   return sharp(png).metadata().then(({ width, height }) => {
     const captured = width / height;
     const target = output.width / output.height;
@@ -569,8 +555,9 @@ async function main() {
           await writeFile(path.join(OUTPUT_DIR, `${name}.webp`), buffer);
           const seconds = ((Date.now() - startedAt) / 1000).toFixed(1);
           const kb = (buffer.length / BYTES_PER_KB).toFixed(1);
-          results.push({ file: `${name}.webp`, size: `${output.width}x${output.height}`, quality, kb, seconds });
-          console.log(`  ${name}.webp  ${output.width}x${output.height}  q${quality}  ${kb} KB  ${seconds} s`);
+          const { width, height } = await sharp(buffer).metadata();
+          results.push({ file: `${name}.webp`, size: `${width}x${height}`, quality, kb, seconds });
+          console.log(`  ${name}.webp  ${width}x${height}  q${quality}  ${kb} KB  ${seconds} s`);
         } catch (error) {
           console.error(`x ${name} (${((Date.now() - startedAt) / 1000).toFixed(1)} s): ${error.message}`);
           process.exitCode = 1;

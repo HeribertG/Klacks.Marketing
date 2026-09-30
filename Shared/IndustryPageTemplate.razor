@@ -1,4 +1,5 @@
 @inject IPageContentProvider ContentProvider
+@inject ILocalizedScreenshotResolver ScreenshotResolver
 
 <PageTitle>@Content.PageTitle</PageTitle>
 <SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" OgImage="@OgImagePath" IndexTranslatedOnly="true" />
@@ -29,11 +30,11 @@
         <div class="hero-enter hero-enter-3 lg:col-span-5 relative">
             @if (Content.HeroMockup is not null && Content.HeroMockup.Images.Count > 0)
             {
-                <HeroProductMockup Mockup="@Content.HeroMockup" />
+                <HeroProductMockup Mockup="@Content.HeroMockup" Culture="@Culture" />
             }
             else
             {
-                <MagnifiedImage Src="@($"images/{Content.Hero.ScreenshotFile}")" Alt="@Content.Hero.ScreenshotAlt" Caption="@Content.Hero.ScreenshotCaption" Loading="eager" />
+                <MagnifiedImage Src="@ScreenshotSrc(Content.Hero.ScreenshotFile)" Alt="@Content.Hero.ScreenshotAlt" Caption="@HeroScreenshotCaption" Loading="eager" />
             }
         </div>
     </div>
@@ -98,7 +99,7 @@
                     }
                 </ul>
             </div>
-            <MagnifiedImage Src="@($"images/{Content.RulesCalendar.ImageFile}")" Alt="@Content.RulesCalendar.ImageAlt" Caption="@Content.RulesCalendar.ImageCaption" />
+            <MagnifiedImage Src="@ScreenshotSrc(Content.RulesCalendar.ImageFile)" Alt="@Content.RulesCalendar.ImageAlt" Caption="@Content.RulesCalendar.ImageCaption" />
         </div>
     </section>
 }
@@ -141,6 +142,7 @@
             </div>
         }
     </div>
+    <RuleConflictVideo Culture="@Culture" />
 </section>
 
 @if (Content.Stats is not null && Content.Stats.Items.Count > 0)
@@ -172,7 +174,7 @@
                 }
             </div>
             <div class="lg:col-span-6">
-                <MagnifiedImage Src="@($"images/{Content.Klacksy.ImageFile}")" Alt="@Content.Klacksy.ImageAlt" Caption="@Content.Klacksy.ImageCaption" />
+                <MagnifiedImage Src="@ScreenshotSrc(Content.Klacksy.ImageFile)" Alt="@Content.Klacksy.ImageAlt" Caption="@Content.Klacksy.ImageCaption" />
             </div>
         </div>
     </section>
@@ -209,7 +211,7 @@
             @foreach (var image in Content.Gallery.Items)
             {
                 <div>
-                    <MagnifiedImage Src="@($"images/{image.File}")" Alt="@image.Alt" Caption="@image.Caption" />
+                    <MagnifiedImage Src="@ScreenshotSrc(image.File)" Alt="@image.Alt" Caption="@image.Caption" />
                 </div>
             }
         </div>
@@ -241,6 +243,7 @@
 @code {
     private const string KlacksySlug = "klacksy";
     private const string InstallationSlug = "installation";
+    private const string ImagesPathPrefix = "images/";
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
@@ -328,6 +331,12 @@
             return imageName is not null ? $"/images/og-image-{imageName}.png" : null;
         }
     }
+
+    private string ScreenshotSrc(string file) => $"{ImagesPathPrefix}{ScreenshotResolver.Resolve(file, Culture)}";
+
+    private string? HeroScreenshotCaption => ScreenshotResolver.IsLocalized(Content.Hero.ScreenshotFile, Culture)
+        ? null
+        : Content.Hero.ScreenshotCaption;
 
     private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
 }

@@ -133,6 +133,23 @@ nav.glass-nav.nav-scrolled {
     border-radius: inherit;
 }
 
+/* Looping demo video (RuleConflictVideo.razor). The poster image is the static
+   stand-in: under reduced motion only the poster is shown and the video is never
+   displayed (rule-conflict-video.js additionally keeps it paused). */
+.rule-demo-poster {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rule-demo-video {
+        display: none;
+    }
+
+    .rule-demo-poster {
+        display: block;
+    }
+}
+
 .magnify-frame:hover .magnify-image {
     cursor: none;
 }
@@ -168,14 +185,16 @@ nav.glass-nav.nav-scrolled {
 
 /* Hero-Produkt-Mockup (HeroProductMockup.razor + hero-slideshow.js): Basis ohne
    Motion. Das erste Slide ist serverseitig is-active und damit ohne JS oder bei
-   reduced-motion statisch sichtbar. */
+   reduced-motion statisch sichtbar. Die Slides fuellen die Breite und behalten
+   ihr natuerliches Seitenverhaeltnis (top-aligned): hoehere Bilder werden unten
+   vom overflow-hidden des Rahmens abgeschnitten, breitere (z.B. der auf die
+   Karte zugeschnittene Feiertagsregeln-Screenshot) werden nie seitlich beschnitten. */
 .hero-slide {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
     opacity: 0;
 }
 

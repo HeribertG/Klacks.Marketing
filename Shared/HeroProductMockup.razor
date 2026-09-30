@@ -1,3 +1,5 @@
+@inject ILocalizedScreenshotResolver ScreenshotResolver
+
 @* Produkt-Screenshot mit Crossfade-Slideshow (wwwroot/js/hero-slideshow.js),
    Hover-Expand (screenshot-hover-zoom) und Cursor-Lupe (magnifier.js) wie bei
    den anderen Screenshots. Die frühere Browser-Chrome-Leiste (Punkte + URL)
@@ -15,7 +17,7 @@
             @for (var i = 0; i < Mockup.Images.Count; i++)
             {
                 var image = Mockup.Images[i];
-                <img src="images/@image.File" alt="@image.Alt"
+                <img src="images/@ScreenshotResolver.Resolve(image.File, Culture)" alt="@image.Alt"
                      class="hero-slide magnify-image @(i == 0 ? "is-active" : "")"
                      loading="@(i == 0 ? "eager" : "lazy")" />
             }
@@ -38,4 +40,5 @@
 
 @code {
     [Parameter, EditorRequired] public required IndustryHeroMockup Mockup { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 }

@@ -7,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<IPageContentProvider, JsonPageContentProvider>();
+builder.Services.AddSingleton<ILocalizedScreenshotResolver>(services =>
+    new LocalizedScreenshotResolver(services.GetRequiredService<IWebHostEnvironment>().WebRootFileProvider));
+builder.Services.AddSingleton<ILocalizedVideoCatalog>(services =>
+    new LocalizedVideoCatalog(services.GetRequiredService<IWebHostEnvironment>().WebRootFileProvider));
 
 // klacks-proxy sits on the same Docker network, not on loopback — trust its
 // forwarded headers so scheme-dependent middleware sees the original HTTPS request.
@@ -18,6 +22,9 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 });
 
 var app = builder.Build();
+
+_ = app.Services.GetRequiredService<ILocalizedScreenshotResolver>();
+_ = app.Services.GetRequiredService<ILocalizedVideoCatalog>();
 
 if (!app.Environment.IsDevelopment())
 {

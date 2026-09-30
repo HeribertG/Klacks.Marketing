@@ -8,8 +8,10 @@ public static class SupportedCultures
 
     // UrlSlug "" marks the unprefixed default culture at the site root ("/", "/spitex").
     // All other cultures are reachable under a path prefix ("/en", "/en/spitex").
-    // ar/cs/.../zh-TW are Klacksy chatbot plugin languages only — the real app UI
-    // ships in de/en/fr/it (IsCore: true); see the screenshotCaption content field.
+    // IsCore marks de/en/fr/it, the four languages built into the app itself; every other
+    // culture is provided by a language plugin and is a full app UI language as well. The
+    // flag is currently not read anywhere. Screenshots per culture are chosen by
+    // ILocalizedScreenshotResolver, falling back to the German ones.
     // DocsLocale is the Klacks.DocsSite (Docusaurus) locale code for this culture —
     // identical to Code except for the two Chinese variants, which Docusaurus keys
     // by script (zh-Hans/zh-Hant) rather than region (zh-CN/zh-TW).

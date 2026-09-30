@@ -39,7 +39,8 @@ public sealed class IndustryHero
     public required string ScreenshotAlt { get; init; }
     public required string ScreenshotLabel { get; init; }
 
-    // Screenshots only exist with German app UI — null for de, a translated note for every other locale.
+    // Disclaimer that the hero screenshot shows another language's app UI. It is only rendered when
+    // ILocalizedScreenshotResolver falls back to a screenshot that is not in the page culture.
     public string? ScreenshotCaption { get; init; }
 }
 
