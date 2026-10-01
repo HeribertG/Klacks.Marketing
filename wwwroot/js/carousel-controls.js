@@ -1,7 +1,7 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Keyboard, swipe and auto-advance helpers for the daily-operations carousel (DailyOperationsVideos.razor).
+ * Keyboard, swipe and auto-advance helpers for the demo video carousels (DemoVideoCarousel.razor, one instance per DemoCarousels definition).
  * Everything is delegated from the document, so it works on the prerendered DOM and survives Blazor
  * re-rendering. The script never changes the slide itself: it only clicks the carousel's own prev/next
  * buttons, so the Blazor state, the fade and the live region stay the single source of truth.

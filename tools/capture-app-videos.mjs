@@ -14,8 +14,12 @@
  * the end the cursor is parked on free space next to the row's text so it covers none of it. The rest-conflict video is
  * encoded as a smooth loop: the final frame is held, then cross-fades into the first frame.
  * The work-entry takes (expenses, correction, hours-adjustment, replacement) live in takes/work-entry-takes.mjs, the container takes
- * (container-fill, container-split; demo data from seed-container-demo.mjs) in takes/container-takes.mjs.
- * CLI: --videos rest-conflict,klacksy-plans-week,expenses,correction,hours-adjustment,replacement,container-fill,container-split  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * (container-fill, container-split, container-pause; demo data from seed-container-demo.mjs) in takes/container-takes.mjs, the timeline takes
+ * (timeline-24h, timeline-day-dragdrop) in takes/timeline-takes.mjs, the route takes (container-autofill, container-route; demo data from
+ * seed-route-demo.mjs, route PDF printout rendered with pdfjs-dist) in takes/route-takes.mjs. All takes of the website's daily-operations
+ * carousel (work entry, container, timeline, route) share WORK_ENTRY_VIEWPORT (1280x800); the route takes keep VIDEO_NOISE_CSS so the
+ * distance toast of the optimization stays visible.
+ * CLI: --videos rest-conflict,klacksy-plans-week,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --warning-timeout-s <n>  --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -58,7 +62,9 @@ import {
   ScheduleApi,
 } from "./lib/schedule-grid.mjs";
 import { WORK_ENTRY_TAKE_RUNNERS, WORK_ENTRY_VIDEOS } from "./takes/work-entry-takes.mjs";
-import { CONTAINER_TAKE_RUNNERS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT } from "./takes/container-takes.mjs";
+import { CONTAINER_TAKE_RUNNERS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE } from "./takes/container-takes.mjs";
+import { TIMELINE_TAKE_RUNNERS, TIMELINE_VIDEOS, VIDEO_TIMELINE_24H, VIDEO_TIMELINE_DAY_DRAGDROP } from "./takes/timeline-takes.mjs";
+import { ROUTE_TAKE_RUNNERS, ROUTE_VIDEOS, VIDEO_CONTAINER_AUTOFILL, VIDEO_CONTAINER_ROUTE } from "./takes/route-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -74,7 +80,7 @@ const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_REST_CONFLICT = "rest-conflict";
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [VIDEO_REST_CONFLICT, VIDEO_KLACKSY_PLANS_WEEK, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT];
+const ALL_VIDEOS = [VIDEO_REST_CONFLICT, VIDEO_KLACKSY_PLANS_WEEK, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const VIEWPORT = { width: 1500, height: 940 };
@@ -917,8 +923,13 @@ const TAKES = {
     video,
     { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: WORK_ENTRY_TAKE_RUNNERS[video], needsScript: true },
   ])),
-  [VIDEO_CONTAINER_FILL]: { period: OCTOBER, viewport: VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_FILL], needsScript: true },
+  [VIDEO_CONTAINER_FILL]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_FILL], needsScript: true },
   [VIDEO_CONTAINER_SPLIT]: { period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_SPLIT], needsScript: true },
+  [VIDEO_CONTAINER_PAUSE]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_PAUSE], needsScript: true },
+  [VIDEO_TIMELINE_24H]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: TIMELINE_TAKE_RUNNERS[VIDEO_TIMELINE_24H] },
+  [VIDEO_TIMELINE_DAY_DRAGDROP]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: TIMELINE_TAKE_RUNNERS[VIDEO_TIMELINE_DAY_DRAGDROP] },
+  [VIDEO_CONTAINER_AUTOFILL]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: VIDEO_NOISE_CSS, run: ROUTE_TAKE_RUNNERS[VIDEO_CONTAINER_AUTOFILL], needsScript: true },
+  [VIDEO_CONTAINER_ROUTE]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: VIDEO_NOISE_CSS, run: ROUTE_TAKE_RUNNERS[VIDEO_CONTAINER_ROUTE], needsScript: true },
 };
 
 async function recordTake(browser, options, shared, video, culture) {

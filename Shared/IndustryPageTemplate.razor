@@ -147,7 +147,13 @@
 </section>
 
 <!-- IM ALLTAG -->
-<DailyOperationsVideos Culture="@Culture" />
+<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.DailyOperations" />
+
+<!-- SPEZIALDIENSTE: CONTAINER -->
+<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Containers" />
+
+<!-- SPEZIALDIENSTE: SPORADISCH UND ZEITBEREICH (noch ohne Videos, rendert nichts) -->
+<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.SporadicTimeRange" />
 
 @if (Content.Stats is not null && Content.Stats.Items.Count > 0)
 {

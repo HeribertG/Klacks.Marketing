@@ -10,6 +10,7 @@
 
 import * as S from "../lib/klacks-demo-session.mjs";
 import { ScreenRecorder } from "../lib/screen-recorder.mjs";
+import { waitModalAtRest } from "../lib/modal.mjs";
 import {
   CANVAS_SETTLE_MS,
   HTTP_DELETE,
@@ -44,9 +45,6 @@ const PARK_OFFSET = { x: 70, y: 150 };
 const SEL_OPEN_MENU = "app-context-menu .menu-container[style*='display: block']";
 const SEL_MODAL = "ngb-modal-window";
 const SEL_SAVE = `${SEL_MODAL} .modal-footer button.save-btn`;
-const SEL_MODAL_DIALOG = `${SEL_MODAL} .modal-dialog`;
-const STABLE_POLL_MS = 100;
-const STABLE_MAX_CHECKS = 40;
 const MENU_ITEM = { expenses: "#expenses", correction: "#correction", replacement: "#replacement" };
 const SEL_EXPENSE_AMOUNT = `${SEL_MODAL} input#amount`;
 const SEL_EXPENSE_DESCRIPTION = `${SEL_MODAL} textarea#description`;
@@ -64,7 +62,8 @@ const SEL_REPLACEMENT_MINUTES = `${SEL_MODAL} #replDurationMinutes`;
 const SEL_REPLACEMENT_DESCRIPTION = `${SEL_MODAL} #description`;
 const REPLACEMENT_ROW = 0;
 const WORK_CHANGE_REPLACEMENT_END = 3;
-const SEL_WORK_END_HOURS = `${SEL_MODAL} #weEndHours`;
+const SEL_WORK_DESCRIPTION = `${SEL_MODAL} #description`;
+const SEL_WORK_END_HOURS =`${SEL_MODAL} #weEndHours`;
 const SEL_WORK_END_MINUTES = `${SEL_MODAL} #weEndMinutes`;
 const SEL_WORK_DURATION_HOURS = `${SEL_MODAL} #weDurationHours`;
 const SEL_WORK_DURATION_MINUTES = `${SEL_MODAL} #weDurationMinutes`;
@@ -132,22 +131,6 @@ async function typeInto(take, selector, text) {
   await page.keyboard.press(SELECT_ALL);
   await field.pressSequentially(text, { delay: TYPE_DELAY_MS });
   await page.waitForTimeout(BEAT.field);
-}
-
-/**
- * ngb modals slide in; element boxes measured during the animation are off by up to 50 px, so clicks wait for rest.
- */
-async function waitModalAtRest(page) {
-  const dialog = page.locator(SEL_MODAL_DIALOG).first();
-  await dialog.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  let previous = null;
-  for (let check = 0; check < STABLE_MAX_CHECKS; check++) {
-    const box = await dialog.boundingBox();
-    if (box && previous && Math.abs(box.y - previous.y) < 1 && Math.abs(box.height - previous.height) < 1) return;
-    previous = box;
-    await page.waitForTimeout(STABLE_POLL_MS);
-  }
-  throw new Error("modal never came to rest");
 }
 
 async function openContextMenuItem(take, cell, itemSelector) {
@@ -298,6 +281,7 @@ export async function takeHoursAdjustment(take) {
     await page.waitForTimeout(BEAT.menu);
     await typeInto(take, SEL_WORK_END_HOURS, script.endHours);
     await typeInto(take, SEL_WORK_END_MINUTES, script.endMinutes);
+    if (script.description) await typeInto(take, SEL_WORK_DESCRIPTION, script.description);
     report.durationShown = `${await page.locator(SEL_WORK_DURATION_HOURS).inputValue()}:${await page.locator(SEL_WORK_DURATION_MINUTES).inputValue()}`;
     const saved = await saveAndCapture(take, WORKS_API, HTTP_PUT);
     putBody = saved.requestBody;
@@ -310,15 +294,21 @@ export async function takeHoursAdjustment(take) {
     const work = (await ctx.api.schedule(ctx.filter)).entries.find((e) => e.id === original.id);
     if (work?.endTime.slice(0, HH_MM_LENGTH) !== expectedEnd) {
       report.failure = `work ends at ${work?.endTime} instead of ${expectedEnd}`;
+    } else if (script.description && work.information !== script.description) {
+      report.failure = `work information is "${work.information}" instead of "${script.description}"`;
     }
-    return { from: work?.startTime, until: work?.endTime, hours: work?.changeTime };
+    return { from: work?.startTime, until: work?.endTime, hours: work?.changeTime, information: work?.information };
   }, async () => {
     if (!putBody) return;
     const workTime = hoursOf(original.endTime) - hoursOf(original.startTime);
     await ctx.api.json(WORKS_API, {
       method: HTTP_PUT,
-      data: { ...putBody, startTime: original.startTime, endTime: original.endTime, workTime },
+      data: { ...putBody, startTime: original.startTime, endTime: original.endTime, workTime, information: original.information ?? null },
     });
+    const restored = (await ctx.api.schedule(ctx.filter)).entries.find((e) => e.id === original.id);
+    if ((restored?.information || null) !== (original.information || null)) {
+      throw new Error(`work information is "${restored?.information}" after the restore instead of "${original.information ?? null}" - check the demo data!`);
+    }
   });
 }
 

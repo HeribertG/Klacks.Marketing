@@ -4,34 +4,43 @@
 @inject IPageContentProvider ContentProvider
 @inject IJSRuntime JS
 
-@* "In daily operations" block: a carousel with the four short demo videos (expenses, correction,
-   replacement, hours adjustment). Exactly one slide is rendered at a time (the first one initially), so
-   hidden videos are neither downloaded nor playing and no ancestor of the visible frame needs
+@* Reusable demo video carousel section, driven by a DemoCarouselDefinition (anchor id, heading and subtitle
+   keys, optional eyebrow and Klacksy tip, video list); the landing page places one instance per definition
+   (DemoCarousels: everyday roster work, tour containers, sporadic / time-range shifts). Instances do not
+   interfere: every DOM id derives from the definition's SectionId, the keyboard / swipe / ended-event helper
+   (carousel-controls.js) resolves the carousel from the event target, and the only JS interop call is the
+   stateless reduced-motion query.
+   Exactly one slide is rendered at a time (the first one initially), so hidden videos are neither downloaded nor playing and no ancestor of the visible frame needs
    overflow:hidden - the video enlarges on hover through the shared screenshot-hover-zoom frame
    (DemoVideo.HoverZoom, fitted to the viewport by hover-zoom-fit.js).
    The videos do not loop: when one has ended, carousel-controls.js clicks the next-arrow (wrapping
-   after the fourth); hover and focus do not pause this, and a video outside the viewport is paused by
+   after the last); hover and focus do not pause this, and a video outside the viewport is paused by
    rule-conflict-video.js and so never ends. Every change - automatic, pill bar, arrows, Left/Right keys
    or swipe (mirrored in RTL) - goes through GoToAsync: the slide fades out, the next one is rendered and
    fades in again. Under prefers-reduced-motion the change is immediate (and, as the videos do not play
    there, nothing advances automatically).
-   Each item appears only when a video recorded in the page culture exists - there is deliberately no
-   fallback to another language; without any video in the culture the whole section (heading included)
-   is omitted. A hint under the carousel points to Klacksy, who can do the same steps in the chat.
+   Each item appears only when a video recorded in the page culture exists (so a culture whose recordings are
+   still incomplete simply shows fewer pills and slides, and the slide count follows) - there is deliberately no
+   fallback to another language; without any video in the culture (or with an empty list) the whole section
+   (heading included) is omitted. The optional tip under the carousel points to Klacksy, who can do the same
+   steps in the chat; it belongs to the everyday-work carousel only.
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
     var current = _videos[_currentIndex];
     var selectedIndex = TargetIndex;
-    <section id="alltag" class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
+    <section id="@Definition.SectionId" class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
         <div class="text-center mb-10 md:mb-12">
-            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh("dailyOps.eyebrow")</span>
-            <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Sh("dailyOps.title")</h2>
-            <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh("dailyOps.subtitle")</p>
+            @if (Definition.EyebrowKey is not null)
+            {
+                <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(Definition.EyebrowKey)</span>
+            }
+            <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight @(Definition.EyebrowKey is not null ? "mt-4" : string.Empty)">@Sh(Definition.TitleKey)</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh(Definition.SubtitleKey)</p>
         </div>
         <div class="daily-ops-carousel max-w-4xl mx-auto" role="region" aria-roledescription="carousel" aria-labelledby="@HeadingId"
              tabindex="-1" data-carousel>
-            <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="@Sh("dailyOps.navLabel")">
+            <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="@Sh(NavLabelKey)">
                 @for (var index = 0; index < _videos.Count; index++)
                 {
                     var itemIndex = index;
@@ -44,7 +53,7 @@
             </div>
             <div class="daily-ops-carousel-body">
                 <button type="button" data-carousel-prev
-                        class="daily-ops-carousel-prev daily-ops-carousel-arrow" aria-label="@Sh("dailyOps.previous")" aria-controls="@SlideId"
+                        class="daily-ops-carousel-prev daily-ops-carousel-arrow" aria-label="@Sh(PreviousKey)" aria-controls="@SlideId"
                         @onclick="PreviousAsync">
                     <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_back</span>
                 </button>
@@ -55,24 +64,32 @@
                                Width="@VideoWidth" Height="@VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
                 </div>
                 <button type="button" data-carousel-next
-                        class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh("dailyOps.next")" aria-controls="@SlideId"
+                        class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh(NextKey)" aria-controls="@SlideId"
                         @onclick="NextAsync">
                     <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_forward</span>
                 </button>
             </div>
             <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
         </div>
-        <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
-            <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh("dailyOps.hintLabel")</span>
-            <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Sh("dailyOps.klacksyHint")</p>
-        </div>
+        @if (Definition.HintKey is not null)
+        {
+            <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
+                <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh(HintLabelKey)</span>
+                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Sh(Definition.HintKey)</p>
+            </div>
+        }
     </section>
 }
 
 @code {
     private const string SharedContentKey = "shared";
-    private const string HeadingId = "daily-ops-heading";
-    private const string SlideId = "daily-ops-slide";
+    private const string HintLabelKey = "dailyOps.hintLabel";
+    private const string NavLabelKey = "dailyOps.navLabel";
+    private const string PreviousKey = "dailyOps.previous";
+    private const string NextKey = "dailyOps.next";
+    private const string SlideLabelKey = "dailyOps.slideLabel";
+    private const string HeadingIdSuffix = "-heading";
+    private const string SlideIdSuffix = "-slide";
     private const string SlideTitleClass = "text-xl md:text-2xl font-black text-primary mb-5 text-center";
     private const string PrefersReducedMotionJsFunction = "klacksCarouselControls.prefersReducedMotion";
     private const int VideoWidth = 1280;
@@ -80,16 +97,8 @@
     private const int FirstSlideIndex = 0;
     private const int FadeDurationMs = 350;
 
-    private static readonly DailyOperationsVideo[] AllVideos =
-    {
-        new(DemoVideo.ExpensesVideoName, "expensesDemo.title", "expensesDemo.videoLabel", "expensesDemo.caption"),
-        new(DemoVideo.CorrectionVideoName, "correctionDemo.title", "correctionDemo.videoLabel", "correctionDemo.caption"),
-        new(DemoVideo.ReplacementVideoName, "replacementDemo.title", "replacementDemo.videoLabel", "replacementDemo.caption"),
-        new(DemoVideo.HoursAdjustmentVideoName, "hoursAdjustmentDemo.title", "hoursAdjustmentDemo.videoLabel", "hoursAdjustmentDemo.caption"),
-    };
-
     private readonly CancellationTokenSource _disposed = new();
-    private IReadOnlyList<DailyOperationsVideo> _videos = Array.Empty<DailyOperationsVideo>();
+    private IReadOnlyList<DemoCarouselVideo> _videos = Array.Empty<DemoCarouselVideo>();
     private int _currentIndex = FirstSlideIndex;
     private int? _pendingIndex;
     private bool _isFadingOut;
@@ -97,11 +106,17 @@
 
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
+    [Parameter, EditorRequired] public required DemoCarouselDefinition Definition { get; set; }
+
     private int TargetIndex => _pendingIndex ?? _currentIndex;
+
+    private string HeadingId => Definition.SectionId + HeadingIdSuffix;
+
+    private string SlideId => Definition.SectionId + SlideIdSuffix;
 
     protected override void OnParametersSet()
     {
-        _videos = AllVideos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList();
+        _videos = Definition.Videos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList();
         if (_currentIndex >= _videos.Count)
         {
             _currentIndex = FirstSlideIndex;
@@ -158,7 +173,7 @@
     }
 
     private string SlideLabel() =>
-        string.Format(CultureInfo.InvariantCulture, Sh("dailyOps.slideLabel"), _currentIndex + 1, _videos.Count);
+        string.Format(CultureInfo.InvariantCulture, Sh(SlideLabelKey), _currentIndex + 1, _videos.Count);
 
     private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
 
@@ -167,6 +182,4 @@
         _disposed.Cancel();
         _disposed.Dispose();
     }
-
-    private sealed record DailyOperationsVideo(string VideoName, string TitleKey, string LabelKey, string CaptionKey);
 }

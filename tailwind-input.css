@@ -133,7 +133,7 @@ nav.glass-nav.nav-scrolled {
     border-radius: inherit;
 }
 
-/* Daily-operations carousel (DailyOperationsVideos.razor): previous arrow, slide and next arrow in one
+/* Demo video carousel (DemoVideoCarousel.razor): previous arrow, slide and next arrow in one
    row from 640px up; on narrow screens the slide takes the full width and the arrows sit below it.
    Grid columns follow the document direction, so the arrows mirror automatically in RTL. Deliberately no
    overflow:hidden - the slide's hover-zoomed frame must be able to grow beyond it. The slide fades out

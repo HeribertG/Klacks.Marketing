@@ -633,107 +633,324 @@
   "hours-adjustment": {
     "de": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Kunde hat Zusatzarbeit gewünscht"
     },
     "en": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Customer requested extra work"
     },
     "fr": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Le client a demandé du travail en plus"
     },
     "it": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Il cliente ha richiesto lavoro extra"
     },
     "ar": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "طلب العميل عملًا إضافيًا"
     },
     "ja": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "お客様の依頼で追加作業が発生"
     },
     "cs": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Zákazník požadoval práci navíc"
     },
     "da": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Kunden ønskede ekstra arbejde"
     },
     "el": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Ο πελάτης ζήτησε πρόσθετη εργασία"
     },
     "es": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "El cliente pidió trabajo adicional"
     },
     "fi": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Asiakas pyysi lisätyötä"
     },
     "he": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "הלקוח ביקש עבודה נוספת"
     },
     "id": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Pelanggan meminta pekerjaan tambahan"
     },
     "ko": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "고객 요청으로 추가 작업 발생"
     },
     "ms": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Pelanggan meminta kerja tambahan"
     },
     "nb": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Kunden ba om ekstra arbeid"
     },
     "nl": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Klant vroeg om extra werk"
     },
     "pl": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Klient zlecił dodatkową pracę"
     },
     "pt": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "O cliente pediu trabalho adicional"
     },
     "ro": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Clientul a cerut muncă suplimentară"
     },
     "sv": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Kunden ville ha extra arbete"
     },
     "th": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "ลูกค้าขอให้ทำงานเพิ่ม"
     },
     "vi": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "Khách hàng yêu cầu làm thêm việc"
     },
     "zh-CN": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "客户要求额外工作"
     },
     "zh-TW": {
       "endHours": "12",
-      "endMinutes": "30"
+      "endMinutes": "30",
+      "description": "客戶要求額外工作"
     }
   },
   "container-fill": {
     "de": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "en": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "fr": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "it": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "ar": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "ja": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "cs": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "da": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "el": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "es": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "fi": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "he": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "id": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "ko": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "ms": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "nb": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "nl": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "pl": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "pt": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "ro": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "sv": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "th": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "vi": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "zh-CN": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    },
+    "zh-TW": {
       "tasks": [
         "KGA",
         "MAT",
@@ -745,7 +962,127 @@
   "container-split": {
     "de": {
       "splitHours": "11",
-      "splitMinutes": "00",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "en": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "fr": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "it": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "ar": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "ja": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "cs": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "da": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "el": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "es": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "fi": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "he": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "id": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "ko": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "ms": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "nb": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "nl": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "pl": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "pt": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "ro": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "sv": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "th": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "vi": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "zh-CN": {
+      "splitHours": "11",
+      "splitMinutes": "30",
+      "searchChars": 4
+    },
+    "zh-TW": {
+      "splitHours": "11",
+      "splitMinutes": "30",
       "searchChars": 4
     }
   },
@@ -874,6 +1211,461 @@
       "hours": "2",
       "minutes": "00",
       "description": "看醫生，由埃利亞斯接班"
+    }
+  },
+  "timeline-24h": {
+    "de": {
+      "title": "Tagesverlauf über 24 Stunden",
+      "videoLabel": "Video: Dienstplan als 24-Stunden-Tagesverlauf",
+      "caption": "Echte Aufnahme aus Klacks mit Demo-Daten: Ein Klick schaltet den Dienstplan von der Tabelle in den Tagesverlauf — über 24 Stunden sehen Sie Nacht-, Früh- und Spätschichten als Zeitbalken und erkennen Lücken und Überschneidungen auf einen Blick.",
+      "steps": [
+        "Schalter „Tagesverlauf“ in der Kopfzeile des Dienstplans einschalten",
+        "Bereich „24 Std-Ansicht“ wählen",
+        "Durch die Woche und zu weiteren Personen scrollen — Nachtschichten reichen sichtbar über Mitternacht"
+      ]
+    }
+  },
+  "timeline-day-dragdrop": {
+    "de": {
+      "title": "Schicht in den Tagesverlauf ziehen",
+      "videoLabel": "Video: Schicht per Drag & Drop im Tagesverlauf einplanen",
+      "caption": "Echte Aufnahme aus Klacks mit Demo-Daten: In der Tagesansicht von 6 bis 19 Uhr ziehen Sie eine Schicht aus der Schichtliste direkt auf eine Person — die Schicht erscheint sofort als Zeitbalken zur richtigen Uhrzeit, mitten im übrigen Dienstplan.",
+      "steps": [
+        "Im Tagesverlauf den Bereich „Tagesansicht“ (6–19 Uhr) wählen",
+        "Schicht in der Liste „Schichten“ unten am gewünschten Tag greifen",
+        "Auf die Zeile der Person ziehen und loslassen — Klacks plant die Schicht ein"
+      ]
+    }
+  },
+  "container-pause": {
+    "de": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "en": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "fr": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "it": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "ar": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "ja": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "cs": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "da": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "el": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "es": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "fi": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "he": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "id": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "ko": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "ms": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "nb": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "nl": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "pl": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "pt": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "ro": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "sv": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "th": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "vi": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "zh-CN": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    },
+    "zh-TW": {
+      "absence": "P-",
+      "beforeTask": "DOK",
+      "endHours": "12",
+      "endMinutes": "00"
+    }
+  },
+  "container-autofill": {
+    "de": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "en": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "fr": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "it": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "ar": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "ja": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "cs": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "da": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "el": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "es": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "fi": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "he": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "id": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "ko": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "ms": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "nb": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "nl": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "pl": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "pt": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "ro": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "sv": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "th": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "vi": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "zh-CN": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    },
+    "zh-TW": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "rowHeight": 63
+    }
+  },
+  "container-route": {
+    "de": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "en": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "fr": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "it": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "ar": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "ja": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "cs": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "da": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "el": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "es": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "fi": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "he": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "id": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "ko": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "ms": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "nb": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "nl": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "pl": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "pt": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "ro": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "sv": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "th": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "vi": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "zh-CN": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
+    },
+    "zh-TW": {
+      "baseName": "Kellerwind Zentrale",
+      "fitRows": 4,
+      "handOrder": ["ST01", "ST02", "ST03", "ST04"],
+      "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
     }
   }
 }

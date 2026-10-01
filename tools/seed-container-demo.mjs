@@ -11,7 +11,9 @@
  * excludeContainerId), which is why the Tuesday template uses its own task set.
  * A template editor that is open (or was closed without leaving the page in-app) holds the container template lock until it
  * goes stale (about 90 s); --lock-wait-s makes the script poll for the lock instead of failing at once.
- * CLI: --reset-monday (only empties the Monday template; fast restore for the fill take)  --lock-wait-s <n>  --api-url  --group-id
+ * CLI: --reset-monday (only empties the Monday template; fast restore for the fill take)
+ *      --reset-tuesday (only restores the Tuesday template to exactly its four seeded tasks; fast restore for the pause take)
+ *      --lock-wait-s <n>  --api-url  --group-id
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL, KLACKS_DEMO_GROUP_ID.
  */
 
@@ -110,6 +112,7 @@ function readOptions() {
   const { values } = parseArgs({
     options: {
       "reset-monday": { type: "boolean", default: false },
+      "reset-tuesday": { type: "boolean", default: false },
       "api-url": { type: "string" },
       "group-id": { type: "string" },
       "lock-wait-s": { type: "string" },
@@ -117,7 +120,13 @@ function readOptions() {
   });
   const lockWaitS = Number(values["lock-wait-s"] ?? 0);
   if (!Number.isFinite(lockWaitS) || lockWaitS < 0) throw new Error("--lock-wait-s must be a non-negative number");
-  return { ...S.readSessionOptions(values), resetMondayOnly: values["reset-monday"], lockWaitMs: lockWaitS * MS_PER_SECOND };
+  if (values["reset-monday"] && values["reset-tuesday"]) throw new Error("--reset-monday and --reset-tuesday cannot be combined");
+  return {
+    ...S.readSessionOptions(values),
+    resetMondayOnly: values["reset-monday"],
+    resetTuesdayOnly: values["reset-tuesday"],
+    lockWaitMs: lockWaitS * MS_PER_SECOND,
+  };
 }
 
 class KlacksApi {
@@ -334,6 +343,39 @@ async function resetMondayTemplate(api, container, lockWaitMs) {
   return "emptied";
 }
 
+const HH_MM_LENGTH = 5;
+
+function itemMatchesTask(item, task) {
+  return item.shiftId === task.id
+    && !item.absenceId
+    && String(item.startItem).slice(0, HH_MM_LENGTH) === task.start.slice(0, HH_MM_LENGTH)
+    && String(item.endItem).slice(0, HH_MM_LENGTH) === task.end.slice(0, HH_MM_LENGTH);
+}
+
+function tuesdayMatchesSeed(tuesday, tuesdayTasks) {
+  const items = tuesday?.containerTemplateItems ?? [];
+  return items.length === tuesdayTasks.length && tuesdayTasks.every((task) => items.some((item) => itemMatchesTask(item, task)));
+}
+
+async function resetTuesdayTemplate(api, container, tuesdayTasks, lockWaitMs) {
+  const existing = await readTemplates(api, container.id);
+  const tuesday = existing.find((template) => isPlainTemplate(template, WEEKDAY_TUESDAY));
+  if (tuesdayMatchesSeed(tuesday, tuesdayTasks)) {
+    return "unchanged";
+  }
+  const keep = existing.filter((template) => !isPlainTemplate(template, WEEKDAY_TUESDAY)).map(stripNested);
+  const items = tuesdayTasks.map((task) => templateItemBody(task, WEEKDAY_TUESDAY));
+  const seededTuesday = tuesday
+    ? { ...stripNested(tuesday), containerTemplateItems: items }
+    : templateBody(container, WEEKDAY_TUESDAY, items);
+  await writeTemplates(api, container, [seededTuesday, ...keep], lockWaitMs);
+  const verified = (await readTemplates(api, container.id)).find((template) => isPlainTemplate(template, WEEKDAY_TUESDAY));
+  if (!tuesdayMatchesSeed(verified, tuesdayTasks)) {
+    throw new Error("Tuesday template does not hold exactly the four seeded tasks after the reset");
+  }
+  return "restored";
+}
+
 async function readMondayZone3(api, container) {
   return api.call(HTTP_GET, AVAILABLE_TASKS_PATH, {
     query: {
@@ -397,7 +439,7 @@ async function findExistingTasks(api, defs) {
   const tasks = [];
   for (const def of defs) {
     const [match] = await findShifts(api, def, SHIFT_TYPE_TASK);
-    if (!match) throw new Error(`Task "${def.name}" (${def.abbreviation}) does not exist; run without --reset-monday first.`);
+    if (!match) throw new Error(`Task "${def.name}" (${def.abbreviation}) does not exist; run without a --reset-* flag first.`);
     tasks.push({ ...def, id: match.id });
   }
   return tasks;
@@ -413,6 +455,17 @@ async function main() {
     const group = await loadGroup(api, options.groupId);
 
     const containerMatches = await findShifts(api, CONTAINER_DEF, SHIFT_TYPE_CONTAINER);
+    if (options.resetTuesdayOnly) {
+      if (containerMatches.length !== 1) throw new Error(`--reset-tuesday needs exactly one existing container, found ${containerMatches.length}. Run without the flag first.`);
+      const container = { id: containerMatches[0].id, start: CONTAINER_DEF.start, end: CONTAINER_DEF.end };
+      const tuesdayTasks = await findExistingTasks(api, TUESDAY_TASK_DEFS);
+      const action = await resetTuesdayTemplate(api, container, tuesdayTasks, options.lockWaitMs);
+      const items = ((await readTemplates(api, container.id)).find((template) => isPlainTemplate(template, WEEKDAY_TUESDAY))?.containerTemplateItems ?? [])
+        .map((item) => `${item.startItem}-${item.endItem}`);
+      console.log(JSON.stringify({ mode: "reset-tuesday", containerId: container.id, tuesdayTemplate: action, items }));
+      return;
+    }
+
     if (options.resetMondayOnly) {
       if (containerMatches.length !== 1) throw new Error(`--reset-monday needs exactly one existing container, found ${containerMatches.length}. Run without the flag first.`);
       const container = { id: containerMatches[0].id, start: CONTAINER_DEF.start, end: CONTAINER_DEF.end };
