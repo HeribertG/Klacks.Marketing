@@ -133,12 +133,79 @@ nav.glass-nav.nav-scrolled {
     border-radius: inherit;
 }
 
-/* Daily-operations accordion width: the narrower of 42rem and the viewport minus the section's
-   2rem side padding; the hover zoom cap above is derived from the same value. */
-.daily-ops-accordion {
-    --daily-ops-width: min(42rem, calc(100vw - 4rem));
-    width: var(--daily-ops-width);
-    margin-inline: auto;
+/* Daily-operations carousel (DailyOperationsVideos.razor): previous arrow, slide and next arrow in one
+   row from 640px up; on narrow screens the slide takes the full width and the arrows sit below it.
+   Grid columns follow the document direction, so the arrows mirror automatically in RTL. Deliberately no
+   overflow:hidden - the slide's hover-zoomed frame must be able to grow beyond it. The slide fades out
+   (class is-fading-out, set by the component) before the next video is rendered and fades in again. */
+.daily-ops-carousel {
+    outline: none;
+}
+
+.daily-ops-carousel-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "slide slide" "prev next";
+    align-items: center;
+    gap: 1.25rem 1rem;
+}
+
+.daily-ops-carousel-slide {
+    grid-area: slide;
+    min-width: 0;
+    touch-action: pan-y pinch-zoom;
+}
+
+.daily-ops-carousel-prev {
+    grid-area: prev;
+    justify-self: start;
+}
+
+.daily-ops-carousel-next {
+    grid-area: next;
+    justify-self: end;
+}
+
+.daily-ops-carousel-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    @apply bg-surface-container-low text-primary;
+}
+
+.daily-ops-carousel-arrow:hover {
+    @apply bg-secondary text-white;
+}
+
+.daily-ops-carousel-arrow:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-secondary;
+}
+
+@media (min-width: 640px) {
+    .daily-ops-carousel-body {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-areas: "prev slide next";
+        gap: 1rem;
+    }
+
+    .daily-ops-carousel-prev,
+    .daily-ops-carousel-next {
+        justify-self: stretch;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .daily-ops-carousel-slide {
+        transition: opacity 350ms ease;
+    }
+}
+
+.daily-ops-carousel-slide.is-fading-out {
+    opacity: 0;
 }
 
 /* Looping demo video (DemoVideo.razor). The poster image is the static
@@ -386,21 +453,15 @@ body:has(.feature-ticker-bar) footer {
         position: relative;
         transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
         will-change: transform;
+        transform-origin: var(--hover-zoom-origin-x, 50%) 50%;
     }
 
+    /* hover-zoom-fit.js lowers the scale and shifts the origin per frame so the zoom stays inside the
+       viewport; without the script the plain 2x from the frame centre applies. */
     .screenshot-hover-zoom:hover {
-        transform: scale(2.0);
+        transform: scale(var(--hover-zoom-scale, 2));
         box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.45);
         z-index: 30;
-    }
-
-    /* Daily-operations accordion (DailyOperationsVideos.razor): the open video uses the same hover
-       zoom, but the scale is capped so the enlarged frame never leaves the viewport (no clipping,
-       no horizontal page scroll). The frame width is known from --daily-ops-width, so
-       tan(atan2(a, b)) yields the unitless ratio viewport width / frame width; browsers without
-       that math function drop the declaration and keep the plain 2x above. */
-    .daily-ops-accordion .screenshot-hover-zoom:hover {
-        transform: scale(min(2, tan(atan2(calc(100vw - 2rem), var(--daily-ops-width)))));
     }
 
     /* Slow ambient pulse for the decorative background blur blobs. The keyframe

@@ -5,8 +5,9 @@
    (wwwroot/js/rule-conflict-video.js drives playback for every video.rule-demo-video). Without a
    video in the page culture it renders Fallback (default: nothing) - there is deliberately no
    fallback to another language. Culture is the page culture code; label and caption come from
-   shared.json under the given keys; the optional TitleKey adds a heading above the video.
-   Deferred renders the video without autoplay and with preload="none" (accordion panels: nothing is
+   shared.json under the given keys; the optional TitleKey adds a heading (styled by TitleClass) above the video.
+   Loop (default true) can be turned off for the carousel, which advances on the ended event.
+   Deferred renders the video without autoplay and with preload="none" (carousel slides: nothing is
    downloaded until rule-conflict-video.js starts playback of the visible video). HoverZoom puts video and
    poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots. *@
 @if (_sources is not null)
@@ -14,11 +15,11 @@
     <figure class="@FigureClass">
         @if (TitleKey is not null)
         {
-            <h3 class="text-lg font-bold text-primary mb-4 text-center">@Sh(TitleKey)</h3>
+            <h3 class="@TitleClass">@Sh(TitleKey)</h3>
         }
         <div class="@(HoverZoom ? HoverZoomFrameClass : null)">
             <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
-                   muted autoplay="@(!Deferred)" loop playsinline preload="@(Deferred ? PreloadNone : PreloadMetadata)"
+                   muted autoplay="@(!Deferred)" loop="@Loop" playsinline preload="@(Deferred ? PreloadNone : PreloadMetadata)"
                    width="@Width" height="@Height"
                    poster="@_sources.PosterPath"
                    aria-label="@Sh(LabelKey)">
@@ -50,6 +51,7 @@ else if (Fallback is not null)
     private const string SharedContentKey = "shared";
     private const string PreloadNone = "none";
     private const string PreloadMetadata = "metadata";
+    private const string DefaultTitleClass = "text-lg font-bold text-primary mb-4 text-center";
     private const string HoverZoomFrameClass = "screenshot-hover-zoom rounded-2xl";
 
     private LocalizedVideoSources? _sources;
@@ -63,6 +65,8 @@ else if (Fallback is not null)
     [Parameter, EditorRequired] public required int Height { get; set; }
     [Parameter] public bool Deferred { get; set; }
     [Parameter] public bool HoverZoom { get; set; }
+    [Parameter] public bool Loop { get; set; } = true;
+    [Parameter] public string TitleClass { get; set; } = DefaultTitleClass;
     [Parameter] public string FigureClass { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Fallback { get; set; }
 
