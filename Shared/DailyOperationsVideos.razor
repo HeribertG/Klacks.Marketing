@@ -1,32 +1,63 @@
 @inject ILocalizedVideoCatalog VideoCatalog
 @inject IPageContentProvider ContentProvider
 
-@* "In daily operations" block with the four short demo videos (expenses, correction, replacement,
-   hours adjustment), each rendered only when a video recorded in the page culture exists - there is
-   deliberately no fallback to another language. Without any video in the culture the whole section
-   (heading included) is omitted. Culture is the page culture code; all texts come from shared.json. *@
+@* "In daily operations" block: an accordion with the four short demo videos (expenses, correction,
+   replacement, hours adjustment), one panel open at a time, the first one open by default. Each item
+   appears only when a video recorded in the page culture exists - there is deliberately no fallback to
+   another language. Without any video in the culture the whole section (heading included) is omitted.
+   Headers are real buttons (aria-expanded/aria-controls); closed panels are hidden, so their video is
+   never downloaded and rule-conflict-video.js pauses it. The open video enlarges on hover through
+   the shared screenshot-hover-zoom frame (DemoVideo.HoverZoom). A hint under the accordion points to
+   Klacksy, who can do the same steps in the chat. Culture is the page culture code; all texts come from
+   shared.json. *@
 @if (_videos.Count > 0)
 {
     <section id="alltag" class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12 md:mb-16">
             <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh("dailyOps.eyebrow")</span>
             <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Sh("dailyOps.title")</h2>
             <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh("dailyOps.subtitle")</p>
         </div>
-        <div class="grid gap-x-10 gap-y-14 items-start @(_videos.Count == 1 ? "max-w-3xl mx-auto" : "md:grid-cols-2")">
-            @foreach (var video in _videos)
+        <div class="daily-ops-accordion border-t border-surface-container-high">
+            @for (var index = 0; index < _videos.Count; index++)
             {
-                <DemoVideo Culture="@Culture" VideoName="@video.VideoName" TitleKey="@video.TitleKey" LabelKey="@video.LabelKey" CaptionKey="@video.CaptionKey"
-                           Width="@VideoWidth" Height="@VideoHeight" FigureClass="reveal mb-0" />
+                var video = _videos[index];
+                var isOpen = index == _openIndex;
+                var headerId = HeaderIdPrefix + video.VideoName;
+                var panelId = PanelIdPrefix + video.VideoName;
+                var itemIndex = index;
+                <div class="border-b border-surface-container-high">
+                    <h3 class="m-0">
+                        <button type="button" id="@headerId"
+                                class="daily-ops-accordion-header w-full flex items-center justify-between gap-4 py-5 text-start text-lg font-bold text-primary hover:text-secondary rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                                aria-expanded="@(isOpen ? "true" : "false")" aria-controls="@panelId"
+                                @onclick="() => Toggle(itemIndex)">
+                            <span>@Sh(video.TitleKey)</span>
+                            <span class="material-symbols-outlined shrink-0 text-secondary transition-transform @(isOpen ? "rotate-180" : string.Empty)" aria-hidden="true">expand_more</span>
+                        </button>
+                    </h3>
+                    <div id="@panelId" role="region" aria-labelledby="@headerId" hidden="@(!isOpen)" class="pb-8 pt-2">
+                        <DemoVideo Culture="@Culture" VideoName="@video.VideoName" LabelKey="@video.LabelKey" CaptionKey="@video.CaptionKey"
+                                   Width="@VideoWidth" Height="@VideoHeight" Deferred="true" HoverZoom="true" FigureClass="mb-0" />
+                    </div>
+                </div>
             }
+        </div>
+        <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
+            <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh("dailyOps.hintLabel")</span>
+            <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Sh("dailyOps.klacksyHint")</p>
         </div>
     </section>
 }
 
 @code {
     private const string SharedContentKey = "shared";
+    private const string HeaderIdPrefix = "daily-ops-header-";
+    private const string PanelIdPrefix = "daily-ops-panel-";
     private const int VideoWidth = 1280;
     private const int VideoHeight = 800;
+    private const int FirstPanelIndex = 0;
+    private const int NoPanelIndex = -1;
 
     private static readonly DailyOperationsVideo[] AllVideos =
     {
@@ -37,12 +68,22 @@
     };
 
     private IReadOnlyList<DailyOperationsVideo> _videos = Array.Empty<DailyOperationsVideo>();
+    private int _openIndex = FirstPanelIndex;
 
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
     protected override void OnParametersSet()
     {
         _videos = AllVideos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList();
+        if (_openIndex >= _videos.Count)
+        {
+            _openIndex = FirstPanelIndex;
+        }
+    }
+
+    private void Toggle(int index)
+    {
+        _openIndex = _openIndex == index ? NoPanelIndex : index;
     }
 
     private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);

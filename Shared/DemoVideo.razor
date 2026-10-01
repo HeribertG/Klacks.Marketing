@@ -5,7 +5,10 @@
    (wwwroot/js/rule-conflict-video.js drives playback for every video.rule-demo-video). Without a
    video in the page culture it renders Fallback (default: nothing) - there is deliberately no
    fallback to another language. Culture is the page culture code; label and caption come from
-   shared.json under the given keys; the optional TitleKey adds a heading above the video. *@
+   shared.json under the given keys; the optional TitleKey adds a heading above the video.
+   Deferred renders the video without autoplay and with preload="none" (accordion panels: nothing is
+   downloaded until rule-conflict-video.js starts playback of the visible video). HoverZoom puts video and
+   poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots. *@
 @if (_sources is not null)
 {
     <figure class="@FigureClass">
@@ -13,17 +16,19 @@
         {
             <h3 class="text-lg font-bold text-primary mb-4 text-center">@Sh(TitleKey)</h3>
         }
-        <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
-               muted autoplay loop playsinline preload="metadata"
-               width="@Width" height="@Height"
-               poster="@_sources.PosterPath"
-               aria-label="@Sh(LabelKey)">
-            <source src="@_sources.WebmPath" type="@WebmMimeType" />
-            <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
-        </video>
-        <img class="rule-demo-poster w-full h-auto rounded-2xl shadow-xl"
-             src="@_sources.PosterPath" alt="@Sh(LabelKey)"
-             width="@Width" height="@Height" loading="lazy" />
+        <div class="@(HoverZoom ? HoverZoomFrameClass : null)">
+            <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
+                   muted autoplay="@(!Deferred)" loop playsinline preload="@(Deferred ? PreloadNone : PreloadMetadata)"
+                   width="@Width" height="@Height"
+                   poster="@_sources.PosterPath"
+                   aria-label="@Sh(LabelKey)">
+                <source src="@_sources.WebmPath" type="@WebmMimeType" />
+                <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
+            </video>
+            <img class="rule-demo-poster w-full h-auto rounded-2xl shadow-xl"
+                 src="@_sources.PosterPath" alt="@Sh(LabelKey)"
+                 width="@Width" height="@Height" loading="lazy" />
+        </div>
         <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed text-center mb-0">@((MarkupString)Sh(CaptionKey))</figcaption>
     </figure>
 }
@@ -43,6 +48,9 @@ else if (Fallback is not null)
     private const string WebmMimeType = "video/webm";
     private const string Mp4MimeType = "video/mp4";
     private const string SharedContentKey = "shared";
+    private const string PreloadNone = "none";
+    private const string PreloadMetadata = "metadata";
+    private const string HoverZoomFrameClass = "screenshot-hover-zoom rounded-2xl";
 
     private LocalizedVideoSources? _sources;
 
@@ -53,6 +61,8 @@ else if (Fallback is not null)
     [Parameter] public string? TitleKey { get; set; }
     [Parameter, EditorRequired] public required int Width { get; set; }
     [Parameter, EditorRequired] public required int Height { get; set; }
+    [Parameter] public bool Deferred { get; set; }
+    [Parameter] public bool HoverZoom { get; set; }
     [Parameter] public string FigureClass { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Fallback { get; set; }
 
