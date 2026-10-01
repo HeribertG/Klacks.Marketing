@@ -13,7 +13,9 @@
  * The warning row is never clicked (clicking navigates the grid to the conflict and scrolls the framed rows away); at
  * the end the cursor is parked on free space next to the row's text so it covers none of it. The rest-conflict video is
  * encoded as a smooth loop: the final frame is held, then cross-fades into the first frame.
- * CLI: --videos rest-conflict,klacksy-plans-week  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The work-entry takes (expenses, correction, hours-adjustment, replacement) live in takes/work-entry-takes.mjs, the container takes
+ * (container-fill, container-split; demo data from seed-container-demo.mjs) in takes/container-takes.mjs.
+ * CLI: --videos rest-conflict,klacksy-plans-week,expenses,correction,hours-adjustment,replacement,container-fill,container-split  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --warning-timeout-s <n>  --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -29,6 +31,34 @@ import * as S from "./lib/klacks-demo-session.mjs";
 import { cursorInitScript, HumanMouse, CURSOR_SIZE_PX } from "./lib/cursor-overlay.mjs";
 import { ScreenRecorder } from "./lib/screen-recorder.mjs";
 import { encodeRecording } from "./lib/video-encoder.mjs";
+import {
+  WORK_ENTRY_TYPE,
+  CELL_WIDTH_PX,
+  SUB_ROW_HEIGHT_PX,
+  HALF,
+  ISO_DATE_LENGTH,
+  SEL_GRID_CANVAS,
+  SEL_NAME_ROWS,
+  SCHEDULE_ROUTE_PART,
+  WORKS_API,
+  SCHEDULE_API,
+  HTTP_DELETE,
+  HTTP_POST,
+  SCHEDULE_DATA_TIMEOUT_MS,
+  CANVAS_SETTLE_MS,
+  dateKey,
+  monthFilter,
+  worksIn,
+  snapshotOf,
+  sameSnapshot,
+  openSchedule,
+  rowBoxes,
+  gridBox,
+  cellCenter,
+  ScheduleApi,
+} from "./lib/schedule-grid.mjs";
+import { WORK_ENTRY_TAKE_RUNNERS, WORK_ENTRY_VIDEOS } from "./takes/work-entry-takes.mjs";
+import { CONTAINER_TAKE_RUNNERS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT } from "./takes/container-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -44,11 +74,12 @@ const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_REST_CONFLICT = "rest-conflict";
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [VIDEO_REST_CONFLICT, VIDEO_KLACKSY_PLANS_WEEK];
+const ALL_VIDEOS = [VIDEO_REST_CONFLICT, VIDEO_KLACKSY_PLANS_WEEK, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const VIEWPORT = { width: 1500, height: 940 };
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
+const WORK_ENTRY_VIEWPORT = { width: 1280, height: 800 };
 const DEVICE_SCALE_FACTOR = 1;
 const CURSOR_START_RATIO = { x: 0.55, y: 0.92 };
 const cursorStart = (viewport) => ({ x: Math.round(viewport.width * CURSOR_START_RATIO.x), y: Math.round(viewport.height * CURSOR_START_RATIO.y) });
@@ -81,7 +112,6 @@ const NOVEMBER = { year: 2026, month: 11, isoWeek: 45 };
 const PLAN_WEEK = { from: "2026-11-02", until: "2026-11-08" };
 const PROTECTED_MONTH = { from: "2026-10-01", until: "2026-10-31", expectedWorks: 118 };
 
-const WORK_ENTRY_TYPE = 0;
 const MIN_REST_HOURS = 11;
 const PREFERRED_REST_HOURS = 9;
 const HOURS_PER_DAY = 24;
@@ -102,16 +132,10 @@ const MIN_REST_DAYS_PER_WEEK = 2;
 const MAX_CONSECUTIVE_DAYS = 6;
 const DAYS_PER_WEEK = 7;
 const ISO_SUNDAY = 7;
-const CELL_WIDTH_PX = 90;
-const SUB_ROW_HEIGHT_PX = 50;
-const HALF = 2;
-const ISO_DATE_LENGTH = 10;
 const HH_MM_LENGTH = 5;
 const RESULT_PREVIEW_CHARS = 600;
 const LOG_PREVIEW_CHARS = 200;
 
-const SEL_GRID_CANVAS = "canvas[id^='template-canvas']";
-const SEL_NAME_ROWS = "#box .drag-row";
 const SEL_SHIFT_TABS = "#shift-tabs .nav-link";
 const ERROR_TAB_INDEX = 1;
 const SEL_ERROR_ROWS = "app-schedule-error-list tr.table-row";
@@ -130,21 +154,15 @@ const CLASS_ACTIVE = "active";
 const SEL_ASSISTANT_INPUT = "#assistant-chat-input";
 const SEL_ASSISTANT_SEND = "#assistant-chat-send-btn";
 
-const SCHEDULE_ROUTE_PART = "/Works/Schedule";
 const REASSIGN_ROUTE = /\/Works\/([0-9a-f-]{36})\/ReassignClient/i;
 const CHAT_STREAM_PART = "/assistant/chat/stream";
-const WORKS_API = "/api/backend/Works";
-const SCHEDULE_API = `${WORKS_API}/Schedule`;
 const SCENARIOS_API = "/api/backend/AnalyseScenarios";
-const HTTP_DELETE = "DELETE";
-const HTTP_POST = "POST";
 const SSE_CONTENT = "content";
 const SSE_FUNCTION_CALL = "function_call";
 const SSE_FUNCTION_RESULT = "function_result";
 const SSE_METADATA = "metadata";
 const SSE_ERROR = "error";
 
-const SCHEDULE_DATA_TIMEOUT_MS = 90000;
 const REASSIGN_TIMEOUT_MS = 30000;
 const IN_FLIGHT_SETTLE_MS = 60000;
 const IN_FLIGHT_POLL_MS = 250;
@@ -156,7 +174,6 @@ const SCENARIO_POLL_MS = 5000;
 const WHEEL_TICK_DELTA = 100;
 const WHEEL_TICK_PAUSE_MS = 250;
 const MAX_WHEEL_TICKS = 12;
-const CANVAS_SETTLE_MS = 1500;
 const STABLE_POLL_MS = 150;
 const STABLE_MAX_CHECKS = 40;
 
@@ -213,7 +230,6 @@ function readOptions() {
 }
 
 const log = (...args) => console.log("  ", ...args);
-const dateKey = (value) => String(value).slice(0, ISO_DATE_LENGTH);
 const oneLine = (text, max) => String(text).replace(/\s+/g, " ").trim().slice(0, max);
 
 function addDays(isoDate, days) {
@@ -231,32 +247,7 @@ function hoursOf(time) {
   return h + m / MINUTES_PER_HOUR;
 }
 
-function monthFilter(period) {
-  const first = `${period.year}-${String(period.month).padStart(2, "0")}-01`;
-  const last = new Date(Date.UTC(period.year, period.month, 0)).toISOString().slice(0, ISO_DATE_LENGTH);
-  return { startDate: first, endDate: last, periodStartDate: first, periodEndDate: last };
-}
-
-class DemoApi {
-  constructor(request, options, token) {
-    this.request = request;
-    this.options = options;
-    this.headers = S.bearer(token);
-  }
-
-  async json(apiPath, init = {}) {
-    const response = await S.apiRequest(this.request, `${this.options.apiUrl}${apiPath}`, {
-      ...init,
-      headers: { ...this.headers, ...init.headers },
-    });
-    const text = await response.text();
-    return text ? JSON.parse(text) : null;
-  }
-
-  schedule(filter) {
-    return this.json(SCHEDULE_API, { method: HTTP_POST, data: filter });
-  }
-
+class DemoApi extends ScheduleApi {
   reassign(workId, targetClientId) {
     return this.json(`${WORKS_API}/${workId}/ReassignClient`, { method: HTTP_POST, data: { targetClientId } });
   }
@@ -276,36 +267,6 @@ class DemoApi {
   jobStatus(job) {
     return this.json(`${JOB_STATUS_API[job.skill]}/${job.id}`);
   }
-}
-
-function worksIn(data, from, until) {
-  return data.entries.filter((e) => e.entryType === WORK_ENTRY_TYPE && dateKey(e.entryDate) >= from && dateKey(e.entryDate) <= until);
-}
-
-function snapshotOf(data, range) {
-  return worksIn(data, range.from, range.until)
-    .map((e) => [e.id, e.clientId, dateKey(e.entryDate), e.entryId, e.startTime, e.endTime].join("|"))
-    .sort();
-}
-
-function sameSnapshot(a, b) {
-  return a.length === b.length && a.every((v, i) => v === b[i]);
-}
-
-async function openSchedule(page, options) {
-  const scheduleResponse = page.waitForResponse(
-    (r) => r.url().includes(SCHEDULE_ROUTE_PART) && r.request().method() === HTTP_POST
-      && r.request().postDataJSON()?.selectedGroup === options.groupId,
-    { timeout: SCHEDULE_DATA_TIMEOUT_MS },
-  );
-  await page.goto(`${options.uiUrl}${S.SCHEDULE_PATH}?groupId=${options.groupId}`, { timeout: S.NAV_TIMEOUT_MS, waitUntil: "domcontentloaded" });
-  const response = await scheduleResponse;
-  const filter = response.request().postDataJSON();
-  const data = await response.json();
-  await page.locator(SEL_GRID_CANVAS).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await page.locator(SEL_NAME_ROWS).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await page.waitForTimeout(CANVAS_SETTLE_MS);
-  return { filter, data };
 }
 
 function isoWeekDays(isoDate) {
@@ -364,19 +325,6 @@ function pickRestConflict(data, filter) {
   return candidates[0];
 }
 
-async function rowBoxes(page) {
-  return page.locator(SEL_NAME_ROWS).evaluateAll((els) => els.map((el) => {
-    const b = el.getBoundingClientRect();
-    return { top: b.top, height: b.height };
-  }));
-}
-
-async function gridBox(page) {
-  const box = await page.locator(SEL_GRID_CANVAS).first().boundingBox();
-  if (!box) throw new Error("schedule grid canvas not found");
-  return box;
-}
-
 async function scrollRowsIntoView(page, mouse, rows) {
   const grid = await gridBox(page);
   const visibleTop = grid.y + SUB_ROW_HEIGHT_PX;
@@ -393,15 +341,6 @@ async function scrollRowsIntoView(page, mouse, rows) {
     await page.waitForTimeout(WHEEL_TICK_PAUSE_MS);
   }
   throw new Error(`rows ${rows.join(",")} could not be scrolled into view`);
-}
-
-async function cellCenter(page, row, dayIndex, isRtl) {
-  const grid = await gridBox(page);
-  const boxes = await rowBoxes(page);
-  const x = isRtl
-    ? grid.x + grid.width - (dayIndex + 1) * CELL_WIDTH_PX + CELL_WIDTH_PX / HALF
-    : grid.x + dayIndex * CELL_WIDTH_PX + CELL_WIDTH_PX / HALF;
-  return { x, y: boxes[row].top + SUB_ROW_HEIGHT_PX / HALF };
 }
 
 function errorRowFor(page, pick) {
@@ -974,6 +913,12 @@ async function takeKlacksyPlansWeek(take) {
 const TAKES = {
   [VIDEO_REST_CONFLICT]: { period: OCTOBER, viewport: VIEWPORT, css: VIDEO_NOISE_CSS, run: takeRestConflict },
   [VIDEO_KLACKSY_PLANS_WEEK]: { period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek },
+  ...Object.fromEntries(WORK_ENTRY_VIDEOS.map((video) => [
+    video,
+    { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: WORK_ENTRY_TAKE_RUNNERS[video], needsScript: true },
+  ])),
+  [VIDEO_CONTAINER_FILL]: { period: OCTOBER, viewport: VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_FILL], needsScript: true },
+  [VIDEO_CONTAINER_SPLIT]: { period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: CONTAINER_TAKE_RUNNERS[VIDEO_CONTAINER_SPLIT], needsScript: true },
 };
 
 async function recordTake(browser, options, shared, video, culture) {
@@ -992,12 +937,14 @@ async function recordTake(browser, options, shared, video, culture) {
   const page = await context.newPage();
   const framesDir = path.join(options.framesRoot, OUTPUT_BASE_NAME(video, culture));
   const report = { video, culture, framesDir };
+  const script = shared.scripts[video]?.[culture] ?? null;
+  if (definition.needsScript && !script) throw new Error(`no ${video} script for ${culture} in ${path.basename(SCRIPTS_FILE)}`);
   try {
     await S.login(page, options);
     await S.assertCulture(page, culture, shared.metadata);
     await page.mouse.move(start.x, start.y);
     await definition.run({
-      page, options, culture, report, scale, viewport,
+      page, options, culture, report, scale, viewport, script,
       api: shared.api,
       scripts: shared.scripts,
       recorder: new ScreenRecorder(page, framesDir, recorderConfig(viewport, scale)),

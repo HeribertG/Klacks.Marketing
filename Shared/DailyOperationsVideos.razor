@@ -1,0 +1,51 @@
+@inject ILocalizedVideoCatalog VideoCatalog
+@inject IPageContentProvider ContentProvider
+
+@* "In daily operations" block with the four short demo videos (expenses, correction, replacement,
+   hours adjustment), each rendered only when a video recorded in the page culture exists - there is
+   deliberately no fallback to another language. Without any video in the culture the whole section
+   (heading included) is omitted. Culture is the page culture code; all texts come from shared.json. *@
+@if (_videos.Count > 0)
+{
+    <section id="alltag" class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
+        <div class="text-center mb-16">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh("dailyOps.eyebrow")</span>
+            <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Sh("dailyOps.title")</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh("dailyOps.subtitle")</p>
+        </div>
+        <div class="grid gap-x-10 gap-y-14 items-start @(_videos.Count == 1 ? "max-w-3xl mx-auto" : "md:grid-cols-2")">
+            @foreach (var video in _videos)
+            {
+                <DemoVideo Culture="@Culture" VideoName="@video.VideoName" TitleKey="@video.TitleKey" LabelKey="@video.LabelKey" CaptionKey="@video.CaptionKey"
+                           Width="@VideoWidth" Height="@VideoHeight" FigureClass="reveal mb-0" />
+            }
+        </div>
+    </section>
+}
+
+@code {
+    private const string SharedContentKey = "shared";
+    private const int VideoWidth = 1280;
+    private const int VideoHeight = 800;
+
+    private static readonly DailyOperationsVideo[] AllVideos =
+    {
+        new(DemoVideo.ExpensesVideoName, "expensesDemo.title", "expensesDemo.videoLabel", "expensesDemo.caption"),
+        new(DemoVideo.CorrectionVideoName, "correctionDemo.title", "correctionDemo.videoLabel", "correctionDemo.caption"),
+        new(DemoVideo.ReplacementVideoName, "replacementDemo.title", "replacementDemo.videoLabel", "replacementDemo.caption"),
+        new(DemoVideo.HoursAdjustmentVideoName, "hoursAdjustmentDemo.title", "hoursAdjustmentDemo.videoLabel", "hoursAdjustmentDemo.caption"),
+    };
+
+    private IReadOnlyList<DailyOperationsVideo> _videos = Array.Empty<DailyOperationsVideo>();
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    protected override void OnParametersSet()
+    {
+        _videos = AllVideos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList();
+    }
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+
+    private sealed record DailyOperationsVideo(string VideoName, string TitleKey, string LabelKey, string CaptionKey);
+}

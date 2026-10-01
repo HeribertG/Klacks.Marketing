@@ -86,6 +86,7 @@ const THROTTLE_SAFE_MS = 60;
 const NUDGE_PX = 1;
 const SAME_POINT_PX = 2;
 const HALF = 2;
+const RIGHT_BUTTON = "right";
 
 function easeInOut(t) {
   return t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2;
@@ -117,6 +118,18 @@ export class HumanMouse {
     await this.page.mouse.down();
     await this.page.waitForTimeout(CLICK_HOLD_MS);
     await this.page.mouse.up();
+  }
+
+  async rightClick(target, durationMs = DEFAULT_MOVE_MS) {
+    await this.moveTo(target, durationMs);
+    await this.page.mouse.down({ button: RIGHT_BUTTON });
+    await this.page.waitForTimeout(CLICK_HOLD_MS);
+    await this.page.mouse.up({ button: RIGHT_BUTTON });
+  }
+
+  async doubleClick(target, durationMs = DEFAULT_MOVE_MS) {
+    await this.moveTo(target, durationMs);
+    await this.page.mouse.dblclick(target.x, target.y, { delay: CLICK_HOLD_MS });
   }
 
   async clickLocator(locator, durationMs = DEFAULT_MOVE_MS) {

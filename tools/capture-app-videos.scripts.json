@@ -375,5 +375,505 @@
         }
       ]
     }
+  },
+  "expenses": {
+    "de": {
+      "amount": "24.50",
+      "description": "Mittagessen auswärts beim Kunden"
+    },
+    "en": {
+      "amount": "24.50",
+      "description": "Lunch at the customer's site"
+    },
+    "fr": {
+      "amount": "24.50",
+      "description": "Déjeuner chez le client"
+    },
+    "it": {
+      "amount": "24.50",
+      "description": "Pranzo fuori presso il cliente"
+    },
+    "ar": {
+      "amount": "24.50",
+      "description": "غداء خارجي لدى العميل"
+    },
+    "ja": {
+      "amount": "24.50",
+      "description": "顧客先での昼食"
+    },
+    "cs": {
+      "amount": "24.50",
+      "description": "Oběd mimo firmu u zákazníka"
+    },
+    "da": {
+      "amount": "24.50",
+      "description": "Frokost ude hos kunden"
+    },
+    "el": {
+      "amount": "24.50",
+      "description": "Γεύμα εκτός, στον πελάτη"
+    },
+    "es": {
+      "amount": "24.50",
+      "description": "Almuerzo fuera, en casa del cliente"
+    },
+    "fi": {
+      "amount": "24.50",
+      "description": "Lounas asiakkaan luona"
+    },
+    "he": {
+      "amount": "24.50",
+      "description": "ארוחת צהריים אצל הלקוח"
+    },
+    "id": {
+      "amount": "24.50",
+      "description": "Makan siang di lokasi pelanggan"
+    },
+    "ko": {
+      "amount": "24.50",
+      "description": "고객사에서 점심 식사"
+    },
+    "ms": {
+      "amount": "24.50",
+      "description": "Makan tengah hari di tapak pelanggan"
+    },
+    "nb": {
+      "amount": "24.50",
+      "description": "Lunsj ute hos kunden"
+    },
+    "nl": {
+      "amount": "24.50",
+      "description": "Lunch buiten de deur bij de klant"
+    },
+    "pl": {
+      "amount": "24.50",
+      "description": "Obiad poza firmą u klienta"
+    },
+    "pt": {
+      "amount": "24.50",
+      "description": "Almoço fora, no cliente"
+    },
+    "ro": {
+      "amount": "24.50",
+      "description": "Prânz în oraș, la client"
+    },
+    "sv": {
+      "amount": "24.50",
+      "description": "Lunch ute hos kunden"
+    },
+    "th": {
+      "amount": "24.50",
+      "description": "อาหารกลางวันนอกสถานที่ที่ลูกค้า"
+    },
+    "vi": {
+      "amount": "24.50",
+      "description": "Ăn trưa bên ngoài tại chỗ khách hàng"
+    },
+    "zh-CN": {
+      "amount": "24.50",
+      "description": "在客户处外出午餐"
+    },
+    "zh-TW": {
+      "amount": "24.50",
+      "description": "在客戶處外出午餐"
+    }
+  },
+  "correction": {
+    "de": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Übergabe dauerte länger",
+      "expectedSurcharges": 0
+    },
+    "en": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Handover took longer",
+      "expectedSurcharges": 0
+    },
+    "fr": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "La relève a pris plus de temps",
+      "expectedSurcharges": 0
+    },
+    "it": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Il passaggio di consegne è durato di più",
+      "expectedSurcharges": 0
+    },
+    "ar": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "استغرق التسليم وقتًا أطول",
+      "expectedSurcharges": 0
+    },
+    "ja": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "引き継ぎに時間がかかった",
+      "expectedSurcharges": 0
+    },
+    "cs": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Předávka trvala déle",
+      "expectedSurcharges": 0
+    },
+    "da": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Overdragelsen tog længere tid",
+      "expectedSurcharges": 0
+    },
+    "el": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Η παράδοση βάρδιας διήρκεσε περισσότερο",
+      "expectedSurcharges": 0
+    },
+    "es": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "El relevo tardó más",
+      "expectedSurcharges": 0
+    },
+    "fi": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Vuoronvaihto kesti pidempään",
+      "expectedSurcharges": 0
+    },
+    "he": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "החפיפה נמשכה יותר זמן",
+      "expectedSurcharges": 0
+    },
+    "id": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Serah terima memakan waktu lebih lama",
+      "expectedSurcharges": 0
+    },
+    "ko": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "인수인계가 더 오래 걸림",
+      "expectedSurcharges": 0
+    },
+    "ms": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Serah tugas mengambil masa lebih lama",
+      "expectedSurcharges": 0
+    },
+    "nb": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Overleveringen tok lengre tid",
+      "expectedSurcharges": 0
+    },
+    "nl": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Overdracht duurde langer",
+      "expectedSurcharges": 0
+    },
+    "pl": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Przekazanie zmiany trwało dłużej",
+      "expectedSurcharges": 0
+    },
+    "pt": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "A passagem de turno demorou mais",
+      "expectedSurcharges": 0
+    },
+    "ro": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Predarea a durat mai mult",
+      "expectedSurcharges": 0
+    },
+    "sv": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Överlämningen tog längre tid",
+      "expectedSurcharges": 0
+    },
+    "th": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "การส่งมอบงานใช้เวลานานขึ้น",
+      "expectedSurcharges": 0
+    },
+    "vi": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "Bàn giao ca kéo dài hơn",
+      "expectedSurcharges": 0
+    },
+    "zh-CN": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "交接用时更长",
+      "expectedSurcharges": 0
+    },
+    "zh-TW": {
+      "hours": "0",
+      "minutes": "30",
+      "description": "交接花了更久時間",
+      "expectedSurcharges": 0
+    }
+  },
+  "hours-adjustment": {
+    "de": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "en": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "fr": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "it": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "ar": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "ja": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "cs": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "da": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "el": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "es": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "fi": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "he": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "id": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "ko": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "ms": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "nb": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "nl": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "pl": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "pt": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "ro": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "sv": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "th": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "vi": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "zh-CN": {
+      "endHours": "12",
+      "endMinutes": "30"
+    },
+    "zh-TW": {
+      "endHours": "12",
+      "endMinutes": "30"
+    }
+  },
+  "container-fill": {
+    "de": {
+      "tasks": [
+        "KGA",
+        "MAT",
+        "KUT",
+        "RAP"
+      ]
+    }
+  },
+  "container-split": {
+    "de": {
+      "splitHours": "11",
+      "splitMinutes": "00",
+      "searchChars": 4
+    }
+  },
+  "replacement": {
+    "de": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Arzttermin, Elias übernimmt"
+    },
+    "en": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Doctor's appointment, Elias takes over"
+    },
+    "fr": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Rendez-vous médical, Elias prend le relais"
+    },
+    "it": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Visita medica, subentra Elias"
+    },
+    "ar": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "موعد طبي، إلياس يتولى المناوبة"
+    },
+    "ja": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "通院のため、エリアスが交代"
+    },
+    "cs": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Návštěva lékaře, přebírá Elias"
+    },
+    "da": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Lægeaftale, Elias overtager"
+    },
+    "el": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Ραντεβού με γιατρό, αναλαμβάνει ο Ηλίας"
+    },
+    "es": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Cita médica, Elias toma el relevo"
+    },
+    "fi": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Lääkäriaika, Elias jatkaa vuoroa"
+    },
+    "he": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "תור לרופא, אליאס מחליף"
+    },
+    "id": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Janji dokter, Elias menggantikan"
+    },
+    "ko": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "병원 예약, 엘리아스가 교대"
+    },
+    "ms": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Temu janji doktor, Elias mengambil alih"
+    },
+    "nb": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Legetime, Elias tar over"
+    },
+    "nl": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Doktersafspraak, Elias neemt over"
+    },
+    "pl": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Wizyta u lekarza, zastępuje Elias"
+    },
+    "pt": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Consulta médica, o Elias assume"
+    },
+    "ro": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Programare la medic, preia Elias"
+    },
+    "sv": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Läkarbesök, Elias tar över"
+    },
+    "th": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "นัดพบแพทย์ เอเลียสรับช่วงต่อ"
+    },
+    "vi": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "Lịch hẹn bác sĩ, Elias thay ca"
+    },
+    "zh-CN": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "看医生，由埃利亚斯接班"
+    },
+    "zh-TW": {
+      "hours": "2",
+      "minutes": "00",
+      "description": "看醫生，由埃利亞斯接班"
+    }
   }
 }

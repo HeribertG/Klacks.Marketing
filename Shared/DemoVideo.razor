@@ -5,10 +5,14 @@
    (wwwroot/js/rule-conflict-video.js drives playback for every video.rule-demo-video). Without a
    video in the page culture it renders Fallback (default: nothing) - there is deliberately no
    fallback to another language. Culture is the page culture code; label and caption come from
-   shared.json under the given keys. *@
+   shared.json under the given keys; the optional TitleKey adds a heading above the video. *@
 @if (_sources is not null)
 {
     <figure class="@FigureClass">
+        @if (TitleKey is not null)
+        {
+            <h3 class="text-lg font-bold text-primary mb-4 text-center">@Sh(TitleKey)</h3>
+        }
         <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
                muted autoplay loop playsinline preload="metadata"
                width="@Width" height="@Height"
@@ -31,6 +35,10 @@ else if (Fallback is not null)
 @code {
     public const string RestConflictVideoName = "rest-conflict";
     public const string KlacksyPlansWeekVideoName = "klacksy-plans-week";
+    public const string ExpensesVideoName = "expenses";
+    public const string CorrectionVideoName = "correction";
+    public const string ReplacementVideoName = "replacement";
+    public const string HoursAdjustmentVideoName = "hours-adjustment";
 
     private const string WebmMimeType = "video/webm";
     private const string Mp4MimeType = "video/mp4";
@@ -42,6 +50,7 @@ else if (Fallback is not null)
     [Parameter, EditorRequired] public required string VideoName { get; set; }
     [Parameter, EditorRequired] public required string LabelKey { get; set; }
     [Parameter, EditorRequired] public required string CaptionKey { get; set; }
+    [Parameter] public string? TitleKey { get; set; }
     [Parameter, EditorRequired] public required int Width { get; set; }
     [Parameter, EditorRequired] public required int Height { get; set; }
     [Parameter] public string FigureClass { get; set; } = string.Empty;

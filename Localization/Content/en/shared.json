@@ -60,5 +60,20 @@
   "ruleDemo.videoLabel": "Video: Klacks warns about a rest period that is too short",
   "ruleDemo.caption": "Real recording from Klacks with demo data: an early shift is assigned to someone who worked a late shift until 10 p.m. the day before — Klacks immediately shows a warning because the configured 11-hour rest period shrinks to 9 hours.",
   "klacksyPlansWeek.videoLabel": "Video: Klacksy plans the week",
-  "klacksyPlansWeek.caption": "Real recording from Klacks with demo data: in the chat, Klacksy starts the planning assistant for one week, shows the result and applies it once you confirm — the schedule fills up. Waiting times are shortened."
+  "klacksyPlansWeek.caption": "Real recording from Klacks with demo data: in the chat, Klacksy starts the planning assistant for one week, shows the result and applies it once you confirm — the schedule fills up. Waiting times are shortened.",
+  "dailyOps.eyebrow": "In daily operations",
+  "dailyOps.title": "Expenses, corrections, replacements, hours",
+  "dailyOps.subtitle": "Real recordings from Klacks with demo data: what comes up every day is handled right in the roster — the hours in the row header update instantly.",
+  "expensesDemo.title": "Record expenses",
+  "expensesDemo.videoLabel": "Video: recording expenses on a shift",
+  "expensesDemo.caption": "Right-click the shift, choose Expenses, enter the amount — the cell shows the amount right away.",
+  "correctionDemo.title": "Book a correction",
+  "correctionDemo.videoLabel": "Video: booking a correction on a shift",
+  "correctionDemo.caption": "The employee stayed 30 minutes longer: Klacks adds a correction block and the hours in the row header update.",
+  "replacementDemo.title": "Record a replacement",
+  "replacementDemo.videoLabel": "Video: a colleague takes over part of a shift",
+  "replacementDemo.caption": "A colleague takes over the last two hours of the shift: both rows show the replacement block and both hour totals update.",
+  "hoursAdjustmentDemo.title": "Adjust hours",
+  "hoursAdjustmentDemo.videoLabel": "Video: adjusting the end time of a shift",
+  "hoursAdjustmentDemo.caption": "Double-click the shift, change the end time in the dialog — duration and totals are recalculated immediately."
 }

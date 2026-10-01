@@ -60,5 +60,20 @@
   "ruleDemo.videoLabel": "動画: 休息時間の不足を Klacks が警告",
   "ruleDemo.caption": "デモデータを使った Klacks の実際の画面録画: 前日に 22 時まで遅番だった人に早番を割り当てると、設定された 11 時間の休息時間が 9 時間に短くなるため、Klacks がすぐに警告を表示します。",
   "klacksyPlansWeek.videoLabel": "動画: Klacksy が 1 週間分を計画",
-  "klacksyPlansWeek.caption": "デモデータを使った Klacks の実際の画面録画: チャットで Klacksy が 1 週間分のプランニングアシスタントを起動し、結果を表示して、確認後に採用すると、シフト表が埋まります。待ち時間は短縮しています。"
+  "klacksyPlansWeek.caption": "デモデータを使った Klacks の実際の画面録画: チャットで Klacksy が 1 週間分のプランニングアシスタントを起動し、結果を表示して、確認後に採用すると、シフト表が埋まります。待ち時間は短縮しています。",
+  "dailyOps.eyebrow": "日々の業務で",
+  "dailyOps.title": "経費・修正・代替・勤務時間",
+  "dailyOps.subtitle": "デモデータを使った Klacks の実際の画面録画: 毎日発生する作業をシフト表の上で直接処理でき、行ヘッダーの時間もすぐに更新されます。",
+  "expensesDemo.title": "経費を記録する",
+  "expensesDemo.videoLabel": "動画: シフトに経費を記録する",
+  "expensesDemo.caption": "シフトを右クリックして「経費」を選び、金額を入力すると、セルにすぐ金額が表示されます。",
+  "correctionDemo.title": "修正を記録する",
+  "correctionDemo.videoLabel": "動画: シフトに修正を記録する",
+  "correctionDemo.caption": "スタッフが 30 分長く勤務した場合、Klacks が修正ブロックを追加し、行ヘッダーの時間が更新されます。",
+  "replacementDemo.title": "交代を登録する",
+  "replacementDemo.videoLabel": "動画: 同僚がシフトの一部を引き継ぐ",
+  "replacementDemo.caption": "同僚がシフトの最後の 2 時間を引き継ぐと、両方の行に代替ブロックが表示され、両方の合計時間が更新されます。",
+  "hoursAdjustmentDemo.title": "勤務時間を調整する",
+  "hoursAdjustmentDemo.videoLabel": "動画: シフトの終了時刻を調整する",
+  "hoursAdjustmentDemo.caption": "シフトをダブルクリックし、ダイアログで終了時刻を変更すると、所要時間と合計がすぐに再計算されます。"
 }
