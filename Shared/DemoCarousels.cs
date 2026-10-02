@@ -3,16 +3,29 @@
 namespace Klacks.Marketing.Shared;
 
 /// <summary>
-/// The demo video carousels of the landing pages, in page order: scenarios (planning without risk), everyday roster work, special shifts
+/// The demo video carousels of the landing pages, in page order: rule violations (live findings of the error list), scenarios (planning
+/// without risk), everyday roster work, special shifts
 /// (tour containers) and special shifts (sporadic, time range, several employees per shift, several shifts per day, mandatory
 /// qualification). A carousel renders only the videos recorded in the page culture and nothing at all without any.
 /// </summary>
 public static class DemoCarousels
 {
+    public const string RulesSectionId = "regeln";
     public const string ScenariosSectionId = "szenarien";
     public const string DailyOperationsSectionId = "alltag";
     public const string ContainersSectionId = "spezialdienste-container";
     public const string SporadicTimeRangeSectionId = "spezialdienste-sporadisch-zeitbereich";
+
+    public static DemoCarouselDefinition Rules { get; } = new(
+        RulesSectionId,
+        "ruleOps.title",
+        "ruleOps.subtitle",
+        new DemoCarouselVideo[]
+        {
+            new(DemoVideo.RestConflictVideoName, "ruleConflictDemo.title", "ruleConflictDemo.videoLabel", "ruleConflictDemo.caption"),
+            new(DemoVideo.RuleCollisionVideoName, "ruleCollisionDemo.title", "ruleCollisionDemo.videoLabel", "ruleCollisionDemo.caption"),
+            new(DemoVideo.RuleConsecutiveDaysVideoName, "ruleConsecutiveDaysDemo.title", "ruleConsecutiveDaysDemo.videoLabel", "ruleConsecutiveDaysDemo.caption"),
+        });
 
     public static DemoCarouselDefinition Scenarios { get; } = new(
         ScenariosSectionId,
@@ -69,5 +82,5 @@ public static class DemoCarousels
             new(DemoVideo.ShiftQualificationVideoName, "shiftQualificationDemo.title", "shiftQualificationDemo.videoLabel", "shiftQualificationDemo.caption"),
         });
 
-    public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Scenarios, DailyOperations, Containers, SporadicTimeRange };
+    public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange };
 }

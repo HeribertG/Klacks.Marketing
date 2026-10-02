@@ -3,8 +3,9 @@
 /**
  * Shared helpers of the scenario takes (takes/scenario-takes.mjs, reset-scenario-demo.mjs): the scenario REST calls, token-aware
  * schedule reads (real data is always read with analyseToken = null, scenario data with the scenario's token), period hours per token,
- * the free-move and rest-conflict pickers, the plan-week reset and the AutoWizard job polling. capture-app-videos.mjs keeps its own
- * copies of the plan-week reset, the rest-conflict picker and the job polling because it runs main() on import and cannot be imported.
+ * the free-move and rest-conflict pickers (the rest-conflict picker is shared with takes/rule-takes.mjs), the plan-week reset and the AutoWizard
+ * job polling. capture-app-videos.mjs keeps its own copies of the plan-week reset and the job polling because it runs main() on import and
+ * cannot be imported.
  * @param api - authenticated ScheduleApi (see lib/schedule-grid.mjs): json(), schedule(filter)
  * @param groupId - demo group whose scenarios are read, created and deleted
  * @param token - analyse token of a scenario (null reads the real plan)
@@ -179,8 +180,8 @@ function keepsOtherRules(busy, clientId, day) {
 }
 
 /**
- * Same selection as pickRestConflict in capture-app-videos.mjs (moving the early shift onto the late client's free next day produces exactly
- * one rest-time warning and no other finding) with two additions: only pairs whose rows are at most maxRowDistance apart and whose day lies
+ * Rest-conflict picker (moving the early shift onto the late client's free next day produces exactly
+ * one rest-time warning and no other finding); only pairs whose rows are at most maxRowDistance apart and whose day lies
  * within the first maxDay days qualify, so both rows and the drop day fit on screen next to the error list.
  */
 export function pickRestConflict(data, filter, constraints) {
