@@ -44,6 +44,7 @@
     private const string ProductPitchTextKey = "hero.subtitle";
     private const string IndustryTitleKeyFormat = "industries.{0}.title";
     private const string DefaultOgImage = "/images/og-image.png";
+    private const string CultureOgImageFormat = "/images/og-image-{0}.png";
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
@@ -88,9 +89,16 @@
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
 
     private string EffectiveOgImage
-        => !string.IsNullOrEmpty(OgImage) && Environment.WebRootFileProvider.GetFileInfo(OgImage).Exists
-            ? OgImage
-            : DefaultOgImage;
+        => ExistingImage(OgImage)
+            ?? ExistingImage(CultureOgImage)
+            ?? DefaultOgImage;
+
+    private string CultureOgImage => string.Format(CultureOgImageFormat, Culture.ToLowerInvariant());
+
+    private string? ExistingImage(string? path)
+        => !string.IsNullOrEmpty(path) && Environment.WebRootFileProvider.GetFileInfo(path).Exists
+            ? path
+            : null;
 
     private SupportedCulture CultureRecord => SupportedCultures.All.First(c => c.Code == Culture);
 

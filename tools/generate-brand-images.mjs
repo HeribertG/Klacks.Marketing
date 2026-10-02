@@ -1,7 +1,7 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import sharp from "sharp";
+import { chromium } from "playwright-core";
 import pngToIco from "png-to-ico";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -22,6 +22,7 @@ async function renderIconPng(size) {
         ${extractInner(logoSvg)}
       </svg>
     </svg>`;
+  const { default: sharp } = await import("sharp");
   return sharp(Buffer.from(composite)).png().toBuffer();
 }
 
@@ -36,28 +37,224 @@ function extractInner(svgSource) {
     .replace(/\s(inkscape|sodipodi):[\w-]+="[^"]*"/g, "");
 }
 
-async function renderOgImage() {
-  const width = 1200;
-  const height = 630;
-  const logoSize = 150;
-  const logoTop = 55;
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-      <rect width="${width}" height="${height}" fill="#0F1E1F" />
-      <circle cx="${width - 120}" cy="80" r="260" fill="#0E6E6B" opacity="0.15" />
-      <g transform="translate(${width / 2 - logoSize / 2}, ${logoTop}) scale(${logoSize / 210})">
-        ${extractInner(await readFile(logoSvgPath, "utf8")).replace("#808080", "#e5e2e1").replace("#0E6E6B", "#2FA39E")}
-      </g>
-      <text x="${width / 2}" y="370" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="72" fill="#ffffff" letter-spacing="-2">Klacks</text>
-      <text x="${width / 2}" y="425" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="30" fill="#e5e2e1">Personaleinsatzplanung, die Ihnen gehört</text>
-      <text x="${width / 2}" y="480" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" letter-spacing="2" fill="#F2A516">OPEN SOURCE &#183; BEI IHNEN INSTALLIERT &#183; SCHWEIZER DATENSCHUTZ</text>
-    </svg>`;
-  return sharp(Buffer.from(svg)).png().toBuffer();
+const OG = {
+  width: 1200,
+  height: 630,
+  logoSize: 150,
+  logoTop: 55,
+  wordmarkTop: 300,
+  wordmarkSize: 72,
+  taglineTop: 395,
+  taglineMaxSize: 30,
+  taglineMinSize: 22,
+  taglineMaxLines: 2,
+  taglineLineHeight: 1.3,
+  badgeGap: 28,
+  badgeMaxSize: 20,
+  badgeMinSize: 14,
+  badgeLetterSpacing: 2,
+  maxTextWidth: 1040,
+  background: "#0F1E1F",
+  glowColor: "#0E6E6B",
+  glowOpacity: 0.15,
+  glowCenterX: 1080,
+  glowCenterY: 80,
+  glowRadius: 260,
+  logoGrey: "#808080",
+  logoGreyOnDark: "#e5e2e1",
+  logoTeal: "#0E6E6B",
+  logoTealOnDark: "#2FA39E",
+  wordmarkColor: "#ffffff",
+  taglineColor: "#e5e2e1",
+  badgeColor: "#F2A516",
+};
+
+const OG_FONT_STACK = '"Inter", "Segoe UI", "Noto Sans", Tahoma, Arial, sans-serif';
+const OG_FONT_STACKS = {
+  ar: '"Segoe UI", "Noto Sans Arabic", Tahoma, Arial, sans-serif',
+  he: '"Segoe UI", "Noto Sans Hebrew", Tahoma, Arial, sans-serif',
+  th: '"Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif',
+  ja: '"Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif',
+  ko: '"Malgun Gothic", "Noto Sans CJK KR", sans-serif',
+  "zh-CN": '"Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif',
+  "zh-TW": '"Microsoft JhengHei UI", "Microsoft JhengHei", "Noto Sans CJK TC", sans-serif',
+};
+const RTL_CULTURES = new Set(["ar", "he"]);
+const CASELESS_CULTURES = new Set(["ar", "he", "th", "ja", "ko", "zh-CN", "zh-TW"]);
+const DEFAULT_OG_CULTURE = "de";
+const CONTENT_DIR = path.join(projectRoot, "Localization", "Content");
+const TITLE_KEY = "pageTitle";
+const BADGE_KEY = "hero.badge";
+const TITLE_PREFIX = /^Klacks\s*\|\s*/;
+const CULTURES_OPTION = "--cultures";
+const OG_ONLY_OPTION = "--og-only";
+const HTML_ENTITIES = {
+  middot: "·",
+  amp: "&",
+  mdash: "—",
+  ndash: "–",
+  nbsp: " ",
+  quot: '"',
+  lt: "<",
+  gt: ">",
+  apos: "'",
+};
+
+function decodeEntities(text) {
+  return text.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (match, body) => {
+    if (body[0] === "#") {
+      const code = body[1].toLowerCase() === "x" ? parseInt(body.slice(2), 16) : parseInt(body.slice(1), 10);
+      return String.fromCodePoint(code);
+    }
+    return HTML_ENTITIES[body.toLowerCase()] ?? match;
+  });
 }
 
-async function main() {
-  await mkdir(imagesDir, { recursive: true });
+function ogFileName(culture) {
+  return `og-image-${culture.toLowerCase()}.png`;
+}
 
+async function readOgTexts(culture) {
+  const content = JSON.parse(await readFile(path.join(CONTENT_DIR, culture, "index.json"), "utf8"));
+  const title = decodeEntities(content[TITLE_KEY] ?? "");
+  const badge = decodeEntities(content[BADGE_KEY] ?? "");
+  if (!TITLE_PREFIX.test(title) || !badge) {
+    throw new Error(`${culture}: index.json lacks a usable "${TITLE_KEY}" or "${BADGE_KEY}"`);
+  }
+  return { tagline: title.replace(TITLE_PREFIX, ""), badge };
+}
+
+function readRequestedCultures(available) {
+  const index = process.argv.indexOf(CULTURES_OPTION);
+  if (index < 0) {
+    return available;
+  }
+  const requested = (process.argv[index + 1] ?? "").split(",").map((c) => c.trim().toLowerCase()).filter(Boolean);
+  const selected = available.filter((c) => requested.includes(c.toLowerCase()));
+  if (selected.length !== requested.length) {
+    throw new Error(`Unknown culture in ${CULTURES_OPTION}: ${requested.join(",")}`);
+  }
+  return selected;
+}
+
+async function buildOgPageHtml() {
+  const logoMarkup = extractInner(await readFile(logoSvgPath, "utf8"))
+    .replace(OG.logoGrey, OG.logoGreyOnDark)
+    .replace(OG.logoTeal, OG.logoTealOnDark);
+  return `<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html, body { margin: 0; padding: 0; }
+  body { width: ${OG.width}px; height: ${OG.height}px; position: relative; overflow: hidden; background: ${OG.background}; }
+  svg { position: absolute; left: 0; top: 0; }
+  .line { position: absolute; left: 50%; transform: translateX(-50%); text-align: center; box-sizing: border-box; }
+  #wordmark { top: ${OG.wordmarkTop}px; font-weight: 900; font-size: ${OG.wordmarkSize}px; line-height: 1.1; letter-spacing: -2px; color: ${OG.wordmarkColor}; white-space: nowrap; }
+  #tagline { top: ${OG.taglineTop}px; width: ${OG.maxTextWidth}px; font-weight: 600; line-height: ${OG.taglineLineHeight}; color: ${OG.taglineColor}; }
+  #badge { width: ${OG.maxTextWidth}px; font-weight: 700; line-height: 1.3; color: ${OG.badgeColor}; }
+  .caseless #badge { letter-spacing: 0 !important; }
+</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="${OG.width}" height="${OG.height}" viewBox="0 0 ${OG.width} ${OG.height}">
+  <circle cx="${OG.glowCenterX}" cy="${OG.glowCenterY}" r="${OG.glowRadius}" fill="${OG.glowColor}" opacity="${OG.glowOpacity}" />
+  <g transform="translate(${OG.width / 2 - OG.logoSize / 2}, ${OG.logoTop}) scale(${OG.logoSize / 210})">${logoMarkup}</g>
+</svg>
+<div class="line" id="wordmark">Klacks</div>
+<div class="line" id="tagline"></div>
+<div class="line" id="badge"></div>
+</body></html>`;
+}
+
+function applyOgTexts({ culture, tagline, badge, fontStack, isRtl, isCaseless, config }) {
+  document.documentElement.lang = culture;
+  document.documentElement.dir = isRtl ? "rtl" : "ltr";
+  document.body.style.fontFamily = fontStack;
+  document.body.classList.toggle("caseless", isCaseless);
+  const taglineEl = document.getElementById("tagline");
+  const badgeEl = document.getElementById("badge");
+  const wordmarkEl = document.getElementById("wordmark");
+  wordmarkEl.dir = "ltr";
+  wordmarkEl.style.fontFamily = config.wordmarkFontStack;
+  taglineEl.textContent = tagline;
+  badgeEl.textContent = badge;
+  badgeEl.style.textTransform = isCaseless ? "none" : "uppercase";
+  badgeEl.style.letterSpacing = `${config.badgeLetterSpacing}px`;
+
+  const fitsOneLine = (el) => el.scrollWidth <= config.maxTextWidth;
+  const lineCount = (el, size) => Math.round(el.getBoundingClientRect().height / (size * config.taglineLineHeight));
+
+  taglineEl.style.whiteSpace = "nowrap";
+  let size = config.taglineMaxSize;
+  taglineEl.style.fontSize = `${size}px`;
+  while (!fitsOneLine(taglineEl) && size > config.taglineMinSize) {
+    size -= 1;
+    taglineEl.style.fontSize = `${size}px`;
+  }
+  if (!fitsOneLine(taglineEl)) {
+    taglineEl.style.whiteSpace = "normal";
+    taglineEl.style.textWrap = "balance";
+    size = config.taglineMaxSize;
+    taglineEl.style.fontSize = `${size}px`;
+    while (lineCount(taglineEl, size) > config.taglineMaxLines && size > config.taglineMinSize) {
+      size -= 1;
+      taglineEl.style.fontSize = `${size}px`;
+    }
+  }
+
+  badgeEl.style.whiteSpace = "nowrap";
+  let badgeSize = config.badgeMaxSize;
+  badgeEl.style.fontSize = `${badgeSize}px`;
+  while (!fitsOneLine(badgeEl) && badgeSize > config.badgeMinSize) {
+    badgeSize -= 1;
+    badgeEl.style.fontSize = `${badgeSize}px`;
+  }
+  badgeEl.style.top = `${config.taglineTop + taglineEl.getBoundingClientRect().height + config.badgeGap}px`;
+
+  return {
+    taglineFontSize: size,
+    taglineLines: lineCount(taglineEl, size),
+    taglineOverflow: taglineEl.scrollWidth > config.maxTextWidth,
+    badgeFontSize: badgeSize,
+    badgeOverflow: badgeEl.scrollWidth > config.maxTextWidth,
+    badgeBottom: badgeEl.getBoundingClientRect().bottom,
+  };
+}
+
+async function renderOgImages(cultures) {
+  const html = await buildOgPageHtml();
+  const browser = await chromium.launch();
+  const written = [];
+  try {
+    const page = await browser.newPage({ viewport: { width: OG.width, height: OG.height } });
+    await page.setContent(html);
+    for (const culture of cultures) {
+      const { tagline, badge } = await readOgTexts(culture);
+      const metrics = await page.evaluate(applyOgTexts, {
+        culture,
+        tagline,
+        badge,
+        fontStack: OG_FONT_STACKS[culture] ?? OG_FONT_STACK,
+        isRtl: RTL_CULTURES.has(culture),
+        isCaseless: CASELESS_CULTURES.has(culture),
+        config: { ...OG, wordmarkFontStack: OG_FONT_STACK },
+      });
+      await page.evaluate(() => document.fonts.ready);
+      if (metrics.taglineOverflow || metrics.badgeOverflow || metrics.badgeBottom > OG.height) {
+        throw new Error(`${culture}: text does not fit the OG image ${JSON.stringify(metrics)}`);
+      }
+      const png = await page.screenshot({ type: "png" });
+      await writeFile(path.join(imagesDir, ogFileName(culture)), png);
+      if (culture === DEFAULT_OG_CULTURE) {
+        await writeFile(path.join(imagesDir, "og-image.png"), png);
+        written.push("og-image.png");
+      }
+      written.push(ogFileName(culture));
+      console.log(`${culture}: tagline ${metrics.taglineFontSize}px x${metrics.taglineLines}, badge ${metrics.badgeFontSize}px`);
+    }
+  } finally {
+    await browser.close();
+  }
+  return written;
+}
+
+async function writeIcons() {
   const png16 = await renderIconPng(16);
   const png32 = await renderIconPng(32);
   const png180 = await renderIconPng(180);
@@ -71,11 +268,23 @@ async function main() {
     path.join(imagesDir, "favicon-32x32.png"),
   ]);
   await writeFile(path.join(projectRoot, "wwwroot", "favicon.ico"), ico);
+}
 
-  const ogImage = await renderOgImage();
-  await writeFile(path.join(imagesDir, "og-image.png"), ogImage);
+async function main() {
+  await mkdir(imagesDir, { recursive: true });
 
-  console.log("Generated: favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, og-image.png");
+  const generated = [];
+  if (!process.argv.includes(OG_ONLY_OPTION)) {
+    await writeIcons();
+    generated.push("favicon.ico", "favicon-16x16.png", "favicon-32x32.png", "apple-touch-icon.png");
+  }
+
+  const available = (await readdir(CONTENT_DIR, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
+  const ogFiles = await renderOgImages(readRequestedCultures(available));
+
+  console.log(`Generated: ${[...generated, ...ogFiles].join(", ")}`);
 }
 
 main().catch((error) => {
