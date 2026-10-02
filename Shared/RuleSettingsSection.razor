@@ -1,0 +1,56 @@
+@inject IPageContentProvider ContentProvider
+
+@* Block "It all comes down to the settings": placed at the end of the solutions section (#kontrolle), directly
+   above the rule-violation carousel, on every industry and country page; it shows that surcharges / hour credits (night, weekend, public holiday, overtime) and scheduling rules
+   are configurable - through rates and modes, through freely scripted macros and through rule limits that warn or
+   block - and closes with a tip that Klacksy helps to set them up in the chat.
+   Culture is the page culture code; all texts come from shared.json (plain text, no markup). *@
+<div id="@SectionId" class="mt-16" role="region" aria-labelledby="@HeadingId">
+    <div class="text-center mb-10 md:mb-12">
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(EyebrowKey)</span>
+        <h3 id="@HeadingId" class="text-[1.75rem] md:text-[2rem] font-black tracking-tight mt-4">@Sh(TitleKey)</h3>
+        <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh(SubtitleKey)</p>
+    </div>
+    <div class="reveal-stagger grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        @foreach (var item in Items)
+        {
+            <div class="card-hover p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+                <span class="icon-pop material-symbols-outlined text-secondary text-3xl mb-6" aria-hidden="true">@item.Icon</span>
+                <h4 class="text-lg font-bold mb-4">@Sh(item.TitleKey)</h4>
+                <p class="text-on-surface-variant text-sm leading-relaxed m-0">@Sh(item.TextKey)</p>
+            </div>
+        }
+    </div>
+    <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
+        <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh(HintLabelKey)</span>
+        <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Sh(KlacksyHintKey)</p>
+    </div>
+</div>
+
+@code {
+    public const string SectionId = "zuschlaege-regeln";
+    public const string EyebrowKey = "ruleSettings.eyebrow";
+    public const string TitleKey = "ruleSettings.title";
+    public const string SubtitleKey = "ruleSettings.subtitle";
+    public const string KlacksyHintKey = "ruleSettings.klacksyHint";
+    public const string HintLabelKey = "dailyOps.hintLabel";
+    private const string SharedContentKey = "shared";
+    private const string HeadingIdSuffix = "-heading";
+    private static readonly string HeadingId = SectionId + HeadingIdSuffix;
+
+    public static IReadOnlyList<RuleSettingsItem> Items { get; } = new RuleSettingsItem[]
+    {
+        new("bedtime", "ruleSettings.nightWeekend.title", "ruleSettings.nightWeekend.text"),
+        new("event", "ruleSettings.holidayOvertime.title", "ruleSettings.holidayOvertime.text"),
+        new("code", "ruleSettings.macro.title", "ruleSettings.macro.text"),
+        new("rule", "ruleSettings.planningRules.title", "ruleSettings.planningRules.text"),
+    };
+
+    public static IEnumerable<string> AllTextKeys =>
+        new[] { EyebrowKey, TitleKey, SubtitleKey, KlacksyHintKey }
+            .Concat(Items.SelectMany(item => new[] { item.TitleKey, item.TextKey }));
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+}
