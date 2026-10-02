@@ -13,6 +13,9 @@
  * The warning row is never clicked (clicking navigates the grid to the conflict and scrolls the framed rows away); at
  * the end the cursor is parked on free space next to the row's text so it covers none of it. The rest-conflict video is
  * encoded as a smooth loop: the final frame is held, then cross-fades into the first frame.
+ * Every take is guarded against the dev-server error overlay (<vite-error-overlay>, lib/dev-overlay-guard.mjs): checked before the take,
+ * polled while it runs, checked at every mouse step / recorder start / fast-forward and after the take; a sighting aborts the take with a
+ * clear error, marks the report not publishable (report.devOverlay) and nothing is encoded.
  * The work-entry takes (expenses, correction, hours-adjustment, replacement) live in takes/work-entry-takes.mjs, the container takes
  * (container-fill, container-split, container-pause; demo data from seed-container-demo.mjs) in takes/container-takes.mjs, the timeline takes
  * (timeline-24h, timeline-day-dragdrop) in takes/timeline-takes.mjs, the route takes (container-autofill, container-route; demo data from
@@ -37,6 +40,7 @@ import { chromium } from "playwright-core";
 import * as S from "./lib/klacks-demo-session.mjs";
 import { cursorInitScript, HumanMouse, CURSOR_SIZE_PX } from "./lib/cursor-overlay.mjs";
 import { ScreenRecorder } from "./lib/screen-recorder.mjs";
+import { DevOverlayGuard, DevOverlayViolationError } from "./lib/dev-overlay-guard.mjs";
 import { encodeRecording } from "./lib/video-encoder.mjs";
 import {
   WORK_ENTRY_TYPE,
@@ -973,9 +977,10 @@ async function recordTake(browser, options, shared, video, culture) {
     viewMode: S.VIEW_MODE_TABLE,
     period: definition.period,
     css: definition.css,
-    extraInitScripts: [cursorInitScript(start)],
+    extraInitScripts: [cursorInitScript(start), DevOverlayGuard.initScript()],
   });
   const page = await context.newPage();
+  const guard = new DevOverlayGuard(page);
   const framesDir = path.join(options.framesRoot, OUTPUT_BASE_NAME(video, culture));
   const report = { video, culture, framesDir };
   const script = shared.scripts[video]?.[culture] ?? null;
@@ -984,14 +989,27 @@ async function recordTake(browser, options, shared, video, culture) {
     await S.login(page, options);
     await S.assertCulture(page, culture, shared.metadata);
     await page.mouse.move(start.x, start.y);
+    await guard.assertClean("before the take");
+    guard.startWatching();
     await definition.run({
       page, options, culture, report, scale, viewport, script,
       api: shared.api,
       scripts: shared.scripts,
-      recorder: new ScreenRecorder(page, framesDir, recorderConfig(viewport, scale)),
-      mouse: new HumanMouse(page, start),
+      recorder: new ScreenRecorder(page, framesDir, recorderConfig(viewport, scale), guard),
+      mouse: new HumanMouse(page, start, guard),
     });
+    await guard.assertClean("after the take");
+  } catch (error) {
+    const violation = guard.violation ?? (error instanceof DevOverlayViolationError ? error : null);
+    if (violation) {
+      report.publishable = false;
+      report.failure = violation.message;
+      report.devOverlay = { stage: violation.stage, ...violation.finding };
+      throw violation;
+    }
+    throw error;
   } finally {
+    guard.stopWatching();
     await mkdir(framesDir, { recursive: true });
     await writeFile(path.join(framesDir, TAKE_REPORT_FILE), JSON.stringify(report, null, 2));
     await context.close();

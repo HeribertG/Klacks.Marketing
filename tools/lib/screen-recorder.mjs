@@ -8,6 +8,7 @@
  * @param page - Playwright page to record
  * @param framesDir - directory that receives frame-NNNNN.jpg and manifest.json
  * @param config - jpegQuality, maxWidth, maxHeight (device pixels)
+ * @param guard - optional DevOverlayGuard: inspected when recording starts and stops, and checked before a fast-forward region opens
  */
 
 import { mkdir, rm, writeFile } from "node:fs/promises";
@@ -22,8 +23,9 @@ const BADGE_Z_INDEX = 2147483646;
 const BADGE_TEXT = (factor) => `⏩ ${factor}×`;
 
 export class ScreenRecorder {
-  constructor(page, framesDir, config) {
+  constructor(page, framesDir, config, guard = null) {
     this.page = page;
+    this.guard = guard;
     this.framesDir = framesDir;
     this.config = config;
     this.frames = [];
@@ -40,6 +42,7 @@ export class ScreenRecorder {
   }
 
   async start() {
+    await this.guard?.inspect("before the recording start");
     await rm(this.framesDir, { recursive: true, force: true });
     await mkdir(this.framesDir, { recursive: true });
     this.cdp = await this.page.context().newCDPSession(this.page);
@@ -64,6 +67,7 @@ export class ScreenRecorder {
   }
 
   async beginFast(factor, { badge = true } = {}) {
+    this.guard?.throwIfViolated();
     if (this.openRegion) await this.endFast();
     const cut = !Number.isFinite(factor);
     this.openRegion = { from: ScreenRecorder.now(), factor: cut ? null : factor, cut };
@@ -91,6 +95,7 @@ export class ScreenRecorder {
     this.stoppedAt = ScreenRecorder.now();
     await this.cdp.send("Page.stopScreencast").catch(() => {});
     await Promise.all(this.pendingWrites);
+    await this.guard?.inspect("before encoding");
     const manifest = {
       startedAt: this.startedAt,
       stoppedAt: this.stoppedAt,

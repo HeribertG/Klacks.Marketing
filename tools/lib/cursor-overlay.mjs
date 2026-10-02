@@ -6,6 +6,7 @@
  * duration is wall-clock based (slow machines get fewer steps, not slower motion).
  * @param page - Playwright page the mouse belongs to
  * @param start - initial cursor position in CSS pixels
+ * @param guard - optional DevOverlayGuard; every mouse step throws its violation so a take with a dev-server error overlay aborts
  */
 
 const CURSOR_ID = "capture-cursor";
@@ -93,8 +94,9 @@ function easeInOut(t) {
 }
 
 export class HumanMouse {
-  constructor(page, start) {
+  constructor(page, start, guard = null) {
     this.page = page;
+    this.guard = guard;
     this.x = start.x;
     this.y = start.y;
   }
@@ -103,6 +105,7 @@ export class HumanMouse {
     const from = { x: this.x, y: this.y };
     const startedAt = Date.now();
     for (;;) {
+      this.guard?.throwIfViolated();
       const progress = Math.min(1, (Date.now() - startedAt) / durationMs);
       const k = easeInOut(progress);
       this.x = from.x + (target.x - from.x) * k;
