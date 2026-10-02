@@ -1667,5 +1667,261 @@
       "handOrder": ["ST01", "ST02", "ST03", "ST04"],
       "expectedOrder": ["ST03", "ST02", "ST04", "ST01"]
     }
+  },
+  "scenario-create": {
+    "de": {
+      "scenarioName": "Umbau Oktober"
+    },
+    "en": {
+      "scenarioName": "October rework"
+    },
+    "fr": {
+      "scenarioName": "Remaniement octobre"
+    },
+    "it": {
+      "scenarioName": "Riorganizzazione ottobre"
+    },
+    "ar": {
+      "scenarioName": "إعادة ترتيب أكتوبر"
+    },
+    "ja": {
+      "scenarioName": "10月の組み替え"
+    },
+    "cs": {
+      "scenarioName": "Přestavba říjen"
+    },
+    "da": {
+      "scenarioName": "Ombygning oktober"
+    },
+    "el": {
+      "scenarioName": "Αναδιάταξη Οκτωβρίου"
+    },
+    "es": {
+      "scenarioName": "Reforma de octubre"
+    },
+    "fi": {
+      "scenarioName": "Lokakuun muutos"
+    },
+    "he": {
+      "scenarioName": "שינוי אוקטובר"
+    },
+    "id": {
+      "scenarioName": "Perombakan Oktober"
+    },
+    "ko": {
+      "scenarioName": "10월 개편"
+    },
+    "ms": {
+      "scenarioName": "Rombakan Oktober"
+    },
+    "nb": {
+      "scenarioName": "Ombygging oktober"
+    },
+    "nl": {
+      "scenarioName": "Ombouw oktober"
+    },
+    "pl": {
+      "scenarioName": "Przebudowa października"
+    },
+    "pt": {
+      "scenarioName": "Reorganização de outubro"
+    },
+    "ro": {
+      "scenarioName": "Reorganizare octombrie"
+    },
+    "sv": {
+      "scenarioName": "Omplanering oktober"
+    },
+    "th": {
+      "scenarioName": "ปรับแผนเดือนตุลาคม"
+    },
+    "vi": {
+      "scenarioName": "Điều chỉnh tháng 10"
+    },
+    "zh-CN": {
+      "scenarioName": "十月调整"
+    },
+    "zh-TW": {
+      "scenarioName": "十月調整"
+    }
+  },
+  "scenario-compare": {
+    "de": {
+      "variantA": "Variante A",
+      "variantB": "Variante B"
+    },
+    "en": {
+      "variantA": "Variant A",
+      "variantB": "Variant B"
+    },
+    "fr": {
+      "variantA": "Variante A",
+      "variantB": "Variante B"
+    },
+    "it": {
+      "variantA": "Variante A",
+      "variantB": "Variante B"
+    },
+    "ar": {
+      "variantA": "البديل A",
+      "variantB": "البديل B"
+    },
+    "ja": {
+      "variantA": "案 A",
+      "variantB": "案 B"
+    },
+    "cs": {
+      "variantA": "Varianta A",
+      "variantB": "Varianta B"
+    },
+    "da": {
+      "variantA": "Variant A",
+      "variantB": "Variant B"
+    },
+    "el": {
+      "variantA": "Παραλλαγή Α",
+      "variantB": "Παραλλαγή Β"
+    },
+    "es": {
+      "variantA": "Variante A",
+      "variantB": "Variante B"
+    },
+    "fi": {
+      "variantA": "Vaihtoehto A",
+      "variantB": "Vaihtoehto B"
+    },
+    "he": {
+      "variantA": "חלופה A",
+      "variantB": "חלופה B"
+    },
+    "id": {
+      "variantA": "Varian A",
+      "variantB": "Varian B"
+    },
+    "ko": {
+      "variantA": "A안",
+      "variantB": "B안"
+    },
+    "ms": {
+      "variantA": "Varian A",
+      "variantB": "Varian B"
+    },
+    "nb": {
+      "variantA": "Variant A",
+      "variantB": "Variant B"
+    },
+    "nl": {
+      "variantA": "Variant A",
+      "variantB": "Variant B"
+    },
+    "pl": {
+      "variantA": "Wariant A",
+      "variantB": "Wariant B"
+    },
+    "pt": {
+      "variantA": "Variante A",
+      "variantB": "Variante B"
+    },
+    "ro": {
+      "variantA": "Varianta A",
+      "variantB": "Varianta B"
+    },
+    "sv": {
+      "variantA": "Variant A",
+      "variantB": "Variant B"
+    },
+    "th": {
+      "variantA": "ทางเลือก A",
+      "variantB": "ทางเลือก B"
+    },
+    "vi": {
+      "variantA": "Phương án A",
+      "variantB": "Phương án B"
+    },
+    "zh-CN": {
+      "variantA": "方案 A",
+      "variantB": "方案 B"
+    },
+    "zh-TW": {
+      "variantA": "方案 A",
+      "variantB": "方案 B"
+    }
+  },
+  "scenario-rule-violation": {
+    "de": {
+      "scenarioName": "Test: späte Schicht"
+    },
+    "en": {
+      "scenarioName": "Test: late shift"
+    },
+    "fr": {
+      "scenarioName": "Test : service tardif"
+    },
+    "it": {
+      "scenarioName": "Test: turno serale"
+    },
+    "ar": {
+      "scenarioName": "اختبار: مناوبة مسائية"
+    },
+    "ja": {
+      "scenarioName": "テスト: 遅番"
+    },
+    "cs": {
+      "scenarioName": "Test: pozdní směna"
+    },
+    "da": {
+      "scenarioName": "Test: sen vagt"
+    },
+    "el": {
+      "scenarioName": "Δοκιμή: απογευματινή βάρδια"
+    },
+    "es": {
+      "scenarioName": "Prueba: turno de tarde"
+    },
+    "fi": {
+      "scenarioName": "Testi: iltavuoro"
+    },
+    "he": {
+      "scenarioName": "בדיקה: משמרת ערב"
+    },
+    "id": {
+      "scenarioName": "Uji: shift malam"
+    },
+    "ko": {
+      "scenarioName": "테스트: 늦은 근무"
+    },
+    "ms": {
+      "scenarioName": "Ujian: syif lewat"
+    },
+    "nb": {
+      "scenarioName": "Test: sen vakt"
+    },
+    "nl": {
+      "scenarioName": "Test: late dienst"
+    },
+    "pl": {
+      "scenarioName": "Test: późna zmiana"
+    },
+    "pt": {
+      "scenarioName": "Teste: turno tardio"
+    },
+    "ro": {
+      "scenarioName": "Test: tură târzie"
+    },
+    "sv": {
+      "scenarioName": "Test: sent pass"
+    },
+    "th": {
+      "scenarioName": "ทดสอบ: กะเย็น"
+    },
+    "vi": {
+      "scenarioName": "Thử nghiệm: ca muộn"
+    },
+    "zh-CN": {
+      "scenarioName": "测试：晚班"
+    },
+    "zh-TW": {
+      "scenarioName": "測試：晚班"
+    }
   }
 }

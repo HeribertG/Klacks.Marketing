@@ -173,14 +173,16 @@ export function shiftCellCenter(shift, row, visibleColumn, isRtl) {
 
 /**
  * Collects the chunked POST /Shifts/Schedule responses the shift section loads; register BEFORE navigating.
- * settle() waits until no new chunk arrived for quietMs and returns the shift-date rows.
+ * settle() waits until no new chunk arrived for quietMs and returns the shift-date rows. With groupId only the responses of requests
+ * for that selected group are collected (a stale stored group selection may load another group first).
  */
-export function captureShiftSchedules(page, { quietMs, timeoutMs }) {
+export function captureShiftSchedules(page, { quietMs, timeoutMs, groupId = null }) {
   const rows = [];
   let lastAt = Date.now();
   let pending = 0;
   const onResponse = async (r) => {
     if (!r.url().includes("/Shifts/Schedule") || r.request().method() !== "POST") return;
+    if (groupId && r.request().postDataJSON()?.selectedGroup !== groupId) return;
     pending++;
     try {
       const body = await r.json().catch(() => null);

@@ -1,9 +1,9 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Shared REST helpers of the demo seed scripts (seed-container-demo, seed-route-demo): authenticated API client, idempotent
- * shift upsert (find by name + abbreviation + type, reset to the defined state), container template lock handling and
- * container template read/write. Ids always come from the server.
+ * Shared REST helpers of the demo seed scripts (seed-container-demo, seed-route-demo, seed-shift-features-demo, seed-scenario-week-demo): authenticated API
+ * client, sibling-group upsert, group member loading and membership, idempotent shift upsert (find by name + abbreviation + type, reset to the defined
+ * state), container template lock handling and container template read/write. Ids always come from the server.
  * @param context - Playwright APIRequestContext used for all HTTP calls
  * @param apiUrl - Base URL of the demo API (without the /api/backend/ suffix)
  * @param token - JWT of the demo account
@@ -41,6 +41,9 @@ export const FILTER_TYPE_CONTAINER = 2;
 export const LIST_PAGE_SIZE = 100;
 export const FIRST_PAGE = 0;
 export const TRANSPORT_MODE_DEFAULT = 0;
+export const DEFAULT_QUANTITY = 1;
+export const DEFAULT_SUM_EMPLOYEES = 1;
+export const SPORADIC_SCOPE_WEEK = 0;
 
 export const WEEKDAY_MONDAY = 1;
 export const WEEKDAY_TUESDAY = 2;
@@ -113,7 +116,7 @@ export async function loadGroup(api, groupId) {
   return { id: group.id, name: group.name, description: group.description ?? "" };
 }
 
-function findGroupNodeByName(nodes, name) {
+export function findGroupNodeByName(nodes, name) {
   for (const node of nodes ?? []) {
     if (node.name === name) return node;
     const nested = findGroupNodeByName(node.children, name);
@@ -123,10 +126,12 @@ function findGroupNodeByName(nodes, name) {
 }
 
 /**
- * Finds the group by name in the whole tree or creates it as a sibling of the reference group (same parent, same payment
- * interval and calendar selection), so the new group never appears below or inside the reference group.
+ * Finds the group by name in the whole tree or creates it as a sibling of the reference group (same parent and calendar selection,
+ * same payment interval unless overrides.paymentInterval is given), so the new group never appears below or inside the reference group.
+ * An existing group is returned as it is - callers that depend on its payment interval must verify it (the seed of the weekly scenario
+ * group does) because a PUT of the group could drop its members and shifts.
  */
-export async function ensureSiblingGroup(api, name, description, referenceGroupId) {
+export async function ensureSiblingGroup(api, name, description, referenceGroupId, overrides = {}) {
   const tree = await api.call(HTTP_GET, GROUPS_TREE_PATH);
   const existing = findGroupNodeByName(tree?.nodes, name);
   if (existing) return { id: existing.id, name: existing.name, description: existing.description ?? "", action: "unchanged" };
@@ -138,11 +143,40 @@ export async function ensureSiblingGroup(api, name, description, referenceGroupI
       parent: reference.parent ?? null,
       validFrom: reference.validFrom,
       validUntil: null,
-      paymentInterval: reference.paymentInterval,
+      paymentInterval: overrides.paymentInterval ?? reference.paymentInterval,
       calendarSelectionId: reference.calendarSelectionId ?? null,
     },
   });
   return { id: created.id, name: created.name, description: created.description ?? "", action: "created" };
+}
+
+export const CLIENTS_PATH = "Clients";
+export const GROUP_MEMBERS_SEGMENT = "members";
+
+/**
+ * Loads the (non-deleted) clients that are members of a group: GET Groups/{id}/members yields the group items, every client is read with GET Clients/{id}.
+ */
+export async function loadGroupEmployees(api, groupId) {
+  const members = (await api.call(HTTP_GET, `${GROUPS_PATH}/${groupId}/${GROUP_MEMBERS_SEGMENT}`)) ?? [];
+  const clientIds = [...new Set(members.map((member) => member.clientId ?? member.client?.id).filter(Boolean))];
+  const clients = [];
+  for (const id of clientIds) clients.push(await api.call(HTTP_GET, `${CLIENTS_PATH}/${id}`));
+  return clients.filter((client) => client && !client.isDeleted);
+}
+
+export function isMemberOf(client, groupId) {
+  return (client.groupItems ?? []).some((item) => item.groupId === groupId);
+}
+
+/**
+ * Adds the group membership to a client (PUT Clients with skipAddressValidation = true, so no geocoder overwrites the address) when it is
+ * missing; the group item carries no id, the server assigns it. Returns "unchanged" or "updated".
+ */
+export async function ensureGroupMembership(api, client, group, validFrom) {
+  if (isMemberOf(client, group.id)) return "unchanged";
+  const groupItems = [...(client.groupItems ?? []), { groupId: group.id, clientId: client.id, validFrom, validUntil: null }];
+  await api.call(HTTP_PUT, CLIENTS_PATH, { data: { ...client, groupItems, skipAddressValidation: true } });
+  return "updated";
 }
 
 export function shiftBody(def, shiftType, group) {
@@ -155,36 +189,43 @@ export function shiftBody(def, shiftType, group) {
     fromDate: SHIFT_FROM_DATE,
     startShift: def.start,
     endShift: def.end,
-    quantity: 1,
-    sumEmployees: 1,
+    quantity: def.quantity ?? DEFAULT_QUANTITY,
+    sumEmployees: def.sumEmployees ?? DEFAULT_SUM_EMPLOYEES,
     workTime: def.workTime ?? durationHours(def.start, def.end),
     isTimeRange: def.isTimeRange ?? false,
+    isSporadic: def.isSporadic ?? false,
+    sporadicScope: def.sporadicScope ?? SPORADIC_SCOPE_WEEK,
     clientId: def.clientId ?? null,
     ...weekdayFlags(def.weekdays),
     groups: [group],
   };
 }
 
-export async function findShifts(api, def, shiftType, { timeRange = false } = {}) {
+export async function searchShifts(api, searchString, shiftType, { timeRange = false, anyKind = false } = {}) {
   const filterType = shiftType === SHIFT_TYPE_CONTAINER ? FILTER_TYPE_CONTAINER : FILTER_TYPE_SHIFT;
   const result = await api.call(HTTP_POST, SHIFT_LIST_PATH, {
     data: {
-      searchString: def.abbreviation,
+      searchString,
       filterType,
       activeDateRange: true,
       formerDateRange: true,
       futureDateRange: true,
       includeClientName: false,
       isSealedOrder: false,
-      isTimeRange: timeRange,
-      isSporadic: false,
+      isTimeRange: anyKind || timeRange,
+      isSporadic: anyKind,
       numberOfItemsPerPage: LIST_PAGE_SIZE,
       requiredPage: FIRST_PAGE,
       orderBy: "",
       sortOrder: "",
     },
   });
-  return (result.shifts ?? []).filter(
+  return result.shifts ?? [];
+}
+
+export async function findShifts(api, def, shiftType, { timeRange = false, anyKind = false } = {}) {
+  const found = await searchShifts(api, def.abbreviation, shiftType, { timeRange, anyKind });
+  return found.filter(
     (shift) =>
       shift.name === def.name &&
       shift.abbreviation === def.abbreviation &&
@@ -203,6 +244,7 @@ function valuesDiffer(existing, desired) {
 export function shiftDiffersFromDefinition(existing, desired, groupId, { exclusiveGroup = false } = {}) {
   const fields = [
     "startShift", "endShift", "workTime", "fromDate", "status", "shiftType", "isTimeRange", "clientId",
+    "quantity", "sumEmployees", "isSporadic", "sporadicScope",
     ...Object.values(WEEKDAY_FLAG_BY_NUMBER),
   ];
   const fieldDiffers = fields.some((field) => valuesDiffer(existing[field], desired[field]));
@@ -212,8 +254,8 @@ export function shiftDiffersFromDefinition(existing, desired, groupId, { exclusi
   return fieldDiffers || !inGroup || hasForeignGroup || existing.untilDate != null;
 }
 
-export async function ensureShift(api, def, shiftType, group, { timeRange = false, exclusiveGroup = false } = {}) {
-  const matches = await findShifts(api, def, shiftType, { timeRange });
+export async function ensureShift(api, def, shiftType, group, { timeRange = false, exclusiveGroup = false, anyKind = false } = {}) {
+  const matches = await findShifts(api, def, shiftType, { timeRange, anyKind });
   if (matches.length > 1) {
     throw new Error(`Ambiguous: ${matches.length} shifts named "${def.name}" (${def.abbreviation}) of type ${shiftType}.`);
   }
