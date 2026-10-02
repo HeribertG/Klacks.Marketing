@@ -27,7 +27,7 @@
   "needs.note": "Comptez environ une demi-heure pour le premier démarrage, selon l'ordinateur et la connexion Internet.",
   "needs.button": "Vers l'installation",
   "data.title": "Vos données",
-  "data.text": "Vous saisissez les collaborateurs directement dans Klacks. Il n'existe pas encore d'import depuis Excel ou CSV. Vos données restent dans votre installation, dans la base de données ouverte PostgreSQL ; un export complet des données est prévu pour la version 1.1. Vous exploitez l'assistant IA avec le modèle de votre choix, y compris un modèle local.",
+  "data.text": "Vous saisissez les collaborateurs directement dans Klacks ou les importez depuis un fichier Excel ou CSV ; un aperçu vous montre, avant l'enregistrement, ce qui manque. Vous pouvez aussi reprendre les collaborateurs depuis LDAP ou Active Directory par synchronisation ; vos équipes peuvent également se connecter via OpenID Connect ou OAuth 2.0. Vos données restent dans votre installation, dans la base de données ouverte PostgreSQL ; un export complet des données est prévu pour la version 1.1. Vous exploitez l'assistant IA avec le modèle de votre choix, y compris un modèle local.",
   "help.title": "Aide",
   "help.text": "Posez vos questions générales dans notre communauté Discord et vos questions concrètes par e-mail. Klacks utilise des assistants IA pour la vente et l'accompagnement. Les réponses d'une IA sont signalées comme telles.",
   "help.discord": "Rejoindre Discord",

@@ -27,7 +27,7 @@
   "needs.note": "Allow about half an hour for the first start, depending on your computer and internet connection.",
   "needs.button": "Go to installation",
   "data.title": "Your data",
-  "data.text": "You enter employees directly in Klacks. There is no import from Excel or CSV yet. Your data stays in your installation, in the open PostgreSQL database; a complete data export is planned for version 1.1. You run the AI assistant with the model of your choice, including a local one.",
+  "data.text": "You enter employees directly in Klacks or import them from an Excel or CSV file; a preview shows you what is missing before anything is saved. You can also take over employees from LDAP or Active Directory by synchronising; your people can sign in via OpenID Connect or OAuth 2.0 as well. Your data stays in your installation, in the open PostgreSQL database; a complete data export is planned for version 1.1. You run the AI assistant with the model of your choice, including a local one.",
   "help.title": "Help",
   "help.text": "Ask general questions in our Discord community and specific questions by email. Klacks uses AI assistants for sales and support. Answers from an AI are labeled as such.",
   "help.discord": "Join Discord",

@@ -27,7 +27,7 @@
   "needs.note": "Räkna med ungefär en halvtimme för den första starten, beroende på dator och internetanslutning.",
   "needs.button": "Till installationen",
   "data.title": "Dina data",
-  "data.text": "Du registrerar personal direkt i Klacks. En import från Excel eller CSV finns ännu inte. Dina data ligger i din installation, i den öppna databasen PostgreSQL; en fullständig dataexport är planerad för version 1.1. AI-assistenten kör du med den modell du väljer, även en lokal.",
+  "data.text": "Du registrerar personal direkt i Klacks eller importerar den från en Excel- eller CSV-fil; en förhandsgranskning visar dig vad som saknas innan något sparas. Personal kan du också hämta från LDAP eller Active Directory genom synkronisering; ditt team kan även logga in via OpenID Connect eller OAuth 2.0. Dina data ligger i din installation, i den öppna databasen PostgreSQL; en fullständig dataexport är planerad för version 1.1. AI-assistenten kör du med den modell du väljer, även en lokal.",
   "help.title": "Hjälp",
   "help.text": "Allmänna frågor ställer du i vår Discord-community, konkreta frågor via e-post. Klacks använder AI-assistenter för försäljning och support. Svar från en AI är markerade som sådana.",
   "help.discord": "Gå med i Discord",

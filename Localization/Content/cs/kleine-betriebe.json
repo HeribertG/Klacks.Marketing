@@ -27,7 +27,7 @@
   "needs.note": "Na první spuštění počítejte zhruba s půl hodinou, podle počítače a internetového připojení.",
   "needs.button": "K instalaci",
   "data.title": "Vaše data",
-  "data.text": "Zaměstnance zadáváte přímo v Klacks. Import z Excelu nebo CSV zatím neexistuje. Vaše data jsou ve vaší instalaci, v otevřené databázi PostgreSQL; úplný export dat je plánován pro verzi 1.1. AI asistenta provozujete s modelem podle svého výběru, i s lokálním.",
+  "data.text": "Zaměstnance zadáváte přímo v Klacks nebo je importujete ze souboru Excel či CSV; náhled vám před uložením ukáže, co chybí. Zaměstnance můžete synchronizovat také z LDAP nebo Active Directory; přihlásit se mohou vaši zaměstnanci i přes OpenID Connect nebo OAuth 2.0. Vaše data jsou ve vaší instalaci, v otevřené databázi PostgreSQL; úplný export dat je plánován pro verzi 1.1. AI asistenta provozujete s modelem podle svého výběru, i s lokálním.",
   "help.title": "Nápověda",
   "help.text": "Obecné otázky pokládejte v naší komunitě na Discordu, konkrétní otázky e-mailem. Klacks využívá pro prodej a péči o zákazníky AI asistenty. Odpovědi od AI jsou jako takové označeny.",
   "help.discord": "Připojit se na Discord",

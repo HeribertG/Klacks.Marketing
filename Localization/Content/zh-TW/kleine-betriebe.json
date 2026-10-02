@@ -27,7 +27,7 @@
   "needs.note": "首次啟動請預留約半小時，實際時間依電腦與網路連線而定。",
   "needs.button": "前往安裝",
   "data.title": "您的資料",
-  "data.text": "員工資料直接在 Klacks 中輸入。目前尚不支援從 Excel 或 CSV 匯入。您的資料保存在您自己的安裝環境中，使用開放資料庫 PostgreSQL；完整的資料匯出功能計畫於 1.1 版提供。AI 助理可使用您選擇的模型運作，也可以使用本地模型。",
+  "data.text": "員工資料可直接在 Klacks 中輸入，也可從 Excel 或 CSV 檔案匯入；儲存之前，預覽會顯示缺少哪些內容。此外，也可透過同步從 LDAP 或 Active Directory 取得員工資料；您的同仁也可透過 OpenID Connect 或 OAuth 2.0 登入。您的資料保存在您自己的安裝環境中，使用開放資料庫 PostgreSQL；完整的資料匯出功能計畫於 1.1 版提供。AI 助理可使用您選擇的模型運作，也可以使用本地模型。",
   "help.title": "協助",
   "help.text": "一般性問題請到我們的 Discord 社群提問，具體問題請寄送電子郵件。Klacks 在銷售與客戶服務中使用 AI 助理。AI 的回覆會明確標示。",
   "help.discord": "加入 Discord",
