@@ -7,7 +7,8 @@
  *   - the group "Besondere Dienste Winterthur" as a sibling of the demo group (shifts and employees live ONLY there, so the shift list of
  *     the demo group and with it every other Dienstplan video stays untouched; the takes open this group's schedule in December 2026),
  *   - five shifts (all weekdays Mon-Fri): sporadic "Fensterreinigung" (scope week, quantity 2 = days per week, 1 employee per day), time-range
- *     "Medikamentenlieferung" (window 08:00-14:00, 45 min), "Inventur" (3 employees), "Kontrollgang" (3 per day), "Gabelstapler-Einsatz",
+ *     "Medikamentenlieferung" (window 08:00-14:00, 45 min), "Inventur" (3 employees), time-range "Kontrollgang" (window 08:00-18:00, 45 min,
+ *     quantity 3 = three rounds per day at different times, 1 employee each), "Gabelstapler-Einsatz",
  *   - the mandatory qualification "Staplerschein" (taken from the existing catalog by name, never created) on "Gabelstapler-Einsatz",
  *   - the five demo employees Albrecht, Baier, Bauer, Doering, Eisenmann (existing employees of the demo group) as members of the group;
  *     Albrecht and Bauer additionally hold the qualification, the other three do not.
@@ -81,6 +82,7 @@ const WORK_FILTER_DEFAULTS = {
   rowCount: SCHEDULE_ROW_LIMIT,
 };
 const HH_MM_LENGTH = 5;
+const MINUTES_PER_HOUR = 60;
 const SHIFT_LIST_VISIBLE_ROWS_MAX = FEATURE_SHIFT_LIST.length;
 
 function readOptions() {
@@ -104,9 +106,12 @@ function assertPlan() {
   if (new Set(abbreviations).size !== abbreviations.length) problems.push("Shift abbreviations are not unique");
   const names = FEATURE_SHIFT_LIST.map((shift) => shift.name);
   if (new Set(names).size !== names.length) problems.push("Shift names are not unique");
-  const timeRange = FEATURE_SHIFTS[SHIFT_KEY.timeRange];
-  const windowMinutes = timeToMinutes(timeRange.end) - timeToMinutes(timeRange.start);
-  if (timeRange.workTime * 60 > windowMinutes) problems.push("Time-range duration is longer than its window");
+  for (const timeRange of FEATURE_SHIFT_LIST.filter((shift) => shift.isTimeRange)) {
+    const windowMinutes = timeToMinutes(timeRange.end) - timeToMinutes(timeRange.start);
+    if (timeRange.workTime * MINUTES_PER_HOUR > windowMinutes) problems.push(`Time-range duration of ${timeRange.abbreviation} is longer than its window`);
+  }
+  const rounds = FEATURE_SHIFTS[SHIFT_KEY.quantity];
+  if (!rounds.isTimeRange || rounds.quantity < 2 || rounds.sumEmployees !== 1) problems.push("The quantity shift must be a time-range shift with several rounds of one employee each");
   if (FEATURE_EMPLOYEES.every((employee) => employee.qualified) || FEATURE_EMPLOYEES.every((employee) => !employee.qualified)) {
     problems.push("The employees must include qualified and unqualified ones");
   }

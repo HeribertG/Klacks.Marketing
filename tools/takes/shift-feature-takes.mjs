@@ -4,8 +4,9 @@
  * Video takes for the special shift features in the December 2026 schedule of the group "Besondere Dienste Winterthur" (demo data from
  * seed-shift-features-demo.mjs, definition in lib/shift-feature-demo.mjs): shift-sporadic (sporadic shift booked on two days of a week, the
  * remaining days are blocked), shift-time-range (drop opens the start dialog, a start outside the window is refused, a valid one is booked),
- * shift-sum-employees (a shift that needs three employees fills 1/3 -> 3/3), shift-quantity (a task that occurs three times per day fills
- * 1/3 -> 3/3) and shift-qualification (the employee with the mandatory qualification is booked, the one without is refused with an error toast).
+ * shift-sum-employees (a shift that needs three employees fills 1/3 -> 3/3), shift-quantity (a time-range task that occurs three times per day:
+ * each round is dropped, its start is typed into the start dialog at a different time inside the window, the counter fills 1/3 -> 3/3) and
+ * shift-qualification (the employee with the mandatory qualification is booked, the one without is refused with an error toast).
  * Every shift is booked by dragging its cell from the shift section onto the employee row, like a user does. Every take verifies the persisted
  * result through the API, deletes every work of the five seed shifts afterwards and verifies that none is left and that October of the demo
  * group is unchanged (118 works).
@@ -90,6 +91,11 @@ const DAY = { first: 0, second: 1, third: 2, fourth: 3, nextWeek: 6 };
 const TIME_RANGE_WRONG_START = { hours: "13", minutes: "30" };
 const TIME_RANGE_RIGHT_START = { hours: "10" };
 const TIME_RANGE_BOOKED = { start: "10:30", end: "11:15" };
+const PATROL_ROUNDS = [
+  { hours: "08", minutes: "30", start: "08:30", end: "09:15" },
+  { hours: "12", minutes: "30", start: "12:30", end: "13:15" },
+  { hours: "16", minutes: "00", start: "16:00", end: "16:45" },
+];
 const SPORADIC_BOOKED_DAYS = [DAY.first, DAY.third];
 const SPORADIC_BLOCKED_DAYS = [DAY.second, DAY.fourth];
 const GRID_HEADER_HEIGHT_PX = 30;
@@ -453,7 +459,65 @@ async function takeFillShift(take, key) {
 
 export const takeShiftSumEmployees = (take) => takeFillShift(take, SHIFT_KEY.sumEmployees);
 
-export const takeShiftQuantity = (take) => takeFillShift(take, SHIFT_KEY.quantity);
+/**
+ * Books the time-range shift "Kontrollgang" (quantity 3) three times on the same day at three different, hand-typed starts inside its
+ * window (PATROL_ROUNDS), one round per employee row. The start dialog proposes the window start; every round overrides it explicitly.
+ * Publishable only when the cell counter reaches 3 and exactly the three expected spans are persisted.
+ */
+export async function takeShiftQuantity(take) {
+  const { page, api, mouse, report } = take;
+  const ctx = await prepare(take);
+  const def = FEATURE_SHIFTS[SHIFT_KEY.quantity];
+  if (!def.isTimeRange || def.quantity !== PATROL_ROUNDS.length) throw new Error(`${def.abbreviation} must be a time-range shift with quantity ${PATROL_ROUNDS.length} - check lib/shift-feature-demo.mjs`);
+  const rows = PATROL_ROUNDS.map((_, index) => index);
+  if (ctx.data.clients.length < rows.length) throw new Error(`only ${ctx.data.clients.length} employees in "${ctx.group.name}", need ${rows.length}`);
+  await ensureEmployeeRowsVisible(take, ctx, rows);
+  shiftRowOf(ctx, def);
+  const day = addDays(ctx.filter.periodStartDate, DAY.first);
+  await runRecorded(take, ctx, async () => {
+    await page.waitForTimeout(BEAT.intro);
+    const sourceCell = shiftCellCenter(ctx.shiftSection, shiftRowOf(ctx, def), DAY.first, ctx.isRtl);
+    await mouse.moveTo(sourceCell, MOVE.normal);
+    await page.waitForTimeout(BEAT.showRow);
+    let last = null;
+    report.posted = [];
+    for (const [index, round] of PATROL_ROUNDS.entries()) {
+      const row = rows[index];
+      const posted = waitWorkPost(page);
+      const { target } = await dragShift(take, ctx, def, DAY.first, row);
+      await waitModalAtRest(page);
+      await page.waitForTimeout(BEAT.hover);
+      await typeInto(take, SEL_START_HOURS, round.hours);
+      await typeInto(take, SEL_START_MINUTES, round.minutes);
+      if (await page.locator(SEL_DIALOG_ERROR).isVisible()) report.failure = report.failure ?? `the start ${round.start} shows an error in the dialog`;
+      if (await page.locator(SEL_SAVE).isDisabled()) report.failure = report.failure ?? `save is disabled for the start ${round.start}`;
+      await page.waitForTimeout(BEAT.hover);
+      await mouse.clickLocator(page.locator(SEL_SAVE), MOVE.normal);
+      const response = await posted;
+      const check = checkPost(ctx, response, def, DAY.first, row);
+      const entry = { round: index + 1, status: response.status(), startTime: hhmm(check.body.startTime), endTime: hhmm(check.body.endTime), employee: employeeLabel(ctx.data.clients[row]) };
+      report.posted.push(entry);
+      log(`round ${entry.round} ${entry.startTime}-${entry.endTime} -> ${entry.employee}: HTTP ${entry.status}`);
+      if (!response.ok() || !check.landed) throw new Error(`round ${entry.round} returned HTTP ${response.status()} / landed ${check.landed}: ${JSON.stringify(check.body)}`);
+      if (entry.startTime !== round.start || entry.endTime !== round.end) report.failure = report.failure ?? `round ${entry.round} was posted as ${entry.startTime}-${entry.endTime} instead of ${round.start}-${round.end}`;
+      await page.locator(SEL_MODAL).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
+      last = target;
+      await page.waitForTimeout(BEAT.afterDrop);
+    }
+    await page.waitForTimeout(CANVAS_SETTLE_MS);
+    const cell = cellOf(await readShiftCells(api, ctx.group.id), def.abbreviation, day);
+    report.cellAfter = { engaged: cell?.engaged, sumEmployees: cell?.sumEmployees, quantity: cell?.quantity };
+    if (cell?.engaged !== PATROL_ROUNDS.length) report.failure = report.failure ?? `the cell of ${def.abbreviation} on ${day} shows ${cell?.engaged} engaged instead of ${PATROL_ROUNDS.length}`;
+    report.works = await persistedWorks(take, ctx, def);
+    const spans = report.works.filter((work) => work.day === day).map((work) => `${work.from}-${work.until}`).sort();
+    const expected = PATROL_ROUNDS.map((round) => `${round.start}-${round.end}`).sort();
+    if (report.works.length !== PATROL_ROUNDS.length || JSON.stringify(spans) !== JSON.stringify(expected)) {
+      report.failure = report.failure ?? `expected the works ${expected.join(", ")} on ${day}, found ${JSON.stringify(report.works)}`;
+    }
+    await parkCursor(take, ctx, last);
+    await holdWithPoster(take, BEAT.finalHold);
+  });
+}
 
 export async function takeShiftQualification(take) {
   const { page, api, mouse, report } = take;

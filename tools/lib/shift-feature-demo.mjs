@@ -2,7 +2,7 @@
 
 /**
  * Definition of the demo data of the five shift-feature videos (sporadic shift, time-range shift, several employees per shift,
- * several tasks per day, mandatory qualification), shared by seed-shift-features-demo.mjs and takes/shift-feature-takes.mjs so seed and
+ * the same task several times per day at different times (a time-range shift with quantity 3), mandatory qualification), shared by seed-shift-features-demo.mjs and takes/shift-feature-takes.mjs so seed and
  * takes cannot drift apart. The shifts live EXCLUSIVELY in their own group (sibling of the demo group) together with five demo
  * employees, so the shift list of the schedule shows exactly these five shifts and no other demo video is affected.
  * @param FEATURE_GROUP - name/description of the exclusive group the shifts and the five employees belong to
@@ -43,6 +43,7 @@ const SPORADIC_DAYS_PER_WEEK = 2;
 const TIME_RANGE_MINUTES = 45;
 const SUM_EMPLOYEES_NEEDED = 3;
 const QUANTITY_PER_DAY = 3;
+const PATROL_ROUND_MINUTES = 45;
 
 export const FEATURE_SHIFTS = {
   [SHIFT_KEY.sporadic]: {
@@ -86,10 +87,12 @@ export const FEATURE_SHIFTS = {
     key: SHIFT_KEY.quantity,
     name: "Kontrollgang",
     abbreviation: "KGG",
-    description: "Dienst, der dreimal pro Tag anfällt",
-    start: "10:00:00",
-    end: "11:00:00",
+    description: "Zeitbereichsdienst, dreimal pro Tag zu verschiedenen Zeiten: Fenster 08:00-18:00, Dauer 45 Minuten",
+    start: "08:00:00",
+    end: "18:00:00",
     weekdays: WORKDAYS,
+    isTimeRange: true,
+    workTime: minutesToWorkTime(PATROL_ROUND_MINUTES),
     quantity: QUANTITY_PER_DAY,
     sumEmployees: 1,
   },
