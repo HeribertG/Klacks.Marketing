@@ -712,11 +712,7 @@ export async function takeScenarioCompare(take) {
 }
 
 function errorRowFor(page, pick) {
-  return page.locator(SEL_ERROR_ROWS)
-    .filter({ hasText: pick.day })
-    .filter({ hasText: pick.lateClient.name })
-    .filter({ hasText: hhmm(pick.late.endTime) })
-    .filter({ hasText: hhmm(pick.early.startTime) });
+  return page.locator(SEL_ERROR_ROWS).filter({ hasText: pick.lateClient.name });
 }
 
 const visibleErrorRows = (page) => page.locator(SEL_ERROR_ROWS).evaluateAll((elements) => elements.map((element) => element.innerText.replace(/\s+/g, " ").trim()));

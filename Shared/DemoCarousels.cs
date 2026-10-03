@@ -29,6 +29,7 @@ public static class DemoCarousels
             new(DemoVideo.RestConflictVideoName, "ruleConflictDemo.title", "ruleConflictDemo.videoLabel", "ruleConflictDemo.caption"),
             new(DemoVideo.RuleCollisionVideoName, "ruleCollisionDemo.title", "ruleCollisionDemo.videoLabel", "ruleCollisionDemo.caption"),
             new(DemoVideo.RuleConsecutiveDaysVideoName, "ruleConsecutiveDaysDemo.title", "ruleConsecutiveDaysDemo.videoLabel", "ruleConsecutiveDaysDemo.caption"),
+            new(DemoVideo.RuleHolidayWorkVideoName, "ruleHolidayWorkDemo.title", "ruleHolidayWorkDemo.videoLabel", "ruleHolidayWorkDemo.caption"),
         });
 
     public static DemoCarouselDefinition Scenarios { get; } = new(
