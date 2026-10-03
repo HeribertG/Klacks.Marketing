@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Wybór punktu wyjścia", "text": "Klacksy pyta najpierw: Czy skopiować szablon branżowy jako edytowalny punkt wyjścia &mdash; czy zaczynają Państwo od pustej reguły, zupełnie od zera?" },
       { "icon": "question_answer", "title": "Odpowiedzi pytanie po pytaniu", "text": "Klacksy odpytuje każdy parametr osobno &mdash; czasy pracy, limity górne, okresy odpoczynku, dodatki &mdash; i przy każdym pytaniu wyjaśnia, co dana wartość oznacza i jak zmienia planowanie. Otwarte pola obowiązkowe i już wprowadzone wartości są zawsze widoczne." },
-      { "icon": "task_alt", "title": "Sprawdzić podgląd, potem potwierdzić", "text": "Przed zapisem Klacksy pokazuje kompletny zestaw reguł jako podgląd. Zapis następuje dopiero po Państwa potwierdzeniu &mdash; transakcyjnie, możliwy do prześledzenia w rejestrze reguł i odwracalny." }
+      { "icon": "task_alt", "title": "Sprawdzić podgląd, potem potwierdzić", "text": "Przed zapisem Klacksy pokazuje kompletny zestaw reguł jako podgląd. Zapis następuje dopiero po Państwa potwierdzeniu &mdash; transakcyjnie, w każdej chwili dostępny na czacie i odwracalny." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Niech Państwo skonfigurują swoje reguły",
-    "text": "Rozpoczną Państwo dialog z Klacksy w Playgroundzie &mdash; albo zainstalują Klacks na własnej infrastrukturze i zdefiniują swoje reguły planowania w minuty, a nie w dniach konsultingowych."
+    "text": "Rozpoczną Państwo dialog z Klacksy w Playgroundzie &mdash; albo zainstalują Klacks na własnej infrastrukturze i zdefiniują swoje reguły planowania w dialogu, a nie w dniach konsultingowych."
   }
 }

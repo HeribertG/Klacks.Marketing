@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Chọn điểm xuất phát", "text": "Klacksy hỏi trước tiên: Có nên sao chép một mẫu theo ngành làm điểm xuất phát có thể chỉnh sửa &mdash; hay bạn bắt đầu hoàn toàn từ đầu với một quy tắc trống?" },
       { "icon": "question_answer", "title": "Trả lời từng câu hỏi", "text": "Klacksy hỏi từng tham số một &mdash; giờ làm việc, giới hạn trên, thời gian nghỉ, phụ cấp &mdash; và giải thích ở mỗi câu hỏi ý nghĩa của giá trị và cách nó thay đổi việc lập lịch. Các trường bắt buộc còn thiếu và các giá trị đã nhập luôn hiển thị rõ ràng." },
-      { "icon": "task_alt", "title": "Kiểm tra bản xem trước, sau đó xác nhận", "text": "Trước khi lưu, Klacksy hiển thị toàn bộ bộ quy tắc dưới dạng xem trước. Chỉ sau khi bạn xác nhận, quy tắc mới được áp dụng &mdash; theo giao dịch, có thể truy vết trong sổ đăng ký quy tắc và có thể hoàn tác." }
+      { "icon": "task_alt", "title": "Kiểm tra bản xem trước, sau đó xác nhận", "text": "Trước khi lưu, Klacksy hiển thị toàn bộ bộ quy tắc dưới dạng xem trước. Chỉ sau khi bạn xác nhận, quy tắc mới được áp dụng &mdash; theo giao dịch, có thể xem lại bất cứ lúc nào trong khung chat và có thể hoàn tác." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Thiết lập quy tắc của bạn",
-    "text": "Bắt đầu hội thoại với Klacksy trong Playground &mdash; hoặc cài đặt Klacks trên hạ tầng riêng của bạn và định nghĩa quy tắc lập lịch trong vài phút thay vì nhiều ngày tư vấn."
+    "text": "Bắt đầu hội thoại với Klacksy trong Playground &mdash; hoặc cài đặt Klacks trên hạ tầng riêng của bạn và định nghĩa quy tắc lập lịch qua hội thoại thay vì nhiều ngày tư vấn."
   }
 }

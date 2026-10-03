@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Alegeți punctul de plecare", "text": "Klacksy întreabă mai întâi: doriți să copiați un șablon de domeniu ca punct de plecare editabil &mdash; sau porniți de la zero cu o regulă goală?" },
       { "icon": "question_answer", "title": "Răspundeți întrebare cu întrebare", "text": "Klacksy vă întreabă fiecare parametru în parte &mdash; timpi de lucru, limite maxime, timpi de repaus, sporuri &mdash; și explică la fiecare întrebare ce înseamnă valoarea și cum schimbă planificarea. Câmpurile obligatorii deschise și valorile deja introduse sunt vizibile oricând." },
-      { "icon": "task_alt", "title": "Verificați previzualizarea, apoi confirmați", "text": "Înainte de salvare, Klacksy afișează întregul set de reguli ca previzualizare. Preluarea se face abia după confirmarea dumneavoastră &mdash; tranzacțional, trasabil în registrul de reguli și reversibil." }
+      { "icon": "task_alt", "title": "Verificați previzualizarea, apoi confirmați", "text": "Înainte de salvare, Klacksy afișează întregul set de reguli ca previzualizare. Preluarea se face abia după confirmarea dumneavoastră &mdash; tranzacțional, accesibil oricând în chat și reversibil." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Configurați-vă regulile",
-    "text": "Porniți dialogul cu Klacksy în Playground &mdash; sau instalați Klacks pe propria infrastructură și definiți regulile de planificare în câteva minute, nu în zile de consultanță."
+    "text": "Porniți dialogul cu Klacksy în Playground &mdash; sau instalați Klacks pe propria infrastructură și definiți regulile de planificare prin dialog, nu în zile de consultanță."
   }
 }

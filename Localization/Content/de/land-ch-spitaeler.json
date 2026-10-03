@@ -56,8 +56,8 @@
       },
       {
         "icon": "call",
-        "title": "Pikett korrekt unterschieden",
-        "text": "Klacks erfasst Präsenzpikett im Haus und Pikett zuhause unterschiedlich &mdash; inklusive Anfahrtszeit bei einem Einsatz von zuhause."
+        "title": "Pikett getrennt erfasst",
+        "text": "Klacks erfasst Präsenzpikett im Haus und Pikett zuhause getrennt &mdash; als eigene, konfigurierbare Dienst- oder Abwesenheitsarten."
       },
       {
         "icon": "verified",
@@ -72,7 +72,7 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy versteht Ihren Satz",
-        "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy berücksichtigt Qualifikation und Höchstarbeitszeit."
+        "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Höchstarbeitszeit."
       },
       {
         "icon": "bedtime",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenzarzt-Rotation und Pikett, ein Plan",
-    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, unterscheidet Präsenz- von Rufpikett automatisch und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Publikationsfristen mit Mindest-Vorlauf (z. B. zwei Wochen) prüft Klacks schon heute automatisch &mdash; sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, führt Präsenz- und Rufpikett getrennt und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Publikationsfristen mit Mindest-Vorlauf (z. B. zwei Wochen) prüft Klacks schon heute automatisch &mdash; sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": false,
   "cta": {

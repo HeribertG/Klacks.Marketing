@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Choisir le point de départ", "text": "Klacksy demande d'abord : faut-il copier un modèle sectoriel comme point de départ modifiable &mdash; ou partez-vous de zéro avec une règle vide ?" },
       { "icon": "question_answer", "title": "Répondre question par question", "text": "Klacksy interroge chaque paramètre un par un &mdash; temps de travail, plafonds, repos, majorations &mdash; en expliquant à chaque fois ce que la valeur signifie et comment elle modifie la planification. Les champs obligatoires ouverts et les valeurs déjà saisies restent visibles à tout moment." },
-      { "icon": "task_alt", "title": "Vérifier l'aperçu, puis confirmer", "text": "Avant l'enregistrement, Klacksy présente l'ensemble des règles dans un aperçu. Rien n'est appliqué sans votre confirmation &mdash; transactionnel, traçable dans le registre des règles et réversible." }
+      { "icon": "task_alt", "title": "Vérifier l'aperçu, puis confirmer", "text": "Avant l'enregistrement, Klacksy présente l'ensemble des règles dans un aperçu. Rien n'est appliqué sans votre confirmation &mdash; transactionnel, consultable à tout moment dans le chat et réversible." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Configurez vos règles",
-    "text": "Lancez le dialogue avec Klacksy dans le playground &mdash; ou installez Klacks sur votre propre infrastructure et définissez vos règles de planification en quelques minutes au lieu de journées de conseil."
+    "text": "Lancez le dialogue avec Klacksy dans le playground &mdash; ou installez Klacks sur votre propre infrastructure et définissez vos règles de planification par le dialogue au lieu de journées de conseil."
   }
 }

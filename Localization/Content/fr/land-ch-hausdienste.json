@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks pour la conciergerie & le nettoyage en Suisse | CCT nettoyage & pauses fractionnées",
+  "pageTitle": "Klacks pour la conciergerie & le nettoyage en Suisse | CCT nettoyage & services fractionnés",
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Pour la conciergerie &amp; le nettoyage en Suisse",
     "titleHtml": "Chaque site <span class=\"text-secondary\">impeccablement planifié.</span>",
-    "subtitle": "Klacks répartit efficacement les sites, les itinéraires et les services fractionnés &mdash; en tenant automatiquement compte de la semaine de 42 heures prévue par la CCT étendue du nettoyage de Suisse alémanique et des règles légales sur les pauses.",
+    "subtitle": "Klacks répartit efficacement les sites, les itinéraires et les services fractionnés &mdash; en tenant automatiquement compte de la semaine de 42 heures prévue par la CCT étendue du nettoyage de Suisse alémanique.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grille de planning Klacks pour les équipes de nettoyage et les sites en Suisse",
     "screenshotLabel": "Planning"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Comment Klacks soulage les services de conciergerie suisses",
-    "subtitle": "De l'itinéraire optimisé à la réglementation correcte des pauses &mdash; tout s'imbrique parfaitement.",
+    "subtitle": "De l'itinéraire optimisé au temps de travail hebdomadaire correct &mdash; tout s'imbrique parfaitement.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "pause_circle",
-        "title": "Pauses intégrées lors de services fractionnés",
-        "text": "Pour les interventions fractionnées dès 5,5 heures de travail, Klacks intègre automatiquement la pause légale."
+        "title": "Pauses comme bloc dans la tournée",
+        "text": "Pour les interventions fractionnées dès 5,5 heures de travail, la pause légale peut être placée dans la tournée sous forme de bloc fixe ou déplaçable ; l'obligation de pause elle-même n'est pas vérifiée par Klacks."
       },
       {
         "icon": "groups",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Service fractionné, pause, un seul planning",
-    "text": "Klacks détecte automatiquement les interventions fractionnées et intègre directement la pause légale dès 5,5 heures de travail &mdash; sans calcul manuel."
+    "text": "Klacks planifie les sites sous forme de tournée ; vous y placez directement la pause légale dès 5,5 heures de travail sous forme de bloc fixe ou déplaçable."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de nettoyage",
-    "text": "Testez dans le Playground comment Klacks prend en charge les itinéraires, les équipes et les règles de pause &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge les itinéraires, les équipes et les blocs de pause &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
   }
 }

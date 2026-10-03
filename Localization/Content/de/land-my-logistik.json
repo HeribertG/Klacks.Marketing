@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik in Malaysia | 45-Stunden-Woche & Spread-over für Fahrer",
+  "pageTitle": "Klacks für Logistik in Malaysia | 45-Stunden-Woche & 8-Stunden-Tag für Fahrer",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Malaysia",
     "titleHtml": "Touren, Stunden, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 45-Stunden-Woche, dem 10-Stunden-Spread-over-Limit und der Pausenpflicht des Employment Act 1955 automatisch berücksichtigt.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 45-Stunden-Woche und dem täglichen 8-Stunden-Limit des Employment Act 1955 als hinterlegten Grenzen geprüft.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Malaysia",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Malaysia entlastet",
-    "subtitle": "Von der optimierten Tour bis zur eingehaltenen Pausenpflicht &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur geprüften Wochenarbeitszeit &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks prüft laufend, ob die 45-Stunden-Grenze (Section 60A) und das tägliche 8-Stunden-Limit eingehalten werden." },
-      { "icon": "schedule", "title": "Spread-over-Limit im Blick", "text": "Klacks behält die 10-Stunden-Spanne zwischen erstem Arbeitsbeginn und Feierabend (Section 60A(1)) für jede Tour im Blick." },
-      { "icon": "pause_circle", "title": "Pausenpflicht automatisch eingeplant", "text": "Die 30-Minuten-Pause nach 5 aufeinanderfolgenden Stunden wird bei der Tourenplanung automatisch berücksichtigt." },
+      { "icon": "schedule", "title": "Tagesarbeitszeit im Blick", "text": "Klacks summiert die Arbeitsstunden je Tag und prüft das hinterlegte Tageslimit. Die 10-Stunden-Spanne zwischen erstem Arbeitsbeginn und Feierabend (Section 60A(1)) prüft Klacks nicht." },
+      { "icon": "pause_circle", "title": "Pausen als Block in der Tour", "text": "Pausen lassen sich bei der Tourenplanung als Block einplanen; ob nach 5 aufeinanderfolgenden Stunden eine 30-Minuten-Pause liegt, prüft Klacks nicht." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Tan ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Spread-over." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Tan ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Tour, Spread-over, ein Plan",
-    "text": "Klacks prüft die 45-Stunden-Woche und das 10-Stunden-Spread-over-Limit automatisch und plant die Pause nach 5 Stunden gleich mit ein &mdash; ohne Nachrechnen von Hand."
+    "title": "Tour, Wochenstunden, ein Plan",
+    "text": "Klacks prüft die 45-Stunden-Woche und das tägliche 8-Stunden-Limit automatisch &mdash; das 10-Stunden-Spread-over und die Pause nach 5 Stunden prüft Klacks nicht."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Stunden und Pausen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und Arbeitsstunden plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

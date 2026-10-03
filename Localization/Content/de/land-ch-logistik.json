@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik Schweiz | ARV 1, Lenkzeiten & Kleintransporter 2026",
+  "pageTitle": "Klacks für Logistik Schweiz | ARV 1, Arbeitszeiten & Kleintransporter 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in der Schweiz",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Arbeitszeit- und Pausenüberwachung nach ARV 1, der 56-Tage-Nachweispflicht und der kommenden ARV-Pflicht für Kleintransporter im grenzüberschreitenden Verkehr.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, dokumentierten Arbeitszeiten als Ergänzung zur 56-Tage-Nachweispflicht und der kommenden ARV-Pflicht für Kleintransporter im grenzüberschreitenden Verkehr.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in der Schweiz",
     "screenshotLabel": "Timeline"
@@ -41,18 +41,18 @@
       },
       {
         "icon": "timer",
-        "title": "Arbeitszeit &amp; Pausen nach ARV 1 überwacht",
-        "text": "Klacks überwacht die Arbeitszeit- und Pausengrenzen laufend und warnt frühzeitig, bevor die ARV 1-Werte &mdash; 9 Stunden Lenkzeit, Pause nach 4,5 Stunden &mdash; erreicht werden. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "title": "Arbeits- &amp; Ruhezeiten nach ARV 1 geprüft",
+        "text": "Klacks prüft die Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, laufend und warnt frühzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die 9 Stunden Lenkzeit und die Pause nach 4,5 Stunden prüft Klacks nicht &mdash; sie werden weiter über die Fahrtenschreiberdaten nachgewiesen."
       },
       {
         "icon": "fact_check",
         "title": "56-Tage-Nachweis dokumentiert",
-        "text": "Klacks hält die dokumentierten Arbeitszeiten für den vorgeschriebenen Zeitraum von 56 Tagen bereit."
+        "text": "Klacks hält die dokumentierten Arbeitszeiten für den vorgeschriebenen Zeitraum von 56 Tagen bereit &mdash; als Ergänzung zu den Fahrtenschreiberdaten."
       },
       {
         "icon": "local_shipping",
         "title": "Bereit für die Kleintransporter-Regel 2026",
-        "text": "Klacks plant Touren unabhängig vom Fahrzeugtyp &mdash; die Arbeitszeit- und Pausenüberwachung greift auch für Kleintransporter, die ab Mitte 2026 im grenzüberschreitenden Verkehr neu ARV-pflichtig werden."
+        "text": "Klacks plant Touren unabhängig vom Fahrzeugtyp &mdash; die Prüfung der Arbeits- und Ruhezeitgrenzen greift auch für Kleintransporter, die ab Mitte 2026 im grenzüberschreitenden Verkehr neu ARV-pflichtig werden."
       },
       {
         "icon": "badge",
@@ -62,18 +62,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy versteht Ihren Satz",
-        "text": "„Plane die Touren für morgen, Fahrer Meier ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Arbeitszeit- und Pausengrenzen."
+        "text": "„Plane die Touren für morgen, Fahrer Meier ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks überwacht Arbeitszeit- und Pausengrenzen nach ARV 1 automatisch, hält die Nachweise für 56 Tage bereit und plant auch Kleintransporter mit, die künftig neu ARV-pflichtig werden."
+    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen nach ARV 1, hält die dokumentierten Arbeitszeiten für 56 Tage bereit und plant auch Kleintransporter mit, die künftig neu ARV-pflichtig werden."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

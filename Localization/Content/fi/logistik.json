@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks logistiikalle | Reitit, ajoajat ja rajat ylittävä liikenne",
+  "pageTitle": "Klacks logistiikalle | Reitit, työajat ja rajat ylittävä liikenne",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Logistiikalle &amp; kuljetusalalle",
-    "titleHtml": "Reitit, ajoajat, aikataulut — <span class=\"text-secondary\">kaikki hallinnassa.</span>",
-    "subtitle": "Klacks suunnittelee reitit ja kuljettajat &mdash; ajo- ja lepoaikoineen, sopivine ajokorttiluokkineen ja rajat ylittävine pyhäpäivineen. Reitit optimoidaan automaattisesti.",
+    "titleHtml": "Reitit, työajat, aikataulut — <span class=\"text-secondary\">kaikki hallinnassa.</span>",
+    "subtitle": "Klacks suunnittelee reitit ja kuljettajat &mdash; työ- ja lepoaikarajoineen, sopivine ajokorttiluokkineen ja rajat ylittävine pyhäpäivineen. Reitit optimoidaan automaattisesti.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacksin aikajananäkymä reiteille ja kuljettajien tehtäville",
     "screenshotLabel": "Aikajana",
@@ -24,17 +24,17 @@
     "subtitle": "Optimoidusta reitistä rajat ylittävään pyhäpäivään asti &mdash; kaikki toimii yhdessä.",
     "items": [
       { "icon": "route", "title": "Reitit automaattisesti optimoituina", "text": "Klacks järjestää pysähdykset järkevimpään järjestykseen &mdash; lyhyet matkat, aikaikkunat pitävät, vähemmän tyhjiä ajoja." },
-      { "icon": "timer", "title": "Ajo- &amp; lepoajat tarkistettuina", "text": "Lakisääteisiä rajoja valvotaan reaaliajassa &mdash; rikkomuksia ei pääse syntymään." },
+      { "icon": "timer", "title": "Työ- &amp; lepoajat tarkistettuina", "text": "Tallentamianne työ- ja lepoaikarajoja valvotaan reaaliajassa &mdash; Klacks varoittaa rikkomuksesta tai estää sen haluttaessa. Itse ajoajan osoitatte edelleen ajopiirturin tiedoilla." },
       { "icon": "flag", "title": "Useita maita &amp; kalentereita", "text": "Useiden maiden pyhäpäivät ja säännöt voidaan yhdistää &mdash; jokaisella oma vaikutuksensa aikoihin ja lisiin." },
       { "icon": "badge", "title": "Sopivat ajokorttiluokat", "text": "Klacks osoittaa reittejä vain kuljettajille, joilla on sopiva ajo-oikeus &mdash; ja varoittaa vanhentuvista todisteista." },
       { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Suunnittele huomisen reitit, kuljettaja Meier on sairaana” riittää &mdash; Klacksy käynnistää uudelleensuunnittelun." },
-      { "icon": "event_busy", "title": "Poissaolot nopeasti paikattuina", "text": "Jos kuljettaja on poissa, Klacks näyttää heti, kuka on pätevä, saatavilla ja ajoaikansa puitteissa." }
+      { "icon": "event_busy", "title": "Poissaolot nopeasti paikattuina", "text": "Jos kuljettaja on poissa, Klacks näyttää heti, kuka on pätevä, saatavilla ja tallennettujen työaikarajojen puitteissa." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Kokekaa Klacks logistiikkayrityksessänne",
-    "text": "Kokeilkaa Playgroundissa, miten Klacks ottaa haltuunsa reitit, ajoajat ja kuljettajat &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Ei lisenssimaksuja ja ilman rekisteröitymistä."
+    "text": "Kokeilkaa Playgroundissa, miten Klacks suunnittelee reitit, työajat ja kuljettajat &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Ei lisenssimaksuja ja ilman rekisteröitymistä."
   }
 }

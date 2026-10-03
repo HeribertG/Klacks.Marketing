@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik in Spanien | Tiempo de Presencia & Lenkzeiten",
+  "pageTitle": "Klacks für Logistik in Spanien | Tiempo de Presencia & Arbeitszeitgrenzen",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Spanien",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; und unterscheidet dabei tiempo de trabajo efectivo von bloßem tiempo de presencia nach RD 1561/1995, geprüft gegen die Wochenarbeitszeit- und Lenkzeitgrenzen. Routen werden automatisch optimiert.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; und unterscheidet dabei tiempo de trabajo efectivo von bloßem tiempo de presencia nach RD 1561/1995, geprüft gegen die Wochenarbeitszeitgrenzen. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Spanien",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Spanien entlastet",
-    "subtitle": "Von der optimierten Tour bis zur sauberen Trennung von Arbeits- und Lenkzeit &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur sauberen Trennung von Arbeits- und Präsenzzeit &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "fact_check",
-        "title": "Lenkzeiten nach EU 561/2006 im Blick",
-        "text": "Die 56-Stunden-Wochengrenze und die 90-Stunden-Grenze über zwei Wochen werden getrennt von der Arbeitszeit überwacht &mdash; Klacks warnt, bevor eine Grenze überschritten würde; der Abgleich mit dem Fahrtenschreiber bleibt bei Ihnen."
+        "title": "Lenkzeit nach EU 561/2006 bleibt getrennt",
+        "text": "Klacks prüft die Arbeitszeit, nicht die Lenkzeit &mdash; die 56-Stunden-Wochengrenze und die 90-Stunden-Grenze über zwei Wochen für die Lenkzeit weisen Sie weiter über die Fahrtenschreiberdaten nach."
       },
       {
         "icon": "smart_toy",
@@ -62,7 +62,7 @@
       {
         "icon": "event_busy",
         "title": "Ausfälle schnell aufgefangen",
-        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer verfügbar und innerhalb der Lenk- und Arbeitszeitgrenzen ist."
+        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer verfügbar und innerhalb der hinterlegten Arbeitszeitgrenzen ist."
       }
     ]
   },
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

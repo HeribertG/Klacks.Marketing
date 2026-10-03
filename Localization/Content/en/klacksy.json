@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacksy: The AI Assistant That Learns Your Operating Rules | Klacks",
+  "pageTitle": "Klacksy: The AI Assistant You Simply Tell Your Operating Rules | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "For all industries &middot; AI assistant",
-    "titleHtml": "Klacksy: The AI assistant <span class=\"text-secondary\">that learns your operating rules.</span>",
+    "titleHtml": "Klacksy: The AI assistant <span class=\"text-secondary\">you simply tell your operating rules.</span>",
     "subtitle": "No generic off-the-shelf AI. Control the tone, autonomy, and terminology of a scheduling assistant that follows your exact rules &mdash; rule-based, traceable, in your hands.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksy AI assistant in Klacks scheduling",
@@ -24,19 +24,19 @@
     "subtitle": "Four dials that turn Klacksy into your own assistant.",
     "items": [
       { "icon": "tune", "title": "Set your own autonomy level", "text": "Four adjustable levels let you decide, per user, how much Klacksy may do on its own &mdash; from pure suggestions to independent changes. Sensitive actions always require your confirmation." },
-      { "icon": "menu_book", "title": "Operating rules, just by saying them", "text": "You describe a company rule right in the chat &mdash; for example, “night shift surcharge 25% from 11pm” or “maximum 3 night shifts per week.” Klacksy asks targeted follow-up questions until all required details are complete and verified, shows a preview of the result, and saves it only after your explicit confirmation &mdash; always traceable in the rule register, and reversible." },
-      { "icon": "translate", "title": "Train your terminology", "text": "Klacksy learns your company's specific abbreviations and phrasing, so requests are understood correctly right away." },
+      { "icon": "menu_book", "title": "Operating rules, just by saying them", "text": "You describe a company rule right in the chat &mdash; for example, “night shift surcharge 25% from 11pm” or “maximum 3 night shifts per week.” Klacksy asks targeted follow-up questions until all required details are complete and verified, shows a preview of the result, and saves it only after your explicit confirmation &mdash; retrievable in the chat at any time, and reversible." },
+      { "icon": "translate", "title": "Store your own terms", "text": "In the dictionary, you store company-specific terms with their variants so that voice input recognises them correctly. Klacksy can also remember in-house abbreviations as a note." },
       { "icon": "face", "title": "Adjust the personality", "text": "Under Settings you'll find the personality editor “Klacksy Personality”: there you set Klacksy's tone and character &mdash; to match your company culture." }
     ]
   },
   "example": {
     "eyebrow": "In practice",
     "title": "A home care provider sets up Klacksy for its team",
-    "text": "The autonomy level is set to “Propose”: Klacksy prepares route suggestions and automatically checks staff qualifications &mdash; the final decision always stays with the care manager. The night-shift surcharge rule was set up by chat, and Klacksy was trained on the abbreviations used in-house. The assistant already responds accordingly today &mdash; with no programming at all."
+    "text": "The autonomy level is set to “Propose”: Klacksy proposes every step first, and the planning engine checks staff qualifications &mdash; the final decision always stays with the care manager. The night-shift surcharge rule was set up by chat, and the abbreviations used in-house were saved as a note for Klacksy. The assistant already responds accordingly today &mdash; with no programming at all."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "See Klacksy in action",
-    "text": "Try the Playground to see how Klacksy applies autonomy levels, personality, and terminology &mdash; or install Klacks directly on your own infrastructure. No license fees, no registration required."
+    "text": "Try the Playground to see how Klacksy adopts autonomy levels, personality, and terminology &mdash; or install Klacks directly on your own infrastructure. No license fees, no registration required."
   }
 }

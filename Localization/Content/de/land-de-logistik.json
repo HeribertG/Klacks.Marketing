@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik | Touren, Lenkzeiten & lückenlose Zeit-Dokumentation",
+  "pageTitle": "Klacks für Logistik | Touren, Ruhezeiten & lückenlose Zeit-Dokumentation",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit sichtbar gemachten Lenk- und Ruhezeiten und lückenloser Zeit-Dokumentation als Ergänzung zu den separat vorzuhaltenden Fahrtenschreiber-Aufzeichnungen nach EU-Verordnung 2020/1054. Routen werden automatisch optimiert.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit sichtbar gemachten Arbeits- und Ruhezeiten und lückenloser Zeit-Dokumentation als Ergänzung zu den separat vorzuhaltenden Fahrtenschreiber-Aufzeichnungen nach EU-Verordnung 2020/1054. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze",
     "screenshotLabel": "Timeline"
@@ -41,13 +41,13 @@
       },
       {
         "icon": "timer",
-        "title": "Lenk- &amp; Ruhezeiten im Blick",
-        "text": "Die Ruhezeit-Grenzen nach Art. 7 der VO 561/2006 werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Die Tageslenkzeit-Grenzen nach Art. 6 lassen sich über dieselben generischen Tages- und Ruhezeit-Regeln annähern, ohne eigene Fahrtenschreiber-Anbindung. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "title": "Arbeits- &amp; Ruhezeiten im Blick",
+        "text": "Die Ruhezeit-Grenzen nach Art. 8 der VO 561/2006 werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Eine Tageshöchstarbeitszeit lässt sich zusätzlich hinterlegen; die Tageslenkzeit nach Art. 6 selbst prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "fact_check",
         "title": "Zeit-Dokumentation als Tacho-Ergänzung",
-        "text": "Klacks dokumentiert die geplanten Lenk- und Ruhezeiten lückenlos &mdash; als Ergänzung zu den separat vorzuhaltenden Fahrtenschreiber-Aufzeichnungen, die der 56-Tage-Nachweis nach EU-Verordnung 2020/1054 gesetzlich vorschreibt."
+        "text": "Klacks dokumentiert die geplanten Arbeits- und Ruhezeiten lückenlos &mdash; als Ergänzung zu den separat vorzuhaltenden Fahrtenschreiber-Aufzeichnungen, die der 56-Tage-Nachweis nach EU-Verordnung 2020/1054 gesetzlich vorschreibt."
       },
       {
         "icon": "badge",
@@ -62,7 +62,7 @@
       {
         "icon": "event_busy",
         "title": "Ausfälle schnell aufgefangen",
-        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und planerisch innerhalb der Lenk- und Ruhezeit-Vorgaben ist."
+        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und planerisch innerhalb der hinterlegten Arbeits- und Ruhezeit-Vorgaben ist."
       }
     ]
   },
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

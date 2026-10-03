@@ -24,14 +24,14 @@
     "items": [
       { "icon": "fact_check", "title": "Auskunft aus der Ewidencja, nicht aus dem Modell", "text": "Klacksy beantwortet Fragen zu geleisteten Stunden und Ruhezeiten aus der in Klacks geführten Arbeitszeitdokumentation nach Art. 149 Kodeks pracy. Die Zahlen kommen aus dem System, nicht aus der Schätzung eines Sprachmodells." },
       { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen immer Ihre Bestätigung." },
-      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Regel im Chat &mdash; etwa einen Zuschlagssatz oder eine Obergrenze für Nachtschichten. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer Bestätigung. Jede Regel bleibt im Register nachlesbar und rückgängig machbar." },
+      { "icon": "menu_book", "title": "Betriebsregeln per Zuruf", "text": "Sie beschreiben eine Regel im Chat &mdash; etwa einen Zuschlagssatz oder eine Obergrenze für Nachtschichten. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer Bestätigung. Jede Regel bleibt im Chat abrufbar und rückgängig machbar." },
       { "icon": "dns", "title": "Modell lokal betreiben", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Damit lässt sich der Assistent betreiben, ohne dass Beschäftigtendaten das Haus oder das Land verlassen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Pflegedienst in Westpommern stellt Klacksy ein",
-    "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei die Qualifikationen &mdash; die Entscheidung bleibt bei der Leitung. Die betriebsüblichen Abkürzungen lernt der Assistent, die Zuschlagsregel wird per Zuruf hinterlegt. Zur Identifikation der Mitarbeitenden braucht es dabei weder Fingerabdruck noch Gesichtserkennung."
+    "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen&ldquo;: Klacksy schlägt jeden Schritt zuerst vor, die Qualifikationen prüft die Planungs-Engine &mdash; die Entscheidung bleibt bei der Leitung. Die betriebsüblichen Abkürzungen merkt sich der Assistent als Notiz, die Zuschlagsregel wird per Zuruf hinterlegt. Zur Identifikation der Mitarbeitenden braucht es dabei weder Fingerabdruck noch Gesichtserkennung."
   },
   "showRoutePlanning": false,
   "cta": {

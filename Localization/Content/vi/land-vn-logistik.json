@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks cho ngành logistics tại Việt Nam | Quy định lái xe liên tục 4 giờ từ tháng 7/2026",
+  "pageTitle": "Klacks cho ngành logistics tại Việt Nam | Thời gian làm việc & giới hạn làm thêm giờ",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Dành cho logistics &amp; vận tải tại Việt Nam",
-    "titleHtml": "Tuyến đường, thời gian lái xe, lịch hẹn &mdash; <span class=\"text-secondary\">tất cả đều trong tầm kiểm soát.</span>",
-    "subtitle": "Klacks lập kế hoạch tuyến đường và tài xế &mdash; tự động tính đến quy định lái xe liên tục tối đa 4 giờ mới có hiệu lực từ 1/7/2026 (Luật số 118/2025) cũng như các giới hạn thời gian làm việc theo Bộ luật Lao động 2019.",
+    "titleHtml": "Tuyến đường, thời gian làm việc, lịch hẹn &mdash; <span class=\"text-secondary\">tất cả đều trong tầm kiểm soát.</span>",
+    "subtitle": "Klacks lập kế hoạch tuyến đường và tài xế &mdash; kiểm tra theo các giới hạn thời gian làm việc của Bộ luật Lao động 2019 đã được thiết lập.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho tuyến đường và lịch làm việc của tài xế tại Việt Nam",
     "screenshotLabel": "Dòng thời gian"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Klacks giúp giảm tải cho ngành logistics tại Việt Nam như thế nào",
-    "subtitle": "Từ tuyến đường được tối ưu đến quy định lái xe mới &mdash; tất cả đều ăn khớp với nhau.",
+    "subtitle": "Từ tuyến đường được tối ưu đến giới hạn làm thêm giờ &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
       { "icon": "route", "title": "Tuyến đường được tối ưu tự động", "text": "Klacks sắp xếp các điểm dừng theo thứ tự hợp lý nhất &mdash; quãng đường ngắn, khung giờ được tuân thủ, giảm chuyến chạy không tải." },
-      { "icon": "timer", "title": "Tự động lên kế hoạch lái xe liên tục 4 giờ &amp; giờ nghỉ bắt buộc", "text": "Klacks tự động đưa thời gian lái xe liên tục và giờ nghỉ bắt buộc 15 phút, có hiệu lực từ 1/7/2026, vào tuyến đường/lịch làm việc, theo Luật số 118/2025." },
+      { "icon": "timer", "title": "Nghỉ giải lao dưới dạng khối trong tuyến đường", "text": "Có thể lên kế hoạch giờ nghỉ dưới dạng khối trong tuyến đường/lịch làm việc; còn việc giờ nghỉ bắt buộc 15 phút sau 4 giờ lái xe liên tục, có hiệu lực từ 1/7/2026 theo Luật số 118/2025, có được tuân thủ hay không thì Klacks không kiểm tra." },
       { "icon": "schedule", "title": "Kiểm tra thời gian làm việc theo Bộ luật Lao động", "text": "Klacks tự động giám sát giới hạn 8h/10h mỗi ngày và 48 giờ mỗi tuần &mdash; ngay cả sau khi mức trần lái xe 10 giờ cũ đã bị bãi bỏ." },
       { "icon": "gavel", "title": "Giám sát giới hạn làm thêm giờ", "text": "Klacks liên tục theo dõi giới hạn 40 giờ/tháng và 200 giờ/năm (Điều 107) cho cả tài xế. Nếu muốn, Klacks sẽ chặn cứng việc vượt giới hạn này &mdash; khi đó, một vi phạm mới chỉ có thể được lưu lại khi có sự phê duyệt bằng văn bản của cấp quản lý." },
       { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; dữ liệu tuyến đường và tài xế luôn ở lại với bạn, kể cả khi sử dụng các tính năng AI." },
-      { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Lên lịch tuyến đường cho ngày mai, tài xế Nguyễn bị ốm” &mdash; Klacksy khởi chạy việc lập kế hoạch lại, engine lập kế hoạch cũng tính đến cả thời gian lái xe." }
+      { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Lên lịch tuyến đường cho ngày mai, tài xế Nguyễn bị ốm” &mdash; Klacksy khởi chạy việc lập kế hoạch lại, engine lập kế hoạch tính đến các giới hạn thời gian làm việc đã thiết lập." }
     ]
   },
   "example": {
     "eyebrow": "Ví dụ thực tế",
-    "title": "Lái xe liên tục 4 giờ từ tháng 7/2026, một lịch trình",
-    "text": "Klacks tự động tính đến giới hạn lái xe liên tục 4 giờ mới và giờ nghỉ bắt buộc 15 phút có hiệu lực từ 1/7/2026, đồng thời kiểm tra thời gian làm việc trong tuần theo Bộ luật Lao động &mdash; không cần tính toán thủ công."
+    "title": "Thời gian làm việc từ tháng 7/2026, một lịch trình",
+    "text": "Klacks kiểm tra thời gian làm việc trong tuần theo Bộ luật Lao động; có thể lên kế hoạch giờ nghỉ dưới dạng khối &mdash; giới hạn lái xe liên tục 4 giờ mới và giờ nghỉ bắt buộc 15 phút có hiệu lực từ 1/7/2026 thì Klacks không kiểm tra."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Trải nghiệm Klacks trong doanh nghiệp logistics của bạn",
-    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận tuyến đường, thời gian lái xe và tài xế như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
+    "text": "Hãy dùng thử trong Playground để xem Klacks lập kế hoạch tuyến đường, thời gian làm việc và tài xế như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
   }
 }

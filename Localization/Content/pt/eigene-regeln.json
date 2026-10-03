@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Escolher o ponto de partida", "text": "A Klacksy pergunta primeiro: deve ser copiado um modelo de setor como ponto de partida editável &mdash; ou prefere começar do zero com uma regra em branco?" },
       { "icon": "question_answer", "title": "Responder pergunta a pergunta", "text": "A Klacksy pergunta cada parâmetro individualmente &mdash; horários de trabalho, limites máximos, períodos de descanso, suplementos &mdash; e explica em cada pergunta o que o valor significa e como altera o planeamento. Os campos obrigatórios em aberto e os valores já introduzidos estão sempre visíveis." },
-      { "icon": "task_alt", "title": "Verificar a pré-visualização e confirmar", "text": "Antes de guardar, a Klacksy mostra o conjunto completo de regras como pré-visualização. Só após a sua confirmação é que é assumido &mdash; de forma transacional, rastreável no registo de regras e reversível." }
+      { "icon": "task_alt", "title": "Verificar a pré-visualização e confirmar", "text": "Antes de guardar, a Klacksy mostra o conjunto completo de regras como pré-visualização. Só após a sua confirmação é que é assumido &mdash; de forma transacional, consultável a qualquer momento no chat e reversível." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Configure as suas regras",
-    "text": "Inicie o diálogo com a Klacksy no Playground &mdash; ou instale a Klacks na sua própria infraestrutura e defina as suas regras de planeamento em minutos em vez de dias de consultoria."
+    "text": "Inicie o diálogo com a Klacksy no Playground &mdash; ou instale a Klacks na sua própria infraestrutura e defina as suas regras de planeamento em diálogo em vez de dias de consultoria."
   }
 }

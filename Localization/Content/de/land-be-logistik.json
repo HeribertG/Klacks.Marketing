@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik Belgien | Mahlzeitschecks, Arbeitszeitrahmen & Reform 2026",
+  "pageTitle": "Klacks für Logistik Belgien | Stundenbasis für Mahlzeitschecks, Arbeitszeitrahmen & Reform 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Belgien (PC 140.03)",
     "titleHtml": "Touren, Zulagen, Nachweise &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer, dokumentiert Betriebszugehörigkeit und Arbeitstage als Grundlage für den Mahlzeitscheck-Anspruch und hält den tatsächlichen Arbeitszeitrahmen im Arbeitsreglement wahrheitsgemäß fest &mdash; wie es die Reform 2026 verlangt.",
+    "subtitle": "Klacks plant Touren und Fahrer, erfasst jeden Arbeitstag mit Datum und Stunden als Datengrundlage für den Mahlzeitscheck-Anspruch und macht den tatsächlich geplanten Arbeitszeitrahmen sichtbar &mdash; die Grundlage für ein wahrheitsgemäßes Arbeitsreglement, wie es die Reform 2026 verlangt.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Belgien",
     "screenshotLabel": "Timeline"
@@ -23,21 +23,21 @@
     "subtitle": "Von der optimierten Tour bis zum korrekten Arbeitszeitrahmen &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "restaurant", "title": "Grundlage für den Mahlzeitscheck-Anspruch dokumentiert", "text": "Klacks dokumentiert bei jeder Schicht automatisch Betriebszugehörigkeit und Arbeitstage ab 4 Stunden &mdash; die Daten, die Ihre Lohnbuchhaltung für den Mahlzeitscheck-Anspruch braucht." },
+      { "icon": "restaurant", "title": "Grundlage für den Mahlzeitscheck-Anspruch dokumentiert", "text": "Klacks erfasst jede Schicht mit Datum und Stunden &mdash; die Rohdaten, aus denen Ihre Lohnbuchhaltung die Arbeitstage ab 4 Stunden und den Mahlzeitscheck-Anspruch ermittelt. Eine eigene Mahlzeitscheck-Zählung oder Betriebszugehörigkeits-Prüfung führt Klacks nicht." },
       { "icon": "fact_check", "title": "Arbeitszeitrahmen wahrheitsgemäß dokumentiert", "text": "Klacks bildet den Arbeitszeitrahmen anhand der tatsächlich geplanten Schichten ab &mdash; kein Alibi-Fenster, sondern die reale Wochenend- und Nachtarbeit." },
       { "icon": "schedule", "title": "240h-Freigrenze bei Überstunden im Blick", "text": "Klacks führt die freiwilligen Jahresüberstunden automatisch mit und zeigt an, wann die 240-Stunden-Marke erreicht ist &mdash; die Schwelle, die Ihre Lohnbuchhaltung für die Abgaben- und Steuerbefreiung braucht." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung bei abgelaufenem Pflichtnachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Führerschein hat." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Janssens ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Überstunden und die Tage, die für den Mahlzeitscheck zählen." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Janssens ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen und Zuschläge." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Mahlzeitscheck und Arbeitszeitrahmen, ein Plan",
-    "text": "Klacks dokumentiert Betriebszugehörigkeit und Arbeitstage als Grundlage für den Mahlzeitscheck-Anspruch, führt die freiwilligen Überstunden bis zur 240-Stunden-Marke mit und hält den Arbeitszeitrahmen im Arbeitsreglement wahrheitsgemäß fest &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erfasst jeden Arbeitstag mit Datum und Stunden als Grundlage für den Mahlzeitscheck-Anspruch, führt die freiwilligen Überstunden bis zur 240-Stunden-Marke mit und macht den tatsächlich geplanten Arbeitszeitrahmen sichtbar &mdash; die Mahlzeitscheck-Auswertung selbst übernimmt Ihre Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren optimiert, die Mahlzeitscheck-Grundlagen dokumentiert und den Arbeitszeitrahmen wahrheitsgemäß festhält &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren optimiert, die Stundenbasis für den Mahlzeitscheck erfasst und den tatsächlich geplanten Arbeitszeitrahmen sichtbar macht &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

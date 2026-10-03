@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Scegliere il punto di partenza", "text": "Klacksy chiede subito: copiare un modello di settore come punto di partenza modificabile &mdash; oppure partire da zero con una regola vuota?" },
       { "icon": "question_answer", "title": "Rispondere domanda per domanda", "text": "Klacksy chiede ogni parametro uno alla volta &mdash; orari, limiti, riposi, maggiorazioni &mdash; spiegando ogni volta cosa significa il valore e come cambia la pianificazione. I campi obbligatori aperti e i valori già raccolti sono sempre visibili." },
-      { "icon": "task_alt", "title": "Verificare l'anteprima, poi confermare", "text": "Prima del salvataggio, Klacksy mostra l'intero regolamento in anteprima. Nulla viene applicato senza la vostra conferma &mdash; in modo transazionale, tracciabile nel registro delle regole e reversibile." }
+      { "icon": "task_alt", "title": "Verificare l'anteprima, poi confermare", "text": "Prima del salvataggio, Klacksy mostra l'intero regolamento in anteprima. Nulla viene applicato senza la vostra conferma &mdash; in modo transazionale, sempre consultabile in chat e reversibile." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Configurate le vostre regole",
-    "text": "Avviate il dialogo con Klacksy nel playground &mdash; oppure installate Klacks sulla vostra infrastruttura e definite le vostre regole di pianificazione in pochi minuti invece che in giornate di consulenza."
+    "text": "Avviate il dialogo con Klacksy nel playground &mdash; oppure installate Klacks sulla vostra infrastruttura e definite le vostre regole di pianificazione in dialogo invece che in giornate di consulenza."
   }
 }

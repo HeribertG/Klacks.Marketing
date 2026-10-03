@@ -27,7 +27,7 @@
       { "icon": "gavel", "title": "休息時間自動檢查", "text": "工時法規、休息時間與工時上限即時受到監控 &mdash; 違規情況根本不會發生。" },
       { "icon": "verified", "title": "資格 &amp; 病房配對", "text": "每個班次只會指派給具備對應資格的人員 &mdash; 依病房、部門與職能分別配對。" },
       { "icon": "shield_lock", "title": "地端部署：資料留在機構內", "text": "Klacks 運行於您自有的基礎架構上。人事與病患資料不會離開醫院 &mdash; 就連給 AI 使用也不例外。" },
-      { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「把內科下週的夜班排滿」就好 &mdash; Klacksy 會自動考量資格與休息時間。" },
+      { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「把內科下週的夜班排滿」就好 &mdash; Klacksy 會啟動排班，由 Klacks 自動考量資格與休息時間。" },
       { "icon": "groups", "title": "支援人力庫 &amp; 臨時缺勤", "text": "若有人員無法出勤，Klacks 會立即顯示具備資格且有空的支援人力 &mdash; 不必打亂整份排班表。" }
     ]
   },

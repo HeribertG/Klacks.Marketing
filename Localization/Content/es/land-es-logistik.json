@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks para logística en España | Tiempo de presencia & tiempos de conducción",
+  "pageTitle": "Klacks para logística en España | Tiempo de presencia & límites de jornada",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Para logística &amp; transporte en España",
-    "titleHtml": "Rutas, tiempos de conducción, plazos &mdash; <span class=\"text-secondary\">todo bajo control.</span>",
-    "subtitle": "Klacks planifica rutas y conductores &mdash; distinguiendo el tiempo de trabajo efectivo del mero tiempo de presencia según el RD 1561/1995, comprobado frente a los límites de jornada semanal y de conducción. Las rutas se optimizan automáticamente.",
+    "titleHtml": "Rutas, tiempos de trabajo, plazos &mdash; <span class=\"text-secondary\">todo bajo control.</span>",
+    "subtitle": "Klacks planifica rutas y conductores &mdash; distinguiendo el tiempo de trabajo efectivo del mero tiempo de presencia según el RD 1561/1995, comprobado frente a los límites de jornada semanal. Las rutas se optimizan automáticamente.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline de Klacks para rutas y conductores en España",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cómo Klacks alivia la carga de la logística en España",
-    "subtitle": "Desde la ruta optimizada hasta la separación clara entre jornada y conducción &mdash; todo encaja a la perfección.",
+    "subtitle": "Desde la ruta optimizada hasta la separación clara entre tiempo de trabajo y tiempo de presencia &mdash; todo encaja a la perfección.",
     "items": [
       {
         "icon": "route",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "fact_check",
-        "title": "Tiempos de conducción según el Reglamento UE 561/2006 bajo control",
-        "text": "El límite semanal de 56 horas y el límite de 90 horas en dos semanas se controlan por separado de la jornada laboral &mdash; Klacks avisa antes de que se supere un límite; el contraste con el tacógrafo sigue siendo responsabilidad suya."
+        "title": "El tiempo de conducción según el Reglamento UE 561/2006 se mantiene aparte",
+        "text": "Klacks comprueba la jornada laboral, no el tiempo de conducción &mdash; el límite semanal de 56 horas y el límite de 90 horas en dos semanas para el tiempo de conducción los sigue acreditando usted con los datos del tacógrafo."
       },
       {
         "icon": "smart_toy",
@@ -62,7 +62,7 @@
       {
         "icon": "event_busy",
         "title": "Bajas cubiertas con rapidez",
-        "text": "Si un conductor falta, Klacks muestra de inmediato quién está disponible y dentro de los límites de conducción y de jornada."
+        "text": "Si un conductor falta, Klacks muestra de inmediato quién está disponible y dentro de los límites de jornada configurados."
       }
     ]
   },
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Descubra Klacks en su empresa de logística",
-    "text": "Pruebe en el Playground cómo Klacks se encarga de las rutas, los tiempos de conducción y los conductores &mdash; o instálelo directamente en su propia infraestructura. Sin cuotas de licencia y sin registro."
+    "text": "Pruebe en el Playground cómo Klacks planifica las rutas, los tiempos de trabajo y los conductores &mdash; o instálelo directamente en su propia infraestructura. Sin cuotas de licencia y sin registro."
   }
 }

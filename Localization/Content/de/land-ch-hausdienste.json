@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Haus- & Reinigungsdienste Schweiz | aveGAV Reinigung & Splitting-Pausen",
+  "pageTitle": "Klacks für Haus- & Reinigungsdienste Schweiz | aveGAV Reinigung & geteilte Dienste",
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in der Schweiz",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Routen und geteilte Dienste (Splitting) effizient ein &mdash; mit der 42-Stunden-Woche des aveGAV Reinigung und den gesetzlichen Pausenregeln automatisch berücksichtigt.",
+    "subtitle": "Klacks teilt Objekte, Routen und geteilte Dienste (Splitting) effizient ein &mdash; mit der 42-Stunden-Woche des aveGAV Reinigung automatisch berücksichtigt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Schweizer Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Schweizer Hausdienste entlastet",
-    "subtitle": "Von der optimierten Route bis zur korrekten Pausenregelung &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur korrekten Wochenarbeitszeit &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "pause_circle",
-        "title": "Pausen bei geteilten Diensten eingeplant",
-        "text": "Bei geteilten Einsätzen ab 5,5 Stunden Arbeitszeit plant Klacks die gesetzliche Pause automatisch mit ein."
+        "title": "Pausen als Block in der Tour",
+        "text": "Die gesetzliche Pause bei geteilten Einsätzen ab 5,5 Stunden Arbeitszeit lässt sich als fester oder verschiebbarer Block in die Tour legen; die Pausenpflicht selbst prüft Klacks nicht."
       },
       {
         "icon": "groups",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Splitting-Dienst, Pause, ein Plan",
-    "text": "Klacks erkennt geteilte Einsätze automatisch und plant die gesetzliche Pause ab 5,5 Stunden Arbeitszeit gleich mit &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks plant die Objekte als Tour; die gesetzliche Pause ab 5,5 Stunden Arbeitszeit legen Sie als festen oder verschiebbaren Block gleich mit hinein."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und Pausenregeln übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Teams und Pausenblöcke übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

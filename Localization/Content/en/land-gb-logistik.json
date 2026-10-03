@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "For logistics &amp; transport in the UK",
-    "titleHtml": "Routes, driving hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
-    "subtitle": "Klacks plans routes and drivers &mdash; factoring in the GB Domestic Drivers' Hours Rules and the new tachograph requirement for light vans in cross-border traffic from July 2026.",
+    "titleHtml": "Routes, working hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks plans routes and drivers &mdash; with the 11-hour duty limit of the GB Domestic Drivers' Hours Rules configured as a working-time limit, and routes for light vans that will newly require a tachograph in cross-border traffic from July 2026.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for routes and driver assignments in the UK",
     "screenshotLabel": "Timeline"
@@ -23,21 +23,21 @@
     "subtitle": "From optimised routes to the new tachograph requirement &mdash; everything works together.",
     "items": [
       { "icon": "route", "title": "Routes automatically optimised", "text": "Klacks sequences stops in the most sensible order &mdash; short journeys, time windows met, fewer empty runs." },
-      { "icon": "timer", "title": "GB Domestic Rules continuously monitored", "text": "Klacks makes the 10-hour driving-time and 11-hour duty-time limits under the Transport Act 1968 visible at every route planning stage and warns in good time before a limit is exceeded. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval." },
-      { "icon": "local_shipping", "title": "Ready for the light-van tachograph requirement", "text": "Klacks distinguishes purely domestic GB transport from cross-border light-van routes that will newly require a tachograph from July 2026." },
+      { "icon": "timer", "title": "11-hour duty time continuously monitored", "text": "You configure the 11-hour duty-time limit under the Transport Act 1968 as a daily maximum working time; Klacks makes it visible at every route planning stage and warns in good time before it is exceeded. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval. Klacks does not check the 10-hour driving limit &mdash; it continues to be evidenced by the tachograph data." },
+      { "icon": "local_shipping", "title": "Domestic and cross-border routes kept separate", "text": "You keep purely domestic GB transport and cross-border light-van routes that will newly require a tachograph from July 2026 in separate groups in Klacks &mdash; the tachograph itself covers the tachograph requirement." },
       { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence category &mdash; and warns before documents expire. On request, Klacks can fully block assignment once a required document has expired &mdash; only drivers with a valid licence can be scheduled." },
       { "icon": "shield_lock", "title": "Installed on your premises: data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; route and driver data stay with you, not even for the AI." },
-      { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Plan tomorrow's routes, driver Smith is off sick\" is all it takes &mdash; Klacksy starts the replanning, and the planning engine also takes driving hours into account." }
+      { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Plan tomorrow's routes, driver Smith is off sick\" is all it takes &mdash; Klacksy starts the replanning, and the planning engine takes the configured working-time limits into account." }
     ]
   },
   "example": {
     "eyebrow": "In practice",
     "title": "Mixed fleet, one plan",
-    "text": "Klacks automatically distinguishes between purely domestic GB transport under the GB Domestic Rules and cross-border light-van routes that will newly require a tachograph from July 2026 &mdash; no manual recalculating required."
+    "text": "You keep purely domestic GB transport under the GB Domestic Rules and cross-border light-van routes that will newly require a tachograph from July 2026 in separate groups in Klacks &mdash; Klacks checks the configured working-time limits for both, and the tachograph evidences driving time."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "See Klacks in your logistics business",
-    "text": "Try the Playground to see how Klacks handles routes, driving hours and drivers &mdash; or install it directly on your own infrastructure. No license fees, with no registration required."
+    "text": "Try the Playground to see how Klacks plans routes, working hours and drivers &mdash; or install it directly on your own infrastructure. No license fees, with no registration required."
   }
 }

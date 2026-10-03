@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pentru logistică &amp; transport din România",
-    "titleHtml": "Trasee, timpi de conducere, termene &mdash; <span class=\"text-secondary\">pregătiți pentru 2026.</span>",
-    "subtitle": "Klacks planifică traseele și șoferii &mdash; cu timpii de conducere și de repaus existenți, precum și cu obligativitatea Pachetului de mobilitate UE, care se aplică de la 1 iulie 2026 și pentru autoutilitarele între 2,5 și 3,5 tone în transportul transfrontalier.",
+    "titleHtml": "Trasee, timpi de lucru, termene &mdash; <span class=\"text-secondary\">pregătiți pentru 2026.</span>",
+    "subtitle": "Klacks planifică traseele și șoferii &mdash; cu limitele de timp de lucru și de repaus configurate &mdash; inclusiv pentru autoutilitarele între 2,5 și 3,5 tone care, de la 1 iulie 2026, intră sub incidența Pachetului de mobilitate UE în transportul transfrontalier.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru trasee și curse ale șoferilor din România",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "timer",
-        "title": "Timpi de conducere &amp; de pauză monitorizați",
-        "text": "Limita de 9 ore (respectiv 10 ore în două zile pe săptămână) și obligativitatea pauzei de 45 de minute după 4,5 ore de conducere sunt verificate continuu."
+        "title": "Timpi de lucru &amp; de repaus monitorizați",
+        "text": "Limitele de timp de lucru și de repaus pe care le configurați sunt verificate continuu. Limita de 9 ore de conducere (respectiv 10 ore în două zile pe săptămână) și obligativitatea pauzei de 45 de minute după 4,5 ore de conducere nu sunt verificate de Klacks &mdash; acestea se dovedesc în continuare prin datele tahografului."
       },
       {
         "icon": "bedtime",
@@ -62,18 +62,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy vă înțelege propoziția",
-        "text": "„Planifică traseele pentru mâine, șoferul Popescu este bolnav” este suficient &mdash; Klacksy pornește replanificarea, iar motorul de planificare ia în calcul și timpii de conducere."
+        "text": "„Planifică traseele pentru mâine, șoferul Popescu este bolnav” este suficient &mdash; Klacksy pornește replanificarea, iar motorul de planificare ia în calcul limitele de timp de lucru și de repaus configurate."
       }
     ]
   },
   "example": {
     "eyebrow": "Concret",
     "title": "Cursă transfrontalieră, un singur plan",
-    "text": "Klacks verifică automat timpii de conducere și de pauză, avertizează atunci când există riscul depășirii limitei de 10 ore la cursele de noapte și planifică și autoutilitarele care intră nou sub Pachetul de mobilitate UE de la iulie 2026."
+    "text": "Klacks verifică limitele de timp de lucru și de repaus configurate, avertizează atunci când există riscul depășirii limitei de 10 ore la cursele de noapte și planifică și autoutilitarele care intră nou sub Pachetul de mobilitate UE de la iulie 2026."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Descoperiți Klacks în firma dumneavoastră de logistică",
-    "text": "Încercați în Playground cum preia Klacks traseele, timpii de conducere și șoferii &mdash; fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum planifică Klacks traseele, timpii de lucru și șoferii &mdash; fără taxe de licență și fără înregistrare."
   }
 }

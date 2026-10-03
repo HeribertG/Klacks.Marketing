@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks pour la logistique en Belgique | Chèques-repas, cadre horaire & réforme 2026",
+  "pageTitle": "Klacks pour la logistique en Belgique | Base horaire des chèques-repas, cadre horaire & réforme 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en Belgique (CP 140.03)",
     "titleHtml": "Tournées, indemnités, justificatifs &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs, documente l'ancienneté et les jours de travail comme base du droit au chèque-repas et consigne fidèlement dans le règlement de travail le cadre horaire réellement pratiqué &mdash; comme l'exige la réforme 2026.",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs, enregistre chaque jour de travail avec sa date et ses heures comme base de données pour le droit au chèque-repas et rend visible le cadre horaire réellement planifié &mdash; la base d'un règlement de travail fidèle à la réalité, comme l'exige la réforme 2026.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations des chauffeurs en Belgique",
     "screenshotLabel": "Chronologie"
@@ -23,21 +23,21 @@
     "subtitle": "De la tournée optimisée au cadre horaire correct &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks place les arrêts dans l'ordre le plus judicieux &mdash; trajets courts, créneaux horaires respectés, moins de trajets à vide." },
-      { "icon": "restaurant", "title": "Base du droit au chèque-repas documentée", "text": "Klacks documente automatiquement, pour chaque service, l'ancienneté et les journées de travail d'au moins 4 heures &mdash; les données dont votre gestion de la paie a besoin pour le droit au chèque-repas." },
+      { "icon": "restaurant", "title": "Base du droit au chèque-repas documentée", "text": "Klacks enregistre chaque service avec sa date et ses heures &mdash; les données brutes à partir desquelles votre gestion de la paie détermine les journées de travail d'au moins 4 heures et le droit au chèque-repas. Klacks ne tient pas de décompte propre des chèques-repas et ne contrôle pas l'ancienneté." },
       { "icon": "fact_check", "title": "Cadre horaire documenté fidèlement", "text": "Klacks reflète le cadre horaire à partir des services réellement planifiés &mdash; pas de plage alibi, mais le véritable travail de week-end et de nuit." },
       { "icon": "schedule", "title": "Franchise de 240h sur les heures supplémentaires sous contrôle", "text": "Klacks tient automatiquement à jour les heures supplémentaires volontaires annuelles et indique quand le seuil de 240 heures est atteint &mdash; la limite dont votre gestion de la paie a besoin pour l'exonération de cotisations et d'impôt." },
       { "icon": "badge", "title": "Catégories de permis adaptées", "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance. Sur demande, Klacks bloque complètement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un permis valide est planifiée." },
-      { "icon": "smart_toy", "title": "Klacksy comprend votre phrase", "text": "« Planifie les tournées de demain, le chauffeur Janssens est malade » suffit &mdash; Klacksy lance la replanification ; le moteur de planification tient aussi compte des heures supplémentaires et des jours qui comptent pour le chèque-repas." }
+      { "icon": "smart_toy", "title": "Klacksy comprend votre phrase", "text": "« Planifie les tournées de demain, le chauffeur Janssens est malade » suffit &mdash; Klacksy lance la replanification ; le moteur de planification tient compte des limites de temps de travail et des majorations enregistrées." }
     ]
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Chèque-repas et cadre horaire, un seul planning",
-    "text": "Klacks documente l'ancienneté et les jours de travail comme base du droit au chèque-repas, tient à jour les heures supplémentaires volontaires jusqu'au seuil de 240 heures et consigne fidèlement le cadre horaire dans le règlement de travail &mdash; sans calcul manuel."
+    "text": "Klacks enregistre chaque jour de travail avec sa date et ses heures comme base du droit au chèque-repas, tient à jour les heures supplémentaires volontaires jusqu'au seuil de 240 heures et rend visible le cadre horaire réellement planifié &mdash; l'évaluation des chèques-repas elle-même relève de votre gestion de la paie."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de logistique",
-    "text": "Testez dans le Playground comment Klacks optimise les tournées, documente les données de base des chèques-repas et consigne fidèlement le cadre horaire &mdash; sans frais de licence et sans inscription."
+    "text": "Testez dans le Playground comment Klacks optimise les tournées, enregistre la base horaire des chèques-repas et rend visible le cadre horaire réellement planifié &mdash; sans frais de licence et sans inscription."
   }
 }

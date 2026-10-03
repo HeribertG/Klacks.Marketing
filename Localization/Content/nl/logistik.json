@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks voor logistiek | Routes, rijtijden & grensoverschrijdend",
+  "pageTitle": "Klacks voor logistiek | Routes, werktijden & grensoverschrijdend",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Voor logistiek &amp; transport",
-    "titleHtml": "Routes, rijtijden, afspraken — <span class=\"text-secondary\">alles onder controle.</span>",
-    "subtitle": "Klacks plant routes en chauffeurs &mdash; met rij- en rusttijden, passende rijbewijscategorieën en grensoverschrijdende feestdagen. Routes worden automatisch geoptimaliseerd.",
+    "titleHtml": "Routes, werktijden, afspraken — <span class=\"text-secondary\">alles onder controle.</span>",
+    "subtitle": "Klacks plant routes en chauffeurs &mdash; met werk- en rusttijdgrenzen, passende rijbewijscategorieën en grensoverschrijdende feestdagen. Routes worden automatisch geoptimaliseerd.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor routes en chauffeursinzet",
     "screenshotLabel": "Tijdlijn",
@@ -24,17 +24,17 @@
     "subtitle": "Van de geoptimaliseerde route tot de grensoverschrijdende feestdag &mdash; alles grijpt op elkaar in.",
     "items": [
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks zet stops in de meest logische volgorde &mdash; korte afstanden, gehaalde tijdvensters, minder lege ritten." },
-      { "icon": "timer", "title": "Rij- &amp; rusttijden gecontroleerd", "text": "Wettelijke grenzen worden in realtime bewaakt &mdash; overtredingen ontstaan al niet." },
+      { "icon": "timer", "title": "Werk- &amp; rusttijden gecontroleerd", "text": "De werk- en rusttijdgrenzen die u vastlegt, worden in realtime bewaakt &mdash; Klacks waarschuwt voor een overtreding of blokkeert die desgewenst. De rijtijd zelf toont u verder aan met de tachograafgegevens." },
       { "icon": "flag", "title": "Meerdere landen &amp; kalenders", "text": "Feestdagen en regels van meerdere landen kunnen worden gecombineerd &mdash; elk met eigen invloed op tijden en toeslagen." },
       { "icon": "badge", "title": "Passende rijbewijscategorieën", "text": "Klacks wijst routes alleen toe aan chauffeurs met de juiste bevoegdheid &mdash; en waarschuwt voor verlopende bewijzen." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Plan de routes voor morgen in, chauffeur Meier is ziek” volstaat &mdash; Klacksy start de herplanning." },
-      { "icon": "event_busy", "title": "Uitval snel opgevangen", "text": "Valt een chauffeur uit, dan toont Klacks direct wie gekwalificeerd, beschikbaar en binnen de rijtijd is." }
+      { "icon": "event_busy", "title": "Uitval snel opgevangen", "text": "Valt een chauffeur uit, dan toont Klacks direct wie gekwalificeerd, beschikbaar en binnen de vastgelegde arbeidstijdgrenzen is." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in uw logistieke bedrijf ervaren",
-    "text": "Ontdek in de Playground hoe Klacks routes, rijtijden en chauffeurs overneemt &mdash; of installeer het direct op uw eigen infrastructuur. Geen licentiekosten en zonder registratie."
+    "text": "Ontdek in de Playground hoe Klacks routes, werktijden en chauffeurs plant &mdash; of installeer het direct op uw eigen infrastructuur. Geen licentiekosten en zonder registratie."
   }
 }

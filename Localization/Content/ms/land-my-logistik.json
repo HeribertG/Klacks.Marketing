@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks untuk Logistik di Malaysia | Minggu Kerja 45 Jam & Spread-over untuk Pemandu",
+  "pageTitle": "Klacks untuk Logistik di Malaysia | Minggu Kerja 45 Jam & Hari Kerja 8 Jam untuk Pemandu",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Untuk logistik &amp; pengangkutan di Malaysia",
     "titleHtml": "Laluan, jam, temu janji &mdash; <span class=\"text-secondary\">semuanya terkawal.</span>",
-    "subtitle": "Klacks menjadualkan laluan dan pemandu &mdash; dengan minggu kerja 45 jam, had spread-over 10 jam dan kewajipan rehat di bawah Employment Act 1955 diambil kira secara automatik.",
+    "subtitle": "Klacks menjadualkan laluan dan pemandu &mdash; dengan minggu kerja 45 jam dan had harian 8 jam di bawah Employment Act 1955 disemak sebagai had yang ditetapkan.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Paparan garis masa Klacks untuk laluan dan tugasan pemandu di Malaysia",
     "screenshotLabel": "Garis Masa"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban logistik di Malaysia",
-    "subtitle": "Daripada laluan yang dioptimumkan hingga kewajipan rehat yang dipatuhi &mdash; semuanya saling melengkapi.",
+    "subtitle": "Daripada laluan yang dioptimumkan hingga waktu kerja mingguan yang disemak &mdash; semuanya saling melengkapi.",
     "items": [
       { "icon": "route", "title": "Laluan dioptimumkan secara automatik", "text": "Klacks menyusun perhentian mengikut urutan yang paling optimum &mdash; jarak pendek, tetingkap masa dipatuhi, kurang perjalanan kosong." },
       { "icon": "gavel", "title": "Minggu kerja 45 jam dipantau secara automatik", "text": "Klacks sentiasa menyemak sama ada had 45 jam (Section 60A) dan had harian 8 jam dipatuhi." },
-      { "icon": "schedule", "title": "Had spread-over sentiasa dipantau", "text": "Klacks memantau jangka masa 10 jam antara permulaan kerja pertama dan waktu pulang (Section 60A(1)) bagi setiap laluan." },
-      { "icon": "pause_circle", "title": "Kewajipan rehat dijadualkan secara automatik", "text": "Rehat 30 minit selepas 5 jam berturut-turut diambil kira secara automatik semasa perancangan laluan." },
+      { "icon": "schedule", "title": "Waktu kerja harian sentiasa dipantau", "text": "Klacks menjumlahkan jam kerja setiap hari dan menyemak had harian yang ditetapkan. Jangka masa 10 jam antara permulaan kerja pertama dan waktu pulang (Section 60A(1)) tidak disemak oleh Klacks." },
+      { "icon": "pause_circle", "title": "Rehat sebagai blok dalam laluan", "text": "Rehat boleh dijadualkan sebagai blok semasa perancangan laluan; sama ada rehat 30 minit diambil selepas 5 jam berturut-turut tidak disemak oleh Klacks." },
       { "icon": "badge", "title": "Kelas lesen memandu yang sesuai", "text": "Klacks hanya menetapkan laluan kepada pemandu yang mempunyai kebenaran yang sesuai &mdash; dan memberi amaran sebelum sijil tamat tempoh. Atas permintaan, Klacks menyekat sepenuhnya penugasan dengan bukti wajib yang telah luput &mdash; hanya kakitangan dengan bukti sah yang akan dijadualkan." },
-      { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Jadualkan laluan untuk esok, pemandu Tan sakit\" sudah memadai &mdash; Klacksy memulakan perancangan semula, dan enjin perancangan turut mengambil kira spread-over." }
+      { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Jadualkan laluan untuk esok, pemandu Tan sakit\" sudah memadai &mdash; Klacksy memulakan perancangan semula, dan enjin perancangan turut mengambil kira had waktu kerja yang ditetapkan." }
     ]
   },
   "example": {
     "eyebrow": "Contoh Konkrit",
-    "title": "Laluan, spread-over, satu jadual",
-    "text": "Klacks menyemak minggu kerja 45 jam dan had spread-over 10 jam secara automatik serta menjadualkan rehat selepas 5 jam sekali gus &mdash; tanpa perlu mengira semula secara manual."
+    "title": "Laluan, jam mingguan, satu jadual",
+    "text": "Klacks menyemak minggu kerja 45 jam dan had harian 8 jam secara automatik &mdash; spread-over 10 jam dan rehat selepas 5 jam tidak disemak oleh Klacks."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Alami Klacks dalam Perniagaan Logistik Anda",
-    "text": "Cuba dalam Playground bagaimana Klacks menguruskan laluan, jam dan rehat &mdash; atau pasang terus pada infrastruktur anda sendiri. Tiada yuran lesen dan tanpa pendaftaran."
+    "text": "Cuba dalam Playground bagaimana Klacks menjadualkan laluan dan jam kerja &mdash; atau pasang terus pada infrastruktur anda sendiri. Tiada yuran lesen dan tanpa pendaftaran."
   }
 }

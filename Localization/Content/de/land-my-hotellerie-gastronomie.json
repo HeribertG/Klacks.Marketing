@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
     "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">nach malaysischem Employment Act geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage nach dem malaysischen Employment Act &mdash; mit der 45-Stunden-Woche (seit 2023), dem absoluten Tageslimit von 12 Stunden inklusive Überstunden (Abschnitt 60A) und der 10-Stunden-Spread-over-Grenze, die geteilte Dienste hart begrenzt.",
+    "subtitle": "Klacks plant Service, Küche und Etage nach dem malaysischen Employment Act &mdash; mit der 45-Stunden-Woche (seit 2023) und dem absoluten Tageslimit von 12 Stunden inklusive Überstunden (Abschnitt 60A).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie",
     "screenshotLabel": "Timeline"
@@ -36,8 +36,8 @@
     "items": [
       {
         "icon": "splitscreen",
-        "title": "Spread-over-Grenze eingebaut",
-        "text": "Klacks überwacht bei geteilten Diensten die 10-Stunden-Spread-over-Grenze automatisch &mdash; ein Dienst, der vom Frühstück bis zum Abendservice zu weit auseinanderliegt, wird sofort sichtbar gemacht."
+        "title": "Geteilte Dienste mit Tageslimit",
+        "text": "Klacks prüft bei geteilten Diensten die Summe der Tagesstunden gegen die hinterlegte Tageshöchstarbeitszeit &mdash; die 10-Stunden-Spread-over-Spanne vom Frühstück bis zum Abendservice selbst prüft Klacks nicht."
       },
       {
         "icon": "schedule",

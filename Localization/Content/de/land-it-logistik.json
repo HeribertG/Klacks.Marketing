@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistica e trasporti | Touren, Lenkzeiten & 56-Tage-Nachweis",
+  "pageTitle": "Klacks für Logistica e trasporti | Touren, Ruhezeiten & 56-Tage-Nachweis",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Italien",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Lenk- und Ruhezeiten, passenden Führerschein-Klassen und dem seit dem 31.12.2024 geltenden 56-Tage-Nachweis für Fahrtenschreiberdaten. Routen werden automatisch optimiert.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Arbeits- und Ruhezeitgrenzen, passenden Führerschein-Klassen und dem seit dem 31.12.2024 geltenden 56-Tage-Nachweis für Fahrtenschreiberdaten. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze",
     "screenshotLabel": "Timeline"
@@ -23,17 +23,17 @@
     "subtitle": "Von der optimierten Tour bis zum lückenlos dokumentierten 56-Tage-Zeitraum &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "Lenk- &amp; Ruhezeiten automatisch geprüft", "text": "Gesetzliche Grenzen werden in Echtzeit überwacht und Verstöße frühzeitig sichtbar gemacht. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)." },
+      { "icon": "timer", "title": "Arbeits- &amp; Ruhezeiten geprüft", "text": "Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, werden in Echtzeit überwacht und Verstöße frühzeitig sichtbar gemacht. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar). Die Lenkzeit selbst prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen." },
       { "icon": "fact_check", "title": "56-Tage-Nachweis lückenlos", "text": "Klacks hält die dokumentierten Arbeits- und Pausenzeiten für den aktuellen Tag plus die vorausgehenden 56 Tage nachvollziehbar bereit &mdash; als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen (EU-VO 2020/1054)." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Läuft ein Pflicht-Nachweis dennoch ab, lässt sich die Zuteilung auf Wunsch hart blockieren." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Rossi ist krank“ genügt &mdash; Klacksy startet die Neuplanung." },
-      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und in der Lenkzeit ist." }
+      { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der hinterlegten Arbeitszeitgrenzen ist." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

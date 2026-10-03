@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Dla logistyki i transportu w Polsce",
-    "titleHtml": "Trasy, czas jazdy, terminy &mdash; <span class=\"text-secondary\">wszystko pod kontrolą.</span>",
+    "titleHtml": "Trasy, czas pracy, terminy &mdash; <span class=\"text-secondary\">wszystko pod kontrolą.</span>",
     "subtitle": "Klacks planuje trasy i kierowców &mdash; z twardym 10-godzinnym limitem przy pracy w nocy oraz nowym obowiązkiem montażu tachografu dla lekkich pojazdów dostawczych od 1 lipca 2026 r. Trasy są optymalizowane automatycznie.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks dla tras i zleceń kierowców w Polsce",
@@ -24,20 +24,20 @@
     "items": [
       { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa przystanki w najsensowniejszej kolejności &mdash; krótkie trasy, dotrzymane przedziały czasowe, mniej pustych przejazdów." },
       { "icon": "nightlight", "title": "10-godzinny limit nocny automatycznie pod kontrolą", "text": "Klacks rozpoznaje, gdy zmiana wchodzi w okno nocne &mdash; 4-godzinne okno nocne konfigurujesz dokładnie tak, jak ustalił to Twój zakład &mdash; i automatycznie ostrzega, gdy łączny czas pracy między dwoma okresami odpoczynku miałby przekroczyć 10-godzinny limit. Na życzenie Klacks blokuje przekroczenie w sposób twardy &mdash; nowe naruszenie można wtedy zapisać wyłącznie za udokumentowaną zgodą przełożonego." },
-      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze od 1.7.2026 r. pod kontrolą", "text": "Dla pojazdów o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks uwzględnia te same zasady czasu jazdy co dla ciężkich samochodów ciężarowych &mdash; wraz z 4,5-godzinnym czasem jazdy, 45-minutową przerwą i maksymalnie 9 (a w dwa dni w tygodniu 10) godzinami dziennego czasu jazdy &mdash; i ostrzega w razie groźby przekroczenia." },
+      { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze od 1.7.2026 r. uwzględnione w planowaniu", "text": "Pojazdy o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks planuje z tymi samymi zapisanymi limitami czasu pracy i odpoczynku co wszystkie trasy. Zasad czasu jazdy dla ciężkich samochodów ciężarowych &mdash; 4,5-godzinnego czasu jazdy, 45-minutowej przerwy i maksymalnie 9 (a w dwa dni w tygodniu 10) godzin dziennego czasu jazdy &mdash; Klacks nie sprawdza; ich ewidencję zapewnia tachograf." },
       { "icon": "badge", "title": "Kategorie prawa jazdy dopasowane", "text": "Klacks przydziela trasy wyłącznie kierowcom z odpowiednimi uprawnieniami &mdash; i ostrzega przed wygasającymi dokumentami. Na życzenie Klacks całkowicie blokuje przydział kierowcy z przeterminowanym obowiązkowym dokumentem &mdash; zaplanowany zostanie tylko ten, kto ma ważny dokument." },
       { "icon": "smart_toy", "title": "Klacksy rozumie Twoje zdanie", "text": "„Zaplanuj trasy na jutro, kierowca Kowalski jest chory” wystarczy &mdash; Klacksy uruchamia planowanie od nowa." },
-      { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy kierowca wypada, Klacks od razu pokazuje, kto jest wykwalifikowany, dostępny i mieści się w limicie czasu jazdy." }
+      { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy kierowca wypada, Klacks od razu pokazuje, kto jest wykwalifikowany, dostępny i mieści się w zapisanych limitach czasu pracy." }
     ]
   },
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Okno nocne, lekkie pojazdy dostawcze, jeden plan",
-    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ostrzega, gdy tylko 10-godzinny limit zostałby przekroczony &mdash; i planuje lekkie pojazdy dostawcze w międzynarodowym przewozie od 1.7.2026 r. od razu według zasad czasu jazdy dla samochodów ciężarowych."
+    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ostrzega, gdy tylko 10-godzinny limit zostałby przekroczony &mdash; i planuje także lekkie pojazdy dostawcze w międzynarodowym przewozie &mdash; ich czas jazdy od 1.7.2026 r. rejestruje tachograf."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Zobacz Klacks w swojej firmie logistycznej",
-    "text": "Wypróbuj w Playgroundzie, jak Klacks przejmuje trasy, limity nocne i nowy obowiązek dla lekkich pojazdów dostawczych &mdash; lub zainstaluj go bezpośrednio na własnej infrastrukturze. Bez opłat licencyjnych i bez rejestracji."
+    "text": "Wypróbuj w Playgroundzie, jak Klacks planuje trasy, limity nocne i lekkie pojazdy dostawcze &mdash; lub zainstaluj go bezpośrednio na własnej infrastrukturze. Bez opłat licencyjnych i bez rejestracji."
   }
 }

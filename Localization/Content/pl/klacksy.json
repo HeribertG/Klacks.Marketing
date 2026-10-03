@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacksy: asystent AI, który uczy się zasad Państwa firmy | Klacks",
+  "pageTitle": "Klacksy: asystent AI, któremu po prostu przekazują Państwo zasady swojej firmy | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Dla wszystkich branż &middot; Asystent AI",
-    "titleHtml": "Klacksy: asystent AI, <span class=\"text-secondary\">który uczy się zasad Państwa firmy.</span>",
+    "titleHtml": "Klacksy: asystent AI, <span class=\"text-secondary\">któremu po prostu przekazują Państwo zasady swojej firmy.</span>",
     "subtitle": "Żadnej zwykłej AI z półki. Kontrolują Państwo ton, autonomię i słownictwo branżowe asystenta planowania zmian, który dokładnie przestrzega Państwa wytycznych &mdash; oparty na regułach, możliwy do prześledzenia, w Państwa rękach.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Asystent AI Klacksy w planowaniu zmian Klacks",
@@ -24,15 +24,15 @@
     "subtitle": "Cztery ustawienia, dzięki którym Klacksy staje się Państwa własnym asystentem.",
     "items": [
       { "icon": "tune", "title": "Sami określają Państwo autonomię", "text": "Za pomocą czterech regulowanych poziomów określają Państwo dla każdego użytkownika, ile Klacksy może robić samodzielnie &mdash; od samych sugestii po samodzielne zmiany. Wrażliwe działania zawsze wymagają Państwa potwierdzenia." },
-      { "icon": "menu_book", "title": "Zasady firmowe, wystarczy je powiedzieć", "text": "Opisują Państwo zasadę firmową bezpośrednio na czacie &mdash; na przykład „dodatek nocny 25% od godziny 23” lub „maksymalnie 3 zmiany nocne w tygodniu”. Klacksy dopytuje precyzyjnie, aż wszystkie wymagane dane będą kompletne i zweryfikowane, pokazuje podgląd wyniku i zapisuje dopiero po Państwa wyraźnym potwierdzeniu &mdash; zawsze możliwe do prześledzenia w rejestrze zasad i odwracalne." },
-      { "icon": "translate", "title": "Trenują Państwo słownictwo branżowe", "text": "Klacksy uczy się skrótów i sformułowań specyficznych dla Państwa firmy, dzięki czemu zapytania są od razu rozumiane poprawnie." },
+      { "icon": "menu_book", "title": "Zasady firmowe, wystarczy je powiedzieć", "text": "Opisują Państwo zasadę firmową bezpośrednio na czacie &mdash; na przykład „dodatek nocny 25% od godziny 23” lub „maksymalnie 3 zmiany nocne w tygodniu”. Klacksy dopytuje precyzyjnie, aż wszystkie wymagane dane będą kompletne i zweryfikowane, pokazuje podgląd wyniku i zapisuje dopiero po Państwa wyraźnym potwierdzeniu &mdash; zawsze dostępne na czacie i odwracalne." },
+      { "icon": "translate", "title": "Zapisują Państwo własne pojęcia", "text": "W słowniku zapisują Państwo wewnętrzne pojęcia firmowe wraz z ich wariantami, aby wprowadzanie głosowe poprawnie je rozpoznawało. Wewnętrzne skróty Klacksy może dodatkowo zapamiętać jako notatkę." },
       { "icon": "face", "title": "Dostosowują Państwo osobowość", "text": "W Ustawieniach znajdą Państwo edytor osobowości „Osobowość Klacksy”: tam określają Państwo ton i charakter Klacksy &mdash; dopasowany do kultury Państwa firmy." }
     ]
   },
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Placówka opieki domowej dostosowuje Klacksy do swojego zespołu",
-    "text": "Poziom autonomii jest ustawiony na „Proponuj”: Klacksy przygotowuje propozycje tras i automatycznie sprawdza przy tym kwalifikacje personelu &mdash; ostateczna decyzja zawsze należy do kierownictwa. Dodatkowo zasada dodatku nocnego została ustalona przez czat, a Klacksy został przeszkolony w zakresie skrótów używanych w placówce. Asystent już dziś reaguje odpowiednio &mdash; całkowicie bez programowania."
+    "text": "Poziom autonomii jest ustawiony na „Proponuj”: Klacksy najpierw proponuje każdy krok, a kwalifikacje personelu sprawdza silnik planowania &mdash; ostateczna decyzja zawsze należy do kierownictwa. Dodatkowo zasada dodatku nocnego została ustalona przez czat, a skróty używane w placówce zapisano jako notatkę dla Klacksy. Asystent już dziś reaguje odpowiednio &mdash; całkowicie bez programowania."
   },
   "showRoutePlanning": false,
   "cta": {

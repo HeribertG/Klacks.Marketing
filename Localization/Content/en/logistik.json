@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks for Logistics | Routes, Driving Times & Cross-Border Operations",
+  "pageTitle": "Klacks for Logistics | Routes, Working Times & Cross-Border Operations",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "For logistics &amp; transport",
-    "titleHtml": "Routes, driving times, deadlines — <span class=\"text-secondary\">all under control.</span>",
-    "subtitle": "Klacks schedules routes and drivers &mdash; with driving and rest times, the right license classes, and cross-border public holidays. Routes are optimized automatically.",
+    "titleHtml": "Routes, working times, deadlines — <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks schedules routes and drivers &mdash; with working and rest time limits, the right license classes, and cross-border public holidays. Routes are optimized automatically.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for routes and driver assignments",
     "screenshotLabel": "Timeline",
@@ -24,17 +24,17 @@
     "subtitle": "From the optimized route to the cross-border public holiday &mdash; it all works together.",
     "items": [
       { "icon": "route", "title": "Routes optimized automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short distances, time windows met, fewer empty runs." },
-      { "icon": "timer", "title": "Driving &amp; rest times checked", "text": "Statutory limits are monitored in real time &mdash; violations never happen in the first place." },
+      { "icon": "timer", "title": "Working &amp; rest times checked", "text": "The working and rest time limits you configure are monitored in real time &mdash; Klacks warns before a violation or blocks it on request. You continue to evidence driving time itself with the tachograph data." },
       { "icon": "flag", "title": "Multiple countries &amp; calendars", "text": "Public holidays and rules from multiple countries can be combined &mdash; each with its own effect on hours and pay premiums." },
       { "icon": "badge", "title": "The right license classes", "text": "Klacks assigns routes only to drivers with the right license &mdash; and warns before a certification expires." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "“Schedule tomorrow's routes, driver Meier is out sick” is enough &mdash; Klacksy starts the replanning." },
-      { "icon": "event_busy", "title": "Absences covered fast", "text": "If a driver drops out, Klacks immediately shows who's qualified, available, and within driving-time limits." }
+      { "icon": "event_busy", "title": "Absences covered fast", "text": "If a driver drops out, Klacks immediately shows who's qualified, available, and within the configured working-time limits." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Experience Klacks in your logistics operation",
-    "text": "Try it in the Playground and see how Klacks handles routes, driving times, and drivers &mdash; or install it directly on your own infrastructure. No license fees, no registration required."
+    "text": "Try it in the Playground and see how Klacks plans routes, working times, and drivers &mdash; or install it directly on your own infrastructure. No license fees, no registration required."
   }
 }

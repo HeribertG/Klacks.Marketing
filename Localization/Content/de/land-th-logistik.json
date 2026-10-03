@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik in Thailand | Lenk- & Ruhezeiten nach Ministerialverordnung Nr. 12",
+  "pageTitle": "Klacks für Logistik in Thailand | Arbeitszeit & 36-Stunden-Überstundenlimit",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Thailand",
-    "titleHtml": "Touren, Lenkzeiten, Ruhepausen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit Lenk- und Ruhezeiten gemäß Ministerialverordnung Nr. 12 B.E. 2541 und dem 36-Stunden-Wochenlimit für Überstunden automatisch berücksichtigt.",
+    "titleHtml": "Touren, Arbeitszeiten, Überstunden &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 8h+2h-Tagesgrenze und dem 36-Stunden-Wochenlimit für Überstunden als hinterlegten Grenzen im Blick.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Thailand",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Thailand entlastet",
-    "subtitle": "Von der optimierten Tour bis zur korrekten Ruhepause &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zum geprüften Überstundenlimit &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "Ruhepause nach 4h Lenkzeit eingeplant", "text": "Klacks reserviert die 1-Stunden-Ruhepause nach maximal 4 Stunden zusammenhängender Fahrzeit automatisch &mdash; auch aufgeteilt in Intervalle von mind. 20 Minuten." },
+      { "icon": "timer", "title": "Ruhepausen als Block in der Tour", "text": "Ruhepausen lassen sich als Block in die Tour einplanen &mdash; auch aufgeteilt in Intervalle von mind. 20 Minuten; ob nach maximal 4 Stunden zusammenhängender Fahrzeit 1 Stunde Pause liegt, prüft Klacks nicht." },
       { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Fahrer live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung konsequent &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "schedule", "title": "8h+2h-Grenze pro Fahrer überwacht", "text": "Klacks prüft laufend, ob die reguläre Arbeitszeit von 8 Stunden plus maximal 2 Stunden Überstunde pro Tag eingehalten wird." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Somchai ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Lenk- und Ruhezeiten." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Somchai ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Lenkzeit, Ruhepause, ein Plan",
-    "text": "Klacks prüft die Ruhepause nach 4 Stunden Lenkzeit automatisch, hält die 8h+2h-Grenze pro Fahrer ein und behält gleichzeitig das 36-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
+    "title": "Arbeitszeit, Überstunden, ein Plan",
+    "text": "Klacks prüft die 8h+2h-Grenze pro Fahrer und behält das 36-Stunden-Wochenlimit im Blick &mdash; die Ruhepause nach 4 Stunden Lenkzeit lässt sich als Block einplanen, wird aber nicht gegen die Pausenpflicht geprüft."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

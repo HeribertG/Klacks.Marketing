@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks til logistik | Ruter, køretider & grænseoverskridende",
+  "pageTitle": "Klacks til logistik | Ruter, arbejdstider & grænseoverskridende",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Til logistik &amp; transport",
-    "titleHtml": "Ruter, køretider, aftaler — <span class=\"text-secondary\">alt under kontrol.</span>",
-    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med køre- og hviletider, de rette kørekortklasser og grænseoverskridende helligdage. Ruter optimeres automatisk.",
+    "titleHtml": "Ruter, arbejdstider, aftaler — <span class=\"text-secondary\">alt under kontrol.</span>",
+    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med grænser for arbejds- og hviletid, de rette kørekortklasser og grænseoverskridende helligdage. Ruter optimeres automatisk.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for ruter og chaufførindsatser",
     "screenshotLabel": "Tidslinje",
@@ -24,17 +24,17 @@
     "subtitle": "Fra den optimerede rute til den grænseoverskridende helligdag &mdash; alt spiller sammen.",
     "items": [
       { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger stoppene i den mest hensigtsmæssige rækkefølge &mdash; korte veje, overholdte tidsvinduer, mindre tomkørsel." },
-      { "icon": "timer", "title": "Køre- &amp; hviletider kontrolleret", "text": "Lovpligtige grænser overvåges i realtid &mdash; overtrædelser opstår slet ikke." },
+      { "icon": "timer", "title": "Arbejds- &amp; hviletider kontrolleret", "text": "De grænser for arbejds- og hviletid, du lægger ind, overvåges i realtid &mdash; Klacks advarer før en overtrædelse eller blokerer den, hvis du ønsker det. Selve køretiden dokumenterer du fortsat via fartskriverdataene." },
       { "icon": "flag", "title": "Flere lande &amp; kalendere", "text": "Helligdage og regler fra flere lande kan blandes &mdash; hver med sin egen virkning på tider og tillæg." },
       { "icon": "badge", "title": "Kørekortklasser matchet", "text": "Klacks tildeler kun ruter til chauffører med den rette rettighed &mdash; og advarer om udløbende beviser." },
       { "icon": "smart_toy", "title": "Klacksy forstår din sætning", "text": "»Planlæg ruterne for i morgen, chauffør Meier er syg« er nok &mdash; Klacksy starter omplanlægningen." },
-      { "icon": "event_busy", "title": "Fravær hurtigt dækket", "text": "Falder en chauffør fra, viser Klacks straks, hvem der er kvalificeret, tilgængelig og inden for køretiden." }
+      { "icon": "event_busy", "title": "Fravær hurtigt dækket", "text": "Falder en chauffør fra, viser Klacks straks, hvem der er kvalificeret, tilgængelig og inden for de fastlagte arbejdstidsgrænser." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Oplev Klacks i din logistikvirksomhed",
-    "text": "Prøv selv i Playground, hvordan Klacks overtager ruter, køretider og chauffører &mdash; eller installer det direkte på din egen infrastruktur. Ingen licensafgifter og uden registrering."
+    "text": "Prøv selv i Playground, hvordan Klacks planlægger ruter, arbejdstider og chauffører &mdash; eller installer det direkte på din egen infrastruktur. Ingen licensafgifter og uden registrering."
   }
 }

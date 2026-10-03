@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Rumänien",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">bereit für 2026.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den bestehenden Lenk- und Ruhezeiten sowie der ab 1. Juli 2026 geltenden EU-Mobilitätspaket-Pflicht für Kleintransporter zwischen 2,5 und 3,5 Tonnen im grenzüberschreitenden Verkehr.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">bereit für 2026.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den hinterlegten Arbeits- und Ruhezeitgrenzen &mdash; auch für Kleintransporter zwischen 2,5 und 3,5 Tonnen, die ab 1. Juli 2026 im grenzüberschreitenden Verkehr unter das EU-Mobilitätspaket fallen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Rumänien",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "timer",
-        "title": "Lenk- &amp; Pausenzeiten überwacht",
-        "text": "Die 9-Stunden-Grenze (bzw. 10 Stunden an zwei Tagen pro Woche) und die 45-Minuten-Pausenpflicht nach 4,5 Stunden Lenkzeit werden laufend geprüft."
+        "title": "Arbeits- &amp; Ruhezeiten überwacht",
+        "text": "Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, werden laufend geprüft. Die 9-Stunden-Lenkzeitgrenze (bzw. 10 Stunden an zwei Tagen pro Woche) und die 45-Minuten-Pausenpflicht nach 4,5 Stunden Lenkzeit prüft Klacks nicht &mdash; sie werden weiter über die Fahrtenschreiberdaten nachgewiesen."
       },
       {
         "icon": "bedtime",
@@ -62,18 +62,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy versteht Ihren Satz",
-        "text": "„Plane die Touren für morgen, Fahrer Popescu ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Lenkzeiten."
+        "text": "„Plane die Touren für morgen, Fahrer Popescu ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks prüft Lenk- und Pausenzeiten automatisch, warnt bei drohender Überschreitung der 10-Stunden-Grenze für Nachtfahrten und plant auch Kleintransporter mit, die ab Juli 2026 neu unter das EU-Mobilitätspaket fallen."
+    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen, warnt bei drohender Überschreitung der 10-Stunden-Grenze für Nachtfahrten und plant auch Kleintransporter mit, die ab Juli 2026 neu unter das EU-Mobilitätspaket fallen."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

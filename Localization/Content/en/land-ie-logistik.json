@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "For logistics &amp; transport in Ireland",
-    "titleHtml": "Routes, driving hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
-    "subtitle": "Klacks plans routes and drivers &mdash; keeping the absolute 60-hour weekly limit, the 48-hour average over the reference period, and correctly recorded Period of Availability (POA) under S.I. No. 2/2005 all in view. Routes are optimised automatically.",
+    "titleHtml": "Routes, working hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks plans routes and drivers &mdash; keeping the absolute 60-hour weekly limit, the 48-hour average over the reference period, and Period of Availability (POA) under S.I. No. 2/2005, recorded as its own absence type not counted as working time, all in view. Routes are optimised automatically.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for routes and driver assignments in Ireland",
     "screenshotLabel": "Timeline"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "How Klacks takes the load off logistics in Ireland",
-    "subtitle": "From optimised routes to correctly recorded POA &mdash; it all fits together.",
+    "subtitle": "From optimised routes to separately recorded POA &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Routes optimised automatically", "text": "Klacks sequences stops in the most sensible order &mdash; short journeys, time windows kept, fewer empty runs." },
       { "icon": "timer", "title": "60-hour and 48-hour limits monitored", "text": "Klacks checks both the absolute 60-hour weekly limit and the 48-hour average limit over the rolling 4-month reference period live, in line with S.I. No. 2/2005 &mdash; correctly factoring in each driver's start date &mdash; and warns before a limit is exceeded. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval." },
-      { "icon": "hourglass_top", "title": "POA recorded correctly", "text": "Klacks records Periods of Availability (POA) separately from working time and makes sure they are known to the worker in advance." },
+      { "icon": "hourglass_top", "title": "POA recorded separately", "text": "Klacks lets you record Periods of Availability (POA) as their own absence type not counted as working time, so they are visible in the roster and known to the worker in advance." },
       { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence &mdash; and warns before certificates expire. On request, Klacks can fully block assignment once a required document has expired &mdash; only drivers with a valid licence are scheduled." },
       { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure &mdash; route and driver data never leave your organisation, not even for the AI." },
-      { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Plan tomorrow's routes, driver Murphy is off sick\" is enough &mdash; Klacksy starts the replanning, and the planning engine also takes the configured POA status into account." }
+      { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Plan tomorrow's routes, driver Murphy is off sick\" is enough &mdash; Klacksy starts the replanning, and the planning engine takes the configured working-time limits into account." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Experience Klacks in your logistics business",
-    "text": "Try the Playground to see how Klacks handles routes, driving hours and POA &mdash; or install it directly on your own infrastructure. No license fees and without registration."
+    "text": "Try the Playground to see how Klacks optimises routes, monitors working-time limits and records POA as its own absence type &mdash; or install it directly on your own infrastructure. No license fees and without registration."
   }
 }

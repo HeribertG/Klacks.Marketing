@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks cho logistics | Tuyến đường, thời gian lái xe & xuyên biên giới",
+  "pageTitle": "Klacks cho logistics | Tuyến đường, thời gian làm việc & xuyên biên giới",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Dành cho logistics &amp; vận tải",
-    "titleHtml": "Tuyến đường, thời gian lái xe, lịch hẹn — <span class=\"text-secondary\">tất cả trong tầm kiểm soát.</span>",
-    "subtitle": "Klacks lập lịch tuyến đường và tài xế &mdash; với thời gian lái xe và nghỉ ngơi, hạng bằng lái phù hợp và ngày lễ xuyên biên giới. Tuyến đường được tối ưu tự động.",
+    "titleHtml": "Tuyến đường, thời gian làm việc, lịch hẹn — <span class=\"text-secondary\">tất cả trong tầm kiểm soát.</span>",
+    "subtitle": "Klacks lập lịch tuyến đường và tài xế &mdash; với giới hạn thời gian làm việc và nghỉ ngơi, hạng bằng lái phù hợp và ngày lễ xuyên biên giới. Tuyến đường được tối ưu tự động.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho tuyến đường và hoạt động của tài xế",
     "screenshotLabel": "Dòng thời gian",
@@ -24,17 +24,17 @@
     "subtitle": "Từ tuyến đường được tối ưu đến ngày lễ xuyên biên giới &mdash; tất cả đều ăn khớp với nhau.",
     "items": [
       { "icon": "route", "title": "Tuyến đường được tối ưu tự động", "text": "Klacks sắp xếp các điểm dừng theo thứ tự hợp lý nhất &mdash; quãng đường ngắn, khung giờ được tuân thủ, giảm chuyến chạy không tải." },
-      { "icon": "timer", "title": "Thời gian lái xe &amp; nghỉ ngơi được kiểm tra", "text": "Giới hạn theo luật định được giám sát theo thời gian thực &mdash; vi phạm sẽ không thể xảy ra ngay từ đầu." },
+      { "icon": "timer", "title": "Thời gian làm việc &amp; nghỉ ngơi được kiểm tra", "text": "Các giới hạn thời gian làm việc và nghỉ ngơi mà bạn thiết lập được giám sát theo thời gian thực &mdash; Klacks cảnh báo trước khi xảy ra vi phạm hoặc chặn vi phạm nếu bạn muốn. Thời gian lái xe thì bạn vẫn chứng minh qua dữ liệu máy ghi hành trình (tachograph)." },
       { "icon": "flag", "title": "Nhiều quốc gia &amp; lịch", "text": "Ngày lễ và quy tắc của nhiều quốc gia có thể được kết hợp &mdash; mỗi loại có tác động riêng đến giờ công và phụ cấp." },
       { "icon": "badge", "title": "Hạng bằng lái phù hợp", "text": "Klacks chỉ giao tuyến đường cho tài xế có hạng bằng lái phù hợp &mdash; và cảnh báo trước khi giấy tờ hết hạn." },
       { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Lập lịch tuyến đường cho ngày mai, tài xế Meier bị ốm” &mdash; Klacksy khởi chạy việc lập kế hoạch lại." },
-      { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu một tài xế vắng mặt, Klacks lập tức hiển thị ai đủ trình độ, đang rảnh và còn thời gian lái xe cho phép." }
+      { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu một tài xế vắng mặt, Klacks lập tức hiển thị ai đủ trình độ, đang rảnh và còn trong giới hạn thời gian làm việc đã thiết lập." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Trải nghiệm Klacks trong doanh nghiệp logistics của bạn",
-    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận việc quản lý tuyến đường, thời gian lái xe và tài xế như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
+    "text": "Hãy dùng thử trong Playground để xem Klacks lập kế hoạch tuyến đường, thời gian làm việc và tài xế như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
   }
 }

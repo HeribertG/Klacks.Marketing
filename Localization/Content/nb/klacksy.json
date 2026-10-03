@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacksy: KI-assistenten som lærer dine bedriftsregler | Klacks",
+  "pageTitle": "Klacksy: KI-assistenten du ganske enkelt forteller bedriftsreglene dine | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "For alle bransjer &middot; KI-assistent",
-    "titleHtml": "Klacksy: KI-assistenten <span class=\"text-secondary\">som lærer dine bedriftsregler.</span>",
+    "titleHtml": "Klacksy: KI-assistenten <span class=\"text-secondary\">du ganske enkelt forteller bedriftsreglene dine.</span>",
     "subtitle": "Ingen generisk KI fra hylla. Styr tonefall, autonomi og fagspråk for en vaktplan-assistent som følger reglene dine nøyaktig &mdash; regelbasert, sporbart, i dine hender.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksy KI-assistent i Klacks' vaktplanlegging",
@@ -24,15 +24,15 @@
     "subtitle": "Fire innstillinger du bruker for å gjøre Klacksy til din egen assistent.",
     "items": [
       { "icon": "tune", "title": "Bestem autonomien selv", "text": "Med fire justerbare nivåer bestemmer du per bruker hvor mye Klacksy får gjøre på egen hånd &mdash; fra rene forslag til selvstendige endringer. Sensitive handlinger krever alltid din bekreftelse." },
-      { "icon": "menu_book", "title": "Bedriftsregler, bare ved å si dem", "text": "Du beskriver en bedriftsregel direkte i chatten &mdash; for eksempel «nattillegg 25 % fra kl. 23» eller «maks 3 nattevakter per uke». Klacksy stiller målrettede oppfølgingsspørsmål til alle obligatoriske opplysninger er komplette og kontrollert, viser en forhåndsvisning av resultatet og lagrer først etter din uttrykkelige bekreftelse &mdash; alltid sporbart i regelregisteret, og reversibel." },
-      { "icon": "translate", "title": "Tren fagspråket", "text": "Klacksy lærer bedriftsspesifikke forkortelser og formuleringer, slik at forespørsler forstås riktig med én gang." },
+      { "icon": "menu_book", "title": "Bedriftsregler, bare ved å si dem", "text": "Du beskriver en bedriftsregel direkte i chatten &mdash; for eksempel «nattillegg 25 % fra kl. 23» eller «maks 3 nattevakter per uke». Klacksy stiller målrettede oppfølgingsspørsmål til alle obligatoriske opplysninger er komplette og kontrollert, viser en forhåndsvisning av resultatet og lagrer først etter din uttrykkelige bekreftelse &mdash; alltid tilgjengelig i chatten, og reversibel." },
+      { "icon": "translate", "title": "Legg inn egne begreper", "text": "I ordboken legger du inn bedriftsinterne begreper med variantene deres, slik at taleinndataene gjenkjenner dem riktig. Interne forkortelser kan Klacksy i tillegg huske som et notat." },
       { "icon": "face", "title": "Tilpass personligheten", "text": "Under Innstillinger finner du personlighetseditoren «Klacksy Personlighet»: der bestemmer du tonefallet og karakteren til Klacksy &mdash; tilpasset bedriftskulturen din." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "En hjemmetjeneste stiller inn Klacksy for teamet sitt",
-    "text": "Autonominivået står på «Foreslå»: Klacksy forbereder ruteforslag og sjekker automatisk fagkompetansen til de ansatte &mdash; den endelige avgjørelsen ligger alltid hos ledelsen. I tillegg er nattillegg-regelen lagt inn via chat, og Klacksy er trent på forkortelsene som brukes internt. Assistenten reagerer allerede i dag deretter &mdash; helt uten programmering."
+    "text": "Autonominivået står på «Foreslå»: Klacksy foreslår hvert steg først, og fagkompetansen til de ansatte kontrolleres av planleggingsmotoren &mdash; den endelige avgjørelsen ligger alltid hos ledelsen. I tillegg er nattillegg-regelen lagt inn via chat, og forkortelsene som brukes internt, er registrert som notat for Klacksy. Assistenten reagerer allerede i dag deretter &mdash; helt uten programmering."
   },
   "showRoutePlanning": false,
   "cta": {

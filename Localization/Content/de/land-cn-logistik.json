@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik China | 4-Stunden/20-Minuten-Regel gegen 疲劳驾驶",
+  "pageTitle": "Klacks für Logistik China | Touren & Arbeitszeitgrenzen",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in China",
-    "titleHtml": "Touren, die <span class=\"text-secondary\">die Lenkzeit im Blick behalten.</span>",
-    "subtitle": "Klacks überwacht ununterbrochene Lenkzeit und Pausenlänge nach der 4-Stunden/20-Minuten-Regel gegen Ermüdungsfahren (疲劳驾驶) &mdash; und hält Güterverkehr sauber von der neuen, nur für den Personentransport geltenden Regel ab 1.6.2026 getrennt.",
+    "titleHtml": "Touren, die <span class=\"text-secondary\">die Arbeitszeit im Blick behalten.</span>",
+    "subtitle": "Klacks plant Touren und prüft die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen &mdash; die ununterbrochene Lenkzeit und Pausenlänge nach der 4-Stunden/20-Minuten-Regel gegen Ermüdungsfahren (疲劳驾驶) werden außerhalb von Klacks nachgewiesen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in China",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in China entlastet",
-    "subtitle": "Von der automatisch getakteten Lenkzeit bis zur optimierten Tour &mdash; alles greift ineinander.",
+    "subtitle": "Von den geprüften Arbeitszeitgrenzen bis zur optimierten Tour &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "timer", "title": "4h/20min-Regel automatisch getaktet", "text": "Klacks überwacht ununterbrochene Lenkzeit und Pausenlänge in Echtzeit und warnt, bevor ein Verstoß entsteht." },
-      { "icon": "gavel", "title": "Strafpunkte im Blick", "text": "Klacks warnt, bevor eine Tour zu den 3 Strafpunkten je Verstoß bei Güterfahrzeugen führen würde &mdash; rechtzeitig für eine Korrektur vor der Freigabe." },
-      { "icon": "rule", "title": "Fracht und Personentransport sauber getrennt", "text": "Klacks wendet die richtige Regel an &mdash; die 4h/20min-Regel für Güterfahrzeuge, die neue 8h/24h-Regelung ab 1.6.2026 ausschließlich für den Personentransport." },
+      { "icon": "timer", "title": "Arbeits- &amp; Ruhezeitgrenzen geprüft", "text": "Klacks prüft die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, in Echtzeit und warnt, bevor ein Verstoß entsteht. Ununterbrochene Lenkzeit und Pausenlänge nach der 4h/20min-Regel prüft Klacks nicht &mdash; ihr Nachweis liegt außerhalb von Klacks." },
+      { "icon": "gavel", "title": "Verstöße vor der Freigabe sichtbar", "text": "Klacks warnt, bevor eine Tour eine hinterlegte Arbeits- oder Ruhezeitgrenze verletzt &mdash; rechtzeitig für eine Korrektur vor der Freigabe. Die 3 Strafpunkte je Verstoß bei Güterfahrzeugen hängen an der Lenkzeit und lassen sich so nicht ausschließen." },
+      { "icon": "rule", "title": "Lenkzeitregeln außerhalb von Klacks", "text": "Klacks wendet keine Lenkzeitregel an &mdash; weder die 4h/20min-Regel für Güterfahrzeuge noch die neue 8h/24h-Regelung ab 1.6.2026 für den Personentransport. Klacks prüft die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: Fahrer- und Kundendaten bleiben im Land", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personal- und Kundendaten verlassen China nicht &mdash; die CAC-Cross-Border-Prüfung nach PIPL entfällt." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Wang ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Lenkzeiten." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Wang ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Lange Tour, ein Plan",
-    "text": "Klacks erkennt, wenn sich ein Fahrer der 4-Stunden-Lenkzeitgrenze nähert, und warnt rechtzeitig, damit die vorgeschriebene 20-Minuten-Pause eingeplant wird &mdash; für Güterfahrzeuge nach der bewährten 4h/20min-Regel, nicht nach der erst 2026 für den Personentransport geltenden 8h/24h-Regelung."
+    "text": "Klacks erkennt, wenn sich ein Fahrer einer hinterlegten Tageshöchstarbeitszeit nähert, und warnt rechtzeitig &mdash; die 4-Stunden-Lenkzeitgrenze und die 20-Minuten-Pause nach der 4h/20min-Regel für Güterfahrzeuge prüft Klacks nicht."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb in China erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

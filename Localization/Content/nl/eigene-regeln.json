@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Uitgangspunt kiezen", "text": "Klacksy vraagt eerst: moet een branchetemplate als bewerkbaar startpunt worden gekopieerd &mdash; of begint u met een lege regel helemaal opnieuw?" },
       { "icon": "question_answer", "title": "Vraag voor vraag beantwoorden", "text": "Klacksy vraagt elke parameter afzonderlijk uit &mdash; werktijden, bovengrenzen, rusttijden, toeslagen &mdash; en legt bij elke vraag uit wat de waarde betekent en hoe deze de planning verandert. Open verplichte velden en reeds ingevoerde waarden zijn altijd zichtbaar." },
-      { "icon": "task_alt", "title": "Voorbeeld controleren, dan bevestigen", "text": "Voor het opslaan toont Klacksy het volledige regelwerk als voorbeeld. Pas na uw bevestiging wordt overgenomen &mdash; transactioneel, navolgbaar in het regelregister en terug te draaien." }
+      { "icon": "task_alt", "title": "Voorbeeld controleren, dan bevestigen", "text": "Voor het opslaan toont Klacksy het volledige regelwerk als voorbeeld. Pas na uw bevestiging wordt overgenomen &mdash; transactioneel, altijd op te vragen in de chat en terug te draaien." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Stel uw regels in",
-    "text": "Start de dialoog met Klacksy in de Playground &mdash; of installeer Klacks op uw eigen infrastructuur en definieer uw planningsregels in minuten in plaats van in consultantdagen."
+    "text": "Start de dialoog met Klacksy in de Playground &mdash; of installeer Klacks op uw eigen infrastructuur en definieer uw planningsregels in een dialoog in plaats van in consultantdagen."
   }
 }

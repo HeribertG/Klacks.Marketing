@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacks für Logistik in Frankreich | Touren, Lenkzeiten & CCN 16",
+  "pageTitle": "Klacks für Logistik in Frankreich | Touren, Zuschläge & CCN 16",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Frankreich",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
     "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Zuschlagsstaffeln der heures d'équivalence nach CCN 16 und Planungszeiten als Ergänzung zum Fahrtenschreiber-Nachweis. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Frankreich",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "timer",
-        "title": "Lenk- &amp; Ruhezeiten überwacht",
-        "text": "Gesetzliche Lenk- und Ruhezeiten werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; auf Wunsch blockiert Klacks sie hart, ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
+        "title": "Arbeits- &amp; Ruhezeiten überwacht",
+        "text": "Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; auf Wunsch blockiert Klacks sie hart, ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die Lenkzeit selbst prüft Klacks nicht; die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
       },
       {
         "icon": "badge",
@@ -62,7 +62,7 @@
       {
         "icon": "event_busy",
         "title": "Ausfälle schnell aufgefangen",
-        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und in der Lenkzeit ist."
+        "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der hinterlegten Arbeitszeitgrenzen ist."
       }
     ]
   },
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Zuschlagsstaffeln und Lenkzeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Zuschlagsstaffeln und Arbeitszeitgrenzen abbildet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

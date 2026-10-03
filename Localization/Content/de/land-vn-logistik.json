@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Logistik Vietnam | 4-Stunden-Lenkzeit ab Juli 2026",
+  "pageTitle": "Klacks für Logistik Vietnam | Arbeitszeit & Überstunden-Cap",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Vietnam",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der neuen 4-Stunden-Lenkzeitregel ab 1.7.2026 (Law No. 118/2025) und den Arbeitszeitgrenzen des Bộ luật Lao động 2019 automatisch berücksichtigt.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Arbeitszeitgrenzen des Bộ luật Lao động 2019 als hinterlegten Grenzen geprüft.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Vietnam",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Vietnam entlastet",
-    "subtitle": "Von der optimierten Tour bis zur neuen Lenkzeitregel &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zum Überstunden-Cap &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "4-Stunden-Lenkzeit &amp; Pflichtpause automatisch geplant", "text": "Klacks legt die kontinuierliche Lenkzeit und die 15-Minuten-Pflichtpause ab 1.7.2026 automatisch im Touren-/Dienstplan an, gemäß Law No. 118/2025." },
+      { "icon": "timer", "title": "Pausen als Block in der Tour", "text": "Pausen lassen sich als Block im Touren-/Dienstplan einplanen; ob die 15-Minuten-Pflichtpause nach 4 Stunden durchgehender Fahrt ab 1.7.2026 gemäß Law No. 118/2025 eingehalten ist, prüft Klacks nicht." },
       { "icon": "schedule", "title": "Arbeitszeit nach Arbeitsgesetzbuch geprüft", "text": "Klacks überwacht automatisch die 8h/10h-Tages- und die 48h-Wochengrenze &mdash; auch nach Wegfall des alten 10-Stunden-Lenkzeitdeckels." },
       { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) auch für Fahrer laufend mit. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Tour- und Fahrerdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Nguyễn ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Lenkzeiten." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Nguyễn ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "4-Stunden-Lenkzeit ab Juli 2026, ein Plan",
-    "text": "Klacks plant die neue 4-Stunden-Lenkzeitgrenze und die 15-Minuten-Pflichtpause ab 1.7.2026 automatisch mit und prüft gleichzeitig die Wochenarbeitszeit nach dem Arbeitsgesetzbuch &mdash; ohne Nachrechnen von Hand."
+    "title": "Arbeitszeit ab Juli 2026, ein Plan",
+    "text": "Klacks prüft die Wochenarbeitszeit nach dem Arbeitsgesetzbuch; Pausen lassen sich als Block einplanen &mdash; die neue 4-Stunden-Lenkzeitgrenze und die 15-Minuten-Pflichtpause ab 1.7.2026 prüft Klacks nicht."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

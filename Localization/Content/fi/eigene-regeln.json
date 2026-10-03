@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Valitkaa lähtötilanne", "text": "Klacksy kysyy ensin: kopioidaanko toimialamalli muokattavaksi lähtökohdaksi &mdash; vai aloitatteko tyhjästä säännöstä aivan alusta?" },
       { "icon": "question_answer", "title": "Vastatkaa kysymyksiin yksitellen", "text": "Klacksy kysyy jokaisen parametrin erikseen &mdash; työajat, enimmäisrajat, lepoajat, lisät &mdash; ja selittää jokaisen kysymyksen yhteydessä, mitä arvo tarkoittaa ja miten se muuttaa suunnittelua. Avoimet pakolliset kentät ja jo syötetyt arvot ovat näkyvissä koko ajan." },
-      { "icon": "task_alt", "title": "Tarkistakaa esikatselu ja vahvistakaa sitten", "text": "Ennen tallennusta Klacksy näyttää koko säännöstön esikatseluna. Käyttöönotto tapahtuu vasta vahvistuksenne jälkeen &mdash; transaktionaalisesti, jäljitettävästi sääntörekisterissä ja peruutettavissa." }
+      { "icon": "task_alt", "title": "Tarkistakaa esikatselu ja vahvistakaa sitten", "text": "Ennen tallennusta Klacksy näyttää koko säännöstön esikatseluna. Käyttöönotto tapahtuu vasta vahvistuksenne jälkeen &mdash; transaktionaalisesti, chatissa milloin tahansa haettavissa ja peruutettavissa." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Määrittäkää sääntönne",
-    "text": "Aloittakaa dialogi Klacksyn kanssa Playgroundissa &mdash; tai asentakaa Klacks omaan infrastruktuuriinne ja määrittäkää suunnittelusääntönne minuuteissa konsulttipäivien sijaan."
+    "text": "Aloittakaa dialogi Klacksyn kanssa Playgroundissa &mdash; tai asentakaa Klacks omaan infrastruktuuriinne ja määrittäkää suunnittelusääntönne vuoropuhelussa konsulttipäivien sijaan."
   }
 }

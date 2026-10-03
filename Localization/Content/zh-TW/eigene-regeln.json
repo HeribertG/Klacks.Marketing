@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "選擇起點", "text": "Klacksy 會先詢問：要複製一份行業範本作為可編輯的起點，還是從空白規則開始，一切從零建立？" },
       { "icon": "question_answer", "title": "逐一回答問題", "text": "Klacksy 會逐項詢問每個參數 &mdash; 工時、上限、休息時間、加給 &mdash; 並在每個問題中說明該數值的意義，以及它會如何改變排班結果。尚未填寫的必填欄位與已輸入的數值隨時清楚可見。" },
-      { "icon": "task_alt", "title": "檢查預覽，然後確認", "text": "儲存前，Klacksy 會以預覽方式顯示完整的規則內容。只有在您確認後才會套用 &mdash; 採交易式處理，可在規則登記冊中追溯，且可復原。" }
+      { "icon": "task_alt", "title": "檢查預覽，然後確認", "text": "儲存前，Klacksy 會以預覽方式顯示完整的規則內容。只有在您確認後才會套用 &mdash; 採交易式處理，可隨時在聊天中查閱，且可復原。" }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "立即設定您的規則",
-    "text": "在 Playground 中開始與 Klacksy 對話 &mdash; 或將 Klacks 安裝在您自己的基礎設施上，以分鐘而非顧問天數的時間定義您的排班規則。"
+    "text": "在 Playground 中開始與 Klacksy 對話 &mdash; 或將 Klacks 安裝在您自己的基礎設施上，透過對話而非耗費顧問天數來定義您的排班規則。"
   }
 }

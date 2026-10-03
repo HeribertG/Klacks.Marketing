@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks pour la logistique en Suisse | OTR 1, temps de conduite & camionnettes 2026",
+  "pageTitle": "Klacks pour la logistique en Suisse | OTR 1, temps de travail & camionnettes 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en Suisse",
-    "titleHtml": "Tournées, temps de conduite, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec la surveillance du temps de travail et des pauses selon l'OTR 1, l'obligation de justificatif sur 56 jours et la future obligation OTR pour les camionnettes en trafic transfrontalier.",
+    "titleHtml": "Tournées, temps de travail, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les limites de temps de travail et de repos que vous définissez selon l'OTR 1, des temps de travail documentés en complément de l'obligation de justificatif sur 56 jours et la future obligation OTR pour les camionnettes en trafic transfrontalier.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations de chauffeurs en Suisse",
     "screenshotLabel": "Chronologie"
@@ -41,18 +41,18 @@
       },
       {
         "icon": "timer",
-        "title": "Temps de travail &amp; pauses selon l'OTR 1 surveillés",
-        "text": "Klacks surveille en continu les limites de temps de travail et de pause, et alerte tôt avant d'atteindre les valeurs de l'OTR 1 &mdash; 9 heures de conduite, pause après 4,5 heures. Sur demande, Klacks bloque strictement tout dépassement &mdash; une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie."
+        "title": "Temps de travail &amp; de repos selon l'OTR 1 vérifiés",
+        "text": "Klacks vérifie en continu les limites de temps de travail et de repos que vous définissez selon l'OTR 1, et alerte tôt avant tout dépassement. Sur demande, Klacks bloque strictement tout dépassement &mdash; une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie. Klacks ne vérifie pas les 9 heures de conduite ni la pause après 4,5 heures &mdash; elles restent justifiées par les données du tachygraphe."
       },
       {
         "icon": "fact_check",
         "title": "Justificatif de 56 jours documenté",
-        "text": "Klacks conserve les temps de travail documentés pour la période prescrite de 56 jours."
+        "text": "Klacks conserve les temps de travail documentés pour la période prescrite de 56 jours &mdash; en complément des données du tachygraphe."
       },
       {
         "icon": "local_shipping",
         "title": "Prêt pour la nouvelle règle sur les camionnettes 2026",
-        "text": "Klacks planifie les tournées indépendamment du type de véhicule &mdash; la surveillance du temps de travail et des pauses s'applique aussi aux camionnettes qui seront nouvellement soumises à l'OTR en trafic transfrontalier dès mi-2026."
+        "text": "Klacks planifie les tournées indépendamment du type de véhicule &mdash; la vérification des limites de temps de travail et de repos s'applique aussi aux camionnettes qui seront nouvellement soumises à l'OTR en trafic transfrontalier dès mi-2026."
       },
       {
         "icon": "badge",
@@ -62,18 +62,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy comprend votre phrase",
-        "text": "« Planifie les tournées de demain, le chauffeur Meier est malade » suffit &mdash; Klacksy lance la replanification ; le moteur de planification tient aussi compte des limites de temps de travail et de pause."
+        "text": "« Planifie les tournées de demain, le chauffeur Meier est malade » suffit &mdash; Klacksy lance la replanification ; le moteur de planification tient compte des limites de temps de travail et de repos enregistrées."
       }
     ]
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Tournée transfrontalière, un seul planning",
-    "text": "Klacks surveille automatiquement les limites de temps de travail et de pause selon l'OTR 1, conserve les justificatifs pendant 56 jours et planifie aussi les camionnettes qui seront nouvellement soumises à l'OTR à l'avenir."
+    "text": "Klacks vérifie les limites de temps de travail et de repos enregistrées selon l'OTR 1, conserve les temps de travail documentés pendant 56 jours et planifie aussi les camionnettes qui seront nouvellement soumises à l'OTR à l'avenir."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de logistique",
-    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, les temps de conduite et les chauffeurs &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
+    "text": "Testez dans le Playground comment Klacks planifie les tournées, les temps de travail et les chauffeurs &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
   }
 }

@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks pentru logistică | Trasee, timpi de conducere & curse transfrontaliere",
+  "pageTitle": "Klacks pentru logistică | Trasee, timpi de lucru & curse transfrontaliere",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pentru logistică &amp; transport",
-    "titleHtml": "Trasee, timpi de conducere, termene — <span class=\"text-secondary\">totul sub control.</span>",
-    "subtitle": "Klacks planifică traseele și șoferii &mdash; cu timpi de conducere și de repaus, categoriile de permis potrivite și sărbătorile legale transfrontaliere. Traseele sunt optimizate automat.",
+    "titleHtml": "Trasee, timpi de lucru, termene — <span class=\"text-secondary\">totul sub control.</span>",
+    "subtitle": "Klacks planifică traseele și șoferii &mdash; cu limite de timp de lucru și de repaus, categoriile de permis potrivite și sărbătorile legale transfrontaliere. Traseele sunt optimizate automat.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru traseele și cursele șoferilor",
     "screenshotLabel": "Timeline",
@@ -24,17 +24,17 @@
     "subtitle": "De la traseul optimizat până la sărbătoarea legală transfrontalieră &mdash; totul se îmbină perfect.",
     "items": [
       { "icon": "route", "title": "Trasee optimizate automat", "text": "Klacks stabilește opririle în cea mai logică ordine &mdash; drumuri scurte, intervale orare respectate, mai puține curse în gol." },
-      { "icon": "timer", "title": "Timpi de conducere &amp; de repaus verificați", "text": "Limitele legale sunt monitorizate în timp real &mdash; încălcările nu mai apar deloc." },
+      { "icon": "timer", "title": "Timpi de lucru &amp; de repaus verificați", "text": "Limitele de timp de lucru și de repaus pe care le configurați sunt monitorizate în timp real &mdash; Klacks avertizează înaintea unei încălcări sau, la cerere, o blochează. Timpul de conducere în sine îl dovediți în continuare prin datele tahografului." },
       { "icon": "flag", "title": "Mai multe țări &amp; calendare", "text": "Sărbătorile legale și regulile mai multor țări pot fi combinate &mdash; fiecare cu propriul efect asupra orelor și sporurilor." },
       { "icon": "badge", "title": "Categoriile de permis potrivite", "text": "Klacks alocă traseele doar șoferilor cu autorizația potrivită &mdash; și avertizează înainte ca un document să expire." },
       { "icon": "smart_toy", "title": "Klacksy vă înțelege propoziția", "text": "„Planifică traseele pentru mâine, șoferul Meier este bolnav” este suficient &mdash; Klacksy pornește replanificarea." },
-      { "icon": "event_busy", "title": "Absențele, acoperite rapid", "text": "Dacă un șofer lipsește, Klacks arată imediat cine este calificat, disponibil și încă în limita timpului de conducere." }
+      { "icon": "event_busy", "title": "Absențele, acoperite rapid", "text": "Dacă un șofer lipsește, Klacks arată imediat cine este calificat, disponibil și în limitele de timp de lucru configurate." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Descoperiți Klacks în activitatea dumneavoastră de logistică",
-    "text": "Încercați în Playground cum preia Klacks traseele, timpii de conducere și șoferii &mdash; sau instalați-l direct pe propria dumneavoastră infrastructură. Fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum planifică Klacks traseele, timpii de lucru și șoferii &mdash; sau instalați-l direct pe propria dumneavoastră infrastructură. Fără taxe de licență și fără înregistrare."
   }
 }

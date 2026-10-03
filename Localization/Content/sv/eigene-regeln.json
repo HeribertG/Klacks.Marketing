@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Välj utgångsläge", "text": "Klacksy frågar först: Ska en branschmall kopieras som redigerbar utgångspunkt &mdash; eller börjar du med en tom regel helt från början?" },
       { "icon": "question_answer", "title": "Svara fråga för fråga", "text": "Klacksy frågar om varje parameter för sig &mdash; arbetstider, övre gränser, vilotider, tillägg &mdash; och förklarar vid varje fråga vad värdet betyder och hur det förändrar schemaläggningen. Öppna obligatoriska fält och redan inmatade värden är alltid synliga." },
-      { "icon": "task_alt", "title": "Granska förhandsvisningen och bekräfta", "text": "Innan lagring visar Klacksy hela regelverket som förhandsgranskning. Först efter din bekräftelse sparas det &mdash; transaktionsbaserat, spårbart i regelregistret och möjligt att ångra." }
+      { "icon": "task_alt", "title": "Granska förhandsvisningen och bekräfta", "text": "Innan lagring visar Klacksy hela regelverket som förhandsgranskning. Först efter din bekräftelse sparas det &mdash; transaktionsbaserat, alltid tillgängligt i chatten och möjligt att ångra." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Ställ in dina regler",
-    "text": "Starta dialogen med Klacksy i Playground &mdash; eller installera Klacks på din egen infrastruktur och definiera dina schemaläggningsregler på minuter i stället för konsultdagar."
+    "text": "Starta dialogen med Klacksy i Playground &mdash; eller installera Klacks på din egen infrastruktur och definiera dina schemaläggningsregler i dialog i stället för under konsultdagar."
   }
 }

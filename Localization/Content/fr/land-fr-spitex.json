@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile en France (Aide à domicile)",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec le temps de trajet comme temps de travail à part entière (CCN BAD), les kilomètres documentés comme base pour l'indemnité forfaitaire et l'amplitude sous surveillance. Installé chez vous, pour que les données des patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec le temps de trajet comme temps de travail à part entière (CCN BAD), les kilomètres documentés comme base pour l'indemnité forfaitaire et les dimanches de repos sous surveillance. Installé chez vous, pour que les données des patients ne quittent jamais vos murs.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile",
     "screenshotLabel": "Chronologie"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "event_available",
-        "title": "Amplitude &amp; repos dominical sous surveillance",
-        "text": "Klacks garde automatiquement à l'œil l'amplitude de 12 heures et les dimanches de repos obligatoires : les dimanches de repos sont surveillés dans une fenêtre glissante (au moins 2 dimanches de repos par mois), les services de nuit empiétant sur le dimanche étant correctement comptés comme occupés &mdash; Klacks rend visible tout dépassement avant que le planning ne soit finalisé, et le bloque strictement sur demande."
+        "title": "Repos dominical sous surveillance",
+        "text": "Klacks garde automatiquement à l'œil les dimanches de repos obligatoires : les dimanches de repos sont surveillés dans une fenêtre glissante (au moins 2 dimanches de repos par mois), les services de nuit empiétant sur le dimanche étant correctement comptés comme occupés &mdash; Klacks rend visible tout dépassement avant que le planning ne soit finalisé, et le bloque strictement sur demande."
       },
       {
         "icon": "shield_lock",

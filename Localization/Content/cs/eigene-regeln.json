@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Zvolte výchozí situaci", "text": "Klacksy se nejprve zeptá: Má se jako upravitelný výchozí bod zkopírovat oborová šablona &mdash; nebo začínáte s prázdným pravidlem úplně od nuly?" },
       { "icon": "question_answer", "title": "Odpovídejte otázku po otázce", "text": "Klacksy se ptá na každý parametr zvlášť &mdash; pracovní doba, horní limity, doby odpočinku, příplatky &mdash; a u každé otázky vysvětluje, co hodnota znamená a jak mění plánování. Nezodpovězená povinná pole a již zadané hodnoty jsou kdykoli viditelné." },
-      { "icon": "task_alt", "title": "Zkontrolujte náhled, pak potvrďte", "text": "Před uložením zobrazí Klacksy kompletní soubor pravidel jako náhled. Převzetí proběhne až po vašem potvrzení &mdash; transakčně, dohledatelně v registru pravidel a vratně." }
+      { "icon": "task_alt", "title": "Zkontrolujte náhled, pak potvrďte", "text": "Před uložením zobrazí Klacksy kompletní soubor pravidel jako náhled. Převzetí proběhne až po vašem potvrzení &mdash; transakčně, kdykoli dohledatelně v chatu a vratně." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Nastavte si svá pravidla",
-    "text": "Spusťte dialog s Klacksy v Playgroundu &mdash; nebo si nainstalujte Klacks na vlastní infrastrukturu a definujte svá plánovací pravidla během minut místo dnů s konzultanty."
+    "text": "Spusťte dialog s Klacksy v Playgroundu &mdash; nebo si nainstalujte Klacks na vlastní infrastrukturu a definujte svá plánovací pravidla v dialogu místo dnů s konzultanty."
   }
 }

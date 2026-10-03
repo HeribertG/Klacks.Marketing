@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für ambulante Pflege in Frankreich (Aide à domicile)",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Fahrzeiten als vollwertiger Arbeitszeit (CCN BAD), dokumentierten Kilometern als Basis für die Pauschale und der Amplitude im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Fahrzeiten als vollwertiger Arbeitszeit (CCN BAD), dokumentierten Kilometern als Basis für die Pauschale und den freien Sonntagen im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Aide à domicile",
     "screenshotLabel": "Timeline"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "event_available",
-        "title": "Amplitude &amp; Sonntagsruhe im Blick",
-        "text": "Die 12-Stunden-Amplitude und die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick: Die freien Sonntage werden im rollierenden Fenster überwacht (mindestens 2 freie Sonntage pro Monat), Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht, und blockiert sie auf Wunsch hart."
+        "title": "Sonntagsruhe im Blick",
+        "text": "Die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick: Die freien Sonntage werden im rollierenden Fenster überwacht (mindestens 2 freie Sonntage pro Monat), Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht, und blockiert sie auf Wunsch hart."
       },
       {
         "icon": "shield_lock",

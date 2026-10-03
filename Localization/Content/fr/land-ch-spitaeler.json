@@ -56,8 +56,8 @@
       },
       {
         "icon": "call",
-        "title": "Piquet correctement distingué",
-        "text": "Klacks enregistre différemment le piquet de présence sur place et le piquet à domicile &mdash; trajet compris en cas d'intervention depuis le domicile."
+        "title": "Piquet saisi séparément",
+        "text": "Klacks enregistre séparément le piquet de présence sur place et le piquet à domicile &mdash; sous forme de types de service ou d'absence propres et configurables."
       },
       {
         "icon": "verified",
@@ -72,7 +72,7 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy comprend votre phrase",
-        "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy tient compte de la qualification et de la durée maximale de travail."
+        "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy lance la planification, Klacks tient compte de la qualification et de la durée maximale de travail."
       },
       {
         "icon": "bedtime",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Rotation des médecins-assistant·e·s et piquet, un seul planning",
-    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, distingue automatiquement le piquet de présence du piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Klacks vérifie déjà automatiquement aujourd'hui les délais de publication avec préavis minimal (par exemple deux semaines) &mdash; dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
+    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, gère séparément le piquet de présence et le piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Klacks vérifie déjà automatiquement aujourd'hui les délais de publication avec préavis minimal (par exemple deux semaines) &mdash; dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
   },
   "showRoutePlanning": false,
   "cta": {

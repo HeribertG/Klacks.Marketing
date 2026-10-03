@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacksy: el asistente de IA que aprende sus normas internas | Klacks",
+  "pageTitle": "Klacksy: el asistente de IA al que simplemente le dice sus normas internas | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Para todos los sectores &middot; Asistente de IA",
-    "titleHtml": "Klacksy: el asistente de IA <span class=\"text-secondary\">que aprende sus normas internas.</span>",
+    "titleHtml": "Klacksy: el asistente de IA <span class=\"text-secondary\">al que simplemente le dice sus normas internas.</span>",
     "subtitle": "Nada de IA genérica de fábrica. Controle el tono, la autonomía y el vocabulario técnico de un asistente de planificación de turnos que sigue exactamente sus indicaciones &mdash; basado en reglas, trazable, en sus manos.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Asistente de IA Klacksy en la planificación de Klacks",
@@ -24,19 +24,19 @@
     "subtitle": "Cuatro ajustes con los que convierte a Klacksy en su propio asistente.",
     "items": [
       { "icon": "tune", "title": "Determine usted mismo la autonomía", "text": "Con cuatro niveles ajustables decide, por usuario, cuánto puede hacer Klacksy por su cuenta &mdash; desde simples propuestas hasta cambios autónomos. Las acciones sensibles siempre requieren su confirmación." },
-      { "icon": "menu_book", "title": "Normas internas, con solo decirlas", "text": "Describe una norma de la empresa directamente en el chat &mdash; por ejemplo, «recargo nocturno del 25 % a partir de las 23 h» o «máximo 3 turnos de noche por semana». Klacksy pregunta de forma específica hasta que todos los datos obligatorios estén completos y comprobados, muestra una vista previa del resultado y solo lo guarda tras su confirmación expresa &mdash; siempre visible en el registro de normas y reversible." },
-      { "icon": "translate", "title": "Entrene el vocabulario técnico", "text": "Klacksy aprende las abreviaturas y expresiones propias de su empresa, para que las solicitudes se entiendan correctamente desde el primer momento." },
+      { "icon": "menu_book", "title": "Normas internas, con solo decirlas", "text": "Describe una norma de la empresa directamente en el chat &mdash; por ejemplo, «recargo nocturno del 25 % a partir de las 23 h» o «máximo 3 turnos de noche por semana». Klacksy pregunta de forma específica hasta que todos los datos obligatorios estén completos y comprobados, muestra una vista previa del resultado y solo lo guarda tras su confirmación expresa &mdash; consultable en el chat en todo momento y reversible." },
+      { "icon": "translate", "title": "Registre sus propios términos", "text": "En el diccionario registra los términos internos de su empresa con sus variantes, para que el reconocimiento de voz los identifique correctamente. Además, Klacksy puede guardar como nota las abreviaturas propias de la empresa." },
       { "icon": "face", "title": "Adapte la personalidad", "text": "En Ajustes encontrará el editor de personalidad «Personalidad de Klacksy»: allí determina el tono y el carácter de Klacksy &mdash; acorde con la cultura de su empresa." }
     ]
   },
   "example": {
     "eyebrow": "En la práctica",
     "title": "Un servicio de atención domiciliaria configura Klacksy para su equipo",
-    "text": "El nivel de autonomía está en «Proponer»: Klacksy prepara propuestas de rutas y comprueba automáticamente las cualificaciones del personal &mdash; la decisión final siempre corresponde a la dirección. Además, se ha registrado la norma del recargo nocturno por chat y se ha entrenado a Klacksy con las abreviaturas habituales en la empresa. El asistente ya responde en consecuencia &mdash; sin necesidad de programar nada."
+    "text": "El nivel de autonomía está en «Proponer»: Klacksy propone primero cada paso y el motor de planificación comprueba las cualificaciones del personal &mdash; la decisión final siempre corresponde a la dirección. Además, se ha registrado la norma del recargo nocturno por chat y se han registrado como nota para Klacksy las abreviaturas habituales en la empresa. El asistente ya responde en consecuencia &mdash; sin necesidad de programar nada."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Vea Klacksy en acción",
-    "text": "Pruebe en el Playground cómo Klacksy aplica los niveles de autonomía, la personalidad y el vocabulario técnico &mdash; o instale Klacks directamente en su propia infraestructura. Sin cuotas de licencia y sin registro."
+    "text": "Pruebe en el Playground cómo Klacksy adopta los niveles de autonomía, la personalidad y el vocabulario técnico &mdash; o instale Klacks directamente en su propia infraestructura. Sin cuotas de licencia y sin registro."
   }
 }

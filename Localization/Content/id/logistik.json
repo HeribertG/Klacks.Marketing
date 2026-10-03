@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks untuk Logistik | Rute, Waktu Mengemudi & Lintas Negara",
+  "pageTitle": "Klacks untuk Logistik | Rute, Waktu Kerja & Lintas Negara",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Untuk Logistik &amp; Transportasi",
-    "titleHtml": "Rute, waktu mengemudi, tenggat waktu — <span class=\"text-secondary\">semua terkendali.</span>",
-    "subtitle": "Klacks menjadwalkan rute dan pengemudi &mdash; dengan waktu mengemudi dan istirahat, golongan SIM yang sesuai, serta hari libur lintas negara. Rute dioptimalkan secara otomatis.",
+    "titleHtml": "Rute, waktu kerja, tenggat waktu — <span class=\"text-secondary\">semua terkendali.</span>",
+    "subtitle": "Klacks menjadwalkan rute dan pengemudi &mdash; dengan batas waktu kerja dan istirahat, golongan SIM yang sesuai, serta hari libur lintas negara. Rute dioptimalkan secara otomatis.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan garis waktu (timeline) Klacks untuk rute dan penugasan pengemudi",
     "screenshotLabel": "Timeline",
@@ -24,17 +24,17 @@
     "subtitle": "Dari rute yang teroptimasi hingga hari libur lintas negara &mdash; semuanya saling terhubung.",
     "items": [
       { "icon": "route", "title": "Rute Dioptimalkan Secara Otomatis", "text": "Klacks menyusun titik pemberhentian dalam urutan paling masuk akal &mdash; jarak tempuh singkat, jendela waktu terpenuhi, perjalanan kosong berkurang." },
-      { "icon": "timer", "title": "Waktu Mengemudi &amp; Istirahat Diperiksa", "text": "Batas sesuai undang-undang dipantau secara real-time &mdash; pelanggaran pun tidak sempat terjadi." },
+      { "icon": "timer", "title": "Waktu Kerja &amp; Istirahat Diperiksa", "text": "Batas waktu kerja dan istirahat yang Anda tetapkan dipantau secara real-time &mdash; Klacks memberi peringatan sebelum terjadi pelanggaran atau memblokirnya atas permintaan. Waktu mengemudi itu sendiri tetap Anda buktikan melalui data tachograph." },
       { "icon": "flag", "title": "Beberapa Negara &amp; Kalender", "text": "Hari libur dan aturan dari berbagai negara dapat digabungkan &mdash; masing-masing dengan pengaruhnya sendiri terhadap jam kerja dan tunjangan." },
       { "icon": "badge", "title": "Golongan SIM yang Sesuai", "text": "Klacks hanya menugaskan rute kepada pengemudi dengan golongan SIM yang sesuai &mdash; dan memberi peringatan sebelum dokumen kedaluwarsa." },
       { "icon": "smart_toy", "title": "Klacksy Memahami Kalimat Anda", "text": "Cukup katakan, “Jadwalkan rute untuk besok, pengemudi Meier sedang sakit” &mdash; Klacksy memulai perencanaan ulang." },
-      { "icon": "event_busy", "title": "Ketidakhadiran Cepat Tertangani", "text": "Jika seorang pengemudi berhalangan, Klacks langsung menunjukkan siapa yang berkualifikasi, tersedia, dan masih dalam batas waktu mengemudi." }
+      { "icon": "event_busy", "title": "Ketidakhadiran Cepat Tertangani", "text": "Jika seorang pengemudi berhalangan, Klacks langsung menunjukkan siapa yang berkualifikasi, tersedia, dan masih dalam batas waktu kerja yang telah ditetapkan." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Rasakan Klacks di Perusahaan Logistik Anda",
-    "text": "Coba di Playground bagaimana Klacks mengambil alih rute, waktu mengemudi, dan pengemudi &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
+    "text": "Coba di Playground bagaimana Klacks merencanakan rute, waktu kerja, dan pengemudi &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
   }
 }

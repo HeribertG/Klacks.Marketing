@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Großbritannien",
-    "titleHtml": "Touren, Lenkzeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den GB Domestic Drivers' Hours Rules und der neuen Tachograph-Pflicht für Kleintransporter im grenzüberschreitenden Verkehr ab Juli 2026.",
+    "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der 11-Stunden-Dienstzeitgrenze der GB Domestic Drivers' Hours Rules als hinterlegter Arbeitszeitgrenze und Touren auch für Kleintransporter, die im grenzüberschreitenden Verkehr ab Juli 2026 neu tachopflichtig werden.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Großbritannien",
     "screenshotLabel": "Timeline"
@@ -23,21 +23,21 @@
     "subtitle": "Von der optimierten Tour bis zur neuen Tacho-Pflicht &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "GB Domestic Rules laufend überwacht", "text": "Die 10-Stunden-Lenkzeit- und 11-Stunden-Dienstzeitgrenze nach Transport Act 1968 macht Klacks bei jeder Tourenplanung sichtbar und warnt rechtzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "local_shipping", "title": "Bereit für die Kleintransporter-Tacho-Pflicht", "text": "Klacks unterscheidet reinen GB-Binnenverkehr von grenzüberschreitenden Kleintransporter-Touren, die ab Juli 2026 neu tachopflichtig werden." },
+      { "icon": "timer", "title": "11-Stunden-Dienstzeit laufend überwacht", "text": "Die 11-Stunden-Dienstzeitgrenze nach Transport Act 1968 hinterlegen Sie als Tageshöchstarbeitszeit; Klacks macht sie bei jeder Tourenplanung sichtbar und warnt rechtzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die 10-Stunden-Lenkzeit prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen." },
+      { "icon": "local_shipping", "title": "Binnen- und Grenzverkehr getrennt geführt", "text": "Reinen GB-Binnenverkehr und grenzüberschreitende Kleintransporter-Touren, die ab Juli 2026 neu tachopflichtig werden, führen Sie in Klacks in getrennten Gruppen &mdash; die Tacho-Pflicht selbst erfüllt der Fahrtenschreiber." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant werden kann nur, wer einen gültigen Führerschein hat." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Touren- und Fahrerdaten bleiben bei Ihnen, auch nicht zur KI." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Smith ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Lenkzeiten." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Smith ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Gemischte Flotte, ein Plan",
-    "text": "Klacks unterscheidet automatisch zwischen reinem GB-Binnenverkehr nach den GB Domestic Rules und grenzüberschreitenden Kleintransporter-Touren, die ab Juli 2026 neu tachopflichtig werden &mdash; ohne Nachrechnen von Hand."
+    "text": "Reinen GB-Binnenverkehr nach den GB Domestic Rules und grenzüberschreitende Kleintransporter-Touren, die ab Juli 2026 neu tachopflichtig werden, führen Sie in Klacks in getrennten Gruppen &mdash; Klacks prüft für beide die hinterlegten Arbeitszeitgrenzen, die Lenkzeit weist der Fahrtenschreiber nach."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Lenkzeiten und Fahrer übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Fahrer plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

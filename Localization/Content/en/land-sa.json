@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Without license fees &middot; PDPL/SDAIA Compliant",
     "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">monitors the 12-hour limit live.</span>",
-    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour presence limit (Art. 101), optionally with a hard block, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
+    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour daily limit (Art. 101), optionally with a hard block, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -66,13 +66,13 @@
       },
       {
         "icon": "nightlight",
-        "title": "Ramadan Hours Reduced Automatically",
-        "text": "For Muslim staff, Klacks automatically schedules with the reduced 6h/36h limit (Art. 98) during Ramadan &mdash; without manually reworking the entire plan."
+        "title": "Ramadan Hours Configurable as a Rule",
+        "text": "For Muslim staff, the reduced 6h/36h limit (Art. 98) for Ramadan can be configured as a separate rule &mdash; without manually reworking the entire plan."
       },
       {
         "icon": "timer_off",
         "title": "12-Hour Limit Monitored Live (Art. 101)",
-        "text": "Klacks monitors shift sequences live and warns immediately if a person would be kept at the workplace for more than 12 hours &mdash; including breaks, prayer and meal times. On request, Klacks enforces such violations as a hard block: in block mode, a new violation can only be saved with documented supervisor approval (configurable per rule type)."
+        "text": "Klacks checks the configured 12-hour daily limit live and warns immediately if a person would be scheduled for longer on a single day. On request, Klacks enforces such violations as a hard block: in block mode, a new violation can only be saved with documented supervisor approval (configurable per rule type)."
       },
       {
         "icon": "payments",
@@ -97,7 +97,7 @@
       {
         "icon": "science",
         "title": "Test Plan Changes Risk-Free",
-        "text": "Before a plan change goes live, you can run it through as an isolated copy &mdash; the 12-hour presence limit (Art. 101) and premiums are calculated live exactly as in the real plan. Only once everything checks out do you apply the variant; until then, your live schedule stays untouched. This lets you prepare a suitable scenario in advance for foreseeable situations &mdash; such as a staff member calling in sick or a sudden spike in orders &mdash; so you're ready to act immediately when it matters, instead of improvising under time pressure. There's no artificial limit on the number of scenarios &mdash; create as many as your planning needs."
+        "text": "Before a plan change goes live, you can run it through as an isolated copy &mdash; the 12-hour daily limit (Art. 101) and premiums are calculated live exactly as in the real plan. Only once everything checks out do you apply the variant; until then, your live schedule stays untouched. This lets you prepare a suitable scenario in advance for foreseeable situations &mdash; such as a staff member calling in sick or a sudden spike in orders &mdash; so you're ready to act immediately when it matters, instead of improvising under time pressure. There's no artificial limit on the number of scenarios &mdash; create as many as your planning needs."
       }
     ]
   },
@@ -111,7 +111,7 @@
   "example": {
     "eyebrow": "In Practice",
     "title": "Ramadan Shifts and the 12-Hour Limit, at a Glance",
-    "text": "Klacks automatically detects when a shift during Ramadan would exceed the reduced 6h/36h limit, or when a shift sequence would keep an employee at the workplace for more than 12 hours (Art. 101) &mdash; and suggests the correction right away."
+    "text": "Klacks automatically detects when a shift during Ramadan would exceed the configured reduced 6h/36h limit, or when an employee would be scheduled for more than 12 hours on a single day (Art. 101) &mdash; and warns before the plan is saved."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "smart_toy",
     "badge": "Für alle Branchen &middot; KI-Assistent",
     "titleHtml": "Klacksy: Der KI-Assistent, <span class=\"text-secondary\">dessen Grenzen Sie im Betrieb festlegen.</span>",
-    "subtitle": "Wer eine KI in die Dienstplanung holt, muss erklären können, was sie darf &mdash; spätestens gegenüber dem Betriebsrat. Klacksy macht das prüfbar: vier einstellbare Autonomie-Stufen, ein Regel-Register, in dem jede hinterlegte Vorgabe nachlesbar bleibt, und Bestätigungspflicht für sensible Aktionen.",
+    "subtitle": "Wer eine KI in die Dienstplanung holt, muss erklären können, was sie darf &mdash; spätestens gegenüber dem Betriebsrat. Klacksy macht das prüfbar: vier einstellbare Autonomie-Stufen, ein Regel-Register, das jede hinterlegte Vorgabe im Chat abrufbar hält, und Bestätigungspflicht für sensible Aktionen.",
     "screenshotFile": "app-klacksy-de.png",
     "screenshotAlt": "Klacksy KI-Assistent in der Klacks-Dienstplanung",
     "screenshotLabel": "Klacksy"
@@ -23,7 +23,7 @@
     "subtitle": "Vier Stellschrauben, die sich in einer Betriebsvereinbarung beschreiben lassen.",
     "items": [
       { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Die Stufe ist eine benennbare Einstellung, kein Versprechen: genau die Art Festlegung, die sich schriftlich vereinbaren lässt. Sensible Aktionen brauchen immer Ihre Bestätigung." },
-      { "icon": "menu_book", "title": "Regel-Register statt Blackbox", "text": "Sie beschreiben eine Firmenregel im Chat &mdash; etwa &bdquo;Nachtzuschlag 25 % ab 23 Uhr&ldquo; oder &bdquo;maximal 3 Nachtschichten pro Woche&ldquo;. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer ausdrücklichen Bestätigung. Jede Regel bleibt im Register nachlesbar und rückgängig machbar." },
+      { "icon": "menu_book", "title": "Regel-Register statt Blackbox", "text": "Sie beschreiben eine Firmenregel im Chat &mdash; etwa &bdquo;Nachtzuschlag 25 % ab 23 Uhr&ldquo; oder &bdquo;maximal 3 Nachtschichten pro Woche&ldquo;. Klacksy fragt nach, bis alle Pflichtangaben vollständig sind, zeigt eine Vorschau und speichert erst nach Ihrer ausdrücklichen Bestätigung. Jede Regel bleibt im Chat abrufbar und rückgängig machbar." },
       { "icon": "gavel", "title": "Die Ruhezeiten prüft das System, nicht die KI", "text": "Die Prüfung der Ruhezeiten nach Arbeitszeitgesetz läuft in Klacks selbst, nicht im Sprachmodell. Klacksy schlägt vor &mdash; die Grenzen zieht die Regelmaschine, unabhängig davon, welches KI-Modell Sie einsetzen." },
       { "icon": "dns", "title": "Lokales Modell möglich", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Für Betriebe, deren Datenschutzbeauftragter beim Stichwort Cloud-KI hellhörig wird, verlässt damit kein Personaldatensatz das Haus." }
     ]
@@ -31,7 +31,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Pflegedienst führt Klacksy mit dem Betriebsrat ein",
-    "text": "Vereinbart wird die Autonomie-Stufe &bdquo;Vorschlagen &amp; Nachfragen&ldquo;: Klacksy bereitet Tourenvorschläge vor und prüft dabei die Fachkraft-Qualifikationen &mdash; die Entscheidung bleibt bei der Leitung. Die Nachtzuschlag-Regel wird per Zuruf hinterlegt und ist im Regel-Register für beide Seiten nachlesbar. Was der Assistent darf, steht damit nicht in einer Produktbroschüre, sondern in einer Einstellung, die sich jederzeit prüfen lässt."
+    "text": "Vereinbart wird die Autonomie-Stufe &bdquo;Vorschlagen&ldquo;: Klacksy schlägt jeden Schritt zuerst vor, die Fachkraft-Qualifikationen prüft die Planungs-Engine &mdash; die Entscheidung bleibt bei der Leitung. Die Nachtzuschlag-Regel wird per Zuruf hinterlegt und bleibt für beide Seiten jederzeit im Chat abrufbar. Was der Assistent darf, steht damit nicht in einer Produktbroschüre, sondern in einer Einstellung, die sich jederzeit prüfen lässt."
   },
   "showRoutePlanning": false,
   "cta": {

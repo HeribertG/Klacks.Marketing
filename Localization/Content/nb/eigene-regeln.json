@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Velg utgangspunkt", "text": "Klacksy spør først: Skal en bransjemal kopieres som et redigerbart utgangspunkt &mdash; eller starter du med en tom regel helt fra bunnen?" },
       { "icon": "question_answer", "title": "Svar spørsmål for spørsmål", "text": "Klacksy spør om hver parameter enkeltvis &mdash; arbeidstider, øvre grenser, hvileperioder, tillegg &mdash; og forklarer ved hvert spørsmål hva verdien betyr og hvordan den endrer planleggingen. Åpne obligatoriske felt og allerede registrerte verdier er synlige til enhver tid." },
-      { "icon": "task_alt", "title": "Sjekk forhåndsvisningen, bekreft så", "text": "Før lagring viser Klacksy hele regelverket som forhåndsvisning. Det tas i bruk først etter din bekreftelse &mdash; transaksjonsbasert, sporbart i regelregisteret og kan gjøres om." }
+      { "icon": "task_alt", "title": "Sjekk forhåndsvisningen, bekreft så", "text": "Før lagring viser Klacksy hele regelverket som forhåndsvisning. Det tas i bruk først etter din bekreftelse &mdash; transaksjonsbasert, alltid tilgjengelig i chatten og kan gjøres om." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Sett opp reglene dine",
-    "text": "Start dialogen med Klacksy i Playground &mdash; eller installer Klacks på din egen infrastruktur og definer planleggingsreglene dine på minutter i stedet for konsulentdager."
+    "text": "Start dialogen med Klacksy i Playground &mdash; eller installer Klacks på din egen infrastruktur og definer planleggingsreglene dine i dialog i stedet for konsulentdager."
   }
 }

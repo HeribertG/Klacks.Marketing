@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacks pour la logistique en France | Tournées, temps de conduite & CCN 16",
+  "pageTitle": "Klacks pour la logistique en France | Tournées, majorations & CCN 16",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en France",
-    "titleHtml": "Tournées, temps de conduite, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
+    "titleHtml": "Tournées, temps de travail, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
     "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les échelles de majoration des heures d'équivalence selon la CCN 16, et des temps de planification en complément du justificatif du chronotachygraphe. Les itinéraires sont optimisés automatiquement.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations des chauffeurs en France",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "timer",
-        "title": "Temps de conduite &amp; de repos surveillés",
-        "text": "Les temps de conduite et de repos légaux sont surveillés, Klacks rend visible tout dépassement &mdash; sur demande, Klacks les bloque strictement : toute nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée du responsable hiérarchique. Les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
+        "title": "Temps de travail &amp; de repos surveillés",
+        "text": "Les limites de temps de travail et de repos que vous définissez sont surveillées, Klacks rend visible tout dépassement &mdash; sur demande, Klacks les bloque strictement : toute nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée du responsable hiérarchique. Klacks ne vérifie pas le temps de conduite lui-même ; les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
       },
       {
         "icon": "badge",
@@ -62,7 +62,7 @@
       {
         "icon": "event_busy",
         "title": "Absences compensées rapidement",
-        "text": "Si un chauffeur est absent, Klacks indique immédiatement qui est qualifié, disponible et dans les temps de conduite autorisés."
+        "text": "Si un chauffeur est absent, Klacks indique immédiatement qui est qualifié, disponible et dans les limites de temps de travail définies."
       }
     ]
   },
@@ -70,6 +70,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre entreprise de logistique",
-    "text": "Testez dans le Playground comment Klacks prend en charge les tournées, les échelles de majoration et les temps de conduite &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
+    "text": "Testez dans le Playground comment Klacks représente les tournées, les échelles de majoration et les limites de temps de travail &mdash; ou installez-le directement sur votre propre infrastructure. Sans frais de licence et sans inscription."
   }
 }

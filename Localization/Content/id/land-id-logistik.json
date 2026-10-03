@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Klacks untuk Logistik Indonesia | Waktu Mengemudi sesuai UU 22/2009 (LLAJ)",
+  "pageTitle": "Klacks untuk Logistik Indonesia | Waktu Kerja sesuai UU 22/2009 (LLAJ)",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Untuk Logistik &amp; Transportasi di Indonesia",
-    "titleHtml": "Rute, waktu mengemudi, istirahat &mdash; <span class=\"text-secondary\">semuanya terkendali.</span>",
-    "subtitle": "Klacks merencanakan rute dan shift para pengemudi Anda &mdash; dengan batas waktu mengemudi 8 jam dan kewajiban istirahat 30 menit sesuai UU 22/2009 (LLAJ) yang diperhitungkan secara otomatis.",
+    "titleHtml": "Rute, waktu kerja, jadwal &mdash; <span class=\"text-secondary\">semuanya terkendali.</span>",
+    "subtitle": "Klacks merencanakan rute dan shift para pengemudi Anda &mdash; dengan batas waktu kerja 8 jam sesuai UU 22/2009 (LLAJ) yang diperiksa sebagai batas jam kerja harian yang telah ditetapkan.",
     "screenshotFile": "app-timeline-de.png",
-    "screenshotAlt": "Tampilan Timeline Klacks untuk rute dan waktu mengemudi di sektor logistik Indonesia",
+    "screenshotAlt": "Tampilan Timeline Klacks untuk rute dan waktu kerja di sektor logistik Indonesia",
     "screenshotLabel": "Timeline"
   },
   "challenges": {
@@ -27,7 +27,7 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban logistik Indonesia",
-    "subtitle": "Dari rute yang dioptimalkan hingga waktu mengemudi yang terpenuhi &mdash; semuanya saling terhubung.",
+    "subtitle": "Dari rute yang dioptimalkan hingga batas jam kerja harian yang diperiksa &mdash; semuanya saling terhubung.",
     "items": [
       {
         "icon": "route",
@@ -36,13 +36,13 @@
       },
       {
         "icon": "timer",
-        "title": "Batas waktu mengemudi 8 jam dipantau",
-        "text": "Klacks memantau batas waktu mengemudi harian dari UU 22/2009 Pasal 90 secara otomatis dan memberi peringatan sebelum sebuah rute melampaui batas yang diatur undang-undang. Atas permintaan, Klacks memblokir pelanggaran ini secara ketat &mdash; pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi."
+        "title": "Batas waktu kerja 8 jam dipantau",
+        "text": "Klacks memeriksa batas jam kerja harian 8 jam dari UU 22/2009 Pasal 90 yang Anda tetapkan, dan memberi peringatan sebelum sebuah rute melampaui batas yang diatur undang-undang. Atas permintaan, Klacks memblokir pelanggaran ini secara ketat &mdash; pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi."
       },
       {
         "icon": "pause_circle",
-        "title": "Istirahat 30 menit terjadwal otomatis",
-        "text": "Istirahat wajib setelah 4 jam mengemudi tanpa henti otomatis direncanakan untuk setiap rute."
+        "title": "Istirahat sebagai blok dalam rute",
+        "text": "Istirahat dapat dijadwalkan sebagai blok tetap atau yang dapat digeser dalam rute; apakah istirahat wajib setelah 4 jam mengemudi tanpa henti terpenuhi, tidak diperiksa oleh Klacks."
       },
       {
         "icon": "badge",
@@ -57,18 +57,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy memahami kalimat Anda",
-        "text": "“Rencanakan rute untuk besok, satu pengemudi berhalangan” saja sudah cukup &mdash; Klacksy memulai perencanaan ulang, dan mesin perencanaan turut memperhitungkan waktu mengemudi dan istirahat."
+        "text": "“Rencanakan rute untuk besok, satu pengemudi berhalangan” saja sudah cukup &mdash; Klacksy memulai perencanaan ulang, dan mesin perencanaan turut memperhitungkan batas jam kerja harian yang telah ditetapkan."
       }
     ]
   },
   "example": {
     "eyebrow": "Contoh Konkret",
     "title": "Rute panjang, satu rencana",
-    "text": "Klacks mengenali saat sebuah rute mencapai batas 4 jam mengemudi, otomatis merencanakan istirahat wajib, dan tetap memantau batas 8 jam per hari &mdash; tanpa perlu menghitung ulang secara manual."
+    "text": "Klacks tetap memantau batas waktu kerja 8 jam per hari dan memberi peringatan sebelum batas itu terlampaui; istirahat wajib setelah 4 jam mengemudi dapat dijadwalkan sebagai blok dalam rute, tetapi tidak diperiksa terhadap kewajiban istirahat."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Rasakan Klacks di perusahaan logistik Anda",
-    "text": "Coba di Playground bagaimana Klacks menangani rute, waktu mengemudi, dan istirahat &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
+    "text": "Coba di Playground bagaimana Klacks merencanakan rute dan waktu kerja &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
   }
 }

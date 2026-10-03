@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks per la portineria & i servizi di pulizia in Svizzera | CCL pulizia Svizzera tedesca & pause negli split-shift",
+  "pageTitle": "Klacks per la portineria & i servizi di pulizia in Svizzera | CCL pulizia Svizzera tedesca & turni split",
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Per la portineria &amp; la pulizia in Svizzera",
     "titleHtml": "Ogni sito <span class=\"text-secondary\">impeccabilmente pianificato.</span>",
-    "subtitle": "Klacks organizza siti, percorsi e turni split in modo efficiente &mdash; con la settimana di 42 ore del CCL pulizia (Svizzera tedesca) e le regole legali sulle pause considerate automaticamente.",
+    "subtitle": "Klacks organizza siti, percorsi e turni split in modo efficiente &mdash; con la settimana di 42 ore del CCL pulizia (Svizzera tedesca) considerata automaticamente.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Griglia del piano dei turni di Klacks per i team di pulizia e i siti svizzeri",
     "screenshotLabel": "Piano dei turni"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Come Klacks alleggerisce i servizi di pulizia svizzeri",
-    "subtitle": "Dal percorso ottimizzato alla corretta regolamentazione delle pause &mdash; tutto si incastra alla perfezione.",
+    "subtitle": "Dal percorso ottimizzato al corretto orario di lavoro settimanale &mdash; tutto si incastra alla perfezione.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "pause_circle",
-        "title": "Pause negli split-shift pianificate",
-        "text": "Per gli interventi divisi a partire da 5,5 ore di lavoro, Klacks pianifica automaticamente anche la pausa prevista dalla legge."
+        "title": "Pause come blocco nel percorso",
+        "text": "Per gli interventi divisi a partire da 5,5 ore di lavoro, la pausa prevista dalla legge può essere inserita nel percorso come blocco fisso o spostabile; l'obbligo di pausa in sé Klacks non lo verifica."
       },
       {
         "icon": "groups",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Split-shift, pausa, un unico piano",
-    "text": "Klacks riconosce automaticamente gli interventi divisi e pianifica subito anche la pausa legale a partire da 5,5 ore di lavoro &mdash; senza calcoli manuali."
+    "text": "Klacks pianifica i siti come percorso; la pausa legale a partire da 5,5 ore di lavoro la inserisce direttamente come blocco fisso o spostabile."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Provi Klacks nella Sua azienda di pulizia",
-    "text": "Provi nel Playground come Klacks gestisce percorsi, team e regole sulle pause &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
+    "text": "Provi nel Playground come Klacks gestisce percorsi, team e blocchi di pausa &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
   }
 }

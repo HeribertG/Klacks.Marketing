@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (penjaga) in Malaysia",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und behält die 10-Stunden-Spanne vom ersten Einsatz bis zum Feierabend im Blick, wie sie der Employment Act 1955 für geteilte Schichten vorschreibt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und prüft dabei die von Ihnen hinterlegte Tageshöchstarbeitszeit. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Malaysia",
     "screenshotLabel": "Timeline"
@@ -23,7 +23,7 @@
     "subtitle": "Von der automatischen Tour bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Motorrad oder zu Fuß." },
-      { "icon": "schedule", "title": "Spread-over automatisch überwacht", "text": "Klacks behält die 10-Stunden-Spanne zwischen erstem Einsatz und letztem Feierabend (Section 60A(1)) im Blick und markiert den Überhang automatisch als Überstunde." },
+      { "icon": "schedule", "title": "Tageshöchstarbeitszeit überwacht", "text": "Klacks prüft die von Ihnen hinterlegte Tageshöchstarbeitszeit und markiert den Überhang automatisch als Überstunde; die 10-Stunden-Spanne zwischen erstem Einsatz und letztem Feierabend (Section 60A(1)) selbst prüft Klacks nicht." },
       { "icon": "paid", "title": "Gestufte Zuschläge automatisch berechnet", "text": "Überstunden-, Ruhetags- und Feiertagszuschläge (1,5x/2,0x/3,0x) werden automatisch getrennt berechnet &mdash; inklusive der RM-4.000-Lohnschwelle." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und Planungsdaten verlassen Ihr Haus nicht." },
@@ -32,12 +32,12 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Spread-over und Zuschlag, ein Plan",
-    "text": "Klacks erkennt automatisch, wenn die 10-Stunden-Spanne zwischen erstem Einsatz und Feierabend überschritten wird, und ordnet den Überhang gleich der passenden Zuschlagsstufe zu &mdash; ohne Nachrechnen von Hand."
+    "title": "Tageshöchstzeit und Zuschlag, ein Plan",
+    "text": "Klacks erkennt automatisch, wenn die hinterlegte Tageshöchstarbeitszeit überschritten wird, und ordnet den Überhang gleich der passenden Zuschlagsstufe zu &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer häuslichen Pflege erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Spread-over und Zuschläge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeitgrenzen und Zuschläge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -1,9 +1,9 @@
 {
-  "pageTitle": "Klacksy: tekoälyavustaja, joka oppii yrityksenne säännöt | Klacks",
+  "pageTitle": "Klacksy: tekoälyavustaja, jolle yksinkertaisesti kerrotte yrityksenne säännöt | Klacks",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Kaikille toimialoille &middot; Tekoälyavustaja",
-    "titleHtml": "Klacksy: tekoälyavustaja, <span class=\"text-secondary\">joka oppii yrityksenne säännöt.</span>",
+    "titleHtml": "Klacksy: tekoälyavustaja, <span class=\"text-secondary\">jolle yksinkertaisesti kerrotte yrityksenne säännöt.</span>",
     "subtitle": "Ei tavallista vakiotekoälyä. Hallitkaa sävyä, autonomiaa ja ammattisanastoa vuorosuunnitteluavustajalle, joka noudattaa tarkasti ohjeitanne &mdash; sääntöpohjaisesti, jäljitettävästi, omissa käsissänne.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksy-tekoälyavustaja Klacksin vuorosuunnittelussa",
@@ -24,15 +24,15 @@
     "subtitle": "Neljä säädintä, joilla teette Klacksysta oman avustajanne.",
     "items": [
       { "icon": "tune", "title": "Määrittäkää autonomia itse", "text": "Neljällä säädettävällä tasolla päätätte käyttäjäkohtaisesti, kuinka paljon Klacksy saa tehdä itsenäisesti &mdash; pelkistä ehdotuksista itsenäisiin muutoksiin asti. Arkaluonteiset toimet vaativat aina teidän vahvistuksenne." },
-      { "icon": "menu_book", "title": "Yrityssäännöt vain kertomalla", "text": "Kuvailette yrityksen säännön suoraan chatissa &mdash; esimerkiksi ”yölisä 25 % klo 23 alkaen” tai ”enintään 3 yövuoroa viikossa”. Klacksy kysyy tarkentavia kysymyksiä, kunnes kaikki pakolliset tiedot ovat täydellisiä ja tarkistettuja, näyttää esikatselun lopputuloksesta ja tallentaa vasta nimenomaisen vahvistuksenne jälkeen &mdash; aina jäljitettävissä sääntörekisterissä ja peruutettavissa." },
-      { "icon": "translate", "title": "Kouluttakaa ammattisanasto", "text": "Klacksy oppii yrityksenne omat lyhenteet ja ilmaisut, jotta pyynnöt ymmärretään heti oikein." },
+      { "icon": "menu_book", "title": "Yrityssäännöt vain kertomalla", "text": "Kuvailette yrityksen säännön suoraan chatissa &mdash; esimerkiksi ”yölisä 25 % klo 23 alkaen” tai ”enintään 3 yövuoroa viikossa”. Klacksy kysyy tarkentavia kysymyksiä, kunnes kaikki pakolliset tiedot ovat täydellisiä ja tarkistettuja, näyttää esikatselun lopputuloksesta ja tallentaa vasta nimenomaisen vahvistuksenne jälkeen &mdash; aina haettavissa chatissa ja peruutettavissa." },
+      { "icon": "translate", "title": "Tallentakaa omat termit", "text": "Sanastoon tallennatte yrityksen sisäiset termit muunnelmineen, jotta puheentunnistus tunnistaa ne oikein. Talon sisäiset lyhenteet Klacksy voi lisäksi muistaa muistiinpanona." },
       { "icon": "face", "title": "Muokatkaa persoonallisuutta", "text": "Asetuksista löytyy persoonallisuuseditori ”Klacksyn persoonallisuus”: siellä määritätte Klacksyn sävyn ja luonteen &mdash; yrityskulttuurinne mukaisesti." }
     ]
   },
   "example": {
     "eyebrow": "Käytännössä",
     "title": "Kotihoidon yksikkö säätää Klacksyn tiimilleen",
-    "text": "Autonomiataso on asetettu tilaan ”Ehdota”: Klacksy valmistelee reittiehdotuksia ja tarkistaa samalla automaattisesti hoitajien pätevyydet &mdash; lopullinen päätös on aina esimiehellä. Lisäksi yölisäsääntö on kirjattu chatin kautta, ja Klacksy on koulutettu talossa käytettyihin lyhenteisiin. Avustaja reagoi jo tänään sen mukaisesti &mdash; täysin ilman ohjelmointia."
+    "text": "Autonomiataso on asetettu tilaan ”Ehdota”: Klacksy ehdottaa jokaista vaihetta ensin, hoitajien pätevyydet tarkistaa suunnittelumoottori &mdash; lopullinen päätös on aina esimiehellä. Lisäksi yölisäsääntö on kirjattu chatin kautta, ja talossa käytetyt lyhenteet on kirjattu muistiinpanoksi Klacksylle. Avustaja reagoi jo tänään sen mukaisesti &mdash; täysin ilman ohjelmointia."
   },
   "showRoutePlanning": false,
   "cta": {

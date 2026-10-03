@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Ausgangslage wählen", "text": "Klacksy fragt zuerst: Soll eine Branchen-Vorlage als bearbeitbarer Startpunkt kopiert werden &mdash; oder starten Sie mit einer leeren Regel ganz von vorne?" },
       { "icon": "question_answer", "title": "Frage für Frage beantworten", "text": "Klacksy fragt jeden Parameter einzeln ab &mdash; Arbeitszeiten, Obergrenzen, Ruhezeiten, Zuschläge &mdash; und erklärt bei jeder Frage, was der Wert bedeutet und wie er die Planung verändert. Offene Pflichtfelder und bereits erfasste Werte sind jederzeit sichtbar." },
-      { "icon": "task_alt", "title": "Vorschau prüfen, dann bestätigen", "text": "Vor dem Speichern zeigt Klacksy das vollständige Regelwerk als Vorschau. Erst nach Ihrer Bestätigung wird übernommen &mdash; transaktional, nachvollziehbar im Regel-Register und rückgängig machbar." }
+      { "icon": "task_alt", "title": "Vorschau prüfen, dann bestätigen", "text": "Vor dem Speichern zeigt Klacksy das vollständige Regelwerk als Vorschau. Erst nach Ihrer Bestätigung wird übernommen &mdash; transaktional, im Chat jederzeit abrufbar und rückgängig machbar." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Richten Sie Ihre Regeln ein",
-    "text": "Starten Sie den Dialog mit Klacksy im Playground &mdash; oder installieren Sie Klacks auf Ihrer eigenen Infrastruktur und definieren Sie Ihre Planungsregeln in Minuten statt in Beratertagen."
+    "text": "Starten Sie den Dialog mit Klacksy im Playground &mdash; oder installieren Sie Klacks auf Ihrer eigenen Infrastruktur und definieren Sie Ihre Planungsregeln im Dialog statt in Beratertagen."
   }
 }

@@ -24,7 +24,7 @@
     "items": [
       { "icon": "playlist_add", "title": "Elegir el punto de partida", "text": "Klacksy pregunta primero: ¿desea copiar una plantilla sectorial como punto de partida editable &mdash; o empezar desde cero con una norma vacía?" },
       { "icon": "question_answer", "title": "Responder pregunta a pregunta", "text": "Klacksy consulta cada parámetro individualmente &mdash; horarios de trabajo, límites máximos, tiempos de descanso, recargos &mdash; y explica en cada pregunta qué significa el valor y cómo modifica la planificación. Los campos obligatorios pendientes y los valores ya registrados están visibles en todo momento." },
-      { "icon": "task_alt", "title": "Revisar la vista previa y confirmar", "text": "Antes de guardar, Klacksy muestra el conjunto completo de normas como vista previa. Solo tras su confirmación se aplican &mdash; de forma transaccional, trazable en el registro de normas y reversible." }
+      { "icon": "task_alt", "title": "Revisar la vista previa y confirmar", "text": "Antes de guardar, Klacksy muestra el conjunto completo de normas como vista previa. Solo tras su confirmación se aplican &mdash; de forma transaccional, consultable en el chat en todo momento y reversible." }
     ]
   },
   "solutions": {
@@ -47,6 +47,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Configure sus normas",
-    "text": "Inicie el diálogo con Klacksy en el Playground &mdash; o instale Klacks en su propia infraestructura y defina sus normas de planificación en minutos en lugar de días de consultoría."
+    "text": "Inicie el diálogo con Klacksy en el Playground &mdash; o instale Klacks en su propia infraestructura y defina sus normas de planificación mediante el diálogo en lugar de días de consultoría."
   }
 }

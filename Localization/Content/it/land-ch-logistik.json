@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks per la logistica in Svizzera | OLR 1, tempi di guida & furgoni 2026",
+  "pageTitle": "Klacks per la logistica in Svizzera | OLR 1, orari di lavoro & furgoni 2026",
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Per la logistica &amp; il trasporto in Svizzera",
-    "titleHtml": "Giri, tempi di guida, scadenze &mdash; <span class=\"text-secondary\">tutto sotto controllo.</span>",
-    "subtitle": "Klacks pianifica giri e autisti &mdash; con la sorveglianza dell'orario di lavoro e delle pause secondo l'OLR 1, l'obbligo di documentazione per 56 giorni e il futuro obbligo OLR per i furgoni nel traffico transfrontaliero.",
+    "titleHtml": "Giri, orari di lavoro, scadenze &mdash; <span class=\"text-secondary\">tutto sotto controllo.</span>",
+    "subtitle": "Klacks pianifica giri e autisti &mdash; con i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1, gli orari di lavoro documentati a integrazione dell'obbligo di documentazione per 56 giorni e il futuro obbligo OLR per i furgoni nel traffico transfrontaliero.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per giri e interventi degli autisti in Svizzera",
     "screenshotLabel": "Timeline"
@@ -41,18 +41,18 @@
       },
       {
         "icon": "timer",
-        "title": "Orario di lavoro &amp; pause secondo l'OLR 1 sorvegliati",
-        "text": "Klacks sorveglia costantemente i limiti di orario di lavoro e di pausa e avverte per tempo, prima che vengano raggiunti i valori dell'OLR 1 &mdash; 9 ore di guida, pausa dopo 4,5 ore. Su richiesta, Klacks blocca rigidamente il superamento &mdash; una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore."
+        "title": "Tempi di lavoro &amp; di riposo secondo l'OLR 1 verificati",
+        "text": "Klacks verifica costantemente i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1 e avverte per tempo prima di un superamento. Su richiesta, Klacks blocca rigidamente il superamento &mdash; una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore. Le 9 ore di guida e la pausa dopo 4,5 ore Klacks non le verifica &mdash; continuano a essere documentate tramite i dati del tachigrafo."
       },
       {
         "icon": "fact_check",
         "title": "Documentazione dei 56 giorni tenuta aggiornata",
-        "text": "Klacks tiene pronti gli orari di lavoro documentati per il periodo prescritto di 56 giorni."
+        "text": "Klacks tiene pronti gli orari di lavoro documentati per il periodo prescritto di 56 giorni &mdash; a integrazione dei dati del tachigrafo."
       },
       {
         "icon": "local_shipping",
         "title": "Pronti per la nuova regola sui furgoni 2026",
-        "text": "Klacks pianifica i giri indipendentemente dal tipo di veicolo &mdash; la sorveglianza dell'orario di lavoro e delle pause si applica anche ai furgoni che, dalla metà del 2026, saranno soggetti all'OLR nel traffico transfrontaliero."
+        "text": "Klacks pianifica i giri indipendentemente dal tipo di veicolo &mdash; la verifica dei limiti di orario di lavoro e di riposo si applica anche ai furgoni che, dalla metà del 2026, saranno soggetti all'OLR nel traffico transfrontaliero."
       },
       {
         "icon": "badge",
@@ -62,18 +62,18 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy capisce la Sua frase",
-        "text": "Basta dire «Pianifica i giri di domani, l'autista Meier è malato» &mdash; Klacksy avvia la ripianificazione, il motore di pianificazione tiene conto anche dei limiti di orario di lavoro e di pausa."
+        "text": "Basta dire «Pianifica i giri di domani, l'autista Meier è malato» &mdash; Klacksy avvia la ripianificazione, il motore di pianificazione tiene conto dei limiti di orario di lavoro e di riposo impostati."
       }
     ]
   },
   "example": {
     "eyebrow": "Concretamente",
     "title": "Giro transfrontaliero, un unico piano",
-    "text": "Klacks sorveglia automaticamente i limiti di orario di lavoro e di pausa secondo l'OLR 1, tiene pronta la documentazione per 56 giorni e pianifica anche i furgoni che in futuro saranno soggetti all'OLR."
+    "text": "Klacks verifica i limiti impostati di orario di lavoro e di riposo secondo l'OLR 1, tiene pronti gli orari di lavoro documentati per 56 giorni e pianifica anche i furgoni che in futuro saranno soggetti all'OLR."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Provi Klacks nella Sua azienda di logistica",
-    "text": "Provi nel Playground come Klacks gestisce giri, tempi di guida e autisti &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
+    "text": "Provi nel Playground come Klacks pianifica giri, orari di lavoro e autisti &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
   }
 }
