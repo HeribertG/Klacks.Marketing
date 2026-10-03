@@ -63,6 +63,10 @@ public static class SitemapGenerator
     // rather than hand-listed.
     private static readonly string[] CompanyWideSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", "kleine-betriebe", "ueber-uns" };
 
+    // Company-wide pages like the ones above, but written per culture (a content file per culture): only the
+    // cultures that have their own text are listed, matching their IndexTranslatedOnly noindex rule.
+    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug };
+
     private const string InstallationSlug = "installation";
 
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
@@ -94,6 +98,16 @@ public static class SitemapGenerator
             foreach (var culture in SupportedCultures.All)
             {
                 AppendUrl(sb, trimmedBase, culture, target => $"{LanguageCountries.DefaultCountryFor(target.Code)}/{slug}");
+            }
+        }
+
+        foreach (var slug in TranslatedCompanyWideSlugs)
+        {
+            var cultures = SupportedCultures.All.Where(culture => hasContentIn(culture.Code, slug)).ToList();
+
+            foreach (var culture in cultures)
+            {
+                AppendUrl(sb, trimmedBase, culture, target => $"{LanguageCountries.DefaultCountryFor(target.Code)}/{slug}", cultures);
             }
         }
 

@@ -6,7 +6,7 @@
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 
-@* Feature explorer of the preview start page: one section (H2) that turns the six demo video carousels of
+@* Feature explorer of the country start page (CountryStartTemplate): one section (H2) that turns the six demo video carousels of
    DemoCarousels.All into chapters (H3 each) - rules, scenarios, everyday work, containers, special shifts and
    Klacksy - with all their recorded clips and captions, reused from shared.json (no copies). Exactly one chapter
    is open; only its panel is rendered, so only its video plays. One DOM serves both layouts: on phones the
@@ -17,7 +17,8 @@
    RuleSettingsSection.Items. The video stage reuses the carousel markup contract of carousel-controls.js
    (data-carousel, data-carousel-prev/next), so Left/Right keys, swipe and auto-advance after a clip ends work
    unchanged; data-carousel wraps only the stage, never the chapter buttons, so the arrow keys there stay free.
-   A URL fragment equal to a chapter id ("#regel-verstoesse", "#szenarien") opens that chapter.
+   A URL fragment equal to a chapter id ("#regel-verstoesse", "#szenarien") opens that chapter. The rules chapter
+   stays without recorded rule clips (calendar and surcharges only), every other chapter needs at least one clip.
    Culture is the page culture, ContentKey the content file with the explorer texts (chapter labels, recording prefix,
    badge), RulesCalendar the calendar texts of the country page and KlacksyNote the mandatory note shown with the
    Klacksy clips (accelerated waiting times). *@
@@ -67,7 +68,7 @@
                             @if (definition.SectionId == DemoCarousels.RulesSectionId)
                             {
                                 <div class="flex flex-wrap gap-2 mb-6" role="group" aria-label="@Tx("explorer.rulesView.label")">
-                                    @foreach (var view in RulesViews)
+                                    @foreach (var view in AvailableRulesViews(chapter))
                                     {
                                         var viewId = view;
                                         var isSelectedView = viewId == _rulesView;
@@ -78,9 +79,11 @@
                                     }
                                 </div>
                                 <div id="@RulesViewPanelId">
-                                    @if (_rulesView == RulesViewCalendar && RulesCalendar is not null)
+                                    @* Calendar and surcharges stay in the DOM (hidden when not selected), so the country's calendar and
+                                       law texts are part of the server-rendered page; only the live clips render on demand. *@
+                                    @if (RulesCalendar is not null)
                                     {
-                                        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+                                        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start" hidden="@(_rulesView != RulesViewCalendar)">
                                             <div>
                                                 @if (!string.IsNullOrEmpty(RulesCalendar.Eyebrow))
                                                 {
@@ -101,8 +104,7 @@
                                             <MagnifiedImage Src="@ScreenshotSrc(RulesCalendar.ImageFile)" Alt="@RulesCalendar.ImageAlt" Caption="@RulesCalendar.ImageCaption" />
                                         </div>
                                     }
-                                    else if (_rulesView == RulesViewSettings)
-                                    {
+                                    <div hidden="@(_rulesView != RulesViewSettings)">
                                         <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(RuleSettingsSection.EyebrowKey)</span>
                                         <h4 class="text-xl font-black mt-1 mb-2">@Sh(RuleSettingsSection.TitleKey)</h4>
                                         <p class="text-sm text-on-surface-variant leading-relaxed mb-5">@Sh(RuleSettingsSection.SubtitleKey)</p>
@@ -116,8 +118,8 @@
                                                 </li>
                                             }
                                         </ul>
-                                    }
-                                    else
+                                    </div>
+                                    @if (ShowsLiveRules && chapter.Videos.Count > 0)
                                     {
                                         @ChapterLead(definition)
                                         @VideoStage(chapter)
@@ -219,8 +221,13 @@
             .Select(definition => new Chapter(
                 definition,
                 definition.Videos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList()))
-            .Where(chapter => chapter.Videos.Count > 0)
+            .Where(chapter => chapter.Videos.Count > 0 || IsRulesChapter(chapter.Definition))
             .ToList();
+
+        if (_chapters.FirstOrDefault(chapter => IsRulesChapter(chapter.Definition)) is { Videos.Count: 0 } && _rulesView == RulesViewLive)
+        {
+            _rulesView = RulesViewCalendar;
+        }
 
         if (_chapters.All(chapter => chapter.Definition.SectionId != _activeChapterId))
         {
@@ -258,6 +265,15 @@
     }
 
     private void SelectRulesView(string view) => _rulesView = view;
+
+    private bool ShowsLiveRules => _rulesView == RulesViewLive || (_rulesView == RulesViewCalendar && RulesCalendar is null);
+
+    // The rules chapter also carries the country's calendar and the surcharge settings, so it stays even in a
+    // culture without any recorded rule clip; only its "live violations" view needs the clips.
+    private static bool IsRulesChapter(DemoCarouselDefinition definition) => definition.SectionId == DemoCarousels.RulesSectionId;
+
+    private static IEnumerable<string> AvailableRulesViews(Chapter chapter)
+        => chapter.Videos.Count > 0 ? RulesViews : RulesViews.Where(view => view != RulesViewLive);
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {

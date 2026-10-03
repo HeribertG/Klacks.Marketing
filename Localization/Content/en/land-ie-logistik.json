@@ -27,7 +27,7 @@
       { "icon": "hourglass_top", "title": "POA recorded correctly", "text": "Klacks records Periods of Availability (POA) separately from working time and makes sure they are known to the worker in advance." },
       { "icon": "badge", "title": "Matching licence categories", "text": "Klacks only assigns routes to drivers with the matching licence &mdash; and warns before certificates expire. On request, Klacks can fully block assignment once a required document has expired &mdash; only drivers with a valid licence are scheduled." },
       { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure &mdash; route and driver data never leave your organisation, not even for the AI." },
-      { "icon": "smart_toy", "title": "Klacksy schedules by voice", "text": "\"Plan tomorrow's routes, driver Murphy is off sick\" is enough &mdash; Klacksy recalculates everything, POA included." }
+      { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Plan tomorrow's routes, driver Murphy is off sick\" is enough &mdash; Klacksy starts the replanning, and the planning engine also takes the configured POA status into account." }
     ]
   },
   "example": null,

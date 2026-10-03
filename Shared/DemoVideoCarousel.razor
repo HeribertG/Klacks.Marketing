@@ -71,6 +71,10 @@
             </div>
             <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
         </div>
+        @if (Definition.NoteKey is not null)
+        {
+            <p class="max-w-2xl mx-auto text-xs text-on-surface-variant leading-relaxed text-center mt-4 mb-0">@Sh(Definition.NoteKey)</p>
+        }
         @if (Definition.HintKey is not null)
         {
             <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">

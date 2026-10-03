@@ -6,15 +6,15 @@
 
 <!-- NAVIGATION BAR -->
 <nav class="fixed top-0 w-full z-50 glass-nav no-line-rule">
-    <div class="flex justify-between items-center gap-8 w-full px-8 py-4 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center gap-6 w-full px-8 py-4 max-w-7xl mx-auto">
         <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-black no-underline">
             <img src="images/klacks-logo.svg" class="w-8 h-8 shrink-0" alt="Klacks Logo" />
             Klacks
         </a>
-        <div class="hidden xl:flex items-center gap-5 whitespace-nowrap">
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")">@Sh("nav.solution")</a>
+        <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")">@ShHtml("nav.rules")</a>
+            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
             @if (ShowIndustryMenu)
             {
                 <div class="relative">
@@ -39,15 +39,33 @@
             }
             else
             {
-                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")">@Sh("nav.industries")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)">@Sh("nav.industries")</a>
             }
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+            @if (ShowCompanySizePages)
+            {
+                <div class="relative">
+                    <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" aria-expanded="@(_companySizeMenuOpen ? "true" : "false")" @onclick="ToggleCompanySizeMenu">
+                        @Sh("nav.companySize")
+                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="dropdown-menu @(_companySizeMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
+                        @foreach (var page in CompanySizePages)
+                        {
+                            <a href="@CompanyWideHref(page.Slug)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(page.Slug == CurrentCompanyWideSlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCompanySizeMenu">@Sh(page.LabelKey)</a>
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+            }
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
             <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
         </div>
-        <div class="hidden xl:flex items-center gap-4">
+        <div class="hidden xl:flex items-center gap-3">
             <div class="relative">
                 <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
                     @CurrentCultureRecord.Code
@@ -98,9 +116,9 @@
     </div>
 
     <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full right-8 mt-2 w-full max-w-sm bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-8 py-6 flex flex-col gap-5">
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("kontrolle")" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
+        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("regeln")" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
+        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
         @if (ShowIndustryMenu)
         {
             <div class="flex flex-col gap-1">
@@ -130,9 +148,12 @@
         }
         else
         {
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref("branchen")" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
         }
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref" @onclick="CloseMobileMenu">@Sh("footer.smallBusiness")</a>
+        @foreach (var page in VisibleCompanySizePages)
+        {
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
+        }
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
@@ -210,7 +231,10 @@
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PartnerHref">@Sh("footer.partner")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ComparisonHref">@Sh("footer.comparison")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+                @foreach (var page in VisibleCompanySizePages)
+                {
+                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@CompanyWideHref(page.Slug)">@Sh(page.LabelKey)</a>
+                }
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
@@ -226,7 +250,9 @@
     private const string PrivacyPageKey = "datenschutz";
     private const string LicensePageKey = "lizenz";
     private const string PartnerPageKey = "partner";
-    private const string SmallBusinessPageKey = "kleine-betriebe";
+    private const string SmallBusinessPageKey = CountryPageLinks.SmallBusinessSlug;
+    private const string MidSizeBusinessPageKey = CountryPageLinks.MidSizeBusinessSlug;
+    private const string LargeBusinessPageKey = CountryPageLinks.LargeBusinessSlug;
     private const string AboutPageKey = "ueber-uns";
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
@@ -235,6 +261,18 @@
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
+        MidSizeBusinessPageKey, LargeBusinessPageKey,
+    };
+
+    private sealed record CompanySizePage(string Slug, string LabelKey);
+
+    // The target pages per company size. The mid-size and large pages are linked only in cultures that have their
+    // own text for them, so the navigation never shows an untranslated label or leads to a German fallback page.
+    private static readonly IReadOnlyList<CompanySizePage> CompanySizePages = new[]
+    {
+        new CompanySizePage(SmallBusinessPageKey, "footer.smallBusiness"),
+        new CompanySizePage(MidSizeBusinessPageKey, "footer.midSizeBusiness"),
+        new CompanySizePage(LargeBusinessPageKey, "footer.largeBusiness"),
     };
 
     private static readonly HashSet<string> LocalizedPageKeys = new(StringComparer.OrdinalIgnoreCase)
@@ -253,6 +291,7 @@
     private bool _languageMenuOpen;
     private bool _countryMenuOpen;
     private bool _industryMenuOpen;
+    private bool _companySizeMenuOpen;
     private bool _showDemoModal;
 
     private EventCallback OpenDemoModalCallback => EventCallback.Factory.Create(this, OpenDemoModal);
@@ -293,6 +332,7 @@
         _languageMenuOpen = false;
         _countryMenuOpen = false;
         _industryMenuOpen = false;
+        _companySizeMenuOpen = false;
         InvokeAsync(async () =>
         {
             var culture = CurrentCultureRecord;
@@ -351,6 +391,23 @@
     }
 
     private void CloseIndustryMenu() => _industryMenuOpen = false;
+
+    private void ToggleCompanySizeMenu()
+    {
+        _companySizeMenuOpen = !_companySizeMenuOpen;
+        _industryMenuOpen = false;
+        _languageMenuOpen = false;
+        _countryMenuOpen = false;
+    }
+
+    private void CloseCompanySizeMenu() => _companySizeMenuOpen = false;
+
+    private bool ShowCompanySizePages
+        => ContentProvider.HasContentIn(CurrentCultureRecord.Code, MidSizeBusinessPageKey)
+            && ContentProvider.HasContentIn(CurrentCultureRecord.Code, LargeBusinessPageKey);
+
+    private IEnumerable<CompanySizePage> VisibleCompanySizePages
+        => ShowCompanySizePages ? CompanySizePages : CompanySizePages.Take(1);
 
     private (string Culture, string PageKey) ResolveCurrentPage()
     {

@@ -694,11 +694,3 @@ body:has(.feature-ticker-bar) footer {
         grid-row: 1 / -1;
     }
 }
-
-/* Preview pages: room for the fixed mobile "open playground" button (PreviewMobilePlaygroundButton.razor) below
-   the last footer links. */
-@media (max-width: 767px) {
-    body:has(.preview-page) footer {
-        padding-bottom: 4.5rem;
-    }
-}

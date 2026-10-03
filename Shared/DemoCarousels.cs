@@ -16,6 +16,7 @@ public static class DemoCarousels
     public const string ContainersSectionId = "spezialdienste-container";
     public const string SporadicTimeRangeSectionId = "spezialdienste-sporadisch-zeitbereich";
     public const string KlacksySectionId = "klacksy-aufgaben";
+    public const string KlacksyVideoNoteKey = "klacksyOps.videoNote";
 
     private const int KlacksyVideoWidth = 1000;
     private const int KlacksyVideoHeight = 720;
@@ -99,7 +100,8 @@ public static class DemoCarousels
             new(DemoVideo.KlacksyGroupsMixedVideoName, "klacksyGroupsMixed.title", "klacksyGroupsMixed.videoLabel", "klacksyGroupsMixed.caption"),
         },
         VideoWidth: KlacksyVideoWidth,
-        VideoHeight: KlacksyVideoHeight);
+        VideoHeight: KlacksyVideoHeight,
+        NoteKey: KlacksyVideoNoteKey);
 
     public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }

@@ -14,6 +14,8 @@ public static class CountryPageLinks
     public const string LicenseSlug = "lizenz";
     public const string ImprintSlug = "impressum";
     public const string SmallBusinessSlug = "kleine-betriebe";
+    public const string MidSizeBusinessSlug = "mittlere-betriebe";
+    public const string LargeBusinessSlug = "grosse-betriebe";
     public const string AboutSlug = "ueber-uns";
 
     public static string Href(string? cultureSlug, string? country, string slug)
