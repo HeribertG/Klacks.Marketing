@@ -62,3 +62,15 @@ addresses and at least 3 people) yields Seuzach (5 = 17%) and Wiesendangen (5 = 
 
 Every employee holds 1-3 of the 5 qualifications; inside the Winterthur area every qualification has at least
 3 holders. Assignment is by position (see the script), so rebuilds give the same counts.
+
+## Recording the Klacksy grouping takes
+
+1. Build Klacks.Api (a branch or main that contains `partition_clients_by_qualification`).
+2. `.\start-recording-api.ps1 -Source <Klacks.Api\bin\Debug\net10.0> -Destination <scratch folder>` starts a second backend on
+   https://localhost:5011 against this database with every external background service disabled. Delete
+   `<scratch folder>\DataProtection-Keys` afterwards.
+3. Record in the foreground, at most two takes per call (background runs get killed when memory is short):
+   `KLACKS_API_URL=https://localhost:5011 KLACKS_DEMO_USER=... KLACKS_DEMO_PASSWORD=... FFMPEG_PATH=... node tools/capture-app-videos.mjs --videos klacksy-groups-address,klacksy-groups-qualification --cultures de`
+   The address take resets to no groups (`reset-groups.sql`); the qualification and mixed takes reset to the location tree
+   (`reset-groups.sql` + `location-tree.sql`). A take is published only if the database ends with the expected groups and the
+   skill was applied successfully exactly once.
