@@ -10,7 +10,7 @@ namespace Klacks.Marketing.Shared;
 /// </summary>
 public static class DemoCarousels
 {
-    public const string RulesSectionId = "regeln";
+    public const string RulesSectionId = "regel-verstoesse";
     public const string ScenariosSectionId = "szenarien";
     public const string DailyOperationsSectionId = "alltag";
     public const string ContainersSectionId = "spezialdienste-container";

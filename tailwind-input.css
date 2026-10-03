@@ -666,3 +666,39 @@ body:has(.feature-ticker-bar) footer {
         to { transform: translateX(100%); }
     }
 }
+
+/* Feature explorer of the hidden preview start page (FeatureExplorer.razor). One DOM for both layouts: below lg
+   the chapter headings and the open panel simply stack (accordion); from lg upwards the headings form the list
+   in the first column (one auto row each) and the open panel is the stage in the second column, spanning all
+   rows. The trailing 1fr row takes the stage's extra height so the chapter list stays compact. */
+.feature-explorer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .feature-explorer {
+        grid-template-columns: 18rem minmax(0, 1fr);
+        grid-template-rows: repeat(var(--explorer-rows), auto) 1fr;
+        column-gap: 2.5rem;
+        align-items: start;
+    }
+
+    .feature-explorer-chapter {
+        grid-column: 1;
+    }
+
+    .feature-explorer-panel {
+        grid-column: 2;
+        grid-row: 1 / -1;
+    }
+}
+
+/* Preview pages: room for the fixed mobile "open playground" button (PreviewMobilePlaygroundButton.razor) below
+   the last footer links. */
+@media (max-width: 767px) {
+    body:has(.preview-page) footer {
+        padding-bottom: 4.5rem;
+    }
+}

@@ -1,0 +1,132 @@
+@page "/vorschau-mittlere-betriebe"
+@inject IPageContentProvider ContentProvider
+
+@* Hidden German-only preview of the target page for mid-size companies (50 to 250 employees; buying motive: hard
+   to find staff). Message: one planner gets more done - never "replaces the planner". Every claim is backed by
+   the code of Klacks.Api (see the preview report of 2026-10-03). The clips and their captions are reused from
+   shared.json; the growth sentence and the call to action from kleine-betriebe.json. noindex, not in the sitemap,
+   not linked from navigation or footer; other cultures have no route. *@
+<PreviewHead Title="@Tx("pageTitle")" Description="@Tx("metaDescription")" />
+
+<div class="preview-page">
+    <header id="branchen" class="pt-20 md:pt-28 pb-12 md:pb-16 px-4 sm:px-8 max-w-4xl mx-auto text-center">
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">
+            <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">groups</span>@Tx("hero.badge")
+        </span>
+        <h1 class="text-[2.125rem] md:text-[3rem] leading-[1.1] font-black tracking-tighter text-primary mt-6 mb-6 hyphens-auto break-words">@Tx("hero.title")</h1>
+        <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-4">@Tx("hero.subtitle")</p>
+        <p class="text-sm text-on-surface-variant leading-relaxed mb-8">@Tx("hero.honesty")</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Tx("hero.playground")
+            </button>
+            <a href="@InstallationHref" class="px-7 py-4 rounded-xl font-bold text-primary bg-surface-container-low hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">download</span> @Tx("hero.download")
+            </a>
+        </div>
+    </header>
+
+    <section id="kontrolle" class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule" aria-labelledby="help-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center mb-10">
+                <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Tx("help.eyebrow")</span>
+                <h2 id="help-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Tx("help.title")</h2>
+            </div>
+            <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 list-none p-0 m-0">
+                @for (var index = 0; index < HelpIcons.Length; index++)
+                {
+                    <li class="rounded-2xl bg-surface-container-lowest p-6">
+                        <span class="material-symbols-outlined text-secondary text-2xl" aria-hidden="true">@HelpIcons[index]</span>
+                        <h3 class="text-base font-bold mt-3 mb-2">@Tx($"help.items.{index}.title")</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx($"help.items.{index}.text")</p>
+                    </li>
+                }
+            </ul>
+            <p class="max-w-3xl mx-auto text-center text-sm text-on-surface-variant leading-relaxed mt-8 mb-0">
+                @Tx("agents.text") <a href="@AgentsHowToHref" class="font-bold text-secondary no-underline">@Tx("agents.link")</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="regeln" class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-7xl mx-auto no-line-rule" aria-labelledby="videos-heading">
+        <div class="text-center mb-10">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">videocam</span>@Tx("videos.badge")
+            </span>
+            <h2 id="videos-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Tx("videos.title")</h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8 items-start">
+            <div>
+                <DemoVideo Culture="@Culture" VideoName="@DemoVideo.ScenarioAutoWizardVideoName" TitleKey="scenarioAutoWizardDemo.title"
+                           LabelKey="scenarioAutoWizardDemo.videoLabel" CaptionKey="scenarioAutoWizardDemo.caption"
+                           Width="@DemoCarouselDefinition.DefaultVideoWidth" Height="@DemoCarouselDefinition.DefaultVideoHeight" Deferred="true" HoverZoom="true" FigureClass="m-0" />
+            </div>
+            <div>
+                <DemoVideo Culture="@Culture" VideoName="@DemoVideo.ReplacementVideoName" TitleKey="replacementDemo.title"
+                           LabelKey="replacementDemo.videoLabel" CaptionKey="replacementDemo.caption"
+                           Width="@DemoCarouselDefinition.DefaultVideoWidth" Height="@DemoCarouselDefinition.DefaultVideoHeight" Deferred="true" HoverZoom="true" FigureClass="m-0" />
+                <p class="text-xs text-on-surface-variant leading-relaxed text-center mt-2 mb-0">@Tx("videos.replacementNote")</p>
+            </div>
+            <div>
+                <DemoVideo Culture="@Culture" VideoName="@DemoVideo.KlacksyGroupsQualificationVideoName" TitleKey="klacksyGroupsQualification.title"
+                           LabelKey="klacksyGroupsQualification.videoLabel" CaptionKey="klacksyGroupsQualification.caption"
+                           Width="@DemoCarousels.Klacksy.VideoWidth" Height="@DemoCarousels.Klacksy.VideoHeight" Deferred="true" HoverZoom="true" FigureClass="m-0" />
+                <p class="text-xs text-on-surface-variant leading-relaxed text-center mt-2 mb-0">@Tx("klacksyVideoNote")</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule" aria-labelledby="needs-heading">
+        <div class="max-w-3xl mx-auto px-4 sm:px-8">
+            <h2 id="needs-heading" class="text-[1.75rem] md:text-[2.25rem] font-black tracking-tight mt-0 mb-6 text-center">@Tx("needs.title")</h2>
+            <p class="text-on-surface-variant leading-relaxed">@Tx("needs.server")</p>
+            <p class="text-on-surface-variant leading-relaxed">@Tx("needs.docker")</p>
+            <p class="font-semibold text-secondary">@Kb("hero.growth")</p>
+            <div class="flex flex-wrap gap-6 mt-6 text-sm">
+                <a href="@InstallationHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("needs.installation")</a>
+                <a href="@SmallBusinessHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">storefront</span> @Tx("needs.smallBusiness")</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-4xl mx-auto no-line-rule" aria-labelledby="cta-heading">
+        <div class="bg-night rounded-2xl py-10 md:py-14 px-6 md:px-8 text-center">
+            <h2 id="cta-heading" class="text-2xl md:text-3xl font-black text-white mt-0 mb-4">@Kb("cta.title")</h2>
+            <p class="text-white/70 max-w-xl mx-auto mb-8">@Kb("cta.text")</p>
+            <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Tx("hero.playground")
+            </button>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 mt-8 text-sm">
+            <a href="@StartPreviewRoute" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_back</span> @Tx("links.start")</a>
+            <a href="@LargePreviewRoute" class="font-bold text-secondary no-underline inline-flex items-center gap-1">@Tx("links.large") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></a>
+        </div>
+    </section>
+
+    <PreviewMobilePlaygroundButton Label="@Tx("mobileButton")" />
+</div>
+
+@code {
+    private const string PageKey = "vorschau-mittlere-betriebe";
+    private const string SmallBusinessContentKey = "kleine-betriebe";
+    private const string SharedContentKey = "shared";
+    private const string Culture = SupportedCultures.DefaultCode;
+    private const string CountryKey = CountryIndustries.SwissCountryPageKey;
+    private const string StartPreviewRoute = "/vorschau-start";
+    private const string LargePreviewRoute = "/vorschau-grosse-betriebe";
+    private const string AgentsHowToHref = LargePreviewRoute + "#ki-agenten";
+
+    private static readonly string[] HelpIcons = { "auto_awesome", "person_search", "science", "chat", "account_tree", "notifications_active" };
+
+    [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
+
+    private string InstallationHref => CountryPageLinks.Href(null, CountryKey, CountryPageLinks.InstallationSlug);
+
+    private string SmallBusinessHref => CountryPageLinks.Href(null, CountryKey, CountryPageLinks.SmallBusinessSlug);
+
+    private string Tx(string key) => ContentProvider.GetText(Culture, PageKey, key);
+
+    private string Kb(string key) => ContentProvider.GetText(Culture, SmallBusinessContentKey, key);
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+}

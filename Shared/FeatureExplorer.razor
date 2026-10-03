@@ -1,0 +1,380 @@
+@using System.Globalization
+@implements IAsyncDisposable
+@inject ILocalizedVideoCatalog VideoCatalog
+@inject ILocalizedScreenshotResolver ScreenshotResolver
+@inject IPageContentProvider ContentProvider
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+@* Feature explorer of the preview start page: one section (H2) that turns the six demo video carousels of
+   DemoCarousels.All into chapters (H3 each) - rules, scenarios, everyday work, containers, special shifts and
+   Klacksy - with all their recorded clips and captions, reused from shared.json (no copies). Exactly one chapter
+   is open; only its panel is rendered, so only its video plays. One DOM serves both layouts: on phones the
+   chapters are an accordion (heading, then the open panel), from lg upwards the headings form a list on the left
+   and the open panel is the stage on the right (CSS grid in tailwind-input.css, .feature-explorer).
+   The rules chapter has three views (calendar, surcharges, live violations; plain buttons with aria-pressed, not
+   a half-built tablist); calendar texts come from the country page (RulesCalendar), surcharges from
+   RuleSettingsSection.Items. The video stage reuses the carousel markup contract of carousel-controls.js
+   (data-carousel, data-carousel-prev/next), so Left/Right keys, swipe and auto-advance after a clip ends work
+   unchanged; data-carousel wraps only the stage, never the chapter buttons, so the arrow keys there stay free.
+   A URL fragment equal to a chapter id ("#regel-verstoesse", "#szenarien") opens that chapter.
+   Culture is the page culture, ContentKey the content file with the explorer texts (chapter labels, recording prefix,
+   badge), RulesCalendar the calendar texts of the country page and KlacksyNote the mandatory note shown with the
+   Klacksy clips (accelerated waiting times). *@
+@if (_chapters.Count > 0)
+{
+    <section id="@SectionId" class="reveal py-14 md:py-24 px-4 sm:px-8 max-w-7xl mx-auto no-line-rule" aria-labelledby="@HeadingId">
+        <div class="text-center mb-8 md:mb-10">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">videocam</span>@Tx("explorer.badge")
+            </span>
+            <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Tx("explorer.title")</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Tx("explorer.subtitle")</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto mb-10 md:mb-12 rounded-2xl bg-surface-container-low p-5 md:p-6">
+            <span class="inline-block rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Tx("explorer.tipsLabel")</span>
+            <ul class="grid md:grid-cols-3 gap-4 md:gap-6 mt-4 mb-0 p-0 list-none">
+                @foreach (var tipKey in KlacksyTipKeys)
+                {
+                    <li class="text-sm text-on-surface-variant leading-relaxed">@Sh(tipKey)</li>
+                }
+            </ul>
+        </div>
+
+        <div class="feature-explorer" style="--explorer-rows: @_chapters.Count.ToString(CultureInfo.InvariantCulture)">
+            @foreach (var chapter in _chapters)
+            {
+                var definition = chapter.Definition;
+                var isActive = definition.SectionId == _activeChapterId;
+                <h3 id="@definition.SectionId" class="feature-explorer-chapter scroll-mt-24 m-0" @ref="_headingRefs[definition.SectionId]">
+                    <button type="button" id="@ButtonId(definition)"
+                            class="w-full flex items-start gap-3 rounded-2xl px-4 py-3 text-start transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isActive ? "bg-secondary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
+                            aria-expanded="@(isActive ? "true" : "false")" aria-controls="@PanelId(definition)"
+                            @onclick="() => OpenChapter(definition.SectionId)">
+                        <span class="material-symbols-outlined text-xl mt-0.5" aria-hidden="true">@ChapterIcon(definition)</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-base font-black">@Tx(ChapterKey(definition, ChapterTitleSuffix))</span>
+                            <span class="block text-xs font-medium mt-0.5 @(isActive ? "text-white/80" : "text-on-surface-variant")">@Tx(ChapterKey(definition, ChapterTeaserSuffix))</span>
+                        </span>
+                        <span class="material-symbols-outlined text-xl lg:hidden" aria-hidden="true">@(isActive ? "expand_less" : "expand_more")</span>
+                    </button>
+                </h3>
+                <div id="@PanelId(definition)" class="feature-explorer-panel" role="region" aria-labelledby="@ButtonId(definition)" hidden="@(!isActive)">
+                    @if (isActive)
+                    {
+                        <div class="rounded-2xl bg-surface-container-lowest p-4 sm:p-6 md:p-8 mt-2 lg:mt-0">
+                            @if (definition.SectionId == DemoCarousels.RulesSectionId)
+                            {
+                                <div class="flex flex-wrap gap-2 mb-6" role="group" aria-label="@Tx("explorer.rulesView.label")">
+                                    @foreach (var view in RulesViews)
+                                    {
+                                        var viewId = view;
+                                        var isSelectedView = viewId == _rulesView;
+                                        <button type="button"
+                                                class="rounded-full px-4 py-2 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelectedView ? "bg-primary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
+                                                aria-pressed="@(isSelectedView ? "true" : "false")" aria-controls="@RulesViewPanelId"
+                                                @onclick="() => SelectRulesView(viewId)">@Tx($"explorer.rulesView.{viewId}")</button>
+                                    }
+                                </div>
+                                <div id="@RulesViewPanelId">
+                                    @if (_rulesView == RulesViewCalendar && RulesCalendar is not null)
+                                    {
+                                        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+                                            <div>
+                                                @if (!string.IsNullOrEmpty(RulesCalendar.Eyebrow))
+                                                {
+                                                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)RulesCalendar.Eyebrow)</span>
+                                                }
+                                                <h4 class="text-xl font-black mt-1 mb-3">@((MarkupString)RulesCalendar.Title)</h4>
+                                                <p class="text-sm text-on-surface-variant leading-relaxed mb-5">@((MarkupString)RulesCalendar.Text)</p>
+                                                <ul class="space-y-4 list-none p-0 m-0">
+                                                    @foreach (var item in RulesCalendar.Items)
+                                                    {
+                                                        <li class="flex gap-3">
+                                                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" aria-hidden="true">@item.Icon</span>
+                                                            <span class="text-sm"><strong class="block text-primary">@((MarkupString)item.Title)</strong><span class="text-on-surface-variant">@((MarkupString)item.Text)</span></span>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <MagnifiedImage Src="@ScreenshotSrc(RulesCalendar.ImageFile)" Alt="@RulesCalendar.ImageAlt" Caption="@RulesCalendar.ImageCaption" />
+                                        </div>
+                                    }
+                                    else if (_rulesView == RulesViewSettings)
+                                    {
+                                        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(RuleSettingsSection.EyebrowKey)</span>
+                                        <h4 class="text-xl font-black mt-1 mb-2">@Sh(RuleSettingsSection.TitleKey)</h4>
+                                        <p class="text-sm text-on-surface-variant leading-relaxed mb-5">@Sh(RuleSettingsSection.SubtitleKey)</p>
+                                        <ul class="grid sm:grid-cols-2 gap-4 list-none p-0 m-0">
+                                            @foreach (var item in RuleSettingsSection.Items)
+                                            {
+                                                <li class="rounded-xl bg-surface-container-low p-4">
+                                                    <span class="material-symbols-outlined text-secondary text-xl" aria-hidden="true">@item.Icon</span>
+                                                    <strong class="block text-primary mt-2 mb-1">@Sh(item.TitleKey)</strong>
+                                                    <span class="block text-sm text-on-surface-variant leading-relaxed">@Sh(item.TextKey)</span>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        @ChapterLead(definition)
+                                        @VideoStage(chapter)
+                                    }
+                                </div>
+                            }
+                            else
+                            {
+                                @ChapterLead(definition)
+                                @VideoStage(chapter)
+                            }
+                            @if (definition.SectionId == DemoCarousels.KlacksySectionId)
+                            {
+                                <p class="text-xs text-on-surface-variant leading-relaxed mt-4 mb-0 flex gap-2">
+                                    <span class="material-symbols-outlined text-sm" aria-hidden="true">speed</span>
+                                    <span>@KlacksyNote</span>
+                                </p>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </section>
+}
+
+@code {
+    public const string SectionId = "funktionen";
+    public const string RulesViewCalendar = "calendar";
+    public const string RulesViewSettings = "settings";
+    public const string RulesViewLive = "live";
+
+    private const string SharedContentKey = "shared";
+    private const string HeadingId = SectionId + "-heading";
+    private const string RulesViewPanelId = SectionId + "-regeln-view";
+    private const string ChapterKeyFormat = "explorer.chapter.{0}.{1}";
+    private const string ChapterTitleSuffix = "title";
+    private const string ChapterTeaserSuffix = "teaser";
+    private const string RecordingPrefixKey = "explorer.subtitlePrefix";
+    private const string ButtonIdSuffix = "-button";
+    private const string PanelIdSuffix = "-panel";
+    private const string SlideIdSuffix = "-slide";
+    private const string NavLabelKey = "dailyOps.navLabel";
+    private const string PreviousKey = "dailyOps.previous";
+    private const string NextKey = "dailyOps.next";
+    private const string SlideLabelKey = "dailyOps.slideLabel";
+    private const string ImagesPathPrefix = "images/";
+    private const string ModulePath = "./js/feature-explorer.js";
+    private const string RevealFunction = "reveal";
+    private const string FragmentSeparator = "#";
+
+    private static readonly string[] RulesViews = { RulesViewCalendar, RulesViewSettings, RulesViewLive };
+
+    private static readonly string[] KlacksyTipKeys =
+    {
+        RuleSettingsSection.KlacksyHintKey,
+        "scenarioOps.klacksyHint",
+        "dailyOps.klacksyHint",
+    };
+
+    private static readonly IReadOnlyDictionary<string, string> ChapterIcons = new Dictionary<string, string>
+    {
+        [DemoCarousels.RulesSectionId] = "gavel",
+        [DemoCarousels.ScenariosSectionId] = "science",
+        [DemoCarousels.DailyOperationsSectionId] = "edit_calendar",
+        [DemoCarousels.ContainersSectionId] = "route",
+        [DemoCarousels.SporadicTimeRangeSectionId] = "event_repeat",
+        [DemoCarousels.KlacksySectionId] = "smart_toy",
+    };
+
+    private const string DefaultChapterIcon = "play_circle";
+
+    private sealed record Chapter(DemoCarouselDefinition Definition, IReadOnlyList<DemoCarouselVideo> Videos);
+
+    private readonly Dictionary<string, ElementReference> _headingRefs = new();
+    private readonly Dictionary<string, int> _videoIndexByChapter = new();
+    private IReadOnlyList<Chapter> _chapters = Array.Empty<Chapter>();
+    private string _activeChapterId = string.Empty;
+    private string _rulesView = RulesViewLive;
+    private string? _chapterToReveal;
+    private IJSObjectReference? _module;
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    [Parameter, EditorRequired] public required string ContentKey { get; set; }
+
+    [Parameter] public IndustryRulesCalendarSection? RulesCalendar { get; set; }
+
+    [Parameter, EditorRequired] public required string KlacksyNote { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Nav.LocationChanged += HandleLocationChanged;
+    }
+
+    protected override void OnParametersSet()
+    {
+        _chapters = DemoCarousels.All
+            .Select(definition => new Chapter(
+                definition,
+                definition.Videos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null).ToList()))
+            .Where(chapter => chapter.Videos.Count > 0)
+            .ToList();
+
+        if (_chapters.All(chapter => chapter.Definition.SectionId != _activeChapterId))
+        {
+            _activeChapterId = ChapterFromFragment(Nav.Uri) ?? _chapters.FirstOrDefault()?.Definition.SectionId ?? string.Empty;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_chapterToReveal is null || !_headingRefs.TryGetValue(_chapterToReveal, out var heading))
+        {
+            return;
+        }
+
+        _chapterToReveal = null;
+        try
+        {
+            _module ??= await JS.InvokeAsync<IJSObjectReference>("import", ModulePath);
+            await _module.InvokeVoidAsync(RevealFunction, heading);
+        }
+        catch (JSDisconnectedException)
+        {
+        }
+    }
+
+    private void OpenChapter(string sectionId)
+    {
+        if (sectionId == _activeChapterId)
+        {
+            return;
+        }
+
+        _activeChapterId = sectionId;
+        _chapterToReveal = sectionId;
+    }
+
+    private void SelectRulesView(string view) => _rulesView = view;
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        if (ChapterFromFragment(e.Location) is { } chapterId && chapterId != _activeChapterId)
+        {
+            _activeChapterId = chapterId;
+            InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private string? ChapterFromFragment(string uri)
+    {
+        var separatorIndex = uri.IndexOf(FragmentSeparator, StringComparison.Ordinal);
+        if (separatorIndex < 0)
+        {
+            return null;
+        }
+
+        var fragment = uri[(separatorIndex + 1)..];
+        return _chapters.FirstOrDefault(chapter => chapter.Definition.SectionId == fragment)?.Definition.SectionId;
+    }
+
+    // The carousel's own eyebrow, heading and subtitle from shared.json, so no text of the country page is lost;
+    // the "recorded in Klacks" prefix of the subtitles is shown once as the section badge instead.
+    private RenderFragment ChapterLead(DemoCarouselDefinition definition) => __builder =>
+    {
+        if (definition.EyebrowKey is not null)
+        {
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(definition.EyebrowKey)</span>
+        }
+        <h4 class="text-xl font-black mt-1 mb-2">@Sh(definition.TitleKey)</h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed mt-0 mb-5">@WithoutRecordingPrefix(Sh(definition.SubtitleKey))</p>
+    };
+
+    private string WithoutRecordingPrefix(string subtitle)
+    {
+        var prefix = Tx(RecordingPrefixKey);
+        return subtitle.StartsWith(prefix, StringComparison.Ordinal) ? subtitle[prefix.Length..].TrimStart() : subtitle;
+    }
+
+    private RenderFragment VideoStage(Chapter chapter) => __builder =>
+    {
+        var definition = chapter.Definition;
+        var currentIndex = CurrentVideoIndex(chapter);
+        var current = chapter.Videos[currentIndex];
+        <div class="daily-ops-carousel" role="region" aria-roledescription="carousel" aria-label="@Tx(ChapterKey(definition, ChapterTitleSuffix))" tabindex="-1" data-carousel>
+            <div class="flex flex-wrap gap-2 mb-5" role="group" aria-label="@Sh(NavLabelKey)">
+                @for (var index = 0; index < chapter.Videos.Count; index++)
+                {
+                    var itemIndex = index;
+                    var isSelected = index == currentIndex;
+                    <button type="button"
+                            class="rounded-full px-3 py-1.5 text-xs sm:text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelected ? "bg-secondary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
+                            aria-pressed="@(isSelected ? "true" : "false")" aria-controls="@SlideId(definition)"
+                            @onclick="() => SelectVideo(chapter, itemIndex)">@Sh(chapter.Videos[index].TitleKey)</button>
+                }
+            </div>
+            <div class="daily-ops-carousel-body">
+                <button type="button" data-carousel-prev class="daily-ops-carousel-prev daily-ops-carousel-arrow" aria-label="@Sh(PreviousKey)" aria-controls="@SlideId(definition)"
+                        @onclick="() => SelectVideo(chapter, (currentIndex - 1 + chapter.Videos.Count) % chapter.Videos.Count)">
+                    <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_back</span>
+                </button>
+                <div id="@SlideId(definition)" class="daily-ops-carousel-slide" role="group" aria-roledescription="slide" aria-label="@SlideLabel(currentIndex, chapter.Videos.Count)">
+                    <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName"
+                               LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey"
+                               Width="@definition.VideoWidth" Height="@definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
+                </div>
+                <button type="button" data-carousel-next class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh(NextKey)" aria-controls="@SlideId(definition)"
+                        @onclick="() => SelectVideo(chapter, (currentIndex + 1) % chapter.Videos.Count)">
+                    <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_forward</span>
+                </button>
+            </div>
+            <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel(currentIndex, chapter.Videos.Count)</p>
+        </div>
+    };
+
+    private int CurrentVideoIndex(Chapter chapter)
+    {
+        var index = _videoIndexByChapter.GetValueOrDefault(chapter.Definition.SectionId);
+        return index < chapter.Videos.Count ? index : 0;
+    }
+
+    private void SelectVideo(Chapter chapter, int index) => _videoIndexByChapter[chapter.Definition.SectionId] = index;
+
+    private static string ChapterKey(DemoCarouselDefinition definition, string suffix)
+        => string.Format(CultureInfo.InvariantCulture, ChapterKeyFormat, definition.SectionId, suffix);
+
+    private static string ChapterIcon(DemoCarouselDefinition definition)
+        => ChapterIcons.GetValueOrDefault(definition.SectionId, DefaultChapterIcon);
+
+    private static string ButtonId(DemoCarouselDefinition definition) => definition.SectionId + ButtonIdSuffix;
+
+    private static string PanelId(DemoCarouselDefinition definition) => definition.SectionId + PanelIdSuffix;
+
+    private static string SlideId(DemoCarouselDefinition definition) => definition.SectionId + SlideIdSuffix;
+
+    private string SlideLabel(int index, int count)
+        => string.Format(CultureInfo.InvariantCulture, Sh(SlideLabelKey), index + 1, count);
+
+    private string ScreenshotSrc(string file) => $"{ImagesPathPrefix}{ScreenshotResolver.Resolve(file, Culture)}";
+
+    private string Tx(string key) => ContentProvider.GetText(Culture, ContentKey, key);
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+
+    public async ValueTask DisposeAsync()
+    {
+        Nav.LocationChanged -= HandleLocationChanged;
+        if (_module is not null)
+        {
+            try
+            {
+                await _module.DisposeAsync();
+            }
+            catch (JSDisconnectedException)
+            {
+            }
+        }
+    }
+}

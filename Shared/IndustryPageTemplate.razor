@@ -75,7 +75,7 @@
 @if (Content.RulesCalendar is not null)
 {
     <!-- REGELN & KALENDER -->
-    <section id="regeln" class="reveal bg-surface-container-low py-16 md:py-32 no-line-rule">
+    <section id="@RulesSectionAnchorId" class="reveal bg-surface-container-low py-16 md:py-32 no-line-rule">
         <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div>
                 @if (!string.IsNullOrEmpty(Content.RulesCalendar.Eyebrow))
@@ -137,13 +137,18 @@
         {
             <div class="card-hover p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
                 <span class="icon-pop material-symbols-outlined text-secondary text-3xl mb-6">@item.Icon</span>
-                <h4 class="text-lg font-bold mb-4">@((MarkupString)item.Title)</h4>
+                <h3 class="text-lg font-bold mb-4">@((MarkupString)item.Title)</h3>
                 <p class="text-on-surface-variant text-sm leading-relaxed">@((MarkupString)item.Text)</p>
             </div>
         }
     </div>
 
     <!-- ZUSCHLÄGE & REGELN: ALLES EINE FRAGE DER EINSTELLUNG -->
+    @if (Content.RulesCalendar is null)
+    {
+        @* Pages without the rules and calendar section keep the "#regeln" nav anchor on the rule settings and the rule violation carousel below. *@
+        <div id="@RulesSectionAnchorId" aria-hidden="true"></div>
+    }
     <RuleSettingsSection Culture="@Culture" />
 </section>
 
@@ -261,6 +266,7 @@
 </section>
 
 @code {
+    private const string RulesSectionAnchorId = "regeln";
     private const string KlacksySlug = "klacksy";
     private const string InstallationSlug = "installation";
     private const string ImagesPathPrefix = "images/";
