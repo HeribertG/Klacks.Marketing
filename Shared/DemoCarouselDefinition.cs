@@ -11,10 +11,18 @@ namespace Klacks.Marketing.Shared;
 /// <param name="Videos">The slides in display order; a culture without any recorded video of them omits the whole section</param>
 /// <param name="EyebrowKey">Optional key of the small label above the heading</param>
 /// <param name="HintKey">Optional key of the Klacksy tip shown below the carousel</param>
+/// <param name="VideoWidth">Intrinsic width of the recorded videos in pixels, reserves the layout space before playback</param>
+/// <param name="VideoHeight">Intrinsic height of the recorded videos in pixels</param>
 public sealed record DemoCarouselDefinition(
     string SectionId,
     string TitleKey,
     string SubtitleKey,
     IReadOnlyList<DemoCarouselVideo> Videos,
     string? EyebrowKey = null,
-    string? HintKey = null);
+    string? HintKey = null,
+    int VideoWidth = DemoCarouselDefinition.DefaultVideoWidth,
+    int VideoHeight = DemoCarouselDefinition.DefaultVideoHeight)
+{
+    public const int DefaultVideoWidth = 1280;
+    public const int DefaultVideoHeight = 800;
+}

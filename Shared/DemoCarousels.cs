@@ -6,7 +6,7 @@ namespace Klacks.Marketing.Shared;
 /// The demo video carousels of the landing pages, in page order: rule violations (live findings of the error list), scenarios (planning
 /// without risk), everyday roster work, special shifts
 /// (tour containers) and special shifts (sporadic, time range, several employees per shift, several shifts per day, mandatory
-/// qualification). A carousel renders only the videos recorded in the page culture and nothing at all without any.
+/// qualification) and Klacksy tasks in the chat (planning a week, forming groups by residence, by qualification and by both). A carousel renders only the videos recorded in the page culture and nothing at all without any.
 /// </summary>
 public static class DemoCarousels
 {
@@ -15,6 +15,10 @@ public static class DemoCarousels
     public const string DailyOperationsSectionId = "alltag";
     public const string ContainersSectionId = "spezialdienste-container";
     public const string SporadicTimeRangeSectionId = "spezialdienste-sporadisch-zeitbereich";
+    public const string KlacksySectionId = "klacksy-aufgaben";
+
+    private const int KlacksyVideoWidth = 1000;
+    private const int KlacksyVideoHeight = 720;
 
     public static DemoCarouselDefinition Rules { get; } = new(
         RulesSectionId,
@@ -82,5 +86,19 @@ public static class DemoCarousels
             new(DemoVideo.ShiftQualificationVideoName, "shiftQualificationDemo.title", "shiftQualificationDemo.videoLabel", "shiftQualificationDemo.caption"),
         });
 
-    public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange };
+    public static DemoCarouselDefinition Klacksy { get; } = new(
+        KlacksySectionId,
+        "klacksyOps.title",
+        "klacksyOps.subtitle",
+        new DemoCarouselVideo[]
+        {
+            new(DemoVideo.KlacksyPlansWeekVideoName, "klacksyPlansWeek.title", "klacksyPlansWeek.videoLabel", "klacksyPlansWeek.caption"),
+            new(DemoVideo.KlacksyGroupsAddressVideoName, "klacksyGroupsAddress.title", "klacksyGroupsAddress.videoLabel", "klacksyGroupsAddress.caption"),
+            new(DemoVideo.KlacksyGroupsQualificationVideoName, "klacksyGroupsQualification.title", "klacksyGroupsQualification.videoLabel", "klacksyGroupsQualification.caption"),
+            new(DemoVideo.KlacksyGroupsMixedVideoName, "klacksyGroupsMixed.title", "klacksyGroupsMixed.videoLabel", "klacksyGroupsMixed.caption"),
+        },
+        VideoWidth: KlacksyVideoWidth,
+        VideoHeight: KlacksyVideoHeight);
+
+    public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }

@@ -1923,5 +1923,836 @@
     "zh-TW": {
       "scenarioName": "測試：晚班"
     }
+  },
+  "klacksy-groups-address": {
+    "de": {
+      "messages": [
+        {
+          "text": "Gruppiere alle Mitarbeitenden nach ihrer Adresse: Region, Kanton, Stadt und darunter Gemeinden – nur grössere Ansammlungen als eigene Gruppe."
+        },
+        {
+          "text": "Ja, übernimm die Gruppen so.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Group all employees by their address: region, canton, city and below that municipalities – only larger clusters as their own group."
+        },
+        {
+          "text": "Yes, apply the groups like that.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Regroupe tous les employés par leur adresse : région, canton, ville et en dessous les communes – seulement les grandes concentrations comme groupe à part."
+        },
+        {
+          "text": "Oui, reprends les groupes comme ça.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Raggruppa tutti i collaboratori per indirizzo: regione, cantone, città e sotto i comuni – solo gli agglomerati più grandi come gruppo a sé."
+        },
+        {
+          "text": "Sì, conferma i gruppi così.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ar": {
+      "messages": [
+        {
+          "text": "جمّع كل الموظفين في مجموعات حسب عنوانهم: المنطقة، الكانتون، المدينة وتحتها البلديات – فقط التجمعات الكبيرة كمجموعة مستقلة."
+        },
+        {
+          "text": "نعم، اعتمد المجموعات هكذا.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "cs": {
+      "messages": [
+        {
+          "text": "Seskup všechny zaměstnance podle adresy: region, kanton, město a pod tím obce – jen větší shluky jako samostatnou skupinu."
+        },
+        {
+          "text": "Ano, převezmi skupiny takto.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "da": {
+      "messages": [
+        {
+          "text": "Gruppér alle medarbejdere efter deres adresse: region, kanton, by og derunder kommuner – kun større ansamlinger som egen gruppe."
+        },
+        {
+          "text": "Ja, overtag grupperne sådan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "el": {
+      "messages": [
+        {
+          "text": "Ομαδοποίησε όλους τους εργαζόμενους με βάση τη διεύθυνσή τους: περιοχή, καντόνι, πόλη και από κάτω δήμοι – μόνο μεγαλύτερες συγκεντρώσεις ως δική τους ομάδα."
+        },
+        {
+          "text": "Ναι, εφάρμοσε τις ομάδες έτσι.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "es": {
+      "messages": [
+        {
+          "text": "Agrupa a todos los empleados por su dirección: región, cantón, ciudad y debajo municipios – solo las concentraciones grandes como grupo propio."
+        },
+        {
+          "text": "Sí, acepta los grupos así.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fi": {
+      "messages": [
+        {
+          "text": "Ryhmittele kaikki työntekijät osoitteen mukaan: alue, kantoni, kaupunki ja sen alla kunnat – vain suuremmat keskittymät omaksi ryhmäkseen."
+        },
+        {
+          "text": "Kyllä, hyväksy ryhmät tällaisina.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "he": {
+      "messages": [
+        {
+          "text": "קבץ את כל העובדים לפי הכתובת שלהם: אזור, קנטון, עיר ומתחתיה רשויות מקומיות – רק ריכוזים גדולים יותר כקבוצה נפרדת."
+        },
+        {
+          "text": "כן, אשר את הקבוצות כך.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "id": {
+      "messages": [
+        {
+          "text": "Kelompokkan semua karyawan berdasarkan alamat mereka: wilayah, kanton, kota, dan di bawahnya komune – hanya kumpulan yang lebih besar dijadikan grup sendiri."
+        },
+        {
+          "text": "Ya, terapkan grup seperti itu.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ja": {
+      "messages": [
+        {
+          "text": "全従業員を住所でグループ分けして：地域、カントン、都市、その下に市町村 – 大きな集まりだけ独立したグループにして。"
+        },
+        {
+          "text": "はい、そのグループで確定して。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ko": {
+      "messages": [
+        {
+          "text": "모든 직원을 주소별로 그룹으로 묶어 줘: 지역, 칸톤, 도시, 그 아래 자치단체 – 규모가 큰 밀집 지역만 별도 그룹으로."
+        },
+        {
+          "text": "네, 그룹을 그대로 적용해 줘.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ms": {
+      "messages": [
+        {
+          "text": "Kumpulkan semua pekerja mengikut alamat mereka: wilayah, kanton, bandar dan di bawahnya perbandaran – hanya kelompok besar sebagai kumpulan tersendiri."
+        },
+        {
+          "text": "Ya, terima kumpulan itu seperti yang dicadangkan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nb": {
+      "messages": [
+        {
+          "text": "Grupper alle ansatte etter adressen deres: region, kanton, by og under det kommuner – bare større ansamlinger som egen gruppe."
+        },
+        {
+          "text": "Ja, overta gruppene slik.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nl": {
+      "messages": [
+        {
+          "text": "Groepeer alle medewerkers op hun adres: regio, kanton, stad en daaronder gemeenten – alleen grotere concentraties als eigen groep."
+        },
+        {
+          "text": "Ja, neem de groepen zo over.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pl": {
+      "messages": [
+        {
+          "text": "Pogrupuj wszystkich pracowników według adresu: region, kanton, miasto, a pod nimi gminy – tylko większe skupiska jako osobną grupę."
+        },
+        {
+          "text": "Dobrze, przyjmij te grupy w tej postaci.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pt": {
+      "messages": [
+        {
+          "text": "Agrupa todos os colaboradores pelo endereço: região, cantão, cidade e por baixo os municípios – só as concentrações maiores como grupo próprio."
+        },
+        {
+          "text": "Sim, aceita os grupos assim.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ro": {
+      "messages": [
+        {
+          "text": "Grupează toți angajații după adresă: regiune, canton, oraș și dedesubt comunele – doar aglomerările mai mari ca grup separat."
+        },
+        {
+          "text": "Da, preia grupurile așa.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "sv": {
+      "messages": [
+        {
+          "text": "Gruppera alla anställda efter adress: region, kanton, stad och under det kommuner – bara större ansamlingar som egen grupp."
+        },
+        {
+          "text": "Ja, ta över grupperna så här.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "th": {
+      "messages": [
+        {
+          "text": "จัดกลุ่มพนักงานทั้งหมดตามที่อยู่: ภูมิภาค แคว้น เมือง และด้านล่างเป็นเทศบาล – เฉพาะกลุ่มก้อนที่ใหญ่กว่าให้เป็นกลุ่มของตัวเอง"
+        },
+        {
+          "text": "ใช่ ใช้กลุ่มตามนี้เลย",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "vi": {
+      "messages": [
+        {
+          "text": "Phân nhóm tất cả nhân viên theo địa chỉ: khu vực, canton, thành phố và bên dưới là các xã – chỉ những cụm lớn hơn mới thành nhóm riêng."
+        },
+        {
+          "text": "Vâng, áp dụng các nhóm như vậy đi.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-CN": {
+      "messages": [
+        {
+          "text": "按地址把所有员工分组：地区、州、城市，下面是市镇——只有较大的聚集点才单独成组。"
+        },
+        {
+          "text": "是的，就这样采用这些分组。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-TW": {
+      "messages": [
+        {
+          "text": "依地址把所有員工分組：地區、州、城市，下面是市鎮——只有較大的聚集點才單獨成組。"
+        },
+        {
+          "text": "是的，就這樣採用這些分組。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    }
+  },
+  "klacksy-groups-qualification": {
+    "de": {
+      "messages": [
+        {
+          "text": "Gruppiere alle Mitarbeitenden nach Qualifikation – eine Gruppe pro Qualifikation."
+        },
+        {
+          "text": "Ja, übernimm die Gruppen so.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Group all employees by qualification – one group per qualification."
+        },
+        {
+          "text": "Yes, apply the groups like that.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Regroupe tous les employés par qualification – un groupe par qualification."
+        },
+        {
+          "text": "Oui, reprends les groupes comme ça.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Raggruppa tutti i collaboratori per qualifica – un gruppo per ogni qualifica."
+        },
+        {
+          "text": "Sì, conferma i gruppi così.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ar": {
+      "messages": [
+        {
+          "text": "جمّع كل الموظفين حسب المؤهلات – مجموعة لكل مؤهل."
+        },
+        {
+          "text": "نعم، اعتمد المجموعات هكذا.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "cs": {
+      "messages": [
+        {
+          "text": "Seskup všechny zaměstnance podle kvalifikace – jedna skupina na kvalifikaci."
+        },
+        {
+          "text": "Ano, převezmi skupiny takto.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "da": {
+      "messages": [
+        {
+          "text": "Gruppér alle medarbejdere efter kvalifikation – én gruppe pr. kvalifikation."
+        },
+        {
+          "text": "Ja, overtag grupperne sådan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "el": {
+      "messages": [
+        {
+          "text": "Ομαδοποίησε όλους τους εργαζόμενους ανά προσόν – μία ομάδα ανά προσόν."
+        },
+        {
+          "text": "Ναι, εφάρμοσε τις ομάδες έτσι.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "es": {
+      "messages": [
+        {
+          "text": "Agrupa a todos los empleados por cualificación – un grupo por cualificación."
+        },
+        {
+          "text": "Sí, acepta los grupos así.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fi": {
+      "messages": [
+        {
+          "text": "Ryhmittele kaikki työntekijät pätevyyden mukaan – yksi ryhmä per pätevyys."
+        },
+        {
+          "text": "Kyllä, hyväksy ryhmät tällaisina.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "he": {
+      "messages": [
+        {
+          "text": "קבץ את כל העובדים לפי הסמכה – קבוצה אחת לכל הסמכה."
+        },
+        {
+          "text": "כן, אשר את הקבוצות כך.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "id": {
+      "messages": [
+        {
+          "text": "Kelompokkan semua karyawan berdasarkan kualifikasi – satu grup per kualifikasi."
+        },
+        {
+          "text": "Ya, terapkan grup seperti itu.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ja": {
+      "messages": [
+        {
+          "text": "全従業員を資格ごとにグループ分けして – 資格1つにつきグループ1つ。"
+        },
+        {
+          "text": "はい、そのグループで確定して。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ko": {
+      "messages": [
+        {
+          "text": "모든 직원을 자격별로 그룹으로 묶어 줘 – 자격마다 그룹 하나씩."
+        },
+        {
+          "text": "네, 그룹을 그대로 적용해 줘.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ms": {
+      "messages": [
+        {
+          "text": "Kumpulkan semua pekerja mengikut kelayakan – satu kumpulan bagi setiap kelayakan."
+        },
+        {
+          "text": "Ya, terima kumpulan itu seperti yang dicadangkan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nb": {
+      "messages": [
+        {
+          "text": "Grupper alle ansatte etter kvalifikasjon – én gruppe per kvalifikasjon."
+        },
+        {
+          "text": "Ja, overta gruppene slik.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nl": {
+      "messages": [
+        {
+          "text": "Groepeer alle medewerkers op kwalificatie – één groep per kwalificatie."
+        },
+        {
+          "text": "Ja, neem de groepen zo over.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pl": {
+      "messages": [
+        {
+          "text": "Pogrupuj wszystkich pracowników według kwalifikacji – jedna grupa na kwalifikację."
+        },
+        {
+          "text": "Dobrze, przyjmij te grupy w tej postaci.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pt": {
+      "messages": [
+        {
+          "text": "Agrupa todos os colaboradores por qualificação – um grupo por qualificação."
+        },
+        {
+          "text": "Sim, aceita os grupos assim.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ro": {
+      "messages": [
+        {
+          "text": "Grupează toți angajații după calificare – un grup pentru fiecare calificare."
+        },
+        {
+          "text": "Da, preia grupurile așa.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "sv": {
+      "messages": [
+        {
+          "text": "Gruppera alla anställda efter kvalifikation – en grupp per kvalifikation."
+        },
+        {
+          "text": "Ja, ta över grupperna så här.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "th": {
+      "messages": [
+        {
+          "text": "จัดกลุ่มพนักงานทั้งหมดตามคุณสมบัติ – หนึ่งกลุ่มต่อหนึ่งคุณสมบัติ"
+        },
+        {
+          "text": "ใช่ ใช้กลุ่มตามนี้เลย",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "vi": {
+      "messages": [
+        {
+          "text": "Phân nhóm tất cả nhân viên theo chuyên môn – mỗi chuyên môn một nhóm."
+        },
+        {
+          "text": "Vâng, áp dụng các nhóm như vậy đi.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-CN": {
+      "messages": [
+        {
+          "text": "按资质把所有员工分组——每个资质一个组。"
+        },
+        {
+          "text": "是的，就这样采用这些分组。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-TW": {
+      "messages": [
+        {
+          "text": "依資質把所有員工分組——每個資質一個組。"
+        },
+        {
+          "text": "是的，就這樣採用這些分組。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    }
+  },
+  "klacksy-groups-mixed": {
+    "de": {
+      "messages": [
+        {
+          "text": "Gruppiere die Mitarbeitenden der Gruppe Winterthur nach Qualifikation – als Untergruppen von Winterthur."
+        },
+        {
+          "text": "Ja, übernimm die Gruppen so.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Group the employees of the Winterthur group by qualification – as subgroups of Winterthur."
+        },
+        {
+          "text": "Yes, apply the groups like that.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Regroupe les employés du groupe Winterthur par qualification – en sous-groupes de Winterthur."
+        },
+        {
+          "text": "Oui, reprends les groupes comme ça.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Raggruppa i collaboratori del gruppo Winterthur per qualifica – come sottogruppi di Winterthur."
+        },
+        {
+          "text": "Sì, conferma i gruppi così.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ar": {
+      "messages": [
+        {
+          "text": "جمّع موظفي مجموعة Winterthur حسب المؤهلات – كمجموعات فرعية من Winterthur."
+        },
+        {
+          "text": "نعم، اعتمد المجموعات هكذا.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "cs": {
+      "messages": [
+        {
+          "text": "Seskup zaměstnance ze skupiny Winterthur podle kvalifikace – jako podskupiny skupiny Winterthur."
+        },
+        {
+          "text": "Ano, převezmi skupiny takto.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "da": {
+      "messages": [
+        {
+          "text": "Gruppér medarbejderne i gruppen Winterthur efter kvalifikation – som undergrupper af Winterthur."
+        },
+        {
+          "text": "Ja, overtag grupperne sådan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "el": {
+      "messages": [
+        {
+          "text": "Ομαδοποίησε τους εργαζόμενους της ομάδας Winterthur ανά προσόν – ως υποομάδες του Winterthur."
+        },
+        {
+          "text": "Ναι, εφάρμοσε τις ομάδες έτσι.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "es": {
+      "messages": [
+        {
+          "text": "Agrupa a los empleados del grupo Winterthur por cualificación – como subgrupos de Winterthur."
+        },
+        {
+          "text": "Sí, acepta los grupos así.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "fi": {
+      "messages": [
+        {
+          "text": "Ryhmittele Winterthur-ryhmän työntekijät pätevyyden mukaan – Winterthur-ryhmän alaryhminä."
+        },
+        {
+          "text": "Kyllä, hyväksy ryhmät tällaisina.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "he": {
+      "messages": [
+        {
+          "text": "קבץ את העובדים בקבוצה Winterthur לפי הסמכה – כתת-קבוצות של Winterthur."
+        },
+        {
+          "text": "כן, אשר את הקבוצות כך.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "id": {
+      "messages": [
+        {
+          "text": "Kelompokkan karyawan di grup Winterthur berdasarkan kualifikasi – sebagai subgrup Winterthur."
+        },
+        {
+          "text": "Ya, terapkan grup seperti itu.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ja": {
+      "messages": [
+        {
+          "text": "Winterthurグループの従業員を資格別にグループ分けして – Winterthurのサブグループとして。"
+        },
+        {
+          "text": "はい、そのグループで確定して。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ko": {
+      "messages": [
+        {
+          "text": "Winterthur 그룹의 직원을 자격별로 그룹으로 묶어 줘 – Winterthur의 하위 그룹으로."
+        },
+        {
+          "text": "네, 그룹을 그대로 적용해 줘.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ms": {
+      "messages": [
+        {
+          "text": "Kumpulkan pekerja dalam kumpulan Winterthur mengikut kelayakan – sebagai subkumpulan Winterthur."
+        },
+        {
+          "text": "Ya, terima kumpulan itu seperti yang dicadangkan.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nb": {
+      "messages": [
+        {
+          "text": "Grupper de ansatte i gruppen Winterthur etter kvalifikasjon – som undergrupper av Winterthur."
+        },
+        {
+          "text": "Ja, overta gruppene slik.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "nl": {
+      "messages": [
+        {
+          "text": "Groepeer de medewerkers van de groep Winterthur op kwalificatie – als subgroepen van Winterthur."
+        },
+        {
+          "text": "Ja, neem de groepen zo over.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pl": {
+      "messages": [
+        {
+          "text": "Pogrupuj pracowników z grupy Winterthur według kwalifikacji – jako podgrupy Winterthur."
+        },
+        {
+          "text": "Dobrze, przyjmij te grupy w tej postaci.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "pt": {
+      "messages": [
+        {
+          "text": "Agrupa os colaboradores do grupo Winterthur por qualificação – como subgrupos de Winterthur."
+        },
+        {
+          "text": "Sim, aceita os grupos assim.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "ro": {
+      "messages": [
+        {
+          "text": "Grupează angajații din grupul Winterthur după calificare – ca subgrupuri ale grupului Winterthur."
+        },
+        {
+          "text": "Da, preia grupurile așa.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "sv": {
+      "messages": [
+        {
+          "text": "Gruppera de anställda i gruppen Winterthur efter kvalifikation – som undergrupper till Winterthur."
+        },
+        {
+          "text": "Ja, ta över grupperna så här.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "th": {
+      "messages": [
+        {
+          "text": "จัดกลุ่มพนักงานในกลุ่ม Winterthur ตามคุณสมบัติ – เป็นกลุ่มย่อยของ Winterthur"
+        },
+        {
+          "text": "ใช่ ใช้กลุ่มตามนี้เลย",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "vi": {
+      "messages": [
+        {
+          "text": "Phân nhóm nhân viên của nhóm Winterthur theo chuyên môn – thành các nhóm con của Winterthur."
+        },
+        {
+          "text": "Vâng, áp dụng các nhóm như vậy đi.",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-CN": {
+      "messages": [
+        {
+          "text": "把Winterthur组的员工按资质分组——作为Winterthur的子组。"
+        },
+        {
+          "text": "是的，就这样采用这些分组。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    },
+    "zh-TW": {
+      "messages": [
+        {
+          "text": "把Winterthur組的員工依資質分組——作為Winterthur的子組。"
+        },
+        {
+          "text": "是的，就這樣採用這些分組。",
+          "sendWhen": "notApplied"
+        }
+      ]
+    }
   }
 }

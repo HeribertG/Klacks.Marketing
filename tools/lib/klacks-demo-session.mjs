@@ -179,7 +179,28 @@ export async function newCultureContext(browser, options, culture, setup) {
   for (const script of setup.extraInitScripts ?? []) {
     await context.addInitScript(script.fn, script.arg);
   }
+  await redirectApi(context, options.apiUrl);
   return context;
+}
+
+/**
+ * The UI build always calls DEFAULT_API_URL; when the tool targets another backend (e.g. a second recording backend
+ * against a dedicated demo database), its HTTP and WebSocket traffic is rerouted there.
+ */
+async function redirectApi(context, apiUrl) {
+  if (apiUrl === DEFAULT_API_URL) return;
+  const target = new URL(apiUrl);
+  const fromHost = new URL(DEFAULT_API_URL).host;
+  await context.route((url) => url.host === fromHost, (route) => {
+    const url = new URL(route.request().url());
+    url.host = target.host;
+    return route.continue({ url: url.toString() });
+  });
+  await context.routeWebSocket((url) => url.host === fromHost, (ws) => {
+    const url = new URL(ws.url());
+    url.host = target.host;
+    ws.connectToServer(url.toString());
+  });
 }
 
 export async function waitForAppShell(page) {

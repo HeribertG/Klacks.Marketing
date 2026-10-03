@@ -191,15 +191,13 @@
                 }
             </div>
             <div class="lg:col-span-6">
-                <DemoVideo Culture="@Culture" VideoName="@DemoVideo.KlacksyPlansWeekVideoName" LabelKey="klacksyPlansWeek.videoLabel" CaptionKey="klacksyPlansWeek.caption"
-                           Width="1000" Height="720" FigureClass="mx-auto max-w-[1000px]">
-                    <Fallback>
-                        <MagnifiedImage Src="@ScreenshotSrc(Content.Klacksy.ImageFile)" Alt="@Content.Klacksy.ImageAlt" Caption="@Content.Klacksy.ImageCaption" />
-                    </Fallback>
-                </DemoVideo>
+                <MagnifiedImage Src="@ScreenshotSrc(Content.Klacksy.ImageFile)" Alt="@Content.Klacksy.ImageAlt" Caption="@Content.Klacksy.ImageCaption" />
             </div>
         </div>
     </section>
+
+    <!-- KLACKSY: AUFGABEN IM CHAT -->
+    <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Klacksy" />
 }
 
 @if (Content.Example is not null)

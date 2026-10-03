@@ -17,10 +17,12 @@
  * the group "Besondere Dienste Winterthur") in takes/shift-feature-takes.mjs, the scenario takes (scenario-create, scenario-autowizard, scenario-compare,
  * scenario-rule-violation; October of the demo group, the AutoWizard take plans the week 02.-08.11.; cleanup helper reset-scenario-demo.mjs) in takes/scenario-takes.mjs, the rule takes
  * (rest-conflict, rule-collision, rule-consecutive-days, rule-holiday-work; October / December of the demo group, findings shown live in the error list)
- * in takes/rule-takes.mjs. All takes of the website's carousels (work entry, container, timeline, route, shift features, scenarios, rules) share
+ * in takes/rule-takes.mjs, the Klacksy grouping takes (klacksy-groups-address, klacksy-groups-qualification, klacksy-groups-mixed; dedicated demo
+ * database klacks_marketing_grouping from grouping-demo/, backend must run against it) in takes/klacksy-grouping-takes.mjs; they share CHAT_VIEWPORT
+ * with klacksy-plans-week. All takes of the website's carousels (work entry, container, timeline, route, shift features, scenarios, rules) share
  * WORK_ENTRY_VIEWPORT (1280x800); the route takes and shift-qualification keep VIDEO_NOISE_CSS so the
  * distance toast of the optimization / the error toast of the refused booking stays visible.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -37,6 +39,7 @@ import { cursorInitScript, HumanMouse } from "./lib/cursor-overlay.mjs";
 import { ScreenRecorder } from "./lib/screen-recorder.mjs";
 import { DevOverlayGuard, DevOverlayViolationError } from "./lib/dev-overlay-guard.mjs";
 import { encodeRecording } from "./lib/video-encoder.mjs";
+import { SEL_ASSISTANT_INPUT, SKILL_ERROR_PREFIX, sendChatMessage } from "./lib/klacksy-chat.mjs";
 import {
   HALF,
   WORKS_API,
@@ -78,6 +81,7 @@ import {
   VIDEO_RULE_CONSECUTIVE_DAYS,
   VIDEO_RULE_HOLIDAY_WORK,
 } from "./takes/rule-takes.mjs";
+import { KLACKSY_GROUPING_CSS, KLACKSY_GROUPING_TAKE_RUNNERS, KLACKSY_GROUPING_VIDEOS } from "./takes/klacksy-grouping-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -92,7 +96,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -129,30 +133,17 @@ const DECEMBER = { year: 2026, month: 12, isoWeek: 50 };
 const PLAN_WEEK = { from: "2026-11-02", until: "2026-11-08" };
 const PROTECTED_MONTH = { from: "2026-10-01", until: "2026-10-31", expectedWorks: 118 };
 
-const RESULT_PREVIEW_CHARS = 600;
 const LOG_PREVIEW_CHARS = 200;
 
-const SEL_ASSISTANT_INPUT = "#assistant-chat-input";
-const SEL_ASSISTANT_SEND = "#assistant-chat-send-btn";
 
-const CHAT_STREAM_PART = "/assistant/chat/stream";
 const SCENARIOS_API = "/api/backend/AnalyseScenarios";
-const SSE_CONTENT = "content";
-const SSE_FUNCTION_CALL = "function_call";
-const SSE_FUNCTION_RESULT = "function_result";
-const SSE_METADATA = "metadata";
-const SSE_ERROR = "error";
 
-const CHAT_TURN_TIMEOUT_MS = 6 * 60 * 1000;
 const SCENARIO_READY_TIMEOUT_MS = 16 * 60 * 1000;
 const SCENARIO_POLL_MS = 5000;
-const STABLE_POLL_MS = 150;
-const STABLE_MAX_CHECKS = 40;
 
 const BEAT = { intro: 300, readAnswer: 3500, finalHold: 6000 };
 const CUT = Number.POSITIVE_INFINITY;
 const MOVE = { short: 400, normal: 600, drag: 850 };
-const TYPE_DELAY_MS = 55;
 const FAST_FACTOR = { validation: 4, llm: 12, wizard: 40 };
 const SCENARIO_READY = "scenarioReady";
 const NOT_ACCEPTED = "notAccepted";
@@ -162,7 +153,6 @@ const JOB_ID_PATTERN = /job ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-
 const ACCEPTED_SCENARIO_ID_PATTERN = /scenario ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}) accepted/i;
 const JOB_STATUS_RUNNING = "running";
 const JOB_STATUS_API = { start_autowizard: "/api/backend/AutoWizard/Status", start_wizard1: "/api/backend/Wizard/Status" };
-const SKILL_ERROR_PREFIX = "Error:";
 
 function readOptions() {
   const { values } = parseArgs({
@@ -260,60 +250,6 @@ async function resetPlanWeek(api, options, filter, report) {
   const left = worksIn(await api.schedule(filter), PLAN_WEEK.from, PLAN_WEEK.until).length;
   report.reset = { groupClients: groupClients.size, deletedWorks: works.length, deletedScenarios: overlapping.length, remainingWorks: left };
   if (left !== 0) throw new Error(`plan week still has ${left} works after reset`);
-}
-
-function parseSse(text) {
-  const turn = { calls: [], results: [], content: "", navigateTo: null, errors: [] };
-  for (const block of text.split("\n\n")) {
-    const event = (block.match(/^event: (.*)$/m) ?? [])[1];
-    const raw = (block.match(/^data: ([\s\S]*)$/m) ?? [])[1];
-    if (!event || !raw) continue;
-    let data;
-    try {
-      data = JSON.parse(raw);
-    } catch {
-      continue;
-    }
-    if (event === SSE_CONTENT) turn.content += data.text ?? "";
-    else if (event === SSE_FUNCTION_CALL) turn.calls.push({ name: data.functionName, parameters: data.parameters });
-    else if (event === SSE_FUNCTION_RESULT) turn.results.push({ name: data.functionName, result: String(data.functionResult ?? "").slice(0, RESULT_PREVIEW_CHARS) });
-    else if (event === SSE_METADATA && data.navigateTo) turn.navigateTo = data.navigateTo;
-    else if (event === SSE_ERROR) turn.errors.push(data.errorMessage);
-  }
-  return turn;
-}
-
-async function waitStable(locator) {
-  let previous = null;
-  for (let attempt = 0; attempt < STABLE_MAX_CHECKS; attempt++) {
-    const box = await locator.boundingBox();
-    if (box && previous && Math.abs(box.x - previous.x) < 1 && Math.abs(box.y - previous.y) < 1) return;
-    previous = box;
-    await locator.page().waitForTimeout(STABLE_POLL_MS);
-  }
-  throw new Error("element never came to rest");
-}
-
-async function sendChatMessage(take, text) {
-  const { page, recorder, mouse } = take;
-  const input = page.locator(SEL_ASSISTANT_INPUT);
-  await waitStable(input);
-  await mouse.clickLocator(input, MOVE.normal);
-  await input.pressSequentially(text, { delay: TYPE_DELAY_MS });
-  const typed = await input.inputValue();
-  if (typed !== text) throw new Error(`chat input holds "${typed}" instead of the prompt`);
-  const finished = page.waitForEvent("requestfinished", {
-    predicate: (r) => r.url().includes(CHAT_STREAM_PART),
-    timeout: CHAT_TURN_TIMEOUT_MS,
-  });
-  await mouse.clickLocator(page.locator(SEL_ASSISTANT_SEND), MOVE.short);
-  await recorder.beginFast(FAST_FACTOR.llm);
-  const request = await finished;
-  await recorder.endFast();
-  const response = await request.response();
-  const body = response ? await response.text().catch(() => "") : "";
-  await page.waitForTimeout(BEAT.readAnswer);
-  return { ...parseSse(body), requestBody: request.postDataJSON() };
 }
 
 function startedJob(turns) {
@@ -450,6 +386,11 @@ const TAKES = {
   [VIDEO_RULE_CONSECUTIVE_DAYS]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: RULE_TAKE_RUNNERS[VIDEO_RULE_CONSECUTIVE_DAYS] },
   [VIDEO_RULE_HOLIDAY_WORK]: { period: DECEMBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: RULE_TAKE_RUNNERS[VIDEO_RULE_HOLIDAY_WORK] },
   [VIDEO_KLACKSY_PLANS_WEEK]: { period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek },
+  ...Object.fromEntries(KLACKSY_GROUPING_VIDEOS.map((video) => [
+    video,
+    { period: OCTOBER, viewport: CHAT_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+${KLACKSY_GROUPING_CSS}`, run: KLACKSY_GROUPING_TAKE_RUNNERS[video], needsScript: true },
+  ])),
   ...Object.fromEntries(WORK_ENTRY_VIDEOS.map((video) => [
     video,
     { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: WORK_ENTRY_TAKE_RUNNERS[video], needsScript: true },

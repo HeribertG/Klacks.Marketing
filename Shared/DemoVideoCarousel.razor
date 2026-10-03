@@ -61,7 +61,7 @@
                      role="group" aria-roledescription="slide" aria-label="@SlideLabel()">
                     <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@current.TitleKey"
                                LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey" TitleClass="@SlideTitleClass"
-                               Width="@VideoWidth" Height="@VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
+                               Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
                 </div>
                 <button type="button" data-carousel-next
                         class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh(NextKey)" aria-controls="@SlideId"
@@ -92,8 +92,6 @@
     private const string SlideIdSuffix = "-slide";
     private const string SlideTitleClass = "text-xl md:text-2xl font-black text-primary mb-5 text-center";
     private const string PrefersReducedMotionJsFunction = "klacksCarouselControls.prefersReducedMotion";
-    private const int VideoWidth = 1280;
-    private const int VideoHeight = 800;
     private const int FirstSlideIndex = 0;
     private const int FadeDurationMs = 350;
 
