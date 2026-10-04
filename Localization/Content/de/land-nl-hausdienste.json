@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Schoonmaakbedrijven in den Niederlanden",
-    "titleHtml": "Jede Zuschlagsstufe <span class=\"text-secondary\">automatisch richtig.</span>",
-    "subtitle": "Klacks berechnet die Nacht-, Tag- und Abendzuschläge der CAO Schoonmaak automatisch und macht sichtbar, wenn die neue 15%-Meerarbeit-Regel ab 1.1.2026 ein Vertragsangebot nahelegt.",
+    "titleHtml": "Jede Zuschlagsstufe <span class=\"text-secondary\">im Blick.</span>",
+    "subtitle": "Klacks schreibt die hinterlegten Nacht-, Tag- und Abendzuschläge der CAO Schoonmaak als Zeitgutschrift gut und macht sichtbar, wenn die neue 15%-Meerarbeit-Regel ab 1.1.2026 ein Vertragsangebot nahelegt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für niederländische Schoonmaakteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Wie Klacks niederländische Schoonmaakbedrijven entlastet",
-    "subtitle": "Von der automatischen Toeslag-Berechnung bis zur rechtzeitigen Vertragsanpassung &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Toeslag-Gutschrift bis zur rechtzeitigen Vertragsanpassung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "Toeslagtabelle automatisch berechnet", "text": "Die Zuschlagsstufen der CAO Schoonmaak &mdash; Nacht 50%/30%, Tag 0%/50%, Abend 30%/50%, Feiertag 150% &mdash; hinterlegen Sie einmal als Zuschlagsregeln; danach ordnet Klacks jeden Dienst automatisch zu." },
+      { "icon": "schedule", "title": "Toeslagtabelle automatisch zugeordnet", "text": "Die Zuschlagsstufen der CAO Schoonmaak &mdash; Nacht 50%/30%, Tag 0%/50%, Abend 30%/50%, Feiertag 150% &mdash; hinterlegen Sie einmal als Zuschlagsregeln; danach ordnet Klacks jeden Dienst automatisch zu." },
       { "icon": "description", "title": "Q4-Meerarbeit im Blick behalten", "text": "Klacks macht sichtbar, wenn sich die durchschnittlichen Stunden im vierten Quartal der 15%-Schwelle nähern &mdash; damit das Vertragsangebot fristgerecht vorbereitet werden kann." },
-      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist gewahrt ist und eine Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch." },
+      { "icon": "event_available", "title": "Oproepkrachten geplant", "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist gewahrt ist und eine Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch." },
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objecten in Amsterdam-Zuid für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route, Team und Zuschläge." }

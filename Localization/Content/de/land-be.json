@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Unternehmen in Belgien | Paritair Comité, Sprachgesetz & Dienstplan-Reform 2026",
   "hero": {
     "badgeIcon": "gavel",
-    "badge": "Für Unternehmen in Belgien &middot; Alle Paritair Comités",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jedes Paritair Comité respektieren.</span>",
-    "subtitle": "Klacks kennt die Regeln Ihres Paritair Comité (CP/PC), steht in der Sprache jeder Betriebsstätte zur Verfügung und dokumentiert jede Abweichung &mdash; damit Sie die Reform 2026 im Blick behalten.",
+    "badge": "Für Unternehmen in Belgien &middot; Regeln je Paritair Comité konfigurierbar",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">Ihr Paritair Comité im Blick behalten.</span>",
+    "subtitle": "In Klacks hinterlegen Sie die Regeln Ihres Paritair Comité (CP/PC); es steht in der Sprache jeder Betriebsstätte zur Verfügung und dokumentiert jede Abweichung &mdash; damit Sie die Reform 2026 im Blick behalten.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Belgien",
     "screenshotLabel": "Dienstplan"
@@ -38,7 +38,7 @@
       {
         "icon": "place",
         "title": "Bis auf Gemeinschaftsebene",
-        "text": "Flämische, Französische und Deutschsprachige Gemeinschaft haben je einen eigenen Gemeinschaftsfeiertag (11. Juli, 27. September, 15. November) &mdash; passend hinterlegt, eine zusätzliche Gemeinde-Ebene braucht es dafür nicht."
+        "text": "Flämische, Französische und Deutschsprachige Gemeinschaft haben je einen eigenen Gemeinschaftsfeiertag (11. Juli, 27. September, 15. November) &mdash; als Feiertagsregeln selbst hinterlegt, eine zusätzliche Gemeinde-Ebene braucht es dafür nicht."
       },
       {
         "icon": "layers",
@@ -61,8 +61,8 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Paritair Comité individuell abgebildet",
-        "text": "Klacks bildet die Zuschläge und Arbeitszeitgrenzen des jeweils zugeordneten PC ab &mdash; ob PC 330, PC 317, PC 121 oder PC 140.03 &mdash; direkt in Ihrer Regel-Konfiguration. Benannte Regel-Sets pro Comité lassen sich als Länderprofil-Datei vorkonfigurieren und importieren &mdash; kundeneigene Anpassungen bleiben bei einem Re-Import erhalten."
+        "title": "Paritair Comité selbst hinterlegt",
+        "text": "Die Zuschläge und Arbeitszeitgrenzen Ihres zugeordneten PC &mdash; ob PC 330, PC 317, PC 121 oder PC 140.03 &mdash; hinterlegen Sie direkt in Ihrer Regel-Konfiguration; ein vorkonfiguriertes Regelpaket für Belgien oder einzelne Comités liefert Klacks nicht mit. Zuschläge schreibt Klacks als Zeitgutschrift gut."
       },
       {
         "icon": "translate",
@@ -92,14 +92,14 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Arbeitszeitgrenzen des zuständigen Paritair Comité und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die hinterlegten Arbeitszeitgrenzen und Zuschläge werden dabei genauso live berücksichtigt wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist direkt in die Klacks-Oberfläche eingebettet und hilft, PC-spezifische Regeln und Sprachvorgaben je Betriebsstätte im Blick zu behalten. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, keine Blackbox-Entscheidung.",
+    "text": "Klacksy ist direkt in die Klacks-Oberfläche eingebettet und hilft, die von Ihnen hinterlegten PC-Regeln und Sprachvorgaben je Betriebsstätte im Blick zu behalten. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten &mdash; nachvollziehbar nach hinterlegten Skills und Regeln, keine Blackbox-Entscheidung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },

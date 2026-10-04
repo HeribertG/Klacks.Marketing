@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Voor hotellerie &amp; gastronomie",
     "titleHtml": "Vroege, late, nachtdienst &mdash; <span class=\"text-secondary\">eerlijk gepland.</span>",
-    "subtitle": "Klacks plant bediening, keuken en verdieping &mdash; met gesplitste diensten, zon- en feestdagtoeslagen en wettelijke rusttijden die niet stilletjes te omzeilen zijn. Seizoenspieken en uitval vangt de planning automatisch op.",
+    "subtitle": "Klacks plant bediening, keuken en verdieping &mdash; met gesplitste diensten, zon- en feestdagtoeslagen en een controle van de wettelijke rusttijden die overtredingen direct zichtbaar maakt. Seizoenspieken en uitval vangt de planning automatisch op.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor dienstroosters in hotellerie en gastronomie",
     "screenshotLabel": "Tijdlijn"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Gesplitste diensten netjes gepland",
-        "text": "Klacks plant lunch- en avondblokken zo dat minimale rusttijden en dagelijkse maxima worden nageleefd &mdash; elke onderschrijding wordt direct zichtbaar gemaakt."
+        "text": "Klacks plant lunch- en avondblokken en toetst ze aan minimale rusttijden en dagelijkse maxima &mdash; elke onderschrijding wordt direct zichtbaar gemaakt."
       },
       {
         "icon": "timer",
         "title": "Rusttijden in beeld",
-        "text": "Wettelijke rusttijdgrenzen worden in realtime bewaakt &mdash; overtredingen worden meteen zichtbaar. Op verzoek blokkeert Klacks ze consequent: in de blokmodus kan een overtreding alleen met gedocumenteerde toestemming van de leidinggevende worden opgeslagen."
+        "text": "Wettelijke rusttijdgrenzen worden voortdurend getoetst &mdash; overtredingen worden meteen zichtbaar. Standaard waarschuwt Klacks; op verzoek kan een blokmodus voor de automatische planning worden ingeschakeld (planningsassistent, voorstellen, vervanging bij uitval)."
       },
       {
         "icon": "payments",
         "title": "Toeslagen automatisch",
-        "text": "Nacht-, zon- en feestdagtoeslagen berekent Klacks automatisch &mdash; per land en regelset configureerbaar, zonder handmatig nawerk bij de loonvoorbereiding."
+        "text": "Nacht-, zon- en feestdagtoeslagen schrijft Klacks automatisch als urentegoeden bij &mdash; per land en regelset configureerbaar, als basis voor de loonadministratie."
       },
       {
         "icon": "badge",

@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Saudi-Arabien",
     "titleHtml": "Schichtpläne, die <span class=\"text-secondary\">über Wochen im Gleichgewicht bleiben.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtbetrieb und überwacht den rollierenden 3-Wochen-Durchschnitt nach Art. 100 live &mdash; inklusive korrekt vergüteter Überstunden. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichtbetrieb und überwacht den rollierenden 3-Wochen-Durchschnitt nach Art. 100 live &mdash; mit Überstunden als Zeitgutschrift für Ihre Lohnabrechnung. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben, mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -23,18 +23,18 @@
     "subtitle": "Von der 3-Wochen-Durchschnittsrechnung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "balance", "title": "3-Wochen-Durchschnitt nach Art. 100 berechnet", "text": "Klacks überwacht den rollierenden 3-Wochen-Durchschnitt live und warnt, bevor der Durchschnitt von 8h/48h überschritten wird &mdash; auf Wunsch blockiert Klacks die Überschreitung hart, nur mit dokumentierter Vorgesetzten-Freigabe umgehbar." },
-      { "icon": "timelapse", "title": "9-Stunden-Grenze für nicht durchgehende Tätigkeit", "text": "Kategorien mit nicht durchgehender Tätigkeit werden korrekt mit bis zu 9 Stunden pro Tag geplant." },
-      { "icon": "gavel", "title": "Überstundenzuschlag automatisch berechnet", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (Art. 107) wird für jede Überstunde automatisch berechnet." },
+      { "icon": "balance", "title": "3-Wochen-Durchschnitt nach Art. 100 berechnet", "text": "Klacks überwacht den rollierenden 3-Wochen-Durchschnitt live und warnt, bevor der Durchschnitt von 8h/48h überschritten wird &mdash; auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart, bei manueller Planung bleibt es bei der Warnung." },
+      { "icon": "timelapse", "title": "9-Stunden-Grenze für nicht durchgehende Tätigkeit", "text": "Für Kategorien mit nicht durchgehender Tätigkeit lässt sich eine Tagesgrenze von bis zu 9 Stunden hinterlegen, gegen die Klacks die Planung prüft." },
+      { "icon": "gavel", "title": "Überstundenzuschlag als Zeitgutschrift", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (Art. 107) lässt sich als Zeitzuschlag hinterlegen; Klacks schreibt ihn für jede Überstunde als Zeitgutschrift gut, den Geldbetrag rechnet Ihr Lohnsystem." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Notaufnahme für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und den 3-Wochen-Durchschnitt." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtrotation und 3-Wochen-Ausgleich, ein Plan",
-    "text": "Klacks plant Schichten und zeigt frühzeitig, wenn der Durchschnitt über 3 Wochen von 8 Stunden pro Tag bzw. 48 Stunden pro Woche abzuweichen droht (Art. 100), und berechnet jede Überstunde automatisch mit dem gesetzlichen Zuschlag (Art. 107)."
+    "text": "Klacks plant Schichten und zeigt frühzeitig, wenn der Durchschnitt über 3 Wochen von 8 Stunden pro Tag bzw. 48 Stunden pro Woche abzuweichen droht (Art. 100), und schreibt jede Überstunde mit dem hinterlegten gesetzlichen Zuschlag (Art. 107) als Zeitgutschrift gut."
   },
   "showRoutePlanning": false,
   "cta": {

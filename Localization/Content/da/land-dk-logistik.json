@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Til transport &amp; logistik i Danmark",
-    "titleHtml": "Ruter, nattevindue, overenskomsttrin &mdash; <span class=\"text-secondary\">alt under kontrol.</span>",
-    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med den registrerede daglige maksimale arbejdstid i syne og det overenskomsttrin i Transport- og Logistikoverenskomsten, der stiger pr. 1. marts 2026, konfigurerbart lagt ind.",
+    "titleHtml": "Ruter, nattevindue, arbejdstider &mdash; <span class=\"text-secondary\">alt under kontrol.</span>",
+    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med den daglige maksimale arbejdstid, som I selv registrerer, i syne.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for ruter og chaufførindsatser i Danmark",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Sådan aflaster Klacks dansk logistik",
-    "subtitle": "Fra den optimerede rute til det automatisk opdaterede overenskomsttrin &mdash; alt spiller sammen.",
+    "subtitle": "Fra den optimerede rute til timegrundlaget for lønbogholderiet &mdash; alt spiller sammen.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "Nyt overenskomsttrin lagt ind med gyldighedsdato",
-        "text": "Lønstigningen pr. 1. marts 2026 kan forudregistreres med gyldighedsdato; fritvalgskontoen, der stiger til 10%, forbliver jeres lønbogholderis opgave, som Klacks leverer timegrundlaget for."
+        "title": "Overenskomsttrin: timegrundlag for lønbogholderiet",
+        "text": "Lønstigningen pr. 1. marts 2026 og fritvalgskontoens særlige opsparing, der stiger til 10%, afregner jeres lønbogholderi; Klacks leverer timegrundlaget til det."
       },
       {
         "icon": "badge",
@@ -56,8 +56,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Ugentlig fridøgn planlagt automatisk",
-        "text": "Klacks planlægger automatisk de 35 sammenhængende timers ugentlige hvile ind, før den næste ruteplan står klar."
+        "title": "Ugentlig hvile i syne",
+        "text": "Klacks planlægger den frie dag om ugen ind, før den næste ruteplan står klar; de 35 timers fridøgn som sammenhængende spænd tjekker Klacks ikke."
       },
       {
         "icon": "smart_toy",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nattevindue og overenskomsttrin, én plan",
-    "text": "Klacks advarer om en overskridelse af den registrerede daglige maksimale arbejdstid og anvender det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
+    "text": "Klacks advarer om en overskridelse af den registrerede daglige maksimale arbejdstid og leverer timegrundlaget for det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Oplev Klacks i jeres logistikvirksomhed",
-    "text": "Prøv i playgrounden, hvordan Klacks overtager ruter, nattevindue og overenskomsttrin &mdash; eller installer det direkte på jeres egen infrastruktur. Ingen licensafgifter og uden registrering."
+    "text": "Prøv i playgrounden, hvordan Klacks overtager ruter og nattevindue &mdash; eller installer det direkte på jeres egen infrastruktur. Ingen licensafgifter og uden registrering."
   }
 }

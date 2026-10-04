@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Per i servizi di sicurezza in Svizzera",
-    "titleHtml": "Ogni postazione presidiata. <span class=\"text-secondary\">Ogni supplemento corretto.</span>",
-    "subtitle": "Klacks presidia siti e ronde senza lacune &mdash; con il monte ore annuo e i supplementi orari del CCL AISS/VSSU considerati automaticamente. Installato sui Suoi locali, perché i Suoi dati di intervento e dei clienti restano da Lei.",
+    "titleHtml": "Ogni postazione presidiata. <span class=\"text-secondary\">Ogni supplemento di tempo registrato.</span>",
+    "subtitle": "Klacks presidia siti e ronde senza lacune &mdash; con il monte ore annuo e i supplementi orari del CCL AISS/VSSU che Lei imposta una sola volta. Installato sui Suoi locali, perché i Suoi dati di intervento e dei clienti restano da Lei.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per ronde e presidio dei siti in Svizzera",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Come Klacks alleggerisce i servizi di sicurezza svizzeri",
-    "subtitle": "Dalla postazione presidiata al supplemento orario corretto &mdash; tutto si incastra alla perfezione.",
+    "subtitle": "Dalla postazione presidiata al supplemento orario registrato &mdash; tutto si incastra alla perfezione.",
     "items": [
       {
         "icon": "shield",
@@ -41,18 +41,18 @@
       },
       {
         "icon": "schedule",
-        "title": "Supplemento orario calcolato automaticamente",
-        "text": "Le ore notturne e domenicali soggette a supplemento secondo il CCL AISS/VSSU vengono calcolate e documentate automaticamente da Klacks &mdash; come base per il supplemento di tempo del 10% sul Suo conto orario."
+        "title": "Supplemento orario come credito di tempo",
+        "text": "Le ore notturne e domenicali soggette a supplemento secondo il CCL AISS/VSSU vengono documentate automaticamente da Klacks, che accredita il supplemento di tempo del 10% impostato come credito di tempo sul Suo conto orario."
       },
       {
         "icon": "gavel",
         "title": "Soglia delle 210 ore sorvegliata in tempo reale",
-        "text": "La soglia mensile di 210 ore si definisce come limite massimo di periodo &mdash; Klacks la sorveglia in tempo reale, avverte per tempo prima che venga superata e blocca su richiesta ogni nuova assegnazione in caso di superamento. Il supplemento del 25% previsto dalla legge e la compensazione entro il termine di 3 mesi si calcolano sulla base delle ore così documentate."
+        "text": "La soglia mensile di 210 ore si definisce come limite massimo di periodo &mdash; Klacks la sorveglia in tempo reale, avverte per tempo prima che venga superata e blocca su richiesta ogni nuova assegnazione in caso di superamento nella pianificazione automatica; nella pianificazione manuale Klacks avvisa. Il supplemento del 25% previsto dalla legge e la compensazione entro il termine di 3 mesi si calcolano sulla base delle ore così documentate."
       },
       {
         "icon": "verified",
         "title": "Certificati verificati automaticamente",
-        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada. Su richiesta, Klacks blocca completamente l'assegnazione in caso di attestato obbligatorio scaduto &mdash; viene pianificato solo chi dispone di un attestato valido."
+        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada. Se un attestato obbligatorio manca o è scaduto, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale &mdash; viene pianificato solo chi dispone di un attestato valido."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Turno di notte, supplemento orario, un unico piano",
-    "text": "Klacks calcola automaticamente il supplemento di tempo per il lavoro notturno e domenicale come base per il Suo conto orario e sorveglia la soglia delle 210 ore in tempo reale &mdash; senza calcoli manuali."
+    "text": "Klacks accredita automaticamente il supplemento di tempo impostato per il lavoro notturno e domenicale come credito di tempo sul Suo conto orario e sorveglia la soglia delle 210 ore in tempo reale &mdash; senza calcoli manuali."
   },
   "showRoutePlanning": true,
   "cta": {

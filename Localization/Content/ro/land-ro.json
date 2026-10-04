@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks pentru companii din România | Pontaj, repaus & conformitate ITM",
+  "pageTitle": "Klacks pentru companii din România | Pontaj, repaus & dovadă pentru ITM",
   "hero": {
     "badgeIcon": "fact_check",
-    "badge": "Pontaj conform ITM &middot; Automatizarea repausului &middot; România",
+    "badge": "Pontaj demonstrabil &middot; Zile libere sub control &middot; România",
     "titleHtml": "Timp de lucru <span class=\"text-secondary\">demonstrabil fără nicio lacună.</span>",
-    "subtitle": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii (ITM), fără date biometrice. Zilele libere pe săptămână și sporurile pentru orele suplimentare sunt gestionate automat.",
+    "subtitle": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii (ITM), fără date biometrice. Zilele libere pe săptămână sunt verificate de Klacks, iar sporurile pentru orele suplimentare sunt ținute ca credit de timp.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Prezentare generală a planificării turelor Klacks pentru companii din România",
     "screenshotLabel": "Planificare"
@@ -15,7 +15,7 @@
     "items": [
       {
         "icon": "fact_check",
-        "title": "Pontaj zilnic, rezistent la controlul ITM",
+        "title": "Pontaj zilnic, demonstrabil",
         "text": "Art. 119 din Codul Muncii impune o evidență zilnică a orei de începere și de încheiere a programului pentru fiecare angajat, prezentabilă la cererea Inspecției Muncii (ITM) &mdash; nu există o formă obligatorie, dar demonstrabilitatea fără nicio lacună este esențială."
       },
       {
@@ -61,7 +61,7 @@
     "items": [
       {
         "icon": "fact_check",
-        "title": "Pontaj zilnic documentat conform ITM",
+        "title": "Pontaj zilnic documentat demonstrabil",
         "text": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii."
       },
       {
@@ -72,12 +72,12 @@
       {
         "icon": "event_repeat",
         "title": "Zilele libere pe săptămână sub control",
-        "text": "Klacks verifică dacă pe săptămână rămâne numărul stabilit de zile libere și face vizibile nerespectările pentru fiecare persoană. Dacă repausul săptămânal de 48 de ore cade sâmbăta/duminica nu este verificat de Klacks, iar sporul de 150% conform Deciziei ÎCCJ nr. 415/2025 pentru repausul cumulat nu este calculat de Klacks. La cerere, Klacks blochează consecvent o nouă încălcare a numărului de zile libere: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
+        "text": "Klacks verifică dacă pe săptămână rămâne numărul stabilit de zile libere și face vizibile nerespectările pentru fiecare persoană. Dacă repausul săptămânal de 48 de ore cade sâmbăta/duminica nu este verificat de Klacks, iar sporul de 150% conform Deciziei ÎCCJ nr. 415/2025 pentru repausul cumulat nu este calculat de Klacks. La cerere, Klacks blochează consecvent o nouă încălcare a numărului de zile libere în planificarea automată (mod de blocare, configurabil pe tip de regulă); în planificarea manuală se rămâne la avertisment."
       },
       {
         "icon": "schedule",
-        "title": "Spor pentru orele suplimentare calculat automat",
-        "text": "Klacks calculează automat sporul de cel puțin 75% pentru orele suplimentare; compensarea cu timp liber în cadrul termenului de 90 de zile nu este planificată și nici monitorizată de Klacks."
+        "title": "Spor de timp pentru orele suplimentare, creditat automat",
+        "text": "Sporul de cel puțin 75% pentru orele suplimentare este creditat automat de Klacks sub formă de credit de timp; compensarea cu timp liber în cadrul termenului de 90 de zile nu este planificată și nici monitorizată de Klacks."
       },
       {
         "icon": "shield_lock",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Descoperiți Klacks în compania dumneavoastră",
-    "text": "Încercați în Playground cum documentează Klacks timpul de lucru, verifică perioadele de repaus și calculează sporurile pentru orele suplimentare &mdash; fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum documentează Klacks timpul de lucru, verifică perioadele de repaus și ține sporurile pentru orele suplimentare ca credit de timp &mdash; fără taxe de licență și fără înregistrare."
   }
 }

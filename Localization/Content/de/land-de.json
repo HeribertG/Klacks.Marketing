@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Deutschland-Datenschutz",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl, auf Wunsch lokal gehostet. So bleiben Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Deutschland",
     "screenshotLabel": "Dienstplan"
@@ -67,7 +67,7 @@
       {
         "icon": "gavel",
         "title": "ArbZG-Ruhezeiten automatisch geprüft",
-        "text": "Die 11-Stunden-Ruhezeit und die Höchstarbeitszeiten nach §§ 3, 5 und 6 ArbZG werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Auf Wunsch blockiert Klacks solche Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Die 11-Stunden-Ruhezeit und die Höchstarbeitszeiten nach §§ 3, 5 und 6 ArbZG werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Auf Wunsch blockiert Klacks solche Verstöße in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "route",
@@ -87,7 +87,7 @@
       {
         "icon": "receipt_long",
         "title": "DATEV-Export",
-        "text": "Lohn-Bewegungsdaten gehen direkt im DATEV-Format an Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
+        "text": "Stunden je Lohnart exportieren Sie als Datei im DATEV-Format (LuG) für Ihre Lohnbuchhaltung &mdash; ohne Doppelerfassung."
       },
       {
         "icon": "science",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Ausfall, keine Excel-Odyssee",
-    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten, ArbZG-konformen Ersatz &mdash; die Planung bestätigt mit einem Klick, ohne dass Daten das Haus verlassen."
+    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten Ersatz samt ArbZG-Prüfung &mdash; die Planung bestätigt mit einem Klick, ohne dass Daten das Haus verlassen."
   },
   "showRoutePlanning": false,
   "cta": {

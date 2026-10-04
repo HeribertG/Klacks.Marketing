@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pro logistiku &amp; dopravu v Česku",
     "titleHtml": "Trasy, pracovní doba, termíny &mdash; <span class=\"text-secondary\">všechno pod kontrolou.</span>",
-    "subtitle": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby jako doplněk k záznamům tachografu pro 56denní povinnost dokladování, kontroluje jednotlivý 60hodinový týden v rámci 26týdenního průměru a čistě odděluje sjednanou pracovní pohotovost od skutečných výjezdů. Trasy jsou automaticky optimalizované.",
+    "subtitle": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby jako doplněk k záznamům tachografu pro 56denní povinnost dokladování a kontroluje jednotlivý 60hodinový týden v rámci 26týdenního průměru; vlastní typ času pro pracovní pohotovost Klacks nezná. Trasy jsou automaticky optimalizované.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro trasy a nasazení řidičů v Česku",
     "screenshotLabel": "Časová osa"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Jak Klacks ulehčuje práci v logistice v Česku",
-    "subtitle": "Od optimalizované trasy až po čistě oddělenou pracovní pohotovost &mdash; vše do sebe zapadá.",
+    "subtitle": "Od optimalizované trasy až po bezezbytkovou dokumentaci &mdash; vše do sebe zapadá.",
     "items": [
       { "icon": "route", "title": "Trasy automaticky optimalizované", "text": "Klacks seřadí zastávky do nejsmysluplnějšího pořadí &mdash; krátké cesty, dodržená časová okna, méně jízd naprázdno." },
       { "icon": "fact_check", "title": "Doba služby bezezbytku dokumentována", "text": "Klacks bezezbytku dokumentuje dobu služby a pracovní doby a má je kdykoli připravené k dispozici &mdash; jako doplněk k samostatně předkládaným záznamům tachografu pro 56denní povinnost dokladování." },
       { "icon": "schedule", "title": "60hodinový týden kontrolován v 26týdenním průměru", "text": "Klacks umožňuje jednotlivé 60hodinové týdny a v reálném čase hlídá klouzavý 26týdenní průměr &mdash; datum nástupu do zaměstnání přitom správně zohledňuje a upozorní, než se limit překročí. 10hodinový limit u noční práce lze zadat pouze jako obecnou maximální denní pracovní dobu, například ve smlouvě vašich nočních řidičů; samostatný limit jen pro noční směny Klacks nezná." },
-      { "icon": "call", "title": "Pracovní pohotovost čistě oddělená", "text": "Klacks automaticky rozlišuje mezi sjednanou pracovní pohotovostí (10% příplatek) a skutečným výjezdem, který se ihned počítá jako přesčas." },
-      { "icon": "shield_lock", "title": "Nainstalovaný u vás: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o trasách i řidičích zůstávají u vás, a to i u AI funkcí." },
+      { "icon": "call", "title": "Pracovní pohotovost bez vlastního typu času", "text": "Vlastní typ času pro pracovní pohotovost Klacks nezná: skutečný výjezd se plánuje a eviduje jako běžná služba a vzniklé přesčasy Klacks zviditelní." },
+      { "icon": "shield_lock", "title": "Nainstalovaný u vás: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o trasách i řidičích zůstávají u vás; u AI funkcí na přání s lokálně provozovaným modelem." },
       { "icon": "smart_toy", "title": "Klacksy rozumí vaší větě", "text": "„Naplánuj trasy na zítra, řidič Novák je nemocný“ stačí &mdash; Klacksy spustí nové plánování." }
     ]
   },
   "example": {
     "eyebrow": "Konkrétně",
     "title": "56 dní, 60hodinový týden, pracovní pohotovost",
-    "text": "Klacks bezezbytku dokumentuje dobu služby za posledních 56 dní jako doplněk k záznamům tachografu, v reálném čase hlídá klouzavý 26týdenní průměr a skutečně čerpanou pracovní pohotovost rovnou počítá jako přesčas &mdash; bez ručního přepočítávání."
+    "text": "Klacks bezezbytku dokumentuje dobu služby za posledních 56 dní jako doplněk k záznamům tachografu, v reálném čase hlídá klouzavý 26týdenní průměr a skutečný výjezd z pracovní pohotovosti eviduje jako pracovní dobu &mdash; bez ručního přepočítávání."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Zažijte Klacks ve svém logistickém provozu",
-    "text": "Vyzkoušejte si v Playgroundu, jak Klacks plánuje trasy, pracovní dobu a pracovní pohotovost &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Žádné licenční poplatky a bez registrace."
+    "text": "Vyzkoušejte si v Playgroundu, jak Klacks plánuje trasy a pracovní dobu &mdash; nebo si ho nainstalujte přímo na vlastní infrastrukturu. Žádné licenční poplatky a bez registrace."
   }
 }

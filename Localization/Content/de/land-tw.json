@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Taiwan | 休息日-Zuschlagsstaffel & Vier-Wochen-Flex automatisiert",
+  "pageTitle": "Klacks für Unternehmen in Taiwan | 休息日-Zeitzuschläge & Vier-Wochen-Flex im Blick",
   "hero": {
     "badgeIcon": "gavel",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; 勞動基準法-konform",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede 休息日-Stunde richtig zählen.</span>",
-    "subtitle": "Klacks berechnet die Zuschläge für Arbeit am 休息日 und 例假日, überwacht die monatlichen Überstunden-Grenzen und den 11-Stunden-Schichtabstand automatisch &mdash; und hält Personaldaten dank bei Ihnen installiertem Betrieb im eigenen Firmennetz, ganz im Sinne des PDPA (個人資料保護法).",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Prüft gegen das 勞動基準法",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede 休息日-Stunde im Blick behalten.</span>",
+    "subtitle": "Klacks schreibt für Arbeit am 休息日 und 例假日 Zeitzuschläge als Stunden gut, überwacht die monatlichen Überstunden-Grenzen und warnt bei Unterschreitung des 11-Stunden-Schichtabstands &mdash; und läuft bei Ihnen installiert im eigenen Firmennetz; mit lokalem KI-Modell verlassen Personaldaten dieses Netz nicht, ganz im Sinne des PDPA (個人資料保護法).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Taiwan",
     "screenshotLabel": "Dienstplan"
@@ -57,12 +57,12 @@
   },
   "solutions": {
     "title": "Wie Klacks taiwanische Betriebe entlastet",
-    "subtitle": "Von der korrekten 休息日-Staffel bis zur Vier-Wochen-Flexibilisierung &mdash; alles greift ineinander.",
+    "subtitle": "Von der 休息日-Zeitgutschrift bis zur Vier-Wochen-Flexibilisierung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
-        "title": "休息日-Staffel automatisch berechnet",
-        "text": "Klacks unterscheidet über getrennte Wochenend-Zuschläge automatisch zwischen dem 休息日 und der Verdoppelung (加倍) am 例假日 &mdash; keine Verwechslung mehr zwischen den beiden Ruhetag-Arten. Die stundenweise Staffel am 休息日 (1,34× / 1,67× / 2,67×, § 24 LSA) bildet Klacks nicht ab; hinterlegt ist ein Satz pro Tag."
+        "title": "休息日 und 例假日 getrennt gutgeschrieben",
+        "text": "Klacks unterscheidet über getrennte Wochenend-Zeitzuschläge zwischen dem 休息日 und der Verdoppelung (加倍) am 例假日 und schreibt sie als Stunden gut &mdash; keine Verwechslung mehr zwischen den beiden Ruhetag-Arten. Die stundenweise Staffel am 休息日 (1,34× / 1,67× / 2,67×, § 24 LSA) bildet Klacks nicht ab; hinterlegt ist ein Satz pro Tag."
       },
       {
         "icon": "hourglass_top",
@@ -72,17 +72,17 @@
       {
         "icon": "bedtime",
         "title": "11-Stunden-Schichtabstand überwacht",
-        "text": "Klacks warnt bei jeder Schichtfolge, die den gesetzlichen 11-Stunden-Abstand unterschreitet &mdash; und macht so das Bußgeldrisiko von NT$ 20.000 bis 1.000.000 sichtbar (§ 34 / § 79 LSA). Auf Wunsch blockiert Klacks einen neuen Verstoß konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks warnt bei jeder Schichtfolge, die den gesetzlichen 11-Stunden-Abstand unterschreitet &mdash; und macht so das Bußgeldrisiko von NT$ 20.000 bis 1.000.000 sichtbar (§ 34 / § 79 LSA). Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "event_repeat",
         "title": "Vier-Wochen-Flex &amp; 12-Tage-Grenze abgebildet",
-        "text": "Für die Vier-Wochen-Flexibilisierung nach § 30-1 LSA hinterlegen Sie bis zu 10 Stunden Tagesarbeitszeit und höchstens 12 aufeinanderfolgende Arbeitstage als Grenzen &mdash; Klacks prüft beide. Die freien Tage zählt Klacks pro Kalenderwoche, nicht als 2 例假 pro 14 Tage oder 8 freie Tage pro 4 Wochen. Auf Wunsch blockiert Klacks einen Verstoß gegen die freien Tage konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Für die Vier-Wochen-Flexibilisierung nach § 30-1 LSA hinterlegen Sie bis zu 10 Stunden Tagesarbeitszeit und höchstens 12 aufeinanderfolgende Arbeitstage als Grenzen &mdash; Klacks prüft beide. Die freien Tage zählt Klacks pro Kalenderwoche, nicht als 2 例假 pro 14 Tage oder 8 freie Tage pro 4 Wochen. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße gegen die freien Tage in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Datenhoheit nach PDPA",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Firmennetz nicht, das KI-Modell wählen Sie selbst. Das stärkt die PDPA-Compliance (個人資料保護法) generell, unabhängig von einzelnen Datenkategorien."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Mit lokalem KI-Modell verlassen Personaldaten Ihr Firmennetz nicht; das KI-Modell wählen Sie selbst. Das unterstützt die PDPA-Compliance (個人資料保護法) generell, unabhängig von einzelnen Datenkategorien."
       },
       {
         "icon": "smart_toy",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; der 11-Stunden-Schichtabstand (§ 34 LSA) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; der 11-Stunden-Schichtabstand (§ 34 LSA) und Zeitzuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "休息日-Staffel und 138-Stunden-Fenster, ein Blick",
-    "text": "Klacks erkennt automatisch, ob eine Zusatzschicht auf den 休息日 oder den 例假日 fällt, wendet den passenden Zuschlag an und zeigt, ob das rollierende 138-Stunden-Fenster über die letzten drei Monate noch Spielraum lässt &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, ob eine Zusatzschicht auf den 休息日 oder den 例假日 fällt, schreibt den passenden Zeitzuschlag gut und zeigt, ob das rollierende 138-Stunden-Fenster über die letzten drei Monate noch Spielraum lässt &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks 休息日-Zuschläge, Überstunden-Grenzen und Schichtabstände automatisiert &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks 休息日-Zeitzuschläge gutschreibt und Überstunden-Grenzen und Schichtabstände prüft &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

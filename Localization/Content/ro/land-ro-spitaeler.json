@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Pentru spitale &amp; clinici din România",
     "titleHtml": "Planificări de tură <span class=\"text-secondary\">care funcționează perfect după Gardă.</span>",
-    "subtitle": "Klacks planifică secțiile și serviciile de gardă non-stop, 24 de ore din 24 &mdash; cu repausul de 24 de ore după fiecare Gardă și săptămâna de lucru de 35 de ore prevăzută de lege pentru medici, luate automat în calcul.",
+    "subtitle": "Klacks planifică secțiile și serviciile de gardă non-stop, 24 de ore din 24 &mdash; cu repausul de 24 de ore după fiecare Gardă și săptămâna de lucru de 35 de ore prevăzută de lege pentru medici avute în vedere.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grila de planificare Klacks pentru spitale din România",
     "screenshotLabel": "Planificare"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea spitalelor din România",
-    "subtitle": "De la repausul corect după Gardă până la acoperirea 24/7 &mdash; totul se îmbină perfect.",
+    "subtitle": "De la repausul după Gardă până la acoperirea 24/7 &mdash; totul se îmbină perfect.",
     "items": [
       {
         "icon": "schedule",
@@ -41,8 +41,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Repausul de 24 de ore după Gardă, planificat automat",
-        "text": "Klacks planifică automat dreptul la repaus de 24 de ore după fiecare serviciu de gardă &mdash; inclusiv în cazul unei Gardă în zilele de duminică sau de sărbătoare legală."
+        "title": "Repausul de 24 de ore după Gardă, luat automat în considerare",
+        "text": "Klacks ia automat în considerare la planificare dreptul la repaus de 24 de ore după fiecare serviciu de gardă &mdash; inclusiv în cazul unei Gardă în zilele de duminică sau de sărbătoare legală."
       },
       {
         "icon": "groups",
@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "Săptămâna de 35 de ore sub control",
-        "text": "Klacks monitorizează continuu săptămâna de lucru de 35 de ore prevăzută de lege pentru medici. La cerere, Klacks blochează consecvent o depășire &mdash; o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului."
+        "text": "Klacks monitorizează continuu săptămâna de lucru de 35 de ore prevăzută de lege pentru medici. La cerere, Klacks blochează consecvent o depășire în planificarea automată; în planificarea manuală se rămâne la avertisment."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Gardă, repaus, un singur plan",
-    "text": "Klacks planifică automat repausul de 24 de ore după fiecare Gardă și semnalează din timp când un deficit de personal impune recuperarea normei zilnice."
+    "text": "Klacks ia automat în considerare repausul de 24 de ore după fiecare Gardă și semnalează din timp când un deficit de personal impune recuperarea normei zilnice."
   },
   "showRoutePlanning": false,
   "cta": {

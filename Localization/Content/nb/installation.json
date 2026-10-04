@@ -1,11 +1,11 @@
 {
   "pageTitle": "Installer Klacks: veiledet installasjonsprogram eller Docker Compose med landspakke | Klacks",
-  "metaDescription": "Installer Klacks på din egen infrastruktur: veiledet installasjonsprogram eller Docker Compose-stack, forhåndskonfigurert med helligdager, arbeidstidsregler og tillegg for landet ditt. Ingen lisensavgifter, åpen kildekode, uten registrering.",
+  "metaDescription": "Installer Klacks på din egen infrastruktur: veiledet installasjonsprogram eller Docker Compose-stack, forhåndskonfigurert med helligdager, arbeidstidsregler og &ndash; der de er definert for landet ditt &ndash; tillegg. Ingen lisensavgifter, åpen kildekode, uten registrering.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installasjon &middot; Ingen lisensavgifter &amp; åpen kildekode",
     "titleHtml": "Kjør Klacks selv &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
-    "subtitle": "To veier, ett resultat: det veiledede installasjonsprogrammet eller Docker Compose-stacken for ditt eget oppsett. Landspakken leveres med helligdager, arbeidstidsregler, tillegg og bransjeforhåndsinnstillinger for landet ditt &mdash; uten registrering, uten lisenskostnader."
+    "subtitle": "To veier, ett resultat: det veiledede installasjonsprogrammet eller Docker Compose-stacken for ditt eget oppsett. Landspakken leveres med helligdager, arbeidstidsregler og bransjeforhåndsinnstillinger for landet ditt (tillegg der de er definert for landet) &mdash; uten registrering, uten lisenskostnader."
   },
   "industry": {
     "eyebrow": "Landspakke",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Bare profilen &mdash; for eksisterende installasjoner",
-    "text": "Kjører Klacks allerede? Profilen (JSON) inneholder landsforhåndsinnstillingene &mdash; helligdager, arbeidstidsregler, tillegg og bransjer &mdash; og tas i bruk ved første oppstart av en installasjon. Den er også veien for å legge til en ny bransje med tilhørende forhåndsinnstillinger senere.",
+    "text": "Kjører Klacks allerede? Profilen (JSON) inneholder landsforhåndsinnstillingene &mdash; helligdager, arbeidstidsregler, tillegg (der de er definert for landet) og bransjer &mdash; og tas i bruk ved første oppstart av en installasjon. Den er også veien for å legge til en ny bransje med tilhørende forhåndsinnstillinger senere.",
     "downloadLabel": "Last ned profil (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Godt å vite",
     "items": [
       { "icon": "code", "title": "Åpen kildekode (AGPL-3.0)", "text": "Hele kildekoden er offentlig på GitHub under AGPL-3.0 &mdash; ingen lisenskostnader, ingen leverandørinnlåsing." },
-      { "icon": "storage", "title": "Dataene blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og vaktplandata forlater aldri serveren din &mdash; det finnes ingen tvungen skyløsning." },
+      { "icon": "storage", "title": "Dataene blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og vaktplandata ligger på serveren din &mdash; det finnes ingen tvungen skyløsning. Bare hvis du velger en ekstern KI-leverandør, sendes forespørsler dit; med en lokal modell blir alt i huset." },
       { "icon": "update", "title": "Oppdateringer", "text": "Installasjonen låser den sist utgitte versjonen. En oppdateringstjeneste i stacken tar automatisk i bruk nye utgitte versjoner." },
       { "icon": "lock", "title": "HTTPS fra start", "text": "Installasjonsprogrammet genererer et selvsignert sertifikat for å komme i gang &mdash; du kan når som helst bytte til ditt eget sertifikat. Bytt det opprinnelige passordet rett etter første innlogging." }
     ]

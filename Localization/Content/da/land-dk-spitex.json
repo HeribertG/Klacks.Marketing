@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Til hjemmeplejen i Danmark",
     "titleHtml": "Mere tid til pleje, <span class=\"text-secondary\">mindre til vagtplan-administration.</span>",
-    "subtitle": "Klacks planlægger ruter og vagter automatisk &mdash; og dokumenterer timerne til den nye fritvalgsordning fra OK26. Installeret hos jer, så patientdata aldrig forlader jeres institution.",
+    "subtitle": "Klacks planlægger ruter og vagter automatisk &mdash; og dokumenterer timerne til den nye fritvalgsordning fra OK26. Installeret hos jer, så patientdata ikke behøver forlade jeres institution &mdash; efter ønske med en lokalt hostet AI-model.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for ruter i den danske hjemmepleje",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Sådan aflaster Klacks den danske hjemmepleje",
-    "subtitle": "Fra den optimerede rute til den individuelle fritvalgsordning-konto &mdash; alt spiller sammen.",
+    "subtitle": "Fra den optimerede rute til timegrundlaget for fritvalgsordningen &mdash; alt spiller sammen.",
     "items": [
       {
         "icon": "route",
@@ -46,13 +46,13 @@
       },
       {
         "icon": "event_repeat",
-        "title": "Omlægningstillæg som fast beløb",
-        "text": "Skal en omlægning ske med kortere varsel end 4 dage, bogfører I det som fast beløb registrerede tillæg på 30,85 DKK for hver omlagt time. Om 4-dages-fristen er underskredet, tjekker Klacks ikke automatisk."
+        "title": "Omlægning: grundlag for tillægget",
+        "text": "Skal en omlægning ske med kortere varsel end 4 dage, registrerer I de berørte timer i Klacks; tillægget på 30,85 DKK for hver omlagt time afregner jeres lønbogholderi. Om 4-dages-fristen er underskredet, tjekker Klacks ikke automatisk."
       },
       {
         "icon": "call_split",
-        "title": "Delte tjenester tillagt korrekt",
-        "text": "Klacks genkender automatisk delt tjeneste og beregner det overenskomstmæssige tillæg for hver berørt medarbejder."
+        "title": "Delte tjenester: grundlag for tillægget",
+        "text": "Det overenskomstmæssige tillæg for delt tjeneste afregner jeres lønbogholderi; Klacks leverer timerne for hver plejemedarbejder til det."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Omlægning og fritvalgsordning, én plan",
-    "text": "Klacks advarer ved en omlægning under 4 dage om tillægget på 30,85 DKK pr. time, bogfører det som registreret fast beløb for hver omlagt time og dokumenterer samtidig de timer, der er relevante for fritvalgsordningen, for hver medarbejder &mdash; som pålideligt grundlag for lønbogholderiet."
+    "text": "Klacks registrerer timerne ved en omlægning under 4 dage, som jeres lønbogholderi afregner tillægget på 30,85 DKK pr. time på grundlag af, og dokumenterer samtidig de timer, der er relevante for fritvalgsordningen, for hver plejemedarbejder &mdash; som pålideligt grundlag for lønbogholderiet."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (opieka domowa) in Polen",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive korrekt erfasster Wegzeit zwischen Klient:innen. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit hinterlegbarer Wegzeit zwischen Klient:innen. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Polen",
     "screenshotLabel": "Timeline"
@@ -23,17 +23,17 @@
     "subtitle": "Von der automatischen Tour bis zur belastbaren Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto oder zu Fuß." },
-      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Klient:innen werden automatisch als Arbeitszeit gerechnet &mdash; inklusive der Sonderregel für die erste Fahrt bei bestehender Meldepflicht." },
-      { "icon": "fact_check", "title": "Dokumentation gegen Umqualifizierungs-Risiko", "text": "Klacks dokumentiert Einsatzzeiten, Orte und Weisungen lückenlos &mdash; eine hilfreiche Grundlage, falls die PIP im Rahmen der Beweislastumkehr die Vertragsform prüft." },
+      { "icon": "schedule", "title": "Wegzeit als Arbeitszeit erfassbar", "text": "Die Fahrzeit zwischen Klient:innen lässt sich als feste Wegzeit je Dienst hinterlegen und zählt dann als Arbeitszeit; eine streckenabhängige Berechnung oder die Sonderregel für die erste Fahrt bei Meldepflicht kennt Klacks nicht." },
+      { "icon": "fact_check", "title": "Dokumentation gegen Umqualifizierungs-Risiko", "text": "Klacks dokumentiert Einsatzzeiten und Einsatzorte lückenlos &mdash; eine hilfreiche Grundlage, falls die PIP im Rahmen der Beweislastumkehr die Vertragsform prüft." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, Vertragsform, ein Nachweis",
-    "text": "Klacks zählt die erfasste Fahrzeit zwischen Klient:innen als Arbeitszeit und dokumentiert Einsatzorte und Zeiten lückenlos &mdash; eine solide Grundlage, falls die PIP die Vertragsform einer umowa zlecenie prüft."
+    "text": "Klacks zählt die je Dienst hinterlegte Wegzeit zwischen Klient:innen als Arbeitszeit und dokumentiert Einsatzorte und Zeiten lückenlos &mdash; eine solide Grundlage, falls die PIP die Vertragsform einer umowa zlecenie prüft."
   },
   "showRoutePlanning": true,
   "cta": {

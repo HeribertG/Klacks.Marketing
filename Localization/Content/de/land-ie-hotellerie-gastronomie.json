@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
     "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">fair geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage in Irland &mdash; mit geteilten Diensten, Sonn- und Feiertags-Zuschlägen und gesetzlichen Ruhezeiten, die sich nicht still umgehen lassen. Saisonspitzen und Ausfälle fängt die Planung automatisch ab.",
+    "subtitle": "Klacks plant Service, Küche und Etage in Irland &mdash; mit geteilten Diensten, Sonn- und Feiertags-Zuschlägen und gesetzlichen Ruhezeiten, bei deren Unterschreitung Klacks warnt. Saisonspitzen und Ausfälle hilft die Planung abzufangen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie in Irland",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Geteilte Dienste sauber geplant",
-        "text": "Klacks plant Mittags- und Abendblöcke so, dass Mindestruhezeiten und Tageshöchstzeiten eingehalten werden &mdash; jede Unterschreitung wird sofort sichtbar gemacht."
+        "text": "Klacks plant Mittags- und Abendblöcke und prüft dabei Mindestruhezeiten und Tageshöchstzeiten &mdash; jede Unterschreitung wird sofort sichtbar gemacht."
       },
       {
         "icon": "timer",
         "title": "Ruhezeiten im Blick",
-        "text": "Gesetzliche Ruhezeit-Grenzen werden in Echtzeit überwacht &mdash; Verstöße werden sofort sichtbar. Auf Wunsch blockiert Klacks sie konsequent: Im Block-Modus lässt sich ein Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Von Ihnen hinterlegte gesetzliche Ruhezeit-Grenzen werden in Echtzeit überwacht &mdash; Verstöße werden sofort sichtbar. Auf Wunsch blockiert Klacks sie in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung) im Block-Modus; bei manueller Planung warnt Klacks."
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Nacht-, Sonn- und Feiertags-Zuschläge rechnet Klacks automatisch aus &mdash; pro Land und Regelwerk konfigurierbar, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zuschläge als Zeitgutschrift",
+        "text": "Nacht-, Sonn- und Feiertags-Zuschläge schreibt Klacks als Zeitgutschrift in Stunden gut &mdash; pro Land und Regelwerk konfigurierbar, als Stundenbasis für Ihre Lohnvorbereitung."
       },
       {
         "icon": "badge",

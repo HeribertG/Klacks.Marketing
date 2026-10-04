@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "Minggu kerja 45 jam dipantau secara automatik", "text": "Klacks sentiasa menyemak sama ada had 45 jam (Section 60A) dan had harian 8 jam dipatuhi." },
       { "icon": "schedule", "title": "Waktu kerja harian sentiasa dipantau", "text": "Klacks menjumlahkan jam kerja setiap hari dan menyemak had harian yang ditetapkan. Jangka masa 10 jam antara permulaan kerja pertama dan waktu pulang (Section 60A(1)) tidak disemak oleh Klacks." },
       { "icon": "pause_circle", "title": "Rehat sebagai blok dalam laluan", "text": "Rehat boleh dijadualkan sebagai blok semasa perancangan laluan; sama ada rehat 30 minit diambil selepas 5 jam berturut-turut tidak disemak oleh Klacks." },
-      { "icon": "badge", "title": "Kelas lesen memandu yang sesuai", "text": "Klacks hanya menetapkan laluan kepada pemandu yang mempunyai kebenaran yang sesuai &mdash; dan memberi amaran sebelum sijil tamat tempoh. Atas permintaan, Klacks menyekat sepenuhnya penugasan dengan bukti wajib yang telah luput &mdash; hanya kakitangan dengan bukti sah yang akan dijadualkan." },
+      { "icon": "badge", "title": "Kelas lesen memandu yang sesuai", "text": "Klacks mengambil kira kebenaran pemandu semasa menetapkan laluan dan memberi amaran sebelum sijil tamat tempoh. Jika bukti wajib tiada atau telah luput, Klacks menolak penugasan, termasuk dalam perancangan manual." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Jadualkan laluan untuk esok, pemandu Tan sakit\" sudah memadai &mdash; Klacksy memulakan perancangan semula, dan enjin perancangan turut mengambil kira had waktu kerja yang ditetapkan." }
     ]
   },

@@ -37,7 +37,7 @@
       {
         "icon": "splitscreen",
         "title": "Geteilte Dienste sauber geplant",
-        "text": "Klacks plant Mittags- und Abendblöcke so, dass die hinterlegten Tageshöchstzeiten eingehalten werden &mdash; jede Überschreitung wird sofort sichtbar gemacht."
+        "text": "Klacks plant Mittags- und Abendblöcke und prüft sie gegen die hinterlegten Tageshöchstzeiten &mdash; jede Überschreitung wird sofort sichtbar gemacht."
       },
       {
         "icon": "timer",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Mehrarbeits- und Feiertags-Vergütungen rechnet Klacks automatisch aus &mdash; pro Land und Regelwerk konfigurierbar, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zuschläge als Zeitgutschrift",
+        "text": "Mehrarbeits- und Feiertagszuschläge schreibt Klacks als Zeitgutschrift gut &mdash; pro Land und Regelwerk konfigurierbar; Stunden und Zeitzuschläge stehen für die Lohnvorbereitung bereit."
       },
       {
         "icon": "smart_toy",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zuschläge und Ruhezeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne plant, Zeitzuschläge gutschreibt und Ruhezeiten prüft &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

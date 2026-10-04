@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Pentru hoteluri &amp; gastronomie",
     "titleHtml": "Ture de dimineață, de seară, de noapte &mdash; <span class=\"text-secondary\">planificate corect.</span>",
-    "subtitle": "Klacks planifică serviciul, bucătăria și etajele &mdash; cu ture fractionate, sporuri pentru duminici și sărbători legale și perioade de repaus legale care nu pot fi ocolite în tăcere. Vârfurile de sezon și absențele sunt absorbite automat de planificare.",
+    "subtitle": "Klacks planifică serviciul, bucătăria și etajele &mdash; cu ture fractionate, sporuri pentru duminici și sărbători legale și o verificare a perioadelor de repaus legale care face încălcările imediat vizibile. Vârfurile de sezon și absențele sunt absorbite automat de planificare.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru planurile de tură din hoteluri și gastronomie",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Ture fractionate planificate corect",
-        "text": "Klacks planifică blocurile de prânz și de seară astfel încât perioadele minime de repaus și duratele zilnice maxime să fie respectate &mdash; orice nerespectare este semnalată imediat."
+        "text": "Klacks planifică blocurile de prânz și de seară și le verifică față de perioadele minime de repaus și duratele zilnice maxime &mdash; orice nerespectare este semnalată imediat."
       },
       {
         "icon": "timer",
         "title": "Perioadele de repaus sub control",
-        "text": "Limitele legale privind perioadele de repaus sunt monitorizate în timp real &mdash; încălcările devin imediat vizibile. La cerere, Klacks le blochează consecvent: în modul blocare, o încălcare poate fi salvată doar cu aprobarea documentată a unui superior."
+        "text": "Limitele legale privind perioadele de repaus sunt verificate continuu &mdash; încălcările devin imediat vizibile. Implicit, Klacks avertizează; la cerere se poate activa un mod de blocare pentru planificarea automată (asistentul de planificare, propuneri, înlocuirea absenților)."
       },
       {
         "icon": "payments",
         "title": "Sporuri calculate automat",
-        "text": "Sporurile pentru noapte, duminici și sărbători legale sunt calculate automat de Klacks &mdash; configurabile pe țară și pe set de reguli, fără muncă manuală suplimentară la pregătirea salariilor."
+        "text": "Sporurile pentru noapte, duminici și sărbători legale sunt creditate automat de Klacks ca credite de timp &mdash; configurabile pe țară și pe set de reguli, ca bază pentru contabilitatea salarială."
       },
       {
         "icon": "badge",

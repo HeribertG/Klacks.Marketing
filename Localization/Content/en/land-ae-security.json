@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "For private security guarding in the UAE",
     "titleHtml": "Guard rosters that <span class=\"text-secondary\">keep the 144-hour cap in view.</span>",
-    "subtitle": "Klacks schedules long guarding shifts in private security and monitors the legal limits continuously &mdash; optionally with a hard block &mdash; including public holiday compensation. Installed on your premises, so staff data never leaves your organisation.",
+    "subtitle": "Klacks schedules long guarding shifts in private security and monitors the legal limits continuously &mdash; optionally with a hard block in automatic planning &mdash; including public holiday compensation. Installed on your premises, so staff data does not have to leave your organisation.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for guard rosters in the UAE security industry",
     "screenshotLabel": "Timeline"
@@ -19,12 +19,12 @@
   },
   "solutions": {
     "title": "How Klacks takes the load off security firms in the UAE",
-    "subtitle": "From proactive cap warnings to correct public holiday compensation &mdash; everything works together.",
+    "subtitle": "From proactive cap warnings to public holiday compensation &mdash; everything works together.",
     "items": [
-      { "icon": "schedule", "title": "The 144-hour cap proactively monitored", "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and monitors total working hours per 3-week period live against the 144-hour cap &mdash; before the shift is assigned, not after. On request, Klacks strictly enforces the excess as a hard block &mdash; a new violation can then only be saved with documented supervisor approval." },
+      { "icon": "schedule", "title": "The 144-hour cap proactively monitored", "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and monitors total working hours per 3-week period live against the 144-hour cap &mdash; before the shift is assigned, not after. On request, Klacks strictly blocks the excess in automatic planning; with manual planning it stays at a warning." },
       { "icon": "event", "title": "Public holiday compensation suggested automatically", "text": "Klacks automatically recognises public holiday shifts and suggests either a substitute rest day or the 50% premium." },
       { "icon": "route", "title": "Guard posts &amp; patrols planned automatically", "text": "Klacks schedules deployments across multiple guard posts so that handovers and travel times are properly aligned." },
-      { "icon": "shield_lock", "title": "Installed on your premises: full data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; your guards' personal data never leaves your organisation." },
+      { "icon": "shield_lock", "title": "Installed on your premises: full data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; your guards' personal data does not leave your organisation; the AI model can be run locally on request." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Who still has capacity for the night shift at Site X this week?\" is all it takes &mdash; Klacksy starts the planning, Klacks automatically factors in availability and qualification and shows the 144-hour total per 3-week period." },
       { "icon": "event_busy", "title": "Absences covered fast", "text": "If a guard calls in sick, Klacks immediately shows who is qualified and available &mdash; including the hours worked so far per 3-week period." }
     ]

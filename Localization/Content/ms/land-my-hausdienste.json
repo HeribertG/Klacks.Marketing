@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Untuk perkhidmatan rumah &amp; pembersihan di Malaysia",
     "titleHtml": "Setiap premis <span class=\"text-secondary\">dijadualkan dengan kemas.</span>",
-    "subtitle": "Klacks membahagikan premis dan laluan dengan cekap &mdash; serta mengira elaun lebih masa dan hari rehat bagi pekerja pembersihan tanpa mengira tahap gaji, sepertimana disyaratkan Employment Act 1955 bagi pekerja manual.",
+    "subtitle": "Klacks membahagikan premis dan laluan dengan cekap &mdash; serta mencatatkan elaun lebih masa dan hari rehat bagi pekerja pembersihan sebagai kredit masa tanpa menetapkan had gaji (Employment Act 1955 mengecualikan pekerja manual daripadanya).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grid jadual kerja Klacks untuk pasukan pembersihan dan premis di Malaysia",
     "screenshotLabel": "Jadual Kerja"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban perkhidmatan pembersihan di Malaysia",
-    "subtitle": "Daripada laluan yang dioptimumkan hingga pengiraan elaun yang tepat &mdash; semuanya saling melengkapi.",
+    "subtitle": "Daripada laluan yang dioptimumkan hingga kredit masa untuk elaun &mdash; semuanya saling melengkapi.",
     "items": [
       { "icon": "route", "title": "Laluan antara premis dioptimumkan", "text": "Klacks menyusun urutan premis supaya jarak perjalanan kekal pendek &mdash; sama ada dengan kereta, motosikal atau berjalan kaki." },
-      { "icon": "paid", "title": "Elaun dikira tanpa mengira gaji", "text": "Klacks mengira elaun lebih masa (1.5x) dan hari rehat (2.0x) bagi pekerja manual secara konsisten &mdash; termasuk melepasi had gaji RM4,000 yang tidak terpakai kepada mereka." },
+      { "icon": "paid", "title": "Elaun dikreditkan tanpa mengira gaji", "text": "Klacks mencatatkan elaun lebih masa (1.5x) dan hari rehat (2.0x) bagi pekerja manual sebagai kredit masa &mdash; tanpa had gaji, termasuk melepasi had RM4,000 yang tidak terpakai kepada mereka." },
       { "icon": "groups", "title": "Pasukan disusun secara fleksibel", "text": "Susunan kakitangan dan gantian yang sering berubah: Klacks kekal memantau dan mencadangkan susunan yang sesuai." },
-      { "icon": "verified", "title": "Kelayakan yang sesuai", "text": "Pembersihan khusus atau kawasan terhad: hanya kakitangan yang layak sesuai akan ditugaskan." },
-      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; tanpa sebarang pemindahan data pekerja ke luar negara." },
-      { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Jadualkan premis di kawasan Bangsar untuk esok pagi\" sudah memadai &mdash; Klacksy memulakan perancangan, Klacks mengoptimumkan laluan, pasukan dan elaun." }
+      { "icon": "verified", "title": "Kelayakan yang sesuai", "text": "Pembersihan khusus atau kawasan terhad: Klacks mengambil kira kelayakan semasa penugasan dan memberi amaran apabila bukti kelayakan telah luput." },
+      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: kedaulatan data sepenuhnya", "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; dengan model AI tempatan, tanpa sebarang pemindahan data pekerja ke luar negara." },
+      { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Jadualkan premis di kawasan Bangsar untuk esok pagi\" sudah memadai &mdash; Klacksy memulakan perancangan, Klacks mengoptimumkan laluan dan pasukan serta mencatatkan elaun." }
     ]
   },
   "example": {
     "eyebrow": "Contoh Konkrit",
     "title": "Pekerja manual, elaun, satu jadual",
-    "text": "Klacks mengenal pasti pekerja pembersihan sebagai pekerja manual dan mengira elaun lebih masa serta hari rehat mereka secara automatik tanpa mengira gaji &mdash; tanpa perlu mengira semula secara manual."
+    "text": "Klacks mengenal pasti pekerja pembersihan sebagai pekerja manual dan mencatatkan elaun lebih masa serta hari rehat mereka sebagai kredit masa tanpa mengira gaji &mdash; tanpa perlu mengira semula secara manual."
   },
   "showRoutePlanning": true,
   "cta": {

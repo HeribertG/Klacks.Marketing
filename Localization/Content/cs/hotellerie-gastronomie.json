@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Pro hotelnictví &amp; gastronomii",
     "titleHtml": "Ranní, večerní, noční směny &mdash; <span class=\"text-secondary\">férově naplánované.</span>",
-    "subtitle": "Klacks plánuje servis, kuchyni a pokojské služby &mdash; s rozdělenými směnami, příplatky za neděle a svátky a zákonnými dobami odpočinku, které se nedají tiše obejít. Sezónní špičky a výpadky plánování automaticky zachytí.",
+    "subtitle": "Klacks plánuje servis, kuchyni a pokojské služby &mdash; s rozdělenými směnami, příplatky za neděle a svátky a kontrolou zákonných dob odpočinku, která porušení okamžitě zviditelní. Sezónní špičky a výpadky plánování automaticky zachytí.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro rozpisy směn v hotelnictví a gastronomii",
     "screenshotLabel": "Časová osa",
@@ -38,17 +38,17 @@
       {
         "icon": "splitscreen",
         "title": "Rozdělené směny čistě naplánované",
-        "text": "Klacks plánuje obědové a večerní bloky tak, aby byly dodrženy minimální doby odpočinku a denní maxima &mdash; každé porušení je okamžitě viditelné."
+        "text": "Klacks plánuje obědové a večerní bloky a kontroluje je podle minimálních dob odpočinku a denních maxim &mdash; každé porušení je okamžitě viditelné."
       },
       {
         "icon": "timer",
         "title": "Doby odpočinku pod kontrolou",
-        "text": "Zákonné hranice dob odpočinku jsou sledovány v reálném čase &mdash; porušení jsou okamžitě viditelná. Na přání je Klacks důsledně blokuje: v blokujícím režimu lze porušení uložit pouze se zdokumentovaným souhlasem nadřízeného."
+        "text": "Zákonné hranice dob odpočinku se průběžně kontrolují &mdash; porušení jsou okamžitě viditelná. Ve výchozím nastavení Klacks varuje; na přání lze pro automatické plánování zapnout blokující režim (plánovací asistent, návrhy, náhrada za výpadek)."
       },
       {
         "icon": "payments",
         "title": "Příplatky automaticky",
-        "text": "Noční, nedělní a sváteční příplatky Klacks počítá automaticky &mdash; konfigurovatelné podle země a pravidel, bez ruční práce při přípravě mezd."
+        "text": "Noční, nedělní a sváteční příplatky Klacks automaticky připisuje jako časové kredity &mdash; konfigurovatelné podle země a pravidel, jako podklad pro mzdovou účtárnu."
       },
       {
         "icon": "badge",

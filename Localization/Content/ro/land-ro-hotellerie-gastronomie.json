@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Pentru hoteluri &amp; gastronomie",
     "titleHtml": "Ture de dimineață, de seară, de noapte &mdash; <span class=\"text-secondary\">turele de 12h sub control.</span>",
-    "subtitle": "Klacks planifică serviciul, bucătăria și etajele conform Codului muncii din România &mdash; inclusiv turele permise de 12 ore cu repaus obligatoriu de 24 de ore ulterior (Art. 115 Abs. 2), cele 48 de ore consecutive de repaus săptămânal (Art. 137 Abs. 1) și intervalul de noapte de la 22 la 6 (Art. 125).",
+    "subtitle": "Klacks planifică serviciul, bucătăria și etajele având în vedere Codul muncii din România &mdash; inclusiv turele permise de 12 ore cu repaus obligatoriu de 24 de ore ulterior (Art. 115 Abs. 2), zilele libere pe săptămână (legal, 48 de ore consecutive de repaus săptămânal, Art. 137 Abs. 1) și intervalul de noapte de la 22 la 6 (Art. 125).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru planurile de tură din hoteluri și gastronomie",
     "screenshotLabel": "Timeline"
@@ -36,18 +36,18 @@
     "items": [
       {
         "icon": "schedule",
-        "title": "Ture de 12h planificate corect",
+        "title": "Ture de 12h cu repaus ulterior",
         "text": "Klacks verifică automat după fiecare tură de 12 ore repausul ulterior obligatoriu de 24 de ore (Art. 115 Abs. 2) &mdash; orice nerespectare este semnalată imediat."
       },
       {
         "icon": "event_available",
-        "title": "Repausul săptămânal de 48h sub control",
+        "title": "Zilele libere pe săptămână sub control",
         "text": "Zilele libere pe săptămână sunt monitorizate în timp real &mdash; nerespectările devin imediat vizibile, inclusiv la ture schimbătoare. Cele 48 de ore consecutive (Art. 137 Abs. 1) nu sunt verificate de Klacks ca interval continuu."
       },
       {
         "icon": "payments",
-        "title": "Sporuri calculate automat",
-        "text": "Sporurile pentru noapte (de la 22 la 6), duminici și sărbători legale sunt calculate automat de Klacks &mdash; configurabile pe țară și pe set de reguli, fără muncă manuală suplimentară la pregătirea salariilor."
+        "title": "Sporuri de timp automate",
+        "text": "Sporurile pentru noapte (de la 22 la 6), duminici și sărbători legale sunt creditate automat ca timp de Klacks &mdash; configurabile pe țară și pe set de reguli; orele sunt pregătite pentru contabilitatea salarială."
       },
       {
         "icon": "badge",

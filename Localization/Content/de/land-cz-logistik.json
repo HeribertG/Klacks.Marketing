@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Tschechien",
     "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht, prüft die 60-Stunden-Einzelwoche im 26-Wochen-Schnitt und trennt vereinbarte Rufbereitschaft sauber von tatsächlichen Einsätzen. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht und prüft die 60-Stunden-Einzelwoche im 26-Wochen-Schnitt; eine eigene Zeitart für Rufbereitschaft kennt Klacks nicht. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Tschechien",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Tschechien entlastet",
-    "subtitle": "Von der optimierten Tour bis zur sauber getrennten Rufbereitschaft &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur lückenlosen Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "fact_check", "title": "Dienstzeiten lückenlos dokumentiert", "text": "Klacks dokumentiert Dienst- und Arbeitszeiten lückenlos und hält sie jederzeit abrufbar bereit &mdash; als Ergänzung zu den separat vorzulegenden Fahrtenschreiber-Aufzeichnungen für die 56-Tage-Nachweispflicht." },
       { "icon": "schedule", "title": "60-Stunden-Woche im 26-Wochen-Schnitt geprüft", "text": "Klacks lässt einzelne 60-Stunden-Wochen zu und überwacht den rollierenden 26-Wochen-Schnitt live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und Klacks warnt, bevor der Grenzwert kippt. Die 10-Stunden-Grenze bei Nachtarbeit lässt sich nur als allgemeine Tageshöchstarbeitszeit hinterlegen, etwa im Vertrag Ihrer Nachtfahrer; eine eigene Grenze nur für Nachtschichten kennt Klacks nicht." },
-      { "icon": "call", "title": "Rufbereitschaft sauber getrennt", "text": "Klacks unterscheidet automatisch zwischen vereinbarter Rufbereitschaft (10 %-Zuschlag) und einem tatsächlichen Einsatz, der sofort als Überstunde gerechnet wird." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Tour- und Fahrerdaten bleiben bei Ihnen, auch bei KI-Funktionen." },
+      { "icon": "call", "title": "Rufbereitschaft ohne eigene Zeitart", "text": "Eine eigene Zeitart für Rufbereitschaft kennt Klacks nicht: Ein tatsächlicher Einsatz wird als regulärer Dienst geplant und erfasst, und daraus entstehende Überstunden macht Klacks sichtbar." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Tour- und Fahrerdaten bleiben bei Ihnen; bei KI-Funktionen auf Wunsch mit lokal gehostetem Modell." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Novák ist krank“ genügt &mdash; Klacksy startet die Neuplanung." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "56 Tage, 60-Stunden-Woche, Rufbereitschaft",
-    "text": "Klacks dokumentiert die Dienstzeiten der letzten 56 Tage lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen, überwacht den rollierenden 26-Wochen-Schnitt live und rechnet eine tatsächlich abgerufene Rufbereitschaft gleich als Überstunde &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks dokumentiert die Dienstzeiten der letzten 56 Tage lückenlos als Ergänzung zu den Fahrtenschreiber-Aufzeichnungen, überwacht den rollierenden 26-Wochen-Schnitt live und erfasst einen tatsächlichen Einsatz aus der Rufbereitschaft als Arbeitszeit &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeitszeiten und Rufbereitschaft plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und Arbeitszeiten plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

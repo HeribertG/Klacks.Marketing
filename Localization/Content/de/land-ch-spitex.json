@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die Spitex &amp; ambulante Pflege in der Schweiz",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klientinnen und Klienten als Arbeitszeit und überwachten freien Sonntagen, auf Wunsch hart geblockt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Klientinnen und Klienten als Arbeitszeit und überwachten freien Sonntagen, auf Wunsch in der automatischen Planung hart geblockt. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Spitex in der Schweiz",
     "screenshotLabel": "Timeline"
@@ -41,13 +41,13 @@
       },
       {
         "icon": "schedule",
-        "title": "Wegzeit korrekt als Arbeitszeit erfasst",
-        "text": "Fahrten zwischen Klientinnen und Klienten werden automatisch als Arbeitszeit gerechnet &mdash; nur An- und Rückfahrt bleiben aussen vor."
+        "title": "Wegzeit als Arbeitszeit erfasst",
+        "text": "Erfasste Fahrten zwischen Klientinnen und Klienten rechnet Klacks als Arbeitszeit &mdash; dass die erste Anfahrt und die letzte Heimfahrt aussen vor bleiben, erkennt Klacks nicht automatisch."
       },
       {
         "icon": "event_available",
-        "title": "Freie Sonntage überwacht &mdash; auf Wunsch hart geblockt",
-        "text": "Klacks überwacht die freien Sonntage im rollierenden Fenster (z. B. jeder zweite Sonntag frei) und blockiert Verstösse auf Wunsch hart &mdash; Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt. Wochenruhetage plant Klacks automatisch mit ein."
+        "title": "Freie Sonntage überwacht &mdash; auf Wunsch in der automatischen Planung hart geblockt",
+        "text": "Klacks überwacht die freien Sonntage im rollierenden Fenster (z. B. jeder zweite Sonntag frei) und blockiert Verstösse auf Wunsch in der automatischen Planung hart (bei manueller Planung bleibt es bei der Warnung) &mdash; Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt. Wochenruhetage plant Klacks automatisch mit ein."
       },
       {
         "icon": "verified",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI."
       },
       {
         "icon": "smart_toy",

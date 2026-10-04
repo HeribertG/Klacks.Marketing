@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For sykehus &amp; klinikker",
     "titleHtml": "Vaktplaner som <span class=\"text-secondary\">går opp døgnet rundt.</span>",
-    "subtitle": "Klacks planlegger avdelinger og vakter uten hull &mdash; med overholdt hviletid, riktige kvalifikasjoner og full datasuverenitet. Installert hos deg, slik at pasientdata aldri forlater huset ditt.",
+    "subtitle": "Klacks planlegger avdelinger og vakter uten hull &mdash; med kontrollert hviletid, riktige kvalifikasjoner og full datasuverenitet. Installert hos deg; med en lokal KI-modell forlater ikke pasientdata huset ditt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vaktplan-rutenett for sykehus",
     "screenshotLabel": "Vaktplan",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Døgnkontinuerlig dekning uten hull", "text": "Dag-, kvelds- og nattevakter på tvers av alle avdelinger &mdash; Klacks viser hvert hull umiddelbart og fyller det automatisk på forespørsel." },
       { "icon": "gavel", "title": "Hviletid kontrolleres automatisk", "text": "Arbeidsmiljøloven, hviletid og maksimalgrenser overvåkes i sanntid &mdash; brudd blir synlige med en gang." },
       { "icon": "verified", "title": "Kvalifikasjoner &amp; avdelinger", "text": "Hver vakt tildeles bare personell med riktig kvalifikasjon &mdash; per avdeling, seksjon og funksjon." },
-      { "icon": "shield_lock", "title": "Installert hos deg: data blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata forlater ikke sykehuset &mdash; heller ikke til KI-en." },
+      { "icon": "shield_lock", "title": "Installert hos deg: data i huset", "text": "Klacks kjører på din infrastruktur. Personal- og pasientdata ligger på serverne dine &mdash; med en lokal KI-modell forlater heller ikke noe sykehuset via KI-en." },
       { "icon": "smart_toy", "title": "Klacksy forstår setningen din", "text": "«Fyll nattevaktene for indremedisin neste uke» er nok &mdash; Klacksy starter planleggingen, Klacks tar hensyn til kvalifikasjon og hviletid." },
       { "icon": "groups", "title": "Vikarpool &amp; fravær", "text": "Faller noen fra, viser Klacks straks tilgjengelige, kvalifiserte vikarer &mdash; uten å velte hele planen." }
     ]

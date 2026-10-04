@@ -2,9 +2,9 @@
   "pageTitle": "Klacks for the UK | Working Time Regulations, UK GDPR & Open Source Workforce Scheduling",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Without license fees &middot; UK GDPR compliant",
+    "badge": "Open Source &middot; Without license fees &middot; Data protection under UK GDPR",
     "titleHtml": "Workforce scheduling where <span class=\"text-secondary\">you stay in control.</span>",
-    "subtitle": "Klacks schedules shifts automatically, monitors working time under the Working Time Regulations 1998, and can be controlled through an AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. That keeps staff data on your own infrastructure, with no biometric time tracking, and in line with UK GDPR and the Data Protection Act 2018.",
+    "subtitle": "Klacks schedules shifts automatically, monitors working time under the Working Time Regulations 1998, and can be controlled through an AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice &mdash; optionally locally hosted. That lets you keep staff data on your own infrastructure, with no biometric time tracking and with UK GDPR and the Data Protection Act 2018 in view.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in the UK",
     "screenshotLabel": "Schedule"
@@ -57,27 +57,27 @@
   },
   "solutions": {
     "title": "How Klacks takes the load off UK businesses",
-    "subtitle": "From automatic rest-period control to data-protection-compliant time tracking &mdash; everything works together.",
+    "subtitle": "From automatic rest-period control to time tracking without biometrics &mdash; everything works together.",
     "items": [
       {
         "icon": "gavel",
         "title": "48-hour limit &amp; opt-out kept in view",
-        "text": "Klacks monitors the rolling 17-week average of working time live, correctly factoring in each employee's start date, and warns before the 48-hour limit under WTR Reg. 4 is exceeded &mdash; while flagging who is working beyond it under an opt-out. On request, Klacks can hard-block any breach &mdash; a new violation can then only be saved with documented supervisor approval. Fully traceable for any inspection."
+        "text": "Klacks monitors the rolling 17-week average of working time live, correctly factoring in each employee's start date, and warns before the 48-hour limit under WTR Reg. 4 is exceeded &mdash; while flagging who is working beyond it under an opt-out. On request, Klacks hard-blocks a breach in automatic planning; with manual planning it stays at a warning. Fully traceable for any inspection."
       },
       {
         "icon": "bedtime",
-        "title": "Rest periods observed automatically",
+        "title": "Rest periods checked automatically",
         "text": "The 11-hour daily rest and 24-hour weekly rest under WTR Reg. 10 &amp; 11 are factored into every automatic shift plan &mdash; and any breach is immediately made visible."
       },
       {
         "icon": "fingerprint",
         "title": "Time tracking without the biometric risk",
-        "text": "Klacks records working time without needing facial recognition or fingerprints &mdash; no Serco-Leisure-style case, no questions from the ICO."
+        "text": "Klacks records working time without needing facial recognition or fingerprints &mdash; which removes the very trigger that led the ICO to step in at Serco Leisure."
       },
       {
         "icon": "shield_lock",
         "title": "Installed on your premises: full data sovereignty",
-        "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; in line with UK GDPR and the Data Protection Act 2018, with no cross-border transfer of staff data at all."
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; optionally locally hosted, so that no staff data goes to external AI providers. This supports the requirements of UK GDPR and the Data Protection Act 2018."
       },
       {
         "icon": "hourglass_top",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "See Klacks in your business",
-    "text": "Try the Playground to see how Klacks automates Working Time Regulations limits, rest periods and data-protection-compliant time tracking &mdash; installed on your premises or in the Playground, no license fees and with no registration required."
+    "text": "Try the Playground to see how Klacks checks Working Time Regulations limits and rest periods and records working time without biometrics &mdash; installed on your premises or in the Playground, no license fees and with no registration required."
   }
 }

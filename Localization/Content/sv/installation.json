@@ -1,11 +1,11 @@
 {
   "pageTitle": "Installera Klacks: guidat installationsprogram eller Docker Compose med landspaket | Klacks",
-  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och tillägg. Inga licensavgifter, öppen källkod, utan registrering.",
+  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och &ndash; där de är definierade för ditt land &ndash; tillägg. Inga licensavgifter, öppen källkod, utan registrering.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Inga licensavgifter &amp; öppen källkod",
     "titleHtml": "Kör Klacks själv &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
-    "subtitle": "Två vägar, ett resultat: det guidade installationsprogrammet eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler, tillägg och branschförinställningar &mdash; utan registrering, utan licenskostnader."
+    "subtitle": "Två vägar, ett resultat: det guidade installationsprogrammet eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler och branschförinställningar (tillägg, där de är definierade för landet) &mdash; utan registrering, utan licenskostnader."
   },
   "industry": {
     "eyebrow": "Landspaket",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Endast profilen &mdash; för befintliga installationer",
-    "text": "Kör du redan Klacks? Profilen (JSON) innehåller landsförinställningarna &mdash; helgdagar, arbetstidsregler, tillägg och branscher &mdash; och tillämpas vid en installations första start. Den är också vägen för att senare lägga till ytterligare en bransch med dess förinställningar.",
+    "text": "Kör du redan Klacks? Profilen (JSON) innehåller landsförinställningarna &mdash; helgdagar, arbetstidsregler, tillägg (där de är definierade för landet) och branscher &mdash; och tillämpas vid en installations första start. Den är också vägen för att senare lägga till ytterligare en bransch med dess förinställningar.",
     "downloadLabel": "Ladda ner profil (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Bra att veta",
     "items": [
       { "icon": "code", "title": "Öppen källkod (AGPL-3.0)", "text": "Hela källkoden är offentlig på GitHub under AGPL-3.0 &mdash; inga licenskostnader, ingen leverantörsinlåsning." },
-      { "icon": "storage", "title": "Data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och schemadata lämnar aldrig din server &mdash; det finns inget molntvång." },
+      { "icon": "storage", "title": "Data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och schemadata finns på din server &mdash; det finns inget molntvång. Först om du väljer en extern AI-leverantör skickas förfrågningar dit; med en lokal modell stannar allt i huset." },
       { "icon": "update", "title": "Uppdateringar", "text": "Installationen låser den senast släppta versionen. En uppdateringstjänst i stacken installerar nysläppta versioner automatiskt." },
       { "icon": "lock", "title": "HTTPS från start", "text": "Installationsprogrammet genererar ett självsignerat certifikat så att du kommer igång &mdash; du kan när som helst byta till ett eget certifikat. Byt det initiala lösenordet direkt efter första inloggningen." }
     ]

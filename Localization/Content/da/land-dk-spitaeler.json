@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Til sygehuse &amp; hospitaler i Danmark",
     "titleHtml": "Vagtplaner, der <span class=\"text-secondary\">går op døgnet rundt.</span>",
-    "subtitle": "Klacks planlægger afdelinger og holdskifte i holddrift uden huller &mdash; inklusive undtagelses-hviletiden ved holdskifte og 48-timers-dokumentationen som 4-måneders-gennemsnit. Installeret hos jer, så patientdata aldrig forlader jeres hospital.",
+    "subtitle": "Klacks planlægger afdelinger og holdskifte i holddrift uden huller &mdash; inklusive undtagelses-hviletiden ved holdskifte og 48-timers-dokumentationen som 4-måneders-gennemsnit. Installeret hos jer, så patientdata ikke behøver forlade jeres hospital &mdash; efter ønske med en lokalt hostet AI-model.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vagtplan-gitter til danske hospitaler",
     "screenshotLabel": "Vagtplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Sådan aflaster Klacks danske hospitaler",
-    "subtitle": "Fra den korrekte holdskifte-undtagelse til 24/7-dækning &mdash; alt spiller sammen.",
+    "subtitle": "Fra holdskifte-undtagelsen til 24/7-dækning &mdash; alt spiller sammen.",
     "items": [
       {
         "icon": "schedule",
@@ -47,17 +47,17 @@
       {
         "icon": "gavel",
         "title": "48-timers-gennemsnit overvåget live",
-        "text": "Klacks overvåger det glidende 4-måneders-gennemsnit live og advarer, før nogen overskrider 48-timers-grænsen. Efter ønske blokerer Klacks overskridelsen hårdt &mdash; en ny overtrædelse kan så kun gemmes med en dokumenteret godkendelse fra en overordnet."
+        "text": "Klacks overvåger det glidende 4-måneders-gennemsnit live og advarer, før nogen overskrider 48-timers-grænsen. Efter ønske blokerer Klacks overskridelsen hårdt i den automatiske planlægning; ved manuel planlægning bliver det ved advarslen."
       },
       {
         "icon": "tune",
         "title": "Fleksibel til enhver overenskomst",
-        "text": "Klacks kan indstilles til de til enhver tid gældende tillægssatser i overenskomsterne for pleje-, assistent- og lægegrupper, i stedet for at diktere én stiv regel for alle faggrupper."
+        "text": "Klacks kan indstilles til de til enhver tid gældende tidstillæg i overenskomsterne for pleje-, assistent- og lægegrupper, i stedet for at diktere én stiv regel for alle faggrupper."
       },
       {
         "icon": "shield_lock",
         "title": "Installeret hos dig: data bliver i huset",
-        "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata forlader ikke klinikken &mdash; heller ikke til AI'en."
+        "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata forlader ikke klinikken &mdash; og med en lokalt hostet AI-model heller ikke til AI'en."
       },
       {
         "icon": "smart_toy",

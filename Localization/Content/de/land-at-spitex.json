@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für die Hauskrankenpflege | SWÖ-konforme Tourenplanung",
+  "pageTitle": "Klacks für die Hauskrankenpflege | Tourenplanung mit SWÖ-Regeln im Blick",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Für die Hauskrankenpflege in Österreich",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Wegzeiten, die der SWÖ-Kollektivvertrag als volle Arbeitszeit zählt, und mit lückenlos dokumentierter Rufbereitschaft als Grundlage für den gesetzlichen Rahmen. Bei Ihnen installiert, damit Klientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Wegzeiten, die der SWÖ-Kollektivvertrag als volle Arbeitszeit zählt, und mit planbaren Rufbereitschafts-Diensten als Grundlage für den gesetzlichen Rahmen. Bei Ihnen installiert, damit Klientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der Hauskrankenpflege",
     "screenshotLabel": "Timeline"
@@ -24,11 +24,11 @@
     "subtitle": "Von der automatischen Tour bis zur Schwerarbeits-Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz sind und Zeitfenster eingehalten werden &mdash; für Auto, Rad oder zu Fuß." },
-      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant werden kann nur, wer einen gültigen Nachweis hat." },
-      { "icon": "payments", "title": "SWÖ-konforme Zuschläge &amp; Rufbereitschaft", "text": "Zuschläge werden nach SWÖ-KV vorbereitet, und die geplanten Rufbereitschafts-Tage dokumentiert Klacks lückenlos pro Person &mdash; die Grundlage, um die 30-Tage-Grenze selbst im Blick zu behalten." },
-      { "icon": "fact_check", "title": "Nachtdienste erfassen und überwachen", "text": "Klacks zählt die Nachtdienste pro Monat und warnt oder blockiert bei Überschreitung der hinterlegten Grenze. Blockaden lassen sich mit dokumentierter Vorgesetzten-Freigabe überschreiben &mdash; eine wertvolle Hilfe für die Schwerarbeits-Dokumentation; die rechtliche Einstufung (rotierender Dienst, überwiegend Pflege) nimmt der Betrieb selbst vor." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Nachweis hat." },
+      { "icon": "payments", "title": "SWÖ-Zuschläge &amp; Rufbereitschaft", "text": "Zuschläge aus dem SWÖ-KV lassen sich als Zeitgutschrift hinterlegen, und die Rufbereitschafts-Tage planen Sie pro Person als Dienste &mdash; die Grundlage, um die 30-Tage-Grenze selbst im Blick zu behalten; Rufbereitschaft als eigene Zeitart kennt Klacks nicht." },
+      { "icon": "fact_check", "title": "Nachtdienste erfassen und überwachen", "text": "Klacks zählt die Nachtdienste pro Monat und warnt bei Überschreitung der hinterlegten Grenze; in der automatischen Planung blockiert Klacks sie auf Wunsch, bei manueller Planung bleibt es bei der Warnung &mdash; eine wertvolle Hilfe für die Schwerarbeits-Dokumentation; die rechtliche Einstufung (rotierender Dienst, überwiegend Pflege) nimmt der Betrieb selbst vor." },
       { "icon": "event_available", "title": "Ankündigungsfrist als Planungsvorlauf", "text": "Den Mindestvorlauf für die Dienstplanankündigung hinterlegen Sie in Tagen. Klacks berechnet daraus, bis wann der Plan fertig sein muss &mdash; das unterstützt die Einhaltung der gesetzlichen SWÖ-Frist (14. des Vormonats). Eine automatische Prüfung beim Veröffentlichen gibt es nicht." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Klientendaten verlassen Ihre Organisation nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Klientendaten verlassen Ihre Organisation nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]
@@ -36,7 +36,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeiten, Rufbereitschaft, ein Klick",
-    "text": "Eine Pflegekraft fährt zwischen mehreren Einsatzadressen. Klacks zählt die Wegzeiten als Arbeitszeit mit, dokumentiert die geplanten Rufbereitschafts-Tage lückenlos und bereitet die SWÖ-Zuschläge für die Lohnverrechnung vor."
+    "text": "Eine Pflegekraft fährt zwischen mehreren Einsatzadressen. Klacks zählt die Wegzeiten als Arbeitszeit mit, plant die Rufbereitschafts-Tage mit und stellt die Zuschlags-Stunden als Zeitgutschrift für die Lohnverrechnung bereit."
   },
   "showRoutePlanning": true,
   "cta": {

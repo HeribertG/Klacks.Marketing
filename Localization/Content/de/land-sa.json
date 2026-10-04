@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Saudi-Arabien | Personaleinsatzplanung nach Art. 101, PDPL & Nitaqat",
+  "pageTitle": "Klacks für Unternehmen in Saudi-Arabien | Personaleinsatzplanung mit Art.-101-Prüfung & lokaler Datenhaltung",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; PDPL/SDAIA-konform",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung in Saudi-Arabien",
     "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">die 12-Stunden-Grenze live überwacht.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Tagesgrenze (Art. 101) &mdash; auf Wunsch mit hartem Block &mdash; und lässt sich per KI-Assistent Klacksy steuern &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible Personal- und Planungsdaten physisch in Saudi-Arabien, ganz im Sinne von PDPL und SDAIA.",
+    "subtitle": "Klacks plant Dienste automatisch, überwacht die 12-Stunden-Tagesgrenze (Art. 101) &mdash; auf Wunsch mit hartem Block in der automatischen Planung &mdash; und lässt sich per KI-Assistent Klacksy steuern &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben sensible Personal- und Planungsdaten physisch in Saudi-Arabien (mit einem lokalen KI-Modell auch bei der KI-Nutzung), ganz im Sinne von PDPL und SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -20,7 +20,7 @@
       },
       {
         "icon": "nightlight",
-        "title": "Ramadan: automatisch kürzere Schichten",
+        "title": "Ramadan: kürzere Arbeitszeiten",
         "text": "Für muslimische Mitarbeitende sinkt die tatsächliche Arbeitszeit während des شهر رمضان (Shahr Ramadan) zwingend auf max. 6 Stunden pro Tag bzw. 36 Stunden pro Woche &mdash; und das jedes Jahr neu für genau diese Gruppe."
       },
       {
@@ -62,32 +62,32 @@
       {
         "icon": "gavel",
         "title": "Regelarbeitszeit &amp; 6-Tage-Grenze überwacht",
-        "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Klacks überwacht beide Grenzen live und warnt rechtzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart."
+        "text": "Klacks kennt die 8h/48h-Grenze (Art. 98) und die neue Regel von max. 6 aufeinanderfolgenden Arbeitstagen ohne Ruhetag &mdash; Klacks überwacht beide Grenzen live und warnt rechtzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "nightlight",
         "title": "Ramadan-Arbeitszeit als Regel hinterlegbar",
-        "text": "Für muslimische Mitarbeitende lässt sich die reduzierte 6h/36h-Grenze (Art. 98) für den Ramadan als eigene Regel hinterlegen &mdash; ohne manuelle Umstellung des gesamten Plans."
+        "text": "Für muslimische Mitarbeitende lässt sich die reduzierte 6h/36h-Grenze (Art. 98) für den Ramadan als eigene Regel hinterlegen &mdash; Klacks prüft die Planung dagegen und warnt bei Überschreitung."
       },
       {
         "icon": "timer_off",
         "title": "12-Stunden-Grenze live überwacht (Art. 101)",
-        "text": "Klacks prüft die hinterlegte 12-Stunden-Tagesgrenze live und warnt sofort, sobald eine Person an einem Tag länger eingeplant würde. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks prüft die hinterlegte 12-Stunden-Tagesgrenze live und warnt sofort, sobald eine Person an einem Tag länger eingeplant würde. Auf Wunsch blockiert Klacks solche Verstöße in der automatischen Planung hart (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "payments",
-        "title": "Überstundenzuschlag nach Art. 107",
-        "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (effektiv 150%) wird automatisch berechnet &mdash; seit der Reform 2025 wahlweise auch als bezahlter Freizeitausgleich."
+        "title": "Überstundenzuschlag nach Art. 107 als Zeitgutschrift",
+        "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (effektiv 150%) lässt sich als Zeitzuschlag hinterlegen; Klacks schreibt die Zuschlagsstunden gut, den Geldbetrag rechnet Ihr Lohnsystem &mdash; seit der Reform 2025 wahlweise auch als bezahlter Freizeitausgleich."
       },
       {
         "icon": "groups",
-        "title": "Nitaqat-Saudisierung im Blick",
-        "text": "Klacks dokumentiert die Beschäftigungsdaten je saudischer Fachkraft als Basis für die Nitaqat-Einstufung &mdash; ob die GOSI-Gehaltsschwelle für die volle Quote (1,0 ab SAR 4.000, 0,5 bei SAR 3.000 bis 3.999) erreicht ist, berechnet Ihr Lohnsystem."
+        "title": "Nitaqat-Saudisierung bleibt im Lohnsystem",
+        "text": "Klacks bildet die Nitaqat-Einstufung nicht ab und berechnet keine Gehälter &mdash; ob die GOSI-Gehaltsschwelle für die volle Quote (1,0 ab SAR 4.000, 0,5 bei SAR 3.000 bis 3.999) erreicht ist, prüft Ihr Lohnsystem. Klacks stellt die geleisteten Stunden dafür als Datei-Export bereit."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben in Saudi-Arabien",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Sensible Personal- und Planungsdaten (البيانات الشخصية الحساسة) bleiben physisch in KSA &mdash; die Transfer-Compliance-Last nach PDPL/SDAIA entfällt."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Sensible Personal- und Planungsdaten (البيانات الشخصية الحساسة) bleiben physisch in KSA &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung; das erleichtert die Einhaltung der Transfer-Vorgaben nach PDPL/SDAIA."
       },
       {
         "icon": "smart_toy",
@@ -104,18 +104,18 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an PDPL/SDAIA-Konformität lässt sich das KI-Modell zudem lokal in Saudi-Arabien hosten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an die Einhaltung von PDPL/SDAIA lässt sich das KI-Modell zudem lokal in Saudi-Arabien hosten.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Ramadan-Schicht und 12-Stunden-Grenze, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht während des Ramadan die hinterlegte reduzierte 6h/36h-Grenze überschreiten würde oder ein Mitarbeitender an einem Tag länger als 12 Stunden eingeplant würde (Art. 101) &mdash; und warnt, bevor der Plan gespeichert wird."
+    "text": "Klacks prüft gegen die hinterlegten Regeln, ob eine Schicht während des Ramadan die reduzierte 6h/36h-Grenze überschreiten würde oder ein Mitarbeitender an einem Tag länger als 12 Stunden eingeplant würde (Art. 101) &mdash; und warnt, bevor der Plan gespeichert wird."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb in Saudi-Arabien erleben",
-    "text": "Testen Sie im Playground, wie Klacks die Zuschläge nach Art. 107 automatisch zuweist, die Grenzen aus Art. 98/101 überwacht, Ramadan-Sollzeiten abbildet und die Nitaqat-Einstufung dokumentiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die Zuschläge nach Art. 107 als Zeitgutschrift hinterlegt, die Grenzen aus Art. 98/101 überwacht und Ramadan-Sollzeiten als Regel abbildet &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

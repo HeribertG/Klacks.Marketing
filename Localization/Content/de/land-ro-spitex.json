@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (Îngrijire la domiciliu) in Rumänien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für Vertragsfallen.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren und bildet Wegzeit zwischen Klient:innen korrekt ab, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; und warnt live, bevor Teilzeitkräfte ungewollt Überstunden zugeteilt bekommen.",
+    "subtitle": "Klacks plant Einsätze und Touren, lässt die Wegzeit zwischen Klient:innen als festen Wert je Dienst erfassen, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; und warnt live, bevor Teilzeitkräfte ungewollt Überstunden zugeteilt bekommen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Tourenplanung in der häuslichen Pflege in Rumänien",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die häusliche Pflege in Rumänien entlastet",
-    "subtitle": "Von der vertragskonformen Wegzeit bis zur Teilzeit-Kontrolle &mdash; alles greift ineinander.",
+    "subtitle": "Von der erfassten Wegzeit bis zur Teilzeit-Kontrolle &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -41,13 +41,13 @@
       },
       {
         "icon": "schedule",
-        "title": "Wegzeit vertragskonform abgebildet",
-        "text": "Sieht der Einzel- oder Kollektivvertrag Wegzeit als Arbeitszeit vor, erfassen Sie die Fahrzeit zwischen Klient:innen als Wegzeit &mdash; Klacks zählt sie dann als Arbeitszeit. Eine Wegzeit-Regel je Vertrag kennt Klacks nicht."
+        "title": "Wegzeit je Dienst erfassbar",
+        "text": "Sieht der Einzel- oder Kollektivvertrag Wegzeit als Arbeitszeit vor, erfassen Sie die Fahrzeit zwischen Klient:innen als festen Wert je Dienst &mdash; Klacks zählt sie dann als Arbeitszeit. Eine streckenabhängige Berechnung oder eine Wegzeit-Regel je Vertrag kennt Klacks nicht."
       },
       {
         "icon": "block",
         "title": "Teilzeit-Überstunden live erkannt",
-        "text": "Klacks warnt, bevor einer Teilzeitkraft Überstunden über die vertraglich vereinbarten Wochenstunden hinaus zugeteilt werden &mdash; solche Überstunden sind bei Teilzeitverträgen grundsätzlich unzulässig, außer bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten. Auf Wunsch blockiert Klacks das Überschreiten der vertraglich vereinbarten Teilzeit-Wochenstunden konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks warnt, bevor einer Teilzeitkraft Überstunden über die vertraglich vereinbarten Wochenstunden hinaus zugeteilt werden &mdash; solche Überstunden sind bei Teilzeitverträgen grundsätzlich unzulässig, außer bei höherer Gewalt oder dringenden Unfallverhütungsarbeiten. Auf Wunsch blockiert Klacks das Überschreiten der vertraglich vereinbarten Teilzeit-Wochenstunden in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "description",
@@ -74,6 +74,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Pflegeorganisation erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, Touren und Teilzeitverträge korrekt abbildet &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, Touren und Teilzeitgrenzen abbildet &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

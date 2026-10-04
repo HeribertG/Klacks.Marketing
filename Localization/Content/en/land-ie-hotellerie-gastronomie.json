@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "For hotels &amp; food service",
     "titleHtml": "Early, late, night shifts &mdash; <span class=\"text-secondary\">scheduled fairly.</span>",
-    "subtitle": "Klacks schedules front of house, kitchen, and housekeeping in Ireland &mdash; with split shifts, Sunday and public-holiday premiums, and statutory rest periods that can't be quietly bypassed. Seasonal peaks and absences are absorbed automatically.",
+    "subtitle": "Klacks schedules front of house, kitchen, and housekeeping in Ireland &mdash; with split shifts, Sunday and public-holiday premiums, and statutory rest periods, with Klacks warning when they are not met. The planning helps absorb seasonal peaks and absences.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for shift schedules in hospitality and food service in Ireland",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Split shifts planned cleanly",
-        "text": "Klacks schedules lunch and dinner blocks so minimum rest periods and daily maximum hours are observed &mdash; every shortfall is flagged immediately."
+        "text": "Klacks schedules lunch and dinner blocks and checks minimum rest periods and daily maximum hours in the process &mdash; every shortfall is flagged immediately."
       },
       {
         "icon": "timer",
         "title": "Rest periods in view",
-        "text": "Statutory rest-period limits are monitored in real time &mdash; violations are flagged immediately. On request, Klacks blocks them outright: in block mode a violation can only be saved with documented supervisor approval."
+        "text": "Statutory rest-period limits that you set up are monitored in real time &mdash; violations are flagged immediately. On request, Klacks blocks them in block mode in the automatic planning paths (e.g. wizard, suggestions, substitution); in manual planning, Klacks warns."
       },
       {
         "icon": "payments",
-        "title": "Premiums calculated automatically",
-        "text": "Klacks calculates night, Sunday, and public-holiday premiums automatically &mdash; configurable per country and rule set, with no manual rework in payroll preparation."
+        "title": "Premiums as time credits",
+        "text": "Klacks credits night, Sunday, and public-holiday premiums as time credits in hours &mdash; configurable per country and rule set, as an hours basis for your payroll preparation."
       },
       {
         "icon": "badge",

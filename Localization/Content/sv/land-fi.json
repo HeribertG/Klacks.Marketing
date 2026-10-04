@@ -4,7 +4,7 @@
     "badgeIcon": "gavel",
     "badge": "Open Source &middot; Utan licensavgifter &middot; arbetstidslagen (872/2019)",
     "titleHtml": "Planera periodarbete <span class=\"text-secondary\">utan att förlora överblicken.</span>",
-    "subtitle": "Klacks schemalägger automatiskt enligt reglerna för finländskt periodarbete (jaksotyö) &mdash; inklusive vilotider, skyldigheten att publicera arbetsschemat i tid och det tillägg som passar din bransch och ditt kollektivavtal (TES). Installerad hos dig, med den AI-modell du själv väljer.",
+    "subtitle": "Klacks schemalägger automatiskt enligt reglerna för finländskt periodarbete (jaksotyö) &mdash; inklusive vilotider, skyldigheten att publicera arbetsschemat i tid och de tidstillägg som du lägger in för din bransch och ditt kollektivavtal (TES). Installerad hos dig, med den AI-modell du själv väljer.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaöversikt för finländska företag",
     "screenshotLabel": "Schema"
@@ -61,8 +61,8 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Periodarbete &amp; övertid beräknas automatiskt",
-        "text": "Övertidstillägg trappar Klacks upp på dags- eller veckobasis i upp till tre steg, till exempel 50 % och 100 %; periodarbetets trappa (de första 18 övertidstimmarna i en 3- eller 2-veckorsperiod med 50 %, varje ytterligare med 100 %) stöder Klacks inte. Samtidigt övervakar Klacks arbetstidslagens totalgräns: sedan 2020 finns ingen fast övertidskvot längre &mdash; avgörande är ett genomsnitt på högst 48 timmar per vecka inklusive övertid under den fyra månader långa utjämningsperioden, och just det räknar Klacks rullande."
+        "title": "Periodarbete &amp; övertid i överblick",
+        "text": "Övertidstillägg trappar Klacks upp på dags- eller veckobasis i upp till tre steg som tidskrediter, till exempel 50 % och 100 %; periodarbetets trappa (de första 18 övertidstimmarna i en 3- eller 2-veckorsperiod med 50 %, varje ytterligare med 100 %) stöder Klacks inte. Samtidigt övervakar Klacks arbetstidslagens totalgräns: sedan 2020 finns ingen fast övertidskvot längre &mdash; avgörande är ett genomsnitt på högst 48 timmar per vecka inklusive övertid under den fyra månader långa utjämningsperioden, och just det räknar Klacks rullande."
       },
       {
         "icon": "bedtime",
@@ -76,8 +76,8 @@
       },
       {
         "icon": "paid",
-        "title": "Söndagstillägg korrekt bokfört",
-        "text": "För arbete på söndagar och kyrkliga helgdagar bokför Klacks automatiskt det lagstadgade 100-procentiga tillägget (§ 20) &mdash; uppstår samtidigt övertidsarbete tillkommer övertidsersättningen."
+        "title": "Söndagstillägg som tidskredit",
+        "text": "För arbete på söndagar och kyrkliga helgdagar skriver Klacks automatiskt gott det lagstadgade 100-procentiga tillägget (§ 20) som tidskredit &mdash; uppstår samtidigt övertidsarbete tillkommer övertidstillägget. Själva ersättningen räknar din lönehantering av."
       },
       {
         "icon": "shield_lock",
@@ -105,8 +105,8 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "En 3-veckorsperiod, korrekt avräknad",
-    "text": "Klacks beräknar automatiskt de inlagda övertidstrapporna på dags- eller veckobasis och räknar 48-timmarssnittet rullande &mdash; utan manuell efterräkning. Trappan efter 120 timmar i en 3-veckorsperiod stöder Klacks inte."
+    "title": "En 3-veckorsperiod i överblick",
+    "text": "Klacks skriver gott de inlagda övertidstrapporna på dags- eller veckobasis automatiskt som tidskredit och räknar 48-timmarssnittet rullande &mdash; utan manuell efterräkning. Trappan efter 120 timmar i en 3-veckorsperiod stöder Klacks inte."
   },
   "showRoutePlanning": false,
   "cta": {

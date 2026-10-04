@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für indonesische Unternehmen | Progressive Überstunden-Zuschläge nach PP 35/2021",
+  "pageTitle": "Klacks für indonesische Unternehmen | Überstundenlimit und Zeitzuschläge nach PP 35/2021",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; UU PDP-konforme Zeiterfassung",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Zeiterfassung mit Blick auf das UU PDP",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks berechnet die gestaffelten Überstundenzuschläge nach PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit &mdash; auf Wunsch blockiert Klacks Verstöße hart &mdash; und läuft bei Ihnen installiert &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks schreibt Zeitzuschläge für Überstunden als Stunden gut, warnt beim wöchentlichen Überstundenlimit nach PP 35/2021 &mdash; auf Wunsch verhindert ein Block-Modus neue Verstöße in den automatischen Planungswegen &mdash; und läuft bei Ihnen installiert &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für indonesische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -57,17 +57,17 @@
   },
   "solutions": {
     "title": "Wie Klacks indonesische Betriebe entlastet",
-    "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "subtitle": "Von der Zeitgutschrift für Zuschläge bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "hourglass_top",
-        "title": "18-Stunden-Wochenlimit automatisch überwacht",
-        "text": "Klacks führt für jede Mitarbeiterin und jeden Mitarbeiter ein wochenbezogenes Überstundenkonto nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze und eines Hinweises auf die erforderliche schriftliche Freigabe. Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "title": "18-Stunden-Wochenlimit im Blick",
+        "text": "Klacks prüft für jede Mitarbeiterin und jeden Mitarbeiter die Wochenstunden gegen das Überstundenlimit nach PP 35/2021 Pasal 26 &mdash; inklusive der 4-Stunden-Tagesgrenze, sofern als Regel hinterlegt, und warnt bei Überschreitung. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "calculate",
-        "title": "Progressive Zuschläge korrekt berechnet",
-        "text": "Klacks wendet für Werktage die Stufen 1,5× und 2,0× aus PP 35/2021 Pasal 31 automatisch an, für Ruhe- und Feiertage den hinterlegten Zuschlag. Die stundenweise Staffel 2,0×/3,0×/4,0× an Ruhetagen, die Tabelle für 5- oder 6-Tage-Betriebe und die Basis 1/173 des Monatslohns bildet Klacks nicht ab &mdash; das bleibt bei Ihrer Lohnabrechnung."
+        "title": "Zuschläge als Zeitgutschrift",
+        "text": "Die Stufen 1,5× und 2,0× für Werktage stammen aus PP 35/2021 Pasal 31; Klacks schreibt den für Ihr Regelwerk hinterlegten Zeitzuschlag als Stunden gut. Die stundenweise Staffel 2,0×/3,0×/4,0× an Ruhetagen, die Tabelle für 5- oder 6-Tage-Betriebe und die Basis 1/173 des Monatslohns bildet Klacks nicht ab &mdash; Klacks rechnet keine Löhne, das bleibt bei Ihrer Lohnabrechnung."
       },
       {
         "icon": "pause_circle",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die gesetzlichen Ruhezeiten und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die hinterlegten Ruhezeit-Regeln werden dabei genauso geprüft und Zeitzuschläge genauso gutgeschrieben wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Überstunde am Ruhetag, ein Blick",
-    "text": "Klacks erkennt automatisch, ob eine Überstunde am Werktag oder an einem Ruhetag anfällt, wendet den hinterlegten Zuschlag an und behält gleichzeitig das 18-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt, ob eine Überstunde am Werktag oder an einem Ruhetag anfällt, schreibt den hinterlegten Zeitzuschlag als Stunden gut und behält gleichzeitig das 18-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks progressive Überstunden-Zuschläge und Wochenlimits automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Überstunden-Zuschläge als Zeitgutschrift erfasst und Wochenlimits prüft &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

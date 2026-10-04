@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in Vietnam",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte und Teams effizient ein &mdash; mit dem 30%-Nachtzuschlag automatisch berücksichtigt.",
+    "subtitle": "Klacks teilt Objekte und Teams effizient ein &mdash; mit dem 30%-Nachtzuschlag als automatischer Zeitgutschrift.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks Reinigungsdienste in Vietnam entlastet",
-    "subtitle": "Von der optimierten Route bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur Nachtzuschlag-Gutschrift &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Motorrad oder zu Fuß." },
-      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch zugewiesen", "text": "Klacks erkennt Nachteinsätze automatisch und weist den hinterlegten 30%-Nachtzuschlag nach Art. 98 Abs. 2 zu &mdash; das Nachtfenster 22:00&ndash;06:00 hinterlegen Sie exakt, und im additiven Rechenmodus kumuliert der Nachtzuschlag mit weiteren Zuschlägen, statt dass nur der höchste Satz gilt." },
+      { "icon": "bedtime", "title": "30%-Nachtzuschlag automatisch gutgeschrieben", "text": "Klacks erkennt Nachteinsätze automatisch und schreibt den hinterlegten 30%-Nachtzuschlag nach Art. 98 Abs. 2 als Zeitzuschlag in Stunden gut &mdash; das Nachtfenster 22:00&ndash;06:00 hinterlegen Sie exakt, und im additiven Rechenmodus kumuliert der Nachtzuschlag mit weiteren Zuschlägen, statt dass nur der höchste Satz gilt." },
       { "icon": "pause_circle", "title": "Pausen ab 6 Stunden als Block in der Tour", "text": "Die gesetzliche Pause bei durchgehenden Schichten ab 6 Stunden &mdash; 30 Minuten tagsüber, 45 Minuten nachts &mdash; lässt sich als fester oder verschiebbarer Block in die Tour legen; die Pausenpflicht selbst prüft Klacks nicht." },
-      { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) laufend mit &mdash; über alle Objekte und Teams hinweg. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben bei Ihnen, auch bei KI-Funktionen." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Distrikt 1 für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route, Team und Pausen." }
+      { "icon": "gavel", "title": "Überstunden-Cap überwacht", "text": "Klacks verfolgt die 40-Stunden-Monats- und 200-Stunden-Jahresgrenze (Art. 107) laufend mit &mdash; über alle Objekte und Teams hinweg. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben bei Ihnen; mit lokalem KI-Modell auch bei KI-Funktionen." },
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Distrikt 1 für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtzuschlag und Pause, ein Plan",
-    "text": "Klacks erkennt Nachteinsätze automatisch und weist den hinterlegten 30%-Zuschlag zu &mdash; ohne Nachrechnen von Hand; die verlängerte Pause ab 6 Stunden Arbeitszeit legen Sie als Block gleich mit in die Tour."
+    "text": "Klacks erkennt Nachteinsätze automatisch und schreibt den hinterlegten 30%-Zuschlag als Zeitzuschlag gut &mdash; ohne Nachrechnen von Hand; die verlängerte Pause ab 6 Stunden Arbeitszeit legen Sie als Block gleich mit in die Tour."
   },
   "showRoutePlanning": true,
   "cta": {

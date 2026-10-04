@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks för hemtjänst i Sverige | Dygnsvila & restid korrekt planerad",
+  "pageTitle": "Klacks för hemtjänst i Sverige | Dygnsvila & restid i schemat",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "För hemtjänst &amp; hemsjukvård i Sverige",
     "titleHtml": "Mer tid för vård, <span class=\"text-secondary\">mindre tid åt dygnsvila-räkning.</span>",
-    "subtitle": "Klacks planerar insatser och rutter automatiskt &mdash; inklusive restid mellan klienter som arbetstid, de skärpta dygnsvila-reglerna för privat vård och jourtidsgränserna. Installerat hos er, så att patientdata aldrig lämnar er verksamhet.",
+    "subtitle": "Klacks planerar insatser och rutter automatiskt &mdash; inklusive ett fast restidsvärde per pass som arbetstid och de skärpta dygnsvila-reglerna för privat vård. Installerat hos er, så att patientdata inte behöver lämna er verksamhet &mdash; på önskemål med lokalt hostad AI-modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevy för ruttplanering inom svensk hemtjänst",
     "screenshotLabel": "Tidslinje"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks svensk hemtjänst",
-    "subtitle": "Från dygnsvila beroende på avtalsdatum till korrekt restid &mdash; allt hänger ihop.",
+    "subtitle": "Från dygnsvila beroende på avtalsdatum till restid som arbetstid &mdash; allt hänger ihop.",
     "items": [
       { "icon": "route", "title": "Rutter automatiskt optimerade", "text": "Klacks lägger insatsrutter så att sträckorna blir korta och tidsfönstren hålls &mdash; för bil, cykel eller till fots." },
       { "icon": "bedtime", "title": "Dygnsvila inlagd enligt avtalsdatum", "text": "De stegvisa brytdatumen &mdash; 1 september 2025 (Vårdföretagarna/Kommunal) och 1 januari 2026 (Fremia/Kommunal) &mdash; lägger ni in med daterad giltighet; Klacks planerar automatiskt in den 11-timmars vilotiden och håller i undantagsfall koll på den kompenserande vilan inom 14 dagar." },
-      { "icon": "schedule", "title": "Jourtidsgränser övervakas", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad enligt ATL § 6 övervakas automatiskt." },
-      { "icon": "alt_route", "title": "Restid korrekt registrerad som arbetstid", "text": "Resor mellan klienter räknas automatiskt som arbetstid &mdash; endast första och sista resan lämnas utanför." },
+      { "icon": "schedule", "title": "Vecko- och månadsgränser övervakas", "text": "Gränserna på 48 timmar per 4 veckor respektive 50 timmar per månad övervakar Klacks som arbetstidsgränser; någon egen tidstyp för beredskap (jourtid enligt ATL § 6) finns inte i Klacks." },
+      { "icon": "alt_route", "title": "Restid som arbetstid inlagd", "text": "För varje pass kan ett fast restidsvärde läggas in som räknas som arbetstid &mdash; faktiska resor mellan klienter beräknar Klacks inte enskilt." },
       { "icon": "verified", "title": "Kompetenser beaktas automatiskt", "text": "Varje insats tilldelas endast personal med rätt kompetens &mdash; helt utan manuell kontroll." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll turerna för imorgon” räcker. Vid sjukdom föreslår Klacksy omedelbart tillgänglig ersättare." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dygnsvila-brytdatum och restid, en plan",
-    "text": "Via den inlagda, daterade giltigheten tar Klacks hänsyn till om den skärpta 11-timmars dygnsvila-regeln redan gäller för en vårdare från 1 september 2025 eller från 1 januari 2026, och räknar samtidigt in den registrerade restiden mellan klienter som arbetstid &mdash; utan manuell efterräkning."
+    "text": "Via den inlagda, daterade giltigheten tar Klacks hänsyn till om den skärpta 11-timmars dygnsvila-regeln redan gäller för en vårdare från 1 september 2025 eller från 1 januari 2026, och räknar samtidigt in det inlagda restidsvärdet per pass som arbetstid &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Upplev Klacks i er hemtjänst",
-    "text": "Prova i Playground hur Klacks tar hand om dygnsvila, jourtid och restid &mdash; eller installera det direkt på er egen infrastruktur. Inga licensavgifter och utan registrering."
+    "text": "Prova i Playground hur Klacks tar hand om dygnsvila och restid &mdash; eller installera det direkt på er egen infrastruktur. Inga licensavgifter och utan registrering."
   }
 }

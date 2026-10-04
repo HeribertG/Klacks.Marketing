@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Untuk syarikat keselamatan di Malaysia",
-    "titleHtml": "Setiap pos diisi. <span class=\"text-secondary\">Setiap elaun tepat.</span>",
-    "subtitle": "Klacks mengisi pos dan rondaan tanpa jurang &mdash; dengan pembahagian syif jaga 12 jam kepada waktu biasa dan lebih masa serta hari rehat mingguan diambil kira secara automatik. Dipasang di premis anda sendiri, supaya data operasi dan pelanggan anda kekal di tangan anda.",
+    "titleHtml": "Setiap pos dalam pantauan. <span class=\"text-secondary\">Setiap elaun boleh dijejaki.</span>",
+    "subtitle": "Klacks menunjukkan pos dan rondaan yang kosong serta-merta &mdash; dan memaparkan syif jaga 12 jam secara berasingan sebagai waktu biasa dan lebih masa, manakala hari rehat mingguan terus dipantau. Dipasang di premis anda sendiri, supaya data operasi dan pelanggan anda kekal di tangan anda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Paparan garis masa Klacks untuk syif jaga dan pengisian pos di Malaysia",
     "screenshotLabel": "Garis Masa"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban syarikat keselamatan di Malaysia",
-    "subtitle": "Daripada pos yang diisi hingga pembahagian syif yang tepat &mdash; semuanya saling melengkapi.",
+    "subtitle": "Daripada pos yang kosong hingga pembahagian syif yang jelas &mdash; semuanya saling melengkapi.",
     "items": [
-      { "icon": "shield", "title": "Premis &amp; pos tanpa jurang", "text": "Setiap pos di semua premis &mdash; Klacks menunjukkan setiap kekosongan serta-merta dan mengisinya secara automatik jika dikehendaki." },
-      { "icon": "schedule", "title": "Syif 12 jam dibahagikan secara automatik", "text": "Klacks mengasingkan syif jaga 12 jam secara automatik kepada 8 jam waktu biasa dan 4 jam lebih masa pada kadar 1.5 kali." },
+      { "icon": "shield", "title": "Premis &amp; pos dalam pantauan", "text": "Setiap pos di semua premis &mdash; Klacks menunjukkan setiap kekosongan serta-merta dan mengisinya secara automatik jika dikehendaki." },
+      { "icon": "schedule", "title": "Syif 12 jam dipaparkan secara berasingan", "text": "Klacks memaparkan syif jaga 12 jam secara berasingan sebagai 8 jam waktu biasa dan 4 jam lebih masa serta mencatatkan elaun 1.5 kali sebagai kredit masa, jika kadar itu telah ditetapkan." },
       { "icon": "event_available", "title": "Hari rehat mingguan dipantau secara automatik", "text": "Klacks memantau supaya setiap pengawal mendapat sekurang-kurangnya satu hari rehat penuh setiap minggu, walaupun dalam rotasi yang berputar, dan memberi amaran sekiranya berlaku pelanggaran." },
-      { "icon": "verified", "title": "Sijil disemak secara automatik", "text": "Klacks memaparkan status kad kuasa/lesen kakitangan pada setiap tugasan &mdash; dan memberi amaran sebelum mana-mana sijil tamat tempoh. Atas permintaan, Klacks menyekat sepenuhnya penugasan dengan bukti wajib yang telah luput &mdash; hanya kakitangan dengan bukti sah yang akan dijadualkan." },
+      { "icon": "verified", "title": "Sijil dalam pantauan", "text": "Klacks memaparkan status kad kuasa/lesen kakitangan pada setiap tugasan &mdash; dan memberi amaran sebelum mana-mana sijil tamat tempoh. Jika bukti wajib tiada atau telah luput, Klacks menolak penugasan, termasuk dalam perancangan manual." },
       { "icon": "route", "title": "Rondaan dioptimumkan", "text": "Bagi perkhidmatan mudah alih, Klacks menyusun laluan rondaan supaya jarak pendek dan selang masa dipatuhi." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Isikan syif malam untuk premis Selatan\" sudah memadai &mdash; Klacksy memulakan perancangan, Klacks menyemak sijil, ketersediaan dan hari rehat." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Contoh Konkrit",
     "title": "Syif jaga dan hari rehat, satu jadual",
-    "text": "Klacks mengasingkan syif jaga 12 jam secara automatik kepada 8 jam waktu biasa dan 4 jam lebih masa pada kadar 1.5 kali, serta memantau hari rehat mingguan &mdash; tanpa perlu mengira semula secara manual."
+    "text": "Klacks memaparkan syif jaga 12 jam secara berasingan sebagai 8 jam waktu biasa dan 4 jam lebih masa (kadar 1.5 kali sebagai kredit masa) serta memantau hari rehat mingguan &mdash; tanpa perlu mengira semula secara manual."
   },
   "showRoutePlanning": true,
   "cta": {

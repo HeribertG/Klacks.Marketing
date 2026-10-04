@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Voor de thuiszorg &amp; ambulante zorg in Nederland",
-    "titleHtml": "Elke ORT-toeslagschaal <span class=\"text-secondary\">automatisch juist.</span>",
-    "subtitle": "Klacks berekent de onregelmatigheidstoeslag (ORT) van de CAO VVT automatisch per tijdvak en verwerkt de nieuwe €25-dagvergoeding vanaf 1-1-2026 als toeslag &mdash; bij u geïnstalleerd, zodat patiëntgegevens uw organisatie nooit verlaten.",
+    "titleHtml": "Elke ORT-toeslagschaal <span class=\"text-secondary\">in beeld.</span>",
+    "subtitle": "Klacks schrijft de vastgelegde onregelmatigheidstoeslag (ORT) van de CAO VVT per tijdvak als tijdtegoed bij &mdash; bij u geïnstalleerd, zodat patiëntgegevens in uw organisatie blijven (op verzoek met een lokaal AI-model).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning in de Nederlandse thuiszorg",
     "screenshotLabel": "Tijdlijn"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Hoe Klacks de Nederlandse thuiszorg ontlast",
-    "subtitle": "Van de automatische ORT-berekening tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
+    "subtitle": "Van de automatische ORT-toewijzing tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
     "items": [
-      { "icon": "schedule", "title": "ORT automatisch per tijdvak berekend", "text": "Klacks kent alle vijf ORT-schalen van de CAO VVT &mdash; 22%, 47%, 38%, 52% en 60% &mdash; en wijst elke dienst automatisch de juiste schaal toe." },
-      { "icon": "paid", "title": "€25-dagvergoeding als toeslag verwerkt", "text": "Klacks verwerkt de nieuwe €25-vergoeding als configureerbare dagtoeslag en toont waar nulurencontracten of regiecontracten zijn uitgezonderd." },
-      { "icon": "event_available", "title": "Oproepkrachten correct gepland", "text": "Oproepen plant u in Klacks met datum en uren; of de 4-dagen-aankondigingstermijn in acht is genomen en een afzegging een loonaanspraak veroorzaakt, controleert Klacks niet automatisch." },
+      { "icon": "schedule", "title": "ORT automatisch per tijdvak toegewezen", "text": "De vijf ORT-schalen van de CAO VVT &mdash; 22%, 47%, 38%, 52% en 60% &mdash; legt u vast als toeslagregels met tijdvak; Klacks wijst elke dienst automatisch de passende schaal toe en schrijft die als tijdtegoed bij." },
+      { "icon": "paid", "title": "Extra werkdag zichtbaar", "text": "De €25-dagvergoeding is een vast bedrag in euro en wordt niet in Klacks berekend; Klacks levert de geplande en gewerkte dagen en uren als basis voor uw loonadministratie." },
+      { "icon": "event_available", "title": "Oproepkrachten gepland", "text": "Oproepen plant u in Klacks met datum en uren; of de 4-dagen-aankondigingstermijn in acht is genomen en een afzegging een loonaanspraak veroorzaakt, controleert Klacks niet automatisch." },
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks bepaalt de routes zo dat afstanden kort blijven en tijdvakken worden nageleefd &mdash; voor auto, fiets of te voet." },
       { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke inzet wordt alleen toegewezen aan personen met de juiste kwalificatie &mdash; volledig zonder handmatige controle." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekmelding stelt Klacksy direct een beschikbare vervanger voor." }
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Concreet",
     "title": "Nachtdienst, ORT, één blik",
-    "text": "Klacks herkent automatisch wanneer een nachtdienst in het weekend de 52%-ORT-schaal uitlokt, en berekent de nieuwe €25-dagvergoeding als toeslag voor de extra werkdag mee &mdash; zonder handmatig nawerk."
+    "text": "Klacks herkent automatisch wanneer een nachtdienst in het weekend de 52%-ORT-schaal uitlokt, en schrijft de uren als tijdtegoed bij &mdash; zonder handmatig nawerk; de €25-dagvergoeding berekent uw loonadministratie."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Ervaar Klacks in uw thuiszorgorganisatie",
-    "text": "Probeer in de playground hoe Klacks ORT-toeslagen, de €25-vergoeding en routes overneemt &mdash; of installeer het direct op uw eigen infrastructuur. Geen licentiekosten en zonder registratie."
+    "text": "Probeer in de playground hoe Klacks ORT-toeslagen en routes overneemt &mdash; of installeer het direct op uw eigen infrastructuur. Geen licentiekosten en zonder registratie."
   }
 }

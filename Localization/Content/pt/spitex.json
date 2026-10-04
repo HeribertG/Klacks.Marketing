@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para o apoio domiciliário &amp; cuidados de saúde ambulatórios",
     "titleHtml": "Mais tempo para cuidar, <span class=\"text-secondary\">menos para planear rotas.</span>",
-    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; com as qualificações certas, os subsídios corretos e os feriados da sua região. Instalado nas suas instalações, para que os dados dos utentes nunca saiam das suas instalações.",
+    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; com as qualificações certas, subsídios configuráveis e os feriados da sua região. Instalado nas suas instalações; com um modelo de IA local, os dados dos utentes não saem das suas instalações.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista de linha temporal do Klacks para o planeamento de rotas do apoio domiciliário",
     "screenshotLabel": "Linha temporal",
@@ -25,8 +25,8 @@
     "items": [
       { "icon": "route", "title": "Rotas otimizadas automaticamente", "text": "O Klacks define os trajetos das intervenções para que os percursos sejam curtos e as janelas horárias sejam cumpridas &mdash; de carro, bicicleta ou a pé." },
       { "icon": "verified", "title": "Qualificações consideradas automaticamente", "text": "Cada intervenção só é atribuída a profissionais com a qualificação adequada &mdash; sem qualquer verificação manual." },
-      { "icon": "event_available", "title": "Subsídios &amp; feriados da sua região", "text": "Subsídios de noite, fim de semana e feriado já vêm pré-configurados &mdash; até ao nível de região e concelho, livremente ajustáveis." },
-      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados ficam consigo", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes não saem das suas instalações &mdash; nem sequer para a IA." },
+      { "icon": "event_available", "title": "Feriados da sua região &amp; subsídios", "text": "Os feriados já vêm pré-configurados &mdash; até ao nível de região e concelho. Os subsídios de noite, fim de semana e feriado define-os você mesmo como créditos de horas, tudo livremente ajustável." },
+      { "icon": "shield_lock", "title": "Instalado nas suas instalações: dados nas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes ficam nos seus servidores &mdash; com um modelo de IA local, nada sai das suas instalações nem através da IA." },
       { "icon": "smart_toy", "title": "O Klacksy compreende a sua frase", "text": "«Preenche as rotas de amanhã» basta. Em caso de doença, o Klacksy sugere de imediato um substituto disponível." },
       { "icon": "event_busy", "title": "Faltas rapidamente resolvidas", "text": "Se alguém falta, o Klacks mostra de imediato quem está qualificado e disponível &mdash; sem ter de refazer todo o plano." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Na prática",
     "title": "Apoio domiciliário em Genebra, bilingue, com intervenções em Vaud",
-    "text": "Interface em francês, feriados de Genebra e de Vaud, subsídios de apoio domiciliário &mdash; configurados no Klacks, não programados à medida. As rotas são otimizadas automaticamente, as qualificações são verificadas, e o Klacksy ajuda em alterações de última hora. Os dados dos utentes permanecem sempre integralmente nas instalações."
+    "text": "Interface em francês, feriados de Genebra e de Vaud, subsídios de apoio domiciliário &mdash; configurados no Klacks, não programados à medida. As rotas são otimizadas automaticamente, as qualificações são verificadas, e o Klacksy ajuda em alterações de última hora. Os dados dos utentes ficam nos seus servidores; com um modelo de IA local, tudo permanece nas instalações."
   },
   "showRoutePlanning": true,
   "cta": {

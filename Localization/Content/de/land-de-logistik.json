@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Arbeits- &amp; Ruhezeiten im Blick",
-        "text": "Die Ruhezeit-Grenzen nach Art. 8 der VO 561/2006 werden in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Eine Tageshöchstarbeitszeit lässt sich zusätzlich hinterlegen; die Tageslenkzeit nach Art. 6 selbst prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Eine hinterlegte Mindestruhezeit wird in Echtzeit überwacht &mdash; jede Unterschreitung wird sofort sichtbar gemacht. Eine Tageshöchstarbeitszeit lässt sich zusätzlich hinterlegen; die Lenk- und Ruhezeiten der VO 561/2006 (Art. 6 und 8) prüft Klacks nicht &mdash; sie werden weiter über die Fahrtenschreiberdaten nachgewiesen. Auf Wunsch blockiert Klacks Ruhezeit-Verstöße in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "fact_check",
@@ -52,7 +52,7 @@
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Läuft ein Pflicht-Nachweis dennoch ab, lässt sich die Zuteilung auf Wunsch hart blockieren."
+        "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung."
       },
       {
         "icon": "smart_toy",

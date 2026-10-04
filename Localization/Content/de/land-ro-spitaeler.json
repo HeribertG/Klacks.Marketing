@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Rumänien",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">nach der Gardă aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Bereitschaftsdienste (Gardă) rund um die Uhr &mdash; mit der 24-Stunden-Ruhezeit nach jedem Gardă-Dienst und der gesetzlich vorgeschriebenen 35-Stunden-Woche für Ärztinnen und Ärzte automatisch berücksichtigt.",
+    "subtitle": "Klacks plant Stationen und Gardă-Dienste rund um die Uhr &mdash; mit der 24-Stunden-Ruhezeit nach jedem Gardă-Dienst und der gesetzlich vorgeschriebenen 35-Stunden-Woche für Ärztinnen und Ärzte im Blick.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Rumänien",
     "screenshotLabel": "Dienstplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks rumänische Krankenhäuser entlastet",
-    "subtitle": "Von der korrekten Gardă-Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Gardă-Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "schedule",
@@ -41,8 +41,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "24-Stunden-Ruhezeit nach Gardă automatisch geplant",
-        "text": "Klacks plant den 24-Stunden-Ruheanspruch nach jedem Bereitschaftsdienst automatisch mit ein &mdash; auch bei Gardă an Sonn- und Feiertagen."
+        "title": "24-Stunden-Ruhezeit nach Gardă automatisch berücksichtigt",
+        "text": "Klacks berücksichtigt den 24-Stunden-Ruheanspruch nach jedem Gardă-Dienst automatisch bei der Planung &mdash; auch bei Gardă an Sonn- und Feiertagen."
       },
       {
         "icon": "groups",
@@ -52,7 +52,7 @@
       {
         "icon": "gavel",
         "title": "35-Stunden-Woche im Blick",
-        "text": "Klacks überwacht die gesetzlich vorgeschriebene 35-Stunden-Woche der Ärztinnen und Ärzte fortlaufend. Auf Wunsch blockiert Klacks eine Überschreitung konsequent &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht die gesetzlich vorgeschriebene 35-Stunden-Woche der Ärztinnen und Ärzte fortlaufend. Auf Wunsch blockiert Klacks eine Überschreitung in der automatischen Planung konsequent; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Gardă, Ruhezeit, ein Plan",
-    "text": "Klacks plant die 24-Stunden-Ruhezeit nach jeder Gardă automatisch ein und zeigt frühzeitig, wenn Personalunterbesetzung eine Nachholung der Tagesnorm nötig macht."
+    "text": "Klacks berücksichtigt die 24-Stunden-Ruhezeit nach jeder Gardă automatisch und zeigt frühzeitig, wenn Personalunterbesetzung eine Nachholung der Tagesnorm nötig macht."
   },
   "showRoutePlanning": false,
   "cta": {

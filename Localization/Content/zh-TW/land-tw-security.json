@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "適用於台灣保全業",
-    "titleHtml": "每個崗位都補滿 &mdash; <span class=\"text-secondary\">絕不突破288小時上限。</span>",
-    "subtitle": "Klacks 為據點與巡邏排班補齊每個崗位 &mdash; 並自動監控責任制保全人員每月240小時基本工時至最高288小時的階梯上限。",
+    "titleHtml": "所有崗位一目了然 &mdash; <span class=\"text-secondary\">並對288小時上限提前預警。</span>",
+    "subtitle": "Klacks 即時顯示據點與巡邏的空缺崗位 &mdash; 並監控責任制保全人員每月240小時基本工時至最高288小時的階梯上限，超限前提出警示。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 台灣據點排班與巡邏時間軸畫面",
     "screenshotLabel": "時間軸"
@@ -22,18 +22,18 @@
     "title": "Klacks 如何為台灣保全業減輕負擔",
     "subtitle": "從崗位補齊到正確的月工時上限 &mdash; 環環相扣，一次到位。",
     "items": [
-      { "icon": "shield", "title": "據點 &amp; 崗位無縫排班", "text": "涵蓋所有據點的每個崗位 &mdash; Klacks 即時顯示每個空缺，並可依需求自動補齊。" },
+      { "icon": "shield", "title": "據點 &amp; 崗位全面掌握", "text": "涵蓋所有據點的每個崗位 &mdash; Klacks 即時顯示每個空缺，並可依需求自動補齊。" },
       { "icon": "schedule", "title": "自動監控240至288小時上限", "text": "Klacks 在排班表中監控第241小時的臨界點，並在觸及每月288小時絕對上限前提前預警。" },
-      { "icon": "bedtime", "title": "每日上限 &amp; 11小時間隔全程掌握", "text": "Klacks 會在任何含加班超過12小時的班次出現時提出警示，並自動納入11小時班次間隔的規劃。如有需要，Klacks 可將新的違規強制封鎖：在封鎖模式下，新的違規只能在有記錄的主管核准後才能儲存（可依規則類型個別設定）。" },
-      { "icon": "gavel", "title": "人身保全 &amp; 運鈔車保全分開處理", "text": "Klacks 將人身保全與運鈔車保全的特殊規範，與一般保全業分開處理。" },
-      { "icon": "verified", "title": "自動檢核證照", "text": "Klacks 僅將班次分配給持有效證照的人員 &mdash; 並在證照即將到期前提前預警。如有需要，Klacks 可完全封鎖以過期強制證照進行的排班 &mdash; 僅持有有效證照者才會被排入班表。" },
+      { "icon": "bedtime", "title": "每日上限 &amp; 11小時間隔全程掌握", "text": "Klacks 會在任何含加班超過12小時的班次出現，或班次間隔低於11小時時提出警示。如有需要，可啟用封鎖模式，在自動排班途徑（自動排班、建議方案、替補搜尋）中防止新的違規；手動排班時仍僅提出警示。" },
+      { "icon": "gavel", "title": "人身保全 &amp; 運鈔車保全可分開設定", "text": "人身保全與運鈔車保全的特殊規範，可與一般保全業分開設定。" },
+      { "icon": "verified", "title": "證照到期提前預警", "text": "Klacks 在排班時會考量人員的資格條件，並在證照即將到期前提前預警。若強制證照缺失或已過期，Klacks 會拒絕分配，手動排班亦然。" },
       { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「補齊北區據點的夜班」即可 &mdash; Klacksy 會啟動排班，由 Klacks 自動檢查240/288小時上限。" }
     ]
   },
   "example": {
     "eyebrow": "實例說明",
     "title": "240至288小時，一目了然",
-    "text": "只要保全人員的當月工時超過240小時，Klacks 便會立即在排班表中顯示，並持續監控不超過288小時的絕對上限。"
+    "text": "只要保全人員的當月工時超過240小時，Klacks 便會立即在排班表中顯示，並在接近288小時的絕對上限時提出警示。"
   },
   "showRoutePlanning": true,
   "cta": {

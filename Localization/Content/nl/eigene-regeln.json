@@ -32,8 +32,8 @@
     "subtitle": "Elke parameter met betekenis en planningseffect &mdash; dit zijn de themavelden.",
     "items": [
       { "icon": "schedule", "title": "Werktijd-basis", "text": "Normale daguren en de weekuren voor een 100%-aanstelling &mdash; de referentie voor deeltijdpercentages en de berekening van de normuren." },
-      { "icon": "speed", "title": "Bovengrenzen", "text": "Maximale uren per dag en per week &mdash; de planner weigert diensten die daarboven uitkomen." },
-      { "icon": "calendar_month", "title": "Vervolgdagen &amp; rustdagen", "text": "Hoeveel opeenvolgende werkdagen zijn toegestaan en hoeveel rustdagen per planningsvenster worden gegarandeerd." },
+      { "icon": "speed", "title": "Bovengrenzen", "text": "Maximale uren per dag en per week &mdash; de planner toetst diensten aan deze grenzen en waarschuwt als ze worden overschreden." },
+      { "icon": "calendar_month", "title": "Vervolgdagen &amp; rustdagen", "text": "Hoeveel opeenvolgende werkdagen zijn toegestaan en hoeveel rustdagen per planningsvenster worden ingepland." },
       { "icon": "bedtime", "title": "Rustpauzes &amp; nachttoeslag", "text": "Minimale pauze tussen twee diensten plus begin, einde en tarief van de nachttoeslag." },
       { "icon": "more_time", "title": "Overwerk", "text": "Vanaf hoeveel uren gewerkte tijd als overwerk geldt &mdash; gecumuleerd per dag of per week." },
       { "icon": "beach_access", "title": "Feestdagen &amp; vakantie", "text": "Toeslagtarief voor werken op feestdagen en het jaarlijkse vakantierecht voor medewerkers op deze regel." }

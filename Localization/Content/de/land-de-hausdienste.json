@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Gebäudereinigung | Objekt-Routen, Wegezeiten & Mindestlohn",
+  "pageTitle": "Klacks für Gebäudereinigung | Objekt-Routen, Wegezeiten & Stunden je Lohngruppe",
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit korrekt erfassten Wegezeiten und lückenloser Stunden-Dokumentation als Basis für die RTV-Lohngruppen. Touren werden automatisch optimiert, damit keine Zeit auf der Straße verloren geht.",
+    "subtitle": "Klacks teilt Objekte, Routen und wechselnde Teams effizient ein &mdash; mit erfassten Wegezeiten und einer Stunden-Dokumentation als Basis für die RTV-Lohngruppen. Touren werden automatisch optimiert, damit keine Zeit auf der Straße verloren geht.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Hausdienste entlastet",
-    "subtitle": "Von der optimierten Route bis zur korrekt erfassten Wegezeit &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur erfassten Wegezeit &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,13 +46,13 @@
       },
       {
         "icon": "timer",
-        "title": "Wegezeiten korrekt erfasst",
-        "text": "Wegezeiten zwischen mehreren Objekten am selben Tag erfasst Klacks als bezahlte Arbeitszeit &mdash; die RTV-Obergrenze von bis zu drei Stunden nach § 3 Abs. 2.2 RTV Gebäudereinigung behalten Sie bei der Planung im Blick."
+        "title": "Wegezeiten erfasst",
+        "text": "Wegezeiten zwischen mehreren Objekten am selben Tag erfasst Klacks als Arbeitszeit &mdash; die RTV-Obergrenze von bis zu drei Stunden nach § 3 Abs. 2.2 RTV Gebäudereinigung behalten Sie bei der Planung im Blick."
       },
       {
         "icon": "payments",
-        "title": "Stunden lückenlos je Lohngruppe dokumentiert",
-        "text": "Geleistete Stunden je Lohngruppe &mdash; von der Unterhalts- bis zur Glasreinigung &mdash; dokumentiert Klacks lückenlos als Basis für die Lohnabrechnung nach dem Lohntarifvertrag Gebäudereinigung. Die Lohnsätze selbst legt der Tarifvertrag fest, Klacks berechnet sie nicht."
+        "title": "Stunden je Lohngruppe dokumentiert",
+        "text": "Geleistete Stunden je Lohngruppe &mdash; von der Unterhalts- bis zur Glasreinigung &mdash; dokumentiert Klacks als Basis für die Lohnabrechnung nach dem Lohntarifvertrag Gebäudereinigung. Die Lohnsätze selbst legt der Tarifvertrag fest, Klacks berechnet sie nicht."
       },
       {
         "icon": "smart_toy",

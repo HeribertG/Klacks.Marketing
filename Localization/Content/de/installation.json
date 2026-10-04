@@ -1,11 +1,11 @@
 {
   "pageTitle": "Klacks installieren: Geführter Installer oder Docker Compose mit Länderpaket | Klacks",
-  "metaDescription": "Klacks auf eigener Infrastruktur installieren: geführter Installer oder Docker-Compose-Stack, vorkonfiguriert mit Feiertagen, Arbeitszeitregeln und Zuschlägen Ihres Landes. Ohne Lizenzgebühren, Open Source, ohne Registrierung.",
+  "metaDescription": "Klacks auf eigener Infrastruktur installieren: geführter Installer oder Docker-Compose-Stack, vorkonfiguriert mit Feiertagen, Arbeitszeitregeln und &ndash; soweit für Ihr Land definiert &ndash; Zuschlägen. Ohne Lizenzgebühren, Open Source, ohne Registrierung.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ohne Lizenzgebühren &amp; Open Source",
     "titleHtml": "Klacks selbst betreiben &mdash; <span class=\"text-secondary\">auf Ihrer eigenen Infrastruktur.</span>",
-    "subtitle": "Zwei Wege, ein Ergebnis: der geführte Installer oder der Docker-Compose-Stack für Ihr eigenes Setup. Das Länderpaket bringt Feiertage, Arbeitszeitregeln, Zuschläge und Branchen-Voreinstellungen Ihres Landes gleich mit &mdash; ohne Registrierung, ohne Lizenzkosten."
+    "subtitle": "Zwei Wege, ein Ergebnis: der geführte Installer oder der Docker-Compose-Stack für Ihr eigenes Setup. Das Länderpaket bringt Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert) &mdash; ohne Registrierung, ohne Lizenzkosten."
   },
   "industry": {
     "eyebrow": "Länderpaket",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Nur das Länderprofil &mdash; für bestehende Installationen",
-    "text": "Klacks läuft schon? Das Profil (JSON) enthält die Länder-Voreinstellungen &mdash; Feiertage, Arbeitszeitregeln, Zuschläge und Branchen &mdash; und wird beim ersten Start einer Installation eingebunden. Auch der Weg, um eine weitere Branche mit deren Voreinstellungen nachzuziehen.",
+    "text": "Klacks läuft schon? Das Profil (JSON) enthält die Länder-Voreinstellungen &mdash; Feiertage, Arbeitszeitregeln, Zuschläge (soweit für das Land definiert) und Branchen &mdash; und wird beim ersten Start einer Installation eingebunden. Auch der Weg, um eine weitere Branche mit deren Voreinstellungen nachzuziehen.",
     "downloadLabel": "Profil (JSON) laden"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Gut zu wissen",
     "items": [
       { "icon": "code", "title": "Open Source (AGPL-3.0)", "text": "Der komplette Quellcode ist unter der AGPL-3.0 auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
-      { "icon": "storage", "title": "Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten verlassen Ihren Server nicht &mdash; es gibt keinen Cloud-Zwang." },
+      { "icon": "storage", "title": "Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten liegen auf Ihrem Server &mdash; es gibt keinen Cloud-Zwang. Nur wenn Sie einen externen KI-Anbieter wählen, gehen Anfragen an diesen; mit einem lokalen Modell bleibt alles im Haus." },
       { "icon": "update", "title": "Updates", "text": "Die Installation pinnt die zuletzt veröffentlichte Version. Ein Update-Dienst im Stack spielt neue veröffentlichte Versionen automatisch ein." },
       { "icon": "lock", "title": "HTTPS ab dem Start", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern." }
     ]

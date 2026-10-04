@@ -42,17 +42,17 @@
       {
         "icon": "calculate",
         "title": "Äquivalenz- und Überstunden gestaffelt verzuschlagt",
-        "text": "Klacks bildet die Staffelung der CCN 16 direkt ab: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; +25% für die Äquivalenzstunden ab der 36., +50% für echte Überstunden ab der 40. bzw. 44. Stunde; die Auszahlung übernimmt Ihre Lohnabrechnung auf dieser fertig verzuschlagten Basis."
+        "text": "Klacks kann die Staffelung der CCN 16 als Zeitgutschrift abbilden: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; +25% für die Äquivalenzstunden ab der 36., +50% für echte Überstunden ab der 40. bzw. 44. Stunde; die Auszahlung übernimmt Ihre Lohnabrechnung auf Basis dieser Stunden."
       },
       {
         "icon": "timer",
         "title": "Arbeits- &amp; Ruhezeiten überwacht",
-        "text": "Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; auf Wunsch blockiert Klacks sie hart, ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die Lenkzeit selbst prüft Klacks nicht; die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
+        "text": "Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, werden überwacht, Grenzüberschreitungen macht Klacks sichtbar &mdash; in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung) blockiert Klacks sie auf Wunsch, bei manueller Planung warnt Klacks. Die Lenkzeit selbst prüft Klacks nicht; die geplanten und erfassten Arbeitszeiten ergänzen die Fahrtenschreiber-Aufzeichnungen, die für den 56-Tage-Nachweis bei Kontrollen vorliegen müssen."
       },
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "text": "Bei der automatischen Planung teilt Klacks Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
       },
       {
         "icon": "smart_toy",

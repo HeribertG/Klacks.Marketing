@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (訪問介護) in Japan",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und einem auf das japanische Nachtfenster (22 bis 5 Uhr) eingerichteten Nachtzuschlag. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und einem auf das japanische Nachtfenster (22 bis 5 Uhr) eingerichteten Nachtzuschlag. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Japan",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die häusliche Pflege in Japan entlastet",
-    "subtitle": "Von der automatischen Tour bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Tour bis zum hinterlegten Nachtzuschlag &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Nachtzuschlag automatisch berechnet",
-        "text": "Klacks lässt sich auf das gesetzliche Nachtfenster zwischen 22:00 und 05:00 Uhr einrichten und rechnet den 25%-Zuschlag danach automatisch mit ein &mdash; ohne Nachrechnen von Hand."
+        "title": "Nachtzuschlag als Zeitgutschrift",
+        "text": "Klacks lässt sich auf das gesetzliche Nachtfenster zwischen 22:00 und 05:00 Uhr einrichten und schreibt den 25%-Zuschlag danach als Zeitgutschrift gut &mdash; den Geldbetrag rechnet Ihr Lohnsystem."
       },
       {
         "icon": "verified",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegezeit und Nachtzuschlag, ein Plan",
-    "text": "Klacks zählt die erfasste Fahrzeit zwischen Klient:innen als Arbeitszeit und wendet den für das japanische Nachtfenster (22:00 bis 05:00 Uhr) eingerichteten 25%-Zuschlag automatisch an &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks zählt die erfasste Fahrzeit zwischen Klient:innen als Arbeitszeit und schreibt den für das japanische Nachtfenster (22:00 bis 05:00 Uhr) eingerichteten 25%-Zuschlag als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

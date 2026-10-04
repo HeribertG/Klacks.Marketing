@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken (醫療機構) in Taiwan",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede Pflegeminute korrekt zählen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtübergaben &mdash; und rechnet für das Pflegepersonal (護理人員), das seit 1.1.2014 vollständig aus dem Verantwortungssystem (§ 84-1 LSA) ausgenommen ist, jede Überstunde regulär nach § 24 LSA ab.",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede Pflegeminute im Blick behalten.</span>",
+    "subtitle": "Klacks plant Stationen und Schichtübergaben &mdash; und erfasst für das Pflegepersonal (護理人員), das seit 1.1.2014 vollständig aus dem Verantwortungssystem (§ 84-1 LSA) ausgenommen ist, jede Überstunde als Zeitgutschrift; die Vergütung nach § 24 LSA übernimmt die Lohnbuchhaltung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Taiwan",
     "screenshotLabel": "Dienstplan"
@@ -20,13 +20,13 @@
   },
   "solutions": {
     "title": "Wie Klacks taiwanische Krankenhäuser entlastet",
-    "subtitle": "Von der lückenlosen 24/7-Abdeckung bis zur korrekten Übergabezeit &mdash; alles greift ineinander.",
+    "subtitle": "Von der 24/7-Abdeckung im Blick bis zur erfassten Übergabezeit &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "Lückenlose 24/7-Stationsabdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "Überstunden des Pflegepersonals korrekt nach § 24", "text": "Klacks rechnet jede Überstunde des Pflegepersonals (護理人員) außerhalb des Verantwortungssystems automatisch nach § 24 LSA ab &mdash; 1,34× für die ersten zwei Stunden, 1,67× ab der dritten." },
+      { "icon": "schedule", "title": "24/7-Stationsabdeckung im Blick", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "gavel", "title": "Überstunden des Pflegepersonals als Zeitgutschrift", "text": "Klacks erfasst jede Überstunde des Pflegepersonals (護理人員) außerhalb des Verantwortungssystems als Zeitgutschrift &mdash; die Vergütung nach § 24 LSA (1,34× für die ersten zwei Stunden, 1,67× ab der dritten) ist Sache der Lohnbuchhaltung." },
       { "icon": "groups", "title": "Übergabezeit eingeplant und erfasst", "text": "Klacks plant die Schichtübergabe (交班時間) als Arbeitszeit mit ein &mdash; mit einer im Betrieb frei wählbaren Dauer statt einer starren gesetzlichen Vorgabe." },
-      { "icon": "bedtime", "title": "11-Stunden-Schichtabstand je Station im Blick", "text": "Klacks warnt über jede Station hinweg, sobald eine Schichtfolge den 11-Stunden-Abstand nach § 34 LSA unterschreitet. Auf Wunsch blockiert Klacks einen neuen Verstoß konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)." },
-      { "icon": "verified", "title": "Qualifikationen &amp; Stationen passend", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
+      { "icon": "bedtime", "title": "11-Stunden-Schichtabstand je Station im Blick", "text": "Klacks warnt über jede Station hinweg, sobald eine Schichtfolge den 11-Stunden-Abstand nach § 34 LSA unterschreitet. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen passend", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung &mdash; pro Station, Abteilung und Funktion &mdash; und warnt bei abgelaufenen Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Übergabezeit und Schichtabstand automatisch." }
     ]
   },
@@ -38,6 +38,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Übergabezeiten, Schichtabstände und Überstunden des Pflegepersonals übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Übergabezeiten, Schichtabstände und Überstunden des Pflegepersonals erfasst &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

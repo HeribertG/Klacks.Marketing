@@ -1,11 +1,11 @@
 {
   "pageTitle": "Klacks installeren: begeleide installer of Docker Compose met landenpakket | Klacks",
-  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide installer of Docker Compose-stack, voorgeconfigureerd met de feestdagen, arbeidstijdregels en toeslagen van uw land. Geen licentiekosten, open source, zonder registratie.",
+  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide installer of Docker Compose-stack, voorgeconfigureerd met de feestdagen, arbeidstijdregels en &ndash; voor zover voor uw land gedefinieerd &ndash; toeslagen. Geen licentiekosten, open source, zonder registratie.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installatie &middot; Geen licentiekosten &amp; open source",
     "titleHtml": "Klacks zelf draaien &mdash; <span class=\"text-secondary\">op uw eigen infrastructuur.</span>",
-    "subtitle": "Twee wegen, één resultaat: de begeleide installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels, toeslagen en branchevoorinstellingen van uw land &mdash; zonder registratie, zonder licentiekosten."
+    "subtitle": "Twee wegen, één resultaat: de begeleide installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd) &mdash; zonder registratie, zonder licentiekosten."
   },
   "industry": {
     "eyebrow": "Landenpakket",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Alleen het profiel &mdash; voor bestaande installaties",
-    "text": "Draait Klacks al? Het profiel (JSON) bevat de landenvoorinstellingen &mdash; feestdagen, arbeidstijdregels, toeslagen en branches &mdash; en wordt bij de eerste start van een installatie toegepast. Het is ook de manier om later een extra branche met bijbehorende voorinstellingen toe te voegen.",
+    "text": "Draait Klacks al? Het profiel (JSON) bevat de landenvoorinstellingen &mdash; feestdagen, arbeidstijdregels, toeslagen (voor zover voor het land gedefinieerd) en branches &mdash; en wordt bij de eerste start van een installatie toegepast. Het is ook de manier om later een extra branche met bijbehorende voorinstellingen toe te voegen.",
     "downloadLabel": "Profiel (JSON) downloaden"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Goed om te weten",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "De volledige broncode is openbaar op GitHub onder de AGPL-3.0 &mdash; geen licentiekosten, geen vendor lock-in." },
-      { "icon": "storage", "title": "Gegevens blijven in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens verlaten uw server nooit &mdash; er is geen verplichte cloud." },
+      { "icon": "storage", "title": "Gegevens blijven in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens staan op uw server &mdash; er is geen verplichte cloud. Alleen als u een externe AI-aanbieder kiest, gaan verzoeken daarheen; met een lokaal model blijft alles in huis." },
       { "icon": "update", "title": "Updates", "text": "De installatie pint de laatst uitgebrachte versie vast. Een updateservice binnen de stack voert nieuw uitgebrachte versies automatisch door." },
       { "icon": "lock", "title": "HTTPS vanaf de start", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen." }
     ]

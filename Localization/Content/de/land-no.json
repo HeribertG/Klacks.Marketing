@@ -72,7 +72,7 @@
       {
         "icon": "timer",
         "title": "Drei rollierende Überstundengrenzen, parallel überwacht",
-        "text": "Die drei Grenzen nach AML § 10-6 (4) &mdash; 10 Stunden je 7 Tage, 25 Stunden je 4 Wochen und 200 Stunden je 52 Wochen &mdash; zählt Klacks als rollierende Fenster pro Person parallel mit und warnt rechtzeitig, bevor eine der drei Grenzen kippt; den Zuschlag von mindestens 40 % weist Klacks automatisch aus. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Die drei Grenzen nach AML § 10-6 (4) &mdash; 10 Stunden je 7 Tage, 25 Stunden je 4 Wochen und 200 Stunden je 52 Wochen &mdash; zählt Klacks als rollierende Fenster pro Person parallel mit und warnt rechtzeitig, bevor eine der drei Grenzen kippt; den Zuschlag von mindestens 40 % schreibt Klacks automatisch als Zeitgutschrift gut. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "route",

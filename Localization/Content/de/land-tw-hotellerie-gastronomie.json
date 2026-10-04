@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
-    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">LSA-sicher geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage nach dem taiwanischen Labor Standards Act &mdash; mit dem 4-Wochen-System nach Art. 30-1, das für Restaurants und Tourist-Hotels designiert ist: bis zu 10 reguläre Stunden pro Tag, 160 Stunden flexibel über 4 Wochen verteilt &mdash; bei strikten 11 Stunden Ruhezeit ohne Branchenausnahme (Art. 34).",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">mit Prüfung gegen das LSA.</span>",
+    "subtitle": "Klacks plant Service, Küche und Etage mit Prüfung gegen den taiwanischen Labor Standards Act &mdash; mit dem 4-Wochen-System nach Art. 30-1, das für Restaurants und Tourist-Hotels designiert ist: bis zu 10 reguläre Stunden pro Tag, 160 Stunden flexibel über 4 Wochen verteilt &mdash; bei strikten 11 Stunden Ruhezeit ohne Branchenausnahme (Art. 34).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie in Taiwan",
     "screenshotLabel": "Timeline"
@@ -37,22 +37,22 @@
       {
         "icon": "date_range",
         "title": "Art.-30-1-Konten im Blick",
-        "text": "Klacks verteilt die 160 Stunden über das 4-Wochen-Fenster und überwacht dabei die Tageslimits (10 Stunden regulär, 12 Stunden Gesamtcap) &mdash; jede Überschreitung wird sofort sichtbar gemacht."
+        "text": "Klacks plant im 4-Wochen-Fenster mit dem 160-Stunden-Rahmen und prüft dabei die Tageslimits (10 Stunden regulär, 12 Stunden Gesamtcap) &mdash; jede Überschreitung wird sofort sichtbar gemacht."
       },
       {
         "icon": "hotel",
-        "title": "11h-Ruhezeit strikt überwacht",
-        "text": "Die 11-stündige Ruhezeit nach Art. 34 LSA ist als Regel hinterlegt &mdash; Verstöße werden sofort sichtbar, und auf Wunsch blockiert Klacks sie konsequent mit dokumentierter Freigabe."
+        "title": "11h-Ruhezeit geprüft",
+        "text": "Die 11-stündige Ruhezeit nach Art. 34 LSA ist als Regel hinterlegt &mdash; Verstöße werden sofort sichtbar. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "event_available",
-        "title": "Freie Tage dokumentiert",
-        "text": "Klacks zählt die freien Tage pro 2- und 4-Wochen-Periode mit &mdash; die Ruhetag-Vorgaben des 4-Wochen-Systems geraten auch bei langen Arbeitsfolgen nicht aus dem Blick."
+        "title": "Freie Tage im Blick",
+        "text": "Klacks zählt die freien Tage pro Kalenderwoche und prüft die maximal aufeinanderfolgenden Arbeitstage &mdash; die Vorgaben von 2 Ruhetagen pro 2 Wochen und 8 freien Tagen je 4 Wochen prüft Klacks nicht gesondert, bei langen Arbeitsfolgen bleibt aber die Grenze der aufeinanderfolgenden Tage im Blick."
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Nacht- (22 bis 6 Uhr), Sonn- und Feiertags-Zuschläge rechnet Klacks automatisch aus &mdash; konfigurierbar pro Regelwerk, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zeitzuschläge automatisch gutgeschrieben",
+        "text": "Nacht- (22 bis 6 Uhr), Sonn- und Feiertags-Zuschläge schreibt Klacks automatisch als Zeitgutschrift gut &mdash; konfigurierbar pro Regelwerk; die Stunden und Zeitzuschläge stehen für die Lohnbuchhaltung bereit."
       },
       {
         "icon": "smart_toy",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zuschläge und Ruhezeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zeitzuschläge und die Ruhezeitprüfung übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

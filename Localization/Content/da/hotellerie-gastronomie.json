@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Til hotel &amp; restauration",
     "titleHtml": "Morgen-, aften- og nattevagter &mdash; <span class=\"text-secondary\">fair planlagt.</span>",
-    "subtitle": "Klacks planlægger service, køkken og etage &mdash; med delte vagter, søn- og helligdagstillæg og lovpligtige hviletider, der ikke lader sig omgå i det stille. Sæsonspidser og udfald opfanger planlægningen automatisk.",
+    "subtitle": "Klacks planlægger service, køkken og etage &mdash; med delte vagter, søn- og helligdagstillæg og en kontrol af de lovpligtige hviletider, der gør overtrædelser straks synlige. Sæsonspidser og udfald opfanger planlægningen automatisk.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for vagtplaner i hotel- og restaurationsbranchen",
     "screenshotLabel": "Tidslinje"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Delte vagter planlagt korrekt",
-        "text": "Klacks planlægger frokost- og aftenblokkene, så mindstehviletider og daglige maksimumstider overholdes &mdash; enhver underskridelse gøres straks synlig."
+        "text": "Klacks planlægger frokost- og aftenblokkene og kontrollerer dem mod mindstehviletider og daglige maksimumstider &mdash; enhver underskridelse gøres straks synlig."
       },
       {
         "icon": "timer",
         "title": "Hviletider for øje",
-        "text": "Lovpligtige hviletidsgrænser overvåges i realtid &mdash; overtrædelser bliver straks synlige. På forespørgsel blokerer Klacks dem konsekvent: I blokeringstilstand kan en overtrædelse kun gemmes med dokumenteret godkendelse fra den nærmeste leder."
+        "text": "Lovpligtige hviletidsgrænser kontrolleres løbende &mdash; overtrædelser bliver straks synlige. Som standard advarer Klacks; efter ønske kan en blokeringstilstand slås til for den automatiske planlægning (planlægningsassistent, forslag, udfaldsdækning)."
       },
       {
         "icon": "payments",
         "title": "Tillæg automatisk",
-        "text": "Nat-, søn- og helligdagstillæg beregner Klacks automatisk &mdash; kan konfigureres pr. land og regelsæt, uden manuelt efterarbejde i lønforberedelsen."
+        "text": "Nat-, søn- og helligdagstillæg godskriver Klacks automatisk som tidsgodtskrivninger &mdash; kan konfigureres pr. land og regelsæt, som grundlag for lønbogholderiet."
       },
       {
         "icon": "badge",

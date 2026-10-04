@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Griechenland",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag nachvollziehbar.</span>",
     "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit Nachtzuschlag, Sonn-/Feiertagszuschlag und der Sechstagewoche automatisch berücksichtigt. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rundgänge in Griechenland",
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks griechische Sicherheitsdienste entlastet",
-    "subtitle": "Vom korrekten Zuschlag bis zum besetzten Posten &mdash; alles greift ineinander.",
+    "subtitle": "Vom Zuschlag bis zum besetzten Posten &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "bedtime", "title": "Nachtzuschlag &amp; Sonntagszuschlag sauber getrennt", "text": "Klacks berechnet den 25 %-Nachtzuschlag und den 75 %-Sonn-/Feiertagszuschlag automatisch korrekt &mdash; und verwechselt die beiden nie. Das Nachtfenster selbst legen Sie exakt fest, z. B. 22:00 bis 06:00 Uhr statt eines starren Standardfensters." },
-      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Diensttag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt oder blockiert, sobald der 6. Diensttag erreicht wird (Schwellwert konfigurierbar, Block mit dokumentierter Vorgesetzten-Freigabe überschreibbar); die ERGANI-Meldung selbst bleibt bei Ihnen." },
+      { "icon": "bedtime", "title": "Nachtzuschlag &amp; Sonntagszuschlag sauber getrennt", "text": "Klacks schreibt den 25 %-Nachtzuschlag und den 75 %-Sonn-/Feiertagszuschlag automatisch als Zeitgutschrift gut und hält die beiden Sätze getrennt. Das Nachtfenster selbst legen Sie exakt fest, z. B. 22:00 bis 06:00 Uhr statt eines starren Standardfensters." },
+      { "icon": "calendar_month", "title": "Sechstagewoche mit Zuschlagsregel", "text": "Der 40 %-Zuschlag für den 6. Diensttag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt, sobald der 6. Diensttag erreicht wird (Schwellwert konfigurierbar, in der automatischen Planung auf Wunsch blockierend, bei manueller Planung nur als Warnung); die ERGANI-Meldung selbst bleibt bei Ihnen." },
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "gavel", "title": "Mehrarbeit &amp; Überstunden korrekt berechnet", "text": "Die 20 %- und 40 %-Zuschläge für Mehrarbeit und Überstunden über der 40-Stunden-Woche werden automatisch berücksichtigt." },
-      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks zeigt für jeden Posten, wer über einen gültigen Ausweis verfügt &mdash; und warnt rechtzeitig, bevor ein Nachweis abläuft. Läuft ein Pflicht-Nachweis dennoch ab, lässt sich die Zuteilung auf Wunsch hart blockieren, statt nur zu warnen." },
+      { "icon": "gavel", "title": "Mehrarbeit &amp; Überstunden als Zuschlagsstaffeln", "text": "Die 20 %- und 40 %-Zuschläge für Mehrarbeit und Überstunden über der 40-Stunden-Woche werden als Zeitgutschrift automatisch berücksichtigt." },
+      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks zeigt für jeden Posten, wer über einen gültigen Ausweis verfügt &mdash; und warnt rechtzeitig, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Zuschläge, Zertifikate und Verfügbarkeit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtdienst am 6. Tag, ein Plan",
-    "text": "Klacks berechnet den Nachtzuschlag zuverlässig und lässt sich für den Sechstagewoche-Zuschlag am 6. Diensttag entsprechend konfigurieren &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks schreibt den Nachtzuschlag automatisch als Zeitgutschrift gut und lässt sich für den Sechstagewoche-Zuschlag am 6. Diensttag entsprechend konfigurieren &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pentru îngrijirea la domiciliu în România",
     "titleHtml": "Mai mult timp pentru îngrijire, <span class=\"text-secondary\">mai puțin pentru capcane contractuale.</span>",
-    "subtitle": "Klacks planifică intervențiile și turele și reflectă corect timpul de deplasare între clienți, atunci când contractul individual sau colectiv de muncă prevede acest lucru &mdash; și avertizează live înainte ca angajaților part-time să li se aloce neintenționat ore suplimentare.",
+    "subtitle": "Klacks planifică intervențiile și turele, permite înregistrarea timpului de deplasare între clienți ca valoare fixă pe serviciu, atunci când contractul individual sau colectiv de muncă prevede acest lucru &mdash; și avertizează live înainte ca angajaților part-time să li se aloce neintenționat ore suplimentare.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru planificarea turelor în îngrijirea la domiciliu din România",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea de îngrijire la domiciliu din România",
-    "subtitle": "De la timpul de deplasare conform contractului până la controlul part-time &mdash; totul se îmbină perfect.",
+    "subtitle": "De la timpul de deplasare înregistrat până la controlul part-time &mdash; totul se îmbină perfect.",
     "items": [
       {
         "icon": "route",
@@ -41,13 +41,13 @@
       },
       {
         "icon": "schedule",
-        "title": "Timpul de deplasare reflectat conform contractului",
-        "text": "Dacă contractul individual sau colectiv de muncă prevede timpul de deplasare ca timp de lucru, înregistrați timpul de deplasare între clienți ca timp de deplasare &mdash; Klacks îl contabilizează apoi ca timp de lucru. Klacks nu cunoaște o regulă privind timpul de deplasare pentru fiecare contract în parte."
+        "title": "Timp de deplasare înregistrabil pe serviciu",
+        "text": "Dacă contractul individual sau colectiv de muncă prevede timpul de deplasare ca timp de lucru, înregistrați timpul de deplasare între clienți ca valoare fixă pe serviciu &mdash; Klacks îl contabilizează apoi ca timp de lucru. Klacks nu cunoaște nici un calcul în funcție de distanță, nici o regulă privind timpul de deplasare pentru fiecare contract în parte."
       },
       {
         "icon": "block",
         "title": "Ore suplimentare part-time, detectate live",
-        "text": "Klacks avertizează înainte ca unui angajat part-time să i se aloce ore suplimentare peste programul săptămânal convenit prin contract &mdash; astfel de ore suplimentare sunt, în principiu, interzise pentru contractele part-time, cu excepția cazurilor de forță majoră sau a lucrărilor urgente de prevenire a accidentelor. La cerere, Klacks blochează consecvent depășirea orelor săptămânale part-time convenite prin contract: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
+        "text": "Klacks avertizează înainte ca unui angajat part-time să i se aloce ore suplimentare peste programul săptămânal convenit prin contract &mdash; astfel de ore suplimentare sunt, în principiu, interzise pentru contractele part-time, cu excepția cazurilor de forță majoră sau a lucrărilor urgente de prevenire a accidentelor. La cerere, Klacks blochează consecvent depășirea orelor săptămânale part-time convenite prin contract în planificarea automată (mod de blocare, configurabil pe tip de regulă); în planificarea manuală se rămâne la avertisment."
       },
       {
         "icon": "description",
@@ -74,6 +74,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Descoperiți Klacks în organizația dumneavoastră de îngrijire",
-    "text": "Încercați în Playground cum reflectă Klacks corect timpul de deplasare, traseele și contractele part-time &mdash; fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum reflectă Klacks timpul de deplasare, traseele și limitele part-time &mdash; fără taxe de licență și fără înregistrare."
   }
 }

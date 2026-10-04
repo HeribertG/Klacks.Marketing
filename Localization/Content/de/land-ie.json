@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Irischer Datenschutz (DPC)",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft die OWTA-Ruhezeiten in Echtzeit und behält Banded-Hours-Ansprüche im Blick &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihre Data Protection Commission (DPC) sie haben will: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft die OWTA-Ruhezeiten und dokumentiert geplante und geleistete Stunden als Grundlage für Banded-Hours-Anträge &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo Ihre Data Protection Commission (DPC) sie haben will: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Irland",
     "screenshotLabel": "Dienstplan"
@@ -62,12 +62,12 @@
       {
         "icon": "gavel",
         "title": "Wochenhöchstarbeitszeit automatisch überwacht",
-        "text": "Klacks überwacht den rollierenden 48-Stunden-Schnitt über den nach OWTA Section 15 maßgeblichen Referenzzeitraum live und warnt, bevor der Grenzwert kippt &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht den rollierenden 48-Stunden-Schnitt über den von Ihnen hinterlegten, nach OWTA Section 15 maßgeblichen Referenzzeitraum live und warnt, bevor der Grenzwert kippt &mdash; inklusive der branchenspezifischen Verlängerung auf 6 Monate für Security und Gesundheitswesen, sofern Sie diese hinterlegen; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung); bei manueller Planung warnt Klacks."
       },
       {
         "icon": "bedtime",
         "title": "Ruhezeiten in Echtzeit überwacht",
-        "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13) werden in Echtzeit überwacht &mdash; Abweichungen macht Klacks sofort sichtbar."
+        "text": "Die tägliche Ruhezeit von mindestens 11 zusammenhängenden Stunden (Section 11) und die wöchentliche Ruhezeit von mindestens 24 Stunden (Section 13), die Sie als Regeln hinterlegen, werden in Echtzeit überwacht &mdash; Abweichungen macht Klacks sofort sichtbar."
       },
       {
         "icon": "campaign",
@@ -82,7 +82,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell ganz ohne Auslandtransfer von Personaldaten."
       },
       {
         "icon": "smart_toy",

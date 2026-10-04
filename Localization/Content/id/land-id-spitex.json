@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks untuk Perawatan di Rumah di Indonesia | Perencanaan Tepat untuk PRT atau Staf Agensi",
+  "pageTitle": "Klacks untuk Perawatan di Rumah di Indonesia | Perencanaan PRT atau Staf Agensi Dipisahkan",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Untuk Agensi Perawatan (Perawat Lansia) di Indonesia",
     "titleHtml": "Lebih banyak waktu untuk perawatan, <span class=\"text-secondary\">lebih sedikit untuk perencanaan rute.</span>",
-    "subtitle": "Klacks merencanakan penugasan dan rute tenaga perawat agensi Anda secara otomatis &mdash; termasuk aturan jam kerja dan lembur dari UU 13/2003 yang berlaku untuk tenaga perawat yang dipekerjakan secara komersial. Terpasang di tempat Anda, sehingga data pasien tidak pernah keluar dari perusahaan Anda.",
+    "subtitle": "Klacks merencanakan penugasan dan rute tenaga perawat agensi Anda secara otomatis &mdash; dengan pemeriksaan terhadap aturan jam kerja dan lembur yang disimpan, seperti dari UU 13/2003 yang berlaku untuk tenaga perawat yang dipekerjakan secara komersial. Terpasang di tempat Anda, sehingga data pasien berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk perencanaan rute agensi perawatan di Indonesia",
     "screenshotLabel": "Timeline"
@@ -27,17 +27,17 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban agensi perawatan Indonesia",
-    "subtitle": "Dari dasar hukum yang tepat hingga perhitungan tunjangan otomatis &mdash; semuanya saling terhubung.",
+    "subtitle": "Dari dasar hukum yang tepat hingga kredit waktu untuk tambahan &mdash; semuanya saling terhubung.",
     "items": [
       {
         "icon": "verified_user",
-        "title": "Staf agensi direncanakan sesuai UU 13/2003",
-        "text": "Klacks secara otomatis menerapkan minggu kerja reguler 40 jam dan aturan lembur UU 13/2003 untuk caregiver yang dipekerjakan secara komersial &mdash; terpisah dari kontrak PRT yang disepakati secara individual."
+        "title": "Staf agensi direncanakan menurut UU 13/2003",
+        "text": "Untuk caregiver yang dipekerjakan secara komersial, minggu kerja reguler 40 jam dan aturan lembur UU 13/2003 dapat disimpan sebagai aturan dan diperiksa oleh Klacks &mdash; terpisah dari kontrak PRT yang disepakati secara individual."
       },
       {
         "icon": "calculate",
-        "title": "Tunjangan progresif dihitung otomatis",
-        "text": "Klacks menghitung tingkatan 1,5×/2,0×/3,0×/4,0× dari PP 35/2021 Pasal 31 untuk staf agensi Anda secara otomatis &mdash; dengan tabel yang tepat untuk sistem 5 atau 6 hari kerja."
+        "title": "Tambahan waktu sebagai kredit jam",
+        "text": "Tingkatan 1,5×/2,0×/3,0×/4,0× dari PP 35/2021 Pasal 31 berlaku untuk staf agensi Anda sesuai sistem 5 atau 6 hari kerja; Klacks mencatat tambahan waktu yang disimpan sebagai kredit jam, sedangkan tingkatannya dihitung oleh penggajian Anda."
       },
       {
         "icon": "route",
@@ -46,13 +46,13 @@
       },
       {
         "icon": "verified",
-        "title": "Kualifikasi diperhitungkan secara otomatis",
-        "text": "Setiap penugasan hanya diberikan kepada tenaga dengan kualifikasi perawatan yang sesuai &mdash; tanpa perlu pemeriksaan manual."
+        "title": "Kualifikasi diperhitungkan",
+        "text": "Klacks memperhitungkan kualifikasi perawatan saat penugasan dan memberi peringatan bila bukti kedaluwarsa &mdash; lebih sedikit pemeriksaan manual."
       },
       {
         "icon": "shield_lock",
         "title": "Terpasang di tempat Anda: data tetap di dalam perusahaan",
-        "text": "Klacks berjalan di infrastruktur Anda sendiri. Data pasien tidak keluar dari perusahaan Anda &mdash; termasuk ke AI."
+        "text": "Klacks berjalan di infrastruktur Anda sendiri. Dengan model AI lokal, data pasien tidak keluar dari perusahaan Anda."
       },
       {
         "icon": "smart_toy",
@@ -63,12 +63,12 @@
   },
   "example": {
     "eyebrow": "Contoh Konkret",
-    "title": "Staf agensi, tunjangan tepat, satu rencana",
-    "text": "Klacks mengenali bahwa suatu penugasan dilakukan oleh tenaga perawat yang dipekerjakan secara komersial, menerapkan minggu kerja 40 jam dan tingkat lembur yang sesuai dari PP 35/2021 &mdash; tanpa perlu menghitung ulang secara manual."
+    "title": "Staf agensi, tambahan waktu, satu rencana",
+    "text": "Klacks merencanakan penugasan tenaga perawat yang dipekerjakan secara komersial terhadap minggu kerja 40 jam yang disimpan, dan mencatat tambahan lembur yang disimpan sebagai kredit jam &mdash; tingkatan menurut PP 35/2021 dihitung oleh penggajian Anda."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Rasakan Klacks di agensi perawatan Anda",
-    "text": "Coba di Playground bagaimana Klacks menangani rute, kualifikasi, dan tunjangan lembur &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
+    "text": "Coba di Playground bagaimana Klacks merencanakan rute dan kualifikasi serta mencatat tambahan lembur sebagai kredit jam &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
   }
 }

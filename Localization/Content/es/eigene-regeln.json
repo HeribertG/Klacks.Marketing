@@ -32,8 +32,8 @@
     "subtitle": "Cada parámetro con su significado y su efecto en la planificación &mdash; estos son los ámbitos temáticos.",
     "items": [
       { "icon": "schedule", "title": "Base del tiempo de trabajo", "text": "Horas normales por día y horas semanales para una jornada del 100 % &mdash; la referencia para los porcentajes de tiempo parcial y el cálculo de horas objetivo." },
-      { "icon": "speed", "title": "Límites máximos", "text": "Horas máximas por día y por semana &mdash; el planificador rechaza los turnos que las superen." },
-      { "icon": "calendar_month", "title": "Días consecutivos &amp; días de descanso", "text": "Cuántos días de trabajo consecutivos están permitidos y cuántos días de descanso se garantizan por periodo de planificación." },
+      { "icon": "speed", "title": "Límites máximos", "text": "Horas máximas por día y por semana &mdash; el planificador comprueba los turnos frente a estos límites y avisa cuando se superan." },
+      { "icon": "calendar_month", "title": "Días consecutivos &amp; días de descanso", "text": "Cuántos días de trabajo consecutivos están permitidos y cuántos días de descanso se prevén por periodo de planificación." },
       { "icon": "bedtime", "title": "Pausas de descanso &amp; recargo nocturno", "text": "Pausa mínima entre dos turnos, así como inicio, fin y tasa del recargo nocturno." },
       { "icon": "more_time", "title": "Horas extraordinarias", "text": "A partir de cuántas horas el tiempo trabajado cuenta como horas extraordinarias &mdash; acumulado por día o por semana." },
       { "icon": "beach_access", "title": "Festivos &amp; vacaciones", "text": "Tasa de recargo por trabajo en festivos y derecho anual a vacaciones de los empleados bajo esta norma." }

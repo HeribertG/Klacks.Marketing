@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks per alberghiero e ristorazione in Italia | Turni conformi al CCNL",
+  "pageTitle": "Klacks per alberghiero e ristorazione in Italia | Turni secondo il CCNL Turismo",
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Per alberghiero &amp; ristorazione",
-    "titleHtml": "Turni mattutini, pomeridiani e notturni &mdash; <span class=\"text-secondary\">pianificati in modo conforme al CCNL.</span>",
-    "subtitle": "Klacks pianifica sala, cucina e piani secondo il CCNL Turismo &mdash; con orario normale di 40 ore e media di 48 ore su quattro mesi (D.Lgs. 66/2003), 11 ore di riposo giornaliero e i supplementi di settore: +25&nbsp;% di notte, +10&nbsp;% la domenica, +20&nbsp;% nei giorni festivi.",
+    "titleHtml": "Turni mattutini, pomeridiani e notturni &mdash; <span class=\"text-secondary\">pianificati con le regole del CCNL.</span>",
+    "subtitle": "Klacks pianifica sala, cucina e piani e verifica i limiti del CCNL Turismo &mdash; orario normale di 40 ore e media di 48 ore su quattro mesi (D.Lgs. 66/2003), 11 ore di riposo giornaliero; i supplementi di settore (+25&nbsp;% di notte, +10&nbsp;% la domenica, +20&nbsp;% nei giorni festivi) vengono riportati da Klacks come accrediti di tempo.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per turni in alberghiero e ristorazione",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "hotel",
         "title": "Riposo di 11 ore in tempo reale",
-        "text": "Le 11 ore di riposo giornaliero (D.Lgs. 66/2003) vengono verificate a ogni modifica del piano &mdash; le violazioni diventano subito visibili. Se lo si desidera, Klacks le blocca sistematicamente: in modalità blocco, una violazione può essere salvata solo con un'approvazione documentata del superiore."
+        "text": "Le 11 ore di riposo giornaliero (D.Lgs. 66/2003) vengono verificate a ogni modifica del piano &mdash; le violazioni diventano subito visibili. Se lo si desidera, Klacks le blocca nei percorsi di pianificazione automatica (ad es. Wizard, proposte, sostituzione) in modalità blocco; nella pianificazione manuale Klacks avvisa."
       },
       {
         "icon": "timer",
         "title": "Media di 48 ore su 4 mesi",
-        "text": "Oltre all'orario normale di 40 ore del CCNL Turismo, Klacks monitora la media consentita di 48 ore sul periodo di riferimento di quattro mesi (D.Lgs. 66/2003) &mdash; i picchi di straordinari in alta stagione restano così nei limiti di legge."
+        "text": "Oltre all'orario normale di 40 ore del CCNL Turismo, Klacks monitora la media consentita di 48 ore sul periodo di riferimento di quattro mesi (D.Lgs. 66/2003) &mdash; così può tenere d'occhio i picchi di straordinari in alta stagione."
       },
       {
         "icon": "payments",
-        "title": "Supplementi CCNL automatici",
-        "text": "+25&nbsp;% per il lavoro notturno (dalle 0 alle 6), +10&nbsp;% la domenica, +20&nbsp;% nei giorni festivi: i supplementi del CCNL Turismo vengono calcolati automaticamente da Klacks &mdash; senza lavoro manuale aggiuntivo nella preparazione delle paghe."
+        "title": "Supplementi CCNL come accrediti di tempo",
+        "text": "+25&nbsp;% per il lavoro notturno (dalle 0 alle 6), +10&nbsp;% la domenica, +20&nbsp;% nei giorni festivi: i supplementi del CCNL Turismo possono essere registrati; Klacks li accredita come crediti di tempo in ore e mette a disposizione la base oraria per la contabilità paghe &mdash; il calcolo delle paghe avviene lì."
       },
       {
         "icon": "event_available",

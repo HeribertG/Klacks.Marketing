@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "45-Stunden-Woche automatisch überwacht", "text": "Klacks prüft laufend, ob die 45-Stunden-Grenze (Section 60A) und das tägliche 8-Stunden-Limit eingehalten werden." },
       { "icon": "schedule", "title": "Tagesarbeitszeit im Blick", "text": "Klacks summiert die Arbeitsstunden je Tag und prüft das hinterlegte Tageslimit. Die 10-Stunden-Spanne zwischen erstem Arbeitsbeginn und Feierabend (Section 60A(1)) prüft Klacks nicht." },
       { "icon": "pause_circle", "title": "Pausen als Block in der Tour", "text": "Pausen lassen sich bei der Tourenplanung als Block einplanen; ob nach 5 aufeinanderfolgenden Stunden eine 30-Minuten-Pause liegt, prüft Klacks nicht." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks berücksichtigt bei der Tourenzuteilung die Berechtigung der Fahrer und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Tan ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen." }
     ]
   },

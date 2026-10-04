@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea serviciilor de securitate din România",
-    "subtitle": "De la postul acoperit până la repausul corect &mdash; totul se îmbină perfect.",
+    "subtitle": "De la postul acoperit până la repausul monitorizat &mdash; totul se îmbină perfect.",
     "items": [
       {
         "icon": "shield",
@@ -42,7 +42,7 @@
       {
         "icon": "schedule",
         "title": "Limita de 12 ore &amp; repausul de 24 de ore, monitorizate",
-        "text": "Klacks avertizează de îndată ce o tură depășește limita de 12 ore și planifică apoi automat repausul de 24 de ore &mdash; astfel, turele continue de tip 24/24 devin vizibile instant. La cerere, Klacks blochează consecvent depășirea limitei de 12 ore: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
+        "text": "Klacks avertizează de îndată ce o tură depășește limita de 12 ore și verifică apoi repausul de 24 de ore &mdash; astfel, turele continue de tip 24/24 devin vizibile instant. La cerere, Klacks blochează consecvent depășirea limitei de 12 ore în planificarea automată (mod de blocare, configurabil pe tip de regulă); în planificarea manuală se rămâne la avertisment."
       },
       {
         "icon": "swap_horiz",
@@ -52,7 +52,7 @@
       {
         "icon": "pause_circle",
         "title": "Regimul pauzelor conform acordului colectiv",
-        "text": "Klacks reflectă regimul pauzelor stabilit prin CCM sau prin regulamentul intern &mdash; inclusiv întrebarea dacă pauza este considerată timp de lucru."
+        "text": "Klacks nu planifică automat pauzele; regimul pauzelor stabilit prin CCM sau prin regulamentul intern îl înregistrați pentru fiecare serviciu."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Tură de 12 ore, repaus de 24 de ore, un singur plan",
-    "text": "Klacks planifică automat repausul de 24 de ore după fiecare tură de 12 ore și face vizibile instant turele continue nepermise de tip 24/24 &mdash; fără niciun calcul manual."
+    "text": "Klacks verifică repausul de 24 de ore după fiecare tură de 12 ore și face vizibile instant turele continue nepermise de tip 24/24 &mdash; fără niciun calcul manual."
   },
   "showRoutePlanning": true,
   "cta": {

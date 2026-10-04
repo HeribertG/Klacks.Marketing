@@ -32,8 +32,8 @@
     "subtitle": "Hver parameter med betydning og effekt på planlægningen &mdash; det er emneområderne.",
     "items": [
       { "icon": "schedule", "title": "Arbejdstids-basis", "text": "Normale dagtimer og ugentlige timer for et 100%-hverv &mdash; referencen for deltidsprocenter og beregning af normtimer." },
-      { "icon": "speed", "title": "Øvre grænser", "text": "Maksimale timer pr. dag og pr. uge &mdash; planlæggeren afviser vagter, der går ud over." },
-      { "icon": "calendar_month", "title": "Sammenhængende dage &amp; hviledage", "text": "Hvor mange arbejdsdage i træk der er tilladt, og hvor mange hviledage pr. planlægningsvindue der garanteres." },
+      { "icon": "speed", "title": "Øvre grænser", "text": "Maksimale timer pr. dag og pr. uge &mdash; planlæggeren kontrollerer vagter mod disse grænser og advarer, når de overskrides." },
+      { "icon": "calendar_month", "title": "Sammenhængende dage &amp; hviledage", "text": "Hvor mange arbejdsdage i træk der er tilladt, og hvor mange hviledage pr. planlægningsvindue der er afsat." },
       { "icon": "bedtime", "title": "Hvilepauser &amp; nattillæg", "text": "Minimumspause mellem to vagter samt start, slut og sats for nattillægget." },
       { "icon": "more_time", "title": "Overtid", "text": "Fra hvor mange timer arbejdet tid tæller som overtid &mdash; akkumuleret pr. dag eller pr. uge." },
       { "icon": "beach_access", "title": "Helligdage &amp; ferie", "text": "Tillægssats for helligdagsarbejde og den årlige ferieret for medarbejdere under denne regel." }

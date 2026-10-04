@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Godstransport in Norwegen",
     "titleHtml": "Touren, Recht und <span class=\"text-secondary\">Tarif zugleich.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit dem seit Juni 2025 auf Fahrzeuge ab 2,5 Tonnen ausgeweiteten Mindestlohn und der Grundlohnerhöhung aus der Godsoverenskomsten-Tarifrunde 2026 als hinterlegten Lohnsätzen. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks plant Touren und Fahrer und liefert die Stundenbasis für Ihre Lohnbuchhaltung, die den seit Juni 2025 auf Fahrzeuge ab 2,5 Tonnen ausgeweiteten Mindestlohn und die Grundlohnerhöhung aus der Godsoverenskomsten-Tarifrunde 2026 abrechnet. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Norwegen",
     "screenshotLabel": "Timeline"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Wie Klacks die norwegische Logistik entlastet",
-    "subtitle": "Von der optimierten Tour bis zum aktuellen Tarif &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur Stundenbasis für die Lohnbuchhaltung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "payments", "title": "Mindestlohn ab 2,5 Tonnen hinterlegt", "text": "Der Satz von 229,00 NOK/Stunde, der seit Juni 2025 auch für Fahrzeuge ab 2,5 Tonnen Gesamtgewicht gilt, lässt sich in Klacks für alle betroffenen Fahrzeugklassen als Lohnsatz hinterlegen." },
-      { "icon": "gavel", "title": "Godsoverenskomsten-Tarif hinterlegt", "text": "Die Grundlohnerhöhung von 10,50 NOK/Stunde aus der Tarifrunde 2026 sowie die branchenüblichen Nacht- und Wochenendzuschläge gemäß Godsoverenskomsten sind in Klacks hinterlegt; für Überstunden greift der jeweils höchste konfigurierte Zuschlagssatz. Solche Tarif-Regel-Sets lassen sich vorkonfiguriert als Länderprofil importieren &mdash; eigene Anpassungen bleiben bei einem erneuten Import erhalten." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
+      { "icon": "payments", "title": "Mindestlohn ab 2,5 Tonnen: Stundenbasis", "text": "Der Satz von 229,00 NOK/Stunde, der seit Juni 2025 auch für Fahrzeuge ab 2,5 Tonnen Gesamtgewicht gilt, wird in Ihrer Lohnbuchhaltung abgerechnet; Klacks liefert dafür die Stunden je Fahrer." },
+      { "icon": "gavel", "title": "Godsoverenskomsten-Zuschläge hinterlegt", "text": "Die branchenüblichen Nacht-, Wochenend- und Überstundenzuschläge gemäß Godsoverenskomsten lassen sich in Klacks als Zeitzuschläge hinterlegen; für Überstunden greift der jeweils höchste konfigurierte Satz. Die Grundlohnerhöhung von 10,50 NOK/Stunde aus der Tarifrunde 2026 rechnet Ihre Lohnbuchhaltung ab. Solche Tarif-Regel-Sets lassen sich vorkonfiguriert als Länderprofil importieren &mdash; eigene Anpassungen bleiben bei einem erneuten Import erhalten." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Hansen ist krank“ genügt &mdash; Klacksy startet die Neuplanung." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Leichtere Fahrzeuge, neuer Tarif, ein Plan",
-    "text": "Sie hinterlegen, dass auch ein 2,5-Tonnen-Fahrzeug seit Juni 2025 unter die Mindestlohnverordnung von 229,00 NOK/Stunde fällt &mdash; Klacks wendet den Satz zusammen mit der Grundlohnerhöhung aus der Godsoverenskomsten-Tarifrunde 2026 automatisch auf die betroffenen Touren an &mdash; ohne Nachrechnen von Hand."
+    "text": "Die Touren mit 2,5-Tonnen-Fahrzeugen führen Sie in Klacks wie alle anderen; die Stunden liefern die Basis, auf der Ihre Lohnbuchhaltung den seit Juni 2025 geltenden Mindestlohn von 229,00 NOK/Stunde und die Grundlohnerhöhung aus der Godsoverenskomsten-Tarifrunde 2026 abrechnet &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Mindestlohn und Tarif übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und die Stundenbasis für Mindestlohn und Tarif übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

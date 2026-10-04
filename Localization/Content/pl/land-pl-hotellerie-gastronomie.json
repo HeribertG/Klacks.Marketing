@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Dla hotelarstwa &amp; gastronomii",
-    "titleHtml": "Zmiany poranne, późne i nocne &mdash; <span class=\"text-secondary\">planowane zgodnie z KP.</span>",
-    "subtitle": "Klacks planuje obsługę sali, kuchnię i piętra zgodnie z polskim Kodeksem pracy &mdash; w tym 12-godzinne zmiany w systemie równoważnym (Art. 135 KP), 35 godzin tygodniowego odpoczynku i jedną wolną niedzielę na cztery tygodnie (Art. 151¹² KP).",
+    "titleHtml": "Zmiany poranne, późne i nocne &mdash; <span class=\"text-secondary\">planowane z myślą o KP.</span>",
+    "subtitle": "Klacks planuje obsługę sali, kuchnię i piętra z uwzględnieniem polskiego Kodeksu pracy &mdash; w tym 12-godzinne zmiany w systemie równoważnym (Art. 135 KP), 35 godzin tygodniowego odpoczynku i jedną wolną niedzielę na cztery tygodnie (Art. 151¹² KP).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks dla grafików w hotelarstwie i gastronomii",
     "screenshotLabel": "Oś czasu"
@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Okresy odpoczynku pod kontrolą",
-        "text": "Dobowy odpoczynek 11 godzin zgodnie z Kodeksem pracy jest monitorowany w czasie rzeczywistym, naruszenia są od razu widoczne; 35-godzinny odpoczynek tygodniowy Klacks sprawdza poprzez dzień wolny w tygodniu, a nie jako nieprzerwany okres. Na życzenie Klacks konsekwentnie je blokuje."
+        "text": "Dobowy odpoczynek 11 godzin zgodnie z Kodeksem pracy jest monitorowany w czasie rzeczywistym, naruszenia są od razu widoczne; 35-godzinny odpoczynek tygodniowy Klacks sprawdza poprzez dzień wolny w tygodniu, a nie jako nieprzerwany okres. Na życzenie Klacks konsekwentnie je blokuje w planowaniu automatycznym; w planowaniu ręcznym pozostaje przy ostrzeżeniu."
       },
       {
         "icon": "event_available",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "payments",
-        "title": "Dodatki automatycznie",
-        "text": "Dodatki nocne (pora nocna: 8 godzin między 21 a 7) oraz dodatki za niedziele i święta Klacks wylicza automatycznie &mdash; konfigurowalnie według regulaminu, bez ręcznego dopracowywania przy przygotowaniu płac."
+        "title": "Dodatki czasowe automatycznie",
+        "text": "Dodatki nocne (pora nocna: 8 godzin między 21 a 7) oraz dodatki za niedziele i święta Klacks automatycznie zapisuje jako kredyt czasu &mdash; konfigurowalnie według regulaminu; godziny i dodatki czasowe są gotowe do Twojego rozliczenia płac."
       },
       {
         "icon": "smart_toy",

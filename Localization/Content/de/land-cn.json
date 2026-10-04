@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in China | Zeiterfassung im eigenen Haus ohne CAC-Prüfung",
+  "pageTitle": "Klacks für Unternehmen in China | Planung im eigenen Haus mit Datenhaltung in China",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; PIPL-konform",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung in China",
     "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">im Land bleibt.</span>",
-    "subtitle": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar, ordnet Ruhetags- und Feiertagszuschläge automatisch nach 200/300 % zu und läuft bei Ihnen installiert &mdash; damit Planungs- und Personaldaten China nie verlassen.",
+    "subtitle": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar, schreibt Ruhetags- und Feiertagszuschläge (200/300 %) als Zeitgutschrift gut und läuft bei Ihnen installiert &mdash; damit Planungs- und Personaldaten in China bleiben &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in China",
     "screenshotLabel": "Dienstplan"
@@ -62,12 +62,12 @@
       {
         "icon": "schedule",
         "title": "36h-Monatsgrenze laufend überwacht",
-        "text": "Klacks führt jiābān gegen die Art.-41-Tagesgrenzen (1h/Tag normal, 3h/Tag aus besonderem Grund) und überwacht die 36-Stunden-Monatsgrenze laufend mit Warnung, bevor sie überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks führt jiābān gegen die Art.-41-Tagesgrenzen (1h/Tag normal, 3h/Tag aus besonderem Grund) und überwacht die 36-Stunden-Monatsgrenze laufend mit Warnung, bevor sie überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "payments",
-        "title": "200/300 % automatisch gestuft",
-        "text": "Klacks ordnet Ruhetags- (200 %) und Feiertagszuschlag (300 %, nie durch Freizeit ersetzbar) automatisch nach Art. 44 zu; die Werktags-Überstundenprämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass sich mehrere gleichzeitig greifende Zuschläge korrekt addieren, oder so, dass nur der höchste Satz gilt."
+        "title": "200/300 % als Zeitgutschrift",
+        "text": "Klacks schreibt Ruhetags- (200 %) und Feiertagszuschlag (300 %, nie durch Freizeit ersetzbar) nach Art. 44 als Zeitgutschrift gut; die Werktags-Überstundenprämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass sich mehrere gleichzeitig greifende Zuschläge korrekt addieren, oder so, dass nur der höchste Satz gilt. Den Geldbetrag rechnet Ihr Lohnsystem."
       },
       {
         "icon": "fact_check",
@@ -77,7 +77,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Personaldaten bleiben im Land",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Planungs- und Personaldaten verlassen das Land nie, und Klacks erhebt keine biometrischen Daten &mdash; die CAC-Cross-Border-Prüfung nach PIPL Art. 38 für sensible personenbezogene Daten entfällt damit."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Planungs- und Personaldaten bleiben im Land (mit einem lokalen KI-Modell auch bei der KI-Nutzung), und Klacks erhebt keine biometrischen Daten &mdash; das erleichtert die Einhaltung der Vorgaben zur grenzüberschreitenden Übermittlung nach PIPL Art. 38 (CAC-Prüfung)."
       },
       {
         "icon": "smart_toy",
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "40-Stunden-Woche, Art. 41 und 165,3h, ein Blick",
-    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden ordnet Klacks nach Art. 44 automatisch den Ruhetags- (200 %) und Feiertagszuschlägen (300 %) zu und macht die Monatsgrenze nach Art. 41 laufend sichtbar, gerechnet mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden schreibt Klacks nach Art. 44 mit dem hinterlegten Ruhetags- (200 %) bzw. Feiertagszuschlag (300 %) als Zeitgutschrift gut und macht die Monatsgrenze nach Art. 41 laufend sichtbar, gerechnet mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Unternehmen in China erleben",
-    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze laufend sichtbar macht, Ruhetags- und Feiertagszuschläge automatisch zuordnet und Ihre Planungs- und Personaldaten im eigenen Haus in China hält &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze laufend sichtbar macht, Ruhetags- und Feiertagszuschläge als Zeitgutschrift gutschreibt und Ihre Planungs- und Personaldaten im eigenen Haus in China hält &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

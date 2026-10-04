@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Sygehuse &amp; Hospitaler in Dänemark",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtwechsel im Schichtbetrieb (holddrift) lückenlos &mdash; inklusive der Ausnahme-Ruhezeit bei Schichtwechsel und dem 48-Stunden-Nachweis im 4-Monats-Schnitt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichtwechsel im Schichtbetrieb (holddrift) lückenlos &mdash; inklusive der Ausnahme-Ruhezeit bei Schichtwechsel und dem 48-Stunden-Nachweis im 4-Monats-Schnitt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für dänische Krankenhäuser",
     "screenshotLabel": "Dienstplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks dänische Krankenhäuser entlastet",
-    "subtitle": "Von der korrekten Schichtwechsel-Ausnahme bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Schichtwechsel-Ausnahme bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "schedule",
@@ -47,17 +47,17 @@
       {
         "icon": "gavel",
         "title": "48-Stunden-Schnitt live überwacht",
-        "text": "Klacks überwacht den gleitenden 4-Monats-Schnitt live und warnt, bevor jemand die 48-Stunden-Grenze überschreitet. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht den gleitenden 4-Monats-Schnitt live und warnt, bevor jemand die 48-Stunden-Grenze überschreitet. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "tune",
         "title": "Flexibel für jede Overenskomst",
-        "text": "Klacks lässt sich auf die jeweils geltenden Zuschlagssätze von Pflege-, Assistenz- und Ärzte-Tarifverträgen einstellen, statt eine starre Regel für alle Berufsgruppen vorzugeben."
+        "text": "Klacks lässt sich auf die jeweils geltenden Zeitzuschläge von Pflege-, Assistenz- und Ärzte-Tarifverträgen einstellen, statt eine starre Regel für alle Berufsgruppen vorzugeben."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI."
       },
       {
         "icon": "smart_toy",

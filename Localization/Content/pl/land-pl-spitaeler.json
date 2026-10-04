@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Dla szpitali i klinik w Polsce",
     "titleHtml": "Grafiki dyżurów, które <span class=\"text-secondary\">funkcjonują całą dobę.</span>",
-    "subtitle": "Klacks planuje oddziały i dyżury bez luk &mdash; z uwzględnieniem szczególnej normy 7h35 dla personelu medycznego oraz okresów odpoczynku zgodnie z Kodeksem pracy. Zainstalowany na własnym sprzęcie, dzięki czemu dane pacjentów nigdy nie opuszczają Twojej placówki.",
+    "subtitle": "Klacks planuje oddziały i dyżury bez luk &mdash; z uwzględnieniem szczególnej normy 7h35 dla personelu medycznego oraz okresów odpoczynku zgodnie z Kodeksem pracy. Zainstalowany na własnym sprzęcie, dzięki czemu dane pacjentów nie muszą opuszczać Twojej placówki.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Siatka grafiku dyżurów Klacks dla szpitali i klinik w Polsce",
     "screenshotLabel": "Grafik dyżurów"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "e911_emergency",
-        "title": "Dyżur medyczny zaplanowany prawidłowo",
-        "text": "Dyżury do 24 godzin są planowane wraz z obowiązkowym 11-godzinnym odpoczynkiem bezpośrednio po nich."
+        "title": "Dyżur medyczny w planie",
+        "text": "Dyżury do 24 godzin są planowane, a Klacks sprawdza obowiązkowy 11-godzinny odpoczynek bezpośrednio po nich."
       },
       {
         "icon": "bedtime",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Zainstalowany na własnym sprzęcie: dane pozostają w placówce",
-        "text": "Klacks działa na Twojej infrastrukturze. Dane personelu i pacjentów nie opuszczają kliniki &mdash; również nie trafiają do AI."
+        "text": "Klacks działa na Twojej infrastrukturze. Dane personelu i pacjentów nie opuszczają kliniki; model AI można na życzenie uruchomić lokalnie."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Dyżur, odpoczynek, dwie normy",
-    "text": "Po 24-godzinnym dyżurze Klacks automatycznie planuje 11-godzinny odpoczynek, jednocześnie dotrzymując normy 7h35 dla pozostałego personelu medycznego &mdash; bez ręcznego przeliczania."
+    "text": "Po 24-godzinnym dyżurze Klacks sprawdza 11-godzinny odpoczynek i ostrzega przy jego naruszeniu; jednocześnie uwzględnia normę 7h35 dla pozostałego personelu medycznego &mdash; bez ręcznego przeliczania."
   },
   "showRoutePlanning": false,
   "cta": {

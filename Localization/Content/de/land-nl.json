@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in den Niederlanden | Arbeidstijdenwet & Oproepkrachten automatisch geregelt",
+  "pageTitle": "Klacks für Unternehmen in den Niederlanden | Arbeidstijdenwet & Oproepkrachten in der Dienstplanung",
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Für Arbeitgeber in den Niederlanden &middot; Open Source &middot; Ohne Lizenzgebühren",
     "titleHtml": "Dienstpläne, die die <span class=\"text-secondary\">Arbeidstijdenwet live im Blick behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und regelt Oproepkrachten korrekt nach der Wet arbeidsmarkt in balans (WAB) &mdash; bei Ihnen installiert, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und disponiert Oproepkrachten mit Datum und Stunden; die Fristen der Wet arbeidsmarkt in balans (WAB) behalten Sie selbst im Blick &mdash; bei Ihnen installiert, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Niederlanden",
     "screenshotLabel": "Dienstplan"
@@ -25,7 +25,7 @@
       },
       {
         "icon": "event_repeat",
-        "title": "Oproepkrachten korrekt einplanen",
+        "title": "Oproepkrachten einplanen",
         "text": "Für Abrufkräfte gilt eine gesetzliche Ankündigungsfrist von 4 Tagen (WAB, BW Art. 7:628a) &mdash; wird ein Einsatz kurzfristig abgesagt, bleibt der volle Lohnanspruch für die abgerufenen Stunden bestehen."
       }
     ]
@@ -57,21 +57,21 @@
   },
   "solutions": {
     "title": "Wie Klacks niederländische Betriebe entlastet",
-    "subtitle": "Von der automatischen ATW-Kontrolle bis zur datenschutzkonformen Zeiterfassung &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen ATW-Kontrolle bis zur datensparsamen Zeiterfassung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
         "title": "ATW-Höchstarbeitszeit automatisch überwacht",
-        "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst und die 60-Stunden-Wochengrenze und überwacht die rollierenden Schnitte über 4 und 16 Wochen live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und drohende Verstöße werden sichtbar, bevor der Dienstplan steht. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks kennt die 12-Stunden-Grenze pro Dienst und die 60-Stunden-Wochengrenze und überwacht die rollierenden Schnitte über 4 und 16 Wochen live &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt, und drohende Verstöße werden sichtbar, bevor der Dienstplan steht. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "bedtime",
-        "title": "Rusttijden automatisch eingehalten",
-        "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgerechnet."
+        "title": "Rusttijden automatisch geprüft",
+        "text": "Die 11-Stunden-Tagesruhe und die 36-Stunden-Wochenruhe nach ATW Art. 5:3 und 5:5 werden bei jedem Dienstplan automatisch mitgeprüft."
       },
       {
         "icon": "event_available",
-        "title": "Oproepkrachten korrekt geplant",
+        "title": "Oproepkrachten geplant",
         "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist für Abrufkräfte gewahrt ist und eine kurzfristige Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch."
       },
       {
@@ -82,7 +82,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten verlassen Ihr Haus nicht."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit lokalem Modell verlassen Personaldaten Ihr Haus nicht."
       },
       {
         "icon": "smart_toy",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks ATW-Höchstarbeitszeiten, Rusttijden und Oproepkrachten automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks ATW-Höchstarbeitszeiten und Rusttijden prüft und Oproepkrachten plant &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

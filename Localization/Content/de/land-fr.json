@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Französischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, bildet die Überstunden-Zuschlagsstaffeln des Code du travail direkt ab, überwacht Ruhezeiten lückenlos und optimiert Touren &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo es die CNIL erwartet: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, kann die Überstunden-Zuschlagsstaffeln des Code du travail als Zeitgutschriften abbilden, prüft Ruhezeiten gegen Ihre hinterlegten Regeln und optimiert Touren &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo es die CNIL erwartet: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Frankreich",
     "screenshotLabel": "Dienstplan"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "gavel",
-        "title": "Zuschlagsstaffeln berechnet, Ruhezeiten überwacht",
-        "text": "Klacks bildet die Zuschlagsstaffel des Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) direkt ab: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; die Auszahlung übernimmt Ihre Lohnabrechnung auf dieser fertig verzuschlagten Basis. Die tägliche 11-Stunden-Ruhezeit (Art. L3131-1) und die freien Tage pro Woche werden in Echtzeit überwacht (die durchgehende 35-Stunden-Wochenruhe nach Art. L3132-2 prüft Klacks nicht), Überschreitungen macht Klacks sofort sichtbar &mdash; auf Wunsch blockiert Klacks sie hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "title": "Zuschlagsstaffeln als Zeitgutschrift, Ruhezeiten geprüft",
+        "text": "Klacks kann die Zuschlagsstaffel des Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) als Zeitgutschrift abbilden: Überstunden-Zuschläge sind ein eigener Zuschlagstyp mit bis zu drei Staffeln auf Wochenbasis &mdash; die Auszahlung übernimmt Ihre Lohnabrechnung auf Basis dieser Stunden. Die tägliche 11-Stunden-Ruhezeit (Art. L3131-1) und die freien Tage pro Woche prüft Klacks gegen Ihre hinterlegten Regeln (die durchgehende 35-Stunden-Wochenruhe nach Art. L3132-2 prüft Klacks nicht), Überschreitungen macht Klacks sofort sichtbar &mdash; in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung) blockiert Klacks sie auf Wunsch im Block-Modus (pro Regelart konfigurierbar); bei manueller Planung warnt Klacks."
       },
       {
         "icon": "route",
@@ -77,7 +77,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI. Das entspricht der CNIL-Erwartung an den Beschäftigtendatenschutz (RGPD Art. 88)."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben in Ihrem Haus, mit einem lokal gehosteten KI-Modell auch bei der KI. Das kommt der CNIL-Erwartung an den Beschäftigtendatenschutz (RGPD Art. 88) entgegen."
       },
       {
         "icon": "code",
@@ -99,14 +99,14 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Transparent statt Blackbox",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Vorschläge zu Qualifikationen, dem Code du travail und den hinterlegten Regeln passen &mdash; nachvollziehbar für Mitarbeitende und das Comité Social et Économique (CSE), passend zur CNIL-Erwartung an transparente, nicht-überwachende Systeme. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Ein hinterlegtes Skills- und Regelsystem hilft, Vorschläge an Qualifikationen und die hinterlegten Regeln anzupassen &mdash; nachvollziehbar für Mitarbeitende und das Comité Social et Économique (CSE), passend zur CNIL-Erwartung an transparente, nicht-überwachende Systeme. Das KI-Modell dahinter wählen Sie selbst, inklusive Betrieb ganz ohne externe Anbindung.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "35-Stunden-Woche, Jahresmodulation, ein Plan",
-    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks behält die 48-Stunden-Wochengrenze im Blick, rechnet die Überstunden-Zuschlagsstaffel (+25%/+50%) als eigenen Zuschlagstyp gleich mit und macht sichtbar, wo Ausgleichstage nötig werden &mdash; die Auszahlung übernimmt die Lohnabrechnung."
+    "text": "Ein Unternehmen mit mehreren Standorten in Frankreich moduliert die Wochenarbeitszeit über das Jahr. Klacks behält die 48-Stunden-Wochengrenze im Blick, schreibt die Überstunden-Zuschlagsstaffel (+25%/+50%) als eigenen Zuschlagstyp gleich als Zeitgutschrift mit und macht sichtbar, wo Ausgleichstage nötig werden &mdash; die Auszahlung übernimmt die Lohnabrechnung."
   },
   "showRoutePlanning": false,
   "cta": {

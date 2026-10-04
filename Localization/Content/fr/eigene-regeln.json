@@ -32,8 +32,8 @@
     "subtitle": "Chaque paramètre avec sa signification et son impact sur la planification &mdash; voici les domaines.",
     "items": [
       { "icon": "schedule", "title": "Base du temps de travail", "text": "Heures normales par jour et heures hebdomadaires d'un plein temps &mdash; la référence pour les pourcentages de temps partiel et le calcul des heures cibles." },
-      { "icon": "speed", "title": "Plafonds", "text": "Heures maximales par jour et par semaine &mdash; le planificateur refuse les services qui les dépassent." },
-      { "icon": "calendar_month", "title": "Jours consécutifs &amp; jours de repos", "text": "Combien de jours de travail d'affilée sont autorisés et combien de jours de repos sont garantis par fenêtre de planification." },
+      { "icon": "speed", "title": "Plafonds", "text": "Heures maximales par jour et par semaine &mdash; le planificateur vérifie les services par rapport à ces limites et avertit en cas de dépassement." },
+      { "icon": "calendar_month", "title": "Jours consécutifs &amp; jours de repos", "text": "Combien de jours de travail d'affilée sont autorisés et combien de jours de repos sont prévus par fenêtre de planification." },
       { "icon": "bedtime", "title": "Repos &amp; majoration de nuit", "text": "Pause minimale entre deux services ainsi que début, fin et taux de la majoration de nuit." },
       { "icon": "more_time", "title": "Heures supplémentaires", "text": "À partir de combien d'heures le temps travaillé compte comme supplémentaire &mdash; cumulé par jour ou par semaine." },
       { "icon": "beach_access", "title": "Jours fériés &amp; vacances", "text": "Taux de majoration pour le travail les jours fériés et congé annuel des collaborateurs soumis à cette règle." }

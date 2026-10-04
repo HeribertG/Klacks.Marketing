@@ -42,17 +42,17 @@
       {
         "icon": "calculate",
         "title": "Heures d'équivalence &amp; heures supplémentaires majorées par paliers",
-        "text": "Klacks reproduit directement l'échelonnement de la CCN 16 : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; +25% pour les heures d'équivalence à partir de la 36e, +50% pour les véritables heures supplémentaires à partir de la 40e ou de la 44e heure ; votre gestion de la paie n'a plus qu'à verser les montants sur cette base déjà majorée."
+        "text": "Klacks peut reproduire l'échelonnement de la CCN 16 sous forme de crédit d'heures : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; +25% pour les heures d'équivalence à partir de la 36e, +50% pour les véritables heures supplémentaires à partir de la 40e ou de la 44e heure ; votre gestion de la paie se charge du versement sur la base de ces heures."
       },
       {
         "icon": "timer",
         "title": "Temps de travail &amp; de repos surveillés",
-        "text": "Les limites de temps de travail et de repos que vous définissez sont surveillées, Klacks rend visible tout dépassement &mdash; sur demande, Klacks les bloque strictement : toute nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée du responsable hiérarchique. Klacks ne vérifie pas le temps de conduite lui-même ; les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
+        "text": "Les limites de temps de travail et de repos que vous définissez sont surveillées, Klacks rend visible tout dépassement &mdash; dans les modes de planification automatique (p. ex. Wizard, suggestions, remplacement), Klacks les bloque sur demande ; en planification manuelle, Klacks avertit. Klacks ne vérifie pas le temps de conduite lui-même ; les heures de travail planifiées et saisies complètent les enregistrements du chronotachygraphe qui doivent être disponibles lors de contrôles pour le justificatif de 56 jours."
       },
       {
         "icon": "badge",
         "title": "Catégories de permis adaptées",
-        "text": "Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance. Sur demande, Klacks bloque entièrement l'affectation en cas de justificatif obligatoire expiré &mdash; seul un chauffeur disposant d'un justificatif valide est planifié."
+        "text": "Lors de la planification automatique, Klacks n'attribue les tournées qu'aux chauffeurs disposant de l'habilitation requise &mdash; et avertit en cas de justificatifs arrivant à échéance. Si un justificatif obligatoire est manquant ou expiré, Klacks refuse l'affectation, y compris en planification manuelle &mdash; seul un chauffeur disposant d'un justificatif valide est alors planifié."
       },
       {
         "icon": "smart_toy",

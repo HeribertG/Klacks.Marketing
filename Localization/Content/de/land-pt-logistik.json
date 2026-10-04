@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Portugal",
     "titleHtml": "Touren, Grenzen, Zuschläge &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit dem neuen CCT für den Güterkraftverkehr seit 13. März 2026, dem 75%-Strafzuschlag bei Grenzüberschreitung und dem Verbot, dass Fahrer:innen selbst be- oder entladen.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; und warnt vor Überschreitungen der von Ihnen hinterlegten CCT-Grenzen (neuer CCT für den Güterkraftverkehr seit 13. März 2026, 75%-Strafzuschlag bei Grenzüberschreitung); Fahrer:innen dürfen nach dem CCT nicht selbst be- oder entladen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Portugal",
     "screenshotLabel": "Timeline"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks die Logistik in Portugal entlastet",
-    "subtitle": "Von der optimierten Tour bis zum korrekten Zuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur dokumentierten Stundenbasis &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "gavel", "title": "75%-Strafzuschlag im Blick", "text": "Klacks überwacht die tariflichen Grenzen aus Cláusula 21 laufend und warnt, bevor eine Überschreitung den 75%-Strafzuschlag auslöst." },
+      { "icon": "gavel", "title": "75%-Strafzuschlag im Blick", "text": "Klacks überwacht die von Ihnen hinterlegten tariflichen Grenzen aus Cláusula 21 laufend und warnt, bevor eine Überschreitung den 75%-Strafzuschlag auslöst." },
       { "icon": "description", "title": "Neuer CCT 2026 hinterlegt", "text": "Die seit 13. März 2026 geltenden CCT-Werte hinterlegen Sie in Klacks &mdash; inklusive der dokumentierten Stundenbasis, die Ihre Lohnbuchhaltung für die rückwirkende Vergütung ab 1.1.2026 braucht." },
-      { "icon": "block", "title": "Be-/Entladeverbot berücksichtigt", "text": "Klacks plant Be- und Entladezeiten separat ein und teilt Fahrer:innen keine eigene Lade-Tätigkeit zu &mdash; wie es CCT und Rahmenabkommen verlangen." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Führerschein hat." },
+      { "icon": "block", "title": "Be-/Entladeverbot im Blick", "text": "Be- und Entladen planen Sie als eigene Tätigkeit ein; über Qualifikationen bei der Zuteilung lässt sich vermeiden, dass Fahrer:innen eine eigene Lade-Tätigkeit erhalten &mdash; das CCT und das Rahmenabkommen untersagen sie." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Bei der automatischen Planung teilt Klacks Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Führerschein hat." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Silva ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Zuschläge und Ladezeiten." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks prüft die tariflichen Grenzen des CCT 2026 automatisch, warnt vor dem 75%-Strafzuschlag und plant Be- und Entladezeiten getrennt von der Fahrzeit &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks prüft die von Ihnen hinterlegten tariflichen Grenzen des CCT 2026, warnt vor dem 75%-Strafzuschlag und erlaubt, Be- und Entladen getrennt von der Fahrzeit einzuplanen &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

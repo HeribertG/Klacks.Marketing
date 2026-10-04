@@ -4,7 +4,7 @@
     "badgeIcon": "fact_check",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; lückenlose Zeitdokumentation für Amendment 24",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie den Nachweis in der Hand haben.</span>",
-    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und behält den freien Tag pro Woche im Blick &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. Das liefert die dokumentierte Zeitbasis, um der Beweislast nach Amendment 24 im Streitfall etwas entgegenzusetzen, statt der gesetzlichen 60-Stunden-Vermutung hilflos ausgeliefert zu sein.",
+    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), schreibt Überstundenzuschläge als Zeitgutschrift gut und behält den freien Tag pro Woche im Blick &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. Das liefert die dokumentierte Zeitbasis, um der Beweislast nach Amendment 24 im Streitfall etwas entgegenzusetzen, statt der gesetzlichen 60-Stunden-Vermutung hilflos ausgeliefert zu sein.",
     "screenshotFile": "app-calendar-de.png",
     "screenshotAlt": "Klacks Kalenderansicht für Unternehmen in Israel",
     "screenshotLabel": "Kalender"
@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Wie Klacks israelische Betriebe entlastet",
-    "subtitle": "Von der Beweissicherung bis zur Sabbat-konformen Planung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Beweissicherung bis zur Sabbat- und Wochenruhe-Prüfung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "fact_check",
@@ -66,18 +66,18 @@
       },
       {
         "icon": "calculate",
-        "title": "Überstundenzuschläge automatisch berechnet",
-        "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle rechnet Klacks die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 % &mdash; ohne Nachrechnen von Hand."
+        "title": "Überstundenzuschläge als Zeitgutschrift",
+        "text": "Bei 42 Wochenstunden und 8,6 Stunden täglicher Schwelle gelten die ersten 2 Überstunden pro Tag mit 125 %, jede weitere mit 150 %. Klacks schreibt Zuschläge als Zeitgutschrift in Stunden gut (ein hinterlegter Satz je Regel; gestaffelte Sätze bildet Klacks nicht ab), den Geldbetrag rechnet Ihr Lohnsystem."
       },
       {
         "icon": "synagogue",
-        "title": "Sabbat- &amp; Wochenruhe automatisch geprüft",
-        "text": "Klacks prüft, dass pro Woche mindestens ein freier Tag bleibt, und rechnet Wochenendarbeit mit dem hinterlegten 150 %-Zuschlag. Die durchgehende 36-Stunden-Wochenruhe, die nötige Ministeriums-Genehmigung und den Ersatzruhetag prüft Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Mindestzahl freier Tage konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "title": "Freier Tag pro Woche &amp; Sabbat-Zuschlag",
+        "text": "Klacks prüft, dass pro Woche mindestens ein freier Tag bleibt, und schreibt Wochenendarbeit mit dem hinterlegten 150 %-Zuschlag als Zeitgutschrift gut. Die durchgehende 36-Stunden-Wochenruhe, die nötige Ministeriums-Genehmigung und den Ersatzruhetag prüft Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Mindestzahl freier Tage in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: sensible Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Planungs- und Personaldaten verlassen Ihr Haus nicht &mdash; ganz ohne biometrische Zeiterfassung, deren erhöhte Sicherheitsanforderungen nach den Privacy Protection Regulations 2017 Sie sich damit sparen."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst. Planungs- und Personaldaten bleiben in Ihrem Haus, mit einem lokalen KI-Modell auch bei der KI-Nutzung &mdash; ganz ohne biometrische Zeiterfassung, deren erhöhte Sicherheitsanforderungen nach den Privacy Protection Regulations 2017 Sie sich damit sparen."
       },
       {
         "icon": "smart_toy",
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Sabbat-Dienst und Überstunde, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn ein Einsatz auf das Wochenende fällt oder die 8,6-Stunden-Schwelle überschreitet, und rechnet den hinterlegten Zuschlag gleich mit &mdash; während im Hintergrund lückenlos das Arbeitszeitbuch für Amendment 24 mitläuft."
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz auf das Wochenende fällt oder die 8,6-Stunden-Schwelle überschreitet, und schreibt den hinterlegten Zuschlag gleich als Zeitgutschrift gut &mdash; während im Hintergrund lückenlos das Arbeitszeitbuch für Amendment 24 mitläuft."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Arbeitszeitbuch, Überstundenzuschläge und Sabbatruhe automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Arbeitszeitbuch, Zeitzuschläge und die Prüfung der Wochenruhe abdeckt &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

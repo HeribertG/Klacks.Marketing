@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die ambulante Pflege",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit den richtigen Qualifikationen und korrekt vergüteten Wegezeiten. Geleistete Stunden und Qualifikationsstufe dokumentiert Klacks lückenlos, als Basis für die gestaffelte Lohnabrechnung nach der 7. PflegeArbbV. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit den richtigen Qualifikationen und als Arbeitszeit erfassten Wegezeiten. Geleistete Stunden und Qualifikationsstufe dokumentiert Klacks, als Basis für die gestaffelte Lohnabrechnung nach der 7. PflegeArbbV. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung ambulanter Pflegedienste",
     "screenshotLabel": "Timeline"
@@ -32,12 +32,12 @@
   },
   "solutions": {
     "title": "Wie Klacks die ambulante Pflege entlastet",
-    "subtitle": "Von der automatischen Tour bis zur lückenlosen Lohn-Dokumentation &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Tour bis zur Stunden-Dokumentation für die Lohnabrechnung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
         "title": "Touren automatisch optimiert",
-        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; inklusive vergüteter Wegezeit zwischen den Patient:innen."
+        "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; inklusive erfasster Wegezeit zwischen den Patient:innen."
       },
       {
         "icon": "verified",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "Stunden &amp; Qualifikationsstufe lückenlos dokumentiert",
-        "text": "Geleistete Stunden und Qualifikationsstufe je Einsatz sind lückenlos dokumentiert &mdash; die Basis für die Lohnabrechnung nach den gestaffelten Mindestlöhnen der 7. PflegeArbbV. Die Stufen-Sätze selbst legt der Gesetzgeber fest, Klacks berechnet sie nicht."
+        "title": "Stunden &amp; Qualifikationsstufe dokumentiert",
+        "text": "Geleistete Stunden und Qualifikationsstufe je Einsatz sind dokumentiert &mdash; die Basis für die Lohnabrechnung nach den gestaffelten Mindestlöhnen der 7. PflegeArbbV. Die Stufen-Sätze selbst legt der Gesetzgeber fest, Klacks berechnet sie nicht."
       },
       {
         "icon": "shield_lock",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Ausfall, keine Telefonrunde",
-    "text": "Eine Pflegekraft meldet sich krank. Klacks zeigt sofort verfügbaren, qualifizierten Ersatz für die betroffenen Touren &mdash; inklusive korrekt berechneter Wegezeiten und Zuschläge. Die Einsatzleitung bestätigt mit einem Klick."
+    "text": "Eine Pflegekraft meldet sich krank. Klacks zeigt sofort verfügbaren, qualifizierten Ersatz für die betroffenen Touren &mdash; inklusive der erfassten Wegezeiten und Zuschlags-Stunden. Die Einsatzleitung bestätigt mit einem Klick."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Untuk Penjagaan di Rumah &amp; Rawatan Pesakit Luar",
     "titleHtml": "Lebih masa untuk penjagaan, <span class=\"text-secondary\">kurang untuk perancangan tur.</span>",
-    "subtitle": "Klacks merancang tugasan dan tur secara automatik &mdash; dengan kelayakan yang tepat, elaun yang betul dan hari kelepasan kanton anda. Dipasang di premis anda sendiri, supaya data pesakit tidak pernah meninggalkan premis anda.",
+    "subtitle": "Klacks merancang tugasan dan tur secara automatik &mdash; dengan kelayakan yang tepat, elaun yang boleh dikonfigurasikan dan hari kelepasan kanton anda. Dipasang di premis anda sendiri; dengan model AI tempatan, data pesakit tidak meninggalkan premis anda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Paparan garis masa Klacks untuk perancangan tur penjagaan di rumah",
     "screenshotLabel": "Garis Masa",
@@ -25,8 +25,8 @@
     "items": [
       { "icon": "route", "title": "Tur Dioptimumkan Secara Automatik", "text": "Klacks menyusun laluan tugasan supaya jarak pendek dan tetingkap masa dipatuhi &mdash; untuk kereta, basikal atau berjalan kaki." },
       { "icon": "verified", "title": "Kelayakan Diambil Kira Secara Automatik", "text": "Setiap tugasan hanya diberikan kepada individu dengan kelayakan yang sesuai &mdash; tanpa semakan manual." },
-      { "icon": "event_available", "title": "Elaun &amp; Hari Kelepasan Kanton Anda", "text": "Elaun malam, hujung minggu dan hari kelepasan sudah dikonfigurasikan &mdash; hingga ke peringkat kanton dan daerah, boleh disesuaikan secara bebas." },
-      { "icon": "shield_lock", "title": "Dipasang di Premis Anda Sendiri: Data Kekal di Premis", "text": "Klacks berjalan di atas infrastruktur anda sendiri. Data pesakit tidak meninggalkan premis anda &mdash; termasuk kepada AI." },
+      { "icon": "event_available", "title": "Hari Kelepasan Kanton Anda &amp; Elaun", "text": "Hari kelepasan sudah dikonfigurasikan &mdash; hingga ke peringkat kanton dan daerah. Elaun malam, hujung minggu dan hari kelepasan anda tetapkan sendiri sebagai kredit jam, semuanya boleh disesuaikan secara bebas." },
+      { "icon": "shield_lock", "title": "Dipasang di Premis Anda Sendiri: Data di Premis", "text": "Klacks berjalan di atas infrastruktur anda sendiri. Data pesakit berada pada pelayan anda &mdash; dengan model AI tempatan, tiada apa-apa meninggalkan premis anda walaupun untuk AI." },
       { "icon": "smart_toy", "title": "Klacksy Memahami Ayat Anda", "text": "“Isi tur untuk esok” sudah memadai. Jika berlaku kes sakit, Klacksy segera mencadangkan pengganti yang tersedia." },
       { "icon": "event_busy", "title": "Ketidakhadiran Ditangani Pantas", "text": "Jika seseorang tidak hadir, Klacks segera menunjukkan siapa yang layak dan tersedia &mdash; tanpa menjejaskan keseluruhan pelan." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Contoh Sebenar",
     "title": "Penjagaan di Rumah Geneva, Dwibahasa, dengan Tugasan Vaud",
-    "text": "Antara muka bahasa Perancis, hari kelepasan Geneva dan Vaud, elaun penjagaan di rumah &mdash; dikonfigurasikan dalam Klacks, bukan diprogram semula. Tur dioptimumkan secara automatik, kelayakan disemak, dan Klacksy membantu perubahan mendadak. Data pesakit kekal sepenuhnya di premis."
+    "text": "Antara muka bahasa Perancis, hari kelepasan Geneva dan Vaud, elaun penjagaan di rumah &mdash; dikonfigurasikan dalam Klacks, bukan diprogram semula. Tur dioptimumkan secara automatik, kelayakan disemak, dan Klacksy membantu perubahan mendadak. Data pesakit berada pada pelayan anda; dengan model AI tempatan, semuanya kekal di premis."
   },
   "showRoutePlanning": true,
   "cta": {

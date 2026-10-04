@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche Pflege in Vietnam",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Touren automatisch und warnt, bevor die gesetzliche 12-Stunden-Ruhezeit zwischen zwei Schichten unterschritten würde &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Touren automatisch und warnt, bevor die gesetzliche 12-Stunden-Ruhezeit zwischen zwei Schichten unterschritten würde &mdash; bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell, damit Patientendaten Ihr Haus nicht verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Vietnam",
     "screenshotLabel": "Timeline"
@@ -14,7 +14,7 @@
     "title": "Schichtruhe und Fahrzeit zwischen Klient:innen",
     "items": [
       { "icon": "bedtime", "title": "12 Stunden Ruhezeit zwischen Schichten", "text": "Auch Người chăm sóc (Caregiver) im Schichtbetrieb haben Anspruch auf mindestens 12 zusammenhängende Stunden Ruhezeit vor der nächsten Schicht (Art. 110 Bộ luật Lao động 2019) &mdash; bei wechselnden Touren von Hand schwer zu überblicken." },
-      { "icon": "alt_route", "title": "Fahrzeit zwischen Klient:innen im Blick behalten", "text": "Wie Fahrzeiten zwischen Einsätzen zu behandeln sind, ist im vietnamesischen Arbeitsrecht nicht mit einer eigenen Norm geregelt &mdash; für eine verlässliche Tourenplanung lohnt sich trotzdem die automatische Erfassung dieser Zeiten." }
+      { "icon": "alt_route", "title": "Fahrzeit zwischen Klient:innen im Blick behalten", "text": "Wie Fahrzeiten zwischen Einsätzen zu behandeln sind, ist im vietnamesischen Arbeitsrecht nicht mit einer eigenen Norm geregelt &mdash; für eine verlässliche Tourenplanung lohnt es sich trotzdem, diese Zeiten in der Tourenplanung zu berücksichtigen." }
     ]
   },
   "solutions": {
@@ -22,17 +22,17 @@
     "subtitle": "Von der optimierten Tour bis zur eingehaltenen Schichtruhe &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Motorrad oder zu Fuß." },
-      { "icon": "bedtime", "title": "12-Stunden-Ruhezeit automatisch überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde &mdash; auf Wunsch blockiert Klacks den Verstoß hart, sodass sich eine unzulässige Schichtfolge nur mit dokumentierter Vorgesetzten-Freigabe speichern lässt." },
-      { "icon": "schedule", "title": "Fahrzeit als Planungsfeature erfasst", "text": "Klacks kann Transferzeiten zwischen Einsätzen automatisch im Tourenplan erfassen &mdash; als Planungsfunktion, nicht als vietnamesische Gesetzespflicht." },
-      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "bedtime", "title": "12-Stunden-Ruhezeit automatisch überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde &mdash; auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "schedule", "title": "Wegzeit als Planungswert hinterlegt", "text": "Für Wegzeiten zwischen Einsätzen lässt sich in Klacks pro Schicht ein fester Wert hinterlegen &mdash; als Planungsfunktion, nicht als vietnamesische Gesetzespflicht." },
+      { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung und warnt bei abgelaufenen Nachweisen &mdash; das erspart manuelles Prüfen." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Mit lokalem KI-Modell verlassen Patientendaten Ihr Haus nicht." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtruhe und Tour, ein Blick",
-    "text": "Klacks warnt automatisch, bevor die 12-Stunden-Ruhezeit zwischen Schichten unterschritten würde, und erfasst Fahrzeiten zwischen Klient:innen gleich im Tourenplan &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt automatisch, bevor die 12-Stunden-Ruhezeit zwischen Schichten unterschritten würde, und berücksichtigt hinterlegte Wegzeiten gleich im Tourenplan &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -47,12 +47,12 @@
       {
         "icon": "fingerprint",
         "title": "Fichaje sin biometría",
-        "text": "Klacks registra el inicio y el fin de cada turno sin huella dactilar ni reconocimiento facial &mdash; en línea con la directriz de la AEPD sobre fichaje biométrico, y sin que ningún dato biométrico llegue jamás a la nube."
+        "text": "Klacks registra el inicio y el fin de cada turno sin huella dactilar ni reconocimiento facial &mdash; y evita así el fichaje biométrico tratado en la directriz de la AEPD; no se recogen datos biométricos."
       },
       {
         "icon": "shield_lock",
         "title": "Instalado en sus instalaciones: los datos permanecen en su empresa",
-        "text": "Klacks funciona en su propia infraestructura. Los datos del personal y de los pacientes no salen del hospital &mdash; ni siquiera hacia la IA."
+        "text": "Klacks funciona en su propia infraestructura. Los datos del personal y de los pacientes permanecen en el hospital &mdash; con un modelo de IA alojado localmente, también en lo que respecta a la IA."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "En concreto",
     "title": "Una guardia, el descanso correspondiente, sin lector de huellas",
-    "text": "Tras una guardia de 24 horas, Klacks planifica automáticamente el descanso mínimo de 12 horas según el Estatuto Marco y registra el inicio y el fin de cada turno directamente en el sistema &mdash; sin ningún lector biométrico de fichaje y sin transmisión a la nube."
+    "text": "Tras una guardia de 24 horas, Klacks planifica automáticamente el descanso mínimo de 12 horas según el Estatuto Marco y registra el inicio y el fin de cada turno directamente en el sistema &mdash; sin ningún lector biométrico de fichaje y sin datos biométricos en la nube."
   },
   "showRoutePlanning": false,
   "cta": {

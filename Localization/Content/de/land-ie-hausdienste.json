@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Gebäudereinigung in Irland | ERO-Mindestlohn, Nachtzuschlag & Sonntagsarbeit",
+  "pageTitle": "Klacks für Gebäudereinigung in Irland | Nachtfenster, Sonntagsarbeit & ERO-Vorgaben",
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Gebäudereinigung &amp; Hausdienste in Irland",
-    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">korrekt abgerechnet.</span>",
-    "subtitle": "Klacks teilt Objekte und wechselnde Teams effizient ein &mdash; mit dem ERO-Mindestlohn zentral hinterlegt sowie dem Nachtzuschlag zwischen Mitternacht und 6 Uhr und dem doppelten Sonntagssatz automatisch berücksichtigt. Touren werden zugleich automatisch optimiert.",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte und wechselnde Teams effizient ein &mdash; mit konfigurierbarem Nachtfenster zwischen Mitternacht und 6 Uhr und Sonntagsarbeit als gesondert ausgewiesenen Stunden für Ihre Lohnabrechnung. Touren werden zugleich automatisch optimiert.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Irland",
     "screenshotLabel": "Dienstplan"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks Hausdienste in Irland entlastet",
-    "subtitle": "Von der optimierten Route bis zum korrekten ERO-Zuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zum ausgewiesenen Nachtfenster &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "payments", "title": "ERO-Mindestlohn zentral hinterlegt", "text": "Klacks hinterlegt den aktuellen ERO-Satz von €14,80 pro Stunde ab 1.1.2026 zentral, künftige Anhebungen passen Sie an einer Stelle an." },
-      { "icon": "bedtime", "title": "Nachtzuschlag im richtigen Zeitfenster", "text": "Der Nachtzuschlag von €1,00 pro Stunde zwischen 00:00 und 06:00 Uhr ist als fester Betrag pro Stunde mit konfigurierbarem Zeitfenster hinterlegt und wird nur bei mindestens 3 Stunden Arbeit in diesem Fenster berechnet &mdash; Klacks prüft das automatisch." },
-      { "icon": "event_repeat", "title": "Sonntagsarbeit zum doppelten Satz erfasst", "text": "Klacks erkennt Sonntagseinsätze automatisch und rechnet den doppelten Stundensatz von €29,60 pro Stunde (ab 1.1.2026)." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten verlassen Ihr Haus nicht, auch nicht zur KI." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte in Bezirk Nord für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team und rechnet mit den hinterlegten ERO-Sätzen gleich mit." }
+      { "icon": "payments", "title": "ERO-Sätze bleiben in der Lohnabrechnung", "text": "Den ERO-Mindestlohn von €14,80 pro Stunde ab 1.1.2026 berechnet Klacks nicht &mdash; Klacks liefert Ihrer Lohnabrechnung die geplanten Stunden als Basis, die Sätze pflegen Sie dort." },
+      { "icon": "bedtime", "title": "Nachtfenster konfigurierbar", "text": "Das Nachtfenster zwischen 00:00 und 06:00 Uhr lässt sich konfigurieren, und Klacks weist die darin geleisteten Stunden aus. Den Zuschlag von €1,00 pro Stunde samt der Bedingung von mindestens 3 Stunden in diesem Fenster wendet Ihre Lohnabrechnung an &mdash; Klacks berechnet keine Geldbeträge." },
+      { "icon": "event_repeat", "title": "Sonntagsarbeit ausgewiesen", "text": "Klacks erkennt Sonntagseinsätze automatisch und weist sie aus; den doppelten Stundensatz (ab 1.1.2026 €29,60 pro Stunde) wendet Ihre Lohnabrechnung an." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben in Ihrem Haus, mit einem lokal gehosteten KI-Modell auch bei der KI." },
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte in Bezirk Nord für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team." }
     ]
   },
   "example": null,
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen optimiert, den ERO-Mindestlohn zentral hinterlegt und Zuschläge automatisch berechnet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen optimiert, Teams einteilt und Nachtfenster sowie Sonntagsstunden ausweist &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

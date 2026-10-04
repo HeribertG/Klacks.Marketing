@@ -2,9 +2,9 @@
   "pageTitle": "Klacks para España | Planificación de personal Open Source & Registro de Jornada",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Sin cuotas de licencia &middot; Conforme a la normativa española",
+    "badge": "Open Source &middot; Sin cuotas de licencia &middot; Para el derecho laboral español",
     "titleHtml": "Planificación de personal <span class=\"text-secondary\">con la que usted mantiene el control.</span>",
-    "subtitle": "Klacks planifica turnos automáticamente, comprueba los descansos según el Estatuto de los Trabajadores en tiempo real y documenta el inicio y el fin de cada jornada &mdash; open source, instalable en sus propias instalaciones y con el modelo de IA que usted elija. Así los datos del personal permanecen donde sus responsables de protección de datos quieren que estén: en su propia empresa.",
+    "subtitle": "Klacks planifica turnos automáticamente, comprueba los descansos frente a las exigencias del Estatuto de los Trabajadores y documenta el inicio y el fin de cada jornada &mdash; open source, instalable en sus propias instalaciones y, si lo desea, con un modelo de IA local. Así los datos del personal pueden permanecer donde sus responsables de protección de datos quieren que estén: en su propia empresa.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Cuadrante de turnos de Klacks para empresas en España",
     "screenshotLabel": "Cuadrante"
@@ -66,7 +66,7 @@
       },
       {
         "icon": "punch_clock",
-        "title": "Registro de Jornada integrado",
+        "title": "Base horaria para el Registro de Jornada",
         "text": "Klacks documenta el inicio y el fin de cada turno de forma continua y así aporta la base horaria para el registro exigido por el RD-ley 8/2019 &mdash; directamente desde la planificación diaria, sin ningún paso adicional."
       },
       {
@@ -77,12 +77,12 @@
       {
         "icon": "gavel",
         "title": "Límite de 80 horas extraordinarias bajo control",
-        "text": "Klacks supervisa en tiempo real el límite anual de 80 horas extraordinarias según el art. 35 ET y avisa antes de que se supere; en cambio, Klacks no detecta automáticamente que los trabajadores nocturnos y los menores de 18 años no pueden realizar horas extraordinarias (art. 36.1 ET). Si así se desea, Klacks bloquea de forma estricta la superación del límite &mdash; una nueva infracción solo podrá guardarse entonces con la autorización documentada de un responsable."
+        "text": "Klacks supervisa en tiempo real el límite anual de 80 horas extraordinarias según el art. 35 ET y avisa antes de que se supere; en cambio, Klacks no detecta automáticamente que los trabajadores nocturnos y los menores de 18 años no pueden realizar horas extraordinarias (art. 36.1 ET). Si así se desea, Klacks bloquea la superación del límite en las vías de planificación automática (p. ej., asistente, propuestas, sustitución); en la planificación manual, Klacks avisa."
       },
       {
         "icon": "shield_lock",
         "title": "Instalado en sus instalaciones: soberanía total de los datos",
-        "text": "Klacks funciona en su propia infraestructura, y usted elige el modelo de IA &mdash; también alojado localmente, sin ninguna transferencia de datos del personal al extranjero."
+        "text": "Klacks funciona en su propia infraestructura, y usted elige el modelo de IA &mdash; con un modelo alojado localmente, sin ninguna transferencia de datos del personal al extranjero."
       },
       {
         "icon": "smart_toy",

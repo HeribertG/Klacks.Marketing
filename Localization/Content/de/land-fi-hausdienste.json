@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste (siivous) in Finnland",
-    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">korrekt abgerechnet.</span>",
-    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem Mindeststundenlohn und den Schichtzuschlägen des Kiinteistöpalvelualan TES sowie der Erhöhung zum 1.8.2026 automatisch hinterlegt.",
+    "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; und liefert die Stunden samt Zeitzuschlägen für Ihre Lohnbuchhaltung, die Mindeststundenlohn, Schichtzuschläge und die Erhöhung zum 1.8.2026 des Kiinteistöpalvelualan TES abrechnet.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für finnische Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks finnische Reinigungsdienste entlastet",
-    "subtitle": "Von der optimierten Route bis zum korrekt hinterlegten Mindestlohn &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur Stundenbasis für die Lohnbuchhaltung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "payments", "title": "Mindestlohn &amp; TES-Erhöhung hinterlegt", "text": "Der Mindeststundenlohn von 13,22 € (Vaativuusryhmä 2) ist ebenso hinterlegt wie die zum 1.8.2026 greifende Erhöhung der Tabellenlöhne um 2,7 %." },
-      { "icon": "schedule", "title": "Feste Zuschläge &amp; Sonntagszuschlag automatisch gebucht", "text": "Klacks erkennt Einsätze im hinterlegten Nachtfenster automatisch und bucht den gesetzlichen Sonntagszuschlag (100 %) direkt &mdash; den festen TES-Nachtsatz (1,36 €/h) rechnet Klacks als Fixbetrag-Zuschlag pro Stunde gleich mit ab, auch bei geteilten Einsätzen. Einen zweiten, separaten Abendsatz (0,73 €/h) kennt Klacks nicht." },
+      { "icon": "payments", "title": "Mindestlohn: Stundenbasis", "text": "Den Mindeststundenlohn von 13,22 € (Vaativuusryhmä 2) und die zum 1.8.2026 greifende Erhöhung der Tabellenlöhne um 2,7 % rechnet Ihre Lohnbuchhaltung ab; Klacks liefert dafür die geleisteten Stunden." },
+      { "icon": "schedule", "title": "Sonntagszuschlag &amp; Nachtstunden", "text": "Klacks erkennt Einsätze im hinterlegten Nachtfenster automatisch und schreibt den gesetzlichen Sonntagszuschlag (100 %) als Zeitgutschrift gut &mdash; für den festen TES-Nachtsatz (1,36 €/h) und den Abendsatz (0,73 €/h) gibt es in Klacks keine Zeitgutschrift: Diese Geldbeträge rechnet Ihre Lohnbuchhaltung ab, Klacks liefert die Stunden dazu." },
       { "icon": "bedtime", "title": "Ruhezeit &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und behält den Ausgleich innerhalb der 14-Tage-Frist im Blick." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route, Team und Zuschläge." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Zentrum für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Abend-, Nacht- und Sonntagseinsatz, ein Plan",
-    "text": "Klacks erkennt Nachteinsätze automatisch, bucht den festen TES-Nachtsatz von 1,36 €/h als Fixbetrag-Zuschlag pro Stunde und rechnet Sonntagsarbeit mit dem gesetzlichen 100-%-Zuschlag automatisch ab &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt Nachteinsätze automatisch und weist die Stunden für Ihre Lohnbuchhaltung aus, die den festen TES-Nachtsatz von 1,36 €/h abrechnet, und schreibt Sonntagsarbeit mit dem gesetzlichen 100-%-Zuschlag automatisch als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen, Zuschläge und Mindestlohn übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen und die Stundenbasis für Zuschläge und Mindestlohn übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

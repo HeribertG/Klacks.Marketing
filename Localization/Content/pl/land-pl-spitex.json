@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Dla opieki domowej w Polsce",
     "titleHtml": "Więcej czasu na opiekę, <span class=\"text-secondary\">mniej na planowanie tras.</span>",
-    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; łącznie z prawidłowo rejestrowanym czasem dojazdu między klientami. Zainstalowany na własnym sprzęcie, dzięki czemu dane pacjentów nigdy nie opuszczają Twojej firmy.",
+    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; z możliwością ustawienia czasu dojazdu między klientami. Zainstalowany na własnym sprzęcie, dzięki czemu dane pacjentów nie muszą opuszczać Twojej firmy.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks do planowania tras w opiece domowej w Polsce",
     "screenshotLabel": "Oś czasu"
@@ -23,17 +23,17 @@
     "subtitle": "Od automatycznej trasy po solidną dokumentację &mdash; wszystko działa razem.",
     "items": [
       { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa trasy wizyt tak, by dojazdy były krótkie, a przedziały czasowe dotrzymane &mdash; dla samochodu czy pieszo." },
-      { "icon": "schedule", "title": "Czas dojazdu prawidłowo liczony jako czas pracy", "text": "Przejazdy między klientami są automatycznie liczone jako czas pracy &mdash; łącznie z wyjątkiem dotyczącym pierwszego przejazdu przy obowiązku stawiennictwa." },
-      { "icon": "fact_check", "title": "Dokumentacja na wypadek ryzyka przekwalifikowania", "text": "Klacks dokumentuje bez luk czas wizyt, miejsca i polecenia &mdash; pomocna podstawa, gdyby PIP w ramach odwróconego ciężaru dowodu badała formę umowy." },
+      { "icon": "schedule", "title": "Czas dojazdu możliwy do ujęcia jako czas pracy", "text": "Czas dojazdu między klientami można ustawić jako stały czas dojazdu dla każdej zmiany, a wtedy liczy się on jako czas pracy; Klacks nie zna obliczeń zależnych od trasy ani wyjątku dotyczącego pierwszego przejazdu przy obowiązku stawiennictwa." },
+      { "icon": "fact_check", "title": "Dokumentacja na wypadek ryzyka przekwalifikowania", "text": "Klacks dokumentuje bez luk czas wizyt i miejsca wykonywania pracy &mdash; pomocna podstawa, gdyby PIP w ramach odwróconego ciężaru dowodu badała formę umowy." },
       { "icon": "verified", "title": "Kwalifikacje uwzględniane automatycznie", "text": "Każda wizyta jest przydzielana wyłącznie osobom z odpowiednimi kwalifikacjami &mdash; całkowicie bez ręcznego sprawdzania." },
-      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: dane pozostają w firmie", "text": "Klacks działa na Twojej własnej infrastrukturze. Dane pacjentów nie opuszczają Twojej firmy &mdash; również nie trafiają do AI." },
+      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: dane pozostają w firmie", "text": "Klacks działa na Twojej własnej infrastrukturze. Dane pacjentów nie opuszczają Twojej firmy; model AI można na życzenie uruchomić lokalnie." },
       { "icon": "smart_toy", "title": "Klacksy rozumie Twoje zdanie", "text": "„Wypełnij trasy na jutro” wystarczy. W razie nieobecności Klacksy od razu proponuje dostępne zastępstwo." }
     ]
   },
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Czas dojazdu, forma umowy, jeden dowód",
-    "text": "Klacks zalicza zarejestrowany czas przejazdu między klientami do czasu pracy i dokumentuje bez luk miejsca oraz godziny wizyt &mdash; solidna podstawa, gdyby PIP badała formę umowy zlecenie."
+    "text": "Klacks zalicza ustawiony dla zmiany czas dojazdu między klientami do czasu pracy i dokumentuje bez luk miejsca oraz godziny wizyt &mdash; solidna podstawa, gdyby PIP badała formę umowy zlecenie."
   },
   "showRoutePlanning": true,
   "cta": {

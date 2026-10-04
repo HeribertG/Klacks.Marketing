@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Transport &amp; Logistik in Dänemark",
-    "titleHtml": "Touren, Nachtfenster, Tarifstufen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der Tageshöchstarbeitszeit, die Sie hinterlegen, im Blick und der zum 1. März 2026 steigenden Tarifstufe der Transport- og Logistikoverenskomst konfigurierbar hinterlegt.",
+    "titleHtml": "Touren, Nachtfenster, Arbeitszeiten &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
+    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der Tageshöchstarbeitszeit, die Sie hinterlegen, im Blick.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Dänemark",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die dänische Logistik entlastet",
-    "subtitle": "Von der optimierten Tour bis zur automatisch nachgeführten Tarifstufe &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur Stundenbasis für die Lohnbuchhaltung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "Neue Tarifstufe mit Gültigkeitsdatum hinterlegt",
-        "text": "Die Lohnerhöhung zum 1. März 2026 lässt sich mit Gültigkeitsdatum vorab hinterlegen; die auf 10% steigende Freizeitkonto-Sonderersparnis (fritvalgskonto) bleibt Sache Ihrer Lohnbuchhaltung, für die Klacks die Stundenbasis liefert."
+        "title": "Tarifstufe: Stundenbasis für die Lohnbuchhaltung",
+        "text": "Die Lohnerhöhung zum 1. März 2026 und die auf 10% steigende Freizeitkonto-Sonderersparnis (fritvalgskonto) rechnet Ihre Lohnbuchhaltung ab; Klacks liefert dafür die Stundenbasis."
       },
       {
         "icon": "badge",
@@ -56,8 +56,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Wochenruhe automatisch eingeplant",
-        "text": "Klacks plant die 35 zusammenhängenden Stunden wöchentlicher Ruhe automatisch mit ein, bevor der nächste Tourenplan steht."
+        "title": "Wochenruhe im Blick",
+        "text": "Klacks plant den freien Tag pro Woche mit ein, bevor der nächste Tourenplan steht; das 35-Stunden-Fridøgn als durchgehende Spanne prüft Klacks nicht."
       },
       {
         "icon": "smart_toy",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtfenster und Tarifstufe, ein Plan",
-    "text": "Klacks warnt vor einer Überschreitung der hinterlegten Tageshöchstarbeitszeit und wendet die zum 1. März 2026 steigende Tarifstufe an &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt vor einer Überschreitung der hinterlegten Tageshöchstarbeitszeit und liefert die Stundenbasis für die zum 1. März 2026 steigende Tarifstufe &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Nachtfenster und Tarifstufen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und Nachtfenster übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

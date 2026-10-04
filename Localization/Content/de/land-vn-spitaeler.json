@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Vietnam",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und kumuliert die Nacht-Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks überwacht das erweiterte 300-Stunden-Jahresüberstundenbudget für das Gesundheitswesen und kumuliert die Nacht-Überstundenzuschläge auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell, damit Patientendaten Ihr Haus nicht verlassen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -22,11 +22,11 @@
     "title": "Wie Klacks Krankenhäuser in Vietnam entlastet",
     "subtitle": "Von der 300-Stunden-Überwachung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "300-Stunden-Budget überwacht", "text": "Klacks verfolgt das erweiterte Jahreslimit pro Mitarbeiter und visualisiert die Ausschöpfung &mdash; inklusive der Voraussetzung einer schriftlichen Anzeige an die Arbeitsbehörde. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze stehen damit fertig berechnet in der Stundenbasis für Ihre Lohnabrechnung." },
-      { "icon": "schedule", "title": "12-Stunden-Schichtruhe überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde. Auf Wunsch blockiert Klacks den Verstoß hart &mdash; eine unzulässige Schichtfolge lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
-      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "gavel", "title": "300-Stunden-Budget überwacht", "text": "Klacks verfolgt das erweiterte Jahreslimit pro Mitarbeiter und visualisiert die Ausschöpfung &mdash; inklusive der Voraussetzung einer schriftlichen Anzeige an die Arbeitsbehörde. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "bedtime", "title": "Nacht- und Überstundensätze im Griff", "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze schreibt Klacks als Zeitzuschläge in Stunden gut und stellt sie für Ihre Lohnbuchhaltung bereit." },
+      { "icon": "schedule", "title": "12-Stunden-Schichtruhe überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung &mdash; pro Station, Abteilung und Funktion &mdash; und warnt bei abgelaufenen Nachweisen." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Mit lokalem KI-Modell verlassen Personal- und Patientendaten die Klinik nicht." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und das Jahresbudget." }
     ]
   },

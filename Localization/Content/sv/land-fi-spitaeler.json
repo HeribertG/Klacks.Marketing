@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "För sjukhus &amp; kliniker i Finland",
     "titleHtml": "Scheman som <span class=\"text-secondary\">går ihop dygnet runt.</span>",
-    "subtitle": "Klacks planerar avdelningar och rotationer i SOTE-sjukhusens periodarbete (jaksotyö) utan luckor &mdash; med korrekt trappad övertid, lediga dagar och veckovila. Installerat hos dig, så att patientdata aldrig lämnar ditt hus.",
+    "subtitle": "Klacks planerar avdelningar och rotationer i SOTE-sjukhusens periodarbete (jaksotyö) utan luckor &mdash; med trappade övertidstillägg, lediga dagar och veckovila. Installerat hos dig, så att patientdata inte behöver lämna ditt hus &mdash; på begäran med lokalt hostad AI-modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemarutnät för finländska sjukhus",
     "screenshotLabel": "Schema"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks finländska sjukhus",
-    "subtitle": "Från heltäckande 24/7-bemanning till korrekt trappad övertidsersättning &mdash; allt hänger ihop.",
+    "subtitle": "Från heltäckande 24/7-bemanning till trappade övertidstillägg &mdash; allt hänger ihop.",
     "items": [
       { "icon": "schedule", "title": "Heltäckande bemanning dygnet runt", "text": "Dag-, kvälls- och nattskift på alla avdelningar &mdash; Klacks visar varje lucka direkt och fyller den automatiskt om du vill." },
-      { "icon": "gavel", "title": "Övertid trappas automatiskt", "text": "Klacks beräknar de första 18 övertidstimmarna per 3-veckorsperiod med 50 % och varje ytterligare timme med 100 % &mdash; korrekt och utan efterräkning." },
+      { "icon": "gavel", "title": "Övertidstillägg trappade", "text": "Övertidstillägg trappar Klacks upp på dags- eller veckobasis som tidskrediter; periodarbetets trappa (de första 18 övertidstimmarna i en 3-veckorsperiod med 50 %, varje ytterligare med 100 %) återger Klacks inte." },
       { "icon": "event_available", "title": "Lediga dagar &amp; veckovila planeras automatiskt", "text": "Klacks planerar in de två lediga dagarna per vecka, uppmärksammar om möjligt två sammanhängande lediga dagar inom tre veckor och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14-dagarsperioden." },
       { "icon": "verified", "title": "Kompetenser &amp; avdelningar", "text": "Varje skift tilldelas endast personal med rätt kompetens &mdash; per avdelning, enhet och funktion." },
-      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; inte ens till AI:n." },
+      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; med lokalt hostad AI-modell inte heller till AI:n." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll medicinavdelningens nattskift nästa vecka” räcker &mdash; Klacksy startar planeringen, Klacks beaktar kompetens, lediga dagar och veckovila." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Rotation, lediga dagar och övertid, ett schema",
-    "text": "Klacks trappar övertidsersättningen korrekt (18 timmar med 50 %, därefter 100 %), planerar in de två lediga dagarna per vecka och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14 dagar &mdash; utan manuell efterräkning."
+    "text": "Klacks trappar övertidstillägg på dags- eller veckobasis (periodtrappan med 18 timmar med 50 %, därefter 100 %, återger Klacks inte), planerar in de två lediga dagarna per vecka och håller koll på den i genomsnitt 35 timmar långa veckovilan över 14 dagar &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {

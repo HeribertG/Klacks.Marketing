@@ -1,11 +1,11 @@
 {
   "pageTitle": "Instal Klacks: Installer Terpandu atau Docker Compose dengan Paket Negara | Klacks",
-  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan tunjangan negara Anda. Tanpa biaya lisensi, open source, tanpa registrasi.",
+  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan tunjangan negara Anda (sejauh didefinisikan untuk negara tersebut). Tanpa biaya lisensi, open source, tanpa registrasi.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalasi &middot; Tanpa biaya lisensi &amp; open source",
     "titleHtml": "Jalankan Klacks sendiri &mdash; <span class=\"text-secondary\">di infrastruktur Anda sendiri.</span>",
-    "subtitle": "Dua jalur, satu hasil: installer terpandu, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, tunjangan, dan prasetel industri negara Anda &mdash; tanpa registrasi, tanpa biaya lisensi."
+    "subtitle": "Dua jalur, satu hasil: installer terpandu, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (tunjangan, sejauh didefinisikan untuk negara tersebut) &mdash; tanpa registrasi, tanpa biaya lisensi."
   },
   "industry": {
     "eyebrow": "Paket negara",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Hanya profil &mdash; untuk instalasi yang sudah ada",
-    "text": "Sudah menjalankan Klacks? Profil (JSON) memuat prasetel negara &mdash; hari libur nasional, aturan jam kerja, tunjangan, dan industri &mdash; dan diterapkan saat pertama kali sebuah instalasi dijalankan. Ini juga cara untuk menambahkan industri lain beserta prasetelnya di kemudian hari.",
+    "text": "Sudah menjalankan Klacks? Profil (JSON) memuat prasetel negara &mdash; hari libur nasional, aturan jam kerja, tunjangan (sejauh didefinisikan untuk negara tersebut), dan industri &mdash; dan diterapkan saat pertama kali sebuah instalasi dijalankan. Ini juga cara untuk menambahkan industri lain beserta prasetelnya di kemudian hari.",
     "downloadLabel": "Unduh profil (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Perlu diketahui",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Seluruh kode sumber tersedia untuk publik di GitHub di bawah lisensi AGPL-3.0 &mdash; tanpa biaya lisensi, tanpa vendor lock-in." },
-      { "icon": "storage", "title": "Data tetap di tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan tidak pernah meninggalkan server Anda &mdash; tidak ada keharusan menggunakan cloud." },
+      { "icon": "storage", "title": "Data tetap di tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan berada di server Anda &mdash; tidak ada keharusan menggunakan cloud. Permintaan hanya dikirim ke penyedia AI eksternal jika Anda memilihnya; dengan model lokal, semuanya tetap di tempat Anda." },
       { "icon": "update", "title": "Pembaruan", "text": "Instalasi mengunci versi rilis terbaru. Layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis." },
       { "icon": "lock", "title": "HTTPS sejak awal", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama." }
     ]

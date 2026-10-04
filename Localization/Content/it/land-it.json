@@ -4,7 +4,7 @@
     "badgeIcon": "balance",
     "badge": "Open Source · Senza diritti di licenza · Protezione dei dati italiana",
     "titleHtml": "Pianificazione del personale, in cui <span class=\"text-secondary\">è Lei a mantenere il controllo.</span>",
-    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i percorsi e si lascia guidare da un assistente IA &mdash; installato presso la Sua sede, Open Source, con il modello IA di Sua scelta. La pianificazione lavora in modo basato su regole e verificabile anziché con un controllo algoritmico a distanza non trasparente &mdash; il che facilita l'accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro richiesti dall'Art. 4 dello Statuto dei Lavoratori (Legge n. 300/1970).",
+    "subtitle": "Klacks pianifica i turni in automatico, ottimizza i percorsi e si lascia guidare da un assistente IA &mdash; installato presso la Sua sede, Open Source, su richiesta con un modello IA locale. La pianificazione lavora in modo basato su regole e verificabile anziché con un controllo algoritmico a distanza non trasparente &mdash; il che facilita l'accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro richiesti dall'Art. 4 dello Statuto dei Lavoratori (Legge n. 300/1970).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Panoramica del piano turni Klacks per le aziende in Italia",
     "screenshotLabel": "Piano turni"
@@ -36,24 +36,24 @@
     "subtitle": "Dalla pianificazione automatica dei turni alla propria infrastruttura &mdash; tutto sotto il Suo controllo.",
     "items": [
       { "icon": "auto_awesome", "title": "Turni pianificati automaticamente", "text": "L'Autofill Wizard pianifica turni e percorsi in base a qualifica, disponibilità e preferenze &mdash; in pochi minuti anziché ore." },
-      { "icon": "gavel", "title": "Regole su orario di lavoro e riposo verificate automaticamente", "text": "L'orario normale, l'orario massimo e il riposo di almeno 11 ore tra due turni vengono monitorati in tempo reale in base al CCNL configurato (D.Lgs. 66/2003, Art. 7 &amp; 9). Su richiesta, Klacks blocca rigorosamente le violazioni di questi limiti: in modalità blocco, una nuova violazione può essere salvata solo con un'autorizzazione documentata del superiore (configurabile per ogni tipo di regola)." },
+      { "icon": "gavel", "title": "Regole su orario di lavoro e riposo verificate automaticamente", "text": "L'orario normale, l'orario massimo e il riposo di almeno 11 ore tra due turni vengono monitorati in tempo reale in base al CCNL configurato (D.Lgs. 66/2003, Art. 7 &amp; 9). Su richiesta, Klacks blocca le violazioni di questi limiti nei percorsi di pianificazione automatica (ad es. Wizard, proposte, sostituzione) in modalità blocco (configurabile per ogni tipo di regola); nella pianificazione manuale Klacks avvisa." },
       { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Dove gli interventi si svolgono in luoghi diversi, Klacks stabilisce l'ordine in modo che i percorsi restino brevi e le fasce orarie vengano rispettate." },
-      { "icon": "shield_lock", "title": "Installato sui Suoi locali: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale non lasciano la Sua azienda &mdash; nemmeno verso l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
-      { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; può vedere esattamente cosa fa Klacks, creando così la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." },
+      { "icon": "shield_lock", "title": "Installato sui Suoi locali: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale restano nella Sua azienda &mdash; con un modello IA ospitato localmente anche per quanto riguarda l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
+      { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; può vedere esattamente cosa fa Klacks, creando così una base per la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." },
       { "icon": "science", "title": "Testare le modifiche al piano senza rischi", "text": "Prima che una modifica al piano diventi operativa, può provarla come copia isolata &mdash; il riposo giornaliero di 11 ore e i supplementi vengono calcolati in tempo reale, esattamente come nel piano reale. Solo quando tutto corrisponde, applica la variante; fino ad allora il Suo piano turni in corso resta invariato. In questo modo prepara in anticipo uno scenario adatto a situazioni prevedibili &mdash; ad esempio un'assenza per malattia o un picco di lavoro &mdash; ed è subito operativo in caso di necessità, invece di improvvisare sotto pressione. Non esiste inoltre alcun limite artificiale &mdash; può creare tutti gli scenari di cui ha bisogno per la Sua pianificazione." }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistente IA",
     "title": "Klacksy: l'assistente integrato con scelta libera del modello",
-    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks e può essere gestito con il modello IA di Sua scelta &mdash; anche ospitato localmente. Un sistema di competenze e regole predefinito garantisce che ogni proposta resti verificabile: nessun controllo algoritmico a distanza non trasparente ai sensi dell'Art. 4 dello Statuto dei Lavoratori, ma una pianificazione basata su regole e spiegabile.",
+    "text": "Klacksy non è un chatbot di marketing sovrapposto, ma è integrato direttamente nell'interfaccia di Klacks e può essere gestito con il modello IA di Sua scelta &mdash; anche ospitato localmente. Un sistema di competenze e regole predefinito aiuta a mantenere verificabile ogni proposta: una pianificazione basata su regole e spiegabile anziché un controllo algoritmico a distanza non trasparente.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistente chat Klacksy nell'interfaccia Klacks"
   },
   "example": {
     "eyebrow": "Concretamente",
     "title": "Un piano turni, più contratti collettivi sotto controllo",
-    "text": "Un'azienda con CCNL diversi per i vari team pianifica i turni, Klacks verifica automaticamente l'orario normale applicabile e il riposo giornaliero di 11 ore &mdash; in modo verificabile per RSU/RSA e senza che i dati del personale lascino l'azienda."
+    "text": "Un'azienda con CCNL diversi per i vari team pianifica i turni, Klacks verifica automaticamente l'orario normale applicabile e il riposo giornaliero di 11 ore &mdash; in modo verificabile per RSU/RSA e con i dati del personale in azienda."
   },
   "showRoutePlanning": false,
   "cta": {

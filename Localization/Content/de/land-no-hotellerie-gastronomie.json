@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
-    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">AML-sicher geplant.</span>",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">nach AML geplant.</span>",
     "subtitle": "Klacks plant Service, Küche und Etage nach dem norwegischen Arbeitsumweltgesetz (AML) &mdash; mit 9 Stunden Tages- und 40 Stunden Wochenhöchstarbeitszeit, dem Nachtzeitfenster von 21 bis 6 Uhr und freien Folgesonntagen nach Sonntagsdiensten.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie",
@@ -37,12 +37,12 @@
       {
         "icon": "splitscreen",
         "title": "Geteilte Dienste sauber geplant",
-        "text": "Klacks plant Mittags- und Abendblöcke so, dass die gesetzlichen Höchstzeiten von 9 Stunden pro Tag und 40 Stunden pro Woche (AML § 10-4) eingehalten werden &mdash; jede Überschreitung wird sofort sichtbar gemacht."
+        "text": "Klacks plant Mittags- und Abendblöcke so, dass die gesetzlichen Höchstzeiten von 9 Stunden pro Tag und 40 Stunden pro Woche (AML § 10-4) im Blick bleiben &mdash; jede Überschreitung wird sofort sichtbar gemacht."
       },
       {
         "icon": "timer",
         "title": "Ruhezeiten im Blick",
-        "text": "Die tägliche Ruhezeit von 11 Stunden wird in Echtzeit überwacht &mdash; tariflich zulässige Verkürzungen auf 8 Stunden mit Kompensation lassen sich als Regel hinterlegen. Verstöße werden sofort sichtbar; auf Wunsch blockiert Klacks sie konsequent."
+        "text": "Die tägliche Ruhezeit von 11 Stunden wird in Echtzeit überwacht &mdash; tariflich zulässige Verkürzungen auf 8 Stunden mit Kompensation lassen sich als Regel hinterlegen. Verstöße werden sofort sichtbar; auf Wunsch blockiert Klacks sie in der automatischen Planung."
       },
       {
         "icon": "event_available",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Nacht-, Sonn- und Feiertags-Zuschläge rechnet Klacks automatisch aus &mdash; pro Land und Regelwerk konfigurierbar, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zeitzuschläge automatisch",
+        "text": "Nacht-, Sonn- und Feiertags-Zuschläge schreibt Klacks automatisch als Zeitgutschrift gut &mdash; pro Land und Regelwerk konfigurierbar, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
       },
       {
         "icon": "smart_toy",

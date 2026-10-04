@@ -4,7 +4,7 @@
     "badgeIcon": "gavel",
     "badge": "Avoin lähdekoodi &middot; Ilman lisenssimaksuja &middot; Työaikalaki 872/2019",
     "titleHtml": "Jaksotyön suunnittelu <span class=\"text-secondary\">ilman että yleiskuva katoaa.</span>",
-    "subtitle": "Klacks suunnittelee vuorot automaattisesti suomalaisen jaksotyön sääntöjen mukaan &mdash; mukaan lukien lepoajat, työvuoroluettelovelvollisuus ja alanne työehtosopimukseen (TES) sopiva lisä. Asennettuna omiin tiloihinne, valitsemallanne tekoälymallilla.",
+    "subtitle": "Klacks suunnittelee vuorot automaattisesti suomalaisen jaksotyön sääntöjen mukaan &mdash; mukaan lukien lepoajat, työvuoroluettelovelvollisuus ja aikalisät, jotka tallennatte alanne ja työehtosopimuksenne (TES) mukaisesti. Asennettuna omiin tiloihinne, valitsemallanne tekoälymallilla.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksin työvuoroluettelon yleiskuva suomalaisille yrityksille",
     "screenshotLabel": "Työvuoroluettelo"
@@ -61,7 +61,7 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Jaksotyö &amp; ylityöt lasketaan automaattisesti",
+        "title": "Jaksotyö &amp; ylityöt näkyvissä",
         "text": "Ylityölisät Klacks porrastaa päivä- tai viikkokohtaisesti enintään kolmeen portaaseen, esimerkiksi 50 % ja 100 %; jaksotyön porrastusta (3 tai 2 viikon jakson ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava 100 %:lla) Klacks ei tue. Samalla Klacks valvoo työaikalain kokonaisrajaa: vuodesta 2020 lähtien kiinteää ylityökiintiötä ei enää ole &mdash; ratkaisevaa on enintään 48 tunnin viikkokeskiarvo ylityöt mukaan lukien neljän kuukauden tasoittumisjakson aikana, ja juuri sitä Klacks laskee rullaavasti."
       },
       {
@@ -76,8 +76,8 @@
       },
       {
         "icon": "paid",
-        "title": "Sunnuntailisä kirjataan oikein",
-        "text": "Sunnuntai- ja kirkollisina juhlapäivinä tehdystä työstä Klacks kirjaa automaattisesti lakisääteisen 100 %:n lisän (20 §) &mdash; jos samaan aikaan kertyy ylityötä, ylityökorvaus lisätään mukaan."
+        "title": "Sunnuntailisä aikahyvityksenä",
+        "text": "Sunnuntai- ja kirkollisina juhlapäivinä tehdystä työstä Klacks kirjaa automaattisesti lakisääteisen 100 %:n lisän (20 §) aikahyvityksenä &mdash; jos samaan aikaan kertyy ylityötä, ylityölisä lisätään mukaan. Itse korvauksen laskee palkanlaskentanne."
       },
       {
         "icon": "shield_lock",
@@ -105,8 +105,8 @@
   },
   "example": {
     "eyebrow": "Käytännössä",
-    "title": "3 viikon jakso, laskutettuna oikein",
-    "text": "Klacks laskee määritetyt ylityöportaat päivä- tai viikkokohtaisesti automaattisesti ja seuraa 48 tunnin keskiarvoa rullaavasti &mdash; ilman käsin laskemista. Porrastusta 120 tunnin jälkeen 3 viikon jaksossa Klacks ei tue."
+    "title": "3 viikon jakso näkyvissä",
+    "text": "Klacks kirjaa määritetyt ylityöportaat päivä- tai viikkokohtaisesti automaattisesti aikahyvityksenä ja seuraa 48 tunnin keskiarvoa rullaavasti &mdash; ilman käsin laskemista. Porrastusta 120 tunnin jälkeen 3 viikon jaksossa Klacks ei tue."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "shield",
     "badge": "For security firms, hospitals &amp; staffing agencies in Israel",
     "titleHtml": "Scheduling built for <span class=\"text-secondary\">a volatile reality.</span>",
-    "subtitle": "Reserve call-ups (Miluim) and Shabbat restrictions create planning gaps no generic scheduler is built for. Klacks combines instant, compliant replacement planning with autofill that keeps the free day per week you configure; it does not check the continuous Shabbat rest itself.",
+    "subtitle": "Reserve call-ups (Miluim) and Shabbat restrictions create planning gaps no generic scheduler is built for. Klacks combines instant replacement planning against your configured rules with autofill that keeps the free day per week you configure; it does not check the continuous Shabbat rest itself.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks shift schedule grid",
     "screenshotLabel": "Schedule",
@@ -72,8 +72,8 @@
       },
       {
         "icon": "payments",
-        "title": "Rest-day premiums calculated correctly",
-        "text": "Klacks' typed surcharge engine applies the combined overtime + rest-day premium so payroll gets accurate figures, not manual guesswork."
+        "title": "Rest-day premiums credited as time",
+        "text": "Klacks' typed surcharge engine credits the combined overtime and rest-day premiums as time credits in hours, so your payroll system receives clean hours instead of manual guesswork &mdash; the money amounts are calculated there."
       },
       {
         "icon": "event",
@@ -102,7 +102,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "A reservist is called up mid-cycle",
-    "text": "Klacks locks the reservist's slot, surfaces the best compliant replacement from the pool, and leaves the rest of the roster untouched &mdash; no manual re-planning."
+    "text": "Klacks locks the reservist's slot, surfaces the best qualified replacement from the pool, and leaves the rest of the roster untouched &mdash; no manual re-planning."
   },
   "showRoutePlanning": false,
   "cta": {

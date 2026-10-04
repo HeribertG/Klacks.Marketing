@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Für die Thuiszorg &amp; ambulante Pflege in den Niederlanden",
-    "titleHtml": "Jede ORT-Zuschlagsstufe <span class=\"text-secondary\">automatisch richtig.</span>",
-    "subtitle": "Klacks berechnet die Onregelmatigheidstoeslag (ORT) der CAO VVT automatisch nach Zeitfenster und bildet die neue €25-Tagesvergütung ab 1.1.2026 als Zuschlag ab &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "titleHtml": "Jede ORT-Zuschlagsstufe <span class=\"text-secondary\">im Blick.</span>",
+    "subtitle": "Klacks schreibt die hinterlegte Onregelmatigheidstoeslag (ORT) der CAO VVT nach Zeitfenster als Zeitgutschrift gut &mdash; bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben (auf Wunsch mit lokalem KI-Modell).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der niederländischen Thuiszorg",
     "screenshotLabel": "Timeline"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Wie Klacks die niederländische Thuiszorg entlastet",
-    "subtitle": "Von der automatischen ORT-Berechnung bis zur optimierten Tour &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen ORT-Zuordnung bis zur optimierten Tour &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "ORT automatisch nach Zeitfenster berechnet", "text": "Klacks kennt alle fünf ORT-Stufen der CAO VVT &mdash; 22%, 47%, 38%, 52% und 60% &mdash; und ordnet jeden Dienst automatisch der richtigen Stufe zu." },
-      { "icon": "paid", "title": "€25-Tagesvergütung als Zuschlag hinterlegt", "text": "Klacks bildet die neue €25-Vergütung als konfigurierbaren Tageszuschlag ab und macht sichtbar, wo Nullstunden- oder Regieverträge ausgenommen sind." },
-      { "icon": "event_available", "title": "Oproepkrachten korrekt geplant", "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist gewahrt ist und eine Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch." },
+      { "icon": "schedule", "title": "ORT automatisch nach Zeitfenster zugeordnet", "text": "Die fünf ORT-Stufen der CAO VVT &mdash; 22%, 47%, 38%, 52% und 60% &mdash; hinterlegen Sie als Zuschlagsregeln mit Zeitfenster; Klacks ordnet jeden Dienst automatisch der passenden Stufe zu und schreibt sie als Zeitgutschrift gut." },
+      { "icon": "paid", "title": "Zusätzlicher Arbeitstag sichtbar", "text": "Die €25-Tagesvergütung ist ein Fixbetrag in Euro und wird nicht in Klacks berechnet; Klacks liefert die geplanten und geleisteten Arbeitstage und Stunden als Grundlage für Ihre Lohnbuchhaltung." },
+      { "icon": "event_available", "title": "Oproepkrachten geplant", "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist gewahrt ist und eine Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtdienst, ORT, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn ein Nachtdienst am Wochenende die 52%-ORT-Stufe auslöst, und bildet die neue €25-Tagesvergütung als Zuschlag für den zusätzlichen Arbeitstag mit ab &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn ein Nachtdienst am Wochenende die 52%-ORT-Stufe auslöst, und schreibt die Stunden als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand; die €25-Tagesvergütung rechnet Ihre Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Thuiszorg-Organisation erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks ORT-Zuschläge, die €25-Vergütung und Touren übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks ORT-Zuschläge und Touren übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -23,17 +23,17 @@
     "subtitle": "Von der optimierten Tour bis zum Sommer-Mittagsverbot &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "timer", "title": "Arbeitszeitgrenzen geprüft", "text": "Die 9-, 56- und 90-Stunden-Werte lassen sich als Höchstarbeitszeit je Tag, Woche und zwei Wochen hinterlegen und werden in Echtzeit überwacht &mdash; Klacks prüft dabei die Arbeitszeit, nicht die Lenkzeit, und warnt, bevor eine Grenze überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
+      { "icon": "timer", "title": "Arbeitszeitgrenzen geprüft", "text": "Die 9-, 56- und 90-Stunden-Werte lassen sich als Höchstarbeitszeit je Tag, Woche und zwei Wochen hinterlegen und werden in Echtzeit überwacht &mdash; Klacks prüft dabei die Arbeitszeit, nicht die Lenkzeit, und warnt, bevor eine Grenze überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "pause_circle", "title": "Ruhezeiten geprüft, Pausen als Block", "text": "Klacks prüft die 11-Stunden-Tagesruhe und die 48-Stunden-Wochenruhe, die Sie hinterlegen; die 45-Minuten-Pause nach 4,5 Stunden Fahrt lässt sich als Block in der Tour einplanen, wird aber nicht gegen die Pausenpflicht geprüft." },
-      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot an Rampen berücksichtigt", "text": "Klacks taktet Be- und Entladung an unüberdachten Rampen so, dass das Fenster von 12:00 bis 15:00 Uhr (15. Juni bis 15. September) frei bleibt." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis hat." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot an Rampen als Sperrzeit", "text": "Ist das Fenster von 12:00 bis 15:00 Uhr (15. Juni bis 15. September) als Sperrzeit hinterlegt, macht Klacks Einsätze darin sichtbar, und auf Wunsch legt die automatische Planung keine Be- und Entladung an unüberdachten Rampen hinein." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Nachweis hat." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen und das als Sperrzeit hinterlegte Sommer-Mittagsverbot." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Ruhezeit und Sommer-Mittagsverbot, ein Plan",
-    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen und taktet Verladezeiten an unüberdachten Rampen so, dass das Sommer-Mittagsverbot (12:00 bis 15:00 Uhr, 15. Juni bis 15. September) eingehalten wird."
+    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen und macht Einsätze im als Sperrzeit hinterlegten Sommer-Mittagsverbot (12:00 bis 15:00 Uhr, 15. Juni bis 15. September) sofort sichtbar, damit Verladezeiten an unüberdachten Rampen außerhalb des Fensters liegen."
   },
   "showRoutePlanning": true,
   "cta": {

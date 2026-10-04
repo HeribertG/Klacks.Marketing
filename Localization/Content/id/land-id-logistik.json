@@ -37,7 +37,7 @@
       {
         "icon": "timer",
         "title": "Batas waktu kerja 8 jam dipantau",
-        "text": "Klacks memeriksa batas jam kerja harian 8 jam dari UU 22/2009 Pasal 90 yang Anda tetapkan, dan memberi peringatan sebelum sebuah rute melampaui batas yang diatur undang-undang. Atas permintaan, Klacks memblokir pelanggaran ini secara ketat &mdash; pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi."
+        "text": "Klacks memeriksa batas jam kerja harian 8 jam dari UU 22/2009 Pasal 90 yang Anda tetapkan, dan memberi peringatan sebelum sebuah rute melampaui batas yang diatur undang-undang. Atas permintaan, mode blokir dapat diaktifkan untuk mencegah pelanggaran baru pada jalur perencanaan otomatis (perencana otomatis, usulan, pencarian pengganti); pada perencanaan manual tetap berupa peringatan."
       },
       {
         "icon": "pause_circle",
@@ -47,7 +47,7 @@
       {
         "icon": "badge",
         "title": "Golongan SIM yang sesuai",
-        "text": "Klacks hanya menugaskan rute kepada pengemudi dengan izin yang sesuai &mdash; dan memberi peringatan sebelum bukti izin kedaluwarsa. Atas permintaan, Klacks memblokir penugasan kepada pengemudi dengan bukti izin wajib yang telah kedaluwarsa sepenuhnya &mdash; hanya pengemudi dengan bukti izin yang masih berlaku yang akan dijadwalkan."
+        "text": "Klacks memperhitungkan izin pengemudi saat penugasan rute &mdash; dan memberi peringatan sebelum bukti izin kedaluwarsa. Jika bukti wajib tidak ada atau telah kedaluwarsa, Klacks menolak penugasan, termasuk pada penugasan manual."
       },
       {
         "icon": "shield_lock",

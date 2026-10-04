@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "For sikkerhetstjenester",
     "titleHtml": "Hver post bemannet. <span class=\"text-secondary\">Hvert sertifikat dokumentert.</span>",
-    "subtitle": "Klacks bemanner objekter og runder uten hull &mdash; kun med gyldige sertifikater og på optimerte ruter. Installert hos deg, slik at oppdrags- og kundedata blir hos deg.",
+    "subtitle": "Klacks planlegger objekter og runder uten hull &mdash; med kontroll av gyldige sertifikater og på optimerte ruter. Installert hos deg, slik at oppdrags- og kundedata blir hos deg.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for runder og objektbemanning",
     "screenshotLabel": "Tidslinje",
@@ -24,7 +24,7 @@
     "subtitle": "Fra den bemannede posten til den optimerte runden &mdash; alt spiller sammen.",
     "items": [
       { "icon": "shield", "title": "Objekter &amp; poster uten hull", "text": "Hver post på tvers av alle objekter &mdash; Klacks viser hver åpne stilling umiddelbart og fyller den automatisk på forespørsel." },
-      { "icon": "verified", "title": "Sertifikater kontrolleres automatisk", "text": "Klacks tildeler oppdrag bare til personell med gyldig legitimasjon &mdash; og varsler før et sertifikat utløper." },
+      { "icon": "verified", "title": "Sertifikater kontrolleres automatisk", "text": "Klacks kontrollerer legitimasjonen ved hver tildeling &mdash; og varsler før et sertifikat utløper." },
       { "icon": "route", "title": "Runder optimert", "text": "Ved mobile tjenester legger Klacks patruljeruter slik at veier blir korte og intervaller overholdes." },
       { "icon": "schedule", "title": "Døgnrotasjon", "text": "Dag-, natt- og helgevakter rotert rettferdig &mdash; med tillegg og hviletid automatisk hensyntatt." },
       { "icon": "smart_toy", "title": "Klacksy forstår setningen din", "text": "«Bemann nattevakten for objekt Nord» er nok &mdash; Klacksy starter planleggingen, Klacks sjekker sertifikater og tilgjengelighet." },

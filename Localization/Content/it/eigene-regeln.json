@@ -32,8 +32,8 @@
     "subtitle": "Ogni parametro con significato e impatto sulla pianificazione &mdash; ecco le aree tematiche.",
     "items": [
       { "icon": "schedule", "title": "Base dell'orario di lavoro", "text": "Ore normali giornaliere e ore settimanali di un impiego al 100% &mdash; il riferimento per le percentuali part-time e il calcolo delle ore obiettivo." },
-      { "icon": "speed", "title": "Limiti massimi", "text": "Ore massime al giorno e alla settimana &mdash; il pianificatore rifiuta i turni che li superano." },
-      { "icon": "calendar_month", "title": "Giorni consecutivi &amp; di riposo", "text": "Quanti giorni lavorativi consecutivi sono consentiti e quanti giorni di riposo sono garantiti per finestra di pianificazione." },
+      { "icon": "speed", "title": "Limiti massimi", "text": "Ore massime al giorno e alla settimana &mdash; il pianificatore verifica i turni rispetto a questi limiti e avvisa quando vengono superati." },
+      { "icon": "calendar_month", "title": "Giorni consecutivi &amp; di riposo", "text": "Quanti giorni lavorativi consecutivi sono consentiti e quanti giorni di riposo sono previsti per finestra di pianificazione." },
       { "icon": "bedtime", "title": "Riposi &amp; maggiorazione notturna", "text": "Pausa minima tra due turni e inizio, fine e aliquota della maggiorazione notturna." },
       { "icon": "more_time", "title": "Straordinario", "text": "Da quante ore il tempo lavorato conta come straordinario &mdash; cumulato al giorno o alla settimana." },
       { "icon": "beach_access", "title": "Festivi &amp; vacanze", "text": "Aliquota di maggiorazione per il lavoro nei giorni festivi e ferie annuali per i collaboratori su questa regola." }

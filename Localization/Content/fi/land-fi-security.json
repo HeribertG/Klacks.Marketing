@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Suomen vartiointialalle",
-    "titleHtml": "Jokainen vartiopaikka miehitetty. <span class=\"text-secondary\">Jokainen yö oikein suunniteltu.</span>",
-    "subtitle": "Klacks miehittää kohteet ja kierrokset vartiointialan jaksotyössä aukottomasti &mdash; yötyön rajat ja Vartiointialan TES:n 1.9.2026 voimaan tulevan korotuksen huomioiden automaattisesti.",
+    "titleHtml": "Jokainen vartiopaikka miehitetty. <span class=\"text-secondary\">Jokainen yö hallinnassa.</span>",
+    "subtitle": "Klacks miehittää kohteet ja kierrokset vartiointialan jaksotyössä aukottomasti &mdash; yötyön rajat automaattisesti näkyvissä; Vartiointialan TES:n 1.9.2026 voimaan tulevan korotuksen laskee palkanlaskentanne.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacksin aikajana-näkymä kierroksille ja kohteiden miehitykselle Suomessa",
     "screenshotLabel": "Aikajana"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Miten Klacks helpottaa suomalaisten vartiointiyritysten arkea",
-    "subtitle": "Miehitetystä vartiopaikasta ajallaan voimaan tulevaan TES-korotukseen &mdash; kaikki toimii yhdessä.",
+    "subtitle": "Miehitetystä vartiopaikasta TES-korotuksen tuntipohjaan &mdash; kaikki toimii yhdessä.",
     "items": [
       { "icon": "shield", "title": "Kohteet ja vartiopaikat aukottomasti", "text": "Jokainen vartiopaikka kaikissa kohteissa &mdash; Klacks näyttää jokaisen avoimen paikan heti ja täyttää sen halutessanne automaattisesti." },
-      { "icon": "gavel", "title": "Jaksotyö lasketaan automaattisesti", "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee porrastetun ylityökorvauksen: ensimmäiset 18 ylityötuntia 50 %:lla, sen jälkeen 100 %:lla." },
-      { "icon": "bedtime", "title": "Yötyön rajoja noudatetaan automaattisesti", "text": "Klacks valvoo kuormittavan yötyön 8 tunnin rajaa ja enintään 5 peräkkäistä yövuoroa &mdash; mukaan lukien sitä seuraavan lepoajan." },
-      { "icon": "paid", "title": "Sunnuntailisä ja TES-korotus 2026 valmiina", "text": "Lakisääteinen 100 %:n lisä sunnuntai- ja pyhäpäivätyöstä (20 §) on tallennettu, samoin 1.9.2026 voimaan tuleva palkkojen ja aikalisien 2,5 %:n korotus." },
+      { "icon": "gavel", "title": "Jaksotyö näkyvissä", "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa; ylityölisät Klacks porrastaa päivä- tai viikkokohtaisesti aikahyvityksinä &mdash; jaksotyön porrastusta (ensimmäiset 18 ylityötuntia 50 %:lla, sen jälkeen 100 %:lla) Klacks ei tue." },
+      { "icon": "bedtime", "title": "Yötyön rajoja valvotaan automaattisesti", "text": "Klacks valvoo kuormittavan yötyön 8 tunnin rajaa ja enintään 5 peräkkäistä yövuoroa &mdash; mukaan lukien sitä seuraavan lepoajan." },
+      { "icon": "paid", "title": "Sunnuntailisä ja TES-korotus 2026", "text": "Lakisääteinen 100 %:n lisä sunnuntai- ja pyhäpäivätyöstä (20 §) voidaan tallentaa aikahyvitykseksi; 1.9.2026 voimaan tulevan palkkojen ja lisien 2,5 %:n korotuksen laskee palkanlaskentanne." },
       { "icon": "route", "title": "Kierrokset optimoitu", "text": "Liikkuvissa palveluissa Klacks suunnittelee partiointireitit niin, että matkat pysyvät lyhyinä ja välit pitävät." },
       { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Miehitä kohteen Pohjoinen yövuoro” riittää &mdash; Klacksy käynnistää suunnittelun, Klacks tarkistaa saatavuuden, jaksotunnit ja yötyön rajat." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Käytännössä",
     "title": "Yökohde, jaksotunnit, yksi suunnitelma",
-    "text": "Klacks pitää jatkuvissa yökohteissa 8 tunnin rajan ja enintään 5 peräkkäistä yövuoroa hallinnassa, laskee jaksotunnit oikein ja kirjaa sunnuntailisän automaattisesti &mdash; valmiina 1.9.2026 voimaan tulevaan TES-korotukseen."
+    "text": "Klacks pitää jatkuvissa yökohteissa 8 tunnin rajan ja enintään 5 peräkkäistä yövuoroa hallinnassa, laskee jaksotunnit yhteen ja kirjaa sunnuntailisän automaattisesti aikahyvityksenä &mdash; tuntipohjan 1.9.2026 voimaan tulevaan TES-korotukseen Klacks toimittaa palkanlaskentaanne."
   },
   "showRoutePlanning": true,
   "cta": {

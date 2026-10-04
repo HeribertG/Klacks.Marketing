@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken (szpitale) in Polen",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Dyżury lückenlos &mdash; mit der medizinischen 7h35-Sondernorm und den Ruhezeiten nach Kodeks pracy im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Dyżury lückenlos &mdash; mit der medizinischen 7h35-Sondernorm und den Ruhezeiten nach Kodeks pracy im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Polen",
     "screenshotLabel": "Dienstplan"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "e911_emergency",
-        "title": "Dyżur medyczny korrekt eingeplant",
-        "text": "Bereitschaftsdienste bis 24 Stunden werden geplant, inklusive der zwingenden 11-Stunden-Ruhezeit direkt danach."
+        "title": "Dyżur medyczny im Plan",
+        "text": "Dienste bis 24 Stunden werden geplant, und Klacks prüft die zwingende 11-Stunden-Ruhezeit direkt danach."
       },
       {
         "icon": "bedtime",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Dyżur, Ruhezeit, zwei Normen",
-    "text": "Nach einem 24-Stunden-Dyżur plant Klacks automatisch die 11-Stunden-Ruhezeit ein und hält gleichzeitig die 7h35-Norm für das übrige medizinische Personal ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Nach einem 24-Stunden-Dyżur prüft Klacks die 11-Stunden-Ruhezeit und warnt bei Unterschreitung; gleichzeitig führt es die 7h35-Norm für das übrige medizinische Personal mit &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

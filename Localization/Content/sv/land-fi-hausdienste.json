@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "För fastighets- &amp; städtjänster (siivous) i Finland",
-    "titleHtml": "Varje objekt <span class=\"text-secondary\">korrekt fakturerat.</span>",
-    "subtitle": "Klacks fördelar objekt och städteam effektivt &mdash; med minimitimlönen och skifttilläggen enligt Fastighetsservicebranschens kollektivavtal (Kiinteistöpalvelualan TES) samt höjningen från 1.8.2026 automatiskt inlagda.",
+    "titleHtml": "Varje objekt <span class=\"text-secondary\">korrekt inplanerat.</span>",
+    "subtitle": "Klacks fördelar objekt och städteam effektivt &mdash; och levererar timmarna inklusive tidstillägg till din lönehantering, som räknar av minimitimlönen, skifttilläggen och höjningen från 1.8.2026 enligt Fastighetsservicebranschens kollektivavtal (Kiinteistöpalvelualan TES).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemarutnät för finländska städteam och objekt",
     "screenshotLabel": "Schema"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks finländska städtjänster",
-    "subtitle": "Från den optimerade rutten till den korrekt inlagda minimilönen &mdash; allt hänger ihop.",
+    "subtitle": "Från den optimerade rutten till timunderlaget för lönehanteringen &mdash; allt hänger ihop.",
     "items": [
       { "icon": "route", "title": "Objektrutter optimerade", "text": "Klacks lägger ordningen på objekten så att vägarna blir korta &mdash; för bil, cykel eller till fots." },
-      { "icon": "payments", "title": "Minimilön &amp; kollektivavtalshöjning inlagda", "text": "Minimitimlönen på 13,22 € (svårighetsgrupp 2) är inlagd, liksom höjningen av tabellönerna med 2,7 % som gäller från 1.8.2026." },
-      { "icon": "schedule", "title": "Fasta tillägg &amp; söndagstillägg bokförs automatiskt", "text": "Klacks känner automatiskt igen insatser i det inlagda nattfönstret och bokför det lagstadgade söndagstillägget (100 %) direkt &mdash; den fasta TES-nattsatsen (1,36 €/h) räknar Klacks samtidigt av som fast tillägg per timme, även vid delade arbetspass. En andra, separat kvällssats (0,73 €/h) känner Klacks inte till." },
+      { "icon": "payments", "title": "Minimilön: timunderlag", "text": "Minimitimlönen på 13,22 € (svårighetsgrupp 2) och höjningen av tabellönerna med 2,7 % som gäller från 1.8.2026 räknar din lönehantering av; Klacks levererar de utförda timmarna till den." },
+      { "icon": "schedule", "title": "Söndagstillägg &amp; nattimmar", "text": "Klacks känner automatiskt igen insatser i det inlagda nattfönstret och skriver gott det lagstadgade söndagstillägget (100 %) som tidskredit &mdash; för TES:ens fasta nattsats (1,36 €/h) och kvällssats (0,73 €/h) finns ingen tidskredit i Klacks: de penningbeloppen räknar din lönehantering av, Klacks levererar timmarna till den." },
       { "icon": "bedtime", "title": "Vilotid &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på kompensationen inom 14-dagarsfristen." },
       { "icon": "verified", "title": "Rätt kompetens", "text": "Specialstädning, maskiner, säkerhetsområden: endast personal med rätt kompetens tilldelas." },
-      { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Planera objekten i centrum för i morgon bitti” räcker &mdash; Klacksy startar planeringen, Klacks optimerar rutt, team och tillägg." }
+      { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Planera objekten i centrum för i morgon bitti” räcker &mdash; Klacksy startar planeringen, Klacks optimerar rutt och team." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Kvälls-, natt- och söndagsinsats, ett schema",
-    "text": "Klacks känner automatiskt igen nattinsatser, bokför TES-nattsatsen på 1,36 €/h som fast tillägg per timme och räknar automatiskt av söndagsarbete med det lagstadgade 100-procentiga tillägget &mdash; utan manuell efterräkning."
+    "text": "Klacks känner automatiskt igen nattinsatser och redovisar timmarna till din lönehantering, som räknar av TES:ens fasta nattsats på 1,36 €/h, och skriver gott söndagsarbete med det lagstadgade 100-procentiga tillägget automatiskt som tidskredit &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Upplev Klacks i din städverksamhet",
-    "text": "Testa i Playground hur Klacks tar hand om rutter, tillägg och minimilön &mdash; eller installera det direkt på din egen infrastruktur. Inga licensavgifter och utan registrering."
+    "text": "Testa i Playground hur Klacks tar hand om rutter och timunderlaget för tillägg och minimilön &mdash; eller installera det direkt på din egen infrastruktur. Inga licensavgifter och utan registrering."
   }
 }

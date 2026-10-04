@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Großbritannien",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Assistenzarzt-Rotationen lückenlos &mdash; mit den Schicht- und Ruhezeitgrenzen des Junior Doctor Contract automatisch berücksichtigt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Assistenzarzt-Rotationen lückenlos &mdash; mit den Schicht- und Ruhezeitgrenzen des Junior Doctor Contract automatisch berücksichtigt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Großbritannien",
     "screenshotLabel": "Dienstplan"
@@ -23,10 +23,10 @@
     "subtitle": "Von der lückenlosen Stationsabdeckung bis zur WTR-Transparenz &mdash; alles greift ineinander.",
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "timer", "title": "13-Stunden-Limit laufend überwacht", "text": "Klacks warnt bei der Planung von Assistenzarzt-Schichten, bevor die 13-Stunden-Grenze des Junior Doctor Contract überschritten wird &mdash; sichtbar, bevor der Dienst steht. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern." },
+      { "icon": "timer", "title": "13-Stunden-Limit laufend überwacht", "text": "Klacks warnt bei der Planung von Assistenzarzt-Schichten, bevor die 13-Stunden-Grenze des Junior Doctor Contract überschritten wird &mdash; sichtbar, bevor der Dienst steht. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "bedtime", "title": "Ruhezeiten-Kaskade im Blick", "text": "Die 11-Stunden-Ruhe zwischen Schichten wird automatisch mitgeplant; die 48/46/48-Stunden-Kaskade nach mehreren aufeinanderfolgenden Schichten oder Nächten macht Klacks als Warnung sichtbar." },
       { "icon": "visibility", "title": "WTR-Verstöße sichtbar gemacht", "text": "Klacks hinterlegt die Working Time Regulations im System und zeigt Verstöße an, bevor der Dienstplan veröffentlicht wird &mdash; nachvollziehbar für jedes Support-and-Challenge-Meeting." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Schichtlimits und Ruhezeiten." }
     ]
   },

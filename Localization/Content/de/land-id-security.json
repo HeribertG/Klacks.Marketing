@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Satpam-Sicherheitsdienste in Indonesien",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte lückenlos und überwacht Schichten über 12 Stunden live im Roster und blockiert die Überschreitung auf Wunsch hart &mdash; weil dieser Tagescap den gesetzlichen Überstundenrahmen aus PP 35/2021 bereits voll ausschöpft. Bei Ihnen installiert, damit Ihre Einsatzdaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Blick. <span class=\"text-secondary\">Jeder Zuschlag gutgeschrieben.</span>",
+    "subtitle": "Klacks zeigt offene Posten sofort, warnt live im Roster bei Schichten über 12 Stunden und verhindert die Überschreitung auf Wunsch in den automatischen Planungswegen &mdash; weil dieser Tagescap den gesetzlichen Überstundenrahmen aus PP 35/2021 bereits voll ausschöpft. Bei Ihnen installiert, damit Ihre Einsatzdaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung von Sicherheitsdiensten in Indonesien",
     "screenshotLabel": "Timeline"
@@ -27,27 +27,27 @@
   },
   "solutions": {
     "title": "Wie Klacks indonesische Sicherheitsdienste entlastet",
-    "subtitle": "Von der überwachten Zeitgrenze bis zum besetzten Posten &mdash; alles greift ineinander.",
+    "subtitle": "Von der überwachten Zeitgrenze bis zur Übersicht über offene Posten &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "block",
         "title": "12-Stunden-Tagescap live überwacht",
-        "text": "Klacks warnt automatisch, sobald eine Schicht die 12-Stunden-Grenze (8 h + 4 h Überstunden) aus PP 35/2021 Pasal 26 überschreitet, weil dieser Tagescap keinen Spielraum für ungeplante Verlängerungen lässt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks warnt, sobald eine Schicht die 12-Stunden-Grenze (8 h + 4 h Überstunden) aus PP 35/2021 Pasal 26 überschreitet, weil dieser Tagescap keinen Spielraum für ungeplante Verlängerungen lässt. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "shield",
-        "title": "Objekte &amp; Posten lückenlos",
+        "title": "Objekte &amp; Posten im Blick",
         "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch."
       },
       {
         "icon": "calculate",
-        "title": "Überstunden-Zuschläge korrekt berechnet",
-        "text": "Klacks berechnet die Stufen 1,5× und 2,0× für Werktags-Überstunden nach PP 35/2021 Pasal 31 automatisch &mdash; bis zum vollen 12-Stunden-Tagescap."
+        "title": "Überstunden-Zuschläge als Zeitgutschrift",
+        "text": "Die Stufen 1,5× und 2,0× für Werktags-Überstunden stammen aus PP 35/2021 Pasal 31 &mdash; bis zum vollen 12-Stunden-Tagescap. Klacks schreibt den hinterlegten Zeitzuschlag als Stunden gut und rechnet keine Löhne."
       },
       {
         "icon": "verified",
-        "title": "Zertifikate automatisch geprüft",
-        "text": "Klacks prüft den Satpam-Ausweis bei jeder Zuteilung und warnt rechtzeitig, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "title": "Zertifikate im Blick",
+        "text": "Klacks berücksichtigt den Satpam-Ausweis bei der Zuteilung und warnt rechtzeitig, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung."
       },
       {
         "icon": "shield_lock",
@@ -57,7 +57,7 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy versteht Ihren Satz",
-        "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Tagescap, Zuschläge und Zertifikate."
+        "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Tagescap und Zertifikate und schreibt Zeitzuschläge gut."
       }
     ]
   },

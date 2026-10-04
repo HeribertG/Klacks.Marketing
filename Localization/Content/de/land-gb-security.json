@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Großbritannien",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Lizenz gültig.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit SIA-Lizenzen und der Working-Time-Regulations-Nachtarbeit automatisch im Blick. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Plan. <span class=\"text-secondary\">Jede Lizenz im Blick.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit SIA-Lizenzen und der Working-Time-Regulations-Nachtarbeit automatisch im Blick. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Großbritannien",
     "screenshotLabel": "Timeline"
@@ -23,10 +23,10 @@
     "subtitle": "Vom besetzten Posten bis zur gültigen SIA-Lizenz &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "badge", "title": "SIA-Lizenz automatisch zugeteilt, Ablauf im Blick", "text": "Klacks teilt Einsätze nur Personal mit der passenden SIA-Lizenz-Qualifikation zu &mdash; und warnt, bevor eine hinterlegte Lizenz abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant werden kann nur, wer einen gültigen Ausweis hat." },
+      { "icon": "badge", "title": "SIA-Lizenz automatisch zugeteilt, Ablauf im Blick", "text": "Klacks teilt Einsätze nur Personal mit der passenden SIA-Lizenz-Qualifikation zu &mdash; und warnt, bevor eine hinterlegte Lizenz abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "bedtime", "title": "Nachtdienste automatisch gezählt", "text": "Klacks zählt die Nachtdienste pro Mitarbeitendem automatisch mit und warnt, sobald die hinterlegte Schwelle für regelmäßige Nachtarbeit nach den Working Time Regulations erreicht ist &mdash; die Grundlage, um den gesetzlichen Gesundheitscheck rechtzeitig anzustoßen." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft SIA-Lizenz, Verfügbarkeit und Nachtarbeitsstatus." }
     ]
   },

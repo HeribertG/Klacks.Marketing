@@ -32,8 +32,8 @@
     "subtitle": "每个参数都附带含义和排班影响说明 &mdash; 以下是相关主题领域。",
     "items": [
       { "icon": "schedule", "title": "工作时间基准", "text": "标准日工时以及 100% 工作量的周工时 &mdash; 这是兼职百分比和目标工时计算的参考基准。" },
-      { "icon": "speed", "title": "上限", "text": "每日和每周的最大工时 &mdash; 排班器会拒绝超出上限的班次。" },
-      { "icon": "calendar_month", "title": "连续工作日 &amp; 休息日", "text": "允许连续工作多少天，以及每个排班周期内保证多少个休息日。" },
+      { "icon": "speed", "title": "上限", "text": "每日和每周的最大工时 &mdash; 排班器会对照这些上限检查班次，超出时发出警告。" },
+      { "icon": "calendar_month", "title": "连续工作日 &amp; 休息日", "text": "允许连续工作多少天，以及每个排班周期内安排多少个休息日。" },
       { "icon": "bedtime", "title": "休息间隔 &amp; 夜班津贴", "text": "两个班次之间的最短休息间隔，以及夜班津贴的起止时间和费率。" },
       { "icon": "more_time", "title": "加班", "text": "工作多少小时后计为加班 &mdash; 按日或按周累计。" },
       { "icon": "beach_access", "title": "节假日 &amp; 年假", "text": "节假日工作的津贴费率，以及适用该规则的员工年度假期额度。" }

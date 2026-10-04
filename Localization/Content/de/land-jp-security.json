@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Sicherheitsdienste in Japan | Bereitschaftszeit & Wachschichten",
+  "pageTitle": "Klacks für Sicherheitsdienste in Japan | Wachschichten & Wartezeit als Arbeitszeit",
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (警備) in Japan",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Bereitschaftszeit korrekt erfasst.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und bildet bei 24-Stunden-Wachschichten reaktionspflichtige Wartezeit sauber getrennt von echter Ruhezeit als bezahlte Arbeitszeit ab. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten in Japan bleiben.",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Wartezeit mit Alarmpflicht als Arbeitszeit geplant.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und lässt Sie bei 24-Stunden-Wachschichten reaktionspflichtige Wartezeit als normale Arbeitszeit planen &mdash; getrennt von echter Ruhezeit, die Sie als Pause hinterlegen. Einen eigenen Bereitschaftstyp kennt Klacks nicht. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten in Japan bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung im Sicherheitsgewerbe in Japan",
     "screenshotLabel": "Timeline"
@@ -27,7 +27,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Sicherheitsdienste in Japan entlastet",
-    "subtitle": "Vom besetzten Posten bis zur korrekt getrennten Ruhe- und Wartezeit &mdash; alles greift ineinander.",
+    "subtitle": "Vom besetzten Posten bis zur geplanten Wartezeit &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "shield",
@@ -36,8 +36,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Wartezeit sauber als Arbeitszeit abgebildet",
-        "text": "Klacks bildet reaktionspflichtige Wartezeit (手待時間) während der Schlafphase einer 24-Stunden-Wachschicht getrennt von echter Ruhezeit ab &mdash; und rechnet sie korrekt als bezahlte Arbeitszeit."
+        "title": "Wartezeit als Arbeitszeit planbar",
+        "text": "Reaktionspflichtige Wartezeit (手待時間) während der Schlafphase einer 24-Stunden-Wachschicht planen Sie als normale Arbeitszeit ein, getrennt von echter Ruhezeit (Pause); Klacks zählt sie dann als Arbeitsstunden, die Bezahlung rechnet Ihr Lohnsystem. Einen eigenen Bereitschaftstyp gibt es nicht."
       },
       {
         "icon": "verified",
@@ -52,7 +52,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben in Japan",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten verlassen Japan nicht, auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben in Japan, mit einem lokalen KI-Modell auch bei der KI-Nutzung."
       },
       {
         "icon": "smart_toy",
@@ -64,7 +64,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "24-Stunden-Wachschicht, ein Plan",
-    "text": "Klacks bildet die Schlafphase einer 24-Stunden-Wachschicht bei bestehender Alarmpflicht als reaktionspflichtige Wartezeit ab &mdash; und rechnet sie korrekt als bezahlte Arbeitszeit statt als unbezahlte Pause."
+    "text": "Die Schlafphase einer 24-Stunden-Wachschicht mit bestehender Alarmpflicht planen Sie als reaktionspflichtige Wartezeit, also als normale Arbeitszeit statt als unbezahlte Pause &mdash; Klacks zählt sie dann in den Arbeitsstunden mit; die Bezahlung rechnet Ihr Lohnsystem."
   },
   "showRoutePlanning": true,
   "cta": {

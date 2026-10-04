@@ -32,8 +32,8 @@
     "subtitle": "每個參數都附有意義說明與排班影響 &mdash; 以下是各主題領域。",
     "items": [
       { "icon": "schedule", "title": "工時基礎", "text": "每日正常工時，以及 100% 全職的每週工時 &mdash; 這是兼職百分比與應出勤時數計算的基準。" },
-      { "icon": "speed", "title": "上限", "text": "每日與每週的最高工時 &mdash; 排班系統會拒絕超出上限的班次。" },
-      { "icon": "calendar_month", "title": "連續工作日 &amp; 休假日", "text": "允許連續工作幾天，以及每個排班週期內保證幾天休假。" },
+      { "icon": "speed", "title": "上限", "text": "每日與每週的最高工時 &mdash; 排班系統會依這些上限檢查班次，超出時發出警告。" },
+      { "icon": "calendar_month", "title": "連續工作日 &amp; 休假日", "text": "允許連續工作幾天，以及每個排班週期內安排幾天休假。" },
       { "icon": "bedtime", "title": "休息間隔 &amp; 夜班加給", "text": "兩個班次之間的最短休息時間，以及夜班加給的開始時間、結束時間與費率。" },
       { "icon": "more_time", "title": "加班", "text": "工作超過多少小時後視為加班 &mdash; 按日或按週累計。" },
       { "icon": "beach_access", "title": "國定假日 &amp; 特休", "text": "假日出勤的加給費率，以及適用此規則之員工的年度特休天數。" }

@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "面向酒店 &amp; 餐饮业",
     "titleHtml": "早班、晚班、夜班 &mdash; <span class=\"text-secondary\">公平排班。</span>",
-    "subtitle": "Klacks 为前厅服务、后厨与客房楼层排班 &mdash; 涵盖分段班次、周日与节假日津贴以及无法被悄悄规避的法定休息时间。旺季高峰与人员缺勤由排班自动兜底。",
+    "subtitle": "Klacks 为前厅服务、后厨与客房楼层排班 &mdash; 涵盖分段班次、周日与节假日津贴，以及能让违规立即可见的法定休息时间检查。旺季高峰与人员缺勤由排班自动兜底。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 酒店与餐饮业排班时间轴视图",
     "screenshotLabel": "时间轴"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "分段班次,安排得当",
-        "text": "Klacks 合理编排午间与晚间时段,确保最低休息时间与每日最高工时得到遵守 &mdash; 任何不足都会立即显现。"
+        "text": "Klacks 合理编排午间与晚间时段,并对照最低休息时间与每日最高工时进行检查 &mdash; 任何不足都会立即显现。"
       },
       {
         "icon": "timer",
         "title": "休息时间尽在掌握",
-        "text": "法定休息时间界限实时监控 &mdash; 违规会立即显示。如有需要,Klacks 会坚决拦截:在阻止模式下,违规只有在具备上级批准记录的情况下才能保存。"
+        "text": "法定休息时间界限持续检查 &mdash; 违规会立即显示。默认情况下 Klacks 发出警告;如有需要,可为自动排班(排班向导、建议、缺勤替补)启用阻止模式。"
       },
       {
         "icon": "payments",
         "title": "津贴自动计算",
-        "text": "夜班、周日与节假日津贴由 Klacks 自动核算 &mdash; 可按国家与规则体系配置,薪资准备无需人工返工。"
+        "text": "夜班、周日与节假日津贴由 Klacks 自动以时间补偿(小时)记入 &mdash; 可按国家与规则体系配置,作为薪资核算的基础。"
       },
       {
         "icon": "badge",

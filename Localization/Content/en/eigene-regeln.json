@@ -32,8 +32,8 @@
     "subtitle": "Every parameter with its meaning and planning impact &mdash; these are the topic areas.",
     "items": [
       { "icon": "schedule", "title": "Working-time baseline", "text": "Standard daily hours and the weekly hours of a full-time workload &mdash; the reference for part-time percentages and target-hour calculations." },
-      { "icon": "speed", "title": "Caps", "text": "Maximum hours per day and per week &mdash; the planner refuses shifts that would exceed them." },
-      { "icon": "calendar_month", "title": "Consecutive &amp; rest days", "text": "How many working days in a row are allowed and how many rest days per planning window are guaranteed." },
+      { "icon": "speed", "title": "Caps", "text": "Maximum hours per day and per week &mdash; the planner checks shifts against these limits and warns when they are exceeded." },
+      { "icon": "calendar_month", "title": "Consecutive &amp; rest days", "text": "How many working days in a row are allowed and how many rest days per planning window are provided for." },
       { "icon": "bedtime", "title": "Rest breaks &amp; night surcharge", "text": "Minimum rest between two shifts plus the start, end and rate of the night surcharge window." },
       { "icon": "more_time", "title": "Overtime", "text": "From how many hours worked time counts as overtime &mdash; accumulated per day or per week." },
       { "icon": "beach_access", "title": "Holidays &amp; vacation", "text": "The surcharge rate for working on public holidays and the annual vacation entitlement for staff on this rule." }

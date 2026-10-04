@@ -32,8 +32,8 @@
     "subtitle": "Cada parâmetro com significado e impacto no planeamento &mdash; estas são as áreas temáticas.",
     "items": [
       { "icon": "schedule", "title": "Base do tempo de trabalho", "text": "Horas normais por dia e horas semanais para uma ocupação a 100% &mdash; a referência para percentagens de tempo parcial e o cálculo das horas previstas." },
-      { "icon": "speed", "title": "Limites máximos", "text": "Horas máximas por dia e por semana &mdash; o planeador recusa turnos que as ultrapassem." },
-      { "icon": "calendar_month", "title": "Dias consecutivos &amp; dias de descanso", "text": "Quantos dias de trabalho consecutivos são permitidos e quantos dias de descanso por janela de planeamento são garantidos." },
+      { "icon": "speed", "title": "Limites máximos", "text": "Horas máximas por dia e por semana &mdash; o planeador verifica os turnos face a estes limites e avisa quando são ultrapassados." },
+      { "icon": "calendar_month", "title": "Dias consecutivos &amp; dias de descanso", "text": "Quantos dias de trabalho consecutivos são permitidos e quantos dias de descanso por janela de planeamento são previstos." },
       { "icon": "bedtime", "title": "Pausas de descanso &amp; suplemento noturno", "text": "Pausa mínima entre dois turnos, bem como início, fim e taxa do suplemento noturno." },
       { "icon": "more_time", "title": "Horas extraordinárias", "text": "A partir de quantas horas o tempo trabalhado conta como horas extraordinárias &mdash; acumulado por dia ou por semana." },
       { "icon": "beach_access", "title": "Feriados &amp; férias", "text": "Taxa de suplemento para trabalho em feriados e o direito anual a férias dos colaboradores abrangidos por esta regra." }

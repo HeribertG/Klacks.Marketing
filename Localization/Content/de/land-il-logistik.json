@@ -3,7 +3,7 @@
   "hero": {
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Israel",
-    "titleHtml": "Arbeitszeiten, Ruhezeiten &mdash; <span class=\"text-secondary\">alles nach Regulation 168.</span>",
+    "titleHtml": "Arbeitszeiten, Ruhezeiten &mdash; <span class=\"text-secondary\">Grenzen nach Regulation 168 hinterlegt.</span>",
     "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit den Arbeits- und Ruhezeitgrenzen, die Sie nach Regulation 168 (תקנה 168) für Fahrzeuge über 6.000 kg hinterlegen, im Blick. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Israel",
@@ -22,9 +22,9 @@
     "title": "Wie Klacks die Logistik in Israel entlastet",
     "subtitle": "Von der optimierten Tour bis zur Ruhezeit-Kontrolle nach Regulation 168 &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "timer", "title": "Arbeitszeitgrenzen nach Regulation 168 geprüft", "text": "Klacks überwacht die 12- und die 68-Stunden-Grenze, als Tages- bzw. Wochenhöchstarbeitszeit hinterlegt, in Echtzeit und warnt, bevor eine Grenze überschritten wird. Auf Wunsch blockiert Klacks die Zuweisung von Schichten, welche die maximalen täglichen und wöchentlichen Gesamteinsatzzeiten überschreiten &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die reine Lenkzeit prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen." },
+      { "icon": "timer", "title": "Arbeitszeitgrenzen nach Regulation 168 geprüft", "text": "Klacks überwacht die 12- und die 68-Stunden-Grenze, als Tages- bzw. Wochenhöchstarbeitszeit hinterlegt, in Echtzeit und warnt, bevor eine Grenze überschritten wird. Auf Wunsch blockiert Klacks in der automatischen Planung die Zuweisung von Schichten, welche die maximalen täglichen und wöchentlichen Gesamteinsatzzeiten überschreiten; bei manueller Planung bleibt es bei der Warnung. Die reine Lenkzeit prüft Klacks nicht &mdash; sie wird weiter über die Fahrtenschreiberdaten nachgewiesen." },
       { "icon": "free_breakfast", "title": "Pausen als Block in der Tour", "text": "Pausen lassen sich als Block in die Tour einplanen; ob die vorgeschriebene 30-Minuten-Pause nach spätestens 4 Stunden ununterbrochener Fahrt eingehalten ist, prüft Klacks nicht." },
-      { "icon": "bedtime", "title": "Vorruhe &amp; Wochenruhe im Blick", "text": "Klacks prüft die 25-stündige wöchentliche Ruhezeit je 8-Tage-Zeitraum und warnt bei Verstößen &mdash; die 7-stündige Vorruhe vor Fahrtantritt und die mindestens 52 Ruhetage im Jahr lassen sich ebenso hinterlegen und überwachen. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Wochenruhe konsequent (pro Regelart konfigurierbar)." },
+      { "icon": "bedtime", "title": "Vorruhe &amp; Wochenruhe im Blick", "text": "Klacks prüft die 25-stündige wöchentliche Ruhezeit je 8-Tage-Zeitraum und warnt bei Verstößen &mdash; die 7-stündige Vorruhe vor Fahrtantritt und die mindestens 52 Ruhetage im Jahr lassen sich ebenso hinterlegen und überwachen. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Wochenruhe in der automatischen Planung konsequent (pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Cohen ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der hinterlegten Arbeitszeitgrenzen ist." }
@@ -38,6 +38,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Arbeits- und Ruhezeiten nach Regulation 168 plant &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren plant und die von Ihnen hinterlegten Arbeits- und Ruhezeitgrenzen nach Regulation 168 prüft &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

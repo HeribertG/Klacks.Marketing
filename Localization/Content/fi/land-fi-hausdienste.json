@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Suomen kiinteistö- ja siivouspalveluille",
-    "titleHtml": "Jokainen kohde <span class=\"text-secondary\">laskutettuna oikein.</span>",
-    "subtitle": "Klacks jakaa kohteet ja siivoustiimit tehokkaasti &mdash; Kiinteistöpalvelualan TES:n mukaisine vähimmäistuntipalkkoineen ja vuorolisineen sekä 1.8.2026 voimaan tulevine korotuksineen automaattisesti tallennettuina.",
+    "titleHtml": "Jokainen kohde <span class=\"text-secondary\">sujuvasti suunniteltu.</span>",
+    "subtitle": "Klacks jakaa kohteet ja siivoustiimit tehokkaasti &mdash; ja toimittaa tunnit aikalisineen palkanlaskentaanne, joka laskee Kiinteistöpalvelualan TES:n mukaisen vähimmäistuntipalkan, vuorolisät ja 1.8.2026 voimaan tulevan korotuksen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksin työvuoroluettelo suomalaisille siivoustiimeille ja kohteille",
     "screenshotLabel": "Työvuoroluettelo"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Miten Klacks helpottaa suomalaisten siivouspalveluiden arkea",
-    "subtitle": "Optimoidusta reitistä oikein tallennettuun vähimmäispalkkaan &mdash; kaikki toimii yhdessä.",
+    "subtitle": "Optimoidusta reitistä palkanlaskennan tuntipohjaan &mdash; kaikki toimii yhdessä.",
     "items": [
       { "icon": "route", "title": "Kohdereitit optimoitu", "text": "Klacks järjestää kohteiden käyntijärjestyksen niin, että matkat pysyvät lyhyinä &mdash; autolle, pyörälle tai jalan kuljettaville." },
-      { "icon": "payments", "title": "Vähimmäispalkka ja TES-korotus tallennettuina", "text": "13,22 euron vähimmäistuntipalkka (vaativuusryhmä 2) on tallennettu, samoin 1.8.2026 voimaan tuleva taulukkopalkkojen 2,7 %:n korotus." },
-      { "icon": "schedule", "title": "Kiinteät lisät &amp; sunnuntailisä kirjataan automaattisesti", "text": "Klacks tunnistaa määritetyn yöikkunan työvuorot automaattisesti ja kirjaa lakisääteisen sunnuntailisän (100 %) suoraan &mdash; kiinteän TES-yölisän (1,36 €/h) Klacks laskee ja kirjaa suoraan kiinteänä tuntilisänä, myös jaetuissa työvuoroissa. Erillistä toista iltalisää (0,73 €/h) Klacks ei tunne." },
+      { "icon": "payments", "title": "Vähimmäispalkka: tuntipohja", "text": "13,22 euron vähimmäistuntipalkan (vaativuusryhmä 2) ja 1.8.2026 voimaan tulevan taulukkopalkkojen 2,7 %:n korotuksen laskee palkanlaskentanne; Klacks toimittaa sitä varten tehdyt tunnit." },
+      { "icon": "schedule", "title": "Sunnuntailisä &amp; yötunnit", "text": "Klacks tunnistaa määritetyn yöikkunan työvuorot automaattisesti ja kirjaa lakisääteisen sunnuntailisän (100 %) aikahyvityksenä &mdash; kiinteälle TES-yölisälle (1,36 €/h) ja iltalisälle (0,73 €/h) Klacksissa ei ole aikahyvitystä: nämä rahamäärät laskee palkanlaskentanne, Klacks toimittaa niihin tunnit." },
       { "icon": "bedtime", "title": "Lepoaika ja 14 vuorokauden tasoitus valvotaan", "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää tasoituksen 14 vuorokauden määräajan hallinnassa." },
       { "icon": "verified", "title": "Pätevyydet sopivasti", "text": "Erikoissiivous, koneet, turva-alueet: vain sopivasti pätevä henkilöstö osoitetaan tehtävään." },
-      { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Suunnittele keskustan kohteet huomisaamulle” riittää &mdash; Klacksy käynnistää suunnittelun, Klacks optimoi reitin, tiimin ja lisät." }
+      { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Suunnittele keskustan kohteet huomisaamulle” riittää &mdash; Klacksy käynnistää suunnittelun, Klacks optimoi reitin ja tiimin." }
     ]
   },
   "example": {
     "eyebrow": "Käytännössä",
     "title": "Ilta-, yö- ja sunnuntaityö, yksi suunnitelma",
-    "text": "Klacks tunnistaa yötyövuorot automaattisesti, kirjaa TES:n mukaisen 1,36 €/h yölisän kiinteänä tuntilisänä ja laskuttaa sunnuntaityön lakisääteisellä 100 %:n lisällä automaattisesti &mdash; ilman käsin laskemista."
+    "text": "Klacks tunnistaa yötyövuorot automaattisesti ja ilmoittaa tunnit palkanlaskentaanne, joka laskee TES:n mukaisen kiinteän 1,36 €/h yölisän, ja kirjaa sunnuntaityön lakisääteisen 100 %:n lisän automaattisesti aikahyvityksenä &mdash; ilman käsin laskemista."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Kokeilkaa Klacksia siivousyrityksessänne",
-    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa reitit, lisät ja vähimmäispalkan &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Ei lisenssimaksuja ja ilman rekisteröitymistä."
+    "text": "Kokeilkaa Playgroundissa, miten Klacks hoitaa reitit sekä lisien ja vähimmäispalkan tuntipohjan &mdash; tai asentakaa se suoraan omaan infrastruktuuriinne. Ei lisenssimaksuja ja ilman rekisteröitymistä."
   }
 }

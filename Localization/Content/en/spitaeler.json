@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics",
     "titleHtml": "Schedules that <span class=\"text-secondary\">work around the clock.</span>",
-    "subtitle": "Klacks schedules wards and shifts with no gaps &mdash; with rest periods respected, the right qualifications, and full data sovereignty. Installed on your premises, so patient data never leaves your building.",
+    "subtitle": "Klacks schedules wards and shifts with no gaps &mdash; with checked rest periods, the right qualifications, and full data sovereignty. Installed on your premises; with a local AI model, patient data does not leave your building.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals",
     "screenshotLabel": "Schedule",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Gap-free 24/7 coverage", "text": "Day, late, and night shifts across every ward &mdash; Klacks flags every gap instantly and fills it automatically on request." },
       { "icon": "gavel", "title": "Rest periods checked automatically", "text": "Labor law, rest periods, and maximum limits are monitored in real time &mdash; violations are flagged immediately." },
       { "icon": "verified", "title": "Qualifications &amp; wards", "text": "Every shift is assigned only to appropriately qualified staff &mdash; by ward, department, and role." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your infrastructure. Staff and patient data never leave the clinic &mdash; not even for the AI." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data in-house", "text": "Klacks runs on your infrastructure. Staff and patient data are stored on your servers &mdash; with a local AI model, nothing leaves the clinic for the AI either." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "“Fill next week's night shifts for internal medicine” is enough &mdash; Klacksy starts the planning, Klacks factors in qualification and rest periods." },
       { "icon": "groups", "title": "Float pool &amp; absences", "text": "If someone drops out, Klacks immediately shows available, qualified float staff &mdash; without turning the whole schedule upside down." }
     ]

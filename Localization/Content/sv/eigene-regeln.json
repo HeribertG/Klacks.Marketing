@@ -32,8 +32,8 @@
     "subtitle": "Varje parameter med betydelse och effekt på schemaläggningen &mdash; det här är ämnesområdena.",
     "items": [
       { "icon": "schedule", "title": "Grund för arbetstid", "text": "Normala dagstimmar och veckotimmarna för en 100%-anställning &mdash; referensen för deltidsprocent och beräkning av måltimmar." },
-      { "icon": "speed", "title": "Övre gränser", "text": "Maximalt antal timmar per dag och per vecka &mdash; planeraren avvisar pass som går utöver det." },
-      { "icon": "calendar_month", "title": "Följdagar &amp; vilodagar", "text": "Hur många arbetsdagar i följd som är tillåtna och hur många vilodagar per planeringsperiod som garanteras." },
+      { "icon": "speed", "title": "Övre gränser", "text": "Maximalt antal timmar per dag och per vecka &mdash; planeraren kontrollerar passen mot dessa gränser och varnar när de överskrids." },
+      { "icon": "calendar_month", "title": "Följdagar &amp; vilodagar", "text": "Hur många arbetsdagar i följd som är tillåtna och hur många vilodagar per planeringsperiod som är avsatta." },
       { "icon": "bedtime", "title": "Vilopauser &amp; nattillägg", "text": "Minsta vila mellan två pass samt start, slut och sats för nattillägget." },
       { "icon": "more_time", "title": "Övertid", "text": "Från hur många timmar arbetad tid räknas som övertid &mdash; ackumulerat per dag eller per vecka." },
       { "icon": "beach_access", "title": "Helgdagar &amp; semester", "text": "Tilläggssats för arbete på helgdagar och den årliga semesterrätten för anställda på den här regeln." }

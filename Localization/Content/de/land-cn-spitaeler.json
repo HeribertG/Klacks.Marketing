@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Krankenhäuser China | 值班 vs. 加班 korrekt unterschieden",
+  "pageTitle": "Klacks für Krankenhäuser China | Nachtdienste planen, 加班 sichtbar machen",
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in China",
-    "titleHtml": "Bereitschaft und Arbeit, <span class=\"text-secondary\">sauber getrennt.</span>",
-    "subtitle": "Klacks erfasst 值班 (zhíbān, Bereitschaft) und 加班 (jiābān, echte Überstunden) als getrennte Einsatztypen &mdash; substantielle Arbeit während des Nachtdiensts lässt sich mit einem Klick als zuschlagspflichtigen 加班 kennzeichnen, bevor es vor Gericht zum Streitfall wird.",
+    "titleHtml": "Nachtdienste planen, <span class=\"text-secondary\">echte Arbeitszeit sichtbar.</span>",
+    "subtitle": "Klacks kennt keinen eigenen Einsatztyp für 值班 (zhíbān, Bereitschaft): Nachtdienste planen Sie als normale Schicht, und tatsächlich geleistete Arbeit (加班, jiābān) fließt in Stunden, Überstundengrenze und Zeitzuschläge ein &mdash; die dokumentierte Basis, bevor es vor Gericht zum Streitfall wird.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in China",
     "screenshotLabel": "Dienstplan"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks Krankenhäuser in China entlastet",
-    "subtitle": "Von der sauberen 值班/加班-Trennung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Nachtdienst-Planung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "fact_check", "title": "值班 und 加班 sauber getrennt erfasst", "text": "Klacks erfasst nächtlichen Bereitschaftsdienst und tatsächliche Arbeitstätigkeit als getrennte Einsatztypen &mdash; substantielle Arbeit während des 值班 lässt sich direkt als zuschlagspflichtiger 加班 kennzeichnen." },
-      { "icon": "payments", "title": "200/300 % automatisch zugeordnet", "text": "Wird aus 值班 rechtlich 加班, ordnet Klacks Ruhetags- (200 %) und Feiertagszuschlag (300 %, ohne Freizeitausgleich) automatisch nach Art. 44 zu; die Werktags-Prämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass mehrere gleichzeitig greifende Zuschläge korrekt addiert werden, oder so, dass nur der höchste Satz gilt." },
+      { "icon": "fact_check", "title": "Nachtdienst und tatsächliche Arbeit im Dienstplan", "text": "Klacks kennt keinen eigenen Einsatztyp für 值班: Nachtdienste planen Sie als normale Schicht; tatsächliche Arbeitstätigkeit (加班) zählt in die Stunden und lässt sich per Notiz dokumentieren." },
+      { "icon": "payments", "title": "200/300 % als Zeitgutschrift", "text": "Wird aus 值班 rechtlich 加班, schreibt Klacks Ruhetags- (200 %) und Feiertagszuschlag (300 %, ohne Freizeitausgleich) nach Art. 44 als Zeitgutschrift gut, sobald die Zeit als normale Arbeitszeit erfasst ist; die Werktags-Prämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass mehrere gleichzeitig greifende Zuschläge korrekt addiert werden, oder so, dass nur der höchste Satz gilt." },
       { "icon": "gavel", "title": "Überstundengrenze im Blick", "text": "Klacks summiert echten 加班 laufend gegen die gesetzliche Überstundengrenze &mdash; über alle Stationen und Rotationen hinweg." },
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik und China nicht &mdash; auch nicht zur KI." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "Klacksy unterstützt bei der Einstufung eines Nachtdiensts als 值班 oder 加班; die Vergütung berechnet Klacks aus den hinterlegten Zuschlagsregeln." }
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in Ihrer Klinik und in China &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung." },
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "Klacksy unterstützt bei der Planung von Nachtdiensten; die Einstufung als 值班 oder 加班 treffen Sie, Klacks schreibt Zeitzuschläge aus den hinterlegten Regeln gut &mdash; die Vergütung rechnet Ihr Lohnsystem." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Nächtlicher Bereitschaftsdienst, ein Plan",
-    "text": "Meldet eine Pflegekraft während des nächtlichen 值班 einen Notfalleinsatz, lässt sich diese Zeit direkt als 加班 kennzeichnen &mdash; Klacks ordnet den Ruhetags- oder Feiertagszuschlag nach Art. 44 automatisch zu, sauber dokumentiert für den Streitfall vor Gericht."
+    "title": "Nachtdienst und tatsächliche Arbeit, ein Plan",
+    "text": "Meldet eine Pflegekraft während des Nachtdiensts einen Notfalleinsatz, erfassen Sie diese Zeit als normale Arbeitszeit und halten per Notiz fest, dass es sich um 加班 handelt &mdash; Klacks schreibt den hinterlegten Ruhetags- oder Feiertagszuschlag nach Art. 44 als Zeitgutschrift gut, dokumentiert für den Streitfall vor Gericht."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik in China erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks 值班, 加班 und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Nachtdienste, Überstunden und Stationen plant &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

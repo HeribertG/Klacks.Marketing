@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Per l'assistenza domiciliare in Italia",
     "titleHtml": "Più tempo per l'assistenza, <span class=\"text-secondary\">meno per la pianificazione dei percorsi.</span>",
-    "subtitle": "Klacks pianifica interventi e percorsi in automatico &mdash; con la corretta settimana di 38 ore secondo il CCNL Cooperative Sociali, i limiti di reperibilità monitorati e i tempi di percorrenza conteggiati come orario di lavoro. Installato sui Suoi locali, perché i dati dei pazienti non lasciano mai la Sua azienda.",
+    "subtitle": "Klacks pianifica interventi e percorsi in automatico &mdash; con la settimana di 38 ore secondo il CCNL Cooperative Sociali come limite monitorato e un valore fisso di tempo di percorrenza per intervento conteggiato come orario di lavoro. Installato sui Suoi locali, perché i dati dei pazienti non lasciano mai la Sua azienda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per la pianificazione dei percorsi dell'Assistenza domiciliare",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Come Klacks alleggerisce l'Assistenza domiciliare",
-    "subtitle": "Dal percorso ottimizzato all'indennità di reperibilità documentata &mdash; tutto si incastra alla perfezione.",
+    "subtitle": "Dal percorso ottimizzato alla settimana di 38 ore monitorata &mdash; tutto si incastra alla perfezione.",
     "items": [
-      { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Klacks traccia i percorsi degli interventi in modo che le distanze restino brevi e le fasce orarie vengano rispettate &mdash; i tempi di percorrenza registrati tra i clienti contano come orario di lavoro." },
-      { "icon": "verified", "title": "Qualifiche considerate automaticamente", "text": "Klacks confronta la qualifica richiesta con i profili registrati e avverte per tempo prima che una qualifica scada &mdash; l'assegnazione resta verificabile, senza alcun controllo manuale. Se una qualifica obbligatoria scade comunque, l'assegnazione può essere bloccata rigidamente su richiesta." },
-      { "icon": "gavel", "title": "Settimana di 38 ore verificata, reperibilità documentata", "text": "L'orario normale di 38 ore previsto dal CCNL viene monitorato automaticamente &mdash; su richiesta, Klacks blocca rigorosamente le violazioni: una nuova violazione può essere salvata solo con un'autorizzazione documentata del superiore. Gli interventi di reperibilità, inclusi i limiti dell'Art. 58 CCNL Cooperative Sociali, vengono documentati senza lacune &mdash; come base per il conteggio dell'indennità." },
-      { "icon": "shield_lock", "title": "Installato sui Suoi locali: i dati restano in azienda", "text": "Klacks funziona sulla Sua infrastruttura. I dati dei pazienti non lasciano la Sua azienda &mdash; nemmeno verso l'IA." },
+      { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Klacks traccia i percorsi degli interventi in modo che le distanze restino brevi e le fasce orarie vengano rispettate &mdash; un valore di percorrenza impostato per intervento tra i clienti conta come orario di lavoro." },
+      { "icon": "verified", "title": "Qualifiche considerate automaticamente", "text": "Klacks confronta la qualifica richiesta con i profili registrati e avverte per tempo prima che una qualifica scada &mdash; l'assegnazione resta verificabile, senza alcun controllo manuale. Se una qualifica obbligatoria manca o è scaduta, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale." },
+      { "icon": "gavel", "title": "Settimana di 38 ore verificata", "text": "L'orario normale di 38 ore previsto dal CCNL può essere impostato come regola e viene monitorato &mdash; in caso di superamento Klacks avvisa e, nei percorsi di pianificazione automatica, su richiesta lo blocca. Un tipo di intervento dedicato per la reperibilità, con i limiti dell'Art. 58 CCNL Cooperative Sociali e l'indennità, in Klacks non esiste." },
+      { "icon": "shield_lock", "title": "Installato sui Suoi locali: i dati restano in azienda", "text": "Klacks funziona sulla Sua infrastruttura. I dati dei pazienti restano nella Sua azienda &mdash; con un modello IA ospitato localmente anche per l'IA." },
       { "icon": "smart_toy", "title": "Klacksy capisce la Sua frase", "text": "Basta dire «Riempi i percorsi di domani». In caso di assenza, Klacksy propone subito un sostituto disponibile e qualificato." },
       { "icon": "event_busy", "title": "Assenze gestite rapidamente", "text": "Se qualcuno risulta assente, Klacks mostra subito chi è qualificato e disponibile &mdash; senza dover rivoluzionare l'intero piano dei percorsi." }
     ]
   },
   "example": {
     "eyebrow": "Concretamente",
-    "title": "Assistenza domiciliare in Lombardia, con rotazione della reperibilità",
-    "text": "CCNL Cooperative Sociali, settimana di 38 ore, indennità di reperibilità &mdash; configurati in Klacks, non riprogrammati. I percorsi vengono ottimizzati automaticamente, le qualifiche verificate, e Klacksy aiuta in caso di modifiche last minute. I dati dei pazienti restano interamente in azienda."
+    "title": "Assistenza domiciliare in Lombardia, con rotazione dei fine settimana",
+    "text": "CCNL Cooperative Sociali, settimana di 38 ore, turni di fine settimana a rotazione &mdash; configurati in Klacks, non riprogrammati. I percorsi vengono ottimizzati automaticamente, le qualifiche verificate, e Klacksy aiuta in caso di modifiche last minute. I dati dei pazienti restano in azienda &mdash; con un modello IA ospitato localmente anche per l'IA."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Provi Klacks nella Sua Assistenza domiciliare",
-    "text": "Provi nel Playground come Klacks gestisce percorsi, reperibilità e qualifiche &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
+    "text": "Provi nel Playground come Klacks gestisce percorsi, limiti di orario di lavoro e qualifiche &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
   }
 }

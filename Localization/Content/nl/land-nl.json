@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks voor bedrijven in Nederland | Arbeidstijdenwet & oproepkrachten automatisch geregeld",
+  "pageTitle": "Klacks voor bedrijven in Nederland | Arbeidstijdenwet & oproepkrachten in de roosterplanning",
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Voor werkgevers in Nederland &middot; open source &middot; Zonder licentiekosten",
     "titleHtml": "Dienstroosters die de <span class=\"text-secondary\">Arbeidstijdenwet live in de gaten houden.</span>",
-    "subtitle": "Klacks plant diensten automatisch volgens de Nederlandse Arbeidstijdenwet (ATW) en regelt oproepkrachten correct volgens de Wet arbeidsmarkt in balans (WAB) &mdash; op uw eigen locatie geïnstalleerd, zodat personeelsgegevens in uw eigen infrastructuur blijven.",
+    "subtitle": "Klacks plant diensten automatisch volgens de Nederlandse Arbeidstijdenwet (ATW) en zet oproepkrachten in met datum en uren; de termijnen van de Wet arbeidsmarkt in balans (WAB) houdt u zelf in het oog &mdash; op uw eigen locatie geïnstalleerd, zodat personeelsgegevens in uw eigen infrastructuur blijven.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosteroverzicht voor bedrijven in Nederland",
     "screenshotLabel": "Dienstrooster"
@@ -25,7 +25,7 @@
       },
       {
         "icon": "event_repeat",
-        "title": "Oproepkrachten correct inplannen",
+        "title": "Oproepkrachten inplannen",
         "text": "Voor oproepkrachten geldt een wettelijke aankondigingstermijn van 4 dagen (WAB, BW art. 7:628a) &mdash; wordt een oproep op korte termijn afgezegd, dan blijft de volledige loonaanspraak voor de opgeroepen uren bestaan."
       }
     ]
@@ -57,21 +57,21 @@
   },
   "solutions": {
     "title": "Hoe Klacks Nederlandse bedrijven ontlast",
-    "subtitle": "Van de automatische ATW-controle tot de AVG-conforme tijdsregistratie &mdash; alles grijpt in elkaar.",
+    "subtitle": "Van de automatische ATW-controle tot de gegevenszuinige tijdsregistratie &mdash; alles grijpt in elkaar.",
     "items": [
       {
         "icon": "gavel",
         "title": "ATW-maximale arbeidstijd automatisch bewaakt",
-        "text": "Klacks kent de 12-uursgrens per dienst en de 60-uurs weekgrens, en bewaakt de voortschrijdende gemiddelden over 4 en 16 weken live &mdash; de datum van indiensttreding wordt daarbij correct meegenomen, en dreigende overtredingen worden zichtbaar voordat het dienstrooster vaststaat. Desgewenst blokkeert Klacks de overtreding hard &mdash; een nieuwe overtreding kan dan alleen worden opgeslagen met gedocumenteerde goedkeuring van een leidinggevende."
+        "text": "Klacks kent de 12-uursgrens per dienst en de 60-uurs weekgrens, en bewaakt de voortschrijdende gemiddelden over 4 en 16 weken live &mdash; de datum van indiensttreding wordt daarbij correct meegenomen, en dreigende overtredingen worden zichtbaar voordat het dienstrooster vaststaat. Desgewenst blokkeert Klacks de overtreding in de automatische planning hard; bij handmatige planning blijft het bij de waarschuwing."
       },
       {
         "icon": "bedtime",
-        "title": "Rusttijden automatisch nageleefd",
-        "text": "De 11 uur dagrust en de 36 uur weekrust volgens ATW art. 5:3 en 5:5 worden bij elk dienstrooster automatisch meeberekend."
+        "title": "Rusttijden automatisch gecontroleerd",
+        "text": "De 11 uur dagrust en de 36 uur weekrust volgens ATW art. 5:3 en 5:5 worden bij elk dienstrooster automatisch meegecontroleerd."
       },
       {
         "icon": "event_available",
-        "title": "Oproepkrachten correct gepland",
+        "title": "Oproepkrachten gepland",
         "text": "Oproepen plant u in Klacks met datum en uren; of de 4-dagen-aankondigingstermijn voor oproepkrachten in acht is genomen en een afzegging op korte termijn een loonaanspraak veroorzaakt, controleert Klacks niet automatisch."
       },
       {
@@ -82,7 +82,7 @@
       {
         "icon": "shield_lock",
         "title": "Bij u geïnstalleerd: volledige datasoevereiniteit",
-        "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; personeelsgegevens verlaten uw pand niet."
+        "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; met een lokaal model verlaten personeelsgegevens uw pand niet."
       },
       {
         "icon": "smart_toy",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Ervaar Klacks in uw bedrijf",
-    "text": "Test in de playground hoe Klacks ATW-maximale arbeidstijden, rusttijden en oproepkrachten automatiseert &mdash; bij u geïnstalleerd of in de playground, geen licentiekosten en zonder registratie."
+    "text": "Test in de playground hoe Klacks ATW-maximale arbeidstijden en rusttijden controleert en oproepkrachten plant &mdash; bij u geïnstalleerd of in de playground, geen licentiekosten en zonder registratie."
   }
 }

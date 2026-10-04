@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Reinigungsdienste (Curățenie) in Rumänien",
-    "titleHtml": "Jeder Einsatz <span class=\"text-secondary\">korrekt entlohnt.</span>",
-    "subtitle": "Klacks teilt Objekte und Teams ein &mdash; mit dem ab Juli 2026 steigenden Mindestlohn und der gesetzlichen Nachtarbeits-Regelung automatisch berücksichtigt.",
+    "titleHtml": "Jeder Einsatz <span class=\"text-secondary\">sauber dokumentiert.</span>",
+    "subtitle": "Klacks teilt Objekte und Teams ein und liefert die Stunden und Zeitzuschläge für Ihre Lohnbuchhaltung &mdash; Mindestlohn (ab Juli 2026 steigend) und die gesetzliche Nachtarbeits-Regelung bleiben dort.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Rumänien",
     "screenshotLabel": "Dienstplan"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks rumänische Reinigungsdienste entlastet",
-    "subtitle": "Vom korrekten Mindestlohn bis zur Nachtarbeits-Wahl &mdash; alles greift ineinander.",
+    "subtitle": "Von der Stundenbasis für die Lohnbuchhaltung bis zur Nachtarbeits-Wahl &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -41,12 +41,12 @@
       },
       {
         "icon": "payments",
-        "title": "Mindestlohn zum Stichtag hinterlegt",
-        "text": "Klacks hinterlegt den ab 1. Juli 2026 geltenden Mindestlohn von 4.325 RON als Referenzwert für Ihre Personalplanung."
+        "title": "Stundenbasis für die Lohnbuchhaltung",
+        "text": "Klacks erfasst die geleisteten Stunden je Person als Basis für Ihre Lohnbuchhaltung; der Mindestlohn (ab 1. Juli 2026: 4.325 RON) und die Lohnberechnung liegen dort, nicht in Klacks."
       },
       {
         "icon": "bedtime",
-        "title": "Nachtarbeit korrekt gewählt",
+        "title": "Nachtarbeit nach Betriebswahl",
         "text": "Klacks bildet wahlweise den 25%-Zuschlag oder die um 1 Stunde verkürzte Tagesarbeitszeit für Nachteinsätze ab &mdash; je nach betrieblicher Wahl."
       },
       {
@@ -68,12 +68,12 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Nachtreinigung, Mindestlohn, ein Plan",
-    "text": "Klacks rechnet Nachteinsätze automatisch mit dem passenden Zuschlagmodell und hinterlegt den ab 1. Juli 2026 geltenden Mindestlohn von 4.325 RON als Referenzwert."
+    "title": "Nachtreinigung, Zeitzuschlag, ein Plan",
+    "text": "Klacks schreibt Nachteinsätze automatisch mit dem passenden Zuschlagmodell als Zeitgutschrift gut; den ab 1. Juli 2026 geltenden Mindestlohn von 4.325 RON wendet Ihre Lohnbuchhaltung an."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Mindestlohn, Nachtzuschlag und Routen übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Stundenbasis, Nachtzuschlag-Gutschriften und Routen übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

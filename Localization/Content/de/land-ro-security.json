@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks rumänische Sicherheitsdienste entlastet",
-    "subtitle": "Vom besetzten Posten bis zur korrekten Ruhezeit &mdash; alles greift ineinander.",
+    "subtitle": "Vom besetzten Posten bis zur überwachten Ruhezeit &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "shield",
@@ -42,7 +42,7 @@
       {
         "icon": "schedule",
         "title": "12-Stunden-Grenze &amp; 24-Stunden-Ruhezeit überwacht",
-        "text": "Klacks warnt, sobald eine Schicht die 12-Stunden-Grenze überschreitet, und plant danach automatisch die 24-Stunden-Ruhezeit mit ein &mdash; so werden 24/24-Dauerschichten sofort sichtbar. Auf Wunsch blockiert Klacks eine Überschreitung der 12-Stunden-Grenze konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks warnt, sobald eine Schicht die 12-Stunden-Grenze überschreitet, und prüft danach die 24-Stunden-Ruhezeit &mdash; so werden 24/24-Dauerschichten sofort sichtbar. Auf Wunsch blockiert Klacks eine Überschreitung der 12-Stunden-Grenze in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "swap_horiz",
@@ -52,7 +52,7 @@
       {
         "icon": "pause_circle",
         "title": "Pausenregelung je Betriebsvereinbarung",
-        "text": "Klacks bildet die im CCM oder in der Arbeitsordnung festgelegte Pausenregelung ab &mdash; inklusive der Frage, ob die Pause als Arbeitszeit gilt."
+        "text": "Klacks plant Pausen nicht automatisch; die im CCM oder in der Arbeitsordnung festgelegte Pausenregelung hinterlegen Sie je Dienst."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "12-Stunden-Schicht, 24-Stunden-Ruhe, ein Plan",
-    "text": "Klacks plant automatisch die 24-Stunden-Ruhezeit nach jeder 12-Stunden-Schicht ein und macht unzulässige 24/24-Dauerschichten sofort sichtbar &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks prüft die 24-Stunden-Ruhezeit nach jeder 12-Stunden-Schicht und macht unzulässige 24/24-Dauerschichten sofort sichtbar &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

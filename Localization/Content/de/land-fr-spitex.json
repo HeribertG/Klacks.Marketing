@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für ambulante Pflege in Frankreich (Aide à domicile)",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit Fahrzeiten als vollwertiger Arbeitszeit (CCN BAD), dokumentierten Kilometern als Basis für die Pauschale und den freien Sonntagen im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit einem festen Fahrzeitwert pro Einsatz als Arbeitszeit (CCN BAD) und den freien Sonntagen im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Aide à domicile",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die Aide à domicile entlastet",
-    "subtitle": "Von der automatischen Tour bis zur dokumentierten Kilometerbasis &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Tour bis zu den eingeplanten Fahrzeiten &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,18 +46,18 @@
       },
       {
         "icon": "payments",
-        "title": "Fahrzeiten als Arbeitszeit, Kilometer dokumentiert",
-        "text": "Fahrzeiten zwischen Patient:innen zählen als Arbeitszeit (CCN BAD) und werden entsprechend erfasst; die gefahrenen Kilometer dokumentiert Klacks als Grundlage, die Ihre Lohnabrechnung für die Pauschale von 0,40 €/km (Avenant n° 76/2026) braucht."
+        "title": "Fahrzeiten als Arbeitszeit eingeplant",
+        "text": "Fahrzeiten zwischen Patient:innen lassen sich als fester Zeitwert pro Einsatz hinterlegen und zählen als Arbeitszeit (CCN BAD). Die gefahrenen Kilometer und die Pauschale von 0,40 €/km (Avenant n° 76/2026) erfasst und berechnet Klacks nicht &mdash; das bleibt Aufgabe Ihrer Lohnabrechnung."
       },
       {
         "icon": "event_available",
         "title": "Sonntagsruhe im Blick",
-        "text": "Die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick: Die freien Sonntage werden im rollierenden Fenster überwacht (mindestens 2 freie Sonntage pro Monat), Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht, und blockiert sie auf Wunsch hart."
+        "text": "Die vorgeschriebenen freien Sonntage behält Klacks automatisch im Blick: Die freien Sonntage werden im rollierenden Fenster überwacht (mindestens 2 freie Sonntage pro Monat), Nachtdienste, die in den Sonntag hineinreichen, zählen dabei korrekt als belegt &mdash; Überschreitungen macht Klacks sichtbar, bevor der Dienstplan steht, und blockiert sie in den automatischen Planungswegen auf Wunsch."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI."
       },
       {
         "icon": "event_busy",
@@ -68,12 +68,12 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Mehrere Touren, ein Sonntagsdienst, dokumentierte Kilometer",
-    "text": "Eine ambulante Pflegeorganisation in Frankreich plant Touren mit wechselnden Patient:innen. Klacks rechnet Fahrzeiten als Arbeitszeit ein, dokumentiert die gefahrenen Kilometer als Basis für die Pauschale und überwacht die vorgeschriebenen freien Sonntage im rollierenden Fenster &mdash; ohne Nachrechnen von Hand."
+    "title": "Mehrere Touren, ein Sonntagsdienst, feste Fahrzeiten",
+    "text": "Eine ambulante Pflegeorganisation in Frankreich plant Touren mit wechselnden Patient:innen. Klacks berücksichtigt den hinterlegten Fahrzeitwert pro Einsatz als Arbeitszeit und überwacht die vorgeschriebenen freien Sonntage im rollierenden Fenster &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Aide à domicile erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Fahrzeiten und Kilometerdokumentation übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Fahrzeiten und freie Sonntage übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -1,11 +1,11 @@
 {
   "pageTitle": "Installare Klacks: installer guidato o Docker Compose con il pacchetto paese | Klacks",
-  "metaDescription": "Installate Klacks sulla vostra infrastruttura: installer guidato o stack Docker Compose, preconfigurato con giorni festivi, regole sull'orario di lavoro e maggiorazioni del vostro paese. Senza costi di licenza, open source, senza registrazione.",
+  "metaDescription": "Installate Klacks sulla vostra infrastruttura: installer guidato o stack Docker Compose, preconfigurato con giorni festivi, regole sull'orario di lavoro e, dove definite per il vostro paese, maggiorazioni. Senza costi di licenza, open source, senza registrazione.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installazione &middot; Senza costi di licenza &amp; open source",
     "titleHtml": "Gestite Klacks in autonomia &mdash; <span class=\"text-secondary\">sulla vostra infrastruttura.</span>",
-    "subtitle": "Due strade, un unico risultato: l'installer guidato oppure lo stack Docker Compose per la vostra configurazione. Il pacchetto paese porta con sé giorni festivi, regole sull'orario di lavoro, maggiorazioni e preimpostazioni di settore del vostro paese &mdash; senza registrazione, senza costi di licenza."
+    "subtitle": "Due strade, un unico risultato: l'installer guidato oppure lo stack Docker Compose per la vostra configurazione. Il pacchetto paese porta con sé giorni festivi, regole sull'orario di lavoro e preimpostazioni di settore del vostro paese (maggiorazioni dove definite per il paese) &mdash; senza registrazione, senza costi di licenza."
   },
   "industry": {
     "eyebrow": "Pacchetto paese",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Solo il profilo &mdash; per installazioni esistenti",
-    "text": "Klacks è già in funzione? Il profilo (JSON) contiene le preimpostazioni del paese &mdash; giorni festivi, regole sull'orario di lavoro, maggiorazioni e settori &mdash; e viene applicato al primo avvio di un'installazione. È anche il modo per aggiungere in seguito un altro settore con le sue preimpostazioni.",
+    "text": "Klacks è già in funzione? Il profilo (JSON) contiene le preimpostazioni del paese &mdash; giorni festivi, regole sull'orario di lavoro, maggiorazioni (dove definite per il paese) e settori &mdash; e viene applicato al primo avvio di un'installazione. È anche il modo per aggiungere in seguito un altro settore con le sue preimpostazioni.",
     "downloadLabel": "Scarica il profilo (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Da sapere",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Il codice sorgente completo è pubblico su GitHub con licenza AGPL-3.0 &mdash; nessun costo di licenza, nessun vendor lock-in." },
-      { "icon": "storage", "title": "I dati restano in azienda", "text": "Klacks gira sulla vostra infrastruttura. I dati del personale e dei turni non lasciano mai il vostro server &mdash; nessun cloud obbligato." },
+      { "icon": "storage", "title": "I dati restano in azienda", "text": "Klacks gira sulla vostra infrastruttura. I dati del personale e dei turni si trovano sul vostro server &mdash; nessun cloud obbligato. Le richieste partono verso un fornitore di IA esterno solo se ne scegliete uno; con un modello locale tutto resta in azienda." },
       { "icon": "update", "title": "Aggiornamenti", "text": "L'installazione fissa l'ultima versione pubblicata. Un servizio di aggiornamento nello stack applica automaticamente le nuove versioni pubblicate." },
       { "icon": "lock", "title": "HTTPS fin dall'inizio", "text": "L'installer genera un certificato autofirmato per partire &mdash; potete passare in qualsiasi momento a un certificato vostro. Cambiate la password iniziale subito dopo il primo accesso." }
     ]

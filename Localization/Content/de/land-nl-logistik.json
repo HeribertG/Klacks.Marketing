@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in den Niederlanden",
     "titleHtml": "Touren, Toeslagen, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der neuen Overuren-Gleichstellung von Teil- und Vollzeit ab 1.1.2026 sowie den Wochenend- und Nachtzuschlägen der CAO Beroepsgoederenvervoer automatisch berücksichtigt.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der neuen Overuren-Gleichstellung von Teil- und Vollzeit ab 1.1.2026 sowie den Wochenend- und Nachtzuschlägen der CAO Beroepsgoederenvervoer als hinterlegte Regeln und Zeitgutschriften berücksichtigt.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in den Niederlanden",
     "screenshotLabel": "Timeline"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Wie Klacks die niederländische Logistik entlastet",
-    "subtitle": "Von der korrekten Overuren-Berechnung bis zur optimierten Tour &mdash; alles greift ineinander.",
+    "subtitle": "Von der Overuren-Erfassung bis zur optimierten Tour &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "timer", "title": "Overuren korrekt nach Reform 2026 berechnet", "text": "Klacks rechnet Überstunden für Teilzeit- und Vollzeitkräfte gleich &mdash; ab der individuell vereinbarten Arbeitszeit, nicht erst ab der 41. Wochenstunde." },
-      { "icon": "paid", "title": "Wochenend- und Feiertagszuschläge automatisch", "text": "Die 150%-Samstagsvergütung und die 200%-Sonn-/Feiertagsvergütung werden automatisch angewendet." },
-      { "icon": "nightlight", "title": "Nachtzuschlag eintägiger Fahrten abgebildet", "text": "Klacks bildet den 19%-Nachtzuschlag als Zeitfenster-Zuschlag ab und löst die Samenloop-Regel korrekt auf &mdash; nur der höhere Zuschlag wird gezahlt." },
+      { "icon": "timer", "title": "Overuren nach Reform 2026 erfasst", "text": "Klacks zählt Überstunden für Teilzeit- und Vollzeitkräfte gleich &mdash; ab der individuell vereinbarten Arbeitszeit, nicht erst ab der 41. Wochenstunde." },
+      { "icon": "paid", "title": "Wochenend- und Feiertagszuschläge als Zeitgutschrift", "text": "Die Zuschläge für Samstag (150% des Stundenlohns) und Sonn-/Feiertag (200%) hinterlegen Sie als Zuschlagsregeln; Klacks erfasst sie als Zeitzuschlag, Beträge berechnet Klacks nicht." },
+      { "icon": "nightlight", "title": "Nachtzuschlag eintägiger Fahrten abgebildet", "text": "Klacks bildet den 19%-Nachtzuschlag als Zeitfenster-Zuschlag ab und löst die Samenloop-Regel auf &mdash; angesetzt wird nur der höhere Zuschlag." },
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "badge", "title": "Rijbewijs-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Jansen ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Toeslagen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Samstagstour mit Nachtfahrt, ein Plan",
-    "text": "Klacks bildet sowohl den 150%-Wochenendzuschlag als auch den 19%-Nachtzuschlag als Zeitfenster-Zuschläge ab und löst die Samenloop-Regel korrekt auf &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks bildet sowohl den 150%-Wochenendzuschlag als auch den 19%-Nachtzuschlag als Zeitfenster-Zuschläge ab und löst die Samenloop-Regel auf &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Pour l'hôtellerie &amp; la restauration",
     "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés équitablement.</span>",
-    "subtitle": "Klacks planifie le service, la cuisine et les étages &mdash; avec services fractionnés, majorations pour dimanches et jours fériés et temps de repos légaux qui ne peuvent pas être contournés en silence. Les pics saisonniers et les absences sont absorbés automatiquement par la planification.",
+    "subtitle": "Klacks planifie le service, la cuisine et les étages &mdash; avec services fractionnés, majorations pour dimanches et jours fériés et un contrôle des temps de repos légaux qui rend les infractions immédiatement visibles. Les pics saisonniers et les absences sont absorbés automatiquement par la planification.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les plannings dans l'hôtellerie et la restauration",
     "screenshotLabel": "Chronologie"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Services fractionnés planifiés proprement",
-        "text": "Klacks planifie les blocs de midi et du soir de manière à respecter les temps de repos minimums et les durées journalières maximales &mdash; chaque dépassement est immédiatement signalé."
+        "text": "Klacks planifie les blocs de midi et du soir et les vérifie par rapport aux temps de repos minimums et aux durées journalières maximales &mdash; chaque dépassement est immédiatement signalé."
       },
       {
         "icon": "timer",
         "title": "Temps de repos sous contrôle",
-        "text": "Les limites légales des temps de repos sont surveillées en temps réel &mdash; les infractions sont immédiatement visibles. Sur demande, Klacks les bloque systématiquement : en mode blocage, une infraction ne peut être enregistrée qu'avec une autorisation documentée du supérieur."
+        "text": "Les limites légales des temps de repos sont vérifiées en continu &mdash; les infractions sont immédiatement visibles. Par défaut, Klacks avertit ; sur demande, un mode blocage peut être activé pour la planification automatique (assistant de planification, propositions, remplacement en cas d'absence)."
       },
       {
         "icon": "payments",
         "title": "Majorations automatiques",
-        "text": "Les majorations de nuit, de dimanche et de jour férié sont calculées automatiquement par Klacks &mdash; configurables par pays et règlement, sans retraitement manuel lors de la préparation des salaires."
+        "text": "Les majorations de nuit, de dimanche et de jour férié sont créditées automatiquement par Klacks sous forme de crédits de temps &mdash; configurables par pays et règlement, comme base pour la gestion de la paie."
       },
       {
         "icon": "badge",

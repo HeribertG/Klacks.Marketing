@@ -4,7 +4,7 @@
     "badgeIcon": "balance",
     "badge": "Open Source · Ohne Lizenzgebühren · Italienischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. Die Planung arbeitet dabei regelbasiert und nachvollziehbar statt mit intransparenter algorithmischer Fernkontrolle &mdash; das erleichtert die nach Art. 4 Statuto dei Lavoratori (Legge n. 300/1970) nötige Einigung mit RSU/RSA oder die Genehmigung des Ispettorato del Lavoro.",
+    "subtitle": "Klacks plant Dienste automatisch, optimiert Touren und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, auf Wunsch mit lokalem KI-Modell. Die Planung arbeitet dabei regelbasiert und nachvollziehbar statt mit intransparenter algorithmischer Fernkontrolle &mdash; das erleichtert die nach Art. 4 Statuto dei Lavoratori (Legge n. 300/1970) nötige Einigung mit RSU/RSA oder die Genehmigung des Ispettorato del Lavoro.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Italien",
     "screenshotLabel": "Dienstplan"
@@ -67,7 +67,7 @@
       {
         "icon": "gavel",
         "title": "Arbeitszeit- &amp; Ruhezeitregeln automatisch geprüft",
-        "text": "Normalarbeitszeit, Höchstarbeitszeit und die Ruhezeit von mindestens 11 Stunden zwischen zwei Diensten werden je nach hinterlegtem CCNL in Echtzeit überwacht (D.Lgs. 66/2003, Art. 7 &amp; 9). Auf Wunsch blockiert Klacks Verstöße gegen diese Grenzen konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Normalarbeitszeit, Höchstarbeitszeit und die Ruhezeit von mindestens 11 Stunden zwischen zwei Diensten werden je nach hinterlegtem CCNL in Echtzeit überwacht (D.Lgs. 66/2003, Art. 7 &amp; 9). Auf Wunsch blockiert Klacks Verstöße gegen diese Grenzen in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung) im Block-Modus (pro Regelart konfigurierbar); bei manueller Planung warnt Klacks."
       },
       {
         "icon": "route",
@@ -77,12 +77,12 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personaldaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI, was die Vorgaben des Garante Privacy in eigener Regie erleichtert."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personaldaten bleiben in Ihrem Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI, was die Vorgaben des Garante Privacy in eigener Regie erleichtert."
       },
       {
         "icon": "code",
         "title": "Open Source: nachvollziehbar &amp; anpassbar",
-        "text": "Der Quellcode liegt offen &mdash; Sie sehen, was Klacks tut, und schaffen damit die Transparenz, die Art. 4 Statuto dei Lavoratori gegenüber RSU/RSA verlangt."
+        "text": "Der Quellcode liegt offen &mdash; Sie sehen, was Klacks tut, und schaffen damit eine Grundlage für die Transparenz, die Art. 4 Statuto dei Lavoratori gegenüber RSU/RSA verlangt."
       },
       {
         "icon": "science",
@@ -94,14 +94,14 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent mit freier Modellwahl",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet und lässt sich mit dem KI-Modell Ihrer Wahl betreiben &mdash; auch lokal gehostet. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass jeder Vorschlag nachvollziehbar bleibt: keine intransparente algorithmische Fernkontrolle im Sinne von Art. 4 Statuto dei Lavoratori, sondern regelbasierte, erklärbare Planung.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet und lässt sich mit dem KI-Modell Ihrer Wahl betreiben &mdash; auch lokal gehostet. Ein hinterlegtes Skills- und Regelsystem hilft, jeden Vorschlag nachvollziehbar zu halten: regelbasierte, erklärbare Planung statt intransparenter algorithmischer Fernkontrolle.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Dienstplan, mehrere Tarifverträge im Griff",
-    "text": "Ein Betrieb mit unterschiedlichen CCNL für verschiedene Teams plant Schichten, Klacks prüft automatisch die jeweils geltende Normalarbeitszeit und die 11-Stunden-Ruhezeit &mdash; nachvollziehbar für RSU/RSA und ohne dass Personaldaten das Haus verlassen."
+    "text": "Ein Betrieb mit unterschiedlichen CCNL für verschiedene Teams plant Schichten, Klacks prüft automatisch die jeweils geltende Normalarbeitszeit und die 11-Stunden-Ruhezeit &mdash; nachvollziehbar für RSU/RSA und mit Personaldaten im eigenen Haus."
   },
   "showRoutePlanning": false,
   "cta": {

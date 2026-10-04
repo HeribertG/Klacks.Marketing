@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Untuk Jasa Keamanan Satpam di Indonesia",
-    "titleHtml": "Setiap pos terisi. <span class=\"text-secondary\">Setiap tunjangan tepat.</span>",
-    "subtitle": "Klacks mengisi objek tanpa celah, memantau secara langsung shift lebih dari 12 jam di roster, dan atas permintaan memblokir pelanggaran tersebut secara ketat &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. Terpasang di tempat Anda, sehingga data penugasan Anda tetap berada di tangan Anda.",
+    "titleHtml": "Setiap pos terpantau. <span class=\"text-secondary\">Setiap tambahan tercatat.</span>",
+    "subtitle": "Klacks menampilkan pos kosong secara langsung, memberi peringatan langsung di roster untuk shift lebih dari 12 jam, dan atas permintaan mencegah pelanggaran tersebut pada jalur perencanaan otomatis &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. Terpasang di tempat Anda, sehingga data penugasan Anda tetap berada di tangan Anda.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk penempatan objek jasa keamanan di Indonesia",
     "screenshotLabel": "Timeline"
@@ -27,27 +27,27 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban jasa keamanan Indonesia",
-    "subtitle": "Dari batas waktu yang dipantau hingga pos yang terisi &mdash; semuanya saling terhubung.",
+    "subtitle": "Dari batas waktu yang dipantau hingga gambaran pos yang kosong &mdash; semuanya saling terhubung.",
     "items": [
       {
         "icon": "block",
         "title": "Batas harian 12 jam dipantau langsung",
-        "text": "Klacks secara otomatis memberi peringatan begitu sebuah shift melewati batas 12 jam (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26, karena batas harian ini tidak memberi ruang untuk perpanjangan yang tidak direncanakan. Atas permintaan, Klacks memblokir pelanggaran ini secara ketat &mdash; pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi."
+        "text": "Klacks memberi peringatan begitu sebuah shift melewati batas 12 jam (8 jam + 4 jam lembur) dari PP 35/2021 Pasal 26, karena batas harian ini tidak memberi ruang untuk perpanjangan yang tidak direncanakan. Atas permintaan, mode blokir dapat diaktifkan untuk mencegah pelanggaran baru pada jalur perencanaan otomatis (perencana otomatis, usulan, pencarian pengganti); pada perencanaan manual tetap berupa peringatan."
       },
       {
         "icon": "shield",
-        "title": "Objek &amp; pos tanpa celah",
+        "title": "Objek &amp; pos terpantau",
         "text": "Setiap pos di seluruh objek &mdash; Klacks langsung menampilkan setiap posisi kosong dan mengisinya secara otomatis atas permintaan."
       },
       {
         "icon": "calculate",
-        "title": "Tunjangan lembur dihitung dengan tepat",
-        "text": "Klacks menghitung tingkat 1,5× dan 2,0× untuk lembur hari kerja sesuai PP 35/2021 Pasal 31 secara otomatis &mdash; hingga batas penuh 12 jam per hari."
+        "title": "Tambahan lembur sebagai kredit waktu",
+        "text": "Tingkatan 1,5× dan 2,0× untuk lembur hari kerja berasal dari PP 35/2021 Pasal 31 &mdash; hingga batas penuh 12 jam per hari. Klacks mencatat tambahan waktu yang disimpan sebagai kredit jam dan tidak menghitung upah."
       },
       {
         "icon": "verified",
-        "title": "Sertifikat diperiksa secara otomatis",
-        "text": "Klacks memeriksa kartu identitas Satpam pada setiap penugasan dan memberi peringatan tepat waktu sebelum bukti tersebut kedaluwarsa. Atas permintaan, Klacks memblokir penugasan kepada petugas dengan bukti izin wajib yang telah kedaluwarsa sepenuhnya &mdash; hanya petugas dengan kartu identitas yang masih berlaku yang akan dijadwalkan."
+        "title": "Sertifikat terpantau",
+        "text": "Klacks memperhitungkan kartu identitas Satpam saat penugasan dan memberi peringatan tepat waktu sebelum bukti tersebut kedaluwarsa. Jika bukti wajib tidak ada atau telah kedaluwarsa, Klacks menolak penugasan, termasuk pada penugasan manual."
       },
       {
         "icon": "shield_lock",
@@ -57,7 +57,7 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy memahami kalimat Anda",
-        "text": "“Isi shift malam untuk objek Utara” saja sudah cukup &mdash; Klacksy memulai perencanaan, Klacks memeriksa batas harian, tunjangan, dan sertifikat."
+        "text": "“Isi shift malam untuk objek Utara” saja sudah cukup &mdash; Klacksy memulai perencanaan, Klacks memeriksa batas harian dan sertifikat serta mencatat tambahan waktu."
       }
     ]
   },

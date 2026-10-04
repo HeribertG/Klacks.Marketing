@@ -42,7 +42,7 @@
       {
         "icon": "gavel",
         "title": "Temps de repos surveillés automatiquement",
-        "text": "La limite de 9h/10h pour les services continus (Art. 7) et le repos de 12 heures pour le personnel non médical (Art. 6) sont surveillés en temps réel &mdash; comme limite ferme pour les plannings créés automatiquement, et Klacks rend immédiatement visible tout dépassement lors d'ajustements manuels &mdash; et les bloque strictement sur demande : en mode blocage, toute nouvelle infraction ne peut être enregistrée qu'avec une autorisation documentée du responsable hiérarchique (configurable par type de règle)."
+        "text": "La limite de 9h/10h pour les services continus (Art. 7) et le repos de 12 heures pour le personnel non médical (Art. 6) sont vérifiés par rapport à vos règles enregistrées &mdash; lors d'ajustements manuels, Klacks rend immédiatement visible tout dépassement, et pour les plannings créés automatiquement, Klacks les bloque sur demande en mode blocage (configurable par type de règle)."
       },
       {
         "icon": "verified",
@@ -52,7 +52,7 @@
       {
         "icon": "shield_lock",
         "title": "Installé chez vous : les données restent dans l'établissement",
-        "text": "Klacks fonctionne sur votre infrastructure. Les données du personnel et des patients ne quittent jamais l'hôpital &mdash; pas même pour l'IA, ce qui facilite la conformité CNIL."
+        "text": "Klacks fonctionne sur votre infrastructure. Les données du personnel et des patients restent à l'hôpital &mdash; avec un modèle d'IA hébergé localement, également côté IA, ce qui facilite le respect des exigences de la CNIL."
       },
       {
         "icon": "smart_toy",

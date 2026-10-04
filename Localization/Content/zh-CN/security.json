@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "面向安保企业",
     "titleHtml": "每个岗位都有人值守。<span class=\"text-secondary\">每项证明都有据可查。</span>",
-    "subtitle": "Klacks 为场所与巡逻实现无缝排班 &mdash; 仅安排持有有效证书的人员,并采用优化后的路线。本地部署,确保您的作业与客户数据始终留在您手中。",
+    "subtitle": "Klacks 为场所与巡逻实现无缝排班 &mdash; 并检查证书是否有效,采用优化后的路线。本地部署,确保您的作业与客户数据始终留在您手中。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 时间轴视图,用于巡逻与场所排班",
     "screenshotLabel": "时间轴",
@@ -24,7 +24,7 @@
     "subtitle": "从岗位配置到路线优化 &mdash; 环环相扣。",
     "items": [
       { "icon": "shield", "title": "场所 &amp; 岗位无缝覆盖", "text": "所有场所的每个岗位一目了然 &mdash; Klacks 会立即显示每一处空缺,并可按需自动补齐。" },
-      { "icon": "verified", "title": "证书自动核验", "text": "Klacks 只会将任务分配给持有有效证件的人员 &mdash; 并在证明即将过期前发出提醒。" },
+      { "icon": "verified", "title": "证书自动核验", "text": "Klacks 在每次分配时检查证件 &mdash; 并在证明即将过期前发出提醒。" },
       { "icon": "route", "title": "巡逻路线优化", "text": "针对外勤任务,Klacks 会规划巡逻路线,使路程更短、间隔时间得到遵守。" },
       { "icon": "schedule", "title": "24/7 轮班", "text": "白班、夜班与周末班次公平轮换 &mdash; 津贴与休息时间自动纳入考量。" },
       { "icon": "smart_toy", "title": "Klacksy 听懂您的一句话", "text": "只需说「安排北区场所的夜班」&mdash; Klacksy 启动排班,由 Klacks 核查证件与空闲时间。" },

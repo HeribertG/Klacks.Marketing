@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For hjemmetjeneste &amp; hjemmesykepleie i Norge",
     "titleHtml": "Mer tid til pleie, <span class=\"text-secondary\">mindre til reisetidsberegning.</span>",
-    "subtitle": "Klacks planlegger oppdrag og kjøring automatisk &mdash; inkludert reisetid mellom klienter som full arbeidstid og korrekt forkortet hviletid ved delte vakter (delt vakt). Installert hos deg, slik at pasientdata aldri forlater huset ditt.",
+    "subtitle": "Klacks planlegger oppdrag og kjøring automatisk &mdash; inkludert en fast reisetidsverdi per vakt som arbeidstid og forkortet hviletid ved delte vakter (delt vakt). Installert hos deg, slik at pasientdata ikke trenger å forlate huset ditt &mdash; på ønske med lokalt hostet KI-modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for ruteplanlegging i hjemmetjenesten i Norge",
     "screenshotLabel": "Tidslinje"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Slik avlaster Klacks den norske hjemmetjenesten",
-    "subtitle": "Fra den automatiske ruten til den korrekt forkortede hviletiden &mdash; alt spiller sammen.",
+    "subtitle": "Fra den automatiske ruten til den forkortede hviletiden &mdash; alt spiller sammen.",
     "items": [
       { "icon": "route", "title": "Ruter optimert automatisk", "text": "Klacks legger oppdragsruter slik at veier blir korte og tidsvinduer overholdes &mdash; med bil, sykkel eller til fots." },
-      { "icon": "schedule", "title": "Reisetid korrekt registrert som arbeidstid", "text": "Kjøring mellom klienter regnes automatisk som arbeidstid &mdash; bare første og siste tur holdes utenfor." },
+      { "icon": "schedule", "title": "Reisetid som arbeidstid lagt inn", "text": "For hver vakt kan det legges inn en fast reisetidsverdi som regnes som arbeidstid &mdash; faktiske kjøretider mellom klientene beregner Klacks ikke enkeltvis." },
       { "icon": "bedtime", "title": "Delt vakt med hviletidsregel lagt inn", "text": "Ved delte vakter anvender Klacks den daglige hviletiden forkortet til minst 8 timer etter § 10-8 tredje ledd som en konfigurerbar regel &mdash; den obligatoriske kompensasjonshvilen sikrer du i tillegg i vaktplanen." },
       { "icon": "verified", "title": "Kvalifikasjoner tas automatisk hensyn til", "text": "Hvert oppdrag tildeles bare personer med riktig kvalifikasjon &mdash; helt uten manuell kontroll." },
-      { "icon": "shield_lock", "title": "Installert hos deg: data blir i huset", "text": "Klacks kjører på din egen infrastruktur. Pasientdata forlater ikke huset ditt &mdash; heller ikke til KI-en." },
+      { "icon": "shield_lock", "title": "Installert hos deg: data blir i huset", "text": "Klacks kjører på din egen infrastruktur. Pasientdata forlater ikke huset ditt &mdash; med lokalt hostet KI-modell heller ikke til KI-en." },
       { "icon": "smart_toy", "title": "Klacksy forstår setningen din", "text": "«Fyll morgendagens ruter» er nok. Ved sykdom foreslår Klacksy umiddelbart tilgjengelig erstatning." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Reisetid, delt vakt, én plan",
-    "text": "Klacks regner den registrerte kjøretiden mellom klienter inn som arbeidstid, og anvender ved delte vakter den til 8 timer forkortede hviletiden som en lagt inn regel &mdash; å holde oversikt over den obligatoriske kompensasjonshvilen er fortsatt ditt ansvar."
+    "text": "Klacks regner den innlagte reisetidsverdien per vakt som arbeidstid, og anvender ved delte vakter den til 8 timer forkortede hviletiden som en lagt inn regel &mdash; å holde oversikt over den obligatoriske kompensasjonshvilen er fortsatt ditt ansvar."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
-    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">CCN-HCR-sicher geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage nach dem allgemeinverbindlichen Branchen-Tarifvertrag CCN HCR &mdash; inklusive Kategorie-Tagesmaxima (Köche 11h, Réception/Nachtwache 12h), Nachtfenster 22 bis 7 Uhr und zwei Ruhetagen pro Woche.",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">mit CCN-HCR-Grenzen geplant.</span>",
+    "subtitle": "Klacks plant Service, Küche und Etage und prüft gegen die Grenzen des allgemeinverbindlichen Branchen-Tarifvertrags CCN HCR &mdash; etwa Kategorie-Tagesmaxima (Köche 11h, Réception/Nachtwache 12h), Nachtfenster 22 bis 7 Uhr und zwei Ruhetagen pro Woche.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie",
     "screenshotLabel": "Timeline"
@@ -37,12 +37,12 @@
       {
         "icon": "schedule",
         "title": "HCR-Grenzen pro Kategorie",
-        "text": "Klacks kennt die CCN-HCR-Tagesmaxima je Funktion &mdash; 11h, 11h30 oder 12h &mdash; und macht jede Überschreitung sofort sichtbar, bevor der Plan veröffentlicht wird."
+        "text": "Die CCN-HCR-Tagesmaxima je Funktion &mdash; 11h, 11h30 oder 12h &mdash; hinterlegen Sie als Regel; Klacks macht jede Überschreitung sofort sichtbar, bevor der Plan veröffentlicht wird."
       },
       {
         "icon": "hotel",
         "title": "Saison-Ruhezeit mit Ausgleich",
-        "text": "Die saisonale Verkürzung auf 10 Stunden Ruhezeit lässt sich als Regel hinterlegen &mdash; Klacks überwacht die vorgeschriebene Kompensation von 20 Minuten pro Anwendung automatisch mit."
+        "text": "Die saisonale Verkürzung auf 10 Stunden Ruhezeit lässt sich als Regel hinterlegen &mdash; die vorgeschriebene Kompensation von 20 Minuten pro Anwendung verfolgt Klacks nicht eigenständig."
       },
       {
         "icon": "event_available",
@@ -52,7 +52,7 @@
       {
         "icon": "nights_stay",
         "title": "Nachtfenster 22 bis 7 Uhr",
-        "text": "Das HCR-Nachtfenster von 22:00 bis 7:00 Uhr ist hinterlegt &mdash; Nachtarbeit wird korrekt erkannt und ausgewiesen, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "text": "Das HCR-Nachtfenster von 22:00 bis 7:00 Uhr ist hinterlegt &mdash; Nachtarbeit wird erkannt und ausgewiesen &mdash; als Stundenbasis für Ihre Lohnvorbereitung."
       },
       {
         "icon": "smart_toy",

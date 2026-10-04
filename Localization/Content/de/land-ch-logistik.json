@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Arbeits- &amp; Ruhezeiten nach ARV 1 geprüft",
-        "text": "Klacks prüft die Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, laufend und warnt frühzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die 9 Stunden Lenkzeit und die Pause nach 4,5 Stunden prüft Klacks nicht &mdash; sie werden weiter über die Fahrtenschreiberdaten nachgewiesen."
+        "text": "Klacks prüft die Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, laufend und warnt frühzeitig vor einer Überschreitung. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung. Die 9 Stunden Lenkzeit und die Pause nach 4,5 Stunden prüft Klacks nicht &mdash; sie werden weiter über die Fahrtenschreiberdaten nachgewiesen."
       },
       {
         "icon": "fact_check",
@@ -57,7 +57,7 @@
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks berücksichtigt bei der Tourenzuteilung die passende Führerausweis-Kategorie und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "text": "Klacks berücksichtigt bei der Tourenzuteilung die passende Führerausweis-Kategorie und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
       },
       {
         "icon": "smart_toy",

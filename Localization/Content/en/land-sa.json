@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks for Businesses in Saudi Arabia | Workforce Scheduling under Art. 101, PDPL & Nitaqat",
+  "pageTitle": "Klacks for Businesses in Saudi Arabia | Workforce Scheduling with Art. 101 Checks & Local Data Hosting",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Without license fees &middot; PDPL/SDAIA Compliant",
+    "badge": "Open Source &middot; Without license fees &middot; Data Hosted in Saudi Arabia",
     "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">monitors the 12-hour limit live.</span>",
-    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour daily limit (Art. 101), optionally with a hard block, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia, in line with PDPL and SDAIA.",
+    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour daily limit (Art. 101), optionally with a hard block in automatic planning, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia (with a locally hosted AI model, also for AI use), in line with PDPL and SDAIA.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -20,7 +20,7 @@
       },
       {
         "icon": "nightlight",
-        "title": "Ramadan: Shorter Shifts, Automatically",
+        "title": "Ramadan: Shorter Working Hours",
         "text": "For Muslim staff, actual working hours mandatorily drop during شهر رمضان (Shahr Ramadan) to a maximum of 6 hours per day or 36 hours per week &mdash; recalculated every year for exactly this group."
       },
       {
@@ -62,32 +62,32 @@
       {
         "icon": "gavel",
         "title": "Standard Hours &amp; 6-Day Limit Monitored",
-        "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded. On request, Klacks blocks the excess as a hard block."
+        "text": "Klacks knows the 8h/48h limit (Art. 98) and the new rule of max. 6 consecutive working days without a rest day &mdash; Klacks monitors both limits live and warns in time before either is exceeded. On request, Klacks hard-blocks the excess in automatic planning; with manual planning it stays at a warning."
       },
       {
         "icon": "nightlight",
         "title": "Ramadan Hours Configurable as a Rule",
-        "text": "For Muslim staff, the reduced 6h/36h limit (Art. 98) for Ramadan can be configured as a separate rule &mdash; without manually reworking the entire plan."
+        "text": "For Muslim staff, the reduced 6h/36h limit (Art. 98) for Ramadan can be configured as a separate rule &mdash; Klacks checks the schedule against it and warns when it is exceeded."
       },
       {
         "icon": "timer_off",
         "title": "12-Hour Limit Monitored Live (Art. 101)",
-        "text": "Klacks checks the configured 12-hour daily limit live and warns immediately if a person would be scheduled for longer on a single day. On request, Klacks enforces such violations as a hard block: in block mode, a new violation can only be saved with documented supervisor approval (configurable per rule type)."
+        "text": "Klacks checks the configured 12-hour daily limit live and warns immediately if a person would be scheduled for longer on a single day. On request, Klacks hard-blocks such violations in automatic planning (block mode, configurable per rule type); with manual planning it stays at a warning."
       },
       {
         "icon": "payments",
-        "title": "Overtime Premium under Art. 107",
-        "text": "The statutory premium of 50% on the base wage (effectively 150%) is calculated automatically &mdash; since the 2025 reform, optionally also as paid time off in lieu."
+        "title": "Overtime Premium under Art. 107 as Time Credit",
+        "text": "The statutory premium of 50% on the base wage (effectively 150%) can be stored as a time premium; Klacks credits the premium hours, and your payroll system calculates the money amount &mdash; since the 2025 reform, optionally also as paid time off in lieu."
       },
       {
         "icon": "groups",
-        "title": "Nitaqat Saudization Tracked",
-        "text": "Klacks documents the employment data for each Saudi employee as the basis for Nitaqat classification &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000, 0.5 for SAR 3,000 to 3,999) is met is calculated by your payroll system."
+        "title": "Nitaqat Saudization Stays in Your Payroll System",
+        "text": "Klacks does not map Nitaqat classification and does not calculate salaries &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000, 0.5 for SAR 3,000 to 3,999) is met is checked by your payroll system. Klacks provides the hours worked for this as a file export."
       },
       {
         "icon": "shield_lock",
         "title": "Installed on Your Premises: Data Stays in Saudi Arabia",
-        "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; eliminating the cross-border compliance burden under PDPL/SDAIA."
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; with a locally hosted AI model, also for AI use; this makes it easier to meet the transfer requirements under PDPL/SDAIA."
       },
       {
         "icon": "smart_toy",
@@ -104,18 +104,18 @@
   "klacksy": {
     "eyebrow": "AI Assistant",
     "title": "Klacksy: The Built-In Assistant for Your Team",
-    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot &mdash; it&rsquo;s embedded directly in the Klacks interface. Staff and schedulers ask about shift times via chat or check availability. A built-in skills and rules system ensures Klacksy makes transparent suggestions &mdash; never a black-box decision. For businesses with strict PDPL/SDAIA compliance requirements, the AI model can also be hosted locally in Saudi Arabia.",
+    "text": "Klacksy isn&rsquo;t a bolted-on marketing chatbot &mdash; it&rsquo;s embedded directly in the Klacks interface. Staff and schedulers ask about shift times via chat or check availability. A built-in skills and rules system ensures Klacksy makes transparent suggestions &mdash; never a black-box decision. For businesses with strict requirements for meeting PDPL/SDAIA, the AI model can also be hosted locally in Saudi Arabia.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chat assistant in the Klacks interface"
   },
   "example": {
     "eyebrow": "In Practice",
     "title": "Ramadan Shifts and the 12-Hour Limit, at a Glance",
-    "text": "Klacks automatically detects when a shift during Ramadan would exceed the configured reduced 6h/36h limit, or when an employee would be scheduled for more than 12 hours on a single day (Art. 101) &mdash; and warns before the plan is saved."
+    "text": "Klacks checks against the configured rules whether a shift during Ramadan would exceed the reduced 6h/36h limit, or whether an employee would be scheduled for more than 12 hours on a single day (Art. 101) &mdash; and warns before the plan is saved."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Experience Klacks in Your Business in Saudi Arabia",
-    "text": "Try the Playground to see how Klacks automatically assigns the premiums under Art. 107, monitors the limits under Art. 98/101, reflects Ramadan target hours, and documents Nitaqat classification &mdash; installed on your premises or in the Playground, no license fees and without registration."
+    "text": "Try the Playground to see how Klacks stores the premiums under Art. 107 as time credit, monitors the limits under Art. 98/101, and reflects Ramadan target hours as a rule &mdash; installed on your premises or in the Playground, no license fees and without registration."
   }
 }

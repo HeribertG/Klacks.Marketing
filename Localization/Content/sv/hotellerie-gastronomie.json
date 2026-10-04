@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "För hotell &amp; restaurang",
     "titleHtml": "Tidiga, sena och nattpass &mdash; <span class=\"text-secondary\">rättvist planerade.</span>",
-    "subtitle": "Klacks planerar servering, kök och hushåll &mdash; med delade arbetspass, tillägg för sön- och helgdagar och lagstadgade vilotider som inte går att tyst kringgå. Säsongstoppar och bortfall hanterar planeringen automatiskt.",
+    "subtitle": "Klacks planerar servering, kök och hushåll &mdash; med delade arbetspass, tillägg för sön- och helgdagar och en kontroll av de lagstadgade vilotiderna som gör överträdelser omedelbart synliga. Säsongstoppar och bortfall hanterar planeringen automatiskt.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevy för skiftplaner inom hotell och restaurang",
     "screenshotLabel": "Tidslinje"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Delade arbetspass planerade korrekt",
-        "text": "Klacks planerar lunch- och kvällsblock så att minimivilotider och högsta dagliga arbetstider följs &mdash; varje underskridande görs omedelbart synligt."
+        "text": "Klacks planerar lunch- och kvällsblock och kontrollerar dem mot minimivilotider och högsta dagliga arbetstider &mdash; varje underskridande görs omedelbart synligt."
       },
       {
         "icon": "timer",
         "title": "Vilotiderna under uppsikt",
-        "text": "Lagstadgade vilotidsgränser övervakas i realtid &mdash; överträdelser syns direkt. På begäran blockerar Klacks dem konsekvent: i blockläge kan en överträdelse bara sparas med dokumenterat godkännande från chef."
+        "text": "Lagstadgade vilotidsgränser kontrolleras löpande &mdash; överträdelser syns direkt. Som standard varnar Klacks; på begäran kan ett blockläge slås på för den automatiska planeringen (planeringsassistent, förslag, ersättning vid bortfall)."
       },
       {
         "icon": "payments",
         "title": "Tillägg automatiskt",
-        "text": "Tillägg för natt-, sön- och helgdagar räknar Klacks ut automatiskt &mdash; konfigurerbart per land och regelverk, utan manuell efterarbete vid löneberedningen."
+        "text": "Tillägg för natt-, sön- och helgdagar tillgodoräknar Klacks automatiskt som tidstillägg i timmar &mdash; konfigurerbart per land och regelverk, som underlag för lönehanteringen."
       },
       {
         "icon": "badge",

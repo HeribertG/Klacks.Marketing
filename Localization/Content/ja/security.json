@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "警備会社向け",
     "titleHtml": "すべての持ち場に、人を。<span class=\"text-secondary\">すべての資格に、証明を。</span>",
-    "subtitle": "Klacksは施設と巡回業務を切れ目なく人員配置します &mdash; 有効な資格を持つスタッフのみを、最適化されたルートで。自社内に導入して運用するため、業務データと顧客データは貴社内にとどまります。",
+    "subtitle": "Klacksは施設と巡回業務を切れ目なく計画します &mdash; 資格の有効性をチェックしながら、最適化されたルートで。自社内に導入して運用するため、業務データと顧客データは貴社内にとどまります。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "巡回と施設配置のためのKlacksタイムライン表示",
     "screenshotLabel": "タイムライン",
@@ -24,7 +24,7 @@
     "subtitle": "人員配置済みの持ち場から最適化された巡回ルートまで &mdash; すべてが連携して機能します。",
     "items": [
       { "icon": "shield", "title": "施設 &amp; 持ち場を切れ目なく", "text": "すべての施設にわたる各持ち場を管理 &mdash; Klacksは空きが出るとすぐに表示し、ご希望に応じて自動的に埋めます。" },
-      { "icon": "verified", "title": "資格を自動チェック", "text": "Klacksは有効な資格を持つスタッフにのみ業務を割り当てます &mdash; 証明書の期限が切れる前に警告もします。" },
+      { "icon": "verified", "title": "資格を自動チェック", "text": "Klacksは割り当てのたびに資格証をチェックします &mdash; 証明書の期限が切れる前に警告もします。" },
       { "icon": "route", "title": "巡回ルートを最適化", "text": "移動を伴う業務では、Klacksが移動距離を短く、巡回間隔を守れるようにパトロールルートを組み立てます。" },
       { "icon": "schedule", "title": "24時間365日のローテーション", "text": "日勤・夜勤・週末勤務を公平にローテーション &mdash; 割増手当と休息期間も自動的に考慮します。" },
       { "icon": "smart_toy", "title": "Klacksyが指示文を理解", "text": "「北施設の夜勤を埋めて」と伝えるだけ &mdash; Klacksyが計画を開始し、Klacksが資格と対応可否を確認します。" },

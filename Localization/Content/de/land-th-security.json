@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Thailand",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Überstunde korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte und 12-Stunden-Schichten lückenlos und überwacht Überstunden live gegen das gesetzliche 36-Stunden-Wochenlimit &mdash; bei Ihnen installiert, damit Ihre Einsatz- und Personaldaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Blick. <span class=\"text-secondary\">Jede Überstunde nachvollziehbar.</span>",
+    "subtitle": "Klacks plant Objekte und 12-Stunden-Schichten, zeigt offene Posten sofort und überwacht Überstunden live gegen das gesetzliche 36-Stunden-Wochenlimit &mdash; bei Ihnen installiert, damit Ihre Einsatz- und Personaldaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten in Thailand",
     "screenshotLabel": "Timeline"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks Sicherheitsdienste in Thailand entlastet",
-    "subtitle": "Vom besetzten Posten bis zum korrekt gedeckelten 36h-Limit &mdash; alles greift ineinander.",
+    "subtitle": "Von der Postenübersicht bis zur 36h-Überwachung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "12h-Schichten korrekt verrechnet", "text": "Klacks trennt die 8 Stunden reguläre Arbeitszeit von den 4 Stunden Überstunde und weist automatisch den 1,5-fachen Satz zu (Section 61)." },
-      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Wachperson live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; oder blockiert die Überschreitung auf Wunsch konsequent (nur mit dokumentierter Vorgesetzten-Freigabe umgehbar) &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar." },
-      { "icon": "event_available", "title": "Ruhetag-Abstand automatisch überwacht", "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)." },
-      { "icon": "verified", "title": "Lizenzen automatisch geprüft", "text": "Klacks teilt Posten nur Wachleuten mit gültiger persönlicher Lizenz zu &mdash; und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer eine gültige Lizenz besitzt." },
+      { "icon": "shield", "title": "Objekte &amp; Posten im Überblick", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "12h-Schichten mit Zeitzuschlag", "text": "Klacks plant 12-Stunden-Schichten und schreibt Überstunden als Zeitzuschlag in Stunden gut &mdash; die Thailand-Vorlage hinterlegt dafür +0,5 auf Wochenstunden über 48 h. Die tägliche Trennung in 8 Stunden regulär und 4 Stunden Überstunde zu 1,5-fach (Section 61) bildet Klacks nicht ab." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Wachperson live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "event_available", "title": "Ruhetag-Abstand automatisch überwacht", "text": "Klacks prüft die Ruhetage (mindestens 1 pro Woche, höchstens 6 Arbeitstage in Folge) und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)." },
+      { "icon": "verified", "title": "Lizenzen im Blick", "text": "Klacks berücksichtigt gültige persönliche Lizenzen bei der Einteilung von Posten &mdash; und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Lizenz, Verfügbarkeit und das 36-Stunden-Limit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "12-Stunden-Schicht, ein Plan",
-    "text": "Klacks verrechnet die 4 Überstunden einer 12-Stunden-Schicht automatisch mit 1,5-fachem Satz und behält gleichzeitig das 36-Stunden-Wochenlimit pro Wachperson im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks schreibt Zeitzuschläge für die Überstunden einer 12-Stunden-Schicht als Stunden gut (soweit hinterlegt, z. B. 1,5-fach) und behält gleichzeitig das 36-Stunden-Wochenlimit pro Wachperson im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

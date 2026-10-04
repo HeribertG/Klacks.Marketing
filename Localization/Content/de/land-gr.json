@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Unternehmen in Griechenland | Ψηφιακή Κάρτα Εργασίας & Sechstagewoche",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; ERGANI-konforme Zeiterfassung",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Zeitbasis für ERGANI",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks erfasst Dienstzeiten lückenlos, trennt Mehrarbeit, Überstunde und die neue 13-Stunden-Tag-Regelung korrekt und läuft bei Ihnen installiert &mdash; während die digitale Arbeitskarte (Ψηφιακή Κάρτα Εργασίας) branchenweise zur ERGANI-II-Pflicht wird und Abweichungen mit 10.500 € pro Mitarbeitendem geahndet werden.",
+    "subtitle": "Klacks erfasst Dienstzeiten lückenlos, unterscheidet Mehrarbeit und Überstunde als Zuschlagsstaffeln, behält die neue 13-Stunden-Tag-Regelung im Blick und läuft bei Ihnen installiert &mdash; während die digitale Arbeitskarte (Ψηφιακή Κάρτα Εργασίας) branchenweise zur ERGANI-II-Pflicht wird und Abweichungen mit 10.500 € pro Mitarbeitendem geahndet werden. Die Meldung selbst bleibt bei Ihnen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Griechenland",
     "screenshotLabel": "Dienstplan"
@@ -57,21 +57,21 @@
   },
   "solutions": {
     "title": "Wie Klacks griechische Betriebe entlastet",
-    "subtitle": "Von der ERGANI-konformen Erfassung bis zur korrekten Zuschlagslogik &mdash; alles greift ineinander.",
+    "subtitle": "Von der lückenlosen Erfassung bis zur Zuschlagslogik &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "fingerprint",
-        "title": "ERGANI-konforme Zeiterfassung",
-        "text": "Klacks erfasst Beginn und Ende jeder Schicht lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für den branchenweiten ERGANI-II-Abgleich."
+        "title": "Zeitbasis für ERGANI",
+        "text": "Klacks erfasst Beginn und Ende jeder Schicht lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für den branchenweiten ERGANI-II-Abgleich; die Meldung selbst übernimmt Klacks nicht."
       },
       {
         "icon": "calendar_month",
-        "title": "Sechstagewoche automatisch verzuschlagt",
-        "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 %, wenn er auf einen Sonn- oder Feiertag fällt &mdash; lässt sich als eigene Zuschlagsregel mit 8-Stunden-Deckel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt oder blockiert, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, Block mit dokumentierter Vorgesetzten-Freigabe überschreibbar)."
+        "title": "Sechstagewoche mit Zuschlagsregel",
+        "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 %, wenn er auf einen Sonn- oder Feiertag fällt &mdash; lässt sich als eigene Zuschlagsregel mit 8-Stunden-Deckel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, in der automatischen Planung auf Wunsch blockierend, bei manueller Planung nur als Warnung)."
       },
       {
         "icon": "layers",
-        "title": "Drei Überstunden-Stufen sauber getrennt",
+        "title": "Überstunden-Stufen getrennt hinterlegt",
         "text": "Mehrarbeit (+20 %) und Überstunde (+40 %, max. 150 h/Jahr) unterscheidet Klacks automatisch als Zuschlagsstaffeln &mdash; inklusive der 45h/48h-Wochenobergrenze. Ob eine Überstunde ordnungsgemäß gemeldet ist (sonst +120 %), erkennt Klacks nicht."
       },
       {
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks ERGANI-konforme Zeiterfassung, Sechstagewoche und Überstunden-Zuschläge automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die Zeiterfassung als Basis für ERGANI, die Sechstagewoche und Überstunden-Zuschläge abbildet &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

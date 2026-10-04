@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Pour l'hôtellerie &amp; la restauration",
     "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés équitablement.</span>",
-    "subtitle": "Klacks planifie le service, la cuisine et les étages en Belgique &mdash; avec services fractionnés, majorations pour dimanches et jours fériés et temps de repos légaux qui ne peuvent pas être contournés en silence. Les pics saisonniers et les absences sont absorbés automatiquement par la planification.",
+    "subtitle": "Klacks planifie le service, la cuisine et les étages en Belgique &mdash; avec services fractionnés, majorations pour dimanches et jours fériés et temps de repos légaux dont tout manquement devient immédiatement visible. Les pics saisonniers et les absences sont absorbés automatiquement par la planification.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les plannings dans l'hôtellerie et la restauration en Belgique",
     "screenshotLabel": "Chronologie"
@@ -42,12 +42,12 @@
       {
         "icon": "timer",
         "title": "Temps de repos sous contrôle",
-        "text": "Les limites légales des temps de repos sont surveillées en temps réel &mdash; les infractions sont immédiatement visibles. Sur demande, Klacks les bloque systématiquement : en mode blocage, une infraction ne peut être enregistrée qu'avec une autorisation documentée du supérieur."
+        "text": "Les limites légales des temps de repos sont surveillées en temps réel &mdash; les infractions sont immédiatement visibles. Sur demande, Klacks les bloque systématiquement en planification automatique (mode blocage) ; en planification manuelle, Klacks se limite à avertir."
       },
       {
         "icon": "payments",
-        "title": "Majorations automatiques",
-        "text": "Les majorations de nuit, de dimanche et de jour férié sont calculées automatiquement par Klacks &mdash; configurables par pays et règlement, sans retraitement manuel lors de la préparation des salaires."
+        "title": "Majorations en crédit de temps",
+        "text": "Klacks crédite les majorations de nuit, de dimanche et de jour férié sous forme de crédit de temps &mdash; configurables ; les heures sont à disposition de la préparation des salaires, Klacks ne calcule pas de montants."
       },
       {
         "icon": "badge",

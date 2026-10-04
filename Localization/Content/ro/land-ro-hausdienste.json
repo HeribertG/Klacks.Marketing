@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Pentru servicii de curățenie din România",
-    "titleHtml": "Fiecare intervenție <span class=\"text-secondary\">plătită corect.</span>",
-    "subtitle": "Klacks repartizează obiectivele și echipele &mdash; cu salariul minim în creștere din iulie 2026 și cu regimul legal al muncii de noapte luate automat în calcul.",
+    "titleHtml": "Fiecare intervenție <span class=\"text-secondary\">documentată riguros.</span>",
+    "subtitle": "Klacks repartizează obiectivele și echipele și furnizează orele și sporurile de timp pentru contabilitatea salarială &mdash; salariul minim (în creștere din iulie 2026) și regimul legal al muncii de noapte rămân acolo.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grila de planificare Klacks pentru echipe de curățenie și obiective din România",
     "screenshotLabel": "Planificare"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea serviciilor de curățenie din România",
-    "subtitle": "De la salariul minim corect până la alegerea privind munca de noapte &mdash; totul se îmbină perfect.",
+    "subtitle": "De la baza de ore pentru contabilitatea salarială până la alegerea privind munca de noapte &mdash; totul se îmbină perfect.",
     "items": [
       {
         "icon": "route",
@@ -41,12 +41,12 @@
       },
       {
         "icon": "payments",
-        "title": "Salariul minim, înregistrat ca referință la data-limită",
-        "text": "Klacks înregistrează ca valoare de referință pentru planificarea personalului salariul minim de 4.325 RON valabil de la 1 iulie 2026."
+        "title": "Baza de ore pentru contabilitatea salarială",
+        "text": "Klacks înregistrează orele efectuate de fiecare persoană ca bază pentru contabilitatea salarială; salariul minim (de la 1 iulie 2026: 4.325 RON) și calculul salariilor se află acolo, nu în Klacks."
       },
       {
         "icon": "bedtime",
-        "title": "Munca de noapte, aleasă corect",
+        "title": "Munca de noapte, conform alegerii companiei",
         "text": "Klacks reflectă, la alegere, sporul de 25% sau programul zilnic redus cu 1 oră pentru intervențiile de noapte &mdash; în funcție de opțiunea stabilită la nivelul companiei."
       },
       {
@@ -68,12 +68,12 @@
   },
   "example": {
     "eyebrow": "Concret",
-    "title": "Curățenie de noapte, salariu minim, un singur plan",
-    "text": "Klacks calculează automat intervențiile de noapte cu modelul de spor potrivit și înregistrează ca valoare de referință salariul minim de 4.325 RON valabil de la 1 iulie 2026."
+    "title": "Curățenie de noapte, spor de timp, un singur plan",
+    "text": "Klacks creditează automat ca timp intervențiile de noapte, cu modelul de spor potrivit; salariul minim de 4.325 RON valabil de la 1 iulie 2026 este aplicat de contabilitatea salarială."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Descoperiți Klacks în firma dumneavoastră de curățenie",
-    "text": "Încercați în Playground cum preia Klacks salariul minim, sporul de noapte și traseele &mdash; fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum preia Klacks baza de ore, creditele de spor de noapte și traseele &mdash; fără taxe de licență și fără înregistrare."
   }
 }

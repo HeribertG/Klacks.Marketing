@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Wie Klacks schwedische Betriebe entlastet",
-    "subtitle": "Von der automatischen Kollektivavtal-Abweichung bis zum PAXML-Export &mdash; alles greift ineinander.",
+    "subtitle": "Von den hinterlegten Kollektivavtal-Abweichungen bis zum PAXML-Export &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
@@ -67,7 +67,7 @@
       {
         "icon": "timer",
         "title": "Allmän övertid live überwacht",
-        "text": "Die allmän övertid-Grenzen nach ATL § 8 &mdash; 50 Stunden je Kalendermonat und höchstens 200 Stunden je Jahr &mdash; zählt Klacks automatisch mit und warnt, bevor ein Grenzwert kippt; die alternative Grenze von 48 Stunden je 4 Wochen lässt sich stattdessen als rollierendes 4-Wochen-Fenster hinterlegen. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Die allmän övertid-Grenzen nach ATL § 8 &mdash; 50 Stunden je Kalendermonat und höchstens 200 Stunden je Jahr &mdash; zählt Klacks automatisch mit und warnt, bevor ein Grenzwert kippt; die alternative Grenze von 48 Stunden je 4 Wochen lässt sich stattdessen als rollierendes 4-Wochen-Fenster hinterlegen. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "bedtime",
@@ -77,7 +77,7 @@
       {
         "icon": "receipt_long",
         "title": "PAXML-Export",
-        "text": "Lohn-Bewegungsdaten &mdash; Stunden je Lohnart (lönart) und zugeordnete Abwesenheiten &mdash; gehen im schwedischen PAXML-Format direkt an Ihr Lohnsystem, ohne Doppelerfassung."
+        "text": "Lohn-Bewegungsdaten &mdash; Stunden je Lohnart (lönart) und zugeordnete Abwesenheiten &mdash; exportiert Klacks als PAXML-Datei für Ihr Lohnsystem, ohne Doppelerfassung."
       },
       {
         "icon": "how_to_reg",

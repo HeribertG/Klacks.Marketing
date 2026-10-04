@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Pour les hôpitaux &amp; cliniques en Belgique (CP 330)",
     "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">tiennent 24 heures sur 24.</span>",
-    "subtitle": "Klacks planifie les services et les équipes &mdash; en tenant compte automatiquement de l'exception de l'art. 23 (jusqu'à 11h/jour, 50h/semaine en moyenne trimestrielle) et des suppléments non cumulables pour le week-end, les jours fériés et le soir.",
+    "subtitle": "Klacks planifie les services et les équipes &mdash; en tenant compte, comme règles enregistrées, de l'exception de l'art. 23 (jusqu'à 11h/jour, 50h/semaine en moyenne trimestrielle) et des suppléments non cumulables pour le week-end, les jours fériés et le soir.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grille de planning Klacks pour les hôpitaux belges",
     "screenshotLabel": "Planning"
@@ -20,13 +20,13 @@
   },
   "solutions": {
     "title": "Comment Klacks soulage les hôpitaux belges",
-    "subtitle": "Du contrôle trimestriel au supplément correct &mdash; tout s'imbrique parfaitement.",
+    "subtitle": "Du contrôle trimestriel au supplément enregistré &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "schedule", "title": "Couverture 24/7 sans faille", "text": "Services de jour, de soir et de nuit dans tous les services &mdash; Klacks signale immédiatement chaque lacune et la comble automatiquement sur demande." },
-      { "icon": "gavel", "title": "Moyenne trimestrielle surveillée automatiquement", "text": "Klacks surveille en continu la moyenne glissante de 38 heures sur la période de référence trimestrielle et avertit avant que le seuil ne soit dépassé &mdash; la date d'entrée en fonction est prise en compte correctement, même si certaines semaines atteignent jusqu'à 50 heures. Sur demande, Klacks bloque strictement tout dépassement &mdash; une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie." },
+      { "icon": "gavel", "title": "Moyenne trimestrielle surveillée automatiquement", "text": "Klacks surveille en continu la moyenne glissante de 38 heures sur la période de référence trimestrielle et avertit avant que le seuil ne soit dépassé &mdash; la date d'entrée en fonction est prise en compte correctement, même si certaines semaines atteignent jusqu'à 50 heures. Sur demande, Klacks bloque strictement tout dépassement en planification automatique ; en planification manuelle, Klacks se limite à avertir." },
       { "icon": "percent", "title": "Toujours le supplément le plus élevé", "text": "Klacks détecte automatiquement le travail du samedi, du dimanche, des jours fériés et du soir, et applique toujours le supplément le plus élevé, non cumulable." },
-      { "icon": "verified", "title": "Qualifications &amp; services", "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par service, département et fonction. Sur demande, Klacks bloque complètement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée." },
-      { "icon": "shield_lock", "title": "Installé chez vous : les données restent chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données du personnel et des patients ne quittent pas l'établissement &mdash; pas même pour l'IA." },
+      { "icon": "verified", "title": "Qualifications &amp; services", "text": "Chaque service n'est attribué qu'au personnel disposant de la qualification requise &mdash; par service, département et fonction. Si un justificatif obligatoire est manquant ou expiré, Klacks refuse l'attribution, y compris en planification manuelle &mdash; seule une personne disposant d'un justificatif valide est alors planifiée." },
+      { "icon": "shield_lock", "title": "Installé chez vous : les données restent chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données du personnel et des patients ne quittent pas l'établissement &mdash; sur demande avec un modèle d'IA local, pas même pour l'IA." },
       { "icon": "smart_toy", "title": "Klacksy comprend votre phrase", "text": "« Remplis les services de nuit de médecine interne pour la semaine prochaine » suffit &mdash; Klacksy lance la planification, Klacks tient compte de la qualification et de la moyenne trimestrielle." }
     ]
   },

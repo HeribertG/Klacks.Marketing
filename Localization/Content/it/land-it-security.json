@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Per i servizi di vigilanza privata in Italia",
     "titleHtml": "Ogni postazione presidiata. <span class=\"text-secondary\">Ogni prova fornita.</span>",
-    "subtitle": "Klacks presidia siti e ronde senza lacune &mdash; con le riduzioni del riposo e i termini di recupero previsti dal CCNL Vigilanza Privata monitorati automaticamente. Installato sui Suoi locali, perché i Suoi dati di intervento e dei clienti restano presso di Lei.",
+    "subtitle": "Klacks presidia siti e ronde senza lacune &mdash; con riduzioni del riposo monitorate e riposo compensativo secondo il CCNL Vigilanza Privata. Installato sui Suoi locali, perché i Suoi dati di intervento e dei clienti restano presso di Lei.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per ronde e presidio dei siti",
     "screenshotLabel": "Timeline"
@@ -23,10 +23,10 @@
     "subtitle": "Dalla postazione presidiata al termine di recupero reso visibile &mdash; tutto si incastra alla perfezione.",
     "items": [
       { "icon": "shield", "title": "Siti &amp; postazioni senza lacune", "text": "Ogni postazione su tutti i siti &mdash; Klacks mostra subito ogni posto vacante e lo colma automaticamente su richiesta." },
-      { "icon": "gavel", "title": "Termini di recupero CCNL monitorati automaticamente", "text": "Se il riposo giornaliero viene ridotto a 9 ore, Klacks lo rende subito visibile e tiene sotto controllo il termine legale di 30 giorni per il recupero &mdash; con un avviso prima che scatti la maggiorazione del 40-50% prevista dall'Art. 72 CCNL Vigilanza Privata." },
+      { "icon": "gavel", "title": "Riposo compensativo sotto controllo", "text": "Se il riposo giornaliero viene ridotto a 9 ore, Klacks lo rende subito visibile; con la regola facoltativa del riposo compensativo tiene sotto controllo il recupero. La maggiorazione del 40-50% in caso di mancato rispetto del termine di 30 giorni (Art. 72 CCNL Vigilanza Privata) non viene calcolata da Klacks." },
       { "icon": "route", "title": "Ronde ottimizzate", "text": "Per i servizi mobili, Klacks traccia i percorsi di pattugliamento in modo che le distanze restino brevi e gli intervalli vengano rispettati." },
-      { "icon": "event_repeat", "title": "Riposo settimanale sotto controllo", "text": "La base di 35 ore del riposo settimanale e la sua estensione fino a 14 giorni vengono monitorate automaticamente &mdash; su richiesta, Klacks blocca rigorosamente un'eventuale violazione: una nuova violazione può allora essere salvata solo con un'autorizzazione documentata del superiore." },
-      { "icon": "smart_toy", "title": "Klacksy capisce la Sua frase", "text": "Basta dire «Presidia il turno di notte per il sito Nord» &mdash; Klacksy avvia la pianificazione, Klacks verifica disponibilità e recupero del riposo." },
+      { "icon": "event_repeat", "title": "Riposo settimanale sotto controllo", "text": "La base di 35 ore del riposo settimanale e la sua estensione fino a 14 giorni possono essere impostate come regola e vengono verificate &mdash; in caso di mancato rispetto Klacks avvisa e, nei percorsi di pianificazione automatica, su richiesta lo blocca." },
+      { "icon": "smart_toy", "title": "Klacksy capisce la Sua frase", "text": "Basta dire «Presidia il turno di notte per il sito Nord» &mdash; Klacksy avvia la pianificazione, Klacks verifica disponibilità e riposo." },
       { "icon": "bolt", "title": "Assenze sostituite in pochi minuti", "text": "Se una postazione risulta scoperta, Klacks mostra subito un sostituto qualificato e disponibile &mdash; senza dover ribaltare l'intero piano." }
     ]
   },
@@ -34,6 +34,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Provi Klacks nel Suo servizio di vigilanza",
-    "text": "Provi nel Playground come Klacks gestisce siti, recupero del riposo e ronde &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
+    "text": "Provi nel Playground come Klacks gestisce siti, riposi e ronde &mdash; oppure lo installi direttamente sulla Sua infrastruttura. Senza costi di licenza e senza registrazione."
   }
 }

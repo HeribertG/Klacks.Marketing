@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in der Schweiz",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit den Jahressollstunden und Zeitzuschlägen des aveGAV VSSU automatisch berücksichtigt. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zeitzuschlag erfasst.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit den Jahressollstunden und Zeitzuschlägen des aveGAV VSSU, die Sie einmal hinterlegen. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in der Schweiz",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Schweizer Sicherheitsdienste entlastet",
-    "subtitle": "Vom besetzten Posten bis zum korrekten Zeitzuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Vom besetzten Posten bis zum erfassten Zeitzuschlag &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "shield",
@@ -41,18 +41,18 @@
       },
       {
         "icon": "schedule",
-        "title": "Zeitbonus automatisch berechnet",
-        "text": "Die zuschlagspflichtigen Nacht- und Sonntagsstunden gemäss aveGAV VSSU berechnet und dokumentiert Klacks automatisch &mdash; als Basis für den 10%-Zeitbonus auf Ihrem Zeitkonto."
+        "title": "Zeitbonus als Zeitgutschrift",
+        "text": "Die zuschlagspflichtigen Nacht- und Sonntagsstunden gemäss aveGAV VSSU dokumentiert Klacks automatisch und schreibt den hinterlegten 10%-Zeitbonus als Zeitgutschrift auf Ihrem Zeitkonto gut."
       },
       {
         "icon": "gavel",
         "title": "210-Stunden-Schwelle live überwacht",
-        "text": "Die monatliche Schwelle von 210 Stunden hinterlegen Sie als Perioden-Obergrenze &mdash; Klacks überwacht sie live, warnt rechtzeitig vor einer Überschreitung und blockiert auf Wunsch eine weitere Zuteilung hart. Den gesetzlich vorgesehenen 25%-Zuschlag und die Kompensation innert der 3-Monats-Frist rechnen Sie auf Basis der so dokumentierten Stunden ab."
+        "text": "Die monatliche Schwelle von 210 Stunden hinterlegen Sie als Perioden-Obergrenze &mdash; Klacks überwacht sie live, warnt rechtzeitig vor einer Überschreitung und blockiert auf Wunsch eine weitere Zuteilung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung. Den gesetzlich vorgesehenen 25%-Zuschlag und die Kompensation innert der 3-Monats-Frist rechnen Sie auf Basis der so dokumentierten Stunden ab."
       },
       {
         "icon": "verified",
         "title": "Zertifikate automatisch geprüft",
-        "text": "Klacks prüft bei jeder Zuteilung die hinterlegten Zertifikate und warnt rechtzeitig, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "text": "Klacks prüft bei jeder Zuteilung die hinterlegten Zertifikate und warnt rechtzeitig, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtdienst, Zeitbonus, ein Plan",
-    "text": "Klacks berechnet den Zeitbonus für Nacht- und Sonntagsarbeit automatisch als Basis für Ihr Zeitkonto und überwacht die 210-Stunden-Schwelle live &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks schreibt den hinterlegten Zeitbonus für Nacht- und Sonntagsarbeit automatisch als Zeitgutschrift auf Ihrem Zeitkonto gut und überwacht die 210-Stunden-Schwelle live &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

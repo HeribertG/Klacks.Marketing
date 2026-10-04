@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Dänischer Datenschutz",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">mit Ihrer Overenskomst mitwachsen.</span>",
-    "subtitle": "In Dänemark regeln Overenskomster &mdash; nicht ein einheitliches Gesetz &mdash; Arbeitszeit, Zuschläge und Urlaub. Klacks bildet diese Tarifregeln flexibel ab, überwacht Ruhezeiten und die seit 1. Juli 2024 vorgeschriebene Zeiterfassung, und läuft bei Ihnen installiert mit dem KI-Modell Ihrer Wahl &mdash; damit Personaldaten Ihre Infrastruktur nie verlassen müssen.",
+    "subtitle": "In Dänemark regeln Overenskomster &mdash; nicht ein einheitliches Gesetz &mdash; Arbeitszeit, Zuschläge und Urlaub. Klacks bildet diese Tarifregeln flexibel ab, überwacht Ruhezeiten und die seit 1. Juli 2024 vorgeschriebene Zeiterfassung, und läuft bei Ihnen installiert, auf Wunsch mit lokal gehostetem KI-Modell &mdash; damit Personaldaten Ihre Infrastruktur nicht verlassen müssen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für dänische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -62,17 +62,17 @@
       {
         "icon": "gavel",
         "title": "Overenskomst-Regeln flexibel hinterlegt",
-        "text": "Klacks bildet die Arbeitszeit- und Zuschlagsregeln Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt."
+        "text": "Klacks bildet die Arbeitszeitregeln und Zeitzuschläge Ihrer jeweiligen Overenskomst (3F, FOA, VSL, DI) ab und lässt sich anpassen, sobald ein neuer Tarifabschluss wie OK26 in Kraft tritt."
       },
       {
         "icon": "bedtime",
-        "title": "Ruhezeit &amp; Schichtwechsel korrekt geplant",
+        "title": "Ruhezeit &amp; Schichtwechsel im Blick",
         "text": "Klacks überwacht die 11-Stunden-Ruhezeit und den freien Tag pro Woche automatisch; das 35-Stunden-Fridøgn als durchgehende Spanne prüft Klacks nicht; die Verkürzung auf 8 Stunden bei Schichtwechsel lässt sich als Sonderregel hinterlegen."
       },
       {
         "icon": "fact_check",
         "title": "Zeiterfassung dokumentiert, 48-Stunden-Schnitt live überwacht",
-        "text": "Klacks dokumentiert die tägliche Arbeitszeit, überwacht den rollierenden 48-Stunden-Schnitt über 4 Monate live und warnt, bevor der Grenzwert kippt &mdash; die Nachweise hält Klacks 5 Jahre bereit."
+        "text": "Klacks dokumentiert die tägliche Arbeitszeit, überwacht den rollierenden 48-Stunden-Schnitt über 4 Monate live und warnt, bevor der Grenzwert kippt &mdash; die Aufbewahrung der Nachweise über 5 Jahre liegt bei Ihnen."
       },
       {
         "icon": "route",
@@ -82,7 +82,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ganz ohne Auslandtransfer von Personaldaten."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst, auf Wunsch lokal gehostet &mdash; im Sinne der DSGVO-Aufsicht durch Datatilsynet, ohne dass Personaldaten an externe KI-Anbieter gehen müssen."
       },
       {
         "icon": "smart_toy",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtwechsel und Zeiterfassung, ein Blick",
-    "text": "Klacks lässt die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel als Sonderregel konfigurieren, überwacht den rollierenden 48-Stunden-Schnitt im 4-Monats-Fenster live und dokumentiert die Arbeitszeit für die vorgeschriebenen 5 Jahre &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt die Verkürzung der Ruhezeit auf 8 Stunden bei Schichtwechsel als Sonderregel konfigurieren, überwacht den rollierenden 48-Stunden-Schnitt im 4-Monats-Fenster live und dokumentiert die Arbeitszeit (die Aufbewahrung über 5 Jahre bleibt bei Ihnen) &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

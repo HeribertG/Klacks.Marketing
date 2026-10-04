@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "För sjukhus &amp; kliniker",
     "titleHtml": "Scheman som <span class=\"text-secondary\">går ihop dygnet runt.</span>",
-    "subtitle": "Klacks planerar avdelningar och skift utan luckor &mdash; med respekterade vilotider, rätt kompetenser och full datasuveränitet. Installerat hos dig, så att patientdata aldrig lämnar din verksamhet.",
+    "subtitle": "Klacks planerar avdelningar och skift utan luckor &mdash; med kontrollerade vilotider, rätt kompetenser och full datasuveränitet. Installerat hos dig; med en lokal AI-modell lämnar patientdata inte din verksamhet.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaraster för sjukhus",
     "screenshotLabel": "Schema",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Fullständig 24/7-täckning", "text": "Dag-, kvälls- och nattpass över alla avdelningar &mdash; Klacks visar varje lucka direkt och fyller den automatiskt vid behov." },
       { "icon": "gavel", "title": "Vilotider kontrolleras automatiskt", "text": "Arbetstidslagen, vilotider och maxgränser övervakas i realtid &mdash; överträdelser syns direkt." },
       { "icon": "verified", "title": "Kompetenser &amp; avdelningar", "text": "Varje skift tilldelas endast personal med rätt kompetens &mdash; per avdelning, enhet och funktion." },
-      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar hos dig", "text": "Klacks körs på din infrastruktur. Personal- och patientdata lämnar aldrig kliniken &mdash; inte ens till AI:n." },
+      { "icon": "shield_lock", "title": "Installerat hos dig: data i huset", "text": "Klacks körs på din infrastruktur. Personal- och patientdata finns på dina servrar &mdash; med en lokal AI-modell lämnar inget kliniken heller när det gäller AI." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll nattskiften på internmedicin för nästa vecka” räcker &mdash; Klacksy startar planeringen, Klacks tar hänsyn till kompetens och vilotid." },
       { "icon": "groups", "title": "Vikariepool &amp; frånvaro", "text": "Om någon blir frånvarande visar Klacks omedelbart tillgängliga, kompetenta vikarier &mdash; utan att hela schemat behöver göras om." }
     ]

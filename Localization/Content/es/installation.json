@@ -1,11 +1,11 @@
 {
   "pageTitle": "Instalar Klacks: instalador guiado o Docker Compose con paquete de país | Klacks",
-  "metaDescription": "Instale Klacks en su propia infraestructura: instalador guiado o stack de Docker Compose, preconfigurado con los días festivos, las normas de jornada laboral y los recargos de su país. Sin cuotas de licencia, de código abierto, sin registro.",
+  "metaDescription": "Instale Klacks en su propia infraestructura: instalador guiado o stack de Docker Compose, preconfigurado con los días festivos, las normas de jornada laboral y, donde estén definidos para su país, los recargos. Sin cuotas de licencia, de código abierto, sin registro.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalación &middot; Sin cuotas de licencia &amp; código abierto",
     "titleHtml": "Opere Klacks usted mismo &mdash; <span class=\"text-secondary\">en su propia infraestructura.</span>",
-    "subtitle": "Dos caminos, un mismo resultado: el instalador guiado o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral, los recargos y los ajustes predefinidos por sector de su país &mdash; sin registro, sin costes de licencia."
+    "subtitle": "Dos caminos, un mismo resultado: el instalador guiado o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país) &mdash; sin registro, sin costes de licencia."
   },
   "industry": {
     "eyebrow": "Paquete de país",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Solo el perfil &mdash; para instalaciones existentes",
-    "text": "¿Ya tiene Klacks en marcha? El perfil (JSON) contiene los ajustes predefinidos del país &mdash; días festivos, normas de jornada laboral, recargos y sectores &mdash; y se aplica en el primer arranque de una instalación. Es también la vía para añadir más adelante otro sector con sus ajustes predefinidos.",
+    "text": "¿Ya tiene Klacks en marcha? El perfil (JSON) contiene los ajustes predefinidos del país &mdash; días festivos, normas de jornada laboral, recargos (donde estén definidos para el país) y sectores &mdash; y se aplica en el primer arranque de una instalación. Es también la vía para añadir más adelante otro sector con sus ajustes predefinidos.",
     "downloadLabel": "Descargar perfil (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Conviene saber",
     "items": [
       { "icon": "code", "title": "Código abierto (AGPL-3.0)", "text": "El código fuente completo es público en GitHub bajo la AGPL-3.0 &mdash; sin costes de licencia, sin dependencia de un proveedor." },
-      { "icon": "storage", "title": "Los datos se quedan en casa", "text": "Klacks se ejecuta en su infraestructura. Los datos de personal y de planificación nunca salen de su servidor &mdash; no hay nube obligatoria." },
+      { "icon": "storage", "title": "Los datos se quedan en casa", "text": "Klacks se ejecuta en su infraestructura. Los datos de personal y de planificación están en su servidor &mdash; no hay nube obligatoria. Solo si elige un proveedor de IA externo se envían solicitudes a él; con un modelo local, todo permanece en su empresa." },
       { "icon": "update", "title": "Actualizaciones", "text": "La instalación fija la última versión publicada. Un servicio de actualización dentro del stack aplica automáticamente las nuevas versiones publicadas." },
       { "icon": "lock", "title": "HTTPS desde el principio", "text": "El instalador genera un certificado autofirmado para empezar &mdash; puede cambiar a su propio certificado en cualquier momento. Cambie la contraseña inicial justo después del primer inicio de sesión." }
     ]

@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Hoe Klacks Nederlandse beveiligingsdiensten ontlast",
-    "subtitle": "Van het tijdige rooster tot de correcte verschuivingstoeslag &mdash; alles grijpt in elkaar.",
+    "subtitle": "Van het tijdige rooster tot de vastgelegde verschuivingstoeslag &mdash; alles grijpt in elkaar.",
     "items": [
       { "icon": "event", "title": "Donderdagtermijn als planningsvoorlooptijd", "text": "De voorlooptijd tot de publicatie op donderdag legt u vast als planningstermijn; Klacks berekent daaruit wanneer het rooster klaar moet zijn. Er wordt niet automatisch gepubliceerd, en de indeling in een concrete week 1 en tijdvakken voor de weken 2-4 maakt u zelf." },
       { "icon": "trending_up", "title": "Verschuivingstoeslag als toeslag vastgelegd", "text": "De verschuivingstoeslag kan als toeslag worden vastgelegd en aan de gewijzigde dienst worden toegewezen &mdash; welke staffel (5%, 10% of 20% afhankelijk van de voorlooptijd) van toepassing is, bepaalt Klacks niet automatisch." },
       { "icon": "flight", "title": "Schiphol-startmomenten in beeld", "text": "Klacks telt de verschillende diensttijdstippen per planperiode en waarschuwt voordat het maximum van 10 startmomenten wordt overschreden." },
       { "icon": "shield", "title": "Objecten &amp; posten sluitend", "text": "Elke post over alle objecten heen &mdash; Klacks toont elke openstaande plek direct en vult deze desgewenst automatisch op." },
-      { "icon": "verified", "title": "Certificaten automatisch gecontroleerd", "text": "Klacks houdt bij de indeling rekening met de juiste kwalificatie en waarschuwt voordat een certificaat verloopt. Desgewenst blokkeert Klacks de indeling met een verlopen verplicht certificaat volledig &mdash; er wordt alleen ingepland wie een geldig bewijs heeft." },
+      { "icon": "verified", "title": "Certificaten automatisch gecontroleerd", "text": "Klacks houdt bij de indeling rekening met de juiste kwalificatie en waarschuwt voordat een certificaat verloopt. Ontbreekt een verplicht certificaat of is het verlopen, dan weigert Klacks de indeling, ook bij handmatige planning &mdash; dan wordt er alleen ingepland wie een geldig bewijs heeft." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Bezet de nachtdienst voor object Noord” volstaat &mdash; Klacksy start de planning, Klacks controleert certificaten en beschikbaarheid." }
     ]
   },
   "example": {
     "eyebrow": "Concreet",
     "title": "Late dienstwijziging, verschuivingstoeslag, één blik",
-    "text": "Moet een dienst kort voor aanvang worden gewijzigd, dan toont Klacks de passende verschuivingstoeslag-schaal &mdash; en houdt tegelijk de donderdag-publicatieplicht voor de komende vier weken aan."
+    "text": "Moet een dienst kort voor aanvang worden gewijzigd, dan wijst u de verschuivingstoeslag als toeslag toe &mdash; welke schaal van toepassing is, bepaalt Klacks niet; de donderdag-publicatietermijn voor de komende vier weken houdt u in het oog via de berekende planningsvoorsprong."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Malaysia | Employment Act 1955 & PDPA-konforme Personalplanung",
+  "pageTitle": "Klacks für Unternehmen in Malaysia | Personalplanung mit Prüfung gegen Employment Act 1955 & PDPA-Bezug",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Malaysischer Datenschutz (PDPA)",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht die 45-Stunden-Woche nach dem Employment Act 1955 automatisch, trennt die gestuften Überstundenzuschläge sauber und läuft bei Ihnen installiert &mdash; damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks prüft die 45-Stunden-Woche nach dem Employment Act 1955 gegen die hinterlegten Grenzen, schreibt die gestuften Überstundenzuschläge als Zeitgutschriften gut und läuft bei Ihnen installiert &mdash; damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Malaysia",
     "screenshotLabel": "Dienstplan"
@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Wie Klacks malaysische Betriebe entlastet",
-    "subtitle": "Von der automatischen Zuschlagsberechnung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "subtitle": "Von der Zeitgutschrift für Zuschläge bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
@@ -66,8 +66,8 @@
       },
       {
         "icon": "paid",
-        "title": "Zuschläge 1,5x/2,0x/3,0x automatisch getrennt",
-        "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit werden mit dem jeweils korrekten Satz verrechnet &mdash; inklusive der RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen."
+        "title": "Zuschläge 1,5x/2,0x/3,0x als Zeitgutschrift",
+        "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit schreibt Klacks mit dem jeweils hinterlegten Satz als Zeitgutschrift (Stunden) gut &mdash; die RM-4.000-Lohnschwelle, ab der die Zuschlagsbestimmungen der Section 60/60A/60C/60D/60J nicht mehr greifen, wendet die Lohnbuchhaltung an, der Klacks die Stunden bereitstellt."
       },
       {
         "icon": "schedule",
@@ -77,7 +77,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Ihre Personal- und Planungsdaten verlassen Ihr Haus nie."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit lokalem KI-Modell verlassen Ihre Personal- und Planungsdaten Ihr Haus nicht."
       },
       {
         "icon": "smart_toy",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 45-Stunden-Woche und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Prüfung der 45-Stunden-Woche und die Zeitzuschläge werden dabei genauso live ausgewertet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wochenstunden, Zuschlag, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht die 45-Stunden-Woche oder die 12-Stunden-Tageskappe erreicht, und ordnet die passende Zuschlagsstufe (1,5x/2,0x/3,0x) gleich zu &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt automatisch, wenn eine Schicht die 45-Stunden-Woche oder die 12-Stunden-Tageskappe erreicht, und schreibt die Zuschläge (1,5x/2,0x/3,0x) als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks die 45-Stunden-Woche, gestufte Zuschläge und die 12-Stunden-Tageskappe automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die 45-Stunden-Woche und die 12-Stunden-Tageskappe prüft und gestufte Zuschläge als Zeitgutschrift ausweist &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

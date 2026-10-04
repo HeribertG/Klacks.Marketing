@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Para hotelaria &amp; restauração",
     "titleHtml": "Turnos de manhã, tarde e noite &mdash; <span class=\"text-secondary\">planeados com justiça.</span>",
-    "subtitle": "O Klacks planeia sala, cozinha e andares &mdash; com turnos partidos, subsídios de domingo e feriado e períodos de descanso legais que não podem ser contornados em silêncio. Picos sazonais e faltas são absorvidos automaticamente pelo planeamento.",
+    "subtitle": "O Klacks planeia sala, cozinha e andares &mdash; com turnos partidos, subsídios de domingo e feriado e uma verificação dos períodos de descanso legais que torna as infrações visíveis de imediato. Picos sazonais e faltas são absorvidos automaticamente pelo planeamento.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista de linha temporal do Klacks para horários de serviço na hotelaria e restauração",
     "screenshotLabel": "Linha temporal"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Turnos partidos bem planeados",
-        "text": "O Klacks planeia os blocos de almoço e jantar de modo a cumprir os períodos mínimos de descanso e os limites diários &mdash; qualquer incumprimento fica visível de imediato."
+        "text": "O Klacks planeia os blocos de almoço e jantar e verifica-os face aos períodos mínimos de descanso e aos limites diários &mdash; qualquer incumprimento fica visível de imediato."
       },
       {
         "icon": "timer",
         "title": "Períodos de descanso sob controlo",
-        "text": "Os limites legais de descanso são monitorizados em tempo real &mdash; as infrações ficam imediatamente visíveis. Se desejar, o Klacks bloqueia-as de forma consistente: no modo de bloqueio, uma infração só pode ser guardada com autorização documentada de um superior."
+        "text": "Os limites legais de descanso são verificados continuamente &mdash; as infrações ficam imediatamente visíveis. Por predefinição, o Klacks avisa; se desejar, pode ativar-se um modo de bloqueio para o planeamento automático (assistente de planeamento, propostas, substituição de faltas)."
       },
       {
         "icon": "payments",
         "title": "Subsídios automáticos",
-        "text": "Os subsídios de noturno, domingo e feriado são calculados automaticamente pelo Klacks &mdash; configuráveis por país e regulamento, sem trabalho manual na preparação dos salários."
+        "text": "Os subsídios de noturno, domingo e feriado são creditados automaticamente pelo Klacks como créditos de horas &mdash; configuráveis por país e regulamento, como base para a contabilidade salarial."
       },
       {
         "icon": "badge",

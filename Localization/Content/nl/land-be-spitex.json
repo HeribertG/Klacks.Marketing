@@ -23,10 +23,10 @@
     "subtitle": "Van de automatische route tot de rimpelregeling &mdash; alles grijpt op elkaar in.",
     "items": [
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks legt zorgroutes zo vast dat afstanden kort blijven en tijdsvensters worden gerespecteerd &mdash; met de auto, fiets of te voet." },
-      { "icon": "schedule", "title": "Reistijd correct als arbeidstijd geregistreerd", "text": "Geregistreerde verplaatsingen tussen patiënten rekent Klacks als arbeidstijd &mdash; dat de eerste en de laatste rit buiten beschouwing blijven, herkent Klacks niet automatisch." },
+      { "icon": "schedule", "title": "Reistijd als arbeidstijd geregistreerd", "text": "Geregistreerde verplaatsingen tussen patiënten rekent Klacks als arbeidstijd &mdash; dat de eerste en de laatste rit buiten beschouwing blijven, herkent Klacks niet automatisch." },
       { "icon": "call_split", "title": "Onderbroken diensten in het rooster", "text": "Een onderbroken dienst plant u als twee inzetten op dezelfde dag; de 50%-toeslag conform PC 330 herkent Klacks niet automatisch &mdash; die blijft bij uw loonadministratie." },
       { "icon": "elderly", "title": "Rimpelregeling via de contracturen", "text": "De leeftijdsafhankelijke vrijstellingsuren vanaf 45, 50 en 55 jaar legt u vast via een overeenkomstig verlaagd aantal contracturen; de leeftijd zelf houdt Klacks niet automatisch bij." },
-      { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke zorgtaak wordt enkel toegewezen aan personen met de juiste kwalificatie &mdash; zonder manuele controle. Desgewenst blokkeert Klacks de toewijzing bij een verlopen verplicht bewijsstuk volledig &mdash; er wordt alleen ingepland wie een geldig bewijs heeft." },
+      { "icon": "verified", "title": "Kwalificaties automatisch meegenomen", "text": "Elke zorgtaak wordt enkel toegewezen aan personen met de juiste kwalificatie &mdash; zonder manuele controle. Ontbreekt een verplicht bewijsstuk of is het verlopen, dan weigert Klacks de toewijzing, ook bij manuele planning &mdash; dan wordt er alleen ingepland wie een geldig bewijs heeft." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekte stelt Klacksy meteen een beschikbare vervanger voor." }
     ]
   },

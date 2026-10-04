@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Malaysia",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der Aufteilung der 12-Stunden-Wachschicht in Normalzeit und Überstunden sowie dem wöchentlichen Ruhetag automatisch berücksichtigt. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Blick. <span class=\"text-secondary\">Jeder Zuschlag nachvollziehbar.</span>",
+    "subtitle": "Klacks zeigt offene Posten und Rundgänge sofort &mdash; und weist die 12-Stunden-Wachschicht getrennt in Normalzeit und Überstunden aus, den wöchentlichen Ruhetag behält es im Blick. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Wachschichten und Objektbesetzung in Malaysia",
     "screenshotLabel": "Timeline"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Wie Klacks Sicherheitsdienste in Malaysia entlastet",
-    "subtitle": "Vom besetzten Posten bis zur korrekten Schichtaufteilung &mdash; alles greift ineinander.",
+    "subtitle": "Vom offenen Posten bis zur getrennten Schichtaufteilung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "schedule", "title": "12-Stunden-Schicht automatisch aufgeteilt", "text": "Klacks trennt bei der 12-Stunden-Wachschicht automatisch 8 Stunden Normalzeit von 4 Stunden Überstunden zum 1,5-fachen Satz." },
+      { "icon": "shield", "title": "Objekte &amp; Posten im Blick", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "schedule", "title": "12-Stunden-Schicht getrennt ausgewiesen", "text": "Klacks weist bei der 12-Stunden-Wachschicht 8 Stunden Normalzeit und 4 Stunden Überstunden getrennt aus und schreibt den 1,5-fachen Zuschlag als Zeitgutschrift gut, sofern der Satz hinterlegt ist." },
       { "icon": "event_available", "title": "Wöchentlicher Ruhetag automatisch überwacht", "text": "Klacks behält im Blick, dass jede Wache pro Woche mindestens einen ganzen Ruhetag erhält, auch bei rollierenden Rotationen, und warnt bei Verstößen." },
-      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks zeigt bei jeder Zuteilung den Ausweisstatus des Personals an &mdash; und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis besitzt." },
+      { "icon": "verified", "title": "Zertifikate im Blick", "text": "Klacks zeigt bei jeder Zuteilung den Ausweisstatus des Personals an &mdash; und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Süd“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Zertifikate, Verfügbarkeit und den Ruhetag." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wachschicht und Ruhetag, ein Plan",
-    "text": "Klacks trennt die 12-Stunden-Wachschicht automatisch in 8 Stunden Normalzeit und 4 Stunden Überstunden zum 1,5-fachen Satz und behält den wöchentlichen Ruhetag im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks weist die 12-Stunden-Wachschicht in 8 Stunden Normalzeit und 4 Stunden Überstunden getrennt aus (1,5-facher Satz als Zeitgutschrift) und behält den wöchentlichen Ruhetag im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

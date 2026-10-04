@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Tempi di lavoro &amp; di riposo secondo l'OLR 1 verificati",
-        "text": "Klacks verifica costantemente i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1 e avverte per tempo prima di un superamento. Su richiesta, Klacks blocca rigidamente il superamento &mdash; una nuova infrazione può allora essere salvata solo con un'autorizzazione documentata del superiore. Le 9 ore di guida e la pausa dopo 4,5 ore Klacks non le verifica &mdash; continuano a essere documentate tramite i dati del tachigrafo."
+        "text": "Klacks verifica costantemente i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1 e avverte per tempo prima di un superamento. Su richiesta, Klacks blocca rigidamente il superamento nella pianificazione automatica; nella pianificazione manuale Klacks avvisa. Le 9 ore di guida e la pausa dopo 4,5 ore Klacks non le verifica &mdash; continuano a essere documentate tramite i dati del tachigrafo."
       },
       {
         "icon": "fact_check",
@@ -57,7 +57,7 @@
       {
         "icon": "badge",
         "title": "Categorie di patente adeguate",
-        "text": "Klacks tiene conto della categoria di patente adeguata nell'assegnazione dei giri e avverte prima che un attestato scada. Su richiesta, Klacks blocca completamente l'assegnazione in caso di attestato obbligatorio scaduto &mdash; viene pianificato solo chi dispone di una licenza valida."
+        "text": "Klacks tiene conto della categoria di patente adeguata nell'assegnazione dei giri e avverte prima che un attestato scada. Se un attestato obbligatorio manca o è scaduto, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale &mdash; viene pianificato solo chi dispone di una licenza valida."
       },
       {
         "icon": "smart_toy",

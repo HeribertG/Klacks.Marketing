@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Per alberghiero &amp; ristorazione",
     "titleHtml": "Turni mattutini, pomeridiani e notturni &mdash; <span class=\"text-secondary\">pianificati in modo equo.</span>",
-    "subtitle": "Klacks pianifica sala, cucina e piani &mdash; con turni spezzati, supplementi per domeniche e festivi e tempi di riposo previsti dalla legge, che non si possono aggirare in silenzio. Picchi stagionali e assenze vengono gestiti automaticamente dalla pianificazione.",
+    "subtitle": "Klacks pianifica sala, cucina e piani &mdash; con turni spezzati, supplementi per domeniche e festivi e un controllo dei tempi di riposo previsti dalla legge che rende subito visibili le violazioni. Picchi stagionali e assenze vengono gestiti automaticamente dalla pianificazione.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per turni in alberghiero e ristorazione",
     "screenshotLabel": "Timeline"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Turni spezzati pianificati correttamente",
-        "text": "Klacks pianifica i blocchi di pranzo e cena in modo che i tempi minimi di riposo e le ore massime giornaliere siano rispettati &mdash; ogni mancato rispetto viene segnalato immediatamente."
+        "text": "Klacks pianifica i blocchi di pranzo e cena e li verifica rispetto ai tempi minimi di riposo e alle ore massime giornaliere &mdash; ogni mancato rispetto viene segnalato immediatamente."
       },
       {
         "icon": "timer",
         "title": "Tempi di riposo sotto controllo",
-        "text": "I limiti di riposo previsti dalla legge sono monitorati in tempo reale &mdash; le violazioni diventano subito visibili. Se lo si desidera, Klacks le blocca sistematicamente: in modalità blocco, una violazione può essere salvata solo con un'approvazione documentata del superiore."
+        "text": "I limiti di riposo previsti dalla legge vengono verificati di continuo &mdash; le violazioni diventano subito visibili. Per impostazione predefinita Klacks avvisa; se lo si desidera, si può attivare una modalità blocco per la pianificazione automatica (assistente di pianificazione, proposte, sostituzione in caso di assenza)."
       },
       {
         "icon": "payments",
         "title": "Supplementi automatici",
-        "text": "Klacks calcola automaticamente i supplementi per lavoro notturno, domenicale e festivo &mdash; configurabili per Paese e regolamento, senza lavoro manuale aggiuntivo nella preparazione delle paghe."
+        "text": "Klacks accredita automaticamente i supplementi per lavoro notturno, domenicale e festivo come crediti di tempo &mdash; configurabili per Paese e regolamento, come base per la contabilità delle paghe."
       },
       {
         "icon": "badge",

@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (保全) in Taiwan",
-    "titleHtml": "Jeder Posten besetzt &mdash; <span class=\"text-secondary\">ohne den 288-Stunden-Deckel zu sprengen.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit dem monatlichen Stufencap von 240 auf maximal 288 Stunden für Sicherheitsmitarbeiter (保全人員) im Verantwortungssystem automatisch überwacht.",
+    "titleHtml": "Alle Posten im Blick &mdash; <span class=\"text-secondary\">mit Warnung vor dem 288-Stunden-Deckel.</span>",
+    "subtitle": "Klacks zeigt offene Posten auf Objekten und Rundgängen sofort &mdash; und überwacht das monatliche Stufencap von 240 auf maximal 288 Stunden für Sicherheitsmitarbeiter (保全人員) im Verantwortungssystem mit Warnung vor Überschreitung.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rundgänge in Taiwan",
     "screenshotLabel": "Timeline"
@@ -22,18 +22,18 @@
     "title": "Wie Klacks taiwanische Sicherheitsdienste entlastet",
     "subtitle": "Vom besetzten Posten bis zum korrekten Monatscap &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "shield", "title": "Objekte &amp; Posten im Blick", "text": "Alle Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "schedule", "title": "240-zu-288-Stunden-Cap automatisch überwacht", "text": "Klacks überwacht den Sprung ab der 241. Stunde im Dienstplan und warnt, bevor das absolute Monatslimit von 288 Stunden erreicht wird." },
-      { "icon": "bedtime", "title": "Tagesgrenze &amp; 11-Stunden-Abstand im Blick", "text": "Klacks warnt vor jeder Schicht über 12 Stunden inklusive Überstunden und plant den 11-Stunden-Schichtabstand automatisch mit ein. Auf Wunsch blockiert Klacks einen neuen Verstoß konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)." },
-      { "icon": "gavel", "title": "Personenschutz &amp; Werttransport separat abgebildet", "text": "Klacks bildet die abweichenden Regeln für Personenschutz (人身保全) und Werttransport (運鈔車保全) getrennt vom allgemeinen Bewachungsgewerbe ab." },
-      { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks teilt Einsätze nur Personal mit gültigem Ausweis zu &mdash; und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis besitzt." },
+      { "icon": "bedtime", "title": "Tagesgrenze &amp; 11-Stunden-Abstand im Blick", "text": "Klacks warnt vor jeder Schicht über 12 Stunden inklusive Überstunden und bei Unterschreitung des 11-Stunden-Schichtabstands. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "gavel", "title": "Personenschutz &amp; Werttransport getrennt hinterlegbar", "text": "Für Personenschutz (人身保全) und Werttransport (運鈔車保全) lassen sich die abweichenden Regeln getrennt vom allgemeinen Bewachungsgewerbe hinterlegen." },
+      { "icon": "verified", "title": "Zertifikate im Blick", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft dabei automatisch das 240/288-Stunden-Cap." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "240 zu 288 Stunden, ein Blick",
-    "text": "Klacks zeigt im Dienstplan sofort, sobald ein Sicherheitsmitarbeiter die 240. Stunde im Monat überschreitet, und wacht darüber, dass das absolute Limit von 288 Stunden nicht überschritten wird."
+    "text": "Klacks zeigt im Dienstplan sofort, sobald ein Sicherheitsmitarbeiter die 240. Stunde im Monat überschreitet, und warnt, bevor das absolute Limit von 288 Stunden überschritten wird."
   },
   "showRoutePlanning": true,
   "cta": {

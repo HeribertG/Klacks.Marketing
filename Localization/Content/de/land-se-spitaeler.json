@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Für Sjukhus &amp; Kliniken in Schweden",
-    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die 13-Stunden-Grenze und Jourdienste einhalten.</span>",
-    "subtitle": "Klacks überwacht die reguläre 13-Stunden-Grenze automatisch, unterstützt die Planung kombinierter Arbeit-Jour-Dienste bis 20 Stunden und markiert wichtigere Planänderungen im Sinne der MBL-Verhandlungspflicht. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die 13-Stunden-Grenze und lange Dienste im Blick behalten.</span>",
+    "subtitle": "Klacks überwacht die reguläre 13-Stunden-Grenze automatisch und unterstützt die Planung langer Dienste bis 20 Stunden. Die MBL-Verhandlungspflicht bei wichtigeren Planänderungen bleibt bei Ihnen. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für schwedische Krankenhäuser und Kliniken",
     "screenshotLabel": "Dienstplan"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks schwedische Kliniken entlastet",
-    "subtitle": "Von der 13-Stunden-Grenze bis zur dokumentierten Planänderung &mdash; alles greift ineinander.",
+    "subtitle": "Von der 13-Stunden-Grenze bis zum 20-Stunden-Dienst &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "gavel", "title": "MBL-Verhandlungspflicht im Blick", "text": "Klacks markiert wichtigere Änderungen am Schichtmuster deutlich, damit rechtzeitig erkennbar ist, wann die Verhandlungspflicht nach MBL § 11 gegenüber der Gewerkschaft greift." },
-      { "icon": "schedule", "title": "20-Stunden-Jourdienst planbar", "text": "Kombinierte Arbeit-Jour-Dienste planen Sie in Klacks gezielt &mdash; die Vorgaben von mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr und der zusammenhängenden Ausgleichsruhe behalten Sie dabei sichtbar im Blick." },
+      { "icon": "gavel", "title": "MBL-Verhandlungspflicht bleibt bei Ihnen", "text": "Ob eine Änderung am Schichtmuster eine Verhandlung nach MBL § 11 mit der Gewerkschaft auslöst, beurteilen Sie; Klacks markiert solche Änderungen nicht automatisch." },
+      { "icon": "schedule", "title": "Lange Dienste mit Jour", "text": "Eine eigene Zeitart für Bereitschaft (jour) kennt Klacks nicht: Lange Dienste bis 20 Stunden planen Sie als normale Dienste; die Aufteilung in Arbeit und jourtid, die Mindestdauer von 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr und die zusammenhängende Ausgleichsruhe halten Sie selbst im Blick." },
       { "icon": "timer", "title": "13-Stunden-Grenze je Kalendertag", "text": "Klacks warnt, sobald an einem Kalendertag mehr als die hinterlegten 13 Arbeitsstunden geplant würden; jour und Pausen zählt Klacks dabei nicht mit, und eine gleitende 24-Stunden-Periode bildet Klacks nicht ab." },
-      { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die hinterlegten, branchenüblich gestaffelten Zuschlagsstufen der jeweiligen Schicht zu." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die hinterlegten, branchenüblich gestaffelten Zeitzuschlagsstufen der jeweiligen Schicht zu." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und dygnsvila." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Jourdienst und 13-Stunden-Grenze, ein Blick",
-    "text": "Klacks zeigt, ob ein Dienst als kombinierter Arbeit-Jour-Dienst mit mindestens 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr geplant ist oder als regulärer Dienst der 13-Stunden-Grenze unterliegt, und warnt bei einer verkürzten Ruhezeit &mdash; die Ausgleichsruhe planen Sie mit klarer Sicht nach &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt, wenn ein regulärer Dienst die 13-Stunden-Grenze überschreitet oder die Ruhezeit verkürzt würde &mdash; Jour-Anteile und Ausgleichsruhe halten Sie in den Dienstplan-Notizen fest &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Jourdienste, dygnsvila und Zuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks 13-Stunden-Grenze, dygnsvila und Zuschläge übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

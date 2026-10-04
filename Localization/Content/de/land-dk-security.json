@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Vagtselskaber in Dänemark",
-    "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jede Kurzfrist-Umplanung vermieden.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und warnt, bevor eine spontane Umplanung den Varskotillæg der Vagtoverenskomsten (DI Overenskomst II/Serviceforbundet-VSL, 2025-2028) auslöst. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Plan, <span class=\"text-secondary\">Kurzfrist-Umplanungen im Blick.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; und hilft, kurzfristige Umplanungen zu vermeiden, die den Varskotillæg der Vagtoverenskomsten (DI Overenskomst II/Serviceforbundet-VSL, 2025-2028) auslösen. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung im dänischen Sicherheitsgewerbe",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks dänische Vagtselskaber entlastet",
-    "subtitle": "Vom besetzten Posten bis zur vermiedenen Kurzfrist-Umplanung &mdash; alles greift ineinander.",
+    "subtitle": "Vom besetzten Posten bis zur Stundenbasis für die Lohnbuchhaltung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "shield",
@@ -41,18 +41,18 @@
       },
       {
         "icon": "bolt",
-        "title": "Varskotillæg vermieden statt bezahlt",
-        "text": "Muss ein Dienst kurzfristig umgeplant werden, lässt sich der Zuschlag von 525,29 DKK pro Tag als Fixbetrag pro Dienst hinterlegen und den betroffenen Diensten zuweisen. Ob eine Änderung zu kurzfristig ist, prüft Klacks nicht automatisch."
+        "title": "Varskotillæg: Basis für die Lohnbuchhaltung",
+        "text": "Der Zuschlag von 525,29 DKK pro Tag bei kurzfristiger Umplanung wird in Ihrer Lohnbuchhaltung abgerechnet; Klacks führt die betroffenen Dienste und Stunden dafür mit. Ob eine Änderung zu kurzfristig ist, prüft Klacks nicht automatisch."
       },
       {
         "icon": "payments",
-        "title": "Tarifstufen mit Gültigkeitsdatum hinterlegt",
-        "text": "Weitere Zuschlagssätze der Vagtoverenskomsten 2025-2028 lassen sich mit Gültigkeitsdatum vorab hinterlegen; die zum 1. März 2026 auf 10% steigende Sonderersparnis (fritvalg) bleibt Sache Ihrer Lohnbuchhaltung, für die Klacks die Stundenbasis liefert."
+        "title": "Zeitzuschläge mit Gültigkeitsdatum hinterlegt",
+        "text": "Weitere Zeitzuschläge der Vagtoverenskomsten 2025-2028 lassen sich mit Gültigkeitsdatum vorab hinterlegen; Geldbeträge wie die zum 1. März 2026 auf 10% steigende Sonderersparnis (fritvalg) bleiben Sache Ihrer Lohnbuchhaltung, für die Klacks die Stundenbasis liefert."
       },
       {
         "icon": "verified",
-        "title": "Nur mit gültigem Ausweis eingeplant",
-        "text": "Klacks macht sichtbar, welches Personal aktuell qualifiziert ist, und warnt mit konfigurierbarer Vorwarnfrist, bevor ein Ausweis oder Zertifikat abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "title": "Gültigkeit von Ausweisen im Blick",
+        "text": "Klacks macht sichtbar, welches Personal aktuell qualifiziert ist, und warnt mit konfigurierbarer Vorwarnfrist, bevor ein Ausweis oder Zertifikat abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung."
       },
       {
         "icon": "route",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Kurzfristige Umplanung, ein Blick",
-    "text": "Klacks zeigt sofort, wenn eine geplante Änderung den Varskotillæg von 525,29 DKK pro Tag auslösen würde, und schlägt eine frühere Umplanung vor, die den Zuschlag vermeidet &mdash; inklusive der zum 1. März 2026 angepassten Tarifsätze."
+    "text": "Klacks hält die geplanten Dienste und Stunden fest, auf deren Basis Ihre Lohnbuchhaltung den Varskotillæg von 525,29 DKK pro Tag abrechnet &mdash; wer Änderungen rechtzeitig vor dem Dienst plant, vermeidet den Zuschlag."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Vagtselskab erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Tarif und Rundgänge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte und Rundgänge übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

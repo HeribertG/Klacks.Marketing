@@ -32,8 +32,8 @@
     "subtitle": "Setiap parameter dengan arti dan dampaknya pada penjadwalan &mdash; inilah bidang-bidang temanya.",
     "items": [
       { "icon": "schedule", "title": "Dasar jam kerja", "text": "Jam harian normal dan jam mingguan untuk posisi 100% &mdash; referensi untuk persentase paruh waktu dan perhitungan jam target." },
-      { "icon": "speed", "title": "Batas maksimal", "text": "Jam maksimal per hari dan per minggu &mdash; perencana menolak shift yang melampauinya." },
-      { "icon": "calendar_month", "title": "Hari berurutan &amp; hari libur", "text": "Berapa hari kerja berurutan yang diizinkan dan berapa hari libur yang dijamin per jendela perencanaan." },
+      { "icon": "speed", "title": "Batas maksimal", "text": "Jam maksimal per hari dan per minggu &mdash; perencana memeriksa shift terhadap batas ini dan memberi peringatan bila terlampaui." },
+      { "icon": "calendar_month", "title": "Hari berurutan &amp; hari libur", "text": "Berapa hari kerja berurutan yang diizinkan dan berapa hari libur yang disediakan per jendela perencanaan." },
       { "icon": "bedtime", "title": "Jeda istirahat &amp; tunjangan malam", "text": "Jeda minimum antara dua shift serta awal, akhir, dan tarif tunjangan malam." },
       { "icon": "more_time", "title": "Lembur", "text": "Mulai dari jam ke berapa waktu kerja dihitung sebagai lembur &mdash; diakumulasi per hari atau per minggu." },
       { "icon": "beach_access", "title": "Hari raya &amp; cuti", "text": "Tarif tunjangan untuk kerja pada hari raya dan hak cuti tahunan bagi karyawan pada aturan ini." }

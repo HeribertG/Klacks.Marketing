@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Unternehmen in Portugal | Open Source Personaleinsatzplanung mit Registo de Ponto & Datenhoheit",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; CNPD-konforme Datenhoheit",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Portugiesischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks dokumentiert Arbeitszeiten lückenlos als Grundlage für das verpflichtende registo de ponto, überwacht das Arbeitszeitkonto (banco de horas grupal) und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten in Ihrer eigenen Infrastruktur, ganz im Sinne der Verhältnismäßigkeitsanforderungen der CNPD.",
+    "subtitle": "Klacks dokumentiert Arbeitszeiten lückenlos als Grundlage für das verpflichtende registo de ponto, überwacht das Arbeitszeitkonto (banco de horas grupal) und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, auf Wunsch mit lokalem KI-Modell. So können Personaldaten in Ihrer eigenen Infrastruktur bleiben, ganz im Sinne der Verhältnismäßigkeitsanforderungen der CNPD.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Portugal",
     "screenshotLabel": "Dienstplan"
@@ -67,17 +67,17 @@
       {
         "icon": "groups",
         "title": "Banco de horas grupal im Blick",
-        "text": "Klacks überwacht die 50-Stunden-Wochengrenze und die 150-Stunden-Jahresgrenze live und warnt, bevor eine Grenze kippt; die maximale Laufzeit von 4 Jahren bleibt dokumentiert &mdash; sobald das Referendum mit 65 % Zustimmung angenommen wurde. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht die 50-Stunden-Wochengrenze und die 150-Stunden-Jahresgrenze live und warnt, bevor eine Grenze kippt; die maximale Laufzeit von 4 Jahren bleibt dokumentiert &mdash; sobald das Referendum mit 65 % Zustimmung angenommen wurde. Auf Wunsch blockiert Klacks die Überschreitung in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung); bei manueller Planung warnt Klacks."
       },
       {
         "icon": "bedtime",
-        "title": "Ruhezeiten &amp; Wochenruhetag eingehalten",
-        "text": "Die 11-stündige tägliche Ruhezeit (Art. 214 CT) und der wöchentliche Ruhetag (Art. 232 CT) &mdash; inklusive Verlegung bei Dauerbetrieb, Bewachung oder Reinigung &mdash; werden automatisch mitgeplant."
+        "title": "Ruhezeiten &amp; Wochenruhetag geprüft",
+        "text": "Die 11-stündige tägliche Ruhezeit (Art. 214 CT) und der wöchentliche Ruhetag (Art. 232 CT) &mdash; inklusive Verlegung bei Dauerbetrieb, Bewachung oder Reinigung &mdash; werden gegen Ihre hinterlegten Regeln geprüft."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Datenhoheit für sensible Daten",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Klacks kommt dabei ganz ohne biometrische Zeiterfassung aus &mdash; die von der CNPD kritisch geprüfte Datenkategorie entsteht gar nicht erst, und Arbeitszeitdaten bleiben ohne Auslandtransfer im Haus."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Klacks kommt dabei ganz ohne biometrische Zeiterfassung aus &mdash; die von der CNPD kritisch geprüfte Datenkategorie wird nicht erhoben, und mit einem lokal gehosteten Modell bleiben Arbeitszeitdaten ohne Auslandtransfer im Haus."
       },
       {
         "icon": "smart_toy",

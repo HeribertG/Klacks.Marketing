@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
     "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">fair geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage in Belgien &mdash; mit geteilten Diensten, Sonn- und Feiertags-Zuschlägen und gesetzlichen Ruhezeiten, die sich nicht still umgehen lassen. Saisonspitzen und Ausfälle fängt die Planung automatisch ab.",
+    "subtitle": "Klacks plant Service, Küche und Etage in Belgien &mdash; mit geteilten Diensten, Sonn- und Feiertags-Zuschlägen und gesetzlichen Ruhezeiten, die bei Verstößen sofort sichtbar werden. Saisonspitzen und Ausfälle fängt die Planung automatisch ab.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie in Belgien",
     "screenshotLabel": "Timeline"
@@ -42,12 +42,12 @@
       {
         "icon": "timer",
         "title": "Ruhezeiten im Blick",
-        "text": "Gesetzliche Ruhezeit-Grenzen werden in Echtzeit überwacht &mdash; Verstöße werden sofort sichtbar. Auf Wunsch blockiert Klacks sie konsequent: Im Block-Modus lässt sich ein Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Gesetzliche Ruhezeit-Grenzen werden in Echtzeit überwacht &mdash; Verstöße werden sofort sichtbar. Auf Wunsch blockiert Klacks sie in der automatischen Planung konsequent (Block-Modus); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Nacht-, Sonn- und Feiertags-Zuschläge rechnet Klacks automatisch aus &mdash; pro Land und Regelwerk konfigurierbar, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zuschläge als Zeitgutschrift",
+        "text": "Nacht-, Sonn- und Feiertags-Zuschläge schreibt Klacks als Zeitgutschrift gut &mdash; konfigurierbar; die Stunden stehen Ihrer Lohnvorbereitung bereit, Beträge berechnet Klacks nicht."
       },
       {
         "icon": "badge",

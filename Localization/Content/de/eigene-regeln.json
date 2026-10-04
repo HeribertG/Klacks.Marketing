@@ -32,8 +32,8 @@
     "subtitle": "Jeder Parameter mit Bedeutung und Planungsauswirkung &mdash; das sind die Themenfelder.",
     "items": [
       { "icon": "schedule", "title": "Arbeitszeit-Basis", "text": "Normale Tagesstunden und die Wochenstunden für ein 100%-Pensum &mdash; die Referenz für Teilzeit-Prozente und Sollstunden-Berechnung." },
-      { "icon": "speed", "title": "Obergrenzen", "text": "Maximale Stunden pro Tag und pro Woche &mdash; der Planer verweigert Schichten, die darüber hinausgehen." },
-      { "icon": "calendar_month", "title": "Folgetage &amp; Ruhetage", "text": "Wie viele Arbeitstage in Folge erlaubt sind und wie viele Ruhetage pro Planungsfenster garantiert werden." },
+      { "icon": "speed", "title": "Obergrenzen", "text": "Maximale Stunden pro Tag und pro Woche &mdash; der Planer prüft Schichten gegen diese Grenzen und warnt, wenn sie überschritten werden." },
+      { "icon": "calendar_month", "title": "Folgetage &amp; Ruhetage", "text": "Wie viele Arbeitstage in Folge erlaubt sind und wie viele Ruhetage pro Planungsfenster vorgesehen werden." },
       { "icon": "bedtime", "title": "Ruhepausen &amp; Nachtzuschlag", "text": "Mindestpause zwischen zwei Schichten sowie Beginn, Ende und Satz des Nachtzuschlags." },
       { "icon": "more_time", "title": "Überzeit", "text": "Ab wie vielen Stunden gearbeitete Zeit als Überzeit gilt &mdash; kumuliert pro Tag oder pro Woche." },
       { "icon": "beach_access", "title": "Feiertage &amp; Ferien", "text": "Zuschlagssatz für Feiertagsarbeit und der jährliche Ferienanspruch für Mitarbeitende auf dieser Regel." }

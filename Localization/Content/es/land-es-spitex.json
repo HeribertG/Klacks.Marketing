@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para el Servicio de Ayuda a Domicilio (SAD) en España",
     "titleHtml": "Más tiempo para los cuidados, <span class=\"text-secondary\">menos para planificar rutas.</span>",
-    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; y computa como tiempo de trabajo el tiempo de desplazamiento registrado entre clientes allí donde lo prevé el convenio aplicable. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
+    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; y tiene en cuenta un valor fijo de tiempo de desplazamiento por intervención como tiempo de trabajo allí donde el convenio aplicable trata así los trayectos entre clientes. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline de Klacks para la planificación de rutas en el Servicio de Ayuda a Domicilio",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Cómo Klacks alivia la carga del SAD español",
-    "subtitle": "Desde la ruta automática hasta el tiempo de trayecto ajustado al convenio &mdash; todo encaja a la perfección.",
+    "subtitle": "Desde la ruta automática hasta el tiempo de trayecto definido &mdash; todo encaja a la perfección.",
     "items": [
       {
         "icon": "route",
@@ -41,23 +41,23 @@
       },
       {
         "icon": "schedule",
-        "title": "Tiempo de trayecto calculado según el convenio",
-        "text": "Klacks computa como tiempo de trabajo los trayectos entre clientes allí donde el convenio aplicable (p. ej. el Convenio SAD Madrid) lo prevé, y deja fuera el primer y el último trayecto conforme a la STS 1305/2024."
+        "title": "Tiempo de trayecto como valor fijo por intervención",
+        "text": "Allí donde el convenio aplicable (p. ej. el Convenio SAD Madrid) prevé los trayectos entre clientes como tiempo de trabajo, usted define para ello un valor fijo de tiempo de desplazamiento por intervención; Klacks no calcula tiempos de trayecto individuales. El primer y el último trayecto siguen sin tenerse en cuenta, conforme a la STS 1305/2024."
       },
       {
         "icon": "event_available",
         "title": "Límite de 35 horas desde 2026 ya previsto",
-        "text": "Para Madrid, la reducción de la jornada máxima a tiempo completo a 35 horas a partir del 1 de enero de 2026 ya está incorporada &mdash; el periodo bimensual móvil se supervisa en tiempo real, teniendo en cuenta correctamente la fecha de inicio del contrato."
+        "text": "La reducción de la jornada máxima a tiempo completo para Madrid a 35 horas a partir del 1 de enero de 2026 puede definirse como regla &mdash; el periodo bimensual móvil se supervisa en tiempo real, teniendo en cuenta correctamente la fecha de inicio del contrato."
       },
       {
         "icon": "bedtime",
         "title": "Descansos comprobados automáticamente",
-        "text": "El descanso diario de 12 horas y el descanso semanal de 36 horas según los art. 34.3 y 37.1 ET se respetan automáticamente incluso con rutas muy ajustadas."
+        "text": "El descanso diario de 12 horas y el descanso semanal de 36 horas según los art. 34.3 y 37.1 ET se comprueban automáticamente incluso con rutas muy ajustadas."
       },
       {
         "icon": "shield_lock",
         "title": "Instalado en sus instalaciones: los datos permanecen en su empresa",
-        "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes no salen de su empresa &mdash; ni siquiera hacia la IA."
+        "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes permanecen en su empresa &mdash; con un modelo de IA alojado localmente, también en lo que respecta a la IA."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "En concreto",
     "title": "Tiempo de trayecto, convenio, un solo plan",
-    "text": "Klacks computa como tiempo de trabajo el desplazamiento registrado entre clientes allí donde lo prevé el Convenio SAD &mdash; el trayecto puro de ida y vuelta al domicilio simplemente no lo registra como tiempo de desplazamiento &mdash; y controla el límite de 35 horas vigente en Madrid desde 2026 &mdash; sin cálculos manuales."
+    "text": "Klacks tiene en cuenta el valor fijo de tiempo de desplazamiento por intervención entre clientes como tiempo de trabajo allí donde lo prevé el Convenio SAD &mdash; el trayecto puro de ida y vuelta al domicilio simplemente no lo define &mdash; y controla el límite de 35 horas vigente en Madrid desde 2026 &mdash; sin cálculos manuales."
   },
   "showRoutePlanning": true,
   "cta": {

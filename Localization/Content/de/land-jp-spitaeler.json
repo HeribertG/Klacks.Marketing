@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Japan",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Dienste lückenlos &mdash; mit den Ärzte-Jahresobergrenzen der Arbeitszeitreform seit 2024 und dem 9-Stunden-Ruheintervall automatisch überwacht. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Dienste lückenlos &mdash; mit den Ärzte-Jahresobergrenzen der Arbeitszeitreform seit 2024 und dem 9-Stunden-Ruheintervall automatisch überwacht. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Japan",
     "screenshotLabel": "Dienstplan"
@@ -42,12 +42,12 @@
       {
         "icon": "gavel",
         "title": "Ärzte-Limits tagesaktuell überwacht",
-        "text": "Klacks überwacht die 960-Stunden-Grenze für A-Niveau und die 1.860-Stunden-Grenze für B/C-Niveau tagesaktuell als Perioden-Obergrenze &mdash; bevor eine Rotation an die Grenze kommt; auf Wunsch blockiert Klacks eine Überschreitung hart, ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht die 960-Stunden-Grenze für A-Niveau und die 1.860-Stunden-Grenze für B/C-Niveau tagesaktuell als Perioden-Obergrenze &mdash; bevor eine Rotation an die Grenze kommt; auf Wunsch blockiert Klacks eine Überschreitung in der automatischen Planung hart, bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "bedtime",
-        "title": "9-Stunden-Ruheintervall automatisch eingeplant",
-        "text": "Klacks prüft die 28-Stunden-Grenze für Dauerdienst und das anschließende 9-Stunden-Ruheintervall &mdash; für B/C-Niveau als harte Pflicht, für A-Niveau als aktive Unterstützung der Bemühenspflicht."
+        "title": "9-Stunden-Ruheintervall geprüft",
+        "text": "Klacks prüft das 9-Stunden-Ruheintervall zwischen zwei Diensten, das Sie hinterlegen &mdash; für B/C-Niveau als gesetzliche Pflicht, für A-Niveau als Unterstützung der Bemühenspflicht. Die 28-Stunden-Grenze für Dauerdienst bildet Klacks nicht ab, da die Tageshöchstarbeitszeit je Kalendertag gilt."
       },
       {
         "icon": "verified",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenzarzt-Rotation und Ruheintervall, ein Plan",
-    "text": "Klacks behält die 1.860-Stunden-Jahresgrenze eines Assistenzarztes im B/C-Niveau im Blick, erzwingt das 9-Stunden-Ruheintervall nach einem 28-Stunden-Dauerdienst und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks behält die 1.860-Stunden-Jahresgrenze eines Assistenzarztes im B/C-Niveau im Blick, prüft das 9-Stunden-Ruheintervall nach einem Dauerdienst und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

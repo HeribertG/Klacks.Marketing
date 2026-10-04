@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Voor logistiek &amp; transport in Nederland",
     "titleHtml": "Routes, toeslagen, termijnen &mdash; <span class=\"text-secondary\">alles onder controle.</span>",
-    "subtitle": "Klacks plant routes en chauffeurs &mdash; met de nieuwe gelijkstelling van overuren voor deeltijd en voltijd vanaf 1-1-2026 en de weekend- en nachttoeslagen van de CAO Beroepsgoederenvervoer automatisch meegenomen.",
+    "subtitle": "Klacks plant routes en chauffeurs &mdash; met de nieuwe gelijkstelling van overuren voor deeltijd en voltijd vanaf 1-1-2026 en de weekend- en nachttoeslagen van de CAO Beroepsgoederenvervoer als vastgelegde regels en tijdtegoeden meegenomen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor routes en chauffeursinzet in Nederland",
     "screenshotLabel": "Tijdlijn"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Hoe Klacks de Nederlandse logistiek ontlast",
-    "subtitle": "Van de correcte overurenberekening tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
+    "subtitle": "Van de overurenregistratie tot de geoptimaliseerde route &mdash; alles grijpt in elkaar.",
     "items": [
-      { "icon": "timer", "title": "Overuren correct berekend volgens de hervorming van 2026", "text": "Klacks berekent overuren voor deeltijd- en voltijdmedewerkers gelijk &mdash; vanaf de individueel overeengekomen arbeidstijd, niet pas vanaf het 41e weekuur." },
-      { "icon": "paid", "title": "Weekend- en feestdagtoeslagen automatisch", "text": "De 150%-zaterdagvergoeding en de 200%-zon-/feestdagvergoeding worden automatisch toegepast." },
-      { "icon": "nightlight", "title": "Nachttoeslag van eendaagse ritten als tijdvaktoeslag berekend", "text": "Klacks berekent de 19%-nachttoeslag tussen 21:00 en 05:00 uur als tijdvaktoeslag en past de samenloopregel correct toe &mdash; alleen de hoogste toeslag wordt uitbetaald." },
+      { "icon": "timer", "title": "Overuren volgens de hervorming van 2026 geregistreerd", "text": "Klacks telt overuren voor deeltijd- en voltijdmedewerkers gelijk &mdash; vanaf de individueel overeengekomen arbeidstijd, niet pas vanaf het 41e weekuur." },
+      { "icon": "paid", "title": "Weekend- en feestdagtoeslagen als tijdtegoed", "text": "De toeslagen voor zaterdag (150% van het uurloon) en zon-/feestdag (200%) legt u vast als toeslagregels; Klacks registreert ze als tijdtoeslag, bedragen berekent Klacks niet." },
+      { "icon": "nightlight", "title": "Nachttoeslag van eendaagse ritten als tijdvaktoeslag berekend", "text": "Klacks verwerkt de 19%-nachttoeslag tussen 21:00 en 05:00 uur als tijdvaktoeslag en past de samenloopregel toe &mdash; alleen de hoogste toeslag wordt aangehouden." },
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks zet stops in de meest logische volgorde &mdash; korte afstanden, nageleefde tijdvakken, minder lege ritten." },
       { "icon": "badge", "title": "Rijbewijscategorieën passend", "text": "Klacks wijst routes alleen toe aan chauffeurs met de juiste bevoegdheid &mdash; en waarschuwt voor verlopende bewijzen." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Plan de routes voor morgen, chauffeur Jansen is ziek” volstaat &mdash; Klacksy start de herplanning, de planningsengine houdt daarbij ook rekening met toeslagen." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Concreet",
     "title": "Zaterdagroute met nachtrit, één plan",
-    "text": "Klacks berekent zowel de 150%-weekendtoeslag als de 19%-nachttoeslag als tijdvaktoeslagen en past de samenloopregel correct toe &mdash; zonder handmatig nawerk."
+    "text": "Klacks verwerkt zowel de 150%-weekendtoeslag als de 19%-nachttoeslag als tijdvaktoeslagen en past de samenloopregel toe &mdash; zonder handmatig nawerk."
   },
   "showRoutePlanning": true,
   "cta": {

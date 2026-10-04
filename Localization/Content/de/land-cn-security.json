@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in China",
     "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jede Schicht im Zyklus im Blick.</span>",
-    "subtitle": "Klacks summiert die Arbeitszeit von 保安人员 im 12-Stunden-Schichtbetrieb laufend über Woche und Monat und macht den Stand gegen den bei der lokalen Behörde (人社局) genehmigten Zyklus sichtbar &mdash; die Basis, um Zuschläge erst zu berechnen, wenn der Zyklus die Sollzeit tatsächlich überschreitet.",
+    "subtitle": "Klacks summiert die Arbeitszeit von 保安人员 im 12-Stunden-Schichtbetrieb laufend über Woche und Monat und macht den Stand gegen den bei der lokalen Behörde (人社局) genehmigten Zyklus sichtbar &mdash; die Basis, um Zuschläge erst dann anzusetzen, wenn der Zyklus die Sollzeit tatsächlich überschreitet.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Sicherheitsdienste in China",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "payments",
-        "title": "300 % Feiertagszuschlag automatisch zugeordnet",
-        "text": "Fällt innerhalb des Zyklus ein gesetzlicher Feiertag mit echtem 加班 zusammen, ordnet Klacks den 300 %-Zuschlag nach Art. 44 automatisch zu; die Werktags-Prämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass mehrere gleichzeitig greifende Zuschläge korrekt addiert werden, oder so, dass nur der höchste Satz gilt."
+        "title": "300 % Feiertagszuschlag als Zeitgutschrift",
+        "text": "Fällt innerhalb des Zyklus ein gesetzlicher Feiertag mit echtem 加班 zusammen, schreibt Klacks den 300 %-Zuschlag nach Art. 44 als Zeitgutschrift gut; die Werktags-Prämie (150 %) lässt sich als weiterer Zuschlag hinterlegen &mdash; die Zuschlags-Stapelung ist dabei konfigurierbar: kumulativ, sodass mehrere gleichzeitig greifende Zuschläge korrekt addiert werden, oder so, dass nur der höchste Satz gilt."
       },
       {
         "icon": "description",
@@ -57,7 +57,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Einsatzdaten bleiben im Land",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personal- und Objektdaten verlassen China nicht &mdash; die CAC-Cross-Border-Prüfung nach PIPL entfällt."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Personal- und Objektdaten bleiben in China, mit einem lokalen KI-Modell auch bei der KI-Nutzung &mdash; das erleichtert die Einhaltung der PIPL-Vorgaben zur grenzüberschreitenden Übermittlung (CAC-Prüfung)."
       },
       {
         "icon": "smart_toy",
@@ -74,6 +74,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Sicherheitsdienst in China erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Zyklus-Zuschläge und Genehmigungsauflagen übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekte, Zyklus-Arbeitszeit und Zeitzuschläge abbildet &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

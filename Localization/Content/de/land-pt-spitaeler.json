@@ -24,16 +24,16 @@
     "items": [
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "compare_arrows", "title": "35h- und 40h-Basis automatisch getrennt", "text": "Klacks bildet die 35-Stunden-Woche des SNS und die 40-Stunden-Woche privater Träger parallel ab &mdash; je nach Trägerschaft der Station oder Klinik." },
-      { "icon": "bedtime", "title": "11-Stunden-Ruhezeit nach Bereitschaft", "text": "Klacks plant nach jedem Notaufnahme- oder Bereitschaftsdienst automatisch die gesetzliche Mindestruhezeit von 11 Stunden ein, bevor der nächste Einsatz beginnt." },
-      { "icon": "fingerprint", "title": "Registo de ponto: lückenlose Datenbasis", "text": "Klacks erfasst Arbeitszeit und Bereitschaft lückenlos, hält sie 5 Jahre bereit und macht sie am Arbeitsplatz sofort einsehbar." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "bedtime", "title": "11-Stunden-Ruhezeit nach Bereitschaft", "text": "Klacks prüft nach jedem Notaufnahme- oder Bereitschaftsdienst die hinterlegte Mindestruhezeit von 11 Stunden, bevor der nächste Einsatz beginnt." },
+      { "icon": "fingerprint", "title": "Registo de ponto: lückenlose Datenbasis", "text": "Klacks erfasst Arbeitszeit lückenlos, hält sie 5 Jahre bereit und macht sie am Arbeitsplatz sofort einsehbar." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Trägerschaft, Qualifikation und Ruhezeit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "SNS-Station und private Klinik, ein System",
-    "text": "Klacks unterscheidet die 35-Stunden-Basis des SNS von der 40-Stunden-Basis privater Träger automatisch, plant die 11-Stunden-Ruhezeit nach jedem Bereitschaftsdienst mit ein und zeigt der Stationsleitung frühzeitig, wo es eng wird."
+    "text": "Klacks unterscheidet die 35-Stunden-Basis des SNS von der 40-Stunden-Basis privater Träger automatisch, prüft die 11-Stunden-Ruhezeit nach jedem Bereitschaftsdienst mit und zeigt der Stationsleitung frühzeitig, wo es eng wird."
   },
   "showRoutePlanning": false,
   "cta": {

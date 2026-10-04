@@ -37,7 +37,7 @@
       {
         "icon": "timer",
         "title": "8-Stunden-Arbeitszeitgrenze überwacht",
-        "text": "Klacks prüft die tägliche Höchstarbeitszeit von 8 Stunden aus UU 22/2009 Pasal 90, die Sie hinterlegen, und warnt, bevor eine Tour das gesetzliche Limit überschreitet. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks prüft die tägliche Höchstarbeitszeit von 8 Stunden aus UU 22/2009 Pasal 90, die Sie hinterlegen, und warnt, bevor eine Tour das gesetzliche Limit überschreitet. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "pause_circle",
@@ -47,7 +47,7 @@
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "text": "Klacks berücksichtigt bei der Einteilung die Berechtigung der Fahrer:innen &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung."
       },
       {
         "icon": "shield_lock",

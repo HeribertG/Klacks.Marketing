@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Spanien | Open Source Personaleinsatzplanung & Registro de Jornada",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Spanien-konform",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Für spanisches Arbeitsrecht",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft Ruhezeiten nach dem Estatuto de los Trabajadores in Echtzeit und dokumentiert Beginn und Ende jeder Schicht &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten dort, wo Ihre Datenschutzverantwortlichen sie haben wollen: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Ruhezeiten gegen die Vorgaben des Estatuto de los Trabajadores und dokumentiert Beginn und Ende jeder Schicht &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo Ihre Datenschutzverantwortlichen sie haben wollen: im eigenen Haus.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Spanien",
     "screenshotLabel": "Dienstplan"
@@ -66,7 +66,7 @@
       },
       {
         "icon": "punch_clock",
-        "title": "Registro de Jornada eingebaut",
+        "title": "Zeitbasis für den Registro de Jornada",
         "text": "Klacks dokumentiert Beginn und Ende jeder Schicht durchgehend und liefert damit die Zeitbasis für die nach RD-ley 8/2019 verlangte Erfassung &mdash; direkt aus der täglichen Planung, ohne separaten Schritt."
       },
       {
@@ -77,12 +77,12 @@
       {
         "icon": "gavel",
         "title": "Überstunden-Limit von 80 Stunden im Blick",
-        "text": "Klacks überwacht das jährliche 80-Stunden-Überstundenlimit nach Art. 35 ET live und warnt, bevor es kippt; dass Nachtarbeiter und Minderjährige unter 18 Jahren keine Überstunden leisten dürfen (Art. 36.1 ET), erkennt Klacks nicht automatisch. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks überwacht das jährliche 80-Stunden-Überstundenlimit nach Art. 35 ET live und warnt, bevor es kippt; dass Nachtarbeiter und Minderjährige unter 18 Jahren keine Überstunden leisten dürfen (Art. 36.1 ET), erkennt Klacks nicht automatisch. Auf Wunsch blockiert Klacks die Überschreitung in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung); bei manueller Planung warnt Klacks."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell ganz ohne Auslandtransfer von Personaldaten."
       },
       {
         "icon": "smart_toy",

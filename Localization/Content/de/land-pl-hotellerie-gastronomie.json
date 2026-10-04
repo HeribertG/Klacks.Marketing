@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
-    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">KP-sicher geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage nach dem polnischen Arbeitsgesetzbuch (Kodeks pracy) &mdash; inklusive 12-Stunden-Diensten im Równoważny-System (Art. 135 KP), 35 Stunden Wochenruhe und einem freien Sonntag je vier Wochen (Art. 151¹² KP).",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">mit Blick auf das KP geplant.</span>",
+    "subtitle": "Klacks plant Service, Küche und Etage mit Blick auf das polnische Arbeitsgesetzbuch (Kodeks pracy) &mdash; inklusive 12-Stunden-Diensten im Równoważny-System (Art. 135 KP), 35 Stunden Wochenruhe und einem freien Sonntag je vier Wochen (Art. 151¹² KP).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie",
     "screenshotLabel": "Timeline"
@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Ruhezeiten im Blick",
-        "text": "Die tägliche Ruhezeit von 11 Stunden nach Kodeks pracy wird in Echtzeit überwacht, Verstöße werden sofort sichtbar; die 35-Stunden-Wochenruhe prüft Klacks über den freien Tag pro Woche, nicht als durchgehende Spanne. Auf Wunsch blockiert Klacks sie konsequent."
+        "text": "Die tägliche Ruhezeit von 11 Stunden nach Kodeks pracy wird in Echtzeit überwacht, Verstöße werden sofort sichtbar; die 35-Stunden-Wochenruhe prüft Klacks über den freien Tag pro Woche, nicht als durchgehende Spanne. Auf Wunsch blockiert Klacks sie in der automatischen Planung konsequent; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "event_available",
@@ -51,8 +51,8 @@
       },
       {
         "icon": "payments",
-        "title": "Zuschläge automatisch",
-        "text": "Nachtzuschläge (Nachtzeit: 8 Stunden zwischen 21 und 7 Uhr) sowie Sonn- und Feiertags-Zuschläge rechnet Klacks automatisch aus &mdash; konfigurierbar pro Regelwerk, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "title": "Zeitzuschläge automatisch",
+        "text": "Nachtzuschläge (Nachtzeit: 8 Stunden zwischen 21 und 7 Uhr) sowie Sonn- und Feiertags-Zuschläge schreibt Klacks automatisch als Zeitgutschrift gut &mdash; konfigurierbar pro Regelwerk; Stunden und Zeitzuschläge stehen für Ihre Lohnbuchhaltung bereit."
       },
       {
         "icon": "smart_toy",

@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Hotellerie & Gastronomie in Thailand | LPA-sichere Dienstpläne für Hotels",
+  "pageTitle": "Klacks für Hotellerie & Gastronomie in Thailand | Dienstpläne mit LPA-Prüfung für Hotels",
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Für Hotellerie &amp; Gastronomie",
-    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">LPA-sicher geplant.</span>",
-    "subtitle": "Klacks plant Service, Küche und Etage nach dem thailändischen Labour Protection Act &mdash; inklusive der Hotel-Ausnahme bei den Ruhetagen (Sec. 28: akkumulierbar über ein 4-Wochen-Fenster) und der Wahl zwischen Ersatzruhetag und Bezahlung an Feiertagen (Sec. 29).",
+    "titleHtml": "Früh-, Spät-, Nachtdienst &mdash; <span class=\"text-secondary\">mit LPA-Prüfung geplant.</span>",
+    "subtitle": "Klacks plant Service, Küche und Etage mit Blick auf den thailändischen Labour Protection Act &mdash; das Gesetz kennt für Hotels eine Ausnahme bei den Ruhetagen (Sec. 28: akkumulierbar über ein 4-Wochen-Fenster) und die Wahl zwischen Ersatzruhetag und Bezahlung an Feiertagen (Sec. 29).",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Dienstpläne in Hotellerie und Gastronomie in Thailand",
     "screenshotLabel": "Timeline"
@@ -36,23 +36,23 @@
     "items": [
       {
         "icon": "calendar_month",
-        "title": "4-Wochen-Ruhetage-Fenster",
-        "text": "Klacks verteilt die Ruhetage so, dass das 4-Wochen-Fenster der Hotel-Ausnahme (Sec. 28 LPA) eingehalten wird &mdash; und zeigt pro Mitarbeitendem, wie viele Ruhetage noch offen sind."
+        "title": "Ruhetage im Überblick",
+        "text": "Das 4-Wochen-Fenster der Hotel-Ausnahme (Sec. 28 LPA) beschreibt das Gesetz; Klacks zählt die freien Tage pro Kalenderwoche und warnt bei zu wenigen Ruhetagen oder zu vielen Arbeitstagen in Folge &mdash; eine Prüfung des 4-Wochen-Fensters selbst bietet Klacks nicht."
       },
       {
         "icon": "schedule",
         "title": "8h/48h &amp; Überstunden-Cap",
-        "text": "Die Tages- und Wochenhöchstzeiten nach Sec. 23 LPA (8 Stunden normal, 48 Stunden pro Woche) und das 36-Stunden-Cap für Überstunden und Feiertagsarbeit werden in Echtzeit überwacht &mdash; jede Überschreitung wird sofort sichtbar."
+        "text": "Die Tages- und Wochenhöchstzeiten nach Sec. 23 LPA (8 Stunden normal, 48 Stunden pro Woche) und das 36-Stunden-Cap für Überstunden und Feiertagsarbeit werden in Echtzeit gegen die hinterlegten Grenzen geprüft &mdash; Überschreitungen zeigt Klacks sofort als Warnung an."
       },
       {
         "icon": "payments",
         "title": "Feiertags-Kompensation konfigurierbar",
-        "text": "Ob Ersatzruhetag oder Bezahlung: Die Kompensation von Feiertagsarbeit lässt sich pro Betrieb hinterlegen &mdash; Zuschläge rechnet Klacks automatisch aus, ohne manuelle Nacharbeit bei der Lohnvorbereitung."
+        "text": "Ob Ersatzruhetag oder Bezahlung: Ein Ausgleichsruhetag lässt sich optional hinterlegen, die Bezahlung erfolgt in Ihrer Lohnbuchhaltung &mdash; Zeitzuschläge schreibt Klacks als Stunden gut und stellt sie für die Lohnvorbereitung bereit."
       },
       {
         "icon": "badge",
         "title": "Qualifikationen &amp; Nachweise",
-        "text": "Schichten werden nur besetzt, wer die passende Qualifikation mitbringt &mdash; Klacks warnt vor ablaufenden Nachweisen, bevor sie zum Problem werden."
+        "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung und warnt vor ablaufenden Nachweisen, bevor sie zum Problem werden."
       },
       {
         "icon": "smart_toy",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zuschläge und Ruhezeiten übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Dienstpläne, Zeitzuschläge und Ruhezeitprüfung unterstützt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -67,12 +67,12 @@
       {
         "icon": "bedtime",
         "title": "Ruhezeiten automatisch geprüft",
-        "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) werden automatisch eingehalten, inklusive der in der Regel den Sonntag umfassenden Wochenruhe."
+        "text": "Die 11-stündige tägliche und 35-stündige wöchentliche Ruhezeit (Art. 132 f. Kodeks pracy) prüft Klacks automatisch und warnt bei Unterschreitung; die Wochenruhe wird über den freien Tag pro Woche geprüft, nicht als durchgehende Spanne, und ihre Lage am Sonntag prüft Klacks nicht."
       },
       {
         "icon": "calendar_month",
         "title": "Równoważny czas pracy im Blick",
-        "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und überwacht den Durchschnitt über den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung &mdash; rollierend live und warnt, bevor der Grenzwert kippt. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks berücksichtigt bis zu 12 Stunden Tagesarbeitszeit im äquivalenten Arbeitszeitsystem und überwacht den Durchschnitt über den 1-monatigen Standard-Abrechnungszeitraum &mdash; inklusive begründeter Verlängerung &mdash; rollierend live und warnt, bevor der Grenzwert kippt. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "fingerprint",
@@ -82,7 +82,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang und ohne die Datenschutzrisiken, die die UODO bei Drittanbietern kritisiert."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; ohne Cloud-Zwang; mit lokal gehostetem Modell fließen keine Personaldaten an Drittanbieter, wie sie die UODO kritisiert."
       },
       {
         "icon": "smart_toy",

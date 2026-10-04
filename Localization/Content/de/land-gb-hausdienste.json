@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in Großbritannien",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber eingeplant.</span>",
-    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem aktuellen National Living Wage stets hinterlegt und einer sauberen Dokumentationsbasis für TUPE-Übergänge bei Anbieterwechsel.",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit einer sauberen Dokumentationsbasis für TUPE-Übergänge bei Anbieterwechsel.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Großbritannien",
     "screenshotLabel": "Dienstplan"
@@ -13,17 +13,17 @@
     "eyebrow": "Der Reinigungs-Alltag in Großbritannien",
     "title": "National Living Wage, TUPE und viele Objekte",
     "items": [
-      { "icon": "payments", "title": "National Living Wage synchron halten", "text": "Seit 1. April 2026 gilt der National Living Wage von £12.71 pro Stunde &mdash; nach £12.21 seit April 2025. Dienstplan- und Lohnlaufdaten müssen diese Sätze über alle Objekte hinweg synchron abbilden." },
+      { "icon": "payments", "title": "National Living Wage synchron halten", "text": "Seit 1. April 2026 gilt der National Living Wage von £12.71 pro Stunde &mdash; nach £12.21 seit April 2025. Die Lohnbuchhaltung muss diese Sätze über alle Objekte hinweg synchron abbilden." },
       { "icon": "sync_alt", "title": "TUPE-Übergang bei Anbieterwechsel", "text": "Wechselt ein Reinigungsauftrag den Anbieter (Service Provision Change), gehen die Arbeitsbedingungen inklusive vertraglicher Arbeitszeiten und Dienstpläne der übernommenen Reinigungskräfte automatisch auf den neuen Arbeitgeber über &mdash; TUPE 2006 verlangt lückenlose Übernahme." },
       { "icon": "apartment", "title": "Viele Objekte, wechselnde Teams", "text": "Jedes Objekt hat eigene Zeiten und Anforderungen, Teams wechseln häufig &mdash; alles gleichzeitig zu überblicken ist von Hand kaum machbar." }
     ]
   },
   "solutions": {
     "title": "Wie Klacks Reinigungsdienste in Großbritannien entlastet",
-    "subtitle": "Von der optimierten Route bis zum korrekten TUPE-Übergang &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur nachvollziehbaren TUPE-Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "payments", "title": "National Living Wage automatisch aktuell", "text": "Klacks hat den aktuellen Satz von £12.71 pro Stunde jederzeit hinterlegt &mdash; als verlässliche Grundlage für Ihre Lohnabrechnung." },
+      { "icon": "payments", "title": "Stunden für die Lohnbuchhaltung", "text": "Klacks erfasst die geleisteten Stunden je Objekt und stellt sie als Datei-Export für Ihre Lohnbuchhaltung bereit &mdash; den National Living Wage von £12.71 pro Stunde wenden Sie in Ihrer Lohnsoftware an." },
       { "icon": "sync_alt", "title": "TUPE-Übergänge sauber dokumentiert", "text": "Übernommene Reinigungskräfte samt bestehender Dienstpläne und Arbeitsbedingungen bilden Sie in Klacks ab &mdash; die Basis, um TUPE-Übergänge nachvollziehbar zu dokumentieren." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Urlaub: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Anbieterwechsel, ein Plan",
-    "text": "Übernimmt Ihr Betrieb einen Reinigungsauftrag per TUPE, erfassen Sie die bestehenden Dienstpläne der übernommenen Reinigungskräfte in Klacks und behalten den aktuellen National Living Wage von £12.71 pro Stunde stets im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Übernimmt Ihr Betrieb einen Reinigungsauftrag per TUPE, erfassen Sie die bestehenden Dienstpläne der übernommenen Reinigungskräfte in Klacks und planen sie nahtlos weiter &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Routen plant, TUPE-Übergänge dokumentiert und Lohnsätze aktuell hält &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Routen plant, TUPE-Übergänge dokumentiert und Stunden für die Lohnbuchhaltung bereitstellt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

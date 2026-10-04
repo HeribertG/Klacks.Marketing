@@ -1,11 +1,11 @@
 {
   "pageTitle": "Asenna Klacks: ohjattu asennusohjelma tai Docker Compose maapaketilla | Klacks",
-  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja lisillä. Ei lisenssimaksuja, avoin lähdekoodi, ei rekisteröitymistä.",
+  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja – siltä osin kuin ne on maallenne määritelty – lisillä. Ei lisenssimaksuja, avoin lähdekoodi, ei rekisteröitymistä.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Asennus &middot; Ei lisenssimaksuja &amp; avoin lähdekoodi",
     "titleHtml": "Ajakaa Klacksia itse &mdash; <span class=\"text-secondary\">omassa infrastruktuurissanne.</span>",
-    "subtitle": "Kaksi polkua, yksi lopputulos: ohjattu asennusohjelma tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt, lisät ja toimialakohtaiset esiasetukset &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
+    "subtitle": "Kaksi polkua, yksi lopputulos: ohjattu asennusohjelma tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty) &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
   },
   "industry": {
     "eyebrow": "Maapaketti",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Pelkkä profiili &mdash; olemassa oleviin asennuksiin",
-    "text": "Onko Klacks jo käytössä? Profiili (JSON) sisältää maakohtaiset esiasetukset &mdash; pyhäpäivät, työaikasäännöt, lisät ja toimialat &mdash; ja se otetaan käyttöön asennuksen ensimmäisellä käynnistyskerralla. Se on myös tapa lisätä myöhemmin uusi toimiala esiasetuksineen.",
+    "text": "Onko Klacks jo käytössä? Profiili (JSON) sisältää maakohtaiset esiasetukset &mdash; pyhäpäivät, työaikasäännöt, lisät (siltä osin kuin ne on maalle määritelty) ja toimialat &mdash; ja se otetaan käyttöön asennuksen ensimmäisellä käynnistyskerralla. Se on myös tapa lisätä myöhemmin uusi toimiala esiasetuksineen.",
     "downloadLabel": "Lataa profiili (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Hyvä tietää",
     "items": [
       { "icon": "code", "title": "Avoin lähdekoodi (AGPL-3.0)", "text": "Koko lähdekoodi on julkisesti GitHubissa AGPL-3.0-lisenssillä &mdash; ei lisenssimaksuja, ei toimittajalukkoa." },
-      { "icon": "storage", "title": "Tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot eivät koskaan poistu palvelimeltanne &mdash; pilvipakkoa ei ole." },
+      { "icon": "storage", "title": "Tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot sijaitsevat palvelimellanne &mdash; pilvipakkoa ei ole. Vain jos valitsette ulkoisen tekoälypalveluntarjoajan, pyynnöt lähetetään sille; paikallisella mallilla kaikki pysyy talossa." },
       { "icon": "update", "title": "Päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version. Pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti." },
       { "icon": "lock", "title": "HTTPS alusta alkaen", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen." }
     ]

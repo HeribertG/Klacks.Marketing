@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Godstransport in Schweden",
     "titleHtml": "Touren, Recht und <span class=\"text-secondary\">Tarif zugleich.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit dem Transportavtalet 2025-2027 als hinterlegten Regeln und der Trennung von Arbeitszeit und Wartezeit nach der Vägarbetstidslagen. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit dem Transportavtalet 2025-2027 als hinterlegten Regeln und der Wartezeit als Arbeitszeit nach der Vägarbetstidslagen. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Schweden",
     "screenshotLabel": "Timeline"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Wie Klacks die schwedische Logistik entlastet",
-    "subtitle": "Von der optimierten Tour bis zum korrekten Tarif &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zu den hinterlegten Tarifregeln &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "gavel", "title": "Transportavtalet hinterlegt", "text": "Die Laufzeit 2025-2027 und den qualifizierten Freitagabend-Zuschlag für obekväm arbetstid hinterlegen Sie in Klacks als Zuschlagsregeln &mdash; zentral an einer Stelle." },
+      { "icon": "gavel", "title": "Transportavtalet hinterlegt", "text": "Die Laufzeit 2025-2027 und den qualifizierten Freitagabend-Zuschlag für obekväm arbetstid hinterlegen Sie in Klacks als Zeitzuschläge &mdash; zentral an einer Stelle." },
       { "icon": "timer", "title": "§-12-Grenzen überwacht", "text": "Klacks überwacht die 60-Stunden-Grenze je Einzelwoche automatisch und den rollierenden 48-Stunden-Schnitt über den 4-Monats-Referenzzeitraum live gleich mit &mdash; samt Warnung, bevor der Grenzwert kippt (Vägarbetstidslagen § 12)." },
-      { "icon": "fact_check", "title": "Wartezeit von Arbeitszeit getrennt abgebildet", "text": "Effektive Arbeitszeit und reine Wartezeit gemäß § 12 bilden Sie in Klacks getrennt ab &mdash; die dokumentierten Zeiten liefern die Grundlage für Ihren Abgleich mit den Fahrtenschreiberdaten." },
+      { "icon": "fact_check", "title": "Wartezeit als Arbeitszeit erfasst", "text": "Wartezeit, in der der Fahrer nicht frei über seine Zeit verfügen kann, erfassen Sie in Klacks als Arbeitszeit &mdash; eine eigene Zeitart für Bereitschaft kennt Klacks nicht; die dokumentierten Zeiten liefern die Grundlage für Ihren Abgleich mit den Fahrtenschreiberdaten." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Andersson ist krank“ genügt &mdash; Klacksy startet die Neuplanung." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wartezeit und Freitagabend-Zuschlag, ein Plan",
-    "text": "Als Wartezeit erfasste Stunden zwischen zwei Ladestellen zählen in Klacks zur sammanlagd arbetstid nach § 12, und den hinterlegten qualifizierten Freitagabend-Zuschlag aus dem Transportavtalet weist Klacks der betroffenen Tour automatisch zu &mdash; ohne Nachrechnen von Hand."
+    "text": "Als Arbeitszeit erfasste Wartestunden zwischen zwei Ladestellen zählen in Klacks zur sammanlagd arbetstid nach § 12, und den hinterlegten qualifizierten Freitagabend-Zuschlag aus dem Transportavtalet schreibt Klacks der betroffenen Tour automatisch als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

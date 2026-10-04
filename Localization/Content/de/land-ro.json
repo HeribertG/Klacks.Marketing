@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Rumänien | Zeiterfassung, Ruhezeit & ITM-Konformität",
+  "pageTitle": "Klacks für Unternehmen in Rumänien | Zeiterfassung, Ruhezeit & ITM-Nachweis",
   "hero": {
     "badgeIcon": "fact_check",
-    "badge": "ITM-konforme Zeiterfassung &middot; Ruhezeit-Automatik &middot; Rumänien",
+    "badge": "Nachweisbare Zeiterfassung &middot; Freie Tage im Blick &middot; Rumänien",
     "titleHtml": "Arbeitszeit, die <span class=\"text-secondary\">lückenlos nachweisbar ist.</span>",
-    "subtitle": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion (ITM) vorlegbar, ganz ohne biometrische Daten. Freie Tage pro Woche und Überstundenzuschläge laufen automatisch mit.",
+    "subtitle": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion (ITM) vorlegbar, ganz ohne biometrische Daten. Die freien Tage pro Woche prüft Klacks mit; Überstundenzuschläge werden als Zeitgutschrift geführt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Rumänien",
     "screenshotLabel": "Dienstplan"
@@ -15,7 +15,7 @@
     "items": [
       {
         "icon": "fact_check",
-        "title": "Tägliche Zeiterfassung, ITM-fest",
+        "title": "Tägliche Zeiterfassung, nachweisbar",
         "text": "Art. 119 Codul Muncii verlangt eine tägliche Aufzeichnung von Beginn und Ende je Arbeitnehmer, auf Verlangen der Arbeitsinspektion (ITM) vorzulegen &mdash; keine Formvorschrift, aber lückenlose Nachweisbarkeit ist entscheidend."
       },
       {
@@ -61,7 +61,7 @@
     "items": [
       {
         "icon": "fact_check",
-        "title": "Tägliche Zeiterfassung ITM-fest dokumentiert",
+        "title": "Tägliche Zeiterfassung nachweisbar dokumentiert",
         "text": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion vorlegbar."
       },
       {
@@ -72,12 +72,12 @@
       {
         "icon": "event_repeat",
         "title": "Freie Tage pro Woche im Blick",
-        "text": "Klacks prüft, dass pro Woche die hinterlegte Zahl freier Tage bleibt, und macht Unterschreitungen für jede Person sichtbar. Ob die 48-stündige Wochenruhe an Samstag/Sonntag liegt, und den 150%-Zuschlag nach ICCJ Nr. 415/2025 für kumulierte Ruhezeit prüft bzw. berechnet Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die freien Tage konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks prüft, dass pro Woche die hinterlegte Zahl freier Tage bleibt, und macht Unterschreitungen für jede Person sichtbar. Ob die 48-stündige Wochenruhe an Samstag/Sonntag liegt, und den 150%-Zuschlag nach ICCJ Nr. 415/2025 für kumulierte Ruhezeit prüft bzw. berechnet Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die freien Tage in der automatischen Planung konsequent (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "schedule",
-        "title": "Überstundenzuschlag automatisch",
-        "text": "Den Überstundenzuschlag von mindestens 75 % rechnet Klacks automatisch; den Freizeitausgleich innerhalb der 90-Tage-Frist plant und überwacht Klacks nicht."
+        "title": "Überstunden-Zeitzuschlag automatisch",
+        "text": "Den Überstundenzuschlag von mindestens 75 % schreibt Klacks automatisch als Zeitgutschrift gut; den Freizeitausgleich innerhalb der 90-Tage-Frist plant und überwacht Klacks nicht."
       },
       {
         "icon": "shield_lock",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Arbeitszeiten dokumentiert, Ruhezeiten prüft und Überstundenzuschläge rechnet &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Arbeitszeiten dokumentiert, Ruhezeiten prüft und Überstundenzuschläge als Zeitgutschrift führt &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -62,12 +62,12 @@
       {
         "icon": "gavel",
         "title": "3-Stufen-Cap automatisch überwacht",
-        "text": "Klacks prüft Tages-, Monats- und Jahreslimit (Art. 107) laufend gegeneinander und warnt, bevor eine einzelne Stufe überschritten wird. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern."
+        "text": "Klacks prüft Tages-, Monats- und Jahreslimit (Art. 107) laufend gegeneinander und warnt, bevor eine einzelne Stufe überschritten wird. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "bedtime",
         "title": "Nacht- und Überstundensätze im Griff",
-        "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp mit Staffeln. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze stehen damit fertig berechnet in der Stundenbasis für Ihre Lohnabrechnung."
+        "text": "Die Zuschlagssätze nach Art. 98 hinterlegen Sie als konfigurierbare Multiplikatoren, Überstundenzuschläge als eigenen Zuschlagstyp. Im additiven Rechenmodus kumuliert Klacks Nacht- und Überstundenzuschlag automatisch, statt nur den höchsten Satz anzusetzen &mdash; die kumulierten 210%- bzw. 270%-Sätze schreibt Klacks als Zeitzuschläge in Stunden gut und stellt sie für Ihre Lohnbuchhaltung bereit."
       },
       {
         "icon": "schedule",
@@ -77,12 +77,12 @@
       {
         "icon": "fingerprint",
         "title": "Bei Ihnen installiert, ohne Cross-Border-Transfer",
-        "text": "Klacks erfasst keine biometrischen Daten &mdash; die Personal- und Planungsdaten, mit denen Klacks arbeitet, bleiben durch die Installation bei Ihnen vollständig im eigenen Firmennetz, ganz ohne Transfer-Impact-Assessment-Dossier nach Decree 13/2023."
+        "text": "Klacks erfasst keine biometrischen Daten &mdash; die Personal- und Planungsdaten, mit denen Klacks arbeitet, bleiben durch die Installation bei Ihnen im eigenen Firmennetz; mit einem lokal gehosteten KI-Modell findet kein Auslandtransfer statt, ein Transfer-Impact-Assessment-Dossier nach Decree 13/2023 ist dafür nicht nötig."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, bei lokal gehostetem Modell ganz ohne Auslandtransfer von Personaldaten."
       },
       {
         "icon": "smart_toy",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Schichtruhe (Art. 110) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die Prüfung der Schichtruhe (Art. 110) und die Zeitzuschläge laufen dabei genauso live mit wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nacht-Überstunden und 3-Stufen-Cap, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Schicht in die Nachtzeit fällt oder eine Stufe des Überstunden-Caps erreicht ist, und kumuliert die hinterlegten Zuschläge im additiven Rechenmodus direkt &mdash; die fertig berechneten Stunden liefern die Basis für Ihre Lohnabrechnung, ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine Schicht in die Nachtzeit fällt oder eine Stufe des Überstunden-Caps erreicht ist, und kumuliert die hinterlegten Zuschläge im additiven Rechenmodus direkt &mdash; die gutgeschriebenen Zeitzuschläge in Stunden liefern die Basis für Ihre Lohnbuchhaltung, ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

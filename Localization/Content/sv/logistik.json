@@ -15,7 +15,7 @@
     "title": "Rutter, regelverk och tidsfrister samtidigt",
     "items": [
       { "icon": "alt_route", "title": "Rutter &amp; tidsfrister", "text": "Stopp, tidsfönster och sträckor måste stämma överens &mdash; varje omplanering får följdverkningar." },
-      { "icon": "timer", "title": "Kör- &amp; vilotider", "text": "Lagstadgade kör- och vilotider är obligatoriska &mdash; och nästan omöjliga att säkerställa för hand över många förare." },
+      { "icon": "timer", "title": "Arbets- &amp; vilotider", "text": "Arbets- och vilotider är lagreglerade &mdash; och nästan omöjliga att säkerställa för hand över många förare." },
       { "icon": "public", "title": "Gränsöverskridande", "text": "Olika länder, olika helgdagar och regler: en rutt över gränsen kräver båda kalendrarna." }
     ]
   },
@@ -24,7 +24,7 @@
     "subtitle": "Från optimerad rutt till gränsöverskridande helgdag &mdash; allt hänger ihop.",
     "items": [
       { "icon": "route", "title": "Rutter automatiskt optimerade", "text": "Klacks lägger stoppen i den mest logiska ordningen &mdash; korta sträckor, hållna tidsfönster, färre tomkörningar." },
-      { "icon": "timer", "title": "Arbets- &amp; vilotider kontrollerade", "text": "De gränser för arbets- och vilotid som du lägger in övervakas i realtid &mdash; Klacks varnar för en överträdelse eller blockerar den om du vill. Själva körtiden styrker du fortfarande med färdskrivardata." },
+      { "icon": "timer", "title": "Arbets- &amp; vilotider kontrollerade", "text": "De gränser för arbets- och vilotid som du lägger in kontrolleras löpande &mdash; Klacks varnar för en överträdelse; i den automatiska planeringen kan den på begäran även blockeras. Själva körtiden styrker du fortfarande med färdskrivardata." },
       { "icon": "flag", "title": "Flera länder &amp; kalendrar", "text": "Helgdagar och regler från flera länder kan kombineras &mdash; var och en med egen påverkan på tider och tillägg." },
       { "icon": "badge", "title": "Rätt körkortsbehörigheter", "text": "Klacks tilldelar rutter endast till förare med rätt behörighet &mdash; och varnar för intyg som håller på att gå ut." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Planera rutterna för imorgon, förare Meier är sjuk” räcker &mdash; Klacksy startar omplaneringen." },

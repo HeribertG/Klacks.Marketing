@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "專為飯店 &amp; 餐飲業打造",
     "titleHtml": "早班、晚班、夜班 &mdash; <span class=\"text-secondary\">公平排班。</span>",
-    "subtitle": "Klacks 為外場、廚房與房務排班 &mdash; 涵蓋分段班、週日與假日加給，以及無法被悄悄規避的法定休息時間。旺季高峰與人力缺額，排班系統會自動因應。",
+    "subtitle": "Klacks 為外場、廚房與房務排班 &mdash; 涵蓋分段班、週日與假日加給，以及能讓違規立即可見的法定休息時間檢查。旺季高峰與人力缺額，排班系統會自動因應。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 時間軸畫面，用於飯店與餐飲業排班",
     "screenshotLabel": "時間軸"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "分段班確實排定",
-        "text": "Klacks 會妥善安排午市與晚市時段，確保最低休息時間與每日最高工時都獲得遵守 &mdash; 任何不足之處都會立即顯示。"
+        "text": "Klacks 會妥善安排午市與晚市時段，並對照最低休息時間與每日最高工時進行檢查 &mdash; 任何不足之處都會立即顯示。"
       },
       {
         "icon": "timer",
         "title": "休息時間盡在掌握",
-        "text": "法定休息時間下限會受到即時監控 &mdash; 違規情況會立即顯示。如有需要，Klacks 可徹底封鎖：在封鎖模式下，違規排班必須附上主管核准紀錄才能儲存。"
+        "text": "法定休息時間下限會持續受到檢查 &mdash; 違規情況會立即顯示。預設情況下 Klacks 會發出警告；如有需要，可為自動排班（排班精靈、建議、缺勤代班）啟用封鎖模式。"
       },
       {
         "icon": "payments",
         "title": "加給自動計算",
-        "text": "夜班、週日與假日加給由 Klacks 自動計算 &mdash; 可依國家與規則個別設定，薪資結算前無需人工補算。"
+        "text": "夜班、週日與假日加給由 Klacks 自動以時數補償記入 &mdash; 可依國家與規則個別設定，作為薪資結算的依據。"
       },
       {
         "icon": "badge",

@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "適用於台灣醫院 &amp; 診所（醫療機構）",
-    "titleHtml": "排班表，<span class=\"text-secondary\">精準核算每一分鐘護理工時。</span>",
-    "subtitle": "Klacks 規劃病房排班與交班作業 &mdash; 護理人員自2014年1月1日起已全面排除於責任制（勞基法第84-1條）之外，每一小時加班皆依勞基法第24條正常核算。",
+    "titleHtml": "排班表，<span class=\"text-secondary\">清楚掌握每一分鐘護理工時。</span>",
+    "subtitle": "Klacks 規劃病房排班與交班作業 &mdash; 護理人員自2014年1月1日起已全面排除於責任制（勞基法第84-1條）之外，每一小時加班均以時數記錄；依勞基法第24條的給付由薪資會計處理。",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks 台灣醫院排班表格",
     "screenshotLabel": "排班表"
@@ -20,13 +20,13 @@
   },
   "solutions": {
     "title": "Klacks 如何為台灣醫院減輕負擔",
-    "subtitle": "從全天候無縫排班到正確的交班時間認定 &mdash; 環環相扣，一次到位。",
+    "subtitle": "從全天候排班一目了然到交班時間的記錄 &mdash; 環環相扣，一次到位。",
     "items": [
-      { "icon": "schedule", "title": "全天候無縫病房排班", "text": "涵蓋所有病房的白班、小夜班與大夜班 &mdash; Klacks 即時顯示每個排班缺口，並可依需求自動補齊。" },
-      { "icon": "gavel", "title": "護理人員加班依第24條正確核算", "text": "Klacks 自動依勞基法第24條核算不適用責任制之護理人員的每一小時加班 &mdash; 前兩小時1.34倍，第三小時起1.67倍。" },
+      { "icon": "schedule", "title": "全天候病房排班一目了然", "text": "涵蓋所有病房的白班、小夜班與大夜班 &mdash; Klacks 即時顯示每個排班缺口，並可依需求自動補齊。" },
+      { "icon": "gavel", "title": "護理人員加班以時數記錄", "text": "Klacks 將不適用責任制之護理人員的每一小時加班以時數記錄 &mdash; 勞基法第24條規定前兩小時按1.34倍、第三小時起按1.67倍給付，該給付由薪資會計處理。" },
       { "icon": "groups", "title": "交班時間納入排班並完整記錄", "text": "Klacks 將交班時間納入工作時間排程 &mdash; 時長可由企業自行設定，而非套用僵化的法定標準。" },
-      { "icon": "bedtime", "title": "各病房11小時班次間隔全程掌握", "text": "Klacks 會在任何病房出現低於勞基法第34條所定11小時間隔的班次安排時提出警示。如有需要，Klacks 可將新的違規強制封鎖：在封鎖模式下，新的違規只能在有記錄的主管核准後才能儲存（可依規則類型個別設定）。" },
-      { "icon": "verified", "title": "資格 &amp; 病房精準對應", "text": "每個班次僅分配給具備相符資格的人員 &mdash; 依病房、科別與職能精準對應。" },
+      { "icon": "bedtime", "title": "各病房11小時班次間隔全程掌握", "text": "Klacks 會在任何病房出現低於勞基法第34條所定11小時間隔的班次安排時提出警示。如有需要，可啟用封鎖模式，在自動排班途徑（自動排班、建議方案、替補搜尋）中防止新的違規；手動排班時仍僅提出警示。" },
+      { "icon": "verified", "title": "資格 &amp; 病房精準對應", "text": "Klacks 在排班時會考量資格條件 &mdash; 依病房、科別與職能對應，並在證照到期時提出警示。" },
       { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「補齊下週內科的大夜班」即可 &mdash; Klacksy 會啟動排班，由 Klacks 自動納入交班時間與班次間隔的考量。" }
     ]
   },
@@ -38,6 +38,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "在您的醫院中體驗 Klacks",
-    "text": "在體驗平台中親自測試 Klacks 如何處理交班時間、班次間隔與護理人員加班 &mdash; 完全沒有授權費用，無需註冊。"
+    "text": "在體驗平台中親自測試 Klacks 如何處理交班時間、班次間隔與護理人員加班時數的記錄 &mdash; 完全沒有授權費用，無需註冊。"
   }
 }

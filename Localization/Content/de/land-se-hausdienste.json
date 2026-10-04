@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Städbolag in Schweden",
-    "titleHtml": "Jede Teilzeitkraft <span class=\"text-secondary\">korrekt vergütet.</span>",
-    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; mit dem Übergang von mertid zu voller Überstundenvergütung und dem neuen arbetstidsförkortning-Tag ab 2026 als hinterlegte Regeln.",
+    "titleHtml": "Jede Teilzeitkraft <span class=\"text-secondary\">sauber erfasst.</span>",
+    "subtitle": "Klacks teilt Objekte und Reinigungsteams effizient ein &mdash; und liefert die Stundenbasis für den Übergang von mertid zu voller Überstundenvergütung sowie für den neuen arbetstidsförkortning-Tag ab 2026.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Schweden",
     "screenshotLabel": "Dienstplan"
@@ -20,10 +20,10 @@
   },
   "solutions": {
     "title": "Wie Klacks schwedische Städbolag entlastet",
-    "subtitle": "Von der optimierten Route bis zur korrekten Überstundenvergütung &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Route bis zur Stundenbasis für die Überstundenvergütung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "payments", "title": "Mertid-Übergang mit festen Sätzen gebucht", "text": "Den Übergang von mertid zu voller Überstundenvergütung ab 1. Juni 2026 bilden Sie in Klacks ab &mdash; die festen Sätze (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) bucht Klacks als Fixbetrag-Zuschläge pro Stunde direkt mit, die dokumentierten Stunden liefern die Basis für Ihre Lohnabrechnung." },
+      { "icon": "payments", "title": "Mertid-Übergang als Stundenbasis", "text": "Den Übergang von mertid zu voller Überstundenvergütung ab 1. Juni 2026 bilden Sie in Klacks über die Stunden der Teilzeitkräfte ab &mdash; die festen Sätze (73,63 SEK/h werktags, 91,39 SEK/h sonn- und feiertags) rechnet Ihre Lohnabrechnung ab, Klacks liefert dafür die dokumentierten Stunden." },
       { "icon": "event_available", "title": "Freier Tag direkt eingeplant", "text": "Den bezahlten freien Tag für Vollzeitkräfte ab 2026 planen Sie in Klacks direkt ein &mdash; den anteiligen Anspruch für Teilzeitkräfte hinterlegen Sie je Person." },
       { "icon": "bedtime", "title": "Nachtruhe im Blick", "text": "Klacks macht sichtbar, wenn eine Schicht in das Fenster Mitternacht bis 05:00 Uhr fällt, das nach ATL § 13 grundsätzlich in der Ruhezeit liegen muss." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte in Bezirk Mitte für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mertid-Ende und freier Tag, ein Plan",
-    "text": "Klacks bucht die Mehrstunden von Teilzeitkräften ab 1. Juni 2026 mit den festen Überstundensätzen als Fixbetrag-Zuschlag pro Stunde und plant den neuen arbetstidsförkortning-Tag direkt mit ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erfasst die Mehrstunden von Teilzeitkräften ab 1. Juni 2026 als Stundenbasis für die festen Überstundensätze, die Ihre Lohnabrechnung ansetzt, und plant den neuen arbetstidsförkortning-Tag direkt mit ein &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

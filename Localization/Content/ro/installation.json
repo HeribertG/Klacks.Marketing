@@ -1,11 +1,11 @@
 {
   "pageTitle": "Instalați Klacks: instalator ghidat sau Docker Compose cu pachetul de țară | Klacks",
-  "metaDescription": "Instalați Klacks pe propria infrastructură: instalator ghidat sau stack Docker Compose, preconfigurat cu sărbătorile legale, regulile timpului de lucru și sporurile țării dumneavoastră. Fără taxe de licență, open source, fără înregistrare.",
+  "metaDescription": "Instalați Klacks pe propria infrastructură: instalator ghidat sau stack Docker Compose, preconfigurat cu sărbătorile legale, regulile timpului de lucru și &ndash; în măsura în care sunt definite pentru țara dumneavoastră &ndash; sporurile. Fără taxe de licență, open source, fără înregistrare.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalare &middot; Fără taxe de licență &amp; open source",
     "titleHtml": "Rulați Klacks pe cont propriu &mdash; <span class=\"text-secondary\">pe propria dumneavoastră infrastructură.</span>",
-    "subtitle": "Două căi, un singur rezultat: instalatorul ghidat sau stack-ul Docker Compose pentru propriul dumneavoastră mediu. Pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru, sporurile și presetările pe domenii ale țării dumneavoastră &mdash; fără înregistrare, fără costuri de licență."
+    "subtitle": "Două căi, un singur rezultat: instalatorul ghidat sau stack-ul Docker Compose pentru propriul dumneavoastră mediu. Pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară) &mdash; fără înregistrare, fără costuri de licență."
   },
   "industry": {
     "eyebrow": "Pachet de țară",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Doar profilul &mdash; pentru instalările existente",
-    "text": "Klacks rulează deja la dumneavoastră? Profilul (JSON) poartă presetările de țară &mdash; sărbători legale, reguli ale timpului de lucru, sporuri și domenii &mdash; și este aplicat la prima pornire a unei instalări. Este totodată calea de a adăuga ulterior un alt domeniu cu presetările sale.",
+    "text": "Klacks rulează deja la dumneavoastră? Profilul (JSON) poartă presetările de țară &mdash; sărbători legale, reguli ale timpului de lucru, sporuri (în măsura în care sunt definite pentru țară) și domenii &mdash; și este aplicat la prima pornire a unei instalări. Este totodată calea de a adăuga ulterior un alt domeniu cu presetările sale.",
     "downloadLabel": "Descărcați profilul (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Bine de știut",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Codul sursă complet este public pe GitHub sub licența AGPL-3.0 &mdash; fără costuri de licență, fără vendor lock-in." },
-      { "icon": "storage", "title": "Datele rămân în companie", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare nu părăsesc niciodată serverul dumneavoastră &mdash; nu există cloud obligatoriu." },
+      { "icon": "storage", "title": "Datele rămân în companie", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare se află pe serverul dumneavoastră &mdash; nu există cloud obligatoriu. Numai dacă alegeți un furnizor extern de IA, cererile ajung la acesta; cu un model local totul rămâne în casă." },
       { "icon": "update", "title": "Actualizări", "text": "Instalarea fixează cea mai recentă versiune publicată. Un serviciu de actualizare din interiorul stack-ului aplică automat versiunile nou publicate." },
       { "icon": "lock", "title": "HTTPS de la început", "text": "Instalatorul generează un certificat autosemnat pentru start &mdash; puteți trece oricând la propriul certificat. Schimbați parola inițială imediat după prima autentificare." }
     ]

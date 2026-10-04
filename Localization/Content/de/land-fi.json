@@ -4,7 +4,7 @@
     "badgeIcon": "gavel",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Työaikalaki 872/2019",
     "titleHtml": "Periodenarbeit planen, <span class=\"text-secondary\">ohne den Überblick zu verlieren.</span>",
-    "subtitle": "Klacks plant Dienste automatisch nach den Regeln der finnischen Periodenarbeit (jaksotyö) &mdash; inklusive Ruhezeiten, Dienstplanpflicht und dem Zuschlag, der zu Ihrer Branche und Ihrem Tarifvertrag (TES) passt. Bei Ihnen installiert, mit dem KI-Modell Ihrer Wahl.",
+    "subtitle": "Klacks plant Dienste automatisch nach den Regeln der finnischen Periodenarbeit (jaksotyö) &mdash; inklusive Ruhezeiten, Dienstplanpflicht und den Zeitzuschlägen, die Sie passend zu Ihrer Branche und Ihrem Tarifvertrag (TES) hinterlegen. Bei Ihnen installiert, mit dem KI-Modell Ihrer Wahl.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für finnische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -61,8 +61,8 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Periodenarbeit &amp; Überstunden automatisch berechnet",
-        "text": "Überstundenzuschläge staffelt Klacks auf Tages- oder Wochenbasis in bis zu drei Stufen, etwa 50 % und 100 %; die Staffel der Periodenarbeit (die ersten 18 Überstunden einer 3- oder 2-Wochen-Periode mit 50 %, jede weitere mit 100 %) bildet Klacks nicht ab. Die Gesamtgrenze des Työaikalaki überwacht Klacks gleich mit: Seit 2020 gibt es kein festes Überstunden-Kontingent mehr &mdash; entscheidend ist der Durchschnitt von höchstens 48 Stunden je Woche inklusive Überstunden über den viermonatigen Ausgleichszeitraum, und genau den zählt Klacks rollierend mit."
+        "title": "Periodenarbeit &amp; Überstunden im Blick",
+        "text": "Überstundenzuschläge staffelt Klacks auf Tages- oder Wochenbasis in bis zu drei Stufen als Zeitgutschriften, etwa 50 % und 100 %; die Staffel der Periodenarbeit (die ersten 18 Überstunden einer 3- oder 2-Wochen-Periode mit 50 %, jede weitere mit 100 %) bildet Klacks nicht ab. Die Gesamtgrenze des Työaikalaki überwacht Klacks gleich mit: Seit 2020 gibt es kein festes Überstunden-Kontingent mehr &mdash; entscheidend ist der Durchschnitt von höchstens 48 Stunden je Woche inklusive Überstunden über den viermonatigen Ausgleichszeitraum, und genau den zählt Klacks rollierend mit."
       },
       {
         "icon": "bedtime",
@@ -76,8 +76,8 @@
       },
       {
         "icon": "paid",
-        "title": "Sonntagszuschlag korrekt gebucht",
-        "text": "Für Arbeit an Sonn- und kirchlichen Feiertagen bucht Klacks automatisch den gesetzlichen 100-%-Zuschlag (§ 20) &mdash; fällt gleichzeitig Überstundenarbeit an, kommt die Überstundenvergütung dazu."
+        "title": "Sonntagszuschlag als Zeitgutschrift",
+        "text": "Für Arbeit an Sonn- und kirchlichen Feiertagen schreibt Klacks automatisch den gesetzlichen 100-%-Zuschlag (§ 20) als Zeitgutschrift gut &mdash; fällt gleichzeitig Überstundenarbeit an, kommt der Überstundenzuschlag dazu. Die Vergütung selbst rechnet Ihre Lohnbuchhaltung ab."
       },
       {
         "icon": "shield_lock",
@@ -105,8 +105,8 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Eine 3-Wochen-Periode, korrekt abgerechnet",
-    "text": "Klacks rechnet die hinterlegten Überstundenstaffeln auf Tages- oder Wochenbasis automatisch ab und zählt den 48-Stunden-Schnitt rollierend mit &mdash; ohne Nachrechnen von Hand. Die Staffel nach 120 Stunden in einer 3-Wochen-Periode bildet Klacks nicht ab."
+    "title": "Eine 3-Wochen-Periode im Blick",
+    "text": "Klacks schreibt die hinterlegten Überstundenstaffeln auf Tages- oder Wochenbasis automatisch als Zeitgutschrift gut und zählt den 48-Stunden-Schnitt rollierend mit &mdash; ohne Nachrechnen von Hand. Die Staffel nach 120 Stunden in einer 3-Wochen-Periode bildet Klacks nicht ab."
   },
   "showRoutePlanning": false,
   "cta": {

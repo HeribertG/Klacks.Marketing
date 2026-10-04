@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Griechenland",
     "titleHtml": "Touren, Schichten, Zuschläge &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Schichten &mdash; mit der digitalen Arbeitskarte ab 16. November 2026, der Sechstagewoche bei Frachtspitzen und der Nacht-Arbeitszeitgrenze für Fahrpersonal automatisch berücksichtigt.",
+    "subtitle": "Klacks plant Touren und Schichten &mdash; mit der Sechstagewoche bei Frachtspitzen und der hinterlegten Tageshöchstarbeitszeit für Fahrpersonal im Blick und dokumentierten Schichten als Zeitbasis für die digitale Arbeitskarte ab 16. November 2026.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Schichten in der griechischen Logistik",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks die griechische Logistik entlastet",
-    "subtitle": "Von der optimierten Tour bis zur ERGANI-konformen Dokumentation &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur lückenlosen Dokumentation &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "fact_check", "title": "ERGANI-konform ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht der Phase B." },
-      { "icon": "calendar_month", "title": "Sechstagewoche automatisch verzuschlagt", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt oder blockiert, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, Block mit dokumentierter Vorgesetzten-Freigabe überschreibbar); die ERGANI-Meldung selbst bleibt bei Ihnen." },
+      { "icon": "fact_check", "title": "Zeitbasis für ERGANI ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht der Phase B." },
+      { "icon": "calendar_month", "title": "Sechstagewoche mit Zuschlagsregel", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, in der automatischen Planung auf Wunsch blockierend, bei manueller Planung nur als Warnung); die ERGANI-Meldung selbst bleibt bei Ihnen." },
       { "icon": "timer", "title": "Tageshöchstarbeitszeit für Fahrpersonal", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäß RL 2002/15/EG / P.D. 167/2006 hinterlegen Sie als Tageshöchstarbeitszeit für Ihr Fahrpersonal, und Klacks warnt bei Überschreitung; eine Grenze nur für Nachtschichten kennt Klacks nicht." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Läuft ein Pflicht-Nachweis dennoch ab, lässt sich die Zuteilung auf Wunsch hart blockieren." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, ein Fahrer fällt aus“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Zuschläge und Nachtgrenze." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Frachtspitze am 6. Tag, ein Plan",
-    "text": "Klacks lässt sich für den Zuschlag am 6. Arbeitstag konfigurieren und überwacht gleichzeitig die Nacht-Arbeitszeitgrenze für das Fahrpersonal &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks lässt sich für den Zuschlag am 6. Arbeitstag konfigurieren und überwacht gleichzeitig die hinterlegte Tageshöchstarbeitszeit für das Fahrpersonal &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Logistikbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren, Zuschläge und die ERGANI-Dokumentation übernimmt &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und Zuschläge plant und die Zeitbasis für ERGANI dokumentiert &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

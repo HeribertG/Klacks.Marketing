@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Unternehmen in den Vereinigten Arabischen Emiraten | Ramadan-Sollzeit & Datenschutz im eigenen Haus nach PDPL",
   "hero": {
     "badgeIcon": "mosque",
-    "badge": "Stundenbasis für WPS &middot; PDPL-konform &middot; Ohne Lizenzgebühren",
+    "badge": "Stundenbasis für die Lohnbuchhaltung &middot; Datenhaltung im eigenen Haus &middot; Ohne Lizenzgebühren",
     "titleHtml": "Dienstpläne, die den Ramadan <span class=\"text-secondary\">einplanen, sobald er hinterlegt ist.</span>",
-    "subtitle": "Klacks lässt sich für den Fastenmonat Ramadan mit einer reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen, überwacht den Überstunden-Deckel live &mdash; auf Wunsch mit hartem Block &mdash; und führt Stundenkonten als Basis für die WPS-Lohnauszahlung &mdash; bei Ihnen installiert, damit Ihre Planungs- und Personaldaten nach dem PDPL in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks lässt sich für den Fastenmonat Ramadan mit einer reduzierten Tages-Sollzeit für alle Mitarbeitenden hinterlegen, überwacht den Überstunden-Deckel live &mdash; auf Wunsch mit hartem Block in der automatischen Planung &mdash; und führt Stundenkonten, deren Stunden Sie für Ihre Lohnbuchhaltung exportieren (eine WPS-Datei erzeugt Klacks nicht) &mdash; bei Ihnen installiert, damit Ihre Planungs- und Personaldaten nach dem PDPL in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Vereinigten Arabischen Emiraten",
     "screenshotLabel": "Dienstplan"
@@ -62,7 +62,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Unternehmen in den VAE entlastet",
-    "subtitle": "Von der hinterlegten Ramadan-Sollzeit bis zur WPS-konformen Lohnabsicherung &mdash; alles greift ineinander.",
+    "subtitle": "Von der hinterlegten Ramadan-Sollzeit bis zur Stundenbasis für die Lohnbuchhaltung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "nights_stay",
@@ -72,17 +72,17 @@
       {
         "icon": "schedule",
         "title": "Überstunden-Tageslimit &amp; 144-Stunden-Deckel live überwacht",
-        "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und überwacht die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel; der Nachtzuschlag wird automatisch berechnet, mit exakt konfigurierbarem Zeitfenster (22:00 bis 04:00). Auf Wunsch blockiert Klacks solche Verstöße hart: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks warnt vor der Einteilung, wenn das 2-Stunden-Tageslimit überschritten würde, und überwacht die Gesamtarbeitszeit je 3 Wochen live gegen den 144-Stunden-Deckel; der Nachtzuschlag wird automatisch als Zeitgutschrift gutgeschrieben, mit exakt konfigurierbarem Zeitfenster (22:00 bis 04:00). Auf Wunsch blockiert Klacks solche Verstöße in der automatischen Planung hart (Block-Modus, pro Regelart konfigurierbar); bei manueller Planung bleibt es bei der Warnung."
       },
       {
         "icon": "payments",
-        "title": "Stundenbasis für die WPS-Auszahlung",
-        "text": "Klacks führt dienstplan-abgeglichene Stundenkonten, die die Stundenbasis für die WPS-Lohnauszahlung nach Ministerial Resolution No. 340 of 2026 liefern &mdash; fristgerecht dokumentiert statt riskant geschätzt."
+        "title": "Stundenexport für die Lohnbuchhaltung",
+        "text": "Klacks führt dienstplan-abgeglichene Stundenkonten und stellt die Stunden als CSV/XLSX-Export für Ihre Lohnbuchhaltung bereit &mdash; eine WPS-Datei und die Lohnzahlung selbst liegen außerhalb von Klacks, die Fristen nach Ministerial Resolution No. 340 of 2026 bleiben bei Ihrer Lohnabrechnung."
       },
       {
         "icon": "fingerprint",
-        "title": "PDPL-konforme Datenhaltung im eigenen Haus",
-        "text": "Ihre Planungs- und Personaldaten bleiben bei Ihnen in Ihrer eigenen Infrastruktur &mdash; ganz ohne den grenzüberschreitenden Datentransfer, den das PDPL für sensible personenbezogene Daten streng reguliert."
+        "title": "Datenhaltung im eigenen Haus (PDPL)",
+        "text": "Ihre Planungs- und Personaldaten bleiben bei Ihnen in Ihrer eigenen Infrastruktur &mdash; mit lokal gehostetem KI-Modell auch ganz ohne den grenzüberschreitenden Datentransfer, den das PDPL für sensible personenbezogene Daten streng reguliert."
       },
       {
         "icon": "smart_toy",
@@ -116,6 +116,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem VAE-Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks die Ramadan-Sollzeit, den Überstunden-Deckel und die Stundenbasis für WPS abbildet &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die Ramadan-Sollzeit und den Überstunden-Deckel abbildet und die Stunden für Ihre Lohnbuchhaltung bereitstellt &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

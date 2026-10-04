@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Dla hotelarstwa &amp; gastronomii",
     "titleHtml": "Zmiany poranne, późne i nocne &mdash; <span class=\"text-secondary\">planowane sprawiedliwie.</span>",
-    "subtitle": "Klacks planuje obsługę sali, kuchnię i piętra &mdash; z dzielonymi zmianami, dodatkami za niedziele i święta oraz ustawowymi okresami odpoczynku, których nie da się po cichu ominąć. Szczyty sezonowe i nieobecności planowanie łapie automatycznie.",
+    "subtitle": "Klacks planuje obsługę sali, kuchnię i piętra &mdash; z dzielonymi zmianami, dodatkami za niedziele i święta oraz kontrolą ustawowych okresów odpoczynku, która natychmiast uwidacznia naruszenia. Szczyty sezonowe i nieobecności planowanie łapie automatycznie.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks dla grafików w hotelarstwie i gastronomii",
     "screenshotLabel": "Oś czasu"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Dzielone zmiany zaplanowane poprawnie",
-        "text": "Klacks planuje bloki obiadowe i wieczorne tak, aby minimalne okresy odpoczynku i dobowe maksimum czasu pracy były dotrzymane &mdash; każde niedotrzymanie jest natychmiast widoczne."
+        "text": "Klacks planuje bloki obiadowe i wieczorne oraz sprawdza je pod kątem minimalnych okresów odpoczynku i dobowego maksimum czasu pracy &mdash; każde niedotrzymanie jest natychmiast widoczne."
       },
       {
         "icon": "timer",
         "title": "Okresy odpoczynku pod kontrolą",
-        "text": "Ustawowe granice odpoczynku są monitorowane w czasie rzeczywistym &mdash; naruszenia są od razu widoczne. Na życzenie Klacks konsekwentnie je blokuje: w trybie blokowania naruszenie da się zapisać tylko z udokumentowaną zgodą przełożonego."
+        "text": "Ustawowe granice odpoczynku są na bieżąco sprawdzane &mdash; naruszenia są od razu widoczne. Domyślnie Klacks ostrzega; na życzenie można włączyć tryb blokowania dla planowania automatycznego (asystent planowania, propozycje, zastępstwa za nieobecnych)."
       },
       {
         "icon": "payments",
         "title": "Dodatki automatycznie",
-        "text": "Dodatki za pracę nocną, w niedziele i święta Klacks wylicza automatycznie &mdash; konfigurowalnie według kraju i regulaminu, bez ręcznego dopracowywania przy przygotowaniu płac."
+        "text": "Dodatki za pracę nocną, w niedziele i święta Klacks automatycznie zalicza jako godziny &mdash; konfigurowalnie według kraju i regulaminu, jako podstawę dla księgowości płacowej."
       },
       {
         "icon": "badge",

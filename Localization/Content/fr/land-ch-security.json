@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Pour les entreprises de sécurité en Suisse",
-    "titleHtml": "Chaque poste occupé. <span class=\"text-secondary\">Chaque majoration correcte.</span>",
-    "subtitle": "Klacks couvre les sites et les rondes sans faille &mdash; en tenant automatiquement compte des heures annuelles dues et des majorations prévues par la CCT étendue de la sécurité privée (VSSU). Installé chez vous, pour que vos données d'intervention et clients restent chez vous.",
+    "titleHtml": "Chaque poste occupé. <span class=\"text-secondary\">Chaque majoration de temps saisie.</span>",
+    "subtitle": "Klacks couvre les sites et les rondes sans faille &mdash; avec les heures annuelles dues et les majorations de temps de la CCT étendue de la sécurité privée (VSSU), que vous enregistrez une fois. Installé chez vous, pour que vos données d'intervention et clients restent chez vous.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les rondes et l'occupation des sites en Suisse",
     "screenshotLabel": "Chronologie"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Comment Klacks soulage les entreprises de sécurité suisses",
-    "subtitle": "Du poste occupé à la majoration correcte &mdash; tout s'imbrique parfaitement.",
+    "subtitle": "Du poste occupé à la majoration de temps saisie &mdash; tout s'imbrique parfaitement.",
     "items": [
       {
         "icon": "shield",
@@ -41,18 +41,18 @@
       },
       {
         "icon": "schedule",
-        "title": "Majoration calculée automatiquement",
-        "text": "Les heures de nuit et du dimanche soumises à majoration selon la CCT VSSU sont calculées et documentées automatiquement par Klacks &mdash; comme base de la majoration de 10 % sur votre compte de temps."
+        "title": "Majoration créditée en temps",
+        "text": "Les heures de nuit et du dimanche soumises à majoration selon la CCT VSSU sont documentées automatiquement par Klacks, qui crédite la majoration de 10 % enregistrée sous forme de crédit de temps sur votre compte de temps."
       },
       {
         "icon": "gavel",
         "title": "Seuil de 210 heures surveillé en temps réel",
-        "text": "Le seuil mensuel de 210 heures se définit comme un plafond de période &mdash; Klacks le surveille en temps réel, alerte à temps avant qu'il ne soit dépassé et bloque sur demande toute nouvelle affectation en cas de dépassement. La majoration de 25 % prévue par la loi et la compensation dans le délai de 3 mois se calculent sur la base des heures ainsi documentées."
+        "text": "Le seuil mensuel de 210 heures se définit comme un plafond de période &mdash; Klacks le surveille en temps réel, alerte à temps avant qu'il ne soit dépassé et bloque sur demande toute nouvelle affectation en cas de dépassement en planification automatique ; en planification manuelle, Klacks se limite à avertir. La majoration de 25 % prévue par la loi et la compensation dans le délai de 3 mois se calculent sur la base des heures ainsi documentées."
       },
       {
         "icon": "verified",
         "title": "Certificats vérifiés automatiquement",
-        "text": "Klacks vérifie à chaque attribution les certificats enregistrés et alerte à temps avant l'expiration d'un justificatif. Sur demande, Klacks bloque entièrement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée."
+        "text": "Klacks vérifie à chaque attribution les certificats enregistrés et alerte à temps avant l'expiration d'un justificatif. Si un justificatif obligatoire est manquant ou expiré, Klacks refuse l'attribution, y compris en planification manuelle &mdash; seule une personne disposant d'un justificatif valide est alors planifiée."
       },
       {
         "icon": "route",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Service de nuit, majoration, un seul planning",
-    "text": "Klacks calcule automatiquement la majoration pour travail de nuit et du dimanche comme base pour votre compte de temps et surveille le seuil de 210 heures en temps réel &mdash; sans calcul manuel."
+    "text": "Klacks crédite automatiquement la majoration enregistrée pour le travail de nuit et du dimanche sous forme de crédit de temps sur votre compte de temps et surveille le seuil de 210 heures en temps réel &mdash; sans calcul manuel."
   },
   "showRoutePlanning": true,
   "cta": {

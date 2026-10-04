@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Sans frais de licence &middot; Confidentialité des données à la française",
     "titleHtml": "La planification des effectifs, <span class=\"text-secondary\">dont vous gardez le contrôle.</span>",
-    "subtitle": "Klacks planifie les services automatiquement, reproduit directement les échelles de majoration des heures supplémentaires du Code du travail, surveille sans faille les temps de repos, et optimise les tournées &mdash; open source, installable dans vos propres locaux et avec le modèle d'IA de votre choix. Ainsi, les données du personnel restent là où la CNIL les attend : dans vos propres murs.",
+    "subtitle": "Klacks planifie les services automatiquement, peut reproduire les échelles de majoration des heures supplémentaires du Code du travail sous forme de crédits d'heures, vérifie les temps de repos par rapport aux règles que vous avez définies, et optimise les tournées &mdash; open source, installable dans vos propres locaux et, sur demande, avec un modèle d'IA local. Ainsi, les données du personnel peuvent rester là où la CNIL les attend : dans vos propres murs.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Planning de service Klacks pour les entreprises en France",
     "screenshotLabel": "Planning"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "gavel",
-        "title": "Échelles de majoration calculées, temps de repos surveillés",
-        "text": "Klacks reproduit directement l'échelle de majoration du Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; votre gestion de la paie n'a plus qu'à verser les montants sur cette base déjà majorée. Le repos quotidien de 11 heures (Art. L3131-1) et les jours de repos par semaine sont surveillés en temps réel (Klacks ne vérifie pas le repos hebdomadaire continu de 35 heures selon l'Art. L3132-2), Klacks rend immédiatement visible tout dépassement &mdash; et les bloque strictement sur demande : en mode blocage, toute nouvelle infraction ne peut être enregistrée qu'avec une autorisation documentée du responsable hiérarchique (configurable par type de règle)."
+        "title": "Échelles de majoration en crédits d'heures, temps de repos vérifiés",
+        "text": "Klacks peut reproduire l'échelle de majoration du Code du travail (+25%/+50%, Art. L3121-27 &amp; L3121-36) sous forme de crédit d'heures : les majorations pour heures supplémentaires forment un type de majoration à part entière, avec jusqu'à trois paliers sur base hebdomadaire &mdash; le versement reste l'affaire de votre gestion de la paie, sur la base de ces heures. Le repos quotidien de 11 heures (Art. L3131-1) et les jours de repos par semaine sont vérifiés par Klacks par rapport à vos règles enregistrées (Klacks ne vérifie pas le repos hebdomadaire continu de 35 heures selon l'Art. L3132-2), Klacks rend immédiatement visible tout dépassement &mdash; dans les modes de planification automatique (p. ex. Wizard, suggestions, remplacement), Klacks les bloque sur demande en mode blocage (configurable par type de règle) ; en planification manuelle, Klacks avertit."
       },
       {
         "icon": "route",
@@ -77,7 +77,7 @@
       {
         "icon": "shield_lock",
         "title": "Installé chez vous : souveraineté totale des données",
-        "text": "Klacks fonctionne sur votre propre infrastructure &mdash; les données du personnel ne quittent jamais vos murs, pas même pour l'IA. Cela répond à l'exigence de la CNIL en matière de protection des données des salariés (RGPD Art. 88)."
+        "text": "Klacks fonctionne sur votre propre infrastructure &mdash; les données du personnel restent dans vos murs, et avec un modèle d'IA hébergé localement, également côté IA. Cela va dans le sens de l'exigence de la CNIL en matière de protection des données des salariés (RGPD Art. 88)."
       },
       {
         "icon": "code",
@@ -99,14 +99,14 @@
   "klacksy": {
     "eyebrow": "Assistant IA",
     "title": "Klacksy : transparent, pas une boîte noire",
-    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais directement intégré à l'interface de Klacks. Un système de compétences et de règles enregistré garantit que les suggestions correspondent aux qualifications, au Code du travail et aux règles définies &mdash; de façon traçable pour les collaborateurs et le Comité Social et Économique (CSE), conformément à l'exigence de la CNIL en matière de systèmes transparents et non intrusifs. Vous choisissez vous-même le modèle d'IA sous-jacent, y compris un fonctionnement sans aucune connexion externe.",
+    "text": "Klacksy n'est pas un chatbot marketing plaqué en surface, mais directement intégré à l'interface de Klacks. Un système de compétences et de règles enregistré aide à adapter les suggestions aux qualifications et aux règles définies &mdash; de façon traçable pour les collaborateurs et le Comité Social et Économique (CSE), conformément à l'exigence de la CNIL en matière de systèmes transparents et non intrusifs. Vous choisissez vous-même le modèle d'IA sous-jacent, y compris un fonctionnement sans aucune connexion externe.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },
   "example": {
     "eyebrow": "Concrètement",
     "title": "Semaine de 35 heures, modulation annuelle, un seul planning",
-    "text": "Une entreprise avec plusieurs sites en France module la durée hebdomadaire de travail sur l'année. Klacks garde à l'œil la limite hebdomadaire de 48 heures, calcule directement l'échelle de majoration des heures supplémentaires (+25%/+50%) comme type de majoration à part entière, et fait apparaître où des jours de récupération deviennent nécessaires &mdash; le versement reste l'affaire de la gestion de la paie."
+    "text": "Une entreprise avec plusieurs sites en France module la durée hebdomadaire de travail sur l'année. Klacks garde à l'œil la limite hebdomadaire de 48 heures, inscrit l'échelle de majoration des heures supplémentaires (+25%/+50%) comme type de majoration à part entière directement sous forme de crédit d'heures, et fait apparaître où des jours de récupération deviennent nécessaires &mdash; le versement reste l'affaire de la gestion de la paie."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (감시적&middot;단속적 근로자) in Südkorea",
-    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Nachtzuschlag korrekt.</span>",
-    "subtitle": "Sicherheitsdienste können mit MOEL-Genehmigung von Arbeitszeit-, Pausen- und Ruhetagsregeln befreit werden (§ 63 LSA) &mdash; doch der Nachtzuschlag bleibt zwingend. Klacks hinterlegt die Befreiung pro Mitarbeitendem und berechnet den Zuschlag trotzdem automatisch.",
+    "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jeder Nachtzuschlag als Zeitgutschrift.</span>",
+    "subtitle": "Sicherheitsdienste können mit MOEL-Genehmigung von Arbeitszeit-, Pausen- und Ruhetagsregeln befreit werden (§ 63 LSA) &mdash; doch der Nachtzuschlag bleibt zwingend. Klacks hinterlegt die Befreiung pro Mitarbeitendem und schreibt den Nachtzuschlag trotzdem als Zeitgutschrift gut.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten im Sicherheitsgewerbe in Südkorea",
     "screenshotLabel": "Timeline"
@@ -20,20 +20,20 @@
   },
   "solutions": {
     "title": "Wie Klacks Sicherheitsdienste in Südkorea entlastet",
-    "subtitle": "Von der lückenlosen Postenbesetzung bis zum korrekten Nachtzuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der lückenlosen Postenbesetzung bis zum hinterlegten Nachtzuschlag &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "fact_check", "title": "§ 63-Befreiung pro Mitarbeitendem hinterlegt", "text": "Klacks speichert die MOEL-Genehmigung je Mitarbeitendem und weiss dadurch, für wen die Ausnahme von Arbeitszeit, Pausen und Ruhetagen gilt." },
-      { "icon": "nightlight", "title": "Nachtzuschlag trotzdem automatisch berechnet", "text": "Auch bei befreiten Wachleuten berechnet Klacks den 50%-Nachtzuschlag für Nachtarbeit zuverlässig weiter &mdash; das gesetzliche Nachtfenster 22:00&ndash;06:00 hinterlegen Sie exakt, und es wirkt bis in die Zuschlagsberechnung." },
+      { "icon": "nightlight", "title": "Nachtzuschlag trotzdem als Zeitgutschrift", "text": "Auch bei befreiten Wachleuten schreibt Klacks den 50%-Nachtzuschlag für Nachtarbeit weiterhin als Zeitgutschrift gut &mdash; das gesetzliche Nachtfenster 22:00&ndash;06:00 hinterlegen Sie exakt; den Geldbetrag rechnet Ihr Lohnsystem." },
       { "icon": "schedule", "title": "24-Stunden-Wechselschichten geplant", "text": "Klacks plant lange Wechselschichten über mehrere Objekte hinweg, ohne den Überblick über Besetzung und Ablösung zu verlieren." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, auch bei KI-Funktionen." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen, mit einem lokalen KI-Modell auch bei KI-Funktionen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Gangnam“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Befreiung und Nachtzuschlag gleich mit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Befreiung, Nachtzuschlag, ein Blick",
-    "text": "Klacks weiß, welche Wachleute per § 63-Genehmigung von Arbeitszeit und Ruhetagen befreit sind, und berechnet den 50%-Nachtzuschlag trotzdem automatisch &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks weiß, welche Wachleute per § 63-Genehmigung von Arbeitszeit und Ruhetagen befreit sind, und schreibt den 50%-Nachtzuschlag trotzdem als Zeitgutschrift gut &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

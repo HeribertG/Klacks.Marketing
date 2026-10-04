@@ -47,12 +47,12 @@
       {
         "icon": "fingerprint",
         "title": "Zeiterfassung ohne Biometrie",
-        "text": "Klacks erfasst Beginn und Ende jeder Schicht ohne Fingerabdruck- oder Gesichtsscan &mdash; im Einklang mit der AEPD-Leitlinie zur biometrischen Zeiterfassung, und ohne dass biometrische Daten je in eine Cloud gelangen."
+        "text": "Klacks erfasst Beginn und Ende jeder Schicht ohne Fingerabdruck- oder Gesichtsscan &mdash; und vermeidet damit die in der AEPD-Leitlinie behandelte biometrische Zeiterfassung; biometrische Daten werden nicht erhoben."
       },
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Eine Guardia, die passende Ruhezeit, kein Fingerabdruckscanner",
-    "text": "Nach einer 24-Stunden-Guardia plant Klacks automatisch die 12-Stunden-Mindestruhe nach dem Estatuto Marco ein und erfasst Beginn und Ende jeder Schicht direkt im System &mdash; ganz ohne biometrischen Zeiterfassungsscanner und ohne Cloud-Übertragung."
+    "text": "Nach einer 24-Stunden-Guardia plant Klacks automatisch die 12-Stunden-Mindestruhe nach dem Estatuto Marco ein und erfasst Beginn und Ende jeder Schicht direkt im System &mdash; ganz ohne biometrischen Zeiterfassungsscanner und ohne biometrische Daten in der Cloud."
   },
   "showRoutePlanning": false,
   "cta": {

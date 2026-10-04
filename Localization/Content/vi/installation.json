@@ -1,11 +1,11 @@
 {
   "pageTitle": "Cài đặt Klacks: trình cài đặt có hướng dẫn hoặc Docker Compose với gói quốc gia của bạn | Klacks",
-  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp của quốc gia bạn. Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
+  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp (nếu quốc gia của bạn có quy định). Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Cài đặt &middot; Không mất phí bản quyền &amp; mã nguồn mở",
     "titleHtml": "Tự vận hành Klacks &mdash; <span class=\"text-secondary\">trên hạ tầng của riêng bạn.</span>",
-    "subtitle": "Hai con đường, một kết quả: trình cài đặt có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc, phụ cấp và các thiết lập sẵn theo ngành của quốc gia bạn &mdash; không cần đăng ký, không phí bản quyền."
+    "subtitle": "Hai con đường, một kết quả: trình cài đặt có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (phụ cấp nếu quốc gia đó có quy định) &mdash; không cần đăng ký, không phí bản quyền."
   },
   "industry": {
     "eyebrow": "Gói quốc gia",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Chỉ hồ sơ &mdash; cho các bản cài đặt hiện có",
-    "text": "Bạn đã chạy Klacks rồi? Hồ sơ (JSON) chứa các thiết lập sẵn của quốc gia &mdash; ngày lễ, quy định thời giờ làm việc, phụ cấp và ngành nghề &mdash; và được áp dụng ở lần khởi động đầu tiên của một bản cài đặt. Đây cũng là cách để bổ sung thêm một ngành cùng các thiết lập sẵn của nó về sau.",
+    "text": "Bạn đã chạy Klacks rồi? Hồ sơ (JSON) chứa các thiết lập sẵn của quốc gia &mdash; ngày lễ, quy định thời giờ làm việc, phụ cấp (nếu quốc gia có quy định) và ngành nghề &mdash; và được áp dụng ở lần khởi động đầu tiên của một bản cài đặt. Đây cũng là cách để bổ sung thêm một ngành cùng các thiết lập sẵn của nó về sau.",
     "downloadLabel": "Tải hồ sơ (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Những điều nên biết",
     "items": [
       { "icon": "code", "title": "Mã nguồn mở (AGPL-3.0)", "text": "Toàn bộ mã nguồn được công khai trên GitHub theo giấy phép AGPL-3.0 &mdash; không phí bản quyền, không bị khóa chặt vào nhà cung cấp." },
-      { "icon": "storage", "title": "Dữ liệu ở lại trong doanh nghiệp", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc không bao giờ rời khỏi máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud." },
+      { "icon": "storage", "title": "Dữ liệu ở lại trong doanh nghiệp", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc nằm trên máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud. Chỉ khi bạn chọn nhà cung cấp AI bên ngoài thì các yêu cầu mới được gửi đến họ; với mô hình cục bộ, mọi thứ vẫn ở trong nội bộ." },
       { "icon": "update", "title": "Cập nhật", "text": "Bản cài đặt ghim phiên bản phát hành mới nhất. Một dịch vụ cập nhật bên trong stack sẽ tự động áp dụng các phiên bản mới được phát hành." },
       { "icon": "lock", "title": "HTTPS ngay từ đầu", "text": "Trình cài đặt tạo một chứng chỉ tự ký để bạn khởi đầu &mdash; bạn có thể chuyển sang chứng chỉ riêng bất cứ lúc nào. Hãy đổi mật khẩu ban đầu ngay sau lần đăng nhập đầu tiên." }
     ]

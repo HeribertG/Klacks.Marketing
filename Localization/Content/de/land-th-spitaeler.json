@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Thailand",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtübergaben lückenlos und überwacht Überstunden live gegen das gesetzliche Wochenlimit &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichtübergaben, zeigt Lücken sofort und überwacht Überstunden live gegen das gesetzliche Wochenlimit &mdash; bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben (bei der KI-Nutzung auf Wunsch mit lokalem Modell).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Thailand",
     "screenshotLabel": "Dienstplan"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks Krankenhäuser in Thailand entlastet",
-    "subtitle": "Von der lückenlosen Stationsabdeckung bis zur korrekten Zuschlagsberechnung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Stationsübersicht bis zu den Zeitzuschlägen &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "swap_horiz", "title": "Schichtübergabe korrekt vergütet", "text": "Klacks erfasst die tägliche Schichtübergabe als Arbeitszeit und schlägt automatisch den 1,5-fachen Zuschlag vor, sobald die 8-Stunden-Tagesgrenze überschritten wird (Section 61)." },
-      { "icon": "gavel", "title": "36h-Wochenlimit stationsübergreifend live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem über alle Stationen und Rotationen und warnt rechtzeitig vor Überschreitung des 36-Stunden-Limits (Section 26). Auf Wunsch blockiert Klacks die Überschreitung aktiv (nur mit dokumentierter Vorgesetzten-Freigabe umgehbar)." },
-      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "schedule", "title": "24/7-Abdeckung im Überblick", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
+      { "icon": "swap_horiz", "title": "Schichtübergabe als Arbeitszeit erfasst", "text": "Klacks erfasst die tägliche Schichtübergabe als Arbeitszeit, sodass sie in die Stunden und das Wochenlimit einfließt; Zeitzuschläge (Section 61: 1,5-fach) schreibt Klacks als Stunden gut, soweit hinterlegt &mdash; Löhne und Beträge rechnet Klacks nicht." },
+      { "icon": "gavel", "title": "36h-Wochenlimit stationsübergreifend live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem über alle Stationen und Rotationen und warnt rechtzeitig vor Überschreitung des 36-Stunden-Limits (Section 26). Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung &mdash; pro Station, Abteilung und Funktion &mdash; und warnt bei abgelaufenen Nachweisen." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; bei der KI-Nutzung auf Wunsch mit lokalem Modell." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Station 3 für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und das 36-Stunden-Limit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtübergabe und 36h-Limit, ein Plan",
-    "text": "Klacks erkennt automatisch, wenn eine Schichtübergabe die 8-Stunden-Tagesgrenze überschreitet und schlägt den 1,5-fachen Zuschlag vor &mdash; und behält gleichzeitig das 36-Stunden-Wochenlimit für die ganze Station im Blick."
+    "text": "Klacks erfasst die Schichtübergabe als Arbeitszeit, schreibt Zeitzuschläge als Stunden gut (soweit hinterlegt) und behält gleichzeitig das 36-Stunden-Wochenlimit für die ganze Station im Blick."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrer Klinik erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Schichtübergaben, Überstundensätze und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Schichtübergaben, Zeitzuschläge und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

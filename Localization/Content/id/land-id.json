@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks untuk Perusahaan Indonesia | Tunjangan Lembur Progresif sesuai PP 35/2021",
+  "pageTitle": "Klacks untuk Perusahaan Indonesia | Batas Lembur dan Kredit Waktu menurut PP 35/2021",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Tanpa biaya lisensi &middot; Pencatatan Waktu Sesuai UU PDP",
+    "badge": "Open Source &middot; Tanpa biaya lisensi &middot; Pencatatan Waktu dengan Memperhatikan UU PDP",
     "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
-    "subtitle": "Klacks menghitung otomatis tunjangan lembur bertingkat sesuai PP 35/2021, mengawasi batas lembur mingguan &mdash; atas permintaan, Klacks memblokir pelanggaran secara ketat &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
+    "subtitle": "Klacks mencatat tambahan waktu untuk lembur sebagai kredit jam, memberi peringatan pada batas lembur mingguan menurut PP 35/2021 &mdash; atas permintaan, mode blokir mencegah pelanggaran baru pada jalur perencanaan otomatis &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
@@ -57,17 +57,17 @@
   },
   "solutions": {
     "title": "Bagaimana Klacks meringankan beban perusahaan Indonesia",
-    "subtitle": "Dari perhitungan tunjangan otomatis hingga infrastruktur milik sendiri &mdash; semuanya saling terhubung.",
+    "subtitle": "Dari kredit waktu untuk tambahan lembur hingga infrastruktur milik sendiri &mdash; semuanya saling terhubung.",
     "items": [
       {
         "icon": "hourglass_top",
-        "title": "Batas 18 jam per minggu dipantau otomatis",
-        "text": "Klacks mengelola akun lembur mingguan untuk setiap karyawan sesuai PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari dan pengingat mengenai persetujuan tertulis yang diwajibkan. Atas permintaan, Klacks memblokir pelanggaran semacam ini secara ketat: dalam mode blokir, pelanggaran baru hanya dapat disimpan dengan persetujuan tertulis dari atasan yang terdokumentasi (dapat dikonfigurasi per jenis aturan)."
+        "title": "Batas 18 jam per minggu terpantau",
+        "text": "Klacks memeriksa jam kerja mingguan setiap karyawan terhadap batas lembur menurut PP 35/2021 Pasal 26 &mdash; termasuk batas 4 jam per hari, bila disimpan sebagai aturan, dan memberi peringatan jika terlampaui. Atas permintaan, mode blokir dapat diaktifkan untuk mencegah pelanggaran baru pada jalur perencanaan otomatis (perencana otomatis, usulan, pencarian pengganti); pada perencanaan manual tetap berupa peringatan."
       },
       {
         "icon": "calculate",
-        "title": "Tunjangan progresif dihitung dengan benar",
-        "text": "Untuk hari kerja, Klacks menerapkan tingkatan 1,5× dan 2,0× dari PP 35/2021 Pasal 31 secara otomatis, untuk hari istirahat dan hari libur resmi tunjangan yang telah ditetapkan. Tingkatan per jam 2,0×/3,0×/4,0× pada hari istirahat, tabel untuk operasional 5 atau 6 hari kerja, dan dasar 1/173 dari upah bulanan tidak dipetakan oleh Klacks &mdash; hal itu tetap menjadi bagian dari penggajian Anda."
+        "title": "Tambahan waktu sebagai kredit jam",
+        "text": "Tingkatan 1,5× dan 2,0× untuk hari kerja berasal dari PP 35/2021 Pasal 31; Klacks mencatat tambahan waktu yang disimpan untuk peraturan Anda sebagai kredit jam. Tingkatan per jam 2,0×/3,0×/4,0× pada hari istirahat, tabel untuk operasional 5 atau 6 hari kerja, dan dasar 1/173 dari upah bulanan tidak dipetakan oleh Klacks &mdash; Klacks tidak menghitung upah, hal itu tetap menjadi bagian dari penggajian Anda."
       },
       {
         "icon": "pause_circle",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Perubahan jadwal diuji tanpa risiko",
-        "text": "Sebelum sebuah perubahan jadwal diterapkan secara langsung (live), Anda dapat mengujinya terlebih dahulu sebagai salinan yang terisolasi &mdash; waktu istirahat yang diwajibkan oleh undang-undang dan tunjangan akan dihitung secara live, persis seperti pada jadwal yang sesungguhnya. Setelah semuanya sesuai, barulah Anda menerapkan varian tersebut; sampai saat itu, jadwal kerja Anda yang sedang berjalan tetap tidak berubah. Dengan begitu, Anda dapat menyiapkan skenario yang sesuai sejak awal untuk situasi yang bisa diperkirakan &mdash; misalnya ketidakhadiran karena sakit atau lonjakan pesanan &mdash; sehingga siap digunakan segera saat situasi darurat terjadi, alih-alih harus berimprovisasi di bawah tekanan waktu. Tidak ada batas atas buatan di sini &mdash; Anda dapat membuat sebanyak apa pun skenario yang Anda butuhkan untuk perencanaan Anda."
+        "text": "Sebelum sebuah perubahan jadwal diterapkan secara langsung (live), Anda dapat mengujinya terlebih dahulu sebagai salinan yang terisolasi &mdash; aturan waktu istirahat yang disimpan diperiksa dan tambahan waktu dicatat persis seperti pada jadwal yang sesungguhnya. Setelah semuanya sesuai, barulah Anda menerapkan varian tersebut; sampai saat itu, jadwal kerja Anda yang sedang berjalan tetap tidak berubah. Dengan begitu, Anda dapat menyiapkan skenario yang sesuai sejak awal untuk situasi yang bisa diperkirakan &mdash; misalnya ketidakhadiran karena sakit atau lonjakan pesanan &mdash; sehingga siap digunakan segera saat situasi darurat terjadi, alih-alih harus berimprovisasi di bawah tekanan waktu. Tidak ada batas atas buatan di sini &mdash; Anda dapat membuat sebanyak apa pun skenario yang Anda butuhkan untuk perencanaan Anda."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Contoh Konkret",
     "title": "Lembur di hari istirahat, sekali lihat",
-    "text": "Klacks secara otomatis mengenali apakah lembur terjadi pada hari kerja atau hari istirahat, menerapkan tunjangan yang telah ditetapkan, sekaligus memantau batas 18 jam per minggu &mdash; tanpa perlu menghitung ulang secara manual."
+    "text": "Klacks mengenali apakah lembur terjadi pada hari kerja atau hari istirahat, mencatat tambahan waktu yang disimpan sebagai kredit jam, sekaligus memantau batas 18 jam per minggu &mdash; tanpa perlu menghitung ulang secara manual."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Rasakan Klacks di perusahaan Anda",
-    "text": "Coba di Playground bagaimana Klacks mengotomatisasi tunjangan lembur progresif dan batas mingguan &mdash; terpasang di tempat Anda atau di Playground, tanpa biaya lisensi dan tanpa registrasi."
+    "text": "Coba di Playground bagaimana Klacks mencatat tambahan lembur sebagai kredit waktu dan memeriksa batas mingguan &mdash; terpasang di tempat Anda atau di Playground, tanpa biaya lisensi dan tanpa registrasi."
   }
 }

@@ -2,9 +2,9 @@
   "pageTitle": "Klacks pour les entreprises en Belgique | Commission Paritaire, loi linguistique & réforme des horaires 2026",
   "hero": {
     "badgeIcon": "gavel",
-    "badge": "Pour les entreprises en Belgique &middot; Toutes les Commissions Paritaires",
-    "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">respectent chaque Commission Paritaire.</span>",
-    "subtitle": "Klacks connaît les règles de votre Commission Paritaire (CP), est disponible dans la langue de chaque siège d'exploitation et documente chaque écart &mdash; pour que vous gardiez la réforme 2026 à l'œil.",
+    "badge": "Pour les entreprises en Belgique &middot; Règles configurables par Commission Paritaire",
+    "titleHtml": "Des horaires de travail qui <span class=\"text-secondary\">gardent votre Commission Paritaire à l'œil.</span>",
+    "subtitle": "Dans Klacks, vous enregistrez les règles de votre Commission Paritaire (CP) ; Klacks est disponible dans la langue de chaque siège d'exploitation et documente chaque écart &mdash; pour que vous gardiez la réforme 2026 à l'œil.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Vue d'ensemble des horaires Klacks pour les entreprises en Belgique",
     "screenshotLabel": "Horaire"
@@ -38,7 +38,7 @@
       {
         "icon": "place",
         "title": "Jusqu'au niveau de la communauté",
-        "text": "La Communauté flamande, la Communauté française et la Communauté germanophone ont chacune leur fête (11 juillet, 27 septembre, 15 novembre) &mdash; déjà configurées, sans niveau communal supplémentaire à gérer."
+        "text": "La Communauté flamande, la Communauté française et la Communauté germanophone ont chacune leur fête (11 juillet, 27 septembre, 15 novembre) &mdash; à enregistrer vous-même comme règles de jours fériés, sans niveau communal supplémentaire à gérer."
       },
       {
         "icon": "layers",
@@ -61,8 +61,8 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "La Commission Paritaire configurée individuellement",
-        "text": "Klacks reproduit les suppléments et les limites de temps de travail de la CP compétente &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03 &mdash; directement dans votre configuration de règles. Des jeux de règles nommés par commission peuvent être préconfigurés et importés sous forme de fichier de profil pays &mdash; vos adaptations personnalisées sont conservées lors d'une réimportation."
+        "title": "La Commission Paritaire enregistrée par vous",
+        "text": "Les suppléments et les limites de temps de travail de votre CP &mdash; qu'il s'agisse de la CP 330, la CP 317, la CP 121 ou la CP 140.03 &mdash; vous les enregistrez directement dans votre configuration de règles ; Klacks ne fournit pas de jeu de règles préconfiguré pour la Belgique ni pour les commissions. Klacks crédite les suppléments sous forme de crédit de temps."
       },
       {
         "icon": "translate",
@@ -92,14 +92,14 @@
       {
         "icon": "science",
         "title": "Tester les modifications d'horaire sans risque",
-        "text": "Avant qu'une modification d'horaire ne passe en production, vous pouvez la tester comme une copie isolée &mdash; les limites de temps de travail de la Commission Paritaire compétente et les suppléments sont alors calculés en temps réel, exactement comme dans l'horaire réel. Ce n'est qu'une fois que tout est correct que vous adoptez la variante ; jusque-là, votre horaire en cours reste inchangé. Vous préparez ainsi à l'avance un scénario adapté à des situations prévisibles &mdash; comme une absence pour maladie ou un pic d'activité &mdash; et vous êtes immédiatement opérationnel le moment venu, au lieu d'improviser sous la pression du temps. Il n'y a par ailleurs aucune limite artificielle &mdash; vous créez autant de scénarios que nécessaire."
+        "text": "Avant qu'une modification d'horaire ne passe en production, vous pouvez la tester comme une copie isolée &mdash; les limites de temps de travail et les suppléments enregistrés sont alors pris en compte en temps réel, exactement comme dans l'horaire réel. Ce n'est qu'une fois que tout est correct que vous adoptez la variante ; jusque-là, votre horaire en cours reste inchangé. Vous préparez ainsi à l'avance un scénario adapté à des situations prévisibles &mdash; comme une absence pour maladie ou un pic d'activité &mdash; et vous êtes immédiatement opérationnel le moment venu, au lieu d'improviser sous la pression du temps. Il n'y a par ailleurs aucune limite artificielle &mdash; vous créez autant de scénarios que nécessaire."
       }
     ]
   },
   "klacksy": {
     "eyebrow": "Assistant IA",
     "title": "Klacksy : l'assistant intégré pour votre équipe",
-    "text": "Klacksy est directement intégré à l'interface de Klacks et aide à garder à l'œil les règles spécifiques à la CP et les exigences linguistiques par siège d'exploitation. Les collaborateurs et les planificateurs consultent les horaires par chat ou clarifient les disponibilités &mdash; de façon traçable selon les compétences et règles enregistrées, jamais une décision de boîte noire.",
+    "text": "Klacksy est directement intégré à l'interface de Klacks et aide à garder à l'œil les règles de CP que vous avez enregistrées et les exigences linguistiques par siège d'exploitation. Les collaborateurs et les planificateurs consultent les horaires par chat ou clarifient les disponibilités &mdash; de façon traçable selon les compétences et règles enregistrées, jamais une décision de boîte noire.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Assistant de chat Klacksy dans l'interface de Klacks"
   },

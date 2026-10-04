@@ -2,9 +2,9 @@
   "pageTitle": "Klacks voor bedrijven in België | Paritair Comité, taalwet & dienstroosterhervorming 2026",
   "hero": {
     "badgeIcon": "gavel",
-    "badge": "Voor bedrijven in België &middot; Alle Paritaire Comités",
-    "titleHtml": "Dienstroosters die <span class=\"text-secondary\">elk Paritair Comité respecteren.</span>",
-    "subtitle": "Klacks kent de regels van uw Paritair Comité (PC), is beschikbaar in de taal van elke vestiging en documenteert elke afwijking &mdash; zodat u de hervorming van 2026 in het oog houdt.",
+    "badge": "Voor bedrijven in België &middot; Regels per Paritair Comité configureerbaar",
+    "titleHtml": "Dienstroosters die <span class=\"text-secondary\">uw Paritair Comité in het oog houden.</span>",
+    "subtitle": "In Klacks legt u de regels van uw Paritair Comité (PC) vast; Klacks is beschikbaar in de taal van elke vestiging en documenteert elke afwijking &mdash; zodat u de hervorming van 2026 in het oog houdt.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosteroverzicht voor bedrijven in België",
     "screenshotLabel": "Dienstrooster"
@@ -38,7 +38,7 @@
       {
         "icon": "place",
         "title": "Tot op gemeenschapsniveau",
-        "text": "De Vlaamse, Franse en Duitstalige Gemeenschap hebben elk een eigen feestdag (11 juli, 27 september, 15 november) &mdash; vooraf ingesteld, zonder dat er een extra gemeentelijk niveau nodig is."
+        "text": "De Vlaamse, Franse en Duitstalige Gemeenschap hebben elk een eigen feestdag (11 juli, 27 september, 15 november) &mdash; door uzelf als feestdagregels vastgelegd, zonder dat er een extra gemeentelijk niveau nodig is."
       },
       {
         "icon": "layers",
@@ -61,8 +61,8 @@
     "items": [
       {
         "icon": "gavel",
-        "title": "Paritair Comité individueel vastgelegd",
-        "text": "Klacks legt de toeslagen en arbeidstijdgrenzen van het betreffende PC vast &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is &mdash; rechtstreeks in uw regelconfiguratie. Benoemde regelsets per Comité kunt u vooraf configureren als landprofielbestand en importeren &mdash; eigen aanpassingen van de klant blijven bij een herimport behouden."
+        "title": "Paritair Comité door uzelf vastgelegd",
+        "text": "De toeslagen en arbeidstijdgrenzen van uw PC &mdash; of het nu PC 330, PC 317, PC 121 of PC 140.03 is &mdash; legt u rechtstreeks vast in uw regelconfiguratie; een vooraf geconfigureerd regelpakket voor België of afzonderlijke comités levert Klacks niet mee. Toeslagen schrijft Klacks als tijdtegoed bij."
       },
       {
         "icon": "translate",
@@ -92,14 +92,14 @@
       {
         "icon": "science",
         "title": "Planwijzigingen risicovrij getest",
-        "text": "Voordat een planwijziging live gaat, kunt u ze als geïsoleerde kopie doorspelen &mdash; de arbeidstijdgrenzen van uw Paritair Comité en de toeslagen worden daarbij net zo live berekend als in het echte rooster. Pas wanneer alles klopt, neemt u de variant over; tot dan blijft uw lopende dienstrooster ongewijzigd. Zo legt u voor voorzienbare situaties &mdash; bijvoorbeeld ziekteverzuim of een orderpiek &mdash; al vooraf een passend scenario klaar en bent u in noodgevallen meteen inzetbaar, in plaats van pas onder tijdsdruk te improviseren. Daarbij is er geen kunstmatige bovengrens &mdash; u maakt zoveel scenario's aan als u voor uw planning nodig heeft."
+        "text": "Voordat een planwijziging live gaat, kunt u ze als geïsoleerde kopie doorspelen &mdash; de vastgelegde arbeidstijdgrenzen en toeslagen worden daarbij net zo live meegenomen als in het echte rooster. Pas wanneer alles klopt, neemt u de variant over; tot dan blijft uw lopende dienstrooster ongewijzigd. Zo legt u voor voorzienbare situaties &mdash; bijvoorbeeld ziekteverzuim of een orderpiek &mdash; al vooraf een passend scenario klaar en bent u in noodgevallen meteen inzetbaar, in plaats van pas onder tijdsdruk te improviseren. Daarbij is er geen kunstmatige bovengrens &mdash; u maakt zoveel scenario's aan als u voor uw planning nodig heeft."
       }
     ]
   },
   "klacksy": {
     "eyebrow": "AI-assistent",
     "title": "Klacksy: de geïntegreerde assistent voor uw team",
-    "text": "Klacksy is rechtstreeks ingebed in de Klacks-interface en helpt om PC-specifieke regels en taalvereisten per vestiging in het oog te houden. Medewerkers en planners vragen via de chat diensttijden op of verduidelijken beschikbaarheden &mdash; navolgbaar volgens vastgelegde skills en regels, geen black-box-beslissing.",
+    "text": "Klacksy is rechtstreeks ingebed in de Klacks-interface en helpt om de door u vastgelegde PC-regels en taalvereisten per vestiging in het oog te houden. Medewerkers en planners vragen via de chat diensttijden op of verduidelijken beschikbaarheden &mdash; navolgbaar volgens vastgelegde skills en regels, geen black-box-beslissing.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy chatassistent in de Klacks-interface"
   },

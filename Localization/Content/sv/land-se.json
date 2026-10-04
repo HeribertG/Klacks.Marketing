@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks svenska verksamheter",
-    "subtitle": "Från den automatiska kollektivavtalsavvikelsen till PAXML-exporten &mdash; allt hänger ihop.",
+    "subtitle": "Från de inlagda kollektivavtalsavvikelserna till PAXML-exporten &mdash; allt hänger ihop.",
     "items": [
       {
         "icon": "gavel",
@@ -67,7 +67,7 @@
       {
         "icon": "timer",
         "title": "Allmän övertid övervakas live",
-        "text": "Gränserna för allmän övertid enligt ATL § 8 &mdash; 50 timmar per kalendermånad och högst 200 timmar per år &mdash; räknar Klacks automatiskt och varnar innan ett gränsvärde överskrids; den alternativa gränsen på 48 timmar per 4 veckor kan i stället läggas in som ett rullande 4-veckorsfönster. På begäran blockerar Klacks överskridandet helt &mdash; en ny överträdelse kan då bara sparas med dokumenterat godkännande från arbetsledningen."
+        "text": "Gränserna för allmän övertid enligt ATL § 8 &mdash; 50 timmar per kalendermånad och högst 200 timmar per år &mdash; räknar Klacks automatiskt och varnar innan ett gränsvärde överskrids; den alternativa gränsen på 48 timmar per 4 veckor kan i stället läggas in som ett rullande 4-veckorsfönster. På begäran blockerar Klacks överskridandet i den automatiska planeringen; vid manuell planering stannar det vid varningen."
       },
       {
         "icon": "bedtime",
@@ -77,7 +77,7 @@
       {
         "icon": "receipt_long",
         "title": "PAXML-export",
-        "text": "Lönetransaktioner &mdash; timmar per lönart och tillhörande frånvaro &mdash; går i det svenska PAXML-formatet direkt till ert lönesystem, utan dubbelregistrering."
+        "text": "Lönetransaktioner &mdash; timmar per lönart och tillhörande frånvaro &mdash; exporterar Klacks som PAXML-fil för ert lönesystem, utan dubbelregistrering."
       },
       {
         "icon": "how_to_reg",

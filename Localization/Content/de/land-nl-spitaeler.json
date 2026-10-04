@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Ziekenhuizen in den Niederlanden | Bereikbaarheidsdienst & Oproepvrije Dagen",
+  "pageTitle": "Klacks für Ziekenhuizen in den Niederlanden | Ruhezeiten, Nachtdienste & 24/7-Abdeckung",
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Für Ziekenhuizen &amp; Kliniken in den Niederlanden",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Bereikbaarheidsdiensten lückenlos &mdash; mit der 8-Stunden-Ruhezeit nach nächtlichem Einsatz und den oproepvrije dagen der CAO Ziekenhuizen automatisch berücksichtigt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Dienste lückenlos &mdash; mit Ruhezeit-Regeln wie der 8-Stunden-Ruhe nach nächtlichem Einsatz, die Sie hinterlegen. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für niederländische Ziekenhuizen",
     "screenshotLabel": "Dienstplan"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Wie Klacks niederländische Ziekenhuizen entlastet",
-    "subtitle": "Von der korrekten Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "subtitle": "Von der überwachten Ruhezeit bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "call", "title": "8-Stunden-Ruhezeit automatisch eingeplant", "text": "Wird während einer Bereikbaarheidsdienst nachts tatsächlich gearbeitet, plant Klacks die anschließende 8-Stunden-Ruhezeit automatisch mit ein." },
-      { "icon": "event_available", "title": "Oproepvrije dagen automatisch bewacht", "text": "Klacks kontrolliert laufend, ob die 14 rufbereitschaftsfreien Tage je 28-Tage-Fenster und die zwei freien Wochenenden eingehalten werden." },
+      { "icon": "call", "title": "8-Stunden-Ruhezeit hinterlegbar", "text": "Die 8-Stunden-Ruhezeit nach einem nächtlichen Einsatz hinterlegen Sie als Mindestruhezeit; Klacks plant sie bei der automatischen Planung mit und warnt bei Unterschreitung. Bereikbaarheidsdienst als eigene Zeitart mit tatsächlich geleisteter Arbeit erfasst Klacks nicht." },
+      { "icon": "event_available", "title": "Oproepvrije dagen im Blick", "text": "Die 14 rufbereitschaftsfreien Tage je 28-Tage-Fenster und die zwei freien Wochenenden lassen sich als Regeln für freie Tage im rollierenden Fenster hinterlegen; Rufbereitschaft als eigene Zeitart kennt Klacks nicht." },
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Interne Geneeskunde für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Ruhezeit." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Bereikbaarheidsdienst, Ruhezeit, ein Plan",
-    "text": "Wird eine Fachkraft während einer nächtlichen Bereikbaarheidsdienst tatsächlich eingesetzt, plant Klacks die anschließenden 8 Stunden Ruhezeit automatisch mit ein und behält gleichzeitig die oproepvrije dagen im 28-Tage-Fenster im Blick."
+    "title": "Nachteinsatz, Ruhezeit, ein Plan",
+    "text": "Wird eine Fachkraft nachts eingesetzt, plant Klacks die hinterlegte Ruhezeit von 8 Stunden automatisch mit ein und warnt bei Unterschreitung; die oproepvrije dagen im 28-Tage-Fenster lassen sich als Regel für freie Tage im Blick behalten."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Ziekenhuis erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Bereikbaarheidsdiensten, Ruhezeiten und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Dienste, Ruhezeiten und Stationen übernimmt &mdash; oder installieren Sie es direkt in Ihrem Haus. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

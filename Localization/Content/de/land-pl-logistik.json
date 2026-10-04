@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in Polen",
     "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der hinterlegten Tageshöchstarbeitszeit im Blick und der neuen Fahrtenschreiber-Pflicht für Kleintransporter ab 1. Juli 2026. Routen werden automatisch optimiert.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit der hinterlegten Tageshöchstarbeitszeit im Blick. Für Kleintransporter gilt ab 1. Juli 2026 die neue Fahrtenschreiber-Pflicht; die Lenkzeiten weist der Fahrtenschreiber nach. Routen werden automatisch optimiert.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Polen",
     "screenshotLabel": "Timeline"
@@ -23,9 +23,9 @@
     "subtitle": "Von der optimierten Tour bis zur neuen Kleintransporter-Pflicht &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
-      { "icon": "nightlight", "title": "10-Stunden-Grenze als Tageshöchstarbeitszeit", "text": "Die 10-Stunden-Grenze hinterlegen Sie als Tageshöchstarbeitszeit, etwa im Vertrag Ihrer Nachtfahrer, und Klacks warnt, wenn die Arbeitszeit eines Tages sie überschreiten würde. Auf Wunsch blockiert Klacks die Überschreitung hart &mdash; ein neuer Verstoß lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Ob eine Schicht ins 4-Stunden-Nachtfenster fällt, wertet Klacks dafür nicht aus, und gezählt wird je Kalendertag, nicht zwischen zwei Ruhezeiten." },
+      { "icon": "nightlight", "title": "10-Stunden-Grenze als Tageshöchstarbeitszeit", "text": "Die 10-Stunden-Grenze hinterlegen Sie als Tageshöchstarbeitszeit, etwa im Vertrag Ihrer Nachtfahrer, und Klacks warnt, wenn die Arbeitszeit eines Tages sie überschreiten würde. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung. Ob eine Schicht ins 4-Stunden-Nachtfenster fällt, wertet Klacks dafür nicht aus, und gezählt wird je Kalendertag, nicht zwischen zwei Ruhezeiten." },
       { "icon": "fact_check", "title": "Kleintransporter ab 1.7.2026 mitgeplant", "text": "Fahrzeuge zwischen 2,5 und 3,5 Tonnen im grenzüberschreitenden Güterverkehr plant Klacks mit denselben hinterlegten Arbeits- und Ruhezeitgrenzen wie alle Touren. Die Lenkzeitregeln für schwere Lkw &mdash; 4,5-Stunden-Lenkzeit, 45-Minuten-Pause und maximal 9 (an zwei Tagen pro Woche 10) Stunden Tageslenkzeit &mdash; prüft Klacks nicht; ihr Nachweis bleibt beim Fahrtenschreiber." },
-      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis hat." },
+      { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Nachweis hat." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Kowalski ist krank“ genügt &mdash; Klacksy startet die Neuplanung." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der hinterlegten Arbeitszeitgrenzen ist." }
     ]

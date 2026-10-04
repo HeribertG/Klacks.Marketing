@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (Hjemmepleje) in Dänemark",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Dienstplan-Verwaltung.</span>",
-    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; und dokumentiert die Stunden für die neue Fritvalgsordning ab OK26. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; und dokumentiert die Stunden für die neue Fritvalgsordning ab OK26. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren in der dänischen Hjemmepleje",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Wie Klacks die dänische Hjemmepleje entlastet",
-    "subtitle": "Von der optimierten Tour bis zum individuellen Fritvalgsordning-Konto &mdash; alles greift ineinander.",
+    "subtitle": "Von der optimierten Tour bis zur Stundenbasis für die Fritvalgsordnung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "route",
@@ -46,13 +46,13 @@
       },
       {
         "icon": "event_repeat",
-        "title": "Umplanungszuschlag als Fixbetrag",
-        "text": "Muss eine Umplanung kurzfristiger als 4 Tage erfolgen, buchen Sie den als Fixbetrag-Zuschlag hinterlegten Satz von 30,85 DKK für jede umgelegte Stunde mit. Ob die 4-Tage-Frist unterschritten ist, prüft Klacks nicht automatisch."
+        "title": "Umplanung: Basis für den Zuschlag",
+        "text": "Muss eine Umplanung kurzfristiger als 4 Tage erfolgen, halten Sie die betroffenen Stunden in Klacks fest; den Zuschlag von 30,85 DKK pro umgelegter Stunde rechnet Ihre Lohnbuchhaltung ab. Ob die 4-Tage-Frist unterschritten ist, prüft Klacks nicht automatisch."
       },
       {
         "icon": "call_split",
-        "title": "Geteilte Dienste korrekt zugeschlagen",
-        "text": "Klacks erkennt delt tjeneste automatisch und rechnet den tariflichen Zuschlag für jede betroffene Pflegekraft mit."
+        "title": "Geteilte Dienste: Basis für den Zuschlag",
+        "text": "Den tariflichen Zuschlag für geteilte Dienste (delt tjeneste) rechnet Ihre Lohnbuchhaltung ab; Klacks liefert dafür die Stunden je Pflegekraft."
       },
       {
         "icon": "verified",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Umplanung und Fritvalgsordning, ein Plan",
-    "text": "Klacks warnt bei einer Umplanung unter 4 Tagen vor dem Zuschlag von 30,85 DKK pro Stunde, bucht ihn als hinterlegten Fixbetrag-Zuschlag für jede umgelegte Stunde direkt mit und dokumentiert gleichzeitig die für die Fritvalgsordning relevanten Stunden jeder Pflegekraft &mdash; als verlässliche Basis für die Lohnbuchhaltung."
+    "text": "Klacks hält die Stunden einer Umplanung unter 4 Tagen fest, auf deren Basis Ihre Lohnbuchhaltung den Zuschlag von 30,85 DKK pro Stunde abrechnet, und dokumentiert gleichzeitig die für die Fritvalgsordnung relevanten Stunden jeder Pflegekraft &mdash; als verlässliche Basis für die Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {

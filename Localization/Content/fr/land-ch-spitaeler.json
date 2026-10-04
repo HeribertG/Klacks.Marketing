@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Pour les hôpitaux &amp; cliniques en Suisse",
     "titleHtml": "Des plannings de service qui <span class=\"text-secondary\">tiennent 24 heures sur 24.</span>",
-    "subtitle": "Klacks planifie les unités, les piquets et les heures des médecins-assistant·e·s sans la moindre lacune &mdash; avec un temps de présence et de disponibilité correctement enregistré. Installé chez vous, pour que les données patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie les unités, les piquets et les heures des médecins-assistant·e·s sans la moindre lacune &mdash; avec le piquet de présence et le piquet d'appel comme types de service propres. Installé chez vous, pour que les données patients restent dans vos murs &mdash; sur demande avec un modèle d'IA local.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grille de planning Klacks pour les hôpitaux suisses",
     "screenshotLabel": "Planning"
@@ -42,7 +42,7 @@
   },
   "solutions": {
     "title": "Comment Klacks soulage les hôpitaux suisses",
-    "subtitle": "De la saisie correcte du piquet à la couverture 24 h/24 et 7 j/7 &mdash; tout s'imbrique parfaitement.",
+    "subtitle": "De la planification du piquet à la couverture 24 h/24 et 7 j/7 &mdash; tout s'imbrique parfaitement.",
     "items": [
       {
         "icon": "schedule",
@@ -52,12 +52,12 @@
       {
         "icon": "gavel",
         "title": "Heures des médecins-assistant·e·s surveillées automatiquement",
-        "text": "Klacks surveille en continu la limite hebdomadaire de 50 heures et signale immédiatement tout dépassement &mdash; sur demande, Klacks bloque strictement le dépassement, une nouvelle infraction ne peut alors être enregistrée qu'avec une autorisation documentée de la hiérarchie. Le plafond annuel de 140 heures d'heures supplémentaires peut être enregistré comme valeur de référence."
+        "text": "Klacks surveille en continu la limite hebdomadaire de 50 heures et signale immédiatement tout dépassement &mdash; sur demande, Klacks bloque strictement le dépassement en planification automatique, en planification manuelle Klacks se limite à avertir. Le plafond annuel de 140 heures d'heures supplémentaires peut être enregistré comme valeur de référence."
       },
       {
         "icon": "call",
-        "title": "Piquet saisi séparément",
-        "text": "Klacks enregistre séparément le piquet de présence sur place et le piquet à domicile &mdash; sous forme de types de service ou d'absence propres et configurables."
+        "title": "Piquet planifié séparément",
+        "text": "Vous représentez séparément dans Klacks le piquet de présence sur place et le piquet à domicile &mdash; sous forme de types de service ou d'absence propres et configurables ; Klacks ne calcule pas automatiquement leur prise en compte différente comme temps de travail."
       },
       {
         "icon": "verified",
@@ -67,7 +67,7 @@
       {
         "icon": "shield_lock",
         "title": "Installé chez vous : les données restent chez vous",
-        "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des patients ne quittent pas la clinique &mdash; pas même pour l'IA."
+        "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des patients ne quittent pas la clinique &mdash; sur demande avec un modèle d'IA local, pas même pour l'IA."
       },
       {
         "icon": "smart_toy",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Rotation des médecins-assistant·e·s et piquet, un seul planning",
-    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, gère séparément le piquet de présence et le piquet d'appel et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Vous pouvez déjà enregistrer aujourd'hui un préavis minimal pour la publication du planning (par exemple deux semaines) ; Klacks calcule à partir de là la date à laquelle le planning doit être prêt &mdash; dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
+    "text": "Klacks garde un œil sur la limite de 50 heures et retient la limite annuelle d'heures supplémentaires comme valeur de référence, représente le piquet de présence et le piquet d'appel comme types de service distincts et signale tôt à la direction de l'unité où la situation se tend &mdash; y compris sur le chemin vers des modèles progressifs comme le 42+4. Vous pouvez déjà enregistrer aujourd'hui un préavis minimal pour la publication du planning (par exemple deux semaines) ; Klacks calcule à partir de là la date à laquelle le planning doit être prêt &mdash; dès l'entrée en vigueur de la BGAP pour le personnel soignant, la base de planification sera déjà en place."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -2,9 +2,9 @@
   "pageTitle": "Klacks for Businesses in the United Arab Emirates | Ramadan Target Hours & Data Protection on Your Own Premises under the PDPL",
   "hero": {
     "badgeIcon": "mosque",
-    "badge": "Hour basis for WPS &middot; PDPL-compliant &middot; Without license fees",
+    "badge": "Hour basis for payroll &middot; Data kept in-house &middot; Without license fees",
     "titleHtml": "Schedules that factor in Ramadan <span class=\"text-secondary\">once it is configured.</span>",
-    "subtitle": "Klacks can be set up with reduced daily target hours for all staff during the holy month of Ramadan, monitors the overtime cap live, optionally with a hard block, and maintains hour accounts as the basis for WPS payroll &mdash; installed on your own premises, so your scheduling and staff data required under the PDPL stay on your own infrastructure.",
+    "subtitle": "Klacks can be set up with reduced daily target hours for all staff during the holy month of Ramadan, monitors the overtime cap live, optionally with a hard block in automatic planning, and maintains hour accounts whose hours you export for your payroll (Klacks does not generate a WPS file) &mdash; installed on your own premises, so your scheduling and staff data required under the PDPL stay on your own infrastructure.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in the United Arab Emirates",
     "screenshotLabel": "Schedule"
@@ -62,7 +62,7 @@
   },
   "solutions": {
     "title": "How Klacks takes the load off UAE businesses",
-    "subtitle": "From configured Ramadan target hours to WPS-ready payroll security &mdash; everything works together.",
+    "subtitle": "From configured Ramadan target hours to the hour basis for payroll &mdash; everything works together.",
     "items": [
       {
         "icon": "nights_stay",
@@ -72,17 +72,17 @@
       {
         "icon": "schedule",
         "title": "Overtime daily limit &amp; 144-hour cap monitored live",
-        "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and monitors total working hours per 3-week period live against the 144-hour cap; the night-work premium is calculated automatically, with an exactly configurable time window (22:00 to 04:00). On request, Klacks enforces such violations as a hard block: in block mode, a new violation can only be saved with documented supervisor approval (configurable per rule type)."
+        "text": "Klacks warns before a shift is assigned if the 2-hour daily limit would be exceeded, and monitors total working hours per 3-week period live against the 144-hour cap; the night-work premium is credited automatically as a time credit, with an exactly configurable time window (22:00 to 04:00). On request, Klacks hard-blocks such violations in automatic planning (block mode, configurable per rule type); with manual planning it stays at a warning."
       },
       {
         "icon": "payments",
-        "title": "The hour basis for WPS payroll",
-        "text": "Klacks keeps hour accounts reconciled against the schedule that provide the hour basis for WPS payroll under Ministerial Resolution No. 340 of 2026 &mdash; documented on time, instead of risky guesswork."
+        "title": "Hour export for payroll",
+        "text": "Klacks keeps hour accounts reconciled against the schedule and provides the hours as a CSV/XLSX export for your payroll &mdash; a WPS file and the payment of wages themselves are outside Klacks, and the deadlines under Ministerial Resolution No. 340 of 2026 remain with your payroll processing."
       },
       {
         "icon": "fingerprint",
-        "title": "PDPL-compliant hosting on your own premises",
-        "text": "Your scheduling and staff data stay on your own premises, on your own infrastructure &mdash; with none of the cross-border data transfer that the PDPL tightly regulates for sensitive personal data."
+        "title": "Data kept on your own premises (PDPL)",
+        "text": "Your scheduling and staff data stay on your own premises, on your own infrastructure &mdash; and with a locally hosted AI model, even without the cross-border data transfer that the PDPL tightly regulates for sensitive personal data."
       },
       {
         "icon": "smart_toy",
@@ -116,6 +116,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "See Klacks in your UAE business",
-    "text": "Try the Playground to see how Klacks maps Ramadan target hours, the overtime cap and the hour basis for WPS &mdash; installed on your premises or in the Playground, no license fees and with no registration required."
+    "text": "Try the Playground to see how Klacks maps Ramadan target hours and the overtime cap and provides the hours for your payroll &mdash; installed on your premises or in the Playground, no license fees and with no registration required."
   }
 }

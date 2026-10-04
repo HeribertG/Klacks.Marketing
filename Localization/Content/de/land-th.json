@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Thailand | 36-Stunden-Limit & PDPA-konforme Personalplanung",
+  "pageTitle": "Klacks für Unternehmen in Thailand | 36-Stunden-Limit & Personalplanung mit Daten im eigenen Haus",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Thailändischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt rechtzeitig vor einer Überschreitung (oder blockiert sie auf Wunsch konsequent) und läuft bei Ihnen installiert &mdash; damit Ihre sensiblen Personal- und Planungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
+    "subtitle": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt rechtzeitig vor einer Überschreitung (auf Wunsch mit Block-Modus für die automatischen Planungswege) und läuft bei Ihnen installiert &mdash; damit Ihre sensiblen Personal- und Planungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Thailand",
     "screenshotLabel": "Dienstplan"
@@ -57,17 +57,17 @@
   },
   "solutions": {
     "title": "Wie Klacks thailändische Betriebe entlastet",
-    "subtitle": "Von der automatischen 36h-Deckelung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
+    "subtitle": "Von der 36h-Überwachung bis zur eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "gavel",
         "title": "36h-Wochenlimit live überwacht",
-        "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar. Auf Wunsch blockiert Klacks solche Verstöße konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird &mdash; und macht so das Risiko des Strafrahmens nach Section 144 sichtbar. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung."
       },
       {
         "icon": "layers",
-        "title": "Dreistufige Überstundensätze automatisch zugewiesen",
-        "text": "Klacks weist die Überstundensätze automatisch zu &mdash; 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62); den 3,0-fach-Satz für Überstunden an Feiertagen/Ruhetagen (Section 63) bildet Klacks nicht gesondert ab."
+        "title": "Überstundensätze als Zeitzuschläge",
+        "text": "Das Gesetz kennt drei Stufen: 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62) und 3,0-fach für Überstunden an Feiertagen/Ruhetagen (Section 63). Klacks schreibt Zeitzuschläge als Stunden gut und stellt sie für die Lohnbuchhaltung bereit; die Thailand-Vorlage hinterlegt einen Wochen-Überstundenzuschlag (+0,5 ab 48 Wochenstunden) und einen Feiertagszuschlag (+1,0). Den 3,0-fach-Satz bildet Klacks nicht gesondert ab, Löhne und Beträge rechnet Klacks nicht."
       },
       {
         "icon": "hourglass_top",
@@ -77,12 +77,12 @@
       {
         "icon": "event_available",
         "title": "Ruhetag-Abstand max. 6 Tage",
-        "text": "Klacks reserviert den wöchentlichen Ruhetag lückenlos und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)."
+        "text": "Klacks prüft die Ruhetage (mindestens 1 pro Woche, höchstens 6 Arbeitstage in Folge) und warnt, sobald zwischen zwei Ruhetagen mehr als 6 Tage liegen würden (Section 28)."
       },
       {
         "icon": "shield_lock",
-        "title": "PDPA-konforme Speicherung im eigenen Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Ihre sensiblen Personal- und Planungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden. Eine eigene biometrische Zeiterfassung führt Klacks nicht."
+        "title": "Datenhaltung im eigenen Haus (PDPA)",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Ihre sensiblen Personal- und Planungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden (bei der KI-Nutzung auf Wunsch mit lokalem Modell). Eine eigene biometrische Zeiterfassung führt Klacks nicht."
       },
       {
         "icon": "smart_toy",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; das 36-Stunden-Wochenlimit und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; das 36-Stunden-Wochenlimit wird dabei genauso live geprüft und Zeitzuschläge werden genauso live als Stunden ausgewiesen wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks das 36-Stunden-Limit, die Überstundensätze und PDPA-konforme Speicherung automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks das 36-Stunden-Limit prüft, Zeitzuschläge als Stunden führt und Ihre Daten im eigenen Haus hält &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

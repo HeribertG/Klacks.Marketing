@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "För bevakningsbranschen (vartiointi) i Finland",
-    "titleHtml": "Varje post bemannad. <span class=\"text-secondary\">Varje natt korrekt planerad.</span>",
-    "subtitle": "Klacks bemannar objekt och ronder i bevakningsbranschens periodarbete (jaksotyö) utan luckor &mdash; med gränserna för nattarbete och löneförhöjningen i Bevakningsbranschens kollektivavtal (Vartiointialan TES) från 1.9.2026 automatiskt beaktade.",
+    "titleHtml": "Varje post bemannad. <span class=\"text-secondary\">Varje natt i överblick.</span>",
+    "subtitle": "Klacks bemannar objekt och ronder i bevakningsbranschens periodarbete (jaksotyö) utan luckor &mdash; med automatisk koll på gränserna för nattarbete; löneförhöjningen i Bevakningsbranschens kollektivavtal (Vartiointialan TES) från 1.9.2026 räknar din lönehantering av.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevy för ronder och objektbemanning i Finland",
     "screenshotLabel": "Tidslinje"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks finländska säkerhetsföretag",
-    "subtitle": "Från den bemannade posten till kollektivavtalshöjningen i tid &mdash; allt hänger ihop.",
+    "subtitle": "Från den bemannade posten till timunderlaget för TES-höjningen &mdash; allt hänger ihop.",
     "items": [
       { "icon": "shield", "title": "Objekt &amp; poster utan luckor", "text": "Varje post över alla objekt &mdash; Klacks visar varje öppen plats direkt och fyller den automatiskt om du vill." },
-      { "icon": "gavel", "title": "Periodarbete beräknas automatiskt", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den trappade övertidsersättningen: de första 18 övertidstimmarna med 50 %, därefter 100 %." },
-      { "icon": "bedtime", "title": "Gränserna för nattarbete hålls automatiskt", "text": "Klacks övervakar 8-timmarsgränsen vid belastande nattarbete och de högst 5 på varandra följande nattskiften &mdash; inklusive den efterföljande vilotiden." },
-      { "icon": "paid", "title": "Söndagstillägg &amp; kollektivavtalshöjning 2026 inlagda", "text": "Det lagstadgade 100-procentiga tillägget för söndags- och helgdagsarbete (§ 20) är inlagt, liksom höjningen av löner och tidstillägg med 2,5 % som gäller från 1.9.2026." },
+      { "icon": "gavel", "title": "Periodarbete i överblick", "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod; övertidstillägg trappar Klacks upp på dags- eller veckobasis som tidskrediter &mdash; periodarbetets trappa (de första 18 övertidstimmarna med 50 %, därefter 100 %) återger Klacks inte." },
+      { "icon": "bedtime", "title": "Gränserna för nattarbete övervakas automatiskt", "text": "Klacks övervakar 8-timmarsgränsen vid belastande nattarbete och de högst 5 på varandra följande nattskiften &mdash; inklusive den efterföljande vilotiden." },
+      { "icon": "paid", "title": "Söndagstillägg &amp; TES-höjning 2026", "text": "Det lagstadgade 100-procentiga tillägget för söndags- och helgdagsarbete (§ 20) kan läggas in som tidskredit; höjningen av löner och tillägg med 2,5 % som gäller från 1.9.2026 räknar din lönehantering av." },
       { "icon": "route", "title": "Ronder optimerade", "text": "Vid mobila tjänster lägger Klacks patrullrutterna så att vägarna blir korta och intervallen hålls." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Bemanna nattskiftet för objekt Nord” räcker &mdash; Klacksy startar planeringen, Klacks kontrollerar tillgänglighet, periodtimmar och gränserna för nattarbete." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nattobjekt, periodtimmar, ett schema",
-    "text": "Klacks håller vid kontinuerliga nattobjekt koll på 8-timmarsgränsen och de högst 5 på varandra följande nattskiften, summerar periodtimmarna korrekt och bokför söndagstillägget automatiskt &mdash; redo för kollektivavtalshöjningen den 1.9.2026."
+    "text": "Klacks håller vid kontinuerliga nattobjekt koll på 8-timmarsgränsen och de högst 5 på varandra följande nattskiften, summerar periodtimmarna och skriver gott söndagstillägget automatiskt som tidskredit &mdash; timunderlaget för TES-höjningen den 1.9.2026 levererar Klacks till din lönehantering."
   },
   "showRoutePlanning": true,
   "cta": {

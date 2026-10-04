@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Vaktselskaper in Norwegen",
-    "titleHtml": "Jeder Posten besetzt, <span class=\"text-secondary\">jeder Zuschlag korrekt.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit dem neuen Vekteroverenskomsten-Tarif 2026-2028 und der Überstundenschwelle für Teilzeit- und Vollzeitkräfte als konfigurierbare Werte hinterlegt. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben.",
+    "titleHtml": "Jeder Posten im Plan, <span class=\"text-secondary\">jeder Zuschlag im Blick.</span>",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit der Überstundenschwelle für Teilzeit- und Vollzeitkräfte als konfigurierbarem Wert und der Stundenbasis für den neuen Vekteroverenskomsten-Tarif 2026-2028. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung im norwegischen Sicherheitsgewerbe",
     "screenshotLabel": "Timeline"
@@ -20,11 +20,11 @@
   },
   "solutions": {
     "title": "Wie Klacks norwegische Vaktselskaper entlastet",
-    "subtitle": "Vom besetzten Posten bis zur korrekten Überstundenregel &mdash; alles greift ineinander.",
+    "subtitle": "Vom besetzten Posten bis zur Überstundenregel &mdash; alles greift ineinander.",
     "items": [
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
-      { "icon": "payments", "title": "Neuer Tarif korrekt hinterlegt", "text": "Die Grundlohnerhöhung von 10,50 NOK/Stunde rückwirkend ab 1. April 2026 und der auf 14,50 NOK/Stunde angehobene Fagbrev-Zuschlag aus dem Vekteroverenskomsten 2026-2028 lassen sich in Klacks als aktuelle Werte hinterlegen &mdash; auf Wunsch als vorkonfigurierbares Regel-Set pro Tarif importierbar, wobei eigene Anpassungen bei einem erneuten Import erhalten bleiben." },
-      { "icon": "gavel", "title": "Teilzeit-/Vollzeit-Überstundenschwelle konfigurierbar abgebildet", "text": "Die unterschiedliche Zuschlagsschwelle zwischen merarbeid einer Teilzeitkraft (bis zur regulären Vollzeit-Arbeitszeit) und zuschlagspflichtiger Überstunde einer Vollzeitkraft bildet Klacks über konfigurierbare Grenzwerte ab &mdash; bei Überschreitung warnt das System, auf Wunsch blockiert es den Verstoß hart und verlangt eine dokumentierte Vorgesetzten-Freigabe." },
+      { "icon": "payments", "title": "Neuer Tarif: Stundenbasis", "text": "Die Grundlohnerhöhung von 10,50 NOK/Stunde rückwirkend ab 1. April 2026 und der auf 14,50 NOK/Stunde angehobene Fagbrev-Zuschlag aus dem Vekteroverenskomsten 2026-2028 rechnet Ihre Lohnbuchhaltung ab; Klacks liefert dafür die Stundenbasis. Zeitzuschläge lassen sich auf Wunsch als vorkonfigurierbares Regel-Set pro Tarif importieren, wobei eigene Anpassungen bei einem erneuten Import erhalten bleiben." },
+      { "icon": "gavel", "title": "Teilzeit-/Vollzeit-Überstundenschwelle konfigurierbar abgebildet", "text": "Die unterschiedliche Zuschlagsschwelle zwischen merarbeid einer Teilzeitkraft (bis zur regulären Vollzeit-Arbeitszeit) und zuschlagspflichtiger Überstunde einer Vollzeitkraft bildet Klacks über konfigurierbare Grenzwerte ab &mdash; bei Überschreitung warnt das System, auf Wunsch blockiert es den Verstoß in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft die Verfügbarkeit und warnt bei erreichten Dienstplan-Grenzen." },
       { "icon": "bolt", "title": "Ausfälle in Minuten ersetzt", "text": "Fällt ein Posten aus, zeigt Klacks sofort qualifizierten, verfügbaren Ersatz &mdash; ohne den ganzen Plan zu kippen." }
@@ -32,8 +32,8 @@
   },
   "example": {
     "eyebrow": "Konkret",
-    "title": "Neuer Tarif, richtig verrechnet",
-    "text": "Klacks wendet die rückwirkende Grundlohnerhöhung von 10,50 NOK/Stunde ab 1. April 2026 automatisch auf alle betroffenen Schichten an und bildet gleichzeitig die unterschiedliche Zuschlagsschwelle zwischen merarbeid einer Teilzeitkraft und zuschlagspflichtiger Überstunde einer Vollzeitkraft über konfigurierbare Grenzwerte ab &mdash; ohne Nachrechnen von Hand."
+    "title": "Neuer Tarif, saubere Stundenbasis",
+    "text": "Klacks liefert die Stunden aller betroffenen Schichten als Basis für die rückwirkende Grundlohnerhöhung von 10,50 NOK/Stunde ab 1. April 2026, die Ihre Lohnbuchhaltung abrechnet, und bildet gleichzeitig die unterschiedliche Zuschlagsschwelle zwischen merarbeid einer Teilzeitkraft und zuschlagspflichtiger Überstunde einer Vollzeitkraft über konfigurierbare Grenzwerte ab &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For Home Support &amp; home care in Ireland",
     "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
-    "subtitle": "Klacks plans visits and routes automatically &mdash; including travel time between clients as working time under the CJEU Tyco line of case law and the requirements of the HSE Home Support Authorisation Scheme. Installed on your premises, so patient data never leaves your organisation.",
+    "subtitle": "Klacks plans visits and routes automatically &mdash; with a fixed travel-time value per visit for travel time between clients (CJEU Tyco line of case law) as a planning basis for the HSE Home Support Authorisation Scheme. Installed on your premises, so patient data never leaves your organisation.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for route planning in home care in Ireland",
     "screenshotLabel": "Timeline"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "How Klacks takes the load off home care in Ireland",
-    "subtitle": "From automatic routing to correct travel-time recording &mdash; it all fits together.",
+    "subtitle": "From automatic routing to documented travel time &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Routes optimised automatically", "text": "Klacks lays out visit routes so that journeys stay short and time windows are kept &mdash; whether by car, bike or on foot." },
-      { "icon": "schedule", "title": "Travel time correctly recorded as working time", "text": "In line with the Tyco ruling, journeys between clients and, for staff with no fixed place of work, also the first and last journey count as working time &mdash; in Klacks, any travel time you record for this counts as working time. Klacks does not automatically distinguish between staff with and without a fixed place of work." },
-      { "icon": "payments", "title": "HSE remuneration kept in view", "text": "Klacks supports tracking the Living Wage obligation and travel-time remuneration under the 2023 HSE Home Support Authorisation Scheme." },
-      { "icon": "verified", "title": "Qualifications taken into account automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all. On request, Klacks can fully block assignment once a required qualification has expired &mdash; only staff with a valid qualification are scheduled." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data never leaves your organisation &mdash; not even for the AI." },
+      { "icon": "schedule", "title": "Travel time stored as working time", "text": "In line with the Tyco ruling, journeys between clients and, for staff with no fixed place of work, also the first and last journey count as working time &mdash; in Klacks, you set up a fixed travel-time value per visit for this, which counts as working time; Klacks does not calculate individual travel times. Klacks does not automatically distinguish between staff with and without a fixed place of work." },
+      { "icon": "payments", "title": "HSE remuneration: hours basis", "text": "Klacks does not calculate the Living Wage rate or the travel-time remuneration under the 2023 HSE Home Support Authorisation Scheme &mdash; Klacks provides the planned hours as a basis for your payroll records." },
+      { "icon": "verified", "title": "Qualifications taken into account automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all. If a required qualification is missing or has expired, Klacks refuses the assignment, in manual planning too &mdash; only staff with a valid qualification are scheduled." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data stays in your organisation &mdash; with a locally hosted AI model, for the AI too." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Fill the routes for tomorrow\" is enough. If someone calls in sick, Klacksy immediately suggests available cover." }
     ]
   },
   "example": {
     "eyebrow": "In practice",
-    "title": "Travel time, HSE pay, one plan",
-    "text": "Klacks counts the recorded travel time between clients &mdash; and, if you wish, the first and last journey &mdash; as working time, while keeping the requirements of the HSE Home Support Authorisation Scheme in view &mdash; no manual recalculating required."
+    "title": "Travel time, HSE scheme, one plan",
+    "text": "Klacks takes into account the fixed travel-time value per visit between clients &mdash; and, if you wish, for the first and last journey &mdash; as working time, and provides the hours basis for the requirements of the HSE Home Support Authorisation Scheme &mdash; no manual recalculating required."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Experience Klacks in your care organisation",
-    "text": "Try the Playground to see how Klacks handles travel time, routes and HSE requirements &mdash; or install it directly on your own infrastructure. No license fees and without registration."
+    "text": "Try the Playground to see how Klacks plans routes and takes travel time into account as working time &mdash; or install it directly on your own infrastructure. No license fees and without registration."
   }
 }

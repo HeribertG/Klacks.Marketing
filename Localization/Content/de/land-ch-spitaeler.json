@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Spitäler &amp; Kliniken in der Schweiz",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen, Pikettdienste und Assistenzarzt-Stunden lückenlos &mdash; mit korrekt erfasster Präsenz- und Rufbereitschaftszeit. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen, Pikettdienste und Assistenzarzt-Stunden lückenlos &mdash; mit Präsenz- und Rufpikett als eigenen Dienstarten. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Schweizer Spitäler",
     "screenshotLabel": "Dienstplan"
@@ -42,7 +42,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Schweizer Spitäler entlastet",
-    "subtitle": "Von der korrekten Pikett-Erfassung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
+    "subtitle": "Von der Pikett-Planung bis zur 24/7-Abdeckung &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "schedule",
@@ -52,12 +52,12 @@
       {
         "icon": "gavel",
         "title": "Assistenzarzt-Stunden automatisch überwacht",
-        "text": "Klacks überwacht die 50-Stunden-Wochengrenze laufend und macht Überschreitungen sofort sichtbar &mdash; auf Wunsch blockiert Klacks die Überschreitung hart, ein neuer Verstoss lässt sich dann nur mit dokumentierter Vorgesetzten-Freigabe speichern. Die 140-Stunden-Jahresgrenze für Überzeit lässt sich als Referenzwert hinterlegen."
+        "text": "Klacks überwacht die 50-Stunden-Wochengrenze laufend und macht Überschreitungen sofort sichtbar &mdash; auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart, bei manueller Planung bleibt es bei der Warnung. Die 140-Stunden-Jahresgrenze für Überzeit lässt sich als Referenzwert hinterlegen."
       },
       {
         "icon": "call",
-        "title": "Pikett getrennt erfasst",
-        "text": "Klacks erfasst Präsenzpikett im Haus und Pikett zuhause getrennt &mdash; als eigene, konfigurierbare Dienst- oder Abwesenheitsarten."
+        "title": "Pikett getrennt geplant",
+        "text": "Präsenzpikett im Haus und Pikett zuhause bilden Sie in Klacks getrennt ab &mdash; als eigene, konfigurierbare Dienst- oder Abwesenheitsarten; die unterschiedliche Anrechnung als Arbeitszeit rechnet Klacks nicht automatisch."
       },
       {
         "icon": "verified",
@@ -67,7 +67,7 @@
       {
         "icon": "shield_lock",
         "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auch nicht zur KI."
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI."
       },
       {
         "icon": "smart_toy",
@@ -84,7 +84,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenzarzt-Rotation und Pikett, ein Plan",
-    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, führt Präsenz- und Rufpikett getrennt und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Einen Mindest-Vorlauf für die Dienstplan-Publikation (z. B. zwei Wochen) hinterlegen Sie schon heute; Klacks berechnet daraus, bis wann der Plan fertig sein muss &mdash; sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks behält die 50-Stunden-Grenze im Blick, hält die jährliche Überzeitgrenze als Referenzwert fest, bildet Präsenz- und Rufpikett als getrennte Dienstarten ab und zeigt der Stationsleitung frühzeitig, wo es eng wird &mdash; auch auf dem Weg zu Stufenmodellen wie 42+4. Einen Mindest-Vorlauf für die Dienstplan-Publikation (z. B. zwei Wochen) hinterlegen Sie schon heute; Klacks berechnet daraus, bis wann der Plan fertig sein muss &mdash; sobald das BGAP für das Pflegepersonal in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": false,
   "cta": {

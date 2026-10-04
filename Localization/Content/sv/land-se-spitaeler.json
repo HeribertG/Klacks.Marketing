@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "För sjukhus &amp; kliniker i Sverige",
-    "titleHtml": "Scheman som <span class=\"text-secondary\">håller 13-timmarsgränsen och jourpassen.</span>",
-    "subtitle": "Klacks övervakar automatiskt den ordinarie 13-timmarsgränsen, stödjer planeringen av kombinerade arbete-jour-pass på upp till 20 timmar och markerar viktigare schemaändringar enligt MBL-förhandlingsskyldigheten. Installerat hos er, så att patientdata aldrig lämnar er verksamhet.",
+    "titleHtml": "Scheman som <span class=\"text-secondary\">håller koll på 13-timmarsgränsen och de långa passen.</span>",
+    "subtitle": "Klacks övervakar automatiskt den ordinarie 13-timmarsgränsen och stödjer planeringen av långa pass på upp till 20 timmar. MBL-förhandlingsskyldigheten vid viktigare schemaändringar ligger kvar hos er. Installerat hos er, så att patientdata inte behöver lämna er verksamhet &mdash; på önskemål med lokalt hostad AI-modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaraster för svenska sjukhus och kliniker",
     "screenshotLabel": "Schema"
@@ -20,24 +20,24 @@
   },
   "solutions": {
     "title": "Så avlastar Klacks svenska kliniker",
-    "subtitle": "Från 13-timmarsgränsen till den dokumenterade schemaändringen &mdash; allt hänger ihop.",
+    "subtitle": "Från 13-timmarsgränsen till 20-timmarspasset &mdash; allt hänger ihop.",
     "items": [
-      { "icon": "gavel", "title": "MBL-förhandlingsskyldighet under uppsikt", "text": "Klacks markerar tydligt viktigare förändringar i skiftmönstret, så att det i god tid syns när förhandlingsskyldigheten enligt MBL § 11 gentemot facket gäller." },
-      { "icon": "schedule", "title": "20-timmars jourpass planerbart", "text": "Kombinerade arbete-jour-pass planerar ni målinriktat i Klacks &mdash; kraven på minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00 och den sammanhängande kompenserande vilan håller ni samtidigt synligt i sikte." },
+      { "icon": "gavel", "title": "MBL-förhandlingsskyldigheten ligger kvar hos er", "text": "Om en ändring i skiftmönstret utlöser förhandling enligt MBL § 11 med facket bedömer ni själva; Klacks markerar inte sådana ändringar automatiskt." },
+      { "icon": "schedule", "title": "Långa pass med jour", "text": "Någon egen tidstyp för beredskap (jour) finns inte i Klacks: långa pass på upp till 20 timmar planerar ni som vanliga pass; uppdelningen i arbete och jourtid, kravet på minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00 samt den sammanhängande kompenserande vilan håller ni själva koll på." },
       { "icon": "timer", "title": "13-timmarsgräns per kalenderdag", "text": "Klacks varnar så snart fler än de inlagda 13 arbetstimmarna skulle planeras under en kalenderdag; jour och raster räknar Klacks då inte med, och en glidande 24-timmarsperiod stöder Klacks inte." },
-      { "icon": "payments", "title": "OB-tillägg efter tid på dygnet identifierade", "text": "Klacks känner automatiskt igen när ett natt- eller helgtillägg för obekväm arbetstid gäller, och tilldelar de inlagda, branschvanliga, stegvis differentierade tilläggsnivåerna till respektive pass." },
-      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar i huset", "text": "Klacks körs på er infrastruktur. Personal- och patientdata lämnar aldrig kliniken &mdash; inte ens till AI:n." },
+      { "icon": "payments", "title": "OB-tillägg efter tid på dygnet identifierade", "text": "Klacks känner automatiskt igen när ett natt- eller helgtillägg för obekväm arbetstid gäller, och tilldelar de inlagda, branschvanliga, stegvis differentierade tidstilläggsnivåerna till respektive pass." },
+      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar i huset", "text": "Klacks körs på er infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; med lokalt hostad AI-modell inte heller till AI:n." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll nattskiften på internmedicin för nästa vecka” räcker &mdash; Klacksy startar planeringen, Klacks tar hänsyn till kompetens och dygnsvila." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Jourpass och 13-timmarsgräns, en överblick",
-    "text": "Klacks visar om ett pass är planerat som ett kombinerat arbete-jour-pass med minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00, eller om det är ett ordinarie pass som omfattas av 13-timmarsgränsen, och varnar vid en förkortad vilotid &mdash; den kompenserande vilan planerar ni in med tydlig överblick &mdash; utan manuell efterräkning."
+    "text": "Klacks varnar när ett ordinarie pass överskrider 13-timmarsgränsen eller när vilotiden skulle förkortas &mdash; jourandelar och kompenserande vila noterar ni i schemanoteringarna &mdash; utan manuell efterräkning."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Upplev Klacks på er klinik",
-    "text": "Prova i Playground hur Klacks tar hand om jourpass, dygnsvila och tillägg &mdash; eller installera det direkt i er verksamhet. Inga licensavgifter och utan registrering."
+    "text": "Prova i Playground hur Klacks tar hand om 13-timmarsgränsen, dygnsvila och tillägg &mdash; eller installera det direkt i er verksamhet. Inga licensavgifter och utan registrering."
   }
 }

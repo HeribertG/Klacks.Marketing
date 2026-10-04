@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "security",
     "badge": "Til vagtselskaber i Danmark",
-    "titleHtml": "Hver post besat, <span class=\"text-secondary\">hver kortfristet omlægning undgået.</span>",
-    "subtitle": "Klacks besætter objekter og runderinger uden huller &mdash; og advarer, før en spontan omlægning udløser varskotillægget i Vagtoverenskomsten (DI Overenskomst II/Serviceforbundet-VSL, 2025-2028). Installeret hos jer, så jeres indsats- og kundedata bliver hos jer.",
+    "titleHtml": "Hver post besat, <span class=\"text-secondary\">kortfristede omlægninger i syne.</span>",
+    "subtitle": "Klacks besætter objekter og runderinger uden huller &mdash; og hjælper med at undgå kortfristede omlægninger, der udløser varskotillægget i Vagtoverenskomsten (DI Overenskomst II/Serviceforbundet-VSL, 2025-2028). Installeret hos jer, så jeres indsats- og kundedata bliver hos jer &mdash; efter ønske med en lokalt hostet AI-model.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for runderinger og objektbesætning i den danske vagtbranche",
     "screenshotLabel": "Timeline"
@@ -32,7 +32,7 @@
   },
   "solutions": {
     "title": "Sådan aflaster Klacks danske vagtselskaber",
-    "subtitle": "Fra den besatte post til den undgåede kortfristede omlægning &mdash; alt spiller sammen.",
+    "subtitle": "Fra den besatte post til timegrundlaget for lønbogholderiet &mdash; alt spiller sammen.",
     "items": [
       {
         "icon": "shield",
@@ -41,18 +41,18 @@
       },
       {
         "icon": "bolt",
-        "title": "Varskotillæg undgået i stedet for betalt",
-        "text": "Skal en vagt omlægges med kort varsel, kan tillægget på 525,29 DKK pr. døgn registreres som et fast beløb pr. vagt og tilknyttes de berørte vagter. Om en ændring sker med for kort varsel, tjekker Klacks ikke automatisk."
+        "title": "Varskotillæg: grundlag for lønbogholderiet",
+        "text": "Tillægget på 525,29 DKK pr. døgn ved kortfristet omlægning afregnes i jeres lønbogholderi; Klacks fører de berørte vagter og timer med til det. Om en ændring sker med for kort varsel, tjekker Klacks ikke automatisk."
       },
       {
         "icon": "payments",
-        "title": "Overenskomsttrin lagt ind med gyldighedsdato",
-        "text": "Øvrige tillægssatser i Vagtoverenskomsten 2025-2028 kan forudregistreres med gyldighedsdato; fritvalgsordningen, der stiger til 10% pr. 1. marts 2026, forbliver jeres lønbogholderis opgave, som Klacks leverer timegrundlaget for."
+        "title": "Tidstillæg lagt ind med gyldighedsdato",
+        "text": "Yderligere tidstillæg i Vagtoverenskomsten 2025-2028 kan forudregistreres med gyldighedsdato; kronebeløb som den særlige opsparing (fritvalg), der stiger til 10% pr. 1. marts 2026, forbliver jeres lønbogholderis opgave, som Klacks leverer timegrundlaget for."
       },
       {
         "icon": "verified",
-        "title": "Kun planlagt med gyldigt bevis",
-        "text": "Klacks viser, hvilket personale der aktuelt er kvalificeret, og advarer med en konfigurerbar varslingsfrist, før et bevis eller certifikat udløber. Efter ønske blokerer Klacks helt for tildeling ved udløbet obligatorisk dokumentation &mdash; der planlægges kun med personale, der har et gyldigt bevis."
+        "title": "Gyldighed af beviser i syne",
+        "text": "Klacks viser, hvilket personale der aktuelt er kvalificeret, og advarer med en konfigurerbar varslingsfrist, før et bevis eller certifikat udløber. Mangler en obligatorisk dokumentation, eller er den udløbet, afviser Klacks tildelingen, også ved manuel planlægning."
       },
       {
         "icon": "route",
@@ -69,11 +69,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Kortfristet omlægning, ét overblik",
-    "text": "Klacks viser med det samme, hvis en planlagt ændring ville udløse varskotillægget på 525,29 DKK pr. døgn, og foreslår en tidligere omlægning, der undgår tillægget &mdash; inklusive de satser, der justeres pr. 1. marts 2026."
+    "text": "Klacks fastholder de planlagte vagter og timer, som jeres lønbogholderi afregner varskotillægget på 525,29 DKK pr. døgn på grundlag af &mdash; hvis ændringer planlægges i god tid før vagten, undgås tillægget."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Oplev Klacks i jeres vagtselskab",
-    "text": "Prøv i playgrounden, hvordan Klacks overtager objekter, overenskomst og runderinger &mdash; eller installer det direkte på jeres egen infrastruktur. Ingen licensafgifter og uden registrering."
+    "text": "Prøv i playgrounden, hvordan Klacks overtager objekter og runderinger &mdash; eller installer det direkte på jeres egen infrastruktur. Ingen licensafgifter og uden registrering."
   }
 }

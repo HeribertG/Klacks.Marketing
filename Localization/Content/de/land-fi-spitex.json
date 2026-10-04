@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die ambulante Pflege (kotihoito) in Finnland",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Besuche und Touren in der Periodenarbeit (jaksotyö) der Kotihoito automatisch &mdash; inklusive der verkürzten 9-Stunden-Ruhezeit mit 14-Tage-Ausgleich und der Essenszeit, die während der Arbeit als Arbeitszeit zählt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Besuche und Touren in der Periodenarbeit (jaksotyö) der Kotihoito automatisch &mdash; inklusive der verkürzten 9-Stunden-Ruhezeit mit 14-Tage-Ausgleich und der Essenszeit, die während der Arbeit als Arbeitszeit zählt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Kotihoito in Finnland",
     "screenshotLabel": "Timeline"
@@ -24,16 +24,16 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Besuchsrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
       { "icon": "bedtime", "title": "9-Stunden-Ruhe &amp; 14-Tage-Ausgleich überwacht", "text": "Klacks erkennt jede Verkürzung der Tagesruhe auf 9 Stunden und behält die gesetzliche 14-Tage-Frist für den Ausgleich im Blick." },
-      { "icon": "restaurant", "title": "Essenszeit korrekt als Arbeitszeit gebucht", "text": "In Tourendiensten zählt Klacks die während der Periodenarbeit eingenommene Mahlzeit standardmäßig als bezahlte Arbeitszeit &mdash; statt sie fälschlich als unbezahlte Pause zu behandeln." },
+      { "icon": "restaurant", "title": "Essenszeit als Arbeitszeit gezählt", "text": "In Tourendiensten zählt Klacks die während der Periodenarbeit eingenommene Mahlzeit standardmäßig als Arbeitszeit &mdash; statt sie fälschlich als unbezahlte Pause zu behandeln." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Besuch wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Verkürzte Ruhe, Essenszeit, ein Plan",
-    "text": "Verkürzt eine Schicht die Tagesruhe auf 9 Stunden, plant Klacks den Ausgleich automatisch innerhalb von 14 Tagen ein &mdash; und zählt die Essenszeit in Tourendiensten standardmäßig als Arbeitszeit, statt als unbezahlte Pause."
+    "text": "Verkürzt eine Schicht die Tagesruhe auf 9 Stunden, behält Klacks den Ausgleich innerhalb von 14 Tagen im Blick &mdash; und zählt die Essenszeit in Tourendiensten standardmäßig als Arbeitszeit, statt als unbezahlte Pause."
   },
   "showRoutePlanning": true,
   "cta": {

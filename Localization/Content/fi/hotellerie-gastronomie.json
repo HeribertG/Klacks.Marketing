@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "Hotelli- &amp; ravintola-alalle",
     "titleHtml": "Aamu-, ilta- ja yövuoro &mdash; <span class=\"text-secondary\">oikeudenmukaisesti suunniteltuna.</span>",
-    "subtitle": "Klacks suunnittelee palvelun, keittiön ja kerroshoidon &mdash; jaettuine työvuoroineen, sunnuntai- ja pyhäpäivälisineen ja lakisääteisine lepoaikoineen, joita ei voi hiljaa kiertää. Kausipiikit ja poissaolot hoituvat suunnittelussa automaattisesti.",
+    "subtitle": "Klacks suunnittelee palvelun, keittiön ja kerroshoidon &mdash; jaettuine työvuoroineen, sunnuntai- ja pyhäpäivälisineen sekä lakisääteisten lepoaikojen tarkistuksella, joka tuo rikkomukset heti näkyviin. Kausipiikit ja poissaolot hoituvat suunnittelussa automaattisesti.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacksin aikajananäkymä hotelli- ja ravintola-alan työvuorolistoihin",
     "screenshotLabel": "Aikajana"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Jaetut työvuorot siististi suunniteltuina",
-        "text": "Klacks suunnittelee lounas- ja iltablokit niin, että vähimmäislepoajat ja päivän enimmäisajat toteutuvat &mdash; jokainen alitus näytetään välittömästi."
+        "text": "Klacks suunnittelee lounas- ja iltablokit ja tarkistaa ne vähimmäislepoaikoja ja päivän enimmäisaikoja vasten &mdash; jokainen alitus näytetään välittömästi."
       },
       {
         "icon": "timer",
         "title": "Lepoajat hallinnassa",
-        "text": "Lakisääteisiä lepoaikarajoja valvotaan reaaliajassa &mdash; rikkomukset näkyvät heti. Halutessanne Klacks estää ne johdonmukaisesti: estotilassa rikkomus tallentuu vain dokumentoidulla esimiehen hyväksynnällä."
+        "text": "Lakisääteisiä lepoaikarajoja tarkistetaan jatkuvasti &mdash; rikkomukset näkyvät heti. Oletuksena Klacks varoittaa; halutessanne voitte ottaa käyttöön estotilan automaattista suunnittelua varten (suunnitteluavustaja, ehdotukset, poissaolojen sijaistus)."
       },
       {
         "icon": "payments",
         "title": "Lisät automaattisesti",
-        "text": "Yö-, sunnuntai- ja pyhäpäivälisät Klacks laskee automaattisesti &mdash; maa- ja säännöstökohtaisesti määritettävissä, ilman manuaalista jälkitöitä palkanlaskennan valmistelussa."
+        "text": "Yö-, sunnuntai- ja pyhäpäivälisät Klacks kirjaa automaattisesti aikahyvityksinä &mdash; maa- ja säännöstökohtaisesti määritettävissä, perustana palkanlaskennalle."
       },
       {
         "icon": "badge",

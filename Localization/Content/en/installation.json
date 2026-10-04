@@ -1,11 +1,11 @@
 {
   "pageTitle": "Install Klacks: Guided Installer or Docker Compose with Your Country Package | Klacks",
-  "metaDescription": "Install Klacks on your own infrastructure: guided installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and surcharges. No license fees, open source, no registration.",
+  "metaDescription": "Install Klacks on your own infrastructure: guided installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and, where defined for your country, surcharges. No license fees, open source, no registration.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; No license fees &amp; open source",
     "titleHtml": "Run Klacks yourself &mdash; <span class=\"text-secondary\">on your own infrastructure.</span>",
-    "subtitle": "Two paths, one result: the guided installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules, surcharges and industry presets &mdash; no registration, no licence fees."
+    "subtitle": "Two paths, one result: the guided installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees."
   },
   "industry": {
     "eyebrow": "Country package",
@@ -52,7 +52,7 @@
   "profile": {
     "icon": "description",
     "title": "Profile only &mdash; for existing installations",
-    "text": "Already running Klacks? The profile (JSON) carries the country presets &mdash; public holidays, working-time rules, surcharges and industries &mdash; and is applied on an installation's first start. It is also the way to add another industry with its presets later.",
+    "text": "Already running Klacks? The profile (JSON) carries the country presets &mdash; public holidays, working-time rules, surcharges (where defined for the country) and industries &mdash; and is applied on an installation's first start. It is also the way to add another industry with its presets later.",
     "downloadLabel": "Download profile (JSON)"
   },
   "fallback": {
@@ -65,7 +65,7 @@
     "title": "Good to know",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "The complete source code is public on GitHub under the AGPL-3.0 &mdash; no licence fees, no vendor lock-in." },
-      { "icon": "storage", "title": "Data stays in-house", "text": "Klacks runs on your infrastructure. Staff and scheduling data never leave your server &mdash; there is no forced cloud." },
+      { "icon": "storage", "title": "Data stays in-house", "text": "Klacks runs on your infrastructure. Staff and scheduling data are stored on your server &mdash; there is no forced cloud. Only if you choose an external AI provider are requests sent to it; with a local model, everything stays in-house." },
       { "icon": "update", "title": "Updates", "text": "The installation pins the latest released version. An update service inside the stack applies newly released versions automatically." },
       { "icon": "lock", "title": "HTTPS from the start", "text": "The installer generates a self-signed certificate to get you started &mdash; you can switch to your own certificate at any time. Change the initial password right after the first login." }
     ]

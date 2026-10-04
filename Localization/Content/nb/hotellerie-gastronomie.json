@@ -4,7 +4,7 @@
     "badgeIcon": "restaurant",
     "badge": "For hotell &amp; restaurant",
     "titleHtml": "Tidlig-, kvelds-, nattvakt &mdash; <span class=\"text-secondary\">rettferdig planlagt.</span>",
-    "subtitle": "Klacks planlegger servering, kjøkken og etasje &mdash; med delte vakter, tillegg for søn- og helligdager og lovpålagt hviletid som ikke lar seg omgå i det stille. Sesongtopper og fravær fanges planleggingen opp automatisk.",
+    "subtitle": "Klacks planlegger servering, kjøkken og etasje &mdash; med delte vakter, tillegg for søn- og helligdager og en kontroll av lovpålagt hviletid som gjør brudd synlige umiddelbart. Sesongtopper og fravær fanges planleggingen opp automatisk.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for vaktplaner i hotell- og restaurantbransjen",
     "screenshotLabel": "Tidslinje"
@@ -37,17 +37,17 @@
       {
         "icon": "splitscreen",
         "title": "Delte vakter rent planlagt",
-        "text": "Klacks planlegger lunsj- og kveldsblokker slik at minste hviletid og maksimal daglig arbeidstid overholdes &mdash; enhver underkjøring gjøres straks synlig."
+        "text": "Klacks planlegger lunsj- og kveldsblokker og kontrollerer dem mot minste hviletid og maksimal daglig arbeidstid &mdash; enhver underkjøring gjøres straks synlig."
       },
       {
         "icon": "timer",
         "title": "Hviletid under oppsikt",
-        "text": "Lovpålagte hviletidsgrenser overvåkes i sanntid &mdash; brudd blir synlige med en gang. På ønske blokkerer Klacks dem konsekvent: I blokkeringsmodus kan et brudd bare lagres med dokumentert godkjenning fra overordnet."
+        "text": "Lovpålagte hviletidsgrenser kontrolleres fortløpende &mdash; brudd blir synlige med en gang. Som standard varsler Klacks; på ønske kan en blokkeringsmodus slås på for den automatiske planleggingen (planleggingsassistent, forslag, fraværserstatning)."
       },
       {
         "icon": "payments",
         "title": "Tillegg automatisk",
-        "text": "Tillegg for natt, søn- og helligdager regner Klacks ut automatisk &mdash; konfigurerbart per land og regelverk, uten manuelt etterarbeid ved lønnsforberedelsen."
+        "text": "Tillegg for natt, søn- og helligdager skriver Klacks automatisk inn som timegodskriving &mdash; konfigurerbart per land og regelverk, som grunnlag for lønnsregnskapet."
       },
       {
         "icon": "badge",

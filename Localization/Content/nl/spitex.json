@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Voor thuiszorg &amp; ambulante zorg",
     "titleHtml": "Meer tijd voor zorg, <span class=\"text-secondary\">minder voor routeplanning.</span>",
-    "subtitle": "Klacks plant inzetten en routes automatisch &mdash; met de juiste kwalificaties, correcte toeslagen en de feestdagen van uw kanton. Bij u geïnstalleerd, zodat patiëntgegevens uw organisatie nooit verlaten.",
+    "subtitle": "Klacks plant inzetten en routes automatisch &mdash; met de juiste kwalificaties, configureerbare toeslagen en de feestdagen van uw kanton. Bij u geïnstalleerd; met een lokaal AI-model verlaten patiëntgegevens uw organisatie niet.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor de routeplanning van de thuiszorg",
     "screenshotLabel": "Tijdlijn",
@@ -25,8 +25,8 @@
     "items": [
       { "icon": "route", "title": "Routes automatisch geoptimaliseerd", "text": "Klacks stelt inzetroutes zo samen dat afstanden kort blijven en tijdvensters worden gehaald &mdash; met de auto, fiets of te voet." },
       { "icon": "verified", "title": "Kwalificaties automatisch meegewogen", "text": "Elke inzet wordt alleen toegewezen aan personen met de juiste kwalificatie &mdash; volledig zonder handmatige controle." },
-      { "icon": "event_available", "title": "Toeslagen &amp; feestdagen van uw kanton", "text": "Nacht-, weekend- en feestdagtoeslagen zijn vooraf geconfigureerd &mdash; tot op kanton- en gemeenteniveau, vrij aan te passen." },
-      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens blijven in huis", "text": "Klacks draait op uw eigen infrastructuur. Patiëntgegevens verlaten uw organisatie niet &mdash; ook niet richting de AI." },
+      { "icon": "event_available", "title": "Feestdagen van uw kanton &amp; toeslagen", "text": "Feestdagen zijn vooraf geconfigureerd &mdash; tot op kanton- en gemeenteniveau. Nacht-, weekend- en feestdagtoeslagen legt u zelf vast als urentegoeden, alles vrij aan te passen." },
+      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens in huis", "text": "Klacks draait op uw eigen infrastructuur. Patiëntgegevens staan op uw servers &mdash; met een lokaal AI-model verlaat ook bij de AI niets uw organisatie." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Vul de routes voor morgen in” volstaat. Bij ziekte stelt Klacksy meteen beschikbare vervanging voor." },
       { "icon": "event_busy", "title": "Uitval snel opgevangen", "text": "Valt iemand uit, dan toont Klacks direct wie gekwalificeerd en beschikbaar is &mdash; zonder het hele rooster overhoop te halen." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Concreet",
     "title": "Thuiszorg Genève, tweetalig, met inzetten in Vaud",
-    "text": "Franse interface, feestdagen van Genève en Vaud, thuiszorgtoeslagen &mdash; in Klacks geconfigureerd, niet nageprogrammeerd. Routes worden automatisch geoptimaliseerd, kwalificaties gecontroleerd, en Klacksy helpt bij last-minute wijzigingen. Patiëntgegevens blijven daarbij volledig in huis."
+    "text": "Franse interface, feestdagen van Genève en Vaud, thuiszorgtoeslagen &mdash; in Klacks geconfigureerd, niet nageprogrammeerd. Routes worden automatisch geoptimaliseerd, kwalificaties gecontroleerd, en Klacksy helpt bij last-minute wijzigingen. Patiëntgegevens staan daarbij op uw servers; met een lokaal AI-model blijft alles in huis."
   },
   "showRoutePlanning": true,
   "cta": {

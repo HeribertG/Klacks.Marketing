@@ -47,7 +47,7 @@
   "details.items.3.text": "Klacks 支持 25 种语言（4 种核心语言 + 21 种插件语言）。因此，Klacks 也适用于国际化团队。",
 
   "details.items.4.icon": "public",
-  "details.items.4.title": "合规性：预配置 30 多个国家/地区",
+  "details.items.4.title": "合规性：预配置 30 个国家/地区",
   "details.items.4.text": "Klacks 提供 30 个国家/地区的节假日日历和工作时间规则。通过众多自定义规则参数，可进行行业特定的调整。",
 
   "details.items.5.icon": "category",
@@ -60,7 +60,7 @@
   "honest.items.1": "不提供实时 GPS 追踪——Klacks 会通过预测性优化来规划路线，但不会实时追踪员工位置。",
   "honest.items.2": "不提供打卡机 / 自助终端 / NFC 终端——Klacks 专注于排班，而非考勤。",
   "honest.items.3": "并非真正的工资核算——Klacks 仅导出格式化数据（例如 DATEV），但不进行结算。",
-  "honest.items.4": "默认仅发出警告——Klacks 会在违反工时规定时发出警告；可按规则类型启用强制阻止，此时新的违规只有在具备上级批准记录的情况下才能保存。",
+  "honest.items.4": "默认仅发出警告——Klacks 会在违反工时规定时发出警告；可按规则类型启用阻止模式，它在自动排班（排班向导、建议、缺勤替补）中生效；手动排班仍仅发出警告。",
   "honest.extend": "生物识别和实时 GPS 原则上可以通过扩展（插件）来补充。目前还没有现成的相关扩展。",
 
   "cta.title": "亲自体验一下？",

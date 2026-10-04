@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Pour l'hôtellerie &amp; la restauration",
-    "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés en toute sécurité selon la CCN HCR.</span>",
-    "subtitle": "Klacks planifie le service, la cuisine et les étages selon la convention collective de branche généralement obligatoire CCN HCR &mdash; y compris les maxima journaliers par catégorie (cuisiniers 11 h, réception/veilleur de nuit 12 h), la plage de nuit de 22 h à 7 h et deux jours de repos par semaine.",
+    "titleHtml": "Services du matin, du soir, de nuit &mdash; <span class=\"text-secondary\">planifiés selon les limites de la CCN HCR.</span>",
+    "subtitle": "Klacks planifie le service, la cuisine et les étages et vérifie par rapport aux limites de la convention collective de branche généralement obligatoire CCN HCR &mdash; par exemple les maxima journaliers par catégorie (cuisiniers 11 h, réception/veilleur de nuit 12 h), la plage de nuit de 22 h à 7 h et deux jours de repos par semaine.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les plannings dans l'hôtellerie et la restauration",
     "screenshotLabel": "Chronologie"
@@ -37,12 +37,12 @@
       {
         "icon": "schedule",
         "title": "Limites HCR par catégorie",
-        "text": "Klacks connaît les maxima journaliers de la CCN HCR par fonction &mdash; 11 h, 11h30 ou 12 h &mdash; et signale immédiatement chaque dépassement, avant que le planning ne soit publié."
+        "text": "Les maxima journaliers de la CCN HCR par fonction &mdash; 11 h, 11h30 ou 12 h &mdash; vous les enregistrez comme règle ; Klacks signale immédiatement chaque dépassement, avant que le planning ne soit publié."
       },
       {
         "icon": "hotel",
         "title": "Repos de saison avec compensation",
-        "text": "La réduction saisonnière à 10 heures de repos peut être enregistrée comme règle &mdash; Klacks surveille automatiquement la compensation prescrite de 20 minutes par application."
+        "text": "La réduction saisonnière à 10 heures de repos peut être enregistrée comme règle &mdash; la compensation prescrite de 20 minutes par application n'est pas suivie par Klacks de manière autonome."
       },
       {
         "icon": "event_available",
@@ -52,7 +52,7 @@
       {
         "icon": "nights_stay",
         "title": "Plage de nuit de 22 h à 7 h",
-        "text": "La plage de nuit HCR de 22h00 à 7h00 est enregistrée &mdash; le travail de nuit est correctement détecté et déclaré, sans retraitement manuel lors de la préparation des salaires."
+        "text": "La plage de nuit HCR de 22h00 à 7h00 est enregistrée &mdash; le travail de nuit est détecté et déclaré &mdash; comme base d'heures pour votre préparation des salaires."
       },
       {
         "icon": "smart_toy",
