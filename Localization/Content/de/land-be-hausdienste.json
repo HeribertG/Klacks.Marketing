@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in Belgien (PC 121)",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">sauber dokumentiert.</span>",
-    "subtitle": "Klacks dokumentiert jeden Objekteinsatz lückenlos, liefert die Kilometerdaten für die Mobilitätspauschale zwischen Objekten und behält die sektorale Teilzeit-Untergrenze von 18h pro Woche im Blick.",
+    "subtitle": "Klacks dokumentiert jeden Objekteinsatz lückenlos, zeigt für optimierte Touren die geplante Strecke zwischen Objekten in Kilometern und berücksichtigt die sektorale Teilzeit-Untergrenze von 18h pro Woche als Mindeststunden im Vertrag.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für belgische Reinigungsteams und Objekte",
     "screenshotLabel": "Dienstplan"
@@ -23,21 +23,21 @@
     "subtitle": "Von der lückenlosen Anwesenheitserfassung bis zur Mobilitätspauschale &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "fingerprint", "title": "Anwesenheit elektronisch &amp; lückenlos erfasst", "text": "Jeder Objekteinsatz wird elektronisch dokumentiert und lückenlos nachvollziehbar &mdash; die Planungsgrundlage für die von der Programmawet seit 2024 geforderte Anwesenheitserfassung. Auch Einsätze mit privatem Smartphone hält Klacks fest, als Basis für die € 7,00/Monat-Pauschale in Ihrer Lohnbuchhaltung." },
-      { "icon": "directions_car", "title": "Kilometerdaten für die Mobilitätspauschale erfasst", "text": "Klacks erfasst automatisch die gefahrenen Kilometer zwischen Objekten am selben Tag &mdash; die Grundlage, die Ihre Lohnbuchhaltung für die Pauschale von € 0,1075/km (mindestens € 2,15 pro Fahrt) braucht." },
-      { "icon": "schedule", "title": "Mindestdauern automatisch überwacht", "text": "Klacks behält die 1-Stunden-Mindestdauer für Kategorie 1A/1B ebenso wie die sektorale Teilzeit-Untergrenze von 18h pro Woche bzw. 3h pro Tag im Blick und warnt bei Unterschreitung." },
+      { "icon": "fingerprint", "title": "Anwesenheit elektronisch &amp; lückenlos erfasst", "text": "Jeder Objekteinsatz wird elektronisch dokumentiert und lückenlos nachvollziehbar &mdash; die Planungsgrundlage für die von der Programmawet seit 2024 geforderte Anwesenheitserfassung." },
+      { "icon": "directions_car", "title": "Geplante Tourstrecke in Kilometern", "text": "Für optimierte Touren zeigt Klacks die geplante Strecke zwischen den Objekten in Kilometern, auch im Routen-PDF. Tatsächlich gefahrene Kilometer erfasst Klacks nicht automatisch &mdash; die Pauschale von € 0,1075/km (mindestens € 2,15 pro Fahrt) rechnet Ihre Lohnbuchhaltung." },
+      { "icon": "schedule", "title": "Teilzeit-Untergrenze im Vertrag", "text": "Die sektorale Teilzeit-Untergrenze von 18h pro Woche hinterlegen Sie als Mindeststunden im Vertrag; die automatische Planung berücksichtigt sie. Eine Warnung bei Unterschreitung gibt es nicht, und die 1-Stunden-Mindestdauer für Kategorie 1A/1B sowie die 3h pro Tag prüft Klacks nicht." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen, Aushilfen und Ferien: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Bezirk für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route, Team und Anwesenheitserfassung." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Objekte im Bezirk für morgen früh“ genügt &mdash; Klacksy startet die Planung, Klacks optimiert Route und Team." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Objektwechsel, Mobilitätspauschale, ein Plan",
-    "text": "Klacks erfasst jeden Objekteinsatz elektronisch, liefert die Kilometerdaten für die Mobilitätspauschale zwischen den Objekten und behält die 18h-Teilzeit-Untergrenze im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erfasst jeden Objekteinsatz elektronisch, zeigt die geplante Tourstrecke zwischen den Objekten in Kilometern und berücksichtigt die 18h-Teilzeit-Untergrenze als Mindeststunden im Vertrag &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrem Reinigungsbetrieb erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Anwesenheitserfassung, Kilometerdaten für die Mobilitätspauschale und Teilzeit-Untergrenzen im Blick behält &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Objekteinsätze dokumentiert und Touren samt Strecke plant &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

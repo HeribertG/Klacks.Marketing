@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Voor huis- &amp; schoonmaakdiensten in België (PC 121)",
     "titleHtml": "Elk object <span class=\"text-secondary\">netjes gedocumenteerd.</span>",
-    "subtitle": "Klacks documenteert elke objectinzet sluitend, levert de kilometergegevens voor de mobiliteitsvergoeding tussen objecten en houdt de sectorale deeltijdondergrens van 18u per week in het oog.",
+    "subtitle": "Klacks documenteert elke objectinzet sluitend, toont voor geoptimaliseerde routes de geplande afstand tussen objecten in kilometers en houdt rekening met de sectorale deeltijdondergrens van 18u per week als minimumuren in het contract.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosterraster voor Belgische schoonmaakteams en objecten",
     "screenshotLabel": "Dienstrooster"
@@ -23,21 +23,21 @@
     "subtitle": "Van de volledige aanwezigheidsregistratie tot de mobiliteitsvergoeding &mdash; alles grijpt op elkaar in.",
     "items": [
       { "icon": "route", "title": "Objectroutes geoptimaliseerd", "text": "Klacks legt de volgorde van de objecten zo vast dat afstanden kort blijven &mdash; met de auto, fiets of te voet." },
-      { "icon": "fingerprint", "title": "Aanwezigheid elektronisch &amp; volledig geregistreerd", "text": "Elke objectinzet wordt elektronisch en sluitend gedocumenteerd &mdash; de planningsbasis voor de aanwezigheidsregistratie die de Programmawet sinds 2024 vereist. Ook inzetten met een privésmartphone legt Klacks vast, als basis voor de forfait van € 7,00/maand in uw loonadministratie." },
-      { "icon": "directions_car", "title": "Kilometergegevens voor mobiliteitsvergoeding geregistreerd", "text": "Klacks registreert automatisch de afgelegde kilometers tussen objecten op dezelfde dag &mdash; de basis die uw loonadministratie nodig heeft voor het forfait van € 0,1075/km (minimaal € 2,15 per rit)." },
-      { "icon": "schedule", "title": "Minimumduren automatisch bewaakt", "text": "Klacks houdt de 1-uurs minimumduur voor categorie 1A/1B evenals de sectorale deeltijdondergrens van 18u per week of 3u per dag in het oog en waarschuwt bij onderschrijding." },
+      { "icon": "fingerprint", "title": "Aanwezigheid elektronisch &amp; volledig geregistreerd", "text": "Elke objectinzet wordt elektronisch en sluitend gedocumenteerd &mdash; de planningsbasis voor de aanwezigheidsregistratie die de Programmawet sinds 2024 vereist." },
+      { "icon": "directions_car", "title": "Geplande routeafstand in kilometers", "text": "Voor geoptimaliseerde routes toont Klacks de geplande afstand tussen de objecten in kilometers, ook in de route-pdf. Werkelijk afgelegde kilometers registreert Klacks niet automatisch &mdash; het forfait van € 0,1075/km (minimaal € 2,15 per rit) berekent uw loonadministratie." },
+      { "icon": "schedule", "title": "Deeltijdondergrens in het contract", "text": "De sectorale deeltijdondergrens van 18u per week legt u vast als minimumuren in het contract; de automatische planning houdt er rekening mee. Een waarschuwing bij onderschrijding is er niet, en de 1-uurs minimumduur voor categorie 1A/1B en de 3u per dag controleert Klacks niet." },
       { "icon": "groups", "title": "Teams flexibel ingedeeld", "text": "Wisselende bezettingen, invalkrachten en vakantie: Klacks houdt het overzicht en stelt passende indelingen voor." },
-      { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Plan de objecten in het district voor morgenvroeg” volstaat &mdash; Klacksy start de planning, Klacks optimaliseert route, team en aanwezigheidsregistratie." }
+      { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Plan de objecten in het district voor morgenvroeg” volstaat &mdash; Klacksy start de planning, Klacks optimaliseert route en team." }
     ]
   },
   "example": {
     "eyebrow": "Concreet",
     "title": "Objectwissel, mobiliteitsvergoeding, één plan",
-    "text": "Klacks registreert elke objectinzet elektronisch, levert de kilometergegevens voor de mobiliteitsvergoeding tussen de objecten en houdt de 18u-deeltijdondergrens in het oog &mdash; zonder handmatig narekenen."
+    "text": "Klacks registreert elke objectinzet elektronisch, toont de geplande routeafstand tussen de objecten in kilometers en houdt rekening met de 18u-deeltijdondergrens als minimumuren in het contract &mdash; zonder handmatig narekenen."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Ervaar Klacks in uw schoonmaakbedrijf",
-    "text": "Probeer in de playground hoe Klacks aanwezigheidsregistratie, kilometergegevens voor de mobiliteitsvergoeding en deeltijdondergrenzen in het oog houdt &mdash; geen licentiekosten en zonder registratie."
+    "text": "Probeer in de playground hoe Klacks objectinzetten documenteert en routes inclusief afstand plant &mdash; geen licentiekosten en zonder registratie."
   }
 }

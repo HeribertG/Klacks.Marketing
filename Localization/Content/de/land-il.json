@@ -4,7 +4,7 @@
     "badgeIcon": "fact_check",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; lückenlose Zeitdokumentation für Amendment 24",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie den Nachweis in der Hand haben.</span>",
-    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und behält die wöchentliche Sabbatruhe im Blick &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. Das liefert die dokumentierte Zeitbasis, um der Beweislast nach Amendment 24 im Streitfall etwas entgegenzusetzen, statt der gesetzlichen 60-Stunden-Vermutung hilflos ausgeliefert zu sein.",
+    "subtitle": "Klacks führt ein lückenloses Arbeitszeitbuch (פנקס שעות עבודה), berechnet Überstundenzuschläge korrekt und behält den freien Tag pro Woche im Blick &mdash; bei Ihnen installiert, Open Source, mit dem KI-Modell Ihrer Wahl. Das liefert die dokumentierte Zeitbasis, um der Beweislast nach Amendment 24 im Streitfall etwas entgegenzusetzen, statt der gesetzlichen 60-Stunden-Vermutung hilflos ausgeliefert zu sein.",
     "screenshotFile": "app-calendar-de.png",
     "screenshotAlt": "Klacks Kalenderansicht für Unternehmen in Israel",
     "screenshotLabel": "Kalender"
@@ -72,7 +72,7 @@
       {
         "icon": "synagogue",
         "title": "Sabbat- &amp; Wochenruhe automatisch geprüft",
-        "text": "Klacks erkennt, wenn ein Einsatz in die 36-stündige Wochenruhe fällt, weist auf die nötige Ministeriums-Genehmigung hin und bereitet den 150 %-Zuschlag samt Ersatzruhetag vor. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die 36-Stunden-Wochenruhe konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "text": "Klacks prüft, dass pro Woche mindestens ein freier Tag bleibt, und rechnet Wochenendarbeit mit dem hinterlegten 150 %-Zuschlag. Die durchgehende 36-Stunden-Wochenruhe, die nötige Ministeriums-Genehmigung und den Ersatzruhetag prüft Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Mindestzahl freier Tage konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "shield_lock",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Sabbat-Dienst und Überstunde, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn ein Einsatz in die Sabbat-Wochenruhe fällt oder die 8,6-Stunden-Schwelle überschreitet, und schlägt Genehmigungs-Hinweis, Zuschlag und Ersatzruhetag gleich vor &mdash; während im Hintergrund lückenlos das Arbeitszeitbuch für Amendment 24 mitläuft."
+    "text": "Klacks erkennt automatisch, wenn ein Einsatz auf das Wochenende fällt oder die 8,6-Stunden-Schwelle überschreitet, und rechnet den hinterlegten Zuschlag gleich mit &mdash; während im Hintergrund lückenlos das Arbeitszeitbuch für Amendment 24 mitläuft."
   },
   "showRoutePlanning": false,
   "cta": {

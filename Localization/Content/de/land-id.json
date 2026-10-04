@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; UU PDP-konforme Zeiterfassung",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks berechnet die vierstufige Überstunden-Zuschlagsformel aus PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit &mdash; auf Wunsch blockiert Klacks Verstöße hart &mdash; und läuft bei Ihnen installiert &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks berechnet die gestaffelten Überstundenzuschläge nach PP 35/2021 automatisch, wacht über das wöchentliche Überstundenlimit &mdash; auf Wunsch blockiert Klacks Verstöße hart &mdash; und läuft bei Ihnen installiert &mdash; damit sensible Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für indonesische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -67,7 +67,7 @@
       {
         "icon": "calculate",
         "title": "Progressive Zuschläge korrekt berechnet",
-        "text": "Klacks wendet die Stufen 1,5×/2,0×/3,0×/4,0× aus PP 35/2021 Pasal 31 automatisch an &mdash; mit der richtigen Tabelle für 5- oder 6-Tage-Betriebe und der Basis 1/173 des Monatslohns."
+        "text": "Klacks wendet für Werktage die Stufen 1,5× und 2,0× aus PP 35/2021 Pasal 31 automatisch an, für Ruhe- und Feiertage den hinterlegten Zuschlag. Die stundenweise Staffel 2,0×/3,0×/4,0× an Ruhetagen, die Tabelle für 5- oder 6-Tage-Betriebe und die Basis 1/173 des Monatslohns bildet Klacks nicht ab &mdash; das bleibt bei Ihrer Lohnabrechnung."
       },
       {
         "icon": "pause_circle",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Überstunde am Ruhetag, ein Blick",
-    "text": "Klacks erkennt automatisch, ob eine Überstunde am Werktag oder an einem Ruhetag anfällt, wendet die passende Stufe aus 1,5× bis 4,0× an und behält gleichzeitig das 18-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, ob eine Überstunde am Werktag oder an einem Ruhetag anfällt, wendet den hinterlegten Zuschlag an und behält gleichzeitig das 18-Stunden-Wochenlimit im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

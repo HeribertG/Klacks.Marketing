@@ -4,7 +4,7 @@
     "badgeIcon": "fact_check",
     "badge": "ITM-konforme Zeiterfassung &middot; Ruhezeit-Automatik &middot; Rumänien",
     "titleHtml": "Arbeitszeit, die <span class=\"text-secondary\">lückenlos nachweisbar ist.</span>",
-    "subtitle": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion (ITM) vorlegbar, ganz ohne biometrische Daten. Die wöchentliche Ruhezeit, der ICCJ-Zuschlag und die Überstunden-Fristen laufen automatisch mit.",
+    "subtitle": "Klacks hält Beginn und Ende jeder Schicht lückenlos fest &mdash; jederzeit auf Verlangen der Arbeitsinspektion (ITM) vorlegbar, ganz ohne biometrische Daten. Freie Tage pro Woche und Überstundenzuschläge laufen automatisch mit.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Rumänien",
     "screenshotLabel": "Dienstplan"
@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Wie Klacks rumänische Betriebe entlastet",
-    "subtitle": "Von der lückenlosen Zeiterfassung bis zum korrekten Ruhezeit-Zuschlag &mdash; alles greift ineinander.",
+    "subtitle": "Von der lückenlosen Zeiterfassung bis zu den freien Tagen pro Woche &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "fact_check",
@@ -71,13 +71,13 @@
       },
       {
         "icon": "event_repeat",
-        "title": "48-Stunden-Ruhezeit &amp; ICCJ-Zuschlag im Blick",
-        "text": "Klacks erkennt, wenn die wöchentliche Ruhezeit nicht an Samstag/Sonntag gewährt wird, und macht das für jede Person sichtbar. Für den gesetzlichen Sonderfall der kumulierten Ruhezeit nach bis zu 14 Tagen Dauerarbeit steht ein eigener, konfigurierbarer 150%-Zuschlag nach ICCJ Nr. 415/2025 zur Verfügung. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die Wochenruhe konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
+        "title": "Freie Tage pro Woche im Blick",
+        "text": "Klacks prüft, dass pro Woche die hinterlegte Zahl freier Tage bleibt, und macht Unterschreitungen für jede Person sichtbar. Ob die 48-stündige Wochenruhe an Samstag/Sonntag liegt, und den 150%-Zuschlag nach ICCJ Nr. 415/2025 für kumulierte Ruhezeit prüft bzw. berechnet Klacks nicht. Auf Wunsch blockiert Klacks einen neuen Verstoß gegen die freien Tage konsequent: Im Block-Modus lässt sich ein neuer Verstoß nur mit dokumentierter Vorgesetzten-Freigabe speichern (pro Regelart konfigurierbar)."
       },
       {
         "icon": "schedule",
-        "title": "Überstunden-Ausgleich fristgerecht geplant",
-        "text": "Klacks plant den Freizeitausgleich innerhalb der 90-Tage-Frist mit und zeigt, wo stattdessen der mindestens 75%-Zuschlag fällig wird."
+        "title": "Überstundenzuschlag automatisch",
+        "text": "Den Überstundenzuschlag von mindestens 75 % rechnet Klacks automatisch; den Freizeitausgleich innerhalb der 90-Tage-Frist plant und überwacht Klacks nicht."
       },
       {
         "icon": "shield_lock",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Planänderungen risikofrei testen",
-        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; die 48-Stunden-Ruhezeit (Art. 137) und Zuschläge werden dabei genauso live berechnet wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
+        "text": "Bevor eine Planänderung live geht, können Sie sie als isolierte Kopie durchspielen &mdash; Ruhezeiten und Zuschläge werden dabei genauso live geprüft wie im echten Plan. Erst wenn alles passt, übernehmen Sie die Variante; bis dahin bleibt Ihr laufender Dienstplan unverändert. So legen Sie sich für absehbare Situationen &mdash; etwa einen Krankheitsausfall oder eine Auftragsspitze &mdash; schon im Voraus ein passendes Szenario zurecht und sind im Ernstfall sofort einsatzbereit, statt erst unter Zeitdruck zu improvisieren. Dabei gibt es keine künstliche Obergrenze &mdash; Sie legen so viele Szenarien an, wie Sie für Ihre Planung brauchen."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ruhezeit-Verschiebung und Zuschlag, ein Blick",
-    "text": "Klacks zeigt automatisch, wenn die wöchentliche Ruhezeit verschoben oder nicht an Samstag/Sonntag gewährt wird, und stellt für den Sonderfall der kumulierten Ruhezeit nach ICCJ Nr. 415/2025 einen eigenen 150%-Zuschlag bereit &mdash; getrennt von der Überstundenvergütung."
+    "text": "Klacks zeigt automatisch, wenn eine Person in einer Woche weniger freie Tage hat als hinterlegt. Die Lage der Wochenruhe an Samstag/Sonntag und den 150%-Zuschlag nach ICCJ Nr. 415/2025 prüft Klacks nicht &mdash; das bleibt bei Ihrer Lohnabrechnung."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Zeiterfassung, Ruhezeit-Zuschläge und Überstunden-Fristen automatisiert &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Arbeitszeiten dokumentiert, Ruhezeiten prüft und Überstundenzuschläge rechnet &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

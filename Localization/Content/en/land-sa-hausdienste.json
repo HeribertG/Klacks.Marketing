@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "For facility &amp; cleaning services in Saudi Arabia",
     "titleHtml": "Every site, <span class=\"text-secondary\">scheduled cleanly even in summer.</span>",
-    "subtitle": "Klacks automatically schedules split shifts during the annual summer midday ban (June 15 to September 15, daily from 12:00 to 15:00) &mdash; and schedules cleaning teams so no work takes place under direct sun exposure.",
+    "subtitle": "Klacks treats the annual summer midday ban (June 15 to September 15, daily from 12:00 to 15:00) as a blocked period &mdash; Klacks flags assignments within it immediately, and automatic planning does not place any shifts there.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for cleaning teams and sites in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -20,10 +20,10 @@
   },
   "solutions": {
     "title": "How Klacks Takes the Load Off Facility &amp; Cleaning Services in Saudi Arabia",
-    "subtitle": "From automatic split shifts to the Nitaqat quota &mdash; it all fits together.",
+    "subtitle": "From blocked periods to the Nitaqat quota &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Site Routes Optimised", "text": "Klacks sequences sites so that travel distances stay short." },
-      { "icon": "wb_sunny", "title": "Summer Midday Ban Scheduled Automatically", "text": "Between June 15 and September 15, Klacks automatically splits assignments into split shifts for the 12:00 to 15:00 window &mdash; no work under direct sun exposure." },
+      { "icon": "wb_sunny", "title": "Summer Midday Ban as a Blocked Period", "text": "If the 12:00 to 15:00 window from June 15 to September 15 is stored as a blocked period, Klacks flags assignments within it immediately, and automatic planning does not place any shifts there. You create the split shifts before and after it yourself." },
       { "icon": "groups", "title": "Teams Assigned Flexibly", "text": "Changing crews and absences: Klacks keeps track and suggests suitable assignments." },
       { "icon": "badge", "title": "Nitaqat Minimum Wage Documented", "text": "Klacks maintains the per-employee employment data required for Nitaqat classification &mdash; whether the GOSI salary threshold for the full quota unit (1.0 from SAR 4,000) is reached is checked by your payroll system." },
       { "icon": "verified", "title": "Matching Qualifications", "text": "Specialised cleaning, machinery, security zones: only appropriately qualified staff are assigned." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "In Practice",
     "title": "Summer Midday Ban, Split Shift, One Plan",
-    "text": "Klacks automatically recognises the annual window from June 15 to September 15 and splits affected assignments between 12:00 and 15:00 into split shifts &mdash; no manual recalculation needed."
+    "text": "If the annual window from June 15 to September 15, 12:00 to 15:00, is stored as a blocked period, Klacks automatically recognises affected assignments &mdash; you plan the split shifts before and after it directly in the same schedule."
   },
   "showRoutePlanning": true,
   "cta": {

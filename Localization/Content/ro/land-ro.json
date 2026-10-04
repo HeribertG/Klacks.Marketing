@@ -4,7 +4,7 @@
     "badgeIcon": "fact_check",
     "badge": "Pontaj conform ITM &middot; Automatizarea repausului &middot; România",
     "titleHtml": "Timp de lucru <span class=\"text-secondary\">demonstrabil fără nicio lacună.</span>",
-    "subtitle": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii (ITM), fără date biometrice. Repausul săptămânal, sporul stabilit de ICCJ și termenele pentru orele suplimentare sunt gestionate automat.",
+    "subtitle": "Klacks înregistrează fără nicio lacună începutul și sfârșitul fiecărei ture &mdash; prezentabil oricând la cererea Inspecției Muncii (ITM), fără date biometrice. Zilele libere pe săptămână și sporurile pentru orele suplimentare sunt gestionate automat.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Prezentare generală a planificării turelor Klacks pentru companii din România",
     "screenshotLabel": "Planificare"
@@ -57,7 +57,7 @@
   },
   "solutions": {
     "title": "Cum ușurează Klacks activitatea companiilor din România",
-    "subtitle": "De la pontajul fără nicio lacună până la sporul de repaus calculat corect &mdash; totul se îmbină perfect.",
+    "subtitle": "De la pontajul fără nicio lacună până la zilele libere pe săptămână &mdash; totul se îmbină perfect.",
     "items": [
       {
         "icon": "fact_check",
@@ -71,13 +71,13 @@
       },
       {
         "icon": "event_repeat",
-        "title": "Repaus de 48 de ore &amp; sporul ICCJ sub control",
-        "text": "Klacks detectează atunci când repausul săptămânal nu este acordat sâmbăta/duminica și face acest lucru vizibil pentru fiecare persoană. Pentru cazul special reglementat de lege al repausului cumulat după cel mult 14 zile de activitate continuă, este disponibil un spor de 150% configurabil separat, conform Deciziei ÎCCJ nr. 415/2025. La cerere, Klacks blochează consecvent o nouă încălcare a repausului săptămânal: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
+        "title": "Zilele libere pe săptămână sub control",
+        "text": "Klacks verifică dacă pe săptămână rămâne numărul stabilit de zile libere și face vizibile nerespectările pentru fiecare persoană. Dacă repausul săptămânal de 48 de ore cade sâmbăta/duminica nu este verificat de Klacks, iar sporul de 150% conform Deciziei ÎCCJ nr. 415/2025 pentru repausul cumulat nu este calculat de Klacks. La cerere, Klacks blochează consecvent o nouă încălcare a numărului de zile libere: în modul de blocare, o încălcare nouă poate fi salvată doar cu aprobarea documentată a supervizorului (configurabil pe tip de regulă)."
       },
       {
         "icon": "schedule",
-        "title": "Compensarea orelor suplimentare planificată la termen",
-        "text": "Klacks planifică compensarea cu timp liber în cadrul termenului de 90 de zile și indică unde se datorează, în schimb, sporul de cel puțin 75%."
+        "title": "Spor pentru orele suplimentare calculat automat",
+        "text": "Klacks calculează automat sporul de cel puțin 75% pentru orele suplimentare; compensarea cu timp liber în cadrul termenului de 90 de zile nu este planificată și nici monitorizată de Klacks."
       },
       {
         "icon": "shield_lock",
@@ -92,7 +92,7 @@
       {
         "icon": "science",
         "title": "Testați modificările planificării fără riscuri",
-        "text": "Înainte ca o modificare a planificării să devină activă, o puteți testa ca pe o copie izolată &mdash; repausul de 48 de ore (Art. 137) și sporurile sunt calculate în timp real, exact ca în planificarea reală. Abia după ce totul corespunde preluați varianta respectivă; până atunci, planificarea dumneavoastră curentă rămâne neschimbată. Astfel vă pregătiți din timp un scenariu potrivit pentru situații previzibile &mdash; de exemplu o absență din cauza bolii sau un vârf de comenzi &mdash; și sunteți imediat pregătiți de acțiune atunci când este nevoie, în loc să improvizați sub presiunea timpului. Nu există nicio limită artificială &mdash; puteți crea oricâte scenarii aveți nevoie pentru planificarea dumneavoastră."
+        "text": "Înainte ca o modificare a planificării să devină activă, o puteți testa ca pe o copie izolată &mdash; perioadele de repaus și sporurile sunt verificate în timp real, exact ca în planificarea reală. Abia după ce totul corespunde preluați varianta respectivă; până atunci, planificarea dumneavoastră curentă rămâne neschimbată. Astfel vă pregătiți din timp un scenariu potrivit pentru situații previzibile &mdash; de exemplu o absență din cauza bolii sau un vârf de comenzi &mdash; și sunteți imediat pregătiți de acțiune atunci când este nevoie, în loc să improvizați sub presiunea timpului. Nu există nicio limită artificială &mdash; puteți crea oricâte scenarii aveți nevoie pentru planificarea dumneavoastră."
       }
     ]
   },
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Amânarea repausului și sporul, dintr-o privire",
-    "text": "Klacks indică automat atunci când repausul săptămânal este amânat sau nu este acordat sâmbăta/duminica și pune la dispoziție, pentru cazul special reglementat conform Deciziei ÎCCJ nr. 415/2025, un spor de 150% separat &mdash; distinct de plata orelor suplimentare."
+    "text": "Klacks indică automat atunci când o persoană are într-o săptămână mai puține zile libere decât numărul stabilit. Plasarea repausului săptămânal sâmbăta/duminica și sporul de 150% conform Deciziei ÎCCJ nr. 415/2025 nu sunt verificate de Klacks &mdash; acestea rămân în sarcina salarizării dumneavoastră."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Descoperiți Klacks în compania dumneavoastră",
-    "text": "Încercați în Playground cum automatizează Klacks pontajul, sporurile de repaus și termenele pentru orele suplimentare &mdash; fără taxe de licență și fără înregistrare."
+    "text": "Încercați în Playground cum documentează Klacks timpul de lucru, verifică perioadele de repaus și calculează sporurile pentru orele suplimentare &mdash; fără taxe de licență și fără înregistrare."
   }
 }

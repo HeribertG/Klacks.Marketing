@@ -62,12 +62,12 @@
       {
         "icon": "gavel",
         "title": "Periodarbete &amp; övertid beräknas automatiskt",
-        "text": "Klacks summerar arbetstiden per 3- eller 2-veckorsperiod och beräknar den lagstadgade övertidsersättningen korrekt: de första 18 övertidstimmarna med 50 %, varje ytterligare timme med 100 %. Samtidigt övervakar Klacks arbetstidslagens totalgräns: sedan 2020 finns ingen fast övertidskvot längre &mdash; avgörande är ett genomsnitt på högst 48 timmar per vecka inklusive övertid under den fyra månader långa utjämningsperioden, och just det räknar Klacks rullande."
+        "text": "Övertidstillägg trappar Klacks upp på dags- eller veckobasis i upp till tre steg, till exempel 50 % och 100 %; periodarbetets trappa (de första 18 övertidstimmarna i en 3- eller 2-veckorsperiod med 50 %, varje ytterligare med 100 %) stöder Klacks inte. Samtidigt övervakar Klacks arbetstidslagens totalgräns: sedan 2020 finns ingen fast övertidskvot längre &mdash; avgörande är ett genomsnitt på högst 48 timmar per vecka inklusive övertid under den fyra månader långa utjämningsperioden, och just det räknar Klacks rullande."
       },
       {
         "icon": "bedtime",
         "title": "Vilotider &amp; 14-dagars kompensation övervakas",
-        "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på 14-dagarsfristen för kompensationen &mdash; liksom den veckovisa minsta vilotiden på 35 timmar."
+        "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på 14-dagarsfristen för kompensationen; den veckovisa minsta vilotiden på 35 timmar kontrollerar Klacks inte som sammanhängande period, utan via den lediga dagen per vecka."
       },
       {
         "icon": "event_note",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "En 3-veckorsperiod, korrekt avräknad",
-    "text": "Om en medarbetare i en 3-veckorsperiod når 120-timmarsgränsen räknar Klacks automatiskt av de följande 18 timmarna med 50 % och varje ytterligare timme med 100 % &mdash; utan manuell efterräkning."
+    "text": "Klacks beräknar automatiskt de inlagda övertidstrapporna på dags- eller veckobasis och räknar 48-timmarssnittet rullande &mdash; utan manuell efterräkning. Trappan efter 120 timmar i en 3-veckorsperiod stöder Klacks inte."
   },
   "showRoutePlanning": false,
   "cta": {

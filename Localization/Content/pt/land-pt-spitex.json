@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Rotas otimizadas automaticamente", "text": "O Klacks define as rotas de intervenção de forma a manter os percursos curtos e a respeitar as janelas horárias &mdash; a pé ou de carro." },
       { "icon": "schedule", "title": "Tempo de deslocação registado corretamente como tempo de trabalho", "text": "O Klacks contabiliza o tempo de deslocação registado entre utentes como tempo de trabalho &mdash; e, se o registar, também a primeira e a última viagem na ausência de um local fixo, tal como exige a interpretação do art. 197.º do CT. O Klacks não verifica se existe um local fixo." },
-      { "icon": "bedtime", "title": "Descanso de 11 horas nos horários repartidos", "text": "O Klacks planeia os horários repartidos de forma a garantir o período de descanso mínimo de 11 horas consecutivas em cada período de 24 horas." },
+      { "icon": "bedtime", "title": "Descanso de 11 horas nos horários repartidos", "text": "O Klacks verifica o período de descanso mínimo configurado de 11 horas consecutivas entre dois turnos seguidos." },
       { "icon": "verified", "title": "Qualificações consideradas automaticamente", "text": "Cada intervenção só é atribuída a pessoas com a qualificação adequada &mdash; sem qualquer verificação manual." },
       { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados ficam nas suas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes não saem das suas instalações &mdash; nem sequer para a IA." },
       { "icon": "smart_toy", "title": "O Klacksy compreende a sua frase", "text": "Basta dizer «Preenche as rotas para amanhã». Em caso de falta, o Klacksy sugere de imediato um substituto disponível." }

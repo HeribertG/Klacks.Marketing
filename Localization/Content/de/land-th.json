@@ -67,7 +67,7 @@
       {
         "icon": "layers",
         "title": "Dreistufige Überstundensätze automatisch zugewiesen",
-        "text": "Klacks weist die Überstundensätze automatisch zu &mdash; 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62) und 3,0-fach für Überstunden an Feiertagen/Ruhetagen (Section 63)."
+        "text": "Klacks weist die Überstundensätze automatisch zu &mdash; 1,5-fach an gewöhnlichen Arbeitstagen (Section 61), 2,0-fach bzw. +1,0-fach für Monatslöhner an Feiertagen/Ruhetagen (Section 62); den 3,0-fach-Satz für Überstunden an Feiertagen/Ruhetagen (Section 63) bildet Klacks nicht gesondert ab."
       },
       {
         "icon": "hourglass_top",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "36-Stunden-Limit und Überstundensätze, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine Woche das 36-Stunden-Überstundenlimit erreicht, und schlägt den Ausgleich gleich vor &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine Woche das 36-Stunden-Überstundenlimit erreicht, und warnt rechtzeitig &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {

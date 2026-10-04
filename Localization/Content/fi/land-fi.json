@@ -62,12 +62,12 @@
       {
         "icon": "gavel",
         "title": "Jaksotyö &amp; ylityöt lasketaan automaattisesti",
-        "text": "Klacks laskee työajan yhteen 3 tai 2 viikon jaksoissa ja laskee lakisääteisen ylityökorvauksen oikein: ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava tunti 100 %:lla. Samalla Klacks valvoo työaikalain kokonaisrajaa: vuodesta 2020 lähtien kiinteää ylityökiintiötä ei enää ole &mdash; ratkaisevaa on enintään 48 tunnin viikkokeskiarvo ylityöt mukaan lukien neljän kuukauden tasoittumisjakson aikana, ja juuri sitä Klacks laskee rullaavasti."
+        "text": "Ylityölisät Klacks porrastaa päivä- tai viikkokohtaisesti enintään kolmeen portaaseen, esimerkiksi 50 % ja 100 %; jaksotyön porrastusta (3 tai 2 viikon jakson ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava 100 %:lla) Klacks ei tue. Samalla Klacks valvoo työaikalain kokonaisrajaa: vuodesta 2020 lähtien kiinteää ylityökiintiötä ei enää ole &mdash; ratkaisevaa on enintään 48 tunnin viikkokeskiarvo ylityöt mukaan lukien neljän kuukauden tasoittumisjakson aikana, ja juuri sitä Klacks laskee rullaavasti."
       },
       {
         "icon": "bedtime",
         "title": "Lepoajat &amp; 14 vuorokauden tasoitus valvotaan",
-        "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää 14 vuorokauden tasoitusmääräajan hallinnassa &mdash; samoin viikoittaisen vähintään 35 tunnin lepoajan."
+        "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää 14 vuorokauden tasoitusmääräajan hallinnassa; viikoittaista vähintään 35 tunnin lepoaikaa Klacks ei tarkista yhtäjaksoisena jaksona, vaan viikoittaisen vapaapäivän kautta."
       },
       {
         "icon": "event_note",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Käytännössä",
     "title": "3 viikon jakso, laskutettuna oikein",
-    "text": "Kun työntekijä saavuttaa 3 viikon jaksossa 120 tunnin rajan, Klacks laskuttaa seuraavat 18 tuntia automaattisesti 50 %:lla ja jokaisen seuraavan tunnin 100 %:lla &mdash; ilman käsin laskemista."
+    "text": "Klacks laskee määritetyt ylityöportaat päivä- tai viikkokohtaisesti automaattisesti ja seuraa 48 tunnin keskiarvoa rullaavasti &mdash; ilman käsin laskemista. Porrastusta 120 tunnin jälkeen 3 viikon jaksossa Klacks ei tue."
   },
   "showRoutePlanning": false,
   "cta": {

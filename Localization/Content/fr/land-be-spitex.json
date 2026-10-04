@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Belgique (CP 330)",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre patient·e·s comme temps de travail, le supplément de 50% pour les services coupés et la rimpelregeling dès 45 ans.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec des itinéraires optimisés et le temps de trajet saisi entre patient·e·s compté comme temps de travail.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Belgique",
     "screenshotLabel": "Chronologie"
@@ -23,9 +23,9 @@
     "subtitle": "De la tournée automatique à la rimpelregeling &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et à respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied." },
-      { "icon": "schedule", "title": "Temps de trajet correctement comptabilisé comme temps de travail", "text": "Les trajets entre patient·e·s sont automatiquement comptés comme temps de travail &mdash; seuls le premier et le dernier trajet restent exclus." },
-      { "icon": "call_split", "title": "Supplément de 50% pour services coupés calculé", "text": "Klacks détecte automatiquement un service interrompu et propose le supplément de 50% selon la CP 330." },
-      { "icon": "elderly", "title": "Rimpelregeling intégrée comme règle de planification", "text": "Vous configurez les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, comme règle de disponibilité &mdash; elles s'intègrent ensuite automatiquement à la planification des tournées." },
+      { "icon": "schedule", "title": "Temps de trajet correctement comptabilisé comme temps de travail", "text": "Klacks compte les trajets saisis entre patient·e·s comme temps de travail &mdash; Klacks ne détecte pas automatiquement que le premier et le dernier trajet restent exclus." },
+      { "icon": "call_split", "title": "Services coupés dans le planning", "text": "Vous planifiez un service interrompu comme deux interventions le même jour ; Klacks ne détecte pas automatiquement le supplément de 50% selon la CP 330 &mdash; il reste du ressort de votre gestion de la paie." },
+      { "icon": "elderly", "title": "Rimpelregeling via les heures cibles du contrat", "text": "Vous reproduisez les heures de dispense liées à l'âge, dès 45, 50 et 55 ans, au moyen d'heures cibles réduites en conséquence dans le contrat ; Klacks n'évalue pas automatiquement l'âge lui-même." },
       { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle. Sur demande, Klacks bloque complètement l'attribution en cas de justificatif obligatoire expiré &mdash; seule une personne disposant d'un justificatif valide est planifiée." },
       { "icon": "smart_toy", "title": "Klacksy comprend votre phrase", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Temps de trajet, service coupé, un seul planning",
-    "text": "Klacks compte le temps de trajet saisi entre patient·e·s comme temps de travail, détecte les services coupés et applique le supplément de 50% &mdash; sans calcul manuel."
+    "text": "Klacks compte le temps de trajet saisi entre patient·e·s comme temps de travail et optimise les tournées &mdash; sans calcul manuel. Klacks ne détecte pas automatiquement le supplément de 50% pour les services coupés."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Découvrez Klacks dans votre organisation de soins",
-    "text": "Testez dans le Playground comment Klacks prend en charge le temps de trajet, les services coupés et la rimpelregeling &mdash; sans frais de licence et sans inscription."
+    "text": "Testez dans le Playground comment Klacks prend en charge les tournées et le temps de trajet &mdash; sans frais de licence et sans inscription."
   }
 }

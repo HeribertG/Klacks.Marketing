@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Tanpa biaya lisensi &middot; Pencatatan Waktu Sesuai UU PDP",
     "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
-    "subtitle": "Klacks menghitung otomatis formula tunjangan lembur empat tingkat dari PP 35/2021, mengawasi batas lembur mingguan &mdash; atas permintaan, Klacks memblokir pelanggaran secara ketat &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
+    "subtitle": "Klacks menghitung otomatis tunjangan lembur bertingkat sesuai PP 35/2021, mengawasi batas lembur mingguan &mdash; atas permintaan, Klacks memblokir pelanggaran secara ketat &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
@@ -67,7 +67,7 @@
       {
         "icon": "calculate",
         "title": "Tunjangan progresif dihitung dengan benar",
-        "text": "Klacks menerapkan tingkatan 1,5×/2,0×/3,0×/4,0× dari PP 35/2021 Pasal 31 secara otomatis &mdash; dengan tabel yang tepat untuk operasional 5 atau 6 hari kerja dan dasar 1/173 dari upah bulanan."
+        "text": "Untuk hari kerja, Klacks menerapkan tingkatan 1,5× dan 2,0× dari PP 35/2021 Pasal 31 secara otomatis, untuk hari istirahat dan hari libur resmi tunjangan yang telah ditetapkan. Tingkatan per jam 2,0×/3,0×/4,0× pada hari istirahat, tabel untuk operasional 5 atau 6 hari kerja, dan dasar 1/173 dari upah bulanan tidak dipetakan oleh Klacks &mdash; hal itu tetap menjadi bagian dari penggajian Anda."
       },
       {
         "icon": "pause_circle",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Contoh Konkret",
     "title": "Lembur di hari istirahat, sekali lihat",
-    "text": "Klacks secara otomatis mengenali apakah lembur terjadi pada hari kerja atau hari istirahat, menerapkan tingkat yang sesuai dari 1,5× hingga 4,0×, sekaligus memantau batas 18 jam per minggu &mdash; tanpa perlu menghitung ulang secara manual."
+    "text": "Klacks secara otomatis mengenali apakah lembur terjadi pada hari kerja atau hari istirahat, menerapkan tunjangan yang telah ditetapkan, sekaligus memantau batas 18 jam per minggu &mdash; tanpa perlu menghitung ulang secara manual."
   },
   "showRoutePlanning": false,
   "cta": {

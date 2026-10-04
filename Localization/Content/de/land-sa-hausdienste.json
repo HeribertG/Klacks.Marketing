@@ -4,7 +4,7 @@
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in Saudi-Arabien",
     "titleHtml": "Jedes Objekt <span class=\"text-secondary\">auch im Sommer sauber eingeplant.</span>",
-    "subtitle": "Klacks plant automatisch Split-Shifts während des jährlichen Sommer-Mittagsverbots (15. Juni bis 15. September, täglich 12:00 bis 15:00 Uhr) &mdash; und plant Reinigungsteams so, dass keine Arbeit unter direkter Sonneneinstrahlung entsteht.",
+    "subtitle": "Klacks berücksichtigt das jährliche Sommer-Mittagsverbot (15. Juni bis 15. September, täglich 12:00 bis 15:00 Uhr) als Sperrzeit &mdash; Einsätze darin macht Klacks sofort sichtbar, und die automatische Planung legt keine Dienste hinein.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Reinigungsteams und Objekte in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -20,10 +20,10 @@
   },
   "solutions": {
     "title": "Wie Klacks Haus- &amp; Reinigungsdienste in Saudi-Arabien entlastet",
-    "subtitle": "Vom automatischen Split-Shift bis zur Nitaqat-Quote &mdash; alles greift ineinander.",
+    "subtitle": "Von der Sperrzeit bis zur Nitaqat-Quote &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Objekt-Routen optimiert", "text": "Klacks legt die Reihenfolge der Objekte so, dass Wege kurz bleiben." },
-      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot automatisch eingeplant", "text": "Klacks teilt Einsätze zwischen 15. Juni und 15. September für das Fenster 12:00 bis 15:00 Uhr automatisch in Split-Shifts auf &mdash; keine Arbeit unter direkter Sonneneinstrahlung." },
+      { "icon": "wb_sunny", "title": "Sommer-Mittagsverbot als Sperrzeit", "text": "Ist das Fenster 12:00 bis 15:00 Uhr vom 15. Juni bis 15. September als Sperrzeit hinterlegt, macht Klacks Einsätze darin sofort sichtbar, und die automatische Planung legt keine Dienste hinein. Die Split-Shifts davor und danach legen Sie selbst an." },
       { "icon": "groups", "title": "Teams flexibel eingeteilt", "text": "Wechselnde Besetzungen und Ausfälle: Klacks behält den Überblick und schlägt passende Einteilungen vor." },
       { "icon": "badge", "title": "Nitaqat-Mindestlohn dokumentiert", "text": "Klacks führt die Beschäftigungsdaten je Mitarbeitendem, die für die Nitaqat-Einstufung nötig sind &mdash; ob die GOSI-Gehaltsschwelle für die volle Quote (1,0 ab SAR 4.000) erreicht ist, prüft Ihr Lohnsystem." },
       { "icon": "verified", "title": "Qualifikationen passend", "text": "Spezialreinigung, Maschinen, Sicherheitsbereiche: Nur passend qualifiziertes Personal wird eingeteilt." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Sommer-Mittagsverbot, Split-Shift, ein Plan",
-    "text": "Klacks erkennt das jährliche Fenster vom 15. Juni bis 15. September automatisch und teilt betroffene Einsätze zwischen 12:00 und 15:00 Uhr in Split-Shifts auf &mdash; ohne Nachrechnen von Hand."
+    "text": "Ist das jährliche Fenster vom 15. Juni bis 15. September, 12:00 bis 15:00 Uhr, als Sperrzeit hinterlegt, erkennt Klacks betroffene Einsätze automatisch &mdash; die Split-Shifts davor und danach planen Sie direkt im selben Plan."
   },
   "showRoutePlanning": true,
   "cta": {

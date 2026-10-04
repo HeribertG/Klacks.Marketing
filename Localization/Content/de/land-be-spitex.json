@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche &amp; ambulante Pflege in Belgien (PC 330)",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegzeit zwischen Patient:innen als Arbeitszeit, dem 50%-Zuschlag bei geteilten Diensten und der Rimpelregeling ab 45 Jahren.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit optimierten Routen und erfasster Wegzeit zwischen Patient:innen als Arbeitszeit.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Belgien",
     "screenshotLabel": "Timeline"
@@ -23,9 +23,9 @@
     "subtitle": "Von der automatischen Tour bis zur Rimpelregeling &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Fahrten zwischen Patient:innen werden automatisch als Arbeitszeit gerechnet &mdash; nur der erste und letzte Weg bleiben außen vor." },
-      { "icon": "call_split", "title": "50%-Zuschlag bei geteilten Diensten berechnet", "text": "Klacks erkennt einen unterbrochenen Dienst automatisch und schlägt den 50%-Zuschlag gemäß PC 330 vor." },
-      { "icon": "elderly", "title": "Rimpelregeling als Planungsregel abgebildet", "text": "Die altersabhängigen Freistellungsstunden ab 45, 50 und 55 Jahren hinterlegen Sie als Verfügbarkeitsregel &mdash; danach fließen sie automatisch in die Tourenplanung ein." },
+      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Erfasste Fahrten zwischen Patient:innen rechnet Klacks als Arbeitszeit &mdash; dass der erste und letzte Weg außen vor bleiben, erkennt Klacks nicht automatisch." },
+      { "icon": "call_split", "title": "Geteilte Dienste im Plan", "text": "Einen unterbrochenen Dienst planen Sie als zwei Einsätze am selben Tag; den 50%-Zuschlag gemäß PC 330 erkennt Klacks nicht automatisch &mdash; er bleibt bei Ihrer Lohnabrechnung." },
+      { "icon": "elderly", "title": "Rimpelregeling über das Vertragssoll", "text": "Die altersabhängigen Freistellungsstunden ab 45, 50 und 55 Jahren bilden Sie über ein entsprechend reduziertes Soll im Vertrag ab; das Alter selbst wertet Klacks nicht automatisch aus." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen. Auf Wunsch blockiert Klacks die Zuweisung bei abgelaufenem Pflichtnachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Nachweis besitzt." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
@@ -33,11 +33,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, geteilter Dienst, ein Plan",
-    "text": "Klacks zählt die erfasste Fahrzeit zwischen Patient:innen als Arbeitszeit, erkennt geteilte Dienste und wendet den 50%-Zuschlag an &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks zählt die erfasste Fahrzeit zwischen Patient:innen als Arbeitszeit und optimiert die Touren &mdash; ohne Nachrechnen von Hand. Den 50%-Zuschlag für geteilte Dienste erkennt Klacks nicht automatisch."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Pflegeorganisation erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Wegzeit, geteilte Dienste und die Rimpelregeling übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren und Wegzeit übernimmt &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }
