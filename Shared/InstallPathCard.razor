@@ -33,7 +33,7 @@
     <div class="mt-auto">
         @if (!string.IsNullOrEmpty(DownloadUrl))
         {
-            <a href="@DownloadUrl" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+            <a href="@DownloadUrl" rel="nofollow" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
                 <span class="material-symbols-outlined">download</span> @DownloadLabel
             </a>
         }

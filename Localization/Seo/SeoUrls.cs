@@ -15,6 +15,24 @@ public static class SeoUrls
     public static string Absolute(string baseUrl, SupportedCulture culture, string routePath)
         => Localization.SitemapGenerator.BuildUrl(baseUrl.TrimEnd('/'), culture, routePath);
 
+    // Normalizes a raw request path ("/FR/Land-CH/Spitex/") to the absolute URL the
+    // canonical link uses for that page: lower-case, no trailing slash, no query, and
+    // the culture prefix only for non-default cultures. Routes are matched
+    // case-insensitively and tolerate a trailing slash, so several raw paths serve one
+    // page. Country-independent pages (SeoHead.SameForEveryCountry) are not remapped
+    // to the culture's default country here, since the path alone does not reveal them.
+    public static string FromRequestPath(string baseUrl, string? requestPath)
+    {
+        var segments = (requestPath ?? string.Empty)
+            .ToLowerInvariant()
+            .Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+        var culture = SupportedCultures.Resolve(segments.FirstOrDefault());
+        var routeSegments = culture.UrlSlug.Length > 0 ? segments.Skip(1) : segments;
+
+        return Absolute(baseUrl, culture, string.Join('/', routeSegments));
+    }
+
     // The Open Graph locale in "language_TERRITORY" form (e.g. "de_CH", "fr_FR").
     // The language comes from the culture, the territory from the country the page
     // is served under.

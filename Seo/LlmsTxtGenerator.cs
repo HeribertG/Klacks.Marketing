@@ -66,6 +66,42 @@ public static class LlmsTxtGenerator
         ),
     };
 
+    // Company-size pages (page slug -> English title, one-line summary, longer summary). The audience
+    // sizes are copied verbatim from each page's badge; the descriptions only condense the English content.
+    private static readonly (string Slug, string Title, string Summary, string Detail)[] BusinessSizePages =
+    {
+        (
+            CountryPageLinks.SmallBusinessSlug,
+            "Klacks for SMEs",
+            "For SMEs with 5 to 250 employees: plans shifts and tours, checks rest periods and qualifications, and runs on an office PC or your own server. Open source, no license fees.",
+            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on an office PC (Windows or Mac with Docker Desktop, 16 GB of memory recommended) or on your own Linux server (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
+        ),
+        (
+            CountryPageLinks.MidSizeBusinessSlug,
+            "Klacks for mid-sized businesses",
+            "For businesses with 50 to 250 employees: fills gaps in line with your rules, suggests a replacement who fits, and lets you prepare scenarios in advance — no license fees.",
+            "For businesses with 50 to 250 employees. The planning assistant fills open shifts while keeping to your rules — rest periods, qualifications, availability — and plans in a scenario first, so nothing is applied until you give your OK. If someone drops out, you can ask Klacksy for a replacement: only people who are not absent that day, have the required qualification, get no overlap and keep to the rest period are suggested. Klacks does not replace a scheduler: the rule-based planning engine calculates the plan, Klacksy takes over the clicking, and you decide."
+        ),
+        (
+            CountryPageLinks.LargeBusinessSlug,
+            "Klacks for large businesses",
+            "For businesses with over 250 employees: no license per employee, no user fees, no subscription. Roles, group visibility, LDAP/OIDC sign-in and payroll export.",
+            "For businesses with over 250 employees: no license per employee, no user fees, no subscription. Costs on your side are server or hosting, operation and maintenance, the AI model (external providers bill by usage; a model you run yourself needs suitable hardware) and the rollout. Klacks offers roles and rights, visibility by group, sign-in via LDAP or Active Directory, OpenID Connect and OAuth 2.0, a payroll export (among others for DATEV and Abacus, as well as CSV or Excel), approval levels, signed automatic updates and an MCP server through which AI agents work with the rights of the connected user. Klacksy does not replace schedulers — it takes over the clicking, while the rule-based planning engine calculates the plan."
+        ),
+    };
+
+    private const string InstallDocsPath = "erste-schritte/installation-und-playground/";
+    private const string InstallFolderName = "onprem";
+    private const string ExampleServerName = "klacks.example.com";
+    private const string ExampleRegion = "de";
+    private const string DocsHomeTitle = "Klacks documentation";
+    private const string DocsInstallTitle = "Installation and Playground (documentation)";
+
+    private const string AboutTitle = "Who is behind Klacks";
+    private const string AboutSummary = "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0.";
+    private const string AboutDetail =
+        "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0. Sales, support and marketing are handled by AI assistants, and what an AI writes is labeled as such; the founder decides prices, offers, contracts and invoices himself. The installation and the database run in your business, with the data stored in PostgreSQL, an open database; a complete data export is planned for version 1.1.";
+
     // English-language country landing pages (page key -> English country name).
     // Only countries with their own English content are listed here; the site
     // serves ~30 country sites in total (CountryIndustries.AllCountries).
@@ -101,11 +137,17 @@ public static class LlmsTxtGenerator
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "On-premise, open-source workforce scheduling — overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "Voice- and chat-controlled scheduling assistant with free choice of language model.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Download country packages for on-premise or Docker Compose installation.");
+        AppendDocsLink(sb, DocsHomeUrl(trimmedBase), DocsHomeTitle, "Documentation, including the step-by-step installation guide with the real commands.");
         sb.AppendLine();
 
         sb.AppendLine("## Industries");
         sb.AppendLine();
         sb.AppendLine("Six industry templates with compliance enforcement: homecare/spitex, healthcare/hospitals, security, facility/cleaning, logistics, hospitality/hotellerie-gastro. Custom industry profiles supported.");
+        sb.AppendLine();
+
+        sb.AppendLine("## Company size");
+        sb.AppendLine();
+        AppendBusinessSizeLinks(sb, trimmedBase);
         sb.AppendLine();
 
         sb.AppendLine("## Countries");
@@ -114,6 +156,11 @@ public static class LlmsTxtGenerator
         {
             AppendLink(sb, trimmedBase, pageKey, name, null);
         }
+        sb.AppendLine();
+
+        sb.AppendLine("## About");
+        sb.AppendLine();
+        AppendAboutLink(sb, trimmedBase);
         sb.AppendLine();
 
         sb.AppendLine("## Legal");
@@ -187,6 +234,21 @@ public static class LlmsTxtGenerator
             "The system sets ACTIVE_INDUSTRIES=custom and copies base templates as new rows.");
         sb.AppendLine();
 
+        sb.AppendLine("## Company sizes");
+        sb.AppendLine();
+        foreach (var (_, title, _, detail) in BusinessSizePages)
+        {
+            sb.AppendLine($"### {title}");
+            sb.AppendLine();
+            sb.AppendLine(detail);
+            sb.AppendLine();
+        }
+
+        sb.AppendLine("## About");
+        sb.AppendLine();
+        sb.AppendLine(AboutDetail);
+        sb.AppendLine();
+
         sb.AppendLine("## Countries and languages");
         sb.AppendLine();
         sb.AppendLine($"Country-specific sites exist for {CountryIndustries.AllCountries.Count} markets across Europe, the Middle East and Asia, and the site is presented in {SupportedCultures.All.Count} languages. The application itself ships in four core languages — German, French, Italian and English — with additional languages added as plugins that bring their own geodata, calendar rules and assistant terminology.");
@@ -200,15 +262,20 @@ public static class LlmsTxtGenerator
         sb.AppendLine("- Source code: Klacks is open source under the GNU AGPL-3.0 licence, with backend, frontend and Docker images public on GitHub.");
         sb.AppendLine();
 
+        AppendInstallSection(sb, trimmedBase);
+
         sb.AppendLine("## Links");
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "Product overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "The scheduling assistant in detail.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Country packages for on-premise or Docker Compose installation.");
+        AppendDocsLinks(sb, trimmedBase);
+        AppendBusinessSizeLinks(sb, trimmedBase);
         foreach (var (pageKey, name) in EnglishMarkets)
         {
             AppendLink(sb, trimmedBase, pageKey, name, null);
         }
+        AppendAboutLink(sb, trimmedBase);
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{ImpressumSlug}", "Legal notice", null);
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{DatenschutzSlug}", "Privacy", null);
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{LicenseSlug}", "Commercial license", "When the AGPL-3.0 is enough and when a commercial license is needed.");
@@ -216,6 +283,138 @@ public static class LlmsTxtGenerator
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{ComparisonSlug}", "Comparison", "Klacks compared with typical SaaS scheduling tools.");
 
         return sb.ToString();
+    }
+
+    // Install walkthrough for assistants helping a layperson. Every command and limit is taken from the
+    // on-prem bundle (README.md, install.sh, install.ps1), the English installation docs page and the
+    // English marketing content; anything those sources do not state is left out.
+    private static void AppendInstallSection(StringBuilder sb, string baseUrl)
+    {
+        var bundleUrl = ExternalLinks.OnPremBundleUrl;
+        var bundleFile = ExternalLinks.OnPremBundleFileName;
+
+        sb.AppendLine("## Install Klacks (step by step)");
+        sb.AppendLine();
+        sb.AppendLine("Klacks runs on your own Windows or Linux machine with Docker; there is no forced cloud. Use the commands below exactly as written and do not invent others. macOS is not covered by these steps.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 1. Requirements");
+        sb.AppendLine();
+        sb.AppendLine("- A host with at least 8 GB of RAM and 4 vCPU (Klacks runs its retrieval models locally inside the API container). For an office PC, 16 GB of memory is recommended.");
+        sb.AppendLine("- Docker Desktop on Windows, or Docker Engine with the Compose plugin on Linux.");
+        sb.AppendLine("- Outbound internet access to ghcr.io and github.com (Docker images and updates).");
+        sb.AppendLine("- Ports 80 and 443 free (configurable, see the options below).");
+        sb.AppendLine("- On Windows: a folder on a local drive to install into, for example C:\\klacks.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 2. Download");
+        sb.AppendLine();
+        sb.AppendLine($"The installation package is a single ZIP file, {bundleFile}, published as the latest GitHub release: {bundleUrl}");
+        sb.AppendLine($"It extracts into a folder named {InstallFolderName} that contains the installer scripts (install.sh for Linux, install.ps1 for Windows), the Docker Compose stack and a regions folder with the country profiles.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 3a. Linux");
+        sb.AppendLine();
+        sb.AppendLine("```bash");
+        sb.AppendLine($"curl -fsSLO {bundleUrl}");
+        sb.AppendLine($"unzip {bundleFile} && cd {InstallFolderName} && ./install.sh");
+        sb.AppendLine("```");
+        sb.AppendLine();
+        sb.AppendLine("With your own server name and an optional country profile:");
+        sb.AppendLine();
+        sb.AppendLine("```bash");
+        sb.AppendLine($"SERVER_NAME={ExampleServerName} REGION={ExampleRegion} ./install.sh");
+        sb.AppendLine("```");
+        sb.AppendLine();
+        sb.AppendLine("Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443).");
+        sb.AppendLine();
+
+        sb.AppendLine("### 3b. Windows (PowerShell)");
+        sb.AppendLine();
+        sb.AppendLine($"Download {bundleUrl}, extract it into a folder on a local drive (for example C:\\klacks) and run the installer from the extracted folder:");
+        sb.AppendLine();
+        sb.AppendLine("```powershell");
+        sb.AppendLine($"powershell -ExecutionPolicy Bypass -File .\\install.ps1 -ServerName {ExampleServerName} -Region {ExampleRegion}");
+        sb.AppendLine("```");
+        sb.AppendLine();
+        sb.AppendLine("Optional parameters: -ServerName (defaults to localhost), -Region, -HttpPort and -HttpsPort (default 80 and 443). The installer maps the install folder into the Docker Desktop VM so that the automatic updater can recreate containers with the right bind mounts, which is why the folder must be on a local drive.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 4. What the installer does");
+        sb.AppendLine();
+        sb.AppendLine("It checks that Docker and the Compose plugin respond, generates secrets and a self-signed certificate, pins the latest released version, pulls the images, starts the stack and waits until the API reports healthy. The first start migrates and seeds the database and can take a while; allow about half an hour depending on your computer and internet connection. The script can be run again at any time: it keeps existing secrets and certificate and just pulls and restarts the stack.");
+        sb.AppendLine();
+        sb.AppendLine("The country profile (REGION or -Region) is optional. It pre-configures the country's locale, holidays, working-time limits, surcharges and industry presets on first boot. The code must match a file in the regions folder of the package, otherwise the installer aborts.");
+        sb.AppendLine();
+        sb.AppendLine("When it is done, open https://<your server name> in a browser. The certificate is self-signed, so browsers warn until you place a trusted certificate in nginx/certs (nginx\\certs on Windows).");
+        sb.AppendLine();
+
+        sb.AppendLine("### 5. First login");
+        sb.AppendLine();
+        sb.AppendLine($"On a fresh installation the login is {ExternalLinks.DemoLoginEmail} / {ExternalLinks.DemoLoginPassword}. Change this password immediately after the first login and set your mail/SMTP settings in the admin UI.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 6. Updates");
+        sb.AppendLine();
+        sb.AppendLine("On Linux and Windows an update service inside the stack applies newly released versions automatically, with a backup before every update and automatic rollback if anything goes wrong. On Windows this only works if the install folder is on a local drive; installations made with an older install.ps1 must run the script once again from a current package, otherwise automatic updates break.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 7. Known limits");
+        sb.AppendLine();
+        sb.AppendLine("- Office-PC setup: the PC must be running during working hours. The team reaches Klacks on the office network; access from outside is not set up.");
+        sb.AppendLine("- Docker Desktop is a separate product with its own licence limit: according to the Klacks SME page it is free of charge for businesses with fewer than 250 employees and less than 10 million USD in annual revenue.");
+        sb.AppendLine("- Data is stored in your installation in the open PostgreSQL database. A complete data export is planned for version 1.1.");
+        sb.AppendLine("- Keep the .env file in the install folder safe: it holds the generated secrets, and without it every stored password and API key is unrecoverable.");
+        sb.AppendLine("- Klacks was developed and tested with a dataset of 5,000 employees; how smoothly it runs on a PC depends on the PC's performance.");
+        sb.AppendLine("- macOS is not covered by these steps.");
+        sb.AppendLine();
+
+        sb.AppendLine("### 8. If something fails");
+        sb.AppendLine();
+        sb.AppendLine("- The installer stops right at the start: it first runs docker version and docker compose version. Docker with the Compose plugin must be installed and respond to both commands.");
+        sb.AppendLine("- \"regions/<code>.json not found — aborting\": the country code does not match a file in the regions folder. Use a code that exists there or leave REGION / -Region out.");
+        sb.AppendLine("- \"Could not fetch manifest. Falling back to :latest tags\": the installer could not read the release manifest on github.com and continues with the latest image tags. Check the outbound access to github.com.");
+        sb.AppendLine("- Windows, \"Could not map this folder into the Docker VM; automatic updates will not work\": install Klacks on a local drive (for example C:\\klacks) and run the script again.");
+        sb.AppendLine("- Windows, \"Could not create the certificate\": place server.crt and server.key in nginx\\certs and run the script again.");
+        sb.AppendLine("- \"API did not report healthy yet\": run docker compose logs klacks-api in the install folder to see why.");
+        sb.AppendLine("- \"update-public-key.pem missing\": automatic update signature verification cannot run until UPDATE_SIGNATURE_PUBLIC_KEY is set.");
+        sb.AppendLine("- Ports 80 and 443 must be free; they can be changed with HTTP_PORT / HTTPS_PORT (Linux) or -HttpPort / -HttpsPort (Windows).");
+        sb.AppendLine();
+
+        sb.AppendLine("### 9. Documentation");
+        sb.AppendLine();
+        AppendDocsLinks(sb, baseUrl);
+        sb.AppendLine();
+    }
+
+    private static string DocsHomeUrl(string baseUrl)
+    {
+        return $"{baseUrl}{ExternalLinks.DocsBasePath}{English.DocsLocale}/";
+    }
+
+    private static void AppendDocsLinks(StringBuilder sb, string baseUrl)
+    {
+        var docsHome = DocsHomeUrl(baseUrl);
+        AppendDocsLink(sb, docsHome, DocsHomeTitle, "Product documentation.");
+        AppendDocsLink(sb, $"{docsHome}{InstallDocsPath}", DocsInstallTitle, "Playground and on-premise installation.");
+    }
+
+    private static void AppendDocsLink(StringBuilder sb, string url, string title, string description)
+    {
+        sb.AppendLine($"- [{title}]({url}): {description}");
+    }
+
+    private static void AppendBusinessSizeLinks(StringBuilder sb, string baseUrl)
+    {
+        foreach (var (slug, title, summary, _) in BusinessSizePages)
+        {
+            AppendLink(sb, baseUrl, $"{HomeCountry}/{slug}", title, summary);
+        }
+    }
+
+    private static void AppendAboutLink(StringBuilder sb, string baseUrl)
+    {
+        AppendLink(sb, baseUrl, $"{HomeCountry}/{CountryPageLinks.AboutSlug}", AboutTitle, AboutSummary);
     }
 
     private static void AppendLink(StringBuilder sb, string baseUrl, string pageKey, string title, string? description)

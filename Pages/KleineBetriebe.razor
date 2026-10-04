@@ -3,7 +3,7 @@
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@GetText("pageTitle")</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("metaDescription")" />
 
 <div class="min-h-screen bg-surface text-on-surface">
     <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-8 text-center">
@@ -95,9 +95,9 @@
         <div class="bg-night rounded-2xl py-10 md:py-14 px-8 text-center">
             <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
             <p class="text-white/70 max-w-xl mx-auto mb-8">@GetText("cta.text")</p>
-            <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
-                <span class="material-symbols-outlined">play_circle</span> @GetText("cta.playground")
-            </a>
+            <button type="button" @onclick="OpenDemoModal" title="@GetShared("cta.demoResetNote")" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @GetText("cta.playground")
+            </button>
         </div>
     </section>
 
@@ -117,6 +117,7 @@
     private const string PageKey = "kleine-betriebe";
     private const int PcItemCount = 6;
     private const int ServerItemCount = 3;
+    private const string SharedContentKey = "shared";
 
     private static readonly (string Icon, int Index)[] BenefitItems =
     {
@@ -129,6 +130,8 @@
 
     [Parameter] public string? Country { get; set; }
 
+    [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
+
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
 
     private string CountryKey => string.IsNullOrEmpty(Country) ? LanguageCountries.DefaultCountryFor(ResolvedCulture) : Country;
@@ -140,4 +143,6 @@
     private string LicenseHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.LicenseSlug);
 
     private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
+
+    private string GetShared(string key) => ContentProvider.GetText(ResolvedCulture, SharedContentKey, key);
 }

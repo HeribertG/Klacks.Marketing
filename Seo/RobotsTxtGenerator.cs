@@ -2,7 +2,8 @@ using System.Text;
 
 namespace Klacks.Marketing.Seo;
 
-// Builds the robots.txt body. Everything is allowed for everyone; the explicit
+// Builds the robots.txt body. Everything is allowed for everyone except the store API
+// (its download endpoints bump a public counter, so crawlers must not follow them); the explicit
 // per-crawler Allow blocks (from AiCrawlers) make the welcome for AI crawlers
 // unambiguous, since some only read their own named group. The Sitemap line must be
 // an absolute URL per the standard, and a trailing comment points machine readers
@@ -11,6 +12,7 @@ public static class RobotsTxtGenerator
 {
     private const string WildcardUserAgent = "*";
     private const string AllowRoot = "/";
+    private const string DisallowStoreApi = "/store/api/";
     private const string SitemapPath = "/sitemap.xml";
     private const string LlmsPath = "/llms.txt";
 
@@ -36,6 +38,7 @@ public static class RobotsTxtGenerator
     {
         sb.AppendLine($"User-agent: {userAgent}");
         sb.AppendLine($"Allow: {AllowRoot}");
+        sb.AppendLine($"Disallow: {DisallowStoreApi}");
         sb.AppendLine();
     }
 }

@@ -88,22 +88,39 @@ app.MapFallbackToPage("/_Host");
 // Resolved once so the SEO endpoints below don't each index IConfiguration separately.
 var baseUrl = app.Configuration["Site:BaseUrl"] ?? string.Empty;
 
-app.MapGet("/sitemap.xml", (IPageContentProvider contentProvider) =>
-    Results.Text(SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn), "application/xml"));
+const string XmlContentType = "application/xml";
+const string PlainTextContentType = "text/plain; charset=utf-8";
+string[] seoEndpointMethods = [HttpMethods.Get, HttpMethods.Head];
+
+app.MapMethods("/sitemap.xml", seoEndpointMethods, (HttpContext context, IPageContentProvider contentProvider) =>
+    SeoText(context, XmlContentType, () => SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn)));
 
 // robots.txt and the llms.txt companions carry a ".txt" extension, so the
 // known-page guard in the pipeline above lets them straight through to routing
 // (same mechanism as /sitemap.xml).
-app.MapGet("/robots.txt", () =>
-    Results.Text(RobotsTxtGenerator.Build(baseUrl), "text/plain; charset=utf-8"));
+app.MapMethods("/robots.txt", seoEndpointMethods, (HttpContext context) =>
+    SeoText(context, PlainTextContentType, () => RobotsTxtGenerator.Build(baseUrl)));
 
-app.MapGet("/llms.txt", () =>
-    Results.Text(LlmsTxtGenerator.BuildShort(baseUrl), "text/plain; charset=utf-8"));
+app.MapMethods("/llms.txt", seoEndpointMethods, (HttpContext context) =>
+    SeoText(context, PlainTextContentType, () => LlmsTxtGenerator.BuildShort(baseUrl)));
 
-app.MapGet("/llms-full.txt", () =>
-    Results.Text(LlmsTxtGenerator.BuildFull(baseUrl), "text/plain; charset=utf-8"));
+app.MapMethods("/llms-full.txt", seoEndpointMethods, (HttpContext context) =>
+    SeoText(context, PlainTextContentType, () => LlmsTxtGenerator.BuildFull(baseUrl)));
 
 app.Run();
+
+// HEAD answers with the headers only, so the (large) body is not generated just to
+// be discarded; GET behaves exactly as before.
+static IResult SeoText(HttpContext context, string contentType, Func<string> build)
+{
+    if (HttpMethods.IsHead(context.Request.Method))
+    {
+        context.Response.ContentType = contentType;
+        return Results.Empty;
+    }
+
+    return Results.Text(build(), contentType);
+}
 
 // Framework paths and static assets are served by endpoints, not by component
 // routes, so they must bypass the known-page check.

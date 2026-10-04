@@ -1,10 +1,11 @@
 @using Klacks.Marketing.Localization
+@using Klacks.Marketing.Localization.Seo
 @inject Microsoft.Extensions.Configuration.IConfiguration Configuration
 @{
     var firstPathSegment = Context.Request.Path.Value?.Trim('/').Split('/').FirstOrDefault() ?? string.Empty;
     var currentCulture = SupportedCultures.Resolve(firstPathSegment);
     var baseUrl = (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
-    var ogUrl = $"{baseUrl}{Context.Request.Path.Value}";
+    var ogUrl = SeoUrls.FromRequestPath(baseUrl, Context.Request.Path.Value);
 }
 <!DOCTYPE html>
 <html class="light" lang="@currentCulture.Code" dir="@(currentCulture.IsRtl ? "rtl" : "ltr")">
