@@ -72,7 +72,7 @@
       {
         "icon": "event_available",
         "title": "Plazo de 5 días en la distribución irregular",
-        "text": "Cuando Klacks planifica una distribución irregular de la jornada, el preaviso legal mínimo de 5 días se respeta y se documenta automáticamente."
+        "text": "El preaviso legal mínimo de 5 días lo registra como plazo de planificación; Klacks calcula a partir de él hasta cuándo debe estar listo el plan. Si una distribución irregular de la jornada se ha comunicado a tiempo, Klacks no lo comprueba automáticamente."
       },
       {
         "icon": "gavel",
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "En concreto",
     "title": "Descanso, Registro de Jornada y preaviso, de un vistazo",
-    "text": "Klacks detecta automáticamente cuando un turno planificado incumpliría el descanso de 12 horas, documenta el inicio y el fin de cada servicio para el Registro de Jornada y respeta el plazo de 5 días en la distribución irregular &mdash; sin cálculos manuales."
+    "text": "Klacks detecta automáticamente cuando un turno planificado incumpliría el descanso de 12 horas y documenta el inicio y el fin de cada servicio para el Registro de Jornada &mdash; sin cálculos manuales."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Descubra Klacks en su empresa",
-    "text": "Pruebe en el Playground cómo Klacks automatiza los descansos, el Registro de Jornada y los plazos de preaviso &mdash; instalado en sus instalaciones o en el Playground, sin cuotas de licencia y sin registro."
+    "text": "Pruebe en el Playground cómo Klacks comprueba los descansos y documenta el Registro de Jornada &mdash; instalado en sus instalaciones o en el Playground, sin cuotas de licencia y sin registro."
   }
 }

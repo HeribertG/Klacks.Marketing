@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Dla logistyki i transportu w Polsce",
     "titleHtml": "Trasy, czas pracy, terminy &mdash; <span class=\"text-secondary\">wszystko pod kontrolą.</span>",
-    "subtitle": "Klacks planuje trasy i kierowców &mdash; z twardym 10-godzinnym limitem przy pracy w nocy oraz nowym obowiązkiem montażu tachografu dla lekkich pojazdów dostawczych od 1 lipca 2026 r. Trasy są optymalizowane automatycznie.",
+    "subtitle": "Klacks planuje trasy i kierowców &mdash; z uwzględnieniem ustawionego maksymalnego dziennego czasu pracy oraz nowego obowiązku montażu tachografu dla lekkich pojazdów dostawczych od 1 lipca 2026 r. Trasy są optymalizowane automatycznie.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks dla tras i zleceń kierowców w Polsce",
     "screenshotLabel": "Oś czasu"
@@ -23,7 +23,7 @@
     "subtitle": "Od zoptymalizowanej trasy po nowy obowiązek dla lekkich pojazdów dostawczych &mdash; wszystko działa razem.",
     "items": [
       { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa przystanki w najsensowniejszej kolejności &mdash; krótkie trasy, dotrzymane przedziały czasowe, mniej pustych przejazdów." },
-      { "icon": "nightlight", "title": "10-godzinny limit nocny automatycznie pod kontrolą", "text": "Klacks rozpoznaje, gdy zmiana wchodzi w okno nocne &mdash; 4-godzinne okno nocne konfigurujesz dokładnie tak, jak ustalił to Twój zakład &mdash; i automatycznie ostrzega, gdy łączny czas pracy między dwoma okresami odpoczynku miałby przekroczyć 10-godzinny limit. Na życzenie Klacks blokuje przekroczenie w sposób twardy &mdash; nowe naruszenie można wtedy zapisać wyłącznie za udokumentowaną zgodą przełożonego." },
+      { "icon": "nightlight", "title": "10-godzinny limit jako maksymalny dzienny czas pracy", "text": "10-godzinny limit ustawiasz jako maksymalny dzienny czas pracy, np. w umowie Twoich kierowców nocnych, a Klacks ostrzega, gdy czas pracy danego dnia miałby go przekroczyć. Na życzenie Klacks blokuje przekroczenie w sposób twardy &mdash; nowe naruszenie można wtedy zapisać wyłącznie za udokumentowaną zgodą przełożonego. Klacks nie ocenia przy tym, czy zmiana wchodzi w 4-godzinne okno nocne, a czas pracy liczony jest dla każdego dnia kalendarzowego, a nie między dwoma okresami odpoczynku." },
       { "icon": "fact_check", "title": "Lekkie pojazdy dostawcze od 1.7.2026 r. uwzględnione w planowaniu", "text": "Pojazdy o masie od 2,5 do 3,5 tony w międzynarodowym przewozie towarów Klacks planuje z tymi samymi zapisanymi limitami czasu pracy i odpoczynku co wszystkie trasy. Zasad czasu jazdy dla ciężkich samochodów ciężarowych &mdash; 4,5-godzinnego czasu jazdy, 45-minutowej przerwy i maksymalnie 9 (a w dwa dni w tygodniu 10) godzin dziennego czasu jazdy &mdash; Klacks nie sprawdza; ich ewidencję zapewnia tachograf." },
       { "icon": "badge", "title": "Kategorie prawa jazdy dopasowane", "text": "Klacks przydziela trasy wyłącznie kierowcom z odpowiednimi uprawnieniami &mdash; i ostrzega przed wygasającymi dokumentami. Na życzenie Klacks całkowicie blokuje przydział kierowcy z przeterminowanym obowiązkowym dokumentem &mdash; zaplanowany zostanie tylko ten, kto ma ważny dokument." },
       { "icon": "smart_toy", "title": "Klacksy rozumie Twoje zdanie", "text": "„Zaplanuj trasy na jutro, kierowca Kowalski jest chory” wystarczy &mdash; Klacksy uruchamia planowanie od nowa." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Okno nocne, lekkie pojazdy dostawcze, jeden plan",
-    "text": "Gdy zmiana wchodzi w okno nocne, Klacks automatycznie ostrzega, gdy tylko 10-godzinny limit zostałby przekroczony &mdash; i planuje także lekkie pojazdy dostawcze w międzynarodowym przewozie &mdash; ich czas jazdy od 1.7.2026 r. rejestruje tachograf."
+    "text": "Klacks automatycznie ostrzega, gdy tylko ustawiony maksymalny dzienny czas pracy zostałby przekroczony &mdash; i planuje także lekkie pojazdy dostawcze w międzynarodowym przewozie &mdash; ich czas jazdy od 1.7.2026 r. rejestruje tachograf."
   },
   "showRoutePlanning": true,
   "cta": {

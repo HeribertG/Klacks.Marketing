@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para el Servicio de Ayuda a Domicilio (SAD) en España",
     "titleHtml": "Más tiempo para los cuidados, <span class=\"text-secondary\">menos para planificar rutas.</span>",
-    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; distinguiendo correctamente entre el trayecto no retribuido de ida y vuelta al domicilio y el tiempo de desplazamiento entre clientes, que según el convenio aplicable puede computar como tiempo de trabajo. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
+    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; y computa como tiempo de trabajo el tiempo de desplazamiento registrado entre clientes allí donde lo prevé el convenio aplicable. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline de Klacks para la planificación de rutas en el Servicio de Ayuda a Domicilio",
     "screenshotLabel": "Timeline"
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "En concreto",
     "title": "Tiempo de trayecto, convenio, un solo plan",
-    "text": "Klacks computa como tiempo de trabajo el desplazamiento entre clientes allí donde lo prevé el Convenio SAD, deja fuera el trayecto puro de ida y vuelta al domicilio, y controla el límite de 35 horas vigente en Madrid desde 2026 &mdash; sin cálculos manuales."
+    "text": "Klacks computa como tiempo de trabajo el desplazamiento registrado entre clientes allí donde lo prevé el Convenio SAD &mdash; el trayecto puro de ida y vuelta al domicilio simplemente no lo registra como tiempo de desplazamiento &mdash; y controla el límite de 35 horas vigente en Madrid desde 2026 &mdash; sin cálculos manuales."
   },
   "showRoutePlanning": true,
   "cta": {

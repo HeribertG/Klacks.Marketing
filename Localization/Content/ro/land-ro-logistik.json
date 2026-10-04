@@ -46,8 +46,8 @@
       },
       {
         "icon": "bedtime",
-        "title": "Limita de 10 ore la cursele de noapte, verificată",
-        "text": "Klacks detectează intervențiile din intervalul de noapte și avertizează de îndată ce timpul total de lucru riscă să depășească limita de 10 ore per 24 de ore."
+        "title": "Limita de 10 ore ca timp maxim de lucru zilnic",
+        "text": "Limita de 10 ore pentru cursele de noapte o stabiliți ca timp maxim de lucru zilnic, de exemplu în contractul șoferilor dumneavoastră de noapte, iar Klacks avertizează de îndată ce timpul de lucru dintr-o zi riscă să o depășească. Intervențiile din intervalul de noapte nu sunt detectate separat de Klacks în acest scop."
       },
       {
         "icon": "local_shipping",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Cursă transfrontalieră, un singur plan",
-    "text": "Klacks verifică limitele de timp de lucru și de repaus configurate, avertizează atunci când există riscul depășirii limitei de 10 ore la cursele de noapte și planifică și autoutilitarele care intră nou sub Pachetul de mobilitate UE de la iulie 2026."
+    "text": "Klacks verifică limitele de timp de lucru și de repaus configurate, avertizează atunci când există riscul depășirii timpului maxim de lucru zilnic și planifică și autoutilitarele care intră nou sub Pachetul de mobilitate UE de la iulie 2026."
   },
   "showRoutePlanning": true,
   "cta": {

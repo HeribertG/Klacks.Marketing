@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Transport &amp; Logistik in Dänemark",
     "titleHtml": "Touren, Nachtfenster, Tarifstufen &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der 10-Stunden-Grenze bei Nachtarbeit nach Bilag 23 im Blick und der zum 1. März 2026 steigenden Tarifstufe der Transport- og Logistikoverenskomst konfigurierbar hinterlegt.",
+    "subtitle": "Klacks plant Touren und Fahrer:innen &mdash; mit der Tageshöchstarbeitszeit, die Sie hinterlegen, im Blick und der zum 1. März 2026 steigenden Tarifstufe der Transport- og Logistikoverenskomst konfigurierbar hinterlegt.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in Dänemark",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "timer",
-        "title": "10-Stunden-Grenze bei Nachtarbeit überwacht",
-        "text": "Das Nachtfenster nach Bilag 23 lässt sich hinterlegen, und Klacks warnt, bevor die 10-Stunden-Grenze überschritten wird &mdash; auch bei einem abweichend vereinbarten 4-Stunden-Fenster."
+        "title": "10-Stunden-Grenze als Tageshöchstarbeitszeit",
+        "text": "Die 10-Stunden-Grenze nach Bilag 23 hinterlegen Sie als Tageshöchstarbeitszeit, etwa im Vertrag Ihrer Nachtfahrer:innen, und Klacks warnt, bevor sie überschritten wird. Eine Grenze, die automatisch nur für Schichten im Nachtfenster gilt, kennt Klacks nicht."
       },
       {
         "icon": "payments",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nachtfenster und Tarifstufe, ein Plan",
-    "text": "Das Nachtfenster nach Bilag 23 lässt sich für die Tour hinterlegen, Klacks warnt vor der 10-Stunden-Grenze und wendet die zum 1. März 2026 steigende Tarifstufe an &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks warnt vor einer Überschreitung der hinterlegten Tageshöchstarbeitszeit und wendet die zum 1. März 2026 steigende Tarifstufe an &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

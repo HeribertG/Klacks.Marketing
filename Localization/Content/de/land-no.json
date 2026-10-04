@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Norwegischer Datenschutz",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die Arbeidsmiljøloven zuverlässig abbilden.</span>",
-    "subtitle": "Klacks bildet die drei Arbeitszeit-Regime der Arbeidsmiljøloven (AML) als konfigurierbare Grenzwerte ab, prüft die 14-Tage-Frist der Dienstplan-Veröffentlichung nach § 10-3 automatisch und läuft bei Ihnen installiert &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
+    "subtitle": "Klacks bildet die drei Arbeitszeit-Regime der Arbeidsmiljøloven (AML) als konfigurierbare Grenzwerte ab, berechnet, bis wann der Dienstplan für die 14-Tage-Frist nach § 10-3 fertig sein muss, und läuft bei Ihnen installiert &mdash; mit dem KI-Modell Ihrer Wahl, ganz ohne die von Datatilsynet kritisch gesehene biometrische Cloud-Erfassung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für norwegische Unternehmen",
     "screenshotLabel": "Dienstplan"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "event_available",
-        "title": "14-Tage-Publikationsfrist automatisch geprüft",
-        "text": "Klacks prüft bei der Publikation automatisch, ob der Dienstplan den hinterlegten Mindest-Vorlauf einhält &mdash; die 14-Tage-Frist nach § 10-3 hinterlegen Sie als Regel, und Klacks warnt, bevor ein Plan zu kurzfristig veröffentlicht würde."
+        "title": "14-Tage-Frist als Planungsvorlauf",
+        "text": "Die 14-Tage-Frist nach § 10-3 hinterlegen Sie als Mindest-Vorlauf für die Dienstplan-Veröffentlichung; Klacks berechnet daraus, bis wann der Plan fertig sein muss. Eine automatische Prüfung beim Veröffentlichen gibt es nicht."
       },
       {
         "icon": "timer",
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Schichtregime und Bekanntgabefrist, ein Blick",
-    "text": "Sie legen fest, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt &mdash; Klacks wendet die passende 40-, 38- oder 36-Stunden-Grenze automatisch an und prüft bei der Veröffentlichung automatisch, ob die 14-Tage-Frist nach § 10-3 eingehalten ist &mdash; ohne Nachrechnen von Hand."
+    "text": "Sie legen fest, ob ein Schichtplan als døgnkontinuerlig, als Sonn-/Feiertags-Zweischicht oder als helkontinuerlig gilt &mdash; Klacks wendet die passende 40-, 38- oder 36-Stunden-Grenze automatisch an, und berechnet, bis wann der Plan für die 14-Tage-Frist nach § 10-3 fertig sein muss &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime abbildet, die 14-Tage-Publikationsfrist automatisch prüft und alle drei rollierenden Überstundengrenzen parallel mitzählt &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks AML-Arbeitszeitregime abbildet und alle drei rollierenden Überstundengrenzen parallel mitzählt &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

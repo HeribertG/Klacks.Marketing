@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste (Beveiliging) in den Niederlanden",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Verschuivingstoeslag im Blick.</span>",
-    "subtitle": "Klacks veröffentlicht den Dienstplan automatisch bis Donnerstag für die kommenden vier Wochen und macht sichtbar, welche Verschuivingstoeslag bei späteren Änderungen greift &mdash; nach CAO Particuliere Beveiliging.",
+    "subtitle": "Klacks plant Objekte und Dienste regelbasiert &mdash; aus dem hinterlegten Vorlauf berechnet Klacks, bis wann der Plan für die Veröffentlichungsfrist nach CAO Particuliere Beveiliging fertig sein muss.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Rooster in der niederländischen Sicherheitsbranche",
     "screenshotLabel": "Timeline"
@@ -22,12 +22,12 @@
     "title": "Wie Klacks niederländische Sicherheitsdienste entlastet",
     "subtitle": "Vom pünktlichen Rooster bis zur korrekten Verschuivingstoeslag &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "event", "title": "Rooster automatisch donnerstags veröffentlicht", "text": "Klacks veröffentlicht Woche 1 konkret und die Wochen 2-4 als Zeitfenster &mdash; termingerecht nach CAO Particuliere Beveiliging." },
-      { "icon": "trending_up", "title": "Verschuivingstoeslag-Stufe sichtbar gemacht", "text": "Ändert sich ein Dienst nachträglich, zeigt Klacks, welche gestaffelte Verschuivingstoeslag &mdash; 5%, 10% oder 20% je nach Vorlauf &mdash; greift." },
+      { "icon": "event", "title": "Donnerstags-Frist als Planungsvorlauf", "text": "Den Vorlauf bis zur Veröffentlichung am Donnerstag hinterlegen Sie als Planungsfrist; Klacks berechnet daraus, bis wann der Plan fertig sein muss. Veröffentlicht wird nicht automatisch, und die Aufteilung in eine konkrete Woche 1 und Zeitfenster für die Wochen 2-4 nehmen Sie selbst vor." },
+      { "icon": "trending_up", "title": "Verschuivingstoeslag als Zuschlag hinterlegt", "text": "Die Verschuivingstoeslag lässt sich als Zuschlag hinterlegen und dem geänderten Dienst zuweisen &mdash; welche Stufe (5%, 10% oder 20% je nach Vorlauf) greift, ermittelt Klacks nicht automatisch." },
       { "icon": "flight", "title": "Schiphol-Startmomenten im Blick", "text": "Klacks zählt die unterschiedlichen Dienstantrittszeiten je Planperiode und warnt, bevor das Maximum von 10 startmomenten überschritten wird." },
       { "icon": "shield", "title": "Objekte &amp; Posten lückenlos", "text": "Jeder Posten über alle Objekte hinweg &mdash; Klacks zeigt jede offene Stelle sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "verified", "title": "Zertifikate automatisch geprüft", "text": "Klacks berücksichtigt bei der Zuteilung die passende Qualifikation und warnt, bevor ein Nachweis abläuft. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Noord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Zertifikate, Verfügbarkeit und Rooster-Fristen." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Noord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Zertifikate und Verfügbarkeit." }
     ]
   },
   "example": {

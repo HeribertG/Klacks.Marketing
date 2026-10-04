@@ -23,7 +23,7 @@
     "subtitle": "From automatic routing to correct travel-time recording &mdash; it all fits together.",
     "items": [
       { "icon": "route", "title": "Routes optimised automatically", "text": "Klacks lays out visit routes so that journeys stay short and time windows are kept &mdash; whether by car, bike or on foot." },
-      { "icon": "schedule", "title": "Travel time correctly recorded as working time", "text": "In line with the Tyco ruling, Klacks records not only journeys between clients but, for staff with no fixed place of work, also the first and last journey automatically as working time." },
+      { "icon": "schedule", "title": "Travel time correctly recorded as working time", "text": "In line with the Tyco ruling, journeys between clients and, for staff with no fixed place of work, also the first and last journey count as working time &mdash; in Klacks, any travel time you record for this counts as working time. Klacks does not automatically distinguish between staff with and without a fixed place of work." },
       { "icon": "payments", "title": "HSE remuneration kept in view", "text": "Klacks supports tracking the Living Wage obligation and travel-time remuneration under the 2023 HSE Home Support Authorisation Scheme." },
       { "icon": "verified", "title": "Qualifications taken into account automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all. On request, Klacks can fully block assignment once a required qualification has expired &mdash; only staff with a valid qualification are scheduled." },
       { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data never leaves your organisation &mdash; not even for the AI." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "In practice",
     "title": "Travel time, HSE pay, one plan",
-    "text": "Klacks automatically counts journeys between clients, as well as the first and last journey, as working time, while keeping the requirements of the HSE Home Support Authorisation Scheme in view &mdash; no manual recalculating required."
+    "text": "Klacks counts the recorded travel time between clients &mdash; and, if you wish, the first and last journey &mdash; as working time, while keeping the requirements of the HSE Home Support Authorisation Scheme in view &mdash; no manual recalculating required."
   },
   "showRoutePlanning": true,
   "cta": {

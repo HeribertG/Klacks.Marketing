@@ -42,7 +42,7 @@
       {
         "icon": "schedule",
         "title": "Wegzeit vertragskonform abgebildet",
-        "text": "Klacks erfasst Fahrzeit zwischen Klient:innen als Arbeitszeit, sobald der Einzel- oder Kollektivvertrag dies vorsieht &mdash; nicht pauschal, sondern regelbasiert je Vertrag."
+        "text": "Sieht der Einzel- oder Kollektivvertrag Wegzeit als Arbeitszeit vor, erfassen Sie die Fahrzeit zwischen Klient:innen als Wegzeit &mdash; Klacks zählt sie dann als Arbeitszeit. Eine Wegzeit-Regel je Vertrag kennt Klacks nicht."
       },
       {
         "icon": "block",
@@ -62,14 +62,14 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy versteht Ihren Satz",
-        "text": "„Fülle die Touren für morgen“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Vertragsart, Wegzeit-Regelung und Verfügbarkeit."
+        "text": "„Fülle die Touren für morgen“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Verfügbarkeit und die hinterlegten Arbeitszeitgrenzen."
       }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit und Teilzeitvertrag, ein Plan",
-    "text": "Klacks prüft automatisch, ob eine Teilzeitkraft laut Vertrag Wegzeit als Arbeitszeit erfasst bekommt, und warnt vor unzulässigen Überstunden, bevor sie entstehen."
+    "text": "Klacks zählt die erfasste Wegzeit als Arbeitszeit und warnt, bevor eine Teilzeitkraft mehr Stunden zugeteilt bekommt als ihre hinterlegten Grenzen erlauben."
   },
   "showRoutePlanning": true,
   "cta": {

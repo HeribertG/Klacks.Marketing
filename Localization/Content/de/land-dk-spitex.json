@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (Hjemmepleje) in Dänemark",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Dienstplan-Verwaltung.</span>",
-    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; dokumentiert die Stunden für die neue Fritvalgsordning ab OK26 und warnt vor der 4-Tage-Frist bei Umplanungen. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Touren und Dienste automatisch &mdash; und dokumentiert die Stunden für die neue Fritvalgsordning ab OK26. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren in der dänischen Hjemmepleje",
     "screenshotLabel": "Timeline"
@@ -46,8 +46,8 @@
       },
       {
         "icon": "event_repeat",
-        "title": "4-Tage-Frist automatisch überwacht",
-        "text": "Klacks warnt, bevor eine Umplanung die 4-Tage-Frist unterschreitet &mdash; und muss es doch kurzfristig sein, bucht Klacks den als Fixbetrag-Zuschlag hinterlegten Satz von 30,85 DKK für jede umgelegte Stunde direkt mit."
+        "title": "Umplanungszuschlag als Fixbetrag",
+        "text": "Muss eine Umplanung kurzfristiger als 4 Tage erfolgen, buchen Sie den als Fixbetrag-Zuschlag hinterlegten Satz von 30,85 DKK für jede umgelegte Stunde mit. Ob die 4-Tage-Frist unterschritten ist, prüft Klacks nicht automatisch."
       },
       {
         "icon": "call_split",
@@ -74,6 +74,6 @@
   "showRoutePlanning": true,
   "cta": {
     "title": "Klacks in Ihrer Hjemmepleje erleben",
-    "text": "Probieren Sie im Playground aus, wie Klacks Touren plant, Fritvalgsordning-Stunden dokumentiert und Umplanungsfristen im Blick behält &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Probieren Sie im Playground aus, wie Klacks Touren plant und Fritvalgsordning-Stunden dokumentiert &mdash; oder installieren Sie es direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."
   }
 }

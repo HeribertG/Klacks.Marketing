@@ -42,7 +42,7 @@
       {
         "icon": "schedule",
         "title": "Timpul de deplasare reflectat conform contractului",
-        "text": "Klacks înregistrează timpul de deplasare între clienți ca timp de lucru atunci când contractul individual sau colectiv de muncă prevede acest lucru &mdash; nu în mod uniform, ci pe bază de reguli, pentru fiecare contract în parte."
+        "text": "Dacă contractul individual sau colectiv de muncă prevede timpul de deplasare ca timp de lucru, înregistrați timpul de deplasare între clienți ca timp de deplasare &mdash; Klacks îl contabilizează apoi ca timp de lucru. Klacks nu cunoaște o regulă privind timpul de deplasare pentru fiecare contract în parte."
       },
       {
         "icon": "block",
@@ -62,14 +62,14 @@
       {
         "icon": "smart_toy",
         "title": "Klacksy vă înțelege propoziția",
-        "text": "„Completează traseele pentru mâine” este suficient &mdash; Klacksy pornește planificarea, iar Klacks verifică tipul de contract, regula privind timpul de deplasare și disponibilitatea."
+        "text": "„Completează traseele pentru mâine” este suficient &mdash; Klacksy pornește planificarea, iar Klacks verifică disponibilitatea și limitele de timp de lucru configurate."
       }
     ]
   },
   "example": {
     "eyebrow": "Concret",
     "title": "Timpul de deplasare și contractul part-time, un plan",
-    "text": "Klacks verifică automat dacă, potrivit contractului, unui angajat part-time i se înregistrează timpul de deplasare ca timp de lucru și avertizează în legătură cu orele suplimentare nepermise, înainte ca acestea să apară."
+    "text": "Klacks contabilizează timpul de deplasare înregistrat ca timp de lucru și avertizează înainte ca unui angajat part-time să i se aloce mai multe ore decât permit limitele configurate pentru acesta."
   },
   "showRoutePlanning": true,
   "cta": {

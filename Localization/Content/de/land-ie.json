@@ -71,8 +71,8 @@
       },
       {
         "icon": "campaign",
-        "title": "Schichtankündigung im Blick",
-        "text": "Klacks prüft den Mindest-Vorlauf für die Dienstplan-Publikation automatisch: Die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten wird als Publikationsfrist hinterlegt, und Klacks warnt, wenn ein Plan zu kurzfristig veröffentlicht würde."
+        "title": "Vorlauffrist als Planungsfrist",
+        "text": "Die von Section 17 OWTA verlangte 24-Stunden-Vorlauffrist für Start- und Endzeiten hinterlegen Sie als Mindest-Vorlauf; Klacks berechnet daraus, bis wann der Plan fertig sein muss. Eine automatische Prüfung beim Veröffentlichen gibt es nicht."
       },
       {
         "icon": "fact_check",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "24 Stunden Vorlauf, ein Blick",
-    "text": "Ein Dienstplan ändert sich kurzfristig. Klacks prüft die 24-Stunden-Vorlauffrist nach Section 17 OWTA automatisch gegen die hinterlegte Publikationsfrist und behält zugleich die 11-Stunden-Ruhezeit im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Ein Dienstplan ändert sich kurzfristig. Klacks prüft dabei die 11-Stunden-Ruhezeit live; ob die 24-Stunden-Vorlauffrist nach Section 17 OWTA gewahrt ist, prüft Klacks nicht automatisch &mdash; die Ruhezeit rechnen Sie aber nicht mehr von Hand nach."
   },
   "showRoutePlanning": false,
   "cta": {

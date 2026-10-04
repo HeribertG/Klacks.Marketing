@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Voor beveiligingsdiensten in Nederland",
     "titleHtml": "Elke post bezet. <span class=\"text-secondary\">Elke verschuivingstoeslag in beeld.</span>",
-    "subtitle": "Klacks publiceert het dienstrooster automatisch uiterlijk donderdag voor de komende vier weken en toont welke verschuivingstoeslag bij latere wijzigingen geldt &mdash; volgens de CAO Particuliere Beveiliging.",
+    "subtitle": "Klacks plant objecten en diensten op basis van regels &mdash; de publicatietermijn en de verschuivingstoeslag volgens de CAO Particuliere Beveiliging houdt u in het oog: Klacks berekent uit de vastgelegde voorlooptijd wanneer het rooster klaar moet zijn.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tijdlijnweergave voor objectbezetting en rooster in de Nederlandse beveiligingsbranche",
     "screenshotLabel": "Tijdlijn"
@@ -22,12 +22,12 @@
     "title": "Hoe Klacks Nederlandse beveiligingsdiensten ontlast",
     "subtitle": "Van het tijdige rooster tot de correcte verschuivingstoeslag &mdash; alles grijpt in elkaar.",
     "items": [
-      { "icon": "event", "title": "Rooster automatisch op donderdag gepubliceerd", "text": "Klacks publiceert week 1 concreet en de weken 2-4 als tijdvak &mdash; tijdig volgens de CAO Particuliere Beveiliging." },
-      { "icon": "trending_up", "title": "Verschuivingstoeslag-schaal zichtbaar gemaakt", "text": "Wijzigt een dienst achteraf, dan toont Klacks welke gestaffelde verschuivingstoeslag &mdash; 5%, 10% of 20% afhankelijk van de voorlooptijd &mdash; van toepassing is." },
+      { "icon": "event", "title": "Donderdagtermijn als planningsvoorlooptijd", "text": "De voorlooptijd tot de publicatie op donderdag legt u vast als planningstermijn; Klacks berekent daaruit wanneer het rooster klaar moet zijn. Er wordt niet automatisch gepubliceerd, en de indeling in een concrete week 1 en tijdvakken voor de weken 2-4 maakt u zelf." },
+      { "icon": "trending_up", "title": "Verschuivingstoeslag als toeslag vastgelegd", "text": "De verschuivingstoeslag kan als toeslag worden vastgelegd en aan de gewijzigde dienst worden toegewezen &mdash; welke staffel (5%, 10% of 20% afhankelijk van de voorlooptijd) van toepassing is, bepaalt Klacks niet automatisch." },
       { "icon": "flight", "title": "Schiphol-startmomenten in beeld", "text": "Klacks telt de verschillende diensttijdstippen per planperiode en waarschuwt voordat het maximum van 10 startmomenten wordt overschreden." },
       { "icon": "shield", "title": "Objecten &amp; posten sluitend", "text": "Elke post over alle objecten heen &mdash; Klacks toont elke openstaande plek direct en vult deze desgewenst automatisch op." },
       { "icon": "verified", "title": "Certificaten automatisch gecontroleerd", "text": "Klacks houdt bij de indeling rekening met de juiste kwalificatie en waarschuwt voordat een certificaat verloopt. Desgewenst blokkeert Klacks de indeling met een verlopen verplicht certificaat volledig &mdash; er wordt alleen ingepland wie een geldig bewijs heeft." },
-      { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Bezet de nachtdienst voor object Noord” volstaat &mdash; Klacksy start de planning, Klacks controleert certificaten, beschikbaarheid en roostertermijnen." }
+      { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Bezet de nachtdienst voor object Noord” volstaat &mdash; Klacksy start de planning, Klacks controleert certificaten en beschikbaarheid." }
     ]
   },
   "example": {

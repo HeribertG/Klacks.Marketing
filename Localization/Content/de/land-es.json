@@ -72,7 +72,7 @@
       {
         "icon": "event_available",
         "title": "5-Tage-Frist bei unregelmäßiger Verteilung",
-        "text": "Plant Klacks eine unregelmäßige Jornada-Verteilung, wird die gesetzliche Vorlauffrist von mindestens 5 Tagen automatisch eingehalten und dokumentiert."
+        "text": "Den Mindest-Vorlauf von 5 Tagen hinterlegen Sie als Planungsfrist; Klacks berechnet daraus, bis wann der Plan fertig sein muss. Ob eine unregelmäßige Jornada-Verteilung rechtzeitig angekündigt wurde, prüft Klacks nicht automatisch."
       },
       {
         "icon": "gavel",
@@ -106,11 +106,11 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ruhezeit, Registro de Jornada und Vorlauffrist, ein Blick",
-    "text": "Klacks erkennt automatisch, wenn eine geplante Schicht die 12-Stunden-Ruhezeit unterschreiten würde, dokumentiert Beginn und Ende jedes Dienstes für den Registro de Jornada und hält bei unregelmäßiger Verteilung die 5-Tage-Frist ein &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks erkennt automatisch, wenn eine geplante Schicht die 12-Stunden-Ruhezeit unterschreiten würde, und dokumentiert Beginn und Ende jedes Dienstes für den Registro de Jornada &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks Ruhezeiten, Registro de Jornada und Vorlauffristen automatisiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks Ruhezeiten prüft und den Registro de Jornada dokumentiert &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

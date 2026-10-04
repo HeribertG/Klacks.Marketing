@@ -72,7 +72,7 @@
       {
         "icon": "event_available",
         "title": "Oproepkrachten korrekt geplant",
-        "text": "Klacks kennt die 4-Tage-Ankündigungsfrist für Abrufkräfte und macht sichtbar, wo eine kurzfristige Absage einen Lohnanspruch auslöst."
+        "text": "Abrufe planen Sie in Klacks mit Datum und Stunden; ob die 4-Tage-Ankündigungsfrist für Abrufkräfte gewahrt ist und eine kurzfristige Absage einen Lohnanspruch auslöst, prüft Klacks nicht automatisch."
       },
       {
         "icon": "privacy_tip",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Oproepkracht, kurzfristige Absage, ein Blick",
-    "text": "Wird eine Abrufkraft innerhalb der 4-Tage-Frist wieder abgesagt, macht Klacks den daraus entstehenden Lohnanspruch sofort sichtbar &mdash; ohne Nachrechnen von Hand."
+    "text": "Wird eine Abrufkraft kurzfristig wieder abgesagt, prüft Klacks nicht automatisch, ob das innerhalb der 4-Tage-Frist geschah und ein Lohnanspruch entsteht &mdash; Klacks liefert die geplanten und geleisteten Stunden als Grundlage für Ihre Lohnabrechnung."
   },
   "showRoutePlanning": false,
   "cta": {

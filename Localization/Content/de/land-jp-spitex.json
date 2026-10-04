@@ -42,7 +42,7 @@
       {
         "icon": "timer",
         "title": "Wegezeit korrekt als Arbeitszeit erfasst",
-        "text": "Klacks rechnet die Fahrzeit-Anteile im Tagesroster automatisch als Arbeitszeit &mdash; nur die reine An- und Rückfahrt von/zur eigenen Wohnung bleibt außen vor."
+        "text": "Klacks zählt die erfasste Fahrzeit zwischen den Einsätzen im Tagesroster als Arbeitszeit &mdash; die reine An- und Rückfahrt von/zur eigenen Wohnung erfassen Sie einfach nicht als Wegzeit."
       },
       {
         "icon": "bedtime",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegezeit und Nachtzuschlag, ein Plan",
-    "text": "Klacks rechnet die Fahrzeit zwischen Klient:innen automatisch als Arbeitszeit ein und wendet den für das japanische Nachtfenster (22:00 bis 05:00 Uhr) eingerichteten 25%-Zuschlag automatisch an &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks zählt die erfasste Fahrzeit zwischen Klient:innen als Arbeitszeit und wendet den für das japanische Nachtfenster (22:00 bis 05:00 Uhr) eingerichteten 25%-Zuschlag automatisch an &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Til transport &amp; logistik i Danmark",
     "titleHtml": "Ruter, nattevindue, overenskomsttrin &mdash; <span class=\"text-secondary\">alt under kontrol.</span>",
-    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med 10-timers-grænsen ved natarbejde efter Bilag 23 i syne og det overenskomsttrin i Transport- og Logistikoverenskomsten, der stiger pr. 1. marts 2026, konfigurerbart lagt ind.",
+    "subtitle": "Klacks planlægger ruter og chauffører &mdash; med den registrerede daglige maksimale arbejdstid i syne og det overenskomsttrin i Transport- og Logistikoverenskomsten, der stiger pr. 1. marts 2026, konfigurerbart lagt ind.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline-visning for ruter og chaufførindsatser i Danmark",
     "screenshotLabel": "Timeline"
@@ -41,8 +41,8 @@
       },
       {
         "icon": "timer",
-        "title": "10-timers-grænse ved natarbejde overvåget",
-        "text": "Nattevinduet efter Bilag 23 kan registreres, og Klacks advarer, før 10-timers-grænsen overskrides &mdash; også ved et afvigende aftalt 4-timers-vindue."
+        "title": "10-timers-grænse som daglig maksimal arbejdstid",
+        "text": "10-timers-grænsen efter Bilag 23 registreres som daglig maksimal arbejdstid, f.eks. i natchaufførernes kontrakt, og Klacks advarer, før den overskrides. En grænse, der automatisk kun gælder for vagter i nattevinduet, kender Klacks ikke."
       },
       {
         "icon": "payments",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Nattevindue og overenskomsttrin, én plan",
-    "text": "Nattevinduet efter Bilag 23 kan registreres for ruten, Klacks advarer om 10-timers-grænsen og anvender det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
+    "text": "Klacks advarer om en overskridelse af den registrerede daglige maksimale arbejdstid og anvender det overenskomsttrin, der stiger pr. 1. marts 2026 &mdash; uden manuel efterregning."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -23,7 +23,7 @@
     "subtitle": "Von der automatischen Tour bis zur korrekten Wegzeit-Erfassung &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Fahrrad oder zu Fuß." },
-      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Nach der Tyco-Linie erfasst Klacks nicht nur die Fahrten zwischen Klient:innen, sondern bei Mitarbeitenden ohne festen Arbeitsort auch den ersten und letzten Weg automatisch als Arbeitszeit." },
+      { "icon": "schedule", "title": "Wegzeit korrekt als Arbeitszeit erfasst", "text": "Nach der Tyco-Linie zählen Fahrten zwischen Klient:innen und bei Mitarbeitenden ohne festen Arbeitsort auch der erste und letzte Weg als Arbeitszeit &mdash; in Klacks zählt jede Wegzeit, die Sie dafür erfassen, als Arbeitszeit. Automatisch unterscheidet Klacks Mitarbeitende mit und ohne festen Arbeitsort nicht." },
       { "icon": "payments", "title": "HSE-Vergütung im Blick", "text": "Klacks erfasst die Wegzeit lückenlos und hinterlegt den Living-Wage-Satz sowie die Wegzeitvergütung aus dem HSE Home Support Authorisation Scheme 2023 als konfigurierbare Werte für Ihre Lohnunterlagen." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks gleicht die geforderte Qualifikation mit den hinterlegten Profilen ab und warnt rechtzeitig, bevor eine Qualifikation abläuft &mdash; die Zuteilung bleibt nachvollziehbar, ganz ohne manuelles Prüfen. Auf Wunsch blockiert Klacks die Zuweisung mit abgelaufenem Pflicht-Nachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; auch nicht zur KI." },
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, HSE-Vergütung, ein Plan",
-    "text": "Klacks rechnet Fahrten zwischen Klient:innen sowie den ersten und letzten Weg automatisch als Arbeitszeit ein und behält die Vorgaben aus dem HSE Home Support Authorisation Scheme im Blick &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks zählt die erfasste Wegzeit zwischen Klient:innen &mdash; und auf Wunsch den ersten und letzten Weg &mdash; als Arbeitszeit und behält die Vorgaben aus dem HSE Home Support Authorisation Scheme im Blick &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": true,
   "cta": {

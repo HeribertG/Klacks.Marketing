@@ -25,7 +25,7 @@
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "restaurant", "title": "Grundlage für den Mahlzeitscheck-Anspruch dokumentiert", "text": "Klacks erfasst jede Schicht mit Datum und Stunden &mdash; die Rohdaten, aus denen Ihre Lohnbuchhaltung die Arbeitstage ab 4 Stunden und den Mahlzeitscheck-Anspruch ermittelt. Eine eigene Mahlzeitscheck-Zählung oder Betriebszugehörigkeits-Prüfung führt Klacks nicht." },
       { "icon": "fact_check", "title": "Arbeitszeitrahmen wahrheitsgemäß dokumentiert", "text": "Klacks bildet den Arbeitszeitrahmen anhand der tatsächlich geplanten Schichten ab &mdash; kein Alibi-Fenster, sondern die reale Wochenend- und Nachtarbeit." },
-      { "icon": "schedule", "title": "240h-Freigrenze bei Überstunden im Blick", "text": "Klacks führt die freiwilligen Jahresüberstunden automatisch mit und zeigt an, wann die 240-Stunden-Marke erreicht ist &mdash; die Schwelle, die Ihre Lohnbuchhaltung für die Abgaben- und Steuerbefreiung braucht." },
+      { "icon": "schedule", "title": "240h-Freigrenze bei Überstunden im Blick", "text": "Klacks zählt die Überstunden über das Jahr mit und warnt, sobald eine hinterlegte Jahresgrenze wie die 240-Stunden-Marke erreicht ist &mdash; die Schwelle, die Ihre Lohnbuchhaltung für die Abgaben- und Steuerbefreiung braucht. Welche Überstunden als freiwillig gelten, unterscheidet Klacks nicht." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Auf Wunsch blockiert Klacks die Zuweisung bei abgelaufenem Pflichtnachweis komplett &mdash; eingeplant wird nur, wer einen gültigen Führerschein hat." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Janssens ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeitszeitgrenzen und Zuschläge." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Mahlzeitscheck und Arbeitszeitrahmen, ein Plan",
-    "text": "Klacks erfasst jeden Arbeitstag mit Datum und Stunden als Grundlage für den Mahlzeitscheck-Anspruch, führt die freiwilligen Überstunden bis zur 240-Stunden-Marke mit und macht den tatsächlich geplanten Arbeitszeitrahmen sichtbar &mdash; die Mahlzeitscheck-Auswertung selbst übernimmt Ihre Lohnbuchhaltung."
+    "text": "Klacks erfasst jeden Arbeitstag mit Datum und Stunden als Grundlage für den Mahlzeitscheck-Anspruch, zählt die Überstunden bis zur hinterlegten 240-Stunden-Marke mit und macht den tatsächlich geplanten Arbeitszeitrahmen sichtbar &mdash; die Mahlzeitscheck-Auswertung selbst übernimmt Ihre Lohnbuchhaltung."
   },
   "showRoutePlanning": true,
   "cta": {

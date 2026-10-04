@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhoheit in Tschechien",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks kennt das Wochensoll je Schichtmodell, die 2-Wochen-Ankündigungsfrist für Dienstpläne und die 416-Stunden-Jahresgrenze für Überstunden nach dem Zákoník práce &mdash; und läuft bei Ihnen installiert, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks kennt das Wochensoll je Schichtmodell und die 416-Stunden-Jahresgrenze für Überstunden nach dem Zákoník práce, den 2-Wochen-Vorlauf für Dienstpläne hinterlegen Sie als Planungsfrist &mdash; und Klacks läuft bei Ihnen installiert, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Tschechien",
     "screenshotLabel": "Dienstplan"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "campaign",
-        "title": "2-Wochen-Frist automatisch geprüft",
-        "text": "Klacks warnt, bevor ein Dienstplan zu kurzfristig veröffentlicht wird, und berücksichtigt die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten."
+        "title": "2-Wochen-Frist als Planungsvorlauf",
+        "text": "Den Mindest-Vorlauf für die Dienstplan-Veröffentlichung hinterlegen Sie in Tagen; Klacks berechnet daraus, bis wann der Plan fertig sein muss. Eine automatische Prüfung beim Veröffentlichen gibt es nicht, und die verkürzte 1-Wochen-Frist bei Arbeitszeitkonten unterscheidet Klacks nicht gesondert."
       },
       {
         "icon": "gavel",
@@ -111,6 +111,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks schichtabhängiges Wochensoll berechnet sowie Vorlauffristen und die 416-Stunden-Grenze überwacht &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks schichtabhängiges Wochensoll berechnet und die 416-Stunden-Grenze überwacht &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }
