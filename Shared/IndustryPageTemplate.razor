@@ -72,38 +72,6 @@
     <StepsSection Content="@Content.Steps" />
 }
 
-@if (Content.RulesCalendar is not null)
-{
-    <!-- REGELN & KALENDER -->
-    <section id="@RulesSectionAnchorId" class="reveal bg-surface-container-low py-16 md:py-32 no-line-rule">
-        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-            <div>
-                @if (!string.IsNullOrEmpty(Content.RulesCalendar.Eyebrow))
-                {
-                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.RulesCalendar.Eyebrow)</span>
-                }
-                <h2 class="text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.RulesCalendar.Title)</h2>
-                <p class="text-on-surface-variant mb-8 leading-relaxed">@((MarkupString)Content.RulesCalendar.Text)</p>
-                <ul class="space-y-6 list-none p-0">
-                    @foreach (var item in Content.RulesCalendar.Items)
-                    {
-                        <li class="flex gap-4">
-                            <div class="w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center mt-1 shrink-0">
-                                <span class="material-symbols-outlined text-secondary text-xs">@item.Icon</span>
-                            </div>
-                            <div>
-                                <span class="font-bold block text-primary">@((MarkupString)item.Title)</span>
-                                <span class="text-on-surface-variant text-sm">@((MarkupString)item.Text)</span>
-                            </div>
-                        </li>
-                    }
-                </ul>
-            </div>
-            <MagnifiedImage Src="@ScreenshotSrc(Content.RulesCalendar.ImageFile)" Alt="@Content.RulesCalendar.ImageAlt" Caption="@Content.RulesCalendar.ImageCaption" />
-        </div>
-    </section>
-}
-
 @if (Content.OpenSource is not null)
 {
     <!-- OPEN SOURCE & ON-PREMISE -->
@@ -142,30 +110,14 @@
             </div>
         }
     </div>
-
-    <!-- ZUSCHLÄGE & REGELN: ALLES EINE FRAGE DER EINSTELLUNG -->
-    @if (Content.RulesCalendar is null)
-    {
-        @* Pages without the rules and calendar section keep the "#regeln" nav anchor on the rule settings and the rule violation carousel below. *@
-        <div id="@RulesSectionAnchorId" aria-hidden="true"></div>
-    }
-    <RuleSettingsSection Culture="@Culture" />
 </section>
 
-<!-- REGELVERSTÖSSE: KLACKS WARNT SOFORT -->
-<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Rules" />
-
-<!-- SZENARIEN: PLANEN OHNE RISIKO -->
-<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Scenarios" />
-
-<!-- IM ALLTAG -->
-<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.DailyOperations" />
-
-<!-- SPEZIALDIENSTE: CONTAINER -->
-<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Containers" />
-
-<!-- SPEZIALDIENSTE: SPORADISCH UND ZEITBEREICH (noch ohne Videos, rendert nichts) -->
-<DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.SporadicTimeRange" />
+<!-- FEATURE-EXPLORER -->
+@* Same explorer as the country start page: the rules chapter carries the calendar, the surcharge settings and the live
+   violations, every other chapter one former carousel. The anchor keeps the "#regeln" nav link of the site header. *@
+<div id="@RulesSectionAnchorId" class="scroll-mt-24" aria-hidden="true"></div>
+<FeatureExplorer Culture="@Culture" ContentKey="@CountryStartTemplate.StartContentKey" RulesCalendar="@Content.RulesCalendar"
+                 KlacksyNote="@Sh(DemoCarousels.KlacksyVideoNoteKey)" InitialChapterId="@InitialExplorerChapterId" />
 
 @if (Content.Stats is not null && Content.Stats.Items.Count > 0)
 {
@@ -190,7 +142,7 @@
                 }
                 <h2 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-6">@((MarkupString)Content.Klacksy.Title)</h2>
                 <p class="text-on-surface-variant leading-relaxed">@((MarkupString)Content.Klacksy.Text)</p>
-                @if (!PageKey.Equals("klacksy", StringComparison.OrdinalIgnoreCase) && !PageKey.EndsWith("-klacksy", StringComparison.OrdinalIgnoreCase))
+                @if (!IsKlacksyPage)
                 {
                     <a href="@KlacksyPageHref" class="text-xs font-bold text-secondary inline-flex items-center gap-1 mt-6 no-underline">@Sh("nav.learnMore") <span class="material-symbols-outlined text-sm icon-directional">arrow_forward</span></a>
                 }
@@ -200,9 +152,6 @@
             </div>
         </div>
     </section>
-
-    <!-- KLACKSY: AUFGABEN IM CHAT -->
-    <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Klacksy" />
 }
 
 @if (Content.Example is not null)
@@ -280,6 +229,12 @@
     // differs when the content key (e.g. "land-ch-spitex") is not identical to the
     // route (e.g. "land-ch/spitex").
     [Parameter] public string? RoutePath { get; set; }
+
+    // The Klacksy page opens the explorer on the Klacksy chapter, every other page on the rules chapter.
+    private string? InitialExplorerChapterId => IsKlacksyPage ? DemoCarousels.KlacksySectionId : null;
+
+    private bool IsKlacksyPage => PageKey.Equals(KlacksySlug, StringComparison.OrdinalIgnoreCase)
+        || PageKey.EndsWith("-" + KlacksySlug, StringComparison.OrdinalIgnoreCase);
 
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 

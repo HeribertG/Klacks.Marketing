@@ -21,7 +21,8 @@
    stays without recorded rule clips (calendar and surcharges only), every other chapter needs at least one clip.
    Culture is the page culture, ContentKey the content file with the explorer texts (chapter labels, recording prefix,
    badge), RulesCalendar the calendar texts of the country page and KlacksyNote the mandatory note shown with the
-   Klacksy clips (accelerated waiting times). *@
+   Klacksy clips (accelerated waiting times). InitialChapterId is the chapter open without a URL fragment (default the
+   first one); the industry template (IndustryPageTemplate) uses the same explorer and opens Klacksy on the Klacksy page. *@
 @if (_chapters.Count > 0)
 {
     <section id="@SectionId" class="reveal py-14 md:py-24 px-4 sm:px-8 max-w-7xl mx-auto no-line-rule" aria-labelledby="@HeadingId">
@@ -210,6 +211,8 @@
 
     [Parameter, EditorRequired] public required string KlacksyNote { get; set; }
 
+    [Parameter] public string? InitialChapterId { get; set; }
+
     protected override void OnInitialized()
     {
         Nav.LocationChanged += HandleLocationChanged;
@@ -224,14 +227,18 @@
             .Where(chapter => chapter.Videos.Count > 0 || IsRulesChapter(chapter.Definition))
             .ToList();
 
-        if (_chapters.FirstOrDefault(chapter => IsRulesChapter(chapter.Definition)) is { Videos.Count: 0 } && _rulesView == RulesViewLive)
+        if (_chapters.FirstOrDefault(chapter => IsRulesChapter(chapter.Definition)) is { } rulesChapter
+            && !AvailableRulesViews(rulesChapter).Contains(_rulesView))
         {
-            _rulesView = RulesViewCalendar;
+            _rulesView = AvailableRulesViews(rulesChapter).First();
         }
 
         if (_chapters.All(chapter => chapter.Definition.SectionId != _activeChapterId))
         {
-            _activeChapterId = ChapterFromFragment(Nav.Uri) ?? _chapters.FirstOrDefault()?.Definition.SectionId ?? string.Empty;
+            _activeChapterId = ChapterFromFragment(Nav.Uri)
+                ?? _chapters.FirstOrDefault(chapter => chapter.Definition.SectionId == InitialChapterId)?.Definition.SectionId
+                ?? _chapters.FirstOrDefault()?.Definition.SectionId
+                ?? string.Empty;
         }
     }
 
@@ -266,14 +273,16 @@
 
     private void SelectRulesView(string view) => _rulesView = view;
 
-    private bool ShowsLiveRules => _rulesView == RulesViewLive || (_rulesView == RulesViewCalendar && RulesCalendar is null);
+    private bool ShowsLiveRules => _rulesView == RulesViewLive;
 
     // The rules chapter also carries the country's calendar and the surcharge settings, so it stays even in a
-    // culture without any recorded rule clip; only its "live violations" view needs the clips.
+    // culture without any recorded rule clip; only its "live violations" view needs the clips and only the
+    // "calendar" view needs the country's calendar texts (industry pages have none).
     private static bool IsRulesChapter(DemoCarouselDefinition definition) => definition.SectionId == DemoCarousels.RulesSectionId;
 
-    private static IEnumerable<string> AvailableRulesViews(Chapter chapter)
-        => chapter.Videos.Count > 0 ? RulesViews : RulesViews.Where(view => view != RulesViewLive);
+    private IEnumerable<string> AvailableRulesViews(Chapter chapter)
+        => RulesViews.Where(view => (view != RulesViewLive || chapter.Videos.Count > 0)
+            && (view != RulesViewCalendar || RulesCalendar is not null));
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
