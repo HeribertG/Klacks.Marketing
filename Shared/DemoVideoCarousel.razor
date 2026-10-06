@@ -25,7 +25,8 @@
    (heading included) is omitted. The optional tip under the carousel points to Klacksy, who can do the same
    steps in the chat; it belongs to the everyday-work carousel only.
    Compact embeds the carousel in another layout (hero of the start page): no section padding, heading, subtitle, note or hint,
-   the carousel is labelled with the definition's title instead.
+   no slide title above the video (the pill already names the slide), the carousel is labelled with the definition's title
+   instead. The optional Footer fragment renders inside the carousel region below the slide (hero: the video note).
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
@@ -65,7 +66,7 @@
                 </button>
                 <div id="@SlideId" class="daily-ops-carousel-slide @(_isFadingOut ? "is-fading-out" : string.Empty)"
                      role="group" aria-roledescription="slide" aria-label="@SlideLabel()">
-                    <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@current.TitleKey"
+                    <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@(Compact ? null : current.TitleKey)"
                                LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey" TitleClass="@SlideTitleClass"
                                Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
                 </div>
@@ -75,6 +76,7 @@
                     <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_forward</span>
                 </button>
             </div>
+            @Footer
             <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
         </div>
         @if (!Compact && Definition.NoteKey is not null)
@@ -117,6 +119,8 @@
     [Parameter, EditorRequired] public required DemoCarouselDefinition Definition { get; set; }
 
     [Parameter] public bool Compact { get; set; }
+
+    [Parameter] public RenderFragment? Footer { get; set; }
 
     private int TargetIndex => _pendingIndex ?? _currentIndex;
 
