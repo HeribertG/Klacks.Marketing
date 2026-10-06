@@ -3,8 +3,8 @@
   "hero": {
     "badgeIcon": "cleaning_services",
     "badge": "Für Haus- &amp; Reinigungsdienste in den VAE",
-    "titleHtml": "Außenreinigung planen, <span class=\"text-secondary\">ohne das Mittagsverbot zu riskieren.</span>",
-    "subtitle": "Klacks macht Außen- und Fensterreinigungs-Einsätze im gesetzlichen Mittagsarbeitsverbot (حظر العمل وقت الظهيرة) vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, sofort sichtbar &mdash; und hilft so, Bußgelder von bis zu AED 50.000 zu vermeiden. Bei Ihnen installiert, damit Personaldaten Ihr Haus nicht verlassen müssen.",
+    "titleHtml": "Aussenreinigung planen, <span class=\"text-secondary\">ohne das Mittagsverbot zu riskieren.</span>",
+    "subtitle": "Klacks macht Aussen- und Fensterreinigungs-Einsätze im gesetzlichen Mittagsarbeitsverbot (حظر العمل وقت الظهيرة) vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, sofort sichtbar &mdash; und hilft so, Bussgelder von bis zu AED 50.000 zu vermeiden. Bei Ihnen installiert, damit Personaldaten Ihr Haus nicht verlassen müssen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Haus- und Reinigungsdienste in den VAE",
     "screenshotLabel": "Dienstplan"
@@ -13,8 +13,8 @@
     "eyebrow": "Der Sommeralltag der Haus- und Reinigungsdienste in den VAE",
     "title": "Das Mittagsarbeitsverbot vom 15. Juni bis 15. September",
     "items": [
-      { "icon": "wb_sunny", "title": "Mittagsverbot für Außenarbeit", "text": "Vom 15. Juni bis 15. September ist Arbeit unter direkter Sonneneinstrahlung oder im Freien täglich von 12:30 bis 15:00 Uhr verboten &mdash; das trifft Außen- und Fensterreinigung direkt (jährliche MOHRE-Ministerialentscheidung, 2026 im 22. Jahr)." },
-      { "icon": "payments", "title": "Bußgeld bis AED 50.000 pro Verstoß", "text": "Verstöße kosten AED 5.000 pro betroffenem Mitarbeitenden, gedeckelt bei AED 50.000 &mdash; zusätzlich drohen Aktensperre und Herabstufung." },
+      { "icon": "wb_sunny", "title": "Mittagsverbot für Aussenarbeit", "text": "Vom 15. Juni bis 15. September ist Arbeit unter direkter Sonneneinstrahlung oder im Freien täglich von 12:30 bis 15:00 Uhr verboten &mdash; das trifft Aussen- und Fensterreinigung direkt (jährliche MOHRE-Ministerialentscheidung, 2026 im 22. Jahr)." },
+      { "icon": "payments", "title": "Bussgeld bis AED 50.000 pro Verstoss", "text": "Verstösse kosten AED 5.000 pro betroffenem Mitarbeitenden, gedeckelt bei AED 50.000 &mdash; zusätzlich drohen Aktensperre und Herabstufung." },
       { "icon": "schedule", "title": "Split-Shifts statt Mittagslücke", "text": "Damit das Verbotsfenster nicht zum Leerlauf wird, müssen Reinigungsteams ihre Einsätze über Vormittag und späten Nachmittag neu verteilen." }
     ]
   },
@@ -22,18 +22,18 @@
     "title": "Wie Klacks Haus- und Reinigungsdienste in den VAE entlastet",
     "subtitle": "Von der hinterlegten Sperrzeit bis zur Split-Shift-Planung &mdash; alles greift ineinander.",
     "items": [
-      { "icon": "wb_sunny", "title": "Mittagsfenster sichtbar gemacht, nicht übersehen", "text": "Klacks lässt sich so einrichten, dass Außen- und Fensterreinigungs-Einsätze im Verbotsfenster vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, sofort auffallen &mdash; als Sperrzeit hinterlegt, nicht erst nachträglich entdeckt." },
-      { "icon": "payments", "title": "Bußgeldrisiko von AED 50.000 reduziert", "text": "Weil das Verbotsfenster in Klacks sichtbar hinterlegt ist und beim Einteilen auffällt, sinkt das Risiko der AED-5.000-Buße pro Mitarbeitendem deutlich." },
+      { "icon": "wb_sunny", "title": "Mittagsfenster sichtbar gemacht, nicht übersehen", "text": "Klacks lässt sich so einrichten, dass Aussen- und Fensterreinigungs-Einsätze im Verbotsfenster vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, sofort auffallen &mdash; als Sperrzeit hinterlegt, nicht erst nachträglich entdeckt." },
+      { "icon": "payments", "title": "Bussgeldrisiko von AED 50.000 reduziert", "text": "Weil das Verbotsfenster in Klacks sichtbar hinterlegt ist und beim Einteilen auffällt, sinkt das Risiko der AED-5.000-Busse pro Mitarbeitendem deutlich." },
       { "icon": "route", "title": "Objekte &amp; Touren automatisch optimiert", "text": "Klacks legt Reinigungsrouten zwischen Objekten so, dass Wege kurz und Zeitfenster eingehalten werden." },
       { "icon": "schedule", "title": "Split-Shifts vor und nach dem Verbotsfenster möglich", "text": "Klacks unterstützt Split-Shifts vor und nach dem Verbotsfenster, damit die Tagesarbeitszeit trotzdem aufgeht." },
       { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten Ihres Reinigungsteams verlassen Ihr Haus nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
-      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Verteile die Außenreinigung für morgen auf Vormittag und Nachmittag“ genügt &mdash; Klacksy startet die Planung, Klacks hält die hinterlegten Sperrzeiten ein." }
+      { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Verteile die Aussenreinigung für morgen auf Vormittag und Nachmittag“ genügt &mdash; Klacksy startet die Planung, Klacks hält die hinterlegten Sperrzeiten ein." }
     ]
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "Mittagsverbot und Split-Shift, ein Blick",
-    "text": "Ist das Verbotsfenster vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, als Sperrzeit hinterlegt, macht Klacks einen Außenreinigungs-Einsatz darin sofort sichtbar &mdash; der Split-Shift davor und danach lässt sich direkt einplanen."
+    "text": "Ist das Verbotsfenster vom 15. Juni bis 15. September, 12:30 bis 15:00 Uhr, als Sperrzeit hinterlegt, macht Klacks einen Aussenreinigungs-Einsatz darin sofort sichtbar &mdash; der Split-Shift davor und danach lässt sich direkt einplanen."
   },
   "showRoutePlanning": true,
   "cta": {

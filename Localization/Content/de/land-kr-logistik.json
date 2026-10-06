@@ -15,7 +15,7 @@
     "items": [
       { "icon": "alt_route", "title": "Touren &amp; Termine", "text": "Stopps, Zeitfenster und Wege müssen zusammenpassen &mdash; jede Umplanung zieht Folgen nach sich." },
       { "icon": "bedtime", "title": "11 Stunden Ruhe zwischen zwei Arbeitstagen", "text": "Der Landverkehr zählt zu den fünf Sonderausnahme-Branchen; nutzt ein Betrieb die Ausnahmevereinbarung, müssen mindestens 11 zusammenhängende Ruhestunden zwischen zwei Arbeitstagen liegen (§ 59 LSA)." },
-      { "icon": "payments", "title": "Sicherheitsfrachtraten seit 1.2.2026", "text": "Das reaktivierte Sicherheitsfrachtratensystem (안전운임제) gilt befristet bis 31.12.2028 für Export-/Import-Container und Zement &mdash; primär eine Tarifregelung gegen Übermüdung, kein direkter Schichtzeit-Cap, aber ein Maßstab, an dem sich geplante Touren spiegeln lassen." }
+      { "icon": "payments", "title": "Sicherheitsfrachtraten seit 1.2.2026", "text": "Das reaktivierte Sicherheitsfrachtratensystem (안전운임제) gilt befristet bis 31.12.2028 für Export-/Import-Container und Zement &mdash; primär eine Tarifregelung gegen Übermüdung, kein direkter Schichtzeit-Cap, aber ein Massstab, an dem sich geplante Touren spiegeln lassen." }
     ]
   },
   "solutions": {
@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "bedtime", "title": "11-Stunden-Ruhe automatisch geprüft", "text": "Klacks prüft automatisch, dass zwischen zwei Arbeitstagen die nach § 59 LSA vorgeschriebenen 11 zusammenhängenden Ruhestunden liegen." },
-      { "icon": "payments", "title": "Sicherheitsfrachtraten außerhalb von Klacks", "text": "Klacks bildet das Sicherheitsfrachtratensystem (안전운임제) nicht ab &mdash; es enthält Tarifbeträge, keine Schichtzeit-Regel. Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, prüft Klacks für alle Touren, auch für Container- und Zementtransporte." },
+      { "icon": "payments", "title": "Sicherheitsfrachtraten ausserhalb von Klacks", "text": "Klacks bildet das Sicherheitsfrachtratensystem (안전운임제) nicht ab &mdash; es enthält Tarifbeträge, keine Schichtzeit-Regel. Die Arbeits- und Ruhezeitgrenzen, die Sie hinterlegen, prüft Klacks für alle Touren, auch für Container- und Zementtransporte." },
       { "icon": "badge", "title": "Qualifikationen &amp; Berechtigungen passend", "text": "Klacks teilt Touren nur Fahrern mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Kim ist krank“ genügt &mdash; Klacksy startet die Neuplanung." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt ein Fahrer aus, zeigt Klacks sofort, wer qualifiziert, verfügbar und innerhalb der Ruhezeit ist." }
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ruhezeit, ein Plan",
-    "text": "Klacks prüft die hinterlegte 11-stündige Ruhezeit zwischen zwei Arbeitstagen bei jeder geplanten Tour automatisch und warnt bei Verstößen &mdash; ohne Nachrechnen von Hand. Die Sicherheitsfrachtraten bildet Klacks nicht ab."
+    "text": "Klacks prüft die hinterlegte 11-stündige Ruhezeit zwischen zwei Arbeitstagen bei jeder geplanten Tour automatisch und warnt bei Verstössen &mdash; ohne Nachrechnen von Hand. Die Sicherheitsfrachtraten bildet Klacks nicht ab."
   },
   "showRoutePlanning": true,
   "cta": {

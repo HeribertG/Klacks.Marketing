@@ -15,7 +15,7 @@
     "items": [
       { "icon": "timer", "title": "Ruhepause nach 4 Stunden Lenkzeit", "text": "Nach höchstens 4 Stunden zusammenhängender Fahrzeit ist eine Ruhepause von insgesamt 1 Stunde zu gewähren, aufteilbar in Intervalle von mind. 20 Minuten (Ministerialverordnung Nr. 12 B.E. 2541 zum Labour Protection Act) &mdash; über viele Berufskraftfahrer (Phanakngan Khap Rot Banthuk) und Touren hinweg von Hand kaum sicher einzuhalten." },
       { "icon": "schedule", "title": "8h/Tag plus max. 2h Überstunde", "text": "Für Fahrer im Landtransport gilt eine reguläre Arbeitszeit von 8 Stunden pro Tag plus maximal 2 Stunden Überstunde pro Tag &mdash; die zusätzlich aufs 36-Stunden-Wochenlimit angerechnet werden." },
-      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstöße können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." }
+      { "icon": "gavel", "title": "36-Stunden-Wochenlimit für Überstunden", "text": "Überstunden und Feiertagsarbeit zusammen dürfen 36 Stunden pro Woche nicht überschreiten (Section 26) &mdash; Verstösse können mit Freiheitsstrafe bis 6 Monate und/oder Geldstrafe bis 100.000 THB geahndet werden (Section 144)." }
     ]
   },
   "solutions": {
@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "timer", "title": "Ruhepausen als Block in der Tour", "text": "Ruhepausen lassen sich als Block in die Tour einplanen &mdash; auch aufgeteilt in Intervalle von mind. 20 Minuten; ob nach maximal 4 Stunden zusammenhängender Fahrzeit 1 Stunde Pause liegt, prüft Klacks nicht." },
-      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Fahrer live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstöße in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
+      { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert die Überstunden pro Fahrer live und warnt rechtzeitig, bevor das 36-Stunden-Wochenlimit nach Section 26 überschritten wird. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstösse in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
       { "icon": "schedule", "title": "8h+2h-Grenze pro Fahrer überwacht", "text": "Klacks warnt, wenn die reguläre Arbeitszeit von 8 Stunden plus maximal 2 Stunden Überstunde pro Tag überschritten wird." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks berücksichtigt Führerschein-Klassen bei der Einteilung von Touren &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, Fahrer Somchai ist krank“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei die hinterlegten Arbeits- und Ruhezeitgrenzen." }

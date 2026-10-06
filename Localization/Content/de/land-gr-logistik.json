@@ -15,7 +15,7 @@
     "items": [
       { "icon": "fact_check", "title": "Digitale Arbeitskarte ab 16. November 2026", "text": "Lagerhaltung, Logistik und Transport-Unterstützung fallen unter Phase B der digitalen Arbeitskarte &mdash; jede Schicht muss ab dann lückenlos gemeldet sein, sonst drohen 10.500 € pro Mitarbeitendem." },
       { "icon": "calendar_month", "title": "Sechstagewoche bei Frachtspitzen", "text": "Bei Frachtspitzen darf ein 6. Arbeitstag angeordnet werden &mdash; max. 8 Stunden, mit 40 % Zuschlag bzw. 115 % an Sonn-/Feiertagen, und Vorab-Meldepflicht in ERGANI II." },
-      { "icon": "timer", "title": "Nacht-Arbeitszeitgrenze für Fahrpersonal", "text": "Für mobiles Transportpersonal gilt gemäß RL 2002/15/EG (umgesetzt durch P.D. 167/2006) eine 10-Stunden-Grenze bei Nachtarbeit im 24-Stunden-Fenster." }
+      { "icon": "timer", "title": "Nacht-Arbeitszeitgrenze für Fahrpersonal", "text": "Für mobiles Transportpersonal gilt gemäss RL 2002/15/EG (umgesetzt durch P.D. 167/2006) eine 10-Stunden-Grenze bei Nachtarbeit im 24-Stunden-Fenster." }
     ]
   },
   "solutions": {
@@ -25,7 +25,7 @@
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Stopps in die sinnvollste Reihenfolge &mdash; kurze Wege, eingehaltene Zeitfenster, weniger Leerfahrten." },
       { "icon": "fact_check", "title": "Zeitbasis für ERGANI ab 16. November 2026", "text": "Klacks dokumentiert jede Schicht in Lager und Logistik lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht der Phase B." },
       { "icon": "calendar_month", "title": "Sechstagewoche mit Zuschlagsregel", "text": "Der 40 %-Zuschlag für den 6. Arbeitstag &mdash; bzw. 115 % an Sonn-/Feiertagen &mdash; lässt sich als eigene Zuschlagsregel hinterlegen. Zusätzlich überwacht Klacks die gearbeiteten Tage pro Woche als Ereignis-Zähler und warnt, sobald der 6. Arbeitstag erreicht wird (Schwellwert konfigurierbar, in der automatischen Planung auf Wunsch blockierend, bei manueller Planung nur als Warnung); die ERGANI-Meldung selbst bleibt bei Ihnen." },
-      { "icon": "timer", "title": "Tageshöchstarbeitszeit für Fahrpersonal", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäß RL 2002/15/EG / P.D. 167/2006 hinterlegen Sie als Tageshöchstarbeitszeit für Ihr Fahrpersonal, und Klacks warnt bei Überschreitung; eine Grenze nur für Nachtschichten kennt Klacks nicht." },
+      { "icon": "timer", "title": "Tageshöchstarbeitszeit für Fahrpersonal", "text": "Die 10-Stunden-Grenze für Nachtarbeit gemäss RL 2002/15/EG / P.D. 167/2006 hinterlegen Sie als Tageshöchstarbeitszeit für Ihr Fahrpersonal, und Klacks warnt bei Überschreitung; eine Grenze nur für Nachtschichten kennt Klacks nicht." },
       { "icon": "badge", "title": "Führerschein-Klassen passend", "text": "Klacks teilt Touren nur Fahrer:innen mit der passenden Berechtigung zu &mdash; und warnt vor ablaufenden Nachweisen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Plane die Touren für morgen, ein Fahrer fällt aus“ genügt &mdash; Klacksy startet die Neuplanung, die Planungs-Engine berücksichtigt dabei auch Zuschläge und Nachtgrenze." }
     ]
