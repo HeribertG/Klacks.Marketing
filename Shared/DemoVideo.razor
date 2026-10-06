@@ -9,7 +9,9 @@
    Loop (default true) can be turned off for the carousel, which advances on the ended event.
    Deferred renders the video without autoplay and with preload="none" (carousel slides: nothing is
    downloaded until rule-conflict-video.js starts playback of the visible video). HoverZoom puts video and
-   poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots. *@
+   poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots.
+   CaptionFooter renders inside the figcaption right after the caption, so both read as one text block; OmitClosingSentence
+   then drops the caption's closing sentence when the footer already says the same. *@
 @if (_sources is not null)
 {
     <figure class="@FigureClass">
@@ -30,7 +32,7 @@
                  src="@_sources.PosterPath" alt="@Sh(LabelKey)"
                  width="@Width" height="@Height" loading="lazy" />
         </div>
-        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed text-center mb-0">@((MarkupString)Sh(CaptionKey))</figcaption>
+        <figcaption class="text-xs text-on-surface-variant mt-3 leading-relaxed text-center mb-0">@((MarkupString)Caption)@CaptionFooter</figcaption>
     </figure>
 }
 else if (Fallback is not null)
@@ -91,11 +93,15 @@ else if (Fallback is not null)
     [Parameter] public string TitleClass { get; set; } = DefaultTitleClass;
     [Parameter] public string FigureClass { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Fallback { get; set; }
+    [Parameter] public RenderFragment? CaptionFooter { get; set; }
+    [Parameter] public bool OmitClosingSentence { get; set; }
 
     protected override void OnParametersSet()
     {
         _sources = VideoCatalog.Find(VideoName, Culture);
     }
+
+    private string Caption => OmitClosingSentence ? ClosingSentence.Remove(Sh(CaptionKey)) : Sh(CaptionKey);
 
     private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
 }

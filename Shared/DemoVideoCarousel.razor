@@ -26,7 +26,8 @@
    steps in the chat; it belongs to the everyday-work carousel only.
    Compact embeds the carousel in another layout (hero of the start page): no section padding, heading, subtitle, note or hint,
    no slide title above the video (the pill already names the slide), the carousel is labelled with the definition's title
-   instead. The optional Footer fragment renders inside the carousel region below the slide (hero: the video note).
+   instead. The optional SlideFooter fragment is rendered inside every slide's caption block, right after the caption (hero: the video note), so the
+   texts change together with the video.
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
@@ -68,7 +69,8 @@
                      role="group" aria-roledescription="slide" aria-label="@SlideLabel()">
                     <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@(Compact ? null : current.TitleKey)"
                                LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey" TitleClass="@SlideTitleClass"
-                               Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0" />
+                               Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0"
+                               CaptionFooter="@SlideFooter" OmitClosingSentence="@(Compact && SlideFooter is not null)" />
                 </div>
                 <button type="button" data-carousel-next
                         class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh(NextKey)" aria-controls="@SlideId"
@@ -76,7 +78,6 @@
                     <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_forward</span>
                 </button>
             </div>
-            @Footer
             <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
         </div>
         @if (!Compact && Definition.NoteKey is not null)
@@ -120,7 +121,7 @@
 
     [Parameter] public bool Compact { get; set; }
 
-    [Parameter] public RenderFragment? Footer { get; set; }
+    [Parameter] public RenderFragment? SlideFooter { get; set; }
 
     private int TargetIndex => _pendingIndex ?? _currentIndex;
 

@@ -46,12 +46,12 @@
             @if (HasHeroVideo)
             {
                 <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Hero" Compact="true">
-                    <Footer>
-                        <p class="text-xs text-on-surface-variant leading-relaxed mt-2 mb-0 flex gap-2">
+                    <SlideFooter>
+                        <span class="mt-2 inline-flex items-start gap-2 text-start">
                             <span class="material-symbols-outlined text-sm" aria-hidden="true">speed</span>
                             <span>@Sh(DemoCarousels.KlacksyVideoNoteKey) @Tx("hero.engineNote")</span>
-                        </p>
-                    </Footer>
+                        </span>
+                    </SlideFooter>
                 </DemoVideoCarousel>
             }
             else if (Country.HeroMockup is not null && Country.HeroMockup.Images.Count > 0)
