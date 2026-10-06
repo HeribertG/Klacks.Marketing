@@ -24,7 +24,7 @@
     "items": [
       { "icon": "route", "title": "Laluan dioptimumkan secara automatik", "text": "Klacks menyusun laluan lawatan supaya jarak perjalanan pendek dan tetingkap masa dipatuhi &mdash; sama ada dengan kereta, motosikal atau berjalan kaki." },
       { "icon": "schedule", "title": "Had waktu bekerja harian dipantau", "text": "Klacks menyemak had waktu bekerja harian maksimum yang anda tetapkan serta menanda lebihannya secara automatik sebagai lebih masa; jangka masa 10 jam antara lawatan pertama dan waktu pulang terakhir (Section 60A(1)) itu sendiri tidak disemak oleh Klacks." },
-      { "icon": "paid", "title": "Elaun bertingkat sebagai kredit masa", "text": "Elaun lebih masa, hari rehat dan hari kelepasan am (1.5x/2.0x/3.0x) dicatatkan oleh Klacks sebagai kredit masa &mdash; had gaji RM4,000 digunakan oleh perakaunan gaji." },
+      { "icon": "paid", "title": "Kredit Masa Tambahan bertingkat sebagai kredit masa", "text": "Kredit Masa Tambahan Lebih Masa, Kredit Masa Tambahan Hari Rehat dan Kredit Masa Tambahan Hari Kelepasan (1.5x/2.0x/3.0x) dicatatkan oleh Klacks sebagai kredit masa &mdash; had gaji RM4,000 digunakan oleh perakaunan gaji." },
       { "icon": "verified", "title": "Kelayakan diambil kira secara automatik", "text": "Klacks mengambil kira kelayakan semasa menetapkan lawatan dan memberi amaran apabila bukti kelayakan telah luput &mdash; tanpa perlu semakan manual." },
       { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data kekal di premis", "text": "Klacks berjalan pada infrastruktur anda sendiri. Dengan model AI tempatan, data pesakit dan data perancangan tidak keluar daripada premis anda." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Isikan laluan untuk esok\" sudah memadai. Jika berlaku ketidakhadiran, Klacksy segera mencadangkan gantian yang tersedia." }
@@ -32,12 +32,12 @@
   },
   "example": {
     "eyebrow": "Contoh Konkrit",
-    "title": "Had harian dan elaun, satu jadual",
-    "text": "Klacks mengesan secara automatik apabila had waktu bekerja harian maksimum yang ditetapkan dilepasi, dan mencatatkan lebihan itu sebagai kredit masa mengikut kadar elaun yang sesuai &mdash; tanpa perlu mengira semula secara manual."
+    "title": "Had harian dan Kredit Masa Tambahan, satu jadual",
+    "text": "Klacks mengesan secara automatik apabila had waktu bekerja harian maksimum yang ditetapkan dilepasi, dan mencatatkan lebihan itu sebagai kredit masa mengikut kadar Kredit Masa Tambahan yang sesuai &mdash; tanpa perlu mengira semula secara manual."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Alami Klacks dalam Perkhidmatan Penjagaan di Rumah Anda",
-    "text": "Cuba dalam Playground bagaimana Klacks menguruskan laluan, had waktu kerja dan elaun &mdash; atau pasang terus pada infrastruktur anda sendiri. Tiada yuran lesen dan tanpa pendaftaran."
+    "text": "Cuba dalam Playground bagaimana Klacks menguruskan laluan, had waktu kerja dan Kredit Masa Tambahan &mdash; atau pasang terus pada infrastruktur anda sendiri. Tiada yuran lesen dan tanpa pendaftaran."
   }
 }

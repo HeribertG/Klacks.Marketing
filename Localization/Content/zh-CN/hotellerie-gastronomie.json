@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks 酒店与餐饮业解决方案 | 排班、津贴与休息时间",
+  "pageTitle": "Klacks 酒店与餐饮业解决方案 | 排班、工时加成与休息时间",
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "面向酒店 &amp; 餐饮业",
     "titleHtml": "早班、晚班、夜班 &mdash; <span class=\"text-secondary\">公平排班。</span>",
-    "subtitle": "Klacks 为前厅服务、后厨与客房楼层排班 &mdash; 涵盖分段班次、周日与节假日津贴，以及能让违规立即可见的法定休息时间检查。旺季高峰与人员缺勤由排班自动兜底。",
+    "subtitle": "Klacks 为前厅服务、后厨与客房楼层排班 &mdash; 涵盖分段班次、周日与节假日工时加成，以及能让违规立即可见的法定休息时间检查。旺季高峰与人员缺勤由排班自动兜底。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 酒店与餐饮业排班时间轴视图",
     "screenshotLabel": "时间轴"
@@ -16,7 +16,7 @@
       {
         "icon": "splitscreen",
         "title": "分段班次",
-        "text": "午间与晚间服务之间隔着休息:分段班次是常态 &mdash; 随之而来的是休息时间与津贴问题,靠人工几乎无法干净利落地安排。"
+        "text": "午间与晚间服务之间隔着休息:分段班次是常态 &mdash; 随之而来的是休息时间与工时加成问题,靠人工几乎无法干净利落地安排。"
       },
       {
         "icon": "event_repeat",
@@ -26,7 +26,7 @@
       {
         "icon": "nights_stay",
         "title": "夜班、周日 &amp; 节假日",
-        "text": "别人休息时,正是生意最忙的时候 &mdash; 如何兼顾津贴、休息时间与周日休假,才是真正的排班艺术。"
+        "text": "别人休息时,正是生意最忙的时候 &mdash; 如何兼顾工时加成、休息时间与周日休假,才是真正的排班艺术。"
       }
     ]
   },
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "津贴自动计算",
-        "text": "夜班、周日与节假日津贴由 Klacks 自动以时间补偿(小时)记入 &mdash; 可按国家与规则体系配置,作为薪资核算的基础。"
+        "title": "工时加成自动计算",
+        "text": "夜班、周日与节假日工时加成由 Klacks 自动以工时贷记(小时)记入 &mdash; 可按国家与规则体系配置,作为薪资核算的基础。"
       },
       {
         "icon": "badge",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "在您的企业中体验 Klacks",
-    "text": "在 Playground 中亲自体验 Klacks 如何接管排班、津贴与休息时间 &mdash; 或直接安装到您自己的基础设施上。无许可费用,且无需注册。"
+    "text": "在 Playground 中亲自体验 Klacks 如何接管排班、工时加成与休息时间 &mdash; 或直接安装到您自己的基础设施上。无许可费用,且无需注册。"
   }
 }

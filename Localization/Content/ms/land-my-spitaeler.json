@@ -4,18 +4,18 @@
     "badgeIcon": "local_hospital",
     "badge": "Untuk hospital &amp; klinik di Malaysia",
     "titleHtml": "Jadual kerja yang <span class=\"text-secondary\">berfungsi sepanjang masa.</span>",
-    "subtitle": "Klacks menjadualkan wad dan syif serta menunjukkan jurang serta-merta &mdash; dengan masa serahan syif direkodkan dan elaun lebih masa bertingkat mengikut Employment Act 1955 sebagai kredit masa. Dipasang di premis anda sendiri &mdash; dengan model AI tempatan, data pesakit tidak pernah keluar daripada premis anda.",
+    "subtitle": "Klacks menjadualkan wad dan syif serta menunjukkan jurang serta-merta &mdash; dengan masa serahan syif direkodkan dan Kredit Masa Tambahan Lebih Masa bertingkat mengikut Employment Act 1955 sebagai kredit masa. Dipasang di premis anda sendiri &mdash; dengan model AI tempatan, data pesakit tidak pernah keluar daripada premis anda.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grid jadual kerja Klacks untuk hospital di Malaysia",
     "screenshotLabel": "Jadual Kerja"
   },
   "challenges": {
     "eyebrow": "Realiti harian klinikal di Malaysia",
-    "title": "Had gaji RM4,000, masa serahan syif dan elaun",
+    "title": "Had gaji RM4,000, masa serahan syif dan Kredit Masa Tambahan",
     "items": [
       { "icon": "payments", "title": "Had gaji RM4,000 merangkumi kebanyakan kakitangan jagaan", "text": "Elaun lebih masa, hari rehat dan hari kelepasan am (Section 60A(3) dan lain-lain) terpakai sehingga gaji bulanan RM4,000 &mdash; ini merangkumi kebanyakan jururawat di sektor klinik swasta." },
       { "icon": "schedule", "title": "Serahan syif dikira sebagai waktu bekerja", "text": "Masa di mana seorang kakitangan jagaan berada di bawah kawalan majikan &mdash; misalnya semasa serahan syif (handover) &mdash; pada dasarnya dikira sebagai waktu bekerja dan mesti diambil kira dalam pengiraan minggu kerja 45 jam serta lebih masa." },
-      { "icon": "gavel", "title": "Mengasingkan elaun bertingkat dengan tepat", "text": "Lebih masa pada hari bekerja biasa, hari rehat dan hari kelepasan am mencetuskan kadar yang berbeza (1.5x/2.0x/3.0x) &mdash; hampir mustahil dikira dengan tepat secara manual merentasi pelbagai rotasi dan wad." }
+      { "icon": "gavel", "title": "Mengasingkan Kredit Masa Tambahan bertingkat dengan tepat", "text": "Lebih masa pada hari bekerja biasa, hari rehat dan hari kelepasan am mencetuskan kadar yang berbeza (1.5x/2.0x/3.0x) &mdash; hampir mustahil dikira dengan tepat secara manual merentasi pelbagai rotasi dan wad." }
     ]
   },
   "solutions": {
@@ -23,21 +23,21 @@
     "subtitle": "Daripada gambaran jurang hingga masa serahan syif yang direkodkan &mdash; semuanya saling melengkapi.",
     "items": [
       { "icon": "schedule", "title": "Liputan syif dalam pantauan", "text": "Syif pagi, petang dan malam di semua wad &mdash; Klacks menunjukkan setiap jurang serta-merta dan mengisinya secara automatik jika dikehendaki." },
-      { "icon": "payments", "title": "Had gaji RM4,000 ditangani oleh perakaunan gaji", "text": "Had gaji RM4,000 bagi peruntukan elaun di bawah Section 60A(3) dan lain-lain tidak disemak oleh Klacks kerana Klacks tidak mengetahui gaji &mdash; ia menyediakan jam dan elaun masa, dan bahagian perakaunan gaji menggunakan had itu." },
+      { "icon": "payments", "title": "Had gaji RM4,000 ditangani oleh perakaunan gaji", "text": "Had gaji RM4,000 bagi peruntukan Kredit Masa Tambahan di bawah Section 60A(3) dan lain-lain tidak disemak oleh Klacks kerana Klacks tidak mengetahui gaji &mdash; ia menyediakan jam dan Kredit Masa Tambahan, dan bahagian perakaunan gaji menggunakan had itu." },
       { "icon": "swap_horiz", "title": "Masa serahan syif boleh dirancang sebagai waktu bekerja", "text": "Masa serahan syif (handover) boleh dirancang dalam Klacks sebagai waktu bekerja dan kemudian dikira dalam minggu kerja 45 jam serta lebih masa." },
-      { "icon": "gavel", "title": "Elaun 1.5x/2.0x/3.0x sebagai kredit masa", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dicatatkan oleh Klacks sebagai kredit masa mengikut kadar yang ditetapkan &mdash; bagi setiap wad dan rotasi." },
+      { "icon": "gavel", "title": "Kredit Masa Tambahan 1.5x/2.0x/3.0x sebagai kredit masa", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dicatatkan oleh Klacks sebagai kredit masa mengikut kadar yang ditetapkan &mdash; bagi setiap wad dan rotasi." },
       { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data kekal di premis", "text": "Klacks berjalan pada infrastruktur anda sendiri. Dengan model AI tempatan, data kakitangan dan pesakit tidak keluar daripada klinik." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Isikan syif malam wad untuk minggu depan\" sudah memadai &mdash; Klacksy memulakan perancangan, Klacks mengambil kira kelayakan dan had waktu bekerja maksimum." }
     ]
   },
   "example": {
     "eyebrow": "Contoh Konkrit",
-    "title": "Masa serahan syif dan elaun, satu jadual",
-    "text": "Klacks merancang serahan syif sebagai waktu bekerja, mencatatkan elaun sebagai kredit masa dan menyerahkan penggunaan had gaji RM4,000 kepada perakaunan gaji &mdash; tanpa perlu mengira semula secara manual."
+    "title": "Masa serahan syif dan Kredit Masa Tambahan, satu jadual",
+    "text": "Klacks merancang serahan syif sebagai waktu bekerja, mencatatkan Kredit Masa Tambahan sebagai kredit masa dan menyerahkan penggunaan had gaji RM4,000 kepada perakaunan gaji &mdash; tanpa perlu mengira semula secara manual."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Alami Klacks di Hospital Anda",
-    "text": "Cuba dalam Playground bagaimana Klacks menguruskan syif, masa serahan syif dan elaun &mdash; atau pasang terus di premis anda. Tiada yuran lesen dan tanpa pendaftaran."
+    "text": "Cuba dalam Playground bagaimana Klacks menguruskan syif, masa serahan syif dan Kredit Masa Tambahan &mdash; atau pasang terus di premis anda. Tiada yuran lesen dan tanpa pendaftaran."
   }
 }

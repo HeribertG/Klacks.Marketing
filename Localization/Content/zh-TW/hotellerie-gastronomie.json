@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks 為飯店與餐飲業打造 | 班表、加給與休息時間",
+  "pageTitle": "Klacks 為飯店與餐飲業打造 | 班表、工時加成與休息時間",
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "專為飯店 &amp; 餐飲業打造",
     "titleHtml": "早班、晚班、夜班 &mdash; <span class=\"text-secondary\">公平排班。</span>",
-    "subtitle": "Klacks 為外場、廚房與房務排班 &mdash; 涵蓋分段班、週日與假日加給，以及能讓違規立即可見的法定休息時間檢查。旺季高峰與人力缺額，排班系統會自動因應。",
+    "subtitle": "Klacks 為外場、廚房與房務排班 &mdash; 涵蓋分段班、週日與假日工時加成，以及能讓違規立即可見的法定休息時間檢查。旺季高峰與人力缺額，排班系統會自動因應。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 時間軸畫面，用於飯店與餐飲業排班",
     "screenshotLabel": "時間軸"
@@ -16,7 +16,7 @@
       {
         "icon": "splitscreen",
         "title": "分段班",
-        "text": "午市與晚市之間夾著休息時間：分段班是日常 &mdash; 也隨之帶來休息時間與加給的問題，靠人工幾乎無法確實規劃。"
+        "text": "午市與晚市之間夾著休息時間：分段班是日常 &mdash; 也隨之帶來休息時間與工時加成的問題，靠人工幾乎無法確實規劃。"
       },
       {
         "icon": "event_repeat",
@@ -26,7 +26,7 @@
       {
         "icon": "nights_stay",
         "title": "夜班、週日 &amp; 假日",
-        "text": "別人休假時，正是生意最好的時候 &mdash; 要把加給、休息時間與週日休假安排妥當，才是真正的排班功夫。"
+        "text": "別人休假時，正是生意最好的時候 &mdash; 要把工時加成、休息時間與週日休假安排妥當，才是真正的排班功夫。"
       }
     ]
   },
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "加給自動計算",
-        "text": "夜班、週日與假日加給由 Klacks 自動以時數補償記入 &mdash; 可依國家與規則個別設定，作為薪資結算的依據。"
+        "title": "工時加成自動計算",
+        "text": "夜班、週日與假日工時加成由 Klacks 自動以加計工時記入 &mdash; 可依國家與規則個別設定，作為薪資結算的依據。"
       },
       {
         "icon": "badge",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "在您的企業親身體驗 Klacks",
-    "text": "在 Playground 中親自試試 Klacks 如何接手班表、加給與休息時間 &mdash; 或直接安裝到您自己的基礎架構上。完全沒有授權費用，無需註冊。"
+    "text": "在 Playground 中親自試試 Klacks 如何接手班表、工時加成與休息時間 &mdash; 或直接安裝到您自己的基礎架構上。完全沒有授權費用，無需註冊。"
   }
 }

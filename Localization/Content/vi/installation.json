@@ -1,11 +1,11 @@
 {
   "pageTitle": "Cài đặt Klacks: trình cài đặt có hướng dẫn hoặc Docker Compose với gói quốc gia của bạn | Klacks",
-  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và phụ cấp (nếu quốc gia của bạn có quy định). Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
+  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và giờ phụ trội (nếu quốc gia của bạn có quy định). Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Cài đặt &middot; Không mất phí bản quyền &amp; mã nguồn mở",
     "titleHtml": "Tự vận hành Klacks &mdash; <span class=\"text-secondary\">trên hạ tầng của riêng bạn.</span>",
-    "subtitle": "Hai con đường, một kết quả: trình cài đặt có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (phụ cấp nếu quốc gia đó có quy định) &mdash; không cần đăng ký, không phí bản quyền."
+    "subtitle": "Hai con đường, một kết quả: trình cài đặt có hướng dẫn, hoặc stack Docker Compose cho thiết lập riêng của bạn. Gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (giờ phụ trội nếu quốc gia đó có quy định) &mdash; không cần đăng ký, không phí bản quyền."
   },
   "industry": {
     "eyebrow": "Gói quốc gia",
@@ -52,12 +52,12 @@
   "profile": {
     "icon": "description",
     "title": "Chỉ hồ sơ &mdash; cho các bản cài đặt hiện có",
-    "text": "Bạn đã chạy Klacks rồi? Hồ sơ (JSON) chứa các thiết lập sẵn của quốc gia &mdash; ngày lễ, quy định thời giờ làm việc, phụ cấp (nếu quốc gia có quy định) và ngành nghề &mdash; và được áp dụng ở lần khởi động đầu tiên của một bản cài đặt. Đây cũng là cách để bổ sung thêm một ngành cùng các thiết lập sẵn của nó về sau.",
+    "text": "Bạn đã chạy Klacks rồi? Hồ sơ (JSON) chứa các thiết lập sẵn của quốc gia &mdash; ngày lễ, quy định thời giờ làm việc, giờ phụ trội (nếu quốc gia có quy định) và ngành nghề &mdash; và được áp dụng ở lần khởi động đầu tiên của một bản cài đặt. Đây cũng là cách để bổ sung thêm một ngành cùng các thiết lập sẵn của nó về sau.",
     "downloadLabel": "Tải hồ sơ (JSON)"
   },
   "fallback": {
     "noticeTitle": "Hiện chưa có gói quốc gia được cấu hình sẵn cho quốc gia này.",
-    "noticeText": "Bạn vẫn có thể cài đặt Klacks đầy đủ: gói tiêu chuẩn chứa mọi thứ ngoại trừ các thiết lập sẵn theo quốc gia. Sau đó bạn tự thiết lập ngày lễ, quy định thời giờ làm việc và phụ cấp trong ứng dụng.",
+    "noticeText": "Bạn vẫn có thể cài đặt Klacks đầy đủ: gói tiêu chuẩn chứa mọi thứ ngoại trừ các thiết lập sẵn theo quốc gia. Sau đó bạn tự thiết lập ngày lễ, quy định thời giờ làm việc và giờ phụ trội trong ứng dụng.",
     "downloadLabel": "Tải gói tiêu chuẩn",
     "composeNote": "Hiện chưa có gói Compose riêng cho quốc gia này &mdash; gói tiêu chuẩn đã chứa đầy đủ stack Docker Compose."
   },

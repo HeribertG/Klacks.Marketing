@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Dành cho chăm sóc tại nhà &amp; điều dưỡng ngoại trú",
     "titleHtml": "Nhiều thời gian hơn cho chăm sóc, <span class=\"text-secondary\">ít thời gian hơn cho lập tuyến đường.</span>",
-    "subtitle": "Klacks tự động lập lịch các buổi chăm sóc và tuyến đường &mdash; với đúng trình độ chuyên môn, phụ cấp có thể cấu hình và ngày lễ của địa phương bạn. Cài đặt trên hệ thống của bạn; với mô hình AI cục bộ, dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn.",
+    "subtitle": "Klacks tự động lập lịch các buổi chăm sóc và tuyến đường &mdash; với đúng trình độ chuyên môn, Giờ phụ trội có thể cấu hình và ngày lễ của địa phương bạn. Cài đặt trên hệ thống của bạn; với mô hình AI cục bộ, dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho việc lập tuyến đường chăm sóc tại nhà",
     "screenshotLabel": "Dòng thời gian",
@@ -25,7 +25,7 @@
     "items": [
       { "icon": "route", "title": "Tuyến đường được tối ưu tự động", "text": "Klacks sắp xếp tuyến đường sao cho quãng đường ngắn và khung giờ được tuân thủ &mdash; dù đi ô tô, xe đạp hay đi bộ." },
       { "icon": "verified", "title": "Trình độ chuyên môn được tự động xem xét", "text": "Mỗi buổi chăm sóc chỉ được giao cho người có trình độ chuyên môn phù hợp &mdash; hoàn toàn không cần kiểm tra thủ công." },
-      { "icon": "event_available", "title": "Ngày lễ của địa phương bạn &amp; phụ cấp", "text": "Ngày lễ được cấu hình sẵn &mdash; đến tận cấp bang và địa phương. Phụ cấp đêm, cuối tuần và ngày lễ do bạn tự đặt dưới dạng tín dụng thời gian, tất cả đều tự do tùy chỉnh." },
+      { "icon": "event_available", "title": "Ngày lễ của địa phương bạn &amp; Giờ phụ trội", "text": "Ngày lễ được cấu hình sẵn &mdash; đến tận cấp bang và địa phương. Giờ phụ trội ban đêm, Giờ phụ trội cuối tuần và Giờ phụ trội ngày lễ do bạn tự đặt dưới dạng tín dụng thời gian, tất cả đều tự do tùy chỉnh." },
       { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu trong nội bộ", "text": "Klacks chạy trên hạ tầng riêng của bạn. Dữ liệu bệnh nhân nằm trên máy chủ của bạn &mdash; với mô hình AI cục bộ, ngay cả phần AI cũng không có gì rời khỏi doanh nghiệp của bạn." },
       { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Điền các tuyến đường cho ngày mai”. Khi có người ốm đột xuất, Klacksy lập tức đề xuất người thay thế đang sẵn sàng." },
       { "icon": "event_busy", "title": "Xử lý vắng mặt nhanh chóng", "text": "Nếu có người vắng mặt, Klacks lập tức hiển thị ai đủ trình độ và sẵn sàng &mdash; mà không cần đảo lộn toàn bộ lịch." }
@@ -34,11 +34,11 @@
   "example": {
     "eyebrow": "Ví dụ thực tế",
     "title": "Dịch vụ chăm sóc tại nhà ở Geneva, song ngữ, với các buổi chăm sóc tại Vaud",
-    "text": "Giao diện tiếng Pháp, ngày lễ của Geneva và Vaud, phụ cấp chăm sóc tại nhà &mdash; được cấu hình trong Klacks, không phải lập trình riêng. Tuyến đường được tối ưu tự động, trình độ chuyên môn được kiểm tra, và Klacksy hỗ trợ khi có thay đổi vào phút chót. Dữ liệu bệnh nhân nằm trên máy chủ của bạn, và với mô hình AI cục bộ, mọi thứ vẫn ở trong nội bộ."
+    "text": "Giao diện tiếng Pháp, ngày lễ của Geneva và Vaud, Giờ phụ trội chăm sóc tại nhà &mdash; được cấu hình trong Klacks, không phải lập trình riêng. Tuyến đường được tối ưu tự động, trình độ chuyên môn được kiểm tra, và Klacksy hỗ trợ khi có thay đổi vào phút chót. Dữ liệu bệnh nhân nằm trên máy chủ của bạn, và với mô hình AI cục bộ, mọi thứ vẫn ở trong nội bộ."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Trải nghiệm Klacks trong dịch vụ chăm sóc tại nhà của bạn",
-    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận tuyến đường, trình độ chuyên môn và phụ cấp như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
+    "text": "Hãy dùng thử trong Playground để xem Klacks đảm nhận tuyến đường, trình độ chuyên môn và Giờ phụ trội như thế nào &mdash; hoặc cài đặt trực tiếp lên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."
   }
 }

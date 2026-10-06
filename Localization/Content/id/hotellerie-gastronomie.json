@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks untuk Perhotelan & Gastronomi | Jadwal Shift, Tunjangan & Waktu Istirahat",
+  "pageTitle": "Klacks untuk Perhotelan & Gastronomi | Jadwal Shift, Tambahan Waktu & Waktu Istirahat",
   "hero": {
     "badgeIcon": "restaurant",
     "badge": "Untuk Perhotelan &amp; Gastronomi",
     "titleHtml": "Shift pagi, sore, malam &mdash; <span class=\"text-secondary\">direncanakan secara adil.</span>",
-    "subtitle": "Klacks merencanakan layanan, dapur, dan housekeeping &mdash; dengan shift terpisah, tunjangan hari Minggu dan libur, serta pemeriksaan waktu istirahat sesuai undang-undang yang membuat pelanggaran langsung terlihat. Lonjakan musiman dan ketidakhadiran ditangani perencanaan secara otomatis.",
+    "subtitle": "Klacks merencanakan layanan, dapur, dan housekeeping &mdash; dengan shift terpisah, Tambahan Waktu Minggu dan Tambahan Waktu Hari Libur, serta pemeriksaan waktu istirahat sesuai undang-undang yang membuat pelanggaran langsung terlihat. Lonjakan musiman dan ketidakhadiran ditangani perencanaan secara otomatis.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk jadwal shift di perhotelan dan gastronomi",
     "screenshotLabel": "Timeline"
@@ -16,7 +16,7 @@
       {
         "icon": "splitscreen",
         "title": "Shift Terpisah",
-        "text": "Layanan makan siang dan malam dengan jeda di antaranya: shift terpisah adalah keseharian &mdash; dan memicu pertanyaan seputar waktu istirahat dan tunjangan yang nyaris mustahil direncanakan dengan rapi secara manual."
+        "text": "Layanan makan siang dan malam dengan jeda di antaranya: shift terpisah adalah keseharian &mdash; dan memicu pertanyaan seputar waktu istirahat dan Tambahan Waktu yang nyaris mustahil direncanakan dengan rapi secara manual."
       },
       {
         "icon": "event_repeat",
@@ -26,7 +26,7 @@
       {
         "icon": "nights_stay",
         "title": "Malam, Hari Minggu &amp; Libur",
-        "text": "Operasional justru berjalan saat orang lain berlibur &mdash; menyatukan tunjangan, waktu istirahat, dan hari Minggu bebas adalah seni perencanaan yang sesungguhnya."
+        "text": "Operasional justru berjalan saat orang lain berlibur &mdash; menyatukan Tambahan Waktu, waktu istirahat, dan hari Minggu bebas adalah seni perencanaan yang sesungguhnya."
       }
     ]
   },
@@ -46,8 +46,8 @@
       },
       {
         "icon": "payments",
-        "title": "Tunjangan Otomatis",
-        "text": "Tunjangan malam, hari Minggu, dan hari libur dicatat Klacks secara otomatis sebagai kredit waktu &mdash; dapat dikonfigurasi per negara dan peraturan, sebagai dasar untuk penggajian."
+        "title": "Tambahan Waktu Otomatis",
+        "text": "Tambahan Waktu Malam, Tambahan Waktu Minggu, dan Tambahan Waktu Hari Libur dicatat Klacks secara otomatis sebagai kredit waktu &mdash; dapat dikonfigurasi per negara dan peraturan, sebagai dasar untuk penggajian."
       },
       {
         "icon": "badge",
@@ -70,6 +70,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Rasakan Klacks di Perusahaan Anda",
-    "text": "Coba di Playground bagaimana Klacks mengambil alih jadwal shift, tunjangan, dan waktu istirahat &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
+    "text": "Coba di Playground bagaimana Klacks mengambil alih jadwal shift, Tambahan Waktu, dan waktu istirahat &mdash; atau instal langsung di infrastruktur Anda sendiri. Tanpa biaya lisensi dan tanpa registrasi."
   }
 }

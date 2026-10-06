@@ -1,11 +1,11 @@
 {
   "pageTitle": "Instal Klacks: Installer Terpandu atau Docker Compose dengan Paket Negara | Klacks",
-  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan tunjangan negara Anda (sejauh didefinisikan untuk negara tersebut). Tanpa biaya lisensi, open source, tanpa registrasi.",
+  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan Tambahan Waktu negara Anda (sejauh didefinisikan untuk negara tersebut). Tanpa biaya lisensi, open source, tanpa registrasi.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalasi &middot; Tanpa biaya lisensi &amp; open source",
     "titleHtml": "Jalankan Klacks sendiri &mdash; <span class=\"text-secondary\">di infrastruktur Anda sendiri.</span>",
-    "subtitle": "Dua jalur, satu hasil: installer terpandu, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (tunjangan, sejauh didefinisikan untuk negara tersebut) &mdash; tanpa registrasi, tanpa biaya lisensi."
+    "subtitle": "Dua jalur, satu hasil: installer terpandu, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (Tambahan Waktu, sejauh didefinisikan untuk negara tersebut) &mdash; tanpa registrasi, tanpa biaya lisensi."
   },
   "industry": {
     "eyebrow": "Paket negara",
@@ -52,12 +52,12 @@
   "profile": {
     "icon": "description",
     "title": "Hanya profil &mdash; untuk instalasi yang sudah ada",
-    "text": "Sudah menjalankan Klacks? Profil (JSON) memuat prasetel negara &mdash; hari libur nasional, aturan jam kerja, tunjangan (sejauh didefinisikan untuk negara tersebut), dan industri &mdash; dan diterapkan saat pertama kali sebuah instalasi dijalankan. Ini juga cara untuk menambahkan industri lain beserta prasetelnya di kemudian hari.",
+    "text": "Sudah menjalankan Klacks? Profil (JSON) memuat prasetel negara &mdash; hari libur nasional, aturan jam kerja, Tambahan Waktu (sejauh didefinisikan untuk negara tersebut), dan industri &mdash; dan diterapkan saat pertama kali sebuah instalasi dijalankan. Ini juga cara untuk menambahkan industri lain beserta prasetelnya di kemudian hari.",
     "downloadLabel": "Unduh profil (JSON)"
   },
   "fallback": {
     "noticeTitle": "Belum ada paket negara yang telah dikonfigurasi sebelumnya untuk negara ini.",
-    "noticeText": "Anda tetap dapat menginstal Klacks secara lengkap: paket standar berisi semuanya kecuali prasetel negara. Hari libur nasional, aturan jam kerja, dan tunjangan kemudian Anda atur sendiri di aplikasi.",
+    "noticeText": "Anda tetap dapat menginstal Klacks secara lengkap: paket standar berisi semuanya kecuali prasetel negara. Hari libur nasional, aturan jam kerja, dan Tambahan Waktu kemudian Anda atur sendiri di aplikasi.",
     "downloadLabel": "Unduh paket standar",
     "composeNote": "Belum ada paket Compose terpisah untuk negara ini &mdash; paket standar sudah berisi stack Docker Compose lengkap."
   },

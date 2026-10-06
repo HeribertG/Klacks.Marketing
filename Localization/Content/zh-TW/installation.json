@@ -1,11 +1,11 @@
 {
   "pageTitle": "安裝 Klacks：引導式安裝程式或 Docker Compose，附國家套件 | Klacks",
-  "metaDescription": "在自有基礎設施上安裝 Klacks：引導式 安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日、工時規則與加給（以該國家已定義者為準）。沒有授權費用、開源、無需註冊。",
+  "metaDescription": "在自有基礎設施上安裝 Klacks：引導式 安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日、工時規則與工時加成（以該國家已定義者為準）。沒有授權費用、開源、無需註冊。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "安裝 &middot; 沒有授權費用 &amp; 開源",
     "titleHtml": "自行架設 Klacks &mdash; <span class=\"text-secondary\">在您自己的基礎設施上。</span>",
-    "subtitle": "兩條路徑，同一結果：引導式 安裝程式，或適用於自有環境的 Docker Compose 堆疊。國家套件隨附您所在國家的國定假日、工時規則與行業預設值（加給以該國家已定義者為準） &mdash; 無需註冊，沒有授權費用。"
+    "subtitle": "兩條路徑，同一結果：引導式 安裝程式，或適用於自有環境的 Docker Compose 堆疊。國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準） &mdash; 無需註冊，沒有授權費用。"
   },
   "industry": {
     "eyebrow": "國家套件",
@@ -52,12 +52,12 @@
   "profile": {
     "icon": "description",
     "title": "僅設定檔 &mdash; 適用於現有安裝",
-    "text": "已經在使用 Klacks？此設定檔（JSON）包含國家預設值 &mdash; 國定假日、工時規則、加給（以該國家已定義者為準）與行業 &mdash; 並會在安裝首次啟動時套用。之後要為現有安裝補上另一個行業及其預設值，也是透過這個方式。",
+    "text": "已經在使用 Klacks？此設定檔（JSON）包含國家預設值 &mdash; 國定假日、工時規則、工時加成（以該國家已定義者為準）與行業 &mdash; 並會在安裝首次啟動時套用。之後要為現有安裝補上另一個行業及其預設值，也是透過這個方式。",
     "downloadLabel": "下載設定檔（JSON）"
   },
   "fallback": {
     "noticeTitle": "此國家目前還沒有預先設定的國家套件。",
-    "noticeText": "您仍然可以完整安裝 Klacks：標準套件包含除國家預設值以外的全部內容。之後您可以在應用程式中自行設定國定假日、工時規則與加給。",
+    "noticeText": "您仍然可以完整安裝 Klacks：標準套件包含除國家預設值以外的全部內容。之後您可以在應用程式中自行設定國定假日、工時規則與工時加成。",
     "downloadLabel": "下載標準套件",
     "composeNote": "此國家目前還沒有獨立的 Compose 套件 &mdash; 標準套件已包含完整的 Docker Compose 堆疊。"
   },
