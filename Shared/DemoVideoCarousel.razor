@@ -24,21 +24,27 @@
    fallback to another language; without any video in the culture (or with an empty list) the whole section
    (heading included) is omitted. The optional tip under the carousel points to Klacksy, who can do the same
    steps in the chat; it belongs to the everyday-work carousel only.
+   Compact embeds the carousel in another layout (hero of the start page): no section padding, heading, subtitle, note or hint,
+   the carousel is labelled with the definition's title instead.
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
     var current = _videos[_currentIndex];
     var selectedIndex = TargetIndex;
-    <section id="@Definition.SectionId" class="reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule">
-        <div class="text-center mb-10 md:mb-12">
-            @if (Definition.EyebrowKey is not null)
-            {
-                <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(Definition.EyebrowKey)</span>
-            }
-            <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight @(Definition.EyebrowKey is not null ? "mt-4" : string.Empty)">@Sh(Definition.TitleKey)</h2>
-            <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh(Definition.SubtitleKey)</p>
-        </div>
-        <div class="daily-ops-carousel max-w-4xl mx-auto" role="region" aria-roledescription="carousel" aria-labelledby="@HeadingId"
+    <section id="@Definition.SectionId" class="@(Compact ? string.Empty : "reveal py-14 md:py-24 px-8 max-w-7xl mx-auto no-line-rule")">
+        @if (!Compact)
+        {
+            <div class="text-center mb-10 md:mb-12">
+                @if (Definition.EyebrowKey is not null)
+                {
+                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(Definition.EyebrowKey)</span>
+                }
+                <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight @(Definition.EyebrowKey is not null ? "mt-4" : string.Empty)">@Sh(Definition.TitleKey)</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh(Definition.SubtitleKey)</p>
+            </div>
+        }
+        <div class="daily-ops-carousel @(Compact ? string.Empty : "max-w-4xl mx-auto")" role="region" aria-roledescription="carousel"
+             aria-labelledby="@(Compact ? null : HeadingId)" aria-label="@(Compact ? Sh(Definition.TitleKey) : null)"
              tabindex="-1" data-carousel>
             <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="@Sh(NavLabelKey)">
                 @for (var index = 0; index < _videos.Count; index++)
@@ -71,11 +77,11 @@
             </div>
             <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
         </div>
-        @if (Definition.NoteKey is not null)
+        @if (!Compact && Definition.NoteKey is not null)
         {
             <p class="max-w-2xl mx-auto text-xs text-on-surface-variant leading-relaxed text-center mt-4 mb-0">@Sh(Definition.NoteKey)</p>
         }
-        @if (Definition.HintKey is not null)
+        @if (!Compact && Definition.HintKey is not null)
         {
             <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
                 <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh(HintLabelKey)</span>
@@ -109,6 +115,8 @@
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
     [Parameter, EditorRequired] public required DemoCarouselDefinition Definition { get; set; }
+
+    [Parameter] public bool Compact { get; set; }
 
     private int TargetIndex => _pendingIndex ?? _currentIndex;
 

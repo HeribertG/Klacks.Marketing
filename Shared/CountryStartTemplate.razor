@@ -22,7 +22,7 @@
                 <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">@Country.Hero.BadgeIcon</span>
                 <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Country.Hero.Badge)</span>
             </div>
-            <h1 class="text-[2.125rem] md:text-[2.75rem] lg:text-[3.25rem] leading-[1.1] font-black tracking-tighter text-primary mb-6 hyphens-auto break-words">@Tx("hero.title")</h1>
+            <h1 class="hero-title text-[2.125rem] md:text-[2.75rem] lg:text-[3.25rem] leading-[1.1] font-black tracking-tighter text-primary mb-6 hyphens-auto break-words">@HeroTitle.Lead@if (HeroTitle.Remainder.Length > 0){@(" ")<span class="text-secondary">@HeroTitle.Remainder</span>}</h1>
             <p class="text-lg md:text-xl text-on-surface-variant mb-3 leading-relaxed">@((MarkupString)HeroSubtitle.Lead)</p>
             <p class="text-lg md:text-xl font-bold text-secondary mb-6">@Tx("hero.noLicense")</p>
             <ul class="flex flex-wrap gap-2 list-none p-0 mb-8">
@@ -45,9 +45,7 @@
         <div class="lg:col-span-6 min-w-0">
             @if (HasHeroVideo)
             {
-                <DemoVideo Culture="@Culture" VideoName="@HeroVideoName"
-                           LabelKey="klacksyGroupsAddress.videoLabel" CaptionKey="klacksyGroupsAddress.caption"
-                           Width="@DemoCarousels.Klacksy.VideoWidth" Height="@DemoCarousels.Klacksy.VideoHeight" Loop="true" FigureClass="m-0" />
+                <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.Hero" Compact="true" />
                 <p class="text-xs text-on-surface-variant leading-relaxed mt-2 mb-0 flex gap-2">
                     <span class="material-symbols-outlined text-sm" aria-hidden="true">speed</span>
                     <span>@Sh(DemoCarousels.KlacksyVideoNoteKey) @Tx("hero.engineNote")</span>
@@ -365,7 +363,6 @@
 
 @code {
     public const string StartContentKey = "start";
-    public const string HeroVideoName = DemoVideo.KlacksyGroupsAddressVideoName;
 
     private const string IndexContentKey = "index";
     private const string SharedContentKey = "shared";
@@ -409,7 +406,9 @@
 
     private (string Lead, string Remainder) HeroSubtitle => LeadSentence.Split(Country.Hero.Subtitle);
 
-    private bool HasHeroVideo => VideoCatalog.Find(HeroVideoName, Culture) is not null;
+    private (string Lead, string Remainder) HeroTitle => LeadSentence.Split(Tx("hero.title"));
+
+    private bool HasHeroVideo => DemoCarousels.Hero.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
 
     private IEnumerable<string> HeroChips
         => HeroChipKeys.Take(2).Select(Ix)

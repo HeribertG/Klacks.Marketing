@@ -16,6 +16,7 @@ public static class DemoCarousels
     public const string ContainersSectionId = "spezialdienste-container";
     public const string SporadicTimeRangeSectionId = "spezialdienste-sporadisch-zeitbereich";
     public const string KlacksySectionId = "klacksy-aufgaben";
+    public const string HeroSectionId = "hero-videos";
     public const string KlacksyVideoNoteKey = "klacksyOps.videoNote";
 
     private const int KlacksyVideoWidth = 1000;
@@ -102,6 +103,18 @@ public static class DemoCarousels
         VideoWidth: KlacksyVideoWidth,
         VideoHeight: KlacksyVideoHeight,
         NoteKey: KlacksyVideoNoteKey);
+
+    public static DemoCarouselDefinition Hero { get; } = new(
+        HeroSectionId,
+        "klacksyOps.title",
+        "klacksyOps.subtitle",
+        new DemoCarouselVideo[]
+        {
+            new(DemoVideo.KlacksyPlansWeekVideoName, "klacksyPlansWeek.title", "klacksyPlansWeek.videoLabel", "klacksyPlansWeek.caption"),
+            new(DemoVideo.KlacksyGroupsAddressVideoName, "klacksyGroupsAddress.title", "klacksyGroupsAddress.videoLabel", "klacksyGroupsAddress.caption"),
+        },
+        VideoWidth: KlacksyVideoWidth,
+        VideoHeight: KlacksyVideoHeight);
 
     public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }
