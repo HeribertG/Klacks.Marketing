@@ -26,8 +26,9 @@
    steps in the chat; it belongs to the everyday-work carousel only.
    Compact embeds the carousel in another layout (hero of the start page): no section padding, heading, subtitle, note or hint,
    no slide title above the video (the pill already names the slide), the carousel is labelled with the definition's title
-   instead. The optional SlideFooter fragment is rendered inside every slide's caption block, right after the caption (hero: the video note), so the
-   texts change together with the video.
+   instead. Each slide shows its own caption (the figcaption of its video); the optional SlideFooter
+   (receives the video name) adds a text to the caption block of the slides it renders for (hero: the video note, only for the
+   accelerated week-planning clip).
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
@@ -70,7 +71,7 @@
                     <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@(Compact ? null : current.TitleKey)"
                                LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey" TitleClass="@SlideTitleClass"
                                Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0"
-                               CaptionFooter="@SlideFooter" OmitClosingSentence="@(Compact && SlideFooter is not null)" />
+                               CaptionFooter="@SlideFooter?.Invoke(current.VideoName)" />
                 </div>
                 <button type="button" data-carousel-next
                         class="daily-ops-carousel-next daily-ops-carousel-arrow" aria-label="@Sh(NextKey)" aria-controls="@SlideId"
@@ -121,8 +122,7 @@
 
     [Parameter] public bool Compact { get; set; }
 
-    [Parameter] public RenderFragment? SlideFooter { get; set; }
-
+    [Parameter] public RenderFragment<string>? SlideFooter { get; set; }
     private int TargetIndex => _pendingIndex ?? _currentIndex;
 
     private string HeadingId => Definition.SectionId + HeadingIdSuffix;
