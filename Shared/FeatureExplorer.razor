@@ -57,7 +57,7 @@
                         <span class="material-symbols-outlined text-xl mt-0.5" aria-hidden="true">@ChapterIcon(definition)</span>
                         <span class="flex-1 min-w-0">
                             <span class="block text-base font-black">@Tx(ChapterKey(definition, ChapterTitleSuffix))</span>
-                            <span class="block text-xs font-medium mt-0.5 @(isActive ? "text-white/80" : "text-on-surface-variant")">@Tx(ChapterKey(definition, ChapterTeaserSuffix))</span>
+                            <span class="block text-xs font-medium mt-0.5 @(isActive ? "text-white/80" : "text-on-surface-variant")">@ChapterTeaser(chapter)</span>
                         </span>
                         <span class="material-symbols-outlined text-xl lg:hidden" aria-hidden="true">@(isActive ? "expand_less" : "expand_more")</span>
                     </button>
@@ -76,7 +76,7 @@
                                         <button type="button"
                                                 class="rounded-full px-4 py-2 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelectedView ? "bg-primary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
                                                 aria-pressed="@(isSelectedView ? "true" : "false")" aria-controls="@RulesViewPanelId"
-                                                @onclick="() => SelectRulesView(viewId)">@Tx($"explorer.rulesView.{viewId}")</button>
+                                                @onclick="() => SelectRulesView(viewId)">@Tx(RulesViewKeyPrefix + viewId)</button>
                                     }
                                 </div>
                                 <div id="@RulesViewPanelId">
@@ -159,6 +159,8 @@
     private const string ChapterKeyFormat = "explorer.chapter.{0}.{1}";
     private const string ChapterTitleSuffix = "title";
     private const string ChapterTeaserSuffix = "teaser";
+    private const string RulesViewKeyPrefix = "explorer.rulesView.";
+    private const string RulesTeaserSeparator = " · ";
     private const string RecordingPrefixKey = "explorer.subtitlePrefix";
     private const string ButtonIdSuffix = "-button";
     private const string PanelIdSuffix = "-panel";
@@ -284,6 +286,13 @@
         => RulesViews.Where(view => (view != RulesViewLive || chapter.Videos.Count > 0)
             && (view != RulesViewCalendar || RulesCalendar is not null));
 
+    // The rules teaser lists exactly the views the chapter offers ("Zuschläge · Verstösse live" on an industry page
+    // without calendar texts); every other chapter keeps its teaser text.
+    private string ChapterTeaser(Chapter chapter)
+        => IsRulesChapter(chapter.Definition)
+            ? string.Join(RulesTeaserSeparator, AvailableRulesViews(chapter).Select(view => Tx(RulesViewKeyPrefix + view)))
+            : Tx(ChapterKey(chapter.Definition, ChapterTeaserSuffix));
+
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
         if (ChapterFromFragment(e.Location) is { } chapterId && chapterId != _activeChapterId)
@@ -320,7 +329,16 @@
     private string WithoutRecordingPrefix(string subtitle)
     {
         var prefix = Tx(RecordingPrefixKey);
-        return subtitle.StartsWith(prefix, StringComparison.Ordinal) ? subtitle[prefix.Length..].TrimStart() : subtitle;
+        if (!subtitle.StartsWith(prefix, StringComparison.Ordinal))
+        {
+            return subtitle;
+        }
+
+        // The remainder followed a colon ("...demo data: you tell Klacksy"), so it may start in lower case.
+        var remainder = subtitle[prefix.Length..].TrimStart();
+        return remainder.Length == 0
+            ? remainder
+            : char.ToUpper(remainder[0], CultureInfo.GetCultureInfo(Culture)) + remainder[1..];
     }
 
     private RenderFragment VideoStage(Chapter chapter) => __builder =>

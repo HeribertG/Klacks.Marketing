@@ -116,7 +116,7 @@
 @* Same explorer as the country start page: the rules chapter carries the calendar, the surcharge settings and the live
    violations, every other chapter one former carousel. The anchor keeps the "#regeln" nav link of the site header. *@
 <div id="@RulesSectionAnchorId" class="scroll-mt-24" aria-hidden="true"></div>
-<FeatureExplorer Culture="@Culture" ContentKey="@CountryStartTemplate.StartContentKey" RulesCalendar="@Content.RulesCalendar"
+<FeatureExplorer Culture="@Culture" ContentKey="@CountryStartTemplate.StartContentKey" RulesCalendar="@ExplorerRulesCalendar"
                  KlacksyNote="@Sh(DemoCarousels.KlacksyVideoNoteKey)" InitialChapterId="@InitialExplorerChapterId" />
 
 @if (Content.Stats is not null && Content.Stats.Items.Count > 0)
@@ -236,6 +236,13 @@
     private bool IsKlacksyPage => PageKey.Equals(KlacksySlug, StringComparison.OrdinalIgnoreCase)
         || PageKey.EndsWith("-" + KlacksySlug, StringComparison.OrdinalIgnoreCase);
 
+    // Industry and Klacksy pages carry no calendar texts of their own; the explorer's calendar view shows those of
+    // the owning country page (holidays and regions are the same for every industry of a country).
+    private IndustryRulesCalendarSection? ExplorerRulesCalendar
+        => Content.RulesCalendar
+            ?? (CountryIndustries.OwningCountry(PageKey) is { } country && country != PageKey
+                ? ContentProvider.GetIndustryPage(Culture, country).RulesCalendar
+                : null);
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
     private IndustryPageContent Content => ContentProvider.GetIndustryPage(Culture, PageKey);
