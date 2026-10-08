@@ -1,6 +1,7 @@
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Seo;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +61,17 @@ app.UseStaticFiles();
 app.Use(async (context, next) =>
 {
     var path = context.Request.Path.Value ?? "/";
+
+    if (path == "/" && (HttpMethods.IsGet(context.Request.Method) || HttpMethods.IsHead(context.Request.Method)))
+    {
+        context.Response.Headers.Append(HeaderNames.Vary, HeaderNames.AcceptLanguage);
+
+        if (BrowserLanguageRedirect.ResolveTarget(context.Request.Headers.AcceptLanguage.ToString()) is { } browserTarget)
+        {
+            context.Response.Redirect(browserTarget + context.Request.QueryString, permanent: false);
+            return;
+        }
+    }
 
     if (RequiresKnownPage(path))
     {
