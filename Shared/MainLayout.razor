@@ -6,7 +6,7 @@
 
 <!-- NAVIGATION BAR -->
 <nav class="fixed top-0 w-full z-50 glass-nav no-line-rule">
-    <div class="flex justify-between items-center gap-6 w-full px-8 py-4 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center gap-4 sm:gap-6 w-full px-4 sm:px-8 py-4 max-w-7xl mx-auto">
         <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-black no-underline">
             <img src="images/klacks-logo.svg" class="w-8 h-8 shrink-0" alt="Klacks Logo" />
             Klacks
@@ -115,7 +115,7 @@
         </button>
     </div>
 
-    <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full right-8 mt-2 w-full max-w-sm bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-8 py-6 flex flex-col gap-5">
+    <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full inset-x-4 sm:inset-x-auto sm:right-8 mt-2 sm:w-96 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-6 sm:px-8 py-6 flex flex-col gap-5">
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
         <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
@@ -216,13 +216,13 @@
 
 <!-- FOOTER -->
 <footer class="bg-slate-50 no-line-rule">
-    <div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 sm:px-8 py-12 max-w-7xl mx-auto">
         <div class="mb-8 md:mb-0">
             <div class="text-lg font-bold text-black mb-2">Klacks</div>
             <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500">@ShHtml("footer.tagline")</div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div class="flex flex-wrap justify-center gap-8">
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-8">
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.GithubUrl" target="_blank">@Sh("footer.github")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.DiscordInviteUrl" target="_blank">@Sh("footer.discord")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="mailto:@ExternalLinks.ContactEmail">@Sh("footer.contact")</a>

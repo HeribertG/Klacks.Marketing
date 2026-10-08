@@ -65,6 +65,11 @@ html {
    the hamburger menu instead of switching at md=768px. */
 .mobile-menu-panel {
     display: none;
+    max-height: calc(100vh - 5.5rem);
+    max-height: calc(100dvh - 5.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu-panel.mobile-menu-open {
@@ -544,12 +549,16 @@ body:has(.feature-ticker-bar) footer {
         overflow: hidden;
         max-height: 0;
         opacity: 0;
+        pointer-events: none;
         transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
     }
 
     .mobile-menu-panel.mobile-menu-open {
-        max-height: 40rem;
+        max-height: calc(100vh - 5.5rem);
+        max-height: calc(100dvh - 5.5rem);
+        overflow-y: auto;
         opacity: 1;
+        pointer-events: auto;
     }
 
     @media (min-width: 1280px) {
