@@ -1,3 +1,5 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 using System.Text.Json.Serialization;
 
 namespace Klacks.Marketing.Localization.Seo;
@@ -18,6 +20,7 @@ public sealed record JsonLdOrganization
     [JsonPropertyName("telephone")] public string? Telephone { get; init; }
     [JsonPropertyName("founder")] public JsonLdPerson? Founder { get; init; }
     [JsonPropertyName("address")] public JsonLdPostalAddress? Address { get; init; }
+    [JsonPropertyName("sameAs")] public IReadOnlyList<string>? SameAs { get; init; }
 }
 
 public sealed record JsonLdPerson
@@ -52,6 +55,8 @@ public sealed record JsonLdSoftwareApplication
     [JsonPropertyName("url")] public required string Url { get; init; }
     [JsonPropertyName("inLanguage")] public required string InLanguage { get; init; }
     [JsonPropertyName("description")] public string? Description { get; init; }
+    [JsonPropertyName("license")] public string? License { get; init; }
+    [JsonPropertyName("sameAs")] public IReadOnlyList<string>? SameAs { get; init; }
     [JsonPropertyName("publisher")] public JsonLdPublisher? Publisher { get; init; }
 }
 

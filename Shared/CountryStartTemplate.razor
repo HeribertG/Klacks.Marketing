@@ -347,7 +347,7 @@
         @Ix("getStarted.title")
     </h3>
     <p class="text-center text-sm text-on-surface-variant max-w-2xl mx-auto mb-6">@((MarkupString)Ix("getStarted.subtitle"))</p>
-    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 list-none p-0 m-0">
+    <ul class="grid md:grid-cols-3 gap-5 list-none p-0 m-0">
         @foreach (var card in GetStartedCards)
         {
             <li class="rounded-2xl bg-surface-container-low p-6 flex flex-col">
@@ -436,7 +436,6 @@
         new GetStartedCard("playground", "play_circle", ExternalLinks.PlaygroundUrl, null, OpensPlayground: true),
         new GetStartedCard("download", "download", InstallationHref, null, OpensPlayground: false),
         new GetStartedCard("source", "code", ExternalLinks.GithubUrl, BlankTarget, OpensPlayground: false),
-        new GetStartedCard("community", "forum", ExternalLinks.DiscordInviteUrl, BlankTarget, OpensPlayground: false),
     };
 
     private string InstallationHref => CountryHref(CountryPageLinks.InstallationSlug);

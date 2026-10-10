@@ -1,3 +1,5 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 using System.Text;
 
 namespace Klacks.Marketing.Localization;
@@ -68,6 +70,9 @@ public static class SitemapGenerator
     private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug };
 
     private const string InstallationSlug = "installation";
+
+    // Same value and target as the page-level x-default link emitted by SeoHead.
+    private const string DefaultHreflang = "x-default";
 
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
@@ -145,6 +150,7 @@ public static class SitemapGenerator
             sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{altCulture.Code}\" href=\"{BuildUrl(baseUrl, altCulture, pageKeyFor(altCulture))}\" />");
         }
 
+        sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{DefaultHreflang}\" href=\"{BuildUrl(baseUrl, SupportedCultures.Default, pageKeyFor(SupportedCultures.Default))}\" />");
         sb.AppendLine("  </url>");
     }
 

@@ -100,7 +100,7 @@ public static class LlmsTxtGenerator
     private const string AboutTitle = "Who is behind Klacks";
     private const string AboutSummary = "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0.";
     private const string AboutDetail =
-        "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0. Sales, support and marketing are handled by AI assistants, and what an AI writes is labeled as such; the founder decides prices, offers, contracts and invoices himself. The installation and the database run in your business, with the data stored in PostgreSQL, an open database; a complete data export is planned for version 1.1.";
+        "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0. AI helps with research, texts, translation and marketing drafts, and what an AI writes is labeled as such; the founder handles inquiries personally and decides prices, offers, contracts and invoices himself. The installation and the database run in your business, with the data stored in PostgreSQL, an open database; with standard tools you can reach all your data at any time, even without Klacks.";
 
     // English-language country landing pages (page key -> English country name).
     // Only countries with their own English content are listed here; the site
@@ -363,7 +363,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine("- Office-PC setup: the PC must be running during working hours. The team reaches Klacks on the office network; access from outside is not set up.");
         sb.AppendLine("- Docker Desktop is a separate product with its own licence limit: according to the Klacks SME page it is free of charge for businesses with fewer than 250 employees and less than 10 million USD in annual revenue.");
-        sb.AppendLine("- Data is stored in your installation in the open PostgreSQL database. A complete data export is planned for version 1.1.");
+        sb.AppendLine("- Data is stored in your installation in the open PostgreSQL database; with standard tools you can reach all your data at any time, even without Klacks.");
         sb.AppendLine("- Keep the .env file in the install folder safe: it holds the generated secrets, and without it every stored password and API key is unrecoverable.");
         sb.AppendLine("- Klacks was developed and tested with a dataset of 5,000 employees; how smoothly it runs on a PC depends on the PC's performance.");
         sb.AppendLine("- macOS is not covered by these steps.");

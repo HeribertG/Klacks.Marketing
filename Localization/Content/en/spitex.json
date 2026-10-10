@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For home care &amp; outpatient nursing",
     "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
-    "subtitle": "Klacks schedules visits and routes automatically &mdash; with the right qualifications, configurable pay premiums, and your canton's public holidays. Installed on your premises; with a local AI model, patient data does not leave your building.",
+    "subtitle": "Klacks schedules visits and routes automatically &mdash; with the right qualifications, configurable surcharges, and your region's public holidays. Installed on your premises; with a local AI model, patient data does not leave your building.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for home care route planning",
     "screenshotLabel": "Timeline",
@@ -21,11 +21,11 @@
   },
   "solutions": {
     "title": "How Klacks lightens the load for home care",
-    "subtitle": "From automatic routes to cantonal public holidays &mdash; it all works together.",
+    "subtitle": "From automatic routes to regional public holidays &mdash; it all works together.",
     "items": [
       { "icon": "route", "title": "Routes optimized automatically", "text": "Klacks lays out visit routes so distances stay short and time windows are met &mdash; by car, bike, or on foot." },
       { "icon": "verified", "title": "Qualifications automatically respected", "text": "Every visit is assigned only to people with the right qualification &mdash; with no manual checking at all." },
-      { "icon": "event_available", "title": "Your canton's public holidays &amp; pay premiums", "text": "Public holidays come pre-configured &mdash; down to canton and municipality level. You set night, weekend, and public holiday premiums yourself as time credits, all freely adjustable." },
+      { "icon": "event_available", "title": "Your region's public holidays &amp; surcharges", "text": "Public holidays come pre-configured &mdash; down to regional and local level. You set night, weekend, and public holiday surcharges yourself as time credits, all freely adjustable." },
       { "icon": "shield_lock", "title": "Installed on your premises: data in-house", "text": "Klacks runs on your own infrastructure. Patient data is stored on your servers &mdash; with a local AI model, nothing leaves your building for the AI either." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "“Fill tomorrow's routes” is enough. If someone calls in sick, Klacksy immediately suggests available replacements." },
       { "icon": "event_busy", "title": "Absences covered fast", "text": "If someone drops out, Klacks immediately shows who's qualified and available &mdash; without turning the whole schedule upside down." }
@@ -34,11 +34,11 @@
   "example": {
     "eyebrow": "In practice",
     "title": "Home care in Geneva, bilingual, with visits in Vaud",
-    "text": "French-language interface, Geneva and Vaud public holidays, home care pay premiums &mdash; configured in Klacks, not custom-coded. Routes are optimized automatically, qualifications are checked, and Klacksy helps with last-minute changes. Patient data is stored on your servers, and with a local AI model everything stays in-house."
+    "text": "French-language interface, Geneva and Vaud public holidays, home care surcharges &mdash; configured in Klacks, not custom-coded. Routes are optimized automatically, qualifications are checked, and Klacksy helps with last-minute changes. Patient data is stored on your servers, and with a local AI model everything stays in-house."
   },
   "showRoutePlanning": true,
   "cta": {
     "title": "Experience Klacks in your home care organization",
-    "text": "Try it in the Playground and see how Klacks handles routes, qualifications, and pay premiums &mdash; or install it directly on your own infrastructure. No license fees, no registration required."
+    "text": "Try it in the Playground and see how Klacks handles routes, qualifications, and surcharges &mdash; or install it directly on your own infrastructure. No license fees, no registration required."
   }
 }

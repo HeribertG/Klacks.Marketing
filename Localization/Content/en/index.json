@@ -14,7 +14,7 @@
   "painPoints.item1.title": "Scheduling eats up hours",
   "painPoints.item1.text": "Building schedules by hand costs hours every week. One change triggers a dozen follow-on conflicts.",
   "painPoints.item2.title": "Compliance risk",
-  "painPoints.item2.text": "Rest periods, qualifications, pay premiums, public holidays. One overlooked value quickly becomes a costly mistake.",
+  "painPoints.item2.text": "Rest periods, qualifications, surcharges, public holidays. One overlooked value quickly becomes a costly mistake.",
   "painPoints.item3.title": "Forced cloud &amp; lock-in",
   "painPoints.item3.text": "Personal data on someone else's servers, dependence on a single vendor. Sensitive industries can't afford that.",
 
@@ -83,7 +83,7 @@
   "rulesCalendar.item2.title": "Mix calendars",
   "rulesCalendar.item2.text": "Multiple countries at once &mdash; for example Geneva and the US, for a business with trading partners there.",
   "rulesCalendar.item3.title": "Enforced or just informational",
-  "rulesCalendar.item3.text": "You decide per calendar whether a public holiday affects hours &amp; pay premiums &mdash; or just appears as a reminder.",
+  "rulesCalendar.item3.text": "You decide per calendar whether a public holiday affects hours &amp; surcharges &mdash; or just appears as a reminder.",
   "rulesCalendar.imageLabel": "Public holiday rules",
   "rulesCalendar.imageAlt": "Holiday rules in Klacks: public holidays of the United Kingdom, each with its country and region",
   "rulesCalendar.imageCaption": "Real rules from Klacks: every holiday rule carries a country and a region, and the list can be filtered by both &mdash; freely extensible.",
@@ -93,7 +93,7 @@
   "industries.subtitle": "Wherever staff are scheduled in shifts, in the field, and by qualification &mdash; Klacks adapts to you, not the other way around.",
   "industries.moreLabel": "More",
   "industries.spitex.title": "Home Care",
-  "industries.spitex.text": "Routes, qualifications, and care pay premiums &mdash; scheduled automatically.",
+  "industries.spitex.text": "Routes, qualifications, and care surcharges &mdash; scheduled automatically.",
   "industries.spitaeler.title": "Hospitals",
   "industries.spitaeler.text": "24/7 coverage, rest periods, and hospital-grade data protection.",
   "industries.security.title": "Security",
@@ -126,8 +126,5 @@
   "getStarted.download.button": "Download the installation package",
   "getStarted.source.title": "Source code on GitHub",
   "getStarted.source.text": "Klacks is open source under the AGPL-3.0. Backend, frontend, and Docker images are public &mdash; inspect it, fork it, contribute.",
-  "getStarted.source.button": "View the repository",
-  "getStarted.community.title": "Questions? Ideas? Conversation?",
-  "getStarted.community.text": "The Klacks community meets on Discord &mdash; ask questions, share your experiences, and be the first to hear about new releases.",
-  "getStarted.community.button": "Join us on Discord"
+  "getStarted.source.button": "View the repository"
 }

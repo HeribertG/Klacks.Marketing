@@ -1,3 +1,5 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -9,7 +11,9 @@ namespace Klacks.Marketing.Localization.Seo;
 public static class JsonLdBuilder
 {
     private const string BusinessApplicationCategory = "BusinessApplication";
-    private const string WebOperatingSystem = "Web";
+    // Klacks is installed by the customer (on-premise), not used as a hosted web app; macOS is
+    // deliberately absent because the installer has not been verified there.
+    private const string SupportedOperatingSystems = "Linux, Windows";
 
     // The full <script> element is built here (not in the .razor) so the type stays
     // the literal "application/ld+json": Razor's attribute encoder would render the
@@ -34,10 +38,12 @@ public static class JsonLdBuilder
         {
             Name = OrganizationFacts.SoftwareApplicationName,
             ApplicationCategory = BusinessApplicationCategory,
-            OperatingSystem = WebOperatingSystem,
+            OperatingSystem = SupportedOperatingSystems,
             Url = RootUrl(baseUrl),
             InLanguage = cultureCode,
             Description = string.IsNullOrEmpty(description) ? null : description,
+            License = ExternalLinks.AgplLicenseUrl,
+            SameAs = new[] { ExternalLinks.GithubUrl, ExternalLinks.WikidataSoftwareUrl },
             Publisher = BuildPublisher(baseUrl),
         });
 
@@ -86,6 +92,7 @@ public static class JsonLdBuilder
             Email = OrganizationFacts.Email,
             Telephone = OrganizationFacts.Telephone,
             Founder = new JsonLdPerson { Name = OrganizationFacts.FounderName },
+            SameAs = new[] { ExternalLinks.GithubOrganizationUrl, ExternalLinks.WikidataOrganizationUrl },
             Address = new JsonLdPostalAddress
             {
                 StreetAddress = OrganizationFacts.StreetAddress,
