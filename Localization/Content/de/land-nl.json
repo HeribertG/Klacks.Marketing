@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Für Arbeitgeber in den Niederlanden &middot; Open Source &middot; Ohne Lizenzgebühren",
     "titleHtml": "Dienstpläne, die die <span class=\"text-secondary\">Arbeidstijdenwet live im Blick behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und disponiert Oproepkrachten mit Datum und Stunden; die Fristen der Wet arbeidsmarkt in balans (WAB) behalten Sie selbst im Blick &mdash; bei Ihnen installiert, damit Personaldaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks plant Dienste automatisch entlang der niederländischen Arbeidstijdenwet (ATW) und disponiert Oproepkrachten mit Datum und Stunden; die Fristen der Wet arbeidsmarkt in balans (WAB) behalten Sie selbst im Blick &mdash; bei Ihnen installiert, damit Personaldaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in den Niederlanden",
     "screenshotLabel": "Dienstplan"
@@ -81,8 +81,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit lokalem Modell verlassen Personaldaten Ihr Haus nicht."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; Personaldaten liegen auf Ihren Servern, und mit einem lokalen Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

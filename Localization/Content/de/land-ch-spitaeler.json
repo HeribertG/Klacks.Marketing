@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Spitäler &amp; Kliniken in der Schweiz",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen, Pikettdienste und Assistenzarzt-Stunden lückenlos &mdash; mit Präsenz- und Rufpikett als eigenen Dienstarten. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
+    "subtitle": "Klacks plant Stationen, Pikettdienste und Assistenzarzt-Stunden lückenlos &mdash; mit Präsenz- und Rufpikett als eigenen Dienstarten. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Schweizer Spitäler",
     "screenshotLabel": "Dienstplan"
@@ -66,8 +66,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI."
+        "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

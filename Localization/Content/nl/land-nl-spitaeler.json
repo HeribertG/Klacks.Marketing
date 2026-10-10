@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Voor ziekenhuizen &amp; klinieken in Nederland",
     "titleHtml": "Dienstroosters die <span class=\"text-secondary\">24 uur per dag kloppen.</span>",
-    "subtitle": "Klacks plant afdelingen en diensten sluitend &mdash; met rusttijdregels zoals de 8-uurs rust na een nachtelijke inzet, die u zelf vastlegt. Bij u geïnstalleerd, zodat patiëntgegevens in uw organisatie blijven &mdash; op verzoek met een lokaal AI-model.",
+    "subtitle": "Klacks plant afdelingen en diensten sluitend &mdash; met rusttijdregels zoals de 8-uurs rust na een nachtelijke inzet, die u zelf vastlegt. Bij u geïnstalleerd, zodat patiëntgegevens op uw eigen servers staan &mdash; op verzoek met een lokaal AI-model.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosterraster voor Nederlandse ziekenhuizen",
     "screenshotLabel": "Dienstrooster"
@@ -26,7 +26,7 @@
       { "icon": "event_available", "title": "Oproepvrije dagen in beeld", "text": "De 14 oproepvrije dagen per venster van 28 dagen en de twee vrije weekenden kunt u vastleggen als regels voor vrije dagen in een rollend venster; bereikbaarheid als eigen tijdsoort kent Klacks niet." },
       { "icon": "schedule", "title": "Sluitende 24/7-dekking", "text": "Dag-, avond- en nachtdiensten over alle afdelingen &mdash; Klacks toont elk gat direct en vult het desgewenst automatisch op." },
       { "icon": "verified", "title": "Kwalificaties &amp; afdelingen", "text": "Elke shift wordt alleen toegewezen aan passend gekwalificeerd personeel &mdash; per afdeling, dienst en functie." },
-      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens blijven binnenshuis", "text": "Klacks draait op uw infrastructuur. Personeels- en patiëntgegevens verlaten de kliniek niet &mdash; met een lokaal AI-model op verzoek ook niet naar de AI." },
+      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens staan op uw servers", "text": "Klacks draait op uw infrastructuur. Personeels- en patiëntgegevens staan op uw servers &mdash; met een lokaal AI-model gaat geen AI-verzoek naar een externe AI-aanbieder." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Vul de nachtdiensten van Interne Geneeskunde voor volgende week in” volstaat &mdash; Klacksy start de planning, Klacks houdt rekening met kwalificatie en rusttijd." }
     ]
   },

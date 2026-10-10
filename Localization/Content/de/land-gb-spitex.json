@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche &amp; ambulante Pflege (Domiciliary Care) in Grossbritannien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Lohnabrechnung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive eines festen Wegzeit-Werts je Dienst als Arbeitszeit, als Zeitbasis für Ihre Lohnbuchhaltung. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive eines festen Wegzeit-Werts je Dienst als Arbeitszeit, als Zeitbasis für Ihre Lohnbuchhaltung. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Grossbritannien",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Wegzeit als Arbeitszeit hinterlegt", "text": "Für jeden Dienst lässt sich ein fester Wegzeit-Wert hinterlegen, der als Arbeitszeit zählt &mdash; tatsächliche Fahrzeiten zwischen den Klient:innen berechnet Klacks nicht einzeln." },
       { "icon": "payments", "title": "Zeitbasis für den National Living Wage", "text": "Klacks stellt die geleisteten Stunden inklusive Wegzeit-Wert für Ihre Lohnbuchhaltung bereit &mdash; den Abgleich mit dem National Living Wage von £12.71 pro Stunde nehmen Sie in Ihrer Lohnsoftware vor." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

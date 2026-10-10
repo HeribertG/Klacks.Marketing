@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Without license fees &middot; Data Hosted in Saudi Arabia",
     "titleHtml": "Workforce scheduling that <span class=\"text-secondary\">monitors the 12-hour limit live.</span>",
-    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour daily limit (Art. 101), optionally with a hard block in automatic planning, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data stays physically in Saudi Arabia (with a locally hosted AI model, also for AI use), in line with PDPL and SDAIA.",
+    "subtitle": "Klacks schedules shifts automatically, monitors the 12-hour daily limit (Art. 101), optionally with a hard block in automatic planning, and can be controlled through the Klacksy AI assistant &mdash; installed on your own premises, open source, with the AI model of your choice. Sensitive personnel and scheduling data is stored physically on your own servers in Saudi Arabia (with a locally hosted AI model, no AI request goes to an external AI provider); the legal assessment under the PDPL and SDAIA remains with you.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -86,8 +86,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installed on Your Premises: Data Stays in Saudi Arabia",
-        "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) stays physically within KSA &mdash; with a locally hosted AI model, also for AI use; this makes it easier to meet the transfer requirements under PDPL/SDAIA."
+        "title": "Installed on Your Premises: Data Storage on Your Servers in Saudi Arabia",
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model. Sensitive personnel and scheduling data (البيانات الشخصية الحساسة) is stored physically on your servers within KSA &mdash; with a locally hosted AI model, no AI request goes to an external AI provider; transfers are governed by the PDPL and SDAIA, and the legal assessment remains with you."
       },
       {
         "icon": "smart_toy",

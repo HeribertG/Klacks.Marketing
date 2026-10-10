@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile en France (Aide à domicile)",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec une valeur fixe de temps de trajet par intervention comme temps de travail (CCN BAD) et les dimanches de repos sous surveillance. Installé chez vous, pour que les données des patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec une valeur fixe de temps de trajet par intervention comme temps de travail (CCN BAD) et les dimanches de repos sous surveillance. Installé chez vous, pour que les données des patients se trouvent sur vos propres serveurs.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile",
     "screenshotLabel": "Chronologie"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installé chez vous : les données restent chez vous",
-        "text": "Klacks fonctionne sur votre propre infrastructure. Les données des patients restent dans vos murs &mdash; avec un modèle d'IA hébergé localement, également côté IA."
+        "title": "Installé chez vous : les données se trouvent sur vos serveurs",
+        "text": "Klacks fonctionne sur votre propre infrastructure. Les données des patients se trouvent sur vos serveurs &mdash; avec un modèle d'IA hébergé localement, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe."
       },
       {
         "icon": "event_busy",

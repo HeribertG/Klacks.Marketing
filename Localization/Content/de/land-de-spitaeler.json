@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit geprüften ArbZG-Ruhezeiten und der Soll- und Ist-Besetzung je Schicht im Blick. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit geprüften ArbZG-Ruhezeiten und der Soll- und Ist-Besetzung je Schicht im Blick. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken",
     "screenshotLabel": "Dienstplan"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne dass Personal- und Patientendaten die Klinik verlassen."
+        "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, sodass keine KI-Anfrage mit Personal- und Patientendaten an einen externen KI-Anbieter geht."
       },
       {
         "icon": "smart_toy",

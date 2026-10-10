@@ -23,7 +23,7 @@
   "usp.subtitle": "귀사의 데이터, 그 뒤의 AI, 그리고 귀사의 규칙까지. Klacks가 어떤 클라우드 솔루션과도 다른 세 가지 이유입니다.",
   "usp.data.label": "귀사의 데이터",
   "usp.data.title": "귀사에 설치 &amp; Open Source",
-  "usp.data.text": "Klacks는 귀사 자체 인프라에서 실행됩니다 &mdash; 로컬 AI 모델을 사용하면 단 하나의 데이터도 사외로 나가지 않습니다. 100% 오픈소스이며 벤더 종속이 없습니다. 귀사의 데이터는 오늘도, 10년 후에도 귀사의 것입니다.",
+  "usp.data.text": "Klacks는 귀사 자체 인프라에서 실행됩니다 &mdash; 로컬 AI 모델을 사용하면 외부 AI 제공업체로 가는 AI 요청이 없습니다. 100% 오픈소스이며 벤더 종속이 없습니다. 귀사의 데이터는 오늘도, 10년 후에도 귀사의 것입니다.",
   "usp.ai.label": "귀사의 AI",
   "usp.ai.titleHtml": "Klacksy &mdash; 자유로운 모델 선택",
   "usp.ai.text": "음성으로 조작하는 AI 어시스턴트입니다. LLM은 직접 선택하실 수 있습니다 &mdash; OpenAI, Anthropic &amp; Co.에서 로컬 모델까지. 강요도, AI 공급업체 종속도 없습니다.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "규칙, 근무시간 가산(국가별로 정의된 경우), 공휴일은 귀사의 국가, 지역, 자치단체에 맞게 미리 설정되어 있습니다. 모든 것을 직접 조정할 수 있습니다 &mdash; 컨설팅 비용도, 다음 릴리스를 기다릴 필요도 없습니다.",
 
   "aiSynergy.eyebrow": "거의 아무도 제공하지 않는 조합",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">그리고</span> 완전한 데이터 주권. 동시에.",
-  "aiSynergy.textHtml": "Klacksy는 <strong class=\"text-white\">로컬 언어 모델</strong>로도 작동할 수 있습니다. 즉, 계획 실행을 시작하고 직원을 등록하며 음성으로 앱을 조작하는 어시스턴트가 &mdash; 단 하나의 개인정보나 환자 데이터도 사외로 유출하지 않습니다. 병원, 재가 돌봄, 보안 업체가 정확히 필요로 하는 것입니다.",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">그리고</span> 귀사 서버의 데이터. 동시에.",
+  "aiSynergy.textHtml": "Klacksy는 <strong class=\"text-white\">로컬 언어 모델</strong>로도 작동할 수 있습니다. 즉, 계획 실행을 시작하고 직원을 등록하며 음성으로 앱을 조작하는 어시스턴트가 &mdash; 언어 모델에 대한 요청이 외부 AI 제공업체에 전달되지 않습니다. 병원, 재가 돌봄, 보안 업체가 정확히 필요로 하는 것입니다.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "계획을 위한 당신의 AI 어시스턴트",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "예시 데이터가 포함된 공개 Klacks 인스턴스 &mdash; 설치나 회원가입 없이 브라우저에서 바로 사용할 수 있습니다.",
   "getStarted.playground.button": "Playground 열기",
   "getStarted.download.title": "자체 서버나 PC에 설치",
-  "getStarted.download.text": "설치 패키지에는 필요한 모든 것이 들어 있습니다: Docker 이미지, 인스톨러, 데이터베이스, HTTPS, Linux와 Windows에서는 자동 업데이트까지. 명령어 하나로 설치가 시작됩니다.",
+  "getStarted.download.text": "설치 패키지에는 인스톨러와 데이터베이스·HTTPS 설정이 들어 있으며, Docker 이미지는 인스톨러가 시작할 때 레지스트리에서 내려받습니다. 명령어 하나로 설치가 시작됩니다.",
   "getStarted.download.button": "설치 패키지 다운로드",
   "getStarted.source.title": "GitHub의 소스 코드",
   "getStarted.source.text": "Klacks는 AGPL-3.0 라이선스의 Open Source입니다. 백엔드, 프론트엔드, Docker 이미지가 모두 공개되어 있습니다 &mdash; 검토하고, 포크하고, 기여하세요.",

@@ -23,7 +23,7 @@
   "usp.subtitle": "Sui Suoi dati, sull'IA che vi sta dietro e sulle Sue regole. Tre motivi per cui Klacks è diverso da qualsiasi soluzione cloud.",
   "usp.data.label": "I Suoi dati",
   "usp.data.title": "Installato sui Suoi locali &amp; Open Source",
-  "usp.data.text": "Klacks funziona sulla Sua infrastruttura &mdash; con un modello di IA locale, nessun dato lascia l'azienda. Open source al 100 %, nessun vendor lock-in. I Suoi dati appartengono a Lei, oggi come tra dieci anni.",
+  "usp.data.text": "Klacks funziona sulla Sua infrastruttura &mdash; con un modello di IA locale, nessuna richiesta di IA viene inviata a un fornitore di IA esterno. Open source al 100 %, nessun vendor lock-in. I Suoi dati appartengono a Lei, oggi come tra dieci anni.",
   "usp.ai.label": "La Sua IA",
   "usp.ai.titleHtml": "Klacksy &mdash; con scelta libera del modello",
   "usp.ai.text": "Un assistente IA che si comanda a voce. È Lei a scegliere l'LLM &mdash; da OpenAI, Anthropic &amp; Co. fino al modello locale. Nessun obbligo, nessun lock-in verso il fornitore di IA.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Regole, supplementi di tempo (dove definiti per il Suo Paese) e giorni festivi arrivano già pronti per il Suo Paese, la Sua regione, il Suo comune. Può personalizzare tutto da sé &mdash; senza giornate di consulenza e senza aspettare la prossima release.",
 
   "aiSynergy.eyebrow": "La combinazione che quasi nessun altro offre",
-  "aiSynergy.titleHtml": "IA <span class=\"text-tertiary-fixed\">e</span> piena sovranità dei dati. Allo stesso tempo.",
-  "aiSynergy.textHtml": "Klacksy può funzionare con un <strong class=\"text-white\">modello linguistico locale</strong>. Questo significa: un assistente che avvia le pianificazioni, aggiunge collaboratori e comanda l'app a voce &mdash; senza che un solo dato personale o di paziente lasci la Sua azienda. Esattamente ciò di cui hanno bisogno ospedali, servizi di cure a domicilio e servizi di sicurezza.",
+  "aiSynergy.titleHtml": "IA <span class=\"text-tertiary-fixed\">e</span> i Suoi dati sui Suoi server. Allo stesso tempo.",
+  "aiSynergy.textHtml": "Klacksy può funzionare con un <strong class=\"text-white\">modello linguistico locale</strong>. Questo significa: un assistente che avvia le pianificazioni, aggiunge collaboratori e comanda l'app a voce &mdash; senza che alcuna richiesta al modello linguistico finisca presso un fornitore di IA esterno. Esattamente ciò di cui hanno bisogno ospedali, servizi di cure a domicilio e servizi di sicurezza.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Il Suo assistente IA per la pianificazione",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "Un'istanza pubblica di Klacks con dati di esempio &mdash; direttamente nel browser, senza installazione e senza registrazione.",
   "getStarted.playground.button": "Apri il Playground",
   "getStarted.download.title": "Installare sul proprio server o PC",
-  "getStarted.download.text": "Il pacchetto di installazione include tutto: immagini Docker, installer, database e HTTPS, su Linux e Windows anche aggiornamenti automatici. Un solo comando avvia l'installazione.",
+  "getStarted.download.text": "Il pacchetto di installazione contiene l'installer e la configurazione per database e HTTPS; l'installer scarica le immagini Docker dal registry all'avvio. Un solo comando avvia l'installazione.",
   "getStarted.download.button": "Scarica il pacchetto di installazione",
   "getStarted.source.title": "Codice sorgente su GitHub",
   "getStarted.source.text": "Klacks è open source con licenza AGPL-3.0. Backend, frontend e immagini Docker sono pubblici &mdash; esaminare, forkare, contribuire.",

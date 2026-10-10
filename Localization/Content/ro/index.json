@@ -23,7 +23,7 @@
   "usp.subtitle": "Asupra datelor dumneavoastră, asupra IA din spatele lor și asupra regulilor dumneavoastră. Trei motive pentru care Klacks este diferit de orice soluție din cloud.",
   "usp.data.label": "Datele dumneavoastră",
   "usp.data.title": "Instalat la dumneavoastră &amp; Open Source",
-  "usp.data.text": "Klacks rulează pe propria dumneavoastră infrastructură &mdash; cu un model AI local, nicio înregistrare nu părăsește sediul. 100% open source, fără dependență de un singur furnizor. Datele dumneavoastră vă aparțin, azi și peste zece ani.",
+  "usp.data.text": "Klacks rulează pe propria dumneavoastră infrastructură &mdash; cu un model AI local, nicio solicitare AI nu ajunge la un furnizor extern de AI. 100% open source, fără dependență de un singur furnizor. Datele dumneavoastră vă aparțin, azi și peste zece ani.",
   "usp.ai.label": "IA dumneavoastră",
   "usp.ai.titleHtml": "Klacksy &mdash; cu alegere liberă a modelului",
   "usp.ai.text": "Un asistent IA pe care îl controlați prin voce. Alegeți singuri modelul LLM &mdash; de la OpenAI, Anthropic &amp; Co. până la un model local. Fără constrângeri, fără dependență de un furnizor de IA.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Regulile, sporurile de timp (acolo unde sunt definite pentru țara dumneavoastră) și sărbătorile legale vin preconfigurate pentru țara, regiunea și comuna dumneavoastră. Puteți ajusta totul singuri &mdash; fără zile de consultanță și fără să așteptați următoarea versiune.",
 
   "aiSynergy.eyebrow": "Combinația pe care aproape nimeni nu o oferă",
-  "aiSynergy.titleHtml": "IA <span class=\"text-tertiary-fixed\">și</span> suveranitate deplină a datelor. În același timp.",
-  "aiSynergy.textHtml": "Klacksy poate rula cu un <strong class=\"text-white\">model lingvistic local</strong>. Cu alte cuvinte: un asistent care pornește rulări de planificare, adaugă angajați și controlează aplicația prin voce &mdash; fără ca vreo înregistrare de date personale sau ale pacienților să părăsească sediul dumneavoastră. Exact ceea ce au nevoie spitalele, serviciile de îngrijire la domiciliu și firmele de securitate.",
+  "aiSynergy.titleHtml": "IA <span class=\"text-tertiary-fixed\">și</span> datele pe serverele dumneavoastră. În același timp.",
+  "aiSynergy.textHtml": "Klacksy poate rula cu un <strong class=\"text-white\">model lingvistic local</strong>. Cu alte cuvinte: un asistent care pornește rulări de planificare, adaugă angajați și controlează aplicația prin voce &mdash; fără ca vreo solicitare către modelul lingvistic să ajungă la un furnizor extern de IA. Exact ceea ce au nevoie spitalele, serviciile de îngrijire la domiciliu și firmele de securitate.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Asistentul dumneavoastră IA pentru planificare",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "O instanță publică Klacks cu date de exemplu &mdash; direct în browser, fără instalare și fără înregistrare.",
   "getStarted.playground.button": "Deschideți Playground-ul",
   "getStarted.download.title": "Instalați pe propriul server sau PC",
-  "getStarted.download.text": "Pachetul de instalare include tot ce este necesar: imagini Docker, installer, bază de date și HTTPS, sub Linux și Windows, precum și actualizări automate. O singură comandă pornește instalarea.",
+  "getStarted.download.text": "Pachetul de instalare conține installer-ul și configurarea pentru baza de date și HTTPS; imaginile Docker le descarcă installer-ul la pornire din registry. O singură comandă pornește instalarea.",
   "getStarted.download.button": "Descărcați pachetul de instalare",
   "getStarted.source.title": "Cod sursă pe GitHub",
   "getStarted.source.text": "Klacks este open source sub licența AGPL-3.0. Backend-ul, frontend-ul și imaginile Docker sunt publice &mdash; verificați, faceți fork, contribuiți.",

@@ -12,7 +12,7 @@ public static class LegacyProductRoutes
     // the same country-scoped rule, so their country-less URLs redirect as well.
     // "klacksy" is listed explicitly because the industry registry entry now
     // points to "eigene-regeln" while the Klacksy page itself lives on.
-    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", CountryPageLinks.SmallBusinessSlug, CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, "ueber-uns", "installation", "klacksy" };
+    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", CountryPageLinks.SmallBusinessSlug, CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, "ueber-uns", "installation", "klacksy" };
 
     // The German preview of the redesigned start page and the mid/large business pages (2026-10-03) went live as
     // the country start page and the country-scoped business pages; the preview links were shared, so they redirect.

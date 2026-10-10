@@ -23,7 +23,7 @@
   "usp.subtitle": "Atas data anda, atas AI di sebaliknya, dan atas peraturan anda. Tiga sebab mengapa Klacks berbeza daripada mana-mana penyelesaian awan.",
   "usp.data.label": "Data Anda",
   "usp.data.title": "Dipasang di premis anda sendiri &amp; Open Source",
-  "usp.data.text": "Klacks berjalan di atas infrastruktur anda sendiri &mdash; dengan model AI tempatan, tiada satu rekod pun meninggalkan premis anda. 100 % sumber terbuka, tiada vendor lock-in. Data anda kekal milik anda, hari ini dan sepuluh tahun akan datang.",
+  "usp.data.text": "Klacks berjalan di atas infrastruktur anda sendiri &mdash; dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran. 100 % sumber terbuka, tiada vendor lock-in. Data anda kekal milik anda, hari ini dan sepuluh tahun akan datang.",
   "usp.ai.label": "AI Anda",
   "usp.ai.titleHtml": "Klacksy &mdash; dengan pilihan model bebas",
   "usp.ai.text": "Pembantu AI yang boleh anda kawal melalui suara. Anda sendiri memilih LLM &mdash; daripada OpenAI, Anthropic &amp; Co. hingga model tempatan. Tiada paksaan, tiada lock-in dengan pembekal AI.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Peraturan, Kredit Masa Tambahan (jika ditakrifkan untuk negara anda) dan hari kelepasan disediakan mengikut negara, wilayah dan daerah anda. Anda boleh menyesuaikan semuanya sendiri &mdash; tanpa hari perundingan dan tanpa menunggu keluaran seterusnya.",
 
   "aiSynergy.eyebrow": "Kombinasi yang hampir tiada sesiapa tawarkan",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">dan</span> kedaulatan data sepenuhnya. Serentak.",
-  "aiSynergy.textHtml": "Klacksy boleh berjalan dengan <strong class=\"text-white\">model bahasa tempatan</strong>. Ini bermakna: seorang pembantu yang memulakan proses perancangan, mendaftarkan pekerja dan mengawal aplikasi melalui suara &mdash; tanpa satu pun rekod data peribadi atau pesakit meninggalkan premis anda. Tepat seperti yang diperlukan oleh hospital, perkhidmatan penjagaan di rumah dan syarikat keselamatan.",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">dan</span> data pada pelayan anda sendiri. Serentak.",
+  "aiSynergy.textHtml": "Klacksy boleh berjalan dengan <strong class=\"text-white\">model bahasa tempatan</strong>. Ini bermakna: seorang pembantu yang memulakan proses perancangan, mendaftarkan pekerja dan mengawal aplikasi melalui suara &mdash; tanpa sebarang permintaan kepada model bahasa sampai kepada penyedia AI luaran. Tepat seperti yang diperlukan oleh hospital, perkhidmatan penjagaan di rumah dan syarikat keselamatan.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Pembantu AI Anda untuk Perancangan",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "Instans Klacks awam dengan data contoh &mdash; terus dalam pelayar, tanpa pemasangan dan tanpa pendaftaran.",
   "getStarted.playground.button": "Buka Playground",
   "getStarted.download.title": "Pasang pada Pelayan atau PC Anda",
-  "getStarted.download.text": "Pakej pemasangan ini merangkumi segala-galanya: imej Docker, pemasang, pangkalan data dan HTTPS, di Linux dan Windows juga kemas kini automatik. Satu arahan memulakan pemasangan.",
+  "getStarted.download.text": "Pakej pemasangan ini mengandungi pemasang dan konfigurasi untuk pangkalan data dan HTTPS; imej Docker dimuat turun oleh pemasang daripada registry semasa permulaan. Satu arahan memulakan pemasangan.",
   "getStarted.download.button": "Muat Turun Pakej Pemasangan",
   "getStarted.source.title": "Kod Sumber di GitHub",
   "getStarted.source.text": "Klacks ialah open source di bawah Lesen AGPL-3.0. Backend, frontend dan imej Docker tersedia secara terbuka &mdash; semak, fork, sumbang.",

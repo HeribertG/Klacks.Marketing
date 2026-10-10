@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für Sicherheitsdienste in Tschechien | Nachtschicht-Grenze & DPP/DPČ",
+  "metaDescription": "Klacks überwacht die hinterlegte Tageshöchstarbeitszeit live, weist Zuschläge für dohodáři automatisch zu und warnt bei verkürzter täglicher Ruhezeit.",
   "hero": {
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste &amp; Ostraha in Tschechien",
     "titleHtml": "Jeder Posten besetzt. <span class=\"text-secondary\">Jede Regel im Blick.</span>",
-    "subtitle": "Klacks überwacht die Tageshöchstarbeitszeit, die Sie hinterlegen, live, weist Zuschläge für dohodáři automatisch zu und warnt bei einer verkürzten täglichen Ruhezeit, falls der Ausgleich in der Folgeruhezeit fehlt. Bei Ihnen installiert, damit Ihre Einsatzdaten bei Ihnen bleiben.",
+    "subtitle": "Klacks überwacht die Tageshöchstarbeitszeit, die Sie hinterlegen, live, weist Zuschläge für dohodáři automatisch zu und warnt bei einer verkürzten täglichen Ruhezeit, falls der Ausgleich in der Folgeruhezeit fehlt. Bei Ihnen installiert, damit Ihre Einsatzdaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Objektbesetzung und Schichten im Sicherheitsgewerbe in Tschechien",
     "screenshotLabel": "Timeline"
@@ -26,7 +27,7 @@
       { "icon": "nightlight", "title": "Tageshöchstarbeitszeit überwacht", "text": "Die 8-Stunden-Grenze für Nachtarbeitende hinterlegen Sie als Tageshöchstarbeitszeit, etwa im Vertrag Ihrer Nachtwachen &mdash; Klacks warnt live, sobald sie überschritten wird. Nachtschichten erkennt Klacks dabei nicht gesondert, und den 26-Wochen-Durchschnitt der Schichtlänge bildet Klacks nicht ab." },
       { "icon": "groups", "title": "DPP/DPČ-Zuschläge zugewiesen", "text": "Klacks weist Nacht- und Wochenendzuschlag für dohodáři automatisch zu; die 3-Tage-Ankündigungsfrist prüft Klacks nicht." },
       { "icon": "bedtime", "title": "Verkürzte Ruhezeit im Blick", "text": "Wird die tägliche Ruhezeit auf 8 Stunden verkürzt, macht Klacks den nötigen Ausgleich in der folgenden Ruhezeit sichtbar und warnt, falls er fehlt." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: volle Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen; bei KI-Funktionen auf Wunsch mit lokal gehostetem Modell." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten liegen auf Ihren Servern; bei KI-Funktionen auf Wunsch mit lokal gehostetem Modell." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft Schichtlänge, Ruhezeit und Verfügbarkeit." }
     ]
   },

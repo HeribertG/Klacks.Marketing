@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks untuk Syarikat di Malaysia | Pengurusan Kakitangan dengan Semakan terhadap Employment Act 1955 & PDPA",
+  "metaDescription": "Klacks menyemak minggu kerja 45 jam di bawah Employment Act 1955 dan mencatat Kredit Masa Tambahan Lebih Masa bertingkat. Dipasang di premis anda sendiri.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Sumber Terbuka &middot; Tanpa yuran lesen &middot; Perlindungan Data Malaysia (PDPA)",
     "titleHtml": "Penjadualan kakitangan yang <span class=\"text-secondary\">anda kekal mengawal.</span>",
-    "subtitle": "Klacks menyemak minggu kerja 45 jam di bawah Employment Act 1955 terhadap had yang ditetapkan, mencatatkan Kredit Masa Tambahan Lebih Masa bertingkat sebagai kredit masa dan berjalan dipasang di premis anda sendiri &mdash; supaya data kakitangan dan data perancangan anda kekal dalam infrastruktur syarikat anda sendiri.",
+    "subtitle": "Klacks menyemak minggu kerja 45 jam di bawah Employment Act 1955 terhadap had yang ditetapkan, mencatatkan Kredit Masa Tambahan Lebih Masa bertingkat sebagai kredit masa dan berjalan dipasang di premis anda sendiri &mdash; supaya data kakitangan dan data perancangan anda disimpan pada pelayan anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Papar keseluruhan jadual kerja Klacks untuk syarikat di Malaysia",
     "screenshotLabel": "Jadual Kerja"
@@ -76,8 +77,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Dipasang di premis anda sendiri: kedaulatan data sepenuhnya",
-        "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; dengan model AI tempatan, data kakitangan dan data perancangan anda tidak keluar daripada premis anda."
+        "title": "Dipasang di premis anda sendiri: data pada pelayan anda",
+        "text": "Klacks berjalan pada infrastruktur anda sendiri, dan anda memilih sendiri model AI yang digunakan &mdash; data kakitangan dan data perancangan anda disimpan pada pelayan anda, dan dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran."
       },
       {
         "icon": "smart_toy",
@@ -99,7 +100,7 @@
   "klacksy": {
     "eyebrow": "Pembantu AI",
     "title": "Klacksy: Pembantu Bersepadu untuk Pasukan Anda",
-    "text": "Klacksy bukan chatbot pemasaran yang ditambah begitu sahaja, tetapi disepadukan terus ke dalam antara muka Klacks. Pekerja dan perancang boleh menyemak waktu tugas atau menjelaskan ketersediaan melalui sembang. Sistem kemahiran dan peraturan yang ditetapkan memastikan Klacksy memberikan cadangan yang boleh dijejaki &mdash; bukan keputusan kotak hitam. Bagi syarikat dengan keperluan perlindungan data yang tinggi, model AI juga boleh dihoskan secara tempatan, tanpa sebarang pemindahan data pekerja ke luar negara.",
+    "text": "Klacksy bukan chatbot pemasaran yang ditambah begitu sahaja, tetapi disepadukan terus ke dalam antara muka Klacks. Pekerja dan perancang boleh menyemak waktu tugas atau menjelaskan ketersediaan melalui sembang. Sistem kemahiran dan peraturan yang ditetapkan memastikan Klacksy memberikan cadangan yang boleh dijejaki &mdash; bukan keputusan kotak hitam. Bagi syarikat dengan keperluan perlindungan data yang tinggi, model AI juga boleh dihoskan secara tempatan, sehingga tiada permintaan AI dengan data pekerja dihantar kepada penyedia AI luaran.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Pembantu sembang Klacksy dalam antara muka Klacks"
   },

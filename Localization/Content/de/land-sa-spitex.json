@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche Pflege (Home Care) in Saudi-Arabien",
     "titleHtml": "Pflege-Touren, die <span class=\"text-secondary\">die 12-Stunden-Grenze live überwachen.</span>",
-    "subtitle": "Klacks plant Pflegeeinsätze automatisch &mdash; und warnt live vor Schichtfolgen, die eine Pflegekraft länger als 12 Stunden am Arbeitsplatz halten würden (Art. 101). Bei Ihnen installiert, damit Patientendaten in Ihrer Infrastruktur bleiben, mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "subtitle": "Klacks plant Pflegeeinsätze automatisch &mdash; und warnt live vor Schichtfolgen, die eine Pflegekraft länger als 12 Stunden am Arbeitsplatz halten würden (Art. 101). Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Pflege-Touren in Saudi-Arabien",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "12-Stunden-Grenze bei 24-h-Ketten live überwacht", "text": "Klacks überwacht Schichtfolgen live und warnt automatisch, sobald eine Pflegekraft die hinterlegte 12-Stunden-Tagesgrenze überschreiten würde (Art. 101). Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "trending_up", "title": "Ausnahme-Arbeitszeit nach Art. 106 im Blick", "text": "Die Ausnahme-Obergrenze von 10 Stunden pro Tag bzw. 60 Stunden pro Woche wird laufend geprüft, auch in saisonalen Spitzen. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit passender Qualifikation zugeteilt." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben in KSA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Personal- und Planungsdaten bleiben physisch in Saudi-Arabien &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung; das erleichtert die Einhaltung der Transfer-Vorgaben nach PDPL/SDAIA." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten liegen auf Ihren Servern in KSA", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Personal- und Planungsdaten liegen physisch auf Ihren Servern in Saudi-Arabien &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter; die Transfer-Vorgaben regeln PDPL und SDAIA, die rechtliche Bewertung bleibt bei Ihnen." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor &mdash; und Klacks warnt, falls dabei die 12-Stunden-Grenze überschritten würde." }
     ]
   },

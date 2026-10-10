@@ -1,6 +1,6 @@
 {
   "pageTitle": "Instalace Klacks: řízený instalátor nebo Docker Compose s balíčkem pro vaši zemi | Klacks",
-  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: řízený instalátor nebo Docker Compose stack, předkonfigurovaný se svátky, pravidly pracovní doby a, pokud jsou pro vaši zemi definovány, příplatky. Žádné licenční poplatky, open source, bez registrace.",
+  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: instalátor nebo Docker Compose se svátky a pravidly pracovní doby. Open source, bez licenčních poplatků.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalace &middot; Žádné licenční poplatky &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Řízená cesta pro vlastní server: instalační skript vygeneruje tajné klíče (secrets) a samopodepsaný certifikát, stáhne nejnovější vydanou verzi a spustí celý stack &mdash; na Linuxu i Windows.",
     "requirementsTitle": "Předpoklady",
     "requirements": [
-      "Docker Desktop (Windows/Mac) nebo Docker Engine s pluginem Compose (Linux)",
+      "Docker Desktop (Windows) nebo Docker Engine s pluginem Compose (Linux)",
       "Odchozí přístup na ghcr.io a github.com (image a aktualizace)",
       "Volné porty 80 a 443 (konfigurovatelné)"
     ],
@@ -65,7 +65,7 @@
     "title": "Dobré vědět",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí AGPL-3.0 &mdash; žádné licenční poplatky, žádný vendor lock-in." },
-      { "icon": "storage", "title": "Data zůstávají u vás", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data jsou uložena na vašem serveru &mdash; žádný povinný cloud. Požadavky odcházejí k externímu poskytovateli AI jen tehdy, pokud si jej zvolíte; s lokálním modelem zůstává vše u vás." },
+      { "icon": "storage", "title": "Data jsou uložena na vašich serverech", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data jsou uložena na vašem serveru &mdash; žádný povinný cloud. Požadavky odcházejí k externímu poskytovateli AI jen tehdy, pokud si jej zvolíte; s lokálním modelem neodchází žádný požadavek AI k externímu poskytovateli." },
       { "icon": "update", "title": "Aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi. Aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky." },
       { "icon": "lock", "title": "HTTPS od začátku", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení." }
     ]

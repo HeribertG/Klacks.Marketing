@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Klacks per le aziende italiane | Pianificazione del personale Open Source con sovranità dei dati",
+  "pageTitle": "Klacks per le aziende italiane | Pianificazione del personale Open Source con dati sui Suoi server",
   "hero": {
     "badgeIcon": "balance",
     "badge": "Open Source · Senza diritti di licenza · Protezione dei dati italiana",
@@ -15,7 +15,7 @@
     "items": [
       { "icon": "gavel", "title": "Statuto dei Lavoratori Art. 4", "text": "Il controllo a distanza e il controllo algoritmico dei lavoratori sono vietati senza un previo accordo con RSU/RSA o l'autorizzazione dell'Ispettorato del Lavoro (Legge n. 300/1970) &mdash; anche per i software di pianificazione automatizzati." },
       { "icon": "schedule", "title": "Molti CCNL, molte regole sull'orario di lavoro", "text": "L'orario di lavoro normale previsto dalla legge è di 40 ore settimanali, molti CCNL lo riducono a 38 o 36 ore &mdash; l'orario massimo, straordinari inclusi, resta in media a 48 ore su più mesi (D.Lgs. 66/2003, Art. 3 &amp; 4)." },
-      { "icon": "shield_lock", "title": "Garante Privacy &amp; sovranità dei dati", "text": "I dati sensibili dei dipendenti, come i saldi di straordinario o i dati sanitari, sono soggetti alle rigide disposizioni del Garante per la protezione dei dati personali &mdash; in particolare in caso di trattamento dei dati al di fuori dell'UE." }
+      { "icon": "shield_lock", "title": "Garante Privacy &amp; conservazione dei dati", "text": "I dati sensibili dei dipendenti, come i saldi di straordinario o i dati sanitari, sono soggetti alle rigide disposizioni del Garante per la protezione dei dati personali &mdash; in particolare in caso di trattamento dei dati al di fuori dell'UE." }
     ]
   },
   "rulesCalendar": {
@@ -38,7 +38,7 @@
       { "icon": "auto_awesome", "title": "Turni pianificati automaticamente", "text": "L'Autofill Wizard pianifica turni e percorsi in base a qualifica, disponibilità e preferenze &mdash; in pochi minuti anziché ore." },
       { "icon": "gavel", "title": "Regole su orario di lavoro e riposo verificate automaticamente", "text": "L'orario normale, l'orario massimo e il riposo di almeno 11 ore tra due turni vengono monitorati in tempo reale in base al CCNL configurato (D.Lgs. 66/2003, Art. 7 &amp; 9). Su richiesta, Klacks blocca le violazioni di questi limiti nei percorsi di pianificazione automatica (ad es. Wizard, proposte, sostituzione) in modalità blocco (configurabile per ogni tipo di regola); nella pianificazione manuale Klacks avvisa." },
       { "icon": "route", "title": "Percorsi ottimizzati automaticamente", "text": "Dove gli interventi si svolgono in luoghi diversi, Klacks stabilisce l'ordine in modo che i percorsi restino brevi e le fasce orarie vengano rispettate." },
-      { "icon": "shield_lock", "title": "Installato sui Suoi locali: piena sovranità dei dati", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale restano nella Sua azienda &mdash; con un modello IA ospitato localmente anche per quanto riguarda l'IA, il che facilita il rispetto delle disposizioni del Garante Privacy in piena autonomia." },
+      { "icon": "shield_lock", "title": "Installato sui Suoi locali: dati sui Suoi server", "text": "Klacks funziona sulla Sua infrastruttura. I dati del personale si trovano sui Suoi server &mdash; con un modello IA ospitato localmente, nessuna richiesta di IA viene inviata a un fornitore di IA esterno; la valutazione giuridica ai sensi delle disposizioni del Garante Privacy resta a Lei." },
       { "icon": "code", "title": "Open Source: verificabile &amp; personalizzabile", "text": "Il codice sorgente è aperto &mdash; può vedere esattamente cosa fa Klacks, creando così una base per la trasparenza richiesta dall'Art. 4 dello Statuto dei Lavoratori nei confronti di RSU/RSA." },
       { "icon": "science", "title": "Testare le modifiche al piano senza rischi", "text": "Prima che una modifica al piano diventi operativa, può provarla come copia isolata &mdash; il riposo giornaliero di 11 ore e i supplementi vengono calcolati in tempo reale, esattamente come nel piano reale. Solo quando tutto corrisponde, applica la variante; fino ad allora il Suo piano turni in corso resta invariato. In questo modo prepara in anticipo uno scenario adatto a situazioni prevedibili &mdash; ad esempio un'assenza per malattia o un picco di lavoro &mdash; ed è subito operativo in caso di necessità, invece di improvvisare sotto pressione. Non esiste inoltre alcun limite artificiale &mdash; può creare tutti gli scenari di cui ha bisogno per la Sua pianificazione." }
     ]
@@ -53,7 +53,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Un piano turni, più contratti collettivi sotto controllo",
-    "text": "Un'azienda con CCNL diversi per i vari team pianifica i turni, Klacks verifica automaticamente l'orario normale applicabile e il riposo giornaliero di 11 ore &mdash; in modo verificabile per RSU/RSA e con i dati del personale in azienda."
+    "text": "Un'azienda con CCNL diversi per i vari team pianifica i turni, Klacks verifica automaticamente l'orario normale applicabile e il riposo giornaliero di 11 ore &mdash; in modo verificabile per RSU/RSA e con i dati del personale sui Suoi server."
   },
   "showRoutePlanning": false,
   "cta": {

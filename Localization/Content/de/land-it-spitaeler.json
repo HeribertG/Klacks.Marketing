@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser in Italien (Ospedali)",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit überwachter 11-Stunden-Ruhezeit, die seit der Legge n. 161/2014 auch für Ärzt:innen gilt, passenden Qualifikationen und voller Datenhoheit. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit überwachter 11-Stunden-Ruhezeit, die seit der Legge n. 161/2014 auch für Ärzt:innen gilt, passenden Qualifikationen und Daten auf Ihren Servern. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser",
     "screenshotLabel": "Dienstplan"
@@ -25,7 +25,7 @@
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "gavel", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-Stunden-Ruhezeit &mdash; seit Legge n. 161/2014 auch für Ärzt:innen &mdash; wird in Echtzeit überwacht, ebenso die maximale Schichtdauer von 12 Stunden nach CCNL Comparto Sanità. Auf Wunsch blockiert Klacks Verstösse in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung) im Block-Modus (pro Regelart konfigurierbar); bei manueller Planung warnt Klacks." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Klacks gleicht die geforderte Qualifikation mit den hinterlegten Profilen ab und warnt rechtzeitig, bevor eine Qualifikation abläuft &mdash; pro Station, Abteilung und Funktion. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Ruhezeit." },
       { "icon": "groups", "title": "Springerpool &amp; Ausfälle", "text": "Fällt jemand aus, zeigt Klacks sofort verfügbare, qualifizierte Springer &mdash; ohne den ganzen Plan umzuwerfen." }
     ]

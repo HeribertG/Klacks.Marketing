@@ -1,6 +1,6 @@
 {
   "pageTitle": "Installér Klacks: guidet installer eller Docker Compose med din landepakke | Klacks",
-  "metaDescription": "Installér Klacks på din egen infrastruktur: guidet installer eller Docker Compose-stack, forudkonfigureret med dit lands helligdage, arbejdstidsregler og, hvor de er defineret for dit land, tillæg. Ingen licensafgifter, open source, uden registrering.",
+  "metaDescription": "Installér Klacks selv: guidet installer eller Docker Compose, forudkonfigureret med helligdage og arbejdstidsregler. Open source, uden licensafgifter.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ingen licensafgifter &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Den guidede vej til din egen server: et installationsscript genererer secrets og et selvsigneret certifikat, henter den seneste udgivne version og starter hele stacken &mdash; på Linux eller Windows.",
     "requirementsTitle": "Forudsætninger",
     "requirements": [
-      "Docker Desktop (Windows/Mac) eller Docker Engine med Compose-plugin (Linux)",
+      "Docker Desktop (Windows) eller Docker Engine med Compose-plugin (Linux)",
       "Udgående adgang til ghcr.io og github.com (images og opdateringer)",
       "Ledige porte 80 og 443 (kan konfigureres)"
     ],
@@ -65,7 +65,7 @@
     "title": "Godt at vide",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Den komplette kildekode er offentlig på GitHub under AGPL-3.0 &mdash; ingen licensomkostninger, ingen vendor lock-in." },
-      { "icon": "storage", "title": "Data bliver i huset", "text": "Klacks kører på din infrastruktur. Personale- og vagtplandata ligger på din server &mdash; der er ingen tvungen cloud. Kun hvis du vælger en ekstern AI-udbyder, sendes forespørgsler til den; med en lokal model bliver alt i huset." },
+      { "icon": "storage", "title": "Data ligger på dine servere", "text": "Klacks kører på din infrastruktur. Personale- og vagtplandata ligger på din server &mdash; der er ingen tvungen cloud. Kun hvis du vælger en ekstern AI-udbyder, sendes forespørgsler til den; med en lokal model sendes ingen AI-forespørgsel til en ekstern udbyder." },
       { "icon": "update", "title": "Opdateringer", "text": "Installationen fastlåser den seneste udgivne version. En opdateringstjeneste i stacken indlæser automatisk nyudgivne versioner." },
       { "icon": "lock", "title": "HTTPS fra starten", "text": "Installeren genererer et selvsigneret certifikat, så du kan komme i gang &mdash; du kan til enhver tid skifte til dit eget certifikat. Skift den indledende adgangskode straks efter første login." }
     ]

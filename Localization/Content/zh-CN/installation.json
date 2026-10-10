@@ -19,7 +19,7 @@
     "text": "适用于自有服务器的引导式路径：安装脚本生成密钥和自签名证书，拉取最新发布版本并启动整个堆栈 &mdash; 支持 Linux 和 Windows。",
     "requirementsTitle": "前提条件",
     "requirements": [
-      "Docker Desktop（Windows/Mac）或带 Compose 插件的 Docker Engine（Linux）",
+      "Docker Desktop（Windows）或带 Compose 插件的 Docker Engine（Linux）",
       "可对外访问 ghcr.io 和 github.com（镜像与更新）",
       "空闲端口 80 和 443（可配置）"
     ],
@@ -65,7 +65,7 @@
     "title": "值得了解",
     "items": [
       { "icon": "code", "title": "开源（AGPL-3.0）", "text": "完整源代码以 AGPL-3.0 许可证在 GitHub 上公开 &mdash; 没有许可费用，没有供应商锁定。" },
-      { "icon": "storage", "title": "数据留在企业内部", "text": "Klacks 运行在您的基础设施上。人员和排班数据存放在您的服务器上 &mdash; 没有强制上云。只有在您选择外部 AI 服务商时，请求才会发送给对方；使用本地模型则一切都留在内部。" },
+      { "icon": "storage", "title": "数据存放在您的服务器上", "text": "Klacks 运行在您的基础设施上。人员和排班数据存放在您的服务器上 &mdash; 没有强制上云。只有在您选择外部 AI 服务商时，请求才会发送给对方；使用本地模型则没有 AI 请求发送给外部服务商。" },
       { "icon": "update", "title": "更新", "text": "安装时会固定最新发布版本。堆栈内的更新服务会自动应用新发布的版本。" },
       { "icon": "lock", "title": "从一开始就使用 HTTPS", "text": "安装程序会生成自签名证书供您起步 &mdash; 您随时可以换成自己的证书。首次登录后请立即修改初始密码。" }
     ]

@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für Unternehmen in Taiwan | 休息日-Zeitzuschläge & Vier-Wochen-Flex im Blick",
+  "metaDescription": "Klacks schreibt Zeitzuschläge für Arbeit am Ruhetag als Stunden gut, überwacht die monatlichen Überstundengrenzen und warnt beim 11-Stunden-Schichtabstand.",
   "hero": {
     "badgeIcon": "gavel",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Prüft gegen das 勞動基準法",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">jede 休息日-Stunde im Blick behalten.</span>",
-    "subtitle": "Klacks schreibt für Arbeit am 休息日 und 例假日 Zeitzuschläge als Stunden gut, überwacht die monatlichen Überstunden-Grenzen und warnt bei Unterschreitung des 11-Stunden-Schichtabstands &mdash; und läuft bei Ihnen installiert im eigenen Firmennetz; mit lokalem KI-Modell verlassen Personaldaten dieses Netz nicht, ganz im Sinne des PDPA (個人資料保護法).",
+    "subtitle": "Klacks schreibt für Arbeit am 休息日 und 例假日 Zeitzuschläge als Stunden gut, überwacht die monatlichen Überstunden-Grenzen und warnt bei Unterschreitung des 11-Stunden-Schichtabstands &mdash; und läuft bei Ihnen installiert im eigenen Firmennetz; Personaldaten liegen auf Ihren eigenen Servern, und mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter; die rechtliche Bewertung nach dem PDPA (個人資料保護法) bleibt bei Ihnen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Taiwan",
     "screenshotLabel": "Dienstplan"
@@ -81,8 +82,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Datenhoheit nach PDPA",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Mit lokalem KI-Modell verlassen Personaldaten Ihr Firmennetz nicht; das KI-Modell wählen Sie selbst. Das unterstützt die PDPA-Compliance (個人資料保護法) generell, unabhängig von einzelnen Datenkategorien."
+        "title": "Bei Ihnen installiert: Datenhaltung auf Ihren Servern (PDPA)",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten liegen auf Ihren Servern, und mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter; das KI-Modell wählen Sie selbst. Die rechtliche Bewertung nach dem PDPA (個人資料保護法) bleibt bei Ihnen."
       },
       {
         "icon": "smart_toy",

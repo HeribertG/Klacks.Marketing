@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Ziekenhuizen &amp; Kliniken in den Niederlanden",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Dienste lückenlos &mdash; mit Ruhezeit-Regeln wie der 8-Stunden-Ruhe nach nächtlichem Einsatz, die Sie hinterlegen. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; auf Wunsch mit lokalem KI-Modell.",
+    "subtitle": "Klacks plant Stationen und Dienste lückenlos &mdash; mit Ruhezeit-Regeln wie der 8-Stunden-Ruhe nach nächtlichem Einsatz, die Sie hinterlegen. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokalem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für niederländische Ziekenhuizen",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "event_available", "title": "Oproepvrije dagen im Blick", "text": "Die 14 rufbereitschaftsfreien Tage je 28-Tage-Fenster und die zwei freien Wochenenden lassen sich als Regeln für freie Tage im rollierenden Fenster hinterlegen; Rufbereitschaft als eigene Zeitart kennt Klacks nicht." },
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; auf Wunsch mit lokalem KI-Modell auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Interne Geneeskunde für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Ruhezeit." }
     ]
   },

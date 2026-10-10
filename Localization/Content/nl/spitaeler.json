@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Voor ziekenhuizen &amp; klinieken",
     "titleHtml": "Dienstroosters die <span class=\"text-secondary\">dag en nacht kloppen.</span>",
-    "subtitle": "Klacks plant afdelingen en diensten zonder gaten &mdash; met gecontroleerde rusttijden, passende kwalificaties en volledige datasoevereiniteit. Bij u geïnstalleerd; met een lokaal AI-model verlaten patiëntgegevens uw ziekenhuis niet.",
+    "subtitle": "Klacks plant afdelingen en diensten zonder gaten &mdash; met gecontroleerde rusttijden, passende kwalificaties en gegevens op uw servers. Bij u geïnstalleerd, patiëntgegevens op uw eigen servers; met een lokaal AI-model gaat geen AI-verzoek naar een externe AI-aanbieder.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosterraster voor ziekenhuizen",
     "screenshotLabel": "Dienstrooster",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "24/7-dekking zonder gaten", "text": "Vroege, late en nachtdiensten op alle afdelingen &mdash; Klacks toont elk gat direct en vult het op verzoek automatisch." },
       { "icon": "gavel", "title": "Rusttijden automatisch gecontroleerd", "text": "De arbeidstijdenwet, rusttijden en maximumgrenzen worden in realtime bewaakt &mdash; overtredingen worden meteen zichtbaar." },
       { "icon": "verified", "title": "Kwalificaties &amp; afdelingen", "text": "Elke dienst wordt alleen toegewezen aan passend gekwalificeerd personeel &mdash; per afdeling en functie." },
-      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens in huis", "text": "Klacks draait op uw infrastructuur. Personeels- en patiëntgegevens staan op uw servers &mdash; met een lokaal AI-model verlaat ook bij de AI niets de kliniek." },
+      { "icon": "shield_lock", "title": "Bij u geïnstalleerd: gegevens op uw servers", "text": "Klacks draait op uw infrastructuur. Personeels- en patiëntgegevens staan op uw servers &mdash; met een lokaal AI-model verlaat ook bij de AI niets de kliniek." },
       { "icon": "smart_toy", "title": "Klacksy begrijpt uw zin", "text": "„Vul de nachtdiensten van Interne Geneeskunde voor volgende week in” volstaat &mdash; Klacksy start de planning, Klacks houdt rekening met kwalificatie en rusttijd." },
       { "icon": "groups", "title": "Flexpool &amp; uitval", "text": "Valt iemand uit, dan toont Klacks direct beschikbare, gekwalificeerde invalkrachten &mdash; zonder het hele rooster overhoop te halen." }
     ]

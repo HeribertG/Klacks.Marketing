@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser in Frankreich (Hôpitaux)",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit überwachten Höchstarbeitszeiten, passenden Qualifikationen und voller Datenhoheit. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit überwachten Höchstarbeitszeiten, passenden Qualifikationen und Daten auf Ihren Servern. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Frankreich",
     "screenshotLabel": "Dienstplan"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI, was die Einhaltung der CNIL-Vorgaben erleichtert."
+        "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter; die rechtliche Bewertung nach den CNIL-Vorgaben bleibt bei Ihnen."
       },
       {
         "icon": "smart_toy",

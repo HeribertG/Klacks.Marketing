@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Deutschland-Datenschutz",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl, auf Wunsch lokal gehostet. So bleiben Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Arbeitszeitgesetz-Ruhezeiten in Echtzeit und optimiert Touren &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl, auf Wunsch lokal gehostet. So liegen Personaldaten dort, wo Ihr Datenschutzbeauftragter sie haben will: auf Ihren eigenen Servern.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Deutschland",
     "screenshotLabel": "Dienstplan"
@@ -76,8 +76,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne dass Personaldaten das Haus verlassen. Das entspricht dem DSGVO-Rahmen für den Beschäftigtendatenschutz (Art. 88)."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, sodass keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter geht. Den Beschäftigtendatenschutz regelt die DSGVO (Art. 88); die rechtliche Bewertung bleibt bei Ihnen."
       },
       {
         "icon": "code",
@@ -106,7 +106,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Ein Ausfall, keine Excel-Odyssee",
-    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten Ersatz samt ArbZG-Prüfung &mdash; die Planung bestätigt mit einem Klick, ohne dass Daten das Haus verlassen."
+    "text": "Eine Mitarbeiterin meldet sich krank. Statt Schichtplan und Ruhezeiten von Hand neu zu prüfen, zeigt Klacks sofort qualifizierten Ersatz samt ArbZG-Prüfung &mdash; die Planung bestätigt mit einem Klick, und die Daten liegen auf Ihren eigenen Servern."
   },
   "showRoutePlanning": false,
   "cta": {

@@ -3,7 +3,7 @@
 @inject IPageContentProvider ContentProvider
 
 <PageTitle>@GetText("pageTitle")</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("hero.subtitle")" />
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@MetaDescriptionSource.Resolve(ContentProvider, ResolvedCulture, PageKey, MetaDescriptionSource.MetaDescriptionSuffix, "hero.subtitle")" />
 
 <div class="min-h-screen bg-surface text-on-surface">
     <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-5 sm:px-8 text-center">

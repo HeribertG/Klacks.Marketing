@@ -1,10 +1,11 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Südkorea | 52-Stunden-Woche & Personalplanung mit lokaler Datenhaltung",
+  "pageTitle": "Klacks für Unternehmen in Südkorea | 52-Stunden-Woche & Personalplanung mit Datenhaltung auf Ihren Servern",
+  "metaDescription": "Klacks überwacht die 52-Stunden-Woche pro Mitarbeitendem und kann Nacht- und Überstundenzuschläge als Zeitgutschrift kumulieren. Bei Ihnen installiert.",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung im eigenen Haus",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung auf Ihren Servern",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht die 52-Stunden-Woche pro Mitarbeitendem, kann Nacht- und Überstundenzuschläge auf Wunsch additiv als Zeitgutschrift kumulieren statt nur den höchsten Satz anzusetzen und läuft bei Ihnen installiert &mdash; damit Ihre Planungs- und Personaldaten nach dem Personal Information Protection Act (PIPA) im Betrieb bleiben (mit einem lokalen KI-Modell auch bei der KI-Nutzung), statt die Cross-Border-Hürde zu riskieren.",
+    "subtitle": "Klacks überwacht die 52-Stunden-Woche pro Mitarbeitendem, kann Nacht- und Überstundenzuschläge auf Wunsch additiv als Zeitgutschrift kumulieren statt nur den höchsten Satz anzusetzen und läuft bei Ihnen installiert &mdash; damit Ihre Planungs- und Personaldaten nach dem Personal Information Protection Act (PIPA) auf Ihren eigenen Servern liegen (mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Südkorea",
     "screenshotLabel": "Dienstplan"
@@ -76,13 +77,13 @@
       },
       {
         "icon": "fingerprint",
-        "title": "Datenhaltung im Betrieb ohne Biometrie",
-        "text": "Klacks erfasst keine biometrischen Daten &mdash; Ihre Planungs- und Personaldaten bleiben bei Ihnen im Betrieb, ganz ohne die restriktive Cross-Border-Prüfung für sensible PIPA-Daten."
+        "title": "Datenhaltung auf Ihren Servern, ohne Biometrie",
+        "text": "Klacks erfasst keine biometrischen Daten &mdash; Ihre Planungs- und Personaldaten liegen auf Ihren eigenen Servern, nicht in der Cloud eines Anbieters; die Cross-Border-Regeln für sensible Daten legt der PIPA fest, die rechtliche Bewertung bleibt bei Ihnen."
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne Auslandtransfer von Personaldaten."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, sodass keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter geht."
       },
       {
         "icon": "smart_toy",
@@ -99,7 +100,7 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen nach PIPA lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer von Personaldaten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen nach PIPA lässt sich das KI-Modell zudem lokal hosten, sodass keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter geht.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
@@ -111,6 +112,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks den 52-Stunden-Cap überwacht, Zuschläge additiv kumuliert und Ihre Planungsdaten im eigenen Haus hält &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks den 52-Stunden-Cap überwacht, Zuschläge additiv kumuliert &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

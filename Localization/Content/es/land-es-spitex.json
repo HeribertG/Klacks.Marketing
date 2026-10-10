@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para el Servicio de Ayuda a Domicilio (SAD) en España",
     "titleHtml": "Más tiempo para los cuidados, <span class=\"text-secondary\">menos para planificar rutas.</span>",
-    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; y tiene en cuenta un valor fijo de tiempo de desplazamiento por intervención como tiempo de trabajo allí donde el convenio aplicable trata así los trayectos entre clientes. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
+    "subtitle": "Klacks planifica intervenciones y rutas automáticamente &mdash; y tiene en cuenta un valor fijo de tiempo de desplazamiento por intervención como tiempo de trabajo allí donde el convenio aplicable trata así los trayectos entre clientes. Instalado en sus instalaciones, para que los datos de los pacientes estén en sus propios servidores.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline de Klacks para la planificación de rutas en el Servicio de Ayuda a Domicilio",
     "screenshotLabel": "Timeline"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Instalado en sus instalaciones: los datos permanecen en su empresa",
-        "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes permanecen en su empresa &mdash; con un modelo de IA alojado localmente, también en lo que respecta a la IA."
+        "title": "Instalado en sus instalaciones: los datos están en sus servidores",
+        "text": "Klacks funciona en su propia infraestructura. Los datos de los pacientes están en sus servidores &mdash; con un modelo de IA alojado localmente, ninguna solicitud de IA se envía a un proveedor de IA externo."
       },
       {
         "icon": "smart_toy",

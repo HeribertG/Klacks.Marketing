@@ -1,0 +1,4 @@
+/* The production error text lives in CSS so text extractors and snippets do not read it from the page. */
+#blazor-error-ui .blazor-error-message::before {
+    content: "An error has occurred. This application may no longer respond until reloaded.";
+}

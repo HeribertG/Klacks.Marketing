@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks cho dịch vụ bảo vệ tại Việt Nam | Giới hạn 40 giờ/tháng",
+  "metaDescription": "Klacks lập lịch liên tục cho các mục tiêu, hiển thị ngay vị trí còn trống, giám sát giới hạn làm thêm giờ 40 giờ/tháng, cài đặt trên hệ thống của bạn.",
   "hero": {
     "badgeIcon": "security",
     "badge": "Dành cho dịch vụ bảo vệ tại Việt Nam",
     "titleHtml": "Mỗi vị trí đều nằm trong lịch trực. <span class=\"text-secondary\">Mọi giới hạn đều trong tầm kiểm soát.</span>",
-    "subtitle": "Klacks lập lịch cho các mục tiêu một cách liên tục, hiển thị ngay các vị trí còn trống, giám sát giới hạn làm thêm giờ 40 giờ/tháng và, nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo chế độ tính cộng dồn &mdash; cài đặt trên hệ thống của bạn, để dữ liệu ca trực và ra vào luôn ở lại với bạn.",
+    "subtitle": "Klacks lập lịch cho các mục tiêu một cách liên tục, hiển thị ngay các vị trí còn trống, giám sát giới hạn làm thêm giờ 40 giờ/tháng và, nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo chế độ tính cộng dồn &mdash; cài đặt trên hệ thống của bạn, để dữ liệu ca trực và ra vào nằm trên máy chủ riêng của bạn.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho lịch trực và bố trí mục tiêu tại Việt Nam",
     "screenshotLabel": "Dòng thời gian"
@@ -26,7 +27,7 @@
       { "icon": "bedtime", "title": "Nắm vững tỷ lệ giờ phụ trội ban đêm và tỷ lệ giờ phụ trội làm thêm giờ", "text": "Bạn thiết lập các mức giờ phụ trội theo Điều 98 dưới dạng hệ số có thể cấu hình, và giờ phụ trội làm thêm giờ như một loại giờ phụ trội riêng. Ở chế độ tính cộng dồn, Klacks tự động cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ thay vì chỉ áp dụng mức cao nhất &mdash; Klacks ghi nhận các mức cộng dồn 210% hoặc 270% dưới dạng giờ phụ trội và cung cấp cho bộ phận lương của bạn." },
       { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca trong tầm kiểm soát", "text": "Klacks tự động nhận biết các ca làm đêm &mdash; khung giờ làm đêm 22:00&ndash;06:00 (Điều 106) do bạn thiết lập chính xác &mdash; và kiểm tra thời gian nghỉ 12 giờ giữa các ca (Điều 110), kèm cảnh báo, kể cả với lịch trực luân phiên trên nhiều mục tiêu." },
       { "icon": "route", "title": "Tuần tra &amp; mục tiêu được tối ưu", "text": "Với các dịch vụ tuần tra di động, Klacks sắp xếp lộ trình tuần tra sao cho quãng đường ngắn và khoảng thời gian giữa các lượt được tuân thủ." },
-      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; dữ liệu ca trực và nhân sự luôn ở lại với bạn; với mô hình AI cục bộ, kể cả khi sử dụng các tính năng AI." },
+      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; dữ liệu ca trực và nhân sự nằm trên máy chủ của bạn; với mô hình AI cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp AI bên ngoài." },
       { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Bố trí ca đêm cho mục tiêu Bắc” &mdash; Klacksy khởi chạy việc lập kế hoạch, Klacks kiểm tra tình trạng sẵn sàng và giới hạn tháng." }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "pageTitle": "Instal Klacks: Installer Terpandu atau Docker Compose dengan Paket Negara | Klacks",
-  "metaDescription": "Instal Klacks di infrastruktur Anda sendiri: installer terpandu atau stack Docker Compose, telah dikonfigurasi sebelumnya dengan hari libur nasional, aturan jam kerja, dan Tambahan Waktu negara Anda (sejauh didefinisikan untuk negara tersebut). Tanpa biaya lisensi, open source, tanpa registrasi.",
+  "metaDescription": "Instal Klacks di infrastruktur sendiri: installer terpandu atau Docker Compose, dengan hari libur dan aturan jam kerja. Open source, tanpa biaya lisensi.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalasi &middot; Tanpa biaya lisensi &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Jalur terpandu untuk server Anda sendiri: skrip instalasi membuat secret dan sertifikat self-signed, mengambil versi rilis terbaru, dan menjalankan seluruh stack &mdash; di Linux maupun Windows.",
     "requirementsTitle": "Persyaratan",
     "requirements": [
-      "Docker Desktop (Windows/Mac) atau Docker Engine dengan plugin Compose (Linux)",
+      "Docker Desktop (Windows) atau Docker Engine dengan plugin Compose (Linux)",
       "Akses keluar ke ghcr.io dan github.com (image dan pembaruan)",
       "Port 80 dan 443 tersedia (dapat dikonfigurasi)"
     ],
@@ -65,7 +65,7 @@
     "title": "Perlu diketahui",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Seluruh kode sumber tersedia untuk publik di GitHub di bawah lisensi AGPL-3.0 &mdash; tanpa biaya lisensi, tanpa vendor lock-in." },
-      { "icon": "storage", "title": "Data tetap di tempat Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan berada di server Anda &mdash; tidak ada keharusan menggunakan cloud. Permintaan hanya dikirim ke penyedia AI eksternal jika Anda memilihnya; dengan model lokal, semuanya tetap di tempat Anda." },
+      { "icon": "storage", "title": "Data berada di server Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan berada di server Anda &mdash; tidak ada keharusan menggunakan cloud. Permintaan hanya dikirim ke penyedia AI eksternal jika Anda memilihnya; dengan model lokal, tidak ada permintaan AI yang dikirim ke penyedia eksternal." },
       { "icon": "update", "title": "Pembaruan", "text": "Instalasi mengunci versi rilis terbaru. Layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis." },
       { "icon": "lock", "title": "HTTPS sejak awal", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama." }
     ]

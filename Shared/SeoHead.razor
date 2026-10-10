@@ -4,7 +4,7 @@
 
 <HeadContent>
     <link rel="canonical" href="@CanonicalUrl" />
-    @if (!IsTranslated(CultureRecord))
+    @if (!IsTranslated(CultureRecord) || IsNoindexCountry)
     {
         <meta name="robots" content="noindex, follow" />
     }
@@ -82,6 +82,8 @@
     // set and marked noindex, so search engines never index German text served
     // under a foreign language URL.
     [Parameter] public bool IndexTranslatedOnly { get; set; }
+
+    private bool IsNoindexCountry => !SameForEveryCountry && CountryIndexingPolicy.IsNoindex(PageKey);
 
     private bool IsTranslated(SupportedCulture culture)
         => !IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, PageKey);

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Para o Apoio Domiciliário &amp; cuidados de saúde ao domicílio em Portugal",
     "titleHtml": "Mais tempo para cuidar, <span class=\"text-secondary\">menos para planear rotas.</span>",
-    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; e considera o tempo de deslocação entre utentes como tempo de trabalho através de um valor fixo de tempo de deslocação por intervenção, se assim o desejar também para a primeira e a última viagem, quando não existe um local de trabalho fixo. Instalado nas suas instalações, para que os dados dos utentes nunca saiam das suas instalações.",
+    "subtitle": "O Klacks planeia intervenções e rotas automaticamente &mdash; e considera o tempo de deslocação entre utentes como tempo de trabalho através de um valor fixo de tempo de deslocação por intervenção, se assim o desejar também para a primeira e a última viagem, quando não existe um local de trabalho fixo. Instalado nas suas instalações, para que os dados dos utentes estejam nos seus próprios servidores.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista de linha temporal do Klacks para o planeamento de rotas no apoio domiciliário em Portugal",
     "screenshotLabel": "Linha temporal"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Tempo de deslocação definido como tempo de trabalho", "text": "O tempo de deslocação entre utentes pode ser definido como valor fixo por intervenção e conta então como tempo de trabalho &mdash; se desejar, também para a primeira e a última viagem na ausência de um local fixo, tal como exige a interpretação do art. 197.º do CT. O Klacks não calcula tempos de deslocação individuais e também não verifica se existe um local fixo." },
       { "icon": "bedtime", "title": "Descanso de 11 horas nos horários repartidos", "text": "O Klacks verifica o período de descanso mínimo configurado de 11 horas consecutivas entre dois turnos seguidos." },
       { "icon": "verified", "title": "Qualificações consideradas automaticamente", "text": "Cada intervenção só é atribuída a pessoas com a qualificação adequada &mdash; sem qualquer verificação manual." },
-      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados ficam nas suas instalações", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes permanecem nas suas instalações &mdash; com um modelo de IA alojado localmente, também no que toca à IA." },
+      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados estão nos seus servidores", "text": "O Klacks corre na sua própria infraestrutura. Os dados dos utentes estão nos seus servidores &mdash; com um modelo de IA alojado localmente, nenhum pedido de IA é enviado a um fornecedor de IA externo." },
       { "icon": "smart_toy", "title": "O Klacksy compreende a sua frase", "text": "Basta dizer «Preenche as rotas para amanhã». Em caso de falta, o Klacksy sugere de imediato um substituto disponível." }
     ]
   },

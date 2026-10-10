@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For home care providers in Saudi Arabia",
     "titleHtml": "Care routes that <span class=\"text-secondary\">monitor the 12-hour limit live.</span>",
-    "subtitle": "Klacks schedules care visits automatically &mdash; and warns live about shift sequences that would keep a caregiver at the workplace for more than 12 hours (Art. 101). Installed on your premises, so patient data stays within your infrastructure, with a locally hosted AI model also for AI use.",
+    "subtitle": "Klacks schedules care visits automatically &mdash; and warns live about shift sequences that would keep a caregiver at the workplace for more than 12 hours (Art. 101). Installed on your premises, so patient data is stored on your own servers; with a locally hosted AI model, no AI request goes to an external AI provider.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for care routes in Saudi Arabia",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "12-Hour Limit on 24-Hour Chains Monitored Live", "text": "Klacks monitors shift sequences live and automatically warns as soon as a caregiver would exceed the configured 12-hour daily limit (Art. 101). On request, Klacks hard-blocks a breach in automatic planning; with manual planning it stays at a warning." },
       { "icon": "trending_up", "title": "Exceptional Hours under Art. 106 Tracked", "text": "The exceptional ceiling of 10 hours per day or 60 hours per week is checked continuously, including during seasonal peaks. On request, Klacks hard-blocks the excess in automatic planning; with manual planning it stays at a warning." },
       { "icon": "verified", "title": "Qualifications Considered Automatically", "text": "Every visit is assigned only to caregivers with the matching qualification." },
-      { "icon": "shield_lock", "title": "Installed on Your Premises: Patient Data Stays in KSA", "text": "Klacks runs on your own infrastructure. Sensitive personnel and scheduling data stays physically in Saudi Arabia &mdash; with a locally hosted AI model, also for AI use; this makes it easier to meet the transfer requirements under PDPL/SDAIA." },
+      { "icon": "shield_lock", "title": "Installed on Your Premises: Patient Data Stored on Your Servers in KSA", "text": "Klacks runs on your own infrastructure. Sensitive personnel and scheduling data is stored physically on your servers in Saudi Arabia &mdash; with a locally hosted AI model, no AI request goes to an external AI provider; transfers are governed by the PDPL and SDAIA, and the legal assessment remains with you." },
       { "icon": "smart_toy", "title": "Klacksy Understands Your Request", "text": "\"Fill tomorrow&rsquo;s care routes\" is enough. If someone is unavailable, Klacksy immediately suggests an available replacement &mdash; and Klacks warns if doing so would breach the 12-hour limit." }
     ]
   },

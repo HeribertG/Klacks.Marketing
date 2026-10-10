@@ -89,6 +89,13 @@ public sealed class JsonPageContentProvider : IPageContentProvider
         return textKey;
     }
 
+    public string? FindText(string cultureCode, string contentKey, string textKey)
+    {
+        return LoadFlatContent(cultureCode, contentKey) is { } dictionary && dictionary.TryGetValue(textKey, out var value)
+            ? value
+            : null;
+    }
+
     private IndustryPageContent? LoadIndustryPage(string cultureCode, string pageKey)
     {
         return _industryCache.GetOrAdd($"{cultureCode}/{pageKey}", _ =>

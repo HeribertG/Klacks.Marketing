@@ -1,6 +1,6 @@
 {
   "pageTitle": "Installera Klacks: guidat installationsprogram eller Docker Compose med landspaket | Klacks",
-  "metaDescription": "Installera Klacks på din egen infrastruktur: guidat installationsprogram eller Docker Compose-stack, förkonfigurerad med ditt lands helgdagar, arbetstidsregler och &ndash; där de är definierade för ditt land &ndash; tillägg. Inga licensavgifter, öppen källkod, utan registrering.",
+  "metaDescription": "Installera Klacks själv: guidad installation eller Docker Compose, förkonfigurerad med helgdagar och arbetstidsregler. Öppen källkod, inga licensavgifter.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Inga licensavgifter &amp; öppen källkod",
@@ -19,7 +19,7 @@
     "text": "Den guidade vägen för din egen server: ett installationsskript genererar secrets och ett självsignerat certifikat, hämtar den senast släppta versionen och startar hela stacken &mdash; på Linux eller Windows.",
     "requirementsTitle": "Krav",
     "requirements": [
-      "Docker Desktop (Windows/Mac) eller Docker Engine med Compose-plugin (Linux)",
+      "Docker Desktop (Windows) eller Docker Engine med Compose-plugin (Linux)",
       "Utgående åtkomst till ghcr.io och github.com (images och uppdateringar)",
       "Lediga portar 80 och 443 (konfigurerbart)"
     ],
@@ -65,7 +65,7 @@
     "title": "Bra att veta",
     "items": [
       { "icon": "code", "title": "Öppen källkod (AGPL-3.0)", "text": "Hela källkoden är offentlig på GitHub under AGPL-3.0 &mdash; inga licenskostnader, ingen leverantörsinlåsning." },
-      { "icon": "storage", "title": "Data stannar i huset", "text": "Klacks körs på din infrastruktur. Personal- och schemadata finns på din server &mdash; det finns inget molntvång. Först om du väljer en extern AI-leverantör skickas förfrågningar dit; med en lokal modell stannar allt i huset." },
+      { "icon": "storage", "title": "Data finns på dina servrar", "text": "Klacks körs på din infrastruktur. Personal- och schemadata finns på din server &mdash; det finns inget molntvång. Först om du väljer en extern AI-leverantör skickas förfrågningar dit; med en lokal modell skickas ingen AI-förfrågan till en extern leverantör." },
       { "icon": "update", "title": "Uppdateringar", "text": "Installationen låser den senast släppta versionen. En uppdateringstjänst i stacken installerar nysläppta versioner automatiskt." },
       { "icon": "lock", "title": "HTTPS från start", "text": "Installationsprogrammet genererar ett självsignerat certifikat så att du kommer igång &mdash; du kan när som helst byta till ett eget certifikat. Byt det initiala lösenordet direkt efter första inloggningen." }
     ]

@@ -186,7 +186,7 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("## Overview");
         sb.AppendLine();
-        sb.AppendLine("Klacks is a workforce-scheduling application for organisations that plan staff in shifts, in the field and by qualification. It is open source under the GNU AGPL-3.0 licence and runs on your own infrastructure (on-premise), so no personnel or patient records have to leave the building. There is no vendor lock-in and no forced cloud.");
+        sb.AppendLine("Klacks is a workforce-scheduling application for organisations that plan staff in shifts, in the field and by qualification. It is open source under the GNU AGPL-3.0 licence and runs on your own infrastructure (on-premise), so personnel and patient records are stored on your own servers. There is no vendor lock-in and no forced cloud.");
         sb.AppendLine();
 
         sb.AppendLine("## Key features");
@@ -206,7 +206,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine("- Free choice of language model: OpenAI, Anthropic, DeepSeek, Gemini — or a fully local model, so you decide on cost, privacy and provider.");
         sb.AppendLine("- 170+ skills: create staff, manage groups, set permissions and navigate the app through conversation.");
         sb.AppendLine("- Adjustable per-user autonomy levels, a personality editor, learned company terminology and operating rules set up by chat — traceable in a rule register and reversible.");
-        sb.AppendLine("- Because Klacksy can run on a local language model, an assistant can build schedules and operate the app by voice without a single record leaving your infrastructure.");
+        sb.AppendLine("- Because Klacksy can run on a local language model, an assistant can build schedules and operate the app without any request to the language model going to an external AI provider.");
         sb.AppendLine();
 
         sb.AppendLine("## Model Context Protocol (MCP)");

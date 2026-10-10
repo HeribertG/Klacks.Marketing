@@ -1,10 +1,11 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Thailand | 36-Stunden-Limit & Personalplanung mit Daten im eigenen Haus",
+  "pageTitle": "Klacks für Unternehmen in Thailand | 36-Stunden-Limit & Personalplanung mit Daten auf Ihren Servern",
+  "metaDescription": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt vor einer Überschreitung. Bei Ihnen installiert.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Thailändischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt rechtzeitig vor einer Überschreitung (auf Wunsch mit Block-Modus für die automatischen Planungswege) und läuft bei Ihnen installiert &mdash; damit Ihre sensiblen Personal- und Planungsdaten nach dem PDPA (Personal Data Protection Act) in Ihrem eigenen Firmennetz bleiben, statt in eine Übersee-Cloud übertragen zu werden.",
+    "subtitle": "Klacks überwacht Überstunden und Feiertagsarbeit live gegen das gesetzliche Wochenlimit und warnt rechtzeitig vor einer Überschreitung (auf Wunsch mit Block-Modus für die automatischen Planungswege) und läuft bei Ihnen installiert &mdash; damit Ihre sensiblen Personal- und Planungsdaten nach dem PDPA (Personal Data Protection Act) auf Ihren eigenen Servern liegen, statt in eine Übersee-Cloud übertragen zu werden.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Thailand",
     "screenshotLabel": "Dienstplan"
@@ -81,8 +82,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Datenhaltung im eigenen Haus (PDPA)",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Ihre sensiblen Personal- und Planungsdaten nach Section 26 PDPA bleiben in Ihrem Firmennetz, statt in eine Übersee-Cloud übertragen zu werden (bei der KI-Nutzung auf Wunsch mit lokalem Modell). Eine eigene biometrische Zeiterfassung führt Klacks nicht."
+        "title": "Datenhaltung auf Ihren Servern (PDPA)",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Ihre sensiblen Personal- und Planungsdaten nach Section 26 PDPA liegen auf Ihren Servern, statt in eine Übersee-Cloud übertragen zu werden (bei der KI-Nutzung auf Wunsch mit lokalem Modell). Eine eigene biometrische Zeiterfassung führt Klacks nicht."
       },
       {
         "icon": "smart_toy",
@@ -99,7 +100,7 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen PDPA-Anforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer sensibler Personaldaten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen PDPA-Anforderungen lässt sich das KI-Modell zudem lokal hosten, sodass keine KI-Anfrage mit sensiblen Personaldaten an einen externen KI-Anbieter geht.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
@@ -111,6 +112,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks das 36-Stunden-Limit prüft, Zeitzuschläge als Stunden führt und Ihre Daten im eigenen Haus hält &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks das 36-Stunden-Limit prüft, Zeitzuschläge als Stunden führt &mdash; bei Ihnen installiert oder im Playground, ohne Lizenzgebühren und ohne Registrierung."
   }
 }

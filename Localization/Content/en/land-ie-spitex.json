@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For Home Support &amp; home care in Ireland",
     "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
-    "subtitle": "Klacks plans visits and routes automatically &mdash; with a fixed travel-time value per visit for travel time between clients (CJEU Tyco line of case law) as a planning basis for the HSE Home Support Authorisation Scheme. Installed on your premises, so patient data never leaves your organisation.",
+    "subtitle": "Klacks plans visits and routes automatically &mdash; with a fixed travel-time value per visit for travel time between clients (CJEU Tyco line of case law) as a planning basis for the HSE Home Support Authorisation Scheme. Installed on your premises, so patient data is stored on your own servers.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for route planning in home care in Ireland",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Travel time stored as working time", "text": "In line with the Tyco ruling, journeys between clients and, for staff with no fixed place of work, also the first and last journey count as working time &mdash; in Klacks, you set up a fixed travel-time value per visit for this, which counts as working time; Klacks does not calculate individual travel times. Klacks does not automatically distinguish between staff with and without a fixed place of work." },
       { "icon": "payments", "title": "HSE remuneration: hours basis", "text": "Klacks does not calculate the Living Wage rate or the travel-time remuneration under the 2023 HSE Home Support Authorisation Scheme &mdash; Klacks provides the planned hours as a basis for your payroll records." },
       { "icon": "verified", "title": "Qualifications taken into account automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all. If a required qualification is missing or has expired, Klacks refuses the assignment, in manual planning too &mdash; only staff with a valid qualification are scheduled." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data stays in your organisation &mdash; with a locally hosted AI model, for the AI too." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stored on your servers", "text": "Klacks runs on your own infrastructure. Patient data is stored on your servers &mdash; with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Fill the routes for tomorrow\" is enough. If someone calls in sick, Klacksy immediately suggests available cover." }
     ]
   },

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege in Griechenland",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch, dokumentiert jeden Besuch als Zeitbasis für ERGANI und überwacht die gesetzlichen Ruhezeiten &mdash; bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch, dokumentiert jeden Besuch als Zeitbasis für ERGANI und überwacht die gesetzlichen Ruhezeiten &mdash; bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Griechenland",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "fact_check", "title": "Jeder Einsatz als Zeitbasis für ERGANI dokumentiert", "text": "Klacks protokolliert Beginn und Ende jedes Besuchs lückenlos &mdash; und liefert damit die dokumentierte Zeitbasis für die Meldepflicht ab 12. Oktober 2026." },
       { "icon": "bedtime", "title": "Ruhezeiten automatisch geprüft", "text": "Die 11-stündige Tagesruhe und die 24-stündige Wochenruhe werden über alle Touren hinweg automatisch überwacht." },
       { "icon": "layers", "title": "Zuschlagsstufen auch in Teilzeit", "text": "Mehrarbeit (+20 %) und Überstunde (+40 %) führt Klacks auch bei geteilten Diensten automatisch als Zuschlagsstaffeln (Zeitgutschriften); ob eine Überstunde ordnungsgemäss gemeldet ist (sonst +120 %), erkennt Klacks nicht." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

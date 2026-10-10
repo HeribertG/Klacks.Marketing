@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege in Thailand",
     "titleHtml": "Mehr Zeit für die Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Pflegeeinsätze und Touren automatisch; die gesetzliche 1-Stunden-Pause nach 5 Arbeitsstunden legen Sie als Block in die Tour &mdash; bei Ihnen installiert, damit sensible Patienten- und Zeiterfassungsdaten nach dem PDPA in Ihrem eigenen Firmennetz bleiben.",
+    "subtitle": "Klacks plant Pflegeeinsätze und Touren automatisch; die gesetzliche 1-Stunden-Pause nach 5 Arbeitsstunden legen Sie als Block in die Tour &mdash; bei Ihnen installiert, damit sensible Patienten- und Zeiterfassungsdaten nach dem PDPA auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Thailand",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "hourglass_top", "title": "1-Stunden-Pause als Block in der Tour", "text": "Die gesetzliche Pause nach maximal 5 Arbeitsstunden (Section 27) lässt sich als fester oder verschiebbarer Block in die Pflegetour legen; die Pausenpflicht selbst prüft Klacks nicht." },
       { "icon": "gavel", "title": "36h-Wochenlimit live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Pflegekraft live und warnt rechtzeitig, bevor das 36-Stunden-Limit nach Section 26 überschritten wird. Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstösse in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks berücksichtigt bei der Einteilung der Einsätze die Qualifikation der Pflegekräfte und warnt bei abgelaufenen Nachweisen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und Personaldaten nach PDPA bleiben in Ihrem Haus &mdash; bei der KI-Nutzung auf Wunsch mit lokalem Modell. Eine eigene biometrische Zeiterfassung führt Klacks nicht." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Patientendaten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und Personaldaten nach PDPA liegen auf Ihren Servern &mdash; bei der KI-Nutzung auf Wunsch mit lokalem Modell. Eine eigene biometrische Zeiterfassung führt Klacks nicht." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Pflegetouren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

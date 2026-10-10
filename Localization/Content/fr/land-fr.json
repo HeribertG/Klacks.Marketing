@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks pour la France | Planification des effectifs Open Source & installé chez vous",
+  "metaDescription": "Klacks planifie les services automatiquement, peut reproduire les échelles de majoration du Code du travail en crédits d'heures et s'installe chez vous.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Sans frais de licence &middot; Confidentialité des données à la française",
     "titleHtml": "La planification des effectifs, <span class=\"text-secondary\">dont vous gardez le contrôle.</span>",
-    "subtitle": "Klacks planifie les services automatiquement, peut reproduire les échelles de majoration des heures supplémentaires du Code du travail sous forme de crédits d'heures, vérifie les temps de repos par rapport aux règles que vous avez définies, et optimise les tournées &mdash; open source, installable dans vos propres locaux et, sur demande, avec un modèle d'IA local. Ainsi, les données du personnel peuvent rester là où la CNIL les attend : dans vos propres murs.",
+    "subtitle": "Klacks planifie les services automatiquement, peut reproduire les échelles de majoration des heures supplémentaires du Code du travail sous forme de crédits d'heures, vérifie les temps de repos par rapport aux règles que vous avez définies, et optimise les tournées &mdash; open source, installable dans vos propres locaux et, sur demande, avec un modèle d'IA local. Ainsi, les données du personnel se trouvent sur vos propres serveurs ; l'évaluation juridique vis-à-vis de la CNIL vous appartient.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Planning de service Klacks pour les entreprises en France",
     "screenshotLabel": "Planning"
@@ -76,8 +77,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installé chez vous : souveraineté totale des données",
-        "text": "Klacks fonctionne sur votre propre infrastructure &mdash; les données du personnel restent dans vos murs, et avec un modèle d'IA hébergé localement, également côté IA. Cela va dans le sens de l'exigence de la CNIL en matière de protection des données des salariés (RGPD Art. 88)."
+        "title": "Installé chez vous : données sur vos serveurs",
+        "text": "Klacks fonctionne sur votre propre infrastructure &mdash; les données du personnel se trouvent sur vos serveurs ; avec un modèle d'IA hébergé localement, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe. La protection des données des salariés relève du RGPD Art. 88, le contrôle incombe à la CNIL ; l'évaluation juridique vous appartient."
       },
       {
         "icon": "code",

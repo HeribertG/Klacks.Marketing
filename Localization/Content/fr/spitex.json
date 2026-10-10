@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile &amp; les soins ambulatoires",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec les bonnes qualifications, des majorations configurables et les jours fériés de votre canton. Installé chez vous ; avec un modèle d'IA local, les données patients ne quittent pas vos murs.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; avec les bonnes qualifications, des majorations configurables et les jours fériés de votre région. Installé chez vous, données patients sur vos propres serveurs ; avec un modèle d'IA local, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées d'aide à domicile",
     "screenshotLabel": "Chronologie",
@@ -21,12 +21,12 @@
   },
   "solutions": {
     "title": "Comment Klacks soulage l'aide à domicile",
-    "subtitle": "De la tournée automatique au jour férié cantonal &mdash; tout s'imbrique parfaitement.",
+    "subtitle": "De la tournée automatique au jour férié régional &mdash; tout s'imbrique parfaitement.",
     "items": [
       { "icon": "route", "title": "Tournées optimisées automatiquement", "text": "Klacks définit les itinéraires d'intervention de façon à raccourcir les trajets et respecter les créneaux horaires &mdash; en voiture, à vélo ou à pied." },
       { "icon": "verified", "title": "Qualifications prises en compte automatiquement", "text": "Chaque intervention n'est attribuée qu'aux personnes disposant de la qualification requise &mdash; sans aucune vérification manuelle." },
-      { "icon": "event_available", "title": "Jours fériés de votre canton &amp; majorations", "text": "Les jours fériés sont préconfigurés &mdash; jusqu'au niveau du canton et de la commune. Vous définissez vous-même les majorations de nuit, de week-end et de jours fériés sous forme de crédits de temps, le tout librement modifiable." },
-      { "icon": "shield_lock", "title": "Installé chez vous : données chez vous", "text": "Klacks tourne sur votre propre infrastructure. Les données patients se trouvent sur vos serveurs &mdash; avec un modèle d'IA local, rien ne quitte non plus vos murs côté IA." },
+      { "icon": "event_available", "title": "Jours fériés de votre région &amp; majorations", "text": "Les jours fériés sont préconfigurés &mdash; jusqu'au niveau régional et communal. Vous définissez vous-même les majorations de nuit, de week-end et de jours fériés sous forme de crédits de temps, le tout librement modifiable." },
+      { "icon": "shield_lock", "title": "Installé chez vous : données sur vos serveurs", "text": "Klacks tourne sur votre propre infrastructure. Les données patients se trouvent sur vos serveurs &mdash; avec un modèle d'IA local, rien ne quitte non plus vos murs côté IA." },
       { "icon": "smart_toy", "title": "Klacksy comprend votre phrase", "text": "« Remplis les tournées de demain » suffit. En cas de maladie, Klacksy propose immédiatement un remplacement disponible." },
       { "icon": "event_busy", "title": "Absences compensées rapidement", "text": "En cas d'absence, Klacks indique immédiatement qui est qualifié et disponible &mdash; sans bouleverser tout le planning." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Service d'aide à domicile à Genève, bilingue, avec interventions vaudoises",
-    "text": "Interface en français, jours fériés genevois et vaudois, majorations d'aide à domicile &mdash; configurés dans Klacks, pas reprogrammés. Les tournées sont optimisées automatiquement, les qualifications vérifiées, et Klacksy aide lors de modifications de dernière minute. Les données patients se trouvent sur vos serveurs, et avec un modèle d'IA local tout reste chez vous."
+    "text": "Interface en français, jours fériés genevois et vaudois, majorations d'aide à domicile &mdash; configurés dans Klacks, pas reprogrammés. Les tournées sont optimisées automatiquement, les qualifications vérifiées, et Klacksy aide lors de modifications de dernière minute. Les données patients se trouvent sur vos serveurs ; avec un modèle d'IA local, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe."
   },
   "showRoutePlanning": true,
   "cta": {

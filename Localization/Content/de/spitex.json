@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die Spitex &amp; ambulante Pflege",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit den richtigen Qualifikationen, konfigurierbaren Zuschlägen und Feiertagen Ihres Kantons. Bei Ihnen installiert; mit einem lokalen KI-Modell verlassen Patientendaten Ihr Haus nicht.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit den richtigen Qualifikationen, konfigurierbaren Zuschlägen und Feiertagen Ihrer Region. Bei Ihnen installiert, Patientendaten auf Ihren eigenen Servern; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Spitex",
     "screenshotLabel": "Timeline"
@@ -20,12 +20,12 @@
   },
   "solutions": {
     "title": "Wie Klacks die Spitex entlastet",
-    "subtitle": "Von der automatischen Tour bis zum kantonalen Feiertag &mdash; alles greift ineinander.",
+    "subtitle": "Von der automatischen Tour bis zum regionalen Feiertag &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; für Auto, Velo oder zu Fuss." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "event_available", "title": "Feiertage Ihres Kantons &amp; Zuschläge", "text": "Feiertage sind vorkonfiguriert &mdash; bis auf Kantons- und Gemeinde-Ebene. Nacht-, Wochenend- und Feiertagszuschläge legen Sie als Zeitgutschriften selbst fest, alles frei anpassbar." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell verlässt auch bei der KI nichts Ihr Haus." },
+      { "icon": "event_available", "title": "Feiertage Ihrer Region &amp; Zuschläge", "text": "Feiertage sind vorkonfiguriert &mdash; bis auf regionale und kommunale Ebene. Nacht-, Wochenend- und Feiertagszuschläge legen Sie als Zeitgutschriften selbst fest, alles frei anpassbar." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell verlässt auch bei der KI nichts Ihr Haus." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Plan umzuwerfen." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Spitex Genf, zweisprachig, mit Waadtländer Einsätzen",
-    "text": "Französische Oberfläche, Genfer und Waadtländer Feiertage, Spitex-Zuschläge &mdash; in Klacks konfiguriert, nicht nachprogrammiert. Touren werden automatisch optimiert, Qualifikationen geprüft, und Klacksy hilft bei kurzfristigen Änderungen. Patientendaten liegen dabei auf Ihren Servern, mit einem lokalen KI-Modell bleibt alles im Haus."
+    "text": "Französische Oberfläche, Genfer und Waadtländer Feiertage, Spitex-Zuschläge &mdash; in Klacks konfiguriert, nicht nachprogrammiert. Touren werden automatisch optimiert, Qualifikationen geprüft, und Klacksy hilft bei kurzfristigen Änderungen. Patientendaten liegen dabei auf Ihren Servern; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
   },
   "showRoutePlanning": true,
   "cta": {

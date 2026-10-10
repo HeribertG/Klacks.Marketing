@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks cho bệnh viện tại Việt Nam | Ngân sách 300 giờ/năm & giờ phụ trội làm thêm giờ ban đêm",
+  "metaDescription": "Klacks giám sát ngân sách làm thêm giờ 300 giờ/năm của ngành y tế, cộng dồn giờ phụ trội ban đêm và làm thêm giờ nếu muốn, cài đặt trên hệ thống của bạn.",
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Dành cho bệnh viện &amp; phòng khám tại Việt Nam",
     "titleHtml": "Lịch trực, <span class=\"text-secondary\">vận hành suôn sẻ suốt 24 giờ.</span>",
-    "subtitle": "Klacks giám sát ngân sách làm thêm giờ mở rộng 300 giờ/năm dành cho ngành y tế và nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo chế độ tính cộng dồn thay vì chỉ áp dụng mức cao nhất &mdash; cài đặt trên hệ thống của bạn và, nếu muốn, dùng mô hình AI cục bộ, để dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn.",
+    "subtitle": "Klacks giám sát ngân sách làm thêm giờ mở rộng 300 giờ/năm dành cho ngành y tế và nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo chế độ tính cộng dồn thay vì chỉ áp dụng mức cao nhất &mdash; cài đặt trên hệ thống của bạn và, nếu muốn, dùng mô hình AI cục bộ, để dữ liệu bệnh nhân nằm trên máy chủ riêng của bạn.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Lưới lịch trực Klacks cho bệnh viện tại Việt Nam",
     "screenshotLabel": "Lịch làm việc"
@@ -26,7 +27,7 @@
       { "icon": "bedtime", "title": "Nắm vững tỷ lệ giờ phụ trội ban đêm và tỷ lệ giờ phụ trội làm thêm giờ", "text": "Bạn thiết lập các mức giờ phụ trội theo Điều 98 dưới dạng hệ số có thể cấu hình, và giờ phụ trội làm thêm giờ như một loại giờ phụ trội riêng. Ở chế độ tính cộng dồn, Klacks tự động cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ thay vì chỉ áp dụng mức cao nhất &mdash; Klacks ghi nhận các mức cộng dồn 210% hoặc 270% dưới dạng giờ phụ trội và cung cấp cho bộ phận lương của bạn." },
       { "icon": "schedule", "title": "Giám sát thời gian nghỉ 12 giờ", "text": "Klacks cảnh báo trước khi một chuỗi ca làm việc có nguy cơ vi phạm thời gian nghỉ theo luật định của Điều 110. Nếu muốn, có thể bật chế độ chặn (block mode), giúp ngăn các vi phạm mới trong các luồng lập kế hoạch tự động (trình lập kế hoạch tự động, đề xuất, tìm người thay thế); trong lập kế hoạch thủ công, hệ thống vẫn chỉ đưa ra cảnh báo." },
       { "icon": "verified", "title": "Trình độ chuyên môn &amp; các khoa", "text": "Klacks tính đến trình độ chuyên môn khi phân công &mdash; theo từng khoa, bộ phận và chức năng &mdash; và cảnh báo khi chứng chỉ đã hết hạn." },
-      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng của bạn. Với mô hình AI cục bộ, dữ liệu nhân sự và bệnh nhân không rời khỏi bệnh viện." },
+      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và bệnh nhân nằm trên máy chủ của bạn; với mô hình AI cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp AI bên ngoài." },
       { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Điền các ca trực đêm của khoa Nội cho tuần tới” &mdash; Klacksy khởi chạy việc lập kế hoạch, Klacks tính đến trình độ chuyên môn và ngân sách năm." }
     ]
   },

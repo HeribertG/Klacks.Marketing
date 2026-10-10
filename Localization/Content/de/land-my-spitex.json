@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (penjaga) in Malaysia",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und prüft dabei die von Ihnen hinterlegte Tageshöchstarbeitszeit. Bei Ihnen installiert &mdash; mit lokalem KI-Modell verlassen Patientendaten Ihr Haus nie.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und prüft dabei die von Ihnen hinterlegte Tageshöchstarbeitszeit. Bei Ihnen installiert, Patientendaten liegen auf Ihren eigenen Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Malaysia",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Tageshöchstarbeitszeit überwacht", "text": "Klacks prüft die von Ihnen hinterlegte Tageshöchstarbeitszeit und markiert den Überhang automatisch als Überstunde; die 10-Stunden-Spanne zwischen erstem Einsatz und letztem Feierabend (Section 60A(1)) selbst prüft Klacks nicht." },
       { "icon": "paid", "title": "Gestufte Zuschläge als Zeitgutschrift", "text": "Überstunden-, Ruhetags- und Feiertagszuschläge (1,5x/2,0x/3,0x) schreibt Klacks als Zeitgutschrift gut &mdash; die RM-4.000-Lohnschwelle wendet die Lohnbuchhaltung an." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung der Einsätze und warnt bei abgelaufenen Nachweisen &mdash; ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Mit lokalem KI-Modell verlassen Patienten- und Planungsdaten Ihr Haus nicht." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patienten- und Planungsdaten liegen auf Ihren Servern; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

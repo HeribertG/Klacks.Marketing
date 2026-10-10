@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Israel",
     "titleHtml": "Toranut-Dienste, die <span class=\"text-secondary\">Ihre hinterlegten Grenzen im Blick behalten.</span>",
-    "subtitle": "Klacks plant Stationen und Toranut-Dienste (תורנות) mit den hinterlegten Tages- und Wochengrenzen im Blick &mdash; die seit 2021 geltende 18-Stunden- bzw. seit September 2023 geltende 21-Stunden-Obergrenze für Assistenzärzt:innen (מתמחים) pro zusammenhängendem Dienst bildet Klacks nicht ab, da die Tageshöchstarbeitszeit je Kalendertag gilt. Bei Ihnen installiert, damit Patient:innendaten in Ihrem Haus bleiben, mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "subtitle": "Klacks plant Stationen und Toranut-Dienste (תורנות) mit den hinterlegten Tages- und Wochengrenzen im Blick &mdash; die seit 2021 geltende 18-Stunden- bzw. seit September 2023 geltende 21-Stunden-Obergrenze für Assistenzärzt:innen (מתמחים) pro zusammenhängendem Dienst bildet Klacks nicht ab, da die Tageshöchstarbeitszeit je Kalendertag gilt. Bei Ihnen installiert, damit Patient:innendaten auf Ihren eigenen Servern liegen; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Israel",
     "screenshotLabel": "Dienstplan"
@@ -25,7 +25,7 @@
       { "icon": "schedule", "title": "Lückenlose 24/7-Abdeckung", "text": "Tag-, Spät- und Nachtdienste über alle Stationen &mdash; Klacks zeigt jede Lücke sofort und füllt sie auf Wunsch automatisch." },
       { "icon": "gavel", "title": "Tages- und Wochengrenzen für Toranut-Dienste geprüft", "text": "Klacks überwacht die hinterlegten Tages- und Wochenhöchstarbeitszeiten für Toranut-Dienste (תורנות) in Echtzeit und warnt rechtzeitig, bevor eine Grenze überschritten wird. Die Höchstdauer eines zusammenhängenden Dienstes (18 bzw. 21 Stunden) bildet Klacks nicht ab, da die Tageshöchstarbeitszeit je Kalendertag gilt." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patient:innendaten bleiben in Ihrer Infrastruktur &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patient:innendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Toranut-Dienste der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und die hinterlegten Tages- und Wochengrenzen." },
       { "icon": "groups", "title": "Springerpool &amp; Ausfälle", "text": "Fällt jemand aus, zeigt Klacks sofort verfügbare, qualifizierte Springer &mdash; ohne den ganzen Plan umzuwerfen." }
     ]

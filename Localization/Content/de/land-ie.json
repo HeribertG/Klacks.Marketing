@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks für Irland | OWTA-Ruhezeiten, Banded Hours & Datenhoheit im eigenen Haus",
+  "pageTitle": "Klacks für Irland | OWTA-Ruhezeiten, Banded Hours & Datenhaltung auf Ihren Servern",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Irischer Datenschutz (DPC)",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft die OWTA-Ruhezeiten und dokumentiert geplante und geleistete Stunden als Grundlage für Banded-Hours-Anträge &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo Ihre Data Protection Commission (DPC) sie haben will: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft die OWTA-Ruhezeiten und dokumentiert geplante und geleistete Stunden als Grundlage für Banded-Hours-Anträge &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So liegen Personaldaten auf Ihren eigenen Servern; die rechtliche Bewertung gegenüber der Data Protection Commission (DPC) bleibt bei Ihnen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Irland",
     "screenshotLabel": "Dienstplan"
@@ -25,7 +25,7 @@
       },
       {
         "icon": "cloud_off",
-        "title": "Datenhoheit statt Drittland-Cloud",
+        "title": "Eigene Server statt Drittland-Cloud",
         "text": "Der Data Protection Act 2018 setzt die DSGVO in Irland um, Aufsichtsbehörde ist die Data Protection Commission (DPC). Gerade bei KI-Funktionen stellt sich vielen Betrieben die Frage, ob Personaldaten überhaupt in eine Drittland-Cloud dürfen."
       }
     ]
@@ -81,8 +81,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell ganz ohne Auslandtransfer von Personaldaten."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell geht keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

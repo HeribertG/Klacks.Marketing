@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in the UK",
     "titleHtml": "Rotas that <span class=\"text-secondary\">work round the clock.</span>",
-    "subtitle": "Klacks plans wards and junior doctor rotations with no gaps &mdash; automatically factoring in the shift and rest-period limits of the Junior Doctor Contract. Installed on your premises, so patient data does not have to leave your organisation &mdash; optionally with a locally hosted AI model.",
+    "subtitle": "Klacks plans wards and junior doctor rotations with no gaps &mdash; automatically factoring in the shift and rest-period limits of the Junior Doctor Contract. Installed on your premises, so patient data is stored on your own servers &mdash; optionally with a locally hosted AI model.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals in the UK",
     "screenshotLabel": "Schedule"
@@ -26,7 +26,7 @@
       { "icon": "timer", "title": "13-hour limit continuously monitored", "text": "Klacks warns when planning junior doctor shifts before the 13-hour limit under the Junior Doctor Contract is exceeded &mdash; visible before the shift is finalised. On request, Klacks hard-blocks a breach in automatic planning; with manual planning it stays at a warning." },
       { "icon": "bedtime", "title": "Rest-period cascade kept in view", "text": "The 11-hour rest between shifts is factored into the plan automatically; Klacks flags the 48/46/48-hour cascade after several consecutive shifts or nights as a warning." },
       { "icon": "visibility", "title": "WTR breaches made visible", "text": "Klacks has the Working Time Regulations built into the system and flags breaches before the rota is published &mdash; fully traceable for any support-and-challenge meeting." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Staff and patient data do not leave the hospital &mdash; and with a locally hosted AI model, not even for the AI." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stored on your servers", "text": "Klacks runs on your own infrastructure. Staff and patient data are stored on your servers &mdash; and with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Fill next week's night shifts for General Medicine\" is all it takes &mdash; Klacksy starts the planning, Klacks factors in shift limits and rest periods." }
     ]
   },

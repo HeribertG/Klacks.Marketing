@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für den Servicio de Ayuda a Domicilio (SAD) in Spanien",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und berücksichtigt einen festen Fahrzeitwert pro Einsatz als Arbeitszeit, wo der anwendbare Convenio Wege zwischen Klient:innen so behandelt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und berücksichtigt einen festen Fahrzeitwert pro Einsatz als Arbeitszeit, wo der anwendbare Convenio Wege zwischen Klient:innen so behandelt. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung im Servicio de Ayuda a Domicilio",
     "screenshotLabel": "Timeline"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI."
+        "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

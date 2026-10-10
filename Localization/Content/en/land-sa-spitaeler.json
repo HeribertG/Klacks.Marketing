@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in Saudi Arabia",
     "titleHtml": "Shift schedules that <span class=\"text-secondary\">stay balanced across weeks.</span>",
-    "subtitle": "Klacks schedules wards and shift operations and monitors the rolling 3-week average required by Art. 100 live &mdash; with overtime as time credit for your payroll. Installed on your premises, so patient data stays in your facility, with a locally hosted AI model also for AI use.",
+    "subtitle": "Klacks schedules wards and shift operations and monitors the rolling 3-week average required by Art. 100 live &mdash; with overtime as time credit for your payroll. Installed on your premises, so patient data is stored on your own servers; with a locally hosted AI model, no AI request goes to an external AI provider.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals in Saudi Arabia",
     "screenshotLabel": "Schedule"
@@ -27,7 +27,7 @@
       { "icon": "timelapse", "title": "9-Hour Limit for Intermittent Duties", "text": "For categories with intermittent duties, a daily limit of up to 9 hours can be configured, and Klacks checks the schedule against it." },
       { "icon": "gavel", "title": "Overtime Premium as Time Credit", "text": "The statutory 50% premium on the base wage (Art. 107) can be stored as a time premium; Klacks credits it as time credit for every overtime hour, and your payroll system calculates the money amount." },
       { "icon": "verified", "title": "Qualifications &amp; Wards", "text": "Every shift is assigned only to appropriately qualified staff &mdash; per ward, department and role." },
-      { "icon": "shield_lock", "title": "Installed on Your Premises: Data Stays In-House", "text": "Klacks runs on your infrastructure. Staff and patient data stay within your infrastructure &mdash; with a locally hosted AI model, also for AI use." },
+      { "icon": "shield_lock", "title": "Installed on Your Premises: Data Stored on Your Servers", "text": "Klacks runs on your infrastructure. Staff and patient data are stored on your servers &mdash; with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy Understands Your Request", "text": "\"Fill next week&rsquo;s ER night shifts\" is enough &mdash; Klacksy starts the planning, Klacks takes qualifications and the 3-week average into account." }
     ]
   },

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für ambulante Pflege in Italien (Assistenza domiciliare)",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit der 38-Stunden-Woche nach CCNL Cooperative Sociali als überwachter Grenze und einem festen Fahrzeitwert pro Einsatz, der als Arbeitszeit zählt. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; mit der 38-Stunden-Woche nach CCNL Cooperative Sociali als überwachter Grenze und einem festen Fahrzeitwert pro Einsatz, der als Arbeitszeit zählt. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Assistenza domiciliare",
     "screenshotLabel": "Timeline"
@@ -25,7 +25,7 @@
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten so, dass Wege kurz und Zeitfenster eingehalten werden &mdash; ein hinterlegter Fahrzeitwert pro Einsatz zwischen Klient:innen zählt dabei als Arbeitszeit." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks gleicht die geforderte Qualifikation mit den hinterlegten Profilen ab und warnt rechtzeitig, bevor eine Qualifikation abläuft &mdash; die Zuteilung bleibt nachvollziehbar, ganz ohne manuelles Prüfen. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "gavel", "title": "38-Stunden-Woche geprüft", "text": "Die CCNL-Normalarbeitszeit von 38 Stunden lässt sich als Regel hinterlegen und wird überwacht &mdash; bei Überschreitung warnt Klacks, und in den automatischen Planungswegen blockiert es sie auf Wunsch. Eine eigene Einsatzart für die Rufbereitschaft (Reperibilità) mit den Grenzen aus Art. 58 CCNL Cooperative Sociali und der Zulage gibt es in Klacks nicht." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren, qualifizierten Ersatz vor." },
       { "icon": "event_busy", "title": "Ausfälle schnell aufgefangen", "text": "Fällt jemand aus, zeigt Klacks sofort, wer qualifiziert und verfügbar ist &mdash; ohne den ganzen Tourenplan umzuwerfen." }
     ]
@@ -33,7 +33,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Assistenza domiciliare in der Lombardei, mit Wochenend-Rotation",
-    "text": "CCNL Cooperative Sociali, 38-Stunden-Woche, rotierende Wochenenddienste &mdash; in Klacks konfiguriert, nicht nachprogrammiert. Touren werden automatisch optimiert, Qualifikationen geprüft, und Klacksy hilft bei kurzfristigen Änderungen. Patientendaten bleiben im Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI."
+    "text": "CCNL Cooperative Sociali, 38-Stunden-Woche, rotierende Wochenenddienste &mdash; in Klacks konfiguriert, nicht nachprogrammiert. Touren werden automatisch optimiert, Qualifikationen geprüft, und Klacksy hilft bei kurzfristigen Änderungen. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
   },
   "showRoutePlanning": true,
   "cta": {

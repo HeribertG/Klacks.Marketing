@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks untuk Perusahaan Indonesia | Batas Lembur dan Kredit Waktu menurut PP 35/2021",
+  "metaDescription": "Klacks mencatat tambahan waktu lembur sebagai kredit jam dan memperingatkan batas lembur mingguan menurut PP 35/2021. Berjalan di instalasi Anda sendiri.",
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Tanpa biaya lisensi &middot; Pencatatan Waktu dengan Memperhatikan UU PDP",
     "titleHtml": "Perencanaan tenaga kerja yang <span class=\"text-secondary\">kendalinya tetap di tangan Anda.</span>",
-    "subtitle": "Klacks mencatat tambahan waktu untuk lembur sebagai kredit jam, memberi peringatan pada batas lembur mingguan menurut PP 35/2021 &mdash; atas permintaan, mode blokir mencegah pelanggaran baru pada jalur perencanaan otomatis &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif tetap berada di infrastruktur Anda sendiri.",
+    "subtitle": "Klacks mencatat tambahan waktu untuk lembur sebagai kredit jam, memberi peringatan pada batas lembur mingguan menurut PP 35/2021 &mdash; atas permintaan, mode blokir mencegah pelanggaran baru pada jalur perencanaan otomatis &mdash; dan berjalan di instalasi Anda sendiri, sehingga data personel dan perencanaan yang sensitif berada di server Anda sendiri.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tampilan ringkasan jadwal kerja Klacks untuk perusahaan Indonesia",
     "screenshotLabel": "Jadwal Kerja"
@@ -81,8 +82,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Terpasang di tempat Anda: data personel tetap di dalam perusahaan",
-        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; termasuk yang di-hosting secara lokal, tanpa perlu mengirim data personel dan perencanaan yang sensitif ke luar negeri."
+        "title": "Terpasang di tempat Anda: data personel di server Anda",
+        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; termasuk yang di-hosting secara lokal, sehingga tidak ada permintaan AI berisi data personel dan perencanaan yang sensitif yang dikirim ke penyedia AI eksternal."
       },
       {
         "icon": "smart_toy",

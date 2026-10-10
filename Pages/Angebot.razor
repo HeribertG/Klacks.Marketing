@@ -1,0 +1,200 @@
+@page "/{country}/angebot"
+@page "/{culture}/{country}/angebot"
+@inject IPageContentProvider ContentProvider
+
+@* Offer and pricing page (German only for now). Operating models: A = the customer runs Klacks, C = an IT partner
+   or hoster runs it; there is no operation by Klacks Software itself. No prices, no service levels, no customer
+   names: the pilot places and the IT partner search are stated as open. Every fact is taken from the existing pages
+   (lizenz, ueber-uns, grosse-betriebe, start) and the on-prem README. Served under every country with the same
+   content (canonical: the culture's default country); a culture without its own angebot.json is noindex.
+   Culture is the culture URL segment (null for German), Country the country page key of the route. *@
+<PageTitle>@Tx("pageTitle")</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" IndexTranslatedOnly="true" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" />
+
+<header class="pt-20 md:pt-28 pb-12 md:pb-16 px-4 sm:px-8 max-w-4xl mx-auto text-center">
+    <span class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">
+        <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">sell</span>@Tx("hero.badge")
+    </span>
+    <h1 class="text-[2.125rem] md:text-[3rem] leading-[1.1] font-black tracking-tighter text-primary mt-6 mb-6 hyphens-auto break-words">@Tx("hero.title")</h1>
+    <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-8">@Tx("hero.subtitle")</p>
+    <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:@ExternalLinks.ContactEmail" class="bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline flex items-center gap-2">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span> @Tx("hero.contact")
+        </a>
+        <a href="@ExternalLinks.GithubUrl" target="_blank" class="px-7 py-4 rounded-xl font-bold text-primary bg-surface-container-low hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
+            <span class="material-symbols-outlined" aria-hidden="true">code</span> @Tx("hero.source")
+        </a>
+    </div>
+</header>
+
+<section class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule" aria-labelledby="software-heading">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <div class="text-center mb-10">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Tx("software.eyebrow")</span>
+            <h2 id="software-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4">@Tx("software.title")</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="rounded-2xl bg-surface-container-lowest p-6">
+                <h3 class="text-lg font-black mt-0 mb-4">@Tx("software.none.title")</h3>
+                <ul class="space-y-3 list-none p-0 m-0">
+                    @for (var index = 0; index < NoCostItemCount; index++)
+                    {
+                        <li class="flex gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">block</span>@Tx($"software.none.items.{index}")</li>
+                    }
+                </ul>
+            </div>
+            <div class="rounded-2xl bg-surface-container-lowest p-6">
+                <h3 class="text-lg font-black mt-0 mb-4">@Tx("software.paid.title")</h3>
+                <ul class="space-y-3 list-none p-0 m-0">
+                    @for (var index = 0; index < PaidItemCount; index++)
+                    {
+                        <li class="flex gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-base" aria-hidden="true">payments</span>@Tx($"software.paid.items.{index}")</li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <p class="text-sm text-on-surface-variant text-center max-w-2xl mx-auto mt-6 mb-0">
+            @Tx("software.license") <a href="@LicenseHref" class="font-bold text-secondary no-underline">@Tx("software.licenseLink")</a>
+        </p>
+    </div>
+</section>
+
+<section class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-5xl mx-auto no-line-rule" aria-labelledby="operation-heading">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Tx("operation.eyebrow")</span>
+        <h2 id="operation-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Tx("operation.title")</h2>
+        <p class="text-on-surface-variant leading-relaxed m-0">@Tx("operation.text")</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-5">
+        <div class="rounded-2xl bg-surface-container-low p-6">
+            <span class="material-symbols-outlined text-secondary text-2xl" aria-hidden="true">dns</span>
+            <h3 class="text-lg font-black mt-3 mb-2">@Tx("operation.self.title")</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("operation.self.text")</p>
+            <h4 class="text-sm font-bold mt-0 mb-3">@Tx("operation.self.requirementsTitle")</h4>
+            <ul class="space-y-2 list-none p-0 m-0">
+                @for (var index = 0; index < RequirementItemCount; index++)
+                {
+                    <li class="flex gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">check</span>@Tx($"operation.self.requirements.{index}")</li>
+                }
+            </ul>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mt-5 text-sm">
+                <a href="@InstallationHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("operation.self.installationLink")</a>
+                <a href="@RequirementsDocsHref" target="_blank" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">menu_book</span> @Tx("operation.self.docsLink")</a>
+            </div>
+        </div>
+        <div class="rounded-2xl bg-surface-container-low p-6">
+            <span class="material-symbols-outlined text-secondary text-2xl" aria-hidden="true">handshake</span>
+            <h3 class="text-lg font-black mt-3 mb-2">@Tx("operation.partner.title")</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("operation.partner.text")</p>
+            <h4 class="text-sm font-bold mt-0 mb-3">@Tx("operation.partner.statusTitle")</h4>
+            <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx("operation.partner.status")</p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mt-5 text-sm">
+                <a href="mailto:@ExternalLinks.ContactEmail" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">mail</span> @Tx("operation.partner.contact")</a>
+                <a href="@PartnerHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">hub</span> @Tx("operation.partner.partnerLink")</a>
+            </div>
+        </div>
+    </div>
+    <div class="rounded-2xl bg-surface-container-lowest p-6 mt-5">
+        <h3 class="text-base font-bold mt-0 mb-2">@Tx("operation.data.title")</h3>
+        <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx("operation.data.text")</p>
+        <p class="text-sm mt-3 mb-0"><a href="@ExternalServicesDocsHref" target="_blank" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">menu_book</span> @Tx("operation.data.link")</a></p>
+    </div>
+</section>
+
+<section class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule" aria-labelledby="setup-heading">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Tx("setup.eyebrow")</span>
+            <h2 id="setup-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-4 mb-4">@Tx("setup.title")</h2>
+            <p class="text-on-surface-variant leading-relaxed m-0">@Tx("setup.text")</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="rounded-2xl bg-surface-container-lowest p-6">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">flag</span>@Tx("setup.pilot.badge")
+                </span>
+                <h3 class="text-lg font-black mt-4 mb-2">@Tx("setup.pilot.title")</h3>
+                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx("setup.pilot.text")</p>
+                <p class="text-sm text-on-surface-variant leading-relaxed mt-3 mb-0">@Tx("setup.pilot.costs")</p>
+            </div>
+            <div class="rounded-2xl bg-surface-container-lowest p-6">
+                <h3 class="text-lg font-black mt-0 mb-4">@Tx("setup.tasks.title")</h3>
+                <ul class="space-y-3 list-none p-0 m-0">
+                    @for (var index = 0; index < SetupTaskCount; index++)
+                    {
+                        <li class="flex gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">task_alt</span>@Tx($"setup.tasks.items.{index}")</li>
+                    }
+                </ul>
+                <p class="text-sm text-on-surface-variant leading-relaxed mt-4 mb-0">@Tx("setup.tasks.note")</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reveal py-14 md:py-20 no-line-rule" aria-labelledby="continuity-heading">
+    <div class="max-w-3xl mx-auto px-4 sm:px-8">
+        <div class="text-center mb-8">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Tx("continuity.eyebrow")</span>
+            <h2 id="continuity-heading" class="text-[1.75rem] md:text-[2.25rem] font-black tracking-tight mt-4 mb-4">@Tx("continuity.title")</h2>
+            <p class="text-on-surface-variant leading-relaxed m-0">@Tx("continuity.text")</p>
+        </div>
+        <ul class="space-y-4 list-none p-0 m-0">
+            @for (var index = 0; index < ContinuityItemCount; index++)
+            {
+                <li class="flex gap-3 text-on-surface-variant leading-relaxed"><span class="material-symbols-outlined text-secondary text-xl" aria-hidden="true">verified</span><span>@Tx($"continuity.items.{index}")</span></li>
+            }
+        </ul>
+        <p class="text-sm text-on-surface-variant leading-relaxed mt-6 mb-0">@Tx("continuity.note")</p>
+        <p class="mt-4 mb-0 text-sm"><a href="@AboutHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">person</span> @Tx("continuity.aboutLink")</a></p>
+    </div>
+</section>
+
+<section class="reveal pb-14 md:pb-20 px-4 sm:px-8 max-w-4xl mx-auto no-line-rule" aria-labelledby="contact-heading">
+    <div class="bg-night rounded-2xl py-10 md:py-14 px-6 md:px-8 text-center">
+        <h2 id="contact-heading" class="text-2xl md:text-3xl font-black text-white mt-0 mb-4">@Tx("contact.title")</h2>
+        <p class="text-white/70 max-w-xl mx-auto mb-8">@Tx("contact.text")</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:@ExternalLinks.ContactEmail" class="bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">mail</span> @Tx("contact.button")
+            </a>
+            <a href="@ImprintHref" class="border border-white/30 text-white px-7 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">contact_page</span> @Tx("contact.imprint")
+            </a>
+        </div>
+    </div>
+</section>
+
+@code {
+    private const string PageKey = CountryPageLinks.OfferSlug;
+    private const string RequirementsDocsPath = "betrieb/systemvoraussetzungen/";
+    private const string ExternalServicesDocsPath = "erste-schritte/installation-und-playground/#welche-externen-dienste-klacks-aufruft";
+    private const int NoCostItemCount = 3;
+    private const int PaidItemCount = 4;
+    private const int RequirementItemCount = 5;
+    private const int SetupTaskCount = 4;
+    private const int ContinuityItemCount = 4;
+
+    [Parameter] public string? Culture { get; set; }
+
+    [Parameter] public string? Country { get; set; }
+
+    private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
+
+    private string CountryKey => string.IsNullOrEmpty(Country) ? LanguageCountries.DefaultCountryFor(ResolvedCulture) : Country;
+
+    private string InstallationHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.InstallationSlug);
+
+    private string LicenseHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.LicenseSlug);
+
+    private string PartnerHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.PartnerSlug);
+
+    private string AboutHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.AboutSlug);
+
+    private string ImprintHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.ImprintSlug);
+
+    private static string RequirementsDocsHref => ExternalLinks.DocsBasePath + RequirementsDocsPath;
+
+    private static string ExternalServicesDocsHref => ExternalLinks.DocsBasePath + ExternalServicesDocsPath;
+
+    private string Tx(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
+}

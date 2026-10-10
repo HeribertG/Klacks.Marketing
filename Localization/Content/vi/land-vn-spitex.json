@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Dành cho dịch vụ chăm sóc tại nhà ở Việt Nam",
     "titleHtml": "Nhiều thời gian hơn cho chăm sóc, <span class=\"text-secondary\">ít thời gian hơn cho lập tuyến đường.</span>",
-    "subtitle": "Klacks tự động lập tuyến đường và cảnh báo trước khi thời gian nghỉ 12 giờ theo luật định giữa hai ca làm việc bị vi phạm &mdash; cài đặt trên hệ thống của bạn và, nếu muốn, dùng mô hình AI cục bộ, để dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn.",
+    "subtitle": "Klacks tự động lập tuyến đường và cảnh báo trước khi thời gian nghỉ 12 giờ theo luật định giữa hai ca làm việc bị vi phạm &mdash; cài đặt trên hệ thống của bạn và, nếu muốn, dùng mô hình AI cục bộ, để dữ liệu bệnh nhân nằm trên máy chủ riêng của bạn.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Giao diện dòng thời gian của Klacks cho việc lập tuyến đường chăm sóc tại nhà ở Việt Nam",
     "screenshotLabel": "Dòng thời gian"
@@ -25,7 +25,7 @@
       { "icon": "bedtime", "title": "Tự động giám sát thời gian nghỉ 12 giờ", "text": "Klacks cảnh báo trước khi một chuỗi ca làm việc có nguy cơ vi phạm thời gian nghỉ theo luật định của Điều 110 &mdash; nếu muốn, có thể bật chế độ chặn (block mode), giúp ngăn các vi phạm mới trong các luồng lập kế hoạch tự động (trình lập kế hoạch tự động, đề xuất, tìm người thay thế); trong lập kế hoạch thủ công, hệ thống vẫn chỉ đưa ra cảnh báo." },
       { "icon": "schedule", "title": "Thời gian di chuyển là giá trị lập lịch", "text": "Trong Klacks, bạn có thể thiết lập một giá trị cố định cho thời gian di chuyển giữa các lượt chăm sóc cho mỗi ca &mdash; đây là một tính năng lập lịch, không phải yêu cầu bắt buộc theo pháp luật Việt Nam." },
       { "icon": "verified", "title": "Trình độ chuyên môn được tự động xem xét", "text": "Klacks tính đến trình độ chuyên môn khi phân công và cảnh báo khi chứng chỉ đã hết hạn &mdash; giúp giảm việc kiểm tra thủ công." },
-      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu luôn ở trong nội bộ", "text": "Klacks chạy trên hạ tầng riêng của bạn. Với mô hình AI cục bộ, dữ liệu bệnh nhân không rời khỏi doanh nghiệp của bạn." },
+      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng riêng của bạn. Dữ liệu bệnh nhân nằm trên máy chủ của bạn; với mô hình AI cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp AI bên ngoài." },
       { "icon": "smart_toy", "title": "Klacksy hiểu câu nói của bạn", "text": "Chỉ cần nói “Điền các tuyến đường cho ngày mai”. Khi có người vắng mặt đột xuất, Klacksy lập tức đề xuất người thay thế đang sẵn sàng." }
     ]
   },

@@ -23,7 +23,7 @@
   "usp.subtitle": "Über Ihre Daten, über die KI dahinter und über Ihre Regeln. Drei Gründe, warum Klacks anders ist als jede Cloud-Lösung.",
   "usp.data.label": "Ihre Daten",
   "usp.data.title": "Bei Ihnen installiert &amp; Open Source",
-  "usp.data.text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; mit einem lokalen KI-Modell verlässt kein Datensatz das Haus. 100 % quelloffen, kein Vendor-Lock-in. Ihre Daten gehören Ihnen, heute und in zehn Jahren.",
+  "usp.data.text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter. 100 % quelloffen, kein Vendor-Lock-in. Ihre Daten gehören Ihnen, heute und in zehn Jahren.",
   "usp.ai.label": "Ihre KI",
   "usp.ai.titleHtml": "Klacksy &mdash; mit freier Modellwahl",
   "usp.ai.text": "Ein KI-Assistent, den Sie per Sprache bedienen. Sie wählen das LLM selbst &mdash; von OpenAI, Anthropic &amp; Co. bis zum lokalen Modell. Kein Zwang, kein Lock-in beim KI-Anbieter.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Regeln, Zeitzuschläge (wo für Ihr Land definiert) und Feiertage kommen passend für Ihr Land, Ihre Region, Ihre Gemeinde. Anpassen können Sie alles selbst &mdash; ohne Beratertage und ohne auf das nächste Release zu warten.",
 
   "aiSynergy.eyebrow": "Die Kombination, die kaum jemand bietet",
-  "aiSynergy.titleHtml": "KI <span class=\"text-tertiary-fixed\">und</span> volle Datenhoheit. Zugleich.",
-  "aiSynergy.textHtml": "Klacksy kann mit einem <strong class=\"text-white\">lokalen Sprachmodell</strong> laufen. Das heisst: ein Assistent, der Planungsläufe startet, Mitarbeitende anlegt und die App per Sprache bedient &mdash; ohne dass ein einziger Personen- oder Patientendatensatz Ihr Haus verlässt. Genau das, was Spitäler, Spitex und Sicherheitsdienste brauchen.",
+  "aiSynergy.titleHtml": "KI <span class=\"text-tertiary-fixed\">und</span> Daten auf Ihren Servern. Zugleich.",
+  "aiSynergy.textHtml": "Klacksy kann mit einem <strong class=\"text-white\">lokalen Sprachmodell</strong> laufen. Das heisst: ein Assistent, der Planungsläufe startet, Mitarbeitende anlegt und die App per Sprache bedient &mdash; ohne dass eine Anfrage an das Sprachmodell bei einem externen KI-Anbieter landet. Genau das, was Spitäler, Spitex und Sicherheitsdienste brauchen.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Ihr KI-Assistent für die Planung",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "Eine öffentliche Klacks-Instanz mit Beispieldaten &mdash; direkt im Browser, ohne Installation und ohne Registrierung.",
   "getStarted.playground.button": "Playground öffnen",
   "getStarted.download.title": "Auf Ihrem Server oder PC installieren",
-  "getStarted.download.text": "Das Installationspaket bringt alles mit: Docker-Images, Installer, Datenbank und HTTPS, unter Linux und Windows auch automatische Updates. Ein Befehl startet die Installation.",
+  "getStarted.download.text": "Das Installationspaket enthält den Installer und die Konfiguration für Datenbank und HTTPS; die Docker-Images lädt der Installer beim Start aus der Registry. Ein Befehl startet die Installation.",
   "getStarted.download.button": "Installationspaket herunterladen",
   "getStarted.source.title": "Quellcode auf GitHub",
   "getStarted.source.text": "Klacks ist Open Source unter der AGPL-3.0. Backend, Frontend und Docker-Images sind öffentlich &mdash; prüfen, forken, beitragen.",

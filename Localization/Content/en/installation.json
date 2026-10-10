@@ -1,6 +1,6 @@
 {
   "pageTitle": "Install Klacks: Guided Installer or Docker Compose with Your Country Package | Klacks",
-  "metaDescription": "Install Klacks on your own infrastructure: guided installer or Docker Compose stack, preconfigured with your country's public holidays, working-time rules and, where defined for your country, surcharges. No license fees, open source, no registration.",
+  "metaDescription": "Install Klacks yourself: guided installer or Docker Compose, preconfigured with public holidays and working-time rules. Open source, no license fees.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; No license fees &amp; open source",
@@ -19,7 +19,7 @@
     "text": "The guided path for your own server: an install script generates secrets and a self-signed certificate, pulls the latest released version and brings up the whole stack &mdash; on Linux or Windows.",
     "requirementsTitle": "Requirements",
     "requirements": [
-      "Docker Desktop (Windows/Mac) or Docker Engine with the Compose plugin (Linux)",
+      "Docker Desktop (Windows) or Docker Engine with the Compose plugin (Linux)",
       "Outbound access to ghcr.io and github.com (images and updates)",
       "Free ports 80 and 443 (configurable)"
     ],
@@ -65,7 +65,7 @@
     "title": "Good to know",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "The complete source code is public on GitHub under the AGPL-3.0 &mdash; no licence fees, no vendor lock-in." },
-      { "icon": "storage", "title": "Data stays in-house", "text": "Klacks runs on your infrastructure. Staff and scheduling data are stored on your server &mdash; there is no forced cloud. Only if you choose an external AI provider are requests sent to it; with a local model, everything stays in-house." },
+      { "icon": "storage", "title": "Data stored on your servers", "text": "Klacks runs on your infrastructure. Staff and scheduling data are stored on your server &mdash; there is no forced cloud. Only if you choose an external AI provider are requests sent to it; with a local model, no AI request goes to an external provider." },
       { "icon": "update", "title": "Updates", "text": "The installation pins the latest released version. An update service inside the stack applies newly released versions automatically." },
       { "icon": "lock", "title": "HTTPS from the start", "text": "The installer generates a self-signed certificate to get you started &mdash; you can switch to your own certificate at any time. Change the initial password right after the first login." }
     ]

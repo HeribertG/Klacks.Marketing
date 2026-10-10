@@ -23,7 +23,7 @@
   "usp.subtitle": "掌控您的資料、背後的 AI，以及您的規則。這是 Klacks 與所有雲端方案不同的三大理由。",
   "usp.data.label": "您的資料",
   "usp.data.title": "安裝在您自有場所 &amp; Open Source",
-  "usp.data.text": "Klacks 運行於您自有的基礎架構上 &mdash; 使用本地 AI 模型時，沒有任何一筆資料會離開機房。100% 開放原始碼，沒有廠商鎖定。您的資料永遠屬於您，無論是現在還是十年後。",
+  "usp.data.text": "Klacks 運行於您自有的基礎架構上 &mdash; 使用本地 AI 模型時，不會有 AI 請求送往外部 AI 供應商。100% 開放原始碼，沒有廠商鎖定。您的資料永遠屬於您，無論是現在還是十年後。",
   "usp.ai.label": "您的 AI",
   "usp.ai.titleHtml": "Klacksy &mdash; 自由選擇語言模型",
   "usp.ai.text": "一個可用語音操作的 AI 助理。您可自行選擇要使用的語言模型 &mdash; 從 OpenAI、Anthropic &amp; Co. 到地端模型都可以。沒有強制綁定，也沒有 AI 供應商鎖定。",
@@ -32,8 +32,8 @@
   "usp.rules.text": "規則、工時加成（所在國家有定義時）與國定假日皆已針對您所在的國家、地區與市鎮預先設定完成。您可以自行調整所有內容 &mdash; 無需顧問協助，也無需等待下一次版本更新。",
 
   "aiSynergy.eyebrow": "少有廠商能同時提供的組合",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">與</span>完整資料自主權，兩者兼備。",
-  "aiSynergy.textHtml": "Klacksy 可以搭配<strong class=\"text-white\">地端語言模型</strong>運行。這代表：一個能啟動排班規劃、新增員工資料，並以語音操作應用程式的助理 &mdash; 卻不會有任何一筆人事或病患資料離開您的機房。這正是醫院、居家照護與保全服務所需要的。",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">與</span>您伺服器上的資料，兩者兼備。",
+  "aiSynergy.textHtml": "Klacksy 可以搭配<strong class=\"text-white\">地端語言模型</strong>運行。這代表：一個能啟動排班規劃、新增員工資料，並以語音操作應用程式的助理 &mdash; 發送給語言模型的請求不會到達外部 AI 供應商。這正是醫院、居家照護與保全服務所需要的。",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "您排班作業的 AI 助理",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "內建範例資料的公開 Klacks 測試環境 &mdash; 直接在瀏覽器中使用，無需安裝，也無需註冊。",
   "getStarted.playground.button": "開啟 Playground",
   "getStarted.download.title": "安裝到您自己的伺服器或電腦",
-  "getStarted.download.text": "安裝套件包含所需的一切：Docker 映像檔、安裝程式、資料庫、HTTPS，在 Linux 和 Windows 上還支援自動更新。只要一行指令即可開始安裝。",
+  "getStarted.download.text": "安裝套件包含安裝程式，以及資料庫與 HTTPS 的設定；Docker 映像檔由安裝程式在啟動時從 registry 下載。只要一行指令即可開始安裝。",
   "getStarted.download.button": "下載安裝套件",
   "getStarted.source.title": "GitHub 上的原始碼",
   "getStarted.source.text": "Klacks 是採用 AGPL-3.0 授權的開源軟體。後端、前端與 Docker 映像檔全部公開 &mdash; 歡迎檢視、fork 與貢獻。",

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "專為居家照護 &amp; 到宅護理打造",
     "titleHtml": "把時間留給照護，<span class=\"text-secondary\">而不是路線規劃。</span>",
-    "subtitle": "Klacks 自動排定服務與路線 &mdash; 依正確資格、可設定的工時加成與您所在州的假日安排。地端部署；若使用地端 AI 模型，病患資料不會離開您的機房。",
+    "subtitle": "Klacks 自動排定服務與路線 &mdash; 依正確資格、可設定的工時加成與您所在州的假日安排。地端部署，病患資料存放在您自有的伺服器上；若使用地端 AI 模型，不會有 AI 請求送往外部 AI 供應商。",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks 時間軸畫面，用於居家照護的路線規劃",
     "screenshotLabel": "時間軸",
@@ -26,7 +26,7 @@
       { "icon": "route", "title": "路線自動最佳化", "text": "Klacks 會安排路線，讓路程縮短、時間窗確實遵守 &mdash; 適用開車、騎車或步行。" },
       { "icon": "verified", "title": "自動考量資格條件", "text": "每項服務只會指派給具備對應資格的人員 &mdash; 完全不需要人工檢查。" },
       { "icon": "event_available", "title": "您所在州的假日 &amp; 工時加成", "text": "假日已預先設定 &mdash; 細緻到州與市鎮層級。夜班工時加成、週末工時加成與假日工時加成由您自行設定為加計工時，一切皆可自由調整。" },
-      { "icon": "shield_lock", "title": "地端部署：資料在機房內", "text": "Klacks 運行於您自有的基礎架構上。病患資料存放在您的伺服器上 &mdash; 若使用地端 AI 模型，連 AI 方面也沒有資料離開您的機房。" },
+      { "icon": "shield_lock", "title": "地端部署：資料存放在您的伺服器上", "text": "Klacks 運行於您自有的基礎架構上。病患資料存放在您的伺服器上 &mdash; 若使用地端 AI 模型，連 AI 方面也沒有資料離開您的機房。" },
       { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「把明天的路線排滿」就好。若有人臨時請假，Klacksy 會立即建議可用的替補人選。" },
       { "icon": "event_busy", "title": "人力缺口迅速補上", "text": "若有人員無法出勤，Klacks 會立即顯示誰具備資格且有空 &mdash; 不必打亂整份排班表。" }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "實際案例",
     "title": "日內瓦的居家照護機構，雙語作業，含沃州服務",
-    "text": "法語介面、日內瓦與沃州的假日、居家照護工時加成 &mdash; 全部在 Klacks 中設定完成，無需另外開發。路線自動最佳化、資格自動檢查，Klacksy 也能協助處理臨時異動。病患資料存放在您的伺服器上，若使用地端 AI 模型，一切都留在機構內部。"
+    "text": "法語介面、日內瓦與沃州的假日、居家照護工時加成 &mdash; 全部在 Klacks 中設定完成，無需另外開發。路線自動最佳化、資格自動檢查，Klacksy 也能協助處理臨時異動。病患資料存放在您的伺服器上，若使用地端 AI 模型，不會有 AI 請求送往外部 AI 供應商。"
   },
   "showRoutePlanning": true,
   "cta": {

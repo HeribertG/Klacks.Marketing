@@ -1,17 +1,18 @@
 {
-  "pageTitle": "Klacks für Unternehmen in China | Planung im eigenen Haus mit Datenhaltung in China",
+  "pageTitle": "Klacks für Unternehmen in China | Personalplanung auf Ihrer eigenen Infrastruktur",
+  "metaDescription": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar und schreibt Ruhetags- und Feiertagszuschläge als Zeitgutschrift gut. Bei Ihnen installiert.",
   "hero": {
     "badgeIcon": "shield_lock",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung in China",
-    "titleHtml": "Personaleinsatzplanung, die <span class=\"text-secondary\">im Land bleibt.</span>",
-    "subtitle": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar, schreibt Ruhetags- und Feiertagszuschläge (200/300 %) als Zeitgutschrift gut und läuft bei Ihnen installiert &mdash; damit Planungs- und Personaldaten in China bleiben &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Auf Ihrer eigenen Infrastruktur",
+    "titleHtml": "Personaleinsatzplanung <span class=\"text-secondary\">auf Ihrer eigenen Infrastruktur.</span>",
+    "subtitle": "Klacks macht die 36-Stunden-Überstundengrenze laufend sichtbar, schreibt Ruhetags- und Feiertagszuschläge (200/300 %) als Zeitgutschrift gut und läuft auf Ihrer eigenen Infrastruktur &mdash; Planungs- und Personaldaten liegen in Ihrer Datenbank.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in China",
     "screenshotLabel": "Dienstplan"
   },
   "challenges": {
     "eyebrow": "Der Planungsalltag in China",
-    "title": "Art. 41, Art. 44 und die Frage der Datenhoheit",
+    "title": "Art. 41, Art. 44 und biometrische Daten",
     "items": [
       {
         "icon": "gavel",
@@ -26,7 +27,7 @@
       {
         "icon": "privacy_tip",
         "title": "Biometrische Daten &amp; PIPL",
-        "text": "Das Persönliche-Informationen-Schutzgesetz (PIPL) zählt Gesichts-, Fingerabdruck- und Stimmdaten zu sensiblen persönlichen Informationen. Gehen sensible Daten von über 10.000 Betroffenen ins Ausland, ist eine CAC-Sicherheitsprüfung (网信办, PIPL Art. 38) Pflicht."
+        "text": "Biometrische Daten sind nach PIPL Art. 28 sensible personenbezogene Daten. Wer sensible Daten von 10.000 oder mehr Personen pro Kalenderjahr ins Ausland übermittelt, braucht nach den Bestimmungen zur Förderung und Regelung des grenzüberschreitenden Datenverkehrs (2024, Art. 7) eine Sicherheitsbewertung; darunter genügen Standardvertrag oder Zertifizierung (Art. 8)."
       }
     ]
   },
@@ -57,7 +58,7 @@
   },
   "solutions": {
     "title": "Wie Klacks Unternehmen in China entlastet",
-    "subtitle": "Von der tagesaktuellen Überstunden-Grenze bis zur Datenhoheit vor Ort &mdash; alles greift ineinander.",
+    "subtitle": "Von der tagesaktuellen Überstunden-Grenze bis zur Installation auf Ihrer eigenen Infrastruktur &mdash; alles greift ineinander.",
     "items": [
       {
         "icon": "schedule",
@@ -71,13 +72,13 @@
       },
       {
         "icon": "fact_check",
-        "title": "Monats-Soll seit 1.1.2025 aktuell: 165,3h",
-        "text": "Das seit 1.1.2025 gültige MOHRSS-Monats-Soll von 165,3 Stunden (20,67 Tage × 8h) hinterlegen Sie als monatliche Sollstunden &mdash; Klacks rechnet dann damit statt mit dem veralteten Wert von 166,6 Stunden."
+        "title": "Durchschnittliche Monatsarbeitszeit seit 1.1.2025: 165,3h",
+        "text": "Die seit 1.1.2025 geltende durchschnittliche monatliche Arbeitszeit (月平均工作时间) von 165,3 Stunden (20,67 Tage × 8h, MOHRSS) hinterlegen Sie als monatliche Sollstunden &mdash; Klacks rechnet dann damit statt mit dem bisherigen Wert von 166,64 Stunden. Für die Entgeltberechnung gelten weiterhin 21,75 Tage bzw. 174 Stunden pro Monat."
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Personaldaten bleiben im Land",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur in China. Planungs- und Personaldaten bleiben im Land (mit einem lokalen KI-Modell auch bei der KI-Nutzung), und Klacks erhebt keine biometrischen Daten &mdash; das erleichtert die Einhaltung der Vorgaben zur grenzüberschreitenden Übermittlung nach PIPL Art. 38 (CAC-Prüfung)."
+        "title": "Bei Ihnen installiert: Personaldaten liegen in Ihrer Datenbank",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Planungs- und Personaldaten liegen in Ihrer Datenbank (mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter), und Klacks erhebt keine biometrischen Daten."
       },
       {
         "icon": "smart_toy",
@@ -99,18 +100,18 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Anforderungen an PIPL und Datenlokalisierung lässt sich das KI-Modell zudem lokal in China hosten.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Das KI-Modell lässt sich zudem lokal auf Ihrer eigenen Infrastruktur betreiben.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },
   "example": {
     "eyebrow": "Konkret",
     "title": "40-Stunden-Woche, Art. 41 und 165,3h, ein Blick",
-    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden schreibt Klacks nach Art. 44 mit dem hinterlegten Ruhetags- (200 %) bzw. Feiertagszuschlag (300 %) als Zeitgutschrift gut und macht die Monatsgrenze nach Art. 41 laufend sichtbar, gerechnet mit dem seit 1.1.2025 aktuellen Monats-Soll von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
+    "text": "Klacks legt der Wochenplanung die in China geltende 40-Stunden-Woche zugrunde &mdash; sie stammt aus der State-Council-Verordnung Nr. 174 (1995), nicht aus Art. 36 des Arbeitsgesetzes, der nur 8h/Tag und 44h/Woche im Schnitt nennt. Überstunden schreibt Klacks nach Art. 44 mit dem hinterlegten Ruhetags- (200 %) bzw. Feiertagszuschlag (300 %) als Zeitgutschrift gut und macht die Monatsgrenze nach Art. 41 laufend sichtbar, gerechnet mit der seit 1.1.2025 geltenden durchschnittlichen monatlichen Arbeitszeit von 165,3 Stunden &mdash; ohne Nachrechnen von Hand."
   },
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Unternehmen in China erleben",
-    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze laufend sichtbar macht, Ruhetags- und Feiertagszuschläge als Zeitgutschrift gutschreibt und Ihre Planungs- und Personaldaten im eigenen Haus in China hält &mdash; ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks die 36-Stunden-Grenze laufend sichtbar macht, Ruhetags- und Feiertagszuschläge als Zeitgutschrift gutschreibt &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

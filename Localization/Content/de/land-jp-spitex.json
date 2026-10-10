@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (訪問介護) in Japan",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und einem auf das japanische Nachtfenster (22 bis 5 Uhr) eingerichteten Nachtzuschlag. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; inklusive Wegezeit zwischen Klient:innen als Arbeitszeit und einem auf das japanische Nachtfenster (22 bis 5 Uhr) eingerichteten Nachtzuschlag. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Japan",
     "screenshotLabel": "Timeline"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben im Haus",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung."
+        "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

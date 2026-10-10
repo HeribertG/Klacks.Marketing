@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Til sygehuse &amp; hospitaler i Danmark",
     "titleHtml": "Vagtplaner, der <span class=\"text-secondary\">går op døgnet rundt.</span>",
-    "subtitle": "Klacks planlægger afdelinger og holdskifte i holddrift uden huller &mdash; inklusive undtagelses-hviletiden ved holdskifte og 48-timers-dokumentationen som 4-måneders-gennemsnit. Installeret hos jer, så patientdata ikke behøver forlade jeres hospital &mdash; efter ønske med en lokalt hostet AI-model.",
+    "subtitle": "Klacks planlægger afdelinger og holdskifte i holddrift uden huller &mdash; inklusive undtagelses-hviletiden ved holdskifte og 48-timers-dokumentationen som 4-måneders-gennemsnit. Installeret hos jer, så patientdata ligger på jeres egne servere &mdash; efter ønske med en lokalt hostet AI-model.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks vagtplan-gitter til danske hospitaler",
     "screenshotLabel": "Vagtplan"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installeret hos dig: data bliver i huset",
-        "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata forlader ikke klinikken &mdash; og med en lokalt hostet AI-model heller ikke til AI'en."
+        "title": "Installeret hos dig: data ligger på dine servere",
+        "text": "Klacks kører på jeres infrastruktur. Medarbejder- og patientdata ligger på jeres servere &mdash; med en lokalt hostet AI-model sendes ingen AI-forespørgsel til en ekstern AI-udbyder."
       },
       {
         "icon": "smart_toy",

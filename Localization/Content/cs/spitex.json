@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pro domácí péči &amp; ambulantní ošetřovatelství",
     "titleHtml": "Více času na péči, <span class=\"text-secondary\">méně na plánování tras.</span>",
-    "subtitle": "Klacks automaticky plánuje nasazení a trasy &mdash; se správnými kvalifikacemi, konfigurovatelnými příplatky a svátky vašeho kantonu. Nainstalovaný u vás; s lokálním modelem AI data pacientů vaše prostory neopustí.",
+    "subtitle": "Klacks automaticky plánuje nasazení a trasy &mdash; se správnými kvalifikacemi, konfigurovatelnými příplatky a svátky vašeho kantonu. Nainstalovaný u vás, data pacientů na vašich vlastních serverech; s lokálním modelem AI neodchází žádný požadavek AI k externímu poskytovateli AI.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro plánování tras v domácí péči",
     "screenshotLabel": "Časová osa",
@@ -26,7 +26,7 @@
       { "icon": "route", "title": "Automaticky optimalizované trasy", "text": "Klacks navrhne trasy nasazení tak, aby cesty byly krátké a časová okna dodržená &mdash; pro auto, kolo nebo chůzi." },
       { "icon": "verified", "title": "Kvalifikace zohledněny automaticky", "text": "Každé nasazení je přiděleno pouze osobám s odpovídající kvalifikací &mdash; zcela bez ručního ověřování." },
       { "icon": "event_available", "title": "Svátky vašeho kantonu &amp; příplatky", "text": "Svátky jsou přednastavené &mdash; až na úroveň kantonu a obce. Noční, víkendové a sváteční příplatky si sami určíte jako časové kredity, vše volně upravitelné." },
-      { "icon": "shield_lock", "title": "Nainstalovaný u vás: data u vás", "text": "Klacks běží na vaší vlastní infrastruktuře. Data pacientů jsou uložena na vašich serverech &mdash; s lokálním modelem AI nic neopustí vaše prostory ani u AI." },
+      { "icon": "shield_lock", "title": "Nainstalovaný u vás: data na vašich serverech", "text": "Klacks běží na vaší vlastní infrastruktuře. Data pacientů jsou uložena na vašich serverech &mdash; s lokálním modelem AI nic neopustí vaše prostory ani u AI." },
       { "icon": "smart_toy", "title": "Klacksy rozumí vaší větě", "text": "„Naplň trasy na zítra“ stačí. V případě nemoci Klacksy okamžitě navrhne dostupnou náhradu." },
       { "icon": "event_busy", "title": "Výpadky rychle vyřešené", "text": "Když někdo vypadne, Klacks okamžitě ukáže, kdo je kvalifikovaný a dostupný &mdash; aniž by bylo nutné převracet celý plán." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Konkrétně",
     "title": "Domácí péče v Ženevě, dvojjazyčně, s nasazeními v kantonu Vaud",
-    "text": "Francouzské rozhraní, ženevské a vaudské svátky, příplatky za domácí péči &mdash; nakonfigurované v Klacks, nikoli doprogramované. Trasy jsou automaticky optimalizované, kvalifikace ověřené a Klacksy pomáhá s krátkodobými změnami. Data pacientů jsou přitom uložena na vašich serverech, s lokálním modelem AI zůstává vše u vás."
+    "text": "Francouzské rozhraní, ženevské a vaudské svátky, příplatky za domácí péči &mdash; nakonfigurované v Klacks, nikoli doprogramované. Trasy jsou automaticky optimalizované, kvalifikace ověřené a Klacksy pomáhá s krátkodobými změnami. Data pacientů jsou přitom uložena na vašich serverech; s lokálním modelem AI neodchází žádný požadavek AI k externímu poskytovateli AI."
   },
   "showRoutePlanning": true,
   "cta": {

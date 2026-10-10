@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für Unternehmen in Vietnam | 3-Stufen-Überstunden-Cap & Nachtzuschlag",
+  "metaDescription": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag, Monat, Jahr) und kumuliert Nacht- und Überstundenzuschläge auf Wunsch additiv. Bei Ihnen installiert.",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhoheit in Vietnam",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Daten auf Ihren Servern",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag/Monat/Jahr) und kumuliert die Nacht- und Überstundenzuschläge des Bộ luật Lao động 2019 auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; und läuft bei Ihnen installiert, damit Ihre Personal- und Planungsdaten in Ihrer eigenen Infrastruktur bleiben.",
+    "subtitle": "Klacks überwacht den 3-Stufen-Überstunden-Cap (Tag/Monat/Jahr) und kumuliert die Nacht- und Überstundenzuschläge des Bộ luật Lao động 2019 auf Wunsch additiv statt nur den höchsten Satz anzusetzen &mdash; und läuft bei Ihnen installiert, damit Ihre Personal- und Planungsdaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Vietnam",
     "screenshotLabel": "Dienstplan"
@@ -76,13 +77,13 @@
       },
       {
         "icon": "fingerprint",
-        "title": "Bei Ihnen installiert, ohne Cross-Border-Transfer",
-        "text": "Klacks erfasst keine biometrischen Daten &mdash; die Personal- und Planungsdaten, mit denen Klacks arbeitet, bleiben durch die Installation bei Ihnen im eigenen Firmennetz; mit einem lokal gehosteten KI-Modell findet kein Auslandtransfer statt, ein Transfer-Impact-Assessment-Dossier nach Decree 13/2023 ist dafür nicht nötig."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks erfasst keine biometrischen Daten &mdash; die Personal- und Planungsdaten, mit denen Klacks arbeitet, liegen durch die Installation bei Ihnen auf Ihren eigenen Servern; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter, ein Transfer-Impact-Assessment-Dossier nach Decree 13/2023 ist für die KI-Nutzung dann nicht nötig."
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, bei lokal gehostetem Modell ganz ohne Auslandtransfer von Personaldaten."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, sodass keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter geht."
       },
       {
         "icon": "smart_toy",
@@ -111,6 +112,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Klacks in Ihrem Betrieb erleben",
-    "text": "Testen Sie im Playground, wie Klacks den 3-Stufen-Überstunden-Cap überwacht und Nacht- und Überstundenzuschläge additiv kumuliert &mdash; bei Ihnen installiert für volle Datenhoheit, ohne Lizenzgebühren und ohne Registrierung."
+    "text": "Testen Sie im Playground, wie Klacks den 3-Stufen-Überstunden-Cap überwacht und Nacht- und Überstundenzuschläge additiv kumuliert &mdash; ohne Lizenzgebühren und ohne Registrierung."
   }
 }

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für häusliche Pflege in Vietnam",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Touren automatisch und warnt, bevor die gesetzliche 12-Stunden-Ruhezeit zwischen zwei Schichten unterschritten würde &mdash; bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell, damit Patientendaten Ihr Haus nicht verlassen.",
+    "subtitle": "Klacks plant Touren automatisch und warnt, bevor die gesetzliche 12-Stunden-Ruhezeit zwischen zwei Schichten unterschritten würde &mdash; bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell, damit die Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der häuslichen Pflege in Vietnam",
     "screenshotLabel": "Timeline"
@@ -25,7 +25,7 @@
       { "icon": "bedtime", "title": "12-Stunden-Ruhezeit automatisch überwacht", "text": "Klacks warnt, bevor eine Schichtfolge die gesetzliche Ruhezeit nach Art. 110 unterschreiten würde &mdash; auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstösse in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
       { "icon": "schedule", "title": "Wegzeit als Planungswert hinterlegt", "text": "Für Wegzeiten zwischen Einsätzen lässt sich in Klacks pro Schicht ein fester Wert hinterlegen &mdash; als Planungsfunktion, nicht als vietnamesische Gesetzespflicht." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung und warnt bei abgelaufenen Nachweisen &mdash; das erspart manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Mit lokalem KI-Modell verlassen Patientendaten Ihr Haus nicht." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

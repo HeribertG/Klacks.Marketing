@@ -1,10 +1,11 @@
 {
-  "pageTitle": "Klacks für Unternehmen in Portugal | Open Source Personaleinsatzplanung mit Registo de Ponto & Datenhoheit",
+  "pageTitle": "Klacks für Unternehmen in Portugal | Open Source Personaleinsatzplanung mit Registo de Ponto & Daten auf Ihren Servern",
+  "metaDescription": "Klacks dokumentiert Arbeitszeiten lückenlos als Grundlage für das registo de ponto und überwacht das Arbeitszeitkonto. Bei Ihnen installiert, Open Source.",
   "hero": {
     "badgeIcon": "shield_lock",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Portugiesischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks dokumentiert Arbeitszeiten lückenlos als Grundlage für das verpflichtende registo de ponto, überwacht das Arbeitszeitkonto (banco de horas grupal) und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, auf Wunsch mit lokalem KI-Modell. So können Personaldaten in Ihrer eigenen Infrastruktur bleiben, ganz im Sinne der Verhältnismässigkeitsanforderungen der CNPD.",
+    "subtitle": "Klacks dokumentiert Arbeitszeiten lückenlos als Grundlage für das verpflichtende registo de ponto, überwacht das Arbeitszeitkonto (banco de horas grupal) und lässt sich per KI-Assistent steuern &mdash; bei Ihnen installiert, Open Source, auf Wunsch mit lokalem KI-Modell. So können Personaldaten auf Ihren eigenen Servern liegen; die Bewertung nach den Verhältnismässigkeitsanforderungen der CNPD bleibt bei Ihnen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Portugal",
     "screenshotLabel": "Dienstplan"
@@ -76,8 +77,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Datenhoheit für sensible Daten",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Klacks kommt dabei ganz ohne biometrische Zeiterfassung aus &mdash; die von der CNPD kritisch geprüfte Datenkategorie wird nicht erhoben, und mit einem lokal gehosteten Modell bleiben Arbeitszeitdaten ohne Auslandtransfer im Haus."
+        "title": "Bei Ihnen installiert: sensible Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet. Klacks kommt dabei ganz ohne biometrische Zeiterfassung aus &mdash; die von der CNPD kritisch geprüfte Datenkategorie wird nicht erhoben, und mit einem lokal gehosteten Modell geht keine KI-Anfrage mit Arbeitszeitdaten an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

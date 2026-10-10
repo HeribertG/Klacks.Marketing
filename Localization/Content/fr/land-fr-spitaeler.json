@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Pour les hôpitaux en France (Hôpitaux)",
     "titleHtml": "Des plannings de service qui <span class=\"text-secondary\">tiennent la route 24 heures sur 24.</span>",
-    "subtitle": "Klacks planifie les services et les unités sans faille &mdash; avec des durées maximales de travail surveillées, les qualifications requises et une souveraineté totale des données. Installé chez vous, pour que les données des patients ne quittent jamais vos murs.",
+    "subtitle": "Klacks planifie les services et les unités sans faille &mdash; avec des durées maximales de travail surveillées, les qualifications requises et vos données sur vos serveurs. Installé chez vous, pour que les données des patients se trouvent sur vos propres serveurs.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grille de planning Klacks pour les hôpitaux en France",
     "screenshotLabel": "Planning"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installé chez vous : les données restent dans l'établissement",
-        "text": "Klacks fonctionne sur votre infrastructure. Les données du personnel et des patients restent à l'hôpital &mdash; avec un modèle d'IA hébergé localement, également côté IA, ce qui facilite le respect des exigences de la CNIL."
+        "title": "Installé chez vous : les données se trouvent sur vos serveurs",
+        "text": "Klacks fonctionne sur votre infrastructure. Les données du personnel et des patients se trouvent sur vos serveurs &mdash; avec un modèle d'IA hébergé localement, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe ; l'évaluation juridique au regard des exigences de la CNIL vous appartient."
       },
       {
         "icon": "smart_toy",

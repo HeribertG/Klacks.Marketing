@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Til hjemmepleje &amp; ambulant pleje",
     "titleHtml": "Mere tid til pleje, <span class=\"text-secondary\">mindre til ruteplanlægning.</span>",
-    "subtitle": "Klacks planlægger besøg og ruter automatisk &mdash; med de rette kvalifikationer, konfigurerbare tillæg og din kantons helligdage. Installeret hos dig; med en lokal AI-model forlader patientdata ikke dit hus.",
+    "subtitle": "Klacks planlægger besøg og ruter automatisk &mdash; med de rette kvalifikationer, konfigurerbare tillæg og din kantons helligdage. Installeret hos dig, patientdata på dine egne servere; med en lokal AI-model sendes ingen AI-forespørgsel til en ekstern AI-udbyder.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevisning for ruteplanlægning i hjemmeplejen",
     "screenshotLabel": "Tidslinje",
@@ -26,7 +26,7 @@
       { "icon": "route", "title": "Ruter optimeret automatisk", "text": "Klacks lægger ruterne, så vejene er korte og tidsvinduerne overholdes &mdash; til bil, cykel eller til fods." },
       { "icon": "verified", "title": "Kvalifikationer taget automatisk i betragtning", "text": "Hvert besøg tildeles kun personale med den rette kvalifikation &mdash; helt uden manuel kontrol." },
       { "icon": "event_available", "title": "Helligdage i din kanton &amp; tillæg", "text": "Helligdage er forudkonfigureret &mdash; helt ned på kanton- og kommuneniveau. Nat-, weekend- og helligdagstillæg fastlægger du selv som tidsgodtskrivninger, alt frit tilpasseligt." },
-      { "icon": "shield_lock", "title": "Installeret hos dig: data i huset", "text": "Klacks kører på din egen infrastruktur. Patientdata ligger på dine servere &mdash; med en lokal AI-model forlader intet dit hus, heller ikke til AI'en." },
+      { "icon": "shield_lock", "title": "Installeret hos dig: data på dine servere", "text": "Klacks kører på din egen infrastruktur. Patientdata ligger på dine servere &mdash; med en lokal AI-model forlader intet dit hus, heller ikke til AI'en." },
       { "icon": "smart_toy", "title": "Klacksy forstår din sætning", "text": "»Fyld ruterne for i morgen« er nok. Ved en sygemelding foreslår Klacksy straks en tilgængelig afløser." },
       { "icon": "event_busy", "title": "Fravær hurtigt dækket", "text": "Bliver nogen syg, viser Klacks straks, hvem der er kvalificeret og tilgængelig &mdash; uden at vælte hele planen." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Hjemmeplejen i Genève, tosproget, med besøg i Vaud",
-    "text": "Fransk brugerflade, helligdage fra Genève og Vaud, plejetillæg &mdash; konfigureret i Klacks, ikke programmeret. Ruter optimeres automatisk, kvalifikationer kontrolleres, og Klacksy hjælper ved kortsigtede ændringer. Patientdata ligger samtidig på dine servere, og med en lokal AI-model bliver alt i huset."
+    "text": "Fransk brugerflade, helligdage fra Genève og Vaud, plejetillæg &mdash; konfigureret i Klacks, ikke programmeret. Ruter optimeres automatisk, kvalifikationer kontrolleres, og Klacksy hjælper ved kortsigtede ændringer. Patientdata ligger samtidig på dine servere; med en lokal AI-model sendes ingen AI-forespørgsel til en ekstern AI-udbyder."
   },
   "showRoutePlanning": true,
   "cta": {

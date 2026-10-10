@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege (요양보호사) in Südkorea",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Verwaltung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren für die häusliche Pflege übersichtlich und schreibt den Zuschlag für Arbeit am wöchentlichen Ruhetag als Zeitgutschrift gut &mdash; bei Ihnen installiert, damit Pflegedaten in Ihrem Haus bleiben, mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "subtitle": "Klacks plant Einsätze und Touren für die häusliche Pflege übersichtlich und schreibt den Zuschlag für Arbeit am wöchentlichen Ruhetag als Zeitgutschrift gut &mdash; bei Ihnen installiert, damit Pflegedaten auf Ihren eigenen Servern liegen; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in Südkorea",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "fact_check", "title": "Geplante Einsätze lückenlos dokumentiert", "text": "Klacks hält für jeden Hausbesuch fest, wer wann wo eingeplant ist &mdash; die verlässliche Soll-Basis für Ihren Abgleich mit den amtlichen RFID-Meldedaten." },
       { "icon": "event_available", "title": "Ruhetag &amp; Zuschlag als Zeitgutschrift", "text": "Klacks prüft den wöchentlichen bezahlten Ruhetag (주휴일) und schreibt den hinterlegten Zuschlag als Zeitgutschrift gut, sobald an diesem Tag gearbeitet wird &mdash; die gesetzliche Staffel (50% bis zur 8. Stunde, 100% ab der 9.) bildet Klacks nicht ab; den Geldbetrag rechnet Ihr Lohnsystem." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Pflege- und Personendaten bleiben in Ihrem Haus &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Pflege- und Personendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

@@ -107,6 +107,9 @@ string[] seoEndpointMethods = [HttpMethods.Get, HttpMethods.Head];
 app.MapMethods("/sitemap.xml", seoEndpointMethods, (HttpContext context, IPageContentProvider contentProvider) =>
     SeoText(context, XmlContentType, () => SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn)));
 
+app.MapMethods(DocsSitemapIndexGenerator.IndexPath, seoEndpointMethods, (HttpContext context) =>
+    SeoText(context, XmlContentType, () => DocsSitemapIndexGenerator.Build(baseUrl)));
+
 // robots.txt and the llms.txt companions carry a ".txt" extension, so the
 // known-page guard in the pipeline above lets them straight through to routing
 // (same mechanism as /sitemap.xml).

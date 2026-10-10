@@ -1,6 +1,6 @@
 {
   "pageTitle": "Installer Klacks: veiledet installasjonsprogram eller Docker Compose med landspakke | Klacks",
-  "metaDescription": "Installer Klacks på din egen infrastruktur: veiledet installasjonsprogram eller Docker Compose-stack, forhåndskonfigurert med helligdager, arbeidstidsregler og &ndash; der de er definert for landet ditt &ndash; tillegg. Ingen lisensavgifter, åpen kildekode, uten registrering.",
+  "metaDescription": "Installer Klacks selv med veiledet installasjonsprogram eller Docker Compose, forhåndskonfigurert med helligdager. Åpen kildekode, ingen lisensavgift.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installasjon &middot; Ingen lisensavgifter &amp; åpen kildekode",
@@ -19,7 +19,7 @@
     "text": "Den veiledede veien for din egen server: et installasjonsskript genererer secrets og et selvsignert sertifikat, henter den sist utgitte versjonen og starter hele stacken &mdash; på Linux eller Windows.",
     "requirementsTitle": "Krav",
     "requirements": [
-      "Docker Desktop (Windows/Mac) eller Docker Engine med Compose-plugin (Linux)",
+      "Docker Desktop (Windows) eller Docker Engine med Compose-plugin (Linux)",
       "Utgående tilgang til ghcr.io og github.com (images og oppdateringer)",
       "Ledige porter 80 og 443 (konfigurerbart)"
     ],
@@ -65,7 +65,7 @@
     "title": "Godt å vite",
     "items": [
       { "icon": "code", "title": "Åpen kildekode (AGPL-3.0)", "text": "Hele kildekoden er offentlig på GitHub under AGPL-3.0 &mdash; ingen lisenskostnader, ingen leverandørinnlåsing." },
-      { "icon": "storage", "title": "Dataene blir i huset", "text": "Klacks kjører på din infrastruktur. Personal- og vaktplandata ligger på serveren din &mdash; det finnes ingen tvungen skyløsning. Bare hvis du velger en ekstern KI-leverandør, sendes forespørsler dit; med en lokal modell blir alt i huset." },
+      { "icon": "storage", "title": "Dataene ligger på serverne dine", "text": "Klacks kjører på din infrastruktur. Personal- og vaktplandata ligger på serveren din &mdash; det finnes ingen tvungen skyløsning. Bare hvis du velger en ekstern KI-leverandør, sendes forespørsler dit; med en lokal modell sendes ingen KI-forespørsel til en ekstern leverandør." },
       { "icon": "update", "title": "Oppdateringer", "text": "Installasjonen låser den sist utgitte versjonen. En oppdateringstjeneste i stacken tar automatisk i bruk nye utgitte versjoner." },
       { "icon": "lock", "title": "HTTPS fra start", "text": "Installasjonsprogrammet genererer et selvsignert sertifikat for å komme i gang &mdash; du kan når som helst bytte til ditt eget sertifikat. Bytt det opprinnelige passordet rett etter første innlogging." }
     ]

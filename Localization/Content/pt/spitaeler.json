@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Para hospitais &amp; clínicas",
     "titleHtml": "Horários que <span class=\"text-secondary\">funcionam a toda a hora.</span>",
-    "subtitle": "O Klacks planeia serviços e turnos sem lacunas &mdash; com períodos de descanso verificados, qualificações adequadas e total soberania dos dados. Instalado nas suas instalações; com um modelo de IA local, os dados dos utentes não saem das suas instalações.",
+    "subtitle": "O Klacks planeia serviços e turnos sem lacunas &mdash; com períodos de descanso verificados, qualificações adequadas e os dados nos seus servidores. Instalado nas suas instalações, com os dados dos utentes nos seus próprios servidores; com um modelo de IA local, nenhum pedido de IA é enviado a um fornecedor de IA externo.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grelha de horários do Klacks para hospitais",
     "screenshotLabel": "Horário",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Cobertura 24/7 sem lacunas", "text": "Turnos de dia, tarde e noite em todos os serviços &mdash; o Klacks assinala de imediato cada lacuna e preenche-a automaticamente, se pretendido." },
       { "icon": "gavel", "title": "Períodos de descanso verificados automaticamente", "text": "A lei do trabalho, os períodos de descanso e os limites máximos são monitorizados em tempo real &mdash; as infrações ficam imediatamente visíveis." },
       { "icon": "verified", "title": "Qualificações &amp; serviços", "text": "Cada turno só é atribuído a pessoal com a qualificação adequada &mdash; por serviço, departamento e função." },
-      { "icon": "shield_lock", "title": "Instalado nas suas instalações: dados nas instalações", "text": "O Klacks corre na sua infraestrutura. Os dados de pessoal e de utentes ficam nos seus servidores &mdash; com um modelo de IA local, nada sai do hospital nem através da IA." },
+      { "icon": "shield_lock", "title": "Instalado nas suas instalações: dados nos seus servidores", "text": "O Klacks corre na sua infraestrutura. Os dados de pessoal e de utentes ficam nos seus servidores &mdash; com um modelo de IA local, nada sai do hospital nem através da IA." },
       { "icon": "smart_toy", "title": "O Klacksy compreende a sua frase", "text": "«Preenche os turnos noturnos de Medicina Interna para a próxima semana» basta &mdash; o Klacksy inicia o planeamento, o Klacks tem em conta qualificação e descanso." },
       { "icon": "groups", "title": "Bolsa de substitutos &amp; faltas", "text": "Se alguém falta, o Klacks mostra de imediato substitutos qualificados e disponíveis &mdash; sem ter de refazer todo o plano." }
     ]

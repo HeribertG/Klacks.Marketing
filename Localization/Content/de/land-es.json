@@ -4,7 +4,7 @@
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Für spanisches Arbeitsrecht",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, prüft Ruhezeiten gegen die Vorgaben des Estatuto de los Trabajadores und dokumentiert Beginn und Ende jeder Schicht &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo Ihre Datenschutzverantwortlichen sie haben wollen: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, prüft Ruhezeiten gegen die Vorgaben des Estatuto de los Trabajadores und dokumentiert Beginn und Ende jeder Schicht &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort liegen, wo Ihre Datenschutzverantwortlichen sie haben wollen: auf Ihren eigenen Servern.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Spanien",
     "screenshotLabel": "Dienstplan"
@@ -81,8 +81,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell ganz ohne Auslandtransfer von Personaldaten."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; mit einem lokal gehosteten Modell geht keine KI-Anfrage mit Personaldaten an einen externen KI-Anbieter."
       },
       {
         "icon": "smart_toy",

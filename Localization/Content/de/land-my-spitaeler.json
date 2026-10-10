@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Malaysia",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten und zeigt Lücken sofort &mdash; mit erfasster Übergabezeit und den gestuften Überstundenzuschlägen des Employment Act 1955 als Zeitgutschriften. Bei Ihnen installiert &mdash; mit lokalem KI-Modell verlassen Patientendaten Ihr Haus nie.",
+    "subtitle": "Klacks plant Stationen und Schichten und zeigt Lücken sofort &mdash; mit erfasster Übergabezeit und den gestuften Überstundenzuschlägen des Employment Act 1955 als Zeitgutschriften. Bei Ihnen installiert, Patientendaten liegen auf Ihren eigenen Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Malaysia",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "payments", "title": "RM-4.000-Schwelle liegt bei der Lohnbuchhaltung", "text": "Die RM-4.000-Lohnschwelle der Zuschlagsbestimmungen nach Section 60A(3) u.a. prüft Klacks nicht, da Klacks keine Löhne kennt &mdash; es stellt Stunden und Zeitzuschläge bereit, und die Lohnbuchhaltung wendet die Schwelle an." },
       { "icon": "swap_horiz", "title": "Übergabezeit als Arbeitszeit einplanbar", "text": "Die Zeit der Schichtübergabe (handover) lässt sich in Klacks als Arbeitszeit einplanen und zählt dann in der 45-Stunden-Woche und bei den Überstunden mit." },
       { "icon": "gavel", "title": "Zuschläge 1,5x/2,0x/3,0x als Zeitgutschrift", "text": "Normale Überstunden, Ruhetag- und Feiertagsarbeit schreibt Klacks mit dem jeweils hinterlegten Satz als Zeitgutschrift gut &mdash; pro Station und Rotation." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Mit lokalem KI-Modell verlassen Personal- und Patientendaten die Klinik nicht." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Station für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Höchstarbeitszeit." }
     ]
   },

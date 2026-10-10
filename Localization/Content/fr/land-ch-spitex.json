@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pour l'aide à domicile &amp; les soins ambulatoires en Suisse",
     "titleHtml": "Plus de temps pour les soins, <span class=\"text-secondary\">moins pour la planification des tournées.</span>",
-    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et des dimanches libres surveillés, bloqués strictement sur demande en planification automatique. Installé chez vous, pour que les données patients restent dans vos murs &mdash; sur demande avec un modèle d'IA local.",
+    "subtitle": "Klacks planifie automatiquement les interventions et les tournées &mdash; y compris le temps de trajet entre client·e·s comme temps de travail et des dimanches libres surveillés, bloqués strictement sur demande en planification automatique. Installé chez vous, pour que les données patients se trouvent sur vos propres serveurs &mdash; sur demande avec un modèle d'IA local.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour la planification des tournées de l'aide à domicile en Suisse",
     "screenshotLabel": "Chronologie"
@@ -56,8 +56,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Installé chez vous : les données restent chez vous",
-        "text": "Klacks tourne sur votre propre infrastructure. Les données patients ne quittent pas vos murs &mdash; sur demande avec un modèle d'IA local, pas même pour l'IA."
+        "title": "Installé chez vous : les données se trouvent sur vos serveurs",
+        "text": "Klacks tourne sur votre propre infrastructure. Les données patients se trouvent sur vos serveurs &mdash; avec un modèle d'IA local, aucune requête d'IA n'est envoyée à un fournisseur d'IA externe."
       },
       {
         "icon": "smart_toy",

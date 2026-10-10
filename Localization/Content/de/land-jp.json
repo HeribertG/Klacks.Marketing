@@ -2,9 +2,9 @@
   "pageTitle": "Klacks für Japan | 36協定-Obergrenzen, Überstundenzuschlag & bei Ihnen installiert",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung in Japan",
+    "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Datenhaltung auf Ihren Servern",
     "titleHtml": "Personaleinsatzplanung, bei der <span class=\"text-secondary\">Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch und behält die 36協定-Obergrenzen sowie den 50%-Zuschlagssprung ab 60 Überstunden im Blick &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So bleiben Personaldaten im eigenen Haus in Japan &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung, also ohne Auslandtransfer im Sinne der APPI.",
+    "subtitle": "Klacks plant Dienste automatisch und behält die 36協定-Obergrenzen sowie den 50%-Zuschlagssprung ab 60 Überstunden im Blick &mdash; open source, bei Ihnen installiert und mit dem KI-Modell Ihrer Wahl. So liegen Personaldaten auf Ihren eigenen Servern in Japan &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter, also ohne Auslandtransfer im Sinne der APPI bei der KI-Nutzung.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Übersicht für Unternehmen in Japan",
     "screenshotLabel": "Dienstplan"
@@ -86,8 +86,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: Daten bleiben in Japan",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, ganz ohne die Opt-in-Hürde für Auslandtransfer nach APPI Art. 28."
+        "title": "Bei Ihnen installiert: Datenhaltung auf Ihren Servern in Japan",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur, das KI-Modell wählen Sie selbst &mdash; auch lokal gehostet, sodass für die KI-Nutzung keine Opt-in-Hürde für Auslandtransfer nach APPI Art. 28 entsteht."
       },
       {
         "icon": "code",
@@ -104,7 +104,7 @@
   "klacksy": {
     "eyebrow": "KI-Assistent",
     "title": "Klacksy: Der integrierte Assistent für Ihr Team",
-    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, ganz ohne Auslandtransfer nach APPI.",
+    "text": "Klacksy ist kein aufgesetzter Marketing-Chatbot, sondern direkt in die Klacks-Oberfläche eingebettet. Mitarbeitende und Planende fragen per Chat Dienstzeiten ab oder klären Verfügbarkeiten. Ein hinterlegtes Skills- und Regelsystem sorgt dafür, dass Klacksy nachvollziehbare Vorschläge macht &mdash; keine Blackbox-Entscheidung. Für Betriebe mit hohen Datenschutzanforderungen lässt sich das KI-Modell zudem lokal hosten, sodass keine KI-Anfrage an einen externen KI-Anbieter geht.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Klacksy Chat-Assistent in der Klacks-Oberfläche"
   },

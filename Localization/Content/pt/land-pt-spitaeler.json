@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Para hospitais &amp; clínicas em Portugal",
     "titleHtml": "Escalas de serviço que <span class=\"text-secondary\">funcionam tanto no SNS como em entidades privadas.</span>",
-    "subtitle": "O Klacks planeia serviços e turnos de prevenção sem lacunas &mdash; com a semana de 35 horas do SNS público e a semana de 40 horas das entidades privadas automaticamente separadas como base de cálculo. Instalado nas suas instalações, para que os dados dos utentes nunca saiam das suas instalações.",
+    "subtitle": "O Klacks planeia serviços e turnos de prevenção sem lacunas &mdash; com a semana de 35 horas do SNS público e a semana de 40 horas das entidades privadas automaticamente separadas como base de cálculo. Instalado nas suas instalações, para que os dados dos utentes estejam nos seus próprios servidores.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grelha de escalas de serviço do Klacks para hospitais em Portugal",
     "screenshotLabel": "Escala de serviço"
@@ -26,7 +26,7 @@
       { "icon": "compare_arrows", "title": "Bases de 35h e 40h separadas automaticamente", "text": "O Klacks reflete em paralelo a semana de 35 horas do SNS e a semana de 40 horas das entidades privadas &mdash; consoante a entidade responsável pelo serviço ou pela clínica." },
       { "icon": "bedtime", "title": "Descanso de 11 horas após a prevenção", "text": "O Klacks verifica, após cada turno nas urgências ou de prevenção, o período de descanso mínimo de 11 horas configurado, antes do início da intervenção seguinte." },
       { "icon": "fingerprint", "title": "Registo de ponto: base de dados sem lacunas", "text": "O Klacks regista o tempo de trabalho de forma completa, mantém-no disponível durante 5 anos e torna-o imediatamente consultável no local de trabalho." },
-      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados ficam nas suas instalações", "text": "O Klacks corre na sua infraestrutura. Os dados de pessoal e de utentes permanecem na clínica &mdash; com um modelo de IA alojado localmente, também no que toca à IA." },
+      { "icon": "shield_lock", "title": "Instalado nas suas instalações: os dados estão nos seus servidores", "text": "O Klacks corre na sua infraestrutura. Os dados de pessoal e de utentes estão nos seus servidores &mdash; com um modelo de IA alojado localmente, nenhum pedido de IA é enviado a um fornecedor de IA externo." },
       { "icon": "smart_toy", "title": "O Klacksy compreende a sua frase", "text": "Basta dizer «Preenche os turnos noturnos de Medicina Interna para a próxima semana» &mdash; o Klacksy inicia o planeamento e o Klacks tem em conta a entidade responsável, a qualificação e o descanso." }
     ]
   },

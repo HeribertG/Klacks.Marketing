@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Thailand",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtübergaben, zeigt Lücken sofort und überwacht Überstunden live gegen das gesetzliche Wochenlimit &mdash; bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben (bei der KI-Nutzung auf Wunsch mit lokalem Modell).",
+    "subtitle": "Klacks plant Stationen und Schichtübergaben, zeigt Lücken sofort und überwacht Überstunden live gegen das gesetzliche Wochenlimit &mdash; bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen (bei der KI-Nutzung auf Wunsch mit lokalem Modell).",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Thailand",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "swap_horiz", "title": "Schichtübergabe als Arbeitszeit erfasst", "text": "Klacks erfasst die tägliche Schichtübergabe als Arbeitszeit, sodass sie in die Stunden und das Wochenlimit einfliesst; Zeitzuschläge (Section 61: 1,5-fach) schreibt Klacks als Stunden gut, soweit hinterlegt &mdash; Löhne und Beträge rechnet Klacks nicht." },
       { "icon": "gavel", "title": "36h-Wochenlimit stationsübergreifend live überwacht", "text": "Klacks summiert Überstunden und Feiertagsarbeit pro Mitarbeitendem über alle Stationen und Rotationen und warnt rechtzeitig vor Überschreitung des 36-Stunden-Limits (Section 26). Auf Wunsch lässt sich ein Block-Modus aktivieren, der neue Verstösse in den automatischen Planungswegen (Autoplaner, Vorschläge, Ersatzsuche) verhindert; in der manuellen Planung bleibt es bei einer Warnung." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Klacks berücksichtigt Qualifikationen bei der Einteilung &mdash; pro Station, Abteilung und Funktion &mdash; und warnt bei abgelaufenen Nachweisen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; bei der KI-Nutzung auf Wunsch mit lokalem Modell." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; bei der KI-Nutzung auf Wunsch mit lokalem Modell." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Station 3 für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und das 36-Stunden-Limit." }
     ]
   },

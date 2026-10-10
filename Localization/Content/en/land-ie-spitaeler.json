@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "For hospitals &amp; clinics in Ireland",
     "titleHtml": "Rosters that <span class=\"text-secondary\">work round the clock.</span>",
-    "subtitle": "Klacks plans wards and shifts without gaps &mdash; keeping the 6-month reference period for the 48-hour OWTA limit, compensatory rest under WRC Code of Practice COP8, and the consecutive-days requirements of the NCHD Agreement all in view. Installed on your premises, so patient data never leaves your organisation.",
+    "subtitle": "Klacks plans wards and shifts without gaps &mdash; keeping the 6-month reference period for the 48-hour OWTA limit, compensatory rest under WRC Code of Practice COP8, and the consecutive-days requirements of the NCHD Agreement all in view. Installed on your premises, so patient data is stored on your own servers.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule grid for hospitals and clinics in Ireland",
     "screenshotLabel": "Schedule"
@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "6-month reference period calculated automatically", "text": "Klacks monitors the average 48-hour week live over the rolling 6-month period you have configured, as provided for medical staff under Section 15 OWTA, and warns before the average tips over &mdash; correctly factoring in each employee's start date. On request, Klacks blocks any breach in the automatic planning paths (e.g. wizard, suggestions, substitution); in manual planning, Klacks warns." },
       { "icon": "bedtime", "title": "Compensatory rest under COP8 planned in", "text": "If a rest period is shortened, Klacks automatically suggests the appropriate compensatory rest period under WRC Code of Practice COP8." },
       { "icon": "verified", "title": "NCHD duty days kept in view", "text": "Klacks counts consecutive duty days for non-consultant hospital doctors and warns before the 10-day limit from the NCHD Agreement 2022 is exceeded." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your infrastructure. Staff and patient data stay in the hospital &mdash; with a locally hosted AI model, for the AI too." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stored on your servers", "text": "Klacks runs on your infrastructure. Staff and patient data are stored on your servers &mdash; with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Fill next week's night shifts on Medicine\" is enough &mdash; Klacksy starts the planning, Klacks takes qualifications and rest periods into account." }
     ]
   },

@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Suomen sairaaloille ja klinikoille",
     "titleHtml": "Työvuorolistat, jotka <span class=\"text-secondary\">toimivat ympäri vuorokauden.</span>",
-    "subtitle": "Klacks suunnittelee SOTE-sairaaloiden osastot ja kierrot jaksotyössä aukottomasti &mdash; porrastetuin ylityölisin, vapaapäivin ja viikkolevoin. Asennettuna omiin tiloihinne, jotta potilastiedot eivät joudu poistumaan talostanne &mdash; halutessanne paikallisesti ylläpidetyllä tekoälymallilla.",
+    "subtitle": "Klacks suunnittelee SOTE-sairaaloiden osastot ja kierrot jaksotyössä aukottomasti &mdash; porrastetuin ylityölisin, vapaapäivin ja viikkolevoin. Asennettuna omiin tiloihinne, jotta potilastiedot sijaitsevat omilla palvelimillanne &mdash; halutessanne paikallisesti ylläpidetyllä tekoälymallilla.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksin työvuoroluettelo suomalaisille sairaaloille",
     "screenshotLabel": "Työvuoroluettelo"
@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "Ylityölisät porrastettuina", "text": "Klacks porrastaa ylityölisät päivä- tai viikkokohtaisesti aikahyvityksinä; jaksotyön porrastusta (3 viikon jakson ensimmäiset 18 ylityötuntia 50 %:lla, jokainen seuraava 100 %:lla) Klacks ei tue." },
       { "icon": "event_available", "title": "Vapaapäivät &amp; viikkolepo suunnitellaan automaattisesti", "text": "Klacks suunnittelee kaksi vapaapäivää viikkoon, huomioi mahdollisuuksien mukaan kaksi peräkkäistä vapaapäivää kolmen viikon sisällä ja pitää keskimäärin 35 tunnin viikkolevon hallinnassa 14 vuorokauden ajanjaksolla." },
       { "icon": "verified", "title": "Pätevyydet ja osastot", "text": "Jokainen vuoro osoitetaan vain sopivasti pätevälle henkilöstölle &mdash; osastoittain, yksiköittäin ja tehtävittäin." },
-      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: tiedot pysyvät talossa", "text": "Klacks toimii infrastruktuurissanne. Henkilöstö- ja potilastiedot eivät poistu klinikalta &mdash; paikallisesti ylläpidetyn tekoälymallin kanssa eivät edes tekoälylle." },
+      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: tiedot sijaitsevat palvelimillanne", "text": "Klacks toimii infrastruktuurissanne. Henkilöstö- ja potilastiedot sijaitsevat palvelimillanne &mdash; paikallisesti ylläpidetyllä tekoälymallilla yksikään tekoälypyyntö ei mene ulkoiselle tekoälypalveluntarjoajalle." },
       { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Täytä sisätautien yövuorot ensi viikolle” riittää &mdash; Klacksy käynnistää suunnittelun, Klacks huomioi pätevyyden, vapaapäivät ja viikkolevon." }
     ]
   },

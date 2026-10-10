@@ -1,10 +1,10 @@
 {
-  "pageTitle": "Klacks for Ireland | OWTA Rest Periods, Banded Hours & Data Sovereignty on Your Own Premises",
+  "pageTitle": "Klacks for Ireland | OWTA Rest Periods, Banded Hours & Data Storage on Your Own Servers",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Without license fees &middot; Irish Data Protection (DPC)",
     "titleHtml": "Workforce scheduling where <span class=\"text-secondary\">you stay in control.</span>",
-    "subtitle": "Klacks rosters shifts automatically, checks OWTA rest periods and documents planned and worked hours as a basis for Banded Hours applications &mdash; open source, installable on your own premises, and optionally with a locally hosted AI model. That way staff data can stay exactly where your Data Protection Commission (DPC) wants it: in-house.",
+    "subtitle": "Klacks rosters shifts automatically, checks OWTA rest periods and documents planned and worked hours as a basis for Banded Hours applications &mdash; open source, installable on your own premises, and optionally with a locally hosted AI model. That way staff data is stored on your own servers; the legal assessment towards the Data Protection Commission (DPC) remains with you.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schedule overview for businesses in Ireland",
     "screenshotLabel": "Schedule"
@@ -15,7 +15,7 @@
     "items": [
       { "icon": "gavel", "title": "Keeping the OWTA weekly working-time limit under control", "text": "The Organisation of Working Time Act 1997 caps average working time at 48 hours a week, with a standard reference period of 4 months. An extension to 6 months applies only to specific activities such as security or healthcare &mdash; tracking this by hand is error-prone." },
       { "icon": "campaign", "title": "Banded Hours &amp; shift notice", "text": "Under Section 18A OWTA, employees can apply for placement in a band of hours if their contracted hours don't reflect reality; the employer then has 4 weeks to respond. Section 17 OWTA also requires at least 24 hours' advance notice of start and finish times where the roster isn't fixed." },
-      { "icon": "cloud_off", "title": "Data sovereignty instead of a third-country cloud", "text": "The Data Protection Act 2018 implements the GDPR in Ireland, with the Data Protection Commission (DPC) as the supervisory authority. Especially when it comes to AI features, many businesses have to ask whether staff data may go into a third-country cloud at all." }
+      { "icon": "cloud_off", "title": "Your own servers instead of a third-country cloud", "text": "The Data Protection Act 2018 implements the GDPR in Ireland, with the Data Protection Commission (DPC) as the supervisory authority. Especially when it comes to AI features, many businesses have to ask whether staff data may go into a third-country cloud at all." }
     ]
   },
   "rulesCalendar": {
@@ -39,7 +39,7 @@
       { "icon": "bedtime", "title": "Rest periods observed automatically", "text": "The daily rest period of at least 11 consecutive hours (Section 11) and the weekly rest period of at least 24 hours (Section 13), which you set up as rules, are monitored in real time &mdash; Klacks makes any deviation visible immediately." },
       { "icon": "campaign", "title": "24-hour notice period as planning deadline", "text": "You store the 24-hour advance-notice period for start and finish times required by Section 17 OWTA as the minimum lead time; Klacks uses it to calculate by when the roster must be finished. There is no automatic check at publication." },
       { "icon": "fact_check", "title": "Banded Hours applications documented", "text": "Klacks records actual hours worked over 12 months, so an application for Banded Hours under Section 18A OWTA can be answered cleanly within the 4-week deadline." },
-      { "icon": "shield_lock", "title": "Installed on your premises: full data sovereignty", "text": "Klacks runs on your own infrastructure, and you choose the AI model &mdash; with a locally hosted model, no staff data is transferred abroad at all." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data on your servers", "text": "Klacks runs on your own infrastructure, and you choose the AI model &mdash; with a locally hosted model, no AI request containing staff data goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy: rule-based, not a black box", "text": "The built-in AI assistant Klacksy understands instructions in everyday language and controls Klacks; the rule-based planning engine calculates the plan &mdash; traceable through defined rules, not an opaque AI decision." },
       { "icon": "science", "title": "Test plan changes risk-free", "text": "Before a plan change goes live, you can run it through as an isolated copy &mdash; the 11-hour daily rest period (Section 11) and surcharges are calculated live exactly as in the real plan. Only once everything checks out do you apply the variant; until then, your live schedule stays untouched. This lets you prepare a suitable scenario in advance for foreseeable situations &mdash; such as a staff member calling in sick or a sudden spike in orders &mdash; so you're ready to act immediately when it matters, instead of improvising under time pressure. There's no artificial limit on the number of scenarios &mdash; create as many as your planning needs." }
     ]

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für Hjemmetjeneste &amp; Hjemmesykepleie in Norwegen",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Reisezeit-Berechnung.</span>",
-    "subtitle": "Klacks plant Einsätze und Fahrten automatisch &mdash; inklusive eines festen Reisezeit-Werts je Dienst als Arbeitszeit und der verkürzten Ruhezeit bei geteilten Diensten (delt vakt). Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
+    "subtitle": "Klacks plant Einsätze und Fahrten automatisch &mdash; inklusive eines festen Reisezeit-Werts je Dienst als Arbeitszeit und der verkürzten Ruhezeit bei geteilten Diensten (delt vakt). Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung der Hjemmetjeneste in Norwegen",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Reisezeit als Arbeitszeit hinterlegt", "text": "Für jeden Dienst lässt sich ein fester Reisezeit-Wert hinterlegen, der als Arbeitszeit zählt &mdash; tatsächliche Fahrzeiten zwischen den Klient:innen berechnet Klacks nicht einzeln." },
       { "icon": "bedtime", "title": "Delt vakt mit hinterlegter Ruhezeit-Regel", "text": "Bei geteilten Diensten wendet Klacks die auf mindestens 8 Stunden verkürzte tägliche Ruhezeit nach § 10-8 Abs. 3 als konfigurierbare Regel an &mdash; die zwingende Kompensationsruhezeit stellen Sie zusätzlich im Dienstplan sicher." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten verlassen Ihr Haus nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Krankheitsfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

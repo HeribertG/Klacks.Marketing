@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "För sjukhus &amp; kliniker i Sverige",
     "titleHtml": "Scheman som <span class=\"text-secondary\">håller koll på 13-timmarsgränsen och de långa passen.</span>",
-    "subtitle": "Klacks övervakar automatiskt den ordinarie 13-timmarsgränsen och stödjer planeringen av långa pass på upp till 20 timmar. MBL-förhandlingsskyldigheten vid viktigare schemaändringar ligger kvar hos er. Installerat hos er, så att patientdata inte behöver lämna er verksamhet &mdash; på önskemål med lokalt hostad AI-modell.",
+    "subtitle": "Klacks övervakar automatiskt den ordinarie 13-timmarsgränsen och stödjer planeringen av långa pass på upp till 20 timmar. MBL-förhandlingsskyldigheten vid viktigare schemaändringar ligger kvar hos er. Installerat hos er, så att patientdata finns på era egna servrar &mdash; på önskemål med lokalt hostad AI-modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks schemaraster för svenska sjukhus och kliniker",
     "screenshotLabel": "Schema"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Långa pass med jour", "text": "Någon egen tidstyp för beredskap (jour) finns inte i Klacks: långa pass på upp till 20 timmar planerar ni som vanliga pass; uppdelningen i arbete och jourtid, kravet på minst 5 timmars sammanhängande jourtid mellan 22.00 och 08.00 samt den sammanhängande kompenserande vilan håller ni själva koll på." },
       { "icon": "timer", "title": "13-timmarsgräns per kalenderdag", "text": "Klacks varnar så snart fler än de inlagda 13 arbetstimmarna skulle planeras under en kalenderdag; jour och raster räknar Klacks då inte med, och en glidande 24-timmarsperiod stöder Klacks inte." },
       { "icon": "payments", "title": "OB-tillägg efter tid på dygnet identifierade", "text": "Klacks känner automatiskt igen när ett natt- eller helgtillägg för obekväm arbetstid gäller, och tilldelar de inlagda, branschvanliga, stegvis differentierade tidstilläggsnivåerna till respektive pass." },
-      { "icon": "shield_lock", "title": "Installerat hos dig: data stannar i huset", "text": "Klacks körs på er infrastruktur. Personal- och patientdata lämnar inte kliniken &mdash; med lokalt hostad AI-modell inte heller till AI:n." },
+      { "icon": "shield_lock", "title": "Installerat hos dig: data finns på dina servrar", "text": "Klacks körs på er infrastruktur. Personal- och patientdata finns på era servrar &mdash; med lokalt hostad AI-modell skickas ingen AI-förfrågan till en extern AI-leverantör." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll nattskiften på internmedicin för nästa vecka” räcker &mdash; Klacksy startar planeringen, Klacks tar hänsyn till kompetens och dygnsvila." }
     ]
   },

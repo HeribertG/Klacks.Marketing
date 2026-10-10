@@ -1,6 +1,6 @@
 {
   "pageTitle": "Instalacja Klacks: prowadzony instalator lub Docker Compose z pakietem krajowym | Klacks",
-  "metaDescription": "Klacks na własnej infrastrukturze: prowadzony instalator lub stack Docker Compose, wstępnie skonfigurowany ze świętami państwowymi, regułami czasu pracy i &ndash; tam, gdzie zdefiniowano je dla Państwa kraju &ndash; dodatkami. Bez opłat licencyjnych, open source, bez rejestracji.",
+  "metaDescription": "Klacks na własnej infrastrukturze: instalator lub Docker Compose ze świętami państwowymi i regułami czasu pracy. Open source, bez opłat licencyjnych.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalacja &middot; Bez opłat licencyjnych &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Prowadzona droga na własny serwer: skrypt instalacyjny generuje sekrety i samopodpisany certyfikat, pobiera najnowszą opublikowaną wersję i uruchamia cały stack &mdash; na Linuksie lub Windows.",
     "requirementsTitle": "Wymagania",
     "requirements": [
-      "Docker Desktop (Windows/Mac) lub Docker Engine z wtyczką Compose (Linux)",
+      "Docker Desktop (Windows) lub Docker Engine z wtyczką Compose (Linux)",
       "Wychodzący dostęp do ghcr.io i github.com (obrazy i aktualizacje)",
       "Wolne porty 80 i 443 (konfigurowalne)"
     ],
@@ -65,7 +65,7 @@
     "title": "Warto wiedzieć",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Kompletny kod źródłowy jest publicznie dostępny na GitHub na licencji AGPL-3.0 &mdash; bez opłat licencyjnych, bez vendor lock-in." },
-      { "icon": "storage", "title": "Dane zostają w firmie", "text": "Klacks działa na Państwa infrastrukturze. Dane kadrowe i grafiki znajdują się na Państwa serwerze &mdash; nie ma przymusu chmury. Tylko jeśli wybiorą Państwo zewnętrznego dostawcę AI, zapytania trafiają do niego; z modelem lokalnym wszystko zostaje na miejscu." },
+      { "icon": "storage", "title": "Dane znajdują się na Państwa serwerach", "text": "Klacks działa na Państwa infrastrukturze. Dane kadrowe i grafiki znajdują się na Państwa serwerze &mdash; nie ma przymusu chmury. Tylko jeśli wybiorą Państwo zewnętrznego dostawcę AI, zapytania trafiają do niego; z modelem lokalnym żadne zapytanie AI nie trafia do zewnętrznego dostawcy." },
       { "icon": "update", "title": "Aktualizacje", "text": "Instalacja przypina najnowszą opublikowaną wersję. Usługa aktualizacji wewnątrz stacka automatycznie wdraża nowo opublikowane wersje." },
       { "icon": "lock", "title": "HTTPS od samego początku", "text": "Instalator generuje samopodpisany certyfikat na start &mdash; w każdej chwili mogą Państwo przejść na własny certyfikat. Hasło początkowe należy zmienić zaraz po pierwszym logowaniu." }
     ]

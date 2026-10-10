@@ -32,7 +32,7 @@
   "details.title": "詳細な違い",
   "details.items.0.icon": "cloud_off",
   "details.items.0.title": "ホスティング：自社内に導入（オンプレミス） vs. クラウド",
-  "details.items.0.text": "KlacksはDockerを介して自社インフラ上で動作します。ローカルAIモデルを使用すれば、人事データが社外に出ることはありません。データの保管場所はご自身で決められ、いつでもデータベースに全面的にアクセスできます。",
+  "details.items.0.text": "KlacksはDockerを介して自社インフラ上で動作します。ローカルAIモデルを使用すれば、外部のAIプロバイダーにAIリクエストが送られることはありません。データの保管場所はご自身で決められ、いつでもデータベースに全面的にアクセスできます。",
 
   "details.items.1.icon": "code",
   "details.items.1.title": "ライセンス：オープンソース vs. プロプライエタリ",

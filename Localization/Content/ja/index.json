@@ -23,7 +23,7 @@
   "usp.subtitle": "データについても、その裏にあるAIについても、そしてルールについても。Klacksがどのクラウドサービスとも違う、3つの理由です。",
   "usp.data.label": "データ",
   "usp.data.title": "自社内に導入 &amp; オープンソース",
-  "usp.data.text": "Klacksは貴社自身のインフラ上で稼働します &mdash; ローカルのAIモデルを使えば、データが社外に出ることは一切ありません。100%オープンソースで、ベンダーロックインもありません。データは今も10年後も、あなたのものです。",
+  "usp.data.text": "Klacksは貴社自身のインフラ上で稼働します &mdash; ローカルのAIモデルを使えば、外部のAIプロバイダーにAIリクエストが送られることはありません。100%オープンソースで、ベンダーロックインもありません。データは今も10年後も、あなたのものです。",
   "usp.ai.label": "AI",
   "usp.ai.titleHtml": "Klacksy &mdash; AIモデルは自由に選択",
   "usp.ai.text": "音声で操作できるAIアシスタントです。使用するLLMはご自身で選択いただけます &mdash; OpenAI、Anthropic &amp; Co.からローカルモデルまで。特定のAIベンダーへの強制やロックインはありません。",
@@ -32,8 +32,8 @@
   "usp.rules.text": "ルール、割増（国で定義されている場合）、祝日は、国・地域・自治体に合わせてあらかじめ設定されています。すべてご自身で調整可能 &mdash; コンサルタントに依頼する必要も、次のリリースを待つ必要もありません。",
 
   "aiSynergy.eyebrow": "ほとんど類を見ない組み合わせ",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">と</span>完全なデータ主権を、同時に。",
-  "aiSynergy.textHtml": "Klacksyは<strong class=\"text-white\">ローカル言語モデル</strong>上でも動作します。つまり、計画の実行を開始し、従業員を登録し、音声でアプリを操作できるAIアシスタント &mdash; ですが、職員や患者の個人データが一件たりとも社外に出ることはありません。まさに、病院、訪問介護、警備会社が求めているものです。",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">と</span>自社サーバー上のデータを、同時に。",
+  "aiSynergy.textHtml": "Klacksyは<strong class=\"text-white\">ローカル言語モデル</strong>上でも動作します。つまり、計画の実行を開始し、従業員を登録し、音声でアプリを操作できるAIアシスタント &mdash; ただし、言語モデルへのリクエストが外部のAIプロバイダーに送られることはありません。まさに、病院、訪問介護、警備会社が求めているものです。",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "計画のためのAIアシスタント",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "サンプルデータ入りの公開Klacks環境です &mdash; ブラウザで直接、インストール不要・登録不要でご利用いただけます。",
   "getStarted.playground.button": "Playgroundを開く",
   "getStarted.download.title": "自社サーバーやPCにインストール",
-  "getStarted.download.text": "インストールパッケージには必要なものがすべて含まれています。Dockerイメージ、インストーラー、データベース、HTTPS、LinuxとWindowsでは自動アップデートも。コマンドひとつでインストールが始まります。",
+  "getStarted.download.text": "インストールパッケージには、インストーラーとデータベース・HTTPSの設定が含まれます。Dockerイメージは、インストーラーが起動時にレジストリから取得します。コマンドひとつでインストールが始まります。",
   "getStarted.download.button": "インストールパッケージをダウンロード",
   "getStarted.source.title": "GitHub上のソースコード",
   "getStarted.source.text": "KlacksはAGPL-3.0ライセンスのオープンソースです。バックエンド、フロントエンド、Dockerイメージはすべて公開されています &mdash; 検証も、フォークも、コントリビュートも自由です。",

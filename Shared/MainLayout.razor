@@ -235,6 +235,10 @@
                     <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@CompanyWideHref(page.Slug)">@Sh(page.LabelKey)</a>
                 }
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
+                @if (ShowOfferPage)
+                {
+                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@OfferHref">@Sh("footer.offer")</a>
+                }
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
             <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
@@ -253,6 +257,7 @@
     private const string MidSizeBusinessPageKey = CountryPageLinks.MidSizeBusinessSlug;
     private const string LargeBusinessPageKey = CountryPageLinks.LargeBusinessSlug;
     private const string AboutPageKey = "ueber-uns";
+    private const string OfferPageKey = CountryPageLinks.OfferSlug;
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
 
@@ -260,7 +265,7 @@
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
-        MidSizeBusinessPageKey, LargeBusinessPageKey,
+        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey,
     };
 
     private sealed record CompanySizePage(string Slug, string LabelKey);
@@ -405,6 +410,9 @@
         => ContentProvider.HasContentIn(CurrentCultureRecord.Code, MidSizeBusinessPageKey)
             && ContentProvider.HasContentIn(CurrentCultureRecord.Code, LargeBusinessPageKey);
 
+    // Like the mid-size and large pages, the offer page is linked only in cultures that have their own text for it.
+    private bool ShowOfferPage => ContentProvider.HasContentIn(CurrentCultureRecord.Code, OfferPageKey);
+
     private IEnumerable<CompanySizePage> VisibleCompanySizePages
         => ShowCompanySizePages ? CompanySizePages : CompanySizePages.Take(1);
 
@@ -499,6 +507,8 @@
     private string SmallBusinessHref => CompanyWideHref(SmallBusinessPageKey);
 
     private string AboutHref => CompanyWideHref(AboutPageKey);
+
+    private string OfferHref => CompanyWideHref(OfferPageKey);
 
     private string CompanyWideHref(string pageKey)
     {

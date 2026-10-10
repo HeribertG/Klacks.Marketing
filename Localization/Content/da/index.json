@@ -23,7 +23,7 @@
   "usp.subtitle": "Over dine data, over AI'en bag dem og over dine regler. Tre grunde til, at Klacks er anderledes end enhver cloud-løsning.",
   "usp.data.label": "Dine data",
   "usp.data.title": "Installeret hos dig &amp; Open Source",
-  "usp.data.text": "Klacks kører på din egen infrastruktur &mdash; med en lokal AI-model forlader ingen data huset. 100 % open source, ingen vendor lock-in. Dine data tilhører dig, i dag og om ti år.",
+  "usp.data.text": "Klacks kører på din egen infrastruktur &mdash; med en lokal AI-model sendes ingen AI-forespørgsel til en ekstern AI-udbyder. 100 % open source, ingen vendor lock-in. Dine data tilhører dig, i dag og om ti år.",
   "usp.ai.label": "Din AI",
   "usp.ai.titleHtml": "Klacksy &mdash; med frit modelvalg",
   "usp.ai.text": "En AI-assistent, du styrer med stemmen. Du vælger selv LLM'en &mdash; fra OpenAI, Anthropic &amp; co. til en lokal model. Ingen tvang, ingen lock-in hos AI-leverandøren.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Regler, tidstillæg (hvor de er defineret for dit land) og helligdage leveres tilpasset dit land, din region og din kommune. Du kan selv justere alt &mdash; uden konsulentdage og uden at vente på næste udgivelse.",
 
   "aiSynergy.eyebrow": "Kombinationen, som næsten ingen tilbyder",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">og</span> fuld datasuverænitet. På samme tid.",
-  "aiSynergy.textHtml": "Klacksy kan køre med en <strong class=\"text-white\">lokal sprogmodel</strong>. Det betyder: en assistent, der starter planlægningskørsler, registrerer medarbejdere og styrer appen med stemmen &mdash; uden at en eneste person- eller patientjournal nogensinde forlader dit hus. Præcis det, hospitaler, hjemmepleje og sikkerhedstjenester har brug for.",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">og</span> data på dine egne servere. På samme tid.",
+  "aiSynergy.textHtml": "Klacksy kan køre med en <strong class=\"text-white\">lokal sprogmodel</strong>. Det betyder: en assistent, der starter planlægningskørsler, registrerer medarbejdere og styrer appen med stemmen &mdash; uden at nogen forespørgsel til sprogmodellen havner hos en ekstern AI-udbyder. Præcis det, hospitaler, hjemmepleje og sikkerhedstjenester har brug for.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Din AI-assistent til planlægningen",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "En offentlig Klacks-instans med eksempeldata &mdash; direkte i browseren, uden installation og uden registrering.",
   "getStarted.playground.button": "Åbn Playground",
   "getStarted.download.title": "Installer på din egen server eller pc",
-  "getStarted.download.text": "Installationspakken indeholder alt: Docker-images, installationsprogram, database og HTTPS, under Linux og Windows også automatiske opdateringer. Én kommando starter installationen.",
+  "getStarted.download.text": "Installationspakken indeholder installationsprogrammet og konfigurationen til database og HTTPS; Docker-images henter installationsprogrammet ved start fra registret. Én kommando starter installationen.",
   "getStarted.download.button": "Download installationspakken",
   "getStarted.source.title": "Kildekode på GitHub",
   "getStarted.source.text": "Klacks er open source under AGPL-3.0. Backend, frontend og Docker-images er offentligt tilgængelige &mdash; gennemse, fork, bidrag.",

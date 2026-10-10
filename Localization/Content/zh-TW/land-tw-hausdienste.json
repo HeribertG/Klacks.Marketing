@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "休息日工時加成以時數記入", "text": "若團隊在休息日臨時支援，Klacks 會將設定的工時加成以時數記入 &mdash; 勞基法第24條的1.34倍／1.67倍／2.67倍三段級距，Klacks 並未按小時分段支援；系統每天設定一個工時加成係數。" },
       { "icon": "groups", "title": "團隊彈性調度", "text": "無論人員如何異動或臨時支援，Klacks 都能全面掌握，並提出合適的排班建議。" },
       { "icon": "verified", "title": "資格精準對應", "text": "特殊清潔、機械操作、管制區域：Klacks 在排班時會考量資格條件，並在證照到期時提出警示。" },
-      { "icon": "shield_lock", "title": "內部部署：符合PDPA的資料自主權", "text": "Klacks 運行於您自有的基礎架構上 &mdash; 搭配本地AI模型時，員工資料不會離開企業網路；AI模型也由您自行選擇。" },
+      { "icon": "shield_lock", "title": "內部部署：資料存放在您的伺服器上（PDPA）", "text": "Klacks 運行於您自有的基礎架構上 &mdash; 員工資料存放在您的伺服器上，搭配本地AI模型時不會有AI請求送往外部AI供應商；AI模型也由您自行選擇。" },
       { "icon": "smart_toy", "title": "Klacksy 理解您的一句話", "text": "只要說「安排東區據點的週末清潔」即可 &mdash; Klacksy 會啟動排班，由 Klacks 將休息日工時加成以時數記入。" }
     ]
   },

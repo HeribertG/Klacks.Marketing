@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "Für Sicherheitsdienste in Grossbritannien",
     "titleHtml": "Jeder Posten im Plan. <span class=\"text-secondary\">Jede Lizenz im Blick.</span>",
-    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit SIA-Lizenzen und der Working-Time-Regulations-Nachtarbeit automatisch im Blick. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten bei Ihnen bleiben &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
+    "subtitle": "Klacks besetzt Objekte und Rundgänge lückenlos &mdash; mit SIA-Lizenzen und der Working-Time-Regulations-Nachtarbeit automatisch im Blick. Bei Ihnen installiert, damit Ihre Einsatz- und Kundendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Rundgänge und Objektbesetzung in Grossbritannien",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "badge", "title": "SIA-Lizenz automatisch zugeteilt, Ablauf im Blick", "text": "Klacks teilt Einsätze nur Personal mit der passenden SIA-Lizenz-Qualifikation zu &mdash; und warnt, bevor eine hinterlegte Lizenz abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung." },
       { "icon": "bedtime", "title": "Nachtdienste automatisch gezählt", "text": "Klacks zählt die Nachtdienste pro Mitarbeitendem automatisch mit und warnt, sobald die hinterlegte Schwelle für regelmässige Nachtarbeit nach den Working Time Regulations erreicht ist &mdash; die Grundlage, um den gesetzlichen Gesundheitscheck rechtzeitig anzustossen." },
       { "icon": "route", "title": "Rundgänge optimiert", "text": "Bei mobilen Diensten legt Klacks Patrouillen-Routen so, dass Wege kurz und Intervalle eingehalten werden." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Datenhoheit", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten bleiben bei Ihnen &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Einsatz- und Kundendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Besetze die Nachtschicht für Objekt Nord“ genügt &mdash; Klacksy startet die Planung, Klacks prüft SIA-Lizenz, Verfügbarkeit und Nachtarbeitsstatus." }
     ]
   },

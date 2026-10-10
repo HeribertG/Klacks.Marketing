@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für Krankenhäuser in Tschechien | 24-Stunden-Dienst & 416-Stunden-Grenze",
+  "metaDescription": "Klacks plant 24-Stunden-Dienste, macht die zwingende 22-Stunden-Ruhezeit danach sichtbar und behält die 416-Stunden-Jahresgrenze für Überstunden im Blick.",
   "hero": {
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Tschechien",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant 24-Stunden-Dienste, macht die zwingende 22-Stunden-Ruhezeit danach automatisch sichtbar und behält die 416-Stunden-Jahresgrenze für Überstunden im Blick, seit die frühere Sonderausnahme im Gesundheitswesen 2024 weggefallen ist. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen.",
+    "subtitle": "Klacks plant 24-Stunden-Dienste, macht die zwingende 22-Stunden-Ruhezeit danach automatisch sichtbar und behält die 416-Stunden-Jahresgrenze für Überstunden im Blick, seit die frühere Sonderausnahme im Gesundheitswesen 2024 weggefallen ist. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Tschechien",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +27,7 @@
       { "icon": "gavel", "title": "416-Stunden-Grenze im Blick", "text": "Klacks überwacht sowohl die 150-Stunden-Grenze für angeordnete Überstunden als auch die absolute 416-Stunden-Jahresgrenze live und warnt, bevor eine Grenze kippt &mdash; keine Rückkehr zur alten Sonderregel nötig. Auf Wunsch blockiert Klacks die Überschreitung in der automatischen Planung hart; bei manueller Planung bleibt es bei der Warnung." },
       { "icon": "payments", "title": "Überstunden transparent dokumentiert", "text": "Klacks dokumentiert jede Überstunde einheitlich, unabhängig von Uhrzeit oder Stundenzahl im Dienst &mdash; die saubere Basis für den gesetzlichen Zuschlag von mindestens 25 %." },
       { "icon": "verified", "title": "Stationen &amp; Qualifikationen abgestimmt", "text": "Jeder Dienst wird nur Personen mit passender Qualifikation zugeteilt &mdash; über alle Stationen hinweg." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle den 24-Stunden-Dienst der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Ruhezeit." }
     ]
   },

@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "For home care &amp; domiciliary care in the UK",
     "titleHtml": "More time for care, <span class=\"text-secondary\">less for payroll.</span>",
-    "subtitle": "Klacks schedules visits and rounds automatically &mdash; including a fixed travel-time value per shift as working time, as a time basis for your payroll. Installed on your premises, so patient data does not have to leave your organisation &mdash; optionally with a locally hosted AI model.",
+    "subtitle": "Klacks schedules visits and rounds automatically &mdash; including a fixed travel-time value per shift as working time, as a time basis for your payroll. Installed on your premises, so patient data is stored on your own servers &mdash; optionally with a locally hosted AI model.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for round planning in home care in the UK",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Travel time stored as working time", "text": "A fixed travel-time value can be stored for each shift and counts as working time &mdash; Klacks does not calculate the actual journey times between clients individually." },
       { "icon": "payments", "title": "Time basis for the National Living Wage", "text": "Klacks provides the hours worked, including the travel-time value, for your payroll &mdash; you carry out the comparison against the National Living Wage of £12.71 an hour in your payroll software." },
       { "icon": "verified", "title": "Qualifications factored in automatically", "text": "Every visit is only assigned to staff with the matching qualification &mdash; with no manual checking at all. If a required qualification is missing or has expired, Klacks refuses the assignment, in manual planning too." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data stays in-house", "text": "Klacks runs on your own infrastructure. Patient data does not leave your organisation &mdash; and with a locally hosted AI model, not even for the AI." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data stored on your servers", "text": "Klacks runs on your own infrastructure. Patient data is stored on your servers &mdash; and with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Fill the rounds for tomorrow\" is all it takes. If someone calls in sick, Klacksy immediately suggests available cover." }
     ]
   },

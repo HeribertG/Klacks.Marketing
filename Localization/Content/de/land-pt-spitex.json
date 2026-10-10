@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Für Apoio Domiciliário &amp; häusliche Pflege in Portugal",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und berücksichtigt Wegzeit zwischen Klient:innen als Arbeitszeit über einen festen Fahrzeitwert pro Einsatz, auf Wunsch auch für die erste und letzte Fahrt, wenn kein fester betrieblicher Standort vorhanden ist. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Einsätze und Touren automatisch &mdash; und berücksichtigt Wegzeit zwischen Klient:innen als Arbeitszeit über einen festen Fahrzeitwert pro Einsatz, auf Wunsch auch für die erste und letzte Fahrt, wenn kein fester betrieblicher Standort vorhanden ist. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung im Apoio Domiciliário in Portugal",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Wegzeit als Arbeitszeit hinterlegt", "text": "Wegzeit zwischen Klient:innen lässt sich als fester Zeitwert pro Einsatz hinterlegen und zählt dann als Arbeitszeit &mdash; auf Wunsch auch für die erste und letzte Fahrt bei fehlendem festen Standort, wie es die Auslegung von Art. 197 CT verlangt. Individuelle Fahrzeiten berechnet Klacks nicht, und ob ein fester Standort vorliegt, prüft Klacks ebenfalls nicht." },
       { "icon": "bedtime", "title": "11-Stunden-Ruhezeit bei Splitting-Diensten", "text": "Klacks prüft die hinterlegte Mindestruhezeit von 11 zusammenhängenden Stunden zwischen zwei aufeinanderfolgenden Diensten." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Personen mit der passenden Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten bleiben in Ihrem Haus &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz vor." }
     ]
   },

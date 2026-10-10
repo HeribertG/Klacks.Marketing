@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Saudi-Arabien",
     "titleHtml": "Schichtpläne, die <span class=\"text-secondary\">über Wochen im Gleichgewicht bleiben.</span>",
-    "subtitle": "Klacks plant Stationen und Schichtbetrieb und überwacht den rollierenden 3-Wochen-Durchschnitt nach Art. 100 live &mdash; mit Überstunden als Zeitgutschrift für Ihre Lohnabrechnung. Bei Ihnen installiert, damit Patientendaten in Ihrem Haus bleiben, mit einem lokalen KI-Modell auch bei der KI-Nutzung.",
+    "subtitle": "Klacks plant Stationen und Schichtbetrieb und überwacht den rollierenden 3-Wochen-Durchschnitt nach Art. 100 live &mdash; mit Überstunden als Zeitgutschrift für Ihre Lohnabrechnung. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser in Saudi-Arabien",
     "screenshotLabel": "Dienstplan"
@@ -27,7 +27,7 @@
       { "icon": "timelapse", "title": "9-Stunden-Grenze für nicht durchgehende Tätigkeit", "text": "Für Kategorien mit nicht durchgehender Tätigkeit lässt sich eine Tagesgrenze von bis zu 9 Stunden hinterlegen, gegen die Klacks die Planung prüft." },
       { "icon": "gavel", "title": "Überstundenzuschlag als Zeitgutschrift", "text": "Der gesetzliche Zuschlag von 50% auf den Grundlohn (Art. 107) lässt sich als Zeitzuschlag hinterlegen; Klacks schreibt ihn für jede Überstunde als Zeitgutschrift gut, den Geldbetrag rechnet Ihr Lohnsystem." },
       { "icon": "verified", "title": "Qualifikationen &amp; Stationen", "text": "Jede Schicht wird nur passend qualifiziertem Personal zugeteilt &mdash; pro Station, Abteilung und Funktion." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in Ihrer Infrastruktur &mdash; mit einem lokalen KI-Modell auch bei der KI-Nutzung." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Notaufnahme für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und den 3-Wochen-Durchschnitt." }
     ]
   },

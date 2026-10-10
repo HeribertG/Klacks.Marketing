@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Sjukhus &amp; Kliniken in Schweden",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">die 13-Stunden-Grenze und lange Dienste im Blick behalten.</span>",
-    "subtitle": "Klacks überwacht die reguläre 13-Stunden-Grenze automatisch und unterstützt die Planung langer Dienste bis 20 Stunden. Die MBL-Verhandlungspflicht bei wichtigeren Planänderungen bleibt bei Ihnen. Bei Ihnen installiert, damit Patientendaten Ihr Haus nicht verlassen müssen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
+    "subtitle": "Klacks überwacht die reguläre 13-Stunden-Grenze automatisch und unterstützt die Planung langer Dienste bis 20 Stunden. Die MBL-Verhandlungspflicht bei wichtigeren Planänderungen bleibt bei Ihnen. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen &mdash; auf Wunsch mit lokal gehostetem KI-Modell.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für schwedische Krankenhäuser und Kliniken",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Lange Dienste mit Jour", "text": "Eine eigene Zeitart für Bereitschaft (jour) kennt Klacks nicht: Lange Dienste bis 20 Stunden planen Sie als normale Dienste; die Aufteilung in Arbeit und jourtid, die Mindestdauer von 5 Stunden zusammenhängender jourtid zwischen 22:00 und 08:00 Uhr und die zusammenhängende Ausgleichsruhe halten Sie selbst im Blick." },
       { "icon": "timer", "title": "13-Stunden-Grenze je Kalendertag", "text": "Klacks warnt, sobald an einem Kalendertag mehr als die hinterlegten 13 Arbeitsstunden geplant würden; jour und Pausen zählt Klacks dabei nicht mit, und eine gleitende 24-Stunden-Periode bildet Klacks nicht ab." },
       { "icon": "payments", "title": "OB-Zuschläge nach Tageszeit erkannt", "text": "Klacks erkennt automatisch, wann ein Nacht- oder Wochenend-Zuschlag für obekväm arbetstid greift, und ordnet die hinterlegten, branchenüblich gestaffelten Zeitzuschlagsstufen der jeweiligen Schicht zu." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten verlassen die Klinik nicht &mdash; bei lokal gehostetem KI-Modell auch nicht zur KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und dygnsvila." }
     ]
   },

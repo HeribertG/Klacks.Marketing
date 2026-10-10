@@ -4,7 +4,7 @@
     "badgeIcon": "security",
     "badge": "For security providers in the UK",
     "titleHtml": "Every post covered. <span class=\"text-secondary\">Every licence in view.</span>",
-    "subtitle": "Klacks staffs sites and patrols with no gaps &mdash; automatically keeping track of SIA licensing and Working Time Regulations night-work rules. Installed on your premises, so your deployment and client data stay with you &mdash; optionally with a locally hosted AI model.",
+    "subtitle": "Klacks staffs sites and patrols with no gaps &mdash; automatically keeping track of SIA licensing and Working Time Regulations night-work rules. Installed on your premises, so your deployment and client data are stored on your own servers &mdash; optionally with a locally hosted AI model.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks timeline view for patrols and site staffing in the UK",
     "screenshotLabel": "Timeline"
@@ -26,7 +26,7 @@
       { "icon": "badge", "title": "SIA licence matched automatically, expiry in view", "text": "Klacks only assigns shifts to staff with the matching SIA licence qualification &mdash; and warns before a licence on file expires. If a required licence is missing or has expired, Klacks refuses the assignment, in manual planning too." },
       { "icon": "bedtime", "title": "Night shifts counted automatically", "text": "Klacks automatically counts night shifts per employee and warns as soon as the configured threshold for regular night work under the Working Time Regulations is reached &mdash; the basis for triggering the statutory health assessment in good time." },
       { "icon": "route", "title": "Patrols optimised", "text": "For mobile patrol services, Klacks plans routes so journeys stay short and intervals are met." },
-      { "icon": "shield_lock", "title": "Installed on your premises: data sovereignty", "text": "Klacks runs on your own infrastructure &mdash; deployment and client data stay with you &mdash; and with a locally hosted AI model, they are not passed on to the AI either." },
+      { "icon": "shield_lock", "title": "Installed on your premises: data on your servers", "text": "Klacks runs on your own infrastructure &mdash; deployment and client data are stored on your servers &mdash; and with a locally hosted AI model, no AI request goes to an external AI provider." },
       { "icon": "smart_toy", "title": "Klacksy understands your request", "text": "\"Cover the night shift at the North site\" is all it takes &mdash; Klacksy starts the planning, Klacks checks SIA licensing, availability and night-worker status." }
     ]
   },

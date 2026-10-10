@@ -1,6 +1,6 @@
 {
   "pageTitle": "Installare Klacks: installer guidato o Docker Compose con il pacchetto paese | Klacks",
-  "metaDescription": "Installate Klacks sulla vostra infrastruttura: installer guidato o stack Docker Compose, preconfigurato con giorni festivi, regole sull'orario di lavoro e, dove definite per il vostro paese, maggiorazioni. Senza costi di licenza, open source, senza registrazione.",
+  "metaDescription": "Installate Klacks: installer guidato o Docker Compose, preconfigurato con giorni festivi e orario di lavoro. Open source, senza costi di licenza.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installazione &middot; Senza costi di licenza &amp; open source",
@@ -19,7 +19,7 @@
     "text": "La via guidata per il vostro server: uno script di installazione genera i secret e un certificato autofirmato, scarica l'ultima versione pubblicata e avvia l'intero stack &mdash; su Linux o Windows.",
     "requirementsTitle": "Requisiti",
     "requirements": [
-      "Docker Desktop (Windows/Mac) oppure Docker Engine con il plugin Compose (Linux)",
+      "Docker Desktop (Windows) oppure Docker Engine con il plugin Compose (Linux)",
       "Accesso in uscita verso ghcr.io e github.com (immagini e aggiornamenti)",
       "Porte 80 e 443 libere (configurabili)"
     ],
@@ -65,7 +65,7 @@
     "title": "Da sapere",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Il codice sorgente completo è pubblico su GitHub con licenza AGPL-3.0 &mdash; nessun costo di licenza, nessun vendor lock-in." },
-      { "icon": "storage", "title": "I dati restano in azienda", "text": "Klacks gira sulla vostra infrastruttura. I dati del personale e dei turni si trovano sul vostro server &mdash; nessun cloud obbligato. Le richieste partono verso un fornitore di IA esterno solo se ne scegliete uno; con un modello locale tutto resta in azienda." },
+      { "icon": "storage", "title": "I dati si trovano sui vostri server", "text": "Klacks gira sulla vostra infrastruttura. I dati del personale e dei turni si trovano sul vostro server &mdash; nessun cloud obbligato. Le richieste partono verso un fornitore di IA esterno solo se ne scegliete uno; con un modello locale, nessuna richiesta di IA viene inviata a un fornitore esterno." },
       { "icon": "update", "title": "Aggiornamenti", "text": "L'installazione fissa l'ultima versione pubblicata. Un servizio di aggiornamento nello stack applica automaticamente le nuove versioni pubblicate." },
       { "icon": "lock", "title": "HTTPS fin dall'inizio", "text": "L'installer genera un certificato autofirmato per partire &mdash; potete passare in qualsiasi momento a un certificato vostro. Cambiate la password iniziale subito dopo il primo accesso." }
     ]

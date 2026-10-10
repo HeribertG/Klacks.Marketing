@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "병원 &amp; 클리닉을 위한",
     "titleHtml": "근무표, <span class=\"text-secondary\">24시간 빈틈없이 돌아갑니다.</span>",
-    "subtitle": "Klacks는 병동과 교대 근무를 빈틈없이 계획합니다 &mdash; 점검된 휴식 시간, 적합한 자격, 완전한 데이터 주권까지. 귀사에 설치해 운영하며, 로컬 AI 모델을 사용하면 환자 데이터가 사외로 나가지 않습니다.",
+    "subtitle": "Klacks는 병동과 교대 근무를 빈틈없이 계획합니다 &mdash; 점검된 휴식 시간, 적합한 자격, 귀사 서버의 데이터까지. 귀사에 설치해 운영하며, 환자 데이터는 귀사의 자체 서버에 저장되고, 로컬 AI 모델을 사용하면 외부 AI 제공업체로 가는 AI 요청이 없습니다.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "병원을 위한 Klacks 근무표 화면",
     "screenshotLabel": "근무표",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "빈틈없는 24시간 커버리지", "text": "모든 병동의 주간, 오후, 야간 근무 &mdash; Klacks는 모든 공백을 즉시 표시하고 원하시면 자동으로 채웁니다." },
       { "icon": "gavel", "title": "자동으로 검증되는 휴식 시간", "text": "근로시간법, 휴식 시간, 상한 기준이 실시간으로 모니터링됩니다 &mdash; 위반은 즉시 표시됩니다." },
       { "icon": "verified", "title": "자격 &amp; 병동", "text": "모든 교대 근무는 적합한 자격을 갖춘 인력에게만 배정됩니다 &mdash; 병동, 부서, 직무별로." },
-      { "icon": "shield_lock", "title": "귀사에 설치: 데이터는 사내에", "text": "Klacks는 귀사의 인프라에서 실행됩니다. 직원 및 환자 데이터는 귀사의 서버에 있습니다 &mdash; 로컬 AI 모델을 사용하면 AI를 이용할 때도 병원 밖으로 나가는 것이 없습니다." },
+      { "icon": "shield_lock", "title": "귀사에 설치: 데이터는 귀사의 서버에", "text": "Klacks는 귀사의 인프라에서 실행됩니다. 직원 및 환자 데이터는 귀사의 서버에 있습니다 &mdash; 로컬 AI 모델을 사용하면 AI를 이용할 때도 병원 밖으로 나가는 것이 없습니다." },
       { "icon": "smart_toy", "title": "Klacksy가 문장을 이해합니다", "text": "“다음 주 내과 야간 근무를 채워줘”면 충분합니다 &mdash; Klacksy가 계획을 시작하고, Klacks가 자격과 휴식 시간을 함께 고려합니다." },
       { "icon": "groups", "title": "대체 인력 풀 &amp; 결원", "text": "누군가 결근하면 Klacks는 즉시 이용 가능하고 자격을 갖춘 대체 인력을 보여줍니다 &mdash; 전체 계획을 뒤엎지 않고." }
     ]

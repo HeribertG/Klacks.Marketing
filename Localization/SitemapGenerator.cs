@@ -1,6 +1,7 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 using System.Text;
+using Klacks.Marketing.Localization.Seo;
 
 namespace Klacks.Marketing.Localization;
 
@@ -67,7 +68,7 @@ public static class SitemapGenerator
 
     // Company-wide pages like the ones above, but written per culture (a content file per culture): only the
     // cultures that have their own text are listed, matching their IndexTranslatedOnly noindex rule.
-    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug };
+    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug };
 
     private const string InstallationSlug = "installation";
 
@@ -123,6 +124,11 @@ public static class SitemapGenerator
     // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex").
     private static void AppendTranslatedUrls(StringBuilder sb, string baseUrl, string routeKey, Func<string, string, bool> hasContentIn)
     {
+        if (CountryIndexingPolicy.IsNoindex(routeKey))
+        {
+            return;
+        }
+
         var contentKey = routeKey.Replace('/', '-');
         var cultures = SupportedCultures.All.Where(c => hasContentIn(c.Code, contentKey)).ToList();
 

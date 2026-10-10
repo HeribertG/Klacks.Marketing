@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Dla opieki domowej &amp; pielęgniarstwa ambulatoryjnego",
     "titleHtml": "Więcej czasu na opiekę, <span class=\"text-secondary\">mniej na planowanie tras.</span>",
-    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; z właściwymi kwalifikacjami, konfigurowalnymi dodatkami i świętami Państwa kantonu. Zainstalowany na własnym sprzęcie; z lokalnym modelem AI dane pacjentów nie opuszczają Państwa budynku.",
+    "subtitle": "Klacks automatycznie planuje wizyty i trasy &mdash; z właściwymi kwalifikacjami, konfigurowalnymi dodatkami i świętami Państwa kantonu. Zainstalowany na własnym sprzęcie, dane pacjentów na Państwa własnych serwerach; z lokalnym modelem AI żadne zapytanie AI nie trafia do zewnętrznego dostawcy AI.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Widok osi czasu Klacks dla planowania tras opieki domowej",
     "screenshotLabel": "Oś czasu",
@@ -26,7 +26,7 @@
       { "icon": "route", "title": "Trasy zoptymalizowane automatycznie", "text": "Klacks układa trasy tak, aby odcinki były krótkie, a okna czasowe dotrzymane &mdash; samochodem, rowerem lub pieszo." },
       { "icon": "verified", "title": "Kwalifikacje uwzględniane automatycznie", "text": "Każda wizyta przydzielana jest tylko osobom z odpowiednią kwalifikacją &mdash; całkowicie bez ręcznej weryfikacji." },
       { "icon": "event_available", "title": "Święta Państwa kantonu &amp; dodatki", "text": "Święta są wstępnie skonfigurowane &mdash; aż do poziomu kantonu i gminy. Dodatki nocne, weekendowe i świąteczne ustalają Państwo samodzielnie jako zaliczane godziny, wszystko dowolnie dostosowywalne." },
-      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: dane na miejscu", "text": "Klacks działa na Państwa własnej infrastrukturze. Dane pacjentów znajdują się na Państwa serwerach &mdash; z lokalnym modelem AI także w przypadku AI nic nie opuszcza budynku." },
+      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: dane na własnych serwerach", "text": "Klacks działa na Państwa własnej infrastrukturze. Dane pacjentów znajdują się na Państwa serwerach &mdash; z lokalnym modelem AI także w przypadku AI nic nie opuszcza budynku." },
       { "icon": "smart_toy", "title": "Klacksy rozumie Państwa zdanie", "text": "„Wypełnij trasy na jutro” wystarczy. W razie choroby Klacksy od razu proponuje dostępne zastępstwo." },
       { "icon": "event_busy", "title": "Nieobecności szybko uzupełniane", "text": "Gdy ktoś wypada, Klacks od razu pokazuje, kto jest wykwalifikowany i dostępny &mdash; bez przewracania całego grafiku do góry nogami." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Konkretnie",
     "title": "Opieka domowa w Genewie, dwujęzyczna, z wizytami w Vaud",
-    "text": "Francuski interfejs, święta Genewy i Vaud, dodatki dla opieki domowej &mdash; skonfigurowane w Klacks, a nie dopisane w kodzie. Trasy są optymalizowane automatycznie, kwalifikacje sprawdzane, a Klacksy pomaga przy zmianach na ostatnią chwilę. Dane pacjentów znajdują się przy tym na Państwa serwerach, a z lokalnym modelem AI wszystko zostaje na miejscu."
+    "text": "Francuski interfejs, święta Genewy i Vaud, dodatki dla opieki domowej &mdash; skonfigurowane w Klacks, a nie dopisane w kodzie. Trasy są optymalizowane automatycznie, kwalifikacje sprawdzane, a Klacksy pomaga przy zmianach na ostatnią chwilę. Dane pacjentów znajdują się przy tym na Państwa serwerach; z lokalnym modelem AI żadne zapytanie AI nie trafia do zewnętrznego dostawcy AI."
   },
   "showRoutePlanning": true,
   "cta": {

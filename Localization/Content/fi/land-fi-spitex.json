@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Suomen kotihoidolle",
     "titleHtml": "Enemmän aikaa hoivaan, <span class=\"text-secondary\">vähemmän reittisuunnitteluun.</span>",
-    "subtitle": "Klacks suunnittelee kotihoidon käynnit ja reitit jaksotyössä automaattisesti &mdash; mukaan lukien lyhennetyn 9 tunnin lepoajan 14 vuorokauden tasoituksineen sekä ruokailuajan, joka lasketaan työajaksi työn aikana. Asennettuna omiin tiloihinne, jotta potilastiedot eivät joudu poistumaan talostanne &mdash; halutessanne paikallisesti ylläpidetyllä tekoälymallilla.",
+    "subtitle": "Klacks suunnittelee kotihoidon käynnit ja reitit jaksotyössä automaattisesti &mdash; mukaan lukien lyhennetyn 9 tunnin lepoajan 14 vuorokauden tasoituksineen sekä ruokailuajan, joka lasketaan työajaksi työn aikana. Asennettuna omiin tiloihinne, jotta potilastiedot sijaitsevat omilla palvelimillanne &mdash; halutessanne paikallisesti ylläpidetyllä tekoälymallilla.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacksin aikajana-näkymä Suomen kotihoidon reittisuunnitteluun",
     "screenshotLabel": "Aikajana"
@@ -26,7 +26,7 @@
       { "icon": "bedtime", "title": "9 tunnin lepoaika ja 14 vuorokauden tasoitus valvotaan", "text": "Klacks tunnistaa jokaisen vuorokausilevon lyhentämisen 9 tuntiin ja pitää lakisääteisen 14 vuorokauden tasoitusmääräajan hallinnassa." },
       { "icon": "restaurant", "title": "Ruokailuaika kirjataan oikein työajaksi", "text": "Reittivuoroissa Klacks lukee jaksotyön aikana nautitun aterian oletusarvoisesti työajaksi &mdash; sen sijaan, että se virheellisesti käsiteltäisiin palkattomana taukona." },
       { "icon": "verified", "title": "Pätevyydet huomioidaan automaattisesti", "text": "Jokainen käynti osoitetaan vain henkilölle, jolla on sopiva pätevyys &mdash; täysin ilman manuaalista tarkistusta." },
-      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: potilastiedot pysyvät talossa", "text": "Klacks toimii omassa infrastruktuurissanne. Potilastiedot eivät poistu talostanne &mdash; paikallisesti ylläpidetyn tekoälymallin kanssa eivät edes tekoälylle." },
+      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: potilastiedot sijaitsevat palvelimillanne", "text": "Klacks toimii omassa infrastruktuurissanne. Potilastiedot sijaitsevat palvelimillanne &mdash; paikallisesti ylläpidetyllä tekoälymallilla yksikään tekoälypyyntö ei mene ulkoiselle tekoälypalveluntarjoajalle." },
       { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Täytä huomisen reitit” riittää. Sairastapauksessa Klacksy ehdottaa heti saatavilla olevaa sijaista." }
     ]
   },

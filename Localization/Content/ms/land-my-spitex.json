@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Untuk penjagaan di rumah (penjaga) di Malaysia",
     "titleHtml": "Lebih masa untuk penjagaan, <span class=\"text-secondary\">kurang untuk perancangan laluan.</span>",
-    "subtitle": "Klacks menjadualkan lawatan dan laluan secara automatik &mdash; serta menyemak had waktu bekerja harian maksimum yang anda tetapkan. Dipasang di premis anda sendiri &mdash; dengan model AI tempatan, data pesakit tidak pernah keluar daripada premis anda.",
+    "subtitle": "Klacks menjadualkan lawatan dan laluan secara automatik &mdash; serta menyemak had waktu bekerja harian maksimum yang anda tetapkan. Dipasang di premis anda sendiri, data pesakit pada pelayan anda sendiri &mdash; dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Paparan garis masa Klacks untuk perancangan laluan penjagaan di rumah di Malaysia",
     "screenshotLabel": "Garis Masa"
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Had waktu bekerja harian dipantau", "text": "Klacks menyemak had waktu bekerja harian maksimum yang anda tetapkan serta menanda lebihannya secara automatik sebagai lebih masa; jangka masa 10 jam antara lawatan pertama dan waktu pulang terakhir (Section 60A(1)) itu sendiri tidak disemak oleh Klacks." },
       { "icon": "paid", "title": "Kredit Masa Tambahan bertingkat sebagai kredit masa", "text": "Kredit Masa Tambahan Lebih Masa, Kredit Masa Tambahan Hari Rehat dan Kredit Masa Tambahan Hari Kelepasan (1.5x/2.0x/3.0x) dicatatkan oleh Klacks sebagai kredit masa &mdash; had gaji RM4,000 digunakan oleh perakaunan gaji." },
       { "icon": "verified", "title": "Kelayakan diambil kira secara automatik", "text": "Klacks mengambil kira kelayakan semasa menetapkan lawatan dan memberi amaran apabila bukti kelayakan telah luput &mdash; tanpa perlu semakan manual." },
-      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data kekal di premis", "text": "Klacks berjalan pada infrastruktur anda sendiri. Dengan model AI tempatan, data pesakit dan data perancangan tidak keluar daripada premis anda." },
+      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data pada pelayan anda", "text": "Klacks berjalan pada infrastruktur anda sendiri. Data pesakit dan data perancangan disimpan pada pelayan anda; dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Isikan laluan untuk esok\" sudah memadai. Jika berlaku ketidakhadiran, Klacksy segera mencadangkan gantian yang tersedia." }
     ]
   },

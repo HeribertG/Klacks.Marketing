@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Für Krankenhäuser &amp; Kliniken in Irland",
     "titleHtml": "Dienstpläne, die <span class=\"text-secondary\">rund um die Uhr aufgehen.</span>",
-    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit dem 6-Monats-Referenzzeitraum für die 48-Stunden-Grenze nach OWTA, der Ersatzruhezeit nach WRC Code of Practice COP8 und den Diensttage-Vorgaben des NCHD-Agreements im Blick. Bei Ihnen installiert, damit Patientendaten Ihr Haus nie verlassen.",
+    "subtitle": "Klacks plant Stationen und Schichten lückenlos &mdash; mit dem 6-Monats-Referenzzeitraum für die 48-Stunden-Grenze nach OWTA, der Ersatzruhezeit nach WRC Code of Practice COP8 und den Diensttage-Vorgaben des NCHD-Agreements im Blick. Bei Ihnen installiert, damit Patientendaten auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan-Raster für Krankenhäuser und Kliniken in Irland",
     "screenshotLabel": "Dienstplan"
@@ -26,7 +26,7 @@
       { "icon": "gavel", "title": "6-Monats-Referenzzeitraum überwacht", "text": "Klacks überwacht die durchschnittliche 48-Stunden-Woche über den von Ihnen hinterlegten, nach Section 15 OWTA vorgesehenen rollierenden 6-Monats-Zeitraum für medizinisches Personal live und warnt, bevor der Schnitt kippt &mdash; der Beschäftigungsbeginn wird dabei korrekt berücksichtigt. Auf Wunsch blockiert Klacks die Überschreitung in den automatischen Planungswegen (z. B. Wizard, Vorschläge, Vertretung); bei manueller Planung warnt Klacks." },
       { "icon": "bedtime", "title": "Ersatzruhezeit nach COP8 im Blick", "text": "Klacks macht eine verkürzte Ruhezeit sofort sichtbar, damit die Ersatzruhezeit gemäss WRC Code of Practice COP8 gezielt nachgeplant werden kann." },
       { "icon": "verified", "title": "NCHD-Diensttage im Blick", "text": "Klacks zählt aufeinanderfolgende Diensttage für Assistenzärzt:innen mit und warnt vor Überschreitung der 10-Tage-Grenze aus dem NCHD-Agreement 2022." },
-      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten bleiben in der Klinik &mdash; mit einem lokal gehosteten KI-Modell auch bei der KI." },
+      { "icon": "shield_lock", "title": "Bei Ihnen installiert: Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Patientendaten liegen auf Ihren Servern &mdash; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Nachtschichten der Inneren für nächste Woche“ genügt &mdash; Klacksy startet die Planung, Klacks berücksichtigt Qualifikation und Ruhezeit." }
     ]
   },

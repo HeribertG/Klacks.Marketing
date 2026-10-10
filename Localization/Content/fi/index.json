@@ -23,7 +23,7 @@
   "usp.subtitle": "Tiedoistanne, niitä käyttävästä tekoälystä ja säännöistänne. Kolme syytä, miksi Klacks eroaa jokaisesta pilviratkaisusta.",
   "usp.data.label": "Tietonne",
   "usp.data.title": "Asennettuna omiin tiloihinne &amp; avoin lähdekoodi",
-  "usp.data.text": "Klacks toimii omassa infrastruktuurissanne &mdash; paikallisella tekoälymallilla yksikään tietue ei poistu talosta. 100 % avointa lähdekoodia, ei sidontaa yhteen toimittajaan. Tietonne kuuluvat teille, tänään ja kymmenen vuoden kuluttua.",
+  "usp.data.text": "Klacks toimii omassa infrastruktuurissanne &mdash; paikallisella tekoälymallilla yksikään tekoälypyyntö ei mene ulkoiselle tekoälypalveluntarjoajalle. 100 % avointa lähdekoodia, ei sidontaa yhteen toimittajaan. Tietonne kuuluvat teille, tänään ja kymmenen vuoden kuluttua.",
   "usp.ai.label": "Tekoälynne",
   "usp.ai.titleHtml": "Klacksy &mdash; vapaasti valittavalla mallilla",
   "usp.ai.text": "Tekoälyavustaja, jota ohjaatte puheella. Valitsette kielimallin itse &mdash; OpenAI:sta, Anthropicista &amp; muista aina paikalliseen malliin asti. Ei pakkoa, ei sidontaa tekoälyntarjoajaan.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Säännöt, aikahyvitykset (missä ne on maallenne määritelty) ja pyhäpäivät tulevat valmiiksi sovitettuina maallenne, alueellenne ja kunnallenne. Voitte muokata kaikkea itse &mdash; ilman konsulttipäiviä ja ilman seuraavan julkaisun odottamista.",
 
   "aiSynergy.eyebrow": "Yhdistelmä, jota tuskin kukaan muu tarjoaa",
-  "aiSynergy.titleHtml": "Tekoäly <span class=\"text-tertiary-fixed\">ja</span> täysi tietosuvereniteetti. Samaan aikaan.",
-  "aiSynergy.textHtml": "Klacksy voi toimia <strong class=\"text-white\">paikallisella kielimallilla</strong>. Tämä tarkoittaa avustajaa, joka käynnistää suunnitteluajoja, luo työntekijätietoja ja ohjaa sovellusta puheella &mdash; ilman että yksikään henkilö- tai potilastieto poistuu talostanne. Juuri sitä, mitä sairaalat, kotihoito ja turvallisuusalan yritykset tarvitsevat.",
+  "aiSynergy.titleHtml": "Tekoäly <span class=\"text-tertiary-fixed\">ja</span> tiedot omilla palvelimillanne. Samaan aikaan.",
+  "aiSynergy.textHtml": "Klacksy voi toimia <strong class=\"text-white\">paikallisella kielimallilla</strong>. Tämä tarkoittaa avustajaa, joka käynnistää suunnitteluajoja, luo työntekijätietoja ja ohjaa sovellusta puheella &mdash; ilman että yksikään pyyntö kielimallille päätyy ulkoiselle tekoälypalveluntarjoajalle. Juuri sitä, mitä sairaalat, kotihoito ja turvallisuusalan yritykset tarvitsevat.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Tekoälyavustajanne suunnitteluun",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "Julkinen Klacks-instanssi esimerkkitiedoilla &mdash; suoraan selaimessa, ilman asennusta ja ilman rekisteröitymistä.",
   "getStarted.playground.button": "Avaa Playground",
   "getStarted.download.title": "Asentakaa palvelimellenne tai tietokoneellenne",
-  "getStarted.download.text": "Asennuspaketti sisältää kaiken: Docker-imaget, asennusohjelman, tietokannan ja HTTPS:n, Linuxilla ja Windowsilla myös automaattiset päivitykset. Yksi komento käynnistää asennuksen.",
+  "getStarted.download.text": "Asennuspaketti sisältää asennusohjelman sekä tietokannan ja HTTPS:n konfiguraation; asennusohjelma lataa Docker-imaget rekisteristä käynnistyksen yhteydessä. Yksi komento käynnistää asennuksen.",
   "getStarted.download.button": "Lataa asennuspaketti",
   "getStarted.source.title": "Lähdekoodi GitHubissa",
   "getStarted.source.text": "Klacks on avointa lähdekoodia AGPL-3.0-lisenssillä. Backend, frontend ja Docker-imaget ovat julkisia &mdash; tutkikaa, forkatkaa, osallistukaa.",

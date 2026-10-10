@@ -23,7 +23,7 @@
   "usp.subtitle": "Đối với dữ liệu của bạn, đối với AI đứng sau, và đối với các quy tắc của bạn. Ba lý do khiến Klacks khác biệt với mọi giải pháp đám mây.",
   "usp.data.label": "Dữ liệu của bạn",
   "usp.data.title": "Cài đặt trên hệ thống của bạn &amp; mã nguồn mở",
-  "usp.data.text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; với mô hình AI cục bộ, không một bản ghi nào rời khỏi doanh nghiệp. 100% mã nguồn mở, không lệ thuộc nhà cung cấp. Dữ liệu của bạn thuộc về bạn, hôm nay và mười năm nữa.",
+  "usp.data.text": "Klacks chạy trên hạ tầng riêng của bạn &mdash; với mô hình AI cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp AI bên ngoài. 100% mã nguồn mở, không lệ thuộc nhà cung cấp. Dữ liệu của bạn thuộc về bạn, hôm nay và mười năm nữa.",
   "usp.ai.label": "AI của bạn",
   "usp.ai.titleHtml": "Klacksy &mdash; với quyền tự chọn mô hình",
   "usp.ai.text": "Một trợ lý AI mà bạn điều khiển bằng giọng nói. Bạn tự chọn mô hình ngôn ngữ &mdash; từ OpenAI, Anthropic &amp; các hãng khác cho đến mô hình cục bộ. Không bị ép buộc, không lệ thuộc vào nhà cung cấp AI.",
@@ -32,8 +32,8 @@
   "usp.rules.text": "Quy tắc, giờ phụ trội (nếu quốc gia của bạn có quy định) và ngày lễ được cấu hình sẵn phù hợp với quốc gia, vùng và địa phương của bạn. Bạn có thể tự điều chỉnh mọi thứ &mdash; không cần thuê tư vấn, không cần chờ bản phát hành tiếp theo.",
 
   "aiSynergy.eyebrow": "Sự kết hợp mà hiếm ai cung cấp",
-  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">và</span> toàn quyền kiểm soát dữ liệu. Cùng lúc.",
-  "aiSynergy.textHtml": "Klacksy có thể chạy với một <strong class=\"text-white\">mô hình ngôn ngữ cục bộ</strong>. Nghĩa là một trợ lý có thể khởi chạy các lượt lập kế hoạch, tạo hồ sơ nhân viên và điều khiển ứng dụng bằng giọng nói &mdash; mà không một bản ghi nhân sự hay bệnh nhân nào rời khỏi doanh nghiệp của bạn. Đây chính xác là điều mà bệnh viện, dịch vụ chăm sóc tại nhà và an ninh cần.",
+  "aiSynergy.titleHtml": "AI <span class=\"text-tertiary-fixed\">và</span> dữ liệu nằm trên máy chủ của bạn. Cùng lúc.",
+  "aiSynergy.textHtml": "Klacksy có thể chạy với một <strong class=\"text-white\">mô hình ngôn ngữ cục bộ</strong>. Nghĩa là một trợ lý có thể khởi chạy các lượt lập kế hoạch, tạo hồ sơ nhân viên và điều khiển ứng dụng bằng giọng nói &mdash; mà không có yêu cầu nào gửi đến mô hình ngôn ngữ lại kết thúc ở nhà cung cấp AI bên ngoài. Đây chính xác là điều mà bệnh viện, dịch vụ chăm sóc tại nhà và an ninh cần.",
 
   "klacksy.eyebrow": "Klacksy",
   "klacksy.title": "Trợ lý AI của bạn cho việc lập lịch",
@@ -122,7 +122,7 @@
   "getStarted.playground.text": "Một phiên bản Klacks công khai với dữ liệu mẫu &mdash; chạy ngay trong trình duyệt, không cần cài đặt, không cần đăng ký.",
   "getStarted.playground.button": "Mở Playground",
   "getStarted.download.title": "Cài đặt trên máy chủ hoặc máy tính của bạn",
-  "getStarted.download.text": "Gói cài đặt bao gồm tất cả: các Docker image, trình cài đặt, cơ sở dữ liệu, HTTPS, trên Linux và Windows cũng có cập nhật tự động. Chỉ một lệnh là bắt đầu cài đặt.",
+  "getStarted.download.text": "Gói cài đặt gồm trình cài đặt và cấu hình cho cơ sở dữ liệu và HTTPS; các Docker image do trình cài đặt tải về từ registry khi khởi động. Chỉ một lệnh là bắt đầu cài đặt.",
   "getStarted.download.button": "Tải xuống gói cài đặt",
   "getStarted.source.title": "Mã nguồn trên GitHub",
   "getStarted.source.text": "Klacks là mã nguồn mở theo giấy phép AGPL-3.0. Backend, frontend và các Docker image đều công khai &mdash; bạn có thể kiểm tra, fork và đóng góp.",

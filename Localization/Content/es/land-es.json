@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks para España | Planificación de personal Open Source & Registro de Jornada",
+  "metaDescription": "Klacks planifica turnos, comprueba los descansos frente al Estatuto de los Trabajadores y documenta el inicio y el fin de cada jornada. Open source.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Sin cuotas de licencia &middot; Para el derecho laboral español",
     "titleHtml": "Planificación de personal <span class=\"text-secondary\">con la que usted mantiene el control.</span>",
-    "subtitle": "Klacks planifica turnos automáticamente, comprueba los descansos frente a las exigencias del Estatuto de los Trabajadores y documenta el inicio y el fin de cada jornada &mdash; open source, instalable en sus propias instalaciones y, si lo desea, con un modelo de IA local. Así los datos del personal pueden permanecer donde sus responsables de protección de datos quieren que estén: en su propia empresa.",
+    "subtitle": "Klacks planifica turnos automáticamente, comprueba los descansos frente a las exigencias del Estatuto de los Trabajadores y documenta el inicio y el fin de cada jornada &mdash; open source, instalable en sus propias instalaciones y, si lo desea, con un modelo de IA local. Así los datos del personal pueden estar donde sus responsables de protección de datos quieren que estén: en sus propios servidores.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Cuadrante de turnos de Klacks para empresas en España",
     "screenshotLabel": "Cuadrante"
@@ -81,8 +82,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Instalado en sus instalaciones: soberanía total de los datos",
-        "text": "Klacks funciona en su propia infraestructura, y usted elige el modelo de IA &mdash; con un modelo alojado localmente, sin ninguna transferencia de datos del personal al extranjero."
+        "title": "Instalado en sus instalaciones: datos en sus servidores",
+        "text": "Klacks funciona en su propia infraestructura, y usted elige el modelo de IA &mdash; con un modelo alojado localmente, ninguna solicitud de IA con datos del personal se envía a un proveedor de IA externo."
       },
       {
         "icon": "smart_toy",

@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für Frankreich | Personaleinsatzplanung Open Source & bei Ihnen installiert",
+  "metaDescription": "Klacks plant Dienste automatisch, kann die Überstunden-Zuschlagsstaffeln des Code du travail als Zeitgutschriften abbilden und läuft bei Ihnen installiert.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Ohne Lizenzgebühren &middot; Französischer Datenschutz",
     "titleHtml": "Personaleinsatzplanung, <span class=\"text-secondary\">bei der Sie die Kontrolle behalten.</span>",
-    "subtitle": "Klacks plant Dienste automatisch, kann die Überstunden-Zuschlagsstaffeln des Code du travail als Zeitgutschriften abbilden, prüft Ruhezeiten gegen Ihre hinterlegten Regeln und optimiert Touren &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So können Personaldaten dort bleiben, wo es die CNIL erwartet: im eigenen Haus.",
+    "subtitle": "Klacks plant Dienste automatisch, kann die Überstunden-Zuschlagsstaffeln des Code du travail als Zeitgutschriften abbilden, prüft Ruhezeiten gegen Ihre hinterlegten Regeln und optimiert Touren &mdash; open source, bei Ihnen installiert und auf Wunsch mit lokalem KI-Modell. So liegen Personaldaten auf Ihren eigenen Servern; die rechtliche Bewertung gegenüber der CNIL bleibt bei Ihnen.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks Dienstplan für Unternehmen in Frankreich",
     "screenshotLabel": "Dienstplan"
@@ -76,8 +77,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bei Ihnen installiert: volle Datenhoheit",
-        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten bleiben in Ihrem Haus, mit einem lokal gehosteten KI-Modell auch bei der KI. Das kommt der CNIL-Erwartung an den Beschäftigtendatenschutz (RGPD Art. 88) entgegen."
+        "title": "Bei Ihnen installiert: Daten auf Ihren Servern",
+        "text": "Klacks läuft auf Ihrer eigenen Infrastruktur &mdash; Personaldaten liegen auf Ihren Servern; mit einem lokal gehosteten KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter. Den Beschäftigtendatenschutz regelt RGPD Art. 88, die Aufsicht führt die CNIL; die rechtliche Bewertung bleibt bei Ihnen."
       },
       {
         "icon": "code",

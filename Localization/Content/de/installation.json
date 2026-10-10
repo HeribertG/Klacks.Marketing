@@ -1,6 +1,6 @@
 {
   "pageTitle": "Klacks installieren: Geführter Installer oder Docker Compose mit Länderpaket | Klacks",
-  "metaDescription": "Klacks auf eigener Infrastruktur installieren: geführter Installer oder Docker-Compose-Stack, vorkonfiguriert mit Feiertagen, Arbeitszeitregeln und &ndash; soweit für Ihr Land definiert &ndash; Zuschlägen. Ohne Lizenzgebühren, Open Source, ohne Registrierung.",
+  "metaDescription": "Klacks selbst installieren: geführter Installer oder Docker Compose, vorkonfiguriert mit Feiertagen und Arbeitszeitregeln. Open Source, ohne Lizenzgebühr.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ohne Lizenzgebühren &amp; Open Source",
@@ -19,7 +19,7 @@
     "text": "Der geführte Weg für den eigenen Server: Ein Installations-Skript erzeugt Secrets und ein selbstsigniertes Zertifikat, holt die aktuelle veröffentlichte Version und startet den kompletten Stack &mdash; auf Linux oder Windows.",
     "requirementsTitle": "Voraussetzungen",
     "requirements": [
-      "Docker Desktop (Windows/Mac) oder Docker Engine mit Compose-Plugin (Linux)",
+      "Docker Desktop (Windows) oder Docker Engine mit Compose-Plugin (Linux)",
       "Ausgehende Verbindung zu ghcr.io und github.com (Images und Updates)",
       "Freie Ports 80 und 443 (konfigurierbar)"
     ],
@@ -65,7 +65,7 @@
     "title": "Gut zu wissen",
     "items": [
       { "icon": "code", "title": "Open Source (AGPL-3.0)", "text": "Der komplette Quellcode ist unter der AGPL-3.0 auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
-      { "icon": "storage", "title": "Daten bleiben im Haus", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten liegen auf Ihrem Server &mdash; es gibt keinen Cloud-Zwang. Nur wenn Sie einen externen KI-Anbieter wählen, gehen Anfragen an diesen; mit einem lokalen Modell bleibt alles im Haus." },
+      { "icon": "storage", "title": "Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten liegen auf Ihrem Server &mdash; es gibt keinen Cloud-Zwang. Nur wenn Sie einen externen KI-Anbieter wählen, gehen Anfragen an diesen; mit einem lokalen Modell geht keine KI-Anfrage an einen externen Anbieter." },
       { "icon": "update", "title": "Updates", "text": "Die Installation pinnt die zuletzt veröffentlichte Version. Ein Update-Dienst im Stack spielt neue veröffentlichte Versionen automatisch ein." },
       { "icon": "lock", "title": "HTTPS ab dem Start", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern." }
     ]

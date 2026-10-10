@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks untuk Jasa Keamanan Indonesia | Batas 12 Jam sesuai PP 35/2021",
+  "metaDescription": "Klacks menampilkan pos kosong secara langsung, memperingatkan shift lebih dari 12 jam, dan atas permintaan mencegahnya pada perencanaan otomatis.",
   "hero": {
     "badgeIcon": "security",
     "badge": "Untuk Jasa Keamanan Satpam di Indonesia",
     "titleHtml": "Setiap pos terpantau. <span class=\"text-secondary\">Setiap tambahan tercatat.</span>",
-    "subtitle": "Klacks menampilkan pos kosong secara langsung, memberi peringatan langsung di roster untuk shift lebih dari 12 jam, dan atas permintaan mencegah pelanggaran tersebut pada jalur perencanaan otomatis &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. Terpasang di tempat Anda, sehingga data penugasan Anda tetap berada di tangan Anda.",
+    "subtitle": "Klacks menampilkan pos kosong secara langsung, memberi peringatan langsung di roster untuk shift lebih dari 12 jam, dan atas permintaan mencegah pelanggaran tersebut pada jalur perencanaan otomatis &mdash; karena batas harian ini sudah sepenuhnya memenuhi kerangka lembur yang diatur PP 35/2021. Terpasang di tempat Anda, sehingga data penugasan Anda berada di server Anda sendiri.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Tampilan Timeline Klacks untuk penempatan objek jasa keamanan di Indonesia",
     "screenshotLabel": "Timeline"
@@ -51,8 +52,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Terpasang di tempat Anda: kedaulatan data penuh",
-        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; data penugasan tetap berada di tempat yang Anda inginkan."
+        "title": "Terpasang di tempat Anda: data di server Anda",
+        "text": "Klacks berjalan di infrastruktur Anda sendiri, dan Anda sendiri yang memilih model AI-nya &mdash; data penugasan disimpan di tempat yang Anda tentukan."
       },
       {
         "icon": "smart_toy",

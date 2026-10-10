@@ -1,6 +1,6 @@
 {
   "pageTitle": "Instalați Klacks: instalator ghidat sau Docker Compose cu pachetul de țară | Klacks",
-  "metaDescription": "Instalați Klacks pe propria infrastructură: instalator ghidat sau stack Docker Compose, preconfigurat cu sărbătorile legale, regulile timpului de lucru și &ndash; în măsura în care sunt definite pentru țara dumneavoastră &ndash; sporurile. Fără taxe de licență, open source, fără înregistrare.",
+  "metaDescription": "Instalați Klacks pe propria infrastructură cu instalatorul ghidat sau Docker Compose, preconfigurat cu sărbători legale. Open source, fără taxe de licență.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalare &middot; Fără taxe de licență &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Calea ghidată pentru propriul server: un script de instalare generează secretele și un certificat autosemnat, preia cea mai recentă versiune publicată și pornește întregul stack &mdash; pe Linux sau Windows.",
     "requirementsTitle": "Cerințe",
     "requirements": [
-      "Docker Desktop (Windows/Mac) sau Docker Engine cu pluginul Compose (Linux)",
+      "Docker Desktop (Windows) sau Docker Engine cu pluginul Compose (Linux)",
       "Acces de ieșire către ghcr.io și github.com (imagini și actualizări)",
       "Porturile 80 și 443 libere (configurabile)"
     ],
@@ -65,7 +65,7 @@
     "title": "Bine de știut",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Codul sursă complet este public pe GitHub sub licența AGPL-3.0 &mdash; fără costuri de licență, fără vendor lock-in." },
-      { "icon": "storage", "title": "Datele rămân în companie", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare se află pe serverul dumneavoastră &mdash; nu există cloud obligatoriu. Numai dacă alegeți un furnizor extern de IA, cererile ajung la acesta; cu un model local totul rămâne în casă." },
+      { "icon": "storage", "title": "Datele se află pe serverele dumneavoastră", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare se află pe serverul dumneavoastră &mdash; nu există cloud obligatoriu. Numai dacă alegeți un furnizor extern de IA, cererile ajung la acesta; cu un model local, nicio solicitare de IA nu ajunge la un furnizor extern." },
       { "icon": "update", "title": "Actualizări", "text": "Instalarea fixează cea mai recentă versiune publicată. Un serviciu de actualizare din interiorul stack-ului aplică automat versiunile nou publicate." },
       { "icon": "lock", "title": "HTTPS de la început", "text": "Instalatorul generează un certificat autosemnat pentru start &mdash; puteți trece oricând la propriul certificat. Schimbați parola inițială imediat după prima autentificare." }
     ]

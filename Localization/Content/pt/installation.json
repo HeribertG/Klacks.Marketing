@@ -1,6 +1,6 @@
 {
   "pageTitle": "Instalar a Klacks: instalador guiado ou Docker Compose com pacote de país | Klacks",
-  "metaDescription": "Instale a Klacks na sua própria infraestrutura: instalador guiado ou stack Docker Compose, pré-configurado com os feriados, as regras de tempo de trabalho e &ndash; quando definidos para o seu país &ndash; os suplementos. Sem taxas de licença, código aberto, sem registo.",
+  "metaDescription": "Instale a Klacks: instalador guiado ou Docker Compose, pré-configurado com feriados e regras de tempo de trabalho. Código aberto, sem taxas de licença.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalação &middot; Sem taxas de licença &amp; código aberto",
@@ -19,7 +19,7 @@
     "text": "O caminho guiado para o seu próprio servidor: um script de instalação gera os segredos e um certificado autoassinado, obtém a versão publicada mais recente e arranca todo o stack &mdash; em Linux ou Windows.",
     "requirementsTitle": "Requisitos",
     "requirements": [
-      "Docker Desktop (Windows/Mac) ou Docker Engine com o plugin Compose (Linux)",
+      "Docker Desktop (Windows) ou Docker Engine com o plugin Compose (Linux)",
       "Acesso de saída a ghcr.io e github.com (imagens e atualizações)",
       "Portas 80 e 443 livres (configurável)"
     ],
@@ -65,7 +65,7 @@
     "title": "Convém saber",
     "items": [
       { "icon": "code", "title": "Código aberto (AGPL-3.0)", "text": "O código-fonte completo está público no GitHub sob a AGPL-3.0 &mdash; sem custos de licença, sem dependência de fornecedor." },
-      { "icon": "storage", "title": "Os dados ficam em casa", "text": "A Klacks é executada na sua infraestrutura. Os dados de pessoal e de escalas ficam no seu servidor &mdash; não há nuvem obrigatória. Só se escolher um fornecedor de IA externo é que os pedidos lhe são enviados; com um modelo local, tudo fica nas suas instalações." },
+      { "icon": "storage", "title": "Os dados estão nos seus servidores", "text": "A Klacks é executada na sua infraestrutura. Os dados de pessoal e de escalas ficam no seu servidor &mdash; não há nuvem obrigatória. Só se escolher um fornecedor de IA externo é que os pedidos lhe são enviados; com um modelo local, nenhum pedido de IA é enviado a um fornecedor externo." },
       { "icon": "update", "title": "Atualizações", "text": "A instalação fixa a versão publicada mais recente. Um serviço de atualização dentro do stack aplica automaticamente as novas versões publicadas." },
       { "icon": "lock", "title": "HTTPS desde o início", "text": "O instalador gera um certificado autoassinado para começar &mdash; pode mudar para o seu próprio certificado em qualquer altura. Altere a palavra-passe inicial logo após o primeiro início de sessão." }
     ]

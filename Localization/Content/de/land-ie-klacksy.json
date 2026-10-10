@@ -1,5 +1,6 @@
 {
   "pageTitle": "Klacksy: KI-Assistent mit hinterlegter Vorlauffrist | Klacks",
+  "metaDescription": "Section 17 OWTA verlangt einen Mindest-Vorlauf für Dienstpläne. Sie hinterlegen ihn in Klacks, und Klacks berechnet, bis wann der Plan fertig sein muss.",
   "hero": {
     "badgeIcon": "smart_toy",
     "badge": "Für alle Branchen &middot; KI-Assistent",
@@ -25,7 +26,7 @@
       { "icon": "event_available", "title": "Vorlauffrist als hinterlegter Wert", "text": "Den Mindest-Vorlauf für die Dienstplan-Publikation hinterlegen Sie in den Einstellungen von Klacks. Daraus berechnet Klacks fest nach Formel, bis wann ein Plan fertig sein muss &mdash; unabhängig vom eingesetzten KI-Modell. Eine automatische Prüfung beim Veröffentlichen gibt es nicht." },
       { "icon": "fact_check", "title": "Auskunft aus der Stundendokumentation", "text": "Klacksy beantwortet Fragen zu geplanten und geleisteten Stunden aus der lückenlosen Dokumentation in Klacks. Das ist die Datengrundlage, auf die sich ein Banded-Hours-Antrag stützt &mdash; keine Schätzung eines Sprachmodells." },
       { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen immer Ihre Bestätigung." },
-      { "icon": "dns", "title": "Modell lokal betreiben", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Damit lässt sich der Assistent betreiben, ohne dass Beschäftigtendaten das Haus verlassen." }
+      { "icon": "dns", "title": "Modell lokal betreiben", "text": "Sie wählen das Sprachmodell selbst, bis hin zum lokal gehosteten. Damit lässt sich der Assistent betreiben, sodass keine KI-Anfrage mit Beschäftigtendaten an einen externen KI-Anbieter geht." }
     ]
   },
   "example": {

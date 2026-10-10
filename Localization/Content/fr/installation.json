@@ -1,6 +1,6 @@
 {
   "pageTitle": "Installer Klacks : installateur guidé ou Docker Compose avec le paquet pays | Klacks",
-  "metaDescription": "Installez Klacks sur votre propre infrastructure : installateur guidé ou stack Docker Compose, préconfiguré avec les jours fériés, les règles de temps de travail et, là où elles sont définies pour votre pays, les majorations. Sans frais de licence, open source, sans inscription.",
+  "metaDescription": "Installez Klacks chez vous : installateur guidé ou Docker Compose, avec jours fériés et règles de temps de travail. Open source, sans frais de licence.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Sans frais de licence &amp; open source",
@@ -19,7 +19,7 @@
     "text": "Le chemin guidé pour votre propre serveur : un script d'installation génère les secrets et un certificat auto-signé, récupère la dernière version publiée et démarre l'ensemble du stack &mdash; sous Linux ou Windows.",
     "requirementsTitle": "Prérequis",
     "requirements": [
-      "Docker Desktop (Windows/Mac) ou Docker Engine avec le plugin Compose (Linux)",
+      "Docker Desktop (Windows) ou Docker Engine avec le plugin Compose (Linux)",
       "Accès sortant vers ghcr.io et github.com (images et mises à jour)",
       "Ports 80 et 443 libres (configurables)"
     ],
@@ -65,7 +65,7 @@
     "title": "Bon à savoir",
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Le code source complet est public sur GitHub sous licence AGPL-3.0 &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
-      { "icon": "storage", "title": "Les données restent chez vous", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings se trouvent sur votre serveur &mdash; aucun cloud imposé. Des requêtes ne partent vers un fournisseur d'IA externe que si vous en choisissez un ; avec un modèle local, tout reste sur place." },
+      { "icon": "storage", "title": "Les données se trouvent sur vos serveurs", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings se trouvent sur votre serveur &mdash; aucun cloud imposé. Des requêtes ne partent vers un fournisseur d'IA externe que si vous en choisissez un ; avec un modèle local, aucune requête d'IA n'est envoyée à un fournisseur externe." },
       { "icon": "update", "title": "Mises à jour", "text": "L'installation épingle la dernière version publiée. Un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
       { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }
     ]

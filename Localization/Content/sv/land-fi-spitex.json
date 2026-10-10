@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "För hemtjänsten (kotihoito) i Finland",
     "titleHtml": "Mer tid för vård, <span class=\"text-secondary\">mindre för ruttplanering.</span>",
-    "subtitle": "Klacks planerar besök och rutter i hemtjänstens periodarbete (jaksotyö) automatiskt &mdash; inklusive den förkortade 9-timmars vilotiden med 14-dagars kompensation och måltidstiden som räknas som arbetstid under arbetet. Installerat hos dig, så att patientdata inte behöver lämna ditt hus &mdash; på begäran med lokalt hostad AI-modell.",
+    "subtitle": "Klacks planerar besök och rutter i hemtjänstens periodarbete (jaksotyö) automatiskt &mdash; inklusive den förkortade 9-timmars vilotiden med 14-dagars kompensation och måltidstiden som räknas som arbetstid under arbetet. Installerat hos dig, så att patientdata finns på dina egna servrar &mdash; på begäran med lokalt hostad AI-modell.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks tidslinjevy för ruttplanering av hemtjänsten i Finland",
     "screenshotLabel": "Tidslinje"
@@ -26,7 +26,7 @@
       { "icon": "bedtime", "title": "9-timmars vila &amp; 14-dagars kompensation övervakas", "text": "Klacks upptäcker varje förkortning av dygnsvilan till 9 timmar och håller koll på den lagstadgade 14-dagarsfristen för kompensationen." },
       { "icon": "restaurant", "title": "Måltidstiden räknas som arbetstid", "text": "I ruttpass räknar Klacks som standard måltiden som intas under periodarbetet som arbetstid &mdash; i stället för att felaktigt behandla den som en obetald rast." },
       { "icon": "verified", "title": "Kompetenser beaktas automatiskt", "text": "Varje besök tilldelas endast personer med rätt kompetens &mdash; helt utan manuell kontroll." },
-      { "icon": "shield_lock", "title": "Installerat hos dig: patientdata stannar i huset", "text": "Klacks körs på din egen infrastruktur. Patientdata lämnar inte ditt hus &mdash; med lokalt hostad AI-modell inte heller till AI:n." },
+      { "icon": "shield_lock", "title": "Installerat hos dig: patientdata finns på dina servrar", "text": "Klacks körs på din egen infrastruktur. Patientdata finns på dina servrar &mdash; med lokalt hostad AI-modell skickas ingen AI-förfrågan till en extern AI-leverantör." },
       { "icon": "smart_toy", "title": "Klacksy förstår din mening", "text": "”Fyll rutterna för i morgon” räcker. Vid ett sjukdomsfall föreslår Klacksy omedelbart en tillgänglig ersättare." }
     ]
   },

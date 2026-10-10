@@ -1,6 +1,6 @@
 {
   "pageTitle": "Cài đặt Klacks: trình cài đặt có hướng dẫn hoặc Docker Compose với gói quốc gia của bạn | Klacks",
-  "metaDescription": "Cài đặt Klacks trên hạ tầng của riêng bạn: trình cài đặt có hướng dẫn hoặc stack Docker Compose, được cấu hình sẵn với ngày lễ, quy định thời giờ làm việc và giờ phụ trội (nếu quốc gia của bạn có quy định). Không mất phí bản quyền, mã nguồn mở, không cần đăng ký.",
+  "metaDescription": "Cài đặt Klacks trên hạ tầng riêng bằng trình cài đặt hoặc Docker Compose, kèm sẵn ngày lễ và quy định thời giờ làm việc. Mã nguồn mở, không phí bản quyền.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Cài đặt &middot; Không mất phí bản quyền &amp; mã nguồn mở",
@@ -19,7 +19,7 @@
     "text": "Con đường có hướng dẫn cho máy chủ của riêng bạn: một tập lệnh cài đặt sẽ tạo các khóa bí mật và chứng chỉ tự ký, kéo về phiên bản phát hành mới nhất và khởi động toàn bộ stack &mdash; trên Linux hoặc Windows.",
     "requirementsTitle": "Yêu cầu",
     "requirements": [
-      "Docker Desktop (Windows/Mac) hoặc Docker Engine với plugin Compose (Linux)",
+      "Docker Desktop (Windows) hoặc Docker Engine với plugin Compose (Linux)",
       "Kết nối ra ngoài tới ghcr.io và github.com (image và cập nhật)",
       "Cổng 80 và 443 còn trống (có thể cấu hình)"
     ],
@@ -65,7 +65,7 @@
     "title": "Những điều nên biết",
     "items": [
       { "icon": "code", "title": "Mã nguồn mở (AGPL-3.0)", "text": "Toàn bộ mã nguồn được công khai trên GitHub theo giấy phép AGPL-3.0 &mdash; không phí bản quyền, không bị khóa chặt vào nhà cung cấp." },
-      { "icon": "storage", "title": "Dữ liệu ở lại trong doanh nghiệp", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc nằm trên máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud. Chỉ khi bạn chọn nhà cung cấp AI bên ngoài thì các yêu cầu mới được gửi đến họ; với mô hình cục bộ, mọi thứ vẫn ở trong nội bộ." },
+      { "icon": "storage", "title": "Dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc nằm trên máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud. Chỉ khi bạn chọn nhà cung cấp AI bên ngoài thì các yêu cầu mới được gửi đến họ; với mô hình cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp bên ngoài." },
       { "icon": "update", "title": "Cập nhật", "text": "Bản cài đặt ghim phiên bản phát hành mới nhất. Một dịch vụ cập nhật bên trong stack sẽ tự động áp dụng các phiên bản mới được phát hành." },
       { "icon": "lock", "title": "HTTPS ngay từ đầu", "text": "Trình cài đặt tạo một chứng chỉ tự ký để bạn khởi đầu &mdash; bạn có thể chuyển sang chứng chỉ riêng bất cứ lúc nào. Hãy đổi mật khẩu ban đầu ngay sau lần đăng nhập đầu tiên." }
     ]

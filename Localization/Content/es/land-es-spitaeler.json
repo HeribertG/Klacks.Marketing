@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Para hospitales &amp; clínicas en España",
     "titleHtml": "Cuadrantes que <span class=\"text-secondary\">cuadran las 24 horas del día.</span>",
-    "subtitle": "Klacks planifica plantas y guardias sin huecos &mdash; con los descansos comprobados automáticamente según el Estatuto Marco y sin fichaje biométrico. Instalado en sus instalaciones, para que los datos de los pacientes nunca salgan de su empresa.",
+    "subtitle": "Klacks planifica plantas y guardias sin huecos &mdash; con los descansos comprobados automáticamente según el Estatuto Marco y sin fichaje biométrico. Instalado en sus instalaciones, para que los datos de los pacientes estén en sus propios servidores.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Cuadrante de turnos de Klacks para hospitales y clínicas en España",
     "screenshotLabel": "Cuadrante"
@@ -51,8 +51,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Instalado en sus instalaciones: los datos permanecen en su empresa",
-        "text": "Klacks funciona en su propia infraestructura. Los datos del personal y de los pacientes permanecen en el hospital &mdash; con un modelo de IA alojado localmente, también en lo que respecta a la IA."
+        "title": "Instalado en sus instalaciones: los datos están en sus servidores",
+        "text": "Klacks funciona en su propia infraestructura. Los datos del personal y de los pacientes están en sus servidores &mdash; con un modelo de IA alojado localmente, ninguna solicitud de IA se envía a un proveedor de IA externo."
       },
       {
         "icon": "smart_toy",

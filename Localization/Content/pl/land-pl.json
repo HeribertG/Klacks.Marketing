@@ -1,5 +1,6 @@
 {
   "pageTitle": "Klacks dla firm w Polsce | Ewidencja czasu pracy i planowanie personelu na kontrole PIP",
+  "metaDescription": "Klacks prowadzi pełną ewidencję czasu pracy, automatycznie sprawdza okresy odpoczynku i działa na własnym sprzęcie, bez ewidencji biometrycznej.",
   "hero": {
     "badgeIcon": "public",
     "badge": "Open Source &middot; Bez opłat licencyjnych &middot; Polska ochrona danych",
@@ -39,7 +40,7 @@
       { "icon": "bedtime", "title": "Automatyczna kontrola odpoczynku", "text": "11-godzinny dobowy i 35-godzinny tygodniowy odpoczynek (art. 132 i nast. Kodeksu pracy) Klacks sprawdza automatycznie i ostrzega przy ich naruszeniu; odpoczynek tygodniowy jest kontrolowany przez dzień wolny w tygodniu, a nie jako ciągły okres, a jego przypadania w niedzielę Klacks nie sprawdza." },
       { "icon": "calendar_month", "title": "Równoważny czas pracy pod kontrolą", "text": "Klacks uwzględnia do 12 godzin dobowego wymiaru czasu pracy w równoważnym systemie czasu pracy i na bieżąco monitoruje średnią w standardowym 1-miesięcznym okresie rozliczeniowym &mdash; wraz z uzasadnionym przedłużeniem &mdash; ostrzegając, zanim limit zostanie przekroczony. Na życzenie Klacks blokuje przekroczenie w planowaniu automatycznym w sposób twardy; w planowaniu ręcznym pozostaje przy ostrzeżeniu." },
       { "icon": "fingerprint", "title": "Bez konieczności biometrycznej ewidencji czasu pracy", "text": "Klacks działa całkowicie bez odcisku palca czy rozpoznawania twarzy &mdash; a tym samym bez ryzyka prawnego, jakie widzi w tym art. 22¹b Kodeksu pracy i orzecznictwo NSA." },
-      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: pełna suwerenność danych", "text": "Klacks działa na Twojej własnej infrastrukturze, a model AI wybierasz samodzielnie &mdash; bez przymusu chmury; przy lokalnie hostowanym modelu dane osobowe pracowników nie trafiają do zewnętrznych dostawców, co UODO krytykuje." },
+      { "icon": "shield_lock", "title": "Zainstalowany na własnym sprzęcie: dane na własnych serwerach", "text": "Klacks działa na Twojej własnej infrastrukturze, a model AI wybierasz samodzielnie &mdash; bez przymusu chmury; przy lokalnie hostowanym modelu żadne zapytania AI z danymi osobowymi pracowników nie trafiają do zewnętrznych dostawców, co UODO krytykuje." },
       { "icon": "smart_toy", "title": "Klacksy: oparty na regułach, bez czarnej skrzynki", "text": "Zintegrowany asystent AI Klacksy rozumie polecenia w języku potocznym i steruje Klacks; grafik oblicza oparty na regułach silnik planowania &mdash; w sposób przejrzysty, zgodnie z zapisanymi regułami, a nie jako nieprzejrzysta decyzja AI." },
       { "icon": "science", "title": "Przetestuj zmiany grafiku bez ryzyka", "text": "Zanim zmiana grafiku wejdzie w życie, możesz najpierw przetestować ją jako izolowaną kopię &mdash; 11-godzinny odpoczynek (art. 132 i nast. Kodeksu pracy) oraz dodatki są przy tym na bieżąco naliczane dokładnie tak samo, jak w rzeczywistym grafiku. Dopiero gdy wszystko się zgadza, przejmujesz wariant; do tego czasu Twój bieżący grafik pozostaje bez zmian. Dzięki temu na przewidywalne sytuacje &mdash; na przykład nieobecność chorobową lub skok liczby zleceń &mdash; przygotowujesz odpowiedni scenariusz z wyprzedzeniem i w razie potrzeby jesteś od razu gotowy do działania, zamiast improwizować pod presją czasu. Nie ma przy tym żadnego sztucznego limitu &mdash; tworzysz tyle scenariuszy, ile potrzebujesz do swojego planowania." }
     ]
@@ -47,7 +48,7 @@
   "klacksy": {
     "eyebrow": "Asystent AI",
     "title": "Klacksy: zintegrowany asystent dla Twojego zespołu",
-    "text": "Klacksy to nie doczepiony marketingowy chatbot, lecz asystent wbudowany bezpośrednio w interfejs Klacks. Pracownicy i planiści za pomocą czatu sprawdzają godziny dyżurów lub wyjaśniają dostępność. Wbudowany system umiejętności i reguł zapewnia, że Klacksy przedstawia zrozumiałe propozycje &mdash; a nie nieprzejrzystą decyzję czarnej skrzynki. Dla firm o wysokich wymaganiach w zakresie ochrony danych model AI można dodatkowo hostować lokalnie, całkowicie bez transferu danych personalnych za granicę.",
+    "text": "Klacksy to nie doczepiony marketingowy chatbot, lecz asystent wbudowany bezpośrednio w interfejs Klacks. Pracownicy i planiści za pomocą czatu sprawdzają godziny dyżurów lub wyjaśniają dostępność. Wbudowany system umiejętności i reguł zapewnia, że Klacksy przedstawia zrozumiałe propozycje &mdash; a nie nieprzejrzystą decyzję czarnej skrzynki. Dla firm o wysokich wymaganiach w zakresie ochrony danych model AI można dodatkowo hostować lokalnie, dzięki czemu żadne zapytanie do AI zawierające dane personalne nie trafia do zewnętrznego dostawcy AI.",
     "imageFile": "app-klacksy-de.png",
     "imageAlt": "Asystent czatu Klacksy w interfejsie Klacks"
   },

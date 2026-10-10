@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Sairaaloille &amp; klinikoille",
     "titleHtml": "Työvuorolistat, jotka <span class=\"text-secondary\">toimivat ympäri vuorokauden.</span>",
-    "subtitle": "Klacks suunnittelee osastot ja vuorot aukottomasti &mdash; tarkistetuin lepoajoin, pätevyydet kohdallaan ja täydellä tietosuvereniteetilla. Asennettuna omiin tiloihinne; paikallisella tekoälymallilla potilastiedot eivät poistu talostanne.",
+    "subtitle": "Klacks suunnittelee osastot ja vuorot aukottomasti &mdash; tarkistetuin lepoajoin, pätevyydet kohdallaan ja tiedot palvelimillanne. Asennettuna omiin tiloihinne, potilastiedot omilla palvelimillanne; paikallisella tekoälymallilla yksikään tekoälypyyntö ei mene ulkoiselle tekoälypalveluntarjoajalle.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacksin työvuorolistanäkymä sairaaloille",
     "screenshotLabel": "Työvuorolista",
@@ -26,7 +26,7 @@
       { "icon": "schedule", "title": "Aukoton ympärivuorokautinen kattavuus", "text": "Aamu-, ilta- ja yövuorot kaikilla osastoilla &mdash; Klacks näyttää jokaisen aukon heti ja täyttää sen halutessanne automaattisesti." },
       { "icon": "gavel", "title": "Lepoajat automaattisesti tarkistettuina", "text": "Työaikalakia, lepoaikoja ja enimmäisrajoja valvotaan reaaliajassa &mdash; rikkomukset näkyvät heti." },
       { "icon": "verified", "title": "Pätevyydet &amp; osastot", "text": "Jokainen vuoro osoitetaan vain sopivasti pätevälle henkilöstölle &mdash; osastoittain, yksiköittäin ja tehtävittäin." },
-      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: tiedot talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja potilastiedot sijaitsevat palvelimillanne &mdash; paikallisella tekoälymallilla tekoälynkään kautta ei poistu mitään sairaalasta." },
+      { "icon": "shield_lock", "title": "Asennettuna omiin tiloihinne: tiedot palvelimillanne", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja potilastiedot sijaitsevat palvelimillanne &mdash; paikallisella tekoälymallilla tekoälynkään kautta ei poistu mitään sairaalasta." },
       { "icon": "smart_toy", "title": "Klacksy ymmärtää lauseenne", "text": "”Täytä sisätautien yövuorot ensi viikoksi” riittää &mdash; Klacksy käynnistää suunnittelun, Klacks huomioi pätevyyden ja lepoajat." },
       { "icon": "groups", "title": "Sijaispooli &amp; poissaolot", "text": "Jos joku on poissa, Klacks näyttää heti saatavilla olevat, pätevät sijaiset &mdash; ilman koko suunnitelman kaatamista." }
     ]

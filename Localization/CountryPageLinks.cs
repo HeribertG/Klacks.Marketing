@@ -17,6 +17,7 @@ public static class CountryPageLinks
     public const string MidSizeBusinessSlug = "mittlere-betriebe";
     public const string LargeBusinessSlug = "grosse-betriebe";
     public const string AboutSlug = "ueber-uns";
+    public const string OfferSlug = "angebot";
 
     public static string Href(string? cultureSlug, string? country, string slug)
     {

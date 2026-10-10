@@ -1,6 +1,6 @@
 {
   "pageTitle": "Asenna Klacks: ohjattu asennusohjelma tai Docker Compose maapaketilla | Klacks",
-  "metaDescription": "Asentakaa Klacks omaan infrastruktuuriinne: ohjattu asennusohjelma tai Docker Compose -pino, esikonfiguroituna maanne pyhäpäivillä, työaikasäännöillä ja – siltä osin kuin ne on maallenne määritelty – lisillä. Ei lisenssimaksuja, avoin lähdekoodi, ei rekisteröitymistä.",
+  "metaDescription": "Asentakaa Klacks itse: ohjattu asennus tai Docker Compose, esikonfiguroituna pyhäpäivillä ja työaikasäännöillä. Avoin lähdekoodi, ei lisenssimaksuja.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Asennus &middot; Ei lisenssimaksuja &amp; avoin lähdekoodi",
@@ -19,7 +19,7 @@
     "text": "Ohjattu polku omalle palvelimelle: asennusskripti luo salaisuudet ja itseallekirjoitetun varmenteen, noutaa uusimman julkaistun version ja käynnistää koko pinon &mdash; Linuxissa tai Windowsissa.",
     "requirementsTitle": "Vaatimukset",
     "requirements": [
-      "Docker Desktop (Windows/Mac) tai Docker Engine Compose-laajennuksella (Linux)",
+      "Docker Desktop (Windows) tai Docker Engine Compose-laajennuksella (Linux)",
       "Lähtevä yhteys osoitteisiin ghcr.io ja github.com (imaget ja päivitykset)",
       "Vapaat portit 80 ja 443 (määritettävissä)"
     ],
@@ -65,7 +65,7 @@
     "title": "Hyvä tietää",
     "items": [
       { "icon": "code", "title": "Avoin lähdekoodi (AGPL-3.0)", "text": "Koko lähdekoodi on julkisesti GitHubissa AGPL-3.0-lisenssillä &mdash; ei lisenssimaksuja, ei toimittajalukkoa." },
-      { "icon": "storage", "title": "Tiedot pysyvät talossa", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot sijaitsevat palvelimellanne &mdash; pilvipakkoa ei ole. Vain jos valitsette ulkoisen tekoälypalveluntarjoajan, pyynnöt lähetetään sille; paikallisella mallilla kaikki pysyy talossa." },
+      { "icon": "storage", "title": "Tiedot sijaitsevat palvelimillanne", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot sijaitsevat palvelimellanne &mdash; pilvipakkoa ei ole. Vain jos valitsette ulkoisen tekoälypalveluntarjoajan, pyynnöt lähetetään sille; paikallisella mallilla yksikään tekoälypyyntö ei mene ulkoiselle palveluntarjoajalle." },
       { "icon": "update", "title": "Päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version. Pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti." },
       { "icon": "lock", "title": "HTTPS alusta alkaen", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen." }
     ]

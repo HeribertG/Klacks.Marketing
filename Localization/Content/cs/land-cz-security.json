@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks pro bezpečnostní služby v Česku | Limit noční směny & DPP/DPČ",
+  "metaDescription": "Klacks průběžně hlídá vámi nastavenou maximální denní pracovní dobu, automaticky přiřazuje příplatky dohodářům a upozorní na zkrácenou dobu odpočinku.",
   "hero": {
     "badgeIcon": "security",
     "badge": "Pro bezpečnostní služby &amp; ostrahu v Česku",
     "titleHtml": "Každé stanoviště obsazené. <span class=\"text-secondary\">Každé pravidlo na očích.</span>",
-    "subtitle": "Klacks průběžně hlídá maximální denní pracovní dobu, kterou nastavíte, automaticky přiřazuje příplatky dohodářům a upozorní na zkrácenou denní dobu odpočinku, pokud chybí vyrovnání v následující době odpočinku. Nainstalovaný u vás, takže data o výjezdech zůstávají u vás.",
+    "subtitle": "Klacks průběžně hlídá maximální denní pracovní dobu, kterou nastavíte, automaticky přiřazuje příplatky dohodářům a upozorní na zkrácenou denní dobu odpočinku, pokud chybí vyrovnání v následující době odpočinku. Nainstalovaný u vás, takže data o výjezdech jsou uložena na vašich vlastních serverech.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Časová osa Klacks pro obsazení objektů a směny v bezpečnostním sektoru v Česku",
     "screenshotLabel": "Časová osa"
@@ -26,7 +27,7 @@
       { "icon": "nightlight", "title": "Maximální denní pracovní doba hlídána", "text": "8hodinový limit pro noční pracovníky zadáte jako maximální denní pracovní dobu, například ve smlouvě vašich nočních strážných &mdash; Klacks v reálném čase upozorní, jakmile je překročen. Noční směny přitom Klacks zvlášť nerozpoznává a 26týdenní průměr délky směny Klacks nesleduje." },
       { "icon": "groups", "title": "Příplatky DPP/DPČ přiřazeny", "text": "Klacks automaticky přiřazuje noční a víkendový příplatek dohodářům; třídenní lhůtu pro oznámení Klacks nekontroluje." },
       { "icon": "bedtime", "title": "Zkrácená doba odpočinku pod kontrolou", "text": "Je-li denní doba odpočinku zkrácena na 8 hodin, Klacks zobrazí potřebné vyrovnání v následující době odpočinku a upozorní, pokud chybí." },
-      { "icon": "shield_lock", "title": "Nainstalovaný u vás: plná suverenita nad daty", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o výjezdech i zákaznících zůstávají u vás; u AI funkcí na přání s lokálně provozovaným modelem." },
+      { "icon": "shield_lock", "title": "Nainstalovaný u vás: data na vašich serverech", "text": "Klacks běží na vaší vlastní infrastruktuře &mdash; data o výjezdech i zákaznících jsou uložena na vašich serverech; u AI funkcí na přání s lokálně provozovaným modelem." },
       { "icon": "smart_toy", "title": "Klacksy rozumí vaší větě", "text": "„Obsaď noční směnu pro objekt Sever“ stačí &mdash; Klacksy spustí plánování, Klacks zkontroluje délku směny, dobu odpočinku i dostupnost." }
     ]
   },

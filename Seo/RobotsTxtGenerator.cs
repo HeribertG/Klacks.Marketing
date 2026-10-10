@@ -5,8 +5,8 @@ namespace Klacks.Marketing.Seo;
 // Builds the robots.txt body. Everything is allowed for everyone except the store API
 // (its download endpoints bump a public counter, so crawlers must not follow them); the explicit
 // per-crawler Allow blocks (from AiCrawlers) make the welcome for AI crawlers
-// unambiguous, since some only read their own named group. The Sitemap line must be
-// an absolute URL per the standard, and a trailing comment points machine readers
+// unambiguous, since some only read their own named group. The Sitemap lines (the site
+// sitemap and the docs sitemap index) must be absolute URLs per the standard, and a trailing comment points machine readers
 // at the llms.txt companion file.
 public static class RobotsTxtGenerator
 {
@@ -29,6 +29,7 @@ public static class RobotsTxtGenerator
         }
 
         sb.AppendLine($"Sitemap: {trimmedBase}{SitemapPath}");
+        sb.AppendLine($"Sitemap: {trimmedBase}{DocsSitemapIndexGenerator.IndexPath}");
         sb.AppendLine($"# llms.txt: {trimmedBase}{LlmsPath}");
 
         return sb.ToString();

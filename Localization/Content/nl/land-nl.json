@@ -4,7 +4,7 @@
     "badgeIcon": "shield_lock",
     "badge": "Voor werkgevers in Nederland &middot; open source &middot; Zonder licentiekosten",
     "titleHtml": "Dienstroosters die de <span class=\"text-secondary\">Arbeidstijdenwet live in de gaten houden.</span>",
-    "subtitle": "Klacks plant diensten automatisch volgens de Nederlandse Arbeidstijdenwet (ATW) en zet oproepkrachten in met datum en uren; de termijnen van de Wet arbeidsmarkt in balans (WAB) houdt u zelf in het oog &mdash; op uw eigen locatie geïnstalleerd, zodat personeelsgegevens in uw eigen infrastructuur blijven.",
+    "subtitle": "Klacks plant diensten automatisch volgens de Nederlandse Arbeidstijdenwet (ATW) en zet oproepkrachten in met datum en uren; de termijnen van de Wet arbeidsmarkt in balans (WAB) houdt u zelf in het oog &mdash; op uw eigen locatie geïnstalleerd, zodat personeelsgegevens op uw eigen servers staan.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Klacks dienstroosteroverzicht voor bedrijven in Nederland",
     "screenshotLabel": "Dienstrooster"
@@ -81,8 +81,8 @@
       },
       {
         "icon": "shield_lock",
-        "title": "Bij u geïnstalleerd: volledige datasoevereiniteit",
-        "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; met een lokaal model verlaten personeelsgegevens uw pand niet."
+        "title": "Bij u geïnstalleerd: gegevens op uw servers",
+        "text": "Klacks draait op uw eigen infrastructuur, het AI-model kiest u zelf &mdash; personeelsgegevens staan op uw servers, en met een lokaal model gaat geen AI-verzoek naar een externe AI-aanbieder."
       },
       {
         "icon": "smart_toy",

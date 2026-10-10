@@ -4,7 +4,7 @@
     "badgeIcon": "home_health",
     "badge": "Pentru îngrijirea la domiciliu &amp; îngrijirea ambulatorie",
     "titleHtml": "Mai mult timp pentru îngrijire, <span class=\"text-secondary\">mai puțin pentru planificarea traseelor.</span>",
-    "subtitle": "Klacks planifică vizitele și traseele automat &mdash; cu calificările potrivite, sporuri configurabile și sărbătorile legale din cantonul dumneavoastră. Instalat la dumneavoastră; cu un model local de IA, datele pacienților nu vă părăsesc sediul.",
+    "subtitle": "Klacks planifică vizitele și traseele automat &mdash; cu calificările potrivite, sporuri configurabile și sărbătorile legale din cantonul dumneavoastră. Instalat la dumneavoastră, datele pacienților pe serverele dumneavoastră proprii; cu un model local de IA, nicio solicitare de IA nu ajunge la un furnizor extern de IA.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vizualizarea Timeline din Klacks pentru planificarea traseelor de îngrijire la domiciliu",
     "screenshotLabel": "Timeline",
@@ -26,7 +26,7 @@
       { "icon": "route", "title": "Trasee optimizate automat", "text": "Klacks stabilește rutele de intervenție astfel încât drumurile să fie scurte, iar intervalele orare respectate &mdash; pentru mașină, bicicletă sau pe jos." },
       { "icon": "verified", "title": "Calificările, luate automat în calcul", "text": "Fiecare vizită este atribuită doar persoanelor cu calificarea potrivită &mdash; fără nicio verificare manuală." },
       { "icon": "event_available", "title": "Sărbători legale din cantonul dumneavoastră &amp; sporuri", "text": "Sărbătorile legale sunt preconfigurate &mdash; până la nivel de canton și comună. Sporurile de noapte, weekend și sărbători legale le stabiliți singuri ca credite de timp, totul fiind liber personalizabil." },
-      { "icon": "shield_lock", "title": "Instalat la dumneavoastră: datele în sediu", "text": "Klacks rulează pe propria dumneavoastră infrastructură. Datele pacienților se află pe serverele dumneavoastră &mdash; cu un model local de IA, nici în cazul IA nu iese nimic din sediul dumneavoastră." },
+      { "icon": "shield_lock", "title": "Instalat la dumneavoastră: datele pe serverele dumneavoastră", "text": "Klacks rulează pe propria dumneavoastră infrastructură. Datele pacienților se află pe serverele dumneavoastră &mdash; cu un model local de IA, nici în cazul IA nu iese nimic din sediul dumneavoastră." },
       { "icon": "smart_toy", "title": "Klacksy vă înțelege propoziția", "text": "„Completează traseele pentru mâine” este suficient. În caz de concediu medical, Klacksy propune imediat un înlocuitor disponibil." },
       { "icon": "event_busy", "title": "Absențele, acoperite rapid", "text": "Dacă cineva lipsește, Klacks arată imediat cine este calificat și disponibil &mdash; fără să răstoarne întreaga planificare." }
     ]
@@ -34,7 +34,7 @@
   "example": {
     "eyebrow": "Concret",
     "title": "Serviciu de îngrijire la domiciliu la Geneva, bilingv, cu vizite în Vaud",
-    "text": "Interfață în franceză, sărbători legale din Geneva și Vaud, sporuri specifice îngrijirii la domiciliu &mdash; configurate în Klacks, nu programate ulterior. Traseele sunt optimizate automat, calificările sunt verificate, iar Klacksy ajută la modificările de ultim moment. Datele pacienților se află pe serverele dumneavoastră, iar cu un model local de IA totul rămâne în sediul organizației."
+    "text": "Interfață în franceză, sărbători legale din Geneva și Vaud, sporuri specifice îngrijirii la domiciliu &mdash; configurate în Klacks, nu programate ulterior. Traseele sunt optimizate automat, calificările sunt verificate, iar Klacksy ajută la modificările de ultim moment. Datele pacienților se află pe serverele dumneavoastră; cu un model local de IA, nicio solicitare de IA nu ajunge la un furnizor extern de IA."
   },
   "showRoutePlanning": true,
   "cta": {

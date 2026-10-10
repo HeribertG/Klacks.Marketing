@@ -4,7 +4,7 @@
     "badgeIcon": "local_hospital",
     "badge": "Untuk hospital &amp; klinik di Malaysia",
     "titleHtml": "Jadual kerja yang <span class=\"text-secondary\">berfungsi sepanjang masa.</span>",
-    "subtitle": "Klacks menjadualkan wad dan syif serta menunjukkan jurang serta-merta &mdash; dengan masa serahan syif direkodkan dan Kredit Masa Tambahan Lebih Masa bertingkat mengikut Employment Act 1955 sebagai kredit masa. Dipasang di premis anda sendiri &mdash; dengan model AI tempatan, data pesakit tidak pernah keluar daripada premis anda.",
+    "subtitle": "Klacks menjadualkan wad dan syif serta menunjukkan jurang serta-merta &mdash; dengan masa serahan syif direkodkan dan Kredit Masa Tambahan Lebih Masa bertingkat mengikut Employment Act 1955 sebagai kredit masa. Dipasang di premis anda sendiri, data pesakit pada pelayan anda sendiri &mdash; dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Grid jadual kerja Klacks untuk hospital di Malaysia",
     "screenshotLabel": "Jadual Kerja"
@@ -26,7 +26,7 @@
       { "icon": "payments", "title": "Had gaji RM4,000 ditangani oleh perakaunan gaji", "text": "Had gaji RM4,000 bagi peruntukan Kredit Masa Tambahan di bawah Section 60A(3) dan lain-lain tidak disemak oleh Klacks kerana Klacks tidak mengetahui gaji &mdash; ia menyediakan jam dan Kredit Masa Tambahan, dan bahagian perakaunan gaji menggunakan had itu." },
       { "icon": "swap_horiz", "title": "Masa serahan syif boleh dirancang sebagai waktu bekerja", "text": "Masa serahan syif (handover) boleh dirancang dalam Klacks sebagai waktu bekerja dan kemudian dikira dalam minggu kerja 45 jam serta lebih masa." },
       { "icon": "gavel", "title": "Kredit Masa Tambahan 1.5x/2.0x/3.0x sebagai kredit masa", "text": "Lebih masa biasa, kerja pada hari rehat dan hari kelepasan am dicatatkan oleh Klacks sebagai kredit masa mengikut kadar yang ditetapkan &mdash; bagi setiap wad dan rotasi." },
-      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data kekal di premis", "text": "Klacks berjalan pada infrastruktur anda sendiri. Dengan model AI tempatan, data kakitangan dan pesakit tidak keluar daripada klinik." },
+      { "icon": "shield_lock", "title": "Dipasang di premis anda sendiri: data pada pelayan anda", "text": "Klacks berjalan pada infrastruktur anda sendiri. Data kakitangan dan pesakit disimpan pada pelayan anda; dengan model AI tempatan, tiada permintaan AI dihantar kepada penyedia AI luaran." },
       { "icon": "smart_toy", "title": "Klacksy memahami ayat anda", "text": "\"Isikan syif malam wad untuk minggu depan\" sudah memadai &mdash; Klacksy memulakan perancangan, Klacks mengambil kira kelayakan dan had waktu bekerja maksimum." }
     ]
   },

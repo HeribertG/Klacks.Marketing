@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks für die häusliche Pflege in den VAE | 56-Stunden-Schichtausnahme & PDPL-Datenschutz",
+  "metaDescription": "Klacks plant Touren und aufeinanderfolgende Schichten automatisch und überwacht die 56-Stunden-Ausnahme für kontinuierlichen Schichtbetrieb live.",
   "hero": {
     "badgeIcon": "home_health",
     "badge": "Für die häusliche Pflege &amp; ambulante Dienste in den VAE",
     "titleHtml": "Mehr Zeit für Pflege, <span class=\"text-secondary\">weniger für die Tourenplanung.</span>",
-    "subtitle": "Klacks plant Touren und aufeinanderfolgende Schichten (المناوبات المتعاقبة) automatisch und überwacht die 56-Stunden-Ausnahme für kontinuierlichen Schichtbetrieb live. Bei Ihnen installiert, damit sensible Patientendaten nach dem PDPL Ihr Haus nicht verlassen müssen.",
+    "subtitle": "Klacks plant Touren und aufeinanderfolgende Schichten (المناوبات المتعاقبة) automatisch und überwacht die 56-Stunden-Ausnahme für kontinuierlichen Schichtbetrieb live. Bei Ihnen installiert, damit sensible Patientendaten nach dem PDPL auf Ihren eigenen Servern liegen.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für die Tourenplanung in der häuslichen Pflege in den VAE",
     "screenshotLabel": "Timeline"
@@ -20,12 +21,12 @@
   },
   "solutions": {
     "title": "Wie Klacks die häusliche Pflege in den VAE entlastet",
-    "subtitle": "Von der begründeten Schichtausnahme bis zur Datenhaltung bei Ihnen im Haus &mdash; alles greift ineinander.",
+    "subtitle": "Von der begründeten Schichtausnahme bis zur Datenhaltung auf Ihren Servern &mdash; alles greift ineinander.",
     "items": [
       { "icon": "route", "title": "Touren automatisch optimiert", "text": "Klacks legt Einsatzrouten zwischen Klient:innen so, dass Wege kurz und Zeitfenster eingehalten werden." },
       { "icon": "update", "title": "56-Stunden-Schnitt live überwacht", "text": "Klacks überwacht den rollierenden Wochenschnitt live und warnt, bevor die 56-Stunden-Grenze der Ausnahme nach Art. 15 der Cabinet Resolution No. 1 of 2022 überschritten wird &mdash; statt sie pauschal anzunehmen." },
       { "icon": "verified", "title": "Qualifikationen automatisch berücksichtigt", "text": "Jeder Einsatz wird nur Pflegekräften mit passender Qualifikation zugeteilt &mdash; ganz ohne manuelles Prüfen." },
-      { "icon": "fingerprint", "title": "Datenhaltung im eigenen Haus (PDPL)", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Patienten- und Zeiterfassungsdaten verlassen Ihr Haus nicht; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
+      { "icon": "fingerprint", "title": "Datenhaltung auf Ihren Servern (PDPL)", "text": "Klacks läuft auf Ihrer eigenen Infrastruktur. Sensible Patienten- und Zeiterfassungsdaten liegen auf Ihren Servern; das KI-Modell lässt sich auf Wunsch lokal betreiben." },
       { "icon": "smart_toy", "title": "Klacksy versteht Ihren Satz", "text": "„Fülle die Touren für morgen“ genügt. Bei einem Ausfall schlägt Klacksy sofort verfügbaren Ersatz mit passender Qualifikation vor." }
     ]
   },

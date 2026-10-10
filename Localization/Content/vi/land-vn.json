@@ -1,10 +1,11 @@
 {
   "pageTitle": "Klacks cho doanh nghiệp tại Việt Nam | Giới hạn làm thêm giờ 3 cấp & giờ phụ trội ban đêm",
+  "metaDescription": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm), cộng dồn giờ phụ trội ban đêm và làm thêm giờ nếu muốn, chạy trên hệ thống của bạn.",
   "hero": {
     "badgeIcon": "public",
-    "badge": "Mã nguồn mở &middot; Không phải trả phí bản quyền &middot; Chủ quyền dữ liệu tại Việt Nam",
+    "badge": "Mã nguồn mở &middot; Không phải trả phí bản quyền &middot; Dữ liệu trên máy chủ của bạn",
     "titleHtml": "Lập lịch nhân sự, nơi <span class=\"text-secondary\">bạn luôn giữ quyền kiểm soát.</span>",
-    "subtitle": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm) và, nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo Bộ luật Lao động 2019 bằng chế độ tính cộng dồn thay vì chỉ áp dụng mức cao nhất &mdash; đồng thời vận hành được cài đặt trên hệ thống của riêng bạn để dữ liệu nhân sự và lập lịch của bạn luôn nằm trong hạ tầng riêng.",
+    "subtitle": "Klacks tự động giám sát giới hạn làm thêm giờ 3 cấp (ngày/tháng/năm) và, nếu muốn, cộng dồn giờ phụ trội ban đêm và giờ phụ trội làm thêm giờ theo Bộ luật Lao động 2019 bằng chế độ tính cộng dồn thay vì chỉ áp dụng mức cao nhất &mdash; đồng thời vận hành được cài đặt trên hệ thống của riêng bạn để dữ liệu nhân sự và lập lịch của bạn nằm trên máy chủ riêng của bạn.",
     "screenshotFile": "app-schedule-de.png",
     "screenshotAlt": "Tổng quan lịch làm việc Klacks cho doanh nghiệp tại Việt Nam",
     "screenshotLabel": "Lịch làm việc"
@@ -38,8 +39,8 @@
       { "icon": "gavel", "title": "Giới hạn 3 cấp được giám sát tự động", "text": "Klacks liên tục đối chiếu giới hạn ngày, tháng và năm (Điều 107) và cảnh báo trước khi một trong các cấp bị vượt quá. Nếu muốn, có thể bật chế độ chặn (block mode), giúp ngăn các vi phạm mới trong các luồng lập kế hoạch tự động (trình lập kế hoạch tự động, đề xuất, tìm người thay thế); trong lập kế hoạch thủ công, hệ thống vẫn chỉ đưa ra cảnh báo." },
       { "icon": "bedtime", "title": "Nắm vững Tỷ lệ giờ phụ trội ban đêm và Tỷ lệ giờ phụ trội làm thêm giờ", "text": "Bạn thiết lập các Tỷ lệ giờ phụ trội theo Điều 98 dưới dạng hệ số có thể cấu hình, và Giờ phụ trội làm thêm giờ như một loại Giờ phụ trội riêng. Ở chế độ tính cộng dồn, Klacks tự động cộng dồn Giờ phụ trội ban đêm và Giờ phụ trội làm thêm giờ thay vì chỉ áp dụng mức cao nhất &mdash; Klacks ghi nhận các mức cộng dồn 210% hoặc 270% dưới dạng Giờ phụ trội và cung cấp cho bộ phận lương của bạn." },
       { "icon": "schedule", "title": "Giờ làm đêm &amp; thời gian nghỉ giữa ca trong tầm kiểm soát", "text": "Klacks tự động nhận biết các ca làm đêm &mdash; khung giờ làm đêm 22:00&ndash;06:00 (Điều 106) do bạn thiết lập chính xác &mdash; và kiểm tra thời gian nghỉ 12 giờ giữa hai ca (Điều 110), kèm cảnh báo trước khi thời gian nghỉ bị vi phạm." },
-      { "icon": "fingerprint", "title": "Cài đặt trên hệ thống của bạn, không cần chuyển dữ liệu ra nước ngoài", "text": "Klacks không thu thập dữ liệu sinh trắc học &mdash; dữ liệu nhân sự và lập lịch mà Klacks sử dụng được lưu trữ ngay tại doanh nghiệp của bạn, nằm trong mạng nội bộ của doanh nghiệp; với mô hình AI lưu trữ nội bộ thì không có việc chuyển dữ liệu ra nước ngoài, và không cần hồ sơ đánh giá tác động chuyển dữ liệu theo Nghị định 13/2023." },
-      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: toàn quyền kiểm soát dữ liệu", "text": "Klacks chạy trên hạ tầng riêng của bạn, bạn tự chọn mô hình AI &mdash; kể cả lưu trữ nội bộ hoàn toàn, và khi đó không có dữ liệu nhân sự nào chuyển ra nước ngoài." },
+      { "icon": "fingerprint", "title": "Cài đặt trên hệ thống của bạn: dữ liệu nằm trên máy chủ của bạn", "text": "Klacks không thu thập dữ liệu sinh trắc học &mdash; dữ liệu nhân sự và lập lịch mà Klacks sử dụng nằm trên máy chủ riêng của bạn nhờ việc cài đặt tại doanh nghiệp; với mô hình AI lưu trữ cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp AI bên ngoài, và khi đó hồ sơ đánh giá tác động chuyển dữ liệu theo Nghị định 13/2023 không cần thiết cho việc sử dụng AI." },
+      { "icon": "shield_lock", "title": "Cài đặt trên hệ thống của bạn: dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng riêng của bạn, bạn tự chọn mô hình AI &mdash; kể cả mô hình lưu trữ cục bộ, nên không có yêu cầu AI nào chứa dữ liệu nhân sự được gửi đến nhà cung cấp AI bên ngoài." },
       { "icon": "smart_toy", "title": "Klacksy: dựa trên quy tắc, không phải hộp đen", "text": "Trợ lý AI tích hợp Klacksy hiểu các chỉ dẫn bằng ngôn ngữ đời thường và điều khiển Klacks; kế hoạch do engine lập kế hoạch dựa trên quy tắc tính toán &mdash; minh bạch theo các quy tắc đã thiết lập sẵn, không phải quyết định AI khó hiểu." },
       { "icon": "science", "title": "Thử nghiệm thay đổi lịch làm việc không rủi ro", "text": "Trước khi một thay đổi lịch làm việc được áp dụng chính thức, bạn có thể thử nghiệm trước dưới dạng một bản sao biệt lập &mdash; việc kiểm tra quy định nghỉ 12 giờ giữa hai ca (Điều 110) cũng như các khoản Giờ phụ trội đều chạy theo thời gian thực, hoàn toàn giống như trên lịch làm việc thật. Chỉ khi mọi thứ đều phù hợp, bạn mới áp dụng chính thức phương án đó; cho đến lúc đó, lịch làm việc hiện tại của bạn vẫn giữ nguyên, không thay đổi. Nhờ đó, bạn có thể chuẩn bị sẵn kịch bản phù hợp từ trước cho những tình huống có thể lường trước &mdash; chẳng hạn như nhân viên nghỉ ốm đột xuất hoặc khối lượng đơn hàng tăng vọt &mdash; và sẵn sàng áp dụng ngay khi tình huống thực sự xảy ra, thay vì phải ứng biến vội vàng dưới áp lực thời gian. Số lượng kịch bản không bị giới hạn một cách tùy tiện &mdash; bạn có thể tạo bao nhiêu kịch bản tùy theo nhu cầu lập kế hoạch của mình." }
     ]
@@ -59,6 +60,6 @@
   "showRoutePlanning": false,
   "cta": {
     "title": "Trải nghiệm Klacks trong doanh nghiệp của bạn",
-    "text": "Hãy dùng thử trong Playground để xem Klacks giám sát giới hạn làm thêm giờ 3 cấp và cộng dồn Giờ phụ trội ban đêm, Giờ phụ trội làm thêm giờ như thế nào &mdash; cài đặt trên hệ thống của bạn để có toàn quyền kiểm soát dữ liệu, không mất phí bản quyền và không cần đăng ký."
+    "text": "Hãy dùng thử trong Playground để xem Klacks giám sát giới hạn làm thêm giờ 3 cấp và cộng dồn Giờ phụ trội ban đêm, Giờ phụ trội làm thêm giờ như thế nào &mdash; không mất phí bản quyền và không cần đăng ký."
   }
 }
