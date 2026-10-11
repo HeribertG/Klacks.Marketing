@@ -1,0 +1,26 @@
+@inject IPageContentProvider ContentProvider
+
+@* Clearly visible note below every block that shows recordings or screenshots of the app: all names, places,
+   addresses and figures are made-up demo data with a Swiss background in Latin script, so visitors who do not know
+   Swiss places or cannot read Latin script are not confused. Culture is the page culture code; Short switches to the
+   one-sentence variant (used in the playground modal); CssClass adds outer spacing or width classes of the host block.
+   Uses flex, gap and text-start only, so it mirrors correctly on RTL pages; it carries no id because it appears
+   several times per page. *@
+<p class="flex items-start gap-3 rounded-xl border border-surface-container-high bg-secondary-fixed px-4 py-3 text-sm text-primary leading-relaxed text-start @CssClass" data-demo-data-note>
+    <span class="material-symbols-outlined text-secondary text-xl shrink-0" aria-hidden="true">info</span>
+    <span class="min-w-0">@Sh(Short ? NoteShortKey : NoteKey)</span>
+</p>
+
+@code {
+    public const string NoteKey = "demoData.note";
+    public const string NoteShortKey = "demoData.noteShort";
+    public const string MarkerAttribute = "data-demo-data-note";
+
+    private const string SharedContentKey = "shared";
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+    [Parameter] public bool Short { get; set; }
+    [Parameter] public string CssClass { get; set; } = string.Empty;
+
+    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+}

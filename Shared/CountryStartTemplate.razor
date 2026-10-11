@@ -61,6 +61,10 @@
             {
                 <HeroProductMockup Mockup="@Country.HeroMockup" Culture="@Culture" />
             }
+            @if (HasHeroMedia)
+            {
+                <DemoDataNote Culture="@Culture" CssClass="mt-4 mb-0" />
+            }
         </div>
     </div>
     <div class="mt-10 rounded-2xl bg-surface-container-low p-5 md:p-6">
@@ -76,7 +80,6 @@
                 </li>
             }
         </ul>
-        <p class="text-xs text-on-surface-variant leading-relaxed mt-3 mb-0">@Tx("demo.dataNote")</p>
     </div>
 </header>
 
@@ -228,6 +231,7 @@
             </div>
             <div class="lg:col-span-6">
                 <MagnifiedImage Src="@ScreenshotSrc(Country.Klacksy.ImageFile)" Alt="@Country.Klacksy.ImageAlt" Caption="@Country.Klacksy.ImageCaption" />
+                <DemoDataNote Culture="@Culture" CssClass="mt-4 mb-0" />
             </div>
         </div>
     </section>
@@ -417,6 +421,8 @@
     private (string Lead, string Remainder) HeroTitle => LeadSentence.Split(Tx("hero.title"));
 
     private bool HasHeroVideo => DemoCarousels.Hero.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
+
+    private bool HasHeroMedia => HasHeroVideo || (Country.HeroMockup is not null && Country.HeroMockup.Images.Count > 0);
 
     private IEnumerable<string> HeroChips
         => HeroChipKeys.Take(2).Select(Ix)
