@@ -58,6 +58,15 @@ html {
     display: block;
 }
 
+.lang-dropdown,
+.country-dropdown {
+    max-height: calc(100vh - 6rem);
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Self-contained breakpoint logic (matches Tailwind's xl=1280px, the same
    breakpoint as the nav's hidden xl:flex / xl:hidden utilities) so this never
    depends on cascade order against Tailwind's own xl:hidden utility. Tablet
