@@ -7,26 +7,47 @@ on:
 
 concurrency:
   group: deploy-klacks-marketing-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
+    - name: Setup .NET
+      uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4
+      with:
+        dotnet-version: 10.0.x
+
+    - name: Run tests
+      run: dotnet test Klacks.Marketing.Tests --configuration Release --verbosity minimal
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Deploy to server
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@0ff4204d59e8e51228ff73bce53f80d53301dee2 # v1.2.5
+      env:
+        DEPLOY_SHA: ${{ github.sha }}
+        ANALYTICS_ENABLED: ${{ vars.ANALYTICS_ENABLED || 'false' }}
+        ANALYTICS_STATS_TOKEN: ${{ secrets.ANALYTICS_STATS_TOKEN }}
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
+        envs: DEPLOY_SHA,ANALYTICS_ENABLED,ANALYTICS_STATS_TOKEN
         script: |
           set -e
-          echo "Deploying Klacks.Marketing..."
+          echo "Deploying Klacks.Marketing $DEPLOY_SHA..."
 
           cd /root/apps
 
@@ -44,39 +65,46 @@ jobs:
             cd Klacks.Marketing
             git remote set-url origin https://github.com/HeribertG/Klacks.Marketing.git 2>/dev/null || true
             git fetch origin
-            git reset --hard origin/main
+            git reset --hard "$DEPLOY_SHA"
             cd ..
           else
             echo "Cloning Klacks.Marketing..."
             git clone https://github.com/HeribertG/Klacks.Marketing.git
+            git -C Klacks.Marketing reset --hard "$DEPLOY_SHA"
           fi
 
           ln -sfn /root/apps/Klacks.Marketing /root/apps/Klacks.Api/Klacks.Marketing
 
-          echo "Stopping old Klacks.Marketing container..."
-          docker stop klacks-marketing 2>/dev/null || true
-          docker rm -f klacks-marketing 2>/dev/null || true
-
-          echo "Building Klacks.Marketing Docker image..."
+          echo "Building Klacks.Marketing Docker image (old container keeps serving)..."
           cd Klacks.Marketing
-          docker build -t klacks-marketing -f Dockerfile .
+          docker build -t klacks-marketing:candidate -f Dockerfile .
           cd ..
 
-          echo "Starting Klacks.Marketing..."
-          docker run -d \
-            --name klacks-marketing \
-            --restart unless-stopped \
-            --network apps_klacks_network \
-            --network-alias klacks-marketing \
-            -e ASPNETCORE_ENVIRONMENT=Production \
-            -e ASPNETCORE_URLS=http://+:80 \
-            --expose 80 \
-            klacks-marketing
+          echo "Swapping container..."
+          docker tag klacks-marketing:latest klacks-marketing:previous 2>/dev/null || true
+          docker tag klacks-marketing:candidate klacks-marketing:latest
+
+          start_container() {
+            docker stop klacks-marketing 2>/dev/null || true
+            docker rm -f klacks-marketing 2>/dev/null || true
+            docker run -d \
+              --name klacks-marketing \
+              --restart unless-stopped \
+              --network apps_klacks_network \
+              --network-alias klacks-marketing \
+              -v klacks-marketing-analytics:/app/data/analytics \
+              -e ASPNETCORE_ENVIRONMENT=Production \
+              -e ASPNETCORE_URLS=http://+:80 \
+              -e Analytics__Enabled="$ANALYTICS_ENABLED" \
+              -e Analytics__StatsToken="$ANALYTICS_STATS_TOKEN" \
+              --expose 80 \
+              "$1"
+          }
+
+          start_container klacks-marketing:latest
 
           echo "Reloading nginx proxy..."
           docker exec klacks-proxy nginx -s reload 2>/dev/null || true
-
-          echo "Klacks.Marketing deployment completed!"
 
           sleep 10
           echo "Health Check..."
@@ -86,5 +114,12 @@ jobs:
           else
             echo "Container is not running"
             docker logs klacks-marketing --tail=20
+            if docker image inspect klacks-marketing:previous >/dev/null 2>&1; then
+              echo "Rolling back to the previous image..."
+              start_container klacks-marketing:previous
+              docker exec klacks-proxy nginx -s reload 2>/dev/null || true
+            fi
             exit 1
           fi
+
+          echo "Klacks.Marketing deployment completed!"
