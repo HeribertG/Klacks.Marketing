@@ -4,15 +4,18 @@
 
 <HeadContent>
     <link rel="canonical" href="@CanonicalUrl" />
-    @if (!IsTranslated(CultureRecord) || IsNoindexCountry)
+    @if (!IsIndexable)
     {
         <meta name="robots" content="noindex, follow" />
     }
-    @foreach (var culture in SupportedCultures.All.Where(IsTranslated))
+    else
     {
-        <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
+        @foreach (var culture in SupportedCultures.All.Where(IsTranslated))
+        {
+            <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
+        }
+        <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(SupportedCultures.Default)" />
     }
-    <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(SupportedCultures.Default)" />
 
     @if (!string.IsNullOrEmpty(Description))
     {
@@ -84,6 +87,8 @@
     [Parameter] public bool IndexTranslatedOnly { get; set; }
 
     private bool IsNoindexCountry => !SameForEveryCountry && CountryIndexingPolicy.IsNoindex(PageKey);
+
+    private bool IsIndexable => IsTranslated(CultureRecord) && !IsNoindexCountry;
 
     private bool IsTranslated(SupportedCulture culture)
         => !IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, PageKey);
