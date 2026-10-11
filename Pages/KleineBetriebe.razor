@@ -92,7 +92,7 @@
         <div class="bg-night rounded-2xl py-10 md:py-14 px-5 sm:px-8 text-center">
             <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
             <p class="text-white/70 max-w-xl mx-auto mb-8">@GetText("cta.text")</p>
-            <button type="button" @onclick="OpenDemoModal" title="@GetShared("cta.demoResetNote")" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@GetShared("cta.demoResetNote")" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
                 <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @GetText("cta.playground")
             </button>
         </div>

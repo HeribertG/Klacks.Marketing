@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Content Update="Localization/Content/**/*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Remove="data/**" />
+    <None Remove="data/**" />
   </ItemGroup>
 
 </Project>

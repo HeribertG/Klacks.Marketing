@@ -1,3 +1,4 @@
+using Klacks.Marketing.Analytics;
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Seo;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -12,6 +13,7 @@ builder.Services.AddSingleton<ILocalizedScreenshotResolver>(services =>
     new LocalizedScreenshotResolver(services.GetRequiredService<IWebHostEnvironment>().WebRootFileProvider));
 builder.Services.AddSingleton<ILocalizedVideoCatalog>(services =>
     new LocalizedVideoCatalog(services.GetRequiredService<IWebHostEnvironment>().WebRootFileProvider));
+builder.Services.AddVisitCounter(builder.Configuration);
 
 // klacks-proxy sits on the same Docker network, not on loopback — trust its
 // forwarded headers so scheme-dependent middleware sees the original HTTPS request.
@@ -93,6 +95,10 @@ app.Use(async (context, next) =>
 
 app.UseRouting();
 
+// Anonymous daily page counter: wraps endpoint execution and counts only GET text/html answers with status 200.
+app.UseVisitCounter();
+
+app.MapVisitCounterEndpoints();
 app.MapRazorPages();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");

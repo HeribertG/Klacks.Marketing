@@ -19,7 +19,7 @@
             <p class="text-xs text-slate-500 mb-6">@((MarkupString)Sh("demoModal.languageNote"))</p>
             <div class="flex gap-3">
                 <button type="button" class="flex-1 px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-600 hover:bg-slate-100/50 transition-all" @onclick="Close">@Sh("demoModal.cancelButton")</button>
-                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" class="flex-1 text-center bg-secondary text-white px-4 py-2.5 rounded-xl font-bold text-sm hover:opacity-90 transition-all no-underline" @onclick="Close">@Sh("demoModal.continueButton")</a>
+                <a href="@ExternalLinks.PlaygroundUrl" target="_blank" data-c="PlaygroundContinue" class="flex-1 text-center bg-secondary text-white px-4 py-2.5 rounded-xl font-bold text-sm hover:opacity-90 transition-all no-underline" @onclick="Close">@Sh("demoModal.continueButton")</a>
             </div>
         </div>
     </div>

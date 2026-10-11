@@ -34,7 +34,7 @@
                 }
             </ul>
             <div class="flex flex-wrap gap-4">
-                <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
+                <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
                     <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Sh("cta.tryButton")
                 </button>
                 <a href="@InstallationHref" class="px-7 py-4 rounded-xl font-bold text-primary bg-surface-container-low hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
@@ -319,7 +319,7 @@
         <p class="text-white/70 max-w-xl mx-auto mb-3">@((MarkupString)Country.Cta.Text)</p>
         <p class="text-white/70 text-sm max-w-xl mx-auto mb-8">@Sh("cta.openSourceNote")</p>
         <div class="flex flex-wrap justify-center gap-4">
-            <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform flex items-center gap-3"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Sh("cta.tryButton")</button>
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform flex items-center gap-3"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Sh("cta.tryButton")</button>
             <a href="@InstallationHref" class="border border-white/30 text-white px-8 py-4 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined" aria-hidden="true">download</span> @Sh("cta.downloadButton")</a>
         </div>
     </div>
@@ -358,7 +358,7 @@
                 <p class="text-sm text-on-surface-variant leading-relaxed mb-4">@((MarkupString)Ix($"getStarted.{card.Key}.text"))</p>
                 @if (card.OpensPlayground)
                 {
-                    <button type="button" @onclick="OpenDemoModal" title="@Sh("cta.demoResetNote")" class="mt-auto text-start text-sm font-bold text-secondary inline-flex items-center gap-1">@Ix($"getStarted.{card.Key}.button") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></button>
+                    <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="mt-auto text-start text-sm font-bold text-secondary inline-flex items-center gap-1">@Ix($"getStarted.{card.Key}.button") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></button>
                 }
                 else
                 {
