@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Compose-pakket downloaden"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Op de kantoor-pc (zonder Docker)",
+      "text": "Voor bedrijven met één kantoor-pc: een gewoon installatieprogramma voor Windows of Mac &mdash; zonder Docker en zonder eigen server. Klacks draait als achtergronddienst en uw gegevens blijven op deze pc.",
+      "requirementsTitle": "Vereisten",
+      "requirements": [
+        "Windows 10 of 11 (64-bit) of een Mac met Apple-chip (M1 of nieuwer)",
+        "16 GB werkgeheugen aanbevolen, minimaal 5 GB vrije schijfruimte",
+        "Internetverbinding bij de eerste start (AI-modellen, ca. 700 MB) en voor updates",
+        "Beheerdersrechten voor de installatie"
+      ],
+      "stepsTitle": "In drie stappen",
+      "steps": [
+        { "title": "Installatieprogramma downloaden", "text": "Download het bestand voor Windows of Mac." },
+        { "title": "Installatie uitvoeren", "text": "Het programma richt de database, Klacks en de updateservice in en past het landenprofiel van uw land toe." },
+        { "title": "In de browser openen", "text": "Open Klacks in uw browser, log in met het initiële account en maak een eigen beheerdersaccount aan." }
+      ],
+      "downloadLabel": "Downloaden voor Windows"
+    },
+    "macDownloadLabel": "Downloaden voor Mac",
+    "linuxNote": "Linux? Gebruik de begeleide installer met Docker.",
+    "heroSubtitle": "Drie wegen, één resultaat: het installatieprogramma voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd) &mdash; zonder registratie, zonder licentiekosten."
+  },
   "profile": {
     "icon": "description",
     "title": "Alleen het profiel &mdash; voor bestaande installaties",

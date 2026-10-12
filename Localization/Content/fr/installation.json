@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Télécharger le paquet Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Sur le PC du bureau (sans Docker)",
+      "text": "Pour les entreprises disposant d'un seul PC de bureau : un programme d'installation classique pour Windows ou Mac &mdash; sans Docker et sans serveur à vous. Klacks fonctionne comme service en arrière-plan, et vos données restent sur ce PC.",
+      "requirementsTitle": "Prérequis",
+      "requirements": [
+        "Windows 10 ou 11 (64 bits), ou un Mac avec puce Apple (M1 ou plus récent)",
+        "16 Go de mémoire vive recommandés, au moins 5 Go d'espace disque libre",
+        "Connexion Internet au premier démarrage (modèles d'IA, environ 700 Mo) et pour les mises à jour",
+        "Droits d'administrateur pour l'installation"
+      ],
+      "stepsTitle": "En trois étapes",
+      "steps": [
+        { "title": "Télécharger le programme d'installation", "text": "Téléchargez le fichier pour Windows ou Mac." },
+        { "title": "Lancer l'installation", "text": "Le programme d'installation configure la base de données, Klacks et le service de mise à jour, et applique le profil de votre pays." },
+        { "title": "Ouvrir dans le navigateur", "text": "Ouvrez Klacks dans votre navigateur, connectez-vous avec le compte initial et créez votre propre compte administrateur." }
+      ],
+      "downloadLabel": "Télécharger pour Windows"
+    },
+    "macDownloadLabel": "Télécharger pour Mac",
+    "linuxNote": "Linux ? Veuillez utiliser l'installateur guidé avec Docker.",
+    "heroSubtitle": "Trois chemins, un même résultat : le programme d'installation pour le PC de votre bureau, l'installateur guidé pour votre serveur, ou le stack Docker Compose pour votre propre configuration. Le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail et les préréglages sectoriels de votre pays (majorations là où elles sont définies pour le pays) &mdash; sans inscription, sans frais de licence."
+  },
   "profile": {
     "icon": "description",
     "title": "Le profil seul &mdash; pour les installations existantes",

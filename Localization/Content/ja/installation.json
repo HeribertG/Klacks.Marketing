@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Composeパッケージをダウンロード"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "オフィスのPCで（Docker不要）",
+      "text": "オフィスのPCが1台だけの事業所向け：Windows／Mac用の通常のインストーラー &mdash; Dockerも自社サーバーも不要です。Klacksはバックグラウンドサービスとして動作し、データはこのPCに保存されたままです。",
+      "requirementsTitle": "必要条件",
+      "requirements": [
+        "Windows 10または11（64ビット）、またはAppleシリコン搭載のMac（M1以降）",
+        "メモリ16 GB推奨、5 GB以上の空きディスク容量",
+        "初回起動時（AIモデル、約700 MB）および更新時のインターネット接続",
+        "インストールのための管理者権限"
+      ],
+      "stepsTitle": "3つのステップ",
+      "steps": [
+        { "title": "インストーラーをダウンロード", "text": "Windows用またはMac用のファイルをダウンロードします。" },
+        { "title": "インストールを実行", "text": "インストーラーがデータベース、Klacks、更新サービスをセットアップし、貴社の国のプロファイルを適用します。" },
+        { "title": "ブラウザで開く", "text": "ブラウザでKlacksを開き、初期アカウントでログインして、独自の管理者アカウントを作成します。" }
+      ],
+      "downloadLabel": "Windows版をダウンロード"
+    },
+    "macDownloadLabel": "Mac版をダウンロード",
+    "linuxNote": "Linuxの場合は、Dockerを使用するガイド付きインストーラーをご利用ください。",
+    "heroSubtitle": "3つの方法、1つの結果：オフィスPC向けのインストーラー、自社サーバー向けのガイド付きインストーラー、または独自セットアップ向けのDocker Composeスタック。国別パッケージには、貴社の国の祝日、労働時間規則、業種プリセットが最初から含まれています（時間割増は国で定義されている場合） &mdash; 登録不要、ライセンス費用もかかりません。"
+  },
   "profile": {
     "icon": "description",
     "title": "プロファイルのみ &mdash; 既存インストール向け",

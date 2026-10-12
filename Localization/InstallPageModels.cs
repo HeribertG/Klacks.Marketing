@@ -8,6 +8,8 @@ public sealed class InstallPageContent
     public required InstallIndustryPicker Industry { get; init; }
     public required InstallPath OnPrem { get; init; }
     public required InstallPath Compose { get; init; }
+    // Office-PC install without Docker; null in a culture file means the card is not offered there.
+    public InstallNativeSection? Native { get; init; }
     public required InstallProfileSection Profile { get; init; }
     public required InstallFallbackSection Fallback { get; init; }
     public required InstallNotesSection Notes { get; init; }
@@ -40,6 +42,17 @@ public sealed class InstallPath
     public required string StepsTitle { get; init; }
     public required IReadOnlyList<InstallStep> Steps { get; init; }
     public required string DownloadLabel { get; init; }
+}
+
+// The "office PC without Docker" path: the card content (its DownloadLabel is the Windows
+// button), the macOS button, the pointer for Linux users to the guided Docker installer,
+// and the hero subtitle that replaces the two-path wording while the card is shown.
+public sealed class InstallNativeSection
+{
+    public required InstallPath Path { get; init; }
+    public required string MacDownloadLabel { get; init; }
+    public required string LinuxNote { get; init; }
+    public required string HeroSubtitle { get; init; }
 }
 
 public sealed class InstallStep

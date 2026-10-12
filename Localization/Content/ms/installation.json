@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Muat turun pakej Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Pada PC pejabat (tanpa Docker)",
+      "text": "Untuk perniagaan dengan satu PC pejabat sahaja: pemasang biasa untuk Windows atau Mac &mdash; tanpa Docker dan tanpa pelayan sendiri. Klacks berjalan sebagai perkhidmatan latar belakang, dan data Anda kekal pada PC ini.",
+      "requirementsTitle": "Keperluan",
+      "requirements": [
+        "Windows 10 atau 11 (64-bit), atau Mac dengan cip Apple (M1 atau lebih baharu)",
+        "Memori 16 GB disyorkan, sekurang-kurangnya 5 GB ruang cakera kosong",
+        "Sambungan Internet semasa permulaan pertama (model AI, kira-kira 700 MB) dan untuk kemas kini",
+        "Hak pentadbir untuk pemasangan"
+      ],
+      "stepsTitle": "Dalam tiga langkah",
+      "steps": [
+        { "title": "Muat turun pemasang", "text": "Muat turun fail untuk Windows atau Mac." },
+        { "title": "Jalankan pemasangan", "text": "Pemasang menyediakan pangkalan data, Klacks dan perkhidmatan kemas kini, serta menggunakan profil negara Anda." },
+        { "title": "Buka dalam pelayar", "text": "Buka Klacks dalam pelayar Anda, log masuk dengan akaun awal dan cipta akaun pentadbir Anda sendiri." }
+      ],
+      "downloadLabel": "Muat turun untuk Windows"
+    },
+    "macDownloadLabel": "Muat turun untuk Mac",
+    "linuxNote": "Linux? Sila gunakan pemasang berpandu dengan Docker.",
+    "heroSubtitle": "Tiga laluan, satu hasil: pemasang untuk PC pejabat Anda, pemasang berpandu untuk pelayan Anda, atau stack Docker Compose untuk persediaan Anda sendiri. Pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu) &mdash; tanpa pendaftaran, tanpa yuran lesen."
+  },
   "profile": {
     "icon": "description",
     "title": "Profil sahaja &mdash; untuk pemasangan sedia ada",

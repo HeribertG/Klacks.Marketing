@@ -11,6 +11,10 @@ public static class ExternalLinks
     public const string GithubUrl = "https://github.com/HeribertG/Klacks.Api";
     public const string OnPremBundleFileName = "klacks-onprem.zip";
     public const string OnPremBundleUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + OnPremBundleFileName;
+    public const string NativeWindowsInstallerFileName = "klacks-setup-win-x64.exe";
+    public const string NativeWindowsInstallerUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + NativeWindowsInstallerFileName;
+    public const string NativeMacInstallerFileName = "klacks-setup-osx-arm64.pkg";
+    public const string NativeMacInstallerUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + NativeMacInstallerFileName;
     public const string DemoLoginEmail = "admin@test.com";
     public const string DemoLoginPassword = "P@ssw0rt1";
     public const string ContactEmail = Seo.OrganizationFacts.Email;

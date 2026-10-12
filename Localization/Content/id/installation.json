@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Unduh paket Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Di PC kantor (tanpa Docker)",
+      "text": "Untuk usaha dengan satu PC kantor: program instalasi biasa untuk Windows atau Mac &mdash; tanpa Docker dan tanpa server sendiri. Klacks berjalan sebagai layanan latar belakang, dan data Anda tetap berada di PC ini.",
+      "requirementsTitle": "Persyaratan",
+      "requirements": [
+        "Windows 10 atau 11 (64-bit), atau Mac dengan chip Apple (M1 atau yang lebih baru)",
+        "Memori 16 GB direkomendasikan, ruang disk kosong minimal 5 GB",
+        "Koneksi internet saat pertama kali dijalankan (model AI, sekitar 700 MB) dan untuk pembaruan",
+        "Hak administrator untuk instalasi"
+      ],
+      "stepsTitle": "Tiga langkah",
+      "steps": [
+        { "title": "Unduh program instalasi", "text": "Unduh file untuk Windows atau Mac." },
+        { "title": "Jalankan instalasi", "text": "Program instalasi menyiapkan database, Klacks, dan layanan pembaruan, serta menerapkan profil negara Anda." },
+        { "title": "Buka di browser", "text": "Buka Klacks di browser Anda, masuk dengan akun awal, dan buat akun administrator Anda sendiri." }
+      ],
+      "downloadLabel": "Unduh untuk Windows"
+    },
+    "macDownloadLabel": "Unduh untuk Mac",
+    "linuxNote": "Linux? Silakan gunakan installer terpandu dengan Docker.",
+    "heroSubtitle": "Tiga jalur, satu hasil: program instalasi untuk PC kantor Anda, installer terpandu untuk server Anda, atau stack Docker Compose untuk pengaturan Anda sendiri. Paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (Tambahan Waktu, sejauh didefinisikan untuk negara tersebut) &mdash; tanpa registrasi, tanpa biaya lisensi."
+  },
   "profile": {
     "icon": "description",
     "title": "Hanya profil &mdash; untuk instalasi yang sudah ada",

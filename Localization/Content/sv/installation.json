@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Ladda ner Compose-paketet"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "På kontorsdatorn (utan Docker)",
+      "text": "För företag med en enda kontorsdator: ett vanligt installationsprogram för Windows eller Mac &mdash; utan Docker och utan egen server. Klacks körs som en bakgrundstjänst, och dina data stannar på den här datorn.",
+      "requirementsTitle": "Krav",
+      "requirements": [
+        "Windows 10 eller 11 (64-bitars), eller en Mac med Apple-chip (M1 eller senare)",
+        "16 GB minne rekommenderas, minst 5 GB ledigt diskutrymme",
+        "Internetanslutning vid första starten (AI-modeller, cirka 700 MB) och för uppdateringar",
+        "Administratörsbehörighet för installationen"
+      ],
+      "stepsTitle": "I tre steg",
+      "steps": [
+        { "title": "Ladda ner installationsprogrammet", "text": "Ladda ner filen för Windows eller Mac." },
+        { "title": "Kör installationen", "text": "Installationsprogrammet konfigurerar databasen, Klacks och uppdateringstjänsten och tillämpar landsprofilen för ditt land." },
+        { "title": "Öppna i webbläsaren", "text": "Öppna Klacks i webbläsaren, logga in med det initiala kontot och skapa ditt eget administratörskonto." }
+      ],
+      "downloadLabel": "Ladda ner för Windows"
+    },
+    "macDownloadLabel": "Ladda ner för Mac",
+    "linuxNote": "Linux? Använd det guidade installationsprogrammet med Docker.",
+    "heroSubtitle": "Tre vägar, ett resultat: installationsprogrammet för din kontorsdator, det guidade installationsprogrammet för din server eller Docker Compose-stacken för din egen miljö. Landspaketet levereras med ditt lands helgdagar, arbetstidsregler och branschförinställningar (tillägg, där de är definierade för landet) &mdash; utan registrering, utan licenskostnader."
+  },
   "profile": {
     "icon": "description",
     "title": "Endast profilen &mdash; för befintliga installationer",

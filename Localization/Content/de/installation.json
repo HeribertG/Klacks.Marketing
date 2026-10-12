@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Compose-Paket laden"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Auf dem Büro-PC (ohne Docker)",
+      "text": "Für Betriebe mit einem einzigen Büro-PC: ein normales Installationsprogramm für Windows oder Mac &mdash; ohne Docker und ohne eigenen Server. Klacks läuft als Hintergrunddienst, Ihre Daten bleiben auf diesem PC.",
+      "requirementsTitle": "Voraussetzungen",
+      "requirements": [
+        "Windows 10 oder 11 (64-Bit) oder ein Mac mit Apple-Chip (M1 oder neuer)",
+        "16 GB Arbeitsspeicher empfohlen, mindestens 5 GB freier Speicherplatz",
+        "Internetverbindung beim ersten Start (KI-Modelle, rund 700 MB) und für Updates",
+        "Administratorrechte für die Installation"
+      ],
+      "stepsTitle": "In drei Schritten",
+      "steps": [
+        { "title": "Installationsprogramm laden", "text": "Die Datei für Windows oder Mac herunterladen." },
+        { "title": "Installation ausführen", "text": "Das Programm richtet Datenbank, Klacks und den Update-Dienst ein und übernimmt das Länderprofil Ihres Landes." },
+        { "title": "Im Browser öffnen", "text": "Klacks im Browser öffnen, mit dem Initialkonto anmelden und ein eigenes Administratorkonto anlegen." }
+      ],
+      "downloadLabel": "Für Windows laden"
+    },
+    "macDownloadLabel": "Für Mac laden",
+    "linuxNote": "Linux? Bitte den geführten Installer mit Docker verwenden.",
+    "heroSubtitle": "Drei Wege, ein Ergebnis: das Installationsprogramm für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup. Das Länderpaket bringt Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert) &mdash; ohne Registrierung, ohne Lizenzkosten."
+  },
   "profile": {
     "icon": "description",
     "title": "Nur das Länderprofil &mdash; für bestehende Installationen",

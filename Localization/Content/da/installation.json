@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Download Compose-pakke"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "På kontor-pc'en (uden Docker)",
+      "text": "Til virksomheder med én enkelt kontor-pc: et almindeligt installationsprogram til Windows eller Mac &mdash; uden Docker og uden egen server. Klacks kører som baggrundstjeneste, og dine data bliver på denne pc.",
+      "requirementsTitle": "Forudsætninger",
+      "requirements": [
+        "Windows 10 eller 11 (64-bit) eller en Mac med Apple-chip (M1 eller nyere)",
+        "16 GB arbejdshukommelse anbefales, mindst 5 GB ledig diskplads",
+        "Internetforbindelse ved første start (AI-modeller, ca. 700 MB) og til opdateringer",
+        "Administratorrettigheder til installationen"
+      ],
+      "stepsTitle": "Tre trin",
+      "steps": [
+        { "title": "Download installationsprogrammet", "text": "Download filen til Windows eller Mac." },
+        { "title": "Kør installationen", "text": "Installationsprogrammet opsætter databasen, Klacks og opdateringstjenesten og anvender dit lands profil." },
+        { "title": "Åbn i browseren", "text": "Åbn Klacks i din browser, log ind med den indledende konto, og opret din egen administratorkonto." }
+      ],
+      "downloadLabel": "Download til Windows"
+    },
+    "macDownloadLabel": "Download til Mac",
+    "linuxNote": "Linux? Brug venligst den guidede installer med Docker.",
+    "heroSubtitle": "Tre veje, ét resultat: installationsprogrammet til din kontor-pc, den guidede installer til din server eller Docker Compose-stacken til dit eget setup. Landepakken leveres med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet) &mdash; ingen registrering, ingen licensomkostninger."
+  },
   "profile": {
     "icon": "description",
     "title": "Kun profilen &mdash; til eksisterende installationer",

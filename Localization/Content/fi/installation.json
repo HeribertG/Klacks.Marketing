@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Lataa Compose-paketti"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Toimiston PC:llä (ilman Dockeria)",
+      "text": "Yrityksille, joilla on yksi toimiston PC: tavallinen asennusohjelma Windowsille tai Macille &mdash; ilman Dockeria ja ilman omaa palvelinta. Klacks toimii taustapalveluna, ja tietonne pysyvät tällä PC:llä.",
+      "requirementsTitle": "Vaatimukset",
+      "requirements": [
+        "Windows 10 tai 11 (64-bittinen) tai Apple-sirulla varustettu Mac (M1 tai uudempi)",
+        "Suosittelemme 16 Gt:n muistia, vähintään 5 Gt vapaata levytilaa",
+        "Internetyhteys ensimmäisellä käynnistyskerralla (tekoälymallit, noin 700 Mt) ja päivityksiä varten",
+        "Järjestelmänvalvojan oikeudet asennusta varten"
+      ],
+      "stepsTitle": "Kolme vaihetta",
+      "steps": [
+        { "title": "Asennusohjelman lataus", "text": "Ladatkaa tiedosto Windowsille tai Macille." },
+        { "title": "Asennuksen suoritus", "text": "Asennusohjelma määrittää tietokannan, Klacksin ja päivityspalvelun sekä ottaa käyttöön maanne profiilin." },
+        { "title": "Avaaminen selaimessa", "text": "Avatkaa Klacks selaimessanne, kirjautukaa sisään alkutilillä ja luokaa oma järjestelmänvalvojan tilinne." }
+      ],
+      "downloadLabel": "Lataa Windowsille"
+    },
+    "macDownloadLabel": "Lataa Macille",
+    "linuxNote": "Linux? Käyttäkää ohjattua asennusohjelmaa Dockerin kanssa.",
+    "heroSubtitle": "Kolme polkua, yksi lopputulos: asennusohjelma toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty) &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
+  },
   "profile": {
     "icon": "description",
     "title": "Pelkkä profiili &mdash; olemassa oleviin asennuksiin",

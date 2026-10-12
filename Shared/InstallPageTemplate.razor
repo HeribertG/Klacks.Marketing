@@ -14,7 +14,7 @@
         @((MarkupString)Content.Hero.TitleHtml)
     </h1>
     <p class="hero-enter hero-enter-3 text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-        @((MarkupString)Content.Hero.Subtitle)
+        @((MarkupString)HeroSubtitle)
     </p>
 </header>
 
@@ -53,9 +53,25 @@ else
     </section>
 }
 
-<!-- TWO INSTALLATION PATHS -->
+<!-- INSTALLATION PATHS -->
 <section class="reveal pb-14 md:pb-24 px-5 sm:px-8 max-w-7xl mx-auto no-line-rule">
-    <div class="reveal-stagger grid lg:grid-cols-2 gap-8 items-stretch">
+    <div class="reveal-stagger grid @PathGridColumns gap-8 items-stretch">
+        @if (NativeSection is { } native)
+        {
+            <InstallPathCard Path="@native.Path">
+                <Actions>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="@NativeSettings.WindowsUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                            <span class="material-symbols-outlined">download</span> @native.Path.DownloadLabel
+                        </a>
+                        <a href="@NativeSettings.MacUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                            <span class="material-symbols-outlined">download</span> @native.MacDownloadLabel
+                        </a>
+                    </div>
+                    <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.LinuxNote)</p>
+                </Actions>
+            </InstallPathCard>
+        }
         <InstallPathCard Path="@Content.OnPrem"
                          DownloadUrl="@OnPremDownloadUrl"
                          DownloadLabel="@OnPremDownloadLabel"
@@ -139,6 +155,15 @@ else
     private InstallPageContent Content => ContentProvider.GetInstallPage(Culture, PageKey);
 
     private string DescriptionSource => Content.MetaDescription ?? Content.Hero.Subtitle;
+
+    private NativeInstallSettings NativeSettings => NativeInstallSettings.From(Configuration);
+
+    // The office-PC card is shown only when the switch is on and the culture file carries it.
+    private InstallNativeSection? NativeSection => NativeSettings.Enabled ? Content.Native : null;
+
+    private string HeroSubtitle => NativeSection?.HeroSubtitle ?? Content.Hero.Subtitle;
+
+    private string PathGridColumns => NativeSection is null ? "lg:grid-cols-2" : "lg:grid-cols-3";
 
     private string MarketplaceBaseUrl => Configuration[MarketplaceBaseUrlConfigKey] ?? ExternalLinks.MarketplaceUrl;
 

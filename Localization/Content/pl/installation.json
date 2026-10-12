@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Pobierz pakiet Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Na komputerze biurowym (bez Dockera)",
+      "text": "Dla firm z jednym komputerem biurowym: zwykły instalator dla Windows lub Maca &mdash; bez Dockera i bez własnego serwera. Klacks działa jako usługa w tle, a Państwa dane pozostają na tym komputerze.",
+      "requirementsTitle": "Wymagania",
+      "requirements": [
+        "Windows 10 lub 11 (64-bit) albo Mac z czipem Apple (M1 lub nowszym)",
+        "Zalecane 16 GB pamięci RAM, co najmniej 5 GB wolnego miejsca na dysku",
+        "Połączenie z internetem przy pierwszym uruchomieniu (modele AI, ok. 700 MB) oraz do aktualizacji",
+        "Uprawnienia administratora do instalacji"
+      ],
+      "stepsTitle": "W trzech krokach",
+      "steps": [
+        { "title": "Pobranie instalatora", "text": "Pobierają Państwo plik dla Windows lub Maca." },
+        { "title": "Uruchomienie instalacji", "text": "Instalator konfiguruje bazę danych, Klacks i usługę aktualizacji oraz wprowadza profil krajowy Państwa kraju." },
+        { "title": "Otwarcie w przeglądarce", "text": "Otwierają Państwo Klacks w przeglądarce, logują się kontem początkowym i zakładają własne konto administratora." }
+      ],
+      "downloadLabel": "Pobierz dla Windows"
+    },
+    "macDownloadLabel": "Pobierz dla Maca",
+    "linuxNote": "Linux? Prosimy skorzystać z prowadzonego instalatora z Dockerem.",
+    "heroSubtitle": "Trzy drogi, jeden rezultat: instalator na komputer biurowy, prowadzony instalator na Państwa serwer albo stack Docker Compose dla własnej konfiguracji. Pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy i branżowe ustawienia wstępne Państwa kraju (dodatki, o ile zdefiniowano je dla danego kraju) &mdash; bez rejestracji, bez opłat licencyjnych."
+  },
   "profile": {
     "icon": "description",
     "title": "Sam profil &mdash; dla istniejących instalacji",

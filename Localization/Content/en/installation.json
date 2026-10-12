@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Download Compose package"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "On your office PC (no Docker)",
+      "text": "For businesses with a single office PC: a regular installer for Windows or Mac &mdash; no Docker and no server of your own. Klacks runs as a background service, and your data stays on this PC.",
+      "requirementsTitle": "Requirements",
+      "requirements": [
+        "Windows 10 or 11 (64-bit), or a Mac with Apple silicon (M1 or newer)",
+        "16 GB of memory recommended, at least 5 GB of free disk space",
+        "Internet connection on first start (AI models, about 700 MB) and for updates",
+        "Administrator rights for the installation"
+      ],
+      "stepsTitle": "In three steps",
+      "steps": [
+        { "title": "Download the installer", "text": "Download the file for Windows or Mac." },
+        { "title": "Run the installation", "text": "The installer sets up the database, Klacks and the update service, and applies your country's profile." },
+        { "title": "Open in the browser", "text": "Open Klacks in your browser, sign in with the initial account and create your own administrator account." }
+      ],
+      "downloadLabel": "Download for Windows"
+    },
+    "macDownloadLabel": "Download for Mac",
+    "linuxNote": "Linux? Please use the guided installer with Docker.",
+    "heroSubtitle": "Three paths, one result: the installer for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees."
+  },
   "profile": {
     "icon": "description",
     "title": "Profile only &mdash; for existing installations",

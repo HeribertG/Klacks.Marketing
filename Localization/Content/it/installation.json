@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Scarica il pacchetto Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Sul PC dell'ufficio (senza Docker)",
+      "text": "Per le aziende con un solo PC in ufficio: un normale programma di installazione per Windows o Mac &mdash; senza Docker e senza un vostro server. Klacks funziona come servizio in background e i vostri dati restano su questo PC.",
+      "requirementsTitle": "Requisiti",
+      "requirements": [
+        "Windows 10 o 11 (64 bit), oppure un Mac con chip Apple (M1 o successivo)",
+        "16 GB di memoria RAM consigliati, almeno 5 GB di spazio libero su disco",
+        "Connessione a Internet al primo avvio (modelli di IA, circa 700 MB) e per gli aggiornamenti",
+        "Diritti di amministratore per l'installazione"
+      ],
+      "stepsTitle": "In tre passi",
+      "steps": [
+        { "title": "Scaricare il programma di installazione", "text": "Scaricate il file per Windows o Mac." },
+        { "title": "Eseguire l'installazione", "text": "Il programma configura il database, Klacks e il servizio di aggiornamento e applica il profilo del vostro paese." },
+        { "title": "Aprire nel browser", "text": "Aprite Klacks nel browser, accedete con l'account iniziale e create un vostro account amministratore." }
+      ],
+      "downloadLabel": "Scarica per Windows"
+    },
+    "macDownloadLabel": "Scarica per Mac",
+    "linuxNote": "Linux? Usate l'installer guidato con Docker.",
+    "heroSubtitle": "Tre strade, un unico risultato: il programma di installazione per il PC dell'ufficio, l'installer guidato per il vostro server oppure lo stack Docker Compose per la vostra configurazione. Il pacchetto paese porta con sé giorni festivi, regole sull'orario di lavoro e preimpostazioni di settore del vostro paese (maggiorazioni dove definite per il paese) &mdash; senza registrazione, senza costi di licenza."
+  },
   "profile": {
     "icon": "description",
     "title": "Solo il profilo &mdash; per installazioni esistenti",

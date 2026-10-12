@@ -49,6 +49,30 @@
     ],
     "downloadLabel": "Descărcați pachetul Compose"
   },
+  "native": {
+    "path": {
+      "icon": "computer",
+      "title": "Pe PC-ul de birou (fără Docker)",
+      "text": "Pentru firmele cu un singur PC de birou: un program de instalare obișnuit pentru Windows sau Mac &mdash; fără Docker și fără server propriu. Klacks rulează ca serviciu în fundal, iar datele dumneavoastră rămân pe acest PC.",
+      "requirementsTitle": "Cerințe",
+      "requirements": [
+        "Windows 10 sau 11 (64 de biți) sau un Mac cu cip Apple (M1 sau mai nou)",
+        "16 GB de memorie recomandați, cel puțin 5 GB de spațiu liber pe disc",
+        "Conexiune la internet la prima pornire (modele IA, aproximativ 700 MB) și pentru actualizări",
+        "Drepturi de administrator pentru instalare"
+      ],
+      "stepsTitle": "În trei pași",
+      "steps": [
+        { "title": "Descărcați programul de instalare", "text": "Descărcați fișierul pentru Windows sau Mac." },
+        { "title": "Rulați instalarea", "text": "Programul configurează baza de date, Klacks și serviciul de actualizare și aplică profilul de țară al țării dumneavoastră." },
+        { "title": "Deschideți în browser", "text": "Deschideți Klacks în browser, autentificați-vă cu contul inițial și creați-vă propriul cont de administrator." }
+      ],
+      "downloadLabel": "Descărcați pentru Windows"
+    },
+    "macDownloadLabel": "Descărcați pentru Mac",
+    "linuxNote": "Linux? Vă rugăm să folosiți instalatorul ghidat cu Docker.",
+    "heroSubtitle": "Trei căi, un singur rezultat: programul de instalare pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu. Pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară) &mdash; fără înregistrare, fără costuri de licență."
+  },
   "profile": {
     "icon": "description",
     "title": "Doar profilul &mdash; pentru instalările existente",
