@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "在辦公室電腦上（無需 Docker）",
-      "text": "適用於只有一台辦公室電腦的企業：適用於 Windows 或 Mac 的一般安裝程式 &mdash; 無需 Docker，也無需自有伺服器。Klacks 以背景服務執行，您的資料會保留在這台電腦上。",
+      "text": "適用於只有一台辦公室電腦的企業：適用於 Windows 的 ZIP 套件 &mdash; 無需 Docker，也無需自有伺服器。資料庫、Klacks 與更新服務以 Windows 背景服務執行，更新會自動安裝，您的資料會保留在這台電腦上。",
       "requirementsTitle": "系統需求",
       "requirements": [
-        "Windows 10 或 11（64 位元），或搭載 Apple 晶片的 Mac（M1 或更新機型）",
-        "建議 16 GB 記憶體，至少 5 GB 可用磁碟空間",
+        "Windows 10 或 11（64 位元）",
+        "Klacks 直接在這台電腦上使用 &mdash; 尚不支援從網路中的其他裝置存取",
         "首次啟動時（AI 模型，約 700 MB）及更新時需要網際網路連線",
         "安裝需要系統管理員權限"
       ],
       "stepsTitle": "只需三個步驟",
       "steps": [
-        { "title": "下載安裝程式", "text": "下載適用於 Windows 或 Mac 的檔案。" },
-        { "title": "執行安裝", "text": "安裝程式會設定資料庫、Klacks 與更新服務，並套用您所在國家的國家設定檔。" },
-        { "title": "在瀏覽器中開啟", "text": "在瀏覽器中開啟 Klacks，以初始帳戶登入，並建立您自己的系統管理員帳戶。" }
+        { "title": "下載並解壓縮套件", "text": "下載 ZIP 檔案並完整解壓縮，例如解壓縮到桌面。" },
+        { "title": "執行 Installieren.cmd", "text": "按兩下「Installieren.cmd」，並確認系統管理員權限要求。若 Windows SmartScreen 顯示警告，請開啟其他資訊並選擇仍要執行 &mdash; 此套件沒有程式碼簽章。接著選擇您所在的國家（假日、時區、工時規則）。安裝需要幾分鐘。" },
+        { "title": "在瀏覽器中開啟", "text": "在瀏覽器中開啟 http://localhost:5180，以隨附說明中的初始帳戶登入，並建立您自己的系統管理員帳戶。" }
       ],
       "downloadLabel": "下載 Windows 版"
     },
     "macDownloadLabel": "下載 Mac 版",
     "architectureNote": "適用於 64 位元 Windows（x64）。在搭載 ARM 處理器的 Windows 11 裝置（例如 Snapdragon X）上，Klacks 透過模擬執行；不支援 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？請使用搭配 Docker 的引導式安裝程式。",
-    "heroSubtitle": "三條路徑，同一結果：適用於辦公室電腦的安裝程式、適用於您伺服器的引導式安裝程式，或適用於自有環境的 Docker Compose 堆疊。國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準） &mdash; 無需註冊，沒有授權費用。"
+    "heroSubtitle": "三條路徑，同一結果：適用於辦公室電腦的 Windows 套件、適用於您伺服器的引導式安裝程式，或適用於自有環境的 Docker Compose 堆疊 &mdash; 無需註冊，沒有授權費用。使用辦公室電腦時，您在安裝過程中選擇國家；伺服器與 Docker Compose 的國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準）。"
   },
   "profile": {
     "icon": "description",

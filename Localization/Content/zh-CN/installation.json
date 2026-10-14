@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "在办公电脑上（无需 Docker）",
-      "text": "适用于只有一台办公电脑的企业：适用于 Windows 或 Mac 的常规安装程序 &mdash; 无需 Docker，也无需自有服务器。Klacks 作为后台服务运行，您的数据保留在这台电脑上。",
+      "text": "适用于只有一台办公电脑的企业：适用于 Windows 的 ZIP 软件包 &mdash; 无需 Docker，也无需自有服务器。数据库、Klacks 和更新服务作为 Windows 后台服务运行，更新会自动安装，您的数据保留在这台电脑上。",
       "requirementsTitle": "前提条件",
       "requirements": [
-        "Windows 10 或 11（64 位），或搭载 Apple 芯片的 Mac（M1 或更新机型）",
-        "建议 16 GB 内存，至少 5 GB 可用磁盘空间",
+        "Windows 10 或 11（64 位）",
+        "Klacks 直接在这台电脑上使用 &mdash; 暂不支持从网络中的其他设备访问",
         "首次启动时（AI 模型，约 700 MB）及更新时需要互联网连接",
         "安装需要管理员权限"
       ],
       "stepsTitle": "只需三步",
       "steps": [
-        { "title": "下载安装程序", "text": "下载适用于 Windows 或 Mac 的文件。" },
-        { "title": "运行安装", "text": "安装程序会设置数据库、Klacks 和更新服务，并应用您所在国家的国家配置文件。" },
-        { "title": "在浏览器中打开", "text": "在浏览器中打开 Klacks，使用初始账户登录，并创建您自己的管理员账户。" }
+        { "title": "下载并解压软件包", "text": "下载 ZIP 文件并完整解压，例如解压到桌面。" },
+        { "title": "运行 Installieren.cmd", "text": "双击「Installieren.cmd」，并确认管理员权限请求。如果 Windows SmartScreen 显示警告，请打开更多信息并选择仍然运行 &mdash; 该软件包没有代码签名。随后选择您所在的国家（节假日、时区、工时规则）。安装需要几分钟。" },
+        { "title": "在浏览器中打开", "text": "在浏览器中打开 http://localhost:5180，使用随附说明中的初始账户登录，并创建您自己的管理员账户。" }
       ],
       "downloadLabel": "下载 Windows 版"
     },
     "macDownloadLabel": "下载 Mac 版",
     "architectureNote": "适用于 64 位 Windows（x64）。在搭载 ARM 处理器的 Windows 11 设备（例如 Snapdragon X）上，Klacks 通过仿真运行；不支持 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？请使用带 Docker 的引导式安装程序。",
-    "heroSubtitle": "三条路径，同一结果：适用于办公电脑的安装程序、适用于您服务器的引导式安装程序，或适用于自有环境的 Docker Compose 堆栈。国家套件随附您所在国家的法定节假日、工时规则和行业预设（工时加成以该国家已定义的为准） &mdash; 无需注册，没有许可费用。"
+    "heroSubtitle": "三条路径，同一结果：适用于办公电脑的 Windows 软件包、适用于您服务器的引导式安装程序，或适用于自有环境的 Docker Compose 堆栈 &mdash; 无需注册，没有许可费用。使用办公电脑时，您在安装过程中选择国家；服务器和 Docker Compose 的国家套件随附您所在国家的法定节假日、工时规则和行业预设（工时加成以该国家已定义的为准）。"
   },
   "profile": {
     "icon": "description",

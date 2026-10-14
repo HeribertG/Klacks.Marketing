@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Toimiston PC:llä (ilman Dockeria)",
-      "text": "Yrityksille, joilla on yksi toimiston PC: tavallinen asennusohjelma Windowsille tai Macille &mdash; ilman Dockeria ja ilman omaa palvelinta. Klacks toimii taustapalveluna, ja tietonne pysyvät tällä PC:llä.",
+      "text": "Yrityksille, joilla on yksi toimiston PC: ZIP-paketti Windowsille &mdash; ilman Dockeria ja ilman omaa palvelinta. Tietokanta, Klacks ja päivityspalvelu toimivat Windowsin taustapalveluina, päivitykset tulevat automaattisesti, ja tietonne pysyvät tällä PC:llä.",
       "requirementsTitle": "Vaatimukset",
       "requirements": [
-        "Windows 10 tai 11 (64-bittinen) tai Apple-sirulla varustettu Mac (M1 tai uudempi)",
-        "Suosittelemme 16 Gt:n muistia, vähintään 5 Gt vapaata levytilaa",
+        "Windows 10 tai 11 (64-bittinen)",
+        "Klacksia käytetään suoraan tällä PC:llä &mdash; käyttöä verkon muilta laitteilta ei vielä tueta",
         "Internetyhteys ensimmäisellä käynnistyskerralla (tekoälymallit, noin 700 Mt) ja päivityksiä varten",
         "Järjestelmänvalvojan oikeudet asennusta varten"
       ],
       "stepsTitle": "Kolme vaihetta",
       "steps": [
-        { "title": "Asennusohjelman lataus", "text": "Ladatkaa tiedosto Windowsille tai Macille." },
-        { "title": "Asennuksen suoritus", "text": "Asennusohjelma määrittää tietokannan, Klacksin ja päivityspalvelun sekä ottaa käyttöön maanne profiilin." },
-        { "title": "Avaaminen selaimessa", "text": "Avatkaa Klacks selaimessanne, kirjautukaa sisään alkutilillä ja luokaa oma järjestelmänvalvojan tilinne." }
+        { "title": "Paketin lataus ja purku", "text": "Ladatkaa ZIP-tiedosto ja purkakaa se kokonaan, esimerkiksi työpöydälle." },
+        { "title": "Installieren.cmd:n käynnistys", "text": "Kaksoisnapsauttakaa tiedostoa &rdquo;Installieren.cmd&rdquo; ja hyväksykää järjestelmänvalvojan oikeuksia koskeva kysymys. Jos Windows SmartScreen näyttää varoituksen, avatkaa lisätiedot ja valitkaa suorittaminen siitä huolimatta &mdash; pakettia ei ole koodiallekirjoitettu. Valitkaa sen jälkeen maanne (pyhäpäivät, aikavyöhyke, työaikasäännöt). Asennus kestää muutaman minuutin." },
+        { "title": "Avaaminen selaimessa", "text": "Avatkaa selaimessanne osoite http://localhost:5180, kirjautukaa sisään mukana tulevassa ohjeessa mainitulla alkutilillä ja luokaa oma järjestelmänvalvojan tilinne." }
       ],
       "downloadLabel": "Lataa Windowsille"
     },
     "macDownloadLabel": "Lataa Macille",
     "architectureNote": "64-bittiselle Windowsille (x64). Windows 11 -laitteissa, joissa on ARM-suoritin (esim. Snapdragon X), Klacks toimii emuloinnin avulla; Windows 10:tä ei tueta ARM-laitteissa.",
     "linuxNote": "Linux? Käyttäkää ohjattua asennusohjelmaa Dockerin kanssa.",
-    "heroSubtitle": "Kolme polkua, yksi lopputulos: asennusohjelma toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne. Maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty) &mdash; ei rekisteröitymistä, ei lisenssimaksuja."
+    "heroSubtitle": "Kolme polkua, yksi lopputulos: Windows-paketti toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne &mdash; ei rekisteröitymistä, ei lisenssimaksuja. Toimiston PC:llä valitsette maan asennuksen aikana; palvelimelle ja Docker Composelle maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty)."
   },
   "profile": {
     "icon": "description",

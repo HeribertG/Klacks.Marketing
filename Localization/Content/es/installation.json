@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "En el PC de la oficina (sin Docker)",
-      "text": "Para empresas con un único PC de oficina: un instalador convencional para Windows o Mac &mdash; sin Docker y sin servidor propio. Klacks se ejecuta como servicio en segundo plano y sus datos permanecen en este PC.",
+      "text": "Para empresas con un único PC de oficina: un paquete ZIP para Windows &mdash; sin Docker y sin servidor propio. La base de datos, Klacks y el servicio de actualización se ejecutan como servicios de Windows en segundo plano, las actualizaciones llegan automáticamente y sus datos permanecen en este PC.",
       "requirementsTitle": "Requisitos",
       "requirements": [
-        "Windows 10 u 11 (64 bits), o un Mac con chip de Apple (M1 o posterior)",
-        "Se recomiendan 16 GB de memoria RAM y al menos 5 GB de espacio libre en disco",
+        "Windows 10 u 11 (64 bits)",
+        "Klacks se usa directamente en este PC &mdash; el acceso desde otros dispositivos de la red aún no está previsto",
         "Conexión a Internet en el primer arranque (modelos de IA, unos 700 MB) y para las actualizaciones",
         "Derechos de administrador para la instalación"
       ],
       "stepsTitle": "Tres pasos",
       "steps": [
-        { "title": "Descargar el instalador", "text": "Descargue el archivo para Windows o Mac." },
-        { "title": "Ejecutar la instalación", "text": "El instalador configura la base de datos, Klacks y el servicio de actualización, y aplica el perfil de su país." },
-        { "title": "Abrir en el navegador", "text": "Abra Klacks en su navegador, inicie sesión con la cuenta inicial y cree su propia cuenta de administrador." }
+        { "title": "Descargar y extraer el paquete", "text": "Descargue el archivo ZIP y extráigalo por completo, por ejemplo en el escritorio." },
+        { "title": "Ejecutar Installieren.cmd", "text": "Haga doble clic en &laquo;Installieren.cmd&raquo; y confirme la solicitud de permisos de administrador. Si Windows SmartScreen muestra una advertencia, abra la información adicional y elija ejecutar de todas formas &mdash; el paquete no tiene firma de código. Después, elija su país (días festivos, zona horaria, normas de jornada laboral). La instalación tarda unos minutos." },
+        { "title": "Abrir en el navegador", "text": "Abra http://localhost:5180 en su navegador, inicie sesión con la cuenta inicial indicada en las instrucciones incluidas y cree su propia cuenta de administrador." }
       ],
       "downloadLabel": "Descargar para Windows"
     },
     "macDownloadLabel": "Descargar para Mac",
     "architectureNote": "Para Windows de 64 bits (x64). En equipos con Windows 11 y procesador ARM (p. ej., Snapdragon X), Klacks funciona mediante emulación; Windows 10 en ARM no es compatible.",
     "linuxNote": "¿Linux? Utilice el instalador guiado con Docker.",
-    "heroSubtitle": "Tres caminos, un mismo resultado: el instalador para el PC de su oficina, el instalador guiado para su servidor o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país) &mdash; sin registro, sin costes de licencia."
+    "heroSubtitle": "Tres caminos, un mismo resultado: el paquete de Windows para el PC de su oficina, el instalador guiado para su servidor o el stack de Docker Compose para su propio entorno &mdash; sin registro, sin costes de licencia. En el PC de oficina, usted elige su país durante la instalación; para el servidor y Docker Compose, el paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país)."
   },
   "profile": {
     "icon": "description",

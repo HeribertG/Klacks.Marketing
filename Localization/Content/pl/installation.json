@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Na komputerze biurowym (bez Dockera)",
-      "text": "Dla firm z jednym komputerem biurowym: zwykły instalator dla Windows lub Maca &mdash; bez Dockera i bez własnego serwera. Klacks działa jako usługa w tle, a Państwa dane pozostają na tym komputerze.",
+      "text": "Dla firm z jednym komputerem biurowym: pakiet ZIP dla Windows &mdash; bez Dockera i bez własnego serwera. Baza danych, Klacks i usługa aktualizacji działają jako usługi Windows w tle, aktualizacje przychodzą automatycznie, a Państwa dane pozostają na tym komputerze.",
       "requirementsTitle": "Wymagania",
       "requirements": [
-        "Windows 10 lub 11 (64-bit) albo Mac z czipem Apple (M1 lub nowszym)",
-        "Zalecane 16 GB pamięci RAM, co najmniej 5 GB wolnego miejsca na dysku",
+        "Windows 10 lub 11 (64-bit)",
+        "Z Klacks korzysta się bezpośrednio na tym komputerze &mdash; dostęp z innych urządzeń w sieci nie jest jeszcze obsługiwany",
         "Połączenie z internetem przy pierwszym uruchomieniu (modele AI, ok. 700 MB) oraz do aktualizacji",
         "Uprawnienia administratora do instalacji"
       ],
       "stepsTitle": "W trzech krokach",
       "steps": [
-        { "title": "Pobranie instalatora", "text": "Pobierają Państwo plik dla Windows lub Maca." },
-        { "title": "Uruchomienie instalacji", "text": "Instalator konfiguruje bazę danych, Klacks i usługę aktualizacji oraz wprowadza profil krajowy Państwa kraju." },
-        { "title": "Otwarcie w przeglądarce", "text": "Otwierają Państwo Klacks w przeglądarce, logują się kontem początkowym i zakładają własne konto administratora." }
+        { "title": "Pobranie i rozpakowanie pakietu", "text": "Pobierają Państwo plik ZIP i rozpakowują go w całości, na przykład na pulpit." },
+        { "title": "Uruchomienie Installieren.cmd", "text": "Klikają Państwo dwukrotnie &bdquo;Installieren.cmd&rdquo; i potwierdzają prośbę o uprawnienia administratora. Jeśli Windows SmartScreen wyświetli ostrzeżenie, otwierają Państwo dodatkowe informacje i wybierają uruchomienie mimo to &mdash; pakiet nie ma podpisu kodu. Następnie wybierają Państwo kraj (święta, strefa czasowa, reguły czasu pracy). Instalacja trwa kilka minut." },
+        { "title": "Otwarcie w przeglądarce", "text": "Otwierają Państwo http://localhost:5180 w przeglądarce, logują się kontem początkowym z dołączonej instrukcji i zakładają własne konto administratora." }
       ],
       "downloadLabel": "Pobierz dla Windows"
     },
     "macDownloadLabel": "Pobierz dla Maca",
     "architectureNote": "Dla 64-bitowego systemu Windows (x64). Na urządzeniach z Windows 11 i procesorem ARM (np. Snapdragon X) Klacks działa dzięki emulacji; Windows 10 na ARM nie jest obsługiwany.",
     "linuxNote": "Linux? Prosimy skorzystać z prowadzonego instalatora z Dockerem.",
-    "heroSubtitle": "Trzy drogi, jeden rezultat: instalator na komputer biurowy, prowadzony instalator na Państwa serwer albo stack Docker Compose dla własnej konfiguracji. Pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy i branżowe ustawienia wstępne Państwa kraju (dodatki, o ile zdefiniowano je dla danego kraju) &mdash; bez rejestracji, bez opłat licencyjnych."
+    "heroSubtitle": "Trzy drogi, jeden rezultat: pakiet Windows na komputer biurowy, prowadzony instalator na Państwa serwer albo stack Docker Compose dla własnej konfiguracji &mdash; bez rejestracji, bez opłat licencyjnych. Na komputerze biurowym kraj wybierają Państwo podczas instalacji; dla serwera i Docker Compose pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy i branżowe ustawienia wstępne Państwa kraju (dodatki, o ile zdefiniowano je dla danego kraju)."
   },
   "profile": {
     "icon": "description",

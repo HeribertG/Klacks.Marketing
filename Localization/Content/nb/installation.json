@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "På kontor-PC-en (uten Docker)",
-      "text": "For bedrifter med én enkelt kontor-PC: et vanlig installasjonsprogram for Windows eller Mac &mdash; uten Docker og uten egen server. Klacks kjører som en bakgrunnstjeneste, og dataene dine blir værende på denne PC-en.",
+      "text": "For bedrifter med én enkelt kontor-PC: en ZIP-pakke for Windows &mdash; uten Docker og uten egen server. Databasen, Klacks og oppdateringstjenesten kjører som Windows-bakgrunnstjenester, oppdateringer kommer automatisk, og dataene dine blir værende på denne PC-en.",
       "requirementsTitle": "Krav",
       "requirements": [
-        "Windows 10 eller 11 (64-bit) eller en Mac med Apple-brikke (M1 eller nyere)",
-        "16 GB minne anbefales, minst 5 GB ledig diskplass",
+        "Windows 10 eller 11 (64-bit)",
+        "Klacks brukes direkte på denne PC-en &mdash; tilgang fra andre enheter i nettverket støttes ikke ennå",
         "Internettforbindelse ved første oppstart (KI-modeller, rundt 700 MB) og for oppdateringer",
         "Administratorrettigheter for installasjonen"
       ],
       "stepsTitle": "I tre trinn",
       "steps": [
-        { "title": "Last ned installasjonsprogrammet", "text": "Last ned filen for Windows eller Mac." },
-        { "title": "Kjør installasjonen", "text": "Programmet setter opp databasen, Klacks og oppdateringstjenesten, og tar i bruk landsprofilen for landet ditt." },
-        { "title": "Åpne i nettleseren", "text": "Åpne Klacks i nettleseren, logg inn med startkontoen og opprett din egen administratorkonto." }
+        { "title": "Last ned og pakk ut pakken", "text": "Last ned ZIP-filen og pakk den ut fullstendig, for eksempel på skrivebordet." },
+        { "title": "Kjør Installieren.cmd", "text": "Dobbeltklikk på &laquo;Installieren.cmd&raquo; og bekreft forespørselen om administratorrettigheter. Viser Windows SmartScreen en advarsel, åpner du tilleggsinformasjonen og velger å kjøre programmet likevel &mdash; pakken er ikke kodesignert. Velg deretter landet ditt (helligdager, tidssone, arbeidstidsregler). Installasjonen tar noen minutter." },
+        { "title": "Åpne i nettleseren", "text": "Åpne http://localhost:5180 i nettleseren, logg inn med startkontoen fra den vedlagte veiledningen og opprett din egen administratorkonto." }
       ],
       "downloadLabel": "Last ned for Windows"
     },
     "macDownloadLabel": "Last ned for Mac",
     "architectureNote": "For Windows 64-bit (x64). På Windows 11-enheter med ARM-prosessor (f.eks. Snapdragon X) kjører Klacks via emulering; Windows 10 på ARM støttes ikke.",
     "linuxNote": "Linux? Bruk det veiledede installasjonsprogrammet med Docker.",
-    "heroSubtitle": "Tre veier, ett resultat: installasjonsprogrammet for kontor-PC-en, det veiledede installasjonsprogrammet for serveren din eller Docker Compose-stacken for ditt eget oppsett. Landspakken leveres med helligdager, arbeidstidsregler og bransjeforhåndsinnstillinger for landet ditt (tillegg der de er definert for landet) &mdash; uten registrering, uten lisenskostnader."
+    "heroSubtitle": "Tre veier, ett resultat: Windows-pakken for kontor-PC-en, det veiledede installasjonsprogrammet for serveren din eller Docker Compose-stacken for ditt eget oppsett &mdash; uten registrering, uten lisenskostnader. På kontor-PC-en velger du landet under installasjonen; for server og Docker Compose leveres landspakken med helligdager, arbeidstidsregler og bransjeforhåndsinnstillinger for landet ditt (tillegg der de er definert for landet)."
   },
   "profile": {
     "icon": "description",

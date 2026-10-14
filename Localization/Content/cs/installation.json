@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Na kancelářském PC (bez Dockeru)",
-      "text": "Pro firmy s jediným kancelářským PC: běžný instalační program pro Windows nebo Mac &mdash; bez Dockeru a bez vlastního serveru. Klacks běží jako služba na pozadí a vaše data zůstávají na tomto PC.",
+      "text": "Pro firmy s jediným kancelářským PC: balíček ZIP pro Windows &mdash; bez Dockeru a bez vlastního serveru. Databáze, Klacks a aktualizační služba běží jako služby Windows na pozadí, aktualizace přicházejí automaticky a vaše data zůstávají na tomto PC.",
       "requirementsTitle": "Předpoklady",
       "requirements": [
-        "Windows 10 nebo 11 (64bitové), nebo Mac s čipem Apple (M1 nebo novější)",
-        "Doporučeno 16 GB paměti RAM, alespoň 5 GB volného místa na disku",
+        "Windows 10 nebo 11 (64bitové)",
+        "Klacks se používá přímo na tomto PC &mdash; přístup z jiných zařízení v síti zatím není podporován",
         "Připojení k internetu při prvním spuštění (modely AI, přibližně 700 MB) a pro aktualizace",
         "Administrátorská práva pro instalaci"
       ],
       "stepsTitle": "Tři kroky",
       "steps": [
-        { "title": "Stáhnout instalační program", "text": "Stáhněte soubor pro Windows nebo Mac." },
-        { "title": "Spustit instalaci", "text": "Instalační program nastaví databázi, Klacks a aktualizační službu a aplikuje profil vaší země." },
-        { "title": "Otevřít v prohlížeči", "text": "Otevřete Klacks v prohlížeči, přihlaste se výchozím účtem a vytvořte si vlastní administrátorský účet." }
+        { "title": "Stáhnout a rozbalit balíček", "text": "Stáhněte soubor ZIP a celý ho rozbalte, například na plochu." },
+        { "title": "Spustit Installieren.cmd", "text": "Dvakrát klikněte na &bdquo;Installieren.cmd&ldquo; a potvrďte dotaz na oprávnění správce. Pokud Windows SmartScreen zobrazí varování, otevřete další informace a zvolte, že chcete program přesto spustit &mdash; balíček není podepsán certifikátem pro podpis kódu. Poté zvolte svou zemi (svátky, časové pásmo, pravidla pracovní doby). Instalace trvá několik minut." },
+        { "title": "Otevřít v prohlížeči", "text": "Otevřete v prohlížeči http://localhost:5180, přihlaste se výchozím účtem z přiloženého návodu a vytvořte si vlastní administrátorský účet." }
       ],
       "downloadLabel": "Stáhnout pro Windows"
     },
     "macDownloadLabel": "Stáhnout pro Mac",
     "architectureNote": "Pro 64bitovou verzi Windows (x64). Na zařízeních s Windows 11 a procesorem ARM (např. Snapdragon X) běží Klacks prostřednictvím emulace; systém Windows 10 na ARM není podporován.",
     "linuxNote": "Linux? Použijte prosím řízený instalátor s Dockerem.",
-    "heroSubtitle": "Tři cesty, jeden výsledek: instalační program pro kancelářské PC, řízený instalátor pro váš server, nebo Docker Compose stack pro vaše vlastní prostředí. Balíček pro zemi přináší svátky, pravidla pracovní doby i oborová přednastavení vaší země (příplatky, pokud jsou pro zemi definovány) &mdash; bez registrace, bez licenčních poplatků."
+    "heroSubtitle": "Tři cesty, jeden výsledek: balíček pro Windows na kancelářské PC, řízený instalátor pro váš server, nebo Docker Compose stack pro vaše vlastní prostředí &mdash; bez registrace, bez licenčních poplatků. Na kancelářském PC zvolíte zemi během instalace; pro server a Docker Compose přináší balíček pro zemi svátky, pravidla pracovní doby i oborová přednastavení vaší země (příplatky, pokud jsou pro zemi definovány)."
   },
   "profile": {
     "icon": "description",

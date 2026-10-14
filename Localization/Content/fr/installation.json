@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Sur le PC du bureau (sans Docker)",
-      "text": "Pour les entreprises disposant d'un seul PC de bureau : un programme d'installation classique pour Windows ou Mac &mdash; sans Docker et sans serveur à vous. Klacks fonctionne comme service en arrière-plan, et vos données restent sur ce PC.",
+      "text": "Pour les entreprises disposant d'un seul PC de bureau : un paquet ZIP pour Windows &mdash; sans Docker et sans serveur à vous. La base de données, Klacks et le service de mise à jour fonctionnent comme services Windows en arrière-plan, les mises à jour arrivent automatiquement, et vos données restent sur ce PC.",
       "requirementsTitle": "Prérequis",
       "requirements": [
-        "Windows 10 ou 11 (64 bits), ou un Mac avec puce Apple (M1 ou plus récent)",
-        "16 Go de mémoire vive recommandés, au moins 5 Go d'espace disque libre",
+        "Windows 10 ou 11 (64 bits)",
+        "Klacks s'utilise directement sur ce PC &mdash; l'accès depuis d'autres appareils du réseau n'est pas encore prévu",
         "Connexion Internet au premier démarrage (modèles d'IA, environ 700 Mo) et pour les mises à jour",
         "Droits d'administrateur pour l'installation"
       ],
       "stepsTitle": "En trois étapes",
       "steps": [
-        { "title": "Télécharger le programme d'installation", "text": "Téléchargez le fichier pour Windows ou Mac." },
-        { "title": "Lancer l'installation", "text": "Le programme d'installation configure la base de données, Klacks et le service de mise à jour, et applique le profil de votre pays." },
-        { "title": "Ouvrir dans le navigateur", "text": "Ouvrez Klacks dans votre navigateur, connectez-vous avec le compte initial et créez votre propre compte administrateur." }
+        { "title": "Télécharger et extraire le paquet", "text": "Téléchargez le fichier ZIP et extrayez-le entièrement, par exemple sur le bureau." },
+        { "title": "Lancer Installieren.cmd", "text": "Double-cliquez sur &laquo; Installieren.cmd &raquo; et acceptez la demande de droits d'administrateur. Si Windows SmartScreen affiche un avertissement, ouvrez les informations complémentaires et choisissez d'exécuter quand même &mdash; le paquet n'est pas signé numériquement. Choisissez ensuite votre pays (jours fériés, fuseau horaire, règles de temps de travail). L'installation dure quelques minutes." },
+        { "title": "Ouvrir dans le navigateur", "text": "Ouvrez http://localhost:5180 dans votre navigateur, connectez-vous avec le compte initial indiqué dans les instructions jointes et créez votre propre compte administrateur." }
       ],
       "downloadLabel": "Télécharger pour Windows"
     },
     "macDownloadLabel": "Télécharger pour Mac",
     "architectureNote": "Pour Windows 64 bits (x64). Sur les appareils Windows 11 équipés d'un processeur ARM (p. ex. Snapdragon X), Klacks fonctionne par émulation ; Windows 10 sur ARM n'est pas pris en charge.",
     "linuxNote": "Linux ? Veuillez utiliser l'installateur guidé avec Docker.",
-    "heroSubtitle": "Trois chemins, un même résultat : le programme d'installation pour le PC de votre bureau, l'installateur guidé pour votre serveur, ou le stack Docker Compose pour votre propre configuration. Le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail et les préréglages sectoriels de votre pays (majorations là où elles sont définies pour le pays) &mdash; sans inscription, sans frais de licence."
+    "heroSubtitle": "Trois chemins, un même résultat : le paquet Windows pour le PC de votre bureau, l'installateur guidé pour votre serveur, ou le stack Docker Compose pour votre propre configuration &mdash; sans inscription, sans frais de licence. Sur le PC de bureau, vous choisissez votre pays pendant l'installation ; pour le serveur et Docker Compose, le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail et les préréglages sectoriels de votre pays (majorations là où elles sont définies pour le pays)."
   },
   "profile": {
     "icon": "description",

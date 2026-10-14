@@ -74,7 +74,7 @@ public static class LlmsTxtGenerator
             CountryPageLinks.SmallBusinessSlug,
             "Klacks for SMEs",
             "For SMEs with 5 to 250 employees: plans shifts and tours, checks rest periods and qualifications, and runs on an office PC or your own server. Open source, no license fees.",
-            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on an office PC (Windows or Mac with Docker Desktop, 16 GB of memory recommended) or on your own Linux server (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
+            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on an office PC (Windows with Docker Desktop, 16 GB of memory recommended) or on your own Linux server (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
         ),
         (
             CountryPageLinks.MidSizeBusinessSlug,

@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "On your office PC (no Docker)",
-      "text": "For businesses with a single office PC: a regular installer for Windows or Mac &mdash; no Docker and no server of your own. Klacks runs as a background service, and your data stays on this PC.",
+      "text": "For businesses with a single office PC: a ZIP package for Windows &mdash; no Docker and no server of your own. The database, Klacks and the update service run as Windows background services, updates arrive automatically, and your data stays on this PC.",
       "requirementsTitle": "Requirements",
       "requirements": [
-        "Windows 10 or 11 (64-bit), or a Mac with Apple silicon (M1 or newer)",
-        "16 GB of memory recommended, at least 5 GB of free disk space",
+        "Windows 10 or 11 (64-bit)",
+        "Klacks is used directly on this PC &mdash; access from other devices on the network is not provided yet",
         "Internet connection on first start (AI models, about 700 MB) and for updates",
         "Administrator rights for the installation"
       ],
       "stepsTitle": "In three steps",
       "steps": [
-        { "title": "Download the installer", "text": "Download the file for Windows or Mac." },
-        { "title": "Run the installation", "text": "The installer sets up the database, Klacks and the update service, and applies your country's profile." },
-        { "title": "Open in the browser", "text": "Open Klacks in your browser, sign in with the initial account and create your own administrator account." }
+        { "title": "Download and extract the package", "text": "Download the ZIP file and extract it completely, e.g. to the desktop." },
+        { "title": "Run Installieren.cmd", "text": "Double-click &ldquo;Installieren.cmd&rdquo; and confirm the administrator prompt with &ldquo;Yes&rdquo;. If Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo; &mdash; the package is not code-signed. Then choose your country (public holidays, time zone, working-time rules). The installation takes a few minutes." },
+        { "title": "Open in the browser", "text": "Open http://localhost:5180 in your browser, sign in with the initial account from the enclosed instructions and create your own administrator account." }
       ],
       "downloadLabel": "Download for Windows"
     },
     "macDownloadLabel": "Download for Mac",
     "architectureNote": "For 64-bit Windows (x64). On Windows 11 devices with an ARM processor (e.g. Snapdragon X) Klacks runs through emulation; Windows 10 on ARM is not supported.",
     "linuxNote": "Linux? Please use the guided installer with Docker.",
-    "heroSubtitle": "Three paths, one result: the installer for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees."
+    "heroSubtitle": "Three paths, one result: the Windows package for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup &mdash; no registration, no licence fees. On the office PC you choose your country during installation; for the server and Docker Compose, the country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country)."
   },
   "profile": {
     "icon": "description",

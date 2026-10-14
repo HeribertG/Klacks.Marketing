@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Auf dem Büro-PC (ohne Docker)",
-      "text": "Für Betriebe mit einem einzigen Büro-PC: ein normales Installationsprogramm für Windows oder Mac &mdash; ohne Docker und ohne eigenen Server. Klacks läuft als Hintergrunddienst, Ihre Daten bleiben auf diesem PC.",
+      "text": "Für Betriebe mit einem einzigen Büro-PC: ein ZIP-Paket für Windows &mdash; ohne Docker und ohne eigenen Server. Datenbank, Klacks und Update-Dienst laufen als Windows-Hintergrunddienste, Updates kommen automatisch, und Ihre Daten bleiben auf diesem PC.",
       "requirementsTitle": "Voraussetzungen",
       "requirements": [
-        "Windows 10 oder 11 (64-Bit) oder ein Mac mit Apple-Chip (M1 oder neuer)",
-        "16 GB Arbeitsspeicher empfohlen, mindestens 5 GB freier Speicherplatz",
+        "Windows 10 oder 11 (64-Bit)",
+        "Klacks wird direkt an diesem PC genutzt &mdash; der Zugriff von anderen Geräten im Netzwerk ist noch nicht vorgesehen",
         "Internetverbindung beim ersten Start (KI-Modelle, rund 700 MB) und für Updates",
         "Administratorrechte für die Installation"
       ],
       "stepsTitle": "In drei Schritten",
       "steps": [
-        { "title": "Installationsprogramm laden", "text": "Die Datei für Windows oder Mac herunterladen." },
-        { "title": "Installation ausführen", "text": "Das Programm richtet Datenbank, Klacks und den Update-Dienst ein und übernimmt das Länderprofil Ihres Landes." },
-        { "title": "Im Browser öffnen", "text": "Klacks im Browser öffnen, mit dem Initialkonto anmelden und ein eigenes Administratorkonto anlegen." }
+        { "title": "Paket laden und entpacken", "text": "Die ZIP-Datei herunterladen und vollständig entpacken, z. B. auf den Desktop." },
+        { "title": "Installieren.cmd starten", "text": "Doppelklick auf &bdquo;Installieren.cmd&ldquo; und die Frage nach Administratorrechten mit &bdquo;Ja&ldquo; bestätigen. Zeigt Windows &bdquo;Der Computer wurde durch Windows geschützt&ldquo;, auf &bdquo;Weitere Informationen&ldquo; und dann &bdquo;Trotzdem ausführen&ldquo; klicken &mdash; das Paket ist nicht code-signiert. Anschliessend das Land wählen (Feiertage, Zeitzone, Arbeitszeitregeln). Die Installation dauert einige Minuten." },
+        { "title": "Im Browser öffnen", "text": "Im Browser http://localhost:5180 öffnen, mit dem Initialkonto aus der beiliegenden Anleitung anmelden und ein eigenes Administratorkonto anlegen." }
       ],
       "downloadLabel": "Für Windows laden"
     },
     "macDownloadLabel": "Für Mac laden",
     "architectureNote": "Für Windows 64 Bit (x64). Auf Windows-11-Geräten mit ARM-Prozessor (z. B. Snapdragon X) läuft Klacks per Emulation; Windows 10 auf ARM wird nicht unterstützt.",
     "linuxNote": "Linux? Bitte den geführten Installer mit Docker verwenden.",
-    "heroSubtitle": "Drei Wege, ein Ergebnis: das Installationsprogramm für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup. Das Länderpaket bringt Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert) &mdash; ohne Registrierung, ohne Lizenzkosten."
+    "heroSubtitle": "Drei Wege, ein Ergebnis: das Windows-Paket für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup &mdash; ohne Registrierung, ohne Lizenzkosten. Auf dem Büro-PC wählen Sie das Land bei der Installation; für Server und Docker Compose bringt das Länderpaket Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert)."
   },
   "profile": {
     "icon": "description",

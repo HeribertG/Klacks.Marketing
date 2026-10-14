@@ -53,26 +53,26 @@
     "path": {
       "icon": "computer",
       "title": "Pe PC-ul de birou (fără Docker)",
-      "text": "Pentru firmele cu un singur PC de birou: un program de instalare obișnuit pentru Windows sau Mac &mdash; fără Docker și fără server propriu. Klacks rulează ca serviciu în fundal, iar datele dumneavoastră rămân pe acest PC.",
+      "text": "Pentru firmele cu un singur PC de birou: un pachet ZIP pentru Windows &mdash; fără Docker și fără server propriu. Baza de date, Klacks și serviciul de actualizare rulează ca servicii Windows în fundal, actualizările vin automat, iar datele dumneavoastră rămân pe acest PC.",
       "requirementsTitle": "Cerințe",
       "requirements": [
-        "Windows 10 sau 11 (64 de biți) sau un Mac cu cip Apple (M1 sau mai nou)",
-        "16 GB de memorie recomandați, cel puțin 5 GB de spațiu liber pe disc",
+        "Windows 10 sau 11 (64 de biți)",
+        "Klacks se folosește direct pe acest PC &mdash; accesul de pe alte dispozitive din rețea nu este încă prevăzut",
         "Conexiune la internet la prima pornire (modele IA, aproximativ 700 MB) și pentru actualizări",
         "Drepturi de administrator pentru instalare"
       ],
       "stepsTitle": "În trei pași",
       "steps": [
-        { "title": "Descărcați programul de instalare", "text": "Descărcați fișierul pentru Windows sau Mac." },
-        { "title": "Rulați instalarea", "text": "Programul configurează baza de date, Klacks și serviciul de actualizare și aplică profilul de țară al țării dumneavoastră." },
-        { "title": "Deschideți în browser", "text": "Deschideți Klacks în browser, autentificați-vă cu contul inițial și creați-vă propriul cont de administrator." }
+        { "title": "Descărcați și dezarhivați pachetul", "text": "Descărcați fișierul ZIP și dezarhivați-l complet, de exemplu pe desktop." },
+        { "title": "Porniți Installieren.cmd", "text": "Faceți dublu clic pe &bdquo;Installieren.cmd&rdquo; și confirmați solicitarea de drepturi de administrator. Dacă Windows SmartScreen afișează un avertisment, deschideți informațiile suplimentare și alegeți să rulați oricum &mdash; pachetul nu are semnătură de cod. Apoi alegeți țara (sărbători legale, fus orar, regulile timpului de lucru). Instalarea durează câteva minute." },
+        { "title": "Deschideți în browser", "text": "Deschideți http://localhost:5180 în browser, autentificați-vă cu contul inițial din instrucțiunile incluse și creați-vă propriul cont de administrator." }
       ],
       "downloadLabel": "Descărcați pentru Windows"
     },
     "macDownloadLabel": "Descărcați pentru Mac",
     "architectureNote": "Pentru Windows pe 64 de biți (x64). Pe dispozitivele cu Windows 11 și procesor ARM (de ex. Snapdragon X), Klacks rulează prin emulare; Windows 10 pe ARM nu este acceptat.",
     "linuxNote": "Linux? Vă rugăm să folosiți instalatorul ghidat cu Docker.",
-    "heroSubtitle": "Trei căi, un singur rezultat: programul de instalare pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu. Pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară) &mdash; fără înregistrare, fără costuri de licență."
+    "heroSubtitle": "Trei căi, un singur rezultat: pachetul Windows pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu &mdash; fără înregistrare, fără costuri de licență. Pe PC-ul de birou alegeți țara în timpul instalării; pentru server și Docker Compose, pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară)."
   },
   "profile": {
     "icon": "description",
