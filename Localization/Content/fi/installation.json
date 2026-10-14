@@ -56,7 +56,8 @@
       "text": "Yrityksille, joilla on yksi toimiston PC: ZIP-paketti Windowsille &mdash; ilman Dockeria ja ilman omaa palvelinta. Tietokanta, Klacks ja päivityspalvelu toimivat Windowsin taustapalveluina, päivitykset tulevat automaattisesti, ja tietonne pysyvät tällä PC:llä.",
       "requirementsTitle": "Vaatimukset",
       "requirements": [
-        "Windows 10 tai 11 (64-bittinen)",
+        "Windows 11 (64-bittinen)",
+        "Toimii myös Windows 10 22H2:ssa (64-bittinen). Microsoft ei enää tarjoa Windows 10:lle tavanomaista tukea; tietoturvapäivityksiä saa enää vain maksullisen ESU-ohjelman kautta.",
         "Klacksia käytetään suoraan tällä PC:llä &mdash; käyttöä verkon muilta laitteilta ei vielä tueta",
         "Internetyhteys ensimmäisellä käynnistyskerralla (tekoälymallit, noin 700 Mt) ja päivityksiä varten",
         "Järjestelmänvalvojan oikeudet asennusta varten"

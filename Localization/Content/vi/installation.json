@@ -56,7 +56,8 @@
       "text": "Dành cho doanh nghiệp chỉ có một máy tính văn phòng: một gói ZIP cho Windows &mdash; không cần Docker và không cần máy chủ riêng. Cơ sở dữ liệu, Klacks và dịch vụ cập nhật chạy dưới dạng dịch vụ nền của Windows, bản cập nhật được cài tự động, và dữ liệu của bạn được lưu trên chính máy tính này.",
       "requirementsTitle": "Yêu cầu",
       "requirements": [
-        "Windows 10 hoặc 11 (64-bit)",
+        "Windows 11 (64-bit)",
+        "Cũng chạy được trên Windows 10 22H2 (64-bit). Microsoft không còn cung cấp hỗ trợ thông thường cho Windows 10; các bản cập nhật bảo mật chỉ còn có thông qua chương trình ESU trả phí.",
         "Klacks được dùng trực tiếp trên máy tính này &mdash; chưa hỗ trợ truy cập từ các thiết bị khác trong mạng",
         "Kết nối Internet ở lần khởi động đầu tiên (các mô hình AI, khoảng 700 MB) và để cập nhật",
         "Quyền quản trị viên để cài đặt"

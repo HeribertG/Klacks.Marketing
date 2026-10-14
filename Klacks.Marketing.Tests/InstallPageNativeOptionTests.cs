@@ -15,7 +15,8 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The "office PC without Docker" install option: every culture carries a complete card including the x64/ARM note,
+/// The "office PC without Docker" install option: every culture carries a complete card including the x64/ARM note and
+/// the Windows 10 note (Windows 11 is the stated requirement, Windows 10 22H2 runs but only gets updates through ESU),
 /// the page is unchanged while NativeInstall:Enabled is off (two cards, two-path hero), and with the switch on every
 /// culture renders three cards with the counted Windows package link from the rolling "office-pc" release; the Mac
 /// button only appears when NativeInstall:MacUrl is configured.
@@ -28,7 +29,7 @@ public class InstallPageNativeOptionTests
     private const string InstallPageKey = "installation";
     private const string CountryPageKey = "land-ch-installation";
     private const string CountryRoutePath = "land-ch/installation";
-    private const int ExpectedRequirementCount = 4;
+    private const int ExpectedRequirementCount = 5;
     private const int ExpectedStepCount = 3;
     private const string RollingWindowsPackageUrl = "https://github.com/HeribertG/Klacks.Api/releases/download/office-pc/klacks-office-pc-win-x64.zip";
     private const string ConfiguredMacUrl = "https://downloads.example/klacks.pkg";
@@ -36,6 +37,9 @@ public class InstallPageNativeOptionTests
     private const string EnglishCulture = "en";
     private const string EnglishMacLabel = "Download for Mac";
     private static readonly string[] ArchitectureNoteFacts = ["x64", "ARM", "Snapdragon X"];
+    private const string SupportedWindows = "Windows 11";
+    private const string OutOfSupportWindows = "Windows 10";
+    private static readonly string[] Windows10NoteFacts = ["Windows 10 22H2", "ESU"];
 
     private static IEnumerable<string> Cultures() => SupportedCultures.All.Select(culture => culture.Code);
 
@@ -52,6 +56,17 @@ public class InstallPageNativeOptionTests
         native.Path.Steps.Count.ShouldBe(ExpectedStepCount);
         new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.ArchitectureNote, native.LinuxNote, native.HeroSubtitle }
             .ShouldAllBe(text => !string.IsNullOrWhiteSpace(text));
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_requires_Windows_11_and_notes_Windows_10_with_ESU(string culture)
+    {
+        var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
+        var requirements = provider.GetInstallPage(culture, InstallPageKey).Native!.Path.Requirements;
+
+        requirements[0].ShouldStartWith(SupportedWindows);
+        requirements[0].ShouldNotContain(OutOfSupportWindows);
+        Windows10NoteFacts.ShouldAllBe(fact => requirements[1].Contains(fact, StringComparison.Ordinal));
     }
 
     [TestCaseSource(nameof(Cultures))]

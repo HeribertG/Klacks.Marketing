@@ -56,7 +56,8 @@
       "text": "適用於只有一台辦公室電腦的企業：適用於 Windows 的 ZIP 套件 &mdash; 無需 Docker，也無需自有伺服器。資料庫、Klacks 與更新服務以 Windows 背景服務執行，更新會自動安裝，您的資料會保留在這台電腦上。",
       "requirementsTitle": "系統需求",
       "requirements": [
-        "Windows 10 或 11（64 位元）",
+        "Windows 11（64 位元）",
+        "也可在 Windows 10 22H2（64 位元）上執行。Microsoft 已不再為 Windows 10 提供一般支援；安全性更新僅透過付費的 ESU 方案提供。",
         "Klacks 直接在這台電腦上使用 &mdash; 尚不支援從網路中的其他裝置存取",
         "首次啟動時（AI 模型，約 700 MB）及更新時需要網際網路連線",
         "安裝需要系統管理員權限"

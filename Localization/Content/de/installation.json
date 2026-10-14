@@ -56,7 +56,8 @@
       "text": "Für Betriebe mit einem einzigen Büro-PC: ein ZIP-Paket für Windows &mdash; ohne Docker und ohne eigenen Server. Datenbank, Klacks und Update-Dienst laufen als Windows-Hintergrunddienste, Updates kommen automatisch, und Ihre Daten bleiben auf diesem PC.",
       "requirementsTitle": "Voraussetzungen",
       "requirements": [
-        "Windows 10 oder 11 (64-Bit)",
+        "Windows 11 (64-Bit)",
+        "Läuft auch unter Windows 10 22H2 (64-Bit). Microsoft unterstützt Windows 10 nicht mehr regulär; Sicherheitsupdates gibt es nur noch über das kostenpflichtige ESU-Programm.",
         "Klacks wird direkt an diesem PC genutzt &mdash; der Zugriff von anderen Geräten im Netzwerk ist noch nicht vorgesehen",
         "Internetverbindung beim ersten Start (KI-Modelle, rund 700 MB) und für Updates",
         "Administratorrechte für die Installation"

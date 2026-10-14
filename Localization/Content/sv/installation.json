@@ -56,7 +56,8 @@
       "text": "För företag med en enda kontorsdator: ett ZIP-paket för Windows &mdash; utan Docker och utan egen server. Databasen, Klacks och uppdateringstjänsten körs som Windows-bakgrundstjänster, uppdateringar kommer automatiskt, och dina data stannar på den här datorn.",
       "requirementsTitle": "Krav",
       "requirements": [
-        "Windows 10 eller 11 (64-bitars)",
+        "Windows 11 (64-bitars)",
+        "Fungerar även på Windows 10 22H2 (64-bitars). Microsoft har avslutat den ordinarie supporten för Windows 10; säkerhetsuppdateringar finns bara via det betalda ESU-programmet.",
         "Klacks används direkt på den här datorn &mdash; åtkomst från andra enheter i nätverket stöds inte ännu",
         "Internetanslutning vid första starten (AI-modeller, cirka 700 MB) och för uppdateringar",
         "Administratörsbehörighet för installationen"

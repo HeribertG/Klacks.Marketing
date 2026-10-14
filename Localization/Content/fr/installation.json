@@ -56,7 +56,8 @@
       "text": "Pour les entreprises disposant d'un seul PC de bureau : un paquet ZIP pour Windows &mdash; sans Docker et sans serveur à vous. La base de données, Klacks et le service de mise à jour fonctionnent comme services Windows en arrière-plan, les mises à jour arrivent automatiquement, et vos données restent sur ce PC.",
       "requirementsTitle": "Prérequis",
       "requirements": [
-        "Windows 10 ou 11 (64 bits)",
+        "Windows 11 (64 bits)",
+        "Fonctionne aussi sous Windows 10 22H2 (64 bits). Microsoft n'assure plus le support standard de Windows 10 ; les mises à jour de sécurité ne sont plus disponibles que via le programme payant ESU.",
         "Klacks s'utilise directement sur ce PC &mdash; l'accès depuis d'autres appareils du réseau n'est pas encore prévu",
         "Connexion Internet au premier démarrage (modèles d'IA, environ 700 Mo) et pour les mises à jour",
         "Droits d'administrateur pour l'installation"

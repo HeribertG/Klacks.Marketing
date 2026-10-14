@@ -56,7 +56,8 @@
       "text": "Dla firm z jednym komputerem biurowym: pakiet ZIP dla Windows &mdash; bez Dockera i bez własnego serwera. Baza danych, Klacks i usługa aktualizacji działają jako usługi Windows w tle, aktualizacje przychodzą automatycznie, a Państwa dane pozostają na tym komputerze.",
       "requirementsTitle": "Wymagania",
       "requirements": [
-        "Windows 10 lub 11 (64-bit)",
+        "Windows 11 (64-bit)",
+        "Działa także w systemie Windows 10 22H2 (64-bit). Microsoft zakończył standardowe wsparcie dla Windows 10; aktualizacje zabezpieczeń są dostępne już tylko w ramach płatnego programu ESU.",
         "Z Klacks korzysta się bezpośrednio na tym komputerze &mdash; dostęp z innych urządzeń w sieci nie jest jeszcze obsługiwany",
         "Połączenie z internetem przy pierwszym uruchomieniu (modele AI, ok. 700 MB) oraz do aktualizacji",
         "Uprawnienia administratora do instalacji"

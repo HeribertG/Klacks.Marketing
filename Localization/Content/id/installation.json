@@ -56,7 +56,8 @@
       "text": "Untuk usaha dengan satu PC kantor: paket ZIP untuk Windows &mdash; tanpa Docker dan tanpa server sendiri. Database, Klacks, dan layanan pembaruan berjalan sebagai layanan latar belakang Windows, pembaruan datang secara otomatis, dan data Anda tetap berada di PC ini.",
       "requirementsTitle": "Persyaratan",
       "requirements": [
-        "Windows 10 atau 11 (64-bit)",
+        "Windows 11 (64-bit)",
+        "Juga berjalan di Windows 10 22H2 (64-bit). Microsoft tidak lagi memberikan dukungan reguler untuk Windows 10; pembaruan keamanan hanya tersedia melalui program ESU berbayar.",
         "Klacks digunakan langsung di PC ini &mdash; akses dari perangkat lain di jaringan belum didukung",
         "Koneksi internet saat pertama kali dijalankan (model AI, sekitar 700 MB) dan untuk pembaruan",
         "Hak administrator untuk instalasi"

@@ -56,7 +56,8 @@
       "text": "适用于只有一台办公电脑的企业：适用于 Windows 的 ZIP 软件包 &mdash; 无需 Docker，也无需自有服务器。数据库、Klacks 和更新服务作为 Windows 后台服务运行，更新会自动安装，您的数据保留在这台电脑上。",
       "requirementsTitle": "前提条件",
       "requirements": [
-        "Windows 10 或 11（64 位）",
+        "Windows 11（64 位）",
+        "也可在 Windows 10 22H2（64 位）上运行。Microsoft 已不再为 Windows 10 提供常规支持；安全更新仅通过付费的 ESU 计划提供。",
         "Klacks 直接在这台电脑上使用 &mdash; 暂不支持从网络中的其他设备访问",
         "首次启动时（AI 模型，约 700 MB）及更新时需要互联网连接",
         "安装需要管理员权限"

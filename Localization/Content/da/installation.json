@@ -56,7 +56,8 @@
       "text": "Til virksomheder med én enkelt kontor-pc: en ZIP-pakke til Windows &mdash; uden Docker og uden egen server. Databasen, Klacks og opdateringstjenesten kører som Windows-baggrundstjenester, opdateringer kommer automatisk, og dine data bliver på denne pc.",
       "requirementsTitle": "Forudsætninger",
       "requirements": [
-        "Windows 10 eller 11 (64-bit)",
+        "Windows 11 (64-bit)",
+        "Kører også på Windows 10 22H2 (64-bit). Microsoft yder ikke længere almindelig support til Windows 10; sikkerhedsopdateringer fås kun via det betalte ESU-program.",
         "Klacks bruges direkte på denne pc &mdash; adgang fra andre enheder på netværket understøttes endnu ikke",
         "Internetforbindelse ved første start (AI-modeller, ca. 700 MB) og til opdateringer",
         "Administratorrettigheder til installationen"

@@ -56,7 +56,8 @@
       "text": "Pro firmy s jediným kancelářským PC: balíček ZIP pro Windows &mdash; bez Dockeru a bez vlastního serveru. Databáze, Klacks a aktualizační služba běží jako služby Windows na pozadí, aktualizace přicházejí automaticky a vaše data zůstávají na tomto PC.",
       "requirementsTitle": "Předpoklady",
       "requirements": [
-        "Windows 10 nebo 11 (64bitové)",
+        "Windows 11 (64bitové)",
+        "Funguje i ve Windows 10 22H2 (64bitové). Microsoft už pro Windows 10 neposkytuje standardní podporu; bezpečnostní aktualizace jsou k dispozici jen v rámci placeného programu ESU.",
         "Klacks se používá přímo na tomto PC &mdash; přístup z jiných zařízení v síti zatím není podporován",
         "Připojení k internetu při prvním spuštění (modely AI, přibližně 700 MB) a pro aktualizace",
         "Administrátorská práva pro instalaci"
