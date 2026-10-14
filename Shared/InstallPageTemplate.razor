@@ -64,11 +64,15 @@ else
                         <a href="@NativeSettings.WindowsUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
                             <span class="material-symbols-outlined">download</span> @native.Path.DownloadLabel
                         </a>
-                        <a href="@NativeSettings.MacUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
-                            <span class="material-symbols-outlined">download</span> @native.MacDownloadLabel
-                        </a>
+                        @if (NativeSettings.MacUrl is { } macUrl)
+                        {
+                            <a href="@macUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                                <span class="material-symbols-outlined">download</span> @native.MacDownloadLabel
+                            </a>
+                        }
                     </div>
-                    <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.LinuxNote)</p>
+                    <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.ArchitectureNote)</p>
+                    <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.LinuxNote)</p>
                 </Actions>
             </InstallPathCard>
         }

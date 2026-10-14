@@ -70,6 +70,7 @@
       "downloadLabel": "Download for Windows"
     },
     "macDownloadLabel": "Download for Mac",
+    "architectureNote": "For 64-bit Windows (x64). On Windows 11 devices with an ARM processor (e.g. Snapdragon X) Klacks runs through emulation; Windows 10 on ARM is not supported.",
     "linuxNote": "Linux? Please use the guided installer with Docker.",
     "heroSubtitle": "Three paths, one result: the installer for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees."
   },

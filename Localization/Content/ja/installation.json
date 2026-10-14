@@ -70,6 +70,7 @@
       "downloadLabel": "Windows版をダウンロード"
     },
     "macDownloadLabel": "Mac版をダウンロード",
+    "architectureNote": "64ビット版Windows（x64）向けです。ARMプロセッサー搭載のWindows 11デバイス（例：Snapdragon X）では、Klacksはエミュレーションで動作します。ARM版Windows 10はサポートされていません。",
     "linuxNote": "Linuxの場合は、Dockerを使用するガイド付きインストーラーをご利用ください。",
     "heroSubtitle": "3つの方法、1つの結果：オフィスPC向けのインストーラー、自社サーバー向けのガイド付きインストーラー、または独自セットアップ向けのDocker Composeスタック。国別パッケージには、貴社の国の祝日、労働時間規則、業種プリセットが最初から含まれています（時間割増は国で定義されている場合） &mdash; 登録不要、ライセンス費用もかかりません。"
   },
