@@ -58,6 +58,7 @@ else
     <div class="reveal-stagger grid @PathGridColumns gap-8 items-stretch">
         @if (NativeSection is { } native)
         {
+            <div id="@PageSectionIds.OfficePc" class="grid scroll-mt-24">
             <InstallPathCard Path="@native.Path">
                 <Actions>
                     <div class="flex flex-wrap gap-3">
@@ -79,6 +80,7 @@ else
                     <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)string.Format(native.LinuxNote, LinuxSectionHref))</p>
                 </Actions>
             </InstallPathCard>
+            </div>
         }
         <InstallPathCard Path="@Content.OnPrem"
                          DownloadUrl="@OnPremDownloadUrl"

@@ -1,0 +1,39 @@
+@inject IJSRuntime JS
+@inject IPageContentProvider ContentProvider
+
+@* "Link weiterschicken" of the simple start page (spec §5 section 9): a mail template opened in the visitor's own mail
+   program and a copy button; no cookie, no storage, the link is also shown as text for manual copying. Both actions
+   carry the "ShareClick" event. Url is the absolute URL that is shared, Culture the page culture (texts from
+   simple.json), CssClass adds outer spacing. *@
+<div class="flex flex-wrap gap-3 @CssClass">
+    <a href="@MailtoHref" data-c="ShareClick" class="inline-flex items-center gap-2 rounded-2xl bg-secondary text-white px-5 py-3 font-bold no-underline hover:opacity-90 transition-all">
+        <span class="material-symbols-outlined" aria-hidden="true">mail</span> @Tx("share.mailButton")
+    </a>
+    <button type="button" data-c="ShareClick" @onclick="CopyAsync" class="inline-flex items-center gap-2 rounded-2xl bg-surface-container-high text-primary px-5 py-3 font-bold hover:bg-surface-container-highest transition-all">
+        <span class="material-symbols-outlined" aria-hidden="true">content_copy</span> @Tx("share.copyButton")
+    </button>
+</div>
+<p class="text-sm text-on-surface-variant mt-3 mb-0 min-h-[1.25rem]" role="status" aria-live="polite">@_status</p>
+<p class="text-xs text-on-surface-variant font-mono break-all mt-1 mb-0" dir="ltr">@Url</p>
+
+@code {
+    private const string CopyFunction = "klacksShare.copy";
+    private const string MailBodySeparator = "\n";
+
+    private string _status = string.Empty;
+
+    [Parameter, EditorRequired] public required string Url { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+    [Parameter] public string CssClass { get; set; } = string.Empty;
+
+    private string MailtoHref
+        => $"mailto:?subject={Uri.EscapeDataString(Tx("share.mailSubject"))}&body={Uri.EscapeDataString(Tx("share.mailBody") + MailBodySeparator + Url)}";
+
+    private async Task CopyAsync()
+    {
+        var copied = await JS.InvokeAsync<bool>(CopyFunction, Url);
+        _status = Tx(copied ? "share.copied" : "share.copyFailed");
+    }
+
+    private string Tx(string key) => ContentProvider.GetText(Culture, SiteModes.SimpleContentKey, key);
+}

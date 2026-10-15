@@ -16,4 +16,5 @@ public static class PageSectionIds
     public const string Download = "download";
     public const string Agents = "ki-agenten";
     public const string Linux = "linux";
+    public const string OfficePc = "buero-pc";
 }

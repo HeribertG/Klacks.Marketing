@@ -1,0 +1,46 @@
+@inject ILocalizedVideoCatalog VideoCatalog
+
+@* Click-to-play video of the simple start page (spec §5/§7, deviation A2): poster first, nothing is downloaded before
+   the visitor presses play (preload="none"), native controls, muted, no autoplay, so the "VideoPlay" event
+   (wwwroot/js/c.js, first play per video and page view) counts a real decision. Deliberately not "rule-demo-video",
+   which rule-conflict-video.js would autoplay. Without webm, mp4 and webp poster in the page culture it renders
+   Fallback (default: nothing). VideoName is the base name ("simple-plans-week"), Culture the page culture, Label the
+   accessible name, Width/Height the intrinsic size that reserves the layout space. *@
+@if (_sources is not null)
+{
+    <video class="simple-video w-full h-auto rounded-2xl shadow-xl bg-surface-container-high"
+           controls muted playsinline preload="none"
+           width="@Width" height="@Height"
+           poster="@_sources.PosterPath"
+           aria-label="@Label"
+           data-c-play="VideoPlay">
+        <source src="@_sources.WebmPath" type="@WebmMimeType" />
+        <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
+    </video>
+}
+else if (Fallback is not null)
+{
+    @Fallback
+}
+
+@code {
+    public const string PlansWeekVideoName = "simple-plans-week";
+    public const string KlacksyCallVideoName = "simple-klacksy-call";
+
+    private const string WebmMimeType = "video/webm";
+    private const string Mp4MimeType = "video/mp4";
+
+    private LocalizedVideoSources? _sources;
+
+    [Parameter, EditorRequired] public required string VideoName { get; set; }
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+    [Parameter, EditorRequired] public required string Label { get; set; }
+    [Parameter] public int Width { get; set; } = DemoCarouselDefinition.DefaultVideoWidth;
+    [Parameter] public int Height { get; set; } = DemoCarouselDefinition.DefaultVideoHeight;
+    [Parameter] public RenderFragment? Fallback { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        _sources = VideoCatalog.Find(VideoName, Culture);
+    }
+}
