@@ -1,0 +1,44 @@
+@inject NavigationManager Nav
+@inject IOptions<SiteModeOptions> ModeOptions
+@inject IPageContentProvider ContentProvider
+@implements IDisposable
+
+@* Header slider "Expertenmodus" (spec docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §3): a real
+   checkbox with role="switch" and a label, keyboard operable; off on the simple start page, on everywhere else; a
+   change navigates to the opposite page of the same country (SiteModeResolver). Hidden in cultures without a simple
+   page and while SimpleMode:Enabled is off. The state is derived from the URL on every render and refreshed on every
+   in-circuit navigation; nothing is stored. The label is visually hidden below the sm breakpoint but stays the
+   accessible name. *@
+@if (State.ShowSwitch)
+{
+    <label class="mode-switch inline-flex items-center gap-2 cursor-pointer select-none">
+        <input type="checkbox" role="switch" class="mode-switch-input sr-only" checked="@(!State.IsSimple)" data-c="ExpertToggle" @onchange="Toggle" />
+        <span class="mode-switch-track" aria-hidden="true"><span class="mode-switch-thumb"></span></span>
+        <span class="sr-only sm:not-sr-only text-sm font-semibold text-primary whitespace-nowrap">@Tx(LabelKey)</span>
+    </label>
+}
+
+@code {
+    private const string LabelKey = "switch.label";
+
+    private SiteModeState State => SiteModeResolver.Resolve(Nav.ToBaseRelativePath(Nav.Uri), ModeOptions.Value.Enabled);
+
+    protected override void OnInitialized()
+    {
+        Nav.LocationChanged += HandleLocationChanged;
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e) => _ = InvokeAsync(StateHasChanged);
+
+    private void Toggle(ChangeEventArgs _)
+    {
+        if (State.SwitchTarget is { } target)
+        {
+            Nav.NavigateTo(target);
+        }
+    }
+
+    private string Tx(string key) => ContentProvider.GetText(State.CultureCode, SiteModes.SimpleContentKey, key);
+
+    public void Dispose() => Nav.LocationChanged -= HandleLocationChanged;
+}

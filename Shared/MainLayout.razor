@@ -7,211 +7,239 @@
 
 <!-- NAVIGATION BAR -->
 <nav class="fixed top-0 w-full z-50 glass-nav no-line-rule">
-    <div class="flex justify-between items-center gap-4 sm:gap-6 w-full px-4 sm:px-8 py-4 max-w-7xl mx-auto">
+    <div class="flex justify-between items-center gap-3 sm:gap-6 w-full px-4 sm:px-8 h-[4.5rem] max-w-7xl mx-auto">
         <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-black no-underline">
             <img src="images/klacks-logo.svg" class="w-8 h-8 shrink-0" alt="Klacks Logo" />
             Klacks
         </a>
-        <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
-            @if (ShowIndustryMenu)
-            {
+        <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+            <ExpertModeSwitch />
+            <div class="@(IsSimpleMode ? "flex" : "hidden xl:flex") items-center gap-3">
                 <div class="relative">
-                    <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
-                        @if (CurrentIndustryIcon.Length > 0)
-                        {
-                            <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
-                        }
-                        @IndustryHeaderText
+                    <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
+                        @CurrentCultureRecord.Code
                         <span class="material-symbols-outlined text-base">expand_more</span>
                     </button>
-                    <div class="dropdown-menu @(_industryMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
-                        @foreach (var industry in CurrentCountryIndustries)
+                    <div class="lang-dropdown dropdown-menu @(_languageMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
+                        @foreach (var culture in SupportedCultures.All)
                         {
-                            <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseIndustryMenu">
-                                <span class="material-symbols-outlined text-base">@industry.Icon</span>
-                                @Ix(industry.LabelKey)
+                            <a href="@ResolveLanguageHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">
+                                @culture.NativeName
                             </a>
                         }
                     </div>
                 </div>
-            }
-            else
-            {
-                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)">@Sh("nav.industries")</a>
-            }
-            @if (ShowCompanySizePages)
-            {
-                <div class="relative">
-                    <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" aria-expanded="@(_companySizeMenuOpen ? "true" : "false")" @onclick="ToggleCompanySizeMenu">
-                        @Sh("nav.companySize")
-                        <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
-                    </button>
-                    <div class="dropdown-menu @(_companySizeMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
-                        @foreach (var page in CompanySizePages)
-                        {
-                            <a href="@CompanyWideHref(page.Slug)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(page.Slug == CurrentCompanyWideSlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCompanySizeMenu">@Sh(page.LabelKey)</a>
-                        }
+                @if (ShowCountryDropdown)
+                {
+                    <div class="relative @(IsSimpleMode ? "hidden sm:block" : string.Empty)">
+                        <button type="button" class="flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleCountryMenu">
+                            <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-5 h-auto rounded-[2px]" />
+                            @CurrentCountryCode
+                            <span class="material-symbols-outlined text-base">expand_more</span>
+                        </button>
+                        <div class="country-dropdown dropdown-menu @(_countryMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
+                            @foreach (var country in CurrentLanguageCountries)
+                            {
+                                <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(IsCurrentCountry(country) ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCountryMenu">
+                                    <img src="@FlagSrc(CountryCode(country))" alt="" class="w-5 h-auto rounded-[2px]" />
+                                    @CountryNames.DisplayName(country)
+                                </a>
+                            }
+                        </div>
                     </div>
-                </div>
-            }
-            else
+                }
+                @if (!IsSimpleMode)
+                {
+                    <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
+                        <span class="material-symbols-outlined">code</span>
+                    </a>
+                    <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap hover:scale-95 active:scale-90 transition-transform duration-200">
+                        @Sh("nav.tryNow")
+                    </button>
+                }
+            </div>
+            @if (!IsSimpleMode)
             {
-                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
-            }
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
-        </div>
-        <div class="hidden xl:flex items-center gap-3">
-            <div class="relative">
-                <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
-                    @CurrentCultureRecord.Code
-                    <span class="material-symbols-outlined text-base">expand_more</span>
+                <button type="button"
+                        class="xl:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
+                        aria-label="@(_mobileMenuOpen ? Sh("nav.menuClose") : Sh("nav.menuOpen"))"
+                        aria-expanded="@(_mobileMenuOpen ? "true" : "false")"
+                        @onclick="ToggleMobileMenu">
+                    <span class="material-symbols-outlined">@(_mobileMenuOpen ? "close" : "menu")</span>
                 </button>
-                <div class="lang-dropdown dropdown-menu @(_languageMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
-                    @foreach (var culture in SupportedCultures.All)
+            }
+        </div>
+    </div>
+
+    @if (IsSimpleMode)
+    {
+        <div class="border-t border-surface-container-high">
+            <div class="flex items-center gap-5 h-11 px-4 sm:px-8 max-w-7xl mx-auto overflow-x-auto whitespace-nowrap">
+                @foreach (var anchor in SimplePageSectionIds.Navigation)
+                {
+                    <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-semibold tracking-tight no-underline" href="@SectionHref(anchor.Id)">@Sx(anchor.LabelKey)</a>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="hidden xl:block border-t border-surface-container-high">
+            <div class="flex items-center gap-4 h-11 px-8 max-w-7xl mx-auto whitespace-nowrap">
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
+                @if (ShowIndustryMenu)
+                {
+                    <div class="relative">
+                        <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
+                            @if (CurrentIndustryIcon.Length > 0)
+                            {
+                                <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
+                            }
+                            @IndustryHeaderText
+                            <span class="material-symbols-outlined text-base">expand_more</span>
+                        </button>
+                        <div class="dropdown-menu @(_industryMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
+                            @foreach (var industry in CurrentCountryIndustries)
+                            {
+                                <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseIndustryMenu">
+                                    <span class="material-symbols-outlined text-base">@industry.Icon</span>
+                                    @Ix(industry.LabelKey)
+                                </a>
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)">@Sh("nav.industries")</a>
+                }
+                @if (ShowCompanySizePages)
+                {
+                    <div class="relative">
+                        <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" aria-expanded="@(_companySizeMenuOpen ? "true" : "false")" @onclick="ToggleCompanySizeMenu">
+                            @Sh("nav.companySize")
+                            <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+                        </button>
+                        <div class="dropdown-menu @(_companySizeMenuOpen ? "dropdown-menu-open" : "") absolute top-full left-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[12rem]">
+                            @foreach (var page in CompanySizePages)
+                            {
+                                <a href="@CompanyWideHref(page.Slug)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(page.Slug == CurrentCompanyWideSlug ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCompanySizeMenu">@Sh(page.LabelKey)</a>
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+                }
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
+                <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
+            </div>
+        </div>
+
+        <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full inset-x-4 sm:inset-x-auto sm:right-8 mt-2 sm:w-96 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-6 sm:px-8 py-6 flex flex-col gap-5">
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
+            @if (ShowIndustryMenu)
+            {
+                <div class="flex flex-col gap-1">
+                    <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
+                        <span class="flex items-center gap-2">
+                            @if (CurrentIndustryIcon.Length > 0)
+                            {
+                                <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
+                            }
+                            @IndustryHeaderText
+                        </span>
+                        <span class="material-symbols-outlined text-base">@(_mobileIndustryOpen ? "expand_less" : "expand_more")</span>
+                    </button>
+                    @if (_mobileIndustryOpen)
                     {
-                        <a href="@ResolveLanguageHref(culture)" class="block px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(culture.Code == CurrentCultureRecord.Code ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseLanguageMenu">
-                            @culture.NativeName
-                        </a>
+                        <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
+                            @foreach (var industry in CurrentCountryIndustries)
+                            {
+                                <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                                    <span class="material-symbols-outlined text-base">@industry.Icon</span>
+                                    @Ix(industry.LabelKey)
+                                </a>
+                            }
+                        </div>
                     }
                 </div>
+            }
+            else
+            {
+                <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
+            }
+            @foreach (var page in VisibleCompanySizePages)
+            {
+                <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
+            }
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
+            <div class="flex flex-col gap-1 pt-2 border-t border-surface-container-high">
+                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight uppercase" aria-expanded="@(_mobileLanguageOpen ? "true" : "false")" aria-label="@Sh("nav.languages")" @onclick="ToggleMobileLanguageMenu">
+                    @CurrentCultureRecord.Code
+                    <span class="material-symbols-outlined text-base">@(_mobileLanguageOpen ? "expand_less" : "expand_more")</span>
+                </button>
+                @if (_mobileLanguageOpen)
+                {
+                    <div class="flex flex-wrap gap-3">
+                        @foreach (var culture in SupportedCultures.All)
+                        {
+                            <a href="@ResolveLanguageHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                                @culture.Code
+                            </a>
+                        }
+                    </div>
+                }
             </div>
             @if (ShowCountryDropdown)
             {
-                <div class="relative">
-                    <button type="button" class="flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleCountryMenu">
-                        <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-5 h-auto rounded-[2px]" />
-                        @CurrentCountryCode
-                        <span class="material-symbols-outlined text-base">expand_more</span>
+                <div class="flex flex-col gap-1">
+                    <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileCountryOpen ? "true" : "false")" aria-label="@Sh("nav.countries")" @onclick="ToggleMobileCountryMenu">
+                        <span class="flex items-center gap-2">
+                            <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-4 h-auto rounded-[2px]" />
+                            @CurrentCountryDisplayName
+                        </span>
+                        <span class="material-symbols-outlined text-base">@(_mobileCountryOpen ? "expand_less" : "expand_more")</span>
                     </button>
-                    <div class="country-dropdown dropdown-menu @(_countryMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
-                        @foreach (var country in CurrentLanguageCountries)
-                        {
-                            <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(IsCurrentCountry(country) ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCountryMenu">
-                                <img src="@FlagSrc(CountryCode(country))" alt="" class="w-5 h-auto rounded-[2px]" />
-                                @CountryNames.DisplayName(country)
-                            </a>
-                        }
-                    </div>
-                </div>
-            }
-            <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
-                <span class="material-symbols-outlined">code</span>
-            </a>
-            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap hover:scale-95 active:scale-90 transition-transform duration-200">
-                @Sh("nav.tryNow")
-            </button>
-        </div>
-        <button type="button"
-                class="xl:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
-                aria-label="@(_mobileMenuOpen ? Sh("nav.menuClose") : Sh("nav.menuOpen"))"
-                aria-expanded="@(_mobileMenuOpen ? "true" : "false")"
-                @onclick="ToggleMobileMenu">
-            <span class="material-symbols-outlined">@(_mobileMenuOpen ? "close" : "menu")</span>
-        </button>
-    </div>
-
-    <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full inset-x-4 sm:inset-x-auto sm:right-8 mt-2 sm:w-96 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-6 sm:px-8 py-6 flex flex-col gap-5">
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
-        @if (ShowIndustryMenu)
-        {
-            <div class="flex flex-col gap-1">
-                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
-                    <span class="flex items-center gap-2">
-                        @if (CurrentIndustryIcon.Length > 0)
-                        {
-                            <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
-                        }
-                        @IndustryHeaderText
-                    </span>
-                    <span class="material-symbols-outlined text-base">@(_mobileIndustryOpen ? "expand_less" : "expand_more")</span>
-                </button>
-                @if (_mobileIndustryOpen)
-                {
-                    <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
-                        @foreach (var industry in CurrentCountryIndustries)
-                        {
-                            <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
-                                <span class="material-symbols-outlined text-base">@industry.Icon</span>
-                                @Ix(industry.LabelKey)
-                            </a>
-                        }
-                    </div>
-                }
-            </div>
-        }
-        else
-        {
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
-        }
-        @foreach (var page in VisibleCompanySizePages)
-        {
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
-        }
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
-        <div class="flex flex-col gap-1 pt-2 border-t border-surface-container-high">
-            <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight uppercase" aria-expanded="@(_mobileLanguageOpen ? "true" : "false")" aria-label="@Sh("nav.languages")" @onclick="ToggleMobileLanguageMenu">
-                @CurrentCultureRecord.Code
-                <span class="material-symbols-outlined text-base">@(_mobileLanguageOpen ? "expand_less" : "expand_more")</span>
-            </button>
-            @if (_mobileLanguageOpen)
-            {
-                <div class="flex flex-wrap gap-3">
-                    @foreach (var culture in SupportedCultures.All)
+                    @if (_mobileCountryOpen)
                     {
-                        <a href="@ResolveLanguageHref(culture)" class="px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(culture.Code == CurrentCultureRecord.Code ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                            @culture.Code
-                        </a>
+                        <div class="flex flex-wrap gap-3">
+                            @foreach (var country in CurrentLanguageCountries)
+                            {
+                                <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
+                                    <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
+                                    @CountryNames.DisplayName(country)
+                                </a>
+                            }
+                        </div>
                     }
                 </div>
             }
+            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
+                <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
+            </a>
+            <button type="button" class="bg-primary text-on-primary px-6 py-3 rounded-xl font-semibold text-sm text-center" @onclick="OpenDemoModalFromMobileMenu" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")">
+                @Sh("nav.tryNow")
+            </button>
         </div>
-        @if (ShowCountryDropdown)
-        {
-            <div class="flex flex-col gap-1">
-                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileCountryOpen ? "true" : "false")" aria-label="@Sh("nav.countries")" @onclick="ToggleMobileCountryMenu">
-                    <span class="flex items-center gap-2">
-                        <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-4 h-auto rounded-[2px]" />
-                        @CurrentCountryDisplayName
-                    </span>
-                    <span class="material-symbols-outlined text-base">@(_mobileCountryOpen ? "expand_less" : "expand_more")</span>
-                </button>
-                @if (_mobileCountryOpen)
-                {
-                    <div class="flex flex-wrap gap-3">
-                        @foreach (var country in CurrentLanguageCountries)
-                        {
-                            <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
-                                <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
-                                @CountryNames.DisplayName(country)
-                            </a>
-                        }
-                    </div>
-                }
-            </div>
-        }
-        <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
-            <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
-        </a>
-        <button type="button" class="bg-primary text-on-primary px-6 py-3 rounded-xl font-semibold text-sm text-center" @onclick="OpenDemoModalFromMobileMenu" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")">
-            @Sh("nav.tryNow")
-        </button>
-    </div>
+    }
 </nav>
 
-<CascadingValue Name="OpenDemoModal" Value="OpenDemoModalCallback">
-    @Body
-</CascadingValue>
+<div class="site-main">
+    <CascadingValue Name="OpenDemoModal" Value="OpenDemoModalCallback">
+        @Body
+    </CascadingValue>
+</div>
 
 <DemoDisclaimerModal IsOpen="_showDemoModal" Culture="@CurrentCultureRecord.Code" ContentKey="@DemoModalContentKey" OnClose="CloseDemoModal" />
 
@@ -261,6 +289,7 @@
     private const string OfferPageKey = CountryPageLinks.OfferSlug;
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
+    private const string ModeApplyFunction = "klacksMode.apply";
 
     // Pages whose content is the same for every country and culture combination.
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
@@ -342,6 +371,7 @@
         {
             var culture = CurrentCultureRecord;
             await JS.InvokeVoidAsync("klacksLocale.applyDirection", culture.IsRtl ? "rtl" : "ltr", culture.Code);
+            await JS.InvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
             StateHasChanged();
         });
     }
@@ -564,12 +594,17 @@
 
     private string DemoModalContentKey => IsSimpleMode ? SiteModes.SimpleContentKey : DemoDisclaimerModal.DefaultContentKey;
 
+    private bool KeepsExpertMode(SupportedCulture target)
+        => !IsSimpleMode && SiteModes.HasSimplePage(target.Code, ModeOptions.Value.Enabled);
+
     // Company-wide pages exist under every country and culture, so switching either
     // one stays on the same page instead of jumping to the country landing page.
     private string CountryLanguageHref(SupportedCulture target, string pageKey)
     {
         var companyWideSlug = CurrentCompanyWideSlug;
-        var path = companyWideSlug.Length == 0 ? pageKey : $"{pageKey}/{companyWideSlug}";
+        var path = companyWideSlug.Length > 0
+            ? $"{pageKey}/{companyWideSlug}"
+            : KeepsExpertMode(target) ? SiteModes.ExpertRoutePath(pageKey) : pageKey;
 
         return target.Code == SupportedCultures.DefaultCode ? $"/{path}" : $"/{target.UrlSlug}/{path}";
     }
@@ -744,6 +779,8 @@
     private MarkupString ShHtml(string key) => (MarkupString)Sh(key);
 
     private string Ix(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "index", key);
+
+    private string Sx(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, SiteModes.SimpleContentKey, key);
 
     public void Dispose() => Nav.LocationChanged -= HandleLocationChanged;
 }

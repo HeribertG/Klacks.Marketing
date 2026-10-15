@@ -1,11 +1,13 @@
 @using Klacks.Marketing.Localization
 @using Klacks.Marketing.Localization.Seo
 @inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@inject Microsoft.Extensions.Options.IOptions<SiteModeOptions> SiteModeOptions
 @{
     var firstPathSegment = Context.Request.Path.Value?.Trim('/').Split('/').FirstOrDefault() ?? string.Empty;
     var currentCulture = SupportedCultures.Resolve(firstPathSegment);
     var baseUrl = (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
     var ogUrl = SeoUrls.FromRequestPath(baseUrl, Context.Request.Path.Value);
+    var modeClass = SiteModeResolver.Resolve(Context.Request.Path.Value, SiteModeOptions.Value.Enabled).BodyClass;
 }
 <!DOCTYPE html>
 <html class="light" lang="@currentCulture.Code" dir="@(currentCulture.IsRtl ? "rtl" : "ltr")">
@@ -31,7 +33,7 @@
     <link href="css/error-ui.css" rel="stylesheet" asp-append-version="true" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
 </head>
-<body class="font-['Inter'] bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="@modeClass font-['Inter'] bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
     @RenderBody()
 
     <div id="blazor-error-ui">
@@ -49,6 +51,7 @@
     <script src="~/js/scroll-reveal.js" asp-append-version="true"></script>
     <script src="~/js/locale-direction.js" asp-append-version="true"></script>
     <script src="~/js/share-link.js" asp-append-version="true"></script>
+    <script src="~/js/site-mode.js" asp-append-version="true"></script>
     <script src="~/js/magnifier.js" asp-append-version="true"></script>
     <script src="~/js/hover-zoom-fit.js" asp-append-version="true"></script>
     <script src="~/js/carousel-controls.js" asp-append-version="true"></script>
