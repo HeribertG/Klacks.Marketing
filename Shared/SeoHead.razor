@@ -70,6 +70,10 @@
     // are stripped and the result truncated. Null falls back to no description.
     [Parameter] public string? DescriptionSource { get; set; }
 
+    // Raw source for the SoftwareApplication description of the structured data. Null keeps the product pitch of
+    // index.json; the simple start page passes its Du-form meta description.
+    [Parameter] public string? ProductDescriptionSource { get; set; }
+
     // Optional branch-specific OG image path (e.g. "/images/og-image-spitex.png").
     // Used only when the file actually exists in wwwroot; otherwise the site-wide
     // default image is emitted, so a page never advertises a broken preview image.
@@ -139,7 +143,7 @@
     // Product-level pitch, reused as the SoftwareApplication description; localized
     // per culture with a German fallback via the content provider.
     private string ProductDescription
-        => SeoText.ToDescription(ContentProvider.GetText(Culture, IndexContentKey, ProductPitchTextKey));
+        => SeoText.ToDescription(ProductDescriptionSource ?? ContentProvider.GetText(Culture, IndexContentKey, ProductPitchTextKey));
 
     private IReadOnlyList<string> JsonLdScripts
     {

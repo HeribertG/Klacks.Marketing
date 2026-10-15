@@ -3,8 +3,10 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
+using Klacks.Marketing.Localization.Seo;
 using Klacks.Marketing.Shared;
 using NUnit.Framework;
 using Shouldly;
@@ -12,8 +14,9 @@ using Shouldly;
 /// <summary>
 /// Renders the real SimpleStartTemplate for every country in German: one H1, no duplicate id, every header jump target
 /// present, no raw content key or placeholder, links stay on the country, the demo-data note sits below the media and
-/// speaks in the Du form, industry chips lead to real industry pages, the share block shows the link as selectable
-/// text below the copy status, and Amber surfaces always carry the dark Amber text colour.
+/// speaks in the Du form (structured data included), industry chips lead to real industry pages, the share block shows
+/// the link with the share reference as selectable text below the copy status, the talk text spans the row without the
+/// Klacksy video, and Amber surfaces always carry the dark Amber text colour.
 /// </summary>
 [TestFixture]
 public class SimpleStartTemplateRenderingTests
@@ -27,7 +30,11 @@ public class SimpleStartTemplateRenderingTests
     private const string ClassPattern = @"\bclass=""([^""]*)""";
     private const string ImageSourcePattern = @"<img\b[^>]*\bsrc=""(images/[^""]+)""";
     private const string FormalAddressPattern = @"\b(Sie|Ihnen|Ihr|Ihre|Ihren|Ihrem|Ihrer|Ihres)\b";
-    private const string ScriptPattern = @"<script\b.*?</script>";
+    private const string JsonLdPattern = @"<script type=""application/ld\+json"">(.*?)</script>";
+    private const string SoftwareApplicationType = "SoftwareApplication";
+    private const string TalkSectionPattern = @"<section id=""so-gehts"".*?</section>";
+    private const string TextColumnFullWidth = "lg:col-span-12";
+    private const string VideoColumn = "lg:col-span-7";
     private const string StatusMarker = "role=\"status\"";
     private const string NoSelectClass = "select-none";
     private const string AmberSurface = "bg-tertiary-fixed";
@@ -97,19 +104,19 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task Every_visible_text_uses_the_du_form_including_the_demo_note()
+    public async Task Every_text_uses_the_du_form_including_the_demo_note_and_the_structured_data()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
 
         html.ShouldContain(DuNoteText);
-        VisibleTexts(Regex.Replace(html, ScriptPattern, string.Empty, RegexOptions.Singleline)).Where(text => Regex.IsMatch(text, FormalAddressPattern)).ShouldBeEmpty();
+        VisibleTexts(html).Where(text => Regex.IsMatch(text, FormalAddressPattern)).ShouldBeEmpty();
     }
 
     [Test]
     public async Task Share_block_shows_the_absolute_link_as_selectable_text_below_the_copy_status()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey));
-        var shareUrl = MarketingComponentHost.BaseUrl + CountryIndustries.SwissCountryPageKey;
+        var shareUrl = MarketingComponentHost.BaseUrl + CountryIndustries.SwissCountryPageKey + SimpleStartTemplate.ShareReferenceQuery;
 
         var block = html[html.IndexOf($"id=\"{SimplePageSectionIds.Share}\"", StringComparison.Ordinal)..];
         var status = block.IndexOf(StatusMarker, StringComparison.Ordinal);
@@ -118,6 +125,58 @@ public class SimpleStartTemplateRenderingTests
         status.ShouldBeGreaterThan(0);
         link.ShouldBeGreaterThan(status);
         block[..link].ShouldNotContain(NoSelectClass);
+    }
+
+    [Test]
+    public async Task Mail_copy_and_visible_link_share_the_canonical_url_with_the_share_reference()
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey));
+        var shareUrl = MarketingComponentHost.BaseUrl + CountryIndustries.SwissCountryPageKey + SimpleStartTemplate.ShareReferenceQuery;
+
+        SimpleStartTemplate.ShareReferenceQuery.ShouldBe("?ref=share");
+        html.ShouldContain($"data-share-copy=\"{shareUrl}\"");
+        html.ShouldContain($">{shareUrl}<");
+        html.ShouldContain(Uri.EscapeDataString(shareUrl));
+    }
+
+    [Test]
+    public async Task Without_the_klacksy_video_the_talk_text_takes_the_full_width()
+    {
+        var talk = TalkSection(await RenderAsync(CountryIndustries.SwissCountryPageKey, new EmptyVideoCatalog()));
+
+        talk.ShouldContain(TextColumnFullWidth);
+        talk.ShouldNotContain(VideoColumn);
+        talk.ShouldNotContain("<video");
+    }
+
+    [Test]
+    public async Task With_the_klacksy_video_the_talk_section_keeps_the_two_columns()
+    {
+        var talk = TalkSection(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
+
+        talk.ShouldContain(VideoColumn);
+        talk.ShouldNotContain(TextColumnFullWidth);
+    }
+
+    [Test]
+    public async Task Structured_data_describes_the_product_with_the_simple_meta_description()
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey);
+
+        SoftwareApplicationDescription(html).ShouldBe(SeoText.ToDescription(Content.GetText(SupportedCultures.DefaultCode, SiteModes.SimpleContentKey, "metaDescription")));
+    }
+
+    [Test]
+    public async Task Expert_start_page_keeps_the_index_pitch_as_product_description()
+    {
+        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, CountryIndustries.SwissCountryPageKey));
+        var html = await MarketingComponentHost.RenderAsync<CountryStartTemplate>(services, new Dictionary<string, object?>
+        {
+            [nameof(CountryStartTemplate.PageKey)] = CountryIndustries.SwissCountryPageKey,
+            [nameof(CountryStartTemplate.Culture)] = SupportedCultures.DefaultCode,
+        });
+
+        SoftwareApplicationDescription(html).ShouldBe(SeoText.ToDescription(Content.GetText(SupportedCultures.DefaultCode, "index", "hero.subtitle")));
     }
 
     [Test]
@@ -141,6 +200,29 @@ public class SimpleStartTemplateRenderingTests
         {
             html.ShouldContain(provider);
         }
+    }
+
+    private static IPageContentProvider Content => new JsonPageContentProvider(new TestWebHostEnvironment());
+
+    private static string TalkSection(string html)
+    {
+        var match = Regex.Match(html, TalkSectionPattern, RegexOptions.Singleline);
+        match.Success.ShouldBeTrue();
+        return match.Value;
+    }
+
+    private static string? SoftwareApplicationDescription(string html)
+    {
+        foreach (Match match in Regex.Matches(html, JsonLdPattern, RegexOptions.Singleline))
+        {
+            using var document = JsonDocument.Parse(match.Groups[1].Value);
+            if (document.RootElement.TryGetProperty("@type", out var type) && type.GetString() == SoftwareApplicationType)
+            {
+                return document.RootElement.GetProperty("description").GetString();
+            }
+        }
+
+        return null;
     }
 
     private static IEnumerable<string> VisibleTexts(string html)

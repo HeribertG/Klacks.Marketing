@@ -6,13 +6,14 @@
 @* Simple start page of a country ("/land-ch") for non-experts (spec
    docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
    light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
-   on-tertiary-fixed text), videos V2 and V4 click-to-play with a screenshot or no-media fallback. Texts come from
-   simple.json (one file per language, {country} is the only placeholder), including the Du form of the demo-data
-   note; the industry chips lead to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the
-   land-xx hreflang cluster. PageKey is the country page key ("land-ch"), Culture the page culture code (stage 1: de
-   only). *@
+   on-tertiary-fixed text), videos V2 and V4 click-to-play with a screenshot fallback for V2 and a full-width talk text
+   without V4; the shared link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
+   language, {country} is the only placeholder), including the Du form of the demo-data note; the industry chips lead
+   to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the land-xx hreflang cluster, and the
+   structured product description uses the Du-form meta description. PageKey is the country page key ("land-ch"),
+   Culture the page culture code (stage 1: de only). *@
 <PageTitle>@Tx("pageTitle")</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@PageKey" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" IndexTranslatedOnly="true" />
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@PageKey" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" ProductDescriptionSource="@Tx("metaDescription")" IndexTranslatedOnly="true" />
 
 <header class="pt-20 md:pt-28 pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -61,7 +62,7 @@
 
 <section id="@SimplePageSectionIds.Talk" class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule scroll-mt-24" aria-labelledby="simple-talk-heading">
     <div class="max-w-6xl mx-auto px-4 sm:px-8 grid lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-5 min-w-0">
+        <div class="@TalkTextColumnClass min-w-0">
             <h2 id="simple-talk-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-4">@Tx("talk.title")</h2>
             <p class="text-lg text-on-surface-variant leading-relaxed mt-0 mb-6">@Tx("talk.text")</p>
             <ul class="flex flex-col gap-3 list-none p-0 m-0">
@@ -71,13 +72,13 @@
                 }
             </ul>
         </div>
-        <div class="lg:col-span-7 min-w-0">
-            <SimpleVideo VideoName="@SimpleVideo.KlacksyCallVideoName" Culture="@Culture" Label="@Tx("talk.videoLabel")" />
-            @if (HasTalkVideo)
-            {
+        @if (HasTalkVideo)
+        {
+            <div class="lg:col-span-7 min-w-0">
+                <SimpleVideo VideoName="@SimpleVideo.KlacksyCallVideoName" Culture="@Culture" Label="@Tx("talk.videoLabel")" />
                 <DemoDataNote Culture="@Culture" ContentKey="@SiteModes.SimpleContentKey" CssClass="mt-4 mb-0" />
-            }
-        </div>
+            </div>
+        }
     </div>
 </section>
 
@@ -155,7 +156,9 @@
 </section>
 
 @code {
-    public static readonly string[] AudienceSlugs = { "spitex", "spitaeler", "hotellerie-gastronomie", "logistik", "security", "hausdienste" };
+    public const string ShareReferenceQuery = "?ref=share";
+
+    public static readonly IReadOnlyList<string> AudienceSlugs = new[] { "spitex", "spitaeler", "hotellerie-gastronomie", "logistik", "security", "hausdienste" };
 
     private const string CountryPlaceholder = "{country}";
     private const string FragmentSeparator = "#";
@@ -164,6 +167,8 @@
     private const string KlacksyScreenshotFile = "app-klacksy-de.png";
     private const int TalkBubbleCount = 3;
     private const int CostItemCount = 3;
+    private const string TalkTextWithVideoClass = "lg:col-span-5";
+    private const string TalkTextFullWidthClass = "lg:col-span-12";
 
     private static readonly string[] TaskIcons = { "calendar_month", "rule", "person_search" };
 
@@ -184,11 +189,13 @@
     private string InstallHref
         => CountryPageLinks.Href(CultureRecord.UrlSlug, PageKey, CountryPageLinks.InstallationSlug) + FragmentSeparator + PageSectionIds.OfficePc;
 
-    private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey);
+    private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey) + ShareReferenceQuery;
 
     private string HeroScreenshotSrc => ImagesPathPrefix + ScreenshotResolver.Resolve(KlacksyScreenshotFile, Culture);
 
     private bool HasTalkVideo => VideoCatalog.Find(SimpleVideo.KlacksyCallVideoName, Culture) is not null;
+
+    private string TalkTextColumnClass => HasTalkVideo ? TalkTextWithVideoClass : TalkTextFullWidthClass;
 
     private string IndustryHref(string slug) => $"{PageHref}/{slug}";
 
