@@ -24,17 +24,29 @@ public class SiteHeaderModeTests
     private const string TwoRowHeaderClass = "h-[4.5rem]";
     private const string SecondRowClass = "h-11 px-";
     private const string SiteMainClass = "class=\"site-main\"";
+    private const string UnchangedBodyTag = "<body class=\"font-['Inter'] bg-background";
 
     [TestCase("/land-ch", true, "mode-simple")]
     [TestCase("/land-ch/experten", true, "mode-expert")]
     [TestCase("/land-ch/spitex", true, "mode-expert")]
     [TestCase("/fr/land-ch", true, "mode-expert")]
-    [TestCase("/land-ch", false, "mode-expert")]
     public async Task Body_carries_the_mode_class(string path, bool enabled, string expected)
     {
         var html = await GetHtmlAsync(enabled, path);
 
         Regex.Match(html, BodyClassPattern).Groups[1].Value.ShouldBe(expected);
+    }
+
+    [TestCase("/land-ch")]
+    [TestCase("/land-ch/spitex")]
+    [TestCase("/fr/land-ch")]
+    public async Task Body_has_no_mode_class_while_the_feature_is_off(string path)
+    {
+        var html = await GetHtmlAsync(enabled: false, path);
+
+        html.ShouldNotContain(SiteModes.SimpleBodyClass);
+        html.ShouldNotContain(SiteModes.ExpertBodyClass);
+        html.ShouldContain(UnchangedBodyTag);
     }
 
     [Test]
@@ -59,7 +71,7 @@ public class SiteHeaderModeTests
     }
 
     [TestCase("/land-ch/experten", "href=\"/fr/land-ch\"", "href=\"/land-de/experten\"")]
-    [TestCase("/fr/land-ch", "href=\"/land-ch/experten\"", "href=\"/fr/land-fr\"")]
+    [TestCase("/fr/land-ch", "href=\"/land-ch\"", "href=\"/fr/land-fr\"")]
     [TestCase("/land-ch", "href=\"/fr/land-ch\"", "href=\"/land-de\"")]
     public async Task Language_and_country_switch_keep_the_mode(string path, string languageLink, string countryLink)
     {
@@ -69,17 +81,30 @@ public class SiteHeaderModeTests
         html.ShouldContain(countryLink);
     }
 
-    [Test]
-    public async Task Language_switch_on_an_expert_start_page_never_links_to_a_missing_expert_page()
+    [TestCase("/fr/land-ch")]
+    [TestCase("/fr/land-ch/spitex")]
+    public async Task Language_switch_from_a_culture_without_simple_page_leads_to_the_simple_page(string path)
     {
-        var html = await GetHtmlAsync(enabled: true, "/land-ch/experten");
+        var html = await GetHtmlAsync(enabled: true, path);
+
+        html.ShouldContain("href=\"/land-ch\"");
+        html.ShouldNotContain("href=\"/land-ch/experten\"");
+    }
+
+    [TestCase("/land-ch/experten", "href=\"/it/land-ch\"")]
+    [TestCase("/land-ch/klacksy", "href=\"/it/land-ch\"")]
+    [TestCase("/land-ch/spitex", "href=\"/it/land-ch\"")]
+    [TestCase("/land-ch/impressum", "href=\"/it/land-ch/impressum\"")]
+    public async Task Language_switch_on_an_expert_page_never_links_to_a_missing_expert_page(string path, string italianLink)
+    {
+        var html = await GetHtmlAsync(enabled: true, path);
         var prefixedCultureSlugs = SupportedCultures.All
             .Where(culture => culture.UrlSlug.Length > 0 && !SiteModes.HasSimplePage(culture.Code, enabled: true))
             .Select(culture => Regex.Escape(culture.UrlSlug));
         var missingExpertLink = new Regex($"href=\"/({string.Join('|', prefixedCultureSlugs)})/land-[a-z]+/{SiteModes.ExpertSlug}");
 
         missingExpertLink.IsMatch(html).ShouldBeFalse();
-        html.ShouldContain("href=\"/it/land-ch\"");
+        html.ShouldContain(italianLink);
     }
 
     [TestCase("/land-ch", false)]

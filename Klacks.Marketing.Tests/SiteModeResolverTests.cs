@@ -8,7 +8,8 @@ using Shouldly;
 
 /// <summary>
 /// Table test of the mode switch: state per page type, target URL of the opposite page, hidden in cultures without a
-/// simple page and while the feature is off. The resolver is pure, so the same answer holds after in-circuit navigation.
+/// simple page and while the feature is off; no body class at all while the feature is off. The resolver is pure, so the
+/// same answer holds after in-circuit navigation.
 /// </summary>
 [TestFixture]
 public class SiteModeResolverTests
@@ -53,6 +54,6 @@ public class SiteModeResolverTests
         state.IsSimple.ShouldBeFalse();
         state.SwitchTarget.ShouldBeNull();
         state.CultureCode.ShouldBe(culture);
-        state.BodyClass.ShouldBe(SiteModes.ExpertBodyClass);
+        state.BodyClass.ShouldBe(enabled ? SiteModes.ExpertBodyClass : string.Empty);
     }
 }

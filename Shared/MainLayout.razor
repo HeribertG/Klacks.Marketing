@@ -211,7 +211,10 @@ else
         {
             var culture = CurrentCultureRecord;
             await JS.InvokeVoidAsync("klacksLocale.applyDirection", culture.IsRtl ? "rtl" : "ltr", culture.Code);
-            await JS.InvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
+            if (CurrentMode.BodyClass.Length > 0)
+            {
+                await JS.InvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
+            }
             StateHasChanged();
         });
     }
@@ -435,7 +438,9 @@ else
     private string DemoModalContentKey => IsSimpleMode ? SiteModes.SimpleContentKey : DemoDisclaimerModal.DefaultContentKey;
 
     private bool KeepsExpertMode(SupportedCulture target)
-        => !IsSimpleMode && SiteModes.HasSimplePage(target.Code, ModeOptions.Value.Enabled);
+        => !IsSimpleMode
+            && SiteModes.HasSimplePage(CurrentCultureRecord.Code, ModeOptions.Value.Enabled)
+            && SiteModes.HasSimplePage(target.Code, ModeOptions.Value.Enabled);
 
     // Company-wide pages exist under every country and culture, so switching either
     // one stays on the same page instead of jumping to the country landing page.

@@ -33,7 +33,7 @@
     <link href="css/error-ui.css" rel="stylesheet" asp-append-version="true" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
 </head>
-<body class="@modeClass font-['Inter'] bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="@(modeClass.Length > 0 ? modeClass + " " : string.Empty)font-['Inter'] bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
     @RenderBody()
 
     <div id="blazor-error-ui">

@@ -29,7 +29,7 @@ public static class SiteModeResolver
             index = 1;
         }
 
-        var hidden = new SiteModeState(IsSimple: false, ShowSwitch: false, SwitchTarget: null, CultureCode: culture.Code);
+        var hidden = new SiteModeState(IsSimple: false, ShowSwitch: false, SwitchTarget: null, CultureCode: culture.Code, FeatureEnabled: simpleModeEnabled);
         if (!SiteModes.HasSimplePage(culture.Code, simpleModeEnabled) || index >= segments.Length)
         {
             return hidden;
@@ -45,8 +45,8 @@ public static class SiteModeResolver
         var isCountryRoot = segments.Length == index + 1;
 
         return isCountryRoot
-            ? new SiteModeState(IsSimple: true, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{SiteModes.ExpertRoutePath(country)}", CultureCode: culture.Code)
-            : new SiteModeState(IsSimple: false, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{country}", CultureCode: culture.Code);
+            ? new SiteModeState(IsSimple: true, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{SiteModes.ExpertRoutePath(country)}", CultureCode: culture.Code, FeatureEnabled: simpleModeEnabled)
+            : new SiteModeState(IsSimple: false, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{country}", CultureCode: culture.Code, FeatureEnabled: simpleModeEnabled);
     }
 
     private static SupportedCulture? FindPrefixedCulture(string segment)

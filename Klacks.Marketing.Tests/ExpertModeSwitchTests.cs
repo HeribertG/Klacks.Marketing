@@ -10,29 +10,49 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The expert-mode switch is a real checkbox with role="switch" and a label, off on the simple page and on elsewhere,
-/// hidden in cultures without a simple page and while the feature is off, and it follows an in-circuit navigation
-/// without a reload.
+/// The expert-mode switch is a real link to the opposite page with role="switch", aria-checked and a visible label, so
+/// it works before and without the circuit; off on the simple page and on elsewhere, hidden in cultures without a simple
+/// page and while the feature is off, Space activates it like Enter, and it follows an in-circuit navigation without a
+/// reload.
 /// </summary>
 [TestFixture]
 public class ExpertModeSwitchTests
 {
     private const string SwitchMarker = "role=\"switch\"";
-    private const string CheckedMarker = " checked";
+    private const string CheckedMarker = "aria-checked=\"true\"";
+    private const string UncheckedMarker = "aria-checked=\"false\"";
 
-    [TestCase("land-ch", false)]
-    [TestCase("land-ch/experten", true)]
-    [TestCase("land-ch/spitex", true)]
-    [TestCase("land-ch/impressum", true)]
-    public async Task Switch_state_follows_the_page_type(string path, bool expectedChecked)
+    [TestCase("land-ch", false, "/land-ch/experten")]
+    [TestCase("land-ch/experten", true, "/land-ch")]
+    [TestCase("land-ch/spitex", true, "/land-ch")]
+    [TestCase("land-ch/impressum", true, "/land-ch")]
+    public async Task Switch_is_a_link_to_the_opposite_page(string path, bool expectedChecked, string target)
     {
         var html = await RenderAsync(path, enabled: true);
 
         html.ShouldContain(SwitchMarker);
-        html.ShouldContain("type=\"checkbox\"");
+        html.ShouldContain($"<a href=\"{target}\"");
+        html.ShouldContain(expectedChecked ? CheckedMarker : UncheckedMarker);
+        html.ShouldNotContain(expectedChecked ? UncheckedMarker : CheckedMarker);
         html.ShouldContain("data-c=\"ExpertToggle\"");
         html.ShouldContain("Expertenmodus");
-        html.Contains(CheckedMarker).ShouldBe(expectedChecked);
+        html.ShouldNotContain("type=\"checkbox\"");
+    }
+
+    [Test]
+    public void Space_activates_the_switch_like_enter()
+    {
+        var script = MarketingProjectPaths.ReadSource("wwwroot/js/site-mode.js");
+
+        script.ShouldContain("addEventListener('keydown'");
+        script.ShouldContain("[role=\"switch\"]");
+        script.ShouldContain(".click()");
+    }
+
+    [Test]
+    public void Mode_script_does_nothing_without_a_mode_class()
+    {
+        MarketingProjectPaths.ReadSource("wwwroot/js/site-mode.js").ShouldContain("if (!modeClass)");
     }
 
     [TestCase("fr/land-ch", true)]

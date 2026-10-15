@@ -9,7 +9,8 @@ namespace Klacks.Marketing.Localization;
 /// <param name="ShowSwitch">True when the header shows the expert-mode switch (culture with a simple page, feature on)</param>
 /// <param name="SwitchTarget">Absolute path of the opposite page the switch navigates to; null while hidden</param>
 /// <param name="CultureCode">Culture code of the path</param>
-public sealed record SiteModeState(bool IsSimple, bool ShowSwitch, string? SwitchTarget, string CultureCode)
+/// <param name="FeatureEnabled">Value of SimpleMode:Enabled; while it is off the body carries no mode class at all</param>
+public sealed record SiteModeState(bool IsSimple, bool ShowSwitch, string? SwitchTarget, string CultureCode, bool FeatureEnabled)
 {
-    public string BodyClass => IsSimple ? SiteModes.SimpleBodyClass : SiteModes.ExpertBodyClass;
+    public string BodyClass => !FeatureEnabled ? string.Empty : IsSimple ? SiteModes.SimpleBodyClass : SiteModes.ExpertBodyClass;
 }
