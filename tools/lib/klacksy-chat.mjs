@@ -80,7 +80,7 @@ export async function sendChatMessage(take, text, hooks = {}) {
   await recorder.beginFast(LLM_FAST_FACTOR);
   const request = await finished;
   await recorder.endFast();
-  await hooks.afterAnswer?.();
+  await hooks?.afterAnswer?.();
   const response = await request.response();
   const body = response ? await response.text().catch(() => "") : "";
   await page.waitForTimeout(READ_ANSWER_MS);

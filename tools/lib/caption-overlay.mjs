@@ -24,7 +24,7 @@ export const MIN_VISIBLE_SECONDS = 1.8;
 export const MAX_CAPTION_CHARS = 42;
 export const DIRECTION_LTR = "ltr";
 export const DIRECTION_RTL = "rtl";
-export const FORBIDDEN_CAPTION_PHRASES = ["klacksy plant", "klacksy rechnet", "ganz rechts", "gratis"];
+export const FORBIDDEN_CAPTION_PHRASES = ["klacksy plant", "klacksy rechnet", "ganz rechts", "gratis", "ein satz genügt"];
 export const captionFileName = (culture) => `simple-videos.${culture.toLowerCase()}.json`;
 
 const DIRECTIONS = [DIRECTION_LTR, DIRECTION_RTL];
@@ -63,14 +63,17 @@ export function validateCaptionTrack(video, track, cues) {
 
 export function captionVisibility(manifest, events) {
   const clock = outputClock(manifest);
+  const startT = manifest.trimFrom ?? manifest.startedAt;
+  const endT = manifest.trimTo ?? manifest.stoppedAt;
+  const origin = clock(startT);
   return events.map((event) => {
-    const from = Math.max(event.shownAt, manifest.startedAt);
-    const to = Math.min(event.hiddenAt ?? manifest.stoppedAt, manifest.stoppedAt);
+    const from = Math.min(Math.max(event.shownAt, startT), endT);
+    const to = Math.min(event.hiddenAt ?? endT, endT);
     const seconds = to > from ? clock(to) - clock(from) : 0;
     return {
       cue: event.cue,
       text: event.text,
-      fromSeconds: Number(clock(from).toFixed(SECONDS_DECIMALS)),
+      fromSeconds: Number((clock(from) - origin).toFixed(SECONDS_DECIMALS)),
       seconds: Number(seconds.toFixed(SECONDS_DECIMALS)),
     };
   });

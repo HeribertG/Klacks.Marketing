@@ -178,6 +178,17 @@ try {
     assert.equal(problems.length, 2);
   });
 
+  await check("visibility respects the trim marks of the manifest like the encoder", async () => {
+    const manifest = { startedAt: 100, stoppedAt: 120, trimFrom: 102, trimTo: 118, speedRegions: [] };
+    const visibility = captionVisibility(manifest, [
+      { cue: "a", text: "A", shownAt: 100, hiddenAt: 104 },
+      { cue: "b", text: "B", shownAt: 104, hiddenAt: null },
+      { cue: "c", text: "C", shownAt: 119, hiddenAt: 120 },
+    ]);
+    assert.deepEqual(visibility.map((v) => v.seconds), [2, 14, 0]);
+    assert.deepEqual(visibility.map((v) => v.fromSeconds), [0, 2, 16]);
+  });
+
   await check("simple-videos.de.json is complete, short and free of forbidden phrases", async () => {
     const tracks = await loadCaptionTracks(toolsDir, "de");
     assert.deepEqual(validateCaptionTrack(VIDEO_SIMPLE_KLACKSY_CALL, captionTrackOf(tracks, VIDEO_SIMPLE_KLACKSY_CALL), Object.values(SIMPLE_KLACKSY_CALL_CUES)), []);
@@ -191,6 +202,7 @@ try {
     assert.ok(validateCaptionTrack("v", { a: "x".repeat(60) }, ["a"]).some((p) => p.includes("characters")));
     assert.deepEqual(validateCaptionTrack("v", null, ["a"]), ["v: no captions"]);
     assert.ok(validateCaptionTrack("v", { a: "Gratis testen" }, ["a"]).some((p) => p.includes('"gratis"')));
+    assert.ok(validateCaptionTrack("v", { a: "Ein Satz genügt" }, ["a"]).some((p) => p.includes("forbidden phrase")));
   });
 
   await check("contact data detection ignores dates and times but finds e-mails and phone numbers", async () => {
