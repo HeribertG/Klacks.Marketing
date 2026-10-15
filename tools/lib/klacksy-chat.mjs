@@ -6,6 +6,7 @@
  * answer text, navigation target and errors.
  * @param take - Take context with page, recorder (ScreenRecorder) and mouse (HumanMouse)
  * @param text - Prompt typed into the chat input
+ * @param hooks - optional afterAnswer callback, awaited as soon as the answer is on screen (e.g. to show a caption)
  */
 
 export const SEL_ASSISTANT_INPUT = "#assistant-chat-input";
@@ -63,7 +64,7 @@ export async function waitStable(locator) {
   throw new Error("element never came to rest");
 }
 
-export async function sendChatMessage(take, text) {
+export async function sendChatMessage(take, text, hooks = {}) {
   const { page, recorder, mouse } = take;
   const input = page.locator(SEL_ASSISTANT_INPUT);
   await waitStable(input);
@@ -79,6 +80,7 @@ export async function sendChatMessage(take, text) {
   await recorder.beginFast(LLM_FAST_FACTOR);
   const request = await finished;
   await recorder.endFast();
+  await hooks.afterAnswer?.();
   const response = await request.response();
   const body = response ? await response.text().catch(() => "") : "";
   await page.waitForTimeout(READ_ANSWER_MS);
