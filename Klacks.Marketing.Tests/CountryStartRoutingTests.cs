@@ -8,7 +8,7 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// Wave 1 of the website rebuild: every country start page uses the shared CountryStartTemplate, the industry pages
+/// Wave 1 of the website rebuild: every country start page uses the CountryHome dispatcher (simple or expert template), the industry pages
 /// stay on IndustryPageTemplate, the mid-size and large business pages are country-scoped like kleine-betriebe, and
 /// the retired preview URLs redirect permanently to their production pages.
 /// </summary>
@@ -17,11 +17,11 @@ public class CountryStartRoutingTests
 {
     private const string PagesFolder = "Pages";
     private const string CountryPagePattern = "Land??.razor";
-    private const string CountryStartTag = @"<CountryStartTemplate PageKey=""(land-[a-z]{2})"" Culture=""@ResolvedCulture"" />";
+    private const string CountryStartTag = @"<CountryHome PageKey=""(land-[a-z]{2})"" Culture=""@ResolvedCulture"" />";
     private const string RoutePattern = @"@page ""/(land-[a-z]{2})""";
 
     [Test]
-    public void Every_country_start_page_uses_the_country_start_template_with_its_own_page_key()
+    public void Every_country_start_page_uses_the_country_home_dispatcher_with_its_own_page_key()
     {
         var files = Directory.GetFiles(Path.Combine(MarketingProjectPaths.ProjectRoot, PagesFolder), CountryPagePattern);
 
@@ -32,11 +32,21 @@ public class CountryStartRoutingTests
             var template = Regex.Match(source, CountryStartTag);
             var route = Regex.Match(source, RoutePattern);
 
-            template.Success.ShouldBeTrue($"{Path.GetFileName(file)} does not use CountryStartTemplate");
+            template.Success.ShouldBeTrue($"{Path.GetFileName(file)} does not use CountryHome");
             route.Success.ShouldBeTrue($"{Path.GetFileName(file)} has no country route");
             template.Groups[1].Value.ShouldBe(route.Groups[1].Value, Path.GetFileName(file));
             source.ShouldNotContain("IndustryPageTemplate");
         }
+    }
+
+    [Test]
+    public void Country_home_chooses_between_the_simple_and_the_expert_template()
+    {
+        var source = MarketingProjectPaths.ReadSource("Shared/CountryHome.razor");
+
+        source.ShouldContain("SiteModes.HasSimplePage(");
+        source.ShouldContain("<SimpleStartTemplate ");
+        source.ShouldContain("<CountryStartTemplate ");
     }
 
     [TestCase("Pages/LandChSpitex.razor")]

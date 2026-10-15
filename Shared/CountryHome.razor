@@ -1,0 +1,20 @@
+@inject IOptions<SiteModeOptions> ModeOptions
+
+@* Start page of a country route ("/land-ch", "/fr/land-ch"): the simple start page in cultures that have one while
+   SimpleMode:Enabled is on, today's CountryStartTemplate otherwise (spec
+   docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §3). PageKey is the country page key, Culture the
+   page culture code. *@
+@if (SiteModes.HasSimplePage(Culture, ModeOptions.Value.Enabled))
+{
+    <SimpleStartTemplate PageKey="@PageKey" Culture="@Culture" />
+}
+else
+{
+    <CountryStartTemplate PageKey="@PageKey" Culture="@Culture" />
+}
+
+@code {
+    [Parameter, EditorRequired] public required string PageKey { get; set; }
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+}

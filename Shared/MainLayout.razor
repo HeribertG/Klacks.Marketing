@@ -2,6 +2,7 @@
 @inject NavigationManager Nav
 @inject IPageContentProvider ContentProvider
 @inject IJSRuntime JS
+@inject IOptions<SiteModeOptions> ModeOptions
 @implements IDisposable
 
 <!-- NAVIGATION BAR -->
@@ -212,7 +213,7 @@
     @Body
 </CascadingValue>
 
-<DemoDisclaimerModal IsOpen="_showDemoModal" Culture="@CurrentCultureRecord.Code" OnClose="CloseDemoModal" />
+<DemoDisclaimerModal IsOpen="_showDemoModal" Culture="@CurrentCultureRecord.Code" ContentKey="@DemoModalContentKey" OnClose="CloseDemoModal" />
 
 <!-- FOOTER -->
 <footer class="bg-slate-50 no-line-rule">
@@ -556,6 +557,12 @@
     }
 
     private bool IsOnCountryPage => ResolveCurrentPage().PageKey.StartsWith("land-", StringComparison.OrdinalIgnoreCase);
+
+    private SiteModeState CurrentMode => SiteModeResolver.Resolve(CurrentRelativePath(), ModeOptions.Value.Enabled);
+
+    private bool IsSimpleMode => CurrentMode.IsSimple;
+
+    private string DemoModalContentKey => IsSimpleMode ? SiteModes.SimpleContentKey : DemoDisclaimerModal.DefaultContentKey;
 
     // Company-wide pages exist under every country and culture, so switching either
     // one stays on the same page instead of jumping to the country landing page.

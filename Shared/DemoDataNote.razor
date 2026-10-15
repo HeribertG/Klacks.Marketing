@@ -3,7 +3,9 @@
 @* Clearly visible note below every block that shows recordings or screenshots of the app: all names, places,
    addresses and figures are made-up demo data with a Swiss background in Latin script, so visitors who do not know
    Swiss places or cannot read Latin script are not confused. Culture is the page culture code; Short switches to the
-   one-sentence variant (used in the playground modal); CssClass adds outer spacing or width classes of the host block.
+   one-sentence variant (used in the playground modal); ContentKey is the content file of the texts (shared.json by
+   default, simple.json for the Du form of the simple start page); CssClass adds outer spacing or width classes of the
+   host block.
    Uses flex, gap and text-start only, so it mirrors correctly on RTL pages; it carries no id because it appears
    several times per page. *@
 <p class="flex items-start gap-3 rounded-xl border border-surface-container-high bg-secondary-fixed px-4 py-3 text-sm text-primary leading-relaxed text-start @CssClass" data-demo-data-note>
@@ -16,11 +18,12 @@
     public const string NoteShortKey = "demoData.noteShort";
     public const string MarkerAttribute = "data-demo-data-note";
 
-    private const string SharedContentKey = "shared";
+    public const string DefaultContentKey = "shared";
 
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
     [Parameter] public bool Short { get; set; }
+    [Parameter] public string ContentKey { get; set; } = DefaultContentKey;
     [Parameter] public string CssClass { get; set; } = string.Empty;
 
-    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+    private string Sh(string key) => ContentProvider.GetText(Culture, ContentKey, key);
 }

@@ -40,7 +40,7 @@ public class SimpleContentTests
         "ein Satz genügt", "genügt ein Satz", "Klacksy prüft",
     };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal." };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData." };
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {
@@ -85,7 +85,7 @@ public class SimpleContentTests
         }
 
         string.Join(" ", Enumerable.Range(0, 3).Select(index => texts[$"cost.item.{index}"])).ShouldBe(OwnerCostText);
-        new[] { "spitex", "spitaeler", "hotellerie-gastronomie", "logistik", "security", "hausdienste" }.Select(slug => texts[$"audience.chip.{slug}"]).ShouldBe(OwnerChips);
+        Shared.SimpleStartTemplate.AudienceSlugs.Select(slug => texts[$"audience.chip.{slug}"]).ShouldBe(OwnerChips);
     }
 
     [Test]

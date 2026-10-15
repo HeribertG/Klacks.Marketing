@@ -1,0 +1,200 @@
+@inject IPageContentProvider ContentProvider
+@inject ILocalizedScreenshotResolver ScreenshotResolver
+@inject ILocalizedVideoCatalog VideoCatalog
+@inject IConfiguration Configuration
+
+@* Simple start page of a country ("/land-ch") for non-experts (spec
+   docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
+   light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
+   on-tertiary-fixed text), videos V2 and V4 click-to-play with a screenshot or no-media fallback. Texts come from
+   simple.json (one file per language, {country} is the only placeholder), including the Du form of the demo-data
+   note; the industry chips lead to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the
+   land-xx hreflang cluster. PageKey is the country page key ("land-ch"), Culture the page culture code (stage 1: de
+   only). *@
+<PageTitle>@Tx("pageTitle")</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@PageKey" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" IndexTranslatedOnly="true" />
+
+<header class="pt-20 md:pt-28 pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-6 min-w-0">
+            <h1 class="text-[2.25rem] md:text-[3rem] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-auto break-words">@Tx("hero.title")</h1>
+            <p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("hero.subtitle")</p>
+            <p class="text-base font-bold text-secondary mt-0 mb-8">@Tx("hero.trustLine")</p>
+            <div class="flex flex-wrap gap-4">
+                <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="bg-tertiary-fixed text-on-tertiary-fixed px-7 py-4 rounded-2xl font-black text-lg hover:opacity-90 transition-all flex items-center gap-2"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Tx("hero.tryButton")</button>
+                <a href="@SectionHref(SimplePageSectionIds.Share)" class="px-7 py-4 rounded-2xl font-bold text-lg text-primary bg-secondary-fixed hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
+                    <span class="material-symbols-outlined" aria-hidden="true">share</span> @Tx("hero.shareButton")
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-6 min-w-0">
+            <SimpleVideo VideoName="@SimpleVideo.PlansWeekVideoName" Culture="@Culture" Label="@Tx("hero.videoLabel")">
+                <Fallback>
+                    <img src="@HeroScreenshotSrc" alt="@Tx("hero.imageAlt")" width="@DemoCarouselDefinition.DefaultVideoWidth" height="@DemoCarouselDefinition.DefaultVideoHeight" class="w-full h-auto rounded-2xl shadow-xl" />
+                </Fallback>
+            </SimpleVideo>
+            <DemoDataNote Culture="@Culture" ContentKey="@SiteModes.SimpleContentKey" CssClass="mt-4 mb-0" />
+        </div>
+    </div>
+</header>
+
+<section id="@SimplePageSectionIds.Tasks" class="reveal bg-secondary-fixed py-14 md:py-20 no-line-rule scroll-mt-24" aria-labelledby="simple-tasks-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <h2 id="simple-tasks-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight text-center mt-0 mb-10">@Tx("tasks.title")</h2>
+        <ul class="grid md:grid-cols-3 gap-5 list-none p-0 m-0">
+            @for (var index = 0; index < TaskIcons.Length; index++)
+            {
+                <li class="rounded-2xl bg-surface-container-lowest p-6 md:p-8">
+                    <span class="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">@TaskIcons[index]</span>
+                    <h3 class="text-xl font-black mt-4 mb-2">@Tx($"tasks.{index}.title")</h3>
+                    <p class="text-lg text-on-surface-variant leading-relaxed m-0">@Tx($"tasks.{index}.text")</p>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+<section class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-4xl mx-auto no-line-rule text-center" aria-labelledby="simple-human-heading">
+    <h2 id="simple-human-heading" class="text-[1.75rem] md:text-[2.25rem] font-black tracking-tight mt-0 mb-6">@Tx("human.title")</h2>
+    <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed m-0">@Tx("human.text")</p>
+</section>
+
+<section id="@SimplePageSectionIds.Talk" class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule scroll-mt-24" aria-labelledby="simple-talk-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5 min-w-0">
+            <h2 id="simple-talk-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-4">@Tx("talk.title")</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed mt-0 mb-6">@Tx("talk.text")</p>
+            <ul class="flex flex-col gap-3 list-none p-0 m-0">
+                @for (var index = 0; index < TalkBubbleCount; index++)
+                {
+                    <li class="self-start max-w-full rounded-2xl rounded-es-sm bg-tertiary-fixed text-on-tertiary-fixed px-5 py-3 text-lg font-semibold">@Tx($"talk.bubble.{index}")</li>
+                }
+            </ul>
+        </div>
+        <div class="lg:col-span-7 min-w-0">
+            <SimpleVideo VideoName="@SimpleVideo.KlacksyCallVideoName" Culture="@Culture" Label="@Tx("talk.videoLabel")" />
+            @if (HasTalkVideo)
+            {
+                <DemoDataNote Culture="@Culture" ContentKey="@SiteModes.SimpleContentKey" CssClass="mt-4 mb-0" />
+            }
+        </div>
+    </div>
+</section>
+
+<section class="reveal py-14 md:py-20 no-line-rule">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 grid md:grid-cols-2 gap-6">
+        <article class="rounded-2xl bg-secondary-fixed p-6 md:p-8" aria-labelledby="simple-ai-heading">
+            <span class="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">smart_toy</span>
+            <h2 id="simple-ai-heading" class="text-2xl md:text-[1.75rem] font-black mt-4 mb-3">@Tx("ai.title")</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("ai.text")</p>
+            <p class="text-sm font-semibold text-primary mt-0 mb-2">@Tx("ai.providersLabel")</p>
+            <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+                @foreach (var provider in KlacksyModelProviders.Names)
+                {
+                    <li class="rounded-full bg-surface-container-lowest px-3 py-1.5 text-sm font-semibold text-primary">@provider</li>
+                }
+            </ul>
+        </article>
+        <article class="rounded-2xl bg-secondary-fixed p-6 md:p-8" aria-labelledby="simple-data-heading">
+            <span class="material-symbols-outlined text-secondary text-4xl" aria-hidden="true">shield_lock</span>
+            <h2 id="simple-data-heading" class="text-2xl md:text-[1.75rem] font-black mt-4 mb-3">@Tx("data.title")</h2>
+            <p class="text-lg text-on-surface-variant leading-relaxed m-0">@Tx("data.text")</p>
+        </article>
+    </div>
+</section>
+
+<section id="@SimplePageSectionIds.Cost" class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule scroll-mt-24" aria-labelledby="simple-cost-heading">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        <h2 id="simple-cost-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight text-center mt-0 mb-8">@Tx("cost.title")</h2>
+        <ul class="space-y-4 list-none p-0 m-0">
+            @for (var index = 0; index < CostItemCount; index++)
+            {
+                <li class="flex items-start gap-3 text-lg text-on-surface-variant leading-relaxed">
+                    <span class="material-symbols-outlined text-secondary text-2xl shrink-0" aria-hidden="true">check_circle</span><span>@Tx($"cost.item.{index}")</span>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+<section class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto no-line-rule text-center" aria-labelledby="simple-audience-heading">
+    <h2 id="simple-audience-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-8">@Tx("audience.title")</h2>
+    <ul class="flex flex-wrap justify-center gap-3 list-none p-0 m-0">
+        @foreach (var slug in AudienceSlugs)
+        {
+            <li>
+                <a href="@IndustryHref(slug)" class="inline-flex items-center gap-2 rounded-full bg-secondary-fixed px-5 py-3 text-base font-bold text-primary no-underline hover:bg-surface-container-high transition-colors">
+                    @Tx($"audience.chip.{slug}") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span>
+                </a>
+            </li>
+        }
+    </ul>
+</section>
+
+<section id="@SimplePageSectionIds.Start" class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto no-line-rule scroll-mt-24" aria-labelledby="simple-start-heading">
+    <div class="rounded-[2rem] bg-secondary-fixed py-12 md:py-16 px-6 md:px-10 text-center">
+        <h2 id="simple-start-heading" class="text-[2rem] md:text-[2.75rem] font-black tracking-tight mt-0 mb-4">@Tx("start.title")</h2>
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-0 mb-8">@Tx("start.text")</p>
+        <div class="grid md:grid-cols-3 gap-4 text-start">
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed p-6 text-start hover:opacity-90 transition-all"><span class="material-symbols-outlined text-3xl" aria-hidden="true">chat</span><span class="block text-xl font-black mt-2">@Tx("start.playgroundButton")</span><span class="block text-sm font-semibold mt-1">@Tx("start.playgroundSubtitle")</span></button>
+            <a href="@InstallHref" class="rounded-2xl bg-surface-container-lowest text-primary p-6 no-underline hover:shadow-lg transition-all">
+                <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">download</span>
+                <span class="block text-xl font-black mt-2">@Tx("start.installButton")</span>
+                <span class="block text-sm font-semibold text-on-surface-variant mt-1">@Tx("start.installSubtitle")</span>
+            </a>
+            <div id="@SimplePageSectionIds.Share" class="rounded-2xl bg-surface-container-lowest p-6 scroll-mt-24">
+                <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">share</span>
+                <span class="block text-xl font-black text-primary mt-2">@Tx("start.shareTitle")</span>
+                <ShareLinkButtons Url="@ShareUrl" Culture="@Culture" CssClass="mt-4" />
+            </div>
+        </div>
+        <a href="@ExpertHref" class="inline-flex items-center gap-1 mt-8 text-sm font-bold text-secondary no-underline">
+            @Tx("start.expertHint") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span>
+        </a>
+    </div>
+</section>
+
+@code {
+    public static readonly string[] AudienceSlugs = { "spitex", "spitaeler", "hotellerie-gastronomie", "logistik", "security", "hausdienste" };
+
+    private const string CountryPlaceholder = "{country}";
+    private const string FragmentSeparator = "#";
+    private const string BaseUrlSetting = "Site:BaseUrl";
+    private const string ImagesPathPrefix = "images/";
+    private const string KlacksyScreenshotFile = "app-klacksy-de.png";
+    private const int TalkBubbleCount = 3;
+    private const int CostItemCount = 3;
+
+    private static readonly string[] TaskIcons = { "calendar_month", "rule", "person_search" };
+
+    [Parameter, EditorRequired] public required string PageKey { get; set; }
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
+
+    private SupportedCulture CultureRecord => SupportedCultures.All.First(culture => culture.Code == Culture);
+
+    private string CulturePrefix => CultureRecord.UrlSlug.Length == 0 ? string.Empty : $"/{CultureRecord.UrlSlug}";
+
+    private string PageHref => $"{CulturePrefix}/{PageKey}";
+
+    private string ExpertHref => $"{CulturePrefix}/{SiteModes.ExpertRoutePath(PageKey)}";
+
+    private string InstallHref
+        => CountryPageLinks.Href(CultureRecord.UrlSlug, PageKey, CountryPageLinks.InstallationSlug) + FragmentSeparator + PageSectionIds.OfficePc;
+
+    private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey);
+
+    private string HeroScreenshotSrc => ImagesPathPrefix + ScreenshotResolver.Resolve(KlacksyScreenshotFile, Culture);
+
+    private bool HasTalkVideo => VideoCatalog.Find(SimpleVideo.KlacksyCallVideoName, Culture) is not null;
+
+    private string IndustryHref(string slug) => $"{PageHref}/{slug}";
+
+    private string SectionHref(string sectionId) => PageHref + FragmentSeparator + sectionId;
+
+    private string Tx(string key)
+        => ContentProvider.GetText(Culture, SiteModes.SimpleContentKey, key)
+            .Replace(CountryPlaceholder, CountryNames.DisplayName(PageKey), StringComparison.Ordinal);
+}
