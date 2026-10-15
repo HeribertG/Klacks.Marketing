@@ -2,6 +2,7 @@ using Klacks.Marketing.Analytics;
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Seo;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddSingleton<ILocalizedScreenshotResolver>(services =>
 builder.Services.AddSingleton<ILocalizedVideoCatalog>(services =>
     new LocalizedVideoCatalog(services.GetRequiredService<IWebHostEnvironment>().WebRootFileProvider));
 builder.Services.AddVisitCounter(builder.Configuration);
+builder.Services.Configure<SiteModeOptions>(builder.Configuration.GetSection(SiteModeOptions.SectionName));
 
 // klacks-proxy sits on the same Docker network, not on loopback — trust its
 // forwarded headers so scheme-dependent middleware sees the original HTTPS request.
@@ -84,6 +86,15 @@ app.Use(async (context, next) =>
         }
 
         if (!KnownPageRoutes.Contains(path))
+        {
+            context.Response.StatusCode = StatusCodes.Status404NotFound;
+            return;
+        }
+
+        // The expert start route is a real component route, so only this check keeps it dark while
+        // SimpleMode:Enabled is off (the known-page set is derived statically from the @page directives).
+        if (SiteModes.IsExpertStartPath(path)
+            && !context.RequestServices.GetRequiredService<IOptions<SiteModeOptions>>().Value.Enabled)
         {
             context.Response.StatusCode = StatusCodes.Status404NotFound;
             return;
