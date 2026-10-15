@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Pobierz dla Maca",
     "architectureNote": "Dla 64-bitowego systemu Windows (x64). Na urządzeniach z Windows 11 i procesorem ARM (np. Snapdragon X) Klacks działa dzięki emulacji; Windows 10 na ARM nie jest obsługiwany.",
-    "linuxNote": "Linux? Prosimy skorzystać z prowadzonego instalatora z Dockerem.",
+    "linuxNote": "Linux? Szczegóły poniżej: <a href=\"{0}\">Klacks na komputerze z Linuksem</a>.",
     "heroSubtitle": "Trzy drogi, jeden rezultat: pakiet Windows na komputer biurowy, prowadzony instalator na Państwa serwer albo stack Docker Compose dla własnej konfiguracji &mdash; bez rejestracji, bez opłat licencyjnych. Na komputerze biurowym kraj wybierają Państwo podczas instalacji; dla serwera i Docker Compose pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy i branżowe ustawienia wstępne Państwa kraju (dodatki, o ile zdefiniowano je dla danego kraju)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Na komputerze z Linuksem",
+      "text": "Prosta droga dla komputera z Linuksem, także bez wcześniejszej wiedzy: pobierają Państwo pakiet i jeden raz wpisują polecenie w terminalu &mdash; resztą zajmie się instalator. Klacks działa potem z Dockerem na tym komputerze, aktualizacje przychodzą automatycznie, a Państwa dane pozostają na tym komputerze.",
+      "requirementsTitle": "Wymagania",
+      "requirements": [
+        "64-bitowy Linux z pulpitem graficznym: Ubuntu, Debian lub Fedora. Inne dystrybucje (np. Linux Mint) nie są oficjalnie obsługiwane &mdash; tam prosimy najpierw samodzielnie zainstalować Dockera.",
+        "Zalecane 16 GB pamięci RAM, ponieważ równolegle działają przeglądarka i pulpit. Poniżej ok. 8 GB instalator przerywa pracę.",
+        "Połączenie z internetem przy pierwszym uruchomieniu oraz do aktualizacji",
+        "Hasło administratora (hasło sudo) tego komputera"
+      ],
+      "stepsTitle": "W trzech krokach",
+      "steps": [
+        { "title": "Pobranie pakietu i rozpakowanie do stałego folderu", "text": "Pobierają Państwo plik ZIP i rozpakowują go do folderu, który pozostanie na stałe, np. do folderu &bdquo;klacks&rdquo; w folderze domowym &mdash; nie do folderu &bdquo;Pobrane&rdquo;. Automatyczne aktualizacje korzystają z tego folderu; jeśli zostanie usunięty, aktualizacje przestaną działać." },
+        { "title": "Otwarcie terminala i wpisanie polecenia", "text": "W folderze z rozpakowanymi plikami instalacyjnymi klikają Państwo prawym przyciskiem myszy, wybierają &bdquo;Otwórz w terminalu&rdquo;, wpisują poniższe polecenie i potwierdzają je hasłem (podczas wpisywania nie jest ono wyświetlane). Jeśli brakuje Dockera, instalator zaproponuje jego instalację: należy odpowiedzieć &bdquo;y&rdquo; &mdash; trwa to kilka minut. Terminal jest potrzebny do instalacji tylko ten jeden raz; jeśli później uruchomią Państwo instalator ponownie (np. w celu naprawy), należy użyć tego samego polecenia razem z sudo." },
+        { "title": "Otwarcie w przeglądarce i logowanie", "text": "Otwierają Państwo https://localhost w przeglądarce. Przeglądarka ostrzega przed certyfikatem &mdash; ostrzeżenie należy potwierdzić (&bdquo;Zaawansowane&rdquo;, a następnie &bdquo;Przejdź dalej&rdquo; lub &bdquo;Akceptuję ryzyko&rdquo;). Logują się Państwo kontem początkowym z pliku README w folderze i natychmiast zmieniają hasło." }
+      ],
+      "downloadLabel": "Pobierz dla Linuksa"
+    },
+    "certificateNote": "O ostrzeżeniu dotyczącym certyfikatu: podczas instalacji Klacks tworzy własny certyfikat, którego Państwa przeglądarka nie zna &mdash; stąd ostrzeżenie. Połączenie jest mimo to szyfrowane."
   },
   "profile": {
     "icon": "description",

@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Muat turun untuk Mac",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada peranti Windows 11 dengan pemproses ARM (contohnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak disokong.",
-    "linuxNote": "Linux? Sila gunakan pemasang berpandu dengan Docker.",
+    "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks pada PC Linux</a>.",
     "heroSubtitle": "Tiga laluan, satu hasil: pakej Windows untuk PC pejabat Anda, pemasang berpandu untuk pelayan Anda, atau stack Docker Compose untuk persediaan Anda sendiri &mdash; tanpa pendaftaran, tanpa yuran lesen. Pada PC pejabat, Anda memilih negara semasa pemasangan; untuk pelayan dan Docker Compose, pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Pada PC Linux",
+      "text": "Cara mudah untuk PC Linux, tanpa pengetahuan terdahulu: muat turun pakej, masukkan satu arahan dalam terminal sekali sahaja &mdash; selebihnya diuruskan oleh pemasang. Selepas itu Klacks berjalan dengan Docker pada PC ini, kemas kini diterima secara automatik, dan data Anda kekal pada PC ini.",
+      "requirementsTitle": "Keperluan",
+      "requirements": [
+        "Linux 64-bit dengan desktop: Ubuntu, Debian atau Fedora. Distribusi lain (contohnya Linux Mint) tidak disokong secara rasmi &mdash; pada distribusi tersebut, sila pasang Docker sendiri terlebih dahulu.",
+        "Memori (RAM) 16 GB disyorkan, kerana pelayar dan desktop turut berjalan serentak. Di bawah kira-kira 8 GB, pemasang akan berhenti.",
+        "Sambungan Internet semasa permulaan pertama dan untuk kemas kini",
+        "Kata laluan pentadbir (kata laluan sudo) PC ini"
+      ],
+      "stepsTitle": "Dalam tiga langkah",
+      "steps": [
+        { "title": "Muat turun pakej dan ekstrak ke dalam folder tetap", "text": "Muat turun fail ZIP dan ekstrak ke dalam folder yang akan kekal di tempatnya, contohnya folder “klacks” dalam folder peribadi (home) Anda &mdash; bukan dalam folder “Downloads”. Kemas kini automatik menggunakan folder ini; jika folder ini dipadam, kemas kini tidak akan berfungsi lagi." },
+        { "title": "Buka terminal dan masukkan arahan", "text": "Dalam folder yang mengandungi fail pemasangan yang telah diekstrak, klik kanan dan pilih “Buka dalam Terminal”, masukkan arahan di bawah dan sahkan dengan kata laluan Anda (kata laluan tidak dipaparkan semasa Anda menaip). Jika Docker tiada, pemasang akan menawarkan untuk memasangnya: jawab “y” &mdash; ini mengambil masa beberapa minit. Anda hanya memerlukan terminal sekali ini sahaja untuk pemasangan; jika Anda menjalankan pemasang semula kemudian (contohnya untuk pembaikan), gunakan arahan yang sama termasuk sudo." },
+        { "title": "Buka dalam pelayar dan log masuk", "text": "Buka https://localhost dalam pelayar Anda. Pelayar akan memaparkan amaran tentang sijil &mdash; sahkan amaran tersebut (“Lanjutan” dan kemudian “Teruskan” atau “Terima risiko”). Log masuk dengan akaun awal daripada README dalam folder itu dan tukar kata laluan dengan segera." }
+      ],
+      "downloadLabel": "Muat turun untuk Linux"
+    },
+    "certificateNote": "Tentang amaran sijil: semasa pemasangan, Klacks mencipta sijilnya sendiri yang tidak dikenali oleh pelayar Anda &mdash; oleh itu amaran dipaparkan. Sambungan tetap disulitkan."
   },
   "profile": {
     "icon": "description",

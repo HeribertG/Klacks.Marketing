@@ -317,16 +317,18 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine("```bash");
         sb.AppendLine($"curl -fsSLO {bundleUrl}");
-        sb.AppendLine($"unzip {bundleFile} && cd {InstallFolderName} && ./install.sh");
+        sb.AppendLine($"unzip {bundleFile} && cd {InstallFolderName} && sudo bash ./install.sh");
         sb.AppendLine("```");
         sb.AppendLine();
         sb.AppendLine("With your own server name and an optional country profile:");
         sb.AppendLine();
         sb.AppendLine("```bash");
-        sb.AppendLine($"SERVER_NAME={ExampleServerName} REGION={ExampleRegion} ./install.sh");
+        sb.AppendLine($"sudo SERVER_NAME={ExampleServerName} REGION={ExampleRegion} bash ./install.sh");
         sb.AppendLine("```");
         sb.AppendLine();
-        sb.AppendLine("Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443).");
+        sb.AppendLine("Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443). Put them after sudo, as shown above: sudo does not pass on the caller's environment.");
+        sb.AppendLine();
+        sb.AppendLine("If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora); otherwise install Docker Engine with the Compose plugin first.");
         sb.AppendLine();
 
         sb.AppendLine("### 3b. Windows (PowerShell)");
@@ -371,7 +373,7 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 8. If something fails");
         sb.AppendLine();
-        sb.AppendLine("- The installer stops right at the start: it first runs docker version and docker compose version. Docker with the Compose plugin must be installed and respond to both commands.");
+        sb.AppendLine("- The installer stops right at the start: it first runs docker version and docker compose version. Docker with the Compose plugin must be installed and respond to both commands; on Linux, if Docker is missing, it offers to install it first (see 3a).");
         sb.AppendLine("- \"regions/<code>.json not found — aborting\": the country code does not match a file in the regions folder. Use a code that exists there or leave REGION / -Region out.");
         sb.AppendLine("- \"Could not fetch manifest. Falling back to :latest tags\": the installer could not read the release manifest on github.com and continues with the latest image tags. Check the outbound access to github.com.");
         sb.AppendLine("- Windows, \"Could not map this folder into the Docker VM; automatic updates will not work\": install Klacks on a local drive (for example C:\\klacks) and run the script again.");

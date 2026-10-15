@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Für Mac laden",
     "architectureNote": "Für Windows 64 Bit (x64). Auf Windows-11-Geräten mit ARM-Prozessor (z. B. Snapdragon X) läuft Klacks per Emulation; Windows 10 auf ARM wird nicht unterstützt.",
-    "linuxNote": "Linux? Bitte den geführten Installer mit Docker verwenden.",
+    "linuxNote": "Linux? Siehe unten: <a href=\"{0}\">Klacks auf einem Linux-PC</a>.",
     "heroSubtitle": "Drei Wege, ein Ergebnis: das Windows-Paket für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup &mdash; ohne Registrierung, ohne Lizenzkosten. Auf dem Büro-PC wählen Sie das Land bei der Installation; für Server und Docker Compose bringt das Länderpaket Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Auf einem Linux-PC",
+      "text": "Der einfache Weg für einen Linux-PC, auch ohne Vorkenntnisse: Paket laden, einmal einen Befehl im Terminal eingeben &mdash; den Rest erledigt der Installer. Klacks läuft danach mit Docker auf diesem PC, Updates kommen automatisch, und Ihre Daten bleiben auf diesem PC.",
+      "requirementsTitle": "Voraussetzungen",
+      "requirements": [
+        "64-Bit-Linux mit Desktop: Ubuntu, Debian oder Fedora. Andere Distributionen (z. B. Linux Mint) werden nicht offiziell unterstützt &mdash; dort Docker bitte zuerst selbst installieren.",
+        "16 GB Arbeitsspeicher empfohlen, weil Browser und Desktop nebenher laufen. Unter rund 8 GB bricht der Installer ab.",
+        "Internetverbindung beim ersten Start und für Updates",
+        "Das Administratorpasswort (sudo-Passwort) dieses PCs"
+      ],
+      "stepsTitle": "In drei Schritten",
+      "steps": [
+        { "title": "Paket laden und in einen festen Ordner entpacken", "text": "Die ZIP-Datei herunterladen und in einen Ordner entpacken, der dauerhaft bleibt, z. B. einen Ordner &bdquo;klacks&ldquo; in Ihrem persönlichen Ordner &mdash; nicht im Ordner &bdquo;Downloads&ldquo;. Die automatischen Updates arbeiten mit diesem Ordner; wird er gelöscht, funktionieren die Updates nicht mehr." },
+        { "title": "Terminal öffnen und Befehl eingeben", "text": "Im Ordner mit den entpackten Installationsdateien mit der rechten Maustaste &bdquo;Im Terminal öffnen&ldquo; wählen, den Befehl unten eingeben und mit dem Passwort bestätigen (es wird beim Tippen nicht angezeigt). Fehlt Docker, bietet der Installer an, es zu installieren: mit &bdquo;y&ldquo; antworten &mdash; das dauert einige Minuten. Für die Installation brauchen Sie das Terminal nur dieses eine Mal; führen Sie den Installer später erneut aus (z. B. zur Reparatur), dann ebenfalls mit diesem Befehl samt sudo." },
+        { "title": "Im Browser öffnen und anmelden", "text": "Im Browser https://localhost öffnen. Der Browser warnt vor dem Zertifikat &mdash; die Warnung bestätigen (&bdquo;Erweitert&ldquo; und dann &bdquo;Weiter&ldquo; bzw. &bdquo;Risiko akzeptieren&ldquo;). Mit dem Initialkonto aus dem README im Ordner anmelden und das Passwort sofort ändern." }
+      ],
+      "downloadLabel": "Für Linux laden"
+    },
+    "certificateNote": "Zur Zertifikatswarnung: Klacks erstellt bei der Installation ein eigenes Zertifikat, das Ihr Browser nicht kennt &mdash; deshalb die Warnung. Die Verbindung ist trotzdem verschlüsselt."
   },
   "profile": {
     "icon": "description",

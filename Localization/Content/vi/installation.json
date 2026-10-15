@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Tải cho Mac",
     "architectureNote": "Dành cho Windows 64-bit (x64). Trên các thiết bị Windows 11 dùng bộ xử lý ARM (ví dụ Snapdragon X), Klacks chạy thông qua giả lập; Windows 10 trên ARM không được hỗ trợ.",
-    "linuxNote": "Dùng Linux? Vui lòng dùng trình cài đặt có hướng dẫn với Docker.",
+    "linuxNote": "Dùng Linux? Xem bên dưới: <a href=\"{0}\">Klacks trên máy tính Linux</a>.",
     "heroSubtitle": "Ba con đường, một kết quả: gói Windows cho máy tính văn phòng của bạn, trình cài đặt có hướng dẫn cho máy chủ của bạn, hoặc stack Docker Compose cho thiết lập riêng của bạn &mdash; không cần đăng ký, không phí bản quyền. Trên máy tính văn phòng, bạn chọn quốc gia trong lúc cài đặt; với máy chủ và Docker Compose, gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (giờ phụ trội nếu quốc gia đó có quy định)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Trên máy tính Linux",
+      "text": "Cách đơn giản cho máy tính Linux, không cần kiến thức chuyên môn: tải gói về, nhập một lệnh trong terminal một lần duy nhất &mdash; trình cài đặt sẽ lo phần còn lại. Sau đó Klacks chạy bằng Docker trên máy tính này, bản cập nhật được cài tự động, và dữ liệu của bạn được lưu trên chính máy tính này.",
+      "requirementsTitle": "Yêu cầu",
+      "requirements": [
+        "Linux 64-bit có giao diện desktop: Ubuntu, Debian hoặc Fedora. Các bản phân phối khác (ví dụ Linux Mint) không được hỗ trợ chính thức &mdash; trên các bản đó, vui lòng tự cài Docker trước.",
+        "Khuyến nghị 16 GB bộ nhớ RAM, vì trình duyệt và giao diện desktop chạy song song. Dưới khoảng 8 GB, trình cài đặt sẽ dừng lại.",
+        "Kết nối Internet ở lần khởi động đầu tiên và để cập nhật",
+        "Mật khẩu quản trị viên (mật khẩu sudo) của máy tính này"
+      ],
+      "stepsTitle": "Chỉ với ba bước",
+      "steps": [
+        { "title": "Tải gói và giải nén vào một thư mục cố định", "text": "Tải tệp ZIP về và giải nén vào một thư mục sẽ được giữ nguyên lâu dài, ví dụ thư mục “klacks” trong thư mục cá nhân (home) của bạn &mdash; không phải trong thư mục “Downloads”. Các bản cập nhật tự động làm việc với thư mục này; nếu thư mục bị xóa, việc cập nhật sẽ không còn hoạt động." },
+        { "title": "Mở terminal và nhập lệnh", "text": "Trong thư mục chứa các tệp cài đặt đã giải nén, nhấp chuột phải và chọn “Mở trong Terminal”, nhập lệnh bên dưới rồi xác nhận bằng mật khẩu của bạn (mật khẩu không hiển thị khi gõ). Nếu chưa có Docker, trình cài đặt sẽ đề nghị cài đặt: trả lời “y” &mdash; việc này mất vài phút. Bạn chỉ cần dùng terminal một lần này để cài đặt; nếu sau này chạy lại trình cài đặt (ví dụ để sửa lỗi), hãy dùng đúng lệnh này, kể cả sudo." },
+        { "title": "Mở trong trình duyệt và đăng nhập", "text": "Mở https://localhost trong trình duyệt. Trình duyệt sẽ cảnh báo về chứng chỉ &mdash; hãy xác nhận cảnh báo (“Nâng cao” rồi “Tiếp tục” hoặc “Chấp nhận rủi ro”). Đăng nhập bằng tài khoản ban đầu ghi trong README trong thư mục và đổi mật khẩu ngay." }
+      ],
+      "downloadLabel": "Tải cho Linux"
+    },
+    "certificateNote": "Về cảnh báo chứng chỉ: khi cài đặt, Klacks tạo một chứng chỉ riêng mà trình duyệt của bạn không biết &mdash; vì vậy mới có cảnh báo. Kết nối vẫn được mã hóa."
   },
   "profile": {
     "icon": "description",

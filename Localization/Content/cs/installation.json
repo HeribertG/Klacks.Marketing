@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Stáhnout pro Mac",
     "architectureNote": "Pro 64bitovou verzi Windows (x64). Na zařízeních s Windows 11 a procesorem ARM (např. Snapdragon X) běží Klacks prostřednictvím emulace; systém Windows 10 na ARM není podporován.",
-    "linuxNote": "Linux? Použijte prosím řízený instalátor s Dockerem.",
+    "linuxNote": "Linux? Viz níže: <a href=\"{0}\">Klacks na linuxovém PC</a>.",
     "heroSubtitle": "Tři cesty, jeden výsledek: balíček pro Windows na kancelářské PC, řízený instalátor pro váš server, nebo Docker Compose stack pro vaše vlastní prostředí &mdash; bez registrace, bez licenčních poplatků. Na kancelářském PC zvolíte zemi během instalace; pro server a Docker Compose přináší balíček pro zemi svátky, pravidla pracovní doby i oborová přednastavení vaší země (příplatky, pokud jsou pro zemi definovány)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Na linuxovém PC",
+      "text": "Jednoduchá cesta pro linuxové PC, i bez předchozích znalostí: stáhněte balíček, jednou zadejte příkaz do terminálu &mdash; zbytek obstará instalátor. Klacks pak na tomto PC běží s Dockerem, aktualizace přicházejí automaticky a vaše data zůstávají na tomto PC.",
+      "requirementsTitle": "Předpoklady",
+      "requirements": [
+        "64bitový Linux s grafickým prostředím: Ubuntu, Debian nebo Fedora. Jiné distribuce (např. Linux Mint) nejsou oficiálně podporovány &mdash; tam si prosím nejprve sami nainstalujte Docker.",
+        "Doporučeno 16 GB operační paměti, protože současně běží prohlížeč a grafické prostředí. Pod přibližně 8 GB instalátor skončí.",
+        "Připojení k internetu při prvním spuštění a pro aktualizace",
+        "Heslo správce (heslo pro sudo) tohoto PC"
+      ],
+      "stepsTitle": "Tři kroky",
+      "steps": [
+        { "title": "Stáhnout balíček a rozbalit ho do trvalé složky", "text": "Stáhněte soubor ZIP a rozbalte ho do složky, která zůstane na svém místě, např. do složky &bdquo;klacks&ldquo; ve vaší domovské složce &mdash; ne do složky &bdquo;Stažené&ldquo;. Automatické aktualizace s touto složkou pracují; pokud ji smažete, aktualizace přestanou fungovat." },
+        { "title": "Otevřít terminál a zadat příkaz", "text": "Ve složce s rozbalenými instalačními soubory klikněte pravým tlačítkem myši, zvolte &bdquo;Otevřít v terminálu&ldquo;, zadejte níže uvedený příkaz a potvrďte ho svým heslem (při psaní se nezobrazuje). Pokud chybí Docker, instalátor nabídne jeho instalaci: odpovězte &bdquo;y&ldquo; &mdash; trvá to několik minut. Terminál potřebujete pro instalaci jen tentokrát; pokud instalátor později spustíte znovu (např. kvůli opravě), použijte stejný příkaz včetně sudo." },
+        { "title": "Otevřít v prohlížeči a přihlásit se", "text": "Otevřete v prohlížeči https://localhost. Prohlížeč upozorní na certifikát &mdash; varování potvrďte (&bdquo;Rozšířená nastavení&ldquo; a pak &bdquo;Pokračovat&ldquo; nebo &bdquo;Přijmout riziko&ldquo;). Přihlaste se výchozím účtem z README ve složce a ihned změňte heslo." }
+      ],
+      "downloadLabel": "Stáhnout pro Linux"
+    },
+    "certificateNote": "K varování o certifikátu: Klacks si při instalaci vytvoří vlastní certifikát, který váš prohlížeč nezná &mdash; proto to varování. Spojení je přesto šifrované."
   },
   "profile": {
     "icon": "description",

@@ -10,6 +10,8 @@ public sealed class InstallPageContent
     public required InstallPath Compose { get; init; }
     // Office-PC install without Docker; null in a culture file means the card is not offered there.
     public InstallNativeSection? Native { get; init; }
+    // Linux-PC walkthrough for non-experts; always rendered, independent of the office-PC switch.
+    public required InstallLinuxSection Linux { get; init; }
     public required InstallProfileSection Profile { get; init; }
     public required InstallFallbackSection Fallback { get; init; }
     public required InstallNotesSection Notes { get; init; }
@@ -56,6 +58,16 @@ public sealed class InstallNativeSection
     public required string ArchitectureNote { get; init; }
     public required string LinuxNote { get; init; }
     public required string HeroSubtitle { get; init; }
+}
+
+// The "Linux PC" walkthrough below the path cards: the card content (its DownloadLabel is the
+// Linux button, which downloads the guided-installer package) and the note explaining the
+// browser's certificate warning. The terminal command is not part of the content: the page
+// builds it from the country package and renders it after the terminal step.
+public sealed class InstallLinuxSection
+{
+    public required InstallPath Path { get; init; }
+    public required string CertificateNote { get; init; }
 }
 
 public sealed class InstallStep

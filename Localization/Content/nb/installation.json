@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Last ned for Mac",
     "architectureNote": "For Windows 64-bit (x64). På Windows 11-enheter med ARM-prosessor (f.eks. Snapdragon X) kjører Klacks via emulering; Windows 10 på ARM støttes ikke.",
-    "linuxNote": "Linux? Bruk det veiledede installasjonsprogrammet med Docker.",
+    "linuxNote": "Linux? Se nedenfor: <a href=\"{0}\">Klacks på en Linux-PC</a>.",
     "heroSubtitle": "Tre veier, ett resultat: Windows-pakken for kontor-PC-en, det veiledede installasjonsprogrammet for serveren din eller Docker Compose-stacken for ditt eget oppsett &mdash; uten registrering, uten lisenskostnader. På kontor-PC-en velger du landet under installasjonen; for server og Docker Compose leveres landspakken med helligdager, arbeidstidsregler og bransjeforhåndsinnstillinger for landet ditt (tillegg der de er definert for landet)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "På en Linux-PC",
+      "text": "Den enkle veien for en Linux-PC, også uten forkunnskaper: last ned pakken og skriv inn én kommando i terminalen én gang &mdash; installasjonsprogrammet gjør resten. Klacks kjører deretter med Docker på denne PC-en, oppdateringer kommer automatisk, og dataene dine blir værende på denne PC-en.",
+      "requirementsTitle": "Krav",
+      "requirements": [
+        "64-bit Linux med skrivebordsmiljø: Ubuntu, Debian eller Fedora. Andre distribusjoner (f.eks. Linux Mint) støttes ikke offisielt &mdash; der må du først installere Docker selv.",
+        "16 GB minne anbefales, fordi nettleseren og skrivebordet kjører samtidig. Under rundt 8 GB avbryter installasjonsprogrammet.",
+        "Internettforbindelse ved første oppstart og for oppdateringer",
+        "Administratorpassordet (sudo-passordet) til denne PC-en"
+      ],
+      "stepsTitle": "I tre trinn",
+      "steps": [
+        { "title": "Last ned pakken og pakk den ut i en fast mappe", "text": "Last ned ZIP-filen og pakk den ut i en mappe som blir liggende, f.eks. en mappe &laquo;klacks&raquo; i hjemmemappen din &mdash; ikke i mappen &laquo;Nedlastinger&raquo;. De automatiske oppdateringene bruker denne mappen; blir den slettet, slutter oppdateringene å fungere." },
+        { "title": "Åpne en terminal og skriv inn kommandoen", "text": "Høyreklikk i mappen med de utpakkede installasjonsfilene, velg &laquo;Åpne i terminal&raquo;, skriv inn kommandoen nedenfor og bekreft med passordet ditt (det vises ikke mens du skriver). Mangler Docker, tilbyr installasjonsprogrammet å installere det: svar &laquo;y&raquo; &mdash; dette tar noen minutter. Du trenger terminalen bare denne ene gangen for installasjonen; kjører du installasjonsprogrammet på nytt senere (f.eks. for å reparere), bruker du den samme kommandoen inkludert sudo." },
+        { "title": "Åpne i nettleseren og logg inn", "text": "Åpne https://localhost i nettleseren. Nettleseren advarer om sertifikatet &mdash; bekreft advarselen (&laquo;Avansert&raquo; og deretter &laquo;Fortsett&raquo; eller &laquo;Godta risikoen&raquo;). Logg inn med startkontoen fra README-filen i mappen og bytt passordet med en gang." }
+      ],
+      "downloadLabel": "Last ned for Linux"
+    },
+    "certificateNote": "Om sertifikatadvarselen: Under installasjonen lager Klacks sitt eget sertifikat, som nettleseren din ikke kjenner &mdash; derav advarselen. Forbindelsen er likevel kryptert."
   },
   "profile": {
     "icon": "description",

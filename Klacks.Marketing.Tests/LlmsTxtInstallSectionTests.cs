@@ -17,6 +17,7 @@ public class LlmsTxtInstallSectionTests
     private const string BaseUrl = "https://klacks.example";
     private const string SectionHeading = "## Install Klacks (step by step)";
     private const string CodeFence = "```";
+    private const char LineBreak = '\n';
     private const string DocsHomeUrl = BaseUrl + ExternalLinks.DocsBasePath + "en/";
     private const string DocsInstallUrl = DocsHomeUrl + "erste-schritte/installation-und-playground/";
 
@@ -34,6 +35,26 @@ public class LlmsTxtInstallSectionTests
         blocks.ShouldContain(block => block.Contains("install.sh"));
         blocks.ShouldContain(block => block.Contains("install.ps1"));
         blocks.ShouldContain(block => block.Contains(ExternalLinks.OnPremBundleUrl));
+    }
+
+    [Test]
+    public void Full_runs_the_linux_installer_with_sudo_and_passes_variables_after_sudo()
+    {
+        var blocks = ExtractCodeBlocks(LlmsTxtGenerator.BuildFull(BaseUrl));
+        var linuxRuns = blocks.SelectMany(block => block.Split(LineBreak)).Where(line => line.Contains("install.sh")).ToList();
+
+        linuxRuns.ShouldNotBeEmpty();
+        linuxRuns.ShouldAllBe(line => line.Contains("sudo "));
+        linuxRuns.ShouldContain(line => line.Contains("sudo bash ./install.sh"));
+        linuxRuns.ShouldContain(line => line.Contains("sudo SERVER_NAME=") && line.Contains(" bash ./install.sh"));
+        linuxRuns.ShouldNotContain(line => line.TrimStart().StartsWith("SERVER_NAME=", StringComparison.Ordinal));
+    }
+
+    [Test]
+    public void Full_explains_the_docker_install_offer_on_linux()
+    {
+        LlmsTxtGenerator.BuildFull(BaseUrl).ShouldContain(
+            "If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora); otherwise install Docker Engine with the Compose plugin first.");
     }
 
     [Test]

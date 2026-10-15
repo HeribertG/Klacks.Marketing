@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Downloaden voor Mac",
     "architectureNote": "Voor Windows 64-bit (x64). Op Windows 11-apparaten met een ARM-processor (bijv. Snapdragon X) draait Klacks via emulatie; Windows 10 op ARM wordt niet ondersteund.",
-    "linuxNote": "Linux? Gebruik de begeleide installer met Docker.",
+    "linuxNote": "Linux? Zie hieronder: <a href=\"{0}\">Klacks op een Linux-pc</a>.",
     "heroSubtitle": "Drie wegen, één resultaat: het Windows-pakket voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving &mdash; zonder registratie, zonder licentiekosten. Op de kantoor-pc kiest u het land tijdens de installatie; voor server en Docker Compose bevat het landenpakket de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Op een Linux-pc",
+      "text": "De eenvoudige weg voor een Linux-pc, ook zonder voorkennis: pakket downloaden, één keer een opdracht in de terminal invoeren &mdash; de installer doet de rest. Klacks draait daarna met Docker op deze pc, updates komen automatisch binnen en uw gegevens blijven op deze pc.",
+      "requirementsTitle": "Vereisten",
+      "requirements": [
+        "64-bit Linux met desktop: Ubuntu, Debian of Fedora. Andere distributies (bijv. Linux Mint) worden niet officieel ondersteund &mdash; installeer daar eerst zelf Docker.",
+        "16 GB werkgeheugen aanbevolen, omdat browser en desktop ernaast draaien. Onder ongeveer 8 GB breekt de installer af.",
+        "Internetverbinding bij de eerste start en voor updates",
+        "Het beheerderswachtwoord (sudo-wachtwoord) van deze pc"
+      ],
+      "stepsTitle": "In drie stappen",
+      "steps": [
+        { "title": "Pakket downloaden en in een vaste map uitpakken", "text": "Download het ZIP-bestand en pak het uit in een map die blijvend op zijn plek blijft, bijv. een map &bdquo;klacks&rdquo; in uw persoonlijke map &mdash; niet in de map &bdquo;Downloads&rdquo;. De automatische updates werken met deze map; wordt hij verwijderd, dan werken de updates niet meer." },
+        { "title": "Terminal openen en opdracht invoeren", "text": "Klik in de map met de uitgepakte installatiebestanden met de rechtermuisknop en kies &bdquo;Openen in terminal&rdquo;, voer de opdracht hieronder in en bevestig met uw wachtwoord (het wordt tijdens het typen niet getoond). Ontbreekt Docker, dan biedt de installer aan het te installeren: antwoord met &bdquo;y&rdquo; &mdash; dat duurt enkele minuten. U hebt de terminal alleen deze ene keer nodig voor de installatie; voert u de installer later opnieuw uit (bijv. voor een reparatie), gebruik dan dezelfde opdracht inclusief sudo." },
+        { "title": "In de browser openen en inloggen", "text": "Open https://localhost in uw browser. De browser waarschuwt voor het certificaat &mdash; bevestig de waarschuwing (&bdquo;Geavanceerd&rdquo; en dan &bdquo;Doorgaan&rdquo; of &bdquo;Risico aanvaarden&rdquo;). Log in met het initiële account uit de README in de map en wijzig het wachtwoord meteen." }
+      ],
+      "downloadLabel": "Downloaden voor Linux"
+    },
+    "certificateNote": "Over de certificaatwaarschuwing: Klacks maakt bij de installatie een eigen certificaat aan dat uw browser niet kent &mdash; vandaar de waarschuwing. De verbinding is toch versleuteld."
   },
   "profile": {
     "icon": "description",

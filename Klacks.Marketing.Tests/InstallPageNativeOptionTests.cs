@@ -3,14 +3,7 @@
 namespace Klacks.Marketing.Tests;
 
 using Klacks.Marketing.Localization;
-using Klacks.Marketing.Shared;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.JSInterop;
 using NUnit.Framework;
 using Shouldly;
 
@@ -24,11 +17,7 @@ using Shouldly;
 [TestFixture]
 public class InstallPageNativeOptionTests
 {
-    private const string BaseUrl = "https://klacks.example/";
-    private const string BaseUrlSetting = "Site:BaseUrl";
     private const string InstallPageKey = "installation";
-    private const string CountryPageKey = "land-ch-installation";
-    private const string CountryRoutePath = "land-ch/installation";
     private const int ExpectedRequirementCount = 5;
     private const int ExpectedStepCount = 3;
     private const string RollingWindowsPackageUrl = "https://github.com/HeribertG/Klacks.Api/releases/download/office-pc/klacks-office-pc-win-x64.zip";
@@ -145,36 +134,8 @@ public class InstallPageNativeOptionTests
         html.ShouldContain(ConfiguredMacUrl);
     }
 
-    private static async Task<string> RenderAsync(string culture, bool enabled, string? windowsUrl = null, string? macUrl = null)
-    {
-        var environment = new TestWebHostEnvironment();
-        var settings = new Dictionary<string, string?>
-        {
-            [BaseUrlSetting] = BaseUrl,
-            [NativeInstallSettings.EnabledKey] = enabled.ToString(),
-            [NativeInstallSettings.WindowsUrlKey] = windowsUrl,
-            [NativeInstallSettings.MacUrlKey] = macUrl,
-        };
-        var services = new ServiceCollection()
-            .AddSingleton<IWebHostEnvironment>(environment)
-            .AddSingleton<IConfiguration>(new ConfigurationBuilder().AddInMemoryCollection(settings).Build())
-            .AddSingleton<IPageContentProvider>(new JsonPageContentProvider(environment))
-            .AddSingleton<NavigationManager>(new TestNavigationManager(BaseUrl, CountryRoutePath))
-            .AddSingleton<IJSRuntime>(new NoOpJsRuntime())
-            .BuildServiceProvider();
-
-        await using var renderer = new HtmlRenderer(services, NullLoggerFactory.Instance);
-        return await renderer.Dispatcher.InvokeAsync(async () =>
-        {
-            var output = await renderer.RenderComponentAsync<InstallPageTemplate>(ParameterView.FromDictionary(new Dictionary<string, object?>
-            {
-                [nameof(InstallPageTemplate.PageKey)] = CountryPageKey,
-                [nameof(InstallPageTemplate.RoutePath)] = CountryRoutePath,
-                [nameof(InstallPageTemplate.Culture)] = culture,
-            }));
-            return output.ToHtmlString();
-        });
-    }
+    private static Task<string> RenderAsync(string culture, bool enabled, string? windowsUrl = null, string? macUrl = null)
+        => InstallPageRenderer.RenderAsync(culture, enabled, windowsUrl, macUrl);
 
     private static int CountOccurrences(string text, string value)
     {
@@ -187,25 +148,5 @@ public class InstallPageNativeOptionTests
         }
 
         return count;
-    }
-
-    private sealed class TestNavigationManager : NavigationManager
-    {
-        public TestNavigationManager(string baseUrl, string path)
-        {
-            Initialize(baseUrl, baseUrl + path);
-        }
-
-        protected override void NavigateToCore(string uri, bool forceLoad)
-        {
-        }
-    }
-
-    private sealed class NoOpJsRuntime : IJSRuntime
-    {
-        public ValueTask<TValue> InvokeAsync<TValue>(string identifier, object?[]? args) => ValueTask.FromResult(default(TValue)!);
-
-        public ValueTask<TValue> InvokeAsync<TValue>(string identifier, CancellationToken cancellationToken, object?[]? args) =>
-            ValueTask.FromResult(default(TValue)!);
     }
 }

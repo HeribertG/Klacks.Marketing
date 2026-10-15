@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Descărcați pentru Mac",
     "architectureNote": "Pentru Windows pe 64 de biți (x64). Pe dispozitivele cu Windows 11 și procesor ARM (de ex. Snapdragon X), Klacks rulează prin emulare; Windows 10 pe ARM nu este acceptat.",
-    "linuxNote": "Linux? Vă rugăm să folosiți instalatorul ghidat cu Docker.",
+    "linuxNote": "Linux? Vedeți mai jos: <a href=\"{0}\">Klacks pe un PC cu Linux</a>.",
     "heroSubtitle": "Trei căi, un singur rezultat: pachetul Windows pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu &mdash; fără înregistrare, fără costuri de licență. Pe PC-ul de birou alegeți țara în timpul instalării; pentru server și Docker Compose, pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Pe un PC cu Linux",
+      "text": "Calea simplă pentru un PC cu Linux, fără cunoștințe prealabile: descărcați pachetul, introduceți o singură dată o comandă în terminal &mdash; restul îl face instalatorul. Apoi Klacks rulează cu Docker pe acest PC, actualizările vin automat, iar datele dumneavoastră rămân pe acest PC.",
+      "requirementsTitle": "Cerințe",
+      "requirements": [
+        "Linux pe 64 de biți cu mediu desktop: Ubuntu, Debian sau Fedora. Alte distribuții (de ex. Linux Mint) nu sunt acceptate oficial &mdash; acolo vă rugăm să instalați mai întâi Docker singur.",
+        "Se recomandă 16 GB de memorie, deoarece browserul și desktopul rulează în paralel. Sub aproximativ 8 GB, instalatorul se oprește.",
+        "Conexiune la internet la prima pornire și pentru actualizări",
+        "Parola de administrator (parola sudo) a acestui PC"
+      ],
+      "stepsTitle": "În trei pași",
+      "steps": [
+        { "title": "Descărcați pachetul și dezarhivați-l într-un dosar permanent", "text": "Descărcați fișierul ZIP și dezarhivați-l într-un dosar care rămâne pe loc, de ex. un dosar &bdquo;klacks&rdquo; în dosarul personal &mdash; nu în dosarul &bdquo;Descărcări&rdquo;. Actualizările automate lucrează cu acest dosar; dacă este șters, actualizările nu mai funcționează." },
+        { "title": "Deschideți un terminal și introduceți comanda", "text": "În dosarul cu fișierele de instalare dezarhivate, faceți clic dreapta și alegeți &bdquo;Deschide în terminal&rdquo;, introduceți comanda de mai jos și confirmați cu parola (aceasta nu este afișată în timp ce tastați). Dacă Docker lipsește, instalatorul se oferă să îl instaleze: răspundeți cu &bdquo;y&rdquo; &mdash; durează câteva minute. Aveți nevoie de terminal doar această dată, pentru instalare; dacă rulați din nou instalatorul mai târziu (de ex. pentru o reparare), folosiți aceeași comandă, inclusiv sudo." },
+        { "title": "Deschideți în browser și autentificați-vă", "text": "Deschideți https://localhost în browser. Browserul afișează un avertisment privind certificatul &mdash; confirmați avertismentul (&bdquo;Avansat&rdquo; și apoi &bdquo;Continuă&rdquo; sau &bdquo;Acceptă riscul&rdquo;). Autentificați-vă cu contul inițial din fișierul README din dosar și schimbați imediat parola." }
+      ],
+      "downloadLabel": "Descărcați pentru Linux"
+    },
+    "certificateNote": "Despre avertismentul privind certificatul: la instalare, Klacks creează un certificat propriu, pe care browserul dumneavoastră nu îl cunoaște &mdash; de aici avertismentul. Conexiunea este totuși criptată."
   },
   "profile": {
     "icon": "description",

@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Download for Mac",
     "architectureNote": "For 64-bit Windows (x64). On Windows 11 devices with an ARM processor (e.g. Snapdragon X) Klacks runs through emulation; Windows 10 on ARM is not supported.",
-    "linuxNote": "Linux? Please use the guided installer with Docker.",
+    "linuxNote": "Linux? See below: <a href=\"{0}\">Klacks on a Linux PC</a>.",
     "heroSubtitle": "Three paths, one result: the Windows package for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup &mdash; no registration, no licence fees. On the office PC you choose your country during installation; for the server and Docker Compose, the country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "On a Linux PC",
+      "text": "The simple way for a Linux PC, no prior knowledge needed: download the package, enter one command in the terminal once &mdash; the installer does the rest. Klacks then runs with Docker on this PC, updates arrive automatically, and your data stays on this PC.",
+      "requirementsTitle": "Requirements",
+      "requirements": [
+        "64-bit Linux with a desktop: Ubuntu, Debian or Fedora. Other distributions (e.g. Linux Mint) are not officially supported &mdash; there, please install Docker yourself first.",
+        "16 GB of memory recommended, because the browser and desktop run alongside. Below about 8 GB the installer stops.",
+        "Internet connection on first start and for updates",
+        "The administrator password (sudo password) of this PC"
+      ],
+      "stepsTitle": "In three steps",
+      "steps": [
+        { "title": "Download the package and extract it into a permanent folder", "text": "Download the ZIP file and extract it into a folder that stays where it is, e.g. a folder &ldquo;klacks&rdquo; in your home folder &mdash; not in the &ldquo;Downloads&rdquo; folder. The automatic updates work with this folder; if it is deleted, updates stop working." },
+        { "title": "Open a terminal and enter the command", "text": "In the folder with the extracted installation files, right-click and choose &ldquo;Open in Terminal&rdquo;, enter the command below and confirm with your password (it is not shown while you type). If Docker is missing, the installer offers to install it: answer &ldquo;y&rdquo; &mdash; this takes a few minutes. You only need the terminal this once for the installation; if you run the installer again later (e.g. for a repair), use this same command including sudo." },
+        { "title": "Open in the browser and sign in", "text": "Open https://localhost in your browser. The browser warns about the certificate &mdash; confirm the warning (&ldquo;Advanced&rdquo; and then &ldquo;Proceed&rdquo; or &ldquo;Accept the risk&rdquo;). Sign in with the initial account from the README in the folder and change the password immediately." }
+      ],
+      "downloadLabel": "Download for Linux"
+    },
+    "certificateNote": "About the certificate warning: during installation Klacks creates its own certificate, which your browser does not know &mdash; hence the warning. The connection is still encrypted."
   },
   "profile": {
     "icon": "description",

@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Transferir para Mac",
     "architectureNote": "Para Windows de 64 bits (x64). Em dispositivos Windows 11 com processador ARM (p. ex., Snapdragon X), o Klacks funciona por emulação; o Windows 10 em ARM não é suportado.",
-    "linuxNote": "Linux? Utilize o instalador guiado com Docker.",
+    "linuxNote": "Linux? Veja abaixo: <a href=\"{0}\">Klacks num PC Linux</a>.",
     "heroSubtitle": "Três caminhos, um resultado: o pacote Windows para o PC do escritório, o instalador guiado para o seu servidor ou o stack Docker Compose para a sua própria configuração &mdash; sem registo, sem custos de licença. No PC do escritório, escolhe o país durante a instalação; para o servidor e o Docker Compose, o pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Num PC Linux",
+      "text": "O caminho simples para um PC Linux, sem conhecimentos prévios: transfira o pacote, introduza uma única vez um comando no terminal &mdash; o instalador faz o resto. Depois, o Klacks funciona com Docker neste PC, as atualizações chegam automaticamente e os seus dados ficam neste PC.",
+      "requirementsTitle": "Requisitos",
+      "requirements": [
+        "Linux de 64 bits com ambiente de trabalho: Ubuntu, Debian ou Fedora. Outras distribuições (p. ex., Linux Mint) não são oficialmente suportadas &mdash; nelas, instale primeiro o Docker por si mesmo.",
+        "Recomendam-se 16 GB de memória, porque o browser e o ambiente de trabalho funcionam em paralelo. Abaixo de cerca de 8 GB, o instalador interrompe a instalação.",
+        "Ligação à Internet no primeiro arranque e para atualizações",
+        "A palavra-passe de administrador (palavra-passe sudo) deste PC"
+      ],
+      "stepsTitle": "Em três passos",
+      "steps": [
+        { "title": "Transferir o pacote e extraí-lo para uma pasta permanente", "text": "Transfira o ficheiro ZIP e extraia-o para uma pasta que fique sempre no mesmo sítio, p. ex., uma pasta &laquo;klacks&raquo; na sua pasta pessoal &mdash; não na pasta &laquo;Transferências&raquo;. As atualizações automáticas trabalham com esta pasta; se for apagada, as atualizações deixam de funcionar." },
+        { "title": "Abrir um terminal e introduzir o comando", "text": "Na pasta com os ficheiros de instalação extraídos, clique com o botão direito do rato e escolha &laquo;Abrir no terminal&raquo;, introduza o comando abaixo e confirme com a sua palavra-passe (não é mostrada enquanto escreve). Se faltar o Docker, o instalador propõe instalá-lo: responda &laquo;y&raquo; &mdash; isto demora alguns minutos. Só precisa do terminal desta única vez para a instalação; se voltar a executar o instalador mais tarde (p. ex., para uma reparação), use este mesmo comando, incluindo sudo." },
+        { "title": "Abrir no browser e iniciar sessão", "text": "Abra https://localhost no browser. O browser mostra um aviso sobre o certificado &mdash; confirme o aviso (&laquo;Avançadas&raquo; e depois &laquo;Continuar&raquo; ou &laquo;Aceitar o risco&raquo;). Inicie sessão com a conta inicial indicada no README da pasta e altere a palavra-passe de imediato." }
+      ],
+      "downloadLabel": "Transferir para Linux"
+    },
+    "certificateNote": "Sobre o aviso de certificado: durante a instalação, o Klacks cria o seu próprio certificado, que o seu browser não conhece &mdash; daí o aviso. Ainda assim, a ligação é encriptada."
   },
   "profile": {
     "icon": "description",

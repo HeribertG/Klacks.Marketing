@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Unduh untuk Mac",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada perangkat Windows 11 dengan prosesor ARM (misalnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak didukung.",
-    "linuxNote": "Linux? Silakan gunakan installer terpandu dengan Docker.",
+    "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks di PC Linux</a>.",
     "heroSubtitle": "Tiga jalur, satu hasil: paket Windows untuk PC kantor Anda, installer terpandu untuk server Anda, atau stack Docker Compose untuk pengaturan Anda sendiri &mdash; tanpa registrasi, tanpa biaya lisensi. Di PC kantor, Anda memilih negara saat instalasi; untuk server dan Docker Compose, paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (Tambahan Waktu, sejauh didefinisikan untuk negara tersebut)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Di PC Linux",
+      "text": "Cara mudah untuk PC Linux, tanpa perlu pengetahuan sebelumnya: unduh paketnya, masukkan satu perintah di terminal sekali saja &mdash; selebihnya dikerjakan oleh installer. Setelah itu Klacks berjalan dengan Docker di PC ini, pembaruan datang secara otomatis, dan data Anda tetap berada di PC ini.",
+      "requirementsTitle": "Persyaratan",
+      "requirements": [
+        "Linux 64-bit dengan desktop: Ubuntu, Debian, atau Fedora. Distribusi lain (misalnya Linux Mint) tidak didukung secara resmi &mdash; di distribusi tersebut, harap instal Docker sendiri terlebih dahulu.",
+        "Disarankan memori (RAM) 16 GB, karena browser dan desktop berjalan bersamaan. Di bawah sekitar 8 GB, installer akan berhenti.",
+        "Koneksi internet saat pertama kali dijalankan dan untuk pembaruan",
+        "Kata sandi administrator (kata sandi sudo) PC ini"
+      ],
+      "stepsTitle": "Tiga langkah",
+      "steps": [
+        { "title": "Unduh paket dan ekstrak ke folder tetap", "text": "Unduh file ZIP dan ekstrak ke folder yang akan tetap berada di tempatnya, misalnya folder &ldquo;klacks&rdquo; di folder pribadi (home) Anda &mdash; bukan di folder &ldquo;Downloads&rdquo;. Pembaruan otomatis bekerja dengan folder ini; jika folder ini dihapus, pembaruan tidak akan berfungsi lagi." },
+        { "title": "Buka terminal dan masukkan perintah", "text": "Di folder berisi file instalasi yang telah diekstrak, klik kanan lalu pilih &ldquo;Buka di Terminal&rdquo;, masukkan perintah di bawah ini, dan konfirmasi dengan kata sandi Anda (kata sandi tidak ditampilkan saat diketik). Jika Docker belum ada, installer akan menawarkan untuk menginstalnya: jawab &ldquo;y&rdquo; &mdash; proses ini memerlukan beberapa menit. Anda hanya memerlukan terminal satu kali ini untuk instalasi; jika nanti Anda menjalankan installer lagi (misalnya untuk perbaikan), gunakan perintah yang sama, termasuk sudo." },
+        { "title": "Buka di browser dan masuk", "text": "Buka https://localhost di browser Anda. Browser akan menampilkan peringatan tentang sertifikat &mdash; konfirmasi peringatan tersebut (&ldquo;Lanjutan&rdquo; lalu &ldquo;Lanjutkan&rdquo; atau &ldquo;Terima risiko&rdquo;). Masuk dengan akun awal dari README di folder tersebut, lalu segera ganti kata sandinya." }
+      ],
+      "downloadLabel": "Unduh untuk Linux"
+    },
+    "certificateNote": "Tentang peringatan sertifikat: saat instalasi, Klacks membuat sertifikatnya sendiri yang tidak dikenal oleh browser Anda &mdash; itulah sebabnya muncul peringatan. Koneksi tetap terenkripsi."
   },
   "profile": {
     "icon": "description",

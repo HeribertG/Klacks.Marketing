@@ -72,7 +72,7 @@ else
                         }
                     </div>
                     <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.ArchitectureNote)</p>
-                    <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.LinuxNote)</p>
+                    <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)string.Format(native.LinuxNote, LinuxSectionHref))</p>
                 </Actions>
             </InstallPathCard>
         }
@@ -84,6 +84,63 @@ else
                          DownloadUrl="@ComposeDownloadUrl"
                          DownloadLabel="@Content.Compose.DownloadLabel"
                          Note="@ComposeNote" />
+    </div>
+</section>
+
+<!-- LINUX PC (always shown, independent of the office-PC switch) -->
+<section id="@PageSectionIds.Linux" class="reveal pb-14 md:pb-24 px-5 sm:px-8 max-w-7xl mx-auto no-line-rule scroll-mt-24">
+    <div class="p-8 bg-surface-container-lowest rounded-2xl grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col">
+            <div class="icon-pop w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest mb-6">
+                <span class="material-symbols-outlined text-primary">@Content.Linux.Path.Icon</span>
+            </div>
+            <h2 class="text-2xl font-bold text-primary mb-3">@((MarkupString)Content.Linux.Path.Title)</h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-8">@((MarkupString)Content.Linux.Path.Text)</p>
+
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-3">@Content.Linux.Path.RequirementsTitle</span>
+            <ul class="space-y-2 list-none p-0 mb-8">
+                @foreach (var requirement in Content.Linux.Path.Requirements)
+                {
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+                        <span class="text-sm text-on-surface-variant leading-relaxed">@((MarkupString)requirement)</span>
+                    </li>
+                }
+            </ul>
+
+            <div class="mt-auto">
+                @if (!string.IsNullOrEmpty(OnPremDownloadUrl))
+                {
+                    <a href="@OnPremDownloadUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                        <span class="material-symbols-outlined">download</span> @Content.Linux.Path.DownloadLabel
+                    </a>
+                }
+                <p class="text-xs text-on-surface-variant mt-4 mb-0 font-mono">@OnPremNote</p>
+            </div>
+        </div>
+        <div>
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant mb-3 block">@Content.Linux.Path.StepsTitle</span>
+            <ol class="space-y-5 list-none p-0 mb-8">
+                @foreach (var (step, index) in Content.Linux.Path.Steps.Select((step, index) => (step, index)))
+                {
+                    <li class="flex gap-4">
+                        <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 text-secondary font-bold text-sm">@(index + 1)</div>
+                        <div class="min-w-0">
+                            <span class="font-bold block text-primary text-sm">@((MarkupString)step.Title)</span>
+                            <span class="text-on-surface-variant text-sm">@((MarkupString)step.Text)</span>
+                            @if (index == LinuxCommandStepIndex)
+                            {
+                                <code dir="ltr" class="block mt-3 px-4 py-3 rounded-xl bg-night text-white font-mono text-sm select-all break-all">@LinuxInstallCommand</code>
+                            }
+                        </div>
+                    </li>
+                }
+            </ol>
+            <div class="p-5 bg-surface-container-low rounded-xl flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-xl">lock</span>
+                <p class="text-on-surface-variant text-sm leading-relaxed m-0">@((MarkupString)Content.Linux.CertificateNote)</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -145,6 +202,13 @@ else
     private const string MarketplaceBaseUrlConfigKey = "Marketplace:BaseUrl";
     private const string OnPremFileNameFormat = "klacks-onprem-{0}-{1}.zip";
     private const string ComposeFileNameFormat = "klacks-compose-{0}-{1}.zip";
+    private const string LinuxPackageCommandFormat = "sudo bash install-{0}.sh";
+    private const string LinuxFallbackCommand = "sudo bash install.sh";
+    private const string FragmentSeparator = "#";
+    private const string PathSeparator = "/";
+
+    // Zero-based index of the Linux step ("open a terminal and enter the command") under which the command is shown.
+    public const int LinuxCommandStepIndex = 1;
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
@@ -220,6 +284,21 @@ else
         => PackageAvailable
             ? string.Format(OnPremFileNameFormat, CountryCode, _selectedIndustry)
             : ExternalLinks.OnPremBundleFileName;
+
+    // The country package carries a wrapper that presets the region; the standard package only has install.sh.
+    private string LinuxInstallCommand
+        => PackageAvailable ? string.Format(LinuxPackageCommandFormat, CountryCode) : LinuxFallbackCommand;
+
+    // Absolute page path plus fragment: a bare "#linux" would resolve against <base href="/"> and leave the page.
+    private string LinuxSectionHref
+    {
+        get
+        {
+            var culture = SupportedCultures.All.First(record => record.Code == Culture);
+            var culturePrefix = culture.UrlSlug.Length == 0 ? string.Empty : PathSeparator + culture.UrlSlug;
+            return culturePrefix + PathSeparator + EffectiveRoutePath + FragmentSeparator + PageSectionIds.Linux;
+        }
+    }
 
     private string? ComposeDownloadUrl => DownloadUrl(RegionPackages.ComposeZipArtifact);
 

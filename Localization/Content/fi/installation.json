@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "Lataa Macille",
     "architectureNote": "64-bittiselle Windowsille (x64). Windows 11 -laitteissa, joissa on ARM-suoritin (esim. Snapdragon X), Klacks toimii emuloinnin avulla; Windows 10:tä ei tueta ARM-laitteissa.",
-    "linuxNote": "Linux? Käyttäkää ohjattua asennusohjelmaa Dockerin kanssa.",
+    "linuxNote": "Linux? Katsokaa alta: <a href=\"{0}\">Klacks Linux-PC:llä</a>.",
     "heroSubtitle": "Kolme polkua, yksi lopputulos: Windows-paketti toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne &mdash; ei rekisteröitymistä, ei lisenssimaksuja. Toimiston PC:llä valitsette maan asennuksen aikana; palvelimelle ja Docker Composelle maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty)."
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "Linux-PC:llä",
+      "text": "Helppo tapa Linux-PC:lle, myös ilman ennakkotietoja: ladatkaa paketti ja kirjoittakaa päätteeseen kerran yksi komento &mdash; asennusohjelma hoitaa loput. Klacks toimii sen jälkeen Dockerin avulla tällä PC:llä, päivitykset tulevat automaattisesti, ja tietonne pysyvät tällä PC:llä.",
+      "requirementsTitle": "Vaatimukset",
+      "requirements": [
+        "64-bittinen Linux työpöytäympäristöllä: Ubuntu, Debian tai Fedora. Muita jakeluja (esim. Linux Mint) ei tueta virallisesti &mdash; niissä asentakaa ensin Docker itse.",
+        "16 Gt muistia suositellaan, koska selain ja työpöytä toimivat samanaikaisesti. Alle noin 8 Gt:n muistilla asennusohjelma keskeyttää asennuksen.",
+        "Internetyhteys ensimmäisellä käynnistyskerralla ja päivityksiä varten",
+        "Tämän PC:n järjestelmänvalvojan salasana (sudo-salasana)"
+      ],
+      "stepsTitle": "Kolme vaihetta",
+      "steps": [
+        { "title": "Paketin lataus ja purku pysyvään kansioon", "text": "Ladatkaa ZIP-tiedosto ja purkakaa se kansioon, joka pysyy paikallaan, esimerkiksi kansioon &rdquo;klacks&rdquo; kotikansiossanne &mdash; ei kansioon &rdquo;Lataukset&rdquo;. Automaattiset päivitykset käyttävät tätä kansiota; jos se poistetaan, päivitykset lakkaavat toimimasta." },
+        { "title": "Päätteen avaaminen ja komennon kirjoittaminen", "text": "Napsauttakaa hiiren oikealla painikkeella kansiossa, jossa puretut asennustiedostot ovat, valitkaa &rdquo;Avaa päätteessä&rdquo;, kirjoittakaa alla oleva komento ja vahvistakaa se salasanallanne (sitä ei näytetä kirjoitettaessa). Jos Docker puuttuu, asennusohjelma tarjoutuu asentamaan sen: vastatkaa &rdquo;y&rdquo; &mdash; tämä kestää muutaman minuutin. Päätettä tarvitaan asennukseen vain tämän yhden kerran; jos suoritatte asennusohjelman myöhemmin uudelleen (esim. korjausta varten), käyttäkää samaa komentoa sudo mukaan lukien." },
+        { "title": "Avaaminen selaimessa ja kirjautuminen", "text": "Avatkaa selaimessanne osoite https://localhost. Selain varoittaa varmenteesta &mdash; hyväksykää varoitus (&rdquo;Lisäasetukset&rdquo; ja sitten &rdquo;Jatka&rdquo; tai &rdquo;Hyväksy riski&rdquo;). Kirjautukaa sisään kansiossa olevassa README-tiedostossa mainitulla alkutilillä ja vaihtakaa salasana heti." }
+      ],
+      "downloadLabel": "Lataa Linuxille"
+    },
+    "certificateNote": "Varmennevaroituksesta: Klacks luo asennuksen yhteydessä oman varmenteen, jota selaimenne ei tunne &mdash; siksi varoitus. Yhteys on silti salattu."
   },
   "profile": {
     "icon": "description",

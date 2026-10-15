@@ -72,8 +72,30 @@
     },
     "macDownloadLabel": "下載 Mac 版",
     "architectureNote": "適用於 64 位元 Windows（x64）。在搭載 ARM 處理器的 Windows 11 裝置（例如 Snapdragon X）上，Klacks 透過模擬執行；不支援 ARM 版 Windows 10。",
-    "linuxNote": "使用 Linux？請使用搭配 Docker 的引導式安裝程式。",
+    "linuxNote": "使用 Linux？請見下方：<a href=\"{0}\">在 Linux 電腦上使用 Klacks</a>。",
     "heroSubtitle": "三條路徑，同一結果：適用於辦公室電腦的 Windows 套件、適用於您伺服器的引導式安裝程式，或適用於自有環境的 Docker Compose 堆疊 &mdash; 無需註冊，沒有授權費用。使用辦公室電腦時，您在安裝過程中選擇國家；伺服器與 Docker Compose 的國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準）。"
+  },
+  "linux": {
+    "path": {
+      "icon": "terminal",
+      "title": "在 Linux 電腦上",
+      "text": "適用於 Linux 電腦的簡單方式，不需要任何先備知識：下載套件，在終端機中輸入一次指令 &mdash; 其餘工作由安裝程式完成。之後 Klacks 會透過 Docker 在這台電腦上執行，更新會自動安裝，您的資料會保留在這台電腦上。",
+      "requirementsTitle": "系統需求",
+      "requirements": [
+        "具備桌面環境的 64 位元 Linux：Ubuntu、Debian 或 Fedora。其他發行版（例如 Linux Mint）未獲官方支援 &mdash; 在這些系統上，請先自行安裝 Docker。",
+        "建議使用 16 GB 記憶體，因為瀏覽器和桌面也會同時執行。記憶體低於約 8 GB 時，安裝程式會中止。",
+        "首次啟動時及更新時需要網際網路連線",
+        "這台電腦的系統管理員密碼（sudo 密碼）"
+      ],
+      "stepsTitle": "只需三個步驟",
+      "steps": [
+        { "title": "下載套件並解壓縮到固定的資料夾", "text": "下載 ZIP 檔案，並解壓縮到一個會長期保留的資料夾，例如個人資料夾中的「klacks」資料夾 &mdash; 不要放在「下載」資料夾中。自動更新會使用這個資料夾；如果將它刪除，更新將無法再運作。" },
+        { "title": "開啟終端機並輸入指令", "text": "在存放已解壓縮安裝檔案的資料夾中按滑鼠右鍵，選擇「在終端機中開啟」，輸入下方的指令，並以您的密碼確認（輸入時密碼不會顯示）。如果缺少 Docker，安裝程式會提議為您安裝：請回答「y」 &mdash; 這需要幾分鐘。安裝時只需要使用這一次終端機；如果日後再次執行安裝程式（例如用於修復），也請使用這個包含 sudo 的相同指令。" },
+        { "title": "在瀏覽器中開啟並登入", "text": "在瀏覽器中開啟 https://localhost。瀏覽器會對憑證發出警告 &mdash; 請確認該警告（點選「進階」，然後點選「繼續前往」或「接受風險並繼續」）。以資料夾中 README 所列的初始帳戶登入，並立即變更密碼。" }
+      ],
+      "downloadLabel": "下載 Linux 版"
+    },
+    "certificateNote": "關於憑證警告：Klacks 在安裝時會建立自己的憑證，您的瀏覽器並不認得它 &mdash; 因此會出現警告。連線仍然是加密的。"
   },
   "profile": {
     "icon": "description",
