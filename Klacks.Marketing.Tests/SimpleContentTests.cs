@@ -23,8 +23,13 @@ public class SimpleContentTests
     private const string PlaceholderPattern = @"\{[a-zA-Z]+\}";
     private const string FormalAddressPattern = @"\b(Sie|Ihnen|Ihr|Ihre|Ihren|Ihrem|Ihrer|Ihres)\b";
     private const string GenderStarPattern = @"\w[*:_]innen\b";
+    private const string GenderCapitalIPattern = @"[a-zäöü]Innen\b";
+    private const string GenderSlashPattern = @"/innen\b";
+    private const string DemoModalKeyPrefix = "demoModal.";
+    private const string SharedFileName = "shared.json";
     private const string WordPattern = @"\p{L}[\p{L}\p{N}'’-]*";
     private const int MaxSectionWords = 350;
+    private const int MaxMetaDescriptionLength = 155;
 
     private static readonly string[] Jargon = { "Container", "Cutting", "Autofill", "LLM", "MCP", "Tool-Calling" };
 
@@ -32,9 +37,10 @@ public class SimpleContentTests
     {
         "gratis", "kostenlos", "Klacksy plant", "Klacksy rechnet", "Klacksy berechnet", "Klacksy optimiert",
         "bewährt", "im Einsatz bei", "unsere Partner", "Pilotbetrieb", "verlassen das Haus", "automatisch anrufen", "bucht ein",
+        "ein Satz genügt", "genügt ein Satz", "Klacksy prüft",
     };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel" };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal." };
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {
@@ -44,7 +50,7 @@ public class SimpleContentTests
         ("human.title", "Klacksy ersetzt niemanden in der Planung – Klacksy nimmt Klickarbeit ab."),
         ("human.text", "Du sagst in einem Satz, was du brauchst. Klacksy zeigt dir eine Vorschau und erledigt es erst nach deinem Ja. Den Plan rechnet Klacks nach deinen Regeln. Was nur du weisst – wer nachts erreichbar ist, wem ein Einsatz gerade zu viel ist –, steht in keinem System. Darum entscheidest du."),
         ("talk.text", "Ein Klick auf Klacksy oben rechts – und los."),
-        ("talk.bubble.0", "Plane die Woche ab 3. November."),
+        ("talk.bubble.0", "Plane die Woche ab 2. November."),
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
         ("talk.bubble.2", "Warum ist der Dienst von Beat rot?"),
         ("ai.text", "Klacks stellt Klacksy die Fähigkeiten bereit. Das KI-Modell dahinter bestimmst du: von einem Anbieter deiner Wahl oder auf deinem eigenen Server. Heute das beste, morgen das nächste – du bist an niemanden gebunden."),
@@ -94,12 +100,34 @@ public class SimpleContentTests
     }
 
     [Test]
+    public void Meta_description_fits_the_search_snippet()
+    {
+        Load()["metaDescription"].Length.ShouldBeLessThanOrEqualTo(MaxMetaDescriptionLength);
+    }
+
+    [Test]
+    public void Every_shared_demo_modal_key_has_a_simple_counterpart()
+    {
+        var simple = Load();
+        var shared = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(Path.Combine(MarketingProjectPaths.ContentRoot, GermanCulture, SharedFileName)))!;
+        var modalKeys = shared.Keys.Where(key => key.StartsWith(DemoModalKeyPrefix, StringComparison.Ordinal)).ToList();
+
+        modalKeys.ShouldNotBeEmpty();
+        foreach (var key in modalKeys)
+        {
+            simple.ContainsKey(key).ShouldBeTrue(key);
+        }
+    }
+
+    [Test]
     public void Texts_use_the_du_form_no_jargon_no_forbidden_claims_and_no_gender_star()
     {
         foreach (var (key, value) in Load())
         {
             Regex.IsMatch(value, FormalAddressPattern).ShouldBeFalse($"{key}: formal address in '{value}'");
             Regex.IsMatch(value, GenderStarPattern).ShouldBeFalse($"{key}: gender star in '{value}'");
+            Regex.IsMatch(value, GenderCapitalIPattern).ShouldBeFalse($"{key}: capital-I gender form in '{value}'");
+            Regex.IsMatch(value, GenderSlashPattern, RegexOptions.IgnoreCase).ShouldBeFalse($"{key}: slash gender form in '{value}'");
             foreach (var word in Jargon)
             {
                 Regex.IsMatch(value, $@"\b{Regex.Escape(word)}\b", RegexOptions.IgnoreCase).ShouldBeFalse($"{key}: jargon '{word}'");
