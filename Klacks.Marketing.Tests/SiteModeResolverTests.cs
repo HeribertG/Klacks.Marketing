@@ -19,6 +19,9 @@ public class SiteModeResolverTests
     [TestCase("/LAND-AT", true, true, "/land-at/experten")]
     [TestCase("/land-ch/experten", true, false, "/land-ch")]
     [TestCase("/land-ch/spitex", true, false, "/land-ch")]
+    [TestCase("/land-ch/", true, true, "/land-ch/experten")]
+    [TestCase("/land-ch/experten/", true, false, "/land-ch")]
+    [TestCase("/land-ch?ref=share", true, true, "/land-ch/experten")]
     [TestCase("/land-de/angebot?ref=x#preise", true, false, "/land-de")]
     public void Visible_switch_points_at_the_opposite_page(string path, bool enabled, bool isSimple, string target)
     {
@@ -33,6 +36,9 @@ public class SiteModeResolverTests
 
     [TestCase("/fr/land-ch", true, "fr")]
     [TestCase("/en/land-gb/experten", true, "en")]
+    [TestCase("/FR/land-ch", true, "fr")]
+    [TestCase("/en", true, "en")]
+    [TestCase("/experten", true, "de")]
     [TestCase("/land-ch", false, "de")]
     [TestCase("/land-ch/experten", false, "de")]
     [TestCase("/", true, "de")]
