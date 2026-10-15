@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Instalar a Klacks: instalador guiado ou Docker Compose com pacote de país | Klacks",
-  "metaDescription": "Instale a Klacks: instalador guiado ou Docker Compose, pré-configurado com feriados e regras de tempo de trabalho. Código aberto, sem taxas de licença.",
+  "pageTitle": "Instalar a Klacks: PC do escritório, instalador guiado ou Docker Compose | Klacks",
+  "metaDescription": "Instale a Klacks: pacote Windows para o PC do escritório, instalador guiado ou Docker Compose, com feriados e regras de tempo de trabalho. Código aberto.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalação &middot; Sem taxas de licença &amp; código aberto",
@@ -71,6 +71,7 @@
       "downloadLabel": "Transferir para Windows"
     },
     "macDownloadLabel": "Transferir para Mac",
+    "macComingSoonNote": "Para Mac: disponível em breve.",
     "architectureNote": "Para Windows de 64 bits (x64). Em dispositivos Windows 11 com processador ARM (p. ex., Snapdragon X), o Klacks funciona por emulação; o Windows 10 em ARM não é suportado.",
     "linuxNote": "Linux? Veja abaixo: <a href=\"{0}\">Klacks num PC Linux</a>.",
     "heroSubtitle": "Três caminhos, um resultado: o pacote Windows para o PC do escritório, o instalador guiado para o seu servidor ou o stack Docker Compose para a sua própria configuração &mdash; sem registo, sem custos de licença. No PC do escritório, escolhe o país durante a instalação; para o servidor e o Docker Compose, o pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Código aberto (AGPL-3.0)", "text": "O código-fonte completo está público no GitHub sob a AGPL-3.0 &mdash; sem custos de licença, sem dependência de fornecedor." },
       { "icon": "storage", "title": "Os dados estão nos seus servidores", "text": "A Klacks é executada na sua infraestrutura. Os dados de pessoal e de escalas ficam no seu servidor &mdash; não há nuvem obrigatória. Só se escolher um fornecedor de IA externo é que os pedidos lhe são enviados; com um modelo local, nenhum pedido de IA é enviado a um fornecedor externo." },
-      { "icon": "update", "title": "Atualizações", "text": "A instalação fixa a versão publicada mais recente. Um serviço de atualização dentro do stack aplica automaticamente as novas versões publicadas." },
-      { "icon": "lock", "title": "HTTPS desde o início", "text": "O instalador gera um certificado autoassinado para começar &mdash; pode mudar para o seu próprio certificado em qualquer altura. Altere a palavra-passe inicial logo após o primeiro início de sessão." }
+      { "icon": "update", "title": "Atualizações", "text": "Um serviço de atualização aplica automaticamente as novas versões publicadas &mdash; com Docker como serviço dentro do stack, no PC do escritório como serviço do Windows em segundo plano." },
+      { "icon": "lock", "title": "HTTPS com Docker", "text": "O instalador gera um certificado autoassinado para começar &mdash; pode mudar para o seu próprio certificado em qualquer altura. Altere a palavra-passe inicial logo após o primeiro início de sessão. O pacote Windows para o PC do escritório funciona sem certificado em http://localhost:5180." }
     ]
   },
   "cta": {

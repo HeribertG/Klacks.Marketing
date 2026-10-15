@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Instalace Klacks: řízený instalátor nebo Docker Compose s balíčkem pro vaši zemi | Klacks",
-  "metaDescription": "Nainstalujte Klacks na vlastní infrastrukturu: instalátor nebo Docker Compose se svátky a pravidly pracovní doby. Open source, bez licenčních poplatků.",
+  "pageTitle": "Instalace Klacks: kancelářské PC, instalátor nebo Docker Compose | Klacks",
+  "metaDescription": "Nainstalujte Klacks: balíček pro Windows na kancelářské PC, instalátor nebo Docker Compose se svátky a pravidly pracovní doby. Open source, bez poplatků.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalace &middot; Žádné licenční poplatky &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Stáhnout pro Windows"
     },
     "macDownloadLabel": "Stáhnout pro Mac",
+    "macComingSoonNote": "Pro Mac: již brzy.",
     "architectureNote": "Pro 64bitovou verzi Windows (x64). Na zařízeních s Windows 11 a procesorem ARM (např. Snapdragon X) běží Klacks prostřednictvím emulace; systém Windows 10 na ARM není podporován.",
     "linuxNote": "Linux? Viz níže: <a href=\"{0}\">Klacks na linuxovém PC</a>.",
     "heroSubtitle": "Tři cesty, jeden výsledek: balíček pro Windows na kancelářské PC, řízený instalátor pro váš server, nebo Docker Compose stack pro vaše vlastní prostředí &mdash; bez registrace, bez licenčních poplatků. Na kancelářském PC zvolíte zemi během instalace; pro server a Docker Compose přináší balíček pro zemi svátky, pravidla pracovní doby i oborová přednastavení vaší země (příplatky, pokud jsou pro zemi definovány)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Kompletní zdrojový kód je veřejně dostupný na GitHub pod licencí AGPL-3.0 &mdash; žádné licenční poplatky, žádný vendor lock-in." },
       { "icon": "storage", "title": "Data jsou uložena na vašich serverech", "text": "Klacks běží na vaší infrastruktuře. Personální i plánovací data jsou uložena na vašem serveru &mdash; žádný povinný cloud. Požadavky odcházejí k externímu poskytovateli AI jen tehdy, pokud si jej zvolíte; s lokálním modelem neodchází žádný požadavek AI k externímu poskytovateli." },
-      { "icon": "update", "title": "Aktualizace", "text": "Instalace se ukotví na nejnovější vydanou verzi. Aktualizační služba uvnitř stacku nasazuje nově vydané verze automaticky." },
-      { "icon": "lock", "title": "HTTPS od začátku", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení." }
+      { "icon": "update", "title": "Aktualizace", "text": "Aktualizační služba nasazuje nově vydané verze automaticky &mdash; u Dockeru jako služba uvnitř stacku, na kancelářském PC jako služba Windows na pozadí." },
+      { "icon": "lock", "title": "HTTPS s Dockerem", "text": "Instalátor vygeneruje samopodepsaný certifikát pro start &mdash; kdykoli můžete přejít na vlastní certifikát. Výchozí heslo změňte hned po prvním přihlášení. Balíček pro Windows na kancelářském PC běží bez certifikátu na adrese http://localhost:5180." }
     ]
   },
   "cta": {

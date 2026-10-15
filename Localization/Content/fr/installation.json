@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Installer Klacks : installateur guidé ou Docker Compose avec le paquet pays | Klacks",
-  "metaDescription": "Installez Klacks chez vous : installateur guidé ou Docker Compose, avec jours fériés et règles de temps de travail. Open source, sans frais de licence.",
+  "pageTitle": "Installer Klacks : PC de bureau, installateur guidé ou Docker Compose | Klacks",
+  "metaDescription": "Installez Klacks chez vous : paquet Windows pour le PC de bureau, installateur guidé ou Docker Compose, avec jours fériés et règles de temps de travail.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Sans frais de licence &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Télécharger pour Windows"
     },
     "macDownloadLabel": "Télécharger pour Mac",
+    "macComingSoonNote": "Pour Mac : bientôt disponible.",
     "architectureNote": "Pour Windows 64 bits (x64). Sur les appareils Windows 11 équipés d'un processeur ARM (p. ex. Snapdragon X), Klacks fonctionne par émulation ; Windows 10 sur ARM n'est pas pris en charge.",
     "linuxNote": "Linux ? Voir plus bas : <a href=\"{0}\">Klacks sur un PC Linux</a>.",
     "heroSubtitle": "Trois chemins, un même résultat : le paquet Windows pour le PC de votre bureau, l'installateur guidé pour votre serveur, ou le stack Docker Compose pour votre propre configuration &mdash; sans inscription, sans frais de licence. Sur le PC de bureau, vous choisissez votre pays pendant l'installation ; pour le serveur et Docker Compose, le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail et les préréglages sectoriels de votre pays (majorations là où elles sont définies pour le pays)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Le code source complet est public sur GitHub sous licence AGPL-3.0 &mdash; pas de frais de licence, pas de dépendance à un fournisseur." },
       { "icon": "storage", "title": "Les données se trouvent sur vos serveurs", "text": "Klacks tourne sur votre infrastructure. Les données du personnel et des plannings se trouvent sur votre serveur &mdash; aucun cloud imposé. Des requêtes ne partent vers un fournisseur d'IA externe que si vous en choisissez un ; avec un modèle local, aucune requête d'IA n'est envoyée à un fournisseur externe." },
-      { "icon": "update", "title": "Mises à jour", "text": "L'installation épingle la dernière version publiée. Un service de mise à jour intégré au stack applique automatiquement les nouvelles versions publiées." },
-      { "icon": "lock", "title": "HTTPS dès le départ", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion." }
+      { "icon": "update", "title": "Mises à jour", "text": "Un service de mise à jour applique automatiquement les nouvelles versions publiées &mdash; avec Docker comme service dans le stack, sur le PC de bureau comme service Windows en arrière-plan." },
+      { "icon": "lock", "title": "HTTPS avec Docker", "text": "L'installateur génère un certificat auto-signé pour démarrer &mdash; vous pouvez passer à votre propre certificat à tout moment. Changez le mot de passe initial dès la première connexion. Le paquet Windows pour le PC de bureau fonctionne sans certificat à l'adresse http://localhost:5180." }
     ]
   },
   "cta": {

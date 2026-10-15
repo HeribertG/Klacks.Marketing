@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Klacks installieren: Geführter Installer oder Docker Compose mit Länderpaket | Klacks",
-  "metaDescription": "Klacks selbst installieren: geführter Installer oder Docker Compose, vorkonfiguriert mit Feiertagen und Arbeitszeitregeln. Open Source, ohne Lizenzgebühr.",
+  "pageTitle": "Klacks installieren: Büro-PC, geführter Installer oder Docker Compose | Klacks",
+  "metaDescription": "Klacks selbst installieren: Windows-Paket für den Büro-PC, geführter Installer oder Docker Compose, mit Feiertagen und Arbeitszeitregeln. Open Source.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ohne Lizenzgebühren &amp; Open Source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Für Windows laden"
     },
     "macDownloadLabel": "Für Mac laden",
+    "macComingSoonNote": "Für Mac: kommt in Kürze.",
     "architectureNote": "Für Windows 64 Bit (x64). Auf Windows-11-Geräten mit ARM-Prozessor (z. B. Snapdragon X) läuft Klacks per Emulation; Windows 10 auf ARM wird nicht unterstützt.",
     "linuxNote": "Linux? Siehe unten: <a href=\"{0}\">Klacks auf einem Linux-PC</a>.",
     "heroSubtitle": "Drei Wege, ein Ergebnis: das Windows-Paket für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup &mdash; ohne Registrierung, ohne Lizenzkosten. Auf dem Büro-PC wählen Sie das Land bei der Installation; für Server und Docker Compose bringt das Länderpaket Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open Source (AGPL-3.0)", "text": "Der komplette Quellcode ist unter der AGPL-3.0 auf GitHub öffentlich &mdash; keine Lizenzkosten, kein Vendor-Lock-in." },
       { "icon": "storage", "title": "Daten liegen auf Ihren Servern", "text": "Klacks läuft auf Ihrer Infrastruktur. Personal- und Einsatzdaten liegen auf Ihrem Server &mdash; es gibt keinen Cloud-Zwang. Nur wenn Sie einen externen KI-Anbieter wählen, gehen Anfragen an diesen; mit einem lokalen Modell geht keine KI-Anfrage an einen externen Anbieter." },
-      { "icon": "update", "title": "Updates", "text": "Die Installation pinnt die zuletzt veröffentlichte Version. Ein Update-Dienst im Stack spielt neue veröffentlichte Versionen automatisch ein." },
-      { "icon": "lock", "title": "HTTPS ab dem Start", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern." }
+      { "icon": "update", "title": "Updates", "text": "Ein Update-Dienst spielt neue veröffentlichte Versionen automatisch ein &mdash; bei Docker als Dienst im Stack, auf dem Büro-PC als Windows-Hintergrunddienst." },
+      { "icon": "lock", "title": "HTTPS mit Docker", "text": "Der Installer erzeugt ein selbstsigniertes Zertifikat für den Start &mdash; ein eigenes Zertifikat können Sie jederzeit hinterlegen. Das Initialpasswort nach der ersten Anmeldung sofort ändern. Das Windows-Paket für den Büro-PC läuft ohne Zertifikat unter http://localhost:5180." }
     ]
   },
   "cta": {

@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Instalați Klacks: instalator ghidat sau Docker Compose cu pachetul de țară | Klacks",
-  "metaDescription": "Instalați Klacks pe propria infrastructură cu instalatorul ghidat sau Docker Compose, preconfigurat cu sărbători legale. Open source, fără taxe de licență.",
+  "pageTitle": "Instalați Klacks: PC de birou, instalator ghidat sau Docker Compose | Klacks",
+  "metaDescription": "Instalați Klacks: pachet Windows pentru PC-ul de birou, instalator ghidat sau Docker Compose, cu sărbători legale. Open source, fără taxe de licență.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalare &middot; Fără taxe de licență &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Descărcați pentru Windows"
     },
     "macDownloadLabel": "Descărcați pentru Mac",
+    "macComingSoonNote": "Pentru Mac: în curând.",
     "architectureNote": "Pentru Windows pe 64 de biți (x64). Pe dispozitivele cu Windows 11 și procesor ARM (de ex. Snapdragon X), Klacks rulează prin emulare; Windows 10 pe ARM nu este acceptat.",
     "linuxNote": "Linux? Vedeți mai jos: <a href=\"{0}\">Klacks pe un PC cu Linux</a>.",
     "heroSubtitle": "Trei căi, un singur rezultat: pachetul Windows pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu &mdash; fără înregistrare, fără costuri de licență. Pe PC-ul de birou alegeți țara în timpul instalării; pentru server și Docker Compose, pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Codul sursă complet este public pe GitHub sub licența AGPL-3.0 &mdash; fără costuri de licență, fără vendor lock-in." },
       { "icon": "storage", "title": "Datele se află pe serverele dumneavoastră", "text": "Klacks rulează pe infrastructura dumneavoastră. Datele de personal și de planificare se află pe serverul dumneavoastră &mdash; nu există cloud obligatoriu. Numai dacă alegeți un furnizor extern de IA, cererile ajung la acesta; cu un model local, nicio solicitare de IA nu ajunge la un furnizor extern." },
-      { "icon": "update", "title": "Actualizări", "text": "Instalarea fixează cea mai recentă versiune publicată. Un serviciu de actualizare din interiorul stack-ului aplică automat versiunile nou publicate." },
-      { "icon": "lock", "title": "HTTPS de la început", "text": "Instalatorul generează un certificat autosemnat pentru start &mdash; puteți trece oricând la propriul certificat. Schimbați parola inițială imediat după prima autentificare." }
+      { "icon": "update", "title": "Actualizări", "text": "Un serviciu de actualizare aplică automat versiunile nou publicate &mdash; cu Docker ca serviciu în stack, pe PC-ul de birou ca serviciu Windows în fundal." },
+      { "icon": "lock", "title": "HTTPS cu Docker", "text": "Instalatorul generează un certificat autosemnat pentru start &mdash; puteți trece oricând la propriul certificat. Schimbați parola inițială imediat după prima autentificare. Pachetul Windows pentru PC-ul de birou rulează fără certificat la http://localhost:5180." }
     ]
   },
   "cta": {

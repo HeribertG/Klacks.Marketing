@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Instal Klacks: Installer Terpandu atau Docker Compose dengan Paket Negara | Klacks",
-  "metaDescription": "Instal Klacks di infrastruktur sendiri: installer terpandu atau Docker Compose, dengan hari libur dan aturan jam kerja. Open source, tanpa biaya lisensi.",
+  "pageTitle": "Instal Klacks: PC Kantor, Installer Terpandu atau Docker Compose | Klacks",
+  "metaDescription": "Instal Klacks sendiri: paket Windows untuk PC kantor, installer terpandu atau Docker Compose, dengan hari libur dan aturan jam kerja. Open source.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalasi &middot; Tanpa biaya lisensi &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Unduh untuk Windows"
     },
     "macDownloadLabel": "Unduh untuk Mac",
+    "macComingSoonNote": "Untuk Mac: segera hadir.",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada perangkat Windows 11 dengan prosesor ARM (misalnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak didukung.",
     "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks di PC Linux</a>.",
     "heroSubtitle": "Tiga jalur, satu hasil: paket Windows untuk PC kantor Anda, installer terpandu untuk server Anda, atau stack Docker Compose untuk pengaturan Anda sendiri &mdash; tanpa registrasi, tanpa biaya lisensi. Di PC kantor, Anda memilih negara saat instalasi; untuk server dan Docker Compose, paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (Tambahan Waktu, sejauh didefinisikan untuk negara tersebut)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Seluruh kode sumber tersedia untuk publik di GitHub di bawah lisensi AGPL-3.0 &mdash; tanpa biaya lisensi, tanpa vendor lock-in." },
       { "icon": "storage", "title": "Data berada di server Anda", "text": "Klacks berjalan di infrastruktur Anda. Data karyawan dan data penjadwalan berada di server Anda &mdash; tidak ada keharusan menggunakan cloud. Permintaan hanya dikirim ke penyedia AI eksternal jika Anda memilihnya; dengan model lokal, tidak ada permintaan AI yang dikirim ke penyedia eksternal." },
-      { "icon": "update", "title": "Pembaruan", "text": "Instalasi mengunci versi rilis terbaru. Layanan pembaruan di dalam stack menerapkan versi rilis baru secara otomatis." },
-      { "icon": "lock", "title": "HTTPS sejak awal", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama." }
+      { "icon": "update", "title": "Pembaruan", "text": "Layanan pembaruan menerapkan versi rilis baru secara otomatis &mdash; dengan Docker sebagai layanan di dalam stack, di PC kantor sebagai layanan latar belakang Windows." },
+      { "icon": "lock", "title": "HTTPS dengan Docker", "text": "Installer membuat sertifikat self-signed agar Anda dapat langsung memulai &mdash; Anda dapat beralih ke sertifikat sendiri kapan saja. Ganti kata sandi awal segera setelah login pertama. Paket Windows untuk PC kantor berjalan tanpa sertifikat di http://localhost:5180." }
     ]
   },
   "cta": {

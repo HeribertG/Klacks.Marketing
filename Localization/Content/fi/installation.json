@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Asenna Klacks: ohjattu asennusohjelma tai Docker Compose maapaketilla | Klacks",
-  "metaDescription": "Asentakaa Klacks itse: ohjattu asennus tai Docker Compose, esikonfiguroituna pyhäpäivillä ja työaikasäännöillä. Avoin lähdekoodi, ei lisenssimaksuja.",
+  "pageTitle": "Asenna Klacks: toimiston PC, ohjattu asennus tai Docker Compose | Klacks",
+  "metaDescription": "Asentakaa Klacks itse: Windows-paketti toimiston PC:lle, ohjattu asennus tai Docker Compose, valmiina pyhäpäivät ja työaikasäännöt. Avoin lähdekoodi.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Asennus &middot; Ei lisenssimaksuja &amp; avoin lähdekoodi",
@@ -71,6 +71,7 @@
       "downloadLabel": "Lataa Windowsille"
     },
     "macDownloadLabel": "Lataa Macille",
+    "macComingSoonNote": "Macille: tulossa pian.",
     "architectureNote": "64-bittiselle Windowsille (x64). Windows 11 -laitteissa, joissa on ARM-suoritin (esim. Snapdragon X), Klacks toimii emuloinnin avulla; Windows 10:tä ei tueta ARM-laitteissa.",
     "linuxNote": "Linux? Katsokaa alta: <a href=\"{0}\">Klacks Linux-PC:llä</a>.",
     "heroSubtitle": "Kolme polkua, yksi lopputulos: Windows-paketti toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne &mdash; ei rekisteröitymistä, ei lisenssimaksuja. Toimiston PC:llä valitsette maan asennuksen aikana; palvelimelle ja Docker Composelle maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Avoin lähdekoodi (AGPL-3.0)", "text": "Koko lähdekoodi on julkisesti GitHubissa AGPL-3.0-lisenssillä &mdash; ei lisenssimaksuja, ei toimittajalukkoa." },
       { "icon": "storage", "title": "Tiedot sijaitsevat palvelimillanne", "text": "Klacks toimii teidän infrastruktuurissanne. Henkilöstö- ja vuorosuunnittelutiedot sijaitsevat palvelimellanne &mdash; pilvipakkoa ei ole. Vain jos valitsette ulkoisen tekoälypalveluntarjoajan, pyynnöt lähetetään sille; paikallisella mallilla yksikään tekoälypyyntö ei mene ulkoiselle palveluntarjoajalle." },
-      { "icon": "update", "title": "Päivitykset", "text": "Asennus kiinnittää uusimman julkaistun version. Pinon sisäinen päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti." },
-      { "icon": "lock", "title": "HTTPS alusta alkaen", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen." }
+      { "icon": "update", "title": "Päivitykset", "text": "Päivityspalvelu ottaa uudet julkaistut versiot käyttöön automaattisesti &mdash; Dockerissa palveluna pinon sisällä, toimiston PC:llä Windowsin taustapalveluna." },
+      { "icon": "lock", "title": "HTTPS Dockerilla", "text": "Asennusohjelma luo alkuun itseallekirjoitetun varmenteen &mdash; voitte vaihtaa omaan varmenteeseenne milloin tahansa. Vaihtakaa alkusalasana heti ensimmäisen kirjautumisen jälkeen. Toimiston PC:n Windows-paketti toimii ilman varmennetta osoitteessa http://localhost:5180." }
     ]
   },
   "cta": {

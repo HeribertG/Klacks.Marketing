@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Installér Klacks: guidet installer eller Docker Compose med din landepakke | Klacks",
-  "metaDescription": "Installér Klacks selv: guidet installer eller Docker Compose, forudkonfigureret med helligdage og arbejdstidsregler. Open source, uden licensafgifter.",
+  "pageTitle": "Installér Klacks: kontor-pc, guidet installer eller Docker Compose | Klacks",
+  "metaDescription": "Installér Klacks selv: Windows-pakke til kontor-pc'en, guidet installer eller Docker Compose, med helligdage og arbejdstidsregler. Open source.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ingen licensafgifter &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Download til Windows"
     },
     "macDownloadLabel": "Download til Mac",
+    "macComingSoonNote": "Til Mac: kommer snart.",
     "architectureNote": "Til Windows 64-bit (x64). På Windows 11-enheder med ARM-processor (f.eks. Snapdragon X) kører Klacks via emulering; Windows 10 på ARM understøttes ikke.",
     "linuxNote": "Linux? Se nedenfor: <a href=\"{0}\">Klacks på en Linux-pc</a>.",
     "heroSubtitle": "Tre veje, ét resultat: Windows-pakken til din kontor-pc, den guidede installer til din server eller Docker Compose-stacken til dit eget setup &mdash; ingen registrering, ingen licensomkostninger. På kontor-pc'en vælger du landet under installationen; til server og Docker Compose leveres landepakken med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "Den komplette kildekode er offentlig på GitHub under AGPL-3.0 &mdash; ingen licensomkostninger, ingen vendor lock-in." },
       { "icon": "storage", "title": "Data ligger på dine servere", "text": "Klacks kører på din infrastruktur. Personale- og vagtplandata ligger på din server &mdash; der er ingen tvungen cloud. Kun hvis du vælger en ekstern AI-udbyder, sendes forespørgsler til den; med en lokal model sendes ingen AI-forespørgsel til en ekstern udbyder." },
-      { "icon": "update", "title": "Opdateringer", "text": "Installationen fastlåser den seneste udgivne version. En opdateringstjeneste i stacken indlæser automatisk nyudgivne versioner." },
-      { "icon": "lock", "title": "HTTPS fra starten", "text": "Installeren genererer et selvsigneret certifikat, så du kan komme i gang &mdash; du kan til enhver tid skifte til dit eget certifikat. Skift den indledende adgangskode straks efter første login." }
+      { "icon": "update", "title": "Opdateringer", "text": "En opdateringstjeneste indlæser automatisk nyudgivne versioner &mdash; med Docker som tjeneste i stacken, på kontor-pc'en som Windows-baggrundstjeneste." },
+      { "icon": "lock", "title": "HTTPS med Docker", "text": "Installeren genererer et selvsigneret certifikat, så du kan komme i gang &mdash; du kan til enhver tid skifte til dit eget certifikat. Skift den indledende adgangskode straks efter første login. Windows-pakken til kontor-pc'en kører uden certifikat på http://localhost:5180." }
     ]
   },
   "cta": {

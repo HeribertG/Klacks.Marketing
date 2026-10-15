@@ -47,14 +47,15 @@ public sealed class InstallPath
 }
 
 // The "office PC without Docker" path: the card content (its DownloadLabel is the Windows
-// button), the macOS button (only shown when a Mac URL is configured), the supported
-// processor architectures (x64, ARM through emulation), the pointer for Linux users to the
-// guided Docker installer, and the hero subtitle that replaces the two-path wording while
-// the card is shown.
+// button), the macOS button (only shown when a Mac URL is configured) or, without one, the
+// "Mac: coming soon" note, the supported processor architectures (x64, ARM through
+// emulation), the pointer for Linux users to the guided Docker installer, and the hero
+// subtitle that replaces the two-path wording while the card is shown.
 public sealed class InstallNativeSection
 {
     public required InstallPath Path { get; init; }
     public required string MacDownloadLabel { get; init; }
+    public required string MacComingSoonNote { get; init; }
     public required string ArchitectureNote { get; init; }
     public required string LinuxNote { get; init; }
     public required string HeroSubtitle { get; init; }

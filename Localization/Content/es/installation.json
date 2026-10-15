@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Instalar Klacks: instalador guiado o Docker Compose con paquete de país | Klacks",
-  "metaDescription": "Instale Klacks: instalador guiado o Docker Compose, con días festivos y normas de jornada laboral preconfigurados. Código abierto, sin cuotas de licencia.",
+  "pageTitle": "Instalar Klacks: PC de oficina, instalador guiado o Docker Compose | Klacks",
+  "metaDescription": "Instale Klacks: paquete de Windows para el PC de oficina, instalador guiado o Docker Compose, con festivos y normas de jornada laboral. Código abierto.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Instalación &middot; Sin cuotas de licencia &amp; código abierto",
@@ -71,6 +71,7 @@
       "downloadLabel": "Descargar para Windows"
     },
     "macDownloadLabel": "Descargar para Mac",
+    "macComingSoonNote": "Para Mac: próximamente.",
     "architectureNote": "Para Windows de 64 bits (x64). En equipos con Windows 11 y procesador ARM (p. ej., Snapdragon X), Klacks funciona mediante emulación; Windows 10 en ARM no es compatible.",
     "linuxNote": "¿Linux? Vea más abajo: <a href=\"{0}\">Klacks en un PC con Linux</a>.",
     "heroSubtitle": "Tres caminos, un mismo resultado: el paquete de Windows para el PC de su oficina, el instalador guiado para su servidor o el stack de Docker Compose para su propio entorno &mdash; sin registro, sin costes de licencia. En el PC de oficina, usted elige su país durante la instalación; para el servidor y Docker Compose, el paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Código abierto (AGPL-3.0)", "text": "El código fuente completo es público en GitHub bajo la AGPL-3.0 &mdash; sin costes de licencia, sin dependencia de un proveedor." },
       { "icon": "storage", "title": "Los datos están en sus servidores", "text": "Klacks se ejecuta en su infraestructura. Los datos de personal y de planificación están en su servidor &mdash; no hay nube obligatoria. Solo si elige un proveedor de IA externo se envían solicitudes a él; con un modelo local, ninguna solicitud de IA se envía a un proveedor externo." },
-      { "icon": "update", "title": "Actualizaciones", "text": "La instalación fija la última versión publicada. Un servicio de actualización dentro del stack aplica automáticamente las nuevas versiones publicadas." },
-      { "icon": "lock", "title": "HTTPS desde el principio", "text": "El instalador genera un certificado autofirmado para empezar &mdash; puede cambiar a su propio certificado en cualquier momento. Cambie la contraseña inicial justo después del primer inicio de sesión." }
+      { "icon": "update", "title": "Actualizaciones", "text": "Un servicio de actualización aplica automáticamente las nuevas versiones publicadas &mdash; con Docker como servicio dentro del stack, en el PC de oficina como servicio de Windows en segundo plano." },
+      { "icon": "lock", "title": "HTTPS con Docker", "text": "El instalador genera un certificado autofirmado para empezar &mdash; puede cambiar a su propio certificado en cualquier momento. Cambie la contraseña inicial justo después del primer inicio de sesión. El paquete de Windows para el PC de oficina funciona sin certificado en http://localhost:5180." }
     ]
   },
   "cta": {

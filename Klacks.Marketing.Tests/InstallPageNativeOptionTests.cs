@@ -2,17 +2,20 @@
 
 namespace Klacks.Marketing.Tests;
 
+using System.Net;
 using Klacks.Marketing.Localization;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The "office PC without Docker" install option: every culture carries a complete card including the x64/ARM note and
-/// the Windows 10 note (Windows 11 is the stated requirement, Windows 10 22H2 runs but only gets updates through ESU),
-/// the page is unchanged while NativeInstall:Enabled is off (two cards, two-path hero), and with the switch on every
-/// culture renders three cards with the counted Windows package link from the rolling "office-pc" release; the Mac
-/// button only appears when NativeInstall:MacUrl is configured.
+/// The "office PC without Docker" install option: every culture carries a complete card including the x64/ARM note,
+/// the Windows 10 note (Windows 11 is the stated requirement, Windows 10 22H2 runs but only gets updates through ESU)
+/// and the "Mac: coming soon" note, and names the office PC in its page title and meta description. The shipped
+/// appsettings.json switches the card on; the page is unchanged while NativeInstall:Enabled is off (two cards,
+/// two-path hero), and with the switch on every culture renders three cards with the counted Windows package link
+/// from the rolling "office-pc" release. The Mac button only appears when NativeInstall:MacUrl is configured;
+/// otherwise the "coming soon" note stands in its place.
 /// </summary>
 [TestFixture]
 public class InstallPageNativeOptionTests
@@ -29,6 +32,38 @@ public class InstallPageNativeOptionTests
     private const string SupportedWindows = "Windows 11";
     private const string OutOfSupportWindows = "Windows 10";
     private static readonly string[] Windows10NoteFacts = ["Windows 10 22H2", "ESU"];
+    private const string AppSettingsFileName = "appsettings.json";
+
+    // The culture's own word for the office PC, taken from its card title, that the page title and meta description
+    // must contain so search results mention the Windows package and not only the guided installer and Docker Compose.
+    private static readonly IReadOnlyDictionary<string, string> OfficePcTerms = new Dictionary<string, string>
+    {
+        ["ar"] = "حاسوب المكتب",
+        ["cs"] = "kancelářské PC",
+        ["da"] = "kontor-pc",
+        ["de"] = "Büro-PC",
+        ["el"] = "γραφείου",
+        ["en"] = "office PC",
+        ["es"] = "PC de oficina",
+        ["fi"] = "toimiston PC",
+        ["fr"] = "PC de bureau",
+        ["he"] = "מחשב המשרד",
+        ["id"] = "PC kantor",
+        ["it"] = "PC dell'ufficio",
+        ["ja"] = "オフィスのPC",
+        ["ko"] = "사무실 PC",
+        ["ms"] = "PC pejabat",
+        ["nb"] = "kontor-PC",
+        ["nl"] = "kantoor-pc",
+        ["pl"] = "komputer biurowy",
+        ["pt"] = "PC do escritório",
+        ["ro"] = "de birou",
+        ["sv"] = "kontorsdator",
+        ["th"] = "พีซีในสำนักงาน",
+        ["vi"] = "máy tính văn phòng",
+        ["zh-CN"] = "办公电脑",
+        ["zh-TW"] = "辦公室電腦",
+    };
 
     private static IEnumerable<string> Cultures() => SupportedCultures.All.Select(culture => culture.Code);
 
@@ -43,8 +78,40 @@ public class InstallPageNativeOptionTests
         native.ShouldNotBeNull();
         native.Path.Requirements.Count.ShouldBe(ExpectedRequirementCount);
         native.Path.Steps.Count.ShouldBe(ExpectedStepCount);
-        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.ArchitectureNote, native.LinuxNote, native.HeroSubtitle }
+        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.MacComingSoonNote, native.ArchitectureNote, native.LinuxNote, native.HeroSubtitle }
             .ShouldAllBe(text => !string.IsNullOrWhiteSpace(text));
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_translates_the_mac_coming_soon_note(string culture)
+    {
+        var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
+        var note = provider.GetInstallPage(culture, InstallPageKey).Native!.MacComingSoonNote;
+
+        note.ShouldContain("Mac");
+        if (culture != EnglishCulture)
+        {
+            note.ShouldNotBe(provider.GetInstallPage(EnglishCulture, InstallPageKey).Native!.MacComingSoonNote);
+        }
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_names_the_office_pc_in_page_title_and_meta_description(string culture)
+    {
+        var content = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey);
+        var term = OfficePcTerms[culture];
+
+        WebUtility.HtmlDecode(content.PageTitle).ShouldContain(term, Case.Insensitive);
+        content.MetaDescription.ShouldNotBeNull();
+        WebUtility.HtmlDecode(content.MetaDescription).ShouldContain(term, Case.Insensitive);
+        content.MetaDescription.ShouldContain("Windows");
+    }
+
+    [Test]
+    public void Office_pc_terms_cover_every_culture()
+    {
+        OfficePcTerms.Keys.OrderBy(code => code, StringComparer.Ordinal)
+            .ShouldBe(Cultures().OrderBy(code => code, StringComparer.Ordinal));
     }
 
     [TestCaseSource(nameof(Cultures))]
@@ -81,6 +148,35 @@ public class InstallPageNativeOptionTests
         settings.Enabled.ShouldBeFalse();
         settings.WindowsUrl.ShouldBe(RollingWindowsPackageUrl);
         settings.MacUrl.ShouldBeNull();
+    }
+
+    [Test]
+    public async Task Shipped_configuration_shows_the_office_pc_card_with_the_rolling_package_and_no_mac_button()
+    {
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile(Path.Combine(MarketingProjectPaths.ProjectRoot, AppSettingsFileName), optional: false)
+            .Build();
+        var settings = NativeInstallSettings.From(configuration);
+
+        settings.Enabled.ShouldBeTrue();
+        settings.WindowsUrl.ShouldBe(RollingWindowsPackageUrl);
+        settings.MacUrl.ShouldBeNull();
+
+        var html = await RenderAsync(SupportedCultures.DefaultCode, settings.Enabled, settings.WindowsUrl, settings.MacUrl);
+
+        html.ShouldContain("lg:grid-cols-3");
+        html.ShouldContain($"href=\"{RollingWindowsPackageUrl}\" rel=\"nofollow\" {DownloadCounterAttribute}");
+        html.ShouldContain("Für Mac: kommt in Kürze.");
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public async Task Mac_coming_soon_note_appears_only_without_a_configured_mac_url(string culture)
+    {
+        var note = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!.MacComingSoonNote;
+
+        (await RenderAsync(culture, enabled: true)).ShouldContain(note);
+        (await RenderAsync(culture, enabled: true, macUrl: ConfiguredMacUrl)).ShouldNotContain(note);
+        (await RenderAsync(culture, enabled: false)).ShouldNotContain(note);
     }
 
     [Test]

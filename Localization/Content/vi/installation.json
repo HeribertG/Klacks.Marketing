@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Cài đặt Klacks: trình cài đặt có hướng dẫn hoặc Docker Compose với gói quốc gia của bạn | Klacks",
-  "metaDescription": "Cài đặt Klacks trên hạ tầng riêng bằng trình cài đặt hoặc Docker Compose, kèm sẵn ngày lễ và quy định thời giờ làm việc. Mã nguồn mở, không phí bản quyền.",
+  "pageTitle": "Cài đặt Klacks: máy tính văn phòng, trình cài đặt có hướng dẫn hoặc Docker Compose | Klacks",
+  "metaDescription": "Cài đặt Klacks bằng gói Windows cho máy tính văn phòng, trình cài đặt hoặc Docker Compose, kèm sẵn ngày lễ và quy định thời giờ làm việc. Mã nguồn mở.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Cài đặt &middot; Không mất phí bản quyền &amp; mã nguồn mở",
@@ -71,6 +71,7 @@
       "downloadLabel": "Tải cho Windows"
     },
     "macDownloadLabel": "Tải cho Mac",
+    "macComingSoonNote": "Dành cho Mac: sắp ra mắt.",
     "architectureNote": "Dành cho Windows 64-bit (x64). Trên các thiết bị Windows 11 dùng bộ xử lý ARM (ví dụ Snapdragon X), Klacks chạy thông qua giả lập; Windows 10 trên ARM không được hỗ trợ.",
     "linuxNote": "Dùng Linux? Xem bên dưới: <a href=\"{0}\">Klacks trên máy tính Linux</a>.",
     "heroSubtitle": "Ba con đường, một kết quả: gói Windows cho máy tính văn phòng của bạn, trình cài đặt có hướng dẫn cho máy chủ của bạn, hoặc stack Docker Compose cho thiết lập riêng của bạn &mdash; không cần đăng ký, không phí bản quyền. Trên máy tính văn phòng, bạn chọn quốc gia trong lúc cài đặt; với máy chủ và Docker Compose, gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (giờ phụ trội nếu quốc gia đó có quy định)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Mã nguồn mở (AGPL-3.0)", "text": "Toàn bộ mã nguồn được công khai trên GitHub theo giấy phép AGPL-3.0 &mdash; không phí bản quyền, không bị khóa chặt vào nhà cung cấp." },
       { "icon": "storage", "title": "Dữ liệu nằm trên máy chủ của bạn", "text": "Klacks chạy trên hạ tầng của bạn. Dữ liệu nhân sự và lịch làm việc nằm trên máy chủ của bạn &mdash; không có chuyện ép buộc dùng cloud. Chỉ khi bạn chọn nhà cung cấp AI bên ngoài thì các yêu cầu mới được gửi đến họ; với mô hình cục bộ, không có yêu cầu AI nào được gửi đến nhà cung cấp bên ngoài." },
-      { "icon": "update", "title": "Cập nhật", "text": "Bản cài đặt ghim phiên bản phát hành mới nhất. Một dịch vụ cập nhật bên trong stack sẽ tự động áp dụng các phiên bản mới được phát hành." },
-      { "icon": "lock", "title": "HTTPS ngay từ đầu", "text": "Trình cài đặt tạo một chứng chỉ tự ký để bạn khởi đầu &mdash; bạn có thể chuyển sang chứng chỉ riêng bất cứ lúc nào. Hãy đổi mật khẩu ban đầu ngay sau lần đăng nhập đầu tiên." }
+      { "icon": "update", "title": "Cập nhật", "text": "Một dịch vụ cập nhật sẽ tự động áp dụng các phiên bản mới được phát hành &mdash; với Docker là dịch vụ bên trong stack, trên máy tính văn phòng là dịch vụ chạy nền của Windows." },
+      { "icon": "lock", "title": "HTTPS với Docker", "text": "Trình cài đặt tạo một chứng chỉ tự ký để bạn khởi đầu &mdash; bạn có thể chuyển sang chứng chỉ riêng bất cứ lúc nào. Hãy đổi mật khẩu ban đầu ngay sau lần đăng nhập đầu tiên. Gói Windows cho máy tính văn phòng chạy không cần chứng chỉ tại http://localhost:5180." }
     ]
   },
   "cta": {

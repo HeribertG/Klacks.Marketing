@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Klacksのインストール：国別パッケージ付きの自社導入またはDocker Compose | Klacks",
-  "metaDescription": "Klacksを自社インフラにインストール：ガイド付きインストーラーまたはDocker Composeスタック。貴社の国の祝日、労働時間規則、（国で定義されている場合は）時間割増があらかじめ設定済み。ライセンス料不要、オープンソース、登録不要。",
+  "pageTitle": "Klacksのインストール：オフィスのPC、ガイド付きインストーラー、Docker Compose | Klacks",
+  "metaDescription": "Klacksを自社でインストール：オフィスのPC向けWindowsパッケージ、ガイド付きインストーラー、またはDocker Compose。国の祝日や労働時間規則を設定済み。ライセンス料不要、オープンソース。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "インストール &middot; ライセンス料不要 &amp; オープンソース",
@@ -71,6 +71,7 @@
       "downloadLabel": "Windows版をダウンロード"
     },
     "macDownloadLabel": "Mac版をダウンロード",
+    "macComingSoonNote": "Mac版：近日公開予定。",
     "architectureNote": "64ビット版Windows（x64）向けです。ARMプロセッサー搭載のWindows 11デバイス（例：Snapdragon X）では、Klacksはエミュレーションで動作します。ARM版Windows 10はサポートされていません。",
     "linuxNote": "Linuxの場合は、下記をご覧ください：<a href=\"{0}\">LinuxのPCでKlacksを使う</a>。",
     "heroSubtitle": "3つの方法、1つの結果：オフィスPC向けのWindowsパッケージ、自社サーバー向けのガイド付きインストーラー、または独自セットアップ向けのDocker Composeスタック &mdash; 登録不要、ライセンス費用もかかりません。オフィスPCではインストール時に国を選択します。サーバーとDocker Composeでは、国別パッケージに貴社の国の祝日、労働時間規則、業種プリセットが最初から含まれています（時間割増は国で定義されている場合）。"
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "オープンソース（AGPL-3.0）", "text": "完全なソースコードはAGPL-3.0ライセンスのもとGitHubで公開されています &mdash; ライセンス費用なし、ベンダーロックインなし。" },
       { "icon": "storage", "title": "データは貴社のサーバー上に", "text": "Klacksは貴社のインフラ上で動作します。人事データやシフトデータは貴社のサーバー上にあります &mdash; クラウドの強制はありません。外部のAIプロバイダーを選んだ場合にのみ、リクエストがそちらに送られます。ローカルモデルなら、外部のプロバイダーにAIリクエストが送られることはありません。" },
-      { "icon": "update", "title": "更新", "text": "インストール時に最新のリリース版が固定されます。スタック内の更新サービスが新しくリリースされたバージョンを自動的に適用します。" },
-      { "icon": "lock", "title": "最初からHTTPS", "text": "インストーラーはスタート用に自己署名証明書を生成します &mdash; 独自の証明書へはいつでも切り替え可能です。初回ログイン後、初期パスワードをただちに変更してください。" }
+      { "icon": "update", "title": "更新", "text": "更新サービスが新しくリリースされたバージョンを自動的に適用します &mdash; Dockerではスタック内のサービスとして、オフィスのPCではWindowsのバックグラウンドサービスとして動作します。" },
+      { "icon": "lock", "title": "DockerでのHTTPS", "text": "インストーラーはスタート用に自己署名証明書を生成します &mdash; 独自の証明書へはいつでも切り替え可能です。初回ログイン後、初期パスワードをただちに変更してください。オフィスのPC向けWindowsパッケージは、証明書なしでhttp://localhost:5180で動作します。" }
     ]
   },
   "cta": {

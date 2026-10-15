@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Pasang Klacks: Pemasang Berpandu atau Docker Compose dengan Pakej Negara Anda | Klacks",
-  "metaDescription": "Pasang Klacks pada infrastruktur sendiri: pemasang berpandu atau Docker Compose, diprakonfigurasi dengan cuti umum. Sumber terbuka, tiada yuran lesen.",
+  "pageTitle": "Pasang Klacks: PC Pejabat, Pemasang Berpandu atau Docker Compose | Klacks",
+  "metaDescription": "Pasang Klacks sendiri: pakej Windows untuk PC pejabat, pemasang berpandu atau Docker Compose, diprakonfigurasi dengan cuti umum. Sumber terbuka.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Pemasangan &middot; Tiada yuran lesen &amp; sumber terbuka",
@@ -71,6 +71,7 @@
       "downloadLabel": "Muat turun untuk Windows"
     },
     "macDownloadLabel": "Muat turun untuk Mac",
+    "macComingSoonNote": "Untuk Mac: akan datang tidak lama lagi.",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada peranti Windows 11 dengan pemproses ARM (contohnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak disokong.",
     "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks pada PC Linux</a>.",
     "heroSubtitle": "Tiga laluan, satu hasil: pakej Windows untuk PC pejabat Anda, pemasang berpandu untuk pelayan Anda, atau stack Docker Compose untuk persediaan Anda sendiri &mdash; tanpa pendaftaran, tanpa yuran lesen. Pada PC pejabat, Anda memilih negara semasa pemasangan; untuk pelayan dan Docker Compose, pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Sumber terbuka (AGPL-3.0)", "text": "Kod sumber lengkap tersedia secara umum di GitHub di bawah lesen AGPL-3.0 &mdash; tiada yuran lesen, tiada penguncian vendor." },
       { "icon": "storage", "title": "Data disimpan pada pelayan anda", "text": "Klacks berjalan pada infrastruktur Anda. Data kakitangan dan penjadualan berada pada pelayan Anda &mdash; tiada paksaan awan. Hanya jika anda memilih penyedia AI luaran, permintaan dihantar kepadanya; dengan model tempatan, tiada permintaan AI dihantar kepada penyedia luaran." },
-      { "icon": "update", "title": "Kemas kini", "text": "Pemasangan menetapkan versi terbitan terkini. Perkhidmatan kemas kini dalam stack menggunakan versi yang baru diterbitkan secara automatik." },
-      { "icon": "lock", "title": "HTTPS dari awal", "text": "Pemasang menjana sijil ditandatangan sendiri untuk permulaan &mdash; Anda boleh bertukar kepada sijil Anda sendiri pada bila-bila masa. Tukar kata laluan awal sejurus selepas log masuk pertama." }
+      { "icon": "update", "title": "Kemas kini", "text": "Perkhidmatan kemas kini menggunakan versi yang baru diterbitkan secara automatik &mdash; dengan Docker sebagai perkhidmatan dalam stack, pada PC pejabat sebagai perkhidmatan latar belakang Windows." },
+      { "icon": "lock", "title": "HTTPS dengan Docker", "text": "Pemasang menjana sijil ditandatangan sendiri untuk permulaan &mdash; Anda boleh bertukar kepada sijil Anda sendiri pada bila-bila masa. Tukar kata laluan awal sejurus selepas log masuk pertama. Pakej Windows untuk PC pejabat berjalan tanpa sijil di http://localhost:5180." }
     ]
   },
   "cta": {

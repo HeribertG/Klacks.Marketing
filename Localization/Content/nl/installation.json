@@ -1,6 +1,6 @@
 {
-  "pageTitle": "Klacks installeren: begeleide installer of Docker Compose met landenpakket | Klacks",
-  "metaDescription": "Installeer Klacks op uw eigen infrastructuur: begeleide installer of Docker Compose, voorgeconfigureerd met feestdagen en arbeidstijdregels. Open source.",
+  "pageTitle": "Klacks installeren: kantoor-pc, begeleide installer of Docker Compose | Klacks",
+  "metaDescription": "Installeer Klacks zelf: Windows-pakket voor de kantoor-pc, begeleide installer of Docker Compose, met feestdagen en arbeidstijdregels. Open source.",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "Installatie &middot; Geen licentiekosten &amp; open source",
@@ -71,6 +71,7 @@
       "downloadLabel": "Downloaden voor Windows"
     },
     "macDownloadLabel": "Downloaden voor Mac",
+    "macComingSoonNote": "Voor Mac: binnenkort beschikbaar.",
     "architectureNote": "Voor Windows 64-bit (x64). Op Windows 11-apparaten met een ARM-processor (bijv. Snapdragon X) draait Klacks via emulatie; Windows 10 op ARM wordt niet ondersteund.",
     "linuxNote": "Linux? Zie hieronder: <a href=\"{0}\">Klacks op een Linux-pc</a>.",
     "heroSubtitle": "Drie wegen, één resultaat: het Windows-pakket voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving &mdash; zonder registratie, zonder licentiekosten. Op de kantoor-pc kiest u het land tijdens de installatie; voor server en Docker Compose bevat het landenpakket de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd)."
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "Open source (AGPL-3.0)", "text": "De volledige broncode is openbaar op GitHub onder de AGPL-3.0 &mdash; geen licentiekosten, geen vendor lock-in." },
       { "icon": "storage", "title": "Gegevens staan op uw servers", "text": "Klacks draait op uw infrastructuur. Personeels- en planningsgegevens staan op uw server &mdash; er is geen verplichte cloud. Alleen als u een externe AI-aanbieder kiest, gaan verzoeken daarheen; met een lokaal model gaat geen AI-verzoek naar een externe aanbieder." },
-      { "icon": "update", "title": "Updates", "text": "De installatie pint de laatst uitgebrachte versie vast. Een updateservice binnen de stack voert nieuw uitgebrachte versies automatisch door." },
-      { "icon": "lock", "title": "HTTPS vanaf de start", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen." }
+      { "icon": "update", "title": "Updates", "text": "Een updateservice voert nieuw uitgebrachte versies automatisch door &mdash; bij Docker als service binnen de stack, op de kantoor-pc als Windows-achtergrondservice." },
+      { "icon": "lock", "title": "HTTPS met Docker", "text": "De installer genereert een zelfondertekend certificaat om mee te beginnen &mdash; u kunt op elk moment overstappen op uw eigen certificaat. Wijzig het initiële wachtwoord direct na de eerste keer inloggen. Het Windows-pakket voor de kantoor-pc draait zonder certificaat op http://localhost:5180." }
     ]
   },
   "cta": {

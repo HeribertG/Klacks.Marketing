@@ -1,6 +1,6 @@
 {
-  "pageTitle": "安裝 Klacks：引導式安裝程式或 Docker Compose，附國家套件 | Klacks",
-  "metaDescription": "在自有基礎設施上安裝 Klacks：引導式 安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日、工時規則與工時加成（以該國家已定義者為準）。沒有授權費用、開源、無需註冊。",
+  "pageTitle": "安裝 Klacks：辦公室電腦、引導式安裝程式或 Docker Compose | Klacks",
+  "metaDescription": "安裝 Klacks：適用於辦公室電腦的 Windows 套件、引導式安裝程式或 Docker Compose 堆疊，預先設定好您所在國家的國定假日與工時規則。沒有授權費用、開源。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "安裝 &middot; 沒有授權費用 &amp; 開源",
@@ -71,6 +71,7 @@
       "downloadLabel": "下載 Windows 版"
     },
     "macDownloadLabel": "下載 Mac 版",
+    "macComingSoonNote": "Mac 版：即將推出。",
     "architectureNote": "適用於 64 位元 Windows（x64）。在搭載 ARM 處理器的 Windows 11 裝置（例如 Snapdragon X）上，Klacks 透過模擬執行；不支援 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？請見下方：<a href=\"{0}\">在 Linux 電腦上使用 Klacks</a>。",
     "heroSubtitle": "三條路徑，同一結果：適用於辦公室電腦的 Windows 套件、適用於您伺服器的引導式安裝程式，或適用於自有環境的 Docker Compose 堆疊 &mdash; 無需註冊，沒有授權費用。使用辦公室電腦時，您在安裝過程中選擇國家；伺服器與 Docker Compose 的國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準）。"
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "開放原始碼（AGPL-3.0）", "text": "完整原始碼以 AGPL-3.0 授權在 GitHub 上公開 &mdash; 沒有授權費用，沒有供應商鎖定。" },
       { "icon": "storage", "title": "資料存放在您的伺服器上", "text": "Klacks 在您的基礎設施上運作。人員與排班資料存放在您的伺服器上 &mdash; 沒有強制上雲。只有在您選擇外部 AI 服務供應商時，請求才會送往對方；若使用地端模型，則不會有 AI 請求送往外部供應商。" },
-      { "icon": "update", "title": "更新", "text": "安裝時會固定最新發行版本。堆疊內的更新服務會自動套用新發行的版本。" },
-      { "icon": "lock", "title": "從一開始就使用 HTTPS", "text": "安裝程式會產生自簽憑證讓您起步 &mdash; 您隨時可以改用自己的憑證。首次登入後請立即變更初始密碼。" }
+      { "icon": "update", "title": "更新", "text": "更新服務會自動套用新發行的版本 &mdash; 使用 Docker 時作為堆疊內的服務，在辦公室電腦上則作為 Windows 背景服務。" },
+      { "icon": "lock", "title": "使用 Docker 時的 HTTPS", "text": "安裝程式會產生自簽憑證讓您起步 &mdash; 您隨時可以改用自己的憑證。首次登入後請立即變更初始密碼。辦公室電腦的 Windows 套件無需憑證，運行於 http://localhost:5180。" }
     ]
   },
   "cta": {

@@ -1,6 +1,6 @@
 {
-  "pageTitle": "安装 Klacks：引导式安装程序或 Docker Compose，附国家套件 | Klacks",
-  "metaDescription": "在自有基础设施上安装 Klacks：引导式 安装程序或 Docker Compose 堆栈，预先配置好您所在国家的法定节假日、工时规则和工时加成（以该国家已定义的为准）。无许可费用、开源、无需注册。",
+  "pageTitle": "安装 Klacks：办公电脑、引导式安装程序或 Docker Compose | Klacks",
+  "metaDescription": "安装 Klacks：适用于办公电脑的 Windows 软件包、引导式安装程序或 Docker Compose 堆栈，预先配置好您所在国家的法定节假日和工时规则。无许可费用、开源。",
   "hero": {
     "badgeIcon": "install_desktop",
     "badge": "安装 &middot; 无许可费用 &amp; 开源",
@@ -71,6 +71,7 @@
       "downloadLabel": "下载 Windows 版"
     },
     "macDownloadLabel": "下载 Mac 版",
+    "macComingSoonNote": "Mac 版：即将推出。",
     "architectureNote": "适用于 64 位 Windows（x64）。在搭载 ARM 处理器的 Windows 11 设备（例如 Snapdragon X）上，Klacks 通过仿真运行；不支持 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？请见下文：<a href=\"{0}\">在 Linux 电脑上使用 Klacks</a>。",
     "heroSubtitle": "三条路径，同一结果：适用于办公电脑的 Windows 软件包、适用于您服务器的引导式安装程序，或适用于自有环境的 Docker Compose 堆栈 &mdash; 无需注册，没有许可费用。使用办公电脑时，您在安装过程中选择国家；服务器和 Docker Compose 的国家套件随附您所在国家的法定节假日、工时规则和行业预设（工时加成以该国家已定义的为准）。"
@@ -114,8 +115,8 @@
     "items": [
       { "icon": "code", "title": "开源（AGPL-3.0）", "text": "完整源代码以 AGPL-3.0 许可证在 GitHub 上公开 &mdash; 没有许可费用，没有供应商锁定。" },
       { "icon": "storage", "title": "数据存放在您的服务器上", "text": "Klacks 运行在您的基础设施上。人员和排班数据存放在您的服务器上 &mdash; 没有强制上云。只有在您选择外部 AI 服务商时，请求才会发送给对方；使用本地模型则没有 AI 请求发送给外部服务商。" },
-      { "icon": "update", "title": "更新", "text": "安装时会固定最新发布版本。堆栈内的更新服务会自动应用新发布的版本。" },
-      { "icon": "lock", "title": "从一开始就使用 HTTPS", "text": "安装程序会生成自签名证书供您起步 &mdash; 您随时可以换成自己的证书。首次登录后请立即修改初始密码。" }
+      { "icon": "update", "title": "更新", "text": "更新服务会自动应用新发布的版本 &mdash; 使用 Docker 时作为堆栈内的服务，在办公电脑上作为 Windows 后台服务。" },
+      { "icon": "lock", "title": "使用 Docker 时的 HTTPS", "text": "安装程序会生成自签名证书供您起步 &mdash; 您随时可以换成自己的证书。首次登录后请立即修改初始密码。办公电脑的 Windows 软件包无需证书，运行于 http://localhost:5180。" }
     ]
   },
   "cta": {

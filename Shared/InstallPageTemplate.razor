@@ -72,6 +72,10 @@ else
                         }
                     </div>
                     <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.ArchitectureNote)</p>
+                    @if (NativeSettings.MacUrl is null)
+                    {
+                        <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.MacComingSoonNote)</p>
+                    }
                     <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)string.Format(native.LinuxNote, LinuxSectionHref))</p>
                 </Actions>
             </InstallPathCard>
