@@ -24,7 +24,7 @@ export const MIN_VISIBLE_SECONDS = 1.8;
 export const MAX_CAPTION_CHARS = 42;
 export const DIRECTION_LTR = "ltr";
 export const DIRECTION_RTL = "rtl";
-export const FORBIDDEN_CAPTION_PHRASES = ["klacksy plant", "klacksy rechnet", "ganz rechts", "gratis", "ein satz genügt"];
+export const FORBIDDEN_CAPTION_PHRASES = ["klacksy plant", "klacksy rechnet", "ganz rechts", "gratis", "ein satz gen\u00fcgt"];
 export const captionFileName = (culture) => `simple-videos.${culture.toLowerCase()}.json`;
 
 const DIRECTIONS = [DIRECTION_LTR, DIRECTION_RTL];

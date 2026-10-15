@@ -202,7 +202,7 @@ try {
     assert.ok(validateCaptionTrack("v", { a: "x".repeat(60) }, ["a"]).some((p) => p.includes("characters")));
     assert.deepEqual(validateCaptionTrack("v", null, ["a"]), ["v: no captions"]);
     assert.ok(validateCaptionTrack("v", { a: "Gratis testen" }, ["a"]).some((p) => p.includes('"gratis"')));
-    assert.ok(validateCaptionTrack("v", { a: "Ein Satz genügt" }, ["a"]).some((p) => p.includes("forbidden phrase")));
+    assert.ok(validateCaptionTrack("v", { a: "Ein Satz gen\u00fcgt" }, ["a"]).some((p) => p.includes("forbidden phrase")));
   });
 
   await check("contact data detection ignores dates and times but finds e-mails and phone numbers", async () => {
