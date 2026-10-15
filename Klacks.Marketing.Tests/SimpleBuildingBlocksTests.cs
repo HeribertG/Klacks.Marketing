@@ -3,7 +3,9 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using Klacks.Marketing.Localization;
 using Klacks.Marketing.Shared;
+using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 using Shouldly;
 
@@ -16,6 +18,8 @@ using Shouldly;
 public class SimpleBuildingBlocksTests
 {
     private const string SwissCountry = "land-ch";
+    private const string SharedUrl = "https://klacks-software.ch/land-ch";
+    private const string InstallPageKey = "installation";
 
     [Test]
     public async Task Recorded_video_is_click_to_play_and_carries_the_play_event()
@@ -69,6 +73,39 @@ public class SimpleBuildingBlocksTests
     }
 
     [Test]
+    public async Task Copy_button_carries_url_and_result_texts_for_the_script_and_the_status_element()
+    {
+        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, SwissCountry));
+
+        var html = WebUtility.HtmlDecode(await MarketingComponentHost.RenderAsync<ShareLinkButtons>(services, new Dictionary<string, object?>
+        {
+            [nameof(ShareLinkButtons.Url)] = SharedUrl,
+        }));
+
+        html.ShouldContain("data-share-block");
+        html.ShouldContain($"data-share-copy=\"{SharedUrl}\"");
+        html.ShouldContain("data-share-copied=\"Link kopiert.\"");
+        html.ShouldContain("data-share-failed=\"Kopieren hat nicht geklappt.");
+        html.ShouldContain("data-share-status");
+        html.ShouldContain("data-share-url");
+        html.ShouldContain("aria-live=\"polite\"");
+    }
+
+    [Test]
+    public void Copy_runs_in_the_click_handler_without_a_circuit_round_trip()
+    {
+        MarketingProjectPaths.ReadSource("Shared/ShareLinkButtons.razor").ShouldNotContain("InvokeAsync");
+        MarketingProjectPaths.ReadSource("Shared/ShareLinkButtons.razor").ShouldNotContain("@onclick");
+
+        var script = MarketingProjectPaths.ReadSource("wwwroot/js/share-link.js");
+
+        script.ShouldContain("addEventListener('click'");
+        script.ShouldContain("[data-share-copy]");
+        script.ShouldContain("execCommand('copy')");
+        script.ShouldContain("textContent = ''");
+    }
+
+    [Test]
     public void Share_script_uses_the_clipboard_and_no_storage()
     {
         var script = MarketingProjectPaths.ReadSource("wwwroot/js/share-link.js");
@@ -83,8 +120,28 @@ public class SimpleBuildingBlocksTests
     [Test]
     public void Install_page_marks_the_office_pc_card_for_the_simple_page_link()
     {
-        MarketingProjectPaths.ReadSource("Shared/InstallPageTemplate.razor").ShouldContain("id=\"@PageSectionIds.OfficePc\"");
+        MarketingProjectPaths.ReadSource("Shared/InstallPageTemplate.razor").ShouldContain("Id=\"@PageSectionIds.OfficePc\"");
         PageSectionIds.OfficePc.ShouldBe("buero-pc");
+    }
+
+    [Test]
+    public async Task Install_path_card_carries_the_given_id_on_the_card_itself()
+    {
+        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, SwissCountry));
+        var path = services.GetRequiredService<IPageContentProvider>().GetInstallPage(SupportedCultures.DefaultCode, InstallPageKey).Native!.Path;
+
+        var withId = await MarketingComponentHost.RenderAsync<InstallPathCard>(services, new Dictionary<string, object?>
+        {
+            [nameof(InstallPathCard.Path)] = path,
+            [nameof(InstallPathCard.Id)] = PageSectionIds.OfficePc,
+        });
+        var withoutId = await MarketingComponentHost.RenderAsync<InstallPathCard>(services, new Dictionary<string, object?>
+        {
+            [nameof(InstallPathCard.Path)] = path,
+        });
+
+        withId.ShouldStartWith($"<div id=\"{PageSectionIds.OfficePc}\" class=\"card-hover scroll-mt-24 ");
+        withoutId.ShouldStartWith("<div class=\"card-hover scroll-mt-24 ");
     }
 
     [Test]

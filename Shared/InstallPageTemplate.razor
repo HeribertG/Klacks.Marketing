@@ -58,8 +58,7 @@ else
     <div class="reveal-stagger grid @PathGridColumns gap-8 items-stretch">
         @if (NativeSection is { } native)
         {
-            <div id="@PageSectionIds.OfficePc" class="grid scroll-mt-24">
-            <InstallPathCard Path="@native.Path">
+            <InstallPathCard Path="@native.Path" Id="@PageSectionIds.OfficePc">
                 <Actions>
                     <div class="flex flex-wrap gap-3">
                         <a href="@NativeSettings.WindowsUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
@@ -80,7 +79,6 @@ else
                     <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)string.Format(native.LinuxNote, LinuxSectionHref))</p>
                 </Actions>
             </InstallPathCard>
-            </div>
         }
         <InstallPathCard Path="@Content.OnPrem"
                          DownloadUrl="@OnPremDownloadUrl"
