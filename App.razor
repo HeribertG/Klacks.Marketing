@@ -3,9 +3,8 @@
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Page not found.</p>
+            <NotFoundNotice />
         </LayoutView>
     </NotFound>
 </Router>

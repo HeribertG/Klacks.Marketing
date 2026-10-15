@@ -10,9 +10,11 @@
    country-independent texts of the new structure live in start.json. Industry pages keep IndustryPageTemplate.
    PageKey is the country page key ("land-ch", also the route and the content file), Culture the page culture code.
    TODO (owner, wave 2): a new real-time hero clip replaces the Klacksy grouping clip; the example sentences are
-   only quoted from the recorded clips and link to the Klacksy chapter until they are stable in the playground. *@
+   only quoted from the recorded clips and link to the Klacksy chapter until they are stable in the playground.
+   RoutePath (default PageKey) moves the page's own links and the canonical onto another route ("land-ch/experten");
+   industry and country links stay on the country. SuppressHreflang drops the hreflang set (stage 1 expert route). *@
 <PageTitle>@Country.PageTitle</PageTitle>
-<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@PageKey" Title="@Country.PageTitle" DescriptionSource="@DescriptionSource" IndexTranslatedOnly="true" />
+<SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Country.PageTitle" DescriptionSource="@DescriptionSource" IndexTranslatedOnly="true" SuppressHreflang="@SuppressHreflang" />
 
 <!-- 1 HERO -->
 <header class="pt-20 md:pt-28 pb-12 md:pb-16 px-4 sm:px-8 max-w-7xl mx-auto">
@@ -404,6 +406,10 @@
 
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
+    [Parameter] public string? RoutePath { get; set; }
+
+    [Parameter] public bool SuppressHreflang { get; set; }
+
     [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
 
     private IndustryPageContent Country => ContentProvider.GetIndustryPage(Culture, PageKey);
@@ -412,7 +418,11 @@
 
     private string CulturePrefix => CultureRecord.UrlSlug.Length == 0 ? string.Empty : $"/{CultureRecord.UrlSlug}";
 
-    private string PageHref => $"{CulturePrefix}/{PageKey}";
+    private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
+
+    private string PageHref => $"{CulturePrefix}/{EffectiveRoutePath}";
+
+    private string CountryRootHref => $"{CulturePrefix}/{PageKey}";
 
     private string DescriptionSource => Country.MetaDescription ?? Country.Hero.Subtitle;
 
@@ -458,7 +468,7 @@
 
     private string CountryHref(string slug) => CountryPageLinks.Href(CultureRecord.UrlSlug, PageKey, slug);
 
-    private string IndustryHref(string slug) => $"{PageHref}/{slug}";
+    private string IndustryHref(string slug) => $"{CountryRootHref}/{slug}";
 
     // Absolute page path plus fragment: a bare "#id" would resolve against <base href="/"> and leave the page.
     private string ChapterHref(string sectionId) => PageHref + FragmentSeparator + sectionId;

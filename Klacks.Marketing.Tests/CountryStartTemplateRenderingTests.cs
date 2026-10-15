@@ -112,7 +112,18 @@ public class CountryStartTemplateRenderingTests
         return texts.Where(text => Regex.IsMatch(text.Trim(), ContentKeyPattern)).Distinct();
     }
 
-    private static async Task<string> RenderAsync(string country, string culture)
+    [Test]
+    public async Task Expert_route_path_moves_the_chapter_links_but_keeps_industry_links_on_the_country()
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, SupportedCultures.DefaultCode, "land-ch/experten");
+
+        var links = Regex.Matches(html, HrefPattern).Select(match => match.Groups[1].Value).ToList();
+        links.ShouldContain($"/land-ch/experten#{DemoCarousels.KlacksySectionId}");
+        links.ShouldContain("/land-ch/spitex");
+        links.ShouldNotContain(link => link.StartsWith("/land-ch/experten/", StringComparison.Ordinal));
+    }
+
+    private static async Task<string> RenderAsync(string country, string culture, string? routePath = null)
     {
         var environment = new TestWebHostEnvironment();
         var services = new ServiceCollection()
@@ -134,6 +145,7 @@ public class CountryStartTemplateRenderingTests
             {
                 [nameof(CountryStartTemplate.PageKey)] = country,
                 [nameof(CountryStartTemplate.Culture)] = culture,
+                [nameof(CountryStartTemplate.RoutePath)] = routePath,
             }));
             return output.ToHtmlString();
         });

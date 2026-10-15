@@ -8,7 +8,7 @@
     {
         <meta name="robots" content="noindex, follow" />
     }
-    else
+    else if (!SuppressHreflang)
     {
         @foreach (var culture in SupportedCultures.All.Where(IsTranslated))
         {
@@ -85,6 +85,10 @@
     // set and marked noindex, so search engines never index German text served
     // under a foreign language URL.
     [Parameter] public bool IndexTranslatedOnly { get; set; }
+
+    // For a page whose route exists in one culture only ("/land-ch/experten" in stage 1 of the simple mode): the
+    // canonical link stays, the hreflang set is left out so it never points at URLs that answer 404.
+    [Parameter] public bool SuppressHreflang { get; set; }
 
     private bool IsNoindexCountry => !SameForEveryCountry && CountryIndexingPolicy.IsNoindex(PageKey);
 
