@@ -18,6 +18,12 @@ using Shouldly;
 public class SiteHeaderModeTests
 {
     private const string BodyClassPattern = @"<body class=""(mode-simple|mode-expert)\b";
+    private const string SingleRowHeaderClass = "class=\"flex justify-between items-center gap-4 sm:gap-6 w-full px-4 sm:px-8 py-4 max-w-7xl mx-auto\"";
+    private const string SingleRowLinksClass = "class=\"hidden xl:flex items-center gap-4 whitespace-nowrap\"";
+    private const string SingleRowActionsClass = "class=\"hidden xl:flex items-center gap-3\"";
+    private const string TwoRowHeaderClass = "h-[4.5rem]";
+    private const string SecondRowClass = "h-11 px-";
+    private const string SiteMainClass = "class=\"site-main\"";
 
     [TestCase("/land-ch", true, "mode-simple")]
     [TestCase("/land-ch/experten", true, "mode-expert")]
@@ -74,6 +80,37 @@ public class SiteHeaderModeTests
 
         missingExpertLink.IsMatch(html).ShouldBeFalse();
         html.ShouldContain("href=\"/it/land-ch\"");
+    }
+
+    [TestCase("/land-ch", false)]
+    [TestCase("/land-ch/spitex", false)]
+    [TestCase("/land-ch/impressum", false)]
+    [TestCase("/fr/land-ch", true)]
+    [TestCase("/fr/land-ch/spitex", true)]
+    public async Task Header_without_switch_keeps_the_single_row_layout(string path, bool enabled)
+    {
+        var html = await GetHtmlAsync(enabled, path);
+
+        html.ShouldContain(SingleRowHeaderClass);
+        html.ShouldContain(SingleRowLinksClass);
+        html.ShouldContain(SingleRowActionsClass);
+        html.ShouldContain("mobile-menu-panel");
+        html.ShouldNotContain(TwoRowHeaderClass);
+        html.ShouldNotContain(SecondRowClass);
+        html.ShouldNotContain("mode-switch");
+        html.ShouldNotContain(SiteMainClass);
+    }
+
+    [TestCase("/land-ch")]
+    [TestCase("/land-ch/experten")]
+    public async Task Header_with_switch_has_two_rows(string path)
+    {
+        var html = await GetHtmlAsync(enabled: true, path);
+
+        html.ShouldContain(TwoRowHeaderClass);
+        html.ShouldContain("mode-switch");
+        html.ShouldContain(SiteMainClass);
+        html.ShouldNotContain(SingleRowHeaderClass);
     }
 
     private static async Task<string> GetHtmlAsync(bool enabled, string path)
