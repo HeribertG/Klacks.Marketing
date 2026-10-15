@@ -22,7 +22,10 @@
  * with klacksy-plans-week. All takes of the website's carousels (work entry, container, timeline, route, shift features, scenarios, rules) share
  * WORK_ENTRY_VIEWPORT (1280x800); the route takes and shift-qualification keep VIDEO_NOISE_CSS so the
  * distance toast of the optimization / the error toast of the refused booking stays visible.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The simple start page takes (simple-klacksy-call in takes/simple-takes.mjs; simple-plans-week = takeKlacksyPlansWeek with its
+ * own script) add cue-based captions from simple-videos.<culture>.json (lib/caption-overlay.mjs); a caption that is never shown,
+ * stays on screen for less than MIN_VISIBLE_SECONDS of the encoded video or covers the chat input makes the take not publishable.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -38,8 +41,18 @@ import * as S from "./lib/klacks-demo-session.mjs";
 import { cursorInitScript, HumanMouse } from "./lib/cursor-overlay.mjs";
 import { ScreenRecorder } from "./lib/screen-recorder.mjs";
 import { DevOverlayGuard, DevOverlayViolationError } from "./lib/dev-overlay-guard.mjs";
-import { encodeRecording } from "./lib/video-encoder.mjs";
-import { SEL_ASSISTANT_INPUT, SKILL_ERROR_PREFIX, sendChatMessage } from "./lib/klacksy-chat.mjs";
+import { encodeRecording, readManifest } from "./lib/video-encoder.mjs";
+import { SEL_ASSISTANT_INPUT, SEL_ASSISTANT_SEND, SKILL_ERROR_PREFIX, sendChatMessage } from "./lib/klacksy-chat.mjs";
+import {
+  CaptionOverlay,
+  DIRECTION_LTR,
+  captionFileName,
+  captionProblems,
+  captionTrackOf,
+  captionVisibility,
+  loadCaptionTracks,
+  validateCaptionTrack,
+} from "./lib/caption-overlay.mjs";
 import {
   HALF,
   WORKS_API,
@@ -82,6 +95,15 @@ import {
   VIDEO_RULE_HOLIDAY_WORK,
 } from "./takes/rule-takes.mjs";
 import { KLACKSY_GROUPING_CSS, KLACKSY_GROUPING_TAKE_RUNNERS, KLACKSY_GROUPING_VIDEOS } from "./takes/klacksy-grouping-takes.mjs";
+import {
+  SIMPLE_KLACKSY_CALL_CUES,
+  SIMPLE_PLANS_WEEK_CUES,
+  SIMPLE_PLANS_WEEK_FINAL_HOLD_MS,
+  SIMPLE_TAKE_RUNNERS,
+  SIMPLE_VIDEOS,
+  VIDEO_SIMPLE_KLACKSY_CALL,
+  VIDEO_SIMPLE_PLANS_WEEK,
+} from "./takes/simple-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -96,10 +118,11 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
+const CAPTION_AVOID_SELECTORS = [SEL_ASSISTANT_INPUT, SEL_ASSISTANT_SEND, S.SEL_ASSISTANT_BUTTON];
 const WORK_ENTRY_VIEWPORT = { width: 1280, height: 800 };
 const DEVICE_SCALE_FACTOR = 1;
 const CURSOR_START_RATIO = { x: 0.55, y: 0.92 };
@@ -316,10 +339,16 @@ async function waitForJobAndScenario(take, job) {
   }
 }
 
+function planWeekCue(message) {
+  if (message.sendWhen === SCENARIO_READY) return SIMPLE_PLANS_WEEK_CUES.preview;
+  if (message.sendWhen === NOT_ACCEPTED) return SIMPLE_PLANS_WEEK_CUES.accept;
+  return SIMPLE_PLANS_WEEK_CUES.request;
+}
+
 async function takeKlacksyPlansWeek(take) {
-  const { page, api, options, recorder, mouse, report, culture, scripts, viewport, scale } = take;
-  const script = scripts[VIDEO_KLACKSY_PLANS_WEEK]?.[culture];
-  if (!script) throw new Error(`no ${VIDEO_KLACKSY_PLANS_WEEK} script for ${culture} in ${path.basename(SCRIPTS_FILE)}`);
+  const { page, api, options, recorder, mouse, report, culture, script, captions, viewport, scale } = take;
+  if (!script) throw new Error(`no ${report.video} script for ${culture} in ${path.basename(SCRIPTS_FILE)}`);
+  const finalHoldMs = take.finalHoldMs ?? BEAT.finalHold;
   const { filter } = await openSchedule(page, options);
   const octoberFilter = { ...filter, ...monthFilter(OCTOBER) };
   const octoberBefore = snapshotOf(await api.schedule(octoberFilter), PROTECTED_MONTH);
@@ -346,6 +375,7 @@ async function takeKlacksyPlansWeek(take) {
           continue;
         }
       }
+      await captions?.show(planWeekCue(message));
       log(`prompt: ${message.text}`);
       const turn = await sendChatMessage(take, message.text);
       report.turns.push({ prompt: message.text, sent: true, ...turn });
@@ -356,7 +386,7 @@ async function takeKlacksyPlansWeek(take) {
     await openSchedule(page, options);
     await recorder.endFast();
     report.posterAt = ScreenRecorder.now();
-    await page.waitForTimeout(BEAT.finalHold);
+    await page.waitForTimeout(finalHoldMs);
   } finally {
     await recorder.stop({ posterAt: report.posterAt ?? null, crop: deviceCrop({ x: 0, y: 0, ...viewport }, scale) });
     report.planWeekWorksAfterTake = worksIn(await api.schedule(filter), PLAN_WEEK.from, PLAN_WEEK.until).length;
@@ -386,6 +416,14 @@ const TAKES = {
   [VIDEO_RULE_CONSECUTIVE_DAYS]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: RULE_TAKE_RUNNERS[VIDEO_RULE_CONSECUTIVE_DAYS] },
   [VIDEO_RULE_HOLIDAY_WORK]: { period: DECEMBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: RULE_TAKE_RUNNERS[VIDEO_RULE_HOLIDAY_WORK] },
   [VIDEO_KLACKSY_PLANS_WEEK]: { period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek },
+  [VIDEO_SIMPLE_KLACKSY_CALL]: {
+    period: OCTOBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SIMPLE_TAKE_RUNNERS[VIDEO_SIMPLE_KLACKSY_CALL],
+    needsScript: true, captionCues: Object.values(SIMPLE_KLACKSY_CALL_CUES),
+  },
+  [VIDEO_SIMPLE_PLANS_WEEK]: {
+    period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek,
+    needsScript: true, captionCues: Object.values(SIMPLE_PLANS_WEEK_CUES), finalHoldMs: SIMPLE_PLANS_WEEK_FINAL_HOLD_MS,
+  },
   ...Object.fromEntries(KLACKSY_GROUPING_VIDEOS.map((video) => [
     video,
     { period: OCTOBER, viewport: CHAT_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
@@ -413,6 +451,27 @@ ${KLACKSY_GROUPING_CSS}`, run: KLACKSY_GROUPING_TAKE_RUNNERS[video], needsScript
   [VIDEO_SCENARIO_RULE_VIOLATION]: { period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SCENARIO_TAKE_RUNNERS[VIDEO_SCENARIO_RULE_VIOLATION], needsScript: true },
 };
 
+async function captionsFor(page, definition, video, culture, metadata) {
+  if (!definition.captionCues) return null;
+  const track = captionTrackOf(await loadCaptionTracks(toolsDir, culture), video);
+  const problems = validateCaptionTrack(video, track, definition.captionCues);
+  if (problems.length > 0) throw new Error(`captions (${captionFileName(culture)}): ${problems.join("; ")}`);
+  return new CaptionOverlay(page, track, {
+    dir: metadata[culture]?.direction ?? DIRECTION_LTR,
+    avoidSelectors: CAPTION_AVOID_SELECTORS,
+  });
+}
+
+async function checkCaptions(report, framesDir, captions, cues) {
+  captions.dispose();
+  const visibility = captionVisibility(await readManifest(framesDir), captions.events);
+  report.captions = { visibility, overlaps: captions.overlaps };
+  const problems = captionProblems(visibility, captions.overlaps, cues);
+  if (problems.length === 0) return;
+  report.publishable = false;
+  report.failure = report.failure ?? `captions: ${problems.join("; ")}`;
+}
+
 async function recordTake(browser, options, shared, video, culture) {
   const definition = TAKES[video];
   const scale = DEVICE_SCALE_FACTOR;
@@ -432,7 +491,9 @@ async function recordTake(browser, options, shared, video, culture) {
   const report = { video, culture, framesDir };
   const script = shared.scripts[video]?.[culture] ?? null;
   if (definition.needsScript && !script) throw new Error(`no ${video} script for ${culture} in ${path.basename(SCRIPTS_FILE)}`);
+  let captions = null;
   try {
+    captions = await captionsFor(page, definition, video, culture, shared.metadata);
     await S.login(page, options);
     await S.assertCulture(page, culture, shared.metadata);
     await page.mouse.move(start.x, start.y);
@@ -444,8 +505,11 @@ async function recordTake(browser, options, shared, video, culture) {
       scripts: shared.scripts,
       recorder: new ScreenRecorder(page, framesDir, recorderConfig(viewport, scale), guard),
       mouse: new HumanMouse(page, start, guard),
+      captions,
+      finalHoldMs: definition.finalHoldMs,
     });
     await guard.assertClean("after the take");
+    if (captions) await checkCaptions(report, framesDir, captions, definition.captionCues);
   } catch (error) {
     const violation = guard.violation ?? (error instanceof DevOverlayViolationError ? error : null);
     if (violation) {
@@ -457,6 +521,7 @@ async function recordTake(browser, options, shared, video, culture) {
     throw error;
   } finally {
     guard.stopWatching();
+    captions?.dispose();
     await mkdir(framesDir, { recursive: true });
     await writeFile(path.join(framesDir, TAKE_REPORT_FILE), JSON.stringify(report, null, 2));
     await context.close();

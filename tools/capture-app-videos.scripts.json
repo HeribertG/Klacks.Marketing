@@ -2754,5 +2754,31 @@
         }
       ]
     }
+  },
+  "simple-klacksy-call": {
+    "de": {
+      "messages": [
+        {
+          "text": "Wer hat am Montag, 19. Oktober, in Winterthur Dienst?"
+        }
+      ]
+    }
+  },
+  "simple-plans-week": {
+    "de": {
+      "messages": [
+        {
+          "text": "Plane für Winterthur die Woche vom 2. bis 8. November 2026."
+        },
+        {
+          "text": "Zeig mir das Ergebnis des Assistenten.",
+          "sendWhen": "scenarioReady"
+        },
+        {
+          "text": "Ja, übernimm es.",
+          "sendWhen": "notAccepted"
+        }
+      ]
+    }
   }
 }
