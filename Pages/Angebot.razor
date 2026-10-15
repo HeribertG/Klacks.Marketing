@@ -4,7 +4,7 @@
 
 @* Offer and pricing page (German only for now). Operating models: A = the customer runs Klacks, C = an IT partner
    or hoster runs it; there is no operation by Klacks Software itself. No prices, no service levels, no customer
-   names: the pilot places and the IT partner search are stated as open. Every fact is taken from the existing pages
+   names: the IT partner search is stated as open. Every fact is taken from the existing pages
    (lizenz, ueber-uns, grosse-betriebe, start) and the on-prem README. Served under every country with the same
    content (canonical: the culture's default country); a culture without its own angebot.json is noindex.
    Culture is the culture URL segment (null for German), Country the country page key of the route. *@
@@ -111,11 +111,11 @@
         <div class="grid md:grid-cols-2 gap-5">
             <div class="rounded-2xl bg-surface-container-lowest p-6">
                 <span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">
-                    <span class="material-symbols-outlined text-sm" aria-hidden="true">flag</span>@Tx("setup.pilot.badge")
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">handshake</span>@Tx("setup.start.badge")
                 </span>
-                <h3 class="text-lg font-black mt-4 mb-2">@Tx("setup.pilot.title")</h3>
-                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx("setup.pilot.text")</p>
-                <p class="text-sm text-on-surface-variant leading-relaxed mt-3 mb-0">@Tx("setup.pilot.costs")</p>
+                <h3 class="text-lg font-black mt-4 mb-2">@Tx("setup.start.title")</h3>
+                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Tx("setup.start.text")</p>
+                <p class="text-sm text-on-surface-variant leading-relaxed mt-3 mb-0">@Tx("setup.start.costs")</p>
             </div>
             <div class="rounded-2xl bg-surface-container-lowest p-6">
                 <h3 class="text-lg font-black mt-0 mb-4">@Tx("setup.tasks.title")</h3>

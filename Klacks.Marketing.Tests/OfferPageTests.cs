@@ -1,4 +1,4 @@
-// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+﻿// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 namespace Klacks.Marketing.Tests;
 
@@ -18,8 +18,8 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The German-only offer and pricing page: it renders with the real content, uses the owner's wording for the pilot
-/// ("ohne Verrechnung", never "gratis"/"kostenlos"), keeps its meta description within 155 characters, and - like the
+/// The German-only offer and pricing page: it renders with the real content, no longer offers free pilot places
+/// (owner decision 2026-10-15; never "gratis"/"kostenlos"), keeps its meta description within 155 characters, and - like the
 /// mid-size and large business pages - is listed in the sitemap only for German while other cultures stay noindex.
 /// </summary>
 [TestFixture]
@@ -37,20 +37,23 @@ public class OfferPageTests
     private const string TextNodePattern = @">\s*([^<>]+?)\s*<";
     private const string ContentKeyPattern = @"^[a-z][A-Za-z0-9]*(\.[A-Za-z0-9-]+)+$";
     private const string PilotWording = "ohne Verrechnung";
+    private const string PilotPlaces = "Pilotplätze";
+    private const string StartWording = "individuelles Angebot";
     private const string ExternalServicesAnchor = "/docs/erste-schritte/installation-und-playground/#welche-externen-dienste-klacks-aufruft";
 
     private static readonly string[] ForbiddenWords = { "gratis", "kostenlos" };
 
     [Test]
-    public async Task German_offer_page_renders_with_the_pilot_wording_and_without_raw_keys()
+    public async Task German_offer_page_renders_without_the_pilot_offer_and_without_raw_keys()
     {
         var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, null);
         var decoded = WebUtility.HtmlDecode(html);
 
         Regex.Matches(html, H1Pattern).Count.ShouldBe(1);
         decoded.ShouldContain("Angebot und Preise");
-        decoded.ShouldContain(PilotWording);
-        decoded.ShouldContain("Pilotplätze: 3");
+        decoded.ShouldNotContain(PilotWording);
+        decoded.ShouldNotContain(PilotPlaces);
+        decoded.ShouldContain(StartWording);
         decoded.ShouldContain("IT-Partner gesucht");
         decoded.ShouldContain($"mailto:{ExternalLinks.ContactEmail}");
         decoded.ShouldContain(ExternalServicesAnchor);
@@ -104,7 +107,7 @@ public class OfferPageTests
         MarketingProjectPaths.ReadSource("Pages/Angebot.razor").ShouldContain("IndexTranslatedOnly=\"true\"");
 
         var decoded = WebUtility.HtmlDecode(await RenderAsync("land-fr", FrenchCulture));
-        decoded.ShouldContain(PilotWording);
+        decoded.ShouldContain(StartWording);
         RawKeys(decoded).ShouldBeEmpty();
     }
 
