@@ -8,6 +8,7 @@ namespace Klacks.Marketing.Analytics;
 public static class PageTypes
 {
     public const string Start = "start";
+    public const string ExpertStart = "experten-start";
     public const string Industry = "branche";
     public const string Installation = "installation";
     public const string Offer = "angebot";
@@ -24,7 +25,7 @@ public static class PageTypes
 
     public static readonly IReadOnlyList<string> All = new[]
     {
-        Start, Industry, Installation, Offer, Comparison, AboutUs, Partner, License,
+        Start, ExpertStart, Industry, Installation, Offer, Comparison, AboutUs, Partner, License,
         SmallBusiness, MidSizeBusiness, LargeBusiness, Legal, DocsSitemap, Other,
     };
 }

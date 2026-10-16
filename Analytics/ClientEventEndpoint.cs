@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace Klacks.Marketing.Analytics;
 
 /// <summary>
-/// POST /_c: accepts one of the four client events from wwwroot/js/c.js (body at most <see cref="MaxBodyBytes"/>
+/// POST /_c: accepts one of the client events from wwwroot/js/c.js (body at most <see cref="MaxBodyBytes"/>
 /// bytes, sent as text/plain by navigator.sendBeacon). Server-side events (PageRequest, CircuitStarted), numeric
 /// names and unknown names are rejected with 400.
 /// </summary>
@@ -21,6 +21,10 @@ public static class ClientEventEndpoint
         [nameof(VisitEvent.PlaygroundContinue)] = VisitEvent.PlaygroundContinue,
         [nameof(VisitEvent.DownloadClick)] = VisitEvent.DownloadClick,
         [nameof(VisitEvent.OutboundClick)] = VisitEvent.OutboundClick,
+        [nameof(VisitEvent.ExpertToggle)] = VisitEvent.ExpertToggle,
+        [nameof(VisitEvent.ExpertToggleEarly)] = VisitEvent.ExpertToggleEarly,
+        [nameof(VisitEvent.VideoPlay)] = VisitEvent.VideoPlay,
+        [nameof(VisitEvent.ShareClick)] = VisitEvent.ShareClick,
     };
 
     public static IReadOnlyCollection<string> AcceptedEventNames => ClientEvents.Keys;

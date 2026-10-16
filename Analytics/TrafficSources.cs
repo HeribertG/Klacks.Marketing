@@ -16,10 +16,11 @@ public static class TrafficSources
     public const string GitHub = "github";
     public const string LinkedIn = "linkedin";
     public const string Direct = "direct";
+    public const string Share = "share";
     public const string Other = "other";
 
     public static readonly IReadOnlyList<string> All = new[]
     {
-        ChatGpt, Perplexity, Claude, Google, Bing, DuckDuckGo, GitHub, LinkedIn, Direct, Other,
+        ChatGpt, Perplexity, Claude, Google, Bing, DuckDuckGo, GitHub, LinkedIn, Direct, Share, Other,
     };
 }

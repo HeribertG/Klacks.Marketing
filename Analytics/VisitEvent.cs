@@ -10,4 +10,8 @@ public enum VisitEvent
     PlaygroundContinue,
     DownloadClick,
     OutboundClick,
+    ExpertToggle,
+    ExpertToggleEarly,
+    VideoPlay,
+    ShareClick,
 }

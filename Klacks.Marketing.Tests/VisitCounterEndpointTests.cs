@@ -103,6 +103,10 @@ public class VisitCounterEndpointTests
     [TestCase("PlaygroundContinue")]
     [TestCase("DownloadClick")]
     [TestCase("OutboundClick")]
+    [TestCase("ExpertToggle")]
+    [TestCase("ExpertToggleEarly")]
+    [TestCase("VideoPlay")]
+    [TestCase("ShareClick")]
     public async Task Client_event_is_accepted_and_counted(string eventName)
     {
         await using var factory = CreateFactory();
@@ -319,7 +323,7 @@ public class VisitCounterEndpointTests
         var path = Path.Combine(MarketingProjectPaths.WebRoot, "js", "c.js");
         var script = File.ReadAllText(path);
 
-        Encoding.UTF8.GetByteCount(script.Replace("\r\n", "\n")).ShouldBeLessThan(1024);
+        Encoding.UTF8.GetByteCount(script.Replace("\r\n", "\n")).ShouldBeLessThan(2048);
         script.ShouldNotContain("cookie");
         script.ShouldNotContain("localStorage");
         script.ShouldNotContain("sessionStorage");
@@ -330,6 +334,9 @@ public class VisitCounterEndpointTests
     [TestCase("Shared/DemoDisclaimerModal.razor", "data-c=\"PlaygroundContinue\"")]
     [TestCase("Shared/InstallPathCard.razor", "data-c=\"DownloadClick\"")]
     [TestCase("Shared/MainLayout.razor", "data-c=\"DemoModalOpened\"")]
+    [TestCase("Shared/ExpertModeSwitch.razor", "data-c=\"ExpertToggle\"")]
+    [TestCase("Shared/ShareLinkButtons.razor", "data-c=\"ShareClick\"")]
+    [TestCase("Shared/SimpleVideo.razor", "data-c-play=\"VideoPlay\"")]
     public void Markup_carries_the_client_event_attributes(string relativePath, string attribute)
     {
         MarketingProjectPaths.ReadSource(relativePath).ShouldContain(attribute);

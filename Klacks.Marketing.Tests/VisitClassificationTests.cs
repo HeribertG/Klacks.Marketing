@@ -30,6 +30,8 @@ public class VisitClassificationTests
     [TestCase("/land-ch/ueber-uns", PageTypes.AboutUs, "ch", "de")]
     [TestCase("/land-ch/partner", PageTypes.Partner, "ch", "de")]
     [TestCase("/land-ch/lizenz", PageTypes.License, "ch", "de")]
+    [TestCase("/land-ch/experten", PageTypes.ExpertStart, "ch", "de")]
+    [TestCase("/LAND-AT/EXPERTEN", PageTypes.ExpertStart, "at", "de")]
     [TestCase("/it/land-it/kleine-betriebe", PageTypes.SmallBusiness, "it", "it")]
     [TestCase("/land-at/mittlere-betriebe", PageTypes.MidSizeBusiness, "at", "de")]
     [TestCase("/land-at/grosse-betriebe", PageTypes.LargeBusiness, "at", "de")]
@@ -80,6 +82,9 @@ public class VisitClassificationTests
     [TestCase("claude.ai", null, TrafficSources.Claude)]
     [TestCase("linkedin", null, TrafficSources.LinkedIn)]
     [TestCase("direct", null, TrafficSources.Direct)]
+    [TestCase("share", null, TrafficSources.Share)]
+    [TestCase("SHARE", "www.google.com", TrafficSources.Share)]
+    [TestCase("sharepoint", null, TrafficSources.Other)]
     [TestCase("newsletter-2026", "www.google.com", TrafficSources.Other)]
     [TestCase(null, "www.google.de", TrafficSources.Google)]
     [TestCase(null, "www.bing.com", TrafficSources.Bing)]
@@ -110,7 +115,7 @@ public class VisitClassificationTests
     {
         TrafficSources.All.ShouldBe(new[]
         {
-            "chatgpt.com", "perplexity", "claude", "google", "bing", "duckduckgo", "github", "linkedin", "direct", "other",
+            "chatgpt.com", "perplexity", "claude", "google", "bing", "duckduckgo", "github", "linkedin", "direct", "share", "other",
         });
     }
 }

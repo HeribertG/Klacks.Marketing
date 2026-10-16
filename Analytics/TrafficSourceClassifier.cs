@@ -42,6 +42,11 @@ public static class TrafficSourceClassifier
                 return TrafficSources.Direct;
             }
 
+            if (value.Equals(TrafficSources.Share, StringComparison.OrdinalIgnoreCase))
+            {
+                return TrafficSources.Share;
+            }
+
             return MatchToken(value) ?? TrafficSources.Other;
         }
 

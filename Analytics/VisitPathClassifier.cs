@@ -61,6 +61,7 @@ public static class VisitPathClassifier
     {
         var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         {
+            [SiteModes.ExpertSlug] = PageTypes.ExpertStart,
             [KlacksySlug] = PageTypes.Industry,
             [InstallationSlug] = PageTypes.Installation,
             [PageTypes.Offer] = PageTypes.Offer,

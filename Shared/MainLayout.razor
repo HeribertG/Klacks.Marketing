@@ -131,6 +131,7 @@ else
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
     private const string ModeApplyFunction = "klacksMode.apply";
+    private const string PageShownFunction = "klacksC.pageShown";
 
     // Pages whose content is the same for every country and culture combination.
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
@@ -216,6 +217,7 @@ else
             {
                 await JS.InvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
             }
+            await JS.InvokeVoidAsync(PageShownFunction);
             StateHasChanged();
         });
     }

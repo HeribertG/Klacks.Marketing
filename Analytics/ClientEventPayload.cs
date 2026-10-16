@@ -7,7 +7,7 @@ namespace Klacks.Marketing.Analytics;
 /// <summary>
 /// Body of a beacon sent by wwwroot/js/c.js. All fields are only classified and then discarded.
 /// </summary>
-/// <param name="Event">Name of one of the four client events</param>
+/// <param name="Event">Name of one of the client events accepted by ClientEventEndpoint</param>
 /// <param name="Path">location.pathname of the page the click happened on</param>
 /// <param name="Campaign">utm_source or ref parameter of that page, if any</param>
 /// <param name="RefererHost">Host of document.referrer, if any</param>
