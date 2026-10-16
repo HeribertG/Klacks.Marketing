@@ -54,11 +54,15 @@ else
 }
 
 <!-- INSTALLATION PATHS -->
+@if (NativeSection is not null)
+{
+    <span id="@PageSectionIds.OfficePc" class="block scroll-mt-24" aria-hidden="true"></span>
+}
 <section class="reveal pb-14 md:pb-24 px-5 sm:px-8 max-w-7xl mx-auto no-line-rule">
     <div class="reveal-stagger grid @PathGridColumns gap-8 items-stretch">
         @if (NativeSection is { } native)
         {
-            <InstallPathCard Path="@native.Path" Id="@PageSectionIds.OfficePc">
+            <InstallPathCard Path="@native.Path">
                 <Actions>
                     <div class="flex flex-wrap gap-3">
                         <a href="@NativeSettings.WindowsUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">

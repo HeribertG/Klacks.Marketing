@@ -19,7 +19,10 @@ public class SimpleBuildingBlocksTests
 {
     private const string SwissCountry = "land-ch";
     private const string SharedUrl = "https://klacks-software.ch/land-ch";
-    private const string InstallPageKey = "installation";
+    private const string OfficePcDownloadUrl = "https://example.test/klacks-office-pc-win-x64.zip";
+    private const string SectionStart = "<section";
+    private const string SectionEnd = "</section>";
+    private const string OfficePcCardStart = "<div class=\"card-hover p-8 ";
 
     [Test]
     public async Task Recorded_video_is_click_to_play_and_carries_the_play_event()
@@ -118,30 +121,19 @@ public class SimpleBuildingBlocksTests
     }
 
     [Test]
-    public void Install_page_marks_the_office_pc_card_for_the_simple_page_link()
+    public async Task Install_page_puts_the_office_pc_anchor_outside_the_reveal_animation()
     {
-        MarketingProjectPaths.ReadSource("Shared/InstallPageTemplate.razor").ShouldContain("Id=\"@PageSectionIds.OfficePc\"");
         PageSectionIds.OfficePc.ShouldBe("buero-pc");
-    }
 
-    [Test]
-    public async Task Install_path_card_carries_the_given_id_on_the_card_itself()
-    {
-        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, SwissCountry));
-        var path = services.GetRequiredService<IPageContentProvider>().GetInstallPage(SupportedCultures.DefaultCode, InstallPageKey).Native!.Path;
+        var html = await InstallPageRenderer.RenderAsync(SupportedCultures.DefaultCode, enabled: true, windowsUrl: OfficePcDownloadUrl);
+        var anchor = html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", StringComparison.Ordinal);
 
-        var withId = await MarketingComponentHost.RenderAsync<InstallPathCard>(services, new Dictionary<string, object?>
-        {
-            [nameof(InstallPathCard.Path)] = path,
-            [nameof(InstallPathCard.Id)] = PageSectionIds.OfficePc,
-        });
-        var withoutId = await MarketingComponentHost.RenderAsync<InstallPathCard>(services, new Dictionary<string, object?>
-        {
-            [nameof(InstallPathCard.Path)] = path,
-        });
-
-        withId.ShouldStartWith($"<div id=\"{PageSectionIds.OfficePc}\" class=\"card-hover scroll-mt-24 ");
-        withoutId.ShouldStartWith("<div class=\"card-hover scroll-mt-24 ");
+        anchor.ShouldBeGreaterThan(-1);
+        html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", anchor + 1, StringComparison.Ordinal).ShouldBe(-1);
+        var lastSectionStart = html.LastIndexOf(SectionStart, anchor, StringComparison.Ordinal);
+        var lastSectionEnd = html.LastIndexOf(SectionEnd, anchor, StringComparison.Ordinal);
+        lastSectionEnd.ShouldBeGreaterThan(lastSectionStart, "the anchor must not sit inside a .reveal section: its transform shifts the jump target under the fixed header");
+        html.IndexOf(OfficePcCardStart, anchor, StringComparison.Ordinal).ShouldBeGreaterThan(anchor);
     }
 
     [Test]
