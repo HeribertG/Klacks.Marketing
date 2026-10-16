@@ -40,14 +40,14 @@
             <div class="text-center mb-10 md:mb-12">
                 @if (Definition.EyebrowKey is not null)
                 {
-                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Sh(Definition.EyebrowKey)</span>
+                    <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@Vt(Definition.EyebrowKey)</span>
                 }
-                <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight @(Definition.EyebrowKey is not null ? "mt-4" : string.Empty)">@Sh(Definition.TitleKey)</h2>
-                <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Sh(Definition.SubtitleKey)</p>
+                <h2 id="@HeadingId" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight @(Definition.EyebrowKey is not null ? "mt-4" : string.Empty)">@Vt(Definition.TitleKey)</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto mt-4">@Vt(Definition.SubtitleKey)</p>
             </div>
         }
         <div class="daily-ops-carousel @(Compact ? string.Empty : "max-w-4xl mx-auto")" role="region" aria-roledescription="carousel"
-             aria-labelledby="@(Compact ? null : HeadingId)" aria-label="@(Compact ? Sh(Definition.TitleKey) : null)"
+             aria-labelledby="@(Compact ? null : HeadingId)" aria-label="@(Compact ? Vt(Definition.TitleKey) : null)"
              tabindex="-1" data-carousel>
             <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="@Sh(NavLabelKey)">
                 @for (var index = 0; index < _videos.Count; index++)
@@ -57,7 +57,7 @@
                     <button type="button"
                             class="rounded-full px-4 py-2 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelected ? "bg-secondary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
                             aria-current="@(isSelected ? "true" : null)" aria-controls="@SlideId"
-                            @onclick="() => GoToAsync(itemIndex)">@Sh(_videos[index].TitleKey)</button>
+                            @onclick="() => GoToAsync(itemIndex)">@Vt(_videos[index].TitleKey)</button>
                 }
             </div>
             <div class="daily-ops-carousel-body">
@@ -71,6 +71,7 @@
                     <DemoVideo @key="current.VideoName" Culture="@Culture" VideoName="@current.VideoName" TitleKey="@(Compact ? null : current.TitleKey)"
                                LabelKey="@current.LabelKey" CaptionKey="@current.CaptionKey" TitleClass="@SlideTitleClass"
                                Width="@Definition.VideoWidth" Height="@Definition.VideoHeight" Deferred="true" Loop="false" HoverZoom="true" FigureClass="mb-0"
+                               ContentKey="@Definition.ContentKey" PlayEvent="@Definition.PlayEvent"
                                CaptionFooter="@SlideFooter?.Invoke(current.VideoName)" />
                 </div>
                 <button type="button" data-carousel-next
@@ -79,24 +80,24 @@
                     <span class="material-symbols-outlined icon-directional" aria-hidden="true">arrow_forward</span>
                 </button>
             </div>
-            <p class="sr-only" aria-live="polite" aria-atomic="true">@Sh(current.TitleKey) - @SlideLabel()</p>
+            <p class="sr-only" aria-live="polite" aria-atomic="true">@Vt(current.TitleKey) - @SlideLabel()</p>
         </div>
         @if (!Compact && Definition.NoteKey is not null)
         {
-            <p class="max-w-2xl mx-auto text-xs text-on-surface-variant leading-relaxed text-center mt-4 mb-0">@Sh(Definition.NoteKey)</p>
+            <p class="max-w-2xl mx-auto text-xs text-on-surface-variant leading-relaxed text-center mt-4 mb-0">@Vt(Definition.NoteKey)</p>
         }
         @if (!Compact && Definition.HintKey is not null)
         {
             <div class="max-w-2xl mx-auto mt-10 flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 rounded-2xl bg-surface-container-low p-5 md:p-6">
                 <span class="shrink-0 self-start rounded-full bg-secondary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-secondary-container">@Sh(HintLabelKey)</span>
-                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Sh(Definition.HintKey)</p>
+                <p class="text-sm text-on-surface-variant leading-relaxed m-0">@Vt(Definition.HintKey)</p>
             </div>
         }
     </section>
 }
 
 @code {
-    private const string SharedContentKey = "shared";
+    private const string SharedContentKey = DemoCarouselDefinition.SharedContentKey;
     private const string HintLabelKey = "dailyOps.hintLabel";
     private const string NavLabelKey = "dailyOps.navLabel";
     private const string PreviousKey = "dailyOps.previous";
@@ -191,6 +192,8 @@
         string.Format(CultureInfo.InvariantCulture, Sh(SlideLabelKey), _currentIndex + 1, _videos.Count);
 
     private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+
+    private string Vt(string key) => ContentProvider.GetText(Culture, Definition.ContentKey, key);
 
     public void Dispose()
     {

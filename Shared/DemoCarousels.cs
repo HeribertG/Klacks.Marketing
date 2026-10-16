@@ -1,12 +1,15 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
+using Klacks.Marketing.Analytics;
+using Klacks.Marketing.Localization;
+
 namespace Klacks.Marketing.Shared;
 
 /// <summary>
 /// The demo video carousels of the landing pages, in page order: rule violations (live findings of the error list), scenarios (planning
 /// without risk), everyday roster work, special shifts
 /// (tour containers) and special shifts (sporadic, time range, several employees per shift, several shifts per day, mandatory
-/// qualification) and Klacksy tasks in the chat (planning a week, forming groups by residence, by qualification and by both). A carousel renders only the videos recorded in the page culture and nothing at all without any.
+/// qualification) and Klacksy tasks in the chat (planning a week, forming groups by residence, by qualification and by both); SimpleHero is the hero carousel of the simple page (texts in simple.json, not part of All). A carousel renders only the videos recorded in the page culture and nothing at all without any.
 /// </summary>
 public static class DemoCarousels
 {
@@ -17,6 +20,7 @@ public static class DemoCarousels
     public const string SporadicTimeRangeSectionId = "spezialdienste-sporadisch-zeitbereich";
     public const string KlacksySectionId = "klacksy-aufgaben";
     public const string HeroSectionId = "hero-videos";
+    public const string SimpleHeroSectionId = "einfach-videos";
     public const string KlacksyVideoNoteKey = "klacksyOps.videoNote";
 
     private const int KlacksyVideoWidth = 1000;
@@ -115,6 +119,20 @@ public static class DemoCarousels
         },
         VideoWidth: KlacksyVideoWidth,
         VideoHeight: KlacksyVideoHeight);
+
+    public static DemoCarouselDefinition SimpleHero { get; } = new(
+        SimpleHeroSectionId,
+        "videos.title",
+        "videos.subtitle",
+        new DemoCarouselVideo[]
+        {
+            new(SimpleVideo.PlansWeekVideoName, "videos.plansWeek.title", "hero.videoLabel", "videos.plansWeek.caption"),
+            new(SimpleVideo.KlacksyCallVideoName, "videos.klacksyCall.title", "talk.videoLabel", "videos.klacksyCall.caption"),
+        },
+        VideoWidth: SimpleVideo.RecordedVideoWidth,
+        VideoHeight: SimpleVideo.RecordedVideoHeight,
+        ContentKey: SiteModes.SimpleContentKey,
+        PlayEvent: nameof(VisitEvent.VideoPlay));
 
     public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }

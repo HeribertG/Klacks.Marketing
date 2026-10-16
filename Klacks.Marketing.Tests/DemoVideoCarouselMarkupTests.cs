@@ -143,7 +143,7 @@ public class DemoVideoCarouselMarkupTests
         markup.ShouldContain("role=\"region\"");
         markup.ShouldContain("aria-roledescription=\"carousel\"");
         markup.ShouldContain("aria-labelledby=\"@(Compact ? null : HeadingId)\"");
-        markup.ShouldContain("aria-label=\"@(Compact ? Sh(Definition.TitleKey) : null)\"");
+        markup.ShouldContain("aria-label=\"@(Compact ? Vt(Definition.TitleKey) : null)\"");
         markup.ShouldContain("aria-roledescription=\"slide\"");
         markup.ShouldContain("aria-label=\"@SlideLabel()\"");
         markup.ShouldContain("aria-live=\"polite\"");
@@ -181,8 +181,8 @@ public class DemoVideoCarouselMarkupTests
 
         markup.ShouldContain("[Parameter, EditorRequired] public required DemoCarouselDefinition Definition");
         markup.ShouldContain("<section id=\"@Definition.SectionId\"");
-        markup.ShouldContain("@Sh(Definition.TitleKey)");
-        markup.ShouldContain("@Sh(Definition.SubtitleKey)");
+        markup.ShouldContain("@Vt(Definition.TitleKey)");
+        markup.ShouldContain("@Vt(Definition.SubtitleKey)");
         markup.ShouldContain("Definition.Videos.Where(video => VideoCatalog.Find(video.VideoName, Culture) is not null)");
         markup.ShouldContain("@if (_videos.Count > 0)");
         markup.ShouldNotContain("\"dailyOps.title\"");
@@ -211,7 +211,7 @@ public class DemoVideoCarouselMarkupTests
 
         markup.ShouldContain("@if (Definition.EyebrowKey is not null)");
         markup.ShouldContain("@if (!Compact && Definition.HintKey is not null)");
-        markup.ShouldContain("@Sh(Definition.HintKey)");
+        markup.ShouldContain("@Vt(Definition.HintKey)");
     }
 
     [Test]

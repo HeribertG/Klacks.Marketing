@@ -40,7 +40,7 @@ public class SimpleContentTests
         "ein Satz genügt", "genügt ein Satz", "Klacksy prüft",
     };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData." };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData.", "videos.title", "videos.subtitle", "videos.plansWeek.title", "videos.klacksyCall.title" };
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {

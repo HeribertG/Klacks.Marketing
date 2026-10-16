@@ -3,7 +3,7 @@
 namespace Klacks.Marketing.Shared;
 
 /// <summary>
-/// Describes one carousel section of a landing page: its anchor, its texts in shared.json and its videos.
+/// Describes one carousel section of a landing page: its anchor, its texts (shared.json unless ContentKey says otherwise) and its videos.
 /// </summary>
 /// <param name="SectionId">Unique anchor of the section; the heading and slide DOM ids are derived from it</param>
 /// <param name="TitleKey">Key of the section heading</param>
@@ -14,6 +14,8 @@ namespace Klacks.Marketing.Shared;
 /// <param name="VideoWidth">Intrinsic width of the recorded videos in pixels, reserves the layout space before playback</param>
 /// <param name="VideoHeight">Intrinsic height of the recorded videos in pixels</param>
 /// <param name="NoteKey">Optional key of a mandatory note shown directly below the videos (Klacksy: accelerated waiting times)</param>
+/// <param name="ContentKey">Content file of the section and video texts (default shared.json; the simple page uses simple.json)</param>
+/// <param name="PlayEvent">Optional client event sent by wwwroot/js/c.js on the first start of each video (data-c-play)</param>
 public sealed record DemoCarouselDefinition(
     string SectionId,
     string TitleKey,
@@ -23,8 +25,11 @@ public sealed record DemoCarouselDefinition(
     string? HintKey = null,
     int VideoWidth = DemoCarouselDefinition.DefaultVideoWidth,
     int VideoHeight = DemoCarouselDefinition.DefaultVideoHeight,
-    string? NoteKey = null)
+    string? NoteKey = null,
+    string ContentKey = DemoCarouselDefinition.SharedContentKey,
+    string? PlayEvent = null)
 {
+    public const string SharedContentKey = "shared";
     public const int DefaultVideoWidth = 1280;
     public const int DefaultVideoHeight = 800;
 }

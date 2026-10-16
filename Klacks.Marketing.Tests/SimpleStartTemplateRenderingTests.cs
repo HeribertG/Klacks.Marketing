@@ -111,6 +111,18 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
+    public async Task Hero_shows_a_carousel_with_clickable_video_titles_like_the_expert_hero()
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
+
+        html.ShouldContain($"id=\"{DemoCarousels.SimpleHeroSectionId}-slide\"");
+        html.ShouldContain(">Nächste Woche planen</button>");
+        html.ShouldContain(">So rufst du Klacksy</button>");
+        html.ShouldContain("aria-current=\"true\"");
+        html.ShouldContain("data-c-play=\"VideoPlay\"");
+    }
+
+    [Test]
     public async Task Every_text_uses_the_du_form_including_the_demo_note_and_the_structured_data()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));

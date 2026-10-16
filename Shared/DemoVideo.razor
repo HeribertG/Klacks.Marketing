@@ -10,7 +10,8 @@
    Deferred renders the video without autoplay and with preload="none" (carousel slides: nothing is
    downloaded until rule-conflict-video.js starts playback of the visible video). HoverZoom puts video and
    poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots.
-   CaptionFooter renders inside the figcaption right after the caption (one text block). *@
+   CaptionFooter renders inside the figcaption right after the caption (one text block). ContentKey names the content
+   file of the label, caption and title keys (default shared.json); PlayEvent, if set, becomes data-c-play (c.js). *@
 @if (_sources is not null)
 {
     <figure class="@FigureClass">
@@ -23,7 +24,8 @@
                    muted autoplay="@(!Deferred)" loop="@Loop" playsinline preload="@(Deferred ? PreloadNone : PreloadMetadata)"
                    width="@Width" height="@Height"
                    poster="@_sources.PosterPath"
-                   aria-label="@Sh(LabelKey)">
+                   aria-label="@Sh(LabelKey)"
+                   data-c-play="@PlayEvent">
                 <source src="@_sources.WebmPath" type="@WebmMimeType" />
                 <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
             </video>
@@ -71,7 +73,6 @@ else if (Fallback is not null)
 
     private const string WebmMimeType = "video/webm";
     private const string Mp4MimeType = "video/mp4";
-    private const string SharedContentKey = "shared";
     private const string PreloadNone = "none";
     private const string PreloadMetadata = "metadata";
     private const string DefaultTitleClass = "text-lg font-bold text-primary mb-4 text-center";
@@ -93,10 +94,12 @@ else if (Fallback is not null)
     [Parameter] public string FigureClass { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Fallback { get; set; }
     [Parameter] public RenderFragment? CaptionFooter { get; set; }
+    [Parameter] public string ContentKey { get; set; } = DemoCarouselDefinition.SharedContentKey;
+    [Parameter] public string? PlayEvent { get; set; }
     protected override void OnParametersSet()
     {
         _sources = VideoCatalog.Find(VideoName, Culture);
     }
 
-    private string Sh(string key) => ContentProvider.GetText(Culture, SharedContentKey, key);
+    private string Sh(string key) => ContentProvider.GetText(Culture, ContentKey, key);
 }
