@@ -132,6 +132,23 @@ public class SimpleBuildingBlocksTests
     }
 
     [Test]
+    public void A_click_on_the_poster_of_an_unloaded_simple_video_starts_it_after_the_native_handler()
+    {
+        var script = MarketingProjectPaths.ReadSource("wwwroot/js/simple-video-click.js");
+
+        script.ShouldContain("video.simple-video");
+        script.ShouldContain("addEventListener('click'");
+        script.ShouldContain("setTimeout(");
+        script.ShouldContain("readyState === 0");
+        script.ShouldContain(".paused");
+        script.ShouldContain(".play()");
+        script.ShouldNotContain(".preload");
+        script.ShouldNotContain("localStorage");
+        MarketingProjectPaths.ReadSource("Pages/_Layout.cshtml").ShouldContain("js/simple-video-click.js");
+        MarketingProjectPaths.ReadSource("Shared/SimpleVideo.razor").ShouldContain("preload=\"none\"");
+    }
+
+    [Test]
     public void Share_script_uses_the_clipboard_and_no_storage()
     {
         var script = MarketingProjectPaths.ReadSource("wwwroot/js/share-link.js");
