@@ -100,13 +100,13 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task With_recordings_both_videos_render_click_to_play_and_each_has_the_demo_note()
+    public async Task With_recordings_both_videos_play_like_the_expert_demo_videos_and_each_has_the_demo_note()
     {
         var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog());
 
         html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-de.webp");
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-de.webp");
-        html.ShouldNotContain("autoplay");
+        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(2);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(2);
     }
 

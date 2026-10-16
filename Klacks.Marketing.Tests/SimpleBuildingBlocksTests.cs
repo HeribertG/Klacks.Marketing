@@ -26,7 +26,7 @@ public class SimpleBuildingBlocksTests
     private const string OfficePcCardStart = "<div class=\"card-hover p-8 ";
 
     [Test]
-    public async Task Recorded_video_is_click_to_play_and_carries_the_play_event()
+    public async Task Recorded_video_plays_like_the_expert_demo_videos_and_carries_the_play_event()
     {
         var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, SwissCountry), new StubVideoCatalog());
 
@@ -38,11 +38,13 @@ public class SimpleBuildingBlocksTests
 
         html.ShouldContain("<video");
         html.ShouldContain("data-c-play=\"VideoPlay\"");
-        html.ShouldContain("preload=\"none\"");
-        html.ShouldContain(" controls");
+        html.ShouldContain("rule-demo-video");
+        html.ShouldContain("autoplay");
+        html.ShouldContain(" loop");
+        html.ShouldContain("rule-demo-poster");
+        html.ShouldContain("screenshot-hover-zoom");
         html.ShouldContain("poster=\"videos/simple-plans-week-de.webp\"");
-        html.ShouldNotContain("autoplay");
-        html.ShouldNotContain("rule-demo-video");
+        html.ShouldNotContain(" controls");
     }
 
     [Test]
@@ -129,23 +131,6 @@ public class SimpleBuildingBlocksTests
         script.ShouldContain("[data-share-copy]");
         script.ShouldContain("execCommand('copy')");
         script.ShouldContain("textContent = ''");
-    }
-
-    [Test]
-    public void A_click_on_the_poster_of_an_unloaded_simple_video_starts_it_after_the_native_handler()
-    {
-        var script = MarketingProjectPaths.ReadSource("wwwroot/js/simple-video-click.js");
-
-        script.ShouldContain("video.simple-video");
-        script.ShouldContain("addEventListener('click'");
-        script.ShouldContain("setTimeout(");
-        script.ShouldContain("readyState === 0");
-        script.ShouldContain(".paused");
-        script.ShouldContain(".play()");
-        script.ShouldNotContain(".preload");
-        script.ShouldNotContain("localStorage");
-        MarketingProjectPaths.ReadSource("Pages/_Layout.cshtml").ShouldContain("js/simple-video-click.js");
-        MarketingProjectPaths.ReadSource("Shared/SimpleVideo.razor").ShouldContain("preload=\"none\"");
     }
 
     [Test]

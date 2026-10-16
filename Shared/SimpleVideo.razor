@@ -1,22 +1,28 @@
 @inject ILocalizedVideoCatalog VideoCatalog
 
-@* Click-to-play video of the simple start page (spec §5/§7, deviation A2): poster first, nothing is downloaded before
-   the visitor presses play (preload="none"), native controls, muted, no autoplay, so the "VideoPlay" event
-   (wwwroot/js/c.js, first play per video and page view) counts a real decision. Deliberately not "rule-demo-video",
-   which rule-conflict-video.js would autoplay. Without webm, mp4 and webp poster in the page culture it renders
-   Fallback (default: nothing). VideoName is the base name ("simple-plans-week"), Culture the page culture, Label the
-   accessible name, Width/Height the intrinsic size that reserves the layout space. *@
+@* Video of the simple start page, played like the demo videos of the expert page (DemoVideo.razor): muted, looping,
+   autoplay, no controls; wwwroot/js/rule-conflict-video.js (selector video.rule-demo-video) pauses it outside the
+   viewport and in a hidden tab, and under prefers-reduced-motion only the poster image is shown. The video sits in the
+   shared screenshot-hover-zoom frame. "VideoPlay" (wwwroot/js/c.js) counts the first start per video and page view,
+   i.e. the video reached the viewport. Without webm, mp4 and webp poster in the page culture it renders Fallback
+   (default: nothing). VideoName is the base name ("simple-plans-week"), Culture the page culture, Label the accessible
+   name, Width/Height the intrinsic size that reserves the layout space. *@
 @if (_sources is not null)
 {
-    <video class="simple-video w-full h-auto rounded-2xl shadow-xl bg-surface-container-high"
-           controls muted playsinline preload="none"
-           width="@Width" height="@Height"
-           poster="@_sources.PosterPath"
-           aria-label="@Label"
-           data-c-play="VideoPlay">
-        <source src="@_sources.WebmPath" type="@WebmMimeType" />
-        <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
-    </video>
+    <div class="@HoverZoomFrameClass">
+        <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl bg-surface-container-high"
+               muted autoplay loop playsinline preload="metadata"
+               width="@Width" height="@Height"
+               poster="@_sources.PosterPath"
+               aria-label="@Label"
+               data-c-play="VideoPlay">
+            <source src="@_sources.WebmPath" type="@WebmMimeType" />
+            <source src="@_sources.Mp4Path" type="@Mp4MimeType" />
+        </video>
+        <img class="rule-demo-poster w-full h-auto rounded-2xl shadow-xl"
+             src="@_sources.PosterPath" alt="@Label"
+             width="@Width" height="@Height" loading="lazy" />
+    </div>
 }
 else if (Fallback is not null)
 {
@@ -31,6 +37,7 @@ else if (Fallback is not null)
 
     private const string WebmMimeType = "video/webm";
     private const string Mp4MimeType = "video/mp4";
+    private const string HoverZoomFrameClass = "screenshot-hover-zoom rounded-2xl";
 
     private LocalizedVideoSources? _sources;
 
