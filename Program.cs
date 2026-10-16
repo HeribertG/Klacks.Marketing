@@ -121,8 +121,8 @@ const string XmlContentType = "application/xml";
 const string PlainTextContentType = "text/plain; charset=utf-8";
 string[] seoEndpointMethods = [HttpMethods.Get, HttpMethods.Head];
 
-app.MapMethods("/sitemap.xml", seoEndpointMethods, (HttpContext context, IPageContentProvider contentProvider) =>
-    SeoText(context, XmlContentType, () => SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn)));
+app.MapMethods("/sitemap.xml", seoEndpointMethods, (HttpContext context, IPageContentProvider contentProvider, IOptions<SiteModeOptions> siteMode) =>
+    SeoText(context, XmlContentType, () => SitemapGenerator.Build(baseUrl, contentProvider.HasContentIn, siteMode.Value.Enabled)));
 
 app.MapMethods(DocsSitemapIndexGenerator.IndexPath, seoEndpointMethods, (HttpContext context) =>
     SeoText(context, XmlContentType, () => DocsSitemapIndexGenerator.Build(baseUrl)));

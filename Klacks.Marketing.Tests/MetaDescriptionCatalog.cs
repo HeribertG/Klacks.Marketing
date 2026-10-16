@@ -8,6 +8,8 @@ using Klacks.Marketing.Localization.Seo;
 /// <summary>
 /// Enumerates the meta description every page serves in every culture, using the same source selection as the
 /// page components: dedicated "metaDescription" first, then the hero subtitle (or the page text for legal pages).
+/// German country roots are described as the simple start page (simple.json) plus the expert start page
+/// '/land-xx/experten' (land-xx.json), the production state with SimpleMode:Enabled.
 /// </summary>
 internal static class MetaDescriptionCatalog
 {
@@ -16,6 +18,8 @@ internal static class MetaDescriptionCatalog
     private const string KlacksySlug = "klacksy";
     private const string InstallationSlug = "installation";
     private const string CountryStartType = "country-start";
+    private const string SimpleStartType = "simple-start";
+    private const string ExpertStartType = "expert-start";
     private const string MasterCountryKey = "land-ch";
     private const string JsonExtension = ".json";
     private const string SmallBusinessPage = "kleine-betriebe";
@@ -59,7 +63,19 @@ internal static class MetaDescriptionCatalog
                 .Select(industry => industry.Slug)
                 .Append(KlacksySlug);
 
-            AddIndustry(entries, provider, contentRoot, culture, CountryStartType, country, $"{prefix}/{country}");
+            if (SiteModes.HasSimplePage(culture, enabled: true))
+            {
+                var simpleSource = provider.GetText(culture, SiteModes.SimpleContentKey, MetaDescriptionKey);
+                entries.Add(new Entry(
+                    culture, SimpleStartType, country, $"{prefix}/{country}", FlatFile(contentRoot, culture, SiteModes.SimpleContentKey),
+                    MetaDescriptionKey, simpleSource, SeoText.ToDescription(simpleSource), provider.HasContentIn(culture, country)));
+                AddIndustry(entries, provider, contentRoot, culture, ExpertStartType, country, $"{prefix}/{SiteModes.ExpertRoutePath(country)}");
+            }
+            else
+            {
+                AddIndustry(entries, provider, contentRoot, culture, CountryStartType, country, $"{prefix}/{country}");
+            }
+
             foreach (var slugName in slugs)
             {
                 AddIndustry(entries, provider, contentRoot, culture, slugName, $"{country}-{slugName}", $"{prefix}/{country}/{slugName}");

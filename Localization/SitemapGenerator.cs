@@ -78,7 +78,10 @@ public static class SitemapGenerator
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
     // left out, matching the noindex/hreflang rule in SeoHead.
-    public static string Build(string baseUrl, Func<string, string, bool> hasContentIn)
+    // includeExpertStartPages lists the German expert start pages ("/land-ch/experten", SimpleMode:Enabled) as plain
+    // entries without alternates: in stage 1 they exist in the default culture only, so an hreflang set would point
+    // at URLs that answer 404.
+    public static string Build(string baseUrl, Func<string, string, bool> hasContentIn, bool includeExpertStartPages = false)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
         var sb = new StringBuilder();
@@ -93,6 +96,16 @@ public static class SitemapGenerator
         foreach (var countryPageKey in CountryIndustries.AllCountries)
         {
             AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
+        }
+
+        if (includeExpertStartPages)
+        {
+            foreach (var countryPageKey in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
+            {
+                sb.AppendLine("  <url>");
+                sb.AppendLine($"    <loc>{BuildUrl(trimmedBase, SupportedCultures.Default, SiteModes.ExpertRoutePath(countryPageKey))}</loc>");
+                sb.AppendLine("  </url>");
+            }
         }
 
         // The company-wide pages are reachable under every country, but their content is
