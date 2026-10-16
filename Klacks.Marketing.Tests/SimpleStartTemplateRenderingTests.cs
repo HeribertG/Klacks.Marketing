@@ -40,6 +40,12 @@ public class SimpleStartTemplateRenderingTests
     private const string AmberSurface = "bg-tertiary-fixed";
     private const string AmberText = "text-on-tertiary-fixed";
     private const string DuNoteText = "In deiner eigenen Installation erfasst du deine eigenen Daten";
+    private const string H1ClassPattern = @"<h1\b[^>]*\bclass=""([^""]*)""";
+    private const string ManualHyphensClass = "hyphens-manual";
+    private const string AutoHyphensClass = "hyphens-auto";
+    private const string StartSectionPattern = @"<section id=""loslegen"".*?</section>";
+    private const string StartPlaygroundButtonPattern = @"<button\b[^>]*\bclass=""([^""]*)""";
+    private const string TopAlignedClasses = "flex flex-col items-start justify-start";
 
     private static IEnumerable<string> Countries => CountryIndustries.AllCountries;
 
@@ -177,6 +183,27 @@ public class SimpleStartTemplateRenderingTests
         });
 
         SoftwareApplicationDescription(html).ShouldBe(SeoText.ToDescription(Content.GetText(SupportedCultures.DefaultCode, "index", "hero.subtitle")));
+    }
+
+    [Test]
+    public async Task Hero_title_breaks_only_at_manual_hyphenation_points()
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey);
+
+        var classes = Regex.Match(html, H1ClassPattern).Groups[1].Value.Split(' ');
+        classes.ShouldContain(ManualHyphensClass);
+        classes.ShouldNotContain(AutoHyphensClass);
+    }
+
+    [Test]
+    public async Task Start_playground_card_aligns_its_content_to_the_top_like_its_neighbours()
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey);
+        var start = Regex.Match(html, StartSectionPattern, RegexOptions.Singleline);
+        start.Success.ShouldBeTrue();
+
+        var buttonClasses = Regex.Match(start.Value, StartPlaygroundButtonPattern).Groups[1].Value;
+        buttonClasses.ShouldContain(TopAlignedClasses);
     }
 
     [Test]

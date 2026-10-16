@@ -9,7 +9,7 @@
 <nav class="fixed top-0 w-full z-50 glass-nav no-line-rule@(CurrentMode.ShowSwitch ? SwitchHeaderClasses : string.Empty)">
     @if (CurrentMode.ShowSwitch)
     {
-        <div class="flex justify-between items-center gap-3 sm:gap-6 w-full px-4 sm:px-8 h-[4.5rem] max-w-7xl mx-auto">
+        <div class="relative z-10 flex justify-between items-center gap-3 sm:gap-6 w-full px-4 sm:px-8 h-[4.5rem] max-w-7xl mx-auto">
             @Logo
             <div class="flex items-center gap-2 sm:gap-3 min-w-0">
                 <ExpertModeSwitch />
@@ -652,7 +652,35 @@ else
 
     private string Ix(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, "index", key);
 
-    private string CountryMenuClass => IsSimpleMode ? "relative hidden sm:block" : "relative";
+    // The simple header has no mobile menu, so its country switch stays visible on phones as a compact flag button
+    // (the country code shows from the sm breakpoint on); every other header keeps its plain button markup unchanged.
+    private const string CountryToggleClassBase = "flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase";
+    private const string CountryToggleClassSimple = "flex items-center gap-1.5 px-2 sm:px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase";
+    private const string AriaTrue = "true";
+    private const string AriaFalse = "false";
+
+    private string CountryToggleClass => IsSimpleMode ? CountryToggleClassSimple : CountryToggleClassBase;
+
+    private string? CountryToggleLabel => IsSimpleMode ? Sh("nav.countries") : null;
+
+    private string? CountryToggleHasPopup => IsSimpleMode ? AriaTrue : null;
+
+    private string? CountryToggleExpanded => IsSimpleMode ? (_countryMenuOpen ? AriaTrue : AriaFalse) : null;
+
+    private string? CountryToggleIconHidden => IsSimpleMode ? AriaTrue : null;
+
+    private RenderFragment CountryToggleCode
+    {
+        get
+        {
+            if (IsSimpleMode)
+            {
+                return @<span class="hidden sm:inline">@CurrentCountryCode</span>;
+            }
+
+            return @<text>@CurrentCountryCode</text>;
+        }
+    }
 
     private RenderFragment Logo => @<text>
         <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-black no-underline">
@@ -733,11 +761,11 @@ else
         </div>
         @if (ShowCountryDropdown)
         {
-            <div class="@CountryMenuClass">
-                <button type="button" class="flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleCountryMenu">
+            <div class="relative">
+                <button type="button" class="@CountryToggleClass" aria-label="@CountryToggleLabel" aria-haspopup="@CountryToggleHasPopup" aria-expanded="@CountryToggleExpanded" @onclick="ToggleCountryMenu">
                     <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-5 h-auto rounded-[2px]" />
-                    @CurrentCountryCode
-                    <span class="material-symbols-outlined text-base">expand_more</span>
+                    @CountryToggleCode
+                    <span class="material-symbols-outlined text-base" aria-hidden="@CountryToggleIconHidden">expand_more</span>
                 </button>
                 <div class="country-dropdown dropdown-menu @(_countryMenuOpen ? "dropdown-menu-open" : "") absolute top-full right-0 mt-2 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high py-2 min-w-[10rem]">
                     @foreach (var country in CurrentLanguageCountries)

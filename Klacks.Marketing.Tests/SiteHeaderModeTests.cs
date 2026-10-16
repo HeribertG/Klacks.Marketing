@@ -12,7 +12,8 @@ using Shouldly;
 /// <summary>
 /// The prerendered page carries the mode body class and the header of its mode: the simple page shows only jump links
 /// to its own sections, the expert pages keep today's navigation; the logo always leads to the simple page; switching
-/// language or country keeps the mode, but never links to an expert start page that a culture does not have.
+/// language or country keeps the mode, but never links to an expert start page that a culture does not have. The simple
+/// header keeps the country switch on phones as a compact flag button whose dropdown opens above the jump links.
 /// </summary>
 [TestFixture]
 public class SiteHeaderModeTests
@@ -25,6 +26,10 @@ public class SiteHeaderModeTests
     private const string SecondRowClass = "h-11 px-";
     private const string SiteMainClass = "<div class=\"site-main ";
     private const string UnchangedBodyTag = "<body class=\"font-['Inter'] bg-background";
+    private const string CountryMenuHiddenOnPhones = "class=\"relative hidden sm:block\"";
+    private const string CountryToggleLabel = "aria-label=\"Länder\" aria-haspopup=\"true\"";
+    private const string TopRowAboveJumpLinksClass = "class=\"relative z-10 flex justify-between";
+    private const string CountryCodeFromSmallScreens = "<span class=\"hidden sm:inline\">CH</span>";
 
     [TestCase("/land-ch", true, "mode-simple")]
     [TestCase("/land-ch/experten", true, "mode-expert")]
@@ -58,6 +63,28 @@ public class SiteHeaderModeTests
         html.ShouldContain("href=\"/land-ch#kosten\"");
         html.ShouldNotContain("href=\"/land-ch#regeln\"");
         html.ShouldNotContain("mobile-menu-panel");
+    }
+
+    [Test]
+    public async Task Simple_header_offers_the_country_switch_on_phones_as_a_compact_flag_button()
+    {
+        var html = WebUtility.HtmlDecode(await GetHtmlAsync(enabled: true, "/land-ch"));
+
+        html.ShouldNotContain(CountryMenuHiddenOnPhones);
+        html.ShouldContain(CountryToggleLabel);
+        html.ShouldContain(CountryCodeFromSmallScreens);
+        html.ShouldContain("href=\"/land-de\"");
+        html.ShouldContain(TopRowAboveJumpLinksClass);
+    }
+
+    [TestCase("/land-ch", false)]
+    [TestCase("/land-ch/experten", true)]
+    public async Task Headers_without_the_simple_mode_keep_the_plain_country_button(string path, bool enabled)
+    {
+        var html = WebUtility.HtmlDecode(await GetHtmlAsync(enabled, path));
+
+        html.ShouldNotContain(CountryToggleLabel);
+        html.ShouldNotContain(CountryCodeFromSmallScreens);
     }
 
     [Test]
