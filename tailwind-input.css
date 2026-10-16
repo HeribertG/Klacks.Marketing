@@ -712,3 +712,101 @@ body:has(.feature-ticker-bar) footer {
         grid-row: 1 / -1;
     }
 }
+
+/* Simple / expert mode (spec docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4). The body class is
+   set by _Layout.cshtml and kept in sync by wwwroot/js/site-mode.js; while SimpleMode:Enabled is off it is absent.
+   The expert body class is also set on pages without switch (cultures without simple page), so every expert rule is
+   tied to a hook that only exists with the visible switch: .site-main (content wrapper), .site-header-modes (nav) or
+   the switch itself (ModeStyleScopeTests). The second header row (44px) is visible in the simple mode always and in
+   the expert mode from xl; --site-header-extra adds exactly that height to the content offset, and scroll-padding-top
+   adds it to the existing scroll-mt-24 of anchor targets (needs :has(); without it only anchor jumps are 44px off). */
+body.mode-simple {
+    @apply bg-surface-container-lowest;
+}
+
+body.mode-simple .site-main {
+    --site-header-extra: 2.75rem;
+}
+
+:root:has(> body.mode-simple .site-main) {
+    scroll-padding-top: 2.75rem;
+}
+
+@media (min-width: 1280px) {
+    body.mode-expert .site-main {
+        --site-header-extra: 2.75rem;
+    }
+
+    :root:has(> body.mode-expert .site-main) {
+        scroll-padding-top: 2.75rem;
+    }
+}
+
+.site-main {
+    padding-top: var(--site-header-extra, 0rem);
+}
+
+nav.site-header-modes::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 4px;
+    @apply bg-secondary;
+}
+
+body.mode-simple nav.site-header-modes::before {
+    @apply bg-tertiary-fixed;
+}
+
+.mode-switch-track {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    border-width: 2px;
+    border-style: solid;
+    @apply border-on-tertiary-fixed-variant bg-tertiary-fixed;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.mode-switch-thumb {
+    position: absolute;
+    top: 0.125rem;
+    inset-inline-start: 0.125rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    @apply bg-on-tertiary-fixed;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.mode-switch[aria-checked="true"] .mode-switch-track {
+    @apply border-secondary bg-secondary;
+}
+
+.mode-switch[aria-checked="true"] .mode-switch-thumb {
+    transform: translateX(1.25rem);
+    @apply bg-on-secondary;
+}
+
+[dir="rtl"] .mode-switch[aria-checked="true"] .mode-switch-thumb {
+    transform: translateX(-1.25rem);
+}
+
+.mode-switch:focus-visible {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 4px;
+    border-radius: 9999px;
+    @apply outline-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mode-switch-track,
+    .mode-switch-thumb {
+        transition: none;
+    }
+}

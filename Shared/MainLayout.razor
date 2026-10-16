@@ -6,7 +6,7 @@
 @implements IDisposable
 
 <!-- NAVIGATION BAR -->
-<nav class="fixed top-0 w-full z-50 glass-nav no-line-rule">
+<nav class="fixed top-0 w-full z-50 glass-nav no-line-rule@(CurrentMode.ShowSwitch ? SwitchHeaderClass : string.Empty)">
     @if (CurrentMode.ShowSwitch)
     {
         <div class="flex justify-between items-center gap-3 sm:gap-6 w-full px-4 sm:px-8 h-[4.5rem] max-w-7xl mx-auto">
@@ -118,6 +118,7 @@ else
 </footer>
 
 @code {
+    private const string SwitchHeaderClass = " site-header-modes";
     private const string ImprintPageKey = "impressum";
     private const string PrivacyPageKey = "datenschutz";
     private const string LicensePageKey = "lizenz";
