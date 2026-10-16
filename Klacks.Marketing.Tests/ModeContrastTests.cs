@@ -59,7 +59,11 @@ public class ModeContrastTests
         var css = MarketingProjectPaths.ReadSource("tailwind-input.css");
 
         css.ShouldContain("body.mode-simple");
-        css.ShouldContain("body.mode-expert");
+        css.ShouldContain(".site-main-simple");
+        css.ShouldContain(".site-main-expert");
+        css.ShouldContain(".site-header-simple");
+        css.ShouldContain(".site-header-expert");
+        css.ShouldContain("--site-header-row");
         css.ShouldContain(".mode-switch-track");
         css.ShouldContain(".mode-switch[aria-checked=\"true\"]");
         css.ShouldContain(".mode-switch:focus-visible");

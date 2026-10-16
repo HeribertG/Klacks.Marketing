@@ -713,49 +713,57 @@ body:has(.feature-ticker-bar) footer {
     }
 }
 
-/* Simple / expert mode (spec docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4). The body class is
-   set by _Layout.cshtml and kept in sync by wwwroot/js/site-mode.js; while SimpleMode:Enabled is off it is absent.
-   The expert body class is also set on pages without switch (cultures without simple page), so every expert rule is
-   tied to a hook that only exists with the visible switch: .site-main (content wrapper), .site-header-modes (nav) or
-   the switch itself (ModeStyleScopeTests). The second header row (44px) is visible in the simple mode always and in
-   the expert mode from xl; --site-header-extra adds exactly that height to the content offset, and scroll-padding-top
-   adds it to the existing scroll-mt-24 of anchor targets (needs :has(); without it only anchor jumps are 44px off). */
+/* Simple / expert mode (spec docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4). Every rule of
+   this section up to the end of the file is scoped (ModeStyleScopeTests): the simple body class only sets the page
+   background; offsets and the topline hang on the mode classes MainLayout writes onto .site-main and the nav, which
+   exist only with the visible switch and change in the same DOM patch as the page. --site-header-row is the second
+   header row (h-11 plus its 1px top border), shown in the simple mode always and in the expert mode from xl; it is
+   added to the content offset and, via scroll-padding-top, to the existing scroll-mt-24 of anchor targets (needs
+   :has(); without it only anchor jumps are off by one row). */
 body.mode-simple {
     @apply bg-surface-container-lowest;
 }
 
-body.mode-simple .site-main {
-    --site-header-extra: 2.75rem;
-}
-
-:root:has(> body.mode-simple .site-main) {
-    scroll-padding-top: 2.75rem;
-}
-
-@media (min-width: 1280px) {
-    body.mode-expert .site-main {
-        --site-header-extra: 2.75rem;
-    }
-
-    :root:has(> body.mode-expert .site-main) {
-        scroll-padding-top: 2.75rem;
-    }
+.site-main,
+:root:has(.site-main) {
+    --site-header-row: calc(2.75rem + 1px);
 }
 
 .site-main {
     padding-top: var(--site-header-extra, 0rem);
 }
 
-nav.site-header-modes::before {
+.site-main-simple {
+    --site-header-extra: var(--site-header-row);
+}
+
+:root:has(.site-main-simple) {
+    scroll-padding-top: var(--site-header-row);
+}
+
+@media (min-width: 1280px) {
+    .site-main-expert {
+        --site-header-extra: var(--site-header-row);
+    }
+
+    :root:has(.site-main-expert) {
+        scroll-padding-top: var(--site-header-row);
+    }
+}
+
+.site-header-modes::before {
     content: '';
     position: absolute;
     inset-inline: 0;
     top: 0;
     height: 4px;
+}
+
+.site-header-expert::before {
     @apply bg-secondary;
 }
 
-body.mode-simple nav.site-header-modes::before {
+.site-header-simple::before {
     @apply bg-tertiary-fixed;
 }
 

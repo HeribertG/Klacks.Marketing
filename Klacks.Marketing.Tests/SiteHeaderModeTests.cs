@@ -23,7 +23,7 @@ public class SiteHeaderModeTests
     private const string SingleRowActionsClass = "class=\"hidden xl:flex items-center gap-3\"";
     private const string TwoRowHeaderClass = "h-[4.5rem]";
     private const string SecondRowClass = "h-11 px-";
-    private const string SiteMainClass = "class=\"site-main\"";
+    private const string SiteMainClass = "<div class=\"site-main ";
     private const string UnchangedBodyTag = "<body class=\"font-['Inter'] bg-background";
 
     [TestCase("/land-ch", true, "mode-simple")]

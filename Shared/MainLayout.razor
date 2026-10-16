@@ -6,7 +6,7 @@
 @implements IDisposable
 
 <!-- NAVIGATION BAR -->
-<nav class="fixed top-0 w-full z-50 glass-nav no-line-rule@(CurrentMode.ShowSwitch ? SwitchHeaderClass : string.Empty)">
+<nav class="fixed top-0 w-full z-50 glass-nav no-line-rule@(CurrentMode.ShowSwitch ? SwitchHeaderClasses : string.Empty)">
     @if (CurrentMode.ShowSwitch)
     {
         <div class="flex justify-between items-center gap-3 sm:gap-6 w-full px-4 sm:px-8 h-[4.5rem] max-w-7xl mx-auto">
@@ -68,7 +68,7 @@
 
 @if (CurrentMode.ShowSwitch)
 {
-    <div class="site-main">
+    <div class="@SiteMainClasses">
         <CascadingValue Name="OpenDemoModal" Value="OpenDemoModalCallback">
             @Body
         </CascadingValue>
@@ -118,7 +118,11 @@ else
 </footer>
 
 @code {
-    private const string SwitchHeaderClass = " site-header-modes";
+    private const string SwitchHeaderClass = "site-header-modes";
+    private const string HeaderClassPrefix = "site-header-";
+    private const string SiteMainClass = "site-main";
+    private const string SimpleModifier = "simple";
+    private const string ExpertModifier = "expert";
     private const string ImprintPageKey = "impressum";
     private const string PrivacyPageKey = "datenschutz";
     private const string LicensePageKey = "lizenz";
@@ -437,6 +441,12 @@ else
     private SiteModeState CurrentMode => SiteModeResolver.Resolve(CurrentRelativePath(), ModeOptions.Value.Enabled);
 
     private bool IsSimpleMode => CurrentMode.IsSimple;
+
+    private string ModeModifier => IsSimpleMode ? SimpleModifier : ExpertModifier;
+
+    private string SwitchHeaderClasses => $" {SwitchHeaderClass} {HeaderClassPrefix}{ModeModifier}";
+
+    private string SiteMainClasses => $"{SiteMainClass} {SiteMainClass}-{ModeModifier}";
 
     private string DemoModalContentKey => IsSimpleMode ? SiteModes.SimpleContentKey : DemoDisclaimerModal.DefaultContentKey;
 
