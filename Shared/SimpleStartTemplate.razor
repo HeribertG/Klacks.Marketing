@@ -42,6 +42,16 @@
     </div>
 </header>
 
+@if (HasStoryVideo)
+{
+    <section class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-5xl mx-auto no-line-rule text-center" aria-labelledby="simple-story-heading">
+        <h2 id="simple-story-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-8">@Tx("story.title")</h2>
+        <SimpleVideo VideoName="@SimpleVideo.StoryComicVideoName" Culture="@Culture" Label="@Tx("story.videoLabel")"
+                     Width="@SimpleVideo.StoryComicVideoWidth" Height="@SimpleVideo.StoryComicVideoHeight" ShowControls="true" />
+        <p class="text-xs text-on-surface-variant mt-3 mb-0">@Tx("story.note")</p>
+    </section>
+}
+
 <section id="@SimplePageSectionIds.Tasks" class="reveal bg-secondary-fixed py-14 md:py-20 no-line-rule scroll-mt-24" aria-labelledby="simple-tasks-heading">
     <div class="max-w-6xl mx-auto px-4 sm:px-8">
         <h2 id="simple-tasks-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight text-center mt-0 mb-10">@Tx("tasks.title")</h2>
@@ -196,6 +206,8 @@
     private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey) + ShareReferenceQuery;
 
     private string HeroScreenshotSrc => ImagesPathPrefix + ScreenshotResolver.Resolve(KlacksyScreenshotFile, Culture);
+
+    private bool HasStoryVideo => VideoCatalog.Find(SimpleVideo.StoryComicVideoName, Culture) is not null;
 
     private bool HasHeroVideo => DemoCarousels.SimpleHero.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
 

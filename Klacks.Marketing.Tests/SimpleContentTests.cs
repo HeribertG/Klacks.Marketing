@@ -40,7 +40,7 @@ public class SimpleContentTests
         "ein Satz genügt", "genügt ein Satz", "Klacksy prüft",
     };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData.", "videos.title", "videos.subtitle", "videos.plansWeek.title", "videos.klacksyCall.title" };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData.", "videos.title", "videos.subtitle", "videos.plansWeek.title", "videos.klacksyCall.title", "story." };
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {
@@ -52,7 +52,7 @@ public class SimpleContentTests
         ("talk.text", "Ein Klick auf Klacksy oben rechts – und los."),
         ("talk.bubble.0", "Plane die Woche ab 2. November."),
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
-        ("talk.bubble.2", "Warum ist der Dienst von Beat rot?"),
+        ("talk.bubble.2", "Warum steht Beat in der Fehlerliste?"),
         ("ai.text", "Klacks stellt Klacksy die Fähigkeiten bereit. Das KI-Modell dahinter bestimmst du: von einem Anbieter deiner Wahl oder auf deinem eigenen Server. Heute das beste, morgen das nächste – du bist an niemanden gebunden."),
         ("data.text", "Deine Daten liegen bei dir – nicht bei uns und in keiner Klacks-Cloud. Welche Dienste Klacks von aussen nutzt – etwa das KI-Modell oder den Kartendienst –, bestimmst du."),
         ("start.text", "Haben wir dich neugierig gemacht? Rede mit unserem elektronischen Mitarbeiter."),
@@ -61,7 +61,7 @@ public class SimpleContentTests
     private static readonly string[] OwnerCards =
     {
         "Nächste Woche planen? Ein Satz an Klacksy startet die Planung. Klacks rechnet – und du sagst Ja.",
-        "Warum ist ein Dienst rot? Klacks zeigt Regelverstösse, bevor etwas gilt – Klacksy erklärt sie dir.",
+        "Was steht in der Fehlerliste? Klacks prüft deine Regeln. Verstösse zeigt die Fehlerliste – Klacksy erklärt sie.",
         "Jemand fällt aus? Klacksy zeigt passende Leute mit Begründung – du wählst.",
     };
 

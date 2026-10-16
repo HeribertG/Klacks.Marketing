@@ -106,8 +106,20 @@ public class SimpleStartTemplateRenderingTests
 
         html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-de.webp");
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-de.webp");
-        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(2);
+        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(3);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(2);
+    }
+
+    [Test]
+    public async Task Story_clip_below_the_hero_has_its_question_controls_and_the_ai_note()
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
+
+        html.ShouldContain("Kennst du diese Situation?");
+        html.ShouldContain($"{SimpleVideo.StoryComicVideoName}-de.webp");
+        html.ShouldContain(" controls");
+        html.ShouldContain("Comic, mit KI erstellt.");
+        html.IndexOf("simple-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("simple-tasks-heading", StringComparison.Ordinal));
     }
 
     [Test]

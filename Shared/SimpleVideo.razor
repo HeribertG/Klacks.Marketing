@@ -6,12 +6,13 @@
    shared screenshot-hover-zoom frame. "VideoPlay" (wwwroot/js/c.js) counts the first start per video and page view,
    i.e. the video reached the viewport. Without webm, mp4 and webp poster in the page culture it renders Fallback
    (default: nothing). VideoName is the base name ("simple-plans-week"), Culture the page culture, Label the accessible
-   name, Width/Height the intrinsic size that reserves the layout space. *@
+   name, Width/Height the intrinsic size that reserves the layout space. ShowControls adds the native controls (sound can
+   be switched on) and drops the hover zoom, for the story clip with ambient sound. *@
 @if (_sources is not null)
 {
-    <div class="@HoverZoomFrameClass">
+    <div class="@(ShowControls ? null : HoverZoomFrameClass)">
         <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl bg-surface-container-high"
-               muted autoplay loop playsinline preload="metadata"
+               muted autoplay loop playsinline preload="metadata" controls="@ShowControls"
                width="@Width" height="@Height"
                poster="@_sources.PosterPath"
                aria-label="@Label"
@@ -32,6 +33,9 @@ else if (Fallback is not null)
 @code {
     public const string PlansWeekVideoName = "simple-plans-week";
     public const string KlacksyCallVideoName = "simple-klacksy-call";
+    public const string StoryComicVideoName = "simple-story-comic";
+    public const int StoryComicVideoWidth = 1280;
+    public const int StoryComicVideoHeight = 720;
     public const int RecordedVideoWidth = 1000;
     public const int RecordedVideoHeight = 720;
 
@@ -47,6 +51,7 @@ else if (Fallback is not null)
     [Parameter] public int Width { get; set; } = RecordedVideoWidth;
     [Parameter] public int Height { get; set; } = RecordedVideoHeight;
     [Parameter] public RenderFragment? Fallback { get; set; }
+    [Parameter] public bool ShowControls { get; set; }
 
     protected override void OnParametersSet()
     {
