@@ -111,7 +111,7 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task Story_clip_below_the_hero_has_its_question_controls_and_the_ai_note()
+    public async Task Story_clip_opens_the_page_above_the_hero_with_its_question_controls_and_the_ai_note()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
 
@@ -119,7 +119,7 @@ public class SimpleStartTemplateRenderingTests
         html.ShouldContain($"{SimpleVideo.StoryComicVideoName}-de.webp");
         html.ShouldContain(" controls");
         html.ShouldContain("Comic, mit KI erstellt.");
-        html.IndexOf("simple-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("simple-tasks-heading", StringComparison.Ordinal));
+        html.IndexOf("simple-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
     }
 
     [Test]
