@@ -26,6 +26,8 @@ else if (Fallback is not null)
 @code {
     public const string PlansWeekVideoName = "simple-plans-week";
     public const string KlacksyCallVideoName = "simple-klacksy-call";
+    public const int RecordedVideoWidth = 1000;
+    public const int RecordedVideoHeight = 720;
 
     private const string WebmMimeType = "video/webm";
     private const string Mp4MimeType = "video/mp4";
@@ -35,8 +37,8 @@ else if (Fallback is not null)
     [Parameter, EditorRequired] public required string VideoName { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
     [Parameter, EditorRequired] public required string Label { get; set; }
-    [Parameter] public int Width { get; set; } = DemoCarouselDefinition.DefaultVideoWidth;
-    [Parameter] public int Height { get; set; } = DemoCarouselDefinition.DefaultVideoHeight;
+    [Parameter] public int Width { get; set; } = RecordedVideoWidth;
+    [Parameter] public int Height { get; set; } = RecordedVideoHeight;
     [Parameter] public RenderFragment? Fallback { get; set; }
 
     protected override void OnParametersSet()
