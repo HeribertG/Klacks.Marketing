@@ -16,6 +16,7 @@ using Shouldly;
 public class ClientEventMarkupGuardTests
 {
     private const string EventAttributePattern = @"\bdata-c(?:-play)?=""([^""@]+)""";
+    private const string ScriptEventLiteralPattern = @"'([A-Z][A-Za-z]+)'";
     private const string ScriptPath = "wwwroot/js/c.js";
     private const string LayoutPath = "Shared/MainLayout.razor";
     private const string PageShownFunction = "klacksC.pageShown";
@@ -49,12 +50,53 @@ public class ClientEventMarkupGuardTests
     }
 
     [Test]
+    public void Every_event_name_literal_in_the_script_is_accepted_by_the_endpoint()
+    {
+        var literals = Regex.Matches(MarketingProjectPaths.ReadSource(ScriptPath), ScriptEventLiteralPattern)
+            .Select(match => match.Groups[1].Value)
+            .Distinct()
+            .ToList();
+
+        literals.ShouldNotBeEmpty();
+        literals.ShouldAllBe(name => ClientEventEndpoint.AcceptedEventNames.Contains(name));
+    }
+
+    [Test]
+    public void Page_shown_ignores_navigations_that_keep_path_and_query()
+    {
+        var script = MarketingProjectPaths.ReadSource(ScriptPath);
+
+        script.ShouldContain("new Set()");
+        script.ShouldContain("location.pathname + location.search");
+        script.ShouldContain("pageKey");
+    }
+
+    [Test]
     public void Layout_restarts_the_page_clock_on_every_navigation()
     {
-        var layout = MarketingProjectPaths.ReadSource(LayoutPath);
+        MarketingProjectPaths.ReadSource(LayoutPath).ShouldContain($"\"{PageShownFunction}\"");
+        LocationChangedHandler().ShouldContain("PageShownFunction");
+    }
 
-        layout.ShouldContain($"\"{PageShownFunction}\"");
-        var handler = layout[layout.IndexOf("private void HandleLocationChanged", StringComparison.Ordinal)..];
-        handler.ShouldContain("PageShownFunction");
+    [Test]
+    public void Layout_interop_in_the_navigation_handler_never_breaks_the_ui()
+    {
+        var handler = LocationChangedHandler();
+
+        handler.ShouldContain("catch (JSDisconnectedException)");
+        handler.ShouldContain("catch (JSException)");
+        handler.LastIndexOf("PageShownFunction", StringComparison.Ordinal)
+            .ShouldBeGreaterThan(handler.IndexOf("ModeApplyFunction", StringComparison.Ordinal));
+        handler.LastIndexOf("PageShownFunction", StringComparison.Ordinal)
+            .ShouldBeLessThan(handler.IndexOf("StateHasChanged", StringComparison.Ordinal));
+    }
+
+    private static string LocationChangedHandler()
+    {
+        var layout = MarketingProjectPaths.ReadSource(LayoutPath);
+        var start = layout.IndexOf("private void HandleLocationChanged", StringComparison.Ordinal);
+        var end = layout.IndexOf("private void ToggleMobileMenu", StringComparison.Ordinal);
+
+        return layout[start..end];
     }
 }

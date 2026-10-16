@@ -1,6 +1,6 @@
 (function () {
   var EARLY_TOGGLE_MS = 10000, TOGGLE = 'ExpertToggle', TOGGLE_EARLY = 'ExpertToggleEarly', PLAY_ATTR = 'data-c-play';
-  var shownAt = Date.now(), played = {};
+  var shownAt = Date.now(), played = new Set(), pageKey = location.pathname + location.search;
   function src() {
     var q = new URLSearchParams(location.search);
     return (q.get('utm_source') || q.get('ref') || '').toLowerCase().replace(/[^a-z0-9._-]/g, '').slice(0, 24);
@@ -30,9 +30,13 @@
     var v = ev.target, k = v && v.getAttribute ? v.getAttribute(PLAY_ATTR) : null, id;
     if (!k) return;
     id = v.currentSrc || v.getAttribute('poster') || '';
-    if (played[id]) return;
-    played[id] = true;
+    if (played.has(id)) return;
+    played.add(id);
     send(k);
   }, true);
-  window.klacksC = { pageShown: function () { shownAt = Date.now(); played = {}; } };
+  window.klacksC = { pageShown: function () {
+    var key = location.pathname + location.search;
+    if (key === pageKey) return;
+    pageKey = key; shownAt = Date.now(); played = new Set();
+  } };
 })();

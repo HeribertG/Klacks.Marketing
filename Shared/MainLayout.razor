@@ -216,14 +216,28 @@ else
         InvokeAsync(async () =>
         {
             var culture = CurrentCultureRecord;
-            await JS.InvokeVoidAsync("klacksLocale.applyDirection", culture.IsRtl ? "rtl" : "ltr", culture.Code);
+            await TryInvokeVoidAsync("klacksLocale.applyDirection", culture.IsRtl ? "rtl" : "ltr", culture.Code);
             if (CurrentMode.BodyClass.Length > 0)
             {
-                await JS.InvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
+                await TryInvokeVoidAsync(ModeApplyFunction, CurrentMode.BodyClass);
             }
-            await JS.InvokeVoidAsync(PageShownFunction);
+            await TryInvokeVoidAsync(PageShownFunction);
             StateHasChanged();
         });
+    }
+
+    private async Task TryInvokeVoidAsync(string identifier, params object?[] args)
+    {
+        try
+        {
+            await JS.InvokeVoidAsync(identifier, args);
+        }
+        catch (JSDisconnectedException)
+        {
+        }
+        catch (JSException)
+        {
+        }
     }
 
     private void ToggleMobileMenu()
