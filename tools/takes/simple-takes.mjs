@@ -4,7 +4,8 @@
  * Takes of the simple start page (spec 2026-10-15 section 7). simple-klacksy-call ("So rufst du Klacksy", about 15 s): the
  * cursor clicks the Klacksy symbol in the app header, the chat opens, one read-only question is typed and the first answer
  * is shown, with cue-based captions (lib/caption-overlay.mjs). It runs on the October schedule of the demo group and is
- * publishable only when exactly one turn answered without errors, without navigating away and without contact data, and
+ * publishable only when exactly one turn answered without errors, without navigating away, without contact data, without
+ * a refusal and with the expected read_schedule_state call (takeAnswerProblems, also used by check-simple-videos.mjs), and
  * October still holds its 118 works unchanged. simple-plans-week reuses takeKlacksyPlansWeek of capture-app-videos.mjs;
  * this module only defines its cue names and its shorter final hold.
  * @param take - Take context (page, api, options, recorder, mouse, report, script, captions, viewport, scale)
@@ -30,6 +31,47 @@ const DATE_PATTERN = /\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2}\/\d{1,2}\/\d{2,4}\b/g;
 const PHONE_CANDIDATE_PATTERN = /\+?\d[\d /-]{7,}\d/g;
 const NON_DIGIT_PATTERN = /\D/g;
 const MIN_PHONE_DIGITS = 9;
+
+const REFUSAL_PATTERNS = [
+  /\bkeine (passende )?funktion\b/i,
+  /\bkann ich\b[^.!?\n]{0,40}\bnicht\b/i,
+  /\bnicht zuordnen\b/i,
+  /\bno (suitable )?(function|tool)\b/i,
+  /\bnot available\b/i,
+  /\bI (cannot|can't|am unable to)\b/i,
+];
+const PLANNING_SKILL_CALLS = ["start_autowizard", "start_wizard1"];
+const ACCEPT_SKILL_CALL = "accept_scenario";
+const READ_SCHEDULE_SKILL_CALL = "read_schedule_state";
+const EXPECTED_SKILL_CALLS = {
+  [VIDEO_SIMPLE_KLACKSY_CALL]: [[READ_SCHEDULE_SKILL_CALL]],
+  [VIDEO_SIMPLE_PLANS_WEEK]: [PLANNING_SKILL_CALLS, [ACCEPT_SKILL_CALL]],
+};
+
+export function answerRefusal(text) {
+  const content = String(text ?? "");
+  for (const pattern of REFUSAL_PATTERNS) {
+    const match = content.match(pattern);
+    if (match) return match[0];
+  }
+  return null;
+}
+
+export function takeAnswerProblems(video, turns) {
+  const expected = EXPECTED_SKILL_CALLS[video];
+  if (!expected) return [];
+  const sent = (turns ?? []).filter((t) => t.sent !== false);
+  const problems = [];
+  sent.forEach((turn, i) => {
+    const refusal = answerRefusal(turn.content);
+    if (refusal) problems.push(`answer ${i + 1} refuses ("${refusal}")`);
+  });
+  const called = new Set(sent.flatMap((t) => (t.calls ?? []).map((c) => c.name)));
+  for (const alternatives of expected) {
+    if (!alternatives.some((name) => called.has(name))) problems.push(`expected skill call ${alternatives.join(" or ")} is missing`);
+  }
+  return problems;
+}
 
 export function containsContactData(text) {
   if (EMAIL_PATTERN.test(text)) return true;
@@ -83,7 +125,8 @@ async function takeSimpleKlacksyCall(take) {
     await page.waitForTimeout(BEAT.finalHold);
   } finally {
     await recorder.stop({ posterAt: report.posterAt ?? null, crop: fullViewportCrop(viewport, scale) });
-    report.failure = report.failure ?? turnFailure(report.turns[0]);
+    report.failure = report.failure ?? turnFailure(report.turns[0])
+      ?? (takeAnswerProblems(VIDEO_SIMPLE_KLACKSY_CALL, report.turns).join("; ") || null);
     report.publishable = report.failure === null;
     report.octoberUnchanged = sameSnapshot(octoberBefore, snapshotOf(await api.schedule(octoberFilter), OCTOBER_RANGE));
     if (!report.octoberUnchanged) throw new Error("October changed during the Klacksy call take - check the demo data!");

@@ -103,6 +103,7 @@ import {
   SIMPLE_VIDEOS,
   VIDEO_SIMPLE_KLACKSY_CALL,
   VIDEO_SIMPLE_PLANS_WEEK,
+  takeAnswerProblems,
 } from "./takes/simple-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
@@ -404,6 +405,11 @@ async function takeKlacksyPlansWeek(take) {
       else if (!report.holisticRan) report.failure = `stage 3 did not run: ${report.job?.harmonizationSkippedReason ?? report.job?.reason ?? "unknown"}`;
       else if (!report.acceptedFinalScenario) report.failure = "Klacksy accepted a scenario other than the job's final one";
       else report.failure = "no works landed in the plan week";
+    }
+    const answerProblems = takeAnswerProblems(report.video, report.turns);
+    if (answerProblems.length > 0) {
+      report.publishable = false;
+      report.failure = report.failure ?? answerProblems.join("; ");
     }
     report.octoberUnchanged = sameSnapshot(octoberBefore, snapshotOf(await api.schedule(octoberFilter), PROTECTED_MONTH));
     if (!report.octoberUnchanged) throw new Error("October changed during the Klacksy take - check the demo data!");

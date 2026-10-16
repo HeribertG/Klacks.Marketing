@@ -4,7 +4,7 @@
  * Checks the recorded simple start page videos before they are committed: for every video and culture the WebM, MP4 and
  * WebP poster exist in wwwroot/videos (the catalog needs all three), each file stays within the byte budget of
  * capture-app-videos.mjs (1.5 MB), the MP4 length lies in the expected range, and the take report says publishable, no dev
- * overlay, every caption long enough on screen and nothing covered. With ffmpeg it extracts one still per caption into
+ * overlay, every caption long enough on screen, nothing covered, no refusal in an answer and every expected skill call made. With ffmpeg it extracts one still per caption into
  * <frames>/<video>-<culture>/checks for the visual check, and it prints reference rows of existing videos for comparison.
  * CLI: --cultures de  --frames-dir <dir>  --ffmpeg <path>
  * Env: KLACKS_VIDEO_FRAMES_DIR, FFMPEG_PATH
@@ -17,7 +17,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs, promisify } from "node:util";
 import { MIN_VISIBLE_SECONDS } from "./lib/caption-overlay.mjs";
-import { VIDEO_SIMPLE_KLACKSY_CALL, VIDEO_SIMPLE_PLANS_WEEK } from "./takes/simple-takes.mjs";
+import { VIDEO_SIMPLE_KLACKSY_CALL, VIDEO_SIMPLE_PLANS_WEEK, takeAnswerProblems } from "./takes/simple-takes.mjs";
 
 const run = promisify(execFile);
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
@@ -100,6 +100,7 @@ async function checkVideo(options, video, culture) {
       if (v.seconds < MIN_VISIBLE_SECONDS) problems.push(`caption "${v.cue}" visible ${v.seconds} s`);
     }
     for (const o of report.captions?.overlaps ?? []) problems.push(`caption "${o.cue}" covers ${o.selector}`);
+    problems.push(...takeAnswerProblems(video, report.turns));
   }
   const stills = options.ffmpegPath && files[EXT_MP4] && visibility.length > 0
     ? await extractStills(options.ffmpegPath, files[EXT_MP4].file, framesDir, visibility)

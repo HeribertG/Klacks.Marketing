@@ -32,7 +32,9 @@ import {
   SIMPLE_PLANS_WEEK_CUES,
   VIDEO_SIMPLE_KLACKSY_CALL,
   VIDEO_SIMPLE_PLANS_WEEK,
+  answerRefusal,
   containsContactData,
+  takeAnswerProblems,
 } from "./takes/simple-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
@@ -210,6 +212,38 @@ try {
     assert.equal(containsContactData("Am 19/10/2026 und am 19.10.2026 von 06:00 bis 14:00."), false);
     assert.equal(containsContactData("Ruf an: +41 52 123 45 67"), true);
     assert.equal(containsContactData("Schreib an anna@example.com"), true);
+  });
+
+  await check("refusals in Klacksy answers are found, normal answers pass", async () => {
+    assert.ok(answerRefusal("Das kann ich dir gerade nicht zuverl\u00e4ssig beantworten."));
+    assert.ok(answerRefusal("Ich habe aktuell keine Funktion, mit der ich das abfragen k\u00f6nnte."));
+    assert.ok(answerRefusal("Das Annehmen kann ich leider nicht f\u00fcr dich ausf\u00fchren."));
+    assert.ok(answerRefusal("Die Schicht l\u00e4sst sich keiner Person zuordnen, also nicht zuordnen."));
+    assert.ok(answerRefusal("There is no function for that."));
+    assert.ok(answerRefusal("That tool is not available right now."));
+    assert.equal(answerRefusal("Am Montag, 19. Oktober, arbeiten Mia Baier (SS 15:00-22:00) und Marius Bauer (TS)."), null);
+    assert.equal(answerRefusal("Elsa D\u00f6ring ist an dem Tag nicht eingeteilt."), null);
+  });
+
+  await check("take answer problems: refusals in sent turns and missing expected skill calls", async () => {
+    const ok = [{ sent: true, content: "Mia Baier hat SS.", calls: [{ name: "read_schedule_state" }] }];
+    assert.deepEqual(takeAnswerProblems(VIDEO_SIMPLE_KLACKSY_CALL, ok), []);
+    const noCall = [{ sent: true, content: "Mia Baier hat SS.", calls: [] }];
+    assert.ok(takeAnswerProblems(VIDEO_SIMPLE_KLACKSY_CALL, noCall).some((p) => p.includes("read_schedule_state")));
+    const refused = [{ sent: true, content: "Das kann ich nicht.", calls: [{ name: "read_schedule_state" }] }];
+    assert.ok(takeAnswerProblems(VIDEO_SIMPLE_KLACKSY_CALL, refused).some((p) => p.includes("refus")));
+    const week = [
+      { sent: true, content: "Gestartet.", calls: [{ name: "start_wizard1" }] },
+      { sent: true, content: "Hier das Ergebnis.", calls: [{ name: "list_scenarios" }] },
+      { sent: true, content: "Erledigt.", calls: [{ name: "accept_scenario" }] },
+    ];
+    assert.deepEqual(takeAnswerProblems(VIDEO_SIMPLE_PLANS_WEEK, week), []);
+    const notAccepted = [week[0], week[1], { sent: true, content: "Das Annehmen kann ich leider nicht.", calls: [] }];
+    const problems = takeAnswerProblems(VIDEO_SIMPLE_PLANS_WEEK, notAccepted);
+    assert.ok(problems.some((p) => p.includes("accept_scenario")));
+    assert.ok(problems.some((p) => p.includes("refus")));
+    assert.deepEqual(takeAnswerProblems(VIDEO_SIMPLE_PLANS_WEEK, [...week, { sent: false, content: "", reason: "x" }]), []);
+    assert.deepEqual(takeAnswerProblems("other-video", noCall), []);
   });
 } finally {
   await browser.close();
