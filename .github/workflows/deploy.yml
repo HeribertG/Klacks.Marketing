@@ -39,12 +39,13 @@ jobs:
         DEPLOY_SHA: ${{ github.sha }}
         ANALYTICS_ENABLED: ${{ vars.ANALYTICS_ENABLED || 'false' }}
         ANALYTICS_STATS_TOKEN: ${{ secrets.ANALYTICS_STATS_TOKEN }}
+        SIMPLE_MODE_ENABLED: ${{ vars.SIMPLE_MODE_ENABLED || 'false' }}
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
-        envs: DEPLOY_SHA,ANALYTICS_ENABLED,ANALYTICS_STATS_TOKEN
+        envs: DEPLOY_SHA,ANALYTICS_ENABLED,ANALYTICS_STATS_TOKEN,SIMPLE_MODE_ENABLED
         script: |
           set -e
           echo "Deploying Klacks.Marketing $DEPLOY_SHA..."
@@ -97,6 +98,7 @@ jobs:
               -e ASPNETCORE_URLS=http://+:80 \
               -e Analytics__Enabled="$ANALYTICS_ENABLED" \
               -e Analytics__StatsToken="$ANALYTICS_STATS_TOKEN" \
+              -e SimpleMode__Enabled="$SIMPLE_MODE_ENABLED" \
               --expose 80 \
               "$1"
           }
