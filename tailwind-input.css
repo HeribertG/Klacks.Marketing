@@ -467,11 +467,11 @@ body:has(.feature-ticker-bar) footer {
         position: relative;
         transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
         will-change: transform;
-        transform-origin: var(--hover-zoom-origin-x, 50%) 50%;
+        transform-origin: var(--hover-zoom-origin-x, 50%) var(--hover-zoom-origin-y, 50%);
     }
 
     /* hover-zoom-fit.js lowers the scale and shifts the origin per frame so the zoom stays inside the
-       viewport; without the script the plain 2x from the frame centre applies. */
+       viewport (below the fixed navigation, margin on every edge); without the script the plain 2x from the frame centre applies. */
     .screenshot-hover-zoom:hover {
         transform: scale(var(--hover-zoom-scale, 2));
         box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.45);
