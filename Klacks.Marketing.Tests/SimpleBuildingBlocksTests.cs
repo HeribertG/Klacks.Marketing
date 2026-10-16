@@ -3,6 +3,7 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Shared;
 using Microsoft.Extensions.DependencyInjection;
@@ -92,6 +93,26 @@ public class SimpleBuildingBlocksTests
         html.ShouldContain("data-share-status");
         html.ShouldContain("data-share-url");
         html.ShouldContain("aria-live=\"polite\"");
+    }
+
+    [Test]
+    public async Task Visible_share_url_wraps_only_after_slashes_and_before_the_query_and_keeps_its_exact_text()
+    {
+        const string urlWithQuery = "https://klacks-software.ch/land-ch?ref=share";
+        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, SwissCountry));
+
+        var html = WebUtility.HtmlDecode(await MarketingComponentHost.RenderAsync<ShareLinkButtons>(services, new Dictionary<string, object?>
+        {
+            [nameof(ShareLinkButtons.Url)] = urlWithQuery,
+        }));
+
+        var urlElement = Regex.Match(html, "<p[^>]*data-share-url[^>]*>(.*?)</p>", RegexOptions.Singleline);
+        urlElement.Success.ShouldBeTrue();
+        urlElement.Value.ShouldNotContain("break-all");
+        var inner = urlElement.Groups[1].Value;
+        Regex.Replace(inner, "<wbr\\s*/?>", string.Empty).ShouldBe(urlWithQuery);
+        Regex.Split(inner, "<wbr\\s*/?>").ShouldBe(["https://", "klacks-software.ch/", "land-ch", "?ref=share"]);
+        html.ShouldContain($"data-share-copy=\"{urlWithQuery}\"");
     }
 
     [Test]

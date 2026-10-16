@@ -6,7 +6,8 @@
    needs the click's user activation, e.g. in Safari/iOS, and it works before the circuit is interactive): the button
    carries the URL and both result texts, the script writes the result into the status element of the same block.
    Url is the absolute URL that is shared, Culture the page culture (texts from simple.json), CssClass adds outer
-   spacing. *@
+   spacing. The visible URL may only wrap after "//", after each further "/" and before "?" (<wbr> adds no characters,
+   so selecting it for the manual-copy fallback still yields the exact URL). *@
 <div data-share-block>
     <div class="flex flex-wrap gap-3 @CssClass">
         <a href="@MailtoHref" data-c="ShareClick" class="inline-flex items-center gap-2 rounded-2xl bg-secondary text-white px-5 py-3 font-bold no-underline hover:opacity-90 transition-all">
@@ -17,11 +18,14 @@
         </button>
     </div>
     <p class="text-sm text-on-surface-variant mt-3 mb-0 min-h-[1.25rem]" role="status" aria-live="polite" data-share-status></p>
-    <p class="text-xs text-on-surface-variant font-mono break-all mt-1 mb-0" dir="ltr" data-share-url>@Url</p>
+    <p class="text-xs text-on-surface-variant font-mono mt-1 mb-0" dir="ltr" data-share-url>@foreach (var (segment, index) in UrlSegments.Select((segment, index) => (segment, index))){@if (index > 0){<wbr />}@segment}</p>
 </div>
 
 @code {
     private const string MailBodySeparator = "\n";
+    private const string SchemeSeparator = "//";
+    private const char PathSeparator = '/';
+    private const char QueryStart = '?';
 
     [Parameter, EditorRequired] public required string Url { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
@@ -29,6 +33,44 @@
 
     private string MailtoHref
         => $"mailto:?subject={Uri.EscapeDataString(Tx("share.mailSubject"))}&body={Uri.EscapeDataString(Tx("share.mailBody") + MailBodySeparator + Url)}";
+
+    private IReadOnlyList<string> UrlSegments => SplitAtBreakPoints(Url);
+
+    private static List<string> SplitAtBreakPoints(string url)
+    {
+        var segments = new List<string>();
+        var schemeEnd = url.IndexOf(SchemeSeparator, StringComparison.Ordinal);
+        var start = 0;
+        var position = schemeEnd < 0 ? 0 : schemeEnd + SchemeSeparator.Length;
+        if (position > 0)
+        {
+            segments.Add(url[..position]);
+            start = position;
+        }
+
+        var queryIndex = url.IndexOf(QueryStart);
+        var pathEnd = queryIndex < 0 ? url.Length : queryIndex;
+        for (; position < pathEnd; position++)
+        {
+            if (url[position] == PathSeparator && position + 1 < pathEnd)
+            {
+                segments.Add(url[start..(position + 1)]);
+                start = position + 1;
+            }
+        }
+
+        if (start < pathEnd)
+        {
+            segments.Add(url[start..pathEnd]);
+        }
+
+        if (queryIndex >= 0)
+        {
+            segments.Add(url[queryIndex..]);
+        }
+
+        return segments;
+    }
 
     private string Tx(string key) => ContentProvider.GetText(Culture, SiteModes.SimpleContentKey, key);
 }
