@@ -36,7 +36,7 @@ public class SimpleStartTemplateRenderingTests
     private const string TextColumnFullWidth = "lg:col-span-12";
     private const string VideoColumn = "lg:col-span-7";
     private const string StatusMarker = "role=\"status\"";
-    private const string WordBreakPattern = @"<wbr\s*/?>";
+    private const string UrlBreakMarkupPattern = @"<wbr\s*/?>|<span class=""whitespace-nowrap"">|</span>";
     private const string NoSelectClass = "select-none";
     private const string AmberSurface = "bg-tertiary-fixed";
     private const string AmberText = "text-on-tertiary-fixed";
@@ -125,7 +125,7 @@ public class SimpleStartTemplateRenderingTests
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey));
         var shareUrl = MarketingComponentHost.BaseUrl + CountryIndustries.SwissCountryPageKey + SimpleStartTemplate.ShareReferenceQuery;
 
-        var block = WithoutWordBreaks(html[html.IndexOf($"id=\"{SimplePageSectionIds.Share}\"", StringComparison.Ordinal)..]);
+        var block = WithoutUrlBreakMarkup(html[html.IndexOf($"id=\"{SimplePageSectionIds.Share}\"", StringComparison.Ordinal)..]);
         var status = block.IndexOf(StatusMarker, StringComparison.Ordinal);
         var link = block.IndexOf($">{shareUrl}<", StringComparison.Ordinal);
 
@@ -142,7 +142,7 @@ public class SimpleStartTemplateRenderingTests
 
         SimpleStartTemplate.ShareReferenceQuery.ShouldBe("?ref=share");
         html.ShouldContain($"data-share-copy=\"{shareUrl}\"");
-        WithoutWordBreaks(html).ShouldContain($">{shareUrl}<");
+        WithoutUrlBreakMarkup(html).ShouldContain($">{shareUrl}<");
         html.ShouldContain(Uri.EscapeDataString(shareUrl));
     }
 
@@ -271,5 +271,5 @@ public class SimpleStartTemplateRenderingTests
         });
     }
 
-    private static string WithoutWordBreaks(string html) => Regex.Replace(html, WordBreakPattern, string.Empty);
+    private static string WithoutUrlBreakMarkup(string html) => Regex.Replace(html, UrlBreakMarkupPattern, string.Empty);
 }

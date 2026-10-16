@@ -110,8 +110,10 @@ public class SimpleBuildingBlocksTests
         urlElement.Success.ShouldBeTrue();
         urlElement.Value.ShouldNotContain("break-all");
         var inner = urlElement.Groups[1].Value;
-        Regex.Replace(inner, "<wbr\\s*/?>", string.Empty).ShouldBe(urlWithQuery);
-        Regex.Split(inner, "<wbr\\s*/?>").ShouldBe(["https://", "klacks-software.ch/", "land-ch", "?ref=share"]);
+        Regex.Replace(inner, "<[^>]+>", string.Empty).ShouldBe(urlWithQuery);
+        Regex.Matches(inner, "<span class=\"whitespace-nowrap\">([^<]*)</span>").Select(match => match.Groups[1].Value)
+            .ShouldBe(["https://", "klacks-software.ch/", "land-ch", "?ref=share"]);
+        Regex.Matches(inner, "<wbr\\s*/?>").Count.ShouldBe(3);
         html.ShouldContain($"data-share-copy=\"{urlWithQuery}\"");
     }
 
