@@ -3,6 +3,7 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Pages;
 using Klacks.Marketing.Shared;
@@ -16,30 +17,82 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// "/land-xx/experten" serves today's country start page in German only: canonical on itself, no hreflang set (stage 1),
-/// 404 for every culture-prefixed or unknown variant, and 404 altogether while SimpleMode:Enabled is off. The page
-/// component itself renders "not found" while the switch is off or the country is unknown, so navigation inside the
-/// Blazor circuit (which skips the HTTP guard) never shows it either.
+/// "/[culture/]land-xx/experten" serves today's country start page in every culture with a simple page (de unprefixed,
+/// en/fr/it prefixed): canonical on itself, hreflang set limited to the simple-page cultures with own country text (each
+/// alternate answers 200, is indexable and links back), 404 for cultures without a simple page, unknown or "de" prefixes
+/// and unknown countries, and 404 altogether while SimpleMode:Enabled is off. The page component itself renders "not
+/// found" in those cases, so navigation inside the Blazor circuit (which skips the HTTP guard) never shows it either.
 /// </summary>
 [TestFixture]
 public class ExpertStartRouteTests
 {
     private const string ExpertHeroText = "Frühschicht unbesetzt?";
+    private const string FrenchExpertHeroText = "vous gardez le contrôle.";
+    private const string EnglishExpertHeroText = "you stay in control.";
     private const string HreflangMarker = "hreflang=";
     private const string NoindexMarker = "name=\"robots\" content=\"noindex";
     private const string NotFoundText = "Page not found.";
+    private const string SiteBaseUrl = "https://klacks-software.ch";
+    private const string AlternatePattern = @"<link rel=""alternate"" hreflang=""([^""]+)"" href=""([^""]+)""";
 
-    [TestCase("/land-ch/experten", "https://klacks-software.ch/land-ch/experten")]
-    [TestCase("/land-de/experten", "https://klacks-software.ch/land-de/experten")]
-    public async Task Expert_start_page_has_a_self_canonical_and_no_hreflang(string path, string canonical)
+    [TestCase("/land-ch/experten", "/land-ch/experten", ExpertHeroText)]
+    [TestCase("/land-de/experten", "/land-de/experten", ExpertHeroText)]
+    [TestCase("/fr/land-ch/experten", "/fr/land-ch/experten", FrenchExpertHeroText)]
+    [TestCase("/en/land-gb/experten", "/en/land-gb/experten", EnglishExpertHeroText)]
+    public async Task Expert_start_page_has_a_self_canonical_and_is_indexable(string path, string canonicalPath, string heroText)
     {
         var (status, html) = await GetAsync(enabled: true, path);
 
         status.ShouldBe(HttpStatusCode.OK);
-        html.ShouldContain(ExpertHeroText);
-        html.ShouldContain($"<link rel=\"canonical\" href=\"{canonical}\"");
-        html.ShouldNotContain(HreflangMarker);
+        html.ShouldContain(heroText);
+        html.ShouldContain($"<link rel=\"canonical\" href=\"{SiteBaseUrl}{canonicalPath}\"");
         html.ShouldNotContain(NoindexMarker);
+    }
+
+    [TestCase("/land-ch/experten", "de,fr,it")]
+    [TestCase("/it/land-ch/experten", "de,fr,it")]
+    [TestCase("/en/land-gb/experten", "de,en")]
+    [TestCase("/land-jp/experten", "de")]
+    public async Task Hreflang_set_lists_only_simple_page_cultures_with_own_country_text(string path, string expectedCultures)
+    {
+        var (_, html) = await GetAsync(enabled: true, path);
+
+        Alternates(html).Where(alternate => alternate.Culture != "x-default").Select(alternate => alternate.Culture)
+            .ShouldBe(expectedCultures.Split(','));
+        html.ShouldContain($"hreflang=\"x-default\" href=\"{SiteBaseUrl}/{CountryOf(path)}/{SiteModes.ExpertSlug}\"");
+    }
+
+    [TestCase("/land-ch/experten")]
+    [TestCase("/en/land-gb/experten")]
+    public async Task Every_hreflang_alternate_answers_200_is_indexable_and_links_back(string path)
+    {
+        await using var factory = new SimpleModeAppFactory(true);
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
+        var source = WebUtility.HtmlDecode(await client.GetStringAsync(path));
+        var sourceAlternates = Alternates(source).ToList();
+        sourceAlternates.ShouldNotBeEmpty();
+
+        foreach (var (culture, href) in sourceAlternates)
+        {
+            using var response = await client.GetAsync(new Uri(href).PathAndQuery);
+            response.StatusCode.ShouldBe(HttpStatusCode.OK, href);
+            var html = WebUtility.HtmlDecode(await response.Content.ReadAsStringAsync());
+
+            html.ShouldNotContain(NoindexMarker, customMessage: href);
+            html.ShouldContain($"<link rel=\"canonical\" href=\"{href}\"", customMessage: culture);
+            Alternates(html).ShouldBe(sourceAlternates, href);
+        }
+    }
+
+    [TestCase("/en/land-ch/experten")]
+    [TestCase("/it/land-de/experten")]
+    public async Task Expert_page_without_own_country_text_is_noindex_without_hreflang(string path)
+    {
+        var (status, html) = await GetAsync(enabled: true, path);
+
+        status.ShouldBe(HttpStatusCode.OK);
+        html.ShouldContain(NoindexMarker);
+        html.ShouldNotContain(HreflangMarker);
     }
 
     [Test]
@@ -51,22 +104,26 @@ public class ExpertStartRouteTests
         html.ShouldContain(ExpertHeroText);
     }
 
-    [Test]
-    public async Task Chapter_links_of_the_expert_page_stay_on_the_expert_page()
+    [TestCase("", "land-ch")]
+    [TestCase("/fr", "land-ch")]
+    public async Task Chapter_links_of_the_expert_page_stay_on_the_expert_page(string prefix, string country)
     {
-        var (_, html) = await GetAsync(enabled: true, "/land-ch/experten");
+        var (_, html) = await GetAsync(enabled: true, $"{prefix}/{country}/experten");
 
-        html.ShouldContain($"href=\"/land-ch/experten#{DemoCarousels.KlacksySectionId}\"");
-        html.ShouldContain("href=\"/land-ch/spitex\"");
-        html.ShouldNotContain("/land-ch/experten/spitex");
+        html.ShouldContain($"href=\"{prefix}/{country}/experten#{DemoCarousels.KlacksySectionId}\"");
+        html.ShouldContain($"href=\"{prefix}/{country}/spitex\"");
+        html.ShouldNotContain($"{prefix}/{country}/experten/spitex");
     }
 
-    [TestCase("/fr/land-ch/experten")]
+    [TestCase("/es/land-es/experten")]
+    [TestCase("/ja/land-jp/experten")]
     [TestCase("/de/land-ch/experten")]
+    [TestCase("/xx/land-ch/experten")]
     [TestCase("/land-zz/experten")]
+    [TestCase("/fr/land-zz/experten")]
     [TestCase("/en/experten")]
     [TestCase("/experten")]
-    public async Task Culture_prefixed_and_unknown_expert_routes_are_404(string path)
+    public async Task Expert_routes_of_cultures_without_simple_page_and_unknown_routes_are_404(string path)
     {
         var (status, _) = await GetAsync(enabled: true, path);
 
@@ -75,6 +132,8 @@ public class ExpertStartRouteTests
 
     [TestCase("/land-ch/experten")]
     [TestCase("/land-de/experten")]
+    [TestCase("/fr/land-ch/experten")]
+    [TestCase("/en/land-gb/experten")]
     public async Task Expert_route_is_404_while_the_feature_is_off(string path)
     {
         var (status, _) = await GetAsync(enabled: false, path);
@@ -82,16 +141,28 @@ public class ExpertStartRouteTests
         status.ShouldBe(HttpStatusCode.NotFound);
     }
 
-    [TestCase(false, "land-ch")]
-    [TestCase(true, "en")]
-    [TestCase(true, "land-zz")]
-    public async Task Expert_page_component_renders_not_found_when_off_or_for_an_unknown_country(bool enabled, string country)
+    [TestCase(false, null, "land-ch")]
+    [TestCase(false, "fr", "land-ch")]
+    [TestCase(true, null, "en")]
+    [TestCase(true, null, "land-zz")]
+    [TestCase(true, "es", "land-es")]
+    [TestCase(true, "de", "land-ch")]
+    [TestCase(true, "xx", "land-ch")]
+    [TestCase(true, "fr", "land-zz")]
+    public async Task Expert_page_component_renders_not_found_when_off_or_for_an_unknown_or_unsupported_route(bool enabled, string? culture, string country)
     {
-        var html = await RenderComponentAsync(enabled, country);
+        var html = await RenderComponentAsync(enabled, culture, country);
 
         html.ShouldContain(NotFoundText);
         html.ShouldNotContain(ExpertHeroText);
+        html.ShouldNotContain(FrenchExpertHeroText);
     }
+
+    private static string CountryOf(string path)
+        => path.Split('/', StringSplitOptions.RemoveEmptyEntries).First(segment => segment.StartsWith("land-", StringComparison.Ordinal));
+
+    private static IEnumerable<(string Culture, string Href)> Alternates(string html)
+        => Regex.Matches(html, AlternatePattern).Select(match => (match.Groups[1].Value, match.Groups[2].Value));
 
     private static async Task<(HttpStatusCode Status, string Html)> GetAsync(bool enabled, string path)
     {
@@ -102,7 +173,7 @@ public class ExpertStartRouteTests
         return (response.StatusCode, WebUtility.HtmlDecode(await response.Content.ReadAsStringAsync()));
     }
 
-    private static async Task<string> RenderComponentAsync(bool enabled, string country)
+    private static async Task<string> RenderComponentAsync(bool enabled, string? culture, string country)
     {
         var services = new ServiceCollection()
             .AddSingleton<IOptions<SiteModeOptions>>(Options.Create(new SiteModeOptions { Enabled = enabled }))
@@ -113,6 +184,7 @@ public class ExpertStartRouteTests
         {
             var output = await renderer.RenderComponentAsync<CountryExpertStart>(ParameterView.FromDictionary(new Dictionary<string, object?>
             {
+                [nameof(CountryExpertStart.Culture)] = culture,
                 [nameof(CountryExpertStart.Country)] = country,
             }));
             return output.ToHtmlString();

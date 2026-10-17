@@ -5,23 +5,27 @@ namespace Klacks.Marketing.Localization;
 /// <summary>
 /// Constants of the simple / expert mode of the site: the expert route slug, the content key of the simple page, the
 /// body classes and the cultures that have a simple start page. The culture list is explicit on purpose: a new
-/// simple.json alone must not switch a culture over, since the expert route exists only for the unprefixed default
-/// culture ("/{country}/experten").
+/// simple.json alone must not switch a culture over. Every listed culture gets the simple page at "/[culture/]land-xx"
+/// and the expert start page at "/[culture/]land-xx/experten"; every other culture keeps today's start page and has no
+/// expert route. Adding a culture means adding it here plus its simple.json (and countries.json for prefixed cultures).
 /// </summary>
 /// <param name="cultureCode">Culture code of the page ("de")</param>
 /// <param name="enabled">Value of SimpleMode:Enabled</param>
 /// <param name="countryPageKey">Country page key ("land-ch")</param>
+/// <param name="path">Request path that may be an expert start route</param>
 public static class SiteModes
 {
     public const string ExpertSlug = "experten";
     public const string SimpleContentKey = "simple";
+    public const string CountryNamesContentKey = "countries";
     public const string SimpleBodyClass = "mode-simple";
     public const string ExpertBodyClass = "mode-expert";
 
     private const char PathSeparator = '/';
-    private const int ExpertStartSegmentCount = 2;
+    private const int UnprefixedExpertStartSegmentCount = 2;
+    private const int PrefixedExpertStartSegmentCount = 3;
 
-    private static readonly string[] CulturesWithSimplePage = { SupportedCultures.DefaultCode };
+    private static readonly string[] CulturesWithSimplePage = { SupportedCultures.DefaultCode, "en", "fr", "it" };
 
     public static IReadOnlyList<string> SimplePageCultures => CulturesWithSimplePage;
 
@@ -30,11 +34,39 @@ public static class SiteModes
 
     public static string ExpertRoutePath(string countryPageKey) => countryPageKey + PathSeparator + ExpertSlug;
 
-    public static bool IsExpertStartPath(string path)
-    {
-        var segments = path.Split(PathSeparator, StringSplitOptions.RemoveEmptyEntries);
+    public static bool IsExpertStartPath(string path) => TryGetExpertStartCulture(path, out _);
 
-        return segments.Length == ExpertStartSegmentCount
-            && segments[1].Equals(ExpertSlug, StringComparison.OrdinalIgnoreCase);
+    /// <summary>
+    /// True when the path has the shape of an expert start route: "/{country}/experten" (default culture) or
+    /// "/{culture}/{country}/experten" with a known prefixed culture slug. The culture is returned so the caller can
+    /// decide whether that culture serves the route at all.
+    /// </summary>
+    public static bool TryGetExpertStartCulture(string path, out string cultureCode)
+    {
+        cultureCode = SupportedCultures.DefaultCode;
+        var segments = path.Split(PathSeparator, StringSplitOptions.RemoveEmptyEntries);
+        if (segments.Length == 0 || !segments[^1].Equals(ExpertSlug, StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        if (segments.Length == UnprefixedExpertStartSegmentCount)
+        {
+            return true;
+        }
+
+        if (segments.Length == PrefixedExpertStartSegmentCount && FindPrefixedCulture(segments[0]) is { } culture)
+        {
+            cultureCode = culture.Code;
+            return true;
+        }
+
+        return false;
     }
+
+    public static SupportedCulture? FindPrefixedCulture(string? segment)
+        => segment is null
+            ? null
+            : SupportedCultures.All.FirstOrDefault(culture =>
+                culture.UrlSlug.Length > 0 && culture.UrlSlug.Equals(segment, StringComparison.OrdinalIgnoreCase));
 }

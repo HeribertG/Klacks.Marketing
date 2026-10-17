@@ -92,9 +92,10 @@ app.Use(async (context, next) =>
         }
 
         // The expert start route is a real component route, so only this check keeps it dark while
-        // SimpleMode:Enabled is off (the known-page set is derived statically from the @page directives).
-        if (SiteModes.IsExpertStartPath(path)
-            && !context.RequestServices.GetRequiredService<IOptions<SiteModeOptions>>().Value.Enabled)
+        // SimpleMode:Enabled is off and in every culture without a simple page (the known-page set is derived
+        // statically from the @page directives and expands "/{culture}/{country}/experten" over all cultures).
+        if (SiteModes.TryGetExpertStartCulture(path, out var expertCulture)
+            && !SiteModes.HasSimplePage(expertCulture, context.RequestServices.GetRequiredService<IOptions<SiteModeOptions>>().Value.Enabled))
         {
             context.Response.StatusCode = StatusCodes.Status404NotFound;
             return;

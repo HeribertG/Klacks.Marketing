@@ -8,10 +8,11 @@
    light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
    on-tertiary-fixed text), videos V2 and V4 looping like the expert demo videos with a screenshot fallback for V2 and a full-width talk text
    without V4; the shared link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
-   language, {country} is the only placeholder), including the Du form of the demo-data note; the industry chips lead
+   language, {country} is the only placeholder), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the land-xx hreflang cluster, and the
-   structured product description uses the Du-form meta description. PageKey is the country page key ("land-ch"),
-   Culture the page culture code (stage 1: de only). *@
+   structured product description uses the meta description of the page culture. {country} is the country name in
+   the page culture (countries.json of the culture, German names from CountryNames otherwise). PageKey is the country
+   page key ("land-ch"), Culture the page culture code (one of SiteModes.SimplePageCultures). *@
 <PageTitle>@Tx("pageTitle")</PageTitle>
 <SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@PageKey" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" ProductDescriptionSource="@Tx("metaDescription")" IndexTranslatedOnly="true" />
 
@@ -25,7 +26,7 @@
     </section>
 }
 
-<header class="@(HasStoryVideo ? "pt-10 md:pt-14" : "pt-20 md:pt-28") pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
+<header class="@(HasStoryVideo ? "pt-10 md:pt-14" : "pt-36 md:pt-28") pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         <div class="lg:col-span-6 min-w-0">
             <h1 class="text-[2rem] min-[360px]:text-[2.25rem] md:text-[3rem] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
@@ -221,5 +222,8 @@
 
     private string Tx(string key)
         => ContentProvider.GetText(Culture, SiteModes.SimpleContentKey, key)
-            .Replace(CountryPlaceholder, CountryNames.DisplayName(PageKey), StringComparison.Ordinal);
+            .Replace(CountryPlaceholder, CountryDisplayName, StringComparison.Ordinal);
+
+    private string CountryDisplayName
+        => ContentProvider.FindText(Culture, SiteModes.CountryNamesContentKey, PageKey) ?? CountryNames.DisplayName(PageKey);
 }

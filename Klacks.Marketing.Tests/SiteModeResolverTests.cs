@@ -26,18 +26,27 @@ public class SiteModeResolverTests
     [TestCase("/land-de/angebot?ref=x#preise", true, false, "/land-de")]
     public void Visible_switch_points_at_the_opposite_page(string path, bool enabled, bool isSimple, string target)
     {
-        var state = SiteModeResolver.Resolve(path, enabled);
-
-        state.ShowSwitch.ShouldBeTrue();
-        state.IsSimple.ShouldBe(isSimple);
-        state.SwitchTarget.ShouldBe(target);
-        state.CultureCode.ShouldBe(SupportedCultures.DefaultCode);
-        state.BodyClass.ShouldBe(isSimple ? SiteModes.SimpleBodyClass : SiteModes.ExpertBodyClass);
+        AssertVisible(path, enabled, isSimple, target, SupportedCultures.DefaultCode);
     }
 
-    [TestCase("/fr/land-ch", true, "fr")]
-    [TestCase("/en/land-gb/experten", true, "en")]
-    [TestCase("/FR/land-ch", true, "fr")]
+    [TestCase("/fr/land-ch", true, "/fr/land-ch/experten", "fr")]
+    [TestCase("/FR/LAND-CH", true, "/fr/land-ch/experten", "fr")]
+    [TestCase("/fr/land-ch/experten", false, "/fr/land-ch", "fr")]
+    [TestCase("/en/land-gb", true, "/en/land-gb/experten", "en")]
+    [TestCase("/en/land-gb/experten", false, "/en/land-gb", "en")]
+    [TestCase("/en/land-ch/spitex", false, "/en/land-ch", "en")]
+    [TestCase("/it/land-ch", true, "/it/land-ch/experten", "it")]
+    [TestCase("/it/land-it/impressum", false, "/it/land-it", "it")]
+    public void Visible_switch_in_prefixed_cultures_keeps_the_culture_prefix(string path, bool isSimple, string target, string culture)
+    {
+        AssertVisible(path, enabled: true, isSimple, target, culture);
+    }
+
+    [TestCase("/es/land-es", true, "es")]
+    [TestCase("/es/land-es/experten", true, "es")]
+    [TestCase("/ES/land-es", true, "es")]
+    [TestCase("/fr/land-ch", false, "fr")]
+    [TestCase("/fr", true, "fr")]
     [TestCase("/en", true, "en")]
     [TestCase("/experten", true, "de")]
     [TestCase("/land-ch", false, "de")]
@@ -55,5 +64,16 @@ public class SiteModeResolverTests
         state.SwitchTarget.ShouldBeNull();
         state.CultureCode.ShouldBe(culture);
         state.BodyClass.ShouldBe(enabled ? SiteModes.ExpertBodyClass : string.Empty);
+    }
+
+    private static void AssertVisible(string path, bool enabled, bool isSimple, string target, string culture)
+    {
+        var state = SiteModeResolver.Resolve(path, enabled);
+
+        state.ShowSwitch.ShouldBeTrue();
+        state.IsSimple.ShouldBe(isSimple);
+        state.SwitchTarget.ShouldBe(target);
+        state.CultureCode.ShouldBe(culture);
+        state.BodyClass.ShouldBe(isSimple ? SiteModes.SimpleBodyClass : SiteModes.ExpertBodyClass);
     }
 }

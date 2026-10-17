@@ -1,16 +1,19 @@
 @page "/{country}/experten"
+@page "/{culture}/{country}/experten"
 @inject IOptions<SiteModeOptions> SiteModeOptions
 
-@* Expert start page for German-speaking visitors ("/land-ch/experten"): today's CountryStartTemplate unchanged, behind
-   the expert-mode switch, while "/land-ch" shows the simple start page (spec
-   docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §3). German only in stage 1, so there is no
-   culture-prefixed route; the canonical points at itself and no hreflang set is emitted. Answers 404 while
-   SimpleMode:Enabled is off (Program.cs); the component renders NotFoundNotice itself in that case and for an unknown
-   country, because navigation inside the Blazor circuit never passes the HTTP guard. Country is the country page key
-   of the route; upper case is normalised because the content files are lower case. *@
+@* Expert start page ("/land-ch/experten", "/fr/land-ch/experten"): today's CountryStartTemplate unchanged, behind the
+   expert-mode switch, while "/[culture/]land-ch" shows the simple start page (spec
+   docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §3). The route exists only in the cultures of
+   SiteModes.SimplePageCultures; the canonical points at itself and the hreflang set is limited to those cultures.
+   Answers 404 while SimpleMode:Enabled is off or the culture has no simple page (Program.cs); the component renders
+   NotFoundNotice itself in those cases, for an unknown culture slug (also "de", the unprefixed default) and for an
+   unknown country, because navigation inside the Blazor circuit never passes the HTTP guard. Culture is the URL slug
+   of the route (null for the default culture), Country the country page key; upper case is normalised because the
+   content files are lower case. *@
 @if (IsAvailable)
 {
-    <CountryStartTemplate PageKey="@CountryKey" Culture="@SupportedCultures.DefaultCode" RoutePath="@SiteModes.ExpertRoutePath(CountryKey)" SuppressHreflang="true" />
+    <CountryStartTemplate PageKey="@CountryKey" Culture="@(CultureCode!)"RoutePath="@SiteModes.ExpertRoutePath(CountryKey)" HreflangCultures="@SiteModes.SimplePageCultures" />
 }
 else
 {
@@ -18,11 +21,17 @@ else
 }
 
 @code {
+    [Parameter] public string? Culture { get; set; }
+
     [Parameter] public string Country { get; set; } = string.Empty;
 
     private string CountryKey => Country.ToLowerInvariant();
 
+    private string? CultureCode
+        => Culture is null ? SupportedCultures.DefaultCode : SiteModes.FindPrefixedCulture(Culture)?.Code;
+
     private bool IsAvailable
-        => SiteModes.HasSimplePage(SupportedCultures.DefaultCode, SiteModeOptions.Value.Enabled)
+        => CultureCode is not null
+            && SiteModes.HasSimplePage(CultureCode, SiteModeOptions.Value.Enabled)
             && CountryIndustries.AllCountries.Contains(CountryKey, StringComparer.Ordinal);
 }

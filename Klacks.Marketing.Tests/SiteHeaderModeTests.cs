@@ -34,7 +34,10 @@ public class SiteHeaderModeTests
     [TestCase("/land-ch", true, "mode-simple")]
     [TestCase("/land-ch/experten", true, "mode-expert")]
     [TestCase("/land-ch/spitex", true, "mode-expert")]
-    [TestCase("/fr/land-ch", true, "mode-expert")]
+    [TestCase("/fr/land-ch", true, "mode-simple")]
+    [TestCase("/en/land-gb", true, "mode-simple")]
+    [TestCase("/it/land-ch/experten", true, "mode-expert")]
+    [TestCase("/es/land-es", true, "mode-expert")]
     public async Task Body_carries_the_mode_class(string path, bool enabled, string expected)
     {
         var html = await GetHtmlAsync(enabled, path);
@@ -97,9 +100,11 @@ public class SiteHeaderModeTests
         html.ShouldContain("<a href=\"/land-ch\" class=\"flex shrink-0 items-center gap-2");
     }
 
-    [TestCase("/land-ch/experten", "href=\"/fr/land-ch\"", "href=\"/land-de/experten\"")]
+    [TestCase("/land-ch/experten", "href=\"/fr/land-ch/experten\"", "href=\"/land-de/experten\"")]
     [TestCase("/fr/land-ch", "href=\"/land-ch\"", "href=\"/fr/land-fr\"")]
     [TestCase("/land-ch", "href=\"/fr/land-ch\"", "href=\"/land-de\"")]
+    [TestCase("/fr/land-ch/experten", "href=\"/it/land-ch/experten\"", "href=\"/fr/land-fr/experten\"")]
+    [TestCase("/en/land-gb/experten", "href=\"/land-de/experten\"", "href=\"/en/land-ie/experten\"")]
     public async Task Language_and_country_switch_keep_the_mode(string path, string languageLink, string countryLink)
     {
         var html = await GetHtmlAsync(enabled: true, path);
@@ -108,19 +113,21 @@ public class SiteHeaderModeTests
         html.ShouldContain(countryLink);
     }
 
-    [TestCase("/fr/land-ch")]
-    [TestCase("/fr/land-ch/spitex")]
+    [TestCase("/es/land-es")]
+    [TestCase("/es/land-es/spitex")]
     public async Task Language_switch_from_a_culture_without_simple_page_leads_to_the_simple_page(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);
 
-        html.ShouldContain("href=\"/land-ch\"");
-        html.ShouldNotContain("href=\"/land-ch/experten\"");
+        html.ShouldContain("href=\"/land-de\"");
+        html.ShouldNotContain("href=\"/land-de/experten\"");
+        html.ShouldContain("href=\"/fr/land-fr\"");
+        html.ShouldNotContain("href=\"/fr/land-fr/experten\"");
     }
 
-    [TestCase("/land-ch/experten", "href=\"/it/land-ch\"")]
-    [TestCase("/land-ch/klacksy", "href=\"/it/land-ch\"")]
-    [TestCase("/land-ch/spitex", "href=\"/it/land-ch\"")]
+    [TestCase("/land-ch/experten", "href=\"/it/land-ch/experten\"")]
+    [TestCase("/land-ch/klacksy", "href=\"/it/land-ch/experten\"")]
+    [TestCase("/land-ch/spitex", "href=\"/it/land-ch/experten\"")]
     [TestCase("/land-ch/impressum", "href=\"/it/land-ch/impressum\"")]
     public async Task Language_switch_on_an_expert_page_never_links_to_a_missing_expert_page(string path, string italianLink)
     {
@@ -137,8 +144,9 @@ public class SiteHeaderModeTests
     [TestCase("/land-ch", false)]
     [TestCase("/land-ch/spitex", false)]
     [TestCase("/land-ch/impressum", false)]
-    [TestCase("/fr/land-ch", true)]
-    [TestCase("/fr/land-ch/spitex", true)]
+    [TestCase("/es/land-es", true)]
+    [TestCase("/es/land-es/spitex", true)]
+    [TestCase("/ja/land-jp", true)]
     public async Task Header_without_switch_keeps_the_single_row_layout(string path, bool enabled)
     {
         var html = await GetHtmlAsync(enabled, path);
@@ -155,6 +163,9 @@ public class SiteHeaderModeTests
 
     [TestCase("/land-ch")]
     [TestCase("/land-ch/experten")]
+    [TestCase("/fr/land-ch")]
+    [TestCase("/en/land-gb/experten")]
+    [TestCase("/it/land-it/spitex")]
     public async Task Header_with_switch_has_two_rows(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);

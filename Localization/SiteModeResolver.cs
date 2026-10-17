@@ -23,7 +23,7 @@ public static class SiteModeResolver
         var culture = SupportedCultures.Default;
         var index = 0;
 
-        if (segments.Length > 0 && FindPrefixedCulture(segments[0]) is { } prefixed)
+        if (segments.Length > 0 && SiteModes.FindPrefixedCulture(segments[0]) is { } prefixed)
         {
             culture = prefixed;
             index = 1;
@@ -48,8 +48,4 @@ public static class SiteModeResolver
             ? new SiteModeState(IsSimple: true, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{SiteModes.ExpertRoutePath(country)}", CultureCode: culture.Code, FeatureEnabled: simpleModeEnabled)
             : new SiteModeState(IsSimple: false, ShowSwitch: true, SwitchTarget: $"{prefix}{PathSeparator}{country}", CultureCode: culture.Code, FeatureEnabled: simpleModeEnabled);
     }
-
-    private static SupportedCulture? FindPrefixedCulture(string segment)
-        => SupportedCultures.All.FirstOrDefault(culture =>
-            culture.UrlSlug.Length > 0 && culture.UrlSlug.Equals(segment, StringComparison.OrdinalIgnoreCase));
 }

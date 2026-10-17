@@ -12,7 +12,7 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// Renders the real SimpleStartTemplate for every country in German: one H1, no duplicate id, every header jump target
+/// Renders the real SimpleStartTemplate for every country in German and in each translated culture (en, fr, it, also without any recording): one H1, no duplicate id, every header jump target
 /// present, no raw content key or placeholder, links stay on the country, the demo-data note sits below the media and
 /// speaks in the Du form (structured data included), industry chips lead to real industry pages, the share block shows
 /// the link with the share reference as selectable text below the copy status, the talk text spans the row without the
@@ -254,6 +254,76 @@ public class SimpleStartTemplateRenderingTests
         }
     }
 
+    [TestCase("en", "land-gb", "Workforce planning", "United Kingdom")]
+    [TestCase("en", "land-ch", "Workforce planning", "Switzerland")]
+    [TestCase("fr", "land-ch", "planification du personnel", "Suisse")]
+    [TestCase("fr", "land-be", "planification du personnel", "Belgique")]
+    [TestCase("it", "land-it", "Pianificazione del personale", "Italia")]
+    [TestCase("it", "land-ch", "Pianificazione del personale", "Svizzera")]
+    public async Task Translated_simple_page_renders_in_its_culture_without_any_recording(string culture, string country, string h1Term, string countryName)
+    {
+        var slug = SupportedCultures.All.First(record => record.Code == culture).UrlSlug;
+        var html = WebUtility.HtmlDecode(await RenderAsync(country, new EmptyVideoCatalog(), culture));
+
+        var h1 = Regex.Matches(html, H1Pattern, RegexOptions.Singleline);
+        h1.Count.ShouldBe(1);
+        h1[0].Groups[1].Value.ShouldContain(h1Term);
+        Regex.Matches(html, IdPattern).Select(match => match.Groups[1].Value).GroupBy(id => id).Where(group => group.Count() > 1).ShouldBeEmpty();
+        RawKeys(html).ShouldBeEmpty();
+        html.ShouldNotContain("{country}");
+        html.ShouldNotContain("simple-story-heading");
+        html.ShouldNotContain("<video");
+        TalkSection(html).ShouldContain(TextColumnFullWidth);
+        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
+        var image = Regex.Match(html, ImageSourcePattern);
+        image.Success.ShouldBeTrue();
+        File.Exists(Path.Combine(MarketingProjectPaths.WebRoot, image.Groups[1].Value)).ShouldBeTrue(image.Groups[1].Value);
+
+        foreach (var german in new[] { "Personalplanung", "Klacksy ausprobieren", "Expertenmodus", "Hinweis zu den Beispieldaten", "Schweiz" })
+        {
+            html.ShouldNotContain(german, Case.Sensitive, $"{culture}: German text '{german}'");
+        }
+
+        SoftwareApplicationDescription(html).ShouldBe(SeoText.ToDescription(Content.GetText(culture, SiteModes.SimpleContentKey, "metaDescription")));
+        Content.GetText(culture, SiteModes.SimpleContentKey, "pageTitle").ShouldContain("{country}");
+        countryName.ShouldBe(Content.FindText(culture, SiteModes.CountryNamesContentKey, country));
+
+        var links = Regex.Matches(html, HrefPattern).Select(match => match.Groups[1].Value).ToList();
+        links.ShouldAllBe(link => link.StartsWith($"/{slug}/{country}", StringComparison.Ordinal));
+        links.ShouldContain($"/{slug}/{country}/{SiteModes.ExpertSlug}");
+        links.ShouldContain($"/{slug}/{country}/{CountryPageLinks.InstallationSlug}#{PageSectionIds.OfficePc}");
+        foreach (var industry in SimpleStartTemplate.AudienceSlugs)
+        {
+            links.ShouldContain($"/{slug}/{country}/{industry}");
+        }
+    }
+
+    [TestCase("en")]
+    [TestCase("fr")]
+    [TestCase("it")]
+    public async Task Translated_simple_page_shares_its_own_culture_url(string culture)
+    {
+        var slug = SupportedCultures.All.First(record => record.Code == culture).UrlSlug;
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new EmptyVideoCatalog(), culture));
+        var shareUrl = $"{MarketingComponentHost.BaseUrl}{slug}/{CountryIndustries.SwissCountryPageKey}{SimpleStartTemplate.ShareReferenceQuery}";
+
+        html.ShouldContain($"data-share-copy=\"{shareUrl}\"");
+    }
+
+    [TestCase("en")]
+    [TestCase("fr")]
+    [TestCase("it")]
+    public async Task With_recordings_in_the_culture_the_story_clip_and_both_videos_use_the_culture_files(string culture)
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog(), culture));
+
+        html.ShouldContain($"{SimpleVideo.StoryComicVideoName}-{culture}.webp");
+        html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-{culture}.webp");
+        html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-{culture}.webp");
+        html.ShouldNotContain("-de.webp");
+        html.ShouldContain(Content.GetText(culture, SiteModes.SimpleContentKey, "story.note"));
+    }
+
     private static IPageContentProvider Content => new JsonPageContentProvider(new TestWebHostEnvironment());
 
     private static string TalkSection(string html)
@@ -284,14 +354,16 @@ public class SimpleStartTemplateRenderingTests
     private static IEnumerable<string> RawKeys(string html)
         => VisibleTexts(html).Where(text => Regex.IsMatch(text.Trim(), ContentKeyPattern)).Distinct();
 
-    private static Task<string> RenderAsync(string country, ILocalizedVideoCatalog? catalog = null)
+    private static Task<string> RenderAsync(string country, ILocalizedVideoCatalog? catalog = null, string culture = SupportedCultures.DefaultCode)
     {
-        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, country), catalog);
+        var slug = SupportedCultures.All.First(record => record.Code == culture).UrlSlug;
+        var relativePath = slug.Length == 0 ? country : $"{slug}/{country}";
+        var services = MarketingComponentHost.CreateServices(new NavigableNavigationManager(MarketingComponentHost.BaseUrl, relativePath), catalog);
 
         return MarketingComponentHost.RenderAsync<SimpleStartTemplate>(services, new Dictionary<string, object?>
         {
             [nameof(SimpleStartTemplate.PageKey)] = country,
-            [nameof(SimpleStartTemplate.Culture)] = SupportedCultures.DefaultCode,
+            [nameof(SimpleStartTemplate.Culture)] = culture,
         });
     }
 

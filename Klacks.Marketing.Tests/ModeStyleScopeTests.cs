@@ -60,9 +60,9 @@ public class ModeStyleScopeTests
         }
     }
 
-    [TestCase("/fr/land-ch")]
-    [TestCase("/fr/land-ch/spitex")]
-    [TestCase("/it/land-ch/impressum")]
+    [TestCase("/es/land-es")]
+    [TestCase("/es/land-es/spitex")]
+    [TestCase("/nl/land-be/impressum")]
     public async Task Feature_on_page_without_switch_renders_no_switch_only_hook(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);
@@ -76,6 +76,8 @@ public class ModeStyleScopeTests
     [TestCase("/land-ch", "site-header-simple", "site-main-simple", "site-header-expert", "site-main-expert")]
     [TestCase("/land-ch/experten", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
     [TestCase("/land-ch/spitex", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
+    [TestCase("/fr/land-ch", "site-header-simple", "site-main-simple", "site-header-expert", "site-main-expert")]
+    [TestCase("/en/land-gb/experten", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
     public async Task Header_and_content_with_switch_carry_their_mode_classes(string path, string header, string content, string otherHeader, string otherContent)
     {
         var html = await GetHtmlAsync(enabled: true, path);

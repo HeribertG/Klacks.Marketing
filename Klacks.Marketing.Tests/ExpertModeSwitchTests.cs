@@ -39,6 +39,23 @@ public class ExpertModeSwitchTests
         html.ShouldNotContain("type=\"checkbox\"");
     }
 
+    [TestCase("en/land-gb", false, "/en/land-gb/experten", "Expert mode")]
+    [TestCase("en/land-gb/experten", true, "/en/land-gb", "Expert mode")]
+    [TestCase("fr/land-ch", false, "/fr/land-ch/experten", "Mode expert")]
+    [TestCase("fr/land-ch/spitex", true, "/fr/land-ch", "Mode expert")]
+    [TestCase("it/land-ch", false, "/it/land-ch/experten", "Modalità esperti")]
+    [TestCase("it/land-it/experten", true, "/it/land-it", "Modalità esperti")]
+    public async Task Switch_in_prefixed_cultures_keeps_the_prefix_and_speaks_the_page_language(string path, bool expectedChecked, string target, string label)
+    {
+        var html = System.Net.WebUtility.HtmlDecode(await RenderAsync(path, enabled: true));
+
+        html.ShouldContain(SwitchMarker);
+        html.ShouldContain($"<a href=\"{target}\"");
+        html.ShouldContain(expectedChecked ? CheckedMarker : UncheckedMarker);
+        html.ShouldContain(label);
+        html.ShouldNotContain("Expertenmodus");
+    }
+
     [Test]
     public void Space_activates_the_switch_like_enter()
     {
@@ -55,8 +72,10 @@ public class ExpertModeSwitchTests
         MarketingProjectPaths.ReadSource("wwwroot/js/site-mode.js").ShouldContain("if (!modeClass)");
     }
 
-    [TestCase("fr/land-ch", true)]
+    [TestCase("es/land-es", true)]
+    [TestCase("ja/land-jp/spitex", true)]
     [TestCase("land-ch", false)]
+    [TestCase("fr/land-ch", false)]
     public async Task Switch_is_hidden_without_a_simple_page(string path, bool enabled)
     {
         (await RenderAsync(path, enabled)).ShouldNotContain(SwitchMarker);

@@ -94,6 +94,9 @@ public class CountryStartRoutingTests
     [TestCase("/fr/land-fr/angebot")]
     [TestCase("/land-ch/experten")]
     [TestCase("/land-cn/experten")]
+    [TestCase("/fr/land-ch/experten")]
+    [TestCase("/en/land-gb/experten")]
+    [TestCase("/it/land-it/experten")]
     public void Production_pages_are_known_routes(string path)
     {
         KnownPageRoutes.Contains(path).ShouldBeTrue(path);
@@ -105,8 +108,8 @@ public class CountryStartRoutingTests
     [TestCase("/land-xx/mittlere-betriebe")]
     [TestCase("/de/land-ch/grosse-betriebe")]
     [TestCase("/de/land-ch/angebot")]
-    [TestCase("/fr/land-ch/experten")]
     [TestCase("/de/land-ch/experten")]
+    [TestCase("/xx/land-ch/experten")]
     [TestCase("/land-xx/experten")]
     [TestCase("/en/experten")]
     public void Preview_pages_and_unknown_countries_are_no_component_routes(string path)
@@ -140,13 +143,13 @@ public class CountryStartRoutingTests
     }
 
     [Test]
-    public void Expert_start_page_has_the_german_only_country_route()
+    public void Expert_start_page_has_the_default_and_the_culture_prefixed_country_route()
     {
         var source = MarketingProjectPaths.ReadSource("Pages/CountryExpertStart.razor");
 
         source.ShouldContain("@page \"/{country}/experten\"");
-        source.ShouldNotContain("{culture}");
+        source.ShouldContain("@page \"/{culture}/{country}/experten\"");
         source.ShouldContain("<CountryStartTemplate ");
-        source.ShouldContain("SuppressHreflang=\"true\"");
+        source.ShouldContain("HreflangCultures=\"@SiteModes.SimplePageCultures\"");
     }
 }

@@ -78,9 +78,10 @@ public static class SitemapGenerator
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
     // left out, matching the noindex/hreflang rule in SeoHead.
-    // includeExpertStartPages lists the German expert start pages ("/land-ch/experten", SimpleMode:Enabled) as plain
-    // entries without alternates: in stage 1 they exist in the default culture only, so an hreflang set would point
-    // at URLs that answer 404.
+    // includeExpertStartPages lists the expert start pages ("/land-ch/experten", "/fr/land-ch/experten",
+    // SimpleMode:Enabled) of the cultures with a simple page and own country text; their alternates are limited to
+    // those cultures, matching the hreflang set the page itself emits (SeoHead.HreflangCultures), since the route
+    // answers 404 in every other culture.
     public static string Build(string baseUrl, Func<string, string, bool> hasContentIn, bool includeExpertStartPages = false)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
@@ -102,9 +103,14 @@ public static class SitemapGenerator
         {
             foreach (var countryPageKey in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
             {
-                sb.AppendLine("  <url>");
-                sb.AppendLine($"    <loc>{BuildUrl(trimmedBase, SupportedCultures.Default, SiteModes.ExpertRoutePath(countryPageKey))}</loc>");
-                sb.AppendLine("  </url>");
+                var cultures = SupportedCultures.All
+                    .Where(culture => SiteModes.SimplePageCultures.Contains(culture.Code) && hasContentIn(culture.Code, countryPageKey))
+                    .ToList();
+
+                foreach (var culture in cultures)
+                {
+                    AppendUrl(sb, trimmedBase, culture, _ => SiteModes.ExpertRoutePath(countryPageKey), cultures);
+                }
             }
         }
 
