@@ -1,0 +1,20 @@
+{
+  "en": {
+    "language": "British English",
+    "address": "neutral and polite, address the viewer as 'you'",
+    "abbreviations": { "absence": "IA", "absenceName": "Illness/Accident", "replacement": "REP", "replacementName": "Replacement" },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+  },
+  "fr": {
+    "language": "French",
+    "address": "formal 'vous', no point median, neutral wording",
+    "abbreviations": { "absence": "MA", "absenceName": "Maladie/Accident", "replacement": "REM", "replacementName": "Remplacement" },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+  },
+  "it": {
+    "language": "Italian",
+    "address": "informal 'tu'",
+    "abbreviations": { "absence": "MI", "absenceName": "Malattia/Infortunio", "replacement": "SOS", "replacementName": "Sostituzione" },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+  }
+}
