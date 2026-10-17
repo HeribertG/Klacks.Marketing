@@ -19,7 +19,30 @@
     "absenceName": "Illness/Accident",
     "replacement": "REP",
     "replacementName": "Replacement",
-    "verifiedOnTake": false
+    "verifiedOnTake": true
+  },
+  "take": {
+    "seconds": 23.36,
+    "windows": {
+      "y1": {
+        "from": 16.8,
+        "to": 20
+      },
+      "y2": {
+        "from": 20,
+        "to": 23.36
+      }
+    },
+    "source": "klacks-take-ausfall-decken-en-vorschau.mp4 (simple-cover-absence, 1280x800, 25 fps, recorded 2026-10-17)",
+    "redCellVisibleSeconds": [
+      16.8,
+      20.5
+    ],
+    "orangeCellVisibleSeconds": [
+      17,
+      23.36
+    ],
+    "verifiedOnTake": true
   },
   "review": {
     "translatedBy": "deepseek-v4-pro, edited by hand (schedule instead of rota, pill and tagline aligned with the English site)",

@@ -7,7 +7,7 @@
     "k4": "Je vous présente Klacksy, votre collaborateur électronique.",
     "x1": "Pour les plannings, il y a Klacks. Il vous aide.",
     "y1": "Rouge : MA = Maladie/Accident, personne absente.",
-    "y2": "Orange : REM = Remplacement. Un autre prend le relais."
+    "y2": "Orange : REM = Remplacement. Quelqu’un d’autre prend le relais."
   },
   "endcard": {
     "tagline": "Planification du personnel avec Klacksy",
@@ -19,7 +19,30 @@
     "absenceName": "Maladie/Accident",
     "replacement": "REM",
     "replacementName": "Remplacement",
-    "verifiedOnTake": false
+    "verifiedOnTake": true
+  },
+  "take": {
+    "seconds": 23.48,
+    "windows": {
+      "y1": {
+        "from": 16.6,
+        "to": 19.6
+      },
+      "y2": {
+        "from": 19.6,
+        "to": 23.48
+      }
+    },
+    "source": "klacks-take-ausfall-decken-fr-vorschau.mp4 (simple-cover-absence, 1280x800, 25 fps, recorded 2026-10-17)",
+    "redCellVisibleSeconds": [
+      16.6,
+      20.2
+    ],
+    "orangeCellVisibleSeconds": [
+      16.9,
+      23.48
+    ],
+    "verifiedOnTake": true
   },
   "review": {
     "translatedBy": "deepseek-v4-pro, edited by hand (k2 shortened, y1 with full stop within budget, pill aligned with the French site)",

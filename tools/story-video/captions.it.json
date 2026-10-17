@@ -19,7 +19,30 @@
     "absenceName": "Malattia/Infortunio",
     "replacement": "SOS",
     "replacementName": "Sostituzione",
-    "verifiedOnTake": false
+    "verifiedOnTake": true
+  },
+  "take": {
+    "seconds": 23.44,
+    "windows": {
+      "y1": {
+        "from": 16.6,
+        "to": 20
+      },
+      "y2": {
+        "from": 20,
+        "to": 23.44
+      }
+    },
+    "source": "klacks-take-ausfall-decken-it-vorschau.mp4 (simple-cover-absence, 1280x800, 25 fps, recorded 2026-10-17)",
+    "redCellVisibleSeconds": [
+      16.6,
+      20.4
+    ],
+    "orangeCellVisibleSeconds": [
+      17,
+      23.44
+    ],
+    "verifiedOnTake": true
   },
   "review": {
     "translatedBy": "deepseek-v4-pro, edited by hand (k2 keeps the dash of the German original, x1 'piani turni')",
