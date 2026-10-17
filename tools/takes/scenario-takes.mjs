@@ -462,7 +462,7 @@ export async function takeScenarioCreate(take) {
   });
 }
 
-async function openPlanWeek(take) {
+export async function openPlanWeek(take) {
   const { page, options } = take;
   let opened = await openSchedule(page, options);
   const periodDays = dayDiff(opened.filter.periodStartDate, opened.filter.periodEndDate) + 1;

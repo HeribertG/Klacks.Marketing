@@ -6,7 +6,9 @@
  * capture-app-videos.mjs (1.5 MB), the MP4 length lies in the expected range, and the take report says publishable, no dev
  * overlay, every caption long enough on screen, nothing covered, no refusal in an answer and every expected skill call made. With ffmpeg it extracts one still per caption into
  * <frames>/<video>-<culture>/checks for the visual check, and it prints reference rows of existing videos for comparison.
- * CLI: --cultures de  --frames-dir <dir>  --ffmpeg <path>
+ * It covers simple-klacksy-call, simple-plans-week and the story take simple-cover-absence ("Ausfall decken", 15-30 s); a video that is not
+ * published to wwwroot yet is reported as missing, so restrict a run to published videos with --videos.
+ * CLI: --cultures de  --videos simple-cover-absence  --frames-dir <dir>  --ffmpeg <path>
  * Env: KLACKS_VIDEO_FRAMES_DIR, FFMPEG_PATH
  */
 
@@ -18,6 +20,7 @@ import { fileURLToPath } from "node:url";
 import { parseArgs, promisify } from "node:util";
 import { MIN_VISIBLE_SECONDS } from "./lib/caption-overlay.mjs";
 import { VIDEO_SIMPLE_KLACKSY_CALL, VIDEO_SIMPLE_PLANS_WEEK, takeAnswerProblems } from "./takes/simple-takes.mjs";
+import { VIDEO_SIMPLE_COVER_ABSENCE } from "./takes/simple-story-takes.mjs";
 
 const run = promisify(execFile);
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
@@ -39,6 +42,7 @@ const HALF = 2;
 const LIMITS = {
   [VIDEO_SIMPLE_KLACKSY_CALL]: { minSeconds: 10, maxSeconds: 20 },
   [VIDEO_SIMPLE_PLANS_WEEK]: { minSeconds: 30, maxSeconds: 50 },
+  [VIDEO_SIMPLE_COVER_ABSENCE]: { minSeconds: 15, maxSeconds: 30 },
 };
 const REFERENCE_VIDEOS = ["klacksy-plans-week", "rest-conflict"];
 const ANSWER_PREVIEW_CHARS = 300;
@@ -135,7 +139,11 @@ async function referenceRow(video, culture) {
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { cultures: { type: "string" }, "frames-dir": { type: "string" }, ffmpeg: { type: "string" } } });
+  const { values } = parseArgs({ options: { cultures: { type: "string" }, videos: { type: "string" }, "frames-dir": { type: "string" }, ffmpeg: { type: "string" } } });
+  const knownVideos = Object.keys(LIMITS);
+  const videos = values.videos ? values.videos.split(",").map((v) => v.trim()).filter(Boolean) : knownVideos;
+  const unknown = videos.filter((v) => !knownVideos.includes(v));
+  if (unknown.length > 0) throw new Error(`unknown video(s) ${unknown.join(", ")}; known: ${knownVideos.join(", ")}`);
   const options = {
     cultures: (values.cultures ?? "de").split(",").map((c) => c.trim().toLowerCase()).filter(Boolean),
     framesRoot: path.resolve(values["frames-dir"] ?? process.env.KLACKS_VIDEO_FRAMES_DIR ?? DEFAULT_FRAMES_DIR),
@@ -143,7 +151,7 @@ async function main() {
   };
   const rows = [];
   for (const culture of options.cultures) {
-    for (const video of Object.keys(LIMITS)) {
+    for (const video of videos) {
       const result = await checkVideo(options, video, culture);
       rows.push(result.row);
       for (const problem of result.problems) console.error(`x ${result.row.name}: ${problem}`);

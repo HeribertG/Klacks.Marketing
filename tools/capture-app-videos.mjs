@@ -25,7 +25,9 @@
  * The simple start page takes (simple-klacksy-call in takes/simple-takes.mjs; simple-plans-week = takeKlacksyPlansWeek with its
  * own script) add cue-based captions from simple-videos.<culture>.json (lib/caption-overlay.mjs); a caption that is never shown,
  * stays on screen for less than MIN_VISIBLE_SECONDS of the encoded video or covers the chat input makes the take not publishable.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The simple story takes (simple-cover-absence, simple-planning-progress) live in takes/simple-story-takes.mjs and use the same captions;
+ * simple-planning-progress crops the schedule header area (960x600 of the 1280x800 viewport) so the 2 px progress line stays readable.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -105,6 +107,15 @@ import {
   VIDEO_SIMPLE_PLANS_WEEK,
   takeAnswerProblems,
 } from "./takes/simple-takes.mjs";
+import {
+  SIMPLE_COVER_ABSENCE_CUES,
+  SIMPLE_PLANNING_PROGRESS_CUES,
+  SIMPLE_STORY_CSS,
+  SIMPLE_STORY_TAKE_RUNNERS,
+  SIMPLE_STORY_VIDEOS,
+  VIDEO_SIMPLE_COVER_ABSENCE,
+  VIDEO_SIMPLE_PLANNING_PROGRESS,
+} from "./takes/simple-story-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -119,7 +130,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -429,6 +440,16 @@ const TAKES = {
   [VIDEO_SIMPLE_PLANS_WEEK]: {
     period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek,
     needsScript: true, captionCues: Object.values(SIMPLE_PLANS_WEEK_CUES), finalHoldMs: SIMPLE_PLANS_WEEK_FINAL_HOLD_MS,
+  },
+  [VIDEO_SIMPLE_COVER_ABSENCE]: {
+    period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_COVER_ABSENCE],
+    needsScript: true, captionCues: Object.values(SIMPLE_COVER_ABSENCE_CUES),
+  },
+  [VIDEO_SIMPLE_PLANNING_PROGRESS]: {
+    period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+${SIMPLE_STORY_CSS[VIDEO_SIMPLE_PLANNING_PROGRESS]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_PLANNING_PROGRESS],
+    captionCues: Object.values(SIMPLE_PLANNING_PROGRESS_CUES),
   },
   ...Object.fromEntries(KLACKSY_GROUPING_VIDEOS.map((video) => [
     video,
