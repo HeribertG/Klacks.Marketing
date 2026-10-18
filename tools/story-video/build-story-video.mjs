@@ -6,11 +6,15 @@
  * mixes the clip sound with a synthetic pink-noise bed and writes simple-story-comic-<culture>.mp4 / .webm / .webp.
  * It prints the caption reading speed, file sizes and the duration. Steps run one after another (low RAM).
  * CLI: --culture <code> --raw <raw clip> --take <app take of that UI language> --schedule-image <app-schedule-<culture>.webp>
- *      --out-dir <dir> [--captions <file>] [--endcard-image <png>] [--font-mode inter|live] [--ffmpeg <path>] [--ffprobe <path>]
- * @param culture - culture code; captions come from captions.<culture>.json next to this file unless --captions is given
+ *      --out-dir <dir> [--captions <file>] [--endcard-image <png>] [--mode standard|exact] [--ffmpeg <path>] [--ffprobe <path>]
+ * @param culture - any of the 25 cultures in any casing (zh-CN = zh-cn); captions come from captions.<culture>.json next to
+ *        this file unless --captions is given; the output files use the lower-case culture like the video catalog
  * @param endcard-image - optional fixed end card PNG instead of the rendered one (regression against the live video)
- * @param font-mode - inter (default, Inter embedded) or live (fonts.css by file link, which Chromium ignores, so the system
- *        font renders; this is how the live German cut of 2026-10-17 was made and only serves the bit-exact regression)
+ * @param mode - standard (default: Inter, fitted layout, in-app caption never shown together with a story caption) or exact
+ *        (the layout of the live German cut of 2026-10-17: Arial through the ignored font link, crop 0:40, old placement;
+ *        only for the bit-exact regression against the live video, also accepted as --font-mode live)
+ * Exit code 1 when a check fails (glyphs not in Inter, caption over two lines, overlapping captions, cue cut off by the crop);
+ * the video is still written so the frames can be inspected.
  */
 
 import { execFile } from "node:child_process";
@@ -18,7 +22,9 @@ import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs, promisify } from "node:util";
-import { FONT_MODES, FONT_MODE_INTER, renderCaptions, renderEndcard } from "./render-overlays.mjs";
+import { findCaptionsFile, findProfile, normalizeCulture, renderSettings } from "./culture-profile.mjs";
+import { coverInStoryFrame, cueTimes, detectCueBox } from "./cue-box.mjs";
+import { renderCaptions, renderEndcard } from "./render-overlays.mjs";
 import {
   DECIMALS,
   ENDCARD_SCENE,
@@ -27,7 +33,6 @@ import {
   FPS,
   FRAME_HEIGHT,
   FRAME_WIDTH,
-  MAX_CHARS_PER_SECOND,
   NOISE_BED,
   OUTPUT_PREFIX,
   OUTRO_SCENE,
@@ -35,8 +40,14 @@ import {
   RAW_SCENE,
   SCHEDULE_SCENE,
   SEGMENT_CODEC,
+  LAYOUTS,
+  LAYOUT_EXACT,
+  LAYOUT_STANDARD,
+  TAKE_CAPTION,
   WEBM_CODEC,
   captionTimeline,
+  cultureDirection,
+  overlappingCaptions,
   readingSpeed,
   takeSettings,
 } from "./story-recipe.mjs";
@@ -46,6 +57,7 @@ const toolDir = path.dirname(fileURLToPath(import.meta.url));
 const MAX_BUFFER_BYTES = 64 * 1024 * 1024;
 const BYTES_PER_KB = 1024;
 const NUMBER_DECIMALS = 3;
+const LEGACY_FONT_MODE_EXACT = "live";
 const WORK_DIR_PREFIX = "work-";
 const CAPTIONS_DIR = "overlays";
 const SEGMENTS_DIR = "segments";
@@ -92,6 +104,7 @@ function readOptions() {
       "out-dir": { type: "string" },
       captions: { type: "string" },
       "endcard-image": { type: "string" },
+      mode: { type: "string" },
       "font-mode": { type: "string" },
       ffmpeg: { type: "string" },
       ffprobe: { type: "string" },
@@ -100,17 +113,17 @@ function readOptions() {
   const required = ["culture", "raw", "take", "schedule-image", "out-dir"];
   const missing = required.filter((k) => !values[k]);
   if (missing.length > 0) throw new Error(`missing option(s): ${missing.map((k) => `--${k}`).join(", ")}`);
-  const culture = values.culture.trim();
-  const fontMode = values["font-mode"] ?? FONT_MODE_INTER;
-  if (!FONT_MODES.includes(fontMode)) throw new Error(`--font-mode must be one of ${FONT_MODES.join(", ")}`);
+  const culture = normalizeCulture(values.culture);
+  const layout = values.mode ?? (values["font-mode"] === LEGACY_FONT_MODE_EXACT ? LAYOUT_EXACT : LAYOUT_STANDARD);
+  if (!LAYOUTS.includes(layout)) throw new Error(`--mode must be one of ${LAYOUTS.join(", ")}`);
   return {
-    fontMode,
+    layout,
     culture,
     raw: path.resolve(values.raw),
     take: path.resolve(values.take),
     schedule: path.resolve(values["schedule-image"]),
     outDir: path.resolve(values["out-dir"]),
-    captionsFile: path.resolve(values.captions ?? path.join(toolDir, `captions.${culture}.json`)),
+    captionsFile: values.captions ? path.resolve(values.captions) : null,
     endcardImage: values["endcard-image"] ? path.resolve(values["endcard-image"]) : null,
     tools: {
       ffmpeg: values.ffmpeg ?? process.env.FFMPEG_PATH ?? "ffmpeg",
@@ -211,27 +224,64 @@ async function muxFinal(tools, raw, segDir, workDir, outBase) {
   await ffmpeg(tools, ["-i", mp4, "-frames:v", "1", "-c:v", p.codec, "-quality", String(p.quality), "-compression_level", String(p.compressionLevel), `${outBase}${EXT_POSTER}`]);
 }
 
-function printReadingSpeed(culture, rows) {
-  console.log(`caption reading speed ${culture} (max ${MAX_CHARS_PER_SECOND} chars/s):`);
+function printReadingSpeed(culture, rows, maxCharsPerSecond) {
+  console.log(`caption reading speed ${culture} (max ${maxCharsPerSecond} chars/s):`);
   console.table(rows);
-  for (const r of rows.filter((x) => x.tooFast)) console.warn(`! ${culture} ${r.key}: ${r.cps} chars/s over ${MAX_CHARS_PER_SECOND}`);
+  for (const r of rows.filter((x) => x.tooFast)) console.warn(`! ${culture} ${r.key}: ${r.cps} chars/s over ${maxCharsPerSecond}`);
+}
+
+async function coverOfCue(options, take, takeSize) {
+  const direction = cultureDirection(options.culture);
+  const windows = Object.values(take.windows);
+  const window = { from: Math.min(...windows.map((w) => w.from)), to: Math.max(...windows.map((w) => w.to)) };
+  const times = cueTimes(window, take.seconds);
+  const { box, frames, inspected } = await detectCueBox(options.tools.ffmpeg, options.take, times, takeSize, direction);
+  const [, , , cropY] = take.crop.split(":").map(Number);
+  const cover = coverInStoryFrame(box, cropY, FRAME_WIDTH, FRAME_HEIGHT, TAKE_CAPTION.coverPad);
+  console.log(`in-app caption found in ${frames}/${inspected} frames (${times.join(", ")} s): take pixels x ${box.left}-${box.right}, y ${box.top}-${box.bottom}; cover in the story frame x ${cover.left}-${cover.right}, y ${cover.top}-${cover.bottom}`);
+  return cover;
 }
 
 async function main() {
   const options = readOptions();
-  const config = JSON.parse(await readFile(options.captionsFile, "utf8"));
-  const take = takeSettings(config.take);
-  printReadingSpeed(options.culture, readingSpeed(config.captions, captionTimeline(take.seconds, take)));
+  const exact = options.layout === LAYOUT_EXACT;
+  const captionsFile = options.captionsFile ?? await findCaptionsFile(options.culture);
+  if (!captionsFile) throw new Error(`no captions.${options.culture}.json in ${toolDir}; pass --captions`);
+  const config = JSON.parse(await readFile(captionsFile, "utf8"));
+  const profile = await findProfile(options.culture);
+  if (!profile) console.warn(`! no profile for ${options.culture} in culture-profiles.json: default font and reading speed`);
+  const settings = renderSettings(profile);
+  const take = takeSettings(config.take, options.layout);
+  const timeline = captionTimeline(take.seconds, take);
+  const problems = overlappingCaptions(timeline).map((p) => `captions overlap: ${p}`);
+  printReadingSpeed(options.culture, readingSpeed(config.captions, timeline, settings.maxCharsPerSecond), settings.maxCharsPerSecond);
   if (config.abbreviations && config.abbreviations.verifiedOnTake !== true) {
     console.warn(`! ${options.culture}: abbreviations ${config.abbreviations.absence}/${config.abbreviations.replacement} in y1/y2 are not yet checked against the recorded take`);
   }
+  const takeSize = await videoSize(options.tools, options.take);
+  if (takeSize.width !== take.sourceWidth || takeSize.height !== take.sourceHeight) {
+    throw new Error(`take ${options.take} is ${takeSize.width}x${takeSize.height}; the crop ${take.crop} expects ${take.sourceWidth}x${take.sourceHeight} like the German take`);
+  }
+  const cover = exact ? null : await coverOfCue(options, take, takeSize);
+  if (cover && !cover.visible) problems.push("in-app caption is cut off by the take crop");
   const workDir = path.join(options.outDir, `${WORK_DIR_PREFIX}${options.culture}`);
   const capDir = path.join(workDir, CAPTIONS_DIR);
   const segDir = path.join(workDir, SEGMENTS_DIR);
   await mkdir(capDir, { recursive: true });
   await mkdir(segDir, { recursive: true });
-  const caps = await renderCaptions(capDir, config.captions, options.culture, options.fontMode);
-  const endcardPng = options.endcardImage ?? await renderEndcard(capDir, config.endcard, options.culture);
+  const rendered = await renderCaptions(capDir, config.captions, options.culture, { layout: options.layout, settings, cover });
+  const caps = rendered.files;
+  problems.push(...rendered.problems);
+  let endcardPng = options.endcardImage;
+  if (!endcardPng) {
+    const card = await renderEndcard(capDir, config.endcard, options.culture, { layout: options.layout, settings });
+    endcardPng = card.file;
+    problems.push(...card.problems);
+    if (!exact) console.table(card.report);
+    for (const f of card.fits) console.log(`end card ${f.line} shrunk from ${f.from}px to ${f.fontSize}px to fit`);
+  }
+  console.table(rendered.report);
+  console.log(`fonts that drew the glyphs: * = Inter from wwwroot/fonts (embedded), other names are the system font; interRequired ${exact ? "n/a (exact layout, system font by design)" : settings.interRequired}`);
   await buildRawScene(options.tools, options.raw, caps, segDir);
   await buildScheduleScene(options.tools, options.schedule, caps, segDir);
   await buildTakeScene(options.tools, options.take, caps, segDir, take);
@@ -245,6 +295,8 @@ async function main() {
   }
   console.table(rows);
   console.log(`expected length of the German live cut: ${EXPECTED_SECONDS} s; end card: ${endcardPng}`);
+  for (const problem of problems) console.error(`! ${options.culture}: ${problem}`);
+  if (problems.length > 0) process.exitCode = 1;
 }
 
 main().catch((error) => {

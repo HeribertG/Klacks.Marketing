@@ -1,0 +1,45 @@
+{
+  "culture": "vi",
+  "captions": {
+    "k1": "Ngay trước giờ vào ca. Một tin nhắn: Anna bị ốm.",
+    "k2": "Còn bảng phân ca? Nằm trong bảng tính, trên giấy nhớ – và trong đầu Sandra.",
+    "k3": "Bảng tính không xếp ca.",
+    "k4": "Mình xin giới thiệu: Klacksy, đồng nghiệp điện tử của bạn.",
+    "x1": "Đã có Klacks giúp bạn xếp ca làm việc.",
+    "y1": "Đỏ: Ốm = Ốm đau/Tai nạn. Người đó vắng mặt.",
+    "y2": "Cam: TT = Thay thế. Người khác nhận ca."
+  },
+  "endcard": {
+    "tagline": "Lập lịch nhân sự cùng Klacksy",
+    "pill": "Mã nguồn mở · không thuê bao · chạy trên máy bạn",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "Ốm",
+    "absenceName": "Ốm đau/Tai nạn",
+    "replacement": "TT",
+    "replacementName": "Thay thế",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: k1, k2, k3, x1)",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 25.56,
+    "windows": {
+      "y1": {
+        "from": 18.9,
+        "to": 22.1
+      },
+      "y2": {
+        "from": 22.1,
+        "to": 25.56
+      }
+    },
+    "redCellFirstVisibleSeconds": 19,
+    "verifiedOnTake": true
+  }
+}

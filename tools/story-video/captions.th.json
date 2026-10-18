@@ -1,0 +1,30 @@
+{
+  "culture": "th",
+  "captions": {
+    "k1": "ก่อนเริ่มกะไม่นาน มีข้อความแจ้งว่า Anna ป่วย",
+    "k2": "แล้วตารางงานล่ะ? อยู่ในสเปรดชีต กระดาษโน้ต และในหัวของ Sandra",
+    "k3": "สเปรดชีตจัดกะงานไม่ได้",
+    "k4": "ขอแนะนำ Klacksy เพื่อนร่วมงานอิเล็กทรอนิกส์ของคุณ",
+    "x1": "สำหรับตารางงาน มี Klacks คอยช่วยคุณ",
+    "y1": "สีแดง: ปว = ลาป่วย/อุบัติเหตุ พนักงานขาดงาน",
+    "y2": "สีส้ม: ทดแทน = การทดแทน มีคนอื่นมารับช่วงต่อ"
+  },
+  "endcard": {
+    "tagline": "จัดตารางงานพนักงานด้วย Klacksy",
+    "pill": "โอเพนซอร์ส · ไม่มีค่าบริการรายเดือน · ใช้งานบนเครื่องคุณ",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "ปว",
+    "absenceName": "ลาป่วย/อุบัติเหตุ",
+    "replacement": "ทดแทน",
+    "replacementName": "การทดแทน",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, endcard.tagline, k3, x1); take captions edited in a Claude review pass: openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}

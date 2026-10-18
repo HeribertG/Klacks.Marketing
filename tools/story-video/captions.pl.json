@@ -1,0 +1,45 @@
+{
+  "culture": "pl",
+  "captions": {
+    "k1": "Tuż przed rozpoczęciem zmiany. Wiadomość: Anna jest chora.",
+    "k2": "A grafik? Tkwi w arkuszach kalkulacyjnych, na karteczkach – i w głowie Sandry.",
+    "k3": "Arkusz kalkulacyjny nie planuje zmian.",
+    "k4": "Poznaj: Klacksy, twój elektroniczny współpracownik.",
+    "x1": "Do planowania zmian służy Klacks. Pomaga ci w tym.",
+    "y1": "Czerwony: Ch = Choroba/Wypadek. Osoba jest nieobecna.",
+    "y2": "Pomarańczowy: ZAS = Zastępstwo. Ktoś inny przejmuje."
+  },
+  "endcard": {
+    "tagline": "Planowanie personelu z Klacksy",
+    "pill": "Open Source · bez abonamentu · działa u ciebie",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "Ch",
+    "absenceName": "Choroba/Wypadek",
+    "replacement": "ZAS",
+    "replacementName": "Zastępstwo",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, endcard.tagline, k2, k3, x1, y1)",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 24,
+    "windows": {
+      "y1": {
+        "from": 17.4,
+        "to": 20.6
+      },
+      "y2": {
+        "from": 20.6,
+        "to": 24
+      }
+    },
+    "redCellFirstVisibleSeconds": 17.5,
+    "verifiedOnTake": true
+  }
+}

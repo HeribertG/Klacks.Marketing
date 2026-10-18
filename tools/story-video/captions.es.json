@@ -1,0 +1,45 @@
+{
+  "culture": "es",
+  "captions": {
+    "k1": "Poco antes de empezar el turno. Un mensaje: Anna está enferma.",
+    "k2": "¿Y el horario? Está en hojas de cálculo, en notas – y en la cabeza de Sandra.",
+    "k3": "Una hoja de cálculo no planea turnos.",
+    "k4": "Te presento a Klacksy, tu empleado electrónico.",
+    "x1": "Para los turnos está Klacks. Te ayuda.",
+    "y1": "Rojo: EA = Enfermedad/Accidente. La persona falta.",
+    "y2": "Naranja: REM = Reemplazo. Alguien más toma el turno."
+  },
+  "endcard": {
+    "tagline": "Planificación de personal con Klacksy",
+    "pill": "Código abierto · sin suscripción · funciona en tu equipo",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "EA",
+    "absenceName": "Enfermedad/Accidente",
+    "replacement": "REM",
+    "replacementName": "Reemplazo",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.tagline, k2, k3)",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 26.6,
+    "windows": {
+      "y1": {
+        "from": 19.9,
+        "to": 23.1
+      },
+      "y2": {
+        "from": 23.1,
+        "to": 26.6
+      }
+    },
+    "redCellFirstVisibleSeconds": 20,
+    "verifiedOnTake": true
+  }
+}

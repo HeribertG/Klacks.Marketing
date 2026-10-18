@@ -1,0 +1,30 @@
+{
+  "culture": "ja",
+  "captions": {
+    "k1": "シフト開始の直前。メッセージ：Annaさんが病気です。",
+    "k2": "ではシフト表は？ 表計算や紙のメモ、そしてSandraさんの頭の中にあります。",
+    "k3": "表計算ではシフトは組めません。",
+    "k4": "ご紹介します。電子スタッフのKlacksyです。",
+    "x1": "シフト表にはKlacksが役立ちます。",
+    "y1": "赤：傷病 = 傷病休暇。その人は不在です。",
+    "y2": "オレンジ：代替。別の人が引き継ぎます。"
+  },
+  "endcard": {
+    "tagline": "Klacksyによるスタッフのシフト管理",
+    "pill": "オープンソース · サブスク不要 · 自分の環境で稼働",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "傷病",
+    "absenceName": "傷病休暇",
+    "replacement": "代替",
+    "replacementName": "代替",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.tagline, k1, k2, k3, k4, x1, y1); take captions edited in a Claude review pass: decide, form, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}

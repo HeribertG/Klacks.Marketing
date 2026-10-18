@@ -1,0 +1,45 @@
+{
+  "culture": "id",
+  "captions": {
+    "k1": "Sesaat sebelum jam kerja dimulai. Ada pesan: Anna sakit.",
+    "k2": "Dan jadwal kerja? Ada di spreadsheet, di catatan – dan di kepala Sandra.",
+    "k3": "Spreadsheet tidak bisa menyusun jadwal.",
+    "k4": "Perkenalkan: Klacksy, rekan kerja elektronik Anda.",
+    "x1": "Untuk jadwal kerja, ada Klacks. Ia membantu Anda.",
+    "y1": "Merah: SK = Sakit/Kecelakaan. Orang itu tidak masuk.",
+    "y2": "Oranye: GNT = Penggantian. Orang lain mengambil alih."
+  },
+  "endcard": {
+    "tagline": "Penjadwalan staf bersama Klacksy",
+    "pill": "Open Source · tanpa langganan · berjalan di komputer Anda",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "SK",
+    "absenceName": "Sakit/Kecelakaan",
+    "replacement": "GNT",
+    "replacementName": "Penggantian",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, endcard.tagline, x1); take captions edited in a Claude review pass: openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 31.6,
+    "windows": {
+      "y1": {
+        "from": 24.9,
+        "to": 28.1
+      },
+      "y2": {
+        "from": 28.1,
+        "to": 31.6
+      }
+    },
+    "redCellFirstVisibleSeconds": 25,
+    "verifiedOnTake": true
+  }
+}

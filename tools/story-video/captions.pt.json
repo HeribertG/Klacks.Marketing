@@ -1,0 +1,30 @@
+{
+  "culture": "pt",
+  "captions": {
+    "k1": "Pouco antes do início do turno. Uma mensagem: a Anna está doente.",
+    "k2": "E a escala? Vive em folhas de cálculo, em notas – e na cabeça da Sandra.",
+    "k3": "Uma tabela não planeia turnos.",
+    "k4": "Aqui está o Klacksy, o colega eletrónico.",
+    "x1": "Para escalas, existe o Klacks. Ele ajuda nisso.",
+    "y1": "Vermelho: DA = Doença/Acidente. A pessoa está ausente.",
+    "y2": "Laranja: SUB = Substituição. Outra pessoa assume."
+  },
+  "endcard": {
+    "tagline": "Planeamento de escalas com o Klacksy",
+    "pill": "Open Source · sem subscrição · corre no próprio computador",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "DA",
+    "absenceName": "Doença/Acidente",
+    "replacement": "SUB",
+    "replacementName": "Substituição",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, x1, y1); take captions edited in a Claude review pass: decide, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}

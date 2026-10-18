@@ -4,6 +4,9 @@
  * Frozen cut recipe of the "Anna is sick" story video (live cut "krank4", 54.57 s): segment timings, crops, caption windows,
  * encoder settings and the noise bed, plus helpers that map source caption windows onto the final timeline and compute the
  * reading speed (characters per second) of each caption.
+ * Two layouts exist: "exact" rebuilds the live German cut bit for bit (old take crop, old caption placement, Arial through the
+ * ignored font link) and serves only the regression check; "standard" is the layout for every new culture (Inter, take crop that
+ * keeps the in-app caption fully visible, story captions that take the place of the in-app caption, at most two lines).
  * @param take - optional per-culture take override from captions.<culture>.json ({ seconds, windows: { y1: {from,to}, ... } });
  *        the defaults are measured on the German take (1280x800, 25 fps, 23.08 s) and must be re-measured for every new recording
  */
@@ -14,6 +17,11 @@ export const FRAME_HEIGHT = 720;
 export const MAX_CAPTION_WIDTH = 980;
 export const MAX_CHARS_PER_SECOND = 17;
 export const DECIMALS = 2;
+const OVERLAP_TOLERANCE_SECONDS = 0.05;
+
+export const LAYOUT_EXACT = "exact";
+export const LAYOUT_STANDARD = "standard";
+export const LAYOUTS = Object.freeze([LAYOUT_EXACT, LAYOUT_STANDARD]);
 
 export const CULTURE_DEFAULT = "de";
 export const RTL_CULTURES = Object.freeze(["ar", "he"]);
@@ -36,9 +44,33 @@ export const CAPTION_STYLE = Object.freeze({
   barWidth: 6,
   radius: 10,
   background: "rgba(20,24,30,.88)",
+  coverBackground: "rgb(20,24,30)",
   color: "#fff",
   barColor: "#f5a30f",
   fontFamily: "Inter,sans-serif",
+});
+
+export const CAPTION_FIT = Object.freeze({ maxLines: 2, minFontSize: 24, fontStep: 2, shrinkWrapSlack: 2 });
+
+export const TAKE_CAPTION = Object.freeze({
+  maxWidth: 980,
+  coverPad: 8,
+  cueKeys: Object.freeze(["y1", "y2"]),
+  cueName: "decide",
+  takeVideo: "simple-cover-absence",
+});
+
+export const CUE_DETECTION = Object.freeze({
+  frames: 4,
+  searchFromFraction: 0.7,
+  darkMax: 90,
+  minRunPixels: 40,
+  startInsetPixels: 4,
+  edgePixels: 24,
+  maxGapRows: 40,
+  minBoxHeight: 24,
+  maxBoxHeight: 120,
+  haloPixels: 14,
 });
 
 export const ENDCARD_STYLE = Object.freeze({
@@ -96,6 +128,7 @@ export const SCHEDULE_SCENE = Object.freeze({
 
 export const TAKE_SCENE = Object.freeze({
   crop: "1280:720:0:40",
+  standardCropY: 60,
   sourceWidth: 1280,
   sourceHeight: 800,
   seconds: 23.08,
@@ -131,9 +164,11 @@ export function cultureDirection(culture) {
   return RTL_CULTURES.includes(culture.toLowerCase()) ? DIR_RTL : DIR_LTR;
 }
 
-export function takeSettings(override) {
+export function takeSettings(override, layout = LAYOUT_EXACT) {
+  const standard = layout === LAYOUT_STANDARD;
+  const [cropWidth, cropHeight, cropX] = TAKE_SCENE.crop.split(":");
   return {
-    crop: TAKE_SCENE.crop,
+    crop: standard ? `${cropWidth}:${cropHeight}:${cropX}:${TAKE_SCENE.standardCropY}` : TAKE_SCENE.crop,
     sourceWidth: TAKE_SCENE.sourceWidth,
     sourceHeight: TAKE_SCENE.sourceHeight,
     seconds: override?.seconds ?? TAKE_SCENE.seconds,
@@ -170,7 +205,7 @@ export function captionTimeline(takeSeconds, take) {
   return rows;
 }
 
-export function readingSpeed(captions, timeline) {
+export function readingSpeed(captions, timeline, maxCharsPerSecond = MAX_CHARS_PER_SECOND) {
   return timeline.map((row) => {
     const text = captions[row.key] ?? "";
     const chars = [...text].length;
@@ -181,7 +216,17 @@ export function readingSpeed(captions, timeline) {
       seconds: Number(row.seconds.toFixed(DECIMALS)),
       chars,
       cps: Number(cps.toFixed(DECIMALS)),
-      tooFast: cps > MAX_CHARS_PER_SECOND,
+      tooFast: cps > maxCharsPerSecond,
     };
   });
+}
+
+export function overlappingCaptions(timeline) {
+  const sorted = [...timeline].sort((a, b) => a.from - b.from);
+  const problems = [];
+  for (let i = 1; i < sorted.length; i += 1) {
+    const end = sorted[i - 1].from + sorted[i - 1].seconds;
+    if (sorted[i].from < end - OVERLAP_TOLERANCE_SECONDS) problems.push(`${sorted[i - 1].key} (until ${end.toFixed(DECIMALS)} s) overlaps ${sorted[i].key} (from ${sorted[i].from.toFixed(DECIMALS)} s)`);
+  }
+  return problems;
 }

@@ -1,0 +1,30 @@
+{
+  "culture": "zh-tw",
+  "captions": {
+    "k1": "就在輪班開始前不久，一則訊息：Anna 生病了。",
+    "k2": "那排班表呢？它存在試算表、紙條上，也在 Sandra 的腦海裡。",
+    "k3": "試算表不會排班。",
+    "k4": "讓我為您介紹：Klacksy，您的電子同事。",
+    "x1": "排班表就交給 Klacks，它會協助您。",
+    "y1": "紅色：傷病 = 傷病假。該人員無法出勤。",
+    "y2": "橙色：替換。由其他人接手。"
+  },
+  "endcard": {
+    "tagline": "用 Klacksy 進行人員排班",
+    "pill": "開放原始碼 · 免訂閱 · 在您自己的電腦上執行",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "傷病",
+    "absenceName": "傷病假",
+    "replacement": "替換",
+    "replacementName": "替換",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, endcard.tagline); take captions edited in a Claude review pass: decide, form",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}

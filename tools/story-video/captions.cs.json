@@ -1,0 +1,30 @@
+{
+  "culture": "cs",
+  "captions": {
+    "k1": "Krátce před začátkem směny. Zpráva: Anna je nemocná.",
+    "k2": "A rozpis směn? Vězí v tabulkách, na papírcích – a v hlavě Sandry.",
+    "k3": "Tabulka neplánuje směny.",
+    "k4": "Seznamte se: Klacksy, váš elektronický kolega.",
+    "x1": "Pro rozpisy směn je tu Klacks. Pomáhá vám s tím.",
+    "y1": "Červená: NÚ = Nemoc/Úraz. Osoba chybí.",
+    "y2": "Oranžová: ZAS = Zástup. Někdo jiný převezme směnu."
+  },
+  "endcard": {
+    "tagline": "Plánování směn s Klacksy",
+    "pill": "Open Source · bez předplatného · běží u vás",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "NÚ",
+    "absenceName": "Nemoc/Úraz",
+    "replacement": "ZAS",
+    "replacementName": "Zástup",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.tagline, k2, k3, x1, y2); take captions edited in a Claude review pass: decide, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "culture": "ko",
+  "captions": {
+    "k1": "근무 시작 직전. 메시지: Anna가 아파요.",
+    "k2": "근무표는요? 스프레드시트, 메모지, 그리고 Sandra의 머릿속에 있어요.",
+    "k3": "스프레드시트는 근무 계획을 못 세워요.",
+    "k4": "소개할게요. 전자 동료 Klacksy예요.",
+    "x1": "근무표에는 Klacks가 있어요. Klacks가 도와드려요.",
+    "y1": "빨간색: 질병 = 질병/사고. 해당 직원이 결근해요.",
+    "y2": "주황색: 교체. 다른 직원이 대신해요."
+  },
+  "endcard": {
+    "tagline": "Klacksy와 함께하는 근무 계획",
+    "pill": "오픈 소스 · 구독 없음 · 내 컴퓨터에서 실행",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "질병",
+    "absenceName": "질병/사고",
+    "replacement": "교체",
+    "replacementName": "교체",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, k2, y1); take captions edited in a Claude review pass: decide, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 32.8,
+    "windows": {
+      "y1": {
+        "from": 26.4,
+        "to": 29.6
+      },
+      "y2": {
+        "from": 29.6,
+        "to": 32.8
+      }
+    },
+    "redCellFirstVisibleSeconds": 26.5,
+    "verifiedOnTake": true
+  }
+}

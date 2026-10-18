@@ -1,0 +1,45 @@
+{
+  "culture": "he",
+  "captions": {
+    "k1": "רגע לפני תחילת המשמרת. הודעה: Anna חולה.",
+    "k2": "ולוח המשמרות? חי בטבלאות, בפתקים – ובראש של Sandra.",
+    "k3": "טבלה לא מתכננת משמרות.",
+    "k4": "הכירו את Klacksy, העובד האלקטרוני שלכם.",
+    "x1": "לתכנון משמרות יש את Klacks. הוא עוזר לכם.",
+    "y1": "אדום: מחל = מחלה/תאונה. האדם נעדר.",
+    "y2": "כתום: חלפ = החלפה. מישהו אחר לוקח את המשמרת."
+  },
+  "endcard": {
+    "tagline": "תכנון כוח אדם עם Klacksy",
+    "pill": "קוד פתוח · בלי מנוי · רץ אצלכם",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "מחל",
+    "absenceName": "מחלה/תאונה",
+    "replacement": "חלפ",
+    "replacementName": "החלפה",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.tagline, k1, k2, k4, x1, y1)",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 24.6,
+    "windows": {
+      "y1": {
+        "from": 17.9,
+        "to": 21.1
+      },
+      "y2": {
+        "from": 21.1,
+        "to": 24.6
+      }
+    },
+    "redCellFirstVisibleSeconds": 18,
+    "verifiedOnTake": true
+  }
+}

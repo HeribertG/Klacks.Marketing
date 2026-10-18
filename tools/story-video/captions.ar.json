@@ -1,0 +1,45 @@
+{
+  "culture": "ar",
+  "captions": {
+    "k1": "قبل بدء الدوام بوقت قصير. تصل رسالة: Anna مريضة.",
+    "k2": "وجدول الدوام؟ في جداول بيانات، وعلى قصاصات ورق، وفي ذهن Sandra.",
+    "k3": "جدول البيانات لا يخطط الدوام.",
+    "k4": "أعرّفكم على Klacksy، زميلكم الإلكتروني.",
+    "x1": "لجداول الدوام، يوجد Klacks. يساعدكم في ذلك.",
+    "y1": "أحمر: مرض = مرض/حادث. الشخص غائب.",
+    "y2": "برتقالي: استب = استبدال. يتولى شخص آخر النوبة."
+  },
+  "endcard": {
+    "tagline": "تخطيط الدوام مع Klacksy",
+    "pill": "مفتوح المصدر · بدون اشتراك · يعمل عندكم",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "مرض",
+    "absenceName": "مرض/حادث",
+    "replacement": "استب",
+    "replacementName": "استبدال",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: k3); take captions edited in a Claude review pass: form, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 27.1,
+    "windows": {
+      "y1": {
+        "from": 20.4,
+        "to": 23.6
+      },
+      "y2": {
+        "from": 23.6,
+        "to": 27.1
+      }
+    },
+    "redCellFirstVisibleSeconds": 20.5,
+    "verifiedOnTake": true
+  }
+}

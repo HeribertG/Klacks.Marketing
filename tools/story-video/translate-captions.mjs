@@ -15,6 +15,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
+import { findProfile } from "./culture-profile.mjs";
 import { MAX_CHARS_PER_SECOND, captionTimeline, takeSettings } from "./story-recipe.mjs";
 
 const toolDir = path.dirname(fileURLToPath(import.meta.url));
@@ -29,6 +30,8 @@ const ENDCARD_KEYS = Object.freeze(["tagline", "pill"]);
 const ABSENCE_KEY = "y1";
 const REPLACEMENT_KEY = "y2";
 const JSON_INDENT = 2;
+const LABEL_SEPARATOR = " = ";
+const ENGLISH_REFERENCE_FILE = path.join(toolDir, "captions.en.json");
 
 const SCENES = Object.freeze({
   k1: "comic: shortly before the shift starts, the planner Sandra reads a message on her phone that her colleague Anna is sick",
@@ -39,6 +42,10 @@ const SCENES = Object.freeze({
   y1: "screen recording: a red cell in the roster marks the absence type; explain the abbreviation and that the person is absent",
   y2: "screen recording: an orange cell marks the replacement; explain the abbreviation and that someone else takes over the shift",
 });
+
+function label(abbreviation, name) {
+  return abbreviation === name ? abbreviation : `${abbreviation}${LABEL_SEPARATOR}${name}`;
+}
 
 async function deepseek(apiKey, model, system, user) {
   const response = await fetch(DEEPSEEK_URL, {
@@ -64,13 +71,14 @@ function budgets() {
   return Object.fromEntries(captionTimeline(take.seconds, take).map((r) => [r.key, Math.floor(r.seconds * MAX_CHARS_PER_SECOND)]));
 }
 
-function translatePrompt(profile, source, limits) {
+function translatePrompt(profile, source, limits, english) {
   const a = profile.abbreviations;
-  const items = Object.entries(source.captions).map(([key, text]) => ({ key, german: text, maxChars: limits[key], scene: SCENES[key] }));
+  const items = Object.entries(source.captions).map(([key, text]) => ({ key, german: text, english: english?.captions?.[key], maxChars: limits[key], scene: SCENES[key] }));
   const system = `You write subtitles for a short marketing video of Klacks, an open-source staff scheduling software. Translate German subtitles into ${profile.language}. `
     + `Address: ${profile.address}. Keep the meaning and tone (plain, warm, for non-technical small-business owners); do not translate word for word when that sounds unnatural. `
     + "Never exceed maxChars characters per subtitle; shorten wording instead. Keep the names Anna, Sandra, Klacks and Klacksy unchanged. "
-    + `For ${ABSENCE_KEY} use exactly "${a.absence} = ${a.absenceName}" and for ${REPLACEMENT_KEY} exactly "${a.replacement} = ${a.replacementName}" (as shown in the software); translate the colour words. `
+    + `For ${ABSENCE_KEY} use exactly "${label(a.absence, a.absenceName)}" and for ${REPLACEMENT_KEY} exactly "${label(a.replacement, a.replacementName)}" (as shown in the software); translate the colour words. `
+    + "The English column is only a reference for the intended meaning; the German text is the source. "
     + "The end card tagline and pill are slogans: rewrite them naturally for the language, do not translate literally; keep the pill's three parts separated by ' · '. "
     + "Answer with JSON {\"captions\":{key:text},\"endcard\":{\"tagline\":text,\"pill\":text},\"notes\":{key:short note on any judgement call}}.";
   const user = JSON.stringify({ subtitles: items, endcard: Object.fromEntries(ENDCARD_KEYS.map((k) => [k, source.endcard[k]])) });
@@ -91,8 +99,8 @@ function checks(profile, draft, limits) {
     if (!text) problems.push(`${key} missing`);
     else if ([...text].length > max) problems.push(`${key} has ${[...text].length} chars (max ${max})`);
   }
-  if (!draft.captions[ABSENCE_KEY]?.includes(`${a.absence} = ${a.absenceName}`)) problems.push(`${ABSENCE_KEY} lacks "${a.absence} = ${a.absenceName}"`);
-  if (!draft.captions[REPLACEMENT_KEY]?.includes(`${a.replacement} = ${a.replacementName}`)) problems.push(`${REPLACEMENT_KEY} lacks "${a.replacement} = ${a.replacementName}"`);
+  if (!draft.captions[ABSENCE_KEY]?.includes(label(a.absence, a.absenceName))) problems.push(`${ABSENCE_KEY} lacks "${label(a.absence, a.absenceName)}"`);
+  if (!draft.captions[REPLACEMENT_KEY]?.includes(label(a.replacement, a.replacementName))) problems.push(`${REPLACEMENT_KEY} lacks "${label(a.replacement, a.replacementName)}"`);
   return problems;
 }
 
@@ -102,13 +110,14 @@ async function main() {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) throw new Error("DEEPSEEK_API_KEY is not set");
   const culture = values.culture.toLowerCase();
-  const profile = JSON.parse(await readFile(PROFILES_FILE, "utf8"))[culture];
+  const profile = await findProfile(culture);
   if (!profile) throw new Error(`no profile for ${culture} in ${PROFILES_FILE}`);
   const source = JSON.parse(await readFile(path.resolve(values.source ?? DEFAULT_SOURCE), "utf8"));
   const model = values.model ?? DEEPSEEK_MODEL;
   const limits = budgets();
   const deepl = await deeplRemaining(process.env.DEEPL_API_KEY);
-  const t = translatePrompt(profile, source, limits);
+  const english = culture === "en" ? null : JSON.parse(await readFile(ENGLISH_REFERENCE_FILE, "utf8"));
+  const t = translatePrompt(profile, source, limits, english);
   const draft = await deepseek(apiKey, model, t.system, t.user);
   const b = backPrompt(profile, draft);
   const back = await deepseek(apiKey, model, b.system, b.user);

@@ -1,0 +1,45 @@
+{
+  "culture": "zh-cn",
+  "captions": {
+    "k1": "上班前不久，收到一条消息：Anna 生病了。",
+    "k2": "那排班表呢？在电子表格里、在纸条上——还在 Sandra 的脑子里。",
+    "k3": "电子表格不会排班。",
+    "k4": "请允许我介绍：Klacksy，您的电子同事。",
+    "x1": "排班表，就交给 Klacks，它会帮您。",
+    "y1": "红色：伤病 = 伤病假。该员工缺勤。",
+    "y2": "橙色：替换。由其他同事接替。"
+  },
+  "endcard": {
+    "tagline": "用 Klacksy 做人员排班",
+    "pill": "开源 · 无需订阅 · 在您自己的电脑上运行",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "伤病",
+    "absenceName": "伤病假",
+    "replacement": "替换",
+    "replacementName": "替换",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.pill, endcard.tagline, k1, k3); take captions edited in a Claude review pass: form, openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  },
+  "take": {
+    "seconds": 24.08,
+    "windows": {
+      "y1": {
+        "from": 17.4,
+        "to": 20.6
+      },
+      "y2": {
+        "from": 20.6,
+        "to": 24.08
+      }
+    },
+    "redCellFirstVisibleSeconds": 17.5,
+    "verifiedOnTake": true
+  }
+}

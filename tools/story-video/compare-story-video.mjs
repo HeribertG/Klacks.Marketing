@@ -5,6 +5,8 @@
  * per-frame SSIM and PSNR over the whole video (one ffmpeg pass each, frames paired by index, not by seeking), the values at
  * sample points and the minimum per scene. Exits 1 when the length is off or a scene falls below the thresholds; the end
  * card is reported separately with its own threshold because a freshly rendered card never matches the old video-frame PNG.
+ * Only a build with --mode exact can pass: the standard layout (Inter, other take crop, story captions at the in-app caption) differs from
+ * the live Arial cut on purpose.
  * CLI: --candidate <mp4> --reference <mp4> [--work-dir <dir>] [--points 12] [--min-ssim 0.98] [--min-psnr 35]
  *      [--endcard-min-ssim 0.9] [--take-seconds 23.08] [--ffmpeg <path>] [--ffprobe <path>]
  * @param min-ssim - lowest accepted SSIM of a non-end-card frame (see the noise floor of the final crf-24 encode)

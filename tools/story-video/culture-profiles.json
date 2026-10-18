@@ -1,20 +1,327 @@
 {
+  "de": {
+    "language": "German",
+    "address": "informal 'du'",
+    "abbreviations": {
+      "absence": "KU",
+      "absenceName": "Krankheit/Unfall",
+      "replacement": "ABL",
+      "replacementName": "Ablösung"
+    },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
   "en": {
     "language": "British English",
     "address": "neutral and polite, address the viewer as 'you'",
-    "abbreviations": { "absence": "IA", "absenceName": "Illness/Accident", "replacement": "REP", "replacementName": "Replacement" },
-    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+    "abbreviations": {
+      "absence": "IA",
+      "absenceName": "Illness/Accident",
+      "replacement": "REP",
+      "replacementName": "Replacement"
+    },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
   },
   "fr": {
     "language": "French",
     "address": "formal 'vous', no point median, neutral wording",
-    "abbreviations": { "absence": "MA", "absenceName": "Maladie/Accident", "replacement": "REM", "replacementName": "Remplacement" },
-    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+    "abbreviations": {
+      "absence": "MA",
+      "absenceName": "Maladie/Accident",
+      "replacement": "REM",
+      "replacementName": "Remplacement"
+    },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
   },
   "it": {
     "language": "Italian",
     "address": "informal 'tu'",
-    "abbreviations": { "absence": "MI", "absenceName": "Malattia/Infortunio", "replacement": "SOS", "replacementName": "Sostituzione" },
-    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement"
+    "abbreviations": {
+      "absence": "MI",
+      "absenceName": "Malattia/Infortunio",
+      "replacement": "SOS",
+      "replacementName": "Sostituzione"
+    },
+    "sources": "absence: Klacks.Api Infrastructure/Persistence/Seed/AbsencesSeed.cs (Krankheit/Unfall); replacement: Klacks.Ui assets/i18n workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "ar": {
+    "language": "Arabic",
+    "address": "formal Modern Standard Arabic; avoid gendered address, use plural or imperative-neutral wording",
+    "abbreviations": {
+      "absence": "مرض",
+      "absenceName": "مرض/حادث",
+      "replacement": "استب",
+      "replacementName": "استبدال"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/ar/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Segoe UI','Tahoma','Noto Sans Arabic',sans-serif",
+    "lineHeight": 1.4,
+    "interCoverage": "fallback"
+  },
+  "cs": {
+    "language": "Czech",
+    "address": "formal 'vy'",
+    "abbreviations": {
+      "absence": "NÚ",
+      "absenceName": "Nemoc/Úraz",
+      "replacement": "ZAS",
+      "replacementName": "Zástup"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/cs/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "da": {
+    "language": "Danish",
+    "address": "informal 'du'",
+    "abbreviations": {
+      "absence": "SU",
+      "absenceName": "Sygdom/Ulykke",
+      "replacement": "AFL",
+      "replacementName": "Afløsning"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/da/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "el": {
+    "language": "Greek",
+    "address": "formal plural 'εσείς'",
+    "abbreviations": {
+      "absence": "ΑΑ",
+      "absenceName": "Ασθένεια/Ατύχημα",
+      "replacement": "ΑΝΤ",
+      "replacementName": "Αντικατάσταση"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/el/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "es": {
+    "language": "Spanish",
+    "address": "informal 'tú' (spec marks this as unsure, native review decides)",
+    "abbreviations": {
+      "absence": "EA",
+      "absenceName": "Enfermedad/Accidente",
+      "replacement": "REM",
+      "replacementName": "Reemplazo"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/es/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "fi": {
+    "language": "Finnish",
+    "address": "informal, plain 'sinä' forms or impersonal wording (no formal 'te')",
+    "abbreviations": {
+      "absence": "ST",
+      "absenceName": "Sairaus/Tapaturma",
+      "replacement": "SIJ",
+      "replacementName": "Sijaistus"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/fi/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "he": {
+    "language": "Hebrew",
+    "address": "plural or neutral forms; avoid gendered address",
+    "abbreviations": {
+      "absence": "מחל",
+      "absenceName": "מחלה/תאונה",
+      "replacement": "חלפ",
+      "replacementName": "החלפה"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/he/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Segoe UI','Arial','Noto Sans Hebrew',sans-serif",
+    "lineHeight": 1.3,
+    "interCoverage": "fallback"
+  },
+  "id": {
+    "language": "Indonesian",
+    "address": "neutral polite 'Anda'",
+    "abbreviations": {
+      "absence": "SK",
+      "absenceName": "Sakit/Kecelakaan",
+      "replacement": "GNT",
+      "replacementName": "Penggantian"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/id/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "ja": {
+    "language": "Japanese",
+    "address": "polite です/ます form",
+    "abbreviations": {
+      "absence": "傷病",
+      "absenceName": "傷病休暇",
+      "replacement": "代替",
+      "replacementName": "代替"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/ja/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',sans-serif",
+    "lineHeight": 1.35,
+    "maxCharsPerSecond": 7,
+    "maxCharsPerSecondNote": "Heuristic of this tool, not measured: Netflix timed-text guideline for Japanese is about 4 characters/s; 7 is a relaxed limit for a looping marketing video. Native review decides.",
+    "interCoverage": "fallback"
+  },
+  "ko": {
+    "language": "Korean",
+    "address": "polite 해요체/합니다체",
+    "abbreviations": {
+      "absence": "질병",
+      "absenceName": "질병/사고",
+      "replacement": "교체",
+      "replacementName": "교체"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/ko/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Malgun Gothic','Noto Sans KR',sans-serif",
+    "lineHeight": 1.3,
+    "maxCharsPerSecond": 12,
+    "maxCharsPerSecondNote": "Heuristic of this tool, not measured: Netflix guideline for Korean is about 12 characters/s.",
+    "interCoverage": "fallback"
+  },
+  "ms": {
+    "language": "Malay",
+    "address": "neutral polite 'Anda'",
+    "abbreviations": {
+      "absence": "SK",
+      "absenceName": "Sakit/Kemalangan",
+      "replacement": "GNT",
+      "replacementName": "Penggantian"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/ms/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "nb": {
+    "language": "Norwegian Bokmal",
+    "address": "informal 'du'",
+    "abbreviations": {
+      "absence": "SU",
+      "absenceName": "Sykdom/Ulykke",
+      "replacement": "AVL",
+      "replacementName": "Avløsning"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/nb/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "nl": {
+    "language": "Dutch",
+    "address": "informal 'je/jij'",
+    "abbreviations": {
+      "absence": "ZO",
+      "absenceName": "Ziekte/Ongeval",
+      "replacement": "VER",
+      "replacementName": "Vervanging"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/nl/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "pl": {
+    "language": "Polish",
+    "address": "informal 'ty' via verb forms (spec marks this as unsure, native review decides)",
+    "abbreviations": {
+      "absence": "Ch",
+      "absenceName": "Choroba/Wypadek",
+      "replacement": "ZAS",
+      "replacementName": "Zastępstwo"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/pl/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "pt": {
+    "language": "European Portuguese",
+    "address": "informal, European Portuguese (pt-PT, speechLocale of the pack), prefer wording without a pronoun; spec marks the address as unsure, native review decides",
+    "abbreviations": {
+      "absence": "DA",
+      "absenceName": "Doença/Acidente",
+      "replacement": "SUB",
+      "replacementName": "Substituição"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/pt/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "ro": {
+    "language": "Romanian",
+    "address": "informal 'tu' (spec marks this as unsure, native review decides)",
+    "abbreviations": {
+      "absence": "BA",
+      "absenceName": "Boală/Accident",
+      "replacement": "ÎNL",
+      "replacementName": "Înlocuire"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/ro/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "sv": {
+    "language": "Swedish",
+    "address": "informal 'du'",
+    "abbreviations": {
+      "absence": "SO",
+      "absenceName": "Sjukdom/Olycksfall",
+      "replacement": "AVL",
+      "replacementName": "Avlösning"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/sv/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "interCoverage": "full"
+  },
+  "th": {
+    "language": "Thai",
+    "address": "polite, with polite particles (ค่ะ/ครับ-neutral: avoid gendered particles)",
+    "abbreviations": {
+      "absence": "ปว",
+      "absenceName": "ลาป่วย/อุบัติเหตุ",
+      "replacement": "ทดแทน",
+      "replacementName": "การทดแทน"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/th/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Leelawadee UI','Tahoma','Noto Sans Thai',sans-serif",
+    "lineHeight": 1.5,
+    "maxCharsPerSecond": 20,
+    "maxCharsPerSecondNote": "Heuristic of this tool, not measured: Netflix guideline for Thai counts about 35 characters/s; 20 is a conservative limit because combining marks count as characters.",
+    "interCoverage": "fallback"
+  },
+  "vi": {
+    "language": "Vietnamese",
+    "address": "neutral polite 'bạn'",
+    "abbreviations": {
+      "absence": "Ốm",
+      "absenceName": "Ốm đau/Tai nạn",
+      "replacement": "TT",
+      "replacementName": "Thay thế"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/vi/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "lineHeight": 1.35,
+    "interCoverage": "full"
+  },
+  "zh-cn": {
+    "language": "Simplified Chinese",
+    "address": "formal '您'",
+    "abbreviations": {
+      "absence": "伤病",
+      "absenceName": "伤病假",
+      "replacement": "替换",
+      "replacementName": "替换"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/zh-CN/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Microsoft YaHei UI','Microsoft YaHei','Noto Sans SC',sans-serif",
+    "lineHeight": 1.3,
+    "maxCharsPerSecond": 9,
+    "maxCharsPerSecondNote": "Heuristic of this tool, not measured: Netflix guideline for Chinese is about 9 characters/s.",
+    "interCoverage": "fallback"
+  },
+  "zh-tw": {
+    "language": "Traditional Chinese (Taiwan)",
+    "address": "formal '您'",
+    "abbreviations": {
+      "absence": "傷病",
+      "absenceName": "傷病假",
+      "replacement": "替換",
+      "replacementName": "替換"
+    },
+    "sources": "absence: Klacks.Api Plugins/Languages/default-absence-translations.json (Krankheit/Unfall, id 1070d7e6, installer not released: until then the UI shows the English fallback); replacement: Klacks.Api Plugins/Languages/zh-TW/translations.json workChange.abbr.replacement / workChange.tooltip.replacement",
+    "fontStack": "Inter,'Microsoft JhengHei UI','Microsoft JhengHei','Noto Sans TC',sans-serif",
+    "lineHeight": 1.3,
+    "maxCharsPerSecond": 9,
+    "maxCharsPerSecondNote": "Heuristic of this tool, not measured: Netflix guideline for Chinese is about 9 characters/s.",
+    "interCoverage": "fallback"
   }
 }

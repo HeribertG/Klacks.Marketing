@@ -1,0 +1,30 @@
+{
+  "culture": "fi",
+  "captions": {
+    "k1": "Juuri ennen työvuoron alkua. Viesti: Anna on sairaana.",
+    "k2": "Entä työvuorolista? Se on taulukoissa, lapuilla – ja Sandran päässä.",
+    "k3": "Taulukko ei suunnittele työvuoroja.",
+    "k4": "Saanko esitellä: Klacksy, sähköinen työkaverisi.",
+    "x1": "Työvuorolistoihin on Klacks. Se auttaa sinua.",
+    "y1": "Punainen: ST = Sairaus/Tapaturma. Henkilö on poissa.",
+    "y2": "Oranssi: SIJ = Sijaistus. Joku muu ottaa vuoron."
+  },
+  "endcard": {
+    "tagline": "Työvuorosuunnittelu Klacksyn kanssa",
+    "pill": "Avoin lähdekoodi · ei tilausmaksua · pyörii omalla koneellasi",
+    "link": "klacks-software.ch"
+  },
+  "abbreviations": {
+    "absence": "ST",
+    "absenceName": "Sairaus/Tapaturma",
+    "replacement": "SIJ",
+    "replacementName": "Sijaistus",
+    "verifiedOnTake": true
+  },
+  "review": {
+    "translatedBy": "deepseek-v4-pro, edited in a Claude review pass (story: endcard.tagline); take captions edited in a Claude review pass: openMenu",
+    "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
+    "deepl": "not used (shared free quota nearly exhausted)",
+    "nativeReview": "open"
+  }
+}
