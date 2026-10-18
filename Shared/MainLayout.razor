@@ -88,10 +88,10 @@ else
     <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 sm:px-8 py-12 max-w-7xl mx-auto">
         <div class="mb-8 md:mb-0">
             <div class="text-lg font-bold text-black mb-2">Klacks</div>
-            <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500">@ShHtml("footer.tagline")</div>
+            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500">@ShHtml("footer.tagline")</div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-8">
+            <div class="footer-meta flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-8">
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.GithubUrl" target="_blank">@Sh("footer.github")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="mailto:@ExternalLinks.ContactEmail">@Sh("footer.contact")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@StoreHref" target="_blank">@Sh("footer.store")</a>
@@ -110,8 +110,8 @@ else
                 }
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
-            <div class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
-                @ShHtml("footer.copyright")
+            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
+                <span dir="ltr" class="footer-copyright tracking-[0.05em]">@ShHtml("footer.copyright")</span>
             </div>
         </div>
     </div>
@@ -195,11 +195,11 @@ else
     {
         if (firstRender)
         {
-            await JS.InvokeVoidAsync("klacksScrollReveal.init");
-            await JS.InvokeVoidAsync("klacksMagnifier.init");
-            await JS.InvokeVoidAsync("klacksHeroSlideshow.init");
-            await JS.InvokeVoidAsync("klacksStatsCounter.init");
-            await JS.InvokeVoidAsync("klacksRuleConflictVideo.init");
+            await TryInvokeVoidAsync("klacksScrollReveal.init");
+            await TryInvokeVoidAsync("klacksMagnifier.init");
+            await TryInvokeVoidAsync("klacksHeroSlideshow.init");
+            await TryInvokeVoidAsync("klacksStatsCounter.init");
+            await TryInvokeVoidAsync("klacksRuleConflictVideo.init");
         }
     }
 
@@ -618,11 +618,11 @@ else
         {
             if (IsOnCountryPage)
             {
-                return CountryNames.DisplayName(ResolveCurrentPage().PageKey);
+                return CountryLabel(ResolveCurrentPage().PageKey);
             }
 
             var countries = CurrentLanguageCountries;
-            return countries.Length > 0 ? CountryNames.DisplayName(countries[0]) : string.Empty;
+            return countries.Length > 0 ? CountryLabel(countries[0]) : string.Empty;
         }
     }
 
@@ -772,7 +772,7 @@ else
                     {
                         <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-2 px-4 py-2 text-sm no-underline hover:bg-surface-container-low @(IsCurrentCountry(country) ? "font-bold text-primary" : "text-on-surface-variant")" @onclick="CloseCountryMenu">
                             <img src="@FlagSrc(CountryCode(country))" alt="" class="w-5 h-auto rounded-[2px]" />
-                            @CountryNames.DisplayName(country)
+                            @CountryLabel(country)
                         </a>
                     }
                 </div>
@@ -877,7 +877,7 @@ else
                             {
                                 <a href="@CountryLanguageHref(CurrentCultureRecord, country)" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase no-underline @(IsCurrentCountry(country) ? "bg-primary text-on-primary" : "bg-surface-container-high text-on-surface-variant")" @onclick="CloseMobileMenu">
                                     <img src="@FlagSrc(CountryCode(country))" alt="" class="w-4 h-auto rounded-[2px]" />
-                                    @CountryNames.DisplayName(country)
+                                    @CountryLabel(country)
                                 </a>
                             }
                         </div>
@@ -894,6 +894,10 @@ else
     </text>;
 
     private string Sx(string key) => ContentProvider.GetText(CurrentCultureRecord.Code, SiteModes.SimpleContentKey, key);
+
+    private string CountryLabel(string countryPageKey)
+        => ContentProvider.FindText(CurrentCultureRecord.Code, SiteModes.CountryNamesContentKey, countryPageKey)
+            ?? CountryNames.DisplayName(countryPageKey);
 
     public void Dispose() => Nav.LocationChanged -= HandleLocationChanged;
 }

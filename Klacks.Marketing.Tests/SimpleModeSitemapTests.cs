@@ -4,15 +4,16 @@ namespace Klacks.Marketing.Tests;
 
 using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
+using Klacks.Marketing.Localization.Seo;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
 /// With the feature on, the sitemap lists both the simple pages ("/land-ch", "/fr/land-ch", with their hreflang cluster)
-/// and the expert start pages ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page; the
-/// alternates of an expert start page are limited to those cultures, so no entry points at an expert route that answers
-/// 404. China stays out; with the feature off there is no expert entry.
+/// and the expert start pages ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page (all 25
+/// supported cultures, each only where it has its own country text); the alternates of an expert start page are limited
+/// to those cultures, so no entry points at an expert route that answers 404. China stays out; with the feature off there is no expert entry.
 /// </summary>
 [TestFixture]
 public class SimpleModeSitemapTests
@@ -30,6 +31,8 @@ public class SimpleModeSitemapTests
         xml.ShouldContain($"<loc>{BaseUrl}/fr/land-ch/experten</loc>");
         xml.ShouldContain($"<loc>{BaseUrl}/en/land-gb/experten</loc>");
         xml.ShouldContain($"<loc>{BaseUrl}/it/land-it/experten</loc>");
+        xml.ShouldContain($"<loc>{BaseUrl}/es/land-es/experten</loc>");
+        xml.ShouldContain($"<loc>{BaseUrl}/zh-tw/land-tw/experten</loc>");
         xml.ShouldContain($"<loc>{BaseUrl}/land-ch</loc>");
         xml.ShouldNotContain("/land-cn/experten");
         var blocks = Regex.Matches(xml, ExpertBlockPattern, RegexOptions.Singleline);
@@ -62,6 +65,28 @@ public class SimpleModeSitemapTests
     }
 
     [Test]
+    public void Expert_start_entries_of_every_country_follow_the_country_texts_on_disk_in_every_supported_culture()
+    {
+        var xml = SitemapGenerator.Build(BaseUrl, HasCountryTextOnDisk, includeExpertStartPages: true);
+        var expertLocs = Regex.Matches(xml, ExpertBlockPattern, RegexOptions.Singleline).Select(match => match.Groups[1].Value).ToHashSet();
+
+        foreach (var country in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
+        {
+            var expected = SupportedCultures.All
+                .Where(culture => HasCountryTextOnDisk(culture.Code, country))
+                .Select(culture => ExpertLoc(culture, country))
+                .ToList();
+
+            expected.ShouldContain(ExpertLoc(SupportedCultures.Default, country), country);
+            expertLocs.Where(loc => loc.EndsWith($"/{country}/{SiteModes.ExpertSlug}", StringComparison.Ordinal))
+                .OrderBy(loc => loc, StringComparer.Ordinal)
+                .ShouldBe(expected.OrderBy(loc => loc, StringComparer.Ordinal), country);
+        }
+
+        expertLocs.ShouldNotContain(loc => loc.Contains("/land-cn/", StringComparison.Ordinal));
+    }
+
+    [Test]
     public void Disabled_sitemap_has_no_expert_start_page()
     {
         SitemapGenerator.Build(BaseUrl, (_, _) => true).ShouldNotContain("/experten");
@@ -77,6 +102,14 @@ public class SimpleModeSitemapTests
 
         xml.Contains("/land-ch/experten</loc>").ShouldBe(expected);
         xml.Contains("/fr/land-ch/experten</loc>").ShouldBe(expected);
-        xml.Contains("/es/land-es/experten").ShouldBeFalse();
+        xml.Contains("/es/land-es/experten</loc>").ShouldBe(expected);
+        xml.Contains("/ja/land-jp/experten</loc>").ShouldBe(expected);
+        xml.Contains("/zh-tw/land-tw/experten</loc>").ShouldBe(expected);
     }
+
+    private static bool HasCountryTextOnDisk(string culture, string countryPageKey)
+        => File.Exists(Path.Combine(MarketingProjectPaths.ContentRoot, culture, countryPageKey + ".json"));
+
+    private static string ExpertLoc(SupportedCulture culture, string country)
+        => $"{BaseUrl}/{(culture.UrlSlug.Length == 0 ? string.Empty : culture.UrlSlug + "/")}{country}/{SiteModes.ExpertSlug}";
 }

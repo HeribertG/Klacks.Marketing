@@ -4,10 +4,10 @@ namespace Klacks.Marketing.Localization;
 
 /// <summary>
 /// Constants of the simple / expert mode of the site: the expert route slug, the content key of the simple page, the
-/// body classes and the cultures that have a simple start page. The culture list is explicit on purpose: a new
-/// simple.json alone must not switch a culture over. Every listed culture gets the simple page at "/[culture/]land-xx"
-/// and the expert start page at "/[culture/]land-xx/experten"; every other culture keeps today's start page and has no
-/// expert route. Adding a culture means adding it here plus its simple.json (and countries.json for prefixed cultures).
+/// body classes and the cultures that have a simple start page: every supported culture (SupportedCultures.All). Every
+/// such culture gets the simple page at "/[culture/]land-xx" and the expert start page at "/[culture/]land-xx/experten";
+/// a code outside the supported cultures has neither. A new supported culture therefore needs its simple.json (and
+/// countries.json when prefixed) before it ships; SimpleContentTests fails until both exist.
 /// </summary>
 /// <param name="cultureCode">Culture code of the page ("de")</param>
 /// <param name="enabled">Value of SimpleMode:Enabled</param>
@@ -25,7 +25,7 @@ public static class SiteModes
     private const int UnprefixedExpertStartSegmentCount = 2;
     private const int PrefixedExpertStartSegmentCount = 3;
 
-    private static readonly string[] CulturesWithSimplePage = { SupportedCultures.DefaultCode, "en", "fr", "it" };
+    private static readonly string[] CulturesWithSimplePage = SupportedCultures.All.Select(culture => culture.Code).ToArray();
 
     public static IReadOnlyList<string> SimplePageCultures => CulturesWithSimplePage;
 

@@ -47,7 +47,9 @@
         <a class="dismiss">X</a>
     </div>
 
-    <script src="~/_framework/blazor.server.js"></script>
+    @* blazor.server.js starts the circuit as soon as it runs, and the first component render calls the globals of the
+       scripts below via JS interop. Classic scripts execute in document order, so it comes last: every global exists
+       before the circuit can connect (a slow or cold script fetch would otherwise kill the circuit). *@
     <script src="~/js/scroll-reveal.js" asp-append-version="true"></script>
     <script src="~/js/locale-direction.js" asp-append-version="true"></script>
     <script src="~/js/share-link.js" asp-append-version="true"></script>
@@ -59,5 +61,6 @@
     <script src="~/js/stats-counter.js" asp-append-version="true"></script>
     <script src="~/js/rule-conflict-video.js" asp-append-version="true"></script>
     <script src="~/js/c.js" asp-append-version="true"></script>
+    <script src="~/_framework/blazor.server.js"></script>
 </body>
 </html>

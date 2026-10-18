@@ -63,9 +63,11 @@ public class ModeStyleScopeTests
     [TestCase("/es/land-es")]
     [TestCase("/es/land-es/spitex")]
     [TestCase("/nl/land-be/impressum")]
-    public async Task Feature_on_page_without_switch_renders_no_switch_only_hook(string path)
+    [TestCase("/ja/land-jp")]
+    [TestCase("/zh-cn/land-cn/impressum")]
+    public async Task Feature_off_page_of_another_culture_renders_no_switch_only_hook(string path)
     {
-        var html = await GetHtmlAsync(enabled: true, path);
+        var html = await GetHtmlAsync(enabled: false, path);
 
         foreach (var hook in SwitchOnlyMarkupHooks)
         {
@@ -78,6 +80,9 @@ public class ModeStyleScopeTests
     [TestCase("/land-ch/spitex", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
     [TestCase("/fr/land-ch", "site-header-simple", "site-main-simple", "site-header-expert", "site-main-expert")]
     [TestCase("/en/land-gb/experten", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
+    [TestCase("/es/land-es", "site-header-simple", "site-main-simple", "site-header-expert", "site-main-expert")]
+    [TestCase("/ja/land-jp/experten", "site-header-expert", "site-main-expert", "site-header-simple", "site-main-simple")]
+    [TestCase("/zh-tw/land-tw", "site-header-simple", "site-main-simple", "site-header-expert", "site-main-expert")]
     public async Task Header_and_content_with_switch_carry_their_mode_classes(string path, string header, string content, string otherHeader, string otherContent)
     {
         var html = await GetHtmlAsync(enabled: true, path);

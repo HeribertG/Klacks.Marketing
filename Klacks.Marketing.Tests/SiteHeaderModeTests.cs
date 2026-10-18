@@ -37,7 +37,11 @@ public class SiteHeaderModeTests
     [TestCase("/fr/land-ch", true, "mode-simple")]
     [TestCase("/en/land-gb", true, "mode-simple")]
     [TestCase("/it/land-ch/experten", true, "mode-expert")]
-    [TestCase("/es/land-es", true, "mode-expert")]
+    [TestCase("/es/land-es", true, "mode-simple")]
+    [TestCase("/ja/land-jp/experten", true, "mode-expert")]
+    [TestCase("/zh-tw/land-tw", true, "mode-simple")]
+    [TestCase("/ar/land-sa", true, "mode-simple")]
+    [TestCase("/es/land-es", false, "")]
     public async Task Body_carries_the_mode_class(string path, bool enabled, string expected)
     {
         var html = await GetHtmlAsync(enabled, path);
@@ -113,16 +117,16 @@ public class SiteHeaderModeTests
         html.ShouldContain(countryLink);
     }
 
-    [TestCase("/es/land-es")]
-    [TestCase("/es/land-es/spitex")]
-    public async Task Language_switch_from_a_culture_without_simple_page_leads_to_the_simple_page(string path)
+    [TestCase("/es/land-es", "href=\"/land-de\"", "href=\"/fr/land-fr\"")]
+    [TestCase("/es/land-es/experten", "href=\"/land-de/experten\"", "href=\"/fr/land-fr/experten\"")]
+    [TestCase("/es/land-es/spitex", "href=\"/land-de/experten\"", "href=\"/fr/land-fr/experten\"")]
+    [TestCase("/zh-cn/land-cn", "href=\"/land-de\"", "href=\"/zh-tw/land-tw\"")]
+    public async Task Language_switch_from_a_formerly_unlisted_culture_keeps_the_mode(string path, string germanLink, string countryLink)
     {
         var html = await GetHtmlAsync(enabled: true, path);
 
-        html.ShouldContain("href=\"/land-de\"");
-        html.ShouldNotContain("href=\"/land-de/experten\"");
-        html.ShouldContain("href=\"/fr/land-fr\"");
-        html.ShouldNotContain("href=\"/fr/land-fr/experten\"");
+        html.ShouldContain(germanLink);
+        html.ShouldContain(countryLink);
     }
 
     [TestCase("/land-ch/experten", "href=\"/it/land-ch/experten\"")]
@@ -132,21 +136,21 @@ public class SiteHeaderModeTests
     public async Task Language_switch_on_an_expert_page_never_links_to_a_missing_expert_page(string path, string italianLink)
     {
         var html = await GetHtmlAsync(enabled: true, path);
-        var prefixedCultureSlugs = SupportedCultures.All
-            .Where(culture => culture.UrlSlug.Length > 0 && !SiteModes.HasSimplePage(culture.Code, enabled: true))
-            .Select(culture => Regex.Escape(culture.UrlSlug));
-        var missingExpertLink = new Regex($"href=\"/({string.Join('|', prefixedCultureSlugs)})/land-[a-z]+/{SiteModes.ExpertSlug}");
+        var expertLinkSlugs = Regex.Matches(html, $"href=\"/([a-z-]+)/land-[a-z]+/{SiteModes.ExpertSlug}\"").Select(match => match.Groups[1].Value).ToHashSet();
+        var simpleSlugs = SupportedCultures.All.Where(culture => culture.UrlSlug.Length > 0 && SiteModes.HasSimplePage(culture.Code, enabled: true))
+            .Select(culture => culture.UrlSlug).ToHashSet();
 
-        missingExpertLink.IsMatch(html).ShouldBeFalse();
+        expertLinkSlugs.ShouldAllBe(slug => simpleSlugs.Contains(slug));
         html.ShouldContain(italianLink);
     }
 
     [TestCase("/land-ch", false)]
     [TestCase("/land-ch/spitex", false)]
     [TestCase("/land-ch/impressum", false)]
-    [TestCase("/es/land-es", true)]
-    [TestCase("/es/land-es/spitex", true)]
-    [TestCase("/ja/land-jp", true)]
+    [TestCase("/es/land-es", false)]
+    [TestCase("/es/land-es/spitex", false)]
+    [TestCase("/ja/land-jp", false)]
+    [TestCase("/zh-cn/land-cn", false)]
     public async Task Header_without_switch_keeps_the_single_row_layout(string path, bool enabled)
     {
         var html = await GetHtmlAsync(enabled, path);
@@ -166,6 +170,12 @@ public class SiteHeaderModeTests
     [TestCase("/fr/land-ch")]
     [TestCase("/en/land-gb/experten")]
     [TestCase("/it/land-it/spitex")]
+    [TestCase("/es/land-es")]
+    [TestCase("/ja/land-jp/experten")]
+    [TestCase("/zh-cn/land-cn")]
+    [TestCase("/zh-tw/land-tw")]
+    [TestCase("/ar/land-sa")]
+    [TestCase("/he/land-il/spitex")]
     public async Task Header_with_switch_has_two_rows(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);

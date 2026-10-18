@@ -2,6 +2,7 @@
 
 namespace Klacks.Marketing.Tests;
 
+using Klacks.Marketing.Localization;
 using Klacks.Marketing.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -11,8 +12,8 @@ using Shouldly;
 
 /// <summary>
 /// The expert-mode switch is a real link to the opposite page with role="switch", aria-checked and a visible label, so
-/// it works before and without the circuit; off on the simple page and on elsewhere, hidden in cultures without a simple
-/// page and while the feature is off, Space activates it like Enter, and it follows an in-circuit navigation without a
+/// it works before and without the circuit; off on the simple page and on elsewhere, in the label of the page culture for
+/// every supported culture, hidden on a path without a supported culture or country and while the feature is off, Space activates it like Enter, and it follows an in-circuit navigation without a
 /// reload.
 /// </summary>
 [TestFixture]
@@ -56,6 +57,21 @@ public class ExpertModeSwitchTests
         html.ShouldNotContain("Expertenmodus");
     }
 
+    private static IEnumerable<SupportedCulture> PrefixedCultures => SupportedCultures.All.Where(culture => culture.UrlSlug.Length > 0);
+
+    [TestCaseSource(nameof(PrefixedCultures))]
+    public async Task Switch_of_every_prefixed_culture_speaks_its_own_language_and_keeps_the_prefix(SupportedCulture culture)
+    {
+        var html = System.Net.WebUtility.HtmlDecode(await RenderAsync($"{culture.UrlSlug}/land-ch", enabled: true));
+        var label = new JsonPageContentProvider(new TestWebHostEnvironment()).GetText(culture.Code, SiteModes.SimpleContentKey, "switch.label");
+
+        html.ShouldContain(SwitchMarker);
+        html.ShouldContain($"<a href=\"/{culture.UrlSlug}/land-ch/experten\"");
+        html.ShouldContain(UncheckedMarker);
+        html.ShouldContain(label);
+        html.ShouldNotContain("Expertenmodus");
+    }
+
     [Test]
     public void Space_activates_the_switch_like_enter()
     {
@@ -72,11 +88,14 @@ public class ExpertModeSwitchTests
         MarketingProjectPaths.ReadSource("wwwroot/js/site-mode.js").ShouldContain("if (!modeClass)");
     }
 
-    [TestCase("es/land-es", true)]
-    [TestCase("ja/land-jp/spitex", true)]
+    [TestCase("es/land-es", false)]
+    [TestCase("ja/land-jp/spitex", false)]
     [TestCase("land-ch", false)]
     [TestCase("fr/land-ch", false)]
-    public async Task Switch_is_hidden_without_a_simple_page(string path, bool enabled)
+    [TestCase("es", true)]
+    [TestCase("xx/land-ch", true)]
+    [TestCase("es/land-zz", true)]
+    public async Task Switch_is_hidden_without_a_supported_culture_and_country_or_while_the_feature_is_off(string path, bool enabled)
     {
         (await RenderAsync(path, enabled)).ShouldNotContain(SwitchMarker);
     }

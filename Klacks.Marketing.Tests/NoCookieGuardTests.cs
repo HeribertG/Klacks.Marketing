@@ -35,6 +35,8 @@ public class NoCookieGuardTests
     [TestCase(true, "/it/land-ch", HttpStatusCode.OK)]
     [TestCase(true, "/it/land-ch/experten", HttpStatusCode.OK)]
     [TestCase(true, "/es/land-es", HttpStatusCode.OK)]
+    [TestCase(true, "/ja/land-jp", HttpStatusCode.OK)]
+    [TestCase(true, "/zh-cn/land-cn/experten", HttpStatusCode.OK)]
     [TestCase(false, "/fr/land-ch/experten", HttpStatusCode.NotFound)]
     [TestCase(false, "/land-ch", HttpStatusCode.OK)]
     [TestCase(false, "/land-ch/experten", HttpStatusCode.NotFound)]

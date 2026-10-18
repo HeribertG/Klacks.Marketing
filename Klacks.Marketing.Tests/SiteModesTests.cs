@@ -7,10 +7,10 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The simple start page exists only in the explicitly listed cultures (de, en, fr, it) and only while the feature is
-/// switched on; the expert start route is "/{country}/experten" for the default culture and
-/// "/{culture}/{country}/experten" for prefixed cultures, recognised regardless of case. Spanish is the reference culture
-/// without a simple page in the routing and header tests, so it must stay off the list until those tests move on.
+/// The simple start page exists in every supported culture (the list is derived from SupportedCultures.All) and only
+/// while the feature is switched on; a code that is not a supported culture has none. The expert start route is
+/// "/{country}/experten" for the default culture and "/{culture}/{country}/experten" for prefixed cultures, recognised
+/// regardless of case.
 /// </summary>
 [TestFixture]
 public class SiteModesTests
@@ -22,18 +22,39 @@ public class SiteModesTests
     [TestCase("it", true, true)]
     [TestCase("IT", true, true)]
     [TestCase("it", false, false)]
-    [TestCase("es", true, false)]
-    [TestCase("ja", true, false)]
-    public void Simple_page_exists_only_for_listed_cultures_while_enabled(string culture, bool enabled, bool expected)
+    [TestCase("es", true, true)]
+    [TestCase("es", false, false)]
+    [TestCase("ja", true, true)]
+    [TestCase("zh-CN", true, true)]
+    [TestCase("zh-cn", true, true)]
+    [TestCase("zh-TW", false, false)]
+    [TestCase("xx", true, false)]
+    [TestCase("", true, false)]
+    public void Simple_page_exists_for_every_supported_culture_while_enabled(string culture, bool enabled, bool expected)
     {
         SiteModes.HasSimplePage(culture, enabled).ShouldBe(expected);
     }
 
     [Test]
-    public void The_simple_page_cultures_are_an_explicit_list()
+    public void The_simple_page_cultures_are_exactly_the_supported_cultures()
     {
-        SiteModes.SimplePageCultures.ShouldBe(new[] { SupportedCultures.DefaultCode, "en", "fr", "it" });
-        SiteModes.SimplePageCultures.ShouldAllBe(code => SupportedCultures.All.Any(culture => culture.Code == code));
+        SiteModes.SimplePageCultures.ShouldBe(SupportedCultures.All.Select(culture => culture.Code));
+        SiteModes.SimplePageCultures.ShouldBeUnique();
+        SiteModes.SimplePageCultures.Count.ShouldBe(25);
+    }
+
+    [Test]
+    public void Every_supported_culture_has_a_simple_page_and_an_expert_route_while_enabled()
+    {
+        foreach (var culture in SupportedCultures.All)
+        {
+            SiteModes.HasSimplePage(culture.Code, enabled: true).ShouldBeTrue(culture.Code);
+            SiteModes.HasSimplePage(culture.Code, enabled: false).ShouldBeFalse(culture.Code);
+
+            var path = culture.UrlSlug.Length == 0 ? "/land-ch/experten" : $"/{culture.UrlSlug}/land-ch/experten";
+            SiteModes.TryGetExpertStartCulture(path, out var code).ShouldBeTrue(path);
+            code.ShouldBe(culture.Code, path);
+        }
     }
 
     [Test]

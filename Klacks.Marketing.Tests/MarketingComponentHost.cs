@@ -18,13 +18,14 @@ using Microsoft.JSInterop;
 /// <param name="navigation">Navigation manager placed at the page under test</param>
 /// <param name="videoCatalog">Optional replacement for the real video catalog</param>
 /// <param name="simpleModeEnabled">Value of SimpleMode:Enabled</param>
+/// <param name="jsRuntime">Optional replacement for the JS runtime (default: every call succeeds)</param>
 internal static class MarketingComponentHost
 {
     public const string BaseUrl = "https://klacks.example/";
 
     private const string BaseUrlSetting = "Site:BaseUrl";
 
-    public static ServiceProvider CreateServices(NavigationManager navigation, ILocalizedVideoCatalog? videoCatalog = null, bool simpleModeEnabled = true)
+    public static ServiceProvider CreateServices(NavigationManager navigation, ILocalizedVideoCatalog? videoCatalog = null, bool simpleModeEnabled = true, IJSRuntime? jsRuntime = null)
     {
         var environment = new TestWebHostEnvironment();
 
@@ -37,7 +38,7 @@ internal static class MarketingComponentHost
             .AddSingleton<ILocalizedScreenshotResolver>(new LocalizedScreenshotResolver(environment.WebRootFileProvider))
             .AddSingleton(videoCatalog ?? new LocalizedVideoCatalog(environment.WebRootFileProvider))
             .AddSingleton(navigation)
-            .AddSingleton<IJSRuntime>(new NullJsRuntime())
+            .AddSingleton(jsRuntime ?? new NullJsRuntime())
             .AddSingleton<IOptions<SiteModeOptions>>(Options.Create(new SiteModeOptions { Enabled = simpleModeEnabled }))
             .BuildServiceProvider();
     }

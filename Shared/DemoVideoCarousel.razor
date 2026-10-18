@@ -143,7 +143,16 @@
     {
         if (firstRender && _videos.Count > 0)
         {
-            _reducedMotion = await JS.InvokeAsync<bool>(PrefersReducedMotionJsFunction);
+            try
+            {
+                _reducedMotion = await JS.InvokeAsync<bool>(PrefersReducedMotionJsFunction);
+            }
+            catch (JSDisconnectedException)
+            {
+            }
+            catch (JSException)
+            {
+            }
         }
     }
 

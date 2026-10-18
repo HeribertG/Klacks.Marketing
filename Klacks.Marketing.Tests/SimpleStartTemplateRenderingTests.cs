@@ -12,7 +12,7 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// Renders the real SimpleStartTemplate for every country in German and in each translated culture (en, fr, it, also without any recording): one H1, no duplicate id, every header jump target
+/// Renders the real SimpleStartTemplate for every country in German and in each translated culture (all 24, also without any recording): one H1, no duplicate id, every header jump target
 /// present, no raw content key or placeholder, links stay on the country, the demo-data note sits below the media and
 /// speaks in the Du form (structured data included), industry chips lead to real industry pages, the share block shows
 /// the link with the share reference as selectable text below the copy status, the talk text spans the row without the
@@ -22,6 +22,7 @@ using Shouldly;
 public class SimpleStartTemplateRenderingTests
 {
     private const string H1Pattern = @"<h1\b[^>]*>(.*?)</h1>";
+    private const string HtmlEntityPattern = @"&(?:[A-Za-z][A-Za-z0-9]*|#\d+|#x[0-9A-Fa-f]+);";
     private const string IdPattern = @"\bid=""([^""]+)""";
     private const string TextNodePattern = @">\s*([^<>]+?)\s*<";
     private const string LabelAttributePattern = @"\b(?:title|alt|aria-label)=""([^""]+)""";
@@ -86,6 +87,8 @@ public class SimpleStartTemplateRenderingTests
             CountryIndustries.ProductSlugs.ShouldContain(slug);
             links.ShouldContain($"/{country}/{slug}");
         }
+        CountryIndustries.ProductSlugs.ShouldContain(SimpleStartTemplate.CustomRulesSlug);
+        links.ShouldContain($"/{country}/{SimpleStartTemplate.CustomRulesSlug}");
     }
 
     [Test]
@@ -296,6 +299,34 @@ public class SimpleStartTemplateRenderingTests
         {
             links.ShouldContain($"/{slug}/{country}/{industry}");
         }
+    }
+
+    private static IEnumerable<TestCaseData> CulturePageCombinations
+        => SupportedCultures.All.Where(culture => culture.UrlSlug.Length > 0)
+            .SelectMany(culture => new[] { LanguageCountries.DefaultCountryFor(culture.Code), CountryIndustries.SwissCountryPageKey }
+                .Distinct().Select(country => new TestCaseData(culture.Code, country).SetArgDisplayNames(culture.Code, country)));
+
+    [TestCaseSource(nameof(CulturePageCombinations))]
+    public async Task Every_translated_culture_renders_its_own_simple_page_with_plain_entities_and_no_german_text(string culture, string country)
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(country, new EmptyVideoCatalog(), culture));
+        var slug = SupportedCultures.All.First(record => record.Code == culture).UrlSlug;
+        var heroTitle = Content.GetText(culture, SiteModes.SimpleContentKey, "hero.title");
+
+        var h1 = Regex.Matches(html, H1Pattern, RegexOptions.Singleline);
+        h1.Count.ShouldBe(1, $"{culture}/{country}");
+        WebUtility.HtmlDecode(h1[0].Groups[1].Value).ShouldBe(heroTitle, $"{culture}/{country}");
+        Regex.Matches(html, IdPattern).Select(match => match.Groups[1].Value).GroupBy(id => id).Where(group => group.Count() > 1).ShouldBeEmpty();
+        RawKeys(html).ShouldBeEmpty();
+        html.ShouldNotContain("{country}");
+        VisibleTexts(html).Where(text => Regex.IsMatch(text, HtmlEntityPattern)).ShouldBeEmpty($"{culture}/{country}: HTML entity shown as text");
+        foreach (var german in new[] { "Personalplanung", "Klacksy ausprobieren", "Expertenmodus", "Hinweis zu den Beispieldaten" })
+        {
+            html.ShouldNotContain(german, Case.Sensitive, $"{culture}: German text '{german}'");
+        }
+
+        Regex.Matches(html, HrefPattern).Select(match => match.Groups[1].Value)
+            .ShouldAllBe(link => link.StartsWith($"/{slug}/{country}", StringComparison.Ordinal), $"{culture}/{country}");
     }
 
     [TestCase("en")]

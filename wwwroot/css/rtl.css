@@ -10,3 +10,16 @@
     right: auto;
     left: 0;
 }
+
+[dir="rtl"] .country-dropdown {
+    right: auto;
+    left: 0;
+}
+
+/* Footer meta text (links, tagline, copyright): the Latin-caps sizing and letter-spacing make Arabic/Hebrew look tiny
+   and break Arabic letter joining, so RTL gets a larger size and no tracking. The copyright span stays LTR (own tracking). */
+[dir="rtl"] .footer-meta,
+[dir="rtl"] .footer-meta a {
+    font-size: 0.8125rem;
+    letter-spacing: 0;
+}

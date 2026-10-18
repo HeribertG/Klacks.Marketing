@@ -3,16 +3,19 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using System.Text.Json;
 using System.Text.RegularExpressions;
+using Klacks.Marketing.Localization;
+using Klacks.Marketing.Localization.Seo;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// Routing of the start pages through the real app: with the feature on, "/land-ch", "/en/land-gb", "/fr/land-ch" and
-/// "/it/land-ch" are the simple page of their culture (localized title with the country name in the page language,
-/// canonical on itself, the existing land-xx hreflang cluster, indexable where the culture has own country text) and the
-/// cultures without a simple page keep today's page; with the feature off, every country root is today's page.
+/// Routing of the start pages through the real app: with the feature on, the country root of every supported culture
+/// ("/land-ch", "/en/land-gb", "/fr/land-ch", "/es/land-es", "/zh-tw/land-tw", ...) is the simple page of its culture
+/// (localized title with the country name in the page language, canonical on itself, the existing land-xx hreflang
+/// cluster, indexable where the culture has own country text); with the feature off, every country root is today's page.
 /// </summary>
 [TestFixture]
 public class SimpleStartPageTests
@@ -23,6 +26,7 @@ public class SimpleStartPageTests
     private const string NoindexMarker = "name=\"robots\" content=\"noindex";
     private const string SiteBaseUrl = "https://klacks-software.ch";
     private const string H1Pattern = @"<h1\b[^>]*>(.*?)</h1>";
+    private const string BodyClassPattern = @"<body class=""(mode-simple|mode-expert)\b";
 
     [Test]
     public async Task German_country_root_is_the_simple_page_with_title_canonical_and_hreflang()
@@ -76,11 +80,40 @@ public class SimpleStartPageTests
         html.ShouldNotContain(HreflangMarker);
     }
 
+    private static IEnumerable<SupportedCulture> PrefixedCultures => SupportedCultures.All.Where(culture => culture.UrlSlug.Length > 0);
+
+    [TestCaseSource(nameof(PrefixedCultures))]
+    public async Task Every_prefixed_culture_serves_its_simple_page_on_the_root_of_its_default_country(SupportedCulture culture)
+    {
+        var country = LanguageCountries.DefaultCountryFor(culture.Code);
+        var path = $"/{culture.UrlSlug}/{country}";
+        var html = await GetHtmlAsync(enabled: true, path);
+        var texts = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(Path.Combine(MarketingProjectPaths.ContentRoot, culture.Code, "simple.json")))!;
+
+        Regex.Match(html, BodyClassPattern).Groups[1].Value.ShouldBe(SiteModes.SimpleBodyClass, path);
+        Regex.Match(html, H1Pattern, RegexOptions.Singleline).Groups[1].Value.ShouldBe(texts["hero.title"], path);
+        html.ShouldNotContain(SimpleHeroText);
+        html.ShouldNotContain(ExpertHeroText);
+        html.ShouldContain($"<link rel=\"canonical\" href=\"{SiteBaseUrl}{path}\"");
+        html.ShouldContain($"href=\"{path}/{SiteModes.ExpertSlug}\"");
+
+        if (CountryIndexingPolicy.IsNoindex(country))
+        {
+            html.ShouldContain(NoindexMarker);
+        }
+        else
+        {
+            html.ShouldNotContain(NoindexMarker);
+            html.ShouldContain($"hreflang=\"{culture.Code}\"");
+        }
+    }
+
     [TestCase("/es/land-es")]
     [TestCase("/ja/land-jp")]
-    public async Task Cultures_without_simple_page_keep_the_expert_page(string path)
+    [TestCase("/zh-cn/land-cn")]
+    public async Task With_the_feature_off_the_country_root_of_the_other_cultures_stays_the_expert_page(string path)
     {
-        var html = await GetHtmlAsync(enabled: true, path);
+        var html = await GetHtmlAsync(enabled: false, path);
 
         html.ShouldNotContain("mode-simple");
         html.ShouldNotContain(SimpleHeroText);
