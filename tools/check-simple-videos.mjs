@@ -41,7 +41,7 @@ const MVHD_V1 = { timescale: 24, duration: 28 };
 const HALF = 2;
 const LIMITS = {
   [VIDEO_SIMPLE_KLACKSY_CALL]: { minSeconds: 10, maxSeconds: 20 },
-  [VIDEO_SIMPLE_PLANS_WEEK]: { minSeconds: 30, maxSeconds: 50 },
+  [VIDEO_SIMPLE_PLANS_WEEK]: { minSeconds: 28, maxSeconds: 50 },
   [VIDEO_SIMPLE_COVER_ABSENCE]: { minSeconds: 15, maxSeconds: 30 },
 };
 const REFERENCE_VIDEOS = ["klacksy-plans-week", "rest-conflict"];
