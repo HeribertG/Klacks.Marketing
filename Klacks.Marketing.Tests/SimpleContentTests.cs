@@ -50,7 +50,7 @@ public class SimpleContentTests
 
     private static readonly string[] Jargon ={ "Container", "Cutting", "Autofill", "LLM", "MCP", "Tool-Calling", "tool calling" };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData.", "videos.title", "videos.subtitle", "videos.plansWeek.title", "videos.klacksyCall.title", "story." };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "hero.videoLabel", "hero.imageAlt", "talk.videoLabel", "demoModal.", "demoData.", "videos.title", "videos.subtitle", "videos.plansWeek.title", "videos.klacksyCall.title", "story.", "weekStory." };
 
     // The German section text is held to the owner's budget of 350 words; the translations get the word count of their
     // faithful translation (no claim dropped), measured on 2026-10-17 (en, fr, it) and 2026-10-18 (the other cultures,
