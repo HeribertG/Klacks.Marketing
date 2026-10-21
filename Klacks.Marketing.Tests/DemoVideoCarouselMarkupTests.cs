@@ -165,7 +165,8 @@ public class DemoVideoCarouselMarkupTests
         markup.ShouldContain("@key=\"current.VideoName\"");
         markup.ShouldContain("Deferred=\"true\"");
         markup.ShouldContain("Loop=\"false\"");
-        markup.ShouldContain("HoverZoom=\"true\"");
+        markup.ShouldContain("HoverZoom=\"@(!Definition.ShowControls)\"");
+        markup.ShouldContain("Controls=\"@Definition.ShowControls\"");
         markup.ShouldContain("TitleKey=\"@(Compact ? null : current.TitleKey)\"");
         markup.ShouldContain("CaptionFooter=\"@SlideFooter?.Invoke(current.VideoName)\"");
         markup.ShouldContain("private int _currentIndex = FirstSlideIndex;");

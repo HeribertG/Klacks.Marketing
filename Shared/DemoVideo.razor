@@ -11,7 +11,8 @@
    downloaded until rule-conflict-video.js starts playback of the visible video). HoverZoom puts video and
    poster into the shared screenshot-hover-zoom frame so it enlarges on hover like the page's screenshots.
    CaptionFooter renders inside the figcaption right after the caption (one text block). ContentKey names the content
-   file of the label, caption and title keys (default shared.json); PlayEvent, if set, becomes data-c-play (c.js). *@
+   file of the label, caption and title keys (default shared.json); PlayEvent, if set, becomes data-c-play (c.js). Controls adds
+   the native controls (sound can be switched on), for the comic story clips with ambient sound. *@
 @if (_sources is not null)
 {
     <figure class="@FigureClass">
@@ -21,7 +22,7 @@
         }
         <div class="@(HoverZoom ? HoverZoomFrameClass : null)">
             <video class="rule-demo-video w-full h-auto rounded-2xl shadow-xl"
-                   muted autoplay="@(!Deferred)" loop="@Loop" playsinline preload="@(Deferred ? PreloadNone : PreloadMetadata)"
+                   muted autoplay="@(!Deferred)" loop="@Loop" playsinline controls="@Controls" preload="@(Deferred ? PreloadNone : PreloadMetadata)"
                    width="@Width" height="@Height"
                    poster="@_sources.PosterPath"
                    aria-label="@Sh(LabelKey)"
@@ -90,6 +91,7 @@ else if (Fallback is not null)
     [Parameter] public bool Deferred { get; set; }
     [Parameter] public bool HoverZoom { get; set; }
     [Parameter] public bool Loop { get; set; } = true;
+    [Parameter] public bool Controls { get; set; }
     [Parameter] public string TitleClass { get; set; } = DefaultTitleClass;
     [Parameter] public string FigureClass { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Fallback { get; set; }

@@ -21,6 +21,7 @@ public static class DemoCarousels
     public const string KlacksySectionId = "klacksy-aufgaben";
     public const string HeroSectionId = "hero-videos";
     public const string SimpleHeroSectionId = "einfach-videos";
+    public const string SimpleStoriesSectionId = "einfach-geschichten";
     public const string KlacksyVideoNoteKey = "klacksyOps.videoNote";
 
     private const int KlacksyVideoWidth = 1000;
@@ -133,6 +134,21 @@ public static class DemoCarousels
         VideoHeight: SimpleVideo.RecordedVideoHeight,
         ContentKey: SiteModes.SimpleContentKey,
         PlayEvent: nameof(VisitEvent.VideoPlay));
+
+    public static DemoCarouselDefinition SimpleStories { get; } = new(
+        SimpleStoriesSectionId,
+        "story.title",
+        "story.title",
+        new DemoCarouselVideo[]
+        {
+            new(SimpleVideo.StoryComicVideoName, "story.pill", "story.videoLabel", "story.note"),
+            new(SimpleVideo.WeekplanStoryVideoName, "weekStory.pill", "weekStory.videoLabel", "story.note"),
+        },
+        VideoWidth: SimpleVideo.StoryComicVideoWidth,
+        VideoHeight: SimpleVideo.StoryComicVideoHeight,
+        ContentKey: SiteModes.SimpleContentKey,
+        PlayEvent: nameof(VisitEvent.VideoPlay),
+        ShowControls: true);
 
     public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }

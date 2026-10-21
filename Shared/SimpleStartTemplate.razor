@@ -6,8 +6,8 @@
 @* Simple start page of a country ("/land-ch") for non-experts (spec
    docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
    light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
-   on-tertiary-fixed text), the two comic story clips above the hero (replacement first, then the week plan, each only
-   when the culture has its file), videos V2 and V4 looping like the expert demo videos with a screenshot fallback for V2 and a full-width talk text
+   on-tertiary-fixed text), one carousel of the comic story clips above the hero (replacement first, then the week plan,
+   played one after the other, each only when the culture has its file), videos V2 and V4 looping like the expert demo videos with a screenshot fallback for V2 and a full-width talk text
    without V4; the shared link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
    language, {country} is the only placeholder), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the land-xx hreflang cluster, and the
@@ -21,23 +21,11 @@
 {
     <section class="pt-36 pb-4 px-4 sm:px-8 max-w-5xl mx-auto no-line-rule text-center" aria-labelledby="simple-story-heading">
         <h2 id="simple-story-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-8">@Tx("story.title")</h2>
-        <SimpleVideo VideoName="@SimpleVideo.StoryComicVideoName" Culture="@Culture" Label="@Tx("story.videoLabel")"
-                     Width="@SimpleVideo.StoryComicVideoWidth" Height="@SimpleVideo.StoryComicVideoHeight" ShowControls="true" />
-        <p class="text-xs text-on-surface-variant mt-3 mb-0">@Tx("story.note")</p>
+        <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.SimpleStories" Compact="true" />
     </section>
 }
 
-@if (HasWeekplanStoryVideo)
-{
-    <section class="@(HasStoryVideo ? "pt-10" : "pt-36") pb-4 px-4 sm:px-8 max-w-5xl mx-auto no-line-rule text-center" aria-labelledby="simple-weekplan-story-heading">
-        <h2 id="simple-weekplan-story-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-8">@Tx("weekStory.title")</h2>
-        <SimpleVideo VideoName="@SimpleVideo.WeekplanStoryVideoName" Culture="@Culture" Label="@Tx("weekStory.videoLabel")"
-                     Width="@SimpleVideo.StoryComicVideoWidth" Height="@SimpleVideo.StoryComicVideoHeight" ShowControls="true" />
-        <p class="text-xs text-on-surface-variant mt-3 mb-0">@Tx("story.note")</p>
-    </section>
-}
-
-<header class="@(HasStoryVideo || HasWeekplanStoryVideo ? "pt-10 md:pt-14" : "pt-36 md:pt-28") pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
+<header class="@(HasStoryVideo ? "pt-10 md:pt-14" : "pt-36 md:pt-28") pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         <div class="lg:col-span-6 min-w-0">
             <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
@@ -221,9 +209,7 @@
 
     private string HeroScreenshotSrc => ImagesPathPrefix + ScreenshotResolver.Resolve(KlacksyScreenshotFile, Culture);
 
-    private bool HasStoryVideo => VideoCatalog.Find(SimpleVideo.StoryComicVideoName, Culture) is not null;
-
-    private bool HasWeekplanStoryVideo => VideoCatalog.Find(SimpleVideo.WeekplanStoryVideoName, Culture) is not null;
+    private bool HasStoryVideo => DemoCarousels.SimpleStories.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
 
     private bool HasHeroVideo => DemoCarousels.SimpleHero.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
 

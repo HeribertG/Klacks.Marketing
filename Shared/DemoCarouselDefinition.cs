@@ -27,7 +27,8 @@ public sealed record DemoCarouselDefinition(
     int VideoHeight = DemoCarouselDefinition.DefaultVideoHeight,
     string? NoteKey = null,
     string ContentKey = DemoCarouselDefinition.SharedContentKey,
-    string? PlayEvent = null)
+    string? PlayEvent = null,
+    bool ShowControls = false)
 {
     public const string SharedContentKey = "shared";
     public const int DefaultVideoWidth = 1280;

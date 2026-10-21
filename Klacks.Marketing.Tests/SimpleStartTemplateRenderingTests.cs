@@ -109,7 +109,7 @@ public class SimpleStartTemplateRenderingTests
 
         html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-de.webp");
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-de.webp");
-        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(4);
+        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(3);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(2);
     }
 
@@ -126,15 +126,13 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task Week_plan_story_follows_the_replacement_story_above_the_hero_with_controls_and_the_ai_note()
+    public async Task Story_clips_run_in_one_carousel_replacement_first_then_the_week_plan()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
 
-        html.ShouldContain("Und wenn die Wochenplanung liegen bleibt?");
-        html.ShouldContain($"{SimpleVideo.WeekplanStoryVideoName}-de.webp");
-        Regex.Matches(html, Regex.Escape("Comic, mit KI erstellt.")).Count.ShouldBe(2);
-        html.IndexOf("simple-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("simple-weekplan-story-heading", StringComparison.Ordinal));
-        html.IndexOf("simple-weekplan-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
+        html.ShouldContain($"id=\"{DemoCarousels.SimpleStoriesSectionId}-slide\"");
+        html.IndexOf(">Ausfall decken</button>", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf(">Wochenplanung</button>", StringComparison.Ordinal));
+        html.IndexOf(DemoCarousels.SimpleStoriesSectionId, StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
     }
 
     [Test]
@@ -287,7 +285,6 @@ public class SimpleStartTemplateRenderingTests
         RawKeys(html).ShouldBeEmpty();
         html.ShouldNotContain("{country}");
         html.ShouldNotContain("simple-story-heading");
-        html.ShouldNotContain("simple-weekplan-story-heading");
         html.ShouldNotContain("<video");
         TalkSection(html).ShouldContain(TextColumnFullWidth);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
@@ -362,7 +359,6 @@ public class SimpleStartTemplateRenderingTests
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog(), culture));
 
         html.ShouldContain($"{SimpleVideo.StoryComicVideoName}-{culture}.webp");
-        html.ShouldContain($"{SimpleVideo.WeekplanStoryVideoName}-{culture}.webp");
         html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-{culture}.webp");
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-{culture}.webp");
         html.ShouldNotContain("-de.webp");
