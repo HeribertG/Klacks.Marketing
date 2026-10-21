@@ -1,5 +1,4 @@
 @inject IPageContentProvider ContentProvider
-@inject ILocalizedScreenshotResolver ScreenshotResolver
 @inject ILocalizedVideoCatalog VideoCatalog
 @inject IConfiguration Configuration
 
@@ -7,7 +6,7 @@
    docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
    light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
    on-tertiary-fixed text), one carousel of the comic story clips above the hero (replacement first, then the week plan,
-   played one after the other, each only when the culture has its file), videos V2 and V4 looping like the expert demo videos with a screenshot fallback for V2 and a full-width talk text
+   played one after the other, each only when the culture has its file), a text-only hero, video V4 looping like the expert demo videos and a full-width talk text
    without V4; the shared link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
    language, {country} is the only placeholder), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the land-xx hreflang cluster, and the
@@ -26,28 +25,15 @@
 }
 
 <header class="@(HasStoryVideo ? "pt-10 md:pt-14" : "pt-36 md:pt-28") pb-12 md:pb-16 px-4 sm:px-8 max-w-6xl mx-auto">
-    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-        <div class="lg:col-span-6 min-w-0">
-            <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
-            <p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("hero.subtitle")</p>
-            <p class="text-base font-bold text-secondary mt-0 mb-8">@Tx("hero.trustLine")</p>
-            <div class="flex flex-wrap gap-4">
-                <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="bg-tertiary-fixed text-on-tertiary-fixed px-7 py-4 rounded-2xl font-black text-lg hover:opacity-90 transition-all flex items-center gap-2"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Tx("hero.tryButton")</button>
-                <a href="@SectionHref(SimplePageSectionIds.Share)" class="px-7 py-4 rounded-2xl font-bold text-lg text-primary bg-secondary-fixed hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
-                    <span class="material-symbols-outlined" aria-hidden="true">share</span> @Tx("hero.shareButton")
-                </a>
-            </div>
-        </div>
-        <div class="lg:col-span-6 min-w-0">
-            @if (HasHeroVideo)
-            {
-                <DemoVideoCarousel Culture="@Culture" Definition="@DemoCarousels.SimpleHero" Compact="true" />
-            }
-            else
-            {
-                <img src="@HeroScreenshotSrc" alt="@Tx("hero.imageAlt")" width="@DemoCarouselDefinition.DefaultVideoWidth" height="@DemoCarouselDefinition.DefaultVideoHeight" class="w-full h-auto rounded-2xl shadow-xl" />
-            }
-            <DemoDataNote Culture="@Culture" ContentKey="@SiteModes.SimpleContentKey" CssClass="mt-4 mb-0" />
+    <div class="max-w-3xl mx-auto min-w-0 text-center">
+        <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
+        <p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mt-0 mb-4">@Tx("hero.subtitle")</p>
+        <p class="text-base font-bold text-secondary mt-0 mb-8">@Tx("hero.trustLine")</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="bg-tertiary-fixed text-on-tertiary-fixed px-7 py-4 rounded-2xl font-black text-lg hover:opacity-90 transition-all flex items-center gap-2"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Tx("hero.tryButton")</button>
+            <a href="@SectionHref(SimplePageSectionIds.Share)" class="px-7 py-4 rounded-2xl font-bold text-lg text-primary bg-secondary-fixed hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
+                <span class="material-symbols-outlined" aria-hidden="true">share</span> @Tx("hero.shareButton")
+            </a>
         </div>
     </div>
 </header>
@@ -179,8 +165,6 @@
     private const string CountryPlaceholder = "{country}";
     private const string FragmentSeparator = "#";
     private const string BaseUrlSetting = "Site:BaseUrl";
-    private const string ImagesPathPrefix = "images/";
-    private const string KlacksyScreenshotFile = "app-klacksy-de.png";
     private const int TalkBubbleCount = 3;
     private const int CostItemCount = 3;
     private const string TalkTextWithVideoClass = "lg:col-span-5";
@@ -207,11 +191,7 @@
 
     private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey) + ShareReferenceQuery;
 
-    private string HeroScreenshotSrc => ImagesPathPrefix + ScreenshotResolver.Resolve(KlacksyScreenshotFile, Culture);
-
     private bool HasStoryVideo => DemoCarousels.SimpleStories.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
-
-    private bool HasHeroVideo => DemoCarousels.SimpleHero.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
 
     private bool HasTalkVideo => VideoCatalog.Find(SimpleVideo.KlacksyCallVideoName, Culture) is not null;
 

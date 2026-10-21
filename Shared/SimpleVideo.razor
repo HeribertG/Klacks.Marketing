@@ -5,7 +5,7 @@
    viewport and in a hidden tab, and under prefers-reduced-motion only the poster image is shown. The video sits in the
    shared screenshot-hover-zoom frame. "VideoPlay" (wwwroot/js/c.js) counts the first start per video and page view,
    i.e. the video reached the viewport. Without webm, mp4 and webp poster in the page culture it renders Fallback
-   (default: nothing). VideoName is the base name ("simple-plans-week"), Culture the page culture, Label the accessible
+   (default: nothing). VideoName is the base name ("simple-klacksy-call"), Culture the page culture, Label the accessible
    name, Width/Height the intrinsic size that reserves the layout space. ShowControls adds the native controls (sound can
    be switched on) and drops the hover zoom, for the story clip with ambient sound. *@
 @if (_sources is not null)
@@ -31,7 +31,6 @@ else if (Fallback is not null)
 }
 
 @code {
-    public const string PlansWeekVideoName = "simple-plans-week";
     public const string KlacksyCallVideoName = "simple-klacksy-call";
     public const string StoryComicVideoName = "simple-story-comic";
     public const string WeekplanStoryVideoName = "simple-story-weekplan";

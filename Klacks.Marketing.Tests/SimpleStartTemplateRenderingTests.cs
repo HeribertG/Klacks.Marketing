@@ -29,7 +29,7 @@ public class SimpleStartTemplateRenderingTests
     private const string ContentKeyPattern = @"^[a-z][A-Za-z0-9]*(\.[A-Za-z0-9-]+)+$";
     private const string HrefPattern = @"\bhref=""(/[^""]*)""";
     private const string ClassPattern = @"\bclass=""([^""]*)""";
-    private const string ImageSourcePattern = @"<img\b[^>]*\bsrc=""(images/[^""]+)""";
+    private const string HeroPattern = @"<header\b.*?</header>";
     private const string FormalAddressPattern = @"\b(Sie|Ihnen|Ihr|Ihre|Ihren|Ihrem|Ihrer|Ihres)\b";
     private const string JsonLdPattern = @"<script type=""application/ld\+json"">(.*?)</script>";
     private const string SoftwareApplicationType = "SoftwareApplication";
@@ -92,25 +92,25 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task Without_recordings_the_hero_shows_an_existing_screenshot_and_the_demo_note()
-    {
-        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new EmptyVideoCatalog());
-
-        var image = Regex.Match(html, ImageSourcePattern);
-        image.Success.ShouldBeTrue();
-        File.Exists(Path.Combine(MarketingProjectPaths.WebRoot, image.Groups[1].Value)).ShouldBeTrue(image.Groups[1].Value);
-        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
-    }
-
-    [Test]
-    public async Task With_recordings_both_videos_play_like_the_expert_demo_videos_and_each_has_the_demo_note()
+    public async Task Hero_shows_only_text_without_video_screenshot_or_demo_note()
     {
         var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog());
 
-        html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-de.webp");
+        var hero = Regex.Match(html, HeroPattern, RegexOptions.Singleline);
+        hero.Success.ShouldBeTrue();
+        hero.Value.ShouldNotContain("<video");
+        hero.Value.ShouldNotContain("<img");
+        hero.Value.ShouldNotContain(DemoDataNote.MarkerAttribute);
+    }
+
+    [Test]
+    public async Task With_recordings_the_call_video_plays_like_the_expert_demo_videos_with_the_demo_note()
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog());
+
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-de.webp");
-        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(3);
-        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(2);
+        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(2);
+        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
     }
 
     [Test]
@@ -134,18 +134,6 @@ public class SimpleStartTemplateRenderingTests
         html.IndexOf(">Ausfall decken</button>", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf(">Wochenplanung</button>", StringComparison.Ordinal));
         html.IndexOf(DemoCarousels.SimpleStoriesSectionId, StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
         Regex.Matches(html, "daily-ops-carousel-no-arrows").Count.ShouldBe(1);
-    }
-
-    [Test]
-    public async Task Hero_shows_a_carousel_with_clickable_video_titles_like_the_expert_hero()
-    {
-        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
-
-        html.ShouldContain($"id=\"{DemoCarousels.SimpleHeroSectionId}-slide\"");
-        html.ShouldContain(">Nächste Woche planen</button>");
-        html.ShouldContain(">So rufst du Klacksy</button>");
-        html.ShouldContain("aria-current=\"true\"");
-        html.ShouldContain("data-c-play=\"VideoPlay\"");
     }
 
     [Test]
@@ -288,10 +276,7 @@ public class SimpleStartTemplateRenderingTests
         html.ShouldNotContain("simple-story-heading");
         html.ShouldNotContain("<video");
         TalkSection(html).ShouldContain(TextColumnFullWidth);
-        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
-        var image = Regex.Match(html, ImageSourcePattern);
-        image.Success.ShouldBeTrue();
-        File.Exists(Path.Combine(MarketingProjectPaths.WebRoot, image.Groups[1].Value)).ShouldBeTrue(image.Groups[1].Value);
+        Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(0);
 
         foreach (var german in new[] { "Personalplanung", "Klacksy ausprobieren", "Expertenmodus", "Hinweis zu den Beispieldaten", "Schweiz" })
         {
@@ -355,12 +340,11 @@ public class SimpleStartTemplateRenderingTests
     [TestCase("en")]
     [TestCase("fr")]
     [TestCase("it")]
-    public async Task With_recordings_in_the_culture_the_story_clip_and_both_videos_use_the_culture_files(string culture)
+    public async Task With_recordings_in_the_culture_the_story_clip_and_the_call_video_use_the_culture_files(string culture)
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog(), culture));
 
         html.ShouldContain($"{SimpleVideo.StoryComicVideoName}-{culture}.webp");
-        html.ShouldContain($"{SimpleVideo.PlansWeekVideoName}-{culture}.webp");
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-{culture}.webp");
         html.ShouldNotContain("-de.webp");
         html.ShouldContain(Content.GetText(culture, SiteModes.SimpleContentKey, "story.note"));

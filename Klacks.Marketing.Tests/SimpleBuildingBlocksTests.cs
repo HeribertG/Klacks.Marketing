@@ -32,7 +32,7 @@ public class SimpleBuildingBlocksTests
 
         var html = await MarketingComponentHost.RenderAsync<SimpleVideo>(services, new Dictionary<string, object?>
         {
-            [nameof(SimpleVideo.VideoName)] = SimpleVideo.PlansWeekVideoName,
+            [nameof(SimpleVideo.VideoName)] = SimpleVideo.KlacksyCallVideoName,
             [nameof(SimpleVideo.Label)] = "label",
         });
 
@@ -43,7 +43,7 @@ public class SimpleBuildingBlocksTests
         html.ShouldContain(" loop");
         html.ShouldContain("rule-demo-poster");
         html.ShouldContain("screenshot-hover-zoom");
-        html.ShouldContain("poster=\"videos/simple-plans-week-de.webp\"");
+        html.ShouldContain("poster=\"videos/simple-klacksy-call-de.webp\"");
         html.ShouldNotContain(" controls");
     }
 
