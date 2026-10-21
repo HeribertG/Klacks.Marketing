@@ -148,7 +148,8 @@ public static class DemoCarousels
         VideoHeight: SimpleVideo.StoryComicVideoHeight,
         ContentKey: SiteModes.SimpleContentKey,
         PlayEvent: nameof(VisitEvent.VideoPlay),
-        ShowControls: true);
+        ShowControls: true,
+        ShowArrows: false);
 
     public static IReadOnlyList<DemoCarouselDefinition> All { get; } = new[] { Rules, Scenarios, DailyOperations, Containers, SporadicTimeRange, Klacksy };
 }

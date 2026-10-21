@@ -29,7 +29,8 @@
    instead. Each slide shows its own caption (the figcaption of its video); the optional SlideFooter
    (receives the video name) adds a text to the caption block of the slides it renders for (hero: the video note, only for the
    accelerated week-planning clip). Definition.ShowControls (comic story clips with ambient sound) adds the native video
-   controls and drops the hover zoom.
+   controls and drops the hover zoom. Without Definition.ShowArrows the arrows are not shown and the slide takes the full width;
+   they stay in the DOM because carousel-controls.js clicks them (advance on ended, keys, swipe).
    Culture is the page culture code; all texts come from shared.json. *@
 @if (_videos.Count > 0)
 {
@@ -61,7 +62,7 @@
                             @onclick="() => GoToAsync(itemIndex)">@Vt(_videos[index].TitleKey)</button>
                 }
             </div>
-            <div class="daily-ops-carousel-body">
+            <div class="daily-ops-carousel-body @(Definition.ShowArrows ? string.Empty : NoArrowsClass)">
                 <button type="button" data-carousel-prev
                         class="daily-ops-carousel-prev daily-ops-carousel-arrow" aria-label="@Sh(PreviousKey)" aria-controls="@SlideId"
                         @onclick="PreviousAsync">
@@ -106,6 +107,7 @@
     private const string SlideLabelKey = "dailyOps.slideLabel";
     private const string HeadingIdSuffix = "-heading";
     private const string SlideIdSuffix = "-slide";
+    private const string NoArrowsClass = "daily-ops-carousel-no-arrows";
     private const string SlideTitleClass = "text-xl md:text-2xl font-black text-primary mb-5 text-center";
     private const string PrefersReducedMotionJsFunction = "klacksCarouselControls.prefersReducedMotion";
     private const int FirstSlideIndex = 0;

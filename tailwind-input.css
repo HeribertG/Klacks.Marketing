@@ -218,6 +218,16 @@ nav.glass-nav.nav-scrolled {
     }
 }
 
+/* Carousel without visible arrows (DemoCarouselDefinition.ShowArrows = false): the slide takes the full width; the
+   arrow buttons stay in the DOM for carousel-controls.js (advance on ended, keys, swipe). */
+.daily-ops-carousel-body.daily-ops-carousel-no-arrows {
+    display: block;
+}
+
+.daily-ops-carousel-no-arrows > .daily-ops-carousel-arrow {
+    display: none;
+}
+
 .daily-ops-carousel-slide.is-fading-out {
     opacity: 0;
 }

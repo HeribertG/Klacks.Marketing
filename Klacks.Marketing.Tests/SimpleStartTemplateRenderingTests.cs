@@ -133,6 +133,7 @@ public class SimpleStartTemplateRenderingTests
         html.ShouldContain($"id=\"{DemoCarousels.SimpleStoriesSectionId}-slide\"");
         html.IndexOf(">Ausfall decken</button>", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf(">Wochenplanung</button>", StringComparison.Ordinal));
         html.IndexOf(DemoCarousels.SimpleStoriesSectionId, StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
+        Regex.Matches(html, "daily-ops-carousel-no-arrows").Count.ShouldBe(1);
     }
 
     [Test]
