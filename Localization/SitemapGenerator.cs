@@ -78,11 +78,13 @@ public static class SitemapGenerator
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
     // left out, matching the noindex/hreflang rule in SeoHead.
-    // includeExpertStartPages lists the expert start pages ("/land-ch/experten", "/fr/land-ch/experten",
-    // SimpleMode:Enabled) of the cultures with a simple page and own country text; their alternates are limited to
-    // those cultures, matching the hreflang set the page itself emits (SeoHead.HreflangCultures), since the route
-    // answers 404 in every other culture.
-    public static string Build(string baseUrl, Func<string, string, bool> hasContentIn, bool includeExpertStartPages = false)
+    // simpleModeEnabled (SimpleMode:Enabled) lists the country roots ("/land-ch", "/fr/land-ch") for every culture
+    // with a simple page and its simple.json, since that page renders no land-xx.json text (matching
+    // SimpleStartTemplate's SeoHead.TranslationContentKey). It also lists the expert start pages
+    // ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page and own country text; their
+    // alternates are limited to those cultures, matching the hreflang set the page itself emits
+    // (SeoHead.HreflangCultures), since the route answers 404 in every other culture.
+    public static string Build(string baseUrl, Func<string, string, bool> hasContentIn, bool simpleModeEnabled = false)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
         var sb = new StringBuilder();
@@ -91,15 +93,16 @@ public static class SitemapGenerator
 
         foreach (var pageKey in PageKeys)
         {
-            AppendTranslatedUrls(sb, trimmedBase, pageKey, hasContentIn);
+            AppendTranslatedUrls(sb, trimmedBase, pageKey, IsTranslatedFor(pageKey, hasContentIn, simpleModeEnabled));
         }
 
         foreach (var countryPageKey in CountryIndustries.AllCountries)
         {
-            AppendTranslatedUrls(sb, trimmedBase, $"{countryPageKey}/{InstallationSlug}", hasContentIn);
+            var routeKey = $"{countryPageKey}/{InstallationSlug}";
+            AppendTranslatedUrls(sb, trimmedBase, routeKey, IsTranslatedFor(routeKey, hasContentIn, simpleModeEnabled));
         }
 
-        if (includeExpertStartPages)
+        if (simpleModeEnabled)
         {
             foreach (var countryPageKey in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
             {
@@ -140,16 +143,30 @@ public static class SitemapGenerator
         return sb.ToString();
     }
 
-    // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex").
-    private static void AppendTranslatedUrls(StringBuilder sb, string baseUrl, string routeKey, Func<string, string, bool> hasContentIn)
+    // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex"). A country root served as the
+    // simple page is translated wherever the culture has its simple.json.
+    private static Func<string, bool> IsTranslatedFor(string routeKey, Func<string, string, bool> hasContentIn, bool simpleModeEnabled)
+    {
+        var contentKey = routeKey.Replace('/', '-');
+
+        if (!CountryIndustries.AllCountries.Contains(routeKey))
+        {
+            return cultureCode => hasContentIn(cultureCode, contentKey);
+        }
+
+        return cultureCode => SiteModes.HasSimplePage(cultureCode, simpleModeEnabled)
+            ? hasContentIn(cultureCode, SiteModes.SimpleContentKey)
+            : hasContentIn(cultureCode, contentKey);
+    }
+
+    private static void AppendTranslatedUrls(StringBuilder sb, string baseUrl, string routeKey, Func<string, bool> isTranslated)
     {
         if (CountryIndexingPolicy.IsNoindex(routeKey))
         {
             return;
         }
 
-        var contentKey = routeKey.Replace('/', '-');
-        var cultures = SupportedCultures.All.Where(c => hasContentIn(c.Code, contentKey)).ToList();
+        var cultures = SupportedCultures.All.Where(c => isTranslated(c.Code)).ToList();
 
         foreach (var culture in cultures)
         {

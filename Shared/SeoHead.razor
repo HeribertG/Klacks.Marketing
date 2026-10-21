@@ -90,6 +90,10 @@
     // under a foreign language URL.
     [Parameter] public bool IndexTranslatedOnly { get; set; }
 
+    // The content file whose presence in a culture decides IndexTranslatedOnly; defaults to PageKey. The simple start
+    // page ("/land-ch") renders simple.json rather than the country file land-ch.json, so it passes "simple".
+    [Parameter] public string? TranslationContentKey { get; set; }
+
     // For a page whose route exists only in some cultures ("/land-ch/experten" exists only in the cultures with a
     // simple page): the hreflang set is limited to these cultures so it never points at URLs that answer 404. Null
     // means the route exists in every culture.
@@ -101,7 +105,7 @@
 
     private bool IsTranslated(SupportedCulture culture)
         => (HreflangCultures is null || HreflangCultures.Contains(culture.Code, StringComparer.OrdinalIgnoreCase))
-            && (!IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, PageKey));
+            && (!IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, TranslationContentKey ?? PageKey));
 
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');
 

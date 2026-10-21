@@ -14,8 +14,10 @@ using Shouldly;
 /// <summary>
 /// Routing of the start pages through the real app: with the feature on, the country root of every supported culture
 /// ("/land-ch", "/en/land-gb", "/fr/land-ch", "/es/land-es", "/zh-tw/land-tw", ...) is the simple page of its culture
-/// (localized title with the country name in the page language, canonical on itself, the existing land-xx hreflang
-/// cluster, indexable where the culture has own country text); with the feature off, every country root is today's page.
+/// (localized title with the country name in the page language, canonical on itself, indexable in every culture with
+/// its simple.json and a land-xx hreflang cluster over all those cultures, since the page renders no land-xx.json
+/// text); the expert start page stays indexable only where the culture has own country text; with the feature off,
+/// every country root is today's page.
 /// </summary>
 [TestFixture]
 public class SimpleStartPageTests
@@ -70,9 +72,25 @@ public class SimpleStartPageTests
         }
     }
 
+    [TestCase("/land-ch")]
     [TestCase("/en/land-ch")]
+    [TestCase("/ja/land-ch")]
     [TestCase("/it/land-de")]
-    public async Task Simple_page_without_own_country_text_of_the_culture_stays_noindex(string path)
+    public async Task Simple_page_is_indexable_with_the_hreflang_cluster_of_every_culture(string path)
+    {
+        var html = await GetHtmlAsync(enabled: true, path);
+        var country = path.Split('/', StringSplitOptions.RemoveEmptyEntries)[^1];
+
+        html.ShouldNotContain(NoindexMarker);
+        foreach (var culture in SupportedCultures.All)
+        {
+            html.ShouldContain($"hreflang=\"{culture.Code}\" href=\"{SeoUrls.Absolute(SiteBaseUrl, culture, country)}\"", Case.Sensitive, path);
+        }
+    }
+
+    [TestCase("/en/land-ch/experten")]
+    [TestCase("/ja/land-ch/experten")]
+    public async Task Expert_start_page_without_own_country_text_of_the_culture_stays_noindex(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);
 
