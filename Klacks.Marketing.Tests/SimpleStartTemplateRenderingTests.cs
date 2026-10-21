@@ -256,7 +256,7 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [Test]
-    public async Task Playground_buttons_carry_the_demo_event_and_the_ai_section_names_the_providers()
+    public async Task Playground_buttons_carry_the_demo_event_and_the_ai_section_names_cloud_and_local_providers()
     {
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey));
 
@@ -265,6 +265,8 @@ public class SimpleStartTemplateRenderingTests
         {
             html.ShouldContain(provider);
         }
+        html.ShouldContain("Lokale KI deiner Wahl (Ollama, LM Studio)");
+        html.ShouldContain("… und vieles mehr");
     }
 
     [TestCase("en", "land-gb", "Workforce planning", "United Kingdom")]
