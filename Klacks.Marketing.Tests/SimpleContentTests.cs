@@ -580,7 +580,7 @@ public class SimpleContentTests
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
         ("talk.bubble.2", "Warum steht Beat in der Fehlerliste?"),
         ("ai.text", "Klacks stellt Klacksy die Fähigkeiten bereit. Das KI-Modell dahinter bestimmst du: von einem Anbieter deiner Wahl oder auf deinem eigenen Server. Heute das beste, morgen das nächste – du bist an niemanden gebunden."),
-        ("data.text", "Deine Daten liegen bei dir – nicht bei uns und in keiner Klacks-Cloud. Welche Dienste Klacks von aussen nutzt – etwa das KI-Modell oder den Kartendienst –, bestimmst du."),
+        ("data.text", "Deine Daten liegen bei dir, in keiner externen Cloud. Dienstplan und Ersatzsuche laufen ohne KI-Anbindung. Dabei verlassen keine sensiblen Daten deinen Server. Nur wenn du Klacksy fragst, sieht dein KI-Modell, was es braucht."),
         ("start.text", "Haben wir dich neugierig gemacht? Rede mit unserem elektronischen Mitarbeiter."),
     };
 
