@@ -586,7 +586,7 @@ public class SimpleContentTests
 
     private static readonly string[] OwnerCards =
     {
-        "Nächste Woche planen? Ein Satz an Klacksy startet die Planung. Klacks rechnet – und du sagst Ja.",
+        "Nächsten Dienstplan erstellen? Ein Satz an Klacksy startet die Planung. Klacks rechnet – und du sagst Ja.",
         "Was steht in der Fehlerliste? Klacks prüft deine Regeln. Verstösse zeigt die Fehlerliste – Klacksy erklärt sie.",
         "Jemand fällt aus? Klacksy zeigt passende Leute mit Begründung – du wählst.",
     };
