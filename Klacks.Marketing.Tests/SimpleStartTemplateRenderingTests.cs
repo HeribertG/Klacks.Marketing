@@ -109,7 +109,7 @@ public class SimpleStartTemplateRenderingTests
         var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog());
 
         html.ShouldContain($"{SimpleVideo.KlacksyCallVideoName}-de.webp");
-        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(2);
+        Regex.Matches(html, "class=\"rule-demo-video ").Count.ShouldBe(3);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(1);
     }
 
@@ -123,6 +123,17 @@ public class SimpleStartTemplateRenderingTests
         html.ShouldContain(" controls");
         html.ShouldContain("Comic, mit KI erstellt.");
         html.IndexOf("simple-story-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
+    }
+
+    [Test]
+    public async Task Klacksy_intro_clip_sits_between_the_audience_chips_and_the_call_to_try_klacksy()
+    {
+        var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
+
+        html.ShouldContain($"{SimpleVideo.KlacksyIntroVideoName}-de.webp");
+        html.ShouldContain("Klacksy stellt sich vor");
+        html.IndexOf("simple-audience-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("simple-intro-heading", StringComparison.Ordinal));
+        html.IndexOf("simple-intro-heading", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("simple-start-heading", StringComparison.Ordinal));
     }
 
     [Test]
@@ -274,6 +285,7 @@ public class SimpleStartTemplateRenderingTests
         RawKeys(html).ShouldBeEmpty();
         html.ShouldNotContain("{country}");
         html.ShouldNotContain("simple-story-heading");
+        html.ShouldNotContain("simple-intro-heading");
         html.ShouldNotContain("<video");
         TalkSection(html).ShouldContain(TextColumnFullWidth);
         Regex.Matches(html, Regex.Escape(DemoDataNote.MarkerAttribute)).Count.ShouldBe(0);

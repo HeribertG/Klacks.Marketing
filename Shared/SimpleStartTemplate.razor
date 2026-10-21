@@ -6,7 +6,8 @@
    docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
    light surfaces with large secondary-fixed areas, Amber only for Klacksy and the main action (always with the dark
    on-tertiary-fixed text), one carousel of the comic story clips above the hero (replacement first, then the week plan,
-   played one after the other, each only when the culture has its file), a text-only hero, video V4 looping like the expert demo videos and a full-width talk text
+   played one after the other, each only when the culture has its file), the Klacksy intro clip (muted loop) between
+   the audience chips and the call to try Klacksy, a text-only hero, video V4 looping like the expert demo videos and a full-width talk text
    without V4; the shared link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
    language, {country} is the only placeholder), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO keeps the land-xx hreflang cluster, and the
@@ -132,6 +133,16 @@
     <p class="text-lg md:text-xl font-bold mt-6 mb-0"><a href="@IndustryHref(CustomRulesSlug)" class="inline-flex items-center gap-2 text-primary no-underline hover:underline">@Tx("audience.more") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></a></p>
 </section>
 
+@if (HasIntroVideo)
+{
+    <section class="reveal py-10 md:py-14 px-4 sm:px-8 max-w-5xl mx-auto no-line-rule text-center" aria-labelledby="simple-intro-heading">
+        <h2 id="simple-intro-heading" class="text-[2rem] md:text-[2.5rem] font-black tracking-tight mt-0 mb-8">@Tx("intro.title")</h2>
+        <SimpleVideo VideoName="@SimpleVideo.KlacksyIntroVideoName" Culture="@Culture" Label="@Tx("intro.videoLabel")"
+                     Width="@SimpleVideo.StoryComicVideoWidth" Height="@SimpleVideo.StoryComicVideoHeight" />
+        <p class="text-xs text-on-surface-variant mt-3 mb-0">@Tx("intro.note")</p>
+    </section>
+}
+
 <section id="@SimplePageSectionIds.Start" class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto no-line-rule scroll-mt-24" aria-labelledby="simple-start-heading">
     <div class="rounded-[2rem] bg-secondary-fixed py-12 md:py-16 px-6 md:px-10 text-center">
         <h2 id="simple-start-heading" class="text-[2rem] md:text-[2.75rem] font-black tracking-tight mt-0 mb-4">@Tx("start.title")</h2>
@@ -192,6 +203,8 @@
     private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey) + ShareReferenceQuery;
 
     private bool HasStoryVideo => DemoCarousels.SimpleStories.Videos.Any(video => VideoCatalog.Find(video.VideoName, Culture) is not null);
+
+    private bool HasIntroVideo => VideoCatalog.Find(SimpleVideo.KlacksyIntroVideoName, Culture) is not null;
 
     private bool HasTalkVideo => VideoCatalog.Find(SimpleVideo.KlacksyCallVideoName, Culture) is not null;
 

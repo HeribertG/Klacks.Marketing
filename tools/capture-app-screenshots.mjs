@@ -7,7 +7,9 @@
  * to stay within the byte budget (the capture fails instead of silently shrinking the image).
  * Exception: the calendar view has a fixed output width but a content-fitted height (the holiday-rules card is
  * clipped exactly, so no empty page background is baked into the image; its height depends on the row count).
- * CLI: --cultures de,ar,ja  --views schedule,timeline,calendar,klacksy  --base-url  --api-url  --png-dir
+ * CLI: --cultures de,ar,ja  --views schedule,timeline,calendar,klacksy,gantt  --base-url  --api-url  --png-dir
+ * The gantt view is the absence Gantt (absence periods of the demo group, opened on the current period), used as a
+ * background of the Klacksy intro video; it is not part of the default view list.
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID.
  * The scripted Klacksy conversation per culture lives in capture-app-screenshots.chat.json (prompt + answer).
  * Demo-DB prerequisites (set through the app API): a model of the Swiss provider (REQUIRED_MODEL_PROVIDER) is enabled
@@ -38,7 +40,9 @@ const VIEW_SCHEDULE = "schedule";
 const VIEW_TIMELINE = "timeline";
 const VIEW_CALENDAR = "calendar";
 const VIEW_KLACKSY = "klacksy";
+const VIEW_GANTT = "gantt";
 const ALL_VIEWS = [VIEW_SCHEDULE, VIEW_TIMELINE, VIEW_CALENDAR, VIEW_KLACKSY];
+const KNOWN_VIEWS = [...ALL_VIEWS, VIEW_GANTT];
 
 const FULL_PAGE_VIEWPORT = { width: 1500, height: 940 };
 const FULL_PAGE_OUTPUT = { width: 2400, height: 1504 };
@@ -49,6 +53,7 @@ const VIEW_SPECS = {
   [VIEW_SCHEDULE]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
   [VIEW_TIMELINE]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
   [VIEW_KLACKSY]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
+  [VIEW_GANTT]: { viewport: FULL_PAGE_VIEWPORT, output: FULL_PAGE_OUTPUT },
   [VIEW_CALENDAR]: { viewport: CALENDAR_VIEWPORT, output: CALENDAR_OUTPUT },
 };
 
@@ -64,6 +69,9 @@ const SCHEDULE_DATA_TIMEOUT_MS = 60000;
 const HTTP_POST = "POST";
 
 const SETTINGS_PATH = "/workplace/settings";
+const GANTT_PATH = "/workplace/absence";
+const SEL_GANTT_CANVAS = "#absence-surface-canvas";
+const GANTT_BOTTOM_MARGIN_PX = 40;
 const CHAT_STREAM_ROUTE = "**/assistant/chat/stream";
 const MODELS_PATH = "/api/backend/assistant/models";
 const PROVIDERS_ROUTE = "**/assistant/providers";
@@ -166,9 +174,9 @@ function readOptions() {
     },
   });
   const views = S.splitList(values.views) ?? ALL_VIEWS;
-  const unknownViews = views.filter((v) => !ALL_VIEWS.includes(v));
+  const unknownViews = views.filter((v) => !KNOWN_VIEWS.includes(v));
   if (unknownViews.length > 0) {
-    throw new Error(`Unknown views: ${unknownViews.join(", ")}. Known: ${ALL_VIEWS.join(", ")}`);
+    throw new Error(`Unknown views: ${unknownViews.join(", ")}. Known: ${KNOWN_VIEWS.join(", ")}`);
   }
   return {
     ...S.readSessionOptions(values),
@@ -304,6 +312,18 @@ async function openSchedule(page, options, viewMode) {
     await page.waitForTimeout(WHEEL_TICK_PAUSE_MS);
   }
   await settle(page, CANVAS_DRAW_SETTLE_MS);
+}
+
+async function openGantt(page, options) {
+  await page.goto(`${options.uiUrl}${GANTT_PATH}?groupId=${options.groupId}`, { timeout: S.NAV_TIMEOUT_MS, waitUntil: "domcontentloaded" });
+  await page.locator(SEL_GANTT_CANVAS).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
+  await settle(page, CANVAS_DRAW_SETTLE_MS);
+  const gutter = (await splitterBoxes(page)).find((box) => box.width > box.height);
+  if (gutter) {
+    const viewport = page.viewportSize();
+    await dragSplitter(page, gutter, 0, viewport.height - GANTT_BOTTOM_MARGIN_PX - (gutter.y + gutter.height / HALF));
+    await settle(page, CANVAS_DRAW_SETTLE_MS);
+  }
 }
 
 async function reloadCalendarRules(page, action) {
@@ -489,6 +509,10 @@ async function captureView(browser, options, culture, view, metadata) {
         return await captureCalendar(page, options, culture, spec);
       case VIEW_KLACKSY:
         return await captureKlacksy(page, options, culture);
+      case VIEW_GANTT:
+        await openGantt(page, options);
+        await waitUntilLoaded(page);
+        return await page.screenshot();
       default:
         throw new Error(`Unhandled view ${view}`);
     }
