@@ -13,7 +13,7 @@
  * @param culture - any of the cultures with a weekplan-captions.<culture>.json; the end card texts come from captions.<culture>.json
  * @param variant - default from the culture: headscarf for ar, id, ms (clip gemini_generated_video_16a58156.mp4, short story),
  *        standard otherwise (clip gemini_generated_video_d838e9c0.mp4); see VARIANTS in weekplan-recipe.mjs
- * @param take - default wwwroot/videos/simple-plans-week-<culture>.mp4 of this repository
+ * @param take - default tools/story-video/source-clips/takes/simple-plans-week-<culture>.mp4 (the recorded app take; not served)
  * Exit code 1 when a check fails (caption over two lines, glyphs not in the font, reading speed, panel or greeting not found);
  * the video is still written so the frames can be inspected.
  */
@@ -45,7 +45,6 @@ import {
 
 const run = promisify(execFile);
 const toolDir = path.dirname(fileURLToPath(import.meta.url));
-const repoDir = path.resolve(toolDir, "..", "..");
 const MAX_BUFFER_BYTES = 1 << 30;
 const DECIMALS = 3;
 const BYTES_RGB = 3;
@@ -92,7 +91,7 @@ function readOptions() {
     variant: VARIANTS[variantName],
     raw: values.raw ? path.resolve(values.raw) : null,
     outDir,
-    take: path.resolve(values.take ?? path.join(repoDir, "wwwroot", "videos", `simple-plans-week-${culture}${EXT.mp4}`)),
+    take: path.resolve(values.take ?? path.join(toolDir, "source-clips", "takes", `simple-plans-week-${culture}${EXT.mp4}`)),
     captionsFile: values.captions ? path.resolve(values.captions) : path.join(toolDir, `weekplan-captions.${culture}.json`),
     workDir: path.resolve(values["work-dir"] ?? path.join(outDir, `work-weekplan-${culture}`)),
     tools: { ffmpeg: values.ffmpeg ?? process.env.FFMPEG_PATH ?? "ffmpeg", ffprobe: values.ffprobe ?? process.env.FFPROBE_PATH ?? "ffprobe" },

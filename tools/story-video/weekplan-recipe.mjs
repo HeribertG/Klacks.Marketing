@@ -25,7 +25,7 @@ export const VARIANTS = Object.freeze({
     morning: Object.freeze({ from: 16.05, to: 18.9, speed: 0.7, captionFrom: 0.8 }),
     backgroundStillAt: 15.9,
     captionKeys: Object.freeze(["k1", "k2", "k3", "k4", "x1"]),
-    windows: Object.freeze({ k1: Object.freeze([0.3, 4.5]), k2: Object.freeze([4.7, 7.7]), k3: Object.freeze([7.9, 10.3]), k4: Object.freeze([10.5]) }),
+    windows: Object.freeze({ k1: Object.freeze([0.3, 4.5]), k2: Object.freeze([4.55, 7.85]), k3: Object.freeze([7.95, 10.25]), k4: Object.freeze([10.35]) }),
   }),
   [VARIANT_HEADSCARF]: Object.freeze({
     rawClip: "gemini_generated_video_16a58156.mp4",
@@ -36,7 +36,7 @@ export const VARIANTS = Object.freeze({
     morning: Object.freeze({ from: 7.6, to: 10, speed: 0.7, captionFrom: 0.6 }),
     backgroundStillAt: 7.4,
     captionKeys: Object.freeze(["k1", "k2", "x1"]),
-    windows: Object.freeze({ k1: Object.freeze([0.3, 4.4]), k2: Object.freeze([4.6]) }),
+    windows: Object.freeze({ k1: Object.freeze([0.3, 4.5]), k2: Object.freeze([4.6]) }),
   }),
 });
 

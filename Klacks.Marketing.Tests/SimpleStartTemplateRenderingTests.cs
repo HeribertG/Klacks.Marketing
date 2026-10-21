@@ -142,7 +142,7 @@ public class SimpleStartTemplateRenderingTests
         var html = WebUtility.HtmlDecode(await RenderAsync(CountryIndustries.SwissCountryPageKey, new StubVideoCatalog()));
 
         html.ShouldContain($"id=\"{DemoCarousels.SimpleStoriesSectionId}-slide\"");
-        html.IndexOf(">Ausfall decken</button>", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf(">Wochenplanung</button>", StringComparison.Ordinal));
+        html.IndexOf(">Ausfall decken</button>", StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf(">Nächster Dienstplan</button>", StringComparison.Ordinal));
         html.IndexOf(DemoCarousels.SimpleStoriesSectionId, StringComparison.Ordinal).ShouldBeLessThan(html.IndexOf("<h1", StringComparison.Ordinal));
         Regex.Matches(html, "daily-ops-carousel-no-arrows").Count.ShouldBe(1);
     }
