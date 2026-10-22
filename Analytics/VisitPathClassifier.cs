@@ -67,6 +67,7 @@ public static class VisitPathClassifier
             [PageTypes.Offer] = PageTypes.Offer,
             [PageTypes.Comparison] = PageTypes.Comparison,
             [PageTypes.AboutUs] = PageTypes.AboutUs,
+            [PageTypes.Tech] = PageTypes.Tech,
             [PageTypes.Partner] = PageTypes.Partner,
             [PageTypes.License] = PageTypes.License,
             [PageTypes.SmallBusiness] = PageTypes.SmallBusiness,

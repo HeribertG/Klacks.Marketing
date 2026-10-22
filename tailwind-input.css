@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #fcf9f8;
-    color: #1c1b1b;
+    background-color: rgb(var(--c-background));
+    color: rgb(var(--c-on-background));
     overflow-wrap: break-word;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .glass-nav {
-    background: rgba(252, 249, 248, 0.8);
+    background: rgb(var(--c-background) / 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
@@ -317,7 +317,7 @@ nav.glass-nav.nav-scrolled {
     border-radius: 9999px;
     border: none;
     padding: 0;
-    background: #cfc4c5;
+    background: rgb(var(--c-outline-variant));
     cursor: pointer;
 }
 
@@ -334,6 +334,16 @@ nav.glass-nav.nav-scrolled {
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+}
+
+/* Amber at 45% turns muddy brown on the dark background, so the marker is fainter there. */
+.dark .hero-title .text-secondary {
+    background-image: linear-gradient(
+        transparent 62%,
+        theme('colors.highlight / 25%') 62%,
+        theme('colors.highlight / 25%') 92%,
+        transparent 92%
+    );
 }
 
 /* Die schwebenden Badge-Karten um das Hero-Mockup wurden entfernt
@@ -365,7 +375,7 @@ nav.glass-nav.nav-scrolled {
     gap: 0.5rem;
     font-size: 0.875rem;
     font-weight: 700;
-    color: #4c4546;
+    color: rgb(var(--c-on-surface-variant));
     white-space: nowrap;
 }
 
@@ -623,6 +633,10 @@ body:has(.feature-ticker-bar) footer {
 
     .legal-prose th {
         @apply font-bold text-primary;
+    }
+
+    .legal-prose code {
+        @apply font-mono text-[0.8125rem] bg-surface-container px-1 rounded;
     }
 
     /* Hero-Slideshow: Crossfade-Übergang + dezenter Ken-Burns-Zoom pro Slide.

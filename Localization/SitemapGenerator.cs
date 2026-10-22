@@ -68,7 +68,7 @@ public static class SitemapGenerator
 
     // Company-wide pages like the ones above, but written per culture (a content file per culture): only the
     // cultures that have their own text are listed, matching their IndexTranslatedOnly noindex rule.
-    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug };
+    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug };
 
     private const string InstallationSlug = "installation";
 

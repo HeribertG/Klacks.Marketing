@@ -27,7 +27,7 @@ internal static class MetaDescriptionCatalog
     private const string PrivacyPage = "datenschutz";
     private const string ImprintPage = "impressum";
 
-    private static readonly string[] FlatBusinessSizePages = { SmallBusinessPage, "mittlere-betriebe", "grosse-betriebe", "angebot" };
+    private static readonly string[] FlatBusinessSizePages = { SmallBusinessPage, "mittlere-betriebe", "grosse-betriebe", "angebot", "technik" };
     private static readonly string[] FlatSubtitlePages = { "ueber-uns", "partner", "lizenz", "vergleich" };
 
     internal sealed record Entry(

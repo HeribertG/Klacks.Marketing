@@ -10,14 +10,16 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The prerendered page carries the mode body class and the header of its mode: the simple page shows only jump links
-/// to its own sections, the expert pages keep today's navigation; the logo always leads to the simple page; switching
+/// The prerendered page carries the mode body class and the header of its mode: the simple page shows jump links
+/// to its own sections plus the about page, the expert pages keep today's navigation; every header has the dark-mode
+/// toggle; the logo always leads to the simple page; switching
 /// language or country keeps the mode, but never links to an expert start page that a culture does not have. The simple
 /// header keeps the country switch on phones as a compact flag button whose dropdown opens above the jump links.
 /// </summary>
 [TestFixture]
 public class SiteHeaderModeTests
 {
+    private const int AboutLinksInSimpleHeaderAndFooter = 2;
     private const string BodyClassPattern = @"<body class=""(mode-simple|mode-expert)\b";
     private const string SingleRowHeaderClass = "class=\"flex justify-between items-center gap-4 sm:gap-6 w-full px-4 sm:px-8 py-4 max-w-7xl mx-auto\"";
     private const string SingleRowLinksClass = "class=\"hidden xl:flex items-center gap-4 whitespace-nowrap\"";
@@ -70,6 +72,26 @@ public class SiteHeaderModeTests
         html.ShouldContain("href=\"/land-ch#kosten\"");
         html.ShouldNotContain("href=\"/land-ch#regeln\"");
         html.ShouldNotContain("mobile-menu-panel");
+    }
+
+    [Test]
+    public async Task Simple_header_links_the_about_page_next_to_the_jump_links()
+    {
+        var html = await GetHtmlAsync(enabled: true, "/land-ch");
+
+        Regex.Matches(html, Regex.Escape("href=\"/land-ch/ueber-uns\"")).Count.ShouldBe(AboutLinksInSimpleHeaderAndFooter);
+    }
+
+    [TestCase("/land-ch", true)]
+    [TestCase("/land-ch/experten", true)]
+    [TestCase("/land-ch/spitex", false)]
+    [TestCase("/ja/land-jp", false)]
+    public async Task Every_header_offers_the_dark_mode_toggle(string path, bool enabled)
+    {
+        var html = await GetHtmlAsync(enabled, path);
+
+        html.ShouldContain("data-theme-toggle");
+        html.ShouldContain("js/theme-mode.js");
     }
 
     [Test]

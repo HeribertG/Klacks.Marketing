@@ -72,6 +72,9 @@
             <a href="@ExternalLinks.GithubUrl" target="_blank" class="text-secondary font-semibold no-underline inline-flex items-center gap-1">
                 <span class="material-symbols-outlined text-base">code</span> @GetText("links.github")
             </a>
+            <a href="@TechHref" class="text-secondary font-semibold no-underline inline-flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">memory</span> @ContentProvider.GetText(ResolvedCulture, SharedContentKey, TechLabelKey)
+            </a>
         </div>
     </section>
 </div>
@@ -81,6 +84,8 @@
     private const int OwnerItemCount = 4;
     private const int StoryParagraphCount = 3;
     private const string FounderImagePath = "/images/heribert-gasparoli.webp";
+    private const string SharedContentKey = "shared";
+    private const string TechLabelKey = "footer.tech";
 
     private static readonly (string Icon, int Index)[] ContinuityItems =
     {
@@ -100,6 +105,8 @@
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
 
     private string ImprintHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.ImprintSlug);
+
+    private string TechHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.TechSlug);
 
     private string GetText(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
 }

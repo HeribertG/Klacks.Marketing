@@ -14,6 +14,7 @@ public static class PageTypes
     public const string Offer = "angebot";
     public const string Comparison = "vergleich";
     public const string AboutUs = "ueber-uns";
+    public const string Tech = "technik";
     public const string Partner = "partner";
     public const string License = "lizenz";
     public const string SmallBusiness = "kleine-betriebe";
@@ -25,7 +26,7 @@ public static class PageTypes
 
     public static readonly IReadOnlyList<string> All = new[]
     {
-        Start, ExpertStart, Industry, Installation, Offer, Comparison, AboutUs, Partner, License,
+        Start, ExpertStart, Industry, Installation, Offer, Comparison, AboutUs, Tech, Partner, License,
         SmallBusiness, MidSizeBusiness, LargeBusiness, Legal, DocsSitemap, Other,
     };
 }

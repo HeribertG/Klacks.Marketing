@@ -13,6 +13,7 @@
             @Logo
             <div class="flex items-center gap-2 sm:gap-3 min-w-0">
                 <ExpertModeSwitch />
+                @ThemeToggle
                 <div class="@(IsSimpleMode ? "flex" : "hidden xl:flex") items-center gap-3">
                     @LanguageAndCountryMenus
                     @if (!IsSimpleMode)
@@ -33,8 +34,9 @@
                 <div class="flex items-center gap-5 h-11 px-4 sm:px-8 max-w-7xl mx-auto overflow-x-auto whitespace-nowrap">
                     @foreach (var anchor in SimplePageSectionIds.Navigation)
                     {
-                        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-semibold tracking-tight no-underline" href="@SectionHref(anchor.Id)">@Sx(anchor.LabelKey)</a>
+                        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-semibold tracking-tight no-underline" href="@SectionHref(anchor.Id)">@Sx(anchor.LabelKey)</a>
                     }
+                    <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-semibold tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
                 </div>
             </div>
         }
@@ -55,11 +57,14 @@
             <div class="hidden xl:flex items-center gap-4 whitespace-nowrap">
                 @NavigationLinks
             </div>
-            <div class="hidden xl:flex items-center gap-3">
-                @LanguageAndCountryMenus
-                @HeaderActions
+            <div class="flex items-center gap-2 xl:gap-3">
+                @ThemeToggle
+                <div class="hidden xl:flex items-center gap-3">
+                    @LanguageAndCountryMenus
+                    @HeaderActions
+                </div>
+                @MobileMenuButton
             </div>
-            @MobileMenuButton
         </div>
 
         @MobileMenuPanel
@@ -84,33 +89,34 @@ else
 <DemoDisclaimerModal IsOpen="_showDemoModal" Culture="@CurrentCultureRecord.Code" ContentKey="@DemoModalContentKey" OnClose="CloseDemoModal" />
 
 <!-- FOOTER -->
-<footer class="bg-slate-50 no-line-rule">
+<footer class="bg-chrome no-line-rule">
     <div class="flex flex-col md:flex-row justify-between items-center w-full px-4 sm:px-8 py-12 max-w-7xl mx-auto">
         <div class="mb-8 md:mb-0">
-            <div class="text-lg font-bold text-black mb-2">Klacks</div>
-            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500">@ShHtml("footer.tagline")</div>
+            <div class="text-lg font-bold text-tertiary mb-2">Klacks</div>
+            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle">@ShHtml("footer.tagline")</div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div class="footer-meta flex flex-wrap justify-center gap-x-6 gap-y-4 sm:gap-8">
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ExternalLinks.GithubUrl" target="_blank">@Sh("footer.github")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="mailto:@ExternalLinks.ContactEmail">@Sh("footer.contact")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@StoreHref" target="_blank">@Sh("footer.store")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ImprintHref">@Sh("footer.imprint")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@PartnerHref">@Sh("footer.partner")</a>
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@ComparisonHref">@Sh("footer.comparison")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@ExternalLinks.GithubUrl" target="_blank">@Sh("footer.github")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="mailto:@ExternalLinks.ContactEmail">@Sh("footer.contact")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@StoreHref" target="_blank">@Sh("footer.store")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@ImprintHref">@Sh("footer.imprint")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@PrivacyHref">@Sh("footer.privacy")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@PartnerHref">@Sh("footer.partner")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@ComparisonHref">@Sh("footer.comparison")</a>
                 @foreach (var page in VisibleCompanySizePages)
                 {
-                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@CompanyWideHref(page.Slug)">@Sh(page.LabelKey)</a>
+                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@CompanyWideHref(page.Slug)">@Sh(page.LabelKey)</a>
                 }
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@TechHref">@Sh("footer.tech")</a>
                 @if (ShowOfferPage)
                 {
-                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@OfferHref">@Sh("footer.offer")</a>
+                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@OfferHref">@Sh("footer.offer")</a>
                 }
-                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 hover:text-blue-600 transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
+                <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@LicenseHref">@Sh("footer.license")</a>
             </div>
-            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-slate-500 opacity-80">
+            <div class="footer-meta text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle opacity-80">
                 <span dir="ltr" class="footer-copyright tracking-[0.05em]">@ShHtml("footer.copyright")</span>
             </div>
         </div>
@@ -132,16 +138,18 @@ else
     private const string LargeBusinessPageKey = CountryPageLinks.LargeBusinessSlug;
     private const string AboutPageKey = "ueber-uns";
     private const string OfferPageKey = CountryPageLinks.OfferSlug;
+    private const string TechPageKey = CountryPageLinks.TechSlug;
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
     private const string ModeApplyFunction = "klacksMode.apply";
     private const string PageShownFunction = "klacksC.pageShown";
+    private const string ThemeSyncFunction = "klacksTheme.sync";
 
     // Pages whose content is the same for every country and culture combination.
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
-        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey,
+        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey, TechPageKey,
     };
 
     private sealed record CompanySizePage(string Slug, string LabelKey);
@@ -201,6 +209,8 @@ else
             await TryInvokeVoidAsync("klacksStatsCounter.init");
             await TryInvokeVoidAsync("klacksRuleConflictVideo.init");
         }
+
+        await TryInvokeVoidAsync(ThemeSyncFunction);
     }
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
@@ -404,6 +414,8 @@ else
     private string AboutHref => CompanyWideHref(AboutPageKey);
 
     private string OfferHref => CompanyWideHref(OfferPageKey);
+
+    private string TechHref => CompanyWideHref(TechPageKey);
 
     private string CompanyWideHref(string pageKey)
     {
@@ -654,8 +666,8 @@ else
 
     // The simple header has no mobile menu, so its country switch stays visible on phones as a compact flag button
     // (the country code shows from the sm breakpoint on); every other header keeps its plain button markup unchanged.
-    private const string CountryToggleClassBase = "flex items-center gap-1.5 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase";
-    private const string CountryToggleClassSimple = "flex items-center gap-1.5 px-2 sm:px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase";
+    private const string CountryToggleClassBase = "flex items-center gap-1.5 px-3 py-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all text-sm font-bold uppercase";
+    private const string CountryToggleClassSimple = "flex items-center gap-1.5 px-2 sm:px-3 py-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all text-sm font-bold uppercase";
     private const string AriaTrue = "true";
     private const string AriaFalse = "false";
 
@@ -683,20 +695,20 @@ else
     }
 
     private RenderFragment Logo => @<text>
-        <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-black no-underline">
+        <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-tertiary no-underline">
             <img src="images/klacks-logo.svg" class="w-8 h-8 shrink-0" alt="Klacks Logo" />
             Klacks
         </a>
     </text>;
 
     private RenderFragment NavigationLinks => @<text>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
         @if (ShowIndustryMenu)
         {
             <div class="relative">
-                <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
+                <button type="button" class="nav-link flex items-center gap-1 text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight" @onclick="ToggleIndustryMenu">
                     @if (CurrentIndustryIcon.Length > 0)
                     {
                         <span class="material-symbols-outlined text-base">@CurrentIndustryIcon</span>
@@ -717,12 +729,12 @@ else
         }
         else
         {
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)">@Sh("nav.industries")</a>
+            <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)">@Sh("nav.industries")</a>
         }
         @if (ShowCompanySizePages)
         {
             <div class="relative">
-                <button type="button" class="nav-link flex items-center gap-1 text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight" aria-expanded="@(_companySizeMenuOpen ? "true" : "false")" @onclick="ToggleCompanySizeMenu">
+                <button type="button" class="nav-link flex items-center gap-1 text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight" aria-expanded="@(_companySizeMenuOpen ? "true" : "false")" @onclick="ToggleCompanySizeMenu">
                     @Sh("nav.companySize")
                     <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
                 </button>
@@ -736,17 +748,17 @@ else
         }
         else
         {
-            <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
+            <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
         }
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
-        <a class="nav-link text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
     </text>;
 
     private RenderFragment LanguageAndCountryMenus => @<text>
         <div class="relative">
-            <button type="button" class="flex items-center gap-1 px-3 py-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
+            <button type="button" class="flex items-center gap-1 px-3 py-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all text-sm font-bold uppercase" @onclick="ToggleLanguageMenu">
                 @CurrentCultureRecord.Code
                 <span class="material-symbols-outlined text-base">expand_more</span>
             </button>
@@ -781,7 +793,7 @@ else
     </text>;
 
     private RenderFragment HeaderActions => @<text>
-        <a class="p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
+        <a class="p-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all" href="@ExternalLinks.GithubUrl" target="_blank" aria-label="@Sh("nav.githubAriaLabel")">
             <span class="material-symbols-outlined">code</span>
         </a>
         <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap hover:scale-95 active:scale-90 transition-transform duration-200">
@@ -789,9 +801,18 @@ else
         </button>
     </text>;
 
+    // Rendered without aria-pressed: wwwroot/js/theme-mode.js owns the state and sets it (klacksTheme.sync), so a
+    // Blazor re-render never resets it. One icon per state, swapped by the "dark" class on <html>.
+    private RenderFragment ThemeToggle => @<text>
+        <button type="button" data-theme-toggle class="shrink-0 p-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all" aria-label="@Sh("nav.darkMode")" title="@Sh("nav.darkMode")">
+            <span class="material-symbols-outlined dark:hidden" aria-hidden="true">dark_mode</span>
+            <span class="material-symbols-outlined hidden dark:inline-block" aria-hidden="true">light_mode</span>
+        </button>
+    </text>;
+
     private RenderFragment MobileMenuButton => @<text>
         <button type="button"
-                class="xl:hidden p-2 text-slate-600 hover:bg-slate-100/50 rounded-full transition-all"
+                class="xl:hidden p-2 text-ink-muted hover:bg-chrome-hover/50 rounded-full transition-all"
                 aria-label="@(_mobileMenuOpen ? Sh("nav.menuClose") : Sh("nav.menuOpen"))"
                 aria-expanded="@(_mobileMenuOpen ? "true" : "false")"
                 @onclick="ToggleMobileMenu">
@@ -801,13 +822,13 @@ else
 
     private RenderFragment MobileMenuPanel => @<text>
         <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full inset-x-4 sm:inset-x-auto sm:right-8 mt-2 sm:w-96 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-6 sm:px-8 py-6 flex flex-col gap-5">
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
             @if (ShowIndustryMenu)
             {
                 <div class="flex flex-col gap-1">
-                    <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
+                    <button type="button" class="w-full flex items-center justify-between text-left text-ink-muted text-sm font-medium tracking-tight" aria-expanded="@(_mobileIndustryOpen ? "true" : "false")" aria-label="@Sh("nav.industries")" @onclick="ToggleMobileIndustryMenu">
                         <span class="flex items-center gap-2">
                             @if (CurrentIndustryIcon.Length > 0)
                             {
@@ -822,7 +843,7 @@ else
                         <div class="flex flex-col border-l border-surface-container-high ml-2 pl-3">
                             @foreach (var industry in CurrentCountryIndustries)
                             {
-                                <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-slate-600 hover:text-black")" @onclick="CloseMobileMenu">
+                                <a href="@IndustryHref(industry.Slug)" class="flex items-center gap-2 py-1.5 text-sm no-underline @(industry.Slug == CurrentIndustrySlug ? "font-bold text-primary" : "text-ink-muted hover:text-tertiary")" @onclick="CloseMobileMenu">
                                     <span class="material-symbols-outlined text-base">@industry.Icon</span>
                                     @Ix(industry.LabelKey)
                                 </a>
@@ -833,18 +854,18 @@ else
             }
             else
             {
-                <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
+                <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Industries)" @onclick="CloseMobileMenu">@Sh("nav.industries")</a>
             }
             @foreach (var page in VisibleCompanySizePages)
             {
-                <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
+                <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
             }
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
             <div class="flex flex-col gap-1 pt-2 border-t border-surface-container-high">
-                <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight uppercase" aria-expanded="@(_mobileLanguageOpen ? "true" : "false")" aria-label="@Sh("nav.languages")" @onclick="ToggleMobileLanguageMenu">
+                <button type="button" class="w-full flex items-center justify-between text-left text-ink-muted text-sm font-medium tracking-tight uppercase" aria-expanded="@(_mobileLanguageOpen ? "true" : "false")" aria-label="@Sh("nav.languages")" @onclick="ToggleMobileLanguageMenu">
                     @CurrentCultureRecord.Code
                     <span class="material-symbols-outlined text-base">@(_mobileLanguageOpen ? "expand_less" : "expand_more")</span>
                 </button>
@@ -863,7 +884,7 @@ else
             @if (ShowCountryDropdown)
             {
                 <div class="flex flex-col gap-1">
-                    <button type="button" class="w-full flex items-center justify-between text-left text-slate-600 text-sm font-medium tracking-tight" aria-expanded="@(_mobileCountryOpen ? "true" : "false")" aria-label="@Sh("nav.countries")" @onclick="ToggleMobileCountryMenu">
+                    <button type="button" class="w-full flex items-center justify-between text-left text-ink-muted text-sm font-medium tracking-tight" aria-expanded="@(_mobileCountryOpen ? "true" : "false")" aria-label="@Sh("nav.countries")" @onclick="ToggleMobileCountryMenu">
                         <span class="flex items-center gap-2">
                             <img src="@FlagSrc(CurrentCountryCode)" alt="" class="w-4 h-auto rounded-[2px]" />
                             @CurrentCountryDisplayName
@@ -884,7 +905,7 @@ else
                     }
                 </div>
             }
-            <a class="text-slate-600 hover:text-black transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline inline-flex items-center gap-2" href="@ExternalLinks.GithubUrl" target="_blank" @onclick="CloseMobileMenu">
                 <span class="material-symbols-outlined text-base">code</span> @Sh("nav.github")
             </a>
             <button type="button" class="bg-primary text-on-primary px-6 py-3 rounded-xl font-semibold text-sm text-center" @onclick="OpenDemoModalFromMobileMenu" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")">

@@ -17,7 +17,7 @@ public class CountryIndexingPolicyTests
     private const string BaseUrl = "https://klacks.example";
     private const string LocationPattern = "<loc>([^<]+)</loc>";
     private const string ChinaCountryPagePattern =
-        "/land-cn(?:$|/(?!(?:impressum|datenschutz|lizenz|partner|vergleich|kleine-betriebe|ueber-uns|mittlere-betriebe|grosse-betriebe|angebot)$))";
+        "/land-cn(?:$|/(?!(?:impressum|datenschutz|lizenz|partner|vergleich|kleine-betriebe|ueber-uns|mittlere-betriebe|grosse-betriebe|angebot|technik)$))";
 
     [TestCase("land-cn")]
     [TestCase("land-cn-spitex")]

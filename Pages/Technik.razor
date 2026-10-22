@@ -1,0 +1,44 @@
+@page "/{country}/technik"
+@page "/{culture}/{country}/technik"
+@inject IPageContentProvider ContentProvider
+
+@* Technical facts page for developers (stack, versions, architecture, how it is enforced). Written in German and
+   English only (owner decision 2026-10-22): every other culture shows the English text marked lang="en" dir="ltr" and
+   is noindex (IndexTranslatedOnly). Served under every country with the same content (canonical: the culture's
+   default country). Culture is the culture URL segment (null for German), Country the country page key of the route. *@
+<PageTitle>@Tx("pageTitle")</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" IndexTranslatedOnly="true" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" />
+
+<div class="min-h-screen bg-surface text-on-surface">
+    <header class="pt-20 md:pt-32 pb-16 px-5 sm:px-8 max-w-4xl mx-auto" lang="@ContentCulture" dir="@ContentDirection">
+        <h1 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight text-primary mb-4">@Tx("hero.title")</h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-3">@Tx("hero.subtitle")</p>
+        <p class="text-xs text-ink-subtle mb-10">@Tx("asOf")</p>
+        <div class="legal-prose">@((MarkupString)Tx("contentHtml"))</div>
+    </header>
+</div>
+
+@code {
+    private const string PageKey = CountryPageLinks.TechSlug;
+    private const string FallbackCulture = "en";
+    private const string LeftToRight = "ltr";
+    private const string RightToLeft = "rtl";
+
+    [Parameter] public string? Culture { get; set; }
+
+    // Present so the route binds; the page content is company-wide and does not vary by country.
+    [Parameter] public string? Country { get; set; }
+
+    private SupportedCulture ResolvedCultureRecord => SupportedCultures.Resolve(Culture);
+
+    private string ResolvedCulture => ResolvedCultureRecord.Code;
+
+    private bool HasOwnText => ContentProvider.HasContentIn(ResolvedCulture, PageKey);
+
+    private string ContentCulture => HasOwnText ? ResolvedCulture : FallbackCulture;
+
+    private string ContentDirection => HasOwnText && ResolvedCultureRecord.IsRtl ? RightToLeft : LeftToRight;
+
+    private string Tx(string key)
+        => ContentProvider.FindText(ContentCulture, PageKey, key) ?? ContentProvider.GetText(ContentCulture, PageKey, key);
+}
