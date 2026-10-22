@@ -135,6 +135,8 @@ module.exports = {
     "./Localization/Content/**/*.json",
   ],
   darkMode: "class",
+  // The ":root.dark" variables are a base rule; Tailwind drops base rules whose class never appears in the content.
+  safelist: ["dark"],
   theme: {
     extend: {
       colors: tokens,

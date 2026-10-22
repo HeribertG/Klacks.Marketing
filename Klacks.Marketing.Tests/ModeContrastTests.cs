@@ -114,6 +114,13 @@ public class ModeContrastTests
         MarketingProjectPaths.ReadSource("wwwroot/css/site.css").ShouldContain("mode-switch-track");
     }
 
+    [Test]
+    public void Built_css_contains_the_dark_palette()
+    {
+        MarketingProjectPaths.ReadSource("tailwind.config.js").ShouldContain("safelist: [\"dark\"]");
+        MarketingProjectPaths.ReadSource("wwwroot/css/site.css").ShouldContain(":root.dark{");
+    }
+
     private static string Token(string name)
     {
         var match = Regex.Match(MarketingProjectPaths.ReadSource("tailwind.config.js"), string.Format(CultureInfo.InvariantCulture, TokenPatternFormat, Regex.Escape(name)));
