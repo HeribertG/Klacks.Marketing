@@ -78,7 +78,8 @@ public static class SitemapGenerator
     // hasContentIn(cultureCode, contentKey) tells whether a page has text written in
     // that culture; variants that would only show the default culture's text are
     // left out, matching the noindex/hreflang rule in SeoHead.
-    // simpleModeEnabled (SimpleMode:Enabled) lists the country roots ("/land-ch", "/fr/land-ch") for every culture
+    // Every country-scoped entry is limited to the languages spoken in the country (CountryLanguagePairs).
+    // simpleModeEnabled (SimpleMode:Enabled) lists the country roots ("/land-ch", "/fr/land-ch") for those cultures
     // with a simple page and its simple.json, since that page renders no land-xx.json text (matching
     // SimpleStartTemplate's SeoHead.TranslationContentKey). It also lists the expert start pages
     // ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page and own country text; their
@@ -107,12 +108,14 @@ public static class SitemapGenerator
             foreach (var countryPageKey in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
             {
                 var cultures = SupportedCultures.All
-                    .Where(culture => SiteModes.SimplePageCultures.Contains(culture.Code) && hasContentIn(culture.Code, countryPageKey))
+                    .Where(culture => SiteModes.SimplePageCultures.Contains(culture.Code)
+                        && CountryLanguagePairs.IsPair(culture.Code, countryPageKey)
+                        && hasContentIn(culture.Code, countryPageKey))
                     .ToList();
 
                 foreach (var culture in cultures)
                 {
-                    AppendUrl(sb, trimmedBase, culture, _ => SiteModes.ExpertRoutePath(countryPageKey), cultures);
+                    AppendUrl(sb, trimmedBase, culture, _ => SiteModes.ExpertRoutePath(countryPageKey), cultures, CountryLanguagePairs.PrimaryCultureFor(countryPageKey));
                 }
             }
         }
@@ -143,20 +146,20 @@ public static class SitemapGenerator
         return sb.ToString();
     }
 
-    // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex"). A country root served as the
-    // simple page is translated wherever the culture has its simple.json.
+    // Route keys use "/" ("land-ch/spitex"), content keys use "-" ("land-ch-spitex"). Only the languages spoken in the
+    // country count (CountryLanguagePairs), matching SeoHead; a country root served as the simple page is translated
+    // wherever such a culture has its simple.json.
     private static Func<string, bool> IsTranslatedFor(string routeKey, Func<string, string, bool> hasContentIn, bool simpleModeEnabled)
     {
         var contentKey = routeKey.Replace('/', '-');
+        var country = CountryIndustries.OwningCountry(contentKey);
+        Func<string, bool> hasText = CountryIndustries.AllCountries.Contains(routeKey)
+            ? cultureCode => SiteModes.HasSimplePage(cultureCode, simpleModeEnabled)
+                ? hasContentIn(cultureCode, SiteModes.SimpleContentKey)
+                : hasContentIn(cultureCode, contentKey)
+            : cultureCode => hasContentIn(cultureCode, contentKey);
 
-        if (!CountryIndustries.AllCountries.Contains(routeKey))
-        {
-            return cultureCode => hasContentIn(cultureCode, contentKey);
-        }
-
-        return cultureCode => SiteModes.HasSimplePage(cultureCode, simpleModeEnabled)
-            ? hasContentIn(cultureCode, SiteModes.SimpleContentKey)
-            : hasContentIn(cultureCode, contentKey);
+        return cultureCode => (country is null || CountryLanguagePairs.IsPair(cultureCode, country)) && hasText(cultureCode);
     }
 
     private static void AppendTranslatedUrls(StringBuilder sb, string baseUrl, string routeKey, Func<string, bool> isTranslated)
@@ -167,23 +170,28 @@ public static class SitemapGenerator
         }
 
         var cultures = SupportedCultures.All.Where(c => isTranslated(c.Code)).ToList();
+        var country = CountryIndustries.OwningCountry(routeKey.Replace('/', '-'));
+        var xDefaultCulture = country is null ? SupportedCultures.Default : CountryLanguagePairs.PrimaryCultureFor(country);
 
         foreach (var culture in cultures)
         {
-            AppendUrl(sb, baseUrl, culture, _ => routeKey, cultures);
+            AppendUrl(sb, baseUrl, culture, _ => routeKey, cultures, xDefaultCulture);
         }
     }
 
     // pageKeyFor resolves the page key per culture, since a page can live under a
     // different country depending on the language. alternates defaults to every
-    // culture.
+    // culture, xDefaultCulture to the default culture (a country page passes its primary culture).
     private static void AppendUrl(
         StringBuilder sb,
         string baseUrl,
         SupportedCulture culture,
         Func<SupportedCulture, string> pageKeyFor,
-        IReadOnlyList<SupportedCulture>? alternates = null)
+        IReadOnlyList<SupportedCulture>? alternates = null,
+        SupportedCulture? xDefaultCulture = null)
     {
+        var xDefault = xDefaultCulture ?? SupportedCultures.Default;
+
         sb.AppendLine("  <url>");
         sb.AppendLine($"    <loc>{BuildUrl(baseUrl, culture, pageKeyFor(culture))}</loc>");
 
@@ -192,7 +200,7 @@ public static class SitemapGenerator
             sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{altCulture.Code}\" href=\"{BuildUrl(baseUrl, altCulture, pageKeyFor(altCulture))}\" />");
         }
 
-        sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{DefaultHreflang}\" href=\"{BuildUrl(baseUrl, SupportedCultures.Default, pageKeyFor(SupportedCultures.Default))}\" />");
+        sb.AppendLine($"    <xhtml:link rel=\"alternate\" hreflang=\"{DefaultHreflang}\" href=\"{BuildUrl(baseUrl, xDefault, pageKeyFor(xDefault))}\" />");
         sb.AppendLine("  </url>");
     }
 

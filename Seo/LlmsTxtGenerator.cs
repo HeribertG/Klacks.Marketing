@@ -103,14 +103,13 @@ public static class LlmsTxtGenerator
         "Klacks is developed by Heribert Gasparoli in Liebefeld (Switzerland) and is open source under the GNU AGPL-3.0. AI helps with research, texts, translation and marketing drafts, and what an AI writes is labeled as such; the founder handles inquiries personally and decides prices, offers, contracts and invoices himself. The installation and the database run in your business, with the data stored in PostgreSQL, an open database; with standard tools you can reach all your data at any time, even without Klacks.";
 
     // English-language country landing pages (page key -> English country name).
-    // Only countries with their own English content are listed here; the site
+    // Only countries served in English (CountryLanguagePairs) are listed here; the site
     // serves ~30 country sites in total (CountryIndustries.AllCountries).
     private static readonly (string PageKey, string Name)[] EnglishMarkets =
     {
         ("land-ie", "Ireland"),
         ("land-ae", "United Arab Emirates"),
         ("land-sa", "Saudi Arabia"),
-        ("land-il", "Israel"),
     };
 
     private static SupportedCulture English =>

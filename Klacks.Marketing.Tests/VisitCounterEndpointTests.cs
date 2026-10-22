@@ -53,11 +53,11 @@ public class VisitCounterEndpointTests
         await using var factory = CreateFactory();
         using var client = CreateClient(factory);
 
-        await GetHtmlAsync(client, "/en/land-ch/spitex?utm_source=chatgpt.com", ChromeUserAgent);
+        await GetHtmlAsync(client, "/fr/land-ch/spitex?utm_source=chatgpt.com", ChromeUserAgent);
         await GetHtmlAsync(client, "/land-ch", GptBotUserAgent, referer: "https://www.google.com/");
 
         var rows = Snapshot(factory);
-        rows.ShouldContain(Row(VisitEvent.PageRequest, PageTypes.Industry, "ch", "en", TrafficSources.ChatGpt, VisitorClass.Human, 1));
+        rows.ShouldContain(Row(VisitEvent.PageRequest, PageTypes.Industry, "ch", "fr", TrafficSources.ChatGpt, VisitorClass.Human, 1));
         rows.ShouldContain(Row(VisitEvent.PageRequest, PageTypes.Start, "ch", "de", TrafficSources.Google, VisitorClass.Bot, 1));
         rows.Count.ShouldBe(2);
     }
@@ -242,7 +242,7 @@ public class VisitCounterEndpointTests
         var factory = CreateFactory();
         using (var client = CreateClient(factory))
         {
-            using var request = new HttpRequestMessage(HttpMethod.Get, "/en/land-ch/spitex?utm_source=perplexity&" + SecretQuery);
+            using var request = new HttpRequestMessage(HttpMethod.Get, "/fr/land-ch/spitex?utm_source=perplexity&" + SecretQuery);
             request.Headers.Add("Accept", HtmlAccept);
             request.Headers.Add("User-Agent", ProbeUserAgent);
             request.Headers.Add("X-Forwarded-For", ClientIp);

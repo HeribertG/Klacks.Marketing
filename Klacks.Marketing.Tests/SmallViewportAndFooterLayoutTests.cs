@@ -31,9 +31,9 @@ public class SmallViewportAndFooterLayoutTests
     private const char ClassSeparator = ' ';
 
     [TestCase("/land-ch")]
-    [TestCase("/da/land-ch")]
-    [TestCase("/fi/land-ch")]
-    [TestCase("/nb/land-ch")]
+    [TestCase("/da/land-dk")]
+    [TestCase("/fi/land-fi")]
+    [TestCase("/nb/land-no")]
     public async Task Simple_hero_title_uses_the_fluid_size_and_keeps_manual_hyphenation(string path)
     {
         var html = await GetHtmlAsync(path);
@@ -56,8 +56,8 @@ public class SmallViewportAndFooterLayoutTests
     }
 
     [TestCase("/land-ch")]
-    [TestCase("/ar/land-ch")]
-    [TestCase("/he/land-ch")]
+    [TestCase("/ar/land-sa")]
+    [TestCase("/he/land-il")]
     public async Task Footer_copyright_is_an_ltr_island(string path)
     {
         var html = await GetHtmlAsync(path);

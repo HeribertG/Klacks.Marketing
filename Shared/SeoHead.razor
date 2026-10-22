@@ -14,7 +14,7 @@
         {
             <link rel="alternate" hreflang="@culture.Code" href="@AbsoluteUrl(culture)" />
         }
-        <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(SupportedCultures.Default)" />
+        <link rel="alternate" hreflang="x-default" href="@AbsoluteUrl(XDefaultCulture)" />
     }
 
     @if (!string.IsNullOrEmpty(Description))
@@ -103,8 +103,17 @@
 
     private bool IsIndexable => IsTranslated(CultureRecord) && !IsNoindexCountry;
 
+    // The country whose languages limit the hreflang set and the indexing (CountryLanguagePairs): "/ja/land-ch" is not
+    // a page, "/land-jp" (German) is a noindex authoring preview. Null for the pages that are the same for every
+    // country, whose URLs always use a culture's home country.
+    private string? PairCountry => SameForEveryCountry ? null : CountryIndustries.OwningCountry(PageKey);
+
+    private SupportedCulture XDefaultCulture
+        => PairCountry is null ? SupportedCultures.Default : CountryLanguagePairs.PrimaryCultureFor(PairCountry);
+
     private bool IsTranslated(SupportedCulture culture)
-        => (HreflangCultures is null || HreflangCultures.Contains(culture.Code, StringComparer.OrdinalIgnoreCase))
+        => (PairCountry is null || CountryLanguagePairs.IsPair(culture.Code, PairCountry))
+            && (HreflangCultures is null || HreflangCultures.Contains(culture.Code, StringComparer.OrdinalIgnoreCase))
             && (!IndexTranslatedOnly || ContentProvider.HasContentIn(culture.Code, TranslationContentKey ?? PageKey));
 
     private string BaseUrl => (Configuration["Site:BaseUrl"] ?? string.Empty).TrimEnd('/');

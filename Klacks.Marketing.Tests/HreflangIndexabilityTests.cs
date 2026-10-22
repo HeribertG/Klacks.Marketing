@@ -34,7 +34,7 @@ public class HreflangIndexabilityTests
 
     [TestCase("/zh-cn/land-cn")]
     [TestCase("/zh-cn/land-cn/installation")]
-    [TestCase("/en/land-cn")]
+    [TestCase("/land-cn")]
     public async Task Noindex_page_has_no_hreflang_alternates(string path)
     {
         var html = await GetHtmlAsync(path);

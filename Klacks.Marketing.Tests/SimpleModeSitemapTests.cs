@@ -10,9 +10,9 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// With the feature on, the sitemap lists both the simple pages ("/land-ch", "/ja/land-ch", with their hreflang cluster,
-/// in every culture with its simple.json) and the expert start pages ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page (all 25
-/// supported cultures, each only where it has its own country text); the alternates of an expert start page are limited
+/// With the feature on, the sitemap lists both the simple pages ("/land-ch", "/ja/land-jp", with their hreflang cluster,
+/// only in the languages spoken in the country, CountryLanguagePairs) and the expert start pages ("/land-ch/experten", "/fr/land-ch/experten") of the cultures with a simple page that
+/// are spoken in the country, each only where it has its own country text; the alternates of an expert start page are limited
 /// to those cultures, so no entry points at an expert route that answers 404. China stays out; with the feature off there is no expert entry.
 /// </summary>
 [TestFixture]
@@ -37,7 +37,9 @@ public class SimpleModeSitemapTests
         xml.ShouldContain($"<loc>{BaseUrl}/land-ch</loc>");
         xml.ShouldNotContain("/land-cn/experten");
         var blocks = Regex.Matches(xml, ExpertBlockPattern, RegexOptions.Singleline);
-        blocks.Count.ShouldBe((CountryIndustries.AllCountries.Count - 1) * SiteModes.SimplePageCultures.Count);
+        var pairCount = CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key))
+            .Sum(country => SupportedCultures.All.Count(culture => CountryLanguagePairs.IsPair(culture.Code, country)));
+        blocks.Count.ShouldBe(pairCount);
     }
 
     [Test]
@@ -74,11 +76,11 @@ public class SimpleModeSitemapTests
         foreach (var country in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
         {
             var expected = SupportedCultures.All
-                .Where(culture => HasCountryTextOnDisk(culture.Code, country))
+                .Where(culture => CountryLanguagePairs.IsPair(culture.Code, country) && HasCountryTextOnDisk(culture.Code, country))
                 .Select(culture => ExpertLoc(culture, country))
                 .ToList();
 
-            expected.ShouldContain(ExpertLoc(SupportedCultures.Default, country), country);
+            expected.ShouldContain(ExpertLoc(CountryLanguagePairs.PrimaryCultureFor(country), country), country);
             expertLocs.Where(loc => loc.EndsWith($"/{country}/{SiteModes.ExpertSlug}", StringComparison.Ordinal))
                 .OrderBy(loc => loc, StringComparer.Ordinal)
                 .ShouldBe(expected.OrderBy(loc => loc, StringComparer.Ordinal), country);
@@ -88,18 +90,24 @@ public class SimpleModeSitemapTests
     }
 
     [Test]
-    public void Enabled_sitemap_lists_the_simple_country_roots_in_every_culture_with_its_simple_text()
+    public void Enabled_sitemap_lists_each_country_root_only_in_the_languages_spoken_there()
     {
         var xml = SitemapGenerator.Build(BaseUrl, HasContentOnDisk, simpleModeEnabled: true);
 
-        foreach (var culture in SupportedCultures.All)
+        foreach (var country in CountryIndustries.AllCountries.Where(key => !CountryIndexingPolicy.IsNoindex(key)))
         {
-            var loc = SitemapGenerator.BuildUrl(BaseUrl, culture, SwissCountry);
-            Regex.Matches(xml, $"<loc>{Regex.Escape(loc)}</loc>").Count.ShouldBe(1, loc);
-            Regex.Matches(xml, $"hreflang=\"{Regex.Escape(culture.Code)}\" href=\"{Regex.Escape(loc)}\"").Count.ShouldBe(SupportedCultures.All.Count, loc);
-        }
+            var pairs = SupportedCultures.All.Where(culture => CountryLanguagePairs.IsPair(culture.Code, country)).ToList();
+            pairs.ShouldNotBeEmpty(country);
 
-        xml.ShouldNotContain($"{BaseUrl}/ja/land-cn</loc>");
+            foreach (var culture in SupportedCultures.All)
+            {
+                var loc = SitemapGenerator.BuildUrl(BaseUrl, culture, country);
+                var expected = pairs.Contains(culture);
+                xml.Contains($"<loc>{loc}</loc>").ShouldBe(expected, loc);
+                Regex.Matches(xml, $"hreflang=\"{Regex.Escape(culture.Code)}\" href=\"{Regex.Escape(loc)}\"").Count
+                    .ShouldBe(expected ? pairs.Count : 0, loc);
+            }
+        }
     }
 
     [Test]

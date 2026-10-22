@@ -50,21 +50,21 @@ public class ExpertStartRouteTests
         html.ShouldNotContain(NoindexMarker);
     }
 
-    [TestCase("/land-ch/experten", "de,fr,it")]
-    [TestCase("/it/land-ch/experten", "de,fr,it")]
-    [TestCase("/en/land-gb/experten", "de,en")]
-    [TestCase("/land-jp/experten", "de,ja")]
-    [TestCase("/ja/land-jp/experten", "de,ja")]
-    [TestCase("/land-ae/experten", "de,en,ar")]
-    [TestCase("/nl/land-be/experten", "de,fr,nl")]
-    [TestCase("/zh-tw/land-tw/experten", "de,zh-TW")]
-    public async Task Hreflang_set_lists_only_cultures_with_own_country_text(string path, string expectedCultures)
+    [TestCase("/land-ch/experten", "de,fr,it", "/land-ch/experten")]
+    [TestCase("/it/land-ch/experten", "de,fr,it", "/land-ch/experten")]
+    [TestCase("/en/land-gb/experten", "en", "/en/land-gb/experten")]
+    [TestCase("/ja/land-jp/experten", "ja", "/ja/land-jp/experten")]
+    [TestCase("/ar/land-ae/experten", "en,ar", "/en/land-ae/experten")]
+    [TestCase("/nl/land-be/experten", "fr,nl", "/fr/land-be/experten")]
+    [TestCase("/zh-tw/land-tw/experten", "zh-TW", "/zh-tw/land-tw/experten")]
+    [TestCase("/fr/land-ch/experten", "de,fr,it", "/land-ch/experten")]
+    public async Task Hreflang_set_lists_only_the_languages_spoken_in_the_country(string path, string expectedCultures, string xDefaultPath)
     {
         var (_, html) = await GetAsync(enabled: true, path);
 
         Alternates(html).Where(alternate => alternate.Culture != "x-default").Select(alternate => alternate.Culture)
             .ShouldBe(expectedCultures.Split(','));
-        html.ShouldContain($"hreflang=\"x-default\" href=\"{SiteBaseUrl}/{CountryOf(path)}/{SiteModes.ExpertSlug}\"");
+        html.ShouldContain($"hreflang=\"x-default\" href=\"{SiteBaseUrl}{xDefaultPath}\"");
     }
 
     [TestCase("/land-ch/experten")]
@@ -91,9 +91,9 @@ public class ExpertStartRouteTests
         }
     }
 
-    [TestCase("/en/land-ch/experten")]
-    [TestCase("/it/land-de/experten")]
-    public async Task Expert_page_without_own_country_text_is_noindex_without_hreflang(string path)
+    [TestCase("/land-jp/experten")]
+    [TestCase("/land-ae/experten")]
+    public async Task German_authoring_preview_of_a_foreign_country_is_noindex_without_hreflang(string path)
     {
         var (status, html) = await GetAsync(enabled: true, path);
 

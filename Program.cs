@@ -100,6 +100,14 @@ app.Use(async (context, next) =>
             context.Response.StatusCode = StatusCodes.Status404NotFound;
             return;
         }
+
+        // A country is served only in the languages spoken there (CountryLanguagePairs); "/ja/land-ch" moves to
+        // the culture's home country ("/ja/land-jp") like the language switch does.
+        if (CountryLanguagePairs.RedirectTarget(path) is { } pairTarget)
+        {
+            context.Response.Redirect(pairTarget + context.Request.QueryString, permanent: true);
+            return;
+        }
     }
 
     await next();

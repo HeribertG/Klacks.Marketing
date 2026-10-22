@@ -14,9 +14,9 @@ using Shouldly;
 /// <summary>
 /// Routing of the start pages through the real app: with the feature on, the country root of every supported culture
 /// ("/land-ch", "/en/land-gb", "/fr/land-ch", "/es/land-es", "/zh-tw/land-tw", ...) is the simple page of its culture
-/// (localized title with the country name in the page language, canonical on itself, indexable in every culture with
-/// its simple.json and a land-xx hreflang cluster over all those cultures, since the page renders no land-xx.json
-/// text); the expert start page stays indexable only where the culture has own country text; with the feature off,
+/// (localized title with the country name in the page language, canonical on itself, indexable with a land-xx hreflang
+/// cluster over the languages spoken in the country, CountryLanguagePairs); a culture not spoken in the country moves
+/// to its home country (301), the German variant of a foreign country is a noindex preview; with the feature off,
 /// every country root is today's page.
 /// </summary>
 [TestFixture]
@@ -28,6 +28,8 @@ public class SimpleStartPageTests
     private const string NoindexMarker = "name=\"robots\" content=\"noindex";
     private const string SiteBaseUrl = "https://klacks-software.ch";
     private const string H1Pattern = @"<h1\b[^>]*>(.*?)</h1>";
+    private const string AlternatePattern = @"<link rel=""alternate"" hreflang=""([^""]+)""";
+    private const string XDefault = "x-default";
     private const string BodyClassPattern = @"<body class=""(mode-simple|mode-expert)\b";
 
     [Test]
@@ -61,7 +63,7 @@ public class SimpleStartPageTests
     }
 
     [TestCase("/fr/land-ch", "de,fr,it")]
-    [TestCase("/en/land-gb", "de,en")]
+    [TestCase("/en/land-gb", "en")]
     public async Task Simple_page_keeps_the_country_hreflang_cluster(string path, string cultures)
     {
         var html = await GetHtmlAsync(enabled: true, path);
@@ -72,25 +74,24 @@ public class SimpleStartPageTests
         }
     }
 
-    [TestCase("/land-ch")]
-    [TestCase("/en/land-ch")]
-    [TestCase("/ja/land-ch")]
-    [TestCase("/it/land-de")]
-    public async Task Simple_page_is_indexable_with_the_hreflang_cluster_of_every_culture(string path)
+    [TestCase("/land-ch", "de,fr,it", "/land-ch")]
+    [TestCase("/it/land-ch", "de,fr,it", "/land-ch")]
+    [TestCase("/ja/land-jp", "ja", "/ja/land-jp")]
+    [TestCase("/nl/land-be", "fr,nl", "/fr/land-be")]
+    [TestCase("/he/land-il", "ar,he", "/he/land-il")]
+    public async Task Simple_page_lists_only_the_languages_spoken_in_the_country(string path, string cultures, string xDefaultPath)
     {
         var html = await GetHtmlAsync(enabled: true, path);
-        var country = path.Split('/', StringSplitOptions.RemoveEmptyEntries)[^1];
+        var alternates = Regex.Matches(html, AlternatePattern).Select(match => match.Groups[1].Value).ToList();
 
         html.ShouldNotContain(NoindexMarker);
-        foreach (var culture in SupportedCultures.All)
-        {
-            html.ShouldContain($"hreflang=\"{culture.Code}\" href=\"{SeoUrls.Absolute(SiteBaseUrl, culture, country)}\"", Case.Sensitive, path);
-        }
+        alternates.Where(culture => culture != XDefault).ShouldBe(cultures.Split(','), path);
+        html.ShouldContain($"hreflang=\"{XDefault}\" href=\"{SiteBaseUrl}{xDefaultPath}\"", Case.Sensitive, path);
     }
 
-    [TestCase("/en/land-ch/experten")]
-    [TestCase("/ja/land-ch/experten")]
-    public async Task Expert_start_page_without_own_country_text_of_the_culture_stays_noindex(string path)
+    [TestCase("/land-jp")]
+    [TestCase("/land-fr")]
+    public async Task German_authoring_preview_of_a_foreign_country_is_noindex_without_hreflang(string path)
     {
         var html = await GetHtmlAsync(enabled: true, path);
 
