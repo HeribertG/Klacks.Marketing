@@ -124,4 +124,10 @@ jobs:
             exit 1
           fi
 
+          # Every swap leaves the former "previous" image untagged (~3 GB with the videos); several deploys a day
+          # filled the disk before the nightly cleanup ran (2026-10-22). Only untagged images and stale build cache go.
+          echo "Removing untagged images and old build cache..."
+          docker image prune -f || true
+          docker builder prune -f --filter until=24h || true
+
           echo "Klacks.Marketing deployment completed!"
