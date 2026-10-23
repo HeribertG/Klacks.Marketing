@@ -1,3 +1,5 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 namespace Klacks.Marketing.Localization;
 
 /// <summary>
@@ -12,7 +14,7 @@ public static class ExternalLinks
     public const string OnPremBundleFileName = "klacks-onprem.zip";
     public const string OnPremBundleUrl = "https://github.com/HeribertG/Klacks.Api/releases/latest/download/" + OnPremBundleFileName;
     public const string NativeWindowsPackageReleaseTag = "office-pc";
-    public const string NativeWindowsPackageFileName = "klacks-office-pc-win-x64.zip";
+    public const string NativeWindowsPackageFileName = "Klacks-Setup-win-x64.exe";
     public const string NativeWindowsPackageUrl = GithubUrl + "/releases/download/" + NativeWindowsPackageReleaseTag + "/" + NativeWindowsPackageFileName;
     public const string DemoLoginEmail = "admin@test.com";
     public const string DemoLoginPassword = "P@ssw0rt1";

@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Sur le PC du bureau (sans Docker)",
-      "text": "Pour les entreprises disposant d'un seul PC de bureau : un paquet ZIP pour Windows &mdash; sans Docker et sans serveur à vous. La base de données, Klacks et le service de mise à jour fonctionnent comme services Windows en arrière-plan, les mises à jour arrivent automatiquement, et vos données restent sur ce PC.",
+      "text": "Pour les entreprises disposant d'un seul PC de bureau : un programme d'installation pour Windows &mdash; sans Docker et sans serveur à vous. La base de données, Klacks et le service de mise à jour fonctionnent comme services Windows en arrière-plan, les mises à jour arrivent automatiquement, et vos données restent sur ce PC.",
       "requirementsTitle": "Prérequis",
       "requirements": [
         "Windows 11 (64 bits)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "En trois étapes",
       "steps": [
-        { "title": "Télécharger et extraire le paquet", "text": "Téléchargez le fichier ZIP et extrayez-le entièrement, par exemple sur le bureau." },
-        { "title": "Lancer Installieren.cmd", "text": "Double-cliquez sur &laquo; Installieren.cmd &raquo; et acceptez la demande de droits d'administrateur. Si Windows SmartScreen affiche un avertissement, ouvrez les informations complémentaires et choisissez d'exécuter quand même &mdash; le paquet n'est pas signé numériquement. Choisissez ensuite votre pays (jours fériés, fuseau horaire, règles de temps de travail). L'installation dure quelques minutes." },
-        { "title": "Ouvrir dans le navigateur", "text": "Ouvrez http://localhost:5180 dans votre navigateur, connectez-vous avec le compte initial indiqué dans les instructions jointes et créez votre propre compte administrateur." }
+        { "title": "Télécharger le programme d'installation", "text": "Cliquez sur &laquo; Télécharger pour Windows &raquo;. Le fichier &laquo; Klacks-Setup-win-x64.exe &raquo; arrive en général dans le dossier &laquo; Téléchargements &raquo;." },
+        { "title": "Double-cliquer et choisir le pays", "text": "Double-cliquez sur le fichier. Si Windows SmartScreen affiche un avertissement, ouvrez les informations complémentaires et choisissez d'exécuter quand même &mdash; le programme d'installation n'est pas encore signé numériquement. Acceptez ensuite la demande de droits d'administrateur. Dans l'assistant, choisissez votre pays (jours fériés, fuseau horaire, règles de temps de travail) et, si vous le souhaitez, un raccourci sur le bureau. L'assistant affiche la progression ; l'installation dure quelques minutes." },
+        { "title": "Ouvrir Klacks et se connecter", "text": "À la fin, choisissez d'ouvrir Klacks dans le navigateur. Par la suite, vous trouverez Klacks dans le menu Démarrer sous &laquo; Klacks &raquo; (ou à l'adresse http://localhost:5180). Connectez-vous avec le compte initial que l'assistant affiche à la fin et créez votre propre compte administrateur. Si Klacks est encore en train de démarrer, patientez quelques minutes &mdash; le premier démarrage prend un peu plus de temps." }
       ],
       "downloadLabel": "Télécharger pour Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Pour Mac : bientôt disponible.",
     "architectureNote": "Pour Windows 64 bits (x64). Sur les appareils Windows 11 équipés d'un processeur ARM (p. ex. Snapdragon X), Klacks fonctionne par émulation ; Windows 10 sur ARM n'est pas pris en charge.",
     "linuxNote": "Linux ? Voir plus bas : <a href=\"{0}\">Klacks sur un PC Linux</a>.",
+    "uninstallNote": "<strong>Désinstaller :</strong> Klacks se supprime comme n'importe quel programme Windows &mdash; ouvrez Paramètres › Applications, recherchez l'entrée &laquo; Klacks &raquo; et désinstallez-la. Le programme de désinstallation demande si la base de données, les paramètres et les sauvegardes doivent aussi être supprimés. Si vous répondez non, vos données restent dans C:\\ProgramData\\Klacks et une réinstallation ultérieure les reprend.",
     "heroSubtitle": "Trois chemins, un même résultat : le paquet Windows pour le PC de votre bureau, l'installateur guidé pour votre serveur, ou le stack Docker Compose pour votre propre configuration &mdash; sans inscription, sans frais de licence. Sur le PC de bureau, vous choisissez votre pays pendant l'installation ; pour le serveur et Docker Compose, le paquet pays apporte d'emblée les jours fériés, les règles de temps de travail et les préréglages sectoriels de votre pays (majorations là où elles sont définies pour le pays)."
   },
   "linux": {

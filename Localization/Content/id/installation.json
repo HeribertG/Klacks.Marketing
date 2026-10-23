@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Di PC kantor (tanpa Docker)",
-      "text": "Untuk usaha dengan satu PC kantor: paket ZIP untuk Windows &mdash; tanpa Docker dan tanpa server sendiri. Database, Klacks, dan layanan pembaruan berjalan sebagai layanan latar belakang Windows, pembaruan datang secara otomatis, dan data Anda tetap berada di PC ini.",
+      "text": "Untuk usaha dengan satu PC kantor: file instalasi untuk Windows &mdash; tanpa Docker dan tanpa server sendiri. Database, Klacks, dan layanan pembaruan berjalan sebagai layanan latar belakang Windows, pembaruan datang secara otomatis, dan data Anda tetap berada di PC ini.",
       "requirementsTitle": "Persyaratan",
       "requirements": [
         "Windows 11 (64-bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "Tiga langkah",
       "steps": [
-        { "title": "Unduh dan ekstrak paket", "text": "Unduh file ZIP dan ekstrak seluruhnya, misalnya ke desktop." },
-        { "title": "Jalankan Installieren.cmd", "text": "Klik dua kali &ldquo;Installieren.cmd&rdquo; dan setujui permintaan hak administrator. Jika Windows SmartScreen menampilkan peringatan, buka info selengkapnya lalu pilih untuk tetap menjalankannya &mdash; paket ini tidak memiliki tanda tangan kode. Setelah itu, pilih negara Anda (hari libur, zona waktu, aturan jam kerja). Instalasi memerlukan beberapa menit." },
-        { "title": "Buka di browser", "text": "Buka http://localhost:5180 di browser Anda, masuk dengan akun awal yang tercantum dalam petunjuk terlampir, dan buat akun administrator Anda sendiri." }
+        { "title": "Unduh file instalasi", "text": "Klik &ldquo;Unduh untuk Windows&rdquo;. File &ldquo;Klacks-Setup-win-x64.exe&rdquo; biasanya tersimpan di folder &ldquo;Unduhan&rdquo;." },
+        { "title": "Klik dua kali dan pilih negara", "text": "Klik dua kali file tersebut. Jika Windows SmartScreen menampilkan peringatan, buka info selengkapnya lalu pilih untuk tetap menjalankannya &mdash; file instalasi ini belum memiliki tanda tangan digital. Setelah itu, setujui permintaan hak administrator. Di wizard, pilih negara Anda (hari libur, zona waktu, aturan jam kerja) dan, jika diinginkan, pintasan di desktop. Wizard menampilkan kemajuannya; instalasi memerlukan beberapa menit." },
+        { "title": "Buka Klacks dan masuk", "text": "Di akhir, pilih untuk membuka Klacks di browser. Selanjutnya Anda dapat menemukan Klacks di menu Start dengan nama &ldquo;Klacks&rdquo; (atau di http://localhost:5180). Masuk dengan akun awal yang ditampilkan wizard di akhir, lalu buat akun administrator Anda sendiri. Jika Klacks masih dalam proses memulai, tunggu beberapa menit &mdash; start pertama memerlukan waktu sedikit lebih lama." }
       ],
       "downloadLabel": "Unduh untuk Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Untuk Mac: segera hadir.",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada perangkat Windows 11 dengan prosesor ARM (misalnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak didukung.",
     "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks di PC Linux</a>.",
+    "uninstallNote": "<strong>Mencopot pemasangan:</strong> Klacks dapat dihapus seperti program Windows lainnya &mdash; buka Pengaturan › Aplikasi, cari entri &ldquo;Klacks&rdquo;, lalu copot pemasangannya. Program pencopot akan menanyakan apakah database, pengaturan, dan cadangan juga ingin dihapus. Jika Anda menjawab tidak, data Anda tetap tersimpan di C:\\ProgramData\\Klacks dan instalasi ulang berikutnya akan memakainya kembali.",
     "heroSubtitle": "Tiga jalur, satu hasil: paket Windows untuk PC kantor Anda, installer terpandu untuk server Anda, atau stack Docker Compose untuk pengaturan Anda sendiri &mdash; tanpa registrasi, tanpa biaya lisensi. Di PC kantor, Anda memilih negara saat instalasi; untuk server dan Docker Compose, paket negara sudah menyertakan hari libur nasional, aturan jam kerja, dan prasetel industri negara Anda (Tambahan Waktu, sejauh didefinisikan untuk negara tersebut)."
   },
   "linux": {

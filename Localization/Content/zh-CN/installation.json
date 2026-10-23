@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "在办公电脑上（无需 Docker）",
-      "text": "适用于只有一台办公电脑的企业：适用于 Windows 的 ZIP 软件包 &mdash; 无需 Docker，也无需自有服务器。数据库、Klacks 和更新服务作为 Windows 后台服务运行，更新会自动安装，您的数据保留在这台电脑上。",
+      "text": "适用于只有一台办公电脑的企业：适用于 Windows 的安装程序 &mdash; 无需 Docker，也无需自有服务器。数据库、Klacks 和更新服务作为 Windows 后台服务运行，更新会自动安装，您的数据保留在这台电脑上。",
       "requirementsTitle": "前提条件",
       "requirements": [
         "Windows 11（64 位）",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "只需三步",
       "steps": [
-        { "title": "下载并解压软件包", "text": "下载 ZIP 文件并完整解压，例如解压到桌面。" },
-        { "title": "运行 Installieren.cmd", "text": "双击「Installieren.cmd」，并确认管理员权限请求。如果 Windows SmartScreen 显示警告，请打开更多信息并选择仍然运行 &mdash; 该软件包没有代码签名。随后选择您所在的国家（节假日、时区、工时规则）。安装需要几分钟。" },
-        { "title": "在浏览器中打开", "text": "在浏览器中打开 http://localhost:5180，使用随附说明中的初始账户登录，并创建您自己的管理员账户。" }
+        { "title": "下载安装程序", "text": "点击「下载 Windows 版」。文件「Klacks-Setup-win-x64.exe」通常会保存在「下载」文件夹中。" },
+        { "title": "双击并选择国家", "text": "双击该文件。如果 Windows SmartScreen 显示警告，请打开更多信息并选择仍然运行 &mdash; 该安装程序暂时还没有数字签名。随后确认管理员权限请求。在安装向导中选择您所在的国家（节假日、时区、工时规则），如有需要还可以创建桌面快捷方式。向导会显示安装进度，安装需要几分钟。" },
+        { "title": "打开 Klacks 并登录", "text": "最后选择在浏览器中打开 Klacks。之后可以在开始菜单中通过「Klacks」打开（或访问 http://localhost:5180）。使用向导最后显示的初始账户登录，并创建您自己的管理员账户。如果 Klacks 仍在启动，请等待几分钟 &mdash; 首次启动需要稍长一些时间。" }
       ],
       "downloadLabel": "下载 Windows 版"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Mac 版：即将推出。",
     "architectureNote": "适用于 64 位 Windows（x64）。在搭载 ARM 处理器的 Windows 11 设备（例如 Snapdragon X）上，Klacks 通过仿真运行；不支持 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？请见下文：<a href=\"{0}\">在 Linux 电脑上使用 Klacks</a>。",
+    "uninstallNote": "<strong>卸载：</strong>Klacks 可以像其他 Windows 程序一样卸载 &mdash; 打开「设置 › 应用」，找到「Klacks」条目并将其卸载。卸载程序会询问是否同时删除数据库、设置和备份。如果选择「否」，您的数据会保留在 C:\\ProgramData\\Klacks 中，以后重新安装时会继续使用。",
     "heroSubtitle": "三条路径，同一结果：适用于办公电脑的 Windows 软件包、适用于您服务器的引导式安装程序，或适用于自有环境的 Docker Compose 堆栈 &mdash; 无需注册，没有许可费用。使用办公电脑时，您在安装过程中选择国家；服务器和 Docker Compose 的国家套件随附您所在国家的法定节假日、工时规则和行业预设（工时加成以该国家已定义的为准）。"
   },
   "linux": {

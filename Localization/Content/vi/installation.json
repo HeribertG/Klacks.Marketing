@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Trên máy tính văn phòng (không cần Docker)",
-      "text": "Dành cho doanh nghiệp chỉ có một máy tính văn phòng: một gói ZIP cho Windows &mdash; không cần Docker và không cần máy chủ riêng. Cơ sở dữ liệu, Klacks và dịch vụ cập nhật chạy dưới dạng dịch vụ nền của Windows, bản cập nhật được cài tự động, và dữ liệu của bạn được lưu trên chính máy tính này.",
+      "text": "Dành cho doanh nghiệp chỉ có một máy tính văn phòng: một tệp cài đặt cho Windows &mdash; không cần Docker và không cần máy chủ riêng. Cơ sở dữ liệu, Klacks và dịch vụ cập nhật chạy dưới dạng dịch vụ nền của Windows, bản cập nhật được cài tự động, và dữ liệu của bạn được lưu trên chính máy tính này.",
       "requirementsTitle": "Yêu cầu",
       "requirements": [
         "Windows 11 (64-bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "Chỉ với ba bước",
       "steps": [
-        { "title": "Tải và giải nén gói", "text": "Tải tệp ZIP về và giải nén toàn bộ, ví dụ ra màn hình nền." },
-        { "title": "Chạy Installieren.cmd", "text": "Nhấp đúp vào “Installieren.cmd” và xác nhận yêu cầu quyền quản trị viên. Nếu Windows SmartScreen hiển thị cảnh báo, hãy mở phần thông tin thêm và chọn vẫn chạy &mdash; gói này không có chữ ký mã. Sau đó chọn quốc gia của bạn (ngày lễ, múi giờ, quy định thời giờ làm việc). Quá trình cài đặt mất vài phút." },
-        { "title": "Mở trong trình duyệt", "text": "Mở http://localhost:5180 trong trình duyệt, đăng nhập bằng tài khoản ban đầu ghi trong hướng dẫn kèm theo và tạo tài khoản quản trị viên của riêng bạn." }
+        { "title": "Tải tệp cài đặt", "text": "Nhấp vào “Tải cho Windows”. Tệp “Klacks-Setup-win-x64.exe” thường được lưu trong thư mục “Tải xuống”." },
+        { "title": "Nhấp đúp và chọn quốc gia", "text": "Nhấp đúp vào tệp. Nếu Windows SmartScreen hiển thị cảnh báo, hãy mở phần thông tin thêm và chọn vẫn chạy &mdash; tệp cài đặt này chưa có chữ ký số. Sau đó xác nhận yêu cầu quyền quản trị viên. Trong trình hướng dẫn, chọn quốc gia của bạn (ngày lễ, múi giờ, quy định thời giờ làm việc) và nếu muốn, tạo lối tắt trên màn hình nền. Trình hướng dẫn hiển thị tiến trình; quá trình cài đặt mất vài phút." },
+        { "title": "Mở Klacks và đăng nhập", "text": "Ở bước cuối, chọn mở Klacks trong trình duyệt. Sau này bạn có thể tìm Klacks trong menu Start với tên “Klacks” (hoặc tại http://localhost:5180). Đăng nhập bằng tài khoản ban đầu mà trình hướng dẫn hiển thị ở cuối và tạo tài khoản quản trị viên của riêng bạn. Nếu Klacks vẫn đang khởi động, hãy chờ vài phút &mdash; lần khởi động đầu tiên mất nhiều thời gian hơn một chút." }
       ],
       "downloadLabel": "Tải cho Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Dành cho Mac: sắp ra mắt.",
     "architectureNote": "Dành cho Windows 64-bit (x64). Trên các thiết bị Windows 11 dùng bộ xử lý ARM (ví dụ Snapdragon X), Klacks chạy thông qua giả lập; Windows 10 trên ARM không được hỗ trợ.",
     "linuxNote": "Dùng Linux? Xem bên dưới: <a href=\"{0}\">Klacks trên máy tính Linux</a>.",
+    "uninstallNote": "<strong>Gỡ cài đặt:</strong> Bạn có thể gỡ Klacks như mọi chương trình Windows khác &mdash; mở Cài đặt › Ứng dụng, tìm mục “Klacks” và gỡ cài đặt. Trình gỡ cài đặt sẽ hỏi có xóa luôn cơ sở dữ liệu, cài đặt và bản sao lưu hay không. Nếu bạn trả lời không, dữ liệu của bạn vẫn nằm trong C:\\ProgramData\\Klacks và lần cài đặt lại sau này sẽ dùng lại chúng.",
     "heroSubtitle": "Ba con đường, một kết quả: gói Windows cho máy tính văn phòng của bạn, trình cài đặt có hướng dẫn cho máy chủ của bạn, hoặc stack Docker Compose cho thiết lập riêng của bạn &mdash; không cần đăng ký, không phí bản quyền. Trên máy tính văn phòng, bạn chọn quốc gia trong lúc cài đặt; với máy chủ và Docker Compose, gói quốc gia đi kèm sẵn ngày lễ, quy định thời giờ làm việc và các thiết lập sẵn theo ngành của quốc gia bạn (giờ phụ trội nếu quốc gia đó có quy định)."
   },
   "linux": {

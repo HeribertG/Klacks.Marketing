@@ -1,3 +1,5 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 namespace Klacks.Marketing.Localization;
 
 public sealed class InstallPageContent
@@ -49,8 +51,9 @@ public sealed class InstallPath
 // The "office PC without Docker" path: the card content (its DownloadLabel is the Windows
 // button), the macOS button (only shown when a Mac URL is configured) or, without one, the
 // "Mac: coming soon" note, the supported processor architectures (x64, ARM through
-// emulation), the pointer for Linux users to the guided Docker installer, and the hero
-// subtitle that replaces the two-path wording while the card is shown.
+// emulation), the pointer for Linux users to the guided Docker installer, how to remove Klacks
+// again through the Windows app settings (including the keep-or-delete-data question), and the
+// hero subtitle that replaces the two-path wording while the card is shown.
 public sealed class InstallNativeSection
 {
     public required InstallPath Path { get; init; }
@@ -58,6 +61,7 @@ public sealed class InstallNativeSection
     public required string MacComingSoonNote { get; init; }
     public required string ArchitectureNote { get; init; }
     public required string LinuxNote { get; init; }
+    public required string UninstallNote { get; init; }
     public required string HeroSubtitle { get; init; }
 }
 

@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "사무실 PC에서 (Docker 불필요)",
-      "text": "사무실 PC가 한 대뿐인 사업장을 위한 방법: Windows용 ZIP 패키지 &mdash; Docker도, 자체 서버도 필요 없습니다. 데이터베이스, Klacks, 업데이트 서비스는 Windows 백그라운드 서비스로 실행되고, 업데이트는 자동으로 적용되며, 데이터는 이 PC에 그대로 보관됩니다.",
+      "text": "사무실 PC가 한 대뿐인 사업장을 위한 방법: Windows용 설치 파일 &mdash; Docker도, 자체 서버도 필요 없습니다. 데이터베이스, Klacks, 업데이트 서비스는 Windows 백그라운드 서비스로 실행되고, 업데이트는 자동으로 적용되며, 데이터는 이 PC에 그대로 보관됩니다.",
       "requirementsTitle": "요구 사항",
       "requirements": [
         "Windows 11(64비트)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "세 단계",
       "steps": [
-        { "title": "패키지 다운로드 및 압축 풀기", "text": "ZIP 파일을 다운로드한 뒤 바탕 화면 등에 전체 압축을 풉니다." },
-        { "title": "Installieren.cmd 실행", "text": "“Installieren.cmd”를 두 번 클릭하고 관리자 권한 요청을 승인합니다. Windows SmartScreen 경고가 표시되면 추가 정보를 열고 그래도 실행하도록 선택합니다 &mdash; 이 패키지에는 코드 서명이 없습니다. 이어서 국가를 선택합니다(공휴일, 시간대, 근로시간 규정). 설치에는 몇 분이 걸립니다." },
-        { "title": "브라우저에서 열기", "text": "브라우저에서 http://localhost:5180을 열고, 동봉된 안내서에 적힌 초기 계정으로 로그인한 뒤 자체 관리자 계정을 만듭니다." }
+        { "title": "설치 파일 다운로드", "text": "“Windows용 다운로드”를 클릭합니다. 파일 “Klacks-Setup-win-x64.exe”는 보통 “다운로드” 폴더에 저장됩니다." },
+        { "title": "두 번 클릭하고 국가 선택", "text": "파일을 두 번 클릭합니다. Windows SmartScreen 경고가 표시되면 추가 정보를 열고 그래도 실행하도록 선택합니다 &mdash; 이 설치 파일에는 아직 디지털 서명이 없습니다. 이어서 관리자 권한 요청을 승인합니다. 마법사에서 국가를 선택하고(공휴일, 시간대, 근로시간 규정) 원하면 바탕 화면 바로 가기도 만듭니다. 마법사에 진행 상황이 표시되며, 설치에는 몇 분이 걸립니다." },
+        { "title": "Klacks 열기 및 로그인", "text": "마지막에 Klacks를 브라우저에서 여는 옵션을 선택합니다. 나중에는 시작 메뉴의 “Klacks”에서 열 수 있습니다(또는 http://localhost:5180). 마법사가 마지막에 보여 주는 초기 계정으로 로그인한 뒤 자체 관리자 계정을 만듭니다. Klacks가 아직 시작 중이면 몇 분 기다립니다 &mdash; 첫 시작은 조금 더 오래 걸립니다." }
       ],
       "downloadLabel": "Windows용 다운로드"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Mac용: 곧 제공될 예정입니다.",
     "architectureNote": "64비트 Windows(x64)용입니다. ARM 프로세서를 탑재한 Windows 11 기기(예: Snapdragon X)에서는 Klacks가 에뮬레이션으로 실행되며, ARM 기반 Windows 10은 지원되지 않습니다.",
     "linuxNote": "Linux를 사용하시나요? 아래를 참조하세요: <a href=\"{0}\">Linux PC에서 Klacks 사용하기</a>.",
+    "uninstallNote": "<strong>제거:</strong> Klacks는 다른 Windows 프로그램처럼 제거할 수 있습니다 &mdash; 설정 › 앱을 열고 “Klacks” 항목을 찾아 제거합니다. 제거 프로그램은 데이터베이스, 설정, 백업도 삭제할지 묻습니다. “아니요”를 선택하면 데이터는 C:\\ProgramData\\Klacks에 남아 있어 나중에 다시 설치할 때 이어서 사용됩니다.",
     "heroSubtitle": "세 가지 방법, 하나의 결과: 사무실 PC용 Windows 패키지, 귀사 서버를 위한 가이드형 설치 프로그램 또는 자체 구성을 위한 Docker Compose 스택 &mdash; 등록도, 라이선스 비용도 필요 없습니다. 사무실 PC에서는 설치 중에 국가를 선택합니다. 서버와 Docker Compose의 경우 국가별 패키지에 귀사 국가의 공휴일, 근로시간 규정, 업종별 사전 설정이 처음부터 포함되어 있습니다(할증 수당은 국가별로 정의된 경우)."
   },
   "linux": {

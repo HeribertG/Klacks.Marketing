@@ -13,9 +13,11 @@ using Shouldly;
 /// the Windows 10 note (Windows 11 is the stated requirement, Windows 10 22H2 runs but only gets updates through ESU)
 /// and the "Mac: coming soon" note, and names the office PC in its page title and meta description. The shipped
 /// appsettings.json switches the card on; the page is unchanged while NativeInstall:Enabled is off (two cards,
-/// two-path hero), and with the switch on every culture renders three cards with the counted Windows package link
-/// from the rolling "office-pc" release. The Mac button only appears when NativeInstall:MacUrl is configured;
-/// otherwise the "coming soon" note stands in its place.
+/// two-path hero), and with the switch on every culture renders three cards with the counted link to the Windows installer
+/// (Klacks-Setup-win-x64.exe) from the rolling "office-pc" release. The steps describe that installer, not the retired
+/// ZIP package with Installieren.cmd, and every culture explains how to uninstall through the Windows app settings and
+/// where the kept data stays. The Mac button only appears when NativeInstall:MacUrl is configured; otherwise the
+/// "coming soon" note stands in its place.
 /// </summary>
 [TestFixture]
 public class InstallPageNativeOptionTests
@@ -23,7 +25,11 @@ public class InstallPageNativeOptionTests
     private const string InstallPageKey = "installation";
     private const int ExpectedRequirementCount = 5;
     private const int ExpectedStepCount = 3;
-    private const string RollingWindowsPackageUrl = "https://github.com/HeribertG/Klacks.Api/releases/download/office-pc/klacks-office-pc-win-x64.zip";
+    private const string RollingWindowsPackageUrl = "https://github.com/HeribertG/Klacks.Api/releases/download/office-pc/Klacks-Setup-win-x64.exe";
+    private const string RetiredInstallScript = "Installieren.cmd";
+    private const string RetiredPackageFormat = "ZIP";
+    private const string KeptDataFolder = @"C:\ProgramData\Klacks";
+    private const string ProductName = "Klacks";
     private const string ConfiguredMacUrl = "https://downloads.example/klacks.pkg";
     private const string DownloadCounterAttribute = "data-c=\"DownloadClick\"";
     private const string EnglishCulture = "en";
@@ -78,7 +84,7 @@ public class InstallPageNativeOptionTests
         native.ShouldNotBeNull();
         native.Path.Requirements.Count.ShouldBe(ExpectedRequirementCount);
         native.Path.Steps.Count.ShouldBe(ExpectedStepCount);
-        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.MacComingSoonNote, native.ArchitectureNote, native.LinuxNote, native.HeroSubtitle }
+        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.MacComingSoonNote, native.ArchitectureNote, native.LinuxNote, native.UninstallNote, native.HeroSubtitle }
             .ShouldAllBe(text => !string.IsNullOrWhiteSpace(text));
     }
 
@@ -136,6 +142,43 @@ public class InstallPageNativeOptionTests
         {
             note.ShouldNotBe(provider.GetInstallPage(EnglishCulture, InstallPageKey).Native!.ArchitectureNote);
         }
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_describes_the_windows_installer_instead_of_the_retired_zip_package(string culture)
+    {
+        var native = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!;
+        var texts = native.Path.Steps.SelectMany(step => new[] { step.Title, step.Text })
+            .Append(native.Path.Title)
+            .Append(native.Path.Text)
+            .Append(native.UninstallNote);
+
+        texts.ShouldAllBe(text => !text.Contains(RetiredInstallScript, StringComparison.OrdinalIgnoreCase));
+        texts.ShouldAllBe(text => !text.Contains(RetiredPackageFormat, StringComparison.OrdinalIgnoreCase));
+        native.Path.Steps[0].Text.ShouldContain(ExternalLinks.NativeWindowsPackageFileName);
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_explains_uninstalling_and_where_the_kept_data_stays(string culture)
+    {
+        var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
+        var note = provider.GetInstallPage(culture, InstallPageKey).Native!.UninstallNote;
+
+        note.ShouldContain(ProductName);
+        note.ShouldContain(KeptDataFolder);
+        if (culture != EnglishCulture)
+        {
+            note.ShouldNotBe(provider.GetInstallPage(EnglishCulture, InstallPageKey).Native!.UninstallNote);
+        }
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public async Task Uninstall_note_appears_only_with_the_office_pc_card(string culture)
+    {
+        var note = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!.UninstallNote;
+
+        (await RenderAsync(culture, enabled: true)).ShouldContain(note);
+        (await RenderAsync(culture, enabled: false)).ShouldNotContain(note);
     }
 
     [Test]

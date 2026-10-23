@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Op de kantoor-pc (zonder Docker)",
-      "text": "Voor bedrijven met één kantoor-pc: een ZIP-pakket voor Windows &mdash; zonder Docker en zonder eigen server. De database, Klacks en de updateservice draaien als Windows-achtergronddiensten, updates komen automatisch binnen en uw gegevens blijven op deze pc.",
+      "text": "Voor bedrijven met één kantoor-pc: een installatiebestand voor Windows &mdash; zonder Docker en zonder eigen server. De database, Klacks en de updateservice draaien als Windows-achtergronddiensten, updates komen automatisch binnen en uw gegevens blijven op deze pc.",
       "requirementsTitle": "Vereisten",
       "requirements": [
         "Windows 11 (64-bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "In drie stappen",
       "steps": [
-        { "title": "Pakket downloaden en uitpakken", "text": "Download het ZIP-bestand en pak het volledig uit, bijvoorbeeld op het bureaublad." },
-        { "title": "Installieren.cmd starten", "text": "Dubbelklik op &bdquo;Installieren.cmd&rdquo; en bevestig de vraag om beheerdersrechten. Toont Windows SmartScreen een waarschuwing, open dan de extra informatie en kies ervoor het programma toch uit te voeren &mdash; het pakket is niet voorzien van een codehandtekening. Kies daarna uw land (feestdagen, tijdzone, arbeidstijdregels). De installatie duurt enkele minuten." },
-        { "title": "In de browser openen", "text": "Open http://localhost:5180 in uw browser, log in met het initiële account uit de bijgevoegde handleiding en maak een eigen beheerdersaccount aan." }
+        { "title": "Installatiebestand downloaden", "text": "Klik op &bdquo;Downloaden voor Windows&rdquo;. Het bestand &bdquo;Klacks-Setup-win-x64.exe&rdquo; komt meestal in de map &bdquo;Downloads&rdquo; terecht." },
+        { "title": "Dubbelklikken en land kiezen", "text": "Dubbelklik op het bestand. Toont Windows SmartScreen een waarschuwing, open dan de extra informatie en kies ervoor het programma toch uit te voeren &mdash; het installatiebestand is nog niet digitaal ondertekend. Bevestig daarna de vraag om beheerdersrechten. Kies in de wizard uw land (feestdagen, tijdzone, arbeidstijdregels) en desgewenst een snelkoppeling op het bureaublad. De wizard toont de voortgang; de installatie duurt enkele minuten." },
+        { "title": "Klacks openen en aanmelden", "text": "Kies aan het eind om Klacks in de browser te openen. Later vindt u Klacks in het menu Start onder &bdquo;Klacks&rdquo; (of via http://localhost:5180). Log in met het initiële account dat de wizard aan het eind toont en maak een eigen beheerdersaccount aan. Is Klacks nog aan het opstarten, wacht dan enkele minuten &mdash; de eerste start duurt iets langer." }
       ],
       "downloadLabel": "Downloaden voor Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Voor Mac: binnenkort beschikbaar.",
     "architectureNote": "Voor Windows 64-bit (x64). Op Windows 11-apparaten met een ARM-processor (bijv. Snapdragon X) draait Klacks via emulatie; Windows 10 op ARM wordt niet ondersteund.",
     "linuxNote": "Linux? Zie hieronder: <a href=\"{0}\">Klacks op een Linux-pc</a>.",
+    "uninstallNote": "<strong>Verwijderen:</strong> Klacks verwijdert u zoals elk ander Windows-programma &mdash; open Instellingen › Apps, zoek het item &bdquo;Klacks&rdquo; en verwijder het. Het verwijderprogramma vraagt of ook de database, de instellingen en de back-ups moeten worden verwijderd. Antwoordt u nee, dan blijven uw gegevens in C:\\ProgramData\\Klacks staan en neemt een latere herinstallatie ze weer over.",
     "heroSubtitle": "Drie wegen, één resultaat: het Windows-pakket voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving &mdash; zonder registratie, zonder licentiekosten. Op de kantoor-pc kiest u het land tijdens de installatie; voor server en Docker Compose bevat het landenpakket de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd)."
   },
   "linux": {

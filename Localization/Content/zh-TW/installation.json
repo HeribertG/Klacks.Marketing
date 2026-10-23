@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "在辦公室電腦上（無需 Docker）",
-      "text": "適用於只有一台辦公室電腦的企業：適用於 Windows 的 ZIP 套件 &mdash; 無需 Docker，也無需自有伺服器。資料庫、Klacks 與更新服務以 Windows 背景服務執行，更新會自動安裝，您的資料會保留在這台電腦上。",
+      "text": "適用於只有一台辦公室電腦的企業：適用於 Windows 的安裝程式 &mdash; 無需 Docker，也無需自有伺服器。資料庫、Klacks 與更新服務以 Windows 背景服務執行，更新會自動安裝，您的資料會保留在這台電腦上。",
       "requirementsTitle": "系統需求",
       "requirements": [
         "Windows 11（64 位元）",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "只需三個步驟",
       "steps": [
-        { "title": "下載並解壓縮套件", "text": "下載 ZIP 檔案並完整解壓縮，例如解壓縮到桌面。" },
-        { "title": "執行 Installieren.cmd", "text": "按兩下「Installieren.cmd」，並確認系統管理員權限要求。若 Windows SmartScreen 顯示警告，請開啟其他資訊並選擇仍要執行 &mdash; 此套件沒有程式碼簽章。接著選擇您所在的國家（假日、時區、工時規則）。安裝需要幾分鐘。" },
-        { "title": "在瀏覽器中開啟", "text": "在瀏覽器中開啟 http://localhost:5180，以隨附說明中的初始帳戶登入，並建立您自己的系統管理員帳戶。" }
+        { "title": "下載安裝程式", "text": "按一下「下載 Windows 版」。檔案「Klacks-Setup-win-x64.exe」通常會儲存在「下載」資料夾中。" },
+        { "title": "按兩下並選擇國家", "text": "按兩下該檔案。若 Windows SmartScreen 顯示警告，請開啟其他資訊並選擇仍要執行 &mdash; 此安裝程式目前尚無數位簽章。接著確認系統管理員權限要求。在安裝精靈中選擇您所在的國家（假日、時區、工時規則），如有需要也可以建立桌面捷徑。精靈會顯示安裝進度，安裝需要幾分鐘。" },
+        { "title": "開啟 Klacks 並登入", "text": "最後選擇在瀏覽器中開啟 Klacks。之後可在開始功能表中透過「Klacks」開啟（或前往 http://localhost:5180）。以精靈最後顯示的初始帳戶登入，並建立您自己的系統管理員帳戶。若 Klacks 仍在啟動中，請稍候幾分鐘 &mdash; 第一次啟動需要較長一點的時間。" }
       ],
       "downloadLabel": "下載 Windows 版"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Mac 版：即將推出。",
     "architectureNote": "適用於 64 位元 Windows（x64）。在搭載 ARM 處理器的 Windows 11 裝置（例如 Snapdragon X）上，Klacks 透過模擬執行；不支援 ARM 版 Windows 10。",
     "linuxNote": "使用 Linux？請見下方：<a href=\"{0}\">在 Linux 電腦上使用 Klacks</a>。",
+    "uninstallNote": "<strong>解除安裝：</strong>Klacks 可以像其他 Windows 程式一樣解除安裝 &mdash; 開啟「設定 › 應用程式」，找到「Klacks」項目並解除安裝。解除安裝程式會詢問是否一併刪除資料庫、設定和備份。若選擇「否」，您的資料會保留在 C:\\ProgramData\\Klacks 中，日後重新安裝時會繼續使用。",
     "heroSubtitle": "三條路徑，同一結果：適用於辦公室電腦的 Windows 套件、適用於您伺服器的引導式安裝程式，或適用於自有環境的 Docker Compose 堆疊 &mdash; 無需註冊，沒有授權費用。使用辦公室電腦時，您在安裝過程中選擇國家；伺服器與 Docker Compose 的國家套件隨附您所在國家的國定假日、工時規則與行業預設值（工時加成以該國家已定義者為準）。"
   },
   "linux": {

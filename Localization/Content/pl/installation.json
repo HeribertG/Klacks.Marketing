@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Na komputerze biurowym (bez Dockera)",
-      "text": "Dla firm z jednym komputerem biurowym: pakiet ZIP dla Windows &mdash; bez Dockera i bez własnego serwera. Baza danych, Klacks i usługa aktualizacji działają jako usługi Windows w tle, aktualizacje przychodzą automatycznie, a Państwa dane pozostają na tym komputerze.",
+      "text": "Dla firm z jednym komputerem biurowym: plik instalacyjny dla Windows &mdash; bez Dockera i bez własnego serwera. Baza danych, Klacks i usługa aktualizacji działają jako usługi Windows w tle, aktualizacje przychodzą automatycznie, a Państwa dane pozostają na tym komputerze.",
       "requirementsTitle": "Wymagania",
       "requirements": [
         "Windows 11 (64-bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "W trzech krokach",
       "steps": [
-        { "title": "Pobranie i rozpakowanie pakietu", "text": "Pobierają Państwo plik ZIP i rozpakowują go w całości, na przykład na pulpit." },
-        { "title": "Uruchomienie Installieren.cmd", "text": "Klikają Państwo dwukrotnie &bdquo;Installieren.cmd&rdquo; i potwierdzają prośbę o uprawnienia administratora. Jeśli Windows SmartScreen wyświetli ostrzeżenie, otwierają Państwo dodatkowe informacje i wybierają uruchomienie mimo to &mdash; pakiet nie ma podpisu kodu. Następnie wybierają Państwo kraj (święta, strefa czasowa, reguły czasu pracy). Instalacja trwa kilka minut." },
-        { "title": "Otwarcie w przeglądarce", "text": "Otwierają Państwo http://localhost:5180 w przeglądarce, logują się kontem początkowym z dołączonej instrukcji i zakładają własne konto administratora." }
+        { "title": "Pobranie pliku instalacyjnego", "text": "Klikają Państwo &bdquo;Pobierz dla Windows&rdquo;. Plik &bdquo;Klacks-Setup-win-x64.exe&rdquo; trafia zwykle do folderu &bdquo;Pobrane&rdquo;." },
+        { "title": "Dwuklik i wybór kraju", "text": "Klikają Państwo dwukrotnie plik. Jeśli Windows SmartScreen wyświetli ostrzeżenie, otwierają Państwo dodatkowe informacje i wybierają uruchomienie mimo to &mdash; plik instalacyjny nie ma jeszcze podpisu cyfrowego. Następnie potwierdzają Państwo prośbę o uprawnienia administratora. W kreatorze wybierają Państwo kraj (święta, strefa czasowa, reguły czasu pracy) i w razie potrzeby skrót na pulpicie. Kreator pokazuje postęp; instalacja trwa kilka minut." },
+        { "title": "Otwarcie Klacks i logowanie", "text": "Na końcu wybierają Państwo otwarcie Klacks w przeglądarce. Później Klacks znajduje się w menu Start pod nazwą &bdquo;Klacks&rdquo; (lub pod adresem http://localhost:5180). Logują się Państwo kontem początkowym, które kreator pokazuje na końcu, i zakładają własne konto administratora. Jeśli Klacks jeszcze się uruchamia, warto odczekać kilka minut &mdash; pierwsze uruchomienie trwa nieco dłużej." }
       ],
       "downloadLabel": "Pobierz dla Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Dla Maca: wkrótce.",
     "architectureNote": "Dla 64-bitowego systemu Windows (x64). Na urządzeniach z Windows 11 i procesorem ARM (np. Snapdragon X) Klacks działa dzięki emulacji; Windows 10 na ARM nie jest obsługiwany.",
     "linuxNote": "Linux? Szczegóły poniżej: <a href=\"{0}\">Klacks na komputerze z Linuksem</a>.",
+    "uninstallNote": "<strong>Odinstalowanie:</strong> Klacks usuwa się jak każdy inny program Windows &mdash; otwierają Państwo Ustawienia › Aplikacje, wyszukują pozycję &bdquo;Klacks&rdquo; i ją odinstalowują. Deinstalator pyta, czy usunąć również bazę danych, ustawienia i kopie zapasowe. Przy odpowiedzi &bdquo;nie&rdquo; Państwa dane pozostają w C:\\ProgramData\\Klacks, a późniejsza ponowna instalacja znów z nich korzysta.",
     "heroSubtitle": "Trzy drogi, jeden rezultat: pakiet Windows na komputer biurowy, prowadzony instalator na Państwa serwer albo stack Docker Compose dla własnej konfiguracji &mdash; bez rejestracji, bez opłat licencyjnych. Na komputerze biurowym kraj wybierają Państwo podczas instalacji; dla serwera i Docker Compose pakiet krajowy zawiera od razu święta państwowe, reguły czasu pracy i branżowe ustawienia wstępne Państwa kraju (dodatki, o ile zdefiniowano je dla danego kraju)."
   },
   "linux": {

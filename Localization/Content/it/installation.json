@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Sul PC dell'ufficio (senza Docker)",
-      "text": "Per le aziende con un solo PC in ufficio: un pacchetto ZIP per Windows &mdash; senza Docker e senza un vostro server. Database, Klacks e servizio di aggiornamento funzionano come servizi Windows in background, gli aggiornamenti arrivano automaticamente e i vostri dati restano su questo PC.",
+      "text": "Per le aziende con un solo PC in ufficio: un programma di installazione per Windows &mdash; senza Docker e senza un vostro server. Database, Klacks e servizio di aggiornamento funzionano come servizi Windows in background, gli aggiornamenti arrivano automaticamente e i vostri dati restano su questo PC.",
       "requirementsTitle": "Requisiti",
       "requirements": [
         "Windows 11 (64 bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "In tre passi",
       "steps": [
-        { "title": "Scaricare ed estrarre il pacchetto", "text": "Scaricate il file ZIP ed estraetelo completamente, ad esempio sul desktop." },
-        { "title": "Avviare Installieren.cmd", "text": "Fate doppio clic su &laquo;Installieren.cmd&raquo; e confermate la richiesta dei diritti di amministratore. Se Windows SmartScreen mostra un avviso, aprite le informazioni aggiuntive e scegliete di eseguire comunque &mdash; il pacchetto non ha una firma del codice. Scegliete poi il vostro paese (giorni festivi, fuso orario, regole sull'orario di lavoro). L'installazione richiede qualche minuto." },
-        { "title": "Aprire nel browser", "text": "Aprite http://localhost:5180 nel browser, accedete con l'account iniziale indicato nelle istruzioni allegate e create un vostro account amministratore." }
+        { "title": "Scaricare il programma di installazione", "text": "Fate clic su &laquo;Scarica per Windows&raquo;. Il file &laquo;Klacks-Setup-win-x64.exe&raquo; finisce di solito nella cartella &laquo;Download&raquo;." },
+        { "title": "Doppio clic e scelta del paese", "text": "Fate doppio clic sul file. Se Windows SmartScreen mostra un avviso, aprite le informazioni aggiuntive e scegliete di eseguire comunque &mdash; il programma di installazione non ha ancora una firma digitale. Confermate poi la richiesta dei diritti di amministratore. Nella procedura guidata scegliete il vostro paese (giorni festivi, fuso orario, regole sull'orario di lavoro) e, se volete, un collegamento sul desktop. La procedura mostra l'avanzamento; l'installazione richiede qualche minuto." },
+        { "title": "Aprire Klacks e accedere", "text": "Alla fine scegliete di aprire Klacks nel browser. In seguito trovate Klacks nel menu Start alla voce &laquo;Klacks&raquo; (oppure all'indirizzo http://localhost:5180). Accedete con l'account iniziale che la procedura guidata mostra alla fine e create un vostro account amministratore. Se Klacks si sta ancora avviando, attendete qualche minuto &mdash; il primo avvio richiede un po' più di tempo." }
       ],
       "downloadLabel": "Scarica per Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Per Mac: in arrivo a breve.",
     "architectureNote": "Per Windows a 64 bit (x64). Sui dispositivi Windows 11 con processore ARM (ad es. Snapdragon X) Klacks funziona tramite emulazione; Windows 10 su ARM non è supportato.",
     "linuxNote": "Linux? Vedete qui sotto: <a href=\"{0}\">Klacks su un PC Linux</a>.",
+    "uninstallNote": "<strong>Disinstallare:</strong> Klacks si rimuove come qualsiasi altro programma Windows &mdash; aprite Impostazioni › App, cercate la voce &laquo;Klacks&raquo; e disinstallatela. Il programma di disinstallazione chiede se eliminare anche il database, le impostazioni e i backup. Se rispondete no, i vostri dati restano in C:\\ProgramData\\Klacks e una successiva reinstallazione li riprende.",
     "heroSubtitle": "Tre strade, un unico risultato: il pacchetto Windows per il PC dell'ufficio, l'installer guidato per il vostro server oppure lo stack Docker Compose per la vostra configurazione &mdash; senza registrazione, senza costi di licenza. Sul PC dell'ufficio scegliete il paese durante l'installazione; per server e Docker Compose il pacchetto paese porta con sé giorni festivi, regole sull'orario di lavoro e preimpostazioni di settore del vostro paese (maggiorazioni dove definite per il paese)."
   },
   "linux": {

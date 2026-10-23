@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "No PC do escritório (sem Docker)",
-      "text": "Para empresas com um único PC de escritório: um pacote ZIP para Windows &mdash; sem Docker e sem servidor próprio. A base de dados, o Klacks e o serviço de atualização funcionam como serviços do Windows em segundo plano, as atualizações chegam automaticamente e os seus dados ficam neste PC.",
+      "text": "Para empresas com um único PC de escritório: um instalador para Windows &mdash; sem Docker e sem servidor próprio. A base de dados, o Klacks e o serviço de atualização funcionam como serviços do Windows em segundo plano, as atualizações chegam automaticamente e os seus dados ficam neste PC.",
       "requirementsTitle": "Requisitos",
       "requirements": [
         "Windows 11 (64 bits)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "Em três passos",
       "steps": [
-        { "title": "Transferir e extrair o pacote", "text": "Transfira o ficheiro ZIP e extraia-o por completo, por exemplo para o ambiente de trabalho." },
-        { "title": "Executar Installieren.cmd", "text": "Faça duplo clique em &laquo;Installieren.cmd&raquo; e confirme o pedido de direitos de administrador. Se o Windows SmartScreen mostrar um aviso, abra as informações adicionais e opte por executar mesmo assim &mdash; o pacote não tem assinatura de código. Depois, escolha o seu país (feriados, fuso horário, regras de tempo de trabalho). A instalação demora alguns minutos." },
-        { "title": "Abrir no browser", "text": "Abra http://localhost:5180 no browser, inicie sessão com a conta inicial indicada nas instruções incluídas e crie a sua própria conta de administrador." }
+        { "title": "Transferir o instalador", "text": "Clique em &laquo;Transferir para Windows&raquo;. O ficheiro &laquo;Klacks-Setup-win-x64.exe&raquo; fica normalmente na pasta &laquo;Transferências&raquo;." },
+        { "title": "Duplo clique e escolha do país", "text": "Faça duplo clique no ficheiro. Se o Windows SmartScreen mostrar um aviso, abra as informações adicionais e opte por executar mesmo assim &mdash; o instalador ainda não tem assinatura digital. Depois, confirme o pedido de direitos de administrador. No assistente, escolha o seu país (feriados, fuso horário, regras de tempo de trabalho) e, se quiser, um atalho no ambiente de trabalho. O assistente mostra o progresso; a instalação demora alguns minutos." },
+        { "title": "Abrir o Klacks e iniciar sessão", "text": "No fim, opte por abrir o Klacks no browser. Mais tarde, encontra o Klacks no menu Iniciar como &laquo;Klacks&raquo; (ou em http://localhost:5180). Inicie sessão com a conta inicial que o assistente mostra no fim e crie a sua própria conta de administrador. Se o Klacks ainda estiver a arrancar, aguarde alguns minutos &mdash; o primeiro arranque demora um pouco mais." }
       ],
       "downloadLabel": "Transferir para Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Para Mac: disponível em breve.",
     "architectureNote": "Para Windows de 64 bits (x64). Em dispositivos Windows 11 com processador ARM (p. ex., Snapdragon X), o Klacks funciona por emulação; o Windows 10 em ARM não é suportado.",
     "linuxNote": "Linux? Veja abaixo: <a href=\"{0}\">Klacks num PC Linux</a>.",
+    "uninstallNote": "<strong>Desinstalar:</strong> o Klacks remove-se como qualquer outro programa do Windows &mdash; abra Definições › Aplicações, procure a entrada &laquo;Klacks&raquo; e desinstale-a. O desinstalador pergunta se a base de dados, as definições e as cópias de segurança também devem ser eliminadas. Se responder que não, os seus dados ficam em C:\\ProgramData\\Klacks e uma reinstalação posterior volta a utilizá-los.",
     "heroSubtitle": "Três caminhos, um resultado: o pacote Windows para o PC do escritório, o instalador guiado para o seu servidor ou o stack Docker Compose para a sua própria configuração &mdash; sem registo, sem custos de licença. No PC do escritório, escolhe o país durante a instalação; para o servidor e o Docker Compose, o pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país)."
   },
   "linux": {

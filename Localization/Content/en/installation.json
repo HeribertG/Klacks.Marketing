@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "On your office PC (no Docker)",
-      "text": "For businesses with a single office PC: a ZIP package for Windows &mdash; no Docker and no server of your own. The database, Klacks and the update service run as Windows background services, updates arrive automatically, and your data stays on this PC.",
+      "text": "For businesses with a single office PC: an installer for Windows &mdash; no Docker and no server of your own. The database, Klacks and the update service run as Windows background services, updates arrive automatically, and your data stays on this PC.",
       "requirementsTitle": "Requirements",
       "requirements": [
         "Windows 11 (64-bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "In three steps",
       "steps": [
-        { "title": "Download and extract the package", "text": "Download the ZIP file and extract it completely, e.g. to the desktop." },
-        { "title": "Run Installieren.cmd", "text": "Double-click &ldquo;Installieren.cmd&rdquo; and confirm the administrator prompt with &ldquo;Yes&rdquo;. If Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo; &mdash; the package is not code-signed. Then choose your country (public holidays, time zone, working-time rules). The installation takes a few minutes." },
-        { "title": "Open in the browser", "text": "Open http://localhost:5180 in your browser, sign in with the initial account from the enclosed instructions and create your own administrator account." }
+        { "title": "Download the installer", "text": "Click &ldquo;Download for Windows&rdquo;. The file &ldquo;Klacks-Setup-win-x64.exe&rdquo; usually ends up in your &ldquo;Downloads&rdquo; folder." },
+        { "title": "Double-click and choose your country", "text": "Double-click the file. If Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo; &mdash; the installer is not digitally signed yet. Confirm the administrator prompt that follows with &ldquo;Yes&rdquo;. In the wizard, choose your country (public holidays, time zone, working-time rules) and, if you like, a desktop shortcut. The wizard shows its progress; the installation takes a few minutes." },
+        { "title": "Open Klacks and sign in", "text": "At the end, leave &ldquo;Open Klacks in the browser&rdquo; ticked and click &ldquo;Finish&rdquo;. Later you will find Klacks in the Start menu under &ldquo;Klacks&rdquo; (or at http://localhost:5180 in your browser). Sign in with the initial account the wizard shows at the end and create your own administrator account. If Klacks is still starting, wait a few minutes &mdash; the first start takes a little longer." }
       ],
       "downloadLabel": "Download for Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "For Mac: coming soon.",
     "architectureNote": "For 64-bit Windows (x64). On Windows 11 devices with an ARM processor (e.g. Snapdragon X) Klacks runs through emulation; Windows 10 on ARM is not supported.",
     "linuxNote": "Linux? See below: <a href=\"{0}\">Klacks on a Linux PC</a>.",
+    "uninstallNote": "<strong>Uninstalling:</strong> Klacks can be removed like any other Windows program &mdash; open Settings › Apps, find the &ldquo;Klacks&rdquo; entry and choose &ldquo;Uninstall&rdquo;. The uninstaller asks whether the database, settings and backups should be deleted as well. If you answer &ldquo;No&rdquo;, your data stays in C:\\ProgramData\\Klacks and a later reinstallation picks it up again.",
     "heroSubtitle": "Three paths, one result: the Windows package for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup &mdash; no registration, no licence fees. On the office PC you choose your country during installation; for the server and Docker Compose, the country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country)."
   },
   "linux": {

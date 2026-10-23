@@ -20,7 +20,7 @@ public class SimpleBuildingBlocksTests
 {
     private const string SwissCountry = "land-ch";
     private const string SharedUrl = "https://klacks-software.ch/land-ch";
-    private const string OfficePcDownloadUrl = "https://example.test/klacks-office-pc-win-x64.zip";
+    private const string OfficePcDownloadUrl = "https://example.test/Klacks-Setup-win-x64.exe";
     private const string SectionStart = "<section";
     private const string SectionEnd = "</section>";
     private const string OfficePcCardStart = "<div class=\"card-hover p-8 ";

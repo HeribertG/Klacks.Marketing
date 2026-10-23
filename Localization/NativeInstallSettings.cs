@@ -1,13 +1,15 @@
+// Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
+
 namespace Klacks.Marketing.Localization;
 
 /// <summary>
 /// Reads the switch and download targets of the "office PC without Docker" install path.
-/// The path stays hidden until NativeInstall:Enabled is true. Windows defaults to the office-PC package in the rolling
-/// "office-pc" release of Klacks.Api; the Mac button only appears when NativeInstall:MacUrl is configured, because no
+/// The path stays hidden until NativeInstall:Enabled is true. Windows defaults to the Inno Setup installer (Klacks-Setup-win-x64.exe)
+/// in the rolling "office-pc" release of Klacks.Api; the Mac button only appears when NativeInstall:MacUrl is configured, because no
 /// macOS package exists yet.
 /// </summary>
 /// <param name="Enabled">Whether the office-PC card is shown</param>
-/// <param name="WindowsUrl">Download URL of the Windows x64 office-PC package</param>
+/// <param name="WindowsUrl">Download URL of the Windows x64 office-PC installer</param>
 /// <param name="MacUrl">Download URL of the macOS package; null hides the Mac button</param>
 public sealed record NativeInstallSettings(bool Enabled, string WindowsUrl, string? MacUrl)
 {

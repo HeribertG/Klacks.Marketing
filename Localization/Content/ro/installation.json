@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Pe PC-ul de birou (fără Docker)",
-      "text": "Pentru firmele cu un singur PC de birou: un pachet ZIP pentru Windows &mdash; fără Docker și fără server propriu. Baza de date, Klacks și serviciul de actualizare rulează ca servicii Windows în fundal, actualizările vin automat, iar datele dumneavoastră rămân pe acest PC.",
+      "text": "Pentru firmele cu un singur PC de birou: un program de instalare pentru Windows &mdash; fără Docker și fără server propriu. Baza de date, Klacks și serviciul de actualizare rulează ca servicii Windows în fundal, actualizările vin automat, iar datele dumneavoastră rămân pe acest PC.",
       "requirementsTitle": "Cerințe",
       "requirements": [
         "Windows 11 (64 de biți)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "În trei pași",
       "steps": [
-        { "title": "Descărcați și dezarhivați pachetul", "text": "Descărcați fișierul ZIP și dezarhivați-l complet, de exemplu pe desktop." },
-        { "title": "Porniți Installieren.cmd", "text": "Faceți dublu clic pe &bdquo;Installieren.cmd&rdquo; și confirmați solicitarea de drepturi de administrator. Dacă Windows SmartScreen afișează un avertisment, deschideți informațiile suplimentare și alegeți să rulați oricum &mdash; pachetul nu are semnătură de cod. Apoi alegeți țara (sărbători legale, fus orar, regulile timpului de lucru). Instalarea durează câteva minute." },
-        { "title": "Deschideți în browser", "text": "Deschideți http://localhost:5180 în browser, autentificați-vă cu contul inițial din instrucțiunile incluse și creați-vă propriul cont de administrator." }
+        { "title": "Descărcați programul de instalare", "text": "Faceți clic pe &bdquo;Descărcați pentru Windows&rdquo;. Fișierul &bdquo;Klacks-Setup-win-x64.exe&rdquo; ajunge de obicei în folderul &bdquo;Descărcări&rdquo;." },
+        { "title": "Dublu clic și alegerea țării", "text": "Faceți dublu clic pe fișier. Dacă Windows SmartScreen afișează un avertisment, deschideți informațiile suplimentare și alegeți să rulați oricum &mdash; programul de instalare nu are încă semnătură digitală. Apoi confirmați solicitarea de drepturi de administrator. În expert alegeți țara (sărbători legale, fus orar, regulile timpului de lucru) și, dacă doriți, o comandă rapidă pe desktop. Expertul afișează progresul; instalarea durează câteva minute." },
+        { "title": "Deschideți Klacks și autentificați-vă", "text": "La final alegeți să deschideți Klacks în browser. Ulterior găsiți Klacks în meniul Start, la &bdquo;Klacks&rdquo; (sau la http://localhost:5180). Autentificați-vă cu contul inițial afișat de expert la final și creați-vă propriul cont de administrator. Dacă Klacks încă pornește, așteptați câteva minute &mdash; prima pornire durează ceva mai mult." }
       ],
       "downloadLabel": "Descărcați pentru Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Pentru Mac: în curând.",
     "architectureNote": "Pentru Windows pe 64 de biți (x64). Pe dispozitivele cu Windows 11 și procesor ARM (de ex. Snapdragon X), Klacks rulează prin emulare; Windows 10 pe ARM nu este acceptat.",
     "linuxNote": "Linux? Vedeți mai jos: <a href=\"{0}\">Klacks pe un PC cu Linux</a>.",
+    "uninstallNote": "<strong>Dezinstalare:</strong> Klacks se elimină ca orice alt program Windows &mdash; deschideți Setări › Aplicații, căutați intrarea &bdquo;Klacks&rdquo; și dezinstalați-o. Programul de dezinstalare întreabă dacă să șteargă și baza de date, setările și copiile de rezervă. Dacă răspundeți nu, datele dumneavoastră rămân în C:\\ProgramData\\Klacks, iar o reinstalare ulterioară le preia din nou.",
     "heroSubtitle": "Trei căi, un singur rezultat: pachetul Windows pentru PC-ul de birou, instalatorul ghidat pentru serverul dumneavoastră sau stack-ul Docker Compose pentru propriul dumneavoastră mediu &mdash; fără înregistrare, fără costuri de licență. Pe PC-ul de birou alegeți țara în timpul instalării; pentru server și Docker Compose, pachetul de țară aduce din start sărbătorile legale, regulile timpului de lucru și presetările pe domenii ale țării dumneavoastră (sporurile, în măsura în care sunt definite pentru țară)."
   },
   "linux": {

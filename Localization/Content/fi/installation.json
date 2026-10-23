@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Toimiston PC:llä (ilman Dockeria)",
-      "text": "Yrityksille, joilla on yksi toimiston PC: ZIP-paketti Windowsille &mdash; ilman Dockeria ja ilman omaa palvelinta. Tietokanta, Klacks ja päivityspalvelu toimivat Windowsin taustapalveluina, päivitykset tulevat automaattisesti, ja tietonne pysyvät tällä PC:llä.",
+      "text": "Yrityksille, joilla on yksi toimiston PC: asennusohjelma Windowsille &mdash; ilman Dockeria ja ilman omaa palvelinta. Tietokanta, Klacks ja päivityspalvelu toimivat Windowsin taustapalveluina, päivitykset tulevat automaattisesti, ja tietonne pysyvät tällä PC:llä.",
       "requirementsTitle": "Vaatimukset",
       "requirements": [
         "Windows 11 (64-bittinen)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "Kolme vaihetta",
       "steps": [
-        { "title": "Paketin lataus ja purku", "text": "Ladatkaa ZIP-tiedosto ja purkakaa se kokonaan, esimerkiksi työpöydälle." },
-        { "title": "Installieren.cmd:n käynnistys", "text": "Kaksoisnapsauttakaa tiedostoa &rdquo;Installieren.cmd&rdquo; ja hyväksykää järjestelmänvalvojan oikeuksia koskeva kysymys. Jos Windows SmartScreen näyttää varoituksen, avatkaa lisätiedot ja valitkaa suorittaminen siitä huolimatta &mdash; pakettia ei ole koodiallekirjoitettu. Valitkaa sen jälkeen maanne (pyhäpäivät, aikavyöhyke, työaikasäännöt). Asennus kestää muutaman minuutin." },
-        { "title": "Avaaminen selaimessa", "text": "Avatkaa selaimessanne osoite http://localhost:5180, kirjautukaa sisään mukana tulevassa ohjeessa mainitulla alkutilillä ja luokaa oma järjestelmänvalvojan tilinne." }
+        { "title": "Asennustiedoston lataus", "text": "Napsauttakaa painiketta &rdquo;Lataa Windowsille&rdquo;. Tiedosto &rdquo;Klacks-Setup-win-x64.exe&rdquo; tallentuu yleensä kansioon &rdquo;Lataukset&rdquo;." },
+        { "title": "Kaksoisnapsautus ja maan valinta", "text": "Kaksoisnapsauttakaa tiedostoa. Jos Windows SmartScreen näyttää varoituksen, avatkaa lisätiedot ja valitkaa suorittaminen siitä huolimatta &mdash; asennustiedostoa ei ole vielä allekirjoitettu digitaalisesti. Hyväksykää sen jälkeen järjestelmänvalvojan oikeuksia koskeva kysymys. Valitkaa ohjatussa asennuksessa maanne (pyhäpäivät, aikavyöhyke, työaikasäännöt) ja halutessanne pikakuvake työpöydälle. Ohjattu asennus näyttää edistymisen; asennus kestää muutaman minuutin." },
+        { "title": "Klacksin avaaminen ja kirjautuminen", "text": "Valitkaa lopuksi Klacksin avaaminen selaimessa. Myöhemmin löydätte Klacksin Käynnistä-valikosta nimellä &rdquo;Klacks&rdquo; (tai osoitteesta http://localhost:5180). Kirjautukaa sisään alkutilillä, jonka ohjattu asennus näyttää lopuksi, ja luokaa oma järjestelmänvalvojan tilinne. Jos Klacks vielä käynnistyy, odottakaa muutama minuutti &mdash; ensimmäinen käynnistys kestää hieman pidempään." }
       ],
       "downloadLabel": "Lataa Windowsille"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Macille: tulossa pian.",
     "architectureNote": "64-bittiselle Windowsille (x64). Windows 11 -laitteissa, joissa on ARM-suoritin (esim. Snapdragon X), Klacks toimii emuloinnin avulla; Windows 10:tä ei tueta ARM-laitteissa.",
     "linuxNote": "Linux? Katsokaa alta: <a href=\"{0}\">Klacks Linux-PC:llä</a>.",
+    "uninstallNote": "<strong>Asennuksen poisto:</strong> Klacksin voi poistaa kuten minkä tahansa muun Windows-ohjelman &mdash; avatkaa Asetukset › Sovellukset, etsikää kohta &rdquo;Klacks&rdquo; ja poistakaa sen asennus. Asennuksen poisto kysyy, poistetaanko myös tietokanta, asetukset ja varmuuskopiot. Jos vastaatte ei, tietonne jäävät kansioon C:\\ProgramData\\Klacks, ja myöhempi uusi asennus ottaa ne taas käyttöön.",
     "heroSubtitle": "Kolme polkua, yksi lopputulos: Windows-paketti toimiston PC:lle, ohjattu asennusohjelma palvelimellenne tai Docker Compose -pino omaan ympäristöönne &mdash; ei rekisteröitymistä, ei lisenssimaksuja. Toimiston PC:llä valitsette maan asennuksen aikana; palvelimelle ja Docker Composelle maapaketti sisältää valmiiksi maanne pyhäpäivät, työaikasäännöt ja toimialakohtaiset esiasetukset (lisät siltä osin kuin ne on maalle määritelty)."
   },
   "linux": {

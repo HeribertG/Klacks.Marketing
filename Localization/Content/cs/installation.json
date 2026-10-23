@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Na kancelářském PC (bez Dockeru)",
-      "text": "Pro firmy s jediným kancelářským PC: balíček ZIP pro Windows &mdash; bez Dockeru a bez vlastního serveru. Databáze, Klacks a aktualizační služba běží jako služby Windows na pozadí, aktualizace přicházejí automaticky a vaše data zůstávají na tomto PC.",
+      "text": "Pro firmy s jediným kancelářským PC: instalační soubor pro Windows &mdash; bez Dockeru a bez vlastního serveru. Databáze, Klacks a aktualizační služba běží jako služby Windows na pozadí, aktualizace přicházejí automaticky a vaše data zůstávají na tomto PC.",
       "requirementsTitle": "Předpoklady",
       "requirements": [
         "Windows 11 (64bitové)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "Tři kroky",
       "steps": [
-        { "title": "Stáhnout a rozbalit balíček", "text": "Stáhněte soubor ZIP a celý ho rozbalte, například na plochu." },
-        { "title": "Spustit Installieren.cmd", "text": "Dvakrát klikněte na &bdquo;Installieren.cmd&ldquo; a potvrďte dotaz na oprávnění správce. Pokud Windows SmartScreen zobrazí varování, otevřete další informace a zvolte, že chcete program přesto spustit &mdash; balíček není podepsán certifikátem pro podpis kódu. Poté zvolte svou zemi (svátky, časové pásmo, pravidla pracovní doby). Instalace trvá několik minut." },
-        { "title": "Otevřít v prohlížeči", "text": "Otevřete v prohlížeči http://localhost:5180, přihlaste se výchozím účtem z přiloženého návodu a vytvořte si vlastní administrátorský účet." }
+        { "title": "Stáhnout instalační soubor", "text": "Klikněte na &bdquo;Stáhnout pro Windows&ldquo;. Soubor &bdquo;Klacks-Setup-win-x64.exe&ldquo; se obvykle uloží do složky &bdquo;Stažené soubory&ldquo;." },
+        { "title": "Dvojklik a volba země", "text": "Dvakrát klikněte na soubor. Pokud Windows SmartScreen zobrazí varování, otevřete další informace a zvolte, že chcete program přesto spustit &mdash; instalační soubor zatím není digitálně podepsán. Poté potvrďte dotaz na oprávnění správce. V průvodci zvolte svou zemi (svátky, časové pásmo, pravidla pracovní doby) a případně zástupce na ploše. Průvodce zobrazuje průběh; instalace trvá několik minut." },
+        { "title": "Otevřít Klacks a přihlásit se", "text": "Na konci zvolte otevření Klacks v prohlížeči. Později najdete Klacks v nabídce Start pod položkou &bdquo;Klacks&ldquo; (nebo na adrese http://localhost:5180). Přihlaste se výchozím účtem, který průvodce zobrazí na konci, a vytvořte si vlastní administrátorský účet. Pokud se Klacks ještě spouští, počkejte několik minut &mdash; první spuštění trvá o něco déle." }
       ],
       "downloadLabel": "Stáhnout pro Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Pro Mac: již brzy.",
     "architectureNote": "Pro 64bitovou verzi Windows (x64). Na zařízeních s Windows 11 a procesorem ARM (např. Snapdragon X) běží Klacks prostřednictvím emulace; systém Windows 10 na ARM není podporován.",
     "linuxNote": "Linux? Viz níže: <a href=\"{0}\">Klacks na linuxovém PC</a>.",
+    "uninstallNote": "<strong>Odinstalace:</strong> Klacks odeberete jako každý jiný program pro Windows &mdash; otevřete Nastavení › Aplikace, najděte položku &bdquo;Klacks&ldquo; a odinstalujte ji. Odinstalační program se zeptá, zda smazat i databázi, nastavení a zálohy. Pokud odpovíte ne, vaše data zůstanou ve složce C:\\ProgramData\\Klacks a pozdější nová instalace je znovu převezme.",
     "heroSubtitle": "Tři cesty, jeden výsledek: balíček pro Windows na kancelářské PC, řízený instalátor pro váš server, nebo Docker Compose stack pro vaše vlastní prostředí &mdash; bez registrace, bez licenčních poplatků. Na kancelářském PC zvolíte zemi během instalace; pro server a Docker Compose přináší balíček pro zemi svátky, pravidla pracovní doby i oborová přednastavení vaší země (příplatky, pokud jsou pro zemi definovány)."
   },
   "linux": {

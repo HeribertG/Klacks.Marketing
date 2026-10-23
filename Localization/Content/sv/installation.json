@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "På kontorsdatorn (utan Docker)",
-      "text": "För företag med en enda kontorsdator: ett ZIP-paket för Windows &mdash; utan Docker och utan egen server. Databasen, Klacks och uppdateringstjänsten körs som Windows-bakgrundstjänster, uppdateringar kommer automatiskt, och dina data stannar på den här datorn.",
+      "text": "För företag med en enda kontorsdator: en installationsfil för Windows &mdash; utan Docker och utan egen server. Databasen, Klacks och uppdateringstjänsten körs som Windows-bakgrundstjänster, uppdateringar kommer automatiskt, och dina data stannar på den här datorn.",
       "requirementsTitle": "Krav",
       "requirements": [
         "Windows 11 (64-bitars)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "I tre steg",
       "steps": [
-        { "title": "Ladda ner och packa upp paketet", "text": "Ladda ner ZIP-filen och packa upp den helt, till exempel på skrivbordet." },
-        { "title": "Kör Installieren.cmd", "text": "Dubbelklicka på &rdquo;Installieren.cmd&rdquo; och bekräfta frågan om administratörsbehörighet. Visar Windows SmartScreen en varning öppnar du den extra informationen och väljer att köra programmet ändå &mdash; paketet är inte kodsignerat. Välj sedan ditt land (helgdagar, tidszon, arbetstidsregler). Installationen tar några minuter." },
-        { "title": "Öppna i webbläsaren", "text": "Öppna http://localhost:5180 i webbläsaren, logga in med det initiala kontot från den medföljande instruktionen och skapa ditt eget administratörskonto." }
+        { "title": "Ladda ner installationsfilen", "text": "Klicka på &rdquo;Ladda ner för Windows&rdquo;. Filen &rdquo;Klacks-Setup-win-x64.exe&rdquo; hamnar oftast i mappen &rdquo;Hämtade filer&rdquo;." },
+        { "title": "Dubbelklicka och välj land", "text": "Dubbelklicka på filen. Visar Windows SmartScreen en varning öppnar du den extra informationen och väljer att köra programmet ändå &mdash; installationsfilen är ännu inte digitalt signerad. Bekräfta sedan frågan om administratörsbehörighet. Välj i guiden ditt land (helgdagar, tidszon, arbetstidsregler) och vid behov en genväg på skrivbordet. Guiden visar förloppet; installationen tar några minuter." },
+        { "title": "Öppna Klacks och logga in", "text": "Välj till sist att öppna Klacks i webbläsaren. Senare hittar du Klacks på Start-menyn under &rdquo;Klacks&rdquo; (eller på http://localhost:5180). Logga in med det initiala kontot som guiden visar i slutet och skapa ditt eget administratörskonto. Om Klacks fortfarande startar, vänta några minuter &mdash; första starten tar lite längre tid." }
       ],
       "downloadLabel": "Ladda ner för Windows"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "För Mac: kommer snart.",
     "architectureNote": "För 64-bitars Windows (x64). På Windows 11-enheter med ARM-processor (t.ex. Snapdragon X) körs Klacks via emulering; Windows 10 på ARM stöds inte.",
     "linuxNote": "Linux? Se nedan: <a href=\"{0}\">Klacks på en Linuxdator</a>.",
+    "uninstallNote": "<strong>Avinstallation:</strong> Klacks tas bort som vilket annat Windows-program som helst &mdash; öppna Inställningar › Appar, leta upp posten &rdquo;Klacks&rdquo; och avinstallera den. Avinstallationsprogrammet frågar om även databasen, inställningarna och säkerhetskopiorna ska raderas. Svarar du nej ligger dina data kvar i C:\\ProgramData\\Klacks, och en senare ominstallation tar över dem igen.",
     "heroSubtitle": "Tre vägar, ett resultat: Windows-paketet för din kontorsdator, det guidade installationsprogrammet för din server eller Docker Compose-stacken för din egen miljö &mdash; utan registrering, utan licenskostnader. På kontorsdatorn väljer du land under installationen; för server och Docker Compose levereras landspaketet med ditt lands helgdagar, arbetstidsregler och branschförinställningar (tillägg, där de är definierade för landet)."
   },
   "linux": {

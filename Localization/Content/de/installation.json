@@ -53,7 +53,7 @@
     "path": {
       "icon": "computer",
       "title": "Auf dem Büro-PC (ohne Docker)",
-      "text": "Für Betriebe mit einem einzigen Büro-PC: ein ZIP-Paket für Windows &mdash; ohne Docker und ohne eigenen Server. Datenbank, Klacks und Update-Dienst laufen als Windows-Hintergrunddienste, Updates kommen automatisch, und Ihre Daten bleiben auf diesem PC.",
+      "text": "Für Betriebe mit einem einzigen Büro-PC: eine Installationsdatei für Windows &mdash; ohne Docker und ohne eigenen Server. Datenbank, Klacks und Update-Dienst laufen als Windows-Hintergrunddienste, Updates kommen automatisch, und Ihre Daten bleiben auf diesem PC.",
       "requirementsTitle": "Voraussetzungen",
       "requirements": [
         "Windows 11 (64-Bit)",
@@ -64,9 +64,9 @@
       ],
       "stepsTitle": "In drei Schritten",
       "steps": [
-        { "title": "Paket laden und entpacken", "text": "Die ZIP-Datei herunterladen und vollständig entpacken, z. B. auf den Desktop." },
-        { "title": "Installieren.cmd starten", "text": "Doppelklick auf &bdquo;Installieren.cmd&ldquo; und die Frage nach Administratorrechten mit &bdquo;Ja&ldquo; bestätigen. Zeigt Windows &bdquo;Der Computer wurde durch Windows geschützt&ldquo;, auf &bdquo;Weitere Informationen&ldquo; und dann &bdquo;Trotzdem ausführen&ldquo; klicken &mdash; das Paket ist nicht code-signiert. Anschliessend das Land wählen (Feiertage, Zeitzone, Arbeitszeitregeln). Die Installation dauert einige Minuten." },
-        { "title": "Im Browser öffnen", "text": "Im Browser http://localhost:5180 öffnen, mit dem Initialkonto aus der beiliegenden Anleitung anmelden und ein eigenes Administratorkonto anlegen." }
+        { "title": "Installationsdatei herunterladen", "text": "Auf &bdquo;Für Windows laden&ldquo; klicken. Die Datei &bdquo;Klacks-Setup-win-x64.exe&ldquo; landet in der Regel im Ordner &bdquo;Downloads&ldquo;." },
+        { "title": "Doppelklicken und Land wählen", "text": "Doppelklick auf die Datei. Zeigt Windows &bdquo;Der Computer wurde durch Windows geschützt&ldquo;, auf &bdquo;Weitere Informationen&ldquo; und dann &bdquo;Trotzdem ausführen&ldquo; klicken &mdash; die Installationsdatei ist noch nicht digital signiert. Die anschliessende Frage nach Administratorrechten mit &bdquo;Ja&ldquo; bestätigen. Im Assistenten das Land wählen (Feiertage, Zeitzone, Arbeitszeitregeln) und auf Wunsch eine Desktop-Verknüpfung anlegen. Der Assistent zeigt den Fortschritt; die Installation dauert einige Minuten." },
+        { "title": "Klacks öffnen und anmelden", "text": "Zum Schluss &bdquo;Klacks im Browser öffnen&ldquo; angehakt lassen und auf &bdquo;Fertigstellen&ldquo; klicken. Später finden Sie Klacks im Startmenü unter &bdquo;Klacks&ldquo; (oder im Browser unter http://localhost:5180). Mit dem Initialkonto anmelden, das der Assistent am Ende anzeigt, und ein eigenes Administratorkonto anlegen. Startet Klacks noch, ein paar Minuten warten &mdash; der erste Start dauert etwas länger." }
       ],
       "downloadLabel": "Für Windows laden"
     },
@@ -74,6 +74,7 @@
     "macComingSoonNote": "Für Mac: kommt in Kürze.",
     "architectureNote": "Für Windows 64 Bit (x64). Auf Windows-11-Geräten mit ARM-Prozessor (z. B. Snapdragon X) läuft Klacks per Emulation; Windows 10 auf ARM wird nicht unterstützt.",
     "linuxNote": "Linux? Siehe unten: <a href=\"{0}\">Klacks auf einem Linux-PC</a>.",
+    "uninstallNote": "<strong>Deinstallieren:</strong> Klacks lässt sich wie jedes Windows-Programm entfernen &mdash; Einstellungen › Apps öffnen, den Eintrag &bdquo;Klacks&ldquo; suchen und &bdquo;Deinstallieren&ldquo; wählen. Dabei fragt das Deinstallationsprogramm, ob auch Datenbank, Einstellungen und Sicherungen gelöscht werden sollen. Mit &bdquo;Nein&ldquo; bleiben Ihre Daten in C:\\ProgramData\\Klacks erhalten und werden bei einer späteren Neuinstallation wieder übernommen.",
     "heroSubtitle": "Drei Wege, ein Ergebnis: das Windows-Paket für den Büro-PC, der geführte Installer für Ihren Server oder der Docker-Compose-Stack für Ihr eigenes Setup &mdash; ohne Registrierung, ohne Lizenzkosten. Auf dem Büro-PC wählen Sie das Land bei der Installation; für Server und Docker Compose bringt das Länderpaket Feiertage, Arbeitszeitregeln und Branchen-Voreinstellungen Ihres Landes gleich mit (Zuschläge, soweit für das Land definiert)."
   },
   "linux": {
