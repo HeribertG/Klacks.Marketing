@@ -1,6 +1,7 @@
 @page "/{country}/mittlere-betriebe"
 @page "/{culture}/{country}/mittlere-betriebe"
 @inject IPageContentProvider ContentProvider
+@inject IOptions<SiteModeOptions> ModeOptions
 
 @* Target page for mid-size companies (50 to 250 employees; buying motive: hard to find staff). Message: one planner
    gets more done - never "replaces the planner". Every claim is backed by the code of Klacks.Api (see the preview
@@ -132,14 +133,7 @@
 
     private string AgentsHowToHref => LargeBusinessHref + FragmentSeparator + PageSectionIds.Agents;
 
-    private string StartHref
-    {
-        get
-        {
-            var culture = SupportedCultures.Resolve(Culture);
-            return culture.UrlSlug.Length == 0 ? $"/{CountryKey}" : $"/{culture.UrlSlug}/{CountryKey}";
-        }
-    }
+    private string StartHref => CountryPageLinks.StartHref(Culture, CountryKey, ModeOptions.Value.Enabled);
 
     private string Tx(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
 

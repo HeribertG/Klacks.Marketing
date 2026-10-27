@@ -6,6 +6,7 @@ using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
+using Microsoft.Extensions.Options;
 using Klacks.Marketing.Pages;
 using Klacks.Marketing.Shared;
 using Microsoft.AspNetCore.Components;
@@ -231,6 +232,7 @@ public class DemoDataNoteTests
             .AddSingleton<ILocalizedVideoCatalog>(new LocalizedVideoCatalog(environment.WebRootFileProvider))
             .AddSingleton<NavigationManager>(new TestNavigationManager(BaseUrl, path))
             .AddSingleton<IJSRuntime>(new NoOpJsRuntime())
+            .AddSingleton<IOptions<SiteModeOptions>>(Options.Create(new SiteModeOptions()))
             .BuildServiceProvider();
 
         await using var renderer = new HtmlRenderer(services, NullLoggerFactory.Instance);

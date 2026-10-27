@@ -1,5 +1,6 @@
 @inject IPageContentProvider ContentProvider
 @inject ILocalizedScreenshotResolver ScreenshotResolver
+@inject IOptions<SiteModeOptions> ModeOptions
 
 <PageTitle>@Content.PageTitle</PageTitle>
 <SeoHead PageKey="@PageKey" Culture="@Culture" RoutePath="@EffectiveRoutePath" Title="@Content.PageTitle" DescriptionSource="@DescriptionSource" OgImage="@OgImagePath" IndexTranslatedOnly="true" />
@@ -265,9 +266,12 @@
         get
         {
             var owningCountry = CountryIndustries.OwningCountry(PageKey);
-            return Culture == SupportedCultures.DefaultCode
-                ? (owningCountry is null ? "/" : $"/{owningCountry}")
-                : (owningCountry is null ? $"/{Culture}" : $"/{Culture}/{owningCountry}");
+            if (owningCountry is not null)
+            {
+                return CountryPageLinks.StartHref(Culture, owningCountry, ModeOptions.Value.Enabled);
+            }
+
+            return Culture == SupportedCultures.DefaultCode ? "/" : $"/{Culture}";
         }
     }
     private string PageHref => Culture == SupportedCultures.DefaultCode ? $"/{EffectiveRoutePath}" : $"/{Culture}/{EffectiveRoutePath}";

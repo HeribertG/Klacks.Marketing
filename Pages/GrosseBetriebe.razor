@@ -1,6 +1,7 @@
 @page "/{country}/grosse-betriebe"
 @page "/{culture}/{country}/grosse-betriebe"
 @inject IPageContentProvider ContentProvider
+@inject IOptions<SiteModeOptions> ModeOptions
 
 @* Target page for large companies (more than 250 employees; buying motive: cost). Cost is argued only through the
    licence structure - no savings percentages, no staff savings - and the running costs (servers, operation, AI
@@ -186,14 +187,7 @@
 
     private string MidSizeBusinessHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.MidSizeBusinessSlug);
 
-    private string StartHref
-    {
-        get
-        {
-            var culture = SupportedCultures.Resolve(Culture);
-            return culture.UrlSlug.Length == 0 ? $"/{CountryKey}" : $"/{culture.UrlSlug}/{CountryKey}";
-        }
-    }
+    private string StartHref => CountryPageLinks.StartHref(Culture, CountryKey, ModeOptions.Value.Enabled);
 
     private string Tx(string key) => ContentProvider.GetText(ResolvedCulture, PageKey, key);
 
