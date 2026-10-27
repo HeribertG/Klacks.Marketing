@@ -34,7 +34,6 @@ public class StartPageContentTests
     private static readonly string[] SizeSuffixes = { "label", "range", "text" };
     private static readonly string[] TrustPointKeys = { "openSource", "data", "ai", "lockIn" };
     private static readonly string[] RulesViews = { FeatureExplorer.RulesViewCalendar, FeatureExplorer.RulesViewSettings, FeatureExplorer.RulesViewLive };
-    private const int HeroExampleCount = 3;
     private const int StatCount = 4;
 
     private static readonly string[] OverclaimingPhrases =
@@ -192,7 +191,6 @@ public class StartPageContentTests
             .Select(match => match.Groups[1].Value);
 
         var dynamicKeys = SizeKeys.SelectMany(size => SizeSuffixes.Select(suffix => $"audience.{size}.{suffix}"))
-            .Concat(Enumerable.Range(0, HeroExampleCount).Select(index => $"hero.example.{index}"))
             .Concat(TrustPointKeys.SelectMany(point => new[] { $"trust.{point}.title", $"trust.{point}.text" }))
             .Concat(Enumerable.Range(0, StatCount).Select(index => $"trust.stat.{index}"))
             .Concat(RulesViews.Select(view => $"explorer.rulesView.{view}"))

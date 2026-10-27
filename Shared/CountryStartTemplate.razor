@@ -69,20 +69,6 @@
             }
         </div>
     </div>
-    <div class="mt-10 rounded-2xl bg-surface-container-low p-5 md:p-6">
-        <p class="text-sm font-semibold text-primary mt-0 mb-3">@Tx("hero.examplesLabel")</p>
-        <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
-            @for (var index = 0; index < HeroExampleCount; index++)
-            {
-                <li>
-                    <a href="@ChapterHref(DemoCarousels.KlacksySectionId)" class="text-start rounded-xl bg-surface-container-lowest border border-surface-container-high px-3 py-2 text-sm text-primary no-underline hover:border-secondary transition-colors inline-flex items-start gap-2">
-                        <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">chat</span>
-                        <span>@Tx($"hero.example.{index}")</span>
-                    </a>
-                </li>
-            }
-        </ul>
-    </div>
 </header>
 
 <!-- 2 FÜR WEN? -->
@@ -386,7 +372,6 @@
     private const string ComparisonSlug = "vergleich";
     private const string FragmentSeparator = "#";
     private const string BlankTarget = "_blank";
-    private const int HeroExampleCount = 3;
 
     private static readonly string[] HeroChipKeys = { "hero.trust1", "hero.trust2", "hero.trust4" };
 
