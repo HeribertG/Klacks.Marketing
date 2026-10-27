@@ -75,7 +75,7 @@
                                         var viewId = view;
                                         var isSelectedView = viewId == _rulesView;
                                         <button type="button"
-                                                class="rounded-full px-4 py-2 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelectedView ? "bg-primary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
+                                                class="rounded-full px-4 py-2 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary @(isSelectedView ? "bg-secondary text-white" : "bg-surface-container-low text-primary hover:bg-surface-container-high")"
                                                 aria-pressed="@(isSelectedView ? "true" : "false")" aria-controls="@RulesViewPanelId"
                                                 @onclick="() => SelectRulesView(viewId)">@Tx(RulesViewKeyPrefix + viewId)</button>
                                     }
