@@ -18,6 +18,9 @@ public class PrivacyStoreCookiesCoverageTests
     private const string PrivacyKey = "privacy.contentHtml";
     private const string StoreHeading = "<h2>4. ";
     private const string NextHeading = "<h2>5. ";
+    private const string FollowingHeading = "<h2>6. ";
+    private const string PrivacyContactAddress = "marketing@klacks-software.ch";
+    private const string RetentionDays = "400";
 
     private static readonly string[] StoreTokens =
     [
@@ -39,16 +42,27 @@ public class PrivacyStoreCookiesCoverageTests
         }
     }
 
+    [TestCaseSource(nameof(AllCultureCodes))]
+    public void Account_section_follows_the_store_section_and_names_contact_and_retention(string cultureCode)
+    {
+        var section = Section(cultureCode, NextHeading, FollowingHeading);
+
+        section.Contains(PrivacyContactAddress, StringComparison.Ordinal).ShouldBeTrue(cultureCode);
+        section.Contains(RetentionDays, StringComparison.Ordinal).ShouldBeTrue(cultureCode);
+    }
+
     private static IEnumerable<string> AllCultureCodes() => SupportedCultures.All.Select(culture => culture.Code);
 
-    private static string StoreSection(string cultureCode)
+    private static string StoreSection(string cultureCode) => Section(cultureCode, StoreHeading, NextHeading);
+
+    private static string Section(string cultureCode, string startHeading, string endHeading)
     {
         var path = Path.Combine(MarketingProjectPaths.ContentRoot, cultureCode, LegalFile);
         using var document = JsonDocument.Parse(File.ReadAllText(path));
         var html = document.RootElement.GetProperty(PrivacyKey).GetString()!;
-        var start = html.IndexOf(StoreHeading, StringComparison.Ordinal);
+        var start = html.IndexOf(startHeading, StringComparison.Ordinal);
         start.ShouldBeGreaterThanOrEqualTo(0, cultureCode);
-        var end = html.IndexOf(NextHeading, start, StringComparison.Ordinal);
+        var end = html.IndexOf(endHeading, start, StringComparison.Ordinal);
         end.ShouldBeGreaterThan(start, cultureCode);
 
         return html[start..end];
