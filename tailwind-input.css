@@ -498,6 +498,15 @@ body:has(.feature-ticker-bar) footer {
         z-index: 30;
     }
 
+    /* .reveal sections and .reveal-stagger children carry opacity/transform and so form their own stacking contexts,
+       which would trap the z-index of the zoomed frame inside them and let every later section paint over the enlarged
+       video. While a frame inside is hovered the enclosing context is lifted above the following sections. */
+    .reveal:has(.screenshot-hover-zoom:hover),
+    .reveal-stagger > *:has(.screenshot-hover-zoom:hover) {
+        position: relative;
+        z-index: 30;
+    }
+
     /* Slow ambient pulse for the decorative background blur blobs. The keyframe
        reproduces the base -translate-x-1/2 -translate-y-1/2 centering so the
        element doesn't jump once the animation takes over the transform property. */
