@@ -12,7 +12,7 @@ using Shouldly;
 /// <summary>
 /// The prerendered page carries the mode body class and the header of its mode: the simple page shows jump links
 /// to its own sections plus the about page, the expert pages keep today's navigation; every header has the dark-mode
-/// toggle; the logo always leads to the simple page; switching
+/// toggle; the logo keeps the mode (simple page from the simple mode, expert start page from the expert mode); switching
 /// language or country keeps the mode, but never links to an expert start page that a culture does not have. The simple
 /// header keeps the country switch on phones as a compact flag button whose dropdown opens above the jump links.
 /// </summary>
@@ -117,13 +117,13 @@ public class SiteHeaderModeTests
     }
 
     [Test]
-    public async Task Expert_header_keeps_todays_navigation_and_the_logo_leads_to_the_simple_page()
+    public async Task Expert_header_keeps_todays_navigation_and_the_logo_leads_to_the_expert_start_page()
     {
         var html = await GetHtmlAsync(enabled: true, "/land-ch/experten");
 
         html.ShouldContain("href=\"/land-ch/experten#regeln\"");
         html.ShouldContain("mobile-menu-panel");
-        html.ShouldContain("<a href=\"/land-ch\" class=\"flex shrink-0 items-center gap-2");
+        html.ShouldContain("<a href=\"/land-ch/experten\" data-scroll-top class=\"flex shrink-0 items-center gap-2");
     }
 
     [TestCase("/land-ch/experten", "href=\"/fr/land-ch/experten\"", "href=\"/land-de/experten\"")]

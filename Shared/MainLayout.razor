@@ -345,12 +345,18 @@ else
     private SupportedCulture CurrentCultureRecord => SupportedCultures.All.First(c => c.Code == ResolveCurrentPage().Culture);
 
     // Every page lives under a country, so the logo links to the country landing
-    // page: the active one where there is one, otherwise the culture's default.
+    // page: the active one where there is one, otherwise the culture's default. The
+    // mode is kept: in expert mode the logo leads to the expert start page, never to the simple one.
     private string HomeHref
     {
         get
         {
             var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+
+            if (CurrentMode is { ShowSwitch: true, IsSimple: false })
+            {
+                return CountryPageLinks.StartHref(CurrentCultureRecord.UrlSlug, country, ModeOptions.Value.Enabled);
+            }
 
             return CurrentCultureRecord.Code == SupportedCultures.DefaultCode
                 ? $"/{country}"
@@ -695,7 +701,7 @@ else
     }
 
     private RenderFragment Logo => @<text>
-        <a href="@HomeHref" class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-tertiary no-underline">
+        <a href="@HomeHref" data-scroll-top class="flex shrink-0 items-center gap-2 text-2xl font-black tracking-tighter text-tertiary no-underline">
             <img src="images/klacks-logo.svg" class="w-8 h-8 shrink-0" alt="Klacks Logo" />
             Klacks
         </a>

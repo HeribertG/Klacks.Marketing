@@ -1,10 +1,13 @@
 // Keeps the body mode class in sync with Blazor Server's in-circuit navigation, which re-patches the DOM without a
-// reload (same reason as locale-direction.js), and lets Space activate the expert-mode switch link like Enter.
+// reload (same reason as locale-direction.js), lets Space activate the expert-mode switch link like Enter and scrolls
+// to the top when a link marked data-scroll-top (the logo) is clicked, also when it points at the page already shown,
+// where Blazor's link interception would otherwise not move the page.
 // Does nothing while the feature is off (empty mode class). Stores nothing.
 window.klacksMode = (function () {
     var MODE_CLASSES = ['mode-simple', 'mode-expert'];
     var SWITCH_SELECTOR = 'a[role="switch"]';
     var SPACE_KEYS = [' ', 'Spacebar'];
+    var SCROLL_TOP_SELECTOR = 'a[data-scroll-top]';
 
     function apply(modeClass) {
         if (!modeClass) {
@@ -24,6 +27,15 @@ window.klacksMode = (function () {
         if (target) {
             ev.preventDefault();
             target.click();
+        }
+    });
+
+    document.addEventListener('click', function (ev) {
+        if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || !ev.target.closest) {
+            return;
+        }
+        if (ev.target.closest(SCROLL_TOP_SELECTOR)) {
+            window.scrollTo(0, 0);
         }
     });
 
