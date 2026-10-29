@@ -24,6 +24,9 @@ export const BREAK_MINUTES = 30;
 export const CONTAINER_ROUTE_PATTERN = /^\/workplace\/container-template\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export const NOVEMBER_2026 = Object.freeze({ year: 2026, month: 11, isoWeek: 45 });
 
+export const RECORDING_WINDOW = Object.freeze({ from: "2026-10-30", until: D.DEMO_DAY });
+export const ENV_ANY_DATE = "KLACKS_SPITEX_ANY_DATE";
+
 const API_ROOT = "/api/backend/";
 const GROUPS_TREE_API = `${API_ROOT}Groups/tree`;
 const SHIFT_LIST_API = `${API_ROOT}${SHIFT_LIST_PATH}`;
@@ -230,4 +233,18 @@ export async function nurseWorks(api, group, nurse) {
     otherDays: works.filter((e) => dateKey(e.entryDate) !== D.DEMO_DAY).length,
     rows: works.filter((e) => dateKey(e.entryDate) === D.DEMO_DAY).map((e) => `${hhmm(e.startTime)}-${hhmm(e.endTime)}`),
   };
+}
+
+/**
+ * The sentences "the visits on Thursday" / "the tour on Thursday" carry no date, so the language model resolves "Thursday" from today's date:
+ * only from the day after the last Thursday before DEMO_DAY up to DEMO_DAY itself that is DEMO_DAY. Returns the reason when a take started
+ * on `now` would be judged against the wrong Thursday, null inside the window (or with KLACKS_SPITEX_ANY_DATE=1).
+ * @param now - the recording machine's current date (local calendar day)
+ * @param env - process environment, only KLACKS_SPITEX_ANY_DATE is read
+ */
+export function recordingDateProblem(now = new Date(), env = process.env) {
+  if (env[ENV_ANY_DATE] === "1") return null;
+  const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  if (today >= RECORDING_WINDOW.from && today <= RECORDING_WINDOW.until) return null;
+  return `today is ${today}: "Thursday" only means ${D.DEMO_DAY} from ${RECORDING_WINDOW.from} to ${RECORDING_WINDOW.until} (set ${ENV_ANY_DATE}=1 to record anyway and expect the date checks to fail)`;
 }

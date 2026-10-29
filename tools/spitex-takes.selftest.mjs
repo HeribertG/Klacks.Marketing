@@ -126,6 +126,15 @@ function testBundleParameters() {
   assert.ok(T.bundleParameterProblems(null, group).length > 0);
 }
 
+function testRecordingWindow() {
+  const at = (iso) => new Date(`${iso}T12:00:00`);
+  assert.equal(T.recordingDateProblem(at("2026-10-30"), {}), null);
+  assert.equal(T.recordingDateProblem(at("2026-11-05"), {}), null);
+  assert.match(T.recordingDateProblem(at("2026-10-29"), {}), /Thursday/);
+  assert.match(T.recordingDateProblem(at("2026-11-06"), {}), /2026-11-05/);
+  assert.equal(T.recordingDateProblem(at("2026-11-20"), { [T.ENV_ANY_DATE]: "1" }), null);
+}
+
 function testOrderCounts() {
   const open = Object.fromEntries(D.SPITEX_ABBREVIATIONS.map((a) => [a, { open: 1, sealed: 0 }]));
   const sealed = Object.fromEntries(D.SPITEX_ABBREVIATIONS.map((a) => [a, { open: 0, sealed: 1 }]));
@@ -184,6 +193,7 @@ async function testStoryCaptions() {
 testVisitProblems();
 testBreakProblems();
 testBundleParameters();
+testRecordingWindow();
 testOrderCounts();
 await testShippedTexts();
 await testStoryCaptions();

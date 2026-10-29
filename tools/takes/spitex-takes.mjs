@@ -24,6 +24,7 @@
 
 import * as S from "../lib/klacks-demo-session.mjs";
 import { ScreenRecorder } from "../lib/screen-recorder.mjs";
+import { CAPTION_ID } from "../lib/caption-overlay.mjs";
 import { SEL_ASSISTANT_INPUT, SKILL_ERROR_PREFIX, sendChatMessage } from "../lib/klacksy-chat.mjs";
 import { CANVAS_SETTLE_MS, HALF, HTTP_POST, SEL_GRID_CANVAS, SEL_NAME_ROWS, openSchedule } from "../lib/schedule-grid.mjs";
 import { SEL_READONLY, SEL_SELECTED_ROWS, SEL_TIME_RULER, SEL_WEEKDAY_BUTTONS, leaveEditor } from "../lib/container-editor.mjs";
@@ -78,6 +79,8 @@ const LOG_PREVIEW_CHARS = 220;
 const CHAT_PANEL_PX = 450;
 const MAP_MIN_BOX = Object.freeze({ width: 300, height: 150 });
 const VIEWPORT_MARGIN_PX = 8;
+const CAPTION_GAP_PX = 6;
+const MAP_CAPTION_COVER_MAX = 0.1;
 const LIST_SCROLL = Object.freeze({ x: 500, y: 450, maxTicks: 14, tickPx: 100, tickPauseMs: 150 });
 
 const SHIFT_ROUTE = "/workplace/shift";
@@ -85,6 +88,7 @@ const SCHEDULE_ROUTE = "/workplace/schedule";
 const CONTAINER_ROUTE = "/workplace/container-template";
 const SEL_SHIFT_LIST = "#allShiftForm";
 const SEL_SHIFT_ROWS = "#allShiftForm tbody tr";
+const SEL_ABSENCE_ROWS = "#selected-tasks-list tr.absence-item";
 const SEL_MAP_TOGGLE = "button.route-map-toggle";
 const SEL_MAP_CANVAS = ".route-map-canvas";
 const SEL_STOP_MARKERS = ".route-map-stop-marker";
@@ -151,9 +155,22 @@ async function waitForOrderRows(page, expected) {
   return { table, rows: await page.locator(SEL_SHIFT_ROWS).count(), ordersShown: shown, firstRowIsOrder: T.SPITEX_ORDERS.some((o) => firstRow.includes(o.name)) };
 }
 
+async function captionBox(page) {
+  return page.locator(`#${CAPTION_ID}`).boundingBox().catch(() => null);
+}
+
 async function lastRowInside(page, viewport) {
   const box = await page.locator(SEL_SHIFT_ROWS).last().boundingBox().catch(() => null);
-  return Boolean(box) && box.y >= 0 && box.y + box.height <= viewport.height - VIEWPORT_MARGIN_PX;
+  const caption = await captionBox(page);
+  const bottomLimit = Math.min(viewport.height - VIEWPORT_MARGIN_PX, caption ? caption.y - CAPTION_GAP_PX : Number.POSITIVE_INFINITY);
+  return Boolean(box) && box.y >= 0 && box.y + box.height <= bottomLimit;
+}
+
+function coveredShare(box, cover) {
+  if (!box || !cover) return 0;
+  const width = Math.min(box.x + box.width, cover.x + cover.width) - Math.max(box.x, cover.x);
+  const height = Math.min(box.y + box.height, cover.y + cover.height) - Math.max(box.y, cover.y);
+  return width > 0 && height > 0 ? (width * height) / (box.width * box.height) : 0;
 }
 
 async function scrollListToEnd(page, mouse, viewport) {
@@ -198,6 +215,7 @@ async function showMap(take, { caption, holdMs, chatOpen, stopsNeeded = T.VISIT_
   entry.mapInsideView = Boolean(box) && box.width >= MAP_MIN_BOX.width && box.height >= MAP_MIN_BOX.height
     && box.x >= 0 && box.y >= 0 && box.y + box.height <= viewport.height + 1 && box.x + box.width <= viewport.width - (chatOpen ? CHAT_PANEL_PX : 0) + VIEWPORT_MARGIN_PX;
   if (caption) await captions?.show(caption);
+  entry.captionCoversMap = Number(coveredShare(box, await captionBox(page)).toFixed(2));
   await page.waitForTimeout(holdMs);
   return entry;
 }
@@ -210,6 +228,7 @@ function mapProblems(entry, label, stopsNeeded = T.VISIT_COUNT) {
   if (!entry.tiles) problems.push(`${label}: no map tile was loaded`);
   if (entry.estimatedHint > 0) problems.push(`${label}: the map shows the estimated straight line, not the road route`);
   if (entry.geoNotice > 0) problems.push(`${label}: the map is replaced by the geo service notice`);
+  if (entry.captionCoversMap > MAP_CAPTION_COVER_MAX) problems.push(`${label}: the caption covers ${Math.round(entry.captionCoversMap * 100)} % of the map`);
   if (!entry.mapInsideView) problems.push(`${label}: the map is not fully readable next to the chat panel (${JSON.stringify(entry.mapBox)})`);
   return problems;
 }
@@ -334,6 +353,8 @@ async function takeSpitexOrdersTour(take) {
   const { page, api, options, recorder, mouse, report, viewport, scale } = take;
   const tag = "spitex-orders-tour";
   const post = (apiPath, data) => api.json(apiPath, { method: HTTP_POST, data });
+  const dateProblem = T.recordingDateProblem();
+  if (dateProblem) throw new Error(dateProblem);
   const group = await T.spitexGroup(api);
   report.group = group;
   report.ordersBefore = await T.spitexOrderCounts(post);
@@ -460,6 +481,8 @@ async function takeSpitexTourFinish(take) {
   const { page, api, options, recorder, mouse, report, viewport, scale } = take;
   const tag = "spitex-tour-finish";
   const post = (apiPath, data) => api.json(apiPath, { method: HTTP_POST, data });
+  const dateProblem = T.recordingDateProblem();
+  if (dateProblem) throw new Error(dateProblem);
   const group = await T.spitexGroup(api);
   const nurse = await T.findNurse(api);
   report.group = group;
@@ -512,7 +535,7 @@ async function takeSpitexTourFinish(take) {
       let entry = null;
       if (state.breaks > 0 && state.breakProblems.length === 0 && !shown("container-refresh")) {
         const rows = await countAtLeast(page, SEL_SELECTED_ROWS, T.VISIT_COUNT + 1, REFRESH_TIMEOUT_MS);
-        entry = { turn: turnIndex, page: "container-refresh", url: page.url(), reached: true, rows };
+        entry = { turn: turnIndex, page: "container-refresh", url: page.url(), reached: true, rows, breakRows: await page.locator(SEL_ABSENCE_ROWS).count() };
         await page.waitForTimeout(CANVAS_SETTLE_MS);
         entry.map = await showMap(take, { caption: cues.map, holdMs: BEAT.refreshMapHold, chatOpen: true });
       } else if (calls.has(SCHEDULE_SKILL) && !shown(PAGE_SCHEDULE.key)) {
@@ -568,6 +591,7 @@ function tourFinishProblems(report, group, nurse, containerId, template) {
   const refresh = find("container-refresh");
   if (!refresh?.reached) problems.push("the container page was not shown after the break");
   else {
+    if (refresh.breakRows < 1) problems.push("the container page shows no break row after the break (page not refreshed)");
     if (refresh.rows < T.VISIT_COUNT + 1) problems.push(`the container page lists ${refresh.rows} rows after the break, expected ${T.VISIT_COUNT + 1} (page not refreshed)`);
     problems.push(...mapProblems(refresh.map ?? { toggle: false }, "container page after the break"));
   }
