@@ -16,8 +16,8 @@
 #         KLACKS_UI_URL   UI served from a Klacks.Ui build that has order-review-navigation, the tour map (P4) and the container refresh (P5);
 #                         default http://localhost:4210 (the dev UI on 4200 is never used for takes)
 # Optional: PSQL (psql.exe), FFMPEG_PATH, KLACKS_VIDEO_FRAMES_DIR, SPITEX_ATTEMPTS (default 2), SPITEX_DB (default klacks_marketing_spitex)
-# Date window: the sentences say "Thursday" without a date, so the takes refuse to run outside 2026-10-30 .. 2026-11-05 (the language model
-# resolves "Thursday" from today); KLACKS_SPITEX_ANY_DATE=1 overrides and the date checks of the take then fail.
+# Date window: the sentences name "Thursday, 5 November" without a year, so the takes refuse to run outside 2026-01-01 .. 2026-11-05 (the
+# language model takes the year from today); KLACKS_SPITEX_ANY_DATE=1 overrides and the date checks of the take then fail.
 # Prerequisites to check once: the template DB has the Spitex seed (tools/seed-spitex-demo.mjs ran), nothing is connected to it,
 # and Slack/Telegram/LLM background services stay off (start-recording-api.ps1 disables them).
 set -u

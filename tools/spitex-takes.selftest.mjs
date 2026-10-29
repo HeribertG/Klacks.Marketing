@@ -128,9 +128,10 @@ function testBundleParameters() {
 
 function testRecordingWindow() {
   const at = (iso) => new Date(`${iso}T12:00:00`);
-  assert.equal(T.recordingDateProblem(at("2026-10-30"), {}), null);
+  assert.equal(T.recordingDateProblem(at("2026-10-29"), {}), null);
+  assert.equal(T.recordingDateProblem(at("2026-01-01"), {}), null);
   assert.equal(T.recordingDateProblem(at("2026-11-05"), {}), null);
-  assert.match(T.recordingDateProblem(at("2026-10-29"), {}), /Thursday/);
+  assert.match(T.recordingDateProblem(at("2025-12-31"), {}), /5 November/);
   assert.match(T.recordingDateProblem(at("2026-11-06"), {}), /2026-11-05/);
   assert.equal(T.recordingDateProblem(at("2026-11-20"), { [T.ENV_ANY_DATE]: "1" }), null);
 }

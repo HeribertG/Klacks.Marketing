@@ -6,12 +6,12 @@
  * the end (the story builder paints a cover over the panel's settings rows for the whole time the panel is open).
  * spitex-orders-tour (clip A): the planner goes through the eight open Spitex orders with Klacksy (order review, same dialogue as simple-order-review:
  * the guided action is offered, the proposals are taken without expenses, the held execute_order_review is confirmed), the sealed orders show up as
- * plannable shifts, then one sentence bundles the Thursday visits in Winterthur into a container (bundle_nearby_timerange_shifts_into_container);
+ * plannable shifts, then one sentence bundles the visits of Thursday, 5 November, in Winterthur into a container (bundle_nearby_timerange_shifts_into_container);
  * the app opens the container page, the take waits for the eight visits, shows them, switches the tour map on and holds it. The take ends on the
  * container page and leaves it through its back link (releases the container lock) so the database copy can become the start of clip B.
  * spitex-tour-finish (clip B, needs the database copy after a publishable clip A): the container page of the tour is opened with the map on,
  * Klacksy adds the lunch break at 12:00 and optimizes the route again (the page reloads, the take checks its rows and the map), books the tour for the
- * nurse on Thursday (place_work) and opens the schedule on the group and week (open_schedule).
+ * nurse on Thursday, 5 November (place_work) and opens the schedule on the group and week (open_schedule).
  * Every message after the first waits for its condition (checked on the API, never on the answer text alone): recipeOffered, reviewStarted,
  * confirmationPending, executed, bundleHeld (A); breakHeld, routeStale, breakDone, assignHeld, booked (B). A "yes" fallback is skipped when its effect is
  * already there; any other message whose condition is not met is not sent and the take is not publishable. Captions are tied to the messages that always
