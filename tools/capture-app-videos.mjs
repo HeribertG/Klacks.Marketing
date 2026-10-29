@@ -27,7 +27,11 @@
  * stays on screen for less than MIN_VISIBLE_SECONDS of the encoded video or covers the chat input makes the take not publishable.
  * The simple story takes (simple-cover-absence, simple-planning-progress) live in takes/simple-story-takes.mjs and use the same captions;
  * simple-planning-progress crops the schedule header area (960x600 of the 1280x800 viewport) so the 2 px progress line stays readable.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The order review take (simple-order-review, story video 3) lives in takes/order-review-takes.mjs; it needs the seeded database of
+ * seed-order-review-demo.mjs and seals its orders, so every take starts from a fresh copy; it records at 1280x720 so the shift lists and
+ * the schedule next to the open chat panel stay readable, and presets the shift list to five rows per page (initScripts) so all four
+ * orders fit on the first page.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -116,6 +120,15 @@ import {
   VIDEO_SIMPLE_COVER_ABSENCE,
   VIDEO_SIMPLE_PLANNING_PROGRESS,
 } from "./takes/simple-story-takes.mjs";
+import {
+  ORDER_REVIEW_INIT_SCRIPTS,
+  ORDER_REVIEW_TAKE_RUNNERS,
+  ORDER_REVIEW_VIEWPORT,
+  ORDER_REVIEW_VIDEOS,
+  SIMPLE_ORDER_REVIEW_CUES,
+  SIMPLE_ORDER_REVIEW_FINAL_HOLD_MS,
+  VIDEO_SIMPLE_ORDER_REVIEW,
+} from "./takes/order-review-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -130,7 +143,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -446,6 +459,11 @@ const TAKES = {
 ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_COVER_ABSENCE],
     needsScript: true, captionCues: Object.values(SIMPLE_COVER_ABSENCE_CUES),
   },
+  [VIDEO_SIMPLE_ORDER_REVIEW]: {
+    period: NOVEMBER, viewport: ORDER_REVIEW_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: ORDER_REVIEW_TAKE_RUNNERS[VIDEO_SIMPLE_ORDER_REVIEW],
+    needsScript: true, captionCues: Object.values(SIMPLE_ORDER_REVIEW_CUES), finalHoldMs: SIMPLE_ORDER_REVIEW_FINAL_HOLD_MS,
+    initScripts: ORDER_REVIEW_INIT_SCRIPTS,
+  },
   [VIDEO_SIMPLE_PLANNING_PROGRESS]: {
     period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
 ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_PLANNING_PROGRESS]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_PLANNING_PROGRESS],
@@ -510,7 +528,7 @@ async function recordTake(browser, options, shared, video, culture) {
     viewMode: S.VIEW_MODE_TABLE,
     period: definition.period,
     css: definition.css,
-    extraInitScripts: [cursorInitScript(start), DevOverlayGuard.initScript()],
+    extraInitScripts: [cursorInitScript(start), DevOverlayGuard.initScript(), ...(definition.initScripts ?? [])],
   });
   const page = await context.newPage();
   const guard = new DevOverlayGuard(page);

@@ -3385,5 +3385,115 @@
     "zh-TW": {
       "absenceName": "傷病假"
     }
+  },
+  "simple-order-review": {
+    "de": {
+      "messages": [
+        {
+          "text": "Geh die offenen Bestellungen mit mir durch."
+        },
+        {
+          "text": "Ja.",
+          "sendWhen": "recipeOffered"
+        },
+        {
+          "text": "Passt, übernimm alle Vorschläge, keine Spesen.",
+          "sendWhen": "reviewStarted"
+        },
+        {
+          "text": "Ja, mach das.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Ja, zeig sie mir im Einsatzplan.",
+          "sendWhen": "executed"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Go through the open orders with me."
+        },
+        {
+          "text": "Yes.",
+          "sendWhen": "recipeOffered"
+        },
+        {
+          "text": "Fine, take all the proposals, no expenses.",
+          "sendWhen": "reviewStarted"
+        },
+        {
+          "text": "Yes, do it.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Yes, show them to me in the schedule.",
+          "sendWhen": "executed"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Passe en revue les commandes ouvertes avec moi."
+        },
+        {
+          "text": "Oui.",
+          "sendWhen": "recipeOffered"
+        },
+        {
+          "text": "C'est bon, reprends toutes les propositions, sans frais.",
+          "sendWhen": "reviewStarted"
+        },
+        {
+          "text": "Oui, fais-le.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Oui, montre-les-moi dans le planning.",
+          "sendWhen": "executed"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Esamina gli ordini aperti con me."
+        },
+        {
+          "text": "Sì.",
+          "sendWhen": "recipeOffered"
+        },
+        {
+          "text": "Va bene, accetta tutte le proposte, senza spese.",
+          "sendWhen": "reviewStarted"
+        },
+        {
+          "text": "Sì, fallo.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Sì, esegui ora.",
+          "sendWhen": "confirmationPending"
+        },
+        {
+          "text": "Sì, mostrameli nel piano di servizio.",
+          "sendWhen": "executed"
+        }
+      ]
+    }
   }
 }

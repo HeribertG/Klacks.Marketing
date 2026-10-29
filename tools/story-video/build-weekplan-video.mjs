@@ -1,19 +1,28 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Builds story video 2 "Wochenplanung" of the simple start page for one culture in the recipe of weekplan-recipe.mjs: renders
- * the captions and the end card, cuts the Veo clip, insets the live take simple-plans-week-<culture> over a blurred Veo still,
- * covers the model row, the "autonomous" switch and the greeting bubble (hidden, or re-written for cultures in
- * GREETING_REPLACEMENTS), adds the morning scene and the end card, mixes the Veo sound with a pink-noise bed and writes
- * simple-story-weekplan-<culture>.mp4 / .webm / .webp. Panel side (left for RTL), panel open/close and the greeting window are
- * measured on the take's pixels, so a re-recorded take needs no new numbers. Steps run one after another (low RAM).
- * CLI: --culture <code> --raw <Veo clip of the variant> --out-dir <dir> [--variant standard|headscarf] [--take <file>]
- *      [--captions <file>] [--work-dir <dir>] [--ffmpeg <path>] [--ffprobe <path>]; --culture <code> --detect-only prints the
- *      measured panel and greeting window of the take without encoding
- * @param culture - any of the cultures with a weekplan-captions.<culture>.json; the end card texts come from captions.<culture>.json
- * @param variant - default from the culture: headscarf for ar, id, ms (clip gemini_generated_video_16a58156.mp4, short story),
- *        standard otherwise (clip gemini_generated_video_d838e9c0.mp4); see VARIANTS in weekplan-recipe.mjs
- * @param take - default tools/story-video/source-clips/takes/simple-plans-week-<culture>.mp4 (the recorded app take; not served)
+ * Builds a "take inset" story video of the simple start page for one culture in the recipe of a recipe module (default
+ * weekplan-recipe.mjs, story video 2 "Wochenplanung"): renders the captions and the end card, cuts the Veo clip, insets the
+ * live take <TAKE_PREFIX><culture> over a blurred Veo still, covers the model row, the "autonomous" switch and the greeting
+ * bubble (hidden, or re-written for cultures in GREETING_REPLACEMENTS), adds the morning scene and the end card and writes
+ * <OUTPUT_PREFIX><culture>.mp4 / .webm / .webp. The Veo sound (it carries speech) is never used: quiet background music
+ * (default music/local-forecast-elevator.mp3, CC BY 3.0, credit in its LICENSE file) plays only while the app take with
+ * Klacksy is on screen, faded in and out; the comic scenes and the end card stay silent. --silent writes no audio track. Panel side (left for RTL), panel
+ * open/close and the greeting window are measured on the take's pixels, so a re-recorded take needs no new numbers. Steps
+ * run one after another (low RAM). Every story-specific constant lives in the recipe module; the builder only reads it.
+ * CLI: --culture <code> --raw <Veo clip of the variant> --out-dir <dir> [--recipe <recipe module>] [--variant <name>]
+ *      [--take <file>] [--captions <file>] [--work-dir <dir>] [--music <file> | --silent] [--ffmpeg <path>] [--ffprobe <path>]; --culture <code>
+ *      --detect-only prints the measured panel and greeting window of the take without encoding
+ * @param recipe - recipe module (path relative to the working directory), default tools/story-video/weekplan-recipe.mjs; it must
+ *        export VARIANTS, variantFor, rawSceneSeconds, morningSceneSeconds, captionWindows, CROSSFADES, ENDCARD_SECONDS,
+ *        TAKE_LAYOUT, GREETING_REPLACEMENTS, ALL_CAPTION_KEYS, MORNING_KEY, OUTPUT_PREFIX, TAKE_PREFIX, CAPTIONS_PREFIX,
+ *        and VIDEO_FPS (the build stops with a list of the missing ones); optional COVER_GREETING
+ *        (default true): false keeps the app greeting visible (the take was recorded with the story's user name)
+ * @param culture - any of the cultures with a <CAPTIONS_PREFIX><culture>.json; the end card texts come from captions.<culture>.json
+ * @param variant - default from variantFor(culture); in weekplan-recipe.mjs headscarf for ar, id, ms (clip
+ *        gemini_generated_video_16a58156.mp4, short story), standard otherwise (clip gemini_generated_video_d838e9c0.mp4)
+ * @param music - licensed music file laid quietly under the app take only, default music/local-forecast-elevator.mp3
+ * @param take - default tools/story-video/source-clips/takes/<TAKE_PREFIX><culture>.mp4 (the recorded app take; not served)
  * Exit code 1 when a check fails (caption over two lines, glyphs not in the font, reading speed, panel or greeting not found);
  * the video is still written so the frames can be inspected.
  */
@@ -21,31 +30,45 @@
 import { execFile } from "node:child_process";
 import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { parseArgs, promisify } from "node:util";
 import { findCaptionsFile, findProfile, normalizeCulture, renderSettings } from "./culture-profile.mjs";
 import { renderCaptions, renderEndcard } from "./render-overlays.mjs";
 import { FINAL_CODEC, POSTER_CODEC, SEGMENT_CODEC, WEBM_CODEC } from "./story-recipe.mjs";
-import {
+
+const run = promisify(execFile);
+const toolDir = path.dirname(fileURLToPath(import.meta.url));
+const DEFAULT_RECIPE = "weekplan-recipe.mjs";
+const RECIPE_EXPORTS = Object.freeze(["ALL_CAPTION_KEYS", "CAPTIONS_PREFIX", "CROSSFADES", "ENDCARD_SECONDS", "GREETING_REPLACEMENTS", "MORNING_KEY",
+  "OUTPUT_PREFIX", "TAKE_LAYOUT", "TAKE_PREFIX", "VARIANTS", "VIDEO_FPS", "captionWindows", "morningSceneSeconds", "rawSceneSeconds", "variantFor"]);
+const CLI_OPTIONS = Object.freeze({
+  culture: { type: "string" }, raw: { type: "string" }, "out-dir": { type: "string" }, take: { type: "string" }, recipe: { type: "string" },
+  captions: { type: "string" }, "work-dir": { type: "string" }, music: { type: "string" }, silent: { type: "boolean" }, variant: { type: "string" }, "detect-only": { type: "boolean" }, ffmpeg: { type: "string" }, ffprobe: { type: "string" },
+});
+const { values: cli } = parseArgs({ options: CLI_OPTIONS });
+const recipe = await import(pathToFileURL(cli.recipe ? path.resolve(cli.recipe) : path.join(toolDir, DEFAULT_RECIPE)).href);
+const absent = RECIPE_EXPORTS.filter((name) => recipe[name] === undefined);
+if (absent.length > 0) throw new Error(`recipe module lacks export(s): ${absent.join(", ")}`);
+const {
   ALL_CAPTION_KEYS,
-  AUDIO_FADE_SECONDS,
+  CAPTIONS_PREFIX,
   CROSSFADES,
   ENDCARD_SECONDS,
   GREETING_REPLACEMENTS,
-  NOISE,
+  MORNING_KEY,
   OUTPUT_PREFIX,
   TAKE_LAYOUT,
+  TAKE_PREFIX,
   VARIANTS,
   VIDEO_FPS,
   captionWindows,
   morningSceneSeconds,
   rawSceneSeconds,
   variantFor,
-} from "./weekplan-recipe.mjs";
-
-const run = promisify(execFile);
-const toolDir = path.dirname(fileURLToPath(import.meta.url));
+} = recipe;
 const MAX_BUFFER_BYTES = 1 << 30;
+const MS_PER_SECOND = 1000;
+const MUSIC = Object.freeze({ file: "music/local-forecast-elevator.mp3", volume: 0.18, fadeInSeconds: 0.5, fadeOutSeconds: 2.5, sampleRate: 48000 });
 const DECIMALS = 3;
 const BYTES_RGB = 3;
 const PROBE_ROWS = 2;
@@ -61,22 +84,16 @@ const REFERENCE_AFTER_OPEN = 1.0;
 const GREETING_DIFF_THRESHOLD = 8;
 const DUMMY_CAPTION = "-";
 const DUMMY_KEYS = Object.freeze(["y1", "y2"]);
-const MORNING_KEY = "x1";
 const PIX_RGB = "rgb24";
 const PIX_GRAY = "gray";
 const FILES = Object.freeze({ raw: "a.mp4", take: "b.mp4", morning: "c.mp4", endcard: "e.mp4", still: "bg.png" });
-const EXT = Object.freeze({ mp4: ".mp4", webm: ".webm", poster: ".webp" });
+const EXT = Object.freeze({ mp4: ".mp4", webm: ".webm", poster: ".webp", json: ".json" });
 
 const num = (value) => String(Number(value.toFixed(DECIMALS)));
 const segmentEncode = () => ["-c:v", SEGMENT_CODEC.codec, "-crf", String(SEGMENT_CODEC.crf), "-preset", SEGMENT_CODEC.preset, "-pix_fmt", SEGMENT_CODEC.pixFmt, "-r", String(VIDEO_FPS), "-an"];
 
 function readOptions() {
-  const { values } = parseArgs({
-    options: {
-      culture: { type: "string" }, raw: { type: "string" }, "out-dir": { type: "string" }, take: { type: "string" },
-      captions: { type: "string" }, "work-dir": { type: "string" }, variant: { type: "string" }, "detect-only": { type: "boolean" }, ffmpeg: { type: "string" }, ffprobe: { type: "string" },
-    },
-  });
+  const values = cli;
   const detectOnly = values["detect-only"] === true;
   const missing = (detectOnly ? ["culture"] : ["culture", "raw", "out-dir"]).filter((k) => !values[k]);
   if (missing.length > 0) throw new Error(`missing option(s): ${missing.map((k) => `--${k}`).join(", ")}`);
@@ -91,8 +108,8 @@ function readOptions() {
     variant: VARIANTS[variantName],
     raw: values.raw ? path.resolve(values.raw) : null,
     outDir,
-    take: path.resolve(values.take ?? path.join(toolDir, "source-clips", "takes", `simple-plans-week-${culture}${EXT.mp4}`)),
-    captionsFile: values.captions ? path.resolve(values.captions) : path.join(toolDir, `weekplan-captions.${culture}.json`),
+    take: path.resolve(values.take ?? path.join(toolDir, "source-clips", "takes", `${TAKE_PREFIX}${culture}${EXT.mp4}`)),
+    captionsFile: values.captions ? path.resolve(values.captions) : path.join(toolDir, `${CAPTIONS_PREFIX}${culture}${EXT.json}`),
     workDir: path.resolve(values["work-dir"] ?? path.join(outDir, `work-weekplan-${culture}`)),
     tools: { ffmpeg: values.ffmpeg ?? process.env.FFMPEG_PATH ?? "ffmpeg", ffprobe: values.ffprobe ?? process.env.FFPROBE_PATH ?? "ffprobe" },
   };
@@ -182,9 +199,12 @@ function drawtextLines(replacement, offsetX, enable) {
 function takeFilter(panel, greeting, replacement, coverColor) {
   const L = TAKE_LAYOUT;
   const panelWindow = `between(t,${num(panel.openAt)},${num(panel.closeAt)})`;
-  const greetWindow = `between(t,${num(greeting.fromAt)},${num(greeting.endAt)})`;
   const filters = [`fps=${VIDEO_FPS}`,
     `drawbox=x=${panel.x}:y=${L.settingsRows.y}:w=${L.panelWidth}:h=${L.settingsRows.height}:color=${L.coverColor}:t=fill:enable='${panelWindow}'`];
+  if (!greeting) {
+    return filters.join(",");
+  }
+  const greetWindow = `between(t,${num(greeting.fromAt)},${num(greeting.endAt)})`;
   if (replacement) {
     const b = replacement.box;
     filters.push(`drawbox=x=${b.x}:y=${b.y}:w=${b.width}:h=${b.height}:color=${L.coverColor}:t=fill:enable='${greetWindow}'`);
@@ -228,33 +248,31 @@ async function buildMorning(tools, raw, variant, caption, window, file) {
     "-map", "[v]", ...segmentEncode(), file]);
 }
 
-async function mux(tools, variant, seg, raw, outBase) {
+async function mux(tools, seg, outBase) {
   const [dA, dB, dC] = [await durationOf(tools, seg.raw), await durationOf(tools, seg.take), await durationOf(tools, seg.morning)];
   const x = CROSSFADES;
   const oB = dA - x.toTake, oC = oB + dB - x.toMorning, oE = oC + dC - x.toEndcard, total = oE + ENDCARD_SECONDS;
-  const morning = morningSceneSeconds(variant);
-  const rawSeconds = rawSceneSeconds(variant);
-  const ms = (s) => Math.round(s * 1000);
-  const a = AUDIO_FADE_SECONDS;
-  const parts = variant.rawParts;
-  const m = variant.morning;
   const graph = [
     `[0:v][1:v]xfade=transition=fade:duration=${x.toTake}:offset=${num(oB)}[ab]`,
     `[ab][2:v]xfade=transition=fade:duration=${x.toMorning}:offset=${num(oC)}[abc]`,
     `[abc][3:v]xfade=transition=fadewhite:duration=${x.toEndcard}:offset=${num(oE)},format=yuv420p[v]`,
-    `[4:a]aformat=channel_layouts=stereo,aresample=${NOISE.sampleRate},asplit=${parts.length + 1}${parts.map((_, i) => `[r${i}]`).join("")}[rm]`,
-    ...parts.map((p, i) => `[r${i}]atrim=${p.from}:${p.to},asetpts=PTS-STARTPTS,atempo=${p.speed}[q${i}]`),
-    `${parts.map((_, i) => `[q${i}]`).join("")}concat=n=${parts.length}:v=0:a=1,afade=t=out:st=${num(rawSeconds - a.rawOut)}:d=${a.rawOut}[aa]`,
-    `[rm]atrim=${m.from}:${m.to},asetpts=PTS-STARTPTS,atempo=${m.speed},afade=t=in:d=${a.morningIn},afade=t=out:st=${num(morning - a.morningOut)}:d=${a.morningOut},adelay=${ms(oC)}|${ms(oC)}[ac]`,
-    `anoisesrc=color=${NOISE.color}:amplitude=${NOISE.amplitude}:sample_rate=${NOISE.sampleRate}:seed=${NOISE.seed},lowpass=f=${NOISE.lowpassHz},aformat=channel_layouts=stereo,atrim=0:${num(total)},afade=t=out:st=${num(total - NOISE.fadeOutSeconds)}:d=${NOISE.fadeOutSeconds}[bed]`,
-    `[aa][ac][bed]amix=inputs=3:normalize=0:duration=longest,atrim=0:${num(total)}[a]`,
   ];
+  const inputs = ["-i", seg.raw, "-i", seg.take, "-i", seg.morning, "-i", seg.endcard];
   const f = FINAL_CODEC;
+  const music = cli.silent ? null : cli.music ? path.resolve(cli.music) : path.join(toolDir, MUSIC.file);
+  let audio = ["-an"];
+  if (music) {
+    inputs.push("-stream_loop", "-1", "-i", music);
+    const delayMs = Math.round(oB * MS_PER_SECOND);
+    graph.push(`[4:a]aformat=channel_layouts=stereo,aresample=${MUSIC.sampleRate},volume=${MUSIC.volume},atrim=0:${num(dB)},afade=t=in:d=${MUSIC.fadeInSeconds},afade=t=out:st=${num(dB - MUSIC.fadeOutSeconds)}:d=${MUSIC.fadeOutSeconds},adelay=${delayMs}|${delayMs},apad=whole_dur=${num(total)},atrim=0:${num(total)}[a]`);
+    audio = ["-map", "[a]", "-c:a", f.audioCodec, "-b:a", f.audioBitrate];
+  }
   const mp4 = `${outBase}${EXT.mp4}`;
-  await ffmpeg(tools, ["-i", seg.raw, "-i", seg.take, "-i", seg.morning, "-i", seg.endcard, "-i", raw, "-filter_complex", graph.join(";"), "-map", "[v]", "-map", "[a]",
-    "-c:v", f.codec, "-crf", String(f.crf), "-preset", f.preset, "-pix_fmt", f.pixFmt, "-c:a", f.audioCodec, "-b:a", f.audioBitrate, "-movflags", "+faststart", mp4]);
+  await ffmpeg(tools, [...inputs, "-filter_complex", graph.join(";"), "-map", "[v]", ...audio,
+    "-c:v", f.codec, "-crf", String(f.crf), "-preset", f.preset, "-pix_fmt", f.pixFmt, "-movflags", "+faststart", mp4]);
   const w = WEBM_CODEC;
-  await ffmpeg(tools, ["-i", mp4, "-c:v", w.codec, "-crf", String(w.crf), "-b:v", "0", "-row-mt", "1", "-c:a", w.audioCodec, "-b:a", w.audioBitrate, `${outBase}${EXT.webm}`]);
+  const webmAudio = music ? ["-c:a", w.audioCodec, "-b:a", w.audioBitrate] : ["-an"];
+  await ffmpeg(tools, ["-i", mp4, "-c:v", w.codec, "-crf", String(w.crf), "-b:v", "0", "-row-mt", "1", ...webmAudio, `${outBase}${EXT.webm}`]);
   const p = POSTER_CODEC;
   await ffmpeg(tools, ["-i", mp4, "-frames:v", "1", "-c:v", p.codec, "-quality", String(p.quality), "-compression_level", String(p.compressionLevel), `${outBase}${EXT.poster}`]);
   return { total, offsets: { take: oB, morning: oC, endcard: oE } };
@@ -263,9 +281,11 @@ async function mux(tools, variant, seg, raw, outBase) {
 async function detectTake(o) {
   const fps = await frameRateOf(o.tools, o.take);
   const panel = await detectPanel(o.tools, o.take, fps);
-  const greeting = await detectGreeting(o.tools, o.take, fps, panel);
-  const coverColor = await chatBackground(o.tools, o.take, panel, greeting);
-  console.log(`take ${path.basename(o.take)}: panel ${panel.side} x=${panel.x} open ${num(panel.openAt)}-${num(panel.closeAt)} s; greeting cover h=${greeting.height} ${num(greeting.fromAt)}-${num(greeting.endAt)} s, colour ${coverColor}`);
+  const coverGreeting = recipe.COVER_GREETING ?? true;
+  const greeting = coverGreeting ? await detectGreeting(o.tools, o.take, fps, panel) : null;
+  const coverColor = coverGreeting ? await chatBackground(o.tools, o.take, panel, greeting) : null;
+  const greetingNote = coverGreeting ? `greeting cover h=${greeting.height} ${num(greeting.fromAt)}-${num(greeting.endAt)} s, colour ${coverColor}` : "greeting kept";
+  console.log(`take ${path.basename(o.take)}: panel ${panel.side} x=${panel.x} open ${num(panel.openAt)}-${num(panel.closeAt)} s; ${greetingNote}`);
   return { panel, greeting, coverColor };
 }
 
@@ -316,7 +336,7 @@ async function main() {
   await ffmpeg(o.tools, ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", String(ENDCARD_SECONDS), "-i", card.file, "-vf", "scale=1280:720,format=yuv420p", ...segmentEncode(), seg.endcard]);
 
   await mkdir(o.outDir, { recursive: true });
-  const result = await mux(o.tools, o.variant, seg, o.raw, path.join(o.outDir, `${OUTPUT_PREFIX}${o.culture}`));
+  const result = await mux(o.tools, seg, path.join(o.outDir, `${OUTPUT_PREFIX}${o.culture}`));
   console.log(`${OUTPUT_PREFIX}${o.culture} (${o.variantName}): ${num(result.total)} s (take from ${num(result.offsets.take)} s, morning from ${num(result.offsets.morning)} s, end card from ${num(result.offsets.endcard)} s)`);
   if (problems.length > 0) {
     for (const p of problems) console.error(`! ${p}`);

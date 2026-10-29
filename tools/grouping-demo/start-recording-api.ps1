@@ -4,7 +4,8 @@
 # (a database copy carries real bot tokens). The DataProtection keys are copied so encrypted settings (LLM keys) can
 # be read; delete <Destination>\DataProtection-Keys after recording.
 # Usage: .\start-recording-api.ps1 -Source <Klacks.Api\bin\Debug\net10.0> -Destination <scratch folder>
-# Then record with KLACKS_API_URL=https://localhost:5011 (the tools reroute the UI's calls from 5001).
+# Then record with KLACKS_API_URL=https://localhost:5011 (the tools reroute the UI's calls from 5001). A UI served on another port
+# (KLACKS_UI_URL, e.g. http://localhost:4210) needs its origin in -CorsAdditional, otherwise the browser blocks every API call.
 
 param(
     [Parameter(Mandatory = $true)][string]$Source,
@@ -12,7 +13,8 @@ param(
     [string]$KeysFolder = 'C:\SourceCode\Klacks.Api\DataProtection-Keys',
     [string]$Database = 'klacks_marketing_grouping',
     [string]$Urls = 'https://localhost:5011;http://localhost:5010',
-    [string]$LogFile = 'C:\SourceCode\klacks-api-rec.log'
+    [string]$LogFile = 'C:\SourceCode\klacks-api-rec.log',
+    [string]$CorsAdditional = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -36,6 +38,7 @@ $disabled = @(
     'GoalPlanExecutionRetry', 'PlanApprovalTimeout', 'RosterPublicationCheck', 'SealOpenOrdersJob', 'UpdateDetection',
     'WizardRunCaptureMeasurement'
 )
+if ($CorsAdditional) { $env:Cors__Additional = $CorsAdditional }
 foreach ($service in $disabled) { Set-Item -Path "env:BackgroundServices__$service" -Value 'false' }
 
 Start-Process -FilePath (Join-Path $Destination 'Klacks.Api.exe') -WorkingDirectory $Destination `

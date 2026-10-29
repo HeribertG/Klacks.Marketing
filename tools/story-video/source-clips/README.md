@@ -10,5 +10,7 @@ Raw Veo/Gemini clips the story videos are cut from (not served; excluded from th
 | `gemini_generated_video_d838e9c0.mp4` | Story video 2 "Wochenplanung", variant `standard` (`build-weekplan-video.mjs --raw`) |
 | `gemini_generated_video_16a58156.mp4` | Story video 2 "Wochenplanung", variant `headscarf` for ar/id/ms |
 | `takes/simple-plans-week-<culture>.mp4` | App take "Wochenplanung" (25 cultures, captions burned in) inset into story video 2 (`build-weekplan-video.mjs --take`) |
+| `gemini_generated_video_c7b657cc.mp4` | Story video 3 "Neue Bestellungen" (`build-weekplan-video.mjs --recipe order-recipe.mjs --raw`), all cultures |
+| `takes/simple-order-review-<culture>.mp4` | App take "Neue Bestellungen" (order review with Klacksy: orders list, plannable shifts, schedule; captions burned in, 1280x720, fills the frame of story video 3) |
 | `gemini_generated_video_39a4f0ad.mp4` | Klacksy intro clip, scenes 1 and 3 (`build-intro-video.mjs`) |
 | `gemini_generated_video_eefd6d08.mp4` | Klacksy intro clip, scenes 2, 4 and 5 (`build-intro-video.mjs`) |

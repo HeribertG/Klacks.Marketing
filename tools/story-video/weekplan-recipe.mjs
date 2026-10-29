@@ -6,8 +6,15 @@
  * covered, the Veo morning scene and the end card. Two variants: "standard" (56.1 s, frown frames 11.55-15.1 s cut out) and
  * "headscarf" for HEADSCARF_CULTURES (50.3 s, short story with k1, k2 and x1 only; the standard cut must never be shown there).
  * Caption windows are the same for every culture of a variant; the budgets follow from them and MAX_CHARS_PER_SECOND.
+ * Contract of a recipe module for build-weekplan-video.mjs (--recipe <module>), all exports required: VARIANTS, variantFor,
+ * rawSceneSeconds, morningSceneSeconds, captionWindows, CROSSFADES, ENDCARD_SECONDS, TAKE_LAYOUT, GREETING_REPLACEMENTS,
+ * ALL_CAPTION_KEYS, MORNING_KEY, OUTPUT_PREFIX, TAKE_PREFIX, CAPTIONS_PREFIX, VIDEO_FPS, NOISE, AUDIO_FADE_SECONDS.
  * @param GREETING_REPLACEMENTS - cultures whose greeting bubble gets a new text ("Hi, Sandra!") instead of being hidden;
  *        coordinates are take pixels (1000x720) measured on simple-plans-week-de
+ * @param TAKE_PREFIX - file name prefix of the recorded app take, the culture and ".mp4" are appended
+ * @param CAPTIONS_PREFIX - file name prefix of the per-culture caption file next to the builder, the culture and ".json" are appended
+ * @param OUTPUT_PREFIX - file name prefix of the written video, the culture is appended
+ * @param MORNING_KEY - caption key shown inside the morning scene
  */
 
 export const VARIANT_STANDARD = "standard";
@@ -75,7 +82,10 @@ export const GREETING_REPLACEMENTS = Object.freeze({
 });
 
 export const ALL_CAPTION_KEYS = Object.freeze(["k1", "k2", "k3", "k4", "x1"]);
+export const MORNING_KEY = "x1";
 export const OUTPUT_PREFIX = "simple-story-weekplan-";
+export const TAKE_PREFIX = "simple-plans-week-";
+export const CAPTIONS_PREFIX = "weekplan-captions.";
 export const VIDEO_FPS = 30;
 export const NOISE = Object.freeze({ color: "pink", amplitude: 0.04, sampleRate: 48000, seed: 7, lowpassHz: 3500, fadeOutSeconds: 1.5 });
 export const AUDIO_FADE_SECONDS = Object.freeze({ rawOut: 0.8, morningIn: 0.6, morningOut: 0.8 });
@@ -95,6 +105,6 @@ export function morningSceneSeconds(variant) {
 export function captionWindows(variant) {
   const rawEnd = Number((rawSceneSeconds(variant) - CAPTION_END_BEFORE_CROSSFADE).toFixed(2));
   const windows = Object.fromEntries(Object.entries(variant.windows).map(([k, w]) => [k, w.length === 2 ? [...w] : [w[0], rawEnd]]));
-  windows.x1 = [variant.morning.captionFrom, Number((morningSceneSeconds(variant) - CAPTION_END_GAP).toFixed(2))];
+  windows[MORNING_KEY] = [variant.morning.captionFrom, Number((morningSceneSeconds(variant) - CAPTION_END_GAP).toFixed(2))];
   return windows;
 }
