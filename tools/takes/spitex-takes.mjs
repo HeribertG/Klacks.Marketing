@@ -82,6 +82,7 @@ const VIEWPORT_MARGIN_PX = 8;
 const CAPTION_GAP_PX = 6;
 const MAP_CAPTION_COVER_MAX = 0.1;
 const LIST_SCROLL = Object.freeze({ x: 500, y: 450, maxTicks: 14, tickPx: 100, tickPauseMs: 150 });
+const TABLE_ROWS_PER_ITEM = 2;
 
 const SHIFT_ROUTE = "/workplace/shift";
 const SCHEDULE_ROUTE = "/workplace/schedule";
@@ -148,11 +149,17 @@ async function waitForOrderRows(page, expected) {
   let shown = [];
   while (table && Date.now() < deadline) {
     shown = await ordersInList(page);
-    if (shown.length >= T.VISIT_COUNT) break;
+    if (shown.length >= ordersExpectedOnPage(await page.locator(SEL_SHIFT_ROWS).count())) break;
     await page.waitForTimeout(BEAT.pagePoll);
   }
   const firstRow = table ? await page.locator(SEL_SHIFT_ROWS).first().innerText().catch(() => "") : "";
   return { table, rows: await page.locator(SEL_SHIFT_ROWS).count(), ordersShown: shown, firstRowIsOrder: T.SPITEX_ORDERS.some((o) => firstRow.includes(o.name)) };
+}
+
+/** The list sizes its page to the window height (two table rows per item), so the first page may hold fewer than all orders. */
+function ordersExpectedOnPage(rows) {
+  const items = Math.floor(rows / TABLE_ROWS_PER_ITEM);
+  return items > 0 ? Math.min(T.VISIT_COUNT, items) : T.VISIT_COUNT;
 }
 
 async function captionBox(page) {
@@ -464,7 +471,7 @@ function ordersTourPageProblems(pages) {
     const entry = find(expected.key);
     if (!entry?.reached) problems.push(`the ${expected.key} list was not opened`);
     else if (!entry.table) problems.push(`the ${expected.key} list did not show its table`);
-    else if (entry.ordersShown.length < T.VISIT_COUNT || !entry.firstRowIsOrder) problems.push(`the ${expected.key} list showed ${entry.ordersShown.join(",") || "none"} of the orders`);
+    else if (entry.ordersShown.length < ordersExpectedOnPage(entry.rows) || !entry.firstRowIsOrder) problems.push(`the ${expected.key} list showed ${entry.ordersShown.join(",") || "none"} of the orders`);
     else if (!entry.lastRowVisible) problems.push(`the ${expected.key} list was not scrolled to its last row`);
   }
   const container = find(PAGE_CONTAINER.key);
