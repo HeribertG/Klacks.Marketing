@@ -3495,5 +3495,313 @@
         }
       ]
     }
+  },
+  "spitex-orders-tour": {
+    "de": {
+      "messages": [
+        {
+          "text": "Geh die offenen Bestellungen mit mir durch.",
+          "cue": "request"
+        },
+        {
+          "text": "Ja.",
+          "sendWhen": "recipeOffered",
+          "cue": "request"
+        },
+        {
+          "text": "Passt, übernimm alle Vorschläge, keine Spesen.",
+          "sendWhen": "reviewStarted",
+          "cue": "accept"
+        },
+        {
+          "text": "Ja, mach das.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Fasse die Einsätze vom Donnerstag in Winterthur zu einer Tour für die Spitex Winterthur zusammen.",
+          "sendWhen": "executed",
+          "cue": "bundle"
+        },
+        {
+          "text": "Ja.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Go through the open orders with me.",
+          "cue": "request"
+        },
+        {
+          "text": "Yes.",
+          "sendWhen": "recipeOffered",
+          "cue": "request"
+        },
+        {
+          "text": "Fine, take all the proposals, no expenses.",
+          "sendWhen": "reviewStarted",
+          "cue": "accept"
+        },
+        {
+          "text": "Yes, do it.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Combine the Thursday visits in Winterthur into one tour for Spitex Winterthur.",
+          "sendWhen": "executed",
+          "cue": "bundle"
+        },
+        {
+          "text": "Yes.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Passe en revue les commandes ouvertes avec moi.",
+          "cue": "request"
+        },
+        {
+          "text": "Oui.",
+          "sendWhen": "recipeOffered",
+          "cue": "request"
+        },
+        {
+          "text": "C'est bon, reprends toutes les propositions, sans frais.",
+          "sendWhen": "reviewStarted",
+          "cue": "accept"
+        },
+        {
+          "text": "Oui, fais-le.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Regroupe les interventions du jeudi à Winterthur en une tournée pour la Spitex Winterthur.",
+          "sendWhen": "executed",
+          "cue": "bundle"
+        },
+        {
+          "text": "Oui.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Esamina gli ordini aperti con me.",
+          "cue": "request"
+        },
+        {
+          "text": "Sì.",
+          "sendWhen": "recipeOffered",
+          "cue": "request"
+        },
+        {
+          "text": "Va bene, accetta tutte le proposte, senza spese.",
+          "sendWhen": "reviewStarted",
+          "cue": "accept"
+        },
+        {
+          "text": "Sì, fallo.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Sì, esegui ora.",
+          "sendWhen": "confirmationPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Raggruppa gli interventi del giovedì a Winterthur in un giro per la Spitex Winterthur.",
+          "sendWhen": "executed",
+          "cue": "bundle"
+        },
+        {
+          "text": "Sì.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        },
+        {
+          "text": "Sì, esegui ora.",
+          "sendWhen": "bundleHeld",
+          "cue": "bundle"
+        }
+      ]
+    }
+  },
+  "spitex-tour-finish": {
+    "de": {
+      "messages": [
+        {
+          "text": "Füge um 12:00 eine Mittagspause von 30 Minuten ein und optimiere die Route neu.",
+          "cue": "break"
+        },
+        {
+          "text": "Ja.",
+          "sendWhen": "breakHeld",
+          "cue": "break"
+        },
+        {
+          "text": "Ja, optimiere die Route neu.",
+          "sendWhen": "routeStale",
+          "cue": "break"
+        },
+        {
+          "text": "Teile die Tour am Donnerstag Sabrina Arnold zu.",
+          "sendWhen": "breakDone",
+          "cue": "assign"
+        },
+        {
+          "text": "Ja.",
+          "sendWhen": "assignHeld",
+          "cue": "assign"
+        },
+        {
+          "text": "Zeig sie mir im Einsatzplan.",
+          "sendWhen": "booked",
+          "cue": "schedule"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Add a 30-minute lunch break at 12:00 and optimize the route again.",
+          "cue": "break"
+        },
+        {
+          "text": "Yes.",
+          "sendWhen": "breakHeld",
+          "cue": "break"
+        },
+        {
+          "text": "Yes, optimize the route again.",
+          "sendWhen": "routeStale",
+          "cue": "break"
+        },
+        {
+          "text": "Assign the tour to Sabrina Arnold on Thursday.",
+          "sendWhen": "breakDone",
+          "cue": "assign"
+        },
+        {
+          "text": "Yes.",
+          "sendWhen": "assignHeld",
+          "cue": "assign"
+        },
+        {
+          "text": "Show it to me in the schedule.",
+          "sendWhen": "booked",
+          "cue": "schedule"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Ajoute une pause déjeuner de 30 minutes à 12:00 et optimise à nouveau l'itinéraire.",
+          "cue": "break"
+        },
+        {
+          "text": "Oui.",
+          "sendWhen": "breakHeld",
+          "cue": "break"
+        },
+        {
+          "text": "Oui, optimise à nouveau l'itinéraire.",
+          "sendWhen": "routeStale",
+          "cue": "break"
+        },
+        {
+          "text": "Attribue la tournée à Sabrina Arnold pour jeudi.",
+          "sendWhen": "breakDone",
+          "cue": "assign"
+        },
+        {
+          "text": "Oui.",
+          "sendWhen": "assignHeld",
+          "cue": "assign"
+        },
+        {
+          "text": "Montre-la-moi dans le planning.",
+          "sendWhen": "booked",
+          "cue": "schedule"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Aggiungi una pausa pranzo di 30 minuti alle 12:00 e ottimizza di nuovo il percorso.",
+          "cue": "break"
+        },
+        {
+          "text": "Sì.",
+          "sendWhen": "breakHeld",
+          "cue": "break"
+        },
+        {
+          "text": "Sì, ottimizza di nuovo il percorso.",
+          "sendWhen": "routeStale",
+          "cue": "break"
+        },
+        {
+          "text": "Assegna il giro a Sabrina Arnold per giovedì.",
+          "sendWhen": "breakDone",
+          "cue": "assign"
+        },
+        {
+          "text": "Sì.",
+          "sendWhen": "assignHeld",
+          "cue": "assign"
+        },
+        {
+          "text": "Mostramelo nel piano di servizio.",
+          "sendWhen": "booked",
+          "cue": "schedule"
+        }
+      ]
+    }
   }
 }

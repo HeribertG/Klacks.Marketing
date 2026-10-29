@@ -31,7 +31,11 @@
  * seed-order-review-demo.mjs and seals its orders, so every take starts from a fresh copy; it records at 1280x720 so the shift lists and
  * the schedule next to the open chat panel stay readable, and presets the shift list to five rows per page (initScripts) so all four
  * orders fit on the first page.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The two Spitex story takes (spitex-orders-tour: order review of the eight Spitex orders, then the bundle into a container with the tour map;
+ * spitex-tour-finish: lunch break, new route optimization, booking of the nurse, schedule) live in takes/spitex-takes.mjs; they need the seeded
+ * database of seed-spitex-demo.mjs (klacks_marketing_spitex), one fresh copy per take, and clip B needs the copy of the database after a
+ * publishable clip A (tools/spitex-demo/record-spitex.sh does both); both record at 1280x720 and preset the shift list to ten rows per page.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
@@ -129,6 +133,18 @@ import {
   SIMPLE_ORDER_REVIEW_FINAL_HOLD_MS,
   VIDEO_SIMPLE_ORDER_REVIEW,
 } from "./takes/order-review-takes.mjs";
+import {
+  SPITEX_INIT_SCRIPTS,
+  SPITEX_ORDERS_TOUR_CUES,
+  SPITEX_ORDERS_TOUR_FINAL_HOLD_MS,
+  SPITEX_TAKE_RUNNERS,
+  SPITEX_TOUR_FINISH_CUES,
+  SPITEX_TOUR_FINISH_FINAL_HOLD_MS,
+  SPITEX_VIDEOS,
+  SPITEX_VIEWPORT,
+  VIDEO_SPITEX_ORDERS_TOUR,
+  VIDEO_SPITEX_TOUR_FINISH,
+} from "./takes/spitex-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -143,7 +159,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -463,6 +479,16 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     period: NOVEMBER, viewport: ORDER_REVIEW_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: ORDER_REVIEW_TAKE_RUNNERS[VIDEO_SIMPLE_ORDER_REVIEW],
     needsScript: true, captionCues: Object.values(SIMPLE_ORDER_REVIEW_CUES), finalHoldMs: SIMPLE_ORDER_REVIEW_FINAL_HOLD_MS,
     initScripts: ORDER_REVIEW_INIT_SCRIPTS,
+  },
+  [VIDEO_SPITEX_ORDERS_TOUR]: {
+    period: NOVEMBER, viewport: SPITEX_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SPITEX_TAKE_RUNNERS[VIDEO_SPITEX_ORDERS_TOUR],
+    needsScript: true, captionCues: Object.values(SPITEX_ORDERS_TOUR_CUES), finalHoldMs: SPITEX_ORDERS_TOUR_FINAL_HOLD_MS,
+    initScripts: SPITEX_INIT_SCRIPTS,
+  },
+  [VIDEO_SPITEX_TOUR_FINISH]: {
+    period: NOVEMBER, viewport: SPITEX_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SPITEX_TAKE_RUNNERS[VIDEO_SPITEX_TOUR_FINISH],
+    needsScript: true, captionCues: Object.values(SPITEX_TOUR_FINISH_CUES), finalHoldMs: SPITEX_TOUR_FINISH_FINAL_HOLD_MS,
+    initScripts: SPITEX_INIT_SCRIPTS,
   },
   [VIDEO_SIMPLE_PLANNING_PROGRESS]: {
     period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}

@@ -28,5 +28,23 @@
       "confirm": "After your yes they become shifts",
       "schedule": "The shifts are ready in the schedule"
     }
+  },
+  "spitex-orders-tour": {
+    "captions": {
+      "request": "One sentence starts the review",
+      "accept": "Check the proposals and take them",
+      "confirm": "After your yes they become shifts",
+      "bundle": "One sentence bundles them into a tour",
+      "visits": "Visit and travel times are calculated",
+      "map": "The map shows the tour along the roads"
+    }
+  },
+  "spitex-tour-finish": {
+    "captions": {
+      "break": "Add the break, optimize the route again",
+      "map": "The map shows the updated tour",
+      "assign": "You decide who takes the tour",
+      "schedule": "The tour is in the schedule"
+    }
   }
 }
