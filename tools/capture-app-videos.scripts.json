@@ -3514,7 +3514,7 @@
           "cue": "accept"
         },
         {
-          "text": "Ja, mach das.",
+          "text": "Ja, alles ausführen.",
           "sendWhen": "confirmationPending",
           "cue": "confirm"
         },
@@ -3524,8 +3524,38 @@
           "cue": "confirm"
         },
         {
-          "text": "Fasse nur die Einsätze der Spitex Winterthur vom Donnerstag, 5. November, zur Spitex-Tour ab Technikumstrasse 20, 8400 Winterthur zusammen.",
+          "text": "Ja, die übrigen genauso: alle Vorschläge, keine Spesen, ausführen.",
+          "sendWhen": "reviewRemaining",
+          "cue": "confirm"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Ja, jetzt ausführen.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Schneide alle Dienste der Spitex Winterthur nach Wochentagen.",
           "sendWhen": "executed",
+          "cue": "cut"
+        },
+        {
+          "text": "Ja, schneide sie.",
+          "sendWhen": "splitPreviewed",
+          "cue": "cut"
+        },
+        {
+          "text": "Bilde für die Spitex Winterthur ab Technikumstrasse 20, 8400 Winterthur 2 Wochentouren mit dem Namen Spitex Tour, vom 23. bis 27. November, je 08:00–15:30.",
+          "sendWhen": "splitDone",
           "cue": "bundle"
         },
         {
@@ -3557,7 +3587,7 @@
           "cue": "accept"
         },
         {
-          "text": "Yes, do it.",
+          "text": "Yes, run everything.",
           "sendWhen": "confirmationPending",
           "cue": "confirm"
         },
@@ -3567,8 +3597,38 @@
           "cue": "confirm"
         },
         {
-          "text": "Combine only the Spitex Winterthur visits on Thursday, 5 November, into the Spitex tour from Technikumstrasse 20, 8400 Winterthur.",
+          "text": "Yes, the rest the same way: all proposals, no expenses, run them.",
+          "sendWhen": "reviewRemaining",
+          "cue": "confirm"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Yes, run it now.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Cut all shifts of Spitex Winterthur by weekday.",
           "sendWhen": "executed",
+          "cue": "cut"
+        },
+        {
+          "text": "Yes, cut them.",
+          "sendWhen": "splitPreviewed",
+          "cue": "cut"
+        },
+        {
+          "text": "Build 2 weekly tours named Spitex Tour for Spitex Winterthur from Technikumstrasse 20, 8400 Winterthur, 23 to 27 November, each 08:00–15:30.",
+          "sendWhen": "splitDone",
           "cue": "bundle"
         },
         {
@@ -3600,7 +3660,7 @@
           "cue": "accept"
         },
         {
-          "text": "Oui, fais-le.",
+          "text": "Oui, exécute tout.",
           "sendWhen": "confirmationPending",
           "cue": "confirm"
         },
@@ -3610,8 +3670,38 @@
           "cue": "confirm"
         },
         {
-          "text": "Regroupe seulement les visites de la Spitex Winterthur du jeudi 5 novembre en tournée Spitex depuis Technikumstrasse 20, 8400 Winterthur.",
+          "text": "Oui, le reste de la même façon : toutes les propositions, sans frais, exécute.",
+          "sendWhen": "reviewRemaining",
+          "cue": "confirm"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Oui, exécute maintenant.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Découpe tous les services de Spitex Winterthur par jour de la semaine.",
           "sendWhen": "executed",
+          "cue": "cut"
+        },
+        {
+          "text": "Oui, découpe-les.",
+          "sendWhen": "splitPreviewed",
+          "cue": "cut"
+        },
+        {
+          "text": "Crée pour Spitex Winterthur depuis Technikumstrasse 20, 8400 Winterthur 2 tournées hebdomadaires nommées Spitex Tour, du 23 au 27 novembre, chacune de 08:00 à 15:30.",
+          "sendWhen": "splitDone",
           "cue": "bundle"
         },
         {
@@ -3643,18 +3733,48 @@
           "cue": "accept"
         },
         {
-          "text": "Sì, fallo.",
+          "text": "Sì, esegui tutto.",
           "sendWhen": "confirmationPending",
           "cue": "confirm"
         },
         {
-          "text": "Sì, esegui ora.",
+          "text": "Sì, esegui adesso.",
           "sendWhen": "confirmationPending",
           "cue": "confirm"
         },
         {
-          "text": "Raggruppa solo gli interventi della Spitex Winterthur di giovedì 5 novembre nel giro Spitex da Technikumstrasse 20, 8400 Winterthur.",
+          "text": "Sì, gli altri allo stesso modo: tutte le proposte, niente spese, esegui.",
+          "sendWhen": "reviewRemaining",
+          "cue": "confirm"
+        },
+        {
+          "text": "Sì, esegui adesso.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Sì, esegui adesso.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Sì, esegui adesso.",
+          "sendWhen": "remainingPending",
+          "cue": "confirm"
+        },
+        {
+          "text": "Dividi tutti i turni di Spitex Winterthur per giorno della settimana.",
           "sendWhen": "executed",
+          "cue": "cut"
+        },
+        {
+          "text": "Sì, dividili.",
+          "sendWhen": "splitPreviewed",
+          "cue": "cut"
+        },
+        {
+          "text": "Crea per Spitex Winterthur da Technikumstrasse 20, 8400 Winterthur 2 giri settimanali di nome Spitex Tour, dal 23 al 27 novembre, ciascuno dalle 08:00 alle 15:30.",
+          "sendWhen": "splitDone",
           "cue": "bundle"
         },
         {
@@ -3663,7 +3783,7 @@
           "cue": "bundle"
         },
         {
-          "text": "Sì, esegui ora.",
+          "text": "Sì, esegui adesso.",
           "sendWhen": "bundleHeld",
           "cue": "bundle"
         }
@@ -3674,7 +3794,12 @@
     "de": {
       "messages": [
         {
-          "text": "Füge um 12:00 eine Mittagspause von 30 Minuten ein und optimiere die Route neu.",
+          "text": "Trag in Spitex Tour 1 und Spitex Tour 2 an allen Wochentagen um 12:00 eine Mittagspause von 30 Minuten ein und optimiere die Routen neu.",
+          "cue": "break"
+        },
+        {
+          "text": "Nein, trag die Mittagspause direkt in beide Touren ein.",
+          "sendWhen": "breakOffered",
           "cue": "break"
         },
         {
@@ -3683,12 +3808,12 @@
           "cue": "break"
         },
         {
-          "text": "Ja, optimiere die Route neu.",
+          "text": "Ja, optimiere beide Routen neu.",
           "sendWhen": "routeStale",
           "cue": "break"
         },
         {
-          "text": "Teile die Spitex-Tour am Donnerstag, 5. November, Sabrina Arnold zu.",
+          "text": "Plane vom 23. bis 27. November Sabrina Arnold auf den Container Spitex Tour 1 und Daniela Frei auf den Container Spitex Tour 2 ein.",
           "sendWhen": "breakDone",
           "cue": "assign"
         },
@@ -3698,7 +3823,7 @@
           "cue": "assign"
         },
         {
-          "text": "Zeig sie mir im Einsatzplan.",
+          "text": "Zeig mir den Einsatzplan der Spitex Winterthur für die Woche vom 23. November.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
@@ -3707,7 +3832,12 @@
     "en": {
       "messages": [
         {
-          "text": "Add a 30-minute lunch break at 12:00 and optimize the route again.",
+          "text": "Add a 30-minute lunch break at 12:00 on all weekdays to Spitex Tour 1 and Spitex Tour 2 and optimize the routes again.",
+          "cue": "break"
+        },
+        {
+          "text": "No, add the lunch break directly to both tours.",
+          "sendWhen": "breakOffered",
           "cue": "break"
         },
         {
@@ -3716,12 +3846,12 @@
           "cue": "break"
         },
         {
-          "text": "Yes, optimize the route again.",
+          "text": "Yes, optimize both routes again.",
           "sendWhen": "routeStale",
           "cue": "break"
         },
         {
-          "text": "Assign the Spitex tour to Sabrina Arnold on Thursday, 5 November.",
+          "text": "Assign Sabrina Arnold to the container Spitex Tour 1 and Daniela Frei to the container Spitex Tour 2 from 23 to 27 November.",
           "sendWhen": "breakDone",
           "cue": "assign"
         },
@@ -3731,7 +3861,7 @@
           "cue": "assign"
         },
         {
-          "text": "Show it to me in the schedule.",
+          "text": "Show me the Spitex Winterthur schedule for the week of 23 November.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
@@ -3740,7 +3870,12 @@
     "fr": {
       "messages": [
         {
-          "text": "Ajoute une pause déjeuner de 30 minutes à 12:00 et optimise à nouveau l'itinéraire.",
+          "text": "Ajoute à Spitex Tour 1 et Spitex Tour 2, tous les jours de la semaine à 12:00, une pause de midi de 30 minutes et réoptimise les itinéraires.",
+          "cue": "break"
+        },
+        {
+          "text": "Non, ajoute directement la pause de midi aux deux tournées.",
+          "sendWhen": "breakOffered",
           "cue": "break"
         },
         {
@@ -3749,12 +3884,12 @@
           "cue": "break"
         },
         {
-          "text": "Oui, optimise à nouveau l'itinéraire.",
+          "text": "Oui, réoptimise les deux itinéraires.",
           "sendWhen": "routeStale",
           "cue": "break"
         },
         {
-          "text": "Attribue la tournée Spitex à Sabrina Arnold pour le jeudi 5 novembre.",
+          "text": "Planifie du 23 au 27 novembre Sabrina Arnold sur le conteneur Spitex Tour 1 et Daniela Frei sur le conteneur Spitex Tour 2.",
           "sendWhen": "breakDone",
           "cue": "assign"
         },
@@ -3764,7 +3899,7 @@
           "cue": "assign"
         },
         {
-          "text": "Montre-la-moi dans le planning.",
+          "text": "Montre-moi le planning de Spitex Winterthur pour la semaine du 23 novembre.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
@@ -3773,7 +3908,12 @@
     "it": {
       "messages": [
         {
-          "text": "Aggiungi una pausa pranzo di 30 minuti alle 12:00 e ottimizza di nuovo il percorso.",
+          "text": "Aggiungi a Spitex Tour 1 e Spitex Tour 2, in tutti i giorni della settimana alle 12:00, una pausa pranzo di 30 minuti e riottimizza i percorsi.",
+          "cue": "break"
+        },
+        {
+          "text": "No, aggiungi direttamente la pausa pranzo a entrambi i giri.",
+          "sendWhen": "breakOffered",
           "cue": "break"
         },
         {
@@ -3782,12 +3922,12 @@
           "cue": "break"
         },
         {
-          "text": "Sì, ottimizza di nuovo il percorso.",
+          "text": "Sì, riottimizza entrambi i percorsi.",
           "sendWhen": "routeStale",
           "cue": "break"
         },
         {
-          "text": "Assegna il giro Spitex a Sabrina Arnold per giovedì 5 novembre.",
+          "text": "Pianifica dal 23 al 27 novembre Sabrina Arnold sul container Spitex Tour 1 e Daniela Frei sul container Spitex Tour 2.",
           "sendWhen": "breakDone",
           "cue": "assign"
         },
@@ -3797,7 +3937,7 @@
           "cue": "assign"
         },
         {
-          "text": "Mostramelo nel piano di servizio.",
+          "text": "Mostrami il piano turni di Spitex Winterthur per la settimana del 23 novembre.",
           "sendWhen": "booked",
           "cue": "schedule"
         }

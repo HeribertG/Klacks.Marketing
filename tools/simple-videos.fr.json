@@ -36,15 +36,22 @@
       "confirm": "Après votre oui, ce sont des services",
       "bundle": "Une phrase regroupe tout en une tournée",
       "visits": "Visites et trajets sont calculés",
-      "map": "La carte montre la tournée sur les routes"
+      "map": "La carte montre la tournée sur les routes",
+      "cut": "Une phrase découpe par jour",
+      "cutParts": "Lu/Me/Ve donne trois services",
+      "weekdays": "Chaque jour a sa propre tournée",
+      "secondTour": "La deuxième tournée, même semaine"
     }
   },
   "spitex-tour-finish": {
     "captions": {
       "break": "Ajouter la pause, optimiser à nouveau",
+      "breakRow": "Pause de midi ajoutée, horaires recalculés",
       "map": "La carte montre la tournée à jour",
+      "pdf": "La feuille de route en PDF",
       "assign": "Vous décidez qui prend la tournée",
-      "schedule": "La tournée est dans le planning"
+      "schedule": "La tournée est dans le planning",
+      "containers": "Les conteneurs sont dans le planning"
     }
   }
 }

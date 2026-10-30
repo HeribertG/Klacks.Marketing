@@ -41,17 +41,24 @@
       "request": "Ein Satz startet den Durchgang",
       "accept": "Vorschläge prüfen und übernehmen",
       "confirm": "Nach deinem Ja werden es Dienste",
-      "bundle": "Ein Satz bündelt die Dienste zur Tour",
+      "cut": "Ein Satz schneidet nach Wochentagen",
+      "cutParts": "Aus Mo/Mi/Fr werden drei Dienste",
+      "bundle": "Ein Satz baut zwei Wochentouren",
       "visits": "Besuchs- und Wegzeiten sind berechnet",
-      "map": "Die Karte zeigt die Tour auf der Strasse"
+      "weekdays": "Jeder Wochentag hat seine eigene Tour",
+      "map": "Die Karte zeigt die Tour auf der Strasse",
+      "secondTour": "Die zweite Tour, gleiche Woche"
     }
   },
   "spitex-tour-finish": {
     "captions": {
-      "break": "Pause einfügen, Route neu optimieren",
+      "break": "Mittagspause rein, Routen neu optimieren",
+      "breakRow": "Mittagspause eingefügt, Zeiten angepasst",
       "map": "Die Karte zeigt die aktualisierte Tour",
-      "assign": "Du bestimmst, wer die Tour übernimmt",
-      "schedule": "Die Tour steht im Einsatzplan"
+      "pdf": "Das Routenblatt als PDF",
+      "assign": "Du bestimmst, wer welche Tour fährt",
+      "schedule": "Beide Touren stehen im Wochenplan",
+      "containers": "Die Container stehen im Einsatzplan"
     }
   }
 }

@@ -72,6 +72,7 @@ const MUSIC = Object.freeze({ file: "music/local-forecast-elevator.mp3", volume:
 const DECIMALS = 3;
 const BYTES_RGB = 3;
 const PROBE_ROWS = 2;
+const PANEL_GAP_MERGE_SECONDS = 0.5;
 const TEAL = Object.freeze({ minGreenOverRed: 40, minBlueOverRed: 30, maxGreen: 200 });
 const BACKGROUND_TOLERANCE = 12;
 const CONTENT_PIXELS_PER_ROW = 3;
@@ -153,7 +154,19 @@ async function detectPanel(tools, take, fps) {
   const first = open.indexOf(true);
   const last = open.lastIndexOf(true);
   if (first < 0) throw new Error(`${take}: assistant panel not found`);
-  return { x: rightSide ? L.width - L.panelWidth : 0, openAt: first / fps, closeAt: (last + 1) / fps, side: rightSide ? "right" : "left" };
+  return { x: rightSide ? L.width - L.panelWidth : 0, openAt: first / fps, closeAt: (last + 1) / fps, intervals: openIntervals(open, fps), side: rightSide ? "right" : "left" };
+}
+
+/** Time ranges in which the panel is open; a gap shorter than PANEL_GAP_MERGE_SECONDS (slide animation) does not split a range. */
+function openIntervals(open, fps) {
+  const intervals = [];
+  open.forEach((isOpen, i) => {
+    if (!isOpen) return;
+    const last = intervals.at(-1);
+    if (last && i / fps - last[1] < PANEL_GAP_MERGE_SECONDS) last[1] = (i + 1) / fps;
+    else intervals.push([i / fps, (i + 1) / fps]);
+  });
+  return intervals;
 }
 
 function greetingBottom(columnFrame, width, height) {
@@ -198,7 +211,7 @@ function drawtextLines(replacement, offsetX, enable) {
 
 function takeFilter(panel, greeting, replacement, coverColor) {
   const L = TAKE_LAYOUT;
-  const panelWindow = `between(t,${num(panel.openAt)},${num(panel.closeAt)})`;
+  const panelWindow = panel.intervals.map(([from, until]) => `between(t,${num(from)},${num(until)})`).join("+");
   const filters = [`fps=${VIDEO_FPS}`,
     `drawbox=x=${panel.x}:y=${L.settingsRows.y}:w=${L.panelWidth}:h=${L.settingsRows.height}:color=${L.coverColor}:t=fill:enable='${panelWindow}'`];
   if (!greeting) {
@@ -285,7 +298,8 @@ async function detectTake(o) {
   const greeting = coverGreeting ? await detectGreeting(o.tools, o.take, fps, panel) : null;
   const coverColor = coverGreeting ? await chatBackground(o.tools, o.take, panel, greeting) : null;
   const greetingNote = coverGreeting ? `greeting cover h=${greeting.height} ${num(greeting.fromAt)}-${num(greeting.endAt)} s, colour ${coverColor}` : "greeting kept";
-  console.log(`take ${path.basename(o.take)}: panel ${panel.side} x=${panel.x} open ${num(panel.openAt)}-${num(panel.closeAt)} s; ${greetingNote}`);
+  const openRanges = panel.intervals.map(([from, until]) => `${num(from)}-${num(until)}`).join(", ");
+  console.log(`take ${path.basename(o.take)}: panel ${panel.side} x=${panel.x} open ${openRanges} s; ${greetingNote}`);
   return { panel, greeting, coverColor };
 }
 
@@ -332,7 +346,8 @@ async function main() {
   await ffmpeg(o.tools, ["-ss", num(o.variant.backgroundStillAt), "-i", o.raw, "-frames:v", "1", seg.still]);
   await buildRaw(o.tools, o.raw, o.variant, caps.files, windows, seg.raw);
   await buildTake(o.tools, o.take, seg.still, takeFilter(panel, greeting, GREETING_REPLACEMENTS[o.culture], coverColor), seg.take);
-  await buildMorning(o.tools, o.raw, o.variant, caps.files[MORNING_KEY], windows[MORNING_KEY], seg.morning);
+  const morningRaw = o.variant.morningClip ? path.join(path.dirname(o.raw), o.variant.morningClip) : o.raw;
+  await buildMorning(o.tools, morningRaw, o.variant, caps.files[MORNING_KEY], windows[MORNING_KEY], seg.morning);
   await ffmpeg(o.tools, ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", String(ENDCARD_SECONDS), "-i", card.file, "-vf", "scale=1280:720,format=yuv420p", ...segmentEncode(), seg.endcard]);
 
   await mkdir(o.outDir, { recursive: true });

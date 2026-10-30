@@ -69,7 +69,8 @@ export async function sendChatMessage(take, text, hooks = {}) {
   const input = page.locator(SEL_ASSISTANT_INPUT);
   await waitStable(input);
   await mouse.clickLocator(input, MOVE_NORMAL_MS);
-  await input.pressSequentially(text, { delay: TYPE_DELAY_MS });
+  const pace = take.chatPace ?? {};
+  await input.pressSequentially(text, { delay: pace.typeDelayMs ?? TYPE_DELAY_MS });
   const typed = await input.inputValue();
   if (typed !== text) throw new Error(`chat input holds "${typed}" instead of the prompt`);
   const finished = page.waitForEvent("requestfinished", {
@@ -77,12 +78,12 @@ export async function sendChatMessage(take, text, hooks = {}) {
     timeout: CHAT_TURN_TIMEOUT_MS,
   });
   await mouse.clickLocator(page.locator(SEL_ASSISTANT_SEND), MOVE_SHORT_MS);
-  await recorder.beginFast(LLM_FAST_FACTOR);
+  await recorder.beginFast(pace.fastFactor ?? LLM_FAST_FACTOR);
   const request = await finished;
   await recorder.endFast();
   await hooks?.afterAnswer?.();
   const response = await request.response();
   const body = response ? await response.text().catch(() => "") : "";
-  await page.waitForTimeout(READ_ANSWER_MS);
+  await page.waitForTimeout(pace.readAnswerMs ?? READ_ANSWER_MS);
   return { ...parseSse(body), requestBody: request.postDataJSON() };
 }

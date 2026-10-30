@@ -3,10 +3,13 @@
 /**
  * Seeds the Spitex demo of the story clips "Klacksy plans home-care visits in a container" (definition: lib/spitex-demo.mjs) into a
  * klacks_marketing_* copy through the real REST API of the recording API (port 5011; the script refuses every other URL). It creates:
- * the group "Spitex Winterthur" (sibling of the demo group), the branch "Spitex-Stützpunkt Winterthur" (the base address of the tour),
- * eight patients (customers, natural persons) with FIXED coordinates, one nurse (employee) with membership, contract and group
- * membership valid on DEMO_DAY, and eight OPEN TimeRange orders (status 0, one per patient, window 08:00-17:00, 45 minutes, DEMO_DAY
- * only, group "Spitex Winterthur" so the order can be sealed and the review does not map them to the city group "Winterthur" by name).
+ * the group "Spitex Winterthur" (sibling of the demo group), the branch "Spitex-Stützpunkt Winterthur" (the base address of both tours),
+ * twenty-four patients (customers, natural persons) with FIXED coordinates in two clusters, the nursing team (employees of the group with
+ * membership, contract and group membership valid
+ * on DEMO_DAY), the two regular shifts of the team (Früh-/Spätdienst, group "Spitex Winterthur") with the team's works in DEMO_WEEK
+ * (TEAM_WEEK; the two tour nurses are free all week), and twenty-four OPEN TimeRange orders (status 0, one per patient, window
+ * 08:00-17:00, 45 minutes, valid in DEMO_WEEK on the weekly pattern of the patient, all in the group "Spitex Winterthur" so the order can
+ * be sealed and Klacksy can build the tours by group name). There are no subgroups.
  * Open orders of the order review demo (RTB/RRS/REB/RLH) that the template copy carries are deleted, so the review sees only Spitex
  * orders. Idempotent: existing patients/branch/nurse/orders are found by name or abbreviation and reset to the defined state; an
  * already SEALED Spitex order aborts (a take consumed the database: make a fresh copy of the seeded template).
@@ -15,8 +18,9 @@
  * coordinates (Addresses POST/PUT geocode and overwrite them). The branch is a plain address string that the backend geocodes live.
  * The demo user's first name and user name must both be Sandra (only checked; there is no API to rename a user).
  *
- * Self-check (fails the run): every order open exactly once and none sealed, with the defined pattern and group; stored coordinates
- * equal the fixed ones; the nurse is a member of the group on DEMO_DAY with an active contract and membership; ORS routing returns
+ * Self-check (fails the run): every order open exactly once and none sealed, with the defined weekly pattern and group; stored coordinates
+ * equal the fixed ones; every team member belongs to the group on DEMO_DAY with an active contract and membership and has exactly the
+ * planned works of the demo week; ORS routing returns
  * more than two points for two patient coordinates; no foreign open orders remain. Informational (never fails): the other TimeRange
  * tasks that are active on DEMO_DAY's weekday outside the Spitex group.
  * Template database: klacks_marketing_spitex = CREATE DATABASE ... TEMPLATE klacks_marketing_orders (needs Sandra, an LLM model and the
@@ -47,7 +51,12 @@ import {
   ensureSiblingGroup,
   loadGroupEmployees,
   weekdayFlags,
+  findShifts,
+  shiftBody,
+  durationHours,
 } from "./lib/klacks-demo-api.mjs";
+import { SCHEDULE_API, WORK_ENTRY_TYPE, dateKey } from "./lib/schedule-grid.mjs";
+import { buildScheduleFilter } from "./lib/klacks-demo-session.mjs";
 import {
   ORDERS as LEFTOVER_ORDERS,
   SHIFT_STATUS_OPEN_ORDER,
@@ -67,6 +76,10 @@ const URL_BLANK_SEGMENT = "%20";
 const GIVEN_NAME_CLAIM = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname";
 const USER_NAME_CLAIM = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name";
 const MIN_ROUTE_POINTS = 3;
+const WORKS_BULK_PATH = "Works/Bulk";
+const API_SCHEDULE_PATH = SCHEDULE_API.replace("/api/backend/", "");
+const WORKING_DAYS = [1, 2, 3, 4, 5];
+const DEMO_MONTH = Object.freeze({ year: 2026, month: 11, isoWeek: 48 });
 const LOG_PREFIX = "[seed-spitex]";
 
 function log(message) {
@@ -161,23 +174,23 @@ async function findContractId(api) {
   return contracts[0].id;
 }
 
-function nurseBody(contractId, group) {
+function nurseBody(member, contractId, group) {
   return {
     company: "",
-    name: D.NURSE.name,
-    firstName: D.NURSE.firstName,
-    gender: D.NURSE.gender,
+    name: member.name,
+    firstName: member.firstName,
+    gender: member.gender,
     legalEntity: false,
     type: D.CLIENT_TYPE_EMPLOYEE,
     skipAddressValidation: true,
-    addresses: [addressBody(D.NURSE)],
+    addresses: [addressBody(member)],
     membership: { validFrom: D.EMPLOYMENT_VALID_FROM, validUntil: null },
     clientContracts: [{ contractId, fromDate: D.CONTRACT_FROM_DATE, untilDate: null, isActive: true }],
     groupItems: [{ groupId: group.id, validFrom: D.GROUP_MEMBER_VALID_FROM, validUntil: null }],
   };
 }
 
-function nurseGaps(client, contractId, group) {
+function nurseGaps(client, member, contractId, group) {
   const gaps = [];
   if (!client.membership || !D.activeOnDemoDay(client.membership.validFrom, client.membership.validUntil)) gaps.push("membership");
   const contracts = client.clientContracts ?? [];
@@ -185,20 +198,19 @@ function nurseGaps(client, contractId, group) {
   const items = client.groupItems ?? [];
   if (!items.some((i) => i.groupId === group.id && D.activeOnDemoDay(i.validFrom, i.validUntil))) gaps.push("group membership");
   const addresses = client.addresses ?? [];
-  if (addresses.length !== 1 || !addressMatches(addresses[0], D.NURSE)) gaps.push("address");
+  if (addresses.length !== 1 || !addressMatches(addresses[0], member)) gaps.push("address");
   return gaps;
 }
 
-async function ensureNurse(api, group) {
-  const contractId = await findContractId(api);
-  const match = await findPerson(api, D.NURSE, D.CLIENT_TYPE_EMPLOYEE);
+async function ensureNurse(api, member, contractId, group) {
+  const match = await findPerson(api, member, D.CLIENT_TYPE_EMPLOYEE);
   if (!match) {
-    const created = await api.call(HTTP_POST, CLIENTS_PATH, { data: nurseBody(contractId, group) });
+    const created = await api.call(HTTP_POST, CLIENTS_PATH, { data: nurseBody(member, contractId, group) });
     return { id: created.id, contractId, action: "created" };
   }
   const existing = await api.call(HTTP_GET, `${CLIENTS_PATH}/${match.id}`);
-  if (nurseGaps(existing, contractId, group).length === 0) return { id: existing.id, contractId, action: "unchanged" };
-  const body = nurseBody(contractId, group);
+  if (nurseGaps(existing, member, contractId, group).length === 0) return { id: existing.id, contractId, action: "unchanged" };
+  const body = nurseBody(member, contractId, group);
   const keep = (list, isSame) => (list ?? []).filter((entry) => !isSame(entry));
   await api.call(HTTP_PUT, CLIENTS_PATH, {
     data: {
@@ -214,15 +226,15 @@ async function ensureNurse(api, group) {
   return { id: existing.id, contractId, action: "updated" };
 }
 
-function orderBody(person, clientId, group) {
+function orderBody(person, clientId, groups) {
   return {
     name: person.order.name,
     abbreviation: person.order.abbreviation,
     description: "",
     status: SHIFT_STATUS_OPEN_ORDER,
     shiftType: SHIFT_TYPE_TASK,
-    fromDate: D.DEMO_DAY,
-    untilDate: D.DEMO_DAY,
+    fromDate: D.DEMO_WEEK[0],
+    untilDate: D.DEMO_WEEK[D.DEMO_WEEK.length - 1],
     startShift: D.ORDER.start,
     endShift: D.ORDER.end,
     workTime: D.ORDER_WORK_TIME,
@@ -231,8 +243,8 @@ function orderBody(person, clientId, group) {
     isTimeRange: D.ORDER.isTimeRange,
     isSporadic: D.ORDER.isSporadic,
     clientId,
-    ...weekdayFlags([D.DEMO_WEEKDAY]),
-    groups: [group],
+    ...weekdayFlags(person.order.weekdays),
+    groups,
   };
 }
 
@@ -274,39 +286,41 @@ async function retireLeftoverOrders(api, post) {
   return retired;
 }
 
-async function ensureOrder(api, post, person, clientId, group) {
+async function ensureOrder(api, post, person, clientId, groups) {
   const sealed = await ordersWithStatus(post, person.order.abbreviation, SHIFT_STATUS_SEALED_ORDER);
   if (sealed.length > 0) {
     throw new Error(`order ${person.order.abbreviation} is already sealed: this database was consumed by a take, make a fresh copy of the seeded template`);
   }
   const open = await ordersWithStatus(post, person.order.abbreviation, SHIFT_STATUS_OPEN_ORDER);
   if (open.length > 1) throw new Error(`Ambiguous: ${open.length} open orders ${person.order.abbreviation}.`);
-  const desired = orderBody(person, clientId, group);
+  const desired = orderBody(person, clientId, groups);
   if (open.length === 0) {
     const created = await api.call(HTTP_POST, SHIFTS_PATH, { data: desired });
     return { id: created.id, action: "created" };
   }
   const existing = await api.call(HTTP_GET, `${SHIFTS_PATH}/${open[0].id}`);
   await api.call(HTTP_PUT, SHIFTS_PATH, {
-    data: { ...existing, ...desired, id: existing.id, groups: [group], client: undefined },
+    data: { ...existing, ...desired, id: existing.id, groups, client: undefined },
   });
   return { id: existing.id, action: "updated" };
 }
 
-function verifyOrder(stored, person, clientId, group, problems) {
+function verifyOrder(stored, person, clientId, groups, problems) {
   const label = person.order.abbreviation;
   const activeFlags = Object.keys(weekdayFlags([])).filter((flag) => stored[flag]);
   if (stored.status !== SHIFT_STATUS_OPEN_ORDER) problems.push(`${label} status is ${stored.status}`);
   if (!stored.isTimeRange) problems.push(`${label} is not a time-range order`);
   if (stored.clientId !== clientId) problems.push(`${label} is not linked to ${person.name}`);
-  if (D.dateOnly(stored.fromDate) !== D.DEMO_DAY || D.dateOnly(stored.untilDate) !== D.DEMO_DAY) problems.push(`${label} is not limited to ${D.DEMO_DAY}`);
+  if (D.dateOnly(stored.fromDate) !== D.DEMO_WEEK[0] || D.dateOnly(stored.untilDate) !== D.DEMO_WEEK[D.DEMO_WEEK.length - 1]) problems.push(`${label} is not limited to the demo week`);
   if (hhmm(stored.startShift) !== hhmm(D.ORDER.start) || hhmm(stored.endShift) !== hhmm(D.ORDER.end)) problems.push(`${label} window is ${stored.startShift}-${stored.endShift}`);
   if (typeof stored.workTime !== "number" || Math.abs(stored.workTime - D.ORDER_WORK_TIME) > D.WORK_TIME_TOLERANCE) problems.push(`${label} work time is ${stored.workTime}`);
   if (stored.quantity !== D.ORDER.quantity || stored.sumEmployees !== D.ORDER.sumEmployees) problems.push(`${label} quantity/sumEmployees differ`);
-  if (activeFlags.length !== 1 || activeFlags[0] !== D.DEMO_WEEKDAY_FLAG) problems.push(`${label} weekdays are ${activeFlags.join(",") || "none"}`);
+  const expectedFlags = Object.entries(weekdayFlags(person.order.weekdays)).filter(([, active]) => active).map(([flag]) => flag);
+  if (activeFlags.join() !== expectedFlags.join()) problems.push(`${label} weekdays are ${activeFlags.join(",") || "none"}`);
   if (stored.isHoliday || stored.isWeekdayAndHoliday) problems.push(`${label} has a holiday flag`);
-  const groupIds = (stored.groups ?? []).map((g) => g.id);
-  if (groupIds.length !== 1 || groupIds[0] !== group.id) problems.push(`${label} is not exactly in the group "${group.name}"`);
+  const groupIds = (stored.groups ?? []).map((g) => g.id).sort();
+  const expected = groups.map((g) => g.id).sort();
+  if (groupIds.join() !== expected.join()) problems.push(`${label} is not exactly in the groups ${groups.map((g) => `"${g.name}"`).join(" + ")}`);
   if (!stored.abbreviation || !stored.name) problems.push(`${label} lacks name or abbreviation`);
 }
 
@@ -323,14 +337,90 @@ async function verifyPatients(api, patientIds, problems) {
   return checked;
 }
 
-async function verifyNurse(api, nurse, group, problems) {
-  const stored = await api.call(HTTP_GET, `${CLIENTS_PATH}/${nurse.id}`);
-  const gaps = nurseGaps(stored, nurse.contractId, group);
-  if (gaps.length > 0) problems.push(`Nurse is missing on ${D.DEMO_DAY}: ${gaps.join(", ")}`);
+async function verifyTeam(api, team, group, problems) {
   const members = await loadGroupEmployees(api, group.id);
-  if (!members.some((m) => m.id === nurse.id)) problems.push(`Nurse is not listed among the members of "${group.name}"`);
-  const item = (stored.groupItems ?? []).find((i) => i.groupId === group.id);
-  return { id: nurse.id, name: `${D.NURSE.firstName} ${D.NURSE.name}`, groupMemberFrom: D.dateOnly(item?.validFrom), groupMemberUntil: item?.validUntil ?? null, groupMembers: members.length };
+  const checked = [];
+  for (const member of D.TEAM) {
+    const nurse = team.get(member.key);
+    const stored = await api.call(HTTP_GET, `${CLIENTS_PATH}/${nurse.id}`);
+    const gaps = nurseGaps(stored, member, nurse.contractId, group);
+    if (gaps.length > 0) problems.push(`${member.firstName} ${member.name} is missing on ${D.DEMO_DAY}: ${gaps.join(", ")}`);
+    if (!members.some((m) => m.id === nurse.id)) problems.push(`${member.firstName} ${member.name} is not listed among the members of "${group.name}"`);
+    checked.push(`${member.firstName} ${member.name}`);
+  }
+  return { team: checked, groupMembers: members.length };
+}
+
+/**
+ * A new shift can only be created as an order; a sealed order yields its plannable shift (status OriginalShift), which the team's works
+ * are booked on. Finds that plannable shift by name and abbreviation, otherwise posts the sealed order and reads the shift it produced.
+ */
+async function ensureRegularShift(api, def, group) {
+  const definition = { ...def, weekdays: WORKING_DAYS };
+  const plannable = await findShifts(api, definition, SHIFT_TYPE_TASK);
+  if (plannable.length > 1) throw new Error(`Ambiguous: ${plannable.length} plannable shifts ${def.abbreviation}.`);
+  if (plannable.length === 1) return { id: plannable[0].id, action: "unchanged" };
+  await api.call(HTTP_POST, SHIFTS_PATH, { data: { ...shiftBody(definition, SHIFT_TYPE_TASK, group), status: SHIFT_STATUS_SEALED_ORDER } });
+  const created = await findShifts(api, definition, SHIFT_TYPE_TASK);
+  if (created.length !== 1) throw new Error(`sealing the order ${def.abbreviation} produced ${created.length} plannable shifts`);
+  return { id: created[0].id, action: "created" };
+}
+
+async function scheduleWorks(api, group) {
+  const data = await api.call(HTTP_POST, API_SCHEDULE_PATH, { data: { ...buildScheduleFilter(group.id, DEMO_MONTH), startDate: D.DEMO_PERIOD.from, endDate: D.DEMO_PERIOD.until } });
+  return (data?.entries ?? []).filter((e) => e.entryType === WORK_ENTRY_TYPE);
+}
+
+function plannedWorks(team, shiftIds) {
+  const planned = [];
+  for (const member of D.TEAM) {
+    D.TEAM_WEEK[member.key].forEach((shiftKey, index) => {
+      if (shiftKey) planned.push({ member, clientId: team.get(member.key).id, date: D.DEMO_WEEK[index], shift: D.REGULAR_SHIFTS[shiftKey], shiftId: shiftIds[shiftKey] });
+    });
+  }
+  return planned;
+}
+
+const sameWork = (entry, plan) => entry.clientId === plan.clientId && dateKey(entry.entryDate) === plan.date && entry.entryId === plan.shiftId;
+
+async function ensureTeamWeek(api, group, team, shiftIds) {
+  const existing = await scheduleWorks(api, group);
+  const missing = plannedWorks(team, shiftIds).filter((plan) => !existing.some((entry) => sameWork(entry, plan)));
+  if (missing.length === 0) return { created: 0 };
+  await api.call(HTTP_POST, WORKS_BULK_PATH, {
+    data: {
+      periodStart: D.DEMO_PERIOD.from,
+      periodEnd: D.DEMO_PERIOD.until,
+      works: missing.map((plan) => ({
+        clientId: plan.clientId,
+        shiftId: plan.shiftId,
+        currentDate: plan.date,
+        workTime: durationHours(plan.shift.start, plan.shift.end),
+        surcharges: 0,
+        startTime: plan.shift.start,
+        endTime: plan.shift.end,
+        information: "",
+      })),
+    },
+  });
+  return { created: missing.length };
+}
+
+async function verifyTeamWeek(api, group, team, shiftIds, problems) {
+  const existing = await scheduleWorks(api, group);
+  const teamIds = new Set([...team.values()].map((t) => t.id));
+  const weekWorks = existing.filter((e) => teamIds.has(e.clientId) && D.DEMO_WEEK.includes(dateKey(e.entryDate)));
+  const planned = plannedWorks(team, shiftIds);
+  for (const plan of planned) {
+    const found = weekWorks.filter((e) => sameWork(e, plan)).length;
+    if (found !== 1) problems.push(`${plan.member.key} on ${plan.date}: ${found} works of ${plan.shift.abbreviation}, expected 1`);
+  }
+  if (weekWorks.length !== planned.length) problems.push(`the team has ${weekWorks.length} works in the demo week, expected ${planned.length}`);
+  for (const nurse of Object.values(D.TOUR_NURSES)) {
+    const inWeek = weekWorks.filter((e) => e.clientId === team.get(nurse.key).id).length;
+    if (inWeek > 0) problems.push(`${nurse.firstName} ${nurse.name} is not free in the demo week`);
+  }
+  return { works: weekWorks.length, planned: planned.length };
 }
 
 async function verifyRouting(api, problems) {
@@ -361,7 +451,7 @@ async function verifyOpenOrders(api, group, patientIds, problems) {
       continue;
     }
     const full = await api.call(HTTP_GET, `${SHIFTS_PATH}/${matches[0].id}`);
-    verifyOrder(full, person, patientIds.get(person.key), group, problems);
+    verifyOrder(full, person, patientIds.get(person.key), [group], problems);
     stored.push({ abbreviation: person.order.abbreviation, id: full.id, status: full.status });
   }
   return { open: orders.length, foreign, stored };
@@ -442,14 +532,29 @@ async function main() {
       patientActions.push(`${person.name}:${result.action}`);
     }
     log(`patients ${patientActions.join(" ")}`);
-    const nurse = await ensureNurse(api, group);
-    log(`nurse ${D.NURSE.firstName} ${D.NURSE.name} ${nurse.action}`);
+    const contractId = await findContractId(api);
+    const team = new Map();
+    const teamActions = [];
+    for (const member of D.TEAM) {
+      const result = await ensureNurse(api, member, contractId, group);
+      team.set(member.key, result);
+      teamActions.push(`${member.name}:${result.action}`);
+    }
+    log(`team ${teamActions.join(" ")}`);
+    const shiftIds = {};
+    for (const [key, def] of Object.entries(D.REGULAR_SHIFTS)) {
+      const result = await ensureRegularShift(api, def, group);
+      shiftIds[key] = result.id;
+      log(`regular shift ${def.abbreviation} ${result.action}`);
+    }
+    const week = await ensureTeamWeek(api, group, team, shiftIds);
+    log(`team week: ${week.created} works created`);
 
     const retired = await retireLeftoverOrders(api, post);
     if (retired.length > 0) log(`deleted leftover open orders of other demos: ${retired.join(", ")}`);
     const orderActions = [];
     for (const person of D.PATIENTS) {
-      const result = await ensureOrder(api, post, person, patientIds.get(person.key), group);
+      const result = await ensureOrder(api, post, person, patientIds.get(person.key), [group]);
       orderActions.push(`${person.order.abbreviation}:${result.action}`);
     }
     log(`orders ${orderActions.join(" ")}`);
@@ -460,14 +565,15 @@ async function main() {
       demoDay: D.DEMO_DAY,
       retiredLeftoverOrders: retired,
       patients: await verifyPatients(api, patientIds, problems),
-      nurse: await verifyNurse(api, nurse, group, problems),
+      team: await verifyTeam(api, team, group, problems),
+      teamWeek: await verifyTeamWeek(api, group, team, shiftIds, problems),
       orders: await verifyOpenOrders(api, group, patientIds, problems),
       routingPoints: await verifyRouting(api, problems),
       otherTimeRangeTasksOnDemoWeekday: await describeOtherTimeRangeTasks(api, group),
     };
     if (problems.length > 0) throw new Error(`Self-check failed: ${problems.join("; ")}`);
     console.log(JSON.stringify(summary, null, 2));
-    log(`ok: ${D.PATIENTS.length} patients, ${D.PATIENTS.length} open orders on ${D.DEMO_DAY}, nurse in "${group.name}"`);
+    log(`ok: ${D.PATIENTS.length} patients, ${D.PATIENTS.length} open orders in the week of ${D.DEMO_WEEK[0]} in "${group.name}", ${D.TEAM.length} nurses in "${group.name}"`);
   } finally {
     await context.dispose();
   }

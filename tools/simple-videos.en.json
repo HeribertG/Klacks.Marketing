@@ -36,15 +36,22 @@
       "confirm": "After your yes they become shifts",
       "bundle": "One sentence bundles them into a tour",
       "visits": "Visit and travel times are calculated",
-      "map": "The map shows the tour along the roads"
+      "map": "The map shows the tour along the roads",
+      "cut": "One sentence cuts by weekday",
+      "cutParts": "Mon/Wed/Fri becomes three shifts",
+      "weekdays": "Each weekday has its own tour",
+      "secondTour": "The second tour, same week"
     }
   },
   "spitex-tour-finish": {
     "captions": {
       "break": "Add the break, optimize the route again",
+      "breakRow": "Lunch break added, times recalculated",
       "map": "The map shows the updated tour",
+      "pdf": "The route sheet as a PDF",
       "assign": "You decide who takes the tour",
-      "schedule": "The tour is in the schedule"
+      "schedule": "The tour is in the schedule",
+      "containers": "The containers are in the schedule"
     }
   }
 }

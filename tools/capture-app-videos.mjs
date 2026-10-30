@@ -37,7 +37,9 @@
  * publishable clip A (tools/spitex-demo/record-spitex.sh does both); both record at 1280x720 and preset the shift list to ten rows per page.
  * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
- * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
+ *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
+ * Env: KLACKS_VIDEO_MAX_MB (size budget per encoded file, default 1.5 for the site videos; story takes that are cut again may use more),
+ *      KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), FFMPEG_PATH, KLACKS_UI_URL, KLACKS_API_URL, KLACKS_DEMO_GROUP_ID,
  *      KLACKS_VIDEO_FRAMES_DIR. Chat prompts per culture live in capture-app-videos.scripts.json.
  */
 
@@ -176,11 +178,13 @@ const recorderConfig = (viewport, scale) => ({
 });
 const BYTES_PER_KB = 1024;
 const BYTES_PER_MB = BYTES_PER_KB * BYTES_PER_KB;
+const ENV_VIDEO_MAX_MB = "KLACKS_VIDEO_MAX_MB";
+const DEFAULT_VIDEO_MAX_MB = 1.5;
 const ENCODE_TARGET = {
   fps: 25,
   widths: [1500, 1280, 1120, 960],
   crfLadder: { webm: [30, 34, 38, 42, 46], mp4: [22, 25, 28, 31, 34] },
-  maxBytes: 1.5 * BYTES_PER_MB,
+  maxBytes: (Number(process.env[ENV_VIDEO_MAX_MB]) || DEFAULT_VIDEO_MAX_MB) * BYTES_PER_MB,
 };
 
 const VIDEO_NOISE_CSS = `
@@ -231,6 +235,7 @@ function readOptions() {
       "test-take": { type: "boolean", default: false },
       headed: { type: "boolean", default: false },
       "no-encode": { type: "boolean", default: false },
+      "encode-publishable-only": { type: "boolean", default: false },
     },
   });
   const videos = S.splitList(values.videos) ?? ALL_VIDEOS;
@@ -238,6 +243,7 @@ function readOptions() {
   if (unknown.length > 0) throw new Error(`Unknown videos: ${unknown.join(", ")}. Known: ${ALL_VIDEOS.join(", ")}`);
   const ffmpegPath = values.ffmpeg ?? process.env[ENV_FFMPEG];
   const encode = !values["no-encode"];
+  const encodePublishableOnly = values["encode-publishable-only"];
   if (encode && !ffmpegPath) throw new Error(`Pass --ffmpeg or set ${ENV_FFMPEG}.`);
   return {
     ...S.readSessionOptions(values),
@@ -245,6 +251,7 @@ function readOptions() {
     cultures: S.splitList(values.cultures) ?? DEFAULT_CULTURES,
     ffmpegPath,
     encode,
+    encodePublishableOnly,
     framesRoot: path.resolve(values["frames-dir"] ?? process.env[ENV_FRAMES_DIR] ?? DEFAULT_FRAMES_DIR),
     testTake: values["test-take"],
     headed: values.headed,
@@ -635,7 +642,8 @@ async function main() {
         console.log(`> ${name}`);
         try {
           const report = await recordTake(browser, options, shared, video, culture);
-          if (!options.encode) {
+          if (!options.encode || (options.encodePublishableOnly && !report.publishable)) {
+            if (!report.publishable) console.warn(`! ${name}: take did not reach its outcome (${report.failure ?? "see take report"}) - not encoded`);
             results.push({ name, frames: report.framesDir });
             continue;
           }

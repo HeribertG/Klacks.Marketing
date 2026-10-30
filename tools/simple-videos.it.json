@@ -36,15 +36,22 @@
       "confirm": "Dopo il tuo sì diventano turni",
       "bundle": "Una frase li raggruppa in un giro",
       "visits": "Visite e spostamenti sono calcolati",
-      "map": "La mappa mostra il giro sulle strade"
+      "map": "La mappa mostra il giro sulle strade",
+      "cut": "Una frase divide per giorno",
+      "cutParts": "Lu/Me/Ve diventa tre turni",
+      "weekdays": "Ogni giorno ha il suo giro",
+      "secondTour": "Il secondo giro, stessa settimana"
     }
   },
   "spitex-tour-finish": {
     "captions": {
       "break": "Aggiungi la pausa, ottimizza di nuovo",
+      "breakRow": "Pausa pranzo aggiunta, orari ricalcolati",
       "map": "La mappa mostra il giro aggiornato",
+      "pdf": "Il foglio di percorso in PDF",
       "assign": "Decidi tu chi prende il giro",
-      "schedule": "Il giro è nel piano di servizio"
+      "schedule": "Il giro è nel piano di servizio",
+      "containers": "I container sono nel piano turni"
     }
   }
 }

@@ -29,15 +29,15 @@ const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const CULTURES = ["de", "en", "fr", "it"];
 const MAX_CHARS_PER_SECOND = 17;
 const CONDITIONS = {
-  [VIDEO_SPITEX_ORDERS_TOUR]: ["recipeOffered", "reviewStarted", "confirmationPending", "executed", "bundleHeld"],
-  [VIDEO_SPITEX_TOUR_FINISH]: ["breakHeld", "routeStale", "breakDone", "assignHeld", "booked"],
+  [VIDEO_SPITEX_ORDERS_TOUR]: ["recipeOffered", "reviewStarted", "confirmationPending", "reviewRemaining", "remainingPending", "executed", "splitPreviewed", "splitDone", "bundleHeld"],
+  [VIDEO_SPITEX_TOUR_FINISH]: ["breakOffered", "breakHeld", "routeStale", "breakDone", "assignHeld", "booked"],
 };
 const CUES = {
   [VIDEO_SPITEX_ORDERS_TOUR]: Object.values(SPITEX_ORDERS_TOUR_CUES),
   [VIDEO_SPITEX_TOUR_FINISH]: Object.values(SPITEX_TOUR_FINISH_CUES),
 };
 const MESSAGE_CUES = {
-  [VIDEO_SPITEX_ORDERS_TOUR]: ["request", "accept", "confirm", "bundle"],
+  [VIDEO_SPITEX_ORDERS_TOUR]: ["request", "accept", "confirm", "cut", "bundle"],
   [VIDEO_SPITEX_TOUR_FINISH]: ["break", "assign", "schedule"],
 };
 
@@ -57,7 +57,7 @@ function task(abbreviation, startMinutes) {
 }
 
 function goodTemplate(startMinutes = 8 * 60) {
-  const items = D.SPITEX_ABBREVIATIONS.map((abbreviation, i) => task(abbreviation, startMinutes + i * (D.ORDER.visitMinutes + 10)));
+  const items = D.areaAbbreviationsOn(D.AREA_WEST, D.DEMO_WEEKDAY).map((abbreviation, i) => task(abbreviation, startMinutes + i * (D.ORDER.visitMinutes + 10)));
   return {
     weekday: D.DEMO_WEEKDAY,
     startBase: "Winterthur",
@@ -72,30 +72,30 @@ function withBreak(template, startItem, endItem) {
 }
 
 function testVisitProblems() {
-  assert.deepEqual(T.visitProblems(goodTemplate()), []);
-  assert.match(T.visitProblems(null)[0], /no template/);
+  assert.deepEqual(T.visitProblems(goodTemplate(), D.AREA_WEST), []);
+  assert.match(T.visitProblems(null, D.AREA_WEST)[0], /no template/);
   const noRoute = { ...goodTemplate(), routeInfo: null };
-  assert.ok(T.visitProblems(noRoute).some((p) => /no route info/.test(p)));
+  assert.ok(T.visitProblems(noRoute, D.AREA_WEST).some((p) => /no route info/.test(p)));
   const untimed = goodTemplate();
   untimed.containerTemplateItems[3] = { ...untimed.containerTemplateItems[3], timeRangeStartItem: null, timeRangeEndItem: null };
-  assert.ok(T.visitProblems(untimed).some((p) => /SXZB has no visit time/.test(p)));
+  assert.ok(T.visitProblems(untimed, D.AREA_WEST).some((p) => /has no visit time/.test(p)));
   const foreign = goodTemplate();
   foreign.containerTemplateItems.push({ ...task("ZZZ", 15 * 60) });
-  assert.ok(T.visitProblems(foreign).some((p) => /foreign task/.test(p)));
+  assert.ok(T.visitProblems(foreign, D.AREA_WEST).some((p) => /another area/.test(p)));
   const overlap = goodTemplate();
   overlap.containerTemplateItems[1] = task("SXBR", 8 * 60 + 30);
-  assert.ok(T.visitProblems(overlap).some((p) => /overlaps/.test(p)));
+  assert.ok(T.visitProblems(overlap, D.AREA_WEST).some((p) => /overlaps/.test(p)));
   const late = goodTemplate(16 * 60);
-  assert.ok(T.visitProblems(late).some((p) => /outside the order window/.test(p)));
+  assert.ok(T.visitProblems(late, D.AREA_WEST).some((p) => /outside the order window/.test(p)));
   const wrongLength = goodTemplate();
   wrongLength.containerTemplateItems[0].timeRangeEndItem = clock(8 * 60 + 60);
-  assert.ok(T.visitProblems(wrongLength).some((p) => /60 min/.test(p)));
+  assert.ok(T.visitProblems(wrongLength, D.AREA_WEST).some((p) => /60 min/.test(p)));
   const noTravel = goodTemplate();
   noTravel.containerTemplateItems[2].travelTimeBefore = null;
-  assert.ok(T.visitProblems(noTravel).some((p) => /no travel times/.test(p)));
+  assert.ok(T.visitProblems(noTravel, D.AREA_WEST).some((p) => /no travel times/.test(p)));
   const seven = goodTemplate();
   seven.containerTemplateItems.pop();
-  assert.ok(T.visitProblems(seven).some((p) => /7 visits/.test(p)));
+  assert.ok(T.visitProblems(seven, D.AREA_WEST).some((p) => /6 visits/.test(p)));
 }
 
 function testBreakProblems() {
@@ -116,13 +116,15 @@ function testBreakProblems() {
 
 function testBundleParameters() {
   const group = { id: "AAAA-1111", name: D.GROUP.name };
-  const ok = { location: "Winterthur", weekday: 4, fromTime: "07:00", untilTime: "18:00", fromDate: "2026-11-05", untilDate: "2026-11-05", groupIds: "aaaa-1111" };
+  const ok = { location: "Winterthur", tourCount: 2, fromTime: "08:00", untilTime: "15:30", fromDate: "2026-11-23", untilDate: "2026-11-27", groupIds: "aaaa-1111" };
   assert.deepEqual(T.bundleParameterProblems(ok, group), []);
-  assert.deepEqual(T.bundleParameterProblems({ ...ok, weekday: "4", untilDate: undefined }, group), []);
-  assert.ok(T.bundleParameterProblems({ ...ok, weekday: 3 }, group).some((p) => /weekday 3/.test(p)));
+  assert.deepEqual(T.bundleParameterProblems({ ...ok, tourCount: "2", untilDate: undefined }, group), []);
+  assert.ok(T.bundleParameterProblems({ ...ok, tourCount: 3 }, group).some((p) => /tourCount 3/.test(p)));
   assert.ok(T.bundleParameterProblems({ ...ok, groupIds: "" }, group).some((p) => /groupIds/.test(p)));
-  assert.ok(T.bundleParameterProblems({ ...ok, fromDate: "2026-11-06" }, group).some((p) => /fromDate/.test(p)));
-  assert.ok(T.bundleParameterProblems({ ...ok, untilDate: "2026-11-04" }, group).some((p) => /untilDate/.test(p)));
+  assert.deepEqual(T.bundleParameterProblems({ ...ok, groupIds: undefined, groupName: "spitex winterthur" }, group), []);
+  assert.ok(T.bundleParameterProblems({ ...ok, groupIds: undefined, groupName: "Spitex" }, group).some((p) => /groupName/.test(p)));
+  assert.ok(T.bundleParameterProblems({ ...ok, fromDate: "2026-11-24" }, group).some((p) => /fromDate/.test(p)));
+  assert.ok(T.bundleParameterProblems({ ...ok, untilDate: "2026-11-26" }, group).some((p) => /untilDate/.test(p)));
   assert.ok(T.bundleParameterProblems(null, group).length > 0);
 }
 
@@ -130,10 +132,18 @@ function testRecordingWindow() {
   const at = (iso) => new Date(`${iso}T12:00:00`);
   assert.equal(T.recordingDateProblem(at("2026-10-29"), {}), null);
   assert.equal(T.recordingDateProblem(at("2026-01-01"), {}), null);
-  assert.equal(T.recordingDateProblem(at("2026-11-05"), {}), null);
-  assert.match(T.recordingDateProblem(at("2025-12-31"), {}), /5 November/);
-  assert.match(T.recordingDateProblem(at("2026-11-06"), {}), /2026-11-05/);
-  assert.equal(T.recordingDateProblem(at("2026-11-20"), { [T.ENV_ANY_DATE]: "1" }), null);
+  assert.equal(T.recordingDateProblem(at("2026-11-26"), {}), null);
+  assert.match(T.recordingDateProblem(at("2025-12-31"), {}), /2026-11-26/);
+  assert.match(T.recordingDateProblem(at("2026-11-27"), {}), /2026-11-26/);
+  assert.equal(T.recordingDateProblem(at("2026-11-30"), { [T.ENV_ANY_DATE]: "1" }), null);
+}
+
+function testWeekPlan() {
+  assert.equal(T.SPLIT_PART_COUNT, 46);
+  const week = D.WORK_WEEKDAYS.map((weekday) => D.areaPatientsOn(D.AREA_WEST, weekday).length);
+  assert.deepEqual(week, [5, 4, 5, 7, 5]);
+  const patient = D.PATIENTS[0];
+  assert.equal(D.areaPatientsOn(patient.area, patient.order.weekdays[1]).includes(patient), true);
 }
 
 function testOrderCounts() {
@@ -141,7 +151,7 @@ function testOrderCounts() {
   const sealed = Object.fromEntries(D.SPITEX_ABBREVIATIONS.map((a) => [a, { open: 0, sealed: 1 }]));
   assert.ok(T.noneSealed(open) && !T.allSealed(open));
   assert.ok(T.allSealed(sealed) && !T.noneSealed(sealed));
-  assert.equal(T.VISIT_COUNT, 8);
+  assert.equal(T.VISIT_COUNT, 7);
 }
 
 async function readJson(file) {
@@ -159,7 +169,7 @@ async function testShippedTexts() {
       assert.deepEqual(validateCaptionTrack(video, track, CUES[video]), [], `${video}/${culture}: caption track`);
       const used = new Set();
       for (const message of messages) {
-        assert.ok(message.text.length > 0 && message.text.length < 140, `${video}/${culture}: message length`);
+        assert.ok(message.text.length > 0 && message.text.length < 200, `${video}/${culture}: message length`);
         assert.ok(message.sendWhen === undefined || CONDITIONS[video].includes(message.sendWhen), `${video}/${culture}: unknown condition ${message.sendWhen}`);
         assert.ok(track[message.cue] !== undefined, `${video}/${culture}: cue ${message.cue} has no caption`);
         used.add(message.cue);
@@ -196,6 +206,7 @@ testBreakProblems();
 testBundleParameters();
 testRecordingWindow();
 testOrderCounts();
+testWeekPlan();
 await testShippedTexts();
 await testStoryCaptions();
 console.log("spitex-takes self-test: ok");
