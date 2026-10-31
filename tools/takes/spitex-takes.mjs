@@ -94,6 +94,7 @@ const CONTAINER_BACK_STEPS_MAX = 8;
 const BEAT = { intro: 800, cutHold: 5000, listHold: 900, pagePoll: 250, containerHold: 2500, mapHold: 4000, refreshMapHold: 3500, scheduleHold: 4000, startMapHold: 2000, breakRowHold: 4000 };
 export const SPITEX_CHAT_PACE = Object.freeze({ typeDelayMs: 14, readAnswerMs: 1300, fastFactor: 20 });
 const TEAM_ROWS_MIN = D.TEAM.length;
+const BREAK_ROW_LABEL = /pause|pausa|break/i;
 const GRID = Object.freeze({ rulerShare: 0.16, neighbourShare: 0.2, marginPx: 6, dragMs: 700, wheelPx: 70, wheelPauseMs: 380, wheelTicks: 4, holdMs: 1800 });
 const SEL_CONTENT_SPLIT = ".content > as-split";
 const SEL_GRID_ZONE = ".zone-center";
@@ -1046,7 +1047,7 @@ function tourFinishProblems(report, group, nurses, tours, state) {
   if (!refresh?.reached) problems.push("the container page was not shown after the breaks");
   else {
     if (refresh.breakRows < 1) problems.push("the container page shows no break row after the break (page not refreshed)");
-    if (!/pause/i.test(refresh.breakRowText ?? "") || !(refresh.breakRowText ?? "").includes(T.BREAK_START)) problems.push(`the break row reads "${refresh.breakRowText}", not the unpaid break at ${T.BREAK_START}`);
+    if (!BREAK_ROW_LABEL.test(refresh.breakRowText ?? "") ||!(refresh.breakRowText ?? "").includes(T.BREAK_START)) problems.push(`the break row reads "${refresh.breakRowText}", not the unpaid break at ${T.BREAK_START}`);
     if (!refresh.pdf?.shown) problems.push(`the route PDF was not shown (${JSON.stringify(refresh.pdf)})`);
     if (!refresh.panelClosed || !refresh.panelReopened) problems.push("the chat panel was not closed for the map and opened again");
     if (refresh.rows < T.VISIT_COUNT + 1) problems.push(`the container page lists ${refresh.rows} rows after the break, expected ${T.VISIT_COUNT + 1} (page not refreshed)`);
