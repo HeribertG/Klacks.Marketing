@@ -133,7 +133,7 @@ function memberIdsOf(clients, site) {
 }
 
 /** Everything the take may assume about the stage; a mismatch refuses the take before anything is recorded. */
-async function checkStage(take, site) {
+export async function checkStage(take, site) {
   const { api, options, report } = take;
   const group = await api.json(`${GROUPS_API}/${options.groupId}`);
   if (group.name !== site.group.name) throw new Error(`--group-id is "${group.name}", this take needs "${site.group.name}" on a copy of its stage database`);
@@ -159,7 +159,7 @@ async function checkDecember(take, site, filter) {
 }
 
 /** Minimum zoom and collapsed shift area: the only layout in which all ten rows fit into 720 px. Runs inside a cut region. */
-async function fitAllRows(take) {
+export async function fitAllRows(take) {
   const { page, mouse } = take;
   const pointer = page.locator(SEL_ZOOM_POINTER).first();
   await pointer.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
@@ -177,7 +177,7 @@ async function fitAllRows(take) {
   await page.waitForTimeout(CANVAS_SETTLE_MS);
 }
 
-async function measure(take, label) {
+export async function measure(take, label) {
   const grid = await gridBox(take.page);
   const rows = await rowBoxes(take.page);
   (take.report.geometry ??= []).push({ label, grid, rows: rows.map((row) => Math.round(row.top)), rowHeight: rows[0]?.height, lastBottom: Math.round(rows.at(-1).top + rows.at(-1).height) });
@@ -196,7 +196,7 @@ async function pointWheelAtGrid(take) {
 }
 
 /** One wheel tick moves the grid by exactly one column. */
-async function scrollColumns(take, ticks, direction) {
+export async function scrollColumns(take, ticks, direction) {
   await pointWheelAtGrid(take);
   for (let tick = 0; tick < ticks; tick++) {
     await take.page.mouse.wheel(direction * WHEEL.deltaPx, 0);
@@ -238,7 +238,7 @@ async function lastRowInView(take) {
 }
 
 /** The visible operation of the row slider of the header: the cursor goes to the handle, the keyboard moves it in steps of 10. */
-async function setRowSlider(take, detail) {
+export async function setRowSlider(take, detail) {
   const { page, mouse, report } = take;
   const pointer = page.locator(SEL_ZOOM_POINTER).first();
   await mouse.clickLocator(pointer, MOVE.normal);
@@ -259,7 +259,7 @@ async function setRowSlider(take, detail) {
 }
 
 /** The noise CSS hides toasts, a hidden error is still an error: every toast text is collected and an error text fails the take. */
-async function watchToasts(page) {
+export async function watchToasts(page) {
   await page.evaluate((selector) => {
     window.__captureToasts = [];
     const read = () => {
@@ -270,14 +270,14 @@ async function watchToasts(page) {
   }, SEL_TOASTS);
 }
 
-async function readToasts(take) {
+export async function readToasts(take) {
   const toasts = await take.page.evaluate(() => window.__captureToasts ?? []);
   take.report.toasts = toasts;
   const errors = toasts.filter((text) => ERROR_TOAST.test(text));
   if (errors.length > 0) flag(take.report, `error toast during the take: ${errors.join(" | ")}`);
 }
 
-function trackHttpErrors(take) {
+export function trackHttpErrors(take) {
   take.report.httpErrors = [];
   take.page.on("response", (response) => {
     if (response.status() >= HTTP_ERROR_FIRST) take.report.httpErrors.push(`${response.status()} ${response.request().method()} ${new URL(response.url()).pathname}`);
