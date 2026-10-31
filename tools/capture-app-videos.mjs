@@ -35,7 +35,9 @@
  * spitex-tour-finish: lunch break, new route optimization, booking of the nurse, schedule) live in takes/spitex-takes.mjs; they need the seeded
  * database of seed-spitex-demo.mjs (klacks_marketing_spitex), one fresh copy per take, and clip B needs the copy of the database after a
  * publishable clip A (tools/spitex-demo/record-spitex.sh does both); both record at 1280x720 and preset the shift list to ten rows per page.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The month plan take (security-month-plan, clip "Der Dezember steht") lives in takes/security-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_m3
+ * (seed-security-demo.mjs), --group-id of "Bern Objektschutz" and records at 1280x720; its header states the publishable criterion.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
  * Env: KLACKS_VIDEO_MAX_MB (size budget per encoded file, default 1.5 for the site videos; story takes that are cut again may use more),
@@ -59,9 +61,11 @@ import {
   CaptionOverlay,
   DIRECTION_LTR,
   captionFileName,
+  captionCueSidecar,
   captionProblems,
   captionTrackOf,
   captionVisibility,
+  cueSidecarPath,
   loadCaptionTracks,
   validateCaptionTrack,
 } from "./lib/caption-overlay.mjs";
@@ -147,6 +151,14 @@ import {
   VIDEO_SPITEX_ORDERS_TOUR,
   VIDEO_SPITEX_TOUR_FINISH,
 } from "./takes/spitex-takes.mjs";
+import {
+  SECURITY_MONTH_PLAN_CUES,
+  SECURITY_MONTH_PLAN_FINAL_HOLD_MS,
+  SECURITY_TAKE_RUNNERS,
+  SECURITY_VIDEOS,
+  SECURITY_VIEWPORT,
+  VIDEO_SECURITY_MONTH_PLAN,
+} from "./takes/security-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -161,7 +173,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -497,6 +509,10 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     needsScript: true, captionCues: Object.values(SPITEX_TOUR_FINISH_CUES), finalHoldMs: SPITEX_TOUR_FINISH_FINAL_HOLD_MS,
     initScripts: SPITEX_INIT_SCRIPTS,
   },
+  [VIDEO_SECURITY_MONTH_PLAN]: {
+    period: DECEMBER, viewport: SECURITY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SECURITY_TAKE_RUNNERS[VIDEO_SECURITY_MONTH_PLAN],
+    captionCues: Object.values(SECURITY_MONTH_PLAN_CUES), finalHoldMs: SECURITY_MONTH_PLAN_FINAL_HOLD_MS,
+  },
   [VIDEO_SIMPLE_PLANNING_PROGRESS]: {
     period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
 ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_PLANNING_PROGRESS]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_PLANNING_PROGRESS],
@@ -540,10 +556,12 @@ async function captionsFor(page, definition, video, culture, metadata) {
   });
 }
 
-async function checkCaptions(report, framesDir, captions, cues) {
+async function checkCaptions(report, framesDir, captions, cues, take) {
   captions.dispose();
-  const visibility = captionVisibility(await readManifest(framesDir), captions.events);
+  const manifest = await readManifest(framesDir);
+  const visibility = captionVisibility(manifest, captions.events);
   report.captions = { visibility, overlaps: captions.overlaps };
+  report.cueSidecar = captionCueSidecar(manifest, captions.events, take);
   const problems = captionProblems(visibility, captions.overlaps, cues);
   if (problems.length === 0) return;
   report.publishable = false;
@@ -587,7 +605,7 @@ async function recordTake(browser, options, shared, video, culture) {
       finalHoldMs: definition.finalHoldMs,
     });
     await guard.assertClean("after the take");
-    if (captions) await checkCaptions(report, framesDir, captions, definition.captionCues);
+    if (captions) await checkCaptions(report, framesDir, captions, definition.captionCues, { video, culture, viewport });
   } catch (error) {
     const violation = guard.violation ?? (error instanceof DevOverlayViolationError ? error : null);
     if (violation) {
@@ -654,6 +672,10 @@ async function main() {
             ...ENCODE_TARGET,
             outputBase: path.join(outputDir, name),
           });
+          if (report.cueSidecar) {
+            const sidecar = { ...report.cueSidecar, encodedWidth: report.encoded.mp4.width };
+            await writeFile(cueSidecarPath(report.encoded.mp4.file), JSON.stringify(sidecar, null, 2));
+          }
           await writeFile(path.join(report.framesDir, TAKE_REPORT_FILE), JSON.stringify(report, null, 2));
           results.push(summarize(name, report.encoded));
         } catch (error) {

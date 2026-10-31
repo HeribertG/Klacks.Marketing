@@ -100,6 +100,7 @@ try {
     assert.equal(await captionState(page), null);
     assert.equal(captions.events.length, 2);
     assert.ok(captions.events.every((e) => e.hiddenAt !== null && e.hiddenAt >= e.shownAt));
+    assert.ok(captions.events.every((e) => e.box && e.box.width > 0 && e.box.height > 0 && e.box.x >= 0 && e.box.y > 0));
     await assert.rejects(captions.show("missing"), /no caption text/);
     captions.dispose();
     await context.close();

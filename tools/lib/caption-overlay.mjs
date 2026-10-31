@@ -79,6 +79,28 @@ export function captionVisibility(manifest, events) {
   });
 }
 
+export const CUE_SIDECAR_SUFFIX = ".cues.json";
+export const cueSidecarPath = (videoFile) => path.join(path.dirname(videoFile), path.basename(videoFile, path.extname(videoFile)) + CUE_SIDECAR_SUFFIX);
+
+/**
+ * Cue time stamps of one take for the story builder (sidecar next to the take mp4). shownAt / hiddenAt are recorder time
+ * (ScreenRecorder.now()); fromSeconds / endSeconds are seconds of the encoded take video (cuts and fast-forward applied);
+ * box is the caption pill in CSS pixels of the viewport (null when it could not be measured).
+ */
+export function captionCueSidecar(manifest, events, { video, culture, viewport }) {
+  const visibility = captionVisibility(manifest, events);
+  const cues = events.map((event, index) => ({
+    cue: event.cue,
+    text: event.text,
+    shownAt: event.shownAt,
+    hiddenAt: event.hiddenAt,
+    fromSeconds: visibility[index].fromSeconds,
+    endSeconds: Number((visibility[index].fromSeconds + visibility[index].seconds).toFixed(SECONDS_DECIMALS)),
+    box: event.box ?? null,
+  }));
+  return { version: 1, video, culture, viewport: { width: viewport.width, height: viewport.height }, recorderStartedAt: manifest.startedAt, cues };
+}
+
 export function captionProblems(visibility, overlaps, cues) {
   const problems = [];
   for (const cue of cues) {
@@ -105,10 +127,11 @@ function drawCaption({ id, text, dir, z, asideWidth, edge, bottom, avoid }) {
   const box = el.getBoundingClientRect();
   const covers = (r) => r.width > 0 && r.height > 0
     && box.left < r.right && box.right > r.left && box.top < r.bottom && box.bottom > r.top;
-  return avoid.filter((selector) => {
+  const covered = avoid.filter((selector) => {
     const target = document.querySelector(selector);
     return target !== null && covers(target.getBoundingClientRect());
   });
+  return { covered, box: { x: box.left, y: box.top, width: box.width, height: box.height } };
 }
 
 export class CaptionOverlay {
@@ -142,7 +165,7 @@ export class CaptionOverlay {
   async render() {
     if (!this.current) return;
     const { cue, text } = this.current;
-    const covered = await this.page.evaluate(drawCaption, {
+    const { covered, box } = await this.page.evaluate(drawCaption, {
       id: CAPTION_ID,
       text,
       dir: this.dir,
@@ -151,7 +174,8 @@ export class CaptionOverlay {
       edge: EDGE_PX,
       bottom: BOTTOM_PX,
       avoid: this.avoidSelectors,
-    }).catch(() => []);
+    }).catch(() => ({ covered: [], box: null }));
+    if (box && this.current?.cue === cue) this.current.box = box;
     for (const selector of covered) {
       if (!this.overlaps.some((o) => o.cue === cue && o.selector === selector)) this.overlaps.push({ cue, selector });
     }

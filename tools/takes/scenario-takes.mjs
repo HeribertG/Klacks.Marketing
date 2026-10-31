@@ -122,6 +122,7 @@ const HH_MM_LENGTH = 5;
 const SELECT_ALL = "Control+A";
 const TYPE_DELAY_MS = 70;
 const FAST_FACTOR_WIZARD = 40;
+const CUT_REGION = Number.POSITIVE_INFINITY;
 const SINGLE_ACCEPT = 1;
 const NEXT_DAY_OFFSET = 1;
 const PLAN_WEEK_DAY_AFTER = addDays(PLAN_WEEK.until, NEXT_DAY_OFFSET);
@@ -142,7 +143,7 @@ const oneLine = (text) => String(text).replace(/\s+/g, " ").trim();
 const hhmm = (time) => String(time ?? "").slice(0, HH_MM_LENGTH);
 const tokenOf = (response) => response.request().postDataJSON()?.analyseToken ?? null;
 
-function flag(report, message) {
+export function flag(report, message) {
   report.failure ??= message;
   log(`! ${message}`);
 }
@@ -197,7 +198,7 @@ const displayedTotal = (store, token, clientId) => {
   return hours ? (hours.hours ?? 0) + (hours.surcharges ?? 0) : null;
 };
 
-function trackNetwork(take, ctx) {
+export function trackNetwork(take, ctx) {
   const { page } = take;
   page.on("response", async (response) => {
     const { pathname } = new URL(response.url());
@@ -239,7 +240,7 @@ async function settleAfter(take, reload, label) {
   await take.page.waitForTimeout(CANVAS_SETTLE_MS);
 }
 
-async function clickSelector(take, selector, moveMs) {
+export async function clickSelector(take, selector, moveMs) {
   const { page, mouse } = take;
   const element = page.locator(selector);
   await element.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
@@ -261,7 +262,7 @@ async function openSelector(take) {
   await take.page.waitForTimeout(BEAT.menu);
 }
 
-async function expectBanner(take, name) {
+export async function expectBanner(take, name) {
   const { page, report } = take;
   await page.locator(SEL_BANNER).waitFor({ state: "visible", timeout: BANNER_TIMEOUT_MS });
   const shown = oneLine(await page.locator(SEL_BANNER_NAME).innerText());
@@ -309,8 +310,9 @@ async function selectScenario(take, scenario) {
   await settleAfter(take, reload, `select ${scenario.name}`);
 }
 
-async function decideViaBanner(take, kind) {
-  const { page, mouse, report } = take;
+/** @param cutReload - the wait for the reloaded plan (dark grid with spinner) is left out of the video */
+export async function decideViaBanner(take, kind, { cutReload = false } = {}) {
+  const { page, mouse, report, recorder } = take;
   const accept = kind === "accept";
   const decided = page.waitForResponse(
     (response) => response.request().method() === HTTP_POST && (accept ? SCENARIO_ACCEPT_PATH : SCENARIO_REJECT_PATH).test(new URL(response.url()).pathname),
@@ -322,6 +324,7 @@ async function decideViaBanner(take, kind) {
   await waitModalAtRest(page);
   await page.waitForTimeout(BEAT.dialog);
   await mouse.clickLocator(page.locator(SEL_CONFIRM), MOVE.normal);
+  if (cutReload) await recorder.beginFast(CUT_REGION);
   const response = await decided;
   (report.decisions ??= []).push({ kind, status: response.status() });
   if (!response.ok()) {
@@ -329,6 +332,7 @@ async function decideViaBanner(take, kind) {
   }
   await page.locator(SEL_BANNER).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
   await settleAfter(take, reload, kind);
+  if (cutReload) await recorder.endFast();
 }
 
 async function assertRowsAndDayVisible(take, rows, dayIndex) {
@@ -387,7 +391,7 @@ async function dragWork(take, ctx, { fromRow, toRow, dayIndex, expectedId }) {
   return { source, target };
 }
 
-async function holdWithPoster(take, holdMs) {
+export async function holdWithPoster(take, holdMs) {
   const { page, report } = take;
   report.posterAt = ScreenRecorder.now();
   await page.waitForTimeout(holdMs);

@@ -11,18 +11,23 @@
  * open/close and the greeting window are measured on the take's pixels, so a re-recorded take needs no new numbers. Steps
  * run one after another (low RAM). Every story-specific constant lives in the recipe module; the builder only reads it.
  * CLI: --culture <code> --raw <Veo clip of the variant> --out-dir <dir> [--recipe <recipe module>] [--variant <name>]
- *      [--take <file>] [--captions <file>] [--work-dir <dir>] [--music <file> | --silent] [--ffmpeg <path>] [--ffprobe <path>]; --culture <code>
+ *      [--take <file>] [--cues <file>] [--captions <file>] [--work-dir <dir>] [--music <file> | --silent] [--ffmpeg <path>] [--ffprobe <path>]; --culture <code>
  *      --detect-only prints the measured panel and greeting window of the take without encoding
  * @param recipe - recipe module (path relative to the working directory), default tools/story-video/weekplan-recipe.mjs; it must
  *        export VARIANTS, variantFor, rawSceneSeconds, morningSceneSeconds, captionWindows, CROSSFADES, ENDCARD_SECONDS,
  *        TAKE_LAYOUT, GREETING_REPLACEMENTS, ALL_CAPTION_KEYS, MORNING_KEY, OUTPUT_PREFIX, TAKE_PREFIX, CAPTIONS_PREFIX,
  *        and VIDEO_FPS (the build stops with a list of the missing ones); optional COVER_GREETING
- *        (default true): false keeps the app greeting visible (the take was recorded with the story's user name)
+ *        (default true): false keeps the app greeting visible (the take was recorded with the story's user name); optional COVERS
+ *        (static covers, e.g. chat time stamps) and ZOOMS (cue-timed pan/zoom, at most 3), both described in take-detail.mjs; optional
+ *        TAKE_HAS_CHAT_PANEL (default true): false for a take without the chat panel, nothing is measured or covered then. A part of rawParts may name
+ *        another clip next to --raw ({ clip, fade, from, to, speed }): the parts are then joined by cross-fades of fade seconds
  * @param culture - any of the cultures with a <CAPTIONS_PREFIX><culture>.json; the end card texts come from captions.<culture>.json
  * @param variant - default from variantFor(culture); in weekplan-recipe.mjs headscarf for ar, id, ms (clip
  *        gemini_generated_video_16a58156.mp4, short story), standard otherwise (clip gemini_generated_video_d838e9c0.mp4)
  * @param music - licensed music file laid quietly under the app take only, default music/local-forecast-elevator.mp3
  * @param take - default tools/story-video/source-clips/takes/<TAKE_PREFIX><culture>.mp4 (the recorded app take; not served)
+ * @param cues - cue sidecar of the take, default <take>.cues.json next to it; only read when the recipe exports ZOOMS
+ *        --print-graph prints the take filter graph without encoding
  * Exit code 1 when a check fails (caption over two lines, glyphs not in the font, reading speed, panel or greeting not found);
  * the video is still written so the frames can be inspected.
  */
@@ -33,8 +38,10 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { parseArgs, promisify } from "node:util";
 import { findCaptionsFile, findProfile, normalizeCulture, renderSettings } from "./culture-profile.mjs";
+import { cueSidecarPath } from "../lib/caption-overlay.mjs";
 import { renderCaptions, renderEndcard } from "./render-overlays.mjs";
 import { FINAL_CODEC, POSTER_CODEC, SEGMENT_CODEC, WEBM_CODEC } from "./story-recipe.mjs";
+import { coverFilters, planZooms, zoomedTakeGraph } from "./take-detail.mjs";
 
 const run = promisify(execFile);
 const toolDir = path.dirname(fileURLToPath(import.meta.url));
@@ -43,7 +50,7 @@ const RECIPE_EXPORTS = Object.freeze(["ALL_CAPTION_KEYS", "CAPTIONS_PREFIX", "CR
   "OUTPUT_PREFIX", "TAKE_LAYOUT", "TAKE_PREFIX", "VARIANTS", "VIDEO_FPS", "captionWindows", "morningSceneSeconds", "rawSceneSeconds", "variantFor"]);
 const CLI_OPTIONS = Object.freeze({
   culture: { type: "string" }, raw: { type: "string" }, "out-dir": { type: "string" }, take: { type: "string" }, recipe: { type: "string" },
-  captions: { type: "string" }, "work-dir": { type: "string" }, music: { type: "string" }, silent: { type: "boolean" }, variant: { type: "string" }, "detect-only": { type: "boolean" }, ffmpeg: { type: "string" }, ffprobe: { type: "string" },
+  captions: { type: "string" }, "work-dir": { type: "string" }, music: { type: "string" }, silent: { type: "boolean" }, variant: { type: "string" }, "detect-only": { type: "boolean" }, "print-graph": { type: "boolean" }, cues: { type: "string" }, ffmpeg: { type: "string" }, ffprobe: { type: "string" },
 });
 const { values: cli } = parseArgs({ options: CLI_OPTIONS });
 const recipe = await import(pathToFileURL(cli.recipe ? path.resolve(cli.recipe) : path.join(toolDir, DEFAULT_RECIPE)).href);
@@ -83,6 +90,7 @@ const GREETING_SCAN_HEIGHT = 300;
 const GREETING_PAD = 6;
 const REFERENCE_AFTER_OPEN = 1.0;
 const GREETING_DIFF_THRESHOLD = 8;
+const NO_PANEL = Object.freeze({ x: 0, openAt: 0, closeAt: 0, intervals: Object.freeze([]), side: "none" });
 const DUMMY_CAPTION = "-";
 const DUMMY_KEYS = Object.freeze(["y1", "y2"]);
 const PIX_RGB = "rgb24";
@@ -96,7 +104,7 @@ const segmentEncode = () => ["-c:v", SEGMENT_CODEC.codec, "-crf", String(SEGMENT
 function readOptions() {
   const values = cli;
   const detectOnly = values["detect-only"] === true;
-  const missing = (detectOnly ? ["culture"] : ["culture", "raw", "out-dir"]).filter((k) => !values[k]);
+  const missing = (detectOnly || cli["print-graph"] ? ["culture"] : ["culture", "raw", "out-dir"]).filter((k) => !values[k]);
   if (missing.length > 0) throw new Error(`missing option(s): ${missing.map((k) => `--${k}`).join(", ")}`);
   const culture = normalizeCulture(values.culture);
   const outDir = path.resolve(values["out-dir"] ?? ".");
@@ -110,6 +118,7 @@ function readOptions() {
     raw: values.raw ? path.resolve(values.raw) : null,
     outDir,
     take: path.resolve(values.take ?? path.join(toolDir, "source-clips", "takes", `${TAKE_PREFIX}${culture}${EXT.mp4}`)),
+    cues: values.cues ? path.resolve(values.cues) : null,
     captionsFile: values.captions ? path.resolve(values.captions) : path.join(toolDir, `${CAPTIONS_PREFIX}${culture}${EXT.json}`),
     workDir: path.resolve(values["work-dir"] ?? path.join(outDir, `work-weekplan-${culture}`)),
     tools: { ffmpeg: values.ffmpeg ?? process.env.FFMPEG_PATH ?? "ffmpeg", ffprobe: values.ffprobe ?? process.env.FFPROBE_PATH ?? "ffprobe" },
@@ -212,8 +221,8 @@ function drawtextLines(replacement, offsetX, enable) {
 function takeFilter(panel, greeting, replacement, coverColor) {
   const L = TAKE_LAYOUT;
   const panelWindow = panel.intervals.map(([from, until]) => `between(t,${num(from)},${num(until)})`).join("+");
-  const filters = [`fps=${VIDEO_FPS}`,
-    `drawbox=x=${panel.x}:y=${L.settingsRows.y}:w=${L.panelWidth}:h=${L.settingsRows.height}:color=${L.coverColor}:t=fill:enable='${panelWindow}'`];
+  const filters = [`fps=${VIDEO_FPS}`];
+  if (panel.intervals.length > 0) filters.push(`drawbox=x=${panel.x}:y=${L.settingsRows.y}:w=${L.panelWidth}:h=${L.settingsRows.height}:color=${L.coverColor}:t=fill:enable='${panelWindow}'`);
   if (!greeting) {
     return filters.join(",");
   }
@@ -237,20 +246,47 @@ async function chatBackground(tools, take, panel, greeting) {
   return `0x${hex(frame[0])}${hex(frame[1])}${hex(frame[2])}`;
 }
 
+/**
+ * Opening scene made of a second clip: every part after the first names its own clip (next to --raw) and the overlap of a soft cut (fade, seconds);
+ * the running offset of each cross-fade follows from the part lengths.
+ */
+function joinedParts(raw, parts) {
+  const clips = parts.map((p) => (p.clip ? path.join(path.dirname(raw), p.clip) : raw));
+  const chain = parts.map((p, i) => `[${i}:v]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS},scale=1280:720,setsar=1[p${i}]`);
+  let length = (parts[0].to - parts[0].from) / parts[0].speed;
+  let last = "p0";
+  parts.slice(1).forEach((p, i) => {
+    const offset = length - p.fade;
+    chain.push(`[${last}][p${i + 1}]xfade=transition=fade:duration=${p.fade}:offset=${num(offset)}[j${i + 1}]`);
+    length = offset + (p.to - p.from) / p.speed;
+    last = `j${i + 1}`;
+  });
+  chain.push(`[${last}]null[v0]`);
+  return { inputs: clips.flatMap((clip) => ["-i", clip]), chain };
+}
+
 async function buildRaw(tools, raw, variant, caps, windows, file) {
   const parts = variant.rawParts;
   const keys = variant.captionKeys.filter((k) => k !== MORNING_KEY);
-  const chain = [`[0:v]fps=${VIDEO_FPS},scale=1280:720,split=${parts.length}${parts.map((_, i) => `[s${i}]`).join("")}`,
+  const joined = parts.some((p) => p.clip) ? joinedParts(raw, parts) : null;
+  const inputs = joined?.inputs ?? ["-i", raw];
+  const chain = joined?.chain ?? [`[0:v]fps=${VIDEO_FPS},scale=1280:720,split=${parts.length}${parts.map((_, i) => `[s${i}]`).join("")}`,
     ...parts.map((p, i) => `[s${i}]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS}[p${i}]`),
     `${parts.map((_, i) => `[p${i}]`).join("")}concat=n=${parts.length}:v=1:a=0[v0]`];
-  keys.forEach((k, i) => chain.push(`[v${i}][${i + 1}:v]overlay=0:0:enable='between(t,${windows[k][0]},${windows[k][1]})'[v${i + 1}]`));
-  await ffmpeg(tools, ["-i", raw, ...keys.flatMap((k) => ["-i", caps[k]]), "-filter_complex", chain.join(";"), "-map", `[v${keys.length}]`, ...segmentEncode(), file]);
+  const firstCaption = inputs.length / 2;
+  keys.forEach((k, i) => chain.push(`[v${i}][${firstCaption + i}:v]overlay=0:0:enable='between(t,${windows[k][0]},${windows[k][1]})'[v${i + 1}]`));
+  await ffmpeg(tools, [...inputs, ...keys.flatMap((k) => ["-i", caps[k]]), "-filter_complex", chain.join(";"), "-map", `[v${keys.length}]`, ...segmentEncode(), file]);
 }
 
-async function buildTake(tools, take, still, filter, file) {
+function takeChain(filter, zoom = null) {
+  const L = TAKE_LAYOUT;
+  return [`[1:v]scale=1280:720,boxblur=${L.backgroundBlur},eq=brightness=${L.backgroundBrightness}[bg]`, zoom ? zoomedTakeGraph(filter, zoom) : `[0:v]${filter}[t]`, `[bg][t]overlay=${L.insetX}:0:shortest=1,format=yuv420p[v]`];
+}
+
+async function buildTake(tools, take, still, filter, zoom, file) {
   const L = TAKE_LAYOUT;
   const seconds = await durationOf(tools, take);
-  const chain = [`[1:v]scale=1280:720,boxblur=${L.backgroundBlur},eq=brightness=${L.backgroundBrightness}[bg]`, `[0:v]${filter}[t]`, `[bg][t]overlay=${L.insetX}:0:shortest=1,format=yuv420p[v]`];
+  const chain = takeChain(filter, zoom);
   await ffmpeg(tools, ["-i", take, "-loop", "1", "-framerate", String(VIDEO_FPS), "-t", num(seconds), "-i", still, "-filter_complex", chain.join(";"), "-map", "[v]", ...segmentEncode(), file]);
 }
 
@@ -293,7 +329,7 @@ async function mux(tools, seg, outBase) {
 
 async function detectTake(o) {
   const fps = await frameRateOf(o.tools, o.take);
-  const panel = await detectPanel(o.tools, o.take, fps);
+  const panel = recipe.TAKE_HAS_CHAT_PANEL === false ? NO_PANEL : await detectPanel(o.tools, o.take, fps);
   const coverGreeting = recipe.COVER_GREETING ?? true;
   const greeting = coverGreeting ? await detectGreeting(o.tools, o.take, fps, panel) : null;
   const coverColor = coverGreeting ? await chatBackground(o.tools, o.take, panel, greeting) : null;
@@ -303,10 +339,39 @@ async function detectTake(o) {
   return { panel, greeting, coverColor };
 }
 
+async function frameSizeOf(tools, file) {
+  const { stdout } = await run(tools.ffprobe, ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0:s=x", file]);
+  const [width, height] = stdout.trim().split("x").map(Number);
+  return { width, height };
+}
+
+async function readCueSidecar(o) {
+  const file = o.cues ?? cueSidecarPath(o.take);
+  const text = await readFile(file, "utf8").catch((error) => { throw new Error(`cue sidecar ${file} not readable (${error.code ?? error.message}); ZOOMS need it`); });
+  return JSON.parse(text);
+}
+
+async function prepareTake(o, detected) {
+  const base = takeFilter(detected.panel, detected.greeting, GREETING_REPLACEMENTS[o.culture], detected.coverColor);
+  const covers = recipe.COVERS ?? [];
+  const zooms = recipe.ZOOMS ?? [];
+  if (covers.length === 0 && zooms.length === 0) return { filter: base, zoom: null };
+  const size = await frameSizeOf(o.tools, o.take);
+  const coverList = coverFilters(covers, { ...size, panelIntervals: detected.panel.intervals });
+  const filter = coverList.length > 0 ? [base, ...coverList].join(",") : base;
+  if (zooms.length === 0) return { filter, zoom: null };
+  const seconds = await durationOf(o.tools, o.take);
+  return { filter, zoom: planZooms(zooms, await readCueSidecar(o), { ...size, seconds }) };
+}
+
 async function main() {
   const o = readOptions();
-  if (o.detectOnly) {
-    await detectTake(o);
+  if (o.detectOnly || cli["print-graph"]) {
+    const detected = await detectTake(o);
+    if (cli["print-graph"]) {
+      const prepared = await prepareTake(o, detected);
+      console.log(takeChain(prepared.filter, prepared.zoom).join(";"));
+    }
     return;
   }
   const problems = [];
@@ -340,12 +405,13 @@ async function main() {
   console.table(speed);
   for (const row of speed.filter((r) => r.cps > settings.maxCharsPerSecond)) problems.push(`${row.key}: ${row.cps} chars/s over ${settings.maxCharsPerSecond}`);
 
-  const { panel, greeting, coverColor } = await detectTake(o);
+  const detected = await detectTake(o);
+  const prepared = await prepareTake(o, detected);
 
   const seg = Object.fromEntries(Object.entries(FILES).map(([k, f]) => [k, path.join(segDir, f)]));
   await ffmpeg(o.tools, ["-ss", num(o.variant.backgroundStillAt), "-i", o.raw, "-frames:v", "1", seg.still]);
   await buildRaw(o.tools, o.raw, o.variant, caps.files, windows, seg.raw);
-  await buildTake(o.tools, o.take, seg.still, takeFilter(panel, greeting, GREETING_REPLACEMENTS[o.culture], coverColor), seg.take);
+  await buildTake(o.tools, o.take, seg.still, prepared.filter, prepared.zoom, seg.take);
   const morningRaw = o.variant.morningClip ? path.join(path.dirname(o.raw), o.variant.morningClip) : o.raw;
   await buildMorning(o.tools, morningRaw, o.variant, caps.files[MORNING_KEY], windows[MORNING_KEY], seg.morning);
   await ffmpeg(o.tools, ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", String(ENDCARD_SECONDS), "-i", card.file, "-vf", "scale=1280:720,format=yuv420p", ...segmentEncode(), seg.endcard]);
