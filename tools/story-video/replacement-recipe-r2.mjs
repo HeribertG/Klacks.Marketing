@@ -5,7 +5,8 @@
  * papers flying to Klacksy (same clip, 35.5-38.7 s, it stops before the headband appears at 39 s), the live take replacement-r2-<culture> filling the frame (takes/replacement-r2-takes.mjs, no chat panel),
  * the closing scene with the cup (gemini_generated_video_0329cfb2.mp4, 16.1-20 s) as MORNING_CLIP, and the end card.
  * The source clip has a second Klacksy and a wall clock on its left side, CROP_OFFICE keeps both out in the two parts of the opening. MORNING_CLIP is a derived clip: its wall clock is painted out frame by frame with
- * rohmaterial/r1-cover-wall-clock.py, it starts at second 16.1 of its source. All clips besides --raw are resolved next to it, so --raw points at the source clip in a folder that also holds MORNING_CLIP.
+ * rohmaterial/r1-cover-wall-clock.py (arguments: source, MORNING_CLIP, 16.1 20.0 908 92 68 track.json 1.2 bright), it starts at second 16.1 of its source and is kept in LinkedIn/Replacement of the media archive.
+ * All clips besides --raw are resolved next to it, so --raw points at a copy of the source clip in a folder that also holds MORNING_CLIP.
  * Sound: no Veo sound ever; music only under the take, as in every story clip since video 3.
  * The caption file replacement-r2-captions.<culture>.json says what is shown: k1 and k2 the absence with its five duties, k3 the request (it never says that Klacksy decides or calls), x1 the closing line.
  * No ZOOMS: the take stands at row slider 100, the app draws its text at full size. Caption windows live here, the texts in the caption file, the beats of the take in capture-app-videos.scripts.json.

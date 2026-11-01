@@ -382,7 +382,7 @@ export async function takeReplacementR2(take) {
     await openMenuItem(take, target, MENU_COVER_ABSENCE);
     await waitModalAtRest(page);
     await captions.show(cues.form);
-    await pauseOf(take, "field");
+    await pauseOf(take, "formLead");
     await propose(take, ctx);
     await pauseOf(take, "result");
     await captions.show(cues.open);
