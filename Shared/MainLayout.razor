@@ -110,6 +110,10 @@ else
                 }
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@AboutHref">@Sh("footer.about")</a>
                 <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@TechHref">@Sh("footer.tech")</a>
+                @if (ShowExportsPage)
+                {
+                    <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@ExportsHref">@ExportsLabel</a>
+                }
                 @if (ShowOfferPage)
                 {
                     <a class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-ink-subtle hover:text-link-hover transition-colors no-underline" href="@OfferHref">@Sh("footer.offer")</a>
@@ -139,6 +143,8 @@ else
     private const string AboutPageKey = "ueber-uns";
     private const string OfferPageKey = CountryPageLinks.OfferSlug;
     private const string TechPageKey = CountryPageLinks.TechSlug;
+    private const string ExportsPageKey = CountryPageLinks.ExportsSlug;
+    private const string ExportsLabelKey = "footerLabel";
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
     private const string ModeApplyFunction = "klacksMode.apply";
@@ -149,7 +155,7 @@ else
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
-        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey, TechPageKey,
+        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey, TechPageKey, ExportsPageKey,
     };
 
     private sealed record CompanySizePage(string Slug, string LabelKey);
@@ -318,6 +324,11 @@ else
     // Like the mid-size and large pages, the offer page is linked only in cultures that have their own text for it.
     private bool ShowOfferPage => ContentProvider.HasContentIn(CurrentCultureRecord.Code, OfferPageKey);
 
+    // The exports page exists in German and English only, so it is linked only where it has its own text.
+    private bool ShowExportsPage => ContentProvider.HasContentIn(CurrentCultureRecord.Code, ExportsPageKey);
+
+    private string ExportsLabel => ContentProvider.GetText(CurrentCultureRecord.Code, ExportsPageKey, ExportsLabelKey);
+
     private IEnumerable<CompanySizePage> VisibleCompanySizePages
         => ShowCompanySizePages ? CompanySizePages : CompanySizePages.Take(1);
 
@@ -422,6 +433,8 @@ else
     private string OfferHref => CompanyWideHref(OfferPageKey);
 
     private string TechHref => CompanyWideHref(TechPageKey);
+
+    private string ExportsHref => CompanyWideHref(ExportsPageKey);
 
     private string CompanyWideHref(string pageKey)
     {

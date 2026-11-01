@@ -75,6 +75,7 @@ public class CountryStartRoutingTests
     [TestCase("/ja/grosse-betriebe", "/ja/land-jp/grosse-betriebe")]
     [TestCase("/kleine-betriebe", "/land-ch/kleine-betriebe")]
     [TestCase("/angebot", "/land-ch/angebot")]
+    [TestCase("/exporte", "/land-ch/exporte")]
     [TestCase("/", "/land-ch")]
     [TestCase("/fr", "/fr/land-fr")]
     public void Country_less_business_pages_and_homepages_redirect_to_the_culture_default_country(string source, string target)
@@ -91,6 +92,8 @@ public class CountryStartRoutingTests
     [TestCase("/zh-cn/land-cn/grosse-betriebe")]
     [TestCase("/land-ch/spitex")]
     [TestCase("/land-ch/angebot")]
+    [TestCase("/land-ch/exporte")]
+    [TestCase("/en/land-gb/exporte")]
     [TestCase("/fr/land-fr/angebot")]
     [TestCase("/land-ch/experten")]
     [TestCase("/land-cn/experten")]

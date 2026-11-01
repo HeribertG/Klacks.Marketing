@@ -20,6 +20,7 @@ public static class CountryPageLinks
     public const string AboutSlug = "ueber-uns";
     public const string OfferSlug = "angebot";
     public const string TechSlug = "technik";
+    public const string ExportsSlug = "exporte";
 
     public static string StartHref(string? cultureSlug, string? country, bool simpleModeEnabled)
     {

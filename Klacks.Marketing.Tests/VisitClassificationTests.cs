@@ -29,6 +29,7 @@ public class VisitClassificationTests
     [TestCase("/land-ch/vergleich", PageTypes.Comparison, "ch", "de")]
     [TestCase("/land-ch/ueber-uns", PageTypes.AboutUs, "ch", "de")]
     [TestCase("/en/land-gb/technik", PageTypes.Tech, "gb", "en")]
+    [TestCase("/en/land-gb/exporte", PageTypes.Exports, "gb", "en")]
     [TestCase("/land-ch/partner", PageTypes.Partner, "ch", "de")]
     [TestCase("/land-ch/lizenz", PageTypes.License, "ch", "de")]
     [TestCase("/land-ch/experten", PageTypes.ExpertStart, "ch", "de")]
