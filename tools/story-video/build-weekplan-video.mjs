@@ -20,7 +20,7 @@
  *        (default true): false keeps the app greeting visible (the take was recorded with the story's user name); optional COVERS
  *        (static covers, e.g. chat time stamps) and ZOOMS (cue-timed pan/zoom, at most 3), both described in take-detail.mjs; optional
  *        TAKE_HAS_CHAT_PANEL (default true): false for a take without the chat panel, nothing is measured or covered then. A part of rawParts may name
- *        another clip next to --raw ({ clip, fade, from, to, speed }): the parts are then joined by cross-fades of fade seconds
+ *        another clip next to --raw ({ clip, fade, from, to, speed }): the parts are then joined by cross-fades of fade seconds; such a part and the morning scene may carry crop ({ width, height, x, y }, in pixels of the clip) to keep something out of the picture
  * @param culture - any of the cultures with a <CAPTIONS_PREFIX><culture>.json; the end card texts come from captions.<culture>.json
  * @param variant - default from variantFor(culture); in weekplan-recipe.mjs headscarf for ar, id, ms (clip
  *        gemini_generated_video_16a58156.mp4, short story), standard otherwise (clip gemini_generated_video_d838e9c0.mp4)
@@ -246,13 +246,15 @@ async function chatBackground(tools, take, panel, greeting) {
   return `0x${hex(frame[0])}${hex(frame[1])}${hex(frame[2])}`;
 }
 
+const cropFilter = (part) => (part.crop ? `crop=${part.crop.width}:${part.crop.height}:${part.crop.x}:${part.crop.y},` : "");
+
 /**
  * Opening scene made of a second clip: every part after the first names its own clip (next to --raw) and the overlap of a soft cut (fade, seconds);
  * the running offset of each cross-fade follows from the part lengths.
  */
 function joinedParts(raw, parts) {
   const clips = parts.map((p) => (p.clip ? path.join(path.dirname(raw), p.clip) : raw));
-  const chain = parts.map((p, i) => `[${i}:v]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS},scale=1280:720,setsar=1[p${i}]`);
+  const chain = parts.map((p, i) => `[${i}:v]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS},${cropFilter(p)}scale=1280:720,setsar=1[p${i}]`);
   let length = (parts[0].to - parts[0].from) / parts[0].speed;
   let last = "p0";
   parts.slice(1).forEach((p, i) => {
@@ -293,7 +295,7 @@ async function buildTake(tools, take, still, filter, zoom, file) {
 async function buildMorning(tools, raw, variant, caption, window, file) {
   const m = variant.morning;
   await ffmpeg(tools, ["-i", raw, "-i", caption, "-filter_complex",
-    `[0:v]trim=${m.from}:${m.to},setpts=(PTS-STARTPTS)/${m.speed},fps=${VIDEO_FPS},scale=1280:720[c];[c][1:v]overlay=0:0:enable='between(t,${window[0]},${window[1]})'[v]`,
+    `[0:v]trim=${m.from}:${m.to},setpts=(PTS-STARTPTS)/${m.speed},fps=${VIDEO_FPS},${cropFilter(m)}scale=1280:720[c];[c][1:v]overlay=0:0:enable='between(t,${window[0]},${window[1]})'[v]`,
     "-map", "[v]", ...segmentEncode(), file]);
 }
 

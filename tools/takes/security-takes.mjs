@@ -284,7 +284,7 @@ export function trackHttpErrors(take) {
   });
 }
 
-async function startWizard(take, ctx) {
+export async function startWizard(take, ctx) {
   const { page, mouse, options, report } = take;
   if ((await page.locator(SEL_WIZARD_BUTTON).count()) === 0) throw new Error("the AutoWizard button is not shown - the demo account needs the Admin role");
   if ((await page.locator(SEL_WIZARD_DROPDOWN).count()) > 0) throw new Error("the wizard button is in dropdown mode - reload the page");
@@ -304,9 +304,9 @@ async function startWizard(take, ctx) {
   await mouse.moveTo({ x: take.viewport.width / HALF, y: take.viewport.height / HALF }, MOVE.normal);
 }
 
-async function waitForProposal(take, ctx) {
+export async function waitForProposal(take, ctx) {
   const { page, api, recorder, report, options } = take;
-  await recorder.beginFast(FAST_FACTOR_WIZARD);
+  await recorder.beginFast(ctx.fastFactor ?? FAST_FACTOR_WIZARD);
   let job;
   try {
     job = await waitForJob(api, page, ctx.jobId);

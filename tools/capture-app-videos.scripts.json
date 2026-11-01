@@ -3947,7 +3947,12 @@
   "replacement-r1": {
     "de": {
       "absenceName": "Krankheit/Unfall",
-      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2000, "scenario": 2200, "swap": 900, "cells": 3000, "acceptLead": 800, "absent": 3200 }
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2200, "follows": 3200, "scenario": 2800, "cells": 3500, "acceptLead": 800, "absent": 3200 }
+    }
+  },
+  "monthplan-commands": {
+    "de": {
+      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2000, "veto": 2000, "proof": 2300, "manual": 1000}
     }
   }
 }

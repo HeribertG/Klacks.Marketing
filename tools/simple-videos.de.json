@@ -81,18 +81,41 @@
     "captions": {
       "report": "Max fällt aus. Rechtsklick auf den Dienst",
       "form": "Wer fehlt, ab wann und warum",
-      "why": "Vorschlag: Luc, er hat heute Pikett",
+      "why": "Vorschlag: Selina, sie hat heute Pikett",
       "call": "Klacks ruft niemanden an. Das machst du.",
-      "refused": "Luc lehnt ab. Du trägst es ein.",
+      "refused": "Selina lehnt ab. Du trägst es ein.",
       "alternatives": "Alternativen: Tanja passt in den Block",
       "yes": "Tanja sagt zu. Auch das trägst du ein.",
+      "follows": "Das Szenario folgt: Tanja statt Selina",
       "scenario": "Vorschlag als Szenario, Original unberührt",
-      "stillLuc": "Im Vorschlag steht noch Luc: ABL löschen",
-      "swap": "Du setzt Tanja als Ablösung ein",
-      "cells": "Rot: Max krank. Orange: Tanja übernimmt",
+      "cells": "KU bei Max, ABL in Tanjas Zeile",
       "accept": "Nach deinem Ja ist es der Plan",
       "absent": "Max: KU, Krankheit/Unfall",
       "standIn": "Tanja: ABL, die Ablösung"
+    }
+  },
+  "monthplan-commands": {
+    "captions": {
+      "keywords": "In den Einstellungen: die Planungsbefehle",
+      "free": "FREE: Dieser Tag bleibt frei",
+      "only": "EARLY, LATE, NIGHT: nur diese Dienstart",
+      "notKind": "-EARLY, -LATE, -NIGHT: diese Art nicht",
+      "bands": "Früh 6-14:59, Spät 15-22:59, Nacht 23-5:59",
+      "strongest": "Das stärkste Band zählt: 8-16:30 ist Spät",
+      "toggle": "„Befehle anzeigen“ einschalten",
+      "type": "Getippt wie ein Dienst, in die Zelle",
+      "eveBefore": "-NIGHT davor: keine Nacht bis in den 18.",
+      "combine": "Zwei Befehle am selben Tag: beide gelten",
+      "others": "So für jede Person und jeden Tag",
+      "run": "Ein Klick auf den AutoWizard",
+      "proposal": "Vorschlag als Szenario, Original unberührt",
+      "veto": "Im Planlauf sind die Befehle eine Sperre",
+      "proofFree": "FREE: Mia hat am 18. keinen Dienst",
+      "proofOne": "-NIGHT: Mia am 17. OBA, Spät",
+      "proofTwo": "-EARLY: Jonas am 17. EMP, Spät",
+      "proofThree": "NIGHT: Lena am 16. OBN, Nacht",
+      "manual": "Von Hand darfst du trotzdem planen",
+      "decide": "Nur ein Vorschlag, du entscheidest"
     }
   }
 }

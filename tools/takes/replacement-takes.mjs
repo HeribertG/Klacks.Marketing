@@ -3,24 +3,26 @@
 /**
  * Story take of the clip R1 "05:40" (series Replacement, security demo Biel, lib/security-demo.mjs). It needs a throw-away copy of the stage database
  * klacks_marketing_security_biel_r1 (the accept changes the plan, phone numbers are added, so the master is never recorded on) and --group-id of "Biel Objektschutz".
- * replacement-r1 (1280x720): right-click on Max Wenger's OBT of 15.12., "Ausfall decken...", the review shows the proposed stand-in with the tier the app draws. The planner records
- * "Abgelehnt", opens the alternatives and records "Zugesagt" for Tanja Moser. Those answers only record contacts; the app says so in the dialog and the scenario still names the first
- * stand-in. So the take does what a planner has to do: "Fertig", delete the ABL of the proposal, set Tanja through "Ablösung...", accept through the banner. The replacement dialog in edit mode
- * is not usable here (GET Works/Changes of a scenario change answers 404), therefore delete and new entry. The row slider stands at 100 so the app draws the text at full size; there are no post zooms.
+ * replacement-r1 (1280x720): right-click on Max Wenger's RVN of 06.12., "Ausfall decken...", the review shows the proposed stand-in with the tier the app draws. The planner records
+ * "Abgelehnt", opens the alternatives and records "Zugesagt" for Tanja Moser. That answer makes her the stand-in of the scenario (the server switches it, nobody is contacted); the dialog follows
+ * by itself, so there is no manual step. "Fertig" shows the scenario, the banner accepts it. The day 06.12. was chosen on purpose: of Max's days it is the one with an on-call proposal, Tanja as
+ * "Passt in den Block" and no rest-day hint in the review. A failed switch aborts the take, there is no manual fallback. The row slider stands at 100 so the app draws the text at full size; there are no post zooms.
  * On the copy the rows of the three people are moved to the top with the row order of the app (per-user sort preference), so they stand together in the frame at 100 and no row scrolling is needed.
  * The chat is not used: the skill cover_absence has no review step, no outcome buttons and no alternatives. Nobody is contacted by Klacks in this take; the escalation roster stays off.
- * Publishable criterion (report.publishable, every part is read from the API after the accept, not from the screen): the cover request has notifyEscalationRoster=false and no override, for Max on 15.12.;
- * the proposal holds one covered and no open slot; the stage gave the first stand-in on tier 5 (on call, own group); the scenario belongs to the group and covers only 15.12.; exactly one accept,
- * scenario status Accepted; the real plan shows the KU break on Max on 15.12., a replacement WorkChange on his OBT naming Tanja, its mirror in Tanja's row and no WorkChange on the first stand-in;
- * every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja; no error toast; no HTTP error on a
- * recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints; every name of the alternatives is a team member. An accept refused with HTTP 409 aborts the take.
+ * The waits (button spinner of the proposal, alternatives list, reload after "Zugesagt", the way to "Fertig") are cut regions; the hints below the alternatives still speak about the first stand-in after
+ * the switch, the cut to the scenario keeps that hint list out of the picture (the harmony line at the top of the dialog stays, it is the app state). REPLACEMENT_CSS lightens the modal backdrop so the plan stays readable behind the dialog (cosmetic only).
+ * Publishable criterion (report.publishable, every part is read from the API, not from the screen): the cover request has notifyEscalationRoster=false and no override, for Max on 06.12.;
+ * the proposal holds one covered and no open slot on tier 5 (on call, own group); the recorded "Zugesagt" answers isScenarioReplacement=true and the scenario then holds Tanja on Max's work, nobody on the first stand-in;
+ * the scenario belongs to the group and covers only 06.12.; exactly one accept, scenario status Accepted; the real plan shows the KU break on Max on 06.12., a replacement WorkChange on his RVN naming Tanja,
+ * its mirror in Tanja's row and no WorkChange on the first stand-in; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
+ * no error toast; no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints; every name of the alternatives is a team member. An accept refused with HTTP 409 aborts the take.
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
 import * as S from "../lib/klacks-demo-session.mjs";
 import { SEL_MODAL, waitModalAtRest } from "../lib/modal.mjs";
-import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_DELETE, HTTP_POST, SUB_ROW_HEIGHT_PX, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
+import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
 import { SCENARIO_STATUS_ACCEPTED, getScenario, realFilter, scenarioFilter } from "../lib/scenario-demo.mjs";
 import * as D from "../lib/security-demo.mjs";
 import { decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
@@ -36,9 +38,8 @@ export const REPLACEMENT_R1_CUES = Object.freeze({
   refused: "refused",
   alternatives: "alternatives",
   yes: "yes",
+  follows: "follows",
   scenario: "scenario",
-  stillLuc: "stillLuc",
-  swap: "swap",
   cells: "cells",
   accept: "accept",
   absent: "absent",
@@ -46,35 +47,28 @@ export const REPLACEMENT_R1_CUES = Object.freeze({
 });
 export const REPLACEMENT_R1_FINAL_HOLD_MS = 3500;
 export const REPLACEMENT_VIEWPORT = Object.freeze({ width: 1280, height: 720 });
-export const REPLACEMENT_CSS = ".recovery-phone { filter: blur(6px) !important; }";
+export const REPLACEMENT_CSS = ".recovery-phone { filter: blur(6px) !important; } .modal-backdrop.show { opacity: 0.16 !important; }";
 
-const ABSENT_DAY = "2026-12-15";
+const ABSENT_DAY = "2026-12-06";
 const ABSENT_FIRST_NAME = "Max";
 const STAND_IN_FIRST_NAME = "Tanja";
 const STAND_IN_FULL_NAME = "Tanja Moser";
-const STAND_IN_RESULT = "Moser Tanja";
-const STAND_IN_SEARCH = "Moser";
-const FIRST_NAME_OF_PROPOSAL = "Luc";
-const ABSENT_SHIFT = "OBT";
+const FIRST_NAME_OF_PROPOSAL = "Selina";
+const ABSENT_SHIFT = "RVN";
 const ON_CALL_TIER = 5;
-const SHIFT_HOURS = "8";
-const SHIFT_MINUTES = "0";
 const WORK_CHANGE_ENTRY_TYPE = 1;
 const BREAK_ENTRY_TYPE = 3;
 const REPLACEMENT_TYPES = Object.freeze([2, 3, 9]);
 const OUTCOME_ACCEPTED = "Accepted";
 const OUTCOME_DECLINED = "Declined";
-const COLUMNS_SCROLLED = 11;
+const COLUMNS_SCROLLED = 0;
 const SUB_ROW_FIRST = 0;
-const SUB_ROW_SECOND = 1;
-const SUB_ROW_THIRD = 2;
 const ROWS = Object.freeze({ absent: 0, firstStandIn: 1, standIn: 2 });
 const SORT_ICON_OFFSET = Object.freeze({ x: -19, y: 16 });
 const INDIVIDUAL_ACTIVE_CLASS = "individual-active";
 const HEAD_POINTER_RATIO = 0.75;
+const NAME_POINTER_GAP_PX = 30;
 const MENU_COVER_ABSENCE = "#coverAbsence";
-const MENU_DELETE = "#del";
-const MENU_REPLACEMENT = "#replacement";
 const SEL_OPEN_MENU = "app-context-menu .menu-container[style*='display: block']";
 const SEL_RECOVERY_ABSENCE = `${SEL_MODAL} select#recovery-absence`;
 const SEL_RECOVERY_NOTIFY = `${SEL_MODAL} input#recovery-notify-roster`;
@@ -88,32 +82,25 @@ const SEL_RECOVERY_DECLINE = `${SEL_MODAL} .recovery-covered-actions button[data
 const SEL_RECOVERY_ALTERNATIVES = `${SEL_MODAL} .recovery-alternatives-toggle`;
 const SEL_RECOVERY_ALTERNATIVE = `${SEL_MODAL} .recovery-alternative`;
 const SEL_RECOVERY_HEAD = ".recovery-covered-head";
+const SEL_RECOVERY_NAME = ".recovery-name";
 const SEL_BANNER = "#scenario-banner";
 const SEL_SORT_INDIVIDUAL = "#client-filter-individual-button";
-const SEL_REPLACEMENT_SEARCH = `${SEL_MODAL} input#replaceClient`;
-const SEL_REPLACEMENT_RESULT = `${SEL_MODAL} .search-result-item`;
-const SEL_REPLACEMENT_HOURS = `${SEL_MODAL} #replDurationHours`;
-const SEL_REPLACEMENT_MINUTES = `${SEL_MODAL} #replDurationMinutes`;
-const SEL_REPLACEMENT_SAVE = `${SEL_MODAL} .modal-footer button.save-btn`;
+const SEL_RECOVERY_SPINNER = `${SEL_MODAL} .spinner-border`;
 const COVER_ABSENCE_PATH = /\/Recovery\/CoverAbsence$/i;
 const CANDIDATES_PATH = /\/Recovery\/Candidates$/i;
 const RECORD_REQUEST_PATH = /\/Recovery\/Requests$/i;
-const WORK_CHANGES_PATH = /\/Works\/Changes(\/[0-9a-f-]{36})?$/i;
 const WATCHED_ERROR_PATH = /\/Recovery\/|\/Works\/Changes|\/AnalyseScenarios\//i;
 const REQUESTS_API = "/api/backend/Recovery/Requests";
 const CLIENTS_API = "/api/backend/Clients";
 const SORT_ORDER_API = "/api/backend/clientsortpreferences";
 const HTTP_PUT = "PUT";
 const PHONE_TYPE_PRIVATE_CELL = 1;
-const PHONES = Object.freeze({ Luc: "+41 32 555 01 21", Tanja: "+41 32 555 01 42", Marc: "+41 32 555 01 63" });
+const PHONES = Object.freeze({ Selina: "+41 32 555 01 21", Tanja: "+41 32 555 01 42", Marc: "+41 32 555 01 63" });
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN]);
 const SAVE_TIMEOUT_MS = 30000;
 const COVER_TIMEOUT_MS = 60000;
-const REVIEW_REAL_TIME_MS = 4000;
-const FAST_FACTOR_REVIEW = 4;
 const CUT = Number.POSITIVE_INFINITY;
-const TYPE_DELAY_MS = 60;
-const MOVE = { short: 400, normal: 650 };
+const MOVE = { normal: 650 };
 
 const log = (...args) => console.log("  ", ...args);
 const fullName = (client) => `${client.firstName} ${client.name}`;
@@ -183,8 +170,17 @@ async function checkPage(take, label) {
   if (found.length > 0) flag(take.report, `"${found.join(", ")}" is on the page at "${label}"`);
 }
 
+/** Inside a cut region: the dialog holds the awaited element, no spinner is left and the page has stopped moving. */
+async function settleDialog(take, selector) {
+  const { page } = take;
+  await page.locator(selector).first().waitFor({ state: "visible", timeout: COVER_TIMEOUT_MS });
+  await page.locator(SEL_RECOVERY_SPINNER).first().waitFor({ state: "detached", timeout: COVER_TIMEOUT_MS });
+  await waitModalAtRest(page);
+  await page.waitForTimeout(CANVAS_SETTLE_MS);
+}
+
 async function propose(take, ctx) {
-  const { page, recorder, mouse, report, script } = take;
+  const { page, recorder, mouse, report, script, captions } = take;
   const absence = page.locator(SEL_RECOVERY_ABSENCE);
   await absence.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
   const named = (await page.locator(SEL_RECOVERY_CLIENT).innerText()).trim();
@@ -198,11 +194,10 @@ async function propose(take, ctx) {
   const coverResponse = page.waitForResponse((response) => response.request().method() === HTTP_POST && COVER_ABSENCE_PATH.test(new URL(response.url()).pathname), { timeout: COVER_TIMEOUT_MS });
   coverResponse.catch(() => {});
   await mouse.clickLocator(page.locator(SEL_RECOVERY_SUBMIT), MOVE.normal);
-  const reviewShown = page.locator(SEL_RECOVERY_REVIEW).waitFor({ state: "visible", timeout: COVER_TIMEOUT_MS });
-  const fast = await Promise.race([reviewShown.then(() => false), page.waitForTimeout(REVIEW_REAL_TIME_MS).then(() => true)]);
-  if (fast) await recorder.beginFast(FAST_FACTOR_REVIEW);
+  await recorder.beginFast(CUT);
   const response = await coverResponse;
-  await reviewShown;
+  if (response.ok()) await settleDialog(take, SEL_RECOVERY_REVIEW);
+  await captions.show(REPLACEMENT_R1_CUES.why);
   await recorder.endFast();
   if (!response.ok()) throw new Error(`CoverAbsence returned HTTP ${response.status()}`);
   const body = response.request().postDataJSON();
@@ -225,11 +220,10 @@ async function propose(take, ctx) {
   report.tierShown = (await page.locator(SEL_RECOVERY_TIER).first().innerText()).trim();
 }
 
-async function recordAnswers(take) {
-  const { page, mouse, captions, report } = take;
+async function recordAnswers(take, ctx) {
+  const { page, mouse, captions, report, recorder } = take;
   const cues = REPLACEMENT_R1_CUES;
   await page.locator(SEL_RECOVERY_COVERED).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await captions.show(cues.why);
   const tier = await page.locator(SEL_RECOVERY_TIER).first().boundingBox();
   await mouse.moveTo({ x: tier.x + tier.width / HALF, y: tier.y + tier.height / HALF }, MOVE.normal);
   await pauseOf(take, "why");
@@ -242,9 +236,11 @@ async function recordAnswers(take) {
   candidates.catch(() => {});
   await captions.show(cues.alternatives);
   await mouse.clickLocator(page.locator(SEL_RECOVERY_ALTERNATIVES).first(), MOVE.normal);
+  await recorder.beginFast(CUT);
   report.candidates = ((await (await candidates).json()).eligible ?? []).map((candidate) => ({ name: candidate.name, isOnCall: candidate.isOnCall, rhythmDelta: candidate.rhythmDelta }));
   const alternative = page.locator(SEL_RECOVERY_ALTERNATIVE).filter({ hasText: STAND_IN_FULL_NAME }).first();
-  await alternative.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
+  await settleDialog(take, `${SEL_RECOVERY_ALTERNATIVE}:has-text("${STAND_IN_FULL_NAME}")`);
+  await recorder.endFast();
   const strangers = report.candidates.map((candidate) => candidate.name).filter((name) => !report.stage.employees.includes(name));
   if (strangers.length > 0) flag(report, `alternatives outside the team: ${strangers.join(", ")}`);
   await alternative.scrollIntoViewIfNeeded();
@@ -256,42 +252,35 @@ async function recordAnswers(take) {
   const saved = page.waitForResponse((response) => response.request().method() === HTTP_POST && RECORD_REQUEST_PATH.test(new URL(response.url()).pathname), { timeout: SAVE_TIMEOUT_MS });
   saved.catch(() => {});
   await mouse.clickLocator(alternative.locator(`button[data-outcome='${OUTCOME_ACCEPTED}']`), MOVE.normal);
+  await recorder.beginFast(CUT);
   const response = await saved;
   if (!response.ok()) throw new Error(`recording the answer of ${STAND_IN_FULL_NAME} returned HTTP ${response.status()}`);
+  const answer = await response.json();
+  report.answer = { isScenarioReplacement: answer.isScenarioReplacement, outcome: answer.outcome };
+  if (answer.isScenarioReplacement !== true) throw new Error(`the answer of ${STAND_IN_FULL_NAME} did not switch the scenario - there is no manual fallback in this take`);
+  const coveredHead = page.locator(SEL_RECOVERY_COVERED).first().locator(SEL_RECOVERY_HEAD).first();
+  await coveredHead.filter({ hasText: STAND_IN_FULL_NAME }).waitFor({ state: "visible", timeout: SAVE_TIMEOUT_MS });
+  await settleDialog(take, SEL_RECOVERY_COVERED);
+  await coveredHead.scrollIntoViewIfNeeded();
+  const name = await coveredHead.locator(SEL_RECOVERY_NAME).boundingBox();
+  await mouse.moveTo({ x: name.x + name.width + NAME_POINTER_GAP_PX, y: name.y + name.height / HALF }, MOVE.normal);
+  await page.waitForTimeout(CANVAS_SETTLE_MS);
+  await recorder.endFast();
   await pauseOf(take, "yes");
+  await captions.show(cues.follows);
+  await pauseOf(take, "follows");
+  await checkScenarioSwitched(take, ctx);
 }
 
-/** The scenario still names the first stand-in: the ABL in the absent row is deleted and the OBT above it gets the person who said yes. */
-async function swapStandIn(take, ctx) {
-  const { page, mouse, captions, api, report } = take;
-  const cues = REPLACEMENT_R1_CUES;
-  await captions.show(cues.stillLuc);
-  const deleted = page.waitForResponse((response) => response.request().method() === HTTP_DELETE && WORK_CHANGES_PATH.test(new URL(response.url()).pathname), { timeout: SAVE_TIMEOUT_MS });
-  deleted.catch(() => {});
-  await openMenuItem(take, await cell(take, ROWS.absent, SUB_ROW_THIRD), MENU_DELETE);
-  if (!(await deleted).ok()) throw new Error("deleting the proposed replacement failed");
-  await page.waitForTimeout(CANVAS_SETTLE_MS);
-  await captions.show(cues.swap);
-  await openMenuItem(take, await cell(take, ROWS.absent, SUB_ROW_SECOND), MENU_REPLACEMENT);
-  await page.locator(SEL_REPLACEMENT_SEARCH).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await waitModalAtRest(page);
-  await mouse.clickLocator(page.locator(SEL_REPLACEMENT_SEARCH), MOVE.normal);
-  await page.locator(SEL_REPLACEMENT_SEARCH).pressSequentially(STAND_IN_SEARCH, { delay: TYPE_DELAY_MS });
-  const result = page.locator(SEL_REPLACEMENT_RESULT).filter({ hasText: STAND_IN_RESULT }).first();
-  await result.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await mouse.clickLocator(result, MOVE.short);
-  await page.locator(SEL_REPLACEMENT_HOURS).fill(SHIFT_HOURS);
-  await page.locator(SEL_REPLACEMENT_MINUTES).fill(SHIFT_MINUTES);
-  await pauseOf(take, "swap");
-  const saved = page.waitForResponse((response) => response.request().method() === HTTP_POST && WORK_CHANGES_PATH.test(new URL(response.url()).pathname), { timeout: SAVE_TIMEOUT_MS });
-  saved.catch(() => {});
-  await mouse.clickLocator(page.locator(SEL_REPLACEMENT_SAVE), MOVE.normal);
-  if (!(await saved).ok()) throw new Error("saving the replacement failed");
-  await page.locator(SEL_MODAL).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
-  await page.waitForTimeout(CANVAS_SETTLE_MS);
-  const scenarioData = await api.schedule(scenarioFilter(ctx.decemberFilter, ctx.scenario.token));
-  report.scenarioReplacement = replacementsOf(onDay(scenarioData, ctx.absent.id)).map((entry) => entry.replaceClientId);
-  if (report.scenarioReplacement.length !== 1 || report.scenarioReplacement[0] !== ctx.standIn.id) flag(report, `the scenario replacement is ${JSON.stringify(report.scenarioReplacement)} instead of ${STAND_IN_FULL_NAME}`);
+/** The switch itself, read from the scenario: Max's work names Tanja, the first stand-in holds nothing there. */
+async function checkScenarioSwitched(take, ctx) {
+  const { api, report } = take;
+  const scenarioData = await api.schedule(scenarioFilter(ctx.decemberFilter, ctx.outcome.token));
+  const replacement = replacementsOf(onDay(scenarioData, ctx.absent.id)).map((entry) => entry.replaceClientId);
+  const leftOnFirstStandIn = replacementsOf(onDay(scenarioData, ctx.firstStandIn.id)).length;
+  report.scenarioReplacement = { replacement, leftOnFirstStandIn };
+  if (replacement.length !== 1 || replacement[0] !== ctx.standIn.id) flag(report, `the scenario replacement is ${JSON.stringify(replacement)} instead of ${STAND_IN_FULL_NAME}`);
+  if (leftOnFirstStandIn !== 0) flag(report, "the first stand-in still holds the replacement in the scenario");
 }
 
 /** The published proof of the take: only states read back from the API after the accept. */
@@ -324,7 +313,7 @@ async function verifyAccepted(take, ctx) {
 }
 
 /** The stored row order only applies with the sort mode "individual" of the row header; a page load resets it. Runs inside a cut region. */
-async function useRowOrder(take) {
+export async function useRowOrder(take) {
   const { page } = take;
   const grid = await gridBox(page);
   const icon = { x: grid.x + SORT_ICON_OFFSET.x, y: grid.y + SORT_ICON_OFFSET.y };
@@ -346,13 +335,16 @@ async function frameDay(take) {
 }
 
 async function openProposalAsScenario(take, ctx) {
-  const { page, api, mouse, report, options } = take;
+  const { page, api, report, options, recorder, captions } = take;
+  await recorder.beginFast(CUT);
   const done = page.locator(SEL_RECOVERY_SUBMIT);
   await done.scrollIntoViewIfNeeded();
-  await mouse.clickLocator(done, MOVE.normal);
+  await done.click();
   await page.locator(SEL_MODAL).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
   await page.locator(SEL_BANNER).waitFor({ state: "visible", timeout: COVER_TIMEOUT_MS });
   await page.waitForTimeout(CANVAS_SETTLE_MS);
+  await captions.show(REPLACEMENT_R1_CUES.scenario);
+  await recorder.endFast();
   ctx.scenario = await getScenario(api, ctx.outcome.scenarioId);
   report.scenario = { id: ctx.scenario.id, name: ctx.scenario.name, groupId: ctx.scenario.groupId, from: dateKey(ctx.scenario.fromDate), until: dateKey(ctx.scenario.untilDate) };
   if (ctx.scenario.groupId !== options.groupId) throw new Error(`the scenario belongs to group ${ctx.scenario.groupId} - accepting it would replace data of another group`);
@@ -395,16 +387,15 @@ export async function takeReplacementR1(take) {
     await captions.show(cues.form);
     await pauseOf(take, "field");
     await propose(take, ctx);
-    await recordAnswers(take);
+    await recordAnswers(take, ctx);
 
-    await captions.show(cues.scenario);
     await openProposalAsScenario(take, ctx);
     await pauseOf(take, "scenario");
 
-    await swapStandIn(take, ctx);
     await captions.show(cues.cells);
+    await mouse.moveTo(await cell(take, ROWS.standIn, SUB_ROW_FIRST), MOVE.normal);
     await pauseOf(take, "cells");
-    await checkPage(take, "swapped");
+    await checkPage(take, "scenario");
 
     await captions.show(cues.accept);
     await pauseOf(take, "acceptLead");
