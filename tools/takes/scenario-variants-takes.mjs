@@ -15,6 +15,8 @@
  * and the original show exactly the rows of the plan (with the info rows off), variant B stays below the contract maximum; exactly one accept answered 200, the attempt on variant A answered 409 SCENARIO_STALE and named variant B in the dialog; variant B is Accepted, variant A Rejected, no active scenario is left;
  * the real December differs from the December before the take exactly by the moved nights (compared by employee, day and times, an accept writes new ids); no error toast; no HTTP error besides the stale answer; no text "Winterthur" or "Uster" on the page at the checkpoints.
  * Period hours: PeriodHoursService ignores ReplacementWithin; this take moves whole works only, it holds no replacement, so the hours of the row header are valid. report.hours lists what the row headers draw per token.
+ * Cultures de, en, fr, it: the names of the variants come from the script entry, the rest warning of the error list and the lines of the stale dialog from lib/ui-texts.mjs (whitespace is collapsed on both sides, French writes a space before the colon).
+ * Since v1.0.55 the dialog creates variant A for the planning period of the plan (December) and the days outside it are locked in the scenario view.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
@@ -26,6 +28,7 @@ import * as D from "../lib/security-demo.mjs";
 import { checkPage, useRowOrder } from "./replacement-takes.mjs";
 import { clickSelector, decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 import { checkStage, measure, readToasts, scrollColumns, setRowSlider, trackHttpErrors, watchToasts } from "./security-takes.mjs";
+import { staleAcceptedLine, uiTexts } from "../lib/ui-texts.mjs";
 
 export const VIDEO_SCENARIO_VARIANTS = "scenario-variants";
 export const SCENARIO_VARIANTS_CUES = Object.freeze({
@@ -70,7 +73,6 @@ const SCENARIO_CREATE_PATH = /\/AnalyseScenarios\/?$/i;
 const SCENARIO_ACCEPT_PATH = /\/AnalyseScenarios\/[0-9a-f-]{36}\/Accept/i;
 const REASSIGN_ROUTE = /\/Works\/([0-9a-f-]{36})\/ReassignClient/i;
 const WATCHED_ERROR_PATH = /\/AnalyseScenarios|\/Works\/|\/Accept/i;
-const REST_ROW = /Ruhezeit/;
 const SCENARIO_STATUS_REJECTED = 2;
 const SAVE_TIMEOUT_MS = 30000;
 const RELOAD_TIMEOUT_MS = 20000;
@@ -216,14 +218,14 @@ async function waitListOfPlan(page, expected) {
   return false;
 }
 
-async function waitRestRow(page) {
-  const row = page.locator(SEL_ERROR_ROWS).filter({ hasText: REST_ROW }).first();
+async function waitRestRow(page, restRow) {
+  const row = page.locator(SEL_ERROR_ROWS).filter({ hasText: restRow }).first();
   const seen = await row.waitFor({ state: "visible", timeout: ERROR_ROW_TIMEOUT_MS }).then(() => true, () => false);
   if (seen) await row.scrollIntoViewIfNeeded();
   return seen;
 }
 
-/** Variant B is a sibling of A on the same plan: same nights, other employee. It spans December, the dialog of the app gave A the visible weeks around it (28.11.-03.01.). It runs inside a cut region. */
+/** Variant B is a sibling of A on the same plan: same nights, other employee. It spans December like A: since v1.0.55 the dialog of the app sends the planning period, before it sent the visible weeks around it (28.11.-03.01.). It runs inside a cut region. */
 async function prepareVariantB(take, ctx) {
   const { api, options, script } = take;
   const scenario = await createScenario(api, { name: script.variantB.scenarioName, groupId: options.groupId, fromDate: D.PERIOD.from, untilDate: D.PERIOD.until });
@@ -277,6 +279,7 @@ async function assertVariantB(take, ctx) {
 /** The second accept: the app must answer with its stale warning; only the cancel button of that dialog is ever clicked. */
 async function attemptVariantA(take, ctx) {
   const { page, mouse, report, script } = take;
+  const ui = uiTexts(take.culture);
   const answered = page.waitForResponse((response) => response.request().method() === HTTP_POST && SCENARIO_ACCEPT_PATH.test(new URL(response.url()).pathname), { timeout: DECIDE_TIMEOUT_MS });
   answered.catch(() => {});
   await clickSelector(take, SEL_BANNER_ACCEPT, MOVE.normal);
@@ -296,8 +299,8 @@ async function attemptVariantA(take, ctx) {
   await waitModalAtRest(page);
   const dialog = (await page.locator(SEL_MODAL).innerText()).replace(/\s+/g, " ").trim();
   report.staleDialog = dialog;
-  if (!dialog.includes(`Seither übernommene Szenarien: ${script.variantB.scenarioName}`)) flag(report, `the stale dialog does not name variant B: ${dialog}`);
-  if (JSON.stringify(body ?? {}).indexOf(STALE_CODE) < 0 && !dialog.includes("Dienstplan wurde inzwischen geändert")) flag(report, "the conflict is no stale conflict");
+  if (!dialog.includes(staleAcceptedLine(take.culture, script.variantB.scenarioName))) flag(report, `the stale dialog does not name variant B: ${dialog}`);
+  if (JSON.stringify(body ?? {}).indexOf(STALE_CODE) < 0 && !dialog.includes(ui.staleTitle)) flag(report, "the conflict is no stale conflict");
   await pauseOf(take, "stale");
   await mouse.clickLocator(page.locator(SEL_CANCEL), MOVE.normal);
   await page.locator(SEL_MODAL).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
@@ -333,6 +336,7 @@ export async function takeScenarioVariants(take) {
   const { page, api, options, recorder, mouse, report, captions, script } = take;
   if (!script?.beats || !script?.variantA || !script?.variantB || !script?.nights) throw new Error(`the ${report.video} script lacks beats, variantA, variantB or nights in capture-app-videos.scripts.json`);
   const cues = SCENARIO_VARIANTS_CUES;
+  const ui = uiTexts(take.culture);
   await checkStage(take, D.SITES.bern);
   const first = await openSchedule(page, options);
   await orderRows(take, first.data.clients, [script.source, script.variantA.firstName, script.variantB.firstName]);
@@ -391,7 +395,7 @@ export async function takeScenarioVariants(take) {
 
     await captions.show(cues.rest);
     await mouse.clickLocator(page.locator(SEL_SHIFT_TABS).nth(ERROR_TAB_INDEX), MOVE.normal);
-    report.restRowInA = await waitRestRow(page);
+    report.restRowInA = await waitRestRow(page, ui.restRow);
     report.errorRowsInA = await visibleErrorRows(page);
     if (!report.restRowInA) flag(report, "the rest warning did not appear in the error list of variant A");
     await pauseOf(take, "rest");
@@ -400,7 +404,7 @@ export async function takeScenarioVariants(take) {
     await recorder.beginFast(CUT);
     await prepareVariantB(take, ctx);
     await reframeOnVariantA(take, ctx);
-    await waitRestRow(page);
+    await waitRestRow(page, ui.restRow);
     await readHours(take, ctx, "variantB", ctx.variantB.token);
     await captions.show(cues.variantB);
     await recorder.endFast();

@@ -20,7 +20,10 @@
  * Template: klacks_marketing_security_template (migrated, phrases synced, nothing seeded); per stage CREATE DATABASE klacks_marketing_security_<site>_<stage> TEMPLATE
  * klacks_marketing_security_template, start the recording API on it, run this script, stop the API. r2 is a copy of a good r1, so both clips start from the same plan; run with --stage r2 on a copy of that r2 it keeps the
  * plan and only adds what lets one duty stay open (applyOpenSlot), so the take of clip R2 runs it on its throw-away copy and the master stays unchanged.
- * CLI: --site bern|biel  --stage m1|m2|m3|s1|r1|r2  [--self-check]  [--report <file>]  [--api-url <url>]
+ * CLI: --site bern|biel  --stage m1|m2|m3|s1|r1|r2  [--language de|en|fr|it]  [--self-check]  [--report <file>]  [--api-url <url>]
+ * --language (default de) is the UI language sent to the AutoWizard of the planned stages (scenario naming and its language model stage); the absence types are looked up by their German names in every language, and the demo data
+ * (group, orders, contracts, people) stays German by design, so the stage databases of one site are shared by the clips of all languages: seed once, copy per take, never seed per language (the wizard is not deterministic and the takes check
+ * the story - R1 Max on 06.12. with Selina on tier 5, R2 EXPECTED_SHIFTS, S0 Tobias OBN on 15./16.12. - against these masters).
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL.
  */
 
@@ -90,7 +93,8 @@ const ABSENCE_ON_CALL = "Pikett";
 const GIVEN_NAME_CLAIM = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname";
 const LOG_PREFIX = "[seed-security]";
 const ORDER_DESCRIPTION_SUFFIX = "Demo-Auftrag Objektschutz";
-const LANGUAGE = "de";
+const DEFAULT_LANGUAGE = "de";
+const LANGUAGE_CODE = /^[a-z]{2}(-[a-zA-Z]{2})?$/;
 
 const log = (message) => console.log(`${LOG_PREFIX} ${message}`);
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -102,6 +106,7 @@ function readOptions() {
       "api-url": { type: "string" },
       site: { type: "string" },
       stage: { type: "string" },
+      language: { type: "string", default: DEFAULT_LANGUAGE },
       report: { type: "string" },
       "self-check": { type: "boolean", default: false },
     },
@@ -109,7 +114,8 @@ function readOptions() {
   const site = D.SITES[values.site];
   if (!site) throw new Error(`--site must be one of ${Object.keys(D.SITES).join(", ")}`);
   if (!site.stages.includes(values.stage)) throw new Error(`--stage must be one of ${site.stages.join(", ")} for the site ${site.key}`);
-  return { session: S.readSessionOptions(values), site, stage: D.STAGES[values.stage], stageName: values.stage, selfCheck: values["self-check"], reportPath: values.report };
+  if (!LANGUAGE_CODE.test(values.language)) throw new Error(`--language must be a language code like de, en, fr or it, got "${values.language}"`);
+  return { session: S.readSessionOptions(values), site, stage: D.STAGES[values.stage], stageName: values.stage, language: values.language, selfCheck: values["self-check"], reportPath: values.report };
 }
 
 function flattenNodes(nodes, found = []) {
@@ -357,10 +363,10 @@ async function ensureOrder(api, order, group) {
   return { order: order.abbreviation, action: "cut", sealedOrderId: parentId, parts: parts.map((part) => ({ id: part.id, abbreviation: part.abbreviation, status: part.status, originalId: part.originalId, parentId: part.parentId, rootId: part.rootId })) };
 }
 
-async function absenceId(api, name) {
+async function absenceId(api, name, language) {
   const absences = (await api.call(HTTP_GET, ABSENCES_PATH)) ?? [];
   const list = Array.isArray(absences) ? absences : absences.absences ?? [];
-  const match = list.find((absence) => absence.name?.[LANGUAGE] === name || absence.name?.de === name);
+  const match = list.find((absence) => absence.name?.[language] === name || absence.name?.de === name);
   if (!match) throw new Error(`the absence type ${name} is missing`);
   return match.id;
 }
@@ -420,7 +426,7 @@ async function setCommands(api, site, group, memberIds) {
   return site.commands.length;
 }
 
-async function startWizard(api, group) {
+async function startWizard(api, group, language) {
   const schedule = await readSchedule(api, group, null);
   const shiftRows = (await api.call(HTTP_POST, SHIFT_SCHEDULE_PATH, {
     data: { startDate: D.PERIOD.from, endDate: D.PERIOD.until, selectedGroup: group.id, holidayDates: [...D.HOLIDAYS], startRow: 0, rowCount: SHIFT_ROW_LIMIT },
@@ -428,7 +434,7 @@ async function startWizard(api, group) {
   const shiftIds = [...new Set(shiftRows.map((row) => row.shiftId))];
   const agentIds = schedule.clients.map((client) => client.id);
   const started = await api.call(HTTP_POST, AUTO_WIZARD_START_PATH, {
-    data: { periodFrom: D.PERIOD.from, periodUntil: D.PERIOD.until, agentIds, shiftIds, groupId: group.id, analyseToken: null, language: LANGUAGE, agentOrderIsUserDefined: false },
+    data: { periodFrom: D.PERIOD.from, periodUntil: D.PERIOD.until, agentIds, shiftIds, groupId: group.id, analyseToken: null, language, agentOrderIsUserDefined: false },
   });
   return { jobId: started.jobId, agents: agentIds.length, shifts: shiftIds.length };
 }
@@ -444,9 +450,9 @@ async function waitForWizard(api, jobId) {
 }
 
 /** Plans December the way the AutoWizard button does and accepts the final scenario without any override; a refused accept fails the run. */
-async function planAndAccept(api, group) {
+async function planAndAccept(api, group, language) {
   const started = Date.now();
-  const { jobId, agents, shifts } = await startWizard(api, group);
+  const { jobId, agents, shifts } = await startWizard(api, group, language);
   log(`AutoWizard ${jobId}: ${agents} agents, ${shifts} shifts`);
   const job = await waitForWizard(api, jobId);
   if (String(job?.status).toLowerCase() !== JOB_STATUS_COMPLETED) throw new Error(`AutoWizard ended as ${job?.status}: ${job?.reason ?? ""}`);
@@ -523,7 +529,7 @@ async function verifyStage(api, site, stage, group, memberIds) {
 
 async function main() {
   const options = readOptions();
-  const { session, site, stage, stageName } = options;
+  const { session, site, stage, stageName, language } = options;
   if (!session.apiUrl.includes(D.RECORDING_API_PORT)) throw new Error(`refusing ${session.apiUrl}: seed only the recording API (${D.RECORDING_API_PORT}) on a klacks_marketing_* copy`);
   D.assertPlan();
   const context = await playwrightRequest.newContext({ ignoreHTTPSErrors: true });
@@ -531,7 +537,7 @@ async function main() {
     const token = await S.apiLogin(context, session);
     await assertDemoUser(token);
     const api = new KlacksApi(context, session.apiUrl, token);
-    const report = { site: site.key, stage: stageName };
+    const report = { site: site.key, stage: stageName, language };
 
     report.cleared = await clearStage(api);
     log(`cleared ${report.cleared.groups.length} groups, ${report.cleared.branches.length} branches`);
@@ -548,7 +554,7 @@ async function main() {
     for (const order of D.ORDERS) report.orders.push(await ensureOrder(api, order, group));
     log(`orders ${report.orders.map((order) => `${order.order}:${order.action}`).join(" ")}`);
 
-    const vacationId = await absenceId(api, ABSENCE_VACATION);
+    const vacationId = await absenceId(api, ABSENCE_VACATION, language);
     if (stage.wishes) report.wishes = await placeWishes(api, site, memberIds, vacationId);
     if (stage.vacations) report.vacations = await bookVacations(api, site, group, memberIds, vacationId);
     if (stage.commands) report.commands = await setCommands(api, site, group, memberIds);
@@ -556,13 +562,13 @@ async function main() {
 
     const alreadyPlanned = stage.openSlot && worksIn(await readSchedule(api, group, null), D.PERIOD.from, D.PERIOD.until).length > 0;
     if (stage.planned && !alreadyPlanned) {
-      const plan = await planAndAccept(api, group);
+      const plan = await planAndAccept(api, group, language);
       report.plan = P.describeRun(plan, site, memberIds);
-      if (!stage.withoutOnCall) report.onCallDays = await bookOnCall(api, site, group, memberIds, await absenceId(api, ABSENCE_ON_CALL));
+      if (!stage.withoutOnCall) report.onCallDays = await bookOnCall(api, site, group, memberIds, await absenceId(api, ABSENCE_ON_CALL, language));
     }
     if (stage.openSlot) report.openSlot = await applyOpenSlot(api, site, group, memberIds);
     if (options.selfCheck) {
-      const plan = await planAndAccept(api, group);
+      const plan = await planAndAccept(api, group, language);
       report.selfCheck = P.describeRun(plan, site, memberIds);
     }
     if (stage.planned || options.selfCheck) {

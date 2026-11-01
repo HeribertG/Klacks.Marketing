@@ -3948,11 +3948,39 @@
     "de": {
       "absenceName": "Krankheit/Unfall",
       "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2200, "follows": 3200, "scenario": 2800, "cells": 3500, "acceptLead": 800, "absent": 3200 }
+    },
+    "en": {
+      "absenceName": "Illness/Accident",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2200, "follows": 3200, "scenario": 2800, "cells": 3500, "acceptLead": 800, "absent": 3200 }
+    },
+    "fr": {
+      "absenceName": "Maladie/Accident",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2200, "follows": 3200, "scenario": 2800, "cells": 3500, "acceptLead": 800, "absent": 3200 }
+    },
+    "it": {
+      "absenceName": "Malattia/Infortunio",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 900, "form": 1400, "why": 3500, "call": 3000, "refused": 1500, "alternatives": 3500, "yes": 2200, "follows": 3200, "scenario": 2800, "cells": 3500, "acceptLead": 800, "absent": 3200 }
     }
   },
   "replacement-r2": {
     "de": {
       "absenceName": "Krankheit/Unfall",
+      "untilDateTyped": "18.12.2026",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 700, "formLead": 1900, "until": 1500, "form": 1200, "result": 3000, "open": 3500, "scenario": 2500, "cells": 3500, "standIns": 2000, "answers": 1800, "acceptLead": 800, "why": 2800, "manual": 1000, "picked": 800 }
+    },
+    "en": {
+      "absenceName": "Illness/Accident",
+      "untilDateTyped": "12/18/2026",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 700, "formLead": 1900, "until": 1500, "form": 1200, "result": 3000, "open": 3500, "scenario": 2500, "cells": 3500, "standIns": 2000, "answers": 1800, "acceptLead": 800, "why": 2800, "manual": 1000, "picked": 800 }
+    },
+    "fr": {
+      "absenceName": "Maladie/Accident",
+      "untilDateTyped": "18/12/2026",
+      "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 700, "formLead": 1900, "until": 1500, "form": 1200, "result": 3000, "open": 3500, "scenario": 2500, "cells": 3500, "standIns": 2000, "answers": 1800, "acceptLead": 800, "why": 2800, "manual": 1000, "picked": 800 }
+    },
+    "it": {
+      "absenceName": "Malattia/Infortunio",
+      "untilDateTyped": "18/12/2026",
       "beats": { "intro": 2200, "hover": 400, "menu": 500, "field": 700, "formLead": 1900, "until": 1500, "form": 1200, "result": 3000, "open": 3500, "scenario": 2500, "cells": 3500, "standIns": 2000, "answers": 1800, "acceptLead": 800, "why": 2800, "manual": 1000, "picked": 800 }
     }
   },
@@ -3966,16 +3994,72 @@
       "columnsScrolled": 12,
       "splitY": 505,
       "beats": { "plan": 2200, "menu": 450, "copyLead": 1200, "typed": 500, "copy": 2200, "hover": 400, "afterDrop": 1200, "moved": 1500, "rest": 3800, "variantLead": 1500, "variantB": 2800, "hours": 3000, "original": 3200, "acceptLead": 800, "yes": 3000, "staleLead": 900, "confirm": 1200, "stale": 6000 }
+    },
+    "en": {
+      "source": "Tobias",
+      "shift": "OBN",
+      "nights": ["2026-12-15", "2026-12-16"],
+      "variantA": { "firstName": "Nadia", "scenarioName": "Variant A: Nadia" },
+      "variantB": { "firstName": "Lena", "scenarioName": "Variant B: Lena" },
+      "columnsScrolled": 12,
+      "splitY": 505,
+      "beats": { "plan": 2200, "menu": 450, "copyLead": 1200, "typed": 500, "copy": 2200, "hover": 400, "afterDrop": 1200, "moved": 1500, "rest": 3800, "variantLead": 1500, "variantB": 2800, "hours": 3000, "original": 3200, "acceptLead": 800, "yes": 3000, "staleLead": 900, "confirm": 1200, "stale": 6000 }
+    },
+    "fr": {
+      "source": "Tobias",
+      "shift": "OBN",
+      "nights": ["2026-12-15", "2026-12-16"],
+      "variantA": { "firstName": "Nadia", "scenarioName": "Variante A : Nadia" },
+      "variantB": { "firstName": "Lena", "scenarioName": "Variante B : Lena" },
+      "columnsScrolled": 12,
+      "splitY": 505,
+      "beats": { "plan": 2200, "menu": 450, "copyLead": 1200, "typed": 500, "copy": 2200, "hover": 400, "afterDrop": 1200, "moved": 1500, "rest": 3800, "variantLead": 1500, "variantB": 2800, "hours": 3000, "original": 3200, "acceptLead": 800, "yes": 3000, "staleLead": 900, "confirm": 1200, "stale": 6000 }
+    },
+    "it": {
+      "source": "Tobias",
+      "shift": "OBN",
+      "nights": ["2026-12-15", "2026-12-16"],
+      "variantA": { "firstName": "Nadia", "scenarioName": "Variante A: Nadia" },
+      "variantB": { "firstName": "Lena", "scenarioName": "Variante B: Lena" },
+      "columnsScrolled": 12,
+      "splitY": 505,
+      "beats": { "plan": 2200, "menu": 450, "copyLead": 1200, "typed": 500, "copy": 2200, "hover": 400, "afterDrop": 1200, "moved": 1500, "rest": 3800, "variantLead": 1500, "variantB": 2800, "hours": 3000, "original": 3200, "acceptLead": 800, "yes": 3000, "staleLead": 900, "confirm": 1200, "stale": 6000 }
     }
   },
   "monthplan-commands": {
     "de": {
-      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2900, "binding": 2900, "proof": 2000, "open": 2200, "manual": 1000}
+      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2900, "binding": 2900, "proof": 2000, "open": 2200, "manual": 1000},
+      "proof": { "caption": "{keywords}: {name} am {day}. {shown}", "shown": "{abbreviation}, {band}", "noShift": "ohne Dienst", "bands": { "EARLY": "Früh", "LATE": "Spät", "NIGHT": "Nacht" } }
+    },
+    "en": {
+      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2900, "binding": 2900, "proof": 2000, "open": 2200, "manual": 1000},
+      "proof": { "caption": "{keywords}: {name} on Dec {day}: {shown}", "shown": "{abbreviation}, {band}", "noShift": "no shift", "bands": { "EARLY": "early", "LATE": "late", "NIGHT": "night" } }
+    },
+    "fr": {
+      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2900, "binding": 2900, "proof": 2000, "open": 2200, "manual": 1000},
+      "proof": { "caption": "{keywords} : {name} le {day} : {shown}", "shown": "{abbreviation}, {band}", "noShift": "sans service", "bands": { "EARLY": "matin", "LATE": "soir", "NIGHT": "nuit" } }
+    },
+    "it": {
+      "beats": {"keywords": 2300, "free": 1600, "field": 550, "bands": 3400, "strongest": 2600, "toggleLead": 400, "toggle": 1000, "editor": 220, "typed": 350, "typedGroup": 900, "run": 500, "proposal": 2900, "binding": 2900, "proof": 2000, "open": 2200, "manual": 1000},
+      "proof": { "caption": "{keywords}: {name} il {day}: {shown}", "shown": "{abbreviation}, {band}", "noShift": "senza turno", "bands": { "EARLY": "mattina", "LATE": "pomeriggio", "NIGHT": "notte" } }
     }
   },
   "monthplan-wishes": {
     "de": {
-      "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000}
+      "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000},
+      "runtimeCaptions": { "hoursBefore": "Im Zeilenkopf: {name} bei {hours} Stunden", "hoursAfter": "Im Zeilenkopf: {name} jetzt {hours} Stunden", "counted": "Stunden zählen nur die {days} Werktage" }
+    },
+    "en": {
+      "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000},
+      "runtimeCaptions": { "hoursBefore": "Row header: {name} at {hours} h", "hoursAfter": "Row header: {name} now at {hours} h", "counted": "Hours count only the {days} workdays" }
+    },
+    "fr": {
+      "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000},
+      "runtimeCaptions": { "hoursBefore": "En-tête de ligne : {name} à {hours} h", "hoursAfter": "En-tête de ligne : {name} passe à {hours} h", "counted": "Seuls les {days} jours ouvrés comptent" }
+    },
+    "it": {
+      "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000},
+      "runtimeCaptions": { "hoursBefore": "Intestazione riga: {name} a {hours} h", "hoursAfter": "Intestazione riga: {name} ora a {hours} h", "counted": "Contano solo i {days} giorni lavorativi" }
     }
   }
 }

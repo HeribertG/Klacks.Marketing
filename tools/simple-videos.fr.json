@@ -53,5 +53,114 @@
       "schedule": "La tournée est dans le planning",
       "containers": "Les conteneurs sont dans le planning"
     }
+  },
+  "security-month-plan": {
+    "captions": {
+      "cut": "Site surveillé 24 h/24 en trois services",
+      "team": "Dix personnes, temps plein et partiel",
+      "targets": "Les heures garanties viennent du contrat",
+      "wishes": "Vacances et commandes sont au planning",
+      "run": "Un clic sur l'AutoWizard",
+      "proposal": "Proposition en scénario, original intact",
+      "free": "FREE respecté : Mia est libre le 18",
+      "vacation": "Les vacances sont restées",
+      "filled": "Heures et services par personne",
+      "overview": "Les dix personnes dans le même planning",
+      "summary": "Pourvu et ouvert, visible avant votre oui",
+      "accept": "Après votre oui, c'est le planning"
+    }
+  },
+  "replacement-r1": {
+    "captions": {
+      "report": "Max est absent. Clic droit sur le service",
+      "form": "Qui manque, à partir de quand, pourquoi",
+      "why": "Proposé : Selina, d'astreinte aujourd'hui",
+      "call": "Klacks n'appelle personne. C'est vous.",
+      "refused": "Selina refuse. Vous l'enregistrez.",
+      "alternatives": "Alternatives : Tanja s'intègre au bloc",
+      "yes": "Tanja accepte. Vous l'enregistrez aussi.",
+      "follows": "Le scénario suit : Tanja au lieu de Selina",
+      "scenario": "Proposition en scénario, original intact",
+      "cells": "MA chez Max, REM dans la ligne de Tanja",
+      "accept": "Après votre oui, c'est le planning",
+      "absent": "Max : MA, Maladie/Accident",
+      "standIn": "Tanja : REM, le remplacement"
+    }
+  },
+  "replacement-r2": {
+    "captions": {
+      "report": "Elsa est absente toute la semaine",
+      "form": "Clic droit : Couvrir l'absence",
+      "week": "Combien de temps ? Jusqu'à vendredi",
+      "result": "Quatre services couverts, un ouvert",
+      "open": "Vendredi : aucun remplaçant approprié",
+      "scenario": "Proposition en scénario, original intact",
+      "cells": "MA toute la semaine, REM jusqu'à jeudi",
+      "standIns": "Proposition : Yannick, Luc, Marc, Tanja",
+      "answers": "C'est à vous de les contacter",
+      "accept": "Après votre oui, c'est le planning",
+      "why": "Vendredi, tous travaillent ou ont FREE",
+      "manual": "Le reste à la main : Remplacement",
+      "pick": "Vous demandez à Zoe malgré FREE : oui.",
+      "done": "Quatre de la proposition, un à la main"
+    }
+  },
+  "scenario-variants": {
+    "captions": {
+      "plan": "Berne, décembre : le planning est établi",
+      "copy": "Scénario : une copie. L'original reste.",
+      "move": "Nuits de Tobias à Nadia : dans la copie",
+      "rest": "Variante A : repos violé. C'est signalé.",
+      "variantB": "Variante B : mêmes nuits à Lena",
+      "hours": "Lena reste sous son maximum contractuel",
+      "original": "Vers l'original : rien n'a bougé",
+      "yes": "Votre oui : la variante B est le planning",
+      "stale": "Variante A ensuite ? Klacks prévient.",
+      "discard": "Vous rejetez la variante A"
+    }
+  },
+  "monthplan-commands": {
+    "captions": {
+      "keywords": "Paramètres : mots-clés de planification",
+      "free": "FREE : ce jour reste libre",
+      "only": "EARLY, LATE, NIGHT : uniquement ce type",
+      "notKind": "-EARLY, -LATE, -NIGHT : pas ce type",
+      "bands": "Matin 6-14:59, soir 15-22:59, nuit 23-5:59",
+      "strongest": "La plage dominante compte : 8-16:30 = soir",
+      "toggle": "Activer « Afficher les commandes »",
+      "type": "Saisi comme un service, dans la cellule",
+      "eveBefore": "-NIGHT la veille : pas de nuit sur le 18",
+      "combine": "Deux commandes un jour : les deux valent",
+      "others": "Pareil pour chaque personne et chaque jour",
+      "run": "Un clic sur l'AutoWizard",
+      "proposal": "Proposition en scénario, original intact",
+      "binding": "Les mots-clés lient l'AutoWizard.",
+      "proofFree": "FREE : Mia n'a pas de service le 18",
+      "proofOne": "-NIGHT : Mia le 17 : OBA, soir",
+      "proofTwo": "-EARLY : Jonas le 17 : EMP, soir",
+      "proofThree": "NIGHT : Lena le 16 : OBN, nuit",
+      "open": "Si ça ne va pas, le service reste vide.",
+      "manual": "Vous pouvez les ignorer à tout moment.",
+      "decide": "Juste une proposition – vous décidez"
+    }
+  },
+  "monthplan-wishes": {
+    "captions": {
+      "wishes": "Absences : deux souhaits de vacances",
+      "open": "Clara, 24/12–3/1 : rien de réservé",
+      "toggle": "Planning : afficher les barres d'absence",
+      "bar": "Le souhait est une barre dans la ligne",
+      "hoursBefore": "En-tête de ligne : Clara à 0:00 h",
+      "adopt": "Clic droit : « Reprendre l'absence »",
+      "everyDay": "Réservé jour après jour, week-end compris",
+      "holidays": "Aussi les jours fériés, 25 et 26 décembre",
+      "hoursAfter": "En-tête de ligne : Clara passe à 0:00 h",
+      "counted": "Seuls les 5 jours ouvrés comptent",
+      "second": "Le souhait d'Amir reste ouvert",
+      "binding": "Seule l'absence réservée est contraignante",
+      "booked": "Au calendrier : Clara réservé, Amir ouvert",
+      "list": "La liste l'indique : Réservé",
+      "listOpen": "Rien chez Amir : encore un souhait"
+    }
   }
 }

@@ -21,6 +21,7 @@ import * as S from "../lib/klacks-demo-session.mjs";
 import { CANVAS_SETTLE_MS, HALF, HTTP_POST, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
 import { JOB_STATUS_COMPLETED, SCENARIO_STATUS_ACCEPTED, activeScenarios, getScenario, periodHours, realFilter, scenarioFilter, stopJob, waitForJob } from "../lib/scenario-demo.mjs";
 import * as D from "../lib/security-demo.mjs";
+import { ERROR_TOAST_PATTERN } from "../lib/ui-texts.mjs";
 import * as P from "../lib/security-plan-check.mjs";
 import { clickSelector, decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 
@@ -83,7 +84,7 @@ const GRID_TOP_MARGIN_PX = 44;
 const SAVE_TIMEOUT_MS = 30000;
 const BANNER_TIMEOUT_MS = 60000;
 const HTTP_ERROR_FIRST = 400;
-const ERROR_TOAST = /fehlgeschlagen|fehler|konnte nicht|nicht m.glich|failed|error/i;
+const SEL_DANGER_TOAST = "app-toasts ngb-toast.bg-danger";
 const BEAT = { open: 600, cut: 4500, team: 2200, slider: 500, targets: 3200, toggle: 400, wishes: 2200, run: 1000, proposal: 2400, free: 3000, vacation: 3000, scrolled: 500, filled: 3500, overview: 2200, summary: 4000, closed: 400, acceptLead: 800 };
 const MOVE = { short: 400, normal: 650 };
 
@@ -262,20 +263,27 @@ export async function setRowSlider(take, detail) {
 
 /** The noise CSS hides toasts, a hidden error is still an error: every toast text is collected and an error text fails the take. */
 export async function watchToasts(page) {
-  await page.evaluate((selector) => {
+  await page.evaluate(({ selector, danger }) => {
     window.__captureToasts = [];
+    window.__captureDangerToasts = [];
+    const collapse = (text) => text?.replace(/\s+/g, " ").trim();
     const read = () => {
-      const text = document.querySelector(selector)?.textContent?.replace(/\s+/g, " ").trim();
+      const text = collapse(document.querySelector(selector)?.textContent);
       if (text && !window.__captureToasts.includes(text)) window.__captureToasts.push(text);
+      for (const toast of document.querySelectorAll(danger)) {
+        const dangerText = collapse(toast.textContent);
+        if (dangerText && !window.__captureDangerToasts.includes(dangerText)) window.__captureDangerToasts.push(dangerText);
+      }
     };
     new MutationObserver(read).observe(document.body, { childList: true, subtree: true, characterData: true });
-  }, SEL_TOASTS);
+  }, { selector: SEL_TOASTS, danger: SEL_DANGER_TOAST });
 }
 
 export async function readToasts(take) {
-  const toasts = await take.page.evaluate(() => window.__captureToasts ?? []);
+  const { toasts, danger } = await take.page.evaluate(() => ({ toasts: window.__captureToasts ?? [], danger: window.__captureDangerToasts ?? [] }));
   take.report.toasts = toasts;
-  const errors = toasts.filter((text) => ERROR_TOAST.test(text));
+  take.report.dangerToasts = danger;
+  const errors = toasts.filter((text) => ERROR_TOAST_PATTERN.test(text));
   if (errors.length > 0) flag(take.report, `error toast during the take: ${errors.join(" | ")}`);
 }
 

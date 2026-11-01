@@ -20,6 +20,8 @@
  * text "Winterthur", "Uster" or "-FREE" is on the page at the checkpoints; report.coverage names any open slot of the proposal (KLACKS_SECURITY_ACCEPT_GAP=1 lets it pass, nothing is accepted here).
  * After each saved cell the app reloads and the canvas stays dark for about 0.2 s; for every preview so far those frames were replaced by the frame before them and the take was encoded again; preview v2 also lost 1.45 s of the static hold after the manual placement, right before the cue decide, to stay within 90 s; preview v3 is the take of v2 with the pills of binding, open and manual redrawn on the frames, so its texts were never recorded and the 46 characters of manual exceed MAX_CAPTION_CHARS of a new recording (none of this is part of this script).
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
+ * Cultures de, en, fr, it: the tab of the error list is the second tab of #shift-tabs, the hint text comes from lib/ui-texts.mjs, and the proof captions are built from the "proof" templates of the script entry of the culture
+ * (caption, shown, noShift, band names); only the three captions that are shown are checked against the 42 characters, a longer candidate that is not picked does not stop the take.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
@@ -32,6 +34,8 @@ import { ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
 import { clickSelector, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 import { useRowOrder } from "./replacement-takes.mjs";
 import { checkStage, fitAllRows, measure, readToasts, scrollColumns, setRowSlider, startWizard, trackHttpErrors, waitForProposal, watchToasts } from "./security-takes.mjs";
+import { fillCaption } from "../lib/caption-template.mjs";
+import { uiTexts } from "../lib/ui-texts.mjs";
 
 export const VIDEO_MONTHPLAN_COMMANDS = "monthplan-commands";
 export const MONTHPLAN_COMMANDS_VIDEOS = [VIDEO_MONTHPLAN_COMMANDS];
@@ -73,7 +77,6 @@ const WORKS_POST_PATH = /\/Works\/?$/i;
 const WATCHED_ERROR_PATH = /\/ScheduleCommands|\/Works|\/AutoWizard|\/AnalyseScenarios\//i;
 const HTTP_PUT = "PUT";
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN, "-FREE"]);
-const HINT_TEXT = "Tagesvorgabe";
 const COLUMNS_SCROLLED = 11;
 const SAVE_TIMEOUT_MS = 30000;
 const CUT = Number.POSITIVE_INFINITY;
@@ -95,7 +98,7 @@ const NIGHT_BAND_START = 1380;
 const KIND = Object.freeze({ early: "EARLY", late: "LATE", night: "NIGHT" });
 const ALL_KINDS = Object.freeze(Object.values(KIND));
 const typed = (firstName, day, keyword, subRow = 0) => Object.freeze({ firstName, day, keyword, subRow });
-const TYPED = Object.freeze([
+export const TYPED = Object.freeze([
   typed("Mia", FREE_DAY, FREE),
   typed("Mia", "2026-12-17", "-NIGHT"),
   typed("Jonas", "2026-12-15", "-NIGHT"),
@@ -110,13 +113,15 @@ const TYPED_WITH_CUE = Object.freeze({ 0: "type", 1: "eveBefore", 2: "combine", 
 const TYPED_OFF_PICTURE = Object.freeze([5, 6, 7]);
 const FAST_FACTOR_RUN = 80;
 
-const PROOF_ORDER = Object.freeze([["Mia", "2026-12-17"], ["Jonas", "2026-12-17"], ["Lena", "2026-12-16"], ["Jonas", "2026-12-15"], ["Lena", "2026-12-15"], ["Jonas", "2026-12-16"], ["Lena", "2026-12-14"]]);
+export const PROOF_ORDER = Object.freeze([["Mia", "2026-12-17"], ["Jonas", "2026-12-17"], ["Lena", "2026-12-16"], ["Jonas", "2026-12-15"], ["Lena", "2026-12-15"], ["Jonas", "2026-12-16"], ["Lena", "2026-12-14"]]);
 const PROOF_CUES = Object.freeze(["proofOne", "proofTwo", "proofThree"]);
 const PROOF_MIN_WITH_WORK = 2;
-const BAND_NAME = Object.freeze({ [KIND.early]: "Früh", [KIND.late]: "Spät", [KIND.night]: "Nacht" });
-const MAX_CAPTION_CHARS = 42;
+const PROOF_CAPTION = "caption";
+const PROOF_SHOWN = "shown";
+const PROOF_FIELDS = Object.freeze([PROOF_CAPTION, PROOF_SHOWN, "noShift", "bands"]);
 const SEL_ERROR_LIST = "app-schedule-error-list";
-const ERROR_LIST_TAB = "Fehlerliste";
+const SEL_SHIFT_TAB = "#shift-tabs .nav-link";
+const ERROR_TAB_INDEX = 1;
 const SEL_ERROR_BADGE = "#shift-tabs .badge";
 const SEL_SPLIT_GUTTER = ".as-split-gutter";
 const ERROR_LIST_GUTTER_Y = 340;
@@ -297,22 +302,26 @@ async function readProposal(take, ctx, scenario) {
   if (report.proofCells[`Mia ${FREE_DAY}`].length !== 0) flag(report, "Mia works on her FREE day in the proposal");
 }
 
+/** The proof caption of one cell from the templates of the script entry (capture-app-videos.scripts.json, "proof"): command text, name, day of December and the work found there. */
+export function proofText(proof, cell, limit) {
+  const shown = cell.work ? fillCaption(proof[PROOF_SHOWN], { abbreviation: cell.work.abbreviation, band: proof.bands[bandOf(cell.work.startTime, cell.work.endTime)] }, limit) : proof.noShift;
+  return fillCaption(proof[PROOF_CAPTION], { keywords: cell.keywords, name: cell.firstName, day: cell.day, shown }, limit);
+}
+
 /** The three cells the take reads aloud, with their captions built from the plan: at most one per command text, cells with a work first. */
 function pickProof(take, ctx, data) {
-  const { report, captions } = take;
+  const { report, captions, script } = take;
   const candidates = PROOF_ORDER.map(([firstName, day]) => {
     const keywords = TYPED.filter((command) => command.firstName === firstName && command.day === day).map((command) => command.keyword).join(" ");
     const [work] = data.entries.filter((entry) => entry.entryType === ENTRY_TYPE_WORK && entry.clientId === ctx.clientIdOf[firstName] && dateKey(entry.entryDate) === day);
-    const shown = work ? `${work.abbreviation}, ${BAND_NAME[bandOf(work.startTime, work.endTime)]}` : "ohne Dienst";
-    return { firstName, day, keywords, hasWork: Boolean(work), text: `${keywords}: ${firstName} am ${Number(day.slice(-2))}. ${shown}` };
+    return { firstName, day, keywords, hasWork: Boolean(work), cell: { keywords, firstName, day: Number(day.slice(-2)), work } };
   });
   const distinct = [...candidates.filter((item) => item.hasWork), ...candidates.filter((item) => !item.hasWork)].filter((item, index, all) => all.findIndex((other) => other.keywords === item.keywords) === index);
   const proof = distinct.slice(0, PROOF_CUES.length);
-  report.proofCaptions = proof.map((item) => item.text);
+  report.proofCaptions = proof.map((item) => proofText(script.proof, item.cell, Number.POSITIVE_INFINITY));
   if (proof.filter((item) => item.hasWork).length < PROOF_MIN_WITH_WORK) flag(report, `only ${proof.filter((item) => item.hasWork).length} proof cells hold a work: ${report.proofCaptions.join(" | ")}`);
   proof.forEach((item, index) => {
-    if (item.text.length > MAX_CAPTION_CHARS) throw new Error(`the proof caption "${item.text}" is too long`);
-    captions.track[PROOF_CUES[index]] = item.text;
+    captions.track[PROOF_CUES[index]] = proofText(script.proof, item.cell);
   });
   return proof;
 }
@@ -327,7 +336,7 @@ async function openErrorList(take) {
   const gutter = gutters.find((candidate) => candidate.direction === SPLIT_DIRECTION_VERTICAL);
   if (!gutter) throw new Error("the splitter between the grid and the shift area was not found");
   await mouse.drag({ x: gutter.x, y: Math.min(gutter.y, take.viewport.height - 2) }, { x: gutter.x, y: ERROR_LIST_GUTTER_Y }, MOVE.normal);
-  await page.locator("#shift-tabs").getByText(ERROR_LIST_TAB).first().click({ timeout: S.READY_TIMEOUT_MS });
+  await page.locator(SEL_SHIFT_TAB).nth(ERROR_TAB_INDEX).click({ timeout: S.READY_TIMEOUT_MS });
   await page.locator(SEL_ERROR_LIST).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
 }
 
@@ -342,7 +351,7 @@ async function readErrorList(take) {
     report.errorListRead = true;
     report.errorBadgeAfterManual = await page.locator(SEL_ERROR_BADGE).first().textContent({ timeout: CANVAS_SETTLE_MS }).catch(() => null);
     report.errorListAfterManual = (await page.locator(SEL_ERROR_LIST).first().innerText()).replace(/\s+/g, " ").trim().slice(0, REPORT_TEXT_LIMIT);
-    report.errorListHasDirective = report.errorListAfterManual.includes(HINT_TEXT);
+    report.errorListHasDirective = report.errorListAfterManual.includes(uiTexts(take.culture).dayDirective);
     await page.screenshot({ path: path.join(process.env.KLACKS_VIDEO_FRAMES_DIR ?? ".", ERROR_LIST_SHOT) });
   } catch (error) {
     report.errorListRead = false;
@@ -359,7 +368,7 @@ async function placeManually(take, ctx, scenario) {
   report.manualPlacement = data.entries.filter((entry) => entry.entryType === ENTRY_TYPE_WORK && entry.clientId === ctx.clientIdOf.Mia && dateKey(entry.entryDate) === FREE_DAY).map((entry) => entry.abbreviation);
   if (!report.manualPlacement.includes(MANUAL_SHIFT)) flag(report, "the manual OBT is not in the scenario");
   await page.waitForTimeout(CANVAS_SETTLE_MS);
-  report.hintOnPage = (await page.evaluate(() => document.body.innerText)).includes(HINT_TEXT);
+  report.hintOnPage = (await page.evaluate(() => document.body.innerText)).includes(uiTexts(take.culture).dayDirective);
 }
 
 async function verifyNotAccepted(take, ctx) {
@@ -383,6 +392,9 @@ async function frameDetail(take) {
 export async function takeMonthplanCommands(take) {
   const { page, options, recorder, mouse, report, captions, script } = take;
   if (!script?.beats) throw new Error(`the ${report.video} script lacks beats in capture-app-videos.scripts.json`);
+  const missingProof = PROOF_FIELDS.filter((field) => script.proof?.[field] === undefined);
+  if (missingProof.length > 0) throw new Error(`the ${report.video} script lacks proof.${missingProof.join(", proof.")} in capture-app-videos.scripts.json`);
+  uiTexts(take.culture);
   const cues = MONTHPLAN_COMMANDS_CUES;
   await checkStage(take, D.SITES.bern);
   const first = await openSchedule(page, options);

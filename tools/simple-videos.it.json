@@ -53,5 +53,114 @@
       "schedule": "Il giro è nel piano di servizio",
       "containers": "I container sono nel piano turni"
     }
+  },
+  "security-month-plan": {
+    "captions": {
+      "cut": "Immobile sorvegliato h24 in tre turni",
+      "team": "Dieci persone, tempo pieno e parziale",
+      "targets": "Le ore garantite vengono dal contratto",
+      "wishes": "Vacanze e comandi sono già nel piano",
+      "run": "Un clic sull'AutoWizard",
+      "proposal": "Proposta come scenario, originale intatto",
+      "free": "FREE rispettato: Mia non lavora il 18",
+      "vacation": "Le vacanze sono rimaste",
+      "filled": "Ore e turni per persona",
+      "overview": "Tutte e dieci le persone nel piano",
+      "summary": "Coperti e aperti, visibili prima del sì",
+      "accept": "Dopo il tuo sì è il piano"
+    }
+  },
+  "replacement-r1": {
+    "captions": {
+      "report": "Max è assente. Clic destro sul turno",
+      "form": "Chi manca, da quando e perché",
+      "why": "Proposta: Selina, oggi è di picchetto",
+      "call": "Klacks non chiama nessuno. Lo fai tu.",
+      "refused": "Selina rifiuta. Lo registri tu.",
+      "alternatives": "Alternative: Tanja si inserisce nel blocco",
+      "yes": "Tanja accetta. Registri anche questo.",
+      "follows": "Lo scenario segue: Tanja invece di Selina",
+      "scenario": "Proposta come scenario, originale intatto",
+      "cells": "MI per Max, SOS nella riga di Tanja",
+      "accept": "Dopo il tuo sì è il piano",
+      "absent": "Max: MI, Malattia/Infortunio",
+      "standIn": "Tanja: SOS, la sostituzione"
+    }
+  },
+  "replacement-r2": {
+    "captions": {
+      "report": "Elsa è assente tutta la settimana",
+      "form": "Clic destro: Copri assenza",
+      "week": "Per quanto tempo? Fino a venerdì",
+      "result": "Quattro turni coperti, uno aperto",
+      "open": "Venerdì: nessun sostituto adatto",
+      "scenario": "Proposta come scenario, originale intatto",
+      "cells": "MI tutta la settimana, SOS fino a giovedì",
+      "standIns": "Proposta: Yannick, Luc, Marc, Tanja",
+      "answers": "Sei tu a contattarli",
+      "accept": "Dopo il tuo sì è il piano",
+      "why": "Venerdì tutti lavorano o hanno FREE",
+      "manual": "Il resto lo fai a mano: Sostituzione",
+      "pick": "Chiedi a Zoe, nonostante FREE. Accetta.",
+      "done": "Quattro dalla proposta, uno a mano"
+    }
+  },
+  "scenario-variants": {
+    "captions": {
+      "plan": "Berna, dicembre: il piano è pronto",
+      "copy": "Scenario: una copia. L'originale resta.",
+      "move": "Notti di Tobias a Nadia: solo nella copia",
+      "rest": "Variante A: riposo violato. È segnalato.",
+      "variantB": "Variante B: stesse notti a Lena",
+      "hours": "Lena resta sotto il massimo contrattuale",
+      "original": "All'originale: non si è mosso nulla",
+      "yes": "Il tuo sì: la variante B è il piano",
+      "stale": "Variante A dopo? Klacks avvisa.",
+      "discard": "Rifiuti la variante A"
+    }
+  },
+  "monthplan-commands": {
+    "captions": {
+      "keywords": "Parole chiave di pianificazione",
+      "free": "FREE: questo giorno resta libero",
+      "only": "EARLY, LATE, NIGHT: solo questo tipo",
+      "notKind": "-EARLY, -LATE, -NIGHT: non questo tipo",
+      "bands": "Mat. 6-14:59, pom. 15-22:59, notte 23-5:59",
+      "strongest": "Vale la fascia più forte: 8-16:30 è pom.",
+      "toggle": "Attiva «Mostra comandi»",
+      "type": "Digitato come un turno, nella cella",
+      "eveBefore": "-NIGHT prima: nessuna notte fino al 18",
+      "combine": "Due comandi al giorno: valgono entrambi",
+      "others": "Così per ogni persona e ogni giorno",
+      "run": "Un clic sull'AutoWizard",
+      "proposal": "Proposta come scenario, originale intatto",
+      "binding": "Le parole chiave vincolano l'AutoWizard.",
+      "proofFree": "FREE: Mia non ha turni il 18",
+      "proofOne": "-NIGHT: Mia il 17: OBA, pomeriggio",
+      "proofTwo": "-EARLY: Jonas il 17: EMP, pomeriggio",
+      "proofThree": "NIGHT: Lena il 16: OBN, notte",
+      "open": "Se non torna, il turno resta vuoto.",
+      "manual": "Come pianificatore puoi ignorarli sempre.",
+      "decide": "Solo una proposta – decidi tu"
+    }
+  },
+  "monthplan-wishes": {
+    "captions": {
+      "wishes": "Assenze: due desideri di vacanze",
+      "open": "Clara, 24/12–3/1: ancora nulla prenotato",
+      "toggle": "Nel piano: mostra barre assenza",
+      "bar": "Il desiderio è una barra nella riga",
+      "hoursBefore": "Intestazione riga: Clara a 0:00 h",
+      "adopt": "Clic destro: «Riprendere l'assenza»",
+      "everyDay": "Prenotato ogni giorno, anche nel weekend",
+      "holidays": "Anche i festivi, 25 e 26 dicembre",
+      "hoursAfter": "Intestazione riga: Clara ora a 0:00 h",
+      "counted": "Contano solo i 5 giorni lavorativi",
+      "second": "Il desiderio di Amir resta aperto",
+      "binding": "Solo l'assenza prenotata è vincolante",
+      "booked": "Calendario: Clara prenotato, Amir aperto",
+      "list": "La lista lo dice: Prenotato",
+      "listOpen": "Nulla per Amir: ancora un desiderio"
+    }
   }
 }

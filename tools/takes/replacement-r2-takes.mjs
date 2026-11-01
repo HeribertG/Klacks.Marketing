@@ -14,6 +14,7 @@
  * one open duty of the storyboard, every name is a team member; the scenario belongs to the group and spans 14.-18.12.; exactly one accept, status Accepted; the real plan shows five KU breaks on Elsa, a replacement WorkChange on each of her
  * four covered works naming the proposed person with its mirror row, none on Friday before the manual step, exactly one on Friday after it, naming Zoe, with its mirror row; every other work of December is unchanged;
  * nobody who is free on Friday lacks a FREE command, no escalation chain exists; no error toast, no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints. An accept refused with HTTP 409 aborts the take.
+ * Cultures de, en, fr, it: script.absenceName as in R1, script.untilDateTyped is the date as the datepicker of that language writes it (de 18.12.2026, en 12/18/2026, fr and it 18/12/2026; the app parses the typed layout of the active language).
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
@@ -23,7 +24,7 @@ import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, da
 import { SCENARIO_STATUS_ACCEPTED, getScenario, realFilter } from "../lib/scenario-demo.mjs";
 import * as D from "../lib/security-demo.mjs";
 import { ENTRY_TYPE_BREAK, ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
-import { checkPage, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
+import { checkAbsenceLabel, checkPage, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
 import { decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 import { checkStage, fitAllRows, measure, readToasts, scrollColumns, scrollRowsToTop, setRowSlider, showRowAtTop, trackHttpErrors, watchToasts } from "./security-takes.mjs";
 
@@ -48,7 +49,7 @@ export const REPLACEMENT_R2_FINAL_HOLD_MS = 3500;
 
 const FIRST_DAY = "2026-12-14";
 const LAST_DAY = "2026-12-18";
-const LAST_DAY_TYPED = "18.12.2026";
+const DEFAULT_LAST_DAY_TYPED = "18.12.2026";
 const ABSENT_FIRST_NAME = "Elsa";
 const HAND_FIRST_NAME = "Zoe";
 const HAND_LAST_NAME = "Gerber";
@@ -164,11 +165,12 @@ const cell = async (take, day, row, subRow) => cellOf(await gridBox(take.page), 
 async function typeUntil(take) {
   const { page, mouse } = take;
   const field = page.locator(SEL_RECOVERY_UNTIL);
+  const typed = take.script.untilDateTyped ?? DEFAULT_LAST_DAY_TYPED;
   await mouse.clickLocator(field, MOVE.normal);
   await page.waitForTimeout(take.script.beats.field);
-  await field.fill(LAST_DAY_TYPED);
+  await field.fill(typed);
   await page.keyboard.press("Tab");
-  if (!(await field.inputValue()).startsWith(LAST_DAY_TYPED)) throw new Error(`the field "Wie lange?" shows ${await field.inputValue()}`);
+  if (!(await field.inputValue()).startsWith(typed)) throw new Error(`the until field of the recovery dialog shows ${await field.inputValue()} instead of ${typed}`);
 }
 
 async function propose(take, ctx) {
@@ -356,6 +358,7 @@ export async function takeReplacementR2(take) {
   if (!script?.absenceName || !script?.beats) throw new Error(`the ${report.video} script lacks absenceName or beats in capture-app-videos.scripts.json`);
   const cues = REPLACEMENT_R2_CUES;
   await checkStage(take, D.SITES.biel);
+  await checkAbsenceLabel(take, script.absenceName);
   const first = await openSchedule(page, options);
   await addPhones(take, first.data.clients);
   await orderRows(take, first.data.clients, options.groupId);

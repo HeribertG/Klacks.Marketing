@@ -53,5 +53,114 @@
       "schedule": "The tour is in the schedule",
       "containers": "The containers are in the schedule"
     }
+  },
+  "security-month-plan": {
+    "captions": {
+      "cut": "24-hour site in three shifts",
+      "team": "Ten people, full-time and part-time",
+      "targets": "Guaranteed hours come from the contract",
+      "wishes": "Vacation and commands are in the plan",
+      "run": "One click on the AutoWizard",
+      "proposal": "Proposal as a scenario, original untouched",
+      "free": "FREE holds: Mia has no shift on the 18th",
+      "vacation": "The vacation stayed in place",
+      "filled": "Hours and shifts per person",
+      "overview": "All ten people in the same plan",
+      "summary": "Filled and open, visible before your yes",
+      "accept": "After your yes it becomes the plan"
+    }
+  },
+  "replacement-r1": {
+    "captions": {
+      "report": "Max is out. Right-click the shift",
+      "form": "Who's absent, from when and why",
+      "why": "Suggestion: Selina, she is on call today",
+      "call": "Klacks calls nobody. You do that.",
+      "refused": "Selina declines. You record it.",
+      "alternatives": "Alternatives: Tanja fits the block",
+      "yes": "Tanja says yes. You record that too.",
+      "follows": "The scenario follows: Tanja, not Selina",
+      "scenario": "Proposal as a scenario, original untouched",
+      "cells": "IA for Max, REP in Tanja's row",
+      "accept": "After your yes it becomes the plan",
+      "absent": "Max: IA, Illness/Accident",
+      "standIn": "Tanja: REP, the replacement"
+    }
+  },
+  "replacement-r2": {
+    "captions": {
+      "report": "Elsa is out, the whole week",
+      "form": "Right-click: Cover absence",
+      "week": "How long? Until Friday, one dialog",
+      "result": "Four shifts covered, one open",
+      "open": "Friday: No suitable replacement",
+      "scenario": "Proposal as a scenario, original untouched",
+      "cells": "IA all week, REP until Thursday",
+      "standIns": "Proposal: Yannick, Luc, Marc, Tanja",
+      "answers": "You ask them yourself",
+      "accept": "After your yes it becomes the plan",
+      "why": "On Friday everyone works or has FREE",
+      "manual": "You do the rest by hand: Replacement",
+      "pick": "You ask Zoe despite FREE. She agrees.",
+      "done": "Four from the proposal, one by hand"
+    }
+  },
+  "scenario-variants": {
+    "captions": {
+      "plan": "Bern, December: The plan is set",
+      "copy": "Scenario: a copy. The original stays.",
+      "move": "Tobias's nights to Nadia: in the copy only",
+      "rest": "Variant A: rest period broken. It shows.",
+      "variantB": "Variant B: same nights to Lena",
+      "hours": "Lena stays under her contract maximum",
+      "original": "To Original: nothing has moved",
+      "yes": "Your yes: Variant B is the plan",
+      "stale": "Variant A afterwards? Klacks warns.",
+      "discard": "You reject Variant A"
+    }
+  },
+  "monthplan-commands": {
+    "captions": {
+      "keywords": "In Settings: Schedule Command Keywords",
+      "free": "FREE: this day stays free",
+      "only": "EARLY, LATE, NIGHT: only this shift type",
+      "notKind": "-EARLY, -LATE, -NIGHT: not this type",
+      "bands": "Early 6-14:59 late 15-22:59 night 23-5:59",
+      "strongest": "The strongest band counts: 8-16:30 is late",
+      "toggle": "Switch on “Show Commands”",
+      "type": "Typed like a shift, into the cell",
+      "eveBefore": "-NIGHT before: no night into the 18th",
+      "combine": "Two commands on one day: both apply",
+      "others": "Same for every person and every day",
+      "run": "One click on the AutoWizard",
+      "proposal": "Proposal as a scenario, original untouched",
+      "binding": "Keywords are binding for the AutoWizard.",
+      "proofFree": "FREE: Mia has no shift on the 18th",
+      "proofOne": "-NIGHT: Mia on Dec 17: OBA, late",
+      "proofTwo": "-EARLY: Jonas on Dec 17: EMP, late",
+      "proofThree": "NIGHT: Lena on Dec 16: OBN, night",
+      "open": "If it can't be met, the shift stays empty.",
+      "manual": "As planner you can ignore them any time.",
+      "decide": "Only a suggestion – you decide"
+    }
+  },
+  "monthplan-wishes": {
+    "captions": {
+      "wishes": "Absence calendar: two vacation requests",
+      "open": "Clara, Dec 24–Jan 3: nothing booked yet",
+      "toggle": "In the schedule: show the absence bars",
+      "bar": "The request shows as a bar in the row",
+      "hoursBefore": "Row header: Clara at 0:00 h",
+      "adopt": "Right-click: “Adopt absence”",
+      "everyDay": "Booked day by day, weekends too",
+      "holidays": "Public holidays too, Dec 25 and 26",
+      "hoursAfter": "Row header: Clara now at 0:00 h",
+      "counted": "Hours count only the 5 workdays",
+      "second": "Amir's request stays open",
+      "binding": "Only booked absences bind the planning",
+      "booked": "In the calendar: Clara booked, Amir open",
+      "list": "The list says it: Booked",
+      "listOpen": "Nothing for Amir: still a request"
+    }
   }
 }

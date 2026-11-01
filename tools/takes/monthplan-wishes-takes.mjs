@@ -15,6 +15,8 @@
  * Amir still exists, Clara has exactly one Ferien break on every day 24.12.-03.01. (Sat 26., Sun 27., holidays 25./26. included), Amir and the others have none; no work appears; no error toast; no HTTP error on a break, placeholder or schedule call; no PUT of a placeholder;
  * at least one working day adds hours and the weekend and the holidays add none; no text "Winterthur", "Uster", "Rettungswache" or "Urlaub" on the page at the checkpoints.
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
+ * Cultures de, en, fr, it: the demo data stays German, the app texts the take checks come from lib/ui-texts.mjs (list tab "Booked"), the item of the context menu is found by its id #adoptAbsence, and the three captions that quote
+ * numbers (hoursBefore, hoursAfter, counted) are filled from the templates runtimeCaptions of the script entry of the culture (lib/caption-template.mjs) and must stay within 42 characters.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
@@ -26,6 +28,8 @@ import { ENTRY_TYPE_BREAK } from "../lib/security-plan-check.mjs";
 import { clickSelector, flag, holdWithPoster } from "./scenario-takes.mjs";
 import { useRowOrder } from "./replacement-takes.mjs";
 import { checkStage, fitAllRows, measure, readToasts, scrollColumns, setRowSlider, trackHttpErrors, watchToasts } from "./security-takes.mjs";
+import { assertTemplates, fillCaption } from "../lib/caption-template.mjs";
+import { uiTexts } from "../lib/ui-texts.mjs";
 
 export const VIDEO_MONTHPLAN_WISHES = "monthplan-wishes";
 export const MONTHPLAN_WISHES_VIDEOS = [VIDEO_MONTHPLAN_WISHES];
@@ -64,8 +68,7 @@ const PLACEHOLDER_PATH = /\/BreakPlaceholders\/[0-9a-f-]{36}$/i;
 const PLACEHOLDERS_ROOT_PATH = /\/BreakPlaceholders\/?$/i;
 const WATCHED_ERROR_PATH = /\/Breaks|\/BreakPlaceholders|\/Works/i;
 const HTTP_PUT = "PUT";
-const ADOPT_TEXT = "Absenz übernehmen";
-const BOOKED_TEXT = "Gebucht";
+const SEL_ADOPT_ITEM = "app-context-menu .menu-container[style*='display: block'] #adoptAbsence";
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN, "Rettungswache", "Urlaub"]);
 const END_KEY = "End";
 const CUT = Number.POSITIVE_INFINITY;
@@ -92,7 +95,6 @@ const ENTRY_SOURCE_PLACEHOLDER = 0;
 const SAVE_TIMEOUT_MS = 30000;
 const MOVE = { short: 400, normal: 700, slow: 1500 };
 const MINUTES_PER_HOUR = 60;
-const CAPTION_LIMIT = 42;
 
 const pauseOf = (take, beat) => take.page.waitForTimeout(take.script.beats[beat]);
 
@@ -101,9 +103,8 @@ function hhmm(hours) {
   return `${Math.floor(minutes / MINUTES_PER_HOUR)}:${String(minutes % MINUTES_PER_HOUR).padStart(2, "0")}`;
 }
 
-function setCaption(take, cue, text) {
-  if (text.length > CAPTION_LIMIT) throw new Error(`the caption "${text}" is too long`);
-  take.captions.track[cue] = text;
+function setCaption(take, cue, values) {
+  take.captions.track[cue] = fillCaption(take.script.runtimeCaptions[cue], values);
 }
 
 async function checkPage(take, label) {
@@ -247,7 +248,7 @@ async function adopt(take, ctx) {
   saved.catch(() => {});
   deleted.catch(() => {});
   await mouse.rightClick(target, MOVE.normal);
-  const item = page.getByText(ADOPT_TEXT, { exact: true }).first();
+  const item = page.locator(SEL_ADOPT_ITEM).first();
   await item.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
   await pauseOf(take, "menu");
   await mouse.clickLocator(item, MOVE.normal);
@@ -322,6 +323,8 @@ export async function takeMonthplanWishes(take) {
   const { page, api, options, recorder, mouse, report, captions, script } = take;
   if (!script?.beats) throw new Error(`the ${report.video} script lacks beats in capture-app-videos.scripts.json`);
   const cues = MONTHPLAN_WISHES_CUES;
+  assertTemplates(script, [cues.hoursBefore, cues.hoursAfter, cues.counted]);
+  const ui = uiTexts(take.culture);
   await checkStage(take, D.SITES.bern);
   const first = await openSchedule(page, options);
   const stage = await readStage(take, first.filter);
@@ -361,7 +364,7 @@ export async function takeMonthplanWishes(take) {
     await mouse.moveTo(await barPoint(take, ctx, BOOKED_FIRST_NAME, "2026-12-31"), MOVE.slow);
     await pauseOf(take, "bar");
 
-    setCaption(take, cues.hoursBefore, `Im Zeilenkopf: Clara bei ${hhmm(report.hoursBefore.worked)} Stunden`);
+    setCaption(take, cues.hoursBefore, { name: BOOKED_FIRST_NAME, hours: hhmm(report.hoursBefore.worked) });
     await captions.show(cues.hoursBefore);
     await mouse.moveTo(await rowHeaderPoint(take), MOVE.normal);
     await pauseOf(take, "hoursBefore");
@@ -384,11 +387,11 @@ export async function takeMonthplanWishes(take) {
     await mouse.moveTo(await dayPoint(take, "2026-12-26"), MOVE.normal);
     await pauseOf(take, "holidays");
 
-    setCaption(take, cues.hoursAfter, `Im Zeilenkopf: Clara jetzt ${hhmm(report.hoursAfter.worked)} Stunden`);
+    setCaption(take, cues.hoursAfter, { name: BOOKED_FIRST_NAME, hours: hhmm(report.hoursAfter.worked) });
     await captions.show(cues.hoursAfter);
     await mouse.moveTo(await rowHeaderPoint(take), MOVE.normal);
     await pauseOf(take, "hoursAfter");
-    setCaption(take, cues.counted, `Stunden zählen nur die ${VALUE_DAYS.length} Werktage`);
+    setCaption(take, cues.counted, { days: VALUE_DAYS.length });
     await captions.show(cues.counted);
     await pauseOf(take, "counted");
 
@@ -413,14 +416,14 @@ export async function takeMonthplanWishes(take) {
     await clickSelector(take, SEL_LIST_TAB, MOVE.normal);
     const listRows = page.locator(SEL_LIST_TABLE);
     report.listText = (await listRows.innerText()).replace(/\s+/g, " ").trim().slice(0, 600);
-    if (!report.listText.includes(BOOKED_TEXT)) flag(report, `the list tab does not say "${BOOKED_TEXT}": ${report.listText}`);
+    if (!report.listText.includes(ui.booked)) flag(report, `the list tab does not say "${ui.booked}": ${report.listText}`);
     await pauseOf(take, "list");
     await captions.show(cues.listOpen);
     const amirBar = await ganttBar(take, ctx, OPEN_FIRST_NAME);
     await mouse.click({ x: amirBar.right - GANTT_BAR_INSET_PX, y: amirBar.y }, MOVE.normal);
     await clickSelector(take, SEL_LIST_TAB, MOVE.short);
     report.listTextOpen = (await listRows.innerText()).replace(/\s+/g, " ").trim().slice(0, 600);
-    if (report.listTextOpen.includes(BOOKED_TEXT)) flag(report, `the list of Amir says "${BOOKED_TEXT}": ${report.listTextOpen}`);
+    if (report.listTextOpen.includes(ui.booked)) flag(report, `the list of Amir says "${ui.booked}": ${report.listTextOpen}`);
     await pauseOf(take, "listOpen");
     await verifyEnd(take, ctx);
     await holdWithPoster(take, take.finalHoldMs);

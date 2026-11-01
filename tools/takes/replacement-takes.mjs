@@ -17,6 +17,7 @@
  * its mirror in Tanja's row and no WorkChange on the first stand-in; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
  * no error toast; no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints; every name of the alternatives is a team member. An accept refused with HTTP 409 aborts the take.
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
+ * Cultures de, en, fr, it: script.absenceName is the name of the absence type in that language (checkAbsenceLabel compares it with the names of the copy before anything is recorded), the captions come from simple-videos.<culture>.json.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
@@ -91,6 +92,7 @@ const CANDIDATES_PATH = /\/Recovery\/Candidates$/i;
 const RECORD_REQUEST_PATH = /\/Recovery\/Requests$/i;
 const WATCHED_ERROR_PATH = /\/Recovery\/|\/Works\/Changes|\/AnalyseScenarios\//i;
 const REQUESTS_API = "/api/backend/Recovery/Requests";
+const ABSENCES_API = "/api/backend/Absences";
 const CLIENTS_API = "/api/backend/Clients";
 const SORT_ORDER_API = "/api/backend/clientsortpreferences";
 const HTTP_PUT = "PUT";
@@ -125,6 +127,15 @@ async function addPhones(take, clients) {
     const communications = [...(client.communications ?? []), { type: PHONE_TYPE_PRIVATE_CELL, value, prefix: "", description: "" }];
     await take.api.json(CLIENTS_API, { method: HTTP_PUT, data: { ...client, communications } });
   }
+}
+
+/** The select of the recovery dialog is chosen by its label, which is the name of the absence type in the language of the take: refused before anything is recorded when this copy names it differently. */
+export async function checkAbsenceLabel(take, label) {
+  const result = await take.api.json(ABSENCES_API);
+  const list = Array.isArray(result) ? result : result?.absences ?? [];
+  const names = list.map((absence) => absence.name?.[take.culture]).filter(Boolean);
+  take.report.absenceNames = names;
+  if (names.length > 0 && !names.includes(label)) throw new Error(`the absence type "${label}" is not named like that in ${take.culture} on this copy (names: ${names.join(", ")})`);
 }
 
 /** The row order a planner would drag: the three people of the story on top, the others behind them. */
@@ -358,6 +369,7 @@ export async function takeReplacementR1(take) {
   if (!script?.absenceName || !script?.beats) throw new Error(`the ${report.video} script lacks absenceName or beats in capture-app-videos.scripts.json`);
   const cues = REPLACEMENT_R1_CUES;
   await checkStage(take, D.SITES.biel);
+  await checkAbsenceLabel(take, script.absenceName);
   const first = await openSchedule(page, options);
   await addPhones(take, first.data.clients);
   await orderRows(take, first.data.clients, options.groupId);
