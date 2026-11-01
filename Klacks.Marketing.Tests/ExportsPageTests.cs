@@ -11,8 +11,8 @@ using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The imports and exports page exists in German and English only (owner decision 2026-10-22): both are indexable, every
-/// other culture serves the English text marked lang="en" and stays noindex and out of the sitemap. Its meta description
+/// The imports and exports page is written in German, English, French and Italian: these are indexable and listed in the
+/// sitemap, every other culture serves the English text marked lang="en" and stays noindex and out of the sitemap. Its meta description
 /// fits the search snippet and the page carries a dated "as of" line, so outdated versions are recognisable.
 /// </summary>
 [TestFixture]
@@ -31,10 +31,12 @@ public class ExportsPageTests
     private const int SimpleLinksToExportsPage = 1;
     private const string ExportsLinkPattern = "href=\"[^\"]*/exporte\"";
 
-    private static readonly string[] WrittenCultures = { "de", "en" };
+    private static readonly string[] WrittenCultures = { "de", "en", "fr", "it" };
 
     [TestCase("/land-ch/exporte")]
     [TestCase("/en/land-gb/exporte")]
+    [TestCase("/fr/land-fr/exporte")]
+    [TestCase("/it/land-it/exporte")]
     public async Task Written_cultures_render_an_indexable_page(string path)
     {
         var html = await GetHtmlAsync(path);
@@ -43,9 +45,20 @@ public class ExportsPageTests
         html.ShouldContain("legal-prose");
     }
 
-    [TestCase("/fr/land-fr/exporte")]
+    [TestCase("/fr/land-fr/exporte", "fr")]
+    [TestCase("/it/land-it/exporte", "it")]
+    public async Task French_and_italian_render_their_own_text_not_the_english_fallback(string path, string culture)
+    {
+        var html = await GetHtmlAsync(path);
+
+        html.ShouldContain($"lang=\"{culture}\" dir=\"ltr\"");
+        html.ShouldNotContain(EnglishContentMarker);
+        WebUtility.HtmlDecode(html).ShouldContain(Text(culture, "hero.title"));
+    }
+
     [TestCase("/ja/land-jp/exporte")]
     [TestCase("/ar/land-sa/exporte")]
+    [TestCase("/es/land-es/exporte")]
     public async Task Other_cultures_show_the_english_text_and_stay_noindex(string path)
     {
         var html = await GetHtmlAsync(path);
@@ -57,7 +70,7 @@ public class ExportsPageTests
     }
 
     [Test]
-    public void Only_german_and_english_have_their_own_text()
+    public void Only_german_english_french_and_italian_have_their_own_text()
     {
         var cultures = SupportedCultures.All
             .Where(culture => File.Exists(Path.Combine(MarketingProjectPaths.ContentRoot, culture.Code, ContentFile)))
@@ -68,6 +81,8 @@ public class ExportsPageTests
 
     [TestCase("de")]
     [TestCase("en")]
+    [TestCase("fr")]
+    [TestCase("it")]
     public void Meta_description_and_as_of_line_are_present(string culture)
     {
         Text(culture, MetaDescriptionKey).Length.ShouldBeInRange(1, MetaDescriptionMaxLength);
@@ -75,14 +90,17 @@ public class ExportsPageTests
     }
 
     [Test]
-    public void Sitemap_lists_the_page_only_for_german_and_english()
+    public void Sitemap_lists_the_page_only_for_german_english_french_and_italian()
     {
         var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
         var sitemap = SitemapGenerator.Build(SitemapBaseUrl, provider.HasContentIn);
 
         sitemap.ShouldContain($"<loc>{SitemapBaseUrl}/land-ch/exporte</loc>");
         sitemap.ShouldContain($"<loc>{SitemapBaseUrl}/en/land-gb/exporte</loc>");
-        sitemap.ShouldNotContain($"<loc>{SitemapBaseUrl}/fr/land-fr/exporte</loc>");
+        sitemap.ShouldContain($"<loc>{SitemapBaseUrl}/fr/land-fr/exporte</loc>");
+        sitemap.ShouldContain($"<loc>{SitemapBaseUrl}/it/land-it/exporte</loc>");
+        sitemap.ShouldNotContain($"<loc>{SitemapBaseUrl}/ja/land-jp/exporte</loc>");
+        sitemap.ShouldNotContain($"<loc>{SitemapBaseUrl}/es/land-es/exporte</loc>");
     }
 
     [TestCase("/land-ch/experten", "/land-ch/exporte", "de")]
