@@ -8,20 +8,22 @@
  * (the row order of the app brings the three together), the AutoWizard button (never the chat) plans the month time-compressed with the badge, the proposal stays a scenario, the same
  * cells are read at slider 100 (the plan is not deterministic and a veto does not force a shift, so the take picks the three proof cells after the run, cells with a work first, and writes their captions
  * from the API: the texts of proofOne..proofThree in simple-videos.<culture>.json are replaced at run time), and a planner types OBT onto Mia's FREE day inside the scenario. The take never accepts: the proposal is a proof, the accept is the story of clip M3.
- * What the app does not do and the clip therefore never claims: a direct placement against a command gets no hint, neither in the cell nor in the error list (checked on this build; the
- * post-commit check does not evaluate day directives, see PreCommitCheckResult in Klacks.Api, the text "Die Tagesvorgabe ..." is only a translation key). A command is a veto, it does not force a
- * shift: NIGHT allows nothing but night, an empty day holds it too.
+ * What the clip says about the commands: they bind the planning run (caption binding), a slot nobody fits stays open (caption open, general: no open slot of the proposal is pointed at or tied to a command, the cursor rests
+ * on the free part of the scenario banner while it runs, never on a cell), and by hand you may plan differently (caption manual). Whether a direct placement against a command gets a hint is never claimed: PreCommitCheckResult in Klacks.Api says the post-commit
+ * check does not evaluate day directives yet; the take reads the answer after the last picture (report.manualWorkResponse, errorBadgeBeforeManual, errorBadgeAfterManual, errorListAfterManual, errorListHasDirective, the screenshot error-list.png next to the frames).
+ * A command is a veto, it does not force a shift: NIGHT allows nothing but night, an empty day holds it too.
  * Publishable criterion (report.publishable, every part is read from the API, not from the screen): every typed command was stored by a POST of the cell and the real December then holds exactly those
  * commands; the start request names the group of the take, December 1-31, 10 agents and 6 shifts; stage 3 ran; the scenario belongs to the group and lies inside December and carries the same commands;
  * before the manual placement no work of the scenario breaks a command (bands as in ShiftTypeInference: span, end exclusive, night beats late beats early; several commands of a day restrict
  * together; FREE also refuses a night that starts the evening before) and at least two of the three proof cells hold a work and Mia's FREE day holds none; the manual OBT lands in the scenario on Mia's FREE day
  * with HTTP 200, and no hint text appears in the page; no accept request, the real December holds no work at the end; no error toast, no HTTP error on a schedule, command or work call; the settings page hides the -FREE field and no
  * text "Winterthur", "Uster" or "-FREE" is on the page at the checkpoints; report.coverage names any open slot of the proposal (KLACKS_SECURITY_ACCEPT_GAP=1 lets it pass, nothing is accepted here).
- * After each saved cell the app reloads and the canvas stays dark for about 0.2 s; for the preview those frames were replaced by the frame before them and the take was encoded again (not part of this script).
+ * After each saved cell the app reloads and the canvas stays dark for about 0.2 s; for every preview so far those frames were replaced by the frame before them and the take was encoded again; preview v2 also lost 1.45 s of the static hold after the manual placement, right before the cue decide, to stay within 90 s (neither is part of this script).
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
+import path from "node:path";
 import * as S from "../lib/klacks-demo-session.mjs";
 import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
 import { realFilter, scenarioFilter } from "../lib/scenario-demo.mjs";
@@ -47,11 +49,12 @@ export const MONTHPLAN_COMMANDS_CUES = Object.freeze({
   others: "others",
   run: "run",
   proposal: "proposal",
-  veto: "veto",
+  binding: "binding",
   proofFree: "proofFree",
   proofOne: "proofOne",
   proofTwo: "proofTwo",
   proofThree: "proofThree",
+  open: "open",
   manual: "manual",
   decide: "decide",
 });
@@ -114,6 +117,14 @@ const BAND_NAME = Object.freeze({ [KIND.early]: "Früh", [KIND.late]: "Spät", [
 const MAX_CAPTION_CHARS = 42;
 const SEL_ERROR_LIST = "app-schedule-error-list";
 const ERROR_LIST_TAB = "Fehlerliste";
+const SEL_ERROR_BADGE = "#shift-tabs .badge";
+const SEL_SPLIT_GUTTER = ".as-split-gutter";
+const ERROR_LIST_GUTTER_Y = 340;
+const POST_COMMIT_WAIT_MS = 6000;
+const SPLIT_DIRECTION_VERTICAL = "vertical";
+const OPEN_CAPTION_CURSOR = Object.freeze({ x: 815, y: 150 });
+const ERROR_LIST_SHOT = "error-list.png";
+const REPORT_TEXT_LIMIT = 600;
 
 const pauseOf = (take, beat) => take.page.waitForTimeout(take.script.beats[beat]);
 const commandKey = (clientId, day, keyword) => `${clientId}|${day}|${keyword}`;
@@ -211,6 +222,7 @@ async function typeIntoCell(take, target, text, pathPattern) {
   const response = await saved;
   if (!response.ok()) throw new Error(`typing ${text} returned HTTP ${response.status()}`);
   await pauseOf(take, "typed");
+  return response;
 }
 
 async function pointAtField(take, selector, beat) {
@@ -305,18 +317,44 @@ function pickProof(take, ctx, data) {
   return proof;
 }
 
-/** The hint question of the clip, answered from the app itself: what the error list says after the manual placement. Runs after the last picture, inside a cut region. */
+/** The vertical splitter pulled back up, so the error list has room. Runs inside a cut region. */
+async function openErrorList(take) {
+  const { page, mouse } = take;
+  const gutters = await page.locator(SEL_SPLIT_GUTTER).evaluateAll((elements) => elements.map((element) => {
+    const box = element.getBoundingClientRect();
+    return { x: box.x + box.width / 2, y: box.y + box.height / 2, direction: element.parentElement?.getAttribute("direction") };
+  }));
+  const gutter = gutters.find((candidate) => candidate.direction === SPLIT_DIRECTION_VERTICAL);
+  if (!gutter) throw new Error("the splitter between the grid and the shift area was not found");
+  await mouse.drag({ x: gutter.x, y: Math.min(gutter.y, take.viewport.height - 2) }, { x: gutter.x, y: ERROR_LIST_GUTTER_Y }, MOVE.normal);
+  await page.locator("#shift-tabs").getByText(ERROR_LIST_TAB).first().click({ timeout: S.READY_TIMEOUT_MS });
+  await page.locator(SEL_ERROR_LIST).first().waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
+}
+
+/** The hint question, answered from the app itself: what the error list says after the manual placement. Runs after the last picture, inside a cut region; a failed read is reported as such, never as an empty list. */
 async function readErrorList(take) {
-  const { page, report } = take;
-  await page.getByText(ERROR_LIST_TAB, { exact: true }).first().click({ timeout: S.READY_TIMEOUT_MS }).catch(() => {});
-  await page.waitForTimeout(CANVAS_SETTLE_MS);
-  report.errorListAfterManual = (await page.locator(SEL_ERROR_LIST).first().innerText().catch(() => "")).replace(/\s+/g, " ").trim().slice(0, 600);
-  if (report.errorListAfterManual.includes(HINT_TEXT)) flag(report, "the error list shows a day directive hint - the caption of the manual step and the header of this take are out of date");
+  const { page, report, captions } = take;
+  try {
+    await captions.hide();
+    await page.waitForTimeout(POST_COMMIT_WAIT_MS);
+    await openErrorList(take);
+    await page.waitForTimeout(CANVAS_SETTLE_MS);
+    report.errorListRead = true;
+    report.errorBadgeAfterManual = await page.locator(SEL_ERROR_BADGE).first().textContent({ timeout: CANVAS_SETTLE_MS }).catch(() => null);
+    report.errorListAfterManual = (await page.locator(SEL_ERROR_LIST).first().innerText()).replace(/\s+/g, " ").trim().slice(0, REPORT_TEXT_LIMIT);
+    report.errorListHasDirective = report.errorListAfterManual.includes(HINT_TEXT);
+    await page.screenshot({ path: path.join(process.env.KLACKS_VIDEO_FRAMES_DIR ?? ".", ERROR_LIST_SHOT) });
+  } catch (error) {
+    report.errorListRead = false;
+    report.errorListReadError = String(error?.message ?? error).slice(0, REPORT_TEXT_LIMIT);
+  }
 }
 
 async function placeManually(take, ctx, scenario) {
   const { api, page, report } = take;
-  await typeIntoCell(take, await cell(take, "Mia", FREE_DAY, 1), MANUAL_SHIFT, WORKS_POST_PATH);
+  report.errorBadgeBeforeManual = await page.locator(SEL_ERROR_BADGE).first().textContent({ timeout: CANVAS_SETTLE_MS }).catch(() => null);
+  const response = await typeIntoCell(take, await cell(take, "Mia", FREE_DAY, 1), MANUAL_SHIFT, WORKS_POST_PATH);
+  report.manualWorkResponse = { status: response.status(), body: (await response.text().catch(() => "")).slice(0, REPORT_TEXT_LIMIT) };
   const data = await api.schedule(scenarioFilter(ctx.decemberFilter, scenario.token));
   report.manualPlacement = data.entries.filter((entry) => entry.entryType === ENTRY_TYPE_WORK && entry.clientId === ctx.clientIdOf.Mia && dateKey(entry.entryDate) === FREE_DAY).map((entry) => entry.abbreviation);
   if (!report.manualPlacement.includes(MANUAL_SHIFT)) flag(report, "the manual OBT is not in the scenario");
@@ -390,13 +428,15 @@ export async function takeMonthplanCommands(take) {
     await pauseOf(take, "run");
     await startWizard(take, ctx);
     const scenario = await waitForProposal(take, ctx);
+    await recorder.beginFast(CUT);
     await measure(take, "proposal");
     await readProposal(take, ctx, scenario);
     await checkPage(take, "proposal");
+    await recorder.endFast();
     await captions.show(cues.proposal);
     await pauseOf(take, "proposal");
-    await captions.show(cues.veto);
-    await pauseOf(take, "veto");
+    await captions.show(cues.binding);
+    await pauseOf(take, "binding");
 
     await captions.show(cues.proofFree);
     await mouse.moveTo(await cell(take, "Mia", FREE_DAY, 1), MOVE.normal);
@@ -406,6 +446,10 @@ export async function takeMonthplanCommands(take) {
       await mouse.moveTo(await cell(take, item.firstName, item.day, 0), MOVE.normal);
       await pauseOf(take, "proof");
     }
+
+    await captions.show(cues.open);
+    await mouse.moveTo(OPEN_CAPTION_CURSOR, MOVE.normal);
+    await pauseOf(take, "open");
 
     await captions.show(cues.manual);
     await placeManually(take, ctx, scenario);

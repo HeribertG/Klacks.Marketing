@@ -56,7 +56,7 @@ export const TAKE_HAS_CHAT_PANEL = false;
 export const ZOOMS = Object.freeze([
   Object.freeze({ cue: "free", delayMs: 200, holdMs: 8700, rect: Object.freeze({ x: 110, y: 62, w: 931, h: 524 }) }),
   Object.freeze({ cue: "type", delayMs: 200, holdMs: 13900, rect: Object.freeze({ x: 100, y: 128, w: 853, h: 480 }) }),
-  Object.freeze({ cue: "proofFree", delayMs: 100, holdMs: 17200, rect: Object.freeze({ x: 100, y: 122, w: 914, h: 514 }) }),
+  Object.freeze({ cue: "proofFree", delayMs: 100, holdMs: 18940, rect: Object.freeze({ x: 100, y: 122, w: 914, h: 514 }) }),
 ]);
 
 export const OUTPUT_PREFIX = "monthplan-m2-";
