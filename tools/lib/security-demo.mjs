@@ -187,7 +187,7 @@ export const SITES = Object.freeze({
     team: BERN_TEAM,
     vacations: Object.freeze([CLARA_VACATION, AMIR_VACATION]),
     commands: BERN_COMMANDS,
-    stages: Object.freeze(["m1", "m2", "m3"]),
+    stages: Object.freeze(["m1", "m2", "m3", "s1"]),
   }),
   biel: Object.freeze({
     key: "biel",
@@ -215,6 +215,7 @@ export const STAGES = Object.freeze({
   m1: Object.freeze({ wishes: true, vacations: false, commands: false, planned: false }),
   m2: Object.freeze({ wishes: false, vacations: true, commands: false, planned: false }),
   m3: Object.freeze({ wishes: false, vacations: true, commands: true, planned: false }),
+  s1: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true, withoutOnCall: true }),
   r1: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true }),
   r2: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true, openSlot: true }),
 });

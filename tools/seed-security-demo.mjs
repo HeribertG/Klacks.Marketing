@@ -14,13 +14,13 @@
  *   - contracts on the scheduling rule of the security industry with a holiday-work exemption of that rule, so the staffed Christmas days raise no warning,
  *   - the stage: m1 wish placeholders; m2 vacation booked the way the context menu "Absenz übernehmen" books it (Breaks/Bulk, one break per calendar day, then
  *     the placeholder is deleted); m3 vacation plus planning commands; r1/r2 vacation, December planned by the AutoWizard and accepted, then one on-call day
- *     per calendar day on a free team member.
+ *     per calendar day on a free team member; s1 (Bern, clip S0) like r1 without the on-call days, whose absence cells would stand under the moved nights.
  * --self-check runs the wizard the way the AutoWizard button runs it (agents = rows of the schedule, shifts = rows of the shift schedule, start, poll), accepts
  * the scenario without any override and evaluates the real plan. It replaces December, so it belongs on a throw-away copy, never on a stage database.
  * Template: klacks_marketing_security_template (migrated, phrases synced, nothing seeded); per stage CREATE DATABASE klacks_marketing_security_<site>_<stage> TEMPLATE
  * klacks_marketing_security_template, start the recording API on it, run this script, stop the API. r2 is a copy of a good r1, so both clips start from the same plan; run with --stage r2 on a copy of that r2 it keeps the
  * plan and only adds what lets one duty stay open (applyOpenSlot), so the take of clip R2 runs it on its throw-away copy and the master stays unchanged.
- * CLI: --site bern|biel  --stage m1|m2|m3|r1|r2  [--self-check]  [--report <file>]  [--api-url <url>]
+ * CLI: --site bern|biel  --stage m1|m2|m3|s1|r1|r2  [--self-check]  [--report <file>]  [--api-url <url>]
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL.
  */
 
@@ -558,7 +558,7 @@ async function main() {
     if (stage.planned && !alreadyPlanned) {
       const plan = await planAndAccept(api, group);
       report.plan = P.describeRun(plan, site, memberIds);
-      report.onCallDays = await bookOnCall(api, site, group, memberIds, await absenceId(api, ABSENCE_ON_CALL));
+      if (!stage.withoutOnCall) report.onCallDays = await bookOnCall(api, site, group, memberIds, await absenceId(api, ABSENCE_ON_CALL));
     }
     if (stage.openSlot) report.openSlot = await applyOpenSlot(api, site, group, memberIds);
     if (options.selfCheck) {

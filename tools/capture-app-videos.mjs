@@ -43,7 +43,9 @@
  * --group-id of "Biel Objektschutz", records at 1280x720 and reads its beats from capture-app-videos.scripts.json; its header states the publishable criterion.
  * The planning commands take (monthplan-commands, clip M2) lives in takes/monthplan-commands-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_m2, --group-id of "Bern Objektschutz",
  * records at 1280x720 and reads its beats from capture-app-videos.scripts.json; its header states the publishable criterion.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * The scenario take scenario-variants (clip S0 "Zwei Varianten, ein Ja") lives in takes/scenario-variants-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_s1, --group-id of "Bern Objektschutz",
+ * records at 1280x720 and reads its people, nights and beats from capture-app-videos.scripts.json; its header states the publishable criterion.
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands,scenario-variants  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
  * Env: KLACKS_VIDEO_MAX_MB (size budget per encoded file, default 1.5 for the site videos; story takes that are cut again may use more),
@@ -175,6 +177,7 @@ import {
   VIDEO_REPLACEMENT_R1,
 } from "./takes/replacement-takes.mjs";
 import { REPLACEMENT_R2_CUES, REPLACEMENT_R2_FINAL_HOLD_MS, VIDEO_REPLACEMENT_R2, takeReplacementR2 } from "./takes/replacement-r2-takes.mjs";
+import { SCENARIO_VARIANTS_CUES, SCENARIO_VARIANTS_FINAL_HOLD_MS, VIDEO_SCENARIO_VARIANTS, takeScenarioVariants } from "./takes/scenario-variants-takes.mjs";
 import {
   MONTHPLAN_COMMANDS_CSS,
   MONTHPLAN_COMMANDS_CUES,
@@ -198,7 +201,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -547,6 +550,11 @@ ${REPLACEMENT_CSS}`, run: REPLACEMENT_TAKE_RUNNERS[VIDEO_REPLACEMENT_R1],
     period: DECEMBER, viewport: REPLACEMENT_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
 ${REPLACEMENT_CSS}`, run: takeReplacementR2,
     needsScript: true, captionCues: Object.values(REPLACEMENT_R2_CUES), finalHoldMs: REPLACEMENT_R2_FINAL_HOLD_MS,
+  },
+  [VIDEO_SCENARIO_VARIANTS]: {
+    period: DECEMBER, viewport: SECURITY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+${REPLACEMENT_CSS}`, run: takeScenarioVariants,
+    needsScript: true, captionCues: Object.values(SCENARIO_VARIANTS_CUES), finalHoldMs: SCENARIO_VARIANTS_FINAL_HOLD_MS,
   },
   [VIDEO_MONTHPLAN_COMMANDS]: {
     period: DECEMBER, viewport: MONTHPLAN_COMMANDS_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
