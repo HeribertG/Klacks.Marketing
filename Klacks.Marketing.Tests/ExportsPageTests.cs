@@ -4,13 +4,14 @@ namespace Klacks.Marketing.Tests;
 
 using System.Net;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
 using Microsoft.AspNetCore.Mvc.Testing;
 using NUnit.Framework;
 using Shouldly;
 
 /// <summary>
-/// The exports and interfaces page exists in German and English only (owner decision 2026-10-22): both are indexable, every
+/// The imports and exports page exists in German and English only (owner decision 2026-10-22): both are indexable, every
 /// other culture serves the English text marked lang="en" and stays noindex and out of the sitemap. Its meta description
 /// fits the search snippet and the page carries a dated "as of" line, so outdated versions are recognisable.
 /// </summary>
@@ -19,11 +20,16 @@ public class ExportsPageTests
 {
     private const string SitemapBaseUrl = "https://klacks.example";
     private const string ContentFile = "exporte.json";
+    private const string SharedFile = "shared.json";
+    private const string FooterExportsKey = "footer.exports";
     private const string MetaDescriptionKey = "metaDescription";
     private const string AsOfKey = "asOf";
     private const string NoIndex = "noindex";
     private const string EnglishContentMarker = "lang=\"en\" dir=\"ltr\"";
     private const int MetaDescriptionMaxLength = 155;
+    private const int ExpertLinksToExportsPage = 3;
+    private const int SimpleLinksToExportsPage = 1;
+    private const string ExportsLinkPattern = "href=\"[^\"]*/exporte\"";
 
     private static readonly string[] WrittenCultures = { "de", "en" };
 
@@ -79,9 +85,44 @@ public class ExportsPageTests
         sitemap.ShouldNotContain($"<loc>{SitemapBaseUrl}/fr/land-fr/exporte</loc>");
     }
 
-    private static string Text(string culture, string key)
+    [TestCase("/land-ch/experten", "/land-ch/exporte", "de")]
+    [TestCase("/en/land-gb/experten", "/en/land-gb/exporte", "en")]
+    [TestCase("/fr/land-fr/experten", "/fr/land-fr/exporte", "fr")]
+    [TestCase("/ja/land-jp/experten", "/ja/land-jp/exporte", "ja")]
+    public async Task Expert_start_page_links_the_page_in_the_desktop_and_mobile_menu_and_the_footer_in_every_culture(string path, string href, string culture)
     {
-        using var document = JsonDocument.Parse(File.ReadAllText(Path.Combine(MarketingProjectPaths.ContentRoot, culture, ContentFile)));
+        var html = await GetHtmlAsync(path);
+        var label = SharedText(culture, FooterExportsKey);
+
+        Regex.Matches(html, Regex.Escape($"href=\"{href}\"")).Count.ShouldBe(ExpertLinksToExportsPage);
+        Regex.IsMatch(html, $"<a class=\"nav-link[^\"]*\" href=\"{Regex.Escape(href)}\"").ShouldBeTrue();
+        WebUtility.HtmlDecode(html).ShouldContain($">{label}</a>");
+    }
+
+    [Test]
+    public void Every_culture_has_a_footer_label_for_the_page()
+    {
+        foreach (var culture in SupportedCultures.All)
+        {
+            SharedText(culture.Code, FooterExportsKey).ShouldNotBeNullOrWhiteSpace(culture.Code);
+        }
+    }
+
+    [Test]
+    public async Task Simple_start_page_keeps_only_the_footer_link()
+    {
+        var html = await GetHtmlAsync("/land-ch");
+
+        Regex.Matches(html, ExportsLinkPattern).Count.ShouldBe(SimpleLinksToExportsPage);
+    }
+
+    private static string Text(string culture, string key) => ReadText(culture, ContentFile, key);
+
+    private static string SharedText(string culture, string key) => ReadText(culture, SharedFile, key);
+
+    private static string ReadText(string culture, string file, string key)
+    {
+        using var document = JsonDocument.Parse(File.ReadAllText(Path.Combine(MarketingProjectPaths.ContentRoot, culture, file)));
         return document.RootElement.GetProperty(key).GetString() ?? string.Empty;
     }
 
