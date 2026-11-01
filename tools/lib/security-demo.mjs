@@ -200,6 +200,14 @@ export const SITES = Object.freeze({
       Object.freeze({ key: "max", days: Object.freeze(["2026-12-09"]) }),
       Object.freeze({ key: "elsa", days: Object.freeze(["2026-12-14", "2026-12-15", "2026-12-16", "2026-12-17", "2026-12-18"]) }),
     ]),
+    openSlot: Object.freeze({
+      day: "2026-12-18",
+      order: "EMP",
+      qualification: "CCTV / Videoüberwachung",
+      qualificationLevel: 3,
+      requiredLevel: 2,
+      freeWishes: Object.freeze(["nora", "tanja", "zoe", "ivan"]),
+    }),
   }),
 });
 
@@ -208,7 +216,7 @@ export const STAGES = Object.freeze({
   m2: Object.freeze({ wishes: false, vacations: true, commands: false, planned: false }),
   m3: Object.freeze({ wishes: false, vacations: true, commands: true, planned: false }),
   r1: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true }),
-  r2: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true }),
+  r2: Object.freeze({ wishes: false, vacations: true, commands: true, planned: true, openSlot: true }),
 });
 
 const VACATION_DIVISOR_DAYS = 22.5;

@@ -18,7 +18,8 @@
  * --self-check runs the wizard the way the AutoWizard button runs it (agents = rows of the schedule, shifts = rows of the shift schedule, start, poll), accepts
  * the scenario without any override and evaluates the real plan. It replaces December, so it belongs on a throw-away copy, never on a stage database.
  * Template: klacks_marketing_security_template (migrated, phrases synced, nothing seeded); per stage CREATE DATABASE klacks_marketing_security_<site>_<stage> TEMPLATE
- * klacks_marketing_security_template, start the recording API on it, run this script, stop the API. r2 is a copy of a good r1, so both clips start from the same plan.
+ * klacks_marketing_security_template, start the recording API on it, run this script, stop the API. r2 is a copy of a good r1, so both clips start from the same plan; run with --stage r2 on a copy of that r2 it keeps the
+ * plan and only adds what lets one duty stay open (applyOpenSlot), so the take of clip R2 runs it on its throw-away copy and the master stays unchanged.
  * CLI: --site bern|biel  --stage m1|m2|m3|r1|r2  [--self-check]  [--report <file>]  [--api-url <url>]
  * Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL.
  */
@@ -46,7 +47,7 @@ import {
   weekdayFlags,
   minutesToWorkTime,
 } from "./lib/klacks-demo-api.mjs";
-import { SCHEDULE_API } from "./lib/schedule-grid.mjs";
+import { SCHEDULE_API, worksIn } from "./lib/schedule-grid.mjs";
 import * as D from "./lib/security-demo.mjs";
 import * as P from "./lib/security-plan-check.mjs";
 
@@ -60,7 +61,10 @@ const SCHEDULING_RULES_PATH = "SchedulingRules";
 const HOLIDAY_EXEMPTIONS_PATH = `${SCHEDULING_RULES_PATH}/HolidayWorkExemptions`;
 const SHIFT_SCHEDULE_PATH = "Shifts/Schedule";
 const CUTS_BATCH_PATH = "Shifts/Cuts/Batch";
+const BREAKS_PATH = "Breaks";
 const BREAKS_BULK_PATH = "Breaks/Bulk";
+const QUALIFICATION_LIST_PATH = "Qualification/GetQualificationList";
+const REQUIRED_QUALIFICATIONS_PATH = "Shifts/RequiredQualifications";
 const BREAK_PLACEHOLDERS_PATH = "BreakPlaceholders";
 const SCHEDULE_COMMANDS_PATH = "ScheduleCommands";
 const AUTO_WIZARD_START_PATH = "AutoWizard/Start";
@@ -462,6 +466,39 @@ async function bookOnCall(api, site, group, memberIds, onCallId) {
   return assignments.length;
 }
 
+/**
+ * Stage r2 leaves one duty of the absent employee without a legal cover, with real data only: the reception duty gets a mandatory qualification the whole team holds (without it the recovery borrows a
+ * stranger from another group under the same root), the four people who are free on that day get a FREE command, and the on-call day of that day is dropped (FREE and on call contradict each other).
+ * The plan stays as it is. Works on the planned December and on a copy of it; repeating it changes nothing.
+ */
+async function applyOpenSlot(api, site, group, memberIds) {
+  const { day, order, qualification: name, qualificationLevel, requiredLevel, freeWishes } = site.openSlot;
+  const qualification = ((await api.call(HTTP_GET, QUALIFICATION_LIST_PATH)) ?? []).find((entry) => !entry.isDeleted && (entry.name?.de ?? entry.name) === name);
+  if (!qualification) throw new Error(`the qualification ${name} is missing in the catalog`);
+  const shift = (await shiftsWithAbbreviation(api, order, false)).find((row) => row.status === SHIFT_STATUS_ORIGINAL_SHIFT);
+  if (!shift) throw new Error(`the plannable shift ${order} is missing`);
+  const required = (await api.call(HTTP_GET, `${REQUIRED_QUALIFICATIONS_PATH}/${shift.id}`)) ?? [];
+  if (!required.some((row) => row.qualificationId === qualification.id)) {
+    await api.call(HTTP_POST, REQUIRED_QUALIFICATIONS_PATH, { data: { shiftId: shift.id, qualificationId: qualification.id, isMandatory: true, minLevel: requiredLevel } });
+  }
+  for (const clientId of Object.values(memberIds)) {
+    const client = await api.call(HTTP_GET, `${CLIENTS_PATH}/${clientId}`);
+    if ((client.qualifications ?? []).some((row) => row.qualificationId === qualification.id)) continue;
+    const held = { clientId, qualificationId: qualification.id, level: qualificationLevel, validFrom: null, validUntil: null, note: null };
+    await api.call(HTTP_PUT, CLIENTS_PATH, { data: { ...client, qualifications: [...(client.qualifications ?? []), held], skipAddressValidation: true } });
+  }
+  const data = await readSchedule(api, group, null);
+  const isOnDay = (entry, clientId) => entry.clientId === clientId && String(entry.entryDate).slice(0, D.PERIOD.from.length) === day;
+  const wishes = freeWishes.map((key) => memberIds[key]);
+  for (const clientId of wishes) {
+    if (data.entries.some((entry) => isOnDay(entry, clientId) && entry.entryType === P.ENTRY_TYPE_COMMAND)) continue;
+    await api.call(HTTP_POST, SCHEDULE_COMMANDS_PATH, { data: { clientId, currentDate: day, commandKeyword: D.COMMAND_FREE } });
+  }
+  const onCall = data.entries.filter((entry) => entry.entryType === P.ENTRY_TYPE_BREAK && wishes.some((clientId) => isOnDay(entry, clientId)));
+  for (const entry of onCall) await api.call(HTTP_DELETE, `${BREAKS_PATH}/${entry.id}`);
+  return { day, order, qualification: name, shiftId: shift.id, freeWishes, onCallDropped: onCall.length };
+}
+
 async function holidayFacts(api, group) {
   const stored = await api.call(HTTP_GET, `${GROUPS_PATH}/${group.id}`);
   return { calendarSelectionId: stored.calendarSelectionId, paymentInterval: stored.paymentInterval };
@@ -517,11 +554,13 @@ async function main() {
     if (stage.commands) report.commands = await setCommands(api, site, group, memberIds);
     report.capacity = D.capacityOf(site);
 
-    if (stage.planned) {
+    const alreadyPlanned = stage.openSlot && worksIn(await readSchedule(api, group, null), D.PERIOD.from, D.PERIOD.until).length > 0;
+    if (stage.planned && !alreadyPlanned) {
       const plan = await planAndAccept(api, group);
       report.plan = P.describeRun(plan, site, memberIds);
       report.onCallDays = await bookOnCall(api, site, group, memberIds, await absenceId(api, ABSENCE_ON_CALL));
     }
+    if (stage.openSlot) report.openSlot = await applyOpenSlot(api, site, group, memberIds);
     if (options.selfCheck) {
       const plan = await planAndAccept(api, group);
       report.selfCheck = P.describeRun(plan, site, memberIds);

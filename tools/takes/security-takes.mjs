@@ -222,6 +222,8 @@ async function scrollRowsUntil(take, direction, reached, label) {
 
 const rowsAtTop = (take) => scrollRowsUntil(take, -1, (rows, grid) => rows[0].top >= grid.y, "first row");
 const rowAtTop = (take, index) => scrollRowsUntil(take, 1, (rows, grid) => rows[index].top <= grid.y + GRID_TOP_MARGIN_PX, `row ${index}`);
+export const showRowAtTop = rowAtTop;
+export const scrollRowsToTop = rowsAtTop;
 
 /** Scrolling on until the name column reports the goal would run the canvas past its last row (dark band), so the ticks are computed once from the unscrolled rows. */
 async function lastRowInView(take) {

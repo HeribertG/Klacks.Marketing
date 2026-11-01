@@ -154,7 +154,7 @@ function cellOf(grid, boxes, row, subRow) {
 
 const cell = async (take, row, subRow) => cellOf(await gridBox(take.page), await rowBoxes(take.page), row, subRow);
 
-async function openMenuItem(take, target, selector) {
+export async function openMenuItem(take, target, selector) {
   const { page, mouse } = take;
   await mouse.rightClick(target, MOVE.normal);
   const item = page.locator(`${SEL_OPEN_MENU} ${selector}`).first();
@@ -163,7 +163,7 @@ async function openMenuItem(take, target, selector) {
   await mouse.clickLocator(item, MOVE.normal);
 }
 
-async function checkPage(take, label) {
+export async function checkPage(take, label) {
   const text = await take.page.evaluate(() => document.body.innerText);
   const found = FORBIDDEN_TEXTS.filter((word) => text.includes(word));
   (take.report.textChecks ??= []).push({ label, found });
@@ -171,7 +171,7 @@ async function checkPage(take, label) {
 }
 
 /** Inside a cut region: the dialog holds the awaited element, no spinner is left and the page has stopped moving. */
-async function settleDialog(take, selector) {
+export async function settleDialog(take, selector) {
   const { page } = take;
   await page.locator(selector).first().waitFor({ state: "visible", timeout: COVER_TIMEOUT_MS });
   await page.locator(SEL_RECOVERY_SPINNER).first().waitFor({ state: "detached", timeout: COVER_TIMEOUT_MS });
