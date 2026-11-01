@@ -45,6 +45,8 @@
  * records at 1280x720 and reads its beats from capture-app-videos.scripts.json; its header states the publishable criterion.
  * The scenario take scenario-variants (clip S0 "Zwei Varianten, ein Ja") lives in takes/scenario-variants-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_s1, --group-id of "Bern Objektschutz",
  * records at 1280x720 and reads its people, nights and beats from capture-app-videos.scripts.json; its header states the publishable criterion.
+ * The wishes take monthplan-wishes (clip M1 "Ferienwunsch wird Ferien") lives in takes/monthplan-wishes-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_m1, --group-id of "Bern Objektschutz",
+ * records at 1280x720 and reads its beats from capture-app-videos.scripts.json; its header states the publishable criterion.
  * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands,scenario-variants  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
@@ -187,6 +189,15 @@ import {
   MONTHPLAN_COMMANDS_VIEWPORT,
   VIDEO_MONTHPLAN_COMMANDS,
 } from "./takes/monthplan-commands-takes.mjs";
+import {
+  MONTHPLAN_WISHES_CSS,
+  MONTHPLAN_WISHES_CUES,
+  MONTHPLAN_WISHES_FINAL_HOLD_MS,
+  MONTHPLAN_WISHES_TAKE_RUNNERS,
+  MONTHPLAN_WISHES_VIDEOS,
+  MONTHPLAN_WISHES_VIEWPORT,
+  VIDEO_MONTHPLAN_WISHES,
+} from "./takes/monthplan-wishes-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -201,7 +212,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS, ...MONTHPLAN_WISHES_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -560,6 +571,11 @@ ${REPLACEMENT_CSS}`, run: takeScenarioVariants,
     period: DECEMBER, viewport: MONTHPLAN_COMMANDS_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
 ${MONTHPLAN_COMMANDS_CSS}`, run: MONTHPLAN_COMMANDS_TAKE_RUNNERS[VIDEO_MONTHPLAN_COMMANDS],
     needsScript: true, captionCues: Object.values(MONTHPLAN_COMMANDS_CUES), finalHoldMs: MONTHPLAN_COMMANDS_FINAL_HOLD_MS,
+  },
+  [VIDEO_MONTHPLAN_WISHES]: {
+    period: DECEMBER, viewport: MONTHPLAN_WISHES_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+${MONTHPLAN_WISHES_CSS}`, run: MONTHPLAN_WISHES_TAKE_RUNNERS[VIDEO_MONTHPLAN_WISHES],
+    needsScript: true, captionCues: Object.values(MONTHPLAN_WISHES_CUES), finalHoldMs: MONTHPLAN_WISHES_FINAL_HOLD_MS,
   },
   [VIDEO_SIMPLE_PLANNING_PROGRESS]: {
     period: NOVEMBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
