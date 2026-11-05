@@ -55,7 +55,8 @@ const FIRST_MAIL_SENDER = "Mia Baer";
 const SEL_AVAILABILITY_CANVAS = "#availability-surface-canvas";
 const SEL_NEXT_PERIOD = "app-client-availability-header button[aria-label=\"next period\"]";
 const SEL_PERIOD_LABEL = "app-client-availability-header";
-const DECEMBER_LABEL = "Dezember";
+const DECEMBER_MONTH_DATE = new Date(Date.UTC(2026, 11, 15));
+const decemberLabel = (culture) => new Intl.DateTimeFormat(culture, { month: "long", timeZone: "UTC" }).format(DECEMBER_MONTH_DATE).toLowerCase();
 const SHOW_AVAILABILITY_PARAM = "showAvailability";
 const SHOW_COMMANDS_PARAM = "showCommands";
 const GROUP_PARAM = "groupId";
@@ -191,16 +192,17 @@ async function hoverMixedAvailabilityCell(page, mouse) {
   return shown;
 }
 
-async function showAvailabilityPage(page, mouse) {
+async function showAvailabilityPage(page, mouse, culture) {
+  const monthLabel = decemberLabel(culture);
   const visible = await page.locator(SEL_AVAILABILITY_CANVAS).waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS }).then(() => true, () => false);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   let clicks = 0;
-  while (visible && clicks < MAX_MONTH_CLICKS && !(await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).includes(DECEMBER_LABEL)) {
+  while (visible && clicks < MAX_MONTH_CLICKS && !(await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).toLowerCase().includes(monthLabel)) {
     await mouse.clickLocator(page.locator(SEL_NEXT_PERIOD), MOVE_NORMAL_MS);
     clicks++;
     await page.waitForTimeout(BEAT.afterClick);
   }
-  const december = (await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).includes(DECEMBER_LABEL);
+  const december = (await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).toLowerCase().includes(monthLabel);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   const availabilityColumns = december ? (FIRST_STORY_DAY - 1) * AVAILABILITY_COLUMNS_PER_DAY + AVAILABILITY_MORNING_COLUMNS : 0;
   await wheelOver(page, mouse, SEL_AVAILABILITY_CANVAS, { dx: 1 }, availabilityColumns, AVAILABILITY_WHEEL_PAUSE_MS);
@@ -268,11 +270,11 @@ async function showSchedule(page, mouse, requested) {
   };
 }
 
-async function showPage(page, mouse, pathName, turnIndex, visited) {
+async function showPage(page, mouse, pathName, turnIndex, visited, culture) {
   const requested = await waitForPath(page, visited, pathName);
   const entry = { turn: turnIndex, page: pathName, requested, reached: requested !== null };
   if (requested) {
-    Object.assign(entry, pathName === SCHEDULE_ROUTE ? await showSchedule(page, mouse, requested) : await showAvailabilityPage(page, mouse));
+    Object.assign(entry, pathName === SCHEDULE_ROUTE ? await showSchedule(page, mouse, requested) : await showAvailabilityPage(page, mouse, culture));
     await page.waitForTimeout(BEAT.pageHold);
   }
   log(`page ${pathName}: ${JSON.stringify(entry)}`);
@@ -419,7 +421,7 @@ async function takeMailsAvailability(take) {
       report.turns.push({ prompt: message.text, sent: true, ...turn });
       log(`calls: ${turn.calls.map((c) => `${c.name}${JSON.stringify(c.parameters)}`).join(", ") || "-"}; answer: ${turn.content.replace(/\s+/g, " ").slice(0, LOG_PREVIEW_CHARS)}`);
       const pathName = pageOf(turn);
-      if (pathName) report.pages.push(await showPage(page, mouse, pathName, sentTurns(report.turns).length, visited));
+      if (pathName) report.pages.push(await showPage(page, mouse, pathName, sentTurns(report.turns).length, visited, take.culture));
       if (!report.inboxShown) report.inboxShown = await showReadMails(take);
     }
     report.posterAt = ScreenRecorder.now();

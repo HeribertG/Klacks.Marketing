@@ -4065,9 +4065,62 @@
   "mails-availability": {
     "de": {
       "messages": [
-        { "text": "Lies bitte die E-Mails vom Team und trag alles ein: Verfügbarkeiten bei den Verfügbarkeiten, Wünsche als Keywords in den Plan." },
-        { "text": "Zeig mir die Verfügbarkeiten.", "sendWhen": "entered" },
-        { "text": "Zeig mir jetzt Bern Objektschutz im Dezember-Plan, mit Verfügbarkeiten und Keywords.", "sendWhen": "availabilityShown" }
+        {
+          "text": "Lies bitte die E-Mails vom Team und trag alles ein: Verfügbarkeiten bei den Verfügbarkeiten, Wünsche als Keywords in den Plan."
+        },
+        {
+          "text": "Zeig mir die Verfügbarkeiten.",
+          "sendWhen": "entered"
+        },
+        {
+          "text": "Zeig mir jetzt Bern Objektschutz im Dezember-Plan, mit Verfügbarkeiten und Keywords.",
+          "sendWhen": "availabilityShown"
+        }
+      ]
+    },
+    "en": {
+      "messages": [
+        {
+          "text": "Please read the team's emails and enter everything: availabilities in the availabilities, wishes as keywords in the plan."
+        },
+        {
+          "text": "Show me the availabilities.",
+          "sendWhen": "entered"
+        },
+        {
+          "text": "Now show me Bern Objektschutz in the December plan, with availabilities and keywords.",
+          "sendWhen": "availabilityShown"
+        }
+      ]
+    },
+    "fr": {
+      "messages": [
+        {
+          "text": "Lis les e-mails de l'équipe et saisis tout : les disponibilités dans les disponibilités, les souhaits comme mots-clés dans le planning."
+        },
+        {
+          "text": "Montre-moi les disponibilités.",
+          "sendWhen": "entered"
+        },
+        {
+          "text": "Montre-moi maintenant Bern Objektschutz dans le planning de décembre, avec les disponibilités et les mots-clés.",
+          "sendWhen": "availabilityShown"
+        }
+      ]
+    },
+    "it": {
+      "messages": [
+        {
+          "text": "Leggi le e-mail del team e inserisci tutto: le disponibilità nelle disponibilità, i desideri come parole chiave nel piano."
+        },
+        {
+          "text": "Mostrami le disponibilità.",
+          "sendWhen": "entered"
+        },
+        {
+          "text": "Ora mostrami Bern Objektschutz nel piano di dicembre, con disponibilità e parole chiave.",
+          "sendWhen": "availabilityShown"
+        }
       ]
     }
   }
