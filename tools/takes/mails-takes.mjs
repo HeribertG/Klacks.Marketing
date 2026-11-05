@@ -54,12 +54,16 @@ const DATE_PARAM = "date";
 const PARAM_ON = "true";
 const MAX_MONTH_CLICKS = 2;
 
-const BEAT = { intro: 1200, pageHold: 4500, pagePoll: 250, afterClick: 1200 };
+const BEAT = { intro: 1200, pageHold: 4500, pagePoll: 250, afterClick: 1200, storyHold: 3000 };
 const PAGE_TIMEOUT_MS = 20000;
 const MOVE_NORMAL_MS = 700;
 const FIRST_STORY_DAY = 7;
 const DAY_OF_MONTH_OFFSET = 8;
 const WHEEL_PAUSE_MS = 260;
+const AVAILABILITY_WHEEL_PAUSE_MS = 25;
+const AVAILABILITY_COLUMNS_PER_DAY = 12;
+const AVAILABILITY_MORNING_COLUMNS = 3;
+const LOWER_ROWS_SUB_ROWS = 13;
 const LOG_PREVIEW_CHARS = 220;
 const ALL_HOURS = Array.from({ length: 24 }, (_, hour) => hour);
 const hoursFrom = (first, last) => ALL_HOURS.filter((hour) => hour >= first && hour <= last);
@@ -168,32 +172,45 @@ async function showAvailabilityPage(page, mouse) {
   }
   const december = (await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).includes(DECEMBER_LABEL);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
-  return { canvasVisible: visible, monthClicks: clicks, december };
+  const availabilityColumns = december ? (FIRST_STORY_DAY - 1) * AVAILABILITY_COLUMNS_PER_DAY + AVAILABILITY_MORNING_COLUMNS : 0;
+  await wheelOver(page, mouse, SEL_AVAILABILITY_CANVAS, { dx: 1 }, availabilityColumns, AVAILABILITY_WHEEL_PAUSE_MS);
+  return { canvasVisible: visible, monthClicks: clicks, december, availabilityColumns };
 }
 
 /**
- * The schedule opens on the first day of the period, while the story starts on 7 December (Mia's hours, Lena's nights): the
- * grid is wheeled to the right with the visible cursor (one day per wheel event) until that day is the first visible column.
+ * Turns the mouse wheel over a canvas with the visible cursor on it: dx/dy give the direction, one cell (availability) or one
+ * day / sub-row (schedule) per event.
  */
-async function scrollToFirstStoryDay(page, mouse, openedDate) {
-  const openedDay = Number((openedDate ?? DECEMBER.from).slice(DAY_OF_MONTH_OFFSET));
-  const ticks = Math.max(0, FIRST_STORY_DAY - openedDay);
-  const grid = await page.locator(SEL_GRID_CANVAS).first().boundingBox();
-  if (!grid || ticks === 0) return 0;
-  await mouse.moveTo({ x: grid.x + grid.width / HALF, y: grid.y + grid.height / HALF }, MOVE_NORMAL_MS);
+async function wheelOver(page, mouse, selector, { dx = 0, dy = 0 }, ticks, pauseMs) {
+  const box = ticks > 0 ? await page.locator(selector).first().boundingBox() : null;
+  if (!box) return;
+  await mouse.moveTo({ x: box.x + box.width / HALF, y: box.y + box.height / HALF }, MOVE_NORMAL_MS);
   for (let tick = 0; tick < ticks; tick++) {
-    await page.mouse.wheel(1, 0);
-    await page.waitForTimeout(WHEEL_PAUSE_MS);
+    await page.mouse.wheel(dx, dy);
+    await page.waitForTimeout(pauseMs);
   }
   await page.waitForTimeout(CANVAS_SETTLE_MS);
-  return ticks;
+}
+
+/**
+ * The schedule opens on the first day of the period, while the story starts on 7 December: the grid is wheeled right until that
+ * day is the first column (Mia's hours shade 7-9 Dec), held, then wheeled down until Priya's row is on top, so Lena's NIGHT keywords
+ * (7-11 Dec) and Jonas's row come into view.
+ */
+async function scrollToStory(page, mouse, openedDate) {
+  const openedDay = Number((openedDate ?? DECEMBER.from).slice(DAY_OF_MONTH_OFFSET));
+  const days = Math.max(0, FIRST_STORY_DAY - openedDay);
+  await wheelOver(page, mouse, SEL_GRID_CANVAS, { dx: 1 }, days, WHEEL_PAUSE_MS);
+  await page.waitForTimeout(BEAT.storyHold);
+  await wheelOver(page, mouse, SEL_GRID_CANVAS, { dy: 1 }, LOWER_ROWS_SUB_ROWS, WHEEL_PAUSE_MS);
+  return days;
 }
 
 async function showSchedule(page, mouse, requested) {
   const visible = await page.locator(SEL_GRID_CANVAS).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS }).then(() => true, () => false);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   const params = new URL(requested).searchParams;
-  const scrolledDays = visible ? await scrollToFirstStoryDay(page, mouse, params.get(DATE_PARAM)) : 0;
+  const scrolledDays = visible ? await scrollToStory(page, mouse, params.get(DATE_PARAM)) : 0;
   return {
     gridVisible: visible,
     scrolledDays,
