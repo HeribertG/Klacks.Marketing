@@ -4061,5 +4061,14 @@
       "beats": {"wishesLead": 800, "wishes": 1700, "open": 3000, "toggleLead": 1000, "bar": 1500, "hoursBefore": 2400, "menu": 1300, "adopted": 1200, "everyDay": 2300, "holidays": 2300, "hoursAfter": 2700, "counted": 2700, "second": 2800, "binding": 3100, "booked": 2600, "list": 3400, "listOpen": 3000},
       "runtimeCaptions": { "hoursBefore": "Intestazione riga: {name} a {hours} h", "hoursAfter": "Intestazione riga: {name} ora a {hours} h", "counted": "Contano solo i {days} giorni lavorativi" }
     }
+  },
+  "mails-availability": {
+    "de": {
+      "messages": [
+        { "text": "Lies bitte die E-Mails vom Team und trag alles ein: Verfügbarkeiten bei den Verfügbarkeiten, Wünsche als Keywords in den Plan." },
+        { "text": "Zeig mir die Verfügbarkeiten.", "sendWhen": "entered" },
+        { "text": "Zeig mir jetzt Bern Objektschutz im Dezember-Plan, mit Verfügbarkeiten und Keywords.", "sendWhen": "availabilityShown" }
+      ]
+    }
   }
 }
