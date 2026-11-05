@@ -295,7 +295,7 @@ async function buildTake(tools, take, still, filter, zoom, file) {
 async function buildMorning(tools, raw, variant, caption, window, file) {
   const m = variant.morning;
   await ffmpeg(tools, ["-i", raw, "-i", caption, "-filter_complex",
-    `[0:v]trim=${m.from}:${m.to},setpts=(PTS-STARTPTS)/${m.speed},fps=${VIDEO_FPS},${cropFilter(m)}scale=1280:720[c];[c][1:v]overlay=0:0:enable='between(t,${window[0]},${window[1]})'[v]`,
+    `[0:v]trim=${m.from}:${m.to},setpts=(PTS-STARTPTS)/${m.speed},fps=${VIDEO_FPS},${m.filter ? `${m.filter},` : ""}${cropFilter(m)}scale=1280:720[c];[c][1:v]overlay=0:0:enable='between(t,${window[0]},${window[1]})'[v]`,
     "-map", "[v]", ...segmentEncode(), file]);
 }
 

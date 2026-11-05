@@ -26,7 +26,7 @@ import { ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
 
 export const VIDEO_MAILS_AVAILABILITY = "mails-availability";
 export const MAILS_VIDEOS = [VIDEO_MAILS_AVAILABILITY];
-export const MAILS_AVAILABILITY_CUES = { inbox: "inbox", request: "request", availability: "availability", schedule: "schedule" };
+export const MAILS_AVAILABILITY_CUES = { request: "request", inbox: "inbox", availability: "availability", schedule: "schedule" };
 export const MAILS_AVAILABILITY_FINAL_HOLD_MS = 5000;
 export const MAILS_VIEWPORT = Object.freeze({ width: 1280, height: 720 });
 
@@ -76,6 +76,8 @@ const LOWER_ROWS_SUB_ROWS = 13;
 const HOVER_CELL_OFFSET = Object.freeze({ x: 45, y: 62 });
 const HOVER_WIGGLE_PX = 2;
 const HOVER_WIGGLE_STEPS = 3;
+const MIXED_CELL_OFFSET = Object.freeze({ x: 19, y: 70 });
+const SEL_PAGE_TOOLTIP = "app-tooltip > div.tooltip";
 const LOG_PREVIEW_CHARS = 220;
 const ALL_HOURS = Array.from({ length: 24 }, (_, hour) => hour);
 const hoursFrom = (first, last) => ALL_HOURS.filter((hour) => hour >= first && hour <= last);
@@ -173,6 +175,22 @@ async function waitForPath(page, visited, pathName) {
   return null;
 }
 
+/**
+ * Rests the visible cursor on Mia's 06-07 column of 7 December (first visible column after the scroll, first row): hour 6 is blocked by
+ * the day rule and hour 7 is available, so the cell shows the minus and the page lists both hours in its tooltip.
+ */
+async function hoverMixedAvailabilityCell(page, mouse) {
+  const box = await page.locator(SEL_AVAILABILITY_CANVAS).boundingBox();
+  if (!box) return false;
+  const target = { x: box.x + MIXED_CELL_OFFSET.x, y: box.y + MIXED_CELL_OFFSET.y };
+  await mouse.moveTo(target, MOVE_NORMAL_MS);
+  await page.mouse.move(target.x + HOVER_WIGGLE_PX, target.y, { steps: HOVER_WIGGLE_STEPS });
+  await page.mouse.move(target.x, target.y, { steps: HOVER_WIGGLE_STEPS });
+  const shown = await page.locator(SEL_PAGE_TOOLTIP).isVisible().catch(() => false);
+  await page.waitForTimeout(BEAT.tooltipHold);
+  return shown;
+}
+
 async function showAvailabilityPage(page, mouse) {
   const visible = await page.locator(SEL_AVAILABILITY_CANVAS).waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS }).then(() => true, () => false);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
@@ -186,7 +204,8 @@ async function showAvailabilityPage(page, mouse) {
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   const availabilityColumns = december ? (FIRST_STORY_DAY - 1) * AVAILABILITY_COLUMNS_PER_DAY + AVAILABILITY_MORNING_COLUMNS : 0;
   await wheelOver(page, mouse, SEL_AVAILABILITY_CANVAS, { dx: 1 }, availabilityColumns, AVAILABILITY_WHEEL_PAUSE_MS);
-  return { canvasVisible: visible, monthClicks: clicks, december, availabilityColumns };
+  const mixedTooltip = december ? await hoverMixedAvailabilityCell(page, mouse) : false;
+  return { canvasVisible: visible, monthClicks: clicks, december, availabilityColumns, mixedTooltip };
 }
 
 /**
@@ -330,6 +349,31 @@ async function openGroupBranch(page, mouse, groupName) {
   await mouse.clickLocator(groupNode, MOVE_NORMAL_MS);
 }
 
+/**
+ * After Sandra's request and Klacksy's answer, shows where the mails came from: the cursor opens the inbox through the nav button
+ * (in-app, so the group chosen for the schedule stays), expands the group branch of the mails assigned to clients and opens Mia's mail,
+ * then reopens the chat if the navigation closed it.
+ */
+async function showReadMails(take) {
+  const { page, mouse, options, captions } = take;
+  await captions?.show(MAILS_AVAILABILITY_CUES.inbox);
+  await mouse.clickLocator(page.locator(SEL_INBOX_NAV_BUTTON), MOVE_NORMAL_MS);
+  await page.locator(SEL_GROUP_TREE_ITEM).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
+  if (new URL(page.url()).pathname !== INBOX_ROUTE) throw new Error(`the inbox button opened ${page.url()}`);
+  await page.waitForTimeout(BEAT.inboxHold);
+  await openGroupBranch(page, mouse, options.groupName ?? MAILS_GROUP_NAME);
+  const mail = page.locator(SEL_EMAIL_ITEM).filter({ hasText: FIRST_MAIL_SENDER }).first();
+  await mail.waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
+  await page.waitForTimeout(BEAT.inboxHold);
+  await mouse.clickLocator(mail, MOVE_NORMAL_MS);
+  await page.waitForTimeout(BEAT.mailHold);
+  if (!(await page.locator(SEL_ASSISTANT_INPUT).isVisible())) {
+    await mouse.clickLocator(page.locator(S.SEL_ASSISTANT_BUTTON), MOVE_NORMAL_MS);
+    await page.locator(SEL_ASSISTANT_INPUT).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
+  }
+  return true;
+}
+
 async function takeMailsAvailability(take) {
   const { page, api, options, recorder, mouse, report, script, captions, viewport, scale } = take;
   const messages = script?.messages ?? [];
@@ -350,18 +394,7 @@ async function takeMailsAvailability(take) {
   });
   try {
     await recorder.start();
-    await captions?.show(MAILS_AVAILABILITY_CUES.inbox);
     await page.waitForTimeout(BEAT.intro);
-    await mouse.clickLocator(page.locator(SEL_INBOX_NAV_BUTTON), MOVE_NORMAL_MS);
-    await page.locator(SEL_GROUP_TREE_ITEM).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
-    if (new URL(page.url()).pathname !== INBOX_ROUTE) throw new Error(`the inbox button opened ${page.url()}`);
-    await page.waitForTimeout(BEAT.inboxHold);
-    await openGroupBranch(page, mouse, options.groupName ?? MAILS_GROUP_NAME);
-    await page.locator(SEL_EMAIL_ITEM).filter({ hasText: FIRST_MAIL_SENDER }).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
-    await page.waitForTimeout(BEAT.inboxHold);
-    await mouse.clickLocator(page.locator(SEL_EMAIL_ITEM).filter({ hasText: FIRST_MAIL_SENDER }).first(), MOVE_NORMAL_MS);
-    await page.waitForTimeout(BEAT.mailHold);
-    report.inboxShown = true;
     await mouse.clickLocator(page.locator(S.SEL_ASSISTANT_BUTTON), MOVE_NORMAL_MS);
     await page.locator(SEL_ASSISTANT_INPUT).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
     for (const message of messages) {
@@ -387,6 +420,7 @@ async function takeMailsAvailability(take) {
       log(`calls: ${turn.calls.map((c) => `${c.name}${JSON.stringify(c.parameters)}`).join(", ") || "-"}; answer: ${turn.content.replace(/\s+/g, " ").slice(0, LOG_PREVIEW_CHARS)}`);
       const pathName = pageOf(turn);
       if (pathName) report.pages.push(await showPage(page, mouse, pathName, sentTurns(report.turns).length, visited));
+      if (!report.inboxShown) report.inboxShown = await showReadMails(take);
     }
     report.posterAt = ScreenRecorder.now();
     await page.waitForTimeout(take.finalHoldMs ?? MAILS_AVAILABILITY_FINAL_HOLD_MS);
