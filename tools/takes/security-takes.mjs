@@ -24,6 +24,7 @@ import * as D from "../lib/security-demo.mjs";
 import { ERROR_TOAST_PATTERN } from "../lib/ui-texts.mjs";
 import * as P from "../lib/security-plan-check.mjs";
 import { clickSelector, decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
+import { showAvailabilityPage } from "./mails-takes.mjs";
 
 export const VIDEO_SECURITY_MONTH_PLAN = "security-month-plan";
 export const SECURITY_VIDEOS = [VIDEO_SECURITY_MONTH_PLAN];
@@ -31,10 +32,13 @@ export const SECURITY_MONTH_PLAN_CUES = Object.freeze({
   cut: "cut",
   team: "team",
   targets: "targets",
+  availability: "availability",
   wishes: "wishes",
   run: "run",
   proposal: "proposal",
+  mia: "mia",
   free: "free",
+  blocked: "blocked",
   vacation: "vacation",
   filled: "filled",
   overview: "overview",
@@ -49,6 +53,9 @@ const SEL_CUT_ROWS = "app-cut-shift-table tbody tr";
 const SEL_WIZARD_BUTTON = "#schedule-wizard-btn";
 const SEL_WIZARD_DROPDOWN = ".wizard-dropdown";
 const SEL_COMMANDS_TOGGLE = "#schedule-commands-toggle";
+const SEL_AVAILABILITY_TOGGLE = "#schedule-availability-check-btn";
+const SEL_OPEN_AVAILABILITY = "#open-availability";
+const AVAILABILITY_API = "/api/backend/ClientAvailabilities";
 const SEL_BANNER = "#scenario-banner";
 const SEL_SUMMARY_BUTTON = "#scenario-banner-summary-btn";
 const SEL_SUMMARY_TOTAL = "#scenario-summary-total";
@@ -67,11 +74,17 @@ const SHIFT_LIST_PAGE_SIZE = 100;
 const OBJECT_FIRST_PART = "OBT";
 const CUT = Number.POSITIVE_INFINITY;
 const FAST_FACTOR_WIZARD = 40;
+const FAST_FACTOR_TRAVEL = 8;
 const ENV_ACCEPT_GAP = "KLACKS_SECURITY_ACCEPT_GAP";
 const TEAM_SIZE = 10;
 const PLANNED_SHIFTS = 6;
 const CUT_ROWS_PER_PART = 2;
 const VACATION_FIRST_ROW_NAME = "Amir";
+const WINDOW_ROW_NAME = "Mia";
+const BLOCKED_ROW_NAME = "Priya";
+const HOVER_CELL_X_PX = 45;
+const HOVER_WIGGLE_PX = 2;
+const HOVER_WIGGLE_STEPS = 3;
 const CUT_PARTS = 3;
 const VIEWPORT_OVERSHOOT_PX = 40;
 const KEY_ARROW_RIGHT = "ArrowRight";
@@ -79,13 +92,13 @@ const SLIDER_STEPS_TO_DETAIL = 5;
 const SLIDER_KEY_PAUSE_MS = 130;
 const SLIDER_DETAIL_VALUE = 100;
 const SLIDER_OVERVIEW_VALUE = 50;
-const WHEEL = Object.freeze({ deltaPx: 60, pauseMs: 70, columnsToMidMonth: 11, columnsToMonthEnd: 11, columnsHome: 22, maxRowTicks: 30, overviewTickPx: 25 });
+const WHEEL = Object.freeze({ deltaPx: 60, pauseMs: 70, columnsToWishes: 5, columnsToWindowDays: 1, columnsToFreeDay: 5, columnsToBlockedDays: 8, columnsToMonthEnd: 3, columnsHome: 22, maxRowTicks: 30, overviewTickPx: 25 });
 const GRID_TOP_MARGIN_PX = 44;
 const SAVE_TIMEOUT_MS = 30000;
 const BANNER_TIMEOUT_MS = 60000;
 const HTTP_ERROR_FIRST = 400;
 const SEL_DANGER_TOAST = "app-toasts ngb-toast.bg-danger";
-const BEAT = { open: 600, cut: 4500, team: 2200, slider: 500, targets: 3200, toggle: 400, wishes: 2200, run: 1000, proposal: 2400, free: 3000, vacation: 3000, scrolled: 500, filled: 3500, overview: 2200, summary: 4000, closed: 400, acceptLead: 800 };
+const BEAT = { open: 600, cut: 4500, team: 2200, slider: 500, targets: 3200, availability: 800, toggle: 400, wishes: 3200, run: 1000, proposal: 2400, mia: 1500, free: 3000, blocked: 3500, vacation: 3000, scrolled: 500, filled: 3500, overview: 2200, summary: 4000, closed: 400, acceptLead: 800, tooltip: 3000 };
 const MOVE = { short: 400, normal: 650 };
 
 const log = (...args) => console.log("  ", ...args);
@@ -155,8 +168,42 @@ async function checkDecember(take, site, filter) {
   if (works !== 0) throw new Error(`December holds ${works} works - use a fresh copy of the stage database`);
   const commands = rowsOf(data, P.ENTRY_TYPE_COMMAND).length;
   if (commands !== site.commands.length) throw new Error(`December holds ${commands} planning commands instead of ${site.commands.length}`);
-  report.stage = { employees: data.clients.map(fullName), breaks: rowsOf(data, P.ENTRY_TYPE_BREAK).length, commands, api: api.constructor.name };
-  return { decemberFilter, memberIds: memberIdsOf(data.clients, site), vacationRow: rowIndexOf(data.clients, VACATION_FIRST_ROW_NAME) };
+  const memberIds = memberIdsOf(data.clients, site);
+  const availability = await checkAvailability(take, site, memberIds);
+  report.stage = { employees: data.clients.map(fullName), breaks: rowsOf(data, P.ENTRY_TYPE_BREAK).length, commands, availability, api: api.constructor.name };
+  return {
+    decemberFilter,
+    memberIds,
+    vacationRow: rowIndexOf(data.clients, VACATION_FIRST_ROW_NAME),
+    windowRow: rowIndexOf(data.clients, WINDOW_ROW_NAME),
+    blockedRow: rowIndexOf(data.clients, BLOCKED_ROW_NAME),
+  };
+}
+
+/** The availabilities of the story must be stored exactly (monthplan-demo/seed-m3-availability.sql on the take copy), or the proof beats would show nothing. */
+async function checkAvailability(take, site, memberIds) {
+  const rows = (await take.api.json(`${AVAILABILITY_API}?startDate=${D.PERIOD.from}&endDate=${D.PERIOD.until}`)) ?? [];
+  const problems = [];
+  for (const entry of site.availability) {
+    const day = rows.filter((row) => row.clientId === memberIds[entry.key] && dateKey(row.date) === entry.day);
+    const wanted = entry.blocked ? D.AVAILABILITY_ROWS_PER_BLOCKED_DAY : D.AVAILABILITY_ROWS_PER_WINDOW_DAY;
+    const matching = day.filter((row) => row.isAvailable === !entry.blocked).length;
+    if (day.length !== wanted || matching !== wanted) problems.push(`${entry.key} ${entry.day}: ${matching}/${day.length} rows`);
+  }
+  if (problems.length > 0) throw new Error(`the availabilities of the story are missing (run monthplan-demo/seed-m3-availability.sql on the take copy): ${problems.join("; ")}`);
+  return rows.length;
+}
+
+/** Rests the visible cursor on the first visible day of a row, so the schedule shows its availability tooltip; a small wiggle makes the grid see the move. */
+async function hoverFirstDayOf(take, rowIndex) {
+  const { page, mouse } = take;
+  const grid = await gridBox(page);
+  const row = (await rowBoxes(page))[rowIndex];
+  const target = { x: grid.x + HOVER_CELL_X_PX, y: row.top + row.height / HALF };
+  await mouse.moveTo(target, MOVE.normal);
+  await page.mouse.move(target.x + HOVER_WIGGLE_PX, target.y, { steps: HOVER_WIGGLE_STEPS });
+  await page.mouse.move(target.x, target.y, { steps: HOVER_WIGGLE_STEPS });
+  await page.waitForTimeout(BEAT.tooltip);
 }
 
 /** Minimum zoom and collapsed shift area: the only layout in which all ten rows fit into 720 px. Runs inside a cut region. */
@@ -375,6 +422,8 @@ async function verifyAccepted(take, ctx, site, decemberFilter, memberIds) {
   report.perPerson = evaluation.perPerson.map((person) => ({ member: person.member, guaranteed: person.target, shown: person.headerPeriodHours, works: person.works, nights: person.nights, longestRun: person.longestRun }));
   if (evaluation.vacationFindings.length > 0) flag(report, `vacation did not hold: ${evaluation.vacationFindings.join("; ")}`);
   if (evaluation.commandFindings.length > 0) flag(report, `planning commands did not hold: ${evaluation.commandFindings.join("; ")}`);
+  report.availabilityDays = evaluation.availability.days;
+  if (evaluation.availability.findings.length > 0) flag(report, `availabilities did not hold: ${evaluation.availability.findings.join("; ")}`);
 }
 
 export async function takeSecurityMonthPlan(take) {
@@ -383,7 +432,7 @@ export async function takeSecurityMonthPlan(take) {
   const cues = SECURITY_MONTH_PLAN_CUES;
   await checkStage(take, site);
   const { filter } = await openSchedule(page, options);
-  const { decemberFilter, memberIds, vacationRow } = await checkDecember(take, site, filter);
+  const { decemberFilter, memberIds, vacationRow, windowRow, blockedRow } = await checkDecember(take, site, filter);
   const orderId = await sealedObjectOrderId(api);
   await page.goto(`${options.uiUrl}${CUT_ROUTE}/${orderId}`, { timeout: S.NAV_TIMEOUT_MS, waitUntil: "domcontentloaded" });
   await page.locator(SEL_CUT_ROWS).nth(CUT_PARTS * CUT_ROWS_PER_PART - 1).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
@@ -410,12 +459,25 @@ export async function takeSecurityMonthPlan(take) {
     await setRowSlider(take, true);
     await page.waitForTimeout(BEAT.targets);
 
+    await captions.show(cues.availability);
+    await clickSelector(take, SEL_OPEN_AVAILABILITY, MOVE.normal);
+    report.availabilityPage = await showAvailabilityPage(page, mouse, take.culture, { begin: () => recorder.beginFast(FAST_FACTOR_TRAVEL), end: () => recorder.endFast() });
+    if (!report.availabilityPage.december || !report.availabilityPage.mixedTooltip) flag(report, `the availability page did not show Mia's hours in December: ${JSON.stringify(report.availabilityPage)}`);
+    await page.waitForTimeout(BEAT.availability);
+    await recorder.beginFast(CUT);
+    await captions.hide();
+    await openSchedule(page, options);
+    await fitAllRows(take);
+    await watchToasts(page);
+    await recorder.endFast();
+
     await captions.show(cues.wishes);
-    await setRowSlider(take, false);
     await clickSelector(take, SEL_COMMANDS_TOGGLE, MOVE.normal);
     await page.waitForTimeout(BEAT.toggle);
-    await scrollColumns(take, WHEEL.columnsToMidMonth, 1);
-    await measure(take, "commands on, end of the month");
+    await clickSelector(take, SEL_AVAILABILITY_TOGGLE, MOVE.normal);
+    await page.waitForTimeout(BEAT.toggle);
+    await scrollColumns(take, WHEEL.columnsToWishes, 1);
+    await measure(take, "commands and availability on");
     await page.waitForTimeout(BEAT.wishes);
 
     await captions.show(cues.run);
@@ -430,19 +492,36 @@ export async function takeSecurityMonthPlan(take) {
     report.realWorksBeforeAccept = worksIn(await api.schedule(decemberFilter), D.PERIOD.from, D.PERIOD.until).length;
     if (report.realWorksBeforeAccept !== 0) flag(report, "the real December is not empty before the accept");
 
+    report.availabilityInProposal = P.evaluatePlan(await api.schedule(scenarioFilter(decemberFilter, scenario.token)), site, memberIds, null).availability;
+    if (report.availabilityInProposal.findings.length > 0) flag(report, `the proposal breaks availabilities: ${report.availabilityInProposal.findings.join("; ")}`);
+
     await captions.show(cues.proposal);
     await page.waitForTimeout(BEAT.proposal);
-    await captions.show(cues.free);
+    await captions.show(cues.mia);
     await setRowSlider(take, true);
+    await scrollColumns(take, WHEEL.columnsToWindowDays, 1);
+    if (windowRow !== 0) await rowAtTop(take, windowRow);
+    await measure(take, "detail, Mia's window days");
+    await page.waitForTimeout(BEAT.mia);
+    await hoverFirstDayOf(take, windowRow);
+    await captions.show(cues.free);
+    await scrollColumns(take, WHEEL.columnsToFreeDay, 1);
     await measure(take, "detail, FREE day");
     await page.waitForTimeout(BEAT.free);
+    await captions.show(cues.blocked);
+    await rowAtTop(take, blockedRow);
+    await scrollColumns(take, WHEEL.columnsToBlockedDays, 1);
+    await measure(take, "detail, Priya's blocked days");
+    await page.waitForTimeout(BEAT.blocked);
     await captions.show(cues.vacation);
     await scrollColumns(take, WHEEL.columnsToMonthEnd, 1);
+    await rowsAtTop(take);
     await rowAtTop(take, vacationRow);
     await page.waitForTimeout(BEAT.vacation);
 
     await recorder.beginFast(CUT);
     await clickSelector(take, SEL_COMMANDS_TOGGLE, MOVE.short);
+    await clickSelector(take, SEL_AVAILABILITY_TOGGLE, MOVE.short);
     await scrollColumns(take, WHEEL.columnsHome, -1);
     await rowsAtTop(take);
     await recorder.endFast();

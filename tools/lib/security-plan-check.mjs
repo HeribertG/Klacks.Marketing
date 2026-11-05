@@ -73,6 +73,25 @@ function longestRun(works) {
   return longest;
 }
 
+/** A blocked day holds no work; a window day holds only works that start and end inside the window (the AutoWizard rule: the whole shift lies in the available hours). */
+export function availabilityFindings(data, site, memberIds) {
+  const findings = [];
+  const days = [];
+  for (const entry of site.availability ?? []) {
+    const works = worksOf(data, memberIds[entry.key]).filter((work) => dayOf(work) === entry.day);
+    const shown = works.map((work) => `${work.startTime.slice(0, 5)}-${work.endTime.slice(0, 5)}`);
+    days.push(`${entry.key} ${entry.day}: ${shown.join(",") || "frei"}`);
+    const held = entry.blocked
+      ? works.length === 0
+      : works.every((work) => {
+        const span = spanOf(work);
+        return span.start >= entry.fromHour && span.start + span.length <= entry.untilHour;
+      });
+    if (!held) findings.push(`${entry.key} ${entry.day} ${entry.blocked ? "blocked" : `${entry.fromHour}-${entry.untilHour}`}: ${shown.join(",")}`);
+  }
+  return { findings, days };
+}
+
 function commandFindings(data, site, memberIds) {
   const findings = [];
   for (const command of site.commands) {
@@ -176,6 +195,7 @@ export function evaluatePlan(data, site, memberIds, periodHours) {
       works: days.map((day) => `${day}: ${worksOf(data, memberIds[key]).filter((work) => dayOf(work) === day).map((work) => `${work.startTime.slice(0, 5)}-${work.endTime.slice(0, 5)}`).join(",") || "frei"}`),
     })),
     commandFindings: commandFindings(data, site, memberIds),
+    availability: availabilityFindings(data, site, memberIds),
     vacationFindings: vacation.findings,
     vacationCover: vacation.cover,
     perPerson,

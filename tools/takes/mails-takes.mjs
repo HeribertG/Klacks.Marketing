@@ -192,10 +192,15 @@ async function hoverMixedAvailabilityCell(page, mouse) {
   return shown;
 }
 
-async function showAvailabilityPage(page, mouse, culture) {
+/**
+ * Shows December on the availability page, wheels to 7 December and rests on Mia's mixed cell. travel.begin / travel.end (optional, async) wrap the way to
+ * that day (month clicks and wheel), so a take can time-compress it; the hover itself is never compressed.
+ */
+export async function showAvailabilityPage(page, mouse, culture, travel = {}) {
   const monthLabel = decemberLabel(culture);
   const visible = await page.locator(SEL_AVAILABILITY_CANVAS).waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS }).then(() => true, () => false);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
+  await travel.begin?.();
   let clicks = 0;
   while (visible && clicks < MAX_MONTH_CLICKS && !(await page.locator(SEL_PERIOD_LABEL).innerText().catch(() => "")).toLowerCase().includes(monthLabel)) {
     await mouse.clickLocator(page.locator(SEL_NEXT_PERIOD), MOVE_NORMAL_MS);
@@ -206,6 +211,7 @@ async function showAvailabilityPage(page, mouse, culture) {
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   const availabilityColumns = december ? (FIRST_STORY_DAY - 1) * AVAILABILITY_COLUMNS_PER_DAY + AVAILABILITY_MORNING_COLUMNS : 0;
   await wheelOver(page, mouse, SEL_AVAILABILITY_CANVAS, { dx: 1 }, availabilityColumns, AVAILABILITY_WHEEL_PAUSE_MS);
+  await travel.end?.();
   const mixedTooltip = december ? await hoverMixedAvailabilityCell(page, mouse) : false;
   return { canvasVisible: visible, monthClicks: clicks, december, availabilityColumns, mixedTooltip };
 }

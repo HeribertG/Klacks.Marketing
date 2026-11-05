@@ -254,7 +254,7 @@ const CHAT_VIDEO_NOISE_CSS = `${VIDEO_NOISE_CSS}
   app-toasts { display: none !important; }
 `;
 
-// The mails take shows the schedule's own cell tooltip (Klacks' app-tooltip, the availability hours); every other tooltip stays hidden.
+// The mails take and the month plan take (M3) show Klacks' own cell tooltip (app-tooltip, the availability hours); every other tooltip stays hidden.
 const MAILS_VIDEO_NOISE_CSS = `
   :not(app-tooltip) > .tooltip, .mat-mdc-tooltip, ngb-tooltip-window, .badge-mail, .mail-badge, app-company-clock-warning { display: none !important; }
   * { caret-color: transparent !important; }
@@ -568,7 +568,7 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     initScripts: SPITEX_INIT_SCRIPTS,
   },
   [VIDEO_SECURITY_MONTH_PLAN]: {
-    period: DECEMBER, viewport: SECURITY_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: SECURITY_TAKE_RUNNERS[VIDEO_SECURITY_MONTH_PLAN],
+    period: DECEMBER, viewport: SECURITY_VIEWPORT, css: MAILS_VIDEO_NOISE_CSS, run: SECURITY_TAKE_RUNNERS[VIDEO_SECURITY_MONTH_PLAN],
     captionCues: Object.values(SECURITY_MONTH_PLAN_CUES), finalHoldMs: SECURITY_MONTH_PLAN_FINAL_HOLD_MS,
   },
   [VIDEO_REPLACEMENT_R1]: {

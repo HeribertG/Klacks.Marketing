@@ -180,6 +180,17 @@ const BERN_COMMANDS = Object.freeze([
   Object.freeze({ key: "mia", keyword: COMMAND_FREE, day: "2026-12-18" }),
 ]);
 
+/**
+ * Work availabilities of the clip M3 v2, seeded into the take copy by monthplan-demo/seed-m3-availability.sql (same rows): Mia only 07-15 h on 7-9 December,
+ * Priya not available on 21-23 December. None of these days carries a planning command or a vacation, so the AutoWizard has to hold them.
+ */
+const BERN_AVAILABILITY = Object.freeze([
+  ...datesBetween("2026-12-07", "2026-12-09").map((day) => Object.freeze({ key: "mia", day, fromHour: 7, untilHour: 15 })),
+  ...datesBetween("2026-12-21", "2026-12-23").map((day) => Object.freeze({ key: "priya", day, blocked: true })),
+]);
+export const AVAILABILITY_ROWS_PER_WINDOW_DAY = 8;
+export const AVAILABILITY_ROWS_PER_BLOCKED_DAY = 24;
+
 export const SITES = Object.freeze({
   bern: Object.freeze({
     key: "bern",
@@ -187,6 +198,7 @@ export const SITES = Object.freeze({
     team: BERN_TEAM,
     vacations: Object.freeze([CLARA_VACATION, AMIR_VACATION]),
     commands: BERN_COMMANDS,
+    availability: BERN_AVAILABILITY,
     stages: Object.freeze(["m1", "m2", "m3", "s1"]),
   }),
   biel: Object.freeze({
