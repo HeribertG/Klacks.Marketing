@@ -26,7 +26,7 @@ import { ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
 
 export const VIDEO_MAILS_AVAILABILITY = "mails-availability";
 export const MAILS_VIDEOS = [VIDEO_MAILS_AVAILABILITY];
-export const MAILS_AVAILABILITY_CUES = { request: "request", availability: "availability", schedule: "schedule" };
+export const MAILS_AVAILABILITY_CUES = { inbox: "inbox", request: "request", availability: "availability", schedule: "schedule" };
 export const MAILS_AVAILABILITY_FINAL_HOLD_MS = 5000;
 export const MAILS_VIEWPORT = Object.freeze({ width: 1280, height: 720 });
 
@@ -43,6 +43,15 @@ const AVAILABILITY_API = "/api/backend/ClientAvailabilities";
 const DECEMBER = Object.freeze({ from: "2026-12-01", until: "2026-12-31", month: 12 });
 const AVAILABILITY_ROUTE = "/workplace/client-availability";
 const SCHEDULE_ROUTE = "/workplace/schedule";
+const INBOX_ROUTE = "/workplace/inbox";
+const SEL_EMAIL_ITEM = "app-inbox-list .email-item";
+const SEL_INBOX_NAV_BUTTON = "app-nav .inbox-button";
+const SEL_GROUP_TREE_ITEM = "app-inbox-folder-list .group-tree-item";
+const SEL_GROUP_TREE_NAME = ".group-tree-name";
+const SEL_COLLAPSED_TOGGLE = "app-inbox-folder-list .toggle-icon:has(app-icon-angle-right)";
+const MAILS_GROUP_NAME = "Bern Objektschutz";
+const MAX_TREE_EXPAND_ROUNDS = 6;
+const FIRST_MAIL_SENDER = "Mia Baer";
 const SEL_AVAILABILITY_CANVAS = "#availability-surface-canvas";
 const SEL_NEXT_PERIOD = "app-client-availability-header button[aria-label=\"next period\"]";
 const SEL_PERIOD_LABEL = "app-client-availability-header";
@@ -54,7 +63,7 @@ const DATE_PARAM = "date";
 const PARAM_ON = "true";
 const MAX_MONTH_CLICKS = 2;
 
-const BEAT = { intro: 1200, pageHold: 4500, pagePoll: 250, afterClick: 1200, storyHold: 3000 };
+const BEAT = { intro: 1200, pageHold: 4500, pagePoll: 250, afterClick: 1200, storyHold: 1500, tooltipHold: 3500, inboxHold: 2500, mailHold: 3500 };
 const PAGE_TIMEOUT_MS = 20000;
 const MOVE_NORMAL_MS = 700;
 const FIRST_STORY_DAY = 7;
@@ -64,6 +73,9 @@ const AVAILABILITY_WHEEL_PAUSE_MS = 25;
 const AVAILABILITY_COLUMNS_PER_DAY = 12;
 const AVAILABILITY_MORNING_COLUMNS = 3;
 const LOWER_ROWS_SUB_ROWS = 13;
+const HOVER_CELL_OFFSET = Object.freeze({ x: 45, y: 62 });
+const HOVER_WIGGLE_PX = 2;
+const HOVER_WIGGLE_STEPS = 3;
 const LOG_PREVIEW_CHARS = 220;
 const ALL_HOURS = Array.from({ length: 24 }, (_, hour) => hour);
 const hoursFrom = (first, last) => ALL_HOURS.filter((hour) => hour >= first && hour <= last);
@@ -193,14 +205,30 @@ async function wheelOver(page, mouse, selector, { dx = 0, dy = 0 }, ticks, pause
 }
 
 /**
- * The schedule opens on the first day of the period, while the story starts on 7 December: the grid is wheeled right until that
+ * Rests the visible cursor on Mia's first green cell (first visible day column, first row; Mia is the first person of the group) so
+ * the schedule shows the availability tooltip with her hours. A small wiggle at the end makes sure the grid sees a mouse move there.
+ */
+async function hoverFirstAvailabilityCell(page, mouse) {
+  const box = await page.locator(SEL_GRID_CANVAS).first().boundingBox();
+  if (!box) return;
+  const target = { x: box.x + HOVER_CELL_OFFSET.x, y: box.y + HOVER_CELL_OFFSET.y };
+  log(`hover grid ${JSON.stringify(box)} at ${JSON.stringify(target)}`);
+  await mouse.moveTo(target, MOVE_NORMAL_MS);
+  await page.mouse.move(target.x + HOVER_WIGGLE_PX, target.y, { steps: HOVER_WIGGLE_STEPS });
+  await page.mouse.move(target.x, target.y, { steps: HOVER_WIGGLE_STEPS });
+  await page.waitForTimeout(BEAT.tooltipHold);
+}
+
+/**
+ * The schedule opens the whole month and shows its first day, whatever December day Klacksy passes, while the story starts on 7 December: the grid is wheeled right until that
  * day is the first column (Mia's hours shade 7-9 Dec), held, then wheeled down until Priya's row is on top, so Lena's NIGHT keywords
  * (7-11 Dec) and Jonas's row come into view.
  */
-async function scrollToStory(page, mouse, openedDate) {
-  const openedDay = Number((openedDate ?? DECEMBER.from).slice(DAY_OF_MONTH_OFFSET));
-  const days = Math.max(0, FIRST_STORY_DAY - openedDay);
+async function scrollToStory(page, mouse) {
+  const periodFirstDay = Number(DECEMBER.from.slice(DAY_OF_MONTH_OFFSET));
+  const days = FIRST_STORY_DAY - periodFirstDay;
   await wheelOver(page, mouse, SEL_GRID_CANVAS, { dx: 1 }, days, WHEEL_PAUSE_MS);
+  await hoverFirstAvailabilityCell(page, mouse);
   await page.waitForTimeout(BEAT.storyHold);
   await wheelOver(page, mouse, SEL_GRID_CANVAS, { dy: 1 }, LOWER_ROWS_SUB_ROWS, WHEEL_PAUSE_MS);
   return days;
@@ -210,7 +238,7 @@ async function showSchedule(page, mouse, requested) {
   const visible = await page.locator(SEL_GRID_CANVAS).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS }).then(() => true, () => false);
   await page.waitForTimeout(CANVAS_SETTLE_MS);
   const params = new URL(requested).searchParams;
-  const scrolledDays = visible ? await scrollToStory(page, mouse, params.get(DATE_PARAM)) : 0;
+  const scrolledDays = visible ? await scrollToStory(page, mouse) : 0;
   return {
     gridVisible: visible,
     scrolledDays,
@@ -287,6 +315,21 @@ function fullViewportCrop(viewport, scale) {
   return { x: 0, y: 0, width: even(viewport.width), height: even(viewport.height) };
 }
 
+/**
+ * Opens the group branch of the inbox (reached in-app through the nav button, so the group selected for the schedule stays for the later pages) (mails of clients whose address is one of their e-mail communications): expands collapsed
+ * tree nodes with the visible cursor until the group is visible, then selects it, so the list shows the four team mails.
+ */
+async function openGroupBranch(page, mouse, groupName) {
+  const groupNode = page.locator(SEL_GROUP_TREE_ITEM).filter({ has: page.locator(SEL_GROUP_TREE_NAME, { hasText: groupName }) }).first();
+  for (let round = 0; round < MAX_TREE_EXPAND_ROUNDS && !(await groupNode.isVisible()); round++) {
+    const collapsed = page.locator(SEL_COLLAPSED_TOGGLE).first();
+    if (!(await collapsed.isVisible())) break;
+    await mouse.clickLocator(collapsed, MOVE_NORMAL_MS);
+    await page.waitForTimeout(BEAT.afterClick);
+  }
+  await mouse.clickLocator(groupNode, MOVE_NORMAL_MS);
+}
+
 async function takeMailsAvailability(take) {
   const { page, api, options, recorder, mouse, report, script, captions, viewport, scale } = take;
   const messages = script?.messages ?? [];
@@ -307,7 +350,18 @@ async function takeMailsAvailability(take) {
   });
   try {
     await recorder.start();
+    await captions?.show(MAILS_AVAILABILITY_CUES.inbox);
     await page.waitForTimeout(BEAT.intro);
+    await mouse.clickLocator(page.locator(SEL_INBOX_NAV_BUTTON), MOVE_NORMAL_MS);
+    await page.locator(SEL_GROUP_TREE_ITEM).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
+    if (new URL(page.url()).pathname !== INBOX_ROUTE) throw new Error(`the inbox button opened ${page.url()}`);
+    await page.waitForTimeout(BEAT.inboxHold);
+    await openGroupBranch(page, mouse, options.groupName ?? MAILS_GROUP_NAME);
+    await page.locator(SEL_EMAIL_ITEM).filter({ hasText: FIRST_MAIL_SENDER }).first().waitFor({ state: "visible", timeout: PAGE_TIMEOUT_MS });
+    await page.waitForTimeout(BEAT.inboxHold);
+    await mouse.clickLocator(page.locator(SEL_EMAIL_ITEM).filter({ hasText: FIRST_MAIL_SENDER }).first(), MOVE_NORMAL_MS);
+    await page.waitForTimeout(BEAT.mailHold);
+    report.inboxShown = true;
     await mouse.clickLocator(page.locator(S.SEL_ASSISTANT_BUTTON), MOVE_NORMAL_MS);
     await page.locator(SEL_ASSISTANT_INPUT).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
     for (const message of messages) {

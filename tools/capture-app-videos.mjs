@@ -254,6 +254,13 @@ const CHAT_VIDEO_NOISE_CSS = `${VIDEO_NOISE_CSS}
   app-toasts { display: none !important; }
 `;
 
+// The mails take shows the schedule's own cell tooltip (Klacks' app-tooltip, the availability hours); every other tooltip stays hidden.
+const MAILS_VIDEO_NOISE_CSS = `
+  :not(app-tooltip) > .tooltip, .mat-mdc-tooltip, ngb-tooltip-window, .badge-mail, .mail-badge, app-company-clock-warning { display: none !important; }
+  * { caret-color: transparent !important; }
+  app-toasts { display: none !important; }
+`;
+
 const OCTOBER = { year: 2026, month: 10, isoWeek: 41 };
 const NOVEMBER = { year: 2026, month: 11, isoWeek: 45 };
 const DECEMBER = { year: 2026, month: 12, isoWeek: 50 };
@@ -547,7 +554,7 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     initScripts: ORDER_REVIEW_INIT_SCRIPTS,
   },
   [VIDEO_MAILS_AVAILABILITY]: {
-    period: DECEMBER, viewport: MAILS_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: MAILS_TAKE_RUNNERS[VIDEO_MAILS_AVAILABILITY],
+    period: DECEMBER, viewport: MAILS_VIEWPORT, css: MAILS_VIDEO_NOISE_CSS, run: MAILS_TAKE_RUNNERS[VIDEO_MAILS_AVAILABILITY],
     needsScript: true, captionCues: Object.values(MAILS_AVAILABILITY_CUES), finalHoldMs: MAILS_AVAILABILITY_FINAL_HOLD_MS,
   },
   [VIDEO_SPITEX_ORDERS_TOUR]: {

@@ -1,7 +1,10 @@
 -- Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 -- Seeds the e-mail story of the clip "Mails → Verfügbarkeiten + Keywords" into a copy of klacks_marketing_security_bern_m2:
 -- four employees of "Bern Objektschutz" get a private e-mail address and send one mail each (two availabilities, two work wishes for December 2026).
--- The mails are already processed (processed_at set) and sit in the folder of mails assigned to a client, so no background analysis acts on them before Klacksy does.
+-- The senders' addresses are e-mail communications of the clients, so the mails sit unread in the folder of mails assigned to a client and
+-- the inbox page shows them in its group branch (Bern Objektschutz); the clip opens that branch first; processed_at is set and the recording API runs without
+-- background services, so no analysis acts on them before Klacksy does. The inbox page needs a configured incoming mail account: the demo gets a
+-- placeholder account (example.com, no real password); the recording API never polls it (EmailPolling is off).
 -- Idempotent: rows are keyed by message_id and by the e-mail address of the client.
 
 BEGIN;
@@ -32,7 +35,11 @@ INSERT INTO received_emails (id, message_id, imap_uid, folder, source_imap_folde
 SELECT gen_random_uuid(), '<story-' || m.uid || '@example.com>', m.uid, 'client-assigned', 'INBOX', m.address, m.first_name || ' ' || m.last_name,
        'planung@example.com', m.subject, m.body, m.received, false, false, now(), false, m.received, false
 FROM story_mail m
-ON CONFLICT (message_id) DO NOTHING;
+ON CONFLICT (message_id) DO UPDATE SET folder = EXCLUDED.folder, is_read = false;
+
+UPDATE settings SET value = v.value
+FROM (VALUES ('incomingserver', 'imap.example.com'), ('incomingserverUsername', 'planung@example.com'), ('incomingserverPassword', 'demo-placeholder')) AS v(type, value)
+WHERE settings.type = v.type AND coalesce(settings.value, '') = '';
 
 SELECT c.first_name, c.name, c.id_number, x.value
 FROM communication x JOIN client c ON c.id = x.client_id

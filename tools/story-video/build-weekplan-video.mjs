@@ -273,7 +273,7 @@ async function buildRaw(tools, raw, variant, caps, windows, file) {
   const joined = parts.some((p) => p.clip) ? joinedParts(raw, parts) : null;
   const inputs = joined?.inputs ?? ["-i", raw];
   const chain = joined?.chain ?? [`[0:v]fps=${VIDEO_FPS},scale=1280:720,split=${parts.length}${parts.map((_, i) => `[s${i}]`).join("")}`,
-    ...parts.map((p, i) => `[s${i}]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS}[p${i}]`),
+    ...parts.map((p, i) => `[s${i}]trim=${p.from}:${p.to},setpts=(PTS-STARTPTS)/${p.speed},fps=${VIDEO_FPS}${p.filter ? `,${p.filter}` : ""}[p${i}]`),
     `${parts.map((_, i) => `[p${i}]`).join("")}concat=n=${parts.length}:v=1:a=0[v0]`];
   const firstCaption = inputs.length / 2;
   keys.forEach((k, i) => chain.push(`[v${i}][${firstCaption + i}:v]overlay=0:0:enable='between(t,${windows[k][0]},${windows[k][1]})'[v${i + 1}]`));
