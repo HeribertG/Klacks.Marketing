@@ -47,6 +47,9 @@
  * records at 1280x720 and reads its people, nights and beats from capture-app-videos.scripts.json; its header states the publishable criterion.
  * The wishes take monthplan-wishes (clip M1 "Ferienwunsch wird Ferien") lives in takes/monthplan-wishes-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_m1, --group-id of "Bern Objektschutz",
  * records at 1280x720 and reads its beats from capture-app-videos.scripts.json; its header states the publishable criterion.
+ * The ERP take erp-import (clip "Bestellungen aus dem ERP, ohne Abtippen") lives in takes/erp-takes.mjs; it needs the native recording backend of
+ * erp-demo/start-erp-recording-api.ps1 on a throw-away copy of klacks_marketing_security_bern_m2, records at 1280x720 with toasts visible and reads its
+ * chat messages from capture-app-videos.scripts.json; its header states the publishable criterion.
  * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands,scenario-variants  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
@@ -206,6 +209,16 @@ import {
   MONTHPLAN_WISHES_VIEWPORT,
   VIDEO_MONTHPLAN_WISHES,
 } from "./takes/monthplan-wishes-takes.mjs";
+import {
+  ERP_IMPORT_CUES,
+  ERP_IMPORT_FINAL_HOLD_MS,
+  ERP_INIT_SCRIPTS,
+  ERP_TAKE_RUNNERS,
+  ERP_VIDEOS,
+  ERP_VIDEO_NOISE_CSS,
+  ERP_VIEWPORT,
+  VIDEO_ERP_IMPORT,
+} from "./takes/erp-takes.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(toolsDir, "..");
@@ -220,7 +233,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS, ...MONTHPLAN_WISHES_VIDEOS, ...MAILS_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS, ...MONTHPLAN_WISHES_VIDEOS, ...MAILS_VIDEOS, ...ERP_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -552,6 +565,11 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     period: NOVEMBER, viewport: ORDER_REVIEW_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: ORDER_REVIEW_TAKE_RUNNERS[VIDEO_SIMPLE_ORDER_REVIEW],
     needsScript: true, captionCues: Object.values(SIMPLE_ORDER_REVIEW_CUES), finalHoldMs: SIMPLE_ORDER_REVIEW_FINAL_HOLD_MS,
     initScripts: ORDER_REVIEW_INIT_SCRIPTS,
+  },
+  [VIDEO_ERP_IMPORT]: {
+    period: DECEMBER, viewport: ERP_VIEWPORT, css: ERP_VIDEO_NOISE_CSS, run: ERP_TAKE_RUNNERS[VIDEO_ERP_IMPORT],
+    needsScript: true, captionCues: Object.values(ERP_IMPORT_CUES), finalHoldMs: ERP_IMPORT_FINAL_HOLD_MS,
+    initScripts: ERP_INIT_SCRIPTS,
   },
   [VIDEO_MAILS_AVAILABILITY]: {
     period: DECEMBER, viewport: MAILS_VIEWPORT, css: MAILS_VIDEO_NOISE_CSS, run: MAILS_TAKE_RUNNERS[VIDEO_MAILS_AVAILABILITY],

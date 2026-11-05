@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "video": "erp-import",
+  "culture": "de",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "recorderStartedAt": 1793893504.985,
+  "cues": [
+    {
+      "cue": "request",
+      "text": "Sandra fragt Klacksy nach dem ERP",
+      "shownAt": 1793893507.434,
+      "hiddenAt": 1793893536.557,
+      "fromSeconds": 2.45,
+      "endSeconds": 17.22,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 386.90625,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "folder",
+      "text": "Auf diesem PC: der Ordner",
+      "shownAt": 1793893536.557,
+      "hiddenAt": 1793893542.816,
+      "fromSeconds": 17.22,
+      "endSeconds": 23.48,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 302.15625,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "right",
+      "text": "Das ERP-Konto braucht dort Schreibrecht",
+      "shownAt": 1793893542.816,
+      "hiddenAt": 1793893549.384,
+      "fromSeconds": 23.48,
+      "endSeconds": 30.05,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 448.28125,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "ways",
+      "text": "Upload und Push gehen auch: drei Wege",
+      "shownAt": 1793893549.384,
+      "hiddenAt": 1793893557.862,
+      "fromSeconds": 30.05,
+      "endSeconds": 38.53,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 442.3125,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "path",
+      "text": "Hier legt das ERP seine Dateien ab",
+      "shownAt": 1793893557.862,
+      "hiddenAt": 1793893566.324,
+      "fromSeconds": 38.53,
+      "endSeconds": 46.99,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 378.078125,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "grant",
+      "text": "Der Admin gibt dem ERP-Konto Schreibrecht",
+      "shownAt": 1793893566.325,
+      "hiddenAt": 1793893571.291,
+      "fromSeconds": 46.99,
+      "endSeconds": 51.96,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 483.984375,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "export",
+      "text": "Das ERP exportiert seine XML hierher",
+      "shownAt": 1793893571.291,
+      "hiddenAt": 1793893576.282,
+      "fromSeconds": 51.96,
+      "endSeconds": 56.95,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 408.09375,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "run",
+      "text": "Jetzt importieren, sonst stündlich",
+      "shownAt": 1793893576.282,
+      "hiddenAt": 1793893595.704,
+      "fromSeconds": 56.95,
+      "endSeconds": 68.86,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 368.140625,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "processed",
+      "text": "Vier neue Bestellungen, keine abgelehnt",
+      "shownAt": 1793893595.704,
+      "hiddenAt": 1793893601.723,
+      "fromSeconds": 68.86,
+      "endSeconds": 74.88,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 436.984375,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "drafts",
+      "text": "Vier Entwürfe, noch nicht versiegelt",
+      "shownAt": 1793893601.723,
+      "hiddenAt": 1793893607.858,
+      "fromSeconds": 74.88,
+      "endSeconds": 81.01,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 390.0625,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "seal",
+      "text": "Sandra wählt die Gruppe und versiegelt",
+      "shownAt": 1793893607.858,
+      "hiddenAt": 1793893626.934,
+      "fromSeconds": 81.01,
+      "endSeconds": 100.09,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 430.703125,
+        "height": 48.59375
+      }
+    },
+    {
+      "cue": "done",
+      "text": "Versiegelt. Drei Entwürfe warten noch",
+      "shownAt": 1793893626.934,
+      "hiddenAt": 1793893631.956,
+      "fromSeconds": 100.09,
+      "endSeconds": 105.1,
+      "box": {
+        "x": 24,
+        "y": 639.40625,
+        "width": 412.8125,
+        "height": 48.59375
+      }
+    }
+  ],
+  "encodedWidth": 1280
+}

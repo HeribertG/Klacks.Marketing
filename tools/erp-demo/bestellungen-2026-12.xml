@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Demo file of the ERP clip "Bestellungen aus dem ERP, ohne Abtippen" (takes/erp-takes.mjs): four December orders of
+  an invented Bern ERP for a security company. Every company name is invented; the take copies this file into the drop
+  point folder of the recording API (C:\ProgramData\Klacks\ErpImport\erp\orders) while the import page is on screen.
+  Format: Klacks ERP order import, schema version 1 (Klacks.Ui/src/assets/docs/erp-import-manual/sample-erp-order-import.xml).
+  The references have at most six characters, because the import uses them as the shift abbreviation.
+-->
+<ErpOrderImport schemaVersion="1" sourceSystemId="erp-bern">
+
+  <Order>
+    <ExternalOrderReference>AU2601</ExternalOrderReference>
+    <Description>Nachtrunde Objektschutz, Haupteingang und Tiefgarage</Description>
+    <Customer>
+      <ExternalCustomerReference>K-30418</ExternalCustomerReference>
+      <Company>Bürozentrum Felsenau AG</Company>
+      <Address>
+        <Street>Felsenaustrasse 17</Street>
+        <Zip>3004</Zip>
+        <City>Bern</City>
+        <State>BE</State>
+        <Country>CH</Country>
+      </Address>
+    </Customer>
+    <FromDate>2026-12-01</FromDate>
+    <UntilDate>2026-12-31</UntilDate>
+    <StartTime>22:00</StartTime>
+    <EndTime>06:00</EndTime>
+    <Weekdays monday="true" tuesday="true" wednesday="true" thursday="true" friday="true" />
+  </Order>
+
+  <Order>
+    <ExternalOrderReference>AU2602</ExternalOrderReference>
+    <Description>Empfang und Zutrittskontrolle</Description>
+    <Customer>
+      <ExternalCustomerReference>K-30418</ExternalCustomerReference>
+      <Company>Bürozentrum Felsenau AG</Company>
+      <Address>
+        <Street>Felsenaustrasse 17</Street>
+        <Zip>3004</Zip>
+        <City>Bern</City>
+        <State>BE</State>
+        <Country>CH</Country>
+      </Address>
+    </Customer>
+    <FromDate>2026-12-01</FromDate>
+    <UntilDate>2026-12-31</UntilDate>
+    <StartTime>07:00</StartTime>
+    <EndTime>12:00</EndTime>
+    <Weekdays monday="true" tuesday="true" wednesday="true" thursday="true" friday="true" />
+  </Order>
+
+  <Order>
+    <ExternalOrderReference>AU2603</ExternalOrderReference>
+    <Description>Baustellenbewachung am Wochenende</Description>
+    <Customer>
+      <ExternalCustomerReference>K-30522</ExternalCustomerReference>
+      <Company>Aarehof Wohnbau AG</Company>
+      <Address>
+        <Street>Uferweg 40</Street>
+        <Zip>3013</Zip>
+        <City>Bern</City>
+        <State>BE</State>
+        <Country>CH</Country>
+      </Address>
+    </Customer>
+    <FromDate>2026-12-05</FromDate>
+    <UntilDate>2026-12-27</UntilDate>
+    <StartTime>18:00</StartTime>
+    <EndTime>06:00</EndTime>
+    <Weekdays saturday="true" sunday="true" />
+  </Order>
+
+  <Order>
+    <ExternalOrderReference>AU2604</ExternalOrderReference>
+    <Description>Saalaufsicht Vernissage</Description>
+    <Customer>
+      <ExternalCustomerReference>K-30607</ExternalCustomerReference>
+      <Company>Galerie Nordlicht GmbH</Company>
+      <Address>
+        <Street>Kramgasse 9</Street>
+        <Zip>3011</Zip>
+        <City>Bern</City>
+        <State>BE</State>
+        <Country>CH</Country>
+      </Address>
+    </Customer>
+    <FromDate>2026-12-11</FromDate>
+    <UntilDate>2026-12-11</UntilDate>
+    <StartTime>17:00</StartTime>
+    <EndTime>23:00</EndTime>
+    <Weekdays friday="true" />
+    <SumEmployees>2</SumEmployees>
+  </Order>
+
+</ErpOrderImport>
