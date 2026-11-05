@@ -84,10 +84,10 @@
       "yes": "Tanja accetta. Registri anche questo.",
       "follows": "Lo scenario segue: Tanja invece di Selina",
       "scenario": "Proposta come scenario, originale intatto",
-      "cells": "MI per Max, SOS nella riga di Tanja",
+      "cells": "MI per Max, il suo turno passa a Tanja",
       "accept": "Dopo il tuo sì è il piano",
       "absent": "Max: MI, Malattia/Infortunio",
-      "standIn": "Tanja: SOS, la sostituzione"
+      "standIn": "Tanja ha preso l'intero turno"
     }
   },
   "replacement-r2": {
@@ -98,14 +98,15 @@
       "result": "Quattro turni coperti, uno aperto",
       "open": "Venerdì: nessun sostituto adatto",
       "scenario": "Proposta come scenario, originale intatto",
-      "cells": "MI tutta la settimana, SOS fino a giovedì",
-      "standIns": "Proposta: Yannick, Luc, Marc, Tanja",
+      "cells": "Elsa: MI. I suoi turni passano ad altri",
+      "standIns": "A Yannick, Luc, Marc e Tanja",
       "answers": "Sei tu a contattarli",
       "accept": "Dopo il tuo sì è il piano",
+      "moved": "Preso da Elsa: l'intero turno",
+      "gap": "Venerdì: turno eliminato, posto libero",
       "why": "Venerdì tutti lavorano o hanno FREE",
-      "manual": "Il resto lo fai a mano: Sostituzione",
       "pick": "Chiedi a Zoe, nonostante FREE. Accetta.",
-      "done": "Quattro dalla proposta, uno a mano"
+      "done": "Quattro spostati, uno a mano"
     }
   },
   "scenario-variants": {

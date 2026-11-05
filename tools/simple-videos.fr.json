@@ -84,10 +84,10 @@
       "yes": "Tanja accepte. Vous l'enregistrez aussi.",
       "follows": "Le scénario suit : Tanja au lieu de Selina",
       "scenario": "Proposition en scénario, original intact",
-      "cells": "MA chez Max, REM dans la ligne de Tanja",
+      "cells": "MA chez Max, son service passe à Tanja",
       "accept": "Après votre oui, c'est le planning",
       "absent": "Max : MA, Maladie/Accident",
-      "standIn": "Tanja : REM, le remplacement"
+      "standIn": "Tanja a repris tout le service"
     }
   },
   "replacement-r2": {
@@ -98,14 +98,15 @@
       "result": "Quatre services couverts, un ouvert",
       "open": "Vendredi : aucun remplaçant approprié",
       "scenario": "Proposition en scénario, original intact",
-      "cells": "MA toute la semaine, REM jusqu'à jeudi",
-      "standIns": "Proposition : Yannick, Luc, Marc, Tanja",
+      "cells": "Elsa : MA. Ses services sont déplacés",
+      "standIns": "À Yannick, Luc, Marc et Tanja",
       "answers": "C'est à vous de les contacter",
       "accept": "Après votre oui, c'est le planning",
+      "moved": "Repris d'Elsa : le service entier",
+      "gap": "Vendredi : service supprimé, place libre",
       "why": "Vendredi, tous travaillent ou ont FREE",
-      "manual": "Le reste à la main : Remplacement",
       "pick": "Vous demandez à Zoe malgré FREE : oui.",
-      "done": "Quatre de la proposition, un à la main"
+      "done": "Quatre déplacés, un à la main"
     }
   },
   "scenario-variants": {

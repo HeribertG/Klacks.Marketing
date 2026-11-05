@@ -267,7 +267,7 @@ const CHAT_VIDEO_NOISE_CSS = `${VIDEO_NOISE_CSS}
   app-toasts { display: none !important; }
 `;
 
-// The mails take and the month plan take (M3) show Klacks' own cell tooltip (app-tooltip, the availability hours); every other tooltip stays hidden.
+// The mails take, the month plan take (M3) and the replacement takes R1/R2 (tooltip of a moved work) show Klacks' own cell tooltip (app-tooltip, the availability hours); every other tooltip stays hidden.
 const MAILS_VIDEO_NOISE_CSS = `
   :not(app-tooltip) > .tooltip, .mat-mdc-tooltip, ngb-tooltip-window, .badge-mail, .mail-badge, app-company-clock-warning { display: none !important; }
   * { caret-color: transparent !important; }
@@ -590,12 +590,12 @@ ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS
     captionCues: Object.values(SECURITY_MONTH_PLAN_CUES), finalHoldMs: SECURITY_MONTH_PLAN_FINAL_HOLD_MS,
   },
   [VIDEO_REPLACEMENT_R1]: {
-    period: DECEMBER, viewport: REPLACEMENT_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+    period: DECEMBER, viewport: REPLACEMENT_VIEWPORT, css: `${MAILS_VIDEO_NOISE_CSS}
 ${REPLACEMENT_CSS}`, run: REPLACEMENT_TAKE_RUNNERS[VIDEO_REPLACEMENT_R1],
     needsScript: true, captionCues: Object.values(REPLACEMENT_R1_CUES), finalHoldMs: REPLACEMENT_R1_FINAL_HOLD_MS,
   },
   [VIDEO_REPLACEMENT_R2]: {
-    period: DECEMBER, viewport: REPLACEMENT_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+    period: DECEMBER, viewport: REPLACEMENT_VIEWPORT, css: `${MAILS_VIDEO_NOISE_CSS}
 ${REPLACEMENT_CSS}`, run: takeReplacementR2,
     needsScript: true, captionCues: Object.values(REPLACEMENT_R2_CUES), finalHoldMs: REPLACEMENT_R2_FINAL_HOLD_MS,
   },

@@ -76,11 +76,10 @@ const QUOTED_LABELS = Object.freeze([
   [VIDEO_MONTHPLAN_COMMANDS, "keywords", "settings.scheduling.command-keywords"],
   [VIDEO_REPLACEMENT_R2, "form", "contextMenu.coverAbsence"],
   [VIDEO_REPLACEMENT_R2, "week", "recovery.dialog.untilDate"],
-  [VIDEO_REPLACEMENT_R2, "manual", "contextMenu.replacement"],
   [VIDEO_SCENARIO_VARIANTS, "original", "scenario.exit"],
   [VIDEO_MONTHPLAN_WISHES, "list", "absence-gantt.absence-gantt-mask.absence-gantt-mask.list.booked"],
 ]);
-const REPLACEMENT_ABBREVIATION_CUES = Object.freeze([[VIDEO_REPLACEMENT_R1, "cells"], [VIDEO_REPLACEMENT_R1, "standIn"], [VIDEO_REPLACEMENT_R2, "cells"]]);
+const MOVE_VIDEOS = Object.freeze([VIDEO_REPLACEMENT_R1, VIDEO_REPLACEMENT_R2]);
 const ILLNESS_ABBREVIATION_CUES = Object.freeze([[VIDEO_REPLACEMENT_R1, "cells"], [VIDEO_REPLACEMENT_R1, "absent"], [VIDEO_REPLACEMENT_R2, "cells"]]);
 const PLANNABLE_ABBREVIATIONS =Object.freeze(["OBT", "OBA", "OBN", "RVM", "RVN", "EMP"]);
 const WORST_HOURS = "99:59";
@@ -291,9 +290,11 @@ async function testAgainstUi() {
       const caption = tracks[video].captions[cue].toLowerCase();
       assert.ok(caption.includes(label), `${culture}: ${video}/${cue} "${caption}" does not quote the app label "${label}" (${key})`);
     }
-    const replacementAbbreviation = messages["workChange.abbr.replacement"];
-    for (const [video, cue] of REPLACEMENT_ABBREVIATION_CUES) {
-      assert.ok(tracks[video].captions[cue].includes(replacementAbbreviation), `${culture}: ${video}/${cue} does not use the replacement abbreviation ${replacementAbbreviation}`);
+    const replacementAbbreviation = new RegExp(`\b${messages["workChange.abbr.replacement"]}\b`);
+    for (const video of MOVE_VIDEOS) {
+      for (const [cue, text] of Object.entries(tracks[video].captions)) {
+        assert.ok(!replacementAbbreviation.test(text), `${culture}: ${video}/${cue} names the replacement abbreviation, but a covered absence moves the shift since the cover move`);
+      }
     }
   }
 }

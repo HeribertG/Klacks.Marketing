@@ -84,10 +84,10 @@
       "yes": "Tanja says yes. You record that too.",
       "follows": "The scenario follows: Tanja, not Selina",
       "scenario": "Proposal as a scenario, original untouched",
-      "cells": "IA for Max, REP in Tanja's row",
+      "cells": "IA for Max, his shift moves to Tanja",
       "accept": "After your yes it becomes the plan",
       "absent": "Max: IA, Illness/Accident",
-      "standIn": "Tanja: REP, the replacement"
+      "standIn": "Tanja took over the whole shift"
     }
   },
   "replacement-r2": {
@@ -98,14 +98,15 @@
       "result": "Four shifts covered, one open",
       "open": "Friday: No suitable replacement",
       "scenario": "Proposal as a scenario, original untouched",
-      "cells": "IA all week, REP until Thursday",
-      "standIns": "Proposal: Yannick, Luc, Marc, Tanja",
+      "cells": "Elsa: IA. Her shifts move on",
+      "standIns": "To Yannick, Luc, Marc and Tanja",
       "answers": "You ask them yourself",
       "accept": "After your yes it becomes the plan",
+      "moved": "Taken over from Elsa: the whole shift",
+      "gap": "Friday: shift removed, slot open",
       "why": "On Friday everyone works or has FREE",
-      "manual": "You do the rest by hand: Replacement",
       "pick": "You ask Zoe despite FREE. She agrees.",
-      "done": "Four from the proposal, one by hand"
+      "done": "Four moved, one by hand"
     }
   },
   "scenario-variants": {

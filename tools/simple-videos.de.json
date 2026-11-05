@@ -91,10 +91,10 @@
       "yes": "Tanja sagt zu. Auch das trägst du ein.",
       "follows": "Das Szenario folgt: Tanja statt Selina",
       "scenario": "Vorschlag als Szenario, Original unberührt",
-      "cells": "KU bei Max, ABL in Tanjas Zeile",
+      "cells": "KU bei Max, sein Dienst wandert zu Tanja",
       "accept": "Nach deinem Ja ist es der Plan",
       "absent": "Max: KU, Krankheit/Unfall",
-      "standIn": "Tanja: ABL, die Ablösung"
+      "standIn": "Tanja hat den ganzen Dienst übernommen"
     }
   },
   "replacement-r2": {
@@ -105,14 +105,15 @@
       "result": "Vier Dienste gedeckt, einer offen",
       "open": "Freitag: Kein geeigneter Ersatz",
       "scenario": "Vorschlag als Szenario, Original unberührt",
-      "cells": "KU die ganze Woche, ABL bis Donnerstag",
-      "standIns": "Vorschlag: Yannick, Luc, Marc, Tanja",
-      "answers": "Anfragen musst du selbst",
+      "cells": "Elsa: KU. Ihre Dienste wandern weiter",
+      "standIns": "Zu Yannick, Luc, Marc und Tanja",
+      "answers": "Anfragen machst du selbst",
       "accept": "Nach deinem Ja ist es der Plan",
+      "moved": "Übernommen von Elsa: der ganze Dienst",
+      "gap": "Freitag: Dienst gestrichen, Platz offen",
       "why": "Freitag haben alle Dienst oder FREE",
-      "manual": "Den Rest löst du von Hand: Ablösung",
       "pick": "Du fragst Zoe, trotz FREE. Sie kommt.",
-      "done": "Vier vom Vorschlag, einer von Hand"
+      "done": "Vier verschoben, einer von Hand"
     }
   },
   "scenario-variants": {

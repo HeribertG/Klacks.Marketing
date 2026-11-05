@@ -5,7 +5,9 @@
  * klacks_marketing_security_biel_r1 (the accept changes the plan, phone numbers are added, so the master is never recorded on) and --group-id of "Biel Objektschutz".
  * replacement-r1 (1280x720): right-click on Max Wenger's RVN of 06.12., "Ausfall decken...", the review shows the proposed stand-in with the tier the app draws. The planner records
  * "Abgelehnt", opens the alternatives and records "Zugesagt" for Tanja Moser. That answer makes her the stand-in of the scenario (the server switches it, nobody is contacted); the dialog follows
- * by itself, so there is no manual step. "Fertig" shows the scenario, the banner accepts it. The day 06.12. was chosen on purpose: of Max's days it is the one with an on-call proposal, Tanja as
+ * by itself, so there is no manual step. "Fertig" shows the scenario, the banner accepts it. Since the cover move (Api 45b217e7b, v1.0.57) the dialog means "not started": the accept moves Max's whole RVN
+ * to Tanja (work.movedFromClientId = Max), no replacement (ABL) is created. The grid draws no moved icon (CellIconsService knows no fa-right-left), so the proof on screen is the cell tooltip
+ * "Übernommen von Max Wenger" (app-tooltip, left visible by the capture CSS of this take). The day 06.12. was chosen on purpose: of Max's days it is the one with an on-call proposal, Tanja as
  * "Passt in den Block" and no rest-day hint in the review. A failed switch aborts the take, there is no manual fallback. The row slider stands at 100 so the app draws the text at full size; there are no post zooms.
  * On the copy the rows of the three people are moved to the top with the row order of the app (per-user sort preference), so they stand together in the frame at 100 and no row scrolling is needed.
  * The chat is not used: the skill cover_absence has no review step, no outcome buttons and no alternatives. Nobody is contacted by Klacks in this take; the escalation roster stays off.
@@ -13,8 +15,8 @@
  * the switch, the cut to the scenario keeps that hint list out of the picture (the harmony line at the top of the dialog stays, it is the app state). REPLACEMENT_CSS lightens the modal backdrop so the plan stays readable behind the dialog (cosmetic only).
  * Publishable criterion (report.publishable, every part is read from the API, not from the screen): the cover request has notifyEscalationRoster=false and no override, for Max on 06.12.;
  * the proposal holds one covered and no open slot on tier 5 (on call, own group); the recorded "Zugesagt" answers isScenarioReplacement=true and the scenario then holds Tanja on Max's work, nobody on the first stand-in;
- * the scenario belongs to the group and covers only 06.12.; exactly one accept, scenario status Accepted; the real plan shows the KU break on Max on 06.12., a replacement WorkChange on his RVN naming Tanja,
- * its mirror in Tanja's row and no WorkChange on the first stand-in; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
+ * the scenario belongs to the group and covers only 06.12.; exactly one accept, scenario status Accepted; the real plan shows the KU break and no work on Max on 06.12., the RVN on Tanja with
+ * movedFromClientId = Max, no RVN on the first stand-in and no replacement WorkChange on that day; the tooltip of Tanja's RVN names Max; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
  * no error toast; no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints; every name of the alternatives is a team member. An accept refused with HTTP 409 aborts the take.
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
  * Cultures de, en, fr, it: script.absenceName is the name of the absence type in that language (checkAbsenceLabel compares it with the names of the copy before anything is recorded), the captions come from simple-videos.<culture>.json.
@@ -46,6 +48,7 @@ export const REPLACEMENT_R1_CUES = Object.freeze({
   absent: "absent",
   standIn: "standIn",
 });
+export const REPLACEMENT_TOOLTIP = "app-tooltip > div.tooltip";
 export const REPLACEMENT_R1_FINAL_HOLD_MS = 3500;
 export const REPLACEMENT_VIEWPORT = Object.freeze({ width: 1280, height: 720 });
 export const REPLACEMENT_CSS = ".recovery-phone { filter: blur(6px) !important; } .modal-backdrop.show { opacity: 0.16 !important; }";
@@ -60,6 +63,9 @@ const ON_CALL_TIER = 5;
 const WORK_CHANGE_ENTRY_TYPE = 1;
 const BREAK_ENTRY_TYPE = 3;
 const REPLACEMENT_TYPES = Object.freeze([2, 3, 9]);
+const WORK_ENTRY_TYPE = 0;
+const MOVED_NOTE_ORIGIN = "Max Wenger";
+const HOVER_WIGGLE = Object.freeze({ px: 6, steps: 4 });
 const OUTCOME_ACCEPTED = "Accepted";
 const OUTCOME_DECLINED = "Declined";
 const COLUMNS_SCROLLED = 0;
@@ -111,6 +117,9 @@ const worksOutsideDay = (data) => worksIn(data, D.PERIOD.from, D.PERIOD.until).f
 const sameList = (a, b) => a.length === b.length && a.every((value, index) => value === b[index]);
 const onDay = (data, clientId) => data.entries.filter((entry) => entry.clientId === clientId && dateKey(entry.entryDate) === ABSENT_DAY);
 const replacementsOf = (entries) => entries.filter((entry) => entry.entryType === WORK_CHANGE_ENTRY_TYPE && REPLACEMENT_TYPES.includes(entry.workChangeType));
+const worksOf = (entries) => entries.filter((entry) => entry.entryType === WORK_ENTRY_TYPE);
+const shiftsOf = (entries) => worksOf(entries).map((entry) => entry.abbreviation);
+const onAbsentDay = (data) => data.entries.filter((entry) => dateKey(entry.entryDate) === ABSENT_DAY);
 const pauseOf = (take, beat) => take.page.waitForTimeout(take.script.beats[beat]);
 
 function rowOf(clients, firstName) {
@@ -283,15 +292,21 @@ async function recordAnswers(take, ctx) {
   await checkScenarioSwitched(take, ctx);
 }
 
-/** The switch itself, read from the scenario: Max's work names Tanja, the first stand-in holds nothing there. */
+/** The switch itself, read from the scenario: Max's RVN stands in Tanja's row, Max and the first stand-in hold no RVN there, nothing is a replacement. */
 async function checkScenarioSwitched(take, ctx) {
   const { api, report } = take;
   const scenarioData = await api.schedule(scenarioFilter(ctx.decemberFilter, ctx.outcome.token));
-  const replacement = replacementsOf(onDay(scenarioData, ctx.absent.id)).map((entry) => entry.replaceClientId);
-  const leftOnFirstStandIn = replacementsOf(onDay(scenarioData, ctx.firstStandIn.id)).length;
-  report.scenarioReplacement = { replacement, leftOnFirstStandIn };
-  if (replacement.length !== 1 || replacement[0] !== ctx.standIn.id) flag(report, `the scenario replacement is ${JSON.stringify(replacement)} instead of ${STAND_IN_FULL_NAME}`);
-  if (leftOnFirstStandIn !== 0) flag(report, "the first stand-in still holds the replacement in the scenario");
+  const onStandIn = worksOf(onDay(scenarioData, ctx.standIn.id)).filter((entry) => entry.abbreviation === ABSENT_SHIFT);
+  report.scenarioMove = {
+    absent: shiftsOf(onDay(scenarioData, ctx.absent.id)),
+    standIn: onStandIn.map((entry) => ({ shift: entry.abbreviation, movedFromAbsent: entry.movedFromClientId === ctx.absent.id })),
+    firstStandIn: shiftsOf(onDay(scenarioData, ctx.firstStandIn.id)),
+    replacements: replacementsOf(onAbsentDay(scenarioData)).length,
+  };
+  if (report.scenarioMove.absent.includes(ABSENT_SHIFT)) flag(report, `${ABSENT_FIRST_NAME} still holds ${ABSENT_SHIFT} in the scenario`);
+  if (onStandIn.length !== 1) flag(report, `${STAND_IN_FULL_NAME} holds ${onStandIn.length} ${ABSENT_SHIFT} in the scenario instead of one`);
+  if (report.scenarioMove.firstStandIn.includes(ABSENT_SHIFT)) flag(report, "the first stand-in still holds the RVN in the scenario");
+  if (report.scenarioMove.replacements !== 0) flag(report, "the scenario holds a replacement instead of a move");
 }
 
 /** The published proof of the take: only states read back from the API after the accept. */
@@ -304,14 +319,19 @@ async function verifyAccepted(take, ctx) {
   const real = await api.schedule(ctx.decemberFilter);
   const absentEntries = onDay(real, ctx.absent.id);
   const ku = absentEntries.filter((entry) => entry.entryType === BREAK_ENTRY_TYPE && entry.entryId === ctx.absenceId);
-  const change = replacementsOf(absentEntries);
-  const mirror = replacementsOf(onDay(real, ctx.standIn.id));
-  const declinedChanges = replacementsOf(onDay(real, ctx.firstStandIn.id));
-  report.realPlan = { ku: ku.length, replacement: change.map((entry) => entry.replaceClientId), mirror: mirror.map((entry) => entry.replaceClientId), declinedChanges: declinedChanges.length };
+  const moved = worksOf(onDay(real, ctx.standIn.id)).filter((entry) => entry.abbreviation === ABSENT_SHIFT);
+  report.realPlan = {
+    ku: ku.length,
+    absentWorks: shiftsOf(absentEntries),
+    standIn: moved.map((entry) => ({ shift: entry.abbreviation, from: entry.startTime, until: entry.endTime, movedFromAbsent: entry.movedFromClientId === ctx.absent.id })),
+    firstStandIn: shiftsOf(onDay(real, ctx.firstStandIn.id)),
+    replacements: replacementsOf(onAbsentDay(real)).length,
+  };
   if (ku.length !== 1) flag(report, `${ku.length} KU breaks on ${ABSENT_DAY} instead of one`);
-  if (change.length !== 1 || change[0].replaceClientId !== ctx.standIn.id) flag(report, `the replacement on ${ABSENT_DAY} is not ${STAND_IN_FULL_NAME}`);
-  if (mirror.length !== 1) flag(report, `${STAND_IN_FULL_NAME} shows ${mirror.length} replacements on ${ABSENT_DAY}`);
-  if (declinedChanges.length !== 0) flag(report, "the stand-in who declined still holds the replacement");
+  if (report.realPlan.absentWorks.length !== 0) flag(report, `${ABSENT_FIRST_NAME} still holds ${report.realPlan.absentWorks.join(",")} on ${ABSENT_DAY}`);
+  if (moved.length !== 1 || moved[0].movedFromClientId !== ctx.absent.id) flag(report, `${STAND_IN_FULL_NAME} does not hold the RVN moved from ${ABSENT_FIRST_NAME} on ${ABSENT_DAY}`);
+  if (report.realPlan.firstStandIn.includes(ABSENT_SHIFT)) flag(report, "the stand-in who declined holds the RVN");
+  if (report.realPlan.replacements !== 0) flag(report, `${report.realPlan.replacements} replacement WorkChanges on ${ABSENT_DAY}, the cover should have moved the work`);
   report.otherWorksUnchanged = sameList(ctx.otherWorksBefore, worksOutsideDay(real));
   if (!report.otherWorksUnchanged) flag(report, "works outside the absent day changed");
   const requests = await api.json(`${REQUESTS_API}?analyseToken=${ctx.scenario.token}&absentClientId=${ctx.absent.id}`);
@@ -321,6 +341,19 @@ async function verifyAccepted(take, ctx) {
   if (of(ctx.standIn.id)?.outcome !== OUTCOME_ACCEPTED || !of(ctx.standIn.id)?.appliedAtUtc) flag(report, `the request book does not hold ${STAND_IN_FULL_NAME} as accepted and applied`);
   const watched = (report.httpErrors ?? []).filter((line) => WATCHED_ERROR_PATH.test(line));
   if (watched.length > 0) flag(report, `HTTP errors: ${watched.join("; ")}`);
+}
+
+/** Rests the visible cursor on a moved work so the grid shows its cell tooltip ("Übernommen von ..."); a small wiggle makes the grid see the move. The tooltip must name the origin. */
+export async function hoverMovedNote(take, target, originName) {
+  const { page, mouse, report } = take;
+  await mouse.moveTo(target, MOVE.normal);
+  await page.mouse.move(target.x + HOVER_WIGGLE.px, target.y, { steps: HOVER_WIGGLE.steps });
+  await page.mouse.move(target.x, target.y, { steps: HOVER_WIGGLE.steps });
+  const tooltip = page.locator(REPLACEMENT_TOOLTIP).first();
+  await tooltip.waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS }).catch(() => {});
+  const text = (await tooltip.isVisible().catch(() => false)) ? (await tooltip.innerText()).trim() : "";
+  (report.movedNotes ??= []).push(text);
+  if (!text.includes(originName)) flag(report, `the moved work shows the tooltip "${text}" instead of naming ${originName}`);
 }
 
 /** The stored row order only applies with the sort mode "individual" of the row header; a page load resets it. Runs inside a cut region. */
@@ -423,7 +456,7 @@ export async function takeReplacementR1(take) {
     await mouse.moveTo(await cell(take, ROWS.absent, SUB_ROW_FIRST), MOVE.normal);
     await pauseOf(take, "absent");
     await captions.show(cues.standIn);
-    await mouse.moveTo(await cell(take, ROWS.standIn, SUB_ROW_FIRST), MOVE.normal);
+    await hoverMovedNote(take, await cell(take, ROWS.standIn, SUB_ROW_FIRST), MOVED_NOTE_ORIGIN);
     await checkPage(take, "accepted");
     await holdWithPoster(take, take.finalHoldMs);
     report.publishable = !report.failure;
