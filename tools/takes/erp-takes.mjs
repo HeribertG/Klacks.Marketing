@@ -15,7 +15,8 @@
  * Needs the recording backend of tools/erp-demo/start-erp-recording-api.ps1 (native, DataRoot C:\ProgramData\Klacks) on a fresh copy of
  * klacks_marketing_security_bern_m2 without its stale setting ERP_IMPORT_NEXT_RUN_UTC (delete it in the copy) and with an empty drop point folder.
  * Publishable: no chat error and no failed skill; answer 1 called get_erp_drop_point_settings, names the folder path, the Modify right, the upload
- * and the push; the Import page was reached through Klacksy; the folder row shows the expected path of a native installation; the file ended
+ * and the push; a cron 0 * * * * in that answer is shown as inline code; the Import page was reached through Klacksy; the folder row shows the
+ * expected path of a native installation without a trailing separator; the card heading equals script.heading (when set); the file ended
  * processed with exactly four new orders and none rejected; four unsealed drafts were listed; AU2601 has the status SealedOrder afterwards;
  * the three other orders stay unsealed; the take ends on the order list.
  * @param take - page, api, options, recorder, mouse, report, script, captions, viewport, scale (see recordTake)
@@ -72,7 +73,10 @@ const ANSWER_MUST_NOT_MATCH = Object.freeze([["S3", /\bS3\b/], ["SFTP", /SFTP/i]
 const ANSWER_ANCHOR_FOLDER = "ProgramData";
 const ANSWER_ANCHOR_RIGHT = "Ändern|Änderungsrecht|Modify";
 const ANSWER_ANCHOR_ALTERNATIVES = "Upload|hochl";
-const ANSWER_GLITCHES = Object.freeze([["joined sentences", /[a-zäöü]{2}[.!?][A-ZÄÖÜ][a-zäöü]/], ["stale schedule remark", /Vergangenheit|veraltet/i]]);
+const ANSWER_GLITCHES = Object.freeze([["joined sentences", /[a-zäöü]{2}[.!?][A-ZÄÖÜ][a-zäöü]/], ["stale schedule remark", /Vergangenheit|veraltet/i],
+  ["formal address", /\bIhnen\b|\bIhre[mnrs]?\b|\b(?:wenn|können|möchten|mögen) Sie\b/],
+  ["English installation label", /office PC/i],
+]);
 
 const FOLDER_API = "/api/backend/ErpDropPoints/default/folder";
 const FILES_API = "/api/backend/ErpDropPoints/files";
@@ -81,6 +85,9 @@ const SHIFT_ROUTE = "/workplace/shift";
 const EDIT_SHIFT_ROUTE = "/workplace/edit-shift/";
 
 const SEL_MESSAGES = "#assistant-chat-messages";
+const SEL_HEADER = "#erp-drop-points-header";
+const CRON_PATTERN = /0 \* \* \* \*/;
+const TRAILING_SEPARATOR = /[\\/]$/;
 const SEL_FOLDER_PATH = "#erp-drop-points-folder-path";
 const SEL_FOLDER_HINT = "#erp-drop-points-folder-hint";
 const SEL_COPY = "#erp-drop-points-copy-path-btn";
@@ -293,6 +300,8 @@ async function chatPart(take, messages, visited) {
   report.turns.push({ prompt: question.text, sent: true, ...first });
   log(`calls: ${first.calls.map((c) => c.name).join(", ") || "-"}; answer: ${first.content.replace(/\s+/g, " ").slice(0, LOG_PREVIEW_CHARS)}`);
   report.answerProblems = answerProblems(first);
+  report.answerCron = await renderedCronProblem(page, first.content);
+  if (report.answerCron) report.answerProblems.push(report.answerCron);
   if (report.answerProblems.length > 0) throw new Error(report.answerProblems.join("; "));
   report.folderParagraph = await scrollAnswerTo(page, mouse, ANSWER_ANCHOR_FOLDER);
   await captions?.show(ERP_IMPORT_CUES.folder);
@@ -327,6 +336,9 @@ async function importPart(take, folder) {
   await closeChat(page, mouse);
   await scrollPageTo(page, mouse, SEL_FOLDER_PATH, viewport);
   report.folderShown = await page.locator(SEL_FOLDER_PATH).inputValue();
+  if (TRAILING_SEPARATOR.test(report.folderShown)) throw new Error(`the folder row ends with a separator: ${report.folderShown}`);
+  report.heading = (await page.locator(SEL_HEADER).innerText()).trim();
+  if (take.script?.heading && report.heading !== take.script.heading) throw new Error(`the Import card heading is ${report.heading}, not ${take.script.heading}`);
   if (trimSeparator(report.folderShown).toLowerCase() !== EXPECTED_FOLDER.toLowerCase()) throw new Error(`the folder row shows ${report.folderShown}`);
   await captions?.show(ERP_IMPORT_CUES.path);
   await mouse.moveTo(await centerOf(page, SEL_FOLDER_PATH), MOVE_NORMAL_MS);
@@ -365,6 +377,19 @@ async function importPart(take, folder) {
   if (report.processedRows === 0) throw new Error("the tab Verarbeitet lists no file");
   await captions?.show(ERP_IMPORT_CUES.processed);
   await page.waitForTimeout(BEAT.tabHold);
+}
+
+/** When the answer mentions the hourly cron, it has to reach the screen with its asterisks (inline code), not as emphasis. */
+async function renderedCronProblem(page, content) {
+  if (!CRON_PATTERN.test(content)) return null;
+  const shown = await page.evaluate((list) => {
+    const answers = [...document.querySelectorAll(`${list} app-chat-message`)];
+    const bubble = answers.at(-1);
+    return { text: bubble?.innerText ?? "", code: [...(bubble?.querySelectorAll("code") ?? [])].map((c) => c.textContent) };
+  }, SEL_MESSAGES);
+  if (!CRON_PATTERN.test(shown.text)) return "answer 1 names the cron 0 * * * * but the chat does not show it";
+  if (!shown.code.some((c) => CRON_PATTERN.test(c))) return "answer 1 shows the cron 0 * * * * outside inline code";
+  return null;
 }
 
 async function centerOf(page, selector) {
