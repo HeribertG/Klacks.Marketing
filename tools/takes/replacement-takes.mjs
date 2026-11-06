@@ -6,8 +6,8 @@
  * replacement-r1 (1280x720): right-click on Max Wenger's RVN of 06.12., "Ausfall decken...", the review shows the proposed stand-in with the tier the app draws. The planner records
  * "Abgelehnt", opens the alternatives and records "Zugesagt" for Tanja Moser. That answer makes her the stand-in of the scenario (the server switches it, nobody is contacted); the dialog follows
  * by itself, so there is no manual step. "Fertig" shows the scenario, the banner accepts it. Since the cover move (Api 45b217e7b, v1.0.57) the dialog means "not started": the accept moves Max's whole RVN
- * to Tanja (work.movedFromClientId = Max), no replacement (ABL) is created. The grid draws no moved icon (CellIconsService knows no fa-right-left), so the proof on screen is the cell tooltip
- * "Übernommen von Max Wenger" (app-tooltip, left visible by the capture CSS of this take). The day 06.12. was chosen on purpose: of Max's days it is the one with an on-call proposal, Tanja as
+ * to Tanja (work.movedFromClientId = Max), no replacement (ABL) is created. Since Ui d20a5e6f8 the grid draws the moved icon (two arrows, top-left of the cell) on her RVN, in the scenario and in the
+ * real plan; the cell tooltip "Übernommen von Max Wenger" (app-tooltip, left visible by the capture CSS of this take) names the origin. The day 06.12. was chosen on purpose: of Max's days it is the one with an on-call proposal, Tanja as
  * "Passt in den Block" and no rest-day hint in the review. A failed switch aborts the take, there is no manual fallback. The row slider stands at 100 so the app draws the text at full size; there are no post zooms.
  * On the copy the rows of the three people are moved to the top with the row order of the app (per-user sort preference), so they stand together in the frame at 100 and no row scrolling is needed.
  * The chat is not used: the skill cover_absence has no review step, no outcome buttons and no alternatives. Nobody is contacted by Klacks in this take; the escalation roster stays off.
@@ -16,13 +16,18 @@
  * Publishable criterion (report.publishable, every part is read from the API, not from the screen): the cover request has notifyEscalationRoster=false and no override, for Max on 06.12.;
  * the proposal holds one covered and no open slot on tier 5 (on call, own group); the recorded "Zugesagt" answers isScenarioReplacement=true and the scenario then holds Tanja on Max's work, nobody on the first stand-in;
  * the scenario belongs to the group and covers only 06.12.; exactly one accept, scenario status Accepted; the real plan shows the KU break and no work on Max on 06.12., the RVN on Tanja with
- * movedFromClientId = Max, no RVN on the first stand-in and no replacement WorkChange on that day; the tooltip of Tanja's RVN names Max; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
+ * movedFromClientId = Max, no RVN on the first stand-in and no replacement WorkChange on that day; the moved icon is drawn on Tanja's RVN in the scenario and after the accept (checkMovedIcon: screenshot of the
+ * top-left cell corner inside a cut region, the top-right corner of the same cell as control, crops in <frames>/replacement-icon-checks); the tooltip of Tanja's RVN names Max; every other work of December is unchanged; the request book holds Declined (not applied) for the first stand-in and Accepted (applied) for Tanja;
  * no error toast; no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints; every name of the alternatives is a team member. An accept refused with HTTP 409 aborts the take.
  * Captions come from simple-videos.<culture>.json, the beats from the script entry in capture-app-videos.scripts.json, so timing changes need no code change.
  * Cultures de, en, fr, it: script.absenceName is the name of the absence type in that language (checkAbsenceLabel compares it with the names of the copy before anything is recorded), the captions come from simple-videos.<culture>.json.
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
  */
 
+import { mkdir } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import sharp from "sharp";
 import * as S from "../lib/klacks-demo-session.mjs";
 import { SEL_MODAL, waitModalAtRest } from "../lib/modal.mjs";
 import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
@@ -107,6 +112,13 @@ const PHONES = Object.freeze({ Selina: "+41 32 555 01 21", Tanja: "+41 32 555 01
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN]);
 const SAVE_TIMEOUT_MS = 30000;
 const COVER_TIMEOUT_MS = 60000;
+const CURSOR_ID = "capture-cursor";
+const ICON_CORNER = Object.freeze({ inset: 2, size: 16 });
+const ICON_INK_DELTA = 90;
+const ICON_MIN_INK_PX = 12;
+const ICON_MAX_EMPTY_INK_PX = 3;
+const RGB_CHANNELS = 3;
+const ICON_SHOT_DIR = "replacement-icon-checks";
 const CUT = Number.POSITIVE_INFINITY;
 const MOVE = { normal: 650 };
 
@@ -307,6 +319,7 @@ async function checkScenarioSwitched(take, ctx) {
   if (onStandIn.length !== 1) flag(report, `${STAND_IN_FULL_NAME} holds ${onStandIn.length} ${ABSENT_SHIFT} in the scenario instead of one`);
   if (report.scenarioMove.firstStandIn.includes(ABSENT_SHIFT)) flag(report, "the first stand-in still holds the RVN in the scenario");
   if (report.scenarioMove.replacements !== 0) flag(report, "the scenario holds a replacement instead of a move");
+  ctx.scenarioMovedLock = Boolean(onStandIn[0]?.lockLevel);
 }
 
 /** The published proof of the take: only states read back from the API after the accept. */
@@ -332,6 +345,8 @@ async function verifyAccepted(take, ctx) {
   if (moved.length !== 1 || moved[0].movedFromClientId !== ctx.absent.id) flag(report, `${STAND_IN_FULL_NAME} does not hold the RVN moved from ${ABSENT_FIRST_NAME} on ${ABSENT_DAY}`);
   if (report.realPlan.firstStandIn.includes(ABSENT_SHIFT)) flag(report, "the stand-in who declined holds the RVN");
   if (report.realPlan.replacements !== 0) flag(report, `${report.realPlan.replacements} replacement WorkChanges on ${ABSENT_DAY}, the cover should have moved the work`);
+  ctx.realMovedLock = Boolean(moved[0]?.lockLevel);
+  report.lockLevelsDecember = lockLevelsOf(real, D.PERIOD.from, D.PERIOD.until);
   report.otherWorksUnchanged = sameList(ctx.otherWorksBefore, worksOutsideDay(real));
   if (!report.otherWorksUnchanged) flag(report, "works outside the absent day changed");
   const requests = await api.json(`${REQUESTS_API}?analyseToken=${ctx.scenario.token}&absentClientId=${ctx.absent.id}`);
@@ -354,6 +369,63 @@ export async function hoverMovedNote(take, target, originName) {
   const text = (await tooltip.isVisible().catch(() => false)) ? (await tooltip.innerText()).trim() : "";
   (report.movedNotes ??= []).push(text);
   if (!text.includes(originName)) flag(report, `the moved work shows the tooltip "${text}" instead of naming ${originName}`);
+}
+
+/** Pixels of a corner clip that differ from its most frequent colour (the cell background) by more than ICON_INK_DELTA (sum over R, G, B). */
+async function inkOf(png) {
+  const { data, info } = await sharp(png).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const counts = new Map();
+  for (let i = 0; i < data.length; i += RGB_CHANNELS) {
+    const key = (data[i] << 16) | (data[i + 1] << 8) | data[i + 2];
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  const background = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  const bg = [(background >> 16) & 0xff, (background >> 8) & 0xff, background & 0xff];
+  let ink = 0;
+  for (let i = 0; i < data.length; i += RGB_CHANNELS) {
+    if (Math.abs(data[i] - bg[0]) + Math.abs(data[i + 1] - bg[1]) + Math.abs(data[i + 2] - bg[2]) > ICON_INK_DELTA) ink += 1;
+  }
+  return { ink, pixels: info.width * info.height, background: `#${background.toString(16).padStart(6, "0")}` };
+}
+
+/**
+ * Proof that the grid draws the moved icon (Ui d20a5e6f8, pp-icon-work-moved, top-left corner of the cell): inside a cut region the cursor overlay is hidden, the top-left corner of the
+ * cell is screenshot (CSS pixels) and must hold drawn strokes; the top-right corner of the same cell is the control (it holds the lock icon only when the work has a lock level), so a dirty
+ * or shifted cell cannot pass. Both crops are written next to the frames for a visual check. center is the cell centre as cellOf computes it.
+ * @param expectLock - true when the work carries a lock level (then the top-right corner must hold the lock icon instead of being empty)
+ */
+export async function checkMovedIcon(take, center, label, { expectLock = false } = {}) {
+  const { page, report } = take;
+  const left = center.x - CELL_WIDTH_PX / HALF;
+  const top = center.y - SUB_ROW_HEIGHT_PX / HALF;
+  const clipAt = (x) => ({ x, y: top + ICON_CORNER.inset, width: ICON_CORNER.size, height: ICON_CORNER.size });
+  await page.evaluate((id) => { const cursor = document.getElementById(id); if (cursor) cursor.style.visibility = "hidden"; }, CURSOR_ID);
+  try {
+    const moved = await page.screenshot({ clip: clipAt(left + ICON_CORNER.inset), scale: "css" });
+    const control = await page.screenshot({ clip: clipAt(left + CELL_WIDTH_PX - ICON_CORNER.inset - ICON_CORNER.size), scale: "css" });
+    const dir = path.join(process.env.KLACKS_VIDEO_FRAMES_DIR ?? os.tmpdir(), ICON_SHOT_DIR);
+    await mkdir(dir, { recursive: true });
+    const name = label.replace(/[^A-Za-z0-9-]+/g, "-");
+    await sharp(moved).resize({ width: ICON_CORNER.size * 8, kernel: "nearest" }).toFile(path.join(dir, `${name}-moved-corner.png`));
+    await sharp(control).resize({ width: ICON_CORNER.size * 8, kernel: "nearest" }).toFile(path.join(dir, `${name}-control-corner.png`));
+    const result = { label, movedCorner: await inkOf(moved), controlCorner: await inkOf(control), expectLock };
+    (report.movedIcons ??= []).push(result);
+    log(`moved icon ${label}: ${JSON.stringify(result)}`);
+    const iconDrawn = result.movedCorner.ink >= ICON_MIN_INK_PX;
+    const controlOk = expectLock ? result.controlCorner.ink >= ICON_MIN_INK_PX : result.controlCorner.ink <= ICON_MAX_EMPTY_INK_PX;
+    result.ok = iconDrawn && controlOk;
+    if (!iconDrawn) flag(report, `the moved icon is not drawn at "${label}" (${result.movedCorner.ink} ink pixels)`);
+    if (!controlOk) flag(report, `the control corner at "${label}" holds ${result.controlCorner.ink} ink pixels (lock expected: ${expectLock}) - the cell geometry is off`);
+  } finally {
+    await page.evaluate((id) => { const cursor = document.getElementById(id); if (cursor) cursor.style.visibility = ""; }, CURSOR_ID);
+  }
+}
+
+/** Lock levels of the works of the period, read from the API: the grid draws a lock icon (top-right) for every level above 0. */
+export function lockLevelsOf(data, from, until) {
+  const levels = {};
+  for (const work of worksIn(data, from, until)) levels[work.lockLevel ?? 0] = (levels[work.lockLevel ?? 0] ?? 0) + 1;
+  return levels;
 }
 
 /** The stored row order only applies with the sort mode "individual" of the row header; a page load resets it. Runs inside a cut region. */
@@ -387,6 +459,7 @@ async function openProposalAsScenario(take, ctx) {
   await page.locator(SEL_MODAL).waitFor({ state: "detached", timeout: S.READY_TIMEOUT_MS });
   await page.locator(SEL_BANNER).waitFor({ state: "visible", timeout: COVER_TIMEOUT_MS });
   await page.waitForTimeout(CANVAS_SETTLE_MS);
+  await checkMovedIcon(take, await cell(take, ROWS.standIn, SUB_ROW_FIRST), "r1-scenario-tanja", { expectLock: ctx.scenarioMovedLock });
   await captions.show(REPLACEMENT_R1_CUES.scenario);
   await recorder.endFast();
   ctx.scenario = await getScenario(api, ctx.outcome.scenarioId);
@@ -451,6 +524,7 @@ export async function takeReplacementR1(take) {
     await openSchedule(page, options);
     await frameDay(take);
     await measure(take, "accepted");
+    await checkMovedIcon(take, await cell(take, ROWS.standIn, SUB_ROW_FIRST), "r1-accepted-tanja", { expectLock: ctx.realMovedLock });
     await recorder.endFast();
     await captions.show(cues.absent);
     await mouse.moveTo(await cell(take, ROWS.absent, SUB_ROW_FIRST), MOVE.normal);

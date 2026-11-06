@@ -7,8 +7,8 @@
  * replacement-r2 (1280x720): right-click on Elsa Dubach's RVN of 14.12., "Ausfall decken...", the dialog with "Wie lange?" until 18.12. The review holds four covered duties and one duty under "Offen geblieben"
  * with the reason of the app. "Fertig" shows the scenario: KU on all five days, Elsa's duties of Monday to Thursday stand in the rows of Yannick, Luc, Marc and Tanja (cover move, Api 45b217e7b, v1.0.57:
  * the dialog means "not started", the whole work moves, work.movedFromClientId = Elsa, no replacement ABL). The banner accepts it; the duty nobody covers (Friday EMP) is deleted and its slot in the shift area
- * stays open. The cut after the accept shows the schedule with the shift area and the planning commands on (the grid only repaints them with the next layout change): the tooltip of Yannick's RVN names Elsa
- * (the grid draws no moved icon, CellIconsService knows no fa-right-left), the open EMP of Friday, Zoe's FREE. The planner closes the gap by hand: the open EMP is dragged from the shift area onto Zoe's Friday.
+ * stays open. The cut after the accept shows the schedule with the shift area and the planning commands on (the grid only repaints them with the next layout change): the moved icon (two arrows, top-left
+ * of the cell, drawn since Ui d20a5e6f8) on Yannick's moved RVN, the tooltip of Yannick's RVN naming Elsa, the open EMP of Friday, Zoe's FREE. The planner closes the gap by hand: the open EMP is dragged from the shift area onto Zoe's Friday.
  * Nobody is contacted by Klacks in this take: the roster checkbox stays off,
  * so no escalation chain exists; the escalation page is not part of the clip (its texts announce notifications, and all chains would only be registered, with nothing to acknowledge).
  * The row slider stands at 100 so the app draws the text at full size; on the copy the rows of the story are moved to the top with the row order of the app. REPLACEMENT_CSS lightens the modal backdrop and blurs the phone numbers (cosmetic only).
@@ -16,7 +16,7 @@
  * Publishable criterion (report.publishable, every part is read from the API, not from the screen): the cover request names Elsa, 14.-18.12., notifyEscalationRoster=false and no override; the proposal holds exactly the four covered and the
  * one open duty of the storyboard, every name is a team member; the scenario belongs to the group and spans 14.-18.12.; exactly one accept, status Accepted; the real plan shows five KU breaks and no work on Elsa, each of her
  * four covered duties on the proposed person with movedFromClientId = Elsa, no replacement WorkChange in the week, nobody holding the EMP of Friday before the manual step, Zoe holding it (not moved) after it;
- * the tooltip of Yannick's RVN names Elsa; every other work of December is unchanged;
+ * the moved icon is drawn on Yannick's RVN after the accept (checkMovedIcon; the rows of the other three are below the frame in that scene); the tooltip of Yannick's RVN names Elsa; every other work of December is unchanged;
  * nobody who is free on Friday lacks a FREE command, no escalation chain exists; no error toast, no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints. An accept refused with HTTP 409 aborts the take.
  * Cultures de, en, fr, it: script.absenceName as in R1, script.untilDateTyped is the date as the datepicker of that language writes it (de 18.12.2026, en 12/18/2026, fr and it 18/12/2026; the app parses the typed layout of the active language).
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
@@ -28,7 +28,7 @@ import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, da
 import { SCENARIO_STATUS_ACCEPTED, getScenario, realFilter } from "../lib/scenario-demo.mjs";
 import * as D from "../lib/security-demo.mjs";
 import { ENTRY_TYPE_BREAK, ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
-import { checkAbsenceLabel, checkPage, hoverMovedNote, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
+import { checkAbsenceLabel, checkMovedIcon, checkPage, hoverMovedNote, lockLevelsOf, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
 import { decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 import { checkStage, fitAllRows, measure, readToasts, scrollColumns, scrollRowsToTop, setRowSlider, showRowAtTop, trackHttpErrors, watchToasts } from "./security-takes.mjs";
 
@@ -324,7 +324,19 @@ async function verifyAccepted(take, ctx) {
   if (fridayEmp !== 0) flag(report, `the ${OPEN_SHIFT} of ${LAST_DAY} is held by ${fridayEmp} work(s) before the manual step`);
   if (report.acceptedPlan.replacements !== 0) flag(report, `${report.acceptedPlan.replacements} replacement WorkChanges in the week, the cover should have moved the works`);
   report.friday = checkFriday(real, ctx.absent.id);
+  ctx.movedLock = Object.fromEntries(Object.entries(COVERED).map(([day, firstName]) => {
+    const duty = worksOf(onDay(real, clientNamed(real.clients, firstName).id, day)).find((entry) => entry.abbreviation === EXPECTED_SHIFTS[day]);
+    return [day, Boolean(duty?.lockLevel)];
+  }));
+  report.lockLevelsDecember = lockLevelsOf(real, D.PERIOD.from, D.PERIOD.until);
 }
+
+/** The moved icon on Yannick's RVN (the duty the tooltip scene hovers), checked inside the cut after the accept; the rows of the other three stand-ins are below the frame there. */
+async function checkMovedIcons(take, ctx) {
+  const [day, firstName] = Object.entries(COVERED)[0];
+  await checkMovedIcon(take, await cell(take, day, ROWS.firstStandIn, SUB_ROW_WORK), `r2-accepted-${firstName}`, { expectLock: ctx.movedLock[day] });
+}
+
 
 /** The planner drags the open reception duty of Friday from the shift area onto Zoe's Friday (she has FREE, she agreed on the phone). The drop goes to the second sub-row: the first holds her FREE command, a drop there is refused. */
 async function fillGapByHand(take) {
@@ -434,6 +446,7 @@ export async function takeReplacementR2(take) {
     await page.locator(SEL_COMMANDS_TOGGLE).click();
     await frameWeekWithShifts(take);
     await measure(take, "accepted");
+    await checkMovedIcons(take, ctx);
     await captions.show(cues.moved);
     await recorder.endFast();
     await hoverMovedNote(take, await cell(take, FIRST_DAY, ROWS.firstStandIn, SUB_ROW_WORK), ORIGIN_FULL_NAME);
