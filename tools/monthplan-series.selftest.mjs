@@ -57,13 +57,13 @@ const FORBIDDEN = Object.freeze({
 });
 
 const ERROR_SAMPLES = Object.freeze({
-  de: ["Recovery fehlgeschlagen.", "Die Rückmeldung konnte nicht gespeichert werden.", "Die Alternativen konnten nicht geladen werden."],
+  de: ["Der Ersatz-Vorschlag konnte nicht erstellt werden.", "Die Rückmeldung konnte nicht gespeichert werden.", "Die Alternativen konnten nicht geladen werden."],
   en: ["Recovery failed.", "The response could not be saved.", "The alternatives could not be loaded."],
   fr: ["Échec de la récupération.", "La réponse n'a pas pu être enregistrée.", "Les alternatives n'ont pas pu être chargées."],
   it: ["Recupero non riuscito.", "Non è stato possibile salvare la risposta.", "Non è stato possibile caricare le alternative."],
 });
 const FINE_SAMPLES = Object.freeze({
-  de: ["AutoWizard fertig. Szenario Auto 1 bereit.", "Recovery-Vorschlag erstellt: 4 gedeckt, 1 offen."],
+  de: ["AutoWizard fertig. Szenario Auto 1 bereit.", "Ersatz-Vorschlag erstellt: 4 gedeckt, 1 offen."],
   en: ["AutoWizard finished. Scenario Auto 1 ready.", "Recovery proposal created: 4 covered, 1 open."],
   fr: ["AutoWizard terminé. Scénario Auto 1 prêt.", "Proposition de récupération créée : 4 couverts, 1 ouverts."],
   it: ["AutoWizard completato. Scenario Auto 1 pronto.", "Proposta di recupero creata: 4 coperti, 1 aperti."],

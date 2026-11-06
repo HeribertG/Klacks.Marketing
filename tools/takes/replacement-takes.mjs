@@ -110,6 +110,13 @@ const HTTP_PUT = "PUT";
 const PHONE_TYPE_PRIVATE_CELL = 1;
 const PHONES = Object.freeze({ Selina: "+41 32 555 01 21", Tanja: "+41 32 555 01 42", Marc: "+41 32 555 01 63" });
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN]);
+const FORBIDDEN_TEXTS_BY_CULTURE = Object.freeze({ de: Object.freeze(["(Recovery)", "Recovery-Engine", "Sie bearbeiten ein Szenario"]) });
+const EXPECTED_WORDING_BY_CULTURE = Object.freeze({
+  de: Object.freeze({ dialogTitle: "Ausfall decken", dialogDescription: "Klacks schlägt dann", bannerHintStart: "Du bearbeitest ein Szenario" }),
+});
+const SEL_DIALOG_TITLE = `${SEL_MODAL} .modal-title`;
+const SEL_DIALOG_DESCRIPTION = `${SEL_MODAL} .recovery-description`;
+const SEL_BANNER_HINT = "#scenario-banner .scenario-banner-hint";
 const SAVE_TIMEOUT_MS = 30000;
 const COVER_TIMEOUT_MS = 60000;
 const CURSOR_ID = "capture-cursor";
@@ -197,9 +204,29 @@ export async function openMenuItem(take, target, selector) {
 
 export async function checkPage(take, label) {
   const text = await take.page.evaluate(() => document.body.innerText);
-  const found = FORBIDDEN_TEXTS.filter((word) => text.includes(word));
+  const found = [...FORBIDDEN_TEXTS, ...(FORBIDDEN_TEXTS_BY_CULTURE[take.culture] ?? [])].filter((word) => text.includes(word));
   (take.report.textChecks ??= []).push({ label, found });
   if (found.length > 0) flag(take.report, `"${found.join(", ")}" is on the page at "${label}"`);
+}
+
+/** The cover dialog in its form state speaks the wording of the culture (de: title without "(Recovery)", description naming Klacks); cultures without an entry are not checked. */
+export async function checkDialogWording(take) {
+  const expected = EXPECTED_WORDING_BY_CULTURE[take.culture];
+  if (!expected) return;
+  const title = (await take.page.locator(SEL_DIALOG_TITLE).first().innerText()).trim();
+  const description = (await take.page.locator(SEL_DIALOG_DESCRIPTION).first().innerText()).trim();
+  take.report.dialogWording = { title, description };
+  if (title !== expected.dialogTitle) flag(take.report, `the cover dialog is titled "${title}" instead of "${expected.dialogTitle}"`);
+  if (!description.includes(expected.dialogDescription)) flag(take.report, `the cover dialog description "${description}" lacks "${expected.dialogDescription}"`);
+}
+
+/** The scenario banner speaks the wording of the culture (de: du form). */
+export async function checkBannerWording(take) {
+  const expected = EXPECTED_WORDING_BY_CULTURE[take.culture];
+  if (!expected) return;
+  const hint = (await take.page.locator(SEL_BANNER_HINT).first().innerText()).trim();
+  take.report.bannerHint = hint;
+  if (!hint.startsWith(expected.bannerHintStart)) flag(take.report, `the scenario banner says "${hint}" instead of starting with "${expected.bannerHintStart}"`);
 }
 
 /** Inside a cut region: the dialog holds the awaited element, no spinner is left and the page has stopped moving. */
@@ -389,8 +416,8 @@ async function inkOf(png) {
 }
 
 /**
- * Proof that the grid draws the moved icon (Ui d20a5e6f8, pp-icon-work-moved, top-left corner of the cell): inside a cut region the cursor overlay is hidden, the top-left corner of the
- * cell is screenshot (CSS pixels) and must hold drawn strokes; the top-right corner of the same cell is the control (it holds the lock icon only when the work has a lock level), so a dirty
+ * Proof that the grid draws the moved icon (Ui d20a5e6f8, pp-icon-work-moved, top-left corner of the cell): inside a cut region the cursor overlay is hidden, one viewport screenshot (CSS pixels) is
+ * taken and the top-left corner of the cell cut out of it must hold drawn strokes (a clipped screenshot would push frames of the clip size into the screencast and break the encoding); the top-right corner of the same cell is the control (it holds the lock icon only when the work has a lock level), so a dirty
  * or shifted cell cannot pass. Both crops are written next to the frames for a visual check. center is the cell centre as cellOf computes it.
  * @param expectLock - true when the work carries a lock level (then the top-right corner must hold the lock icon instead of being empty)
  */
@@ -398,11 +425,12 @@ export async function checkMovedIcon(take, center, label, { expectLock = false }
   const { page, report } = take;
   const left = center.x - CELL_WIDTH_PX / HALF;
   const top = center.y - SUB_ROW_HEIGHT_PX / HALF;
-  const clipAt = (x) => ({ x, y: top + ICON_CORNER.inset, width: ICON_CORNER.size, height: ICON_CORNER.size });
   await page.evaluate((id) => { const cursor = document.getElementById(id); if (cursor) cursor.style.visibility = "hidden"; }, CURSOR_ID);
   try {
-    const moved = await page.screenshot({ clip: clipAt(left + ICON_CORNER.inset), scale: "css" });
-    const control = await page.screenshot({ clip: clipAt(left + CELL_WIDTH_PX - ICON_CORNER.inset - ICON_CORNER.size), scale: "css" });
+    const shot = await page.screenshot({ scale: "css" });
+    const cornerAt = (x) => sharp(shot).extract({ left: Math.round(x), top: Math.round(top + ICON_CORNER.inset), width: ICON_CORNER.size, height: ICON_CORNER.size }).png().toBuffer();
+    const moved = await cornerAt(left + ICON_CORNER.inset);
+    const control = await cornerAt(left + CELL_WIDTH_PX - ICON_CORNER.inset - ICON_CORNER.size);
     const dir = path.join(process.env.KLACKS_VIDEO_FRAMES_DIR ?? os.tmpdir(), ICON_SHOT_DIR);
     await mkdir(dir, { recursive: true });
     const name = label.replace(/[^A-Za-z0-9-]+/g, "-");
@@ -467,6 +495,7 @@ async function openProposalAsScenario(take, ctx) {
   if (ctx.scenario.groupId !== options.groupId) throw new Error(`the scenario belongs to group ${ctx.scenario.groupId} - accepting it would replace data of another group`);
   if (report.scenario.from !== ABSENT_DAY || report.scenario.until !== ABSENT_DAY) throw new Error(`the scenario spans ${report.scenario.from}..${report.scenario.until} instead of ${ABSENT_DAY}`);
   await expectBanner(take, ctx.scenario.name);
+  await checkBannerWording(take);
   await measure(take, "scenario");
 }
 
@@ -502,6 +531,8 @@ export async function takeReplacementR1(take) {
     await pauseOf(take, "hover");
     await openMenuItem(take, target, MENU_COVER_ABSENCE);
     await waitModalAtRest(page);
+    await checkDialogWording(take);
+    await checkPage(take, "form");
     await captions.show(cues.form);
     await pauseOf(take, "field");
     await propose(take, ctx);

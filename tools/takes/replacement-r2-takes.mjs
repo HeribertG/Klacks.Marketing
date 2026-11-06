@@ -16,7 +16,9 @@
  * Publishable criterion (report.publishable, every part is read from the API, not from the screen): the cover request names Elsa, 14.-18.12., notifyEscalationRoster=false and no override; the proposal holds exactly the four covered and the
  * one open duty of the storyboard, every name is a team member; the scenario belongs to the group and spans 14.-18.12.; exactly one accept, status Accepted; the real plan shows five KU breaks and no work on Elsa, each of her
  * four covered duties on the proposed person with movedFromClientId = Elsa, no replacement WorkChange in the week, nobody holding the EMP of Friday before the manual step, Zoe holding it (not moved) after it;
- * the moved icon is drawn on Yannick's RVN after the accept (checkMovedIcon; the rows of the other three are below the frame in that scene); the tooltip of Yannick's RVN names Elsa; every other work of December is unchanged;
+ * in the scenario each of the four duties stands on its stand-in with movedFromClientId = Elsa and the moved icon is drawn on it (checkMovedIcon inside a cut after each row scroll: Yannick, Luc and Marc
+ * with Yannick's row on top, Tanja with Luc's row on top; the duty sits in the second sub-row when an on-call day shares the date, SCENARIO_WORK_SUB_ROW; since Ui b0cf8fa03 the grid redraws cells once the
+ * icons are loaded, before that Yannick's first duty stayed without icon); the moved icon is drawn on Yannick's RVN after the accept (the rows of the other three are below the frame in that scene); the tooltip of Yannick's RVN names Elsa; every other work of December is unchanged;
  * nobody who is free on Friday lacks a FREE command, no escalation chain exists; no error toast, no HTTP error on a recovery or work change call; no text "Winterthur" or "Uster" on the page at the checkpoints. An accept refused with HTTP 409 aborts the take.
  * Cultures de, en, fr, it: script.absenceName as in R1, script.untilDateTyped is the date as the datepicker of that language writes it (de 18.12.2026, en 12/18/2026, fr and it 18/12/2026; the app parses the typed layout of the active language).
  * @param take - page, api, options, recorder, mouse, report, captions, script, viewport, finalHoldMs (see recordTake in capture-app-videos.mjs)
@@ -25,10 +27,10 @@
 import * as S from "../lib/klacks-demo-session.mjs";
 import { SEL_MODAL, waitModalAtRest } from "../lib/modal.mjs";
 import { CANVAS_SETTLE_MS, CELL_WIDTH_PX, HALF, HTTP_POST, SUB_ROW_HEIGHT_PX, dateKey, gridBox, openSchedule, rowBoxes, worksIn } from "../lib/schedule-grid.mjs";
-import { SCENARIO_STATUS_ACCEPTED, getScenario, realFilter } from "../lib/scenario-demo.mjs";
+import { SCENARIO_STATUS_ACCEPTED, getScenario, realFilter, scenarioFilter } from "../lib/scenario-demo.mjs";
 import * as D from "../lib/security-demo.mjs";
 import { ENTRY_TYPE_BREAK, ENTRY_TYPE_COMMAND } from "../lib/security-plan-check.mjs";
-import { checkAbsenceLabel, checkMovedIcon, checkPage, hoverMovedNote, lockLevelsOf, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
+import { checkAbsenceLabel, checkBannerWording, checkDialogWording, checkMovedIcon, checkPage, hoverMovedNote, lockLevelsOf, openMenuItem, settleDialog, useRowOrder } from "./replacement-takes.mjs";
 import { decideViaBanner, expectBanner, flag, holdWithPoster, trackNetwork } from "./scenario-takes.mjs";
 import { checkStage, fitAllRows, measure, readToasts, scrollColumns, scrollRowsToTop, setRowSlider, showRowAtTop, trackHttpErrors, watchToasts } from "./security-takes.mjs";
 
@@ -67,7 +69,8 @@ const SHIFT_AREA_MAX_TOP = 620;
 const SEL_SPLIT_GUTTER = ".as-split-gutter";
 const SPLIT_DIRECTION_VERTICAL = "vertical";
 const DRAG_STEPS = 24;
-const STORY_ROWS = Object.freeze(["Elsa", "Zoe", "Yannick", "Luc", "Marc", "Tanja"]);
+const STORY_STAND_INS = Object.freeze(["Yannick", "Luc", "Marc", "Tanja"]);
+const STORY_ROWS = Object.freeze(["Elsa", "Zoe", ...STORY_STAND_INS]);
 const COVERED = Object.freeze({ "2026-12-14": "Yannick", "2026-12-15": "Luc", "2026-12-16": "Marc", "2026-12-17": "Tanja" });
 const OPEN_REASON = "no eligible candidate";
 const EXPECTED_SHIFTS = Object.freeze({ "2026-12-14": "RVN", "2026-12-15": "RVM", "2026-12-16": "OBT", "2026-12-17": "OBT", "2026-12-18": "EMP" });
@@ -79,6 +82,10 @@ const COLUMNS_SCROLLED = 12;
 const SUB_ROW_ABSENCE = 0;
 const SUB_ROW_WORK = 1;
 const SUB_ROW_FIRST_BEFORE_ABSENCE = 0;
+const SUB_ROW_SOLE_DUTY = 0;
+const SCENARIO_WORK_SUB_ROW = Object.freeze({ "2026-12-14": SUB_ROW_WORK, "2026-12-15": SUB_ROW_WORK, "2026-12-16": SUB_ROW_SOLE_DUTY, "2026-12-17": SUB_ROW_WORK });
+const SCENARIO_ICONS_WITH_FIRST_STAND_IN_ON_TOP = Object.freeze(["2026-12-14", "2026-12-15", "2026-12-16"]);
+const SCENARIO_ICONS_WITH_SECOND_STAND_IN_ON_TOP = Object.freeze(["2026-12-17"]);
 const ROWS = Object.freeze({ absent: 0, hand: 1, firstStandIn: 2 });
 const MENU_COVER_ABSENCE = "#coverAbsence";
 const SEL_RECOVERY_ABSENCE = `${SEL_MODAL} select#recovery-absence`;
@@ -262,7 +269,44 @@ async function openProposalAsScenario(take, ctx) {
   if (ctx.scenario.groupId !== options.groupId) throw new Error(`the scenario belongs to group ${ctx.scenario.groupId} - accepting it would replace data of another group`);
   if (report.scenario.from !== FIRST_DAY || report.scenario.until !== LAST_DAY) throw new Error(`the scenario spans ${report.scenario.from}..${report.scenario.until} instead of ${FIRST_DAY}..${LAST_DAY}`);
   await expectBanner(take, ctx.scenario.name);
+  await checkBannerWording(take);
   await measure(take, "scenario");
+  await checkScenarioMoves(take, ctx);
+}
+
+/** The four duties in the scenario, read from the API: each on its stand-in, moved from Elsa; their lock levels decide whether the control corner of the icon check may hold the lock icon. */
+async function checkScenarioMoves(take, ctx) {
+  const { api, report } = take;
+  const scenarioData = await api.schedule(scenarioFilter(ctx.decemberFilter, ctx.outcome.token));
+  const moved = Object.entries(COVERED).map(([day, firstName]) => ({ day, ...movedDuty(scenarioData, ctx, day, firstName) }));
+  report.scenarioMoves = moved;
+  for (const duty of moved) if (!duty.movedFromAbsent) flag(report, `${duty.shift} of ${duty.day} is not on ${duty.standIn} as moved from ${ABSENT_FIRST_NAME} in the scenario`);
+  ctx.scenarioMovedLock = Object.fromEntries(Object.entries(COVERED).map(([day, firstName]) => {
+    const duty = worksOf(onDay(scenarioData, clientNamed(scenarioData.clients, firstName).id, day)).find((entry) => entry.abbreviation === EXPECTED_SHIFTS[day]);
+    return [day, Boolean(duty?.lockLevel)];
+  }));
+}
+
+/** Inside a cut after a row scroll of the scenario: the moved icon on the duties of the given days; a duty whose cell is not fully in the grid frame fails the take, the storyboard shows it there. */
+async function checkScenarioIcons(take, ctx, days) {
+  const { page, recorder, report } = take;
+  await recorder.beginFast(CUT);
+  try {
+    await page.waitForTimeout(CANVAS_SETTLE_MS);
+    const grid = await gridBox(page);
+    for (const day of days) {
+      const firstName = COVERED[day];
+      const center = await cell(take, day, ROWS.firstStandIn + STORY_STAND_INS.indexOf(firstName), SCENARIO_WORK_SUB_ROW[day]);
+      const inFrame = center.y - SUB_ROW_HEIGHT_PX / HALF >= grid.y && center.y + SUB_ROW_HEIGHT_PX / HALF <= grid.y + grid.height;
+      if (!inFrame) {
+        flag(report, `the scenario duty of ${firstName} on ${day} is not in the frame for the moved icon check`);
+        continue;
+      }
+      await checkMovedIcon(take, center, `r2-scenario-${firstName}`, { expectLock: ctx.scenarioMovedLock[day] });
+    }
+  } finally {
+    await recorder.endFast();
+  }
 }
 
 /** Layout of every picture: the story rows on top, the shift area collapsed, slider at 100, Monday as the second column so all five days and Saturday stand in the frame. */
@@ -413,6 +457,8 @@ export async function takeReplacementR2(take) {
     await pauseOf(take, "hover");
     await openMenuItem(take, target, MENU_COVER_ABSENCE);
     await waitModalAtRest(page);
+    await checkDialogWording(take);
+    await checkPage(take, "form");
     await captions.show(cues.form);
     await pauseOf(take, "formLead");
     await propose(take, ctx);
@@ -429,8 +475,10 @@ export async function takeReplacementR2(take) {
     await pauseOf(take, "cells");
     await captions.show(cues.standIns);
     await showRowAtTop(take, ROWS.firstStandIn);
+    await checkScenarioIcons(take, ctx, SCENARIO_ICONS_WITH_FIRST_STAND_IN_ON_TOP);
     await pauseOf(take, "standIns");
     await showRowAtTop(take, ROWS.firstStandIn + 1);
+    await checkScenarioIcons(take, ctx, SCENARIO_ICONS_WITH_SECOND_STAND_IN_ON_TOP);
     await pauseOf(take, "standIns");
     await captions.show(cues.answers);
     await pauseOf(take, "answers");
