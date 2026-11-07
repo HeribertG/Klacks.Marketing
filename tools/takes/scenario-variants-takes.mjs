@@ -96,7 +96,7 @@ const clientNamed = (clients, firstName) => {
 };
 const tokenOfResponse = (response) => response.request().postDataJSON()?.analyseToken ?? null;
 
-function waitReload(take, token) {
+export function waitReload(take, token) {
   const { page, options } = take;
   const loaded = page.waitForResponse((response) => response.request().method() === HTTP_POST && response.url().includes(SCHEDULE_ROUTE_PART)
     && response.request().postDataJSON()?.selectedGroup === options.groupId && (token === undefined ? Boolean(tokenOfResponse(response)) : tokenOfResponse(response) === token), { timeout: RELOAD_TIMEOUT_MS });
@@ -104,7 +104,7 @@ function waitReload(take, token) {
   return loaded;
 }
 
-async function settled(take, reload, label) {
+export async function settled(take, reload, label) {
   const seen = await reload.then(() => true, () => false);
   if (!seen) flag(take.report, `no schedule reload after "${label}"`);
   await take.page.waitForTimeout(CANVAS_SETTLE_MS);
@@ -171,7 +171,7 @@ async function createVariantInPicture(take, name) {
 }
 
 /** @param cutWait - the dark grid with spinner of the reload is left out of the video; off inside a cut region */
-async function selectVariant(take, scenario, { cutWait = true } = {}) {
+export async function selectVariant(take, scenario, { cutWait = true } = {}) {
   const { recorder } = take;
   const reload = waitReload(take, scenario.token);
   await clickSelector(take, SEL_SELECTOR_BTN, MOVE.normal);

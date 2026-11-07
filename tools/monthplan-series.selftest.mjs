@@ -1,8 +1,8 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Self-test of the clip series Monatsplanung (M1 monthplan-wishes, M2 monthplan-commands, M3 security-month-plan), Replacement (R1, R2) and Szenarien (S0 scenario-variants) in
- * de, en, fr and it, without a browser, a server or a database: every caption track has exactly the cues of its take, fits the caption pill (42 characters) and says nothing on the list of
+ * Self-test of the clip series Monatsplanung (M1 monthplan-wishes, M2 monthplan-commands, M3 security-month-plan), Replacement (R1, R2) and Szenarien (S0 scenario-variants; S1 scenario-keys and
+ * scenario-keys-wizard in German only, testGermanOnlyKeys) in de, en, fr and it, without a browser, a server or a database: every caption track has exactly the cues of its take, fits the caption pill (42 characters) and says nothing on the list of
  * forbidden statements; every script entry has the beats and fields of the German one; the run-time captions of M1 and M2 stay within the pill for every worst case and reproduce the
  * German wording of the recorded clips; the story captions over the Veo scenes (story-video/*-captions.<culture>.json) fit the reading budget of their recipes (17 characters per second);
  * the app texts of lib/ui-texts.mjs and the absence names of the scripts agree with Klacks.Ui and Klacks.Api when those checkouts sit next to Klacks.Marketing.
@@ -30,6 +30,8 @@ import * as m3 from "./story-video/monthplan-recipe-m3.mjs";
 import * as r1 from "./story-video/replacement-recipe-r1.mjs";
 import * as r2 from "./story-video/replacement-recipe-r2.mjs";
 import * as s0 from "./story-video/scenario-recipe-s0.mjs";
+import { SCENARIO_KEYS_CUES_BY_VIDEO, SCENARIO_KEYS_VIDEOS, VIDEO_SCENARIO_KEYS, VIDEO_SCENARIO_KEYS_WIZARD } from "./takes/scenario-keys-takes.mjs";
+import * as s1 from "./story-video/scenario-recipe-s1.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const CULTURES = ["de", "en", "fr", "it"];
@@ -86,6 +88,7 @@ const WORST_HOURS = "99:59";
 const WORST_DAYS = 10;
 const BOOKED_FIRST_NAME = "Clara";
 const SCRIPTED = TAKES.filter((take) => take.script).map((take) => take.video);
+const S1_SOURCE_CROSSFADE = Object.freeze({ from: 3.9, until: 4.5 });
 
 const readJson = async (file) => JSON.parse(await readFile(path.join(toolsDir, file), "utf8"));
 const tracksOf = async (culture) => readJson(`simple-videos.${culture}.json`);
@@ -322,7 +325,53 @@ async function testAbsenceNames() {
   }
 }
 
+/** S1 is recorded in German only: its two video ids, its story captions and its script entry are checked here instead of in the four-language lists above. */
+async function testGermanOnlyKeys() {
+  const culture = "de";
+  const tracks = await tracksOf(culture);
+  for (const video of SCENARIO_KEYS_VIDEOS) {
+    const track = tracks[video]?.captions;
+    assert.ok(track, `${video}/${culture}: no caption track`);
+    assert.deepEqual(validateCaptionTrack(video, track, SCENARIO_KEYS_CUES_BY_VIDEO[video]), [], `${video}/${culture}: caption track`);
+    assert.deepEqual(Object.keys(track).sort(), [...SCENARIO_KEYS_CUES_BY_VIDEO[video]].sort(), `${video}/${culture}: cue keys`);
+    for (const [cue, text] of Object.entries(track)) assert.deepEqual(forbiddenIn(culture, text), [], `${video}/${culture}/${cue}: "${text}"`);
+  }
+  assert.ok(!SCENARIO_KEYS_CUES_BY_VIDEO[VIDEO_SCENARIO_KEYS].includes("planWizard") && SCENARIO_KEYS_CUES_BY_VIDEO[VIDEO_SCENARIO_KEYS_WIZARD].includes("planWizard"), "only the wizard id has the cue planWizard");
+
+  const story = "scenario-s1-captions";
+  assert.equal(s1.CAPTIONS_PREFIX, `${story}.`);
+  const variant = s1.VARIANTS[s1.variantFor()];
+  assert.equal(variant.morningClip, undefined, "S1 takes its closing scene from the raw clip");
+  assert.ok(variant.rawParts.every((part) => !part.clip && part.to <= S1_SOURCE_CROSSFADE.from), "the opening ends before the cross-fade of the source");
+  assert.ok(variant.morning.from >= S1_SOURCE_CROSSFADE.until, "the closing starts after the cross-fade of the source");
+  const windows = s1.captionWindows(variant);
+  const file = await readJson(`story-video/${story}.${culture}.json`);
+  assert.equal(file.culture, culture);
+  assert.deepEqual(Object.keys(file.captions).sort(), [...variant.captionKeys].sort(), `${story}: keys`);
+  for (const key of variant.captionKeys) {
+    const text = file.captions[key];
+    assert.deepEqual(forbiddenIn(culture, text), [], `${story}/${key}: "${text}"`);
+    const perSecond = [...text].length / (windows[key][1] - windows[key][0]);
+    assert.ok(perSecond <= MAX_CHARS_PER_SECOND, `${story}/${key}: ${perSecond.toFixed(1)} chars/s`);
+  }
+
+  const scripts = await readJson("capture-app-videos.scripts.json");
+  const base = scripts[VIDEO_SCENARIO_KEYS]?.[culture];
+  assert.ok(base?.beats, `${VIDEO_SCENARIO_KEYS}/${culture}: no script entry`);
+  assert.deepEqual(Object.keys(scripts[VIDEO_SCENARIO_KEYS]), [culture], `${VIDEO_SCENARIO_KEYS}: German only`);
+  assert.deepEqual(Object.keys(scripts[VIDEO_SCENARIO_KEYS_WIZARD]?.[culture] ?? {}), ["beats"], `${VIDEO_SCENARIO_KEYS_WIZARD}: only adds beats`);
+  assert.deepEqual(Object.keys(scripts[VIDEO_SCENARIO_KEYS_WIZARD][culture].beats).sort(), ["wizard", "wizardLead"]);
+  assert.ok(file.captions.k1.includes(`Über ${base.captionPeopleFloor} `), "k1 names the floor that the take checks against the demand of both keys");
+  assert.notEqual(base.scenarioBoth, base.scenarioDay);
+  assert.ok(base.abbreviations.day.every((abbreviation) => !base.abbreviations.night.includes(abbreviation)));
+
+  if (!existsSync(UI_I18N_DIR)) return;
+  const messages = JSON.parse(await readFile(path.join(UI_I18N_DIR, `${culture}.json`), "utf8"));
+  for (const video of SCENARIO_KEYS_VIDEOS) assert.ok(tracks[video].captions.original.toLowerCase().includes(messages["scenario.exit"].toLowerCase()), `${video}: the caption original quotes "${messages["scenario.exit"]}"`);
+}
+
 await testCaptionTracks();
+await testGermanOnlyKeys();
 await testForbiddenStatements();
 await testStoryCaptions();
 await testScriptEntries();

@@ -6,7 +6,11 @@
 #         m2  Keywords       monthplan-commands    master klacks_marketing_security_bern_m2   Monatsplanung
 #         m3  Monat          security-month-plan   master klacks_marketing_security_bern_m3   Monatsplanung
 #         s0  Szenarien      scenario-variants     master klacks_marketing_security_bern_s1   Szenarien
-#   lang  en | fr | it (de is accepted and stays as it is; KLACKS_ALLOW_DE=1 lifts the refusal)
+#         s1  Keys           scenario-keys         master klacks_marketing_security_bern_s2   Szenarien   (KLACKS_S1_WIZARD=1 records scenario-keys-wizard, the take with the AutoWizard beat)
+#   lang  en | fr | it (de is accepted and stays as it is; KLACKS_ALLOW_DE=1 lifts the refusal); s1 exists in German only: de, en/fr/it are refused
+#   s1 needs KLACKS_RELEASE_VERSION (no default: the release with the key fixes is named by the caller) and expects the migrations of its master (175, 20261104000000_AddWorkSplitFromWorkId,
+#   read from klacks_marketing_security_bern_s2 on 2026-11-06); a newer release that adds migrations needs KLACKS_EXPECTED_* (or a master migrated by it) - the env always wins over the clip default.
+#   s1 writes the German pattern <stem>-de-vorschau-v<n>.mp4 (KLACKS_NAME_INFIX overrides it, an empty value included).
 # Steps: static checks (tools, release, clips, master, archive target) -> lock + run folder + gate -> throw-away copy of the master -> the released API (it serves the released UI itself,
 # one origin on https://localhost:5011) on the copy -> take (capture-app-videos --test-take) -> services stopped -> take report must say publishable -> post-processing of the take (m2:
 # dark frames and the 1.45 s trim, as in the accepted German cut) -> story build (build-weekplan-video --culture <lang>) -> the mp4 is copied into the archive only when the take was
@@ -14,7 +18,8 @@
 #
 # Usage:  record-series.sh <clip> <lang>             full run
 #         record-series.sh --dry-run <clip> <lang>   gate and static checks only, nothing is started, written or copied (database reads are read-only)
-#         record-series.sh --prepare                 downloads and unpacks the release package into KLACKS_RELEASE_DIR (network and disk only, nothing is started)
+#         record-series.sh --prepare                 downloads and unpacks the release package into KLACKS_RELEASE_DIR (network and disk only, nothing is started; gh: KLACKS_GH, else
+#                                                    C:\Program Files\GitHub CLI\gh.exe, else gh.exe on the PATH - never a gh script without extension)
 # Env (required for a run): KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD   the demo admin; never written into a file or the log
 # Env (optional): KLACKS_RELEASE_VERSION (1.0.55)  KLACKS_RELEASE_DIR (%TEMP%\klacks-release-<version>, contains app\ and ui\)  KLACKS_MEDIA_ARCHIVE (<super repo>\Klacks.MediaArchive)
 #   KLACKS_SERIES_WORK (%TEMP%\klacks-series: lock and run folders)  KLACKS_MIN_FREE_MB (4096)  KLACKS_MIN_FREE_DISK_MB (6144)  KLACKS_TAKE_TIMEOUT_S (2700, take AND encoding)
@@ -48,15 +53,14 @@ MIN_FREE_MB="${KLACKS_MIN_FREE_MB:-4096}"
 MIN_DISK_MB="${KLACKS_MIN_FREE_DISK_MB:-6144}"
 TAKE_TIMEOUT="${KLACKS_TAKE_TIMEOUT_S:-2700}"
 BUILD_TIMEOUT="${KLACKS_BUILD_TIMEOUT_S:-1200}"
-EXPECTED_LAST_MIGRATION="${KLACKS_EXPECTED_LAST_MIGRATION:-20261027091035_AddEvalRunItemMissKindAndToolsetTrace}"
-EXPECTED_MIGRATIONS="${KLACKS_EXPECTED_MIGRATIONS:-170}"
+DEFAULT_LAST_MIGRATION="20261027091035_AddEvalRunItemMissKindAndToolsetTrace"
+DEFAULT_MIGRATIONS=170
 PSQL="${PSQL:-/c/Program Files/PostgreSQL/17/bin/psql.exe}"
 export PGPASSWORD="${PGPASSWORD:-admin}"
 GROUP_NAME="Bern Objektschutz"
 API_DEST="$TMPU/klacks-rec-series-run"
 API_URL="https://localhost:5011"
 LOCKDIR="$WORK/series.lock"
-INFIX="${KLACKS_NAME_INFIX:-}"
 
 MODE=run
 case "${1:-}" in
@@ -100,7 +104,9 @@ trap 'exit 143' TERM HUP
 if [ "$MODE" = prepare ]; then
   command -v powershell.exe > /dev/null || die 2 "powershell.exe not found"
   [ -f "$REL/app/Klacks.Api.exe" ] && die 4 "release already unpacked in $(w "$REL")"
-  timeout 900 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(w "$SCRIPTS/series-prepare-release.ps1")" -Version "$RELEASE_VERSION" -Destination "$(w "$REL")" < /dev/null
+  GH_ARGS=()
+  if [ -n "${KLACKS_GH:-}" ]; then GH_ARGS=(-Gh "$KLACKS_GH"); fi
+  timeout 900 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(w "$SCRIPTS/series-prepare-release.ps1")" -Version "$RELEASE_VERSION" -Destination "$(w "$REL")" "${GH_ARGS[@]}" < /dev/null
   exit $?
 fi
 
@@ -121,22 +127,34 @@ if [ "$MODE" = stop ]; then
   exit 0
 fi
 
-[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|s0> <en|fr|it>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
+[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|s0|s1> <en|fr|it|de>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
 CLIP="$(printf '%s' "$1" | tr 'A-Z' 'a-z')"
 LANGCODE="$(printf '%s' "$2" | tr 'A-Z' 'a-z')"
 
+CLIP_LAST_MIGRATION=""; CLIP_MIGRATIONS=""; GERMAN_ONLY=0; RELEASE_REQUIRED=0; INFIX_DEFAULT=""; MASTER_KEYS=""
 case "$CLIP" in
   m1) VIDEO=monthplan-wishes;    MASTER=klacks_marketing_security_bern_m1; RECIPE=monthplan-recipe-m1.mjs;  RAW=gemini_generated_video_3ec1f178.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m1; DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
   m2) VIDEO=monthplan-commands;  MASTER=klacks_marketing_security_bern_m2; RECIPE=monthplan-recipe-m2.mjs;  RAW=gemini_generated_video_7d4d55e8.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m2; DARK_DEFAULT=1; TRIM_DEFAULT=decide:1.45 ;;
   m3) VIDEO=security-month-plan; MASTER=klacks_marketing_security_bern_m3; RECIPE=monthplan-recipe-m3.mjs;  RAW=gemini_generated_video_b4401dfc.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m3; DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
   s0) VIDEO=scenario-variants;   MASTER=klacks_marketing_security_bern_s1; RECIPE=scenario-recipe-s0.mjs;   RAW=gemini_generated_video_7bfe3a94.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s0;    DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
-  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, s0)" ;;
+  s1) VIDEO=scenario-keys;       MASTER=klacks_marketing_security_bern_s2; RECIPE=scenario-recipe-s1.mjs;   RAW=gemini_generated_video_9578f9f9.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s1;    DARK_DEFAULT=0; TRIM_DEFAULT=none
+      CLIP_LAST_MIGRATION=20261104000000_AddWorkSplitFromWorkId; CLIP_MIGRATIONS=175; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau; MASTER_KEYS="'Messe Tagbetrieb','Messe Nachtwache'"
+      if [ "${KLACKS_S1_WIZARD:-0}" = 1 ]; then VIDEO=scenario-keys-wizard; fi ;;
+  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, s0, s1)" ;;
 esac
-case "$LANGCODE" in
-  en|fr|it) ;;
-  de) [ "${KLACKS_ALLOW_DE:-0}" = 1 ] || die 2 "de is accepted and stays as it is (set KLACKS_ALLOW_DE=1 to record it anyway)" ;;
-  *) die 2 "unknown language '$LANGCODE' (en, fr, it)" ;;
-esac
+if [ "$GERMAN_ONLY" = 1 ]; then
+  [ "$LANGCODE" = de ] || die 2 "clip $CLIP exists in German only (de)"
+else
+  case "$LANGCODE" in
+    en|fr|it) ;;
+    de) [ "${KLACKS_ALLOW_DE:-0}" = 1 ] || die 2 "de is accepted and stays as it is (set KLACKS_ALLOW_DE=1 to record it anyway)" ;;
+    *) die 2 "unknown language '$LANGCODE' (en, fr, it)" ;;
+  esac
+fi
+if [ "$RELEASE_REQUIRED" = 1 ] && [ -z "${KLACKS_RELEASE_VERSION:-}" ]; then die 2 "clip $CLIP needs KLACKS_RELEASE_VERSION (the release that carries its fixes; there is no default)"; fi
+EXPECTED_LAST_MIGRATION="${KLACKS_EXPECTED_LAST_MIGRATION:-${CLIP_LAST_MIGRATION:-$DEFAULT_LAST_MIGRATION}}"
+EXPECTED_MIGRATIONS="${KLACKS_EXPECTED_MIGRATIONS:-${CLIP_MIGRATIONS:-$DEFAULT_MIGRATIONS}}"
+INFIX="${KLACKS_NAME_INFIX-$INFIX_DEFAULT}"
 DARK_FIX="${KLACKS_DARK_FIX:-$DARK_DEFAULT}"
 TRIM="${KLACKS_TRIM:-$TRIM_DEFAULT}"
 TAKEDB="${MASTER}_series_${LANGCODE}_take"
@@ -183,6 +201,11 @@ check_static() {
   fi
   GROUP_ON_MASTER="$(psql_db "$MASTER" -c "select count(*) from \"group\" where name = '$GROUP_NAME' and not is_deleted")"
   [ "$GROUP_ON_MASTER" = 1 ] || { say "master $MASTER holds $GROUP_ON_MASTER groups named '$GROUP_NAME' (exactly 1 required)"; return 1; }
+  if [ -n "$MASTER_KEYS" ]; then
+    local keys
+    keys="$(psql_db "$MASTER" -c "select count(*) from analyse_scenarios where kind = 1 and status = 0 and not is_deleted and name in ($MASTER_KEYS)")"
+    [ "$keys" = 2 ] || { say "master $MASTER holds $keys active keys of ($MASTER_KEYS) instead of 2 (scenario-keys-demo/seed-keys.mjs)"; return 1; }
+  fi
   return 0
 }
 
@@ -191,7 +214,7 @@ resolve_target() {
   shopt -s nullglob
   for file in "$ARCHIVE_DIR/$STEM"-*.mp4; do
     base="${file##*/}"
-    if [[ "$base" =~ ^${STEM}-de-vorschau-v([0-9]+)\.mp4$ ]]; then
+    if [ "$LANGCODE" != de ] && [[ "$base" =~ ^${STEM}-de-vorschau-v([0-9]+)\.mp4$ ]]; then
       [ -z "$de_version" ] || [ "${BASH_REMATCH[1]}" -gt "$de_version" ] && de_version="${BASH_REMATCH[1]}"
     elif [[ "$base" =~ ^${STEM}-${LANGCODE}(-[a-z]+)?-v([0-9]+)\.mp4$ ]]; then
       [ -z "$same_lang" ] || [ "${BASH_REMATCH[2]}" -gt "$same_lang" ] && same_lang="${BASH_REMATCH[2]}"
@@ -221,6 +244,7 @@ if [ "$MODE" = dry ]; then
   [ "$FAIL" = 1 ] || resolve_target || FAIL=1
   [ "$FAIL" = 1 ] || say "target: $TARGET_NAME (version $OUT_VERSION) in $ARCHIVE_DIR"
   say "video $VIDEO, master $MASTER -> copy $TAKEDB, recipe $RECIPE, raw $RAW, dark-frame fix $DARK_FIX, trim $TRIM, accept-gap ${KLACKS_SECURITY_ACCEPT_GAP:-unset}"
+  say "release $RELEASE_VERSION in $(w "$REL"), expected migrations $EXPECTED_MIGRATIONS ending with $EXPECTED_LAST_MIGRATION, name infix '${INFIX}'"
   say "credentials: user $([ -n "${KLACKS_DEMO_USER:-}" ] && echo set || echo MISSING), password $([ -n "${KLACKS_DEMO_PASSWORD:-}" ] && echo set || echo MISSING)"
   if [ -z "${KLACKS_DEMO_USER:-}" ] || [ -z "${KLACKS_DEMO_PASSWORD:-}" ]; then say "KLACKS_DEMO_USER / KLACKS_DEMO_PASSWORD are required for a run"; FAIL=1; fi
   run_gate || FAIL=1
