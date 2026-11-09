@@ -23,7 +23,7 @@
         <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-7 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
             <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Sh("cta.tryButton")
         </button>
-        <a href="@InstallationHref" class="px-7 py-4 rounded-xl font-bold text-primary bg-surface-container-low hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
+        <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="px-7 py-4 rounded-xl font-bold text-primary bg-surface-container-low hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
             <span class="material-symbols-outlined" aria-hidden="true">download</span> @Sh("cta.downloadButton")
         </a>
     </div>
@@ -87,7 +87,7 @@
         <p class="text-on-surface-variant leading-relaxed">@Tx("needs.docker")</p>
         <p class="font-semibold text-secondary">@Kb("hero.growth")</p>
         <div class="flex flex-wrap gap-6 mt-6 text-sm">
-            <a href="@InstallationHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("needs.installation")</a>
+            <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("needs.installation")</a>
             <a href="@SmallBusinessHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">storefront</span> @Tx("needs.smallBusiness")</a>
         </div>
     </div>
@@ -125,7 +125,7 @@
 
     private string CountryKey => string.IsNullOrEmpty(Country) ? LanguageCountries.DefaultCountryFor(ResolvedCulture) : Country;
 
-    private string InstallationHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.InstallationSlug);
+    private string StoreHref => CountryPageLinks.StoreHref(Culture, CountryKey);
 
     private string SmallBusinessHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.SmallBusinessSlug);
 

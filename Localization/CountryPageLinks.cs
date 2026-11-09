@@ -10,6 +10,7 @@ namespace Klacks.Marketing.Localization;
 /// <param name="simpleModeEnabled">Value of SimpleMode:Enabled; StartHref then targets the expert start page instead of the simple country root</param>
 public static class CountryPageLinks
 {
+    // Slug of the former installation pages, which now redirect to the Klacks Store (InstallationRedirect).
     public const string InstallationSlug = "installation";
     public const string PartnerSlug = "partner";
     public const string LicenseSlug = "lizenz";
@@ -29,6 +30,16 @@ public static class CountryPageLinks
         var path = SiteModes.HasSimplePage(culture.Code, simpleModeEnabled) ? SiteModes.ExpertRoutePath(countryKey) : countryKey;
 
         return culture.UrlSlug.Length == 0 ? $"/{path}" : $"/{culture.UrlSlug}/{path}";
+    }
+
+    // The Klacks Store page of the country (store home for a country without a package) in the active culture: Klacks
+    // is installed only via the store. Accepts the culture's URL slug or code ("zh-cn", "zh-CN"; null for the default).
+    public static string StoreHref(string? cultureSlug, string? country)
+    {
+        var culture = SupportedCultures.Resolve(cultureSlug);
+        var countryKey = string.IsNullOrEmpty(country) ? LanguageCountries.DefaultCountryFor(culture.Code) : country;
+
+        return RegionPackages.StoreUrl(ExternalLinks.MarketplaceUrl, RegionPackages.CountryCode(countryKey), culture.Code);
     }
 
     public static string Href(string? cultureSlug, string? country, string slug)

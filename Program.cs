@@ -31,6 +31,8 @@ var app = builder.Build();
 _ = app.Services.GetRequiredService<ILocalizedScreenshotResolver>();
 _ = app.Services.GetRequiredService<ILocalizedVideoCatalog>();
 
+var marketplaceBaseUrl = app.Configuration[ExternalLinks.MarketplaceBaseUrlConfigKey] ?? ExternalLinks.MarketplaceUrl;
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -79,6 +81,15 @@ app.Use(async (context, next) =>
 
     if (RequiresKnownPage(path))
     {
+        // Klacks is installed only via the Klacks Store: the former installation pages answer with a single 301 to the
+        // store page of the country. Ahead of the other redirects so there is no intermediate hop, and without the
+        // request query, since the store URL carries its own "?culture=".
+        if (InstallationRedirect.ResolveTarget(path, marketplaceBaseUrl) is { } storeTarget)
+        {
+            context.Response.Redirect(storeTarget, permanent: true);
+            return;
+        }
+
         if (LegacyProductRoutes.ResolveTarget(path) is { } target)
         {
             context.Response.Redirect(target + context.Request.QueryString, permanent: true);

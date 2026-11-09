@@ -9,7 +9,6 @@ public sealed class JsonPageContentProvider : IPageContentProvider
 
     private readonly string _contentRoot;
     private readonly ConcurrentDictionary<string, IndustryPageContent?> _industryCache = new();
-    private readonly ConcurrentDictionary<string, InstallPageContent?> _installCache = new();
     private readonly ConcurrentDictionary<string, IReadOnlyDictionary<string, string>?> _flatCache = new();
     private readonly ConcurrentDictionary<string, IndustryRedesignContent?> _redesignCache = new();
     private readonly ConcurrentDictionary<string, bool> _availabilityCache = new();
@@ -32,17 +31,6 @@ public sealed class JsonPageContentProvider : IPageContentProvider
             ?? LoadIndustryPage(SupportedCultures.DefaultCode, pageKey)
             ?? (masterKey is null ? null : LoadIndustryPage(SupportedCultures.DefaultCode, masterKey))
             ?? throw new InvalidOperationException($"No content found for industry page '{pageKey}'.");
-    }
-
-    public InstallPageContent GetInstallPage(string cultureCode, string pageKey)
-    {
-        var masterKey = CountryLessKey(pageKey);
-
-        return LoadInstallPage(cultureCode, pageKey)
-            ?? (masterKey is null ? null : LoadInstallPage(cultureCode, masterKey))
-            ?? LoadInstallPage(SupportedCultures.DefaultCode, pageKey)
-            ?? (masterKey is null ? null : LoadInstallPage(SupportedCultures.DefaultCode, masterKey))
-            ?? throw new InvalidOperationException($"No content found for install page '{pageKey}'.");
     }
 
     // Mirrors the first two steps of the resolution order above: everything after
@@ -154,21 +142,6 @@ public sealed class JsonPageContentProvider : IPageContentProvider
 
             using var stream = File.OpenRead(path);
             return JsonSerializer.Deserialize<IndustryRedesignContent>(stream, SerializerOptions);
-        });
-    }
-
-    private InstallPageContent? LoadInstallPage(string cultureCode, string pageKey)
-    {
-        return _installCache.GetOrAdd($"{cultureCode}/{pageKey}", _ =>
-        {
-            var path = Path.Combine(_contentRoot, cultureCode, $"{pageKey}.json");
-            if (!File.Exists(path))
-            {
-                return null;
-            }
-
-            using var stream = File.OpenRead(path);
-            return JsonSerializer.Deserialize<InstallPageContent>(stream, SerializerOptions);
         });
     }
 

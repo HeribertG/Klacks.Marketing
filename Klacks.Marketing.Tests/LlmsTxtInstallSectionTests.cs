@@ -2,6 +2,7 @@
 
 namespace Klacks.Marketing.Tests;
 
+using System.Text.RegularExpressions;
 using Klacks.Marketing.Localization;
 using Klacks.Marketing.Seo;
 using NUnit.Framework;
@@ -9,7 +10,8 @@ using Shouldly;
 
 /// <summary>
 /// llms-full.txt carries the real install commands and docs links, so an assistant helping a layperson does not
-/// have to invent commands; llms.txt links the docs as well.
+/// have to invent commands; llms.txt links the docs as well. Both point to the Klacks Store for installing and no longer
+/// to the retired installation pages.
 /// </summary>
 [TestFixture]
 public class LlmsTxtInstallSectionTests
@@ -21,6 +23,7 @@ public class LlmsTxtInstallSectionTests
     private const string DocsHomeUrl = BaseUrl + ExternalLinks.DocsBasePath + "en/";
     private const string DocsInstallUrl = DocsHomeUrl + "erste-schritte/installation-und-playground/";
     private const string StoreHomeUrl = ExternalLinks.MarketplaceUrl + "/?culture=en";
+    private const string InstallationPagePattern = @"/installation(?![\w-])";
     private static readonly string[] DirectDownloadMarkers = ["/releases/", "/api/regions/", "curl ", "wget "];
 
     [Test]
@@ -51,6 +54,13 @@ public class LlmsTxtInstallSectionTests
             full.ShouldNotContain(marker);
             shortText.ShouldNotContain(marker);
         }
+    }
+
+    [Test]
+    public void Full_and_short_no_longer_link_the_retired_installation_pages()
+    {
+        Regex.IsMatch(LlmsTxtGenerator.BuildFull(BaseUrl), InstallationPagePattern).ShouldBeFalse();
+        Regex.IsMatch(LlmsTxtGenerator.BuildShort(BaseUrl), InstallationPagePattern).ShouldBeFalse();
     }
 
     [Test]

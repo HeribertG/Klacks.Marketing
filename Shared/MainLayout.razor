@@ -765,7 +765,7 @@ else
         {
             <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@ExportsHref">@Sh("footer.exports")</a>
         }
-        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank">@Sh("nav.download")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" data-c="DownloadClick">@Sh("nav.download")</a>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank">@Sh("nav.docs")</a>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank">@Sh("nav.store")</a>
     </text>;
@@ -879,7 +879,7 @@ else
             {
                 <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@ExportsHref" @onclick="CloseMobileMenu">@Sh("footer.exports")</a>
             }
-            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@InstallationHref" target="_blank" data-c="DownloadClick" @onclick="CloseMobileMenu">@Sh("nav.download")</a>
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DocsHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.docs")</a>
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoreHref" target="_blank" @onclick="CloseMobileMenu">@Sh("nav.store")</a>
             <div class="flex flex-col gap-1 pt-2 border-t border-surface-container-high">

@@ -12,17 +12,13 @@ using Shouldly;
 
 /// <summary>
 /// The simple page's video plays only on request and is counted once by c.js, it falls back without recordings; the
-/// share block offers a mail template and copying without any storage; the install link target exists on the
-/// install page.
+/// share block offers a mail template and copying without any storage.
 /// </summary>
 [TestFixture]
 public class SimpleBuildingBlocksTests
 {
     private const string SwissCountry = "land-ch";
     private const string SharedUrl = "https://klacks-software.ch/land-ch";
-    private const string SectionStart = "<section";
-    private const string SectionEnd = "</section>";
-    private const string OfficePcCardStart = "<div class=\"card-hover p-8 ";
 
     [Test]
     public async Task Recorded_video_plays_like_the_expert_demo_videos_and_carries_the_play_event()
@@ -142,22 +138,6 @@ public class SimpleBuildingBlocksTests
         script.ShouldNotContain("sessionStorage");
         script.ShouldNotContain("document.cookie");
         MarketingProjectPaths.ReadSource("Pages/_Layout.cshtml").ShouldContain("js/share-link.js");
-    }
-
-    [Test]
-    public async Task Install_page_puts_the_office_pc_anchor_outside_the_reveal_animation()
-    {
-        PageSectionIds.OfficePc.ShouldBe("buero-pc");
-
-        var html = await InstallPageRenderer.RenderAsync(SupportedCultures.DefaultCode, enabled: true);
-        var anchor = html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", StringComparison.Ordinal);
-
-        anchor.ShouldBeGreaterThan(-1);
-        html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", anchor + 1, StringComparison.Ordinal).ShouldBe(-1);
-        var lastSectionStart = html.LastIndexOf(SectionStart, anchor, StringComparison.Ordinal);
-        var lastSectionEnd = html.LastIndexOf(SectionEnd, anchor, StringComparison.Ordinal);
-        lastSectionEnd.ShouldBeGreaterThanOrEqualTo(lastSectionStart, "the anchor must not sit inside a .reveal section (both are -1 when no section precedes it): its transform shifts the jump target under the fixed header");
-        html.IndexOf(OfficePcCardStart, anchor, StringComparison.Ordinal).ShouldBeGreaterThan(anchor);
     }
 
     [Test]

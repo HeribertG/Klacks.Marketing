@@ -332,7 +332,8 @@ public class VisitCounterEndpointTests
     }
 
     [TestCase("Shared/DemoDisclaimerModal.razor", "data-c=\"PlaygroundContinue\"")]
-    [TestCase("Shared/InstallPathCard.razor", "data-c=\"DownloadClick\"")]
+    [TestCase("Shared/CountryStartTemplate.razor", "data-c=\"DownloadClick\"")]
+    [TestCase("Shared/IndustryPageTemplate.razor", "data-c=\"DownloadClick\"")]
     [TestCase("Shared/MainLayout.razor", "data-c=\"DemoModalOpened\"")]
     [TestCase("Shared/ExpertModeSwitch.razor", "data-c=\"ExpertToggle\"")]
     [TestCase("Shared/ShareLinkButtons.razor", "data-c=\"ShareClick\"")]

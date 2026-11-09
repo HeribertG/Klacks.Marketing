@@ -70,8 +70,6 @@ public static class SitemapGenerator
     // cultures that have their own text are listed, matching their IndexTranslatedOnly noindex rule.
     private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug, CountryPageLinks.ExportsSlug };
 
-    private const string InstallationSlug = "installation";
-
     // Same value and target as the page-level x-default link emitted by SeoHead.
     private const string DefaultHreflang = "x-default";
 
@@ -95,12 +93,6 @@ public static class SitemapGenerator
         foreach (var pageKey in PageKeys)
         {
             AppendTranslatedUrls(sb, trimmedBase, pageKey, IsTranslatedFor(pageKey, hasContentIn, simpleModeEnabled));
-        }
-
-        foreach (var countryPageKey in CountryIndustries.AllCountries)
-        {
-            var routeKey = $"{countryPageKey}/{InstallationSlug}";
-            AppendTranslatedUrls(sb, trimmedBase, routeKey, IsTranslatedFor(routeKey, hasContentIn, simpleModeEnabled));
         }
 
         if (simpleModeEnabled)

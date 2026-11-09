@@ -130,7 +130,7 @@
             <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
             <p class="text-white/70 max-w-xl mx-auto mb-8">@GetText("cta.text")</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="@InstallationHref" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
                     <span class="material-symbols-outlined">download</span> @GetText("cta.install")
                 </a>
                 <a href="@PartnerHref" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">
@@ -152,7 +152,7 @@
 
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;
 
-    private string InstallationHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.InstallationSlug);
+    private string StoreHref => CountryPageLinks.StoreHref(Culture, Country);
 
     private string PartnerHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.PartnerSlug);
 

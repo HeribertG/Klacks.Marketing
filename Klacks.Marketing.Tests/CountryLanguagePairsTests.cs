@@ -26,7 +26,7 @@ public class CountryLanguagePairsTests
     private const string InternalHrefPattern = @"href=""(/[^""#?]*)";
     private const string XDefault = "x-default";
 
-    private static readonly string[] SampleSubPaths = { "", "/spitex", "/klacksy", "/installation", "/impressum", "/experten", "/mittlere-betriebe" };
+    private static readonly string[] SampleSubPaths = { "", "/spitex", "/klacksy", "/impressum", "/experten", "/mittlere-betriebe" };
 
     [Test]
     public void Every_pair_has_its_own_country_text()

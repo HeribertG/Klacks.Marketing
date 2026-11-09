@@ -13,7 +13,6 @@ public static class LlmsTxtGenerator
 {
     private const string EnglishCultureCode = "en";
     private const string KlacksySlug = "klacksy";
-    private const string InstallationSlug = "installation";
     private const string ImpressumSlug = "impressum";
     private const string DatenschutzSlug = "datenschutz";
     private const string LicenseSlug = "lizenz";
@@ -96,7 +95,7 @@ public static class LlmsTxtGenerator
     private const string ExamplePackageFileName = "klacks-onprem-de-all.zip";
     private const string ExampleLinuxInstallFolder = "~/klacks";
     private const string StoreTitle = "Klacks Store";
-    private const string StoreDescription = "The only download source for Klacks: country packages (installer, Docker Compose, profile) and the Windows installer for an office PC.";
+    private const string StoreDescription = "Install Klacks: the only download source, with the country packages (installer for your own server, Docker Compose, profile) and the Windows installer for an office PC.";
     private const string DocsHomeTitle = "Klacks documentation";
     private const string DocsInstallTitle = "Installation and Playground (documentation)";
 
@@ -140,7 +139,6 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "On-premise, open-source workforce scheduling — overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "Voice- and chat-controlled scheduling assistant with free choice of language model.");
-        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "The installation paths explained: office PC (Windows), your own server, or Docker Compose.");
         AppendDocsLink(sb, StoreHomeUrl, StoreTitle, StoreDescription);
         AppendDocsLink(sb, DocsHomeUrl(trimmedBase), DocsHomeTitle, "Documentation, including the step-by-step installation guide with the real commands.");
         sb.AppendLine();
@@ -273,7 +271,6 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "Product overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "The scheduling assistant in detail.");
-        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "The installation paths explained: office PC (Windows), your own server, or Docker Compose.");
         AppendDocsLink(sb, StoreHomeUrl, StoreTitle, StoreDescription);
         AppendDocsLinks(sb, trimmedBase);
         AppendBusinessSizeLinks(sb, trimmedBase);

@@ -152,7 +152,7 @@
         <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-0 mb-8">@Tx("start.text")</p>
         <div class="grid md:grid-cols-3 gap-4 text-start">
             <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="flex flex-col items-start justify-start rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed p-6 text-start hover:opacity-90 transition-all"><span class="material-symbols-outlined text-3xl" aria-hidden="true">chat</span><span class="block text-xl font-black mt-2">@Tx("start.playgroundButton")</span><span class="block text-sm font-semibold mt-1">@Tx("start.playgroundSubtitle")</span></button>
-            <a href="@InstallHref" class="rounded-2xl bg-surface-container-lowest text-primary p-6 no-underline hover:shadow-lg transition-all">
+            <a href="@InstallHref" target="_blank" data-c="DownloadClick" class="rounded-2xl bg-surface-container-lowest text-primary p-6 no-underline hover:shadow-lg transition-all">
                 <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">download</span>
                 <span class="block text-xl font-black mt-2">@Tx("start.installButton")</span>
                 <span class="block text-sm font-semibold text-on-surface-variant mt-1">@Tx("start.installSubtitle")</span>
@@ -200,8 +200,7 @@
 
     private string ExpertHref => $"{CulturePrefix}/{SiteModes.ExpertRoutePath(PageKey)}";
 
-    private string InstallHref
-        => CountryPageLinks.Href(CultureRecord.UrlSlug, PageKey, CountryPageLinks.InstallationSlug) + FragmentSeparator + PageSectionIds.OfficePc;
+    private string InstallHref => CountryPageLinks.StoreHref(CultureRecord.UrlSlug, PageKey);
 
     private string ShareUrl => SeoUrls.Absolute(Configuration[BaseUrlSetting] ?? string.Empty, CultureRecord, PageKey) + ShareReferenceQuery;
 

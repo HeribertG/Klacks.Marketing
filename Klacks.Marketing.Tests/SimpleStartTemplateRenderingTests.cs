@@ -73,14 +73,14 @@ public class SimpleStartTemplateRenderingTests
     }
 
     [TestCaseSource(nameof(Countries))]
-    public async Task Internal_links_stay_on_the_country_and_reach_the_expert_install_and_industry_pages(string country)
+    public async Task Internal_links_stay_on_the_country_and_reach_the_expert_and_industry_pages_and_the_store(string country)
     {
         var html = await RenderAsync(country);
 
         var links = Regex.Matches(html, HrefPattern).Select(match => match.Groups[1].Value).ToList();
         links.ShouldAllBe(link => link.StartsWith($"/{country}", StringComparison.Ordinal));
         links.ShouldContain($"/{country}/{SiteModes.ExpertSlug}");
-        links.ShouldContain($"/{country}/{CountryPageLinks.InstallationSlug}#{PageSectionIds.OfficePc}");
+        html.ShouldContain($"href=\"{CountryPageLinks.StoreHref(null, country)}\" target=\"_blank\" data-c=\"DownloadClick\"");
         links.ShouldContain($"/{country}#{SimplePageSectionIds.Share}");
         foreach (var slug in SimpleStartTemplate.AudienceSlugs)
         {
@@ -304,7 +304,7 @@ public class SimpleStartTemplateRenderingTests
         var links = Regex.Matches(html, HrefPattern).Select(match => match.Groups[1].Value).ToList();
         links.ShouldAllBe(link => link.StartsWith($"/{slug}/{country}", StringComparison.Ordinal));
         links.ShouldContain($"/{slug}/{country}/{SiteModes.ExpertSlug}");
-        links.ShouldContain($"/{slug}/{country}/{CountryPageLinks.InstallationSlug}#{PageSectionIds.OfficePc}");
+        html.ShouldContain($"href=\"{CountryPageLinks.StoreHref(culture, country)}\" target=\"_blank\" data-c=\"DownloadClick\"");
         foreach (var industry in SimpleStartTemplate.AudienceSlugs)
         {
             links.ShouldContain($"/{slug}/{country}/{industry}");

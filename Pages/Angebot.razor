@@ -78,7 +78,7 @@
                 }
             </ul>
             <div class="flex flex-wrap gap-x-6 gap-y-2 mt-5 text-sm">
-                <a href="@InstallationHref" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("operation.self.installationLink")</a>
+                <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">install_desktop</span> @Tx("operation.self.installationLink")</a>
                 <a href="@RequirementsDocsHref" target="_blank" class="font-bold text-secondary no-underline inline-flex items-center gap-1"><span class="material-symbols-outlined text-base" aria-hidden="true">menu_book</span> @Tx("operation.self.docsLink")</a>
             </div>
         </div>
@@ -182,7 +182,7 @@
 
     private string CountryKey => string.IsNullOrEmpty(Country) ? LanguageCountries.DefaultCountryFor(ResolvedCulture) : Country;
 
-    private string InstallationHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.InstallationSlug);
+    private string StoreHref => CountryPageLinks.StoreHref(Culture, CountryKey);
 
     private string LicenseHref => CountryPageLinks.Href(Culture, CountryKey, CountryPageLinks.LicenseSlug);
 

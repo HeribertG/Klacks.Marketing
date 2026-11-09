@@ -7,12 +7,12 @@ namespace Klacks.Marketing.Localization;
 // CountryIndustries.ProductSlugs so a new product page cannot be forgotten here.
 public static class LegacyProductRoutes
 {
-    // Legal pages, the partner and comparison pages and the installation/download
-    // page are not products but follow
+    // Legal pages and the partner and comparison pages are not products but follow
     // the same country-scoped rule, so their country-less URLs redirect as well.
+    // The former installation URLs ("/installation") are handled by InstallationRedirect.
     // "klacksy" is listed explicitly because the industry registry entry now
     // points to "eigene-regeln" while the Klacksy page itself lives on.
-    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", CountryPageLinks.SmallBusinessSlug, CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug, CountryPageLinks.ExportsSlug, "ueber-uns", "installation", "klacksy" };
+    private static readonly string[] CountryScopedSlugs = { "impressum", "datenschutz", "lizenz", "partner", "vergleich", CountryPageLinks.SmallBusinessSlug, CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug, CountryPageLinks.ExportsSlug, "ueber-uns", "klacksy" };
 
     // The German preview of the redesigned start page and the mid/large business pages (2026-10-03) went live as
     // the country start page and the country-scoped business pages; the preview links were shared, so they redirect.

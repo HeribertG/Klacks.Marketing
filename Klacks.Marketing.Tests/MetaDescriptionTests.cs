@@ -103,7 +103,6 @@ public class MetaDescriptionTests
 
         public IndustryPageContent GetIndustryPage(string cultureCode, string pageKey) => throw new NotSupportedException();
 
-        public InstallPageContent GetInstallPage(string cultureCode, string pageKey) => throw new NotSupportedException();
 
         public bool HasContentIn(string cultureCode, string pageKey) => throw new NotSupportedException();
     }

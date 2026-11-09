@@ -16,7 +16,6 @@ internal static class MetaDescriptionCatalog
     private const string MetaDescriptionKey = "metaDescription";
     private const string HeroSubtitleKey = "hero.subtitle";
     private const string KlacksySlug = "klacksy";
-    private const string InstallationSlug = "installation";
     private const string CountryStartType = "country-start";
     private const string SimpleStartType = "simple-start";
     private const string ExpertStartType = "expert-start";
@@ -80,15 +79,6 @@ internal static class MetaDescriptionCatalog
             {
                 AddIndustry(entries, provider, contentRoot, culture, slugName, $"{country}-{slugName}", $"{prefix}/{country}/{slugName}");
             }
-
-            var installKey = $"{country}-{InstallationSlug}";
-            var install = provider.GetInstallPage(culture, installKey);
-            var installKeyName = install.MetaDescription is null ? HeroSubtitleKey : MetaDescriptionKey;
-            var installSource = install.MetaDescription ?? install.Hero.Subtitle;
-            entries.Add(new Entry(
-                culture, InstallationSlug, installKey, $"{prefix}/{country}/{InstallationSlug}",
-                ResolveFile(contentRoot, culture, installKey), installKeyName, installSource,
-                SeoText.ToDescription(installSource), provider.HasContentIn(culture, installKey)));
         }
     }
 

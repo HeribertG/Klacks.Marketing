@@ -214,7 +214,7 @@
         <p class="text-white/70 text-sm max-w-xl mx-auto mb-10 relative z-10">@Sh("cta.openSourceNote")</p>
         <div class="flex flex-wrap justify-center gap-6 relative z-10">
             <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="btn-shine bg-secondary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform flex items-center gap-3"><span class="material-symbols-outlined">play_circle</span> @Sh("cta.tryButton")</button>
-            <a href="@DownloadHref" class="border border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")</a>
+            <a href="@DownloadHref" target="_blank" data-c="DownloadClick" class="border border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all no-underline flex items-center gap-3"><span class="material-symbols-outlined">download</span> @Sh("cta.downloadButton")</a>
         </div>
     </div>
 </section>
@@ -222,7 +222,6 @@
 @code {
     private const string RulesSectionAnchorId = PageSectionIds.Rules;
     private const string KlacksySlug = "klacksy";
-    private const string InstallationSlug = "installation";
     private const string ImagesPathPrefix = "images/";
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
@@ -275,18 +274,9 @@
         }
     }
     private string PageHref => Culture == SupportedCultures.DefaultCode ? $"/{EffectiveRoutePath}" : $"/{Culture}/{EffectiveRoutePath}";
-    // The CTA download button leads to the country's installation/download page
+    // The CTA download button leads to the Klacks Store page of the owning country
     // (same country-preserving pattern as KlacksyPageHref).
-    private string DownloadHref
-    {
-        get
-        {
-            var country = CountryIndustries.OwningCountry(PageKey) ?? LanguageCountries.DefaultCountryFor(Culture);
-            var suffix = $"{country}/{InstallationSlug}";
-
-            return Culture == SupportedCultures.DefaultCode ? $"/{suffix}" : $"/{Culture}/{suffix}";
-        }
-    }
+    private string DownloadHref => CountryPageLinks.StoreHref(Culture, CountryIndustries.OwningCountry(PageKey));
     // The Klacksy page exists only under a country, so a page outside any country
     // targets the culture's default one.
     private string KlacksyPageHref

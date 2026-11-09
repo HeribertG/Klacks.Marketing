@@ -79,12 +79,7 @@
     // default image is emitted, so a page never advertises a broken preview image.
     [Parameter] public string? OgImage { get; set; }
 
-    // Display name for the sub-page level of the breadcrumb. Country sub-pages
-    // whose slug is not an industry (e.g. the installation page) must provide it,
-    // since the default derives the name from the industry title keys.
-    [Parameter] public string? BreadcrumbName { get; set; }
-
-    // For industry and install pages, whose content may fall back to the default
+    // For industry pages, whose content may fall back to the default
     // culture: a culture variant without its own text is kept out of the hreflang
     // set and marked noindex, so search engines never index German text served
     // under a foreign language URL.
@@ -194,8 +189,7 @@
             }
 
             var slug = PageKey[(country.Length + 1)..];
-            var pageName = BreadcrumbName
-                ?? ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
+            var pageName = ContentProvider.GetText(Culture, IndexContentKey, string.Format(IndustryTitleKeyFormat, slug));
 
             return JsonLdBuilder.BreadcrumbScript(
                 BaseUrl,

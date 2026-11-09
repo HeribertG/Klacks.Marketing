@@ -21,7 +21,6 @@ public class CountryIndexingPolicyTests
 
     [TestCase("land-cn")]
     [TestCase("land-cn-spitex")]
-    [TestCase("land-cn/installation")]
     [TestCase("land-cn/eigene-regeln")]
     public void China_page_keys_are_noindex(string pageKey) => CountryIndexingPolicy.IsNoindex(pageKey).ShouldBeTrue();
 

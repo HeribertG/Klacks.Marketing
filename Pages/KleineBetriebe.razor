@@ -65,7 +65,7 @@
             </div>
         </div>
         <p class="text-sm text-on-surface-variant mb-6">@GetText("needs.note")</p>
-        <a href="@InstallationHref" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+        <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
             <span class="material-symbols-outlined">install_desktop</span> @GetText("needs.button")
         </a>
     </section>
@@ -133,7 +133,7 @@
 
     private string CountryKey => string.IsNullOrEmpty(Country) ? LanguageCountries.DefaultCountryFor(ResolvedCulture) : Country;
 
-    private string InstallationHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.InstallationSlug);
+    private string StoreHref => CountryPageLinks.StoreHref(Culture, Country);
 
     private string AboutHref => CountryPageLinks.Href(Culture, Country, CountryPageLinks.AboutSlug);
 
