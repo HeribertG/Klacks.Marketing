@@ -111,16 +111,15 @@
   },
   "scenario-variants": {
     "captions": {
-      "plan": "Berne, décembre : le planning est établi",
+      "plan": "Berne, décembre : prêt, sans alerte",
       "copy": "Scénario : une copie. L'original reste.",
       "move": "Nuits de Tobias à Nadia : dans la copie",
-      "rest": "Variante A : repos violé. C'est signalé.",
+      "rest": "Klacks avertit : repos, jours d'affilée",
       "variantB": "Variante B : mêmes nuits à Lena",
-      "hours": "Lena reste sous son maximum contractuel",
-      "original": "Vers l'original : rien n'a bougé",
-      "yes": "Votre oui : la variante B est le planning",
-      "stale": "Variante A ensuite ? Klacks prévient.",
-      "discard": "Vous rejetez la variante A"
+      "clean": "Variante B : aucune alerte",
+      "both": "Deux variantes au choix",
+      "yes": "Votre oui : la variante B est adoptée",
+      "real": "Planning réel : Lena a les nuits"
     }
   },
   "monthplan-commands": {

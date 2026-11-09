@@ -111,16 +111,15 @@
   },
   "scenario-variants": {
     "captions": {
-      "plan": "Berna, dicembre: il piano è pronto",
+      "plan": "Berna, dicembre: piano pronto, zero avvisi",
       "copy": "Scenario: una copia. L'originale resta.",
       "move": "Notti di Tobias a Nadia: solo nella copia",
-      "rest": "Variante A: riposo violato. È segnalato.",
+      "rest": "Klacks avvisa: riposo, giorni di fila",
       "variantB": "Variante B: stesse notti a Lena",
-      "hours": "Lena resta sotto il massimo contrattuale",
-      "original": "All'originale: non si è mosso nulla",
-      "yes": "Il tuo sì: la variante B è il piano",
-      "stale": "Variante A dopo? Klacks avvisa.",
-      "discard": "Rifiuti la variante A"
+      "clean": "Variante B: nessun avviso",
+      "both": "Due varianti tra cui scegliere",
+      "yes": "Il tuo sì: la variante B diventa il piano",
+      "real": "Piano reale: Lena ha le notti"
     }
   },
   "monthplan-commands": {

@@ -111,16 +111,15 @@
   },
   "scenario-variants": {
     "captions": {
-      "plan": "Bern, December: The plan is set",
+      "plan": "Bern, December: plan set, no warnings",
       "copy": "Scenario: a copy. The original stays.",
       "move": "Tobias's nights to Nadia: in the copy only",
-      "rest": "Variant A: rest period broken. It shows.",
+      "rest": "Klacks warns: rest time, days in a row",
       "variantB": "Variant B: same nights to Lena",
-      "hours": "Lena stays under her contract maximum",
-      "original": "To Original: nothing has moved",
-      "yes": "Your yes: Variant B is the plan",
-      "stale": "Variant A afterwards? Klacks warns.",
-      "discard": "You reject Variant A"
+      "clean": "Variant B: no warning",
+      "both": "Two variants to choose from",
+      "yes": "Your yes: Variant B becomes the plan",
+      "real": "Real plan: Lena has the nights"
     }
   },
   "monthplan-commands": {

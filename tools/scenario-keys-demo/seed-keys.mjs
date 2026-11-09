@@ -11,7 +11,8 @@
  *     inside the key period and below the 10 h cap, so no cut is needed.
  * The key listing (ScenarioVariants/{id}/Shifts) returns the sealed orders only; their plannable copies carry the same token and appear as clones in a scenario.
  * It never creates scenarios: a scenario carrying a key locks the key and its shifts (SCENARIO_VARIANT_IN_USE).
- * CLI: [--api-url <url>] [--report <file>]   Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL.
+ * --without-keys seeds the customer and the pool only (stage bern_s3 of clip S1 v2: the key and its services are created inside the take).
+ * CLI: [--api-url <url>] [--report <file>] [--without-keys]   Env: KLACKS_DEMO_USER, KLACKS_DEMO_PASSWORD (required), KLACKS_API_URL.
  */
 
 import { writeFileSync } from "node:fs";
@@ -134,8 +135,8 @@ function assertDefinition() {
 }
 
 function readOptions() {
-  const { values } = parseArgs({ options: { "api-url": { type: "string" }, report: { type: "string" } } });
-  return { session: S.readSessionOptions(values), reportPath: values.report };
+  const { values } = parseArgs({ options: { "api-url": { type: "string" }, report: { type: "string" }, "without-keys": { type: "boolean" } } });
+  return { session: S.readSessionOptions(values), reportPath: values.report, withoutKeys: Boolean(values["without-keys"]) };
 }
 
 function flattenNodes(nodes, found = []) {
@@ -303,11 +304,11 @@ async function ensureKeyShifts(api, key, variant, group, customerId) {
   return actions;
 }
 
-async function verify(api, group, customerId, poolIds) {
+async function verify(api, group, customerId, poolIds, keys) {
   const problems = [];
   const variants = (await api.call(HTTP_GET, VARIANTS_PATH, { query: { groupId: group.id } })) ?? [];
   const described = [];
-  for (const key of KEYS) {
+  for (const key of keys) {
     const variant = variants.find((entry) => entry.name === key.name);
     if (!variant) {
       problems.push(`key ${key.name} is missing`);
@@ -333,7 +334,7 @@ async function verify(api, group, customerId, poolIds) {
   const realRows = (await api.call(HTTP_POST, SHIFT_SCHEDULE_PATH, {
     data: { startDate: D.PERIOD.from, endDate: D.PERIOD.until, selectedGroup: group.id, holidayDates: [...D.HOLIDAYS], startRow: 0, rowCount: SHIFT_ROW_LIMIT, analyseToken: null },
   }))?.shifts ?? [];
-  const keyAbbreviations = new Set(KEYS.flatMap((key) => key.shifts.map((shift) => shift.abbreviation)));
+  const keyAbbreviations = new Set(keys.flatMap((key) => key.shifts.map((shift) => shift.abbreviation)));
   const leaked = realRows.filter((row) => keyAbbreviations.has(row.abbreviation));
   if (leaked.length > 0) problems.push(`the real shift schedule shows ${leaked.length} key rows`);
   let poolInFairPeriod = 0;
@@ -347,7 +348,8 @@ async function verify(api, group, customerId, poolIds) {
 }
 
 async function main() {
-  const { session, reportPath } = readOptions();
+  const { session, reportPath, withoutKeys } = readOptions();
+  const keys = withoutKeys ? [] : KEYS;
   if (!session.apiUrl.includes(D.RECORDING_API_PORT)) throw new Error(`refusing ${session.apiUrl}: seed only the recording API (${D.RECORDING_API_PORT}) on a klacks_marketing_* copy`);
   assertDefinition();
   const context = await playwrightRequest.newContext({ ignoreHTTPSErrors: true });
@@ -373,17 +375,17 @@ async function main() {
     report.pool = { size: POOL.length, created: createdPool, membership: FAIR_PERIOD };
     log(`pool of ${POOL.length} ready (${createdPool} created)`);
     report.keyActions = [];
-    for (const key of KEYS) {
+    for (const key of keys) {
       const { variant, action } = await ensureKey(api, key, group);
       const shifts = await ensureKeyShifts(api, key, variant, group, customer.id);
       report.keyActions.push({ key: key.name, id: variant.id, action, shifts });
       log(`key ${key.name} ${action} ${variant.id}: ${shifts.map((shift) => `${shift.abbreviation}:${shift.action}`).join(" ")}`);
     }
-    report.verify = await verify(api, group, customer.id, poolIds);
+    report.verify = await verify(api, group, customer.id, poolIds, keys);
     if (reportPath) writeFileSync(reportPath, JSON.stringify(report, null, 1));
     console.log(JSON.stringify(report, null, 1));
     if (report.verify.problems.length > 0) throw new Error(`Self-check failed: ${report.verify.problems.join("; ")}`);
-    log(`ok: ${KEYS.map((key) => `${key.name} ${staffingPerDay(key)}/day`).join(", ")}`);
+    log(`ok: ${keys.map((key) => `${key.name} ${staffingPerDay(key)}/day`).join(", ")}`);
   } finally {
     await context.dispose();
   }

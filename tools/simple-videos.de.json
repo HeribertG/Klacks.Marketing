@@ -118,16 +118,31 @@
   },
   "scenario-variants": {
     "captions": {
-      "plan": "Bern, Dezember: Der Plan steht",
+      "plan": "Bern, Dezember: Plan steht, keine Warnung",
       "copy": "Szenario: eine Kopie. Das Original bleibt.",
       "move": "Tobias' Nächte zu Nadia: nur in der Kopie",
-      "rest": "Variante A: Ruhezeit verletzt. Steht da.",
+      "rest": "Klacks warnt: Ruhezeit und Tage am Stück",
       "variantB": "Variante B: dieselben Nächte zu Lena",
-      "hours": "Lena bleibt unter ihrem Vertrags-Maximum",
-      "original": "Zum Original: Nichts hat sich bewegt",
-      "yes": "Dein Ja: Variante B ist der Plan",
-      "stale": "Variante A danach? Klacks warnt.",
-      "discard": "Du verwirfst Variante A"
+      "clean": "Variante B: keine Warnung",
+      "both": "Zwei Varianten zur Wahl",
+      "yes": "Dein Ja: Variante B wird der Plan",
+      "real": "Echter Plan: Lena hat die Nächte"
+    }
+  },
+  "scenario-placeholders": {
+    "captions": {
+      "team": "Aushilfen: nur an den Messetagen im Team",
+      "ask": "Zusage offen, Leute fehlen: Klacksy fragen",
+      "explain": "Vorläufige Dienste, Platzhalter für Leute",
+      "key": "Vorläufige Dienste «Messe»: 10.–13.12.",
+      "keyShifts": "Messe Einlass: 10 Leute, Do–So",
+      "keyShiftsAll": "Dazu Messe Abend: 20 Leute pro Tag",
+      "standIns": "8 Platzhalter für die fehlenden Leute",
+      "scenario": "Szenario mit «Messe»: echter Plan bleibt",
+      "wizard": "Wizard: echte Leute zuerst, dann der Rest",
+      "real": "Die echten Aushilfen zuerst",
+      "plan": "◌ Platzhalter nehmen nur den Rest",
+      "summary": "Alle Plätze besetzt, Zusage kann kommen"
     }
   },
   "scenario-keys": {

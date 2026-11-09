@@ -78,7 +78,6 @@ const QUOTED_LABELS = Object.freeze([
   [VIDEO_MONTHPLAN_COMMANDS, "keywords", "settings.scheduling.command-keywords"],
   [VIDEO_REPLACEMENT_R2, "form", "contextMenu.coverAbsence"],
   [VIDEO_REPLACEMENT_R2, "week", "recovery.dialog.untilDate"],
-  [VIDEO_SCENARIO_VARIANTS, "original", "scenario.exit"],
   [VIDEO_MONTHPLAN_WISHES, "list", "absence-gantt.absence-gantt-mask.absence-gantt-mask.list.booked"],
 ]);
 const MOVE_VIDEOS = Object.freeze([VIDEO_REPLACEMENT_R1, VIDEO_REPLACEMENT_R2]);

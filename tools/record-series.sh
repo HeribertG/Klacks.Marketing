@@ -6,7 +6,13 @@
 #         m2  Keywords       monthplan-commands    master klacks_marketing_security_bern_m2   Monatsplanung
 #         m3  Monat          security-month-plan   master klacks_marketing_security_bern_m3   Monatsplanung
 #         s0  Szenarien      scenario-variants     master klacks_marketing_security_bern_s1   Szenarien
+#         s0v2 Szenarien v2  scenario-variants   master klacks_marketing_security_bern_s4   Szenarien   (German only; bern_s1 migrated by 1.0.63 and corrected by scenario-keys-demo/seed-s0-rest-days.mjs:
+#              empty error list in the real December; variant B created in the picture and accepted; 176 migrations; the archive folder holds no s0 file any more, KLACKS_OUT_VERSION=2)
 #         s1  Keys           scenario-keys         master klacks_marketing_security_bern_s2   Szenarien   (KLACKS_S1_WIZARD=1 records scenario-keys-wizard, the take with the AutoWizard beat)
+#         s1v2 Keys+Platzhalter scenario-placeholders master klacks_marketing_security_bern_s3 Szenarien  (Klacksy explains, key "Messe" and 8 placeholders created in the picture, AutoWizard; German only,
+#              same stem klacks-szenarien-s1 as s1: KLACKS_NEW_VERSION=1 writes the next version next to v1; expects 176 migrations ending with 20261106000000_AddAnalyseScenarioSoftKeywordPlan)
+#         s1v3 Vorläufige Dienste+Platzhalter, the same take, master and recipe as s1v2, rebuilt for the Ui of 1.0.63 (menu ⋮, "Vorläufige Dienste", shift MEI typed into the form;
+#              KLACKS_S1_SHIFT_FORM=0 stores it through the API instead); same stem, KLACKS_NEW_VERSION=1 writes the next version
 #   lang  en | fr | it (de is accepted and stays as it is; KLACKS_ALLOW_DE=1 lifts the refusal); s1 exists in German only: de, en/fr/it are refused
 #   s1 needs KLACKS_RELEASE_VERSION (no default: the release with the key fixes is named by the caller) and expects the migrations of its master (175, 20261104000000_AddWorkSplitFromWorkId,
 #   read from klacks_marketing_security_bern_s2 on 2026-11-06); a newer release that adds migrations needs KLACKS_EXPECTED_* (or a master migrated by it) - the env always wins over the clip default.
@@ -127,7 +133,7 @@ if [ "$MODE" = stop ]; then
   exit 0
 fi
 
-[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|s0|s1> <en|fr|it|de>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
+[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|s0|s0v2|s1|s1v2|s1v3> <en|fr|it|de>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
 CLIP="$(printf '%s' "$1" | tr 'A-Z' 'a-z')"
 LANGCODE="$(printf '%s' "$2" | tr 'A-Z' 'a-z')"
 
@@ -137,10 +143,14 @@ case "$CLIP" in
   m2) VIDEO=monthplan-commands;  MASTER=klacks_marketing_security_bern_m2; RECIPE=monthplan-recipe-m2.mjs;  RAW=gemini_generated_video_7d4d55e8.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m2; DARK_DEFAULT=1; TRIM_DEFAULT=decide:1.45 ;;
   m3) VIDEO=security-month-plan; MASTER=klacks_marketing_security_bern_m3; RECIPE=monthplan-recipe-m3.mjs;  RAW=gemini_generated_video_b4401dfc.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m3; DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
   s0) VIDEO=scenario-variants;   MASTER=klacks_marketing_security_bern_s1; RECIPE=scenario-recipe-s0.mjs;   RAW=gemini_generated_video_7bfe3a94.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s0;    DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
+  s0v2) VIDEO=scenario-variants; MASTER=klacks_marketing_security_bern_s4; RECIPE=scenario-recipe-s0.mjs;   RAW=gemini_generated_video_7bfe3a94.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s0;    DARK_DEFAULT=0; TRIM_DEFAULT=none
+      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
   s1) VIDEO=scenario-keys;       MASTER=klacks_marketing_security_bern_s2; RECIPE=scenario-recipe-s1.mjs;   RAW=gemini_generated_video_9578f9f9.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s1;    DARK_DEFAULT=0; TRIM_DEFAULT=none
       CLIP_LAST_MIGRATION=20261104000000_AddWorkSplitFromWorkId; CLIP_MIGRATIONS=175; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau; MASTER_KEYS="'Messe Tagbetrieb','Messe Nachtwache'"
       if [ "${KLACKS_S1_WIZARD:-0}" = 1 ]; then VIDEO=scenario-keys-wizard; fi ;;
-  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, s0, s1)" ;;
+  s1v2|s1v3) VIDEO=scenario-placeholders; MASTER=klacks_marketing_security_bern_s3; RECIPE=scenario-recipe-s1v2.mjs; RAW=gemini_generated_video_9578f9f9.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s1;    DARK_DEFAULT=0; TRIM_DEFAULT=none
+      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
+  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, s0, s0v2, s1, s1v2, s1v3)" ;;
 esac
 if [ "$GERMAN_ONLY" = 1 ]; then
   [ "$LANGCODE" = de ] || die 2 "clip $CLIP exists in German only (de)"
