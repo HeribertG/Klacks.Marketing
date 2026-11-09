@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Instalación &middot; Sin cuotas de licencia &amp; código abierto",
     "titleHtml": "Opere Klacks usted mismo &mdash; <span class=\"text-secondary\">en su propia infraestructura.</span>",
-    "subtitle": "Dos caminos, un mismo resultado: el instalador guiado o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país) &mdash; sin registro, sin costes de licencia."
-  },
-  "industry": {
-    "eyebrow": "Paquete de país",
-    "title": "Elija su sector &mdash; opcional",
-    "text": "Su selección se incorpora al perfil de país como ajuste predefinido y determina qué módulos sectoriales están activos en el primer arranque. El paquete contiene siempre todos los sectores &mdash; puede activar más en la aplicación en cualquier momento.",
-    "allLabel": "Todos los sectores"
+    "subtitle": "Dos caminos, un mismo resultado: el instalador guiado o el stack de Docker Compose para su propio entorno. El paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país) &mdash; sin registro, sin costes de licencia. Todos los paquetes se descargan desde el Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Tres pasos",
     "steps": [
-      { "title": "Descargar y descomprimir", "text": "Descargue el ZIP de su país y descomprímalo en la máquina de destino." },
+      { "title": "Descargar y descomprimir", "text": "En el Klacks Store, elija su sector si lo desea, descargue el ZIP de su país y descomprímalo en la máquina de destino." },
       { "title": "Ejecutar el script de instalación", "text": "Ejecute el script de shell incluido en Linux, o el script de PowerShell en Windows. Genera los secretos y el certificado, aplica el perfil de país y espera hasta que el stack esté operativo." },
       { "title": "Iniciar sesión y cambiar la contraseña", "text": "Inicie sesión desde el navegador y cambie de inmediato la contraseña inicial indicada en el README incluido." }
     ],
-    "downloadLabel": "Descargar paquete de instalación"
+    "downloadLabel": "Descargar paquete de instalación desde el Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Tres pasos",
     "steps": [
-      { "title": "Descargar y descomprimir", "text": "Descargue el ZIP de Compose de su país y descomprímalo &mdash; el README incluido explica cada paso." },
+      { "title": "Descargar y descomprimir", "text": "Descargue desde el Klacks Store el ZIP de Compose de su país y descomprímalo &mdash; el README incluido explica cada paso." },
       { "title": "Configurar .env", "text": "Copie la plantilla .env.example a .env y defina el nombre del servidor y las contraseñas/secretos. La ruta al perfil de país ya viene precargada." },
       { "title": "Arrancar el stack", "text": "Ejecute &laquo;docker compose up -d&raquo;, inicie sesión desde el navegador y cambie de inmediato la contraseña inicial." }
     ],
-    "downloadLabel": "Descargar paquete de Compose"
+    "downloadLabel": "Descargar paquete de Compose desde el Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "Tres pasos",
       "steps": [
-        { "title": "Descargar el instalador", "text": "Haga clic en &laquo;Descargar para Windows&raquo;. El archivo &laquo;Klacks-Setup-win-x64.exe&raquo; suele guardarse en la carpeta &laquo;Descargas&raquo;." },
-        { "title": "Doble clic y elegir el país", "text": "Haga doble clic en el archivo. Si Windows SmartScreen muestra una advertencia, abra la información adicional y elija ejecutar de todas formas &mdash; el instalador aún no tiene firma digital. Después confirme la solicitud de permisos de administrador. En el asistente, elija su país (días festivos, zona horaria, normas de jornada laboral) y, si lo desea, un acceso directo en el escritorio. El asistente muestra el progreso; la instalación tarda unos minutos." },
+        { "title": "Descargar el instalador desde el Klacks Store", "text": "Haga clic en &laquo;Descargar para Windows desde el Klacks Store&raquo; y, en el Klacks Store, haga clic en &laquo;Windows&raquo; en la entrada &laquo;PC de oficina (Windows)&raquo;. El archivo &laquo;Klacks-Setup-win-x64.exe&raquo; suele guardarse en la carpeta &laquo;Descargas&raquo;. Es posible que Microsoft Edge muestre en la lista de descargas: &laquo;Klacks-Setup-win-x64.exe no se descarga habitualmente. Asegúrese de que confía en Klacks-Setup-win-x64.exe antes de abrirlo.&raquo; El motivo: el archivo es nuevo y Microsoft aún no lo conoce bien; sin embargo, esto no significa que no sea seguro. En la lista de descargas, pase el ratón por encima de la entrada, haga clic en &laquo;&hellip;&raquo; (Más acciones) y, a continuación, en &laquo;Conservar&raquo;; en el cuadro de diálogo que aparezca, seleccione &laquo;Mostrar más&raquo; y, después, &laquo;Mantener de todos modos&raquo;. Hasta ese momento, el archivo solo aparecerá como &laquo;Sin confirmar &lt;número&gt;.crdownload&raquo; en la carpeta &laquo;Descargas&raquo;; esto es normal, el archivo no está dañado. No es necesario realizar el paso &laquo;Notificar este archivo como seguro&raquo;. Haga doble clic solo cuando la descarga haya finalizado." },
+        { "title": "Doble clic y elegir el país", "text": "Haga doble clic en el archivo. Si Windows SmartScreen muestra una advertencia, abra la información adicional y elija ejecutar de todas formas. Después confirme la solicitud de permisos de administrador; como editor aparece &laquo;Open Source Developer Heribert Gasparoli&raquo;. En el asistente, elija su país (días festivos, zona horaria, normas de jornada laboral) y, si lo desea, un acceso directo en el escritorio. El asistente muestra el progreso; la instalación tarda unos minutos." },
         { "title": "Abrir Klacks e iniciar sesión", "text": "Al final, elija abrir Klacks en el navegador. Más adelante encontrará Klacks en el menú Inicio como &laquo;Klacks&raquo; (o en http://localhost:5180). Inicie sesión con la cuenta inicial que muestra el asistente al final y cree su propia cuenta de administrador. Si Klacks todavía se está iniciando, espere unos minutos &mdash; el primer inicio tarda algo más." }
       ],
-      "downloadLabel": "Descargar para Windows"
+      "downloadLabel": "Descargar para Windows desde el Klacks Store"
     },
-    "macDownloadLabel": "Descargar para Mac",
     "macComingSoonNote": "Para Mac: próximamente.",
     "architectureNote": "Para Windows de 64 bits (x64). En equipos con Windows 11 y procesador ARM (p. ej., Snapdragon X), Klacks funciona mediante emulación; Windows 10 en ARM no es compatible.",
     "linuxNote": "¿Linux? Vea más abajo: <a href=\"{0}\">Klacks en un PC con Linux</a>.",
     "uninstallNote": "<strong>Desinstalar:</strong> Klacks se elimina como cualquier otro programa de Windows &mdash; abra Configuración › Aplicaciones, busque la entrada &laquo;Klacks&raquo; y desinstálela. El desinstalador pregunta si también deben eliminarse la base de datos, la configuración y las copias de seguridad. Si responde que no, sus datos se conservan en C:\\ProgramData\\Klacks y una reinstalación posterior los vuelve a utilizar.",
-    "heroSubtitle": "Tres caminos, un mismo resultado: el paquete de Windows para el PC de su oficina, el instalador guiado para su servidor o el stack de Docker Compose para su propio entorno &mdash; sin registro, sin costes de licencia. En el PC de oficina, usted elige su país durante la instalación; para el servidor y Docker Compose, el paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país)."
+    "heroSubtitle": "Tres caminos, un mismo resultado: el paquete de Windows para el PC de su oficina, el instalador guiado para su servidor o el stack de Docker Compose para su propio entorno &mdash; sin registro, sin costes de licencia. En el PC de oficina, usted elige su país durante la instalación; para el servidor y Docker Compose, el paquete de país incluye los días festivos, las normas de jornada laboral y los ajustes predefinidos por sector de su país (recargos, donde estén definidos para el país). Todos los paquetes se descargan desde el Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "En un PC con Linux",
-      "text": "La forma sencilla para un PC con Linux, sin conocimientos previos: descargue el paquete, introduzca una sola vez un comando en el terminal &mdash; el instalador se encarga del resto. Después, Klacks se ejecuta con Docker en este PC, las actualizaciones llegan automáticamente y sus datos permanecen en este PC.",
+      "text": "La forma sencilla para un PC con Linux, sin conocimientos previos: descargue el paquete desde el Klacks Store, introduzca una sola vez un comando en el terminal &mdash; el instalador se encarga del resto. Después, Klacks se ejecuta con Docker en este PC, las actualizaciones llegan automáticamente y sus datos permanecen en este PC.",
       "requirementsTitle": "Requisitos",
       "requirements": [
         "Linux de 64 bits con escritorio: Ubuntu, Debian o Fedora. Otras distribuciones (p. ej., Linux Mint) no son compatibles oficialmente &mdash; en ellas, instale primero Docker usted mismo.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "Tres pasos",
       "steps": [
-        { "title": "Descargar el paquete y extraerlo en una carpeta permanente", "text": "Descargue el archivo ZIP y extráigalo en una carpeta que vaya a quedarse donde está, p. ej., una carpeta &laquo;klacks&raquo; en su carpeta personal &mdash; no en la carpeta &laquo;Descargas&raquo;. Las actualizaciones automáticas trabajan con esta carpeta; si se elimina, las actualizaciones dejan de funcionar." },
+        { "title": "Descargar el paquete y extraerlo en una carpeta permanente", "text": "Descargue desde el Klacks Store el paquete de instalación (archivo ZIP) y extráigalo en una carpeta que vaya a quedarse donde está, p. ej., una carpeta &laquo;klacks&raquo; en su carpeta personal &mdash; no en la carpeta &laquo;Descargas&raquo;. Las actualizaciones automáticas trabajan con esta carpeta; si se elimina, las actualizaciones dejan de funcionar." },
         { "title": "Abrir un terminal e introducir el comando", "text": "En la carpeta con los archivos de instalación extraídos, haga clic con el botón derecho y elija &laquo;Abrir en una terminal&raquo;, introduzca el comando de abajo y confirme con su contraseña (no se muestra mientras escribe). Si falta Docker, el instalador ofrece instalarlo: responda &laquo;y&raquo; &mdash; esto tarda unos minutos. Solo necesita el terminal esta única vez para la instalación; si más adelante vuelve a ejecutar el instalador (p. ej., para una reparación), use este mismo comando, incluido sudo." },
         { "title": "Abrir en el navegador e iniciar sesión", "text": "Abra https://localhost en su navegador. El navegador muestra una advertencia sobre el certificado &mdash; confírmela (&laquo;Avanzado&raquo; y después &laquo;Continuar&raquo; o &laquo;Aceptar el riesgo&raquo;). Inicie sesión con la cuenta inicial indicada en el README de la carpeta y cambie la contraseña de inmediato." }
       ],
-      "downloadLabel": "Descargar para Linux"
+      "downloadLabel": "Descargar para Linux desde el Klacks Store"
     },
     "certificateNote": "Sobre la advertencia del certificado: durante la instalación, Klacks crea su propio certificado, que su navegador no conoce &mdash; de ahí la advertencia. Aun así, la conexión está cifrada."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Solo el perfil &mdash; para instalaciones existentes",
     "text": "¿Ya tiene Klacks en marcha? El perfil (JSON) contiene los ajustes predefinidos del país &mdash; días festivos, normas de jornada laboral, recargos (donde estén definidos para el país) y sectores &mdash; y se aplica en el primer arranque de una instalación. Es también la vía para añadir más adelante otro sector con sus ajustes predefinidos.",
-    "downloadLabel": "Descargar perfil (JSON)"
+    "downloadLabel": "Descargar perfil (JSON) desde el Klacks Store"
   },
   "fallback": {
     "noticeTitle": "Todavía no existe un paquete de país preconfigurado para este país.",
-    "noticeText": "Aun así puede instalar Klacks al completo: el paquete estándar contiene todo excepto los ajustes predefinidos del país. Después configura los días festivos, las normas de jornada laboral y los recargos en la aplicación.",
-    "downloadLabel": "Descargar paquete estándar",
-    "composeNote": "Todavía no hay un paquete de Compose separado para este país &mdash; el paquete estándar contiene el stack completo de Docker Compose."
+    "noticeText": "Aun así puede instalar Klacks: el Klacks Store ofrece los paquetes de todos los países disponibles. Después de la instalación, configura en la aplicación los días festivos, las normas de jornada laboral y los recargos de su país."
   },
   "notes": {
     "title": "Conviene saber",

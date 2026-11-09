@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Pemasangan &middot; Tiada yuran lesen &amp; sumber terbuka",
     "titleHtml": "Jalankan Klacks sendiri &mdash; <span class=\"text-secondary\">pada infrastruktur Anda sendiri.</span>",
-    "subtitle": "Dua laluan, satu hasil: pemasang berpandu, atau stack Docker Compose untuk persediaan Anda sendiri. Pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu) &mdash; tanpa pendaftaran, tanpa yuran lesen."
-  },
-  "industry": {
-    "eyebrow": "Pakej negara",
-    "title": "Pilih industri Anda &mdash; pilihan",
-    "text": "Pilihan Anda ditulis ke dalam profil negara sebagai pratetap dan menentukan blok industri mana yang aktif pada permulaan pertama. Pakej ini sentiasa mengandungi semua industri &mdash; Anda boleh mengaktifkan lebih banyak lagi dalam aplikasi pada bila-bila masa.",
-    "allLabel": "Semua industri"
+    "subtitle": "Dua laluan, satu hasil: pemasang berpandu, atau stack Docker Compose untuk persediaan Anda sendiri. Pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu) &mdash; tanpa pendaftaran, tanpa yuran lesen. Anda memuat turun semua pakej dari Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Tiga langkah",
     "steps": [
-      { "title": "Muat turun dan ekstrak", "text": "Muat turun ZIP untuk negara Anda dan ekstrak pada mesin sasaran." },
+      { "title": "Muat turun dan ekstrak", "text": "Di Klacks Store, pilih industri Anda jika mahu, muat turun ZIP untuk negara Anda dan ekstrak pada mesin sasaran." },
       { "title": "Jalankan skrip pemasangan", "text": "Jalankan skrip shell yang disertakan pada Linux, atau skrip PowerShell pada Windows. Ia menjana kunci rahsia dan sijil, menggunakan profil negara dan menunggu sehingga stack berjalan dengan baik." },
       { "title": "Log masuk dan tukar kata laluan", "text": "Log masuk dari pelayar Anda dan segera tukar kata laluan awal yang tersenarai dalam README yang disertakan." }
     ],
-    "downloadLabel": "Muat turun pakej pemasangan"
+    "downloadLabel": "Dapatkan pakej pemasangan di Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Tiga langkah",
     "steps": [
-      { "title": "Muat turun dan ekstrak", "text": "Muat turun ZIP Compose untuk negara Anda dan ekstrak &mdash; README yang disertakan menerangkan setiap langkah." },
+      { "title": "Muat turun dan ekstrak", "text": "Muat turun ZIP Compose untuk negara Anda dari Klacks Store dan ekstrak &mdash; README yang disertakan menerangkan setiap langkah." },
       { "title": "Sediakan .env", "text": "Salin templat .env.example kepada .env dan tetapkan nama pelayan serta kata laluan/kunci rahsia. Laluan ke profil negara sudah diisi terlebih dahulu." },
       { "title": "Mulakan stack", "text": "Jalankan “docker compose up -d”, log masuk dari pelayar Anda dan segera tukar kata laluan awal." }
     ],
-    "downloadLabel": "Muat turun pakej Compose"
+    "downloadLabel": "Dapatkan pakej Compose di Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "Dalam tiga langkah",
       "steps": [
-        { "title": "Muat turun fail pemasangan", "text": "Klik “Muat turun untuk Windows”. Fail “Klacks-Setup-win-x64.exe” biasanya disimpan dalam folder “Muat Turun”." },
-        { "title": "Klik dua kali dan pilih negara", "text": "Klik dua kali pada fail tersebut. Jika Windows SmartScreen memaparkan amaran, buka maklumat lanjut dan pilih untuk menjalankannya juga &mdash; fail pemasangan ini belum mempunyai tandatangan digital. Kemudian sahkan permintaan hak pentadbir. Dalam wizard, pilih negara Anda (cuti umum, zon waktu, peraturan waktu bekerja) dan, jika mahu, pintasan di desktop. Wizard memaparkan kemajuan; pemasangan mengambil masa beberapa minit." },
+        { "title": "Muat turun fail pemasangan dari Klacks Store", "text": "Klik “Dapatkan untuk Windows di Klacks Store” dan, di Klacks Store, klik “Windows” pada entri “PC pejabat (Windows)”. Fail “Klacks-Setup-win-x64.exe” biasanya disimpan dalam folder “Muat Turun”. Microsoft Edge mungkin memaparkan perkara berikut dalam senarai muat turun: “Klacks-Setup-win-x64.exe kebiasanya tidak dimuat turun. Pastikan anda mempercayai Klacks-Setup-win-x64.exe sebelum anda membukanya.” Sebabnya ialah fail itu baru dan belum dikenali dengan baik oleh Microsoft &mdash; ini tidak bermakna ia tidak selamat. Tudingkan tetikus anda ke atas entri dalam senarai muat turun, klik “&hellip;” (Lagi tindakan) dan kemudian “Simpan”, dan dalam kotak dialog yang muncul, pilih “Tunjukkan lagi” dan kemudian “Tetap simpan”. Sehingga saat itu, fail hanya akan muncul sebagai “Tidak disahkan &lt;nombor&gt;.crdownload” dalam folder “Muat Turun” &mdash; ini normal; fail tidak rosak. “Laporkan fail ini sebagai selamat” tidak diperlukan. Jangan klik dua kali sehingga muat turun selesai." },
+        { "title": "Klik dua kali dan pilih negara", "text": "Klik dua kali pada fail tersebut. Jika Windows SmartScreen memaparkan amaran, buka maklumat lanjut dan pilih untuk menjalankannya juga. Kemudian sahkan permintaan hak pentadbir; penerbit yang tertera di situ ialah “Open Source Developer Heribert Gasparoli”. Dalam wizard, pilih negara Anda (cuti umum, zon waktu, peraturan waktu bekerja) dan, jika mahu, pintasan di desktop. Wizard memaparkan kemajuan; pemasangan mengambil masa beberapa minit." },
         { "title": "Buka Klacks dan log masuk", "text": "Pada akhirnya, pilih untuk membuka Klacks dalam pelayar. Kemudian Anda boleh mencari Klacks dalam menu Mula sebagai “Klacks” (atau di http://localhost:5180). Log masuk dengan akaun awal yang dipaparkan oleh wizard pada akhirnya dan cipta akaun pentadbir Anda sendiri. Jika Klacks masih bermula, tunggu beberapa minit &mdash; permulaan pertama mengambil masa lebih sedikit." }
       ],
-      "downloadLabel": "Muat turun untuk Windows"
+      "downloadLabel": "Dapatkan untuk Windows di Klacks Store"
     },
-    "macDownloadLabel": "Muat turun untuk Mac",
     "macComingSoonNote": "Untuk Mac: akan datang tidak lama lagi.",
     "architectureNote": "Untuk Windows 64-bit (x64). Pada peranti Windows 11 dengan pemproses ARM (contohnya Snapdragon X), Klacks berjalan melalui emulasi; Windows 10 pada ARM tidak disokong.",
     "linuxNote": "Linux? Lihat di bawah: <a href=\"{0}\">Klacks pada PC Linux</a>.",
     "uninstallNote": "<strong>Nyahpasang:</strong> Klacks boleh dibuang seperti mana-mana program Windows lain &mdash; buka Seting › Aplikasi, cari entri “Klacks” dan nyahpasangnya. Program nyahpasang akan bertanya sama ada pangkalan data, tetapan dan sandaran juga perlu dipadam. Jika Anda menjawab tidak, data Anda kekal dalam C:\\ProgramData\\Klacks dan pemasangan semula kemudian akan menggunakannya semula.",
-    "heroSubtitle": "Tiga laluan, satu hasil: pakej Windows untuk PC pejabat Anda, pemasang berpandu untuk pelayan Anda, atau stack Docker Compose untuk persediaan Anda sendiri &mdash; tanpa pendaftaran, tanpa yuran lesen. Pada PC pejabat, Anda memilih negara semasa pemasangan; untuk pelayan dan Docker Compose, pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu)."
+    "heroSubtitle": "Tiga laluan, satu hasil: pakej Windows untuk PC pejabat Anda, pemasang berpandu untuk pelayan Anda, atau stack Docker Compose untuk persediaan Anda sendiri &mdash; tanpa pendaftaran, tanpa yuran lesen. Pada PC pejabat, Anda memilih negara semasa pemasangan; untuk pelayan dan Docker Compose, pakej negara disertakan terus dengan cuti umum, peraturan waktu bekerja dan pratetap industri negara Anda (Kredit Masa Tambahan, jika ditakrifkan untuk negara itu). Anda memuat turun semua pakej dari Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "Pada PC Linux",
-      "text": "Cara mudah untuk PC Linux, tanpa pengetahuan terdahulu: muat turun pakej, masukkan satu arahan dalam terminal sekali sahaja &mdash; selebihnya diuruskan oleh pemasang. Selepas itu Klacks berjalan dengan Docker pada PC ini, kemas kini diterima secara automatik, dan data Anda kekal pada PC ini.",
+      "text": "Cara mudah untuk PC Linux, tanpa pengetahuan terdahulu: dapatkan pakej di Klacks Store, masukkan satu arahan dalam terminal sekali sahaja &mdash; selebihnya diuruskan oleh pemasang. Selepas itu Klacks berjalan dengan Docker pada PC ini, kemas kini diterima secara automatik, dan data Anda kekal pada PC ini.",
       "requirementsTitle": "Keperluan",
       "requirements": [
         "Linux 64-bit dengan desktop: Ubuntu, Debian atau Fedora. Distribusi lain (contohnya Linux Mint) tidak disokong secara rasmi &mdash; pada distribusi tersebut, sila pasang Docker sendiri terlebih dahulu.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "Dalam tiga langkah",
       "steps": [
-        { "title": "Muat turun pakej dan ekstrak ke dalam folder tetap", "text": "Muat turun fail ZIP dan ekstrak ke dalam folder yang akan kekal di tempatnya, contohnya folder “klacks” dalam folder peribadi (home) Anda &mdash; bukan dalam folder “Downloads”. Kemas kini automatik menggunakan folder ini; jika folder ini dipadam, kemas kini tidak akan berfungsi lagi." },
+        { "title": "Muat turun pakej dan ekstrak ke dalam folder tetap", "text": "Muat turun pakej pemasangan (fail ZIP) dari Klacks Store dan ekstrak ke dalam folder yang akan kekal di tempatnya, contohnya folder “klacks” dalam folder peribadi (home) Anda &mdash; bukan dalam folder “Downloads”. Kemas kini automatik menggunakan folder ini; jika folder ini dipadam, kemas kini tidak akan berfungsi lagi." },
         { "title": "Buka terminal dan masukkan arahan", "text": "Dalam folder yang mengandungi fail pemasangan yang telah diekstrak, klik kanan dan pilih “Buka dalam Terminal”, masukkan arahan di bawah dan sahkan dengan kata laluan Anda (kata laluan tidak dipaparkan semasa Anda menaip). Jika Docker tiada, pemasang akan menawarkan untuk memasangnya: jawab “y” &mdash; ini mengambil masa beberapa minit. Anda hanya memerlukan terminal sekali ini sahaja untuk pemasangan; jika Anda menjalankan pemasang semula kemudian (contohnya untuk pembaikan), gunakan arahan yang sama termasuk sudo." },
         { "title": "Buka dalam pelayar dan log masuk", "text": "Buka https://localhost dalam pelayar Anda. Pelayar akan memaparkan amaran tentang sijil &mdash; sahkan amaran tersebut (“Lanjutan” dan kemudian “Teruskan” atau “Terima risiko”). Log masuk dengan akaun awal daripada README dalam folder itu dan tukar kata laluan dengan segera." }
       ],
-      "downloadLabel": "Muat turun untuk Linux"
+      "downloadLabel": "Dapatkan untuk Linux di Klacks Store"
     },
     "certificateNote": "Tentang amaran sijil: semasa pemasangan, Klacks mencipta sijilnya sendiri yang tidak dikenali oleh pelayar Anda &mdash; oleh itu amaran dipaparkan. Sambungan tetap disulitkan."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Profil sahaja &mdash; untuk pemasangan sedia ada",
     "text": "Sudah menjalankan Klacks? Profil (JSON) membawa pratetap negara &mdash; cuti umum, peraturan waktu bekerja, Kredit Masa Tambahan (jika ditakrifkan untuk negara itu) dan industri &mdash; dan digunakan pada permulaan pertama sesuatu pemasangan. Ia juga cara untuk menambah industri lain bersama pratetapnya kemudian.",
-    "downloadLabel": "Muat turun profil (JSON)"
+    "downloadLabel": "Dapatkan profil (JSON) di Klacks Store"
   },
   "fallback": {
     "noticeTitle": "Belum ada pakej negara prakonfigurasi untuk negara ini.",
-    "noticeText": "Anda tetap boleh memasang Klacks sepenuhnya: pakej standard mengandungi segala-galanya kecuali pratetap negara. Selepas itu, Anda menetapkan cuti umum, peraturan waktu bekerja dan Kredit Masa Tambahan dalam aplikasi.",
-    "downloadLabel": "Muat turun pakej standard",
-    "composeNote": "Belum ada pakej Compose berasingan untuk negara ini &mdash; pakej standard mengandungi stack Docker Compose yang lengkap."
+    "noticeText": "Anda tetap boleh memasang Klacks: Klacks Store menawarkan pakej untuk semua negara yang tersedia. Selepas pemasangan, Anda menetapkan cuti umum, peraturan waktu bekerja dan Kredit Masa Tambahan untuk negara Anda dalam aplikasi."
   },
   "notes": {
     "title": "Perkara yang perlu diketahui",

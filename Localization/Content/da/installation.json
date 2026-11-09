@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; Ingen licensafgifter &amp; open source",
     "titleHtml": "Kør selv Klacks &mdash; <span class=\"text-secondary\">på din egen infrastruktur.</span>",
-    "subtitle": "To veje, ét resultat: den guidede installer eller Docker Compose-stacken til dit eget setup. Landepakken leveres med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet) &mdash; ingen registrering, ingen licensomkostninger."
-  },
-  "industry": {
-    "eyebrow": "Landepakke",
-    "title": "Vælg din branche &mdash; valgfrit",
-    "text": "Dit valg skrives ind i landeprofilen som forudindstilling og afgør, hvilke branchemoduler der er aktive ved første start. Pakken indeholder altid alle brancher &mdash; du kan til enhver tid aktivere flere i appen.",
-    "allLabel": "Alle brancher"
+    "subtitle": "To veje, ét resultat: den guidede installer eller Docker Compose-stacken til dit eget setup. Landepakken leveres med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet) &mdash; ingen registrering, ingen licensomkostninger. Alle pakker downloader du fra Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Tre trin",
     "steps": [
-      { "title": "Download og udpak", "text": "Download ZIP-filen til dit land, og udpak den på målmaskinen." },
+      { "title": "Download og udpak", "text": "Vælg eventuelt din branche i Klacks Store, download ZIP-filen til dit land, og udpak den på målmaskinen." },
       { "title": "Kør installationsscriptet", "text": "Kør det medfølgende shell-script på Linux eller PowerShell-scriptet på Windows. Det genererer secrets og certifikatet, anvender landeprofilen og venter, indtil stacken kører." },
       { "title": "Log ind, og skift adgangskode", "text": "Log ind fra din browser, og skift straks den indledende adgangskode, der står i den medfølgende README." }
     ],
-    "downloadLabel": "Download installationspakke"
+    "downloadLabel": "Download installationspakke fra Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Tre trin",
     "steps": [
-      { "title": "Download og udpak", "text": "Download Compose-ZIP-filen til dit land, og udpak den &mdash; den medfølgende README gennemgår hvert trin." },
+      { "title": "Download og udpak", "text": "Download Compose-ZIP-filen til dit land fra Klacks Store, og udpak den &mdash; den medfølgende README gennemgår hvert trin." },
       { "title": "Opsæt .env", "text": "Kopiér skabelonen .env.example til .env, og angiv servernavn samt adgangskoder/secrets. Stien til landeprofilen er allerede udfyldt på forhånd." },
       { "title": "Start stacken", "text": "Kør &raquo;docker compose up -d&laquo;, log ind fra din browser, og skift straks den indledende adgangskode." }
     ],
-    "downloadLabel": "Download Compose-pakke"
+    "downloadLabel": "Download Compose-pakke fra Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "Tre trin",
       "steps": [
-        { "title": "Download installationsfilen", "text": "Klik på &raquo;Download til Windows&laquo;. Filen &raquo;Klacks-Setup-win-x64.exe&laquo; havner normalt i mappen &raquo;Overførsler&laquo;." },
-        { "title": "Dobbeltklik, og vælg land", "text": "Dobbeltklik på filen. Viser Windows SmartScreen en advarsel, så åbn de ekstra oplysninger, og vælg at køre programmet alligevel &mdash; installationsfilen er endnu ikke digitalt signeret. Bekræft derefter forespørgslen om administratorrettigheder. Vælg i guiden dit land (helligdage, tidszone, arbejdstidsregler) og eventuelt en genvej på skrivebordet. Guiden viser forløbet; installationen tager nogle minutter." },
+        { "title": "Download installationsfilen fra Klacks Store", "text": "Klik på &raquo;Download til Windows fra Klacks Store&laquo;, og klik i Klacks Store på &raquo;Windows&laquo; ved posten &raquo;Kontor-pc (Windows)&laquo;. Filen &raquo;Klacks-Setup-win-x64.exe&laquo; havner normalt i mappen &raquo;Overførsler&laquo;. Microsoft Edge viser muligvis følgende i downloadlisten: &raquo;Klacks-Setup-win-x64.exe downloades sjældent. tjek at du har tillid til Klacks-Setup-win-x64.exe før du åbner den.&laquo; Årsagen: Filen er ny og endnu ikke særlig kendt hos Microsoft &mdash; den er dog ikke usikker af den grund. Hold musen over posten i downloadlisten, klik på &raquo;&hellip;&laquo; (Flere handlinger) og derefter på &raquo;Behold&laquo;, vælg &raquo;Vis mere&laquo; i den efterfølgende dialogboks og derefter &raquo;Behold alligevel&laquo;. Indtil da ligger filen kun som &raquo;Ubekræftet &lt;nummer&gt;.crdownload&laquo; i mappen &raquo;Overførsler&laquo; &mdash; det er normalt, filen er ikke beskadiget. &raquo;Rapportér denne fil som sikker&laquo; er ikke nødvendigt. Dobbeltklik først, når downloadet er færdigt." },
+        { "title": "Dobbeltklik, og vælg land", "text": "Dobbeltklik på filen. Hvis Windows SmartScreen viser en advarsel, så åbn de ekstra oplysninger, og vælg at køre programmet alligevel. Bekræft derefter forespørgslen om administratorrettigheder; som udgiver står der &raquo;Open Source Developer Heribert Gasparoli&laquo;. Vælg i guiden dit land (helligdage, tidszone, arbejdstidsregler) og eventuelt en genvej på skrivebordet. Guiden viser forløbet; installationen tager nogle minutter." },
         { "title": "Åbn Klacks, og log ind", "text": "Vælg til sidst at åbne Klacks i browseren. Senere finder du Klacks i menuen Start under &raquo;Klacks&laquo; (eller på http://localhost:5180). Log ind med den indledende konto, som guiden viser til sidst, og opret din egen administratorkonto. Hvis Klacks stadig starter op, så vent et par minutter &mdash; den første start tager lidt længere tid." }
       ],
-      "downloadLabel": "Download til Windows"
+      "downloadLabel": "Download til Windows fra Klacks Store"
     },
-    "macDownloadLabel": "Download til Mac",
     "macComingSoonNote": "Til Mac: kommer snart.",
     "architectureNote": "Til Windows 64-bit (x64). På Windows 11-enheder med ARM-processor (f.eks. Snapdragon X) kører Klacks via emulering; Windows 10 på ARM understøttes ikke.",
     "linuxNote": "Linux? Se nedenfor: <a href=\"{0}\">Klacks på en Linux-pc</a>.",
     "uninstallNote": "<strong>Afinstallation:</strong> Klacks fjernes som ethvert andet Windows-program &mdash; åbn Indstillinger › Apps, find posten &raquo;Klacks&laquo;, og afinstaller den. Afinstallationsprogrammet spørger, om databasen, indstillingerne og sikkerhedskopierne også skal slettes. Svarer du nej, bliver dine data liggende i C:\\ProgramData\\Klacks, og en senere geninstallation overtager dem igen.",
-    "heroSubtitle": "Tre veje, ét resultat: Windows-pakken til din kontor-pc, den guidede installer til din server eller Docker Compose-stacken til dit eget setup &mdash; ingen registrering, ingen licensomkostninger. På kontor-pc'en vælger du landet under installationen; til server og Docker Compose leveres landepakken med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet)."
+    "heroSubtitle": "Tre veje, ét resultat: Windows-pakken til din kontor-pc, den guidede installer til din server eller Docker Compose-stacken til dit eget setup &mdash; ingen registrering, ingen licensomkostninger. På kontor-pc'en vælger du landet under installationen; til server og Docker Compose leveres landepakken med dit lands helligdage, arbejdstidsregler og brancheforudindstillinger (tillæg, hvor de er defineret for landet). Alle pakker downloader du fra Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "På en Linux-pc",
-      "text": "Den enkle vej til en Linux-pc, også uden forkundskaber: download pakken, og indtast én kommando i terminalen én gang &mdash; installeren klarer resten. Klacks kører derefter med Docker på denne pc, opdateringer kommer automatisk, og dine data bliver på denne pc.",
+      "text": "Den enkle vej til en Linux-pc, også uden forkundskaber: download pakken fra Klacks Store, og indtast én kommando i terminalen én gang &mdash; installeren klarer resten. Klacks kører derefter med Docker på denne pc, opdateringer kommer automatisk, og dine data bliver på denne pc.",
       "requirementsTitle": "Forudsætninger",
       "requirements": [
         "64-bit Linux med skrivebordsmiljø: Ubuntu, Debian eller Fedora. Andre distributioner (fx Linux Mint) understøttes ikke officielt &mdash; dér skal du selv installere Docker først.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "Tre trin",
       "steps": [
-        { "title": "Download pakken, og udpak den i en fast mappe", "text": "Download ZIP-filen, og udpak den i en mappe, der bliver liggende, fx en mappe &raquo;klacks&laquo; i din hjemmemappe &mdash; ikke i mappen &raquo;Overførsler&laquo;. De automatiske opdateringer arbejder med denne mappe; slettes den, virker opdateringerne ikke længere." },
+        { "title": "Download pakken, og udpak den i en fast mappe", "text": "Download installationspakken (ZIP-fil) fra Klacks Store, og udpak den i en mappe, der bliver liggende, fx en mappe &raquo;klacks&laquo; i din hjemmemappe &mdash; ikke i mappen &raquo;Overførsler&laquo;. De automatiske opdateringer arbejder med denne mappe; slettes den, virker opdateringerne ikke længere." },
         { "title": "Åbn en terminal, og indtast kommandoen", "text": "Højreklik i mappen med de udpakkede installationsfiler, vælg &raquo;Åbn i terminal&laquo;, indtast kommandoen nedenfor, og bekræft med din adgangskode (den vises ikke, mens du skriver). Mangler Docker, tilbyder installeren at installere det: svar &raquo;y&laquo; &mdash; det tager nogle minutter. Du skal kun bruge terminalen denne ene gang til installationen; kører du installeren igen senere (fx for at reparere), så brug den samme kommando inklusive sudo." },
         { "title": "Åbn i browseren, og log ind", "text": "Åbn https://localhost i din browser. Browseren advarer om certifikatet &mdash; bekræft advarslen (&raquo;Avanceret&laquo; og derefter &raquo;Fortsæt&laquo; eller &raquo;Accepter risikoen&laquo;). Log ind med den indledende konto fra README i mappen, og skift adgangskoden med det samme." }
       ],
-      "downloadLabel": "Download til Linux"
+      "downloadLabel": "Download til Linux fra Klacks Store"
     },
     "certificateNote": "Om certifikatadvarslen: Under installationen opretter Klacks sit eget certifikat, som din browser ikke kender &mdash; derfor advarslen. Forbindelsen er alligevel krypteret."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Kun profilen &mdash; til eksisterende installationer",
     "text": "Kører Klacks allerede? Profilen (JSON) indeholder landeforudindstillingerne &mdash; helligdage, arbejdstidsregler, tillæg (hvor de er defineret for landet) og brancher &mdash; og anvendes ved en installations første start. Det er også vejen til senere at tilføje endnu en branche med dens forudindstillinger.",
-    "downloadLabel": "Download profil (JSON)"
+    "downloadLabel": "Download profil (JSON) fra Klacks Store"
   },
   "fallback": {
     "noticeTitle": "Der findes endnu ingen forudkonfigureret landepakke til dette land.",
-    "noticeText": "Du kan alligevel installere Klacks fuldt ud: standardpakken indeholder alt undtagen landeforudindstillingerne. Helligdage, arbejdstidsregler og tillæg opsætter du derefter i appen.",
-    "downloadLabel": "Download standardpakke",
-    "composeNote": "Der findes endnu ingen separat Compose-pakke til dette land &mdash; standardpakken indeholder den komplette Docker Compose-stack."
+    "noticeText": "Du kan alligevel installere Klacks: Klacks Store tilbyder pakkerne til alle tilgængelige lande. Helligdage, arbejdstidsregler og tillæg for dit land opsætter du efter installationen i appen."
   },
   "notes": {
     "title": "Godt at vide",

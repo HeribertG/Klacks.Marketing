@@ -3,6 +3,7 @@
 namespace Klacks.Marketing.Tests;
 
 using System.Net;
+using System.Text.Encodings.Web;
 using Klacks.Marketing.Localization;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
@@ -13,11 +14,12 @@ using Shouldly;
 /// the Windows 10 note (Windows 11 is the stated requirement, Windows 10 22H2 runs but only gets updates through ESU)
 /// and the "Mac: coming soon" note, and names the office PC in its page title and meta description. The shipped
 /// appsettings.json switches the card on; the page is unchanged while NativeInstall:Enabled is off (two cards,
-/// two-path hero), and with the switch on every culture renders three cards with the counted link to the Windows installer
-/// (Klacks-Setup-win-x64.exe) from the rolling "office-pc" release. The steps describe that installer, not the retired
-/// ZIP package with Installieren.cmd, and every culture explains how to uninstall through the Windows app settings and
-/// where the kept data stays. The Mac button only appears when NativeInstall:MacUrl is configured; otherwise the
-/// "coming soon" note stands in its place.
+/// two-path hero), and with the switch on every culture renders three cards. The page downloads nothing itself: the
+/// card's counted button links to the country's page in the Klacks Store, which hosts the Windows installer
+/// (Klacks-Setup-win-x64.exe). The steps describe that installer, not the retired ZIP package with Installieren.cmd,
+/// explain the Edge download warning (the .crdownload placeholder), name the signed installer's publisher instead of
+/// calling it unsigned, and every culture explains how to uninstall through the Windows app settings and where the kept
+/// data stays. The "Mac: coming soon" note is shown with the card.
 /// </summary>
 [TestFixture]
 public class InstallPageNativeOptionTests
@@ -25,15 +27,19 @@ public class InstallPageNativeOptionTests
     private const string InstallPageKey = "installation";
     private const int ExpectedRequirementCount = 5;
     private const int ExpectedStepCount = 3;
-    private const string RollingWindowsPackageUrl = "https://github.com/HeribertG/Klacks.Api/releases/download/office-pc/Klacks-Setup-win-x64.exe";
+    private const string WindowsInstallerFileName = "Klacks-Setup-win-x64.exe";
+    private const string EdgeDownloadPlaceholderExtension = "crdownload";
+    private const string StoreName = "Klacks Store";
+    private const string InstallerPublisher = "Open Source Developer Heribert Gasparoli";
+    private const string StoreRegionPageUrl = ExternalLinks.MarketplaceUrl + "/region/ch?culture=";
     private const string RetiredInstallScript = "Installieren.cmd";
     private const string RetiredPackageFormat = "ZIP";
     private const string KeptDataFolder = @"C:\ProgramData\Klacks";
     private const string ProductName = "Klacks";
-    private const string ConfiguredMacUrl = "https://downloads.example/klacks.pkg";
-    private const string DownloadCounterAttribute = "data-c=\"DownloadClick\"";
+    private const string StoreLinkAttributes = "target=\"_blank\" data-c=\"DownloadClick\"";
     private const string EnglishCulture = "en";
-    private const string EnglishMacLabel = "Download for Mac";
+    private static readonly string[] RetiredUnsignedClaims = ["nicht digital signiert", "not digitally signed"];
+    private static readonly string[] DirectDownloadMarkers = ["/releases/", "/api/regions/", ".exe\"", ".zip\""];
     private static readonly string[] ArchitectureNoteFacts = ["x64", "ARM", "Snapdragon X"];
     private const string SupportedWindows = "Windows 11";
     private const string OutOfSupportWindows = "Windows 10";
@@ -84,7 +90,7 @@ public class InstallPageNativeOptionTests
         native.ShouldNotBeNull();
         native.Path.Requirements.Count.ShouldBe(ExpectedRequirementCount);
         native.Path.Steps.Count.ShouldBe(ExpectedStepCount);
-        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacDownloadLabel, native.MacComingSoonNote, native.ArchitectureNote, native.LinuxNote, native.UninstallNote, native.HeroSubtitle }
+        new[] { native.Path.Title, native.Path.Text, native.Path.DownloadLabel, native.MacComingSoonNote, native.ArchitectureNote, native.LinuxNote, native.UninstallNote, native.HeroSubtitle }
             .ShouldAllBe(text => !string.IsNullOrWhiteSpace(text));
     }
 
@@ -155,7 +161,26 @@ public class InstallPageNativeOptionTests
 
         texts.ShouldAllBe(text => !text.Contains(RetiredInstallScript, StringComparison.OrdinalIgnoreCase));
         texts.ShouldAllBe(text => !text.Contains(RetiredPackageFormat, StringComparison.OrdinalIgnoreCase));
-        native.Path.Steps[0].Text.ShouldContain(ExternalLinks.NativeWindowsPackageFileName);
+        native.Path.Steps[0].Text.ShouldContain(WindowsInstallerFileName);
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void Every_culture_downloads_the_installer_from_the_store_and_explains_the_edge_warning(string culture)
+    {
+        var steps = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!.Path.Steps;
+
+        steps[0].Text.ShouldContain(StoreName);
+        steps[0].Text.ShouldContain(EdgeDownloadPlaceholderExtension);
+        steps[1].Text.ShouldContain(InstallerPublisher);
+    }
+
+    [TestCaseSource(nameof(Cultures))]
+    public void No_culture_calls_the_installer_unsigned(string culture)
+    {
+        var native = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!;
+        var texts = native.Path.Steps.Select(step => step.Text).Append(native.Path.Text);
+
+        texts.ShouldAllBe(text => RetiredUnsignedClaims.All(claim => !text.Contains(claim, StringComparison.OrdinalIgnoreCase)));
     }
 
     [TestCaseSource(nameof(Cultures))]
@@ -182,19 +207,13 @@ public class InstallPageNativeOptionTests
     }
 
     [Test]
-    public void Windows_package_defaults_to_the_rolling_office_pc_release_and_mac_to_none()
+    public void Office_pc_switch_defaults_to_off()
     {
-        ExternalLinks.NativeWindowsPackageUrl.ShouldBe(RollingWindowsPackageUrl);
-
-        var settings = NativeInstallSettings.From(new ConfigurationBuilder().Build());
-
-        settings.Enabled.ShouldBeFalse();
-        settings.WindowsUrl.ShouldBe(RollingWindowsPackageUrl);
-        settings.MacUrl.ShouldBeNull();
+        NativeInstallSettings.From(new ConfigurationBuilder().Build()).Enabled.ShouldBeFalse();
     }
 
     [Test]
-    public async Task Shipped_configuration_shows_the_office_pc_card_with_the_rolling_package_and_no_mac_button()
+    public async Task Shipped_configuration_shows_the_office_pc_card_linking_to_the_store()
     {
         var configuration = new ConfigurationBuilder()
             .AddJsonFile(Path.Combine(MarketingProjectPaths.ProjectRoot, AppSettingsFileName), optional: false)
@@ -202,23 +221,20 @@ public class InstallPageNativeOptionTests
         var settings = NativeInstallSettings.From(configuration);
 
         settings.Enabled.ShouldBeTrue();
-        settings.WindowsUrl.ShouldBe(RollingWindowsPackageUrl);
-        settings.MacUrl.ShouldBeNull();
 
-        var html = await RenderAsync(SupportedCultures.DefaultCode, settings.Enabled, settings.WindowsUrl, settings.MacUrl);
+        var html = await RenderAsync(SupportedCultures.DefaultCode, settings.Enabled);
 
         html.ShouldContain("lg:grid-cols-3");
-        html.ShouldContain($"href=\"{RollingWindowsPackageUrl}\" rel=\"nofollow\" {DownloadCounterAttribute}");
+        html.ShouldContain($"href=\"{StoreLink(SupportedCultures.DefaultCode)}\" {StoreLinkAttributes}");
         html.ShouldContain("Für Mac: kommt in Kürze.");
     }
 
     [TestCaseSource(nameof(Cultures))]
-    public async Task Mac_coming_soon_note_appears_only_without_a_configured_mac_url(string culture)
+    public async Task Mac_coming_soon_note_appears_only_with_the_office_pc_card(string culture)
     {
         var note = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!.MacComingSoonNote;
 
         (await RenderAsync(culture, enabled: true)).ShouldContain(note);
-        (await RenderAsync(culture, enabled: true, macUrl: ConfiguredMacUrl)).ShouldNotContain(note);
         (await RenderAsync(culture, enabled: false)).ShouldNotContain(note);
     }
 
@@ -226,66 +242,41 @@ public class InstallPageNativeOptionTests
     public async Task Switch_off_keeps_the_two_card_page()
     {
         var html = await RenderAsync(SupportedCultures.DefaultCode, enabled: false);
+        var native = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(SupportedCultures.DefaultCode, InstallPageKey).Native!;
 
         html.ShouldContain("lg:grid-cols-2");
-        html.ShouldNotContain(ExternalLinks.NativeWindowsPackageUrl);
+        html.ShouldNotContain(native.Path.DownloadLabel);
         html.ShouldContain("Zwei Wege");
     }
 
     [TestCaseSource(nameof(Cultures))]
-    public async Task Switch_on_shows_the_office_pc_card_with_the_counted_windows_package_and_the_architecture_note(string culture)
+    public async Task Switch_on_shows_the_office_pc_card_with_the_counted_store_link_and_the_architecture_note(string culture)
     {
         var html = await RenderAsync(culture, enabled: true);
         var native = new JsonPageContentProvider(new TestWebHostEnvironment()).GetInstallPage(culture, InstallPageKey).Native!;
 
         html.ShouldContain("lg:grid-cols-3");
-        html.ShouldContain($"href=\"{RollingWindowsPackageUrl}\" rel=\"nofollow\" {DownloadCounterAttribute}");
+        html.ShouldContain($"href=\"{StoreLink(culture)}\" {StoreLinkAttributes}");
         html.ShouldContain(native.ArchitectureNote);
     }
 
     [TestCaseSource(nameof(Cultures))]
-    public async Task Mac_button_appears_only_with_a_configured_mac_url(string culture)
+    public async Task Install_page_links_no_direct_download(string culture)
     {
-        var withoutMac = await RenderAsync(culture, enabled: true);
-        var withMac = await RenderAsync(culture, enabled: true, macUrl: ConfiguredMacUrl);
+        var html = await RenderAsync(culture, enabled: true);
 
-        CountOccurrences(withMac, DownloadCounterAttribute).ShouldBe(CountOccurrences(withoutMac, DownloadCounterAttribute) + 1);
-        withMac.ShouldContain($"href=\"{ConfiguredMacUrl}\" rel=\"nofollow\" {DownloadCounterAttribute}");
+        DirectDownloadMarkers.ShouldAllBe(marker => !html.Contains(marker, StringComparison.OrdinalIgnoreCase));
+        html.ShouldNotContain("rel=\"nofollow\"");
     }
 
     [Test]
-    public async Task English_page_hides_the_mac_label_without_a_mac_url()
+    public async Task Switch_on_uses_the_three_path_hero()
     {
-        (await RenderAsync(EnglishCulture, enabled: true)).ShouldNotContain(EnglishMacLabel);
-        (await RenderAsync(EnglishCulture, enabled: true, macUrl: ConfiguredMacUrl)).ShouldContain(EnglishMacLabel);
+        (await RenderAsync(SupportedCultures.DefaultCode, enabled: true)).ShouldContain("Drei Wege");
     }
 
-    [Test]
-    public async Task Switch_on_uses_the_three_path_hero_and_configured_urls()
-    {
-        const string windowsUrl = "https://downloads.example/klacks.zip";
+    private static Task<string> RenderAsync(string culture, bool enabled)
+        => InstallPageRenderer.RenderAsync(culture, enabled);
 
-        var html = await RenderAsync(SupportedCultures.DefaultCode, enabled: true, windowsUrl, ConfiguredMacUrl);
-
-        html.ShouldContain("Drei Wege");
-        html.ShouldContain(windowsUrl);
-        html.ShouldNotContain(RollingWindowsPackageUrl);
-        html.ShouldContain(ConfiguredMacUrl);
-    }
-
-    private static Task<string> RenderAsync(string culture, bool enabled, string? windowsUrl = null, string? macUrl = null)
-        => InstallPageRenderer.RenderAsync(culture, enabled, windowsUrl, macUrl);
-
-    private static int CountOccurrences(string text, string value)
-    {
-        var count = 0;
-        var index = text.IndexOf(value, StringComparison.Ordinal);
-        while (index >= 0)
-        {
-            count++;
-            index = text.IndexOf(value, index + value.Length, StringComparison.Ordinal);
-        }
-
-        return count;
-    }
+    private static string StoreLink(string culture) => HtmlEncoder.Default.Encode(StoreRegionPageUrl + culture);
 }

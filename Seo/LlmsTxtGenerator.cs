@@ -91,9 +91,12 @@ public static class LlmsTxtGenerator
     };
 
     private const string InstallDocsPath = "erste-schritte/installation-und-playground/";
-    private const string InstallFolderName = "onprem";
     private const string ExampleServerName = "klacks.example.com";
     private const string ExampleRegion = "de";
+    private const string ExamplePackageFileName = "klacks-onprem-de-all.zip";
+    private const string ExampleLinuxInstallFolder = "~/klacks";
+    private const string StoreTitle = "Klacks Store";
+    private const string StoreDescription = "The only download source for Klacks: country packages (installer, Docker Compose, profile) and the Windows installer for an office PC.";
     private const string DocsHomeTitle = "Klacks documentation";
     private const string DocsInstallTitle = "Installation and Playground (documentation)";
 
@@ -119,6 +122,8 @@ public static class LlmsTxtGenerator
     // SitemapGenerator resolves the homepage and the legal pages for this culture.
     private static string HomeCountry => LanguageCountries.DefaultCountryFor(EnglishCultureCode);
 
+    private static string StoreHomeUrl => RegionPackages.StoreUrl(ExternalLinks.MarketplaceUrl, null, EnglishCultureCode);
+
     public static string BuildShort(string baseUrl)
     {
         var trimmedBase = baseUrl.TrimEnd('/');
@@ -135,7 +140,8 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "On-premise, open-source workforce scheduling — overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "Voice- and chat-controlled scheduling assistant with free choice of language model.");
-        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Download country packages for on-premise or Docker Compose installation.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "The installation paths explained: office PC (Windows), your own server, or Docker Compose.");
+        AppendDocsLink(sb, StoreHomeUrl, StoreTitle, StoreDescription);
         AppendDocsLink(sb, DocsHomeUrl(trimmedBase), DocsHomeTitle, "Documentation, including the step-by-step installation guide with the real commands.");
         sb.AppendLine();
 
@@ -257,7 +263,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine("- Playground: a public Klacks instance with sample data, right in the browser, no installation and no registration.");
         sb.AppendLine("- On-premise package: Docker images, installer, database, HTTPS and automatic updates in a single bundle.");
-        sb.AppendLine("- Country packages: preconfigured downloads (installer bundle, Docker Compose bundle or profile file) for 30 countries, with an optional industry preselection, served by the Klacks Marketplace.");
+        sb.AppendLine($"- Country packages: preconfigured downloads (installer bundle, Docker Compose bundle or profile file) for 32 countries, with an optional industry preselection, and the Windows installer for an office PC. Klacks is downloaded only from the Klacks Store: {StoreHomeUrl}");
         sb.AppendLine("- Source code: Klacks is open source under the GNU AGPL-3.0 licence, with backend, frontend and Docker images public on GitHub.");
         sb.AppendLine();
 
@@ -267,7 +273,8 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         AppendLink(sb, trimmedBase, HomeCountry, "Klacks", "Product overview and get started.");
         AppendLink(sb, trimmedBase, $"{HomeCountry}/{KlacksySlug}", "Klacksy — AI assistant", "The scheduling assistant in detail.");
-        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "Country packages for on-premise or Docker Compose installation.");
+        AppendLink(sb, trimmedBase, $"{HomeCountry}/{InstallationSlug}", "Install Klacks", "The installation paths explained: office PC (Windows), your own server, or Docker Compose.");
+        AppendDocsLink(sb, StoreHomeUrl, StoreTitle, StoreDescription);
         AppendDocsLinks(sb, trimmedBase);
         AppendBusinessSizeLinks(sb, trimmedBase);
         foreach (var (pageKey, name) in EnglishMarkets)
@@ -289,8 +296,7 @@ public static class LlmsTxtGenerator
     // English marketing content; anything those sources do not state is left out.
     private static void AppendInstallSection(StringBuilder sb, string baseUrl)
     {
-        var bundleUrl = ExternalLinks.OnPremBundleUrl;
-        var bundleFile = ExternalLinks.OnPremBundleFileName;
+        var storeUrl = StoreHomeUrl;
 
         sb.AppendLine("## Install Klacks (step by step)");
         sb.AppendLine();
@@ -308,37 +314,40 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 2. Download");
         sb.AppendLine();
-        sb.AppendLine($"The installation package is a single ZIP file, {bundleFile}, published as the latest GitHub release: {bundleUrl}");
-        sb.AppendLine($"It extracts into a folder named {InstallFolderName} that contains the installer scripts (install.sh for Linux, install.ps1 for Windows), the Docker Compose stack and a regions folder with the country profiles.");
+        sb.AppendLine($"Klacks is downloaded only from the Klacks Store: {storeUrl} — there is no other download source. Choose your country there; its page offers an optional industry preselection and the installation package, a ZIP file named klacks-onprem-<country>-<industry>.zip (for example {ExamplePackageFileName}). If there is no package for your country, the store offers the packages of all available countries; you then set up public holidays, working-time rules and surcharges for your country in the app.");
+        sb.AppendLine("Extract the ZIP into a folder that stays where it is, for example ~/klacks on Linux or C:\\klacks on Windows: the automatic updates work with this folder. The files sit directly in that folder: the installer scripts (install.sh for Linux, install.ps1 for Windows), the wrappers install-<country>.sh and install-<country>.ps1 that preset the package's country profile, the Docker Compose stack and the regions folder with the country profile. The package is downloaded in a browser; for a server without a desktop, copy the ZIP to the server afterwards.");
+        sb.AppendLine("For a single office PC with Windows, the Klacks Store also offers a Windows installer that needs no Docker (entry \"Office PC (Windows)\"); the steps below cover the Docker-based installation.");
         sb.AppendLine();
 
         sb.AppendLine("### 3a. Linux");
         sb.AppendLine();
+        sb.AppendLine($"Example with the German country package ({ExampleRegion}), extracted from the Downloads folder:");
+        sb.AppendLine();
         sb.AppendLine("```bash");
-        sb.AppendLine($"curl -fsSLO {bundleUrl}");
-        sb.AppendLine($"unzip {bundleFile} && cd {InstallFolderName} && sudo bash ./install.sh");
+        sb.AppendLine($"mkdir -p {ExampleLinuxInstallFolder} && unzip ~/Downloads/{ExamplePackageFileName} -d {ExampleLinuxInstallFolder}");
+        sb.AppendLine($"cd {ExampleLinuxInstallFolder} && sudo bash ./install-{ExampleRegion}.sh");
         sb.AppendLine("```");
         sb.AppendLine();
-        sb.AppendLine("With your own server name and an optional country profile:");
+        sb.AppendLine("install-<country>.sh runs install.sh with REGION set to the package's country. The same with your own server name, calling install.sh directly:");
         sb.AppendLine();
         sb.AppendLine("```bash");
         sb.AppendLine($"sudo SERVER_NAME={ExampleServerName} REGION={ExampleRegion} bash ./install.sh");
         sb.AppendLine("```");
         sb.AppendLine();
-        sb.AppendLine("Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443). Put them after sudo, as shown above: sudo does not pass on the caller's environment.");
+        sb.AppendLine("Without REGION (sudo bash ./install.sh) the installer runs without a country profile. Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443). Put them after sudo, as shown above: sudo does not pass on the caller's environment.");
         sb.AppendLine();
         sb.AppendLine("If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora); otherwise install Docker Engine with the Compose plugin first.");
         sb.AppendLine();
 
         sb.AppendLine("### 3b. Windows (PowerShell)");
         sb.AppendLine();
-        sb.AppendLine($"Download {bundleUrl}, extract it into a folder on a local drive (for example C:\\klacks) and run the installer from the extracted folder:");
+        sb.AppendLine("Download the installation package for your country from the Klacks Store (see step 2), extract it into a folder on a local drive (for example C:\\klacks) and run the installer from that folder:");
         sb.AppendLine();
         sb.AppendLine("```powershell");
         sb.AppendLine($"powershell -ExecutionPolicy Bypass -File .\\install.ps1 -ServerName {ExampleServerName} -Region {ExampleRegion}");
         sb.AppendLine("```");
         sb.AppendLine();
-        sb.AppendLine("Optional parameters: -ServerName (defaults to localhost), -Region, -HttpPort and -HttpsPort (default 80 and 443). The installer maps the install folder into the Docker Desktop VM so that the automatic updater can recreate containers with the right bind mounts, which is why the folder must be on a local drive.");
+        sb.AppendLine("Optional parameters: -ServerName (defaults to localhost), -Region (the package's country; install-<country>.ps1 presets it), -HttpPort and -HttpsPort (default 80 and 443). The installer maps the install folder into the Docker Desktop VM so that the automatic updater can recreate containers with the right bind mounts, which is why the folder must be on a local drive.");
         sb.AppendLine();
 
         sb.AppendLine("### 4. What the installer does");

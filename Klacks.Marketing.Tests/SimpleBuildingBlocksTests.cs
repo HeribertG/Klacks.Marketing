@@ -20,7 +20,6 @@ public class SimpleBuildingBlocksTests
 {
     private const string SwissCountry = "land-ch";
     private const string SharedUrl = "https://klacks-software.ch/land-ch";
-    private const string OfficePcDownloadUrl = "https://example.test/Klacks-Setup-win-x64.exe";
     private const string SectionStart = "<section";
     private const string SectionEnd = "</section>";
     private const string OfficePcCardStart = "<div class=\"card-hover p-8 ";
@@ -150,14 +149,14 @@ public class SimpleBuildingBlocksTests
     {
         PageSectionIds.OfficePc.ShouldBe("buero-pc");
 
-        var html = await InstallPageRenderer.RenderAsync(SupportedCultures.DefaultCode, enabled: true, windowsUrl: OfficePcDownloadUrl);
+        var html = await InstallPageRenderer.RenderAsync(SupportedCultures.DefaultCode, enabled: true);
         var anchor = html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", StringComparison.Ordinal);
 
         anchor.ShouldBeGreaterThan(-1);
         html.IndexOf($"id=\"{PageSectionIds.OfficePc}\"", anchor + 1, StringComparison.Ordinal).ShouldBe(-1);
         var lastSectionStart = html.LastIndexOf(SectionStart, anchor, StringComparison.Ordinal);
         var lastSectionEnd = html.LastIndexOf(SectionEnd, anchor, StringComparison.Ordinal);
-        lastSectionEnd.ShouldBeGreaterThan(lastSectionStart, "the anchor must not sit inside a .reveal section: its transform shifts the jump target under the fixed header");
+        lastSectionEnd.ShouldBeGreaterThanOrEqualTo(lastSectionStart, "the anchor must not sit inside a .reveal section (both are -1 when no section precedes it): its transform shifts the jump target under the fixed header");
         html.IndexOf(OfficePcCardStart, anchor, StringComparison.Ordinal).ShouldBeGreaterThan(anchor);
     }
 

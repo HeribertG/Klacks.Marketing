@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Installatie &middot; Geen licentiekosten &amp; open source",
     "titleHtml": "Klacks zelf draaien &mdash; <span class=\"text-secondary\">op uw eigen infrastructuur.</span>",
-    "subtitle": "Twee wegen, één resultaat: de begeleide installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd) &mdash; zonder registratie, zonder licentiekosten."
-  },
-  "industry": {
-    "eyebrow": "Landenpakket",
-    "title": "Kies uw branche &mdash; optioneel",
-    "text": "Uw keuze wordt als voorinstelling in het landenprofiel opgenomen en bepaalt welke branchemodules bij de eerste start actief zijn. Het pakket bevat altijd alle branches &mdash; u kunt er in de app op elk moment meer activeren.",
-    "allLabel": "Alle branches"
+    "subtitle": "Twee wegen, één resultaat: de begeleide installer of de Docker Compose-stack voor uw eigen omgeving. Het landenpakket bevat de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd) &mdash; zonder registratie, zonder licentiekosten. Alle pakketten downloadt u via de Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Drie stappen",
     "steps": [
-      { "title": "Downloaden en uitpakken", "text": "Download het ZIP-bestand voor uw land en pak het uit op de doelmachine." },
+      { "title": "Downloaden en uitpakken", "text": "Kies in de Klacks Store desgewenst uw branche, download het ZIP-bestand voor uw land en pak het uit op de doelmachine." },
       { "title": "Installatiescript uitvoeren", "text": "Voer op Linux het meegeleverde shellscript uit, op Windows het PowerShell-script. Het genereert secrets en het certificaat, past het landenprofiel toe en wacht tot de stack draait." },
       { "title": "Inloggen en wachtwoord wijzigen", "text": "Log in via de browser en wijzig direct het initiële wachtwoord uit de meegeleverde README." }
     ],
-    "downloadLabel": "Installatiepakket downloaden"
+    "downloadLabel": "Installatiepakket downloaden via de Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Drie stappen",
     "steps": [
-      { "title": "Downloaden en uitpakken", "text": "Download het Compose-ZIP-bestand voor uw land en pak het uit &mdash; de meegeleverde README beschrijft elke stap." },
+      { "title": "Downloaden en uitpakken", "text": "Download via de Klacks Store het Compose-ZIP-bestand voor uw land en pak het uit &mdash; de meegeleverde README beschrijft elke stap." },
       { "title": ".env instellen", "text": "Kopieer de template .env.example naar .env en stel de servernaam en de wachtwoorden/secrets in. Het pad naar het landenprofiel is al ingevuld." },
       { "title": "Stack starten", "text": "Voer &bdquo;docker compose up -d&rdquo; uit, log in via de browser en wijzig direct het initiële wachtwoord." }
     ],
-    "downloadLabel": "Compose-pakket downloaden"
+    "downloadLabel": "Compose-pakket downloaden via de Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "In drie stappen",
       "steps": [
-        { "title": "Installatiebestand downloaden", "text": "Klik op &bdquo;Downloaden voor Windows&rdquo;. Het bestand &bdquo;Klacks-Setup-win-x64.exe&rdquo; komt meestal in de map &bdquo;Downloads&rdquo; terecht." },
-        { "title": "Dubbelklikken en land kiezen", "text": "Dubbelklik op het bestand. Toont Windows SmartScreen een waarschuwing, open dan de extra informatie en kies ervoor het programma toch uit te voeren &mdash; het installatiebestand is nog niet digitaal ondertekend. Bevestig daarna de vraag om beheerdersrechten. Kies in de wizard uw land (feestdagen, tijdzone, arbeidstijdregels) en desgewenst een snelkoppeling op het bureaublad. De wizard toont de voortgang; de installatie duurt enkele minuten." },
+        { "title": "Installatiebestand downloaden via de Klacks Store", "text": "Klik op &bdquo;Downloaden voor Windows via de Klacks Store&rdquo; en klik in de Klacks Store bij het item &bdquo;Kantoor-pc (Windows)&rdquo; op &bdquo;Windows&rdquo;. Het bestand &bdquo;Klacks-Setup-win-x64.exe&rdquo; komt meestal in de map &bdquo;Downloads&rdquo; terecht. Microsoft Edge kan in de downloadlijst onder bepaalde omstandigheden het volgende weergeven: &bdquo;Klacks-Setup-win-x64.exe wordt niet vaak gedownload. Zorg ervoor dat u Klacks-Setup-win-x64.exe vertrouwt voordat u het opent.&rdquo; De reden: het bestand is nieuw en bij Microsoft nog niet goed bekend &mdash; het is daarom niet onveilig. Beweeg de muis in de downloadlijst over het item, klik op &bdquo;&hellip;&rdquo; (Meer acties) en vervolgens op &bdquo;Behouden&rdquo;, en selecteer in het volgende dialoogvenster &bdquo;Meer weergeven&rdquo; en vervolgens &bdquo;Toch behouden&rdquo;. Tot dat moment staat het bestand alleen als &bdquo;Niet bevestigd &lt;nummer&gt;.crdownload&rdquo; in de map &bdquo;Downloads&rdquo; &mdash; dat is normaal, het bestand is niet beschadigd. &bdquo;Dit bestand als veilig rapporteren&rdquo; is niet nodig. Dubbelklik pas wanneer de download volledig is voltooid." },
+        { "title": "Dubbelklikken en land kiezen", "text": "Dubbelklik op het bestand. Toont Windows SmartScreen een waarschuwing, open dan de extra informatie en kies ervoor het programma toch uit te voeren. Bevestig daarna de vraag om beheerdersrechten; als uitgever staat daar &bdquo;Open Source Developer Heribert Gasparoli&rdquo;. Kies in de wizard uw land (feestdagen, tijdzone, arbeidstijdregels) en desgewenst een snelkoppeling op het bureaublad. De wizard toont de voortgang; de installatie duurt enkele minuten." },
         { "title": "Klacks openen en aanmelden", "text": "Kies aan het eind om Klacks in de browser te openen. Later vindt u Klacks in het menu Start onder &bdquo;Klacks&rdquo; (of via http://localhost:5180). Log in met het initiële account dat de wizard aan het eind toont en maak een eigen beheerdersaccount aan. Is Klacks nog aan het opstarten, wacht dan enkele minuten &mdash; de eerste start duurt iets langer." }
       ],
-      "downloadLabel": "Downloaden voor Windows"
+      "downloadLabel": "Downloaden voor Windows via de Klacks Store"
     },
-    "macDownloadLabel": "Downloaden voor Mac",
     "macComingSoonNote": "Voor Mac: binnenkort beschikbaar.",
     "architectureNote": "Voor Windows 64-bit (x64). Op Windows 11-apparaten met een ARM-processor (bijv. Snapdragon X) draait Klacks via emulatie; Windows 10 op ARM wordt niet ondersteund.",
     "linuxNote": "Linux? Zie hieronder: <a href=\"{0}\">Klacks op een Linux-pc</a>.",
     "uninstallNote": "<strong>Verwijderen:</strong> Klacks verwijdert u zoals elk ander Windows-programma &mdash; open Instellingen › Apps, zoek het item &bdquo;Klacks&rdquo; en verwijder het. Het verwijderprogramma vraagt of ook de database, de instellingen en de back-ups moeten worden verwijderd. Antwoordt u nee, dan blijven uw gegevens in C:\\ProgramData\\Klacks staan en neemt een latere herinstallatie ze weer over.",
-    "heroSubtitle": "Drie wegen, één resultaat: het Windows-pakket voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving &mdash; zonder registratie, zonder licentiekosten. Op de kantoor-pc kiest u het land tijdens de installatie; voor server en Docker Compose bevat het landenpakket de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd)."
+    "heroSubtitle": "Drie wegen, één resultaat: het Windows-pakket voor uw kantoor-pc, de begeleide installer voor uw server of de Docker Compose-stack voor uw eigen omgeving &mdash; zonder registratie, zonder licentiekosten. Op de kantoor-pc kiest u het land tijdens de installatie; voor server en Docker Compose bevat het landenpakket de feestdagen, arbeidstijdregels en branchevoorinstellingen van uw land (toeslagen voor zover voor het land gedefinieerd). Alle pakketten downloadt u via de Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "Op een Linux-pc",
-      "text": "De eenvoudige weg voor een Linux-pc, ook zonder voorkennis: pakket downloaden, één keer een opdracht in de terminal invoeren &mdash; de installer doet de rest. Klacks draait daarna met Docker op deze pc, updates komen automatisch binnen en uw gegevens blijven op deze pc.",
+      "text": "De eenvoudige weg voor een Linux-pc, ook zonder voorkennis: pakket downloaden via de Klacks Store, één keer een opdracht in de terminal invoeren &mdash; de installer doet de rest. Klacks draait daarna met Docker op deze pc, updates komen automatisch binnen en uw gegevens blijven op deze pc.",
       "requirementsTitle": "Vereisten",
       "requirements": [
         "64-bit Linux met desktop: Ubuntu, Debian of Fedora. Andere distributies (bijv. Linux Mint) worden niet officieel ondersteund &mdash; installeer daar eerst zelf Docker.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "In drie stappen",
       "steps": [
-        { "title": "Pakket downloaden en in een vaste map uitpakken", "text": "Download het ZIP-bestand en pak het uit in een map die blijvend op zijn plek blijft, bijv. een map &bdquo;klacks&rdquo; in uw persoonlijke map &mdash; niet in de map &bdquo;Downloads&rdquo;. De automatische updates werken met deze map; wordt hij verwijderd, dan werken de updates niet meer." },
+        { "title": "Pakket downloaden en in een vaste map uitpakken", "text": "Download via de Klacks Store het installatiepakket (ZIP-bestand) en pak het uit in een map die blijvend op zijn plek blijft, bijv. een map &bdquo;klacks&rdquo; in uw persoonlijke map &mdash; niet in de map &bdquo;Downloads&rdquo;. De automatische updates werken met deze map; wordt hij verwijderd, dan werken de updates niet meer." },
         { "title": "Terminal openen en opdracht invoeren", "text": "Klik in de map met de uitgepakte installatiebestanden met de rechtermuisknop en kies &bdquo;Openen in terminal&rdquo;, voer de opdracht hieronder in en bevestig met uw wachtwoord (het wordt tijdens het typen niet getoond). Ontbreekt Docker, dan biedt de installer aan het te installeren: antwoord met &bdquo;y&rdquo; &mdash; dat duurt enkele minuten. U hebt de terminal alleen deze ene keer nodig voor de installatie; voert u de installer later opnieuw uit (bijv. voor een reparatie), gebruik dan dezelfde opdracht inclusief sudo." },
         { "title": "In de browser openen en inloggen", "text": "Open https://localhost in uw browser. De browser waarschuwt voor het certificaat &mdash; bevestig de waarschuwing (&bdquo;Geavanceerd&rdquo; en dan &bdquo;Doorgaan&rdquo; of &bdquo;Risico aanvaarden&rdquo;). Log in met het initiële account uit de README in de map en wijzig het wachtwoord meteen." }
       ],
-      "downloadLabel": "Downloaden voor Linux"
+      "downloadLabel": "Downloaden voor Linux via de Klacks Store"
     },
     "certificateNote": "Over de certificaatwaarschuwing: Klacks maakt bij de installatie een eigen certificaat aan dat uw browser niet kent &mdash; vandaar de waarschuwing. De verbinding is toch versleuteld."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Alleen het profiel &mdash; voor bestaande installaties",
     "text": "Draait Klacks al? Het profiel (JSON) bevat de landenvoorinstellingen &mdash; feestdagen, arbeidstijdregels, toeslagen (voor zover voor het land gedefinieerd) en branches &mdash; en wordt bij de eerste start van een installatie toegepast. Het is ook de manier om later een extra branche met bijbehorende voorinstellingen toe te voegen.",
-    "downloadLabel": "Profiel (JSON) downloaden"
+    "downloadLabel": "Profiel (JSON) downloaden via de Klacks Store"
   },
   "fallback": {
     "noticeTitle": "Voor dit land is er nog geen voorgeconfigureerd landenpakket.",
-    "noticeText": "U kunt Klacks toch volledig installeren: het standaardpakket bevat alles behalve de landenvoorinstellingen. Feestdagen, arbeidstijdregels en toeslagen stelt u daarna in de app in.",
-    "downloadLabel": "Standaardpakket downloaden",
-    "composeNote": "Een apart Compose-pakket is er voor dit land nog niet &mdash; het standaardpakket bevat de volledige Docker Compose-stack."
+    "noticeText": "U kunt Klacks toch installeren: de Klacks Store biedt de pakketten van alle beschikbare landen aan. Feestdagen, arbeidstijdregels en toeslagen voor uw land stelt u na de installatie in de app in."
   },
   "notes": {
     "title": "Goed om te weten",

@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Instalação &middot; Sem taxas de licença &amp; código aberto",
     "titleHtml": "Opere a Klacks por conta própria &mdash; <span class=\"text-secondary\">na sua própria infraestrutura.</span>",
-    "subtitle": "Dois caminhos, um resultado: o instalador guiado ou o stack Docker Compose para a sua própria configuração. O pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país) &mdash; sem registo, sem custos de licença."
-  },
-  "industry": {
-    "eyebrow": "Pacote de país",
-    "title": "Escolha o seu setor &mdash; opcional",
-    "text": "A sua escolha é gravada no perfil de país como predefinição e determina que módulos setoriais ficam ativos no primeiro arranque. O pacote contém sempre todos os setores &mdash; pode ativar outros na aplicação em qualquer altura.",
-    "allLabel": "Todos os setores"
+    "subtitle": "Dois caminhos, um resultado: o instalador guiado ou o stack Docker Compose para a sua própria configuração. O pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país) &mdash; sem registo, sem custos de licença. Todos os pacotes são transferidos a partir do Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Três passos",
     "steps": [
-      { "title": "Transferir e extrair", "text": "Transfira o ZIP do seu país e extraia-o na máquina de destino." },
+      { "title": "Transferir e extrair", "text": "No Klacks Store, escolha o seu setor, se quiser, transfira o ZIP do seu país e extraia-o na máquina de destino." },
       { "title": "Executar o script de instalação", "text": "Execute o script de shell incluído em Linux, ou o script PowerShell em Windows. Gera os segredos e o certificado, aplica o perfil de país e aguarda até o stack estar operacional." },
       { "title": "Iniciar sessão e alterar a palavra-passe", "text": "Inicie sessão no browser e altere de imediato a palavra-passe inicial indicada no README incluído." }
     ],
-    "downloadLabel": "Transferir pacote de instalação"
+    "downloadLabel": "Transferir pacote de instalação do Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Três passos",
     "steps": [
-      { "title": "Transferir e extrair", "text": "Transfira o ZIP Compose do seu país e extraia-o &mdash; o README incluído descreve cada passo." },
+      { "title": "Transferir e extrair", "text": "Transfira do Klacks Store o ZIP Compose do seu país e extraia-o &mdash; o README incluído descreve cada passo." },
       { "title": "Configurar o .env", "text": "Copie o modelo .env.example para .env e defina o nome do servidor e as palavras-passe/segredos. O caminho para o perfil de país já vem preenchido." },
       { "title": "Arrancar o stack", "text": "Execute &laquo;docker compose up -d&raquo;, inicie sessão no browser e altere de imediato a palavra-passe inicial." }
     ],
-    "downloadLabel": "Transferir pacote Compose"
+    "downloadLabel": "Transferir pacote Compose do Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "Em três passos",
       "steps": [
-        { "title": "Transferir o instalador", "text": "Clique em &laquo;Transferir para Windows&raquo;. O ficheiro &laquo;Klacks-Setup-win-x64.exe&raquo; fica normalmente na pasta &laquo;Transferências&raquo;." },
-        { "title": "Duplo clique e escolha do país", "text": "Faça duplo clique no ficheiro. Se o Windows SmartScreen mostrar um aviso, abra as informações adicionais e opte por executar mesmo assim &mdash; o instalador ainda não tem assinatura digital. Depois, confirme o pedido de direitos de administrador. No assistente, escolha o seu país (feriados, fuso horário, regras de tempo de trabalho) e, se quiser, um atalho no ambiente de trabalho. O assistente mostra o progresso; a instalação demora alguns minutos." },
+        { "title": "Transferir o instalador do Klacks Store", "text": "Clique em &laquo;Transferir para Windows do Klacks Store&raquo; e, no Klacks Store, clique em &laquo;Windows&raquo; na entrada &laquo;PC de escritório (Windows)&raquo;. O ficheiro &laquo;Klacks-Setup-win-x64.exe&raquo; fica normalmente na pasta &laquo;Transferências&raquo;. O Microsoft Edge poderá, em determinadas circunstâncias, apresentar a seguinte mensagem na lista de downloads: &laquo;Klacks-Setup-win-x64.exe não é habitualmente transferido. Certifique-se de que confia em Klacks-Setup-win-x64.exe antes de o abrir.&raquo; O motivo: o ficheiro é novo e ainda pouco conhecido pela Microsoft &mdash; o que não significa, contudo, que seja inseguro. Na lista de downloads, passe o rato sobre a entrada, clique em &laquo;&hellip;&raquo; (Mais ações) e, em seguida, em &laquo;Manter&raquo;; na caixa de diálogo seguinte, selecione &laquo;Mostrar mais&raquo; e, depois, &laquo;Manter mesmo assim&raquo;. Até lá, o ficheiro encontra-se apenas como &laquo;Não confirmado &lt;número&gt;.crdownload&raquo; na pasta &laquo;Transferências&raquo; &mdash; isto é normal, o ficheiro não está danificado. O &laquo;Reportar este ficheiro como seguro&raquo; não é necessário. Só deve clicar duas vezes quando o download estiver concluído." },
+        { "title": "Duplo clique e escolha do país", "text": "Faça duplo clique no ficheiro. Se o Windows SmartScreen mostrar um aviso, abra as informações adicionais e opte por executar mesmo assim. Depois, confirme o pedido de direitos de administrador; como editor aparece &laquo;Open Source Developer Heribert Gasparoli&raquo;. No assistente, escolha o seu país (feriados, fuso horário, regras de tempo de trabalho) e, se quiser, um atalho no ambiente de trabalho. O assistente mostra o progresso; a instalação demora alguns minutos." },
         { "title": "Abrir o Klacks e iniciar sessão", "text": "No fim, opte por abrir o Klacks no browser. Mais tarde, encontra o Klacks no menu Iniciar como &laquo;Klacks&raquo; (ou em http://localhost:5180). Inicie sessão com a conta inicial que o assistente mostra no fim e crie a sua própria conta de administrador. Se o Klacks ainda estiver a arrancar, aguarde alguns minutos &mdash; o primeiro arranque demora um pouco mais." }
       ],
-      "downloadLabel": "Transferir para Windows"
+      "downloadLabel": "Transferir para Windows do Klacks Store"
     },
-    "macDownloadLabel": "Transferir para Mac",
     "macComingSoonNote": "Para Mac: disponível em breve.",
     "architectureNote": "Para Windows de 64 bits (x64). Em dispositivos Windows 11 com processador ARM (p. ex., Snapdragon X), o Klacks funciona por emulação; o Windows 10 em ARM não é suportado.",
     "linuxNote": "Linux? Veja abaixo: <a href=\"{0}\">Klacks num PC Linux</a>.",
     "uninstallNote": "<strong>Desinstalar:</strong> o Klacks remove-se como qualquer outro programa do Windows &mdash; abra Definições › Aplicações, procure a entrada &laquo;Klacks&raquo; e desinstale-a. O desinstalador pergunta se a base de dados, as definições e as cópias de segurança também devem ser eliminadas. Se responder que não, os seus dados ficam em C:\\ProgramData\\Klacks e uma reinstalação posterior volta a utilizá-los.",
-    "heroSubtitle": "Três caminhos, um resultado: o pacote Windows para o PC do escritório, o instalador guiado para o seu servidor ou o stack Docker Compose para a sua própria configuração &mdash; sem registo, sem custos de licença. No PC do escritório, escolhe o país durante a instalação; para o servidor e o Docker Compose, o pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país)."
+    "heroSubtitle": "Três caminhos, um resultado: o pacote Windows para o PC do escritório, o instalador guiado para o seu servidor ou o stack Docker Compose para a sua própria configuração &mdash; sem registo, sem custos de licença. No PC do escritório, escolhe o país durante a instalação; para o servidor e o Docker Compose, o pacote de país traz consigo os feriados, as regras de tempo de trabalho e as predefinições por setor do seu país (suplementos, quando definidos para o país). Todos os pacotes são transferidos a partir do Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "Num PC Linux",
-      "text": "O caminho simples para um PC Linux, sem conhecimentos prévios: transfira o pacote, introduza uma única vez um comando no terminal &mdash; o instalador faz o resto. Depois, o Klacks funciona com Docker neste PC, as atualizações chegam automaticamente e os seus dados ficam neste PC.",
+      "text": "O caminho simples para um PC Linux, sem conhecimentos prévios: transfira o pacote do Klacks Store, introduza uma única vez um comando no terminal &mdash; o instalador faz o resto. Depois, o Klacks funciona com Docker neste PC, as atualizações chegam automaticamente e os seus dados ficam neste PC.",
       "requirementsTitle": "Requisitos",
       "requirements": [
         "Linux de 64 bits com ambiente de trabalho: Ubuntu, Debian ou Fedora. Outras distribuições (p. ex., Linux Mint) não são oficialmente suportadas &mdash; nelas, instale primeiro o Docker por si mesmo.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "Em três passos",
       "steps": [
-        { "title": "Transferir o pacote e extraí-lo para uma pasta permanente", "text": "Transfira o ficheiro ZIP e extraia-o para uma pasta que fique sempre no mesmo sítio, p. ex., uma pasta &laquo;klacks&raquo; na sua pasta pessoal &mdash; não na pasta &laquo;Transferências&raquo;. As atualizações automáticas trabalham com esta pasta; se for apagada, as atualizações deixam de funcionar." },
+        { "title": "Transferir o pacote e extraí-lo para uma pasta permanente", "text": "Transfira do Klacks Store o pacote de instalação (ficheiro ZIP) e extraia-o para uma pasta que fique sempre no mesmo sítio, p. ex., uma pasta &laquo;klacks&raquo; na sua pasta pessoal &mdash; não na pasta &laquo;Transferências&raquo;. As atualizações automáticas trabalham com esta pasta; se for apagada, as atualizações deixam de funcionar." },
         { "title": "Abrir um terminal e introduzir o comando", "text": "Na pasta com os ficheiros de instalação extraídos, clique com o botão direito do rato e escolha &laquo;Abrir no terminal&raquo;, introduza o comando abaixo e confirme com a sua palavra-passe (não é mostrada enquanto escreve). Se faltar o Docker, o instalador propõe instalá-lo: responda &laquo;y&raquo; &mdash; isto demora alguns minutos. Só precisa do terminal desta única vez para a instalação; se voltar a executar o instalador mais tarde (p. ex., para uma reparação), use este mesmo comando, incluindo sudo." },
         { "title": "Abrir no browser e iniciar sessão", "text": "Abra https://localhost no browser. O browser mostra um aviso sobre o certificado &mdash; confirme o aviso (&laquo;Avançadas&raquo; e depois &laquo;Continuar&raquo; ou &laquo;Aceitar o risco&raquo;). Inicie sessão com a conta inicial indicada no README da pasta e altere a palavra-passe de imediato." }
       ],
-      "downloadLabel": "Transferir para Linux"
+      "downloadLabel": "Transferir para Linux do Klacks Store"
     },
     "certificateNote": "Sobre o aviso de certificado: durante a instalação, o Klacks cria o seu próprio certificado, que o seu browser não conhece &mdash; daí o aviso. Ainda assim, a ligação é encriptada."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Apenas o perfil &mdash; para instalações existentes",
     "text": "A Klacks já está a funcionar? O perfil (JSON) contém as predefinições do país &mdash; feriados, regras de tempo de trabalho, suplementos (quando definidos para o país) e setores &mdash; e é aplicado no primeiro arranque de uma instalação. É também a forma de acrescentar mais tarde outro setor com as respetivas predefinições.",
-    "downloadLabel": "Transferir perfil (JSON)"
+    "downloadLabel": "Transferir perfil (JSON) do Klacks Store"
   },
   "fallback": {
     "noticeTitle": "Ainda não existe um pacote de país pré-configurado para este país.",
-    "noticeText": "Mesmo assim pode instalar a Klacks na íntegra: o pacote standard contém tudo exceto as predefinições do país. Depois configura os feriados, as regras de tempo de trabalho e os suplementos na aplicação.",
-    "downloadLabel": "Transferir pacote standard",
-    "composeNote": "Ainda não há um pacote Compose separado para este país &mdash; o pacote standard contém o stack Docker Compose completo."
+    "noticeText": "Mesmo assim pode instalar o Klacks: o Klacks Store oferece os pacotes de todos os países disponíveis. Depois da instalação, configura na aplicação os feriados, as regras de tempo de trabalho e os suplementos do seu país."
   },
   "notes": {
     "title": "Convém saber",

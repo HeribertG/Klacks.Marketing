@@ -5,13 +5,7 @@
     "badgeIcon": "install_desktop",
     "badge": "Installation &middot; No license fees &amp; open source",
     "titleHtml": "Run Klacks yourself &mdash; <span class=\"text-secondary\">on your own infrastructure.</span>",
-    "subtitle": "Two paths, one result: the guided installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees."
-  },
-  "industry": {
-    "eyebrow": "Country package",
-    "title": "Pick your industry &mdash; optional",
-    "text": "Your choice is written into the country profile as a preset and determines which industry blocks are active on first start. The package always contains every industry &mdash; you can activate more in the app at any time.",
-    "allLabel": "All industries"
+    "subtitle": "Two paths, one result: the guided installer, or the Docker Compose stack for your own setup. The country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country) &mdash; no registration, no licence fees. You download every package from the Klacks Store."
   },
   "onPrem": {
     "icon": "dns",
@@ -25,11 +19,11 @@
     ],
     "stepsTitle": "Three steps",
     "steps": [
-      { "title": "Download and extract", "text": "Download the ZIP for your country and extract it on the target machine." },
+      { "title": "Download and extract", "text": "In the Klacks Store, optionally choose your industry, download the ZIP for your country and extract it on the target machine." },
       { "title": "Run the install script", "text": "Run the bundled shell script on Linux, or the PowerShell script on Windows. It generates secrets and the certificate, applies the country profile and waits until the stack is healthy." },
       { "title": "Log in and change the password", "text": "Log in from your browser and immediately change the initial password listed in the bundled README." }
     ],
-    "downloadLabel": "Download installation package"
+    "downloadLabel": "Get the installation package from the Klacks Store"
   },
   "compose": {
     "icon": "deployed_code",
@@ -43,11 +37,11 @@
     ],
     "stepsTitle": "Three steps",
     "steps": [
-      { "title": "Download and extract", "text": "Download the Compose ZIP for your country and extract it &mdash; the bundled README walks through every step." },
+      { "title": "Download and extract", "text": "Download the Compose ZIP for your country from the Klacks Store and extract it &mdash; the bundled README walks through every step." },
       { "title": "Set up .env", "text": "Copy the .env.example template to .env and set the server name plus passwords/secrets. The path to the country profile is already prefilled." },
       { "title": "Start the stack", "text": "Run &ldquo;docker compose up -d&rdquo;, log in from your browser and change the initial password immediately." }
     ],
-    "downloadLabel": "Download Compose package"
+    "downloadLabel": "Get the Compose package from the Klacks Store"
   },
   "native": {
     "path": {
@@ -64,24 +58,23 @@
       ],
       "stepsTitle": "In three steps",
       "steps": [
-        { "title": "Download the installer", "text": "Click &ldquo;Download for Windows&rdquo;. The file &ldquo;Klacks-Setup-win-x64.exe&rdquo; usually ends up in your &ldquo;Downloads&rdquo; folder." },
-        { "title": "Double-click and choose your country", "text": "Double-click the file. If Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo; &mdash; the installer is not digitally signed yet. Confirm the administrator prompt that follows with &ldquo;Yes&rdquo;. In the wizard, choose your country (public holidays, time zone, working-time rules) and, if you like, a desktop shortcut. The wizard shows its progress; the installation takes a few minutes." },
+        { "title": "Download the installer from the Klacks Store", "text": "Click &ldquo;Get it for Windows from the Klacks Store&rdquo; and, in the Klacks Store, click &ldquo;Windows&rdquo; on the &ldquo;Office PC (Windows)&rdquo; entry. The file &ldquo;Klacks-Setup-win-x64.exe&rdquo; usually ends up in your &ldquo;Downloads&rdquo; folder. Microsoft Edge may show the following in the downloads list: &ldquo;Klacks-Setup-win-x64.exe isn't commonly downloaded. Make sure you trust Klacks-Setup-win-x64.exe before you open it.&rdquo; The reason: the file is new and Microsoft does not know it well yet &mdash; that does not make it unsafe. In the downloads list, hover over the entry, click &ldquo;&hellip;&rdquo; (More actions) and then &ldquo;Keep&rdquo;; in the dialog that follows, choose &ldquo;Show more&rdquo; and then &ldquo;Keep anyway&rdquo;. Until then the file only sits in your &ldquo;Downloads&rdquo; folder as &ldquo;Unconfirmed &lt;number&gt;.crdownload&rdquo; &mdash; that is normal, the file is not broken. &ldquo;Report this file as safe&rdquo; is not necessary. Only double-click the file once the download is complete." },
+        { "title": "Double-click and choose your country", "text": "Double-click the file. If Windows shows &ldquo;Windows protected your PC&rdquo;, click &ldquo;More info&rdquo; and then &ldquo;Run anyway&rdquo;. Confirm the administrator prompt that follows with &ldquo;Yes&rdquo;; it names &ldquo;Open Source Developer Heribert Gasparoli&rdquo; as the publisher. In the wizard, choose your country (public holidays, time zone, working-time rules) and, if you like, a desktop shortcut. The wizard shows its progress; the installation takes a few minutes." },
         { "title": "Open Klacks and sign in", "text": "At the end, leave &ldquo;Open Klacks in the browser&rdquo; ticked and click &ldquo;Finish&rdquo;. Later you will find Klacks in the Start menu under &ldquo;Klacks&rdquo; (or at http://localhost:5180 in your browser). Sign in with the initial account the wizard shows at the end and create your own administrator account. If Klacks is still starting, wait a few minutes &mdash; the first start takes a little longer." }
       ],
-      "downloadLabel": "Download for Windows"
+      "downloadLabel": "Get it for Windows from the Klacks Store"
     },
-    "macDownloadLabel": "Download for Mac",
     "macComingSoonNote": "For Mac: coming soon.",
     "architectureNote": "For 64-bit Windows (x64). On Windows 11 devices with an ARM processor (e.g. Snapdragon X) Klacks runs through emulation; Windows 10 on ARM is not supported.",
     "linuxNote": "Linux? See below: <a href=\"{0}\">Klacks on a Linux PC</a>.",
     "uninstallNote": "<strong>Uninstalling:</strong> Klacks can be removed like any other Windows program &mdash; open Settings › Apps, find the &ldquo;Klacks&rdquo; entry and choose &ldquo;Uninstall&rdquo;. The uninstaller asks whether the database, settings and backups should be deleted as well. If you answer &ldquo;No&rdquo;, your data stays in C:\\ProgramData\\Klacks and a later reinstallation picks it up again.",
-    "heroSubtitle": "Three paths, one result: the Windows package for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup &mdash; no registration, no licence fees. On the office PC you choose your country during installation; for the server and Docker Compose, the country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country)."
+    "heroSubtitle": "Three paths, one result: the Windows package for your office PC, the guided installer for your server, or the Docker Compose stack for your own setup &mdash; no registration, no licence fees. On the office PC you choose your country during installation; for the server and Docker Compose, the country package ships with your country's public holidays, working-time rules and industry presets (surcharges where defined for the country). You download every package from the Klacks Store."
   },
   "linux": {
     "path": {
       "icon": "terminal",
       "title": "On a Linux PC",
-      "text": "The simple way for a Linux PC, no prior knowledge needed: download the package, enter one command in the terminal once &mdash; the installer does the rest. Klacks then runs with Docker on this PC, updates arrive automatically, and your data stays on this PC.",
+      "text": "The simple way for a Linux PC, no prior knowledge needed: get the package from the Klacks Store, enter one command in the terminal once &mdash; the installer does the rest. Klacks then runs with Docker on this PC, updates arrive automatically, and your data stays on this PC.",
       "requirementsTitle": "Requirements",
       "requirements": [
         "64-bit Linux with a desktop: Ubuntu, Debian or Fedora. Other distributions (e.g. Linux Mint) are not officially supported &mdash; there, please install Docker yourself first.",
@@ -91,11 +84,11 @@
       ],
       "stepsTitle": "In three steps",
       "steps": [
-        { "title": "Download the package and extract it into a permanent folder", "text": "Download the ZIP file and extract it into a folder that stays where it is, e.g. a folder &ldquo;klacks&rdquo; in your home folder &mdash; not in the &ldquo;Downloads&rdquo; folder. The automatic updates work with this folder; if it is deleted, updates stop working." },
+        { "title": "Download the package and extract it into a permanent folder", "text": "Download the installation package (ZIP file) from the Klacks Store and extract it into a folder that stays where it is, e.g. a folder &ldquo;klacks&rdquo; in your home folder &mdash; not in the &ldquo;Downloads&rdquo; folder. The automatic updates work with this folder; if it is deleted, updates stop working." },
         { "title": "Open a terminal and enter the command", "text": "In the folder with the extracted installation files, right-click and choose &ldquo;Open in Terminal&rdquo;, enter the command below and confirm with your password (it is not shown while you type). If Docker is missing, the installer offers to install it: answer &ldquo;y&rdquo; &mdash; this takes a few minutes. You only need the terminal this once for the installation; if you run the installer again later (e.g. for a repair), use this same command including sudo." },
         { "title": "Open in the browser and sign in", "text": "Open https://localhost in your browser. The browser warns about the certificate &mdash; confirm the warning (&ldquo;Advanced&rdquo; and then &ldquo;Proceed&rdquo; or &ldquo;Accept the risk&rdquo;). Sign in with the initial account from the README in the folder and change the password immediately." }
       ],
-      "downloadLabel": "Download for Linux"
+      "downloadLabel": "Get it for Linux from the Klacks Store"
     },
     "certificateNote": "About the certificate warning: during installation Klacks creates its own certificate, which your browser does not know &mdash; hence the warning. The connection is still encrypted."
   },
@@ -103,13 +96,11 @@
     "icon": "description",
     "title": "Profile only &mdash; for existing installations",
     "text": "Already running Klacks? The profile (JSON) carries the country presets &mdash; public holidays, working-time rules, surcharges (where defined for the country) and industries &mdash; and is applied on an installation's first start. It is also the way to add another industry with its presets later.",
-    "downloadLabel": "Download profile (JSON)"
+    "downloadLabel": "Get the profile (JSON) from the Klacks Store"
   },
   "fallback": {
     "noticeTitle": "There is no preconfigured country package for this country yet.",
-    "noticeText": "You can still install Klacks in full: the standard package contains everything except the country presets. You then set up public holidays, working-time rules and surcharges in the app.",
-    "downloadLabel": "Download standard package",
-    "composeNote": "There is no separate Compose package for this country yet &mdash; the standard package contains the complete Docker Compose stack."
+    "noticeText": "You can still install Klacks: the Klacks Store offers the packages of all available countries. You then set up public holidays, working-time rules and surcharges for your country in the app."
   },
   "notes": {
     "title": "Good to know",

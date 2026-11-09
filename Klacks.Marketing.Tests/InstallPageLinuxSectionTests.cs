@@ -10,9 +10,11 @@ using Shouldly;
 
 /// <summary>
 /// The "Linux PC" section for non-experts: every culture carries a complete, translated section, it is rendered whether
-/// the office-PC switch is on or off, its button downloads the guided-installer package, the terminal command uses the
-/// country wrapper (install-&lt;cc&gt;.sh) only when a country package exists, and the office-PC card's Linux note
-/// links to the section with a path-qualified href (a bare "#linux" would resolve against &lt;base href="/"&gt;).
+/// the office-PC switch is on or off, its button links to the guided-installer package in the Klacks Store, the terminal
+/// command uses the country wrapper (install-&lt;cc&gt;.sh) only when a country package exists, and the office-PC card's
+/// Linux note links to the section with a path-qualified href (a bare "#linux" would resolve against &lt;base href="/"&gt;).
+/// Every store button of a country with a package links to its region page in the store; a country without one links to
+/// the store home.
 /// </summary>
 [TestFixture]
 public class InstallPageLinuxSectionTests
@@ -26,8 +28,12 @@ public class InstallPageLinuxSectionTests
     private const string PackageCommand = "sudo bash install-ch.sh";
     private const string FallbackCommand = "sudo bash install.sh";
     private const string FallbackWrapperFragment = "install-be.sh";
-    private const string PackageCountryCode = "ch";
-    private const string DownloadCounterAttribute = "rel=\"nofollow\" data-c=\"DownloadClick\"";
+    private const string StoreLinkAttributes = "target=\"_blank\" data-c=\"DownloadClick\"";
+    private const string DownloadCounterAttribute = "data-c=\"DownloadClick\"";
+    private const string PackageCountryStoreUrl = ExternalLinks.MarketplaceUrl + "/region/ch?culture=de";
+    private const string StoreHomeUrl = ExternalLinks.MarketplaceUrl + "/?culture=de";
+    private const int PackageCountryStoreLinkCount = 4;
+    private const int FallbackCountryStoreLinkCount = 3;
 
     private static IEnumerable<string> Cultures() => SupportedCultures.All.Select(culture => culture.Code);
 
@@ -87,24 +93,24 @@ public class InstallPageLinuxSectionTests
 
         section.ShouldContain(linux.Path.Title);
         section.ShouldContain(linux.CertificateNote);
-        section.ShouldContain(DownloadCounterAttribute);
+        section.ShouldContain(StoreLinkAttributes);
         section.ShouldContain(HtmlEncoder.Default.Encode(linux.Path.DownloadLabel));
         section.ShouldContain(PackageCommand);
     }
 
     [Test]
-    public async Task Country_with_package_uses_the_country_wrapper_and_the_marketplace_package()
+    public async Task Country_with_package_uses_the_country_wrapper_and_links_every_button_to_its_store_page()
     {
         var html = await InstallPageRenderer.RenderAsync(SupportedCultures.DefaultCode, enabled: false);
-        var packageUrl = RegionPackages.DownloadUrl(ExternalLinks.MarketplaceUrl, PackageCountryCode, RegionPackages.AllIndustries, RegionPackages.OnPremZipArtifact);
 
         html.ShouldContain($"<code dir=\"ltr\" class=\"block mt-3 px-4 py-3 rounded-xl bg-night text-white font-mono text-sm select-all break-all\">{PackageCommand}</code>");
         html.ShouldNotContain($">{FallbackCommand}<");
-        CountOccurrences(html, $"href=\"{HtmlEncoder.Default.Encode(packageUrl)}\" {DownloadCounterAttribute}").ShouldBe(2);
+        CountOccurrences(html, $"href=\"{HtmlEncoder.Default.Encode(PackageCountryStoreUrl)}\" {StoreLinkAttributes}").ShouldBe(PackageCountryStoreLinkCount);
+        CountOccurrences(html, DownloadCounterAttribute).ShouldBe(PackageCountryStoreLinkCount);
     }
 
     [Test]
-    public async Task Country_without_package_uses_install_sh_and_the_standard_package()
+    public async Task Country_without_package_uses_install_sh_and_links_to_the_store_home()
     {
         var html = await InstallPageRenderer.RenderAsync(
             SupportedCultures.DefaultCode,
@@ -114,7 +120,8 @@ public class InstallPageLinuxSectionTests
 
         html.ShouldContain($">{FallbackCommand}</code>");
         html.ShouldNotContain(FallbackWrapperFragment);
-        CountOccurrences(html, $"href=\"{ExternalLinks.OnPremBundleUrl}\" {DownloadCounterAttribute}").ShouldBe(2);
+        CountOccurrences(html, $"href=\"{HtmlEncoder.Default.Encode(StoreHomeUrl)}\" {StoreLinkAttributes}").ShouldBe(FallbackCountryStoreLinkCount);
+        CountOccurrences(html, DownloadCounterAttribute).ShouldBe(FallbackCountryStoreLinkCount);
     }
 
     [Test]

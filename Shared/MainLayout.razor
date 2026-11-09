@@ -455,7 +455,7 @@ else
             var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
             var countryCode = CountryCode(country).ToLowerInvariant();
 
-            return $"{ExternalLinks.MarketplaceUrl}/region/{countryCode}?culture={CurrentCultureRecord.Code}";
+            return RegionPackages.StoreUrl(ExternalLinks.MarketplaceUrl, countryCode, CurrentCultureRecord.Code);
         }
     }
 

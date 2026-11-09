@@ -14,22 +14,20 @@ using Microsoft.JSInterop;
 
 /// <summary>
 /// Renders the install page template server-side to HTML for a culture and country page, with the office-PC switch
-/// and its download URLs taken from in-memory configuration.
+/// taken from in-memory configuration.
 /// </summary>
 internal static class InstallPageRenderer
 {
     public const string BaseUrl = "https://klacks.example/";
     public const string PackageCountryPageKey = "land-ch-installation";
     public const string PackageCountryRoutePath = "land-ch/installation";
-    public const string FallbackCountryPageKey = "land-be-installation";
-    public const string FallbackCountryRoutePath = "land-be/installation";
+    public const string FallbackCountryPageKey = "installation";
+    public const string FallbackCountryRoutePath = "installation";
     private const string BaseUrlSetting = "Site:BaseUrl";
 
     public static async Task<string> RenderAsync(
         string culture,
         bool enabled,
-        string? windowsUrl = null,
-        string? macUrl = null,
         string pageKey = PackageCountryPageKey,
         string routePath = PackageCountryRoutePath)
     {
@@ -38,8 +36,6 @@ internal static class InstallPageRenderer
         {
             [BaseUrlSetting] = BaseUrl,
             [NativeInstallSettings.EnabledKey] = enabled.ToString(),
-            [NativeInstallSettings.WindowsUrlKey] = windowsUrl,
-            [NativeInstallSettings.MacUrlKey] = macUrl,
         };
         var services = new ServiceCollection()
             .AddSingleton<IWebHostEnvironment>(environment)

@@ -20,6 +20,8 @@ public class LlmsTxtInstallSectionTests
     private const char LineBreak = '\n';
     private const string DocsHomeUrl = BaseUrl + ExternalLinks.DocsBasePath + "en/";
     private const string DocsInstallUrl = DocsHomeUrl + "erste-schritte/installation-und-playground/";
+    private const string StoreHomeUrl = ExternalLinks.MarketplaceUrl + "/?culture=en";
+    private static readonly string[] DirectDownloadMarkers = ["/releases/", "/api/regions/", "curl ", "wget "];
 
     [Test]
     public void Full_contains_install_section_heading()
@@ -34,18 +36,34 @@ public class LlmsTxtInstallSectionTests
 
         blocks.ShouldContain(block => block.Contains("install.sh"));
         blocks.ShouldContain(block => block.Contains("install.ps1"));
-        blocks.ShouldContain(block => block.Contains(ExternalLinks.OnPremBundleUrl));
+    }
+
+    [Test]
+    public void Full_and_short_point_to_the_klacks_store_as_the_only_download_source()
+    {
+        var full = LlmsTxtGenerator.BuildFull(BaseUrl);
+        var shortText = LlmsTxtGenerator.BuildShort(BaseUrl);
+
+        full.ShouldContain(StoreHomeUrl);
+        shortText.ShouldContain(StoreHomeUrl);
+        foreach (var marker in DirectDownloadMarkers)
+        {
+            full.ShouldNotContain(marker);
+            shortText.ShouldNotContain(marker);
+        }
     }
 
     [Test]
     public void Full_runs_the_linux_installer_with_sudo_and_passes_variables_after_sudo()
     {
         var blocks = ExtractCodeBlocks(LlmsTxtGenerator.BuildFull(BaseUrl));
-        var linuxRuns = blocks.SelectMany(block => block.Split(LineBreak)).Where(line => line.Contains("install.sh")).ToList();
+        var linuxRuns = blocks.SelectMany(block => block.Split(LineBreak))
+            .Where(line => line.Contains("./install") && line.Contains(".sh"))
+            .ToList();
 
         linuxRuns.ShouldNotBeEmpty();
         linuxRuns.ShouldAllBe(line => line.Contains("sudo "));
-        linuxRuns.ShouldContain(line => line.Contains("sudo bash ./install.sh"));
+        linuxRuns.ShouldContain(line => line.Contains("sudo bash ./install-"));
         linuxRuns.ShouldContain(line => line.Contains("sudo SERVER_NAME=") && line.Contains(" bash ./install.sh"));
         linuxRuns.ShouldNotContain(line => line.TrimStart().StartsWith("SERVER_NAME=", StringComparison.Ordinal));
     }

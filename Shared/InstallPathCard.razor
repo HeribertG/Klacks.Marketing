@@ -35,33 +35,23 @@
         {
             @Actions
         }
-        else if (!string.IsNullOrEmpty(DownloadUrl))
+        else
         {
-            <a href="@DownloadUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
-                <span class="material-symbols-outlined">download</span> @DownloadLabel
+            <a href="@StoreUrl" target="_blank" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                <span class="material-symbols-outlined">storefront</span> @Path.DownloadLabel
             </a>
-        }
-        @if (!string.IsNullOrEmpty(Note))
-        {
-            <p class="text-xs text-on-surface-variant mt-4 mb-0 font-mono">@Note</p>
         }
     </div>
 </div>
 
 @code {
-    // One of the installation paths (office PC / on-prem installer / Docker Compose):
-    // localized card content plus the concrete download target resolved by the parent.
+    // One of the installation paths (office PC / on-prem installer / Docker Compose): localized card content
+    // plus the Klacks Store page the button links to, resolved by the parent.
     [Parameter, EditorRequired] public required InstallPath Path { get; set; }
 
-    // The resolved artifact URL; null renders the card without a download button.
-    [Parameter] public string? DownloadUrl { get; set; }
+    // The Klacks Store page where the artifacts of this path are downloaded.
+    [Parameter] public string StoreUrl { get; set; } = string.Empty;
 
-    [Parameter] public string DownloadLabel { get; set; } = string.Empty;
-
-    // Replaces the single download button, e.g. one button per operating system.
+    // Replaces the store button with custom content, e.g. the office-PC card with its notes.
     [Parameter] public RenderFragment? Actions { get; set; }
-
-    // Small print under the button: the expected file name, or the localized
-    // fallback note when no artifact exists for this country.
-    [Parameter] public string? Note { get; set; }
 }

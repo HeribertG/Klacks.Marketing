@@ -18,28 +18,7 @@
     </p>
 </header>
 
-@if (PackageAvailable)
-{
-    <!-- INDUSTRY PICKER -->
-    <section class="reveal px-5 sm:px-8 max-w-4xl mx-auto text-center pb-10 md:pb-16 no-line-rule">
-        <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@((MarkupString)Content.Industry.Eyebrow)</span>
-        <h2 class="text-[1.75rem] md:text-[2rem] font-black tracking-tight mt-4 mb-4">@((MarkupString)Content.Industry.Title)</h2>
-        <p class="text-on-surface-variant text-sm leading-relaxed max-w-2xl mx-auto mb-8">@((MarkupString)Content.Industry.Text)</p>
-        <div class="flex flex-wrap justify-center gap-3">
-            <button type="button" @onclick="() => SelectIndustry(RegionPackages.AllIndustries)" class="@PillClass(RegionPackages.AllIndustries)">
-                @Content.Industry.AllLabel
-            </button>
-            @foreach (var industry in SelectableIndustries)
-            {
-                var marketplaceSlug = RegionPackages.IndustryFor(industry.Slug);
-                <button type="button" @onclick="() => SelectIndustry(marketplaceSlug)" class="@PillClass(marketplaceSlug)">
-                    @Ix(industry.LabelKey)
-                </button>
-            }
-        </div>
-    </section>
-}
-else
+@if (!PackageAvailable)
 {
     <!-- NO COUNTRY PACKAGE NOTICE -->
     <section class="reveal px-5 sm:px-8 max-w-4xl mx-auto pb-10 md:pb-16 no-line-rule">
@@ -64,35 +43,18 @@ else
         {
             <InstallPathCard Path="@native.Path">
                 <Actions>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="@NativeSettings.WindowsUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
-                            <span class="material-symbols-outlined">download</span> @native.Path.DownloadLabel
-                        </a>
-                        @if (NativeSettings.MacUrl is { } macUrl)
-                        {
-                            <a href="@macUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
-                                <span class="material-symbols-outlined">download</span> @native.MacDownloadLabel
-                            </a>
-                        }
-                    </div>
+                    <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                        <span class="material-symbols-outlined">storefront</span> @native.Path.DownloadLabel
+                    </a>
                     <p class="text-sm text-on-surface-variant mt-4 mb-0">@((MarkupString)native.ArchitectureNote)</p>
-                    @if (NativeSettings.MacUrl is null)
-                    {
-                        <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.MacComingSoonNote)</p>
-                    }
+                    <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.MacComingSoonNote)</p>
                     <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)string.Format(native.LinuxNote, LinuxSectionHref))</p>
                     <p class="text-sm text-on-surface-variant mt-2 mb-0">@((MarkupString)native.UninstallNote)</p>
                 </Actions>
             </InstallPathCard>
         }
-        <InstallPathCard Path="@Content.OnPrem"
-                         DownloadUrl="@OnPremDownloadUrl"
-                         DownloadLabel="@OnPremDownloadLabel"
-                         Note="@OnPremNote" />
-        <InstallPathCard Path="@Content.Compose"
-                         DownloadUrl="@ComposeDownloadUrl"
-                         DownloadLabel="@Content.Compose.DownloadLabel"
-                         Note="@ComposeNote" />
+        <InstallPathCard Path="@Content.OnPrem" StoreUrl="@StoreHref" />
+        <InstallPathCard Path="@Content.Compose" StoreUrl="@StoreHref" />
     </div>
 </section>
 
@@ -118,13 +80,9 @@ else
             </ul>
 
             <div class="mt-auto">
-                @if (!string.IsNullOrEmpty(OnPremDownloadUrl))
-                {
-                    <a href="@OnPremDownloadUrl" rel="nofollow" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
-                        <span class="material-symbols-outlined">download</span> @Content.Linux.Path.DownloadLabel
-                    </a>
-                }
-                <p class="text-xs text-on-surface-variant mt-4 mb-0 font-mono">@OnPremNote</p>
+                <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="btn-shine bg-secondary text-white px-6 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2 no-underline">
+                    <span class="material-symbols-outlined">storefront</span> @Content.Linux.Path.DownloadLabel
+                </a>
             </div>
         </div>
         <div>
@@ -165,8 +123,8 @@ else
                 <h3 class="text-lg font-bold text-primary mb-2">@((MarkupString)Content.Profile.Title)</h3>
                 <p class="text-on-surface-variant text-sm leading-relaxed m-0">@((MarkupString)Content.Profile.Text)</p>
             </div>
-            <a href="@ProfileDownloadUrl" rel="nofollow" class="px-6 py-3 rounded-xl font-bold text-secondary border border-secondary/30 hover:bg-secondary/5 transition-all no-underline inline-flex items-center gap-2 shrink-0">
-                <span class="material-symbols-outlined">description</span> @Content.Profile.DownloadLabel
+            <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="px-6 py-3 rounded-xl font-bold text-secondary border border-secondary/30 hover:bg-secondary/5 transition-all no-underline inline-flex items-center gap-2 shrink-0">
+                <span class="material-symbols-outlined">storefront</span> @Content.Profile.DownloadLabel
             </a>
         </div>
     </section>
@@ -209,8 +167,6 @@ else
 
 @code {
     private const string MarketplaceBaseUrlConfigKey = "Marketplace:BaseUrl";
-    private const string OnPremFileNameFormat = "klacks-onprem-{0}-{1}.zip";
-    private const string ComposeFileNameFormat = "klacks-compose-{0}-{1}.zip";
     private const string LinuxPackageCommandFormat = "sudo bash install-{0}.sh";
     private const string LinuxFallbackCommand = "sudo bash install.sh";
     private const string FragmentSeparator = "#";
@@ -224,8 +180,6 @@ else
     [Parameter] public string? RoutePath { get; set; }
 
     [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
-
-    private string _selectedIndustry = RegionPackages.AllIndustries;
 
     private string EffectiveRoutePath => string.IsNullOrEmpty(RoutePath) ? PageKey : RoutePath;
 
@@ -257,42 +211,9 @@ else
 
     private bool PackageAvailable => CountryCode is { } code && RegionPackages.HasPackage(code);
 
-    // The country's industry pages that map onto a marketplace industry slug
-    // (excludes the Klacksy pseudo-industry card).
-    private IEnumerable<CountryIndustry> SelectableIndustries
-    {
-        get
-        {
-            var owningCountry = CountryIndustries.OwningCountry(PageKey);
-            var industries = owningCountry is null ? null : CountryIndustries.ForCountry(owningCountry);
-
-            return industries?.Where(industry => RegionPackages.HasIndustryMapping(industry.Slug))
-                ?? Enumerable.Empty<CountryIndustry>();
-        }
-    }
-
-    private void SelectIndustry(string marketplaceSlug) => _selectedIndustry = marketplaceSlug;
-
-    private string PillClass(string marketplaceSlug)
-        => marketplaceSlug == _selectedIndustry
-            ? "px-5 py-2.5 rounded-full text-sm font-bold bg-secondary text-white transition-all"
-            : "px-5 py-2.5 rounded-full text-sm font-bold bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-all";
-
-    private string? DownloadUrl(string artifact)
-        => PackageAvailable
-            ? RegionPackages.DownloadUrl(MarketplaceBaseUrl, CountryCode!, _selectedIndustry, artifact)
-            : null;
-
-    private string? OnPremDownloadUrl
-        => PackageAvailable ? DownloadUrl(RegionPackages.OnPremZipArtifact) : ExternalLinks.OnPremBundleUrl;
-
-    private string OnPremDownloadLabel
-        => PackageAvailable ? Content.OnPrem.DownloadLabel : Content.Fallback.DownloadLabel;
-
-    private string OnPremNote
-        => PackageAvailable
-            ? string.Format(OnPremFileNameFormat, CountryCode, _selectedIndustry)
-            : ExternalLinks.OnPremBundleFileName;
+    // Every install path is downloaded in the Klacks Store: the country's region page, or the store home
+    // for a country without a published package.
+    private string StoreHref => RegionPackages.StoreUrl(MarketplaceBaseUrl, CountryCode, Culture);
 
     // The country package carries a wrapper that presets the region; the standard package only has install.sh.
     private string LinuxInstallCommand
@@ -309,17 +230,5 @@ else
         }
     }
 
-    private string? ComposeDownloadUrl => DownloadUrl(RegionPackages.ComposeZipArtifact);
-
-    private string ComposeNote
-        => PackageAvailable
-            ? string.Format(ComposeFileNameFormat, CountryCode, _selectedIndustry)
-            : Content.Fallback.ComposeNote;
-
-    private string ProfileDownloadUrl
-        => RegionPackages.DownloadUrl(MarketplaceBaseUrl, CountryCode ?? string.Empty, _selectedIndustry, RegionPackages.ProfileJsonArtifact);
-
     private string Sh(string key) => ContentProvider.GetText(Culture, "shared", key);
-
-    private string Ix(string key) => ContentProvider.GetText(Culture, "index", key);
 }
