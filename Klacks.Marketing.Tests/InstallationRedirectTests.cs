@@ -72,6 +72,16 @@ public class InstallationRedirectTests
         RegionPackages.StoreUrl(StoreBase, null, "en").ShouldBe(StoreBase + "/?culture=en");
     }
 
+    [TestCase("zh-cn", "land-tw", "/region/tw?culture=zh-CN")]
+    [TestCase("zh-CN", "land-cn", "/region/cn?culture=zh-CN")]
+    [TestCase(null, "land-ch", "/region/ch?culture=de")]
+    [TestCase("", null, "/region/ch?culture=de")]
+    [TestCase("en", null, "/region/gb?culture=en")]
+    public void In_site_store_links_convert_the_culture_slug_to_the_culture_code(string? culture, string? country, string expectedStorePath)
+    {
+        CountryPageLinks.StoreHref(culture, country).ShouldBe(StoreBase + expectedStorePath);
+    }
+
     [Test]
     public void The_redirect_uses_the_configured_store_base_url()
     {
