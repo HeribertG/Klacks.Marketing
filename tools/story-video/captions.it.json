@@ -7,7 +7,7 @@
     "k4": "Ti presento Klacksy, il tuo collega elettronico.",
     "x1": "Per i piani turni c'è Klacks. Ti aiuta.",
     "y1": "Rosso: MI = Malattia/Infortunio. La persona è assente.",
-    "y2": "Arancione: SOS = Sostituzione. Un altro prende il turno."
+    "y2": "Dopo l’accettazione, l’intero turno passa al sostituto."
   },
   "endcard": {
     "tagline": "Pianifica il personale con Klacksy",
@@ -17,33 +17,9 @@
   "abbreviations": {
     "absence": "MI",
     "absenceName": "Malattia/Infortunio",
-    "replacement": "SOS",
-    "replacementName": "Sostituzione",
     "verifiedOnTake": true
   },
-  "take": {
-    "seconds": 23.44,
-    "windows": {
-      "y1": {
-        "from": 16.6,
-        "to": 20
-      },
-      "y2": {
-        "from": 20,
-        "to": 23.44
-      }
-    },
-    "source": "klacks-take-ausfall-decken-it-vorschau.mp4 (simple-cover-absence, 1280x800, 25 fps, recorded 2026-10-17)",
-    "redCellVisibleSeconds": [
-      16.6,
-      20.4
-    ],
-    "orangeCellVisibleSeconds": [
-      17,
-      23.44
-    ],
-    "verifiedOnTake": true
-  },
+  "take": {"seconds":39.76,"windows":{"y1":{"from":25.36,"to":29.92},"y2":{"from":29.92,"to":39.76}},"source":"klacks-take-ausfall-decken-it-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.66,"standInScrollSeconds":29.62,"acceptedPlanSeconds":36.66,"verifiedOnTake":true},
   "review": {
     "translatedBy": "deepseek-v4-pro, edited by hand (k2 keeps the dash of the German original, x1 'piani turni')",
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source)",

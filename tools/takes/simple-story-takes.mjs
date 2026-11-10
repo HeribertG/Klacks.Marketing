@@ -10,7 +10,9 @@
  * still hold its 118 works, no real absence and no active scenario. Phone numbers in the review step are blurred (privacy).
  * With KLACKS_STORY_ACCEPT=1 (only together with KLACKS_COVER_ABSENCE_THROWAWAY=1, a throw-away copy of the demo database) the banner
  * accepts the scenario at the end and the take closes on the real plan: the stand-in's work with the moved icon and the tooltip naming
- * the absent person; the plan is then changed, so nothing is restored and the copy must be replaced before the next take.
+ * the absent person; the plan is then changed, so nothing is restored and the copy must be replaced before the next take. In that mode the
+ * absent row stays a little longer in the picture (room for the story caption). report.storyMarks holds recorder times (absent row shown,
+ * scroll to the stand-in, real plan after the accept) from which the story caption windows of captions.<culture>.json are measured.
  * simple-planning-progress ("Planung mit Fortschritt", about 18 s): the AutoWizard button plans the week 02.-08.11. of the weekly
  * group "Winterthur Nord" (lib/scenario-week-demo.mjs); the thin progress line under the schedule header stays visible while the run
  * is in progress (first seconds in real time, the rest time-compressed with badge), the finished proposal is shown as a scenario and
@@ -113,6 +115,7 @@ const PARK_OFFSET = { x: 70, y: 60 };
 const ACCEPT_ENV = "KLACKS_STORY_ACCEPT";
 const THROWAWAY_ENV = "KLACKS_COVER_ABSENCE_THROWAWAY";
 const CUT = Number.POSITIVE_INFINITY;
+const ABSENT_HOLD_EXTRA_MS = 1200;
 
 const SAVE_TIMEOUT_MS = 60000;
 const BANNER_TIMEOUT_MS = 60000;
@@ -292,12 +295,14 @@ async function takeSimpleCoverAbsence(take) {
     const band = await visibleGridBand(page);
     await mouse.moveTo(band.wheelPoint, MOVE.normal);
     await scrollRowToTop(page, pick.row, SCROLL_GESTURE_PAUSE_MS);
+    report.storyMarks = { absentRowAt: ScreenRecorder.now() };
     await page.waitForTimeout(BEAT.scrolled);
     const shownCell = await cellCenter(page, pick.row, pick.dayIndex, isRtl);
     await mouse.moveTo({ x: shownCell.x + PARK_OFFSET.x, y: shownCell.y + PARK_OFFSET.y }, MOVE.normal);
     report.absentRowVisible = await rowTextVisible(page, pick.row);
     report.posterAt = ScreenRecorder.now();
-    await page.waitForTimeout(BEAT.decide);
+    await page.waitForTimeout(acceptAtEnd ? BEAT.decide + ABSENT_HOLD_EXTRA_MS : BEAT.decide);
+    report.storyMarks.standInScrollAt = ScreenRecorder.now();
     const standIn = outcome.covered[0]?.replacementClientId;
     report.standInRow = data.clients.findIndex((client) => client.id === standIn);
     await scrollUntilRowTextVisible(page, report.standInRow, SCROLL_GESTURE_PAUSE_MS);
@@ -315,6 +320,7 @@ async function takeSimpleCoverAbsence(take) {
       await scrollUntilRowTextVisible(page, report.standInRow, SCROLL_TICK_PAUSE_MS);
       await page.waitForTimeout(CANVAS_SETTLE_MS);
       await recorder.endFast();
+      report.storyMarks.acceptedPlanAt = ScreenRecorder.now();
       report.acceptedStandInRowVisible = await rowTextVisible(page, report.standInRow);
       if (!report.acceptedStandInRowVisible) flag(report, `the stand-in row ${report.standInRow} is not visible after the accept`);
       await hoverMovedNote(take, await cellCenter(page, report.standInRow, pick.dayIndex, isRtl), pick.client.firstName);

@@ -7,7 +7,7 @@
     "k4": "Meet Klacksy, your electronic colleague.",
     "x1": "For shift schedules, there's Klacks. It helps you.",
     "y1": "Red: IA = Illness/Accident. The person is absent.",
-    "y2": "Orange: REP = Replacement. Someone else takes over."
+    "y2": "Once accepted, the whole shift belongs to the replacement."
   },
   "endcard": {
     "tagline": "Staff scheduling with Klacksy",
@@ -17,33 +17,9 @@
   "abbreviations": {
     "absence": "IA",
     "absenceName": "Illness/Accident",
-    "replacement": "REP",
-    "replacementName": "Replacement",
     "verifiedOnTake": true
   },
-  "take": {
-    "seconds": 23.36,
-    "windows": {
-      "y1": {
-        "from": 16.8,
-        "to": 20
-      },
-      "y2": {
-        "from": 20,
-        "to": 23.36
-      }
-    },
-    "source": "klacks-take-ausfall-decken-en-vorschau.mp4 (simple-cover-absence, 1280x800, 25 fps, recorded 2026-10-17)",
-    "redCellVisibleSeconds": [
-      16.8,
-      20.5
-    ],
-    "orangeCellVisibleSeconds": [
-      17,
-      23.36
-    ],
-    "verifiedOnTake": true
-  },
+  "take": {"seconds":39.2,"windows":{"y1":{"from":25.02,"to":29.55},"y2":{"from":29.55,"to":39.2}},"source":"klacks-take-ausfall-decken-en-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.32,"standInScrollSeconds":29.25,"acceptedPlanSeconds":36.12,"verifiedOnTake":true},
   "review": {
     "translatedBy": "deepseek-v4-pro, edited by hand (schedule instead of rota, pill and tagline aligned with the English site)",
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source)",
