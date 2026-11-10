@@ -7,7 +7,7 @@
     "k4": "أعرّفكم على Klacksy، زميلكم الإلكتروني.",
     "x1": "لجداول الدوام، يوجد Klacks. يساعدكم في ذلك.",
     "y1": "أحمر: مرض = مرض/حادث. الشخص غائب.",
-    "y2": "برتقالي: استب = استبدال. يتولى شخص آخر النوبة."
+    "y2": "بعد القبول تنتقل المناوبة كاملةً إلى البديل."
   },
   "endcard": {
     "tagline": "تخطيط الدوام مع Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "مرض",
     "absenceName": "مرض/حادث",
-    "replacement": "استب",
-    "replacementName": "استبدال",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 27.1,
-    "windows": {
-      "y1": {
-        "from": 20.4,
-        "to": 23.6
-      },
-      "y2": {
-        "from": 23.6,
-        "to": 27.1
-      }
-    },
-    "redCellFirstVisibleSeconds": 20.5,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":40.76,"windows":{"y1":{"from":25.99,"to":30.61},"y2":{"from":30.61,"to":40.76}},"source":"klacks-take-ausfall-decken-ar-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":26.29,"standInScrollSeconds":30.31,"acceptedPlanSeconds":37.79,"verifiedOnTake":true}
 }

@@ -7,7 +7,7 @@
     "k4": "Perkenalkan: Klacksy, rekan kerja elektronik Anda.",
     "x1": "Untuk jadwal kerja, ada Klacks. Ia membantu Anda.",
     "y1": "Merah: SK = Sakit/Kecelakaan. Orang itu tidak masuk.",
-    "y2": "Oranye: GNT = Penggantian. Orang lain mengambil alih."
+    "y2": "Setelah diterima, seluruh sif berpindah ke orang pengganti."
   },
   "endcard": {
     "tagline": "Penjadwalan staf bersama Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "SK",
     "absenceName": "Sakit/Kecelakaan",
-    "replacement": "GNT",
-    "replacementName": "Penggantian",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 31.6,
-    "windows": {
-      "y1": {
-        "from": 24.9,
-        "to": 28.1
-      },
-      "y2": {
-        "from": 28.1,
-        "to": 31.6
-      }
-    },
-    "redCellFirstVisibleSeconds": 25,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":40.24,"windows":{"y1":{"from":25.67,"to":30.25},"y2":{"from":30.25,"to":40.24}},"source":"klacks-take-ausfall-decken-id-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.97,"standInScrollSeconds":29.95,"acceptedPlanSeconds":37.34,"verifiedOnTake":true}
 }

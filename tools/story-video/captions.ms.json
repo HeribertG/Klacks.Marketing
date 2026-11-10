@@ -7,7 +7,7 @@
     "k4": "Kenali Klacksy, rakan sekerja elektronik anda.",
     "x1": "Untuk jadual syif, ada Klacks. Ia membantu anda.",
     "y1": "Merah: SK = Sakit/Kemalangan. Orang itu tidak hadir.",
-    "y2": "Jingga: GNT = Penggantian. Orang lain mengambil alih."
+    "y2": "Selepas diterima, seluruh syif berpindah kepada pengganti."
   },
   "endcard": {
     "tagline": "Penjadualan kakitangan bersama Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "SK",
     "absenceName": "Sakit/Kemalangan",
-    "replacement": "GNT",
-    "replacementName": "Penggantian",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":38.24,"windows":{"y1":{"from":24.03,"to":28.55},"y2":{"from":28.55,"to":38.24}},"source":"klacks-take-ausfall-decken-ms-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":24.33,"standInScrollSeconds":28.25,"acceptedPlanSeconds":35.31,"verifiedOnTake":true}
 }
