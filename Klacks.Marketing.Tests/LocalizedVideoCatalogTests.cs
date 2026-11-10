@@ -177,6 +177,18 @@ public class LocalizedVideoCatalogTests
         catalog.Find(RestConflict, "de").ShouldBeNull();
     }
 
+    [Test]
+    public void Paths_carry_the_file_size_so_a_re_recorded_video_bypasses_the_browser_cache()
+    {
+        CreateFiles("rest-conflict-de.webm", "rest-conflict-de.webp");
+        File.WriteAllBytes(Path.Combine(_webRoot, LocalizedVideoCatalog.VideosFolder, "rest-conflict-de.mp4"), new byte[42]);
+
+        var sources = CreateCatalog().Find(RestConflict, "de")!;
+
+        sources.Mp4Path.ShouldBe("videos/rest-conflict-de.mp4?v=42");
+        sources.WebmPath.ShouldBe("videos/rest-conflict-de.webm");
+    }
+
     private LocalizedVideoCatalog CreateCatalog(params string[] files)
     {
         CreateFiles(files);
