@@ -79,6 +79,8 @@ const HTTP_PUT = "PUT";
 const FORBIDDEN_TEXTS = Object.freeze([D.FOREIGN_NAME_FRAGMENT, D.NEUTRAL_TOWN, "-FREE"]);
 const COLUMNS_SCROLLED = 11;
 const SAVE_TIMEOUT_MS = 30000;
+const ROW_SETTLE_TIMEOUT_MS = 5000;
+const ROW_SETTLE_POLL_MS = 100;
 const CUT = Number.POSITIVE_INFINITY;
 const TYPE_DELAY_MS = 70;
 const MOVE = { short: 300, normal: 650 };
@@ -209,11 +211,19 @@ async function orderRows(take, clients, groupId) {
   await take.api.json(`${SORT_ORDER_API}/${groupId}`, { method: HTTP_PUT, data: ordered.map((client, sortOrder) => ({ clientId: client.id, sortOrder })) });
 }
 
+/** The row boxes are read again until the row lies inside the grid; after a save the row header can be mid-render for a moment. */
 async function cell(take, firstName, day, subRow) {
-  const grid = await gridBox(take.page);
-  const boxes = await rowBoxes(take.page);
-  const visibleColumn = Number(day.slice(-2)) - 1 - COLUMNS_SCROLLED;
-  return { x: grid.x + (visibleColumn + 1 / HALF) * CELL_WIDTH_PX, y: boxes[ROWS[firstName]].top + (subRow + 1 / HALF) * SUB_ROW_HEIGHT_PX };
+  const { page } = take;
+  const deadline = Date.now() + ROW_SETTLE_TIMEOUT_MS;
+  for (;;) {
+    const grid = await gridBox(page);
+    const row = (await rowBoxes(page))[ROWS[firstName]];
+    const visibleColumn = Number(day.slice(-2)) - 1 - COLUMNS_SCROLLED;
+    const target = { x: grid.x + (visibleColumn + 1 / HALF) * CELL_WIDTH_PX, y: (row?.top ?? 0) + (subRow + 1 / HALF) * SUB_ROW_HEIGHT_PX };
+    if (row?.height > 0 && target.y > grid.y && target.y < grid.y + grid.height) return target;
+    if (Date.now() > deadline) throw new Error(`the row of ${firstName} lies outside the grid (row ${JSON.stringify(row)}, grid top ${grid.y}, height ${grid.height})`);
+    await page.waitForTimeout(ROW_SETTLE_POLL_MS);
+  }
 }
 
 async function typeIntoCell(take, target, text, pathPattern) {

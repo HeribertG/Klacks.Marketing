@@ -1,11 +1,13 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Self-test of the clip series Monatsplanung (M1 monthplan-wishes, M2 monthplan-commands, M3 security-month-plan), Replacement (R1, R2) and Szenarien (S0 scenario-variants; S1 scenario-keys and
- * scenario-keys-wizard in German only, testGermanOnlyKeys) in de, en, fr and it, without a browser, a server or a database: every caption track has exactly the cues of its take, fits the caption pill (42 characters) and says nothing on the list of
+ * Self-test of the clip series Monatsplanung (M1 monthplan-wishes, M2 monthplan-commands, M3 security-month-plan), Replacement (R1, R2) and Szenarien (S0 scenario-variants; S1 v3
+ * scenario-placeholders, the only clip that may say "placeholder"; S1 scenario-keys and scenario-keys-wizard in German only, testGermanOnlyKeys) in de, en, fr and it, without a browser, a
+ * server or a database: every caption track has exactly the cues of its take, fits the caption pill (42 characters) and says nothing on the list of
  * forbidden statements; every script entry has the beats and fields of the German one; the run-time captions of M1 and M2 stay within the pill for every worst case and reproduce the
  * German wording of the recorded clips; the story captions over the Veo scenes (story-video/*-captions.<culture>.json) fit the reading budget of their recipes (17 characters per second);
- * the app texts of lib/ui-texts.mjs and the absence names of the scripts agree with Klacks.Ui and Klacks.Api when those checkouts sit next to Klacks.Marketing.
+ * the app texts of lib/ui-texts.mjs and the absence names of the scripts agree with Klacks.Ui and Klacks.Api when those checkouts sit next to Klacks.Marketing; the S1 v3 old-term rule of
+ * every culture finds the 1.0.62 labels and spares the current ones, and every S1 v3 prompt names a trigger phrase of both knowledge skills (skill-seeds.json of Klacks.Api).
  * Known and pinned: the German track of monthplan-commands has one cue over 42 characters (manual, 46), which blocks only a new German recording of M2; fixing it makes this test ask for the pin to go.
  * Run: node tools/monthplan-series.selftest.mjs
  */
@@ -32,6 +34,8 @@ import * as r2 from "./story-video/replacement-recipe-r2.mjs";
 import * as s0 from "./story-video/scenario-recipe-s0.mjs";
 import { SCENARIO_KEYS_CUES_BY_VIDEO, SCENARIO_KEYS_VIDEOS, VIDEO_SCENARIO_KEYS, VIDEO_SCENARIO_KEYS_WIZARD } from "./takes/scenario-keys-takes.mjs";
 import * as s1 from "./story-video/scenario-recipe-s1.mjs";
+import { KNOWLEDGE_SKILLS, OLD_TERMS, SCENARIO_PLACEHOLDERS_CUES, VIDEO_SCENARIO_PLACEHOLDERS, oldTermIn } from "./takes/scenario-placeholders-takes.mjs";
+import * as s1v2 from "./story-video/scenario-recipe-s1v2.mjs";
 
 const toolsDir = path.dirname(fileURLToPath(import.meta.url));
 const CULTURES = ["de", "en", "fr", "it"];
@@ -39,6 +43,7 @@ const NEW_CULTURES = ["en", "fr", "it"];
 const MAX_CHARS_PER_SECOND = 17;
 const UI_I18N_DIR = path.resolve(toolsDir, "..", "..", "Klacks.Ui", "src", "assets", "i18n");
 const ABSENCES_SEED = path.resolve(toolsDir, "..", "..", "Klacks.Api", "Infrastructure", "Persistence", "Seed", "AbsencesSeed.cs");
+const SKILL_SEEDS = path.resolve(toolsDir, "..", "..", "Klacks.Api", "Application", "Skills", "Definitions", "skill-seeds.json");
 const PINNED_GERMAN_OVERLONG = Object.freeze({ [VIDEO_MONTHPLAN_COMMANDS]: ["manual"] });
 
 const TAKES = [
@@ -48,10 +53,26 @@ const TAKES = [
   { video: VIDEO_SCENARIO_VARIANTS, cues: Object.values(SCENARIO_VARIANTS_CUES), recipe: s0, story: "scenario-s0-captions", script: true },
   { video: VIDEO_MONTHPLAN_COMMANDS, cues: Object.values(MONTHPLAN_COMMANDS_CUES), recipe: m2, story: "monthplan-m2-captions", script: true },
   { video: VIDEO_MONTHPLAN_WISHES, cues: Object.values(MONTHPLAN_WISHES_CUES), recipe: m1, story: "monthplan-m1-captions", script: true },
+  { video: VIDEO_SCENARIO_PLACEHOLDERS, cues: Object.values(SCENARIO_PLACEHOLDERS_CUES), recipe: s1v2, story: "scenario-s1v2-captions", script: true },
 ];
 
+const PLACEHOLDER_WORDS = /placeholder|platzhalter|segnaposto|espace réservé/i;
+const ALLOWED_BY_VIDEO = Object.freeze({ [VIDEO_SCENARIO_PLACEHOLDERS]: [PLACEHOLDER_WORDS] });
+const OLD_LABELS_1062 = Object.freeze({
+  de: ["Keys verwalten", "Neuen Key anlegen", "Key:"],
+  en: ["Manage keys", "Create new key", "Key:"],
+  fr: ["Gérer les clés", "Créer une nouvelle clé", "Clé :"],
+  it: ["Gestisci le chiavi", "Crea nuova chiave", "Chiave:"],
+});
+const HARMLESS_SAMPLES = Object.freeze({
+  en: "Key points: provisional shifts first, placeholders after.",
+  fr: "Points clés : les mots-clés restent, les traits clés aussi.",
+  it: "Punti chiave: le parole chiave restano.",
+});
+const TEMPLATE_FIELD = /\{\{[^}]*\}\}/g;
+
 const FORBIDDEN = Object.freeze({
-  all: [/-FREE\b/, /placeholder|platzhalter|segnaposto|espace réservé/i],
+  all: [/-FREE\b/, PLACEHOLDER_WORDS],
   de: [/klacksy (plant|entscheidet)/i, /klacks ruft (?!niemanden)/i, /automatisch/i, /in sekunden/i, /\bKI\b/, /saldo/i, /genehmigung/i, /urlaub/i, /zertifikat/i, /lohn|kosten/i],
   en: [/klacksy (plans|decides)/i, /klacks calls (?!nobody)/i, /automatic/i, /in seconds/i, /\bAI\b/, /\bbalance\b/i, /approval/i, /\bleave\b/i, /certificate/i, /payroll|\bcosts?\b/i],
   fr: [/klacksy (planifie|décide)/i, /klacks (appelle|téléphone)/i, /automatique/i, /en (quelques )?secondes/i, /\bIA\b/, /\bsolde\b/i, /approbation|autorisation/i, /certificat/i, /salaire|\bpaie\b|\bcoûts?\b/i],
@@ -107,19 +128,22 @@ async function testCaptionTracks() {
   }
 }
 
-function forbiddenIn(culture, text) {
-  return [...FORBIDDEN.all, ...FORBIDDEN[culture]].filter((pattern) => pattern.test(text.replace(/public holidays/gi, ""))).map(String);
+function forbiddenIn(culture, text, video) {
+  const allowed = ALLOWED_BY_VIDEO[video] ?? [];
+  return [...FORBIDDEN.all, ...FORBIDDEN[culture]].filter((pattern) => !allowed.includes(pattern) && pattern.test(text.replace(/public holidays/gi, ""))).map(String);
 }
 
 async function testForbiddenStatements() {
   for (const culture of CULTURES) {
     const tracks = await tracksOf(culture);
     for (const { video, story } of TAKES) {
-      for (const [cue, text] of Object.entries(tracks[video].captions)) assert.deepEqual(forbiddenIn(culture, text), [], `${video}/${culture}/${cue}: "${text}"`);
+      for (const [cue, text] of Object.entries(tracks[video].captions)) assert.deepEqual(forbiddenIn(culture, text, video), [], `${video}/${culture}/${cue}: "${text}"`);
       const { captions } = await readJson(`story-video/${story}.${culture}.json`);
-      for (const [key, text] of Object.entries(captions)) assert.deepEqual(forbiddenIn(culture, text), [], `${story}/${culture}/${key}: "${text}"`);
+      for (const [key, text] of Object.entries(captions)) assert.deepEqual(forbiddenIn(culture, text, video), [], `${story}/${culture}/${key}: "${text}"`);
     }
   }
+  assert.ok(forbiddenIn("de", "8 Platzhalter für die Messe").length > 0, "placeholders stay forbidden outside S1 v3");
+  assert.deepEqual(forbiddenIn("de", "8 Platzhalter für die Messe", VIDEO_SCENARIO_PLACEHOLDERS), []);
   assert.deepEqual(forbiddenIn("en", "Klacks calls nobody. You do that."), []);
   assert.deepEqual(forbiddenIn("en", "Klacksy plans the month"), [String(FORBIDDEN.en[0])]);
   assert.deepEqual(forbiddenIn("en", "IA for Max, REP in Tanja's row"), []);
@@ -324,6 +348,63 @@ async function testAbsenceNames() {
   }
 }
 
+const flattenMessages = (object, prefix = "", found = {}) => {
+  for (const [key, value] of Object.entries(object)) {
+    const name = prefix ? `${prefix}.${key}` : key;
+    if (value !== null && typeof value === "object") flattenMessages(value, name, found);
+    else found[name] = value;
+  }
+  return found;
+};
+const phrasesOf = (byLanguage) => (Array.isArray(byLanguage) ? byLanguage : Object.values(byLanguage ?? {}).flat()).map((phrase) => String(phrase).toLowerCase());
+
+/**
+ * S1 v3 (scenario-placeholders) beyond the four-language lists: the old-term rule of each culture finds the 1.0.62 labels and spares the harmless phrases, the current Ui texts of the
+ * set and the placeholders, and the captions and prompts use the Ui terms. Skill matching is a lowercase substring test over the phrases of every language (SkillMatchingEngine), so
+ * each en/fr/it prompt must contain a phrase of both knowledge skills; the German prompt names only the set skill and reached the placeholder skill through retrieval (accepted take).
+ */
+async function testScenarioPlaceholders() {
+  assert.deepEqual(Object.keys(OLD_TERMS), CULTURES);
+  for (const culture of CULTURES) {
+    for (const label of OLD_LABELS_1062[culture]) assert.ok(oldTermIn(culture, label, 0), `${culture}: the old term rule misses the 1.0.62 label "${label}"`);
+  }
+  for (const [culture, sample] of Object.entries(HARMLESS_SAMPLES)) assert.equal(oldTermIn(culture, sample, 0), null, `${culture}: "${sample}" is taken for the old term`);
+  assert.throws(() => oldTermIn("cs", "x", 0), /no old term for the culture "cs"/);
+  const scripts = await readJson("capture-app-videos.scripts.json");
+  const prompts = Object.fromEntries(CULTURES.map((culture) => [culture, scripts[VIDEO_SCENARIO_PLACEHOLDERS][culture].prompt]));
+  for (const [culture, prompt] of Object.entries(prompts)) assert.ok(!/[‘’]/.test(prompt), `${culture}: the prompt holds a curly apostrophe, the skill phrases use a straight one`);
+
+  if (existsSync(SKILL_SEEDS)) {
+    const seeds = JSON.parse(await readFile(SKILL_SEEDS, "utf8")).skills;
+    for (const name of KNOWLEDGE_SKILLS) {
+      const skill = seeds.find((entry) => entry.name === name);
+      assert.ok(skill, `skill-seeds.json holds no ${name}`);
+      const phrases = [...phrasesOf(skill.triggerKeywords), ...phrasesOf(skill.synonyms)];
+      const cultures = name === KNOWLEDGE_SKILLS[0] ? CULTURES : NEW_CULTURES;
+      for (const culture of cultures) {
+        const hit = phrases.find((phrase) => phrase.length >= 4 && prompts[culture].toLowerCase().includes(phrase));
+        assert.ok(hit, `${culture}: the prompt names no trigger phrase of ${name}`);
+      }
+    }
+  } else {
+    console.log("  skipped: no Klacks.Api checkout next to Klacks.Marketing, the S1 v3 prompts not compared with skill-seeds.json");
+  }
+
+  if (!existsSync(UI_I18N_DIR)) return;
+  for (const culture of CULTURES) {
+    const messages = flattenMessages(JSON.parse(await readFile(path.join(UI_I18N_DIR, `${culture}.json`), "utf8")));
+    for (const [key, text] of Object.entries(messages).filter(([key]) => key.startsWith("scenarioVariant.") || key.startsWith("standIn."))) {
+      assert.equal(oldTermIn(culture, String(text).replace(TEMPLATE_FIELD, ""), 0), null, `${culture}: the old term rule fires on ${key} "${text}"`);
+    }
+    const setTerm = messages["scenarioVariant.title"].toLowerCase();
+    const standInTerm = messages["schedule.filter.standIns"].toLowerCase();
+    const track = (await tracksOf(culture))[VIDEO_SCENARIO_PLACEHOLDERS].captions;
+    assert.ok(track.key.toLowerCase().includes(setTerm), `${culture}: caption key "${track.key}" does not use the Ui term "${setTerm}"`);
+    assert.ok(track.standIns.toLowerCase().includes(standInTerm), `${culture}: caption standIns "${track.standIns}" does not use the Ui term "${standInTerm}"`);
+    assert.ok(prompts[culture].toLowerCase().includes(setTerm) && prompts[culture].toLowerCase().includes(standInTerm), `${culture}: the prompt does not use the Ui terms "${setTerm}" and "${standInTerm}"`);
+  }
+}
+
 /** S1 is recorded in German only: its two video ids, its story captions and its script entry are checked here instead of in the four-language lists above. */
 async function testGermanOnlyKeys() {
   const culture = "de";
@@ -378,4 +459,5 @@ await testRuntimeCaptions();
 testUiTexts();
 await testAgainstUi();
 await testAbsenceNames();
+await testScenarioPlaceholders();
 console.log("monthplan-series self-test: ok");

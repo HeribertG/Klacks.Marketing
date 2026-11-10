@@ -1,7 +1,7 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Cut recipe of the Szenarien clip S1 v2 "Grossanlass mit Keys und Platzhaltern" for build-weekplan-video.mjs (--recipe), German only: the opening is the day part of gemini_generated_video_9578f9f9.mp4
+ * Cut recipe of the Szenarien clip S1 v2/v3 "Grossanlass mit Keys und Platzhaltern" for build-weekplan-video.mjs (--recipe), cultures de, en, fr, it: the opening is the day part of gemini_generated_video_9578f9f9.mp4
  * (0-3.9 s: Sandra types, tired, Klacksy appears, she turns to it), slowed so the two opening captions keep the reading budget, the live take scenario-placeholders-<culture> filling the frame
  * (takes/scenario-placeholders-takes.mjs: Klacksy explains keys and placeholders in the chat, the key "Messe" and 8 placeholders are created, the AutoWizard fills the scenario), the closing
  * scene from the night part of the SAME clip (4.6-10 s: Klacksy with gears, thumbs up, Sandra claps) and the end card. The cross-fade of the source between day and night (3.9-4.5 s) is never used.

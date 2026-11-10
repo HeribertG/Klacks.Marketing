@@ -48,7 +48,7 @@
  * The key takes scenario-keys and scenario-keys-wizard (clip S1 "Grossauftrag mit virtuellen Keys", German only) live in takes/scenario-keys-takes.mjs; they need a throw-away copy of
  * klacks_marketing_security_bern_s2, --group-id of "Bern Objektschutz", record at 1280x720 and read keys, names and beats from the scenario-keys entry of capture-app-videos.scripts.json
  * (the wizard id adds the beats of its own entry); the header states the publishable criterion.
- * The take scenario-placeholders (clip S1 v3 "Grossanlass mit vorläufigen Diensten und Platzhaltern", German only, Ui of 1.0.63 or later) lives in takes/scenario-placeholders-takes.mjs;
+ * The take scenario-placeholders (clip S1 v3 "Grossanlass mit vorläufigen Diensten und Platzhaltern", de, en, fr, it, Ui of 1.0.63 or later) lives in takes/scenario-placeholders-takes.mjs;
  * it needs a throw-away copy of klacks_marketing_security_bern_s3, --group-id of "Bern Objektschutz", records at 1280x720 with the chat panel and reads prompt, frame and beats
  * from capture-app-videos.scripts.json.
  * The wishes take monthplan-wishes (clip M1 "Ferienwunsch wird Ferien") lives in takes/monthplan-wishes-takes.mjs; it needs a throw-away copy of klacks_marketing_security_bern_m1, --group-id of "Bern Objektschutz",

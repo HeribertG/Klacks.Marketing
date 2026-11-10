@@ -56,7 +56,6 @@
   },
   "security-month-plan": {
     "captions": {
-      "cut": "Site surveillé 24 h/24 en trois services",
       "team": "Dix personnes, temps plein et partiel",
       "targets": "Les heures garanties viennent du contrat",
       "availability": "Dispo : Mia du 7 au 9 seulement 7 h–15 h",
@@ -120,6 +119,22 @@
       "both": "Deux variantes au choix",
       "yes": "Votre oui : la variante B est adoptée",
       "real": "Planning réel : Lena a les nuits"
+    }
+  },
+  "scenario-placeholders": {
+    "captions": {
+      "team": "Renforts : seulement les jours du salon",
+      "ask": "Il manque du monde ? Demandez à Klacksy",
+      "explain": "Services provisoires, employés fictifs",
+      "key": "Services provisoires « Messe », 10–13 déc.",
+      "keyShifts": "Messe Einlass : 10 personnes, jeu–dim",
+      "keyShiftsAll": "Plus Messe Abend : 20 personnes par jour",
+      "standIns": "8 employés fictifs pour combler le manque",
+      "scenario": "Scénario avec « Messe », plan réel intact",
+      "wizard": "Wizard : d'abord le vrai personnel",
+      "real": "D'abord les vrais renforts",
+      "plan": "◌ Les employés fictifs : juste le reste",
+      "summary": "Tout est pourvu : l'accord peut venir"
     }
   },
   "monthplan-commands": {

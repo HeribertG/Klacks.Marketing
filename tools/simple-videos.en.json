@@ -56,7 +56,6 @@
   },
   "security-month-plan": {
     "captions": {
-      "cut": "24-hour site in three shifts",
       "team": "Ten people, full-time and part-time",
       "targets": "Guaranteed hours come from the contract",
       "availability": "Available: Mia only 7 am–3 pm on 7–9 Dec",
@@ -120,6 +119,22 @@
       "both": "Two variants to choose from",
       "yes": "Your yes: Variant B becomes the plan",
       "real": "Real plan: Lena has the nights"
+    }
+  },
+  "scenario-placeholders": {
+    "captions": {
+      "team": "Temp staff: in the team on fair days only",
+      "ask": "Not confirmed, people missing: ask Klacksy",
+      "explain": "Provisional shifts, placeholders for staff",
+      "key": "Provisional shifts “Messe”: 10–13 Dec",
+      "keyShifts": "Messe Einlass: 10 people, Thu–Sun",
+      "keyShiftsAll": "Plus Messe Abend: 20 people a day",
+      "standIns": "8 placeholders for the missing people",
+      "scenario": "Scenario with “Messe”: real plan stays",
+      "wizard": "Wizard: real people first, then the rest",
+      "real": "The real temp staff first",
+      "plan": "◌ Placeholders only take the rest",
+      "summary": "All slots filled, ready for the go-ahead"
     }
   },
   "monthplan-commands": {

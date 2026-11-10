@@ -1,12 +1,14 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Story take of clip S1 v3 "Grossanlass mit vorläufigen Diensten und Platzhaltern" (series Szenarien, security demo Bern, German only). It needs a throw-away copy of
+ * Story take of clip S1 v3 "Grossanlass mit vorläufigen Diensten und Platzhaltern" (series Szenarien, security demo Bern, cultures de, en, fr, it: the app language, the captions and the
+ * chat prompt change, the demo data stays German; every control is found by its id, the qualifications by the id the API returns for their German name, the old term per culture by
+ * OLD_TERMS). It needs a throw-away copy of
  * klacks_marketing_security_bern_s3 (bern_s1 plus scenario-keys-demo/seed-keys.mjs --without-keys: the customer "Messe Nordring AG" and 14 temporary staff whose membership in
  * the group covers the fair days only; no provisional shifts, no placeholder) and --group-id of "Bern Objektschutz". Recorded at 1280x720 with the chat panel; needs the Ui of 1.0.63
  * or later (menu ⋮ "Weitere Aktionen" of the schedule toolbar, the Ui term "Vorläufige Dienste" for keys, the placeholder dialog without a group field).
  * Beats (cues): team - the temporary staff stand on top, blue outside the fair days (their membership covers 10.-13.12. only); ask - Sandra asks Klacksy in the chat, Klacksy answers
- * through the two knowledge skills (explain_scenario_variant_keys, explain_placeholder_employees; both must be called, the answer must not say "Key"); key - ⋮, "Vorläufige Dienste
+ * through the two knowledge skills (explain_scenario_variant_keys, explain_placeholder_employees; both must be called, the answer must not use the old term of the culture); key - ⋮, "Vorläufige Dienste
  * verwalten", "Vorläufige Dienste anlegen", the set "Messe" for the fair days; keyShifts - "Dienste bearbeiten", "Neuer Dienst": the shift "Messe Einlass" (MEI, 10 people, Thu-Sun,
  * customer "Messe Nordring AG") is typed into the shift form (the routine part fast-forwarded with a badge), sealed and saved; keyShiftsAll - in a cut the second shift "Messe Abend"
  * (MAB) is stored through the API with the body the form sends, then the list shows both (KLACKS_S1_SHIFT_FORM=0 stores both through the API, the report says so);
@@ -14,7 +16,8 @@
  * searched for "Messe" inside the cut after saving); wizard - the AutoWizard button on the searched shift list (the wait is a cut, the final child is renamed to the scenario name,
  * every other scenario of the run is rejected through the API); real - the fair days with the temporary staff on top; plan - the rows scrolled to the placeholders (◌);
  * summary - the summary dialog: every place of the set is filled. No accept and no discard (clip S2 does that).
- * Publishable criterion (report.publishable): both knowledge skills called, no chat error, no "Key" in the answer or on the page; the set created by the dialog with the fair days;
+ * Publishable criterion (report.publishable): both knowledge skills called, no chat error, the old term of the culture (1.0.62: de "Key", en "key", fr "clé", it "chiave"; 1.0.63 says
+ * "Vorläufige Dienste", "Provisional shifts", "Services provisoires", "Turni provvisori") neither in the answer nor on the page; the set created by the dialog with the fair days;
  * MEI created by the form with the stage values (sealed, token, times, staffing, weekdays, customer, period) unless the API fallback is chosen; the placeholders created by the dialog
  * (exactly script.standIns.count, group of the schedule); the scenario created by the dialog with exactly the set; the wizard started with the token, group, December and only the
  * fair clones; the final scenario carries the set; its summary shows filled = demanded; the fair works: every slot filled, real people at least script.minRealSlots (1.0.63:
@@ -84,7 +87,6 @@ const SEL_STAND_IN_SUBMIT = "#stand-in-create-submit";
 const SEL_STAND_IN_PROBLEM = "#stand-in-create-problem";
 const SEL_QUALIFICATIONS = "#stand-in-create-qualifications";
 const SEL_QUALIFICATIONS_MENU = "#stand-in-create-qualifications-menu";
-const SEL_QUALIFICATION_ROW = "label[id^='stand-in-create-qualification-']";
 const SEL_QUALIFICATION_CHECKBOX = "input.qualification-select-checkbox";
 const SEL_QUALIFICATION_SYMBOL = `${SEL_QUALIFICATIONS} .qualification-select-symbol`;
 const SEL_NAME_INPUT = "#scenario-name-input";
@@ -142,8 +144,17 @@ const SCENARIO_CREATE_PATH = /\/AnalyseScenarios\/?$/i;
 const SHIFT_SCHEDULE_PATH = /\/Shifts\/Schedule\/?$/i;
 const AUTO_WIZARD_START_PATH = /\/AutoWizard\/Start/i;
 const WATCHED_ERROR_PATH = /\/AnalyseScenarios|\/ScenarioVariants|\/AutoWizard|\/Shifts\/|\/Works\/|\/Clients\/StandIns|\/assistant\//i;
-const KNOWLEDGE_SKILLS = Object.freeze(["explain_scenario_variant_keys", "explain_placeholder_employees"]);
-const OLD_TERM = /\bKeys?\b/;
+export const KNOWLEDGE_SKILLS = Object.freeze(["explain_scenario_variant_keys", "explain_placeholder_employees"]);
+/**
+ * The old Ui term of the set per culture (1.0.62) and the common phrases of the same word that do not name it (en "key point", fr "mots-clés", it "parole chiave"; on 1.0.63 those
+ * words appear in the settings only, never on the schedule). JS \b is ASCII-only, so fr and it use letter lookarounds (a bare "clé" ends in a non-ASCII letter).
+ */
+export const OLD_TERMS = Object.freeze({
+  de: Object.freeze({ term: /\bKeys?\b/, harmless: null }),
+  en: Object.freeze({ term: /(?<![\p{L}\p{N}])keys?(?![\p{L}\p{N}])/iu, harmless: /(?<![\p{L}\p{N}])key (?:points?|questions?|facts?|figures?|steps?|takeaways?)(?![\p{L}\p{N}])/giu }),
+  fr: Object.freeze({ term: /(?<![\p{L}\p{N}])cl(?:é|ef)s?(?![\p{L}\p{N}])/iu, harmless: /(?<![\p{L}\p{N}])(?:mots?|points?|traits?|éléments?|chiffres?)[ -]cl(?:é|ef)s?(?![\p{L}\p{N}])/giu }),
+  it: Object.freeze({ term: /(?<![\p{L}\p{N}])chiav[ei](?![\p{L}\p{N}])/iu, harmless: /(?<![\p{L}\p{N}])(?:parol[ae]|punt[oi]|tratt[oi]|element[oi]|dat[oi]) chiav[ei](?![\p{L}\p{N}])/giu }),
+});
 const ENV_SHIFT_FORM = "KLACKS_S1_SHIFT_FORM";
 const FORM_FAST_FACTOR = 6;
 const LLM_FAST_FACTOR = 24;
@@ -171,6 +182,21 @@ const CUSTOMER_SEARCH_SETTLE_MS = 600;
 const SPINNER_POLL_MS = 100;
 const SEL_GLOBAL_SPINNER = "app-spinner-wrapper app-spinner";
 const CUSTOMER_APPLY_WAIT_MS = 2000;
+const ANSWER_TERM_RADIUS = 60;
+const PAGE_TERM_RADIUS = 40;
+const QUALIFICATIONS_API = "/api/backend/Qualification/GetQualificationList?activeIndustriesOnly=true";
+const STAGE_NAME_LANGUAGE = "de";
+const qualificationRow = (id) => `label#stand-in-create-qualification-${id}`;
+
+/** The old term of the culture in the text, with `radius` characters around it, or null; harmless phrases are blanked first so the index stays that of the text. */
+export function oldTermIn(culture, text, radius) {
+  const rule = OLD_TERMS[culture];
+  if (!rule) throw new Error(`no old term for the culture "${culture}" (${Object.keys(OLD_TERMS).join(", ")})`);
+  const source = String(text ?? "");
+  const blanked = rule.harmless ? source.replace(rule.harmless, (phrase) => " ".repeat(phrase.length)) : source;
+  const match = blanked.match(rule.term);
+  return match ? source.slice(Math.max(0, match.index - radius), match.index + match[0].length + radius).replace(/\s+/g, " ") : null;
+}
 
 const pauseOf = (take, beat) => take.page.waitForTimeout(take.script.beats[beat]);
 const oneLine = (text) => String(text ?? "").replace(/\s+/g, " ").trim();
@@ -216,6 +242,16 @@ async function checkFreshStage(take, data) {
   if (worksIn(data, D.PERIOD.from, D.PERIOD.until).some(isFairWork)) throw new Error("the real December already holds fair works");
   report.stage = { employees: data.clients.length, customerId: customer.id };
   return customer;
+}
+
+/** The pull-down shows the qualification names in the app language (en "Event Security"), so the rows are found by the id the API returns for the German stage name. */
+async function stageQualificationIds(take) {
+  const list = (await take.api.json(QUALIFICATIONS_API)) ?? [];
+  return S1_STAND_INS.qualifications.map((name) => {
+    const found = list.find((qualification) => qualification.name?.[STAGE_NAME_LANGUAGE] === name && !qualification.isDeleted);
+    if (!found) throw new Error(`the qualification "${name}" is missing - use a fresh copy of klacks_marketing_security_bern_s3`);
+    return { name, id: found.id };
+  });
 }
 
 /** Row slider at its overview value, the splitter at the height of the script, the columns moved so the fair days stand in the frame. */
@@ -331,7 +367,7 @@ async function typeField(take, selector, text) {
   await field.pressSequentially(text, { delay: TYPE_DELAY_MS });
 }
 
-/** Beat ask: the chat panel opens, the prompt is typed, the answer must come from both knowledge skills and must not use the old term "Key". */
+/** Beat ask: the chat panel opens, the prompt is typed, the answer must come from both knowledge skills and must not use the old term of the culture (OLD_TERMS). */
 async function askKlacksy(take, ctx) {
   const { page, mouse, report, script, captions } = take;
   await mouse.clickLocator(page.locator(S.SEL_ASSISTANT_BUTTON), MOVE.normal);
@@ -344,10 +380,8 @@ async function askKlacksy(take, ctx) {
   const called = new Set(turn.calls.map((call) => call.name));
   const missing = KNOWLEDGE_SKILLS.filter((skill) => !called.has(skill));
   if (missing.length > 0) flag(report, `Klacksy did not call ${missing.join(", ")} (calls: ${[...called].join(", ") || "none"})`);
-  const answer = oneLine(turn.content);
-  const oldTerm = answer.match(OLD_TERM);
-  report.chatOldTerm = oldTerm ? answer.slice(Math.max(0, oldTerm.index - 60), oldTerm.index + 60) : null;
-  if (oldTerm) flag(report, `Klacksy's answer uses the old term: "...${report.chatOldTerm}..."`);
+  report.chatOldTerm = oldTermIn(take.culture, oneLine(turn.content), ANSWER_TERM_RADIUS);
+  if (report.chatOldTerm) flag(report, `Klacksy's answer uses the old term: "...${report.chatOldTerm}..."`);
   await readAnswerFromTop(take);
   await mouse.clickLocator(page.locator(SEL_ASSISTANT_CLOSE), MOVE.normal);
   await page.locator(SEL_ASSISTANT_INPUT).waitFor({ state: "hidden", timeout: S.READY_TIMEOUT_MS }).catch(() => {});
@@ -355,12 +389,12 @@ async function askKlacksy(take, ctx) {
   ctx.chatDone = true;
 }
 
-/** The visible page must not show the old term "Key" (Ui term since 1.0.63: "Vorläufige Dienste"). */
+/** The visible page must not show the old term of the culture (OLD_TERMS; Ui term since 1.0.63: "Vorläufige Dienste" and its translations). */
 async function checkNoOldTerm(take, label) {
   const text = await take.page.evaluate(() => document.body.innerText);
-  const match = text.match(OLD_TERM);
-  (take.report.oldTermChecks ??= []).push({ label, found: match ? text.slice(Math.max(0, match.index - 40), match.index + 40).replace(/\s+/g, " ") : null });
-  if (match) flag(take.report, `the page shows the old term "Key" at "${label}"`);
+  const found = oldTermIn(take.culture, text, PAGE_TERM_RADIUS);
+  (take.report.oldTermChecks ??= []).push({ label, found });
+  if (found) flag(take.report, `the page shows the old term at "${label}": "...${found}..."`);
 }
 
 /** The chat scrolls to the end of the answer; the answer is shown from its first line and then scrolled down slowly, as a reader would. */
@@ -664,7 +698,7 @@ async function createStandIns(take, ctx) {
   await count.pressSequentially(String(S1_STAND_INS.count), { delay: TYPE_DELAY_MS });
   if ((await count.inputValue()) !== String(S1_STAND_INS.count)) throw new Error(`the count field holds "${await count.inputValue()}" instead of ${S1_STAND_INS.count}`);
   await typeField(take, SEL_STAND_IN_PATTERN, S1_STAND_INS.pattern);
-  await pickQualifications(take);
+  await pickQualifications(take, ctx);
   await parkOn(take, SEL_STAND_IN_TITLE);
   await pauseOf(take, "standInForm");
   const created = waitPost(page, STAND_INS_PATH);
@@ -697,13 +731,13 @@ async function createStandIns(take, ctx) {
  * reaches about 120 px below the dialog and covers its footer, so the cursor stays on the rows inside the dialog), ticked, and the pull-down is closed again with its toggle, so the
  * closed state shows the symbols. A fix of the pull-down (compact rows, scroll area, search) is planned for the next release.
  */
-async function pickQualifications(take) {
+async function pickQualifications(take, ctx) {
   const { page, mouse, report } = take;
   await mouse.clickLocator(page.locator(SEL_QUALIFICATIONS), MOVE.short);
   await page.locator(SEL_QUALIFICATIONS_MENU).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  for (const name of S1_STAND_INS.qualifications) {
-    const row = page.locator(SEL_QUALIFICATION_ROW).filter({ hasText: name }).first();
-    if ((await row.count()) === 0) throw new Error(`the qualification "${name}" is not offered`);
+  for (const { name, id } of ctx.qualifications) {
+    const row = page.locator(qualificationRow(id));
+    if ((await row.count()) === 0) throw new Error(`the qualification "${name}" (${id}) is not offered`);
     await row.evaluate((element) => element.scrollIntoView({ block: "start" }));
     await page.waitForTimeout(FORM_SCROLL_SETTLE_MS);
     const box = row.locator(SEL_QUALIFICATION_CHECKBOX);
@@ -876,7 +910,9 @@ export async function takeScenarioPlaceholders(take) {
   const decemberFilter = realFilter(first.filter);
   const data = await api.schedule(decemberFilter);
   const customer = await checkFreshStage(take, data);
-  const ctx = { decemberFilter, customer, planBefore: worksIn(data, D.PERIOD.from, D.PERIOD.until).map(semanticKey).sort() };
+  const qualifications = await stageQualificationIds(take);
+  report.stageQualifications = qualifications;
+  const ctx = { decemberFilter, customer, qualifications, planBefore: worksIn(data, D.PERIOD.from, D.PERIOD.until).map(semanticKey).sort() };
   await orderRows(take, data);
   await openSchedule(page, options);
   await useRowOrder(take);

@@ -3,8 +3,8 @@
 /**
  * Story take of the clip "Der Dezember steht" (series Monatsplanung, security demo Bern, lib/security-demo.mjs). It needs a throw-away copy of the stage database
  * klacks_marketing_security_bern_m3 (the accept replaces December, so the master is never recorded on) and --group-id of "Bern Objektschutz".
- * security-month-plan (1280x720): the cut page of the 24-hour object order shows its three shifts; the schedule of December opens with the slider at 50 and the shift
- * area collapsed so all ten rows fit. Detail stretches raise the row slider of the app to 100 in the picture (cursor at the slider, arrow keys) and scroll to their rows: text
+ * security-month-plan (1280x720): the recording starts on the schedule of December (the cut page of the 24-hour object order is no longer shown, owner 2026-11-05); it opens
+ * with the slider at 50 and the shift area collapsed so all ten rows fit. Detail stretches raise the row slider of the app to 100 in the picture (cursor at the slider, arrow keys) and scroll to their rows: text
  * at 50 % is not readable at 1280 px even under a 2x crop. The take shows the guaranteed hours at 100, back at 50 the planning commands are switched on and the end of the month shows the
  * booked vacation; the AutoWizard button (never the chat) plans the month, time-compressed with the badge; the proposal opens as a scenario, the take shows the vacation and the
  * commands that stayed at 100 (Mia's FREE day, then the vacation rows), switches the commands off (a day with work and command needs a higher row), the planned rows with their hours,
@@ -29,7 +29,6 @@ import { showAvailabilityPage } from "./mails-takes.mjs";
 export const VIDEO_SECURITY_MONTH_PLAN = "security-month-plan";
 export const SECURITY_VIDEOS = [VIDEO_SECURITY_MONTH_PLAN];
 export const SECURITY_MONTH_PLAN_CUES = Object.freeze({
-  cut: "cut",
   team: "team",
   targets: "targets",
   availability: "availability",
@@ -48,8 +47,6 @@ export const SECURITY_MONTH_PLAN_CUES = Object.freeze({
 export const SECURITY_MONTH_PLAN_FINAL_HOLD_MS = 3500;
 export const SECURITY_VIEWPORT = Object.freeze({ width: 1280, height: 720 });
 
-const CUT_ROUTE = "/workplace/cut-shift";
-const SEL_CUT_ROWS = "app-cut-shift-table tbody tr";
 const SEL_WIZARD_BUTTON = "#schedule-wizard-btn";
 const SEL_WIZARD_DROPDOWN = ".wizard-dropdown";
 const SEL_COMMANDS_TOGGLE = "#schedule-commands-toggle";
@@ -78,14 +75,12 @@ const FAST_FACTOR_TRAVEL = 8;
 const ENV_ACCEPT_GAP = "KLACKS_SECURITY_ACCEPT_GAP";
 const TEAM_SIZE = 10;
 const PLANNED_SHIFTS = 6;
-const CUT_ROWS_PER_PART = 2;
 const VACATION_FIRST_ROW_NAME = "Amir";
 const WINDOW_ROW_NAME = "Mia";
 const BLOCKED_ROW_NAME = "Priya";
 const HOVER_CELL_X_PX = 45;
 const HOVER_WIGGLE_PX = 2;
 const HOVER_WIGGLE_STEPS = 3;
-const CUT_PARTS = 3;
 const VIEWPORT_OVERSHOOT_PX = 40;
 const KEY_ARROW_RIGHT = "ArrowRight";
 const SLIDER_STEPS_TO_DETAIL = 5;
@@ -98,7 +93,7 @@ const SAVE_TIMEOUT_MS = 30000;
 const BANNER_TIMEOUT_MS = 60000;
 const HTTP_ERROR_FIRST = 400;
 const SEL_DANGER_TOAST = "app-toasts ngb-toast.bg-danger";
-const BEAT = { open: 600, cut: 4500, team: 2200, slider: 500, targets: 3200, availability: 800, toggle: 400, wishes: 3200, run: 1000, proposal: 2400, mia: 1500, free: 3000, blocked: 3500, vacation: 3000, scrolled: 500, filled: 3500, overview: 2200, summary: 4000, closed: 400, acceptLead: 800, tooltip: 3000 };
+const BEAT = { team: 2200, slider: 500, targets: 3200, availability: 800, toggle: 400, wishes: 3200, run: 1000, proposal: 2400, mia: 1500, free: 3000, blocked: 3500, vacation: 3000, scrolled: 500, filled: 3500, overview: 2200, summary: 4000, closed: 400, acceptLead: 800, tooltip: 3000 };
 const MOVE = { short: 400, normal: 650 };
 
 const log = (...args) => console.log("  ", ...args);
@@ -433,20 +428,14 @@ export async function takeSecurityMonthPlan(take) {
   await checkStage(take, site);
   const { filter } = await openSchedule(page, options);
   const { decemberFilter, memberIds, vacationRow, windowRow, blockedRow } = await checkDecember(take, site, filter);
-  const orderId = await sealedObjectOrderId(api);
-  await page.goto(`${options.uiUrl}${CUT_ROUTE}/${orderId}`, { timeout: S.NAV_TIMEOUT_MS, waitUntil: "domcontentloaded" });
-  await page.locator(SEL_CUT_ROWS).nth(CUT_PARTS * CUT_ROWS_PER_PART - 1).waitFor({ state: "visible", timeout: S.READY_TIMEOUT_MS });
-  await page.waitForTimeout(BEAT.open);
+  await sealedObjectOrderId(api);
   const ctx = { created: [], reassigned: [], acceptRequests: 0, scheduleTokens: [], realIds: new Set(), originalClient: new Map() };
   trackNetwork(take, ctx);
   trackHttpErrors(take);
 
   await recorder.start();
   try {
-    await captions.show(cues.cut);
-    await page.waitForTimeout(BEAT.cut);
     await recorder.beginFast(CUT);
-    await captions.hide();
     await openSchedule(page, options);
     await fitAllRows(take);
     await watchToasts(page);

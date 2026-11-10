@@ -4,16 +4,21 @@
 # Records ONE clip of the series Monatsplanung / Szenarien in ONE language against a released Klacks (default 1.0.55) and builds the finished video into Klacks.MediaArchive.
 #   clip  m1  Ferienwunsch   monthplan-wishes      master klacks_marketing_security_bern_m1   Monatsplanung
 #         m2  Keywords       monthplan-commands    master klacks_marketing_security_bern_m2   Monatsplanung
-#         m3  Monat          security-month-plan   master klacks_marketing_security_bern_m3   Monatsplanung
+#         m3  Monat          security-month-plan   master klacks_marketing_security_bern_m3   Monatsplanung   (monthplan-demo/seed-m3-availability.sql runs on the copy after the API migrated it;
+#              the take starts on the schedule, the cut page is no longer recorded)
 #         s0  Szenarien      scenario-variants     master klacks_marketing_security_bern_s1   Szenarien
-#         s0v2 Szenarien v2  scenario-variants   master klacks_marketing_security_bern_s4   Szenarien   (German only; bern_s1 migrated by 1.0.63 and corrected by scenario-keys-demo/seed-s0-rest-days.mjs:
+#         s0v2 Szenarien v2  scenario-variants   master klacks_marketing_security_bern_s4   Szenarien   (de, en, fr, it; bern_s1 migrated by 1.0.63 and corrected by scenario-keys-demo/seed-s0-rest-days.mjs:
 #              empty error list in the real December; variant B created in the picture and accepted; 176 migrations; the archive folder holds no s0 file any more, KLACKS_OUT_VERSION=2)
+#         r2  Eine Woche krank replacement-r2 master klacks_marketing_security_biel_r2   Replacement (group "Biel Objektschutz"; the master holds 170 migrations, a newer release migrates the
+#              copy at start: KLACKS_ALLOW_MIGRATION_DRIFT=1; seed-security-demo.mjs --site biel --stage r2 runs on the copy before the take (it adds the open Friday slot,
+#              the master stays unchanged); the German v4 was recorded by hand, en/fr/it take its version)
 #         s1  Keys           scenario-keys         master klacks_marketing_security_bern_s2   Szenarien   (KLACKS_S1_WIZARD=1 records scenario-keys-wizard, the take with the AutoWizard beat)
-#         s1v2 Keys+Platzhalter scenario-placeholders master klacks_marketing_security_bern_s3 Szenarien  (Klacksy explains, key "Messe" and 8 placeholders created in the picture, AutoWizard; German only,
+#         s1v2 Keys+Platzhalter scenario-placeholders master klacks_marketing_security_bern_s3 Szenarien  (Klacksy explains, key "Messe" and 8 placeholders created in the picture, AutoWizard;
 #              same stem klacks-szenarien-s1 as s1: KLACKS_NEW_VERSION=1 writes the next version next to v1; expects 176 migrations ending with 20261106000000_AddAnalyseScenarioSoftKeywordPlan)
 #         s1v3 Vorläufige Dienste+Platzhalter, the same take, master and recipe as s1v2, rebuilt for the Ui of 1.0.63 (menu ⋮, "Vorläufige Dienste", shift MEI typed into the form;
-#              KLACKS_S1_SHIFT_FORM=0 stores it through the API instead); same stem, KLACKS_NEW_VERSION=1 writes the next version
-#   lang  en | fr | it (de is accepted and stays as it is; KLACKS_ALLOW_DE=1 lifts the refusal); s1 exists in German only: de, en/fr/it are refused
+#              KLACKS_S1_SHIFT_FORM=0 stores it through the API instead); same stem, KLACKS_NEW_VERSION=1 writes the next version; s1v2/s1v3 run in en, fr, it (the German take is accepted,
+#              de needs KLACKS_ALLOW_DE=1); the prompt comes from the script entry of the language, the demo data stays German
+#   lang  en | fr | it (de is accepted and stays as it is; KLACKS_ALLOW_DE=1 lifts the refusal); s1 (scenario-keys) exists in German only: de, en/fr/it are refused
 #   s1 needs KLACKS_RELEASE_VERSION (no default: the release with the key fixes is named by the caller) and expects the migrations of its master (175, 20261104000000_AddWorkSplitFromWorkId,
 #   read from klacks_marketing_security_bern_s2 on 2026-11-06); a newer release that adds migrations needs KLACKS_EXPECTED_* (or a master migrated by it) - the env always wins over the clip default.
 #   s1 writes the German pattern <stem>-de-vorschau-v<n>.mp4 (KLACKS_NAME_INFIX overrides it, an empty value included).
@@ -133,24 +138,27 @@ if [ "$MODE" = stop ]; then
   exit 0
 fi
 
-[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|s0|s0v2|s1|s1v2|s1v3> <en|fr|it|de>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
+[ "$#" -eq 2 ] || { echo "usage: record-series.sh [--dry-run] <m1|m2|m3|r2|s0|s0v2|s1|s1v2|s1v3> <en|fr|it|de>   |   record-series.sh --prepare   |   record-series.sh --stop" >&2; exit 2; }
 CLIP="$(printf '%s' "$1" | tr 'A-Z' 'a-z')"
 LANGCODE="$(printf '%s' "$2" | tr 'A-Z' 'a-z')"
 
-CLIP_LAST_MIGRATION=""; CLIP_MIGRATIONS=""; GERMAN_ONLY=0; RELEASE_REQUIRED=0; INFIX_DEFAULT=""; MASTER_KEYS=""
+SEED_ON_COPY=""; SEED_SQL_ON_COPY=""; CLIP_LAST_MIGRATION=""; CLIP_MIGRATIONS=""; GERMAN_ONLY=0; RELEASE_REQUIRED=0; INFIX_DEFAULT=""; MASTER_KEYS=""
 case "$CLIP" in
   m1) VIDEO=monthplan-wishes;    MASTER=klacks_marketing_security_bern_m1; RECIPE=monthplan-recipe-m1.mjs;  RAW=gemini_generated_video_3ec1f178.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m1; DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
   m2) VIDEO=monthplan-commands;  MASTER=klacks_marketing_security_bern_m2; RECIPE=monthplan-recipe-m2.mjs;  RAW=gemini_generated_video_7d4d55e8.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m2; DARK_DEFAULT=1; TRIM_DEFAULT=decide:1.45 ;;
-  m3) VIDEO=security-month-plan; MASTER=klacks_marketing_security_bern_m3; RECIPE=monthplan-recipe-m3.mjs;  RAW=gemini_generated_video_b4401dfc.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m3; DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
+  m3) VIDEO=security-month-plan; MASTER=klacks_marketing_security_bern_m3; RECIPE=monthplan-recipe-m3.mjs;  RAW=gemini_generated_video_b4401dfc.mp4; SERIES=Monatsplanung; STEM=klacks-monatsplanung-m3; DARK_DEFAULT=0; TRIM_DEFAULT=none
+      SEED_SQL_ON_COPY="$HERE/monthplan-demo/seed-m3-availability.sql" ;;
   s0) VIDEO=scenario-variants;   MASTER=klacks_marketing_security_bern_s1; RECIPE=scenario-recipe-s0.mjs;   RAW=gemini_generated_video_7bfe3a94.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s0;    DARK_DEFAULT=0; TRIM_DEFAULT=none ;;
   s0v2) VIDEO=scenario-variants; MASTER=klacks_marketing_security_bern_s4; RECIPE=scenario-recipe-s0.mjs;   RAW=gemini_generated_video_7bfe3a94.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s0;    DARK_DEFAULT=0; TRIM_DEFAULT=none
-      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
+      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
   s1) VIDEO=scenario-keys;       MASTER=klacks_marketing_security_bern_s2; RECIPE=scenario-recipe-s1.mjs;   RAW=gemini_generated_video_9578f9f9.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s1;    DARK_DEFAULT=0; TRIM_DEFAULT=none
       CLIP_LAST_MIGRATION=20261104000000_AddWorkSplitFromWorkId; CLIP_MIGRATIONS=175; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau; MASTER_KEYS="'Messe Tagbetrieb','Messe Nachtwache'"
       if [ "${KLACKS_S1_WIZARD:-0}" = 1 ]; then VIDEO=scenario-keys-wizard; fi ;;
   s1v2|s1v3) VIDEO=scenario-placeholders; MASTER=klacks_marketing_security_bern_s3; RECIPE=scenario-recipe-s1v2.mjs; RAW=gemini_generated_video_9578f9f9.mp4; SERIES=Szenarien;      STEM=klacks-szenarien-s1;    DARK_DEFAULT=0; TRIM_DEFAULT=none
-      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; GERMAN_ONLY=1; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
-  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, s0, s0v2, s1, s1v2, s1v3)" ;;
+      CLIP_LAST_MIGRATION=20261106000000_AddAnalyseScenarioSoftKeywordPlan; CLIP_MIGRATIONS=176; RELEASE_REQUIRED=1; INFIX_DEFAULT=-vorschau ;;
+  r2) VIDEO=replacement-r2;      MASTER=klacks_marketing_security_biel_r2; RECIPE=replacement-recipe-r2.mjs; RAW=gemini_generated_video_a2b69038.mp4; SERIES=Replacement;   STEM=klacks-replacement-r2;  DARK_DEFAULT=0; TRIM_DEFAULT=none
+      GROUP_NAME="Biel Objektschutz"; RELEASE_REQUIRED=1; SEED_ON_COPY="--site biel --stage r2" ;;
+  *) die 2 "unknown clip '$CLIP' (m1, m2, m3, r2, s0, s0v2, s1, s1v2, s1v3)" ;;
 esac
 if [ "$GERMAN_ONLY" = 1 ]; then
   [ "$LANGCODE" = de ] || die 2 "clip $CLIP exists in German only (de)"
@@ -164,6 +172,7 @@ fi
 if [ "$RELEASE_REQUIRED" = 1 ] && [ -z "${KLACKS_RELEASE_VERSION:-}" ]; then die 2 "clip $CLIP needs KLACKS_RELEASE_VERSION (the release that carries its fixes; there is no default)"; fi
 EXPECTED_LAST_MIGRATION="${KLACKS_EXPECTED_LAST_MIGRATION:-${CLIP_LAST_MIGRATION:-$DEFAULT_LAST_MIGRATION}}"
 EXPECTED_MIGRATIONS="${KLACKS_EXPECTED_MIGRATIONS:-${CLIP_MIGRATIONS:-$DEFAULT_MIGRATIONS}}"
+[ "$LANGCODE" = de ] || INFIX_DEFAULT=""
 INFIX="${KLACKS_NAME_INFIX-$INFIX_DEFAULT}"
 DARK_FIX="${KLACKS_DARK_FIX:-$DARK_DEFAULT}"
 TRIM="${KLACKS_TRIM:-$TRIM_DEFAULT}"
@@ -327,6 +336,24 @@ say "API healthy after about $((i * 3)) s"
 UI_VERSION="$(curl -m 8 -sk "$API_URL/version.json" < /dev/null)"
 case "$UI_VERSION" in *"\"version\":\"$RELEASE_VERSION\""*) say "UI served by the API: $RELEASE_VERSION" ;; *) die 5 "the API does not serve the release UI (version.json: ${UI_VERSION:0:120})" ;; esac
 say "API Version endpoint: $(curl -m 8 -sk "$API_URL/api/backend/Version" < /dev/null | head -c 120)"
+
+if [ -n "$SEED_ON_COPY" ]; then
+  status seed
+  (
+    export KLACKS_API_URL="$API_URL"
+    cd "$ROOT" || exit 99
+    exec timeout 900 node tools/seed-security-demo.mjs $SEED_ON_COPY --api-url "$API_URL"
+  ) > "$RUN/seed.log" 2>&1 < /dev/null 3>&-
+  SEED_RC=$?
+  say "seed ($SEED_ON_COPY) on the copy exited with $SEED_RC: $(tail -1 "$RUN/seed.log" | head -c 200)"
+  [ "$SEED_RC" = 0 ] || die 5 "seeding the copy failed (seed.log)"
+fi
+
+if [ -n "$SEED_SQL_ON_COPY" ]; then
+  status seed
+  psql_db "$TAKEDB" -v ON_ERROR_STOP=1 -f "$(w "$SEED_SQL_ON_COPY")" > "$RUN/seed-sql.log" 2>&1 || die 5 "seeding the copy with $(basename "$SEED_SQL_ON_COPY") failed (seed-sql.log)"
+  say "seed $(basename "$SEED_SQL_ON_COPY") on the copy done"
+fi
 
 status take
 (

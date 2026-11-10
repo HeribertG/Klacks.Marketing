@@ -56,7 +56,6 @@
   },
   "security-month-plan": {
     "captions": {
-      "cut": "Immobile sorvegliato h24 in tre turni",
       "team": "Dieci persone, tempo pieno e parziale",
       "targets": "Le ore garantite vengono dal contratto",
       "availability": "Disponibile: Mia il 7–9 solo 7–15",
@@ -120,6 +119,22 @@
       "both": "Due varianti tra cui scegliere",
       "yes": "Il tuo sì: la variante B diventa il piano",
       "real": "Piano reale: Lena ha le notti"
+    }
+  },
+  "scenario-placeholders": {
+    "captions": {
+      "team": "Aiutanti: solo nei giorni della fiera",
+      "ask": "Mancano persone? Chiedi a Klacksy",
+      "explain": "Turni provvisori e segnaposto per persone",
+      "key": "Turni provvisori «Messe»: 10–13 dic.",
+      "keyShifts": "Messe Einlass: 10 persone, gio–dom",
+      "keyShiftsAll": "In più Messe Abend: 20 persone al giorno",
+      "standIns": "8 segnaposto per le persone mancanti",
+      "scenario": "Scenario con «Messe»: il piano reale resta",
+      "wizard": "Wizard: persone vere prima, poi il resto",
+      "real": "Prima i veri aiutanti",
+      "plan": "◌ I segnaposto prendono solo il resto",
+      "summary": "Tutto coperto, la conferma può arrivare"
     }
   },
   "monthplan-commands": {

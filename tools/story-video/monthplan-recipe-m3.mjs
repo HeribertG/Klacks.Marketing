@@ -5,7 +5,7 @@
  * gemini_generated_video_b4401dfc.mp4 (hand on the forehead, 13.0-19.7 s; the laptop with the spreadsheet starts at 20.0 s and stays out), a cross-fade to Klacksy in front of the
  * glowing laptop (gemini_generated_video_0dec3c09.mp4, 0.4-5 s), the live take security-month-plan-<culture> filling the frame (takes/security-takes.mjs, no chat panel),
  * the closing scene (since v2: the team comes in with their phones, m3-morning-without-clock.mp4 = gemini_generated_video_47739f2b.mp4 from 7.4 s with the wall clock painted out by
- * rohmaterial/r1-cover-wall-clock.py, arguments 7.4 10.0 322 135 52 track.json 1.2 bright; the part starts at 0.6 s, where the fill above her hair is clean, slowed to 0.6) and the end card.
+ * rohmaterial/r1-cover-wall-clock.py, arguments 7.4 10.0 322 135 52 track.json 1.2 bright; the part starts at 0.6 s, where the fill above her hair is clean, slowed to 0.5 so the closing line stays readable) and the end card.
  * Both clips besides --raw are resolved next to it. Sound: no Veo sound ever; music only under the take, as in every story clip since video 3.
  * The caption file monthplan-m3-captions.<culture>.json says what is shown: k1 the situation, k2 the request (it never says that Klacksy plans; the take presses the AutoWizard button),
  * x1 the closing line. No ZOOMS: a 2x crop of the 50 % schedule at 1280 px is not readable (measured on a test take), so the take raises the row slider of the app for its
@@ -30,7 +30,7 @@ export const VARIANTS = Object.freeze({
       Object.freeze({ clip: "gemini_generated_video_0dec3c09.mp4", fade: OPENING_FADE_SECONDS, from: 0.4, to: 5, speed: 1 }),
     ]),
     morningClip: "m3-morning-without-clock.mp4",
-    morning: Object.freeze({ from: 0.6, to: 2.55, speed: 0.6, captionFrom: 0.4 }),
+    morning: Object.freeze({ from: 0.6, to: 2.58, speed: 0.5, captionFrom: 0.4 }),
     backgroundStillAt: 18,
     captionKeys: Object.freeze(["k1", "k2", "x1"]),
     windows: Object.freeze({ k1: Object.freeze([0.3, 6.2]), k2: Object.freeze([6.6]) }),
