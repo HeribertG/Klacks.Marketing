@@ -114,6 +114,7 @@ public class LocalizedVideoCatalogTests
         DemoVideo.ExpensesVideoName.ShouldBe("expenses");
         DemoVideo.CorrectionVideoName.ShouldBe("correction");
         DemoVideo.ReplacementVideoName.ShouldBe("replacement");
+        DemoVideo.CoverAbsenceVideoName.ShouldBe("cover-absence");
         DemoVideo.HoursAdjustmentVideoName.ShouldBe("hours-adjustment");
         DemoVideo.Timeline24hVideoName.ShouldBe("timeline-24h");
         DemoVideo.TimelineDayDragDropVideoName.ShouldBe("timeline-day-dragdrop");

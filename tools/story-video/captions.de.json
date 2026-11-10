@@ -7,7 +7,7 @@
     "k4": "Darf ich vorstellen: Klacksy, dein elektronischer Mitarbeiter.",
     "x1": "Für Dienstpläne gibt es Klacks. Er hilft dir dabei.",
     "y1": "Rot: KU = Krankheit/Unfall. Die Person fällt aus.",
-    "y2": "Orange: ABL = Ablösung. Ein anderer übernimmt."
+    "y2": "Nach dem Übernehmen steht der ganze Dienst bei der Ersatzperson."
   },
   "endcard": {
     "tagline": "Personalplanung mit Klacksy",
@@ -17,7 +17,7 @@
   "abbreviations": {
     "absence": "KU",
     "absenceName": "Krankheit/Unfall",
-    "replacement": "ABL",
     "verifiedOnTake": true
-  }
+  },
+  "take": {"seconds":34.44,"windows":{"y1":{"from":21.6,"to":24.9},"y2":{"from":24.9,"to":34.44}},"source":"klacks-take-ausfall-decken-de-v3-vorschau.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.63, 1280x800, recorded 2026-11-10)","redCellVisibleSeconds":[22,24.6],"movedCellVisibleSeconds":[25.6,34.44],"acceptedPlanSeconds":[31.8,34.44],"verifiedOnTake":true}
 }

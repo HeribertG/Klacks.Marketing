@@ -50,7 +50,7 @@ public class DemoVideoCarouselRenderingTests
         PillTitles(klacksy).ShouldBe(DemoCarousels.Klacksy.Videos.Select(video => video.TitleKey));
         rules.ShouldContain("aria-label=\"1/4\"");
         scenarios.ShouldContain("aria-label=\"1/4\"");
-        daily.ShouldContain("aria-label=\"1/6\"");
+        daily.ShouldContain("aria-label=\"1/7\"");
         containers.ShouldContain("aria-label=\"1/5\"");
         specialShifts.ShouldContain("aria-label=\"1/5\"");
         klacksy.ShouldContain("aria-label=\"1/4\"");

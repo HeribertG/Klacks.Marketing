@@ -36,6 +36,7 @@ public class DemoVideoCarouselMarkupTests
         "ExpensesVideoName",
         "CorrectionVideoName",
         "ReplacementVideoName",
+        "CoverAbsenceVideoName",
         "HoursAdjustmentVideoName",
         "Timeline24hVideoName",
         "TimelineDayDragDropVideoName",
@@ -46,6 +47,7 @@ public class DemoVideoCarouselMarkupTests
         "expensesDemo",
         "correctionDemo",
         "replacementDemo",
+        "coverAbsenceDemo",
         "hoursAdjustmentDemo",
         "timeline24hDemo",
         "timelineDayDragDropDemo",
@@ -249,7 +251,7 @@ public class DemoVideoCarouselMarkupTests
     }
 
     [Test]
-    public void Daily_operations_carousel_lists_the_six_everyday_videos_in_the_agreed_order_with_matching_text_keys()
+    public void Daily_operations_carousel_lists_the_seven_everyday_videos_in_the_agreed_order_with_matching_text_keys()
     {
         var definition = DemoCarousels.DailyOperations;
 

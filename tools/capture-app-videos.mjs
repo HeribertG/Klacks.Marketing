@@ -9,7 +9,8 @@
  * Every take is guarded against the dev-server error overlay (<vite-error-overlay>, lib/dev-overlay-guard.mjs): checked before the take,
  * polled while it runs, checked at every mouse step / recorder start / fast-forward and after the take; a sighting aborts the take with a
  * clear error, marks the report not publishable (report.devOverlay) and nothing is encoded.
- * The work-entry takes (expenses, correction, hours-adjustment, replacement) live in takes/work-entry-takes.mjs, the container takes
+ * The work-entry takes (expenses, correction, hours-adjustment, replacement) live in takes/work-entry-takes.mjs, the carousel take cover-absence (Ausfall decken, the accept
+ * moves the work to the stand-in; only on a throw-away copy of the demo database with KLACKS_COVER_ABSENCE_THROWAWAY=1) in takes/cover-absence-takes.mjs, the container takes
  * (container-fill, container-split, container-pause; demo data from seed-container-demo.mjs) in takes/container-takes.mjs, the timeline takes
  * (timeline-24h, timeline-day-dragdrop) in takes/timeline-takes.mjs, the route takes (container-autofill, container-route; demo data from
  * seed-route-demo.mjs, route PDF printout rendered with pdfjs-dist) in takes/route-takes.mjs, the shift-feature takes (shift-sporadic,
@@ -56,7 +57,7 @@
  * The ERP take erp-import (clip "Bestellungen aus dem ERP, ohne Abtippen") lives in takes/erp-takes.mjs; it needs the native recording backend of
  * erp-demo/start-erp-recording-api.ps1 on a throw-away copy of klacks_marketing_security_bern_m2, records at 1280x720 with toasts visible and reads its
  * chat messages from capture-app-videos.scripts.json; its header states the publishable criterion.
- * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands,scenario-variants,scenario-keys,scenario-keys-wizard,scenario-placeholders  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
+ * CLI: --videos rest-conflict,rule-collision,rule-consecutive-days,rule-holiday-work,klacksy-plans-week,klacksy-groups-address,klacksy-groups-qualification,klacksy-groups-mixed,expenses,correction,hours-adjustment,replacement,cover-absence,container-fill,container-split,container-pause,timeline-24h,timeline-day-dragdrop,container-autofill,container-route,shift-sporadic,shift-time-range,shift-sum-employees,shift-quantity,shift-qualification,scenario-create,scenario-autowizard,scenario-compare,scenario-rule-violation,simple-klacksy-call,simple-plans-week,simple-cover-absence,simple-planning-progress,simple-order-review,spitex-orders-tour,spitex-tour-finish,security-month-plan,replacement-r1,monthplan-commands,scenario-variants,scenario-keys,scenario-keys-wizard,scenario-placeholders  --cultures de,ar,ja  --ffmpeg <path>  --frames-dir <dir>
  *      --test-take (never write into wwwroot)  --base-url  --api-url  --group-id  --headed  --no-encode
  *      --encode-publishable-only (a take that missed its outcome keeps only its frames and report; saves minutes per failed attempt)
  * Env: KLACKS_VIDEO_MAX_MB (size budget per encoded file, default 1.5 for the site videos; story takes that are cut again may use more),
@@ -149,6 +150,7 @@ import {
   VIDEO_SIMPLE_COVER_ABSENCE,
   VIDEO_SIMPLE_PLANNING_PROGRESS,
 } from "./takes/simple-story-takes.mjs";
+import { COVER_ABSENCE_CSS, COVER_ABSENCE_TAKE_RUNNERS, COVER_ABSENCE_VIDEOS, VIDEO_COVER_ABSENCE } from "./takes/cover-absence-takes.mjs";
 import {
   ORDER_REVIEW_INIT_SCRIPTS,
   ORDER_REVIEW_TAKE_RUNNERS,
@@ -241,7 +243,7 @@ const ENV_FRAMES_DIR = "KLACKS_VIDEO_FRAMES_DIR";
 const DEFAULT_FRAMES_DIR = path.join(os.tmpdir(), "klacks-video-frames");
 
 const VIDEO_KLACKSY_PLANS_WEEK = "klacksy-plans-week";
-const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS, ...SCENARIO_KEYS_VIDEOS, VIDEO_SCENARIO_PLACEHOLDERS, ...MONTHPLAN_WISHES_VIDEOS, ...MAILS_VIDEOS, ...ERP_VIDEOS];
+const ALL_VIDEOS = [...RULE_VIDEOS, VIDEO_KLACKSY_PLANS_WEEK, ...KLACKSY_GROUPING_VIDEOS, ...WORK_ENTRY_VIDEOS, ...COVER_ABSENCE_VIDEOS, VIDEO_CONTAINER_FILL, VIDEO_CONTAINER_SPLIT, VIDEO_CONTAINER_PAUSE, ...TIMELINE_VIDEOS, ...ROUTE_VIDEOS, ...SHIFT_FEATURE_VIDEOS, ...SCENARIO_VIDEOS, ...SIMPLE_VIDEOS, ...SIMPLE_STORY_VIDEOS, ...ORDER_REVIEW_VIDEOS, ...SPITEX_VIDEOS, ...SECURITY_VIDEOS, ...REPLACEMENT_VIDEOS, VIDEO_REPLACEMENT_R2, ...MONTHPLAN_COMMANDS_VIDEOS, VIDEO_SCENARIO_VARIANTS, ...SCENARIO_KEYS_VIDEOS, VIDEO_SCENARIO_PLACEHOLDERS, ...MONTHPLAN_WISHES_VIDEOS, ...MAILS_VIDEOS, ...ERP_VIDEOS];
 const DEFAULT_CULTURES = ["de", "ar", "ja"];
 
 const CHAT_VIEWPORT = { width: 1000, height: 720 };
@@ -275,7 +277,7 @@ const CHAT_VIDEO_NOISE_CSS = `${VIDEO_NOISE_CSS}
   app-toasts { display: none !important; }
 `;
 
-// The mails take, the month plan take (M3) and the replacement takes R1/R2 (tooltip of a moved work) show Klacks' own cell tooltip (app-tooltip, the availability hours); every other tooltip stays hidden.
+// The mails take, the month plan take (M3), the replacement takes R1/R2 and the cover-absence takes (tooltip of a moved work) show Klacks' own cell tooltip (app-tooltip, the availability hours); every other tooltip stays hidden.
 const MAILS_VIDEO_NOISE_CSS = `
   :not(app-tooltip) > .tooltip, .mat-mdc-tooltip, ngb-tooltip-window, .badge-mail, .mail-badge, app-company-clock-warning { display: none !important; }
   * { caret-color: transparent !important; }
@@ -564,8 +566,13 @@ const TAKES = {
     period: NOVEMBER, viewport: CHAT_VIEWPORT, css: CHAT_VIDEO_NOISE_CSS, run: takeKlacksyPlansWeek,
     needsScript: true, captionCues: Object.values(SIMPLE_PLANS_WEEK_CUES), finalHoldMs: SIMPLE_PLANS_WEEK_FINAL_HOLD_MS,
   },
+  [VIDEO_COVER_ABSENCE]: {
+    period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: `${MAILS_VIDEO_NOISE_CSS}
+${COVER_ABSENCE_CSS}`, run: COVER_ABSENCE_TAKE_RUNNERS[VIDEO_COVER_ABSENCE],
+    needsScript: true,
+  },
   [VIDEO_SIMPLE_COVER_ABSENCE]: {
-    period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: `${CHAT_VIDEO_NOISE_CSS}
+    period: OCTOBER, viewport: WORK_ENTRY_VIEWPORT, css: `${MAILS_VIDEO_NOISE_CSS}
 ${SIMPLE_STORY_CSS[VIDEO_SIMPLE_COVER_ABSENCE]}`, run: SIMPLE_STORY_TAKE_RUNNERS[VIDEO_SIMPLE_COVER_ABSENCE],
     needsScript: true, captionCues: Object.values(SIMPLE_COVER_ABSENCE_CUES),
   },

@@ -5,9 +5,12 @@
  * simple-cover-absence ("Ausfall decken", about 20 s): right-click on an October work of the demo group, "Ausfall decken...", the
  * recovery dialog is pre-filled with employee and day, the absence type from capture-app-videos.scripts.json is chosen, "Vorschlag
  * erstellen" shows the review step (covered / open, tier, stand-in), "Fertig" leaves the proposal selected as a scenario in the plan,
- * then the stand-in's row is scrolled into view. The dialog never accepts; the take never clicks Accept either. The escalation
+ * then the stand-in's row is scrolled into view. The dialog never accepts; by default the take never clicks Accept either. The escalation
  * roster stays off (asserted on the request body), the created scenario is deleted afterwards and October of the demo group must
  * still hold its 118 works, no real absence and no active scenario. Phone numbers in the review step are blurred (privacy).
+ * With KLACKS_STORY_ACCEPT=1 (only together with KLACKS_COVER_ABSENCE_THROWAWAY=1, a throw-away copy of the demo database) the banner
+ * accepts the scenario at the end and the take closes on the real plan: the stand-in's work with the moved icon and the tooltip naming
+ * the absent person; the plan is then changed, so nothing is restored and the copy must be replaced before the next take.
  * simple-planning-progress ("Planung mit Fortschritt", about 18 s): the AutoWizard button plans the week 02.-08.11. of the weekly
  * group "Winterthur Nord" (lib/scenario-week-demo.mjs); the thin progress line under the schedule header stays visible while the run
  * is in progress (first seconds in real time, the rest time-compressed with badge), the finished proposal is shown as a scenario and
@@ -58,7 +61,8 @@ import {
   stopJob,
   waitForJob,
 } from "../lib/scenario-demo.mjs";
-import { openPlanWeek } from "./scenario-takes.mjs";
+import { decideViaBanner, openPlanWeek } from "./scenario-takes.mjs";
+import { hoverMovedNote } from "./replacement-takes.mjs";
 
 export const VIDEO_SIMPLE_COVER_ABSENCE = "simple-cover-absence";
 export const VIDEO_SIMPLE_PLANNING_PROGRESS = "simple-planning-progress";
@@ -106,6 +110,9 @@ const SCROLL_GESTURE_PAUSE_MS = 60;
 const MAX_SCROLL_TICKS = 40;
 const REVIEW_POINTER_RATIO = 0.7;
 const PARK_OFFSET = { x: 70, y: 60 };
+const ACCEPT_ENV = "KLACKS_STORY_ACCEPT";
+const THROWAWAY_ENV = "KLACKS_COVER_ABSENCE_THROWAWAY";
+const CUT = Number.POSITIVE_INFINITY;
 
 const SAVE_TIMEOUT_MS = 60000;
 const BANNER_TIMEOUT_MS = 60000;
@@ -133,7 +140,7 @@ const dayIndexOf = (filter, isoDate) => Math.round((Date.parse(`${isoDate}T00:00
  * Picks a weekday work in the upper visible rows that is the only entry of its employee on that day and is not locked, so the
  * right-click hits exactly this work and the absence replaces one shift.
  */
-function pickAbsentWork(data, filter) {
+export function pickAbsentWork(data, filter) {
   const rowOf = new Map(data.clients.map((client, index) => [client.id, index]));
   const perClientDay = new Map();
   for (const entry of data.entries) {
@@ -156,7 +163,7 @@ function pickAbsentWork(data, filter) {
 const realBreaksIn = (data, range) => data.entries.filter((entry) => entry.entryType === BREAK_ENTRY_TYPE
   && dateKey(entry.entryDate) >= range.from && dateKey(entry.entryDate) <= range.until);
 
-async function visibleGridBand(page) {
+export async function visibleGridBand(page) {
   const grid = await gridBox(page);
   return { top: grid.y + GRID_HEADER_HEIGHT_PX, bottom: grid.y + grid.height, wheelPoint: { x: grid.x + grid.width / HALF, y: grid.y + grid.height / HALF } };
 }
@@ -167,7 +174,7 @@ async function visibleGridBand(page) {
  * Loading the scenario resets the scroll position, so the take scrolls once before the recording and once after "Fertig".
  * @param pauseMs - pause between two wheel events (short inside the recording, so the scroll reads as one gesture)
  */
-async function scrollRowToTop(page, row, pauseMs) {
+export async function scrollRowToTop(page, row, pauseMs) {
   const band = await visibleGridBand(page);
   for (let tick = 0; tick < MAX_SCROLL_TICKS; tick++) {
     const box = (await rowBoxes(page))[row];
@@ -180,7 +187,7 @@ async function scrollRowToTop(page, row, pauseMs) {
 }
 
 /** Scrolls down (or up) one sub-row per wheel event until the cell text of the employee row is visible; the stand-in row of the proposal. */
-async function scrollUntilRowTextVisible(page, row, pauseMs) {
+export async function scrollUntilRowTextVisible(page, row, pauseMs) {
   const band = await visibleGridBand(page);
   for (let tick = 0; tick < MAX_SCROLL_TICKS; tick++) {
     if (await rowTextVisible(page, row)) return;
@@ -193,7 +200,7 @@ async function scrollUntilRowTextVisible(page, row, pauseMs) {
 }
 
 /** True when the first sub-row of the employee row (where the cell text is drawn) lies completely inside the visible grid band. */
-async function rowTextVisible(page, row) {
+export async function rowTextVisible(page, row) {
   const band = await visibleGridBand(page);
   const box = (await rowBoxes(page))[row];
   return Boolean(box) && box.top >= band.top && box.top + SUB_ROW_HEIGHT_PX <= band.bottom;
@@ -203,6 +210,8 @@ async function takeSimpleCoverAbsence(take) {
   const { page, api, options, recorder, mouse, report, script, captions, viewport, scale } = take;
   if (!script?.absenceName) throw new Error(`the ${report.video} script for ${take.culture} lacks absenceName in capture-app-videos.scripts.json`);
   if (!captions) throw new Error(`${VIDEO_SIMPLE_COVER_ABSENCE} needs captions`);
+  const acceptAtEnd = process.env[ACCEPT_ENV] === "1";
+  if (acceptAtEnd && process.env[THROWAWAY_ENV] !== "1") throw new Error(`${ACCEPT_ENV}=1 changes the plan: set ${THROWAWAY_ENV}=1 on a throw-away copy of the demo database`);
   const active = await activeScenarios(api, options.groupId);
   if (active.length > 0) throw new Error(`${active.length} active scenario(s) exist for the demo group - run reset-scenario-demo.mjs`);
   const { filter, data } = await openSchedule(page, options);
@@ -295,20 +304,42 @@ async function takeSimpleCoverAbsence(take) {
     await page.waitForTimeout(BEAT.scrolled);
     report.standInRowVisible = await rowTextVisible(page, report.standInRow);
     if (!report.absentRowVisible || !report.standInRowVisible) flag(report, `absent row ${pick.row} visible: ${report.absentRowVisible}, stand-in row ${report.standInRow} visible: ${report.standInRowVisible}`);
+    if (acceptAtEnd) {
+      await page.waitForTimeout(BEAT.decide);
+      await decideViaBanner(take, "accept", { cutReload: true });
+      report.accepted = true;
+      await recorder.beginFast(CUT);
+      const realBand = await visibleGridBand(page);
+      await page.mouse.move(realBand.wheelPoint.x, realBand.wheelPoint.y);
+      await scrollRowToTop(page, pick.row, SCROLL_TICK_PAUSE_MS);
+      await scrollUntilRowTextVisible(page, report.standInRow, SCROLL_TICK_PAUSE_MS);
+      await page.waitForTimeout(CANVAS_SETTLE_MS);
+      await recorder.endFast();
+      report.acceptedStandInRowVisible = await rowTextVisible(page, report.standInRow);
+      if (!report.acceptedStandInRowVisible) flag(report, `the stand-in row ${report.standInRow} is not visible after the accept`);
+      await hoverMovedNote(take, await cellCenter(page, report.standInRow, pick.dayIndex, isRtl), pick.client.firstName);
+    }
     await page.waitForTimeout(BEAT.finalHold);
     report.publishable = !report.failure;
   } finally {
     await recorder.stop({ posterAt: report.posterAt ?? null, crop: { x: 0, y: 0, width: viewport.width * scale, height: viewport.height * scale } });
-    const problems = [];
-    for (const id of created) await deleteScenario(api, id).catch((error) => problems.push(`delete scenario ${id}: ${error.message}`));
-    const left = await activeScenarios(api, options.groupId);
-    const after = await api.schedule(octoberFilter);
-    report.cleanup = { deletedScenarios: created.length, activeScenariosLeft: left.length, acceptRequests: report.acceptRequests ?? 0, problems };
-    report.octoberRestored = sameSnapshot(before, snapshotOf(after, OCTOBER_RANGE)) && realBreaksIn(after, OCTOBER_RANGE).length === breaksBefore;
-    if (problems.length > 0 || left.length > 0) throw new Error(`cleanup incomplete: ${problems.join("; ") || `${left.length} active scenario(s) left`} - run reset-scenario-demo.mjs`);
-    if (!report.octoberRestored) throw new Error("October differs after the take - check the demo data!");
-    if (report.acceptRequests) throw new Error(`${report.acceptRequests} accept request(s) were sent - check the demo data!`);
-    log(`deleted ${created.length} scenario(s); none active, October unchanged (${before.length} works, ${breaksBefore} real absences)`);
+    if (report.accepted) {
+      report.cleanup = { skipped: "accepted on a throw-away copy of the demo database - replace the copy before the next take", acceptRequests: report.acceptRequests ?? 0 };
+      if (report.acceptRequests !== 1) flag(report, `${report.acceptRequests ?? 0} accept request(s) were sent instead of one`);
+      report.publishable = report.publishable === true && !report.failure;
+      log("accepted on the throw-away copy; nothing restored");
+    } else {
+      const problems = [];
+      for (const id of created) await deleteScenario(api, id).catch((error) => problems.push(`delete scenario ${id}: ${error.message}`));
+      const left = await activeScenarios(api, options.groupId);
+      const after = await api.schedule(octoberFilter);
+      report.cleanup = { deletedScenarios: created.length, activeScenariosLeft: left.length, acceptRequests: report.acceptRequests ?? 0, problems };
+      report.octoberRestored = sameSnapshot(before, snapshotOf(after, OCTOBER_RANGE)) && realBreaksIn(after, OCTOBER_RANGE).length === breaksBefore;
+      if (problems.length > 0 || left.length > 0) throw new Error(`cleanup incomplete: ${problems.join("; ") || `${left.length} active scenario(s) left`} - run reset-scenario-demo.mjs`);
+      if (!report.octoberRestored) throw new Error("October differs after the take - check the demo data!");
+      if (report.acceptRequests) throw new Error(`${report.acceptRequests} accept request(s) were sent - check the demo data!`);
+      log(`deleted ${created.length} scenario(s); none active, October unchanged (${before.length} works, ${breaksBefore} real absences)`);
+    }
   }
 }
 

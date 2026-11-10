@@ -60,6 +60,7 @@ public static class DemoCarousels
             new(DemoVideo.ExpensesVideoName, "expensesDemo.title", "expensesDemo.videoLabel", "expensesDemo.caption"),
             new(DemoVideo.CorrectionVideoName, "correctionDemo.title", "correctionDemo.videoLabel", "correctionDemo.caption"),
             new(DemoVideo.ReplacementVideoName, "replacementDemo.title", "replacementDemo.videoLabel", "replacementDemo.caption"),
+            new(DemoVideo.CoverAbsenceVideoName, "coverAbsenceDemo.title", "coverAbsenceDemo.videoLabel", "coverAbsenceDemo.caption"),
             new(DemoVideo.HoursAdjustmentVideoName, "hoursAdjustmentDemo.title", "hoursAdjustmentDemo.videoLabel", "hoursAdjustmentDemo.caption"),
             new(DemoVideo.Timeline24hVideoName, "timeline24hDemo.title", "timeline24hDemo.videoLabel", "timeline24hDemo.caption"),
             new(DemoVideo.TimelineDayDragDropVideoName, "timelineDayDragDropDemo.title", "timelineDayDragDropDemo.videoLabel", "timelineDayDragDropDemo.caption"),
