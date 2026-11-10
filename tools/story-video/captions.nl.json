@@ -7,7 +7,7 @@
     "k4": "Mag ik voorstellen: Klacksy, je elektronische collega.",
     "x1": "Voor dienstroosters is er Klacks. Hij helpt je.",
     "y1": "Rood: ZO = Ziekte/Ongeval. De persoon valt uit.",
-    "y2": "Oranje: VER = Vervanging. Iemand anders neemt het over."
+    "y2": "Na het overnemen staat de hele dienst bij de vervanger."
   },
   "endcard": {
     "tagline": "Personeelsplanning met Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "ZO",
     "absenceName": "Ziekte/Ongeval",
-    "replacement": "VER",
-    "replacementName": "Vervanging",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":40.16,"windows":{"y1":{"from":25.76,"to":30.39},"y2":{"from":30.39,"to":40.16}},"source":"klacks-take-ausfall-decken-nl-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":26.06,"standInScrollSeconds":30.09,"acceptedPlanSeconds":37.14,"verifiedOnTake":true}
 }

@@ -7,7 +7,7 @@
     "k4": "Να σας συστήσω: Klacksy, ο ηλεκτρονικός σας συνεργάτης.",
     "x1": "Για βάρδιες υπάρχει το Klacks. Σας βοηθάει.",
     "y1": "Κόκκινο: ΑΑ = Ασθένεια/Ατύχημα. Το άτομο απουσιάζει.",
-    "y2": "Πορτοκαλί: ΑΝΤ = Αντικατάσταση. Κάποιος άλλος αναλαμβάνει."
+    "y2": "Μετά την αποδοχή, όλη η βάρδια περνά στον αντικαταστάτη."
   },
   "endcard": {
     "tagline": "Προγραμματισμός προσωπικού με τον Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "ΑΑ",
     "absenceName": "Ασθένεια/Ατύχημα",
-    "replacement": "ΑΝΤ",
-    "replacementName": "Αντικατάσταση",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":38.88,"windows":{"y1":{"from":24.55,"to":29.1},"y2":{"from":29.1,"to":38.88}},"source":"klacks-take-ausfall-decken-el-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":24.85,"standInScrollSeconds":28.8,"acceptedPlanSeconds":35.88,"verifiedOnTake":true}
 }

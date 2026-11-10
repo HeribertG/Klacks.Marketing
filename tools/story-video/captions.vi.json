@@ -7,7 +7,7 @@
     "k4": "Mình xin giới thiệu: Klacksy, đồng nghiệp điện tử của bạn.",
     "x1": "Đã có Klacks giúp bạn xếp ca làm việc.",
     "y1": "Đỏ: Ốm = Ốm đau/Tai nạn. Người đó vắng mặt.",
-    "y2": "Cam: TT = Thay thế. Người khác nhận ca."
+    "y2": "Sau khi chấp nhận, cả ca chuyển sang người thay thế."
   },
   "endcard": {
     "tagline": "Lập lịch nhân sự cùng Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "Ốm",
     "absenceName": "Ốm đau/Tai nạn",
-    "replacement": "TT",
-    "replacementName": "Thay thế",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 25.56,
-    "windows": {
-      "y1": {
-        "from": 18.9,
-        "to": 22.1
-      },
-      "y2": {
-        "from": 22.1,
-        "to": 25.56
-      }
-    },
-    "redCellFirstVisibleSeconds": 19,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":38.44,"windows":{"y1":{"from":24.28,"to":28.82},"y2":{"from":28.82,"to":38.44}},"source":"klacks-take-ausfall-decken-vi-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":24.58,"standInScrollSeconds":28.52,"acceptedPlanSeconds":35.46,"verifiedOnTake":true}
 }

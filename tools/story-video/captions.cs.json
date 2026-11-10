@@ -7,7 +7,7 @@
     "k4": "Seznamte se: Klacksy, váš elektronický kolega.",
     "x1": "Pro rozpisy směn je tu Klacks. Pomáhá vám s tím.",
     "y1": "Červená: NÚ = Nemoc/Úraz. Osoba chybí.",
-    "y2": "Oranžová: ZAS = Zástup. Někdo jiný převezme směnu."
+    "y2": "Po převzetí patří celá směna náhradníkovi."
   },
   "endcard": {
     "tagline": "Plánování směn s Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "NÚ",
     "absenceName": "Nemoc/Úraz",
-    "replacement": "ZAS",
-    "replacementName": "Zástup",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":39.48,"windows":{"y1":{"from":25.01,"to":29.64},"y2":{"from":29.64,"to":39.48}},"source":"klacks-take-ausfall-decken-cs-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.31,"standInScrollSeconds":29.34,"acceptedPlanSeconds":36.33,"verifiedOnTake":true}
 }

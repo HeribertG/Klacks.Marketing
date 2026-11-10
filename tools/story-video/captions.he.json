@@ -7,7 +7,7 @@
     "k4": "הכירו את Klacksy, העובד האלקטרוני שלכם.",
     "x1": "לתכנון משמרות יש את Klacks. הוא עוזר לכם.",
     "y1": "אדום: מחל = מחלה/תאונה. האדם נעדר.",
-    "y2": "כתום: חלפ = החלפה. מישהו אחר לוקח את המשמרת."
+    "y2": "לאחר האישור כל המשמרת עוברת למחליף."
   },
   "endcard": {
     "tagline": "תכנון כוח אדם עם Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "מחל",
     "absenceName": "מחלה/תאונה",
-    "replacement": "חלפ",
-    "replacementName": "החלפה",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 24.6,
-    "windows": {
-      "y1": {
-        "from": 17.9,
-        "to": 21.1
-      },
-      "y2": {
-        "from": 21.1,
-        "to": 24.6
-      }
-    },
-    "redCellFirstVisibleSeconds": 18,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":40.84,"windows":{"y1":{"from":26.13,"to":30.71},"y2":{"from":30.71,"to":40.84}},"source":"klacks-take-ausfall-decken-he-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":26.43,"standInScrollSeconds":30.41,"acceptedPlanSeconds":37.77,"verifiedOnTake":true}
 }

@@ -7,7 +7,7 @@
     "k4": "Poznaj: Klacksy, twój elektroniczny współpracownik.",
     "x1": "Do planowania zmian służy Klacks. Pomaga ci w tym.",
     "y1": "Czerwony: Ch = Choroba/Wypadek. Osoba jest nieobecna.",
-    "y2": "Pomarańczowy: ZAS = Zastępstwo. Ktoś inny przejmuje."
+    "y2": "Po akceptacji cała zmiana przechodzi na zastępcę."
   },
   "endcard": {
     "tagline": "Planowanie personelu z Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "Ch",
     "absenceName": "Choroba/Wypadek",
-    "replacement": "ZAS",
-    "replacementName": "Zastępstwo",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 24,
-    "windows": {
-      "y1": {
-        "from": 17.4,
-        "to": 20.6
-      },
-      "y2": {
-        "from": 20.6,
-        "to": 24
-      }
-    },
-    "redCellFirstVisibleSeconds": 17.5,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":39.52,"windows":{"y1":{"from":25.12,"to":29.67},"y2":{"from":29.67,"to":39.52}},"source":"klacks-take-ausfall-decken-pl-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.42,"standInScrollSeconds":29.37,"acceptedPlanSeconds":36.51,"verifiedOnTake":true}
 }

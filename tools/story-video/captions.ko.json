@@ -7,7 +7,7 @@
     "k4": "소개할게요. 전자 동료 Klacksy예요.",
     "x1": "근무표에는 Klacks가 있어요. Klacks가 도와드려요.",
     "y1": "빨간색: 질병 = 질병/사고. 해당 직원이 결근해요.",
-    "y2": "주황색: 교체. 다른 직원이 대신해요."
+    "y2": "수락하면 근무 전체가 대체 인력에게 넘어가요."
   },
   "endcard": {
     "tagline": "Klacksy와 함께하는 근무 계획",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "질병",
     "absenceName": "질병/사고",
-    "replacement": "교체",
-    "replacementName": "교체",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 32.8,
-    "windows": {
-      "y1": {
-        "from": 26.4,
-        "to": 29.6
-      },
-      "y2": {
-        "from": 29.6,
-        "to": 32.8
-      }
-    },
-    "redCellFirstVisibleSeconds": 26.5,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":40.36,"windows":{"y1":{"from":25.76,"to":30.3},"y2":{"from":30.3,"to":40.36}},"source":"klacks-take-ausfall-decken-ko-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":26.06,"standInScrollSeconds":30,"acceptedPlanSeconds":37.38,"verifiedOnTake":true}
 }

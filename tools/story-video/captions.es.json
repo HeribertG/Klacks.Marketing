@@ -7,7 +7,7 @@
     "k4": "Te presento a Klacksy, tu empleado electrónico.",
     "x1": "Para los turnos está Klacks. Te ayuda.",
     "y1": "Rojo: EA = Enfermedad/Accidente. La persona falta.",
-    "y2": "Naranja: REM = Reemplazo. Alguien más toma el turno."
+    "y2": "Tras aceptarlo, el turno completo pasa al sustituto."
   },
   "endcard": {
     "tagline": "Planificación de personal con Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "EA",
     "absenceName": "Enfermedad/Accidente",
-    "replacement": "REM",
-    "replacementName": "Reemplazo",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 26.6,
-    "windows": {
-      "y1": {
-        "from": 19.9,
-        "to": 23.1
-      },
-      "y2": {
-        "from": 23.1,
-        "to": 26.6
-      }
-    },
-    "redCellFirstVisibleSeconds": 20,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":41.44,"windows":{"y1":{"from":26.73,"to":31.35},"y2":{"from":31.35,"to":41.44}},"source":"klacks-take-ausfall-decken-es-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":27.03,"standInScrollSeconds":31.05,"acceptedPlanSeconds":38.49,"verifiedOnTake":true}
 }

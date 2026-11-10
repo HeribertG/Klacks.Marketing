@@ -7,7 +7,7 @@
     "k4": "请允许我介绍：Klacksy，您的电子同事。",
     "x1": "排班表，就交给 Klacks，它会帮您。",
     "y1": "红色：伤病 = 伤病假。该员工缺勤。",
-    "y2": "橙色：替换。由其他同事接替。"
+    "y2": "接受后，整个班次转给替班人员。"
   },
   "endcard": {
     "tagline": "用 Klacksy 做人员排班",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "伤病",
     "absenceName": "伤病假",
-    "replacement": "替换",
-    "replacementName": "替换",
     "verifiedOnTake": true
   },
   "review": {
@@ -27,19 +25,5 @@
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
   },
-  "take": {
-    "seconds": 24.08,
-    "windows": {
-      "y1": {
-        "from": 17.4,
-        "to": 20.6
-      },
-      "y2": {
-        "from": 20.6,
-        "to": 24.08
-      }
-    },
-    "redCellFirstVisibleSeconds": 17.5,
-    "verifiedOnTake": true
-  }
+  "take": {"seconds":39,"windows":{"y1":{"from":24.65,"to":29.22},"y2":{"from":29.22,"to":39}},"source":"klacks-take-ausfall-decken-zh-cn-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":24.95,"standInScrollSeconds":28.92,"acceptedPlanSeconds":35.97,"verifiedOnTake":true}
 }

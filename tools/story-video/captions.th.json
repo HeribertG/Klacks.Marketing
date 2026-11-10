@@ -7,7 +7,7 @@
     "k4": "ขอแนะนำ Klacksy เพื่อนร่วมงานอิเล็กทรอนิกส์ของคุณ",
     "x1": "สำหรับตารางงาน มี Klacks คอยช่วยคุณ",
     "y1": "สีแดง: ปว = ลาป่วย/อุบัติเหตุ พนักงานขาดงาน",
-    "y2": "สีส้ม: ทดแทน = การทดแทน มีคนอื่นมารับช่วงต่อ"
+    "y2": "เมื่อยอมรับแล้ว กะทั้งหมดจะย้ายไปยังผู้ปฏิบัติงานแทน"
   },
   "endcard": {
     "tagline": "จัดตารางงานพนักงานด้วย Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "ปว",
     "absenceName": "ลาป่วย/อุบัติเหตุ",
-    "replacement": "ทดแทน",
-    "replacementName": "การทดแทน",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":39.16,"windows":{"y1":{"from":24.72,"to":29.42},"y2":{"from":29.42,"to":39.16}},"source":"klacks-take-ausfall-decken-th-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.02,"standInScrollSeconds":29.12,"acceptedPlanSeconds":36.18,"verifiedOnTake":true}
 }

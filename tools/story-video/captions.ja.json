@@ -7,7 +7,7 @@
     "k4": "ご紹介します。電子スタッフのKlacksyです。",
     "x1": "シフト表にはKlacksが役立ちます。",
     "y1": "赤：傷病 = 傷病休暇。その人は不在です。",
-    "y2": "オレンジ：代替。別の人が引き継ぎます。"
+    "y2": "承認すると、シフト全体が代替要員に移ります。"
   },
   "endcard": {
     "tagline": "Klacksyによるスタッフのシフト管理",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "傷病",
     "absenceName": "傷病休暇",
-    "replacement": "代替",
-    "replacementName": "代替",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":41.4,"windows":{"y1":{"from":27.09,"to":31.68},"y2":{"from":31.68,"to":41.4}},"source":"klacks-take-ausfall-decken-ja-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":27.39,"standInScrollSeconds":31.38,"acceptedPlanSeconds":38.33,"verifiedOnTake":true}
 }

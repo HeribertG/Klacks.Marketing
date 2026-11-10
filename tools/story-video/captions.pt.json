@@ -7,7 +7,7 @@
     "k4": "Aqui está o Klacksy, o colega eletrónico.",
     "x1": "Para escalas, existe o Klacks. Ele ajuda nisso.",
     "y1": "Vermelho: DA = Doença/Acidente. A pessoa está ausente.",
-    "y2": "Laranja: SUB = Substituição. Outra pessoa assume."
+    "y2": "Depois de aceitar, o turno inteiro fica com o substituto."
   },
   "endcard": {
     "tagline": "Planeamento de escalas com o Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "DA",
     "absenceName": "Doença/Acidente",
-    "replacement": "SUB",
-    "replacementName": "Substituição",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":40.08,"windows":{"y1":{"from":25.63,"to":30.17},"y2":{"from":30.17,"to":40.08}},"source":"klacks-take-ausfall-decken-pt-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":25.93,"standInScrollSeconds":29.87,"acceptedPlanSeconds":37.08,"verifiedOnTake":true}
 }

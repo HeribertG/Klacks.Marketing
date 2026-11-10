@@ -7,7 +7,7 @@
     "k4": "Mød Klacksy, din elektroniske medarbejder.",
     "x1": "Til vagtplaner er der Klacks. Den hjælper dig.",
     "y1": "Rød: SU = Sygdom/Ulykke. Personen er fraværende.",
-    "y2": "Orange: AFL = Afløsning. En anden overtager."
+    "y2": "Efter overtagelsen ligger hele vagten hos afløseren."
   },
   "endcard": {
     "tagline": "Vagtplanlægning med Klacksy",
@@ -17,8 +17,6 @@
   "abbreviations": {
     "absence": "SU",
     "absenceName": "Sygdom/Ulykke",
-    "replacement": "AFL",
-    "replacementName": "Afløsning",
     "verifiedOnTake": true
   },
   "review": {
@@ -26,5 +24,6 @@
     "backTranslatedBy": "deepseek-v4-pro (fresh context, without the German source), repeated on the final texts",
     "deepl": "not used (shared free quota nearly exhausted)",
     "nativeReview": "open"
-  }
+  },
+  "take": {"seconds":39,"windows":{"y1":{"from":24.38,"to":28.99},"y2":{"from":28.99,"to":39}},"source":"klacks-take-ausfall-decken-da-v3.mp4 (simple-cover-absence with KLACKS_STORY_ACCEPT=1, release 1.0.68, 1280x800, recorded 2026-11-10)","absentRowSeconds":24.68,"standInScrollSeconds":28.69,"acceptedPlanSeconds":35.89,"verifiedOnTake":true}
 }
