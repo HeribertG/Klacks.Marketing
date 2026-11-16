@@ -19,7 +19,8 @@ using Shouldly;
 /// Renders the real CountryStartTemplate with the real content, screenshots and recordings for every country in
 /// German and in each culture spoken there: one H1, no duplicate DOM id, the header anchors (#branchen, #kontrolle,
 /// #regeln) present, links that keep the culture, and never a raw content key - cultures without their own
-/// start.json fall back to the German text per key until the translation wave.
+/// start.json fall back to the German text per key until the translation wave. The download card also links the
+/// Microsoft Store listing of the office-PC app (new tab, no counted click) with a label in every culture.
 /// </summary>
 [TestFixture]
 public class CountryStartTemplateRenderingTests
@@ -32,6 +33,9 @@ public class CountryStartTemplateRenderingTests
     private const string LabelAttributePattern = @"\b(?:title|alt|aria-label)=""([^""]+)""";
     private const string ContentKeyPattern = @"^[a-z][A-Za-z0-9]*(\.[A-Za-z0-9-]+)+$";
     private const string HrefPattern = @"\bhref=""(/[^""]*)""";
+    private const string MicrosoftStoreLabelContentKey = "index";
+    private const string MicrosoftStoreLabelKey = "getStarted.download.secondaryButton";
+    private const string MicrosoftStoreName = "Microsoft Store";
 
     private static readonly string[] HeaderAnchorIds = { PageSectionIds.Industries, PageSectionIds.Solutions, PageSectionIds.Rules, PageSectionIds.Download, PageSectionIds.Agents };
 
@@ -102,6 +106,34 @@ public class CountryStartTemplateRenderingTests
         html.ShouldContain("Wartezeiten im Video beschleunigt und markiert.");
         html.ShouldContain("Playground öffnen");
         html.ShouldNotContain("Live-Demo");
+    }
+
+    [TestCase("land-ch", "de")]
+    [TestCase("land-ch", "fr")]
+    [TestCase("land-jp", "ja")]
+    public async Task Download_card_links_the_microsoft_store_without_a_counted_click(string country, string culture)
+    {
+        var html = await RenderAsync(country, culture);
+
+        var anchor = Regex.Match(html, $@"<a\b[^>]*\bhref=""{Regex.Escape(ExternalLinks.MicrosoftStoreUrl)}""[^>]*>");
+        anchor.Success.ShouldBeTrue();
+        anchor.Value.ShouldContain("rel=\"noopener\"");
+        anchor.Value.ShouldContain("target=\"_blank\"");
+        anchor.Value.ShouldNotContain("data-c");
+    }
+
+    [Test]
+    public void Microsoft_store_label_is_translated_in_every_culture()
+    {
+        var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
+
+        foreach (var culture in SupportedCultures.All)
+        {
+            var label = provider.FindText(culture.Code, MicrosoftStoreLabelContentKey, MicrosoftStoreLabelKey);
+
+            label.ShouldNotBeNullOrWhiteSpace(culture.Code);
+            label.ShouldContain(MicrosoftStoreName, Case.Sensitive, culture.Code);
+        }
     }
 
     private static IEnumerable<string> RawKeys(string html)
