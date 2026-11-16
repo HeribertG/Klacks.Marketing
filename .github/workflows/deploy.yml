@@ -25,6 +25,9 @@ jobs:
       with:
         dotnet-version: 10.0.x
 
+    - name: Raise the inotify instance limit for the many in-process test hosts
+      run: sudo sysctl -w fs.inotify.max_user_instances=1024
+
     - name: Run tests
       run: dotnet test Klacks.Marketing.Tests --configuration Release --verbosity minimal
 
