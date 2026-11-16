@@ -2,10 +2,11 @@
 @page "/{culture}/{country}/technik"
 @inject IPageContentProvider ContentProvider
 
-@* Technical facts page for developers (stack, versions, architecture, how it is enforced). Written in German and
-   English only (owner decision 2026-10-22): every other culture shows the English text marked lang="en" dir="ltr" and
-   is noindex (IndexTranslatedOnly). Served under every country with the same content (canonical: the culture's
-   default country). Culture is the culture URL segment (null for German), Country the country page key of the route. *@
+@* Technical facts page for developers (stack, versions, architecture, how it is enforced). Written in all 25 cultures
+   (owner decision 2026-11-16, TechPageTests); a culture without its own technik.json would show the English text marked
+   lang="en" dir="ltr" and be noindex (IndexTranslatedOnly). Served under every country with the same content (canonical:
+   the culture's default country). Culture is the culture URL segment (null for German), Country the country page key of
+   the route. *@
 <PageTitle>@Tx("pageTitle")</PageTitle>
 <SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" IndexTranslatedOnly="true" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" />
 
