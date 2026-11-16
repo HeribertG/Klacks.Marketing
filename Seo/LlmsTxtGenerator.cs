@@ -73,7 +73,7 @@ public static class LlmsTxtGenerator
             CountryPageLinks.SmallBusinessSlug,
             "Klacks for SMEs",
             "For SMEs with 5 to 250 employees: plans shifts and tours, checks rest periods and qualifications, and runs on an office PC or your own server. Open source, no license fees.",
-            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on an office PC (Windows with Docker Desktop, 16 GB of memory recommended) or on your own Linux server (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
+            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on a single office PC (Windows 11, setup file, no Docker, 16 GB of memory recommended; used on that PC only) or on your own Linux server with Docker (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
         ),
         (
             CountryPageLinks.MidSizeBusinessSlug,
@@ -368,8 +368,8 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 7. Known limits");
         sb.AppendLine();
-        sb.AppendLine("- Office-PC setup: the PC must be running during working hours. The team reaches Klacks on the office network; access from outside is not set up.");
-        sb.AppendLine("- Docker Desktop is a separate product with its own licence limit: according to the Klacks SME page it is free of charge for businesses with fewer than 250 employees and less than 10 million USD in annual revenue.");
+        sb.AppendLine("- Office PC with the Windows installer (no Docker): the PC must be running during working hours, and Klacks is used in the browser on that PC only; access from other computers or from outside is not set up on this route.");
+        sb.AppendLine("- Docker Desktop is a separate product with its own licence terms: according to the Klacks page for mid-sized businesses it requires a paid licence for companies with 250 or more employees or 10 million USD or more in annual revenue. The Windows installer for a single office PC needs no Docker.");
         sb.AppendLine("- Data is stored in your installation in the open PostgreSQL database; with standard tools you can reach all your data at any time, even without Klacks.");
         sb.AppendLine("- Keep the .env file in the install folder safe: it holds the generated secrets, and without it every stored password and API key is unrecoverable.");
         sb.AppendLine("- Klacks was developed and tested with a dataset of 5,000 employees; how smoothly it runs on a PC depends on the PC's performance.");

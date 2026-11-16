@@ -244,6 +244,24 @@ public class SimpleStartTemplateRenderingTests
         buttonClasses.ShouldContain(TopAlignedClasses);
     }
 
+    [TestCase("de")]
+    [TestCase("fr")]
+    [TestCase("ja")]
+    public async Task Install_card_links_the_microsoft_store_next_to_the_counted_store_link_without_a_counted_click(string culture)
+    {
+        var html = await RenderAsync(CountryIndustries.SwissCountryPageKey, new EmptyVideoCatalog(), culture);
+        var start = Regex.Match(html, StartSectionPattern, RegexOptions.Singleline);
+        start.Success.ShouldBeTrue();
+
+        var anchor = Regex.Match(start.Value, $@"<a\b[^>]*\bhref=""{Regex.Escape(ExternalLinks.MicrosoftStoreUrl)}""[^>]*>(.*?)</a>", RegexOptions.Singleline);
+        anchor.Success.ShouldBeTrue(culture);
+        anchor.Value.ShouldContain("rel=\"noopener\"");
+        anchor.Value.ShouldContain("target=\"_blank\"");
+        anchor.Value.ShouldNotContain("data-c");
+        WebUtility.HtmlDecode(anchor.Groups[1].Value).ShouldContain(Content.GetText(culture, SiteModes.SimpleContentKey, "start.installStoreLink"));
+        Regex.IsMatch(start.Value, @"<a\b(?:(?!</a>).)*<a\b", RegexOptions.Singleline).ShouldBeFalse("no link inside another link");
+    }
+
     [Test]
     public async Task Amber_surfaces_always_use_the_dark_amber_text()
     {

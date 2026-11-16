@@ -59,31 +59,34 @@ public class SimpleContentTests
     // not a word count - Han and Japanese text has no spaces, Thai splits at vowel marks - so there the budget is only a
     // growth guard on the measured value. 2026-10-18: the owner replaced "click work" by "Fleissarbeit" (drudge work) in the
     // hero, human and meta texts of all cultures; the longer phrasing raised en, fr, it, da, el, id, ko, ms, nb, pt, vi by 1-4 words.
+    // 2026-11-16: the install card links the Microsoft Store ("also in the Microsoft Store", start.installStoreLink). The
+    // install subtitle and the expert hint were shortened to make room; where that was not enough without dropping "also",
+    // the budget grew by exactly the remaining words: ar +2, cs +2, fi +2, pt +1, ko +2, th +4, vi +1.
     private static readonly Dictionary<string, int> MaxSectionWords = new()
     {
         [GermanCulture] = 350,
         ["en"] = 399,
         ["fr"] = 426,
         ["it"] = 402,
-        ["ar"] = 340,
-        ["cs"] = 355,
+        ["ar"] = 342,
+        ["cs"] = 357,
         ["da"] = 381,
         ["el"] = 423,
         ["es"] = 435,
-        ["fi"] = 290,
+        ["fi"] = 292,
         ["he"] = 350,
         ["id"] = 378,
         ["ms"] = 383,
         ["nb"] = 367,
         ["nl"] = 375,
         ["pl"] = 355,
-        ["pt"] = 446,
+        ["pt"] = 447,
         ["ro"] = 405,
         ["sv"] = 370,
         ["ja"] = 105,
-        ["ko"] = 307,
-        ["th"] = 460,
-        ["vi"] = 537,
+        ["ko"] = 309,
+        ["th"] = 464,
+        ["vi"] = 538,
         ["zh-CN"] = 150,
         ["zh-TW"] = 145,
     };
