@@ -363,9 +363,9 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 6. Updates");
         sb.AppendLine();
-        sb.AppendLine("On a Linux server with Docker, an update service inside the stack applies newly released versions automatically, with a backup before every update and automatic rollback if anything goes wrong. With Docker Desktop on Windows, the installer sets up the same update service, but automatic updates there are not promised; the update service needs the install folder on a local drive, and installations made with an older install.ps1 must run the script once again from a current package.");
+        sb.AppendLine("On a Linux server with Docker, an update service inside the stack applies newly released versions automatically. It backs up the database before an update only when the release changes the database structure; if the new version does not come up healthy, the previous version is restored automatically, together with the database where a backup was taken. With Docker Desktop on Windows, the installer sets up the same update service, but automatic updates there are not promised; the update service needs the install folder on a local drive, and installations made with an older install.ps1 must run the script once again from a current package.");
         sb.AppendLine();
-        sb.AppendLine("On an office PC with the Windows installer (no Docker), new versions are installed in Klacks itself under Settings > Software Updates. Running a newer setup over an existing installation is refused.");
+        sb.AppendLine("On an office PC with the Windows installer (no Docker), the installer sets up the update service as a Windows service and automatic updates are switched on by default; this can be changed, and a new version can also be installed by hand, in Klacks itself under Settings > Software Updates. Running a newer setup over an existing installation is refused.");
         sb.AppendLine();
 
         sb.AppendLine("### 7. Known limits");
