@@ -73,7 +73,7 @@ public static class LlmsTxtGenerator
             CountryPageLinks.SmallBusinessSlug,
             "Klacks for SMEs",
             "For SMEs with 5 to 250 employees: plans shifts and tours, checks rest periods and qualifications, and runs on an office PC or your own server. Open source, no license fees.",
-            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on a single office PC (Windows 11, setup file, no Docker, 16 GB of memory recommended; used on that PC only) or on your own Linux server with Docker (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
+            "For SMEs with 5 to 250 employees who schedule with Excel, on paper or in a group chat today. Klacks plans shifts and tours, checks rest periods and qualifications, and runs on your side — on a single office PC (Windows 11, setup file, no Docker; used on that PC only) or on your own Linux server with Docker (at least 8 GB of memory and 4 CPU cores). Open source, no license fees; employees can be entered directly or imported from an Excel or CSV file, with a preview before anything is saved, and at period closing Klacks creates the payroll export."
         ),
         (
             CountryPageLinks.MidSizeBusinessSlug,
@@ -260,7 +260,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine("## Get started");
         sb.AppendLine();
         sb.AppendLine("- Playground: a public Klacks instance with sample data, right in the browser, no installation and no registration.");
-        sb.AppendLine("- On-premise package: Docker images, installer, database, HTTPS and automatic updates in a single bundle.");
+        sb.AppendLine("- On-premise package: Docker images, installer, database, HTTPS and an update service in a single bundle.");
         sb.AppendLine($"- Country packages: preconfigured downloads (installer bundle, Docker Compose bundle or profile file) for 32 countries, with an optional industry preselection, and the Windows installer for an office PC. Klacks is downloaded only from the Klacks Store: {StoreHomeUrl}");
         sb.AppendLine("- Source code: Klacks is open source under the GNU AGPL-3.0 licence, with backend, frontend and Docker images public on GitHub.");
         sb.AppendLine();
@@ -302,7 +302,7 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 1. Requirements");
         sb.AppendLine();
-        sb.AppendLine("- A host with at least 8 GB of RAM and 4 vCPU (Klacks runs its retrieval models locally inside the API container). For an office PC, 16 GB of memory is recommended.");
+        sb.AppendLine("- A host with at least 8 GB of RAM and 4 vCPU (Klacks runs its retrieval models locally inside the API container).");
         sb.AppendLine("- Docker Desktop on Windows, or Docker Engine with the Compose plugin on Linux.");
         sb.AppendLine("- Outbound internet access to ghcr.io and github.com (Docker images and updates).");
         sb.AppendLine("- Ports 80 and 443 free (configurable, see the options below).");
@@ -312,7 +312,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine("### 2. Download");
         sb.AppendLine();
         sb.AppendLine($"Klacks is downloaded only from the Klacks Store: {storeUrl} — there is no other download source. Choose your country there; its page offers an optional industry preselection and the installation package, a ZIP file named klacks-onprem-<country>-<industry>.zip (for example {ExamplePackageFileName}). If there is no package for your country, the store offers the packages of all available countries; you then set up public holidays, working-time rules and surcharges for your country in the app.");
-        sb.AppendLine("Extract the ZIP into a folder that stays where it is, for example ~/klacks on Linux or C:\\klacks on Windows: the automatic updates work with this folder. The files sit directly in that folder: the installer scripts (install.sh for Linux, install.ps1 for Windows), the wrappers install-<country>.sh and install-<country>.ps1 that preset the package's country profile, the Docker Compose stack and the regions folder with the country profile. The package is downloaded in a browser; for a server without a desktop, copy the ZIP to the server afterwards.");
+        sb.AppendLine("Extract the ZIP into a folder that stays where it is, for example ~/klacks on Linux or C:\\klacks on Windows: the update service works with this folder. The files sit directly in that folder: the installer scripts (install.sh for Linux, install.ps1 for Windows), the wrappers install-<country>.sh and install-<country>.ps1 that preset the package's country profile, the Docker Compose stack and the regions folder with the country profile. The package is downloaded in a browser; for a server without a desktop, copy the ZIP to the server afterwards.");
         sb.AppendLine("For a single office PC with Windows, the Klacks Store also offers a Windows installer that needs no Docker (entry \"Office PC (Windows)\"); the steps below cover the Docker-based installation.");
         sb.AppendLine();
 
@@ -344,7 +344,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine($"powershell -ExecutionPolicy Bypass -File .\\install.ps1 -ServerName {ExampleServerName} -Region {ExampleRegion}");
         sb.AppendLine("```");
         sb.AppendLine();
-        sb.AppendLine("Optional parameters: -ServerName (defaults to localhost), -Region (the package's country; install-<country>.ps1 presets it), -HttpPort and -HttpsPort (default 80 and 443). The installer maps the install folder into the Docker Desktop VM so that the automatic updater can recreate containers with the right bind mounts, which is why the folder must be on a local drive.");
+        sb.AppendLine("Optional parameters: -ServerName (defaults to localhost), -Region (the package's country; install-<country>.ps1 presets it), -HttpPort and -HttpsPort (default 80 and 443). The installer maps the install folder into the Docker Desktop VM so that the update service can recreate containers with the right bind mounts, which is why the folder must be on a local drive.");
         sb.AppendLine();
 
         sb.AppendLine("### 4. What the installer does");
@@ -363,7 +363,9 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 6. Updates");
         sb.AppendLine();
-        sb.AppendLine("On Linux and Windows an update service inside the stack applies newly released versions automatically, with a backup before every update and automatic rollback if anything goes wrong. On Windows this only works if the install folder is on a local drive; installations made with an older install.ps1 must run the script once again from a current package, otherwise automatic updates break.");
+        sb.AppendLine("On a Linux server with Docker, an update service inside the stack applies newly released versions automatically, with a backup before every update and automatic rollback if anything goes wrong. With Docker Desktop on Windows, the installer sets up the same update service, but automatic updates there are not promised; the update service needs the install folder on a local drive, and installations made with an older install.ps1 must run the script once again from a current package.");
+        sb.AppendLine();
+        sb.AppendLine("On an office PC with the Windows installer (no Docker), new versions are installed in Klacks itself under Settings > Software Updates. Running a newer setup over an existing installation is refused.");
         sb.AppendLine();
 
         sb.AppendLine("### 7. Known limits");

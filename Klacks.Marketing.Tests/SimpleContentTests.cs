@@ -60,33 +60,33 @@ public class SimpleContentTests
     // growth guard on the measured value. 2026-10-18: the owner replaced "click work" by "Fleissarbeit" (drudge work) in the
     // hero, human and meta texts of all cultures; the longer phrasing raised en, fr, it, da, el, id, ko, ms, nb, pt, vi by 1-4 words.
     // 2026-11-16: the install card links the Microsoft Store ("also in the Microsoft Store", start.installStoreLink). The
-    // install subtitle and the expert hint were shortened to make room; where that was not enough without dropping "also",
-    // the budget grew by exactly the remaining words: ar +2, cs +2, fi +2, pt +1, ko +2, th +4, vi +1.
+    // budgets stayed (owner decision): the install subtitle, the expert hint and a few other texts were shortened to make
+    // room, and in ar and th the link reads only "Microsoft Store".
     private static readonly Dictionary<string, int> MaxSectionWords = new()
     {
         [GermanCulture] = 350,
         ["en"] = 399,
         ["fr"] = 426,
         ["it"] = 402,
-        ["ar"] = 342,
-        ["cs"] = 357,
+        ["ar"] = 340,
+        ["cs"] = 355,
         ["da"] = 381,
         ["el"] = 423,
         ["es"] = 435,
-        ["fi"] = 292,
+        ["fi"] = 290,
         ["he"] = 350,
         ["id"] = 378,
         ["ms"] = 383,
         ["nb"] = 367,
         ["nl"] = 375,
         ["pl"] = 355,
-        ["pt"] = 447,
+        ["pt"] = 446,
         ["ro"] = 405,
         ["sv"] = 370,
         ["ja"] = 105,
-        ["ko"] = 309,
-        ["th"] = 464,
-        ["vi"] = 538,
+        ["ko"] = 307,
+        ["th"] = 460,
+        ["vi"] = 537,
         ["zh-CN"] = 150,
         ["zh-TW"] = 145,
     };
