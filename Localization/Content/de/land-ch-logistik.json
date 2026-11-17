@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Für Logistik &amp; Transport in der Schweiz",
     "titleHtml": "Touren, Arbeitszeiten, Termine &mdash; <span class=\"text-secondary\">alles im Griff.</span>",
-    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, dokumentierten Arbeitszeiten als Ergänzung zur 56-Tage-Nachweispflicht und der kommenden ARV-Pflicht für Kleintransporter im grenzüberschreitenden Verkehr.",
+    "subtitle": "Klacks plant Touren und Fahrer &mdash; mit den Arbeits- und Ruhezeitgrenzen, die Sie nach ARV 1 hinterlegen, dokumentierten Arbeitszeiten als Ergänzung zur 56-Tage-Nachweispflicht und der seit Juli 2026 geltenden ARV-Pflicht für Kleintransporter im grenzüberschreitenden Verkehr.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Klacks Timeline-Ansicht für Touren und Fahrereinsätze in der Schweiz",
     "screenshotLabel": "Timeline"
@@ -25,8 +25,8 @@
       },
       {
         "icon": "local_shipping",
-        "title": "Kleintransporter bald ARV-pflichtig",
-        "text": "Ab 1.7.2026 werden Kombinationen zwischen 2,5 und 3,5 Tonnen im grenzüberschreitenden Verkehr neu ARV-pflichtig, inklusive digitalem Fahrtenschreiber."
+        "title": "Neue ARV-Regel für Kleintransporter seit Juli 2026",
+        "text": "Seit dem 1.7.2026 gilt die ARV 1 im grenzüberschreitenden Verkehr auch für Lieferwagen und Fahrzeugkombinationen von über 2,5 bis 3,5 Tonnen zum Sachentransport, sofern das Fahren mehr als die Hälfte der Arbeitszeit ausmacht oder auf fremde Rechnung transportiert wird &mdash; inklusive Fahrtenschreiber. Im Binnenverkehr ändert sich nichts."
       }
     ]
   },
@@ -52,12 +52,12 @@
       {
         "icon": "local_shipping",
         "title": "Bereit für die Kleintransporter-Regel 2026",
-        "text": "Klacks plant Touren unabhängig vom Fahrzeugtyp &mdash; die Prüfung der Arbeits- und Ruhezeitgrenzen greift auch für Kleintransporter, die ab Mitte 2026 im grenzüberschreitenden Verkehr neu ARV-pflichtig werden."
+        "text": "Klacks plant Touren unabhängig vom Fahrzeugtyp &mdash; die Prüfung der Arbeits- und Ruhezeitgrenzen greift auch für Kleintransporter, die seit Juli 2026 im grenzüberschreitenden Verkehr unter die ARV 1 fallen können."
       },
       {
         "icon": "badge",
         "title": "Führerschein-Klassen passend",
-        "text": "Klacks berücksichtigt bei der Tourenzuteilung die passende Führerausweis-Kategorie und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis oder ist er abgelaufen, lehnt Klacks die Zuweisung ab, auch bei manueller Planung &mdash; eingeplant wird nur, wer einen gültigen Ausweis hat."
+        "text": "Klacks berücksichtigt bei der Tourenzuteilung die passende Führerausweis-Kategorie und warnt, bevor ein Nachweis abläuft. Fehlt ein Pflicht-Nachweis, lehnt Klacks die Zuweisung ab, auch bei manueller Planung; ist er abgelaufen, warnt Klacks &mdash; auf Wunsch lehnt Klacks auch dann ab."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Grenzüberschreitende Tour, ein Plan",
-    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen nach ARV 1, hält die dokumentierten Arbeitszeiten für 56 Tage bereit und plant auch Kleintransporter mit, die künftig neu ARV-pflichtig werden."
+    "text": "Klacks prüft die hinterlegten Arbeits- und Ruhezeitgrenzen nach ARV 1, hält die dokumentierten Arbeitszeiten für 56 Tage bereit und plant auch Kleintransporter mit, die seit Juli 2026 im grenzüberschreitenden Verkehr unter die ARV 1 fallen können."
   },
   "showRoutePlanning": true,
   "cta": {

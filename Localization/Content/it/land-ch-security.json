@@ -52,7 +52,7 @@
       {
         "icon": "verified",
         "title": "Certificati verificati automaticamente",
-        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada. Se un attestato obbligatorio manca o è scaduto, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale &mdash; viene pianificato solo chi dispone di un attestato valido."
+        "text": "Klacks verifica a ogni assegnazione i certificati registrati e avverte per tempo prima che un attestato scada. Se un attestato obbligatorio manca, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale; se è scaduto, Klacks avvisa &mdash; e, su richiesta, rifiuta anche in questo caso."
       },
       {
         "icon": "route",

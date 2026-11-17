@@ -43,7 +43,7 @@
       {
         "icon": "schedule",
         "title": "Tempo di percorrenza registrato come tempo di lavoro",
-        "text": "Klacks conteggia come tempo di lavoro gli spostamenti registrati tra i clienti &mdash; che la prima andata e l'ultimo ritorno restino esclusi, Klacks non lo riconosce automaticamente."
+        "text": "Un giro conta come tempo di lavoro dall'inizio alla fine, dedotte le pause non retribuite &mdash; gli spostamenti tra i clienti ne fanno parte. Nell'ottimizzazione del percorso Klacks li calcola tramite un servizio di itinerari, senza tale servizio come stima. Se la prima andata e l'ultimo ritorno ne fanno parte lo determinano l'inizio e la fine del giro; Klacks non lo riconosce automaticamente."
       },
       {
         "icon": "event_available",
@@ -70,7 +70,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Tempo di percorrenza, turno domenicale, un unico piano",
-    "text": "Klacks conteggia il tempo di spostamento registrato tra i clienti come tempo di lavoro e sorveglia le domeniche libere in una finestra scorrevole &mdash; senza calcoli manuali. Già oggi è possibile registrare un preavviso minimo per la pubblicazione del piano di servizio (ad esempio due settimane); Klacks calcola da questo entro quando il piano deve essere pronto &mdash; non appena la LCInf entrerà in vigore, la base di pianificazione sarà già pronta."
+    "text": "Klacks conteggia il giro, inclusi gli spostamenti tra i clienti, come tempo di lavoro e sorveglia le domeniche libere in una finestra scorrevole &mdash; senza calcoli manuali. Già oggi è possibile registrare un preavviso minimo per la pubblicazione del piano di servizio (ad esempio due settimane); Klacks calcola da questo entro quando il piano deve essere pronto &mdash; non appena la LCInf entrerà in vigore, la base di pianificazione sarà già pronta."
   },
   "showRoutePlanning": true,
   "cta": {

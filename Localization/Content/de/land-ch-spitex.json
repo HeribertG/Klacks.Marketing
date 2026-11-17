@@ -43,7 +43,7 @@
       {
         "icon": "schedule",
         "title": "Wegzeit als Arbeitszeit erfasst",
-        "text": "Erfasste Fahrten zwischen Klientinnen und Klienten rechnet Klacks als Arbeitszeit &mdash; dass die erste Anfahrt und die letzte Heimfahrt aussen vor bleiben, erkennt Klacks nicht automatisch."
+        "text": "Eine Tour zählt von Beginn bis Ende als Arbeitszeit, abzüglich unbezahlter Pausen &mdash; die Fahrzeiten zwischen Klientinnen und Klienten liegen darin. Beim Optimieren der Route berechnet Klacks sie über einen Routendienst, ohne Routendienst als Schätzung. Ob die erste Anfahrt und die letzte Heimfahrt dazugehören, bestimmen Beginn und Ende der Tour; Klacks erkennt das nicht automatisch."
       },
       {
         "icon": "event_available",
@@ -70,7 +70,7 @@
   "example": {
     "eyebrow": "Konkret",
     "title": "Wegzeit, Sonntagsdienst, ein Plan",
-    "text": "Klacks zählt die erfasste Fahrzeit zwischen Klientinnen und Klienten als Arbeitszeit und überwacht die freien Sonntage im rollierenden Fenster &mdash; ohne Nachrechnen von Hand. Einen Mindest-Vorlauf für die Dienstplan-Publikation (z. B. zwei Wochen) hinterlegen Sie schon heute; Klacks berechnet daraus, bis wann der Plan fertig sein muss &mdash; sobald das BGAP in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
+    "text": "Klacks zählt die Tour samt Fahrzeit zwischen Klientinnen und Klienten als Arbeitszeit und überwacht die freien Sonntage im rollierenden Fenster &mdash; ohne Nachrechnen von Hand. Einen Mindest-Vorlauf für die Dienstplan-Publikation (z. B. zwei Wochen) hinterlegen Sie schon heute; Klacks berechnet daraus, bis wann der Plan fertig sein muss &mdash; sobald das BGAP in Kraft tritt, ist die Planungsgrundlage bereits vorhanden."
   },
   "showRoutePlanning": true,
   "cta": {

@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Pour la logistique &amp; le transport en Suisse",
     "titleHtml": "Tournées, temps de travail, rendez-vous &mdash; <span class=\"text-secondary\">tout sous contrôle.</span>",
-    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les limites de temps de travail et de repos que vous définissez selon l'OTR 1, des temps de travail documentés en complément de l'obligation de justificatif sur 56 jours et la future obligation OTR pour les camionnettes en trafic transfrontalier.",
+    "subtitle": "Klacks planifie les tournées et les chauffeurs &mdash; avec les limites de temps de travail et de repos que vous définissez selon l'OTR 1, des temps de travail documentés en complément de l'obligation de justificatif sur 56 jours et l'obligation OTR en vigueur depuis juillet 2026 pour les camionnettes en trafic transfrontalier.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vue chronologique de Klacks pour les tournées et les affectations de chauffeurs en Suisse",
     "screenshotLabel": "Chronologie"
@@ -25,8 +25,8 @@
       },
       {
         "icon": "local_shipping",
-        "title": "Camionnettes bientôt soumises à l'OTR",
-        "text": "Dès le 1.7.2026, les combinaisons entre 2,5 et 3,5 tonnes seront nouvellement soumises à l'OTR en trafic transfrontalier, tachygraphe numérique compris."
+        "title": "Nouvelle règle OTR pour les camionnettes depuis juillet 2026",
+        "text": "Depuis le 1.7.2026, l'OTR 1 s'applique en trafic transfrontalier aussi aux camionnettes et ensembles de véhicules de plus de 2,5 à 3,5 tonnes affectés au transport de marchandises, lorsque la conduite représente plus de la moitié du temps de travail ou que le transport est effectué pour le compte d'autrui &mdash; tachygraphe compris. Rien ne change en trafic intérieur."
       }
     ]
   },
@@ -52,12 +52,12 @@
       {
         "icon": "local_shipping",
         "title": "Prêt pour la nouvelle règle sur les camionnettes 2026",
-        "text": "Klacks planifie les tournées indépendamment du type de véhicule &mdash; la vérification des limites de temps de travail et de repos s'applique aussi aux camionnettes qui seront nouvellement soumises à l'OTR en trafic transfrontalier dès mi-2026."
+        "text": "Klacks planifie les tournées indépendamment du type de véhicule &mdash; la vérification des limites de temps de travail et de repos s'applique aussi aux camionnettes qui peuvent relever de l'OTR 1 en trafic transfrontalier depuis juillet 2026."
       },
       {
         "icon": "badge",
         "title": "Catégories de permis adéquates",
-        "text": "Klacks tient compte de la catégorie de permis adéquate lors de l'attribution des tournées et alerte avant l'expiration d'un justificatif. Si un justificatif obligatoire est manquant ou expiré, Klacks refuse l'attribution, y compris en planification manuelle &mdash; seule une personne disposant d'un permis valide est alors planifiée."
+        "text": "Klacks tient compte de la catégorie de permis adéquate lors de l'attribution des tournées et alerte avant l'expiration d'un justificatif. Si un justificatif obligatoire est manquant, Klacks refuse l'attribution, y compris en planification manuelle ; s'il est expiré, Klacks avertit &mdash; et, sur demande, refuse aussi l'attribution."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Tournée transfrontalière, un seul planning",
-    "text": "Klacks vérifie les limites de temps de travail et de repos enregistrées selon l'OTR 1, conserve les temps de travail documentés pendant 56 jours et planifie aussi les camionnettes qui seront nouvellement soumises à l'OTR à l'avenir."
+    "text": "Klacks vérifie les limites de temps de travail et de repos enregistrées selon l'OTR 1, conserve les temps de travail documentés pendant 56 jours et planifie aussi les camionnettes qui peuvent relever de l'OTR 1 en trafic transfrontalier depuis juillet 2026."
   },
   "showRoutePlanning": true,
   "cta": {

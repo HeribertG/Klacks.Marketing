@@ -43,7 +43,7 @@
       {
         "icon": "schedule",
         "title": "Temps de trajet comptabilisé comme temps de travail",
-        "text": "Klacks compte comme temps de travail les trajets saisis entre client·e·s &mdash; que le premier trajet aller et le dernier trajet retour restent exclus, Klacks ne le détecte pas automatiquement."
+        "text": "Une tournée compte comme temps de travail du début à la fin, déduction faite des pauses non rémunérées &mdash; les trajets entre client·e·s en font partie. Lors de l'optimisation de l'itinéraire, Klacks les calcule via un service d'itinéraires, ou par estimation sans ce service. Le début et la fin de la tournée déterminent si le premier trajet aller et le dernier trajet retour en font partie ; Klacks ne le détecte pas automatiquement."
       },
       {
         "icon": "event_available",
@@ -70,7 +70,7 @@
   "example": {
     "eyebrow": "Concrètement",
     "title": "Temps de trajet, service dominical, un seul planning",
-    "text": "Klacks compte le temps de trajet saisi entre client·e·s comme temps de travail et surveille les dimanches libres dans une fenêtre glissante &mdash; sans calcul manuel. Vous pouvez déjà enregistrer aujourd'hui un préavis minimal pour la publication du planning (par exemple deux semaines) ; Klacks calcule à partir de là la date à laquelle le planning doit être prêt &mdash; dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
+    "text": "Klacks compte la tournée, trajets entre client·e·s compris, comme temps de travail et surveille les dimanches libres dans une fenêtre glissante &mdash; sans calcul manuel. Vous pouvez déjà enregistrer aujourd'hui un préavis minimal pour la publication du planning (par exemple deux semaines) ; Klacks calcule à partir de là la date à laquelle le planning doit être prêt &mdash; dès l'entrée en vigueur de la BGAP, la base de planification sera déjà en place."
   },
   "showRoutePlanning": true,
   "cta": {

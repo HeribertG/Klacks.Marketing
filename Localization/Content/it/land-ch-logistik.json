@@ -4,7 +4,7 @@
     "badgeIcon": "local_shipping",
     "badge": "Per la logistica &amp; il trasporto in Svizzera",
     "titleHtml": "Giri, orari di lavoro, scadenze &mdash; <span class=\"text-secondary\">tutto sotto controllo.</span>",
-    "subtitle": "Klacks pianifica giri e autisti &mdash; con i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1, gli orari di lavoro documentati a integrazione dell'obbligo di documentazione per 56 giorni e il futuro obbligo OLR per i furgoni nel traffico transfrontaliero.",
+    "subtitle": "Klacks pianifica giri e autisti &mdash; con i limiti di orario di lavoro e di riposo che imposta secondo l'OLR 1, gli orari di lavoro documentati a integrazione dell'obbligo di documentazione per 56 giorni e l'obbligo OLR in vigore da luglio 2026 per i furgoni nel traffico transfrontaliero.",
     "screenshotFile": "app-timeline-de.png",
     "screenshotAlt": "Vista Timeline di Klacks per giri e interventi degli autisti in Svizzera",
     "screenshotLabel": "Timeline"
@@ -25,8 +25,8 @@
       },
       {
         "icon": "local_shipping",
-        "title": "Furgoni presto soggetti all'OLR",
-        "text": "Dal 1.7.2026, le combinazioni tra 2,5 e 3,5 tonnellate nel traffico transfrontaliero saranno soggette all'OLR, incluso il tachigrafo digitale."
+        "title": "Nuova regola OLR per i furgoni da luglio 2026",
+        "text": "Dal 1.7.2026, nel traffico transfrontaliero l'OLR 1 si applica anche a furgoni e combinazioni di veicoli di oltre 2,5 fino a 3,5 tonnellate per il trasporto di cose, se la guida occupa più della metà del tempo di lavoro o il trasporto avviene per conto di terzi &mdash; tachigrafo incluso. Nel traffico interno non cambia nulla."
       }
     ]
   },
@@ -52,12 +52,12 @@
       {
         "icon": "local_shipping",
         "title": "Pronti per la nuova regola sui furgoni 2026",
-        "text": "Klacks pianifica i giri indipendentemente dal tipo di veicolo &mdash; la verifica dei limiti di orario di lavoro e di riposo si applica anche ai furgoni che, dalla metà del 2026, saranno soggetti all'OLR nel traffico transfrontaliero."
+        "text": "Klacks pianifica i giri indipendentemente dal tipo di veicolo &mdash; la verifica dei limiti di orario di lavoro e di riposo si applica anche ai furgoni che, da luglio 2026, possono rientrare nell'OLR 1 nel traffico transfrontaliero."
       },
       {
         "icon": "badge",
         "title": "Categorie di patente adeguate",
-        "text": "Klacks tiene conto della categoria di patente adeguata nell'assegnazione dei giri e avverte prima che un attestato scada. Se un attestato obbligatorio manca o è scaduto, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale &mdash; viene pianificato solo chi dispone di una licenza valida."
+        "text": "Klacks tiene conto della categoria di patente adeguata nell'assegnazione dei giri e avverte prima che un attestato scada. Se un attestato obbligatorio manca, Klacks rifiuta l'assegnazione, anche nella pianificazione manuale; se è scaduto, Klacks avvisa &mdash; e, su richiesta, rifiuta anche in questo caso."
       },
       {
         "icon": "smart_toy",
@@ -69,7 +69,7 @@
   "example": {
     "eyebrow": "Concretamente",
     "title": "Giro transfrontaliero, un unico piano",
-    "text": "Klacks verifica i limiti impostati di orario di lavoro e di riposo secondo l'OLR 1, tiene pronti gli orari di lavoro documentati per 56 giorni e pianifica anche i furgoni che in futuro saranno soggetti all'OLR."
+    "text": "Klacks verifica i limiti impostati di orario di lavoro e di riposo secondo l'OLR 1, tiene pronti gli orari di lavoro documentati per 56 giorni e pianifica anche i furgoni che, da luglio 2026, possono rientrare nell'OLR 1 nel traffico transfrontaliero."
   },
   "showRoutePlanning": true,
   "cta": {
