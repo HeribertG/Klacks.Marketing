@@ -1,0 +1,79 @@
+{
+  "pageTitle": "Klacks for Logistics in Switzerland | ARV 1, Working Hours & Vans 2026",
+  "hero": {
+    "badgeIcon": "local_shipping",
+    "badge": "For logistics &amp; transport in Switzerland",
+    "titleHtml": "Routes, working hours, deadlines &mdash; <span class=\"text-secondary\">all under control.</span>",
+    "subtitle": "Klacks plans routes and drivers &mdash; with the working and rest time limits you store under ARV 1, documented working hours to complement the 56-day record-keeping duty, and the ARV requirement for vans in cross-border traffic that has applied since July 2026.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for routes and driver assignments in Switzerland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday logistics in Switzerland",
+    "title": "ARV 1, record-keeping duty and new rules for vans",
+    "items": [
+      {
+        "icon": "timer",
+        "title": "Driving &amp; rest times under ARV 1",
+        "text": "ARV 1 (the Swiss ordinance on the working and rest times of professional drivers) allows a maximum of 9 hours of driving per day and, after no more than 4.5 hours of driving, requires a break of at least 45 minutes &mdash; hardly possible to keep to reliably by hand across many drivers and routes."
+      },
+      {
+        "icon": "fact_check",
+        "title": "56-day record-keeping duty",
+        "text": "Driving and rest times must be verifiable for 56 days &mdash; already in force since the end of 2024."
+      },
+      {
+        "icon": "local_shipping",
+        "title": "New ARV rule for vans since July 2026",
+        "text": "Since 1 July 2026, ARV 1 also applies in cross-border traffic to vans and vehicle combinations of over 2.5 up to 3.5 tonnes carrying goods, if driving takes up more than half of the working time or the goods are carried for hire or reward &mdash; including a tachograph. Nothing changes for domestic traffic."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off Swiss logistics",
+    "subtitle": "From the optimised route to the digital record-keeping duty &mdash; everything works together.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Routes optimised automatically",
+        "text": "Klacks puts stops in the most sensible order &mdash; short journeys, time windows met, fewer empty runs."
+      },
+      {
+        "icon": "timer",
+        "title": "Working &amp; rest times checked under ARV 1",
+        "text": "Klacks continuously checks the working and rest time limits you store under ARV 1 and warns early before they are exceeded. On request, Klacks hard-blocks the breach in automatic planning; with manual planning it stays at a warning. Klacks does not check the 9 hours of driving time and the break after 4.5 hours &mdash; these continue to be evidenced through the tachograph data."
+      },
+      {
+        "icon": "fact_check",
+        "title": "56-day record documented",
+        "text": "Klacks keeps the documented working hours available for the required period of 56 days &mdash; as a complement to the tachograph data."
+      },
+      {
+        "icon": "local_shipping",
+        "title": "Ready for the 2026 van rule",
+        "text": "Klacks plans routes regardless of vehicle type &mdash; the check of working and rest time limits also applies to vans that, since July 2026, may fall under ARV 1 in cross-border traffic."
+      },
+      {
+        "icon": "badge",
+        "title": "Matching licence categories",
+        "text": "When allocating routes, Klacks takes the matching driving licence category into account and warns before a document expires. If a mandatory document is missing, Klacks refuses the assignment, in manual planning too; if it has expired, Klacks warns &mdash; and, on request, refuses it as well."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy understands your request",
+        "text": "“Plan tomorrow's routes, driver Meier is off sick” is all it takes &mdash; Klacksy starts the replanning, and the planning engine takes the stored working and rest time limits into account."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Cross-border route, one plan",
+    "text": "Klacks checks the stored working and rest time limits under ARV 1, keeps the documented working hours available for 56 days and also plans vans that, since July 2026, may fall under ARV 1 in cross-border traffic."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "See Klacks in your logistics business",
+    "text": "Try the Playground to see how Klacks plans routes, working hours and drivers &mdash; or install it directly on your own infrastructure. No licence fees and no registration required."
+  }
+}

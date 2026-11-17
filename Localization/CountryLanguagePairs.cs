@@ -4,7 +4,9 @@ namespace Klacks.Marketing.Localization;
 
 /// <summary>
 /// The real pages of the site (owner decision 2026-10-21): a country is served only in the languages spoken there, as
-/// listed in LanguageCountries ("land-ch" in de, fr and it, "land-jp" in ja, English for GB, IE, SA and AE). Every other
+/// listed in LanguageCountries ("land-ch" in de, fr and it, "land-jp" in ja, English for GB, IE, SA and AE). Extension
+/// (owner decision 2026-11-17): Switzerland is additionally served in English ("/en/land-ch"), so "land-ch" is a real page
+/// in de, fr, it and en; German stays its primary culture and the x-default of its hreflang cluster. Every other
 /// culture/country combination ("/ja/land-ch") is not a page and permanently redirects to the culture's home country
 /// ("/ja/land-jp"), the same jump the language switch makes. German is the exception: its variants of the other
 /// countries ("/land-jp") are the authoring masters of the translations and stay reachable as a noindex preview.

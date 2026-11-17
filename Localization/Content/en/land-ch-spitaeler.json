@@ -1,0 +1,94 @@
+{
+  "pageTitle": "Klacks for Hospitals in Switzerland | On-Call Duty (Pikett), Junior Doctor Hours & 42+4",
+  "hero": {
+    "badgeIcon": "local_hospital",
+    "badge": "For hospitals &amp; clinics in Switzerland",
+    "titleHtml": "Rosters that <span class=\"text-secondary\">work around the clock.</span>",
+    "subtitle": "Klacks plans wards, on-call duty (Pikett) and junior doctor hours without gaps &mdash; with on-site and stand-by on-call duty as separate shift types. Installed at your site, so patient data stays on your own servers &mdash; optionally with a local AI model.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks roster grid for Swiss hospitals",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Everyday hospital work in Switzerland",
+    "title": "Junior doctor hours, on-call duty and the road to 42+4",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Junior doctors: 50-hour limit &amp; excess hours",
+        "text": "Junior doctors (Assistenzärztinnen und -ärzte) may work a maximum of 50 hours a week, and excess hours beyond the statutory maximum (Überzeit) are limited to 140 hours a year &mdash; hardly possible to keep track of by hand across many rotations."
+      },
+      {
+        "icon": "call",
+        "title": "On-call in the hospital or from home?",
+        "text": "On-call duty on site in the hospital counts as full working time, on-call duty from home only as the actual time deployed, including the journey in &mdash; every roster must reflect this distinction correctly."
+      },
+      {
+        "icon": "trending_down",
+        "title": "On the way to 42+4",
+        "text": "Some hospitals &mdash; such as University Hospital Zurich &mdash; are gradually reducing weekly working time towards a 42+4-hour model: one hour less year by year, with operational safety unchanged."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Compensating Sunday rest correctly",
+        "text": "For Sunday assignments of more than 5 hours, a 24-hour substitute rest day is due in the preceding or following week (Art. 20 ArG) &mdash; hardly possible to keep track of by hand across many wards and rotations."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "The upcoming BGAP in view",
+        "text": "For nursing staff, the Federal Act on Working Conditions in Nursing (BGAP) &mdash; the nursing initiative &mdash; is not yet in force, but in future provides for a maximum working time of 45 hours, more advance notice in rostering and regulated compensation for on-call duty &mdash; if you plan properly today, you will be prepared when it comes into force."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off Swiss hospitals",
+    "subtitle": "From on-call planning to 24/7 coverage &mdash; everything works together.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Gap-free 24/7 coverage",
+        "text": "Day, late and night shifts across all wards &mdash; Klacks shows every gap immediately and fills it automatically on request."
+      },
+      {
+        "icon": "gavel",
+        "title": "Junior doctor hours monitored automatically",
+        "text": "Klacks continuously monitors the 50-hour weekly limit and makes any breach visible immediately &mdash; on request, Klacks hard-blocks the breach in automatic planning; with manual planning it stays at a warning. The 140-hour annual limit for excess hours (Überzeit) can be stored as a reference value."
+      },
+      {
+        "icon": "call",
+        "title": "On-call duty planned separately",
+        "text": "You map on-site on-call duty in the hospital and on-call duty from home separately in Klacks &mdash; as distinct, configurable shift or absence types; Klacks does not automatically calculate how differently they count as working time."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications &amp; wards",
+        "text": "Every shift is assigned only to suitably qualified staff &mdash; per ward, department and role."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Installed at your site: data stays on your servers",
+        "text": "Klacks runs on your infrastructure. Staff and patient data stays on your servers &mdash; with a local AI model, no AI request goes to an external AI provider."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy understands your request",
+        "text": "“Fill the internal medicine night shifts for next week” is all it takes &mdash; Klacksy starts the planning, Klacks takes qualification and maximum working time into account."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Night premium documented automatically",
+        "text": "Klacks automatically calculates and documents the night hours that attract a premium under Art. 17b ArG &mdash; as the basis for the statutory time credit."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Junior doctor rotation and on-call duty, one plan",
+    "text": "Klacks keeps the 50-hour limit in view, records the annual limit for excess hours as a reference value, maps on-site and stand-by on-call duty as separate shift types and shows the ward manager early where things are getting tight &mdash; including on the way to step models such as 42+4. You can already store a minimum lead time for publishing the roster (e.g. two weeks) today; Klacks uses it to calculate when the plan must be ready &mdash; so once the BGAP comes into force for nursing staff, the planning basis is already in place."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "See Klacks in your hospital",
+    "text": "Try the Playground to see how Klacks handles on-call duty, junior doctor hours and wards &mdash; or install it directly within your organisation. No licence fees and no registration required."
+  }
+}

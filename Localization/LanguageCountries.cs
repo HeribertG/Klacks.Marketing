@@ -10,7 +10,7 @@ public static class LanguageCountries
     private static readonly Dictionary<string, string[]> ByLanguage = new(StringComparer.OrdinalIgnoreCase)
     {
         ["de"] = new[] { "land-de", "land-at", "land-ch" },
-        ["en"] = new[] { "land-gb", "land-sa", "land-ae", "land-ie" },
+        ["en"] = new[] { "land-gb", "land-sa", "land-ae", "land-ie", "land-ch" },
         ["ar"] = new[] { "land-sa", "land-ae", "land-il" },
         ["he"] = new[] { "land-il" },
         ["ja"] = new[] { "land-jp" },

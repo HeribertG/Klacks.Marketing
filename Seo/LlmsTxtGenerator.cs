@@ -112,6 +112,7 @@ public static class LlmsTxtGenerator
         ("land-ie", "Ireland"),
         ("land-ae", "United Arab Emirates"),
         ("land-sa", "Saudi Arabia"),
+        ("land-ch", "Switzerland"),
     };
 
     private static SupportedCulture English =>

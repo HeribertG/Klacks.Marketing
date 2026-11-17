@@ -62,7 +62,7 @@ public class SimpleStartPageTests
         html.ShouldNotContain(NoindexMarker);
     }
 
-    [TestCase("/fr/land-ch", "de,fr,it")]
+    [TestCase("/fr/land-ch", "de,en,fr,it")]
     [TestCase("/en/land-gb", "en")]
     public async Task Simple_page_keeps_the_country_hreflang_cluster(string path, string cultures)
     {
@@ -74,8 +74,9 @@ public class SimpleStartPageTests
         }
     }
 
-    [TestCase("/land-ch", "de,fr,it", "/land-ch")]
-    [TestCase("/it/land-ch", "de,fr,it", "/land-ch")]
+    [TestCase("/land-ch", "de,en,fr,it", "/land-ch")]
+    [TestCase("/it/land-ch", "de,en,fr,it", "/land-ch")]
+    [TestCase("/en/land-ch", "de,en,fr,it", "/land-ch")]
     [TestCase("/ja/land-jp", "ja", "/ja/land-jp")]
     [TestCase("/nl/land-be", "fr,nl", "/fr/land-be")]
     [TestCase("/he/land-il", "ar,he", "/he/land-il")]

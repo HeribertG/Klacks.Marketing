@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Klacks for Hotels & Restaurants in Switzerland | Rosters with L-GAV Checks",
+  "hero": {
+    "badgeIcon": "restaurant",
+    "badge": "For hotels &amp; restaurants",
+    "titleHtml": "Early, late, night shift &mdash; <span class=\"text-secondary\">L-GAV rules in view.</span>",
+    "subtitle": "Klacks plans service, kitchen and housekeeping under the Swiss Employment Act and the L-GAV &mdash; the collective labour agreement that is generally binding for all hospitality businesses, with a 42-hour target working week, two rest days per week and the 7-day rule.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for rosters in hotels and restaurants in Switzerland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday hospitality",
+    "title": "Full house, thin staffing",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "The L-GAV applies to everyone",
+        "text": "The L-GAV has been declared generally binding by the Federal Council &mdash; it applies to every hospitality business, member or not. 42 target working hours (seasonal businesses 43.5, small businesses 45) instead of the statutory 50 are not a voluntary bonus but an obligation."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "7 days in a row &mdash; but done right",
+        "text": "The L-GAV allows up to seven working days in a row &mdash; but only with a maximum of 9 hours of daily working time followed by at least 83 hours off. On top of that come two rest days per week. Chaining this together by hand is error-prone."
+      },
+      {
+        "icon": "nights_stay",
+        "title": "Nights &amp; few Sundays off",
+        "text": "Night and Sunday work in hospitality requires no permit, and Sundays off can be reduced to four per year &mdash; in return, the night premiums (+25 % for temporary, +10 % time for regular night work) must be shown properly."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off hotels &amp; restaurants",
+    "subtitle": "From the early shift to the night shift &mdash; everything works together.",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "L-GAV stored as a rule set",
+        "text": "42-hour target, two rest days per week, 7-day sequence with 83 hours of compensation &mdash; you store the L-GAV requirements as a rule set, and Klacks makes every breach of them visible immediately."
+      },
+      {
+        "icon": "timer",
+        "title": "Rest periods in view",
+        "text": "Eleven hours of rest under Art. 15a ArG &mdash; can be shortened to 8 hours at most once a week, provided the average over two weeks stays at 11 hours. Klacks checks the stored rest-period limits in real time and warns of breaches."
+      },
+      {
+        "icon": "schedule",
+        "title": "14-hour span respected",
+        "text": "Day and evening work including breaks must fit within the 14-hour span, and night work is limited to 9 to 10 hours &mdash; Klacks checks the maximum daily working times you store and warns before they are exceeded; you keep an eye on the 14-hour span including breaks yourself."
+      },
+      {
+        "icon": "payments",
+        "title": "Night premiums as time credit",
+        "text": "+25 % pay for temporary, +10 % time for regular night work (11pm to 6am) &mdash; Klacks credits the stored time premium as time credit and provides the hours for payroll; Klacks does not calculate the pay premium."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy understands your request",
+        "text": "“Plan the weekend, two service staff are off sick” is all it takes &mdash; Klacksy starts the replanning."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences covered quickly",
+        "text": "If someone drops out, Klacks immediately shows who is qualified, available and within the rest-period and maximum-working-time limits."
+      }
+    ]
+  },
+  "example": null,
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "See Klacks in your business",
+    "text": "Try the Playground to see how Klacks handles rosters, premiums and rest periods &mdash; or install it directly on your own infrastructure. No licence fees and no registration required."
+  }
+}

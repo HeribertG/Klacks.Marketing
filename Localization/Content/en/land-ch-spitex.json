@@ -1,0 +1,80 @@
+{
+  "pageTitle": "Klacks for Spitex Home Care in Switzerland | Travel Time, Sunday Rest & BGAP",
+  "metaDescription": "Rostering for Spitex home care in Switzerland: rounds, travel time as working time, Sundays off. Open source, installed at your site, data on your server.",
+  "hero": {
+    "badgeIcon": "home_health",
+    "badge": "For Spitex &amp; home care in Switzerland",
+    "titleHtml": "More time for care, <span class=\"text-secondary\">less for route planning.</span>",
+    "subtitle": "Klacks schedules visits and rounds automatically &mdash; including travel time between clients as working time and monitored Sundays off, hard-blocked in automatic planning on request. Installed at your site, so patient data stays on your own servers &mdash; optionally with a local AI model.",
+    "screenshotFile": "app-timeline-de.png",
+    "screenshotAlt": "Klacks timeline view for Spitex round planning in Switzerland",
+    "screenshotLabel": "Timeline"
+  },
+  "challenges": {
+    "eyebrow": "Everyday Spitex work in Switzerland",
+    "title": "Travel time, on-call duty (Pikett) and the upcoming BGAP",
+    "items": [
+      {
+        "icon": "alt_route",
+        "title": "Travel time counts as working time",
+        "text": "Journeys between clients are full working time &mdash; only the first journey in the morning and the last journey home count as a normal, unpaid commute (Art. 13 of Ordinance 1 to the Employment Act, ArGV 1)."
+      },
+      {
+        "icon": "event_repeat",
+        "title": "Keeping enough Sundays off",
+        "text": "At least every second Sunday must be a day off &mdash; hard to keep track of by hand with changing rounds and shifts."
+      },
+      {
+        "icon": "hourglass_top",
+        "title": "The upcoming BGAP in view",
+        "text": "The Federal Act on Working Conditions in Nursing (BGAP) &mdash; the nursing initiative &mdash; is not yet in force, but in future provides for a maximum working time of 45 hours, more advance notice in rostering and regulated compensation for on-call duty (Pikett)."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off Spitex in Switzerland",
+    "subtitle": "From the automatic round to compensation for Sunday work &mdash; everything works together.",
+    "items": [
+      {
+        "icon": "route",
+        "title": "Rounds optimised automatically",
+        "text": "Klacks plans visit routes so that journeys stay short and time windows are met &mdash; by car, bike or on foot."
+      },
+      {
+        "icon": "schedule",
+        "title": "Travel time recorded as working time",
+        "text": "A round counts as working time from start to finish, minus unpaid breaks &mdash; the journeys between clients lie within it. When optimising the route, Klacks calculates them via a routing service, or as an estimate without one. Whether the first journey and the last journey home are included depends on the start and end of the round; Klacks does not recognise this automatically."
+      },
+      {
+        "icon": "event_available",
+        "title": "Sundays off monitored &mdash; hard-blocked in automatic planning on request",
+        "text": "Klacks monitors Sundays off in a rolling window (e.g. every second Sunday off) and, on request, hard-blocks breaches in automatic planning (with manual planning it stays at a warning) &mdash; night shifts that run into Sunday correctly count as a working Sunday. Klacks automatically factors weekly rest days into the plan."
+      },
+      {
+        "icon": "verified",
+        "title": "Qualifications factored in automatically",
+        "text": "Every visit is assigned only to people with the matching qualification &mdash; with no manual checking at all."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Installed at your site: data stays on your servers",
+        "text": "Klacks runs on your own infrastructure. Patient data stays on your servers &mdash; with a local AI model, no AI request goes to an external AI provider."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy understands your request",
+        "text": "“Fill the rounds for tomorrow” is all it takes. If someone is off sick, Klacksy immediately suggests available cover."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Travel time, Sunday duty, one plan",
+    "text": "Klacks counts the round, including the journeys between clients, as working time and monitors Sundays off in a rolling window &mdash; no manual recalculating. You can already store a minimum lead time for publishing the roster (e.g. two weeks) today; Klacks uses it to calculate when the plan must be ready &mdash; so once the BGAP comes into force, the planning basis is already in place."
+  },
+  "showRoutePlanning": true,
+  "cta": {
+    "title": "See Klacks in your Spitex organisation",
+    "text": "Try the Playground to see how Klacks handles travel time, rounds and the monitoring of Sundays off &mdash; or install it directly on your own infrastructure. No licence fees and no registration required."
+  }
+}

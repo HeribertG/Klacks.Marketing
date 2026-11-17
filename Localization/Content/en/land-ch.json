@@ -1,0 +1,116 @@
+{
+  "pageTitle": "Klacks for Swiss Businesses | Open Source Workforce Scheduling with Data on Your Servers",
+  "hero": {
+    "badgeIcon": "shield_lock",
+    "badge": "Open Source &middot; No licence fees &middot; Swiss data protection",
+    "titleHtml": "Workforce scheduling where <span class=\"text-secondary\">you stay in control.</span>",
+    "subtitle": "Klacks schedules shifts automatically, optimises routes and can be controlled through an AI assistant &mdash; installed at your site, open source, with the AI model of your choice, optionally hosted locally. That way staff data stays on your own servers; the assessment under the revised Federal Act on Data Protection (revFADP, revDSG) remains with you.",
+    "screenshotFile": "app-schedule-de.png",
+    "screenshotAlt": "Klacks schedule overview for Swiss businesses",
+    "screenshotLabel": "Schedule"
+  },
+  "challenges": {
+    "eyebrow": "Everyday scheduling in Swiss businesses",
+    "title": "Employment Act (ArG), data protection and the call for control",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Keeping maximum weekly working hours in view",
+        "text": "Depending on the industry, maximum working time is 45 or 50 hours a week &mdash; and the premium rules for hours beyond that statutory maximum (Überzeit) differ from group to group. Doing this by hand is error-prone."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Planning rest periods &amp; night work correctly",
+        "text": "11 hours of daily rest, a maximum working span of 14 hours and a time bonus for regular night work &mdash; the Employment Act (ArG) requires complete control over every schedule."
+      },
+      {
+        "icon": "cloud_off",
+        "title": "Your own servers instead of a forced US cloud",
+        "text": "Since the revised Federal Act on Data Protection (revFADP, revDSG), many businesses have been asking whether staff data may go into a US cloud at all &mdash; especially for AI functions."
+      }
+    ]
+  },
+  "rulesCalendar": {
+    "eyebrow": "Rules &amp; calendar",
+    "title": "A calendar for every reality",
+    "text": "In Switzerland, public holidays and rules are a patchwork &mdash; different from canton to canton, sometimes even from municipality to municipality. Klacks handles exactly what simple tools get wrong.",
+    "items": [
+      {
+        "icon": "place",
+        "title": "Down to municipality level",
+        "text": "Country, region (canton, federal state, département) and municipality &mdash; pre-configured to match."
+      },
+      {
+        "icon": "layers",
+        "title": "Mix calendars",
+        "text": "Several countries at once &mdash; for example Geneva and the USA for a business with trading partners there."
+      },
+      {
+        "icon": "tune",
+        "title": "Binding or purely informational",
+        "text": "For each calendar, you decide whether a public holiday affects hours &amp; premiums &mdash; or simply appears as a reminder."
+      }
+    ],
+    "imageFile": "app-calendar-de.png",
+    "imageAlt": "Public holiday rules in Klacks: list of a country's public holidays, each rule with its nation and region",
+    "imageCaption": "Real rules from Klacks: every public holiday rule carries a country and a region, and the list can be filtered by them &mdash; freely extensible."
+  },
+  "solutions": {
+    "title": "How Klacks takes the load off Swiss businesses",
+    "subtitle": "From working-time monitoring to your own infrastructure &mdash; everything works together.",
+    "items": [
+      {
+        "icon": "gavel",
+        "title": "Maximum weekly working hours monitored automatically",
+        "text": "Klacks continuously monitors the 45-hour and 50-hour weekly limits for each industry and makes any breach visible immediately &mdash; on request, Klacks hard-blocks the breach in automatic planning; with manual planning it stays at a warning. The industry-specific thresholds for overtime premiums can be stored as a reference value; Klacks credits overtime premiums only as time credit and does not calculate amounts."
+      },
+      {
+        "icon": "bedtime",
+        "title": "Rest periods planned automatically, night shifts counted",
+        "text": "Klacks automatically factors the 11-hour rest period into planning, and the night hours that attract a premium are documented. Klacks automatically counts the night shifts in the year and warns from the 25th night &mdash; on request, Klacks hard-blocks further night shifts in automatic planning; with manual planning it stays at a warning. You document the statutory time credit yourself."
+      },
+      {
+        "icon": "route",
+        "title": "Routes &amp; assignments optimised automatically",
+        "text": "Klacks arranges assignments and routes so that journeys stay short and time windows are met &mdash; usable across industries."
+      },
+      {
+        "icon": "shield_lock",
+        "title": "Installed at your site: data on your servers",
+        "text": "Klacks runs on your own infrastructure, and you choose the AI model yourself &mdash; with a locally hosted model, no AI request containing staff data goes to an external AI provider."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Klacksy: rule-based, not a black box",
+        "text": "The built-in AI assistant Klacksy understands instructions in everyday language and controls Klacks; the plan is calculated by the rule-based planning engine &mdash; traceable through defined rules, not an opaque AI decision."
+      },
+      {
+        "icon": "event_busy",
+        "title": "Absences covered quickly",
+        "text": "If someone drops out, Klacks immediately shows who is qualified and available &mdash; without overturning the whole plan."
+      },
+      {
+        "icon": "science",
+        "title": "Test plan changes risk-free",
+        "text": "Before a plan change goes live, you can run it through as an isolated copy &mdash; the 11-hour rest period under the ArG and premiums are calculated live exactly as in the real plan. Only once everything checks out do you apply the variant; until then, your live schedule stays unchanged. This lets you prepare a suitable scenario in advance for foreseeable situations &mdash; such as a staff member off sick or a peak in orders &mdash; so you are ready to act immediately when it matters, instead of improvising under time pressure. There is no artificial limit &mdash; you create as many scenarios as your planning needs."
+      }
+    ]
+  },
+  "klacksy": {
+    "eyebrow": "AI assistant",
+    "title": "Klacksy: the built-in assistant for your team",
+    "text": "Klacksy isn't a bolted-on marketing chatbot but is embedded directly in the Klacks interface. Staff and schedulers use chat to check shift times or clarify availability. A built-in skills and rules system ensures that Klacksy makes traceable suggestions &mdash; not black-box decisions. For businesses with strict data protection requirements, the AI model can also be hosted locally.",
+    "imageFile": "app-klacksy-de.png",
+    "imageAlt": "Klacksy chat assistant in the Klacks interface"
+  },
+  "example": {
+    "eyebrow": "In practice",
+    "title": "Night work and maximum weekly working time at a glance",
+    "text": "Klacks automatically detects when an assignment triggers the night premium or the maximum weekly working time is reached, and makes it visible straight away &mdash; no manual recalculating. On request, Klacks hard-blocks the breach in automatic planning; with manual planning it stays at a warning."
+  },
+  "showRoutePlanning": false,
+  "cta": {
+    "title": "See Klacks in your business",
+    "text": "Try the Playground to see how Klacks automates ArG maximum working hours, rest periods and night premiums &mdash; installed at your site or in the Playground, without licence fees and without registration."
+  }
+}

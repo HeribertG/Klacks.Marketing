@@ -43,7 +43,7 @@ public class CountryLanguagePairsTests
     [TestCase("de", "land-ch", true)]
     [TestCase("fr", "land-ch", true)]
     [TestCase("it", "land-ch", true)]
-    [TestCase("en", "land-ch", false)]
+    [TestCase("en", "land-ch", true)]
     [TestCase("ja", "land-ch", false)]
     [TestCase("ja", "land-jp", true)]
     [TestCase("de", "land-jp", false)]
@@ -70,12 +70,13 @@ public class CountryLanguagePairsTests
     }
 
     [TestCase("/ja/land-ch", "/ja/land-jp")]
-    [TestCase("/en/land-ch/spitex", "/en/land-gb/spitex")]
+    [TestCase("/en/land-de/spitex", "/en/land-gb/spitex")]
     [TestCase("/ja/land-ch/impressum", "/ja/land-jp/impressum")]
     [TestCase("/it/land-de/experten", "/it/land-it/experten")]
     [TestCase("/zh-cn/land-tw", "/zh-cn/land-cn")]
     [TestCase("/fr/LAND-DE", "/fr/land-fr")]
     [TestCase("/fr/land-ch", null)]
+    [TestCase("/en/land-ch/spitex", null)]
     [TestCase("/land-ch/spitex", null)]
     [TestCase("/ja/land-jp", null)]
     [TestCase("/land-jp", null)]
@@ -111,7 +112,7 @@ public class CountryLanguagePairsTests
     }
 
     [TestCase("/ja/land-ch?ref=share", "/ja/land-jp?ref=share")]
-    [TestCase("/en/land-ch/spitex", "/en/land-gb/spitex")]
+    [TestCase("/en/land-de/spitex", "/en/land-gb/spitex")]
     [TestCase("/nb/land-ch", "/nb/land-no")]
     [TestCase("/en/land-cn", "/en/land-gb")]
     public async Task Foreign_language_country_page_answers_301_to_the_home_country(string path, string expectedLocation)
