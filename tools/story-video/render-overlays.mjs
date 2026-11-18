@@ -308,3 +308,60 @@ export async function renderEndcard(outDir, endcard, culture, options = {}) {
     return { file, report, problems, fits: fits.filter((f) => f.fontSize !== f.from) };
   });
 }
+
+const STARTCARD_FILE = `startcard${PNG}`;
+const LABEL_FILE = `corner-label${PNG}`;
+const STARTCARD_STYLE = Object.freeze({ textTop: 150, textWidth: 1000, fontSize: 38, fontWeight: 600, lineHeight: 1.45, paragraphGap: 22, minFontSize: 26, maxHeight: 470 });
+const LABEL_STYLE = Object.freeze({ top: 14, left: 560, fontSize: 18, fontWeight: 700, color: "#ffffff", background: "rgba(20,24,29,0.72)", padding: "5px 14px", radius: 999 });
+
+function startcardHtml(text, culture, fonts, fontFamily) {
+  const e = ENDCARD_STYLE;
+  const s = STARTCARD_STYLE;
+  const direction = cultureDirection(culture);
+  const paragraphs = String(text).split(/(?<=\.)\s+/).map((p) => `<p>${escapeHtml(p)}</p>`).join("");
+  return `<!doctype html><html lang="${escapeHtml(culture)}" dir="${direction}"><head><meta charset="utf-8">${fonts}<style>
+html,body{margin:0;padding:0}body{width:${FRAME_WIDTH}px;height:${FRAME_HEIGHT}px;position:relative;overflow:hidden;background:${e.background};font-family:${fontFamily}}
+.bar{position:absolute;top:0;left:0;right:0;height:${e.topBarHeight}px;background:${e.topBarColor}}
+.text{position:absolute;top:${s.textTop}px;left:50%;transform:translateX(-50%);width:${s.textWidth}px;text-align:center;color:${e.textColor};font-size:${s.fontSize}px;font-weight:${s.fontWeight};line-height:${s.lineHeight};text-wrap:balance}
+.text p{margin:0 0 ${s.paragraphGap}px 0}
+</style></head><body><div class="bar"></div><div class="text">${paragraphs}</div></body></html>`;
+}
+
+function fitStartcard({ minFontSize, maxHeight }) {
+  const el = document.querySelector(".text");
+  let size = parseFloat(getComputedStyle(el).fontSize);
+  while (el.getBoundingClientRect().height > maxHeight && size > minFontSize) {
+    size -= 1;
+    el.style.fontSize = `${size}px`;
+  }
+  return { fontSize: size, height: el.getBoundingClientRect().height, fits: el.getBoundingClientRect().height <= maxHeight };
+}
+
+/** Renders an opaque start card (white, orange top bar like the end card) with a disclaimer text, one paragraph per sentence. */
+export async function renderStartcard(outDir, text, culture, options = {}) {
+  const settings = options.settings ?? renderSettings(null);
+  const fonts = await inlineInterFaces();
+  return withPage(async (page, client) => {
+    const file = path.join(outDir, STARTCARD_FILE);
+    await prepare(page, startcardHtml(text, culture, fonts, settings.fontFamily));
+    const fit = await page.evaluate(fitStartcard, { minFontSize: STARTCARD_STYLE.minFontSize, maxHeight: STARTCARD_STYLE.maxHeight });
+    await page.screenshot({ path: file });
+    const used = await platformFonts(client, ".text");
+    const problems = fontProblems("startcard", used, settings.interRequired);
+    if (!fit.fits) problems.push(`startcard text ${Math.round(fit.height)}px high at ${fit.fontSize}px: shorten the text`);
+    return { file, fit, problems };
+  });
+}
+
+/** Renders a transparent full-frame overlay with a small persistent label (e.g. "Demo-Daten") at the top of the app take. */
+export async function renderCornerLabel(outDir, text, culture, options = {}) {
+  const settings = options.settings ?? renderSettings(null);
+  const fonts = await inlineInterFaces();
+  const l = LABEL_STYLE;
+  const html = `${fonts}<style>${baseCss(settings.fontFamily)}.label{position:absolute;top:${l.top}px;left:${l.left}px;font-size:${l.fontSize}px;font-weight:${l.fontWeight};color:${l.color};background:${l.background};padding:${l.padding};border-radius:${l.radius}px;line-height:1.3}</style><div class="label" lang="${escapeHtml(culture)}">${escapeHtml(text)}</div>`;
+  return withPage(async (page, client) => {
+    const file = await shoot(page, html, path.join(outDir, LABEL_FILE), true);
+    const used = await platformFonts(client, ".label");
+    return { file, problems: fontProblems("corner label", used, settings.interRequired) };
+  });
+}

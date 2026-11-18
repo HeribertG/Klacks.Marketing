@@ -30,6 +30,9 @@
  *        --print-graph prints the take filter graph without encoding
  * Exit code 1 when a check fails (caption over two lines, glyphs not in the font, reading speed, panel or greeting not found);
  * the video is still written so the frames can be inspected.
+ * Optional fields of the per-clip caption file (<CAPTIONS_PREFIX><culture>.json): "startcard" (disclaimer text, shown on an opaque card for
+ * START_CARD_SECONDS before the comic scene, the music offset moves with it), "label" (small persistent label over the app take, e.g. "Demo-Daten")
+ * and "endcard" (fields that override the end card texts of captions.<culture>.json for this clip only, e.g. the formal "Sie" pill).
  */
 
 import { execFile } from "node:child_process";
@@ -39,7 +42,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { parseArgs, promisify } from "node:util";
 import { findCaptionsFile, findProfile, normalizeCulture, renderSettings } from "./culture-profile.mjs";
 import { cueSidecarPath } from "../lib/caption-overlay.mjs";
-import { renderCaptions, renderEndcard } from "./render-overlays.mjs";
+import { renderCaptions, renderCornerLabel, renderEndcard, renderStartcard } from "./render-overlays.mjs";
 import { FINAL_CODEC, POSTER_CODEC, SEGMENT_CODEC, WEBM_CODEC } from "./story-recipe.mjs";
 import { coverFilters, planZooms, zoomedTakeGraph } from "./take-detail.mjs";
 
@@ -95,7 +98,9 @@ const DUMMY_CAPTION = "-";
 const DUMMY_KEYS = Object.freeze(["y1", "y2"]);
 const PIX_RGB = "rgb24";
 const PIX_GRAY = "gray";
-const FILES = Object.freeze({ raw: "a.mp4", take: "b.mp4", morning: "c.mp4", endcard: "e.mp4", still: "bg.png" });
+const FILES = Object.freeze({ raw: "a.mp4", take: "b.mp4", morning: "c.mp4", endcard: "e.mp4", still: "bg.png", start: "s.mp4" });
+const START_CARD_SECONDS = 4;
+const START_CARD_FADE_SECONDS = 0.5;
 const EXT = Object.freeze({ mp4: ".mp4", webm: ".webm", poster: ".webp", json: ".json" });
 
 const num = (value) => String(Number(value.toFixed(DECIMALS)));
@@ -220,9 +225,7 @@ function drawtextLines(replacement, offsetX, enable) {
 
 function takeFilter(panel, greeting, replacement, coverColor) {
   const L = TAKE_LAYOUT;
-  const panelWindow = panel.intervals.map(([from, until]) => `between(t,${num(from)},${num(until)})`).join("+");
   const filters = [`fps=${VIDEO_FPS}`];
-  if (panel.intervals.length > 0) filters.push(`drawbox=x=${panel.x}:y=${L.settingsRows.y}:w=${L.panelWidth}:h=${L.settingsRows.height}:color=${L.coverColor}:t=fill:enable='${panelWindow}'`);
   if (!greeting) {
     return filters.join(",");
   }
@@ -285,11 +288,12 @@ function takeChain(filter, zoom = null) {
   return [`[1:v]scale=1280:720,boxblur=${L.backgroundBlur},eq=brightness=${L.backgroundBrightness}[bg]`, zoom ? zoomedTakeGraph(filter, zoom) : `[0:v]${filter}[t]`, `[bg][t]overlay=${L.insetX}:0:shortest=1,format=yuv420p[v]`];
 }
 
-async function buildTake(tools, take, still, filter, zoom, file) {
-  const L = TAKE_LAYOUT;
+async function buildTake(tools, take, still, filter, zoom, file, label = null) {
   const seconds = await durationOf(tools, take);
   const chain = takeChain(filter, zoom);
-  await ffmpeg(tools, ["-i", take, "-loop", "1", "-framerate", String(VIDEO_FPS), "-t", num(seconds), "-i", still, "-filter_complex", chain.join(";"), "-map", "[v]", ...segmentEncode(), file]);
+  const labelInput = label ? ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", num(seconds), "-i", label] : [];
+  if (label) chain.push("[v][2:v]overlay=0:0:shortest=1,format=yuv420p[vl]");
+  await ffmpeg(tools, ["-i", take, "-loop", "1", "-framerate", String(VIDEO_FPS), "-t", num(seconds), "-i", still, ...labelInput, "-filter_complex", chain.join(";"), "-map", label ? "[vl]" : "[v]", ...segmentEncode(), file]);
 }
 
 async function buildMorning(tools, raw, variant, caption, window, file) {
@@ -302,20 +306,23 @@ async function buildMorning(tools, raw, variant, caption, window, file) {
 async function mux(tools, seg, outBase) {
   const [dA, dB, dC] = [await durationOf(tools, seg.raw), await durationOf(tools, seg.take), await durationOf(tools, seg.morning)];
   const x = CROSSFADES;
-  const oB = dA - x.toTake, oC = oB + dB - x.toMorning, oE = oC + dC - x.toEndcard, total = oE + ENDCARD_SECONDS;
+  const startShift = seg.hasStart ? (await durationOf(tools, seg.start)) - START_CARD_FADE_SECONDS : 0;
+  const oB = startShift + dA - x.toTake, oC = oB + dB - x.toMorning, oE = oC + dC - x.toEndcard, total = oE + ENDCARD_SECONDS;
+  const first = seg.hasStart ? 1 : 0;
   const graph = [
-    `[0:v][1:v]xfade=transition=fade:duration=${x.toTake}:offset=${num(oB)}[ab]`,
-    `[ab][2:v]xfade=transition=fade:duration=${x.toMorning}:offset=${num(oC)}[abc]`,
-    `[abc][3:v]xfade=transition=fadewhite:duration=${x.toEndcard}:offset=${num(oE)},format=yuv420p[v]`,
+    ...(seg.hasStart ? [`[0:v][1:v]xfade=transition=fadewhite:duration=${START_CARD_FADE_SECONDS}:offset=${num(startShift)}[sa]`] : []),
+    `[${seg.hasStart ? "sa" : "0:v"}][${first + 1}:v]xfade=transition=fade:duration=${x.toTake}:offset=${num(oB)}[ab]`,
+    `[ab][${first + 2}:v]xfade=transition=fade:duration=${x.toMorning}:offset=${num(oC)}[abc]`,
+    `[abc][${first + 3}:v]xfade=transition=fadewhite:duration=${x.toEndcard}:offset=${num(oE)},format=yuv420p[v]`,
   ];
-  const inputs = ["-i", seg.raw, "-i", seg.take, "-i", seg.morning, "-i", seg.endcard];
+  const inputs = [...(seg.hasStart ? ["-i", seg.start] : []), "-i", seg.raw, "-i", seg.take, "-i", seg.morning, "-i", seg.endcard];
   const f = FINAL_CODEC;
   const music = cli.silent ? null : cli.music ? path.resolve(cli.music) : path.join(toolDir, MUSIC.file);
   let audio = ["-an"];
   if (music) {
     inputs.push("-stream_loop", "-1", "-i", music);
     const delayMs = Math.round(oB * MS_PER_SECOND);
-    graph.push(`[4:a]aformat=channel_layouts=stereo,aresample=${MUSIC.sampleRate},volume=${MUSIC.volume},atrim=0:${num(dB)},afade=t=in:d=${MUSIC.fadeInSeconds},afade=t=out:st=${num(dB - MUSIC.fadeOutSeconds)}:d=${MUSIC.fadeOutSeconds},adelay=${delayMs}|${delayMs},apad=whole_dur=${num(total)},atrim=0:${num(total)}[a]`);
+    graph.push(`[${first + 4}:a]aformat=channel_layouts=stereo,aresample=${MUSIC.sampleRate},volume=${MUSIC.volume},atrim=0:${num(dB)},afade=t=in:d=${MUSIC.fadeInSeconds},afade=t=out:st=${num(dB - MUSIC.fadeOutSeconds)}:d=${MUSIC.fadeOutSeconds},adelay=${delayMs}|${delayMs},apad=whole_dur=${num(total)},atrim=0:${num(total)}[a]`);
     audio = ["-map", "[a]", "-c:a", f.audioCodec, "-b:a", f.audioBitrate];
   }
   const mp4 = `${outBase}${EXT.mp4}`;
@@ -326,7 +333,7 @@ async function mux(tools, seg, outBase) {
   await ffmpeg(tools, ["-i", mp4, "-c:v", w.codec, "-crf", String(w.crf), "-b:v", "0", "-row-mt", "1", ...webmAudio, `${outBase}${EXT.webm}`]);
   const p = POSTER_CODEC;
   await ffmpeg(tools, ["-i", mp4, "-frames:v", "1", "-c:v", p.codec, "-quality", String(p.quality), "-compression_level", String(p.compressionLevel), `${outBase}${EXT.poster}`]);
-  return { total, offsets: { take: oB, morning: oC, endcard: oE } };
+  return { total, offsets: { raw: startShift, take: oB, morning: oC, endcard: oE } };
 }
 
 async function detectTake(o) {
@@ -380,7 +387,7 @@ async function main() {
   const config = JSON.parse(await readFile(o.captionsFile, "utf8"));
   const storyFile = await findCaptionsFile(o.culture);
   if (!storyFile) throw new Error(`no captions.${o.culture}.json for the end card`);
-  const endcard = JSON.parse(await readFile(storyFile, "utf8")).endcard;
+  const endcard = { ...JSON.parse(await readFile(storyFile, "utf8")).endcard, ...(config.endcard ?? {}) };
   const keys = o.variant.captionKeys;
   const missing = keys.filter((k) => !config.captions?.[k]);
   if (missing.length > 0) throw new Error(`${o.captionsFile}: missing ${missing.join(", ")}`);
@@ -397,6 +404,10 @@ async function main() {
   problems.push(...caps.problems.filter((p) => !unused.some((k) => p.startsWith(`${k}:`))));
   const card = await renderEndcard(overlayDir, endcard, o.culture, { settings });
   problems.push(...card.problems);
+  const startcard = config.startcard ? await renderStartcard(overlayDir, config.startcard, o.culture, { settings }) : null;
+  if (startcard) problems.push(...startcard.problems);
+  const label = config.label ? await renderCornerLabel(overlayDir, config.label, o.culture, { settings }) : null;
+  if (label) problems.push(...label.problems);
 
   const windows = captionWindows(o.variant);
   const speed = keys.map((k) => {
@@ -413,14 +424,19 @@ async function main() {
   const seg = Object.fromEntries(Object.entries(FILES).map(([k, f]) => [k, path.join(segDir, f)]));
   await ffmpeg(o.tools, ["-ss", num(o.variant.backgroundStillAt), "-i", o.raw, "-frames:v", "1", seg.still]);
   await buildRaw(o.tools, o.raw, o.variant, caps.files, windows, seg.raw);
-  await buildTake(o.tools, o.take, seg.still, prepared.filter, prepared.zoom, seg.take);
+  await buildTake(o.tools, o.take, seg.still, prepared.filter, prepared.zoom, seg.take, label?.file ?? null);
   const morningRaw = o.variant.morningClip ? path.join(path.dirname(o.raw), o.variant.morningClip) : o.raw;
   await buildMorning(o.tools, morningRaw, o.variant, caps.files[MORNING_KEY], windows[MORNING_KEY], seg.morning);
   await ffmpeg(o.tools, ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", String(ENDCARD_SECONDS), "-i", card.file, "-vf", "scale=1280:720,format=yuv420p", ...segmentEncode(), seg.endcard]);
+  if (startcard) {
+    const seconds = recipe.START_CARD_SECONDS ?? START_CARD_SECONDS;
+    await ffmpeg(o.tools, ["-loop", "1", "-framerate", String(VIDEO_FPS), "-t", String(seconds), "-i", startcard.file, "-vf", "scale=1280:720,format=yuv420p", ...segmentEncode(), seg.start]);
+    seg.hasStart = true;
+  }
 
   await mkdir(o.outDir, { recursive: true });
   const result = await mux(o.tools, seg, path.join(o.outDir, `${OUTPUT_PREFIX}${o.culture}`));
-  console.log(`${OUTPUT_PREFIX}${o.culture} (${o.variantName}): ${num(result.total)} s (take from ${num(result.offsets.take)} s, morning from ${num(result.offsets.morning)} s, end card from ${num(result.offsets.endcard)} s)`);
+  console.log(`${OUTPUT_PREFIX}${o.culture} (${o.variantName}): ${num(result.total)} s (comic from ${num(result.offsets.raw)} s, take from ${num(result.offsets.take)} s, morning from ${num(result.offsets.morning)} s, end card from ${num(result.offsets.endcard)} s)`);
   if (problems.length > 0) {
     for (const p of problems) console.error(`! ${p}`);
     process.exitCode = 1;

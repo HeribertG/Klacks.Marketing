@@ -16,6 +16,7 @@
 #         KLACKS_UI_URL   UI served from a Klacks.Ui build that has order-review-navigation, the tour map (P4) and the container refresh (P5);
 #                         default http://localhost:4210 (the dev UI on 4200 is never used for takes)
 # Optional: PSQL (psql.exe), FFMPEG_PATH, KLACKS_VIDEO_FRAMES_DIR, SPITEX_ATTEMPTS (default 2), SPITEX_DB (default klacks_marketing_spitex)
+#           SPITEX_TAKES_DIR (default tools/story-video/source-clips/takes; set it to keep an accepted take there untouched)
 #           KLACKS_VIDEO_MAX_MB (default 12 here: the takes are cut again by the story builder, the 1.5 MB site budget would re-encode a
 #           two-minute take many times), SPITEX_TAKE_TIMEOUT_S (default 3600: the limit covers the take AND its webm/mp4 encoding, which alone can take several minutes)
 # Date window: the sentences name "23. bis 27. November" without a year, so the takes refuse to run outside 2026-01-01 .. 2026-11-26 (the
@@ -41,7 +42,7 @@ export KLACKS_UI_URL="${KLACKS_UI_URL:-http://localhost:4210}"
 export KLACKS_API_URL=https://localhost:5011
 export KLACKS_VIDEO_MAX_MB="${KLACKS_VIDEO_MAX_MB:-12}"
 export FFMPEG_PATH="${FFMPEG_PATH:-$(cygpath -w "$(which ffmpeg)")}"
-TAKES="$ROOT/tools/story-video/source-clips/takes"
+TAKES="${SPITEX_TAKES_DIR:-$ROOT/tools/story-video/source-clips/takes}"
 FRAMES="${KLACKS_VIDEO_FRAMES_DIR:-$(cygpath -u "$TEMP")/klacks-video-frames}"
 API_DEST_NAME="klacks-rec-spitex-api"
 A=spitex-orders-tour

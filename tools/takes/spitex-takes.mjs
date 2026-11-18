@@ -80,7 +80,7 @@ const BREAK_SKILL = "add_container_template_break";
 const OPTIMIZE_SKILL = "optimize_container_route";
 const PLACE_WORK_SKILL = "assign_container_week";
 const SCHEDULE_SKILL = "open_schedule";
-const LOOKUP_ONLY_SKILL = "get_page_controls";
+const LOOKUP_ONLY_SKILLS = new Set(["get_page_controls", "find_tools"]); // a refused lookup (e.g. a second tool search in one answer) is internal, never shown
 const EXPECTED_CALLS_A = [[START_SKILL], [DECISION_SKILL], [PREVIEW_SKILL, EXECUTE_SKILL], [EXECUTE_SKILL, CONFIRM_SKILL], [SPLIT_SKILL], [BUNDLE_SKILL]];
 const EXPECTED_CALLS_B = [[BREAK_SKILL], [PLACE_WORK_SKILL], [SCHEDULE_SKILL]];
 
@@ -128,7 +128,7 @@ const CONTAINER_ROUTE = "/workplace/container-template";
 const SEL_SHIFT_LIST = "#allShiftForm";
 const SEL_SHIFT_ROWS = "#allShiftForm tbody tr";
 const SEL_ABSENCE_ROWS = "#selected-tasks-list tr.absence-item";
-const SEL_MAP_TOGGLE = "button.route-map-toggle";
+const SEL_MAP_TOGGLE = ".route-map-toggle";
 const SEL_MAP_CANVAS = ".route-map-canvas";
 const SEL_STOP_MARKERS = ".route-map-stop-marker";
 const SEL_ROAD_PATH = ".route-map-canvas .leaflet-overlay-pane path";
@@ -652,7 +652,7 @@ function turnProblems(turns, expectedCalls, navigationAllowed) {
     if (turn.content.trim() === "") problems.push(`answer ${i + 1} has no text`);
     if (STRAIGHT_LINE_WORDING.test(turn.content)) problems.push(`answer ${i + 1} calls the travel times straight-line estimates`);
     if (turn.navigateTo && !navigationAllowed(turn)) problems.push(`answer ${i + 1} navigated to ${turn.navigateTo} unexpectedly`);
-    const failed = turn.results.find((r) => r.result.startsWith(SKILL_ERROR_PREFIX) && r.name !== LOOKUP_ONLY_SKILL);
+    const failed = turn.results.find((r) => r.result.startsWith(SKILL_ERROR_PREFIX) && !LOOKUP_ONLY_SKILLS.has(r.name));
     if (failed) problems.push(`answer ${i + 1}: ${failed.name} failed: ${failed.result}`);
   });
   const called = calledSkills(turns);

@@ -3621,7 +3621,7 @@
           "cue": "confirm"
         },
         {
-          "text": "Schneide alle Dienste der Spitex Winterthur nach Wochentagen.",
+          "text": "Schneide alle Dienste der Demo-Spitex nach Wochentagen.",
           "sendWhen": "executed",
           "cue": "cut"
         },
@@ -3631,7 +3631,7 @@
           "cue": "cut"
         },
         {
-          "text": "Bilde für die Spitex Winterthur ab Technikumstrasse 20, 8400 Winterthur 2 Wochentouren mit dem Namen Spitex Tour, vom 23. bis 27. November, je 08:00–15:30.",
+          "text": "Bilde für die Demo-Spitex ab Technikumstrasse 20, 8400 Winterthur 2 Wochentouren mit dem Namen Spitex Tour, vom 23. bis 27. November, je 08:00–15:30.",
           "sendWhen": "splitDone",
           "cue": "bundle"
         },
@@ -3900,7 +3900,7 @@
           "cue": "assign"
         },
         {
-          "text": "Zeig mir den Einsatzplan der Spitex Winterthur für die Woche vom 23. November.",
+          "text": "Zeig mir den Einsatzplan der Demo-Spitex für die Woche vom 23. November.",
           "sendWhen": "booked",
           "cue": "schedule"
         }

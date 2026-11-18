@@ -1,7 +1,7 @@
 // Copyright (c) Heribert Gasparoli. SPDX-License-Identifier: AGPL-3.0-only
 
 /**
- * Shared definition of the Spitex demo (story clips A/B "Klacksy plans home-care visits in two weekly tours"): the group "Spitex Winterthur",
+ * Shared definition of the Spitex demo (story clips A/B "Klacksy plans home-care visits in two weekly tours"): the group "Demo-Spitex" (renamed from "Spitex Winterthur" on 2026-11-15, owner: a real organisation has that name),
  * the base branch, twenty-four patients with FIXED coordinates in two clusters several kilometres apart (Wülflingen/Veltheim in the west,
  * Seen in the east; twelve each), the nursing team of the group with its regular shifts in DEMO_WEEK, and the twenty-four open TimeRange
  * orders (one per patient, each on a weekly pattern, all in the group), used by seed-spitex-demo.mjs and the takes so seed and takes cannot
@@ -51,8 +51,8 @@ export const COORDINATE_TOLERANCE = 1e-6;
 export const WINTERTHUR_BOUNDS = { latMin: 47.43, latMax: 47.55, lonMin: 8.63, lonMax: 8.83 };
 
 export const GROUP = {
-  name: "Spitex Winterthur",
-  description: "Spitex-Einsätze Winterthur (Demo-Seed für die Spitex-Clips)",
+  name: "Demo-Spitex",
+  description: "Demo-Spitex: Hausbesuche (Demo-Seed für die Spitex-Clips)",
 };
 
 export const AREA_WEST = "west";
@@ -65,7 +65,7 @@ export const AREA_KEYS = Object.freeze([AREA_WEST, AREA_EAST]);
 export const TOUR_WINDOW = Object.freeze({ from: "08:00", until: "15:30" });
 
 export const BRANCH = {
-  name: "Spitex-Stützpunkt Winterthur",
+  name: "Stützpunkt Demo-Spitex",
   street: "Technikumstrasse 20",
   zip: "8400",
   city: CITY,

@@ -32,3 +32,6 @@ export const VARIANTS = Object.freeze({
 export const OUTPUT_PREFIX = "simple-story-spitex-b-";
 export const TAKE_PREFIX = "spitex-tour-finish-";
 export const CAPTIONS_PREFIX = "spitex-b-captions.";
+
+/** The disclaimer start card holds about 190 characters; 10 s keep it readable (owner 2026-11-16). */
+export const START_CARD_SECONDS = 10;

@@ -121,7 +121,7 @@ function testBundleParameters() {
   assert.deepEqual(T.bundleParameterProblems({ ...ok, tourCount: "2", untilDate: undefined }, group), []);
   assert.ok(T.bundleParameterProblems({ ...ok, tourCount: 3 }, group).some((p) => /tourCount 3/.test(p)));
   assert.ok(T.bundleParameterProblems({ ...ok, groupIds: "" }, group).some((p) => /groupIds/.test(p)));
-  assert.deepEqual(T.bundleParameterProblems({ ...ok, groupIds: undefined, groupName: "spitex winterthur" }, group), []);
+  assert.deepEqual(T.bundleParameterProblems({ ...ok, groupIds: undefined, groupName: D.GROUP.name.toLowerCase() }, group), []);
   assert.ok(T.bundleParameterProblems({ ...ok, groupIds: undefined, groupName: "Spitex" }, group).some((p) => /groupName/.test(p)));
   assert.ok(T.bundleParameterProblems({ ...ok, fromDate: "2026-11-24" }, group).some((p) => /fromDate/.test(p)));
   assert.ok(T.bundleParameterProblems({ ...ok, untilDate: "2026-11-26" }, group).some((p) => /untilDate/.test(p)));

@@ -18,3 +18,6 @@ export * from "./order-recipe.mjs";
 export const OUTPUT_PREFIX = "simple-story-spitex-a-";
 export const TAKE_PREFIX = "spitex-orders-tour-";
 export const CAPTIONS_PREFIX = "spitex-a-captions.";
+
+/** The disclaimer start card holds about 190 characters; 10 s keep it readable (owner 2026-11-16). */
+export const START_CARD_SECONDS = 10;
