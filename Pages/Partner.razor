@@ -7,6 +7,8 @@
 
 <div class="min-h-screen bg-surface text-on-surface">
     <!-- Hero -->
+    <div class="plan-stage">
+    <div class="plan-grid" data-plan-grid="0.12" aria-hidden="true"></div>
     <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-5 sm:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-6">
             @GetText("hero.title")
@@ -15,6 +17,7 @@
             @((MarkupString)GetText("hero.subtitle"))
         </p>
     </section>
+    </div>
 
     <!-- Custom Industries — Haupt-USP -->
     <section class="max-w-4xl mx-auto py-10 md:py-16 px-5 sm:px-8">
@@ -129,13 +132,14 @@
 
     <!-- CTA -->
     <section class="max-w-4xl mx-auto py-10 md:py-16 px-5 sm:px-8">
-        <div class="bg-night rounded-2xl py-10 md:py-16 px-5 sm:px-8 text-center">
+        <div class="plan-stage relative overflow-hidden bg-night rounded-2xl py-10 md:py-16 px-5 sm:px-8 text-center">
+            <div class="plan-grid plan-grid-card plan-grid-on-night" data-plan-grid="0.22" aria-hidden="true"></div>
             <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
             <p class="text-white/70 max-w-xl mx-auto mb-8">
                 @GetText("cta.text")
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+                <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="btn-lift bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
                     <span class="material-symbols-outlined">download</span> Installation
                 </a>
                 <a href="@ExternalLinks.GithubUrl" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all no-underline inline-flex items-center gap-2">

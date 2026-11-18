@@ -8,13 +8,13 @@
 @if (IsOpen)
 {
     <div class="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 px-4" @onclick="Close">
-        <div class="glass-nav bg-surface-container-lowest rounded-2xl shadow-2xl max-w-md w-full p-8 relative" @onclick:stopPropagation="true">
+        <div class="glass-nav bg-surface-container-lowest rounded-2xl shadow-2xl max-w-md w-full p-8 relative" role="dialog" aria-modal="true" aria-labelledby="@TitleId" @onclick:stopPropagation="true">
             <button type="button" class="absolute top-4 right-4 p-1 text-ink-subtle hover:text-tertiary transition-colors" @onclick="Close" aria-label="@Mx("demoModal.closeAriaLabel")">
                 <span class="material-symbols-outlined">close</span>
             </button>
             <div class="flex items-center gap-2 mb-4">
                 <span class="material-symbols-outlined text-secondary">info</span>
-                <h2 class="text-lg font-bold text-tertiary">@Mx("demoModal.title")</h2>
+                <h2 id="@TitleId" class="text-lg font-bold text-tertiary">@Mx("demoModal.title")</h2>
             </div>
             <p class="text-sm text-on-surface-variant leading-relaxed mb-4">@((MarkupString)Mx("demoModal.body"))</p>
             <DemoDataNote Culture="@Culture" Short="true" CssClass="mt-0 mb-4" />
@@ -33,6 +33,8 @@
 
 @code {
     public const string DefaultContentKey = "shared";
+
+    private const string TitleId = "demo-modal-title";
 
     [Parameter] public bool IsOpen { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;

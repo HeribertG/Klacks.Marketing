@@ -6,6 +6,8 @@
 <SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" Title="@GetText("pageTitle")" DescriptionSource="@GetText("metaDescription")" />
 
 <div class="min-h-screen bg-surface text-on-surface">
+    <div class="plan-stage">
+    <div class="plan-grid" data-plan-grid="0.12" aria-hidden="true"></div>
     <section class="max-w-5xl mx-auto pt-14 md:pt-24 pb-10 md:pb-16 px-5 sm:px-8 text-center">
         <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant">@GetText("hero.badge")</span>
         <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-4 mb-6">
@@ -18,6 +20,7 @@
             @GetText("hero.growth")
         </p>
     </section>
+    </div>
 
     <section class="max-w-4xl mx-auto py-8 md:py-12 px-5 sm:px-8">
         <h2 class="text-2xl font-bold mb-8">@GetText("benefits.title")</h2>
@@ -65,7 +68,7 @@
             </div>
         </div>
         <p class="text-sm text-on-surface-variant mb-6">@GetText("needs.note")</p>
-        <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
+        <a href="@StoreHref" target="_blank" data-c="DownloadClick" class="btn-lift bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all no-underline inline-flex items-center gap-2">
             <span class="material-symbols-outlined">install_desktop</span> @GetText("needs.button")
         </a>
     </section>
@@ -89,10 +92,11 @@
     </section>
 
     <section class="max-w-4xl mx-auto py-8 md:py-12 px-5 sm:px-8">
-        <div class="bg-night rounded-2xl py-10 md:py-14 px-5 sm:px-8 text-center">
+        <div class="plan-stage relative overflow-hidden bg-night rounded-2xl py-10 md:py-14 px-5 sm:px-8 text-center">
+            <div class="plan-grid plan-grid-card plan-grid-on-night" data-plan-grid="0.22" aria-hidden="true"></div>
             <h2 class="text-2xl font-black text-white mb-4">@GetText("cta.title")</h2>
             <p class="text-white/70 max-w-xl mx-auto mb-8">@GetText("cta.text")</p>
-            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@GetShared("cta.demoResetNote")" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@GetShared("cta.demoResetNote")" class="btn-lift bg-secondary text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all inline-flex items-center gap-2">
                 <span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @GetText("cta.playground")
             </button>
         </div>
