@@ -746,6 +746,437 @@ body:has(.feature-ticker-bar) footer {
     }
 }
 
+/* Roster design language (2026-11-18): the duty roster is the visual identity of the site. Warm paper neutrals and
+   the three shift colours come from tailwind.config.js; this block adds the pieces no utility covers: the plan grid
+   backdrop (wwwroot/js/plan-grid.js), the day line that fills while scrolling, the card and button depth, the eyebrow
+   marker, the receipt and statement treatments of the simple start page, the grouped footer and the mobile action
+   dock. Class-combination selectors (".rounded-2xl.bg-surface-container-lowest") restyle the existing cards of every
+   page without touching their markup. All motion lives in the reduced-motion block at the end of this section. */
+:root {
+    --roster-step: 54px;
+    --roster-line: rgb(var(--c-outline-variant) / 0.38);
+    --roster-ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --shadow-ink: var(--c-on-background);
+    --shadow-soft: 0 1px 2px rgb(var(--shadow-ink) / 0.04), 0 8px 24px -12px rgb(var(--shadow-ink) / 0.12);
+    --shadow-lift: 0 2px 4px rgb(var(--shadow-ink) / 0.05), 0 24px 48px -20px rgb(var(--shadow-ink) / 0.22);
+    --hairline: 0 0 0 1px rgb(var(--c-outline-variant) / 0.5);
+}
+
+:root.dark {
+    --shadow-ink: 0 0 0;
+    --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.5);
+    --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 24px 48px -20px rgb(0 0 0 / 0.7);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
+p,
+li {
+    text-wrap: pretty;
+}
+
+:where(:focus-visible) {
+    outline: 2px solid rgb(var(--c-secondary));
+    outline-offset: 3px;
+}
+
+/* Navigation: translucent paper at the top of the page, frosted with a hairline once the page has scrolled. The
+   hairline is an inset shadow because .no-line-rule removes every border of the nav. */
+nav.glass-nav {
+    background: rgb(var(--c-background) / 0.74);
+    backdrop-filter: saturate(1.5) blur(18px);
+    -webkit-backdrop-filter: saturate(1.5) blur(18px);
+}
+
+nav.glass-nav.nav-scrolled {
+    box-shadow: inset 0 -1px 0 rgb(var(--c-outline-variant) / 0.55), 0 14px 32px -22px rgb(var(--shadow-ink) / 0.35);
+}
+
+/* Day line at the lower edge of the navigation: early, late and night shift in one bar that fills with the scroll
+   position (scroll-driven animation in the motion block; browsers without it show no bar). */
+.scroll-progress {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 3px;
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    background: linear-gradient(90deg, rgb(var(--c-shift-early)), rgb(var(--c-shift-late)) 55%, rgb(var(--c-shift-night)));
+}
+
+[dir="rtl"] .scroll-progress {
+    transform-origin: 100% 50%;
+    background: linear-gradient(270deg, rgb(var(--c-shift-early)), rgb(var(--c-shift-late)) 55%, rgb(var(--c-shift-night)));
+}
+
+/* Plan stage: a full-bleed block whose backdrop is the roster grid. The static lines are the fallback without
+   script; plan-grid.js adds the canvas with the shift blocks. The mask fades the grid out towards the text. */
+.plan-stage {
+    position: relative;
+    isolation: isolate;
+}
+
+.plan-grid {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background-image:
+        linear-gradient(to right, var(--roster-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--roster-line) 1px, transparent 1px);
+    background-size: var(--roster-step) var(--roster-step);
+    -webkit-mask-image: radial-gradient(115% 95% at 88% 0%, #000 0%, rgb(0 0 0 / 0.5) 30%, transparent 66%);
+    mask-image: radial-gradient(115% 95% at 88% 0%, #000 0%, rgb(0 0 0 / 0.5) 30%, transparent 66%);
+}
+
+[dir="rtl"] .plan-grid {
+    -webkit-mask-image: radial-gradient(115% 95% at 12% 0%, #000 0%, rgb(0 0 0 / 0.5) 30%, transparent 66%);
+    mask-image: radial-gradient(115% 95% at 12% 0%, #000 0%, rgb(0 0 0 / 0.5) 30%, transparent 66%);
+}
+
+.plan-grid canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Inside a call-to-action card the grid covers the whole card, stays behind the text and is densest at the edges. */
+.plan-grid-card,
+[dir="rtl"] .plan-grid-card {
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(75% 115% at 50% 50%, rgb(0 0 0 / 0.2) 0%, #000 100%);
+    mask-image: radial-gradient(75% 115% at 50% 50%, rgb(0 0 0 / 0.2) 0%, #000 100%);
+}
+
+/* A grid on a night card keeps the dark-mode shift colours in the light theme too (values of darkColors in
+   tailwind.config.js); plan-grid.js reads the variables from the grid element. */
+.plan-grid-on-night {
+    --roster-line: rgb(255 255 255 / 0.08);
+    --c-shift-late: 63 168 162;
+    --c-shift-night: 109 134 196;
+    --c-outline-variant: 63 75 75;
+}
+
+.plan-grid-card ~ *:not(.absolute) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Cards: every white card of the site gets a hairline and a soft shadow instead of a flat fill, tinted cards a
+   hairline only. Declared after the utilities, so the hover state is repeated here. */
+.rounded-2xl.bg-surface-container-lowest:not(.shadow-xl, .shadow-2xl) {
+    box-shadow: var(--hairline), var(--shadow-soft);
+}
+
+a.rounded-2xl.bg-surface-container-lowest:hover,
+.card-hover.rounded-2xl.bg-surface-container-lowest:hover {
+    box-shadow: 0 0 0 1px rgb(var(--c-secondary) / 0.45), var(--shadow-lift);
+}
+
+.rounded-2xl.bg-surface-container-low {
+    box-shadow: inset 0 0 0 1px rgb(var(--c-outline-variant) / 0.4);
+}
+
+/* Buttons with depth: an inner highlight and a coloured glow under the main actions. */
+.btn-lift {
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 0.24),
+        0 1px 2px rgb(0 0 0 / 0.14),
+        0 14px 26px -14px var(--btn-glow, rgb(var(--c-secondary-fill) / 0.7));
+}
+
+.btn-lift-amber {
+    --btn-glow: rgb(var(--c-highlight) / 0.75);
+}
+
+.btn-lift-ink {
+    --btn-glow: rgb(var(--shadow-ink) / 0.45);
+}
+
+/* Eyebrow marker: the three shift colours as a small bar in front of every section eyebrow (the uppercase label
+   above a heading). Labels inside a pill keep their own icon. */
+span.uppercase.tracking-\[0\.05em\].text-on-surface-variant:not(.rounded-full, .rounded-full *)::before,
+.eyebrow-mark::before {
+    content: '';
+    display: inline-block;
+    width: 1.75rem;
+    height: 0.375rem;
+    margin-inline-end: 0.625rem;
+    vertical-align: 0.0625rem;
+    border-radius: 9999px;
+    background: linear-gradient(
+        90deg,
+        rgb(var(--c-shift-early)) 0 28%,
+        transparent 28% 36%,
+        rgb(var(--c-shift-late)) 36% 64%,
+        transparent 64% 72%,
+        rgb(var(--c-shift-night)) 72% 100%
+    );
+}
+
+/* Demo-data note: a clearly visible footnote card with an accent edge instead of a filled box. */
+[data-demo-data-note] {
+    box-shadow: inset 3px 0 0 rgb(var(--c-secondary)), var(--shadow-soft);
+}
+
+[dir="rtl"] [data-demo-data-note] {
+    box-shadow: inset -3px 0 0 rgb(var(--c-secondary)), var(--shadow-soft);
+}
+
+/* Expert hero title: the opening sentence carries the size, the highlighted second sentence steps down so the
+   headline stays within the first screen. */
+.hero-title-split .text-secondary {
+    display: block;
+    margin-top: 0.45em;
+    font-size: 0.62em;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.hero-title-split .text-secondary,
+.dark .hero-title-split .text-secondary {
+    background-image: none;
+}
+
+/* Simple start page: the hero places the pitch beside the story clips from the lg breakpoint up (the DOM order,
+   story first, stays as it is for small screens and screen readers). */
+.simple-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* Beside the clips the title follows the width of its own column (longest hero word of the 25 languages: 21
+   letters), not the viewport width the utility clamp was built for. */
+.simple-hero-pitch-split {
+    container-type: inline-size;
+}
+
+@media (min-width: 1024px) {
+    .simple-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 3.5rem;
+        align-items: center;
+    }
+
+    .simple-hero-pitch {
+        order: -1;
+    }
+
+    .simple-hero-pitch-split h1 {
+        font-size: clamp(1.5rem, 7.6cqi, 2.625rem);
+    }
+}
+
+/* Key statement of the simple page as a quote with the amber marker edge. */
+.statement {
+    position: relative;
+    padding-inline-start: 1.75rem;
+}
+
+.statement::before {
+    content: '';
+    position: absolute;
+    inset-block: 0.25rem;
+    inset-inline-start: 0;
+    width: 0.375rem;
+    border-radius: 9999px;
+    background: rgb(var(--c-highlight));
+}
+
+/* Cost list as a receipt: paper card, dashed rows, torn lower edge. */
+.receipt-shadow {
+    filter: drop-shadow(0 14px 22px rgb(var(--shadow-ink) / 0.12));
+}
+
+.receipt {
+    --receipt-tooth: 14px;
+    padding: 2rem 1.5rem 2.75rem;
+    border-radius: 1rem 1rem 0 0;
+    background: rgb(var(--c-surface-container-lowest));
+    -webkit-mask-image:
+        linear-gradient(#000, #000),
+        conic-gradient(from -45deg at 50% 100%, #000 0 90deg, transparent 90deg);
+    mask-image:
+        linear-gradient(#000, #000),
+        conic-gradient(from -45deg at 50% 100%, #000 0 90deg, transparent 90deg);
+    -webkit-mask-size: 100% calc(100% - var(--receipt-tooth) + 1px), calc(var(--receipt-tooth) * 2) var(--receipt-tooth);
+    mask-size: 100% calc(100% - var(--receipt-tooth) + 1px), calc(var(--receipt-tooth) * 2) var(--receipt-tooth);
+    -webkit-mask-position: top, bottom left;
+    mask-position: top, bottom left;
+    -webkit-mask-repeat: no-repeat, repeat-x;
+    mask-repeat: no-repeat, repeat-x;
+}
+
+.receipt > li + li {
+    border-top: 2px dashed rgb(var(--c-outline-variant) / 0.8);
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .receipt {
+        padding: 2.5rem 2.5rem 3.25rem;
+    }
+}
+
+/* Running number of a card ("01", "02", "03"), set in tabular figures like the hours column of a roster. */
+.card-index {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+}
+
+/* Icon tile used by the redesigned cards. */
+.icon-tile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.875rem;
+    background: rgb(var(--c-secondary) / 0.1);
+}
+
+.icon-tile-on-night {
+    background: rgb(255 255 255 / 0.1);
+}
+
+/* Shift rule: a top rule in one shift colour, used by the link groups of the footer and the key figures. */
+.shift-rule {
+    border-top: 3px solid rgb(var(--shift-rule-colour, var(--c-outline-variant)));
+    padding-top: 1rem;
+}
+
+.shift-rule-early {
+    --shift-rule-colour: var(--c-shift-early);
+}
+
+.shift-rule-late {
+    --shift-rule-colour: var(--c-shift-late);
+}
+
+.shift-rule-night {
+    --shift-rule-colour: var(--c-shift-night);
+}
+
+/* Mobile action dock: the main action stays reachable below lg once the hero has scrolled away (class
+   page-scrolled on <html>, set by scroll-reveal.js). The footer keeps room for it. */
+.action-dock {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 45;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    background: rgb(var(--c-background) / 0.88);
+    backdrop-filter: saturate(1.5) blur(16px);
+    -webkit-backdrop-filter: saturate(1.5) blur(16px);
+    box-shadow: inset 0 1px 0 rgb(var(--c-outline-variant) / 0.55), 0 -14px 32px -22px rgb(var(--shadow-ink) / 0.4);
+    visibility: hidden;
+    transform: translateY(110%);
+}
+
+.page-scrolled .action-dock {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+@media (max-width: 1023.98px) {
+    body:has(.action-dock) footer {
+        padding-bottom: 5rem;
+    }
+
+    /* Two fixed bars would take a fifth of a phone screen: once the dock is in, it replaces the feature ticker. */
+    .page-scrolled body:has(.action-dock) .feature-ticker-bar {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1024px) {
+    .action-dock {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .btn-lift {
+        transition: transform 0.25s var(--roster-ease), box-shadow 0.25s ease, background-color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn-lift:hover {
+        transform: translateY(-2px);
+        box-shadow:
+            inset 0 1px 0 rgb(255 255 255 / 0.24),
+            0 2px 4px rgb(0 0 0 / 0.16),
+            0 22px 34px -14px var(--btn-glow, rgb(var(--c-secondary-fill) / 0.7));
+    }
+
+    .btn-lift:active {
+        transform: translateY(0);
+    }
+
+    .rounded-2xl.bg-surface-container-lowest {
+        transition: box-shadow 0.3s ease, transform 0.5s var(--roster-ease), opacity 0.5s ease-out;
+    }
+
+    /* The stage is its own stacking context: while a frame inside is zoomed or magnified it rises above the
+       following sections, like the .reveal rule of the hover zoom above. */
+    .plan-stage:has(.screenshot-hover-zoom:hover),
+    .plan-stage:has(.magnify-frame:hover) {
+        z-index: 30;
+    }
+
+    a.rounded-2xl.bg-surface-container-lowest:hover {
+        transform: translateY(-3px);
+    }
+
+    .action-dock {
+        transition: transform 0.35s var(--roster-ease), visibility 0.35s;
+    }
+
+    @supports (animation-timeline: scroll()) {
+        @keyframes scrollProgress {
+            to { transform: scaleX(1); }
+        }
+
+        .scroll-progress {
+            animation: scrollProgress linear both;
+            animation-timeline: scroll(root block);
+        }
+    }
+
+    /* Dark mode switch: the new theme opens as a circle from the toggle button (theme-mode.js starts the view
+       transition and sets --theme-x / --theme-y). */
+    @keyframes themeReveal {
+        from { clip-path: circle(0 at var(--theme-x, 50%) var(--theme-y, 0)); }
+        to { clip-path: circle(150vmax at var(--theme-x, 50%) var(--theme-y, 0)); }
+    }
+
+    ::view-transition {
+        pointer-events: none;
+    }
+
+    ::view-transition-old(root) {
+        animation: none;
+    }
+
+    ::view-transition-new(root) {
+        animation: themeReveal 0.6s var(--roster-ease);
+    }
+}
+
 /* Simple / expert mode (spec docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4). Every rule of
    this section up to the end of the file is scoped (ModeStyleScopeTests): the simple body class only sets the page
    background; offsets and the topline hang on the mode classes MainLayout writes onto .site-main and the nav, which

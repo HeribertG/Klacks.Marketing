@@ -2,7 +2,9 @@
 // header button overrides it for the current visit only. Loaded synchronously in <head> so the class is set before the
 // first paint. The override lives in this script's memory, so it survives Blazor Server's in-circuit navigation and
 // ends with a full reload. The button works before and without the circuit (document-level click handler); sync()
-// re-applies aria-pressed after Blazor re-rendered the header.
+// re-applies aria-pressed after Blazor re-rendered the header. Where the browser supports view transitions (and motion
+// is not reduced) the new theme opens as a circle from the button: toggle() passes the button centre to the CSS
+// variables --theme-x / --theme-y read by the themeReveal keyframes (tailwind-input.css).
 window.klacksTheme = (function () {
     var DARK = 'dark';
     var LIGHT = 'light';
@@ -28,9 +30,21 @@ window.klacksTheme = (function () {
         }
     }
 
-    function toggle() {
+    function reducedMotion() {
+        return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    function toggle(button) {
         override = isDark() ? LIGHT : DARK;
-        sync();
+        if (!document.startViewTransition || reducedMotion()) {
+            sync();
+            return;
+        }
+        var rect = button.getBoundingClientRect();
+        var style = document.documentElement.style;
+        style.setProperty('--theme-x', (rect.left + rect.width / 2) + 'px');
+        style.setProperty('--theme-y', (rect.top + rect.height / 2) + 'px');
+        document.startViewTransition(sync);
     }
 
     if (query !== null && query.addEventListener) {
@@ -38,8 +52,9 @@ window.klacksTheme = (function () {
     }
 
     document.addEventListener('click', function (ev) {
-        if (ev.target.closest && ev.target.closest(TOGGLE_SELECTOR)) {
-            toggle();
+        var button = ev.target.closest ? ev.target.closest(TOGGLE_SELECTOR) : null;
+        if (button) {
+            toggle(button);
         }
     });
 

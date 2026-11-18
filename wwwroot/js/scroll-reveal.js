@@ -1,4 +1,7 @@
 window.klacksScrollReveal = (function () {
+    // Scroll depth (px) after which the hero has left the screen and the mobile action dock slides in.
+    var PAGE_SCROLLED_DEPTH = 520;
+    var PAGE_SCROLLED_CLASS = 'page-scrolled';
     let intersectionObserver = null;
     let mutationObserver = null;
     let navScrollListenerAttached = false;
@@ -19,6 +22,7 @@ window.klacksScrollReveal = (function () {
 
         function syncNavScrolledClass() {
             nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+            document.documentElement.classList.toggle(PAGE_SCROLLED_CLASS, window.scrollY > PAGE_SCROLLED_DEPTH);
         }
 
         window.addEventListener('scroll', syncNavScrolledClass, { passive: true });
