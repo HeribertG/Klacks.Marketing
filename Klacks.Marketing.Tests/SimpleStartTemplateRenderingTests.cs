@@ -260,6 +260,9 @@ public class SimpleStartTemplateRenderingTests
         anchor.Value.ShouldNotContain("data-c");
         WebUtility.HtmlDecode(anchor.Groups[1].Value).ShouldContain(Content.GetText(culture, SiteModes.SimpleContentKey, "start.installStoreLink"));
         Regex.IsMatch(start.Value, @"<a\b(?:(?!</a>).)*<a\b", RegexOptions.Singleline).ShouldBeFalse("no link inside another link");
+        WebUtility.HtmlDecode(start.Value).ShouldContain($">{Content.GetText(culture, SiteModes.SimpleContentKey, "start.installStoreLink")}</span>");
+        anchor.Groups[1].Value.ShouldContain($"src=\"{MicrosoftStoreBadgeAssets.ImagePath(culture, MicrosoftStoreBadgeAssets.DarkTheme)}\"");
+        anchor.Groups[1].Value.ShouldContain($"src=\"{MicrosoftStoreBadgeAssets.ImagePath(culture, MicrosoftStoreBadgeAssets.LightTheme)}\"");
     }
 
     [Test]

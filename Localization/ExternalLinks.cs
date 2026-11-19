@@ -9,7 +9,8 @@ public static class ExternalLinks
 {
     public const string PlaygroundUrl = "https://play.klacks-software.ch";
     public const string MarketplaceUrl = "https://klacks-software.ch/store";
-    public const string MicrosoftStoreUrl = "https://apps.microsoft.com/store/detail/XPFFW8HDX0KX26";
+    public const string MicrosoftStoreProductId = "XPFFW8HDX0KX26";
+    public const string MicrosoftStoreUrl = "https://apps.microsoft.com/detail/" + MicrosoftStoreProductId;
     public const string MarketplaceBaseUrlConfigKey = "Marketplace:BaseUrl";
     public const string GithubOrganizationUrl = "https://github.com/HeribertG";
     public const string GithubUrl = "https://github.com/HeribertG/Klacks.Api";

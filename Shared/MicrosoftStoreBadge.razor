@@ -1,0 +1,28 @@
+@* Official, unmodified "Get it from Microsoft" badge linking the Klacks Microsoft Store listing. Static local SVGs
+   (no Microsoft script, no third-party request, no tracking). Both themes are rendered and swapped by the "dark"
+   class on <html>: the dark badge belongs on light backgrounds, the light badge on dark ones (Microsoft badge rules);
+   the hidden variant is lazy and not fetched. The link carries no data-c event: it is not a counted Klacks download.
+   Culture is the page culture code (badge language), Label the translated text shown above the badge (outside the
+   link), Alt the translated link text, CssClass adds outer spacing. *@
+<div class="flex flex-col @CssClass">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <span class="text-sm font-bold text-on-surface-variant">@Label</span>
+    }
+    <a href="@ExternalLinks.MicrosoftStoreUrl" target="_blank" rel="noopener" class="inline-block self-start mt-2" data-ms-store-badge>
+        <img src="@MicrosoftStoreBadgeAssets.ImagePath(Culture, MicrosoftStoreBadgeAssets.DarkTheme)" alt="@Alt" height="@BadgeHeight" loading="lazy" decoding="async" class="h-11 w-auto dark:hidden" />
+        <img src="@MicrosoftStoreBadgeAssets.ImagePath(Culture, MicrosoftStoreBadgeAssets.LightTheme)" alt="@Alt" height="@BadgeHeight" loading="lazy" decoding="async" class="h-11 w-auto hidden dark:inline-block" />
+    </a>
+</div>
+
+@code {
+    private const int BadgeHeight = 44;
+
+    [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
+
+    [Parameter] public string Label { get; set; } = string.Empty;
+
+    [Parameter] public string Alt { get; set; } = string.Empty;
+
+    [Parameter] public string CssClass { get; set; } = string.Empty;
+}

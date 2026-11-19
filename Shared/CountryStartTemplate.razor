@@ -359,9 +359,9 @@
                 {
                     <a href="@card.Href" target="@card.Target" data-c="@card.ClientEvent" class="mt-auto text-sm font-bold text-secondary no-underline inline-flex items-center gap-1">@Ix($"getStarted.{card.Key}.button") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></a>
                 }
-                @if (card.SecondaryHref is not null)
+                @if (card.ShowMicrosoftStoreBadge)
                 {
-                    <a href="@card.SecondaryHref" target="@BlankTarget" rel="noopener" class="mt-2 text-sm font-bold text-secondary no-underline inline-flex items-center gap-1">@Ix($"getStarted.{card.Key}.secondaryButton") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></a>
+                    <MicrosoftStoreBadge Culture="@Culture" Label="@Ix($"getStarted.{card.Key}.secondaryButton")" Alt="@Ix($"getStarted.{card.Key}.secondaryButton")" CssClass="mt-3" />
                 }
             </li>
         }
@@ -395,7 +395,7 @@
 
     private sealed record SizeRow(string Key, string Icon, string Href);
 
-    private sealed record GetStartedCard(string Key, string Icon, string Href, string? Target, bool OpensPlayground, string? ClientEvent = null, string? SecondaryHref = null);
+    private sealed record GetStartedCard(string Key, string Icon, string Href, string? Target, bool OpensPlayground, string? ClientEvent = null, bool ShowMicrosoftStoreBadge = false);
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
 
@@ -447,7 +447,7 @@
     private IReadOnlyList<GetStartedCard> GetStartedCards => new[]
     {
         new GetStartedCard("playground", "play_circle", ExternalLinks.PlaygroundUrl, null, OpensPlayground: true),
-        new GetStartedCard("download", "download", StoreHref, BlankTarget, OpensPlayground: false, ClientEvent: DownloadClickEvent, SecondaryHref: ExternalLinks.MicrosoftStoreUrl),
+        new GetStartedCard("download", "download", StoreHref, BlankTarget, OpensPlayground: false, ClientEvent: DownloadClickEvent, ShowMicrosoftStoreBadge: true),
         new GetStartedCard("source", "code", ExternalLinks.GithubUrl, BlankTarget, OpensPlayground: false),
     };
 

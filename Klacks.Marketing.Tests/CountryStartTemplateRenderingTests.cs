@@ -120,6 +120,8 @@ public class CountryStartTemplateRenderingTests
         anchor.Value.ShouldContain("rel=\"noopener\"");
         anchor.Value.ShouldContain("target=\"_blank\"");
         anchor.Value.ShouldNotContain("data-c");
+        html.ShouldContain($"src=\"{MicrosoftStoreBadgeAssets.ImagePath(culture, MicrosoftStoreBadgeAssets.DarkTheme)}\"");
+        html.ShouldContain($"src=\"{MicrosoftStoreBadgeAssets.ImagePath(culture, MicrosoftStoreBadgeAssets.LightTheme)}\"");
     }
 
     [Test]

@@ -171,7 +171,7 @@
                     <span class="block text-xl font-black mt-2">@Tx("start.installButton")</span>
                     <span class="block text-sm font-semibold text-on-surface-variant mt-1">@Tx("start.installSubtitle")</span>
                 </a>
-                <a href="@ExternalLinks.MicrosoftStoreUrl" target="_blank" rel="noopener" class="mt-2 text-sm font-bold text-secondary no-underline inline-flex items-center gap-1">@Tx("start.installStoreLink") <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></a>
+                <MicrosoftStoreBadge Culture="@Culture" Label="@Tx("start.installStoreLink")" Alt="@Tx("start.installStoreLink")" CssClass="mt-3" />
             </div>
             <div id="@SimplePageSectionIds.Share" class="rounded-2xl bg-surface-container-lowest p-6 scroll-mt-24">
                 <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">share</span>
