@@ -3073,7 +3073,7 @@
     "fr": {
       "messages": [
         {
-          "text": "Lance l'assistant de planification pour Winterthour du 2 au 8 novembre 2026."
+          "text": "Lance l'assistant de planification pour Winterthur du 2 au 8 novembre 2026."
         },
         {
           "text": "Montre-moi le résultat de l'assistant.",
@@ -3694,7 +3694,7 @@
           "cue": "confirm"
         },
         {
-          "text": "Split the plannable services of the group Spitex Winterthur into one service per weekday.",
+          "text": "Split all plannable services of Demo-Spitex into one service per weekday.",
           "sendWhen": "executed",
           "cue": "cut"
         },
@@ -3704,7 +3704,7 @@
           "cue": "cut"
         },
         {
-          "text": "Build 2 weekly tours named Spitex Tour for Spitex Winterthur from Technikumstrasse 20, 8400 Winterthur, 23 to 27 November, each 08:00–15:30.",
+          "text": "Build 2 weekly tours named Spitex Tour for Demo-Spitex from Technikumstrasse 20, 8400 Winterthur, 23 to 27 November, each 08:00–15:30.",
           "sendWhen": "splitDone",
           "cue": "bundle"
         },
@@ -3767,7 +3767,7 @@
           "cue": "confirm"
         },
         {
-          "text": "Découpe les services planifiables de Spitex Winterthur en un service par jour de la semaine.",
+          "text": "Découpe tous les services planifiables de Demo-Spitex en un service par jour de la semaine.",
           "sendWhen": "executed",
           "cue": "cut"
         },
@@ -3777,7 +3777,7 @@
           "cue": "cut"
         },
         {
-          "text": "Crée pour Spitex Winterthur depuis Technikumstrasse 20, 8400 Winterthur 2 tournées hebdomadaires nommées Spitex Tour, du 23 au 27 novembre, chacune de 08:00 à 15:30.",
+          "text": "Construis 2 tournées hebdomadaires nommées Spitex Tour pour Demo-Spitex depuis Technikumstrasse 20, 8400 Winterthur, du 23 au 27 novembre, chacune de 08:00 à 15:30.",
           "sendWhen": "splitDone",
           "cue": "bundle"
         },
@@ -3840,7 +3840,7 @@
           "cue": "confirm"
         },
         {
-          "text": "Dividi i servizi pianificabili del gruppo Spitex Winterthur in un servizio per giorno della settimana.",
+          "text": "Dividi tutti i servizi pianificabili di Demo-Spitex in un servizio per giorno della settimana.",
           "sendWhen": "executed",
           "cue": "cut"
         },
@@ -3850,7 +3850,7 @@
           "cue": "cut"
         },
         {
-          "text": "Crea per Spitex Winterthur da Technikumstrasse 20, 8400 Winterthur 2 giri settimanali di nome Spitex Tour, dal 23 al 27 novembre, ciascuno dalle 08:00 alle 15:30.",
+          "text": "Costruisci 2 giri settimanali di nome Spitex Tour per Demo-Spitex da Technikumstrasse 20, 8400 Winterthur, dal 23 al 27 novembre, ciascuno dalle 08:00 alle 15:30.",
           "sendWhen": "splitDone",
           "cue": "bundle"
         },
@@ -3938,7 +3938,7 @@
           "cue": "assign"
         },
         {
-          "text": "Show me the Spitex Winterthur schedule for the week of 23 November.",
+          "text": "Open the schedule of Demo-Spitex for the week of 23 November.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
@@ -3976,7 +3976,7 @@
           "cue": "assign"
         },
         {
-          "text": "Montre-moi le planning de Spitex Winterthur pour la semaine du 23 novembre.",
+          "text": "Ouvre le planning des équipes de Demo-Spitex pour la semaine du 23 novembre.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
@@ -4014,7 +4014,7 @@
           "cue": "assign"
         },
         {
-          "text": "Mostrami il piano turni di Spitex Winterthur per la settimana del 23 novembre.",
+          "text": "Mostrami il piano dei turni di Demo-Spitex per la settimana del 23 novembre.",
           "sendWhen": "booked",
           "cue": "schedule"
         }
