@@ -18,6 +18,9 @@ public class LlmsTxtInstallSectionTests
 {
     private const string BaseUrl = "https://klacks.example";
     private const string SectionHeading = "## Install Klacks (step by step)";
+    private const string FirstLoginHeading = "### 5. First login";
+    private const string NextHeading = "### 6. Updates";
+    private const string SetupCodeEnvKey = "KLACKS_SETUP_CODE";
     private const string CodeFence = "```";
     private const char LineBreak = '\n';
     private const string DocsHomeUrl = BaseUrl + ExternalLinks.DocsBasePath + "en/";
@@ -82,7 +85,20 @@ public class LlmsTxtInstallSectionTests
     public void Full_explains_the_docker_install_offer_on_linux()
     {
         LlmsTxtGenerator.BuildFull(BaseUrl).ShouldContain(
-            "If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora); otherwise install Docker Engine with the Compose plugin first.");
+            "If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora, CentOS, RHEL); otherwise install Docker Engine with the Compose plugin first.");
+    }
+
+    [Test]
+    public void Full_first_login_names_the_setup_code_and_no_default_password()
+    {
+        var section = FirstLoginSection(LlmsTxtGenerator.BuildFull(BaseUrl));
+
+        section.ShouldContain("setup code");
+        section.ShouldContain(SetupCodeEnvKey);
+        section.ShouldContain("create your own admin account");
+        section.ShouldContain("no setup code is needed");
+        section.ShouldNotContain(ExternalLinks.DemoLoginEmail);
+        section.ShouldNotContain(ExternalLinks.DemoLoginPassword);
     }
 
     [Test]
@@ -108,6 +124,16 @@ public class LlmsTxtInstallSectionTests
 
         section.ShouldContain("macOS is not covered by these steps");
         ExtractCodeBlocks(full).ShouldNotContain(block => block.Contains("macOS", StringComparison.OrdinalIgnoreCase));
+    }
+
+    private static string FirstLoginSection(string full)
+    {
+        var start = full.IndexOf(FirstLoginHeading, StringComparison.Ordinal);
+        var end = full.IndexOf(NextHeading, StringComparison.Ordinal);
+
+        start.ShouldBeGreaterThanOrEqualTo(0);
+        end.ShouldBeGreaterThan(start);
+        return full[start..end];
     }
 
     private static List<string> ExtractCodeBlocks(string text)

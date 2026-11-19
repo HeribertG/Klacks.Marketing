@@ -94,6 +94,8 @@ public static class LlmsTxtGenerator
     private const string ExampleRegion = "de";
     private const string ExamplePackageFileName = "klacks-onprem-de-all.zip";
     private const string ExampleLinuxInstallFolder = "~/klacks";
+    private const string DockerScriptDistros = "Ubuntu, Debian, Fedora, CentOS, RHEL";
+    private const string SetupCodeEnvKey = "KLACKS_SETUP_CODE";
     private const string StoreTitle = "Klacks Store";
     private const string StoreDescription = "Install Klacks: the only download source, with the country packages (installer for your own server, Docker Compose, profile) and the Windows installer for an office PC.";
     private const string DocsHomeTitle = "Klacks documentation";
@@ -334,7 +336,7 @@ public static class LlmsTxtGenerator
         sb.AppendLine();
         sb.AppendLine("Without REGION (sudo bash ./install.sh) the installer runs without a country profile. Optional environment variables: SERVER_NAME (defaults to localhost), REGION, HTTP_PORT and HTTPS_PORT (default 80 and 443). Put them after sudo, as shown above: sudo does not pass on the caller's environment.");
         sb.AppendLine();
-        sb.AppendLine("If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script (Ubuntu, Debian, Fedora); otherwise install Docker Engine with the Compose plugin first.");
+        sb.AppendLine($"If Docker is missing, the installer offers to install Docker Engine via Docker's official convenience script ({DockerScriptDistros}); otherwise install Docker Engine with the Compose plugin first.");
         sb.AppendLine();
 
         sb.AppendLine("### 3b. Windows (PowerShell)");
@@ -359,7 +361,11 @@ public static class LlmsTxtGenerator
 
         sb.AppendLine("### 5. First login");
         sb.AppendLine();
-        sb.AppendLine($"On a fresh installation the login is {ExternalLinks.DemoLoginEmail} / {ExternalLinks.DemoLoginPassword}. Change this password immediately after the first login and set your mail/SMTP settings in the admin UI.");
+        sb.AppendLine($"There is no default password to use. With the Docker installers (Linux and Windows) the installer prints a one-time setup code at the end and keeps it in the .env file in the install folder as {SetupCodeEnvKey}. When you open Klacks for the first time, it asks for this code and lets you create your own admin account (name, email, password); the email is your sign-in name afterwards. While this first setup is open, the built-in test account cannot be used to sign in from a browser, and it is switched off for good once your own admin account exists.");
+        sb.AppendLine();
+        sb.AppendLine("On an office PC with the Windows installer (no Docker), no setup code is needed: open Klacks in the browser on that same PC and it asks you to create your own admin account right away. Opened from another computer, only the sign-in page appears.");
+        sb.AppendLine();
+        sb.AppendLine("Afterwards set your mail/SMTP settings in the admin UI.");
         sb.AppendLine();
 
         sb.AppendLine("### 6. Updates");
