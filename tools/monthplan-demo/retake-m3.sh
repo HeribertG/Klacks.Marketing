@@ -11,7 +11,7 @@ set -u
 C=${2:-de}
 L=${3:-${TEMP:-/tmp}/m3-takes}
 mkdir -p "$L"
-P="/c/Program Files/PostgreSQL/17/bin/psql.exe"
+P="/c/PostgreSQL/19/bin/psql.exe"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 TOOLS="$(dirname "$HERE")"
 stop_api() { powershell.exe -NoProfile -Command "Get-Process Klacks.Api -ErrorAction SilentlyContinue | Where-Object { \$_.Path -like '*klacks-rec-m3v2*' } | Stop-Process -Force"; }

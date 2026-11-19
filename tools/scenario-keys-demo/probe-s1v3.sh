@@ -19,7 +19,7 @@ w() { cygpath -w "$1"; }
 : "${KLACKS_RELEASE_VERSION:?set KLACKS_RELEASE_VERSION}" "${KLACKS_DEMO_USER:?set KLACKS_DEMO_USER}" "${KLACKS_DEMO_PASSWORD:?set KLACKS_DEMO_PASSWORD}"
 OUT="${1:?usage: probe-s1v3.sh <out folder> [--no-chat] [--headed]}"; shift
 REL="${KLACKS_RELEASE_DIR:-$TMPU/klacks-release-$KLACKS_RELEASE_VERSION}"
-PSQL="${PSQL:-/c/Program Files/PostgreSQL/17/bin/psql.exe}"
+PSQL="${PSQL:-/c/PostgreSQL/19/bin/psql.exe}"
 export PGPASSWORD="${PGPASSWORD:-admin}"
 MASTER="${KLACKS_PROBE_MASTER:-klacks_marketing_security_bern_s3}"
 COPY="${MASTER}_probe_take"

@@ -5,7 +5,7 @@
 # The source database is only read (pg_dump), never modified.
 #
 # Usage: .\build-grouping-demo.ps1 [-SourceDb klacks_marketing_demo] [-TargetDb klacks_marketing_grouping]
-#        [-PgHost localhost] [-Port 5434] [-User postgres] [-Password admin] [-PgBin 'C:\Program Files\PostgreSQL\17\bin']
+#        [-PgHost localhost] [-Port 5434] [-User postgres] [-Password admin] [-PgBin 'C:\PostgreSQL\19\bin']
 #
 # Steps: 1. dump + restore  2. reset groups (reset-groups.sql)  3. keep 69 curated employees with Swiss addresses,
 #        soft-delete every other client  4. assign 5 qualifications.
@@ -18,7 +18,7 @@ param(
     [int]$Port = 5434,
     [string]$User = 'postgres',
     [string]$Password = 'admin',
-    [string]$PgBin = 'C:\Program Files\PostgreSQL\17\bin'
+    [string]$PgBin = 'C:\PostgreSQL\19\bin'
 )
 
 $ErrorActionPreference = 'Stop'

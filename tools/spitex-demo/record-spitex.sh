@@ -31,7 +31,7 @@ case "${1:-}" in a|b|ab) MODE="$1"; shift ;; esac
 : "${KLACKS_DEMO_USER:?set KLACKS_DEMO_USER}" "${KLACKS_DEMO_PASSWORD:?set KLACKS_DEMO_PASSWORD}" "${KLACKS_API_BIN:?set KLACKS_API_BIN to the built Klacks.Api output folder}"
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-PSQL="${PSQL:-/c/Program Files/PostgreSQL/17/bin/psql.exe}"
+PSQL="${PSQL:-/c/PostgreSQL/19/bin/psql.exe}"
 export PGPASSWORD="${PGPASSWORD:-admin}"
 PG=(-h localhost -p 5434 -U postgres)
 SEED_DB="${SPITEX_DB:-klacks_marketing_spitex}"
