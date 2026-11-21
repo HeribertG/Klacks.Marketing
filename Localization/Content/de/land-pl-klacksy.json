@@ -20,7 +20,7 @@
   },
   "solutions": {
     "title": "Wie Klacksy sich Ihrem Betrieb anpasst",
-    "subtitle": "Vier Stellschrauben, mit denen Sie den Assistenten in der Hand behalten.",
+    "subtitle": "Fünf Stellschrauben, mit denen Sie den Assistenten in der Hand behalten.",
     "items": [
       { "icon": "fact_check", "title": "Auskunft aus der Ewidencja, nicht aus dem Modell", "text": "Klacksy beantwortet Fragen zu geleisteten Stunden und Ruhezeiten aus der in Klacks geführten Arbeitszeitdokumentation nach Art. 149 Kodeks pracy. Die Zahlen kommen aus dem System, nicht aus der Schätzung eines Sprachmodells." },
       { "icon": "tune", "title": "Autonomie in vier Stufen", "text": "Sie legen fest, wie viel Klacksy selbstständig tun darf &mdash; von reinen Vorschlägen bis zu eigenständigen Änderungen. Sensible Aktionen brauchen immer Ihre Bestätigung." },
@@ -34,6 +34,7 @@
     "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen&ldquo;: Klacksy schlägt jeden Schritt zuerst vor, die Qualifikationen prüft die Planungs-Engine &mdash; die Entscheidung bleibt bei der Leitung. Die betriebsüblichen Abkürzungen merkt sich der Assistent als Notiz, die Zuschlagsregel wird per Zuruf hinterlegt. Zur Identifikation der Mitarbeitenden braucht es dabei weder Fingerabdruck noch Gesichtserkennung."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Klacksy in Aktion erleben",
     "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, abrufbare Regeln und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."

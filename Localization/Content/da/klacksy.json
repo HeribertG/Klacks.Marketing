@@ -21,7 +21,7 @@
   },
   "solutions": {
     "title": "Sådan tilpasser Klacksy sig din virksomhed",
-    "subtitle": "Fire justeringer, du bruger til at gøre Klacksy til din egen assistent.",
+    "subtitle": "Fem justeringer, du bruger til at gøre Klacksy til din egen assistent.",
     "items": [
       { "icon": "tune", "title": "Bestem selv autonomien", "text": "Med fire justerbare niveauer bestemmer du pr. bruger, hvor meget Klacksy selv må gøre &mdash; fra rene forslag til selvstændige ændringer. Følsomme handlinger kræver altid din bekræftelse." },
       { "icon": "menu_book", "title": "Forretningsregler, bare ved at sige dem", "text": "Du beskriver en forretningsregel direkte i chatten &mdash; for eksempel »nattillæg 25% fra kl. 23« eller »maks. 3 nattevagter om ugen«. Klacksy spørger målrettet ind, indtil alle obligatoriske oplysninger er komplette og kontrolleret, viser en forhåndsvisning af resultatet og gemmer først efter din udtrykkelige bekræftelse &mdash; altid tilgængelig i chatten og kan fortrydes." },
@@ -35,6 +35,7 @@
     "text": "Autonominiveauet står på »Foreslå«: Klacksy foreslår hvert trin først, medarbejdernes kvalifikationer kontrolleres af planlægningsenginen &mdash; den endelige beslutning ligger altid hos ledelsen. Nattillægsreglen er desuden lagt ind via chatten, og de forkortelser, der bruges internt, er gemt som en note til Klacksy. Assistenten reagerer allerede i dag derefter &mdash; helt uden programmering."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Oplev Klacksy i aktion",
     "text": "Test i Playground, hvordan Klacksy overtager autonomi-niveauer, personlighed og fagsprog &mdash; eller installer Klacks direkte på din egen infrastruktur. Ingen licensafgifter og uden registrering."

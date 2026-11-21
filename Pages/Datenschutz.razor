@@ -13,8 +13,8 @@
 @code {
     [Parameter] public string? Culture { get; set; }
 
-    // Present so the route binds; the policy describes this website as a whole and
-    // does not vary by country.
+    // Present so the route binds; the policy describes this website as a whole (plus one
+    // section on the Klacksy assistant of the Klacks software) and does not vary by country.
     [Parameter] public string? Country { get; set; }
 
     private string ResolvedCulture => SupportedCultures.Resolve(Culture).Code;

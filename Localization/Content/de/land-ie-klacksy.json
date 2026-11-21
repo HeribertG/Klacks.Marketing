@@ -21,7 +21,7 @@
   },
   "solutions": {
     "title": "Wie Klacksy sich Ihrem Betrieb anpasst",
-    "subtitle": "Vier Stellschrauben, mit denen Sie den Assistenten in der Hand behalten.",
+    "subtitle": "Fünf Stellschrauben, mit denen Sie den Assistenten in der Hand behalten.",
     "items": [
       { "icon": "event_available", "title": "Vorlauffrist als hinterlegter Wert", "text": "Den Mindest-Vorlauf für die Dienstplan-Publikation hinterlegen Sie in den Einstellungen von Klacks. Daraus berechnet Klacks fest nach Formel, bis wann ein Plan fertig sein muss &mdash; unabhängig vom eingesetzten KI-Modell. Eine automatische Prüfung beim Veröffentlichen gibt es nicht." },
       { "icon": "fact_check", "title": "Auskunft aus der Stundendokumentation", "text": "Klacksy beantwortet Fragen zu geplanten und geleisteten Stunden aus der lückenlosen Dokumentation in Klacks. Das ist die Datengrundlage, auf die sich ein Banded-Hours-Antrag stützt &mdash; keine Schätzung eines Sprachmodells." },
@@ -35,6 +35,7 @@
     "text": "Die Autonomie-Stufe steht auf &bdquo;Vorschlagen&ldquo;: Klacksy schlägt jeden Schritt zuerst vor, die Qualifikationen prüft die Planungs-Engine &mdash; die Entscheidung bleibt bei der Leitung. Weil der Betrieb auch Standorte jenseits der Grenze in Nordirland bedient, laufen zwei Feiertagskalender parallel. Der Assistent arbeitet innerhalb beider, weil sie im System hinterlegt sind."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Klacksy in Aktion erleben",
     "text": "Testen Sie im Playground, wie Klacksy Autonomie-Stufen, abrufbare Regeln und Fachvokabular übernimmt &mdash; oder installieren Sie Klacks direkt auf Ihrer eigenen Infrastruktur. Ohne Lizenzgebühren und ohne Registrierung."

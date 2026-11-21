@@ -21,7 +21,7 @@
   },
   "solutions": {
     "title": "Cómo se adapta Klacksy a su empresa",
-    "subtitle": "Cuatro ajustes con los que convierte a Klacksy en su propio asistente.",
+    "subtitle": "Cinco ajustes con los que convierte a Klacksy en su propio asistente.",
     "items": [
       { "icon": "tune", "title": "Determine usted mismo la autonomía", "text": "Con cuatro niveles ajustables decide, por usuario, cuánto puede hacer Klacksy por su cuenta &mdash; desde simples propuestas hasta cambios autónomos. Las acciones sensibles siempre requieren su confirmación." },
       { "icon": "menu_book", "title": "Normas internas, con solo decirlas", "text": "Describe una norma de la empresa directamente en el chat &mdash; por ejemplo, «recargo nocturno del 25 % a partir de las 23 h» o «máximo 3 turnos de noche por semana». Klacksy pregunta de forma específica hasta que todos los datos obligatorios estén completos y comprobados, muestra una vista previa del resultado y solo lo guarda tras su confirmación expresa &mdash; consultable en el chat en todo momento y reversible." },
@@ -35,6 +35,7 @@
     "text": "El nivel de autonomía está en «Proponer»: Klacksy propone primero cada paso y el motor de planificación comprueba las cualificaciones del personal &mdash; la decisión final siempre corresponde a la dirección. Además, se ha registrado la norma del recargo nocturno por chat y se han registrado como nota para Klacksy las abreviaturas habituales en la empresa. El asistente ya responde en consecuencia &mdash; sin necesidad de programar nada."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Vea Klacksy en acción",
     "text": "Pruebe en el Playground cómo Klacksy adopta los niveles de autonomía, la personalidad y el vocabulario técnico &mdash; o instale Klacks directamente en su propia infraestructura. Sin cuotas de licencia y sin registro."

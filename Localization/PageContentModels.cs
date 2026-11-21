@@ -17,6 +17,9 @@ public sealed class IndustryPageContent
     public IndustryExample? Example { get; init; }
     public IndustryGallery? Gallery { get; init; }
     public bool ShowRoutePlanning { get; init; } = true;
+
+    // Adds the pseudonymisation card (shared.json "pseudonymisation.*", one text per culture) to the solutions grid.
+    public bool ShowPseudonymisationCard { get; init; }
     public required IndustryCta Cta { get; init; }
 
     // Optionale Redesign-Sektionen (Hero-Mockup, Ticker, Steps, Stats). Nullable =

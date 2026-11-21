@@ -21,7 +21,7 @@
   },
   "solutions": {
     "title": "Klacksy 如何配合貴公司運作",
-    "subtitle": "四項設定，讓 Klacksy 成為您專屬的助理。",
+    "subtitle": "五項設定，讓 Klacksy 成為您專屬的助理。",
     "items": [
       { "icon": "tune", "title": "自行決定自主性", "text": "透過四個可調整的等級，您可以為每位使用者設定 Klacksy 能夠自主處理的程度 &mdash; 從單純提出建議到獨立執行變更。敏感操作一律需要您的確認。" },
       { "icon": "menu_book", "title": "營運規則，只需開口說", "text": "您只需在聊天中描述一項公司規則 &mdash; 例如「23 點起夜班工時加成 25%」或「每週最多 3 個夜班」。Klacksy 會有針對性地追問，直到所有必填資訊完整且經過核實，顯示結果預覽，並在您明確確認後才會儲存 &mdash; 隨時可在聊天中查閱，也可以復原。" },
@@ -35,6 +35,7 @@
     "text": "自主性等級設定為「建議」：Klacksy 每個步驟都會先提出建議，照護人員的資格則由規劃引擎核對 &mdash; 最終決定一律由管理層做出。此外，夜班工時加成規則已透過聊天輸入，機構內常用的縮寫也已記為 Klacksy 的備註。助理從今天起就已相應做出反應 &mdash; 完全無需程式設計。"
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "體驗 Klacksy 的實際效果",
     "text": "在 Playground 中試試看 Klacksy 如何套用自主性等級、個性與專業術語 &mdash; 或直接將 Klacks 安裝在您自己的基礎設施上。沒有授權費用，無需註冊。"

@@ -21,7 +21,7 @@
   },
   "solutions": {
     "title": "Comment Klacksy s'adapte à votre entreprise",
-    "subtitle": "Quatre réglages avec lesquels vous faites de Klacksy votre propre assistant.",
+    "subtitle": "Cinq réglages avec lesquels vous faites de Klacksy votre propre assistant.",
     "items": [
       { "icon": "tune", "title": "Définissez vous-même l'autonomie", "text": "Quatre niveaux réglables vous permettent de définir, pour chaque utilisateur, ce que Klacksy peut faire seul &mdash; de la simple suggestion aux modifications autonomes. Les actions sensibles exigent toujours votre confirmation." },
       { "icon": "menu_book", "title": "Des règles internes, juste en les disant", "text": "Vous décrivez une règle d'entreprise directement dans le chat &mdash; par exemple « majoration de nuit 25 % à partir de 23 h » ou « maximum 3 nuits par semaine ». Klacksy pose des questions précises jusqu'à ce que toutes les informations obligatoires soient complètes et vérifiées, affiche un aperçu du résultat et n'enregistre qu'après votre confirmation explicite &mdash; toujours consultable dans le chat, et réversible." },
@@ -35,6 +35,7 @@
     "text": "Le niveau d'autonomie est réglé sur « Proposer » : Klacksy propose d'abord chaque étape, et c'est le moteur de planification qui vérifie les qualifications du personnel &mdash; la décision finale revient toujours à la direction. La règle de majoration de nuit a en plus été définie dans le chat, et les abréviations utilisées en interne ont été enregistrées comme note pour Klacksy. L'assistant réagit déjà en conséquence &mdash; sans aucune programmation."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Découvrez Klacksy en action",
     "text": "Testez dans le Playground comment Klacksy adopte les niveaux d'autonomie, la personnalité et le vocabulaire métier &mdash; ou installez Klacks directement sur votre propre infrastructure. Sans frais de licence et sans inscription."

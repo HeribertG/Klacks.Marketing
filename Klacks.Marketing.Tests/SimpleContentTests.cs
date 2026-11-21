@@ -583,7 +583,10 @@ public class SimpleContentTests
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
         ("talk.bubble.2", "Warum steht Beat in der Fehlerliste?"),
         ("ai.text", "Klacks stellt Klacksy die Fähigkeiten bereit. Das KI-Modell dahinter bestimmst du: von einem Anbieter deiner Wahl oder auf deinem eigenen Server. Heute das beste, morgen das nächste – du bist an niemanden gebunden."),
-        ("data.text", "Deine Daten liegen bei dir, in keiner fremden Cloud. Dienstplan und Ersatzsuche laufen ohne KI-Anbindung. Dabei verlassen keine sensiblen Daten deinen Server oder PC. Nur Klacksy zeigt deinem KI-Modell, was es braucht."),
+        // 2026-11-21: the owner replaced the data card by the pseudonymisation headline and subline (du form of the
+        // owner wording, names/addresses/phone/email approved the same day); the closing storage and no-AI sentence is owner-approved.
+        ("data.title", "Pseudonymisiert, bevor es in die Cloud geht."),
+        ("data.text", "Namen, Adressen, Telefon und E-Mail werden durch Kürzel ersetzt, die Zuordnung bleibt in deiner Installation. Prüfbar: Der Code ist offen. Deine Daten liegen bei dir, geplant wird ohne KI."),
         ("start.text", "Haben wir dich neugierig gemacht? Rede mit unserem elektronischen Mitarbeiter."),
     };
 

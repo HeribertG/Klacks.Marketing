@@ -22,7 +22,7 @@
   },
   "solutions": {
     "title": "Klacksy thích ứng với doanh nghiệp của bạn như thế nào",
-    "subtitle": "Bốn nút điều chỉnh giúp bạn biến Klacksy thành trợ lý của riêng mình.",
+    "subtitle": "Năm nút điều chỉnh giúp bạn biến Klacksy thành trợ lý của riêng mình.",
     "items": [
       { "icon": "tune", "title": "Tự quyết định mức độ tự chủ", "text": "Với bốn cấp độ có thể điều chỉnh, bạn quyết định cho từng người dùng mức độ Klacksy được phép tự hành động &mdash; từ chỉ đưa ra đề xuất đến tự thực hiện thay đổi. Các hành động nhạy cảm luôn cần sự xác nhận của bạn." },
       { "icon": "menu_book", "title": "Quy định nội bộ, chỉ cần nói ra", "text": "Bạn mô tả một quy định của công ty ngay trong khung chat &mdash; ví dụ “giờ phụ trội ban đêm 25% từ 23 giờ” hoặc “tối đa 3 ca đêm mỗi tuần”. Klacksy sẽ hỏi thêm những câu hỏi cụ thể cho đến khi mọi thông tin bắt buộc đầy đủ và được kiểm tra, hiển thị bản xem trước kết quả và chỉ lưu sau khi bạn xác nhận rõ ràng &mdash; luôn có thể xem lại trong khung chat và có thể hoàn tác." },
@@ -36,6 +36,7 @@
     "text": "Mức độ tự chủ được đặt ở “Đề xuất”: Klacksy đề xuất trước từng bước, còn bằng cấp của nhân viên do engine lập kế hoạch kiểm tra &mdash; quyết định cuối cùng luôn thuộc về ban quản lý. Ngoài ra, quy định giờ phụ trội ban đêm đã được thiết lập qua chat, và các từ viết tắt thường dùng trong đơn vị đã được ghi lại dưới dạng ghi chú cho Klacksy. Trợ lý đã phản hồi phù hợp ngay từ hôm nay &mdash; hoàn toàn không cần lập trình."
   },
   "showRoutePlanning": false,
+  "showPseudonymisationCard": true,
   "cta": {
     "title": "Trải nghiệm Klacksy hoạt động",
     "text": "Hãy thử trong Playground xem Klacksy áp dụng mức độ tự chủ, tính cách và thuật ngữ chuyên môn như thế nào &mdash; hoặc cài đặt Klacks trực tiếp trên hạ tầng riêng của bạn. Không mất phí bản quyền và không cần đăng ký."

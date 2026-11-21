@@ -115,6 +115,14 @@
                 <p class="text-on-surface-variant text-sm leading-relaxed">@((MarkupString)item.Text)</p>
             </div>
         }
+        @if (Content.ShowPseudonymisationCard)
+        {
+            <div class="card-hover p-8 bg-surface-container-lowest rounded-2xl group hover:shadow-[0_24px_48px_-12px_rgba(28,27,27,0.04)] transition-all">
+                <span class="icon-pop material-symbols-outlined text-secondary text-3xl mb-6">@PseudonymisationIcon</span>
+                <h3 class="text-lg font-bold mb-4">@Sh(PseudonymisationTitleKey)</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">@Sh(PseudonymisationTextKey)</p>
+            </div>
+        }
     </div>
 </section>
 
@@ -228,6 +236,9 @@
     private const string RulesSectionAnchorId = PageSectionIds.Rules;
     private const string KlacksySlug = "klacksy";
     private const string ImagesPathPrefix = "images/";
+    private const string PseudonymisationIcon = "shield_lock";
+    private const string PseudonymisationTitleKey = "pseudonymisation.title";
+    private const string PseudonymisationTextKey = "pseudonymisation.text";
 
     [Parameter, EditorRequired] public required string PageKey { get; set; }
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;

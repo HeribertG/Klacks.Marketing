@@ -77,6 +77,18 @@ public class IndustryPageTemplateRenderingTests
         html.ShouldContain(">" + expectedStart);
     }
 
+    [TestCase("land-ch", "klacksy", "de", true)]
+    [TestCase("land-de", "security", "de", true)]
+    [TestCase("land-gb", "klacksy", "en", true)]
+    [TestCase("land-ch", "spitex", "de", false)]
+    public async Task Pseudonymisation_card_shows_the_shared_text_only_where_the_page_asks_for_it(string country, string slug, string culture, bool expected)
+    {
+        var html = System.Net.WebUtility.HtmlDecode(await RenderAsync(country, slug, culture));
+        var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
+
+        html.Contains(provider.GetText(culture, "shared", "pseudonymisation.text"), StringComparison.Ordinal).ShouldBe(expected);
+    }
+
     private static async Task<string> RenderAsync(string country, string slug, string culture = SupportedCultures.DefaultCode)
     {
         var environment = new TestWebHostEnvironment();

@@ -184,5 +184,7 @@
   "dailyOps.previous": "Previous video",
   "dailyOps.next": "Next video",
   "dailyOps.slideLabel": "Video {0} of {1}",
-  "dailyOps.navLabel": "Choose a video"
+  "dailyOps.navLabel": "Choose a video",
+  "pseudonymisation.title": "Pseudonymised for cloud AI",
+  "pseudonymisation.text": "Before a request goes to a cloud provider, Klacks replaces names, addresses, staff numbers, dates of birth, phone numbers and email addresses with codes. The mapping stays in your installation. Verifiable: the code is open. Not covered: further details in free text and speech output through a cloud speech service."
 }
