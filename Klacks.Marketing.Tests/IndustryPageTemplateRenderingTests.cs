@@ -77,16 +77,22 @@ public class IndustryPageTemplateRenderingTests
         html.ShouldContain(">" + expectedStart);
     }
 
-    [TestCase("land-ch", "klacksy", "de", true)]
-    [TestCase("land-de", "security", "de", true)]
-    [TestCase("land-gb", "klacksy", "en", true)]
-    [TestCase("land-ch", "spitex", "de", false)]
-    public async Task Pseudonymisation_card_shows_the_shared_text_only_where_the_page_asks_for_it(string country, string slug, string culture, bool expected)
+    // Owner decision 2026-11-22: no industry has priority, so every industry page carries the card.
+    [TestCase("land-ch", "klacksy", "de")]
+    [TestCase("land-de", "security", "de")]
+    [TestCase("land-gb", "klacksy", "en")]
+    [TestCase("land-ch", "spitex", "de")]
+    [TestCase("land-ch", "spitaeler", "fr")]
+    [TestCase("land-de", "logistik", "de")]
+    [TestCase("land-at", "hotellerie-gastronomie", "de")]
+    [TestCase("land-ch", "hausdienste", "it")]
+    [TestCase("land-ch", "eigene-regeln", "de")]
+    public async Task Pseudonymisation_card_shows_the_shared_text_on_every_industry_page(string country, string slug, string culture)
     {
         var html = System.Net.WebUtility.HtmlDecode(await RenderAsync(country, slug, culture));
         var provider = new JsonPageContentProvider(new TestWebHostEnvironment());
 
-        html.Contains(provider.GetText(culture, "shared", "pseudonymisation.text"), StringComparison.Ordinal).ShouldBe(expected);
+        html.ShouldContain(provider.GetText(culture, PseudonymisationContent.ContentKey, PseudonymisationContent.TextKey));
     }
 
     private static async Task<string> RenderAsync(string country, string slug, string culture = SupportedCultures.DefaultCode)

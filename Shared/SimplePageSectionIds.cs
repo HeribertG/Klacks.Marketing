@@ -13,6 +13,7 @@ public static class SimplePageSectionIds
     public const string Cost = "kosten";
     public const string Start = "loslegen";
     public const string Share = "weiterschicken";
+    public const string Data = "deine-daten";
 
     public static readonly IReadOnlyList<SimpleNavigationAnchor> Navigation = new[]
     {

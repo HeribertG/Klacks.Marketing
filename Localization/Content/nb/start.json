@@ -53,7 +53,7 @@
   "trust.data.title": "Data på serverne dine",
   "trust.data.text": "Klacks kjører på dine egne servere. Personaldata ligger i din egen infrastruktur; den personvernrettslige vurderingen etter lovene i landet ditt er opp til deg.",
   "trust.ai.title": "Fritt valg av KI-modell",
-  "trust.ai.text": "Klacksy arbeider med modellen du velger — fra eksterne leverandører til en modell du selv driver. Du bestemmer over kostnader, personvern og leverandør. Navn, adresser, telefon og e-post erstattes med koder, koblingen blir i installasjonen din. Kan etterprøves: koden er åpen.",
+  "trust.ai.text": "Klacksy arbeider med modellen du velger — fra eksterne leverandører til en modell du selv driver. Du bestemmer over kostnader, personvern og leverandør. Før en forespørsel sendes til en skyleverandør, erstattes navn, adresser, telefon og e-post med koder; koblingen blir i installasjonen din. Med en lokal KI-modell går ingen KI-forespørsel til en ekstern KI-leverandør. Kan etterprøves: koden er åpen.",
   "trust.lockIn.title": "Ingen binding til store skyleverandører",
   "trust.lockIn.text": "Dataene dine ligger i din egen database (PostgreSQL), koden er åpen, og KI-leverandøren bytter du i innstillingene.",
   "trust.costNote": "Ingen lisensavgifter betyr ikke: ingen kostnader. Server, drift og vedlikehold koster penger, det samme gjør en ekstern KI-modell — en avgift per ansatt betaler du derimot ikke.",

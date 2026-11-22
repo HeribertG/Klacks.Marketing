@@ -185,6 +185,6 @@
   "dailyOps.next": "Video berikutnya",
   "dailyOps.slideLabel": "Video {0} dari {1}",
   "dailyOps.navLabel": "Pilih video",
-  "pseudonymisation.title": "Dipseudonimkan untuk AI cloud",
-  "pseudonymisation.text": "Sebelum permintaan dikirim ke penyedia cloud, Klacks mengganti nama, alamat, nomor pegawai, tanggal lahir, nomor telepon, dan alamat email dengan kode. Pemetaannya tetap berada di instalasi Anda. Dapat diperiksa: kodenya terbuka. Tidak tercakup: data lain dalam teks bebas dan keluaran suara melalui layanan suara cloud."
+  "pseudonymisation.title": "Data pegawai ke AI cloud hanya dengan kode",
+  "pseudonymisation.text": "Sebelum permintaan dikirim ke penyedia cloud, Klacks mengganti nama, alamat, nomor pegawai, tanggal lahir, nomor telepon, dan alamat email dengan kode (pseudonimisasi). Pemetaannya tetap berada di instalasi Anda. Dengan model AI lokal, tidak ada permintaan AI yang dikirim ke penyedia AI eksternal. Dapat diperiksa: kodenya terbuka. Tidak tercakup: data lain dalam teks bebas dan keluaran suara melalui layanan suara cloud."
 }

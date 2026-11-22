@@ -381,8 +381,6 @@
     private const string BlankTarget = "_blank";
     private const string DownloadClickEvent = "DownloadClick";
 
-    private static readonly string[] HeroChipKeys = { "hero.trust1", "hero.trust2", "hero.trust4" };
-
     private static readonly string[] StatRuleClasses = { "shift-rule-early", "shift-rule-late", "shift-rule-night", string.Empty };
 
     private static readonly (string Icon, string Key)[] TrustPoints =
@@ -429,11 +427,17 @@
 
     private bool HasHeroMedia => HasHeroVideo || (Country.HeroMockup is not null && Country.HeroMockup.Images.Count > 0);
 
-    private IEnumerable<string> HeroChips
-        => HeroChipKeys.Take(2).Select(Ix)
-            .Append(Tx("hero.chipLanguages"))
-            .Concat(HeroChipKeys.Skip(2).Select(Ix))
-            .Append(Tx("hero.chipAgents"));
+    // Pairs that share a row on a desktop hero: where the data lives and the open licence, the placeholder promise
+    // (the longest chip) with the shortest one, then the two AI chips.
+    private IEnumerable<string> HeroChips => new[]
+    {
+        Ix("hero.trust1"),
+        Ix("hero.trust4"),
+        Sh(PseudonymisationContent.TitleKey),
+        Tx("hero.chipLanguages"),
+        Ix("hero.trust2"),
+        Tx("hero.chipAgents"),
+    };
 
     private IReadOnlyList<CountryIndustry> Industries => CountryIndustries.ForCountry(PageKey) ?? Array.Empty<CountryIndustry>();
 

@@ -186,6 +186,6 @@
   "dailyOps.next": "Nächstes Video",
   "dailyOps.slideLabel": "Video {0} von {1}",
   "dailyOps.navLabel": "Video auswählen",
-  "pseudonymisation.title": "Pseudonymisiert zur Cloud-KI",
-  "pseudonymisation.text": "Bevor eine Anfrage an einen Cloud-Anbieter geht, ersetzt Klacks Namen, Adressen, Personalnummern, Geburtsdaten, Telefonnummern und E-Mail-Adressen durch Kürzel. Die Zuordnung bleibt in Ihrer Installation. Prüfbar: Der Code ist offen. Nicht erfasst sind weitere Angaben im Freitext und die Sprachausgabe über einen Cloud-Sprachdienst."
+  "pseudonymisation.title": "Personaldaten nur mit Platzhaltern an die Cloud-KI",
+  "pseudonymisation.text": "Bevor eine Anfrage an einen Cloud-Anbieter geht, ersetzt Klacks Namen, Adressen, Personalnummern, Geburtsdaten, Telefonnummern und E-Mail-Adressen durch Platzhalter (Pseudonymisierung). Die Zuordnung bleibt in Ihrer Installation. Mit einem lokalen KI-Modell geht keine KI-Anfrage an einen externen KI-Anbieter. Prüfbar: Der Code ist offen. Nicht erfasst sind weitere Angaben im Freitext und die Sprachausgabe über einen Cloud-Sprachdienst."
 }

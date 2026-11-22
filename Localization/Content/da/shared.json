@@ -185,6 +185,6 @@
   "dailyOps.next": "Næste video",
   "dailyOps.slideLabel": "Video {0} af {1}",
   "dailyOps.navLabel": "Vælg en video",
-  "pseudonymisation.title": "Pseudonymiseret til cloud-AI",
-  "pseudonymisation.text": "Før en forespørgsel går til en cloududbyder, erstatter Klacks navne, adresser, personalenumre, fødselsdatoer, telefonnumre og e-mailadresser med koder. Koblingen bliver i din installation. Kan efterprøves: koden er åben. Ikke omfattet: yderligere oplysninger i fritekst og taleoutput via en cloud-taletjeneste."
+  "pseudonymisation.title": "Personaledata går kun med koder til cloud-AI",
+  "pseudonymisation.text": "Før en forespørgsel går til en cloududbyder, erstatter Klacks navne, adresser, personalenumre, fødselsdatoer, telefonnumre og e-mailadresser med koder (pseudonymisering). Koblingen bliver i din installation. Med en lokal AI-model går ingen AI-forespørgsel til en ekstern AI-udbyder. Kan efterprøves: koden er åben. Ikke omfattet: yderligere oplysninger i fritekst og taleoutput via en cloud-taletjeneste."
 }

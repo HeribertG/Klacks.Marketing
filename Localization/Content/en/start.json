@@ -53,7 +53,7 @@
   "trust.data.title": "Data on your servers",
   "trust.data.text": "Klacks runs on your own servers. Personnel data is held in your infrastructure; the data-protection assessment under the laws of your country remains with you.",
   "trust.ai.title": "Your choice of AI model",
-  "trust.ai.text": "Klacksy works with the model of your choice — from external providers to a model you run yourself. You decide on cost, data protection and provider. Names, addresses, phone and email are replaced by codes; the mapping stays in your installation. Verifiable: the code is open.",
+  "trust.ai.text": "Klacksy works with the model of your choice — from external providers to a model you run yourself. You decide on cost, data protection and provider. Before a request goes to a cloud provider, names, addresses, phone and email are replaced by placeholders; the mapping stays in your installation. With a local AI model, no AI request goes to an external AI provider. Verifiable: the code is open.",
   "trust.lockIn.title": "No lock-in with big cloud providers",
   "trust.lockIn.text": "Your data lives in your own database (PostgreSQL), the code is open, and you switch the AI provider in the settings.",
   "trust.costNote": "No license fees does not mean no costs. Servers, operation and maintenance cost money, and so does an external AI model — what you do not pay is a fee per employee.",

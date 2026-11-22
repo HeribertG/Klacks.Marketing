@@ -12,7 +12,7 @@
    (muted loop) sits between the audience chips and the call to try Klacksy, the hero is text-only, video V4 loops like
    the expert demo videos and the talk text is full-width without V4; the cost list is styled as a receipt; the shared
    link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
-   language, {country} is the only placeholder), including the demo-data note in the address form of the culture; the industry chips lead
+   language, {country} is the only placeholder; the second hero pill is the shared pseudonymisation title and jumps to the data card), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO indexes the page only in the languages spoken in the
    country (CountryLanguagePairs), each with its simple.json (the page renders no land-xx.json text), and the
    structured product description uses the meta description of the page culture. {country} is the country name in
@@ -33,7 +33,10 @@
         }
 
         <header class="simple-hero-pitch min-w-0 text-center @(HasStoryVideo ? PitchBesideStoryClass : PitchAloneClass)">
-            <p class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest shadow-soft px-4 py-1.5 text-sm font-bold text-secondary mt-0 mb-6"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>@Tx("hero.trustLine")</p>
+            <div class="flex flex-wrap justify-center gap-2 mb-6 @(HasStoryVideo ? ActionsBesideStoryClass : string.Empty)">
+                <p class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest shadow-soft px-4 py-1.5 text-sm font-bold text-secondary m-0"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>@Tx("hero.trustLine")</p>
+                <a href="@SectionHref(SimplePageSectionIds.Data)" class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest shadow-soft px-4 py-1.5 text-sm font-bold text-secondary no-underline hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-base" aria-hidden="true">@PseudonymisationContent.Icon</span>@PseudonymisationTitle</a>
+            </div>
             <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
             <p class="text-xl md:text-[1.375rem] text-on-surface-variant leading-relaxed mt-0 mb-8">@Tx("hero.subtitle")</p>
             <div class="flex flex-wrap justify-center gap-4 @(HasStoryVideo ? ActionsBesideStoryClass : string.Empty)">
@@ -108,10 +111,11 @@
                 <li class="px-1 py-1.5 text-sm font-semibold text-primary">@Tx("ai.moreProviders")</li>
             </ul>
         </article>
-        <article class="plan-stage relative overflow-hidden rounded-2xl bg-night p-6 md:p-8" aria-labelledby="simple-data-heading">
+        <article id="@SimplePageSectionIds.Data" class="plan-stage relative overflow-hidden rounded-2xl bg-night p-6 md:p-8 scroll-mt-36" aria-labelledby="simple-data-heading">
             <div class="plan-grid plan-grid-card plan-grid-on-night" data-plan-grid="0.2" aria-hidden="true"></div>
-            <span class="icon-tile icon-tile-on-night"><span class="material-symbols-outlined text-highlight text-3xl" aria-hidden="true">shield_lock</span></span>
+            <span class="icon-tile icon-tile-on-night"><span class="material-symbols-outlined text-highlight text-3xl" aria-hidden="true">@PseudonymisationContent.Icon</span></span>
             <h2 id="simple-data-heading" class="text-2xl md:text-[1.75rem] font-black text-white mt-5 mb-3">@Tx("data.title")</h2>
+            <p class="text-lg font-bold text-highlight leading-snug mt-0 mb-3">@Tx("data.summary")</p>
             <p class="text-lg text-white/80 leading-relaxed m-0">@Tx("data.text")</p>
         </article>
     </div>
@@ -235,6 +239,8 @@
     private string IndustryHref(string slug) => $"{PageHref}/{slug}";
 
     private string SectionHref(string sectionId) => PageHref + FragmentSeparator + sectionId;
+
+    private string PseudonymisationTitle => ContentProvider.GetText(Culture, PseudonymisationContent.ContentKey, PseudonymisationContent.TitleKey);
 
     private string Tx(string key)
         => ContentProvider.GetText(Culture, SiteModes.SimpleContentKey, key)

@@ -185,6 +185,6 @@
   "dailyOps.next": "Nästa video",
   "dailyOps.slideLabel": "Video {0} av {1}",
   "dailyOps.navLabel": "Välj en video",
-  "pseudonymisation.title": "Pseudonymiserat mot moln-AI",
-  "pseudonymisation.text": "Innan en förfrågan går till en molnleverantör ersätter Klacks namn, adresser, anställningsnummer, födelsedatum, telefonnummer och e-postadresser med koder. Kopplingen stannar i din installation. Går att granska: koden är öppen. Inte omfattat: övriga uppgifter i fritext och talutmatning via en taltjänst i molnet."
+  "pseudonymisation.title": "Personaldata går bara med koder till moln-AI",
+  "pseudonymisation.text": "Innan en förfrågan går till en molnleverantör ersätter Klacks namn, adresser, anställningsnummer, födelsedatum, telefonnummer och e-postadresser med koder (pseudonymisering). Kopplingen stannar i din installation. Med en lokal AI-modell går ingen AI-förfrågan till en extern AI-leverantör. Går att granska: koden är öppen. Inte omfattat: övriga uppgifter i fritext och talutmatning via en taltjänst i molnet."
 }

@@ -62,33 +62,35 @@ public class SimpleContentTests
     // 2026-11-16: the install card links the Microsoft Store ("also in the Microsoft Store", start.installStoreLink). The
     // budgets stayed (owner decision): the install subtitle, the expert hint and a few other texts were shortened to make
     // room, and in ar and th the link reads only "Microsoft Store".
+    // 2026-11-22: the owner added a summary line to the data card (data.summary, with the technical term in brackets) and
+    // dropped the local-model sentence. The German summary line needs 358 words, the owner set the budget to 360; en, fr, it, ar, cs, da, el, es, fi, he, id, ms, nb, nl, pl, pt, ro, sv, ja, ko, th, vi, zh-CN, zh-TW needed a few words more.
     private static readonly Dictionary<string, int> MaxSectionWords = new()
     {
-        [GermanCulture] = 350,
-        ["en"] = 399,
-        ["fr"] = 426,
-        ["it"] = 402,
-        ["ar"] = 340,
-        ["cs"] = 355,
-        ["da"] = 381,
-        ["el"] = 423,
-        ["es"] = 435,
-        ["fi"] = 290,
-        ["he"] = 350,
-        ["id"] = 378,
-        ["ms"] = 383,
-        ["nb"] = 367,
-        ["nl"] = 375,
-        ["pl"] = 355,
-        ["pt"] = 446,
-        ["ro"] = 405,
-        ["sv"] = 370,
-        ["ja"] = 105,
-        ["ko"] = 307,
-        ["th"] = 460,
-        ["vi"] = 537,
-        ["zh-CN"] = 150,
-        ["zh-TW"] = 145,
+        [GermanCulture] = 360,
+        ["en"] = 408,
+        ["fr"] = 436,
+        ["it"] = 406,
+        ["ar"] = 347,
+        ["cs"] = 364,
+        ["da"] = 384,
+        ["el"] = 430,
+        ["es"] = 444,
+        ["fi"] = 293,
+        ["he"] = 353,
+        ["id"] = 381,
+        ["ms"] = 386,
+        ["nb"] = 369,
+        ["nl"] = 381,
+        ["pl"] = 357,
+        ["pt"] = 448,
+        ["ro"] = 406,
+        ["sv"] = 373,
+        ["ja"] = 107,
+        ["ko"] = 317,
+        ["th"] = 474,
+        ["vi"] = 544,
+        ["zh-CN"] = 151,
+        ["zh-TW"] = 149,
     };
 
     private static readonly Dictionary<string, string[]> SearchTerms = new()
@@ -583,10 +585,12 @@ public class SimpleContentTests
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
         ("talk.bubble.2", "Warum steht Beat in der Fehlerliste?"),
         ("ai.text", "Klacks stellt Klacksy die Fähigkeiten bereit. Das KI-Modell dahinter bestimmst du: von einem Anbieter deiner Wahl oder auf deinem eigenen Server. Heute das beste, morgen das nächste – du bist an niemanden gebunden."),
-        // 2026-11-21: the owner replaced the data card by the pseudonymisation headline and subline (du form of the
-        // owner wording, names/addresses/phone/email approved the same day); the closing storage and no-AI sentence is owner-approved.
-        ("data.title", "Pseudonymisiert, bevor es in die Cloud geht."),
-        ("data.text", "Namen, Adressen, Telefon und E-Mail werden durch Kürzel ersetzt, die Zuordnung bleibt in deiner Installation. Prüfbar: Der Code ist offen. Deine Daten liegen bei dir, geplant wird ohne KI."),
+        // 2026-11-22: owner wording of the data card. The headline names staff data that reach a cloud AI only with
+        // placeholders ("pseudonymised" reads negative to lay people, the headline covers the local-model case by naming
+        // the cloud AI); the mapping "stays with you" and the no-AI sentence are owner-approved.
+        ("data.title", "Personaldaten nur mit Platzhaltern an die Cloud-KI."),
+        ("data.summary", "Die Cloud-KI sieht den Inhalt, nur die Verbindung zur Person ist gekappt (Fachbegriff: pseudonymisiert)."),
+        ("data.text", "Namen, Adressen, Telefon und E-Mail werden ersetzt; die Zuordnung der Daten bleibt bei dir. Prüfbar: Der Code ist offen. Geplant wird ohne KI."),
         ("start.text", "Haben wir dich neugierig gemacht? Rede mit unserem elektronischen Mitarbeiter."),
     };
 

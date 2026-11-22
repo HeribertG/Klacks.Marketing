@@ -185,6 +185,6 @@
   "dailyOps.next": "Vidéo suivante",
   "dailyOps.slideLabel": "Vidéo {0} sur {1}",
   "dailyOps.navLabel": "Choisir une vidéo",
-  "pseudonymisation.title": "Pseudonymisé vers l'IA cloud",
-  "pseudonymisation.text": "Avant qu'une requête ne parte vers un fournisseur cloud, Klacks remplace les noms, adresses, numéros de personnel, dates de naissance, numéros de téléphone et adresses e-mail par des codes. La correspondance reste dans votre installation. Vérifiable : le code est ouvert. Ne sont pas couverts : d'autres informations dans le texte libre et la sortie vocale via un service vocal cloud."
+  "pseudonymisation.title": "Données du personnel : vers l'IA cloud uniquement avec des codes",
+  "pseudonymisation.text": "Avant qu'une requête ne parte vers un fournisseur cloud, Klacks remplace les noms, adresses, numéros de personnel, dates de naissance, numéros de téléphone et adresses e-mail par des codes (pseudonymisation). La correspondance reste dans votre installation. Avec un modèle d'IA local, aucune requête d'IA ne part vers un fournisseur d'IA externe. Vérifiable : le code est ouvert. Ne sont pas couverts : d'autres informations dans le texte libre et la sortie vocale via un service vocal cloud."
 }
