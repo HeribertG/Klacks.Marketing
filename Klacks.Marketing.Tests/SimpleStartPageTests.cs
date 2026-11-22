@@ -22,7 +22,7 @@ using Shouldly;
 [TestFixture]
 public class SimpleStartPageTests
 {
-    private const string SimpleHeroText = "Personalplanung mit Klacks.";
+    private const string SimpleHeroText = "Personalplanung mit Klacks bleibt in deiner Hand.";
     private const string ExpertHeroText = "Frühschicht unbesetzt?";
     private const string HreflangMarker = "hreflang=";
     private const string NoindexMarker = "name=\"robots\" content=\"noindex";
@@ -44,12 +44,12 @@ public class SimpleStartPageTests
         html.ShouldContain(HreflangMarker);
     }
 
-    [TestCase("/en/land-gb", "Klacks – rota and workforce planning software · United Kingdom", "Workforce planning with Klacks.")]
-    [TestCase("/en/land-ie", "Klacks – rota and workforce planning software · Ireland", "Workforce planning with Klacks.")]
-    [TestCase("/fr/land-ch", "Klacks – plannings de service et planification du personnel · Suisse", "La planification du personnel avec Klacks.")]
-    [TestCase("/fr/land-be", "Klacks – plannings de service et planification du personnel · Belgique", "La planification du personnel avec Klacks.")]
-    [TestCase("/it/land-ch", "Klacks – software per turni e pianificazione del personale · Svizzera", "Pianificazione del personale con Klacks.")]
-    [TestCase("/it/land-it", "Klacks – software per turni e pianificazione del personale · Italia", "Pianificazione del personale con Klacks.")]
+    [TestCase("/en/land-gb", "Klacks – rota and workforce planning software · United Kingdom", "Workforce planning with Klacks stays")]
+    [TestCase("/en/land-ie", "Klacks – rota and workforce planning software · Ireland", "Workforce planning with Klacks stays")]
+    [TestCase("/fr/land-ch", "Klacks – plannings de service et planification du personnel · Suisse", "La planification du personnel avec Klacks reste")]
+    [TestCase("/fr/land-be", "Klacks – plannings de service et planification du personnel · Belgique", "La planification du personnel avec Klacks reste")]
+    [TestCase("/it/land-ch", "Klacks – software per turni e pianificazione del personale · Svizzera", "Pianificazione del personale con Klacks: resta")]
+    [TestCase("/it/land-it", "Klacks – software per turni e pianificazione del personale · Italia", "Pianificazione del personale con Klacks: resta")]
     public async Task Prefixed_simple_cultures_serve_their_own_simple_page_indexable_with_the_country_cluster(string path, string title, string h1Start)
     {
         var html = await GetHtmlAsync(enabled: true, path);

@@ -50,7 +50,7 @@ public class SimpleContentTests
 
     private static readonly string[] Jargon ={ "Container", "Cutting", "Autofill", "LLM", "MCP", "Tool-Calling", "tool calling" };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "talk.videoLabel", "demoModal.", "demoData.", "story.", "weekStory.", "intro." };
+    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "talk.videoLabel", "demoModal.", "demoData.", "story.", "weekStory.", "intro.", "start.mobile" };
 
     // The German section text is held to the owner's budget of 350 words; the translations get the word count of their
     // faithful translation (no claim dropped), measured on 2026-10-17 (en, fr, it) and 2026-10-18 (the other cultures,
@@ -64,33 +64,37 @@ public class SimpleContentTests
     // room, and in ar and th the link reads only "Microsoft Store".
     // 2026-11-22: the owner added a summary line to the data card (data.summary, with the technical term in brackets) and
     // dropped the local-model sentence. The German summary line needs 358 words, the owner set the budget to 360; en, fr, it, ar, cs, da, el, es, fi, he, id, ms, nb, nl, pl, pt, ro, sv, ja, ko, th, vi, zh-CN, zh-TW needed a few words more.
+    // 2026-11-22: the autonomy statement replaced "only after your yes" in the hero and the human text (German 359 of
+    // 360). The faithful translation is 1 to 12 words longer in 19 cultures; their budgets are the measured values.
+    // 2026-11-22: new hero (title, claim line, two-view card) and the human title "time for what matters": the owner set
+    // the German budget to 375 (needed 375); the other cultures carry their measured values.
     private static readonly Dictionary<string, int> MaxSectionWords = new()
     {
-        [GermanCulture] = 360,
-        ["en"] = 408,
-        ["fr"] = 436,
-        ["it"] = 406,
-        ["ar"] = 347,
-        ["cs"] = 364,
-        ["da"] = 384,
-        ["el"] = 430,
-        ["es"] = 444,
-        ["fi"] = 293,
-        ["he"] = 353,
-        ["id"] = 381,
-        ["ms"] = 386,
-        ["nb"] = 369,
-        ["nl"] = 381,
-        ["pl"] = 357,
-        ["pt"] = 448,
-        ["ro"] = 406,
-        ["sv"] = 373,
-        ["ja"] = 107,
-        ["ko"] = 317,
-        ["th"] = 474,
-        ["vi"] = 544,
-        ["zh-CN"] = 151,
-        ["zh-TW"] = 149,
+        [GermanCulture] = 375,
+        ["en"] = 429,
+        ["fr"] = 458,
+        ["it"] = 427,
+        ["ar"] = 364,
+        ["cs"] = 385,
+        ["da"] = 397,
+        ["el"] = 452,
+        ["es"] = 464,
+        ["fi"] = 308,
+        ["he"] = 366,
+        ["id"] = 398,
+        ["ms"] = 406,
+        ["nb"] = 379,
+        ["nl"] = 394,
+        ["pl"] = 375,
+        ["pt"] = 474,
+        ["ro"] = 418,
+        ["sv"] = 387,
+        ["ja"] = 111,
+        ["ko"] = 339,
+        ["th"] = 512,
+        ["vi"] = 564,
+        ["zh-CN"] = 158,
+        ["zh-TW"] = 156,
     };
 
     private static readonly Dictionary<string, string[]> SearchTerms = new()
@@ -575,11 +579,20 @@ public class SimpleContentTests
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {
-        ("hero.title", "Personalplanung mit Klacks. Klacksy nimmt dir die Fleissarbeit ab."),
-        ("hero.subtitle", "Klacks ist eine Software für Dienstpläne und Personalplanung. Mit Klacksy, deinem elektronischen Mitarbeiter: Du sagst, was du brauchst – Klacksy erledigt es nach deinem Ja."),
-        ("hero.trustLine", "Open Source · ohne Abo · läuft bei dir"),
-        ("human.title", "Klacksy ersetzt niemanden in der Planung – Klacksy nimmt Fleissarbeit ab."),
-        ("human.text", "Du sagst in einem Satz, was du brauchst. Klacksy zeigt dir eine Vorschau und erledigt es erst nach deinem Ja. Den Plan rechnet Klacks nach deinen Regeln. Was nur du weisst – wer nachts erreichbar ist, wem ein Einsatz gerade zu viel ist –, steht in keinem System. Darum entscheidest du."),
+        // 2026-11-22: owner-approved hero. The title carries the leading idea (planning stays in your hand), the claim
+        // line names the three points no checked competitor combines, the two-view card shows the pseudonymisation.
+        ("hero.title", "Personalplanung mit Klacks bleibt in deiner Hand."),
+        // 2026-11-22: owner wording of the autonomy statement in the hero and the human text. "Only after your yes" was
+        // wrong at the default autonomy level (everything except sensitive actions runs straight away); what holds is that
+        // every user sets how independently Klacksy acts and that sensitive actions always ask.
+        ("hero.subtitle", "Klacks ist eine Software für Dienstpläne und Personalplanung. Mit Klacksy, deinem elektronischen Mitarbeiter: Du sagst, was du brauchst – Klacksy erledigt es. Wie selbständig, bestimmst du."),
+        ("hero.trustLine", "Bei dir installiert. Offener Code, ohne Abo. KI-Modell deiner Wahl."),
+        ("hero.view.localLabel", "Du schreibst"),
+        ("hero.view.local", "Anna Muster ist krank."),
+        ("hero.view.cloudLabel", "Die Cloud-KI liest"),
+        ("hero.view.cloud", "MA-0017 ist krank."),
+        ("human.title", "Klacksy nimmt dir die Fleissarbeit ab – du hast Zeit für das, was zählt."),
+        ("human.text", "Du sagst in einem Satz, was du brauchst. Wie selbständig Klacksy es erledigt, bestimmst du. Heikles fragt Klacksy immer nach. Den Plan rechnet Klacks nach deinen Regeln. Was nur du weisst – wer nachts erreichbar ist, wem ein Einsatz gerade zu viel ist –, steht in keinem System. Darum entscheidest du."),
         ("talk.text", "Ein Klick auf Klacksy oben rechts – und los."),
         ("talk.bubble.0", "Plane die Woche ab 2. November."),
         ("talk.bubble.1", "Anna ist morgen krank. Wer kann einspringen?"),
@@ -592,6 +605,11 @@ public class SimpleContentTests
         ("data.summary", "Die Cloud-KI sieht den Inhalt, nur die Verbindung zur Person ist gekappt (Fachbegriff: pseudonymisiert)."),
         ("data.text", "Namen, Adressen, Telefon und E-Mail werden ersetzt; die Zuordnung der Daten bleibt bei dir. Prüfbar: Der Code ist offen. Geplant wird ohne KI."),
         ("start.text", "Haben wir dich neugierig gemacht? Rede mit unserem elektronischen Mitarbeiter."),
+        // 2026-11-22: below lg the closing call offers neither the playground nor the installer (owner: trying Klacksy on a
+        // phone makes no sense), so it shows this wording instead of start.title/start.text; a reader sees one of the two,
+        // hence start.mobile* stays out of the word budget (NonSectionKeyPrefixes).
+        ("start.mobileTitle", "Probier Klacksy am Computer aus"),
+        ("start.mobileText", "Haben wir dich neugierig gemacht? Schick dir den Link: Am Computer redest du mit Klacksy und kannst Klacks installieren."),
     };
 
     private static readonly string[] OwnerCards =

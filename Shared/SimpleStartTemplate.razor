@@ -12,7 +12,10 @@
    (muted loop) sits between the audience chips and the call to try Klacksy, the hero is text-only, video V4 loops like
    the expert demo videos and the talk text is full-width without V4; the cost list is styled as a receipt; the shared
    link is the canonical URL with "?ref=share". Texts come from simple.json (one file per
-   language, {country} is the only placeholder; the second hero pill is the shared pseudonymisation title and jumps to the data card), including the demo-data note in the address form of the culture; the industry chips lead
+   language, {country} is the only placeholder; under the title the claim line names what sets Klacks apart, and the two-view
+   card below the buttons shows one sentence as written and as a cloud AI reads it, linking to the data card; below lg
+   the actions that try or install Klacks are hidden, the share action remains and the closing call shows its phone
+   wording start.mobileTitle/start.mobileText), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO indexes the page only in the languages spoken in the
    country (CountryLanguagePairs), each with its simple.json (the page renders no land-xx.json text), and the
    structured product description uses the meta description of the page culture. {country} is the country name in
@@ -33,18 +36,24 @@
         }
 
         <header class="simple-hero-pitch min-w-0 text-center @(HasStoryVideo ? PitchBesideStoryClass : PitchAloneClass)">
-            <div class="flex flex-wrap justify-center gap-2 mb-6 @(HasStoryVideo ? ActionsBesideStoryClass : string.Empty)">
-                <p class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest shadow-soft px-4 py-1.5 text-sm font-bold text-secondary m-0"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>@Tx("hero.trustLine")</p>
-                <a href="@SectionHref(SimplePageSectionIds.Data)" class="inline-flex items-center gap-2 rounded-full bg-surface-container-lowest shadow-soft px-4 py-1.5 text-sm font-bold text-secondary no-underline hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-base" aria-hidden="true">@PseudonymisationContent.Icon</span>@PseudonymisationTitle</a>
-            </div>
-            <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-6 hyphens-manual break-words">@Tx("hero.title")</h1>
+            <h1 class="text-[clamp(1.5rem,7.5vw,2.25rem)] md:text-[3rem] lg:text-[clamp(2rem,calc((100vw-7.5rem)/24.2),2.625rem)] leading-[1.1] font-black tracking-tight text-primary mt-0 mb-4 hyphens-manual break-words">@Tx("hero.title")</h1>
+            <p class="text-xl md:text-2xl font-black text-secondary leading-snug mt-0 mb-6 [text-wrap:balance]">@Tx("hero.trustLine")</p>
             <p class="text-xl md:text-[1.375rem] text-on-surface-variant leading-relaxed mt-0 mb-8">@Tx("hero.subtitle")</p>
             <div class="flex flex-wrap justify-center gap-4 @(HasStoryVideo ? ActionsBesideStoryClass : string.Empty)">
-                <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber bg-tertiary-fixed text-on-tertiary-fixed px-7 py-4 rounded-2xl font-black text-lg flex items-center gap-2"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Tx("hero.tryButton")</button>
+                <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber bg-tertiary-fixed text-on-tertiary-fixed px-7 py-4 rounded-2xl font-black text-lg hidden lg:flex items-center gap-2"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Tx("hero.tryButton")</button>
                 <a href="@SectionHref(SimplePageSectionIds.Share)" class="px-7 py-4 rounded-2xl font-bold text-lg text-primary bg-secondary-fixed hover:bg-surface-container-high transition-all no-underline flex items-center gap-2">
                     <span class="material-symbols-outlined" aria-hidden="true">share</span> @Tx("hero.shareButton")
                 </a>
             </div>
+            <a href="@SectionHref(SimplePageSectionIds.Data)" class="block mt-8 rounded-2xl bg-surface-container-lowest shadow-soft p-4 md:p-5 text-start no-underline hover:bg-surface-container-high transition-colors">
+                <span class="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 items-baseline">
+                    <span class="text-sm font-bold text-on-surface-variant">@Tx("hero.view.localLabel")</span>
+                    <span class="text-lg md:text-xl font-black text-primary">@Tx("hero.view.local")</span>
+                    <span class="text-sm font-bold text-on-surface-variant">@Tx("hero.view.cloudLabel")</span>
+                    <span class="text-lg md:text-xl font-black text-secondary font-mono">@Tx("hero.view.cloud")</span>
+                </span>
+                <span class="flex items-center gap-2 mt-3 text-sm font-bold text-secondary"><span class="material-symbols-outlined text-base" aria-hidden="true">@PseudonymisationContent.Icon</span>@PseudonymisationTitle <span class="material-symbols-outlined text-base icon-directional" aria-hidden="true">arrow_forward</span></span>
+            </a>
         </header>
     </div>
 </div>
@@ -165,11 +174,11 @@
 <section id="@SimplePageSectionIds.Start" class="reveal py-14 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto no-line-rule scroll-mt-24" aria-labelledby="simple-start-heading">
     <div class="plan-stage relative overflow-hidden rounded-[2rem] bg-secondary-fixed py-12 md:py-16 px-6 md:px-10 text-center">
         <div class="plan-grid plan-grid-card" data-plan-grid="0.12" aria-hidden="true"></div>
-        <h2 id="simple-start-heading" class="text-[2rem] md:text-[2.75rem] font-black tracking-tight mt-0 mb-4">@Tx("start.title")</h2>
-        <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-0 mb-8">@Tx("start.text")</p>
-        <div class="grid md:grid-cols-3 gap-4 text-start">
-            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber flex flex-col items-start justify-start rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed p-6 text-start"><span class="material-symbols-outlined text-3xl" aria-hidden="true">chat</span><span class="block text-xl font-black mt-2">@Tx("start.playgroundButton")</span><span class="block text-sm font-semibold mt-1">@Tx("start.playgroundSubtitle")</span></button>
-            <div class="flex flex-col rounded-2xl bg-surface-container-lowest p-6">
+        <h2 id="simple-start-heading" class="text-[2rem] md:text-[2.75rem] font-black tracking-tight mt-0 mb-4"><span class="lg:hidden">@Tx("start.mobileTitle")</span><span class="hidden lg:inline">@Tx("start.title")</span></h2>
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mt-0 mb-8"><span class="lg:hidden">@Tx("start.mobileText")</span><span class="hidden lg:inline">@Tx("start.text")</span></p>
+        <div class="grid lg:grid-cols-3 gap-4 text-start">
+            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber hidden lg:flex flex-col items-start justify-start rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed p-6 text-start"><span class="material-symbols-outlined text-3xl" aria-hidden="true">chat</span><span class="block text-xl font-black mt-2">@Tx("start.playgroundButton")</span><span class="block text-sm font-semibold mt-1">@Tx("start.playgroundSubtitle")</span></button>
+            <div class="hidden lg:flex flex-col rounded-2xl bg-surface-container-lowest p-6">
                 <a href="@InstallHref" target="_blank" data-c="DownloadClick" class="block text-primary no-underline">
                     <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">download</span>
                     <span class="block text-xl font-black mt-2">@Tx("start.installButton")</span>
@@ -177,7 +186,7 @@
                 </a>
                 <MicrosoftStoreBadge Culture="@Culture" Label="@Tx("start.installStoreLink")" Alt="@Tx("start.installStoreLink")" CssClass="mt-3" />
             </div>
-            <div id="@SimplePageSectionIds.Share" class="rounded-2xl bg-surface-container-lowest p-6 scroll-mt-24">
+            <div id="@SimplePageSectionIds.Share" class="w-full max-w-md mx-auto lg:max-w-none rounded-2xl bg-surface-container-lowest p-6 scroll-mt-24">
                 <span class="material-symbols-outlined text-3xl text-secondary" aria-hidden="true">share</span>
                 <span class="block text-xl font-black text-primary mt-2">@Tx("start.shareTitle")</span>
                 <ShareLinkButtons Url="@ShareUrl" Culture="@Culture" CssClass="mt-4" />

@@ -94,15 +94,10 @@ else
 {
     <!-- ACTION DOCK (below lg) -->
     <div class="action-dock no-line-rule">
-        @if (IsSimpleMode)
-        {
-            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber flex-1 max-w-md inline-flex items-center justify-center gap-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed px-5 py-3 font-black"><span class="material-symbols-outlined" aria-hidden="true">chat</span> @Sx("hero.tryButton")</button>
-        }
-        else
-        {
-            <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" title="@Sh("cta.demoResetNote")" class="btn-lift flex-1 max-w-md inline-flex items-center justify-center gap-2 rounded-xl bg-secondary text-white px-5 py-3 font-bold"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span> @Sh("nav.tryNow")</button>
-            <a href="@InstallationHref" target="_blank" data-c="DownloadClick" aria-label="@Sh("nav.download")" title="@Sh("nav.download")" class="inline-flex items-center justify-center rounded-xl bg-surface-container-high text-primary px-4 py-3 no-underline"><span class="material-symbols-outlined" aria-hidden="true">download</span></a>
-        }
+        @* Below lg the visitor is on a phone or small tablet, where trying or installing the planning app makes little
+           sense (owner 2026-11-22): the dock exists only in the simple mode and leads to the share card, so the link
+           reaches a desktop. *@
+        <a href="@SectionHref(SimplePageSectionIds.Share)" class="btn-lift btn-lift-amber flex-1 max-w-md inline-flex items-center justify-center gap-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed px-5 py-3 font-black no-underline"><span class="material-symbols-outlined" aria-hidden="true">share</span> @Sx("hero.shareButton")</a>
     </div>
 }
 
@@ -532,7 +527,7 @@ else
 
     private string SiteMainClasses => $"{SiteMainClass} {SiteMainClass}-{ModeModifier}";
 
-    private bool ShowActionDock => !PagesWithoutActionDock.Contains(CurrentCompanyWideSlug);
+    private bool ShowActionDock => IsSimpleMode && !PagesWithoutActionDock.Contains(CurrentCompanyWideSlug);
 
     private string DemoModalContentKey => IsSimpleMode ? SiteModes.SimpleContentKey : DemoDisclaimerModal.DefaultContentKey;
 
