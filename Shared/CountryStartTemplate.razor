@@ -40,7 +40,15 @@
                 @foreach (var chip in HeroChips)
                 {
                     <li class="inline-flex items-center gap-1.5 text-sm font-semibold text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">check</span>@((MarkupString)chip)
+                        <span class="material-symbols-outlined text-secondary text-base" aria-hidden="true">check</span>
+                        @if (chip.Href is null)
+                        {
+                            @((MarkupString)chip.Text)
+                        }
+                        else
+                        {
+                            <a href="@chip.Href" class="text-on-surface-variant underline decoration-secondary underline-offset-4 hover:text-primary transition-colors">@((MarkupString)chip.Text)</a>
+                        }
                     </li>
                 }
             </ul>
@@ -227,6 +235,56 @@
     </section>
 }
 
+<!-- DATEN & KI -->
+@* What a cloud AI provider receives: the pseudonymisation promise, one example per replaced value and the limits.
+   A night panel like the closing call, so the promise stands out between Klacksy and trust; the header link
+   "#daten-ki" and the hero chip jump here. *@
+<section id="@PageSectionIds.DataAi" class="reveal pb-14 md:pb-20 px-4 sm:px-8 max-w-7xl mx-auto no-line-rule scroll-mt-24" aria-labelledby="data-ai-heading">
+    <div class="bg-night rounded-[2rem] py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+            <span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-white/60">@((MarkupString)Sh("nav.dataAi"))</span>
+            <h2 id="data-ai-heading" class="text-[2rem] md:text-[2.5rem] font-black text-white tracking-tight mt-4 mb-4">@Sh(PseudonymisationContent.TitleKey)</h2>
+            <p class="text-lg font-bold text-highlight leading-snug m-0">@Tx("dataAi.summary")</p>
+        </div>
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div class="lg:col-span-5 min-w-0">
+                <p id="data-ai-example-caption" class="text-white/70 text-sm font-semibold mt-0 mb-3">@Tx("dataAi.example.caption")</p>
+                <table aria-labelledby="data-ai-example-caption" class="w-full text-sm text-start border-separate border-spacing-0 rounded-2xl overflow-hidden bg-white/5">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-start text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-white/60 px-4 py-3">@Tx("dataAi.example.local")</th>
+                            <th scope="col" class="text-start text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-white/60 px-4 py-3">@Tx("dataAi.example.cloud")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in DataAiExampleRows)
+                        {
+                            <tr>
+                                <td class="px-4 py-3 border-t border-white/10 text-white/80 break-words">@row.Value</td>
+                                <td class="px-4 py-3 border-t border-white/10 font-mono font-bold text-highlight">@row.Placeholder</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <dl class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-6 m-0">
+                @foreach (var point in DataAiPoints)
+                {
+                    <div>
+                        <dt class="flex items-center gap-2 font-bold text-white mb-2">
+                            <span class="material-symbols-outlined text-highlight text-xl" aria-hidden="true">@point.Icon</span>@Tx($"dataAi.{point.Key}.title")
+                        </dt>
+                        <dd class="m-0 text-sm text-white/70 leading-relaxed">@Tx($"dataAi.{point.Key}.text")</dd>
+                    </div>
+                }
+            </dl>
+        </div>
+        <p class="text-center mt-10 mb-0">
+            <a href="@ExternalLinks.GithubUrl" target="_blank" class="text-sm font-bold text-white no-underline inline-flex items-center gap-1 hover:text-highlight transition-colors"><span class="material-symbols-outlined text-base" aria-hidden="true">code</span> @Tx("dataAi.link")</a>
+        </p>
+    </div>
+</section>
+
 <!-- 7 VERTRAUEN -->
 <section class="reveal bg-surface-container-low py-14 md:py-20 no-line-rule" aria-labelledby="trust-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -391,6 +449,28 @@
         ("lock_open", "lockIn"),
     };
 
+    // Placeholder formats of Klacks.Api (PseudonymPrefixes): what a cloud provider receives instead of the value.
+    private const string EmployeePlaceholder = "MA-0017";
+    private const string AddressPlaceholder = "ADR-0003";
+    private const string PhonePlaceholder = "TEL-0001";
+    private const string MailPlaceholder = "MAIL-0001";
+
+    // Invented sample values, the same in every culture: an obvious dummy number and a reserved example domain.
+    private const string ExamplePhone = "012 345 67 89";
+    private const string ExampleMail = "anna@example.com";
+
+    private static readonly (string Icon, string Key)[] DataAiPoints =
+    {
+        ("swap_horiz", "replace"),
+        ("shield_lock", "mapping"),
+        ("dns", "local"),
+        ("info", "limits"),
+    };
+
+    private sealed record HeroChip(string Text, string? Href = null);
+
+    private sealed record DataAiExampleRow(string Value, string Placeholder);
+
     private sealed record SizeRow(string Key, string Icon, string Href);
 
     private sealed record GetStartedCard(string Key, string Icon, string Href, string? Target, bool OpensPlayground, string? ClientEvent = null, bool ShowMicrosoftStoreBadge = false);
@@ -427,16 +507,23 @@
 
     private bool HasHeroMedia => HasHeroVideo || (Country.HeroMockup is not null && Country.HeroMockup.Images.Count > 0);
 
-    // Pairs that share a row on a desktop hero: where the data lives and the open licence, the placeholder promise
-    // (the longest chip) with the shortest one, then the two AI chips.
-    private IEnumerable<string> HeroChips => new[]
+    // Five chips: the licence chip left, because the badge and the line above the buttons already say "no licence
+    // fees". The placeholder promise jumps to its own section.
+    private IEnumerable<HeroChip> HeroChips => new[]
     {
-        Ix("hero.trust1"),
-        Ix("hero.trust4"),
-        Sh(PseudonymisationContent.TitleKey),
-        Tx("hero.chipLanguages"),
-        Ix("hero.trust2"),
-        Tx("hero.chipAgents"),
+        new HeroChip(Ix("hero.trust1")),
+        new HeroChip(Sh(PseudonymisationContent.TitleKey), ChapterHref(PageSectionIds.DataAi)),
+        new HeroChip(Ix("hero.trust2")),
+        new HeroChip(Tx("hero.chipAgents")),
+        new HeroChip(Tx("hero.chipLanguages")),
+    };
+
+    private IEnumerable<DataAiExampleRow> DataAiExampleRows => new[]
+    {
+        new DataAiExampleRow(Tx("dataAi.example.name"), EmployeePlaceholder),
+        new DataAiExampleRow(Tx("dataAi.example.address"), AddressPlaceholder),
+        new DataAiExampleRow(ExamplePhone, PhonePlaceholder),
+        new DataAiExampleRow(ExampleMail, MailPlaceholder),
     };
 
     private IReadOnlyList<CountryIndustry> Industries => CountryIndustries.ForCountry(PageKey) ?? Array.Empty<CountryIndustry>();

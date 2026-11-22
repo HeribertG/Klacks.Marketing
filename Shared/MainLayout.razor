@@ -418,6 +418,18 @@ else
         }
     }
 
+    // The "Daten & KI" panel exists only on the country start page of the expert mode, so the header link always
+    // targets that page - from an industry or a company-wide page too, never an anchor on the current page.
+    private string DataAiHref
+    {
+        get
+        {
+            var country = IsOnCountryPage ? CurrentCountryPageKey : LanguageCountries.DefaultCountryFor(CurrentCultureRecord.Code);
+
+            return $"{CountryPageLinks.StartHref(CurrentCultureRecord.UrlSlug, country, ModeOptions.Value.Enabled)}#{PageSectionIds.DataAi}";
+        }
+    }
+
     // The raw current relative path (culture + full page key incl. any industry
     // sub-page slug), without fragment/query. Empty string on the site root.
     private string CurrentRelativePath()
@@ -752,6 +764,7 @@ else
     private RenderFragment NavigationLinks => @<text>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)">@Sh("nav.solution")</a>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref">@Sh("nav.klacksy")</a>
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DataAiHref">@ShHtml("nav.dataAi")</a>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)">@ShHtml("nav.rules")</a>
         @if (ShowIndustryMenu)
         {
@@ -876,6 +889,7 @@ else
         <div class="mobile-menu-panel @(_mobileMenuOpen ? "mobile-menu-open" : "") absolute top-full inset-x-4 sm:inset-x-auto sm:right-8 mt-2 sm:w-96 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-high px-6 sm:px-8 py-6 flex flex-col gap-5">
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Solutions)" @onclick="CloseMobileMenu">@Sh("nav.solution")</a>
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@KlacksyHref" @onclick="CloseMobileMenu">@Sh("nav.klacksy")</a>
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@DataAiHref" @onclick="CloseMobileMenu">@ShHtml("nav.dataAi")</a>
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SectionHref(PageSectionIds.Rules)" @onclick="CloseMobileMenu">@ShHtml("nav.rules")</a>
             @if (ShowIndustryMenu)
             {
