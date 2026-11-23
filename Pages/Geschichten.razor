@@ -1,0 +1,85 @@
+@page "/{country}/geschichten"
+@page "/{culture}/{country}/geschichten"
+@using Klacks.Marketing.Analytics
+@inject IPageContentProvider ContentProvider
+
+@* Stories page: the story clips made for LinkedIn (comic scene, then real Klacks recordings; music, no speech) kept
+   in one place. The clips carry burnt-in text, so they exist only in the cultures with their own geschichten.json
+   (currently de, en, fr, it): every other culture shows the English text and the English clips marked lang="en"
+   dir="ltr" and is noindex (IndexTranslatedOnly). Nothing loads with the page (preload="none", poster only): a clip
+   enlarges through the shared screenshot-hover-zoom frame and plays while the mouse pointer is over it
+   (wwwroot/js/story-clip-hover.js), or when the visitor presses play. Served under every country with the same content (canonical: the culture's default
+   country). Culture is the culture URL segment (null for German), Country the country page key of the route. *@
+<PageTitle>@Tx("pageTitle")</PageTitle>
+<SeoHead PageKey="@PageKey" Culture="@ResolvedCulture" RoutePath="@PageKey" SameForEveryCountry="true" IndexTranslatedOnly="true" Title="@Tx("pageTitle")" DescriptionSource="@Tx("metaDescription")" />
+
+<div class="min-h-screen bg-surface text-on-surface">
+    <div class="pt-36 lg:pt-44 pb-16 px-5 sm:px-8 max-w-6xl mx-auto" lang="@ContentCulture" dir="@ContentDirection">
+        <header class="max-w-3xl mb-12">
+            <h1 class="text-[2rem] md:text-[2.5rem] font-black tracking-tight text-primary mt-0 mb-4">@Tx("hero.title")</h1>
+            <p class="text-lg text-on-surface-variant leading-relaxed m-0">@Tx("hero.subtitle")</p>
+        </header>
+        <ul class="grid md:grid-cols-2 gap-x-8 gap-y-12 list-none p-0 m-0">
+            @foreach (var clip in Clips)
+            {
+                <li class="min-w-0">
+                    <div class="@ClipFrameClass">
+                        <video class="story-clip block w-full h-auto rounded-2xl shadow-xl" controls playsinline preload="@PreloadNone"
+                               width="@ClipWidth" height="@ClipHeight" poster="@ClipPath(clip, PosterExtension)"
+                               aria-label="@($"{Tx("playLabel")} {Tx(TitleKey(clip))}")" data-c-play="@nameof(VisitEvent.VideoPlay)">
+                            <source src="@ClipPath(clip, VideoExtension)" type="@VideoMimeType" />
+                        </video>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-black tracking-tight mt-5 mb-2">@Tx(TitleKey(clip))</h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed m-0">@Tx(TextKey(clip))</p>
+                </li>
+            }
+        </ul>
+        <p class="text-xs text-ink-subtle leading-relaxed mt-14 mb-1">@Tx("note")</p>
+        <p class="text-xs text-ink-subtle leading-relaxed m-0" lang="en" dir="ltr">@Tx("music")</p>
+    </div>
+</div>
+
+@code {
+    public const string ClipsFolder = "videos/stories";
+    public const string VideoExtension = ".mp4";
+    public const string PosterExtension = ".webp";
+    public const string ClipFrameClass = "story-clip-frame screenshot-hover-zoom rounded-2xl";
+    public const string HoverScript = "js/story-clip-hover.js";
+
+    // Order: the shortest everyday scenes first, the long retirement story last.
+    public static readonly IReadOnlyList<string> Clips = new[] { "sick-week", "holiday-wishes", "keywords", "month-plan", "team-mails", "retirement" };
+
+    private const string PageKey = CountryPageLinks.StoriesSlug;
+    private const string FallbackCulture = "en";
+    private const string LeftToRight = "ltr";
+    private const string RightToLeft = "rtl";
+    private const string PreloadNone = "none";
+    private const string VideoMimeType = "video/mp4";
+    private const int ClipWidth = 1280;
+    private const int ClipHeight = 720;
+
+    [Parameter] public string? Culture { get; set; }
+
+    // Present so the route binds; the page content is company-wide and does not vary by country.
+    [Parameter] public string? Country { get; set; }
+
+    private SupportedCulture ResolvedCultureRecord => SupportedCultures.Resolve(Culture);
+
+    private string ResolvedCulture => ResolvedCultureRecord.Code;
+
+    private bool HasOwnText => ContentProvider.HasContentIn(ResolvedCulture, PageKey);
+
+    private string ContentCulture => HasOwnText ? ResolvedCulture : FallbackCulture;
+
+    private string ContentDirection => HasOwnText && ResolvedCultureRecord.IsRtl ? RightToLeft : LeftToRight;
+
+    private string ClipPath(string clip, string extension) => $"{ClipsFolder}/{clip}-{ContentCulture}{extension}";
+
+    private static string TitleKey(string clip) => $"clip.{clip}.title";
+
+    private static string TextKey(string clip) => $"clip.{clip}.text";
+
+    private string Tx(string key)
+        => ContentProvider.FindText(ContentCulture, PageKey, key) ?? ContentProvider.GetText(ContentCulture, PageKey, key);
+}

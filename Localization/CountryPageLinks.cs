@@ -22,6 +22,7 @@ public static class CountryPageLinks
     public const string OfferSlug = "angebot";
     public const string TechSlug = "technik";
     public const string ExportsSlug = "exporte";
+    public const string StoriesSlug = "geschichten";
 
     public static string StartHref(string? cultureSlug, string? country, bool simpleModeEnabled)
     {

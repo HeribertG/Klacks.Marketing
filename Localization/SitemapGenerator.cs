@@ -68,7 +68,7 @@ public static class SitemapGenerator
 
     // Company-wide pages like the ones above, but written per culture (a content file per culture): only the
     // cultures that have their own text are listed, matching their IndexTranslatedOnly noindex rule.
-    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug, CountryPageLinks.ExportsSlug };
+    private static readonly string[] TranslatedCompanyWideSlugs = { CountryPageLinks.MidSizeBusinessSlug, CountryPageLinks.LargeBusinessSlug, CountryPageLinks.OfferSlug, CountryPageLinks.TechSlug, CountryPageLinks.ExportsSlug, CountryPageLinks.StoriesSlug };
 
     // Same value and target as the page-level x-default link emitted by SeoHead.
     private const string DefaultHreflang = "x-default";

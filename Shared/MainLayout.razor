@@ -37,6 +37,7 @@
                     {
                         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-semibold tracking-tight no-underline" href="@SectionHref(anchor.Id)">@Sx(anchor.LabelKey)</a>
                     }
+                    <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-semibold tracking-tight no-underline" href="@StoriesHref">@Sh("footer.stories")</a>
                     <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-semibold tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
                     <button type="button" @onclick="OpenDemoModal" data-c="DemoModalOpened" class="btn-lift btn-lift-amber hidden lg:inline-flex ms-auto shrink-0 items-center gap-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1.5 text-sm font-black"><span class="material-symbols-outlined text-base" aria-hidden="true">chat</span> @Sx("hero.tryButton")</button>
                 </div>
@@ -117,6 +118,7 @@ else
                     <li><a class="@FooterLinkClass" href="@StoreHref" target="_blank">@Sh("footer.store")</a></li>
                     <li><a class="@FooterLinkClass" href="@TechHref">@Sh("footer.tech")</a></li>
                     <li><a class="@FooterLinkClass" href="@ExportsHref">@Sh("footer.exports")</a></li>
+                    <li><a class="@FooterLinkClass" href="@StoriesHref">@Sh("footer.stories")</a></li>
                     <li><a class="@FooterLinkClass" href="@ComparisonHref">@Sh("footer.comparison")</a></li>
                     @if (ShowOfferPage)
                     {
@@ -165,6 +167,7 @@ else
     private const string OfferPageKey = CountryPageLinks.OfferSlug;
     private const string TechPageKey = CountryPageLinks.TechSlug;
     private const string ExportsPageKey = CountryPageLinks.ExportsSlug;
+    private const string StoriesPageKey = CountryPageLinks.StoriesSlug;
     private const string ComparisonPageKey = "vergleich";
     private const string KlacksyPageSlug = "klacksy";
     private const string ModeApplyFunction = "klacksMode.apply";
@@ -182,7 +185,7 @@ else
     private static readonly HashSet<string> CompanyWidePageKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         ImprintPageKey, PrivacyPageKey, LicensePageKey, PartnerPageKey, ComparisonPageKey, SmallBusinessPageKey, AboutPageKey,
-        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey, TechPageKey, ExportsPageKey,
+        MidSizeBusinessPageKey, LargeBusinessPageKey, OfferPageKey, TechPageKey, ExportsPageKey, StoriesPageKey,
     };
 
     private sealed record CompanySizePage(string Slug, string LabelKey);
@@ -469,6 +472,8 @@ else
     private string TechHref => CompanyWideHref(TechPageKey);
 
     private string ExportsHref => CompanyWideHref(ExportsPageKey);
+
+    private string StoriesHref => CompanyWideHref(StoriesPageKey);
 
     private string CompanyWideHref(string pageKey)
     {
@@ -806,6 +811,7 @@ else
         {
             <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@SmallBusinessHref">@Sh("footer.smallBusiness")</a>
         }
+        <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoriesHref">@Sh("footer.stories")</a>
         <a class="nav-link text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref">@Sh("footer.about")</a>
         @if (CurrentMode.ShowSwitch)
         {
@@ -921,6 +927,7 @@ else
             {
                 <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@CompanyWideHref(page.Slug)" @onclick="CloseMobileMenu">@Sh(page.LabelKey)</a>
             }
+            <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@StoriesHref" @onclick="CloseMobileMenu">@Sh("footer.stories")</a>
             <a class="text-ink-muted hover:text-tertiary transition-colors text-sm font-medium tracking-tight no-underline" href="@AboutHref" @onclick="CloseMobileMenu">@Sh("footer.about")</a>
             @if (CurrentMode.ShowSwitch)
             {

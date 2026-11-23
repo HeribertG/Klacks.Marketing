@@ -16,6 +16,7 @@ public static class PageTypes
     public const string AboutUs = "ueber-uns";
     public const string Tech = "technik";
     public const string Exports = "exporte";
+    public const string Stories = "geschichten";
     public const string Partner = "partner";
     public const string License = "lizenz";
     public const string SmallBusiness = "kleine-betriebe";
