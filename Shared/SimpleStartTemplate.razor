@@ -1,6 +1,7 @@
 @inject IPageContentProvider ContentProvider
 @inject ILocalizedVideoCatalog VideoCatalog
 @inject IConfiguration Configuration
+@inject TimeProvider Clock
 
 @* Simple start page of a country ("/land-ch") for non-experts (spec
    docs/superpowers/specs/2026-10-15-marketing-simple-mode-design.md §4/§5): nine sections in plain language (Du form),
@@ -15,7 +16,9 @@
    language, {country} is the only placeholder; under the title the claim line names what sets Klacks apart, and the two-view
    card below the buttons shows one sentence as written and as a cloud AI reads it, linking to the data card; below lg
    the actions that try or install Klacks are hidden, the share action remains and the closing call shows its phone
-   wording start.mobileTitle/start.mobileText), including the demo-data note in the address form of the culture; the industry chips lead
+   wording start.mobileTitle/start.mobileText; one line under the task cards names the number of further abilities and
+   links to the Klacksy page; the talk section shows one of TalkSetCount sets of three example sentences, chosen by the
+   minute so the prerender and the interactive render agree), including the demo-data note in the address form of the culture; the industry chips lead
    to the expert industry pages, "Mehr Details" to "/land-xx/experten". SEO indexes the page only in the languages spoken in the
    country (CountryLanguagePairs), each with its simple.json (the page renders no land-xx.json text), and the
    structured product description uses the meta description of the page culture. {country} is the country name in
@@ -72,6 +75,7 @@
                 </li>
             }
         </ul>
+        <p class="text-center text-xl md:text-2xl font-black mt-10 mb-0"><a href="@IndustryHref(KlacksySlug)" class="inline-flex items-center gap-2 text-primary no-underline hover:underline">@Tx("tasks.more") <span class="material-symbols-outlined text-xl icon-directional" aria-hidden="true">arrow_forward</span></a></p>
     </div>
 </section>
 
@@ -90,7 +94,7 @@
             <ul class="flex flex-col gap-3 list-none p-0 m-0">
                 @for (var index = 0; index < TalkBubbleCount; index++)
                 {
-                    <li class="self-start max-w-full rounded-2xl rounded-es-sm bg-tertiary-fixed text-on-tertiary-fixed shadow-soft px-5 py-3 text-lg font-semibold">@Tx($"talk.bubble.{index}")</li>
+                    <li class="self-start max-w-full rounded-2xl rounded-es-sm bg-tertiary-fixed text-on-tertiary-fixed shadow-soft px-5 py-3 text-lg font-semibold">@Tx($"talk.bubble.{_talkSetOffset + index}")</li>
                 }
             </ul>
         </div>
@@ -203,12 +207,16 @@
 
     public const string CustomRulesSlug = "eigene-regeln";
 
+    public const string KlacksySlug = "klacksy";
+
     public static readonly IReadOnlyList<string> AudienceSlugs = new[] { "spitex", "spitaeler", "hotellerie-gastronomie", "logistik", "security", "hausdienste" };
 
     private const string CountryPlaceholder = "{country}";
     private const string FragmentSeparator = "#";
     private const string BaseUrlSetting = "Site:BaseUrl";
     private const int TalkBubbleCount = 3;
+    private const int TalkSetCount = 3;
+    private const int TalkSetRotationSeconds = 60;
     private const int CostItemCount = 3;
     private const string CardIndexFormat = "00";
     private const string TalkTextWithVideoClass = "lg:col-span-5";
@@ -219,11 +227,16 @@
 
     private static readonly string[] TaskIcons = { "calendar_month", "rule", "person_search" };
 
+    private int _talkSetOffset;
+
     [Parameter, EditorRequired] public required string PageKey { get; set; }
 
     [Parameter] public string Culture { get; set; } = SupportedCultures.DefaultCode;
 
     [CascadingParameter(Name = "OpenDemoModal")] public EventCallback OpenDemoModal { get; set; }
+
+    protected override void OnInitialized()
+        => _talkSetOffset = (int)(Clock.GetUtcNow().ToUnixTimeSeconds() / TalkSetRotationSeconds % TalkSetCount) * TalkBubbleCount;
 
     private SupportedCulture CultureRecord => SupportedCultures.All.First(culture => culture.Code == Culture);
 

@@ -22,7 +22,7 @@ using Shouldly;
 [TestFixture]
 public class SimpleStartPageTests
 {
-    private const string SimpleHeroText = "Personalplanung mit Klacks bleibt in deiner Hand.";
+    private const string SimpleHeroText = "Personalplanung beginnt mit einem Satz: Du sagst es, Klacksy erledigt es.";
     private const string ExpertHeroText = "Frühschicht unbesetzt?";
     private const string HreflangMarker = "hreflang=";
     private const string NoindexMarker = "name=\"robots\" content=\"noindex";
@@ -44,12 +44,12 @@ public class SimpleStartPageTests
         html.ShouldContain(HreflangMarker);
     }
 
-    [TestCase("/en/land-gb", "Klacks – rota and workforce planning software · United Kingdom", "Workforce planning with Klacks stays")]
-    [TestCase("/en/land-ie", "Klacks – rota and workforce planning software · Ireland", "Workforce planning with Klacks stays")]
-    [TestCase("/fr/land-ch", "Klacks – plannings de service et planification du personnel · Suisse", "La planification du personnel avec Klacks reste")]
-    [TestCase("/fr/land-be", "Klacks – plannings de service et planification du personnel · Belgique", "La planification du personnel avec Klacks reste")]
-    [TestCase("/it/land-ch", "Klacks – software per turni e pianificazione del personale · Svizzera", "Pianificazione del personale con Klacks: resta")]
-    [TestCase("/it/land-it", "Klacks – software per turni e pianificazione del personale · Italia", "Pianificazione del personale con Klacks: resta")]
+    [TestCase("/en/land-gb", "Klacks – rota and workforce planning software · United Kingdom", "Workforce planning starts with one sentence")]
+    [TestCase("/en/land-ie", "Klacks – rota and workforce planning software · Ireland", "Workforce planning starts with one sentence")]
+    [TestCase("/fr/land-ch", "Klacks – plannings de service et planification du personnel · Suisse", "La planification du personnel commence par une phrase")]
+    [TestCase("/fr/land-be", "Klacks – plannings de service et planification du personnel · Belgique", "La planification du personnel commence par une phrase")]
+    [TestCase("/it/land-ch", "Klacks – software per turni e pianificazione del personale · Svizzera", "La pianificazione del personale inizia con una frase")]
+    [TestCase("/it/land-it", "Klacks – software per turni e pianificazione del personale · Italia", "La pianificazione del personale inizia con una frase")]
     public async Task Prefixed_simple_cultures_serve_their_own_simple_page_indexable_with_the_country_cluster(string path, string title, string h1Start)
     {
         var html = await GetHtmlAsync(enabled: true, path);

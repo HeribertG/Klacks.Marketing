@@ -44,13 +44,20 @@ public class SimpleContentTests
     private const string KlacksWithoutYPattern = @"Klacks(?!y)";
     private const string KlacksyName = "Klacksy";
 
+    private const int FirstAlternateBubble = 3;
+
+    private const int AlternateBubbleCount = 6;
+
     private static readonly string[] CalculationSentenceKeys = { "tasks.0.text", "tasks.1.text", "human.text" };
 
     private static readonly HashSet<string> SpacelessCultures = new() { "ja", "ko", "th", "zh-CN", "zh-TW" };
 
     private static readonly string[] Jargon ={ "Container", "Cutting", "Autofill", "LLM", "MCP", "Tool-Calling", "tool calling" };
 
-    private static readonly string[] NonSectionKeyPrefixes = { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "talk.videoLabel", "demoModal.", "demoData.", "story.", "weekStory.", "intro.", "start.mobile" };
+    // 2026-11-23: the page shows three of nine example sentences at a time (talk.bubble.0-2 or one of the two alternate
+    // sets), so the alternate sets talk.bubble.3-8 stay out of the word budget, like start.mobile*.
+    private static readonly string[] NonSectionKeyPrefixes = new[] { "pageTitle", "metaDescription", "nav.", "switch.", "share.", "talk.videoLabel", "demoModal.", "demoData.", "story.", "weekStory.", "intro.", "start.mobile" }
+        .Concat(Enumerable.Range(FirstAlternateBubble, AlternateBubbleCount).Select(index => $"talk.bubble.{index}")).ToArray();
 
     // The German section text is held to the owner's budget of 350 words; the translations get the word count of their
     // faithful translation (no claim dropped), measured on 2026-10-17 (en, fr, it) and 2026-10-18 (the other cultures,
@@ -68,31 +75,34 @@ public class SimpleContentTests
     // 360). The faithful translation is 1 to 12 words longer in 19 cultures; their budgets are the measured values.
     // 2026-11-22: new hero (title, claim line, two-view card) and the human title "time for what matters": the owner set
     // the German budget to 375 (needed 375); the other cultures carry their measured values.
+    // 2026-11-23: the title "begins with one sentence" and the line "... and over 450 more capabilities" below the three
+    // task cards (tasks.more) raised the German text to 378 (owner-approved wording); the other cultures carry their
+    // measured values.
     private static readonly Dictionary<string, int> MaxSectionWords = new()
     {
-        [GermanCulture] = 375,
-        ["en"] = 429,
-        ["fr"] = 458,
-        ["it"] = 427,
-        ["ar"] = 364,
-        ["cs"] = 385,
-        ["da"] = 397,
-        ["el"] = 452,
-        ["es"] = 464,
-        ["fi"] = 308,
-        ["he"] = 366,
-        ["id"] = 398,
-        ["ms"] = 406,
-        ["nb"] = 379,
-        ["nl"] = 394,
-        ["pl"] = 375,
-        ["pt"] = 474,
-        ["ro"] = 418,
-        ["sv"] = 387,
-        ["ja"] = 111,
-        ["ko"] = 339,
+        [GermanCulture] = 378,
+        ["en"] = 433,
+        ["fr"] = 460,
+        ["it"] = 433,
+        ["ar"] = 365,
+        ["cs"] = 389,
+        ["da"] = 399,
+        ["el"] = 458,
+        ["es"] = 470,
+        ["fi"] = 312,
+        ["he"] = 367,
+        ["id"] = 402,
+        ["ms"] = 409,
+        ["nb"] = 383,
+        ["nl"] = 397,
+        ["pl"] = 377,
+        ["pt"] = 482,
+        ["ro"] = 420,
+        ["sv"] = 391,
+        ["ja"] = 113,
+        ["ko"] = 344,
         ["th"] = 512,
-        ["vi"] = 564,
+        ["vi"] = 567,
         ["zh-CN"] = 158,
         ["zh-TW"] = 156,
     };
@@ -579,13 +589,17 @@ public class SimpleContentTests
 
     private static readonly (string Key, string Text)[] OwnerTexts =
     {
-        // 2026-11-22: owner-approved hero. The title carries the leading idea (planning stays in your hand), the claim
-        // line names the three points no checked competitor combines, the two-view card shows the pseudonymisation.
-        ("hero.title", "Personalplanung mit Klacks bleibt in deiner Hand."),
+        // 2026-11-23: the owner replaced the title of 2026-11-22 ("planning stays in your hand", too abstract) by the
+        // scene "you say it, Klacksy does it"; the claim line names the three points no checked competitor combines, the
+        // two-view card shows the pseudonymisation.
+        // "begins with one sentence" (owner, same day) instead of "in one sentence", which said nearly the same as the
+        // forbidden "one sentence is enough".
+        ("hero.title", "Personalplanung beginnt mit einem Satz: Du sagst es, Klacksy erledigt es."),
         // 2026-11-22: owner wording of the autonomy statement in the hero and the human text. "Only after your yes" was
         // wrong at the default autonomy level (everything except sensitive actions runs straight away); what holds is that
         // every user sets how independently Klacksy acts and that sensitive actions always ask.
-        ("hero.subtitle", "Klacks ist eine Software für Dienstpläne und Personalplanung. Mit Klacksy, deinem elektronischen Mitarbeiter: Du sagst, was du brauchst – Klacksy erledigt es. Wie selbständig, bestimmst du."),
+        // 2026-11-23: shortened because the title now carries "you say it, Klacksy does it".
+        ("hero.subtitle", "Klacks ist eine Software für Dienstpläne und Personalplanung. Klacksy ist dein elektronischer Mitarbeiter darin. Wie selbständig Klacksy arbeitet, bestimmst du."),
         ("hero.trustLine", "Bei dir installiert. Offener Code, ohne Abo. KI-Modell deiner Wahl."),
         ("hero.view.localLabel", "Du schreibst"),
         ("hero.view.local", "Anna Muster ist krank."),

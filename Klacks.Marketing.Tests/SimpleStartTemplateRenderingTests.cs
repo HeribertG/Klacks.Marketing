@@ -294,8 +294,8 @@ public class SimpleStartTemplateRenderingTests
     [TestCase("en", "land-ch", "Workforce planning", "Switzerland")]
     [TestCase("fr", "land-ch", "planification du personnel", "Suisse")]
     [TestCase("fr", "land-be", "planification du personnel", "Belgique")]
-    [TestCase("it", "land-it", "Pianificazione del personale", "Italia")]
-    [TestCase("it", "land-ch", "Pianificazione del personale", "Svizzera")]
+    [TestCase("it", "land-it", "pianificazione del personale", "Italia")]
+    [TestCase("it", "land-ch", "pianificazione del personale", "Svizzera")]
     public async Task Translated_simple_page_renders_in_its_culture_without_any_recording(string culture, string country, string h1Term, string countryName)
     {
         var slug = SupportedCultures.All.First(record => record.Code == culture).UrlSlug;

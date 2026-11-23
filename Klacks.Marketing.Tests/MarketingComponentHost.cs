@@ -38,6 +38,7 @@ internal static class MarketingComponentHost
             .AddSingleton<ILocalizedScreenshotResolver>(new LocalizedScreenshotResolver(environment.WebRootFileProvider))
             .AddSingleton(videoCatalog ?? new LocalizedVideoCatalog(environment.WebRootFileProvider))
             .AddSingleton(navigation)
+            .AddSingleton(TimeProvider.System)
             .AddSingleton(jsRuntime ?? new NullJsRuntime())
             .AddSingleton<IOptions<SiteModeOptions>>(Options.Create(new SiteModeOptions { Enabled = simpleModeEnabled }))
             .BuildServiceProvider();
